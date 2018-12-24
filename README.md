@@ -1,6 +1,5 @@
 # software-translations
 
-Credits
-=======
+## Credits
 
 * WinSCP: https://winscp.net/eng/translations.php
