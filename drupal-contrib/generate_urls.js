@@ -1,30 +1,29 @@
 const request = require('request');
 const cheerio = require('cheerio');
 const fs      = require('fs')
-const async   = require('async');
 
 
-var q = async.queue(function(project, callback) {
-  printPoUrls(project);
-  callback();
-}, 10);
+var delay = 0;
 
+function printPoUrls(project_url, branch, project) {
 
-function printPoUrls(project) {
-  request(project, function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      var $ = cheerio.load(body);
-      $('a').each(function() {
-        if ($(this).attr('href').indexOf('.ca.po') !== -1) {
-          var po_file_url = project + $(this).attr('href');
-          console.log(po_file_url);
-        }
-      });
-    }
-    else {
-      console.error(error + " with url " + project);
-    }
-  });
+  // Ignore drupal core.
+  if (project !== 'drupal/') {
+    request(project_url, function (error, response, body) {
+      if (!error && response.statusCode == 200) {
+        var $ = cheerio.load(body);
+        $('a').each(function() {
+          if ($(this).attr('href').indexOf('.ca.po') !== -1) {
+            var file_url = project_url + $(this).attr('href');
+            fs.appendFileSync('urls_' + branch + '.txt', file_url + '\n dir=po/' + project + '\n');
+          }
+        });
+      }
+      else {
+        console.error(error + " with url " + project_url);
+      }
+    });
+  }
 }
 
 
@@ -37,7 +36,15 @@ function generatePoUlrs(branch) {
 
       var $ = cheerio.load(body);
       $('a').each(function() {
-        q.push(prefix_url + $(this).attr('href'));
+
+        delay += 50;
+        var project_name = $(this).attr('href');
+        var url = prefix_url + project_name;
+
+        setTimeout(function() {
+          printPoUrls(url, branch, project_name);
+        }, delay);
+
       });
     }
     else {
@@ -45,7 +52,6 @@ function generatePoUlrs(branch) {
     }
   });
 }
-
 
 
 if (typeof process.argv[2] === 'undefined' || (
@@ -56,5 +62,9 @@ if (typeof process.argv[2] === 'undefined' || (
   console.error('Usage: node generate_urls.js 7.x')
 }
 else {
+
+  // Empty file.
+  fs.writeFileSync('urls_' + process.argv[2] + '.txt', '');
+
   generatePoUlrs(process.argv[2]);
 }
