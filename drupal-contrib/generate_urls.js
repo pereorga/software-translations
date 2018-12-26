@@ -109,11 +109,13 @@ function generatePoUlrs(branch) {
       $('a').each(function() {
 
         var project_name = $(this).attr('href').slice(0, -1);
-        var url = prefix_url + project_name;
-        setTimeout(function() {
-          printPoUrls(url, branch, project_name);
-        }, delay);
-        delay += 200;
+        if (project_name !== '..') {
+          var url = prefix_url + project_name;
+          setTimeout(function() {
+            printPoUrls(url, branch, project_name);
+          }, delay);
+          delay += 200;
+        }
       });
     }
     else {
