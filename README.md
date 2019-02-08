@@ -1,5 +1,7 @@
 # software-translations
 
+Some translations converted to Gettext format.
+
 ## Translation credits
 
 * WinSCP: https://winscp.net/eng/translations.php
