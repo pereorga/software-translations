@@ -2,6 +2,14 @@
 
 Some translations converted to Gettext format.
 
+## Requirements
+
+* Translate Toolkit
+* csvkit
+* nodejs
+
+On Ubuntu, run: `apt install csvkit npm translate-toolkit`
+
 ## Translation credits
 
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
