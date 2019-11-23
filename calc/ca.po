@@ -1,0 +1,4994 @@
+#. extracted from en.resx, ca.resx
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-23 19:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Accelerator-Marker: &\n"
+"X-Generator: Translate Toolkit 2.2.5\n"
+
+#. {@Appx_ShortDisplayName@}{StringCategory="Feature Title"} This is the title of the official application when published through Windows Store.
+#: AppName
+msgctxt "AppName"
+msgid "Calculator"
+msgstr "Calculadora"
+
+#. {@Appx_ShortDisplayName@}{StringCategory="Feature Title"} This is the name of the application when built by a user via GitHub. We use a different name to make it easier for users to distinguish the apps when both this version and the Store version are installed on the same device.
+#: DevAppName
+msgctxt "DevAppName"
+msgid "Calculator [Dev]"
+msgstr "Calculadora [Dev]"
+
+#. {@Appx_DisplayName@}{StringCategory="Feature Title"} Name that shows up in the app store. It contains "Windows" to distinguish it from 3rd party calculator apps.
+#: AppStoreName
+msgid "Windows Calculator"
+msgstr "Calculadora del Windows"
+
+#. {@Appx_DisplayName@}{StringCategory="Feature Title"} Name that shows up in the app store. It contains "Windows" to distinguish it from 3rd party calculator apps. This is the the version of the name used when the app is built by a user via GitHub.
+#: DevAppStoreName
+msgid "Windows Calculator [Dev]"
+msgstr "Calculadora del Windows [Dev]"
+
+#. {@Appx_Description@} This description is used for the official application when published through Windows Store.
+#: AppDescription
+msgctxt "AppDescription"
+msgid "Calculator"
+msgstr "Calculadora"
+
+#. {@Appx_Description@} This is the description of the application when built by a user via GitHub. We use a different description to make it easier for users to distinguish the apps when both this version and the Store version are installed on the same device.
+#: DevAppDescription
+msgctxt "DevAppDescription"
+msgid "Calculator [Dev]"
+msgstr "Calculadora [Dev]"
+
+#. {Locked}This will Update Resources.pri File, Resource is not used in the app
+#: AppUpdateResource
+msgid "AppUpdate2"
+msgstr ""
+
+#. {Locked}The Decimal button
+#: decimalButton.Tag
+msgctxt "decimalButton.Tag"
+msgid "DEC"
+msgstr ""
+
+#. {Locked}The Binary button
+#: binaryButton.Tag
+msgctxt "binaryButton.Tag"
+msgid "BIN"
+msgstr ""
+
+#. {Locked}The Hex button
+#: hexButton.Tag
+msgctxt "hexButton.Tag"
+msgid "HEX"
+msgstr ""
+
+#. {Locked}The Oct button
+#: octButton.Tag
+msgctxt "octButton.Tag"
+msgid "OCT"
+msgstr ""
+
+#. Copy context menu string
+#: copyMenuItem
+msgctxt "copyMenuItem"
+msgid "Copy"
+msgstr "Copia"
+
+#. Paste context menu string
+#: pasteMenuItem
+msgid "Paste"
+msgstr "Enganxa"
+
+#. The text that shows at the bottom of the converter to head the supplementary results. Indicates that the main result is approximately equal to the supplementary results.
+#: SupplementaryResultsHeader.Text
+msgid "About equal to"
+msgstr "Aproximadament igual que"
+
+#. {Locked}The shortcut for the clearing history contents Ctrl+Shift+D.
+#: ClearHistory.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord
+msgctxt "ClearHistory.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord"
+msgid "D"
+msgstr ""
+
+#. {Locked}This is the shortcut for hiding history Ctrl+H.
+#: HistoryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "HistoryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "H"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: memButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "memButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "M"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: clearButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "Escape"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: clearEntryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "clearEntryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+"clearEntryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "Delete"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: closeParenthesisButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid ")"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: cosButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "cosButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "O"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: coshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "coshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "O"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: expButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "X"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: dmsButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "dmsButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "M"
+msgstr ""
+
+#. {Locked}This is the Virtual Kez that should trigger this button. It comes from the Windows::System::VirtualKey enum.
+#: decimalSeparatorButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "Decimal"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: divideButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "/"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: equalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "="
+msgstr ""
+
+#. {Locked}This is the value from the VirtualKey enum that maps to this button
+#: equalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "Enter"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: factorialButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "!"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: ftoeButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "ftoeButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "V"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: invertButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "invertButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "R"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: logBase10Button.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "logBase10Button.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "L"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: logBaseEButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "logBaseEButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "N"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: minusButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "minusButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "-"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: modButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "modButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "%"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: negateButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "negateButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F9"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: converterNegateButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "converterNegateButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F9"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: converterNegateButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "converterNegateButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "-"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: num0Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "num0Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "0"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num1Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "num1Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+"num1Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "1"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num2Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "num2Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "2"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num3Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "num3Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "3"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num4Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "num4Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "4"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num5Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "5"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num6Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "6"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num7Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "7"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num8Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "8"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: num9Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "9"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: aButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "aButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "A"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: bButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "bButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "B"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: cButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "cButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "C"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: dButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "dButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "D"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: eButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "eButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "E"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: fButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "fButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: aButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "aButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "A"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: bButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "bButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "B"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: cButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "cButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "C"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: dButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "dButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "D"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: eButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "eButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "E"
+msgstr ""
+
+#. {Locked}This is the character for the corresponding button.
+#: fButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "fButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "F"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: openParenthesisButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "("
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: percentButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "percentButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "%"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: piButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "piButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "P"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: plusButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "+"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: powerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "powerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "Y"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: powerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "powerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "^"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum. This one is in combination with the Control key.
+#: powerOf10Button.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "powerOf10Button.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "G"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: sinButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "sinButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "S"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: sinhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "sinhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "S"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: squareRootButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "@"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: tanButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "tanButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "T"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: tanhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "tanhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "T"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: xpower2Button.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "xpower2Button.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "Q"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: xpower3Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "#"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum. This one is in combination with the Control key.
+#: ySquareRootButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "ySquareRootButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "Y"
+msgstr ""
+
+#. {Locked}When this character is received by KeyboardShortcutManager, it will cause this button to execute. This value is not localized.
+#: backSpaceButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "backSpaceButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+"backSpaceButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "Back"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: multiplyButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "*"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: orButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "orButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "|"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: notButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "~"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: andButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "&"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: lshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "lshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "<"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: rshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "rshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid ">"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: xorButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "xorButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "^"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: rolButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "rolButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "<"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: rorButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "rorButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid ">"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: decimalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "F6"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: hexButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "hexButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F5"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: octButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "F7"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: binaryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "F8"
+msgstr ""
+
+#. {Locked}The shortcut for the Deg button
+#: degreeButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "degreeButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "D"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted cos button
+#: invcosButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "invcosButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "O"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted cos button
+#: invcosButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord
+msgctxt "invcosButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord"
+msgid "O"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted cosh button
+#: invcoshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord
+msgctxt "invcoshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord"
+msgid "O"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted cosh button
+#: invcoshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord
+msgctxt "invcoshButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord"
+msgid "O"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted sin button
+#: invsinButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "invsinButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "S"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted sin button
+#: invsinButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord
+msgctxt "invsinButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord"
+msgid "S"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted sinh button
+#: invsinhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord
+msgctxt "invsinhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord"
+msgid "S"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted sinh button
+#: invsinhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord
+msgctxt "invsinhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord"
+msgid "S"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted tan button. 
+#: invtanButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "invtanButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "T"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted tan button. 
+#: invtanButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord
+msgctxt "invtanButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord"
+msgid "T"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted tanh button
+#: invtanhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord
+msgctxt "invtanhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord"
+msgid "T"
+msgstr ""
+
+#. {Locked}This is the shortcut for the inverted tanh button
+#: invtanhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord
+msgctxt "invtanhButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord"
+msgid "T"
+msgstr ""
+
+#. {Locked}This is the shortcut for the power x  button.
+#: powerOfEButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "powerOfEButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "N"
+msgstr ""
+
+#. {Locked}This is the shortcut for copy, usuall CTRL+C
+#: copyButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "copyButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "C"
+msgstr ""
+
+#. {Locked}This is the alternate shortcut for copy, CTRL+Insert
+#: copyButtonAlternate.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "copyButtonAlternate.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "Insert"
+msgstr ""
+
+#. {Locked}This is the shortcut for paste, usually CTRL+V
+#: pasteButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "pasteButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "V"
+msgstr ""
+
+#. {Locked}This is the alternate shortcut for paste, SHIFT+Insert
+#: pasteButtonAlternate.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "pasteButtonAlternate.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "Insert"
+msgstr ""
+
+#. {Locked="%1","%2"}. String used in automation name for each bit in bit flip. %1 will be replaced by the position of the bit (1st bit, 3rd bit), %2 by a binary value (1 or 0)
+#: BitFlipItemAutomationName
+msgid "%1, value %2"
+msgstr "%1, valor %2"
+
+#. {Locked="%1"}. Sub-string used to indicate the position of a bit (e.g. 1st bit, 2nd bit...)
+#: BitPosition
+msgid "%1 bit"
+msgstr "%1 bit"
+
+#. Sub-string used in automation name for 63 bit in bit flip
+#: 63
+msgid "63rd"
+msgstr "63è"
+
+#. Sub-string used in automation name for 62 bit in bit flip
+#: 62
+msgid "62nd"
+msgstr "62è"
+
+#. Sub-string used in automation name for 61 bit in bit flip
+#: 61
+msgid "61st"
+msgstr "61è"
+
+#. Sub-string used in automation name for 60 bit in bit flip
+#: 60
+msgid "60th"
+msgstr "60è"
+
+#. Sub-string used in automation name for 59 bit in bit flip
+#: 59
+msgid "59th"
+msgstr "59è "
+
+#. Sub-string used in automation name for 58 bit in bit flip
+#: 58
+msgid "58th"
+msgstr "58è"
+
+#. Sub-string used in automation name for 57 bit in bit flip
+#: 57
+msgid "57th"
+msgstr "57è"
+
+#. Sub-string used in automation name for 56 bit in bit flip
+#: 56
+msgid "56th"
+msgstr "56è"
+
+#. Sub-string used in automation name for 55 bit in bit flip
+#: 55
+msgid "55th"
+msgstr "55è"
+
+#. Sub-string used in automation name for 54 bit in bit flip
+#: 54
+msgid "54th"
+msgstr "54è"
+
+#. Sub-string used in automation name for 53 bit in bit flip
+#: 53
+msgid "53rd"
+msgstr "53è"
+
+#. Sub-string used in automation name for 52 bit in bit flip
+#: 52
+msgid "52nd"
+msgstr "52è"
+
+#. Sub-string used in automation name for 51 bit in bit flip
+#: 51
+msgid "51st"
+msgstr "51è"
+
+#. Sub-string used in automation name for 50 bit in bit flip
+#: 50
+msgid "50th"
+msgstr "50è"
+
+#. Sub-string used in automation name for 49 bit in bit flip
+#: 49
+msgid "49th"
+msgstr "49è"
+
+#. Sub-string used in automation name for 48 bit in bit flip
+#: 48
+msgid "48th"
+msgstr "48è"
+
+#. Sub-string used in automation name for 47 bit in bit flip
+#: 47
+msgid "47th"
+msgstr "47è"
+
+#. Sub-string used in automation name for 46 bit in bit flip
+#: 46
+msgid "46th"
+msgstr "46è"
+
+#. Sub-string used in automation name for 45 bit in bit flip
+#: 45
+msgid "45th"
+msgstr "45è"
+
+#. Sub-string used in automation name for 44 bit in bit flip
+#: 44
+msgid "44th"
+msgstr "44è"
+
+#. Sub-string used in automation name for 43 bit in bit flip
+#: 43
+msgid "43rd"
+msgstr "43è"
+
+#. Sub-string used in automation name for 42 bit in bit flip
+#: 42
+msgid "42nd"
+msgstr "42è"
+
+#. Sub-string used in automation name for 41 bit in bit flip
+#: 41
+msgid "41st"
+msgstr "41è"
+
+#. Sub-string used in automation name for 40 bit in bit flip
+#: 40
+msgid "40th"
+msgstr "40è"
+
+#. Sub-string used in automation name for 39 bit in bit flip
+#: 39
+msgid "39th"
+msgstr "39è"
+
+#. Sub-string used in automation name for 38 bit in bit flip
+#: 38
+msgid "38th"
+msgstr "38è"
+
+#. Sub-string used in automation name for 37 bit in bit flip
+#: 37
+msgid "37th"
+msgstr "37è"
+
+#. Sub-string used in automation name for 36 bit in bit flip
+#: 36
+msgid "36th"
+msgstr "36è"
+
+#. Sub-string used in automation name for 35 bit in bit flip
+#: 35
+msgid "35th"
+msgstr "35è"
+
+#. Sub-string used in automation name for 34 bit in bit flip
+#: 34
+msgid "34th"
+msgstr "34è"
+
+#. Sub-string used in automation name for 33 bit in bit flip
+#: 33
+msgid "33rd"
+msgstr "33è"
+
+#. Sub-string used in automation name for 32 bit in bit flip
+#: 32
+msgid "32nd"
+msgstr "32è"
+
+#. Sub-string used in automation name for 31 bit in bit flip
+#: 31
+msgid "31st"
+msgstr "31è"
+
+#. Sub-string used in automation name for 30 bit in bit flip
+#: 30
+msgid "30th"
+msgstr "30è"
+
+#. Sub-string used in automation name for 29 bit in bit flip
+#: 29
+msgid "29th"
+msgstr "29è"
+
+#. Sub-string used in automation name for 28 bit in bit flip
+#: 28
+msgid "28th"
+msgstr "28è"
+
+#. Sub-string used in automation name for 27 bit in bit flip
+#: 27
+msgid "27th"
+msgstr "27è"
+
+#. Sub-string used in automation name for 26 bit in bit flip
+#: 26
+msgid "26th"
+msgstr "26è"
+
+#. Sub-string used in automation name for 25 bit in bit flip
+#: 25
+msgid "25th"
+msgstr "25è"
+
+#. Sub-string used in automation name for 24 bit in bit flip
+#: 24
+msgid "24th"
+msgstr "24è"
+
+#. Sub-string used in automation name for 23 bit in bit flip
+#: 23
+msgid "23rd"
+msgstr "23è"
+
+#. Sub-string used in automation name for 22 bit in bit flip
+#: 22
+msgid "22nd"
+msgstr "22è"
+
+#. Sub-string used in automation name for 21 bit in bit flip
+#: 21
+msgid "21st"
+msgstr "21è"
+
+#. Sub-string used in automation name for 20 bit in bit flip
+#: 20
+msgid "20th"
+msgstr "20è"
+
+#. Sub-string used in automation name for 19 bit in bit flip
+#: 19
+msgid "19th"
+msgstr "19è"
+
+#. Sub-string used in automation name for 18 bit in bit flip
+#: 18
+msgid "18th"
+msgstr "18è"
+
+#. Sub-string used in automation name for 17 bit in bit flip
+#: 17
+msgid "17th"
+msgstr "17è"
+
+#. Sub-string used in automation name for 16 bit in bit flip
+#: 16
+msgid "16th"
+msgstr "16è"
+
+#. Sub-string used in automation name for 15 bit in bit flip
+#: 15
+msgid "15th"
+msgstr "15è"
+
+#. Sub-string used in automation name for 14 bit in bit flip
+#: 14
+msgid "14th"
+msgstr "14è"
+
+#. Sub-string used in automation name for 13 bit in bit flip
+#: 13
+msgid "13th"
+msgstr "13è"
+
+#. Sub-string used in automation name for 12 bit in bit flip
+#: 12
+msgid "12th"
+msgstr "12è"
+
+#. Sub-string used in automation name for 11 bit in bit flip
+#: 11
+msgid "11th"
+msgstr "11è"
+
+#. Sub-string used in automation name for 10 bit in bit flip
+#: 10
+msgid "10th"
+msgstr "10è"
+
+#. Sub-string used in automation name for 9 bit in bit flip
+#: 9
+msgid "9th"
+msgstr "9è"
+
+#. Sub-string used in automation name for 8 bit in bit flip
+#: 8
+msgid "8th"
+msgstr "8è"
+
+#. Sub-string used in automation name for 7 bit in bit flip
+#: 7
+msgid "7th"
+msgstr "7è"
+
+#. Sub-string used in automation name for 6 bit in bit flip
+#: 6
+msgid "6th"
+msgstr "6è"
+
+#. Sub-string used in automation name for 5 bit in bit flip
+#: 5
+msgid "5th"
+msgstr "5è"
+
+#. Sub-string used in automation name for 4 bit in bit flip
+#: 4
+msgid "4th"
+msgstr "4t"
+
+#. Sub-string used in automation name for 3 bit in bit flip
+#: 3
+msgid "3rd"
+msgstr "3r"
+
+#. Sub-string used in automation name for 2 bit in bit flip
+#: 2
+msgid "2nd"
+msgstr "2n"
+
+#. Sub-string used in automation name for 1 bit in bit flip
+#: 1
+msgid "1st"
+msgstr "1r"
+
+#. Used to describe the first bit of a binary number. Used in bit flip
+#: LeastSignificantBit
+msgid "least significant bit"
+msgstr "bit menys significatiu"
+
+#. This is the automation name and label for the memory button when the memory flyout is closed.
+#: MemoryButton_Open
+msgid "Open memory flyout"
+msgstr "Obre el desplegable de memòria"
+
+#. This is the automation name and label for the memory button when the memory flyout is open.
+#: MemoryButton_Close
+msgid "Close memory flyout"
+msgstr "Tanca el desplegable de memòria"
+
+#. This is the tool tip automation name for the always-on-top button when out of always-on-top mode.
+#: AlwaysOnTop_Enter
+msgctxt "AlwaysOnTop_Enter"
+msgid "Keep on top"
+msgstr "Mantén visible"
+
+#. This is the tool tip automation name for the always-on-top button when in always-on-top mode.
+#: AlwaysOnTop_Exit
+msgctxt "AlwaysOnTop_Exit"
+msgid "Back to full view"
+msgstr "Torna a la visualització completa"
+
+#. This is the tool tip automation name for the memory button.
+#: MemoryButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "MemoryButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Memory"
+msgstr "Memòria"
+
+#. This is the tool tip automation name for the history button.
+#: HistoryButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "History (Ctrl+H)"
+msgstr "Historial (Ctrl + H)"
+
+#. This is the tool tip automation name for the bitFlip button.
+#: bitFlip.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "bitFlip.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Bit toggling keypad"
+msgstr "Teclat numèric de commutació de bits"
+
+#. This is the tool tip automation name for the numberPad button.
+#: fullKeypad.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "fullKeypad.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Full keypad"
+msgstr "Teclat numèric complet"
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the keyboard shortcut combo (ctrl + L) for the clear memory button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: ClearMemoryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "ClearMemoryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "L"
+msgstr ""
+
+#. This is the tool tip automation name for the Clear Memory (MC) button.
+#: ClearMemoryButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "ClearMemoryButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Clear all memory (Ctrl+L)"
+msgstr "Esborra tota la memòria (Ctrl + L)"
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the keyboard shortcut combo (ctrl + R) for the memory recall function. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: MemRecall.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "MemRecall.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "R"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the keyboard shortcut combo (ctrl + P) for the memory plus function. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: MemPlus.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "MemPlus.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "P"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the keyboard shortcut combo (ctrl + Q) for the memory minus function. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: MemMinus.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "MemMinus.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "Q"
+msgstr ""
+
+#. The text that shows as the header for the memory list
+#: MemoryLabel.Text
+msgctxt "MemoryLabel.Text"
+msgid "Memory"
+msgstr "Memòria"
+
+#. The automation name for the Memory pivot item that is shown when Calculator is in wide layout.
+#: MemoryPivotItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "MemoryPivotItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Memory"
+msgstr "Memòria"
+
+#. The text that shows as the header for the history list
+#: HistoryLabel.Text
+msgctxt "HistoryLabel.Text"
+msgid "History"
+msgstr "Historial"
+
+#. The automation name for the History pivot item that is shown when Calculator is in wide layout.
+#: HistoryPivotItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "HistoryPivotItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "History"
+msgstr "Historial"
+
+#. {Locked}The chevron that shows to indicate that the expression history has overflowed the available space and is therefore trimmed.
+#: LeftChevron.Text
+msgid "<<"
+msgstr ""
+
+#. Label for a control that activates the unit converter mode.
+#: converterModeButton.Content
+msgctxt "converterModeButton.Content"
+msgid "Converter"
+msgstr "Convertidor"
+
+#. Label for a control that activates scientific mode calculator layout
+#: scientificModeButton.Content
+msgctxt "scientificModeButton.Content"
+msgid "Scientific"
+msgstr "Científica"
+
+#. Label for a control that activates standard mode calculator layout.
+#: standardModeButton.Content
+msgctxt "standardModeButton.Content"
+msgid "Standard"
+msgstr "Estàndard"
+
+#. Screen reader prompt for a control that activates the unit converter mode.
+#: converterModeButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Converter Mode"
+msgstr "Mode de convertidor"
+
+#. Screen reader prompt for a control that activates scientific mode calculator layout
+#: scientificModeButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scientific Mode"
+msgstr "Mode científic"
+
+#. Screen reader prompt for a control that activates standard mode calculator layout.
+#: standardModeButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Standard Mode"
+msgstr "Mode estàndard"
+
+#. "ClearHistory" used on the calculator history pane that stores the calculation history.
+#: ClearHistory.Name
+msgctxt "ClearHistory.Name"
+msgid "Clear all history"
+msgstr "Esborra tot l'historial"
+
+#. This is the tool tip automation name for the Clear History button.
+#: ClearHistory.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "ClearHistory.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Clear all history"
+msgstr "Esborra tot l'historial"
+
+#. "HideHistory" used on the calculator history pane that stores the calculation history.
+#: HideHistory.Name
+msgid "Hide"
+msgstr "Amaga-ho"
+
+#. The text that shows in the dropdown navigation control in snapped mode when standard calculator mode is selected.
+#: StandardModeText
+msgctxt "StandardModeText"
+msgid "Standard"
+msgstr "Estàndard"
+
+#. The text that shows in the dropdown navigation control in snapped mode when scientific calculator mode is selected.
+#: ScientificModeText
+msgctxt "ScientificModeText"
+msgid "Scientific"
+msgstr "Científica"
+
+#. The text that shows in the dropdown navigation control in snapped mode when programmer calculator mode is selected.
+#: ProgrammerModeText
+msgid "Programmer"
+msgstr "Programador"
+
+#. The text that shows in the dropdown navigation control for the converter group. The previous key for this was "ConverterMode.Text".
+#: ConverterModeText
+msgctxt "ConverterModeText"
+msgid "Converter"
+msgstr "Convertidor"
+
+#. The text that shows in the dropdown navigation control for the calculator group.
+#: CalculatorModeText
+msgctxt "CalculatorModeText"
+msgid "Calculator"
+msgstr "Calculadora"
+
+#. The text that shows in the dropdown navigation control for the converter group in upper case. The previous key for this was "ConverterMode.Text".
+#: ConverterModeTextCaps
+msgctxt "ConverterModeTextCaps"
+msgid "Converter"
+msgstr "Convertidor"
+
+#. The text that shows in the dropdown navigation control for the calculator group in upper case.
+#: CalculatorModeTextCaps
+msgctxt "CalculatorModeTextCaps"
+msgid "Calculator"
+msgstr "Calculadora"
+
+#. Pluralized version of the converter group text, used for the screen reader prompt.
+#: ConverterModePluralText
+msgid "Converters"
+msgstr "Convertidors"
+
+#. Pluralized version of the calculator group text, used for the screen reader prompt.
+#: CalculatorModePluralText
+msgid "Calculators"
+msgstr "Calculadores"
+
+#. {Locked="%1"}. Screen reader prompt for the Calculator results text block. %1 = Localized display value, e.g. "50".
+#: Format_CalculatorResults
+msgid "Display is %1"
+msgstr "La visualització és %1"
+
+#. {Locked="%1","%2"}. Screen reader prompt for the Calculator always-on-top expression. %1 = Expression, e.g. "50 + 2 - 60 +", %2 = Localized display value, e.g. "50".
+#: Format_CalculatorAlwaysOnTopResults
+msgid "Expression is %1, Current input is %2"
+msgstr "L'expressió és %1, l'entrada actual és %2"
+
+#. {Locked="%1"}. Automation label for the calculator display in the specific case where the user has just pressed the decimal separator button. For example, the user wants to input "7.5".  When they have input "7." they will hear "Display is 7 point". "point" should be localized to the locale's appropriate decimal separator.
+#: Format_CalculatorResults_Decimal
+msgid "Display is %1 point"
+msgstr "La pantalla mostra %1 coma."
+
+#. {Locked="%1"}. Screen reader prompt for the Calculator expression results. %1 = Localized display value, e.g. "50 + 2 - 60 +".
+#: Format_CalculatorExpression
+msgid "Expression is %1"
+msgstr "L'expressió és %1"
+
+#. Screen reader prompt for the Calculator display copy button, when the button is invoked.
+#: Display_Copied
+msgid "Display value copied to clipboard"
+msgstr "Mostra el valor copiat al porta-retalls"
+
+#. Screen reader prompt for the history flyout
+#: HistoryPane
+msgctxt "HistoryPane"
+msgid "History"
+msgstr "Historial"
+
+#. Screen reader prompt for the memory flyout
+#: MemoryPane
+msgctxt "MemoryPane"
+msgid "Memory"
+msgstr "Memòria"
+
+#. {Locked="%1"}. Screen reader prompt for the hexadecimal value in Programmer mode. %1 = the localized hexadecimal value, e.g. "21B4 8F73".
+#: Format_HexButtonValue
+msgid "HexaDecimal %1"
+msgstr "Hexadecimal %1"
+
+#. {Locked="%1"}. Screen reader prompt for the decimal value in Programmer mode. %1 = the localized decimal value, e.g. "5,732".
+#: Format_DecButtonValue
+msgid "Decimal %1"
+msgstr "Decimal %1"
+
+#. {Locked="%1"}. Screen reader prompt for the octal value in Programmer mode. %1 = the localized octal value, e.g. "155 174".
+#: Format_OctButtonValue
+msgid "Octal %1"
+msgstr "Octal %1"
+
+#. {Locked="%1"}. Screen reader prompt for the binary value in Programmer mode. %1 = the localized binary value, e.g. "0010 1011".
+#: Format_BinButtonValue
+msgid "Binary %1"
+msgstr "Binari %1"
+
+#. Screen reader prompt for the Calculator History Clear button
+#: ClearHistory.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "ClearHistory.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Clear all history"
+msgstr "Esborra tot l'historial"
+
+#. Screen reader prompt for the Calculator History Clear button, when the button is invoked.
+#: HistoryList_Cleared
+msgid "History cleared"
+msgstr "S'ha esborrat l'historial"
+
+#. Screen reader prompt for the Calculator History Hide button
+#: HideHistory.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hide History"
+msgstr "Amaga l'historial"
+
+#. Screen reader prompt for the Calculator History button, when the flyout is closed.
+#: HistoryButton_Open
+msgid "Open history flyout"
+msgstr "Obre el desplegable d'historial"
+
+#. Screen reader prompt for the Calculator History button, when the flyout is open.
+#: HistoryButton_Close
+msgid "Close history flyout"
+msgstr "Tanca el desplegable d'historial"
+
+#. Screen reader prompt for the Calculator Memory button
+#: memButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Memory Store"
+msgstr "Magatzem de memòria"
+
+#. This is the tool tip automation name for the Memory Store (MS) button.
+#: memButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Memory store (Ctrl+M)"
+msgstr "Magatzem de memòria (Ctrl + M)"
+
+#. Screen reader prompt for the Calculator Clear Memory button
+#: ClearMemoryButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "ClearMemoryButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Clear all memory"
+msgstr "Esborra tota la memòria"
+
+#. Screen reader prompt for the Calculator Clear Memory button, when the button is invoked.
+#: Memory_Cleared
+msgid "Memory cleared"
+msgstr "S'ha esborrat la memòria"
+
+#. Screen reader prompt for the Calculator Memory Recall button
+#: MemRecall.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Memory Recall"
+msgstr "Recuperació de memòria"
+
+#. This is the tool tip automation name for the Memory Recall (MR) button.
+#: MemRecall.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Memory recall (Ctrl+R)"
+msgstr "Recuperació de memòria (Ctrl + R)"
+
+#. Screen reader prompt for the Calculator Memory Add button
+#: MemPlus.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Memory Add"
+msgstr "Addició de memòria"
+
+#. This is the tool tip automation name for the Memory Add (M+) button.
+#: MemPlus.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Memory add (Ctrl+P)"
+msgstr "Addició de memòria (Ctrl + P)"
+
+#. Screen reader prompt for the Calculator Memory Subtract button
+#: MemMinus.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Memory Subtract"
+msgstr "Eliminació de memòria"
+
+#. This is the tool tip automation name for the Memory Subtract (M-) button.
+#: MemMinus.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Memory subtract (Ctrl+Q)"
+msgstr "Eliminació de memòria (Ctrl + Q)"
+
+#. Screen reader prompt for the Calculator Clear Memory button
+#: ClearMemoryItemButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "ClearMemoryItemButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Clear memory item"
+msgstr "Esborra l'element de memòria"
+
+#. This is the tool tip automation name for the Clear Memory Item (MC) button in the Memory list.
+#: ClearMemoryItemButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "ClearMemoryItemButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Clear memory item"
+msgstr "Esborra l'element de memòria"
+
+#. Screen reader prompt for the Calculator Memory Add button in the Memory list
+#: MemPlusItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "MemPlusItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Add to memory item"
+msgstr "Afegeix a l'element de memòria"
+
+#. This is the tool tip automation name for the Calculator Memory Add button in the Memory list
+#: MemPlusItem.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "MemPlusItem.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Add to memory item"
+msgstr "Afegeix a l'element de memòria"
+
+#. Screen reader prompt for the Calculator Memory Subtract button in the Memory list
+#: MemMinusItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "MemMinusItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Subtract from memory item"
+msgstr "Elimina de l'element de memòria"
+
+#. This is the tool tip automation name for the Calculator Memory Subtract button in the Memory list
+#: MemMinusItem.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "MemMinusItem.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Subtract from memory item"
+msgstr "Elimina de l'element de memòria"
+
+#. Screen reader prompt for the Calculator Clear Memory button
+#: ClearMemorySwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "ClearMemorySwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Clear memory item"
+msgstr "Esborra l'element de memòria"
+
+#. Text string for the Calculator Clear Memory option in the Memory list context menu
+#: ClearMemoryMenuItem.Text
+msgctxt "ClearMemoryMenuItem.Text"
+msgid "Clear memory item"
+msgstr "Esborra l'element de memòria"
+
+#. Screen reader prompt for the Calculator Memory Add swipe button in the Memory list
+#: MemPlusSwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "MemPlusSwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Add to memory item"
+msgstr "Suma-ho a l'element de memòria"
+
+#. Text string for the Calculator Memory Add option in the Memory list context menu
+#: MemPlusMenuItem.Text
+msgctxt "MemPlusMenuItem.Text"
+msgid "Add to memory item"
+msgstr "Suma-ho a l'element de memòria"
+
+#. Screen reader prompt for the Calculator Memory Subtract swipe button in the Memory list
+#: MemMinusSwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "MemMinusSwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Subtract from memory item"
+msgstr "Resta-ho de l'element de memòria"
+
+#. Text string for the Calculator Memory Subtract option in the Memory list context menu
+#: MemMinusMenuItem.Text
+msgctxt "MemMinusMenuItem.Text"
+msgid "Subtract from memory item"
+msgstr "Resta-ho de l'element de memòria"
+
+#. Text string for the Calculator Delete swipe button in the History list
+#: DeleteHistorySwipeItem.Text
+msgctxt "DeleteHistorySwipeItem.Text"
+msgid "Delete"
+msgstr "Suprimeix"
+
+#. Text string for the Calculator Copy option in the History list context menu
+#: CopyHistoryMenuItem.Text
+msgctxt "CopyHistoryMenuItem.Text"
+msgid "Copy"
+msgstr "Copia"
+
+#. Text string for the Calculator Delete option in the History list context menu
+#: DeleteHistoryMenuItem.Text
+msgctxt "DeleteHistoryMenuItem.Text"
+msgid "Delete"
+msgstr "Suprimeix"
+
+#. Screen reader prompt for the Calculator Delete swipe button in the History list
+#: DeleteHistorySwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "DeleteHistorySwipeItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Delete history item"
+msgstr "Suprimeix l'element de l'historial"
+
+#. Screen reader prompt for the Calculator Delete option in the History list context menu
+#: DeleteHistoryMenuItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "DeleteHistoryMenuItem.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Delete history item"
+msgstr "Suprimeix l'element de l'historial"
+
+#. Screen reader prompt for the Calculator Backspace button
+#: backSpaceButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Backspace"
+msgstr "Retrocés"
+
+#. Screen reader prompt for the Calculator number "0" button
+#: BinaryZero.Text
+msgctxt "BinaryZero.Text"
+msgid "0"
+msgstr "0"
+
+#. Screen reader prompt for the Calculator number "1" button
+#: BinaryOne.Text
+msgctxt "BinaryOne.Text"
+msgid "1"
+msgstr "1"
+
+#. Screen reader prompt for the Calculator number "0" button
+#: num0Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Zero"
+msgstr "Zero"
+
+#. Screen reader prompt for the Calculator number "1" button
+#: num1Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "One"
+msgstr "Un"
+
+#. Screen reader prompt for the Calculator number "2" button
+#: num2Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Two"
+msgstr "Dos"
+
+#. Screen reader prompt for the Calculator number "3" button
+#: num3Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Three"
+msgstr "Tres"
+
+#. Screen reader prompt for the Calculator number "4" button
+#: num4Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Four"
+msgstr "Quatre"
+
+#. Screen reader prompt for the Calculator number "5" button
+#: num5Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Five"
+msgstr "Cinc"
+
+#. Screen reader prompt for the Calculator number "6" button
+#: num6Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Six"
+msgstr "Sis"
+
+#. Screen reader prompt for the Calculator number "7" button
+#: num7Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Seven"
+msgstr "Set"
+
+#. Screen reader prompt for the Calculator number "8" button
+#: num8Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Eight"
+msgstr "Vuit"
+
+#. Screen reader prompt for the Calculator number "9" button
+#: num9Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Nine"
+msgstr "Nou"
+
+#. Screen reader prompt for the Calculator number "A" button
+#: aButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "aButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "A"
+msgstr "A"
+
+#. Screen reader prompt for the Calculator number "B" button
+#: bButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "bButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "B"
+msgstr "B"
+
+#. Screen reader prompt for the Calculator number "C" button
+#: cButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "cButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "C"
+msgstr "C"
+
+#. Screen reader prompt for the Calculator number "D" button
+#: dButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "dButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "D"
+msgstr "D"
+
+#. Screen reader prompt for the Calculator number "E" button
+#: eButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "eButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "E"
+msgstr "E"
+
+#. Screen reader prompt for the Calculator number "F" button
+#: fButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "fButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "F"
+msgstr "F"
+
+#. Screen reader prompt for the Calculator And button
+#: andButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "And"
+msgstr "I"
+
+#. Screen reader prompt for the Calculator Or button
+#: orButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Or"
+msgstr "O"
+
+#. Screen reader prompt for the Calculator Not button
+#: notButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Not"
+msgstr "No"
+
+#. Screen reader prompt for the Calculator ROL button
+#: rolButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Rotate on left"
+msgstr "Gira a l'esquerra"
+
+#. Screen reader prompt for the Calculator ROR button
+#: rorButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Rotate on right"
+msgstr "Gira a la dreta"
+
+#. Screen reader prompt for the Calculator LSH button
+#: lshButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "lshButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Left shift"
+msgstr "Maj esquerra"
+
+#. Screen reader prompt for the Calculator RSH button
+#: rshButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "rshButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Right shift"
+msgstr "Maj dreta"
+
+#. Screen reader prompt for the Calculator XOR button
+#: xorButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Exclusive or"
+msgstr "Exclusiu o"
+
+#. Screen reader prompt for the Calculator qword button. Should read as "Quadruple word toggle button".
+#: qwordButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Quadruple Word toggle"
+msgstr "Commutador de paraules quàdruples"
+
+#. Screen reader prompt for the Calculator dword button. Should read as "Double word toggle button".
+#: dwordButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Double Word toggle"
+msgstr "Commutador de paraules dobles"
+
+#. Screen reader prompt for the Calculator word button. Should read as "Word toggle button".
+#: wordButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Word toggle"
+msgstr "Commutador de paraules"
+
+#. Screen reader prompt for the Calculator byte button. Should read as "Byte toggle button".
+#: byteButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Byte toggle"
+msgstr "Commutador de bytes"
+
+#. Screen reader prompt for the Calculator bitFlip button
+#: bitFlip.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "bitFlip.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Bit toggling keypad"
+msgstr "Teclat numèric de commutació de bits"
+
+#. Screen reader prompt for the Calculator numberPad button
+#: fullKeypad.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "fullKeypad.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Full keypad"
+msgstr "Teclat numèric complet"
+
+#. Screen reader prompt for the "." button
+#: decimalSeparatorButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Decimal Separator"
+msgstr "Separador decimal"
+
+#. Screen reader prompt for the "CE" button
+#: clearEntryButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Clear entry"
+msgstr "Esborra l'entrada"
+
+#. Screen reader prompt for the "C" button
+#: clearButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Clear"
+msgstr "Esborra"
+
+#. Screen reader prompt for the divide button on the number pad
+#: divideButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Divide by"
+msgstr "Divideix entre"
+
+#. Screen reader prompt for the multiply button on the number pad
+#: multiplyButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Multiply by"
+msgstr "Multiplica per"
+
+#. Screen reader prompt for the invert button on the scientific operator keypad
+#: equalButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Equals"
+msgstr "És igual a"
+
+#. Screen Reader prompt for the shift button on the number pad in scientific mode.
+#: shiftButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "shiftButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Inverse Function"
+msgstr "Funció inversa"
+
+#. Screen reader prompt for the minus button on the number pad
+#: minusButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "minusButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Minus"
+msgstr "Menys"
+
+#. We use this resource to replace "-" sign for accessibility. So expression like, 1 - 3 = -2 becomes 1 minus 3 = minus 2
+#: minus
+msgctxt "minus"
+msgid "Minus"
+msgstr "Menys"
+
+#. Screen reader prompt for the plus button on the number pad
+#: plusButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Plus"
+msgstr "Més"
+
+#. Screen reader prompt for the square root button on the scientific operator keypad
+#: squareRootButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Square root"
+msgstr "Arrel quadrada"
+
+#. Screen reader prompt for the percent button on the scientific operator keypad
+#: percentButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Percent"
+msgstr "Per cent"
+
+#. Screen reader prompt for the negate button on the scientific operator keypad
+#: negateButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "negateButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Positive Negative"
+msgstr "Positiu Negatiu"
+
+#. Screen reader prompt for the negate button on the converter operator keypad
+#: converterNegateButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "converterNegateButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Positive Negative"
+msgstr "Positiu Negatiu"
+
+#. Screen reader prompt for the invert button on the scientific operator keypad
+#: invertButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Reciprocal"
+msgstr "Recíproc"
+
+#. Screen reader prompt for the Calculator "(" button on the scientific operator keypad
+#: openParenthesisButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Left parenthesis"
+msgstr "Parèntesi d'obertura"
+
+#. {Locked="%1"} Screen reader prompt for the Calculator "(" button on the scientific operator keypad. %1 is the localized count of open parenthesis, e.g. "2".
+#: Format_OpenParenthesisAutomationNamePrefix
+msgid "Left parenthesis, open parenthesis count %1"
+msgstr "Parèntesi d'obertura, recompte de parèntesis d'obertura %1"
+
+#. Screen reader prompt for the Calculator ")" button on the scientific operator keypad
+#: closeParenthesisButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Right parenthesis"
+msgstr "Parèntesi de tancament"
+
+#. {Locked="%1"} Screen reader prompt for the Calculator "(" button on the scientific and programmer operator keypad. %1 is the localized count of open parenthesis, e.g. "2".
+#: Format_OpenParenthesisCountAutomationNamePrefix
+msgid "Open parenthesis count %1"
+msgstr "Recompte de parèntesis oberts: %1"
+
+#. {Locked="%1"} Screen reader prompt for the Calculator when the ")" button on the scientific and programmer operator keypad cannot be added to the equation. e.g. "1+)".
+#: NoRightParenthesisAdded_Announcement
+msgid "There are no open parentheses to close."
+msgstr "No hi ha cap parèntesi obert per tancar."
+
+#. Screen reader prompt for the Calculator F-E the scientific operator keypad
+#: ftoeButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scientific notation"
+msgstr "Notació científica"
+
+#. Screen reader prompt for the Calculator button HYP in the scientific operator keypad
+#: hyperbolicButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "hyperbolicButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Hyperbolic function"
+msgstr "Funció hiperbòlica"
+
+#. Screen reader prompt for the Calculator pi button  on the scientific operator keypad
+#: piButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "piButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Pi"
+msgstr "Pi"
+
+#. Screen reader prompt for the Calculator sin button  on the scientific operator keypad
+#: sinButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Sine"
+msgstr "Sinus"
+
+#. Screen reader prompt for the Calculator cos button  on the scientific operator keypad
+#: cosButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Cosine"
+msgstr "Cosinus"
+
+#. Screen reader prompt for the Calculator tan button  on the scientific operator keypad
+#: tanButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Tangent"
+msgstr "Tangent"
+
+#. Screen reader prompt for the Calculator sinh button  on the scientific operator keypad
+#: sinhButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Sine"
+msgstr "Sinus hiperbòlic"
+
+#. Screen reader prompt for the Calculator cosh button  on the scientific operator keypad
+#: coshButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Cosine"
+msgstr "Cosinus hiperbòlic"
+
+#. Screen reader prompt for the Calculator tanh button  on the scientific operator keypad
+#: tanhButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Tangent"
+msgstr "Tangent hiperbòlica"
+
+#. Screen reader prompt for the x squared on the scientific operator keypad.
+#: xpower2Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Square"
+msgstr "Quadrat"
+
+#. Screen reader prompt for the x cubed on the scientific operator keypad.
+#: xpower3Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Cube"
+msgstr "Cub"
+
+#. Screen reader prompt for the inverted sin on the scientific operator keypad.
+#: invsinButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Arc sine"
+msgstr "Arc sinus"
+
+#. Screen reader prompt for the inverted cos on the scientific operator keypad.
+#: invcosButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Arc cosine"
+msgstr "Arc cosinus"
+
+#. Screen reader prompt for the inverted tan on the scientific operator keypad.
+#: invtanButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Arc tangent"
+msgstr "Arc tangent"
+
+#. Screen reader prompt for the inverted sinh on the scientific operator keypad.
+#: invsinhButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic arc sine"
+msgstr "Arc sinus hiperbòlic"
+
+#. Screen reader prompt for the inverted cosh on the scientific operator keypad.
+#: invcoshButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic arc cosine"
+msgstr "Arc cosinus hiperbòlic"
+
+#. Screen reader prompt for the inverted tanh on the scientific operator keypad.
+#: invtanhButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic arc tangent"
+msgstr "Arc tangent hiperbòlic"
+
+#. Screen reader prompt for x power y button on the scientific operator keypad.
+#: powerButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "'X' to the exponent"
+msgstr "\" e\" a l'exponent"
+
+#. Screen reader prompt for the 10 power x button on the scientific operator keypad.
+#: powerOf10Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Ten to the exponent"
+msgstr "Deu a l'exponent"
+
+#. Screen reader for the e power x on the scientific operator keypad.
+#: powerOfEButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "'e' to the exponent"
+msgstr "\" e\" a l'exponent"
+
+#. Screen reader for the yth root of x on the scientific operator keypad. Note: String is meant to read out whatever the "Yth root" mathematical operator sounds like.
+#: ySquareRootButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "'y' root of 'x'"
+msgstr "arrel \"y\" de \"x\""
+
+#. Screen reader for the log base 10  on the scientific operator keypad
+#: logBase10Button.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Log"
+msgstr "Logaritme"
+
+#. Screen reader for the log base e on the scientific operator keypad
+#: logBaseEButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Natural log"
+msgstr "Logaritme natural"
+
+#. Screen reader for the mod button on the scientific operator keypad
+#: modButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Modulo"
+msgstr "Mòdul"
+
+#. Screen reader for the exp button on the scientific operator keypad
+#: expButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Exponential"
+msgstr "Exponencial"
+
+#. Screen reader for the exp button on the scientific operator keypad
+#: dmsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Degree Minute Second"
+msgstr "Grau Minut Segon"
+
+#. Screen reader for the exp button on the scientific operator keypad
+#: degreesButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "degreesButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Degrees"
+msgstr "Graus"
+
+#. Screen reader for the int button on the scientific operator keypad
+#: intButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Integer part"
+msgstr "Part d'enter"
+
+#. Screen reader for the frac button on the scientific operator keypad
+#: fractButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Fractional part"
+msgstr "Part fraccionària"
+
+#. Screen reader for the factorial button on the basic operator keypad
+#: factorialButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Factorial"
+msgstr "Factorial"
+
+#. This the Deg button's Degree mode automation nameon the scientific operator keypad. Should read as "Degrees toggle button".
+#: degButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Degrees toggle"
+msgstr "Commutador de graus"
+
+#. This is the Deg button's Grad mode automation name on the scientific operator keypad. Should read as "Gradians toggle button".
+#: gradButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Gradians toggle"
+msgstr "Commutador de graus centesimals"
+
+#. This is the Deg button's Rad mode automation name on the scientific operator keypad. Should read as "Radians toggle button".
+#: radButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Radians toggle"
+msgstr "Commutador de radians"
+
+#. Screen reader prompt for the Mode dropdown field in Snapped and Portrait modes.
+#: FlyoutNav.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Mode DropDown"
+msgstr "Desplegable de mode"
+
+#. Screen reader prompt for the Categories dropdown field.
+#: Categories.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Categories DropDown"
+msgstr "Desplegable de categories"
+
+#. Screen reader prompt for the Always-on-Top button when in normal mode.
+#: EnterAlwaysOnTopButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "EnterAlwaysOnTopButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Keep on top"
+msgstr "Mantén visible"
+
+#. Screen reader prompt for the Always-on-Top button when in Always-on-Top mode.
+#: ExitAlwaysOnTopButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "ExitAlwaysOnTopButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Back to full view"
+msgstr "Torna a la visualització completa"
+
+#. This is the tool tip automation name for the Always-on-Top button when in normal mode.
+#: EnterAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "EnterAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Keep on top"
+msgstr "Mantén visible"
+
+#. This is the tool tip automation name for the Always-on-Top button when in Always-on-Top mode.
+#: ExitAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "ExitAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Back to full view"
+msgstr "Torna a la visualització completa"
+
+#. Screen reader prompt for the Unit Converter Value1 i.e. top number field. %1 = DisplayValue, %2 = Unit field localized name.
+#: Format_ValueFrom
+msgid "Convert from %1 %2"
+msgstr "Converteix de %1 %2."
+
+#. {Locked="%1"}. Automation label for the calculator display in the specific case where the user has just pressed the decimal separator button. For example, the user wants to input "7.5".  When they have input "7." they will hear "Convert from 7 point _current_unit_". "point" should be localized to the locale's appropriate decimal separator.
+#: Format_ValueFrom_Decimal
+msgid "Convert from %1 point %2"
+msgstr "Converteix de %1 coma %2."
+
+#. Screen reader prompt for the Unit Converter Value2 i.e. bottom number field. %1 = DisplayValue, %2 = Unit field localized name.
+#: Format_ValueTo
+msgid "Converts into %1 %2"
+msgstr "Es converteix a %1 %2."
+
+#. Screen reader prompt for a conversion result, ie "2 liters is 2,000 milliliters" . %1 = From unit display value, %2 = From unit, %3 = To unit display value, %4 = To unit.
+#: Format_ConversionResult
+msgid "%1 %2 is %3 %4"
+msgstr "%1 %2 és %3 %4."
+
+#. Screen reader prompt for the Unit Converter Units1 i.e. top units field.
+#: InputUnit_Name
+msgid "Input unit"
+msgstr "Unitat d'entrada"
+
+#. Screen reader prompt for the Unit Converter Units2 i.e. bottom units field.
+#: OutputUnit_Name
+msgid "Output unit"
+msgstr "Unitat de sortida"
+
+#. Unit conversion category name called Area (eg. area of a sports field in square meters)
+#: CategoryName_AreaText
+msgid "Area"
+msgstr "Àrea"
+
+#. Unit conversion category name called Data
+#: CategoryName_DataText
+msgid "Data"
+msgstr "Dades"
+
+#. Unit conversion category name called Energy. (eg. the energy in a battery or in food)
+#: CategoryName_EnergyText
+msgid "Energy"
+msgstr "Energia"
+
+#. Unit conversion category name called Length
+#: CategoryName_LengthText
+msgid "Length"
+msgstr "Longitud"
+
+#. Unit conversion category name called Power (eg. the power of an engine or a light bulb)
+#: CategoryName_PowerText
+msgid "Power"
+msgstr "Potència"
+
+#. Unit conversion category name called Speed
+#: CategoryName_SpeedText
+msgid "Speed"
+msgstr "Velocitat"
+
+#. Unit conversion category name called Time
+#: CategoryName_TimeText
+msgid "Time"
+msgstr "Temps"
+
+#. Unit conversion category name called Volume (eg. cups, teaspoons, milliliters)
+#: CategoryName_VolumeText
+msgid "Volume"
+msgstr "Volum"
+
+#. Unit conversion category name called Temperature
+#: CategoryName_TemperatureText
+msgid "Temperature"
+msgstr "Temperatura"
+
+#. Unit conversion category name called Weight and Mass. Note that this category includes units of both mass and weight. People use the word "weight" in everyday life for measuring things such as food and people. In case a language has same word for "weight" and "mass" please use one word only.
+#: CategoryName_WeightText
+msgid "Weight and Mass"
+msgstr "Pes i massa"
+
+#. Unit conversion category name called Pressure
+#: CategoryName_PressureText
+msgid "Pressure"
+msgstr "Pressió"
+
+#. Unit conversion category name called Angle
+#: CategoryName_AngleText
+msgid "Angle"
+msgstr "Angle"
+
+#. Unit conversion category name called Currency
+#: CategoryName_CurrencyText
+msgid "Currency"
+msgstr "Moneda"
+
+#. A measurement unit for volume, in plural. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_FluidOunceUK
+msgid "Fluid ounces (UK)"
+msgstr "Unces líquides (Regne Unit)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_FluidOunceUK
+msgid "fl oz (UK)"
+msgstr "fl oz (Regne Unit)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_FluidOunceUS
+msgid "Fluid ounces (US)"
+msgstr "Unces líquides (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_FluidOunceUS
+msgid "fl oz (US)"
+msgstr "fl oz (EUA)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_GallonUK
+msgid "Gallons (UK)"
+msgstr "Galons (Regne Unit)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_GallonUK
+msgid "gal (UK)"
+msgstr "gal (Regne Unit)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_GallonUS
+msgid "Gallons (US)"
+msgstr "Galons (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_GallonUS
+msgid "gal (US)"
+msgstr "gal (EUA)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Liter
+msgid "Liters"
+msgstr "Litres"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_Liter
+msgctxt "UnitAbbreviation_Liter"
+msgid "L"
+msgstr "l"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Milliliter
+msgid "Milliliters"
+msgstr "Mil·lilitres"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_Milliliter
+msgid "mL"
+msgstr "ml"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_PintUK
+msgid "Pints (UK)"
+msgstr "Pintes (Regne Unit)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_PintUK
+msgid "pt (UK)"
+msgstr "pt (Regne Unit)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_PintUS
+msgid "Pints (US)"
+msgstr "Pintes (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_PintUS
+msgid "pt (US)"
+msgstr "pt (EUA)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_TablespoonUS
+msgid "Tablespoons (US)"
+msgstr "Cullerades (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_TablespoonUS
+msgid "tbsp. (US)"
+msgstr "tbsp. (cullerada) (EUA)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_TeaspoonUS
+msgid "Teaspoons (US)"
+msgstr "Culleradetes (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_TeaspoonUS
+msgid "tsp. (US)"
+msgstr "tsp. (cullereta) (EUA)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_TablespoonUK
+msgid "Tablespoons (UK)"
+msgstr "Cullerades (Regne Unit)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_TablespoonUK
+msgid "tbsp. (UK)"
+msgstr "tbsp. (cullerada) (Regne Unit)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_TeaspoonUK
+msgid "Teaspoons (UK)"
+msgstr "Culleradetes (Regne Unit)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_TeaspoonUK
+msgid "tsp. (UK)"
+msgstr "tsp. (cullereta) (Regne Unit)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_QuartUK
+msgid "Quarts (UK)"
+msgstr "Quarts (Regne Unit)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_QuartUK
+msgid "qt (UK)"
+msgstr "qt (Regne Unit)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_QuartUS
+msgid "Quarts (US)"
+msgstr "Quarts (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_QuartUS
+msgid "qt (US)"
+msgstr "qt (EUA)"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CupUS
+msgid "Cups (US)"
+msgstr "Tasses (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_CupUS
+msgid "cup (US)"
+msgstr "tassa (EUA)"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_Acre
+msgid "ac"
+msgstr "ac"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Bit
+msgid "b"
+msgstr "b"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_BritishThermalUnit
+msgid "BTU"
+msgstr "BTU"
+
+#. An abbreviation for a measurement unit of power
+#: UnitAbbreviation_BTUPerMinute
+msgid "BTU/min"
+msgstr "BTU/minut"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Byte
+msgctxt "UnitAbbreviation_Byte"
+msgid "B"
+msgstr "B"
+
+#. An abbreviation for a measurement unit of energy
+#: UnitAbbreviation_Calorie
+msgid "cal"
+msgstr "cal"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Centimeter
+msgid "cm"
+msgstr "cm"
+
+#. An abbreviation for a measurement unit of speed
+#: UnitAbbreviation_CentimetersPerSecond
+msgid "cm/s"
+msgstr "cm/s"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_CubicCentimeter
+msgid "cm³"
+msgstr "cm³"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_CubicFoot
+msgid "ft³"
+msgstr "ft³"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_CubicInch
+msgid "in³"
+msgstr "in³"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_CubicMeter
+msgid "m³"
+msgstr "m³"
+
+#. An abbreviation for a measurement unit of volume
+#: UnitAbbreviation_CubicYard
+msgid "yd³"
+msgstr "yd³"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Day
+msgid "d"
+msgstr "d"
+
+#. An abbreviation for "degrees Celsius"
+#: UnitAbbreviation_DegreesCelsius
+msgid "°C"
+msgstr "°C"
+
+#. An abbreviation for a "degrees Fahrenheit"
+#: UnitAbbreviation_DegreesFahrenheit
+msgid "°F"
+msgstr "°F"
+
+#. An abbreviation for a measurement unit of energy
+#: UnitAbbreviation_Electron-Volt
+msgid "eV"
+msgstr "eV"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Foot
+msgid "ft"
+msgstr "ft"
+
+#. An abbreviation for a measurement unit of speed
+#: UnitAbbreviation_FeetPerSecond
+msgid "ft/s"
+msgstr "ft/s"
+
+#. An abbreviation for a measurement unit of energy
+#: UnitAbbreviation_Foot-Pound
+msgid "ft•lb"
+msgstr "ft•lb"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Gigabit
+msgid "Gb"
+msgstr "Gb"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Gigabyte
+msgid "GB"
+msgstr "GB"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_Hectare
+msgid "ha"
+msgstr "ha"
+
+#. An abbreviation for a measurement unit of power
+#: UnitAbbreviation_Horsepower
+msgid "hp (US)"
+msgstr "hp (EUA)"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Hour
+msgid "hr"
+msgstr "h"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Inch
+msgid "in"
+msgstr "in"
+
+#. An abbreviation for a measurement unit of energy
+#: UnitAbbreviation_Joule
+msgctxt "UnitAbbreviation_Joule"
+"UnitAbbreviation_Joule"
+"UnitAbbreviation_Joule"
+"UnitAbbreviation_Joule"
+"UnitAbbreviation_Joule"
+"UnitAbbreviation_Joule"
+msgid "J"
+msgstr "J"
+
+#. An abbreviation for the temperature system "Kelvin" (eg. 0 degrees Celsius = 273 Kelvin)
+#: UnitAbbreviation_Kelvin
+msgid "K"
+msgstr "K"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Kilobit
+msgid "Kb"
+msgstr "Kb"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Kilobyte
+msgid "KB"
+msgstr "KB"
+
+#. An abbreviation for a measurement unit of energy
+#: UnitAbbreviation_Kilocalorie
+msgid "kcal"
+msgstr "kcal"
+
+#. An abbreviation for a measurement unit of energy
+#: UnitAbbreviation_Kilojoule
+msgid "kJ"
+msgstr "kJ"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Kilometer
+msgid "km"
+msgstr "km"
+
+#. An abbreviation for a measurement unit of speed
+#: UnitAbbreviation_KilometersPerHour
+msgid "km/h"
+msgstr "km/h"
+
+#. An abbreviation for a measurement unit of power
+#: UnitAbbreviation_Kilowatt
+msgid "kW"
+msgstr "kW"
+
+#. An abbreviation for a measurement unit of speed
+#: UnitAbbreviation_Knot
+msgid "kn"
+msgstr "kn"
+
+#. An abbreviation for a measurement of speed (Mach is the speed of sound, Mach 2 is 2 times the speed of sound)
+#: UnitAbbreviation_Mach
+msgctxt "UnitAbbreviation_Mach"
+msgid "M"
+msgstr "M"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Megabit
+msgid "Mb"
+msgstr "Mb"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Megabyte
+msgid "MB"
+msgstr "MB"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Meter
+msgid "m"
+msgstr "m"
+
+#. An abbreviation for a measurement unit of speed
+#: UnitAbbreviation_MetersPerSecond
+msgid "m/s"
+msgstr "m/s"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Micron
+msgid "µm"
+msgstr "µm"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Microsecond
+msgid "µs"
+msgstr "µs"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Mile
+msgid "mi"
+msgstr "mi"
+
+#. An abbreviation for a measurement unit of speed
+#: UnitAbbreviation_MilesPerHour
+msgid "mph"
+msgstr "mph"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Millimeter
+msgid "mm"
+msgstr "mm"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Millisecond
+msgid "ms"
+msgstr "ms"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Minute
+msgid "min"
+msgstr "min"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Nanometer
+msgid "nm"
+msgstr "nm"
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_NauticalMile
+msgid "nmi"
+msgstr "nmi"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Petabit
+msgid "Pb"
+msgstr "Pb"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Petabyte
+msgid "PB"
+msgstr "PB"
+
+#. An abbreviation for a measurement unit of power
+#: UnitAbbreviation_Foot-PoundPerMinute
+msgid "ft•lb/min"
+msgstr "ft•lb/min"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Second
+msgid "s"
+msgstr "s"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareCentimeter
+msgid "cm²"
+msgstr "cm²"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareFoot
+msgid "ft²"
+msgstr "ft²"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareInch
+msgid "in²"
+msgstr "in²"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareKilometer
+msgid "km²"
+msgstr "km²"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareMeter
+msgid "m²"
+msgstr "m²"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareMile
+msgid "mi²"
+msgstr "mi²"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareMillimeter
+msgid "mm²"
+msgstr "mm²"
+
+#. An abbreviation for a measurement unit of area
+#: UnitAbbreviation_SquareYard
+msgid "yd²"
+msgstr "yd²"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Terabit
+msgid "Tb"
+msgstr "Tb"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Terabyte
+msgid "TB"
+msgstr "TB"
+
+#. An abbreviation for a measurement unit of power
+#: UnitAbbreviation_Watt
+msgctxt "UnitAbbreviation_Watt"
+msgid "W"
+msgstr "W"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Week
+msgid "wk"
+msgstr "setm."
+
+#. An abbreviation for a measurement unit of length
+#: UnitAbbreviation_Yard
+msgid "yd"
+msgstr "yd"
+
+#. An abbreviation for a measurement unit of time
+#: UnitAbbreviation_Year
+msgid "yr"
+msgstr "any"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Gibibits
+msgid "Gi"
+msgstr "Gi"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Gibibytes
+msgid "GiB"
+msgstr "GiB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Kibibits
+msgid "Ki"
+msgstr "Ki"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Kibibytes
+msgid "KiB"
+msgstr "KiB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Mebibits
+msgid "Mi"
+msgstr "Mi"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Mebibytes
+msgid "MiB"
+msgstr "MiB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Pebibits
+msgctxt "UnitAbbreviation_Pebibits"
+msgid "Pi"
+msgstr "Pi"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Pebibytes
+msgid "PiB"
+msgstr "PiB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Tebibits
+msgid "Ti"
+msgstr "Ti"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Tebibytes
+msgid "TiB"
+msgstr "TiB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Exabits
+msgctxt "UnitAbbreviation_Exabits"
+msgid "E"
+msgstr "E"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Exabytes
+msgid "EB"
+msgstr "EB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Exbibits
+msgid "Ei"
+msgstr "Ei"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Exbibytes
+msgid "EiB"
+msgstr "EiB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Zetabits
+msgid "Z"
+msgstr "Z"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Zetabytes
+msgid "ZB"
+msgstr "ZB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Zebibits
+msgid "Zi"
+msgstr "Zi"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Zebibytes
+msgid "ZiB"
+msgstr "ZiB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Yottabit
+msgctxt "UnitAbbreviation_Yottabit"
+msgid "Y"
+msgstr "Y"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Yottabyte
+msgid "YB"
+msgstr "YB"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Yobibits
+msgid "Yi"
+msgstr "Yi"
+
+#. An abbreviation for a measurement unit of data
+#: UnitAbbreviation_Yobibytes
+msgid "YiB"
+msgstr "YiB"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Acre
+msgid "Acres"
+msgstr "Acres"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Bit
+msgid "Bits"
+msgstr "Bits"
+
+#. A measurement unit for energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_BritishThermalUnit
+msgid "British thermal units"
+msgstr "Unitats tèrmiques britàniques"
+
+#. A measurement unit for power: British Thermal Units per minute. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_BTUPerMinute
+msgid "BTUs/minute"
+msgstr "BTU/minut"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Byte
+msgid "Bytes"
+msgstr "Bytes"
+
+#. A measurement unit for energy. Please note that this is the "small calorie" used in science for measuring heat energy, not the "large calorie" commonly used for measuring food energy. If there is a simple term to distinguish this one from the large "Food calorie", please use that. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Calorie
+msgid "Thermal calories"
+msgstr "Calories"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Centimeter
+msgid "Centimeters"
+msgstr "Centímetres"
+
+#. A measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CentimetersPerSecond
+msgid "Centimeters per second"
+msgstr "Centímetres per segon"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CubicCentimeter
+msgid "Cubic centimeters"
+msgstr "Centímetres cúbics"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CubicFoot
+msgid "Cubic feet"
+msgstr "Peus cúbics"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CubicInch
+msgid "Cubic inches"
+msgstr "Polzades cúbiques"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CubicMeter
+msgid "Cubic meters"
+msgstr "Metres cúbics"
+
+#. A measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CubicYard
+msgid "Cubic yards"
+msgstr "Iardes cúbiques"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Day
+msgctxt "UnitName_Day"
+msgid "Days"
+msgstr "Dies"
+
+#. An option in the unit converter to select degrees Celsius
+#: UnitName_DegreesCelsius
+msgid "Celsius"
+msgstr "Celsius"
+
+#. An option in the unit converter to select degrees Fahrenheit
+#: UnitName_DegreesFahrenheit
+msgid "Fahrenheit"
+msgstr "Fahrenheit"
+
+#. A measurement unit for energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Electron-Volt
+msgid "Electron volts"
+msgstr "Electró-volts"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Foot
+msgid "Feet"
+msgstr "Peus"
+
+#. A measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_FeetPerSecond
+msgid "Feet per second"
+msgstr "Peus per segon"
+
+#. A measurement unit for energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Foot-Pound
+msgid "Foot-pounds"
+msgstr "Lliures peu"
+
+#. A measurement unit for power. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Foot-PoundPerMinute
+msgid "Foot-pounds/minute"
+msgstr "Lliures peu/minut"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Gigabit
+msgid "Gigabits"
+msgstr "Gigabits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Gigabyte
+msgid "Gigabytes"
+msgstr "Gigabytes"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Hectare
+msgid "Hectares"
+msgstr "Hectàrees"
+
+#. A measurement unit for power
+#: UnitName_Horsepower
+msgid "Horsepower (US)"
+msgstr "Cavalls de vapor (EUA)"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Hour
+msgid "Hours"
+msgstr "Hores"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Inch
+msgid "Inches"
+msgstr "Polzades"
+
+#. A measurement unit for energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Joule
+msgid "Joules"
+msgstr "Joules"
+
+#. An option in the unit converter to select the temperature system "Kelvin" (eg. 0 degrees Celsius = 273 Kelvin). At least in English, Kelvin does not use "degrees". A measurement is just stated as "273 Kelvin".
+#: UnitName_Kelvin
+msgid "Kelvin"
+msgstr "Kelvin"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kilobit
+msgid "Kilobits"
+msgstr "Kilobits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kilobyte
+msgid "Kilobytes"
+msgstr "Kilobytes"
+
+#. A measurement unit for energy. The scientific name is kilocalorie, but this is what is commonly referred to as a "calorie" or "large calorie" when talking about food. Please use the everyday-use word for food energy calories if there is one. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kilocalorie
+msgid "Food calories"
+msgstr "Calories alimentàries"
+
+#. A measurement unit for energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kilojoule
+msgid "Kilojoules"
+msgstr "Quilojoules"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kilometer
+msgid "Kilometers"
+msgstr "Quilòmetres"
+
+#. A measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_KilometersPerHour
+msgid "Kilometers per hour"
+msgstr "Quilòmetres per hora"
+
+#. A measurement unit for power. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kilowatt
+msgid "Kilowatts"
+msgstr "Quilowatts"
+
+#. A nautical/aerial measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Knot
+msgid "Knots"
+msgstr "Nusos"
+
+#. A measurement of speed (Mach is the speed of sound, Mach 2 is 2 times the speed of sound)
+#: UnitName_Mach
+msgid "Mach"
+msgstr "Mach"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Megabit
+msgid "Megabits"
+msgstr "Megabits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Megabyte
+msgid "Megabytes"
+msgstr "Megabytes"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Meter
+msgid "Meters"
+msgstr "Metres"
+
+#. A measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_MetersPerSecond
+msgid "Meters per second"
+msgstr "Metres per segon"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Micron
+msgid "Microns"
+msgstr "Microns"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Microsecond
+msgid "Microseconds"
+msgstr "Microsegons"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Mile
+msgid "Miles"
+msgstr "Milles"
+
+#. A measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_MilesPerHour
+msgid "Miles per hour"
+msgstr "Milles per hora"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Millimeter
+msgid "Millimeters"
+msgstr "Mil·límetres"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Millisecond
+msgid "Milliseconds"
+msgstr "Mil·lisegons"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Minute
+msgid "Minutes"
+msgstr "Minuts"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Nanometer
+msgid "Nanometers"
+msgstr "Nanòmetres"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_NauticalMile
+msgid "Nautical Miles"
+msgstr "Milles nàutiques"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Petabit
+msgid "Petabits"
+msgstr "Petabits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Petabyte
+msgid "Petabytes"
+msgstr "Petabytes"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Second
+msgid "Seconds"
+msgstr "Segons"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareCentimeter
+msgid "Square centimeters"
+msgstr "Centímetres quadrats"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareFoot
+msgid "Square feet"
+msgstr "Peus quadrats"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareInch
+msgid "Square inches"
+msgstr "Polzades quadrades"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareKilometer
+msgid "Square kilometers"
+msgstr "Quilòmetres quadrats"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareMeter
+msgid "Square meters"
+msgstr "Metres quadrats"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareMile
+msgid "Square miles"
+msgstr "Milles quadrades"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareMillimeter
+msgid "Square millimeters"
+msgstr "Mil·límetres quadrats"
+
+#. A measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SquareYard
+msgid "Square yards"
+msgstr "Iardes quadrades"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Terabit
+msgid "Terabits"
+msgstr "Terabits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Terabyte
+msgid "Terabytes"
+msgstr "Terabytes"
+
+#. A measurement unit for power. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Watt
+msgid "Watts"
+msgstr "Watts"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Week
+msgid "Weeks"
+msgstr "Setmanes"
+
+#. A measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Yard
+msgid "Yards"
+msgstr "Iardes"
+
+#. A measurement unit for time. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Year
+msgctxt "UnitName_Year"
+msgid "Years"
+msgstr "Anys"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Carat
+msgid "CD"
+msgstr "CT"
+
+#. An abbreviation for a measurement unit of Angle
+#: UnitAbbreviation_Degree
+msgid "deg"
+msgstr "°"
+
+#. An abbreviation for a measurement unit of Angle
+#: UnitAbbreviation_Radian
+msgid "rad"
+msgstr "rad"
+
+#. An abbreviation for a measurement unit of Angle
+#: UnitAbbreviation_Gradian
+msgid "grad"
+msgstr "∇"
+
+#. An abbreviation for a measurement unit of Pressure
+#: UnitAbbreviation_Atmosphere
+msgid "atm"
+msgstr "atm"
+
+#. An abbreviation for a measurement unit of Pressure
+#: UnitAbbreviation_Bar
+msgid "ba"
+msgstr "ba"
+
+#. An abbreviation for a measurement unit of Pressure
+#: UnitAbbreviation_KiloPascal
+msgid "kPa"
+msgstr "kPa"
+
+#. An abbreviation for a measurement unit of Pressure
+#: UnitAbbreviation_MillimeterOfMercury
+msgid "mmHg"
+msgstr "mmHg"
+
+#. An abbreviation for a measurement unit of Pressure
+#: UnitAbbreviation_Pascal
+msgid "Pa"
+msgstr "Pa"
+
+#. An abbreviation for a measurement unit of Pressure
+#: UnitAbbreviation_PSI
+msgid "psi"
+msgstr "psi"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Centigram
+msgid "cg"
+msgstr "cg"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Decagram
+msgid "dag"
+msgstr "dag"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Decigram
+msgid "dg"
+msgstr "dg"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Gram
+msgid "g"
+msgstr "g"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Hectogram
+msgid "hg"
+msgstr "hg"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Kilogram
+msgid "kg"
+msgstr "kg"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_LongTon
+msgid "ton (UK)"
+msgstr "tona (Regne Unit)"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Milligram
+msgid "mg"
+msgstr "mg"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Ounce
+msgid "oz"
+msgstr "oz"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Pound
+msgid "lb"
+msgstr "lb"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_ShortTon
+msgid "ton (US)"
+msgstr "tona (EUA)"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Stone
+msgid "st"
+msgstr "st"
+
+#. An abbreviation for a measurement unit of weight
+#: UnitAbbreviation_Tonne
+msgid "t"
+msgstr "t"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Carat
+msgid "Carats"
+msgstr "Quirats"
+
+#. A measurement unit for Angle.
+#: UnitName_Degree
+msgctxt "UnitName_Degree"
+msgid "Degrees"
+msgstr "Graus"
+
+#. A measurement unit for Angle.
+#: UnitName_Radian
+msgid "Radians"
+msgstr "Radians"
+
+#. A measurement unit for Angle.
+#: UnitName_Gradian
+msgid "Gradians"
+msgstr "Gradians"
+
+#. A measurement unit for Pressure.
+#: UnitName_Atmosphere
+msgid "Atmospheres"
+msgstr "Atmosferes"
+
+#. A measurement unit for Pressure.
+#: UnitName_Bar
+msgid "Bars"
+msgstr "mBars"
+
+#. A measurement unit for Pressure.
+#: UnitName_KiloPascal
+msgid "Kilopascals"
+msgstr "Kilopascals"
+
+#. A measurement unit for Pressure.
+#: UnitName_MillimeterOfMercury
+msgid "Millimeters of mercury "
+msgstr "Mil·límetres de mercuri"
+
+#. A measurement unit for Pressure.
+#: UnitName_Pascal
+msgid "Pascals"
+msgstr "Pascals"
+
+#. A measurement unit for Pressure.
+#: UnitName_PSI
+msgid "Pounds per square inch"
+msgstr "Lliures per polzada quadrada (PSI)"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Centigram
+msgid "Centigrams"
+msgstr "Centigrams"
+
+#. A measurement unit for weight. Note: Dekagram is spelled "decagram" everywhere except where US English is used. (EN-US dekagram, elsewhere decagram). (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Decagram
+msgid "Dekagrams"
+msgstr "Decagrams"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Decigram
+msgid "Decigrams"
+msgstr "Decigrams"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Gram
+msgid "Grams"
+msgstr "Grams"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Hectogram
+msgid "Hectograms"
+msgstr "Hectograms"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kilogram
+msgid "Kilograms"
+msgstr "Quilograms"
+
+#. A measurement unit for weight. This is the UK version of ton. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_LongTon
+msgid "Long tons (UK)"
+msgstr "Tones llargues (Regne Unit)"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Milligram
+msgid "Milligrams"
+msgstr "Mil·ligrams"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Ounce
+msgid "Ounces"
+msgstr "Unces"
+
+#. A measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Pound
+msgid "Pounds"
+msgstr "Lliures"
+
+#. A measurement unit for weight. This is the US version of ton. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_ShortTon
+msgid "Short tons (US)"
+msgstr "Tones curtes (EUA)"
+
+#. A measurement unit for weight. Equal to 14 pounds. Note that this is the plural form of the word in English (eg. "This man weighs 11 stone."). (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Stone
+msgid "Stone"
+msgstr "Stone"
+
+#. A measurement unit for weight. This is the metric version of tonne. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Tonne
+msgid "Metric tonnes"
+msgstr "Tones mètriques"
+
+#. A compact disc, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CD
+msgctxt "UnitName_CD"
+msgid "CDs"
+msgstr "CD"
+
+#. A compact disc, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_CD
+msgctxt "UnitAbbreviation_CD"
+msgid "CDs"
+msgstr "CD"
+
+#. A professional-sized soccer field, used as a comparison measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SoccerField
+msgctxt "UnitName_SoccerField"
+msgid "soccer fields"
+msgstr "camps de futbol"
+
+#. A professional-sized soccer field, used as a comparison measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_SoccerField
+msgctxt "UnitAbbreviation_SoccerField"
+msgid "soccer fields"
+msgstr "camps de futbol"
+
+#. A 1.44 MB floppy disk, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_FloppyDisk
+msgctxt "UnitName_FloppyDisk"
+msgid "floppy disks"
+msgstr "disquets"
+
+#. A 1.44 MB floppy disk, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_FloppyDisk
+msgctxt "UnitAbbreviation_FloppyDisk"
+msgid "floppy disks"
+msgstr "disquets"
+
+#. A DVD, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_DVD
+msgctxt "UnitName_DVD"
+msgid "DVDs"
+msgstr "DVD"
+
+#. A DVD, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_DVD
+msgctxt "UnitAbbreviation_DVD"
+msgid "DVDs"
+msgstr "DVD"
+
+#. AA-cell battery, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Battery
+msgctxt "UnitName_Battery"
+msgid "batteries"
+msgstr "bateries"
+
+#. AA-cell battery, used as a comparison measurement unit for data storage. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Battery
+msgctxt "UnitAbbreviation_Battery"
+msgid "batteries"
+msgstr "bateries"
+
+#. A standard paperclip, used as a comparison measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Paperclip
+msgctxt "UnitName_Paperclip"
+msgid "paperclips"
+msgstr "clips"
+
+#. A standard paperclip, used as a comparison measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Paperclip
+msgctxt "UnitAbbreviation_Paperclip"
+msgid "paperclips"
+msgstr "clips"
+
+#. A jumbo jet (eg. Boeing 747), used as a comparison measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_JumboJet
+msgctxt "UnitName_JumboJet"
+msgid "jumbo jets"
+msgstr "avions de fuselatge ample"
+
+#. A jumbo jet (eg. Boeing 747), used as a comparison measurement unit for length. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_JumboJet
+msgctxt "UnitAbbreviation_JumboJet"
+msgid "jumbo jets"
+msgstr "avions de fuselatge ample"
+
+#. A light bulb, used as a comparison measurement unit for power (60 watts). (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_LightBulb
+msgctxt "UnitName_LightBulb"
+msgid "light bulbs"
+msgstr "bombetes"
+
+#. A light bulb, used as a comparison measurement unit for power (60 watts). (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_LightBulb
+msgctxt "UnitAbbreviation_LightBulb"
+msgid "light bulbs"
+msgstr "bombetes"
+
+#. A horse, used as a comparison measurement unit for power (~1 horsepower) or speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Horse
+msgctxt "UnitName_Horse"
+msgid "horses"
+msgstr "cavalls"
+
+#. A horse, used as a comparison measurement unit for power (~1 horsepower) or speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Horse
+msgctxt "UnitAbbreviation_Horse"
+msgid "horses"
+msgstr "cavalls"
+
+#. A bathtub full of water, used as a comparison measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Bathtub
+msgctxt "UnitName_Bathtub"
+msgid "bathtubs"
+msgstr "banyeres"
+
+#. A bathtub full of water, used as a comparison measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Bathtub
+msgctxt "UnitAbbreviation_Bathtub"
+msgid "bathtubs"
+msgstr "banyeres"
+
+#. A snowflake, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Snowflake
+msgctxt "UnitName_Snowflake"
+msgid "snowflakes"
+msgstr "flocs de neu"
+
+#. A snowflake, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Snowflake
+msgctxt "UnitAbbreviation_Snowflake"
+msgid "snowflakes"
+msgstr "flocs de neu"
+
+#. An elephant, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Elephant
+msgctxt "UnitName_Elephant"
+msgid "elephants"
+msgstr "elefants"
+
+#. An elephant, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Elephant
+msgctxt "UnitAbbreviation_Elephant"
+msgid "elephants"
+msgstr "elefants"
+
+#. A turtle, used as a comparison measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Turtle
+msgctxt "UnitName_Turtle"
+msgid "turtles"
+msgstr "tortugues"
+
+#. A turtle, used as a comparison measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Turtle
+msgctxt "UnitAbbreviation_Turtle"
+msgid "turtles"
+msgstr "tortugues"
+
+#. A jet plane, used as a comparison measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Jet
+msgctxt "UnitName_Jet"
+msgid "jets"
+msgstr "avions de reacció"
+
+#. A jet plane, used as a comparison measurement unit for speed. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Jet
+msgctxt "UnitAbbreviation_Jet"
+msgid "jets"
+msgstr "avions de reacció"
+
+#. A blue whale, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Whale
+msgctxt "UnitName_Whale"
+msgid "whales"
+msgstr "balenes"
+
+#. A blue whale, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Whale
+msgctxt "UnitAbbreviation_Whale"
+msgid "whales"
+msgstr "balenes"
+
+#. A coffee cup, used as a comparison measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_CoffeeCup
+msgctxt "UnitName_CoffeeCup"
+msgid "coffee cups"
+msgstr "tasses de cafè"
+
+#. A coffee cup, used as a comparison measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_CoffeeCup
+msgctxt "UnitAbbreviation_CoffeeCup"
+msgid "coffee cups"
+msgstr "tasses de cafè"
+
+#. An Olympic-sized swimming pool, used as a comparison measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SwimmingPool
+msgctxt "UnitName_SwimmingPool"
+msgid "swimming pools"
+msgstr "piscines"
+
+#. An Olympic-sized swimming pool, used as a comparison measurement unit for volume. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_SwimmingPool
+msgctxt "UnitAbbreviation_SwimmingPool"
+msgid "swimming pools"
+msgstr "piscines"
+
+#. A human hand, used as a comparison measurement unit for length or area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Hand
+msgctxt "UnitName_Hand"
+msgid "hands"
+msgstr "mans"
+
+#. A human hand, used as a comparison measurement unit for length or area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Hand
+msgctxt "UnitAbbreviation_Hand"
+msgid "hands"
+msgstr "mans"
+
+#. A sheet of 8.5 x 11 inch paper, used as a comparison measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Paper
+msgctxt "UnitName_Paper"
+msgid "sheets of paper"
+msgstr "fulls de paper"
+
+#. A sheet of 8.5 x 11 inch paper, used as a comparison measurement unit for area. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Paper
+msgctxt "UnitAbbreviation_Paper"
+msgid "sheets of paper"
+msgstr "fulls de paper"
+
+#. A castle, used as a comparison measurement unit for area (floorspace). (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Castle
+msgctxt "UnitName_Castle"
+msgid "castles"
+msgstr "castells"
+
+#. A castle, used as a comparison measurement unit for area (floorspace). (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Castle
+msgctxt "UnitAbbreviation_Castle"
+msgid "castles"
+msgstr "castells"
+
+#. A banana, used as a comparison measurement unit for food energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Banana
+msgctxt "UnitName_Banana"
+msgid "bananas"
+msgstr "plàtans"
+
+#. A banana, used as a comparison measurement unit for food energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_Banana
+msgctxt "UnitAbbreviation_Banana"
+msgid "bananas"
+msgstr "plàtans"
+
+#. A slice of chocolate cake, used as a comparison measurement unit for food energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SliceOfCake
+msgctxt "UnitName_SliceOfCake"
+msgid "slices of cake"
+msgstr "trossos de pastís"
+
+#. A slice of chocolate cake, used as a comparison measurement unit for food energy. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_SliceOfCake
+msgctxt "UnitAbbreviation_SliceOfCake"
+msgid "slices of cake"
+msgstr "trossos de pastís"
+
+#. A train engine, used as a comparison measurement unit for power. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_TrainEngine
+msgctxt "UnitName_TrainEngine"
+msgid "train engines"
+msgstr "locomotores"
+
+#. A train engine, used as a comparison measurement unit for power. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_TrainEngine
+msgctxt "UnitAbbreviation_TrainEngine"
+msgid "train engines"
+msgstr "locomotores"
+
+#. A soccer ball, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_SoccerBall
+msgctxt "UnitName_SoccerBall"
+msgid "soccer balls"
+msgstr "pilotes de futbol"
+
+#. A soccer ball, used as a comparison measurement unit for weight. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitAbbreviation_SoccerBall
+msgctxt "UnitAbbreviation_SoccerBall"
+msgid "soccer balls"
+msgstr "pilotes de futbol"
+
+#. {Locked}This is the shortcut for the DEG command, that sets the scientific calculator in degree mode. This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: degButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "degButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F4"
+msgstr ""
+
+#. {Locked}This is the shortcut for the RAD command, that sets the scientific calculator in radian mode. This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: radButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "radButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F5"
+msgstr ""
+
+#. {Locked}This is the shortcut for the GRAD command, that sets the scientific calculator in grad mode. This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: gradButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "gradButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F3"
+msgstr ""
+
+#. Help text used by accessibility tools to indicate that an item in the list of memory values is a memory item.
+#: MemoryItemHelpText
+msgid "Memory Item"
+msgstr "Element de memòria"
+
+#. This string is what is read by Narrator, and other screen readers, for the supplementary value at the bottom of the converter view, %1 = the value of the supplementary unit (i.e. 0.5), %2 = the unit itself (i.e. inches, meters, etc)
+#: SupplementaryUnit_AutomationName
+msgctxt "SupplementaryUnit_AutomationName"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#. Screen reader prompt for the About panel back button
+#: AboutControlBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "AboutControlBackButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Back"
+msgstr "Enrere"
+
+#. Content of tooltip being displayed on AboutControlBackButton
+#: AboutControlBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "AboutControlBackButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Back"
+msgstr "Enrere"
+
+#. Displayed on a link to the Microsoft Software License Terms on the About panel
+#: AboutFlyoutEULA.Text
+msgid "Microsoft Software License Terms"
+msgstr "Termes de llicència per al programari de Microsoft"
+
+#. Displayed on a link to the Microsoft Privacy Statement on the About panel
+#: AboutControlPrivacyStatement.Text
+msgid "Microsoft Privacy Statement"
+msgstr "Declaració de privadesa de Microsoft"
+
+#. {Locked="%1"}. Copyright statement, displayed on the About panel. %1 = the current year (4 digits)
+#: AboutControlCopyright
+msgid "© %1 Microsoft. All rights reserved."
+msgstr "© %1 Microsoft. Tots els drets reservats."
+
+#. The text that shows in the dropdown navigation control to open About panel
+#: AboutButton.Content
+msgid "About"
+msgstr "Sobre"
+
+#. The text that shows in the dropdown navigation control to give the user the option to send feedback about the app and it launches Windows Feedback app
+#: FeedbackButton.Content
+msgid "Send feedback"
+msgstr "Envia comentaris"
+
+#. {Locked}Leave as RESERVED_FOR_FONTLOC unless the font localization value provided by the WinRT LanguageFontGroup API should be overridden. In that case, enter the font family (e.g. "Segoe UI"). If any of the font overrides are modified then all of them need to be modified.
+#: LocalizedFontFamilyOverride
+msgctxt "LocalizedFontFamilyOverride"
+msgid "RESERVED_FOR_FONTLOC"
+msgstr ""
+
+#. {Locked}Leave as RESERVED_FOR_FONTLOC unless the font localization value provided by the WinRT LanguageFontGroup API should be overridden. In that case, enter the font Weight (e.g. "light"). If any of the font overrides are modified then all of them need to be modified.
+#: LocalizedFontWeightOverride
+msgctxt "LocalizedFontWeightOverride"
+msgid "RESERVED_FOR_FONTLOC"
+msgstr ""
+
+#. {Locked}Leave as RESERVED_FOR_FONTLOC unless the font localization value provided by the WinRT LanguageFontGroup API should be overridden. In that case, enter the font scale factor to be used as a replacement for UICaptionFont.ScaleFactor (scale factor is a specified in percentage scaling; i.e. 100 = no scaling). If any of the font overrides are modified then all of them need to be modified.
+#: LocalizedUICaptionFontSizeFactorOverride
+msgctxt "LocalizedUICaptionFontSizeFactorOverride"
+msgid "RESERVED_FOR_FONTLOC"
+msgstr ""
+
+#. {Locked}Leave as RESERVED_FOR_FONTLOC unless the font localization value provided by the WinRT LanguageFontGroup API should be overridden. In that case, enter the font scale factor to be used as a replacement for UITextFont.ScaleFactor (scale factor is a specified in percentage scaling; i.e. 100 = no scaling). If any of the font overrides are modified then all of them need to be modified.
+#: LocalizedUITextFontSizeFactorOverride
+msgctxt "LocalizedUITextFontSizeFactorOverride"
+msgid "RESERVED_FOR_FONTLOC"
+msgstr ""
+
+#. {Locked}The Binary button
+#: Bin
+msgctxt "Bin"
+msgid "BIN"
+msgstr ""
+
+#. {Locked}The Decimal button
+#: Dec
+msgctxt "Dec"
+msgid "DEC"
+msgstr ""
+
+#. {Locked}The Hex button
+#: Hex
+msgctxt "Hex"
+msgid "HEX"
+msgstr ""
+
+#. {Locked}The Octal button
+#: Oct
+msgctxt "Oct"
+msgid "OCT"
+msgstr ""
+
+#. The text that shows as the header for the history list
+#: HistoryEmpty.Text
+msgid "There’s no history yet"
+msgstr "Encara no hi ha historial"
+
+#. The text that shows as the header for the memory list
+#: MemoryPaneEmpty.Text
+msgid "There’s nothing saved in memory"
+msgstr "No hi ha res desat a la memòria"
+
+#. Screen reader prompt for the negate button on the converter operator keypad
+#: MemoryFlyout.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "MemoryFlyout.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Memory"
+msgstr "Memòria"
+
+#. The paste operation cannot be performed, if the expression is invalid.
+#: CannotPaste
+msgid "This expression cannot be pasted"
+msgstr "Aquesta expressió no es pot enganxar."
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: wordButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "wordButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F4"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: qwordButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "F2"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: byteButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgid "F12"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: dwordButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "dwordButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "F3"
+msgstr ""
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Gibibits
+msgid "Gibibits"
+msgstr "Gibibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Gibibytes
+msgid "Gibibytes"
+msgstr "Gibibytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kibibits
+msgid "Kibibits"
+msgstr "Kibibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Kibibytes
+msgid "Kibibytes"
+msgstr "Kibibytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Mebibits
+msgid "Mebibits"
+msgstr "Mebibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Mebibytes
+msgid "Mebibytes"
+msgstr "Mebibytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Pebibits
+msgid "Pebibits"
+msgstr "Pebibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Pebibytes
+msgid "Pebibytes"
+msgstr "Pebibytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Tebibits
+msgid "Tebibits"
+msgstr "Tebibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Tebibytes
+msgid "Tebibytes"
+msgstr "Tebibytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Exabits
+msgid "Exabits"
+msgstr "Exabits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Exabytes
+msgid "Exabytes"
+msgstr "Exabytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Exbibits
+msgid "Exbibits"
+msgstr "Exbibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Exbibytes
+msgid "Exbibytes"
+msgstr "Exbibytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Zetabits
+msgid "Zetabits"
+msgstr "Zetabits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Zetabytes
+msgid "Zetabytes"
+msgstr "Zetabytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Zebibits
+msgid "Zebibits"
+msgstr "Zebibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Zebibytes
+msgid "Zebibytes"
+msgstr "Zebibytes"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Yottabit
+msgid "Yottabit"
+msgstr "Yottabit"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Yottabyte
+msgid "Yottabyte"
+msgstr "Yottabyte"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Yobibits
+msgid "Yobibits"
+msgstr "Yobibits"
+
+#. A measurement unit for data. (Please choose the most appropriate plural form to fit any number between 0 and 999,999,999,999,999)
+#: UnitName_Yobibytes
+msgid "Yobibytes"
+msgstr "Yobibytes"
+
+#: DateCalculationModeText
+msgid "Date Calculation"
+msgstr "Càlcul de dates"
+
+#. Automation label for the Date Calculation Mode combobox. Users will hear "Calculation mode combobox".
+#: DateCalculationOption.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Calculation mode"
+msgstr "Mode de càlcul"
+
+#. Add toggle button text
+#: AddOption.Content
+msgid "Add"
+msgstr "Afegeix"
+
+#. Add or Subtract days option
+#: Date_AddSubtractOption.Content
+msgid "Add or subtract days"
+msgstr "Afegeix o resta dies"
+
+#. Date result label
+#: DateLabel.Text
+msgid "Date"
+msgstr "Data"
+
+#. Date Difference option
+#: Date_DifferenceOption.Content
+msgid "Difference between dates"
+msgstr "Diferència entre les dates"
+
+#. Add/Subtract Days label
+#: DaysLabel.Text
+msgctxt "DaysLabel.Text"
+msgid "Days"
+msgstr "Dies"
+
+#. Difference result label
+#: Date_DifferenceLabel.Text
+msgid "Difference"
+msgstr "Diferència"
+
+#. From Date Header for Difference Date Picker
+#: DateDiff_FromHeader.Header
+msgctxt "DateDiff_FromHeader.Header"
+msgid "From"
+msgstr "De"
+
+#. Add/Subtract Months label
+#: MonthsLabel.Text
+msgid "Months"
+msgstr "Mesos"
+
+#. Subtract toggle button text
+#: SubtractOption.Content
+msgid "Subtract"
+msgstr "Resta"
+
+#. To Date Header for Difference Date Picker
+#: DateDiff_ToHeader.Header
+msgid "To"
+msgstr "Per a"
+
+#. Add/Subtract Years label
+#: YearsLabel.Text
+msgctxt "YearsLabel.Text"
+msgid "Years"
+msgstr "Anys"
+
+#. Out of bound message shown as result when the date calculation exceeds the bounds
+#: Date_OutOfBoundMessage
+msgid "Date out of Bound"
+msgstr "Data fora del marc"
+
+#: Date_Day
+msgid "day"
+msgstr "dia"
+
+#: Date_Days
+msgid "days"
+msgstr "dies"
+
+#: Date_Month
+msgid "month"
+msgstr "mes"
+
+#: Date_Months
+msgid "months"
+msgstr "mesos"
+
+#: Date_SameDates
+msgid "Same dates"
+msgstr "Les mateixes dates"
+
+#: Date_Week
+msgid "week"
+msgstr "setmana"
+
+#: Date_Weeks
+msgid "weeks"
+msgstr "setmanes"
+
+#: Date_Year
+msgid "year"
+msgstr "any"
+
+#: Date_Years
+msgid "years"
+msgstr "anys"
+
+#. Automation name for reading out the date difference. %1 =  Date difference
+#: Date_DifferenceResultAutomationName
+msgid "Difference %1"
+msgstr "Diferència %1"
+
+#. Automation name for reading out the resulting date in Add/Subtract mode. %1 = Resulting date
+#: Date_ResultingDateAutomationName
+msgid "Resulting date %1"
+msgstr "Data resultant %1"
+
+#. {Locked='%1'} Automation name for when the mode header is focused. %1 = the current calculator mode: Scientific, Standard, or Programmer.
+#: HeaderAutomationName_Calculator
+msgid "%1 Calculator mode"
+msgstr "Mode de calculadora %1"
+
+#. {Locked='%1'} Automation name for when the mode header is focused. %1 = the current converter mode: "Weight and Mass", "Energy", "Volume", etc.
+#: HeaderAutomationName_Converter
+msgid "%1 Converter mode"
+msgstr "Mode de convertidor %1"
+
+#. Automation name for when the mode header is focused and the current mode is Date Calculation.
+#: HeaderAutomationName_Date
+msgid "Date Calculation mode"
+msgstr "Mode de càlcul de dates"
+
+#. Automation name for the group of controls for history and memory lists.
+#: DockPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "History and Memory lists"
+msgstr "Llistes de memòria i historial"
+
+#. Automation name for the group of memory controls (Mem Clear, Mem Recall, Mem Add, Mem Subtract, Mem Store, Memory flyout toggle)
+#: MemoryPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Memory controls"
+msgstr "Controls de memòria"
+
+#. Automation name for the group of standard function buttons (Percent, Square Root, Square, Cube, Reciprocal)
+#: StandardFunctions.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Standard functions"
+msgstr "Funcions estàndard"
+
+#. Automation name for the group of display control buttons (Clear, Clear Entry, and Backspace)
+#: DisplayControls.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Display controls"
+msgstr "Controls de visualització"
+
+#. Automation name for the group of standard operator buttons (Add, Subtract, Multiply, Divide, and Equals)
+#: StandardOperators.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Standard operators"
+msgstr "Operadors estàndard"
+
+#. Automation name for the group of NumberPad buttons (0-9, A-F and Decimal button)
+#: NumberPad.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Number pad"
+msgstr "Teclat numèric"
+
+#. Automation name for the group of Scientific angle operators (Degree mode, Hyperbolic toggle, and Precision button)
+#: ScientificAngleOperators.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Angle operators"
+msgstr "Operadors d'angles"
+
+#. Automation name for the group of Scientific functions.
+#: ScientificFunctions.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scientific functions"
+msgstr "Funcions científiques"
+
+#. Automation name for the group of radices (Hexadecimal, Decimal, Octal, Binary). https://en.wikipedia.org/wiki/Radix
+#: RadixGroup.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Radix selection"
+msgstr "Selecció de base"
+
+#. Automation name for the group of programmer operators (RoL, RoR, Lsh, Rsh, OR, XOR, NOT, AND).
+#: ProgrammerOperators.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Programmer operators"
+msgstr "Operadors de programador"
+
+#. Automation name for the group of input mode toggling buttons.
+#: InputModeSelectionGroup.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Input mode selection"
+msgstr "Selecció del mode d'entrada"
+
+#. Automation name for the group of bit toggling buttons.
+#: BitFlipPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "BitFlipPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Bit toggling keypad"
+msgstr "Teclat numèric de commutació de bits"
+
+#. Automation label for the "scroll left" button that appears when an expression is too large to fit in the window.
+#: scrollLeft.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scroll expression left"
+msgstr "Desplaça l'expressió cap a l'esquerra"
+
+#. Automation label for the "scroll right" button that appears when an expression is too large to fit in the window.
+#: scrollRight.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scroll expression right"
+msgstr "Desplaça l'expressió cap a la dreta"
+
+#. {Locked='%1'} Formatting string for a Narrator announcement when user reaches max digits. The %1 is the automation name of the display. Users will hear "Max digits reached. Display is _current_value_".
+#: Format_MaxDigitsReached
+msgid "Max digits reached. %1"
+msgstr "S'ha arribat a la quantitat màxima de dígits. %1"
+
+#. {Locked='%1','%2'} Formatting string for a Narrator announcement when user presses a button with auditory feedback. "%1" is the display value and "%2" is the button press feedback. Example, user presses "plus" and hears "Display is 7 plus".
+#: Format_ButtonPressAuditoryFeedback
+msgctxt "Format_ButtonPressAuditoryFeedback"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#. {Locked='%1'} Formatting string for a Narrator announcement when the user stores a number to memory. The %1 is the automation name of the display. Users will hear "_current_value_ saved to memory".
+#: Format_MemorySave
+msgid "%1 saved to memory"
+msgstr "%1 s'ha desat a la memòria"
+
+#. {Locked='%1','%2'} Formatting string for a Narrator announcement when the user changes a memory slot. The %1 is the index of the memory slot and %2 is the new value. For example, users might hear "Memory slot 2 is 37".
+#: Format_MemorySlotChanged
+msgid "Memory slot %1 is %2"
+msgstr "La ranura de memòria %1 és %2"
+
+#. {Locked='%1'} Formatting string for a Narrator announcement when the user clears a memory slot. The %1 is the index of the memory slot. For example, users might hear "Memory slot 2 cleared".
+#: Format_MemorySlotCleared
+msgid "Memory slot %1 cleared"
+msgstr "S'ha esborrat la ranura de memòria %1"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 divided by" when the button is pressed.
+#: divideButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "divided by"
+msgstr "dividit per"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 times" when the button is pressed.
+#: multiplyButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "times"
+msgstr "multiplicat"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 minus" when the button is pressed.
+#: minusButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "minus"
+msgstr "menys"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 plus" when the button is pressed.
+#: plusButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "plus"
+msgstr "més"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 to the power of" when the button is pressed.
+#: powerButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "to the power of"
+msgstr "elevat a"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 y root" when the button is pressed.
+#: ySquareRootButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgctxt "ySquareRootButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback"
+msgid "y root"
+msgstr "arrel y"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 mod" when the button is pressed.
+#: modButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "mod"
+msgstr "residu"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 left shift" when the button is pressed.
+#: lshButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgctxt "lshButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback"
+msgid "left shift"
+msgstr "desplaça a l'esquerra"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 right shift" when the button is pressed.
+#: rshButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgctxt "rshButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback"
+msgid "right shift"
+msgstr "desplaça a la dreta"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 or" when the button is pressed. OR is a mathematical operation on two binary values.
+#: orButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "or"
+msgstr "o"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 x or" when the button is pressed. XOR is a mathematical operation on two binary values. Here the feedback is "x or" in order to get the correct pronunciation.
+#: xorButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "x or"
+msgstr "x o"
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 and" when the button is pressed. AND is a mathematical operation on two binary values.
+#: andButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgid "and"
+msgstr "i"
+
+#. The exact ratio between converted currencies, e.g. "1 USD = 0.8885 EUR". %1 will always be '1'. %2 is the From currency code. %3 is the formatted conversion ratio. %4 is the To currency code.
+#: CurrencyFromToRatioFormat
+msgid "%1 %2 = %3 %4"
+msgstr "%1 %2 = %3 %4"
+
+#. The timestamp of currency conversion ratios fetched from an online service. %1 is the date. %2 is the time. Example: "Updated Sep 28, 2016 5:42 PM"
+#: CurrencyTimestampFormat
+msgid "Updated %1 %2"
+msgstr "Data d'actualització: %1 %2"
+
+#. The text displayed for a hyperlink button that refreshes currency converter ratios.
+#: RefreshButtonText.Content
+msgid "Update rates"
+msgstr "Actualitza les tarifes"
+
+#. The text displayed when users are on a metered connection and using currency converter.
+#: DataChargesMayApply
+msgid "Data charges may apply."
+msgstr "Pot ser que s'apliquin càrrecs per dades."
+
+#. The text displayed when currency ratio data fails to load.
+#: FailedToRefresh
+msgid "Couldn’t get new rates. Try again later."
+msgstr "No s'han pogut obtenir les tarifes noves. Torna-ho a provar més tard."
+
+#. Status text displayed when currency converter is disconnected from the internet. The text "Notification Settings" should be surrounded by %HL% since they are used to indicate that that text should be the hyperlink text. {Locked="%HL%"}
+#: OfflineStatusHyperlinkText
+msgid "Offline. Please check your%HL%Network Settings%HL%"
+msgstr "Fora de línia. Comprova la%HL%Configuració de la xarxa%HL%."
+
+#. This string is what is read by Narrator, and other screen readers, when the "Update rates" button in the Currency Converter is clicked.
+#: UpdatingCurrencyRates
+msgid "Updating currency rates"
+msgstr "S'estan actualitzant els tipus de canvi"
+
+#. This string is what is read by Narrator, and other screen readers, when the currency rates in Currency converter have successfully updated.
+#: CurrencyRatesUpdated
+msgid "Currency rates updated"
+msgstr "S'han actualitzat els tipus de canvi"
+
+#. This string is what is read by Narrator, and other screen readers, when the currency rates in Currency converter have failed to update.
+#: CurrencyRatesUpdateFailed
+msgid "Could not update rates"
+msgstr "No s'han pogut actualitzar els tipus"
+
+#. AccessKey for the About button. {StringCategory="Accelerator"}
+#: AboutButton.AccessKey
+msgid "AB"
+msgstr "AB"
+
+#. AccessKey for the Date Calculation mode navbar item. {StringCategory="Accelerator"}
+#: DateCalculationModeAccessKey
+msgctxt "DateCalculationModeAccessKey"
+msgid "4"
+msgstr "4"
+
+#. Access key for the History button. {StringCategory="Accelerator"}
+#: HistoryButton.AccessKey
+msgctxt "HistoryButton.AccessKey"
+msgid "I"
+msgstr "I"
+
+#. Access key for the Memory button. {StringCategory="Accelerator"}
+#: MemoryButton.AccessKey
+msgctxt "MemoryButton.AccessKey"
+msgid "M"
+msgstr "M"
+
+#. Access key for the Hamburger button. {StringCategory="Accelerator"}
+#: NavView.AccessKey
+msgctxt "NavView.AccessKey"
+msgid "H"
+msgstr "H"
+
+#. AccessKey for the Programmer mode navbar item. {StringCategory="Accelerator"}
+#: ProgrammerModeAccessKey
+msgctxt "ProgrammerModeAccessKey"
+msgid "3"
+msgstr "3"
+
+#. AccessKey for the Scientific mode navbar item. {StringCategory="Accelerator"}
+#: ScientificModeAccessKey
+msgctxt "ScientificModeAccessKey"
+msgid "2"
+msgstr "2"
+
+#. AccessKey for the Standard mode navbar item. {StringCategory="Accelerator"}
+#: StandardModeAccessKey
+msgctxt "StandardModeAccessKey"
+msgid "1"
+msgstr "1"
+
+#. AccessKey for the angle converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_AngleAccessKey
+msgid "AN"
+msgstr "AN"
+
+#. AccessKey for the area converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_AreaAccessKey
+msgid "AR"
+msgstr "AR"
+
+#. AccessKey for the currency converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_CurrencyAccessKey
+msgctxt "CategoryName_CurrencyAccessKey"
+msgid "C"
+msgstr "C"
+
+#. AccessKey for the data converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_DataAccessKey
+msgctxt "CategoryName_DataAccessKey"
+msgid "D"
+msgstr "D"
+
+#. AccessKey for the energy converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_EnergyAccessKey
+msgctxt "CategoryName_EnergyAccessKey"
+msgid "E"
+msgstr "E"
+
+#. AccessKey for the length converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_LengthAccessKey
+msgctxt "CategoryName_LengthAccessKey"
+msgid "L"
+msgstr "L"
+
+#. AccessKey for the power converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_PowerAccessKey
+msgid "PO"
+msgstr "PO"
+
+#. AccessKey for the pressure converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_PressureAccessKey
+msgid "PR"
+msgstr "PR"
+
+#. AccessKey for the speed converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_SpeedAccessKey
+msgctxt "CategoryName_SpeedAccessKey"
+msgid "S"
+msgstr "S"
+
+#. AccessKey for the time converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_TimeAccessKey
+msgid "TI"
+msgstr "TI"
+
+#. AccessKey for the volume converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_VolumeAccessKey
+msgctxt "CategoryName_VolumeAccessKey"
+msgid "V"
+msgstr "V"
+
+#. AccessKey for the weight converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_WeightAccessKey
+msgctxt "CategoryName_WeightAccessKey"
+msgid "W"
+msgstr "W"
+
+#. AccessKey for the temperature converter navbar item. {StringCategory="Accelerator"}
+#: CategoryName_TemperatureAccessKey
+msgid "TE"
+msgstr "TE"
+
+#. Access key for the Clear history button.{StringCategory="Accelerator"}
+#: ClearHistory.AccessKey
+msgctxt "ClearHistory.AccessKey"
+msgid "C"
+msgstr "C"
+
+#. Access key for the Clear memory button. {StringCategory="Accelerator"}
+#: ClearMemory.AccessKey
+msgctxt "ClearMemory.AccessKey"
+msgid "C"
+msgstr "C"
+
+#. This is the tool tip automation name for the Clear Memory button in the Memory Pane.
+#: ClearMemory.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "ClearMemory.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Clear all memory (Ctrl+L)"
+msgstr "Esborra tota la memòria (Ctrl + L)"
+
+#. Screen reader prompt for the Calculator Clear Memory button in the Memory Pane
+#: ClearMemory.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "ClearMemory.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Clear all memory"
+msgstr "Esborra tota la memòria"
+
+#. Access key for the History pivot item.{StringCategory="Accelerator"}
+#: HistoryLabel.AccessKey
+msgctxt "HistoryLabel.AccessKey"
+msgid "I"
+msgstr "I"
+
+#. Access key for the Memory pivot item.{StringCategory="Accelerator"}
+#: MemoryLabel.AccessKey
+msgctxt "MemoryLabel.AccessKey"
+msgid "M"
+msgstr "M"
+
+#. Name for the sine function in degrees mode. Used by screen readers.
+#: SineDegrees
+msgid "sine degrees"
+msgstr "Sinus (graus)"
+
+#. Name for the sine function in radians mode. Used by screen readers.
+#: SineRadians
+msgid "sine radians"
+msgstr "Sinus (radians)"
+
+#. Name for the sine function in gradians mode. Used by screen readers.
+#: SineGradians
+msgid "sine gradians"
+msgstr "Sinus (graus centesimals)"
+
+#. Name for the inverse sine function in degrees mode. Used by screen readers.
+#: InverseSineDegrees
+msgid "inverse sine degrees"
+msgstr "Sinus invers (graus)"
+
+#. Name for the inverse sine function in radians mode. Used by screen readers.
+#: InverseSineRadians
+msgid "inverse sine radians"
+msgstr "Sinus invers (radians)"
+
+#. Name for the inverse sine function in gradians mode. Used by screen readers.
+#: InverseSineGradians
+msgid "inverse sine gradians"
+msgstr "Sinus invers (graus centesimals)"
+
+#. Name for the hyperbolic sine function. Used by screen readers.
+#: HyperbolicSine
+msgid "hyperbolic sine"
+msgstr "Sinus hiperbòlic"
+
+#. Name for the inverse hyperbolic sine function. Used by screen readers.
+#: InverseHyperbolicSine
+msgid "inverse hyperbolic sine"
+msgstr "Sinus hiperbòlic invers"
+
+#. Name for the cosine function in degrees mode. Used by screen readers.
+#: CosineDegrees
+msgid "cosine degrees"
+msgstr "Cosinus (graus)"
+
+#. Name for the cosine function in radians mode. Used by screen readers.
+#: CosineRadians
+msgid "cosine radians"
+msgstr "Cosinus (radians)"
+
+#. Name for the cosine function in gradians mode. Used by screen readers.
+#: CosineGradians
+msgid "cosine gradians"
+msgstr "Cosinus (graus centesimals)"
+
+#. Name for the inverse cosine function in degrees mode. Used by screen readers.
+#: InverseCosineDegrees
+msgid "inverse cosine degrees"
+msgstr "Cosinus invers (graus)"
+
+#. Name for the inverse cosine function in radians mode. Used by screen readers.
+#: InverseCosineRadians
+msgid "inverse cosine radians"
+msgstr "Cosinus invers (radians)"
+
+#. Name for the inverse cosine function in gradians mode. Used by screen readers.
+#: InverseCosineGradians
+msgid "inverse cosine gradians"
+msgstr "Cosinus invers (graus centesimals)"
+
+#. Name for the hyperbolic cosine function. Used by screen readers.
+#: HyperbolicCosine
+msgid "hyperbolic cosine"
+msgstr "Cosinus hiperbòlic"
+
+#. Name for the inverse hyperbolic cosine function. Used by screen readers.
+#: InverseHyperbolicCosine
+msgid "inverse hyperbolic cosine"
+msgstr "Cosinus hiperbòlic invers"
+
+#. Name for the tangent function in degrees mode. Used by screen readers.
+#: TangentDegrees
+msgid "tangent degrees"
+msgstr "Tangent (graus)"
+
+#. Name for the tangent function in radians mode. Used by screen readers.
+#: TangentRadians
+msgid "tangent radians"
+msgstr "Tangent (radians)"
+
+#. Name for the tangent function in gradians mode. Used by screen readers.
+#: TangentGradians
+msgid "tangent gradians"
+msgstr "Tangent (graus centesimals)"
+
+#. Name for the inverse tangent function in degrees mode. Used by screen readers.
+#: InverseTangentDegrees
+msgid "inverse tangent degrees"
+msgstr "Tangent inversa (graus)"
+
+#. Name for the inverse tangent function in radians mode. Used by screen readers.
+#: InverseTangentRadians
+msgid "inverse tangent radians"
+msgstr "Tangent inversa (radians)"
+
+#. Name for the inverse tangent function in gradians mode. Used by screen readers.
+#: InverseTangentGradians
+msgid "inverse tangent gradians"
+msgstr "Tangent inversa (graus centesimals)"
+
+#. Name for the hyperbolic tangent function. Used by screen readers.
+#: HyperbolicTangent
+msgid "hyperbolic tangent"
+msgstr "Tangent hiperbòlica"
+
+#. Name for the inverse hyperbolic tangent function. Used by screen readers.
+#: InverseHyperbolicTangent
+msgid "inverse hyperbolic tangent"
+msgstr "Tangent hiperbòlica inversa"
+
+#. Name for the secant function in degrees mode. Used by screen readers.
+#: SecantDegrees
+msgid "secant degrees"
+msgstr "graus de secant"
+
+#. Name for the secant function in radians mode. Used by screen readers.
+#: SecantRadians
+msgid "secant radians"
+msgstr "radians de secant"
+
+#. Name for the secant function in gradians mode. Used by screen readers.
+#: SecantGradians
+msgid "secant gradians"
+msgstr "graus centesimals de secant"
+
+#. Name for the inverse secant function in degrees mode. Used by screen readers.
+#: InverseSecantDegrees
+msgid "inverse secant degrees"
+msgstr "graus de secant inversa"
+
+#. Name for the inverse secant function in radians mode. Used by screen readers.
+#: InverseSecantRadians
+msgid "inverse secant radians"
+msgstr "radians de secant inversa"
+
+#. Name for the inverse secant function in gradians mode. Used by screen readers.
+#: InverseSecantGradians
+msgid "inverse secant gradians"
+msgstr "graus centesimals de secant inversa"
+
+#. Name for the hyperbolic secant function. Used by screen readers.
+#: HyperbolicSecant
+msgid "hyperbolic secant"
+msgstr "secant hiperbòlica"
+
+#. Name for the inverse hyperbolic secant function. Used by screen readers.
+#: InverseHyperbolicSecant
+msgid "inverse hyperbolic secant"
+msgstr "secant hiperbòlica inversa"
+
+#. Name for the cosecant function in degrees mode. Used by screen readers.
+#: CosecantDegrees
+msgid "cosecant degrees"
+msgstr "graus de cosecant"
+
+#. Name for the cosecant function in radians mode. Used by screen readers.
+#: CosecantRadians
+msgid "cosecant radians"
+msgstr "radians de cosecant"
+
+#. Name for the cosecant function in gradians mode. Used by screen readers.
+#: CosecantGradians
+msgid "cosecant gradians"
+msgstr "graus centesimals de cosecant"
+
+#. Name for the inverse cosecant function in degrees mode. Used by screen readers.
+#: InverseCosecantDegrees
+msgid "inverse cosecant degrees"
+msgstr "graus de cosecant inversa"
+
+#. Name for the inverse cosecant function in radians mode. Used by screen readers.
+#: InverseCosecantRadians
+msgid "inverse cosecant radians"
+msgstr "radians de cosecant inversa"
+
+#. Name for the inverse cosecant function in gradians mode. Used by screen readers.
+#: InverseCosecantGradians
+msgid "inverse cosecant gradians"
+msgstr "graus centesimals de cosecant inversa"
+
+#. Name for the hyperbolic cosecant function. Used by screen readers.
+#: HyperbolicCosecant
+msgid "hyperbolic cosecant"
+msgstr "cosecant hiperbòlica"
+
+#. Name for the inverse hyperbolic cosecant function. Used by screen readers.
+#: InverseHyperbolicCosecant
+msgid "inverse hyperbolic cosecant"
+msgstr "cosecant hiperbòlica inversa"
+
+#. Name for the cotangent function in degrees mode. Used by screen readers.
+#: CotangentDegrees
+msgid "cotangent degrees"
+msgstr "graus de cotangent"
+
+#. Name for the cotangent function in radians mode. Used by screen readers.
+#: CotangentRadians
+msgid "Cotangent radians"
+msgstr "Radians de cotangent"
+
+#. Name for the cotangent function in gradians mode. Used by screen readers.
+#: CotangentGradians
+msgid "cotangent gradians"
+msgstr "graus centesimals de cotangent"
+
+#. Name for the inverse cotangent function in degrees mode. Used by screen readers.
+#: InverseCotangentDegrees
+msgid "inverse cotangent degrees"
+msgstr "graus de cotangent inversa"
+
+#. Name for the inverse cotangent function in radians mode. Used by screen readers.
+#: InverseCotangentRadians
+msgid "inverse cotangent radians"
+msgstr "radians de cotangent inversa"
+
+#. Name for the inverse cotangent function in gradians mode. Used by screen readers.
+#: InverseCotangentGradians
+msgid "inverse cotangent gradians"
+msgstr "graus centesimals de cotangent inversa"
+
+#. Name for the hyperbolic cotangent function. Used by screen readers.
+#: HyperbolicCotangent
+msgid "hyperbolic cotangent"
+msgstr "cotangent hiperbòlica"
+
+#. Name for the inverse hyperbolic cotangent function. Used by screen readers.
+#: InverseHyperbolicCotangent
+msgid "inverse hyperbolic cotangent"
+msgstr "cotangent hiperbòlica inversa"
+
+#. Name for the cube root function. Used by screen readers.
+#: CubeRoot
+msgid "Cube Root"
+msgstr "Arrel cúbica"
+
+#. Name for the logbasex function. Used by screen readers.
+#: Logx
+msgid "Base Log"
+msgstr "Logaritme en base"
+
+#. Name for the absolute value function. Used by screen readers.
+#: AbsoluteValue
+msgctxt "AbsoluteValue"
+msgid "Absolute Value"
+msgstr "Valor absolut"
+
+#. Name for the programmer function that shifts bits to the left. Used by screen readers.
+#: LeftShift
+msgctxt "LeftShift"
+msgid "left shift"
+msgstr "desplaça a l'esquerra"
+
+#. Name for the programmer function that shifts bits to the right. Used by screen readers.
+#: RightShift
+msgctxt "RightShift"
+msgid "right shift"
+msgstr "desplaça a la dreta"
+
+#. Name for the factorial function. Used by screen readers.
+#: Factorial
+msgid "factorial"
+msgstr "factorial"
+
+#. Name for the degree minute second (dms) function. Used by screen readers.
+#: DegreeMinuteSecond
+msgid "degree minute second"
+msgstr "grau minut segon"
+
+#. Name for the natural log (ln) function. Used by screen readers.
+#: NaturalLog
+msgid "natural log"
+msgstr "logaritme natural"
+
+#. Name for the square function. Used by screen readers.
+#: Square
+msgid "square"
+msgstr "quadrat"
+
+#. Name for the y root function. Used by screen readers.
+#: YRoot
+msgctxt "YRoot"
+msgid "y root"
+msgstr "arrel y"
+
+#. {Locked='%1','%2'}.  Format string for the accessible name of a Calculator menu item, used by screen readers. "%1" is the item name, e.g. Standard, Programmer, etc. %2 is the category name, e.g. Calculator, Converter. An example when formatted is "Standard Calculator" or "Currency Converter".
+#: NavCategoryItem_AutomationNameFormat
+msgctxt "NavCategoryItem_AutomationNameFormat"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#. {Locked='%1'} Format string for the accessible name of a Calculator menu category header, used by screen readers. "%1" is the pluralized category name, e.g. Calculators, Converters. An example when formatted is "Calculators category".
+#: NavCategoryHeader_AutomationNameFormat
+msgid "%1 category"
+msgstr "Categoria %1"
+
+#. Displayed on a link to the Microsoft Services Agreement in the about this app information
+#: AboutControlServicesAgreement.Text
+msgid "Microsoft Services Agreement"
+msgstr "Contracte de serveis de Microsoft"
+
+#. An abbreviation for a measurement unit of area.
+#: UnitAbbreviation_Pyeong
+msgctxt "UnitAbbreviation_Pyeong"
+msgid "Pyeong"
+msgstr "Pyeong"
+
+#. A measurement unit for area.
+#: UnitName_Pyeong
+msgctxt "UnitName_Pyeong"
+msgid "Pyeong"
+msgstr "Pyeong"
+
+#. From Date Header for AddSubtract Date Picker
+#: AddSubtract_Date_FromHeader.Header
+msgctxt "AddSubtract_Date_FromHeader.Header"
+msgid "From"
+msgstr "De"
+
+#. Automation label for the "Scroll Left" button that appears when a calculation result is too large to fit in calculation result text box.
+#: CalculationResultScrollLeft.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scroll Calculation Result Left"
+msgstr "Desplaça el resultat del càlcul a l'esquerra"
+
+#. Automation label for the "Scroll Right" button that appears when a calculation result is too large to fit in calculation result text box.
+#: CalculationResultScrollRight.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scroll Calculation Result Right"
+msgstr "Desplaça el resultat del càlcul a la dreta"
+
+#. Text displayed when the application is not able to do a calculation
+#: CalculationFailed
+msgid "Calculation failed"
+msgstr "No s'ha pogut calcular"
+
+#. Screen reader prompt for the logBaseX button
+#: logBaseX.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Log base X"
+msgstr "Logaritme en base X"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: logBaseX.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "logBaseX.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "L"
+msgstr ""
+
+#. Displayed on the button that contains a flyout for the trig functions in scientific mode.
+#: trigButton.Text
+msgctxt "trigButton.Text"
+msgid "Trigonometry"
+msgstr "Trigonometria"
+
+#. Displayed on the button that contains a flyout for the general functions in scientific mode.
+#: funcButton.Text
+msgid "Function"
+msgstr "Funció"
+
+#. Displayed on the button that contains a flyout for the bitwise functions in programmer mode.
+#: bitwiseButton.Text
+msgctxt "bitwiseButton.Text"
+msgid "Bitwise"
+msgstr "Bit a bit"
+
+#. Displayed on the button that contains a flyout for the bit shift functions in programmer mode.
+#: bitShiftButton.Text
+msgid "Bit Shift"
+msgstr "Desplaçament de bits"
+
+#. Screen Reader prompt for the shift button in the trig flyout in scientific mode.
+#: trigShiftButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "trigShiftButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Inverse Function"
+msgstr "Funció inversa"
+
+#. Screen reader prompt for the Calculator button HYP in the scientific flyout keypad
+#: hypButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "hypButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Hyperbolic function"
+msgstr "Funció hiperbòlica"
+
+#. Screen reader prompt for the Calculator button sec in the scientific flyout keypad
+#: secButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Secant"
+msgstr "Secant"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: secButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "secButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "U"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button sech in the scientific flyout keypad
+#: sechButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Secant"
+msgstr "Secant hiperbòlica"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: sechButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "sechButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "U"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button arc sec in the scientific flyout keypad
+#: invsecButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Arc Secant"
+msgstr "Arc secant"
+
+#. {Locked}The shortcut for the inverted sec button
+#: invsecButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "invsecButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "U"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted sec button
+#: invsecButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord
+msgctxt "invsecButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord"
+msgid "U"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button arc sec in the scientific flyout keypad
+#: invsechButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Arc Secant"
+msgstr "Arc secant hiperbòlic"
+
+#. {Locked}The shortcut for the inverted sech button
+#: invsechButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord
+msgctxt "invsechButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord"
+msgid "U"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted sech button
+#: invsechButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord
+msgctxt "invsechButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord"
+msgid "U"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button csc in the scientific flyout keypad
+#: cscButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Cosecant"
+msgstr "Cosecant"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: cscButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "cscButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "I"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button csch in the scientific flyout keypad
+#: cschButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Cosecant"
+msgstr "Cosecant hiperbòlica"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: cschButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "cschButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "I"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button arc csc in the scientific flyout keypad
+#: invcscButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Arc Cosecant"
+msgstr "Arc cosecant"
+
+#. {Locked}The shortcut for the inverted sec button
+#: invcscButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "invcscButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "I"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted sec button
+#: invcscButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord
+msgctxt "invcscButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord"
+msgid "I"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button arc csc in the scientific flyout keypad
+#: invcschButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Arc Cosecant"
+msgstr "Arc cosecant hiperbòlic"
+
+#. {Locked}The shortcut for the inverted sech button
+#: invcschButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord
+msgctxt "invcschButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord"
+msgid "I"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted sech button
+#: invcschButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord
+msgctxt "invcschButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord"
+msgid "I"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button cot in the scientific flyout keypad
+#: cotButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Cotangent"
+msgstr "Cotangent"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: cotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "cotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "J"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button coth in the scientific flyout keypad
+#: cothButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Cotangent"
+msgstr "Cotangent hiperbòlica"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: cothButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgctxt "cothButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord"
+msgid "J"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button arc cot in the scientific flyout keypad
+#: invcotButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Arc Cotangent"
+msgstr "Arc cotangent"
+
+#. {Locked}The shortcut for the inverted sec button
+#: invcotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "invcotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "J"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted sec button
+#: invcotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord
+msgctxt "invcotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyInverseChord"
+msgid "J"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button arc coth in the scientific flyout keypad
+#: invcothButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Hyperbolic Arc Cotangent"
+msgstr "Arc cotangent hiperbòlic"
+
+#. {Locked}The shortcut for the inverted sech button
+#: invcothButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord
+msgctxt "invcothButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlInverseChord"
+msgid "J"
+msgstr ""
+
+#. {Locked}The shortcut for the inverted sech button
+#: invcothButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord
+msgctxt "invcothButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlShiftChord"
+msgid "J"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button floor in the scientific flyout keypad
+#: floorButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Floor"
+msgstr "Terra"
+
+#. {Locked}The shortcut for the inverted sech button
+#: floorButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "["
+msgstr ""
+
+#. Screen reader prompt for the Calculator button ceiling in the scientific flyout keypad
+#: ceilButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Ceiling"
+msgstr "Sostre"
+
+#. {Locked}The shortcut for the inverted sech button
+#: ceilButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "]"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button random in the scientific flyout keypad
+#: randButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Random"
+msgstr "Aleatori"
+
+#. {Locked}The shortcut for the inverted sech button
+#: randButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "randButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "R"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button abs in the scientific flyout keypad
+#: absButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "absButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Absolute Value"
+msgstr "Valor absolut"
+
+#. {Locked}The shortcut for the inverted sech button
+#: absButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "absButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "|"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button e in the scientific flyout keypad
+#: eulerButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Euler's number"
+msgstr "Número d'Euler"
+
+#. {Locked}The shortcut for the inverted sech button
+#: eulerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "eulerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+msgid "E"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button 2^x in the scientific flyout keypad
+#: twoPowerXButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Two to the exponent"
+msgstr "Dos a l'exponent"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: twoPowerXButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "twoPowerXButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "G"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button nand in the scientific flyout keypad
+#: nandButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "nandButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Nand"
+msgstr "Nand"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: nandButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "."
+msgstr ""
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 nand" when the button is pressed. NAND is a mathematical operation on two binary values.
+#: nandButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgctxt "nandButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback"
+msgid "Nand"
+msgstr "Nand"
+
+#. Screen reader prompt for the Calculator button nor in the scientific flyout keypad
+#: norButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "norButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Nor"
+msgstr "Nor"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: norButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgid "\\"
+msgstr ""
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 nor" when the button is pressed. NAND is a mathematical operation on two binary values.
+#: norButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgctxt "norButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback"
+msgid "Nor"
+msgstr "Nor"
+
+#. Screen reader prompt for the Calculator button rol with carry in the scientific flyout keypad
+#: rolCarryButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Rotate on left with carry"
+msgstr "Gira a l'esquerra amb ròssec"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: rolCarryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "rolCarryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "<"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button ror with carry in the scientific flyout keypad
+#: rorCarryButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Rotate on right with carry"
+msgstr "Gira a la dreta amb ròssec"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: rorCarryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "rorCarryButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid ">"
+msgstr ""
+
+#. Screen reader prompt for the Calculator button lshLogical in the scientific flyout keypad
+#: lshLogicalButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Left Shift"
+msgstr "Desplaçament a l'esquerra"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: lshLogicalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "lshLogicalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "<"
+msgstr ""
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 left shift" when the button is pressed. NAND is a mathematical operation on two binary values.
+#: lshLogicalButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgctxt "lshLogicalButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback"
+msgid "Left shift"
+msgstr "Desplaçament a l'esquerra"
+
+#. Screen reader prompt for the Calculator button rshLogical in the scientific flyout keypad
+#: rshLogicalButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Right Shift"
+msgstr "Desplaçament a la dreta"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: rshLogicalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "rshLogicalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid ">"
+msgstr ""
+
+#. Auditory feedback for Screen Reader users. Users will hear "Display is 7 right shift" when the button is pressed. NAND is a mathematical operation on two binary values.
+#: rshLogicalButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback
+msgctxt "rshLogicalButton.[using:CalculatorApp.Controls]CalculatorButton.AuditoryFeedback"
+msgid "Right shift"
+msgstr "Desplaçament a la dreta"
+
+#. Label for a radio button that toggles arithmetic shift behavior for the shift operations.
+#: arithmeticShiftButton.Content
+msgid "Arithmetic Shift"
+msgstr "Desplaçament aritmètic"
+
+#. Label for a radio button that toggles logical shift behavior for the shift operations.
+#: logicalShiftButton.Content
+msgid "Logical Shift"
+msgstr "Desplaçament lògic"
+
+#. Label for a radio button that toggles rotate circular behavior for the shift operations.
+#: rotateCircularButton.Content
+msgid "Rotate Circular Shift"
+msgstr "Gira amb desplaçament circular"
+
+#. Label for a radio button that toggles rotate circular with carry behavior for the shift operations.
+#: rotateCarryShiftButton.Content
+msgid "Rotate Through Carry Circular Shift"
+msgstr "Gira amb desplaçament circular de ròssec"
+
+#. Screen reader prompt for the cube root button on the scientific operator keypad
+#: cubeRootButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Cube root"
+msgstr "Arrel cúbica"
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: cubeRootButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "cubeRootButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "B"
+msgstr ""
+
+#. Screen reader prompt for the square root button on the scientific operator keypad
+#: trigButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "trigButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Trigonometry"
+msgstr "Trigonometria"
+
+#. Screen reader prompt for the square root button on the scientific operator keypad
+#: funcButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Functions"
+msgstr "Funcions"
+
+#. Screen reader prompt for the square root button on the scientific operator keypad
+#: bitwiseButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "bitwiseButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Bitwise"
+msgstr "Bit a bit"
+
+#. Screen reader prompt for the square root button on the scientific operator keypad
+#: bitShiftButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Bitshift"
+msgstr "Desplaçament de bits"
+
+#. Screen reader prompt for the Scientific Operator Panels on the scientific operator keypad
+#: ScientificOperatorPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Scientific Operator Panels"
+msgstr "Taulers d'operadors científics"
+
+#. Screen reader prompt for the Programmer Operator Panels on the programmer operator keypad
+#: ProgrammerOperatorPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Programmer Operator Panels"
+msgstr "Taulers d'operadors de programador"
+
+#. Used to describe the last bit of a binary number. Used in bit flip
+#: MostSignificantBit
+msgid "most significant bit"
+msgstr "bit més significatiu"
