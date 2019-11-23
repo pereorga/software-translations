@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-08 20:53+0200\n"
+"POT-Creation-Date: 2019-11-23 18:25+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.1\n"
+"X-Generator: Translate Toolkit 2.2.5\n"
 
 msgid "English"
 msgstr "Catalan "
@@ -27,6 +27,7 @@ msgid "Access Denied"
 msgstr "Accés denegat"
 
 #: action
+msgctxt "action"
 msgid "Action"
 msgstr ""
 
@@ -37,6 +38,10 @@ msgstr "Mida real"
 #: add
 msgid "Add"
 msgstr "Afegeix"
+
+#: addAccount
+msgid "Add account"
+msgstr ""
 
 #: addedFile
 msgid "Added {1}"
@@ -284,7 +289,7 @@ msgid "Border Color"
 msgstr "Color de la vora"
 
 #: borderWidth
-msgid "Borderwidth"
+msgid "Border Width"
 msgstr "Amplada de la vora"
 
 #: bottom
@@ -399,12 +404,25 @@ msgstr "Comprimit"
 msgid "Commit Message"
 msgstr "Missatge de Commit"
 
+#: configLinkWarn
+msgid ""
+"This link configures draw.io. Only click OK if you trust whoever gave you it!"
+msgstr ""
+
+#: configLinkConfirm
+msgid "Click OK to configure and restart draw.io."
+msgstr ""
+
 #: csv
 msgid "CSV"
 msgstr "CSV"
 
 #: dark
 msgid "Dark"
+msgstr ""
+
+#: didYouMeanToExportToPdf
+msgid "Did you mean to export to PDF?"
 msgstr ""
 
 #: draftFound
@@ -459,6 +477,10 @@ msgstr "Imatges predissenyades"
 #: close
 msgid "Close"
 msgstr "Tanca"
+
+#: closingFile
+msgid "Closing file"
+msgstr ""
 
 #: collaborator
 msgid "Collaborator"
@@ -548,6 +570,10 @@ msgstr "Copia"
 msgid "Copy on connect"
 msgstr "Copia en connectar"
 
+#: copyCreated
+msgid "A copy of the file was created."
+msgstr ""
+
 #: copyOf
 msgid "Copy of {1}"
 msgstr "Còpia de {1}"
@@ -595,6 +621,10 @@ msgstr "Personalitza"
 #: current
 msgid "Current"
 msgstr "Actual"
+
+#: currentPage
+msgid "Current page"
+msgstr ""
 
 #: cut
 msgid "Cut"
@@ -755,6 +785,10 @@ msgstr "Descarregar com"
 #: clickHereToSave
 msgid "Click here to save."
 msgstr "Clica aquí per desar."
+
+#: dpi
+msgid "DPI"
+msgstr ""
 
 #: draftDiscarded
 msgid "Draft discarded"
@@ -1105,6 +1139,10 @@ msgstr "Nom del fitxer"
 msgid "File already exists"
 msgstr "Aquest fitxer ja existeix"
 
+#: fileMovedToTrash
+msgid "File was moved to trash"
+msgstr ""
+
 #: fileNearlyFullSeeFaq
 msgid "File nearly full, please see FAQ"
 msgstr "El fitxer està quasi ple, si us plau llegeix les PMF"
@@ -1118,9 +1156,9 @@ msgid "Repository not found"
 msgstr "No s'ha trobat el repositori"
 
 #: fileNotFoundOrDenied
-msgid ""
-"The file was not found. It does not exist or you do not have read access."
-msgstr "No s'ha trobat el fitxer. No existeix o no teniu permís de lectura."
+msgid "The file was not found. It does not exist or you do not have access."
+msgstr "No s'ha trobat el fitxer. No existeix o no teniu permís."
+
 
 #: fileNotLoaded
 msgid "File not loaded"
@@ -1133,6 +1171,18 @@ msgstr "No s'ha desat el fitxer"
 #: fileOpenLocation
 msgid "How would you like to open these file(s)?"
 msgstr "Com desitja obrir aquest(s) fitxer(s)?"
+
+#: filetypeHtml
+msgid ".html causes file to save as HTML with redirect to cloud URL"
+msgstr ""
+
+#: filetypePng
+msgid ".png causes file to save as PNG with embedded data"
+msgstr ""
+
+#: filetypeSvg
+msgid ".svg causes file to save as SVG with embedded data"
+msgstr ""
 
 #: fileWillBeSavedInAppFolder
 msgid "{1} will be saved in the app folder."
@@ -1307,6 +1357,10 @@ msgstr ""
 msgid "Discussion/Help Forums"
 msgstr "Fòrums de discussió i ajuda"
 
+#: freehand
+msgid "Freehand"
+msgstr ""
+
 #: fromTemplate
 msgid "From Template"
 msgstr "Des de la plantilla"
@@ -1347,6 +1401,10 @@ msgstr "General"
 msgid "GitHub"
 msgstr ""
 
+#: gitlab
+msgid "GitLab"
+msgstr ""
+
 #: gliffy
 msgid "Gliffy"
 msgstr ""
@@ -1371,6 +1429,12 @@ msgstr ""
 msgid "Google+"
 msgstr ""
 
+#: googleSharingNotAvailable
+msgid ""
+"Sharing is only available via Google Drive. Please click Open below and "
+"share from the more actions menu:"
+msgstr ""
+
 #: googleSlides
 msgid "Google Slides"
 msgstr ""
@@ -1378,6 +1442,10 @@ msgstr ""
 #: googleSites
 msgid "Google Sites"
 msgstr "Google Sites"
+
+#: googleSheets
+msgid "Google Sheets"
+msgstr ""
 
 #: gradient
 msgid "Gradient"
@@ -1598,6 +1666,10 @@ msgstr ""
 "href=\"https://support.draw.io/display/DFCS/Licensing+your+draw.io+plugin\""
 ">page</a>."
 
+#: invalidInput
+msgid "Invalid input"
+msgstr ""
+
 #: invalidName
 msgid "Invalid name"
 msgstr "Nom invàlid"
@@ -1710,7 +1782,7 @@ msgid "years"
 msgstr "anys"
 
 #: restartForChangeRequired
-msgid "Changes will take effect after page refresh."
+msgid "Changes will take effect after a restart of the application."
 msgstr "Cal refrescar la pàgina per a que els canvis tinguin efecte."
 
 #: laneColor
@@ -1814,6 +1886,10 @@ msgstr "Fes una còpia"
 #: manual
 msgid "Manual"
 msgstr "Manual"
+
+#: microsoftOffice
+msgid "Microsoft Office"
+msgstr ""
 
 #: microsoftExcel
 msgid "Microsoft Excel"
@@ -2536,6 +2612,10 @@ msgstr "Desar com a fitxer XML?"
 msgid "Saved"
 msgstr "Desat"
 
+#: saveDiagramFirst
+msgid "Please save the diagram first"
+msgstr ""
+
 #: saveDiagramsTo
 msgid "Save diagrams to"
 msgstr "Desa els diagramas a"
@@ -2658,7 +2738,6 @@ msgstr "Comparteix"
 msgid "Link for shared editing"
 msgstr "Enllaç per a l'edició compartida."
 
-
 #: sharp
 msgid "Sharp"
 msgstr "Angulós"
@@ -2695,6 +2774,10 @@ msgstr "Simple"
 msgid "Simple Arrow"
 msgstr "Fletxa simple"
 
+#: simpleViewer
+msgid "Simple Viewer"
+msgstr ""
+
 #: size
 msgid "Size"
 msgstr "Mida "
@@ -2730,6 +2813,14 @@ msgstr "Enllaç especial"
 #: standard
 msgid "Standard"
 msgstr "Estàndard"
+
+#: startDrawing
+msgid "Start drawing"
+msgstr ""
+
+#: stopDrawing
+msgid "Stop drawing"
+msgstr ""
 
 #: starting
 msgid "Starting"
@@ -2835,6 +2926,10 @@ msgstr "Vés enrere"
 msgid "To Front"
 msgstr "Vés endavant"
 
+#: toolbar
+msgid "Toolbar"
+msgstr ""
+
 #: tooltips
 msgid "Tooltips"
 msgstr "Consells d'eines"
@@ -2872,8 +2967,8 @@ msgid "Try again"
 msgstr "Torna a provar-ho"
 
 #: tryOpeningViaThisPage
-msgid "Try opening via this page."
-msgstr "Prova d'obrir-lo via aquesta pàgina."
+msgid "Try opening via this page"
+msgstr "Prova d'obrir-lo via aquesta pàgina"
 
 #: turn
 msgid "Rotate shape only by 90°"
@@ -2982,6 +3077,10 @@ msgstr "Arbre vertical"
 #: view
 msgid "View"
 msgstr "Vista"
+
+#: viewerSettings
+msgid "Viewer Settings"
+msgstr ""
 
 #: viewUrl
 msgid "Link to view: {1}"
@@ -3133,6 +3232,841 @@ msgstr ""
 
 #: resultsFor
 msgid "Results for '{1}'"
+msgstr ""
+
+#: oneDriveCharsNotAllowed
+msgid "The following characters are not allowed: ~ \" # %  * : < > ? /  { | }"
+msgstr ""
+
+#: oneDriveInvalidDeviceName
+msgid "The specified device name is invalid"
+msgstr ""
+
+#: officeNotLoggedOD
+msgid ""
+"You are not logged in to OneDrive. Please open draw.io task pane and login "
+"first."
+msgstr ""
+
+#: officeSelectSingleDiag
+msgid "Please select a single draw.io diagram only without other contents."
+msgstr ""
+
+#: officeSelectDiag
+msgid "Please select a draw.io diagram."
+msgstr ""
+
+#: officeCannotFindDiagram
+msgid "Cannot find a draw.io diagram in the selection"
+msgstr ""
+
+#: noDiagrams
+msgid "No diagrams found"
+msgstr ""
+
+#: authFailed
+msgid "Authentication failed"
+msgstr ""
+
+#: officeFailedAuthMsg
+msgid "Unable to successfully authenticate user or authorize application."
+msgstr ""
+
+#: convertingDiagramFailed
+msgid "Converting diagram failed"
+msgstr ""
+
+#: officeCopyImgErrMsg
+msgid ""
+"Due to some limitations in the host application, the image could not be "
+"inserted.\n"
+"Please manually copy the image then paste it to the document."
+msgstr ""
+
+#: insertingImageFailed
+msgid "Inserting image failed"
+msgstr ""
+
+#: officeCopyImgInst
+msgid ""
+"Instructions: Right-click the image below. Select \"Copy image\" from the "
+"context menu. Then, in the document, right-click and select \"Paste\" from "
+"the context menu."
+msgstr ""
+
+#: folderEmpty
+msgid "Folder is empty"
+msgstr ""
+
+#: recent
+msgid "Recent"
+msgstr ""
+
+#: sharedWithMe
+msgid "Shared With Me"
+msgstr ""
+
+#: sharepointSites
+msgid "Sharepoint Sites"
+msgstr ""
+
+#: errorFetchingFolder
+msgid "Error fetching folder items"
+msgstr ""
+
+#: errorAuthOD
+msgid "Error authenticating to OneDrive"
+msgstr ""
+
+#: officeMainHeader
+msgid "Adds draw.io diagrams to your document."
+msgstr ""
+
+#: officeStepsHeader
+msgid "This add-in performs the following steps:"
+msgstr ""
+
+#: officeStep1
+msgid "Connects to Microsoft OneDrive, Google Drive or your device."
+msgstr ""
+
+#: officeStep2
+msgid "Select a draw.io diagram."
+msgstr ""
+
+#: officeStep3
+msgid "Insert the diagram into the document."
+msgstr ""
+
+#: officeAuthPopupInfo
+msgid "Please complete the authentication in the pop-up window."
+msgstr ""
+
+#: officeSelDiag
+msgid "Select draw.io Diagram:"
+msgstr ""
+
+#: files
+msgid "Files"
+msgstr ""
+
+#: shared
+msgid "Shared"
+msgstr ""
+
+#: sharepoint
+msgid "Sharepoint"
+msgstr ""
+
+#: officeManualUpdateInst
+msgid ""
+"Instructions: Copy draw.io diagram from the document. Then, in the box "
+"below, right-click and select \"Paste\" from the context menu."
+msgstr ""
+
+#: officeClickToEdit
+msgid "Click icon to start editing:"
+msgstr ""
+
+#: pasteDiagram
+msgid "Paste draw.io diagram here"
+msgstr ""
+
+#: connectOD
+msgid "Connect to OneDrive"
+msgstr ""
+
+#: selectChildren
+msgid "Select Children"
+msgstr ""
+
+#: selectSiblings
+msgid "Select Siblings"
+msgstr ""
+
+#: selectParent
+msgid "Select Parent"
+msgstr ""
+
+#: selectDescendants
+msgid "Select Descendants"
+msgstr ""
+
+#: lastSaved
+msgid "Last saved {1} ago"
+msgstr ""
+
+#: resolve
+msgid "Resolve"
+msgstr ""
+
+#: reopen
+msgid "Re-open"
+msgstr ""
+
+#: showResolved
+msgid "Show Resolved"
+msgstr ""
+
+#: reply
+msgid "Reply"
+msgstr ""
+
+#: objectNotFound
+msgid "Object not found"
+msgstr ""
+
+#: reOpened
+msgid "Re-opened"
+msgstr ""
+
+#: markedAsResolved
+msgid "Marked as resolved"
+msgstr ""
+
+#: noCommentsFound
+msgid "No comments found"
+msgstr ""
+
+#: comments
+msgid "Comments"
+msgstr ""
+
+#: timeAgo
+msgid "{1} ago"
+msgstr ""
+
+#: confluenceCloud
+msgid "Confluence Cloud"
+msgstr ""
+
+#: libraries
+msgid "Libraries"
+msgstr ""
+
+#: confAnchor
+msgid "Confluence Page Anchor"
+msgstr ""
+
+#: confTimeout
+msgid "The connection has timed out"
+msgstr ""
+
+#: confSrvTakeTooLong
+msgid "The server at {1} is taking too long to respond."
+msgstr ""
+
+#: confCannotInsertNew
+msgid "Cannot insert draw.io diagram to a new Confluence page"
+msgstr ""
+
+#: confSaveTry
+msgid "Please save the page and try again."
+msgstr ""
+
+#: confCannotGetID
+msgid "Unable to determine page ID"
+msgstr ""
+
+#: confContactAdmin
+msgid "Please contact your Confluence administrator."
+msgstr ""
+
+#: readErr
+msgid "Read Error"
+msgstr ""
+
+#: editingErr
+msgid "Editing Error"
+msgstr ""
+
+#: confExtEditNotPossible
+msgid ""
+"This diagram cannot be edited externally. Please try editing it while "
+"editing the page"
+msgstr ""
+
+#: confEditedExt
+msgid "Diagram/Page edited externally"
+msgstr ""
+
+#: diagNotFound
+msgid "Diagram Not Found"
+msgstr ""
+
+#: confEditedExtRefresh
+msgid "Diagram/Page is edited externally. Please refresh the page."
+msgstr ""
+
+#: confCannotEditDraftDelOrExt
+msgid ""
+"Cannot edit diagrams in a draft page, diagram is deleted from the page, or "
+"diagram is edited externally. Please check the page."
+msgstr ""
+
+#: retBack
+msgid "Return back"
+msgstr ""
+
+#: confDiagNotPublished
+msgid "The diagram does not belong to a published page"
+msgstr ""
+
+#: createdByDraw
+msgid "Created by draw.io"
+msgstr ""
+
+#: filenameShort
+msgid "Filename too short"
+msgstr ""
+
+#: invalidChars
+msgid "Invalid characters"
+msgstr ""
+
+#: alreadyExst
+msgid "{1} already exists"
+msgstr ""
+
+#: draftReadErr
+msgid "Draft Read Error"
+msgstr ""
+
+#: diagCantLoad
+msgid "Diagram cannot be loaded"
+msgstr ""
+
+#: draftWriteErr
+msgid "Draft Write Error"
+msgstr ""
+
+#: draftCantCreate
+msgid "Draft could not be created"
+msgstr ""
+
+#: confDuplName
+msgid "Duplicate diagram name detected. Please pick another name."
+msgstr ""
+
+#: confSessionExpired
+msgid "Looks like your session expired. Log in again to keep working."
+msgstr ""
+
+#: login
+msgid "Login"
+msgstr ""
+
+#: drawPrev
+msgid "draw.io preview"
+msgstr ""
+
+#: drwaDiag
+msgid "draw.io diagram"
+msgstr ""
+
+#: unknownErr
+msgid "Unkown Error"
+msgstr ""
+
+#: invalidCallFnNotFound
+msgid "Invalid Call: {1} not found"
+msgstr ""
+
+#: invalidCallErrOccured
+msgid "Invalid Call: An error occurred, {1}"
+msgstr ""
+
+#: anonymous
+msgid "Anonymous"
+msgstr ""
+
+#: confGotoPage
+msgid "Go to containing page"
+msgstr ""
+
+#: showComments
+msgid "Show Comments"
+msgstr ""
+
+#: confError
+msgid "Error: {1}"
+msgstr ""
+
+#: gliffyImport
+msgid "Gliffy Import"
+msgstr ""
+
+#: gliffyImportInst1
+msgid ""
+"Click the \"Start Import\" button to import all Gliffy diagrams to draw.io."
+msgstr ""
+
+#: gliffyImportInst2
+msgid ""
+"Please note that the import procedure will take some time and the browser "
+"window must remain open until the import is completed."
+msgstr ""
+
+#: startImport
+msgid "Start Import"
+msgstr ""
+
+#: drawConfig
+msgid "draw.io Configuration"
+msgstr ""
+
+#: customLib
+msgid "Custom Libraries"
+msgstr ""
+
+#: customTemp
+msgid "Custom Templates"
+msgstr ""
+
+#: pageIdsExp
+msgid "Page IDs Export"
+msgstr ""
+
+#: drawReindex
+msgid "draw.io re-indexing (beta)"
+msgstr ""
+
+#: working
+msgctxt "working"
+msgid "Working"
+msgstr ""
+
+#: drawConfigNotFoundInst
+msgid ""
+"draw.io Configuration Space (DRAWIOCONFIG) does not exist. This space is "
+"needed to store draw.io configuration files and custom libraries/templates."
+msgstr ""
+
+#: createConfSp
+msgid "Create Config Space"
+msgstr ""
+
+#: unexpErrRefresh
+msgid "Unexpected error, please refresh the page and try again."
+msgstr ""
+
+#: configJSONInst
+msgid ""
+"Write draw.io JSON configuration in the editor below then click save. If you "
+"need help, please refer to"
+msgstr ""
+
+#: thisPage
+msgid "this page"
+msgstr ""
+
+#: curCustLib
+msgid "Current Custom Libraries"
+msgstr ""
+
+#: libName
+msgid "Library Name"
+msgstr ""
+
+#: drawConfID
+msgid "draw.io Config ID"
+msgstr ""
+
+#: addLibInst
+msgid "Click the \"Add Library\" button to upload a new library."
+msgstr ""
+
+#: addLib
+msgid "Add Library"
+msgstr ""
+
+#: customTempInst1
+msgid "Custom templates are draw.io diagrams saved in children pages of"
+msgstr ""
+
+#: customTempInst2
+msgid "For more details, please refer to"
+msgstr ""
+
+#: tempsPage
+msgid "Templates page"
+msgstr ""
+
+#: pageIdsExpInst1
+msgid "Click the \"Start Export\" button to export all pages IDs."
+msgstr ""
+
+#: pageIdsExpInst2
+msgid ""
+"Please note that the export procedure will take some time and the browser "
+"window must remain open until the export is completed."
+msgstr ""
+
+#: startExp
+msgid "Start Export"
+msgstr ""
+
+#: refreshDrawIndex
+msgid "Refresh draw.io Diagrams Index"
+msgstr ""
+
+#: reindexInst1
+msgid "Click the \"Start Indexing\" button to refresh draw.io diagrams index."
+msgstr ""
+
+#: reindexInst2
+msgid ""
+"Please note that the indexing procedure will take some time and the browser "
+"window must remain open until the indexing is completed."
+msgstr ""
+
+#: startIndexing
+msgid "Start Indexing"
+msgstr ""
+
+#: confAPageFoundFetch
+msgid "Page \"{1}\" found. Fetching"
+msgstr ""
+
+#: confAAllDiagDone
+msgid "All {1} diagrams processed. Process finished."
+msgstr ""
+
+#: confAStartedProcessing
+msgid "Started processing page \"{1}\""
+msgstr ""
+
+#: confAAllDiagInPageDone
+msgid "All {1} diagrams in page \"{2}\" processed successfully."
+msgstr ""
+
+#: confAPartialDiagDone
+msgid "{1} out of {2} {3} diagrams in page \"{4}\" processed successfully."
+msgstr ""
+
+#: confAUpdatePageFailed
+msgid "Updating page \"{1}\" failed."
+msgstr ""
+
+#: confANoDiagFoundInPage
+msgid "No {1} diagrams found in page \"{2}\"."
+msgstr ""
+
+#: confAFetchPageFailed
+msgid "Fetching the page failed."
+msgstr ""
+
+#: confANoDiagFound
+msgid "No {1} diagrams found. Process finished."
+msgstr ""
+
+#: confASearchFailed
+msgid "Searching for {1} diagrams failed. Please try again later."
+msgstr ""
+
+#: confAGliffyDiagFound
+msgid "Gliffy diagram \"{1}\" found. Importing"
+msgstr ""
+
+#: confAGliffyDiagImported
+msgid "Gliffy diagram \"{1}\" imported successfully."
+msgstr ""
+
+#: confASavingImpGliffyFailed
+msgid "Saving imported Gliffy diagram \"{1}\" failed."
+msgstr ""
+
+#: confAImportedFromByDraw
+msgid "Imported from \"{1}\" by draw.io"
+msgstr ""
+
+#: confAImportGliffyFailed
+msgid "Importing Gliffy diagram \"{1}\" failed."
+msgstr ""
+
+#: confAFetchGliffyFailed
+msgid "Fetching Gliffy diagram \"{1}\" failed."
+msgstr ""
+
+#: confACheckBrokenDiagLnk
+msgid "Checking for broken diagrams links."
+msgstr ""
+
+#: confADelDiagLinkOf
+msgid "Deleting diagram link of \"{1}\""
+msgstr ""
+
+#: confADupLnk
+msgid "(duplicate link)"
+msgstr ""
+
+#: confADelDiagLnkFailed
+msgid "Deleting diagram link of \"{1}\" failed."
+msgstr ""
+
+#: confAUnexpErrProcessPage
+msgid "Unexpected error during processing the page with id: {1}"
+msgstr ""
+
+#: confADiagFoundIndex
+msgid "Diagram \"{1}\" found. Indexing"
+msgstr ""
+
+#: confADiagIndexSucc
+msgid "Diagram \"{1}\" indexed successfully."
+msgstr ""
+
+#: confAIndexDiagFailed
+msgid "Indexing diagram \"{1}\" failed."
+msgstr ""
+
+#: confASkipDiagOtherPage
+msgid "Skipped \"{1}\" as it belongs to another page!"
+msgstr ""
+
+#: confADiagUptoDate
+msgid "Diagram \"{1}\" is up to date."
+msgstr ""
+
+#: confACheckPagesWDraw
+msgid "Checking pages having draw.io diagrams."
+msgstr ""
+
+#: confAErrOccured
+msgid "An error occurred!"
+msgstr ""
+
+#: savedSucc
+msgid "Saved successfully"
+msgstr ""
+
+#: confASaveFailedErr
+msgid "Saving Failed (Unexpected Error)"
+msgstr ""
+
+#: character
+msgid "Character"
+msgstr ""
+
+#: confAConfPageDesc
+msgid ""
+"This page contains draw.io configuration file (configuration.json) as "
+"attachment"
+msgstr ""
+
+#: confALibPageDesc
+msgid "This page contains draw.io custom libraries as attachments"
+msgstr ""
+
+#: confATempPageDesc
+msgid "This page contains draw.io custom templates as attachments"
+msgstr ""
+
+#: confAConfSpaceDesc
+msgid ""
+"This space is used to store draw.io configuration files and custom "
+"libraries/templates"
+msgstr ""
+
+#: confANoCustLib
+msgid "No Custom Libraries"
+msgstr ""
+
+#: delFailed
+msgid "Delete failed!"
+msgstr ""
+
+#: showID
+msgid "Show ID"
+msgstr ""
+
+#: confAIncorrectLibFileType
+msgid "Incorrect file type. Libraries should be XML files."
+msgstr ""
+
+#: uploading
+msgid "Uploading"
+msgstr ""
+
+#: confALibExist
+msgid "This library already exists"
+msgstr ""
+
+#: confAUploadSucc
+msgid "Uploaded successfully"
+msgstr ""
+
+#: confAUploadFailErr
+msgid "Upload Failed (Unexpected Error)"
+msgstr ""
+
+#: hiResPreview
+msgid "High Res Preview"
+msgstr ""
+
+#: officeNotLoggedGD
+msgid ""
+"You are not logged in to Google Drive. Please open draw.io task pane and "
+"login first."
+msgstr ""
+
+#: officePopupInfo
+msgid "Please complete the process in the pop-up window."
+msgstr ""
+
+#: pickODFile
+msgid "Pick OneDrive File"
+msgstr ""
+
+#: pickGDriveFile
+msgid "Pick Google Drive File"
+msgstr ""
+
+#: pickDeviceFile
+msgid "Pick Device File"
+msgstr ""
+
+#: vsdNoConfig
+msgid "\"vsdurl\" is not configured"
+msgstr ""
+
+#: ruler
+msgid "Ruler"
+msgstr ""
+
+#: units
+msgid "Units"
+msgstr ""
+
+#: points
+msgid "Points"
+msgstr ""
+
+#: inches
+msgid "Inches"
+msgstr ""
+
+#: millimeters
+msgid "Millimeters"
+msgstr ""
+
+#: confEditDraftDelOrExt
+msgid ""
+"This diagram is in a draft page, is deleted from the page, or is edited "
+"externally. It will be saved as a new attachment version and may not be "
+"reflected in the page."
+msgstr ""
+
+#: confDiagEditedExt
+msgid ""
+"Diagram is edited in another session. It will be saved as a new attachment "
+"version but the page will show other session's modifications."
+msgstr ""
+
+#: macroNotFound
+msgid "Macro Not Found"
+msgstr ""
+
+#: confAInvalidPageIdsFormat
+msgid "Incorrect Page IDs file format"
+msgstr ""
+
+#: confACollectingCurPages
+msgid "Collecting current pages"
+msgstr ""
+
+#: confABuildingPagesMap
+msgid "Building pages mapping"
+msgstr ""
+
+#: confAProcessDrawDiag
+msgid "Started processing imported draw.io diagrams"
+msgstr ""
+
+#: confAProcessDrawDiagDone
+msgid "Finished processing imported draw.io diagrams"
+msgstr ""
+
+#: confAProcessImpPages
+msgid "Started processing imported pages"
+msgstr ""
+
+#: confAErrPrcsDiagInPage
+msgid "Error processing draw.io diagrams in page \"{1}\""
+msgstr ""
+
+#: confAPrcsDiagInPage
+msgid "Processing draw.io diagrams in page \"{1}\""
+msgstr ""
+
+#: confAImpDiagram
+msgid "Importing diagram \"{1}\""
+msgstr ""
+
+#: confAImpDiagramFailed
+msgid ""
+"Importing diagram \"{1}\" failed. Cannot find its new page ID. Maybe it "
+"points to a page that is not imported. "
+msgstr ""
+
+#: confAImpDiagramError
+msgid ""
+"Error importing diagram \"{1}\". Cannot fetch or save the diagram. Cannot "
+"fix this diagram links."
+msgstr ""
+
+#: confAUpdateDgrmCCFailed
+msgid "Updating link to diagram \"{1}\" failed."
+msgstr ""
+
+#: confImpDiagramSuccess
+msgid "Updating diagram \"{1}\" done successfully."
+msgstr ""
+
+#: confANoLnksInDrgm
+msgid "No links to update in: {1}"
+msgstr ""
+
+#: confAUpdateLnkToPg
+msgid "Updated link to page: \"{1}\" in diagram: \"{2}\""
+msgstr ""
+
+#: confAUpdateLBLnkToPg
+msgid "Updated lightbox link to page: \"{1}\" in diagram: \"{2}\""
+msgstr ""
+
+#: confAUpdateLnkBase
+msgid "Updated base URL from: \"{1}\" to: \"{2}\" in diagram: \"{3}\""
+msgstr ""
+
+#: confAPageIdsImpDone
+msgid "Page IDs Import finished."
+msgstr ""
+
+#: confAPrcsMacrosInPage
+msgid "Processing draw.io macros in page \"{1}\""
+msgstr ""
+
+#: confAErrFetchPage
+msgid "Error fetching page \"{1}\""
+msgstr ""
+
+#: confAFixingMacro
+msgid "Fixing macro of diagram \"{1}\""
+msgstr ""
+
+#: confAErrReadingExpFile
+msgid "Error reading export file"
+msgstr ""
+
+#: confAPrcsDiagInPageDone
+msgid "Processing draw.io diagrams in page \"{1}\" finished"
+msgstr ""
+
+#: confAFixingMacroSkipped
+msgid ""
+"Fixing macro of diagram \"{1}\" failed. Cannot find its new page ID. Maybe "
+"it points to a page that is not imported. "
 msgstr ""
 
 msgid "Diagrams Online"
