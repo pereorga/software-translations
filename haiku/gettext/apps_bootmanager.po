@@ -3,42 +3,110 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-08 20:26+0200\n"
+"POT-Creation-Date: 2019-11-23 18:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.1\n"
-
-#: BootManagerController
-msgid "The boot manager has been successfully installed on your system."
-msgstr "El gestor d'arrencada s'ha instal·lat correctament."
-
-#: DefaultPartitionPage
-msgid "After two seconds"
-msgstr "Després de 2 segons"
-
-#: UninstallPage
-msgid "Uninstall Boot Manager"
-msgstr "Desinstal·la el gestor d'arrencada"
+"X-Generator: Translate Toolkit 2.2.5\n"
 
 #: BootManagerController
 msgid "At least one partition must be selected!"
 msgstr "Cal triar al menys una partició!"
 
+#: DrivesPage
+msgid "No space available!"
+msgstr "No hi ha espai disponible!"
+
 #: BootManagerController
-msgid "Restore MBR"
-msgstr "Restaura el MBR"
+msgid "Boot Manager is unable to read the partition table!"
+msgstr "El Gestor d'Arrencada no ha pogut llegir la taula de particions!"
+
+#: DefaultPartitionPage
+msgid "Immediately"
+msgstr "Immediatament"
+
+#: UninstallPage
+msgid "Uninstall Boot Manager"
+msgstr "Desinstal·la el gestor d'arrencada"
+
+#: LegacyBootMenu
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: BootManagerController
+msgid "Installation of boot menu failed"
+msgstr "Ha fallat la instal·lació del menú d'arrencada"
+
+#: BootManagerController
+msgid "Backup Master Boot Record"
+msgstr "Còpia de seguretat del registre del gestor d'arrencada"
 
 #: DrivesPage
-msgid "Hard Drive"
-msgstr "Disc dur"
+msgid "Cannot access!"
+msgstr "No es pot accedir!"
+
+#: DefaultPartitionPage
+msgid "After one second"
+msgstr "Després d'un segon"
+
+#: BootManagerController
+msgid "The old Master Boot Record was successfully saved to %s."
+msgstr "S'ha desat correctament l'antic registre mestre d'arrencada (MBR) a %s."
+
+#: WizardView
+msgid "Quit"
+msgstr "Surt"
+
+#: DefaultPartitionPage
+msgid "Never"
+msgstr "Mai"
+
+#: BootManagerController
+msgid "Summary"
+msgstr "Resum"
+
+#: BootManagerController
+msgid ""
+"An error occurred writing the boot menu. The Master Boot Record might be "
+"destroyed, you should restore the MBR now!"
+msgstr ""
+"Hi hagut un error en escriure el menú d'arrencada. El registre mestre "
+"d'arrencada (MBR) podria estar en mal estat, l'hauríeu de restaurar ara!"
+
+#: DefaultPartitionPage
+msgid "After three seconds"
+msgstr "Després de 3 segons"
+
+#: BootManagerController
+msgid "Write boot menu"
+msgstr "Escriu el menú d'arrencada"
+
+#: BootManagerController
+msgid "OK"
+msgstr "D'acord"
+
+#: BootManagerController
+msgid "Uninstall boot manager"
+msgstr "Desinstal·la el gestor d'arrencada"
+
+#: BootManagerController
+msgid ""
+"About to write the following boot menu to the boot disk (%s). Please verify "
+"the information below before continuing."
+msgstr ""
+"Ara es desarà el següent menú d'arrencada al disc d'arrencada (%s). "
+"Comproveu la següent informació abans de continuar."
 
 #: DrivesPage
-msgid "USB Drive"
-msgstr "Unitat USB"
+msgid "Uninstall"
+msgstr "Desinstal·la"
+
+#: DrivesPage
+msgid "Update"
+msgstr "Actualitza"
 
 #: BootManagerController
 msgid ""
@@ -52,68 +120,59 @@ msgstr ""
 "amb la instal·lació o si més endavant voleu suprimir el menú d'arrencada, "
 "només cal que executeu el programari bootman i trieu l'opció 'Desinstal·la'."
 
-#: BootManagerController
-msgid ""
-"About to restore the Master Boot Record (MBR) of %disk from %file. Do you "
-"wish to continue?"
-msgstr ""
-"Ara es restaurarà el Registre Mestre d'Arrencada (MBR) de %disk des de %"
-"file. Voleu continuar?"
+#: DefaultPartitionPage
+msgid "Default Partition"
+msgstr "Partició per omissió"
 
 #: BootManagerController
-msgid ""
-"An error occurred writing the boot menu. The Master Boot Record might be "
-"destroyed, you should restore the MBR now!"
-msgstr ""
-"Hi hagut un error en escriure el menú d'arrencada. El registre mestre "
-"d'arrencada (MBR) podria estar en mal estat, l'hauríeu de restaurar ara!"
-
-#: PartitionsPage
-msgctxt "PartitionsPage"
-msgid "Partitions"
-msgstr "Particions"
+msgid "Installation of boot menu completed"
+msgstr "S'ha acabat de desinstal·lar el menú d'arrencada"
 
 #: DefaultPartitionPage
-msgid "Timeout: %s"
-msgstr "Temps d'espera: %s"
+msgid "After one minute"
+msgstr "Després d'un minut"
 
 #: FileSelectionPage
 msgid "Select"
 msgstr "Seleccioneu"
 
 #: DrivesPage
-msgid "Cannot access!"
-msgstr "No es pot accedir!"
+msgid "USB Drive"
+msgstr "Unitat USB"
 
 #: BootManagerController
-msgid "Uninstall boot manager"
-msgstr "Desinstal·la el gestor d'arrencada"
+msgid "Restore MBR"
+msgstr "Restaura el MBR"
+
+#: DrivesPage
+msgid "Hard Drive"
+msgstr "Disc dur"
+
+#: DrivesPage
+msgid "Drives"
+msgstr "Unitats de disc"
+
+#: PartitionsPage
+msgid ""
+"The following partitions were detected. Please check the box next to the "
+"partitions to be included in the boot menu. You can also set the names of "
+"the partitions as you would like them to appear in the boot menu."
+msgstr ""
+"S'han detectat les següents particions. trieu els quadres de cada partició "
+"que volgueu incloure al menú d'arrencada. També podeu indicar els noms de "
+"les particions que voleu que apareguin a menú d'arrencada."
 
 #: DefaultPartitionPage
-msgid "After four seconds"
-msgstr "Després de 4 segons"
+msgid "After five seconds"
+msgstr "Després de 5 segons"
+
+#: DefaultPartitionPage
+msgid "Timeout: %s"
+msgstr "Temps d'espera: %s"
 
 #: BootManagerController
-msgid "Uninstallation of boot menu failed"
-msgstr "Ha fallat la desinstal·lació del menú d'arrencada"
-
-#: BootManagerController
-msgctxt "BootManagerController"
-msgid ""
-"Please locate the Master Boot Record (MBR) save file to restore from. This "
-"is the file that was created when the boot manager was first installed."
-msgstr ""
-"Indiqueu el fitxer des del que voleu restaurar el Registre Mestre "
-"d'Arrencada (MBR). Aquest fitxer es va generar el primer cop que es va "
-"instal·lar el gestor d'arrencada."
-
-#: WizardView
-msgid "Next"
-msgstr "Següent"
-
-#: BootManagerController
-msgid "Uninstallation of boot menu completed"
-msgstr "S'ha acabat de desinstal·lar el menú d'arrencada"
+msgid "The Master Boot Record could not be restored!"
+msgstr "No ha estat possible restaurar el sector d'arrencada mestre (MBR)!"
 
 #: DrivesPage
 msgid ""
@@ -122,6 +181,45 @@ msgid ""
 msgstr ""
 "Trieu si us plau el disc al que voleu instal·lar o del que voleu desinstal·"
 "lar el gestor de l'arrencada."
+
+#: DefaultPartitionPage
+msgid "After four seconds"
+msgstr "Després de 4 segons"
+
+#: LegacyBootMenu
+msgid "Unnamed %d"
+msgstr "Sense nom %d"
+
+#: BootManagerController
+msgid ""
+"About to write the boot menu to disk. Are you sure you want to continue?"
+msgstr ""
+"Ara es desarà el menú d'arrencada al disc. Esteu segur que voleu continuar?"
+
+#: DefaultPartitionPage
+msgctxt "DefaultPartitionPage"
+msgid "Partitions"
+msgstr "Particions"
+
+#: DefaultPartitionPage
+msgid "Default Partition:"
+msgstr "Partició per omissió:"
+
+#: WizardView
+msgid "Next"
+msgstr "Següent"
+
+#: WizardView
+msgid "Previous"
+msgstr "Anterior"
+
+#: BootManagerController
+msgid "Uninstallation of boot menu failed"
+msgstr "Ha fallat la desinstal·lació del menú d'arrencada"
+
+#: BootManagerController
+msgid "Old Master Boot Record saved"
+msgstr "S'ha desat el registre de l'antic gestor d'arrencada"
 
 #: DefaultPartitionPage
 msgid ""
@@ -136,23 +234,22 @@ msgstr ""
 "abans de triar una partició. nPremeu la tecla 'ALT' per a desactivar el "
 "temps d'espera de l'arrencada."
 
-#: DefaultPartitionPage
-msgid "After one second"
-msgstr "Després d'un segon"
-
 #: PartitionsPage
-msgid ""
-"The following partitions were detected. Please check the box next to the "
-"partitions to be included in the boot menu. You can also set the names of "
-"the partitions as you would like them to appear in the boot menu."
-msgstr ""
-"S'han detectat les següents particions. trieu els quadres de cada partició "
-"que volgueu incloure al menú d'arrencada. També podeu indicar els noms de "
-"les particions que voleu que apareguin a menú d'arrencada."
+msgctxt "PartitionsPage"
+msgid "Partitions"
+msgstr "Particions"
+
+#: BootManagerController
+msgid "Uninstallation of boot menu completed"
+msgstr "S'ha acabat de desinstal·lar el menú d'arrencada"
 
 #: DefaultPartitionPage
-msgid "After one minute"
-msgstr "Després d'un minut"
+msgid "After two seconds"
+msgstr "Després de 2 segons"
+
+#: BootManagerController
+msgid "Partition table not compatible"
+msgstr "La taula de particions no és compatible"
 
 #: BootManagerController
 msgid ""
@@ -163,64 +260,12 @@ msgstr ""
 "correctament des de %FILE."
 
 #: BootManagerController
-msgid "Write boot menu"
-msgstr "Escriu el menú d'arrencada"
+msgid "Done"
+msgstr "Fet"
 
-#: BootManagerController
-msgid "The Master Boot Record could not be restored!"
-msgstr "No ha estat possible restaurar el sector d'arrencada mestre (MBR)!"
-
-#: DrivesPage
-msgid "Uninstall"
-msgstr "Desinstal·la"
-
-#: DefaultPartitionPage
-msgid "Default Partition"
-msgstr "Partició per omissió"
-
-#: DefaultPartitionPage
-msgid "After five seconds"
-msgstr "Després de 5 segons"
-
-#: BootManagerController
-msgid "Back"
-msgstr "Torna"
-
-#: BootManagerController
-msgid "Installation of boot menu completed"
-msgstr "S'ha acabat de desinstal·lar el menú d'arrencada"
-
-#: LegacyBootMenu
-msgid "Unnamed %d"
-msgstr "Sense nom %d"
-
-#: FileSelectionPage
-msgid "File:"
-msgstr "Fitxer:"
-
-#: WizardView
-msgid "Previous"
-msgstr "Anterior"
-
-#: DrivesPage
-msgid "Install"
-msgstr "Instal·la"
-
-#: BootManagerController
-msgid ""
-"About to write the following boot menu to the boot disk (%s). Please verify "
-"the information below before continuing."
-msgstr ""
-"Ara es desarà el següent menú d'arrencada al disc d'arrencada (%s). "
-"Comproveu la següent informació abans de continuar."
-
-#: LegacyBootMenu
-msgid "Unknown"
-msgstr "Desconegut"
-
-#: DrivesPage
-msgid "Update"
-msgstr "Actualitza"
+#: System+name
+msgid "BootManager"
+msgstr "Gestor d'Arrencada"
 
 #: UninstallPage
 msgctxt "UninstallPage"
@@ -232,81 +277,40 @@ msgstr ""
 "d'Arrencada (MBR). Aquest fitxer es va generar el primer cop que es va "
 "instal·lar el gestor d'arrencada."
 
+#: BootManagerController
+msgctxt "BootManagerController"
+msgid ""
+"Please locate the Master Boot Record (MBR) save file to restore from. This "
+"is the file that was created when the boot manager was first installed."
+msgstr ""
+"Indiqueu el fitxer des del que voleu restaurar el Registre Mestre "
+"d'Arrencada (MBR). Aquest fitxer es va generar el primer cop que es va "
+"instal·lar el gestor d'arrencada."
+
+#: BootManagerController
+msgid ""
+"About to restore the Master Boot Record (MBR) of %disk from %file. Do you "
+"wish to continue?"
+msgstr ""
+"Ara es restaurarà el Registre Mestre d'Arrencada (MBR) de %disk des de %"
+"file. Voleu continuar?"
+
 #: DrivesPage
-msgid "Drives"
-msgstr "Unitats de disc"
+msgid "Install"
+msgstr "Instal·la"
 
-#: DrivesPage
-msgid "No space available!"
-msgstr "No hi ha espai disponible!"
-
-#: DefaultPartitionPage
-msgid "Never"
-msgstr "Mai"
-
-#: BootManagerController
-msgid "Partition table not compatible"
-msgstr "La taula de particions no és compatible"
-
-#: BootManagerController
-msgid "Old Master Boot Record saved"
-msgstr "S'ha desat el registre de l'antic gestor d'arrencada"
-
-#: BootManagerController
-msgid "Boot Manager is unable to read the partition table!"
-msgstr "El Gestor d'Arrencada no ha pogut llegir la taula de particions!"
+#: FileSelectionPage
+msgid "File:"
+msgstr "Fitxer:"
 
 #: BootManagerController
 msgid "Error reading partition table"
 msgstr "S'ha produït un error en llegir la taula de particions"
 
 #: BootManagerController
-msgid "Installation of boot menu failed"
-msgstr "Ha fallat la instal·lació del menú d'arrencada"
+msgid "Back"
+msgstr "Torna"
 
 #: BootManagerController
-msgid "Backup Master Boot Record"
-msgstr "Còpia de seguretat del registre del gestor d'arrencada"
-
-#: BootManagerController
-msgid ""
-"About to write the boot menu to disk. Are you sure you want to continue?"
-msgstr ""
-"Ara es desarà el menú d'arrencada al disc. Esteu segur que voleu continuar?"
-
-#: BootManagerController
-msgid "The old Master Boot Record was successfully saved to %s."
-msgstr "S'ha desat correctament l'antic registre mestre d'arrencada (MBR) a %s."
-
-#: DefaultPartitionPage
-msgid "Default Partition:"
-msgstr "Partició per omissió:"
-
-#: DefaultPartitionPage
-msgctxt "DefaultPartitionPage"
-msgid "Partitions"
-msgstr "Particions"
-
-#: System+name
-msgid "BootManager"
-msgstr "Gestor d'Arrencada"
-
-#: BootManagerController
-msgid "Summary"
-msgstr "Resum"
-
-#: BootManagerController
-msgid "OK"
-msgstr "D'acord"
-
-#: DefaultPartitionPage
-msgid "Immediately"
-msgstr "Immediatament"
-
-#: BootManagerController
-msgid "Done"
-msgstr "Fet"
-
-#: DefaultPartitionPage
-msgid "After three seconds"
-msgstr "Després de 3 segons"
+msgid "The boot manager has been successfully installed on your system."
+msgstr "El gestor d'arrencada s'ha instal·lat correctament."

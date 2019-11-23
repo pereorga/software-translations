@@ -3,123 +3,176 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-08 20:26+0200\n"
+"POT-Creation-Date: 2019-11-23 18:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.1\n"
+"X-Generator: Translate Toolkit 2.2.5\n"
 
 #: Terminal+TermWindow
-msgid "Not found."
-msgstr "No s'ha trobat."
-
-#: Terminal+TermWindow
-msgid "Switch Terminals"
-msgstr "Intercanvia els Terminals"
-
-#: Terminal+TermView
-msgid "Change directory"
-msgstr "Canvia la carpeta"
-
-#: Terminal+AppearancePrefView
-msgid "Cursor"
-msgstr "Cursor"
-
-#: Terminal+colors+scheme
-msgid "Professional"
-msgstr "Professional"
-
-#: Terminal+TermWindow
-msgctxt "Terminal TermWindow"
-msgid "OK"
-msgstr "D'acord"
-
-#: Terminal+TermWindow
-msgid "New Terminal"
-msgstr "Obre un terminal"
+msgid "Close other tabs"
+msgstr "Tanca les altres pestanyes"
 
 #: Terminal+TermApp
 msgid "Terminal couldn't start the shell. Sorry."
 msgstr "El terminal no ha pogut obrir l'intèrpret de les ordres. Ho sentim."
 
-#: Terminal+FindWindow
-msgid "Match case"
-msgstr "Coincidència de majúscules i minúscules"
+#: Terminal+SetTitleWindow
+msgctxt "Terminal SetTitleWindow"
+msgid "OK"
+msgstr "D'acord"
 
 #: Terminal+TermWindow
-msgid "Quit"
-msgstr "Surt"
-
-#: Terminal+Shell
-msgid "Use default shell"
-msgstr "Usa l'intèrpret d'ordres per omissió"
+msgid "Edit"
+msgstr "Edita"
 
 #: Terminal+TermWindow
 msgid "Select all"
 msgstr "Selecciona-ho tot"
 
 #: Terminal+TermWindow
+msgid "Copy"
+msgstr "Copia"
+
+#: Terminal+TermWindow
+msgid "Edit tab title…"
+msgstr "Edita el títol de la pestanya..."
+
+#: Terminal+TermWindow
+msgid "Settings"
+msgstr "Paràmetres"
+
+#: Terminal+PrefWindow
+msgid "%app% settings"
+msgstr "Paràmetres del %app%"
+
+#: Terminal+TermWindow
 msgid "Close tab"
 msgstr "Tanca la pestanya"
 
-#: Terminal+PrefWindow
-msgid "Save to file…"
-msgstr "Desa a un fitxer..."
-
 #: Terminal+AppearancePrefView
 msgctxt "Terminal AppearancePrefView"
-msgid "Window title:"
-msgstr "Títol de la finestra:"
-
-#: Terminal+AppearancePrefView
-msgid "Font:"
-msgstr "Tipus de lletra:"
+msgid "Custom"
+msgstr "Personalitzat"
 
 #: Terminal+TermView
-msgid "Copy here"
-msgstr "Copia-ho aquí"
+msgid "Change directory"
+msgstr "Canvia la carpeta"
 
-#: Terminal+TermWindow
-msgid "Really close?"
-msgstr "Esteu segur que voleu sortir?"
-
-#: Terminal+TermWindow
-msgid "Copy"
-msgstr "Copia"
+#: Terminal+TermView
+msgctxt "Terminal TermView"
+msgid "Cancel"
+msgstr "Anul·la"
 
 #: Terminal+TermWindow
 msgctxt "Terminal TermWindow"
 msgid "Terminal"
 msgstr "Terminal"
 
-#: Terminal+AppearancePrefView
-msgid "Color scheme:"
-msgstr "Esquema de colors:"
-
 #: Terminal+TermWindow
-msgctxt "Terminal TermWindow"
+msgid "Find next"
+msgstr "Cerca el següent"
+
+#: Terminal+TermView
+msgid "Copy link location"
+msgstr "Copia la ubicació de l'enllaç"
+
+#: Terminal+AppearancePrefView
+msgctxt "Terminal AppearancePrefView"
 msgid "Window title:"
 msgstr "Títol de la finestra:"
-
-#: Terminal+arguments+parsing
-msgid "Unrecognized option \"%s\"\"n\""
-msgstr "Opció no reconeguda \"%s\"\"n\""
 
 #: Terminal+colors+scheme
 msgid "Blue"
 msgstr "Blau"
+
+#: Terminal+Shell
+msgid "Cannot execute \"%command\"\":nt%error\""
+msgstr "No ha estat possible executar l'ordre \"%command\"\":nt%error\""
+
+#: Terminal+TermView
+msgid "Open path"
+msgstr "Obre el camí"
+
+#: System+name
+msgctxt "System name"
+msgid "Terminal"
+msgstr "Terminal"
 
 #: Terminal+colors+scheme
 msgctxt "Terminal colors scheme"
 msgid "Custom"
 msgstr "Personalitzat"
 
+#: Terminal+TermWindow
+msgid "Really close?"
+msgstr "Esteu segur que voleu sortir?"
+
+#: Terminal+TermApp
+msgctxt "Terminal TermApp"
+msgid "OK"
+msgstr "D'acord"
+
+#: Terminal+arguments+parsing
+msgid "Unrecognized option \"%s\"\"n\""
+msgstr "Opció no reconeguda \"%s\"\"n\""
+
+#: Terminal+TermWindow
+msgid "Find failed"
+msgstr "Ha fallat la cerca"
+
+#: Terminal+AppearancePrefView
+msgid "Color scheme:"
+msgstr "Esquema de colors:"
+
+#: Terminal+TermWindow
+msgid "New Terminal"
+msgstr "Obre un terminal"
+
+#: Terminal+TermWindow
+msgid "Quit"
+msgstr "Surt"
+
+#: Terminal+FindWindow
+msgid "Match case"
+msgstr "Coincidència de majúscules i minúscules"
+
+#: Terminal+TermWindow
+msgid "Find previous"
+msgstr "Cerca l'anterior"
+
+#: Terminal+TermWindow
+msgid "Close"
+msgstr "Tanca"
+
 #: Terminal+PrefWindow
-msgid "%app% settings"
-msgstr "Paràmetres del %app%"
+msgid "Save to file…"
+msgstr "Desa a un fitxer..."
+
+#: Terminal+TermWindow
+msgctxt "Terminal TermWindow"
+msgid "Cancel"
+msgstr "Anul·la"
+
+#: Terminal+AppearancePrefView
+msgid "Cursor"
+msgstr "Cursor"
+
+#: Terminal+TermWindow
+msgctxt "Terminal TermWindow"
+msgid "Window title:"
+msgstr "Títol de la finestra:"
+
+#: Terminal+TermWindow
+msgid "Switch Terminals"
+msgstr "Intercanvia els Terminals"
+
+#: Terminal+TermWindow
+msgid "Settings…"
+msgstr "Paràmetres…"
 
 #: Terminal+SetTitleWindow
 msgctxt "Terminal SetTitleWindow"
@@ -127,49 +180,40 @@ msgid "Cancel"
 msgstr "Anul·la"
 
 #: Terminal+TermWindow
-msgid "Increase"
-msgstr "Incrementa"
-
-#: Terminal+TermWindow
-msgid "Settings"
-msgstr "Paràmetres"
+msgid "Close active tab"
+msgstr "Tanca la pestanya activa"
 
 #: Terminal+FindWindow
 msgid "Find"
 msgstr "Cerca"
 
-#: Terminal+SetTitleWindow
-msgctxt "Terminal SetTitleWindow"
-msgid "OK"
-msgstr "D'acord"
-
-#: Terminal+Shell
-msgid "Cannot execute \"%command\"\":nt%error\""
-msgstr "No ha estat possible executar l'ordre \"%command\"\":nt%error\""
-
-#: Terminal+TermApp
-msgid ""
-"  -h,     --help               print this helpn  -t,     --"
-"title              set window titlen  -f,     --fullscreen         start "
-"fullscreenn"
-msgstr ""
-"  -h,     --help               mostra aquesta ajudan  -t,     --"
-"title              defineix el títol de la finestran  -f,     --"
-"fullscreen         comença a pantalla completan"
+#: Terminal+colors+scheme
+msgid "Professional"
+msgstr "Professional"
 
 #: Terminal+AppearancePrefView
-msgctxt "Terminal AppearancePrefView"
-msgid "Custom"
-msgstr "Personalitzat"
-
-#: System+name
-msgctxt "System name"
-msgid "Terminal"
-msgstr "Terminal"
+msgid "Font:"
+msgstr "Tipus de lletra:"
 
 #: Terminal+TermWindow
-msgid "Close other tabs"
-msgstr "Tanca les altres pestanyes"
+msgid "Paste"
+msgstr "Enganxa"
+
+#: Terminal+TermView
+msgid "Copy here"
+msgstr "Copia-ho aquí"
+
+#: Terminal+Shell
+msgid "Use default shell"
+msgstr "Usa l'intèrpret d'ordres per omissió"
+
+#: Terminal+TermView
+msgid "Open link"
+msgstr "Obre l'enllaç"
+
+#: Terminal+TermWindow
+msgid "Not found."
+msgstr "No s'ha trobat."
 
 #: Terminal+TermWindow
 msgid "Find…"
@@ -180,68 +224,14 @@ msgid "Move here"
 msgstr "Mou aquí"
 
 #: Terminal+TermWindow
-msgid "Close"
-msgstr "Tanca"
-
-#: Terminal+TermWindow
-msgid "Close window"
-msgstr "Tanca la finestra"
-
-#: Terminal+TermWindow
-msgid "Settings…"
-msgstr "Paràmetres…"
-
-#: Terminal+TermView
-msgid "Open link"
-msgstr "Obre l'enllaç"
-
-#: Terminal+TermWindow
-msgid "Edit"
-msgstr "Edita"
+msgid "Increase"
+msgstr "Incrementa"
 
 #: Terminal+TermWindow
 msgctxt "Terminal TermWindow"
-msgid "Cancel"
-msgstr "Anul·la"
-
-#: Terminal+TermApp
-msgctxt "Terminal TermApp"
 msgid "OK"
 msgstr "D'acord"
 
 #: Terminal+TermWindow
-msgid "Find failed"
-msgstr "Ha fallat la cerca"
-
-#: Terminal+TermWindow
-msgid "Edit tab title…"
-msgstr "Edita el títol de la pestanya..."
-
-#: Terminal+TermView
-msgid "Open path"
-msgstr "Obre el camí"
-
-#: Terminal+TermWindow
-msgid "Find previous"
-msgstr "Cerca l'anterior"
-
-#: Terminal+TermView
-msgid "Copy link location"
-msgstr "Copia la ubicació de l'enllaç"
-
-#: Terminal+TermWindow
-msgid "Find next"
-msgstr "Cerca el següent"
-
-#: Terminal+TermWindow
-msgid "Close active tab"
-msgstr "Tanca la pestanya activa"
-
-#: Terminal+TermWindow
-msgid "Paste"
-msgstr "Enganxa"
-
-#: Terminal+TermView
-msgctxt "Terminal TermView"
-msgid "Cancel"
-msgstr "Anul·la"
+msgid "Close window"
+msgstr "Tanca la finestra"

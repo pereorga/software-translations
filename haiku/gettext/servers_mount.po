@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-08 20:26+0200\n"
+"POT-Creation-Date: 2019-11-23 18:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.1\n"
+"X-Generator: Translate Toolkit 2.2.5\n"
 
 #: AutoMounter
 msgid "Mount read-only"
@@ -21,24 +21,28 @@ msgid "Error mounting volume:nn%s"
 msgstr "Hi ha hagut un error en muntar el volum:nn%s"
 
 #: AutoMounter
-msgid "Unmount error"
-msgstr "Error de muntatge"
+msgid "Cancel"
+msgstr "Anul·la"
 
 #: AutoMounter
-msgid "Mount warning"
-msgstr "Avís del muntatge"
+msgid "OK"
+msgstr "D'acord"
+
+#: AutoMounter
+msgid "Unmount error"
+msgstr "Error de muntatge"
 
 #: AutoMounter
 msgid "Mount read/write"
 msgstr "Munta-ho per a lectura/escriptura"
 
 #: AutoMounter
-msgid "Mounting volume '%s'nn"
-msgstr "S'està muntant el volum '%s'nn"
+msgid "Could not unmount disk \"%s\"\":nt%s\""
+msgstr "No ha estat possible desmuntar el disc \"%s\"\":nt%s\""
 
 #: AutoMounter
-msgid "Cancel"
-msgstr "Anul·la"
+msgid "Mounting volume '%s'nn"
+msgstr "S'està muntant el volum '%s'nn"
 
 #: AutoMounter
 msgid ""
@@ -47,40 +51,17 @@ msgid ""
 msgstr " unmounting it now might result in loss of data.n\""
 
 #: AutoMounter
-msgid "Could not unmount disk \"%s\"\":nt%s\""
-msgstr "No ha estat possible desmuntar el disc \"%s\"\":nt%s\""
-
-#: AutoMounter
-msgid "Mounting volume <unnamed volume>nn"
-msgstr "S'està muntant el volum <volum desconegut>nn"
-
-#: AutoMounter
-msgid "OK"
-msgstr "D'acord"
-
-#: AutoMounter
-msgid ""
-"The file system on this volume is not the Haiku file system. It is strongly "
-"suggested to mount it in read-only mode. This will prevent unintentional "
-"data loss because of errors in Haiku."
-msgstr ""
-"El sistema de fitxers del volum no és el sistema de fitxers del Haiku. És "
-"molt aconsellable muntar-ho en mode de només lectura. Això pot evitar la "
-"eventual pèrdua de dades degut a errors del Haiku."
+msgid "Force unmount"
+msgstr "Força el muntatge"
 
 #: AutoMounter
 msgid "Mount error"
 msgstr "Error de muntatge"
 
 #: AutoMounter
-msgid ""
-"It is suggested to mount all additional Haiku volumes in read-only mode. "
-"This will prevent unintentional data loss because of errors in Haiku."
-msgstr ""
-"És aconsellable tots la resta dels volums del Haiku en mode de només "
-"lectura. Això pot evitar la eventual pèrdua de dades degut a errors del "
-"Haiku."
+msgid "Mounting volume <unnamed volume>nn"
+msgstr "S'està muntant el volum <unnamed volume>nn"
 
 #: AutoMounter
-msgid "Force unmount"
-msgstr "Força el muntatge"
+msgid "Mount warning"
+msgstr "Avís del muntatge"

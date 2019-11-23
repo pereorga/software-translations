@@ -1,4 +1,6 @@
 const language_to_convert   = 'ca';
+
+// Path to Haiku catalogs directory. Clone from https://github.com/haiku/haiku.git
 const catalogs_path         = '../../haiku/data/catalogs';
 
 String.prototype.replaceAll = function(search, replacement) {

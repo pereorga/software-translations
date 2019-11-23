@@ -3,33 +3,35 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-08 20:26+0200\n"
+"POT-Creation-Date: 2019-11-23 18:36+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.1\n"
+"X-Generator: Translate Toolkit 2.2.5\n"
 
-#: ActiveTranslatorsWindow
-msgid "User Translators"
-msgstr "Traductors de l'Usuari"
+#: ImageView
+msgid "nInput Formats:"
+msgstr "nFormats d'entrada:"
 
 #: ImageWindow
-msgid "No image available to save."
-msgstr "No hi ha cap imatge per desar."
+msgid "Next Page"
+msgstr "Pàgina següent"
 
-#: ImageView
-msgid "Sorry, unable to write the image file."
-msgstr "Ho sentin, no es possible desar la imatge."
+#: ImageWindow
+msgid "Previous Page"
+msgstr "Pàgina anterior"
 
-#: ImageView
-msgid ""
-"Number of Documents: %1nnTranslator Used:nName: %2nInfo: %3nVersion: %4n"
-msgstr ""
-"Nombre de Documents: %1nnTraductor Utilitzat:nNom: %2nInformació: %3nVersió: "
-"%4n"
+#: InspectorApp
+msgctxt "InspectorApp"
+msgid "Active Translators"
+msgstr "Traductors actius"
+
+#: ActiveTranslatorsWindow
+msgid "System Translators"
+msgstr "Traductors del sistema"
 
 #: ImageView
 msgid ""
@@ -40,29 +42,30 @@ msgstr ""
 "%7nNom: %8n"
 
 #: ImageWindow
-msgid "Bummer"
-msgstr "Rotllo"
+msgctxt "ImageWindow"
+msgid "OK"
+msgstr "D'acord"
 
 #: ImageWindow
-msgid "Last Page"
-msgstr "Darrera pàgina"
+msgid "View"
+msgstr "Visualitza"
 
-#: ImageView
-msgid "nInput Formats:"
-msgstr "nFormats d'entrada:"
+#: ImageWindow
+msgid "Open…"
+msgstr "Obre..."
 
-#: ImageView
-msgid "Sorry, unable to load the image."
-msgstr "Ho sentim, no és possible carregar la imatge."
+#: ImageWindow
+msgid "Save feature not implemented yet."
+msgstr "La funció de desar encara no està disponible."
 
-#: InspectorApp
-msgid "Info Win"
-msgstr "Propietats per a Win"
-
-#: InspectorApp
-msgctxt "InspectorApp"
+#: ImageWindow
+msgctxt "ImageWindow"
 msgid "Active Translators"
-msgstr "Traductors Actius"
+msgstr "Traductors actius"
+
+#: ImageWindow
+msgid "Info"
+msgstr "Informació"
 
 #: ImageView
 msgid ""
@@ -71,79 +74,82 @@ msgid ""
 "nTranslator ID: %12nGroup: '%13' (%14)nQuality: %15nCapability: %"
 "16nnExtension Info:n"
 msgstr ""
-"Imatge: %1nEspai de Colors: %2 (%3)nDimensions: %4 x %5nBytes per Fila: %"
-"6nBytes Totals: %7nnInformació de la Identitat:nCadena ID: %8nTipus MIME: "
-"%9nTipus: '%10' (%11)nTraductor ID: %12nGrup: '%13' (%14)nQualitat: "
-"%15nFuncionalitat: %16nnInformació de l'Extensió:n"
-
-#: ImageView
-msgid "nOutput Formats:"
-msgstr "nFormats de sortida:"
+"Imatge: %1nEspai del color: %2 (%3)nDimensions: %4 x %5nBytes per fila: %"
+"6nBytes totals: %7nnInformació de la identitat:nCadena: %8nTipus MIME: "
+"%9nTipus: '%10' (%11)nTraductor: %12nGrup: '%13' (%14)nQualitat: "
+"%15nFuncionalitat: %16nnInformació de l'extensió:n"
 
 #: ImageWindow
-msgid "Save feature not implemented yet."
-msgstr "La característica per desar encara no està disponible."
-
-#: ImageWindow
-msgid "First Page"
-msgstr "Primera pàgina"
-
-#: ImageWindow
-msgid "Next Page"
-msgstr "Pàgina següent"
-
-#: ImageView
-msgid "nTranslator Used:nName: %1nInfo: %2nVersion: %3n"
-msgstr "nTraductor Utilitzat:nNom: %1nInformació: %2nVersió: %3n"
-
-#: ImageWindow
-msgid "Info"
-msgstr "Informació"
-
-#: ImageWindow
-msgctxt "ImageWindow"
-msgid "OK"
-msgstr "D'acord"
-
-#: ImageWindow
-msgid "Window"
-msgstr "Finestra"
-
-#: ImageWindow
-msgid "Quit"
-msgstr "Surt"
-
-#: ImageView
-msgid "Selected Document: %1nnTranslator Used:nName: %2nInfo: %3nVersion: %4n"
-msgstr ""
-"Document Triat: %1nnTraductor Utilitzat:nNom: %2nInformació: %3nVersió: %4n"
-
-#: ImageWindow
-msgctxt "ImageWindow"
-msgid "Active Translators"
-msgstr "Traductors Actius"
-
-#: ImageWindow
-msgid "View"
-msgstr "Visualitza"
-
-#: ImageWindow
-msgid "Previous Page"
-msgstr "Pàgina anterior"
+msgid "No image available to save."
+msgstr "No hi ha cap imatge per desar."
 
 #: ImageView
 msgctxt "ImageView"
 msgid "OK"
 msgstr "D'acord"
 
+#: ImageWindow
+msgid "Bummer"
+msgstr "Problema"
+
+#: ImageView
+msgid "nOutput Formats:"
+msgstr "nFormats de sortida:"
+
+#: ImageView
+msgid ""
+"Number of Documents: %1nnTranslator Used:nName: %2nInfo: %3nVersion: %4n"
+msgstr ""
+"Nombre de documents: %1nnTraductor usat:nNom: %2nInformació: %3nVersió: %4n"
+
 #: ActiveTranslatorsWindow
-msgid "System Translators"
-msgstr "D'acord"
+msgid "User Translators"
+msgstr "Traductors d'usuari"
+
+#: ImageWindow
+msgid "Last Page"
+msgstr "Darrera pàgina"
+
+#: ImageView
+msgid "nTranslator Used:nName: %1nInfo: %2nVersion: %3n"
+msgstr "nTraductor usat:nNom: %1nInformació: %2nVersió: %3n"
 
 #: ImageView
 msgid "Unknown"
 msgstr "Desconegut"
 
+#: InspectorApp
+msgid "Info Win"
+msgstr "Informació de la pàgina"
+
+#: ImageView
+msgid "Sorry, unable to load the image."
+msgstr "Perdoneu, no es pot carregar la imatge."
+
 #: ImageWindow
 msgid "File"
 msgstr "Fitxer"
+
+#: ImageView
+msgid "Selected Document: %1nnTranslator Used:nName: %2nInfo: %3nVersion: %4n"
+msgstr "Document triat: %1nnTraductor usat:nNom: %2nInformació: %3nVersió: %4n"
+
+#: ImageWindow
+msgid "Quit"
+msgstr "Surt"
+
+#: ImageView
+msgid "Sorry, unable to write the image file."
+msgstr "Perdoneu, no es pot escriure el fitxer de la imatge."
+
+#: ImageWindow
+msgid "Save…"
+msgstr "Desa..."
+
+#: ImageWindow
+msgid "Window"
+msgstr "Finestra"
+
+#: ImageWindow
+msgid "First Page"
+msgstr "Primera pàgina"

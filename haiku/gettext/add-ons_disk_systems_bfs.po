@@ -3,38 +3,42 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-08 20:25+0200\n"
+"POT-Creation-Date: 2019-11-23 18:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.1\n"
+"X-Generator: Translate Toolkit 2.2.5\n"
 
 #: BFS_Initialize_Parameter
 msgid "Enable query support"
 msgstr "Habilita el suport per a fer consultes"
 
 #: BFS_Initialize_Parameter
-msgid "2048 (Recommended)"
-msgstr "2048 (Recomanat)"
+msgid ""
+"Disabling query support may speed up certain file system operations, but "
+"shouldnonly be used if one is absolutely certain that one will not need "
+"queries.nAny volume that is intended for booting Haiku must have query "
+"support enabled."
+msgstr ""
+"La desactivació del suport de consultes pot accelerar algunes operacions del "
+"sisteman de fitxers, però només s'hauria d'usar si es té la certesa que no "
+"necessitareu consultes.nQualsevol volum que estigui destinat a arrencar "
+"Haiku ha de tenir activat el suport de consulta."
+
+#: BFS_Initialize_Parameter
+msgid "Name:"
+msgstr "Nom:"
 
 #: BFS_Initialize_Parameter
 msgid "8192 (Mostly large files)"
 msgstr "8192 (Principalment grans fitxers)"
 
 #: BFS_Initialize_Parameter
-msgid ""
-"Disabling query support may speed up certain file system operations, but "
-"should only be used if one is absolutely certain that one will not need "
-"queries.nAny volume that is intended for booting Haiku must have query "
-"support enabled."
-msgstr ""
-"Si desactiveu el suport per a les consultes, algunes operacions del sistema "
-"podrien anar més ràpides, però només ho haurien de fer si esteu absolutament "
-"segur que no us calen les consultes.nCal el suport per a consultes per a "
-"qualsevol volum que hagi d'arrencar el sistema."
+msgid "2048 (Recommended)"
+msgstr "2048 (Recomanat)"
 
 #: BFS_Initialize_Parameter
 msgid "1024 (Mostly small files)"
@@ -43,7 +47,3 @@ msgstr "1024 (Principalment fitxers petits)"
 #: BFS_Initialize_Parameter
 msgid "Blocksize:"
 msgstr "Mida del bloc:"
-
-#: BFS_Initialize_Parameter
-msgid "Name:"
-msgstr "Nom:"

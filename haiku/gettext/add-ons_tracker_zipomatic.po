@@ -3,30 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-08 20:25+0200\n"
+"POT-Creation-Date: 2019-11-23 18:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.1\n"
-
-#: file:ZipOMaticWindow.cpp
-msgid "Stop"
-msgstr "Atura"
-
-#: file:ZipOMaticWindow.cpp
-msgid "Creating archive: %s"
-msgstr "S'està creant l'arxiu: %s"
-
-#: file:ZipOMaticWindow.cpp
-msgid "Continue"
-msgstr "Continua"
-
-#: file:ZipperThread.cpp
-msgid "Preparing to archive"
-msgstr "S'està preparant per arxivar-ho"
+"X-Generator: Translate Toolkit 2.2.5\n"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Drop files here."
@@ -37,16 +21,40 @@ msgid "Filename: %s"
 msgstr "Nom del fitxer: %s"
 
 #: file:ZipOMatic.cpp
-msgid "Let them continue"
-msgstr "Deixa que continuïn"
-
-#: file:ZipOMatic.cpp
 msgid "Do you want to stop them?"
 msgstr "Voleu aturar-los?"
 
 #: file:ZipOMaticWindow.cpp
+msgid "Error creating archive"
+msgstr "S'ha produït un error en crear l'arxiu"
+
+#: file:ZipOMatic.cpp
+msgid "Stop them"
+msgstr "Atura'ls"
+
+#: file:ZipOMaticWindow.cpp
 msgid "Are you sure you want to stop creating this archive?"
 msgstr "Esteu segur que no voleu generar aquest fitxer?"
+
+#: file:ZipperThread.cpp
+msgid "Preparing to archive"
+msgstr "S'està preparant per arxivar-ho"
+
+#: file:ZipOMatic.cpp
+msgid "Let them continue"
+msgstr "Deixa que continuïn"
+
+#: file:ZipOMaticWindow.cpp
+msgid "Continue"
+msgstr "Continua"
+
+#: file:ZipOMaticWindow.cpp
+msgid "Archive created OK"
+msgstr "L'arxiu s'ha generat correctament"
+
+#: file:ZipOMaticWindow.cpp
+msgid "Stop"
+msgstr "Atura"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Stopped"
@@ -57,13 +65,5 @@ msgid "Archive"
 msgstr "Arxiva"
 
 #: file:ZipOMaticWindow.cpp
-msgid "Error creating archive"
-msgstr "S'ha produït un error en crear l'arxiu"
-
-#: file:ZipOMaticWindow.cpp
-msgid "Archive created OK"
-msgstr "L'arxiu s'ha generat correctament"
-
-#: file:ZipOMatic.cpp
-msgid "Stop them"
-msgstr "Atura'ls"
+msgid "Creating archive: %s"
+msgstr "S'està creant l'arxiu: %s"
