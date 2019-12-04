@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-03 23:45+0200\n"
+"POT-Creation-Date: 2019-12-04 20:14+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr "Afegeix un compte"
 
 #: addedFile
 msgid "Added {1}"
-msgstr "Afegit {1}"
+msgstr "{1} afegit"
 
 #: addImages
 msgid "Add Images"
@@ -395,7 +395,7 @@ msgstr "Aplicació Chrome"
 
 #: collaborativeEditingNotice
 msgid "Important Notice for Collaborative Editing"
-msgstr ""
+msgstr "Avís important per a l'edició col·laborativa"
 
 #: compressed
 msgid "Compressed"
@@ -409,10 +409,12 @@ msgstr "Missatge de la comissió"
 msgid ""
 "This link configures draw.io. Only click OK if you trust whoever gave you it!"
 msgstr ""
+"L'enllaç configura el draw.io. Feu clic a \"Accepta\" només si confieu en la "
+"persona que us l'ha enviat."
 
 #: configLinkConfirm
 msgid "Click OK to configure and restart draw.io."
-msgstr ""
+msgstr "Feu clic a \"Accepta\" per configurar i reiniciar el draw.io"
 
 #: csv
 msgid "CSV"
@@ -424,7 +426,7 @@ msgstr "Fosc"
 
 #: didYouMeanToExportToPdf
 msgid "Did you mean to export to PDF?"
-msgstr ""
+msgstr "Voleu exportar-ho a PDF?"
 
 #: draftFound
 msgid ""
@@ -504,8 +506,8 @@ msgid ""
 "Click to collapse/expandnShift-click to move neighbors\n"
 "nAlt-click to protect group size"
 msgstr ""
-"Fes clic per minimitzar/maximitzarnPrem Shift per moure els veïns nPrem Alt "
-"per protegir la mida del grup"
+"Feu clic per reduir/xtendrenPremeu Shift i feu clic per moure els "
+"veïnsnPremeu Alt i feu clic per protegir la mida del grup"
 
 #: collapsible
 msgid "Collapsible"
@@ -525,7 +527,7 @@ msgstr "Comentaris/Notes"
 
 #: compress
 msgid "Compress"
-msgstr ""
+msgstr "Comprimeix"
 
 #: connect
 msgid "Connect"
@@ -573,7 +575,7 @@ msgstr "Copia en connectar"
 
 #: copyCreated
 msgid "A copy of the file was created."
-msgstr ""
+msgstr "S'ha creat una còpia del fitxer."
 
 #: copyOf
 msgid "Copy of {1}"
@@ -625,7 +627,7 @@ msgstr "Actual"
 
 #: currentPage
 msgid "Current page"
-msgstr ""
+msgstr "Pàgina actual"
 
 #: cut
 msgid "Cut"
@@ -697,7 +699,7 @@ msgstr "El diagrama s'ha bloquejat per evitar la pèrdua de dades."
 
 #: diagramLockedBySince
 msgid "The diagram is locked by {1} since {2} ago"
-msgstr ""
+msgstr "El diagrama està bloquejat per {1} des de fa {2}"
 
 #: diagramName
 msgid "Diagram Name"
@@ -937,7 +939,7 @@ msgstr "Elèctric"
 
 #: ellipse
 msgid "Ellipse"
-msgstr ""
+msgstr "El·lipse"
 
 #: embedNotice
 msgid "Paste this once at the end of the page"
@@ -1021,6 +1023,7 @@ msgstr "Error en desar. No s'ha trobat el fitxer."
 #: errorSavingFileReadOnlyMode
 msgid "Could not save diagram while read-only mode is active."
 msgstr ""
+"No s'ha pogut desar el diagrama mentre el mode de només lectura és actiu"
 
 #: errorSavingFileSessionTimeout
 msgid ""
@@ -1076,7 +1079,7 @@ msgstr ""
 
 #: externalChanges
 msgid "External Changes"
-msgstr ""
+msgstr "Canvis externs"
 
 #: extras
 msgid "Extras"
@@ -1114,19 +1117,22 @@ msgstr "Fitxer"
 msgid ""
 "The file has been modified. Do you want to save the file and overwrite those "
 "changes?"
-msgstr "El fitxer s'ha modificat. Sobreescriure els canvis?"
+msgstr ""
+"S'ha modificat el fitxer. Esteu segur que voleu desar el fitxer i "
+"sobreescriure els canvis?"
 
 #: fileChangedSyncDialog
 msgid "The file has been modified. Do you want to synchronize those changes?"
 msgstr ""
+"S'ha modificat el fitxer. Esteu segur que voleu sincronitzar els canvis?\n"
 
 #: fileChangedSync
 msgid "The file has been modified. Click here to synchronize."
-msgstr ""
+msgstr "S'ha modificat el fitxer. Feu clic aquí per sincronitzar."
 
 #: overwrite
 msgid "Overwrite"
-msgstr "Sobreescriure"
+msgstr "Sobreescriu"
 
 #: synchronize
 msgid "Synchronize"
@@ -1142,7 +1148,7 @@ msgstr "Aquest fitxer ja existeix"
 
 #: fileMovedToTrash
 msgid "File was moved to trash"
-msgstr ""
+msgstr "S'ha tirat el fitxer a la paperera"
 
 #: fileNearlyFullSeeFaq
 msgid "File nearly full, please see FAQ"
@@ -1176,14 +1182,15 @@ msgstr "Com desitja obrir aquest(s) fitxer(s)?"
 #: filetypeHtml
 msgid ".html causes file to save as HTML with redirect to cloud URL"
 msgstr ""
+".html fa que el fitxer es desi en HTML amb una redirecció a un URL al núvol"
 
 #: filetypePng
 msgid ".png causes file to save as PNG with embedded data"
-msgstr ""
+msgstr ".png fa que el fitxer es desi en PNG amb dades incrustades"
 
 #: filetypeSvg
 msgid ".svg causes file to save as SVG with embedded data"
-msgstr ""
+msgstr ".svg fa que el fitxer es desi en SVG amb dades incrustades"
 
 #: fileWillBeSavedInAppFolder
 msgid "{1} will be saved in the app folder."
@@ -1199,7 +1206,7 @@ msgstr "Color de farcit"
 
 #: filterCards
 msgid "Filter Cards"
-msgstr ""
+msgstr "Filtra les targetes"
 
 #: find
 msgid "Find"
@@ -1435,6 +1442,8 @@ msgid ""
 "Sharing is only available via Google Drive. Please click Open below and "
 "share from the more actions menu:"
 msgstr ""
+"Només està disponible compartir amb Google Drive. Feu clic a \"Obra\" més "
+"avall i compartiu-ho des del menú de més accions:"
 
 #: googleSlides
 msgid "Google Slides"
@@ -1539,7 +1548,7 @@ msgstr "Text HTML"
 
 #: id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: iframe
 msgid "IFrame"
@@ -1631,7 +1640,7 @@ msgstr "Afegeix un rectangle"
 
 #: insertRhombus
 msgid "Insert Rhombus"
-msgstr ""
+msgstr "Afegeix un rombe"
 
 #: insertRowBefore
 msgid "Insert Row Above"
@@ -1669,11 +1678,11 @@ msgstr ""
 
 #: invalidInput
 msgid "Invalid input"
-msgstr ""
+msgstr "L'entrada no és vàlida"
 
 #: invalidName
 msgid "Invalid name"
-msgstr "Nom invàlid"
+msgstr "El nom no és vàlid"
 
 #: invalidOrMissingFile
 msgid "Invalid or missing file"
@@ -1741,7 +1750,7 @@ msgstr "La llicència per a {1} expira el {2}. Clica aquí."
 
 #: lineJumps
 msgid "Line jumps"
-msgstr ""
+msgstr "Salts de línia"
 
 #: linkAccountRequired
 msgid ""
@@ -1991,7 +2000,7 @@ msgstr "No"
 
 #: noPickFolder
 msgid "No, pick folder"
-msgstr ""
+msgstr "No, selecciona una carpeta"
 
 #: noAttachments
 msgid "No attachments found"
@@ -2411,7 +2420,7 @@ msgstr "Visitat recentment"
 
 #: rectangle
 msgid "Rectangle"
-msgstr ""
+msgstr "Rectangle"
 
 #: redirectToNewApp
 msgid ""
@@ -2443,11 +2452,11 @@ msgstr "Expressió normal"
 
 #: relative
 msgid "Relative"
-msgstr ""
+msgstr "Relatiu"
 
 #: relativeUrlNotAllowed
 msgid "Relative URL not allowed"
-msgstr ""
+msgstr "No es permet un URL relatiu"
 
 #: rememberMe
 msgid "Remember me"
@@ -2520,6 +2529,8 @@ msgstr "Ajusta la mida"
 #: resizeLargeImages
 msgid "Do you want to resize large images to make the application run faster?"
 msgstr ""
+"Voleu canviar la mida de les imatges grans per fer que l'aplicació funcioni "
+"més ràpid?"
 
 #: retina
 msgid "Retina"
@@ -2659,7 +2670,7 @@ msgstr "Selecciona només"
 
 #: selectCard
 msgid "Select Card"
-msgstr ""
+msgstr "Selecciona una targeta"
 
 #: selectEdges
 msgid "Select Edges"
@@ -2667,11 +2678,11 @@ msgstr "Selecciona les vores"
 
 #: selectFile
 msgid "Select File"
-msgstr "Selecciona fitxer"
+msgstr "Selecciona un fitxer"
 
 #: selectFolder
 msgid "Select Folder"
-msgstr "Selecciona carpeta"
+msgstr "Selecciona una carpeta"
 
 #: selectFont
 msgid "Select Font"
@@ -2679,11 +2690,11 @@ msgstr "Selecciona una font"
 
 #: selectNone
 msgid "Select None"
-msgstr "No seleccionar res"
+msgstr "No seleccionis res"
 
 #: selectTemplate
 msgid "Select Template"
-msgstr ""
+msgstr "Selecciona una plantilla"
 
 #: selectVertices
 msgid "Select Vertices"
@@ -2961,7 +2972,7 @@ msgstr "Fons transparent"
 
 #: trello
 msgid "Trello"
-msgstr ""
+msgstr "Trello"
 
 #: tryAgain
 msgid "Try again"
@@ -3197,85 +3208,88 @@ msgstr "Wireframes"
 
 #: property
 msgid "Property"
-msgstr ""
+msgstr "Propietat\n"
 
 #: value
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: showMore
 msgid "Show More"
-msgstr ""
+msgstr "Mostra més"
 
 #: showLess
 msgid "Show Less"
-msgstr ""
+msgstr "Mostra menys"
 
 #: myDiagrams
 msgid "My Diagrams"
-msgstr ""
+msgstr "Els meus diagrames"
 
 #: allDiagrams
 msgid "All Diagrams"
-msgstr ""
+msgstr "Tots els diagrames"
 
 #: recentlyUsed
 msgid "Recently used"
-msgstr ""
+msgstr "Usats recentment"
 
 #: listView
 msgid "List view"
-msgstr ""
+msgstr "Visualització de llista"
 
 #: gridView
 msgid "Grid view"
-msgstr ""
+msgstr "Visualització en graella"
 
 #: resultsFor
 msgid "Results for '{1}'"
-msgstr ""
+msgstr "Resultats per '{1}'"
 
 #: oneDriveCharsNotAllowed
 msgid "The following characters are not allowed: ~ \" # %  * : < > ? /  { | }"
-msgstr ""
+msgstr "Els següents caràcters no estan permesos: ~ \" # %  * : < > ? /  { | }"
 
 #: oneDriveInvalidDeviceName
 msgid "The specified device name is invalid"
-msgstr ""
+msgstr "El nom de dispositiu especificat no és vàlid"
 
 #: officeNotLoggedOD
 msgid ""
 "You are not logged in to OneDrive. Please open draw.io task pane and login "
 "first."
 msgstr ""
+"No heu entrat a OneDrive. Obriu el quadre de tasques draw.io i inicieu la "
+"sessió primer."
 
 #: officeSelectSingleDiag
 msgid "Please select a single draw.io diagram only without other contents."
-msgstr ""
+msgstr "Seleccioneu un únic diagrama draw.io, sense altres continguts."
 
 #: officeSelectDiag
 msgid "Please select a draw.io diagram."
-msgstr ""
+msgstr "Seleccioneu un diagrama draw.io."
 
 #: officeCannotFindDiagram
 msgid "Cannot find a draw.io diagram in the selection"
-msgstr ""
+msgstr "No s'ha trobat pogut trobar un diagrama draw.io a la selecció"
 
 #: noDiagrams
 msgid "No diagrams found"
-msgstr ""
+msgstr "No s'ha trobat cap diagrama"
 
 #: authFailed
 msgid "Authentication failed"
-msgstr ""
+msgstr "Ha fallat l'autenticació"
 
 #: officeFailedAuthMsg
 msgid "Unable to successfully authenticate user or authorize application."
 msgstr ""
+"No s'ha pogut autenticar correctament l'usuari ni autoritzar l'aplicació."
 
 #: convertingDiagramFailed
 msgid "Converting diagram failed"
-msgstr ""
+msgstr "Ha fallat la conversió del diagrama"
 
 #: officeCopyImgErrMsg
 msgid ""
@@ -3283,10 +3297,12 @@ msgid ""
 "inserted.\n"
 "Please manually copy the image then paste it to the document."
 msgstr ""
+"A causa d'algunes limitacions en l'aplicació, no s'ha pogut inserir la "
+"imatge. Proveu de copiar manualment la imatge i enganxar-la al document."
 
 #: insertingImageFailed
 msgid "Inserting image failed"
-msgstr ""
+msgstr "La inserció de la imatge ha fallat"
 
 #: officeCopyImgInst
 msgid ""
@@ -3294,280 +3310,296 @@ msgid ""
 "context menu. Then, in the document, right-click and select \"Paste\" from "
 "the context menu."
 msgstr ""
+"Instruccions: feu clic amb el botó dret a la imatge de sota. Seleccioneu \""
+"Copia la imatge\" al menú contextual. A continuació, al document, feu clic "
+"amb el botó dret i seleccioneu \"Enganxa\" al menú contextual."
 
 #: folderEmpty
 msgid "Folder is empty"
-msgstr ""
+msgstr "La carpeta està buida"
 
 #: recent
 msgid "Recent"
-msgstr ""
+msgstr "Recent"
 
 #: sharedWithMe
 msgid "Shared With Me"
-msgstr ""
+msgstr "Compartit amb mi"
 
 #: sharepointSites
 msgid "Sharepoint Sites"
-msgstr ""
+msgstr "Llocs Sharepoint"
 
 #: errorFetchingFolder
 msgid "Error fetching folder items"
-msgstr ""
+msgstr "S'ha produït un error en recuperar els elements de la carpeta"
 
 #: errorAuthOD
 msgid "Error authenticating to OneDrive"
-msgstr ""
+msgstr "S'ha produït un error en autenticar-se a OneDrive"
 
 #: officeMainHeader
 msgid "Adds draw.io diagrams to your document."
-msgstr ""
+msgstr "Afegeix esquemes draw.io al document."
 
 #: officeStepsHeader
 msgid "This add-in performs the following steps:"
-msgstr ""
+msgstr "Aquest complement realitza els passos següents:"
 
 #: officeStep1
 msgid "Connects to Microsoft OneDrive, Google Drive or your device."
-msgstr ""
+msgstr "Es connecta a Microsoft OneDrive, Google Drive o al vostre dispositiu."
 
 #: officeStep2
 msgid "Select a draw.io diagram."
-msgstr ""
+msgstr "Seleccioneu un diagrama de draw.io."
 
 #: officeStep3
 msgid "Insert the diagram into the document."
-msgstr ""
+msgstr "Insereix el diagrama al document."
 
 #: officeAuthPopupInfo
 msgid "Please complete the authentication in the pop-up window."
-msgstr ""
+msgstr "Completeu l'autenticació a la finestra emergent."
 
 #: officeSelDiag
 msgid "Select draw.io Diagram:"
-msgstr ""
+msgstr "Seleccioneu un diagrama de draw.io"
 
 #: files
 msgid "Files"
-msgstr ""
+msgstr "Fitxers"
 
 #: shared
 msgid "Shared"
-msgstr ""
+msgstr "Compartit"
 
 #: sharepoint
 msgid "Sharepoint"
-msgstr ""
+msgstr "Sharepoint"
 
 #: officeManualUpdateInst
 msgid ""
 "Instructions: Copy draw.io diagram from the document. Then, in the box "
 "below, right-click and select \"Paste\" from the context menu."
 msgstr ""
+"Instruccions: copieu el diagrama de draw.io del document. A continuació, al "
+"quadre següent, feu clic amb el botó dret i seleccioneu \"Enganxa\" al menú "
+"contextual."
 
 #: officeClickToEdit
 msgid "Click icon to start editing:"
-msgstr ""
+msgstr "Feu clic a la icona per començar a editar:"
 
 #: pasteDiagram
 msgid "Paste draw.io diagram here"
-msgstr ""
+msgstr "Enganxa el diagrama de draw.io aquí"
 
 #: connectOD
 msgid "Connect to OneDrive"
-msgstr ""
+msgstr "Connecta’t a OneDrive"
 
 #: selectChildren
 msgid "Select Children"
-msgstr ""
+msgstr "Selecciona els fills"
 
 #: selectSiblings
 msgid "Select Siblings"
-msgstr ""
+msgstr "Selecciona els germans"
 
 #: selectParent
 msgid "Select Parent"
-msgstr ""
+msgstr "Selecciona el pare"
 
 #: selectDescendants
 msgid "Select Descendants"
-msgstr ""
+msgstr "Selecciona els descendents"
 
 #: lastSaved
 msgid "Last saved {1} ago"
-msgstr ""
+msgstr "Desat per última vegada fa {1}"
 
 #: resolve
 msgid "Resolve"
-msgstr ""
+msgstr "Resol"
 
 #: reopen
 msgid "Re-open"
-msgstr ""
+msgstr "Torna a obrir"
 
 #: showResolved
 msgid "Show Resolved"
-msgstr ""
+msgstr "Mostra els resolts"
 
 #: reply
 msgid "Reply"
-msgstr ""
+msgstr "Respon"
 
 #: objectNotFound
 msgid "Object not found"
-msgstr ""
+msgstr "No s'ha trobat l'objecte"
 
 #: reOpened
 msgid "Re-opened"
-msgstr ""
+msgstr "Tornat a obrir"
 
 #: markedAsResolved
 msgid "Marked as resolved"
-msgstr ""
+msgstr "S'ha marcat com a resolt"
 
 #: noCommentsFound
 msgid "No comments found"
-msgstr ""
+msgstr "No s'ha trobat cap comentari"
 
 #: comments
 msgid "Comments"
-msgstr ""
+msgstr "Comentaris"
 
 #: timeAgo
 msgid "{1} ago"
-msgstr ""
+msgstr "Fa {1}"
 
 #: confluenceCloud
 msgid "Confluence Cloud"
-msgstr ""
+msgstr "Confluence Cloud"
 
 #: libraries
 msgid "Libraries"
-msgstr ""
+msgstr "Biblioteques"
 
 #: confAnchor
 msgid "Confluence Page Anchor"
-msgstr ""
+msgstr "Ancoratge a la pàgina de Confluence"
 
 #: confTimeout
 msgid "The connection has timed out"
-msgstr ""
+msgstr "La connexió ha expirat"
 
 #: confSrvTakeTooLong
 msgid "The server at {1} is taking too long to respond."
-msgstr ""
+msgstr "El servidor de {1} triga massa temps a respondre."
 
 #: confCannotInsertNew
 msgid "Cannot insert draw.io diagram to a new Confluence page"
-msgstr ""
+msgstr "No es pot inserir el diagrama draw.io a una pàgina nova de Confluència"
 
 #: confSaveTry
 msgid "Please save the page and try again."
-msgstr ""
+msgstr "Deseu la pàgina i torneu-ho a provar."
 
 #: confCannotGetID
 msgid "Unable to determine page ID"
-msgstr ""
+msgstr "No s'ha pogut determinar l'ID de pàgina"
 
 #: confContactAdmin
 msgid "Please contact your Confluence administrator."
-msgstr ""
+msgstr "Poseu-vos en contacte amb l'administrador de Confluence."
 
 #: readErr
 msgid "Read Error"
-msgstr ""
+msgstr "Error de lectura"
 
 #: editingErr
 msgid "Editing Error"
-msgstr ""
+msgstr "Error d'edició"
 
 #: confExtEditNotPossible
 msgid ""
 "This diagram cannot be edited externally. Please try editing it while "
 "editing the page"
 msgstr ""
+"Aquest diagrama no es pot editar externament. Proveu d'editar-lo mentre "
+"editeu la pàgina"
 
 #: confEditedExt
 msgid "Diagram/Page edited externally"
-msgstr ""
+msgstr "S'ha editat el diagrama o la pàgina externament"
 
 #: diagNotFound
 msgid "Diagram Not Found"
-msgstr ""
+msgstr "No s'ha trobat el diagrama"
 
 #: confEditedExtRefresh
 msgid "Diagram/Page is edited externally. Please refresh the page."
 msgstr ""
+"S'ha editat el diagrama o la pàgina externament. Si us plau refresqueu la "
+"pàgina."
 
 #: confCannotEditDraftDelOrExt
 msgid ""
 "Cannot edit diagrams in a draft page, diagram is deleted from the page, or "
 "diagram is edited externally. Please check the page."
 msgstr ""
+"No es poden editar esquemes d'una pàgina d'esborrany, si el diagrama s'ha "
+"suprimit de la pàgina o si el diagrama s'ha editat externament. Comproveu la "
+"pàgina."
 
 #: retBack
 msgid "Return back"
-msgstr ""
+msgstr "Torna"
 
 #: confDiagNotPublished
 msgid "The diagram does not belong to a published page"
-msgstr ""
+msgstr "El diagrama no pertany a cap pàgina publicada"
 
 #: createdByDraw
 msgid "Created by draw.io"
-msgstr ""
+msgstr "Creat per draw.io"
 
 #: filenameShort
 msgid "Filename too short"
-msgstr ""
+msgstr "El nom del fitxer és massa curt"
 
 #: invalidChars
 msgid "Invalid characters"
-msgstr ""
+msgstr "Caràcters no vàlids"
 
 #: alreadyExst
 msgid "{1} already exists"
-msgstr ""
+msgstr "{1} ja existeix"
 
 #: draftReadErr
 msgid "Draft Read Error"
-msgstr ""
+msgstr "Error de lectura de l'esborrany"
 
 #: diagCantLoad
 msgid "Diagram cannot be loaded"
-msgstr ""
+msgstr "No s'ha pogut carregar el diagrama"
 
 #: draftWriteErr
 msgid "Draft Write Error"
-msgstr ""
+msgstr "Error d'escriptura de l'esborrany"
 
 #: draftCantCreate
 msgid "Draft could not be created"
-msgstr ""
+msgstr "No s'ha pogut crear l'esborrany"
 
 #: confDuplName
 msgid "Duplicate diagram name detected. Please pick another name."
 msgstr ""
+"S'ha detectat que el nom de l'esquema està duplicat. Trieu un altre nom."
 
 #: confSessionExpired
 msgid "Looks like your session expired. Log in again to keep working."
 msgstr ""
+"Sembla que la vostra sessió ha caducat. Torneu a iniciar la sessió de nou "
+"per continuar treballant."
 
 #: login
 msgid "Login"
-msgstr ""
+msgstr "Inicia la sessió"
 
 #: drawPrev
 msgid "draw.io preview"
-msgstr ""
+msgstr "Previsualització del draw.io"
 
 #: drwaDiag
 msgid "draw.io diagram"
-msgstr ""
+msgstr "Diagrama del draw.io\n"
 
 #: unknownErr
 msgid "Unkown Error"
-msgstr ""
+msgstr "Error desconegut"
 
 #: invalidCallFnNotFound
 msgid "Invalid Call: {1} not found"
@@ -3579,7 +3611,7 @@ msgstr ""
 
 #: anonymous
 msgid "Anonymous"
-msgstr ""
+msgstr "Anònim"
 
 #: confGotoPage
 msgid "Go to containing page"
@@ -3587,15 +3619,15 @@ msgstr ""
 
 #: showComments
 msgid "Show Comments"
-msgstr ""
+msgstr "Mostra els comentaris"
 
 #: confError
 msgid "Error: {1}"
-msgstr ""
+msgstr "Error: {1}"
 
 #: gliffyImport
 msgid "Gliffy Import"
-msgstr ""
+msgstr "Importa de Gliffy\n"
 
 #: gliffyImportInst1
 msgid ""
@@ -3610,19 +3642,19 @@ msgstr ""
 
 #: startImport
 msgid "Start Import"
-msgstr ""
+msgstr "Inicia l'importació"
 
 #: drawConfig
 msgid "draw.io Configuration"
-msgstr ""
+msgstr "Configuració del draw.io"
 
 #: customLib
 msgid "Custom Libraries"
-msgstr ""
+msgstr "Biblioteques personalitzades"
 
 #: customTemp
 msgid "Custom Templates"
-msgstr ""
+msgstr "Plantilles personalitzades\n"
 
 #: pageIdsExp
 msgid "Page IDs Export"
@@ -3635,7 +3667,7 @@ msgstr ""
 #: working
 msgctxt "working"
 msgid "Working"
-msgstr ""
+msgstr "S'està treballant"
 
 #: drawConfigNotFoundInst
 msgid ""
@@ -3659,15 +3691,15 @@ msgstr ""
 
 #: thisPage
 msgid "this page"
-msgstr ""
+msgstr "aquesta pàgina\n"
 
 #: curCustLib
 msgid "Current Custom Libraries"
-msgstr ""
+msgstr "Biblioteques personalitzades actuals\n"
 
 #: libName
 msgid "Library Name"
-msgstr ""
+msgstr "Nom de la biblioteca"
 
 #: drawConfID
 msgid "draw.io Config ID"
@@ -3676,10 +3708,11 @@ msgstr ""
 #: addLibInst
 msgid "Click the \"Add Library\" button to upload a new library."
 msgstr ""
+"Feu clic al botó \"Afegeix una biblioteca\" per pujar una nova biblioteca."
 
 #: addLib
 msgid "Add Library"
-msgstr ""
+msgstr "Afegeix una biblioteca"
 
 #: customTempInst1
 msgid "Custom templates are draw.io diagrams saved in children pages of"
@@ -3691,7 +3724,7 @@ msgstr ""
 
 #: tempsPage
 msgid "Templates page"
-msgstr ""
+msgstr "Pàgina de plantilles"
 
 #: pageIdsExpInst1
 msgid "Click the \"Start Export\" button to export all pages IDs."
@@ -3705,7 +3738,7 @@ msgstr ""
 
 #: startExp
 msgid "Start Export"
-msgstr ""
+msgstr "Inicia l'exportació"
 
 #: refreshDrawIndex
 msgid "Refresh draw.io Diagrams Index"
@@ -3835,15 +3868,15 @@ msgstr ""
 
 #: confAErrOccured
 msgid "An error occurred!"
-msgstr ""
+msgstr "S'ha produït un error."
 
 #: savedSucc
 msgid "Saved successfully"
-msgstr ""
+msgstr "S'ha desat correctament."
 
 #: confASaveFailedErr
 msgid "Saving Failed (Unexpected Error)"
-msgstr ""
+msgstr "S'ha produït un error en desar (error inesperat)"
 
 #: character
 msgid "Character"
@@ -3871,39 +3904,41 @@ msgstr ""
 
 #: confANoCustLib
 msgid "No Custom Libraries"
-msgstr ""
+msgstr "No hi ha biblioteques personalitzades"
 
 #: delFailed
 msgid "Delete failed!"
-msgstr ""
+msgstr "Ha fallat l'esborrat"
 
 #: showID
 msgid "Show ID"
-msgstr ""
+msgstr "Mostra l'identificador"
 
 #: confAIncorrectLibFileType
 msgid "Incorrect file type. Libraries should be XML files."
 msgstr ""
+"El tipus de fitxer no és correcte. Les biblioteques haurien de ser fitxers "
+"XML."
 
 #: uploading
 msgid "Uploading"
-msgstr ""
+msgstr "S'està pujant"
 
 #: confALibExist
 msgid "This library already exists"
-msgstr ""
+msgstr "La biblioteca ja existeix"
 
 #: confAUploadSucc
 msgid "Uploaded successfully"
-msgstr ""
+msgstr "S'ha pujat correctament"
 
 #: confAUploadFailErr
 msgid "Upload Failed (Unexpected Error)"
-msgstr ""
+msgstr "S'ha produït un error en la pujada (error inesperat)"
 
 #: hiResPreview
 msgid "High Res Preview"
-msgstr ""
+msgstr "Previsualització en alta definició"
 
 #: officeNotLoggedGD
 msgid ""
@@ -3917,39 +3952,39 @@ msgstr ""
 
 #: pickODFile
 msgid "Pick OneDrive File"
-msgstr ""
+msgstr "Seleccioneu el fitxer de OneDrive"
 
 #: pickGDriveFile
 msgid "Pick Google Drive File"
-msgstr ""
+msgstr "Seleccioneu el fitxer de Google Drive"
 
 #: pickDeviceFile
 msgid "Pick Device File"
-msgstr ""
+msgstr "Seleccioneu el fitxer del dispositiu"
 
 #: vsdNoConfig
 msgid "\"vsdurl\" is not configured"
-msgstr ""
+msgstr "No s'ha configurat \"vsdurl\""
 
 #: ruler
 msgid "Ruler"
-msgstr ""
+msgstr "Regle"
 
 #: units
 msgid "Units"
-msgstr ""
+msgstr "Unitats"
 
 #: points
 msgid "Points"
-msgstr ""
+msgstr "Punts"
 
 #: inches
 msgid "Inches"
-msgstr ""
+msgstr "Polzades"
 
 #: millimeters
 msgid "Millimeters"
-msgstr ""
+msgstr "Mil·límetres"
 
 #: confEditDraftDelOrExt
 msgid ""
@@ -4074,7 +4109,7 @@ msgid "Diagrams Online"
 msgstr "Diagrames en línia"
 
 msgid "draw.io is free online diagramming software"
-msgstr "draw.io és un editor de diagrames en línia gratuït."
+msgstr "draw.io és un editor de diagrames en línia gratuït"
 
 msgid ""
 "draw.io is free online diagramming software built around Google Drive(TM), "
