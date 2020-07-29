@@ -3,24 +3,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-15 13:15+0200\n"
+"POT-Creation-Date: 2020-07-29 22:42+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.3.0\n"
 
-msgid "English"
-msgstr "Catalan"
-
-msgid "en"
-msgstr "ca"
+#: about
+msgid "About "
+msgstr "Quant al "
 
 #: aboutDrawio
 msgid "About draw.io"
-msgstr "Sobre draw.io"
+msgstr "Quant al draw.io"
 
 #: accessDenied
 msgid "Access Denied"
@@ -73,7 +71,7 @@ msgstr "Afegeix al dibuix actual"
 
 #: addWaypoint
 msgid "Add Waypoint"
-msgstr "Afegeix Waypoint"
+msgstr "Afegeix una coordenada"
 
 #: adjustTo
 msgid "Adjust to"
@@ -129,7 +127,7 @@ msgstr "Arc"
 
 #: areYouSure
 msgid "Are you sure?"
-msgstr "N'esteu segurs?"
+msgstr "Esteu segur?"
 
 #: ensureDataSaved
 msgid "Please ensure your data is saved before closing."
@@ -294,7 +292,7 @@ msgstr "Amplada de la vora"
 
 #: bottom
 msgid "Bottom"
-msgstr "A baix"
+msgstr "Inferior"
 
 #: bottomAlign
 msgid "Bottom Align"
@@ -302,11 +300,11 @@ msgstr "Alineació inferior"
 
 #: bottomLeft
 msgid "Bottom Left"
-msgstr "A baix esquerra"
+msgstr "Inferior esquerra"
 
 #: bottomRight
 msgid "Bottom Right"
-msgstr "A baix dreta"
+msgstr "Inferior dreta"
 
 #: bpmn
 msgid "BPMN"
@@ -373,6 +371,10 @@ msgstr "Canvia l'emmagatzematge"
 msgid "Changes have not been saved"
 msgstr "No s'han desat els canvis"
 
+#: classDiagram
+msgid "Class Diagram"
+msgstr ""
+
 #: userJoined
 msgid "{1} has joined"
 msgstr "{1} s'ha afegit"
@@ -424,6 +426,22 @@ msgstr "CSV"
 msgid "Dark"
 msgstr "Fosc"
 
+#: diagramXmlDesc
+msgid "XML File"
+msgstr "Fitxer XML"
+
+#: diagramHtmlDesc
+msgid "HTML File"
+msgstr "Fitxer HTML"
+
+#: diagramPngDesc
+msgid "Editable Bitmap Image"
+msgstr "Imatge de mapa de bits editable"
+
+#: diagramSvgDesc
+msgid "Editable Vector Image"
+msgstr "Imatge vectorial editable"
+
 #: didYouMeanToExportToPdf
 msgid "Did you mean to export to PDF?"
 msgstr "Voleu exportar-ho a PDF?"
@@ -435,6 +453,10 @@ msgid ""
 msgstr ""
 "S'ha trobat un esborrany per a '{1}'. Carrega'l a l'editor o descarta'l per "
 "continuar."
+
+#: selectDraft
+msgid "Select a draft to continue editing:"
+msgstr ""
 
 #: dragAndDropNotSupported
 msgid ""
@@ -471,7 +493,7 @@ msgstr "Esborra l'estil predeterminat"
 
 #: clearWaypoints
 msgid "Clear Waypoints"
-msgstr "Esborra els waypoint"
+msgstr "Esborra les coordenades"
 
 #: clipart
 msgid "Clipart"
@@ -528,6 +550,10 @@ msgstr "Comentaris/Notes"
 #: compress
 msgid "Compress"
 msgstr "Comprimeix"
+
+#: configuration
+msgid "Configuration"
+msgstr "Configuració"
 
 #: connect
 msgid "Connect"
@@ -647,15 +673,15 @@ msgstr "Predeterminat"
 
 #: delete
 msgid "Delete"
-msgstr "Elimina"
+msgstr "Suprimeix"
 
 #: deleteColumn
 msgid "Delete Column"
-msgstr "Elimina la columna"
+msgstr "Suprimeix la columna"
 
 #: deleteLibrary401
 msgid "Insufficient permissions to delete this library"
-msgstr "Permisos insuficients per eliminar aquesta biblioteca"
+msgstr "No teniu permisos suficients per a suprimir aquesta biblioteca"
 
 #: deleteLibrary404
 msgid "Selected library could not be found"
@@ -675,7 +701,7 @@ msgstr ""
 
 #: deleteRow
 msgid "Delete Row"
-msgstr "Elimina la fila"
+msgstr "Suprimeix la fila"
 
 #: description
 msgid "Description"
@@ -757,6 +783,10 @@ msgstr "Distribueix"
 msgid "Done"
 msgstr "Finalitzat"
 
+#: doNotShowAgain
+msgid "Do not show again"
+msgstr "No ho tornis a mostrar"
+
 #: dotted
 msgid "Dotted"
 msgstr "Puntejat"
@@ -778,8 +808,8 @@ msgid "Download"
 msgstr "Descarrega"
 
 #: downloadDesktop
-msgid "Get draw.io Desktop"
-msgstr "Descarrega el draw.io per escriptori"
+msgid "Get Desktop"
+msgstr "Descarrega per a escriptori"
 
 #: downloadAs
 msgid "Download as"
@@ -915,7 +945,7 @@ msgstr "Google Imatges"
 
 #: imageSearch
 msgid "Image Search"
-msgstr "Buscador d'imatges"
+msgstr "Cerca d'imatges"
 
 #: eip
 msgid "EIP"
@@ -964,6 +994,10 @@ msgstr "Introduïu el valor"
 #: entityRelation
 msgid "Entity Relation"
 msgstr "Relació de l'entitat"
+
+#: entityRelationshipDiagram
+msgid "Entity Relationship Diagram"
+msgstr "Diagrama Entitat-Relació"
 
 #: error
 msgid "Error"
@@ -1099,7 +1133,7 @@ msgstr "Sol·licitud de funcions"
 
 #: feedback
 msgid "Feedback"
-msgstr "Opinió"
+msgstr "Comentaris"
 
 #: feedbackSent
 msgid "Feedback successfully sent."
@@ -1367,7 +1401,7 @@ msgstr "Fòrums de debat i ajuda"
 
 #: freehand
 msgid "Freehand"
-msgstr ""
+msgstr "A mà alçada"
 
 #: fromTemplate
 msgid "From Template"
@@ -1604,59 +1638,63 @@ msgstr "Disminueix el sagnat"
 
 #: insert
 msgid "Insert"
-msgstr "Afegeix"
+msgstr "Insereix"
 
 #: insertColumnBefore
 msgid "Insert Column Left"
-msgstr "Afegeix una columna a l'esquerra"
+msgstr "Insereix una columna a l'esquerra"
 
 #: insertColumnAfter
 msgid "Insert Column Right"
-msgstr "Afegeix una columna a la dreta"
+msgstr "Insereix una columna a la dreta"
 
 #: insertEllipse
 msgid "Insert Ellipse"
-msgstr "Afegeix una el·lipse"
+msgstr "Insereix una el·lipse"
 
 #: insertImage
 msgid "Insert Image"
-msgstr "Afegeix una imatge"
+msgstr "Insereix una imatge"
 
 #: insertHorizontalRule
 msgid "Insert Horizontal Rule"
-msgstr "Afegeix una regla horitzontal"
+msgstr "Insereix una regla horitzontal"
 
 #: insertLink
 msgid "Insert Link"
-msgstr "Afegeix un enllaç"
+msgstr "Insereix un enllaç"
 
 #: insertPage
 msgid "Insert Page"
-msgstr "Afegeix una pàgina"
+msgstr "Insereix una pàgina"
 
 #: insertRectangle
 msgid "Insert Rectangle"
-msgstr "Afegeix un rectangle"
+msgstr "Insereix un rectangle"
 
 #: insertRhombus
 msgid "Insert Rhombus"
-msgstr "Afegeix un rombe"
+msgstr "Insereix un rombe"
 
 #: insertRowBefore
 msgid "Insert Row Above"
-msgstr "Afegeix una fila amunt"
+msgstr "Insereix una fila al damunt"
 
 #: insertRowAfter
 msgid "Insert Row After"
-msgstr "Afegeix una fila avall"
+msgstr "Insereix una fila a sota"
 
 #: insertText
 msgid "Insert Text"
-msgstr "Afegeix text"
+msgstr "Insereix text"
 
 #: inserting
 msgid "Inserting"
-msgstr "Afegint"
+msgstr "S'està inserint"
+
+#: installApp
+msgid "Install App"
+msgstr "Instal·la l'aplicació"
 
 #: invalidFilename
 msgid ""
@@ -1897,6 +1935,10 @@ msgstr "Fes una còpia"
 msgid "Manual"
 msgstr "Manual"
 
+#: mermaid
+msgid "Mermaid"
+msgstr ""
+
 #: microsoftOffice
 msgid "Microsoft Office"
 msgstr "Microsoft Office"
@@ -2056,7 +2098,7 @@ msgstr "Sense revisions"
 
 #: noSearchResults
 msgid "No search results found"
-msgstr "La cerca no té resultats"
+msgstr "La s'ha trobat cap resultat"
 
 #: noPageContentOrNotSaved
 msgid "No anchors found on this page or it hasn't been saved yet"
@@ -2093,6 +2135,10 @@ msgstr "No connectat"
 #: note
 msgid "Note"
 msgstr "Nota"
+
+#: notSatisfiedWithImport
+msgid "Not satisfied with the import?"
+msgstr ""
 
 #: notUsingService
 msgid "Not using {1}?"
@@ -2185,6 +2231,10 @@ msgstr "Opcions"
 #: organic
 msgid "Organic"
 msgstr "Orgànic"
+
+#: orgChart
+msgid "Org Chart"
+msgstr ""
 
 #: orthogonal
 msgid "Orthogonal"
@@ -2340,7 +2390,7 @@ msgstr ""
 
 #: portrait
 msgid "Portrait"
-msgstr "Orientació vertical"
+msgstr "Vertical"
 
 #: position
 msgid "Position"
@@ -2392,7 +2442,7 @@ msgstr "Publica"
 
 #: quickStart
 msgid "Quick Start Video"
-msgstr "Inici ràpid vídeo"
+msgstr "Vídeo d'inici ràpid"
 
 #: rack
 msgid "Rack"
@@ -2472,15 +2522,15 @@ msgstr "Esborra el format"
 
 #: removeFromGroup
 msgid "Remove from Group"
-msgstr "Elimina del grup"
+msgstr "Suprimeix del grup"
 
 #: removeIt
 msgid "Remove {1}"
-msgstr "Elimina {1}"
+msgstr "Suprimeix {1}"
 
 #: removeWaypoint
 msgid "Remove Waypoint"
-msgstr "Elimina el waypoint"
+msgstr "Suprimeix la coordenada"
 
 #: rename
 msgid "Rename"
@@ -2640,9 +2690,13 @@ msgstr "Permisos insuficients per editar aquesta biblioteca"
 msgid "There was an error while saving the library"
 msgstr "Hi ha hagut un error desant la biblioteca"
 
+#: saveLibraryReadOnly
+msgid "Could not save library while read-only mode is active"
+msgstr ""
+
 #: saving
 msgid "Saving"
-msgstr "Desant"
+msgstr "S'està desant"
 
 #: scratchpad
 msgid "Scratchpad"
@@ -2654,11 +2708,11 @@ msgstr "Barres de desplaçament"
 
 #: search
 msgid "Search"
-msgstr "Cercar"
+msgstr "Cerca"
 
 #: searchShapes
 msgid "Search Shapes"
-msgstr "Cercar formes"
+msgstr "Cerca formes"
 
 #: selectAll
 msgid "Select All"
@@ -2704,9 +2758,9 @@ msgstr "Selecciona els vèrtexs"
 msgid "Send"
 msgstr "Envia"
 
-#: sendYourFeedbackToDrawIo
-msgid "Send your feedback to draw.io"
-msgstr "Envieu els vostres comentaris a draw.io"
+#: sendYourFeedback
+msgid "Send your feedback"
+msgstr "Envieu els vostres comentaris"
 
 #: serviceUnavailableOrBlocked
 msgid "Service unavailable or blocked"
@@ -2747,6 +2801,10 @@ msgstr "Comparteix"
 #: shareLink
 msgid "Link for shared editing"
 msgstr "Enllaç per a l'edició compartida"
+
+#: sharingAvailable
+msgid "Sharing available for Google Drive and OneDrive files."
+msgstr ""
 
 #: sharp
 msgid "Sharp"
@@ -2791,6 +2849,10 @@ msgstr "Visualitzador simple"
 #: size
 msgid "Size"
 msgstr "Mida"
+
+#: sketch
+msgid "Sketch"
+msgstr ""
 
 #: solid
 msgid "Solid"
@@ -2842,7 +2904,7 @@ msgstr "Recte"
 
 #: strikethrough
 msgid "Strikethrough"
-msgstr "Strikethrough"
+msgstr "Ratllat"
 
 #: strokeColor
 msgid "Line Color"
@@ -2867,6 +2929,10 @@ msgstr "Superíndex"
 #: support
 msgid "Support"
 msgstr "Ajuda"
+
+#: swimlaneDiagram
+msgid "Swimlane Diagram"
+msgstr ""
 
 #: sysml
 msgid "SysML"
@@ -2935,6 +3001,10 @@ msgstr "Vés enrere"
 #: toFront
 msgid "To Front"
 msgstr "Vés endavant"
+
+#: tooLargeUseDownload
+msgid "Too large, use download instead."
+msgstr ""
 
 #: toolbar
 msgid "Toolbar"
@@ -3106,7 +3176,7 @@ msgstr "Atenció"
 
 #: waypoints
 msgid "Waypoints"
-msgstr "Waypoints"
+msgstr "Coordenades"
 
 #: west
 msgid "West"
@@ -3591,13 +3661,9 @@ msgstr "Inicia la sessió"
 msgid "draw.io preview"
 msgstr "Previsualització del draw.io"
 
-#: drwaDiag
+#: drawDiag
 msgid "draw.io diagram"
 msgstr "Diagrama del draw.io\n"
-
-#: unknownErr
-msgid "Unkown Error"
-msgstr "Error desconegut"
 
 #: invalidCallFnNotFound
 msgid "Invalid Call: {1} not found"
@@ -3898,8 +3964,8 @@ msgstr ""
 
 #: confAConfSpaceDesc
 msgid ""
-"This space is used to store draw.io configuration files and custom "
-"libraries/templates"
+"This space is used to store draw.io configuration files and custom libraries/"
+"templates"
 msgstr ""
 
 #: confANoCustLib
@@ -4115,6 +4181,120 @@ msgstr ""
 
 #: confASavingLucidDiagImgFailed
 msgid "Extracting {2} diagram \"{1}\" image failed."
+msgstr ""
+
+#: confGetInfoFailed
+msgid "Fetching file info from {1} failed."
+msgstr ""
+
+#: confCheckCacheFailed
+msgid "Cannot get cached file info."
+msgstr ""
+
+#: confReadFileErr
+msgid "Cannot read \"{1}\" file from {2}."
+msgstr ""
+
+#: confSaveCacheFailed
+msgid "Unexpected error. Cannot save cached file"
+msgstr ""
+
+#: orgChartType
+msgid "Org Chart Type"
+msgstr ""
+
+#: linear
+msgid "Linear"
+msgstr ""
+
+#: hanger2
+msgid "Hanger 2"
+msgstr ""
+
+#: hanger4
+msgid "Hanger 4"
+msgstr ""
+
+#: fishbone1
+msgid "Fishbone 1"
+msgstr ""
+
+#: fishbone2
+msgid "Fishbone 2"
+msgstr ""
+
+#: 1ColumnLeft
+msgid "Single Column Left"
+msgstr ""
+
+#: 1ColumnRight
+msgid "Single Column Right"
+msgstr ""
+
+#: smart
+msgid "Smart"
+msgstr ""
+
+#: parentChildSpacing
+msgid "Parent Child Spacing"
+msgstr ""
+
+#: siblingSpacing
+msgid "Sibling Spacing"
+msgstr ""
+
+#: confNoPermErr
+msgid ""
+"Sorry, you don't have enough permissions to view this embedded diagram from "
+"page {1}"
+msgstr ""
+
+#: copyAsImage
+msgid "Copy as Image"
+msgstr ""
+
+#: lucidImport
+msgid "Lucidchart Import"
+msgstr ""
+
+#: lucidImportInst1
+msgid "Click the \"Start Import\" button to import all Lucidchart diagrams."
+msgstr ""
+
+#: installFirst
+msgid "Please install {1} first."
+msgstr ""
+
+#: drawioChromeExt
+msgid "draw.io Chrome Extension"
+msgstr ""
+
+#: loginFirstThen
+msgid "Please login to {1} first, then {2}"
+msgstr ""
+
+#: errFetchDocList
+msgid "Error: Couldn't fetch documents list."
+msgstr ""
+
+#: builtinPlugins
+msgid "Built-in Plugins"
+msgstr ""
+
+#: extPlugins
+msgid "External Plugins"
+msgstr ""
+
+#: backupFound
+msgid "Backup file found"
+msgstr ""
+
+#: chromeOnly
+msgid "This feature only works in Google Chrome"
+msgstr ""
+
+#: msgDeleted
+msgid "This message has been deleted."
 msgstr ""
 
 msgid "Diagrams Online"
