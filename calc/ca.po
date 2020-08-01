@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 19:15+0200\n"
+"POT-Creation-Date: 2020-08-02 01:17+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Accelerator-Marker: &\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #. {@Appx_ShortDisplayName@}{StringCategory="Feature Title"} This is the title of the official application when published through Windows Store.
 #: AppName
@@ -84,6 +84,7 @@ msgstr "Copia"
 
 #. Paste context menu string
 #: pasteMenuItem
+msgctxt "pasteMenuItem"
 msgid "Paste"
 msgstr "Enganxa"
 
@@ -141,6 +142,7 @@ msgstr ""
 
 #. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
 #: expButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "expButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
 msgid "X"
 msgstr ""
 
@@ -167,6 +169,7 @@ msgstr ""
 
 #. {Locked}This is the value from the VirtualKey enum that maps to this button
 #: equalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "equalButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
 msgid "Enter"
 msgstr ""
 
@@ -238,25 +241,21 @@ msgstr ""
 #. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
 #: num1Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
 msgctxt "num1Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
-"num1Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
 msgid "1"
 msgstr ""
 
 #. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
 #: num2Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
-msgctxt "num2Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
 msgid "2"
 msgstr ""
 
 #. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
 #: num3Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
-msgctxt "num3Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
 msgid "3"
 msgstr ""
 
 #. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
 #: num4Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
-msgctxt "num4Button.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
 msgid "4"
 msgstr ""
 
@@ -1603,8 +1602,9 @@ msgstr "Divideix entre"
 msgid "Multiply by"
 msgstr "Multiplica per"
 
-#. Screen reader prompt for the invert button on the scientific operator keypad
+#. Screen reader prompt for the equals button on the scientific operator keypad
 #: equalButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "equalButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
 msgid "Equals"
 msgstr "És igual a"
 
@@ -1875,15 +1875,13 @@ msgstr "Torna a la visualització completa"
 
 #. This is the tool tip automation name for the Always-on-Top button when in normal mode.
 #: EnterAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
-msgctxt "EnterAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
-msgid "Keep on top"
-msgstr "Mantén visible"
+msgid "Keep on top (Alt+Up)"
+msgstr "Mantén visible (Alt+Amunt)"
 
 #. This is the tool tip automation name for the Always-on-Top button when in Always-on-Top mode.
 #: ExitAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
-msgctxt "ExitAlwaysOnTopButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
-msgid "Back to full view"
-msgstr "Torna a la visualització completa"
+msgid "Back to full view (Alt+Down)"
+msgstr "Torna a la visualització completa (Alt+Avall)"
 
 #. Screen reader prompt for the Unit Converter Value1 i.e. top number field. %1 = DisplayValue, %2 = Unit field localized name.
 #: Format_ValueFrom
@@ -3063,11 +3061,13 @@ msgstr "Graus"
 
 #. A measurement unit for Angle.
 #: UnitName_Radian
+msgctxt "UnitName_Radian"
 msgid "Radians"
 msgstr "Radians"
 
 #. A measurement unit for Angle.
 #: UnitName_Gradian
+msgctxt "UnitName_Gradian"
 msgid "Gradians"
 msgstr "Gradians"
 
@@ -3500,6 +3500,11 @@ msgstr "Enrere"
 msgid "Microsoft Software License Terms"
 msgstr "Termes de llicència per al programari de Microsoft"
 
+#. Label displayed next to upcoming features
+#: PreviewTag.Text
+msgid "Preview"
+msgstr "Visualització prèvia"
+
 #. Displayed on a link to the Microsoft Privacy Statement on the About panel
 #: AboutControlPrivacyStatement.Text
 msgid "Microsoft Privacy Statement"
@@ -3856,6 +3861,7 @@ msgstr "Mode de càlcul de dates"
 
 #. Automation name for the group of controls for history and memory lists.
 #: DockPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "DockPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
 msgid "History and Memory lists"
 msgstr "Llistes de memòria i historial"
 
@@ -4064,12 +4070,6 @@ msgstr "No s'han pogut actualitzar els tipus"
 msgid "AB"
 msgstr "AB"
 
-#. AccessKey for the Date Calculation mode navbar item. {StringCategory="Accelerator"}
-#: DateCalculationModeAccessKey
-msgctxt "DateCalculationModeAccessKey"
-msgid "4"
-msgstr "4"
-
 #. Access key for the History button. {StringCategory="Accelerator"}
 #: HistoryButton.AccessKey
 msgctxt "HistoryButton.AccessKey"
@@ -4087,24 +4087,6 @@ msgstr "M"
 msgctxt "NavView.AccessKey"
 msgid "H"
 msgstr "H"
-
-#. AccessKey for the Programmer mode navbar item. {StringCategory="Accelerator"}
-#: ProgrammerModeAccessKey
-msgctxt "ProgrammerModeAccessKey"
-msgid "3"
-msgstr "3"
-
-#. AccessKey for the Scientific mode navbar item. {StringCategory="Accelerator"}
-#: ScientificModeAccessKey
-msgctxt "ScientificModeAccessKey"
-msgid "2"
-msgstr "2"
-
-#. AccessKey for the Standard mode navbar item. {StringCategory="Accelerator"}
-#: StandardModeAccessKey
-msgctxt "StandardModeAccessKey"
-msgid "1"
-msgstr "1"
 
 #. AccessKey for the angle converter navbar item. {StringCategory="Accelerator"}
 #: CategoryName_AngleAccessKey
@@ -4459,9 +4441,9 @@ msgstr "cotangent hiperbòlica inversa"
 msgid "Cube Root"
 msgstr "Arrel cúbica"
 
-#. Name for the logbasex function. Used by screen readers.
-#: Logx
-msgid "Base Log"
+#. Name for the logbasey function. Used by screen readers.
+#: Logy
+msgid "Log Base"
 msgstr "Logaritme en base"
 
 #. Name for the absolute value function. Used by screen readers.
@@ -4557,14 +4539,14 @@ msgstr "Desplaça el resultat del càlcul a la dreta"
 msgid "Calculation failed"
 msgstr "No s'ha pogut calcular"
 
-#. Screen reader prompt for the logBaseX button
-#: logBaseX.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
-msgid "Log base X"
-msgstr "Logaritme en base X"
+#. Screen reader prompt for the logBaseY button
+#: logBaseY.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Log base Y"
+msgstr "Logaritme en base Y"
 
 #. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
-#: logBaseX.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
-msgctxt "logBaseX.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
+#: logBaseY.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord
+msgctxt "logBaseY.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyShiftChord"
 msgid "L"
 msgstr ""
 
@@ -4578,6 +4560,18 @@ msgstr "Trigonometria"
 #: funcButton.Text
 msgid "Function"
 msgstr "Funció"
+
+#. Displayed on the button that contains a flyout for the inequality functions.
+#: inequalityButton.Text
+msgctxt "inequalityButton.Text"
+msgid "Inequalities"
+msgstr "Desigualtats"
+
+#. Screen reader prompt for the Inequalities button
+#: inequalityButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "inequalityButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Inequalities"
+msgstr "Desigualtats"
 
 #. Displayed on the button that contains a flyout for the bitwise functions in programmer mode.
 #: bitwiseButton.Text
@@ -4992,3 +4986,1171 @@ msgstr "Taulers d'operadors de programador"
 #: MostSignificantBit
 msgid "most significant bit"
 msgstr "bit més significatiu"
+
+#. Name of the Graphing mode of the Calculator app. Displayed in the navigation menu.
+#: GraphingCalculatorModeText
+msgid "Graphing"
+msgstr "Gràfics"
+
+#. {Locked}This is the value from the VirtualKey enum that maps to this button
+#: plotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "plotButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "Enter"
+msgstr ""
+
+#. Screen reader prompt for the plot button on the graphing calculator operator keypad
+#: plotButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Plot"
+msgstr "Traçat"
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: xButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "xButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "X"
+msgstr ""
+
+#. {Locked}This is the value that comes from the VirtualKey enum that represents the button. This value is not localized and must be one value that comes from the Windows::System::VirtualKey enum.
+#: yButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey
+msgctxt "yButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKey"
+msgid "Y"
+msgstr ""
+
+#. {Locked}This is the character that should trigger this button. Note that it is a character and not a key, so it does not come from the Windows::System::VirtualKey enum.
+#: graphingPowerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character
+msgctxt "graphingPowerButton.[using:CalculatorApp.Common]KeyboardShortcutManager.Character"
+msgid "^"
+msgstr ""
+
+#. {Locked}This is the shortcut for the graph view button.
+#: graphViewButton.[using:CalculatorApp.Common]KeyboardShortcutManager.VirtualKeyControlChord
+msgid "Home"
+msgstr ""
+
+#. This is the tool tip automation name for the Calculator graph view button.
+#: graphViewButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Refresh view automatically (Ctrl + 0)"
+msgstr "Actualitza la visualització automàticament (Ctrl + 0)"
+
+#. Screen reader prompt for the graph view button.
+#: graphViewButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Graph View"
+msgstr "Visualització del gràfic"
+
+#. Announcement used in Graphing Calculator when graph view button is clicked and automatic best fit is set
+#: GraphViewAutomaticBestFitAnnouncement
+msgid "Automatic Best Fit"
+msgstr "Ajustament perfecte automàtic"
+
+#. Announcement used in Graphing Calculator when graph view button is clicked and manual adjustment is set
+#: GraphViewManualAdjustmentAnnouncement
+msgid "Manual Adjustment"
+msgstr "Ajustament manual"
+
+#. Announcement used in Graphing Calculator when graph view button is clicked and automatic best fit is set, resetting the graph
+#: GridResetAnnouncement
+msgid "Graph view has been reset"
+msgstr "S'ha reinicialitzat la visualització del gràfic"
+
+#. This is the tool tip automation name for the Calculator zoom in button.
+#: zoomInButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Zoom In (Ctrl + plus)"
+msgstr "Amplia (Control+Més)"
+
+#. Screen reader prompt for the zoom in button.
+#: zoomInButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Zoom In"
+msgstr "Amplia"
+
+#. This is the tool tip automation name for the Calculator zoom out button.
+#: zoomOutButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Zoom Out (Ctrl + minus)"
+msgstr "Redueix (Control+Menys)"
+
+#. Screen reader prompt for the zoom out button.
+#: zoomOutButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Zoom Out"
+msgstr "Redueix"
+
+#. Placeholder text for the equation input button
+#: EquationTextBoxAddPanel.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Add Equation"
+msgstr "Afegeix una equació"
+
+#. If there is an error in the sharing action will display a dialog with this text.
+#: ShareActionErrorMessage
+msgid "Unable to share at this time."
+msgstr "No es pot compartir en aquest moment."
+
+#. Used on the dismiss button of the share action error dialog.
+#: ShareActionErrorOk
+msgid "OK"
+msgstr "D'acord"
+
+#. Sent as part of the shared content. The title for the share.
+#: ShareActionTitle
+msgid "Look what I graphed with Windows Calculator"
+msgstr "Mira el gràfic que he fet amb la Calculadora del Windows"
+
+#. Header that appears over the equations section when sharing
+#: EquationsShareHeader
+msgid "Equations"
+msgstr "Equacions"
+
+#. Header that appears over the variables section when sharing
+#: VariablesShareHeader
+msgctxt "VariablesShareHeader"
+msgid "Variables"
+msgstr "Variables"
+
+#. Alt text for the graph image when output via Share
+#: GraphImageAltText
+msgid "Image of a graph with equations"
+msgstr "Imatge d'un gràfic amb equacions"
+
+#. Header text for variables area
+#: VaiablesHeader.Text
+msgctxt "VaiablesHeader.Text"
+msgid "Variables"
+msgstr "Variables"
+
+#. Label text for the step text box
+#: StepTextBlock.Text
+msgid "Step"
+msgstr "Pas"
+
+#. Label text for the min text box
+#: MinTextBlock.Text
+msgid "Min"
+msgstr "Mín."
+
+#. Label text for the max text box
+#: MaxTextBlock.Text
+msgid "Max"
+msgstr "Màx."
+
+#. Label for the Line Color section of the style picker
+#: LineColorText.Text
+msgid "Color"
+msgstr "Color"
+
+#. Label for the Line Style section of the style picker
+#: StyleChooserBoxHeading.Text
+msgid "Style"
+msgstr "Estil"
+
+#. Title for KeyGraphFeatures Control
+#: KeyGraphFeaturesLabel.Text
+msgid "Function analysis"
+msgstr "Anàlisi de funcions"
+
+#. Message displayed when the graph does not have any horizontal asymptotes
+#: KGFHorizontalAsymptotesNone
+msgid "The function does not have any horizontal asymptotes."
+msgstr "La funció no té cap asímptota horitzontal."
+
+#. Message displayed when the graph does not have any inflection points
+#: KGFInflectionPointsNone
+msgid "The function does not have any inflection points."
+msgstr "La funció no té cap punt d'inflexió."
+
+#. Message displayed when the graph does not have any maxima
+#: KGFMaximaNone
+msgid "The function does not have any maxima points."
+msgstr "La funció no té cap punt màxim."
+
+#. Message displayed when the graph does not have any minima
+#: KGFMinimaNone
+msgid "The function does not have any minima points."
+msgstr "La funció no té cap punt mínim."
+
+#. String describing constant monotonicity of a function
+#: KGFMonotonicityConstant
+msgid "Constant"
+msgstr "Constant"
+
+#. String describing decreasing monotonicity of a function
+#: KGFMonotonicityDecreasing
+msgid "Decreasing"
+msgstr "Decreixent"
+
+#. Error displayed when monotonicity cannot be determined
+#: KGFMonotonicityError
+msgid "Unable to determine the monotonicity of the function."
+msgstr "No es pot determinar la monotonia de la funció."
+
+#. String describing increasing monotonicity of a function
+#: KGFMonotonicityIncreasing
+msgid "Increasing"
+msgstr "Creixent"
+
+#. Error displayed when monotonicity is unknown
+#: KGFMonotonicityUnknown
+msgid "The monotonicity of the function is unknown."
+msgstr "La monotonia de la funció és desconeguda."
+
+#. Message displayed when the graph does not have any oblique asymptotes
+#: KGFObliqueAsymptotesNone
+msgid "The function does not have any oblique aysmptotes."
+msgstr "La funció no té cap asímptota obliqua."
+
+#. Error displayed when parity is cannot be determined
+#: KGFParityError
+msgid "Unable to determine the parity of the function."
+msgstr "No es pot determinar la paritat de la funció."
+
+#. Message displayed with the function parity is even
+#: KGFParityEven
+msgid "The function is even."
+msgstr "La funció és parella."
+
+#. Message displayed with the function parity is neither even nor odd
+#: KGFParityNeither
+msgid "The function is neither even nor odd."
+msgstr "La funció no és parella ni imparella."
+
+#. Message displayed with the function parity is odd
+#: KGFParityOdd
+msgid "The function is odd."
+msgstr "La funció és imparella."
+
+#. Error displayed when parity is unknown
+#: KGFParityUnknown
+msgid "The function parity is unknown."
+msgstr "La paritat de la funció és desconeguda."
+
+#. Error displayed when periodicity is not supported
+#: KGFPeriodicityError
+msgid "Periodicity is not supported for this function."
+msgstr "La periodicitat no és compatible amb aquesta funció."
+
+#. Message displayed with the function periodicity is not periodic
+#: KGFPeriodicityNotPeriodic
+msgid "The function is not periodic."
+msgstr "La funció no és periòdica."
+
+#. Message displayed with the function periodicity is unknown
+#: KGFPeriodicityUnknown
+msgid "The function periodicity is unknown."
+msgstr "La periodicitat de la funció és desconeguda."
+
+#. Error displayed when analysis features cannot be calculated
+#: KGFTooComplexFeaturesError
+msgid "These features are too complex for Calculator to calculate:"
+msgstr "Aquestes característiques són massa complexes per a la Calculadora:"
+
+#. Message displayed when the graph does not have any vertical asymptotes
+#: KGFVerticalAsymptotesNone
+msgid "The function does not have any vertical asymptotes."
+msgstr "La funció no té cap asímptota vertical."
+
+#. Message displayed when the graph does not have any x-intercepts
+#: KGFXInterceptNone
+msgid "The function does not have any x-intercepts."
+msgstr "La funció no té cap intersecció x."
+
+#. Message displayed when the graph does not have any y-intercepts
+#: KGFYInterceptNone
+msgid "The function does not have any y-intercepts."
+msgstr "La funció no té cap intersecció y."
+
+#. Title for KeyGraphFeatures Domain Property
+#: Domain
+msgid "Domain"
+msgstr "Domini"
+
+#. Title for KeyGraphFeatures Horizontal Aysmptotes Property
+#: HorizontalAsymptotes
+msgid "Horizontal Asymptotes"
+msgstr "Asímptotes horitzontals"
+
+#. Title for KeyGraphFeatures Inflection Points Property
+#: InflectionPoints
+msgid "Inflection Points"
+msgstr "Punts d'inflexió"
+
+#. Error displayed when graph analysis is not supported or had an error.
+#: KGFAnalysisNotSupported
+msgid "Analysis is not supported for this function."
+msgstr "L'anàlisi no és compatible amb aquesta funció."
+
+#. Title for KeyGraphFeatures Maxima Property
+#: Maxima
+msgid "Maxima"
+msgstr "Màxims"
+
+#. Title for KeyGraphFeatures Minima Property
+#: Minima
+msgid "Minima"
+msgstr "Mínims"
+
+#. Title for KeyGraphFeatures Monotonicity Property
+#: Monotonicity
+msgid "Monotonicity"
+msgstr "Monotonia"
+
+#. Title for KeyGraphFeatures Oblique Asymptotes Property
+#: ObliqueAsymptotes
+msgid "Oblique Asymptotes"
+msgstr "Asímptotes obliqües"
+
+#. Title for KeyGraphFeatures Parity Property
+#: Parity
+msgid "Parity"
+msgstr "Paritat"
+
+#. Title for KeyGraphFeatures Periodicity Property
+#: Periodicity
+msgid "Period"
+msgstr "Període"
+
+#. Title for KeyGraphFeatures Range Property
+#: Range
+msgid "Range"
+msgstr "Interval"
+
+#. Title for KeyGraphFeatures Vertical Asymptotes Property
+#: VerticalAsymptotes
+msgid "Vertical Asymptotes"
+msgstr "Asímptotes verticals"
+
+#. Title for KeyGraphFeatures XIntercept Property
+#: XIntercept
+msgid "X-Intercept"
+msgstr "Intersecció X"
+
+#. Title for KeyGraphFeatures YIntercept Property
+#: YIntercept
+msgid "Y-Intercept"
+msgstr "Intersecció Y"
+
+#: KGFAnalysisCouldNotBePerformed
+msgid "Analysis could not be performed for the function."
+msgstr "No s'ha pogut realitzar l'anàlisi per a la funció."
+
+#. Error displayed when Domain is not returned from the analyzer.
+#: KGFDomainNone
+msgid "Unable to calculate the domain for this function."
+msgstr "No es pot calcular el domini per a aquesta funció."
+
+#. Error displayed when Range is not returned from the analyzer.
+#: KGFRangeNone
+msgid "Unable to calculate the range for this function."
+msgstr "No es pot calcular l'interval d'aquesta funció."
+
+#. Error that occurs during graphing when the number is too large. To see this error, assign a large number to variable a, then keep doing "a:=a*a" until it happens.
+#: Overflow
+msgid "Overflow (the number is too large)"
+msgstr "Sobreeiximent (el nombre és massa gran)"
+
+#. Error that occurs during graphing when radians is required.
+#: RequireRadiansMode
+msgid "Radians mode is required to graph this equation."
+msgstr "Es requereix el mode radians per crear el gràfic d'aquesta equació."
+
+#. Error that occurs during graphing when the equation is too complex.
+#: TooComplexToSolve
+msgid "This function is too complex to graph"
+msgstr "Aquesta funció és massa complexa per poder crear-ne un gràfic"
+
+#. Error that occurs during graphing when degrees is required
+#: RequireDegreesMode
+msgid "Degrees mode is required to graph this function"
+msgstr "El mode de graus és necessari per crear el gràfic d'aquesta funció"
+
+#. Error that occurs during graphing when a factorial function has an invalid argument.
+#: FactorialInvalidArgument
+msgid "The factorial function has an invalid argument"
+msgstr "La funció factorial té un argument no vàlid"
+
+#. Error that occurs during graphing when a factorial has a large n
+#: FactorialCannotPerformOnLargeNumber
+msgid "The factorial function has an argument that is too large to graph"
+msgstr ""
+"La funció factorial té un argument massa gran per poder-ne crear un gràfic"
+
+#. Error that occurs during graphing when modulo is used with a float.
+#: ModuloCannotPerformOnFloat
+msgid "Modulo can only be used with whole numbers"
+msgstr "El mòdul només es pot utilitzar amb nombres enters"
+
+#. Error that occurs during graphing when the equation has no solution.
+#: EquationHasNoSolution
+msgid "The equation has no solution"
+msgstr "L'equació no té solució"
+
+#. Error that occurs during graphing when a divison by zero occurs.
+#: DivideByZero
+msgid "Cannot divide by zero"
+msgstr "No es pot dividir per zero"
+
+#. Error that occurs during graphing when mutually exclusive conditions are used.
+#: MutuallyExclusiveConditions
+msgid "The equation contains logical conditions that are mutually exclusive"
+msgstr "L'equació conté condicions lògiques que són mútuament excloents"
+
+#. Error that occurs during graphing when the equation is out of domain.
+#: OutOfDomain
+msgid "Equation is out of domain"
+msgstr "L'equació està fora de domini"
+
+#. Error that occurs during graphing when the equation is not supported.
+#: GE_NotSupported
+msgid "Graphing this equation is not supported"
+msgstr "La creació de gràfics no és compatible amb aquesta equació"
+
+#. Error that occurs during graphing when the equation is missing a (
+#: ParenthesisMismatch
+msgid "The equation is missing an opening parenthesis"
+msgstr "Falta un parèntesi d'obertura a l'equació"
+
+#. Error that occurs during graphing when the equation is missing a )
+#: UnmatchedParenthesis
+msgid "The equation is missing a closing parenthesis"
+msgstr "Falta un parèntesi de tancament a l'equació"
+
+#. Error that occurs during graphing when a number has too many decimals. Ex: 1.2.3
+#: TooManyDecimalPoints
+msgid "There are too many decimal points in a number"
+msgstr "Hi ha un número amb massa punts decimals"
+
+#. Error that occurs during graphing with a decimal point without digits
+#: DecimalPointWithoutDigits
+msgid "A decimal point is missing digits"
+msgstr "Falten xifres al punt decimal"
+
+#. Error that occurs during graphing when the expression ends unexpectedly. Ex: 3-4*
+#: UnexpectedEndOfExpression
+msgid "Unexpected end of expression"
+msgstr "Final d'expressió inesperat"
+
+#. Error that occurs during graphing when there is an unexpected token.
+#: UnexpectedToken
+msgid "Unexpected characters in the expression"
+msgstr "Hi ha caràcters inesperats en l'expressió"
+
+#. Error that occurs during graphing when there is an invalid token.
+#: InvalidToken
+msgid "Invalid characters in the expression"
+msgstr "Caràcters no vàlids en l'expressió"
+
+#. Error that occurs during graphing when there are too many equals.
+#: TooManyEquals
+msgid "There are too many equal signs"
+msgstr "Hi ha massa signes d'igual"
+
+#. Error that occurs during graphing when the equation is missing x or y.
+#: EqualWithoutGraphVariable
+msgid "The function must contain at least one x or y variable"
+msgstr "La funció ha de contenir com a mínim una variable x o y"
+
+#. Error that occurs during graphing when an invalid syntax is used.
+#: InvalidEquationSyntax
+msgid "Invalid expression"
+msgstr "Expressió no vàlida"
+
+#. Error that occurs during graphing when the expression is empty
+#: EmptyExpression
+msgid "The expression is empty"
+msgstr "L'expressió és buida"
+
+#. Error that occurs during graphing when equal is used without an equation. Ex: sin(x=y)
+#: EqualWithoutEquation
+msgid "Equal was used without an equation"
+msgstr "S'ha fet servir un signe d'igual sense una equació"
+
+#. Error that occurs during graphing when parenthesis are missing after a function.
+#: ExpectParenthesisAfterFunctionName
+msgid "Parenthesis missing after function name"
+msgstr "Falta un parèntesi després del nom de la funció"
+
+#. Error that occurs during graphing when a function has the wrong number of parameters
+#: IncorrectNumParameter
+msgid "A mathematical operation has the incorrect number of parameters"
+msgstr "Una operació matemàtica té el nombre de paràmetres incorrecte"
+
+#. Error that occurs during graphing when a variable name is invalid.
+#: InvalidVariableNameFormat
+msgid "A variable name is invalid"
+msgstr "Un nom de variable no és vàlid"
+
+#. Error that occurs during graphing when a { is missing
+#: BracketMismatch
+msgid "The equation is missing an opening bracket"
+msgstr "Falta una clau d'obertura a l'equació"
+
+#. Error that occurs during graphing when a } is missing.
+#: UnmatchedBracket
+msgid "The equation is missing a closing bracket"
+msgstr "Falta una clau de tancament a l'equació"
+
+#. Error that occurs during graphing when i or I is used.
+#: CannotUseIInReal
+msgid "\"i\" and \"I\" cannot be used as variable names"
+msgstr "no es poden utilitzar \"i\" i \"I\" com a noms de variables"
+
+#. General error that occurs during graphing.
+#: GeneralError
+msgid "The equation could not be graphed"
+msgstr "No s'ha pogut crear un gràfic de l'equació"
+
+#. Error that occurs during graphing when trying to use bases incorrect. Ex: base(2,1020).
+#: InvalidNumberDigit
+msgid "The digit could not be resolved for the given base"
+msgstr "No s'ha pogut resoldre el dígit per a la base donada"
+
+#. Error that occurs during graphing when the base is out of range.
+#: InvalidNumberBase
+msgid "The base must be greater than 2 and less than 36"
+msgstr "La base ha de ser superior a 2 i menor que 36"
+
+#. Error that occurs during graphing when a function requires a variable in a particular position. Ex: 2nd argument of deriv.
+#: InvalidVariableSpecification
+msgid ""
+"A mathematical operation requires one of its paramaters to be a variable"
+msgstr ""
+"Una operació matemàtica requereix que un dels seus paràmetres sigui una "
+"variable"
+
+#. Error that occurs during graphing when operands are mixed. Such as true and 1.
+#: ExpectingLogicalOperands
+msgid "Equation is mixing logical and scalar operands"
+msgstr "L'equació està barrejant operands lògics i escalars"
+
+#. Error that occurs during graphing when x or y is used in integral upper limits.
+#: CannotUseIndexVarInOpLimits
+msgid "x or y cannot be used in the upper or lower limits"
+msgstr "x o y no es poden utilitzar en els límits superior o inferior"
+
+#. Error that occurs during graphing when x or y is used in the limit point.
+#: CannotUseIndexVarInLimPoint
+msgid "x or y cannot be used in the limit point"
+msgstr "no es pot utilitzar \"x\" o \"y\" en el punt límit"
+
+#. Error that occurs during graphing when complex infinity is used
+#: CannotUseComplexInfinityInReal
+msgid "Cannot use complex infinity"
+msgstr "No es pot utilitzar l'infinit complex"
+
+#. Error that occurs during graphing when complex numbers are used in inequalities.
+#: CannotUseIInInequalitySolving
+msgid "Cannot use complex numbers in inequalities"
+msgstr "No es poden utilitzar nombres complexos en desigualtats"
+
+#. This is the tooltip for the back button in the equation analysis page in the graphing calculator
+#: equationAnalysisBack.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "equationAnalysisBack.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Back to function list"
+msgstr "Torna a la llista de funcions"
+
+#. This is the automation name for the back button in the equation analysis page in the graphing calculator
+#: equationAnalysisBack.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "equationAnalysisBack.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Back to function list"
+msgstr "Torna a la llista de funcions"
+
+#. This is the tooltip for the analyze function button
+#: functionAnalysisButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "functionAnalysisButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Analyze function"
+msgstr "Analitza la funció"
+
+#. This is the automation name for the analyze function button
+#: functionAnalysisButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "functionAnalysisButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Analyze function"
+msgstr "Analitza la funció"
+
+#. This is the text for the for the analyze function context menu command
+#: functionAnalysisMenuItem
+msgctxt "functionAnalysisMenuItem"
+msgid "Analyze function"
+msgstr "Analitza la funció"
+
+#. This is the tooltip for the graphing calculator remove equation buttons
+#: removeButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "removeButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Remove equation"
+msgstr "Suprimeix l'equació"
+
+#. This is the automation name for the graphing calculator remove equation buttons
+#: removeButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "removeButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Remove equation"
+msgstr "Suprimeix l'equació"
+
+#. This is the text for the for the remove equation context menu command
+#: removeMenuItem
+msgctxt "removeMenuItem"
+msgid "Remove equation"
+msgstr "Suprimeix l'equació"
+
+#. This is the automation name for the graphing calculator share button.
+#: shareButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "shareButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Share"
+msgstr "Comparteix"
+
+#. This is the tooltip for the graphing calculator share button.
+#: shareButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "shareButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Share"
+msgstr "Comparteix"
+
+#. This is the tooltip for the graphing calculator equation style button
+#: colorChooserButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "colorChooserButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Change equation style"
+msgstr "Canvia l'estil d'equació"
+
+#. This is the automation name for the graphing calculator equation style button
+#: colorChooserButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "colorChooserButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Change equation style"
+msgstr "Canvia l'estil d'equació"
+
+#. This is the text for the for the equation style context menu command
+#: colorChooserMenuItem
+msgctxt "colorChooserMenuItem"
+msgid "Change equation style"
+msgstr "Canvia l'estil d'equació"
+
+#. This is the tooltip/automation name shown when visibility is set to hidden in the graphing calculator.
+#: showEquationButtonToolTip
+msgid "Show equation"
+msgstr "Mostra l'equació"
+
+#. This is the tooltip/automation name shown when visibility is set to visible in the graphing calculator.
+#: hideEquationButtonToolTip
+msgid "Hide equation"
+msgstr "Amaga l'equació"
+
+#. {Locked="%1"}, This is the tooltip/automation name shown when visibility is set to hidden in the graphing calculator. %1 is the equation number.
+#: showEquationButtonAutomationName
+msgid "Show equation %1"
+msgstr "Mostra l'equació %1"
+
+#. {Locked="%1"}, This is the tooltip/automation name shown when visibility is set to visible in the graphing calculator. %1 is the equation number.
+#: hideEquationButtonAutomationName
+msgid "Hide equation %1"
+msgstr "Amaga l'equació %1"
+
+#. This is the tooltip/automation name for the graphing calculator stop tracing button
+#: disableTracingButtonToolTip
+msgid "Stop tracing"
+msgstr "Atura el seguiment"
+
+#. This is the tooltip/automation name for the graphing calculator start tracing button
+#: enableTracingButtonToolTip
+msgid "Start tracing"
+msgstr "Inicia el seguiment"
+
+#. {Locked="%1","%2", "%3", "%4", "%5"}.
+#: graphAutomationName
+msgid ""
+"Graph viewing window, x-axis bounded by %1 and %2, y-axis bounded by %3 and %"
+"4, displaying %5 equations"
+msgstr ""
+"Finestra de visualització de grafs, eix x limitada per %1 i %2, eix y "
+"limitat per %3 i %4, que Mostra equacions %5"
+
+#. This is the tooltip text for the slider options button in Graphing Calculator
+#: sliderOptionsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "sliderOptionsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Configure slider"
+msgstr "Configura el control lliscant"
+
+#. This is the automation name text for the slider options button in Graphing Calculator
+#: sliderOptionsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "sliderOptionsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Configure slider"
+msgstr "Configura el control lliscant"
+
+#. Used in Graphing Calculator to switch the view to the equation mode
+#: GraphSwitchToEquationMode
+msgctxt "GraphSwitchToEquationMode"
+msgid "Switch to equation mode"
+msgstr "Canvia al mode d'equació"
+
+#. Used in Graphing Calculator to switch the view to the graph mode
+#: GraphSwitchToGraphMode
+msgid "Switch to graph mode"
+msgstr "Canvia al mode de gràfic"
+
+#. Used in Graphing Calculator to switch the view to the equation mode
+#: SwitchModeToggleButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "SwitchModeToggleButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Switch to equation mode"
+msgstr "Canvia al mode d'equació"
+
+#. Announcement used in Graphing Calculator when switching to the equation mode
+#: GraphSwitchedToEquationModeAnnouncement
+msgid "Current mode is equation mode"
+msgstr "El mode actual és el mode d'equació"
+
+#. Announcement used in Graphing Calculator when switching to the graph mode
+#: GraphSwitchedToGraphModeAnnouncement
+msgid "Current mode is graph mode"
+msgstr "El mode actual és el mode de gràfic"
+
+#. Heading for window extents on the settings
+#: GridHeading.Text
+msgid "Window"
+msgstr "Finestra"
+
+#. Degrees mode on settings page
+#: TrigModeDegrees.Content
+msgctxt "TrigModeDegrees.Content"
+msgid "Degrees"
+msgstr "Graus"
+
+#. Gradian mode on settings page
+#: TrigModeGradians.Content
+msgctxt "TrigModeGradians.Content"
+msgid "Gradians"
+msgstr "Graus centesimals"
+
+#. Radians mode on settings page
+#: TrigModeRadians.Content
+msgctxt "TrigModeRadians.Content"
+msgid "Radians"
+msgstr "Radians"
+
+#. Heading for Unit's on the settings
+#: UnitsHeading.Text
+msgid "Units"
+msgstr "Unitats"
+
+#. Hyperlink button to reset the view of the graph
+#: ResetViewButton.Content
+msgid "Reset view"
+msgstr "Restableix la visualització"
+
+#. X maximum value header
+#: GraphSettingsXMax.Header
+msgid "X-Max"
+msgstr "Valor X màx."
+
+#. X minimum value header
+#: GraphSettingsXMin.Header
+msgid "X-Min"
+msgstr "Valor X mín."
+
+#. Y Maximum value header
+#: GraphSettingsYMax.Header
+msgid "Y-Max"
+msgstr "Valor Y màx."
+
+#. Y minimum value header
+#: GraphSettingsYMin.Header
+msgid "Y-Min"
+msgstr "Valor Y mín."
+
+#. This is the tooltip text for the graph options button in Graphing Calculator
+#: graphSettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgctxt "graphSettingsButton.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip"
+msgid "Graph options"
+msgstr "Opcions del gràfic"
+
+#. This is the automation name text for the graph options button in Graphing Calculator
+#: graphSettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "graphSettingsButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Graph options"
+msgstr "Opcions del gràfic"
+
+#. Heading for the Graph Options flyout in Graphing mode.
+#: GraphOptionsHeading.Text
+msgctxt "GraphOptionsHeading.Text"
+msgid "Graph Options"
+msgstr "Opcions del gràfic"
+
+#. Screen reader prompt for the variable settings toggle button
+#: VariableAreaSettings.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable options"
+msgstr "Opcions variables"
+
+#. Tool tip for the variable settings toggle button
+#: VariableAreaSettings.[using:Windows.UI.Xaml.Controls]ToolTipService.ToolTip
+msgid "Toggle variable options"
+msgstr "Commuta les opcions variables"
+
+#. Heading for the Graph Options flyout in Graphing mode.
+#: LineThicknessBoxHeading.Text
+msgid "Line Thickness"
+msgstr "Gruix de la línia"
+
+#. Heading for the equation style flyout in Graphing mode.
+#: LineOptionsHeading.Text
+msgid "Line Options"
+msgstr "Opcions de línia"
+
+#. Automation name for line width setting
+#: SmallLineWidthAutomationName
+msgid "Small Line Width"
+msgstr "Amplada de línia petita"
+
+#. Automation name for line width setting
+#: MediumLineWidthAutomationName
+msgid "Medium Line Width"
+msgstr "Amplada de línia mitjana"
+
+#. Automation name for line width setting
+#: LargeLineWidthAutomationName
+msgid "Large Line Width"
+msgstr "Amplada de línia gran"
+
+#. Automation name for line width setting
+#: ExtraLargeLineWidthAutomationName
+msgid "Extra Large Line Width"
+msgstr "Amplada de línia extragran"
+
+#. this is the placeholder text used by the textbox to enter an equation
+#: mathRichEditBox.PlaceholderText
+msgid "Enter an expression"
+msgstr "Introdueix una expressió"
+
+#. Copy menu item for the graph context menu
+#: GraphCopyMenuItem.Text
+msgctxt "GraphCopyMenuItem.Text"
+msgid "Copy"
+msgstr "Copia"
+
+#. Cut menu item from the Equation TextBox
+#: cutEquationMenuItem.Text
+msgid "Cut"
+msgstr "Retalla"
+
+#. Copy menu item from the Equation TextBox
+#: copyEquationMenuItem.Text
+msgctxt "copyEquationMenuItem.Text"
+msgid "Copy"
+msgstr "Copia"
+
+#. Paste menu item from the Equation TextBox
+#: pasteEquationMenuItem.Text
+msgctxt "pasteEquationMenuItem.Text"
+msgid "Paste"
+msgstr "Enganxa"
+
+#. Undo menu item from the Equation TextBox
+#: undoEquationMenuItem.Text
+msgid "Undo"
+msgstr "Desfés"
+
+#. Select all menu item from the Equation TextBox
+#: selectAllEquationMenuItem.Text
+msgid "Select All"
+msgstr "Selecciona-ho tot"
+
+#. The automation name for the Equation Input ListView item that is shown when Calculator is in graphing mode.
+#: EquationInputButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Function Input List Item"
+msgstr "Element de la llista d'entrada de funcions"
+
+#. The automation name for the Equation Input ListView that is shown when Calculator is in graphing mode.
+#: EquationInputList.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Function Input List"
+msgstr "Llista d'entrada de funcions"
+
+#. The automation name for the Equation Input StackPanel that is shown when Calculator is in graphing mode.
+#: EquationInputPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Function Input Panel"
+msgstr "Tauler d'entrada de funcions"
+
+#. The automation name for the Variable StackPanel that is shown when Calculator is in graphing mode.
+#: VariableStackPanel.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable Panel"
+msgstr "Tauler de variables"
+
+#. The automation name for the Variable ListView that is shown when Calculator is in graphing mode.
+#: VariableListView.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable List"
+msgstr "Llista de variables"
+
+#. The automation name for the Variable ListViewItem that is shown when Calculator is in graphing mode.
+#: VariableListViewItem
+msgid "Variable %1 List Item"
+msgstr "Element de la llista %1 de la variable"
+
+#. The automation name for the Variable Value Textbox that is shown when Calculator is in graphing mode.
+#: VariableValueTextBox.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable Value Textbox"
+msgstr "Quadre de text del valor de la variable"
+
+#. The automation name for the Variable Value Slider that is shown when Calculator is in graphing mode.
+#: VariableValueSlider.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable Value Slider"
+msgstr "Control lliscant del valor de la variable"
+
+#. The automation name for the Variable Min Value Textbox that is shown when Calculator is in graphing mode.
+#: VariableMinTextBox.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable Minimum Value Textbox"
+msgstr "Quadre de text del valor mínim de la variable"
+
+#. The automation name for the Variable Step Textbox that is shown when Calculator is in graphing mode.
+#: VariableStepTextBox.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable Step Value Textbox"
+msgstr "Quadre de text del valor de pas de la variable"
+
+#. The automation name for the Variable Max Value Textbox that is shown when Calculator is in graphing mode.
+#: VariableMaxTextBox.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Variable Maximum Value Textbox"
+msgstr "Quadre de text del valor màxim de la variable"
+
+#. Name of the solid line style for a graphed equation
+#: solidLineStyleAutomationName
+msgid "Solid line style"
+msgstr "Estil de la línia contínua"
+
+#. Name of the dotted line style for a graphed equation
+#: dotLineStyleAutomationName
+msgid "Dot line style"
+msgstr "Estil de la línia de punts"
+
+#. Name of the dashed line style for a graphed equation
+#: dashLineStyleAutomationName
+msgid "Dash line style"
+msgstr "Estil de la línia amb guions"
+
+#. Name of color in the color picker
+#: equationColor1AutomationName
+msgid "Navy Blue"
+msgstr "Blau marí"
+
+#. Name of color in the color picker
+#: equationColor2AutomationName
+msgid "Seafoam"
+msgstr "Verd d'espuma de mar"
+
+#. Name of color in the color picker
+#: equationColor3AutomationName
+msgid "Violet"
+msgstr "Violeta"
+
+#. Name of color in the color picker
+#: equationColor4AutomationName
+msgid "Green"
+msgstr "Verd"
+
+#. Name of color in the color picker
+#: equationColor5AutomationName
+msgid "Mint Green"
+msgstr "Verd menta"
+
+#. Name of color in the color picker
+#: equationColor6AutomationName
+msgid "Dark Green"
+msgstr "Verd fosc"
+
+#. Name of color in the color picker
+#: equationColor7AutomationName
+msgid "Charcoal"
+msgstr "Carbó"
+
+#. Name of color in the color picker
+#: equationColor8AutomationName
+msgid "Red"
+msgstr "Vermell"
+
+#. Name of color in the color picker
+#: equationColor9AutomationName
+msgid "Plum Light"
+msgstr "Pruna clar"
+
+#. Name of color in the color picker
+#: equationColor10AutomationName
+msgid "Magenta"
+msgstr "Magenta"
+
+#. Name of color in the color picker
+#: equationColor11AutomationName
+msgid "Yellow Gold"
+msgstr "Or groc"
+
+#. Name of color in the color picker
+#: equationColor12AutomationName
+msgid "Orange Bright"
+msgstr "Taronja brillant"
+
+#. Name of color in the color picker
+#: equationColor13AutomationName
+msgid "Brown"
+msgstr "Marró"
+
+#. Name of color in the color picker
+#: equationColor14BlackAutomationName
+msgid "Black"
+msgstr "Negre"
+
+#. Name of color in the color picker
+#: equationColor14WhiteAutomationName
+msgid "White"
+msgstr "Blanc"
+
+#. Name of color in the color picker
+#: equationHighContrastColor1AutomationName
+msgid "Color 1"
+msgstr "Color 1"
+
+#. Name of color in the color picker
+#: equationHighContrastColor2AutomationName
+msgid "Color 2"
+msgstr "Color 2"
+
+#. Name of color in the color picker
+#: equationHighContrastColor3AutomationName
+msgid "Color 3"
+msgstr "Color 3"
+
+#. Name of color in the color picker
+#: equationHighContrastColor4AutomationName
+msgid "Color 4"
+msgstr "Color 4"
+
+#. Graph settings heading for the theme options
+#: GraphThemeHeading.Text
+msgid "Graph Theme"
+msgstr "Tema del gràfic"
+
+#. Graph settings option to set graph to light theme
+#: AlwaysLightTheme.Content
+msgctxt "AlwaysLightTheme.Content"
+msgid "Always light"
+msgstr "Sempre clar"
+
+#. Graph settings option to set graph to match the app theme
+#: MatchAppTheme.Content
+msgctxt "MatchAppTheme.Content"
+msgid "Match app theme"
+msgstr "Coincideix amb el tema de l'aplicació"
+
+#. This is the automation name text for the Graph settings heading for the theme options
+#: GraphThemeHeading.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Theme"
+msgstr "Tema"
+
+#. This is the automation name text for the Graph settings option to set graph to light theme
+#: AlwaysLightTheme.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "AlwaysLightTheme.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Always light"
+msgstr "Sempre clar"
+
+#. This is the automation name text for the Graph settings option to set graph to match the app theme
+#: MatchAppTheme.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "MatchAppTheme.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Match app theme"
+msgstr "Coincideix amb el tema de l'aplicació"
+
+#. Announcement used in Graphing Calculator when a function is removed from the function list
+#: FunctionRemovedAnnouncement
+msgid "Function removed"
+msgstr "Funció eliminada"
+
+#. This is the automation name text for the equation box in the function analysis panel
+#: KGFEquationTextBox.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Function Analysis Equation Box"
+msgstr "Quadre d'equació d'anàlisi de funcions"
+
+#. Screen reader prompt for the equal button on the graphing calculator operator keypad
+#: graphingEqualButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "graphingEqualButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Equals"
+msgstr "És igual a"
+
+#. Screen reader prompt for the Less than button
+#: lessThanFlyoutButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Less than"
+msgstr "Menys de"
+
+#. Screen reader prompt for the Less than or equal button
+#: lessThanOrEqualFlyoutButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Less than or equal"
+msgstr "Més petit o igual que"
+
+#. Screen reader prompt for the Equal button
+#: equalsFlyoutButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Equal"
+msgstr "Igual"
+
+#. Screen reader prompt for the Greater than or equal button
+#: greaterThanOrEqualFlyoutButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Greater than or equal"
+msgstr "Més gran o igual que"
+
+#. Screen reader prompt for the Greater than button
+#: greaterThanFlyoutButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Greater than"
+msgstr "És més gran que"
+
+#. Screen reader prompt for the X button on the graphing calculator operator keypad
+#: xButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "xButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "X"
+msgstr "X"
+
+#. Screen reader prompt for the Y button on the graphing calculator operator keypad
+#: yButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "yButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Y"
+msgstr "Y"
+
+#. Screen reader prompt for the submit button on the graphing calculator operator keypad
+#: submitButton.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Submit"
+msgstr "Envia"
+
+#. Screen reader prompt for the function analysis grid
+#: FunctionAnalysisGrid.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgid "Function Anaylsis"
+msgstr "Anàlisi de la funció"
+
+#. Screen reader prompt for the graph options panel
+#: GraphSettingsGrid.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name
+msgctxt "GraphSettingsGrid.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name"
+msgid "Graph Options"
+msgstr "Opcions del gràfic"
+
+#. Automation name for the group of controls for history and memory lists.
+#: DockPanel_HistoryMemoryLists
+msgctxt "DockPanel_HistoryMemoryLists"
+msgid "History and Memory lists"
+msgstr "Llistes de memòria i historial"
+
+#. Automation name for the group of controls for memory list.
+#: DockPanel_MemoryList
+msgid "Memory list"
+msgstr "Llista de memòria"
+
+#. {Locked='%1'} Formatting string for a Narrator announcement when the user clears a history slot. The %1 is the index of the history slot. For example, users might hear "History slot 2 cleared".
+#: Format_HistorySlotCleared
+msgid "History slot %1 cleared"
+msgstr "S'ha esborrat la ranura històrica %1"
+
+#. Announcement to indicate calculator window is always shown on top.
+#: CalcAlwaysOnTop
+msgid "Calculator always on top"
+msgstr "La calculadora està sempre visible"
+
+#. Announcement to indicate calculator window is now back to full view.
+#: CalcBackToFullView
+msgid "Calculator back to full view"
+msgstr "La calculadora torna al mode de visualització completa"
+
+#. Label for a radio button that toggles arithmetic shift behavior for the shift operations.
+#: arithmeticShiftButtonSelected
+msgid "Arithmetic Shift selected"
+msgstr "L'opció “Desplaçament aritmètic” està seleccionada"
+
+#. Label for a radio button that toggles logical shift behavior for the shift operations.
+#: logicalShiftButtonSelected
+msgid "Logical Shift selected"
+msgstr "L'opció “Desplaçament lògic” està seleccionada"
+
+#. Label for a radio button that toggles rotate circular behavior for the shift operations.
+#: rotateCircularButtonSelected
+msgid "Rotate Circular Shift selected"
+msgstr "L'opció “Gira amb desplaçament circular” està seleccionada"
+
+#. Label for a radio button that toggles rotate circular with carry behavior for the shift operations.
+#: rotateCarryShiftButtonSelected
+msgid "Rotate Through Carry Circular Shift selected"
+msgstr "L'opció “Gira amb desplaçament circular de ròssec” està seleccionada"
