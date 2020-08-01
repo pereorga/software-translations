@@ -1,20 +1,20 @@
-#. extracted from ../../haiku/data/catalogs/apps/drivesetup/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/drivesetup/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: MainWindow
 msgid "Could not unmount partition %s."
-msgstr "No ha estat possible muntar la partició %s."
+msgstr "No s'ha pogut desmuntar la partició %s."
 
 #: MainWindow
 msgid "Mount all"
@@ -26,11 +26,14 @@ msgstr "Disc"
 
 #: MainWindow
 msgid ""
-"Are you sure you want to write the changes back to disk now?nnAll data on "
-"the selected partition will be irretrievably lost if you do so!"
+"Are you sure you want to write the changes back to disk now?\\n"
+"\\n"
+"All data on the selected partition will be irretrievably lost if you do so!"
 msgstr ""
-"Esteu segur que voleu desar tots els canvis al disc ara?nnSi ho feu es "
-"perdran totes les dades de la partició triada de forma irrecuperable!"
+"Segur que voleu escriure tots els canvis al disc ara?\\n"
+"\\n"
+"Si ho feu, es perdran irrecuperablement totes les dades de la partició "
+"seleccionada!"
 
 #: PartitionList
 msgctxt "PartitionList"
@@ -43,7 +46,11 @@ msgstr "Inicia"
 
 #: MainWindow
 msgid "Could not change the parameters of the selected partition."
-msgstr "No ha estat possible canviar el paràmetres de la partició triada."
+msgstr "No s'han pogut canviar els paràmetres de la partició seleccionada."
+
+#: Encryption+utils
+msgid "PGP encrypted"
+msgstr "PGP encriptada"
 
 #: MainWindow
 msgid "Delete partition"
@@ -53,9 +60,17 @@ msgstr "Suprimeix la partició"
 msgid "Error: "
 msgstr "Error: "
 
+#: PartitionList
+msgid "Removable"
+msgstr "Extraïble"
+
+#: PartitionList
+msgid "Block size"
+msgstr "Mida de bloc"
+
 #: MainWindow
 msgid "The panel experienced a problem!"
-msgstr "Ho ha hagut un problema amb el tauler!"
+msgstr "El plafó ha tingut un problema!"
 
 #: DiskView
 msgctxt "DiskView"
@@ -63,12 +78,22 @@ msgid "Device"
 msgstr "Dispositiu"
 
 #: MainWindow
+msgid ""
+"Are you sure you want to format the Intel Extended Partition? Any "
+"subpartitions it contains will be overwritten if you continue. You will be "
+"asked again before changes are written to the disk."
+msgstr ""
+"Segur que voleu formatar la partició ampliada d'Intel? Si continueu, se "
+"sobreescriurà qualsevol subpartició que contingui. Se us preguntarà un cop "
+"més abans d'escriure els canvis al disc."
+
+#: MainWindow
 msgid "Unmount"
 msgstr "Desmunta"
 
 #: MainWindow
-msgid "Failed to format the partition %s!n"
-msgstr "No ha estat possible formatar la partició %s!n"
+msgid "Failed to format the partition %s!\\n"
+msgstr "No s'ha pogut formatar la partició %s!\\n"
 
 #: CreateParametersPanel
 msgid "Partition size"
@@ -76,47 +101,46 @@ msgstr "Mida de la partició"
 
 #: MainWindow
 msgid "Validation of the given parameters failed."
-msgstr "No ha estat possible validar els paràmetres indicats."
+msgstr "Ha fallat validar els paràmetres indicats."
 
 #: MainWindow
 msgid "The partition %s is currently mounted."
-msgstr "La partició %s està muntada en aquest moment."
+msgstr "La partició %s ara està muntada."
 
 #: MainWindow
 msgid ""
-"Are you sure you want to format the partition \"%s\"\"? You will be asked "
-"again before changes are written to the disk.\""
+"Are you sure you want to format the partition \\\"%s\\\"? You will be asked "
+"again before changes are written to the disk."
 msgstr ""
-"Esteu segur que voleu formatar la partició \"%s\"\"? Encara us preguntarem "
-"un cop més abans d'escriure els canvis al disc.\""
+"Segur que voleu formatar la partició \\\"%s\\\"? Se us preguntarà un cop més "
+"abans d'escriure els canvis al disc."
 
 #: System+name
 msgid "DriveSetup"
-msgstr "Gestor dels Discs"
+msgstr "Gestor de discs"
 
 #: PartitionList
 msgid "Mounted at"
-msgstr "Muntat a"
+msgstr "Muntada a"
 
 #: MainWindow
 msgid "Create…"
-msgstr "Nova..."
+msgstr "Crea..."
 
 #: MainWindow
 msgid "Write changes"
-msgstr "Desa els canvis"
+msgstr "Escriu els canvis"
 
 #: MainWindow
 msgid ""
 "Initialization of the partition %s failed. (Nothing has been written to "
 "disk.)"
 msgstr ""
-"No ha estat possible iniciar la partició %s. (No s'han desat els canvis al "
-"disc.)"
+"No s'ha pogut iniciar la partició %s. (No s'han desat els canvis al disc.)"
 
 #: MainWindow
 msgid "Validation of the given creation parameters failed."
-msgstr "No ha estat possible validar els paràmetres de la validació."
+msgstr "Ha fallat validar els paràmetres de creació indicats."
 
 #: MainWindow
 msgid "Eject"
@@ -124,27 +148,33 @@ msgstr "Expulsa"
 
 #: MainWindow
 msgid ""
-"Are you sure you want to write the changes back to disk now?nnAll data on "
-"the disk %s will be irretrievably lost if you do so!"
+"Are you sure you want to write the changes back to disk now?\\n"
+"\\n"
+"All data on the disk %s will be irretrievably lost if you do so!"
 msgstr ""
-"Segur que voleu desar els canvis al disc ara?nnSi ho feu, es perdran totes "
-"les dades del disc %s i no es podran recuperar!"
+"Segur que voleu escriure els canvis al disc ara?\\n"
+"\\n"
+"Si ho feu, es perdran totes les dades del disc %s i no es podran recuperar!"
 
 #: MainWindow
 msgid "Surface test (not implemented)"
 msgstr "Prova de la superfície (no està implementat)"
 
+#: PartitionList
+msgid "Read only"
+msgstr "Només de lectura"
+
 #: MainWindow
 msgid "The panel could not return successfully."
-msgstr "La finestra a retornat una fallada."
+msgstr "El plafó no ha pogut tenir un retorn correcte."
 
 #: MainWindow
 msgid ""
 "Failed to change the parameters of the partition. No changes have been "
 "written to disk."
 msgstr ""
-"No ha estat possible canviar el paràmetres de la partició. No s'han desat "
-"els canvis al disc."
+"Ha fallat canviar els paràmetres de la partició. No s'ha escrit cap canvi al "
+"disc."
 
 #: DiskView
 msgid "Partition %ld"
@@ -153,24 +183,32 @@ msgstr "Partició %ld"
 #: MainWindow
 msgid ""
 "There's no space on the partition where a child partition could be created."
-msgstr "No hi ha espai a la partició per fer-hi una nova partició."
+msgstr "No hi ha espai a la partició per fer-hi una partició nova."
 
 #: DiskView
 msgid "No disk devices have been recognized."
 msgstr "No s'ha reconegut cap dispositiu de disc."
 
+#: PartitionList
+msgid "Attributes"
+msgstr "Atributs"
+
 #: MainWindow
 msgid "Failed to delete the partition. No changes have been written to disk."
-msgstr ""
-"No ha estat possible suprimir la partició. No s'han desat els canvis al disc."
+msgstr "Ha fallat suprimir la partició. No s'ha escrit cap canvi al disc."
 
 #: MainWindow
 msgid "Change parameters…"
-msgstr "Canvia els paràmetres..."
+msgstr "Canvia'n els paràmetres..."
+
+#: InitializeParametersPanel
+msgctxt "InitializeParametersPanel"
+msgid "Format"
+msgstr "Format"
 
 #: MainWindow
 msgid "Could not unmount partition"
-msgstr "No ha estat possible muntar la partició"
+msgstr "No s'ha pogut desmuntar la partició."
 
 #: CreateParametersPanel
 msgid "Create"
@@ -182,7 +220,7 @@ msgstr "Sistema de fitxers"
 
 #: MainWindow
 msgid "The selected partition does not contain a partitioning system."
-msgstr "La partició triada no conté un sistema de particions."
+msgstr "La partició seleccionada no conté un sistema de particions."
 
 #: Support
 msgid "End: %s"
@@ -194,33 +232,57 @@ msgstr "Tipus de partició"
 
 #: MainWindow
 msgid "Unable to find the selected partition by ID."
-msgstr ""
-"No ha estat possible trobar la partició triada a partir del seu "
-"identificador."
+msgstr "No s'ha pogut trobar la partició seleccionada per l'identificador."
 
 #: MainWindow
 msgid "The currently selected partition is not empty."
-msgstr "La partició triada no està buida."
+msgstr "La partició seleccionada no és buida."
+
+#: MainWindow
+msgid ""
+"Are you sure you want to format a raw disk? (Most people initialize the disk "
+"with a partitioning system first) You will be asked again before changes are "
+"written to the disk."
+msgstr ""
+"Segur que voleu formatar un disc en cru? (La majoria de persones primer "
+"inicien el disc amb un sistema de particions.) Se us preguntarà un cop més "
+"abans d'escriure els canvis al disc."
 
 #: MainWindow
 msgid "Wipe (not implemented)"
-msgstr "Esborra (no està implementat)"
+msgstr "Esborra (no implementat)"
 
 #: MainWindow
 msgid "The currently selected partition does not have a parent partition."
-msgstr "La partició seleccionada ara no té una partició principal."
+msgstr "La partició seleccionada actualment no té una partició superior."
 
 #: MainWindow
 msgid "Validation of the given initialization parameters failed."
-msgstr "No ha estat possible validar els paràmetres d'iniciació indicats."
+msgstr "Ha fallat validar els paràmetres d'iniciació indicats."
+
+#: PartitionList
+msgid "Shared"
+msgstr "Compartida"
+
+#: PartitionList
+msgid "MIMEs"
+msgstr "MIMEs"
+
+#: Encryption+utils
+msgid "BitLocker encrypted"
+msgstr "Encriptat amb BitLocker"
 
 #: MainWindow
 msgid "You need to select a partition entry from the list."
-msgstr "Cal que trieu una partició de la llista."
+msgstr "Cal que seleccioneu una partició de la llista."
 
 #: Support
 msgid "Offset: %s"
-msgstr "Desplaçament: %s"
+msgstr "Compensació: %s"
+
+#: Encryption+utils
+msgid "SafeBoot encrypted"
+msgstr "Encriptat amb SafeBoot"
 
 #: PartitionList
 msgid "Volume name"
@@ -228,11 +290,13 @@ msgstr "Nom del volum"
 
 #: MainWindow
 msgid ""
-"Are you sure you want to write the changes back to disk now?nnAll data on "
-"the partition will be irretrievably lost if you do so!"
+"Are you sure you want to write the changes back to disk now?\\n"
+"\\n"
+"All data on the partition will be irretrievably lost if you do so!"
 msgstr ""
-"Esteu segur que voleu tornar a desar el canvis al disc ara?nnSi ho feu totes "
-"les dades de la partició no es podran recuperar!"
+"Segur que voleu escriure el canvis al disc ara?\\n"
+"\\n"
+"Si ho feu, es perdran irrecuperablement totes les dades de la partició!"
 
 #: ChangeParametersPanel
 msgid "Change"
@@ -242,22 +306,34 @@ msgstr "Canvia"
 msgid "Partition name:"
 msgstr "Nom de la partició:"
 
+#: Encryption+utils
+msgid "LUKS encrypted"
+msgstr "Encriptat amb LUKS"
+
 #: MainWindow
 msgid ""
-"Are you sure you want to write the changes back to disk now?nnAll data on "
-"the partition %s will be irretrievably lost if you do so!"
+"Are you sure you want to write the changes back to disk now?\\n"
+"\\n"
+"All data on the partition %s will be irretrievably lost if you do so!"
 msgstr ""
-"Esteu segur que voleu desar tots els canvis al disc ara?nnSi ho feu es "
-"perdran totes les dades de la partició %s de forma irrecuperable!"
+"Segur que voleu escriure tots els canvis al disc ara?\\n"
+"\\n"
+"Si ho feu, es perdran irrecuperablement totes les dades de la partició %s!"
 
 #: AbstractParametersPanel
 msgctxt "AbstractParametersPanel"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: MainWindow
+msgctxt "MainWindow"
 msgid "Format"
 msgstr "Formata"
+
+#: DiskView
+msgctxt "DiskView"
+msgid "<empty or unknown>"
+msgstr "<buit o desconegut>"
 
 #: MainWindow
 msgctxt "MainWindow"
@@ -265,41 +341,57 @@ msgid "OK"
 msgstr "D'acord"
 
 #: MainWindow
+msgid "Open with DiskProbe"
+msgstr "Obre amb DiskProbe"
+
+#: MainWindow
 msgid "Could not delete the selected partition."
-msgstr "No ha estat possible suprimir la partició triada."
+msgstr "No s'ha pogut suprimir la partició seleccionada."
 
 #: MainWindow
 msgid ""
 "Are you sure you want to initialize the selected disk? All data will be "
-"lost. You will be asked again before changes are written to the disk.n"
+"lost. You will be asked again before changes are written to the disk.\\n"
 msgstr ""
-"Esteu segur que voleu iniciar el disc triat) Es perdran totes les dades. "
-"Encara us preguntarem un cop més abans d'escriure els canvis al disc.n"
+"Segur que voleu iniciar el disc seleccionat? Se'n perdran totes les dades. "
+"Se us preguntarà un cop més abans d'escriure els canvis al disc.\\n"
 
 #: MainWindow
 msgid "There was an error preparing the disk for modifications."
-msgstr "Hi hagut un error en preparar el disc per les modificacions."
+msgstr "Hi ha hagut un error en preparar el disc per a les modificacions."
 
 #: MainWindow
-msgid "The disk has been successfully initialized.n"
-msgstr "El disc s'ha iniciat correctament.n"
+msgid "The disk has been successfully initialized.\\n"
+msgstr "El disc s'ha iniciat correctament.\\n"
 
 #: MainWindow
 msgid ""
-"Should unmounting be forced?nnNote: If an application is currently writing "
-"to the volume, unmounting it now might result in loss of data.n"
+"Should unmounting be forced?\\n"
+"\\n"
+"Note: If an application is currently writing to the volume, unmounting it "
+"now might result in loss of data.\\n"
 msgstr ""
-"Cal forçar el desmuntatge?nnNota: Si ho ha alguna aplicació escrivint al "
-"volum, desmuntar-la ara podria suposar una pèrdua de dades.n"
+"Cal forçar el desmuntatge?\\n"
+"\\n"
+"Nota: si hi ha alguna aplicació escrivint al volum, desmuntar-lo ara podria "
+"comportar una pèrdua de dades.\\n"
 
 #: MainWindow
 msgctxt "MainWindow"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
+
+#: PartitionList
+msgid "Free space"
+msgstr "Espai lliure"
+
+#: PartitionList
+msgid "Queries"
+msgstr "Consultes"
 
 #: MainWindow
 msgid "Force unmount"
-msgstr "Força el desmuntatge"
+msgstr "Força'n el desmuntatge"
 
 #: MainWindow
 msgid "Partition"
@@ -307,7 +399,7 @@ msgstr "Partició"
 
 #: MainWindow
 msgid "Change parameters"
-msgstr "Canvia els paràmetres"
+msgstr "Canvia'n els paràmetres"
 
 #: MainWindow
 msgid "Rescan"
@@ -315,11 +407,15 @@ msgstr "Torna a explorar"
 
 #: MainWindow
 msgid "There was an error acquiring the partition row."
-msgstr "Hi hagut un error en llegir informació de la partició."
+msgstr "Hi ha hagut un error en obtenir la fila de particions."
 
 #: MainWindow
-msgid "Failed to initialize the disk %s!n"
-msgstr "No ha estat possible iniciar el disc %s!n"
+msgid "Failed to initialize the disk %s!\\n"
+msgstr "Ha fallat iniciar el disc %s!\\n"
+
+#: MainWindow
+msgid "Disk system \\\"%s\\\" not found!"
+msgstr "No s'ha trobat el disc de sistema \\\"%s\\\"!"
 
 #: MainWindow
 msgid "Delete"
@@ -334,8 +430,12 @@ msgid "Parameters"
 msgstr "Paràmetres"
 
 #: MainWindow
+msgid "Could not acquire partitioning information."
+msgstr "No s'ha pogut obtenir la informació de les particions."
+
+#: MainWindow
 msgid "Cannot delete the selected partition."
-msgstr "No ha estat possible suprimir la partició seleccionada."
+msgstr "No es pot suprimir la partició seleccionada."
 
 #: MainWindow
 msgid "Continue"
@@ -350,41 +450,64 @@ msgid ""
 "Are you sure you want to format the partition? You will be asked again "
 "before changes are written to the disk."
 msgstr ""
-"Esteu segur que voleu formatar la partició? Encara us preguntarem un cop més "
-"abans d'escriure els canvis al disc."
+"Segur que voleu formatar la partició? Se us preguntarà un cop més abans "
+"d'escriure els canvis al disc."
+
+#: PartitionList
+msgctxt "PartitionList"
+msgid "<empty or unknown>"
+msgstr "<buit o desconegut>"
 
 #: MainWindow
 msgid "The selected disk is read-only."
-msgstr "El disc triat és només de lectura."
+msgstr "El disc seleccionat és només de lectura."
 
 #: MainWindow
 msgid "The partition %s is already unmounted."
-msgstr "La partició %s ja està muntada."
+msgstr "La partició %s ja està desmuntada."
 
 #: MainWindow
 msgid ""
-"Are you sure you want to change parameters of the selected partition?nnThe "
-"partition may no longer be recognized by other operating systems anymore!"
+"Are you sure you want to change parameters of the selected partition?\\n"
+"\\n"
+"The partition may no longer be recognized by other operating systems anymore!"
 msgstr ""
-"Esteu segur que voleu canviar el paràmetres de la partició triada?nnEls "
-"altres sistemes operatius ja no podran reconèixer la partició!"
+"Segur que voleu canviar els paràmetres de la partició seleccionada?\\n"
+"\\n"
+"Els altres sistemes operatius podrien no reconèixer més la partició!"
+
+#: PartitionList
+msgid "Boot"
+msgstr "Arrencada"
 
 #: AbstractParametersPanel
 msgctxt "AbstractParametersPanel"
 msgid "OK"
 msgstr "D'acord"
 
+#: PartitionList
+msgctxt "PartitionList"
+msgid "Virtual"
+msgstr "Virtual"
+
+#: DiskView
+msgctxt "DiskView"
+msgid "Virtual"
+msgstr "Virtual"
+
 #: MainWindow
 msgid ""
-"Are you sure you want to write the changes back to disk now?nnAll data on "
-"the selected disk will be irretrievably lost if you do so!"
+"Are you sure you want to write the changes back to disk now?\\n"
+"\\n"
+"All data on the selected disk will be irretrievably lost if you do so!"
 msgstr ""
-"Esteu segur que voleu tornar a desar el canvis al disc ara?nnSi ho feu totes "
-"les dades del disc no es podran recuperar!"
+"Segur que voleu escriure el canvis al disc ara?\\n"
+"\\n"
+"Si ho feu, es perdran irrecuperablement totes les dades del disc seleccionat!"
 
 #: DiskView
 msgid "Select a partition from the list below."
-msgstr "Seleccioneu una partició de la llista d'aquí sota."
+msgstr "Seleccioneu una partició de la llista següent."
 
 #: PartitionList
 msgid "Active"
@@ -392,20 +515,21 @@ msgstr "Activa"
 
 #: MainWindow
 msgid ""
-"Are you sure you want to delete the selected partition?nnAll data on the "
-"partition will be irretrievably lost if you do so!"
+"Are you sure you want to delete the selected partition?\\n"
+"\\n"
+"All data on the partition will be irretrievably lost if you do so!"
 msgstr ""
-"Esteu segur que voleu tornar a suprimir la partició triada?nnSi ho feu totes "
-"les dades de la partició es perdran i no es podran recuperar!"
+"Segur que voleu suprimir la partició seleccionada?\\n"
+"\\n"
+"Si ho feu, es perdran irrecuperablement totes les dades de la partició!"
 
 #: MainWindow
 msgid "Failed to format the partition. No changes have been written to disk."
-msgstr ""
-"No ha estat possible formatar la partició. No s'han desat els canvis al disc."
+msgstr "Ha fallat formatar la partició. No s'ha escrit cap canvi al disc."
 
 #: MainWindow
-msgid "The partition %s has been successfully formatted.n"
-msgstr "La partició %s s'ha formatat correctament.n"
+msgid "The partition %s has been successfully formatted.\\n"
+msgstr "La partició %s s'ha formatat correctament.\\n"
 
 #: MainWindow
 msgid "The partition %s is already mounted."
@@ -417,7 +541,7 @@ msgstr "Mida"
 
 #: MainWindow
 msgid "Creation of the partition has failed."
-msgstr "No ha estat possible crear la partició."
+msgstr "Ha fallat crear la partició."
 
 #: MainWindow
 msgid "Mount"

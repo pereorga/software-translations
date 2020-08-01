@@ -1,28 +1,46 @@
-#. extracted from ../../haiku/data/catalogs/apps/magnify/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/magnify/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
+
+#: Console
+msgid "  size must be > 4 and a multiple of 4"
+msgstr "  cal que sigui > 4 i un múltiple de 4"
 
 #: Magnify-Main
 msgid "Decrease pixel size"
 msgstr "Redueix la mida del píxel"
 
+#: In+console,+when+clipboard+is+empty+after+clicking+Copy+image
+msgid "no clip msg"
+msgstr "res al porta-retalls"
+
 #: Magnify-Main
 msgid "Increase pixel size"
-msgstr "Incrementa la mida del píxel"
+msgstr "Augmenta la mida del píxel"
+
+#: Console
+msgid "magnify: size must be a multiple of 4"
+msgstr "magnify: la mida ha de ser un múltiple de 4"
 
 #: Magnify-Main
 msgid "Stick coordinates"
 msgstr "Fixa les coordenades"
+
+#: Magnify-Main
+msgid ""
+"%width x %height  @ {0, plural, one{# pixel/pixel} other{# pixels/pixel}}"
+msgstr ""
+"%width x %height  @ {0, plural, one{# píxel / píxel} other{# píxels / píxel}}"
 
 #: Magnify-Main
 msgid "Copy image"
@@ -30,15 +48,23 @@ msgstr "Copia la imatge"
 
 #: Magnify-Main
 msgid "Decrease window size"
-msgstr "Redueix l'amplada de la finestra"
+msgstr "Redueix la mida de la finestra"
 
 #: Magnify-Main
 msgid "Remove a crosshair"
-msgstr "Suprimeix un visor"
+msgstr "Suprimeix un reticle"
 
 #: Magnify-Main
 msgid "Add a crosshair"
-msgstr "Afegeix un visor"
+msgstr "Afegeix-hi un reticle"
+
+#: Magnify-Main
+msgid "Freeze image"
+msgstr "Congela la imatge"
+
+#: Console
+msgid "usage: magnify [size] (magnify size * size pixels)"
+msgstr "ús: magnify [mida] (mida d'ampliació * mida dels píxels)"
 
 #: Magnify-Main
 msgid "Increase window size"
@@ -48,6 +74,10 @@ msgstr "Augmenta l'amplada de la finestra"
 msgid "Save image"
 msgstr "Desa la imatge"
 
+#: Magnify-Main
+msgid "Show grid"
+msgstr "Mostra la graella"
+
 #: System+name
 msgid "Magnify"
 msgstr "Lupa"
@@ -55,6 +85,10 @@ msgstr "Lupa"
 #: Magnify-Main
 msgid "Info"
 msgstr "Informació"
+
+#: Magnify-Main
+msgid "Show info"
+msgstr "Mostra'n la informació"
 
 #: Magnify-Main
 msgid "Make square"

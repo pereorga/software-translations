@@ -1,41 +1,196 @@
-#. extracted from ../../haiku/data/catalogs/apps/mediaconverter/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/mediaconverter/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
+
+#: MediaConverter
+msgid "Writing audio track: %d%% complete"
+msgstr "S'escriu la pista d'àudio: %d%% completat"
+
+#: MediaConverter
+msgid "Input file not recognized as Audio or Video"
+msgstr "No es reconeix el fitxer d’entrada com a àudio ni vídeo."
+
+#: MediaFileInfo
+msgid "%u x %u, %.2ffps"
+msgstr "%u x %u, %.2ffps"
+
+#: MediaConverter
+msgid "Video quality: %3d%%"
+msgstr "Qualitat del vídeo: %3d%%"
+
+#: MediaConverter
+msgid "Source files"
+msgstr "Fitxers d'origen"
+
+#: MediaConverter
+msgid "Error writing video frame %ld"
+msgstr "Error en escriure el fotograma de vídeo %ld"
+
+#: MediaConverter
+msgid "Error converting '%filename'"
+msgstr "Error en convertir %filename"
+
+#: MediaConverter
+msgid "Selected directory not found. Defaulting to /boot/home"
+msgstr "No s'ha trobat el directori seleccionat. Es restableix a /boot/home."
+
+#: MediaConverter
+msgid "Conversion completed"
+msgstr "Conversió completada"
+
+#: MediaConverter-FileInfo
+msgid "Audio:"
+msgstr "Àudio:"
+
+#: MediaConverter
+msgid "MediaConverter+:SaveDirectory"
+msgstr "MediaConverter+: directori on desar"
+
+#: MediaConverter
+msgid "Error creating video."
+msgstr "Error en crear el vídeo."
 
 #: MediaConverter
 msgid "Cancelling"
-msgstr "S'està cancel·lant"
+msgstr "Es cancel·la"
+
+#: Audio+codecs
+msgctxt "Audio codecs"
+msgid "None available"
+msgstr "Cap de disponible"
+
+#: MediaConverter-FileInfo
+msgid "No file selected"
+msgstr "Cap fitxer seleccionat"
+
+#: MediaConverter
+msgid "High"
+msgstr "Alt"
+
+#: MediaConverter
+msgid ""
+"{0, plural, one{The file was not recognized as a supported media file:} "
+"other{# files were not recognized as supported media files:}}"
+msgstr ""
+"{0, plural, one{El fitxer no s'ha reconegut com a fitxer multimèdia "
+"compatible:} other{# fitxers no s'han reconegut com a fitxers multimèdia "
+"compatibles:}}"
+
+#: MediaConverter-FileInfo
+msgid "File Error"
+msgstr "Error del fitxer"
+
+#: Video+codecs
+msgctxt "Video codecs"
+msgid "None available"
+msgstr "Cap de disponible"
+
+#: MediaConverter
+msgid "Output format"
+msgstr "Format de sortida"
+
+#: MediaFileInfo
+msgid "%.1f kHz mono"
+msgstr "%.1f kHz mono"
+
+#: MediaFileInfo
+msgid "%.1f kHz stereo"
+msgstr "%.1f kHz estèreo"
 
 #: MediaConverter
 msgctxt "MediaConverter"
 msgid "OK"
 msgstr "D'acord"
 
+#: MediaConverter
+msgid "Error creating '%filename'"
+msgstr "Error en crear %filename"
+
+#: MediaConverter
+msgid "Error loading a file"
+msgstr "Error en carregar un fitxer"
+
+#: MediaConverter-EncoderWindow
+msgid "Encoder parameters"
+msgstr "Paràmetres del codificador"
+
 #: Menu
 msgid "Open…"
 msgstr "Obre..."
 
 #: MediaConverter
+msgid "Audio encoding:"
+msgstr "Codificació de l'àudio:"
+
+#: MediaConverter
+msgid "Audio quality: %3d%%"
+msgstr "Qualitat de l'àudio: %3d%%"
+
+#: MediaConverter
 msgid "Cancelling…"
-msgstr "S'està cancel·lant..."
+msgstr "Es cancel·la..."
+
+#: MediaConverter
+msgid "Output file '%filename' created"
+msgstr "S'ha creat el fitxer de sortida %filename."
+
+#: MediaConverter
+msgid "Output folder"
+msgstr "Carpeta de sortida"
+
+#: MediaConverter
+msgid "Error creating track."
+msgstr "Error en crear la pista."
+
+#: MediaFileInfo
+msgid " seconds"
+msgstr " segons"
+
+#: MediaConverter
+msgid "Video using parameters form settings"
+msgstr "Vídeo que usa paràmetres de la configuració"
+
+#: MediaConverter-FileInfo
+msgid "Video:"
+msgstr "Vídeo:"
+
+#: MediaConverter
+msgid "Select"
+msgstr "Selecciona"
 
 #: MediaConverter
 msgid "Conversion cancelled"
 msgstr "S'ha cancel·lat la conversió"
 
 #: MediaConverter
+msgid "Low"
+msgstr "Baix"
+
+#: MediaConverter
+msgid "Error loading files"
+msgstr "Error en carregar fitxers"
+
+#: MediaFileInfo
+msgid "{0, plural, one{# bit} other{# bits}}"
+msgstr "{0, plural, one{# bit} other{# bits}}"
+
+#: MediaConverter
+msgid "End   [ms]: "
+msgstr "Fi   [ms]: "
+
+#: MediaConverter
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: MediaConverter-FileInfo
 msgctxt "MediaConverter-FileInfo"
@@ -43,5 +198,124 @@ msgid "OK"
 msgstr "D'acord"
 
 #: MediaConverter
+msgid "Error read audio frame %ld"
+msgstr "Error en llegir el marc de l'àudio %ld"
+
+#: MediaConverter
+msgid "Video encoding:"
+msgstr "Codificació de vídeo:"
+
+#: MediaConverter-FileInfo
+msgid ""
+"An error has occurred reading the file info.\\n"
+"\\n"
+"Error : "
+msgstr ""
+"Hi ha hagut un error en llegir la informació del fitxer.\\n"
+"\\n"
+"Error: "
+
+#: MediaConverter
+msgid "Error"
+msgstr "Error"
+
+#: MediaConverter
+msgid "File details"
+msgstr "Detalls del fitxer"
+
+#: Audio+codecs+list
+msgid "No audio"
+msgstr "Sense àudio"
+
+#: MediaConverter
+msgid "Drop media files onto this window"
+msgstr "Deixeu anar fitxers multimèdia en aquesta finestra."
+
+#: MediaFileInfo
+msgid "{0, plural, one{# frame} other{# frames}}"
+msgstr "{0, plural, one{# fotograma} other{# fotogrames}}"
+
+#: Menu
+msgid "Quit"
+msgstr "Surt"
+
+#: MediaFileInfo
+msgid "{0, plural, one{# byte} other{# bytes}}"
+msgstr "{0, plural, one{# byte} other{# bytes}}"
+
+#: MediaConverter-FileInfo
+msgid "Duration:"
+msgstr "Durada:"
+
+#: System+name
+msgid "MediaConverter"
+msgstr "Convertidor multimèdia"
+
+#: MediaConverter
+msgid "Error launching: %strError%"
+msgstr "Error d'obertura: %strError%"
+
+#: MediaConverter
+msgid "File format:"
+msgstr "Format del fitxer:"
+
+#: MediaConverter
+msgid "Error writing audio frame %ld"
+msgstr "Error en escriure el marc d'àudio %ld"
+
+#: Menu
+msgid "File"
+msgstr "Fitxer"
+
+#: MediaConverter
+msgid "Video quality not supported"
+msgstr "No s'admet la qualitat del vídeo."
+
+#: MediaConverter
+msgid "Select this folder"
+msgstr "Selecciona aquesta carpeta"
+
+#: MediaConverter
+msgid "Error read video frame %ld"
+msgstr "Error en llegir el fotograma de vídeo %ld"
+
+#: MediaFileInfo
+msgid "%.1f kHz %ld channel"
+msgstr "%.1f kHz, canal %ld"
+
+#: MediaFileInfo
+msgid "%d bit "
+msgstr "%d bit "
+
+#: Video+codecs+list
+msgid "No video"
+msgstr "Sense vídeo"
+
+#: MediaConverter
 msgid "Continue"
 msgstr "Continua"
+
+#: MediaConverter
+msgid "Convert"
+msgstr "Conveteix"
+
+#: MediaConverter
+msgid "Audio quality not supported"
+msgstr "No s'admet la qualitat d'àudio."
+
+#: MediaConverter
+msgid ""
+"Error writing to location: %strPath%. Defaulting to location: /boot/home"
+msgstr "Error en escriure a la ubicació: %strPath%. Es restableix a /boot/home."
+
+#: MediaConverter
+msgid "Writing video track: %d%% complete"
+msgstr "S'escriu la pista de vídeo: %d%% completat"
+
+#: MediaConverter
+msgid "Preview"
+msgstr "Previsualització"
+
+#: MediaConverter
+msgid "Start [ms]: "
+msgstr "Inici [ms]: "

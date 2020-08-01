@@ -1,16 +1,24 @@
-#. extracted from ../../haiku/data/catalogs/kits/ca.csv
+#. extracted from ./haiku/data/catalogs/kits/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:36+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
+
+#: StringForSize
+msgid "{0, plural, one{# byte} other{# bytes}}"
+msgstr "{0, plural, one{# byte} other{# bytes}}"
+
+#: StringForRate
+msgid "%.2f TiB/s"
+msgstr "%.2f TiB/s"
 
 #: AboutWindow
 msgid "All Rights Reserved."
@@ -18,11 +26,16 @@ msgstr "Tots els drets reservats."
 
 #: AboutWindow
 msgid "gold master"
-msgstr "mestre daurat"
+msgstr "candidat"
 
 #: TextView
 msgid "Undo"
 msgstr "Desfés"
+
+#: PrintJob
+msgctxt "PrintJob"
+msgid "OK"
+msgstr "D'acord"
 
 #: AboutWindow
 msgid "gamma"
@@ -37,10 +50,9 @@ msgctxt "Dragger"
 msgid "OK"
 msgstr "D'acord"
 
-#: PrintJob
-msgctxt "PrintJob"
-msgid "OK"
-msgstr "D'acord"
+#: StringForRate
+msgid "%3.2f GiB/s"
+msgstr "%3.2f GiB/s"
 
 #: PrintJob
 msgid "Print Server is not responding."
@@ -59,9 +71,17 @@ msgstr "Avís"
 msgid "Green:"
 msgstr "Verd:"
 
+#: StringForRate
+msgid "%3.2f KiB/s"
+msgstr "%3.2f KiB/s"
+
 #: TextView
 msgid "Redo"
 msgstr "Refés"
+
+#: PrintJob
+msgid "No pages to print!"
+msgstr "No hi ha cap pàgina per imprimir!"
 
 #: AboutWindow
 msgid "beta"
@@ -80,12 +100,16 @@ msgstr "Retalla"
 msgid "%3.2f GiB"
 msgstr "%3.2f GiB"
 
+#: Default+decorator+about+box
+msgid "Default"
+msgstr "Per defecte"
+
 #: Dragger
 msgid ""
 "Can't delete this replicant from its original application. Life goes on."
 msgstr ""
-"No ha estat possible suprimir aquest replicant de la seva aplicació "
-"original. Continuem."
+"No s'ha pogut suprimir aquest replicant de la seva aplicació original. La "
+"vida continua."
 
 #: ZombieReplicantView
 msgctxt "ZombieReplicantView"
@@ -101,9 +125,17 @@ msgctxt "AboutWindow"
 msgid "OK"
 msgstr "D'acord"
 
+#: StringForRate
+msgid "{0, plural, one{# byte/s} other{# bytes/s}}"
+msgstr "{0, plural, one{# byte/s} other{# bytes/s}}"
+
 #: AboutWindow
 msgid "Special Thanks:"
 msgstr "Agraïments especials:"
+
+#: Default+decorator+about+box
+msgid "Default Haiku window decorator."
+msgstr "Decorador de finestres per defecte del Haiku"
 
 #: StringForSize
 msgid "%.2f TiB"
@@ -111,7 +143,7 @@ msgstr "%.2f TiB"
 
 #: Dragger
 msgid "Remove replicant"
-msgstr "Suprimeix la replica"
+msgstr "Suprimeix el replicant"
 
 #: AboutWindow
 msgid "Version"
@@ -129,6 +161,10 @@ msgstr "<buit>"
 msgid "Copy"
 msgstr "Copia"
 
+#: TextView
+msgid "Select all"
+msgstr "Selecciona-ho tot"
+
 #: AboutWindow
 msgid "alpha"
 msgstr "alfa"
@@ -137,10 +173,14 @@ msgstr "alfa"
 msgid "%3.2f MiB"
 msgstr "%3.2f MiB"
 
+#: StringForRate
+msgid "%3.2f MiB/s"
+msgstr "%3.2f MiB/s"
+
 #: PrintJob
 msgctxt "PrintJob"
 msgid "Error"
-msgstr "S'ha produït un error"
+msgstr "Error"
 
 #: AboutWindow
 msgctxt "AboutWindow"
@@ -149,7 +189,7 @@ msgstr "Quant a %app%"
 
 #: Dragger
 msgid "About %app…"
-msgstr "Quan a %app…"
+msgstr "Quant a %app…"
 
 #: AboutWindow
 msgid "Version history:"
@@ -158,10 +198,12 @@ msgstr "Historial de versions:"
 #: ZombieReplicantView
 msgid ""
 "Cannot locate the application for the replicant. No application signature "
-"supplied.n%error"
+"supplied.\\n"
+"%error"
 msgstr ""
-"No eś troba l'aplicació del replicant. No s'ha facilitat cap firma de "
-"l'aplicació.n%error"
+"No es pot trobar l'aplicació del replicant. No s'ha proporcionat cap "
+"signatura de l'aplicació.\\n"
+"%error"
 
 #: StringForSize
 msgid "%3.2f KiB"
@@ -172,8 +214,12 @@ msgid "Blue:"
 msgstr "Blau:"
 
 #: ZombieReplicantView
-msgid "Cannot create the replicant for \"%description\"\".n%error\""
-msgstr "No es possible replicar \"%description\"\".n%error\""
+msgid ""
+"Cannot create the replicant for \\\"%description\\\".\\n"
+"%error"
+msgstr ""
+"No es pot crear el replicant per a \\\"%description\\\".\\n"
+"%error"
 
 #: AboutWindow
 msgid "Written by:"

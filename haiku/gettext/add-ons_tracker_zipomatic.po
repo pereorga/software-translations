@@ -1,16 +1,16 @@
-#. extracted from ../../haiku/data/catalogs/add-ons/tracker/zipomatic/ca.csv
+#. extracted from ./haiku/data/catalogs/add-ons/tracker/zipomatic/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Drop files here."
@@ -22,23 +22,23 @@ msgstr "Nom del fitxer: %s"
 
 #: file:ZipOMatic.cpp
 msgid "Do you want to stop them?"
-msgstr "Voleu aturar-los?"
+msgstr "Voleu interrompre'ls?"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Error creating archive"
-msgstr "S'ha produït un error en crear l'arxiu"
+msgstr "Error en crear l'arxiu."
 
 #: file:ZipOMatic.cpp
 msgid "Stop them"
-msgstr "Atura'ls"
+msgstr "Interromp-los"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Are you sure you want to stop creating this archive?"
-msgstr "Esteu segur que no voleu generar aquest fitxer?"
+msgstr "Segur que voleu interrompre la creació d'aquest arxiu?"
 
 #: file:ZipperThread.cpp
 msgid "Preparing to archive"
-msgstr "S'està preparant per arxivar-ho"
+msgstr "Es prepara l'arxivament"
 
 #: file:ZipOMatic.cpp
 msgid "Let them continue"
@@ -50,15 +50,19 @@ msgstr "Continua"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Archive created OK"
-msgstr "L'arxiu s'ha generat correctament"
+msgstr "L'arxiu s'ha creat correctament"
+
+#: file:ZipOMaticWindow.cpp
+msgid "{0, plural, one{# file added.} other{# files added.}}"
+msgstr "{0, plural, one{# fitxer afegit.} other{# fitxers afegits.}}"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Stop"
-msgstr "Atura"
+msgstr "Interromp"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Stopped"
-msgstr "Aturat"
+msgstr "Interromput"
 
 #: file:ZipperThread.cpp
 msgid "Archive"
@@ -66,4 +70,12 @@ msgstr "Arxiva"
 
 #: file:ZipOMaticWindow.cpp
 msgid "Creating archive: %s"
-msgstr "S'està creant l'arxiu: %s"
+msgstr "Es crea l'arxiu: %s"
+
+#: file:ZipOMatic.cpp
+msgid ""
+"You have {0, plural, one{# Zip-O-Matic} other{# Zip-O-Matics}} running.\\n"
+"\\n"
+msgstr ""
+"Teniu {0, plural, one{# Zipomàtic} other{# Zipomàtics}} en execució.\\n"
+"\\n"

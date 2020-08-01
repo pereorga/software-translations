@@ -1,20 +1,20 @@
-#. extracted from ../../haiku/data/catalogs/apps/mail/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/mail/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: Mail
 msgid "Set to Saved"
-msgstr "Marca com a desat"
+msgstr "Estableix com a desat"
 
 #: Mail
 msgid ""
@@ -26,7 +26,7 @@ msgstr ""
 "El vostre text principal conté %ld caràcters no codificables. Potser amb un "
 "conjunt de caràcters diferent funcionaria millor? Premeu Envia per enviar-ho "
 "tanmateix (se substituiran per altres els caràcters que no es puguin "
-"codificar), o bé trieu Cancel·la per tornar i intentar corregir-ho."
+"codificar), o bé trieu Cancel·la per tornar enrere i intentar esmenar-ho."
 
 #: Mail
 msgid "Text wrapping:"
@@ -50,11 +50,15 @@ msgstr "Missatge següent"
 
 #: Mail
 msgid "Mailing"
-msgstr "Combinació de correu"
+msgstr "Correu"
 
 #: Mail
 msgid "Unread"
 msgstr "Sense llegir"
+
+#: Mail
+msgid "Same sender"
+msgstr "El mateix remitent"
 
 #: Mail
 msgid "Copy to new"
@@ -62,7 +66,7 @@ msgstr "Copia-ho a un missatge nou"
 
 #: Mail
 msgid "Save as draft"
-msgstr "Desa-ho com a esborrany"
+msgstr "Desa'l com a esborrany"
 
 #: Mail
 msgid "Encoding:"
@@ -73,8 +77,16 @@ msgid "Print"
 msgstr "Imprimeix"
 
 #: Mail
+msgid "Decrease quote level"
+msgstr "Redueix el nivell de citació"
+
+#: Mail
+msgid "Encoding"
+msgstr "Codificació"
+
+#: Mail
 msgid "Default account:"
-msgstr "Compte per omissió:"
+msgstr "Compte per defecte:"
 
 #: Mail
 msgid "Message"
@@ -101,8 +113,8 @@ msgid "Button bar:"
 msgstr "Barra dels botons:"
 
 #: Mail
-msgid "%e wrote:\\n"
-msgstr "%e ha escrit:\\n"
+msgid "%e wrote:\\\\n"
+msgstr "%e ha escrit:\\\\n"
 
 #: Mail
 msgid "Save changes to this signature?"
@@ -110,7 +122,7 @@ msgstr "Voleu desar els canvis d'aquesta signatura?"
 
 #: Mail
 msgid "Save attachment…"
-msgstr "Desa l'adjunt..."
+msgstr "Desa el fitxer adjunt..."
 
 #: Mail
 msgid "Paste"
@@ -118,7 +130,7 @@ msgstr "Enganxa"
 
 #: Mail
 msgid "E-mail draft could not be saved!"
-msgstr "No ha estat possible desar l'esborrany!"
+msgstr "No s'ha pogut desar l'esborrany!"
 
 #: Mail
 msgid "Don't send"
@@ -130,7 +142,7 @@ msgstr "enviat"
 
 #: Mail
 msgid "Only files can be added as attachments."
-msgstr "Només es poden afegir fitxers amb els adjunts."
+msgstr "Només es poden afegir fitxers com a adjunts."
 
 #: Mail
 msgid "Close"
@@ -142,11 +154,15 @@ msgstr "Sense títol"
 
 #: Mail
 msgid ""
-"Removing attachments from a forwarded mail is not yet implemented!nIt will "
-"not yet work correctly."
+"Removing attachments from a forwarded mail is not yet implemented!\\n"
+"It will not yet work correctly."
 msgstr ""
-"Encara no està desenvolupada la supressió d'adjunts reenviats!nNo funcionarà "
-"correctament."
+"Encara no està implementada la supressió d'adjunts de missatges reenviats!\\n"
+"Encara no funcionarà correctament."
+
+#: Mail
+msgid "Same recipient"
+msgstr "El mateix destinatari"
 
 #: Mail
 msgid "Previous message"
@@ -158,11 +174,11 @@ msgstr "(L'adreça no està disponible)"
 
 #: System+name
 msgid "Mail"
-msgstr "Correu electrònic"
+msgstr "Correu"
 
 #: Mail
 msgid "Enclosure: %name% (Type: %type%)"
-msgstr "Adjunt: %name% (Tipus: %type%)"
+msgstr "Annex: %name% (Tipus: %type%)"
 
 #: Mail
 msgid "Copy link location"
@@ -174,7 +190,7 @@ msgstr "Fitxers adjunts: "
 
 #: Mail
 msgid "Remove enclosure"
-msgstr "Suprimeix l'adjunt"
+msgstr "Suprimeix l'annex"
 
 #: Mail
 msgid "Next"
@@ -182,7 +198,7 @@ msgstr "Següent"
 
 #: Mail
 msgid "Attachments:"
-msgstr "Fitxers inclosos:"
+msgstr "Fitxers adjunts:"
 
 #: Mail
 msgid "Show icons only"
@@ -214,7 +230,7 @@ msgstr "Compte de correu"
 
 #: Mail
 msgid "%e - E-mail address"
-msgstr "%e - Adreça de correu electrònic"
+msgstr "%e - Adreça electrònica"
 
 #: Mail
 msgid "Cc:"
@@ -238,11 +254,11 @@ msgstr "Respon al remitent"
 
 #: Mail
 msgid ""
-"\\n"
+"\\\\n"
 " - Newline"
 msgstr ""
-"\\n"
-" - Nova línia"
+"\\\\n"
+" - Línia nova"
 
 #: Mail
 msgid "Copy"
@@ -250,7 +266,7 @@ msgstr "Copia"
 
 #: Mail
 msgid "Add signature"
-msgstr "Afegeix una signatura"
+msgstr "Afegeix-hi una signatura"
 
 #: Mail
 msgid "%n - Full name"
@@ -262,7 +278,7 @@ msgstr "Signatura"
 
 #: Mail
 msgid "Use default account"
-msgstr "Utilitza el compte predeterminat"
+msgstr "Usa el compte per defecte"
 
 #: B_USER_DIRECTORY/mail/draft
 msgid "draft"
@@ -274,15 +290,15 @@ msgstr "Realment voleu suprimir aquesta signatura? No ho podreu desfer."
 
 #: B_USER_DIRECTORY/mail/spam
 msgid "spam"
-msgstr "correu brossa"
+msgstr "brossa"
 
 #: Mail
 msgid "Reply to all"
-msgstr "Respon a tots"
+msgstr "Respon a tothom"
 
 #: Mail
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: Mail
 msgid "Off"
@@ -298,7 +314,7 @@ msgstr "Signatura:"
 
 #: Mail
 msgid "Forward without attachments"
-msgstr "Reenvia sense els adjunts"
+msgstr "Reenvia sense els fitxers adjunts"
 
 #: B_USER_DIRECTORY/mail/queries
 msgid "queries"
@@ -318,14 +334,14 @@ msgstr "Actiu"
 
 #: Mail
 msgid "Find"
-msgstr "Cerca"
+msgstr "Troba"
 
 #: Mail
 msgid ""
 "Sorry, could not find an application that supports the 'Person' data type."
 msgstr ""
-"Ho sentim, no ha estat possible trobar una aplicació que conegui el tipus de "
-"dada 'Persona'."
+"Disculpeu, no s'ha pogut trobar cap aplicació que admeti el tipus de dada \""
+"Persona\"."
 
 #: Mail
 msgid "Date:"
@@ -337,7 +353,7 @@ msgstr "Expert"
 
 #: Mail
 msgid "Automatically mark mail as read:"
-msgstr "Marca automàticament els correus com a llegits:"
+msgstr "Marca automàticament els missatges com a llegits:"
 
 #: Mail
 msgid "Close and "
@@ -360,6 +376,10 @@ msgid "Auto signature:"
 msgstr "Auto signatura:"
 
 #: Mail
+msgid "Same subject"
+msgstr "El mateix assumpte"
+
+#: Mail
 msgid "Send"
 msgstr "Envia"
 
@@ -369,7 +389,7 @@ msgstr "Obre l'esborrany"
 
 #: Mail
 msgid "Leave as 'New'"
-msgstr "Deixa-ho com a 'Nou'"
+msgstr "Deixa-ho com a nou"
 
 #: Mail
 msgid "Random"
@@ -377,7 +397,7 @@ msgstr "Aleatori"
 
 #: Mail
 msgid "Attach attributes:"
-msgstr "Inclou els atributs:"
+msgstr "Atributs del fitxer adjunt:"
 
 #: Mail
 msgid "Find again"
@@ -393,11 +413,15 @@ msgstr "A:"
 
 #: Mail
 msgid "Need Tracker to move items to trash"
-msgstr "Cal el Rastrejador per tal de moure els elements a la parerera"
+msgstr "Cal el Rastrejador per moure elements a la paperera."
 
 #: Mail
-msgid "The mail_daemon could not be started:nt"
-msgstr "No ha estat possible engegar el dimoni del correu:nt"
+msgid ""
+"The mail_daemon could not be started:\\n"
+"\\t"
+msgstr ""
+"No s'ha pogut iniciar el dimoni del correu:\\n"
+"\\t"
 
 #: Mail
 msgid "<no account found>"
@@ -405,7 +429,7 @@ msgstr "<no s'ha trobat cap compte>"
 
 #: Mail
 msgid "Mail couldn't find its dictionary."
-msgstr "No ha estat possible trobar aquest diccionari."
+msgstr "El Correu no ha pogut trobar el diccionari."
 
 #: Mail
 msgid "Mail preferences"
@@ -433,7 +457,7 @@ msgstr "Anterior"
 
 #: Mail
 msgid "Include file attributes in attachments"
-msgstr "Inclou els atributs del fitxer amb els adjunts"
+msgstr "Inclou els atributs dels fitxers als adjunts"
 
 #: Mail
 msgid "Start now"
@@ -457,7 +481,7 @@ msgstr "%d - Data"
 
 #: Mail
 msgid "Check spelling"
-msgstr "Revisa l'ortografia"
+msgstr "Revisa'n l'ortografia"
 
 #: Mail
 msgid "Redo"
@@ -465,7 +489,7 @@ msgstr "Refés"
 
 #: Mail
 msgid "Leave as '%s'"
-msgstr "Deixa-ho com a '%s'"
+msgstr "Deixa-ho com a \"%s'\""
 
 #: Mail
 msgid "Print…"
@@ -489,7 +513,7 @@ msgstr "Mostra el missatge en cru"
 
 #: Mail
 msgid "Find…"
-msgstr "Cerca…"
+msgstr "Troba..."
 
 #: Mail
 msgid "Select all"
@@ -505,7 +529,7 @@ msgstr "Compte de resposta:"
 
 #: Mail
 msgid "Sorry"
-msgstr "Ho sentim"
+msgstr "Disculpeu"
 
 #: Mail
 msgid "Forward"
@@ -513,7 +537,7 @@ msgstr "Reenvia"
 
 #: Mail
 msgid "Open attachment"
-msgstr "Obre l'adjunt"
+msgstr "Obre el fitxer adjunt"
 
 #: B_USER_DIRECTORY/mail
 msgid "mail"
@@ -521,15 +545,15 @@ msgstr "correu"
 
 #: Mail
 msgid "Save this message as a draft before closing?"
-msgstr "Voleu desar aquest missatge abans de tancar?"
+msgstr "Voleu desar aquest missatge com a esborrany abans de tancar?"
 
 #: Mail
 msgid ""
 "The mail_daemon is not running. The message is queued and will be sent when "
 "the mail_daemon is started."
 msgstr ""
-"El dimoni del correu no està en execució. S'ha afegit el missatge a la cua i "
-"s'enviarà que s'arrenqui el dimoni."
+"El dimoni del correu no s'executa. S'ha afegit el missatge a la cua i "
+"s'enviarà que se n'iniciï el dimoni."
 
 #: Mail
 msgid "None"
@@ -549,7 +573,7 @@ msgstr "De :"
 
 #: Mail
 msgid "No file attributes, just plain data"
-msgstr "No hi ha cap atribut del fitxer, només dades simples"
+msgstr "No hi ha cap atribut del fitxer, només dades netes."
 
 #: Mail
 msgid "Add"
@@ -581,7 +605,7 @@ msgstr "Deixa-ho igual"
 
 #: Mail
 msgid "An error occurred trying to save the attachment."
-msgstr "S'ha produït un error en desar el fitxer inclòs."
+msgstr "Hi ha hagut un error en desar el fitxer adjunt."
 
 #: Mail
 msgid "Save address"
@@ -589,7 +613,7 @@ msgstr "Desa l'adreça"
 
 #: Mail
 msgid "Initial spell check mode:"
-msgstr "Mode de correcció ortogràfica inicial:"
+msgstr "Mode de revisió ortogràfica inicial:"
 
 #: Mail
 msgid "Edit queries…"
@@ -597,7 +621,7 @@ msgstr "Edita les consultes..."
 
 #: Mail
 msgid "There is no installed handler for URL links."
-msgstr "No hi ha cap gestor d'enllaços URL instal·lat."
+msgstr "No hi ha instal·lat cap gestor d'enllaços d'URL."
 
 #: Mail
 msgid "File"
@@ -609,7 +633,7 @@ msgstr "Preàmbul de la resposta:"
 
 #: Mail
 msgid "New mail message"
-msgstr "Nou missatge de correu"
+msgstr "Missatge de correu nou"
 
 #: Mail
 msgid "An error occurred trying to open this signature."
@@ -625,11 +649,11 @@ msgstr "Interfície d'usuari"
 
 #: Mail
 msgid "Inconsistency occurred in the undo/redo buffer."
-msgstr "S'ha produït una inconsistència en desfer/ refer la memòria intermèdia."
+msgstr "Hi ha hagut una inconsistència en desfer / refer la memòria intermèdia."
 
 #: Mail
 msgid "Remove attachment"
-msgstr "Suprimeix l'adjunt"
+msgstr "Suprimeix el fitxer adjunt"
 
 #: Mail
 msgid "Set to…"
@@ -662,17 +686,29 @@ msgstr "Suprimeix"
 #: Mail
 msgid "Put your favorite e-mail queries and query templates in this folder."
 msgstr ""
-"Poseu les vostres consultes correu i plantilles de consultes en aquesta "
-"carpeta."
+"Poseu les consultes de correu i plantilles de consultes preferides en "
+"aquesta carpeta."
+
+#: Mail
+msgid "Spam"
+msgstr "Brossa"
 
 #: Mail
 msgid "Couldn't open this signature. Sorry."
-msgstr "Ho sentim. No ha estat possible obrir aquesta signatura."
+msgstr "No s'ha pogut obrir aquesta signatura. Disculpeu."
 
 #: Mail
 msgid "Revert"
 msgstr "Reverteix"
 
 #: Mail
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: Mail
+msgid "Increase quote level"
+msgstr "Augmenta el nivell de citació"
+
+#: Mail
 msgid "Add enclosure…"
-msgstr "Afegeix un fitxer..."
+msgstr "Afegeix-hi un annex..."

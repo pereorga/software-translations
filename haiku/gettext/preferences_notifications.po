@@ -1,26 +1,110 @@
-#. extracted from ../../haiku/data/catalogs/preferences/notifications/ca.csv
+#. extracted from ./haiku/data/catalogs/preferences/notifications/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:36+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
+
+#: GeneralView
+msgid "Lower left"
+msgstr "A baix a l’esquerra"
+
+#: NotificationView
+msgid "Application does not have a valid signature"
+msgstr "L’aplicació no té una signatura vàlida."
+
+#: NotificationView
+msgid "Status"
+msgstr "Estat"
+
+#: NotificationView
+msgid "Add…"
+msgstr "Afegeix..."
+
+#: GeneralView
+msgid "Lower right"
+msgstr "A baix a la dreta"
+
+#: NotificationView
+msgid "Muted"
+msgstr "Silenciat"
+
+#: NotificationView
+msgid " is already listed"
+msgstr " ja és a la llista"
 
 #: PrefletWin
+msgctxt "PrefletWin"
 msgid "OK"
 msgstr "D'acord"
+
+#: PrefletWin
+msgctxt "PrefletWin"
+msgid "Notifications"
+msgstr "Notificacions"
+
+#: PrefletWin
+msgid "Notifications preflet sample"
+msgstr "Exemple d'aplicació de preferències de notificacions"
+
+#: NotificationView
+msgid "Mute notifications from this application"
+msgstr "Silencia les notificacions d'aquesta aplicació."
+
+#: GeneralView
+msgid "wide"
+msgstr "ampla"
+
+#: GeneralView
+msgid "narrow"
+msgstr "estreta"
 
 #: PrefletWin
 msgid "Revert"
 msgstr "Reverteix"
 
+#: PrefletView
+msgctxt "PrefletView"
+msgid "Applications"
+msgstr "Aplicacions"
+
+#: GeneralView
+msgid "{0, plural, =1{Timeout: # second}other{Timeout: # seconds}}"
+msgstr "{0, plural, =1{Temps d'espera: # segon}other{Temps d'espera: # segons}}"
+
+#: GeneralView
+msgid "Upper right"
+msgstr "A dalt a la dreta"
+
+#: PrefletWin
+msgid ""
+"An error occurred saving the preferences.\\n"
+"It's possible you are running out of disk space."
+msgstr ""
+"Hi ha hagut un error en desar les preferències.\\n"
+"És possible que us estigueu quedant sense espai de disc."
+
+#: PrefletWin
+msgid "Defaults"
+msgstr "Valors predeterminats"
+
+#: GeneralView
+msgid "Upper left"
+msgstr "A dalt a l'esquerra"
+
+#: GeneralView
+msgid "Window width"
+msgstr "Amplada de la finestra"
+
 #: NotificationView
+msgctxt "NotificationView"
 msgid "Applications"
 msgstr "Aplicacions"
 
@@ -28,13 +112,27 @@ msgstr "Aplicacions"
 msgid "General"
 msgstr "General"
 
+#: NotificationView
+msgctxt "NotificationView"
+msgid "OK"
+msgstr "D'acord"
+
+#: GeneralView
+msgid "Follow Deskbar"
+msgstr "Segueix la barra d'escriptori"
+
 #: System+name
+msgctxt "System name"
 msgid "Notifications"
 msgstr "Notificacions"
 
 #: NotificationView
 msgid "Allowed"
 msgstr "Permès"
+
+#: GeneralView
+msgid "Duration:"
+msgstr "Durada:"
 
 #: NotificationView
 msgid "Application"
@@ -43,3 +141,15 @@ msgstr "Aplicació"
 #: GeneralView
 msgid "Enable notifications"
 msgstr "Habilita les notificacions"
+
+#: PrefletWin
+msgid "This is a test notification message"
+msgstr "Aquest és un missatge de prova de notificació."
+
+#: NotificationView
+msgid "Remove"
+msgstr "Suprimeix"
+
+#: GeneralView
+msgid "Position:"
+msgstr "Posició:"

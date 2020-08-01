@@ -1,16 +1,16 @@
-#. extracted from ../../haiku/data/catalogs/preferences/time/ca.csv
+#. extracted from ./haiku/data/catalogs/preferences/time/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:36+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: Time
 msgid "OK"
@@ -18,15 +18,27 @@ msgstr "D'acord"
 
 #: Time
 msgid "Message receiving failed"
-msgstr "No ha estat possible rebre el missatge"
+msgstr "Ha fallat rebre el missatge."
 
 #: Time
 msgid ""
-"Time & Date, written by:nntAndrew Edward McCallntMike BergntJulunntPhilippe "
-"Saint-PierrennCopyright 2004-2012, Haiku."
+"Time & Date, written by:\\n"
+"\\n"
+"\\tAndrew Edward McCall\\n"
+"\\tMike Berg\\n"
+"\\tJulun\\n"
+"\\tPhilippe Saint-Pierre\\n"
+"\\n"
+"Copyright 2004-2012, Haiku."
 msgstr ""
-"Di i Hora, escrit per:nntAndrew Edward McCallntMike BergntJulunntPhilippe "
-"Saint-PierrennCopyright 2004-2012, Haiku."
+"Dia i hora, escrita per\\n"
+"\\n"
+"\\tAndrew Edward McCall\\n"
+"\\tMike Berg\\n"
+"\\tJulun\\n"
+"\\tPhilippe Saint-Pierre\\n"
+"\\n"
+"Copyright 2004-2012, Haiku."
 
 #: Time
 msgid "Australia"
@@ -37,16 +49,24 @@ msgid "America"
 msgstr "Amèrica"
 
 #: Time
+msgid "Reset to default server list"
+msgstr "Restableix la llista de servidors predeterminada"
+
+#: Time
+msgid "Could not resolve server address"
+msgstr "No s'ha pogut resoldre l'adreça del servidor."
+
+#: Time
 msgid "Set time zone"
-msgstr "Tria el fus horari"
+msgstr "Estableix la zona horària"
 
 #: Time
 msgid "Waiting for answer failed"
-msgstr "No ha estat possible esperar la resposta"
+msgstr "Ha fallat esperar la resposta."
 
 #: Time
 msgid "<Other>"
-msgstr "<Altre>"
+msgstr "<Altres>"
 
 #: Time
 msgid "Received invalid time"
@@ -78,6 +98,14 @@ msgid "Current time:"
 msgstr "Hora actual:"
 
 #: Time
+msgid ""
+"The following error occured while synchronizing:\\n"
+"%s: %s"
+msgstr ""
+"Hi ha hagut l'error següent durant la sincronització:\\n"
+"%s: %s"
+
+#: Time
 msgid "Europe"
 msgstr "Europa"
 
@@ -91,7 +119,7 @@ msgstr "Hora local (compatible amb el Windows)"
 
 #: Time
 msgid "Hardware clock set to:"
-msgstr "S'ha ajustat el rellotge del maquinari a:"
+msgstr "El rellotge del maquinari s'ha establert a:"
 
 #: Time
 msgid "Arctic"
@@ -111,11 +139,11 @@ msgstr "Àfrica"
 
 #: Time
 msgid "Stop"
-msgstr "Atura"
+msgstr "Interromp"
 
 #: Time
 msgid "Time zone"
-msgstr "Fus horari"
+msgstr "Zona horària"
 
 #: Time
 msgid "Clock"
@@ -127,15 +155,19 @@ msgstr "Hora de la xarxa"
 
 #: Time
 msgid "Sending request failed"
-msgstr "No ha estat possible enviar la petició"
+msgstr "Ha fallat enviar la sol·licitud."
 
 #: Time
 msgid "Preview time:"
 msgstr "Vista prèvia de l'hora:"
 
 #: Time
-msgid "nNow: "
-msgstr "nAra: "
+msgid ""
+"\\n"
+"Now: "
+msgstr ""
+"\\n"
+"Ara: "
 
 #: Time
 msgid "Could not create socket"
@@ -151,7 +183,7 @@ msgstr "Atlàntic"
 
 #: Time
 msgid "Show clock in Deskbar"
-msgstr "Mostra el rellotge a la Barra de l'Escriptori"
+msgstr "Mostra el rellotge a la barra d'escriptori"
 
 #: Time
 msgid "Display time with seconds"
@@ -164,11 +196,11 @@ msgstr "Hora"
 
 #: Time
 msgid "about"
-msgstr "quant a"
+msgstr "cap a"
 
 #: Time
 msgid "Show time zone"
-msgstr "Mostra el fus horari"
+msgstr "Mostra la zona horària"
 
 #: Time
 msgid "Synchronize at boot"
@@ -185,6 +217,14 @@ msgstr "Reverteix"
 #: Time
 msgid "Date and time"
 msgstr "Data i hora"
+
+#: Time
+msgid ""
+"The following error occured while synchronizing:\\n"
+"%s"
+msgstr ""
+"Hi ha hagut l'error següent durant la sincronització:\\n"
+"%s"
 
 #: Time
 msgid "Synchronize"

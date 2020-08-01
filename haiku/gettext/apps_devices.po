@@ -1,16 +1,16 @@
-#. extracted from ../../haiku/data/catalogs/apps/devices/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/devices/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: DevicesView
 msgctxt "DevicesView"
@@ -41,7 +41,7 @@ msgstr "Processador"
 
 #: DevicesView
 msgid "Generate system information"
-msgstr "Mostra la informació del sistema"
+msgstr "Genera la informació del sistema"
 
 #: DevicePCI
 msgid "Class info"
@@ -66,8 +66,8 @@ msgstr "Comunicacions"
 
 #: DeviceSCSI
 msgctxt "DeviceSCSI"
-msgid "Class Info:tttt: %classInfo%"
-msgstr "Informació de classe:tttt: %classInfo%"
+msgid "Class Info:\\t\\t\\t\\t: %classInfo%"
+msgstr "Informació de classe:\\t\\t\\t\\t: %classInfo%"
 
 #: Device
 msgid "Mass storage controller"
@@ -83,7 +83,7 @@ msgstr "Impressora"
 
 #: DeviceACPI
 msgid "ACPI Processor Namespace '%2'"
-msgstr "Espai de noms ACPI del Processador '%2'"
+msgstr "Espai de noms de processador ACPI \"%2'\""
 
 #: DeviceSCSI
 msgid "SCSI Information"
@@ -117,7 +117,7 @@ msgstr "Desconegut"
 
 #: DeviceACPI
 msgid "ACPI node '%1'"
-msgstr "Node '%1' ACPI"
+msgstr "Node d'ACPI %1"
 
 #: DeviceSCSI
 msgid "Optical Drive"
@@ -134,11 +134,15 @@ msgstr "Fabricant"
 
 #: Device
 msgid ""
-"Device Nametttt: %Name%nManufacturerttt: %Manufacturer%nDriver usedtttt: "
-"%DriverUsed%nDevice pathst: %DevicePaths%"
+"Device Name\\t\\t\\t\\t: %Name%\\n"
+"Manufacturer\\t\\t\\t: %Manufacturer%\\n"
+"Driver used\\t\\t\\t\\t: %DriverUsed%\\n"
+"Device paths\\t: %DevicePaths%"
 msgstr ""
-"Nom del dispositiutttt: %Name%nFabricantttt: %Manufacturer%nControlador "
-"utilitzattttt: %DriverUsed%nRutes del dispositiut: %DevicePaths%"
+"Nom del dispositiu\\t\\t\\t\\t: %Name%\\n"
+"Fabricant\\t\\t\\t: %Manufacturer%\\n"
+"Controlador usat\\t\\t\\t\\t: %DriverUsed%\\n"
+"Camins del dispositiu\\t: %DevicePaths%"
 
 #: Device
 msgctxt "Device"
@@ -188,11 +192,11 @@ msgstr "Canviador"
 
 #: Device
 msgid "Serial bus controller"
-msgstr "Controlador del bus sèrie"
+msgstr "Controlador del bus de sèrie"
 
 #: DevicesView
 msgid "Refresh devices"
-msgstr "Refresca la llista dels dispositius"
+msgstr "Actualitza la llista de dispositius"
 
 #: DevicesView
 msgid "Category"
@@ -217,7 +221,7 @@ msgstr "El dispositiu és desconegut"
 
 #: Device
 msgid "Wireless controller"
-msgstr "Controlador de xarxa sense fils"
+msgstr "Controlador de xarxa sense fil"
 
 #: Device
 msgid "Generic system peripheral"
@@ -249,9 +253,17 @@ msgstr "Controlador de la pantalla"
 msgid "Basic information"
 msgstr "Informació bàsica"
 
+#: DeviceACPI
+msgid "ACPI Button '%1'"
+msgstr "Botó d'ACPI %1"
+
 #: DevicesView
 msgid "Bus"
 msgstr "Bus"
+
+#: DeviceACPI
+msgid "ACPI <unknown>"
+msgstr "ACPI <desconegut>"
 
 #: DevicePCI
 msgctxt "DevicePCI"
@@ -264,7 +276,7 @@ msgstr "Unitat de disc"
 
 #: DeviceSCSI
 msgid "Other"
-msgstr "Altre"
+msgstr "Altres"
 
 #: DevicesView
 msgid "Report compatibility"
@@ -282,7 +294,7 @@ msgstr "Bus PCI"
 
 #: DeviceSCSI
 msgid "Enclosure"
-msgstr "Adjunció"
+msgstr "Annex"
 
 #: DevicesView
 msgid "Order by:"
@@ -325,8 +337,8 @@ msgstr "Fabricant:"
 
 #: DeviceACPI
 msgctxt "DeviceACPI"
-msgid "Class Info:tttt: %classInfo%"
-msgstr "Informació de la classe:tttt: %classInfo%"
+msgid "Class Info:\\t\\t\\t\\t: %classInfo%"
+msgstr "Informació de la classe:\\t\\t\\t\\t: %classInfo%"
 
 #: Device
 msgctxt "Device"
@@ -382,7 +394,7 @@ msgstr "Controlador de xarxa"
 
 #: Device
 msgid "Driver used"
-msgstr "Controlador utilitzat"
+msgstr "Controlador usat"
 
 #: Device
 msgid "Communication controller"

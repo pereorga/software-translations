@@ -1,16 +1,16 @@
-#. extracted from ../../haiku/data/catalogs/apps/login/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/login/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: Login+View
 msgid "Invalid login!"
@@ -21,26 +21,31 @@ msgid "Error"
 msgstr "Error"
 
 #: Login+App
-msgid "--edittLaunch in shelf editting mode to allow customizing the desktop.n"
+msgid ""
+"--edit\\tLaunch in shelf editting mode to allow customizing the desktop.\\n"
 msgstr ""
-"--edittExecuta en mode edició al terminal per tal de personalitzar "
-"l'escriptori.n"
+"--edit\\tInicia en mode d'edició de Lleixa per permetre personalitzar "
+"l'escriptori.\\n"
 
 #: Login+Window
 msgid "Welcome to Haiku"
-msgstr "Benvingut al Haiku!"
+msgstr "Benvingut/da al Haiku!"
 
 #: Login+View
 msgid "Halt"
 msgstr "Atura"
 
 #: Login+App
-msgid "Login application for HaikunUsage:n"
-msgstr "Aplicació d'identificació del HaikunÚs:n"
+msgid ""
+"Login application for Haiku\\n"
+"Usage:\\n"
+msgstr ""
+"Aplicació d'identificació del Haiku\\n"
+"Ús:\\n"
 
 #: Login+App
-msgid "--nonmodaltDo not make the window modaln"
-msgstr "--nonmodaltNo ho facis a una finestra modaln"
+msgid "--nonmodal\\tDo not make the window modal\\n"
+msgstr "--nonmodal\\tNo ho facis a una finestra modal\\n"
 
 #: Desktop+Window
 msgid "Desktop"
@@ -53,6 +58,18 @@ msgstr "Amaga la contrasenya"
 #: Login+View
 msgid "Reboot"
 msgstr "Reinicia"
+
+#: Login+App
+msgid ""
+"You can customize the desktop shown behind the Login application by dropping "
+"replicants onto it.\\n"
+"\\n"
+"When you are finished just quit the application (Cmd-Q)."
+msgstr ""
+"Podeu personalitzar l'escriptori que es mostra darrere l'aplicació d'inici "
+"de sessió deixant-hi anar replicants.\\n"
+"\\n"
+"En acabar, només heu de sortir de l'aplicació (Cmd-Q)."
 
 #: Login+View
 msgctxt "Login View"
@@ -85,5 +102,5 @@ msgid "Error: %1"
 msgstr "Error: %1"
 
 #: Desktop+Window
-msgid "error %sn"
-msgstr "error %sn"
+msgid "error %s\\n"
+msgstr "error %s\\n"

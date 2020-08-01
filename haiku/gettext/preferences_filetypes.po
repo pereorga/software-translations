@@ -1,20 +1,24 @@
-#. extracted from ../../haiku/data/catalogs/preferences/filetypes/ca.csv
+#. extracted from ./haiku/data/catalogs/preferences/filetypes/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:36+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: Attribute+Window
 msgid "Left"
 msgstr "Esquerra"
+
+#: Attribute+ListView
+msgid "Float"
+msgstr "Flota"
 
 #: Application+Types+Window
 msgctxt "Application Types Window"
@@ -23,9 +27,8 @@ msgstr "Acabat"
 
 #: FileTypes+Window
 msgctxt "FileTypes Window"
-"FileTypes Window"
 msgid "FileTypes request"
-msgstr "Sol·licitud de Tipus de fitxer"
+msgstr "Sol·licitud de tipus de fitxer"
 
 #: New+File+Type+Window
 msgid "This file type already exists"
@@ -42,7 +45,7 @@ msgstr "Executa"
 
 #: Application+Types+Window
 msgid "Removing uninstalled application types"
-msgstr "S'estan suprimint els tipus d'aplicació desinstal·lats"
+msgstr "Se suprimeixen els tipus d'aplicació desinstal·lats."
 
 #: Attribute+Window
 msgid "Width:"
@@ -60,7 +63,7 @@ msgstr "(basat en un super tipus)"
 #: FileTypes+Window
 msgctxt "FileTypes Window"
 msgid "Select same preferred application as"
-msgstr "Seleccioneu la mateixa aplicació preferida que"
+msgstr "Selecciona la mateixa aplicació preferida que"
 
 #: Attribute+Window
 msgid "Could not change attributes"
@@ -87,7 +90,7 @@ msgstr "Descripció llarga:"
 #: Preferred+App+Menu
 msgctxt "Preferred App Menu"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: FileTypes+Window
 msgctxt "FileTypes Window"
@@ -96,11 +99,11 @@ msgstr "Suprimeix"
 
 #: Preferred+App+Menu
 msgid ""
-"The application \"%s\"\" does not support this file type.nAre you sure you "
-"want to set it anyway?\""
+"The application \\\"%s\\\" does not support this file type.\\n"
+"Are you sure you want to set it anyway?"
 msgstr ""
-"L'aplicació \"%s\"\" no permet fitxers d'aquest tipus.nEsteu segur que tot i "
-"així ela voleu triar?\""
+"L'aplicació \\\"%s\\\" no admet fitxers d'aquest tipus.\\n"
+"Segur que el voleu establir tanmateix?"
 
 #: Application+Type+Window
 msgctxt "Application Type Window"
@@ -115,7 +118,7 @@ msgstr "Gama"
 #: Application+Type+Window
 msgctxt "Application Type Window"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: Attribute+Window
 msgid "Attribute"
@@ -130,8 +133,8 @@ msgid ""
 "{0, plural, one{# Application type could be removed} other{# Application "
 "types could be removed}}"
 msgstr ""
-"{0, plural, one{# El tipus d'aplicació s'ha pogut suprimir.} other{# Els "
-"tipus d'aplicacions s'han pogut suprimir.}}"
+"{0, plural, one{# tipus d'aplicació es pot suprimir} other{# tipus "
+"d'aplicacions es poden suprimir}}"
 
 #: Application+Types+Window
 msgid "Edit…"
@@ -139,7 +142,7 @@ msgstr "Edita..."
 
 #: FileTypes+Window
 msgid "Could not set preferred application"
-msgstr "No ha estat possible tria l'aplicació preferida"
+msgstr "No s'ha pogut establir l'aplicació preferida."
 
 #: FileTypes+Window
 msgid "Description"
@@ -160,25 +163,30 @@ msgstr "Només una execució"
 
 #: FileTypes+Window
 msgid ""
-"Removing a file type cannot be reverted.nAre you sure you want to remove it?"
+"Removing a file type cannot be reverted.\\n"
+"Are you sure you want to remove it?"
 msgstr ""
-"No es pot recuperar un tipus de fitxer suprimit.nEsteu segur que el voleu "
-"suprimir?"
+"No es pot revertir la supressió d'un tipus de fitxer.\\n"
+"Segur que el voleu suprimir?"
+
+#: Attribute+ListView
+msgid "Integer 64 bit"
+msgstr "Enter de 64 bits"
 
 #: New+File+Type+Window
 msgctxt "New File Type Window"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: FileType+Window
 msgctxt "FileType Window"
 msgid "Select same preferred application as"
-msgstr "Seleccioneu la mateixa aplicació preferida que"
+msgstr "Selecciona la mateixa aplicació preferida que"
 
 #: Type+List+Window
 msgctxt "Type List Window"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: Application+Type+Window
 msgid "Don't save"
@@ -186,7 +194,7 @@ msgstr "No ho desis"
 
 #: Attribute+Window
 msgid "Center"
-msgstr "Centre"
+msgstr "Centrada"
 
 #: Extension+Window
 msgctxt "Extension Window"
@@ -200,7 +208,7 @@ msgstr "Desenvolupament"
 
 #: Application+Types+Window
 msgid "Abort"
-msgstr "Interromp"
+msgstr "Avorta"
 
 #: Application+Type+Window
 msgid "Save"
@@ -215,6 +223,10 @@ msgctxt "Application Type Window"
 msgid "Icon"
 msgstr "Icona"
 
+#: Attribute+ListView
+msgid "Duration"
+msgstr "Durada"
+
 #: Application+Type+Window
 msgctxt "Application Type Window"
 msgid "Version:"
@@ -222,16 +234,24 @@ msgstr "Versió:"
 
 #: FileType+Window
 msgid "Default application"
-msgstr "Aplicació per omissió"
+msgstr "Aplicació per defecte"
 
 #: New+File+Type+Window
 msgctxt "New File Type Window"
 msgid "Internal name:"
 msgstr "Nom intern:"
 
+#: Attribute+ListView
+msgid "Integer 8 bit"
+msgstr "Enter de 8 bits"
+
 #: Extension+Window
 msgid "Extension:"
 msgstr "Extensió:"
+
+#: Attribute+ListView
+msgid "Time"
+msgstr "Hora"
 
 #: FileTypes+Window
 msgid "Extensions:"
@@ -248,12 +268,12 @@ msgid "Description:"
 msgstr "Descripció:"
 
 #: FileType+Window
-msgid "Multiple files from \"%s\"\" file type\""
-msgstr "Múltiples fitxers basat al tipus \"%s\"\"\""
+msgid "Multiple files from \\\"%s\\\" file type"
+msgstr "Múltiples fitxers basat al tipus \\\"%s\\\""
 
 #: New+File+Type+Window
 msgid "Add new group"
-msgstr "Afegeix un grup nou"
+msgstr "Afegeix-hi un grup nou"
 
 #: Application+Types+Window
 msgid "Remove uninstalled"
@@ -289,7 +309,7 @@ msgstr "Fet"
 #: FileTypes
 msgctxt "FileTypes"
 msgid "FileTypes request"
-msgstr "Petició d'un tipus de fitxer"
+msgstr "Sol·licitud de tipus de fitxer"
 
 #: FileType+Window
 msgid "Select same type as"
@@ -317,6 +337,14 @@ msgstr "Descripció:"
 msgid "Name:"
 msgstr "Nom:"
 
+#: Attribute+ListView
+msgid "Rating"
+msgstr "Puntuació"
+
+#: Attribute+ListView
+msgid "duration"
+msgstr "durada"
+
 #: Preferred+App+Menu
 msgid "File could not be opened"
 msgstr "No s'ha pogut obrir el fitxer"
@@ -326,8 +354,12 @@ msgid "Args only"
 msgstr "Només els arguments"
 
 #: FileTypes
-msgid "Could not open \"%s\"\":n%s\""
-msgstr "No ha estat possible obrir \"%s\"\":n%s\""
+msgid ""
+"Could not open \\\"%s\\\":\\n"
+"%s"
+msgstr ""
+"No s'ha pogut obrir \\\"%s\\\":\\n"
+"%s"
 
 #: Attribute+Window
 msgid "Right"
@@ -342,8 +374,12 @@ msgid "Background app"
 msgstr "Aplicació de fons"
 
 #: FileTypes+Window
-msgid "Recognition rule is not valid:nn"
-msgstr "La regla de reconeixement no és vàlida:nn"
+msgid ""
+"Recognition rule is not valid:\\n"
+"\\n"
+msgstr ""
+"La regla de reconeixement no és vàlida:\\n"
+"\\n"
 
 #: FileTypes+Window
 msgid "Show icons in list"
@@ -355,7 +391,7 @@ msgstr "Editable"
 
 #: FileTypes+Window
 msgid "New resource file…"
-msgstr "Nou fitxer de recursos..."
+msgstr "Fitxer de recursos nou..."
 
 #: FileType+Window
 msgid "[Multiple files] file types"
@@ -367,7 +403,7 @@ msgstr "Tipus d'aplicació"
 
 #: Application+Types+Window
 msgid "Show in Tracker…"
-msgstr "Mostra al Traçador..."
+msgstr "Mostra-ho al Rastrejador..."
 
 #: FileTypes+Window
 msgid "Type name:"
@@ -386,6 +422,10 @@ msgstr "Seleccioneu l'aplicació preferida"
 msgid "Path:"
 msgstr "Camí:"
 
+#: Attribute+ListView
+msgid "rating"
+msgstr "puntuació"
+
 #: New+File+Type+Window
 msgid "Could not install file type"
 msgstr "No s'han pogut instal·lar el tipus de fitxer"
@@ -400,10 +440,14 @@ msgctxt "Application Type Window"
 msgid "Golden master"
 msgstr "Candidat"
 
+#: Attribute+ListView
+msgid "Checkbox"
+msgstr "Casella de selecció"
+
 #: Preferred+App+Menu
 msgctxt "Preferred App Menu"
 msgid "FileTypes request"
-msgstr "Demana un tipus de fitxer"
+msgstr "Sol·licitud de tipus de fitxer"
 
 #: FileTypes+Window
 msgid "no icon"
@@ -417,28 +461,44 @@ msgstr "Només una instància"
 msgid "%s file type"
 msgstr "Tipus de fitxer %s"
 
+#: Attribute+ListView
+msgid "Default"
+msgstr "Per defecte"
+
 #: FileTypes+Window
 msgid ""
-"Removing a super type cannot be reverted.nAll file types that belong to this "
-"super type will be lost!nnAre you sure you want to do this? To remove the "
-"whole group, hold down the Shift key and press \"Remove\"\".\""
+"Removing a super type cannot be reverted.\\n"
+"All file types that belong to this super type will be lost!\\n"
+"\\n"
+"Are you sure you want to do this? To remove the whole group, hold down the "
+"Shift key and press \\\"Remove\\\"."
 msgstr ""
-"No es pot recuperar un tipus de fitxer super suprimit..nEs perdran tots els "
-"fitxers d'aquest super tipus!nnEsteu segur que ho voleu fer? per suprimir "
-"tot el grup, premeu \"Suprimeix\"\" mantenint premuda la tecla Shift.\""
+"No es pot revertir la supressió d'un supertipus de fitxer.\\n"
+"Es perdran tots els tipus de fitxers que pertanyen a aquest supertipus!\\n"
+"\\n"
+"Segur que ho voleu fer? Per suprimir-ne tot el grup, premeu Suprimeix "
+"mantenint premuda la tecla Maj."
+
+#: Attribute+ListView
+msgid "String"
+msgstr "Cadena"
 
 #: New+File+Type+Window
 msgid "Add type"
-msgstr "Afegeix un tipus"
+msgstr "Afegeix-hi un tipus"
 
 #: Icon+View
 msgid "Remove icon"
 msgstr "Suprimeix la icona"
 
+#: Attribute+ListView
+msgid "Boolean"
+msgstr "Booleà"
+
 #: Extension+Window
 msgctxt "Extension Window"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: Attribute+Window
 msgid "Alignment:"
@@ -473,9 +533,13 @@ msgstr "Afegeix"
 msgid "Open…"
 msgstr "Obre..."
 
+#: Attribute+ListView
+msgid "checkbox"
+msgstr "casella de selecció"
+
 #: Extension+Window
 msgid "Could not change file extensions"
-msgstr "No ha estat possible canviar les extensions dels fitxers"
+msgstr "No s'han pogut canviar les extensions dels fitxers."
 
 #: FileType+Window
 msgid "Could not open file"
@@ -500,12 +564,12 @@ msgstr "Tipus d'aplicacions..."
 
 #: Icon+View
 msgid "Add icon…"
-msgstr "Afegeix una icona..."
+msgstr "Afegeix-hi una icona..."
 
 #: FileTypes+Window
 msgctxt "FileTypes Window"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: Application+Type+Window
 msgid "Save into resource file…"
@@ -521,7 +585,7 @@ msgstr "Tipus:"
 
 #: Preferred+App+Menu
 msgid "Could not retrieve application signature"
-msgstr "No ha estat possible triar la mateixa aplicació preferida"
+msgstr "No s'ha pogut obtenir la signatura de l'aplicació."
 
 #: Application+Types+Window
 msgctxt "Application Types Window"
@@ -530,12 +594,12 @@ msgstr "Beta"
 
 #: New+File+Type+Window
 msgid "Add group"
-msgstr "Afegeix un grup"
+msgstr "Afegeix-hi un grup"
 
 #: Attribute+Window
 msgctxt "Attribute Window"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: Application+Types+Window
 msgctxt "Application Types Window"
@@ -546,6 +610,10 @@ msgstr "Gama"
 msgid "Supported types"
 msgstr "Tipus permesos"
 
+#: Attribute+ListView
+msgid "Integer 32 bit"
+msgstr "Enter de 32 bits"
+
 #: Application+Type+Window
 msgctxt "Application Type Window"
 msgid "Beta"
@@ -553,11 +621,11 @@ msgstr "Beta"
 
 #: Preferred+App+Menu
 msgid "Could not retrieve preferred application of this file"
-msgstr "No ha estat possible recuperar l'aplicació preferida d'aquest fitxer"
+msgstr "No s'ha pogut obtenir l'aplicació preferida d'aquest fitxer."
 
 #: Application+Type+Window
 msgid "Application flags"
-msgstr "Indicador de l'aplicació"
+msgstr "Banderes de l'aplicació"
 
 #: FileTypes
 msgid "OK"
@@ -606,11 +674,11 @@ msgstr "Tipus de fitxers"
 
 #: Preferred+App+Menu
 msgid "Set preferred application"
-msgstr "Tria l'aplicació preferida"
+msgstr "Estableix l'aplicació preferida"
 
 #: New+File+Type+Window
 msgid "New file type"
-msgstr "Nou tipus de fitxer"
+msgstr "Tipus de fitxer nou"
 
 #: Application+Type+Window
 msgid "Short description:"
@@ -621,8 +689,8 @@ msgid "Save request"
 msgstr "Desa la sol·licitud"
 
 #: FileTypes+Window
-msgid "Could not remove file type: %sn"
-msgstr "No s'ha pogut suprimir el fitxer del tipus: %sn"
+msgid "Could not remove file type: %s\\n"
+msgstr "No s'ha pogut suprimir el fitxer del tipus: %s\\n"
 
 #: Attribute+Window
 msgid "Display as:"
@@ -649,6 +717,10 @@ msgstr "Alfa"
 #: Application+Type+Window
 msgid "Close"
 msgstr "Tanca"
+
+#: Attribute+ListView
+msgid "Integer 16 bit"
+msgstr "Enter de 16 bits"
 
 #: Extension+Window
 msgid "Extension"
@@ -698,9 +770,13 @@ msgstr "Nom intern:"
 msgid "Show recognition rule"
 msgstr "Mostra l regla de reconeixement"
 
+#: Attribute+ListView
+msgid "Double"
+msgstr "Doble"
+
 #: FileTypes+Window
 msgid "Move down"
-msgstr "Desplaça cap avall"
+msgstr "Mou avall"
 
 #: Application+Type+Window
 msgctxt "Application Type Window"

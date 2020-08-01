@@ -1,24 +1,32 @@
-#. extracted from ../../haiku/data/catalogs/apps/terminal/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/terminal/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:36+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: Terminal+TermWindow
 msgid "Close other tabs"
-msgstr "Tanca les altres pestanyes"
+msgstr "Tanca altres pestanyes"
+
+#: Terminal+TermView
+msgid "Insert path"
+msgstr "Insereix un camí"
 
 #: Terminal+TermApp
 msgid "Terminal couldn't start the shell. Sorry."
-msgstr "El terminal no ha pogut obrir l'intèrpret de les ordres. Ho sentim."
+msgstr "El terminal no ha pogut obrir l'intèrpret d'ordres. Disculpeu."
+
+#: Terminal+TermWindow
+msgid "Text encoding"
+msgstr "Codificació del text"
 
 #: Terminal+SetTitleWindow
 msgctxt "Terminal SetTitleWindow"
@@ -29,17 +37,68 @@ msgstr "D'acord"
 msgid "Edit"
 msgstr "Edita"
 
+#: Terminal+TermApp
+msgid ""
+"  -h,     --help               print this help\\n"
+"  -t,     --title              set window title\\n"
+"  -f,     --fullscreen         start fullscreen\\n"
+"  -w,     --working-directory  set initial working directory\\n"
+msgstr ""
+"  -h,     --help               imprimeix aquesta ajuda\\n"
+"  -t,     --title              estableix el títol de la finestra\\n"
+"  -f,     --fullscreen         inicia la pantalla completa\\n"
+"  -w,     --working-directory  estableix el directori de treball inicial\\n"
+
 #: Terminal+TermWindow
 msgid "Select all"
 msgstr "Selecciona-ho tot"
+
+#: Terminal+AppearancePrefView
+msgid "Confirm exit if active programs exist"
+msgstr "Confirmeu-ne la sortida si hi ha programes actius."
+
+#: Terminal+ToolTips
+msgid ""
+"\\t%d\\t-\\tThe current working directory of the active process in the\\n"
+"\\t\\t\\tcurrent tab. Optionally the maximum number of path components\\n"
+"\\t\\t\\tcan be specified. E.g. '%2d' for at most two components.\\n"
+"\\t%T\\t-\\tThe Terminal application name for the current locale.\\n"
+"\\t%e\\t-\\tThe encoding of the current tab. Not shown for UTF-8.\\n"
+"\\t%i\\t-\\tThe index of the window.\\n"
+"\\t%p\\t-\\tThe name of the active process in the current tab.\\n"
+"\\t%t\\t-\\tThe title of the current tab."
+msgstr ""
+"\\t%d\\t-\\tEl directori de treball actual del procés actiu a la\\n"
+"\\t\\t\\tpestanya actual. Opcionalment es pot especificar el nombre màxim\\n"
+"\\t\\t\\tde components de camí. P. ex.: \"%2d\", per a un màxim de dos "
+"components.\\n"
+"\\t%T\\t-\\tEl nom de l'aplicació de Terminal per a la configuració de la "
+"llengua actual.\\n"
+"\\t%e\\t-\\tLa codificació de la pestanya actual. No es mostra per a UTF-8.\\"
+"n"
+"\\t%i\\t-\\tL'índex de la finestra.\\n"
+"\\t%p\\t-\\tEl nom del procés actiu a la pestanya actual.\\n"
+"\\t%t\\t-\\tEl títol de la pestanya actual."
+
+#: Terminal+colors+scheme
+msgid "Solarized Dark"
+msgstr "Fosc solaritzat"
 
 #: Terminal+TermWindow
 msgid "Copy"
 msgstr "Copia"
 
+#: Terminal+colors+scheme
+msgid "Retro"
+msgstr "Retro"
+
 #: Terminal+TermWindow
 msgid "Edit tab title…"
 msgstr "Edita el títol de la pestanya..."
+
+#: Terminal+TermWindow
+msgid "Print"
+msgstr "Imprimeix"
 
 #: Terminal+TermWindow
 msgid "Settings"
@@ -49,32 +108,84 @@ msgstr "Paràmetres"
 msgid "%app% settings"
 msgstr "Paràmetres del %app%"
 
+#: Terminal+SetTitleWindow
+msgid "Use default"
+msgstr "Valor per defecte"
+
 #: Terminal+TermWindow
 msgid "Close tab"
 msgstr "Tanca la pestanya"
+
+#: Terminal+AppearancePrefView
+msgid "Selected background"
+msgstr "Fons seleccionat"
+
+#: Terminal+getString
+msgid "Error!"
+msgstr "Error!"
+
+#: Terminal+TermWindow
+msgid "Set tab title"
+msgstr "Establiu el títol de la pestanya"
+
+#: Terminal+PrefWindow
+msgid "Appearance"
+msgstr "Aparença"
+
+#: Terminal+AppearancePrefView
+msgid "Encoding:"
+msgstr "Codificació:"
+
+#: Terminal+TermView
+msgid "Create link here"
+msgstr "Crea l'enllaç aquí"
 
 #: Terminal+AppearancePrefView
 msgctxt "Terminal AppearancePrefView"
 msgid "Custom"
 msgstr "Personalitzat"
 
+#: Terminal+AppearancePrefView
+msgid "Selected text"
+msgstr "Text seleccionat"
+
 #: Terminal+TermView
 msgid "Change directory"
 msgstr "Canvia la carpeta"
 
+#: Terminal+TermWindow
+msgid "Page setup…"
+msgstr "Configuració de la pàgina..."
+
+#: Terminal+colors+scheme
+msgid "Slate"
+msgstr "Pissarra"
+
+#: Terminal+PrefWindow
+msgid "Defaults"
+msgstr "Valors predeterminats"
+
 #: Terminal+TermView
 msgctxt "Terminal TermView"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
+
+#: Terminal+PrefWindow
+msgid "Revert"
+msgstr "Reverteix"
 
 #: Terminal+TermWindow
 msgctxt "Terminal TermWindow"
 msgid "Terminal"
 msgstr "Terminal"
 
+#: Terminal+FindWindow
+msgid "Use selection"
+msgstr "Usa la selecció"
+
 #: Terminal+TermWindow
 msgid "Find next"
-msgstr "Cerca el següent"
+msgstr "Troba'n el següent"
 
 #: Terminal+TermView
 msgid "Copy link location"
@@ -85,13 +196,29 @@ msgctxt "Terminal AppearancePrefView"
 msgid "Window title:"
 msgstr "Títol de la finestra:"
 
+#: Terminal+TermWindow
+msgid "New tab"
+msgstr "Pestanya nova"
+
+#: Terminal+AppearancePrefView
+msgid "Allow bold text"
+msgstr "Permet text en negreta"
+
+#: Terminal+TermWindow
+msgid "Window title…"
+msgstr "Títol de la finestra..."
+
 #: Terminal+colors+scheme
 msgid "Blue"
 msgstr "Blau"
 
 #: Terminal+Shell
-msgid "Cannot execute \"%command\"\":nt%error\""
-msgstr "No ha estat possible executar l'ordre \"%command\"\":nt%error\""
+msgid ""
+"Cannot execute \\\"%command\\\":\\n"
+"\\t%error"
+msgstr ""
+"No es pot executar l'ordre \\\"%command\\\":\\n"
+"\\t%error"
 
 #: Terminal+TermView
 msgid "Open path"
@@ -102,6 +229,10 @@ msgctxt "System name"
 msgid "Terminal"
 msgstr "Terminal"
 
+#: Terminal+TermWindow
+msgid "Font size"
+msgstr "Mida de la lletra"
+
 #: Terminal+colors+scheme
 msgctxt "Terminal colors scheme"
 msgid "Custom"
@@ -109,20 +240,41 @@ msgstr "Personalitzat"
 
 #: Terminal+TermWindow
 msgid "Really close?"
-msgstr "Esteu segur que voleu sortir?"
+msgstr "Segur que en voleu sortir?"
 
 #: Terminal+TermApp
 msgctxt "Terminal TermApp"
 msgid "OK"
 msgstr "D'acord"
 
+#: Terminal+TermWindow
+msgid ""
+"The process \\\"%1\\\" is still running.\\n"
+"If you close the Terminal, the process will be killed."
+msgstr ""
+"El procés \\\"%1\\\" encara s'executa.\\n"
+"Tancar el Terminal matarà el procés."
+
 #: Terminal+arguments+parsing
-msgid "Unrecognized option \"%s\"\"n\""
-msgstr "Opció no reconeguda \"%s\"\"n\""
+msgid "Unrecognized option \\\"%s\\\"\\n"
+msgstr "Opció no reconeguda \\\"%s\\\"\\n"
+
+#: Terminal+AppearancePrefView
+msgctxt "Terminal AppearancePrefView"
+msgid "Tab title:"
+msgstr "Títol de la pestanya"
+
+#: Terminal+TermWindow
+msgid "Text not found."
+msgstr "No s'ha trobat el text."
 
 #: Terminal+TermWindow
 msgid "Find failed"
 msgstr "Ha fallat la cerca"
+
+#: Terminal+FindWindow
+msgid "Match word"
+msgstr "Coincidència de paraules"
 
 #: Terminal+AppearancePrefView
 msgid "Color scheme:"
@@ -142,7 +294,15 @@ msgstr "Coincidència de majúscules i minúscules"
 
 #: Terminal+TermWindow
 msgid "Find previous"
-msgstr "Cerca l'anterior"
+msgstr "Troba'n l'anterior"
+
+#: Terminal+AppearancePrefView
+msgid ""
+"The pattern specifying the tab titles. The following placeholders\\n"
+"can be used:"
+msgstr ""
+"El patró que especifica els títols de les pestanyes. Es poden usar\\n"
+"els marcadors de posició següents:"
 
 #: Terminal+TermWindow
 msgid "Close"
@@ -152,23 +312,102 @@ msgstr "Tanca"
 msgid "Save to file…"
 msgstr "Desa a un fitxer..."
 
+#: Terminal+AppearancePrefView
+msgid "Background"
+msgstr "Fons"
+
+#: Terminal+TermView
+msgid "Copy path"
+msgstr "Copia'n el camí"
+
+#: Terminal+TermWindow
+msgid "Window size"
+msgstr "Mida de la finestra"
+
+#: Terminal+TermView
+msgid "Copy absolute path"
+msgstr "Copia'n el camí absolut"
+
 #: Terminal+TermWindow
 msgctxt "Terminal TermWindow"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
+
+#: Terminal+TermWindow
+msgid ""
+"The process \\\"%1\\\" is still running.\\n"
+"If you close the tab, the process will be killed."
+msgstr ""
+"El procés \\\"%1\\\" encara s'executa.\\n"
+"Tancar la pestanya matarà el procés."
 
 #: Terminal+AppearancePrefView
 msgid "Cursor"
 msgstr "Cursor"
 
 #: Terminal+TermWindow
+msgid "Full screen"
+msgstr "Pantalla completa"
+
+#: Terminal+TermWindow
+msgid "Shell "
+msgstr "Intèrpret d'ordres "
+
+#: Terminal+colors+scheme
+msgid "Midnight"
+msgstr "Mitjanit"
+
+#: Terminal+ToolTips
+msgid ""
+"\\t%%\\t-\\tThe character '%'.\\n"
+"\\t%<\\t-\\tStarts a section that will only be shown if a placeholder\\n"
+"\\t\\t\\tafterwards is not empty.\\n"
+"\\t%>\\t-\\tStarts a section that will only be shown if a placeholder\\n"
+"\\t\\t\\tbetween a previous %< section and this one is not empty.\\n"
+"\\t%-\\t-\\tEnds a %< or %> section.\\n"
+"\\n"
+"Any non alpha numeric character between '%' and the format letter will "
+"insert a space only\\n"
+"if the placeholder value is not empty. It will add to the %< section."
+msgstr ""
+"\\t%%\\t-\\tEl caràcter \"%\".\\n"
+"\\t%<\\t-\\tInicia una secció que només es mostrarà si un marcador de "
+"posició\\n"
+"\\t\\t\\tposterior no està buit.\\n"
+"\\t%>\\t-\\tComença una secció que només es mostrarà si el marcador de "
+"posició\\n"
+"\\t\\t\\tentre una secció %< i aquest no està buit.\\n"
+"\\t%-\\t-\\tAcaba una secció %< o %>.\\n"
+"\\n"
+"Qualsevol caràcter no alfanumèric entre % i la lletra de format inserirà "
+"només un espai\\n"
+"si el valor del marcador de posició no està buit. S’afegirà a la secció %<."
+
+#: Terminal+TermWindow
+msgctxt "Terminal TermWindow"
+msgid "Tab title:"
+msgstr "Títol de la pestanya:"
+
+#: Terminal+TermWindow
 msgctxt "Terminal TermWindow"
 msgid "Window title:"
 msgstr "Títol de la finestra:"
 
+#: Terminal+colors+scheme
+msgid "Default"
+msgstr "Per defecte"
+
+#: Terminal+AppearancePrefView
+msgid "Window size:"
+msgstr "Mida de la finestra:"
+
 #: Terminal+TermWindow
 msgid "Switch Terminals"
 msgstr "Intercanvia els Terminals"
+
+#: Terminal+TermWindow
+msgid "Decrease"
+msgstr "Redueix"
 
 #: Terminal+TermWindow
 msgid "Settings…"
@@ -177,15 +416,52 @@ msgstr "Paràmetres…"
 #: Terminal+SetTitleWindow
 msgctxt "Terminal SetTitleWindow"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
+
+#: Terminal+AppearancePrefView
+msgid "Blinking cursor"
+msgstr "Cursor que parpelleja"
+
+#: Terminal+TermWindow
+msgid ""
+"The pattern specifying the window title. The following placeholders\\n"
+"can be used:\\n"
+msgstr ""
+"El patró que especifica el títol de la finestra. Es poden usar els "
+"marcadors\\n"
+"de posició següents:\\n"
+
+#: Terminal+FindWindow
+msgid "Use text:"
+msgstr "Usa text:"
 
 #: Terminal+TermWindow
 msgid "Close active tab"
 msgstr "Tanca la pestanya activa"
 
+#: Terminal+TermWindow
+msgid "Save as default"
+msgstr "Desa com a predeterminat"
+
+#: Terminal+TermWindow
+msgid "Nothing is selected."
+msgstr "No hi ha res seleccionat."
+
+#: Terminal+AppearancePrefView
+msgid "Use left Option as Meta key"
+msgstr "Usa l'opció d'esquerra com a tecla Meta."
+
 #: Terminal+FindWindow
 msgid "Find"
-msgstr "Cerca"
+msgstr "Troba"
+
+#: Terminal+TermWindow
+msgid ""
+"The pattern specifying the current tab title. The following placeholders\\n"
+"can be used:\\n"
+msgstr ""
+"El patró que especifica el títol de la pestanya actual. Es poden usar els\\n"
+"marcadors de posició següents:\\n"
 
 #: Terminal+colors+scheme
 msgid "Professional"
@@ -199,17 +475,33 @@ msgstr "Tipus de lletra:"
 msgid "Paste"
 msgstr "Enganxa"
 
+#: Terminal+AppearancePrefView
+msgid ""
+"The pattern specifying the window titles. The following placeholders\\n"
+"can be used:"
+msgstr ""
+"El patró que especifica els títols de les finestres. Es poden usar els\\n"
+"marcadors de posició següents:"
+
 #: Terminal+TermView
 msgid "Copy here"
 msgstr "Copia-ho aquí"
 
 #: Terminal+Shell
 msgid "Use default shell"
-msgstr "Usa l'intèrpret d'ordres per omissió"
+msgstr "Usa l'intèrpret d'ordres predeterminat"
+
+#: Terminal+AppearancePrefView
+msgid "Color:"
+msgstr "Color:"
 
 #: Terminal+TermView
 msgid "Open link"
 msgstr "Obre l'enllaç"
+
+#: Terminal+AppearancePrefView
+msgid "Text"
+msgstr "Text"
 
 #: Terminal+TermWindow
 msgid "Not found."
@@ -217,15 +509,63 @@ msgstr "No s'ha trobat."
 
 #: Terminal+TermWindow
 msgid "Find…"
-msgstr "Cerca…"
+msgstr "Troba..."
+
+#: Terminal+TermWindow
+msgid "No search string was entered."
+msgstr "No s'ha proporcionat cap cadena de cerca."
+
+#: Terminal+AppearancePrefView
+msgid "Text under cursor"
+msgstr "Text sota el cursor"
 
 #: Terminal+TermView
 msgid "Move here"
 msgstr "Mou aquí"
 
+#: Terminal+Shell
+msgid "Abort"
+msgstr "Avorta"
+
+#: Terminal+ToolTips
+msgid ""
+"\\t%d\\t-\\tThe current working directory of the active process.\\n"
+"\\t\\t\\tOptionally the maximum number of path components can be\\n"
+"\\t\\t\\tspecified. E.g. '%2d' for at most two components.\\n"
+"\\t%i\\t-\\tThe index of the tab.\\n"
+"\\t%e\\t-\\tThe encoding of the current tab. Not shown for UTF-8.\\n"
+"\\t%p\\t-\\tThe name of the active process.\\n"
+"\\t%%\\t-\\tThe character '%'."
+msgstr ""
+"\\t%d\\t-\\tEl directori de treball actual del procés actiu.\\n"
+"\\t\\t\\tOpcionalment, es pot especificar el nombre màxim de components\\n"
+"\\t\\t\\tde camí. Per exemple, \"%2d\" per a un màxim de dos components.\\n"
+"\\t%i\\t-\\tL’índex de la pestanya.\\n"
+"\\t%e\\t-\\tLa codificació de la pestanya actual. No mostrat per UTF-8.\\n"
+"\\t%p\\t-\\tEl nom del procés actiu.\\n"
+"\\t%%\\t-\\tEl caràcter \"%\"."
+
+#: Terminal+TermWindow
+msgid ""
+"The following processes are still running:\\n"
+"\\n"
+"\\t%1\\n"
+"\\n"
+"If you close the Terminal, the processes will be killed."
+msgstr ""
+"Els processos següents encara s'executen:\\n"
+"\\n"
+"\\t%1\\n"
+"\\n"
+"Si tanqueu el Terminal, els processos es mataran."
+
+#: Terminal+TermWindow
+msgid "Set window title"
+msgstr "Establiu el títol de la finestra"
+
 #: Terminal+TermWindow
 msgid "Increase"
-msgstr "Incrementa"
+msgstr "Augmenta"
 
 #: Terminal+TermWindow
 msgctxt "Terminal TermWindow"
@@ -235,3 +575,29 @@ msgstr "D'acord"
 #: Terminal+TermWindow
 msgid "Close window"
 msgstr "Tanca la finestra"
+
+#: Terminal+TermApp
+msgid ""
+"Haiku Terminal\\n"
+"Copyright 2001-2019 Haiku, Inc.\\n"
+"Copyright(C) 1999 Kazuho Okui and Takashi Murai.\\n"
+"\\n"
+"Usage: %s [OPTION] [SHELL]\\n"
+msgstr ""
+"Terminal del Haiku\\n"
+"Copyright 2001-2019 Haiku, Inc.\\n"
+"Copyright(C) 1999 Kazuho Okui i Takashi Murai.\\n"
+"\\n"
+"Ús: %s [OPCIÓ] [SHELL]\\n"
+
+#: Terminal+colors+scheme
+msgid "Solarized Light"
+msgstr "Llum solaritzada"
+
+#: Terminal+TermWindow
+msgid "Clear all"
+msgstr "Neteja-ho tot"
+
+#: Terminal+FindWindow
+msgid "Search forward"
+msgstr "Cerca endavant"

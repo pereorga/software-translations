@@ -1,44 +1,104 @@
-#. extracted from ../../haiku/data/catalogs/apps/icon-o-matic/ca.csv
+#. extracted from ./haiku/data/catalogs/apps/icon-o-matic/ca.csv
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-23 18:35+0200\n"
+"POT-Creation-Date: 2020-08-02 01:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.2.5\n"
+"X-Generator: Translate Toolkit 2.5.0\n"
 
 #: Icon-O-Matic-Properties
 msgid "None"
 msgstr "Cap"
 
+#: Icon-O-Matic-RotatePathIndiciesCmd
+msgid "Rotate Path Indices"
+msgstr "Gira els índexs dels camins"
+
 #: Icon-O-Matic-ShapesList
 msgid "Add empty"
-msgstr "Afegeix buit"
+msgstr "Afegeix-n'hi una de buida"
 
 #: Icon-O-Matic-Main
 msgid "Opening the icon failed!"
-msgstr "No ha estat possible obrir la icona!"
+msgstr "Ha fallat obrir la icona!"
 
 #: Icon-O-Matic-ShapesList
 msgid "Add with path"
-msgstr "Afegeix amb un camí"
+msgstr "Afegeix-n'hi una amb un camí"
+
+#: Icon-O-Matic-Properties
+msgid "Copy"
+msgstr "Copia"
+
+#: Icon-O-Matic-PropertyNames
+msgctxt "Icon-O-Matic-PropertyNames"
+msgid "Color"
+msgstr "Color"
+
+#: Icon-O-Matic-SavePanel
+msgid "Format"
+msgstr "Format"
 
 #: Icon-O-Matic-MoveShapesCommand
 msgid "Move Shapes"
 msgstr "Suprimeix les formes"
 
+#: Icon-O-Matic-StyleTypes
+msgctxt "Icon-O-Matic-StyleTypes"
+msgid "Color"
+msgstr "Color"
+
 #: Icon-O-Matic-Properties
 msgid "Select"
 msgstr "Selecciona"
 
+#: Icon-O-Matic-ShapesList
+msgctxt "Icon-O-Matic-ShapesList"
+msgid "Reset transformation"
+msgstr "Restableix la transformació"
+
+#: Icon-O-Matic-StylesList
+msgctxt "Icon-O-Matic-StylesList"
+msgid "Duplicate"
+msgstr "Duplica"
+
+#: Icon-O-Matic-TransformationBoxStates
+msgid "Rotate"
+msgstr "Gira"
+
+#: Icon-O-Matic-RemovePointsCmd
+msgid "Remove Control Points"
+msgstr "Suprimeix-ne els punts de control"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Shorten"
+msgstr "Escurça"
+
+#: Icon-O-Matic-UnassignPathCmd
+msgid "Unassign Path"
+msgstr "No assignis el camí"
+
+#: Icon-O-Matic-StyledTextImport
+msgid "The text you are trying to import is quite long, are you sure?"
+msgstr "El text que intenteu importar és força llarg. N'esteu segur?"
+
 #: Icon-O-Matic-Properties
 msgid "Paste"
 msgstr "Enganxa"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Detect Orient."
+msgstr "Detecta'n l'orientació."
+
+#: Empty+transformers+list+-+1st+line
+msgid "Click on a shape above"
+msgstr "Cliqueu en una forma de dalt."
 
 #: Icon-O-Matic-Menu-File
 msgid "Close"
@@ -46,19 +106,43 @@ msgstr "Tanca"
 
 #: Icon-O-Matic-PathsList
 msgid "Add rect"
-msgstr "Afegeix una recta"
+msgstr "Afegeix-hi un rectangle"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Rotation"
+msgstr "Rotació"
 
 #: Icon-O-Matic-Properties
 msgid "Multi Paste Properties"
 msgstr "Propietats de l'enganxat múltiple"
 
+#: Exporter+-+Continue+in+error+dialog
+msgid "Bleep!"
+msgstr "Bufa!"
+
+#: Icon-O-Matic-PathManipulator
+msgid "Transform"
+msgstr "Transforma"
+
 #: Icon-O-Matic-RemoveTransformersCmd
 msgid "Remove Transformer"
-msgstr "Suprimeix el Transformador"
+msgstr "Suprimeix el transformador"
+
+#: Icon-O-Matic-SavePanel
+msgid "META:ICON Attribute"
+msgstr "Atribut META:ICON"
 
 #: Icon-O-Matic-Menu-Shape
 msgid "Add shape with style"
-msgstr "Afegeix una forma amb un estil"
+msgstr "Afegeix-n'hi una amb un estil"
+
+#: Icon-O-Matic-AddPathsCmd
+msgid "Assign Path"
+msgstr "Assigna el camí"
+
+#: Icon-O-Matic-ResetTransformationCmd
+msgid "Reset Transformation"
+msgstr "Restableix la transformació"
 
 #: Transformation
 msgctxt "Transformation"
@@ -73,7 +157,11 @@ msgstr "Suprimeix"
 #: Icon-O-Matic-Menu-Settings
 msgctxt "Icon-O-Matic-Menu-Settings"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
+
+#: Icon-O-Matic-AssignStyleCmd
+msgid "Assign Style"
+msgstr "Assigna l'estil"
 
 #: Icon-O-Matic-TransformationBoxStates
 msgctxt "Icon-O-Matic-TransformationBoxStates"
@@ -84,21 +172,63 @@ msgstr "Transformació"
 msgid "Closed"
 msgstr "Tancat"
 
+#: Icon-O-Matic-SplitPointsCmd
+msgid "Split Control Point"
+msgstr "Divideix el punt de control"
+
+#: Icon-O-Matic-Menu-Edit
+msgid "<nothing to redo>"
+msgstr "<res per refer>"
+
 #: Icon-O-Matic-PropertyNames
 msgid "Height"
 msgstr "Alçada"
 
 #: Icon-O-Matic-AddShapesCmd
 msgid "Add Shape"
-msgstr "Afegeix una forma"
+msgstr "Afegeix-hi una forma"
+
+#: Icon-O-Matic-SVGExport
+msgid "warning"
+msgstr "avís"
+
+#: Icon-O-Matic-Menus
+msgid "File"
+msgstr "Fitxer"
+
+#: Icon-O-Matic-CleanUpPathCmd
+msgid "Clean Up Path"
+msgstr "Neteja el camí"
+
+#: Icon-O-Matic-MoveStylesCmd
+msgid "Move Style"
+msgstr "Estil del moviment"
+
+#: Icon-O-Matic-Menus
+msgid "Properties"
+msgstr "Propietats"
+
+#: Icon-O-Matic-PropertyNames
+msgctxt "Icon-O-Matic-PropertyNames"
+msgid "Path"
+msgstr "Camí"
 
 #: Icon-O-Matic-AddPointCmd
 msgid "Add Control Point"
-msgstr "Afegeix un punt de control"
+msgstr "Afegeix-hi un punt de control"
+
+#: Icon-O-Matic-Menus
+msgctxt "Icon-O-Matic-Menus"
+msgid "Path"
+msgstr "Camí"
 
 #: Transformation
 msgid "Stroke"
 msgstr "Traç"
+
+#: Icon-O-Matic-PathManipulator
+msgid "Flip"
+msgstr "Volteja"
 
 #: Icon-O-Matic-PathManipulator
 msgid "Select All"
@@ -118,17 +248,46 @@ msgctxt "Icon-O-Matic-Main"
 msgid "Error: "
 msgstr "Error: "
 
+#: Icon-O-Matic-Exporter
+msgctxt "Icon-O-Matic-Exporter"
+msgid "bad news"
+msgstr "males notícies"
+
+#: Icon-O-Matic-Exporter
+msgid "Saving your document failed!"
+msgstr "Ha fallat desar el document!"
+
+#: Icon-O-Matic-Menu-Settings
+msgid "Snap to grid"
+msgstr "Canvia a la graella"
+
 #: Icon-O-Matic-Main
 msgid "Opening the document failed!"
 msgstr "No s'ha pogut obrir el document"
 
+#: Icon-O-Matic-Menus
+msgid "Shape"
+msgstr "Forma"
+
 #: Icon-O-Matic-ShapesList
 msgid "Add with path & style"
-msgstr "Afegeix una forma amb un estil"
+msgstr "Afegeix-n'hi una amb camí i estil"
+
+#: Icon-O-Matic-StyleTypes
+msgid "<unavailable>"
+msgstr "<no disponible>"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Min LOD"
+msgstr "Min LOD"
+
+#: Icon-O-Matic-ReversePathCmd
+msgid "Reverse Path"
+msgstr "Camí invers"
 
 #: Icon-O-Matic-MoveTransformersCmd
 msgid "Move Transformers"
-msgstr "Mou els Transformadors"
+msgstr "Mou els transformadors"
 
 #: Icon-O-Matic-TransformersList
 msgctxt "Icon-O-Matic-TransformersList"
@@ -147,6 +306,10 @@ msgstr "Desfés"
 msgid "Settings"
 msgstr "Paràmetres"
 
+#: Icon-O-Matic-PropertyNames
+msgid "Scale X"
+msgstr "Escala X"
+
 #: Icon-O-Matic-PathsList
 msgctxt "Icon-O-Matic-PathsList"
 msgid "Add"
@@ -154,12 +317,17 @@ msgstr "Afegeix"
 
 #: Icon-O-Matic-AddStylesCmd
 msgid "Add Styles"
-msgstr "Afegeix estils"
+msgstr "Afegeix-hi estils"
 
 #: Icon-O-Matic-PathManipulator
 msgctxt "Icon-O-Matic-PathManipulator"
 msgid "Remove"
 msgstr "Suprimeix"
+
+#: Icon-O-Matic-ShapesList
+msgctxt "Icon-O-Matic-ShapesList"
+msgid "Duplicate"
+msgstr "Duplica"
 
 #: Transformation
 msgid "Contour"
@@ -178,32 +346,65 @@ msgstr "Desa la icona"
 msgid "Move Paths"
 msgstr "Mou el camins"
 
+#: Icon-O-Matic-PropertyNames
+msgid "Rounding"
+msgstr "Arrodoniment"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Joins"
+msgstr "Uneix"
+
 #: Icon-O-Matic-ColorPicker
 msgctxt "Icon-O-Matic-ColorPicker"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
+
+#: Icon-O-Matic-PathsList
+msgctxt "Icon-O-Matic-PathsList"
+msgid "Duplicate"
+msgstr "Duplica"
 
 #: Icon-O-Matic-RemoveShapesCmd
 msgid "Remove Shapes"
-msgstr "Suprimeix les formes"
+msgstr "Suprimeix formes"
 
 #: Icon-O-Matic-Menu-Settings
 msgctxt "Icon-O-Matic-Menu-Settings"
 msgid "Save"
 msgstr "Desa"
 
+#: Icon-O-Matic-Menu-File
+msgid "Export as…"
+msgstr "Exporta com a…"
+
 #: Icon-O-Matic-Exporter
 msgctxt "Icon-O-Matic-Exporter"
 msgid "Error: "
 msgstr "Error: "
 
+#: Icon-O-Matic-MovePathsCmd
+msgid "Move Path"
+msgstr "Mou el camí"
+
 #: Icon-O-Matic-RemovePathsCmd
 msgid "Remove Paths"
 msgstr "Suprimeix els camins"
 
+#: Icon-O-Matic-AddPathsCmd
+msgid "Assign Paths"
+msgstr "Assigna camins"
+
+#: Icon-O-Matic-StyleTypes
+msgid "Diamond"
+msgstr "Diamant"
+
 #: Icon-O-Matic-AddStylesCmd
 msgid "Add Style"
-msgstr "Afegeix un estil"
+msgstr "Afegeix-hi un estil"
+
+#: Icon-O-Matic-NudgePointsCommand
+msgid "Nudge Control Points"
+msgstr "Empeny els punts de control"
 
 #: Icon-O-Matic-MoveStylesCmd
 msgid "Move Styles"
@@ -215,20 +416,56 @@ msgstr "No ho desis"
 
 #: Icon-O-Matic-Menu-Shape
 msgid "Add shape with path"
-msgstr "Afegeix una forma amb un camí"
+msgstr "Afegeix-n'hi una amb camí"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Translation X"
+msgstr "Traducció X"
+
+#: Icon-O-Matic-FlipPointsCmd
+msgid "Flip Control Points"
+msgstr "Capgira els punt de control"
 
 #: Icon-O-Matic-AddTransformersCmd
 msgid "Add Transformers"
-msgstr "Afegeix alguns transformadors"
+msgstr "Afegeix-hi transformadors"
+
+#: Icon-O-Matic-SavePanel
+msgid "BEOS:ICON Attribute"
+msgstr "Atribut BEOS:ICON"
+
+#: Icon-O-Matic-SVGExport
+msgid ""
+"Icon-O-Matic might not have interpreted all data from the SVG when it was "
+"loaded. By overwriting the original file, this information would now be lost."
+msgstr ""
+"L’Iconamàtic pot no haver interpretat totes les dades de l'SVG quan s'ha "
+"carregat. En sobreescriure el fitxer original, aquesta informació es perdria."
+
+#: Icon-O-Matic-PathsList
+msgid "Rotate indices backwards"
+msgstr "Gira els índexs enrere"
+
+#: Icon-O-Matic-SVGExport
+msgid "Overwrite"
+msgstr "Sobreescriu"
+
+#: Icon-O-Matic-ChangePointCmd
+msgid "Modify Control Point"
+msgstr "Modifica el punt de control"
 
 #: Icon-O-Matic-SVGExport
 msgctxt "Icon-O-Matic-SVGExport"
 msgid "Cancel"
-msgstr "Anul·la"
+msgstr "Cancel·la"
 
 #: Icon-O-Matic-Menu-File
 msgid "Open…"
 msgstr "Obre..."
+
+#: Icon-O-Matic-Main
+msgid "Redo"
+msgstr "Refés"
 
 #: Icon-O-Matic-SetColorCmd
 msgid "Change Color"
@@ -239,13 +476,74 @@ msgctxt "Icon-O-Matic-ShapesList"
 msgid "Remove"
 msgstr "Suprimeix"
 
+#: Icon-O-Matic-ShapesList
+msgid "Drop shapes"
+msgstr "Deixa anar les formes"
+
+#: Icon-O-Matic-SavePanel
+msgid "PNG Set"
+msgstr "Estableix PNG"
+
+#: Empty+transformers+list+-+2nd+line
+msgid "to attach transformers."
+msgstr "per adjuntar-hi transformadors."
+
+#: Icon-O-Matic-StyleTypes
+msgid "Linear"
+msgstr "Lineal"
+
+#: Empty+property+list+-+2nd+line
+msgid "any of the other lists to"
+msgstr "qualsevol de les altres llistes per"
+
+#: Icon-O-Matic-NudgePointsCommand
+msgid "Nudge Control Point"
+msgstr "Empeny el punt de control"
+
+#: Icon-O-Matic-FlipPointsCmd
+msgid "Flip Control Point"
+msgstr "Capgira el punt de control"
+
 #: Icon-O-Matic-AddPathsCmd
 msgid "Add Paths"
-msgstr "Afegeix alguns camins"
+msgstr "Afegeix-hi camins"
+
+#: Style+name+after+dropping+a+color
+msgctxt "Style name after dropping a color"
+msgid "Color (#%02x%02x%02x)"
+msgstr "Color (#%02x%02x%02x)"
+
+#: Icon-O-Matic-PathsList
+msgid "Clean up"
+msgstr "Neteja"
+
+#: Icon-O-Matic-RemoveStylesCmd
+msgid "Remove Style"
+msgstr "Suprimeix l'estil"
+
+#: Icon-O-Matic-PathManipulator
+msgid "Split"
+msgstr "Divideix"
 
 #: Icon-O-Matic-TransformationBoxStates
 msgid "Move"
 msgstr "Mou"
+
+#: Icon-O-Matic-ResetTransformationCmd
+msgid "Reset Transformations"
+msgstr "Restableix les transformacions"
+
+#: Icon-O-Matic-SplitPointsCmd
+msgid "Split Control Points"
+msgstr "Divideix els punts de control"
+
+#: Icon-O-Matic-RemovePointsCmd
+msgid "Remove Control Point"
+msgstr "Suprimeix el punt de control"
+
+#: Icon-O-Matic-StyleTypes
+msgid "Conic"
+msgstr "Cònic"
 
 #: Icon-O-Matic-PropertyNames
 msgid "Name"
@@ -257,62 +555,169 @@ msgstr "Enganxament múltiple"
 
 #: Icon-O-Matic-AddShapesCmd
 msgid "Add Shapes"
-msgstr "Afegeix una forma"
+msgstr "Afegeix-hi formes"
+
+#: Icon-O-Matic-StylesList
+msgctxt "Icon-O-Matic-StylesList"
+msgid "Reset transformation"
+msgstr "Restableix la transformació"
 
 #: Icon-O-Matic-AddTransformersCmd
 msgid "Add Transformer"
-msgstr "Afegeix un transformador"
+msgstr "Afegeix-hi un transformador"
 
 #: Icon-O-Matic-PathsList
 msgid "Reverse"
 msgstr "Inverteix"
+
+#: Icon-O-Matic-TransformationBoxStates
+msgid "Move Pivot"
+msgstr "Mou el punt"
 
 #: Icon-O-Matic-PathsList
 msgctxt "Icon-O-Matic-PathsList"
 msgid "Remove"
 msgstr "Suprimeix"
 
+#: Icon-O-Matic-RemoveTransformersCmd
+msgid "Remove Transformers"
+msgstr "Suprimeix els transformadors"
+
+#: Icon-O-Matic-StyleTypes
+msgid "Style type"
+msgstr "Tipus d'estil"
+
+#: Icon-O-Matic-Menu-File
+msgid "Quit"
+msgstr "Surt"
+
 #: Icon-O-Matic-RemoveStylesCmd
 msgid "Remove Styles"
 msgstr "Suprimeix els estils"
 
+#: Icon-O-Matic-StyleTypes
+msgid "Gradient"
+msgstr "Gradient"
+
+#: Title+of+error+alert
+msgctxt "Title of error alert"
+msgid "bad news"
+msgstr "males notícies"
+
+#: Icon-O-Matic-InsertPointCmd
+msgid "Insert Control Point"
+msgstr "Insereix un punt de control"
+
 #: Icon-O-Matic-Menu-Shape
 msgid "Add shape with path & style"
-msgstr "Afegeix una forma amb un estil"
+msgstr "Afegeix-n'hi una amb camí i estil"
 
 #: Icon-O-Matic-MoveShapesCommand
 msgid "Move Shape"
 msgstr "Mou la forma"
+
+#: Icon-O-Matic-StyleTypes
+msgid "Radial"
+msgstr "Radial"
+
+#: Icon-O-Matic-StyledTextImport
+msgid "Text too long"
+msgstr "Text massa llarg"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Caps"
+msgstr "Maj."
 
 #: Icon-O-Matic-SVGImport
 msgctxt "Icon-O-Matic-SVGImport"
 msgid "OK"
 msgstr "D'acord"
 
+#: Icon-O-Matic-Menu-File
+msgid "Append…"
+msgstr "Afegeix.."
+
 #: Icon-O-Matic-PropertyNames
 msgid "Scale Y"
 msgstr "Escala Y"
 
+#: Dialog+title
+msgid "Export icon"
+msgstr "Exporta la icona"
+
+#: Icon-O-Matic-StyledTextImport
+msgctxt "Icon-O-Matic-StyledTextImport"
+msgid "Color (#%02x%02x%02x)"
+msgstr "Color (#%02x%02x%02x)"
+
 #: Icon-O-Matic-SetGradientCmd
 msgid "Edit Gradient"
 msgstr "Edita el degradat"
+
+#: Set+(property+name)
+msgid "Set "
+msgstr "Estableix "
+
+#: Icon-O-Matic-PathsList
+msgid "Rotate indices forwards"
+msgstr "Gira els índexs endavant"
+
+#: Empty+property+list+-+1st+line
+msgid "Click on an object in"
+msgstr "Cliqueu en un objecte dins"
 
 #: Icon-O-Matic-Menu-File
 msgctxt "Icon-O-Matic-Menu-File"
 msgid "Save"
 msgstr "Desa"
 
+#: Icon-O-Matic-StyledTextImport
+msgid "No"
+msgstr "No"
+
 #: Icon-O-Matic-PathsList
 msgid "Add circle"
-msgstr "Afegeix un cercle"
+msgstr "Afegeix-hi un cercle"
+
+#: Icon-O-Matic-ShapesList
+msgid "Freeze transformation"
+msgstr "Congela la transformació"
+
+#: Icon-O-Matic-FreezeTransformationCmd
+msgid "Freeze Shapes"
+msgstr "Congela les formes"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Miter Limit"
+msgstr "Límit de biaix"
 
 #: Icon-O-Matic-Main
 msgid "Untitled"
 msgstr "Sense títol"
 
+#: Icon-O-Matic-PropertyNames
+msgid "Max LOD"
+msgstr "LOD màx."
+
+#: Icon-O-Matic-AddPathsCmd
+msgid "Add Path"
+msgstr "Afegeix-hi un camí"
+
 #: Icon-O-Matic-Menu-Settings
 msgid "Save changes to current icon before closing?"
 msgstr "Voleu desar els canvis a la icona actual abans de tancar?"
+
+#: Icon-O-Matic-SVGImport
+msgid ""
+"Failed to open the file '%s' as an SVG document.\\n"
+"\\n"
+msgstr ""
+"Ha fallat obrir el fitxer %s com a document d'SVG.\\n"
+"\\n"
+
+#: Icon-O-Matic-SVGImport
+msgid "load error"
+msgstr "error de càrrega"
 
 #: Icon-O-Matic-TransformersList
 msgctxt "Icon-O-Matic-TransformersList"
@@ -321,12 +726,44 @@ msgstr "Transformació"
 
 #: Icon-O-Matic-Menu-File
 msgid "Save as…"
-msgstr "Anomena i desa…"
+msgstr "Desa com a..."
+
+#: Icon-O-Matic-Menus
+msgid "Swatches"
+msgstr "Mostres"
+
+#: Icon-O-Matic-PathCmd
+msgid "<modify path>"
+msgstr "<modificació del camí>"
+
+#: Icon-O-Matic-SavePanel
+msgid "HVIF Source Code"
+msgstr "Codi font HVIF"
+
+#: System+name
+msgid "Icon-O-Matic"
+msgstr "Iconamàtic"
+
+#: Icon-O-Matic-Menu-Edit
+msgid "<nothing to undo>"
+msgstr "<res per desfer>"
 
 #: Icon-O-Matic-StylesList
 msgctxt "Icon-O-Matic-StylesList"
 msgid "Add"
 msgstr "Afegeix"
+
+#: Icon-O-Matic-PropertyNames
+msgid "Translation Y"
+msgstr "Traducció Y"
+
+#: Icon-O-Matic-FreezeTransformationCmd
+msgid "Freeze Shape"
+msgstr "Congela la forma"
+
+#: Icon-O-Matic-TransformationBoxStates
+msgid "Scale"
+msgstr "Escala"
 
 #: Icon-O-Matic-RemoveShapesCmd
 msgid "Remove Shape"
@@ -336,9 +773,25 @@ msgstr "Suprimeix la forma"
 msgid "All"
 msgstr "Tot"
 
+#: Icon-O-Matic-Menus
+msgid "Transformer"
+msgstr "Transformador"
+
+#: Icon-O-Matic-Properties
+msgid "Invert selection"
+msgstr "Selecció inversa"
+
 #: Icon-O-Matic-PropertyNames
 msgid "<unkown property>"
 msgstr "<propietat desconeguda>"
+
+#: Icon-O-Matic-ColorPicker
+msgid "Pick a color"
+msgstr "Trieu un color"
+
+#: Multi+Set+(property+name)
+msgid "Multi Set "
+msgstr "Establiment múltiple "
 
 #: Icon-O-Matic-SavePanel
 msgid "Settings…"
@@ -346,28 +799,56 @@ msgstr "Paràmetres…"
 
 #: Icon-O-Matic-ShapesList
 msgid "Add with style"
-msgstr "Afegeix amb un estil"
+msgstr "Afegeix-n'hi una amb estil"
 
 #: Icon-O-Matic-Menu-File
 msgid "New"
 msgstr "Nou"
 
+#: Icon-O-Matic-StyledTextImport
+msgid "Yes"
+msgstr "Sí"
+
 #: Icon-O-Matic-RemovePathsCmd
 msgid "Remove Path"
 msgstr "Suprimeix el camí"
+
+#: Icon-O-Matic-StyleTypes
+msgid "Gradient type"
+msgstr "Tipus de gradient"
+
+#: Icon-O-Matic-MoveTransformersCmd
+msgid "Move Transformer"
+msgstr "Mou el transformador"
 
 #: Transformation
 msgctxt "Transformation"
 msgid "Perspective"
 msgstr "Perspectiva"
 
+#: Icon-O-Matic-Menu-File
+msgid "Export"
+msgstr "Exporta"
+
 #: Icon-O-Matic-PropertyNames
 msgid "Width"
 msgstr "Amplada"
 
+#: Cancel+button+-+error+alert
+msgid "Bummer"
+msgstr "Problema"
+
 #: Icon-O-Matic-Menus
 msgid "Style"
 msgstr "Estil"
+
+#: Empty+property+list+-+3rd+line
+msgid "edit it's properties here."
+msgstr "editeu-ne les propietats aquí."
+
+#: Icon-O-Matic-Menu-Settings
+msgid "Off"
+msgstr "Desactivat"
 
 #: Icon-O-Matic-Menus
 msgid "Edit"
