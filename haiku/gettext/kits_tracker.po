@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-02 01:15+0200\n"
+"POT-Creation-Date: 2020-11-04 20:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.5.0\n"
+"X-Generator: Translate Toolkit 2.3.0\n"
 
 #: ContainerWindow
 msgid "Created"
@@ -33,8 +33,8 @@ msgid "Open with…"
 msgstr "Obre amb..."
 
 #: FSUtils
-msgid "Error moving \\\"%name\\\" to Trash. (%error)"
-msgstr "Error en moure \\\"%name\\\" a la paperera. (%error)"
+msgid "Error moving \"%name\"\" to Trash. (%error)\""
+msgstr "Error en moure \"%name\"\" a la paperera. (%error)\""
 
 #: FindPanel
 msgid "Or"
@@ -166,14 +166,8 @@ msgid "Prompt"
 msgstr "Indicador"
 
 #: PoseView
-msgid ""
-"Error in regular expression:\\n"
-"\\n"
-"'%errstring'"
-msgstr ""
-"Error a l'expressió regular:\\n"
-"\\n"
-"%errstring"
+msgid "Error in regular expression:nn'%errstring'"
+msgstr "Error a l'expressió regular:nn%errstring"
 
 #: AttributesView
 msgid "Small bitmap icon"
@@ -197,18 +191,12 @@ msgid "{0, plural, other{<# dates>}}"
 msgstr "{0, plural, other{<# dates>}}"
 
 #: libtracker
-msgid "Trailing \\\\."
-msgstr "Final \\\\."
+msgid "Trailing \\."
+msgstr "Final \\."
 
 #: Email+Query+Columns
-msgid ""
-"At %func \\n"
-"find_directory() failed. \\n"
-"Reason: %error"
-msgstr ""
-"A %func \\n"
-"ha fallat find_directory(). \\n"
-"Raó: %error"
+msgid "At %func nfind_directory() failed. nReason: %error"
+msgstr "A %func nha fallat find_directory(). nRaó: %error"
 
 #: OpenWithWindow
 msgid "Handles any file"
@@ -322,8 +310,8 @@ msgid "Open %name with:"
 msgstr "Obre %name amb:"
 
 #: FSUtils
-msgid "\\\"%name\\\" is an unsupported executable."
-msgstr "\\\"%name\\\" és un executable no admès."
+msgid "\"%name\"\" is an unsupported executable.\""
+msgstr "\"%name\"\" és un executable no admès.\""
 
 #: FSUtils
 msgid "You cannot copy or move the root directory."
@@ -556,11 +544,11 @@ msgstr "Troba"
 
 #: FSUtils
 msgid ""
-"An item named \\\"%name\\\" already exists in this folder. Would you like to "
-"replace it with the symbolic link you are creating?"
+"An item named \"%name\"\" already exists in this folder. Would you like to "
+"replace it with the symbolic link you are creating?\""
 msgstr ""
-"Ja existeix un element amb el nom \\\"%name\\\" en aquesta carpeta. El voleu "
-"reemplaçar per l'enllaç simbòlic que creeu?"
+"Ja existeix un element amb el nom \"%name\"\" en aquesta carpeta. El voleu "
+"reemplaçar per l'enllaç simbòlic que creeu?\""
 
 #: ContainerWindow
 msgid "List view"
@@ -617,12 +605,8 @@ msgid "Increase size"
 msgstr "Augmenta'n la mida"
 
 #: FSUtils
-msgid ""
-"\\n"
-"Should this be fixed?"
-msgstr ""
-"\\n"
-"Cal corregir-ho?"
+msgid "nShould this be fixed?"
+msgstr "nCal corregir-ho?"
 
 #: Bookmark+Query+Columns
 msgid "URL"
@@ -743,18 +727,15 @@ msgstr "Camí"
 
 #: FSUtils
 msgid ""
-"If you rename %target, %osName may not behave properly!\\n"
-"\\n"
-"Are you sure you want to do this?"
+"If you rename %target, %osName may not behave properly!nnAre you sure you "
+"want to do this?"
 msgstr ""
 "Si canvieu de nom %target, el sistema %osName potser no es comportarà "
-"correctament!\\n"
-"\\n"
-"Segur que ho voleu fer?"
+"correctament!nnSegur que ho voleu fer?"
 
 #: FSUtils
-msgid "Could not open \\\"%name\\\" (%error). "
-msgstr "No s'ha pogut muntar \\\"%name\\\" (%error). "
+msgid "Could not open \"%name\"\" (%error). \""
+msgstr "No s'ha pogut muntar \"%name\"\" (%error). \""
 
 #: AttributesView
 msgid "Media parameter group"
@@ -766,20 +747,13 @@ msgstr "Propietats de %name"
 
 #: FSUtils
 msgid ""
-"If you move the home folder, %osName may not behave properly!\\n"
-"\\n"
-"Are you sure you want to do this?\\n"
-"\\n"
-"To move the home folder anyway, hold down the Shift key and click \\\"Move\\"
-"\"."
+"If you move the home folder, %osName may not behave properly!nnAre you sure "
+"you want to do this?nnTo move the home folder anyway, hold down the Shift "
+"key and click \"Move\"\".\""
 msgstr ""
 "Si moveu la carpeta personal, el sistema %osName podria no comportar-se "
-"correctament!\\n"
-"\\n"
-"Segur que ho voleu fer?\\n"
-"\\n"
-"Si tanmateix voleu moure la carpeta personal, manteniu premuda la tecla Maj. "
-"i cliqueu a Mou."
+"correctament!nnSegur que ho voleu fer?nnSi tanmateix voleu moure la carpeta "
+"personal, manteniu premuda la tecla Maj. i cliqueu a Mou."
 
 #: AttributesView
 msgid "Property info"
@@ -808,11 +782,11 @@ msgstr "Preferències..."
 
 #: FSUtils
 msgid ""
-"Could not open \\\"%document\\\" because application \\\"%app\\\" is in the "
-"Trash. "
+"Could not open \"%document\"\" because application \"\"%app\"\" is in the "
+"Trash. \""
 msgstr ""
-"No s'ha pogut obrir \\\"%document\\\" ja que l'aplicació \\\"%app\\\" és a "
-"la paperera. "
+"No s'ha pogut obrir \"%document\"\" ja que l'aplicació \"\"%app\"\" és a la "
+"paperera. \""
 
 #: Person+Query+Columns
 msgid "Work Phone"
@@ -876,8 +850,8 @@ msgid "Group"
 msgstr "Grup"
 
 #: FSUtils
-msgid "Could not find an application to open \\\"%name\\\" (%error). "
-msgstr "No s'ha pogut trobar cap aplicació per obrir \\\"%name\\\" (%error). "
+msgid "Could not find an application to open \"%name\"\" (%error). \""
+msgstr "No s'ha pogut trobar cap aplicació per obrir \"%name\"\" (%error). \""
 
 #: libtracker
 msgid "Internal error."
@@ -1047,12 +1021,8 @@ msgid "Edit name"
 msgstr "Edita el nom"
 
 #: FSUtils
-msgid ""
-"There was an error deleting \\\"%name\\\":\\n"
-"\\t%error"
-msgstr ""
-"Hi ha hagut un error en suprimir \\\"%name\\\":\\n"
-"\\t%error"
+msgid "There was an error deleting \"%name\"\":nt%error\""
+msgstr "Hi ha hagut un error en suprimir \"%name\"\":nt%error\""
 
 #: ContainerWindow
 msgctxt "ContainerWindow"
@@ -1060,8 +1030,8 @@ msgid "Resize to fit"
 msgstr "Ajusta a l'espai"
 
 #: InfoWindow
-msgid "Link \\\"%name\\\" to:"
-msgstr "Enllaça \\\"%name\\\" amb:"
+msgid "Link \"%name\"\" to:\""
+msgstr "Enllaça \"%name\"\" amb:\""
 
 #: AutoMounterSettings
 msgid "Mount server error"
@@ -1069,20 +1039,14 @@ msgstr "Error del servidor de muntatge"
 
 #: FSUtils
 msgid ""
-"If you rename the home folder, %osName may not behave properly!\\n"
-"\\n"
-"Are you sure you want to do this?\\n"
-"\\n"
-"To rename the home folder anyway, hold down the Shift key and click \\\""
-"Rename\\\"."
+"If you rename the home folder, %osName may not behave properly!nnAre you "
+"sure you want to do this?nnTo rename the home folder anyway, hold down the "
+"Shift key and click \"Rename\"\".\""
 msgstr ""
 "Si canvieu de nom la carpeta personal, el sistema %osName podria no "
-"comportar-se correctament!\\n"
-"\\n"
-"Segur que ho voleu fer?\\n"
-"\\n"
-"Si tanmateix voleu canviar-la de nom, mantingueu premuda la tecla Maj. i "
-"cliqueu a Canvia'n el nom."
+"comportar-se correctament!nnSegur que ho voleu fer?nnSi tanmateix voleu "
+"canviar-la de nom, mantingueu premuda la tecla Maj. i cliqueu a Canvia'n el "
+"nom."
 
 #: AttributesView
 msgid "Boolean"
@@ -1116,21 +1080,12 @@ msgstr "Reemplaça'ls tots"
 
 #: OpenWithWindow
 msgid ""
-"The application \\\"%appname\\\" does not support the type of document you "
-"are about to open.\\n"
-"Are you sure you want to proceed?\\n"
-"\\n"
-"If you know that the application supports the document type, you should "
-"contact the publisher of the application and ask them to update their "
-"application to list the type of your document as supported."
+"The application \"%appname\"\" does not support the type of document you are "
+"about to open.nAre you sure you want to proceed?nnIf you know that the "
+"application supports the document type"
 msgstr ""
-"L'aplicació \\\"%appname\\\" no admet el tipus de document que esteu a punt "
-"d'obrir.\\n"
-"Segur que voleu continuar?\\n"
-"\\n"
-"Si sabeu que l'aplicació admet aquest tipus de document, hauríeu de posar-"
-"vos en contacte amb qui la publica i demanar-li que afegeixi aquest tipus de "
-"document a la llista de documents admesos."
+" you should contact the publisher of the application and ask them to update "
+"their application to list the type of your document as supported.\""
 
 #: ContainerWindow
 msgid "Reverse order"
@@ -1262,9 +1217,13 @@ msgstr "Muntatge de disc a l'arrencada"
 msgid "Don't automount"
 msgstr "No el muntis automàticament"
 
+#: AttributesView
+msgid "Node ref"
+msgstr "Ref. del node"
+
 #: OpenWithWindow
-msgid "Could not find application \\\"%appname\\\""
-msgstr "No s'ha pogut trobar l'aplicació \\\"%appname\\\"."
+msgid "Could not find application \"%appname\"\"\""
+msgstr "No s'ha pogut trobar l'aplicació \"%appname\"\".\""
 
 #: libtracker
 msgid "Unmatched parenthesis."
@@ -1284,19 +1243,11 @@ msgstr "Hi ha hagut un error (%error) en carregar el complement %name."
 
 #: FSUtils
 msgid ""
-"You are trying to replace the item:\\n"
-"\\t%name%dest\\n"
-"with:\\n"
-"\\t%name%src\\n"
-"\\n"
-"Would you like to replace it with the one you are %movemode?"
+"You are trying to replace the item:nt%name%destnwith:nt%name%srcnnWould you "
+"like to replace it with the one you are %movemode?"
 msgstr ""
-"Esteu intentant reemplaçar l'element\\n"
-"\\t%name%dest\\n"
-"per\\n"
-"\\t%name%src\\n"
-"\\n"
-"Segur que el voleu reemplaçar per %movemode?"
+"Esteu intentant reemplaçar l'elementnt%name%destnpernt%name%srcnnSegur que "
+"el voleu reemplaçar per %movemode?"
 
 #: ContainerWindow
 msgid "Empty Trash"
@@ -1331,8 +1282,8 @@ msgid "label too long"
 msgstr "l'etiqueta és massa llarga"
 
 #: FSUtils
-msgid "Error creating link to \\\"%name\\\"."
-msgstr "Hi ha hagut un error en enllaçar amb \\\"%name\\\"."
+msgid "Error creating link to \"%name\"\".\""
+msgstr "Hi ha hagut un error en enllaçar amb \"%name\"\".\""
 
 #: FilePermissionsView
 msgctxt "FilePermissionsView"
@@ -1433,8 +1384,8 @@ msgid "Edit name"
 msgstr "Edita el nom"
 
 #: FSUtils
-msgid "Could not open \\\"%document\\\" (Missing symbol: %symbol). \\n"
-msgstr "No s'ha pogut obrir \\\"%document\\\" (Falta el símbol %symbol). \\n"
+msgid "Could not open \"%document\"\" (Missing symbol: %symbol). n\""
+msgstr "No s'ha pogut obrir \"%document\"\" (Falta el símbol %symbol). n\""
 
 #: AttributesView
 msgid "ASCII Text"
@@ -1449,8 +1400,8 @@ msgid "config"
 msgstr "configuració"
 
 #: FSUtils
-msgid "Error moving \\\"%name\\\"."
-msgstr "Error en moure \\\"%name\\\"."
+msgid "Error moving \"%name\"\".\""
+msgstr "Error en moure \"%name\"\".\""
 
 #: QueryContainerWindow
 msgctxt "QueryContainerWindow"
@@ -1527,16 +1478,8 @@ msgid "less than"
 msgstr "menys que"
 
 #: FSUtils
-msgid ""
-"Error copying file \\\"%name\\\":\\n"
-"\\t%error\\n"
-"\\n"
-"Would you like to continue?"
-msgstr ""
-"Error en copiar el fitxer \\\"%name\\\":\\n"
-"\\t%error\\n"
-"\\n"
-"Voleu continuar?"
+msgid "Error copying file \"%name\"\":nt%errornnWould you like to continue?\""
+msgstr "Error en copiar el fitxer \"%name\"\":nt%errornnVoleu continuar?\""
 
 #: StatusWindow
 msgid "Creating links: "
@@ -1544,17 +1487,17 @@ msgstr "Es creen els enllaços: "
 
 #: FSUtils
 msgid ""
-"Could not open \\\"%document\\\" with application \\\"%app\\\" (%error). "
+"Could not open \"%document\"\" with application \"\"%app\"\" (%error). \""
 msgstr ""
-"No s'ha pogut obrir \\\"%document\\\" amb l'aplicació \\\"%app\\\" (%error). "
+"No s'ha pogut obrir \"%document\"\" amb l'aplicació \"\"%app\"\" (%error). \""
 
 #: PoseView
 msgid "Create %s clipping"
 msgstr "Crea un retall de %s"
 
 #: FSUtils
-msgid "Error moving \\\"%name\\\""
-msgstr "Error en moure \\\"%name\\\""
+msgid "Error moving \"%name\"\"\""
+msgstr "Error en moure \"%name\"\"\""
 
 #: StatusWindow
 msgid "To: %dir"
@@ -1596,21 +1539,14 @@ msgstr "Escriu"
 
 #: FSUtils
 msgid ""
-"If you alter the system folder or its contents, you won't be able to boot "
-"%osName!\\n"
-"\\n"
-"Are you sure you want to do this?\\n"
-"\\n"
-"To alter the system folder or its contents anyway, hold down the Shift key "
-"and click \\\"I know what I'm doing\\\"."
+"If you alter the system folder or its contents, you won't be able to boot %"
+"osName!nnAre you sure you want to do this?nnTo alter the system folder or "
+"its contents anyway, hold down the Shift key and click \"I know what I'm "
+"doing\"\".\""
 msgstr ""
-"Si altereu la carpeta de sistema o el que hi ha, no podreu fer arrencar "
-"%osName!\\n"
-"\\n"
-"Segur que ho voleu fer?\\n"
-"\\n"
-"Si tanmateix voleu alterar-ho, mantingueu premuda la tecla Maj. i cliqueu a "
-"\\\"Sé el que faig\\\"."
+"Si altereu la carpeta de sistema o el que hi ha, no podreu fer arrencar %"
+"osName!nnSegur que ho voleu fer?nnSi tanmateix voleu alterar-ho, mantingueu "
+"premuda la tecla Maj. i cliqueu a \"Sé el que faig\"\".\""
 
 #: FilePanelPriv
 msgctxt "FilePanelPriv"
@@ -1619,11 +1555,11 @@ msgstr "Desa"
 
 #: FSUtils
 msgid ""
-"Could not open \\\"%document\\\" with application \\\"%app\\\" (Missing "
-"libraries: %library). \\n"
+"Could not open \"%document\"\" with application \"\"%app\"\" (Missing "
+"libraries: %library). n\""
 msgstr ""
-"No s'ha pogut obrir \\\"%document\\\" amb l'aplicació \\\"%app\\\" (Falten "
-"biblioteques: %library). \\n"
+"No s'ha pogut obrir \"%document\"\" amb l'aplicació \"\"%app\"\" (Falten "
+"biblioteques: %library). n\""
 
 #: StatusWindow
 msgid "Finish: %time"
@@ -1722,15 +1658,8 @@ msgstr "Assumpte"
 
 #: FSUtils
 msgid ""
-"Error copying folder \\\"%name\\\":\\n"
-"\\t%error\\n"
-"\\n"
-"Would you like to continue?"
-msgstr ""
-"Error en copiar la carpeta \\\"%name\\\":\\n"
-"\\t%error\\n"
-"\\n"
-"Voleu continuar?"
+"Error copying folder \"%name\"\":nt%errornnWould you like to continue?\""
+msgstr "Error en copiar la carpeta \"%name\"\":nt%errornnVoleu continuar?\""
 
 #: FSUtils
 msgid "You cannot create a link to the root directory."
@@ -1854,20 +1783,18 @@ msgstr "Nou"
 #: FSClipBoard
 msgctxt "FSClipBoard"
 msgid ""
-"You must drop items on one of the disk icons in the \\\"Disks\\\" window."
+"You must drop items on one of the disk icons in the \"Disks\"\" window.\""
 msgstr ""
-"Heu de deixar anar els elements a una de les icones de la finestra \\\""
-"Discs\\\"."
+"Heu de deixar anar els elements a una de les icones de la finestra \"Discs\""
+"\".\""
 
 #: FSUtils
 msgid ""
-"If you alter %target, %osName may not behave properly!\\n"
-"\\n"
-"Are you sure you want to do this?"
+"If you alter %target, %osName may not behave properly!nnAre you sure you "
+"want to do this?"
 msgstr ""
-"Si altereu %target, el sistema %osName pot no comportar-se correctament!\\n"
-"\\n"
-"Segur que voleu fer-ho?"
+"Si altereu %target, el sistema %osName pot no comportar-se "
+"correctament!nnSegur que voleu fer-ho?"
 
 #: FSClipBoard
 msgctxt "FSClipBoard"
@@ -1877,15 +1804,12 @@ msgstr "Disculpeu, no podeu copiar elements a la paperera."
 #: FSUtils
 msgid ""
 "Some items already exist in this folder with the same names as the items you "
-"are %verb.\\n"
-" \\n"
-"Would you like to replace them with the ones you are %verb or be prompted "
-"for each one?"
+"are %verb.n nWould you like to replace them with the ones you are %verb or "
+"be prompted for each one?"
 msgstr ""
 "Alguns elements d'aquesta carpeta tenen el mateix nom que els elements que \""
-"%verb\".\\n"
-" \\n"
-"Voleu reemplaçar-los pels que \"%verb\" o que se us pregunti per cada un?"
+"%verb\".n nVoleu reemplaçar-los pels que \"%verb\" o que se us pregunti per "
+"cada un?"
 
 #: Email+Query+Columns
 msgid "When"
@@ -1906,31 +1830,22 @@ msgid "Paste"
 msgstr "Enganxa"
 
 #: FSUtils
-msgid ""
-"An item named \\\"%name\\\" already exists in this folder, and may contain\\n"
-"items with the same names. Would you like to replace them with those "
-"contained in the folder you are %verb?"
+msgid "An item named \"%name\"\" already exists in this folder"
 msgstr ""
-"Ja existeix un element amb el nom \\\"%name\\\" en aquesta carpeta, i podria "
-"incloure\\n"
-"elements amb els mateixos noms. Els voleu reemplaçar pels de la carpeta que "
-"\"%verb\"?"
+" and may containnitems with the same names. Would you like to replace them "
+"with those contained in the folder you are %verb?\""
 
 #: FSUtils
-msgid "Cannot unmount the boot volume \\\"%name\\\"."
-msgstr "No es pot desmuntar el volum d'arrencada \\\"%name\\\"."
+msgid "Cannot unmount the boot volume \"%name\"\".\""
+msgstr "No es pot desmuntar el volum d'arrencada \"%name\"\".\""
 
 #: FSUtils
 msgid ""
-"Could not open \\\"%document\\\" with application \\\"%app\\\" (Missing "
-"symbol: %symbol). \\n"
+"Could not open \"%document\"\" with application \"\"%app\"\" (Missing symbol:"
+" %symbol). n\""
 msgstr ""
-"No s'ha pogut obrir \\\"%document\\\" amb l'aplicació \\\"%app\\\" (Falta el "
-"símbol %symbol). \\n"
-
-#: AttributesView
-msgid "Reference"
-msgstr "Referència"
+"No s'ha pogut obrir \"%document\"\" amb l'aplicació \"\"%app\"\" (Falta el "
+"símbol %symbol). n\""
 
 #: ContainerWindow
 msgctxt "ContainerWindow"
@@ -1944,11 +1859,11 @@ msgstr "Nom"
 
 #: FSUtils
 msgid ""
-"There was a problem trying to replace \\\"%name\\\". The item might be open "
-"or busy."
+"There was a problem trying to replace \"%name\"\". The item might be open or "
+"busy.\""
 msgstr ""
-"Hi ha hagut un problema en intentar reemplaçar \\\"%name\\\". Potser "
-"l'element estava obert o ocupat."
+"Hi ha hagut un problema en intentar reemplaçar \"%name\"\". Potser l'element "
+"estava obert o ocupat.\""
 
 #: TrackerSettingsWindow
 msgid "Windows"
@@ -1959,9 +1874,9 @@ msgid "Show space bars on volumes"
 msgstr "Mostra les barres d'espai dels volums"
 
 #: FSUtils
-msgid "Could not update permissions of file \\\"%name\\\". %error"
+msgid "Could not update permissions of file \"%name\"\". %error\""
 msgstr ""
-"No s'han pogut actualitzar els permisos del fitxer \\\"%name\\\". %error"
+"No s'han pogut actualitzar els permisos del fitxer \"%name\"\". %error\""
 
 #: DeskWindow
 msgctxt "DeskWindow"
@@ -1990,20 +1905,13 @@ msgstr "paperera"
 
 #: FSUtils
 msgid ""
-"If you move the system folder or its contents, you won't be able to boot "
-"%osName!\\n"
-"\\n"
-"Are you sure you want to do this?\\n"
-"\\n"
-"To move the system folder or its contents anyway, hold down the Shift key "
-"and click \\\"Move\\\"."
+"If you move the system folder or its contents, you won't be able to boot %"
+"osName!nnAre you sure you want to do this?nnTo move the system folder or its "
+"contents anyway, hold down the Shift key and click \"Move\"\".\""
 msgstr ""
 "Si moveu la carpeta de sistema o el que hi ha, no podreu fer arrencar el "
-"sistema %osName!\\n"
-"\\n"
-"Segur que ho voleu fer?\\n"
-"\\n"
-"Si tanmateix voleu fer-ho, mantingueu premuda la tecla Maj. i cliqueu a Mou."
+"sistema %osName!nnSegur que ho voleu fer?nnSi tanmateix voleu fer-ho, "
+"mantingueu premuda la tecla Maj. i cliqueu a Mou."
 
 #: ContainerWindow
 msgid "Close all in workspace"
@@ -2027,9 +1935,9 @@ msgid "Finish: %time - %finishtime left"
 msgstr "Acabarà: %time - falten %finishtime"
 
 #: FSUtils
-msgid "Could not open \\\"%document\\\" (Missing libraries: %library). \\n"
+msgid "Could not open \"%document\"\" (Missing libraries: %library). n\""
 msgstr ""
-"No s'ha pogut obrir \\\"%document\\\" (Falten biblioteques: %library). \\n"
+"No s'ha pogut obrir \"%document\"\" (Falten biblioteques: %library). n\""
 
 #: ContainerWindow
 msgid "Create relative link here"
@@ -2169,21 +2077,13 @@ msgstr "és"
 
 #: FSUtils
 msgid ""
-"If you rename the system folder or its contents, you won't be able to boot "
-"%osName!\\n"
-"\\n"
-"Are you sure you want to do this?\\n"
-"\\n"
-"To rename the system folder or its contents anyway, hold down the Shift key "
-"and click \\\"Rename\\\"."
+"If you rename the system folder or its contents, you won't be able to boot %"
+"osName!nnAre you sure you want to do this?nnTo rename the system folder or "
+"its contents anyway, hold down the Shift key and click \"Rename\"\".\""
 msgstr ""
-"Si canvieu de nom la carpeta de sistema, no podreu fer arrencar el sistema "
-"%osName!\\n"
-"\\n"
-"Segur que ho voleu fer?\\n"
-"\\n"
-"Si tanmateix voleu fer-ho, manteniu premuda la tecla Maj. i cliqueu a \\\""
-"Canvia'n el nom\\\"."
+"Si canvieu de nom la carpeta de sistema, no podreu fer arrencar el sistema %"
+"osName!nnSegur que ho voleu fer?nnSi tanmateix voleu fer-ho, manteniu "
+"premuda la tecla Maj. i cliqueu a \"Canvia'n el nom\"\".\""
 
 #: DeskWindow
 msgctxt "DeskWindow"
@@ -2211,11 +2111,9 @@ msgstr "64 x 64"
 
 #: FSUtils
 msgid ""
-"\\\"%name\\\" is a legacy executable. Please obtain an updated version or "
-"recompile the application."
-msgstr ""
-"\\\"%name\\\" és un executable de llegat. Si us plau, obteniu-ne una versió "
-"actualitzada o recompileu l'aplicació."
+"\"%name\"\" is a legacy executable. Please obtain an updated version or "
+"recompile the application.\""
+msgstr "\"%name\"\" és un executable de llegat. Si us plau"
 
 #: AutoMounterSettings
 msgid "Only the boot disk"
@@ -2266,10 +2164,10 @@ msgstr "Nom real"
 
 #: FSUtils
 msgid ""
-"Could not open \\\"%name\\\". The file is mistakenly marked as executable. "
+"Could not open \"%name\"\". The file is mistakenly marked as executable. \""
 msgstr ""
-"No es pot obrir \\\"%name\\\". Aquest fitxer està erròniament marcat com a "
-"executable. "
+"No es pot obrir \"%name\"\". Aquest fitxer està erròniament marcat com a "
+"executable. \""
 
 #: FilePanelPriv
 msgid "Go to parent"
@@ -2320,19 +2218,19 @@ msgstr "Retall sense títol"
 
 #: FilePanelPriv
 msgid ""
-"The file \\\"%name\\\" already exists in the specified folder. Do you want "
-"to replace it?"
+"The file \"%name\"\" already exists in the specified folder. Do you want to "
+"replace it?\""
 msgstr ""
-"Ja existeix un fitxer amb el nom \\\"%name\\\" a la carpeta especificada. El "
-"voleu reemplaçar?"
+"Ja existeix un fitxer amb el nom \"%name\"\" a la carpeta especificada. El "
+"voleu reemplaçar?\""
 
 #: PoseView
 msgctxt "PoseView"
 msgid ""
-"You must drop items on one of the disk icons in the \\\"Disks\\\" window."
+"You must drop items on one of the disk icons in the \"Disks\"\" window.\""
 msgstr ""
-"Heu de deixar anar els elements a una de les icones de la finestra \\\""
-"Discs\\\"."
+"Heu de deixar anar els elements a una de les icones de la finestra \"Discs\""
+"\".\""
 
 #: InfoWindow
 msgid "Version:"
@@ -2424,20 +2322,13 @@ msgstr "Paràmetre multimèdia"
 
 #: FSUtils
 msgid ""
-"If you alter the home folder, %osName may not behave properly!\\n"
-"\\n"
-"Are you sure you want to do this?\\n"
-"\\n"
-"To alter the home folder anyway, hold down the Shift key and click \\\"I "
-"know what I'm doing\\\"."
+"If you alter the home folder, %osName may not behave properly!nnAre you sure "
+"you want to do this?nnTo alter the home folder anyway, hold down the Shift "
+"key and click \"I know what I'm doing\"\".\""
 msgstr ""
 "Si altereu la capeta personal, el sistema %osName pot no comportar-se "
-"correctament!\\n"
-"\\n"
-"Segur que ho voleu fer?\\n"
-"\\n"
-"Si tanmateix la voleu alterar, mantingueu premuda la tecla Maj. i cliqueu a "
-"\\\"Sé el que faig\\\"."
+"correctament!nnSegur que ho voleu fer?nnSi tanmateix la voleu alterar, "
+"mantingueu premuda la tecla Maj. i cliqueu a \"Sé el que faig\"\".\""
 
 #: PoseView
 msgctxt "PoseView"
@@ -2473,13 +2364,11 @@ msgstr "la carpeta de paràmetres"
 
 #: FSUtils
 msgid ""
-"If you move %target, %osName may not behave properly!\\n"
-"\\n"
-"Are you sure you want to do this?"
+"If you move %target, %osName may not behave properly!nnAre you sure you want "
+"to do this?"
 msgstr ""
-"Si moveu %target, el sistema %osName pot no comportar-se correctament!\\n"
-"\\n"
-"Segur que ho voleu fer?"
+"Si moveu %target, el sistema %osName pot no comportar-se "
+"correctament!nnSegur que ho voleu fer?"
 
 #: FindPanel
 msgid "Create a Query"
@@ -2497,6 +2386,10 @@ msgstr "Sé el que faig"
 #: StatusWindow
 msgid "Preparing to copy items…"
 msgstr "Es prepara la còpia d'elements..."
+
+#: AttributesView
+msgid "Entry ref"
+msgstr "Ref. de l'entrada"
 
 #: ContainerWindow
 msgctxt "ContainerWindow"

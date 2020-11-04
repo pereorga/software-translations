@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-02 01:15+0200\n"
+"POT-Creation-Date: 2020-11-04 20:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.5.0\n"
+"X-Generator: Translate Toolkit 2.3.0\n"
 
 #: LocalRepositoryUpdateProcess
 msgid "Repository update error"
@@ -52,10 +52,6 @@ msgstr "Paquets disponibles"
 msgid "Create account"
 msgstr "Creeu un compte"
 
-#: RatePackageWindow
-msgid "Mostly stable"
-msgstr "Majoritàriament estable"
-
 #: App
 msgctxt "App"
 msgid "OK"
@@ -74,14 +70,8 @@ msgid "Rate package…"
 msgstr "Puntueu el paquet..."
 
 #: App
-msgid ""
-"Starting the package daemon failed:\\n"
-"\\n"
-"%Error%"
-msgstr ""
-"Ha fallat iniciar el dimoni del paquet:\\n"
-"\\n"
-"%Error%"
+msgid "Starting the package daemon failed:nn%Error%"
+msgstr "Ha fallat iniciar el dimoni del paquet:nn%Error%"
 
 #: UserLoginWindow
 msgid "You have successfully authenticated as user %Nickname%."
@@ -122,10 +112,6 @@ msgstr "Puntuació"
 msgid "Synchronizing icons"
 msgstr "Sincronització de les icones"
 
-#: RatePackageWindow
-msgid "Does not start"
-msgstr "No s'inicia."
-
 #: MainWindow
 msgid "Show"
 msgstr "Mostra..."
@@ -133,14 +119,6 @@ msgstr "Mostra..."
 #: LocalPkgDataLoadProcess
 msgid "An error occurred while obtaining the package list: %message%"
 msgstr "Hi ha hagut un error en obtenir la llista de paquets: %message%"
-
-#: RatePackageWindow
-msgid "Unstable but usable"
-msgstr "Inestable però usable"
-
-#: RatePackageWindow
-msgid "Not specified"
-msgstr "Sense especificar"
 
 #: App
 msgid ""
@@ -245,10 +223,6 @@ msgstr ""
 "No s'ha trobat al servidor un objecte sol·licitat o un objecte implicat en "
 "la sol·licitud."
 
-#: RatePackageWindow
-msgid "Stable"
-msgstr "Estable"
-
 #: PackageManager
 msgid "Fatal error"
 msgstr "Error greu"
@@ -321,12 +295,10 @@ msgstr "Cancel·la"
 #: App
 msgid ""
 "HaikuDepot needs the package daemon to function, and it appears to be not "
-"running.\\n"
-"Would you like to start it now?"
+"running.nWould you like to start it now?"
 msgstr ""
 "El Dipòsit del Haiku necessita que el dimoni del paquet funcioni i sembla "
-"que no funciona.\\n"
-"Voleu iniciar-lo ara?"
+"que no funciona.nVoleu iniciar-lo ara?"
 
 #: PackageInfoView
 msgid "Click a package to view information"
@@ -375,10 +347,6 @@ msgstr ""
 msgid "Reboot required"
 msgstr "Cal reiniciar"
 
-#: RatePackageWindow
-msgid "Very unstable"
-msgstr "Molt inestable"
-
 #: UserLoginWindow
 msgid "Password:"
 msgstr "Contrasenya:"
@@ -391,11 +359,11 @@ msgstr "Tots els paquets"
 msgid ""
 "This application is too old to communicate with the server system. Obtain a "
 "newer version of this application by updating your system. The minimum "
-"required version of this application is \\\"%s\\\"."
+"required version of this application is \"%s\"\".\""
 msgstr ""
 "Aquesta aplicació és massa antiga per comunicar-se amb el sistema del "
 "servidor. Obtingueu-ne una versió més recent actualitzant el sistema. La "
-"versió mínima requerida d’aquesta aplicació és \\\"%s\\\"."
+"versió mínima requerida d’aquesta aplicació és \"%s\"\".\""
 
 #: RatePackageWindow
 msgid "Stability"
@@ -672,17 +640,15 @@ msgstr "Hi ha hagut un error de validació."
 msgid ""
 "While updating package data, a problem has arisen that may cause data to be "
 "outdated or missing from the application's display. Additional details "
-"regarding this problem may be able to be obtained from the application logs."
-"\\n"
-"Information about how to view the logs is available in the HaikuDepot "
+"regarding this problem may be able to be obtained from the application "
+"logs.nInformation about how to view the logs is available in the HaikuDepot "
 "section of the user guide."
 msgstr ""
 "Durant l'actualització de dades de paquets, ha sorgit un problema que pot "
 "provocar que les dades quedin obsoletes o que faltin a la pantalla de "
 "l'aplicació. Es poden obtenir detalls addicionals sobre aquest problema als "
-"registres de l'aplicació.\\n"
-"La informació sobre com veure els registres està disponible a la secció del "
-"Dipòsit del Haiku de la guia de l'usuari."
+"registres de l'aplicació.nLa informació sobre com veure els registres està "
+"disponible a la secció del Dipòsit del Haiku de la guia de l'usuari."
 
 #: UserLoginWindow
 msgid "The nickname is required."
@@ -807,15 +773,13 @@ msgstr "S'obtenen les dades del repositori remot."
 #: UserLoginWindow
 msgid ""
 "An error has arisen downloading the usage conditions required to create a "
-"new user. Check the log for details and try again. \\n"
-"Information about how to view the logs is available in the HaikuDepot "
-"section of the user guide."
+"new user. Check the log for details and try again. nInformation about how to "
+"view the logs is available in the HaikuDepot section of the user guide."
 msgstr ""
 "Hi ha hagut un error en descarregar les condicions d'ús necessàries per "
 "crear un usuari nou. Comproveu els detalls del registre i torneu-ho a "
-"provar. \\n"
-"La informació sobre com veure els registres està disponible a la secció del "
-"Dipòsit del Haiku de la guia de l'usuari."
+"provar. nLa informació sobre com veure els registres està disponible a la "
+"secció del Dipòsit del Haiku de la guia de l'usuari."
 
 #: PackageListView
 msgid "Description"

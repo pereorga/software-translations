@@ -3,30 +3,34 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-02 01:15+0200\n"
+"POT-Creation-Date: 2020-11-04 20:21+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.5.0\n"
+"X-Generator: Translate Toolkit 2.3.0\n"
 
 #: CodyCam
 msgid "destination directory expected"
 msgstr "s'espera un directori de destinació"
 
 #: SftpClient
-msgid "reply: '%s'\\n"
-msgstr "resposta: %s\\n"
+msgid "reply: '%s'n"
+msgstr "resposta: %sn"
+
+#: FtpClient
+msgid "PASS <suppressed>  (real password sent)"
+msgstr "Contrasenya <suppressed>  (contrasenya real enviada)"
 
 #: CodyCam
 msgid "JPEG image"
 msgstr "Imatge JPEG"
 
 #: FtpClient
-msgid "Remote host has closed the connection.\\n"
-msgstr "El servidor remot ha tancat la connexió.\\n"
+msgid "Remote host has closed the connection.n"
+msgstr "El servidor remot ha tancat la connexió.n"
 
 #: CodyCam
 msgid "image file format expected"
@@ -77,8 +81,8 @@ msgid "on or off expected"
 msgstr "s'esperava ON o OFF"
 
 #: VideoConsumer.cpp
-msgid "invalid upload client %ld\\n"
-msgstr "client de càrrega de vàlid: %ld\\n"
+msgid "invalid upload client %ldn"
+msgstr "client de càrrega de vàlid: %ldn"
 
 #: CodyCam
 msgid "Every 30 seconds"
@@ -105,8 +109,8 @@ msgid "Cannot connect the video source to the video window"
 msgstr "No es pot connectar l'origen del vídeo a la finestra del vídeo."
 
 #: SftpClient
-msgid "read: %d\\n"
-msgstr "llegeix: %d\\n"
+msgid "read: %dn"
+msgstr "llegeix: %dn"
 
 #: CodyCam
 msgid "Every 2 hours"
@@ -121,8 +125,8 @@ msgid "Every 4 hours"
 msgstr "Cada 4 hores"
 
 #: FtpClient
-msgid "cmd: '%s'\\n"
-msgstr "cmd: %s\\n"
+msgid "cmd: '%s'n"
+msgstr "cmd: %sn"
 
 #: VideoConsumer.cpp
 msgid "Closing the window"
@@ -188,10 +192,6 @@ msgstr "Carrega..."
 msgid "password expected"
 msgstr "s'esperava la contrasenya"
 
-#: FtpClient
-msgid "PASS <suppressed>  (real password sent)\\n"
-msgstr "CONTRASENYA <suppressed>  (s'ha enviat la contrasenya real)\\n"
-
 #: CodyCam
 msgid "SFTP"
 msgstr "SFTP"
@@ -209,8 +209,8 @@ msgid "Cannot start the video window"
 msgstr "No es pot iniciar la finestra de vídeo."
 
 #: FtpClient
-msgid "reply: %d, %d\\n"
-msgstr "resposta: %d, %d\\n"
+msgid "reply: %d, %dn"
+msgstr "resposta: %d, %dn"
 
 #: CodyCam
 msgid "Cannot set the time source for the video window"
@@ -313,8 +313,8 @@ msgid "File"
 msgstr "Fitxer"
 
 #: SftpClient
-msgid "read: %ld\\n"
-msgstr "llegeix: %ld\\n"
+msgid "read: %ldn"
+msgstr "llegeix: %ldn"
 
 #: CodyCam
 msgid "Every hour"
@@ -341,12 +341,9 @@ msgid "Error creating output file"
 msgstr "Error en crear el fitxer de sortida."
 
 #: CodyCam
-msgid ""
-"Cannot find a video source.\\n"
-"You need a webcam to use CodyCam."
+msgid "Cannot find a video source.nYou need a webcam to use CodyCam."
 msgstr ""
-"No es pot trobar cap font de vídeo.\\n"
-"Cal una càmera web per usar el CodyCam."
+"No es pot trobar cap font de vídeo.nCal una càmera web per usar el CodyCam."
 
 #: VideoConsumer.cpp
 msgid "Logging in…"
