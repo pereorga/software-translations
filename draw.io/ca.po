@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-29 22:46+0200\n"
+"POT-Creation-Date: 2020-11-04 20:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1782,6 +1782,10 @@ msgstr "Error de llicència"
 msgid "The license for {1} has expired on {2}. Click here."
 msgstr "La llicència per a {1} ha expirat el {2}. Clica aquí."
 
+#: licenseRequired
+msgid "This feature requires draw.io to be licensed."
+msgstr ""
+
 #: licenseWillExpire
 msgid "The license for {1} will expire on {2}. Click here."
 msgstr "La llicència per a {1} expira el {2}. Clica aquí."
@@ -2303,6 +2307,10 @@ msgstr "Mida del paper"
 #: pattern
 msgid "Pattern"
 msgstr "Patró"
+
+#: parallels
+msgid "Parallels"
+msgstr ""
 
 #: paste
 msgid "Paste"
@@ -4287,7 +4295,7 @@ msgstr ""
 
 #: backupFound
 msgid "Backup file found"
-msgstr ""
+msgstr "No s'ha trobat el fitxer de còpia de seguretat"
 
 #: chromeOnly
 msgid "This feature only works in Google Chrome"
@@ -4295,6 +4303,46 @@ msgstr ""
 
 #: msgDeleted
 msgid "This message has been deleted."
+msgstr ""
+
+#: confAErrFetchDrawList
+msgid "Error fetching diagrams list. Some diagrams are skipped."
+msgstr ""
+
+#: confAErrCheckDrawDiag
+msgid "Cannot check diagram {1}"
+msgstr ""
+
+#: confAErrFetchPageList
+msgid "Error fetching pages list."
+msgstr ""
+
+#: confADiagImportIncom
+msgid "{1} diagram \"{2}\" is imported partially and may have missing shapes."
+msgstr ""
+
+#: invalidSel
+msgid "Invalid selection"
+msgstr "La selecció no és vàlida"
+
+#: diagNameEmptyErr
+msgid "Diagram name cannot be empty"
+msgstr "El diagrama ha de tenir un nom"
+
+#: openDiagram
+msgid "Open Diagram"
+msgstr "Obre un diagrama"
+
+#: newDiagram
+msgid "New diagram"
+msgstr "Diagrama nou"
+
+#: editable
+msgid "Editable"
+msgstr "Editable"
+
+#: confAReimportStarted
+msgid "Re-import {1} diagrams started..."
 msgstr ""
 
 msgid "Diagrams Online"
