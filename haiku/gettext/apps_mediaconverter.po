@@ -3,18 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 20:21+0200\n"
+"POT-Creation-Date: 2022-12-17 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.0\n"
-
-#: MediaConverter
-msgid "Writing audio track: %d%% complete"
-msgstr "S'escriu la pista d'àudio: %d%% completat"
+"X-Generator: Translate Toolkit 3.8.0\n"
 
 #: MediaConverter
 msgid "Input file not recognized as Audio or Video"
@@ -33,8 +29,8 @@ msgid "Source files"
 msgstr "Fitxers d'origen"
 
 #: MediaConverter
-msgid "Error writing video frame %ld"
-msgstr "Error en escriure el fotograma de vídeo %ld"
+msgid "Error writing video frame %lld"
+msgstr "Error en escriure el fotograma de vídeo %lld"
 
 #: MediaConverter
 msgid "Error converting '%filename'"
@@ -198,16 +194,18 @@ msgid "OK"
 msgstr "D'acord"
 
 #: MediaConverter
-msgid "Error read audio frame %ld"
-msgstr "Error en llegir el marc de l'àudio %ld"
-
-#: MediaConverter
 msgid "Video encoding:"
 msgstr "Codificació de vídeo:"
 
 #: MediaConverter-FileInfo
-msgid "An error has occurred reading the file info.nnError : "
-msgstr "Hi ha hagut un error en llegir la informació del fitxer.nnError: "
+msgid ""
+"An error has occurred reading the file info.\\n"
+"\\n"
+"Error : "
+msgstr ""
+"Hi ha hagut un error en llegir la informació del fitxer.\\n"
+"\\n"
+"Error: "
 
 #: MediaConverter
 msgid "Error"
@@ -225,9 +223,17 @@ msgstr "Sense àudio"
 msgid "Drop media files onto this window"
 msgstr "Deixeu anar fitxers multimèdia en aquesta finestra."
 
+#: MediaConverter
+msgid "Writing video track: %ld%% complete"
+msgstr "Escriptura de la pista de vídeo: %ld%% completada"
+
 #: MediaFileInfo
 msgid "{0, plural, one{# frame} other{# frames}}"
 msgstr "{0, plural, one{# fotograma} other{# fotogrames}}"
+
+#: MediaConverter
+msgid "Error read audio frame %lld"
+msgstr "Error en llegir el marc d'àudio %lld"
 
 #: Menu
 msgid "Quit"
@@ -250,12 +256,16 @@ msgid "Error launching: %strError%"
 msgstr "Error d'obertura: %strError%"
 
 #: MediaConverter
-msgid "File format:"
-msgstr "Format del fitxer:"
+msgid "Error writing audio frame %lld"
+msgstr "Error en escriure el marc d'àudio %lld"
 
 #: MediaConverter
-msgid "Error writing audio frame %ld"
-msgstr "Error en escriure el marc d'àudio %ld"
+msgid "Writing audio track: %ld%% complete"
+msgstr "Escriptura de la pista d'àudio: %ld%% completada"
+
+#: MediaConverter
+msgid "File format:"
+msgstr "Format del fitxer:"
 
 #: Menu
 msgid "File"
@@ -268,10 +278,6 @@ msgstr "No s'admet la qualitat del vídeo."
 #: MediaConverter
 msgid "Select this folder"
 msgstr "Selecciona aquesta carpeta"
-
-#: MediaConverter
-msgid "Error read video frame %ld"
-msgstr "Error en llegir el fotograma de vídeo %ld"
 
 #: MediaFileInfo
 msgid "%.1f kHz %ld channel"
@@ -303,8 +309,8 @@ msgid ""
 msgstr "Error en escriure a la ubicació: %strPath%. Es restableix a /boot/home."
 
 #: MediaConverter
-msgid "Writing video track: %d%% complete"
-msgstr "S'escriu la pista de vídeo: %d%% completat"
+msgid "Error read video frame %lld"
+msgstr "Error en llegir el fotograma de vídeo %lld"
 
 #: MediaConverter
 msgid "Preview"

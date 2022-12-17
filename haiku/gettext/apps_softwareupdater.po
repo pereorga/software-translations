@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 20:21+0200\n"
+"POT-Creation-Date: 2022-12-17 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.0\n"
+"X-Generator: Translate Toolkit 3.8.0\n"
 
 #: SoftwareUpdaterWindow
 msgid "Updating version"
@@ -39,6 +39,7 @@ msgstr "Surt"
 
 #: CheckManager
 msgctxt "CheckManager"
+"CheckManager"
 msgid "There were no updates found."
 msgstr "No s'ha trobat cap actualització."
 
@@ -136,33 +137,39 @@ msgstr "D'acord"
 
 #: SoftwareUpdaterWindow
 msgid ""
-"Please choose from these update options:nnUpdate:ntUpdates all installed "
-"packages.nFull sync:ntSynchronizes the installed packages with the "
-"repositories."
+"Please choose from these update options:\\n"
+"\\n"
+"Update:\\n"
+"\\tUpdates all installed packages.\\n"
+"Full sync:\\n"
+"\\tSynchronizes the installed packages with the repositories."
 msgstr ""
-"Si us plau, trieu entre aquestes opcions d’actualització:nnActualització:nt "
-"Actualitza tots els paquets instal·lats.nSincronització completa:"
-"ntSincronitza els paquets instal·lats amb els repositoris."
+"Si us plau, trieu entre aquestes opcions d’actualització:\\n"
+"\\n"
+"Actualització:\\n"
+"\\t Actualitza tots els paquets instal·lats.\\n"
+"Sincronització completa:\\n"
+"\\tSincronitza els paquets instal·lats amb els repositoris."
 
 #: SoftwareUpdaterWindow
 msgid "The following changes will be made:"
 msgstr "Es faran els canvis següents:"
 
 #: SoftwareUpdaterApp
-msgid "Argument variables are no longer acceptedn"
-msgstr "Les variables d’argument ja no s’accepten.n"
+msgid "Argument variables are no longer accepted\\n"
+msgstr "Les variables d’argument ja no s’accepten.\\n"
 
 #: CheckAction
-msgid "Fatal error while checking for updates: %sn"
-msgstr "Error fatal en comprovar les actualitzacions: %sn"
+msgid "Fatal error while checking for updates: %s\\n"
+msgstr "Error fatal en comprovar les actualitzacions: %s\\n"
 
 #: System+name
 msgid "SoftwareUpdater"
 msgstr "Actualitzador de programari"
 
 #: CheckManager
-msgid "No active network connection was found.n"
-msgstr "No s'ha trobat cap connexió de xarxa activa.n"
+msgid "No active network connection was found.\\n"
+msgstr "No s'ha trobat cap connexió de xarxa activa.\\n"
 
 #: UpdateManager
 msgid "Applying changes"
@@ -177,16 +184,16 @@ msgid "Updates have been successfully installed."
 msgstr "Les actualitzacions s'han instal·lat correctament."
 
 #: UpdateAction
-msgid "Exception occurred while updating packages : %sn"
-msgstr "Hi ha hagut una excepció durant l'actualització de paquets: %sn"
+msgid "Exception occurred while updating packages : %s\\n"
+msgstr "Hi ha hagut una excepció durant l'actualització de paquets: %s\\n"
 
 #: UpdateManager
 msgid "A reboot is necessary to complete the update process."
 msgstr "Cal reiniciar per completar el procés d'actualització."
 
 #: CheckAction
-msgid "Exception occurred while checking for updates: %sn"
-msgstr "Hi ha hagut una excepció en comprovar les actualitzacions: %sn"
+msgid "Exception occurred while checking for updates: %s\\n"
+msgstr "Hi ha hagut una excepció en comprovar les actualitzacions: %s\\n"
 
 #: UpdateManager
 msgid "Packages are being updated"
@@ -272,20 +279,31 @@ msgstr "No hi ha cap actualització disponible."
 
 #: SoftwareUpdaterApp
 msgid ""
-"Usage:  SoftwareUpdater <command> [ <option> ]nUpdates installed "
-"packages.nnCommands:n  update     - Search repositories for updates on all "
-"packages.n  check      - Check for available updates but only display a "
-"notification with results.n  full-sync  - Synchronize the installed packages "
-"with the repositories.nnOptions:n  -h or --help       Print this usage "
-"helpn  -v or --verbose    Output verbose informationn"
+"Usage:  SoftwareUpdater <command> [ <option> ]\\n"
+"Updates installed packages.\\n"
+"\\n"
+"Commands:\\n"
+"  update     - Search repositories for updates on all packages.\\n"
+"  check      - Check for available updates but only display a notification "
+"with results.\\n"
+"  full-sync  - Synchronize the installed packages with the repositories.\\n"
+"\\n"
+"Options:\\n"
+"  -h or --help       Print this usage help\\n"
+"  -v or --verbose    Output verbose information\\n"
 msgstr ""
-"Ús:  SoftwareUpdater <ordre> [ <opció> ]nActualitza els paquets "
-"instal·lats.nnOrdres:n  update     - Cerca als repositoris actualitzacions "
-"de tots els paquets.n  check      - Comprova si hi ha actualitzacions "
-"disponibles, però només mostra una notificació amb els resultats.n  full-"
-"sync  - Sincronitza els paquets instal·lats amb els repositoris.nnOpcions:n  "
-"-h or --help       Imprimeix aquesta ajuda d'ús.n  -v or --verbose    Amb "
-"informació detallada.n"
+"Ús:  SoftwareUpdater <ordre> [ <opció> ]\\n"
+"Actualitza els paquets instal·lats.\\n"
+"\\n"
+"Ordres:\\n"
+"  update     - Cerca als repositoris actualitzacions de tots els paquets.\\n"
+"  check      - Comprova si hi ha actualitzacions disponibles, però només "
+"mostra una notificació amb els resultats.\\n"
+"  full-sync  - Sincronitza els paquets instal·lats amb els repositoris.\\n"
+"\\n"
+"Opcions:\\n"
+"  -h or --help       Imprimeix aquesta ajuda d'ús.\\n"
+"  -v or --verbose    Amb informació detallada.\\n"
 
 #: SoftwareUpdaterWindow
 msgid ""

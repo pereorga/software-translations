@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 20:21+0200\n"
+"POT-Creation-Date: 2022-12-17 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.0\n"
+"X-Generator: Translate Toolkit 3.8.0\n"
 
 #: Authentication+Panel
 msgid "Authentication required"
@@ -70,10 +70,14 @@ msgid "Auto-hide interface in full screen mode"
 msgstr "Amaga la interfície automàticament en mode de pantalla completa"
 
 #: WebPositive+Window
-msgid "There was an error retrieving the bookmark folder.nnError: %error"
+msgid ""
+"There was an error retrieving the bookmark folder.\\n"
+"\\n"
+"Error: %error"
 msgstr ""
-"Hi ha hagut un error en obtenir la carpeta d'adreces d'interès.nnError: "
-"%error"
+"Hi ha hagut un error en obtenir la carpeta d'adreces d'interès.\\n"
+"\\n"
+"Error: %error"
 
 #: Cookie+Manager
 msgid "Delete"
@@ -99,13 +103,13 @@ msgstr "Pantalla completa"
 msgid "Downloads in progress"
 msgstr "Baixada en progrés"
 
-#: WebPositive+Window
-msgid "Do you want to open %addedCount bookmarks all at once?"
-msgstr "Voleu obrir %addedCount adreces d'interès alhora?"
-
 #: Download+Window
 msgid "Copy URL to clipboard"
 msgstr "Copia l'URL al porta-retalls"
+
+#: WebPositive+Window
+msgid "Do you want to open %addedCount bookmarks all at once?"
+msgstr "Voleu obrir %addedCount adreces d'interès alhora?"
 
 #: Settings+Window
 msgid "Clone current page"
@@ -117,6 +121,8 @@ msgstr "Pàgina d'inici:"
 
 #: Download+Window
 msgctxt "Download Window"
+"Download Window"
+"Download Window"
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -202,6 +208,10 @@ msgstr "Obre la carpeta de baixades"
 msgid "Proxy server"
 msgstr "Servidor intermediari"
 
+#: WebPositive
+msgid "Darn!"
+msgstr "Merda!"
+
 #: WebPositive+Window
 msgid "Decrease size"
 msgstr "Redueix-ne la mida"
@@ -216,16 +226,17 @@ msgstr "Lletra Sans serif:"
 
 #: WebPositive+Window
 msgctxt "WebPositive Window"
+"WebPositive Window"
 msgid "Clear"
 msgstr "Neteja"
-
-#: Cookie+Manager
-msgid "Cookies for %s"
-msgstr "Galetes per a %s"
 
 #: Download+Window
 msgid "The download could not be opened."
 msgstr "La baixada no s'ha pogut obrir."
+
+#: Cookie+Manager
+msgid "Cookies for %s"
+msgstr "Galetes per a %s"
 
 #: Download+Window
 msgid "Close"
@@ -248,6 +259,14 @@ msgstr "Torna a carregar"
 msgid "Expiration"
 msgstr "Venciment"
 
+#: WebPositive
+msgid ""
+"Your CPU is too old and does not support the SSE2 extensions, without which "
+"WebPositive cannot run. We recommend installing NetSurf instead."
+msgstr ""
+"La CPU és massa antiga i no admet les extensions SSE2, sense les quals el "
+"WebPositive no pot funcionar. Us recomanem que instal·leu el NetSurf."
+
 #: Download+Window
 msgid "Download finished"
 msgstr "Baixada acabada"
@@ -259,6 +278,7 @@ msgstr "Gestor de galetes"
 
 #: Authentication+Panel
 msgctxt "Authentication Panel"
+"Authentication Panel"
 msgid "OK"
 msgstr "D'acord"
 
@@ -375,8 +395,14 @@ msgid "New windows:"
 msgstr "Finestres noves:"
 
 #: Download+Window
-msgid "The downloads folder could not be opened.nnError: %error"
-msgstr "La carpeta de baixades no s'ha pogut obrir.nnError: %error"
+msgid ""
+"The downloads folder could not be opened.\\n"
+"\\n"
+"Error: %error"
+msgstr ""
+"La carpeta de baixades no s'ha pogut obrir.\\n"
+"\\n"
+"Error: %error"
 
 #: Authentication+Panel
 msgctxt "Authentication Panel"
@@ -388,9 +414,14 @@ msgid "Style:"
 msgstr "Estil:"
 
 #: WebPositive+Window
-msgid "There was an error creating the bookmark file.nnError: %error"
+msgid ""
+"There was an error creating the bookmark file.\\n"
+"\\n"
+"Error: %error"
 msgstr ""
-"Hi ha hagut un error en crear el fitxer d'adreces d'interès.nnError: %error"
+"Hi ha hagut un error en crear el fitxer d'adreces d'interès.\\n"
+"\\n"
+"Error: %error"
 
 #: Download+Window
 msgctxt "Download Window"
@@ -422,10 +453,14 @@ msgid "Apply"
 msgstr "Aplica-ho"
 
 #: WebPositive+Window
-msgid "There was an error trying to show the Bookmarks folder.nnError: %error"
+msgid ""
+"There was an error trying to show the Bookmarks folder.\\n"
+"\\n"
+"Error: %error"
 msgstr ""
-"Hi ha hagut un error en intentar mostrar la carpeta d'adreces "
-"d'interès.nnError: %error"
+"Hi ha hagut un error en intentar mostrar la carpeta d'adreces d'interès.\\n"
+"\\n"
+"Error: %error"
 
 #: Settings+Window
 msgid "Revert"
@@ -439,6 +474,10 @@ msgstr "Copia"
 #: Settings+Window
 msgid "Default standard font size:"
 msgstr "Mida de la lletra estàndard per defecte:"
+
+#: Settings+Window
+msgid "Custom"
+msgstr "Personalitzat"
 
 #: WebPositive+Window
 msgid "Bookmark this page"
@@ -481,12 +520,12 @@ msgid "Cancel"
 msgstr "Cancel·la"
 
 #: WebPositive+Window
-msgid "History"
-msgstr "Historial"
-
-#: WebPositive+Window
 msgid "Reset size"
 msgstr "Restableix-ne la mida"
+
+#: WebPositive+Window
+msgid "History"
+msgstr "Historial"
 
 #: WebPositive+Window
 msgid "Do you really want to clear the browsing history?"
@@ -640,6 +679,10 @@ msgstr "Confirmació"
 #: Cookie+Manager
 msgid "Session cookie"
 msgstr "Galeta de la sessió"
+
+#: WebPositive
+msgid "No SSE2 support"
+msgstr "Sense suport per a SSE2"
 
 #: WebPositive+Window
 msgid "Open all"

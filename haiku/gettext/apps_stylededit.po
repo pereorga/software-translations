@@ -3,22 +3,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-04 20:21+0200\n"
+"POT-Creation-Date: 2022-12-17 13:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 2.3.0\n"
+"X-Generator: Translate Toolkit 3.8.0\n"
 
 #: Statistics
 msgid "Document statistics"
 msgstr "Estadístiques del document"
 
 #: RevertToSavedAlert
-msgid "Cannot revert, file not found: \"%s\"\".\""
-msgstr "No es pot revertir: el fitxer no es troba: \"%s\"\".\""
+msgid "Cannot revert, file not found: \\\"%s\\\"."
+msgstr "No es pot revertir: el fitxer no es troba: \\\"%s\\\"."
 
 #: Menus
 msgid "Cut"
@@ -32,13 +32,13 @@ msgstr "Centrat"
 msgid "Increase size"
 msgstr "Augmenta'n la mida"
 
-#: FindandReplaceWindow
-msgid "Wrap-around search"
-msgstr "Cerca cíclica"
-
 #: Menus
 msgid "Page setup…"
 msgstr "Configuració de la pàgina..."
+
+#: FindandReplaceWindow
+msgid "Wrap-around search"
+msgstr "Cerca cíclica"
 
 #: StyledEditWindow
 msgid "Untitled "
@@ -46,6 +46,9 @@ msgstr "Sense títol "
 
 #: Statistics
 msgctxt "Statistics"
+"Statistics"
+"Statistics"
+"Statistics"
 msgid "OK"
 msgstr "D'acord"
 
@@ -75,11 +78,14 @@ msgstr "Només de lectura"
 
 #: Menus
 msgctxt "Menus"
+"Menus"
 msgid "Save"
 msgstr "Desa"
 
 #: QuitAlert
 msgctxt "QuitAlert"
+"QuitAlert"
+"QuitAlert"
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -108,8 +114,12 @@ msgid "Recover"
 msgstr "Recupera"
 
 #: SaveAlert
-msgid "Error saving \"%s\"\":n%s\""
-msgstr "Error en desar \"%s\"\":n%s\""
+msgid ""
+"Error saving \\\"%s\\\":\\n"
+"%s"
+msgstr ""
+"Error en desar \\\"%s\\\":\\n"
+"%s"
 
 #: RevertToSavedAlert
 msgctxt "RevertToSavedAlert"
@@ -137,20 +147,24 @@ msgid "File"
 msgstr "Fitxer"
 
 #: Menus
-msgid "Bold"
-msgstr "Negreta"
-
-#: Menus
 msgid "Paste"
 msgstr "Enganxa"
 
-#: NodeMonitorAlerts
-msgid "File \"%file%\"\" was modified by another application"
-msgstr " reload it?\""
+#: Menus
+msgid "Bold"
+msgstr "Negreta"
 
 #: NodeMonitorAlerts
-msgid "File \"%file%\"\" was removed by another application"
-msgstr " recover it?\""
+msgid "File \\\"%file%\\\" was modified by another application, reload it?"
+msgstr ""
+"El fitxer \\\"%file%\\\" ha estat modificat per una altra aplicació. El "
+"torno a carregar?"
+
+#: NodeMonitorAlerts
+msgid "File \\\"%file%\\\" was removed by another application, recover it?"
+msgstr ""
+"El fitxer \\\"%file%\\\" ha estat suprimit per una altra aplicació. El "
+"recupero?"
 
 #: Statistics
 msgid "Lines:"
@@ -161,10 +175,12 @@ msgid "Replace in all windows"
 msgstr "Reemplaça-ho a totes les finestres"
 
 #: RevertToSavedAlert
-msgid "\"%s\"\" has unsaved changes.nRevert it to the last saved version? \""
+msgid ""
+"\\\"%s\\\" has unsaved changes.\\n"
+"Revert it to the last saved version? "
 msgstr ""
-"\"%s\"\" té canvis sense desar.nVoleu revertir-lo a la darrera versió "
-"desada? \""
+"\\\"%s\\\" té canvis sense desar.\\n"
+"Voleu revertir-lo a la darrera versió desada? "
 
 #: SaveAlert
 msgctxt "SaveAlert"
@@ -203,8 +219,12 @@ msgid "Close"
 msgstr "Tanca"
 
 #: LoadAlert
-msgid "Error loading \"%s\"\":ntUnsupported format\""
-msgstr "Error en carregar \"%s\"\":ntFormat no admès.\""
+msgid ""
+"Error loading \\\"%s\\\":\\n"
+"\\tUnsupported format"
+msgstr ""
+"Error en carregar \\\"%s\\\":\\n"
+"\\tFormat no admès."
 
 #: Menus
 msgid "Left"
@@ -225,12 +245,16 @@ msgid "Color"
 msgstr "Color"
 
 #: QuitAlert
-msgid "Save changes to the document \"%s\"\"? \""
-msgstr "Voleu desar els canvis al document \"%s\"\"? \""
+msgid "Save changes to the document \\\"%s\\\"? "
+msgstr "Voleu desar els canvis al document \\\"%s\\\"? "
 
 #: System+name
 msgid "StyledEdit"
 msgstr "Editor d'estil"
+
+#: Menus
+msgid "Underline"
+msgstr "Subratllat"
 
 #: FindandReplaceWindow
 msgid "Find:"
@@ -241,8 +265,12 @@ msgid "Undo typing"
 msgstr "Desfés el tecleig"
 
 #: LoadAlert
-msgid "Error loading \"%s\"\":nt%s\""
-msgstr "Error en carregar \"%s\"\":nt%s\""
+msgid ""
+"Error loading \\\"%s\\\":\\n"
+"\\t%s"
+msgstr ""
+"Error en carregar \\\"%s\\\":\\n"
+"\\t%s"
 
 #: SaveAlert
 msgctxt "SaveAlert"
@@ -278,8 +306,12 @@ msgid "Text encoding"
 msgstr "Codificació del text"
 
 #: QuitAlert
-msgid "Unable to unlock filent%s"
-msgstr "No es pot desblocar el fitxernt%s"
+msgid ""
+"Unable to unlock file\\n"
+"\\t%s"
+msgstr ""
+"No es pot desblocar el fitxer\\n"
+"\\t%s"
 
 #: StatusView
 msgid "Modified"
@@ -303,26 +335,26 @@ msgstr "Distingeix majúscules"
 msgid "Find selection"
 msgstr "Troba la selecció"
 
+#: Menus
+msgid "Find…"
+msgstr "Troba..."
+
 #: SaveAlert
 msgctxt "SaveAlert"
 msgid "Cancel"
 msgstr "Cancel·la"
-
-#: Menus
-msgid "Find…"
-msgstr "Troba..."
 
 #: RevertToSavedAlert
 msgid "Revert"
 msgstr "Reverteix"
 
 #: Menus
-msgid "Decrease size"
-msgstr "Redueix-ne la mida"
-
-#: Menus
 msgid "Size"
 msgstr "Mida"
+
+#: Menus
+msgid "Decrease size"
+msgstr "Redueix-ne la mida"
 
 #: Menus
 msgid "Autodetect"
@@ -337,13 +369,13 @@ msgctxt "QuitAlert"
 msgid "OK"
 msgstr "D'acord"
 
-#: FindandReplaceWindow
-msgid "Replace with:"
-msgstr "Reemplaça-ho per:"
-
 #: Menus
 msgid "Edit"
 msgstr "Edita"
+
+#: FindandReplaceWindow
+msgid "Replace with:"
+msgstr "Reemplaça-ho per:"
 
 #: Menus
 msgid "Open…"
@@ -368,18 +400,18 @@ msgstr "No ho desis"
 
 #: SaveAlert
 msgid ""
-"This file is marked read-only. Save changes to the document \"%s\"\"? \""
+"This file is marked read-only. Save changes to the document \\\"%s\\\"? "
 msgstr ""
-"Aquest fitxer és només de lectura. Voleu desar els canvis al document \"%s\""
-"\"? \""
-
-#: Menus
-msgid "Align"
-msgstr "Alinea"
+"Aquest fitxer és només de lectura. Voleu desar els canvis al document \\\"%"
+"s\\\"? "
 
 #: Menus
 msgid "Font"
 msgstr "Lletra"
+
+#: Menus
+msgid "Align"
+msgstr "Alinea"
 
 #: Menus
 msgid "Select all"
