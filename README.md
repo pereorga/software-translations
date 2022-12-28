@@ -1,6 +1,6 @@
 # software-translations
 
-Some translations converted to Gettext format.
+Some Catalan translations of open-source software, converted to Gettext format.
 
 ## Requirements
 
@@ -8,7 +8,10 @@ Some translations converted to Gettext format.
 * csvkit
 * nodejs
 
-On Ubuntu, run: `apt install csvkit npm translate-toolkit`
+## Installation
+
+On Ubuntu/Debian: `apt install csvkit npm translate-toolkit`
+On Mac: `brew install csvkit node translate-toolkit`
 
 ## Translation credits
 
