@@ -11,6 +11,7 @@ Some Catalan translations of open-source software, converted to Gettext format.
 ## Installation
 
 On Ubuntu/Debian: `apt install csvkit npm translate-toolkit`
+
 On Mac: `brew install csvkit node translate-toolkit`
 
 ## Translation credits
