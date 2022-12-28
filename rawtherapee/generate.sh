@@ -7,3 +7,4 @@ csvformat --no-header-row -d"|" -u 3 --out-quoting 1 en.csv > en2.csv
 csvformat --no-header-row -d"|" -u 3 --out-quoting 1 ca.csv > ca2.csv
 csvjoin -c 1 en2.csv ca2.csv > rawtherapee.csv
 csv2po rawtherapee.csv ca.po
+rm *.csv
