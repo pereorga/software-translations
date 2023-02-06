@@ -2,7 +2,7 @@
 
 cd "$(dirname "$0")"
 
-#. extracted from rawtherapee.csv
+# Generate PO header
 echo "msgid \"\"" > sumatra.po
 echo "msgstr \"\"" >> sumatra.po
 echo "\"Content-Type: text/plain; charset=UTF-8\n\""  >> sumatra.po
@@ -10,7 +10,7 @@ echo ""  >> sumatra.po
 
 curl "https://raw.githubusercontent.com/sumatrapdfreader/sumatrapdf/master/src/docs/translations.txt" > translations.txt
 
-# Extract English and Catalan
+# Extract English and Catalan strings
 grep -E '^(\:|ca\:)' translations.txt > translations_ca.txt
 
 # Convert text file to PO
