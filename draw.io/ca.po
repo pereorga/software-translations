@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-06 21:33+0200\n"
+"POT-Creation-Date: 2023-06-22 14:48+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.8.3\n"
+"X-Generator: Translate Toolkit 3.9.0\n"
 
 #: about
 msgid "About "
@@ -89,8 +89,8 @@ msgstr "Ajustar a"
 msgid "Advanced"
 msgstr "Avançat"
 
-#: aiTemplate
-msgid "AI Template"
+#: smartTemplate
+msgid "Smart Template"
 msgstr "Plantilla d'IA"
 
 #: align
@@ -458,6 +458,14 @@ msgstr "CSV"
 msgid "Dark"
 msgstr "Fosc"
 
+#: diagramLanguage
+msgid "Diagram Language"
+msgstr "Idioma del diagrama"
+
+#: diagramType
+msgid "Diagram type"
+msgstr "Tipus de diagrama"
+
 #: diagramXmlDesc
 msgid "XML File"
 msgstr "Fitxer XML"
@@ -684,6 +692,10 @@ msgstr "Copia l'estil"
 msgid "Create"
 msgstr "Crea"
 
+#: createBlankDiagram
+msgid "Create Blank Diagram"
+msgstr "Crea un diagrama en blanc"
+
 #: createNewDiagram
 msgid "Create New Diagram"
 msgstr "Crea un diagrama nou"
@@ -767,6 +779,10 @@ msgstr "Suprimeix la fila"
 #: description
 msgid "Description"
 msgstr "Descripció"
+
+#: describeYourDiagram
+msgid "Describe your diagram"
+msgstr "Descriu el teu diagrama"
 
 #: device
 msgid "Device"
@@ -1774,10 +1790,10 @@ msgstr ""
 #: invalidLicenseSeeThisPage
 msgid ""
 "Your license is invalid, please see this <a target=\"_blank\" href=\"https"
-"://www.diagrams.net/doc/faq/license-drawio-confluence-jira-cloud\">page</a>."
+"://www.drawio.com/doc/faq/license-drawio-confluence-jira-cloud\">page</a>."
 msgstr ""
 "La llicència no és vàlida, consulteu aquesta <a target=\"_blank\" href="
-"\"https://www.diagrams.net/doc/faq/license-drawio-confluence-jira-cloud\""
+"\"https://www.drawio.com/doc/faq/license-drawio-confluence-jira-cloud\""
 ">pàgina</a>."
 
 #: invalidInput
@@ -1914,6 +1930,10 @@ msgstr "Cal refrescar la pàgina perquè els canvis tinguin efecte."
 #: laneColor
 msgid "Lanecolor"
 msgstr "Color de la fila"
+
+#: languageCode
+msgid "Language Code"
+msgstr "Codi d'idioma"
 
 #: lastModified
 msgid "Last modified"
@@ -2054,6 +2074,10 @@ msgctxt "mockups"
 msgid "Mockups"
 msgstr "Esbossos"
 
+#: modern
+msgid "Modern"
+msgstr "Modern"
+
 #: modificationDate
 msgid "Modification date"
 msgstr "Data de modificació"
@@ -2089,6 +2113,14 @@ msgstr "Movent"
 #: moveSelectionTo
 msgid "Move selection to {1}"
 msgstr "Mou la selecció a {1}"
+
+#: myDrive
+msgid "My Drive"
+msgstr "La meva unitat"
+
+#: myFiles
+msgid "My Files"
+msgstr "Els meus fitxers"
 
 #: name
 msgid "Name"
@@ -2522,6 +2554,10 @@ msgstr "Vista prèvia"
 msgid "Previous Page"
 msgstr "Pàgina anterior"
 
+#: presentationMode
+msgid "Presentation Mode"
+msgstr "Mode de presentació"
+
 #: print
 msgid "Print"
 msgstr "Imprimeix"
@@ -2541,6 +2577,10 @@ msgstr "Projecta"
 #: priority
 msgid "Priority"
 msgstr "Prioritat"
+
+#: processForHiringNewEmployee
+msgid "Process for hiring a new employee"
+msgstr "Procés de contractació d'un nou treballador"
 
 #: properties
 msgid "Properties"
@@ -2781,7 +2821,7 @@ msgid "Save & Exit"
 msgstr "Desa i surt"
 
 #: saveAs
-msgid "Save as"
+msgid "Save As"
 msgstr "Anomena i desa"
 
 #: saveAsXmlFile
@@ -2839,7 +2879,7 @@ msgstr "Selecciona-ho tot"
 
 #: selectionOnly
 msgid "Selection Only"
-msgstr "Selecciona només"
+msgstr "Només la selecció"
 
 #: selectCard
 msgid "Select Card"
@@ -3220,6 +3260,10 @@ msgstr "Twitter"
 #: uml
 msgid "UML"
 msgstr "UML"
+
+#: unassigned
+msgid "Unassigned"
+msgstr "No assignat"
 
 #: underline
 msgid "Underline"
@@ -5213,104 +5257,178 @@ msgstr "Privat"
 
 #: diagramTooLarge
 msgid "The diagram is too large, please reduce its size and try again."
-msgstr ""
+msgstr "El diagrama és massa gran, reduïu-ne la mida i torneu-ho a provar."
 
 #: selectAdminUsers
 msgid "Select Admin Users"
-msgstr ""
+msgstr "Seleccioneu Usuaris Administradors"
 
 #: xyzTeam
 msgid "{1} Team"
-msgstr ""
+msgstr "{1} Equip"
 
 #: addTeamTitle
 msgid "Adding a new draw.io Team"
-msgstr ""
+msgstr "Afegeix un nou Equip de draw.io"
 
 #: addTeamInst1
 msgid ""
 "To create a new draw.io Team, you need to create a new Atlassian group with "
 "\"drawio-\" postfix (e.g, a group named \"drawio-marketing\")."
 msgstr ""
+"Per crear un nou Equip de draw.io, heu de crear un nou grup d'Atlassian amb "
+"el prefix \"drawio-\" (p. ex., un grup anomenat \"drawio-marqueting\")."
 
 #: addTeamInst2
 msgid ""
 "Then, configure which team member can edit/add configuration, templates, and "
 "libraries from this page."
 msgstr ""
+"A continuació, configureu quin membre de l'equip pot editar/afegir "
+"configuracions, plantilles i biblioteques des d'aquesta pàgina."
 
 #: drawioTeams
 msgid "draw.io Teams"
-msgstr ""
+msgstr "Equips draw.io"
 
 #: members
 msgid "Members"
-msgstr ""
+msgstr "Membres"
 
 #: adminEditors
 msgid "Admins/Editors"
-msgstr ""
+msgstr "Administradors/Editors"
 
 #: allowAll
 msgid "Allow all"
-msgstr ""
+msgstr "Permet-ho tot"
 
 #: noTeams
 msgid "No teams found"
-msgstr ""
+msgstr "No s'han trobat equips"
 
 #: errorLoadingTeams
 msgid "Error Loading Teams"
-msgstr ""
+msgstr "Error en Carregar els Equips"
 
 #: noTeamMembers
 msgid "No team members found"
-msgstr ""
+msgstr "No s'han trobat membres de l'equip"
 
 #: errLoadTMembers
 msgid "Error loading team members"
-msgstr ""
+msgstr "S'ha produït un error en carregar els membres de l'equip"
 
 #: errCreateTeamPage
 msgid ""
 "Error creating team \"{1}\" page in \"draw.io Configuration\" space, please "
 "check you have the required permissions."
 msgstr ""
+"S'ha produït un error en crear la pàgina de l'equip \"{1}\" a l'espai "
+"\"Configuració de draw.io\". Comproveu que teniu els permisos necessaris."
 
 #: gotoConfigPage
 msgid "Please create the space from draw.io \"Configuration\" page."
-msgstr ""
+msgstr "Creeu l'espai des de la pàgina \"Configuració\" de draw.io."
 
 #: noAdminsSelected
 msgid "No admins/editors selected"
-msgstr ""
+msgstr "No s'han seleccionat administradors/editors"
 
 #: errCreateConfigFile
 msgid ""
 "Error creating \"configuration.json\" file, please check you have the "
 "required permissions."
 msgstr ""
+"S'ha produït un error en crear el fitxer \"configuration.json\", comproveu "
+"que teniu els permisos necessaris."
 
 #: errSetPageRestr
 msgid "Error setting page restrictions"
-msgstr ""
+msgstr "S'ha produït un error en establir les restriccions de la pàgina"
 
 #: notAdmin4Team
 msgid "You are not an admin for this team"
-msgstr ""
+msgstr "No ets administrador d'aquest equip"
 
 #: configUpdated
 msgid ""
 "Configuration updated, restart the editor if you want to work with last "
 "configuration."
 msgstr ""
+"Configuració actualitzada, reinicieu l'editor si voleu treballar amb la "
+"darrera configuració."
+
+#: outOfDateRevisionAlert
+msgid ""
+"You are editing a historical revision of the diagram, please review the "
+"revision and open it to replace the latest version. Or close and overwrite/"
+"merge later."
+msgstr ""
+"Esteu editant una revisió històrica del diagrama, comproveu la revisió i "
+"obriu-la per substituir la darrera versió. O tanca i sobreescriu/fusiona més "
+"tard."
+
+#: confAErrFaqs
+msgid ""
+"There are {1} error(s), the following instructions may help fixing most of "
+"the cases. (Please download the log for future references)"
+msgstr ""
+"Hi ha {1} error(s), les instruccions següents poden ajudar a solucionar la "
+"majoria dels casos. (Descarregueu el registre per a futures referències)"
+
+#: confA403ErrFaq
+msgid ""
+"There are ({1}) 403 error(s). The current users must have add (write) "
+"permissions on all pages and attachments. Even admins sometimes are not "
+"allowed to write to some pages via page restrictions"
+msgstr ""
+"Hi ha ({1}) error(s) 403. Els usuaris actuals han de tenir permisos per "
+"afegir (escriptura) a totes les pàgines i fitxers adjunts. Fins i tot els "
+"administradors de vegades no poden escriure en algunes pàgines mitjançant "
+"restriccions de pàgina"
+
+#: confA404ErrFaq
+msgid ""
+"There are ({1}) 404 error(s). The attachment/page is not found. This is due "
+"to improper migration or the diagram file (an attachment of the page) is "
+"deleted."
+msgstr ""
+"Hi ha ({1}) error(s) 404. No s'ha trobat l'adjunt/pàgina. Això es deu a una "
+"migració incorrecta o s'ha suprimit el fitxer del diagrama (un fitxer adjunt "
+"de la pàgina)."
+
+#: confA500ErrFaq
+msgid ""
+"There are ({1}) 500 error(s). An internal server error in Confluence Cloud. "
+"Such errors are due to overloading the server and usually fixed by retrying "
+"the process."
+msgstr ""
+"Hi ha ({1}) error(s) 500. Un error intern del servidor a Confluence Cloud. "
+"Aquests errors es deuen a la sobrecàrrega del servidor i normalment es "
+"solucionen tornant a intentar el procés."
+
+#: confAOtherErrFaq
+msgid ""
+"There are ({1}) other error(s). Please check the error description. If the "
+"description is not clear, please contact our support. "
+msgstr ""
+"Hi ha ({1}) altre(s) error(s). Comproveu la descripció de l'error. Si la "
+"descripció no és clara, poseu-vos en contacte amb el nostre servei "
+"d'assistència."
+
+#: confAReplaceBaseUrl
+msgid "Replace Base URL in diagram links when no page ID mapping is found"
+msgstr ""
+"Substituïu l'URL base als enllaços del diagrama quan no es trobi cap "
+"assignació d'ID de pàgina"
 
 
 msgid ""
 "For new entries, googletranslate can be used as shown here but results "
 "should be checked where possible."
 msgstr ""
-"Per a les entrades noves, es pot utilitzar Googletranslate tal com es mostra "
+"Per a entrades noves, es pot utilitzar Googletranslate tal com es mostra "
 "aquí, però els resultats s’han de comprovar quan sigui possible."
 
 msgid "Diagrams Online"

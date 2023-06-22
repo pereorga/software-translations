@@ -17,10 +17,9 @@ On Mac: `brew install csvkit node translate-toolkit`
 ## Translation credits
 
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
-* Haiku: https://i18n.haiku-os.org/
+* Haiku (outdated translation): https://i18n.haiku-os.org/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
-* muCommander: https://github.com/mucommander/mucommander/wiki/Translate
 * RawTherapee: https://www.rawtherapee.com/
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
-* WinSCP: https://winscp.net/eng/translations.php
 * Windows Calculator: https://github.com/microsoft/calculator
+* WinSCP (outdated translation): https://winscp.net/eng/translations.php

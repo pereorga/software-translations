@@ -13,8 +13,8 @@ curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/
 curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/Localizable.strings" > files/Localizable.template 
 curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/Debug.strings" > files/Debug.template 
 
-prop2po --personality=strings --encoding=UTF-8 -i files/OEControls.strings -o po/OEControls.po --template=files/OEControls.template
-prop2po --personality=strings --encoding=UTF-8 -i files/MainMenu.strings -o po/MainMenu.po --template=files/MainMenu.template
-prop2po --personality=strings --encoding=UTF-8 -i files/ControlLabels.strings -o po/ControlLabels.po --template=files/ControlLabels.template
-prop2po --personality=strings --encoding=UTF-8 -i files/Localizable.strings -o po/Localizable.po --template=files/Localizable.template
-prop2po --personality=strings --encoding=UTF-8 -i files/Debug.strings -o po/Debug.po --template=files/Debug.template
+prop2po --personality=strings --encoding=utf-8 -i files/OEControls.strings -o po/OEControls.po --template=files/OEControls.template
+prop2po --personality=strings --encoding=utf-8 -i files/MainMenu.strings -o po/MainMenu.po --template=files/MainMenu.template
+prop2po --personality=strings --encoding=utf-8 -i files/ControlLabels.strings -o po/ControlLabels.po --template=files/ControlLabels.template
+prop2po --personality=strings --encoding=utf-8 -i files/Localizable.strings -o po/Localizable.po --template=files/Localizable.template
+prop2po --personality=strings --encoding=utf-8 -i files/Debug.strings -o po/Debug.po --template=files/Debug.template
