@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 13:27+0200\n"
+"POT-Creation-Date: 2023-08-03 00:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.8.0\n"
+"X-Generator: Translate Toolkit 3.9.2\n"
 
 #: Authentication+Panel
 msgid "Authentication required"
@@ -19,6 +19,12 @@ msgstr "Cal autenticació"
 #: WebPositive+Window
 msgid "Previous"
 msgstr "Anterior"
+
+#: Console+Window
+msgctxt "Console Window"
+"Console Window"
+msgid "Copy"
+msgstr "Copia"
 
 #: Download+Window
 msgid "(Finish: %date)"
@@ -44,6 +50,10 @@ msgstr "Troba:"
 msgctxt "WebPositive Window"
 msgid "Script console"
 msgstr "Script de consola"
+
+#: WebPositive+Window
+msgid "There was an error setting up the bookmark."
+msgstr "Hi ha hagut un error en configurar l'adreça d'interès."
 
 #: Settings+Window
 msgid "Fonts"
@@ -99,6 +109,10 @@ msgstr "Troba'n l'anterior"
 msgid "Full screen"
 msgstr "Pantalla completa"
 
+#: WebPositive+Window
+msgid "Bookmark bar"
+msgstr "Barra d'adreces d'interès"
+
 #: WebPositive
 msgid "Downloads in progress"
 msgstr "Baixada en progrés"
@@ -139,10 +153,6 @@ msgstr "Baixades"
 #: Settings+Window
 msgid "Browse…"
 msgstr "Navega..."
-
-#: WebPositive+Window
-msgid "A bookmark for this page (%bookmarkName) already exists."
-msgstr "Ja hi ha una adreça d'interès per a aquesta pàgina: %bookmarkName."
 
 #: Settings+Window
 msgid "Resume prior session"
@@ -471,6 +481,13 @@ msgctxt "WebPositive Window"
 msgid "Copy"
 msgstr "Copia"
 
+#: Console+Window
+msgid ""
+"{0, plural,one{Last line repeated # time.}other{Last line repeated # times.}}"
+msgstr ""
+"{0, plural,one{S'ha repetit la darrera línia # cop.}other{S'ha repetit la "
+"darrera línia # cops.}}"
+
 #: Settings+Window
 msgid "Default standard font size:"
 msgstr "Mida de la lletra estàndard per defecte:"
@@ -487,13 +504,13 @@ msgstr "Afegeix aquesta pàgina a les adreces d'interès"
 msgid "Show tabs if only one page is open"
 msgstr "Mostra les pestanyes si només s’obre una pàgina."
 
-#: WebPositive+Window
-msgid "Close tab"
-msgstr "Tanca la pestanya"
-
 #: Download+Window
 msgid "Remove"
 msgstr "Suprimeix"
+
+#: WebPositive+Window
+msgid "Close tab"
+msgstr "Tanca la pestanya"
 
 #: WebPositive+Window
 msgid "About"
@@ -710,10 +727,6 @@ msgstr "Neteja'n l'historial"
 msgctxt "WebPositive Window"
 msgid "Cancel"
 msgstr "Cancel·la"
-
-#: WebPositive+Window
-msgid "Bookmark info"
-msgstr "Informació de l'adreça d'interès"
 
 #: Console+Window
 msgctxt "Console Window"

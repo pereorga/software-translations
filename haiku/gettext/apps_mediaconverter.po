@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-17 13:27+0200\n"
+"POT-Creation-Date: 2023-08-03 00:32+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.8.0\n"
+"X-Generator: Translate Toolkit 3.9.2\n"
 
 #: MediaConverter
 msgid "Input file not recognized as Audio or Video"
@@ -21,16 +21,16 @@ msgid "%u x %u, %.2ffps"
 msgstr "%u x %u, %.2ffps"
 
 #: MediaConverter
-msgid "Video quality: %3d%%"
-msgstr "Qualitat del vídeo: %3d%%"
-
-#: MediaConverter
 msgid "Source files"
 msgstr "Fitxers d'origen"
 
 #: MediaConverter
 msgid "Error writing video frame %lld"
 msgstr "Error en escriure el fotograma de vídeo %lld"
+
+#: MediaConverter
+msgid "Audio quality: %s"
+msgstr "Qualitat de l'àudio: %s"
 
 #: MediaConverter
 msgid "Error converting '%filename'"
@@ -64,6 +64,14 @@ msgstr "Es cancel·la"
 msgctxt "Audio codecs"
 msgid "None available"
 msgstr "Cap de disponible"
+
+#: MediaConverter
+msgid ""
+"The file has multiple audio or video tracks, only the first one of each will "
+"be converted."
+msgstr ""
+"El fitxer té diverses pistes d'àudio o vídeo. Només es convertirà la primera "
+"de cadascuna."
 
 #: MediaConverter-FileInfo
 msgid "No file selected"
@@ -129,8 +137,8 @@ msgid "Audio encoding:"
 msgstr "Codificació de l'àudio:"
 
 #: MediaConverter
-msgid "Audio quality: %3d%%"
-msgstr "Qualitat de l'àudio: %3d%%"
+msgid "Multi-track file detected"
+msgstr "S'ha detectat un fitxer multipista."
 
 #: MediaConverter
 msgid "Cancelling…"
@@ -181,6 +189,10 @@ msgid "{0, plural, one{# bit} other{# bits}}"
 msgstr "{0, plural, one{# bit} other{# bits}}"
 
 #: MediaConverter
+msgid "Video quality: %s"
+msgstr "Qualitat del vídeo: %s"
+
+#: MediaConverter
 msgid "End   [ms]: "
 msgstr "Fi   [ms]: "
 
@@ -223,10 +235,6 @@ msgstr "Sense àudio"
 msgid "Drop media files onto this window"
 msgstr "Deixeu anar fitxers multimèdia en aquesta finestra."
 
-#: MediaConverter
-msgid "Writing video track: %ld%% complete"
-msgstr "Escriptura de la pista de vídeo: %ld%% completada"
-
 #: MediaFileInfo
 msgid "{0, plural, one{# frame} other{# frames}}"
 msgstr "{0, plural, one{# fotograma} other{# fotogrames}}"
@@ -243,6 +251,10 @@ msgstr "Surt"
 msgid "{0, plural, one{# byte} other{# bytes}}"
 msgstr "{0, plural, one{# byte} other{# bytes}}"
 
+#: MediaConverter
+msgid "Writing audio track: %s complete"
+msgstr "S'escriu la pista d'àudio: %s completat"
+
 #: MediaConverter-FileInfo
 msgid "Duration:"
 msgstr "Durada:"
@@ -252,16 +264,16 @@ msgid "MediaConverter"
 msgstr "Convertidor multimèdia"
 
 #: MediaConverter
+msgid "Writing video track: %s complete"
+msgstr "S'escriu la pista de vídeo: %s completat"
+
+#: MediaConverter
 msgid "Error launching: %strError%"
 msgstr "Error d'obertura: %strError%"
 
 #: MediaConverter
 msgid "Error writing audio frame %lld"
 msgstr "Error en escriure el marc d'àudio %lld"
-
-#: MediaConverter
-msgid "Writing audio track: %ld%% complete"
-msgstr "Escriptura de la pista d'àudio: %ld%% completada"
 
 #: MediaConverter
 msgid "File format:"
@@ -282,6 +294,10 @@ msgstr "Selecciona aquesta carpeta"
 #: MediaFileInfo
 msgid "%.1f kHz %ld channel"
 msgstr "%.1f kHz, canal %ld"
+
+#: MediaConverter
+msgid "Understood"
+msgstr "Entès"
 
 #: MediaFileInfo
 msgid "%d bit "
