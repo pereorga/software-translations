@@ -4,20 +4,20 @@ Some Catalan translations of open-source software, converted to Gettext format.
 
 ## Requirements
 
+* modern Bash
 * Translate Toolkit
 * csvkit
-* nodejs
 
 ## Installation
 
-On Ubuntu/Debian: `apt install csvkit npm translate-toolkit`
+On Ubuntu/Debian: `apt install csvkit translate-toolkit`
 
-On Mac: `brew install csvkit node translate-toolkit`
+On Mac: `brew install bash csvkit translate-toolkit`
 
 ## Translation credits
 
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
-* Haiku (outdated translation): https://i18n.haiku-os.org/
+* Haiku: https://i18n.haiku-os.org/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
 * RawTherapee: https://www.rawtherapee.com/
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
