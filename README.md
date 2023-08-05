@@ -1,18 +1,21 @@
 # software-translations
 
-Some Catalan translations of open-source software, converted to Gettext format.
+Some Catalan translations of open-source projects, to be used later in
+https://github.com/Softcatala/translation-memory-tools/.
 
 ## Requirements
 
 * modern Bash
+* Curl
 * Translate Toolkit
 * csvkit
+* dos2unix
 
 ## Installation
 
-On Ubuntu/Debian: `apt install csvkit translate-toolkit`
+On Ubuntu/Debian: `apt-get install csvkit translate-toolkit dos2unix`
 
-On Mac: `brew install bash csvkit translate-toolkit`
+On Mac: `brew install bash csvkit translate-toolkit dos2unix`
 
 ## Translation credits
 
@@ -22,4 +25,4 @@ On Mac: `brew install bash csvkit translate-toolkit`
 * RawTherapee: https://www.rawtherapee.com/
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
 * Windows Calculator: https://github.com/microsoft/calculator
-* WinSCP (outdated translation): https://winscp.net/eng/translations.php
+* WinSCP: https://winscp.net/eng/translations.php
