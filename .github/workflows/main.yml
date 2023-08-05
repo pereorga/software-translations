@@ -30,14 +30,18 @@ jobs:
               echo "Running generate.sh in $d"
               if "${d}generate.sh"; then
                 git add "$d"
-                if ! git diff --quiet --cached; then
+                if git diff --cached | grep -v "POT-Creation-Date"; then
                   git commit -m "Update files in $d via GitHub Actions"
                   git push origin HEAD
                 else
-                  echo "No changes in $d"
+                  echo "No significant changes in $d"
+                  git restore --staged "$d"
+                  git checkout "$d"
                 fi
               else
                 echo "generate.sh failed in $d, skipping..."
+                git checkout "$d"
               fi
+              git clean -f
             fi
           done
