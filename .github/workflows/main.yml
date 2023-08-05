@@ -26,9 +26,16 @@ jobs:
           for d in */; do
             if [ -f "${d}generate.sh" ]; then
               echo "Running generate.sh in $d"
-              "${d}generate.sh" || continue
-              git add "$d"
-              git commit -m "Update files in $d via GitHub Actions"
-              git push origin HEAD
+              if "${d}generate.sh"; then
+                git add "$d"
+                if ! git diff --quiet --cached; then
+                  git commit -m "Update files in $d via GitHub Actions"
+                  git push origin HEAD
+                else
+                  echo "No changes in $d"
+                fi
+              else
+                echo "generate.sh failed in $d, skipping..."
+              fi
             fi
           done
