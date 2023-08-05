@@ -21,8 +21,9 @@ sed 's/$/"/' translations_po_step2.txt >> sumatra.po
 if [[ -z $(msgattrib sumatra.po 2> /dev/null) ]]; then
     msgattrib sumatra.po
     echo "ERROR: probablement falten cadenes per traduir"
+    rm -f *step*.txt
+    exit 1
 else
+    rm -f *step*.txt
     echo "OK"
 fi
-
-rm -f *step*.txt
