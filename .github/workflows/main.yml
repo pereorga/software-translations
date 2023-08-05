@@ -31,7 +31,6 @@ jobs:
               if "${d}generate.sh"; then
                 git add "$d"
                 if ! git diff --quiet --cached; then
-                  git pull --rebase
                   git commit -m "Update files in $d via GitHub Actions"
                   git push origin HEAD
                 else
