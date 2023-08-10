@@ -26,6 +26,7 @@ jobs:
       - name: Run generate.sh in each directory and commit changes
         run: |
           allowed_to_fail=("sumatra/")
+          error_occurred=0
           for d in */; do
             if [ -f "${d}generate.sh" ]; then
               echo "Running generate.sh in $d"
@@ -36,18 +37,21 @@ jobs:
                   git push origin HEAD
                 else
                   echo "No significant changes in $d"
-                  git checkout "$d"
                 fi
               else
-                echo "generate.sh failed in $d"
                 if [[ " ${allowed_to_fail[@]} " =~ " ${d} " ]]; then
-                  echo "$d failed but is whitelisted, continuing..."
+                  echo "Error occurred in $d (allowed to fail)"
                 else
-                  echo "Stopping execution due to failure in $d"
-                  exit 1
+                  echo "Error occurred in $d"
+                  error_occurred=1
                 fi
-                git checkout "$d"
               fi
+              git checkout "$d"
               git clean -f
             fi
           done
+
+          # Make the pipeline fail if there was an error
+          if [ "$error_occurred" -eq "1" ]; then
+            exit 1
+          fi
