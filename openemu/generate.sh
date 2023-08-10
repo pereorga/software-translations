@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 cd "$(dirname "$0")"
 
 base_url="https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu"
