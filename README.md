@@ -22,6 +22,7 @@ On Mac: `brew install bash csvkit translate-toolkit dos2unix`
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
 * Haiku: https://i18n.haiku-os.org/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
+* Organic Maps: https://github.com/organicmaps/organicmaps
 * RawTherapee: https://www.rawtherapee.com/
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
 * Windows Calculator: https://github.com/microsoft/calculator

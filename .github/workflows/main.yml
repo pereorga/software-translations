@@ -15,6 +15,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install Ruby gem (twine)
+        run: gem install twine
+
       - name: Install dependencies
         run: sudo apt-get update && sudo apt-get install -y csvkit translate-toolkit dos2unix
 
