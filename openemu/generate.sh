@@ -1,23 +1,20 @@
 #!/bin/sh
 cd "$(dirname "$0")"
 
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/ControlLabels.strings" | grep -F -v '// TODO' | grep -F -v '/*' | grep . > files/ControlLabels.strings
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/Debug.strings" | grep -v '// TODO' | grep -F -v '/*' | grep . > files/Debug.strings
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/InfoPlist.strings" | grep -v '// TODO' | grep -F -v '/*' | grep . > files/InfoPlist.strings
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/Localizable.strings" | grep -v '// TODO' | grep -F -v '/*' | grep . > files/Localizable.strings
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/MainMenu.strings" | grep -v '// TODO' | grep -F -v '/*' | grep . > files/MainMenu.strings
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/ca.lproj/OEControls.strings" | grep -v '// TODO' | grep -F -v '/*' | grep . > files/OEControls.strings
+base_url="https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu"
+declare -a files=("ControlLabels" "Debug" "InfoPlist" "Localizable" "MainMenu" "OEControls")
 
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/ControlLabels.strings" > files/ControlLabels.template
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/Debug.strings" > files/Debug.template
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/InfoPlist.strings" > files/InfoPlist.template
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/Localizable.strings" > files/Localizable.template
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/MainMenu.strings" > files/MainMenu.template
-curl "https://raw.githubusercontent.com/OpenEmu/OpenEmu/master/OpenEmu/en.lproj/OEControls.strings" > files/OEControls.template
+# Fetching and filtering ca.lproj files
+for file in "${files[@]}"; do
+    curl "$base_url/ca.lproj/$file.strings" | grep -F -v '// TODO' | grep -F -v '/*' | grep . > "files/$file.strings"
+done
 
-prop2po --personality=strings --encoding=utf-8 -i files/ControlLabels.strings -o po/ControlLabels.po --template=files/ControlLabels.template
-prop2po --personality=strings --encoding=utf-8 -i files/Debug.strings -o po/Debug.po --template=files/Debug.template
-prop2po --personality=strings --encoding=utf-8 -i files/InfoPlist.strings -o po/InfoPlist.po --template=files/InfoPlist.template
-prop2po --personality=strings --encoding=utf-8 -i files/Localizable.strings -o po/Localizable.po --template=files/Localizable.template
-prop2po --personality=strings --encoding=utf-8 -i files/MainMenu.strings -o po/MainMenu.po --template=files/MainMenu.template
-prop2po --personality=strings --encoding=utf-8 -i files/OEControls.strings -o po/OEControls.po --template=files/OEControls.template
+# Fetching en.lproj files
+for file in "${files[@]}"; do
+    curl "$base_url/en.lproj/$file.strings" > "files/$file.template"
+done
+
+# Running prop2po
+for file in "${files[@]}"; do
+    prop2po --personality=strings --encoding=utf-8 -i "files/$file.strings" -o "po/$file.po" --template="files/$file.template"
+done
