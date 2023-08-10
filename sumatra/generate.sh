@@ -3,21 +3,19 @@
 cd "$(dirname "$0")"
 
 # Generate PO header
-echo "msgid \"\"" > sumatra.po
-echo "msgstr \"\"" >> sumatra.po
-echo "\"Content-Type: text/plain; charset=UTF-8\n\""  >> sumatra.po
-echo ""  >> sumatra.po
+cat << EOF > sumatra.po
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+EOF
 
-curl "https://raw.githubusercontent.com/sumatrapdfreader/sumatrapdf/master/src/docs/translations.txt" > translations.txt
+# Download translations.txt from Sumatra repository, extract English and Catalan strings, and convert to PO format
+grep -E '^(\:|ca\:)' <(curl -s "https://raw.githubusercontent.com/sumatrapdfreader/sumatrapdf/master/src/docs/translations.txt") | \
+sed -e 's/^:/msgid "/' \
+    -e 's/^ca:/msgstr "/' \
+    -e 's/$/"/' >> sumatra.po
 
-# Extract English and Catalan strings
-grep -E '^(\:|ca\:)' translations.txt > translations_ca.txt
-
-# Convert text file to PO
-sed 's/^:/msgid "/' translations_ca.txt > translations_po_step1.txt
-sed 's/^ca:/msgstr "/' translations_po_step1.txt > translations_po_step2.txt
-sed 's/$/"/' translations_po_step2.txt >> sumatra.po
-
+# Check PO syntax
 if [[ -z $(msgattrib sumatra.po 2> /dev/null) ]]; then
     msgattrib sumatra.po
     echo "ERROR: probablement falten cadenes per traduir"
