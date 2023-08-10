@@ -5,17 +5,27 @@ https://github.com/Softcatala/translation-memory-tools/.
 
 ## Requirements
 
-* modern Bash
+* Bash (modern versions)
 * Curl
 * Translate Toolkit
 * csvkit
 * dos2unix
+* Twine
 
 ## Installation
 
-On Ubuntu/Debian: `apt-get install csvkit translate-toolkit dos2unix`
+On Ubuntu/Debian:
 
-On Mac: `brew install bash csvkit translate-toolkit dos2unix`
+```
+sudo apt-get install csvkit translate-toolkit dos2unix
+sudo gem install twine
+```
+
+On Mac:
+```
+brew install bash csvkit translate-toolkit dos2unix
+sudo gem install twine
+```
 
 ## Translation credits
 
