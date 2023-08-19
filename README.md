@@ -33,6 +33,7 @@ sudo gem install twine
 * Haiku: https://i18n.haiku-os.org/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
 * Organic Maps: https://github.com/organicmaps/organicmaps
+* PrestaShop: https://crowdin.com/project/prestashop-official
 * RawTherapee: https://www.rawtherapee.com/
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
 * Windows Calculator: https://github.com/microsoft/calculator
