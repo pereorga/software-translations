@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 08:03+0000\n"
+"POT-Creation-Date: 2023-08-28 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,6 +104,10 @@ msgstr "El text que intenteu importar és força llarg. N'esteu segur?"
 #: Icon-O-Matic-Properties
 msgid "Paste"
 msgstr "Enganxa"
+
+#: Icon-O-Matic-FlatIconExporter
+msgid "There are too many styles. The HVIF format supports a maximum of 255."
+msgstr "Hi ha massa estils. El format HVIF n'admet un màxim de 255."
 
 #: Icon-O-Matic-Menu-File
 msgid "Close"
@@ -267,6 +271,14 @@ msgstr "No s'ha pogut obrir el document"
 msgid "Remove {0, plural, one{style} other{styles}}"
 msgstr "Suprimeix {0, plural, one{estil} other{estils}}"
 
+#: Icon-O-Matic-FlatIconExporter
+msgid ""
+"One or more of the paths have too many vertices. The HVIF format supports a "
+"maximum of 255 vertices per path."
+msgstr ""
+"Un o més dels camins tenen massa vèrtexs. El format HVIF admet un màxim de "
+"255 vèrtexs per camí."
+
 #: Icon-O-Matic-ShapesList
 msgid "Add with path & style"
 msgstr "Afegeix-n'hi una amb camí i estil"
@@ -355,6 +367,10 @@ msgstr "Arrodoniment"
 #: Icon-O-Matic-PropertyNames
 msgid "Joins"
 msgstr "Uneix"
+
+#: Icon-O-Matic-FlatIconExporter
+msgid "There are too many shapes. The HVIF format supports a maximum of 255."
+msgstr "Hi ha massa formes. El format HVIF n'admet un màxim de 255."
 
 #: Icon-O-Matic-ColorPicker
 msgctxt "Icon-O-Matic-ColorPicker"
@@ -513,6 +529,10 @@ msgstr "Divideix"
 msgid "Move"
 msgstr "Mou"
 
+#: Icon-O-Matic-FlatIconExporter
+msgid "There are too many paths. The HVIF format supports a maximum of 255."
+msgstr "Hi ha massa camins. El format HVIF n'admet un màxim de 255."
+
 #: Icon-O-Matic-StyleTypes
 msgid "Conic"
 msgstr "Cònic"
@@ -551,6 +571,14 @@ msgstr "Tipus d'estil"
 msgid "Quit"
 msgstr "Surt"
 
+#: Icon-O-Matic-FlatIconExporter
+msgid ""
+"One or more of the shapes have too many transformers. The HVIF format "
+"supports a maximum of 255 transformers per shape."
+msgstr ""
+"Una o més de les formes tenen massa transformadors. El format HVIF admet un "
+"màxim de 255 transformadors per forma."
+
 #: Icon-O-Matic-StyleTypes
 msgid "Gradient"
 msgstr "Gradient"
@@ -567,6 +595,14 @@ msgstr "Detecta'n l'orientació"
 #: Icon-O-Matic-AddPathsCmd
 msgid "Add {0, plural, one{path} other{paths}}"
 msgstr "Afegeix {0, plural, one{camí} other{camins}}"
+
+#: Icon-O-Matic-FlatIconExporter
+msgid ""
+"One or more of the shapes has too many paths. The HVIF format supports a "
+"maximum of 255 paths per shape."
+msgstr ""
+"Una o més de les formes tenen massa camins. El format HVIF admet un màxim de "
+"255 camins per forma."
 
 #: Icon-O-Matic-Menu-Shape
 msgid "Add shape with path & style"
