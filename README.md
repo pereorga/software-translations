@@ -36,5 +36,6 @@ sudo gem install twine
 * RawTherapee: https://www.rawtherapee.com/
 * Stooa: https://github.com/Stooa/Stooa/tree/main
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
+* VLC (iOS): https://github.com/videolan/vlc-ios
 * Windows Calculator: https://github.com/microsoft/calculator
 * WinSCP: https://winscp.net/eng/translations.php
