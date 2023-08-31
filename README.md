@@ -31,6 +31,7 @@ sudo gem install twine
 
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
 * Haiku: https://i18n.haiku-os.org/
+* Home Assistant (iOS): https://developers.home-assistant.io/docs/translations/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
 * Organic Maps: https://github.com/organicmaps/organicmaps
 * RawTherapee: https://www.rawtherapee.com/
