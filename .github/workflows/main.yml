@@ -28,7 +28,6 @@ jobs:
 
       - name: Run generate.sh in each directory and commit changes
         run: |
-          allowed_to_fail=("sumatra/")
           error_occurred=0
           for d in */; do
             if [ -f "${d}generate.sh" ]; then
@@ -42,10 +41,10 @@ jobs:
                   echo "No significant changes in $d"
                 fi
               else
-                if [[ " ${allowed_to_fail[@]} " =~ " ${d} " ]]; then
+                if [[ -f "${d}.allowed_to_fail" ]]; then
                   echo "Error occurred in $d (allowed to fail)"
                 else
-                  echo "Error occurred in $d"
+                  echo "$d: an error occurred"
                   error_occurred=1
                 fi
               fi
