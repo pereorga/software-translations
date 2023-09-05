@@ -30,6 +30,7 @@ sudo gem install twine
 ## Translation credits
 
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
+* FreeTube: https://docs.freetubeapp.io/community/translations/
 * Haiku: https://i18n.haiku-os.org/
 * Home Assistant (iOS): https://developers.home-assistant.io/docs/translations/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
