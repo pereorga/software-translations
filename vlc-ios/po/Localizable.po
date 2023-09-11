@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-29 18:16+0200\n"
+"POT-Creation-Date: 2023-09-11 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.10.0\n"
+"X-Generator: Translate Toolkit 3.6.0\n"
 
 #: STORE_DESCRIPTION
 msgid ""
@@ -334,6 +334,10 @@ msgstr "Mostra un menú dels dispositius AirPlay o Bluetooth disponibles "
 msgid "Upgrading Media Library"
 msgstr "Actualitza la biblioteca de medis"
 
+#: FAVORITE
+msgid "Favorite"
+msgstr ""
+
 #: OPEN_NETWORK
 msgid "Open Network Stream"
 msgstr "Obre un flux de xarxa"
@@ -444,6 +448,10 @@ msgstr "Cap aplicació per a obrir aquest tipus d'arxiu"
 #: SHARING_SUCCESS_CAMERA_ROLL
 msgid "File was successfully saved to the Camera Roll"
 msgstr "L'arxiu s'ha guardat amb èxit en el Rodet"
+
+#: FAVORITEVC_DETAILTEXT
+msgid "See your favorite folder"
+msgstr ""
 
 #: STREAMVC_DETAILTEXT
 msgid "Play streams directly without downloading"
@@ -683,6 +691,14 @@ msgstr "Llista de reproducció buida"
 #: EMPTY_PLAYLIST_DESCRIPTION
 msgid "Add media while editing in the respective categories."
 msgstr "Agregar arxius mentre s'editen en les respectives categories."
+
+#: EMPTY_HISTORY
+msgid "Empty History"
+msgstr ""
+
+#: EMPTY_HISTORY_DESCRIPTION
+msgid "No media yet."
+msgstr ""
 
 #: PLAYBACK_SCRUB_HELP
 msgid "Slide your finger up to adjust the scrubbing rate."
@@ -938,14 +954,6 @@ msgctxt "DURATION"
 msgid "Duration"
 msgstr "Durada"
 
-#.
-#. // MARK: - strings from VLCKit
-#.
-#. // MARK: - accessibility labels for the playlist
-#.
-#.
-#.
-#. // MARK: - ATV specific
 #: AUDIO_INFO_VC_TITLE
 msgid "Audio Info"
 msgstr "Informació Àudio"
@@ -1002,6 +1010,14 @@ msgstr "Subtítols trobats"
 #: NO_SUB_FOUND_OSO
 msgid "No subtitles were found for your media item \"%@\"."
 msgstr "No s'han trobat subtítols per al vostre element multimèdia \"%@\"."
+
+#: SELECT_AUDIO_FROM_FILES
+msgid "Load External Audio..."
+msgstr ""
+
+#: SELECT_SUBTITLE_FROM_FILES
+msgid "Load External Subtitles..."
+msgstr ""
 
 #: USE_SPDIF
 msgid "Use Pass-through (S/PDIF)"
@@ -1187,6 +1203,11 @@ msgstr "Llistes de reproducció"
 msgid "Video groups"
 msgstr "Grups de vídeos"
 
+#: HISTORY
+msgctxt "HISTORY"
+msgid "History"
+msgstr ""
+
 #: MODIFIED_DATE
 msgid "Modified date"
 msgstr "Data modificada"
@@ -1228,6 +1249,19 @@ msgstr "Selecciona-ho tot"
 #: BUTTON_SELECT_ALL_HINT
 msgid "Select all the media items present in this view"
 msgstr "Selecciona tots els fitxers multimèdia d'aquesta vista"
+
+#: BUTTON_HISTORY
+msgctxt "BUTTON_HISTORY"
+msgid "History"
+msgstr ""
+
+#: BUTTON_HISTORY_HINT
+msgid "View your recently played media"
+msgstr ""
+
+#: BUTTON_CLEAR
+msgid "Clear"
+msgstr ""
 
 #: ADD_TO_PLAYLIST
 msgid "Add to Playlist"
