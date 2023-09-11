@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-06 00:18+0200\n"
+"POT-Creation-Date: 2023-09-11 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.10.0\n"
+"X-Generator: Translate Toolkit 3.6.0\n"
 
 #: Locale+Name
 msgid "English (US)"
@@ -31,15 +31,15 @@ msgstr ""
 
 #: File
 msgid "File"
-msgstr "Archiu"
+msgstr "Fitxer"
 
 #: New+Window
 msgid "New Window"
-msgstr ""
+msgstr "Finestra nova"
 
 #: Preferences
 msgid "Preferences"
-msgstr ""
+msgstr "Preferències"
 
 #: Quit
 msgid "Quit"
@@ -163,9 +163,17 @@ msgctxt "Global->Live"
 msgid "Live"
 msgstr ""
 
+#: Global-%3ECounts-%3EVideo+Count
+msgid "1 video | {count} videos"
+msgstr ""
+
+#: Global-%3ECounts-%3EChannel+Count
+msgid "1 channel | {count} channels"
+msgstr ""
+
 #: Search+/+Go+to+URL
 msgid "Search / Go to URL"
-msgstr "Cercar / Vés a l'enllaç"
+msgstr "Cerca / Ves a l'URL"
 
 #: Search+Bar-%3EClear+Input
 msgid "Clear Input"
@@ -245,7 +253,7 @@ msgstr "Canals"
 #: Search+Filters-%3EType-%3EMovies
 msgctxt "Search Filters->Type->Movies"
 msgid "Movies"
-msgstr ""
+msgstr "Pel·lícules"
 
 #: Search+Filters-%3EDuration-%3EDuration
 msgid "Duration"
@@ -261,7 +269,7 @@ msgstr "Curts (< 4 minuts)"
 
 #: Search+Filters-%3EDuration-%3EMedium+(4+-+20+minutes)
 msgid "Medium (4 - 20 minutes)"
-msgstr ""
+msgstr "Mitjans (4 - 20 minuts)"
 
 #: Search+Filters-%3EDuration-%3ELong+(%3E+20+minutes)
 msgid "Long (> 20 minutes)"
@@ -350,15 +358,15 @@ msgstr "Més"
 #: Channels-%3EChannels
 msgctxt "Channels->Channels"
 msgid "Channels"
-msgstr ""
+msgstr "Canals"
 
 #: Channels-%3ETitle
 msgid "Channel List"
-msgstr ""
+msgstr "Llista de canals"
 
 #: Channels-%3ESearch+bar+placeholder
 msgid "Search Channels"
-msgstr ""
+msgstr "Cerca canals"
 
 #: Channels-%3ECount
 msgid "{number} channel(s) found."
@@ -383,7 +391,7 @@ msgstr ""
 
 #: Trending-%3ETrending
 msgid "Trending"
-msgstr "Tendencies"
+msgstr "Tendències"
 
 #: Trending-%3EDefault
 msgctxt "Trending->Default"
@@ -857,7 +865,7 @@ msgstr "Reprodueix automàticament els vídeos"
 
 #: Settings-%3EPlayer+Settings-%3EProxy+Videos+Through+Invidious
 msgid "Proxy Videos Through Invidious"
-msgstr "Emmascarar vídeos a través de invidious"
+msgstr "Fes servir Invidious com a intermediari per baixar els vídeos"
 
 #: Settings-%3EPlayer+Settings-%3EAutoplay+Playlists
 msgid "Autoplay Playlists"
@@ -869,11 +877,12 @@ msgstr "Activa el mode teatre per defecte"
 
 #: Settings-%3EPlayer+Settings-%3EScroll+Volume+Over+Video+Player
 msgid "Scroll Volume Over Video Player"
-msgstr "Desplaça el volum sobre el reproductor de vídeo"
+msgstr "Canvia el volum amb la roda del ratolí sobre el vídeo"
 
 #: Settings-%3EPlayer+Settings-%3EScroll+Playback+Rate+Over+Video+Player
 msgid "Scroll Playback Rate Over Video Player"
-msgstr "Desplaça la velocitat de reproducció sobre el reproductor de vídeo"
+msgstr ""
+"Canvia la velocitat de reproducció amb la roda del ratolí sobre el vídeo"
 
 #: Settings-%3EPlayer+Settings-%3ESkip+by+Scrolling+Over+Video+Player
 msgid "Skip by Scrolling Over Video Player"
@@ -1065,7 +1074,7 @@ msgstr ""
 
 #: Settings-%3EPrivacy+Settings-%3EAutomatically+Remove+Video+Meta+Files
 msgid "Automatically Remove Video Meta Files"
-msgstr "Elimina automàticament els arxius de metadades"
+msgstr "Suprimeix automàticament les metadades dels vídeos"
 
 #: Settings-%3EPrivacy+Settings-%3EClear+Search+Cache
 msgid "Clear Search Cache"
@@ -1598,7 +1607,7 @@ msgstr ""
 #: About-%3EAbout
 msgctxt "About->About"
 msgid "About"
-msgstr "Sobre"
+msgstr "Quant a"
 
 #: About-%3EBeta
 msgid "Beta"
@@ -1722,7 +1731,7 @@ msgstr "Tots els canals"
 
 #: Profile-%3EProfile+Manager
 msgid "Profile Manager"
-msgstr "Gestor de Perfils"
+msgstr "Gestor de perfils"
 
 #: Profile-%3ECreate+New+Profile
 msgid "Create New Profile"
@@ -1822,7 +1831,7 @@ msgstr "Selecciona Ningú"
 
 #: Profile-%3EDelete+Selected
 msgid "Delete Selected"
-msgstr "Esborra Seleccionats"
+msgstr "Suprimeix els seleccionats"
 
 #: Profile-%3EAdd+Selected+To+Profile
 msgid "Add Selected To Profile"
@@ -1838,17 +1847,16 @@ msgid ""
 "channels?  The same channels will be deleted in any profile they are found "
 "in."
 msgstr ""
-"Aquest és el teu perfil principal. Estàs segur que vols esborrar els canals "
-"seleccionats? Els mateixos canals seran esborrats de qualsevol perfil en que "
-"es troben."
+"Aquest és el perfil principal.  Esteu segur que voleu suprimir els canals "
+"seleccionats?   Se suprimiran de tots els perfils."
 
 #: Profile-%3EAre+you+sure+you+want+to+delete+the+selected+channels%3F++This+will+not+delete+the+channel+from+any+other+profile.
 msgid ""
 "Are you sure you want to delete the selected channels?  This will not delete "
 "the channel from any other profile."
 msgstr ""
-"Estàs segur que vols esborrar els canals seleccionats? Açò no esborrarà el "
-"canal de qualsevol altre perfil."
+"Esteu segur que voleu suprimir els canals seleccionats?  No se suprimiran de "
+"cap altre perfil."
 
 #: Channel-%3ESubscriber
 msgid "Subscriber"
@@ -1990,7 +1998,7 @@ msgstr ""
 #: Channel-%3EAbout-%3EAbout
 msgctxt "Channel->About->About"
 msgid "About"
-msgstr "Sobre"
+msgstr "Quant a"
 
 #: Channel-%3EAbout-%3EChannel+Description
 msgid "Channel Description"
@@ -2046,7 +2054,7 @@ msgstr "Marca Com A Vist"
 
 #: Video-%3ERemove+From+History
 msgid "Remove From History"
-msgstr "Esborra De L'Historial"
+msgstr "Suprimeix de l'historial"
 
 #: Video-%3EVideo+has+been+marked+as+watched
 msgid "Video has been marked as watched"
@@ -2139,6 +2147,10 @@ msgstr "Reprodueix el vídeo següent"
 #: Video-%3EPlay+Previous+Video
 msgid "Play Previous Video"
 msgstr "Reprodueix el vídeo anterior"
+
+#: Video-%3EPause+on+Current+Video
+msgid "Pause on Current Video"
+msgstr ""
 
 #: Video-%3EWatching
 msgid "Watching"
@@ -2749,6 +2761,10 @@ msgstr ""
 msgid "Member"
 msgstr ""
 
+#: Comments-%3ESubscribed
+msgid "Subscribed"
+msgstr ""
+
 #: Comments-%3EHearted
 msgid "Hearted"
 msgstr ""
@@ -2967,6 +2983,14 @@ msgstr ""
 
 #: Playing+Previous+Video
 msgid "Playing Previous Video"
+msgstr ""
+
+#: Playlist+will+not+pause+when+current+video+is+finished
+msgid "Playlist will not pause when current video is finished"
+msgstr ""
+
+#: Playlist+will+pause+when+current+video+is+finished
+msgid "Playlist will pause when current video is finished"
 msgstr ""
 
 #: Playing+Next+Video+Interval
