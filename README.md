@@ -10,7 +10,6 @@ https://github.com/Softcatala/translation-memory-tools/.
 * Translate Toolkit
 * csvkit
 * dos2unix
-* Twine
 
 ## Installation
 
@@ -18,13 +17,11 @@ On Ubuntu/Debian:
 
 ```
 sudo apt-get install csvkit translate-toolkit dos2unix
-sudo gem install twine
 ```
 
 On Mac:
 ```
 brew install bash csvkit translate-toolkit dos2unix
-sudo gem install twine
 ```
 
 ## Translation credits
@@ -34,7 +31,6 @@ sudo gem install twine
 * Haiku: https://i18n.haiku-os.org/
 * Home Assistant (iOS): https://developers.home-assistant.io/docs/translations/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
-* Organic Maps: https://github.com/organicmaps/organicmaps
 * RawTherapee: https://www.rawtherapee.com/
 * Stooa: https://github.com/Stooa/Stooa/tree/main
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
