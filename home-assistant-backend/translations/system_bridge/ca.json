@@ -1,0 +1,117 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "unknown": "Error inesperat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "authenticate": {
+                "data": {
+                    "api_key": "Clau API"
+                },
+                "description": "Introdueix la clau API que has posat a la configuraci\u00f3 de {name}."
+            },
+            "user": {
+                "data": {
+                    "api_key": "Clau API",
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                },
+                "description": "Introdueix les dades de connexi\u00f3."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "amount_memory_used": {
+                "name": "Quantitat de mem\u00f2ria utilitzada"
+            },
+            "battery_time_remaining": {
+                "name": "Temps de bateria restant"
+            },
+            "boot_time": {
+                "name": "Temps d'arrencada"
+            },
+            "cpu_power_package": {
+                "name": "Pot\u00e8ncia de la CPU (encapsulat)"
+            },
+            "cpu_speed": {
+                "name": "Freq\u00fc\u00e8ncia de la CPU"
+            },
+            "cpu_temperature": {
+                "name": "Temperatura de la CPU"
+            },
+            "cpu_voltage": {
+                "name": "Tensi\u00f3 de la CPU"
+            },
+            "kernel": {
+                "name": "Nucli"
+            },
+            "memory_free": {
+                "name": "Mem\u00f2ria disponible"
+            },
+            "memory_used": {
+                "name": "Mem\u00f2ria utilitzada"
+            },
+            "os": {
+                "name": "Sistema operatiu"
+            },
+            "version": {
+                "name": "Versi\u00f3"
+            },
+            "version_latest": {
+                "name": "\u00daltima versi\u00f3"
+            }
+        }
+    },
+    "services": {
+        "open_path": {
+            "fields": {
+                "path": {
+                    "description": "Ruta a obrir.",
+                    "name": "Ruta"
+                }
+            },
+            "name": "Obre ruta"
+        },
+        "open_url": {
+            "fields": {
+                "url": {
+                    "description": "URL a obrir.",
+                    "name": "URL"
+                }
+            },
+            "name": "Obre URL"
+        },
+        "power_command": {
+            "fields": {
+                "command": {
+                    "description": "Comanda a cridar.",
+                    "name": "Comanda"
+                }
+            }
+        },
+        "send_keypress": {
+            "fields": {
+                "key": {
+                    "name": "Clau"
+                }
+            }
+        },
+        "send_text": {
+            "fields": {
+                "text": {
+                    "description": "Text a escriure.",
+                    "name": "Text"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "device_automation": {
+        "trigger_type": {
+            "codelock": "Codi de bloqueig rebut",
+            "fingerprint": "Codi d'empremta rebut",
+            "send_keys": "Claus d'enviament rebudes",
+            "transmitter": "Codi del transmissor rebut",
+            "transponder": "Codi del transponedor rebut"
+        }
+    },
+    "services": {
+        "output_abs": {
+            "fields": {
+                "brightness": {
+                    "description": "Lluminositat absoluta.",
+                    "name": "Lluminositat"
+                },
+                "transition": {
+                    "name": "Transici\u00f3"
+                }
+            }
+        },
+        "output_rel": {
+            "fields": {
+                "brightness": {
+                    "description": "Lluminositat relativa.",
+                    "name": "Lluminositat"
+                }
+            }
+        },
+        "send_keys": {
+            "name": "Enviar claus"
+        },
+        "var_abs": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "value": {
+                    "description": "Valor a configurar.",
+                    "name": "Valor"
+                },
+                "variable": {
+                    "name": "Variable"
+                }
+            }
+        },
+        "var_rel": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "unit_of_measurement": {
+                    "name": "Unitat de mesura"
+                },
+                "value": {
+                    "name": "Valor"
+                },
+                "value_reference": {
+                    "name": "Valor de refer\u00e8ncia"
+                },
+                "variable": {
+                    "name": "Variable"
+                }
+            }
+        },
+        "var_reset": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "variable": {
+                    "name": "Variable"
+                }
+            }
+        }
+    }
+}

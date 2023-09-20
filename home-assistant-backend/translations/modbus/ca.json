@@ -1,0 +1,50 @@
+{
+    "issues": {
+        "deprecated_close_comm_config": {
+            "description": "Elimina la clau `{config_key}` de l'entrada {integration} del teu fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema. \n\nLa comunicaci\u00f3 es tanca autom\u00e0ticament en cas d'error, consulta [la documentaci\u00f3]({url}) per a m\u00e9s par\u00e0metres de gesti\u00f3 d'errors.",
+            "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 `{config_key}`"
+        }
+    },
+    "services": {
+        "reload": {
+            "description": "Recarrega totes les entitats modbus.",
+            "name": "Torna a carregar"
+        },
+        "restart": {
+            "name": "Reinicia"
+        },
+        "stop": {
+            "name": "Atura"
+        },
+        "write_coil": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "slave": {
+                    "description": "Adre\u00e7a de la unitat/esclau modbus.",
+                    "name": "Esclau"
+                },
+                "state": {
+                    "description": "Estat a escriure.",
+                    "name": "Estat"
+                }
+            }
+        },
+        "write_register": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "slave": {
+                    "description": "Adre\u00e7a de la unitat/esclau modbus.",
+                    "name": "Esclau"
+                },
+                "value": {
+                    "description": "Valor a escriure (\u00fanic o matriu/'array')",
+                    "name": "Valor"
+                }
+            }
+        }
+    }
+}

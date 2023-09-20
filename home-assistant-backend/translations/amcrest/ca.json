@@ -1,0 +1,105 @@
+{
+    "services": {
+        "disable_audio": {
+            "description": "Desactiva el flux d'\u00e0udio.",
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            },
+            "name": "Desactiva l'\u00e0udio"
+        },
+        "disable_motion_recording": {
+            "description": "Desactiva la gravaci\u00f3 d'un clip a l'emmagatzematge de la c\u00e0mera quan es detecta moviment.",
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            },
+            "name": "Desactiva la gravaci\u00f3 de moviment"
+        },
+        "disable_recording": {
+            "description": "Desactiva la gravaci\u00f3 cont\u00ednua a l'emmagatzematge de la c\u00e0mera.",
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            },
+            "name": "Desactiva la gravaci\u00f3"
+        },
+        "enable_audio": {
+            "description": "Activa la transmissi\u00f3 d'\u00e0udio.",
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            },
+            "name": "Activa l'\u00e0udio"
+        },
+        "enable_motion_recording": {
+            "description": "Permet gravar un clip a l'emmagatzematge de la c\u00e0mera quan es detecta moviment.",
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            },
+            "name": "Activa la gravaci\u00f3 de moviment"
+        },
+        "enable_recording": {
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            }
+        },
+        "goto_preset": {
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            }
+        },
+        "ptz_control": {
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                },
+                "movement": {
+                    "name": "Moviment"
+                },
+                "travel_time": {
+                    "description": "Temps de despla\u00e7ament en fraccions de segons: de 0 a 1.",
+                    "name": "Temps de despla\u00e7ament"
+                }
+            },
+            "name": "Control PTZ"
+        },
+        "set_color_bw": {
+            "description": "Configura el mode de color de la c\u00e0mera.",
+            "fields": {
+                "color_bw": {
+                    "description": "Mode de color.",
+                    "name": "Color"
+                },
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            },
+            "name": "Estableix el color"
+        },
+        "start_tour": {
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            }
+        },
+        "stop_tour": {
+            "fields": {
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            }
+        }
+    }
+}

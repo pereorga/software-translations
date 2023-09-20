@@ -1,0 +1,29 @@
+{
+    "services": {
+        "submit_movie_request": {
+            "fields": {
+                "name": {
+                    "name": "Nom"
+                }
+            }
+        },
+        "submit_music_request": {
+            "fields": {
+                "name": {
+                    "name": "Nom"
+                }
+            }
+        },
+        "submit_tv_request": {
+            "fields": {
+                "name": {
+                    "name": "Nom"
+                },
+                "season": {
+                    "description": "Temporada(es) a demanar.",
+                    "name": "Temporada"
+                }
+            }
+        }
+    }
+}

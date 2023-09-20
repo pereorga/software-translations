@@ -1,0 +1,405 @@
+{
+    "services": {
+        "answer_callback_query": {
+            "fields": {
+                "message": {
+                    "name": "Missatge"
+                },
+                "show_alert": {
+                    "description": "Mostra una notificaci\u00f3 permanent.",
+                    "name": "Mostra alerta"
+                },
+                "timeout": {
+                    "description": "Temps d'espera per enviar la resposta. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
+                    "name": "Temps d'espera"
+                }
+            }
+        },
+        "delete_message": {
+            "description": "Elimina un missatge enviat anteriorment.",
+            "fields": {
+                "chat_id": {
+                    "description": "chat_id on eliminar el missatge.",
+                    "name": "ID de xat"
+                },
+                "message_id": {
+                    "description": "ID del missatge a eliminar.",
+                    "name": "ID del missatge"
+                }
+            },
+            "name": "Elimina missatge"
+        },
+        "edit_caption": {
+            "fields": {
+                "caption": {
+                    "description": "Missatge/cos de la notificaci\u00f3."
+                },
+                "chat_id": {
+                    "name": "ID de xat"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "message_id": {
+                    "description": "ID del missatge a editar.",
+                    "name": "ID del missatge"
+                }
+            }
+        },
+        "edit_message": {
+            "description": "Edita un missatge enviat anteriorment.",
+            "fields": {
+                "chat_id": {
+                    "description": "chat_id on editar el missatge.",
+                    "name": "ID de xat"
+                },
+                "disable_web_page_preview": {
+                    "description": "Desactiva les previsualitzacions dels enlla\u00e7os presents en el missatge.",
+                    "name": "Desactiva la vista pr\u00e8via de p\u00e0gina web"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "message": {
+                    "description": "Missatge/cos de la notificaci\u00f3.",
+                    "name": "Missatge"
+                },
+                "message_id": {
+                    "description": "ID del missatge a editar.",
+                    "name": "ID del missatge"
+                },
+                "parse_mode": {
+                    "description": "Analitzador del text del missatge.",
+                    "name": "Mode d'an\u00e0lisi"
+                },
+                "title": {
+                    "description": "T\u00edtol opcional de la notificaci\u00f3. Es compondr\u00e0 com a '%title %missatge'.",
+                    "name": "T\u00edtol"
+                }
+            },
+            "name": "Edita el missatge"
+        },
+        "edit_replymarkup": {
+            "fields": {
+                "chat_id": {
+                    "name": "ID de xat"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "message_id": {
+                    "description": "ID del missatge a editar.",
+                    "name": "ID del missatge"
+                }
+            }
+        },
+        "send_animation": {
+            "description": "Envia una animaci\u00f3.",
+            "fields": {
+                "authentication": {
+                    "name": "M\u00e8tode d'autenticaci\u00f3"
+                },
+                "caption": {
+                    "description": "T\u00edtol de l'animaci\u00f3."
+                },
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "file": {
+                    "description": "Ruta local a un v\u00eddeo GIF o H.264/MPEG-4 AVC sense so."
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "parse_mode": {
+                    "description": "Analitzador del text del missatge.",
+                    "name": "Mode d'an\u00e0lisi"
+                },
+                "password": {
+                    "name": "Contrasenya"
+                },
+                "target": {
+                    "name": "Objectiu"
+                },
+                "timeout": {
+                    "name": "Temps d'espera"
+                },
+                "url": {
+                    "description": "Ruta remota a un v\u00eddeo GIF o H.264/MPEG-4 AVC sense so.",
+                    "name": "URL"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                },
+                "verify_ssl": {
+                    "name": "Verifica l'SSL"
+                }
+            },
+            "name": "Envia animaci\u00f3"
+        },
+        "send_document": {
+            "description": "Envia un document.",
+            "fields": {
+                "authentication": {
+                    "name": "M\u00e8tode d'autenticaci\u00f3"
+                },
+                "caption": {
+                    "description": "T\u00edtol del document."
+                },
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "file": {
+                    "description": "Ruta local a un document."
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
+                "parse_mode": {
+                    "description": "Analitzador del text del missatge.",
+                    "name": "Mode d'an\u00e0lisi"
+                },
+                "password": {
+                    "name": "Contrasenya"
+                },
+                "target": {
+                    "name": "Objectiu"
+                },
+                "timeout": {
+                    "name": "Temps d'espera"
+                },
+                "url": {
+                    "name": "URL"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                },
+                "verify_ssl": {
+                    "name": "Verifica l'SSL"
+                }
+            },
+            "name": "Envia document"
+        },
+        "send_location": {
+            "description": "Envia una ubicaci\u00f3.",
+            "fields": {
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "latitude": {
+                    "description": "Latitud a enviar.",
+                    "name": "Latitud"
+                },
+                "longitude": {
+                    "description": "Longitud a enviar.",
+                    "name": "Longitud"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
+                "target": {
+                    "name": "Objectiu"
+                },
+                "timeout": {
+                    "name": "Temps d'espera"
+                }
+            },
+            "name": "Envia ubicaci\u00f3"
+        },
+        "send_message": {
+            "description": "Envia una notificaci\u00f3.",
+            "fields": {
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "disable_web_page_preview": {
+                    "description": "Desactiva les previsualitzacions dels enlla\u00e7os presents en el missatge.",
+                    "name": "Desactiva la vista pr\u00e8via de p\u00e0gina web"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "message": {
+                    "description": "Missatge/cos de la notificaci\u00f3.",
+                    "name": "Missatge"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
+                "parse_mode": {
+                    "description": "Analitzador del text del missatge.",
+                    "name": "Mode d'an\u00e0lisi"
+                },
+                "target": {
+                    "description": "Llista de chat_ids preautoritzats on enviar la notificaci\u00f3. Si hi son, el primer chat_id perm\u00e8s \u00e9s el predeterminat.",
+                    "name": "Objectiu"
+                },
+                "timeout": {
+                    "description": "Temps d'espera per enviar el missatge. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
+                    "name": "Temps d'espera"
+                },
+                "title": {
+                    "description": "T\u00edtol opcional de la notificaci\u00f3. Es compondr\u00e0 com a '%title %missatge'.",
+                    "name": "T\u00edtol"
+                }
+            },
+            "name": "Envia missatge"
+        },
+        "send_photo": {
+            "description": "Envia una foto.",
+            "fields": {
+                "authentication": {
+                    "name": "M\u00e8tode d'autenticaci\u00f3"
+                },
+                "caption": {
+                    "description": "T\u00edtol de la imatge."
+                },
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
+                "parse_mode": {
+                    "description": "Analitzador del text del missatge.",
+                    "name": "Mode d'an\u00e0lisi"
+                },
+                "password": {
+                    "name": "Contrasenya"
+                },
+                "url": {
+                    "name": "URL"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                }
+            }
+        },
+        "send_poll": {
+            "fields": {
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                }
+            }
+        },
+        "send_sticker": {
+            "fields": {
+                "authentication": {
+                    "name": "M\u00e8tode d'autenticaci\u00f3"
+                },
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
+                "password": {
+                    "name": "Contrasenya"
+                },
+                "url": {
+                    "name": "URL"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                }
+            }
+        },
+        "send_video": {
+            "fields": {
+                "authentication": {
+                    "name": "M\u00e8tode d'autenticaci\u00f3"
+                },
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
+                "parse_mode": {
+                    "description": "Analitzador del text del missatge.",
+                    "name": "Mode d'an\u00e0lisi"
+                },
+                "password": {
+                    "name": "Contrasenya"
+                },
+                "url": {
+                    "name": "URL"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                }
+            }
+        },
+        "send_voice": {
+            "fields": {
+                "authentication": {
+                    "name": "M\u00e8tode d'autenticaci\u00f3"
+                },
+                "disable_notification": {
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "inline_keyboard": {
+                    "name": "Teclat en l\u00ednia"
+                },
+                "keyboard": {
+                    "name": "Teclat"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
+                "password": {
+                    "name": "Contrasenya"
+                },
+                "url": {
+                    "name": "URL"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                }
+            }
+        }
+    }
+}

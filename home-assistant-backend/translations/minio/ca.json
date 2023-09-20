@@ -1,0 +1,33 @@
+{
+    "services": {
+        "get": {
+            "fields": {
+                "file_path": {
+                    "description": "Ruta del fitxer del sistema de fitxers local.",
+                    "name": "Ruta del fitxer"
+                },
+                "key": {
+                    "name": "Clau"
+                }
+            }
+        },
+        "put": {
+            "description": "Puja un fitxer a Minio.",
+            "fields": {
+                "file_path": {
+                    "description": "Ruta del fitxer del sistema de fitxers local.",
+                    "name": "Ruta del fitxer"
+                }
+            }
+        },
+        "remove": {
+            "description": "Elimina un fitxer de Minio.",
+            "fields": {
+                "key": {
+                    "name": "Clau"
+                }
+            },
+            "name": "Elimina"
+        }
+    }
+}

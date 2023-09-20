@@ -1,0 +1,25 @@
+{
+    "services": {
+        "create": {
+            "fields": {
+                "notification_id": {
+                    "name": "ID de notificaci\u00f3"
+                }
+            }
+        },
+        "dismiss": {
+            "description": "Elimina una notificaci\u00f3 del panell **Notificacions**.",
+            "fields": {
+                "notification_id": {
+                    "description": "ID de la notificaci\u00f3 a eliminar.",
+                    "name": "ID de notificaci\u00f3"
+                }
+            },
+            "name": "Descarta"
+        },
+        "dismiss_all": {
+            "description": "Elimina totes les notificacions del panell **Notificacions**.",
+            "name": "Descarta-ho tot"
+        }
+    }
+}

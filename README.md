@@ -10,18 +10,19 @@ https://github.com/Softcatala/translation-memory-tools/.
 * Translate Toolkit
 * csvkit
 * dos2unix
+* unzip
 
 ## Installation
 
 On Ubuntu/Debian:
 
 ```
-sudo apt-get install csvkit translate-toolkit dos2unix
+sudo apt-get install csvkit translate-toolkit dos2unix unzip
 ```
 
 On Mac:
 ```
-brew install bash csvkit translate-toolkit dos2unix
+brew install bash csvkit translate-toolkit dos2unix unzip
 ```
 
 ## Translation credits
@@ -29,7 +30,7 @@ brew install bash csvkit translate-toolkit dos2unix
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
 * FreeTube: https://docs.freetubeapp.io/community/translations/
 * Haiku: https://i18n.haiku-os.org/
-* Home Assistant (iOS): https://developers.home-assistant.io/docs/translations/
+* Home Assistant: https://developers.home-assistant.io/docs/translations/
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
 * RawTherapee: https://www.rawtherapee.com/
 * Stooa: https://github.com/Stooa/Stooa/tree/main

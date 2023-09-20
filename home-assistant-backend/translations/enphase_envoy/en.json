@@ -1,0 +1,136 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "cannot_connect": "Cannot connect: {reason}",
+            "invalid_auth": "Invalid authentication: {reason}",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{serial} ({host})",
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "For firmware version 7.0 and later, enter the Enphase cloud credentials, for older models, enter username `installer` without a password."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "communicating": {
+                "name": "Communicating"
+            },
+            "dc_switch": {
+                "name": "DC switch"
+            },
+            "grid_status": {
+                "name": "Grid status"
+            },
+            "operating": {
+                "name": "Operating"
+            },
+            "relay": {
+                "name": "Relay status"
+            }
+        },
+        "number": {
+            "cutoff_battery_level": {
+                "name": "Cutoff battery level"
+            },
+            "restore_battery_level": {
+                "name": "Restore battery level"
+            }
+        },
+        "select": {
+            "relay_generator_action": {
+                "name": "Generator action",
+                "state": {
+                    "none": "None",
+                    "not_powered": "Not powered",
+                    "powered": "Powered",
+                    "schedule": "Follow schedule"
+                }
+            },
+            "relay_grid_action": {
+                "name": "Grid action",
+                "state": {
+                    "none": "None",
+                    "not_powered": "Not powered",
+                    "powered": "Powered",
+                    "schedule": "Follow schedule"
+                }
+            },
+            "relay_microgrid_action": {
+                "name": "Microgrid action",
+                "state": {
+                    "none": "None",
+                    "not_powered": "Not powered",
+                    "powered": "Powered",
+                    "schedule": "Follow schedule"
+                }
+            },
+            "relay_mode": {
+                "name": "Mode",
+                "state": {
+                    "battery": "Battery level",
+                    "standard": "Standard"
+                }
+            }
+        },
+        "sensor": {
+            "available_energy": {
+                "name": "Available battery energy"
+            },
+            "configured_reserve_soc": {
+                "name": "Configured reserve battery level"
+            },
+            "current_power_consumption": {
+                "name": "Current power consumption"
+            },
+            "current_power_production": {
+                "name": "Current power production"
+            },
+            "daily_consumption": {
+                "name": "Energy consumption today"
+            },
+            "daily_production": {
+                "name": "Energy production today"
+            },
+            "last_reported": {
+                "name": "Last reported"
+            },
+            "lifetime_consumption": {
+                "name": "Lifetime energy consumption"
+            },
+            "lifetime_production": {
+                "name": "Lifetime energy production"
+            },
+            "max_capacity": {
+                "name": "Battery capacity"
+            },
+            "reserve_energy": {
+                "name": "Reserve battery energy"
+            },
+            "reserve_soc": {
+                "name": "Reserve battery level"
+            },
+            "seven_days_consumption": {
+                "name": "Energy consumption last seven days"
+            },
+            "seven_days_production": {
+                "name": "Energy production last seven days"
+            }
+        },
+        "switch": {
+            "grid_enabled": {
+                "name": "Grid enabled"
+            }
+        }
+    }
+}
