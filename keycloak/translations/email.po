@@ -1,0 +1,376 @@
+#. extracted from keycloak/themes/src/main/resources/theme/base/email/messages/messages_en.properties, keycloak/themes/src/main/resources-community/theme/base/email/messages/messages_ca.properties
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-21 21:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.10.0\n"
+
+#: emailVerificationSubject
+msgid "Verify email"
+msgstr "Verificació de l''adreça electrònica"
+
+#: emailVerificationBody
+msgid ""
+"Someone has created a {2} account with this email address. If this was you, "
+"click the link below to verify your email address\n"
+"\n"
+"{0}\n"
+"\n"
+"This link will expire within {3}.\n"
+"\n"
+"If you didn''t create this account, just ignore this message."
+msgstr ""
+"Algú ha creat un compte de {2} amb aquesta adreça de correu electrònic. Si "
+"heu estat vosaltres, feu clic a l''enllaç següent per a verificar la vostra "
+"adreça de correu electrònic.\n"
+"\n"
+"{0}\n"
+"\n"
+"Aquest enllaç caducarà en {3}.\n"
+"\n"
+"Si no heu creat aquest compte, simplement ignoreu aquest missatge."
+
+#: emailVerificationBodyHtml
+msgid ""
+"<p>Someone has created a {2} account with this email address. If this was "
+"you, click the link below to verify your email address</p><p><a href=\"{0}\""
+">Link to e-mail address verification</a></p><p>This link will expire within "
+"{3}.</p><p>If you didn''t create this account, just ignore this message.</p>"
+msgstr ""
+"<p>Algú ha creat un compte de {2} amb aquesta adreça de correu electrònic. "
+"Si heu estat vosaltres, feu clic a l''enllaç següent per a verificar la "
+"vostra adreça de correu electrònic.</p><p><a href=\\\"{0}\\\">Enllaç a la "
+"verificació de l''adreça de correu electrònic</a></p><p> Aquest enllaç "
+"caducarà en {3}.</p><p> Si no heu creat aquest compte, simplement ignoreu "
+"aquest missatge.</p>"
+
+#: emailUpdateConfirmationSubject
+msgid "Verify new email"
+msgstr "Verifiqueu l''adreça nova"
+
+#: emailUpdateConfirmationBody
+msgid ""
+"To update your {2} account with email address {1}, click the link below\n"
+"\n"
+"{0}\n"
+"\n"
+"This link will expire within {3}.\n"
+"\n"
+"If you don''t want to proceed with this modification, just ignore this "
+"message."
+msgstr ""
+"Per a actualitzar el vostre compte {2} amb l''adreça de correu electrònic {1}"
+", feu clic a l''enllaç de sota\n"
+"\n"
+"{0}\n"
+"\n"
+"Aquest enllaç caducarà en {3}.\n"
+"\n"
+"Si no voleu continuar amb aquesta modificació, simplement ignoreu aquest "
+"missatge."
+
+#: emailUpdateConfirmationBodyHtml
+msgid ""
+"<p>To update your {2} account with email address {1}, click the link below</"
+"p><p><a href=\"{0}\">{0}</a></p><p>This link will expire within {3}.</"
+"p><p>If you don''t want to proceed with this modification, just ignore this "
+"message.</p>"
+msgstr ""
+"<p>Per a actualitzar el vostre compte {2} amb l''adreça de correu electrònic "
+"{1}, feu clic a l''enllaç de sota</p><p><a href=\"{0}\">{0}</a></p><p>Aquest "
+"enllaç caducarà en {3}.</p><p>Si no voleu continuar amb aquesta modificació, "
+"simplement ignoreu aquest missatge.</p>"
+
+#: emailTestSubject
+msgid "[KEYCLOAK] - SMTP test message"
+msgstr "[KEYCLOAK] - missatge de prova SMTP"
+
+#: emailTestBody
+msgid "This is a test message"
+msgstr "Aquest és un missatge de prova"
+
+#: emailTestBodyHtml
+msgid "<p>This is a test message</p>"
+msgstr "<p>Aquest és un missatge de prova</p>"
+
+#: identityProviderLinkSubject
+msgid "Link {0}"
+msgstr "Enllaç a {0}"
+
+#: identityProviderLinkBody
+msgid ""
+"Someone wants to link your \"{1}\" account with \"{0}\" account of user {2} "
+". If this was you, click the link below to link accounts\n"
+"\n"
+"{3}\n"
+"\n"
+"This link will expire within {5}.\n"
+"\n"
+"If you don''t want to link account, just ignore this message. If you link "
+"accounts, you will be able to login to {1} through {0}."
+msgstr ""
+"Algú ha sol·licitat enllaçar el vostre compte «{1}» amb el compte «{0}» de "
+"l''usuari {2}. Si heu estat vosaltres, feu clic a l''enllaç de sota per a "
+"enllaçar els comptes\n"
+"\n"
+"{3}\n"
+"\n"
+"Aquest enllaç caducarà en {5}.\n"
+"\n"
+"Si no voleu enllaçar el compte, simplement ignoreu aquest missatge. Si "
+"enllaceu els comptes, podreu identificar-vos a {1} a través de {0}."
+
+#: identityProviderLinkBodyHtml
+msgid ""
+"<p>Someone wants to link your <b>{1}</b> account with <b>{0}</b> account of "
+"user {2}. If this was you, click the link below to link accounts</p><p><a "
+"href=\"{3}\">Link to confirm account linking</a></p><p>This link will expire "
+"within {5}.</p><p>If you don''t want to link account, just ignore this "
+"message. If you link accounts, you will be able to login to {1} through "
+"{0}.</p>"
+msgstr ""
+"<p>Algú ha sol·licitat enllaçar el vostre compte <b>{1}</b> amb el compte "
+"<b>{0}</b> de l''usuari {2}. Si heu estat vosaltres, feu clic a l''enllaç de "
+"sota per a enllaçar els comptes</p><a href=\"{3}\">Enllaç per a confirmar "
+"l''enllaçat de comptes</a><p><p>Aquest enllaç caducarà en {5}.</p><p>Si no "
+"voleu enllaçar el compte, simplement ignoreu aquest missatge. Si enllaceu "
+"els comptes, podreu identificar-vos a {1} a través de {0}.</p>"
+
+#: passwordResetSubject
+msgid "Reset password"
+msgstr "Restabliu la contrasenya"
+
+#: passwordResetBody
+msgid ""
+"Someone just requested to change your {2} account''s credentials. If this "
+"was you, click on the link below to reset them.\n"
+"\n"
+"{0}\n"
+"\n"
+"This link and code will expire within {3}.\n"
+"\n"
+"If you don''t want to reset your credentials, just ignore this message and "
+"nothing will be changed."
+msgstr ""
+"Algú ha demanat canviar les credencials del vostre compte de {2}. Si heu "
+"estat vosaltres, feu clic a l''enllaç següent per a restablir-les.\n"
+"\n"
+"{0}\n"
+"\n"
+"Aquest enllaç i codi caducaran en {3}.\n"
+"\n"
+"Si no voleu restablir les vostres credencials, simplement ignoreu aquest "
+"missatge i no es realitzarà cap canvi."
+
+#: passwordResetBodyHtml
+msgid ""
+"<p>Someone just requested to change your {2} account''s credentials. If this "
+"was you, click on the link below to reset them.</p><p><a href=\"{0}\">Link "
+"to reset credentials</a></p><p>This link will expire within {3}.</p><p>If "
+"you don''t want to reset your credentials, just ignore this message and "
+"nothing will be changed.</p>"
+msgstr ""
+"<p>Algú ha demanat canviar les credencials del vostre compte de {2}. Si heu "
+"estat vosaltres, feu clic a l''enllaç següent per a restablir-les.</p><p><a "
+"href=\"{0}\">Enllaç per a restablir les credencials</a></p><p>Aquest enllaç "
+"caducarà en {3}.</p><p>Si no voleu restablir les vostres credencials, "
+"simplement ignoreu aquest missatge i no es realitzarà cap canvi.</p>"
+
+#: executeActionsSubject
+msgid "Update Your Account"
+msgstr "Actualitzeu el vostre compte"
+
+#: executeActionsBody
+msgid ""
+"Your administrator has just requested that you update your {2} account by "
+"performing the following action(s): {3}. Click on the link below to start "
+"this process.\n"
+"\n"
+"{0}\n"
+"\n"
+"This link will expire within {4}.\n"
+"\n"
+"If you are unaware that your administrator has requested this, just ignore "
+"this message and nothing will be changed."
+msgstr ""
+"L''administrador ha sol·licitat que actualitzeu el vostre compte de {2} "
+"realitzant les accions següents: {3}. Feu clic a l''enllaç següent per a "
+"iniciar aquest procés.\n"
+"\n"
+"{0}\n"
+"\n"
+"Aquest enllaç caducarà en {4}.\n"
+"\n"
+"Si no esteu al corrent que l''administrador hagi sol·licitat això, "
+"simplement ignoreu aquest missatge i no es realitzarà cap canvi."
+
+#: executeActionsBodyHtml
+msgid ""
+"<p>Your administrator has just requested that you update your {2} account by "
+"performing the following action(s): {3}. Click on the link below to start "
+"this process.</p><p><a href=\"{0}\">Link to account update</a></p><p>This "
+"link will expire within {4}.</p><p>If you are unaware that your "
+"administrator has requested this, just ignore this message and nothing will "
+"be changed.</p>"
+msgstr ""
+"<p>L''administrador ha sol·licitat que actualitzeu el vostre compte de {2} "
+"realitzant les accions següents. {3} Feu clic a l''enllaç següent per "
+"iniciar aquest procés.</p><p><a href=\\\"{0}\\\">Enllaç a l''actualització "
+"del compte</a></p><p>Aquest enllaç caducarà en {4}.</p><p>Si no esteu al "
+"corrent que l''administrador hagi sol·licitat això, simplement ignoreu "
+"aquest missatge i no es realitzarà cap canvi.</p>"
+
+#: eventLoginErrorSubject
+msgid "Login error"
+msgstr "Fallada en l''inici de sessió"
+
+#: eventLoginErrorBody
+msgid ""
+"A failed login attempt was detected to your account on {0} from {1}. If this "
+"was not you, please contact an administrator."
+msgstr ""
+"S''ha detectat un intent d''accés fallit al vostre compte el {0} des de {1}. "
+"Si no heu estat vosaltres, contacteu amb l''administrador."
+
+#: eventLoginErrorBodyHtml
+msgid ""
+"<p>A failed login attempt was detected to your account on {0} from {1}. If "
+"this was not you, please contact an administrator.</p>"
+msgstr ""
+"<p>S''ha detectat un intent d''accés fallit al vostre compte el {0} des de "
+"{1}. Si no heu estat vosaltres, contacteu amb l''administrador."
+
+#: eventRemoveTotpSubject
+msgid "Remove OTP"
+msgstr "Eliminació de l''OTP"
+
+#: eventRemoveTotpBody
+msgid ""
+"OTP was removed from your account on {0} from {1}. If this was not you, "
+"please contact an administrator."
+msgstr ""
+"S''ha eliminat l''OTP del vostre compte el {0} des de {1}. Si no heu estat "
+"vosaltres, contacteu amb l''administrador."
+
+#: eventRemoveTotpBodyHtml
+msgid ""
+"<p>OTP was removed from your account on {0} from {1}. If this was not you, "
+"please contact an administrator.</p>"
+msgstr ""
+"<p>S''ha eliminat l''OTP del vostre compte el {0} des de {1}. Si no heu "
+"estat vosaltres, contacteu amb l''administrador."
+
+#: eventUpdatePasswordSubject
+msgid "Update password"
+msgstr "Actualització de la contrasenya"
+
+#: eventUpdatePasswordBody
+msgid ""
+"Your password was changed on {0} from {1}. If this was not you, please "
+"contact an administrator."
+msgstr ""
+"S''ha actualitzat la vostra contrasenya el {0} des de {1}. Si no heu estat "
+"vosaltres, contacteu amb l''administrador."
+
+#: eventUpdatePasswordBodyHtml
+msgid ""
+"<p>Your password was changed on {0} from {1}. If this was not you, please "
+"contact an administrator.</p>"
+msgstr ""
+"<p>S''ha actualitzat la vostra contrasenya el {0} des de {1}. Si no heu "
+"estat vosaltres, contacteu amb l''administrador."
+
+#: eventUpdateTotpSubject
+msgid "Update OTP"
+msgstr "Actualització de l''OTP"
+
+#: eventUpdateTotpBody
+msgid ""
+"OTP was updated for your account on {0} from {1}. If this was not you, "
+"please contact an administrator."
+msgstr ""
+"S''ha actualitzat l''OTP al vostre compte el {0} des de {1}. Si no heu estat "
+"vosaltres, contacteu amb l''administrador."
+
+#: eventUpdateTotpBodyHtml
+msgid ""
+"<p>OTP was updated for your account on {0} from {1}. If this was not you, "
+"please contact an administrator.</p>"
+msgstr ""
+"<p>S''ha actualitzat l''OTP al vostre compte el {0} des de {1}. Si no heu "
+"estat vosaltres, contacteu amb l''administrador.</p>"
+
+#: requiredAction.CONFIGURE_TOTP
+msgid "Configure OTP"
+msgstr "Configura l''OTP"
+
+#: requiredAction.TERMS_AND_CONDITIONS
+msgid "Terms and Conditions"
+msgstr "Termes i condicions"
+
+#: requiredAction.UPDATE_PASSWORD
+msgid "Update Password"
+msgstr "Actualitza la contrasenya"
+
+#: requiredAction.UPDATE_PROFILE
+msgid "Update Profile"
+msgstr "Actualitza el perfil"
+
+#: requiredAction.VERIFY_EMAIL
+msgid "Verify Email"
+msgstr "Verifica el correu electrònic"
+
+#: requiredAction.CONFIGURE_RECOVERY_AUTHN_CODES
+msgid "Generate Recovery Codes"
+msgstr "Genera codis de recuperació"
+
+#.
+#. # units for link expiration timeout formatting
+#. # for languages which have more unit plural forms depending on the value (eg. Czech and other Slavic langs) you can override unit text for some other values like described in the Java choice format which is documented here. For Czech, it would be '{0,choice,0#minut|1#minuta|2#minuty|2<minut}'
+#. # https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/MessageFormat.html
+#. # https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/ChoiceFormat.html
+#: linkExpirationFormatter.timePeriodUnit.seconds
+msgid "{0,choice,0#seconds|1#second|1<seconds}"
+msgstr "{0,choice,0#segons|1#segon|1<segons}"
+
+#: linkExpirationFormatter.timePeriodUnit.minutes
+msgid "{0,choice,0#minutes|1#minute|1<minutes}"
+msgstr "{0,choice,0#minuts|1#minut|1<minuts}"
+
+#: linkExpirationFormatter.timePeriodUnit.hours
+msgid "{0,choice,0#hours|1#hour|1<hours}"
+msgstr "{0,choice,0#hores|1#hora|1<hores}"
+
+#: linkExpirationFormatter.timePeriodUnit.days
+msgid "{0,choice,0#days|1#day|1<days}"
+msgstr "{0,choice,0#dies|1#dia|1<dies}"
+
+#: emailVerificationBodyCode
+msgid ""
+"Please verify your email address by entering in the following code.\n"
+"\n"
+"{0}\n"
+"\n"
+"."
+msgstr ""
+"Verifiqueu el vostre correu electrònic introduint el codi següent.\n"
+"\n"
+"{0}\n"
+"\n"
+"."
+
+#: emailVerificationBodyCodeHtml
+msgid ""
+"<p>Please verify your email address by entering in the following "
+"code.</p><p><b>{0}</b></p>"
+msgstr ""
+"<p>Verifiqueu el vostre correu electrònic introduint el codi següent.</p><p> "
+"<b>{0}</b></p>"

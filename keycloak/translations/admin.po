@@ -1,0 +1,312 @@
+#. extracted from keycloak/themes/src/main/resources/theme/base/admin/messages/messages_en.properties, keycloak/themes/src/main/resources-community/theme/base/admin/messages/messages_ca.properties
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-21 21:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.10.0\n"
+
+#: invalidPasswordMinLengthMessage
+msgid "Invalid password: minimum length {0}."
+msgstr "La contrasenya no és vàlida: la longitud mínima és {0}."
+
+#: invalidPasswordMaxLengthMessage
+msgid "Invalid password: maximum length {0}."
+msgstr "La contrasenya no és vàlida: la longitud màxima és {0}."
+
+#: invalidPasswordMinLowerCaseCharsMessage
+msgid "Invalid password: must contain at least {0} lower case characters."
+msgstr ""
+"La contrasenya no és vàlida: ha de contenir almenys {0} lletres minúscules."
+
+#: invalidPasswordMinDigitsMessage
+msgid "Invalid password: must contain at least {0} numerical digits."
+msgstr ""
+"La contrasenya no és vàlida: ha de contenir almenys {0} caràcters numèrics."
+
+#: invalidPasswordMinUpperCaseCharsMessage
+msgid "Invalid password: must contain at least {0} upper case characters."
+msgstr ""
+"La contrasenya no és vàlida: ha de contenir almenys {0} lletres majúscules."
+
+#: invalidPasswordMinSpecialCharsMessage
+msgid "Invalid password: must contain at least {0} special characters."
+msgstr ""
+"La contrasenya no és vàlida: ha de contenir almenys {0} caràcters especials."
+
+#: invalidPasswordNotUsernameMessage
+msgid "Invalid password: must not be equal to the username."
+msgstr "La contrasenya no és vàlida: no pot ser igual al nom d''usuari."
+
+#: invalidPasswordNotEmailMessage
+msgid "Invalid password: must not be equal to the email."
+msgstr "La contrasenya no és vàlida: no pot ser igual al correu electrònic."
+
+#: invalidPasswordRegexPatternMessage
+msgid "Invalid password: fails to match regex pattern(s)."
+msgstr ""
+"La contrasenya no és vàlida: no coincideix amb el patró de l''expressió "
+"regular."
+
+#: invalidPasswordHistoryMessage
+msgid "Invalid password: must not be equal to any of last {0} passwords."
+msgstr ""
+"La contrasenya no és vàlida: no pot ser igual a les últimes {0} contrasenyes."
+
+#: invalidPasswordBlacklistedMessage
+msgid "Invalid password: password is blacklisted."
+msgstr "La contrasenya no és vàlida: està en una llista negra."
+
+#: invalidPasswordGenericMessage
+msgid "Invalid password: new password does not match password policies."
+msgstr ""
+"La contrasenya no és vàlida: la contrasenya nova no coincideix amb les "
+"polítiques de contrasenya."
+
+#: ldapErrorEditModeMandatory
+msgid "Edit Mode is mandatory"
+msgstr "El mode d''edició és requerit"
+
+#: ldapErrorInvalidCustomFilter
+msgid ""
+"Custom configured LDAP filter does not start with \"(\" or does not end with "
+"\")\"."
+msgstr ""
+"El filtre d''LDAP personalitzat configurat no comença per «(» o no acaba amb "
+"«)»."
+
+#: ldapErrorConnectionTimeoutNotNumber
+msgid "Connection Timeout must be a number"
+msgstr "El temps d''espera de la connexió ha de ser un número"
+
+#: ldapErrorReadTimeoutNotNumber
+msgid "Read Timeout must be a number"
+msgstr "El temps d''espera de la lectura ha de ser un número"
+
+#: ldapErrorMissingClientId
+msgid ""
+"Client ID needs to be provided in config when Realm Roles Mapping is not "
+"used."
+msgstr ""
+"S''ha de proveir un ID de client a la configuració quan el mapatge de rols "
+"del domini no està en ús."
+
+#: ldapErrorCantPreserveGroupInheritanceWithUIDMembershipType
+msgid ""
+"Not possible to preserve group inheritance and use UID membership type "
+"together."
+msgstr ""
+"No és possible preservar l''herència de grups i alhora utilitzar el tipus de "
+"pertinença UID."
+
+#: ldapErrorCantWriteOnlyForReadOnlyLdap
+msgid "Can not set write only when LDAP provider mode is not WRITABLE"
+msgstr ""
+"No es pot establir el mode només escriptura quan el mode del proveïdor LDAP "
+"no és «WRITABLE»."
+
+#: ldapErrorCantWriteOnlyAndReadOnly
+msgid "Can not set write-only and read-only together"
+msgstr "No es pot establir només escriptura i només lectura alhora"
+
+#: ldapErrorCantEnableStartTlsAndConnectionPooling
+msgid "Can not enable both StartTLS and connection pooling."
+msgstr ""
+"No es pot habilitar el StartTLS i la disponibilitat de connexions alhora."
+
+#: ldapErrorCantEnableUnsyncedAndImportOff
+msgid "Can not disable Importing users when LDAP provider mode is UNSYNCED"
+msgstr ""
+"No es pot inhabilitar la importació d''usuaris quan el mode del proveïdor "
+"LDAP és «UNSYNCED»."
+
+#: ldapErrorMissingGroupsPathGroup
+msgid ""
+"Groups path group does not exist - please create the group on specified path "
+"first"
+msgstr ""
+"El grup de camins de grup no existeix. Creeu el grup al camí especificat "
+"primer"
+
+#: ldapErrorValidatePasswordPolicyAvailableForWritableOnly
+msgid "Validate Password Policy is applicable only with WRITABLE edit mode"
+msgstr ""
+"La política de validació de contrasenyes només és aplicable amb el mode "
+"d''edició «WRITABLE»"
+
+#: clientRedirectURIsFragmentError
+msgid "Redirect URIs must not contain an URI fragment"
+msgstr "Els URI de redirecció no han de contenir un fragment d''URL"
+
+#: clientRootURLFragmentError
+msgid "Root URL must not contain an URL fragment"
+msgstr "L''URL arrel no ha de contenir un fragment d''URL"
+
+#: clientRootURLIllegalSchemeError
+msgid "Root URL uses an illegal scheme"
+msgstr "L''URL arrel utilitza un esquema il·legal"
+
+#: clientBaseURLIllegalSchemeError
+msgid "Base URL uses an illegal scheme"
+msgstr "L''URL base utilitza un esquema il·legal"
+
+#: backchannelLogoutUrlIllegalSchemeError
+msgid "Backchannel logout URL uses an illegal scheme"
+msgstr "L''URL de desconnexió del canal posterior utilitza un esquema il·legal"
+
+#: clientRedirectURIsIllegalSchemeError
+msgid "A redirect URI uses an illegal scheme"
+msgstr "Un URI de redirecció utilitza un esquema il·legal"
+
+#: clientBaseURLInvalid
+msgid "Base URL is not a valid URL"
+msgstr "L''URL base no és un URL vàlid"
+
+#: clientRootURLInvalid
+msgid "Root URL is not a valid URL"
+msgstr "L''URL arrel no és un URL vàlid"
+
+#: clientRedirectURIsInvalid
+msgid "A redirect URI is not a valid URI"
+msgstr "Un URI de redirecció no és un URI vàlid"
+
+#: backchannelLogoutUrlIsInvalid
+msgid "Backchannel logout URL is not a valid URL"
+msgstr "L''URL de desconnexió del canal posterior no és un URL vàlid"
+
+#: pairwiseMalformedClientRedirectURI
+msgid "Client contained an invalid redirect URI."
+msgstr "El client conté un URI de redirecció no vàlid."
+
+#: pairwiseClientRedirectURIsMissingHost
+msgid "Client redirect URIs must contain a valid host component."
+msgstr ""
+"Els URI de redirecció de client ha de contenir un component de servidor "
+"vàlid."
+
+#: pairwiseClientRedirectURIsMultipleHosts
+msgid ""
+"Without a configured Sector Identifier URI, client redirect URIs must not "
+"contain multiple host components."
+msgstr ""
+"Sense un URI d''identificador de sector, els URI de redirecció de client no "
+"poden contenir múltiples components de servidor."
+
+#: pairwiseMalformedSectorIdentifierURI
+msgid "Malformed Sector Identifier URI."
+msgstr "L''URI d''identificador de sector està mal formatat."
+
+#: pairwiseFailedToGetRedirectURIs
+msgid "Failed to get redirect URIs from the Sector Identifier URI."
+msgstr ""
+"No s''ha pogut obtenir cap URI de redirecció des de l''URI d''identificador "
+"de sector."
+
+#: pairwiseRedirectURIsMismatch
+msgid ""
+"Client redirect URIs does not match redirect URIs fetched from the Sector "
+"Identifier URI."
+msgstr ""
+"Els URI de redirecció de client no concorden amb els URI de redirecció "
+"obtinguts des de l''URI d''identificador de sector."
+
+#: duplicatedJwksSettings
+msgid ""
+"The \"Use JWKS\" switch and the switch \"Use JWKS URL\" cannot be ON at the "
+"same time."
+msgstr ""
+"Els commutadors «Utilitza JWKS» i «Utilitza un URL JWKS» no poden estar "
+"habilitats al mateix temps."
+
+#: error-invalid-value
+msgctxt "error-invalid-value"
+msgid "Invalid value."
+msgstr "El valor no és vàlid."
+
+#: error-invalid-blank
+msgctxt "error-invalid-blank"
+msgid "Please specify value."
+msgstr "Especifiqueu un valor."
+
+#: error-empty
+msgctxt "error-empty"
+msgid "Please specify value."
+msgstr "Especifiqueu un valor."
+
+#: error-invalid-length
+msgid "Attribute {0} must have a length between {1} and {2}."
+msgstr "L''atribut {0} ha de tindre una llargària d''entre {1} i {2}."
+
+#: error-invalid-length-too-short
+msgid "Attribute {0} must have minimal length of {1}."
+msgstr "L''atribut {0} ha de tindre una llargària mínima de {1}."
+
+#: error-invalid-length-too-long
+msgid "Attribute {0} must have maximal length of {2}."
+msgstr "L''atribut {0} ha de tindre una llargària màxima de {2}."
+
+#: error-invalid-email
+msgid "Invalid email address."
+msgstr "L''adreça de correu electrònic no és vàlida."
+
+#: error-invalid-number
+msgid "Invalid number."
+msgstr "El nombre no és vàlid."
+
+#: error-number-out-of-range
+msgid "Attribute {0} must be a number between {1} and {2}."
+msgstr "L''atribut {0} ha de ser un número entre {1} i {2}."
+
+#: error-number-out-of-range-too-small
+msgid "Attribute {0} must have minimal value of {1}."
+msgstr "L''atribut {0} ha de tindre valor mínim de {1}."
+
+#: error-number-out-of-range-too-big
+msgid "Attribute {0} must have maximal value of {2}."
+msgstr "L''atribut {0} ha de tindre valor màxim de {2}."
+
+#: error-pattern-no-match
+msgctxt "error-pattern-no-match"
+msgid "Invalid value."
+msgstr "El valor no és vàlid."
+
+#: error-invalid-uri
+msgid "Invalid URL."
+msgstr "L''URL no és vàlid."
+
+#: error-invalid-uri-scheme
+msgid "Invalid URL scheme."
+msgstr "L''esquema d''URL no és vàlid."
+
+#: error-invalid-uri-fragment
+msgid "Invalid URL fragment."
+msgstr "El fragment d''URL no és vàlid."
+
+#: error-user-attribute-required
+msgid "Please specify attribute {0}."
+msgstr "Especifiqueu l''atribut {0}."
+
+#: error-invalid-date
+msgid "Attribute {0} is invalid date."
+msgstr "L''atribut {0} és una data invàlida."
+
+#: error-user-attribute-read-only
+msgid "Attribute {0} is read only."
+msgstr "L''atribut {0} és només de lectura."
+
+#: error-username-invalid-character
+msgctxt "error-username-invalid-character"
+msgid "{0} contains invalid character."
+msgstr "{0} conté un caràcter no vàlid."
+
+#: error-person-name-invalid-character
+msgctxt "error-person-name-invalid-character"
+msgid "{0} contains invalid character."
+msgstr "{0} conté un caràcter no vàlid."

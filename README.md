@@ -31,6 +31,7 @@ brew install bash csvkit translate-toolkit dos2unix unzip
 * FreeTube: https://docs.freetubeapp.io/community/translations/
 * Haiku: https://i18n.haiku-os.org/
 * Home Assistant: https://developers.home-assistant.io/docs/translations/
+* Keycloak: https://github.com/keycloak/keycloak
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
 * RawTherapee: https://www.rawtherapee.com/
 * Stooa: https://github.com/Stooa/Stooa/tree/main

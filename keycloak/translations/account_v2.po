@@ -1,0 +1,681 @@
+#. extracted from keycloak/themes/src/main/resources/theme/keycloak.v2/account/messages/messages_en.properties, keycloak/themes/src/main/resources-community/theme/keycloak.v2/account/messages/messages_ca.properties
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-21 21:16+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.10.0\n"
+
+#. # Put new messages for Account Console Here
+#. # Feel free to use any existing messages from the base theme
+#: pageNotFound
+msgid "Page not found"
+msgstr "No s''ha trobat la pàgina"
+
+#: forbidden
+msgid "Forbidden"
+msgstr "Prohibit"
+
+#: needAccessRights
+msgid ""
+"You do not have access rights to this request.  Contact your administrator."
+msgstr ""
+"No teniu permisos d''accés a aquesta petició. Contacteu amb l''administrador."
+
+#: invalidRoute
+msgid "{0} is not a valid route."
+msgstr "{0} no és una ruta vàlida."
+
+#: actionRequiresIDP
+msgid "This action requires redirection to your identity provider."
+msgstr ""
+"Aquesta acció requereix una redirecció al vostre proveïdor d''identitat."
+
+#: actionNotDefined
+msgid "No action defined"
+msgstr "No s''ha definit cap acció"
+
+#: continue
+msgid "Continue"
+msgstr "Continua"
+
+#: refreshPage
+msgid "Refresh the page"
+msgstr "Refresca la pàgina"
+
+#: refresh
+msgid "Refresh"
+msgstr "Refresca"
+
+#: done
+msgid "Done"
+msgstr "Fet"
+
+#: cancel
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: remove
+msgid "Remove"
+msgstr "Elimina"
+
+#: update
+msgid "Update"
+msgstr "Actualitza"
+
+#: loadingMessage
+msgid "Account Console loading ..."
+msgstr "S''està carregant la consola del compte…"
+
+#: unknownUser
+msgid "Anonymous"
+msgstr "Anònim"
+
+#: fullName
+msgid "{0} {1}"
+msgstr "{0} {1}"
+
+#: allFieldsRequired
+msgid "All fields are required."
+msgstr "Tots els camps són obligatoris."
+
+#: selectLocale
+msgid "Select a locale"
+msgstr "Seleccioneu una configuració regional"
+
+#: doSignIn
+msgid "Sign in"
+msgstr "Inicia la sessió"
+
+#: backToAdminConsole
+msgid "Back to admin console"
+msgstr "Torna a la consola d''administració"
+
+#: accountManagementWelcomeMessage
+msgid "Welcome to Keycloak account management"
+msgstr "Us donem la benvinguda al gestor de comptes del Keycloak"
+
+#.
+#. # Personal info page
+#: personalInfoHtmlTitle
+msgid "Personal info"
+msgstr "Informació personal"
+
+#.
+#. # Device activity page
+#: signedInDevices
+msgid "Signed in devices"
+msgstr "Dispositius identificats"
+
+#: signedInDevicesExplanation
+msgid "Sign out of any unfamiliar devices."
+msgstr "Desconnecteu qualsevol dispositiu que no us siga familiar."
+
+#: signOutWarning
+msgid "Sign out the session?"
+msgstr "Voleu sortir de la sessió?"
+
+#: signOutAllDevices
+msgid "Sign out all devices"
+msgstr "Desconnecta tots els dispositius"
+
+#: signOutAllDevicesWarning
+msgid ""
+"This action will sign out all the devices that have signed in to your "
+"account, including the current device you are using."
+msgstr ""
+"Aquesta acció desconnectarà tots els dispositius que han entrat al vostre "
+"compte, inclòs el dispositiu que esteu utilitzant ara mateix."
+
+#: recentlyUsedDevices
+msgid "Recently used devices"
+msgstr "Dispositius utilitzats recentment"
+
+#: recentlyUsedDevicesExplanation
+msgid "Devices used in the last month, but not currently logged in."
+msgstr ""
+"Dispositius utilitzats durant l''últim mes, però no identificats ara mateix."
+
+#: lastAccess
+msgid "Last access"
+msgstr "Últim accés"
+
+#: unknownOperatingSystem
+msgid "Unknown operating system"
+msgstr "Sistema operatiu desconegut"
+
+#: currentDevice
+msgid "Current device"
+msgstr "Dispositiu actual"
+
+#: currentSession
+msgid "Current session"
+msgstr "Sessió actual"
+
+#: signedOutSession
+msgid "Signed out {0}/{1}"
+msgstr "Desconnectat {0}/{1}"
+
+#: lastAccessedOn
+msgid "Last accessed"
+msgstr "Últim accés"
+
+#: clients
+msgid "Clients"
+msgstr "Clients"
+
+#: started
+msgid "Started"
+msgstr "Iniciat"
+
+#: expires
+msgid "Expires"
+msgstr "Caduca"
+
+#: ipAddress
+msgid "IP address"
+msgstr "Adreça IP"
+
+#.
+#. # Resources page
+#: resourceName
+msgid "Resource name"
+msgstr "Nom del recurs"
+
+#: nextPage
+msgid "Next"
+msgstr "Següent"
+
+#: previousPage
+msgid "Previous"
+msgstr "Anterior"
+
+#: firstPage
+msgid "First page"
+msgstr "Primera pàgina"
+
+#: resourceSharedWith
+msgid "Resource is shared with {0}"
+msgstr "El recurs està compartit amb {0}"
+
+#: and
+msgid " and {0} other users"
+msgstr "i altres {0} usuaris"
+
+#: add
+msgid "Add"
+msgstr "Afegeix"
+
+#: share
+msgid "Share"
+msgstr "Comparteix"
+
+#: shareWith
+msgid "Share with "
+msgstr "Comparteix amb"
+
+#: edit
+msgid "Edit"
+msgstr "Edita"
+
+#: close
+msgid "Close"
+msgstr "Tanca"
+
+#: unShare
+msgid "Unshare all"
+msgstr "Deixa de compartir-ho tot"
+
+#: shareSuccess
+msgid "Resource successfully shared."
+msgstr "S''ha compartit el recurs correctament."
+
+#: unShareSuccess
+msgid "Resource successfully un-shared."
+msgstr "S''ha deixat de compartir el recurs correctament."
+
+#: updateSuccess
+msgid "Resource successfully updated."
+msgstr "S''ha actualitzat el recurs correctament."
+
+#: resourceAlreadyShared
+msgid "Resource is already shared with this user."
+msgstr "El recurs ja està compartit amb aquest usuari."
+
+#: resourceNotShared
+msgid "This resource is not shared."
+msgstr "Aquest recurs no està compartit."
+
+#: permissionRequests
+msgid "Permission requests"
+msgstr "Peticions de permís"
+
+#: permissions
+msgid "Permissions"
+msgstr "Permisos"
+
+#: selectPermissions
+msgid "Select the permissions"
+msgstr "Seleccioneu els permisos"
+
+#: unShareAllConfirm
+msgid "Are you sure you want to completely remove all shares?"
+msgstr "Esteu segur de voler eliminar totes les comparticions completament?"
+
+#: userNotFound
+msgid "No user found with name or email {0}"
+msgstr "No s''ha trobat cap usuari amb el nom o correu electrònic {0}"
+
+#.
+#. # Linked accounts page
+#: linkedAccountsTitle
+msgid "Linked accounts"
+msgstr "Comptes enllaçats"
+
+#: linkedAccountsIntroMessage
+msgid "Manage logins through third-party accounts."
+msgstr "Gestiona les entrades a través de comptes de tercers."
+
+#: linkedLoginProviders
+msgid "Linked login providers"
+msgstr "Proveïdors d''entrada enllaçats"
+
+#: unlinkedLoginProviders
+msgid "Unlinked login providers"
+msgstr "Proveïdors d''entrada no enllaçats"
+
+#: linkedEmpty
+msgid "No linked providers"
+msgstr "No hi ha cap proveïdor enllaçat"
+
+#: unlinkedEmpty
+msgid "No unlinked providers"
+msgstr "No hi ha cap proveïdor no enllaçat"
+
+#: socialLogin
+msgid "Social login"
+msgstr "Identificació social"
+
+#: systemDefined
+msgid "System defined"
+msgstr "Definit pel sistema"
+
+#: link
+msgid "Link account"
+msgstr "Enllaça el compte"
+
+#: unLink
+msgid "Unlink account"
+msgstr "Desenllaça el compte"
+
+#.
+#. # Signing in page
+#: signingIn
+msgid "Signing in"
+msgstr "Identificació"
+
+#: signingInSubMessage
+msgid "Configure ways to sign in."
+msgstr "Configureu maneres d''identificar-vos."
+
+#: credentialCreatedAt
+msgid "Created"
+msgstr "Creada"
+
+#: successRemovedMessage
+msgid "{0} was removed."
+msgstr "{0} s''ha eliminat."
+
+#: stopUsingCred
+msgid "Stop using {0}?"
+msgstr "Voleu deixar d''utilitzar {0}?"
+
+#: changePassword
+msgid "Change password"
+msgstr "Canvia la contrasenya"
+
+#: removeCred
+msgid "Remove {0}"
+msgstr "Elimina {0}"
+
+#: setUpNew
+msgid "Set up {0}"
+msgstr "Configura {0}"
+
+#: removeCredAriaLabel
+msgid "Remove credential"
+msgstr "Elimina la credencial"
+
+#: updateCredAriaLabel
+msgid "Update credential"
+msgstr "Actualitza la credencial"
+
+#: notSetUp
+msgid "{0} is not set up."
+msgstr "{0} no està configurat."
+
+#: two-factor
+msgid "Two-factor authentication"
+msgstr "Autenticació de doble factor"
+
+#: passwordless
+msgid "Passwordless"
+msgstr "Sense contrasenya"
+
+#: unknown
+msgid "Unknown"
+msgstr "Desconegut"
+
+#: password-display-name
+msgid "Password"
+msgstr "Contrasenya"
+
+#: password-help-text
+msgid "Sign in by entering your password."
+msgstr "Entreu introduint la vostra contrasenya."
+
+#: password
+msgid "My password"
+msgstr "La meva contrasenya"
+
+#: otp-display-name
+msgid "authenticator application"
+msgstr "aplicació d''autenticació"
+
+#: otp-help-text
+msgid "Enter a verification code from authenticator application."
+msgstr "Introduïu el codi de verificació de l''aplicació d''autenticació."
+
+#: recovery-authn-code
+msgid "My recovery authentication codes"
+msgstr "Els meus codis d''autenticació de recuperació"
+
+#: recovery-authn-codes-display-name
+msgid "Recovery authentication codes"
+msgstr "Codis d''autenticació de recuperació"
+
+#: recovery-authn-codes-help-text
+msgid ""
+"These codes can be used to regain your access in case your other 2FA means "
+"are not available."
+msgstr ""
+"Aquests codis es poden utilitzar per a recuperar l''accés en cas que els "
+"altres mètodes de 2FA no siguen disponibles."
+
+#: recovery-codes-number-used
+msgid "{0} recovery codes used"
+msgstr "{0} codis de recuperació utilitzats"
+
+#: recovery-codes-number-remaining
+msgid "{0} recovery codes remaining"
+msgstr "{0} codis de recuperació disponibles"
+
+#: recovery-codes-generate-new-codes
+msgid "Generate new codes to ensure access to your account"
+msgstr "Genereu codis nous per a garantir l''accés al vostre compte"
+
+#: webauthn-display-name
+msgctxt "webauthn-display-name"
+msgid "Security key"
+msgstr "Clau de seguretat"
+
+#: webauthn-help-text
+msgid "Use your security key to sign in."
+msgstr "Utilitzeu la vostra clau de seguretat per a entrar."
+
+#: webauthn-passwordless-display-name
+msgctxt "webauthn-passwordless-display-name"
+msgid "Security key"
+msgstr "Clau de seguretat"
+
+#: webauthn-passwordless-help-text
+msgid "Use your security key for passwordless sign in."
+msgstr "Utilitzeu la vostra clau de seguretat per a entrar sense contrasenya."
+
+#: basic-authentication
+msgid "Basic authentication"
+msgstr "Autenticació bàsica"
+
+#: invalidRequestMessage
+msgid "Invalid request"
+msgstr "Petició no vàlida"
+
+#.
+#. # Applications page
+#: applicationsPageTitle
+msgid "Applications"
+msgstr "Aplicacions"
+
+#: applicationsPageSubTitle
+msgid "Manage your application permissions"
+msgstr "Gestioneu els permisos de les aplicacions"
+
+#: internalApp
+msgid "Internal"
+msgstr "Internes"
+
+#: thirdPartyApp
+msgid "Third-party"
+msgstr "De tercers"
+
+#: offlineAccess
+msgid "Offline access"
+msgstr "Accés fora de línia"
+
+#: inUse
+msgid "In use"
+msgstr "En ús"
+
+#: notInUse
+msgid "Not in use"
+msgstr "No en ús"
+
+#: applicationDetails
+msgid "Application details"
+msgstr "Detalls de l''aplicació"
+
+#: client
+msgid "Client"
+msgstr "Client"
+
+#: description
+msgid "Description"
+msgstr "Descripció"
+
+#: baseUrl
+msgid "URL"
+msgstr "URL"
+
+#: accessGrantedOn
+msgid "Access granted on"
+msgstr "Accés concedit el"
+
+#: removeButton
+msgctxt "removeButton"
+msgid "Remove access"
+msgstr "Elimina l''accés"
+
+#: removeModalTitle
+msgctxt "removeModalTitle"
+msgid "Remove access"
+msgstr "Elimina l''accés"
+
+#: removeModalMessage
+msgid ""
+"This will remove the currently granted access permission for {0}. You will "
+"need to grant access again if you want to use this app."
+msgstr ""
+"Això eliminarà els permisos d''accés actualment concedits a {0}. Haureu de "
+"tornar a concedir accés si voleu utilitzar aquesta aplicació."
+
+#: confirmButton
+msgid "Confirm"
+msgstr "Confirma"
+
+#: infoMessage
+msgid ""
+"By clicking 'Remove Access', you will remove granted permissions of this "
+"application. This application will no longer use your information."
+msgstr ""
+"Fent clic en «Elimina l''accés», eliminareu els permisos concedits a aquesta "
+"aplicació. Aquesta aplicació ja no podrà utilitzar la vostra informació."
+
+#: termsOfService
+msgid "Terms of service"
+msgstr "Condicions del servei"
+
+#: policy
+msgid "Privacy policy"
+msgstr "Política de privadesa"
+
+#: applicationType
+msgid "Application type"
+msgstr "Tipus d''aplicació"
+
+#: status
+msgid "Status"
+msgstr "Estat"
+
+#: logo
+msgid "Logo"
+msgstr "Logotip"
+
+#.
+#. #Delete account page
+#: doDelete
+msgid "Delete"
+msgstr "Elimina"
+
+#: deleteAccountSummary
+msgid ""
+"Deleting your account will erase all your data and sign you out immediately."
+msgstr ""
+"Eliminar el vostre compte esborrarà totes les vostres dades i vos "
+"desconnectarà immediatament."
+
+#: deleteAccount
+msgid "Delete account"
+msgstr "Elimina el compte"
+
+#: deleteAccountWarning
+msgid ""
+"This is irreversible. All your data will be permanently destroyed, and "
+"irretrievable."
+msgstr ""
+"Això és irreversible. Totes les vostres dades es destruiran permanentment i "
+"no seran accessibles."
+
+#: error-invalid-value
+msgid "''{0}'' has invalid value."
+msgstr "«{0}» té un valor no vàlid."
+
+#: error-invalid-blank
+msgctxt "error-invalid-blank"
+msgid "Please specify value of ''{0}''."
+msgstr "Especifiqueu el valor de «{0}»."
+
+#: error-empty
+msgctxt "error-empty"
+msgid "Please specify value of ''{0}''."
+msgstr "Especifiqueu el valor de «{0}»."
+
+#: error-invalid-length
+msgid "''{0}'' must have a length between {1} and {2}."
+msgstr "«{0}» ha de tindre una llargària d''entre {1} i {2}."
+
+#: error-invalid-length-too-short
+msgid "''{0}'' must have minimal length of {1}."
+msgstr "«{0}» ha de tindre una llargària mínima de {1}."
+
+#: error-invalid-length-too-long
+msgid "''{0}'' must have maximal length of {2}."
+msgstr "«{0}» ha de tindre una llargària màxima de {2}."
+
+#: error-invalid-email
+msgid "Invalid email address."
+msgstr "L''adreça de correu electrònic no és vàlida."
+
+#: error-invalid-number
+msgid "''{0}'' is invalid number."
+msgstr "«{0}» és un número no vàlid."
+
+#: error-number-out-of-range
+msgid "''{0}'' must be a number between {1} and {2}."
+msgstr "«{0}» ha de ser un número entre {1} i {2}."
+
+#: error-number-out-of-range-too-small
+msgid "''{0}'' must have minimal value of {1}."
+msgstr "«{0}» ha de tindre valor mínim de {1}."
+
+#: error-number-out-of-range-too-big
+msgid "''{0}'' must have maximal value of {2}."
+msgstr "«{0}» ha de tindre valor màxim de {2}."
+
+#: error-pattern-no-match
+msgid "''{0}'' doesn''t match required format."
+msgstr "«{0}» no concorda amb el format requerit."
+
+#: error-invalid-uri
+msgid "''{0}'' is invalid URL."
+msgstr "«{0}» és un URL no vàlid."
+
+#: error-invalid-uri-scheme
+msgid "''{0}'' has invalid URL scheme."
+msgstr "«{0}» té un esquema d''URL no vàlid."
+
+#: error-invalid-uri-fragment
+msgid "''{0}'' is invalid URL fragment."
+msgstr "«{0}» és un fragment d''URL no vàlid."
+
+#: error-user-attribute-required
+msgid "Please specify ''{0}''."
+msgstr "Especifiqueu «{0}»."
+
+#: error-invalid-date
+msgid "''{0}'' is invalid date."
+msgstr "«{0}» és una data no vàlida."
+
+#: error-username-invalid-character
+msgid "''{0}'' contains invalid character."
+msgstr "«{0}» conté un caràcter no vàlid."
+
+#: error-person-name-invalid-character
+msgid "'{0}' contains invalid character."
+msgstr "«{0}» conté un caràcter no vàlid."
+
+#: updateEmail
+msgid "Update email"
+msgstr "Actualitza el correu electrònic"
+
+#.
+#. #groups
+#: groupLabel
+msgid "Groups"
+msgstr "Grups"
+
+#: groupDescriptionLabel
+msgid "View groups that you are associated with"
+msgstr "Visualitzeu els grups als quals esteu associat"
+
+#: path
+msgid "Path"
+msgstr "Camí"
+
+#: directMembership
+msgid "Direct membership"
+msgstr "Pertinença directa"
+
+#: noGroups
+msgid "No groups"
+msgstr "Cap grup"
+
+#: noGroupsText
+msgid "You are not joined in any group"
+msgstr "No us heu unit a cap grup"
