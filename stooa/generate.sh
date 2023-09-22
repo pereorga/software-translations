@@ -2,15 +2,16 @@
 
 cd "$(dirname "$0")"
 
-rm -rf "Stooa/" "po/"
-mkdir po
-git clone --depth 1 "https://github.com/Stooa/Stooa.git"
+rm -rf tmp/ translations/
+mkdir tmp translations
 
-files=($(cd Stooa/frontend/locales/ca/ && ls *.json))
+git clone --depth 1 "https://github.com/Stooa/Stooa.git" tmp/Stooa
+
+files=($(cd tmp/Stooa/frontend/locales/ca/ && ls *.json))
 for file in "${files[@]}"; do
-    json2po --template="Stooa/frontend/locales/en/$file" "Stooa/frontend/locales/ca/$file" > "po/$file.po"
+    json2po --template="tmp/Stooa/frontend/locales/en/$file" "tmp/Stooa/frontend/locales/ca/$file" > "translations/$file.po"
 done
 
-curl https://raw.githubusercontent.com/Stooa/Stooa/main/backend/translations/messages.en.yaml > messages.en.yaml
-curl https://raw.githubusercontent.com/Stooa/Stooa/main/backend/translations/messages.ca.yaml > messages.ca.yaml
-yaml2po messages.ca.yaml --template=messages.en.yaml > po/backend.po
+curl https://raw.githubusercontent.com/Stooa/Stooa/main/backend/translations/messages.en.yaml > tmp/messages.en.yaml
+curl https://raw.githubusercontent.com/Stooa/Stooa/main/backend/translations/messages.ca.yaml > tmp/messages.ca.yaml
+yaml2po tmp/messages.ca.yaml --template=tmp/messages.en.yaml > translations/backend.po

@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env bash
+
 cd "$(dirname "$0")"
 
 curl "https://winscp.net/translations/EN.ini" | dos2unix > EN.ini
