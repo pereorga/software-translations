@@ -18,6 +18,11 @@
             }
         },
         "start": {
+            "fields": {
+                "seconds": {
+                    "name": "Segons"
+                }
+            },
             "name": "Inicia"
         },
         "start_log_object_sources": {
@@ -27,6 +32,13 @@
                     "description": "Nombre m\u00e0xim d'objectes a registrar.",
                     "name": "Objectes m\u00e0xims"
                 },
+                "scan_interval": {
+                    "name": "Interval d'escaneig"
+                }
+            }
+        },
+        "start_log_objects": {
+            "fields": {
                 "scan_interval": {
                     "name": "Interval d'escaneig"
                 }

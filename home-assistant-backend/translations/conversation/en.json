@@ -17,6 +17,20 @@
                 }
             },
             "name": "Process"
+        },
+        "reload": {
+            "description": "Reloads the intent configuration.",
+            "fields": {
+                "agent_id": {
+                    "description": "Conversation agent to reload.",
+                    "name": "Agent"
+                },
+                "language": {
+                    "description": "Language to clear cached intents for. Defaults to server language.",
+                    "name": "Language"
+                }
+            },
+            "name": "Reload"
         }
     },
     "title": "Conversation"

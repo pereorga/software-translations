@@ -3,7 +3,8 @@
         "abort": {
             "not_zha_device": "Aquest no \u00e9s un dispositiu zha",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3.",
-            "usb_probe_failed": "No s'ha pogut provar el dispositiu USB"
+            "usb_probe_failed": "No s'ha pogut provar el dispositiu USB",
+            "wrong_firmware_installed": "El teu dispositiu est\u00e0 executant un microprogramari incorrecte i no es pot utilitzar amb ZHA fins que no s'instal\u00b7li el microprogramari adient. [S'ha creat una reparaci\u00f3]({repair_url}) amb m\u00e9s informaci\u00f3 i instruccions sobre com solucionar-ho."
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -156,11 +157,22 @@
             "remote_button_triple_press": "\"{subtype}\" clicat tres vegades"
         }
     },
+    "issues": {
+        "wrong_silabs_firmware_installed_nabucasa": {
+            "description": "La teva r\u00e0dio Zigbee utilitzava multiprotocol anteriorment (Zigbee i Thread) i encara t\u00e9 instal\u00b7lat el microprogramari multiprotocol: ({firmware_type}).\n Opci\u00f3 1: per utilitzar la r\u00e0dio exclusivament amb ZHA, has d'instal\u00b7lar el microprogramari Zigbee:\n - Obre la documentaci\u00f3 seleccionant l'enlla\u00e7 a \"M\u00e9s informaci\u00f3\".\n - Segueix les instruccions descrites per carregar el microprogramari Zigbee.\n Opci\u00f3 2: per utilitzar la r\u00e0dio amb multiprotocol, segueix aquests passos:\n - V\u00e9s a Configuraci\u00f3 > Sistema > Maquinari, selecciona el dispositiu i selecciona Configura.\n - Selecciona l'opci\u00f3 Configura el suport de r\u00e0dio multiprotocol IEEE 802.15.4.\n - Marca la casella de selecci\u00f3 i selecciona Envia.\n - Un cop instal\u00b7lat, configura la integraci\u00f3 ZHA descoberta.",
+            "title": "S'ha detectat una r\u00e0dio Zigbee amb un microprogramari multiprotocol"
+        },
+        "wrong_silabs_firmware_installed_other": {
+            "description": "La teva r\u00e0dio Zigbee utilitzava multiprotocol anteriorment (Zigbee i Thread) i encara t\u00e9 instal\u00b7lat el microprogramari multiprotocol: ({firmware_type}). Per utilitzar la r\u00e0dio exclusivament amb ZHA, has d'instal\u00b7lar el microprogramari Zigbee. Segueix les instruccions del fabricant de la teva r\u00e0dio Zigbee per saber com fer-ho.",
+            "title": "S'ha detectat una r\u00e0dio Zigbee amb un microprogramari multiprotocol"
+        }
+    },
     "options": {
         "abort": {
             "not_zha_device": "Aquest no \u00e9s un dispositiu zha",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3.",
-            "usb_probe_failed": "No s'ha pogut provar el dispositiu USB"
+            "usb_probe_failed": "No s'ha pogut provar el dispositiu USB",
+            "wrong_firmware_installed": "El teu dispositiu est\u00e0 executant un microprogramari incorrecte i no es pot utilitzar amb ZHA fins que no s'instal\u00b7li el microprogramari adient. [S'ha creat una reparaci\u00f3]({repair_url}) amb m\u00e9s informaci\u00f3 i instruccions sobre com solucionar-ho."
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",

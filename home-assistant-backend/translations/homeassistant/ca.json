@@ -56,6 +56,10 @@
         },
         "set_location": {
             "fields": {
+                "elevation": {
+                    "description": "Altitud de la seva ubicaci\u00f3.",
+                    "name": "Altitud"
+                },
                 "latitude": {
                     "name": "Latitud"
                 },
@@ -66,6 +70,18 @@
         },
         "stop": {
             "name": "Atura"
+        },
+        "toggle": {
+            "description": "Servei gen\u00e8ric per commutar (ON/OFF) dispositius de qualsevol domini.",
+            "name": "Commutaci\u00f3 gen\u00e8rica"
+        },
+        "turn_off": {
+            "description": "Servei gen\u00e8ric per desactivar/apagar dispositius de qualsevol domini.",
+            "name": "Desactivaci\u00f3 gen\u00e8rica"
+        },
+        "turn_on": {
+            "description": "Servei gen\u00e8ric per activar/engegar dispositius de qualsevol domini.",
+            "name": "Activaci\u00f3 gen\u00e8rica"
         }
     },
     "system_health": {

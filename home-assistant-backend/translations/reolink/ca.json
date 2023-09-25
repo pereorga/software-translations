@@ -191,6 +191,7 @@
                     "auto": "Autom\u00e0tic",
                     "autoadaptive": "Adaptatiu autom\u00e0tic",
                     "off": "OFF",
+                    "onatnight": "Enc\u00e9n a la nit",
                     "schedule": "Horari"
                 }
             },
@@ -204,6 +205,13 @@
             }
         },
         "sensor": {
+            "event_connection": {
+                "state": {
+                    "fast_poll": "Sondeig r\u00e0pid",
+                    "onvif_long_poll": "Sondeig ONVIF llarg",
+                    "onvif_push": "Enviament ('push') ONVIF"
+                }
+            },
             "wifi_signal": {
                 "name": "Senyal Wi-Fi"
             }

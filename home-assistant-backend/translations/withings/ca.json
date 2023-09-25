@@ -25,7 +25,7 @@
                 "title": "Perfil d'usuari."
             },
             "reauth_confirm": {
-                "description": "El perfil \"{profile}\" s'ha de tornar a autenticar per poder continuar rebent dades de Withings.",
+                "description": "La integraci\u00f3 Withings ha de tornar a autenticar el teu compte",
                 "title": "Reautenticar la integraci\u00f3"
             }
         }
@@ -126,6 +126,15 @@
             },
             "wakeup_time": {
                 "name": "Hora despertat"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "use_webhook": "Utilitza 'webhooks'"
+                }
             }
         }
     }

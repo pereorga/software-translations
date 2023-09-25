@@ -29,5 +29,54 @@
                 }
             }
         }
+    },
+    "entity": {
+        "sensor": {
+            "active_connection": {
+                "name": "Active connection",
+                "state": {
+                    "dsl": "xDSL",
+                    "fiber": "Fiber",
+                    "internet_key": "Internet key",
+                    "unknown": "Unknown"
+                }
+            },
+            "down_stream": {
+                "name": "WAN download rate"
+            },
+            "external_ip_key": {
+                "name": "WAN internet key address"
+            },
+            "external_ipv4": {
+                "name": "WAN IPv4 address"
+            },
+            "external_ipv6": {
+                "name": "WAN IPv6 address"
+            },
+            "fw_version": {
+                "name": "Firmware version"
+            },
+            "phone_num1": {
+                "name": "Phone number (1)"
+            },
+            "phone_num2": {
+                "name": "Phone number (2)"
+            },
+            "sys_cpu_usage": {
+                "name": "CPU usage"
+            },
+            "sys_memory_usage": {
+                "name": "Memory usage"
+            },
+            "sys_reboot_cause": {
+                "name": "Reboot cause"
+            },
+            "sys_uptime": {
+                "name": "Uptime"
+            },
+            "up_stream": {
+                "name": "WAN upload rate"
+            }
+        }
     }
 }

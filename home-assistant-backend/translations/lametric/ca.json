@@ -79,26 +79,128 @@
             }
         }
     },
-    "services": {
-        "chart": {
-            "fields": {
-                "cycles": {
-                    "description": "Nombre de vegades a mostrar el missatge. Si es configura a 0, el missatge es mostrar\u00e0 fins que s'elimini."
-                },
-                "device_id": {
-                    "name": "Dispositiu"
-                }
+    "selector": {
+        "icon_type": {
+            "options": {
+                "alert": "Alerta",
+                "info": "Informaci\u00f3",
+                "none": "Cap"
             }
         },
-        "message": {
+        "priority": {
+            "options": {
+                "critical": "Cr\u00edtic",
+                "info": "Informaci\u00f3",
+                "warning": "Advert\u00e8ncia"
+            }
+        },
+        "sound": {
+            "options": {
+                "alarm1": "Alarma 1",
+                "alarm10": "Alarma 10",
+                "alarm11": "Alarma 11",
+                "alarm12": "Alarma 12",
+                "alarm13": "Alarma 13",
+                "alarm2": "Alarma 2",
+                "alarm3": "Alarma 3",
+                "alarm4": "Alarma 4",
+                "alarm5": "Alarma 5",
+                "alarm6": "Alarma 6",
+                "alarm7": "Alarma 7",
+                "alarm8": "Alarma 8",
+                "alarm9": "Alarma 9",
+                "bicycle": "Bicicleta",
+                "car": "Cotxe",
+                "cash": "Diners",
+                "cat": "Gat",
+                "dog": "Gos 1",
+                "dog2": "Gos 2",
+                "energy": "Energia",
+                "notification": "Notificaci\u00f3 1",
+                "notification2": "Notificaci\u00f3 2",
+                "notification3": "Notificaci\u00f3 3",
+                "notification4": "Notificaci\u00f3 4",
+                "open_door": "Obre porta",
+                "positive1": "Positiu 1",
+                "positive2": "Positiu 2",
+                "positive3": "Positiu 3",
+                "positive4": "Positiu 4",
+                "positive5": "Positiu 5",
+                "positive6": "Positiu 6",
+                "statistic": "Estad\u00edstica",
+                "thunder": "Tro",
+                "water1": "Aigua 1",
+                "water2": "Aigua 2",
+                "win": "Guanya 1",
+                "wind": "Vent",
+                "wind_short": "Vent curt"
+            }
+        }
+    },
+    "services": {
+        "chart": {
+            "description": "Mostra un gr\u00e0fic en un dispositiu LaMetric.",
             "fields": {
                 "cycles": {
-                    "description": "Nombre de vegades a mostrar el missatge. Si es configura a 0, el missatge es mostrar\u00e0 fins que s'elimini."
+                    "description": "Nombre de vegades a mostrar el missatge. Si es configura a 0, el missatge es mostrar\u00e0 fins que s'elimini.",
+                    "name": "Cicles"
+                },
+                "data": {
+                    "description": "Llista de punts de dades al gr\u00e0fic.",
+                    "name": "Dades"
                 },
                 "device_id": {
+                    "description": "Dispositiu LaMetric on mostrar el gr\u00e0fic.",
                     "name": "Dispositiu"
+                },
+                "icon_type": {
+                    "description": "Tipus d'icona a mostrar. Indica la naturalesa de la notificaci\u00f3.",
+                    "name": "Tipus d'icona"
+                },
+                "priority": {
+                    "description": "Prioritat de la notificaci\u00f3. Quan el dispositiu est\u00e0 en mode salva-pantalles o quiosc, nom\u00e9s s'acceptaran notificacions amb prioritat cr\u00edtica.",
+                    "name": "Prioritat"
+                },
+                "sound": {
+                    "description": "So de notificaci\u00f3 a reproduir.",
+                    "name": "So"
                 }
-            }
+            },
+            "name": "Mostra un gr\u00e0fic"
+        },
+        "message": {
+            "description": "Mostra un missatge amb una icona opcional en un dispositiu LaMetric.",
+            "fields": {
+                "cycles": {
+                    "description": "Nombre de vegades a mostrar el missatge. Si es configura a 0, el missatge es mostrar\u00e0 fins que s'elimini.",
+                    "name": "Cicles"
+                },
+                "device_id": {
+                    "description": "Dispositiu LaMetric on mostrar el missatge.",
+                    "name": "Dispositiu"
+                },
+                "icon": {
+                    "description": "N\u00famero d'identificaci\u00f3 de la icona o animaci\u00f3 a mostrar. Pots trobar la llista de totes les icones i els IDs a: https://developer.lametric.com/icons.",
+                    "name": "Icona"
+                },
+                "icon_type": {
+                    "description": "Tipus d'icona a mostrar. Indica la naturalesa de la notificaci\u00f3.",
+                    "name": "Tipus d'icona"
+                },
+                "message": {
+                    "description": "Missatge a mostrar.",
+                    "name": "Missatge"
+                },
+                "priority": {
+                    "description": "Prioritat de la notificaci\u00f3. Quan el dispositiu est\u00e0 en mode salva-pantalles o quiosc, nom\u00e9s s'acceptaran notificacions amb prioritat cr\u00edtica.",
+                    "name": "Prioritat"
+                },
+                "sound": {
+                    "description": "So de notificaci\u00f3 a reproduir.",
+                    "name": "So"
+                }
+            },
+            "name": "Mostra un missatge"
         }
     }
 }

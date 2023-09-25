@@ -56,19 +56,36 @@
                 "entity_id": {
                     "name": "Entitat"
                 }
-            }
+            },
+            "name": "Elimina vacances"
         },
         "resume_program": {
             "fields": {
                 "entity_id": {
+                    "description": "Nom(s) de les entitats a canviar.",
                     "name": "Entitat"
+                },
+                "resume_all": {
+                    "name": "Repr\u00e8n-ho tot"
                 }
-            }
+            },
+            "name": "Repr\u00e8n el programa"
+        },
+        "set_dst_mode": {
+            "description": "Activa/desactiva l'horari d'estiu autom\u00e0tic."
         },
         "set_fan_min_on_time": {
             "fields": {
                 "entity_id": {
+                    "description": "Nom(s) de les entitats a canviar.",
                     "name": "Entitat"
+                }
+            }
+        },
+        "set_occupancy_modes": {
+            "fields": {
+                "follow_me": {
+                    "name": "Segueix-me"
                 }
             }
         }

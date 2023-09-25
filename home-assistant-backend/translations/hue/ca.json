@@ -94,6 +94,15 @@
                     }
                 }
             }
+        },
+        "sensor": {
+            "zigbee_connectivity": {
+                "state": {
+                    "connected": "Connectat",
+                    "connectivity_issue": "Problema de connectivitat",
+                    "disconnected": "Desconnectat"
+                }
+            }
         }
     },
     "options": {
@@ -114,8 +123,30 @@
                 "brightness": {
                     "description": "Estableix la lluminositat de l'escena.",
                     "name": "Lluminositat"
+                },
+                "dynamic": {
+                    "name": "Din\u00e0mic"
+                },
+                "transition": {
+                    "name": "Transici\u00f3"
                 }
-            }
+            },
+            "name": "Activa escena Hue"
+        },
+        "hue_activate_scene": {
+            "fields": {
+                "dynamic": {
+                    "name": "Din\u00e0mic"
+                },
+                "group_name": {
+                    "name": "Grup"
+                },
+                "scene_name": {
+                    "description": "Nom de l'escena de l'aplicaci\u00f3 hue.",
+                    "name": "Escena"
+                }
+            },
+            "name": "Activa escena"
         }
     }
 }

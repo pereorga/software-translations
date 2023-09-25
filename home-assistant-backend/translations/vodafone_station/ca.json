@@ -28,5 +28,54 @@
                 }
             }
         }
+    },
+    "entity": {
+        "sensor": {
+            "active_connection": {
+                "name": "Connexi\u00f3 activa",
+                "state": {
+                    "dsl": "xDSL",
+                    "fiber": "Fibra",
+                    "internet_key": "Clau d'Internet",
+                    "unknown": "Desconegut"
+                }
+            },
+            "down_stream": {
+                "name": "Taxa/velocitat de baixada WAN"
+            },
+            "external_ip_key": {
+                "name": "Adre\u00e7a de clau d'Internet WAN"
+            },
+            "external_ipv4": {
+                "name": "Adre\u00e7a IPv4 WAN"
+            },
+            "external_ipv6": {
+                "name": "Adre\u00e7a IPv6 WAN"
+            },
+            "fw_version": {
+                "name": "Versi\u00f3 del microprogramari"
+            },
+            "phone_num1": {
+                "name": "N\u00famero de tel\u00e8fon (1)"
+            },
+            "phone_num2": {
+                "name": "N\u00famero de tel\u00e8fon (2)"
+            },
+            "sys_cpu_usage": {
+                "name": "\u00das de CPU"
+            },
+            "sys_memory_usage": {
+                "name": "\u00das de mem\u00f2ria"
+            },
+            "sys_reboot_cause": {
+                "name": "Causa del reinici"
+            },
+            "sys_uptime": {
+                "name": "Temps en funcionament"
+            },
+            "up_stream": {
+                "name": "Taxa/velocitat de pujada WAN"
+            }
+        }
     }
 }

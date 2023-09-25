@@ -29,10 +29,27 @@
         }
     },
     "services": {
+        "reset_gateway": {
+            "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                }
+            }
+        },
+        "set_central_heating_ovrd": {
+            "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                }
+            }
+        },
         "set_clock": {
             "fields": {
                 "date": {
                     "name": "Data"
+                },
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
                 },
                 "time": {
                     "name": "Hora"
@@ -41,6 +58,9 @@
         },
         "set_control_setpoint": {
             "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                },
                 "temperature": {
                     "name": "Temperatura"
                 }
@@ -48,13 +68,29 @@
         },
         "set_gpio_mode": {
             "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                },
+                "id": {
+                    "name": "ID"
+                },
                 "mode": {
                     "name": "Mode"
                 }
             }
         },
+        "set_hot_water_ovrd": {
+            "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                }
+            }
+        },
         "set_hot_water_setpoint": {
             "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                },
                 "temperature": {
                     "name": "Temperatura"
                 }
@@ -62,6 +98,9 @@
         },
         "set_led_mode": {
             "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                },
                 "id": {
                     "description": "ID del LED.",
                     "name": "ID"
@@ -71,6 +110,34 @@
                 }
             },
             "name": "Configura el mode LED"
+        },
+        "set_max_modulation": {
+            "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                },
+                "level": {
+                    "name": "Nivell"
+                }
+            }
+        },
+        "set_outside_temperature": {
+            "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                },
+                "temperature": {
+                    "name": "Temperatura"
+                }
+            },
+            "name": "Configura la temperatura exterior"
+        },
+        "set_setback_temperature": {
+            "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                }
+            }
         }
     }
 }

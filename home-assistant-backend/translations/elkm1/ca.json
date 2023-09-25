@@ -47,6 +47,13 @@
         }
     },
     "services": {
+        "alarm_arm_home_instant": {
+            "fields": {
+                "code": {
+                    "name": "Codi"
+                }
+            }
+        },
         "alarm_arm_vacation": {
             "fields": {
                 "code": {
@@ -75,13 +82,25 @@
                 },
                 "line2": {
                     "name": "L\u00ednia 2"
+                },
+                "timeout": {
+                    "description": "Temps a mostrar el missatge, 0 = sempre, m\u00e0xim 65535.",
+                    "name": "Temps d'espera"
                 }
-            }
+            },
+            "name": "Missatge de visualitzaci\u00f3 d'alarma"
         },
         "sensor_counter_set": {
             "fields": {
                 "value": {
                     "name": "Valor"
+                }
+            }
+        },
+        "sensor_zone_bypass": {
+            "fields": {
+                "code": {
+                    "name": "Codi"
                 }
             }
         },

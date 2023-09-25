@@ -1,3 +1,30 @@
 {
+    "services": {
+        "process": {
+            "fields": {
+                "agent_id": {
+                    "name": "Agent"
+                },
+                "language": {
+                    "name": "Idioma"
+                },
+                "text": {
+                    "name": "Text"
+                }
+            }
+        },
+        "reload": {
+            "fields": {
+                "agent_id": {
+                    "description": "Agent de conversa a tornar a carregar.",
+                    "name": "Agent"
+                },
+                "language": {
+                    "name": "Idioma"
+                }
+            },
+            "name": "Torna a carregar"
+        }
+    },
     "title": "Conversa"
 }

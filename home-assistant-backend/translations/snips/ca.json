@@ -1,5 +1,12 @@
 {
     "services": {
+        "feedback_off": {
+            "fields": {
+                "site_id": {
+                    "name": "ID del lloc"
+                }
+            }
+        },
         "feedback_on": {
             "fields": {
                 "site_id": {
@@ -9,13 +16,24 @@
         },
         "say": {
             "fields": {
+                "custom_data": {
+                    "description": "Dades personalitzades que s'inclouran en tots els missatges d'aquesta sessi\u00f3.",
+                    "name": "Dades personalitzades"
+                },
                 "site_id": {
                     "name": "ID del lloc"
+                },
+                "text": {
+                    "name": "Text"
                 }
             }
         },
         "say_action": {
             "fields": {
+                "custom_data": {
+                    "description": "Dades personalitzades que s'inclouran en tots els missatges d'aquesta sessi\u00f3.",
+                    "name": "Dades personalitzades"
+                },
                 "text": {
                     "name": "Text"
                 }

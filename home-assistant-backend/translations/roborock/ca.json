@@ -28,6 +28,12 @@
     },
     "entity": {
         "binary_sensor": {
+            "mop_attached": {
+                "name": "Baieta col\u00b7locada"
+            },
+            "mop_drying_status": {
+                "name": "Baieta assecant-se"
+            },
             "water_box_attached": {
                 "name": "Caixa d'aigua col\u00b7locada"
             }
@@ -39,7 +45,7 @@
         },
         "select": {
             "mop_intensity": {
-                "name": "Intensitat de fregat",
+                "name": "Intensitat de la baieta",
                 "state": {
                     "custom": "Personalitzat",
                     "high": "Alta",
@@ -52,7 +58,7 @@
                 }
             },
             "mop_mode": {
-                "name": "Mode de fregat",
+                "name": "Mode de la baieta",
                 "state": {
                     "custom": "Personalitzat",
                     "deep": "Profund",
@@ -75,7 +81,11 @@
             "dock_error": {
                 "name": "Error de connexi\u00f3 a la base",
                 "state": {
-                    "ok": "Ok"
+                    "duct_blockage": "Conducte obstru\u00eft",
+                    "no_dustbin": "Sense contenidor",
+                    "ok": "Ok",
+                    "waste_water_tank_full": "Dip\u00f2sit d'aig\u00fces brutes ple",
+                    "water_empty": "Sense aigua"
                 }
             },
             "filter_time_left": {
@@ -83,6 +93,9 @@
             },
             "main_brush_time_left": {
                 "name": "Vida restant del respall principal"
+            },
+            "mop_drying_remaining_time": {
+                "name": "Temps restant d'assecat de la baieta"
             },
             "sensor_time_left": {
                 "name": "Vida restant del sensor"
@@ -178,8 +191,14 @@
             "dnd_start_time": {
                 "name": "Inici de no molestar"
             },
+            "off_peak_end": {
+                "name": "Final per\u00edode vall"
+            },
             "off_peak_end_time": {
                 "name": "Final per\u00edode vall"
+            },
+            "off_peak_start": {
+                "name": "Inici per\u00edode vall"
             },
             "off_peak_start_time": {
                 "name": "Inici per\u00edode vall"
@@ -192,7 +211,7 @@
                         "state": {
                             "auto": "Autom\u00e0tica",
                             "balanced": "Equilibrada",
-                            "custom": "Personalitzada",
+                            "custom": "Personalitzat",
                             "gentle": "Lenta",
                             "max": "M\u00e0xima",
                             "max_plus": "M\u00e0xima+",

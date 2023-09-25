@@ -73,7 +73,21 @@
     },
     "services": {
         "pause": {
+            "description": "Atura la cua de baixades.",
             "name": "Pausa"
+        },
+        "resume": {
+            "description": "Repr\u00e8n la cua de baixades.",
+            "name": "Repr\u00e8n"
+        },
+        "set_speed": {
+            "description": "Configura el l\u00edmit de velocitat de baixada.",
+            "fields": {
+                "speed": {
+                    "description": "L\u00edmit de velocitat. 0 = il\u00b7limitada.",
+                    "name": "Velocitat"
+                }
+            }
         }
     }
 }

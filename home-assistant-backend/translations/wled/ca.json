@@ -23,6 +23,11 @@
         }
     },
     "entity": {
+        "light": {
+            "main": {
+                "name": "Principal"
+            }
+        },
         "select": {
             "live_override": {
                 "state": {
@@ -30,6 +35,49 @@
                     "1": "ON",
                     "2": "Fins que el dispositiu es reinici\u00ef"
                 }
+            },
+            "playlist": {
+                "name": "Llista de reproducci\u00f3"
+            },
+            "preset": {
+                "name": "Programa"
+            }
+        },
+        "sensor": {
+            "estimated_current": {
+                "name": "Corrent estimat"
+            },
+            "free_heap": {
+                "name": "Mem\u00f2ria disponible"
+            },
+            "info_leds_count": {
+                "name": "Nombre de LEDs"
+            },
+            "info_leds_max_power": {
+                "name": "Corrent m\u00e0xim"
+            },
+            "ip": {
+                "name": "IP"
+            },
+            "uptime": {
+                "name": "Temps en funcionament"
+            },
+            "wifi_bssid": {
+                "name": "BSSID Wi-Fi"
+            },
+            "wifi_channel": {
+                "name": "Canal Wi-Fi"
+            },
+            "wifi_rssi": {
+                "name": "RSSI Wi-Fi"
+            },
+            "wifi_signal": {
+                "name": "Senyal Wi-Fi"
+            }
+        },
+        "switch": {
+            "nightlight": {
+                "name": "Llum nocturna"
             }
         }
     },

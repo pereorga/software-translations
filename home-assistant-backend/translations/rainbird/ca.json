@@ -61,5 +61,25 @@
                 "title": "Configuraci\u00f3 de Rain Bird"
             }
         }
+    },
+    "services": {
+        "set_rain_delay": {
+            "fields": {
+                "duration": {
+                    "description": "Durada de l'apagada del sistema.",
+                    "name": "Durada"
+                }
+            }
+        },
+        "start_irrigation": {
+            "description": "Inicia el reg",
+            "fields": {
+                "duration": {
+                    "description": "Durada de l'encesa de l'aspersor.",
+                    "name": "Durada"
+                }
+            },
+            "name": "Inicia el reg"
+        }
     }
 }

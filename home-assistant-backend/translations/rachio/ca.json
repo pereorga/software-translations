@@ -33,5 +33,38 @@
                 }
             }
         }
+    },
+    "services": {
+        "pause_watering": {
+            "fields": {
+                "devices": {
+                    "name": "Dispositius"
+                },
+                "duration": {
+                    "name": "Durada"
+                }
+            }
+        },
+        "resume_watering": {
+            "fields": {
+                "devices": {
+                    "name": "Dispositius"
+                }
+            }
+        },
+        "start_multiple_zone_schedule": {
+            "fields": {
+                "duration": {
+                    "name": "Durada"
+                }
+            }
+        },
+        "stop_watering": {
+            "fields": {
+                "devices": {
+                    "name": "Dispositius"
+                }
+            }
+        }
     }
 }

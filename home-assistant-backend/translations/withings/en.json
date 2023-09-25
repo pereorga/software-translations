@@ -25,7 +25,7 @@
                 "title": "User Profile."
             },
             "reauth_confirm": {
-                "description": "The \"{profile}\" profile needs to be re-authenticated in order to continue receiving Withings data.",
+                "description": "The Withings integration needs to re-authenticate your account",
                 "title": "Reauthenticate Integration"
             }
         }
@@ -126,6 +126,15 @@
             },
             "wakeup_time": {
                 "name": "Wakeup time"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "use_webhook": "Use webhooks"
+                }
             }
         }
     }

@@ -68,6 +68,26 @@
         }
     },
     "services": {
+        "set_person_away": {
+            "description": "Configura una persona com a fora. Si no es configura cap persona, la casa es marcar\u00e0 com a buida. El nom de les persones ha de coincidir amb els noms coneguts per la c\u00e0mera Netatmo interior (de benvinguda).",
+            "fields": {
+                "person": {
+                    "description": "Nom de la persona.",
+                    "name": "Persona"
+                }
+            },
+            "name": "Configura persona a fora"
+        },
+        "set_persons_home": {
+            "description": "Configura una llista de persones com a casa. El nom de les persones ha de coincidir amb els noms coneguts per la c\u00e0mera Netatmo interior (de benvinguda).",
+            "fields": {
+                "persons": {
+                    "description": "Llista de noms.",
+                    "name": "Persones"
+                }
+            },
+            "name": "Configura persones a casa"
+        },
         "set_schedule": {
             "fields": {
                 "schedule_name": {
