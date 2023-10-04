@@ -91,11 +91,51 @@
         }
     },
     "services": {
-        "set_music_mode": {
+        "set_custom_effect": {
             "fields": {
+                "colors": {
+                    "description": "Llista de colors de l'efecte personalitzat (RGB). (M\u00e0xim 16 colors).",
+                    "name": "Colors"
+                },
+                "speed_pct": {
+                    "description": "Velocitat d'efecte de l'efecte personalitzat (0-100).",
+                    "name": "Velocitat"
+                },
+                "transition": {
+                    "description": "Transici\u00f3 d'efecte.",
+                    "name": "Transici\u00f3"
+                }
+            },
+            "name": "Configura efecte personalitzat"
+        },
+        "set_music_mode": {
+            "description": "Configura el mode m\u00fasica a dispositius Controlador RGB amb MIC (0x08), Adre\u00e7ables v2 (0xA2) i Adre\u00e7ables v3 (0xA3) que tenen un micr\u00f2fon integrat.",
+            "fields": {
+                "background_color": {
+                    "description": "Color de fons RGB (nom\u00e9s models adre\u00e7ables).",
+                    "name": "Color de fons"
+                },
                 "brightness": {
                     "description": "Lluminositat de la llum (0-100).",
                     "name": "Lluminositat"
+                },
+                "effect": {
+                    "description": "Efecte (1-16 en models adre\u00e7ables, 0-3 en RGB amb models MIC).",
+                    "name": "Efecte"
+                },
+                "foreground_color": {
+                    "description": "Color de primer pla RGB.",
+                    "name": "Color de primer pla"
+                }
+            }
+        },
+        "set_zones": {
+            "fields": {
+                "colors": {
+                    "name": "Colors"
+                },
+                "speed_pct": {
+                    "description": "Velocitat d'efecte de l'efecte personalitzat (0-100)."
                 }
             }
         }

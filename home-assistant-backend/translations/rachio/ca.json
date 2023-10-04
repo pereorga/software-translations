@@ -36,19 +36,35 @@
     },
     "services": {
         "pause_watering": {
+            "description": "Posa en pausa qualsevol zona en execuci\u00f3 o programaci\u00f3.",
             "fields": {
                 "devices": {
+                    "description": "Nom dels controladors a aturar. Per defecte, tots els controladors del compte si no se'n proporciona cap.",
                     "name": "Dispositius"
                 },
                 "duration": {
+                    "description": "Temps/duraci\u00f3 de la pausa de les programacions en execuci\u00f3.",
                     "name": "Durada"
                 }
-            }
+            },
+            "name": "Pausa el reg"
         },
         "resume_watering": {
+            "description": "Repr\u00e8n qualsevol zona en execuci\u00f3 o programaci\u00f3 en pausa.",
             "fields": {
                 "devices": {
+                    "description": "Nom dels controladors a reprendre. Per defecte, tots els controladors del compte si no se'n proporciona cap.",
                     "name": "Dispositius"
+                }
+            },
+            "name": "Repren el reg"
+        },
+        "set_zone_moisture_percent": {
+            "description": "Configura el percentatge d'humitat desitjat de la zona o llista de zones.",
+            "fields": {
+                "percent": {
+                    "description": "Configura el percentatge d'humitat desitjat de la zona.",
+                    "name": "Percentatge"
                 }
             }
         },

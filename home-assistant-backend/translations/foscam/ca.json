@@ -21,5 +21,20 @@
                 }
             }
         }
+    },
+    "services": {
+        "ptz": {
+            "fields": {
+                "movement": {
+                    "description": "Direcci\u00f3 del moviment.",
+                    "name": "Moviment"
+                },
+                "travel_time": {
+                    "description": "Temps de despla\u00e7ament en segons.",
+                    "name": "Temps de despla\u00e7ament"
+                }
+            },
+            "name": "PTZ"
+        }
     }
 }

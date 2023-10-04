@@ -42,5 +42,29 @@
                 "name": "Current percentage of highest price - today"
             }
         }
+    },
+    "services": {
+        "get_prices": {
+            "description": "Request energy or gas prices from EnergyZero.",
+            "fields": {
+                "end": {
+                    "description": "Until which moment to get the prices. Defaults to today if omitted.",
+                    "name": "End"
+                },
+                "incl_vat": {
+                    "description": "Include VAT in the prices. Defaults to true if omitted.",
+                    "name": "Including VAT"
+                },
+                "start": {
+                    "description": "From which moment to get the prices. Defaults to today if omitted.",
+                    "name": "Start"
+                },
+                "type": {
+                    "description": "Type of prices to get, energy or gas.",
+                    "name": "Type"
+                }
+            },
+            "name": "Get prices"
+        }
     }
 }

@@ -128,18 +128,50 @@
         }
     },
     "services": {
+        "cleanup": {
+            "fields": {
+                "device_id": {
+                    "name": "Dispositiu Fritz!Box"
+                }
+            }
+        },
+        "reboot": {
+            "description": "Reinicia el FRITZ!Box.",
+            "fields": {
+                "device_id": {
+                    "description": "Selecciona el Fritz!Box a reiniciar.",
+                    "name": "Dispositiu Fritz!Box"
+                }
+            },
+            "name": "Reinicia"
+        },
         "reconnect": {
+            "description": "Reconnecta la connexi\u00f3 a Internet del FRITZ!Box.",
+            "fields": {
+                "device_id": {
+                    "description": "Selecciona el Fritz!Box a reconnectar.",
+                    "name": "Dispositiu Fritz!Box"
+                }
+            },
             "name": "Reconnecta"
         },
         "set_guest_wifi_password": {
+            "description": "Configura una nova contrasenya per a la xarxa Wi-Fi de convidats. La contrasenya ha de tenir entre 8 i 63 car\u00e0cters. Si no s'estableix cap par\u00e0metre addicional, la contrasenya es generar\u00e0 autom\u00e0ticament amb una longitud de 12 car\u00e0cters.",
             "fields": {
                 "device_id": {
-                    "description": "Selecciona el Fritz!Box a configurar."
+                    "description": "Selecciona el Fritz!Box a configurar.",
+                    "name": "Dispositiu Fritz!Box"
+                },
+                "length": {
+                    "description": "Longitud de la nova contrasenya. La contrasenya es generar\u00e0 autom\u00e0ticament si no se n'estableix cap.",
+                    "name": "Longitud de la contrasenya"
                 },
                 "password": {
+                    "description": "Nova contrasenya per a la xarxa Wi-Fi de convidats.",
                     "name": "Contrasenya"
                 }
-            }
+            },
+            "name": "Configura la contrasenya Wi-Fi de convidats"
         }
     }
 }

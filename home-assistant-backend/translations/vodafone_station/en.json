@@ -2,14 +2,18 @@
     "config": {
         "abort": {
             "already_configured": "Service is already configured",
+            "already_logged": "User already logged-in, please try again later.",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
+            "model_not_supported": "The device model is currently unsupported.",
             "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error"
         },
         "error": {
+            "already_logged": "User already logged-in, please try again later.",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
+            "model_not_supported": "The device model is currently unsupported.",
             "unknown": "Unexpected error"
         },
         "flow_title": "{host}",
@@ -31,6 +35,17 @@
         }
     },
     "entity": {
+        "button": {
+            "dsl_reconnect": {
+                "name": "DSL reconnect"
+            },
+            "fiber_reconnect": {
+                "name": "Fiber reconnect"
+            },
+            "internet_key_reconnect": {
+                "name": "Internet key reconnect"
+            }
+        },
         "sensor": {
             "active_connection": {
                 "name": "Active connection",

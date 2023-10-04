@@ -140,12 +140,17 @@
             "description": "Activa o desactiva music_mode.",
             "fields": {
                 "music_mode": {
-                    "description": "Utilitza true o false per activar/desactivar music_mode."
+                    "description": "Utilitza true o false per activar/desactivar music_mode.",
+                    "name": "Mode de m\u00fasica"
                 }
-            }
+            },
+            "name": "Configura el mode de m\u00fasica"
         },
         "start_flow": {
             "fields": {
+                "action": {
+                    "name": "Acci\u00f3"
+                },
                 "transitions": {
                     "name": "Transicions"
                 }

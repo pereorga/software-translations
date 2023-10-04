@@ -49,6 +49,10 @@
             "description": "Checks the Home Assistant YAML-configuration files for errors. Errors will be shown in the Home Assistant logs.",
             "name": "Check configuration"
         },
+        "reload_all": {
+            "description": "Reload all YAML configuration that can be reloaded without restarting Home Assistant.",
+            "name": "Reload all"
+        },
         "reload_config_entry": {
             "description": "Reloads the specified config entry.",
             "fields": {

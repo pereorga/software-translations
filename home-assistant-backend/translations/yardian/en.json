@@ -16,5 +16,17 @@
                 }
             }
         }
+    },
+    "services": {
+        "start_irrigation": {
+            "description": "Starts the irrigation.",
+            "fields": {
+                "duration": {
+                    "description": "Duration for the target to be turned on.",
+                    "name": "Duration"
+                }
+            },
+            "name": "Start irrigation"
+        }
     }
 }

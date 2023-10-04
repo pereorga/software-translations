@@ -9,10 +9,22 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "map": {
+                "data": {
+                    "location": "Location"
+                },
+                "description": "Select a location to get the closest measuring station."
+            },
+            "station_number": {
+                "data": {
+                    "station_number": "Measuring station number"
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "API Key",
-                    "location": "Location"
+                    "location": "Location",
+                    "method": "How do you want to select a measuring station?"
                 },
                 "description": "Select a location to get the closest measuring station."
             }
@@ -34,6 +46,14 @@
         "deprecated_yaml_import_issue_none_found": {
             "description": "Configuring World Air Quality Index using YAML is being removed but there weren't any stations imported because they couldn't be found.\n\nEnsure the imported configuration is correct and remove the World Air Quality Index YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",
             "title": "The WAQI YAML configuration import failed"
+        }
+    },
+    "selector": {
+        "method": {
+            "options": {
+                "map": "Select nearest from point on the map",
+                "station_number": "Enter a station number"
+            }
         }
     }
 }

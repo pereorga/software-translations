@@ -2,14 +2,18 @@
     "config": {
         "abort": {
             "already_configured": "El servei ja est\u00e0 configurat",
+            "already_logged": "L'usuari ja ha iniciat sessi\u00f3, torna-ho a provar m\u00e9s tard.",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "model_not_supported": "El model del dispositiu no \u00e9s compatible actualment.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
+            "already_logged": "L'usuari ja ha iniciat sessi\u00f3, torna-ho a provar m\u00e9s tard.",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "model_not_supported": "El model del dispositiu no \u00e9s compatible actualment.",
             "unknown": "Error inesperat"
         },
         "flow_title": "{host}",
@@ -30,6 +34,14 @@
         }
     },
     "entity": {
+        "button": {
+            "dsl_reconnect": {
+                "name": "Reconnexi\u00f3 DSL"
+            },
+            "fiber_reconnect": {
+                "name": "Reconnexi\u00f3 de fibra"
+            }
+        },
         "sensor": {
             "active_connection": {
                 "name": "Connexi\u00f3 activa",

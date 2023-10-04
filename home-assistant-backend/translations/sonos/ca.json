@@ -117,11 +117,22 @@
             }
         },
         "update_alarm": {
+            "description": "Actualitza els par\u00e0metres d'hora i volum d'una alarma.",
             "fields": {
                 "alarm_id": {
+                    "description": "ID de l'alarma a actualitzar.",
                     "name": "ID d'alarma"
+                },
+                "enabled": {
+                    "description": "Activa o desactiva l'alarma.",
+                    "name": "Alarma activada"
+                },
+                "volume": {
+                    "description": "Configura el volum de l'alarma.",
+                    "name": "Volum"
                 }
-            }
+            },
+            "name": "Actualitza alarma"
         }
     }
 }

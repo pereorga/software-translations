@@ -193,5 +193,35 @@
                 }
             }
         }
+    },
+    "services": {
+        "ptz": {
+            "fields": {
+                "speed": {
+                    "name": "Velocitat"
+                }
+            }
+        },
+        "set_alarm_detection_sensibility": {
+            "fields": {
+                "level": {
+                    "name": "Nivell de sensibilitat"
+                },
+                "type_value": {
+                    "description": "Tipus de detecci\u00f3. Opcions: 0 - C\u00e0mera, 3 - Sensor PIR de la c\u00e0mera.",
+                    "name": "Tipus de detecci\u00f3"
+                }
+            },
+            "name": "Sensibilitat de detecci\u00f3"
+        },
+        "sound_alarm": {
+            "fields": {
+                "enable": {
+                    "description": "Introdueix 1 o 2 (1=desactivar, 2=activar).",
+                    "name": "So de l'alarma"
+                }
+            },
+            "name": "Fes sonar l'alarma"
+        }
     }
 }
