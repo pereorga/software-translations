@@ -6,23 +6,22 @@ https://github.com/Softcatala/translation-memory-tools/.
 ## Requirements
 
 * Bash (modern versions)
-* Curl
-* Translate Toolkit
 * csvkit
 * dos2unix
-* unzip
+* gettext
+* Translate Toolkit
 
 ## Installation
 
 On Ubuntu/Debian:
 
 ```
-sudo apt-get install csvkit translate-toolkit dos2unix unzip
+sudo apt-get install csvkit translate-toolkit dos2unix gettext
 ```
 
 On Mac:
 ```
-brew install bash csvkit translate-toolkit dos2unix unzip
+brew install bash csvkit translate-toolkit dos2unix gettext
 ```
 
 ## Translation credits

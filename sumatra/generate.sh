@@ -2,6 +2,7 @@
 
 cd "$(dirname "$0")"
 
+
 # Generate PO header
 cat << EOF > sumatra.po
 msgid ""
@@ -10,16 +11,18 @@ msgstr ""
 EOF
 
 # Download translations.txt from Sumatra repository, extract English and Catalan strings, and convert to PO format
-grep -E '^(\:|ca\:)' <(curl -s "https://raw.githubusercontent.com/sumatrapdfreader/sumatrapdf/master/src/docs/translations.txt") | \
+grep -E '^(\:|ca\:)' <(curl -s "https://raw.githubusercontent.com/sumatrapdfreader/sumatrapdf/master/translations/translations.txt") | \
 sed -e 's/^:/msgid "/' \
     -e 's/^ca:/msgstr "/' \
     -e 's/$/"/' >> sumatra.po
 
 # Check PO syntax
 if [[ -z $(msgattrib sumatra.po 2> /dev/null) ]]; then
-    msgattrib sumatra.po
-    echo "ERROR: probablement falten cadenes per traduir"
-    exit 1
-else
-    echo "OK"
+    echo "Avís: probablement falten cadenes per traduir, intentant arreglar-ho..."
+    python3 process_po.py
+    if [[ -z $(msgattrib sumatra.po 2> /dev/null) ]]; then
+        msgattrib sumatra.po
+        echo "ERROR: no s'ha pogut arreglar"
+        exit 1
+    fi
 fi
