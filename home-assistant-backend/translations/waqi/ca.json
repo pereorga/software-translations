@@ -12,12 +12,19 @@
             "map": {
                 "data": {
                     "location": "Ubicaci\u00f3"
+                },
+                "description": "Selecciona una ubicaci\u00f3 per obtenir l'estaci\u00f3 de mesura m\u00e9s propera."
+            },
+            "station_number": {
+                "data": {
+                    "station_number": "N\u00famero d'estaci\u00f3 de mesura"
                 }
             },
             "user": {
                 "data": {
                     "api_key": "Clau API",
-                    "location": "Ubicaci\u00f3"
+                    "location": "Ubicaci\u00f3",
+                    "method": "Com vols seleccionar l'estaci\u00f3 de mesura?"
                 },
                 "description": "Selecciona una ubicaci\u00f3 per obtenir l'estaci\u00f3 de mesura m\u00e9s propera."
             }
@@ -39,6 +46,14 @@
         "deprecated_yaml_import_issue_none_found": {
             "description": "La configuraci\u00f3 de World Air Quality Index mitjan\u00e7ant YAML s'est\u00e0 eliminant per\u00f2 no hi ha estacions importades perqu\u00e8 no s'han pogut trobar.\n\nComprova que la configuraci\u00f3 importada \u00e9s correcta i elimina la configuraci\u00f3 YAML de World Air Quality Index del fitxer configuration.yaml i continua amb la [configuraci\u00f3 de la integraci\u00f3]({url}) manual.",
             "title": "La importaci\u00f3 de la configuraci\u00f3 YAML de WAQI ha fallat"
+        }
+    },
+    "selector": {
+        "method": {
+            "options": {
+                "map": "Selecciona la m\u00e9s propera d'un punt del mapa",
+                "station_number": "Introdueix un n\u00famero d'estaci\u00f3"
+            }
         }
     }
 }

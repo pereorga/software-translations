@@ -34,10 +34,20 @@
     "entity": {
         "sensor": {
             "carbon_intensity": {
-                "name": "Intensitat de CO2"
+                "name": "Intensitat de CO2",
+                "state_attributes": {
+                    "country_code": {
+                        "name": "Codi de pa\u00eds"
+                    }
+                }
             },
             "fossil_fuel_percentage": {
-                "name": "Percentatge de combustibles f\u00f2ssils a la xarxa"
+                "name": "Percentatge de combustibles f\u00f2ssils a la xarxa",
+                "state_attributes": {
+                    "country_code": {
+                        "name": "Codi de pa\u00eds"
+                    }
+                }
             }
         }
     }

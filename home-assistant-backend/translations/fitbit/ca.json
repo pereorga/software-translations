@@ -8,7 +8,8 @@
             "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
             "oauth_error": "S'han rebut dades token inv\u00e0lides.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "unknown": "Error inesperat"
+            "unknown": "Error inesperat",
+            "wrong_account": "Les credencials d'usuari proporcionades no coincideixen amb les d'aquest compte Fitbit."
         },
         "create_entry": {
             "default": "Autenticaci\u00f3 exitosa"
@@ -18,8 +19,15 @@
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             },
             "reauth_confirm": {
+                "description": "La integraci\u00f3 Fitbit ha de tornar a autenticar-se amb el teu compte",
                 "title": "Reautenticaci\u00f3 de la integraci\u00f3"
             }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_no_import": {
+            "description": "La configuraci\u00f3 de Fitbit mitjan\u00e7ant YAML s'est\u00e0 eliminant.\n\nElimina la configuraci\u00f3 YAML de `fitbit` del fitxer configuration.yaml i el fitxer fitbit.conf (si existeix) i reinicia Home Assistant. Despr\u00e9s, continua amb la [configuraci\u00f3 de la integraci\u00f3](/config/integrations/dashboard/add?domain=fitbit) manual.",
+            "title": "La configuraci\u00f3 YAML de Fitbit est\u00e0 sent eliminada"
         }
     }
 }

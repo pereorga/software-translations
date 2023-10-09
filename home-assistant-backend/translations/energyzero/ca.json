@@ -42,5 +42,29 @@
                 "name": "Percentatge actual del preu m\u00e9s alt d'avui"
             }
         }
+    },
+    "services": {
+        "get_prices": {
+            "description": "Sol\u00b7licita els preus de l'energia o el gas a EnergyZero.",
+            "fields": {
+                "end": {
+                    "description": "Fins a quin moment obtenir els preus. Si s'omet, el valor predeterminat \u00e9s d'avui.",
+                    "name": "Final"
+                },
+                "incl_vat": {
+                    "description": "Inclou l'IVA en els preus. Si s'omet, s'inclour\u00e0 de manera predeterminada.",
+                    "name": "IVA incl\u00f2s"
+                },
+                "start": {
+                    "description": "A partir de quin moment obtenir els preus. Si s'omet, el valor predeterminat \u00e9s d'avui.",
+                    "name": "Inici"
+                },
+                "type": {
+                    "description": "Tipus de preus a obtenir, energia o gas.",
+                    "name": "Tipus"
+                }
+            },
+            "name": "Obt\u00e9 preus"
+        }
     }
 }

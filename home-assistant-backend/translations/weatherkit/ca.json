@@ -19,5 +19,17 @@
                 "title": "Configuraci\u00f3 de WeatherKit"
             }
         }
+    },
+    "entity": {
+        "sensor": {
+            "pressure_trend": {
+                "name": "Tend\u00e8ncia de la pressi\u00f3",
+                "state": {
+                    "falling": "Disminuint",
+                    "rising": "Augmentant",
+                    "steady": "Estable"
+                }
+            }
+        }
     }
 }
