@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-22 11:40+0200\n"
+"POT-Creation-Date: 2023-10-09 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.10.0\n"
+"X-Generator: Translate Toolkit 3.6.0\n"
 
 #: about.acknowledgements.title
 msgid "Acknowledgements"
@@ -2473,6 +2473,14 @@ msgstr "Veure '%@'"
 msgid "Update Available"
 msgstr "Actualització disponible"
 
+#: url_handler.call_service.confirm.title
+msgid "Call service?"
+msgstr ""
+
+#: url_handler.call_service.confirm.message
+msgid "Do you want to call the service %@?"
+msgstr ""
+
 #: url_handler.call_service.error.message
 msgid "An error occurred while attempting to call service %@: %@"
 msgstr "S'ha produït un error al intentar cridar el servei %@:  %@"
@@ -2488,6 +2496,14 @@ msgstr "Servei cridat"
 #: url_handler.error.action_not_found
 msgid "Action Not Found"
 msgstr "Acció no trobada"
+
+#: url_handler.fire_event.confirm.title
+msgid "Fire event?"
+msgstr ""
+
+#: url_handler.fire_event.confirm.message
+msgid "Do you want to fire the event %@?"
+msgstr ""
 
 #: url_handler.fire_event.error.message
 msgid "An error occurred while attempting to fire event %@: %@"
@@ -2505,6 +2521,14 @@ msgstr "Esdeveniment disparat"
 msgid "%@ is not a valid route"
 msgstr "%@ no és una ruta vàlida"
 
+#: url_handler.send_location.confirm.title
+msgid "Send location?"
+msgstr ""
+
+#: url_handler.send_location.confirm.message
+msgid "Do you want to send your location?"
+msgstr ""
+
 #: url_handler.send_location.error.message
 msgid "An unknown error occurred while attempting to send location: %@"
 msgstr "S'ha produït un error desconegut al intentar enviar la ubicació: %@"
@@ -2516,6 +2540,14 @@ msgstr "Ubicació enviada"
 #: url_handler.send_location.success.title
 msgid "Sent location"
 msgstr "Ubicació enviada"
+
+#: url_handler.render_template.confirm.title
+msgid "Render template?"
+msgstr ""
+
+#: url_handler.render_template.confirm.message
+msgid "Do you want to render %@?"
+msgstr ""
 
 #: url_handler.x_callback_url.error.eventNameMissing
 msgid "eventName must be defined"
