@@ -1,28 +1,44 @@
 {
     "services": {
         "connect_lte": {
+            "description": "Demana al m\u00f2dem que estableixi connexi\u00f3 LTE.",
             "fields": {
                 "host": {
+                    "description": "M\u00f2dem que s'ha de connectar.",
                     "name": "Amfitri\u00f3"
                 }
-            }
+            },
+            "name": "Connecta l'LTE"
         },
         "delete_sms": {
+            "description": "Elimina missatges de la safata d'entrada del m\u00f2dem.",
             "fields": {
                 "host": {
+                    "description": "M\u00f2dem del qual eliminar el missatge.",
                     "name": "Amfitri\u00f3"
+                },
+                "sms_id": {
+                    "description": "Enter o llista d'enters amb els IDs de safata d'entrada dels missatges que s'han d'eliminar.",
+                    "name": "ID de l'SMS"
                 }
-            }
+            },
+            "name": "Elimina l'SMS"
         },
         "disconnect_lte": {
+            "description": "Demana al m\u00f2dem que tanqui la connexi\u00f3 LTE.",
             "fields": {
                 "host": {
+                    "description": "M\u00f2dem que s'ha de desconnectar.",
                     "name": "Amfitri\u00f3"
                 }
-            }
+            },
+            "name": "Desconnecta l'LTE"
         },
         "set_option": {
             "fields": {
+                "autoconnect": {
+                    "name": "Connexi\u00f3 autom\u00e0tica"
+                },
                 "host": {
                     "name": "Amfitri\u00f3"
                 }

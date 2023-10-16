@@ -158,6 +158,21 @@
         }
     },
     "issues": {
+        "inconsistent_network_settings": {
+            "fix_flow": {
+                "step": {
+                    "init": {
+                        "description": "La configuraci\u00f3 de xarxa de la r\u00e0dio Zigbee no \u00e9s coherent amb la c\u00f2pia de seguretat m\u00e9s recent. Aix\u00f2 sol passar si una altra integraci\u00f3 de Zigbee (per exemple, Zigbee2MQTT o deCONZ) l'ha sobreescrit. \n\n{diff}\n\nSi no has canviat intencionadament la configuraci\u00f3 de la xarxa, restaura des de la c\u00f2pia de seguretat m\u00e9s recent; sin\u00f3 els teus dispositius no funcionaran correctament.",
+                        "menu_options": {
+                            "restore_old_settings": "Restaura c\u00f2pia de seguretat (recomanat)",
+                            "use_new_settings": "Mant\u00e9 la nova configuraci\u00f3"
+                        },
+                        "title": "La configuraci\u00f3 de la xarxa Zigbee ha canviat"
+                    }
+                }
+            },
+            "title": "La configuraci\u00f3 de la xarxa Zigbee ha canviat"
+        },
         "wrong_silabs_firmware_installed_nabucasa": {
             "description": "La teva r\u00e0dio Zigbee utilitzava multiprotocol anteriorment (Zigbee i Thread) i encara t\u00e9 instal\u00b7lat el microprogramari multiprotocol: ({firmware_type}).\n Opci\u00f3 1: per utilitzar la r\u00e0dio exclusivament amb ZHA, has d'instal\u00b7lar el microprogramari Zigbee:\n - Obre la documentaci\u00f3 seleccionant l'enlla\u00e7 a \"M\u00e9s informaci\u00f3\".\n - Segueix les instruccions descrites per carregar el microprogramari Zigbee.\n Opci\u00f3 2: per utilitzar la r\u00e0dio amb multiprotocol, segueix aquests passos:\n - V\u00e9s a Configuraci\u00f3 > Sistema > Maquinari, selecciona el dispositiu i selecciona Configura.\n - Selecciona l'opci\u00f3 Configura el suport de r\u00e0dio multiprotocol IEEE 802.15.4.\n - Marca la casella de selecci\u00f3 i selecciona Envia.\n - Un cop instal\u00b7lat, configura la integraci\u00f3 ZHA descoberta.",
             "title": "S'ha detectat una r\u00e0dio Zigbee amb un microprogramari multiprotocol"

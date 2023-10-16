@@ -158,6 +158,21 @@
         }
     },
     "issues": {
+        "inconsistent_network_settings": {
+            "fix_flow": {
+                "step": {
+                    "init": {
+                        "description": "Your Zigbee radio's network settings are inconsistent with the most recent network backup. This usually happens if another Zigbee integration (e.g. Zigbee2MQTT or deCONZ) has overwritten them.\n\n{diff}\n\nIf you did not intentionally change your network settings, restore from the most recent backup: your devices will not work otherwise.",
+                        "menu_options": {
+                            "restore_old_settings": "Restore backup (recommended)",
+                            "use_new_settings": "Keep the new settings"
+                        },
+                        "title": "Zigbee network settings have changed"
+                    }
+                }
+            },
+            "title": "Zigbee network settings have changed"
+        },
         "wrong_silabs_firmware_installed_nabucasa": {
             "description": "Your Zigbee radio was previously used with multiprotocol (Zigbee and Thread) and still has multiprotocol firmware installed: ({firmware_type}). \n Option 1: To run your radio exclusively with ZHA, you need to install the Zigbee firmware:\n - Open the documentation by selecting the link under \"Learn More\".\n - Follow the instructions described in Step 2 (and Step 2 only) to 'Flash the Silicon Labs radio Zigbee firmware'.\n Option 2: To run your radio with multiprotocol, follow these steps: \n - Go to Settings > System > Hardware, select the device and select Configure. \n - Select the Configure IEEE 802.15.4 radio multiprotocol support option. \n - Select the checkbox and select Submit. \n - Once installed, configure the newly discovered ZHA integration.",
             "title": "Zigbee radio with multiprotocol firmware detected"

@@ -44,12 +44,49 @@
         }
     },
     "services": {
+        "add_event": {
+            "description": "Afegeix un nou esdeveniment al calendari.",
+            "fields": {
+                "calendar_id": {
+                    "description": "Identificador del calendari que escullis.",
+                    "name": "ID del calendari"
+                },
+                "description": {
+                    "name": "Descripci\u00f3"
+                },
+                "end_date": {
+                    "name": "Data final"
+                },
+                "end_date_time": {
+                    "description": "Data i hora en qu\u00e8 ha de finalitzar l'esdeveniment.",
+                    "name": "Hora final"
+                },
+                "in": {
+                    "description": "Dies o setmanes en qu\u00e8 crear l'esdeveniment.",
+                    "name": "En"
+                },
+                "start_date": {
+                    "description": "Data en qu\u00e8 ha de comen\u00e7ar l'esdeveniment de tot el dia.",
+                    "name": "Data d'inici"
+                }
+            }
+        },
         "create_event": {
             "fields": {
                 "location": {
                     "name": "Ubicaci\u00f3"
+                },
+                "start_date": {
+                    "description": "Data en qu\u00e8 ha de comen\u00e7ar l'esdeveniment de tot el dia."
+                },
+                "start_date_time": {
+                    "name": "Hora d'inici"
+                },
+                "summary": {
+                    "name": "Resum"
                 }
-            }
+            },
+            "name": "Crea esdeveniment"
         }
     }
 }

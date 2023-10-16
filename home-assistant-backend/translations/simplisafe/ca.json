@@ -45,9 +45,15 @@
     },
     "services": {
         "remove_pin": {
+            "description": "Elimina un PIN a partir de la seva etiqueta o valor.",
             "fields": {
                 "device_id": {
+                    "description": "Sistema on eliminar el PIN.",
                     "name": "Sistema"
+                },
+                "label_or_pin": {
+                    "description": "Etiqueta/valor a eliminar.",
+                    "name": "Etiqueta/PIN"
                 }
             },
             "name": "Elimina PIN"
@@ -59,6 +65,10 @@
                     "description": "Sistema on configurar el PIN.",
                     "name": "Sistema"
                 },
+                "label": {
+                    "description": "Etiqueta del PIN.",
+                    "name": "Etiqueta"
+                },
                 "pin": {
                     "description": "Valor del PIN.",
                     "name": "PIN"
@@ -67,9 +77,43 @@
             "name": "Configura PIN"
         },
         "set_system_properties": {
+            "description": "Configura una o m\u00e9s propietats del sistema.",
             "fields": {
+                "alarm_duration": {
+                    "description": "Durada de l'alarma disparada.",
+                    "name": "Durada de l'alarma"
+                },
+                "alarm_volume": {
+                    "description": "Volum de l'alarma disparada.",
+                    "name": "Volum de l'alarma"
+                },
+                "chime_volume": {
+                    "description": "Volum del timbre de la porta.",
+                    "name": "Volum del timbre"
+                },
                 "device_id": {
+                    "description": "Sistema les propietats del qual s'han de configurar.",
                     "name": "Sistema"
+                },
+                "entry_delay_away": {
+                    "description": "Quant de temps retardar quan s'entra mentre est\u00e0 \"a fora\".",
+                    "name": "Retard d'entrada a fora"
+                },
+                "entry_delay_home": {
+                    "description": "Quant de temps retardar quan s'entra mentre est\u00e0 \"a casa\".",
+                    "name": "Retard d'entrada a casa"
+                },
+                "exit_delay_away": {
+                    "description": "Quant de temps retardar en sortir mentre est\u00e0 \"a fora\".",
+                    "name": "Retard de sortida a fora"
+                },
+                "exit_delay_home": {
+                    "description": "Quant de temps retardar en sortir mentre est\u00e0 \"a casa\".",
+                    "name": "Retard de sortida de casa"
+                },
+                "light": {
+                    "description": "Visibilitat de la llum d'activaci\u00f3.",
+                    "name": "Llum"
                 }
             }
         }

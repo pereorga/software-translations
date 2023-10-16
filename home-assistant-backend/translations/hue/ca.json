@@ -97,6 +97,7 @@
         },
         "sensor": {
             "zigbee_connectivity": {
+                "name": "Connectivitat Zigbee",
                 "state": {
                     "connected": "Connectat",
                     "connectivity_issue": "Problema de connectivitat",
@@ -110,6 +111,12 @@
                     "off": "Desactivada",
                     "on": "Activada"
                 }
+            },
+            "light_sensor_enabled": {
+                "name": "Sensor de llum activat"
+            },
+            "motion_sensor_enabled": {
+                "name": "Sensor de moviment activat"
             }
         }
     },

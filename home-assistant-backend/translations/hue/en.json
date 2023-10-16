@@ -97,6 +97,7 @@
         },
         "sensor": {
             "zigbee_connectivity": {
+                "name": "Zigbee connectivity",
                 "state": {
                     "connected": "Connected",
                     "connectivity_issue": "Connectivity issue",
@@ -111,6 +112,12 @@
                     "off": "Disabled",
                     "on": "Enabled"
                 }
+            },
+            "light_sensor_enabled": {
+                "name": "Light sensor enabled"
+            },
+            "motion_sensor_enabled": {
+                "name": "Motion sensor enabled"
             }
         }
     },

@@ -40,5 +40,18 @@
                 "description": "Defineix l'idioma de les interaccions amb Google Assisant i tria si voleu activar l'agent de conversa."
             }
         }
+    },
+    "services": {
+        "send_text_command": {
+            "fields": {
+                "command": {
+                    "name": "Comanda"
+                },
+                "media_player": {
+                    "name": "Entitat de reproductor multim\u00e8dia"
+                }
+            },
+            "name": "Envia comanda de text"
+        }
     }
 }

@@ -1,15 +1,18 @@
 {
     "services": {
         "get": {
+            "description": "Baixa fitxer de Minio.",
             "fields": {
                 "file_path": {
                     "description": "Ruta del fitxer del sistema de fitxers local.",
                     "name": "Ruta del fitxer"
                 },
                 "key": {
+                    "description": "Clau d'objecte del fitxer.",
                     "name": "Clau"
                 }
-            }
+            },
+            "name": "Rep"
         },
         "put": {
             "description": "Puja un fitxer a Minio.",
@@ -17,13 +20,19 @@
                 "file_path": {
                     "description": "Ruta del fitxer del sistema de fitxers local.",
                     "name": "Ruta del fitxer"
+                },
+                "key": {
+                    "description": "Clau d'objecte del fitxer.",
+                    "name": "Clau"
                 }
-            }
+            },
+            "name": "Posa"
         },
         "remove": {
             "description": "Elimina un fitxer de Minio.",
             "fields": {
                 "key": {
+                    "description": "Clau d'objecte del fitxer.",
                     "name": "Clau"
                 }
             },

@@ -37,6 +37,236 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "24ghz_wifi_status": {
+                "name": "2.4GHz Wi-Fi status"
+            },
+            "5ghz_wifi_status": {
+                "name": "5GHz Wi-Fi status"
+            },
+            "mobile_connection": {
+                "name": "Mobile connection"
+            },
+            "sms_storage_full": {
+                "name": "SMS storage full"
+            },
+            "wifi_status": {
+                "name": "Wi-Fi status"
+            }
+        },
+        "sensor": {
+            "arfcn": {
+                "name": "ARFCN"
+            },
+            "band": {
+                "name": "Band"
+            },
+            "base_station_identity_code": {
+                "name": "Base station identity code"
+            },
+            "cell_id": {
+                "name": "Cell ID"
+            },
+            "cqi0": {
+                "name": "CQI 0"
+            },
+            "cqi1": {
+                "name": "CQI 1"
+            },
+            "current_connection_download": {
+                "name": "Current connection download"
+            },
+            "current_connection_duration": {
+                "name": "Current connection duration"
+            },
+            "current_connection_upload": {
+                "name": "Current connection upload"
+            },
+            "current_day_transfer": {
+                "name": "Current day transfer"
+            },
+            "current_download_rate": {
+                "name": "Current download rate"
+            },
+            "current_month_download": {
+                "name": "Current month download"
+            },
+            "current_month_upload": {
+                "name": "Current month upload"
+            },
+            "current_upload_rate": {
+                "name": "Current upload rate"
+            },
+            "downlink_bandwidth": {
+                "name": "Downlink bandwidth"
+            },
+            "downlink_frequency": {
+                "name": "Downlink frequency"
+            },
+            "downlink_mcs": {
+                "name": "Downlink MCS"
+            },
+            "earfcn": {
+                "name": "EARFCN"
+            },
+            "ecio": {
+                "name": "EC/IO"
+            },
+            "enodeb_id": {
+                "name": "eNodeB ID"
+            },
+            "lac": {
+                "name": "LAC"
+            },
+            "lte_downlink_frequency": {
+                "name": "LTE downlink frequency"
+            },
+            "lte_uplink_frequency": {
+                "name": "LTE uplink frequency"
+            },
+            "operator_code": {
+                "name": "Operator code"
+            },
+            "operator_name": {
+                "name": "Operator name"
+            },
+            "operator_search_mode": {
+                "name": "Operator search mode"
+            },
+            "pci": {
+                "name": "PCI"
+            },
+            "plmn": {
+                "name": "PLMN"
+            },
+            "preferred_mode": {
+                "name": "Preferred mode"
+            },
+            "primary_dns_server": {
+                "name": "Primary DNS server"
+            },
+            "primary_ipv6_dns_server": {
+                "name": "Primary IPv6 DNS server"
+            },
+            "rac": {
+                "name": "RAC"
+            },
+            "rrc_status": {
+                "name": "RRC status"
+            },
+            "rscp": {
+                "name": "RSCP"
+            },
+            "rsrp": {
+                "name": "RSRP"
+            },
+            "rsrq": {
+                "name": "RSRQ"
+            },
+            "rssi": {
+                "name": "RSSI"
+            },
+            "secondary_dns_server": {
+                "name": "Secondary DNS server"
+            },
+            "secondary_ipv6_dns_server": {
+                "name": "Secondary IPv6 DNS server"
+            },
+            "sinr": {
+                "name": "SINR"
+            },
+            "sms_capacity_device": {
+                "name": "SMS capacity (device)"
+            },
+            "sms_capacity_sim": {
+                "name": "SMS capacity (SIM)"
+            },
+            "sms_deleted_device": {
+                "name": "SMS deleted (device)"
+            },
+            "sms_drafts_device": {
+                "name": "SMS drafts (device)"
+            },
+            "sms_drafts_sim": {
+                "name": "SMS drafts (SIM)"
+            },
+            "sms_inbox_device": {
+                "name": "SMS inbox (device)"
+            },
+            "sms_inbox_sim": {
+                "name": "SMS inbox (SIM)"
+            },
+            "sms_messages_sim": {
+                "name": "SMS messages (SIM)"
+            },
+            "sms_outbox_device": {
+                "name": "SMS outbox (device)"
+            },
+            "sms_outbox_sim": {
+                "name": "SMS outbox (SIM)"
+            },
+            "sms_unread": {
+                "name": "SMS unread"
+            },
+            "sms_unread_device": {
+                "name": "SMS unread (device)"
+            },
+            "sms_unread_sim": {
+                "name": "SMS unread (SIM)"
+            },
+            "tac": {
+                "name": "TAC"
+            },
+            "tdd": {
+                "name": "TDD"
+            },
+            "total_connected_duration": {
+                "name": "Total connected duration"
+            },
+            "total_download": {
+                "name": "Total download"
+            },
+            "total_upload": {
+                "name": "Total upload"
+            },
+            "transmission_mode": {
+                "name": "Transmission mode"
+            },
+            "transmit_power": {
+                "name": "Transmit power"
+            },
+            "uplink_bandwidth": {
+                "name": "Uplink bandwidth"
+            },
+            "uplink_frequency": {
+                "name": "Uplink frequency"
+            },
+            "uplink_mcs": {
+                "name": "Uplink MCS"
+            },
+            "uptime": {
+                "name": "Uptime"
+            },
+            "wan_ip_address": {
+                "name": "WAN IP address"
+            },
+            "wan_ipv6_address": {
+                "name": "WAN IPv6 address"
+            },
+            "wifi_clients_connected": {
+                "name": "Wi-Fi clients connected"
+            }
+        },
+        "switch": {
+            "mobile_data": {
+                "name": "Mobile data"
+            },
+            "wifi_guest_network": {
+                "name": "Wi-Fi guest network"
+            }
+        }
+    },
     "options": {
         "step": {
             "init": {

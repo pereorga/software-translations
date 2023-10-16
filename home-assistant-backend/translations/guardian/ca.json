@@ -72,12 +72,19 @@
                 "device_id": {
                     "name": "Controlador de v\u00e0lvula"
                 }
-            }
+            },
+            "name": "Desvincular sensor"
         },
         "upgrade_firmware": {
+            "description": "Actualitza el microprogramari del dispositiu.",
             "fields": {
                 "device_id": {
+                    "description": "Controlador de la v\u00e0lvula el microprogramari del qual s'ha d'actualitzar.",
                     "name": "Controlador de v\u00e0lvula"
+                },
+                "filename": {
+                    "description": "Nom del fitxer de microprogramari.",
+                    "name": "Nom del fitxer"
                 },
                 "port": {
                     "name": "Port"

@@ -15,15 +15,33 @@
             "name": "Torna a carregar"
         },
         "restart": {
+            "fields": {
+                "hub": {
+                    "description": "Nom del concentrador Modbus.",
+                    "name": "Concentrador"
+                }
+            },
             "name": "Reinicia"
         },
         "stop": {
+            "description": "Atura el concentrador modbus.",
+            "fields": {
+                "hub": {
+                    "description": "Nom del concentrador Modbus.",
+                    "name": "Concentrador"
+                }
+            },
             "name": "Atura"
         },
         "write_coil": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del registre on escriure.",
                     "name": "Adre\u00e7a"
+                },
+                "hub": {
+                    "description": "Nom del concentrador Modbus.",
+                    "name": "Concentrador"
                 },
                 "slave": {
                     "description": "Adre\u00e7a de la unitat/esclau modbus.",
@@ -39,6 +57,10 @@
             "fields": {
                 "address": {
                     "name": "Adre\u00e7a"
+                },
+                "hub": {
+                    "description": "Nom del concentrador Modbus.",
+                    "name": "Concentrador"
                 },
                 "slave": {
                     "description": "Adre\u00e7a de la unitat/esclau modbus.",

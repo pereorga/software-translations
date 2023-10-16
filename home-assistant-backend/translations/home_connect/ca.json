@@ -12,5 +12,70 @@
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             }
         }
+    },
+    "services": {
+        "change_setting": {
+            "description": "Canvia una configuraci\u00f3.",
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                },
+                "key": {
+                    "description": "Clau de la configuraci\u00f3.",
+                    "name": "Clau"
+                },
+                "value": {
+                    "description": "Valor de la configuraci\u00f3.",
+                    "name": "Valor"
+                }
+            }
+        },
+        "pause_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                }
+            }
+        },
+        "resume_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                }
+            }
+        },
+        "select_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                }
+            }
+        },
+        "set_option_active": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                },
+                "key": {
+                    "name": "Clau"
+                },
+                "value": {
+                    "name": "Valor"
+                }
+            }
+        },
+        "set_option_selected": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                },
+                "key": {
+                    "name": "Clau"
+                },
+                "value": {
+                    "name": "Valor"
+                }
+            }
+        }
     }
 }
