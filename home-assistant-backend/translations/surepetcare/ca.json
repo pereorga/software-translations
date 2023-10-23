@@ -18,6 +18,20 @@
         }
     },
     "services": {
+        "set_lock_state": {
+            "description": "Configura l'estat de bloqueig.",
+            "fields": {
+                "flap_id": {
+                    "description": "ID de la solapa a bloquejar/desbloquejar.",
+                    "name": "ID de solapa"
+                },
+                "lock_state": {
+                    "description": "Nou estat de bloqueig.",
+                    "name": "Estat de bloqueig"
+                }
+            },
+            "name": "Configura l'estat de bloqueig"
+        },
         "set_pet_location": {
             "description": "Estableix la ubicaci\u00f3 de la mascota.",
             "fields": {

@@ -43,6 +43,9 @@
             "cutoff_battery_level": {
                 "name": "Nivell de bateria de tall"
             },
+            "reserve_soc": {
+                "name": "Nivell de bateria de reserva"
+            },
             "restore_battery_level": {
                 "name": "Restaura el nivell de bateria"
             }
@@ -80,6 +83,13 @@
                 "state": {
                     "battery": "Nivell de bateria",
                     "standard": "Est\u00e0ndard"
+                }
+            },
+            "storage_mode": {
+                "name": "Mode emmagatzematge",
+                "state": {
+                    "savings": "Mode estalvi",
+                    "self_consumption": "Autoconsum"
                 }
             }
         },
@@ -128,6 +138,9 @@
             }
         },
         "switch": {
+            "charge_from_grid": {
+                "name": "Carregat des de la xarxa"
+            },
             "grid_enabled": {
                 "name": "Activat en xarxa"
             }

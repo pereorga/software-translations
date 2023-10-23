@@ -35,6 +35,16 @@
         "reset_filter_life": {
             "description": "Restableix la vida \u00fatil del filtre de l'humidificador WeMo al 100%.",
             "name": "Restableix la vida \u00fatil del filtre"
+        },
+        "set_humidity": {
+            "description": "Configura la humitat objectiu dels dispositius humidificadors WeMo.",
+            "fields": {
+                "target_humidity": {
+                    "description": "Humitat objectiu.",
+                    "name": "Humitat objectiu"
+                }
+            },
+            "name": "Configura humitat"
         }
     }
 }

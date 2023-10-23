@@ -10,14 +10,14 @@
         "step": {
             "reauth_confirm": {
                 "data": {
-                    "api_key": "API Key"
+                    "api_key": "API key"
                 },
                 "description": "Please re-enter the API key for {latitude}, {longitude}.",
-                "title": "Reauthenticate Integration"
+                "title": "Reauthenticate integration"
             },
             "user": {
                 "data": {
-                    "api_key": "API Key",
+                    "api_key": "API key",
                     "elevation": "Elevation",
                     "latitude": "Latitude",
                     "longitude": "Longitude"
@@ -40,7 +40,14 @@
                 "name": "Current UV index"
             },
             "current_uv_level": {
-                "name": "Current UV level"
+                "name": "Current UV level",
+                "state": {
+                    "extreme": "Extreme",
+                    "high": "High",
+                    "low": "Low",
+                    "moderate": "Moderate",
+                    "very_high": "Very high"
+                }
             },
             "max_uv_index": {
                 "name": "Max UV index"

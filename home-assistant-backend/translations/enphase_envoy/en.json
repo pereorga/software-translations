@@ -43,6 +43,9 @@
             "cutoff_battery_level": {
                 "name": "Cutoff battery level"
             },
+            "reserve_soc": {
+                "name": "Reserve battery level"
+            },
             "restore_battery_level": {
                 "name": "Restore battery level"
             }
@@ -80,6 +83,14 @@
                 "state": {
                     "battery": "Battery level",
                     "standard": "Standard"
+                }
+            },
+            "storage_mode": {
+                "name": "Storage mode",
+                "state": {
+                    "backup": "Full backup",
+                    "savings": "Savings mode",
+                    "self_consumption": "Self consumption"
                 }
             }
         },
@@ -128,6 +139,9 @@
             }
         },
         "switch": {
+            "charge_from_grid": {
+                "name": "Charge from grid"
+            },
             "grid_enabled": {
                 "name": "Grid enabled"
             }

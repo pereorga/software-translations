@@ -105,6 +105,9 @@
                 "entity_id": {
                     "description": "Nom de l'entitat que es restaurar\u00e0.",
                     "name": "Entitat"
+                },
+                "with_group": {
+                    "name": "Amb grup"
                 }
             },
             "name": "Restaura"
@@ -112,9 +115,15 @@
         "snapshot": {
             "fields": {
                 "entity_id": {
+                    "description": "Nom de l'entitat de la qual es far\u00e0 la instant\u00e0nia.",
                     "name": "Entitat"
+                },
+                "with_group": {
+                    "description": "'True' o 'False', tamb\u00e9 fa una instant\u00e0nia de la disposici\u00f3 del grup.",
+                    "name": "Amb grup"
                 }
-            }
+            },
+            "name": "Instant\u00e0nia"
         },
         "update_alarm": {
             "description": "Actualitza els par\u00e0metres d'hora i volum d'una alarma.",
@@ -126,6 +135,14 @@
                 "enabled": {
                     "description": "Activa o desactiva l'alarma.",
                     "name": "Alarma activada"
+                },
+                "include_linked_zones": {
+                    "description": "Activa o desactiva, la inclusi\u00f3 de sales agrupades.",
+                    "name": "Inclou zones vinculades"
+                },
+                "time": {
+                    "description": "Configura l'hora de l'alarma.",
+                    "name": "Hora"
                 },
                 "volume": {
                     "description": "Configura el volum de l'alarma.",

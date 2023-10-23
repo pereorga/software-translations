@@ -28,7 +28,7 @@
             },
             "setup_serial_manual_path": {
                 "data": {
-                    "port": "USB Device Path"
+                    "port": "USB device path"
                 },
                 "title": "Path"
             },
@@ -42,6 +42,9 @@
     },
     "entity": {
         "sensor": {
+            "current_average_demand": {
+                "name": "Current average demand"
+            },
             "current_electricity_delivery": {
                 "name": "Power production"
             },
@@ -126,6 +129,9 @@
             },
             "max_power_per_phase": {
                 "name": "Max power per phase"
+            },
+            "maximum_demand_current_month": {
+                "name": "Maximum demand current month"
             },
             "short_power_failure_count": {
                 "name": "Short power failure count"

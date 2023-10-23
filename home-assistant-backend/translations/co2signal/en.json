@@ -24,7 +24,7 @@
             },
             "user": {
                 "data": {
-                    "api_key": "Access Token",
+                    "api_key": "Access token",
                     "location": "Location"
                 },
                 "description": "Visit https://electricitymaps.com/free-tier to request a token."
@@ -48,6 +48,15 @@
                         "name": "Country code"
                     }
                 }
+            }
+        }
+    },
+    "selector": {
+        "location": {
+            "options": {
+                "specify_coordinates": "Specify coordinates",
+                "specify_country_code": "Specify country code",
+                "use_home_location": "Use home location"
             }
         }
     }

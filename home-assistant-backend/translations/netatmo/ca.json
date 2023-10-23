@@ -88,6 +88,20 @@
             },
             "name": "Configura persones a casa"
         },
+        "set_preset_mode_with_end_datetime": {
+            "description": "Estableix el mode de preconfiguraci\u00f3 d'un dispositiu de clima Netatmo. El mode de preconfiguraci\u00f3 ha de coincidir amb un mode de preconfiguraci\u00f3 configurat a Netatmo.",
+            "fields": {
+                "end_datetime": {
+                    "description": "Data i hora fins a la qual el programa estar\u00e0 actiu.",
+                    "name": "Data i hora final"
+                },
+                "preset_mode": {
+                    "description": "Mode de preconfiguraci\u00f3 del clima, com ara Programaci\u00f3, A fora o Protecci\u00f3 contra gelades.",
+                    "name": "Mode preconfiguraci\u00f3"
+                }
+            },
+            "name": "Estableix el mode preconfiguraci\u00f3 amb la data i l'hora de finalitzaci\u00f3"
+        },
         "set_schedule": {
             "fields": {
                 "schedule_name": {

@@ -73,6 +73,22 @@
                 },
                 "title": "KNX IP-Secure"
             },
+            "secure_key_source_menu_routing": {
+                "description": "Select how you want to configure KNX/IP Secure.",
+                "menu_options": {
+                    "secure_knxkeys": "Use a `.knxkeys` file containing IP secure keys",
+                    "secure_routing_manual": "Configure IP secure backbone key manually"
+                },
+                "title": "KNX IP-Secure"
+            },
+            "secure_key_source_menu_tunnel": {
+                "description": "Select how you want to configure KNX/IP Secure.",
+                "menu_options": {
+                    "secure_knxkeys": "Use a `.knxkeys` file containing IP secure keys",
+                    "secure_tunnel_manual": "Configure IP secure credentials manually"
+                },
+                "title": "KNX IP-Secure"
+            },
             "secure_knxkeys": {
                 "data": {
                     "knxkeys_file": "Keyring file",
@@ -187,6 +203,14 @@
                 "description": "Please enter the connection type we should use for your KNX connection. \n AUTOMATIC - The integration takes care of the connectivity to your KNX Bus by performing a gateway scan. \n TUNNELING - The integration will connect to your KNX bus via tunneling. \n ROUTING - The integration will connect to your KNX bus via routing.",
                 "title": "KNX connection"
             },
+            "init": {
+                "menu_options": {
+                    "communication_settings": "Communication settings",
+                    "connection_type": "Configure KNX interface",
+                    "secure_knxkeys": "Import a `.knxkeys` file"
+                },
+                "title": "KNX Settings"
+            },
             "knxkeys_tunnel_select": {
                 "data": {
                     "user_id": "`Automatic` will use the first free tunnel endpoint."
@@ -239,6 +263,22 @@
                 "menu_options": {
                     "secure_knxkeys": "Use a `.knxkeys` file containing IP secure keys",
                     "secure_routing_manual": "Configure IP secure backbone key manually",
+                    "secure_tunnel_manual": "Configure IP secure credentials manually"
+                },
+                "title": "KNX IP-Secure"
+            },
+            "secure_key_source_menu_routing": {
+                "description": "Select how you want to configure KNX/IP Secure.",
+                "menu_options": {
+                    "secure_knxkeys": "Use a `.knxkeys` file containing IP secure keys",
+                    "secure_routing_manual": "Configure IP secure backbone key manually"
+                },
+                "title": "KNX IP-Secure"
+            },
+            "secure_key_source_menu_tunnel": {
+                "description": "Select how you want to configure KNX/IP Secure.",
+                "menu_options": {
+                    "secure_knxkeys": "Use a `.knxkeys` file containing IP secure keys",
                     "secure_tunnel_manual": "Configure IP secure credentials manually"
                 },
                 "title": "KNX IP-Secure"

@@ -113,6 +113,41 @@
                 }
             }
         },
+        "light_eyecare_mode_off": {
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            }
+        },
+        "light_eyecare_mode_on": {
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            }
+        },
+        "light_night_light_mode_off": {
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            }
+        },
+        "light_night_light_mode_on": {
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            }
+        },
+        "light_reminder_off": {
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            }
+        },
         "light_reminder_on": {
             "fields": {
                 "entity_id": {
@@ -121,11 +156,17 @@
             }
         },
         "light_set_delayed_turn_off": {
+            "description": "Apagada amb retard.",
             "fields": {
                 "entity_id": {
                     "name": "ID de l'entitat"
+                },
+                "time_period": {
+                    "description": "Per\u00edode de temps de l'apagada retardada.",
+                    "name": "Per\u00edode de temps"
                 }
-            }
+            },
+            "name": "Configura desactivaci\u00f3 retardada"
         },
         "light_set_scene": {
             "fields": {
@@ -137,22 +178,69 @@
                 }
             }
         },
+        "remote_learn_command": {
+            "fields": {
+                "slot": {
+                    "description": "Defineix la ranura utilitzada per desar la comanda IR.",
+                    "name": "Ranura"
+                },
+                "timeout": {
+                    "name": "Temps m\u00e0xim d'espera"
+                }
+            },
+            "name": "Apr\u00e8n comandament remot"
+        },
+        "remote_set_led_off": {
+            "description": "Apaga el LED blau.",
+            "name": "Desactiva LED remotament"
+        },
+        "remote_set_led_on": {
+            "description": "Enc\u00e9n el LED blau.",
+            "name": "Activa LED remotament"
+        },
         "switch_set_power_mode": {
+            "description": "Configura el mode de pot\u00e8ncia.",
             "fields": {
                 "entity_id": {
                     "name": "ID de l'entitat"
                 },
                 "mode": {
+                    "description": "Mode de pot\u00e8ncia.",
                     "name": "Mode"
                 }
-            }
+            },
+            "name": "Configura mode de pot\u00e8ncia"
         },
         "switch_set_power_price": {
+            "description": "Configura el preu de l'electricitat.",
             "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                },
                 "mode": {
+                    "description": "Preu de l'electricitat.",
                     "name": "Mode"
                 }
-            }
+            },
+            "name": "Configura preu de l'electricitat"
+        },
+        "switch_set_wifi_led_off": {
+            "description": "Apaga el LED del Wi-Fi.",
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            },
+            "name": "Desactiva LED Wi-Fi"
+        },
+        "switch_set_wifi_led_on": {
+            "description": "Enc\u00e9n el LED del Wi-Fi.",
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            },
+            "name": "Activa LED Wi-Fi"
         },
         "vacuum_clean_segment": {
             "description": "Comen\u00e7a a netejar els segments especificats.",
@@ -161,15 +249,22 @@
                     "description": "Segments.",
                     "name": "Segments"
                 }
-            }
+            },
+            "name": "Aspira/neteja segment"
         },
         "vacuum_clean_zone": {
+            "description": "Inicia l'operaci\u00f3 de neteja a les zones seleccionades pel nombre de repeticions indicades.",
             "fields": {
+                "repeats": {
+                    "description": "Nombre de repeticions de neteja per a cada zona.",
+                    "name": "Repeticions"
+                },
                 "zone": {
                     "description": "Llista de zones. Cada zona \u00e9s una llista de 4 valors enters.",
                     "name": "Zona"
                 }
-            }
+            },
+            "name": "Aspira/neteja zona"
         },
         "vacuum_goto": {
             "description": "Va a les coordenades especificades.",
@@ -182,11 +277,14 @@
                     "description": "Coordenada-Y.",
                     "name": "Coordenada Y."
                 }
-            }
+            },
+            "name": "V\u00e9s a (aspirador)"
         },
         "vacuum_remote_control_move": {
+            "description": "Controla a dist\u00e0ncia l'aspirador, assegura't que primer l'hagis configurat en mode de control remot mitjan\u00e7ant `remote_control_start`.",
             "fields": {
                 "duration": {
+                    "description": "Durada del moviment.",
                     "name": "Durada"
                 },
                 "rotation": {
@@ -197,11 +295,14 @@
                     "description": "Velocitat.",
                     "name": "Velocitat"
                 }
-            }
+            },
+            "name": "Mou remotament aspirador"
         },
         "vacuum_remote_control_move_step": {
+            "description": "Controla a dist\u00e0ncia l'aspirador, nom\u00e9s fa un moviment i despr\u00e9s s'atura.",
             "fields": {
                 "duration": {
+                    "description": "Durada del moviment.",
                     "name": "Durada"
                 },
                 "rotation": {
@@ -212,7 +313,16 @@
                     "description": "Velocitat.",
                     "name": "Velocitat"
                 }
-            }
+            },
+            "name": "Mou remotament aspirador, un pas"
+        },
+        "vacuum_remote_control_start": {
+            "description": "Inicia el control remot de l'aspirador. Despr\u00e9s, podr\u00e0s moure'l amb `remote_control_move`. Quan acabis, crida a `remote_control_stop`.",
+            "name": "Inicia control remota aspirador"
+        },
+        "vacuum_remote_control_stop": {
+            "description": "Atura el control remot de l'aspirador.",
+            "name": "Atura control remot aspirador"
         }
     }
 }

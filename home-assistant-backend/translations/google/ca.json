@@ -52,9 +52,11 @@
                     "name": "ID del calendari"
                 },
                 "description": {
+                    "description": "Descripci\u00f3 de l'esdeveniment. Opcional.",
                     "name": "Descripci\u00f3"
                 },
                 "end_date": {
+                    "description": "Data en qu\u00e8 ha de finalitzar l'esdeveniment de tot el dia.",
                     "name": "Data final"
                 },
                 "end_date_time": {
@@ -68,21 +70,45 @@
                 "start_date": {
                     "description": "Data en qu\u00e8 ha de comen\u00e7ar l'esdeveniment de tot el dia.",
                     "name": "Data d'inici"
+                },
+                "summary": {
+                    "description": "Actua com a t\u00edtol de l'esdeveniment."
                 }
             }
         },
         "create_event": {
+            "description": "Afegeix un nou esdeveniment al calendari.",
             "fields": {
+                "description": {
+                    "description": "Descripci\u00f3 de l'esdeveniment. Opcional.",
+                    "name": "Descripci\u00f3"
+                },
+                "end_date": {
+                    "description": "Data en qu\u00e8 ha de finalitzar l'esdeveniment de tot el dia.",
+                    "name": "Data final"
+                },
+                "end_date_time": {
+                    "description": "Data i hora en qu\u00e8 ha de finalitzar l'esdeveniment.",
+                    "name": "Data i hora final"
+                },
+                "in": {
+                    "description": "Dies o setmanes que falten per l'esdeveniment.",
+                    "name": "D'aqu\u00ed a"
+                },
                 "location": {
+                    "description": "Ubicaci\u00f3 de l'esdeveniment. Opcional.",
                     "name": "Ubicaci\u00f3"
                 },
                 "start_date": {
-                    "description": "Data en qu\u00e8 ha de comen\u00e7ar l'esdeveniment de tot el dia."
+                    "description": "Data en qu\u00e8 ha de comen\u00e7ar l'esdeveniment de tot el dia.",
+                    "name": "Data d'inici"
                 },
                 "start_date_time": {
+                    "description": "Data i hora en qu\u00e8 ha de comen\u00e7ar l'esdeveniment.",
                     "name": "Hora d'inici"
                 },
                 "summary": {
+                    "description": "Actua com a t\u00edtol de l'esdeveniment.",
                     "name": "Resum"
                 }
             },

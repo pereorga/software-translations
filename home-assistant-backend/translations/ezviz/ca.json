@@ -87,6 +87,11 @@
                 "name": "Sensibilitat de detecci\u00f3"
             }
         },
+        "select": {
+            "alarm_sound_mode": {
+                "name": "So d'alerta"
+            }
+        },
         "sensor": {
             "alarm_sound_mod": {
                 "name": "Volum de l'alarma"
@@ -160,6 +165,15 @@
         }
     },
     "issues": {
+        "service_deprecation_alarm_sound_level": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "El servei de volum d'alarma d'Ezviz est\u00e0 obsolet i s'eliminar\u00e0 de Home Assistant.\nPer fer configurar el volum de l'alarma, pots utilitzar el servei `select.select_option`amb una entitat de so d'alerta.\n\nElimina aquest servei de les teves automatitzacions i/o scripts i selecciona **Envia** per resoldre aquest problema."
+                    }
+                }
+            }
+        },
         "service_depreciation_detection_sensibility": {
             "description": "El servei de sensibilitat d'Ezviz Detection est\u00e0 obsolet i s'eliminar\u00e0 de Home Assistant a partir de la versi\u00f3 2023.12; modifica les automatitzacions o scripts que utilitzin el servei i, a continuaci\u00f3, selecciona Envia per marcar aquest problema com a resolt.",
             "fix_flow": {
@@ -195,16 +209,32 @@
         }
     },
     "services": {
-        "ptz": {
-            "fields": {
-                "speed": {
-                    "name": "Velocitat"
-                }
-            }
-        },
-        "set_alarm_detection_sensibility": {
+        "alarm_sound": {
+            "description": "Configura el volum del so d'alerta de moviment.",
             "fields": {
                 "level": {
+                    "name": "Volum"
+                }
+            },
+            "name": "Configura el volum del so d'alerta."
+        },
+        "ptz": {
+            "fields": {
+                "direction": {
+                    "name": "Direcci\u00f3"
+                },
+                "speed": {
+                    "description": "Velocitat del moviment (d'1 a 9).",
+                    "name": "Velocitat"
+                }
+            },
+            "name": "PTZ"
+        },
+        "set_alarm_detection_sensibility": {
+            "description": "Configura el nivell de sensibilitat de detecci\u00f3.",
+            "fields": {
+                "level": {
+                    "description": "Nivell de sensibilitat 1 a 6 per al tipus 0 (c\u00e0mera normal) o, 1 a 100 per al tipus 3 (c\u00e0mera amb sensor PIR).",
                     "name": "Nivell de sensibilitat"
                 },
                 "type_value": {
@@ -215,6 +245,7 @@
             "name": "Sensibilitat de detecci\u00f3"
         },
         "sound_alarm": {
+            "description": "Fa sonar l'alarma de la c\u00e0mera.",
             "fields": {
                 "enable": {
                     "description": "Introdueix 1 o 2 (1=desactivar, 2=activar).",
@@ -222,6 +253,10 @@
                 }
             },
             "name": "Fes sonar l'alarma"
+        },
+        "wake_device": {
+            "description": "Es pot utilitzar per despertar la c\u00e0mera/dispositiu en hibernaci\u00f3.",
+            "name": "Desperta c\u00e0mera"
         }
     }
 }

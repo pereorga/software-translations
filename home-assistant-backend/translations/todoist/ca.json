@@ -20,14 +20,37 @@
     },
     "services": {
         "new_task": {
+            "description": "Crea una nova tasca i l'afegeix a un projecte.",
             "fields": {
+                "assignee": {
+                    "description": "Nom d'usuari del membre d'un projecte compartit al qual assignar la tasca."
+                },
+                "content": {
+                    "description": "Nom de la tasca.",
+                    "name": "Contingut"
+                },
+                "due_date": {
+                    "description": "Data de venciment de la tasca, en format AAAA-MM-DD o AAAA-MM-DDTHH:MM:SS, en zona hor\u00e0ria UTC.",
+                    "name": "Data de venciment"
+                },
                 "priority": {
+                    "description": "Prioritat de la tasca, d'1 (normal) a 4 (urgent).",
                     "name": "Prioritat"
                 },
                 "project": {
+                    "description": "Nom del projecte al qual pertany la tasca.",
                     "name": "Projecte"
+                },
+                "reminder_date": {
+                    "description": "Data pel recordatori a l'usuari de la tasca, en format AAAA-MM-DD o AAAA-MM-DDTHH:MM:SS, en zona hor\u00e0ria UTC.",
+                    "name": "Data del recordatori"
+                },
+                "reminder_date_lang": {
+                    "description": "Idioma de reminder_date_string.",
+                    "name": "Idioma de les dades del recordatori"
                 }
-            }
+            },
+            "name": "Nova tasca"
         }
     }
 }

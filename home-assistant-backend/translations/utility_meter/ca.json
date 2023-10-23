@@ -54,7 +54,18 @@
     },
     "services": {
         "calibrate": {
+            "description": "Calibra un sensor del comptador.",
+            "fields": {
+                "value": {
+                    "description": "Valor al qual configurar el comptador.",
+                    "name": "Valor"
+                }
+            },
             "name": "Calibra"
+        },
+        "reset": {
+            "description": "Reinicia tots els valors d'un comptador.",
+            "name": "Reinicia"
         }
     },
     "title": "Comptador"

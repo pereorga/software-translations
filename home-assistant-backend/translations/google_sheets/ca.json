@@ -31,5 +31,25 @@
                 "title": "Reautenticaci\u00f3 de la integraci\u00f3"
             }
         }
+    },
+    "services": {
+        "append_sheet": {
+            "description": "Afegeix dades a un full de treball de Fulls de c\u00e0lcul de Google.",
+            "fields": {
+                "config_entry": {
+                    "description": "Full al qual afegir les dades.",
+                    "name": "Full"
+                },
+                "data": {
+                    "description": "Dades a adjuntar al full de treball. Posa els valors en una nova fila sota la columna (clau) coincident. Qualsevol clau nova es col\u00b7loca a la part superior d'una nova columna.",
+                    "name": "Dades"
+                },
+                "worksheet": {
+                    "description": "Nom del full de treball. Per defecte, el primer del document.",
+                    "name": "Full de treball"
+                }
+            },
+            "name": "Adjuntar a full"
+        }
     }
 }

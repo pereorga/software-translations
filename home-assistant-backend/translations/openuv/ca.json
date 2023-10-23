@@ -29,7 +29,7 @@
     "entity": {
         "binary_sensor": {
             "protection_window": {
-                "name": "Finestra de protecci\u00f3"
+                "name": "Protecci\u00f3 solar"
             }
         },
         "sensor": {
@@ -40,7 +40,14 @@
                 "name": "\u00cdndex UV actual"
             },
             "current_uv_level": {
-                "name": "Nivell UV actual"
+                "name": "Nivell UV actual",
+                "state": {
+                    "extreme": "Extrem",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "moderate": "Moderat",
+                    "very_high": "Molt alt"
+                }
             },
             "max_uv_index": {
                 "name": "\u00cdndex UV m\u00e0xim"
@@ -79,8 +86,8 @@
         "step": {
             "init": {
                 "data": {
-                    "from_window": "\u00cdndex UV d'inicialitzaci\u00f3 de la finestra protectora",
-                    "to_window": "\u00cdndex UV de finalitzaci\u00f3 de la finestra protectora"
+                    "from_window": "\u00cdndex UV d'inici de protecci\u00f3 solar",
+                    "to_window": "\u00cdndex UV de finalitzaci\u00f3 de protecci\u00f3 solar"
                 },
                 "title": "Configura OpenUV"
             }

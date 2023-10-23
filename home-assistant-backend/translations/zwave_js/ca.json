@@ -104,6 +104,17 @@
             },
             "title": "Ha canviat la configuraci\u00f3 del dispositiu Z-Wave: {device_name}"
         },
+        "dry_fan_presets_deprecation": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Est\u00e0s utilitzant els modes de preconfiguraci\u00f3 d'assecat o de ventilador a l'entitat `{entity_id}`. \n\nAquests modes de preconfiguraci\u00f3 estan obsolets i s'eliminaran. Actualitza les teves automatitzacions perqu\u00e8 utilitzin els modes **HVAC** corresponents. \n\nFes clic a ENVIA, a continuaci\u00f3, un cop hagis corregit manualment aquest problema.",
+                        "title": "S'eliminaran els modes preconfigurats d'assecat i de ventilador: {entity_id}"
+                    }
+                }
+            },
+            "title": "S'eliminaran els modes preconfigurats d'assecat i de ventilador: {entity_id}"
+        },
         "invalid_server_version": {
             "description": "La versi\u00f3 del servidor Z-Wave JS que est\u00e0s executant actualment \u00e9s massa antiga per a aquesta versi\u00f3 de Home Assistant. Actualitza a l'\u00faltima versi\u00f3 per resoldre aquest problema.",
             "title": "Es necessita una versi\u00f3 m\u00e9s nova del servidor Z-Wave JS"

@@ -70,6 +70,25 @@
                 }
             },
             "name": "Comanda ADB"
+        },
+        "download": {
+            "description": "Baixa un fitxer d'un dispositiu Android/Fire TV a la teva inst\u00e0ncia de Home Assistant.",
+            "fields": {
+                "device_path": {
+                    "description": "Ruta del fitxer del dispositiu Android/Fire TV.",
+                    "name": "Ruta del dispositiu"
+                }
+            }
+        },
+        "upload": {
+            "description": "Penja un fitxer de la teva inst\u00e0ncia de Home Assistant a un dispositiu Android/Fire TV.",
+            "fields": {
+                "device_path": {
+                    "description": "Ruta del fitxer del dispositiu Android/Fire TV.",
+                    "name": "Ruta del dispositiu"
+                }
+            },
+            "name": "Puja"
         }
     }
 }

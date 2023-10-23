@@ -72,11 +72,14 @@
     },
     "services": {
         "unlock_specific_door": {
+            "description": "Desbloqueja una o m\u00e9s portes espec\u00edfiques.",
             "fields": {
                 "door": {
+                    "description": "Un dels seg\u00fcents: 'all', 'driver' o 'tailgate'.",
                     "name": "Porta"
                 }
-            }
+            },
+            "name": "Desbloqueja porta espec\u00edfica"
         }
     }
 }

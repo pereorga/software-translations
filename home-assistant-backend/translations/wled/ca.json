@@ -92,14 +92,40 @@
     },
     "services": {
         "effect": {
+            "description": "Controla la configuraci\u00f3 d'efectes de WLED.",
             "fields": {
                 "effect": {
+                    "description": "Nom o ID de l'efecte llumin\u00f3s de WLED.",
                     "name": "Efecte"
                 },
+                "intensity": {
+                    "description": "Intensitat de l'efecte. Nombre entre 0 i 255.",
+                    "name": "Intensitat de l'efecte"
+                },
+                "palette": {
+                    "description": "Nom o ID de la paleta de colors llums de WLED.",
+                    "name": "Paleta de colors"
+                },
+                "reverse": {
+                    "description": "Inverteix l'efecte. 'True' per invertir o 'False' altrament.",
+                    "name": "Efecte invers"
+                },
                 "speed": {
+                    "description": "Velocitat de l'efecte.",
                     "name": "Velocitat d'efecte"
                 }
-            }
+            },
+            "name": "Configura efecte"
+        },
+        "preset": {
+            "description": "Estableix una preconfiguraci\u00f3 per a un dispositiu WLED.",
+            "fields": {
+                "preset": {
+                    "description": "ID de la preconfiguraci\u00f3 WLED.",
+                    "name": "ID de preconfiguraci\u00f3"
+                }
+            },
+            "name": "Estableix preconfiguraci\u00f3 (obsolet)"
         }
     }
 }

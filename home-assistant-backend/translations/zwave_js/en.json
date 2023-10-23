@@ -31,7 +31,7 @@
                     "s2_access_control_key": "S2 Access Control Key",
                     "s2_authenticated_key": "S2 Authenticated Key",
                     "s2_unauthenticated_key": "S2 Unauthenticated Key",
-                    "usb_path": "USB Device Path"
+                    "usb_path": "USB device path"
                 },
                 "description": "The add-on will generate security keys if those fields are left empty.",
                 "title": "Enter the Z-Wave JS add-on configuration"
@@ -100,12 +100,12 @@
                 },
                 "step": {
                     "confirm": {
-                        "description": "Z-Wave JS discovers a lot of device metadata by interviewing the device. However, some of the information has to be loaded from a configuration file. Some of this information is only evaluated once, during the device interview.\n\nWhen a device config file is updated, this information may be stale and and the device must be re-interviewed to pick up the changes.\n\n This is not a required operation and device functionality will be impacted during the re-interview process, but you may see improvements for your device once it is complete.\n\nIf you'd like to proceed, click on SUBMIT below. The re-interview will take place in the background.",
-                        "title": "Z-Wave device configuration file changed: {device_name}"
+                        "description": "The device configuration file for {device_name} has changed.\n\nZ-Wave JS discovers a lot of device metadata by interviewing the device. However, some of the information has to be loaded from a configuration file. Some of this information is only evaluated once, during the device interview.\n\nWhen a device config file is updated, this information may be stale and and the device must be re-interviewed to pick up the changes.\n\n This is not a required operation and device functionality will be impacted during the re-interview process, but you may see improvements for your device once it is complete.\n\nIf you'd like to proceed, click on SUBMIT below. The re-interview will take place in the background.",
+                        "title": "Device configuration file changed: {device_name}"
                     }
                 }
             },
-            "title": "Z-Wave device configuration file changed: {device_name}"
+            "title": "Device configuration file changed: {device_name}"
         },
         "dry_fan_presets_deprecation": {
             "fix_flow": {
@@ -152,7 +152,7 @@
                     "s2_access_control_key": "S2 Access Control Key",
                     "s2_authenticated_key": "S2 Authenticated Key",
                     "s2_unauthenticated_key": "S2 Unauthenticated Key",
-                    "usb_path": "USB Device Path"
+                    "usb_path": "USB device path"
                 },
                 "description": "The add-on will generate security keys if those fields are left empty.",
                 "title": "Enter the Z-Wave JS add-on configuration"

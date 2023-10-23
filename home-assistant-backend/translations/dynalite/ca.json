@@ -23,17 +23,21 @@
     },
     "services": {
         "request_area_preset": {
+            "description": "Sol\u00b7licita a Dynalite que informi de la preconfiguraci\u00f3 d'una \u00e0rea.",
             "fields": {
                 "area": {
+                    "description": "\u00c0rea on sol\u00b7licitar la preconfiguraci\u00f3.",
                     "name": "\u00c0rea"
                 },
                 "channel": {
+                    "description": "Canal des del qual sol\u00b7licitar la preconfiguraci\u00f3.",
                     "name": "Canal"
                 },
                 "host": {
                     "name": "Amfitri\u00f3"
                 }
-            }
+            },
+            "name": "Sol\u00b7licita preconfiguraci\u00f3 d'\u00e0rea"
         },
         "request_channel_level": {
             "fields": {

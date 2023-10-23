@@ -157,6 +157,404 @@
             "remote_button_triple_press": "\"{subtype}\" triple clicked"
         }
     },
+    "entity": {
+        "alarm_control_panel": {
+            "alarm_control_panel": {
+                "name": "Alarm control panel"
+            }
+        },
+        "binary_sensor": {
+            "accelerometer": {
+                "name": "Accelerometer"
+            },
+            "binary_input": {
+                "name": "Binary input"
+            },
+            "calibrated": {
+                "name": "Calibrated"
+            },
+            "consumer_connected": {
+                "name": "Consumer connected"
+            },
+            "external_sensor": {
+                "name": "External sensor"
+            },
+            "frost_lock": {
+                "name": "Frost lock"
+            },
+            "ias_zone": {
+                "name": "IAS zone"
+            },
+            "linkage_alarm_state": {
+                "name": "Linkage alarm state"
+            },
+            "replace_filter": {
+                "name": "Replace filter"
+            },
+            "valve_alarm": {
+                "name": "Valve alarm"
+            }
+        },
+        "button": {
+            "feed": {
+                "name": "Feed"
+            },
+            "reset_frost_lock": {
+                "name": "Frost lock reset"
+            },
+            "reset_no_presence_status": {
+                "name": "Presence status reset"
+            },
+            "self_test": {
+                "name": "Self-test"
+            }
+        },
+        "climate": {
+            "thermostat": {
+                "name": "Thermostat"
+            }
+        },
+        "cover": {
+            "cover": {
+                "name": "Cover"
+            },
+            "keen_vent": {
+                "name": "Keen vent"
+            },
+            "shade": {
+                "name": "Shade"
+            }
+        },
+        "fan": {
+            "fan": {
+                "name": "Fan"
+            },
+            "fan_group": {
+                "name": "Fan group"
+            }
+        },
+        "light": {
+            "light": {
+                "name": "Light"
+            },
+            "light_group": {
+                "name": "Light group"
+            }
+        },
+        "lock": {
+            "door_lock": {
+                "name": "Door lock"
+            }
+        },
+        "number": {
+            "auto_off_timer": {
+                "name": "Automatic switch shutoff timer"
+            },
+            "away_preset_temperature": {
+                "name": "Away preset temperature"
+            },
+            "button_delay": {
+                "name": "Button delay"
+            },
+            "default_move_rate": {
+                "name": "Default move rate"
+            },
+            "detection_interval": {
+                "name": "Detection interval"
+            },
+            "dimming_speed_down_local": {
+                "name": "Local dimming down speed"
+            },
+            "dimming_speed_down_remote": {
+                "name": "Remote dimming down speed"
+            },
+            "dimming_speed_up_local": {
+                "name": "Local dimming up speed"
+            },
+            "dimming_speed_up_remote": {
+                "name": "Remote dimming up speed"
+            },
+            "double_tap_down_level": {
+                "name": "Double tap down level"
+            },
+            "double_tap_up_level": {
+                "name": "Double tap up level"
+            },
+            "filter_life_time": {
+                "name": "Filter life time"
+            },
+            "led_color_when_off": {
+                "name": "Default all LED off color"
+            },
+            "led_color_when_on": {
+                "name": "Default all LED on color"
+            },
+            "led_intensity_when_off": {
+                "name": "Default all LED off intensity"
+            },
+            "led_intensity_when_on": {
+                "name": "Default all LED on intensity"
+            },
+            "load_level_indicator_timeout": {
+                "name": "Load level indicator timeout"
+            },
+            "maximum_level": {
+                "name": "Maximum load dimming level"
+            },
+            "minimum_level": {
+                "name": "Minimum load dimming level"
+            },
+            "number": {
+                "name": "Number"
+            },
+            "off_transition_time": {
+                "name": "Off transition time"
+            },
+            "on_level": {
+                "name": "On level"
+            },
+            "on_off_transition_time": {
+                "name": "On/Off transition time"
+            },
+            "on_transition_time": {
+                "name": "On transition time"
+            },
+            "portion_weight": {
+                "name": "Portion weight"
+            },
+            "ramp_rate_off_to_on_local": {
+                "name": "Local ramp rate off to on"
+            },
+            "ramp_rate_off_to_on_remote": {
+                "name": "Remote ramp rate off to on"
+            },
+            "ramp_rate_on_to_off_local": {
+                "name": "Local ramp rate on to off"
+            },
+            "ramp_rate_on_to_off_remote": {
+                "name": "Remote ramp rate on to off"
+            },
+            "serving_size": {
+                "name": "Serving to dispense"
+            },
+            "start_up_color_temperature": {
+                "name": "Start-up color temperature"
+            },
+            "start_up_current_level": {
+                "name": "Start-up current level"
+            },
+            "timer_duration": {
+                "name": "Timer duration"
+            },
+            "transmit_power": {
+                "name": "Transmit power"
+            }
+        },
+        "select": {
+            "approach_distance": {
+                "name": "Approach distance"
+            },
+            "backlight_mode": {
+                "name": "Backlight mode"
+            },
+            "default_siren_level": {
+                "name": "Default siren level"
+            },
+            "default_siren_tone": {
+                "name": "Default siren tone"
+            },
+            "default_strobe": {
+                "name": "Default strobe"
+            },
+            "default_strobe_level": {
+                "name": "Default strobe level"
+            },
+            "feeding_mode": {
+                "name": "Mode"
+            },
+            "increased_non_neutral_output": {
+                "name": "Non neutral output"
+            },
+            "led_scaling_mode": {
+                "name": "Led scaling mode"
+            },
+            "monitoring_mode": {
+                "name": "Monitoring mode"
+            },
+            "motion_sensitivity": {
+                "name": "Motion sensitivity"
+            },
+            "output_mode": {
+                "name": "Output mode"
+            },
+            "power_on_state": {
+                "name": "Power on state"
+            },
+            "preset": {
+                "name": "Preset"
+            },
+            "start_up_on_off": {
+                "name": "Start-up behavior"
+            },
+            "switch_type": {
+                "name": "Switch type"
+            },
+            "window_covering_mode": {
+                "name": "Curtain mode"
+            }
+        },
+        "sensor": {
+            "ac_frequency": {
+                "name": "AC frequency"
+            },
+            "analog_input": {
+                "name": "Analog input"
+            },
+            "device_run_time": {
+                "name": "Device run time"
+            },
+            "device_temperature": {
+                "name": "Device temperature"
+            },
+            "filter_run_time": {
+                "name": "Filter run time"
+            },
+            "formaldehyde": {
+                "name": "Formaldehyde concentration"
+            },
+            "hvac_action": {
+                "name": "HVAC action"
+            },
+            "instantaneous_demand": {
+                "name": "Instantaneous demand"
+            },
+            "last_feeding_size": {
+                "name": "Last feeding size"
+            },
+            "last_feeding_source": {
+                "name": "Last feeding source"
+            },
+            "leaf_wetness": {
+                "name": "Leaf wetness"
+            },
+            "lqi": {
+                "name": "LQI"
+            },
+            "portions_dispensed_today": {
+                "name": "Portions dispensed today"
+            },
+            "rssi": {
+                "name": "RSSI"
+            },
+            "smoke_density": {
+                "name": "Smoke density"
+            },
+            "soil_moisture": {
+                "name": "Soil moisture"
+            },
+            "summation_delivered": {
+                "name": "Summation delivered"
+            },
+            "tier1_summation_delivered": {
+                "name": "Tier 1 summation delivered"
+            },
+            "tier2_summation_delivered": {
+                "name": "Tier 2 summation delivered"
+            },
+            "tier3_summation_delivered": {
+                "name": "Tier 3 summation delivered"
+            },
+            "tier4_summation_delivered": {
+                "name": "Tier 4 summation delivered"
+            },
+            "tier5_summation_delivered": {
+                "name": "Tier 5 summation delivered"
+            },
+            "tier6_summation_delivered": {
+                "name": "Tier 6 summation delivered"
+            },
+            "timer_time_left": {
+                "name": "Time left"
+            },
+            "weight_dispensed_today": {
+                "name": "Weight dispensed today"
+            }
+        },
+        "switch": {
+            "aux_switch_scenes": {
+                "name": "Aux switch scenes"
+            },
+            "binding_off_to_on_sync_level": {
+                "name": "Binding off to on sync level"
+            },
+            "buzzer_manual_alarm": {
+                "name": "Buzzer manual alarm"
+            },
+            "buzzer_manual_mute": {
+                "name": "Buzzer manual mute"
+            },
+            "child_lock": {
+                "name": "Child lock"
+            },
+            "disable_clear_notifications_double_tap": {
+                "name": "Disable config 2x tap to clear notifications"
+            },
+            "disable_led": {
+                "name": "Disable LED"
+            },
+            "double_tap_down_enabled": {
+                "name": "Double tap down enabled"
+            },
+            "double_tap_up_enabled": {
+                "name": "Double tap up enabled"
+            },
+            "firmware_progress_led": {
+                "name": "Firmware progress LED"
+            },
+            "heartbeat_indicator": {
+                "name": "Heartbeat indicator"
+            },
+            "invert_switch": {
+                "name": "Invert switch"
+            },
+            "led_indicator": {
+                "name": "LED indicator"
+            },
+            "linkage_alarm": {
+                "name": "Linkage alarm"
+            },
+            "local_protection": {
+                "name": "Local protection"
+            },
+            "one_led_mode": {
+                "name": "Only 1 LED mode"
+            },
+            "power_outage_memory": {
+                "name": "Power outage memory"
+            },
+            "relay_click_in_on_off_mode": {
+                "name": "Disable relay click in on off mode"
+            },
+            "smart_bulb_mode": {
+                "name": "Smart bulb mode"
+            },
+            "switch": {
+                "name": "Switch"
+            },
+            "trigger_indicator": {
+                "name": "LED trigger indicator"
+            },
+            "valve_detection": {
+                "name": "Valve detection"
+            },
+            "window_detection": {
+                "name": "Window detection"
+            },
+            "window_detection_function": {
+                "name": "Invert window detection"
+            }
+        }
+    },
     "issues": {
         "inconsistent_network_settings": {
             "fix_flow": {

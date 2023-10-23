@@ -1,14 +1,22 @@
 {
     "services": {
         "teach_face": {
+            "description": "Fa que facebox aprengui una imatge mitjan\u00e7ant un fitxer.",
             "fields": {
                 "entity_id": {
+                    "description": "Entitat facebox a aprendre.",
                     "name": "Entitat"
                 },
+                "file_path": {
+                    "description": "Ruta de la imatge.",
+                    "name": "Ruta del fitxer"
+                },
                 "name": {
+                    "description": "Nom de la cara a aprendre.",
                     "name": "Nom"
                 }
-            }
+            },
+            "name": "Apr\u00e8n cara"
         }
     }
 }

@@ -44,10 +44,10 @@
                     "name": "Pas de velocitat"
                 },
                 "preset_mode": {
-                    "name": "Mode preestablert"
+                    "name": "Mode preconfiguraci\u00f3"
                 },
                 "preset_modes": {
-                    "name": "Modes preestablerts disponibles"
+                    "name": "Modes preconfigurats disponibles"
                 }
             }
         }
@@ -59,6 +59,16 @@
         }
     },
     "services": {
+        "set_preset_mode": {
+            "description": "Estableix el mode preconfiguraci\u00f3.",
+            "fields": {
+                "preset_mode": {
+                    "description": "Mode preconfiguraci\u00f3.",
+                    "name": "Mode preconfiguraci\u00f3"
+                }
+            },
+            "name": "Estableix mode preconfiguraci\u00f3"
+        },
         "toggle": {
             "name": "Commuta"
         },
@@ -66,6 +76,12 @@
             "name": "Apaga"
         },
         "turn_on": {
+            "fields": {
+                "preset_mode": {
+                    "description": "Mode preconfiguraci\u00f3.",
+                    "name": "Mode preconfiguraci\u00f3"
+                }
+            },
             "name": "Enc\u00e9n"
         }
     },

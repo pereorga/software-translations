@@ -22,11 +22,45 @@
             },
             "user": {
                 "data": {
-                    "api_key": "API Key",
+                    "api_key": "API key",
                     "location": "Location",
                     "method": "How do you want to select a measuring station?"
                 },
                 "description": "Select a location to get the closest measuring station."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "carbon_monoxide": {
+                "name": "Carbon monoxide"
+            },
+            "dominant_pollutant": {
+                "name": "Dominant pollutant",
+                "state": {
+                    "co": "Carbon monoxide",
+                    "neph": "Nephelometry",
+                    "no2": "Nitrogen dioxide",
+                    "o3": "Ozone",
+                    "pm10": "PM10",
+                    "pm25": "PM2.5",
+                    "so2": "Sulphur dioxide"
+                }
+            },
+            "nitrogen_dioxide": {
+                "name": "Nitrogen dioxide"
+            },
+            "ozone": {
+                "name": "Ozone"
+            },
+            "pm10": {
+                "name": "PM10"
+            },
+            "pm25": {
+                "name": "PM2.5"
+            },
+            "sulphur_dioxide": {
+                "name": "Sulphur dioxide"
             }
         }
     },

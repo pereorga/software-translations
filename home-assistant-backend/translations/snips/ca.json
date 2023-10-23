@@ -36,6 +36,10 @@
         },
         "say_action": {
             "fields": {
+                "can_be_enqueued": {
+                    "description": "Si \u00e9s 'True', la sessi\u00f3 espera que finalitzi la sessi\u00f3 oberta, si \u00e9s 'False', la sessi\u00f3 s'elimina si s'est\u00e0 se n'est\u00e0 executant una.",
+                    "name": "Es poden posar en cua"
+                },
                 "custom_data": {
                     "description": "Dades personalitzades que s'inclouran en tots els missatges d'aquesta sessi\u00f3.",
                     "name": "Dades personalitzades"

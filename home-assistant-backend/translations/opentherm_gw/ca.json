@@ -72,6 +72,7 @@
                     "name": "ID de la passarel\u00b7la"
                 },
                 "id": {
+                    "description": "ID del pin GPIO.",
                     "name": "ID"
                 },
                 "mode": {
@@ -119,7 +120,8 @@
                 "level": {
                     "name": "Nivell"
                 }
-            }
+            },
+            "name": "Configura la modulaci\u00f3 m\u00e0xima"
         },
         "set_outside_temperature": {
             "fields": {
@@ -136,6 +138,9 @@
             "fields": {
                 "gateway_id": {
                     "name": "ID de la passarel\u00b7la"
+                },
+                "temperature": {
+                    "name": "Temperatura"
                 }
             }
         }

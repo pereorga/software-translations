@@ -2,11 +2,11 @@
     "device_automation": {
         "action_type": {
             "set_hvac_mode": "Canvia el mode HVAC de {entity_name}",
-            "set_preset_mode": "Canvia la configuraci\u00f3 preestablerta de {entity_name}"
+            "set_preset_mode": "Canvia la preconfiguraci\u00f3 de {entity_name}"
         },
         "condition_type": {
             "is_hvac_mode": "{entity_name} est\u00e0 configurat/ada en un mode HVAC espec\u00edfic",
-            "is_preset_mode": "{entity_name} est\u00e0 configurat/ada en un mode preestablert espec\u00edfic"
+            "is_preset_mode": "{entity_name} est\u00e0 configurat/ada en un mode preconfigurat espec\u00edfic"
         },
         "trigger_type": {
             "current_humidity_changed": "Ha canviat la humitat mesurada per {entity_name}",
@@ -85,7 +85,7 @@
                     "name": "Temperatura objectiu m\u00ednima"
                 },
                 "preset_mode": {
-                    "name": "Mode",
+                    "name": "Preconfiguraci\u00f3",
                     "state": {
                         "activity": "Activitat",
                         "away": "A fora",
@@ -98,7 +98,7 @@
                     }
                 },
                 "preset_modes": {
-                    "name": "Programes"
+                    "name": "Preconfiguracions"
                 },
                 "swing_mode": {
                     "name": "Mode d'oscil\u00b7laci\u00f3",
@@ -178,18 +178,54 @@
             },
             "name": "Configura humitat objectiu"
         },
-        "set_temperature": {
+        "set_hvac_mode": {
+            "description": "Configura el mode de funcionament HVAC.",
             "fields": {
+                "hvac_mode": {
+                    "description": "Mode de funcionament HVAC.",
+                    "name": "Mode HVAC"
+                }
+            },
+            "name": "Configura mode HVAC"
+        },
+        "set_preset_mode": {
+            "description": "Estableix el mode preconfiguraci\u00f3.",
+            "fields": {
+                "preset_mode": {
+                    "description": "Mode preconfiguraci\u00f3.",
+                    "name": "Mode preconfiguraci\u00f3"
+                }
+            },
+            "name": "Estableix mode preconfiguraci\u00f3"
+        },
+        "set_temperature": {
+            "description": "Configura la temperatura objectiu (desitjada).",
+            "fields": {
+                "hvac_mode": {
+                    "description": "Mode de funcionament HVAC.",
+                    "name": "Mode HVAC"
+                },
+                "target_temp_high": {
+                    "description": "Temperatura alta objectiu.",
+                    "name": "Temperatura alta objectiu"
+                },
+                "target_temp_low": {
+                    "description": "Temperatura baixa objectiu.",
+                    "name": "Temperatura baixa objectiu"
+                },
                 "temperature": {
                     "description": "Temperatura objectiu.",
                     "name": "Temperatura"
                 }
-            }
+            },
+            "name": "Configura temperatura objectiu"
         },
         "turn_off": {
+            "description": "Desactiva dispositiu de climatitzaci\u00f3.",
             "name": "Apaga"
         },
         "turn_on": {
+            "description": "Activa dispositiu de climatitzaci\u00f3.",
             "name": "Enc\u00e9n"
         }
     },

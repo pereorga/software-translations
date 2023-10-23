@@ -44,7 +44,26 @@
         }
     },
     "services": {
+        "cancel": {
+            "description": "Cancel\u00b7la un temporitzador.",
+            "name": "Cancel\u00b7la"
+        },
+        "change": {
+            "description": "Canvia un temporitzador.",
+            "fields": {
+                "duration": {
+                    "description": "Durada a afegir o restar al temporitzador en execuci\u00f3.",
+                    "name": "Durada"
+                }
+            },
+            "name": "Canvia"
+        },
+        "finish": {
+            "description": "Finalitza un temporitzador.",
+            "name": "Finalitza"
+        },
         "pause": {
+            "description": "Pausa un temporitzador.",
             "name": "Pausa"
         },
         "reload": {
@@ -52,6 +71,12 @@
             "name": "Torna a carregar"
         },
         "start": {
+            "description": "Inicia un temporitzador.",
+            "fields": {
+                "duration": {
+                    "name": "Durada"
+                }
+            },
             "name": "Inicia"
         }
     }
