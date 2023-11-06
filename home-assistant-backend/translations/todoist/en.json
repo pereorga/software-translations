@@ -1,20 +1,23 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured"
+            "already_configured": "Account is already configured",
+            "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
         "create_entry": {
             "default": "Successfully authenticated"
         },
         "error": {
-            "invalid_api_key": "Invalid API key"
+            "cannot_connect": "Failed to connect",
+            "invalid_api_key": "Invalid API key",
+            "unknown": "Unexpected error"
         },
         "step": {
             "user": {
                 "data": {
                     "token": "API token"
                 },
-                "description": "Please entry your API token from your [Todoist Settings page]({settings_url})"
+                "description": "Please enter your API token from your [Todoist Settings page]({settings_url})"
             }
         }
     },
@@ -36,7 +39,7 @@
                 },
                 "due_date_lang": {
                     "description": "The language of due_date_string.",
-                    "name": "Due data language"
+                    "name": "Due date language"
                 },
                 "due_date_string": {
                     "description": "The day this task is due, in natural language.",

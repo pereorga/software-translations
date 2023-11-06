@@ -176,8 +176,10 @@
     },
     "services": {
         "dump": {
+            "description": "Escriu tots els missatges d'un t\u00f2pic espec\u00edfic al fitxer `mqtt_dump.txt` de la teva carpeta de configuraci\u00f3.",
             "fields": {
                 "duration": {
+                    "description": "Temps a escoltar missatges, en segons.",
                     "name": "Durada"
                 },
                 "topic": {
@@ -194,11 +196,16 @@
                     "description": "Dades ('payload') a publicar.",
                     "name": "Dades ('payload')"
                 },
+                "payload_template": {
+                    "description": "Plantilla a utilitzar per extreure les dades ('payload'). Si ja es proporcionen dades, la plantilla s'ignorar\u00e0.",
+                    "name": "Plantilla de dades"
+                },
                 "qos": {
                     "description": "Qualitat de servei a utilitzar. 0: com a m\u00e0xim una vegada. 1: almenys una vegada. 2: exactament una vegada.",
                     "name": "QoS"
                 },
                 "retain": {
+                    "description": "Estableix o no l'indicador de retenci\u00f3 ('retain'). Si s'estableix, el 'broker' desar\u00e0 el missatge m\u00e9s recent del topic.",
                     "name": "Retenci\u00f3"
                 },
                 "topic": {

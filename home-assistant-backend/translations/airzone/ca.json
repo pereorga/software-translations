@@ -25,8 +25,23 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "air_demand": {
+                "name": "Demanda d'aire"
+            }
+        },
         "select": {
             "grille_angles": {
+                "name": "Angle fred",
+                "state": {
+                    "40deg": "40\u00b0",
+                    "45deg": "45\u00b0",
+                    "50deg": "50\u00b0",
+                    "90deg": "90\u00b0"
+                }
+            },
+            "heat_angles": {
+                "name": "Angle de calor",
                 "state": {
                     "40deg": "40\u00b0",
                     "45deg": "45\u00b0",
@@ -41,6 +56,11 @@
                     "90m": "90 minuts",
                     "off": "OFF"
                 }
+            }
+        },
+        "sensor": {
+            "rssi": {
+                "name": "RSSI"
             }
         }
     }

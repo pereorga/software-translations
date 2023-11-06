@@ -204,40 +204,87 @@
     "services": {
         "backup_full": {
             "fields": {
+                "compressed": {
+                    "name": "Comprimit"
+                },
                 "location": {
                     "name": "Ubicaci\u00f3"
                 },
                 "name": {
+                    "description": "Opcional (predeterminat = data i hora actuals).",
                     "name": "Nom"
                 },
                 "password": {
+                    "description": "Contrasenya per protegir la c\u00f2pia de seguretat.",
                     "name": "Contrasenya"
                 }
-            }
+            },
+            "name": "Crea una c\u00f2pia de seguretat completa."
         },
         "backup_partial": {
+            "description": "Crea una c\u00f2pia de seguretat parcial.",
             "fields": {
+                "addons": {
+                    "description": "Llista de complements a incloure a la c\u00f2pia de seguretat. Utilitza el nom 'slug' del complement.",
+                    "name": "Complements"
+                },
+                "compressed": {
+                    "name": "Comprimit"
+                },
+                "folders": {
+                    "description": "Llista de directoris a incloure a la c\u00f2pia de seguretat.",
+                    "name": "Carpetes"
+                },
+                "homeassistant": {
+                    "description": "Inclou la configuraci\u00f3 de Home Assistant a la c\u00f2pia de seguretat.",
+                    "name": "Configuraci\u00f3 de Home Assistant"
+                },
                 "location": {
                     "name": "Ubicaci\u00f3"
                 },
                 "name": {
+                    "description": "Opcional (predeterminat = data i hora actuals).",
                     "name": "Nom"
                 },
                 "password": {
+                    "description": "Contrasenya per protegir la c\u00f2pia de seguretat.",
                     "name": "Contrasenya"
                 }
-            }
+            },
+            "name": "Crea una c\u00f2pia de seguretat parcial."
+        },
+        "host_reboot": {
+            "description": "Reinicia el sistema amfitri\u00f3.",
+            "name": "Reinicia sistema amfitri\u00f3."
+        },
+        "host_shutdown": {
+            "description": "Apaga el sistema amfitri\u00f3.",
+            "name": "Apaga sistema amfitri\u00f3."
         },
         "restore_full": {
+            "description": "Restaura c\u00f2pia de seguretat completa.",
             "fields": {
                 "password": {
+                    "description": "Contrasenya opcional.",
                     "name": "Contrasenya"
                 }
             }
         },
         "restore_partial": {
             "fields": {
+                "addons": {
+                    "description": "Llista de complements a incloure a la c\u00f2pia de seguretat. Utilitza el nom 'slug' del complement.",
+                    "name": "Complements"
+                },
+                "folders": {
+                    "description": "Llista de directoris a incloure a la c\u00f2pia de seguretat.",
+                    "name": "Carpetes"
+                },
+                "homeassistant": {
+                    "name": "Configuraci\u00f3 de Home Assistant"
+                },
                 "password": {
+                    "description": "Contrasenya opcional.",
                     "name": "Contrasenya"
                 }
             }

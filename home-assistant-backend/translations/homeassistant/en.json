@@ -73,6 +73,12 @@
         },
         "restart": {
             "description": "Restarts Home Assistant.",
+            "fields": {
+                "safe_mode": {
+                    "description": "Disable custom integrations and custom cards.",
+                    "name": "Safe mode"
+                }
+            },
             "name": "Restart"
         },
         "save_persistent_states": {

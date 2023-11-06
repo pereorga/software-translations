@@ -259,6 +259,10 @@
                     "description": "Compresses the backup files.",
                     "name": "Compressed"
                 },
+                "homeassistant_exclude_database": {
+                    "description": "Exclude the Home Assistant database file from backup",
+                    "name": "Home Assistant exclude database"
+                },
                 "location": {
                     "description": "Name of a backup network storage to host backups.",
                     "name": "Location"
@@ -292,6 +296,10 @@
                 "homeassistant": {
                     "description": "Includes Home Assistant settings in the backup.",
                     "name": "Home Assistant settings"
+                },
+                "homeassistant_exclude_database": {
+                    "description": "Exclude the Home Assistant database file from backup",
+                    "name": "Home Assistant exclude database"
                 },
                 "location": {
                     "description": "Name of a backup network storage to host backups.",

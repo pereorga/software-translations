@@ -1,0 +1,92 @@
+{
+    "entity_component": {
+        "_": {
+            "name": "Llista de tasques"
+        }
+    },
+    "selector": {
+        "status": {
+            "options": {
+                "completed": "Completat",
+                "needs_action": "No completat"
+            }
+        }
+    },
+    "services": {
+        "add_item": {
+            "description": "Afegeix un nou element a la llista de tasques.",
+            "fields": {
+                "item": {
+                    "description": "Nom que representa l'element de la llista de tasques.",
+                    "name": "Nom de l'element"
+                }
+            },
+            "name": "Afegeix element a llista de tasques"
+        },
+        "create_item": {
+            "description": "Afegeix un nou element a la llista de tasques.",
+            "fields": {
+                "status": {
+                    "description": "Estat o confirmaci\u00f3 de l'element.",
+                    "name": "Estat"
+                },
+                "summary": {
+                    "description": "Descripci\u00f3 breu que representa l'element.",
+                    "name": "Descripci\u00f3"
+                }
+            },
+            "name": "Crea element a la llista de tasques"
+        },
+        "delete_item": {
+            "description": "Elimina un element de la llista de tasques a partir del seu ID \u00fanic o per la seva descripci\u00f3.",
+            "fields": {
+                "summary": {
+                    "description": "Descripci\u00f3 breu que representa l'element.",
+                    "name": "Descripci\u00f3"
+                },
+                "uid": {
+                    "description": "Identificadors \u00fanics dels elements de la llista de tasques.",
+                    "name": "IDs \u00fanics dels elements"
+                }
+            },
+            "name": "Elimina element de la llista de tasques"
+        },
+        "remove_item": {
+            "description": "Elimina un element de la llista de tasques a partir del seu nom.",
+            "fields": {
+                "item": {
+                    "description": "Nom d'element de la llista de tasques.",
+                    "name": "Nom de l'element"
+                }
+            },
+            "name": "Elimina element de la llista de tasques"
+        },
+        "update_item": {
+            "description": "Actualitza un element de la llista de tasques a partir del seu nom.",
+            "fields": {
+                "item": {
+                    "description": "Nom de l'element de la llista de tasques.",
+                    "name": "Nom de l'element"
+                },
+                "rename": {
+                    "description": "Nou nom de l'element de la llista.",
+                    "name": "Canvia nom de l'element"
+                },
+                "status": {
+                    "description": "Estat o confirmaci\u00f3 de l'element.",
+                    "name": "Estat"
+                },
+                "summary": {
+                    "description": "Descripci\u00f3 breu de l'element.",
+                    "name": "Descripci\u00f3"
+                },
+                "uid": {
+                    "description": "Identificador \u00fanic de l'element de la llista de tasques.",
+                    "name": "ID \u00fanic d'element"
+                }
+            },
+            "name": "Actualitza element de la llista de tasques"
+        }
+    },
+    "title": "Llista de tasques"
+}

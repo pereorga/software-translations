@@ -61,5 +61,17 @@
                 "name": "Current week"
             }
         }
+    },
+    "services": {
+        "list_notifications": {
+            "description": "Return user notifications.",
+            "fields": {
+                "config_entry": {
+                    "description": "The flume config entry for which to return notifications.",
+                    "name": "Flume"
+                }
+            },
+            "name": "List notifications"
+        }
     }
 }

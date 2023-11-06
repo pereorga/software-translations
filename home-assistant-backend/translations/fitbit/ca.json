@@ -5,6 +5,7 @@
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_access_token": "Token d'acc\u00e9s inv\u00e0lid",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
             "oauth_error": "S'han rebut dades token inv\u00e0lides.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
@@ -24,6 +25,16 @@
             "reauth_confirm": {
                 "description": "La integraci\u00f3 Fitbit ha de tornar a autenticar-se amb el teu compte",
                 "title": "Reautenticaci\u00f3 de la integraci\u00f3"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Bateria"
+            },
+            "battery_level": {
+                "name": "Nivell de bateria"
             }
         }
     },

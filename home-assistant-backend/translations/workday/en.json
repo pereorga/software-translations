@@ -39,6 +39,23 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "workday": {
+                "state_attributes": {
+                    "days_offset": {
+                        "name": "Offset"
+                    },
+                    "excludes": {
+                        "name": "Excludes"
+                    },
+                    "workdays": {
+                        "name": "Workdays"
+                    }
+                }
+            }
+        }
+    },
     "issues": {
         "bad_country": {
             "fix_flow": {

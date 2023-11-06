@@ -2,6 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
+            "reauth_successful": "Re-authentication was successful",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
         "error": {
@@ -10,6 +11,13 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "description": "The Jellyfin integration needs to re-authenticate your account",
+                "title": "Reauthenticate integration"
+            },
             "user": {
                 "data": {
                     "password": "Password",

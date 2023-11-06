@@ -59,6 +59,46 @@
         }
     },
     "services": {
+        "increase_speed": {
+            "description": "Augmenta la velocitat del ventilador.",
+            "fields": {
+                "percentage_step": {
+                    "description": "Augmenta la velocitat en un pas percentual.",
+                    "name": "Increment"
+                }
+            },
+            "name": "Augmenta velocitat"
+        },
+        "oscillate": {
+            "description": "Controla l'oscil\u00b7laci\u00f3 del ventilador.",
+            "fields": {
+                "oscillating": {
+                    "description": "Activa/desactiva l'oscil\u00b7laci\u00f3.",
+                    "name": "Oscil\u00b7lant"
+                }
+            },
+            "name": "Oscil\u00b7la"
+        },
+        "set_direction": {
+            "description": "Configura la direcci\u00f3 de rotaci\u00f3 del ventilador.",
+            "fields": {
+                "direction": {
+                    "description": "Direcci\u00f3 a girar.",
+                    "name": "Direcci\u00f3"
+                }
+            },
+            "name": "Configura direcci\u00f3"
+        },
+        "set_percentage": {
+            "description": "Configura la velocitat del ventilador.",
+            "fields": {
+                "percentage": {
+                    "description": "Velocitat del ventilador.",
+                    "name": "Percentatge"
+                }
+            },
+            "name": "Configura velocitat"
+        },
         "set_preset_mode": {
             "description": "Estableix el mode preconfiguraci\u00f3.",
             "fields": {
@@ -70,13 +110,20 @@
             "name": "Estableix mode preconfiguraci\u00f3"
         },
         "toggle": {
+            "description": "Activa/desactiva un ventilador.",
             "name": "Commuta"
         },
         "turn_off": {
+            "description": "Desactiva un ventilador.",
             "name": "Apaga"
         },
         "turn_on": {
+            "description": "Activa un ventilador.",
             "fields": {
+                "percentage": {
+                    "description": "Velocitat del ventilador.",
+                    "name": "Percentatge"
+                },
                 "preset_mode": {
                     "description": "Mode preconfiguraci\u00f3.",
                     "name": "Mode preconfiguraci\u00f3"

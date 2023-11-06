@@ -19,10 +19,38 @@
     "entity": {
         "sensor": {
             "advance_warning_level": {
-                "name": "Advance warning level"
+                "name": "Advance warning level",
+                "state_attributes": {
+                    "last_update": {
+                        "name": "Last update"
+                    },
+                    "region_id": {
+                        "name": "Region ID"
+                    },
+                    "region_name": {
+                        "name": "Region name"
+                    },
+                    "warning_count": {
+                        "name": "Warning count"
+                    }
+                }
             },
             "current_warning_level": {
-                "name": "Current warning level"
+                "name": "Current warning level",
+                "state_attributes": {
+                    "last_update": {
+                        "name": "Last update"
+                    },
+                    "region_id": {
+                        "name": "Region ID"
+                    },
+                    "region_name": {
+                        "name": "Region name"
+                    },
+                    "warning_count": {
+                        "name": "Warning count"
+                    }
+                }
             }
         }
     },

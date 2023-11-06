@@ -39,6 +39,13 @@
                 "description": "Configure client controls\n\nCreate switches for serial numbers you want to control network access for.",
                 "title": "UniFi Network options 2/3"
             },
+            "configure_entity_sources": {
+                "data": {
+                    "client_source": "Create entities from network clients"
+                },
+                "description": "Select sources to create entities from",
+                "title": "UniFi Network Entity Sources"
+            },
             "device_tracker": {
                 "data": {
                     "detection_time": "Time in seconds from last seen until considered away",

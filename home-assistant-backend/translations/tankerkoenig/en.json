@@ -36,18 +36,113 @@
     "entity": {
         "binary_sensor": {
             "status": {
-                "name": "Status"
+                "name": "Status",
+                "state_attributes": {
+                    "latitude": {
+                        "name": "Latitude"
+                    },
+                    "longitude": {
+                        "name": "Longitude"
+                    }
+                }
             }
         },
         "sensor": {
             "diesel": {
-                "name": "Diesel"
+                "name": "Diesel",
+                "state_attributes": {
+                    "brand": {
+                        "name": "Brand"
+                    },
+                    "city": {
+                        "name": "City"
+                    },
+                    "fuel_type": {
+                        "name": "Fuel type"
+                    },
+                    "house_number": {
+                        "name": "House number"
+                    },
+                    "latitude": {
+                        "name": "Latitude"
+                    },
+                    "longitude": {
+                        "name": "Longitude"
+                    },
+                    "postcode": {
+                        "name": "Postal code"
+                    },
+                    "station_name": {
+                        "name": "Station name"
+                    },
+                    "street": {
+                        "name": "Street"
+                    }
+                }
             },
             "e10": {
-                "name": "Super E10"
+                "name": "Super E10",
+                "state_attributes": {
+                    "brand": {
+                        "name": "Brand"
+                    },
+                    "city": {
+                        "name": "City"
+                    },
+                    "fuel_type": {
+                        "name": "Fuel type"
+                    },
+                    "house_number": {
+                        "name": "House number"
+                    },
+                    "latitude": {
+                        "name": "Latitude"
+                    },
+                    "longitude": {
+                        "name": "Longitude"
+                    },
+                    "postcode": {
+                        "name": "Postal code"
+                    },
+                    "station_name": {
+                        "name": "Station name"
+                    },
+                    "street": {
+                        "name": "Street"
+                    }
+                }
             },
             "e5": {
-                "name": "Super"
+                "name": "Super",
+                "state_attributes": {
+                    "brand": {
+                        "name": "Brand"
+                    },
+                    "city": {
+                        "name": "City"
+                    },
+                    "fuel_type": {
+                        "name": "Fuel type"
+                    },
+                    "house_number": {
+                        "name": "House number"
+                    },
+                    "latitude": {
+                        "name": "Latitude"
+                    },
+                    "longitude": {
+                        "name": "Longitude"
+                    },
+                    "postcode": {
+                        "name": "Postal code"
+                    },
+                    "station_name": {
+                        "name": "Station name"
+                    },
+                    "street": {
+                        "name": "Street"
+                    }
+                }
             }
         }
     },

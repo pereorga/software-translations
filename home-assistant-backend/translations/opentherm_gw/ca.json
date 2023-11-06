@@ -98,6 +98,7 @@
             }
         },
         "set_led_mode": {
+            "description": "Canvia la funci\u00f3 dels LED de la passarel\u00b7la ('gateway').",
             "fields": {
                 "gateway_id": {
                     "name": "ID de la passarel\u00b7la"
@@ -107,6 +108,7 @@
                     "name": "ID"
                 },
                 "mode": {
+                    "description": "Funci\u00f3 a assignar al LED. Consulta https://www.home-assistant.io/integrations/opentherm_gw/#led-modes per llegir la descripci\u00f3 dels valors.\n.",
                     "name": "Mode"
                 }
             },

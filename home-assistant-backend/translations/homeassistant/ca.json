@@ -56,6 +56,12 @@
             "description": "Recarrega la configuraci\u00f3 del nucli des de la configuraci\u00f3 YAML."
         },
         "restart": {
+            "fields": {
+                "safe_mode": {
+                    "description": "Desactiva integracions i targetes personalitzades.",
+                    "name": "Mode segur"
+                }
+            },
             "name": "Reinicia"
         },
         "set_location": {

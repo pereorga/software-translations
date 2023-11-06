@@ -5,6 +5,7 @@
             "already_in_progress": "Configuration flow is already in progress",
             "cannot_connect": "Failed to connect",
             "invalid_access_token": "Invalid access token",
+            "invalid_auth": "Invalid authentication",
             "missing_configuration": "The component is not configured. Please follow the documentation.",
             "oauth_error": "Received invalid token data.",
             "reauth_successful": "Re-authentication was successful",
@@ -24,6 +25,16 @@
             "reauth_confirm": {
                 "description": "The Fitbit integration needs to re-authenticate your account",
                 "title": "Reauthenticate integration"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Battery"
+            },
+            "battery_level": {
+                "name": "Battery level"
             }
         }
     },
