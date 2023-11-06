@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 08:03+0000\n"
+"POT-Creation-Date: 2023-11-06 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,41 +12,150 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.6.0\n"
 
+#: System+name
+msgid "ShowImage"
+msgstr "Mostra la imatge"
+
 #: Menus
-msgid "Use as background…"
-msgstr "Usa com a fons..."
+msgid "Page setup…"
+msgstr "Configuració de la pàgina..."
+
+#: ClosePrompt
+msgid ""
+"The document '%s' (page %d) has been changed. Do you want to close the "
+"document?"
+msgstr "El document %s (pàgina %d) ha canviat. Voleu tancar-lo?"
+
+#: Menus
+msgid "Previous file"
+msgstr "Fitxer anterior"
+
+#: Menus
+msgid "View"
+msgstr "Visualització"
+
+#: Menus
+msgid "Leave full screen"
+msgstr "Surt de la pantalla completa"
+
+#: Menus
+msgid "Show caption in full screen mode"
+msgstr "Mostra el títol en mode de pantalla completa"
+
+#: Menus
+msgid "Flip left to right"
+msgstr "Volteja d’esquerra a dreta"
+
+#: Menus
+msgid "Full screen"
+msgstr "Pantalla completa"
+
+#: Menus
+msgid "Copy"
+msgstr "Copia"
+
+#: PrintOptionsWindow
+msgid "Height: "
+msgstr "Alçada: "
+
+#: Menus
+msgid "Next file"
+msgstr "Fitxer següent"
+
+#: Menus
+msgid "Slide show"
+msgstr "Presentació"
+
+#: Menus
+msgid "Original size"
+msgstr "Mida original"
+
+#: PrintOptionsWindow
+msgid "Width:"
+msgstr "Amplada:"
+
+#: PrintOptionsWindow
+msgid "Resize to (in 1/72 inches):"
+msgstr "Canvia'n la mida a (en 1/72 polzades):"
+
+#: PrintOptionsWindow
+msgid "Zoom factor in %:"
+msgstr "Factor d'ampliació en %:"
+
+#: Menus
+msgid "Get info…"
+msgstr "Obtén informació..."
+
+#: Menus
+msgid "Zoom out"
+msgstr "Redueix"
+
+#: Alerts
+msgctxt "Alerts"
+msgid "OK"
+msgstr "D'acord"
 
 #: Menus
 msgid "File"
 msgstr "Fitxer"
 
-#: Menus
-msgid "Slide delay"
-msgstr "Retard de la presentació"
+#: ClosePrompt
+msgctxt "ClosePrompt"
+msgid "Close"
+msgstr "Tanca"
 
 #: Menus
-msgid "Selection mode"
-msgstr "Mode de selecció"
+msgid "Image"
+msgstr "Imatge"
+
+#: Menus
+msgid "Flip top to bottom"
+msgstr "Capgira de dalt a baix"
 
 #: Menus
 msgid "Zoom in"
 msgstr "Amplia"
+
+#: Menus
+msgid "Last page"
+msgstr "Darrera pàgina"
+
+#: ClosePrompt
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: Menus
+msgid "High-quality zooming"
+msgstr "Ampliació d'alta qualitat"
 
 #: ClosePrompt
 msgid "The document '%s' has been changed. Do you want to close the document?"
 msgstr "El document %s ha canviat. Voleu tancar-lo?"
 
 #: Menus
-msgid "Page setup…"
-msgstr "Configuració de la pàgina..."
+msgctxt "Menus"
+msgid "Close"
+msgstr "Tanca"
 
 #: Menus
-msgid "Print…"
-msgstr "Imprimeix..."
+msgid "Selection mode"
+msgstr "Mode de selecció"
+
+#: PrintOptionsWindow
+msgid "DPI:"
+msgstr "DPI:"
+
+#: PrintOptionsWindow
+msgid "Fit image to page"
+msgstr "Ajusta la imatge a la pàgina"
 
 #: Menus
-msgid "Get info…"
-msgstr "Obtén informació..."
+msgid "Show tool bar"
+msgstr "Mostra la barra d'eines"
+
+#: Menus
+msgid "First page"
+msgstr "Primera pàgina"
 
 #: SaveToFile
 msgctxt "SaveToFile"
@@ -54,44 +163,40 @@ msgid "OK"
 msgstr "D'acord"
 
 #: Menus
-msgid "Previous page"
-msgstr "Pàgina anterior"
+msgid "Print…"
+msgstr "Imprimeix..."
 
-#: Menus
-msgid "View"
-msgstr "Visualització"
-
-#: Menus
-msgid "Full screen"
-msgstr "Pantalla completa"
-
-#: Menus
-msgid "Go to page"
-msgstr "Ves a la pàgina"
-
-#: Menus
-msgid "Zoom out"
-msgstr "Redueix"
+#: SaveToFile
+msgid "The file '%s' could not be written."
+msgstr "El fitxer %s no s'ha pogut escriure."
 
 #: Menus
 msgid "Quit"
 msgstr "Surt"
 
 #: Menus
-msgid "Rotate counterclockwise"
-msgstr "Gira en sentit antihorari"
+msgid "Rating"
+msgstr "Puntuació"
+
+#: ClosePrompt
+msgid "Close document"
+msgstr "Tanca el document"
 
 #: Menus
-msgid "High-quality zooming"
-msgstr "Ampliació d'alta qualitat"
+msgid "Stretch to window"
+msgstr "Amplia a la finestra"
+
+#: PrintOptionsWindow
+msgid "Job setup"
+msgstr "Configuració de la tasca"
 
 #: Menus
-msgid "Browse"
-msgstr "Navega"
+msgid "Clear selection"
+msgstr "Neteja la selecció"
 
 #: Menus
-msgid "Edit"
-msgstr "Edita"
+msgid "Rotate clockwise"
+msgstr "Gira en el sentit del rellotge"
 
 #: LoadAlerts
 msgid ""
@@ -102,166 +207,61 @@ msgstr ""
 "existeix."
 
 #: Menus
-msgid "First page"
-msgstr "Primera pàgina"
-
-#: ClosePrompt
-msgid ""
-"The document '%s' (page %d) has been changed. Do you want to close the "
-"document?"
-msgstr "El document %s (pàgina %d) ha canviat. Voleu tancar-lo?"
+msgid "Rotate counterclockwise"
+msgstr "Gira en sentit antihorari"
 
 #: Menus
-msgid "Leave full screen"
-msgstr "Surt de la pantalla completa"
-
-#: Menus
-msgctxt "Menus"
-msgid "Close"
-msgstr "Tanca"
-
-#: ClosePrompt
-msgctxt "ClosePrompt"
-msgid "Close"
-msgstr "Tanca"
-
-#: PrintOptionsWindow
-msgid "Resize to (in 1/72 inches):"
-msgstr "Canvia'n la mida a (en 1/72 polzades):"
-
-#: Menus
-msgid "Rating"
-msgstr "Puntuació"
-
-#: Menus
-msgid "Flip left to right"
-msgstr "Volteja d’esquerra a dreta"
-
-#: Menus
-msgid "Show caption in full screen mode"
-msgstr "Mostra el títol en mode de pantalla completa"
-
-#: PrintOptionsWindow
-msgid "DPI:"
-msgstr "DPI:"
-
-#: Menus
-msgid "Open…"
-msgstr "Obre..."
-
-#: Menus
-msgid "Next file"
-msgstr "Fitxer següent"
-
-#: Menus
-msgid "Clear selection"
-msgstr "Neteja la selecció"
-
-#: ClosePrompt
-msgid "Close document"
-msgstr "Tanca el document"
-
-#: PrintOptionsWindow
-msgid "Height: "
-msgstr "Alçada: "
-
-#: SaveToFile
-msgid "The file '%s' could not be written."
-msgstr "El fitxer %s no s'ha pogut escriure."
-
-#: ClosePrompt
-msgid "Cancel"
-msgstr "Cancel·la"
-
-#: Menus
-msgid "Show tool bar"
-msgstr "Mostra la barra d'eines"
+msgid "Previous page"
+msgstr "Pàgina anterior"
 
 #: Menus
 msgid "Fit to window"
 msgstr "Ajusta a la finestra"
 
-#: PrintOptionsWindow
-msgid "Print options"
-msgstr "Opcions d'impressió"
+#: Menus
+msgid "Browse"
+msgstr "Navega"
 
 #: Menus
-msgid "Copy"
-msgstr "Copia"
+msgid "Go to page"
+msgstr "Ves a la pàgina"
 
 #: ProgressWindow
 msgid "Progress monitor"
 msgstr "Monitor del progrés"
 
 #: Menus
-msgid "Last page"
-msgstr "Darrera pàgina"
-
-#: Menus
-msgid "Stretch to window"
-msgstr "Amplia a la finestra"
-
-#: Menus
-msgid "Previous file"
-msgstr "Fitxer anterior"
-
-#: System+name
-msgid "ShowImage"
-msgstr "Mostra la imatge"
-
-#: Menus
-msgid "Slide show"
-msgstr "Presentació"
-
-#: PrintOptionsWindow
-msgid "Fit image to page"
-msgstr "Ajusta la imatge a la pàgina"
-
-#: Menus
-msgid "Flip top to bottom"
-msgstr "Capgira de dalt a baix"
-
-#: Menus
-msgid "Select all"
-msgstr "Selecciona-ho tot"
-
-#: PrintOptionsWindow
-msgid "Zoom factor in %:"
-msgstr "Factor d'ampliació en %:"
-
-#: PrintOptionsWindow
-msgid "Width:"
-msgstr "Amplada:"
-
-#: Menus
-msgid "Image"
-msgstr "Imatge"
+msgid "Edit"
+msgstr "Edita"
 
 #: Menus
 msgid "Move to Trash"
 msgstr "Mou a la paperera"
 
-#: Alerts
-msgctxt "Alerts"
-msgid "OK"
-msgstr "D'acord"
+#: Menus
+msgid "Use as background…"
+msgstr "Usa com a fons..."
 
 #: Menus
-msgid "Rotate clockwise"
-msgstr "Gira en el sentit del rellotge"
-
-#: PrintOptionsWindow
-msgid "Job setup"
-msgstr "Configuració de la tasca"
+msgid "Open…"
+msgstr "Obre..."
 
 #: Menus
-msgid "Original size"
-msgstr "Mida original"
+msgid "Save as…"
+msgstr "Desa com a..."
 
 #: Menus
 msgid "Next page"
 msgstr "Pàgina següent"
 
+#: PrintOptionsWindow
+msgid "Print options"
+msgstr "Opcions d'impressió"
+
 #: Menus
-msgid "Save as…"
-msgstr "Desa com a..."
+msgid "Slide delay"
+msgstr "Retard de la presentació"
+
+#: Menus
+msgid "Select all"
+msgstr "Selecciona-ho tot"
