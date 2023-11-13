@@ -1,4 +1,9 @@
 {
+    "exceptions": {
+        "service_not_found": {
+            "message": "No s'ha trobat {domain}.{service}."
+        }
+    },
     "issues": {
         "config_entry_only": {
             "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 mitjan\u00e7ant fitxer YAML. \u00c9s possible que no notis cap problema evident amb la integraci\u00f3, per\u00f2 cap configuraci\u00f3 definida en YAML s'aplica realment.\n\nPer resoldre aix\u00f2: \n\n1. Si encara no ho has fet, [configura la integraci\u00f3]({add_integration}). \n\n2. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n3. Reinicia Home Assistant.",

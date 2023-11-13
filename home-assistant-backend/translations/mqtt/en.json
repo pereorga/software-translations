@@ -70,6 +70,11 @@
             "button_triple_press": "\"{subtype}\" triple clicked"
         }
     },
+    "exceptions": {
+        "invalid_platform_config": {
+            "message": "Reloading YAML config for manually configured MQTT `{domain}` failed. See logs for more details."
+        }
+    },
     "issues": {
         "deprecated_climate_aux_property": {
             "description": "Entity `{entity_id}` has auxiliary heat support enabled, which has been deprecated for MQTT climate devices. Please adjust your configuration and remove deprecated config options from your configuration and restart Home Assistant to fix this issue.",
@@ -106,6 +111,10 @@
         "entity_name_startswith_device_name_yaml": {
             "description": "Some MQTT entities have an entity name that starts with the device name. This is not expected. To avoid a duplicate name the device name prefix is stripped off the entity name as a work-a-round. Please update your configuration and restart Home Assistant to fix this issue. \n\nList of affected entities:\n\n{config}",
             "title": "Manual configured MQTT entities with a name that starts with the device name"
+        },
+        "invalid_entity_category": {
+            "description": "Home Assistant detected a manually configured MQTT `{domain}` entity that has an `entity_category` set to `config`. \nConfiguration file: **{config_file}**\nNear line: **{line}**\n\nConfig with invalid setting:\n\n```yaml\n{config}\n```\n\nWhen set, make sure `entity_category` for a `{domain}` is set to `diagnostic` or `None`. Update your YAML configuration and restart Home Assistant to fix this issue.",
+            "title": "An MQTT {domain} with an invalid entity category was found"
         },
         "invalid_platform_config": {
             "description": "Home Assistant detected an invalid config for a manually configured item.\n\nPlatform domain: **{domain}**\nConfiguration file: **{config_file}**\nNear line: **{line}**\nConfiguration found:\n```yaml\n{config}\n```\nError: **{error}**.\n\nMake sure the configuration is valid and [reload](/developer-tools/yaml) the manually configured MQTT items or restart Home Assistant to fix this issue.",

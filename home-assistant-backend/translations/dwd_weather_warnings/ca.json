@@ -19,10 +19,38 @@
     "entity": {
         "sensor": {
             "advance_warning_level": {
-                "name": "Nivell d'alerta avan\u00e7at"
+                "name": "Nivell d'alerta avan\u00e7at",
+                "state_attributes": {
+                    "last_update": {
+                        "name": "\u00daltima actualitzaci\u00f3"
+                    },
+                    "region_id": {
+                        "name": "ID de regi\u00f3"
+                    },
+                    "region_name": {
+                        "name": "Nom de la regi\u00f3"
+                    },
+                    "warning_count": {
+                        "name": "Nombre d'alertes"
+                    }
+                }
             },
             "current_warning_level": {
-                "name": "Nivell d'alerta actual"
+                "name": "Nivell d'alerta actual",
+                "state_attributes": {
+                    "last_update": {
+                        "name": "\u00daltima actualitzaci\u00f3"
+                    },
+                    "region_id": {
+                        "name": "ID de regi\u00f3"
+                    },
+                    "region_name": {
+                        "name": "Nom de la regi\u00f3"
+                    },
+                    "warning_count": {
+                        "name": "Nombre d'alertes"
+                    }
+                }
             }
         }
     },

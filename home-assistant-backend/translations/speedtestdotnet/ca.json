@@ -12,13 +12,52 @@
     "entity": {
         "sensor": {
             "download": {
-                "name": "Baixada"
+                "name": "Baixada",
+                "state_attributes": {
+                    "bytes_received": {
+                        "name": "Bytes rebuts"
+                    },
+                    "server_country": {
+                        "name": "Pa\u00eds del servidor"
+                    },
+                    "server_id": {
+                        "name": "ID del servidor"
+                    },
+                    "server_name": {
+                        "name": "Nom del servidor"
+                    }
+                }
             },
             "ping": {
-                "name": "Ping"
+                "name": "Ping",
+                "state_attributes": {
+                    "server_country": {
+                        "name": "Pa\u00eds del servidor"
+                    },
+                    "server_id": {
+                        "name": "ID del servidor"
+                    },
+                    "server_name": {
+                        "name": "Nom del servidor"
+                    }
+                }
             },
             "upload": {
-                "name": "Pujada"
+                "name": "Pujada",
+                "state_attributes": {
+                    "bytes_sent": {
+                        "name": "Bytes enviats"
+                    },
+                    "server_country": {
+                        "name": "Pa\u00eds del servidor"
+                    },
+                    "server_id": {
+                        "name": "ID del servidor"
+                    },
+                    "server_name": {
+                        "name": "Nom del servidor"
+                    }
+                }
             }
         }
     },

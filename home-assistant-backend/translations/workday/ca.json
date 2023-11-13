@@ -39,6 +39,23 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "workday": {
+                "state_attributes": {
+                    "days_offset": {
+                        "name": "Despla\u00e7ament (\u00f2fset)"
+                    },
+                    "excludes": {
+                        "name": "Exclusions"
+                    },
+                    "workdays": {
+                        "name": "Dies laborables"
+                    }
+                }
+            }
+        }
+    },
     "issues": {
         "bad_country": {
             "fix_flow": {
@@ -138,6 +155,18 @@
             "options": {
                 "none": "Sense subdivisi\u00f3"
             }
+        }
+    },
+    "services": {
+        "check_date": {
+            "description": "Comprova si la data \u00e9s laborable.",
+            "fields": {
+                "check_date": {
+                    "description": "Data a comprovar si \u00e9s un dia laborable.",
+                    "name": "Data"
+                }
+            },
+            "name": "Data a comprovar"
         }
     },
     "title": "Dia laborable"

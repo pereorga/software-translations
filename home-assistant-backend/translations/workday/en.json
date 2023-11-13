@@ -157,5 +157,17 @@
             }
         }
     },
+    "services": {
+        "check_date": {
+            "description": "Check if date is workday.",
+            "fields": {
+                "check_date": {
+                    "description": "Date to check if workday.",
+                    "name": "Date"
+                }
+            },
+            "name": "Check date"
+        }
+    },
     "title": "Workday"
 }

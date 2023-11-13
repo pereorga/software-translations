@@ -76,9 +76,11 @@
                     "name": "ID"
                 },
                 "mode": {
+                    "description": "Mode a configurar el pin GPIO. S'accepten valors del 0 al 7 per als dos GPIO, el 8 nom\u00e9s s'accepta per a GPIO \"B\". Consulta https://www.home-assistant.io/integrations/opentherm_gw/#gpio-modes per m\u00e9s informaci\u00f3 sobre els valors.\n.",
                     "name": "Mode"
                 }
-            }
+            },
+            "name": "Configura mode gpio"
         },
         "set_hot_water_ovrd": {
             "fields": {

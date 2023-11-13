@@ -56,8 +56,8 @@
             "button_4": "Quart bot\u00f3",
             "button_5": "Cinqu\u00e8 bot\u00f3",
             "button_6": "Sis\u00e8 bot\u00f3",
-            "turn_off": "Desactiva",
-            "turn_on": "Activa"
+            "turn_off": "Apaga",
+            "turn_on": "Enc\u00e9n"
         },
         "trigger_type": {
             "button_double_press": "\"{subtype}\" clicat dues vegades",
@@ -68,6 +68,11 @@
             "button_short_press": "\"{subtype}\" premut",
             "button_short_release": "\"{subtype}\" alliberat",
             "button_triple_press": "\"{subtype}\" clicat tres vegades"
+        }
+    },
+    "exceptions": {
+        "invalid_platform_config": {
+            "message": "No s'ha pogut carregar la configuraci\u00f3 de YAML de `{domain}` MQTT configurat manualment. Consulta els registres per a m\u00e9s detalls."
         }
     },
     "issues": {

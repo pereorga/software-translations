@@ -36,18 +36,104 @@
     "entity": {
         "binary_sensor": {
             "status": {
-                "name": "Estat"
+                "name": "Estat",
+                "state_attributes": {
+                    "latitude": {
+                        "name": "Latitud"
+                    },
+                    "longitude": {
+                        "name": "Longitud"
+                    }
+                }
             }
         },
         "sensor": {
             "diesel": {
-                "name": "Di\u00e8sel"
+                "name": "Di\u00e8sel",
+                "state_attributes": {
+                    "brand": {
+                        "name": "Marca"
+                    },
+                    "city": {
+                        "name": "Ciutat"
+                    },
+                    "fuel_type": {
+                        "name": "Tipus de combustible"
+                    },
+                    "latitude": {
+                        "name": "Latitud"
+                    },
+                    "longitude": {
+                        "name": "Longitud"
+                    },
+                    "postcode": {
+                        "name": "Codi postal"
+                    },
+                    "station_name": {
+                        "name": "Nom de l'estaci\u00f3"
+                    },
+                    "street": {
+                        "name": "Carrer"
+                    }
+                }
             },
             "e10": {
-                "name": "Super E10"
+                "name": "Super E10",
+                "state_attributes": {
+                    "brand": {
+                        "name": "Marca"
+                    },
+                    "city": {
+                        "name": "Ciutat"
+                    },
+                    "fuel_type": {
+                        "name": "Tipus de combustible"
+                    },
+                    "latitude": {
+                        "name": "Latitud"
+                    },
+                    "longitude": {
+                        "name": "Longitud"
+                    },
+                    "postcode": {
+                        "name": "Codi postal"
+                    },
+                    "station_name": {
+                        "name": "Nom de l'estaci\u00f3"
+                    },
+                    "street": {
+                        "name": "Carrer"
+                    }
+                }
             },
             "e5": {
-                "name": "Super"
+                "name": "Super",
+                "state_attributes": {
+                    "brand": {
+                        "name": "Marca"
+                    },
+                    "city": {
+                        "name": "Ciutat"
+                    },
+                    "fuel_type": {
+                        "name": "Tipus de combustible"
+                    },
+                    "latitude": {
+                        "name": "Latitud"
+                    },
+                    "longitude": {
+                        "name": "Longitud"
+                    },
+                    "postcode": {
+                        "name": "Codi postal"
+                    },
+                    "station_name": {
+                        "name": "Nom de l'estaci\u00f3"
+                    },
+                    "street": {
+                        "name": "Carrer"
+                    }
+                }
             }
         }
     },

@@ -125,10 +125,10 @@
             "face_6": "Amb la cara 6 activada",
             "face_any": "Amb qualsevol o alguna de les cares especificades activades.",
             "left": "Esquerra",
-            "open": "Obert",
+            "open": "Obre",
             "right": "Dreta",
-            "turn_off": "Desactiva",
-            "turn_on": "Activa"
+            "turn_off": "Apaga",
+            "turn_on": "Enc\u00e9n"
         },
         "trigger_type": {
             "device_dropped": "Dispositiu caigut",
@@ -166,6 +166,12 @@
         "binary_sensor": {
             "calibrated": {
                 "name": "Calibrat"
+            },
+            "external_sensor": {
+                "name": "Sensor extern"
+            },
+            "ias_zone": {
+                "name": "zona IAS"
             }
         },
         "button": {
@@ -197,6 +203,14 @@
         "light": {
             "light": {
                 "name": "Llum"
+            },
+            "light_group": {
+                "name": "Grup de llums"
+            }
+        },
+        "lock": {
+            "door_lock": {
+                "name": "Pany"
             }
         },
         "number": {
@@ -281,6 +295,9 @@
             },
             "smoke_density": {
                 "name": "Densitat de fum"
+            },
+            "soil_moisture": {
+                "name": "Humitat del s\u00f2l"
             },
             "timer_time_left": {
                 "name": "Temps restant"

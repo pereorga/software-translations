@@ -266,6 +266,20 @@
             "description": "Forces Z-Wave JS to try to reach a node. This can be used to update the status of the node in Z-Wave JS when you think it doesn't accurately reflect reality, e.g. reviving a failed/dead node or marking the node as asleep.",
             "name": "Ping a node"
         },
+        "refresh_notifications": {
+            "description": "Refreshes notifications on a node based on notification type and optionally notification event.",
+            "fields": {
+                "notification_event": {
+                    "description": "The Notification Event number as defined in the Z-Wave specs.",
+                    "name": "Notification Event"
+                },
+                "notification_type": {
+                    "description": "The Notification Type number as defined in the Z-Wave specs.",
+                    "name": "Notification Type"
+                }
+            },
+            "name": "Refresh notifications on a node (advanced)"
+        },
         "refresh_value": {
             "description": "Force updates the values of a Z-Wave entity.",
             "fields": {
@@ -298,7 +312,7 @@
             "description": "Changes the configuration parameters of your Z-Wave devices.",
             "fields": {
                 "bitmask": {
-                    "description": "Target a specific bitmask (see the documentation for more information).",
+                    "description": "Target a specific bitmask (see the documentation for more information). Cannot be combined with value_size or value_format.",
                     "name": "Bitmask"
                 },
                 "endpoint": {
@@ -312,6 +326,14 @@
                 "value": {
                     "description": "The new value to set for this configuration parameter.",
                     "name": "Value"
+                },
+                "value_format": {
+                    "description": "Format of the value, 0 for signed integer, 1 for unsigned integer, 2 for enumerated, 3 for bitfield. Used in combination with value_size when a config parameter is not defined in your device's configuration file. Cannot be combined with bitmask.",
+                    "name": "Value format"
+                },
+                "value_size": {
+                    "description": "Size of the value, either 1, 2, or 4. Used in combination with value_format when a config parameter is not defined in your device's configuration file. Cannot be combined with bitmask.",
+                    "name": "Value size"
                 }
             },
             "name": "Set device configuration parameter"
