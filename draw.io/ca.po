@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-20 08:02+0000\n"
+"POT-Creation-Date: 2023-11-27 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5461,8 +5461,16 @@ msgstr ""
 
 #: confCloudMigConfirm
 msgid ""
-"Warning: Links to Confluence pages within diagrams will be broken in this "
-"instance after this process. Do you want to proceed?"
+"Warning: This process will edit many pages and diagrams, so it is "
+"recommended to stop the Synchrony service during the process. Do you want to "
+"proceed?"
+msgstr ""
+
+#: confCloudMigNotice
+msgid ""
+"In the Cloud instance, please add linkAdjustments to draw.io configuration "
+"as follows {1}. Without this configuation, links in diagrams pointing to "
+"Confluence pages will not work."
 msgstr ""
 
 
