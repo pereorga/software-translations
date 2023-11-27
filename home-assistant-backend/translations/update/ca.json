@@ -8,7 +8,39 @@
     },
     "entity_component": {
         "_": {
-            "name": "Actualitza"
+            "name": "Actualitza",
+            "state": {
+                "off": "Actualitzat",
+                "on": "Actualitzaci\u00f3 disponible"
+            },
+            "state_attributes": {
+                "auto_update": {
+                    "name": "Actualitzaci\u00f3 autom\u00e0tica",
+                    "state": {
+                        "false": "No",
+                        "true": "S\u00ed"
+                    }
+                },
+                "in_progress": {
+                    "name": "En curs",
+                    "state": {
+                        "false": "No",
+                        "true": "S\u00ed"
+                    }
+                },
+                "installed_version": {
+                    "name": "Versi\u00f3 instal\u00b7lada"
+                },
+                "latest_version": {
+                    "name": "\u00daltima versi\u00f3"
+                },
+                "skipped_version": {
+                    "name": "Versi\u00f3 omesa"
+                },
+                "title": {
+                    "name": "T\u00edtol"
+                }
+            }
         },
         "firmware": {
             "name": "Microprogramari"

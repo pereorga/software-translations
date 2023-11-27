@@ -111,6 +111,10 @@
         "entity_name_startswith_device_name_yaml": {
             "description": "Algunes entitats MQTT tenen el nom d'entitat que comen\u00e7a amb el nom del dispositiu. Aix\u00f2 no s'espera. Per evitar noms duplicats, el prefix del nom del dispositiu s'elimina del nom de l'entitat. Actualitza la configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema. \n\nLlista d'entitats afectades: \n\n{config}",
             "title": "Entitats MQTT configurades manualment amb un nom que comen\u00e7a amb el nom del dispositiu"
+        },
+        "invalid_entity_category": {
+            "description": "Home Assistant ha detectat una entitat MQTT `{domain}` configurada manualment que t\u00e9 una `entity_category` establerta a `config`.\nFitxer de configuraci\u00f3: **{config_file}**\nProp de la l\u00ednia: **{line}** \n\nConfiguraci\u00f3 inv\u00e0lida: \n\n```yaml\n{config}\n``` \n\nQuan estigui definit, assegura't que `entity_category` d'un `{domain}` estigui definit a `diagnostic` o `None'. Actualitza la configuraci\u00f3 YAML i reinicia Home Assistant per solucionar aquest problema.",
+            "title": "S'ha trobat un {domain} MQTT amb una categoria d'entitat inv\u00e0lida"
         }
     },
     "options": {

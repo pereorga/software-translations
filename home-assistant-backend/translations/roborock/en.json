@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "invalid_code": "The code you entered was incorrect, please check it and try again.",
@@ -17,6 +18,10 @@
                     "code": "Verification code"
                 },
                 "description": "Type the verification code sent to your email"
+            },
+            "reauth_confirm": {
+                "description": "The Roborock integration needs to re-authenticate your account",
+                "title": "Reauthenticate integration"
             },
             "user": {
                 "data": {

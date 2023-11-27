@@ -78,6 +78,17 @@
         }
     },
     "issues": {
+        "deprecated_service_weather_get_forecast": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Use `weather.get_forecasts` instead which supports multiple entities.\n\nPlease replace this service and adjust your automations and scripts and select **submit** to close this issue.",
+                        "title": "Detected use of deprecated service `weather.get_forecast`"
+                    }
+                }
+            },
+            "title": "Detected use of deprecated service `weather.get_forecast`"
+        },
         "deprecated_weather_forecast": {
             "description": "The integration `{platform}` is using the deprecated forecast attribute.\n\nPlease {report_issue}.",
             "title": "The {platform} integration is using deprecated forecast"
@@ -114,6 +125,16 @@
                 }
             },
             "name": "Get forecast"
+        },
+        "get_forecasts": {
+            "description": "Get weather forecasts.",
+            "fields": {
+                "type": {
+                    "description": "Forecast type: daily, hourly or twice daily.",
+                    "name": "Forecast type"
+                }
+            },
+            "name": "Get forecasts"
         }
     },
     "title": "Weather"

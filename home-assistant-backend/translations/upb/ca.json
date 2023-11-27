@@ -21,12 +21,18 @@
         }
     },
     "services": {
+        "light_blink": {
+            "description": "Parpelleja una llum.",
+            "name": "Parpelleja llum"
+        },
         "light_fade_start": {
             "fields": {
                 "brightness": {
+                    "description": "N\u00famero que indica el percentatge de lluminositat total, on 0 \u00e9s el llum apagat, 1 \u00e9s la lluminositat m\u00ednima i 255 \u00e9s la lluminositat m\u00e0xima.",
                     "name": "Lluminositat"
                 },
                 "brightness_pct": {
+                    "description": "N\u00famero que indica el percentatge de lluminositat total, on 0 \u00e9s el llum apagat, 1 \u00e9s la lluminositat m\u00ednima i 100 \u00e9s la lluminositat m\u00e0xima.",
                     "name": "Percentatge de lluminositat"
                 }
             }

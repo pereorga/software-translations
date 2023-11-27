@@ -21,7 +21,7 @@
                     "username": "[%key::common::config_flow::data::username%]",
                     "verify_ssl": "Verifica el certificat SSL"
                 },
-                "description": "Configuraci\u00f3 de la inst\u00e0ncia d'AdGuard Home, permet el control i la monitoritzaci\u00f3."
+                "description": "Configura una inst\u00e0ncia d'AdGuard Home, permet el control i la supervisi\u00f3."
             }
         }
     },
@@ -92,12 +92,14 @@
             "description": "Desactiva una subscripci\u00f3 de filtre a AdGuard Home.",
             "fields": {
                 "url": {
+                    "description": "URL de subscripci\u00f3 de filtre a desactivar.",
                     "name": "URL"
                 }
             },
             "name": "Desactiva l'URL"
         },
         "enable_url": {
+            "description": "Activa una subscripci\u00f3 de filtre d'AdGuard Home.",
             "fields": {
                 "url": {
                     "description": "URL de subscripci\u00f3 de filtre a activar.",
@@ -107,11 +109,20 @@
             "name": "Activa l'URL"
         },
         "refresh": {
+            "description": "Actualitza totes les subscripcions de filtre d'AdGuard Home.",
+            "fields": {
+                "force": {
+                    "description": "For\u00e7a l'actualitzaci\u00f3 (obvia l'acceleraci\u00f3 d'AdGuard Home). \"true\" per for\u00e7ar o \"fals\" per ometre i actualitzar regularment.",
+                    "name": "For\u00e7a"
+                }
+            },
             "name": "Actualitza"
         },
         "remove_url": {
+            "description": "Desactiva una subscripci\u00f3 de filtre d'AdGuard Home.",
             "fields": {
                 "url": {
+                    "description": "URL de subscripci\u00f3 de filtre a eliminar.",
                     "name": "URL"
                 }
             },

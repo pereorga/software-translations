@@ -9,10 +9,18 @@
             "invalid_host": "Invalid hostname or IP address",
             "pwd_and_ssh": "Only provide password or SSH key file",
             "pwd_or_ssh": "Please provide password or SSH key file",
+            "pwd_required": "Password is required for selected protocol",
             "ssh_not_file": "SSH key file not found",
             "unknown": "Unexpected error"
         },
         "step": {
+            "legacy": {
+                "data": {
+                    "mode": "Router operating mode"
+                },
+                "description": "Set required parameters to connect to your router",
+                "title": "AsusWRT"
+            },
             "user": {
                 "data": {
                     "host": "Host",
@@ -77,6 +85,16 @@
                     "track_unknown": "Track unknown / unnamed devices"
                 },
                 "title": "AsusWRT Options"
+            }
+        }
+    },
+    "selector": {
+        "protocols": {
+            "options": {
+                "http": "HTTP",
+                "https": "HTTPS",
+                "ssh": "SSH",
+                "telnet": "Telnet"
             }
         }
     }

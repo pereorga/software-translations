@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El compte ja est\u00e0 configurat"
+            "already_configured": "El compte ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -10,6 +11,11 @@
             "more_stations": "S'han trobat diverses estacions meteorol\u00f2giques amb el nom especificat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "Clau API",
@@ -32,6 +38,7 @@
                     "drizzle": "Plugim",
                     "freezing_rain": "Pluja congelada",
                     "hail": "Calamarsa",
+                    "no": "Cap",
                     "none": "Cap",
                     "rain": "Pluja",
                     "rain_snow_mixed": "Aiguaneu",
@@ -58,6 +65,9 @@
             },
             "road_temperature": {
                 "name": "Temperatura de la carretera"
+            },
+            "visible_distance": {
+                "name": "Dist\u00e0ncia visible"
             },
             "wind_direction": {
                 "name": "Direcci\u00f3 del vent"

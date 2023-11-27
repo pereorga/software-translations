@@ -51,6 +51,20 @@
             },
             "name": "Elimina element de la llista de tasques"
         },
+        "get_items": {
+            "description": "Obt\u00e9 els elements d'una llista de tasques.",
+            "fields": {
+                "status": {
+                    "description": "Nom\u00e9s retrona elements pendents amb estats espec\u00edfics. De manera predeterminada, retorna les accions no completades.",
+                    "name": "Estat"
+                }
+            },
+            "name": "Obt\u00e9 elements de llista de tasques"
+        },
+        "remove_completed_items": {
+            "description": "Elimina tots els elements de la llista de tasques que s'han completat.",
+            "name": "Elimina elements completats de la llista de tasques"
+        },
         "remove_item": {
             "description": "Elimina un element de la llista de tasques a partir del seu nom.",
             "fields": {

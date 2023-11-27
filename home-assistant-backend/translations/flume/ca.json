@@ -64,11 +64,14 @@
     },
     "services": {
         "list_notifications": {
+            "description": "Retorna les notificacions dels usuaris.",
             "fields": {
                 "config_entry": {
+                    "description": "Entrada de configuraci\u00f3 de flume de la qual retronar les notificacions.",
                     "name": "Flume"
                 }
-            }
+            },
+            "name": "Llista notificacions"
         }
     }
 }

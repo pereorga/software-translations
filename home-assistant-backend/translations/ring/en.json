@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "invalid_auth": "Invalid authentication",
@@ -13,6 +14,13 @@
                     "2fa": "Two-factor code"
                 },
                 "title": "Two-factor authentication"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "description": "The Ring integration needs to re-authenticate your account {username}",
+                "title": "Reauthenticate integration"
             },
             "user": {
                 "data": {

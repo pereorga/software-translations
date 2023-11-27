@@ -4,8 +4,8 @@
             "already_configured": "El compte ja est\u00e0 configurat"
         },
         "error": {
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "unknown": "Error inesperat"
+            "cannot_connect": "No s'ha pogut connectar. Detalls: {error_detail}",
+            "unknown": "Desconegut. Detalls: {error_detail}"
         },
         "step": {
             "discovery_confirm": {
@@ -17,7 +17,9 @@
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
-                    "password": "Contrasenya"
+                    "password": "Contrasenya",
+                    "ssl": "Utilitza un certificat SSL",
+                    "verify_ssl": "Verifica el certificat SSL"
                 }
             }
         }

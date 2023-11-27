@@ -1,4 +1,33 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "invalid_ip_address": "Invalid IP address."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "count": "Ping count",
+                    "host": "Host"
+                },
+                "description": "Ping allows you to check the availability of a host.",
+                "title": "Add Ping"
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "invalid_ip_address": "Invalid IP address."
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "count": "Ping count",
+                    "host": "Host"
+                }
+            }
+        }
+    },
     "services": {
         "reload": {
             "description": "Reloads ping sensors from the YAML-configuration.",

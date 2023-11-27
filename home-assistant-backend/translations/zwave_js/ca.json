@@ -287,6 +287,20 @@
             },
             "name": "Estableix par\u00e0metre de configuraci\u00f3 del dispositiu"
         },
+        "set_lock_configuration": {
+            "description": "Estableix la configuraci\u00f3 d'un pany.",
+            "fields": {
+                "auto_relock_time": {
+                    "description": "Durada en segons fins que el pany torna a l'estat segur. Nom\u00e9s s'aplica quan el tipus d'operaci\u00f3 \u00e9s `constant`.",
+                    "name": "Temps de bloqueig autom\u00e0tic"
+                },
+                "twist_assist": {
+                    "description": "Activa l'assist\u00e8ncia Twist",
+                    "name": "Assist\u00e8ncia Twist"
+                }
+            },
+            "name": "Estableix la configuraci\u00f3 del pany"
+        },
         "set_lock_usercode": {
             "description": "Configura un codi d'usuari a un pany.",
             "fields": {

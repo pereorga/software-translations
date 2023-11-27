@@ -23,6 +23,9 @@
                 "location": {
                     "name": "Ubicaci\u00f3"
                 },
+                "message": {
+                    "name": "Missatge"
+                },
                 "messages": {
                     "name": "Missatge"
                 },
@@ -62,6 +65,21 @@
                 }
             },
             "name": "Crea esdeveniment"
+        },
+        "get_events": {
+            "description": "Obt\u00e9 els esdeveniments d'un calendari dins un interval de temps.",
+            "fields": {
+                "duration": {
+                    "name": "Durada"
+                },
+                "end_date_time": {
+                    "name": "Data i hora final"
+                },
+                "start_date_time": {
+                    "name": "Data i hora d'inici"
+                }
+            },
+            "name": "Obt\u00e9 esdeveniment"
         },
         "list_events": {
             "fields": {

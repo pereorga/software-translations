@@ -8,7 +8,45 @@
     },
     "entity_component": {
         "_": {
-            "name": "Update"
+            "name": "Update",
+            "state": {
+                "off": "Up-to-date",
+                "on": "Update available"
+            },
+            "state_attributes": {
+                "auto_update": {
+                    "name": "Auto update",
+                    "state": {
+                        "false": "No",
+                        "true": "Yes"
+                    }
+                },
+                "in_progress": {
+                    "name": "In progress",
+                    "state": {
+                        "false": "No",
+                        "true": "Yes"
+                    }
+                },
+                "installed_version": {
+                    "name": "Installed version"
+                },
+                "latest_version": {
+                    "name": "Latest version"
+                },
+                "release_summary": {
+                    "name": "Release summary"
+                },
+                "release_url": {
+                    "name": "Release URL"
+                },
+                "skipped_version": {
+                    "name": "Skipped version"
+                },
+                "title": {
+                    "name": "Title"
+                }
+            }
         },
         "firmware": {
             "name": "Firmware"

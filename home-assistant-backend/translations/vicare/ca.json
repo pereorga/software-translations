@@ -1,6 +1,7 @@
 {
     "config": {
         "abort": {
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3.",
             "unknown": "Error inesperat"
         },
@@ -9,6 +10,13 @@
         },
         "flow_title": "{name} ({host})",
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "client_id": "ID de client",
+                    "password": "Contrasenya"
+                },
+                "description": "Si us plau, verifica les credencials."
+            },
             "user": {
                 "data": {
                     "client_id": "ID de client",
