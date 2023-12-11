@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 08:03+0000\n"
+"POT-Creation-Date: 2023-12-11 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,6 +209,27 @@ msgstr "D'acord"
 msgid "Always Open"
 msgstr "Sempre obert"
 
+#: announcement.drop_support.button
+msgctxt "announcement.drop_support.button"
+msgid "Continue"
+msgstr "Continue"
+
+#: announcement.drop_support.button_read_more
+msgid "Read more"
+msgstr "Read more"
+
+#: announcement.drop_support.subtitle
+msgid ""
+"After careful consideration, we will be discontinuing support for iOS 12, 13 "
+"and 14 in our upcoming updates."
+msgstr ""
+"After careful consideration, we will be discontinuing support for iOS 12, 13 "
+"and 14 in our upcoming updates."
+
+#: announcement.drop_support.title
+msgid "Important update"
+msgstr "Important update"
+
 #: cancel_label
 msgctxt "cancel_label"
 msgid "Cancel"
@@ -274,11 +295,11 @@ msgstr "La xarxa no estava disponible o s'ha produït un error de xarxa."
 
 #: cl_error.description.ranging_failure
 msgid "A general ranging error occurred."
-msgstr "A general ranging error occurred."
+msgstr "Ha succeït un error general d'interval."
 
 #: cl_error.description.ranging_unavailable
 msgid "Ranging is disabled."
-msgstr "Ranging is disabled."
+msgstr "Els intervals estan desactivats."
 
 #: cl_error.description.region_monitoring_denied
 msgid "Access to the region monitoring service was denied by the user."
@@ -342,6 +363,7 @@ msgid "Are you sure you want to clear all events?"
 msgstr "Esteu segur que voleu esborrar tots els esdeveniments?"
 
 #: continue_label
+msgctxt "continue_label"
 msgid "Continue"
 msgstr "Continua"
 
@@ -1509,6 +1531,10 @@ msgstr "Expandiu això per mostrar l'extensió del contingut del mapa"
 msgid "Show map notification content extension"
 msgstr "Mostra extensió de contingut de notificació de mapa"
 
+#: settings.developer.mock_thread_credentials_sharing.title
+msgid "Simulator Thread Credentials Sharing"
+msgstr "Simulator Thread Credentials Sharing"
+
 #: settings.developer.show_log_files.title
 msgid "Show log files in Finder"
 msgstr "Mostra els fitxers de registre al Finder"
@@ -1656,13 +1682,13 @@ msgstr ""
 "Quan està habilitat, les escenes es mostren al costat de les accions. Quan "
 "es realitzen, activen canvis d'escena."
 
+#: settings_details.actions.scenes.select_all
+msgid "Select All"
+msgstr "Select All"
+
 #: settings_details.actions.scenes.title
 msgid "Scene Actions"
 msgstr "Accions d’escena"
-
-#: settings_details.actions.scenes.select_all
-msgid "Select All"
-msgstr ""
 
 #: settings_details.actions.title
 msgctxt "settings_details.actions.title"
@@ -1687,7 +1713,7 @@ msgstr "Verd Carib"
 
 #: settings_details.general.app_icon.enum.classic
 msgid "Classic"
-msgstr ""
+msgstr "Classic"
 
 #: settings_details.general.app_icon.enum.cornflower_blue
 msgid "Cornflower Blue"
@@ -1713,6 +1739,10 @@ msgstr "Taronja de foc"
 msgid "Green"
 msgstr "Verd"
 
+#: settings_details.general.app_icon.enum.ha_blue
+msgid "Home Assistant Blue"
+msgstr "Blau Home Assistant"
+
 #: settings_details.general.app_icon.enum.old_beta
 msgid "Old Beta"
 msgstr "Beta antiga"
@@ -1737,21 +1767,25 @@ msgstr "Rosa"
 msgid "Pride: Bi"
 msgstr "Orgull: Bi"
 
+#: settings_details.general.app_icon.enum.pride_non_binary
+msgid "Pride: Non Binary"
+msgstr "Pride: Non Binary"
+
 #: settings_details.general.app_icon.enum.pride_poc
-msgid "Pride: Progress"
+msgid "Pride: 8-Color"
 msgstr "Orgull: 8 colors"
 
 #: settings_details.general.app_icon.enum.pride_rainbow
 msgid "Pride: Rainbow"
 msgstr "Orgull: Arc de Sant Martí"
 
+#: settings_details.general.app_icon.enum.pride_rainbow_invert
+msgid "Pride: Rainbow (Inverted)"
+msgstr "Orgull: Arc de Sant Martí (Invertit)"
+
 #: settings_details.general.app_icon.enum.pride_trans
 msgid "Pride: Trans"
 msgstr "Orgull: Trans"
-
-#: settings_details.general.app_icon.enum.pride_non_binary
-msgid "Pride: Non Binary"
-msgstr ""
 
 #: settings_details.general.app_icon.enum.purple
 msgid "Purple"
@@ -2445,6 +2479,30 @@ msgstr "No s'ha pogut enviar"
 msgid "Success"
 msgstr "Èxit"
 
+#: thread.credentials.border_agent_id_title
+msgid "Border Agent ID"
+msgstr "Border Agent ID"
+
+#: thread.credentials.network_key_title
+msgid "Network Key"
+msgstr "Network Key"
+
+#: thread.credentials.network_name_title
+msgid "Network Name"
+msgstr "Network Name"
+
+#: thread.credentials.no_credential_available
+msgid "You don't have credentials available on your iCloud Keychain."
+msgstr "You don't have credentials available on your iCloud Keychain."
+
+#: thread.credentials.screen_title
+msgid "Thread Credentials"
+msgstr "Thread Credentials"
+
+#: thread.credentials.share_credentials_button_title
+msgid "Share credential with Home Assistant"
+msgstr "Share credential with Home Assistant"
+
 #: token_error.connection_failed
 msgid "Connection failed."
 msgstr "La connexió ha fallat."
@@ -2477,13 +2535,13 @@ msgstr "Veure '%@'"
 msgid "Update Available"
 msgstr "Actualització disponible"
 
-#: url_handler.call_service.confirm.title
-msgid "Call service?"
-msgstr ""
-
 #: url_handler.call_service.confirm.message
 msgid "Do you want to call the service %@?"
-msgstr ""
+msgstr "Do you want to call the service %@?"
+
+#: url_handler.call_service.confirm.title
+msgid "Call service?"
+msgstr "Call service?"
 
 #: url_handler.call_service.error.message
 msgid "An error occurred while attempting to call service %@: %@"
@@ -2501,13 +2559,13 @@ msgstr "Servei cridat"
 msgid "Action Not Found"
 msgstr "Acció no trobada"
 
-#: url_handler.fire_event.confirm.title
-msgid "Fire event?"
-msgstr ""
-
 #: url_handler.fire_event.confirm.message
 msgid "Do you want to fire the event %@?"
-msgstr ""
+msgstr "Voleu disparar l'esdeveniment %@?"
+
+#: url_handler.fire_event.confirm.title
+msgid "Fire event?"
+msgstr "Disparar l'esdeveniment?"
 
 #: url_handler.fire_event.error.message
 msgid "An error occurred while attempting to fire event %@: %@"
@@ -2525,13 +2583,21 @@ msgstr "Esdeveniment disparat"
 msgid "%@ is not a valid route"
 msgstr "%@ no és una ruta vàlida"
 
-#: url_handler.send_location.confirm.title
-msgid "Send location?"
-msgstr ""
+#: url_handler.render_template.confirm.message
+msgid "Do you want to render %@?"
+msgstr "Do you want to render %@?"
+
+#: url_handler.render_template.confirm.title
+msgid "Render template?"
+msgstr "Render template?"
 
 #: url_handler.send_location.confirm.message
 msgid "Do you want to send your location?"
-msgstr ""
+msgstr "Voleu enviar la vostra ubicació?"
+
+#: url_handler.send_location.confirm.title
+msgid "Send location?"
+msgstr "Enviar la ubicació?"
 
 #: url_handler.send_location.error.message
 msgid "An unknown error occurred while attempting to send location: %@"
@@ -2544,14 +2610,6 @@ msgstr "Ubicació enviada"
 #: url_handler.send_location.success.title
 msgid "Sent location"
 msgstr "Ubicació enviada"
-
-#: url_handler.render_template.confirm.title
-msgid "Render template?"
-msgstr ""
-
-#: url_handler.render_template.confirm.message
-msgid "Do you want to render %@?"
-msgstr ""
 
 #: url_handler.x_callback_url.error.eventNameMissing
 msgid "eventName must be defined"
