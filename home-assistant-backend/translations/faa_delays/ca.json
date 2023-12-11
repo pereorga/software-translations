@@ -17,5 +17,60 @@
                 "title": "FAA Delays"
             }
         }
+    },
+    "entity": {
+        "binary_sensor": {
+            "arrive_delay": {
+                "name": "Retard d'arribada",
+                "state_attributes": {
+                    "maximum": {
+                        "name": "M\u00e0xim"
+                    },
+                    "minimum": {
+                        "name": "M\u00ednim"
+                    },
+                    "reason": {
+                        "name": "Ra\u00f3"
+                    },
+                    "trend": {
+                        "name": "Tend\u00e8ncia"
+                    }
+                }
+            },
+            "depart_delay": {
+                "name": "Retard de sortida",
+                "state_attributes": {
+                    "maximum": {
+                        "name": "M\u00e0xim"
+                    },
+                    "minimum": {
+                        "name": "M\u00ednim"
+                    },
+                    "reason": {
+                        "name": "Ra\u00f3"
+                    },
+                    "trend": {
+                        "name": "Tend\u00e8ncia"
+                    }
+                }
+            },
+            "ground_delay": {
+                "state_attributes": {
+                    "average": {
+                        "name": "Mitjana"
+                    },
+                    "reason": {
+                        "name": "Ra\u00f3"
+                    }
+                }
+            },
+            "ground_stop": {
+                "state_attributes": {
+                    "reason": {
+                        "name": "Ra\u00f3"
+                    }
+                }
+            }
+        }
     }
 }

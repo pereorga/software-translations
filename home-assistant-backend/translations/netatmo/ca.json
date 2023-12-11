@@ -72,6 +72,9 @@
         }
     },
     "services": {
+        "clear_temperature_setting": {
+            "description": "Esborra qualsevol configuraci\u00f3 de temperatura d'un dispositiu de clima Netatmo tornant-la a la preconfiguraci\u00f3 o programaci\u00f3 actual."
+        },
         "set_person_away": {
             "description": "Configura una persona com a fora. Si no es configura cap persona, la casa es marcar\u00e0 com a buida. El nom de les persones ha de coincidir amb els noms coneguts per la c\u00e0mera Netatmo interior (de benvinguda).",
             "fields": {
@@ -96,7 +99,7 @@
             "description": "Estableix el mode de preconfiguraci\u00f3 d'un dispositiu de clima Netatmo. El mode de preconfiguraci\u00f3 ha de coincidir amb un mode de preconfiguraci\u00f3 configurat a Netatmo.",
             "fields": {
                 "end_datetime": {
-                    "description": "Data i hora fins a la qual el programa estar\u00e0 actiu.",
+                    "description": "Data i hora fins a la qual la preconfiguraci\u00f3 estar\u00e0 activa.",
                     "name": "Data i hora final"
                 },
                 "preset_mode": {
@@ -104,12 +107,19 @@
                     "name": "Mode preconfiguraci\u00f3"
                 }
             },
-            "name": "Estableix el mode preconfiguraci\u00f3 amb la data i l'hora de finalitzaci\u00f3"
+            "name": "Configura el mode preconfiguraci\u00f3 amb la data i hora de finalitzaci\u00f3"
         },
         "set_schedule": {
             "fields": {
                 "schedule_name": {
                     "name": "Programaci\u00f3"
+                }
+            }
+        },
+        "set_temperature_with_end_datetime": {
+            "fields": {
+                "end_datetime": {
+                    "name": "Data i hora final"
                 }
             }
         }

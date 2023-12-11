@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "MELCloud integration already configured for this email. Access token has been refreshed."
+            "already_configured": "MELCloud integration already configured for this email. Access token has been refreshed.",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -9,6 +10,14 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Email"
+                },
+                "description": "The Melcloud integration needs to re-authenticate your connection details",
+                "title": "Reauthenticate integration"
+            },
             "user": {
                 "data": {
                     "password": "Password",

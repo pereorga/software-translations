@@ -12,6 +12,7 @@
         "step": {
             "reauth_confirm": {
                 "data": {
+                    "encrypt_token": "Use an encrypted token for authentication.",
                     "token": "Access token"
                 },
                 "description": "The Nuki integration needs to re-authenticate with your bridge.",
@@ -19,9 +20,13 @@
             },
             "user": {
                 "data": {
+                    "encrypt_token": "Use an encrypted token for authentication.",
                     "host": "Host",
                     "port": "Port",
                     "token": "Access token"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Nuki bridge. For example: 192.168.1.25."
                 }
             }
         }

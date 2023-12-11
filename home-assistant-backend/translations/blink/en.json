@@ -36,6 +36,28 @@
             "wifi_rssi": {
                 "name": "Wi-Fi RSSI"
             }
+        },
+        "switch": {
+            "camera_motion": {
+                "name": "Camera motion detection"
+            }
+        }
+    },
+    "exceptions": {
+        "cant_write": {
+            "message": "Can't write to file"
+        },
+        "device_not_found": {
+            "message": "Device '{target}' not found in device registry"
+        },
+        "invalid_device": {
+            "message": "Device '{target}' is not a {domain} device"
+        },
+        "no_path": {
+            "message": "Can't write to directory {target}, no access to path!"
+        },
+        "not_loaded": {
+            "message": "{target} is not loaded"
         }
     },
     "options": {

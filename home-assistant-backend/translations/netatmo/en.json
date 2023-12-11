@@ -72,6 +72,10 @@
         }
     },
     "services": {
+        "clear_temperature_setting": {
+            "description": "Clears any temperature setting for a Netatmo climate device reverting it to the current preset or schedule.",
+            "name": "Clear temperature setting"
+        },
         "register_webhook": {
             "description": "Registers the webhook to the Netatmo backend.",
             "name": "Register webhook"
@@ -110,15 +114,15 @@
             "description": "Sets the preset mode for a Netatmo climate device. The preset mode must match a preset mode configured at Netatmo.",
             "fields": {
                 "end_datetime": {
-                    "description": "Datetime for until when the preset will be active.",
-                    "name": "End datetime"
+                    "description": "Date & time the preset will be active until.",
+                    "name": "End date & time"
                 },
                 "preset_mode": {
                     "description": "Climate preset mode such as Schedule, Away or Frost Guard.",
                     "name": "Preset mode"
                 }
             },
-            "name": "Set preset mode with end datetime"
+            "name": "Set preset mode with end date & time"
         },
         "set_schedule": {
             "description": "Sets the heating schedule for Netatmo climate device. The schedule name must match a schedule configured at Netatmo.",
@@ -129,6 +133,34 @@
                 }
             },
             "name": "Set heating schedule"
+        },
+        "set_temperature_with_end_datetime": {
+            "description": "Sets the target temperature for a Netatmo climate device with an end date & time.",
+            "fields": {
+                "end_datetime": {
+                    "description": "Date & time the target temperature will be active until.",
+                    "name": "End date & time"
+                },
+                "target_temperature": {
+                    "description": "The target temperature for the device.",
+                    "name": "Target temperature"
+                }
+            },
+            "name": "Set temperature with end date & time"
+        },
+        "set_temperature_with_time_period": {
+            "description": "Sets the target temperature for a Netatmo climate device with time period.",
+            "fields": {
+                "target_temperature": {
+                    "description": "The target temperature for the device.",
+                    "name": "Target temperature"
+                },
+                "time_period": {
+                    "description": "The time period which the temperature setting will be active for.",
+                    "name": "Time period"
+                }
+            },
+            "name": "Set temperature with time period"
         },
         "unregister_webhook": {
             "description": "Unregisters the webhook from the Netatmo backend.",

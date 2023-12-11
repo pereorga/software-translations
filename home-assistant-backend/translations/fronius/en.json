@@ -108,6 +108,16 @@
             "meter_location": {
                 "name": "Meter location"
             },
+            "meter_location_description": {
+                "name": "Meter location description",
+                "state": {
+                    "consumption_path": "Consumption path",
+                    "external_battery": "External battery",
+                    "external_generator": "External generator",
+                    "feed_in": "Grid interconnection point",
+                    "subload": "Subload"
+                }
+            },
             "meter_mode": {
                 "name": "Meter mode"
             },
@@ -187,13 +197,36 @@
                 "name": "State code"
             },
             "state_message": {
-                "name": "State message"
+                "name": "State message",
+                "state": {
+                    "boost_mode": "Boost mode",
+                    "critical_fault": "Critical fault",
+                    "fault": "Fault",
+                    "keep_minimum_temperature": "Keep minimum temperature",
+                    "legionella_protection": "Legionella protection",
+                    "up_and_running": "Up and running"
+                }
             },
             "state_of_charge": {
                 "name": "State of charge"
             },
             "status_code": {
                 "name": "Status code"
+            },
+            "status_message": {
+                "name": "Status message",
+                "state": {
+                    "bootloading": "Bootloading",
+                    "error": "Error",
+                    "idle": "Idle",
+                    "invalid": "Invalid",
+                    "ready": "Ready",
+                    "running": "Running",
+                    "sleeping": "Sleeping",
+                    "standby": "Standby",
+                    "startup": "Startup",
+                    "unknown": "Unknown"
+                }
             },
             "temperature_cell": {
                 "name": "Temperature"

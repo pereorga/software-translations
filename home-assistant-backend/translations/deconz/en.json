@@ -18,13 +18,16 @@
                 "title": "deCONZ Zigbee gateway via Home Assistant add-on"
             },
             "link": {
-                "description": "Unlock your deCONZ gateway to register with Home Assistant.\n\n1. Go to deCONZ Settings -> Gateway -> Advanced\n2. Press \"Authenticate app\" button",
+                "description": "Unlock your deCONZ gateway to register with Home Assistant.\n\n1. Go to deCONZ Settings > Gateway > Advanced\n2. Press \"Authenticate app\" button",
                 "title": "Link with deCONZ"
             },
             "manual_input": {
                 "data": {
                     "host": "Host",
                     "port": "Port"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your deCONZ host."
                 }
             },
             "user": {

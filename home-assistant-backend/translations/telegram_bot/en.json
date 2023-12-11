@@ -137,6 +137,10 @@
                     "description": "List of rows of commands, comma-separated, to make a custom keyboard.",
                     "name": "Keyboard"
                 },
+                "message_tag": {
+                    "description": "Tag for sent message.",
+                    "name": "Message tag"
+                },
                 "parse_mode": {
                     "description": "Parser for the message text.",
                     "name": "Parse Mode"
@@ -144,6 +148,10 @@
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
                     "name": "Password"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
@@ -196,7 +204,7 @@
                     "name": "Keyboard"
                 },
                 "message_tag": {
-                    "description": "Tag for sent message. In telegram_sent event data: {{trigger.event.data.message_tag}}.",
+                    "description": "Tag for sent message.",
                     "name": "Message tag"
                 },
                 "parse_mode": {
@@ -206,6 +214,10 @@
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
                     "name": "Password"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
@@ -254,8 +266,12 @@
                     "name": "Longitude"
                 },
                 "message_tag": {
-                    "description": "Tag for sent message. In telegram_sent event data: {{trigger.event.data.message_tag}}.",
+                    "description": "Tag for sent message.",
                     "name": "Message tag"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the location to. If not present, first allowed chat_id is the default.",
@@ -292,12 +308,16 @@
                     "name": "Message"
                 },
                 "message_tag": {
-                    "description": "Tag for sent message. In telegram_sent event data: {{trigger.event.data.message_tag}}.",
+                    "description": "Tag for sent message.",
                     "name": "Message tag"
                 },
                 "parse_mode": {
                     "description": "Parser for the message text.",
                     "name": "Parse mode"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the notification to. If not present, first allowed chat_id is the default.",
@@ -342,7 +362,7 @@
                     "name": "Keyboard"
                 },
                 "message_tag": {
-                    "description": "Tag for sent message. In telegram_sent event data: {{trigger.event.data.message_tag}}.",
+                    "description": "Tag for sent message.",
                     "name": "Message tag"
                 },
                 "parse_mode": {
@@ -352,6 +372,10 @@
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
                     "name": "Password"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
@@ -391,6 +415,10 @@
                     "description": "If the poll needs to be anonymous, defaults to True.",
                     "name": "Is anonymous"
                 },
+                "message_tag": {
+                    "description": "Tag for sent message.",
+                    "name": "Message tag"
+                },
                 "open_period": {
                     "description": "Amount of time in seconds the poll will be active after creation, 5-600.",
                     "name": "Open period"
@@ -402,6 +430,10 @@
                 "question": {
                     "description": "Poll question, 1-300 characters.",
                     "name": "Question"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the location to. If not present, first allowed chat_id is the default.",
@@ -438,12 +470,16 @@
                     "name": "Keyboard"
                 },
                 "message_tag": {
-                    "description": "Tag for sent message. In telegram_sent event data: {{trigger.event.data.message_tag}}.",
+                    "description": "Tag for sent message.",
                     "name": "Message tag"
                 },
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
                     "name": "Password"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "sticker_id": {
                     "description": "ID of a sticker that exists on telegram servers.",
@@ -500,7 +536,7 @@
                     "name": "Keyboard"
                 },
                 "message_tag": {
-                    "description": "Tag for sent message. In telegram_sent event data: {{trigger.event.data.message_tag}}.",
+                    "description": "Tag for sent message.",
                     "name": "Message tag"
                 },
                 "parse_mode": {
@@ -510,6 +546,10 @@
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
                     "name": "Password"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
@@ -562,12 +602,16 @@
                     "name": "Keyboard"
                 },
                 "message_tag": {
-                    "description": "Tag for sent message. In telegram_sent event data: {{trigger.event.data.message_tag}}.",
+                    "description": "Tag for sent message.",
                     "name": "Message tag"
                 },
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
                     "name": "Password"
+                },
+                "reply_to_message_id": {
+                    "description": "Mark the message as a reply to a previous message.",
+                    "name": "Reply to message id"
                 },
                 "target": {
                     "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",

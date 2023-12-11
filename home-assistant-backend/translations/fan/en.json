@@ -52,6 +52,11 @@
             }
         }
     },
+    "exceptions": {
+        "not_valid_preset_mode": {
+            "message": "Preset mode {preset_mode} is not valid, valid preset modes are: {preset_modes}."
+        }
+    },
     "issues": {
         "platform_integration_no_support": {
             "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",

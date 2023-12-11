@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "La integraci\u00f3 MELCloud ja est\u00e0 configurada amb aquest correu electr\u00f2nic. El token d'acc\u00e9s s'ha actualitzat."
+            "already_configured": "La integraci\u00f3 MELCloud ja est\u00e0 configurada amb aquest correu electr\u00f2nic. El token d'acc\u00e9s s'ha actualitzat.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -9,6 +10,13 @@
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Correu electr\u00f2nic"
+                },
+                "title": "Re-autenticaci\u00f3 de la integraci\u00f3"
+            },
             "user": {
                 "data": {
                     "password": "Contrasenya",

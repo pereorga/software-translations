@@ -30,7 +30,8 @@
                 "data": {
                     "password": "Contrasenya",
                     "url": "URL",
-                    "username": "Nom d'usuari"
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
                 },
                 "description": "Introdueix les dades d'acc\u00e9s del dispositiu.",
                 "title": "Configuraci\u00f3 de Huawei LTE"
@@ -132,7 +133,11 @@
                 "name": "Nom de l'operador"
             },
             "operator_search_mode": {
-                "name": "Mode cerca d'operadors"
+                "name": "Mode cerca d'operadors",
+                "state": {
+                    "0": "Autom\u00e0tic",
+                    "1": "Manual"
+                }
             },
             "pci": {
                 "name": "PCI"
@@ -142,6 +147,18 @@
             },
             "preferred_mode": {
                 "name": "Mode preferit"
+            },
+            "preferred_network_mode": {
+                "name": "Mode de xarxa preferit",
+                "state": {
+                    "00": "4G/3G/2G autom\u00e0tic",
+                    "01": "Nom\u00e9s 2G",
+                    "02": "Nom\u00e9s 3G",
+                    "0201": "3G/2G autom\u00e0tic",
+                    "03": "Nom\u00e9s 4G",
+                    "0301": "4G/2G autom\u00e0tic",
+                    "0302": "4G/3G autom\u00e0tic"
+                }
             },
             "primary_dns_server": {
                 "name": "Servidor DNS primari"

@@ -3,6 +3,7 @@
         "abort": {
             "already_configured": "Device is already configured",
             "api_ratelimit": "API Ratelimit exceeded",
+            "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -20,6 +21,11 @@
             "country": {
                 "data": {
                     "country_code": "Country code"
+                }
+            },
+            "reauth": {
+                "data": {
+                    "api_key": "Access token"
                 }
             },
             "user": {

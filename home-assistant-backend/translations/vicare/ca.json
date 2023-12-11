@@ -27,5 +27,17 @@
                 "description": "Configura la integraci\u00f3 ViCare. Per generar la clau API, v\u00e9s a https://app.developer.viessmann.com"
             }
         }
+    },
+    "entity": {
+        "sensor": {
+            "boiler_temperature": {
+                "name": "Temperatura de la caldera"
+            }
+        }
+    },
+    "exceptions": {
+        "program_unknown": {
+            "message": "No es pot convertir la preconfiguraci\u00f3 {preset} a un programa ViCare v\u00e0lid"
+        }
     }
 }

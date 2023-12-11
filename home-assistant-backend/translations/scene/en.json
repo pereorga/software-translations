@@ -1,4 +1,12 @@
 {
+    "exceptions": {
+        "entity_not_dynamically_created": {
+            "message": "The scene {entity_id} is not created with service `scene.create`."
+        },
+        "entity_not_scene": {
+            "message": "{entity_id} is not a valid scene entity_id."
+        }
+    },
     "services": {
         "apply": {
             "description": "Activates a scene with configuration.",
@@ -31,6 +39,10 @@
                 }
             },
             "name": "Create"
+        },
+        "delete": {
+            "description": "Deletes a dynamically created scene.",
+            "name": "Delete"
         },
         "reload": {
             "description": "Reloads the scenes from the YAML-configuration.",

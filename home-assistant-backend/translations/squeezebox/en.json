@@ -15,6 +15,7 @@
             "edit": {
                 "data": {
                     "host": "Host",
+                    "https": "Connect over https (requires reverse proxy)",
                     "password": "Password",
                     "port": "Port",
                     "username": "Username"
@@ -24,6 +25,9 @@
             "user": {
                 "data": {
                     "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Logitech Media Server."
                 }
             }
         }

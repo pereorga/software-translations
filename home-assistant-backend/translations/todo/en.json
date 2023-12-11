@@ -16,6 +16,22 @@
         "add_item": {
             "description": "Add a new to-do list item.",
             "fields": {
+                "description": {
+                    "description": "A more complete description of the to-do item than provided by the item name.",
+                    "name": "Description"
+                },
+                "due_date": {
+                    "description": "The date the to-do item is expected to be completed.",
+                    "name": "Due date"
+                },
+                "due_date_time": {
+                    "description": "The date and time the to-do item is expected to be completed.",
+                    "name": "Due date time"
+                },
+                "due_datetime": {
+                    "description": "The date and time the to-do item is expected to be completed.",
+                    "name": "Due date and time"
+                },
                 "item": {
                     "description": "The name that represents the to-do item.",
                     "name": "Item name"
@@ -78,6 +94,22 @@
         "update_item": {
             "description": "Update an existing to-do list item based on its name.",
             "fields": {
+                "description": {
+                    "description": "A more complete description of the to-do item than provided by the item name.",
+                    "name": "Description"
+                },
+                "due_date": {
+                    "description": "The date the to-do item is expected to be completed.",
+                    "name": "Due date"
+                },
+                "due_date_time": {
+                    "description": "The date and time the to-do item is expected to be completed.",
+                    "name": "Due date time"
+                },
+                "due_datetime": {
+                    "description": "The date and time the to-do item is expected to be completed.",
+                    "name": "Due date and time"
+                },
                 "item": {
                     "description": "The name for the to-do list item.",
                     "name": "Item name"
