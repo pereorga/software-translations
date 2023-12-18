@@ -141,5 +141,47 @@
                 }
             }
         }
+    },
+    "selector": {
+        "level_setting": {
+            "options": {
+                "breeze": "Brisa",
+                "holiday": "Vacances",
+                "level1": "Nivell 1",
+                "level2": "Nivell 2",
+                "level3": "Nivell 3",
+                "level4": "Nivell 4",
+                "off": "OFF"
+            }
+        }
+    },
+    "services": {
+        "set_breeze": {
+            "fields": {
+                "breeze_level": {
+                    "name": "Nivell"
+                },
+                "temperature": {
+                    "name": "Temperatura"
+                }
+            }
+        },
+        "set_pollution_settings": {
+            "fields": {
+                "co2_hysteresis": {
+                    "name": "Hist\u00e8resi de CO2"
+                },
+                "co2_threshold": {
+                    "name": "Llindar de CO2"
+                }
+            }
+        },
+        "set_timer_level": {
+            "fields": {
+                "timer_level": {
+                    "name": "Nivell"
+                }
+            }
+        }
     }
 }

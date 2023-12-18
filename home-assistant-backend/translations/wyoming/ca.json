@@ -25,7 +25,25 @@
                 "name": "Assistent en curs"
             }
         },
+        "number": {
+            "auto_gain": {
+                "name": "Guany autom\u00e0tic"
+            },
+            "volume_multiplier": {
+                "name": "Volum del micr\u00f2fon"
+            }
+        },
         "select": {
+            "noise_suppression_level": {
+                "name": "Nivell de supressi\u00f3 de soroll",
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "max": "M\u00e0x.",
+                    "medium": "Mitj\u00e0",
+                    "off": "OFF"
+                }
+            },
             "pipeline": {
                 "name": "Xarxa d'Assist",
                 "state": {

@@ -48,6 +48,20 @@
             }
         }
     },
+    "exceptions": {
+        "could_not_change_alarm": {
+            "message": "Could not change alarm, check system ready for arming"
+        },
+        "could_not_change_lock": {
+            "message": "Could not set lock, check system ready for lock"
+        },
+        "set_alarm": {
+            "message": "Could not set alarm for {name}: {error}"
+        },
+        "set_lock": {
+            "message": "Could not set lock for {name}: {error}"
+        }
+    },
     "options": {
         "error": {
             "code_format_mismatch": "The code does not match the required number of digits"

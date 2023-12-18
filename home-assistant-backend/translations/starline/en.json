@@ -56,6 +56,11 @@
                 "name": "Trunk"
             }
         },
+        "button": {
+            "horn": {
+                "name": "Horn"
+            }
+        },
         "device_tracker": {
             "location": {
                 "name": "Location"
@@ -105,6 +110,12 @@
             "webasto": {
                 "name": "Webasto"
             }
+        }
+    },
+    "issues": {
+        "deprecated_horn_switch": {
+            "description": "Using the Horn switch is now deprecated and will be removed in a future version of Home Assistant.\n\nPlease adjust any automations or scripts that use Horn switch entity to instead use the Horn button entity.",
+            "title": "The Starline Horn switch entity is being removed"
         }
     },
     "services": {

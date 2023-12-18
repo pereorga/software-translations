@@ -74,11 +74,21 @@
     "services": {
         "blink_update": {
             "description": "Forces a refresh.",
+            "fields": {
+                "device_id": {
+                    "description": "The Blink device id.",
+                    "name": "Device ID"
+                }
+            },
             "name": "Update"
         },
         "save_recent_clips": {
             "description": "Saves all recent video clips to local directory with file pattern \"%Y%m%d_%H%M%S_{name}.mp4\".",
             "fields": {
+                "device_id": {
+                    "description": "The Blink device id.",
+                    "name": "Device ID"
+                },
                 "file_path": {
                     "description": "Directory name of writable path (directory may need to be included in allowlist_external_dirs in config).",
                     "name": "Output directory"
@@ -93,6 +103,10 @@
         "save_video": {
             "description": "Saves last recorded video clip to local file.",
             "fields": {
+                "device_id": {
+                    "description": "The Blink device id.",
+                    "name": "Device ID"
+                },
                 "filename": {
                     "description": "Filename to writable path (directory may need to be included in allowlist_external_dirs in config).",
                     "name": "File name"
@@ -107,6 +121,10 @@
         "send_pin": {
             "description": "Sends a new PIN to blink for 2FA.",
             "fields": {
+                "device_id": {
+                    "description": "The Blink device id.",
+                    "name": "Device ID"
+                },
                 "pin": {
                     "description": "PIN received from blink. Leave empty if you only received a verification email.",
                     "name": "Pin"
@@ -116,6 +134,12 @@
         },
         "trigger_camera": {
             "description": "Requests camera to take new image.",
+            "fields": {
+                "device_id": {
+                    "description": "The Blink device id.",
+                    "name": "Device ID"
+                }
+            },
             "name": "Trigger camera"
         }
     }

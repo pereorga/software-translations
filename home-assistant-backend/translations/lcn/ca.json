@@ -9,6 +9,62 @@
         }
     },
     "services": {
+        "dyn_text": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "row": {
+                    "description": "Fila de text.",
+                    "name": "Fila"
+                },
+                "text": {
+                    "description": "Text a enviar (fins a 60 car\u00e0cters codificats en UTF-8).",
+                    "name": "Text"
+                }
+            },
+            "name": "Text din\u00e0mic"
+        },
+        "led": {
+            "description": "Configura l'estat del LED.",
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "led": {
+                    "description": "LED.",
+                    "name": "LED"
+                },
+                "state": {
+                    "description": "Estat del LED.",
+                    "name": "Estat"
+                }
+            },
+            "name": "LED"
+        },
+        "lock_keys": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "state": {
+                    "name": "Estat"
+                },
+                "table": {
+                    "name": "Taula"
+                }
+            }
+        },
+        "lock_regulator": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "state": {
+                    "name": "Estat"
+                }
+            }
+        },
         "output_abs": {
             "fields": {
                 "brightness": {

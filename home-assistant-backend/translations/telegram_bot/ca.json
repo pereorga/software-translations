@@ -137,6 +137,10 @@
                     "description": "Llista de files de comandes, separades per comes, per crear tecles personalitzades.",
                     "name": "Teclat"
                 },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
+                },
                 "parse_mode": {
                     "description": "Analitzador del text del missatge.",
                     "name": "Mode d'an\u00e0lisi"
@@ -390,6 +394,10 @@
                 "is_anonymous": {
                     "description": "Votaci\u00f3 an\u00f2nima o no. El valor predeterminat \u00e9s True (an\u00f2nima).",
                     "name": "\u00c9s an\u00f2nim"
+                },
+                "message_tag": {
+                    "description": "Etiqueta del missatge enviat. A les dades de l'esdeveniment telegram_sent: {{trigger.event.data.message_tag}}.",
+                    "name": "Etiqueta del missatge"
                 },
                 "open_period": {
                     "description": "Temps en segons durant els quals la votaci\u00f3 estar\u00e0 activa despr\u00e9s de la creaci\u00f3, 5 a 600 s.",
