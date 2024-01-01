@@ -37,11 +37,32 @@
                     "ws_headers": "WebSocket headers in JSON format",
                     "ws_path": "WebSocket path"
                 },
+                "data_description": {
+                    "advanced_options": "Enable and click `next` to set advanced options.",
+                    "broker": "The hostname or IP address of your MQTT broker.",
+                    "certificate": "The custom CA certificate file to validate your MQTT brokers certificate.",
+                    "client_cert": "The client certificate to authenticate against your MQTT broker.",
+                    "client_id": "The unique ID to identify the Home Assistant MQTT API as MQTT client. It is recommended to leave this option blank.",
+                    "client_key": "The private key file that belongs to your client certificate.",
+                    "password": "The password to login to your MQTT broker.",
+                    "port": "The port your MQTT broker listens to. For example 1883.",
+                    "protocol": "The MQTT protocol your broker operates at. For example 3.1.1.",
+                    "set_ca_cert": "Select `Auto` for automatic CA validation, or `Custom` and click `next` to set a custom CA certificate, to allow validating your MQTT brokers certificate.",
+                    "set_client_cert": "Enable and click `next` to set a client certifificate and private key to authenticate against your MQTT broker.",
+                    "tls_insecure": "Option to ignore validation of your MQTT broker's certificate.",
+                    "transport": "The transport to be used for the connection to your MQTT broker.",
+                    "username": "The username to login to your MQTT broker.",
+                    "ws_headers": "The WebSocket headers to pass through the WebSocket based connection to your MQTT broker.",
+                    "ws_path": "The WebSocket path to be used for the connection to your MQTT broker."
+                },
                 "description": "Please enter the connection information of your MQTT broker."
             },
             "hassio_confirm": {
                 "data": {
                     "discovery": "Enable discovery"
+                },
+                "data_description": {
+                    "discovery": "Option to enable MQTT automatic discovery."
                 },
                 "description": "Do you want to configure Home Assistant to connect to the MQTT broker provided by the add-on {addon}?",
                 "title": "MQTT Broker via Home Assistant add-on"
@@ -161,6 +182,24 @@
                     "ws_headers": "WebSocket headers in JSON format",
                     "ws_path": "WebSocket path"
                 },
+                "data_description": {
+                    "advanced_options": "Enable and click `next` to set advanced options.",
+                    "broker": "The hostname or IP address of your MQTT broker.",
+                    "certificate": "The custom CA certificate file to validate your MQTT brokers certificate.",
+                    "client_cert": "The client certificate to authenticate against your MQTT broker.",
+                    "client_id": "The unique ID to identify the Home Assistant MQTT API as MQTT client. It is recommended to leave this option blank.",
+                    "client_key": "The private key file that belongs to your client certificate.",
+                    "password": "The password to login to your MQTT broker.",
+                    "port": "The port your MQTT broker listens to. For example 1883.",
+                    "protocol": "The MQTT protocol your broker operates at. For example 3.1.1.",
+                    "set_ca_cert": "Select `Auto` for automatic CA validation, or `Custom` and click `next` to set a custom CA certificate, to allow validating your MQTT brokers certificate.",
+                    "set_client_cert": "Enable and click `next` to set a client certifificate and private key to authenticate against your MQTT broker.",
+                    "tls_insecure": "Option to ignore validation of your MQTT broker's certificate.",
+                    "transport": "The transport to be used for the connection to your MQTT broker.",
+                    "username": "The username to login to your MQTT broker.",
+                    "ws_headers": "The WebSocket headers to pass through the WebSocket based connection to your MQTT broker.",
+                    "ws_path": "The WebSocket path to be used for the connection to your MQTT broker."
+                },
                 "description": "Please enter the connection information of your MQTT broker.",
                 "title": "Broker options"
             },
@@ -178,6 +217,20 @@
                     "will_qos": "Will message QoS",
                     "will_retain": "Will message retain",
                     "will_topic": "Will message topic"
+                },
+                "data_description": {
+                    "birth_enable": "When set, Home Assistant will publish an online message to your MQTT broker when MQTT is ready.",
+                    "birth_payload": "The `birth` message that is published when MQTT is ready and connected.",
+                    "birth_qos": "The quality of service of the `birth` message that is published when MQTT is ready and connected",
+                    "birth_retain": "When set, Home Assistant will retain the `birth` message published to your MQTT broker.",
+                    "birth_topic": "The MQTT topic where Home Assistant will publish a `birth` message.",
+                    "discovery": "Option to enable MQTT automatic discovery.",
+                    "discovery_prefix": "The prefix of configuration topics the MQTT integration will subscribe to.",
+                    "will_enable": "When set, Home Assistant will ask your broker to publish a `will` message when MQTT is stopped or when it looses the connection to your broker.",
+                    "will_payload": "The message your MQTT broker `will` publish when the MQTT integration is stopped or when the connection is lost.",
+                    "will_qos": "The quality of service of the `will` message that is published by your MQTT broker.",
+                    "will_retain": "When set, your MQTT broker will retain the `will` message.",
+                    "will_topic": "The MQTT topic your MQTT broker will publish a `will` message to."
                 },
                 "description": "Discovery - If discovery is enabled (recommended), Home Assistant will automatically discover devices and entities which publish their configuration on the MQTT broker. If discovery is disabled, all configuration must be done manually.\nDiscovery prefix - The prefix a configuration topic for automatic discovery must start with.\nBirth message - The birth message will be sent each time Home Assistant (re)connects to the MQTT broker.\nWill message - The will message will be sent each time Home Assistant loses its connection to the broker, both in case of a clean (e.g. Home Assistant shutting down) and in case of an unclean (e.g. Home Assistant crashing or losing its network connection) disconnect.",
                 "title": "MQTT options"

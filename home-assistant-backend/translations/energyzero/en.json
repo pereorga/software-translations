@@ -43,7 +43,48 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_date": {
+            "message": "Invalid date provided. Got {date}"
+        }
+    },
     "services": {
+        "get_energy_prices": {
+            "description": "Request energy prices from EnergyZero.",
+            "fields": {
+                "end": {
+                    "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
+                    "name": "End"
+                },
+                "incl_vat": {
+                    "description": "Include VAT in the prices.",
+                    "name": "Including VAT"
+                },
+                "start": {
+                    "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
+                    "name": "Start"
+                }
+            },
+            "name": "Get energy prices"
+        },
+        "get_gas_prices": {
+            "description": "Request gas prices from EnergyZero.",
+            "fields": {
+                "end": {
+                    "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
+                    "name": "End"
+                },
+                "incl_vat": {
+                    "description": "Include VAT in the prices.",
+                    "name": "Including VAT"
+                },
+                "start": {
+                    "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
+                    "name": "Start"
+                }
+            },
+            "name": "Get gas prices"
+        },
         "get_prices": {
             "description": "Request energy or gas prices from EnergyZero.",
             "fields": {

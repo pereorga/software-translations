@@ -25,8 +25,12 @@
         "step": {
             "init": {
                 "data": {
+                    "consider_home": "Consider home interval",
                     "count": "Ping count",
                     "host": "Host"
+                },
+                "data_description": {
+                    "consider_home": "Seconds to wait till marking a device tracker as not home after not being seen."
                 }
             }
         }

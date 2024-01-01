@@ -42,5 +42,62 @@
                 "name": "Current percentage of highest price - today"
             }
         }
+    },
+    "exceptions": {
+        "invalid_date": {
+            "message": "Invalid date provided. Got {date}"
+        }
+    },
+    "services": {
+        "get_energy_return_prices": {
+            "description": "Request return energy prices from easyEnergy.",
+            "fields": {
+                "end": {
+                    "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
+                    "name": "End"
+                },
+                "start": {
+                    "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
+                    "name": "Start"
+                }
+            },
+            "name": "Get energy return prices"
+        },
+        "get_energy_usage_prices": {
+            "description": "Request usage energy prices from easyEnergy.",
+            "fields": {
+                "end": {
+                    "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
+                    "name": "End"
+                },
+                "incl_vat": {
+                    "description": "Include or exclude VAT in the prices, default is true.",
+                    "name": "VAT Included"
+                },
+                "start": {
+                    "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
+                    "name": "Start"
+                }
+            },
+            "name": "Get energy usage prices"
+        },
+        "get_gas_prices": {
+            "description": "Request gas prices from easyEnergy.",
+            "fields": {
+                "end": {
+                    "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
+                    "name": "End"
+                },
+                "incl_vat": {
+                    "description": "Include or exclude VAT in the prices, default is true.",
+                    "name": "VAT Included"
+                },
+                "start": {
+                    "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
+                    "name": "Start"
+                }
+            },
+            "name": "Get gas prices"
+        }
     }
 }

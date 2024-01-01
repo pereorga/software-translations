@@ -28,5 +28,20 @@
                 "description": "If you leave the host empty, discovery will be used to find devices."
             }
         }
+    },
+    "entity": {
+        "sensor": {
+            "steam_minutes_remain": {
+                "name": "Steam minutes remain"
+            },
+            "steam_temperature": {
+                "name": "Steam temperature"
+            }
+        },
+        "switch": {
+            "steam_active": {
+                "name": "Steam active"
+            }
+        }
     }
 }

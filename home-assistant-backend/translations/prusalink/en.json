@@ -10,7 +10,9 @@
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "host": "Host"
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Username"
                 }
             }
         }
@@ -33,6 +35,12 @@
             }
         },
         "sensor": {
+            "fan_hotend": {
+                "name": "Hotend fan"
+            },
+            "fan_print": {
+                "name": "Print fan"
+            },
             "filename": {
                 "name": "Filename"
             },
@@ -54,6 +62,9 @@
             "print_finish": {
                 "name": "Print finish"
             },
+            "print_flow": {
+                "name": "Print flow"
+            },
             "print_speed": {
                 "name": "Print speed"
             },
@@ -62,11 +73,17 @@
             },
             "printer_state": {
                 "state": {
+                    "attention": "Attention",
+                    "busy": "Busy",
                     "cancelling": "Cancelling",
+                    "error": "Error",
+                    "finished": "Finished",
                     "idle": "Idle",
                     "paused": "Paused",
                     "pausing": "Pausing",
-                    "printing": "Printing"
+                    "printing": "Printing",
+                    "ready": "Ready",
+                    "stopped": "Stopped"
                 }
             },
             "progress": {
@@ -75,6 +92,12 @@
             "z_height": {
                 "name": "Z-Height"
             }
+        }
+    },
+    "issues": {
+        "firmware_5_1_required": {
+            "description": "The PrusaLink integration has been updated to utilize the latest v1 API endpoints, which require firmware version 4.7.0 or later. If you own a Prusa Mini, please make sure your printer is running firmware 5.1.0 or a more recent version, as firmware versions 4.7.x and 5.0.x are not available for this model.\n\nFollow the guide below to update your {entry_title}.\n* [Prusa Mini Firmware Update]({prusa_mini_firmware_update})\n* [Prusa MK4/XL Firmware Update]({prusa_mk4_xl_firmware_update})\n\nAfter you've updated your printer's firmware, make sure to reload the config entry to fix this issue.",
+            "title": "Firmware update required"
         }
     }
 }

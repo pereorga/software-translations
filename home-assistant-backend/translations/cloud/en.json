@@ -1,4 +1,9 @@
 {
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Already configured. Only a single configuration possible."
+        }
+    },
     "issues": {
         "legacy_subscription": {
             "fix_flow": {
@@ -12,6 +17,14 @@
                 }
             },
             "title": "Legacy subscription detected"
+        },
+        "reset_bad_custom_domain_configuration": {
+            "description": "The DNS configuration for your custom domain ({custom_domains}) is not correct. This domain has now been ignored and will not be used for Home Assistant Cloud. If you want to use this domain, please fix the DNS configuration and restart Home Assistant. If you do not need this anymore, you can remove it from the account page.",
+            "title": "Custom domain ignored"
+        },
+        "warn_bad_custom_domain_configuration": {
+            "description": "The DNS configuration for your custom domain ({custom_domains}) is not correct. Please check the DNS configuration of your domain and make sure it points to the correct CNAME.",
+            "title": "Detected wrong custom domain configuration"
         }
     },
     "services": {

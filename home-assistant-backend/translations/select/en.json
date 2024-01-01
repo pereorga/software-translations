@@ -24,6 +24,11 @@
             }
         }
     },
+    "exceptions": {
+        "not_valid_option": {
+            "message": "Option {option} is not valid for entity {entity_id}, valid options are: {options}."
+        }
+    },
     "issues": {
         "platform_integration_no_support": {
             "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",

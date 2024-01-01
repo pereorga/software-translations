@@ -134,6 +134,14 @@
         }
     },
     "issues": {
+        "deprecated_valve_switch": {
+            "description": "The switch entity for Shelly Gas Valve is deprecated. A valve entity {entity} is available and should be used going forward. For this new valve entity you need to use {service} service.",
+            "title": "The switch entity for Shelly Gas Valve is deprecated"
+        },
+        "deprecated_valve_switch_entity": {
+            "description": "Your Shelly Gas Valve entity `{entity}` is being used in `{info}`. A valve entity is available and should be used going forward.\n\nPlease adjust `{info}` to fix this issue.",
+            "title": "Deprecated switch entity for Shelly Gas Valve detected in {info}"
+        },
         "device_not_calibrated": {
             "description": "Shelly device {device_name} with IP address {ip_address} requires calibration. To calibrate the device, it must be rebooted after proper installation on the valve. You can reboot the device in its web panel, go to 'Settings' > 'Device Reboot'.",
             "title": "Shelly device {device_name} is not calibrated"

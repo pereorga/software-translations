@@ -10,7 +10,9 @@
             "user": {
                 "data": {
                     "api_key": "Clau API",
-                    "host": "Amfitri\u00f3"
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
                 }
             }
         }
@@ -63,10 +65,13 @@
             "printer_state": {
                 "state": {
                     "cancelling": "S'est\u00e0 cancel\u00b7lant",
+                    "error": "Error",
                     "idle": "Inactiu",
                     "paused": "Pausada",
                     "pausing": "Aturant",
-                    "printing": "Imprimint"
+                    "printing": "Imprimint",
+                    "ready": "A punt",
+                    "stopped": "Aturada"
                 }
             },
             "progress": {
@@ -75,6 +80,11 @@
             "z_height": {
                 "name": "Altura Z"
             }
+        }
+    },
+    "issues": {
+        "firmware_5_1_required": {
+            "title": "Cal actualitzar el microprogramari"
         }
     }
 }
