@@ -30,5 +30,11 @@
                 }
             }
         }
+    },
+    "issues": {
+        "deprecated_version": {
+            "description": "Glances servers with version 2 is deprecated and will not be supported in future versions of HA. It is recommended to update your server to Glances version 3 then reload the integration.",
+            "title": "Glances servers with version 2 is deprecated"
+        }
     }
 }

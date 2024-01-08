@@ -17,6 +17,60 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "mobile_connected": {
+                "name": "Mobile connected"
+            },
+            "roaming": {
+                "name": "Roaming"
+            },
+            "wire_connected": {
+                "name": "Wire connected"
+            }
+        },
+        "sensor": {
+            "band": {
+                "name": "Current band"
+            },
+            "cell_id": {
+                "name": "Cell ID"
+            },
+            "connection_text": {
+                "name": "Connection text"
+            },
+            "connection_type": {
+                "name": "Connection type"
+            },
+            "radio_quality": {
+                "name": "Radio quality"
+            },
+            "register_network_display": {
+                "name": "Register network display"
+            },
+            "rx_level": {
+                "name": "Rx level"
+            },
+            "service_type": {
+                "name": "Service type"
+            },
+            "sms": {
+                "name": "SMS"
+            },
+            "sms_total": {
+                "name": "SMS total"
+            },
+            "tx_level": {
+                "name": "Tx level"
+            },
+            "upstream": {
+                "name": "Upstream"
+            },
+            "usage": {
+                "name": "Usage"
+            }
+        }
+    },
     "issues": {
         "deprecated_notify": {
             "description": "The Netgear LTE notify service was previously set up via YAML configuration.\n\nThis created a service for a specified recipient without having to include the phone number.\n\nPlease adjust any automations or scripts you may have to use the `{name}` service and include target for specifying a recipient.",

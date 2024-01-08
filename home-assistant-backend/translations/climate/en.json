@@ -128,6 +128,17 @@
             }
         }
     },
+    "exceptions": {
+        "not_valid_fan_mode": {
+            "message": "Fan mode {mode} is not valid. Valid fan modes are: {modes}."
+        },
+        "not_valid_preset_mode": {
+            "message": "Preset mode {mode} is not valid. Valid preset modes are: {modes}."
+        },
+        "not_valid_swing_mode": {
+            "message": "Swing mode {mode} is not valid. Valid swing modes are: {modes}."
+        }
+    },
     "issues": {
         "platform_integration_no_support": {
             "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",

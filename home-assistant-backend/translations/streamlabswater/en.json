@@ -15,6 +15,24 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "away_mode": {
+                "name": "Away mode"
+            }
+        },
+        "sensor": {
+            "daily_usage": {
+                "name": "Daily usage"
+            },
+            "monthly_usage": {
+                "name": "Monthly usage"
+            },
+            "yearly_usage": {
+                "name": "Yearly usage"
+            }
+        }
+    },
     "issues": {
         "deprecated_yaml_import_issue_cannot_connect": {
             "description": "Configuring Streamlabs water using YAML is being removed but there was an connection error importing your YAML configuration.\n\nEnsure connection to Streamlabs water works and restart Home Assistant to try again or remove the Streamlabs water YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",

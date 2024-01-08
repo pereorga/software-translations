@@ -50,6 +50,9 @@
         "device_not_found": {
             "message": "Device '{target}' not found in device registry"
         },
+        "integration_not_found": {
+            "message": "Integration '{target}' not found in registry"
+        },
         "invalid_device": {
             "message": "Device '{target}' is not a {domain} device"
         },
@@ -58,6 +61,19 @@
         },
         "not_loaded": {
             "message": "{target} is not loaded"
+        }
+    },
+    "issues": {
+        "service_deprecation": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Blink update service is deprecated and will be removed.\nPlease update your automations and scripts to use `Home Assistant Core Integration: Update entity`.",
+                        "title": "Blink update service is being removed"
+                    }
+                }
+            },
+            "title": "Blink update service is being removed"
         }
     },
     "options": {
@@ -121,6 +137,10 @@
         "send_pin": {
             "description": "Sends a new PIN to blink for 2FA.",
             "fields": {
+                "config_entry_id": {
+                    "description": "The Blink Integration id.",
+                    "name": "Integration ID"
+                },
                 "device_id": {
                     "description": "The Blink device id.",
                     "name": "Device ID"

@@ -1,4 +1,46 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "roaming": {
+                "name": "Itiner\u00e0ncia"
+            }
+        },
+        "sensor": {
+            "band": {
+                "name": "Banda actual"
+            },
+            "cell_id": {
+                "name": "ID de cel\u00b7la"
+            },
+            "connection_type": {
+                "name": "Tipus de connexi\u00f3"
+            },
+            "sms": {
+                "name": "SMS"
+            },
+            "usage": {
+                "name": "\u00das"
+            }
+        }
+    },
     "services": {
         "connect_lte": {
             "description": "Demana al m\u00f2dem que estableixi connexi\u00f3 LTE.",

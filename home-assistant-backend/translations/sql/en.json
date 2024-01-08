@@ -6,7 +6,9 @@
         "error": {
             "column_invalid": "The column `{column}` is not returned by the query",
             "db_url_invalid": "Database URL invalid",
-            "query_invalid": "SQL Query invalid"
+            "multiple_queries": "Multiple SQL queries are not supported",
+            "query_invalid": "SQL Query invalid",
+            "query_no_read_only": "SQL query must be read-only"
         },
         "step": {
             "user": {
@@ -43,7 +45,9 @@
         "error": {
             "column_invalid": "The column `{column}` is not returned by the query",
             "db_url_invalid": "Database URL invalid",
-            "query_invalid": "SQL Query invalid"
+            "multiple_queries": "Multiple SQL queries are not supported",
+            "query_invalid": "SQL Query invalid",
+            "query_no_read_only": "SQL query must be read-only"
         },
         "step": {
             "init": {
