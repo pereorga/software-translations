@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-08 08:03+0000\n"
+"POT-Creation-Date: 2024-01-15 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1296,6 +1296,10 @@ msgstr "Reproductor extern"
 msgid "Ignore Unsupported Action Warnings"
 msgstr "Ignora els advertiments d'acció no compatible"
 
+#: Settings-%3EExternal+Player+Settings-%3EIgnore+Default+Arguments
+msgid "Ignore Default Arguments"
+msgstr ""
+
 #: Settings-%3EExternal+Player+Settings-%3ECustom+External+Player+Executable
 msgid "Custom External Player Executable"
 msgstr "Executable de reproductor extern personalitzat"
@@ -1798,6 +1802,16 @@ msgstr "Notificar quan se salta un segment esponsoritzat"
 
 #: Settings-%3ESponsorBlock+Settings-%3EUseDeArrowTitles
 msgid "Use DeArrow Video Titles"
+msgstr ""
+
+#: Settings-%3ESponsorBlock+Settings-%3EUseDeArrowThumbnails
+msgid "Use DeArrow for thumbnails"
+msgstr ""
+
+#: Settings-%3ESponsorBlock+Settings-%3EDeArrow+Thumbnail+Generator+API+Url+(Default+is+https://dearrow-thumb.ajay.app)
+msgid ""
+"DeArrow Thumbnail Generator API Url (Default is https://dearrow-thumb.ajay."
+"app)"
 msgstr ""
 
 #: Settings-%3ESponsorBlock+Settings-%3ESkip+Options-%3ESkip+Option
@@ -3182,6 +3196,13 @@ msgid ""
 "current action (e.g. reversing playlists, etc.)."
 msgstr ""
 
+#: Tooltips-%3EExternal+Player+Settings-%3EIgnore+Default+Arguments
+msgid ""
+"Do not send any default arguments to the external player aside from the "
+"video URL (e.g. playback rate, playlist URL, etc.). Custom arguments will "
+"still be passed on."
+msgstr ""
+
 #: Tooltips-%3EExternal+Player+Settings-%3ECustom+External+Player+Arguments
 msgid ""
 "Any custom command line arguments, separated by semicolons (';'), you want "
@@ -3232,6 +3253,10 @@ msgstr ""
 
 #: Tooltips-%3ESponsorBlock+Settings-%3EUseDeArrowTitles
 msgid "Replace video titles with user-submitted titles from DeArrow."
+msgstr ""
+
+#: Tooltips-%3ESponsorBlock+Settings-%3EUseDeArrowThumbnails
+msgid "Replace video thumbnails with thumbnails from DeArrow."
 msgstr ""
 
 #: Local+API+Error+(Click+to+copy)
