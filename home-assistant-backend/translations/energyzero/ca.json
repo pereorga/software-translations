@@ -44,6 +44,20 @@
         }
     },
     "services": {
+        "get_energy_prices": {
+            "fields": {
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
+                }
+            }
+        },
+        "get_gas_prices": {
+            "fields": {
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
+                }
+            }
+        },
         "get_prices": {
             "description": "Sol\u00b7licita els preus de l'energia o el gas a EnergyZero.",
             "fields": {

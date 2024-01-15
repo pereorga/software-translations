@@ -6,10 +6,10 @@
             "reauth_successful": "Re-authentication was successful"
         },
         "error": {
-            "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication",
-            "unknown": "Unexpected error",
-            "wrong_version": "Your Powerwall uses a software version that is not supported. Please consider upgrading or reporting this issue so it can be resolved."
+            "cannot_connect": "A connection error occurred while connecting to the Powerwall: {error}",
+            "invalid_auth": "Authentication failed with error: {error}",
+            "unknown": "An unknown error occurred: {error}",
+            "wrong_version": "Your Powerwall uses a software version that is not supported. Please consider upgrading or reporting this issue so it can be resolved: {error}"
         },
         "flow_title": "{name} ({ip_address})",
         "step": {

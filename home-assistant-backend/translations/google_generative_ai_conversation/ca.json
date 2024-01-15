@@ -25,5 +25,22 @@
                 }
             }
         }
+    },
+    "services": {
+        "generate_content": {
+            "fields": {
+                "image_filename": {
+                    "description": "Imatges",
+                    "example": "/config/www/imatge.jpg",
+                    "name": "Nom de la imatge"
+                },
+                "prompt": {
+                    "description": "Instrucci\u00f3",
+                    "example": "Descriu el que veus a les imatges:",
+                    "name": "Instrucci\u00f3"
+                }
+            },
+            "name": "Genera contingut"
+        }
     }
 }

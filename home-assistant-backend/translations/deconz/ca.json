@@ -109,6 +109,9 @@
     "services": {
         "configure": {
             "fields": {
+                "bridgeid": {
+                    "name": "Identificador de l'enlla\u00e7"
+                },
                 "entity": {
                     "name": "Entitat"
                 },
@@ -117,6 +120,20 @@
                 }
             },
             "name": "Configura"
+        },
+        "device_refresh": {
+            "fields": {
+                "bridgeid": {
+                    "name": "Identificador de l'enlla\u00e7"
+                }
+            }
+        },
+        "remove_orphaned_entries": {
+            "fields": {
+                "bridgeid": {
+                    "name": "Identificador de l'enlla\u00e7"
+                }
+            }
         }
     }
 }

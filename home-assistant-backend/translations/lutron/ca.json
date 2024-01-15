@@ -1,27 +1,25 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
         "step": {
             "user": {
                 "data": {
+                    "host": "Amfitri\u00f3",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 }
             }
         }
     },
-    "entity": {
-        "sensor": {
-            "water_usage_yesterday": {
-                "name": "Consum d'aigua, ahir"
-            }
+    "issues": {
+        "deprecated_yaml_import_issue_unknown": {
+            "title": "La sol\u00b7licitud d'importaci\u00f3 de configuraci\u00f3 YAML de Lutron ha fallat a causa d'un error desconegut"
         }
     }
 }

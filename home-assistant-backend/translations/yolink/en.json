@@ -38,6 +38,11 @@
         }
     },
     "entity": {
+        "number": {
+            "config_volume": {
+                "name": "Volume"
+            }
+        },
         "sensor": {
             "power_failure_alarm": {
                 "name": "Power failure alarm",
@@ -86,6 +91,44 @@
             "usb_ports": {
                 "name": "USB ports"
             }
+        }
+    },
+    "selector": {
+        "speaker_tone": {
+            "options": {
+                "alert": "Alert",
+                "emergency": "Emergency",
+                "tip": "Tip",
+                "warn": "Warn"
+            }
+        }
+    },
+    "services": {
+        "play_on_speaker_hub": {
+            "description": "Convert text to audio play on YoLink SpeakerHub",
+            "fields": {
+                "message": {
+                    "description": "Text message to be played.",
+                    "name": "Text message"
+                },
+                "repeat": {
+                    "description": "The amount of times the text will be repeated.",
+                    "name": "Repeat"
+                },
+                "target_device": {
+                    "description": "SpeakerHub Device",
+                    "name": "SpeakerHub Device"
+                },
+                "tone": {
+                    "description": "Tone before playing audio.",
+                    "name": "Tone"
+                },
+                "volume": {
+                    "description": "Speaker volume during playback.",
+                    "name": "Volume"
+                }
+            },
+            "name": "Play on SpeakerHub"
         }
     }
 }

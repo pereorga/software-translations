@@ -19,8 +19,14 @@
     },
     "entity": {
         "binary_sensor": {
+            "mobile_connected": {
+                "name": "Connexi\u00f3 m\u00f2bil"
+            },
             "roaming": {
                 "name": "Itiner\u00e0ncia"
+            },
+            "wire_connected": {
+                "name": "Cable connectat"
             }
         },
         "sensor": {
@@ -33,8 +39,23 @@
             "connection_type": {
                 "name": "Tipus de connexi\u00f3"
             },
+            "radio_quality": {
+                "name": "Qualitat de r\u00e0dio"
+            },
+            "rx_level": {
+                "name": "Nivell Rx"
+            },
+            "service_type": {
+                "name": "Tipus de servei"
+            },
             "sms": {
                 "name": "SMS"
+            },
+            "sms_total": {
+                "name": "SMS totals"
+            },
+            "tx_level": {
+                "name": "Nivell Tx"
             },
             "usage": {
                 "name": "\u00das"

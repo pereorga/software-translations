@@ -38,6 +38,18 @@
             }
         }
     },
+    "issues": {
+        "service_deprecation": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "title": "El servei d'actualitzaci\u00f3 de Blink est\u00e0 sent eliminant"
+                    }
+                }
+            },
+            "title": "El servei d'actualitzaci\u00f3 de Blink est\u00e0 sent eliminant"
+        }
+    },
     "options": {
         "step": {
             "simple_options": {
@@ -92,6 +104,7 @@
         "send_pin": {
             "fields": {
                 "config_entry_id": {
+                    "description": "ID de la integraci\u00f3 Blink.",
                     "name": "ID d'integraci\u00f3"
                 },
                 "device_id": {
