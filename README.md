@@ -35,6 +35,7 @@ brew install bash csvkit translate-toolkit dos2unix gettext
 * RawTherapee: https://www.rawtherapee.com/
 * Stooa: https://github.com/Stooa/Stooa/tree/main
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
+* The Moovie Database: https://app.localeapp.com/projects/8267/translations
 * VLC (iOS): https://github.com/videolan/vlc-ios
 * Windows Calculator: https://github.com/microsoft/calculator
 * WinSCP: https://winscp.net/eng/translations.php
