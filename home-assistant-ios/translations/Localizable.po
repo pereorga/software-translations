@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-16 00:25+0000\n"
+"POT-Creation-Date: 2024-01-22 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,15 +243,103 @@ msgctxt "cancel_label"
 msgid "Cancel"
 msgstr "Cancel·lar"
 
+#: carPlay.action.intro.item.body
+msgid "Tap to continue on your iPhone"
+msgstr "Tap to continue on your iPhone"
+
+#: carPlay.action.intro.item.title
+msgid "Create your first action"
+msgstr "Create your first action"
+
+#: carPlay.labels.already_added_server
+msgctxt "carPlay.labels.already_added_server"
+msgid "Already added"
+msgstr "Already added"
+
+#: carPlay.labels.empty_domain_list
+msgctxt "carPlay.labels.empty_domain_list"
+msgid "No domains available"
+msgstr "No domains available"
+
+#: carPlay.labels.no_servers_available
+msgctxt "carPlay.labels.no_servers_available"
+msgid "No servers available. Add a server in the app."
+msgstr "No servers available. Add a server in the app."
+
+#: carPlay.labels.select_server
+msgid "Select server"
+msgstr "Select server"
+
+#: carPlay.labels.servers
+msgctxt "carPlay.labels.servers"
+"carPlay.labels.servers"
+msgid "Servers"
+msgstr "Servers"
+
+#: carPlay.lock.confirmation.title
+msgctxt "carPlay.lock.confirmation.title"
+msgid "Are you sure you want to perform lock action on %@?"
+msgstr "Are you sure you want to perform lock action on %@?"
+
+#: carPlay.navigation.button.next
+msgctxt "carPlay.navigation.button.next"
+msgid "Next"
+msgstr "Next"
+
+#: carPlay.navigation.button.previous
+msgctxt "carPlay.navigation.button.previous"
+msgid "Previous"
+msgstr "Previous"
+
+#: carPlay.navigation.tab.actions
+msgctxt "carPlay.navigation.tab.actions"
+"carPlay.navigation.tab.actions"
+"carPlay.navigation.tab.actions"
+"carPlay.navigation.tab.actions"
+msgid "Actions"
+msgstr "Actions"
+
+#: carPlay.navigation.tab.areas
+msgid "Areas"
+msgstr "Areas"
+
+#: carPlay.navigation.tab.domains
+msgid "Control"
+msgstr "Control"
+
+#: carPlay.no_actions.title
+msgid "Open iOS Companion App to create actions for CarPlay."
+msgstr "Open iOS Companion App to create actions for CarPlay."
+
+#: carPlay.no_entities.title
+msgid "No CarPlay compatible entities available."
+msgstr "No CarPlay compatible entities available."
+
+#: carPlay.notification.action.intro.body
+msgid "Tap to create your first iOS Action"
+msgstr "Tap to create your first iOS Action"
+
+#: carPlay.notification.action.intro.title
+msgid "Create iOS Action"
+msgstr "Create iOS Action"
+
+#: carPlay.unlock.confirmation.title
+msgctxt "carPlay.unlock.confirmation.title"
+msgid "Are you sure you want to perform unlock action on %@?"
+msgstr "Are you sure you want to perform unlock action on %@?"
+
 #: carplay.labels.already_added_server
+msgctxt "carplay.labels.already_added_server"
 msgid "Already added"
 msgstr "Already added"
 
 #: carplay.labels.empty_domain_list
+msgctxt "carplay.labels.empty_domain_list"
 msgid "No domains available"
 msgstr "No domains available"
 
 #: carplay.labels.no_servers_available
+msgctxt "carplay.labels.no_servers_available"
 msgid "No servers available. Add a server in the app."
 msgstr "No servers available. Add a server in the app."
 
@@ -261,18 +349,22 @@ msgid "Servers"
 msgstr "Servers"
 
 #: carplay.lock.confirmation.title
+msgctxt "carplay.lock.confirmation.title"
 msgid "Are you sure you want to perform lock action on %@?"
 msgstr "Are you sure you want to perform lock action on %@?"
 
 #: carplay.navigation.button.next
+msgctxt "carplay.navigation.button.next"
 msgid "Next"
 msgstr "Next"
 
 #: carplay.navigation.button.previous
+msgctxt "carplay.navigation.button.previous"
 msgid "Previous"
 msgstr "Previous"
 
 #: carplay.unlock.confirmation.title
+msgctxt "carplay.unlock.confirmation.title"
 msgid "Are you sure you want to perform unlock action on %@?"
 msgstr "Are you sure you want to perform unlock action on %@?"
 
@@ -615,8 +707,6 @@ msgstr "Configurar…"
 
 #: menu.actions.title
 msgctxt "menu.actions.title"
-"menu.actions.title"
-"menu.actions.title"
 msgid "Actions"
 msgstr "Accions"
 
@@ -647,6 +737,10 @@ msgstr "Commuta %1$@"
 #: menu.view.reload_page
 msgid "Reload Page"
 msgstr "Recarregar la pàgina"
+
+#: navBar.close
+msgid "Close"
+msgstr "Close"
 
 #: nfc.detail.copy
 msgid "Copy to Pasteboard"
@@ -1702,15 +1796,19 @@ msgstr "Accions sincronitzades"
 
 #: settings_details.actions.footer
 msgid ""
-"Actions are used in the Apple Watch app, App Icon Actions and the Today "
-"widget"
+"Actions are used in the Apple Watch app, App Icon Actions, the Today widget "
+"and CarPlay."
 msgstr ""
-"Les accions s'utilitzen a l'aplicació Apple Watch, en les accions de les "
-"icones de l'aplicació i al Today Widget"
+"Actions are used in the Apple Watch app, App Icon Actions, the Today widget "
+"and CarPlay."
 
 #: settings_details.actions.footer_mac
 msgid "Actions are used in the application menu and widgets."
 msgstr "Les accions s'utilitzen al menú de l'aplicació i als ginys."
+
+#: settings_details.actions.learn.button.title
+msgid "Introduction to iOS Actions"
+msgstr "Introduction to iOS Actions"
 
 #: settings_details.actions.scenes.customize_action
 msgid "Customize"
@@ -1740,6 +1838,14 @@ msgstr "Accions d’escena"
 msgctxt "settings_details.actions.title"
 msgid "Actions"
 msgstr "Accions"
+
+#: settings_details.actions.carPlay.available.title
+msgid "Show in CarPlay"
+msgstr ""
+
+#: settings_details.actions.watch.available.title
+msgid "Show in Watch"
+msgstr ""
 
 #: settings_details.general.app_icon.enum.beta
 msgid "Beta"
