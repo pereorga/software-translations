@@ -11,13 +11,19 @@
             "more_locations": "Found multiple camera locations with the specified name"
         },
         "step": {
+            "multiple_cameras": {
+                "data": {
+                    "id": "Choose camera"
+                },
+                "description": "Result came back with multiple cameras"
+            },
             "user": {
                 "data": {
                     "api_key": "API key",
                     "location": "Location"
                 },
                 "data_description": {
-                    "location": "Equal or part of name, description or camera id"
+                    "location": "Equal or part of name, description or camera id. Be as specific as possible to avoid getting multiple cameras as result"
                 }
             }
         }

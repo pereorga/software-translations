@@ -165,6 +165,9 @@
             }
         },
         "lock": {
+            "charge_state_charge_port_latch": {
+                "name": "Charge cable lock"
+            },
             "vehicle_state_locked": {
                 "name": "Lock"
             }
@@ -251,6 +254,18 @@
             }
         },
         "sensor": {
+            "active_route_energy_at_arrival": {
+                "name": "State of charge at arrival"
+            },
+            "active_route_miles_to_arrival": {
+                "name": "Distance to arrival"
+            },
+            "active_route_time_to_arrival": {
+                "name": "Time to arrival"
+            },
+            "active_route_traffic_minutes_delay": {
+                "name": "Traffic delay"
+            },
             "charge_state-battery_range": {
                 "name": "Battery Range"
             },
@@ -332,6 +347,21 @@
             "drive_state-speed": {
                 "name": "Speed"
             },
+            "drive_state_active_route_destination": {
+                "name": "Destination"
+            },
+            "drive_state_active_route_energy_at_arrival": {
+                "name": "State of charge at arrival"
+            },
+            "drive_state_active_route_miles_to_arrival": {
+                "name": "Distance to arrival"
+            },
+            "drive_state_active_route_time_to_arrival": {
+                "name": "Time to arrival"
+            },
+            "drive_state_active_route_traffic_minutes_delay": {
+                "name": "Traffic delay"
+            },
             "drive_state_power": {
                 "name": "Power"
             },
@@ -407,6 +437,11 @@
             "update": {
                 "name": "Update"
             }
+        }
+    },
+    "exceptions": {
+        "no_cable": {
+            "message": "Insert cable to lock"
         }
     }
 }
