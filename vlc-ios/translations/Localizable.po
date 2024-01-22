@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-16 00:26+0000\n"
+"POT-Creation-Date: 2024-01-22 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -151,11 +151,11 @@ msgstr "%u pistes, duració: %@"
 
 #: NB_ALBUM_FORMAT
 msgid "%i Album"
-msgstr ""
+msgstr "Àlbum %i "
 
 #: NB_ALBUMS_FORMAT
 msgid "%i Albums"
-msgstr ""
+msgstr " Àlbums %i"
 
 #: PLAYING_EXTERNALLY_TITLE
 msgid "TV Connected"
@@ -344,16 +344,18 @@ msgstr "Actualitza la biblioteca de medis"
 
 #: FAVORITES
 msgid "Favorites"
-msgstr ""
+msgstr "Preferits"
 
 #: NO_FAVORITES
 msgid "There are no Favorites yet"
-msgstr ""
+msgstr "Encara no hi ha Preferits"
 
 #: NO_FAVORITES_DESCRIPTION
 msgid ""
 "Mark your favorite folders while browsing servers to have them listed here."
 msgstr ""
+"Marqueu les vostres carpetes preferides mentre navegueu pels servidors per "
+"incloure-les aquí."
 
 #: OPEN_NETWORK
 msgid "Open Network Stream"
@@ -464,11 +466,11 @@ msgstr "Cap aplicació per a obrir aquest tipus d'arxiu"
 
 #: SHARING_SUCCESS_CAMERA_ROLL
 msgid "File was successfully saved to the Camera Roll"
-msgstr "L'arxiu s'ha guardat amb èxit en el Rodet"
+msgstr "L'arxiu s'ha guardat satisfactòriament en el Rodet"
 
 #: FAVORITEVC_DETAILTEXT
 msgid "See your favorite folders"
-msgstr ""
+msgstr "Visualitzar les carpetes preferides"
 
 #: STREAMVC_DETAILTEXT
 msgid "Play streams directly without downloading"
@@ -578,7 +580,7 @@ msgstr "Error de recuperació de fitxers"
 
 #: GDRIVE_DOWNLOAD_SUCCESSFUL
 msgid "Your file has been successfully downloaded"
-msgstr "El fitxer s'ha baixat correctament"
+msgstr "El fitxer s'ha baixat satisfactòriament"
 
 #: GDRIVE_DOWNLOAD_SUCCESSFUL_TITLE
 msgid "SUCCESS"
@@ -711,11 +713,11 @@ msgstr "Agregar arxius mentre s'editen en les respectives categories."
 
 #: EMPTY_HISTORY
 msgid "Empty History"
-msgstr ""
+msgstr "Buida l'historial"
 
 #: EMPTY_HISTORY_DESCRIPTION
 msgid "No media yet."
-msgstr ""
+msgstr "Encara no hi ha elements multimèdia."
 
 #: PLAYBACK_SCRUB_HELP
 msgid "Slide your finger up to adjust the scrubbing rate."
@@ -941,7 +943,7 @@ msgstr ""
 
 #: WEBINTF_URL_SENT
 msgid "URL sent successfully."
-msgstr "URL enviada amb èxit."
+msgstr "URL enviada satisfactòriament."
 
 #: WEBINTF_URL_EMPTY
 msgid "URL cannot be empty."
@@ -1030,11 +1032,11 @@ msgstr "No s'han trobat subtítols per al vostre element multimèdia \"%@\"."
 
 #: SELECT_AUDIO_FROM_FILES
 msgid "Load External Audio..."
-msgstr ""
+msgstr "Carrega àudio extern..."
 
 #: SELECT_SUBTITLE_FROM_FILES
 msgid "Load External Subtitles..."
-msgstr ""
+msgstr "Carrega subtítols externs..."
 
 #: USE_SPDIF
 msgid "Use Pass-through (S/PDIF)"
@@ -1129,7 +1131,7 @@ msgstr "No es pot obrir l'URL"
 #. "DELETE_ITEM_HINT" = "Press %@ to Delete"; /* Insert %@ where play-pause-glyph should be placed */
 #: DELETE_MESSAGE
 msgid "Confirm the deletion of the selection"
-msgstr "Confirmeu l'eliminació d'aquesta selecció?"
+msgstr "Confirmeu l'eliminació d'aquesta selecció"
 
 #: DELETE_MESSAGE_PLAYLIST
 msgid ""
@@ -1219,7 +1221,7 @@ msgstr "Grups de vídeos"
 #: HISTORY
 msgctxt "HISTORY"
 msgid "History"
-msgstr ""
+msgstr "Historial"
 
 #: MODIFIED_DATE
 msgid "Modified date"
@@ -1266,23 +1268,23 @@ msgstr "Selecciona tots els fitxers multimèdia d'aquesta vista"
 #: BUTTON_HISTORY
 msgctxt "BUTTON_HISTORY"
 msgid "History"
-msgstr ""
+msgstr "Historial"
 
 #: BUTTON_HISTORY_HINT
 msgid "View your recently played media"
-msgstr ""
+msgstr "Visualitza el fitxer multimèdia reproduït recentment"
 
 #: BUTTON_CLEAR
 msgid "Clear"
-msgstr ""
+msgstr "Neteja"
 
 #: CLEAR_HISTORY_TITLE
 msgid "Clear History"
-msgstr ""
+msgstr "Buida l'historial"
 
 #: CLEAR_HISTORY_MESSAGE
 msgid "Confirm clearing history"
-msgstr ""
+msgstr "Confirmeu el buidatge de l'historial"
 
 #: ADD_TO_PLAYLIST
 msgid "Add to Playlist"
@@ -1593,19 +1595,19 @@ msgstr "Bloqueja la interfície"
 
 #: AB_LOOP
 msgid "A→B Loop"
-msgstr ""
+msgstr "Bucle A→B"
 
 #: AB_LOOP_MARKS
 msgid "A→B Loop Marks"
-msgstr ""
+msgstr "Marques de bucle A→B"
 
 #: RESET_AB_LOOP
 msgid "Do you want to remove the A→B loop?"
-msgstr ""
+msgstr "Voleu eliminar el bucle A→B?"
 
 #: RESET_AB_LOOP_MARKS
 msgid "Do you want to reset the A→B loop marks?"
-msgstr ""
+msgstr "Voleu restablir les marques de bucle A→B?"
 
 #: SHUFFLE_HINT
 msgid "Shuffle media list"
@@ -1617,7 +1619,7 @@ msgstr "Llista no aleatòria de multimèdia"
 
 #: ASPECT_RATIO_TITLE
 msgid "Aspect Ratios"
-msgstr ""
+msgstr "Relacions d'aspecte"
 
 #: VIDEO_ASPECT_RATIO_HINT
 msgid "Change the aspect ratio of the current video"
@@ -1711,47 +1713,47 @@ msgstr "Disminueix el retard dels subtítols"
 
 #: DISPLAY_PLAYBACK_SPEED_SHORTCUT
 msgid "Show playback speed shortcut"
-msgstr ""
+msgstr "Mostra la drecera de velocitat de reproducció"
 
 #: DISPLAY_PLAYBACK_SPEED_SHORTCUT_HINT
 msgid "Enable to display the playback speed shortcut"
-msgstr ""
+msgstr "Habilita per mostrar la drecera de velocitat de reproducció"
 
 #: VIDEO_FILTERS_HINT
 msgid "Select to open the video filters view"
-msgstr ""
+msgstr "Selecciona per obrir la vista de filtres de vídeo"
 
 #: PLAYBACK_SPEED_HINT
 msgid "Select to open the playback speed view"
-msgstr ""
+msgstr "Selecciona per obrir la vista de velocitat de reproducció"
 
 #: SUBTITLES_DELAY_HINT
 msgid "Select to open the subtitles delay view"
-msgstr ""
+msgstr "Select to open the subtitles delay view"
 
 #: AUDIO_DELAY_HINT
 msgid "Select to open the audio delay view"
-msgstr ""
+msgstr "Select to open the audio delay view"
 
 #: SLEEP_TIMER_HINT
 msgid "Select to open the sleep timer view"
-msgstr ""
+msgstr "Selecciona per obrir la vista de temporitzador"
 
 #: EQUALIZER_HINT
 msgid "Select to open the equalizer view"
-msgstr ""
+msgstr "Selecciona per obrir la vista d'equalitzador"
 
 #: CHAPTERS_HINT
 msgid "Select to open the chapters view"
-msgstr ""
+msgstr "Selecciona per obrir la vista de capítols"
 
 #: BOOKMARKS_HINT
 msgid "Select to open the bookmarks view"
-msgstr ""
+msgstr "Selecciona per obrir la vista de preferits"
 
 #: INTERFACE_LOCK_HINT
 msgid "Enable the option to lock the user interface"
-msgstr ""
+msgstr "Habilita l'opció per bloquejar la interfície de l'usuari"
 
 #.
 #. // MARK: - Settings
@@ -1791,39 +1793,43 @@ msgstr "Poseu-vos en contacte a través de %@ des d'un altre dispositiu."
 
 #: SETTINGS_THEME_BLACK
 msgid "Use black background on dark mode"
-msgstr ""
+msgstr "Utilitza el fons negre en el mode fosc"
 
 #: SETTINGS_THEME_BLACK_SUBTITLE
 msgid "Improves battery life on devices with an OLED screen"
-msgstr ""
+msgstr "Millora la vida de la bateria pels dispositius amb pantalla OLED"
 
 #: SETTINGS_RESET_TITLE
 msgid "Reset the settings"
-msgstr ""
+msgstr "Restableix la configuració"
 
 #: SETTINGS_RESET_MESSAGE
 msgid "Do you want to reset all the settings to their default values?"
-msgstr ""
+msgstr "Voleu restablir la configuració als seus valors predeterminats?"
 
 #: SETTINGS_PLAY_ALL
 msgid "Seamless playback for collections"
-msgstr ""
+msgstr "Reproducció perfecta per a col·leccions"
 
 #: SETTINGS_PLAY_ALL_HINT
 msgid "Enable to automatically play the next media in the audio or video tabs"
 msgstr ""
+"Activa per reproduir automàticament el següent contingut multimèdia a les "
+"pestanyes d'àudio o vídeo"
 
 #: SETTINGS_PLAYLIST_PLAY_ALL
 msgid "Seamless playback for playlists"
-msgstr ""
+msgstr "Reproducció perfecta per a llistes de reproducció"
 
 #: SETTINGS_PLAYLIST_PLAY_ALL_HINT
 msgid "Enable to automatically play the next media in a playlist"
 msgstr ""
+"Activa per reproduir automàticament el següent contingut multimèdia d'una "
+"llista de reproducció"
 
 #: SETTINGS_DOCUMENTATION
 msgid "Documentation"
-msgstr ""
+msgstr "Documentació"
 
 #.
 #. // MARK: - Local Network
@@ -2041,63 +2047,65 @@ msgstr "Feu un toc per eliminar el full d'acció."
 #. // MARK: - Donation
 #: DONATION_CUSTOM_AMOUNT
 msgid "Enter Custom Amount"
-msgstr ""
+msgstr "Introduïu l'import personalitzat"
 
 #: DONATION_MONTHLY
 msgid "Monthly"
-msgstr ""
+msgstr "Mensual"
 
 #: DONATION_ONE_TIME
 msgid "One-Time"
-msgstr ""
+msgstr "Una sola vegada"
 
 #: DONATION_TITLE
 msgid "Privacy over profit"
-msgstr ""
+msgstr "Privacitat per sobre del benefici"
 
 #: DONATION_DESCRIPTION
 msgid ""
 "Private, open-source multimedia, funded by you. No ads, no tracking, no "
 "compromise. Free for everyone to use. Donate now to support VideoLAN."
 msgstr ""
-"El vostre patrocini ens permetrà millorar l’aplicació VLC-iOS i donar suport "
-"a l'associació VideoLAN"
+"Privat, multimèdia de codi obert, finançat per vosaltres. Sense publicitat, "
+"sense seguiment, sense compromisos. Lliure per a tothom. Feu una donació ara "
+"per donar suport al VideoLAN."
 
 #: DONATION_WINDOW_TITLE
 msgid "Make a Donation to VideoLAN"
-msgstr ""
+msgstr "Feu una donació a VideoLAN"
 
 #: DONATE_CC_DC
 msgid "Credit or Debit card"
-msgstr ""
+msgstr "Targeta de crèdit o dèbit"
 
 #: DONATION_CHOOSE_PP
 msgid "Please select your payment provider"
-msgstr ""
+msgstr "Si us plau, seleccioneu el vostre proveïdor de pagament"
 
 #: DONATION_AMOUNT
 msgid "Donation amount: %0.2f €"
-msgstr ""
+msgstr "Import de la donació: %0.2f €"
 
 #: DONATION_CC_INFO_NOT_STORED
 msgid "VideoLAN will neither receive nor store your credit card data."
 msgstr ""
+"VideoLAN no rebrà ni emmagatzemarà les vostres dades de targeta de crèdit."
 
 #: DONATION_CC_NUM
 msgid "Credit Card Number"
-msgstr ""
+msgstr "Número de targeta de crèdit"
 
 #: DONATION_CC_EXPIRY_DATE
 msgid "Expiry Date"
-msgstr ""
+msgstr "Data de caducitat"
 
 #: DONATION_CC_EXPIRY_DATE_FORMAT
 msgid "MM/YY"
-msgstr ""
+msgstr "MM/AA"
 
 #: DONATION_CC_CVV
 msgid "CVV"
-msgstr ""
+msgstr "CVV"
 
 #.
 #. // MARK: - Playback keyboard shortcuts
@@ -2136,8 +2144,8 @@ msgstr "Feu un toc per eliminar la vista."
 #. // MARK: - NEW DELETE STRINGS
 #: DELETE_SINGLE_TITLE
 msgid "Delete \"%@\"?"
-msgstr ""
+msgstr "Voleu suprimir \"%@\"?"
 
 #: DELETE_MULTIPLE_TITLE
 msgid "Delete \"%@\" and %d others?"
-msgstr ""
+msgstr "Voleu suprimir \"%@\" i %d altres?"
