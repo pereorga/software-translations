@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 08:02+0000\n"
+"POT-Creation-Date: 2024-01-29 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,6 +189,10 @@ msgstr ""
 
 #: Global-%3ECounts-%3EWatching+Count
 msgid "1 watching | {count} watching"
+msgstr ""
+
+#: Global-%3EInput+Tags-%3ELength+Requirement
+msgid "Tag must be at least {number} characters long"
 msgstr ""
 
 #: Search+/+Go+to+URL
@@ -1588,6 +1592,14 @@ msgstr ""
 msgid "Hide Channel Releases"
 msgstr ""
 
+#: Settings-%3EDistraction+Free+Settings-%3EHide+Videos+and+Playlists+Containing+Text
+msgid "Hide Videos and Playlists Containing Text"
+msgstr ""
+
+#: Settings-%3EDistraction+Free+Settings-%3EHide+Videos+and+Playlists+Containing+Text+Placeholder
+msgid "Word, Word Fragment, or Phrase"
+msgstr ""
+
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Subscriptions+Videos
 msgid "Hide Subscriptions Videos"
 msgstr ""
@@ -2408,6 +2420,10 @@ msgstr ""
 
 #: Channel-%3ECommunity-%3EHide+Answers
 msgid "Hide Answers"
+msgstr ""
+
+#: Channel-%3ECommunity-%3EVideo+hidden+by+FreeTube
+msgid "Video hidden by FreeTube"
 msgstr ""
 
 #: Video-%3EMark+As+Watched
@@ -3260,6 +3276,13 @@ msgid ""
 "the \"{subsection}\" section of the \"{settingsSection}\""
 msgstr ""
 
+#: Tooltips-%3EDistraction+Free+Settings-%3EHide+Videos+and+Playlists+Containing+Text
+msgid ""
+"Enter a word, word fragment, or phrase (case insensitive) to hide all videos "
+"& playlists whose original titles contain it throughout all of FreeTube, "
+"excluding only History, Your Playlists, and videos inside of playlists."
+msgstr ""
+
 #: Tooltips-%3ESubscription+Settings-%3EFetch+Feeds+from+RSS
 msgid ""
 "When enabled, FreeTube will use RSS instead of its default method for "
@@ -3428,6 +3451,16 @@ msgstr ""
 
 #: Channel+Unhidden
 msgid "{channel} removed from channel filter"
+msgstr ""
+
+#: Trimmed+input+must+be+at+least+N+characters+long
+msgid ""
+"Trimmed input must be at least 1 character long | Trimmed input must be at "
+"least {length} characters long"
+msgstr ""
+
+#: Tag+already+exists
+msgid "\"{tagName}\" tag already exists"
 msgstr ""
 
 #: Hashtag-%3EHashtag
