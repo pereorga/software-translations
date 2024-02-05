@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-22 08:04+0000\n"
+"POT-Creation-Date: 2024-02-05 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -825,8 +825,8 @@ msgid "Double tap to show or hide playback controls"
 msgstr "Feu dos tocs per mostrar o amagar els controls de reproducció"
 
 #: FIRST_STEPS_ITUNES
-msgid "iTunes File Sync"
-msgstr "Sincronització de fitxers a l'iTunes"
+msgid "File Sync"
+msgstr "File Sync"
 
 #: FIRST_STEPS_ITUNES_TITLE
 msgid "Sync With Your Computer"
@@ -834,12 +834,11 @@ msgstr "Sincronitzi amb el seu ordinador"
 
 #: FIRST_STEPS_ITUNES_DETAILS
 msgid ""
-"Connect your device to iTunes and select your device. Select \"File Sharing\""
-" on the left side menu of iTunes and look for VLC to transfer files"
+"Connect your %@ to use the Finder or iTunes for \"File Sharing\". Select VLC "
+"to transfer files."
 msgstr ""
-"Connecta el teu dispositiu a iTunes i selecciona'l. En el menú esquerre "
-"d'iTunes selecciona \"Compartir Arxiu\"  i busca VLC per transferir els "
-"arxius"
+"Connect your %@ to use the Finder or iTunes for \"File Sharing\". Select VLC "
+"to transfer files."
 
 #: FIRST_STEPS_WIFI_TITLE
 msgid "Share via Wi-Fi"
@@ -1729,11 +1728,11 @@ msgstr "Selecciona per obrir la vista de velocitat de reproducció"
 
 #: SUBTITLES_DELAY_HINT
 msgid "Select to open the subtitles delay view"
-msgstr "Select to open the subtitles delay view"
+msgstr "Selecciona per obrir la vista de retard de subtítols"
 
 #: AUDIO_DELAY_HINT
 msgid "Select to open the audio delay view"
-msgstr "Select to open the audio delay view"
+msgstr "Selecciona per obrir la vista de retard d'àudio"
 
 #: SLEEP_TIMER_HINT
 msgid "Select to open the sleep timer view"
@@ -2049,14 +2048,6 @@ msgstr "Feu un toc per eliminar el full d'acció."
 msgid "Enter Custom Amount"
 msgstr "Introduïu l'import personalitzat"
 
-#: DONATION_MONTHLY
-msgid "Monthly"
-msgstr "Mensual"
-
-#: DONATION_ONE_TIME
-msgid "One-Time"
-msgstr "Una sola vegada"
-
 #: DONATION_TITLE
 msgid "Privacy over profit"
 msgstr "Privacitat per sobre del benefici"
@@ -2082,9 +2073,13 @@ msgstr "Targeta de crèdit o dèbit"
 msgid "Please select your payment provider"
 msgstr "Si us plau, seleccioneu el vostre proveïdor de pagament"
 
+#: DONATION_CHOOSE_CURRENCY
+msgid "Please select a currency"
+msgstr "Please select a currency"
+
 #: DONATION_AMOUNT
-msgid "Donation amount: %0.2f €"
-msgstr "Import de la donació: %0.2f €"
+msgid "Donation amount: %@"
+msgstr "Donation amount: %@"
 
 #: DONATION_CC_INFO_NOT_STORED
 msgid "VideoLAN will neither receive nor store your credit card data."
@@ -2099,13 +2094,33 @@ msgstr "Número de targeta de crèdit"
 msgid "Expiry Date"
 msgstr "Data de caducitat"
 
-#: DONATION_CC_EXPIRY_DATE_FORMAT
-msgid "MM/YY"
-msgstr "MM/AA"
+#: DONATION_CC_EXPIRY_DATE_MONTH
+msgid "MM"
+msgstr "MM"
+
+#: DONATION_CC_EXPIRY_DATE_YEAR
+msgid "YY"
+msgstr "YY"
 
 #: DONATION_CC_CVV
 msgid "CVV"
 msgstr "CVV"
+
+#: DONATION_APPLE_PAY_NOT_POSSIBLE
+msgid "Failure configuring Apple Pay"
+msgstr "Failure configuring Apple Pay"
+
+#: DONATION_APPLE_PAY_NOT_POSSIBLE_LONG
+msgid ""
+"VLC failed to configure Apple Pay to perform your donation. Please choose a "
+"different payment provider to continue."
+msgstr ""
+"VLC failed to configure Apple Pay to perform your donation. Please choose a "
+"different payment provider to continue."
+
+#: DONATION_DONATE_BUTTON
+msgid "Donate"
+msgstr "Donate"
 
 #.
 #. // MARK: - Playback keyboard shortcuts
