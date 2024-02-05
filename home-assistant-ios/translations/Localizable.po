@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-29 08:03+0000\n"
+"POT-Creation-Date: 2024-02-05 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,6 +86,22 @@ msgstr "Quant a"
 msgid "Website"
 msgstr "Lloc web"
 
+#: actions_configurator.action.create_automation
+msgid "Create automation"
+msgstr "Create automation"
+
+#: actions_configurator.action.footer
+msgid ""
+"Define what will be executed when Action is performed, alternatively you can "
+"use the example trigger below manually."
+msgstr ""
+"Define what will be executed when Action is performed, alternatively you can "
+"use the example trigger below manually."
+
+#: actions_configurator.action.title
+msgid "Execute"
+msgstr "Execute"
+
 #: actions_configurator.rows.background_color.title
 msgid "Background Color"
 msgstr "Color de fons"
@@ -146,6 +162,18 @@ msgstr ""
 #: addButtonLabel
 msgid "Add"
 msgstr "Afegir"
+
+#: alerts.action_automation_editor.unavailable.body
+msgid ""
+"To automatically create an automation for an Action please update your Home "
+"Assistant to at least version 2024.2"
+msgstr ""
+"To automatically create an automation for an Action please update your Home "
+"Assistant to at least version 2024.2"
+
+#: alerts.action_automation_editor.unavailable.title
+msgid "Please update Home Assistant"
+msgstr "Please update Home Assistant"
 
 #: alerts.alert.ok
 msgctxt "alerts.alert.ok"
@@ -307,10 +335,6 @@ msgstr "Areas"
 msgid "Control"
 msgstr "Control"
 
-#: carPlay.state.loading.title
-msgid "Loading…"
-msgstr ""
-
 #: carPlay.no_actions.title
 msgid "Open iOS Companion App to create actions for CarPlay."
 msgstr "Open iOS Companion App to create actions for CarPlay."
@@ -326,6 +350,10 @@ msgstr "Tap to create your first iOS Action"
 #: carPlay.notification.action.intro.title
 msgid "Create iOS Action"
 msgstr "Create iOS Action"
+
+#: carPlay.state.loading.title
+msgid "Loading…"
+msgstr "Loading…"
 
 #: carPlay.unlock.confirmation.title
 msgctxt "carPlay.unlock.confirmation.title"
