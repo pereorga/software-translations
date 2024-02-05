@@ -23,12 +23,37 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "firmware": {
+                "name": "Microprogramari"
+            }
+        },
         "light": {
             "main": {
                 "name": "Principal"
+            },
+            "segment": {
+                "name": "Segment {segment}"
+            }
+        },
+        "number": {
+            "intensity": {
+                "name": "Intensitat"
+            },
+            "segment_intensity": {
+                "name": "Intensitat del segment {segment}"
+            },
+            "segment_speed": {
+                "name": "Velocitat del segment {segment}"
+            },
+            "speed": {
+                "name": "Velocitat"
             }
         },
         "select": {
+            "color_palette": {
+                "name": "Paleta de colors"
+            },
             "live_override": {
                 "state": {
                     "0": "OFF",
@@ -41,6 +66,9 @@
             },
             "preset": {
                 "name": "Programa"
+            },
+            "segment_color_palette": {
+                "name": "Paleta de colors del segment {segment}"
             }
         },
         "sensor": {
@@ -78,6 +106,12 @@
         "switch": {
             "nightlight": {
                 "name": "Llum nocturna"
+            },
+            "reverse": {
+                "name": "Invers"
+            },
+            "segment_reverse": {
+                "name": "Invers del segment {segment}"
             }
         }
     },

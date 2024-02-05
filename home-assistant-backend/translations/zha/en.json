@@ -182,6 +182,9 @@
             "frost_lock": {
                 "name": "Frost lock"
             },
+            "hand_open": {
+                "name": "Opened by hand"
+            },
             "ias_zone": {
                 "name": "IAS zone"
             },
@@ -301,8 +304,14 @@
             "local_temperature_calibration": {
                 "name": "Local temperature offset"
             },
+            "max_heat_setpoint_limit": {
+                "name": "Max heat setpoint limit"
+            },
             "maximum_level": {
                 "name": "Maximum load dimming level"
+            },
+            "min_heat_setpoint_limit": {
+                "name": "Min heat setpoint limit"
             },
             "minimum_level": {
                 "name": "Minimum load dimming level"
@@ -324,6 +333,9 @@
             },
             "portion_weight": {
                 "name": "Portion weight"
+            },
+            "presence_detection_timeout": {
+                "name": "Presence detection timeout"
             },
             "quick_start_time": {
                 "name": "Quick start time"
@@ -381,11 +393,17 @@
             "detection_distance": {
                 "name": "Detection distance"
             },
+            "detection_sensitivity": {
+                "name": "Detection Sensitivity"
+            },
             "feeding_mode": {
                 "name": "Mode"
             },
             "increased_non_neutral_output": {
                 "name": "Non neutral output"
+            },
+            "keypad_lockout": {
+                "name": "Keypad lockout"
             },
             "led_scaling_mode": {
                 "name": "Led scaling mode"
@@ -440,6 +458,9 @@
             "formaldehyde": {
                 "name": "Formaldehyde concentration"
             },
+            "hooks_state": {
+                "name": "Hooks state"
+            },
             "hvac_action": {
                 "name": "HVAC action"
             },
@@ -452,17 +473,29 @@
             "last_feeding_source": {
                 "name": "Last feeding source"
             },
+            "last_illumination_state": {
+                "name": "Last illumination state"
+            },
             "leaf_wetness": {
                 "name": "Leaf wetness"
             },
             "lqi": {
                 "name": "LQI"
             },
+            "pi_heating_demand": {
+                "name": "Pi heating demand"
+            },
             "portions_dispensed_today": {
                 "name": "Portions dispensed today"
             },
+            "power_source": {
+                "name": "Power source"
+            },
             "rssi": {
                 "name": "RSSI"
+            },
+            "setpoint_change_source": {
+                "name": "Setpoint change source"
             },
             "smoke_density": {
                 "name": "Smoke density"
@@ -472,6 +505,9 @@
             },
             "summation_delivered": {
                 "name": "Summation delivered"
+            },
+            "summation_received": {
+                "name": "Summation received"
             },
             "tier1_summation_delivered": {
                 "name": "Tier 1 summation delivered"
@@ -496,6 +532,9 @@
             },
             "weight_dispensed_today": {
                 "name": "Weight dispensed today"
+            },
+            "window_covering_type": {
+                "name": "Window covering type"
             }
         },
         "switch": {
@@ -532,8 +571,14 @@
             "heartbeat_indicator": {
                 "name": "Heartbeat indicator"
             },
+            "hooks_locked": {
+                "name": "Hooks locked"
+            },
             "invert_switch": {
                 "name": "Invert switch"
+            },
+            "inverted": {
+                "name": "Inverted"
             },
             "led_indicator": {
                 "name": "LED indicator"

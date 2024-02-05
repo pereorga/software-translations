@@ -44,5 +44,33 @@
             "button": "Bot\u00f3 \"{subtype}\"",
             "dimmer": "Dimmer \"{subtype}\""
         }
+    },
+    "entity": {
+        "event": {
+            "button": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "double_press": "Premut dues vegades",
+                            "long_double_press": "Premut dues vegades durant una estona",
+                            "long_press": "Premut durant una estona",
+                            "long_triple_press": "Premut tres vegades durant una estona",
+                            "press": "Premut",
+                            "triple_press": "Premut tres vegades"
+                        }
+                    }
+                }
+            },
+            "dimmer": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "rotate_left": "Gira cap a l'esquerra",
+                            "rotate_right": "Gira cap a la dreta"
+                        }
+                    }
+                }
+            }
+        }
     }
 }

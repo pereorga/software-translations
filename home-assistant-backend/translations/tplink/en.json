@@ -2,13 +2,22 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "no_devices_found": "No devices found on the network"
+            "no_devices_found": "No devices found on the network",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect"
         },
         "flow_title": "{name} {model} ({host})",
         "step": {
+            "discovery_auth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "The device requires authentication, please input your credentials below.",
+                "title": "Authenticate"
+            },
             "discovery_confirm": {
                 "description": "Do you want to set up {name} {model} ({host})?"
             },
@@ -16,6 +25,18 @@
                 "data": {
                     "device": "Device"
                 }
+            },
+            "reauth": {
+                "description": "The device needs updated credentials, please input your credentials below.",
+                "title": "Reauthenticate integration"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "The device needs updated credentials, please input your credentials below.",
+                "title": "Reauthenticate integration"
             },
             "user": {
                 "data": {
@@ -25,19 +46,42 @@
                     "host": "Hostname or IP address of your TP-Link device."
                 },
                 "description": "If you leave the host empty, discovery will be used to find devices."
+            },
+            "user_auth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "The device requires authentication, please input your credentials below.",
+                "title": "Authenticate"
             }
         }
     },
     "entity": {
         "sensor": {
+            "current_child": {
+                "name": "{device_name} current"
+            },
             "current_consumption": {
                 "name": "Current consumption"
+            },
+            "current_consumption_child": {
+                "name": "{device_name} current consumption"
             },
             "today_consumption": {
                 "name": "Today's consumption"
             },
+            "today_consumption_child": {
+                "name": "{device_name} today's consumption"
+            },
             "total_consumption": {
                 "name": "Total consumption"
+            },
+            "total_consumption_child": {
+                "name": "{device_name} total consumption"
+            },
+            "voltage_child": {
+                "name": "{device_name} voltage"
             }
         },
         "switch": {

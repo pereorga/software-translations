@@ -2,18 +2,29 @@
     "config": {
         "error": {
             "invalid_auth": "Invalid authentication",
-            "login_error": "Login error ({code}): {msg}"
+            "login_error": "Login error ({code}): {msg}",
+            "reauth_successful": "Re-authentication was successful"
         },
         "step": {
+            "reauth_user_code": {
+                "data": {
+                    "user_code": "User code"
+                },
+                "description": "The Tuya integration now uses an improved login method. To reauthenticate with your Smart Life or Tuya Smart account, you need to enter your user code.\n\nYou can find this code in the Smart Life app or Tuya Smart app in **Settings** > **Account and Security** screen, and enter the code shown on the **User Code** field. The user code is case sensitive, please be sure to enter it exactly as shown in the app."
+            },
+            "scan": {
+                "description": "Use Smart Life app or Tuya Smart app to scan the following QR-code to complete the login:\n\n {qrcode} \n\nContinue to the next step once you have completed this step in the app."
+            },
             "user": {
                 "data": {
                     "access_id": "Tuya IoT Access ID",
                     "access_secret": "Tuya IoT Access Secret",
                     "country_code": "Country",
                     "password": "Password",
+                    "user_code": "User code",
                     "username": "Account"
                 },
-                "description": "Enter your Tuya credentials"
+                "description": "Enter your Smart Life or Tuya Smart user code.\n\nYou can find this code in the Smart Life app or Tuya Smart app in **Settings** > **Account and Security** screen, and enter the code shown on the **User Code** field. The user code is case sensitive, please be sure to enter it exactly as shown in the app."
             }
         }
     },

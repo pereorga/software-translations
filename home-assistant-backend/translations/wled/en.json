@@ -26,12 +26,37 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "firmware": {
+                "name": "Firmware"
+            }
+        },
         "light": {
             "main": {
                 "name": "Main"
+            },
+            "segment": {
+                "name": "Segment {segment}"
+            }
+        },
+        "number": {
+            "intensity": {
+                "name": "Intensity"
+            },
+            "segment_intensity": {
+                "name": "Segment {segment} intensity"
+            },
+            "segment_speed": {
+                "name": "Segment {segment} speed"
+            },
+            "speed": {
+                "name": "Speed"
             }
         },
         "select": {
+            "color_palette": {
+                "name": "Color palette"
+            },
             "live_override": {
                 "name": "Live override",
                 "state": {
@@ -45,6 +70,9 @@
             },
             "preset": {
                 "name": "Preset"
+            },
+            "segment_color_palette": {
+                "name": "Segment {segment} color palette"
             }
         },
         "sensor": {
@@ -82,6 +110,12 @@
         "switch": {
             "nightlight": {
                 "name": "Nightlight"
+            },
+            "reverse": {
+                "name": "Reverse"
+            },
+            "segment_reverse": {
+                "name": "Segment {segment} reverse"
             },
             "sync_receive": {
                 "name": "Sync receive"

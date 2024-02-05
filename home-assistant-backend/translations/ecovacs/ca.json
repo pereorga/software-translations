@@ -4,6 +4,7 @@
             "already_configured": "El compte ja est\u00e0 configurat"
         },
         "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
@@ -14,6 +15,35 @@
                     "country": "Pa\u00eds",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "network_ip": {
+                "name": "Adre\u00e7a IP"
+            },
+            "network_rssi": {
+                "name": "RSSI Wi-Fi"
+            },
+            "network_ssid": {
+                "name": "SSID Wi-Fi"
+            }
+        },
+        "vacuum": {
+            "vacuum": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "max": "M\u00e0x.",
+                            "max_plus": "M\u00e0x. +",
+                            "normal": "Normal"
+                        }
+                    },
+                    "rooms": {
+                        "name": "Habitacions"
+                    }
                 }
             }
         }

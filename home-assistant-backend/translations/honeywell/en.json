@@ -22,6 +22,19 @@
         }
     },
     "entity": {
+        "climate": {
+            "honeywell": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "away": "Away",
+                            "hold": "Hold",
+                            "none": "None"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "outdoor_humidity": {
                 "name": "Outdoor humidity"

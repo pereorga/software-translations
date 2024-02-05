@@ -2,13 +2,22 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "no_devices_found": "No s'han trobat dispositius a la xarxa"
+            "no_devices_found": "No s'han trobat dispositius a la xarxa",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "flow_title": "{name} {model} ({host})",
         "step": {
+            "discovery_auth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "description": "El dispositiu necessita autenticar-te. Introdueix les teves credencials a continuaci\u00f3.",
+                "title": "Autenticaci\u00f3"
+            },
             "discovery_confirm": {
                 "description": "Vols configurar {name} {model} ({host})?"
             },
@@ -17,11 +26,31 @@
                     "device": "Dispositiu"
                 }
             },
+            "reauth": {
+                "description": "El dispositiu necessita les credencials actualitzades, introdueix les teves credencials a continuaci\u00f3.",
+                "title": "Re-autenticaci\u00f3 de la integraci\u00f3"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "description": "El dispositiu necessita les credencials actualitzades, introdueix les teves credencials a continuaci\u00f3.",
+                "title": "Re-autenticaci\u00f3 de la integraci\u00f3"
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3"
                 },
                 "description": "Si deixes l'amfitri\u00f3 buit, s'utilitzar\u00e0 el descobriment per cercar dispositius."
+            },
+            "user_auth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "description": "El dispositiu necessita autenticar-te. Introdueix les teves credencials a continuaci\u00f3.",
+                "title": "Autenticaci\u00f3"
             }
         }
     },

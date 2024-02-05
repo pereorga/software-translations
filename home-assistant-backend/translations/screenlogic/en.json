@@ -46,6 +46,20 @@
                 }
             },
             "name": "Set Color Mode"
+        },
+        "start_super_chlorination": {
+            "description": "Begins super chlorination, running for the specified period or 24 hours if none is specified.",
+            "fields": {
+                "runtime": {
+                    "description": "Number of hours for super chlorination to run.",
+                    "name": "Run Time"
+                }
+            },
+            "name": "Start Super Chlorination"
+        },
+        "stop_super_chlorination": {
+            "description": "Stops super chlorination.",
+            "name": "Stop Super Chlorination"
         }
     }
 }

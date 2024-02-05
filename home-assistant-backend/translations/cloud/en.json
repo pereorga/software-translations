@@ -5,6 +5,17 @@
         }
     },
     "issues": {
+        "deprecated_voice": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "The '{deprecated_voice}' voice is deprecated and will be removed.\nPlease update your automations and scripts to replace the '{deprecated_voice}' with another voice like eg. '{replacement_voice}'.",
+                        "title": "A deprecated voice was used"
+                    }
+                }
+            },
+            "title": "A deprecated voice was used"
+        },
         "legacy_subscription": {
             "fix_flow": {
                 "abort": {

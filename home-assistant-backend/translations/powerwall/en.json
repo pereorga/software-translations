@@ -60,6 +60,9 @@
             "backup_reserve": {
                 "name": "Backup reserve"
             },
+            "battery_capacity": {
+                "name": "Battery capacity"
+            },
             "battery_export": {
                 "name": "Battery export"
             },
@@ -77,6 +80,9 @@
             },
             "battery_instant_voltage": {
                 "name": "Battery voltage"
+            },
+            "battery_remaining": {
+                "name": "Battery remaining"
             },
             "busway_export": {
                 "name": "Busway export"
@@ -116,6 +122,14 @@
             },
             "generator_instant_voltage": {
                 "name": "Generator voltage"
+            },
+            "grid_state": {
+                "name": "Grid state",
+                "state": {
+                    "grid_compliant": "Compliant",
+                    "grid_qualifying": "Qualifying",
+                    "grid_uncompliant": "Uncompliant"
+                }
             },
             "load_export": {
                 "name": "Load export"

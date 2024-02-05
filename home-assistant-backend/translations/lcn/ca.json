@@ -72,25 +72,75 @@
                     "name": "Lluminositat"
                 },
                 "transition": {
+                    "description": "Temps de transici\u00f3.",
                     "name": "Transici\u00f3"
                 }
             }
         },
         "output_rel": {
             "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
                 "brightness": {
                     "description": "Lluminositat relativa.",
                     "name": "Lluminositat"
                 }
             }
         },
+        "output_toggle": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "transition": {
+                    "description": "Temps de transici\u00f3.",
+                    "name": "Transici\u00f3"
+                }
+            }
+        },
+        "pck": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "pck": {
+                    "name": "PCK"
+                }
+            },
+            "name": "PCK"
+        },
+        "relays": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "state": {
+                    "name": "Estat"
+                }
+            }
+        },
         "send_keys": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a"
+                },
+                "keys": {
+                    "name": "Claus"
+                },
+                "state": {
+                    "name": "Estat"
+                }
+            },
             "name": "Enviar claus"
         },
         "var_abs": {
             "fields": {
                 "address": {
                     "name": "Adre\u00e7a"
+                },
+                "unit_of_measurement": {
+                    "name": "Unitat de mesura"
                 },
                 "value": {
                     "description": "Valor a configurar.",
