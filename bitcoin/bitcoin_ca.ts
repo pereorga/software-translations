@@ -58,14 +58,6 @@
         <translation>&amp;Tria</translation>
     </message>
     <message>
-        <source>Sending addresses</source>
-        <translation>Adreces d'enviament</translation>
-    </message>
-    <message>
-        <source>Receiving addresses</source>
-        <translation>Adreces de recepció</translation>
-    </message>
-    <message>
         <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Aquestes són les vostres adreces de Bitcoin per a enviar els pagaments. Sempre reviseu l'import i l'adreça del destinatari abans de transferir monedes.</translation>
     </message>
@@ -226,6 +218,10 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
     <message>
         <source>Wallet passphrase was successfully changed.</source>
         <translation>La contrasenya del moneder ha estat canviada correctament.</translation>
+    </message>
+    <message>
+        <source>Passphrase change failed</source>
+        <translation>Ha fallat el canvi de frase de pas</translation>
     </message>
     <message>
         <source>Warning: The Caps Lock key is on!</source>
@@ -703,6 +699,10 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <source>&amp;Hide</source>
         <translation>&amp;Amaga</translation>
     </message>
+    <message>
+        <source>S&amp;how</source>
+        <translation>&amp;Mostra</translation>
+    </message>
     <message numerus="yes">
         <source>%n active connection(s) to Bitcoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
@@ -834,10 +834,6 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Tarifa:</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Polsim:</translation>
-    </message>
-    <message>
         <source>After Fee:</source>
         <translation>Tarifa posterior:</translation>
     </message>
@@ -922,24 +918,12 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation>Copia els bytes</translation>
     </message>
     <message>
-        <source>Copy dust</source>
-        <translation>Copia el polsim</translation>
-    </message>
-    <message>
         <source>Copy change</source>
         <translation>Copia el canvi</translation>
     </message>
     <message>
         <source>(%1 locked)</source>
         <translation>(%1 bloquejada)</translation>
-    </message>
-    <message>
-        <source>yes</source>
-        <translation>sí</translation>
-    </message>
-    <message>
-        <source>This label turns red if any recipient receives an amount smaller than the current dust threshold.</source>
-        <translation>Aquesta etiqueta es torna vermella si cap recipient rep un import inferior al llindar de polsim actual.</translation>
     </message>
     <message>
         <source>Can vary +/- %1 satoshi(s) per input.</source>
@@ -1075,14 +1059,6 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation>Fes cartera en blanc</translation>
     </message>
     <message>
-        <source>Use descriptors for scriptPubKey management</source>
-        <translation>Utilitzeu descriptors per a la gestió de scriptPubKey</translation>
-    </message>
-    <message>
-        <source>Descriptor Wallet</source>
-        <translation>Cartera del descriptor</translation>
-    </message>
-    <message>
         <source>Use an external signing device such as a hardware wallet. Configure the external signer script in wallet preferences first.</source>
         <translation>Utilitzeu un dispositiu de signatura extern, com ara una cartera de maquinari. Configureu primer l’escriptura de signatura externa a les preferències de cartera.</translation>
     </message>
@@ -1093,10 +1069,6 @@ Això és ideal per a carteres de mode només lectura.</translation>
     <message>
         <source>Create</source>
         <translation>Crear</translation>
-    </message>
-    <message>
-        <source>Compiled without sqlite support (required for descriptor wallets)</source>
-        <translation>Compilat sense el suport sqlite (requerit per a carteres descriptor)</translation>
     </message>
     <message>
         <source>Compiled without external signing support (required for external signing)</source>
@@ -1204,6 +1176,10 @@ Això és ideal per a carteres de mode només lectura.</translation>
             <numerusform>(Un GB necessari per a la cadena completa)</numerusform>
             <numerusform>(Un GB necessari per a la cadena completa)</numerusform>
         </translation>
+    </message>
+    <message>
+        <source>Choose data directory</source>
+        <translation>Trieu un directori de dades</translation>
     </message>
     <message>
         <source>At least %1 GB of data will be stored in this directory, and it will grow over time.</source>
@@ -1779,6 +1755,10 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation>*Envia %1 a %2</translation>
     </message>
     <message>
+        <source>own address</source>
+        <translation>adreça pròpia</translation>
+    </message>
+    <message>
         <source>Unable to calculate transaction fee or total transaction amount.</source>
         <translation>Incapaç de calcular la tarifa de transacció o la quantitat total de la transacció</translation>
     </message>
@@ -2044,6 +2024,10 @@ Si rebeu aquest error, haureu de sol·licitar al comerciant que proporcioni un U
     <message>
         <source>Synced Blocks</source>
         <translation>Blocs sincronitzats</translation>
+    </message>
+    <message>
+        <source>Last Transaction</source>
+        <translation>Darrera transacció</translation>
     </message>
     <message>
         <source>The mapped Autonomous System used for diversifying peer selection.</source>
@@ -2589,10 +2573,6 @@ No utilitzeu aquesta consola sense entendre completament les ramificacions d'una
         <translation>Entrades...</translation>
     </message>
     <message>
-        <source>Dust:</source>
-        <translation>Polsim:</translation>
-    </message>
-    <message>
         <source>Choose…</source>
         <translation>Tria...</translation>
     </message>
@@ -2666,10 +2646,6 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
     <message>
         <source>Copy bytes</source>
         <translation>Copia els bytes</translation>
-    </message>
-    <message>
-        <source>Copy dust</source>
-        <translation>Copia el polsim</translation>
     </message>
     <message>
         <source>Copy change</source>
@@ -2778,6 +2754,12 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
     <message>
         <source>Total Amount</source>
         <translation>Import total</translation>
+    </message>
+    <message>
+        <source>Unsigned Transaction</source>
+        <comment>PSBT copied</comment>
+        <extracomment>Caption of "PSBT has been copied" messagebox</extracomment>
+        <translation>Transacció no signada</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
@@ -3295,10 +3277,6 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation>Enviada a</translation>
     </message>
     <message>
-        <source>Payment to yourself</source>
-        <translation>Pagament a un mateix</translation>
-    </message>
-    <message>
         <source>Mined</source>
         <translation>Minada</translation>
     </message>
@@ -3368,10 +3346,6 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
     <message>
         <source>Sent to</source>
         <translation>Enviada a</translation>
-    </message>
-    <message>
-        <source>To yourself</source>
-        <translation>A un mateix</translation>
     </message>
     <message>
         <source>Mined</source>
@@ -3574,6 +3548,11 @@ Ves a Arxiu &gt; Obrir Cartera per a carregar cartera.
         <translation>PSBT copiada</translation>
     </message>
     <message>
+        <source>Copied to clipboard</source>
+        <comment>Fee-bump PSBT saved</comment>
+        <translation>Copiat al portaretalls</translation>
+    </message>
+    <message>
         <source>Can't sign transaction.</source>
         <translation>No es pot signar la transacció.</translation>
     </message>
@@ -3655,10 +3634,6 @@ Ves a Arxiu &gt; Obrir Cartera per a carregar cartera.
     <message>
         <source>Distributed under the MIT software license, see the accompanying file %s or %s</source>
         <translation>Distribuït sota la llicència del programari MIT, consulteu el fitxer d'acompanyament %s o %s</translation>
-    </message>
-    <message>
-        <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
-        <translation>S'ha produït un error en llegir %s. Totes les claus es llegeixen correctament, però les dades de la transacció o les entrades de la llibreta d'adreces podrien faltar o ser incorrectes.</translation>
     </message>
     <message>
         <source>Error: Dumpfile format record is incorrect. Got "%s", expected "format".</source>
@@ -3867,6 +3842,10 @@ Ves a Arxiu &gt; Obrir Cartera per a carregar cartera.
     <message>
         <source>Error opening block database</source>
         <translation>Error en obrir la base de dades de blocs</translation>
+    </message>
+    <message>
+        <source>Error reading configuration file: %s</source>
+        <translation>S'ha produït un error en llegir el fitxer de configuració: %s</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>
