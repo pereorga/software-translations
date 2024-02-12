@@ -83,12 +83,42 @@
             },
             "title": "Configured Country for {title} does not exist"
         },
+        "bad_date_holiday": {
+            "fix_flow": {
+                "error": {
+                    "remove_holiday_error": "Incorrect format on date (YYYY-MM-DD) or holiday name not found"
+                },
+                "step": {
+                    "fix_remove_holiday": {
+                        "data": {
+                            "remove_holidays": "Remove Holidays"
+                        },
+                        "data_description": {
+                            "remove_holidays": "Remove holidays as YYYY-MM-DD, as range using `,` as separator or by using partial of name"
+                        },
+                        "description": "Remove holiday date `{remove_holidays}` as it can't be found in country {country}.",
+                        "title": "Configured holiday date {remove_holidays} for {title} does not exist"
+                    }
+                }
+            },
+            "title": "Configured holiday date {remove_holidays} for {title} does not exist"
+        },
         "bad_named_holiday": {
             "fix_flow": {
                 "error": {
                     "remove_holiday_error": "Incorrect format on date (YYYY-MM-DD) or holiday name not found"
                 },
                 "step": {
+                    "fix_remove_holiday": {
+                        "data": {
+                            "remove_holidays": "Remove Holidays"
+                        },
+                        "data_description": {
+                            "remove_holidays": "Remove holidays as YYYY-MM-DD, as range using `,` as separator or by using partial of name"
+                        },
+                        "description": "Remove named holiday `{remove_holidays}` as it can't be found in country {country}.",
+                        "title": "Configured named holiday {remove_holidays} for {title} does not exist"
+                    },
                     "named_holiday": {
                         "data": {
                             "remove_holidays": "Remove Holidays"

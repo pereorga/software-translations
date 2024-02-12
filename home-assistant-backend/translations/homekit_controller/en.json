@@ -95,6 +95,12 @@
             }
         },
         "select": {
+            "air_purifier_state_target": {
+                "state": {
+                    "automatic": "Automatic",
+                    "manual": "Manual"
+                }
+            },
             "ecobee_mode": {
                 "state": {
                     "away": "Away",
@@ -110,6 +116,13 @@
             }
         },
         "sensor": {
+            "air_purifier_state_current": {
+                "state": {
+                    "idle": "Idle",
+                    "inactive": "Inactive",
+                    "purifying": "Purifying"
+                }
+            },
             "thread_node_capabilities": {
                 "state": {
                     "border_router_capable": "Border Router Capable",

@@ -35,5 +35,34 @@
                 }
             }
         }
+    },
+    "exceptions": {
+        "missing_client": {
+            "message": "No client for device ID: {device_id}"
+        }
+    },
+    "services": {
+        "printer_connect": {
+            "description": "Instructs the octoprint server to connect to a printer.",
+            "fields": {
+                "baudrate": {
+                    "description": "Baud rate.",
+                    "name": "Baudrate"
+                },
+                "device_id": {
+                    "description": "The server that should connect.",
+                    "name": "Server"
+                },
+                "port": {
+                    "description": "Port name to connect on.",
+                    "name": "Serial port"
+                },
+                "profile_name": {
+                    "description": "Printer profile to connect with.",
+                    "name": "Profile name"
+                }
+            },
+            "name": "Connect to a printer"
+        }
     }
 }

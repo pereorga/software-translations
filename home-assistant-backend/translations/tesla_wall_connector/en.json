@@ -51,6 +51,27 @@
             "handle_temp_c": {
                 "name": "Handle temperature"
             },
+            "session_energy_wh": {
+                "name": "Session energy"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "booting": "Booting",
+                    "charging": "Charging",
+                    "charging_finished": "Charging finished",
+                    "charging_reduced": "Charging (reduced)",
+                    "connected": "Vehicle connected",
+                    "error": "Error",
+                    "negociating": "Negociating connection",
+                    "not_connected": "Vehicle not connected",
+                    "ready": "Ready to charge",
+                    "waiting_car": "Waiting for car"
+                }
+            },
+            "status_code": {
+                "name": "Status code"
+            },
             "voltage_a_v": {
                 "name": "Phase A voltage"
             },

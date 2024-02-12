@@ -25,6 +25,19 @@
             }
         }
     },
+    "issues": {
+        "service_target_deprecation": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Use of an Area, Device, or Entity as a target for ScreenLogic services is being deprecated. Instead, use `config_entry` with the entry_id of the desired ScreenLogic integration.\n\nPlease update your automations and scripts and select **submit** to fix this issue.",
+                        "title": "Deprecating target for ScreenLogic services"
+                    }
+                }
+            },
+            "title": "Deprecating use of target for ScreenLogic services"
+        }
+    },
     "options": {
         "step": {
             "init": {
@@ -43,6 +56,10 @@
                 "color_mode": {
                     "description": "The ScreenLogic color mode to set.",
                     "name": "Color Mode"
+                },
+                "config_entry": {
+                    "description": "The config entry to use for this service.",
+                    "name": "Config Entry"
                 }
             },
             "name": "Set Color Mode"
@@ -50,6 +67,10 @@
         "start_super_chlorination": {
             "description": "Begins super chlorination, running for the specified period or 24 hours if none is specified.",
             "fields": {
+                "config_entry": {
+                    "description": "The config entry to use for this service.",
+                    "name": "Config Entry"
+                },
                 "runtime": {
                     "description": "Number of hours for super chlorination to run.",
                     "name": "Run Time"
@@ -59,6 +80,12 @@
         },
         "stop_super_chlorination": {
             "description": "Stops super chlorination.",
+            "fields": {
+                "config_entry": {
+                    "description": "The config entry to use for this service.",
+                    "name": "Config Entry"
+                }
+            },
             "name": "Stop Super Chlorination"
         }
     }

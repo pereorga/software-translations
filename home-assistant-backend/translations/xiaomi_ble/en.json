@@ -44,10 +44,42 @@
             "double_press": "Double Press",
             "long_press": "Long Press",
             "motion_detected": "Motion Detected",
-            "press": "Press"
+            "press": "Press",
+            "rotate_left": "Rotate Left",
+            "rotate_left_pressed": "Rotate Left (Pressed)",
+            "rotate_right": "Rotate Right",
+            "rotate_right_pressed": "Rotate Right (Pressed)"
         },
         "trigger_type": {
             "button": "Button \"{subtype}\"",
+            "button_air_exchange": "Button Air Exchange \"{subtype}\"",
+            "button_brightness": "Button Brightness \"{subtype}\"",
+            "button_color_temperature": "Button Color Temperature \"{subtype}\"",
+            "button_decrease_speed": "Button Decrease Speed \"{subtype}\"",
+            "button_decrease_wind_speed": "Button Decrease Wind Speed \"{subtype}\"",
+            "button_dry": "Button Dry \"{subtype}\"",
+            "button_fan": "Button Fan \"{subtype}\"",
+            "button_heat": "Button Heat \"{subtype}\"",
+            "button_increase_speed": "Button Inrease Speed \"{subtype}\"",
+            "button_increase_wind_speed": "Button Increase Wind Speed \"{subtype}\"",
+            "button_left": "Button Left \"{subtype}\"",
+            "button_light": "Button Light \"{subtype}\"",
+            "button_m": "Button M \"{subtype}\"",
+            "button_middle": "Button Middle \"{subtype}\"",
+            "button_min": "Button Min \"{subtype}\"",
+            "button_off": "Button Off \"{subtype}\"",
+            "button_on": "Button On \"{subtype}\"",
+            "button_plus": "Button Plus \"{subtype}\"",
+            "button_power": "Button Power \"{subtype}\"",
+            "button_right": "Button Right \"{subtype}\"",
+            "button_stop": "Button Stop \"{subtype}\"",
+            "button_swing": "Button Swing \"{subtype}\"",
+            "button_timer_30_minutes": "Button Timer 30 Minutes \"{subtype}\"",
+            "button_timer_60_minutes": "Button Timer 30 Minutes \"{subtype}\"",
+            "button_wind_mode": "Button Wind Mode \"{subtype}\"",
+            "button_wind_speed": "Button Wind Speed \"{subtype}\"",
+            "cube": "{subtype}",
+            "dimmer": "{subtype}",
             "motion": "{subtype}",
             "motion_detected": "Motion detected"
         }
@@ -61,6 +93,30 @@
                             "double_press": "Double press",
                             "long_press": "Long press",
                             "press": "Press"
+                        }
+                    }
+                }
+            },
+            "cube": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "rotate_left": "Rotate left",
+                            "rotate_right": "Rotate right"
+                        }
+                    }
+                }
+            },
+            "dimmer": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "long_press": "Long press",
+                            "press": "Press",
+                            "rotate_left": "Rotate left",
+                            "rotate_left_pressed": "Rotate left (pressed)",
+                            "rotate_right": "Rotate right",
+                            "rotate_right_pressed": "Rotate right (pressed)"
                         }
                     }
                 }
