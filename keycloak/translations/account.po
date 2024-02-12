@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-08 08:04+0000\n"
+"POT-Creation-Date: 2024-02-12 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,6 +122,14 @@ msgstr "Comptes enllaçats"
 #: accountManagementWelcomeMessage
 msgid "Welcome to Keycloak Account Management"
 msgstr "Us donem la benvinguda al gestor de comptes del Keycloak"
+
+#: accountManagementBaseThemeCannotBeUsedDirectly
+msgid ""
+"The base account theme only contains translations for account console. To "
+"display account console, you either need to set the parent of your theme to "
+"another account theme, or supply your own index.ftl file. Please see the "
+"documentation for further information."
+msgstr ""
 
 #: personalInfoIntroMessage
 msgid "Manage your basic information"
@@ -1110,6 +1118,10 @@ msgstr ""
 #: locale_tr
 msgid "Türkçe"
 msgstr "turc"
+
+#: locale_uk
+msgid "Українська"
+msgstr ""
 
 #: locale_zh-CN
 msgid "中文简体"
