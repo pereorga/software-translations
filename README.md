@@ -27,6 +27,7 @@ brew install bash csvkit translate-toolkit dos2unix gettext
 ## Translation credits
 
 * Bitcoin: https://explore.transifex.com/bitcoin/
+* Bitwarden (mobile): https://github.com/bitwarden/mobile
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
 * FreeTube: https://docs.freetubeapp.io/community/translations/
 * Haiku: https://i18n.haiku-os.org/
