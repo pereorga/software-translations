@@ -5,7 +5,8 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "unknown": "Unexpected error"
+            "unknown": "Unexpected error",
+            "unsupported_device": "Only the primary powerview hub can be added"
         },
         "flow_title": "{name} ({host})",
         "step": {
@@ -15,7 +16,11 @@
             },
             "user": {
                 "data": {
+                    "api_version": "Hub Generation",
                     "host": "IP address"
+                },
+                "data_description": {
+                    "api_version": "API version is detectable, but you can override and force a specific version"
                 },
                 "title": "Connect to the PowerView Hub"
             }

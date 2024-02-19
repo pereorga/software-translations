@@ -41,7 +41,37 @@
     },
     "device_automation": {
         "trigger_type": {
+            "cube": "{subtype}",
+            "dimmer": "{subtype}",
             "motion_detected": "Moviment detectat"
+        }
+    },
+    "entity": {
+        "event": {
+            "cube": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "rotate_left": "Gira a l'esquerra",
+                            "rotate_right": "Gira a la dreta"
+                        }
+                    }
+                }
+            },
+            "dimmer": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "long_press": "Premut durant una estona",
+                            "press": "Premut",
+                            "rotate_left": "Gira cap a l'esquerra",
+                            "rotate_left_pressed": "Gira a l'esquerra (premut)",
+                            "rotate_right": "Gira a la dreta",
+                            "rotate_right_pressed": "Gira a la dreta (premut)"
+                        }
+                    }
+                }
+            }
         }
     }
 }

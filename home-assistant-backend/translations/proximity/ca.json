@@ -4,5 +4,24 @@
             "already_configured": "El dispositiu ja est\u00e0 configurat"
         }
     },
+    "entity": {
+        "sensor": {
+            "dir_of_travel": {
+                "name": "Direcci\u00f3 del moviment de {tracked_entity}"
+            },
+            "dist_to_zone": {
+                "name": "Dist\u00e0ncia de {tracked_entity}"
+            },
+            "nearest_dir_of_travel": {
+                "name": "Direcci\u00f3 del moviment m\u00e9s propera",
+                "state": {
+                    "arrived": "Arribat",
+                    "away_from": "Lluny",
+                    "stationary": "Estacionari",
+                    "towards": "Apropant-se"
+                }
+            }
+        }
+    },
     "title": "Proximitat"
 }
