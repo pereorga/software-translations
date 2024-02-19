@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-12 08:04+0000\n"
+"POT-Creation-Date: 2024-02-19 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,11 +359,19 @@ msgstr ""
 "incloure-les aquí."
 
 #: ADD_FAVORITE
-msgid "Add to favorites"
-msgstr ""
+msgid "Add to Favorites"
+msgstr "Afegeix als preferits"
 
 #: REMOVE_FAVORITE
-msgid "Remove from favorites"
+msgid "Remove from Favorites"
+msgstr "Suprimeix dels favorits"
+
+#: FAVORITE_ALERT_TITLE
+msgid "Would you like to add this folder to your Favorites?"
+msgstr ""
+
+#: UNFAVORITE_ALERT_TITLE
+msgid "Would you like to remove this folder from your Favorites?"
 msgstr ""
 
 #: OPEN_NETWORK
@@ -668,6 +676,22 @@ msgstr "Repeteix la clau d'accés"
 msgid "Set Passcode"
 msgstr "Estableix la nova clau d'accés"
 
+#: PASSCODE_LENGTH
+msgid "Passcode Length"
+msgstr ""
+
+#: PASSCODE_LENGTH_LONG
+msgid "Select the preferred length of your new passcode"
+msgstr ""
+
+#: PASSCODE_4
+msgid "4 digits"
+msgstr ""
+
+#: PASSCODE_6
+msgid "6 digits"
+msgstr ""
+
 #: Settings
 msgid ""
 "Settings\"; // plain text key to keep compatibility with InAppSettingsKit's "
@@ -835,7 +859,7 @@ msgstr "Feu dos tocs per mostrar o amagar els controls de reproducció"
 
 #: FIRST_STEPS_ITUNES
 msgid "File Sync"
-msgstr "File Sync"
+msgstr "Sincronització de fitxers"
 
 #: FIRST_STEPS_ITUNES_TITLE
 msgid "Sync With Your Computer"
@@ -846,8 +870,8 @@ msgid ""
 "Connect your %@ to use the Finder or iTunes for \"File Sharing\". Select VLC "
 "to transfer files."
 msgstr ""
-"Connect your %@ to use the Finder or iTunes for \"File Sharing\". Select VLC "
-"to transfer files."
+"Connecteu el vostre %@ per utilitzar el Finder o l'iTunes per a \"Compartir "
+"fitxers\". Seleccioneu VLC per transferir fitxers."
 
 #: FIRST_STEPS_WIFI_TITLE
 msgid "Share via Wi-Fi"
@@ -2062,11 +2086,11 @@ msgstr "Si us plau, seleccioneu el vostre proveïdor de pagament"
 
 #: DONATION_CHOOSE_CURRENCY
 msgid "Please select a currency"
-msgstr "Please select a currency"
+msgstr "Si us plau, seleccioneu una moneda"
 
 #: DONATION_AMOUNT
 msgid "Donation amount: %@"
-msgstr "Donation amount: %@"
+msgstr "Import de la donació: %@"
 
 #: DONATION_CC_INFO_NOT_STORED
 msgid "VideoLAN will neither receive nor store your credit card data."
@@ -2087,7 +2111,7 @@ msgstr "MM"
 
 #: DONATION_CC_EXPIRY_DATE_YEAR
 msgid "YY"
-msgstr "YY"
+msgstr "AA"
 
 #: DONATION_CC_CVV
 msgid "CVV"
@@ -2095,19 +2119,19 @@ msgstr "CVV"
 
 #: DONATION_APPLE_PAY_NOT_POSSIBLE
 msgid "Failure configuring Apple Pay"
-msgstr "Failure configuring Apple Pay"
+msgstr "Error en la configuració d'Apple Pay"
 
 #: DONATION_APPLE_PAY_NOT_POSSIBLE_LONG
 msgid ""
 "VLC failed to configure Apple Pay to perform your donation. Please choose a "
 "different payment provider to continue."
 msgstr ""
-"VLC failed to configure Apple Pay to perform your donation. Please choose a "
-"different payment provider to continue."
+"VLC ha fallat en configurar Apple Pay per realitzar la vostra donació. Si us "
+"plau, trieu un proveïdor de pagament diferent per continuar."
 
 #: DONATION_DONATE_BUTTON
 msgid "Donate"
-msgstr "Donate"
+msgstr "Feu una donació"
 
 #: PURCHASE_FAILED
 msgid "Purchase Failed."
@@ -2128,7 +2152,7 @@ msgstr "Gràcies per la vostra donació."
 #: DONATION_CONTINUE
 msgctxt "DONATION_CONTINUE"
 msgid "Continue"
-msgstr ""
+msgstr "Continua"
 
 #.
 #. // MARK: - Playback keyboard shortcuts
