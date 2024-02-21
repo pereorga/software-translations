@@ -12,6 +12,9 @@ for file in "${files[@]}"; do
     json2po --template="tmp/Stooa/frontend/locales/en/$file" "tmp/Stooa/frontend/locales/ca/$file" > "translations/$file.po"
 done
 
+# Delete file in Spanish
+rm translations/blog.json.po
+
 curl https://raw.githubusercontent.com/Stooa/Stooa/main/backend/translations/messages.en.yaml > tmp/messages.en.yaml
 curl https://raw.githubusercontent.com/Stooa/Stooa/main/backend/translations/messages.ca.yaml > tmp/messages.ca.yaml
 yaml2po tmp/messages.ca.yaml --template=tmp/messages.en.yaml > translations/backend.po
