@@ -92,12 +92,53 @@
             "zwave_js.value_updated.value": "Canvi del valor en un valor Z-Wave JS"
         }
     },
+    "entity": {
+        "button": {
+            "ping": {
+                "name": "Ping"
+            }
+        },
+        "sensor": {
+            "average_background_rssi": {
+                "name": "RSSI de fons mitj\u00e0 (canal {channel})"
+            },
+            "can": {
+                "name": "Col\u00b7lisions"
+            },
+            "controller_status": {
+                "name": "Estat",
+                "state": {
+                    "jammed": "Encallat",
+                    "ready": "A punt",
+                    "unresponsive": "No respon"
+                }
+            },
+            "node_status": {
+                "name": "Estat del node",
+                "state": {
+                    "alive": "Viu",
+                    "asleep": "Adormit",
+                    "awake": "Despert",
+                    "dead": "Mort",
+                    "unknown": "Desconegut"
+                }
+            },
+            "rssi": {
+                "name": "RSSI"
+            }
+        }
+    },
     "issues": {
         "device_config_file_changed": {
             "fix_flow": {
                 "step": {
                     "confirm": {
                         "title": "Ha canviat el fitxer de configuraci\u00f3 del dispositiu: {device_name}"
+                    },
+                    "init": {
+                        "menu_options": {
+                            "confirm": "Torna a consultar dispositiu"
+                        }
                     }
                 }
             },

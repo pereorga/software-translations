@@ -117,6 +117,20 @@
             "charge_state-usable_battery_level": {
                 "name": "Nivell de bateria"
             },
+            "charge_state_charging_state": {
+                "state": {
+                    "disconnected": "Desconnectat",
+                    "no_power": "Sense electricitat",
+                    "starting": "Iniciant",
+                    "stopped": "Aturat"
+                }
+            },
+            "charge_state_est_battery_range": {
+                "name": "Autonomia de la bateria estimada"
+            },
+            "charge_state_ideal_battery_range": {
+                "name": "Autonomia de la bateria ideal"
+            },
             "climate_state-driver_temp_setting": {
                 "name": "Configuraci\u00f3 de temperatura del conductor"
             },
@@ -143,6 +157,9 @@
             },
             "drive_state-speed": {
                 "name": "Velocitat"
+            },
+            "drive_state_active_route_minutes_to_arrival": {
+                "name": "Temps per arribar"
             },
             "drive_state_power": {
                 "name": "Pot\u00e8ncia"

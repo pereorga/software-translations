@@ -6,6 +6,7 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
+            "cloud_user": "Ubiquiti Cloud users are not Supported. Please use a Local only user.",
             "invalid_auth": "Invalid authentication",
             "protect_version": "Minimum required version is v1.20.0. Please upgrade UniFi Protect and then retry."
         },
@@ -54,6 +55,17 @@
         }
     },
     "issues": {
+        "cloud_user": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Starting on July 22nd, 2024, Ubiquiti will require all cloud users to enroll in multi-factor authentication (MFA), which is incompatible with Home Assistant.\n\nIt would be best to migrate to using a [local user]({learn_more}) as soon as possible to keep the integration working.\n\nConfirming this repair will trigger a re-authentication flow to enter the needed authentication credentials.",
+                        "title": "Ubiquiti Cloud Users are not Supported"
+                    }
+                }
+            },
+            "title": "Ubiquiti Cloud Users are not Supported"
+        },
         "deprecate_smart_sensor": {
             "description": "The unified \"Detected Object\" sensor for smart detections is now deprecated. It has been replaced with individual smart detection binary sensors for each smart detection type.\n\nBelow are the detected automations or scripts that use one or more of the deprecated entities:\n{items}\nThe above list may be incomplete and it does not include any template usages inside of dashboards. Please update any templates, automations or scripts accordingly.",
             "title": "Smart Detection Sensor Deprecated"

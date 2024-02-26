@@ -6,11 +6,14 @@
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "invalid_url": "URL inv\u00e0lid",
             "unknown": "Error inesperat"
         },
         "step": {
             "auth": {
                 "data": {
+                    "country": "Pa\u00eds",
+                    "override_mqtt_url": "URL MQTT",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 }
@@ -27,6 +30,16 @@
         }
     },
     "entity": {
+        "number": {
+            "volume": {
+                "name": "Volum"
+            }
+        },
+        "select": {
+            "water_amount": {
+                "name": "Nivell del cabal d'aigua"
+            }
+        },
         "sensor": {
             "network_ip": {
                 "name": "Adre\u00e7a IP"
@@ -36,6 +49,14 @@
             },
             "network_ssid": {
                 "name": "SSID Wi-Fi"
+            },
+            "total_stats_time": {
+                "name": "Durada total de la neteja"
+            }
+        },
+        "switch": {
+            "advanced_mode": {
+                "name": "Mode avan\u00e7at"
             }
         },
         "vacuum": {

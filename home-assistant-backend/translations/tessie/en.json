@@ -337,6 +337,12 @@
                     "stopped": "Stopped"
                 }
             },
+            "charge_state_est_battery_range": {
+                "name": "Battery range estimate"
+            },
+            "charge_state_ideal_battery_range": {
+                "name": "Battery range ideal"
+            },
             "charge_state_minutes_to_full_charge": {
                 "name": "Time to full charge"
             },
@@ -478,8 +484,26 @@
         }
     },
     "exceptions": {
+        "already_active": {
+            "message": "{name} is already active."
+        },
+        "already_inactive": {
+            "message": "{name} is already inactive."
+        },
+        "cable_connected": {
+            "message": "Charge cable is connected."
+        },
+        "incorrect_pin": {
+            "message": "Incorrect pin for {name}."
+        },
         "no_cable": {
             "message": "Insert cable to lock"
+        },
+        "not_supported": {
+            "message": "{name} is not supported."
+        },
+        "unknown": {
+            "message": "An unknown issue occured changing {name}."
         }
     }
 }

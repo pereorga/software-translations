@@ -1,7 +1,18 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "success": "S'han guardat els canvis"
+        },
+        "flow_title": "Proximitat",
+        "step": {
+            "user": {
+                "data": {
+                    "ignored_zones": "Zones a ignorar",
+                    "tolerance": "Dist\u00e0ncia de toler\u00e0ncia",
+                    "tracked_entities": "Dispositius o persones a les quals fer seguiment"
+                }
+            }
         }
     },
     "entity": {
@@ -19,6 +30,29 @@
                     "away_from": "Lluny",
                     "stationary": "Estacionari",
                     "towards": "Apropant-se"
+                }
+            }
+        }
+    },
+    "issues": {
+        "tracked_entity_removed": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "title": "S'ha eliminat l'entitat seguida"
+                    }
+                }
+            },
+            "title": "S'ha eliminat l'entitat seguida"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "ignored_zones": "Zones a ignorar",
+                    "tolerance": "Dist\u00e0ncia de toler\u00e0ncia",
+                    "tracked_entities": "Dispositius o persones a les quals fer seguiment"
                 }
             }
         }
