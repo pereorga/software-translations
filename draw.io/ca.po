@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-19 08:02+0000\n"
+"POT-Creation-Date: 2024-02-26 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,7 +191,7 @@ msgstr "Fletxes"
 
 #: askMeAnything
 msgid "Ask me anything"
-msgstr ""
+msgstr "Pregunta'm qualsevol cosa"
 
 #: asNew
 msgid "As New"
@@ -3051,7 +3051,7 @@ msgstr "Esbós"
 
 #: smoothing
 msgid "Smoothing"
-msgstr ""
+msgstr "Allisant"
 
 #: snapToGrid
 msgid "Snap to Grid"
@@ -3327,7 +3327,7 @@ msgstr "Error desconegut"
 
 #: updateExistingDrawing
 msgid "Update existing drawing"
-msgstr ""
+msgstr "Actualitza el dibuix existent"
 
 #: updateFile
 msgid "Update {1}"
@@ -3355,7 +3355,7 @@ msgstr "URL"
 
 #: useCurrentSettings
 msgid "Use current settings"
-msgstr ""
+msgstr "Utilitza la configuració actual"
 
 #: useOffline
 msgid "Use Offline"
@@ -4547,7 +4547,7 @@ msgstr "Copia com a Imatge"
 
 #: copyAsText
 msgid "Copy as Text"
-msgstr ""
+msgstr "Copia com a Text"
 
 #: lucidImport
 msgid "Lucidchart Import"
@@ -5485,6 +5485,8 @@ msgid ""
 "recommended to stop the Synchrony service during the process. Do you want to "
 "proceed?"
 msgstr ""
+"Avís: aquest procés editarà moltes pàgines i diagrames, per la qual cosa es "
+"recomana aturar el servei de Sincronització durant el procés. Vols continuar?"
 
 #: confCloudMigNotice
 msgid ""
@@ -5492,10 +5494,19 @@ msgid ""
 "as follows {1}. Without this configuration, links in diagrams pointing to "
 "Confluence pages will not work."
 msgstr ""
+"A la instància del núvol, afegiu linkAdjustments a la configuració de "
+"draw.io de la manera següent {1}. Sense aquesta configuració, els enllaços "
+"dels diagrames que apunten a les pàgines de Confluence no funcionaran."
 
 #: confALogsPageDesc
 msgid "This page contains logs of draw.io long running services as attachments"
 msgstr ""
+"Aquesta pàgina conté registres de serveis de llarga durada de draw.io com a "
+"fitxers adjunts"
+
+#: confEditOnlyInPageEditor
+msgid "Can only be edited within Confluence page editor"
+msgstr "Només es pot editar amb l'editor de pàgines de Confluence"
 
 
 msgid "Diagrams Online"
