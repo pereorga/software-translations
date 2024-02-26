@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-12 08:03+0000\n"
+"POT-Creation-Date: 2024-02-26 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,12 @@ msgstr "Inicia la sessió"
 
 #: doRegister
 msgctxt "doRegister"
+"doRegister"
+msgid "Register"
+msgstr "Registreu-vos"
+
+#: doRegisterSecurityKey
+msgctxt "doRegisterSecurityKey"
 msgid "Register"
 msgstr "Registreu-vos"
 
@@ -2083,3 +2089,7 @@ msgstr "Surt"
 msgid "You can''t update your username as it is read-only."
 msgstr ""
 "No podeu actualitzar el vostre nom d''usuari perquè és de només lectura."
+
+#: error-invalid-multivalued-size
+msgid "Attribute {0} must have at least {1} and at most {2} value(s)."
+msgstr ""
