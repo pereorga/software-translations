@@ -103,6 +103,20 @@
         }
     },
     "services": {
+        "add_meter_reading": {
+            "description": "Add meter readings to Tado Energy IQ.",
+            "fields": {
+                "config_entry": {
+                    "description": "Config entry to add meter readings to.",
+                    "name": "Config Entry"
+                },
+                "reading": {
+                    "description": "Reading in m\u00b3 or kWh without decimals.",
+                    "name": "Reading"
+                }
+            },
+            "name": "Add meter readings"
+        },
         "set_climate_temperature_offset": {
             "description": "Sets the temperature offset of climate entities.",
             "fields": {

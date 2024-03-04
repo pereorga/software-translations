@@ -32,6 +32,20 @@
         "sensor": {
             "boiler_temperature": {
                 "name": "Temperatura de la caldera"
+            },
+            "ess_state": {
+                "state": {
+                    "charge": "Carregant",
+                    "discharge": "Descarregant"
+                }
+            },
+            "photovoltaic_power_production_current": {
+                "name": "Pot\u00e8ncia solar"
+            },
+            "photovoltaic_status": {
+                "state": {
+                    "production": "Produint"
+                }
             }
         }
     },

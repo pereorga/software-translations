@@ -16,7 +16,7 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "description": "The device requires authentication, please input your credentials below.",
+                "description": "The device requires authentication, please input your TP-Link credentials below.",
                 "title": "Authenticate"
             },
             "discovery_confirm": {
@@ -28,16 +28,16 @@
                 }
             },
             "reauth": {
-                "description": "The device needs updated credentials, please input your credentials below.",
-                "title": "Reauthenticate integration"
+                "description": "The device requires authentication, please input your TP-Link credentials below.",
+                "title": "Authentication expired for {name}"
             },
             "reauth_confirm": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
-                "description": "The device needs updated credentials, please input your credentials below.",
-                "title": "Reauthenticate integration"
+                "description": "The device requires authentication, please input your TP-Link credentials below.",
+                "title": "Authentication expired for {name}"
             },
             "user": {
                 "data": {
@@ -53,7 +53,7 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "description": "The device requires authentication, please input your credentials below.",
+                "description": "The device requires authentication, please input your TP-Link credentials below.",
                 "title": "Authenticate"
             }
         }

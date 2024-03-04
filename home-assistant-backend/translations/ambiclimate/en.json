@@ -19,6 +19,12 @@
             }
         }
     },
+    "issues": {
+        "integration_removed": {
+            "description": "All Ambiclimate services will be terminated, effective March 31, 2024, as Ambi Labs winds down business operations, and the Ambiclimate integration will be removed from Home Assistant.\n\nTo resolve this issue, please remove the integration entries from your Home Assistant setup. [Click here to see your existing Logi Circle integration entries]({entries}).",
+            "title": "The Ambiclimate integration has been deprecated and will be removed"
+        }
+    },
     "services": {
         "send_comfort_feedback": {
             "description": "Sends feedback for comfort mode.",
@@ -28,7 +34,7 @@
                     "name": "Device name"
                 },
                 "value": {
-                    "description": "Send any of the following comfort values: too_hot, too_warm, bit_warm, comfortable, bit_cold, too_cold, freezing\n.",
+                    "description": "Send any of the following comfort values: too_hot, too_warm, bit_warm, comfortable, bit_cold, too_cold, freezing.",
                     "name": "Comfort value"
                 }
             },

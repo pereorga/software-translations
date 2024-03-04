@@ -16,7 +16,7 @@
                     "token": "Access token"
                 },
                 "description": "The Nuki integration needs to re-authenticate with your bridge.",
-                "title": "Reauthenticate integration"
+                "title": "Authentication expired for {name}"
             },
             "user": {
                 "data": {
@@ -33,6 +33,9 @@
     },
     "entity": {
         "binary_sensor": {
+            "battery_critical": {
+                "name": "Battery critical"
+            },
             "ring_action": {
                 "name": "Ring Action"
             }
