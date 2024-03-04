@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-26 08:03+0000\n"
+"POT-Creation-Date: 2024-03-04 08:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -364,15 +364,15 @@ msgstr "Afegeix als preferits"
 
 #: REMOVE_FAVORITE
 msgid "Remove from Favorites"
-msgstr "Suprimeix dels favorits"
+msgstr "Elimina dels preferits"
 
 #: FAVORITE_ALERT_TITLE
 msgid "Would you like to add this folder to your Favorites?"
-msgstr ""
+msgstr "Voldries afegir aquesta carpeta als teus preferits?"
 
 #: UNFAVORITE_ALERT_TITLE
 msgid "Would you like to remove this folder from your Favorites?"
-msgstr ""
+msgstr "Voldries eliminar aquesta carpeta dels teus preferits?"
 
 #: OPEN_NETWORK
 msgid "Open Network Stream"
@@ -401,6 +401,10 @@ msgstr "Xarxa sense fils no activada"
 #: OPEN_STREAM_OR_DOWNLOAD
 msgid "Would you like to download or play this URL?"
 msgstr "Voleu baixar or reproduir aquesta URL?"
+
+#: ALWAYS_STREAM_URL
+msgid "Always play URLs"
+msgstr "Always play URLs"
 
 #: SHARED_VLC_IOS_LIBRARY
 msgid "Shared VLC for iOS Library"
@@ -1244,6 +1248,7 @@ msgid "Modified date"
 msgstr "Data modificada"
 
 #: NAME
+msgctxt "NAME"
 msgid "Name"
 msgstr "Nom"
 
@@ -2140,27 +2145,27 @@ msgstr "Continua"
 
 #: BUTTON_NOT_NOW
 msgid "Not now"
-msgstr ""
+msgstr "Ara no"
 
 #: DONATION_NAGSCREEN_TITLE
 msgid "Donate today"
-msgstr ""
+msgstr "Doneu avui"
 
 #: DONATION_NAGSCREEN_SUBTITLE
 msgid "Support free and open source multimedia"
-msgstr ""
+msgstr "Suporta el multimèdia lliure i de codi obert"
 
 #: DONATION_INVOICES
 msgid "Invoices"
-msgstr ""
+msgstr "Factures"
 
 #: DONATION_RECEIPTS
 msgid "Receipts"
-msgstr ""
+msgstr "Rebuts"
 
 #: DONATION_INVOICES_RECEIPTS
 msgid "Invoices & Receipts"
-msgstr ""
+msgstr "Factures i rebuts"
 
 #: DONATION_CHARGES_CLEARED_ON_REINSTALL
 msgid ""
@@ -2171,40 +2176,82 @@ msgid ""
 "If you have any questions, contact us at donation@videolan.org and mention "
 "this anonymous user ID: %@"
 msgstr ""
+"Si heu reinstal·lat VLC, les factures o rebuts de donacions anteriors no "
+"estaran disponibles ja que tota la vostra informació personal es guarda "
+"només en aquest dispositiu.\n"
+"\n"
+"Si teniu alguna pregunta, poseu-vos en contacte amb nosaltres a donation@"
+"videolan.org i mencioneu aquest ID d'usuari anònim: %@"
 
 #: DONATION_CANCEL_MONTHLY
 msgid "Cancel Regular Donation"
-msgstr ""
+msgstr "Cancel·la la donació regular"
 
 #: DONATION_MONTHLY
 msgid "Monthly"
-msgstr ""
+msgstr "Mensual"
 
 #: DONATION_MONTHLY_FORMAT
 msgid "%@/month"
-msgstr ""
+msgstr "%@/mes"
 
 #: DONATION_MONTHLY_VIDEOLAN
 msgid "Monthly Donation to VideoLAN"
-msgstr ""
+msgstr "Donació mensual a VideoLAN"
 
 #: DONATION_ONCE
 msgid "One-Time"
-msgstr ""
+msgstr "Una sola vegada"
 
 #: DONATION_UPDATE_MONTHLY
 msgid "Update Regular Donation"
-msgstr ""
+msgstr "Actualitza la donació regular"
 
 #: DONATION_VIDEOLAN
 msgid "Donation to VideoLAN"
-msgstr ""
+msgstr "Donació a VideoLAN"
 
 #: DONATION_CANCEL_LONG
 msgid ""
 "We are sad to see you cancelling the regular monthly donations to VideoLAN. "
 "Your previous support means a lot to us. Thank you so much!"
 msgstr ""
+"Ens sap greu veure que cancel·leu les donacions mensuals regulars a "
+"VideoLAN. El vostre suport anterior significa molt per a nosaltres. Moltes "
+"gràcies!"
+
+#: DONATION_BANK_TRANSFER
+msgid "Bank Transfer"
+msgstr "Bank Transfer"
+
+#: DONATION_BANK_TRANSFER_LONG
+msgid ""
+"Stripe processes donations made to VideoLAN. VideoLAN does not store or "
+"collect your personal information."
+msgstr ""
+"Stripe processes donations made to VideoLAN. VideoLAN does not store or "
+"collect your personal information."
+
+#: DONATION_BUTTON_AGREE
+msgid "Agree"
+msgstr "Agree"
+
+#: DONATION_IBAN
+msgid "Bank Account Number (IBAN)"
+msgstr "Bank Account Number (IBAN)"
+
+#: DONATION_EMAIL
+msgid "Email"
+msgstr "Email"
+
+#: DONATION_NAME
+msgctxt "DONATION_NAME"
+msgid "Name"
+msgstr "Name"
+
+#: DONATION_NAME_BANK_ACCOUNT
+msgid "Name on Bank Account"
+msgstr "Name on Bank Account"
 
 #.
 #. // MARK: - Playback keyboard shortcuts
