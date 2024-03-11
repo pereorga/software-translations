@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 08:13+0000\n"
+"POT-Creation-Date: 2024-03-11 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2565,7 +2565,7 @@ msgstr "No heu creat cap llista."
 
 #: accounts-%3Elists-%3Eno_lists-%3Epublic
 msgid "%{username} doesn't have any public lists to share."
-msgstr "L'usuari %{username} no té cap llista pública per compartir."
+msgstr "L'usuari %{username} no té cap llista pública per a compartir."
 
 #: accounts-%3Elists-%3Epage_title-%3Epage_owner
 msgctxt "accounts->lists->page_title->page_owner"
@@ -2731,15 +2731,15 @@ msgstr "Les meves recomanacions"
 
 #: accounts-%3Erecommendations-%3Eno_recommendations
 msgid "We don't have enough data to suggest any recommendations."
-msgstr "No tenim prou dades per suggerir cap recomanació."
+msgstr "No tenim prou dades per a suggerir cap recomanació."
 
 #: accounts-%3Erecommendations-%3Eno_recommendations_helper
 msgid ""
 "Try adding a few more favorites (the more the better) and come back to see "
 "how we did."
 msgstr ""
-"Proveu d'afegir alguns preferits més (com més millor) i torneu per comprovar "
-"com ho hem fet."
+"Proveu d'afegir alguns preferits més (com més millor) i torneu per a "
+"comprovar com ho hem fet."
 
 #: accounts-%3Erecommendations-%3Eno_recommendations_helper_2
 msgid ""
@@ -2854,7 +2854,7 @@ msgstr "Sol·licitud d'autenticació de tercers"
 
 #: api_session-%3Eaccount_required-%3Eneed_account
 msgid "You need to be logged in to continue!"
-msgstr "Cal que inicieu una sessió per continuar!"
+msgstr "Cal que inicieu una sessió per a continuar!"
 
 #: api_session-%3Eaccount_required-%3Etitle
 msgid "An Account is Required"
@@ -3605,10 +3605,10 @@ msgid ""
 "this category may also contain fantasy violence and/or mild bad language."
 msgstr ""
 "Exhibició pública no restringida a tota l'Índia, apta per a tots els grups "
-"d'edat. Les pel·lícules en aquesta categoria no haurien de molestar els nens "
-"de més de 4 anys. Aquestes pel·lícules poden contenir temes educatius, "
-"socials o familiars. Les pel·lícules en aquesta categoria també poden tenir "
-"violència fantàstica o llenguatge moderadament groller."
+"d'edat. Les pel·lícules en aquesta categoria no haurien de molestar els "
+"infants de més de 4 anys. Aquestes pel·lícules poden contenir temes "
+"educatius, socials o familiars. Les pel·lícules en aquesta categoria també "
+"poden tenir violència fantàstica o llenguatge moderadament groller."
 
 #: certifications-%3Emovies-%3EIN-%3E1-%3Emeaning
 msgid ""
@@ -4560,7 +4560,7 @@ msgid ""
 "program usually involves programs designed for children or families."
 msgstr ""
 "Aquesta qualificació és per a programes que són per a tots els públics. "
-"Aquest programa normalment està pensat per a nens i famílies."
+"Aquest programa normalment està pensat per a infants i famílies."
 
 #: certifications-%3Etv_series-%3EKR-%3E2-%3Emeaning
 msgid ""
@@ -5671,7 +5671,7 @@ msgid ""
 "multiple searches to find everything you'd like to add."
 msgstr ""
 "Cerqueu el personatge o el títol que desitgeu afegir. Podeu fer cerques "
-"múltiples per trobar tot el que us agradaria afegir."
+"múltiples per a trobar tot el que us agradaria afegir."
 
 #: character-%3Esearch_characters_you_want_to_see
 msgid ""
@@ -6177,6 +6177,7 @@ msgstr "Personatge principal"
 
 #: contribution_type-%3Etv_show
 msgctxt "contribution_type->tv_show"
+"contribution_type->tv_show"
 msgid "TV Show"
 msgstr "Sèrie"
 
@@ -6557,7 +6558,7 @@ msgid "Camera"
 msgstr "Càmera"
 
 #: departments-%3ECostume+%26+Make-Up
-msgid "Costume & Make-Up"
+msgid "Costume & Makeup"
 msgstr "Vestuari i maquillatge"
 
 #: departments-%3ECreator
@@ -6714,7 +6715,7 @@ msgstr "Mostra'm"
 
 #: discover-%3Efilters-%3Eshow_me-%3Etooltip
 msgid "Log in to filter items you've watched."
-msgstr "Entreu per a filtrar per títols que hagueu vist."
+msgstr "Entreu per a filtrar per títols que hàgiu vist."
 
 #: discover-%3Efilters-%3Eshow_me-%3Etv_shows_have_seen
 msgid "TV Shows I Have Seen"
@@ -7652,7 +7653,7 @@ msgid ""
 "You've tried to request a page that requires you to be logged in. Log in to "
 "your account by <a href=\"%{login_link}\">clicking here</a>."
 msgstr ""
-"Heu intentat d'accedir a una pàgina que requereix que hagueu iniciat la "
+"Heu intentat d'accedir a una pàgina que requereix que hàgiu iniciat la "
 "sessió. Entreu al vostre compte <a href=\"%{login_link}\">clicant aquí</a>."
 
 #: error_pages-%3Emissing_privilege-%3Etitle
@@ -7764,13 +7765,73 @@ msgstr "El camp dels gèneres està blocat"
 msgid "The keywords field is locked"
 msgstr "El camp de paraules clau està blocat"
 
+#: errors-%3Emessages-%3Eaccepted
+msgid "must be accepted"
+msgstr "ha de ser acceptat"
+
 #: errors-%3Emessages-%3Eblank
 msgid "is required"
 msgstr "és necessari"
 
+#: errors-%3Emessages-%3Econfirmation
+msgid "doesn't match %{attribute}"
+msgstr "%{attribute} no coincideix"
+
 #: errors-%3Emessages-%3Eemail_address_not_routable
 msgid "is not routable"
 msgstr "no es pot reubicar"
+
+#: errors-%3Emessages-%3Eempty
+msgid "can't be empty"
+msgstr "no pot estar buit"
+
+#: errors-%3Emessages-%3Eequal_to-%3Eone
+msgctxt "errors->messages->equal_to->one"
+msgid "must be equal to %{count}"
+msgstr "ha de ser igual a %{count}"
+
+#: errors-%3Emessages-%3Eequal_to-%3Eother
+msgctxt "errors->messages->equal_to->other"
+msgid "must be equal to %{count}"
+msgstr "ha de ser igual a %{count}"
+
+#: errors-%3Emessages-%3Eeven
+msgid "must be even"
+msgstr "ha de ser parell"
+
+#: errors-%3Emessages-%3Eexclusion
+msgid "is reserved"
+msgstr "està reservat"
+
+#: errors-%3Emessages-%3Egreater_than-%3Eone
+msgctxt "errors->messages->greater_than->one"
+msgid "must be greater than %{count}"
+msgstr "ha de ser més gran que %{count}"
+
+#: errors-%3Emessages-%3Egreater_than-%3Eother
+msgctxt "errors->messages->greater_than->other"
+msgid "must be greater than %{count}"
+msgstr "ha de ser més gran que %{count}"
+
+#: errors-%3Emessages-%3Egreater_than_or_equal_to-%3Eone
+msgctxt "errors->messages->greater_than_or_equal_to->one"
+msgid "must be greater than or equal to %{count}"
+msgstr "ha de ser més gran o igual a %{count}"
+
+#: errors-%3Emessages-%3Egreater_than_or_equal_to-%3Eother
+msgctxt "errors->messages->greater_than_or_equal_to->other"
+msgid "must be greater than or equal to %{count}"
+msgstr "ha de ser més gran o igual a %{count}"
+
+#: errors-%3Emessages-%3Ein-%3Eone
+msgctxt "errors->messages->in->one"
+msgid "must be in %{count}"
+msgstr "ha de ser en %{count}"
+
+#: errors-%3Emessages-%3Ein-%3Eother
+msgctxt "errors->messages->in->other"
+msgid "must be in %{count}"
+msgstr "ha de ser en %{count}"
 
 #: errors-%3Emessages-%3Einclusion
 msgid "must be selected"
@@ -7796,9 +7857,59 @@ msgstr "La contrasenya que heu introduït és invàlida."
 msgid "Unable to complete request."
 msgstr "No és possible de completar la sol·licitud."
 
+#: errors-%3Emessages-%3Eless_than-%3Eone
+msgctxt "errors->messages->less_than->one"
+msgid "must be less than %{count}"
+msgstr "ha de ser menor de %{count}"
+
+#: errors-%3Emessages-%3Eless_than-%3Eother
+msgctxt "errors->messages->less_than->other"
+msgid "must be less than %{count}"
+msgstr "ha de ser menor de %{count}"
+
+#: errors-%3Emessages-%3Eless_than_or_equal_to-%3Eone
+msgctxt "errors->messages->less_than_or_equal_to->one"
+msgid "must be less than or equal to %{count}"
+msgstr "ha de ser menor o igual a %{count}"
+
+#: errors-%3Emessages-%3Eless_than_or_equal_to-%3Eother
+msgctxt "errors->messages->less_than_or_equal_to->other"
+msgid "must be less than or equal to %{count}"
+msgstr "ha de ser menor o igual a %{count}"
+
+#: errors-%3Emessages-%3Emodel_invalid
+msgid "'Validation failed: %{errors}'"
+msgstr "'Ha fallat la validació: %{errors}'"
+
 #: errors-%3Emessages-%3Eno_characters_found
 msgid "No Characters Found"
 msgstr "No s'ha trobat caràcters"
+
+#: errors-%3Emessages-%3Enot_a_number
+msgid "is not a number"
+msgstr "No és un número"
+
+#: errors-%3Emessages-%3Enot_an_integer
+msgid "must be an integer"
+msgstr "ha de ser un número enter"
+
+#: errors-%3Emessages-%3Eodd
+msgid "must be odd"
+msgstr "ha de ser senar"
+
+#: errors-%3Emessages-%3Eother_than-%3Eone
+msgctxt "errors->messages->other_than->one"
+msgid "must be other than %{count}"
+msgstr "ha de ser diferent de %{count}"
+
+#: errors-%3Emessages-%3Eother_than-%3Eother
+msgctxt "errors->messages->other_than->other"
+msgid "must be other than %{count}"
+msgstr "ha de ser diferent de %{count}"
+
+#: errors-%3Emessages-%3Epresent
+msgid "must be blank"
+msgstr "ha d'estar en blanc"
 
 #: errors-%3Emessages-%3Erequired
 msgid "must exist"
@@ -7825,6 +7936,30 @@ msgstr ""
 #: errors-%3Emessages-%3Etaken
 msgid "has already been taken"
 msgstr "ja s'ha pres"
+
+#: errors-%3Emessages-%3Etoo_long-%3Eone
+msgid "is too long (maximum is %{count} character)"
+msgstr "és massa llarg (el màxim és %{count} caràcter)"
+
+#: errors-%3Emessages-%3Etoo_long-%3Eother
+msgid "is too long (maximum is %{count} characters)"
+msgstr "és massa llarg (el màxim és %{count} caràcters)"
+
+#: errors-%3Emessages-%3Etoo_short-%3Eone
+msgid "is too short (minimum is %{count} character)"
+msgstr "és massa curt (el mínim és %{count} caràcter)"
+
+#: errors-%3Emessages-%3Etoo_short-%3Eother
+msgid "is too short (minimum is %{count} characters)"
+msgstr "és massa curt (el mínim és %{count} caràcters)"
+
+#: errors-%3Emessages-%3Ewrong_length-%3Eone
+msgid "is the wrong length (should be %{count} character)"
+msgstr "és l'allargada errònia (hauria de ser %{count} caràcter)"
+
+#: errors-%3Emessages-%3Ewrong_length-%3Eother
+msgid "is the wrong length (should be %{count} characters)"
+msgstr "és l'allargada errònia (hauria de ser %{count} caràcters)"
 
 #: errors-%3Emovie-%3Eduplicate_cast
 msgid "This person is already added as a cast member."
@@ -12991,7 +13126,7 @@ msgid "Selected"
 msgstr "Seleccionada"
 
 #: list_info-%3Eitems_not_seen
-msgid "Unseen Items"
+msgid "Items I Haven't Seen"
 msgstr "Elements que no he vist"
 
 #: list_info-%3Eitems_on_list-%3Emany
@@ -13009,7 +13144,7 @@ msgid "items on this list"
 msgstr "elements en aquesta llista"
 
 #: list_info-%3Eitems_seen
-msgid "Seen Items"
+msgid "Items I Have Seen"
 msgstr "Elements que he vist"
 
 #: list_info-%3Elist_by
@@ -13021,11 +13156,11 @@ msgid "List Options"
 msgstr "Llista opcions"
 
 #: list_info-%3Elogin_to_create_list
-msgid "Login To Create Your Own List!"
+msgid "Login to create your own list!"
 msgstr "Registreu-vos per a crear la vostra pròpia llista!"
 
 #: list_info-%3Eno_items
-msgid "There are no items to display!"
+msgid "There are no items added to this list."
 msgstr "No hi ha elements per mostrar!"
 
 #: list_info-%3Eprivate
@@ -13683,7 +13818,7 @@ msgid ""
 "continue.</p>"
 msgstr ""
 "<p>Les col·leccions són una manera còmoda d'agrupar seqüeles a TMDB. Malgrat "
-"sovint pugui ser controvertit, les col·leccions no es proposen ser una "
+"que sovint pugui ser controvertit, les col·leccions no es proposen ser una "
 "manera d'agrupar totes les pel·lícules d'un mateix \"univers\". Per a "
 "aquesta fita <a href=\"%{list_link}\" target=\"_blank\" rel=\"noopener\""
 ">creeu, si us plau, una llista</a>. Per a més informació sobre llistes podeu "
@@ -14626,7 +14761,7 @@ msgstr ""
 ".localeapp.com/users/sign_up) a Locale és gratuït i hi podeu afegir tantes "
 "traduccions com temps tingueu. Cada edició ajuda.\n"
 "\n"
-"Si no hi teniu cap interès, no us amoïneu. Tant sols us n'informàvem.\n"
+"Si no hi teniu cap interès, no us amoïneu. Tan sols us n'informàvem.\n"
 "\n"
 "Gràcies per llegir-ho!"
 
@@ -15000,7 +15135,7 @@ msgid ""
 "help by rating movies you've seen."
 msgstr ""
 "No tenim prou informació com per a suggerir-vos cap pel·lícula basant-nos en "
-"%{title}. Podeu ajudar valorant més pel·lícules que hagueu vist."
+"%{title}. Podeu ajudar valorant més pel·lícules que hàgiu vist."
 
 #: no_recommendations-%3Etv_show
 msgid ""
@@ -15008,7 +15143,7 @@ msgid ""
 "help by rating TV shows you've seen."
 msgstr ""
 "No tenim prou informació com per a suggerir-vos cap sèrie basant-nos en "
-"%{title}. Podeu ajudar valorant més sèries que hagueu vist."
+"%{title}. Podeu ajudar valorant més sèries que hàgiu vist."
 
 #: no_records
 msgid "No records have been added."
@@ -15588,6 +15723,11 @@ msgstr "Pel·lícula"
 msgctxt "search->media_types->person"
 msgid "Person"
 msgstr "Artista"
+
+#: search-%3Emedia_types-%3Etv
+msgctxt "search->media_types->tv"
+msgid "TV Show"
+msgstr "Sèrie"
 
 #: search-%3Emedia_types-%3Etv_show
 msgctxt "search->media_types->tv_show"
@@ -16449,7 +16589,7 @@ msgstr "Info"
 
 #: settings-%3Esocial-%3Econnected_table-%3Ereload_text
 msgid "Reload this page once you have authorized your account!"
-msgstr "Recarregueu aquesta pàgina un cop hagueu autoritzat el vostre compte!"
+msgstr "Recarregueu aquesta pàgina un cop hàgiu autoritzat el vostre compte!"
 
 #: settings-%3Esocial-%3Econnected_table-%3Eservice
 msgid "Service"
@@ -16612,13 +16752,13 @@ msgstr ""
 msgid "the"
 msgstr "el/la"
 
+#: time-%3Eam
+msgid "am"
+msgstr "a.m."
+
 #: time-%3Eformats-%3E12hour_minutes
 msgid "%l:%M %p"
 msgstr "%l:%M %p"
-
-#: time-%3Eformats-%3Eam
-msgid "am"
-msgstr "a.m."
 
 #: time-%3Eformats-%3Edefault
 msgid "%a, %d %b %Y %I:%M:%S %p %Z"
@@ -16628,13 +16768,13 @@ msgstr "%a, %d %b %Y %I:%M:%S %p %Z"
 msgid "%B %d, %Y %I:%M %p"
 msgstr "%B %d, %Y %I:%M %p"
 
-#: time-%3Eformats-%3Epm
-msgid "pm"
-msgstr "p.m."
-
 #: time-%3Eformats-%3Eshort
 msgid "%d %b %I:%M %p"
 msgstr "%d %b %I:%M %p"
+
+#: time-%3Epm
+msgid "pm"
+msgstr "p.m."
 
 #: time-%3Eunits-%3Ehours
 msgid "Hours"
