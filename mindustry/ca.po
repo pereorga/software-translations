@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 08:13+0000\n"
+"POT-Creation-Date: 2024-03-11 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3022,7 +3022,7 @@ msgstr "Forma del text"
 
 #: marker.point.name
 msgid "Point"
-msgstr "Point"
+msgstr "Punt"
 
 #: marker.shape.name
 msgid "Shape"
@@ -3039,7 +3039,7 @@ msgstr "Línia"
 #: marker.quad.name
 msgctxt "marker.quad.name"
 msgid "Quad"
-msgstr "Quad"
+msgstr "Rectangle"
 
 #: marker.background
 msgid "Background"
@@ -3441,11 +3441,11 @@ msgstr "Heu perdut el sector [accent]{0}[white]!"
 
 #: sector.capture
 msgid "Sector [accent]{0}[white] Captured!"
-msgstr "Sector [accent]{0}[white]Captured!"
+msgstr "S’ha capturat el sector [accent]{0}[white]!"
 
 #: sector.capture.current
 msgid "Sector Captured!"
-msgstr "Sector Captured!"
+msgstr "Sector capturat!"
 
 #: sector.changeicon
 msgid "Change Icon"
@@ -5236,7 +5236,7 @@ msgstr "Desa automàticament la partida"
 
 #: setting.steampublichost.name
 msgid "Public Game Visibility"
-msgstr "Public Game Visibility"
+msgstr "Visibilitat de la partida pública"
 
 #: setting.playerlimit.name
 msgid "Player Limit"
@@ -6885,7 +6885,7 @@ msgstr "Missatge mundial"
 
 #: block.world-switch.name
 msgid "World Switch"
-msgstr "World Switch"
+msgstr "Interruptor mundial"
 
 #: block.illuminator.name
 msgid "Illuminator"
@@ -8660,7 +8660,7 @@ msgstr "S’apropa un enemic. Prepareu la defensa."
 
 #: onset.defenses
 msgid "[accent]Set up defenses:[lightgray] {0}"
-msgstr "[accent]Set up defenses:[lightgray] {0}"
+msgstr "[accent]Establiu defenses:[lightgray] {0}"
 
 #: onset.attack
 msgid "The enemy is vulnerable. Counter-attack."
@@ -11906,9 +11906,9 @@ msgid ""
 "If fetch is set to true, tries to fetch properties from map locale bundle or "
 "game's bundle."
 msgstr ""
-"Flush print buffer's content to marker, if applicable.\n"
-"If fetch is set to true, tries to fetch properties from map locale bundle or "
-"game's bundle."
+"Passa el contingut de la cua d’impressió al marcador, si es pot.\n"
+"Si s’estableix «fetch» a vertader, s’intentarà carregar les propietats de la "
+"traducció del mapa o del joc."
 
 #: lenum.texture
 msgid ""
@@ -11916,38 +11916,41 @@ msgid ""
 "style).\n"
 "If printFlush is set to true, consumes text buffer content as text argument."
 msgstr ""
-"Texture name straight from game's texture atlas (using kebab-case naming "
-"style).\n"
-"If printFlush is set to true, consumes text buffer content as text argument."
+"Nom de la textura directa de l’atles de textures del joc (amb l’estil de "
+"noms kebab-case).\n"
+"Si «printFlush» s’estableix a vertader, consumeix el contingut de la cua d’"
+"impressió com a argument de text."
 
 #: lenum.texturesize
 msgid ""
 "Size of texture in tiles. Zero value scales marker width to original "
 "texture's size."
 msgstr ""
-"Size of texture in tiles. Zero value scales marker width to original "
-"texture's size."
+"Mida de la textura a les caselles. Un valor de zero indica que s’ha "
+"d'escalar l’amplada del marcador a la mida original de la textura."
 
 #: lenum.autoscale
 msgid "Whether to scale marker corresponding to player's zoom level."
-msgstr "Whether to scale marker corresponding to player's zoom level."
+msgstr "Indica si cal escalar el marcador segons el nivell de zoom del jugador."
 
 #: lenum.posi
 msgid ""
 "Indexed position, used for line and quad markers with index zero being the "
 "first position."
 msgstr ""
-"Indexed position, used for line and quad markers with index zero being the "
-"first position."
+"Posició indexada que es fa servir per a marcadors de línia i de rectangles "
+"on l’índex zero és la primera posició."
 
 #: lenum.uvi
 msgid "Texture's position ranging from zero to one, used for quad markers."
-msgstr "Texture's position ranging from zero to one, used for quad markers."
+msgstr ""
+"Posició de la textura que va de zero a u i que es fa servir per a marcadors "
+"de tipus rectangle."
 
 #: lenum.colori
 msgid ""
 "Indexed color, used for line and quad markers with index zero being the "
 "first color."
 msgstr ""
-"Indexed position, used for line and quad markers with index zero being the "
-"first color."
+"Posició indexada que es fa servir per a marcadors de línies i rectangles on "
+"l’índex zero és el primer color."
