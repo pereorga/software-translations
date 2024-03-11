@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-26 08:03+0000\n"
+"POT-Creation-Date: 2024-03-11 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -531,6 +531,14 @@ msgstr "Esteu segur que voleu esborrar tots els esdeveniments?"
 msgctxt "close_label"
 msgid "Close"
 msgstr "Close"
+
+#: component.collapsible_view.collapse
+msgid "Collapse"
+msgstr "Collapse"
+
+#: component.collapsible_view.expand
+msgid "Expand"
+msgstr "Expand"
 
 #: continue_label
 msgctxt "continue_label"
@@ -2566,6 +2574,10 @@ msgstr "Firebase Cloud Messaging"
 msgid "Privacy"
 msgstr "Privacitat"
 
+#: settings_details.thread.title
+msgid "Thread"
+msgstr "Thread"
+
 #: settings_details.updates.check_for_updates.include_betas
 msgid "Include Beta Releases"
 msgstr "Incloure Versions Beta"
@@ -2669,11 +2681,22 @@ msgstr "No s'ha pogut enviar"
 msgid "Success"
 msgstr "Èxit"
 
+#: thread.active_operational_data_set.title
+msgid "Active operational data set"
+msgstr "Active operational data set"
+
+#: thread.border_agent_id.title
+msgctxt "thread.border_agent_id.title"
+msgid "Border Agent ID"
+msgstr "Border Agent ID"
+
 #: thread.credentials.border_agent_id_title
+msgctxt "thread.credentials.border_agent_id_title"
 msgid "Border Agent ID"
 msgstr "Border Agent ID"
 
 #: thread.credentials.network_key_title
+msgctxt "thread.credentials.network_key_title"
 msgid "Network Key"
 msgstr "Network Key"
 
@@ -2686,6 +2709,7 @@ msgid "You don't have credentials available on your iCloud Keychain."
 msgstr "You don't have credentials available on your iCloud Keychain."
 
 #: thread.credentials.screen_title
+msgctxt "thread.credentials.screen_title"
 msgid "Thread Credentials"
 msgstr "Thread Credentials"
 
@@ -2704,6 +2728,48 @@ msgstr "You don't have credentials to share"
 #: thread.credentials.share_credentials_button_title
 msgid "Share credential with Home Assistant"
 msgstr "Share credential with Home Assistant"
+
+#: thread.extended_pan_id.title
+msgid "Extended PAN ID"
+msgstr "Extended PAN ID"
+
+#: thread.management.title
+msgctxt "thread.management.title"
+msgid "Thread Credentials"
+msgstr "Thread Credentials"
+
+#: thread.network_key.title
+msgctxt "thread.network_key.title"
+msgid "Network Key"
+msgstr "Network Key"
+
+#: thread.store_in_keychain.error.generic.body
+msgid ""
+"Failed to store thread credential in keychain, check logs for more "
+"information."
+msgstr ""
+"Failed to store thread credential in keychain, check logs for more "
+"information."
+
+#: thread.store_in_keychain.error.hexadecimal_conversion.body
+msgid ""
+"Failed to convert input to hexadecimal while storing thread credential in "
+"keychain"
+msgstr ""
+"Failed to convert input to hexadecimal while storing thread credential in "
+"keychain"
+
+#: thread.store_in_keychain.error.title
+msgid "Operation failed"
+msgstr "Operation failed"
+
+#: thread.transter_to_apple.title
+msgid "Transfer to Apple Keychain"
+msgstr "Transfer to Apple Keychain"
+
+#: thread.transter_to_homeassistant.title
+msgid "Transfer to Home Assistant"
+msgstr "Transfer to Home Assistant"
 
 #: token_error.connection_failed
 msgid "Connection failed."
