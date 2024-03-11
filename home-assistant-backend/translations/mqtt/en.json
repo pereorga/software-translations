@@ -113,6 +113,14 @@
             "description": "Entity `{entity_id}` has auxiliary heat support enabled, which has been deprecated for MQTT climate devices. Please adjust your configuration and remove deprecated config options from your configuration and restart Home Assistant to fix this issue.",
             "title": "MQTT entities with auxiliary heat support found"
         },
+        "deprecated_color_handling": {
+            "description": "An MQTT light config (with `json` schema) found in `configuration.yaml` uses deprecated color handling flags.\n\nConfiguration found:\n```yaml\n{config}\n```\nDeprecated flags: **{deprecated_flags}**.\n\nUse the `supported_color_modes` option instead and [reload](/developer-tools/yaml) the manually configured MQTT items or restart Home Assistant to fix this issue.",
+            "title": "Deprecated color handling used for MQTT light"
+        },
+        "deprecated_color_mode_flag": {
+            "description": "An MQTT light config (with `json` schema) found in `configuration.yaml` uses a deprecated `color_mode` flag.\n\nConfiguration found:\n```yaml\n{config}\n```\n\nRemove the option from your config and [reload](/developer-tools/yaml) the manually configured MQTT items or restart Home Assistant to fix this issue.",
+            "title": "Deprecated color_mode option flag used for MQTT light"
+        },
         "deprecated_yaml": {
             "description": "Manually configured MQTT {platform}(s) found under platform key `{platform}`.\n\nPlease move the configuration to the `mqtt` integration key and restart Home Assistant to fix this issue. See the [documentation]({more_info_url}), for more information.",
             "title": "Your manually configured MQTT {platform}(s) needs attention"

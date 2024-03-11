@@ -83,6 +83,17 @@
         }
     },
     "services": {
+        "add_meter_reading": {
+            "fields": {
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
+                },
+                "reading": {
+                    "name": "Lectura"
+                }
+            },
+            "name": "Afegeix lectures de comptador"
+        },
         "set_climate_temperature_offset": {
             "description": "Configura l'\u00f2fset de temperatura de les entitats clim\u00e0tiques.",
             "fields": {

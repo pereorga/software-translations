@@ -3,7 +3,8 @@
         "abort": {
             "already_configured": "Device is already configured",
             "reauth_successful": "Re-authentication was successful",
-            "unknown": "Unexpected error"
+            "unknown": "Unexpected error",
+            "unsupported_version": "Your version of System Bridge is not supported. Please upgrade to the latest version."
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -14,15 +15,17 @@
         "step": {
             "authenticate": {
                 "data": {
-                    "api_key": "API key"
+                    "api_key": "API key",
+                    "token": "API token"
                 },
-                "description": "Please enter the API Key you set in your configuration for {name}."
+                "description": "Please enter the token set in your configuration for {name}."
             },
             "user": {
                 "data": {
                     "api_key": "API key",
                     "host": "Host",
-                    "port": "Port"
+                    "port": "Port",
+                    "token": "Token"
                 },
                 "description": "Please enter your connection details."
             }
@@ -83,6 +86,12 @@
             "version_latest": {
                 "name": "Latest version"
             }
+        }
+    },
+    "issues": {
+        "unsupported_version": {
+            "description": "Your version of System Bridge for host {host} is not supported.\n\nPlease upgrade to the latest version.",
+            "title": "System Bridge Upgrade Required"
         }
     },
     "services": {

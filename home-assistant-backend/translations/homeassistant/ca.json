@@ -1,4 +1,9 @@
 {
+    "config": {
+        "abort": {
+            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
+        }
+    },
     "exceptions": {
         "service_not_found": {
             "message": "No s'ha trobat {domain}.{service}."
@@ -10,7 +15,7 @@
             "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML"
         },
         "config_entry_reauth": {
-            "title": "Re-autenticaci\u00f3 de la integraci\u00f3"
+            "title": "L'autenticaci\u00f3 de {name} ha caducat"
         },
         "country_not_configured": {
             "description": "No s'ha configurat cap pa\u00eds, si us plau, actualitza la configuraci\u00f3 fent clic al bot\u00f3 \"m\u00e9s informaci\u00f3\" a continuaci\u00f3.",

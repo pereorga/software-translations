@@ -34,6 +34,12 @@
     },
     "entity": {
         "sensor": {
+            "dehumidifier": {
+                "name": "Dehumidifier"
+            },
+            "humidifier": {
+                "name": "Humidifier"
+            },
             "zone_status": {
                 "state": {
                     "alarm": "Alarm",
@@ -47,6 +53,11 @@
                     "sabotated": "Sabotated"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "humidity_while_off": {
+            "message": "Cannot change humidity while off"
         }
     }
 }
