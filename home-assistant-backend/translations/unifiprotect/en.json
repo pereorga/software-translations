@@ -145,6 +145,20 @@
             },
             "name": "Remove custom doorbell text"
         },
+        "remove_privacy_zone": {
+            "description": "Use to remove a privacy zone from a camera.",
+            "fields": {
+                "device_id": {
+                    "description": "Camera you want to remove privacy zone from.",
+                    "name": "Camera"
+                },
+                "name": {
+                    "description": "The name of the zone to remove.",
+                    "name": "Privacy Zone Name"
+                }
+            },
+            "name": "Remove camera privacy zone"
+        },
         "set_chime_paired_doorbells": {
             "description": "Use to set the paired doorbell(s) with a smart chime.",
             "fields": {

@@ -19,6 +19,13 @@
             "import_finish": {
                 "description": "The existing YAML configuration has succesfully been imported.\n\nYou can now remove the `homeworks` configuration from your configuration.yaml file."
             },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "description": "Modify a Lutron Homeworks controller connection settings"
+            },
             "user": {
                 "data": {
                     "host": "Host",
@@ -41,11 +48,13 @@
         "step": {
             "add_button": {
                 "data": {
+                    "led": "LED",
                     "name": "Name",
                     "number": "Number",
                     "release_delay": "Release delay"
                 },
                 "data_description": {
+                    "led": "Enable if the button has a scene select indicator",
                     "number": "Button number in the range 1 to 24",
                     "release_delay": "Time between press and release, set to 0 to only press"
                 },
@@ -75,9 +84,11 @@
             },
             "edit_button": {
                 "data": {
+                    "led": "LED",
                     "release_delay": "Release delay"
                 },
                 "data_description": {
+                    "led": "Enable if the button has a scene select indicator",
                     "release_delay": "Time between press and release, set to 0 to only press"
                 },
                 "title": "Configure button"

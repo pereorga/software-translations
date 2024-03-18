@@ -88,6 +88,11 @@
             }
         }
     },
+    "exceptions": {
+        "process_not_found": {
+            "message": "Could not find process with id {id}."
+        }
+    },
     "issues": {
         "unsupported_version": {
             "description": "Your version of System Bridge for host {host} is not supported.\n\nPlease upgrade to the latest version.",
@@ -95,6 +100,34 @@
         }
     },
     "services": {
+        "get_process_by_id": {
+            "description": "Gets a process by the ID.",
+            "fields": {
+                "bridge": {
+                    "description": "The server to talk to.",
+                    "name": "Bridge"
+                },
+                "id": {
+                    "description": "ID of the process to get.",
+                    "name": "ID"
+                }
+            },
+            "name": "Get process by ID"
+        },
+        "get_processes_by_name": {
+            "description": "Gets a list of processes by the name.",
+            "fields": {
+                "bridge": {
+                    "description": "The server to talk to.",
+                    "name": "Bridge"
+                },
+                "name": {
+                    "description": "Name of the process to get.",
+                    "name": "Name"
+                }
+            },
+            "name": "Get processes by name"
+        },
         "open_path": {
             "description": "Opens a file on the server using the default application.",
             "fields": {

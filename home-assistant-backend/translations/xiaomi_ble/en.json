@@ -41,14 +41,30 @@
     },
     "device_automation": {
         "trigger_subtype": {
+            "abnormal": "Abnormal",
             "double_press": "Double Press",
+            "insufficient_area": "Insufficient area",
+            "lock_inside_the_door": "Lock inside the door",
+            "lock_outside_the_door": "Lock outside the door",
+            "locked": "Locked",
             "long_press": "Long Press",
+            "low_quality_too_light_fuzzy": "Low quality (too light, fuzzy)",
+            "match_failed": "Match failed",
+            "match_successful": "Match successful",
             "motion_detected": "Motion Detected",
             "press": "Press",
+            "release_the_antilock": "Release antilock",
             "rotate_left": "Rotate Left",
             "rotate_left_pressed": "Rotate Left (Pressed)",
             "rotate_right": "Rotate Right",
-            "rotate_right_pressed": "Rotate Right (Pressed)"
+            "rotate_right_pressed": "Rotate Right (Pressed)",
+            "skin_is_too_dry": "Skin is too dry",
+            "skin_is_too_wet": "Skin is too wet",
+            "turn_off_child_lock": "Turn off child lock",
+            "turn_on_antilock": "Turn on antilock",
+            "turn_on_child_lock": "Turn on child lock",
+            "unlock_inside_the_door": "Unlock outside the door",
+            "unlock_outside_the_door": "Unlock outside the door"
         },
         "trigger_type": {
             "button": "Button \"{subtype}\"",
@@ -80,6 +96,8 @@
             "button_wind_speed": "Button Wind Speed \"{subtype}\"",
             "cube": "{subtype}",
             "dimmer": "{subtype}",
+            "fingerprint": "{subtype}",
+            "lock": "{subtype}",
             "motion": "{subtype}",
             "motion_detected": "Motion detected"
         }
@@ -117,6 +135,69 @@
                             "rotate_left_pressed": "Rotate left (pressed)",
                             "rotate_right": "Rotate right",
                             "rotate_right_pressed": "Rotate right (pressed)"
+                        }
+                    }
+                }
+            },
+            "error": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "error_nfc_frequently_unlocks": "Error NFC frequently unlocks",
+                            "failure_to_unlock_frequently_in_multiple_ways": "Failure to unlock frequently in multiple ways",
+                            "failure_to_unlock_the_vein_frequently": "Failure to unlock the vein frequently",
+                            "foreign_body_in_the_keyhole": "Foreign body in the keyhole",
+                            "frequent_unlocking_with_incorrect_password": "Frequent unlocking with incorrect password",
+                            "frequent_unlocking_with_wrong_fingerprints": "Frequent unlocking with wrong fingerprints",
+                            "hijacking_alarm": "Hijacking alarm",
+                            "lock_picking": "Lock picking",
+                            "mechanical_failure": "Mechanical failure",
+                            "operation_timeout_password_input_timeout": "Operation timeout password input timeout",
+                            "palmprints_frequently_fail_to_unlock": "Palmprints frequently fail to unlock",
+                            "reset_button_is_pressed": "Reset button is pressed",
+                            "the_accessory_battery_is_low": "The accessory battery is low",
+                            "the_battery_level_is_less_than_10_percent": "The battery level is less than 10%",
+                            "the_battery_level_is_less_than_5_percent": "The battery level is less than 5%",
+                            "the_fingerprint_sensor_is_abnormal": "The fingerprint sensor is abnormal",
+                            "the_key_has_not_been_taken_out": "The key has not been taken out",
+                            "the_lock_sensor_is_faulty": "The lock sensor is faulty",
+                            "the_safe_was_moved": "The safe was moved",
+                            "the_wrong_key_is_frequently_unlocked": "The wrong key is frequently unlocked",
+                            "timeout_is_not_locked_as_required": "Timeout is not locked as required",
+                            "unlock_inside_the_door_after_arming": "Unlock inside the door after arming",
+                            "unlocking_the_face_frequently_fails": "Unlocking the face frequently fails"
+                        }
+                    }
+                }
+            },
+            "fingerprint": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "insufficient_area": "Insufficient area",
+                            "low_quality_too_light_fuzzy": "Low quality (too light, fuzzy)",
+                            "match_failed": "Match failed",
+                            "match_successful": "Match successful",
+                            "skin_is_too_dry": "Skin is too dry",
+                            "skin_is_too_wet": "Skin is too wet"
+                        }
+                    }
+                }
+            },
+            "lock": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "abnormal": "Abnormal",
+                            "lock_inside_the_door": "Lock inside the door",
+                            "lock_outside_the_door": "Lock outside the door",
+                            "locked": "Locked",
+                            "release_the_antilock": "Release antilock",
+                            "turn_off_child_lock": "Turn off child lock",
+                            "turn_on_antilock": "Turn on antilock",
+                            "turn_on_child_lock": "Turn on child lock",
+                            "unlock_inside_the_door": "Unlock outside the door",
+                            "unlock_outside_the_door": "Unlock outside the door"
                         }
                     }
                 }

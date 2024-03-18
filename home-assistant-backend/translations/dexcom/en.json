@@ -23,7 +23,16 @@
     "entity": {
         "sensor": {
             "glucose_trend": {
-                "name": "Glucose trend"
+                "name": "Glucose trend",
+                "state": {
+                    "falling": "Falling",
+                    "falling_quickly": "Falling quickly",
+                    "falling_slightly": "Falling slightly",
+                    "rising": "Rising",
+                    "rising_quickly": "Rising quickly",
+                    "rising_slightly": "Rising slightly",
+                    "steady": "Steady"
+                }
             },
             "glucose_value": {
                 "name": "Glucose value"

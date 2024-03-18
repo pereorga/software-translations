@@ -16,8 +16,8 @@
                     "name": "Show alert"
                 },
                 "timeout": {
-                    "description": "Timeout for sending the answer. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for sending the answer.",
+                    "name": "Read timeout"
                 }
             },
             "name": "Answer callback query"
@@ -158,8 +158,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send sticker. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send sticker.",
+                    "name": "Read timeout"
                 },
                 "url": {
                     "description": "Remote path to a GIF or H.264/MPEG-4 AVC video without sound.",
@@ -224,8 +224,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send document. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send document.",
+                    "name": "Read timeout"
                 },
                 "url": {
                     "description": "Remote path to a document.",
@@ -278,8 +278,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send photo. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send photo.",
+                    "name": "Read timeout"
                 }
             },
             "name": "Send location"
@@ -324,8 +324,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send message. Will help with timeout errors (poor internet connection, etc)s.",
-                    "name": "Timeout"
+                    "description": "Read timeout for send message. Will help with timeout errors (poor internet connection, etc)s.",
+                    "name": "Read timeout"
                 },
                 "title": {
                     "description": "Optional title for your notification. Will be composed as '%title\n%message'.",
@@ -382,8 +382,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send photo. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send photo.",
+                    "name": "Read timeout"
                 },
                 "url": {
                     "description": "Remote path to an image.",
@@ -440,8 +440,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send poll. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send poll.",
+                    "name": "Read timeout"
                 }
             },
             "name": "Send poll"
@@ -490,8 +490,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send sticker. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send sticker.",
+                    "name": "Read timeout"
                 },
                 "url": {
                     "description": "Remote path to a static .webp or animated .tgs sticker.",
@@ -556,8 +556,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send video. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send video.",
+                    "name": "Read timeout"
                 },
                 "url": {
                     "description": "Remote path to a video.",
@@ -618,8 +618,8 @@
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Timeout for send voice. Will help with timeout errors (poor internet connection, etc).",
-                    "name": "Timeout"
+                    "description": "Read timeout for send voice.",
+                    "name": "Read timeout"
                 },
                 "url": {
                     "description": "Remote path to a voice message.",
