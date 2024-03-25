@@ -29,6 +29,25 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "leaving_dock": {
+                "name": "Leaving dock"
+            },
+            "returning_to_dock": {
+                "name": "Returning to dock"
+            }
+        },
+        "select": {
+            "headlight_mode": {
+                "name": "Headlight mode",
+                "state": {
+                    "always_off": "Always off",
+                    "always_on": "Always on",
+                    "evening_and_night": "Evening and night",
+                    "evening_only": "Evening only"
+                }
+            }
+        },
         "sensor": {
             "cutting_blade_usage_time": {
                 "name": "Cutting blade usage time"

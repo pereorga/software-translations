@@ -10,11 +10,29 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "brand": "Brand",
+                    "password": "Password",
+                    "region": "Region"
+                },
+                "data_description": {
+                    "brand": "Please choose the brand of the mobile app you use, or the brand of the appliances in your account"
+                },
+                "description": "For 'brand', please choose the brand of the mobile app you use, or the brand of the appliances in your account",
+                "title": "Correct your Whirlpool account credentials"
+            },
             "user": {
                 "data": {
+                    "brand": "Brand",
                     "password": "Password",
+                    "region": "Region",
                     "username": "Username"
-                }
+                },
+                "data_description": {
+                    "brand": "Please choose the brand of the mobile app you use, or the brand of the appliances in your account"
+                },
+                "title": "Configure your Whirlpool account"
             }
         }
     },

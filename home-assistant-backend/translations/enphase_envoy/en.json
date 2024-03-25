@@ -101,6 +101,12 @@
             "available_energy": {
                 "name": "Available battery energy"
             },
+            "battery_discharge": {
+                "name": "Current battery discharge"
+            },
+            "battery_discharge_phase": {
+                "name": "Current battery discharge {phase_name}"
+            },
             "configured_reserve_soc": {
                 "name": "Configured reserve battery level"
             },
@@ -130,6 +136,18 @@
             },
             "last_reported": {
                 "name": "Last reported"
+            },
+            "lifetime_battery_charged": {
+                "name": "Lifetime battery energy charged"
+            },
+            "lifetime_battery_charged_phase": {
+                "name": "Lifetime battery energy charged {phase_name}"
+            },
+            "lifetime_battery_discharged": {
+                "name": "Lifetime battery energy discharged"
+            },
+            "lifetime_battery_discharged_phase": {
+                "name": "Lifetime battery energy discharged {phase_name}"
             },
             "lifetime_consumption": {
                 "name": "Lifetime energy consumption"
@@ -217,6 +235,24 @@
             },
             "seven_days_production_phase": {
                 "name": "Energy production last seven days {phase_name}"
+            },
+            "storage_ct_metering_status": {
+                "name": "Metering status storage CT"
+            },
+            "storage_ct_metering_status_phase": {
+                "name": "Metering status storage CT {phase_name}"
+            },
+            "storage_ct_status_flags": {
+                "name": "Meter status flags active storage CT"
+            },
+            "storage_ct_status_flags_phase": {
+                "name": "Meter status flags active storage CT {phase_name}"
+            },
+            "storage_ct_voltage": {
+                "name": "Voltage storage CT"
+            },
+            "storage_ct_voltage_phase": {
+                "name": "Voltage storage CT {phase_name}"
             }
         },
         "switch": {

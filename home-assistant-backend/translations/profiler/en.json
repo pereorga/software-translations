@@ -42,6 +42,16 @@
             },
             "name": "Memory"
         },
+        "set_asyncio_debug": {
+            "description": "Enable or disable asyncio debug.",
+            "fields": {
+                "enabled": {
+                    "description": "Whether to enable or disable asyncio debug.",
+                    "name": "Enabled"
+                }
+            },
+            "name": "Set asyncio debug"
+        },
         "start": {
             "description": "Starts the Profiler.",
             "fields": {
