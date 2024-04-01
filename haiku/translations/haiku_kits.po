@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-11 08:03+0000\n"
+"POT-Creation-Date: 2024-04-01 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,14 +11,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.6.0\n"
-
-#: StringForSize
-msgid "{0, plural, one{# byte} other{# bytes}}"
-msgstr "{0, plural, one{# byte} other{# bytes}}"
-
-#: StringForRate
-msgid "%.2f TiB/s"
-msgstr "%.2f TiB/s"
 
 #: AboutWindow
 msgid "All Rights Reserved."
@@ -52,10 +44,6 @@ msgctxt "Dragger"
 msgid "OK"
 msgstr "D'acord"
 
-#: StringForRate
-msgid "%3.2f GiB/s"
-msgstr "%3.2f GiB/s"
-
 #: PrintJob
 msgid "Print Server is not responding."
 msgstr "El servidor d'impressió no respon."
@@ -72,10 +60,6 @@ msgstr "Avís"
 #: ColorControl
 msgid "Green:"
 msgstr "Verd:"
-
-#: StringForRate
-msgid "%3.2f KiB/s"
-msgstr "%3.2f KiB/s"
 
 #: TextView
 msgid "Redo"
@@ -97,10 +81,6 @@ msgstr "D'acord"
 #: TextView
 msgid "Cut"
 msgstr "Retalla"
-
-#: StringForSize
-msgid "%3.2f GiB"
-msgstr "%3.2f GiB"
 
 #: Default+decorator+about+box
 msgid "Default"
@@ -127,10 +107,6 @@ msgctxt "AboutWindow"
 msgid "OK"
 msgstr "D'acord"
 
-#: StringForRate
-msgid "{0, plural, one{# byte/s} other{# bytes/s}}"
-msgstr "{0, plural, one{# byte/s} other{# bytes/s}}"
-
 #: AboutWindow
 msgid "Special Thanks:"
 msgstr "Agraïments especials:"
@@ -138,10 +114,6 @@ msgstr "Agraïments especials:"
 #: Default+decorator+about+box
 msgid "Default Haiku window decorator."
 msgstr "Decorador de finestres per defecte del Haiku"
-
-#: StringForSize
-msgid "%.2f TiB"
-msgstr "%.2f TiB"
 
 #: Dragger
 msgid "Remove replicant"
@@ -167,17 +139,17 @@ msgstr "Copia"
 msgid "Select all"
 msgstr "Selecciona-ho tot"
 
+#: StringForSize
+msgid "{0, plural, one{# byte} other{# bytes}}"
+msgstr "{0, plural, one{# byte} other{# bytes}}"
+
+#: StringForRate
+msgid "{0, plural, one{# byte/s} other{# bytes/s}}"
+msgstr "{0, plural, one{# byte/s} other{# bytes/s}}"
+
 #: AboutWindow
 msgid "alpha"
 msgstr "alfa"
-
-#: StringForSize
-msgid "%3.2f MiB"
-msgstr "%3.2f MiB"
-
-#: StringForRate
-msgid "%3.2f MiB/s"
-msgstr "%3.2f MiB/s"
 
 #: PrintJob
 msgctxt "PrintJob"
@@ -206,10 +178,6 @@ msgstr ""
 "No es pot trobar l'aplicació del replicant. No s'ha proporcionat cap "
 "signatura de l'aplicació.\\n"
 "%error"
-
-#: StringForSize
-msgid "%3.2f KiB"
-msgstr "%3.2f KiB"
 
 #: ColorControl
 msgid "Blue:"
