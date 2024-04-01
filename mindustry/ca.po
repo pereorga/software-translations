@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-18 08:03+0000\n"
+"POT-Creation-Date: 2024-04-01 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4598,49 +4598,165 @@ msgstr "Reparador"
 msgid "Force Field"
 msgstr "Camp de força"
 
+#: ability.forcefield.description
+msgid "Projects a force shield that absorbs bullets"
+msgstr "Projects a force shield that absorbs bullets"
+
 #: ability.repairfield
 msgid "Repair Field"
 msgstr "Repara el camp de força"
+
+#: ability.repairfield.description
+msgid "Repairs nearby units"
+msgstr "Repairs nearby units"
 
 #: ability.statusfield
 msgid "Status Field"
 msgstr "Estat del camp"
 
+#: ability.statusfield.description
+msgid "Applies a status effect to nearby units"
+msgstr "Applies a status effect to nearby units"
+
 #: ability.unitspawn
 msgid "Factory"
 msgstr "Fàbrica"
+
+#: ability.unitspawn.description
+msgid "Constructs units"
+msgstr "Constructs units"
 
 #: ability.shieldregenfield
 msgid "Shield Regen Field"
 msgstr "Regenerador de camps de força"
 
+#: ability.shieldregenfield.description
+msgid "Regenerates shields of nearby units"
+msgstr "Regenerates shields of nearby units"
+
 #: ability.movelightning
 msgid "Movement Lightning"
 msgstr "Moviment llampec"
+
+#: ability.movelightning.description
+msgid "Releases lightning while moving"
+msgstr "Releases lightning while moving"
+
+#: ability.armorplate
+msgid "Armor Plate"
+msgstr "Armor Plate"
+
+#: ability.armorplate.description
+msgid "Reduces damage taken while shooting"
+msgstr "Reduces damage taken while shooting"
 
 #: ability.shieldarc
 msgid "Shield Arc"
 msgstr "Escut de descàrregues"
 
+#: ability.shieldarc.description
+msgid "Projects a force shield in an arc that absorbs bullets"
+msgstr "Projects a force shield in an arc that absorbs bullets"
+
 #: ability.suppressionfield
 msgid "Repair Suppression"
 msgstr "Regen Suppression Field"
+
+#: ability.suppressionfield.description
+msgid "Stops nearby repair buildings"
+msgstr "Stops nearby repair buildings"
 
 #: ability.energyfield
 msgid "Energy Field"
 msgstr "Camp de força"
 
-#: ability.energyfield.sametypehealmultiplier
-msgid "[lightgray]Same Type Healing: [white]{0}%"
-msgstr "[lightgray]Mateix tipus de guarició: [white]{0} %"
+#: ability.energyfield.description
+msgid "Zaps nearby enemies"
+msgstr "Zaps nearby enemies"
 
-#: ability.energyfield.maxtargets
-msgid "[lightgray]Max Targets: [white]{0}"
-msgstr "[lightgray]Objectius màx.: [white]{0}"
+#: ability.energyfield.healdescription
+msgid "Zaps nearby enemies and heals allies"
+msgstr "Zaps nearby enemies and heals allies"
 
 #: ability.regen
-msgid "Regeneration"
+msgid "Self Regeneration"
 msgstr "Regeneració"
+
+#: ability.regen.description
+msgid "Regenerates own health over time"
+msgstr "Regenerates own health over time"
+
+#: ability.liquidregen
+msgid "Liquid Absorption"
+msgstr "Liquid Absorption"
+
+#: ability.liquidregen.description
+msgid "Absorbs liquid to heal itself"
+msgstr "Absorbs liquid to heal itself"
+
+#: ability.spawndeath
+msgid "Death Spawns"
+msgstr "Death Spawns"
+
+#: ability.spawndeath.description
+msgid "Releases units on death"
+msgstr "Releases units on death"
+
+#: ability.liquidexplode
+msgid "Death Spillage"
+msgstr "Death Spillage"
+
+#: ability.liquidexplode.description
+msgid "Spills liquid on death"
+msgstr "Spills liquid on death"
+
+#: ability.stat.firingrate
+msgid "[stat]{0}/sec[lightgray] firing rate"
+msgstr "[stat]{0}/sec[lightgray] firing rate"
+
+#: ability.stat.regen
+msgid "[stat]{0}[lightgray] health/sec"
+msgstr "[stat]{0}[lightgray] health/sec"
+
+#: ability.stat.shield
+msgid "[stat]{0}[lightgray] shield"
+msgstr "[stat]{0}[lightgray] shield"
+
+#: ability.stat.repairspeed
+msgid "[stat]{0}/sec[lightgray] repair speed"
+msgstr "[stat]{0}/sec[lightgray] repair speed"
+
+#: ability.stat.slurpheal
+msgid "[stat]{0}[lightgray] health/liquid unit"
+msgstr "[stat]{0}[lightgray] health/liquid unit"
+
+#: ability.stat.cooldown
+msgid "[stat]{0} sec[lightgray] cooldown"
+msgstr "[stat]{0} sec[lightgray] cooldown"
+
+#: ability.stat.maxtargets
+msgid "[stat]{0}[lightgray] max targets"
+msgstr "[stat]{0}[lightgray] max targets"
+
+#: ability.stat.sametypehealmultiplier
+msgid "[stat]{0}%[lightgray] same type repair amount"
+msgstr "[stat]{0}%[lightgray] same type repair amount"
+
+#: ability.stat.damagereduction
+msgid "[stat]{0}%[lightgray] damage reduction"
+msgstr "[stat]{0}%[lightgray] damage reduction"
+
+#: ability.stat.minspeed
+msgid "[stat]{0} tiles/sec[lightgray] min speed"
+msgstr "[stat]{0} tiles/sec[lightgray] min speed"
+
+#: ability.stat.duration
+msgid "[stat]{0} sec[lightgray] duration"
+msgstr "[stat]{0} sec[lightgray] duration"
+
+#: ability.stat.buildtime
+msgid "[stat]{0} sec[lightgray] build time"
+msgstr "[stat]{0} sec[lightgray] build time"
 
 #: bar.onlycoredeposit
 msgid "Only Core Depositing Allowed"
@@ -4806,11 +4922,11 @@ msgid "[stat]{0}/sec[lightgray] interval bullets:"
 msgstr "[stat]Interval de bales de {0}/s[lightgray]:"
 
 #: bullet.frags
-msgid "[stat]{0}[lightgray]x frag bullets:"
+msgid "[stat]{0}x[lightgray] frag bullets:"
 msgstr "[stat]{0}[lightgray]× de bales de fragmentació:"
 
 #: bullet.lightning
-msgid "[stat]{0}[lightgray]x lightning ~ [stat]{1}[lightgray] damage"
+msgid "[stat]{0}x[lightgray] lightning ~ [stat]{1}[lightgray] damage"
 msgstr "[stat]{0}[lightgray]× llampec ~ [stat]{1}[lightgray] de dany"
 
 #: bullet.buildingdamage
@@ -4822,7 +4938,7 @@ msgid "[stat]{0}[lightgray] knockback"
 msgstr "[stat]{0}[lightgray] de bloqueig"
 
 #: bullet.pierce
-msgid "[stat]{0}[lightgray]x pierce"
+msgid "[stat]{0}x[lightgray] pierce"
 msgstr "[stat]{0}[lightgray]× de perforació"
 
 #: bullet.infinitepierce
@@ -4830,7 +4946,7 @@ msgid "[stat]pierce"
 msgstr "[stat]perforador"
 
 #: bullet.healpercent
-msgid "[stat]{0}[lightgray]% repair"
+msgid "[stat]{0}%[lightgray] repair"
 msgstr "[stat]{0}[lightgray] % de reparació"
 
 #: bullet.healamount
@@ -4838,7 +4954,7 @@ msgid "[stat]{0}[lightgray] direct repair"
 msgstr "[stat]{0}[lightgray] de reparació directa"
 
 #: bullet.multiplier
-msgid "[stat]{0}[lightgray]x ammo multiplier"
+msgid "[stat]{0}x[lightgray] ammo multiplier"
 msgstr "[stat]{0}[lightgray]× de multiplicador de munició"
 
 #: bullet.reload
@@ -5879,6 +5995,10 @@ msgstr "Multiplicador de l’energia solar"
 #: rules.unitcapvariable
 msgid "Cores Contribute To Unit Cap"
 msgstr "Els nuclis contribueixen al límit d’unitats"
+
+#: rules.unitpayloadsexplode
+msgid "Carried Payloads Explode With The Unit"
+msgstr "Carried Payloads Explode With The Unit"
 
 #: rules.unitcap
 msgid "Base Unit Cap"
@@ -10992,7 +11112,7 @@ msgstr "Fes aparèixer una unitat en una posició."
 msgid "Apply or clear a status effect from a unit."
 msgstr "Aplica o esborra un efecte d’estat d’una unitat."
 
-#: lst.weathersensor
+#: lst.weathersense
 msgid "Check if a type of weather is active."
 msgstr "Check if a type of weather is active."
 
