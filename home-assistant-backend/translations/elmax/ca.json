@@ -6,6 +6,7 @@
         },
         "error": {
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "invalid_mode": "Mode inv\u00e0lid o no compatible",
             "invalid_pin": "El pin proporcionat no \u00e9s v\u00e0lid",
             "network_error": "S'ha produ\u00eft un error de xarxa",
             "no_panel_online": "No s'ha trobat cap panell de control d'Elmax en l\u00ednia.",
@@ -13,10 +14,26 @@
             "unknown": "Error inesperat"
         },
         "step": {
+            "choose_mode": {
+                "description": "Trieu el mode de connexi\u00f3 als panells Elmax.",
+                "menu_options": {
+                    "cloud": "Connecta't al panell Elmax mitjan\u00e7ant les APIs d'Elmax Cloud",
+                    "direct": "Connecta't al panell Elmax mitjan\u00e7ant IP local/directa"
+                }
+            },
             "cloud": {
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
+                },
+                "description": "Inicia sessi\u00f3 a Elmax Cloud amb les teves credencials"
+            },
+            "direct": {
+                "data": {
+                    "panel_api_host": "Nom d'amfitri\u00f3 o IP de l'API del panell",
+                    "panel_api_port": "Port de l'API del panell",
+                    "panel_pin": "Codi PIN del panell",
+                    "use_ssl": "Utilitza SSL"
                 }
             },
             "panels": {

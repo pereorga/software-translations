@@ -33,12 +33,29 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_room": {
+            "message": "The room { room } is unavailable to your vacuum. Make sure all rooms match the Shark App, including capitalization."
+        }
+    },
     "selector": {
         "region": {
             "options": {
                 "elsewhere": "Everywhere Else",
                 "europe": "Europe"
             }
+        }
+    },
+    "services": {
+        "clean_room": {
+            "description": "Cleans a specific user-defined room or set of rooms.",
+            "fields": {
+                "rooms": {
+                    "description": "List of rooms to clean",
+                    "name": "Rooms"
+                }
+            },
+            "name": "Clean Room"
         }
     }
 }

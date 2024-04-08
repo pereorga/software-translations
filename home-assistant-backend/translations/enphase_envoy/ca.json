@@ -6,7 +6,7 @@
         },
         "error": {
             "cannot_connect": "No es pot connectar: {reason}",
-            "invalid_auth": "Autenticaci\u00f3 no v\u00e0lida: {reason}",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida: {reason}",
             "unknown": "Error inesperat"
         },
         "flow_title": "{serial} ({host})",
@@ -118,11 +118,29 @@
             "lifetime_consumption": {
                 "name": "Energia total consumida"
             },
+            "lifetime_net_consumption": {
+                "name": "Energia neta total consumida"
+            },
+            "lifetime_net_consumption_phase": {
+                "name": "Energia neta total consumida, {phase_name}"
+            },
+            "lifetime_net_production": {
+                "name": "Energia neta total produ\u00efda"
+            },
+            "lifetime_net_production_phase": {
+                "name": "Energia neta total produ\u00efda, {phase_name}"
+            },
             "lifetime_production": {
                 "name": "Energia total produ\u00efda"
             },
             "max_capacity": {
                 "name": "Capacitat de la bateria"
+            },
+            "net_consumption": {
+                "name": "Pot\u00e8ncia neta consumida actual"
+            },
+            "net_consumption_phase": {
+                "name": "Pot\u00e8ncia neta consumida actual, {phase_name}"
             },
             "reserve_energy": {
                 "name": "Energia de reserva de la bateria"

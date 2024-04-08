@@ -24,8 +24,29 @@
     },
     "entity": {
         "sensor": {
+            "delay": {
+                "name": "Delay"
+            },
             "departure": {
                 "name": "Departure"
+            },
+            "departure0": {
+                "name": "Departure"
+            },
+            "departure1": {
+                "name": "Departure +1"
+            },
+            "departure2": {
+                "name": "Departure +2"
+            },
+            "duration": {
+                "name": "Duration"
+            },
+            "platform": {
+                "name": "Platform"
+            },
+            "transfers": {
+                "name": "Transfers"
             }
         }
     },
@@ -35,7 +56,7 @@
             "title": "The swiss public transport YAML configuration import request failed due to bad config"
         },
         "deprecated_yaml_import_issue_cannot_connect": {
-            "description": "Configuring swiss public transport using YAML is being removed but there was an connection error importing your YAML configuration.\n\nMake sure your home assistant can reach the [opendata server]({opendata_url}). In case the server is down, try again later.",
+            "description": "Configuring swiss public transport using YAML is being removed but there was a connection error importing your YAML configuration.\n\nMake sure your home assistant can reach the [opendata server]({opendata_url}). In case the server is down, try again later.",
             "title": "The swiss public transport YAML configuration import cannot connect to server"
         },
         "deprecated_yaml_import_issue_unknown": {

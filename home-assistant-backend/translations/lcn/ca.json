@@ -43,6 +43,7 @@
             "name": "LED"
         },
         "lock_keys": {
+            "description": "Bloqueja les claus.",
             "fields": {
                 "address": {
                     "name": "Adre\u00e7a"
@@ -52,13 +53,26 @@
                 },
                 "table": {
                     "name": "Taula"
+                },
+                "time": {
+                    "description": "Interval de bloqueig.",
+                    "name": "Temps"
+                },
+                "time_unit": {
+                    "description": "Unitat de temps de l'interval de bloqueig."
                 }
-            }
+            },
+            "name": "Bloqueja claus"
         },
         "lock_regulator": {
+            "description": "Bloqueja un valor consigna d'un regulador.",
             "fields": {
                 "address": {
                     "name": "Adre\u00e7a"
+                },
+                "setpoint": {
+                    "description": "Nom de la consigna.",
+                    "name": "Consigna"
                 },
                 "state": {
                     "name": "Estat"

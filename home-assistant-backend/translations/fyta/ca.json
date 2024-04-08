@@ -1,0 +1,82 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "password_error": "Contrasenya inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "description": "Proporciona un usuari i contrasenya per connectar-te al servidor FYTA",
+                "title": "Credencials de l'API FYTA"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "light": {
+                "name": "Llum"
+            },
+            "light_status": {
+                "name": "Estat de llum",
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "perfect": "Perfecte",
+                    "too_high": "Massa alt",
+                    "too_low": "Massa baix"
+                }
+            },
+            "moisture_status": {
+                "name": "Estat d'humitat",
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "perfect": "Perfecte",
+                    "too_high": "Massa alt",
+                    "too_low": "Massa baix"
+                }
+            },
+            "plant_status": {
+                "name": "Estat de la planta",
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "perfect": "Perfecte",
+                    "too_high": "Massa alt",
+                    "too_low": "Massa baix"
+                }
+            },
+            "salinity": {
+                "name": "Salinitat"
+            },
+            "salinity_status": {
+                "name": "Estat de salinitat",
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "perfect": "Perfecte",
+                    "too_high": "Massa alt",
+                    "too_low": "Massa baix"
+                }
+            },
+            "scientific_name": {
+                "name": "Nom cient\u00edfic"
+            },
+            "temperature_status": {
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "perfect": "Perfecte",
+                    "too_high": "Massa alt",
+                    "too_low": "Massa baix"
+                }
+            }
+        }
+    }
+}

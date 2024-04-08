@@ -1,13 +1,23 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "no_ups_found": "No hi ha cap dispositiu SAI (UPS) disponible al servidor NUT.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "cannot_connect": "Error de connexi\u00f3: {error}",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "description": "Torna a autenticar el servidor NUT a {host}:{port}"
+            },
             "ups": {
                 "data": {
                     "alias": "\u00c0lies"

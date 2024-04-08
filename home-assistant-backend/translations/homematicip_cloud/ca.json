@@ -27,6 +27,44 @@
         }
     },
     "services": {
+        "activate_eco_mode_with_duration": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                },
+                "duration": {
+                    "name": "Durada"
+                }
+            }
+        },
+        "activate_eco_mode_with_period": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
+        },
+        "activate_vacation": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
+        },
+        "deactivate_eco_mode": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
+        },
+        "deactivate_vacation": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
+        },
         "reset_energy_counter": {
             "fields": {
                 "entity_id": {

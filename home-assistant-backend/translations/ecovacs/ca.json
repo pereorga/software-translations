@@ -30,6 +30,20 @@
         }
     },
     "entity": {
+        "event": {
+            "last_job": {
+                "name": "\u00daltima tasca",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "finished": "Acabat",
+                            "finished_with_warnings": "Acabat amb alertes",
+                            "manually_stopped": "Aturat manualment"
+                        }
+                    }
+                }
+            }
+        },
         "number": {
             "volume": {
                 "name": "Volum"
@@ -49,6 +63,9 @@
             },
             "network_ssid": {
                 "name": "SSID Wi-Fi"
+            },
+            "stats_area": {
+                "name": "\u00c0rea netejada"
             },
             "total_stats_time": {
                 "name": "Durada total de la neteja"

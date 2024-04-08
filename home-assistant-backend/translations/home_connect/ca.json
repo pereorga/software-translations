@@ -52,6 +52,17 @@
             "fields": {
                 "device_id": {
                     "name": "ID del dispositiu"
+                },
+                "program": {
+                    "name": "Programa"
+                },
+                "unit": {
+                    "description": "Unitat de l'opci\u00f3.",
+                    "name": "Unitat d'opci\u00f3"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor d'opci\u00f3"
                 }
             }
         },
@@ -64,6 +75,7 @@
                     "name": "Clau"
                 },
                 "value": {
+                    "description": "Valor de l'opci\u00f3.",
                     "name": "Valor"
                 }
             }
@@ -77,7 +89,26 @@
                     "name": "Clau"
                 },
                 "value": {
+                    "description": "Valor de l'opci\u00f3.",
                     "name": "Valor"
+                }
+            }
+        },
+        "start_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID de dispositiu"
+                },
+                "program": {
+                    "name": "Programa"
+                },
+                "unit": {
+                    "description": "Unitat de l'opci\u00f3.",
+                    "name": "Unitat d'opci\u00f3"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor d'opci\u00f3"
                 }
             }
         }

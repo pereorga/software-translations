@@ -15,6 +15,13 @@
             }
         }
     },
+    "entity": {
+        "sensor": {
+            "avg_consumption": {
+                "name": "Consum mitj\u00e0"
+            }
+        }
+    },
     "issues": {
         "deprecated_yaml": {
             "description": "La configuraci\u00f3 de myStrom mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLa configuraci\u00f3 YAML existent s'ha importat autom\u00e0ticament a la interf\u00edcie d'usuari.\n\nElimina la configuraci\u00f3 YAML de myStrom del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",

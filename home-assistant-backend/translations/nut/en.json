@@ -1,13 +1,23 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "no_ups_found": "There are no UPS devices available on the NUT server.",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
-            "cannot_connect": "Failed to connect",
+            "cannot_connect": "Connection error: {error}",
+            "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "Re-authenticate NUT server at {host}:{port}"
+            },
             "ups": {
                 "data": {
                     "alias": "Alias"

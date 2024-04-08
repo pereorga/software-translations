@@ -27,6 +27,14 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "leaving_dock": {
+                "name": "Sortint de la base"
+            },
+            "returning_to_dock": {
+                "name": "Retornant a la base"
+            }
+        },
         "select": {
             "headlight_mode": {
                 "state": {
@@ -38,6 +46,50 @@
             }
         },
         "sensor": {
+            "error": {
+                "state": {
+                    "cutting_motor_problem": "Problema amb el motor de tall",
+                    "cutting_stopped_slope_too_steep": "Tall aturat - pendent massa pronunciat",
+                    "electronic_problem": "Problema electr\u00f2nic",
+                    "empty_battery": "Bateria buida",
+                    "guide_1_not_found": "No s'ha trobat la guia 1",
+                    "guide_2_not_found": "No s'ha trobat la guia 2",
+                    "guide_3_not_found": "No s'ha trobat la guia 3",
+                    "guide_calibration_accomplished": "Calibraci\u00f3 de la guia realitzada",
+                    "guide_calibration_failed": "Ha fallat la calibraci\u00f3 de la guia",
+                    "invalid_system_configuration": "Configuraci\u00f3 del sistema inv\u00e0lida",
+                    "left_brush_motor_overloaded": "Motor del raspall esquerre sobrecarregat",
+                    "low_battery": "Bateria baixa",
+                    "no_confirmed_position": "Sense posici\u00f3 confirmada",
+                    "no_drive": "Sense conducci\u00f3",
+                    "no_error": "Cap error",
+                    "no_power_in_charging_station": "Sense electricitat a la base de c\u00e0rrega",
+                    "no_response_from_charger": "Sense resposta del carregador",
+                    "poor_signal_quality": "Qualitat del senyal dolenta",
+                    "right_brush_motor_overloaded": "Motor del raspall dret sobrecarregat",
+                    "settings_restored": "S'ha restaurat la configuraci\u00f3",
+                    "sim_card_locked": "Targeta SIM bloquejada",
+                    "sim_card_not_found": "Targeta SIM no trobada",
+                    "sim_card_requires_pin": "La targeta SIM necessita un PIN",
+                    "slope_too_steep": "Pendent massa pronunciat",
+                    "sms_could_not_be_sent": "No s'ha pogut enviar l'SMS",
+                    "stop_button_problem": "Problema amb el bot\u00f3 d'STOP",
+                    "stuck_in_charging_station": "Encallat a la base de c\u00e0rrega",
+                    "temporary_battery_problem": "Problema temporal de bateria",
+                    "tilt_sensor_problem": "Problema amb el sensor d'inclinaci\u00f3",
+                    "too_high_discharge_current": "Corrent de desc\u00e0rrega massa alt",
+                    "too_high_internal_current": "Corrent intern massa alt",
+                    "trapped": "Atrapat",
+                    "ultrasonic_sensor_1_defect": "Defecte amb el sensor ultras\u00f2nic 1",
+                    "ultrasonic_sensor_2_defect": "Defecte amb el sensor ultras\u00f2nic 2",
+                    "ultrasonic_sensor_3_defect": "Defecte amb el sensor ultras\u00f2nic 3",
+                    "ultrasonic_sensor_4_defect": "Defecte amb el sensor ultras\u00f2nic 4",
+                    "unexpected_error": "Error inesperat",
+                    "upside_down": "Cap per avall",
+                    "weak_gps_signal": "Senyal GPS d\u00e8bil",
+                    "wrong_pin_code": "Codi PIN incorrecte"
+                }
+            },
             "mode": {
                 "name": "Mode",
                 "state": {
@@ -49,6 +101,21 @@
             },
             "number_of_collisions": {
                 "name": "Nombre de col\u00b7lisions"
+            },
+            "restricted_reason": {
+                "name": "Motiu restringit",
+                "state": {
+                    "all_work_areas_completed": "Totes les \u00e0rees de treball finalitzades",
+                    "daily_limit": "L\u00edmit diari",
+                    "external": "Extern",
+                    "fota": "Actualitzaci\u00f3 remota del microprogramari en execuci\u00f3",
+                    "frost": "Gelada",
+                    "none": "Sense restriccions",
+                    "not_applicable": "No aplicable",
+                    "park_override": "Sobreescriptura d'aparcament",
+                    "sensor": "Temporitzador meteorol\u00f2gic",
+                    "week_schedule": "Programaci\u00f3 setmanal"
+                }
             },
             "total_charging_time": {
                 "name": "Temps total de c\u00e0rrega"

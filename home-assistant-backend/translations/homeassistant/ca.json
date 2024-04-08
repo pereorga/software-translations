@@ -5,6 +5,27 @@
         }
     },
     "exceptions": {
+        "config_schema_unknown_err": {
+            "message": "Error desconegut en cridar {domain} CONFIG_SCHEMA - {error}."
+        },
+        "config_validation_err": {
+            "message": "Configuraci\u00f3 de la integraci\u00f3 {domain} inv\u00e0lida a {config_file}, l\u00ednia {line}: {error}."
+        },
+        "config_validator_unknown_err": {
+            "message": "Error desconegut en cridar {domain} validador de configuraci\u00f3 - {error}."
+        },
+        "multiple_integration_config_errors": {
+            "message": "No s'ha pogut processar la configuraci\u00f3 de la integraci\u00f3 {domain} a causa de diversos errors ({errors}). Consulta els registres per a m\u00e9s informaci\u00f3."
+        },
+        "platform_component_load_err": {
+            "message": "Error de plataforma: {domain} - {error}."
+        },
+        "platform_component_load_exc": {
+            "message": "Error de plataforma: {domain} - {error}."
+        },
+        "platform_schema_validator_err": {
+            "message": "Error desconegut en validar la configuraci\u00f3 de {domain} de la integraci\u00f3 {p_name} - {error}."
+        },
         "service_not_found": {
             "message": "No s'ha trobat {domain}.{service}."
         }

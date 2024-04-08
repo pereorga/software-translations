@@ -33,11 +33,30 @@
             "boiler_temperature": {
                 "name": "Temperatura de la caldera"
             },
+            "ess_discharge_this_month": {
+                "name": "Descarregat de bateria aquest mes"
+            },
+            "ess_discharge_this_week": {
+                "name": "Descarregat de bateria aquesta setmana"
+            },
+            "ess_discharge_this_year": {
+                "name": "Descarregat de bateria aquest any"
+            },
+            "ess_discharge_today": {
+                "name": "Descarregat de la bateria d'avui"
+            },
+            "ess_discharge_total": {
+                "name": "Total descarregat de la bateria"
+            },
+            "ess_power_current": {
+                "name": "Pot\u00e8ncia de bateria"
+            },
             "ess_state": {
                 "name": "Estat de la bateria",
                 "state": {
                     "charge": "Carregant",
-                    "discharge": "Descarregant"
+                    "discharge": "Descarregant",
+                    "standby": "En espera"
                 }
             },
             "photovoltaic_power_production_current": {
@@ -45,7 +64,8 @@
             },
             "photovoltaic_status": {
                 "state": {
-                    "production": "Produint"
+                    "production": "Produint",
+                    "ready": "En espera"
                 }
             }
         }

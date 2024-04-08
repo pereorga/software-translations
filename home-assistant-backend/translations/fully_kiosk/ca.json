@@ -110,25 +110,33 @@
     },
     "services": {
         "load_url": {
+            "description": "Carrega un URL a un Fully Kiosk Browser.",
             "fields": {
                 "url": {
+                    "description": "URL a carregar.",
                     "name": "URL"
                 }
-            }
+            },
+            "name": "Carrega URL"
         },
         "set_config": {
+            "description": "Configura un par\u00e0metre de configuraci\u00f3 de Fully Kiosk Browser.",
             "fields": {
                 "key": {
+                    "description": "Par\u00e0metre de configuraci\u00f3 a configurar.",
                     "name": "Clau"
                 },
                 "value": {
+                    "description": "Valor del par\u00e0metre de configuraci\u00f3.",
                     "name": "Valor"
                 }
             }
         },
         "start_application": {
+            "description": "Inicia una aplicaci\u00f3 a un dispositiu que executi Fully Kiosk Browser.",
             "fields": {
                 "application": {
+                    "description": "Nom de paquet de l'aplicaci\u00f3 a iniciar.",
                     "name": "Aplicaci\u00f3"
                 }
             },

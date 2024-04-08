@@ -36,6 +36,9 @@
                     "username": "Nom d'usuari",
                     "verify_ssl": "Verifica el certificat SSL"
                 },
+                "data_description": {
+                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP del dispositiu UniFi Protect."
+                },
                 "description": "Necessites un usuari local per iniciar sessi\u00f3, creat mitjan\u00e7ant la consola d'UniFi OS. Els usuaris d'Ubiquiti Cloud no funcionen. Per a m\u00e9s informaci\u00f3: {local_user_documentation_url}",
                 "title": "Configuraci\u00f3 d'UniFi Protect"
             }
@@ -66,6 +69,19 @@
             },
             "title": "El set_doorbell_message \u00e9s obsolet"
         },
+        "ea_channel_warning": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "title": "Acc\u00e9s anticipat d'UniFi Protect activat"
+                    },
+                    "start": {
+                        "title": "Acc\u00e9s anticipat d'UniFi Protect activat"
+                    }
+                }
+            },
+            "title": "Acc\u00e9s anticipat d'UniFi Protect activat"
+        },
         "ea_setup_failed": {
             "description": "Est\u00e0s utilitzant la versi\u00f3 v{version} d'UniFi Protect, que \u00e9s una versi\u00f3 d'acc\u00e9s anticipat. S'ha produ\u00eft un error irrecuperable en intentar carregar la integraci\u00f3. [Baixa a una versi\u00f3 estable](https://www.home-assistant.io/integrations/unifiprotect#downgrading-unifi-protect) d'UniFi Protect per continuar utilitzant la integraci\u00f3. \n\n Error: {error}",
             "title": "Error de configuraci\u00f3 amb la versi\u00f3 d'acc\u00e9s anticipat"
@@ -84,6 +100,34 @@
                 }
             },
             "title": "UniFi Protect v{version} \u00e9s una versi\u00f3 d'acc\u00e9s anticipat"
+        },
+        "rtsp_disabled_readonly": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Segur que vols mantenir l'RTSPS de {camera} desactivat?",
+                        "title": "L'RTSPS de la c\u00e0mera {camera} est\u00e0 desactivat"
+                    },
+                    "start": {
+                        "title": "L'RTSPS de la c\u00e0mera {camera} est\u00e0 desactivat"
+                    }
+                }
+            },
+            "title": "L'RTSPS de la c\u00e0mera {camera} est\u00e0 desactivat"
+        },
+        "rtsp_disabled_writable": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Segur que vols mantenir l'RTSPS de {camera} desactivat?",
+                        "title": "L'RTSPS de la c\u00e0mera {camera} est\u00e0 desactivat"
+                    },
+                    "start": {
+                        "title": "L'RTSPS de la c\u00e0mera {camera} est\u00e0 desactivat"
+                    }
+                }
+            },
+            "title": "L'RTSPS de la c\u00e0mera {camera} est\u00e0 desactivat"
         }
     },
     "options": {
@@ -113,6 +157,13 @@
             "fields": {
                 "message": {
                     "name": "Missatge personalitzat"
+                }
+            }
+        },
+        "remove_privacy_zone": {
+            "fields": {
+                "device_id": {
+                    "name": "C\u00e0mera"
                 }
             }
         },

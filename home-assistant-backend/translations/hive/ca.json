@@ -58,10 +58,25 @@
         }
     },
     "services": {
+        "boost_heating": {
+            "fields": {
+                "temperature": {
+                    "name": "Temperatura"
+                }
+            }
+        },
+        "boost_heating_off": {
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            }
+        },
         "boost_heating_on": {
             "fields": {
                 "temperature": {
-                    "description": "Configura la temperatura objectiu del per\u00edode incrementat."
+                    "description": "Configura la temperatura objectiu del per\u00edode incrementat.",
+                    "name": "Temperatura"
                 }
             }
         },

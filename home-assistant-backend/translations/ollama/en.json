@@ -1,0 +1,33 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "download_failed": "Model downloading failed",
+            "unknown": "Unexpected error"
+        },
+        "progress": {
+            "download": "Please wait while the model is downloaded, which may take a very long time. Check your Ollama server logs for more details."
+        },
+        "step": {
+            "download": {
+                "title": "Downloading model"
+            },
+            "user": {
+                "data": {
+                    "model": "Model",
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "max_history": "Max history messages",
+                    "prompt": "Prompt template"
+                }
+            }
+        }
+    }
+}
