@@ -60,8 +60,20 @@
             "disk_used": {
                 "name": "{sensor_label} disk used"
             },
+            "diskio_read": {
+                "name": "{sensor_label} disk read"
+            },
+            "diskio_write": {
+                "name": "{sensor_label} disk write"
+            },
             "fan_speed": {
                 "name": "{sensor_label} fan speed"
+            },
+            "gpu_memory_usage": {
+                "name": "{sensor_label} memory usage"
+            },
+            "gpu_processor_usage": {
+                "name": "{sensor_label} processor usage"
             },
             "memory_free": {
                 "name": "Memory free"
@@ -71,6 +83,12 @@
             },
             "memory_use": {
                 "name": "Memory use"
+            },
+            "network_rx": {
+                "name": "{sensor_label} RX"
+            },
+            "network_tx": {
+                "name": "{sensor_label} TX"
             },
             "process_running": {
                 "name": "Running"

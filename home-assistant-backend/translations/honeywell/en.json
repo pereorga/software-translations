@@ -42,6 +42,32 @@
             "outdoor_temperature": {
                 "name": "Outdoor temperature"
             }
+        },
+        "switch": {
+            "emergency_heat": {
+                "name": "Emergency heat"
+            }
+        }
+    },
+    "exceptions": {
+        "switch_failed_off": {
+            "message": "Honeywell could turn off emergency heat mode."
+        },
+        "switch_failed_on": {
+            "message": "Honeywell could not set system mode to emergency heat mode."
+        }
+    },
+    "issues": {
+        "service_deprecation": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Use `switch.{name}_emergency_heat` instead to change mode.\n\nPlease adjust your automations and scripts and select **submit** to fix this issue.",
+                        "title": "Honeywell aux heat is being removed"
+                    }
+                }
+            },
+            "title": "Honeywell aux heat is being removed"
         }
     },
     "options": {

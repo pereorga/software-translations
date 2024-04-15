@@ -37,13 +37,16 @@
     },
     "exceptions": {
         "copy_failed": {
-            "message": "Copying the message failed with '{error}'."
+            "message": "Copying the message failed with \"{error}\"."
         },
         "delete_failed": {
-            "message": "Marking the the message for deletion failed with '{error}'."
+            "message": "Marking the message for deletion failed with \"{error}\"."
         },
         "expunge_failed": {
-            "message": "Expungling the the message failed with '{error}'."
+            "message": "Expunging the message failed with \"{error}\"."
+        },
+        "fetch_failed": {
+            "message": "Fetching the message text failed with \"{error}\"."
         },
         "imap_server_fail": {
             "message": "The IMAP server failed to connect: {error}."
@@ -58,7 +61,7 @@
             "message": "The selected folder is invalid"
         },
         "seen_failed": {
-            "message": "Marking message as seen failed with '{error}'."
+            "message": "Marking message as seen failed with \"{error}\"."
         }
     },
     "options": {
@@ -76,6 +79,7 @@
                 "data": {
                     "custom_event_data_template": "Template to create custom event data",
                     "enable_push": "Enable Push-IMAP if the server supports it. Turn off if Push-IMAP updates are unreliable.",
+                    "event_message_data": "Message data to be included in the `imap_content` event data:",
                     "folder": "Folder",
                     "max_message_size": "Max message size (2048 < size < 30000)",
                     "search": "IMAP search"
@@ -84,6 +88,12 @@
         }
     },
     "selector": {
+        "event_message_data": {
+            "options": {
+                "headers": "Message headers",
+                "text": "Body text"
+            }
+        },
         "ssl_cipher_list": {
             "options": {
                 "intermediate": "Intermediate ciphers",
@@ -106,6 +116,20 @@
                 }
             },
             "name": "Delete message"
+        },
+        "fetch": {
+            "description": "Fetch the email message from the server.",
+            "fields": {
+                "entry": {
+                    "description": "The IMAP config entry.",
+                    "name": "Entry"
+                },
+                "uid": {
+                    "description": "The email identifier (UID).",
+                    "name": "UID"
+                }
+            },
+            "name": "Fetch message"
         },
         "move": {
             "description": "Move an email to a target folder.",

@@ -50,7 +50,6 @@
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 },
-                "description": "El dispositiu necessita autenticar-te. Introdueix les teves credencials a continuaci\u00f3.",
                 "title": "Autenticaci\u00f3"
             }
         }
@@ -71,6 +70,17 @@
             "led": {
                 "name": "LED"
             }
+        }
+    },
+    "exceptions": {
+        "device_authentication": {
+            "message": "Error d'autenticaci\u00f3 del dispositiu {func}: {exc}"
+        },
+        "device_error": {
+            "message": "No s'ha pogut comunicar amb el dispositiu {func}:{exc}"
+        },
+        "device_timeout": {
+            "message": "S'ha acabat el temps d'espera comunicant amb el dispositiu {func}: {exc}"
         }
     },
     "services": {

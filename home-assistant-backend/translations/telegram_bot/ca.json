@@ -22,10 +22,6 @@
                 "show_alert": {
                     "description": "Mostra una notificaci\u00f3 permanent.",
                     "name": "Mostra alerta"
-                },
-                "timeout": {
-                    "description": "Temps d'espera per enviar la resposta. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps d'espera"
                 }
             },
             "name": "Respon petici\u00f3 'callback'"
@@ -162,8 +158,7 @@
                     "name": "Objectiu"
                 },
                 "timeout": {
-                    "description": "Temps d'espera per enviar l'adhesiu. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps d'espera"
+                    "description": "Temps d'espera per enviar l'adhesiu. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.)."
                 },
                 "url": {
                     "description": "Ruta remota a un v\u00eddeo GIF o H.264/MPEG-4 AVC sense so.",
@@ -223,10 +218,6 @@
                     "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
                 },
-                "timeout": {
-                    "description": "Temps d'espera per enviar el document. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps d'espera"
-                },
                 "url": {
                     "description": "Ruta remota del document.",
                     "name": "URL"
@@ -274,8 +265,7 @@
                     "name": "Objectiu"
                 },
                 "timeout": {
-                    "description": "Temps d'espera per enviar la imatge. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps d'espera"
+                    "description": "Temps d'espera per enviar la imatge. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.)."
                 }
             },
             "name": "Envia ubicaci\u00f3"
@@ -314,10 +304,6 @@
                 "target": {
                     "description": "Llista de chat_ids pre-autoritzats on enviar la notificaci\u00f3. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
-                },
-                "timeout": {
-                    "description": "Temps d'espera per enviar el missatge. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps d'espera"
                 },
                 "title": {
                     "description": "T\u00edtol opcional de la notificaci\u00f3. Es compondr\u00e0 com a '%title %missatge'.",
@@ -369,10 +355,6 @@
                     "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
                 },
-                "timeout": {
-                    "description": "Temps d'espera per enviar la imatge. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps m\u00e0xim d'espera"
-                },
                 "url": {
                     "description": "Ruta remota de la imatge.",
                     "name": "URL"
@@ -422,10 +404,6 @@
                 "target": {
                     "description": "Llista de chat_ids pre-autoritzats on enviar la ubicaci\u00f3. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
-                },
-                "timeout": {
-                    "description": "Temps d'espera per enviar la votaci\u00f3. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps m\u00e0xim d'espera"
                 }
             },
             "name": "Envia votaci\u00f3"
@@ -468,10 +446,6 @@
                 "target": {
                     "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
-                },
-                "timeout": {
-                    "description": "Temps d'espera per enviar l'adhesiu. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps m\u00e0xim d'espera"
                 },
                 "url": {
                     "description": "Ruta remota de l'adhesiu est\u00e0tic .webp o animat .tgs.",
@@ -531,10 +505,6 @@
                     "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
                 },
-                "timeout": {
-                    "description": "Temps d'espera per enviar el v\u00eddeo. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps m\u00e0xim d'espera"
-                },
                 "url": {
                     "description": "Ruta remota del v\u00eddeo.",
                     "name": "URL"
@@ -588,10 +558,6 @@
                 "target": {
                     "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
-                },
-                "timeout": {
-                    "description": "Temps d'espera per enviar el missatge de veu. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.).",
-                    "name": "Temps m\u00e0xim d'espera"
                 },
                 "url": {
                     "description": "Ruta remota del missatge de veu.",

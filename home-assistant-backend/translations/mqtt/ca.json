@@ -70,14 +70,8 @@
             "button_triple_press": "\"{subtype}\" clicat tres vegades"
         }
     },
-    "exceptions": {
-        "invalid_platform_config": {
-            "message": "No s'ha pogut carregar la configuraci\u00f3 de YAML de `{domain}` MQTT configurat manualment. Consulta els registres per a m\u00e9s detalls."
-        }
-    },
     "issues": {
         "deprecated_climate_aux_property": {
-            "description": "L'entitat `{entity_id}` t\u00e9 el suport d'escalfador auxiliar activat, per\u00f2 aquest est\u00e0 obsolet per a dispositius de clima MQTT. Si us plau, modifica la teva configuraci\u00f3 i elimina'n les opcions de configuraci\u00f3 obsoletes. Despr\u00e9s, reinicia Home Assistant per solucionar aquest problema.",
             "title": "S'han trobat entitats MQTT que admeten escalfador auxiliar"
         },
         "deprecated_yaml": {
@@ -105,11 +99,9 @@
             "title": "Entitats MQTT configurades manualment amb un nom igual que el nom del dispositiu"
         },
         "entity_name_startswith_device_name_discovery": {
-            "description": "Algunes entitats MQTT tenen el nom d'entitat que comen\u00e7a amb el nom del dispositiu. Aix\u00f2 no s'espera. Per evitar noms duplicats, el prefix del nom del dispositiu s'elimina del nom de l'entitat. Informa el responsable de l'aplicaci\u00f3 que aporta aquestes entitats afectades per solucionar el problema.\n\nLlista d'entitats afectades: \n\n{config}",
             "title": "Entitats descobertes amb un nom que comen\u00e7a amb el nom del dispositiu"
         },
         "entity_name_startswith_device_name_yaml": {
-            "description": "Algunes entitats MQTT tenen el nom d'entitat que comen\u00e7a amb el nom del dispositiu. Aix\u00f2 no s'espera. Per evitar noms duplicats, el prefix del nom del dispositiu s'elimina del nom de l'entitat. Actualitza la configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema. \n\nLlista d'entitats afectades: \n\n{config}",
             "title": "Entitats MQTT configurades manualment amb un nom que comen\u00e7a amb el nom del dispositiu"
         },
         "invalid_entity_category": {

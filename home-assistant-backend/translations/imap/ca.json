@@ -46,7 +46,7 @@
             "message": "La carpeta seleccionada \u00e9s inv\u00e0lida"
         },
         "seen_failed": {
-            "message": "No s'ha pogut marcar el missatge com a vist, error '{error}'."
+            "message": "No s'ha pogut marcar el missatge com a vist, error \"{error}\"."
         }
     },
     "options": {
@@ -71,6 +71,11 @@
         }
     },
     "selector": {
+        "event_message_data": {
+            "options": {
+                "headers": "Cap\u00e7aleres del missatge"
+            }
+        },
         "ssl_cipher_list": {
             "options": {
                 "intermediate": "Xifradors intermedis",
@@ -93,6 +98,17 @@
                 }
             },
             "name": "Elimina missatge"
+        },
+        "fetch": {
+            "fields": {
+                "entry": {
+                    "name": "Entrada"
+                },
+                "uid": {
+                    "description": "Identificador de correu electr\u00f2nic (UID).",
+                    "name": "UID"
+                }
+            }
         },
         "move": {
             "description": "Mou un correu a una carpeta dest\u00ed.",

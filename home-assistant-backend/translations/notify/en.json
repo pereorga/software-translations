@@ -1,4 +1,9 @@
 {
+    "entity_component": {
+        "_": {
+            "name": "Notifications"
+        }
+    },
     "services": {
         "notify": {
             "description": "Sends a notification message to selected targets.",
@@ -39,6 +44,16 @@
                 }
             },
             "name": "Send a persistent notification"
+        },
+        "send_message": {
+            "description": "Sends a notification message.",
+            "fields": {
+                "message": {
+                    "description": "Your notification message.",
+                    "name": "Message"
+                }
+            },
+            "name": "Send a notification message"
         }
     },
     "title": "Notifications"

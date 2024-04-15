@@ -91,6 +91,17 @@
             }
         }
     },
+    "exceptions": {
+        "device_authentication": {
+            "message": "Device authentication error {func}: {exc}"
+        },
+        "device_error": {
+            "message": "Unable to communicate with the device {func}: {exc}"
+        },
+        "device_timeout": {
+            "message": "Timeout communicating with the device {func}: {exc}"
+        }
+    },
     "services": {
         "random_effect": {
             "description": "Sets a random effect.",

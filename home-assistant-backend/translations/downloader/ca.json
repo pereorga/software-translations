@@ -16,6 +16,10 @@
         "deprecated_yaml": {
             "description": "La configuraci\u00f3 de {integration_title} mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLa teva configuraci\u00f3 ja s'ha importat.\n\nElimina la configuraci\u00f3 YAML de `{domain}` del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
             "title": "La configuraci\u00f3 YAML de {integration_title} est\u00e0 sent eliminada"
+        },
+        "directory_does_not_exist": {
+            "description": "{integration_title} no s'ha pogut importar perqu\u00e8 no existeix el directori configurat.\n\nAssegura't que el directori/ruta existeixi i reinicia Home Assistant per tornar-ho a provar. Si no, elimina la configuraci\u00f3 de {integration_title} del fitxer configuration.yaml i continua amb la [configuraci\u00f3 de la integraci\u00f3]({url}) manual.",
+            "title": "{integration_title} no s'ha pogut importar"
         }
     },
     "services": {
