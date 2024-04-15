@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 08:03+0000\n"
+"POT-Creation-Date: 2024-04-15 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2737,7 +2737,7 @@ msgstr ""
 "\n"
 "[cyan]Example property:\n"
 "[]name: [accent]timer[]\n"
-"value: [accent]Example timer, time left: @[]\n"
+"value: [accent]Example timer, time left: {0}[]\n"
 "\n"
 "[cyan]Usage:\n"
 "[]Set it as objective's text: [accent]@timer\n"
@@ -3043,7 +3043,7 @@ msgstr "Rectangle"
 
 #: marker.texture.name
 msgid "Texture"
-msgstr ""
+msgstr "Texture"
 
 #: marker.background
 msgid "Background"
@@ -5563,43 +5563,43 @@ msgstr "Comportament: Senzill"
 
 #: keybind.unit_command_move.name
 msgid "Unit Command: Move"
-msgstr ""
+msgstr "Unit Command: Move"
 
 #: keybind.unit_command_repair.name
 msgid "Unit Command: Repair"
-msgstr ""
+msgstr "Unit Command: Repair"
 
 #: keybind.unit_command_rebuild.name
 msgid "Unit Command: Rebuild"
-msgstr ""
+msgstr "Unit Command: Rebuild"
 
 #: keybind.unit_command_assist.name
 msgid "Unit Command: Assist"
-msgstr ""
+msgstr "Unit Command: Assist"
 
 #: keybind.unit_command_mine.name
 msgid "Unit Command: Mine"
-msgstr ""
+msgstr "Unit Command: Mine"
 
 #: keybind.unit_command_boost.name
 msgid "Unit Command: Boost"
-msgstr ""
+msgstr "Unit Command: Boost"
 
 #: keybind.unit_command_load_units.name
 msgid "Unit Command: Load Units"
-msgstr ""
+msgstr "Unit Command: Load Units"
 
 #: keybind.unit_command_load_blocks.name
 msgid "Unit Command: Load Blocks"
-msgstr ""
+msgstr "Unit Command: Load Blocks"
 
 #: keybind.unit_command_unload_payload.name
 msgid "Unit Command: Unload Payload"
-msgstr ""
+msgstr "Unit Command: Unload Payload"
 
 #: keybind.unit_command_enter_payload.name
 msgid "Unit Command: Enter Payload"
-msgstr ""
+msgstr "Unit Command: Enter Payload"
 
 #: keybind.rebuild_select.name
 msgid "Rebuild Region"
@@ -6139,6 +6139,20 @@ msgstr "Sempre"
 #: rules.weather.duration
 msgid "Duration:"
 msgstr "Durada:"
+
+#: rules.placerangecheck.info
+msgid ""
+"Prevents players from placing anything near enemy buildings. When trying to "
+"place a turret, the range is increased, so the turret will not be able to "
+"reach the enemy."
+msgstr ""
+"Prevents players from placing anything near enemy buildings. When trying to "
+"place a turret, the range is increased, so the turret will not be able to "
+"reach the enemy."
+
+#: rules.onlydepositcore.info
+msgid "Prevents units from depositing items into any buildings except cores."
+msgstr "Prevents units from depositing items into any buildings except cores."
 
 #: content.item.name
 msgctxt "content.item.name"
@@ -11005,9 +11019,11 @@ msgid ""
 "[accent]print \"test {0}\"\n"
 "format \"example\""
 msgstr ""
-"Replace next placeholder (\"[accent]@[]\") in text buffer with a value.\n"
+"Replace next placeholder in text buffer with a value.\n"
+"Does not do anything if placeholder pattern is invalid.\n"
+"Placeholder pattern: \"{[accent]number 0-9[]}\"\n"
 "Example:\n"
-"[accent]print \"test @\"\n"
+"[accent]print \"test {0}\"\n"
 "format \"example\""
 
 #: lst.draw
