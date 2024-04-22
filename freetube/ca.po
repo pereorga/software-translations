@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 08:02+0000\n"
+"POT-Creation-Date: 2024-04-22 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,6 +210,7 @@ msgstr "Filtres de cerca"
 #: Search+Filters-%3ESort+By-%3ESort+By
 msgctxt "Search Filters->Sort By->Sort By"
 "Search Filters->Sort By->Sort By"
+"Search Filters->Sort By->Sort By"
 msgid "Sort By"
 msgstr "Ordena per"
 
@@ -362,10 +363,6 @@ msgstr "Obtenint subscripcions. Si us plau, espera."
 msgid "Your subscribed channels currently do not have any posts."
 msgstr ""
 
-#: Subscriptions-%3ERefresh+Subscriptions
-msgid "Refresh Subscriptions"
-msgstr "Actualitzar subscripcions"
-
 #: Subscriptions-%3ELoad+More+Videos
 msgid "Load More Videos"
 msgstr "Carregar més vídeos"
@@ -453,6 +450,14 @@ msgctxt "Most Popular"
 msgid "Most Popular"
 msgstr "Més populars"
 
+#: Feed-%3EFeed+Last+Updated
+msgid "{feedName} feed last updated: {date}"
+msgstr ""
+
+#: Feed-%3ERefresh+Feed
+msgid "Refresh {subscriptionName}"
+msgstr ""
+
 #: Playlists
 msgctxt "Playlists"
 msgid "Playlists"
@@ -488,7 +493,7 @@ msgid ""
 msgstr ""
 
 #: User+Playlists-%3EEmpty+Search+Message
-msgid "There are no videos in this playlist that matches your search"
+msgid "There are no videos in this playlist that match your search"
 msgstr ""
 "No hi ha cap vídeo en aquesta llista de reproducció que coincideixi amb la "
 "teva cerca"
@@ -765,7 +770,7 @@ msgid "Your history list is currently empty."
 msgstr "El teu historial està actualment buit."
 
 #: History-%3EEmpty+Search+Message
-msgid "There are no videos in your history that matches your search"
+msgid "There are no videos in your history that match your search"
 msgstr "No hi ha cap vídeo a l'historial que coincideixi amb la cerca"
 
 #: History-%3ESearch+bar+placeholder
@@ -807,6 +812,14 @@ msgstr "Tornar al Backend per defecte en cas d'error"
 #: Settings-%3EGeneral+Settings-%3EEnable+Search+Suggestions
 msgid "Enable Search Suggestions"
 msgstr "Habilitar els suggeriments de cerca"
+
+#: Settings-%3EGeneral+Settings-%3EAuto+Load+Next+Page-%3ELabel
+msgid "Auto Load Next Page"
+msgstr ""
+
+#: Settings-%3EGeneral+Settings-%3EAuto+Load+Next+Page-%3ETooltip
+msgid "Load additional pages and comments automatically."
+msgstr ""
 
 #: Settings-%3EGeneral+Settings-%3EDefault+Landing+Page
 msgid "Default Landing Page"
@@ -1332,10 +1345,6 @@ msgstr ""
 
 #: Settings-%3EPlayer+Settings-%3EScreenshot-%3EError-%3EEmpty+File+Name
 msgid "Empty File Name"
-msgstr ""
-
-#: Settings-%3EPlayer+Settings-%3EComment+Auto+Load-%3EComment+Auto+Load
-msgid "Comment Auto Load"
 msgstr ""
 
 #: Settings-%3EExternal+Player+Settings-%3EExternal+Player+Settings
@@ -2954,6 +2963,39 @@ msgstr "Visualitzacions"
 msgid "Last Updated On"
 msgstr "Última Actualització"
 
+#: Playlist-%3ESort+By-%3ESort+By
+msgctxt "Playlist->Sort By->Sort By"
+msgid "Sort By"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EDateAddedNewest
+msgid "Latest added first"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EDateAddedOldest
+msgid "Earliest added first"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EAuthorAscending
+msgid "Author (A-Z)"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EAuthorDescending
+msgid "Author (Z-A)"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EVideoTitleAscending
+msgid "Title (A-Z)"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EVideoTitleDescending
+msgid "Title (Z-A)"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3ECustom
+msgid "Custom"
+msgstr ""
+
 #: Toggle+Theatre+Mode
 msgid "Toggle Theatre Mode"
 msgstr "Commuta el mode teatre"
@@ -3475,6 +3517,10 @@ msgstr ""
 
 #: Hashtag-%3EThis+hashtag+does+not+currently+have+any+videos
 msgid "This hashtag does not currently have any videos"
+msgstr ""
+
+#: Moments+Ago
+msgid "moments ago"
 msgstr ""
 
 #: Yes
