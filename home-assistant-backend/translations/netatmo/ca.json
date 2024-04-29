@@ -48,6 +48,26 @@
     },
     "entity": {
         "sensor": {
+            "gust_direction": {
+                "state": {
+                    "e": "Est",
+                    "n": "Nord",
+                    "ne": "Nord-est",
+                    "nw": "Nord-oest",
+                    "s": "Sud",
+                    "se": "Sud-est",
+                    "sw": "Sud-oest",
+                    "w": "Oest"
+                }
+            },
+            "health_idx": {
+                "state": {
+                    "fine": "B\u00e9",
+                    "healthy": "Saludable",
+                    "poor": "Pobre",
+                    "unhealthy": "No saludable"
+                }
+            },
             "noise": {
                 "name": "Soroll"
             },
@@ -67,7 +87,17 @@
                 "name": "Angle del vent"
             },
             "wind_direction": {
-                "name": "Direcci\u00f3 del vent"
+                "name": "Direcci\u00f3 del vent",
+                "state": {
+                    "e": "Est",
+                    "n": "Nord",
+                    "ne": "Nord-est",
+                    "nw": "Nord-oest",
+                    "s": "Sud",
+                    "se": "Sud-est",
+                    "sw": "Sud-oest",
+                    "w": "Oest"
+                }
             }
         }
     },

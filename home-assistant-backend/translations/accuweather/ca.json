@@ -3,9 +3,6 @@
         "abort": {
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
         },
-        "create_entry": {
-            "default": "Alguns sensors no estan activats de manera predeterminada. Els pots activar des del registre d'entitats, despr\u00e9s de la configuraci\u00f3 de la integraci\u00f3.\nLa previsi\u00f3 meteorol\u00f2gica no est\u00e0 activada de manera predeterminada. Pots activar-la a les opcions de la integraci\u00f3."
-        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_api_key": "Clau API inv\u00e0lida",
@@ -92,6 +89,9 @@
             "apparent_temperature": {
                 "name": "Temperatura aparent"
             },
+            "cloud_ceiling": {
+                "name": "Ennuvolat"
+            },
             "cloud_cover": {
                 "name": "Nuvolositat"
             },
@@ -125,6 +125,9 @@
             "cloud_cover_night_4d": {
                 "name": "Nuvolositat, nit 4"
             },
+            "condition_day_0d": {
+                "name": "Condici\u00f3 avui"
+            },
             "condition_day_1d": {
                 "name": "Condici\u00f3 dia 1"
             },
@@ -136,6 +139,18 @@
             },
             "condition_day_4d": {
                 "name": "Condici\u00f3 dia 4"
+            },
+            "condition_night_1d": {
+                "name": "Condici\u00f3 nit 1"
+            },
+            "condition_night_2d": {
+                "name": "Condici\u00f3 nit 2"
+            },
+            "condition_night_3d": {
+                "name": "Condici\u00f3 nit 3"
+            },
+            "condition_night_4d": {
+                "name": "Condici\u00f3 nit 4"
             },
             "dew_point": {
                 "name": "Punt de rosada"
@@ -266,6 +281,7 @@
                 }
             },
             "mold_pollen_0d": {
+                "name": "Pol\u00b7len de fongs avui",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -281,6 +297,7 @@
                 }
             },
             "mold_pollen_1d": {
+                "name": "Pol\u00b7len de fongs dia 1",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -296,6 +313,7 @@
                 }
             },
             "mold_pollen_2d": {
+                "name": "Pol\u00b7len de fongs dia 2",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -311,6 +329,7 @@
                 }
             },
             "mold_pollen_3d": {
+                "name": "Pol\u00b7len de fongs dia 3",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -326,6 +345,7 @@
                 }
             },
             "mold_pollen_4d": {
+                "name": "Pol\u00b7len de fongs dia 4",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -367,6 +387,7 @@
                 }
             },
             "ragweed_pollen_0d": {
+                "name": "Pol\u00b7len d'ambrosia avui",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -382,6 +403,7 @@
                 }
             },
             "ragweed_pollen_1d": {
+                "name": "Pol\u00b7len d'ambrosia dia 1",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -397,6 +419,7 @@
                 }
             },
             "ragweed_pollen_2d": {
+                "name": "Pol\u00b7len d'ambrosia dia 2",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -412,6 +435,7 @@
                 }
             },
             "ragweed_pollen_3d": {
+                "name": "Pol\u00b7len d'ambrosia dia 3",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -427,6 +451,7 @@
                 }
             },
             "ragweed_pollen_4d": {
+                "name": "Pol\u00b7len d'ambrosia dia 4",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",

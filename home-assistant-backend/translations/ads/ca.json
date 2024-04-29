@@ -1,18 +1,22 @@
 {
     "services": {
         "write_data_by_name": {
+            "description": "Escriviu un valor al dispositiu ADS connectat.",
             "fields": {
                 "adstype": {
+                    "description": "El tipus de dades de la variable a escriure.",
                     "name": "Tipus d'ADS"
                 },
                 "adsvar": {
+                    "description": "El nom de la variable a escriure.",
                     "name": "Variable ADS"
                 },
                 "value": {
                     "description": "Valor a escriure a la variable.",
                     "name": "Valor"
                 }
-            }
+            },
+            "name": "Escriu les dades pel nom"
         }
     }
 }

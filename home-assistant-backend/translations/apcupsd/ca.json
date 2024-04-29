@@ -18,15 +18,47 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "online_status": {
+                "name": "En l\u00ednia"
+            }
+        },
         "sensor": {
+            "alarm_delay": {
+                "name": "Retard de l'alarma"
+            },
             "ambient_temperature": {
                 "name": "Temperatura ambient"
             },
             "apc_model": {
                 "name": "Model"
             },
+            "apc_status": {
+                "name": "Dades d'estat"
+            },
+            "apparent_power": {
+                "name": "C\u00e0rrega de pot\u00e8ncia aparent"
+            },
+            "bad_batteries": {
+                "name": "Bateries dolentes"
+            },
+            "battery_nominal_voltage": {
+                "name": "Tensi\u00f3 nominal de la bateria"
+            },
+            "battery_replacement_date": {
+                "name": "Bateria substitu\u00efda"
+            },
+            "battery_status": {
+                "name": "Estat de la bateria"
+            },
+            "battery_voltage": {
+                "name": "Tensi\u00f3 de bateria"
+            },
             "cable_type": {
                 "name": "Tipus de cable"
+            },
+            "date": {
+                "name": "Data de l'estat"
             },
             "date_and_time": {
                 "name": "Data i hora"
@@ -37,11 +69,32 @@
             "firmware_version": {
                 "name": "Versi\u00f3 del microprogramari"
             },
+            "hostname": {
+                "name": "Nom d'amfitri\u00f3"
+            },
             "humidity": {
                 "name": "Humitat ambient"
             },
+            "input_voltage_high": {
+                "name": "Tensi\u00f3 d'entrada alta"
+            },
+            "input_voltage_low": {
+                "name": "Tensi\u00f3 d'entrada baixa"
+            },
             "internal_temperature": {
                 "name": "Temperatura interna"
+            },
+            "last_self_test": {
+                "name": "\u00daltima autoprova"
+            },
+            "last_transfer": {
+                "name": "\u00daltima transfer\u00e8ncia"
+            },
+            "line_failure": {
+                "name": "Estat de la tensi\u00f3 d'entrada"
+            },
+            "line_frequency": {
+                "name": "Freq\u00fc\u00e8ncia de l\u00ednia"
             },
             "min_time": {
                 "name": "Temps d'apagada"

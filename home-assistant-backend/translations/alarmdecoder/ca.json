@@ -17,6 +17,10 @@
                     "host": "Amfitri\u00f3",
                     "port": "Port"
                 },
+                "data_description": {
+                    "host": "El nom d'amfitri\u00f3 o l'adre\u00e7a IP del dispositiu AlarmDecoder connectat al vostre panell d'alarmes.",
+                    "port": "El port on \u00e9s accessible AlarmDecoder (per exemple, 10000)"
+                },
                 "title": "Configuraci\u00f3 dels par\u00e0metres de connexi\u00f3"
             },
             "user": {
@@ -73,6 +77,7 @@
     },
     "services": {
         "alarm_keypress": {
+            "description": "Envia tecles personalitzades a l'alarma.",
             "fields": {
                 "keypress": {
                     "description": "Cadena de car\u00e0cters a enviar al panell d'alarma.",

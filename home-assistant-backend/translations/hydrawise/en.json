@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Service is already configured"
+            "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -11,8 +12,12 @@
         "step": {
             "user": {
                 "data": {
-                    "api_key": "API key"
-                }
+                    "api_key": "API key",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "Please provide the username and password for your Hydrawise cloud account:",
+                "title": "Hydrawise Login"
             }
         }
     },

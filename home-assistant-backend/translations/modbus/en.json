@@ -4,6 +4,10 @@
             "description": "Please remove the `{config_key}` key from the {integration} entry in your `configuration.yaml` file and restart Home Assistant to fix this issue. All errors will be reported, as `lazy_error_count` is accepted but ignored.",
             "title": "`{config_key}` configuration key is being removed"
         },
+        "deprecated_restart": {
+            "description": "Please use reload yaml via the developer tools in the UI instead of via the `modbus.restart` service.",
+            "title": "`modbus.restart` is being removed"
+        },
         "deprecated_retries": {
             "description": "Please remove the `{config_key}` key from the {integration} entry in your configuration.yaml file and restart Home Assistant to fix this issue.\n\nThe maximum number of retries is now fixed to 3.",
             "title": "`{config_key}` configuration key is being removed"
@@ -13,7 +17,7 @@
             "title": "`{config_key}` configuration key is being removed"
         },
         "duplicate_entity_entry": {
-            "description": "An address can only be associated with on entity, Please correct the entry in your configuration.yaml file and restart Home Assistant to fix this issue.",
+            "description": "An address can only be associated with one entity, Please correct the entry in your configuration.yaml file and restart Home Assistant to fix this issue.",
             "title": "Modbus {sub_1} address {sub_2} is duplicate, second entry not loaded."
         },
         "duplicate_entity_name": {

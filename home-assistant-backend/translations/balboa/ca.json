@@ -18,6 +18,17 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "circ_pump": {
+                "name": "Bomba de circulaci\u00f3"
+            },
+            "filter_1": {
+                "name": "Cicle de filtraci\u00f3 1"
+            },
+            "filter_2": {
+                "name": "Cicle de filtraci\u00f3 2"
+            }
+        },
         "climate": {
             "balboa": {
                 "state_attributes": {
@@ -42,6 +53,15 @@
             },
             "only_light": {
                 "name": "Llum"
+            }
+        },
+        "select": {
+            "temperature_range": {
+                "name": "Rang de temperatura",
+                "state": {
+                    "high": "Alta",
+                    "low": "Baixa"
+                }
             }
         }
     },

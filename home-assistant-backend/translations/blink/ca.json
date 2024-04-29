@@ -35,12 +35,35 @@
         "sensor": {
             "wifi_rssi": {
                 "name": "RSSI Wi-Fi"
+            },
+            "wifi_strength": {
+                "name": "Pot\u00e8ncia del senyal Wi-Fi"
+            }
+        },
+        "switch": {
+            "camera_motion": {
+                "name": "Detecci\u00f3 de moviment de la c\u00e0mera"
             }
         }
     },
     "exceptions": {
+        "cant_write": {
+            "message": "No s'ha pogut escriure al fitxer."
+        },
+        "device_not_found": {
+            "message": "El dispositiu '{target}' no es troba al registre del dispositiu"
+        },
         "integration_not_found": {
-            "message": "La integraci\u00f3 \"{target}\" no s'ha trobat al registre"
+            "message": "La integraci\u00f3 \"{target}\" no s'ha trobat al registre."
+        },
+        "invalid_device": {
+            "message": "El dispositiu '{target}' no \u00e9s un dispositiu {domain}"
+        },
+        "no_path": {
+            "message": "No es pot escriure al directori {target}, no hi ha acc\u00e9s a la ruta!"
+        },
+        "not_loaded": {
+            "message": "{target} no est\u00e0 carregat."
         }
     },
     "issues": {

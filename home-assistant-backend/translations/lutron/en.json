@@ -22,6 +22,21 @@
             }
         }
     },
+    "entity": {
+        "event": {
+            "button": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "press": "Press",
+                            "release": "Release",
+                            "single_press": "Single press"
+                        }
+                    }
+                }
+            }
+        }
+    },
     "issues": {
         "deprecated_light_fan_entity": {
             "description": "Fan entities have been added to the Lutron integration.\nWe detected that entity `{entity}` is being used in `{info}`\n\nWe have created a new fan entity and you should migrate `{info}` to use this new entity.\n\nWhen you are done migrating `{info}` and are ready to have the deprecated light entity removed, disable the entity and restart Home Assistant.",
