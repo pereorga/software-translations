@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-22 08:03+0000\n"
+"POT-Creation-Date: 2024-04-29 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2002,6 +2002,10 @@ msgstr "Eslògan traduït"
 msgctxt "Translated Title"
 msgid "Translated Title"
 msgstr "Títol traduït"
+
+#: Translation
+msgid "Translation"
+msgstr "Traducció"
 
 #: Translations
 msgctxt "Translations"
@@ -13786,6 +13790,11 @@ msgstr ""
 "Si us cal ajuda sobre com editar a TMDB, cliqueu aquest \"?\" per a llegir-"
 "ne el llibre d'estil."
 
+#: media-%3Eedit-%3Etooltips-%3Echaracter
+msgid "Character name should be entered as it appears in the %{media}."
+msgstr ""
+"El nom del personatge caldria introduir-lo tal i com apareix a la %{media}."
+
 #: media-%3Eedit-%3Etooltips-%3Ehomepage
 msgid "Official homepage only. Fan pages are not allowed."
 msgstr "Només la pàgina oficial. No es permeten pàgines de fans."
@@ -13931,6 +13940,10 @@ msgstr "No s'hi han afegit títols alternatius."
 #: media-%3Emovie-%3Eedit-%3Ecast-%3Eno_records
 msgid "No cast members have been added."
 msgstr "No s'hi han afegit membres del repartiment."
+
+#: media-%3Emovie-%3Eedit-%3Ecast-%3Eperson_required
+msgid "A person is required."
+msgstr "Cal un artista."
 
 #: media-%3Emovie-%3Eedit-%3Econfirm_collection
 msgid ""
@@ -14138,11 +14151,11 @@ msgstr "Pugeu un logo"
 
 #: media-%3Eno_results_found-%3Emovie
 msgid "No movies found."
-msgstr "No s'han trobat pel·lícules."
+msgstr "No s'ha trobat cap pel·lícula."
 
 #: media-%3Eno_results_found-%3Etv
 msgid "No TV shows found."
-msgstr "No s'han trobat sèries."
+msgstr "No s'ha trobat cap sèrie."
 
 #: media-%3Enumber_of_movies-%3Eone
 msgid "movie"
@@ -14164,6 +14177,58 @@ msgstr "sèries"
 msgctxt "media->person->edit->alternative_names->no_records"
 msgid "No alternative names have been added."
 msgstr "No s'hi han afegit noms alternatius."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Einvalid_unicode
+msgctxt "media->person->edit->errors->invalid_unicode"
+msgid "Invalid character(s) detected."
+msgstr "S'ha detectat algun caràcter invàlid."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Eleading_whitespace
+msgid "Leading whitespace(s) detected."
+msgstr "S'ha detectat algun espai en blanc inicial."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Elocked_name
+msgid "<strong>%{name} (%{language})</strong> is locked."
+msgstr "<strong>%{name} (%{language})</strong> està blocat."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Ename_required
+msgid "Unable to migrate blank %{name} (%{language}) field."
+msgstr "No s'ha pogut migrar el camp %{name} (%{language}) en blanc."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Enumbers
+msgid "Invalid numeric character(s) detected."
+msgstr "S'ha detectat algun caràcter numèric invàlid."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Especial_characters
+msgctxt "media->person->edit->errors->special_characters"
+msgid "Invalid character(s) detected."
+msgstr "S'ha detectat algun caràcter invàlid."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Etrailing_whitespace
+msgid "Trailing whitespace(s) detected."
+msgstr "S'ha detectat algun espai en blanc final."
+
+#: media-%3Eperson-%3Eedit-%3Emigration_success
+msgid "Name migrated successfully."
+msgstr "Nom migrat amb èxit."
+
+#: media-%3Eperson-%3Eedit-%3Emove_name
+msgid "Move Name"
+msgstr "Mou el nom"
+
+#: media-%3Eperson-%3Eedit-%3Emove_name_tooltip
+msgid "Move <strong> %{name} (%{language})</strong> to the selected language."
+msgstr "Mou <strong> %{name} (%{language})</strong> a la llengua seleccionada."
+
+#: media-%3Eperson-%3Eedit-%3Etranslated_name_tooltip
+msgid ""
+"<strong> %{name} (%{language})</strong> should only be entered for a "
+"<strong>valid transformation of the person's name</strong>. If both names "
+"are identical, simply leave this field blank and lock it."
+msgstr ""
+"<strong> %{name} (%{language})</strong> hauria de ser entrat per a una "
+"<strong>transformació vàlida del nom de l'artista</strong>. Si tots dos noms "
+"són idèntics, simplement deixeu aquest camp en blanc i bloqueu-lo."
 
 #: media-%3Eperson-%3Egender-%3Efemale
 msgid "Female"
@@ -15158,7 +15223,7 @@ msgstr "No s'hi ha afegit cap director."
 
 #: no_episode_images
 msgid "No episode images have been added."
-msgstr "No s'han afegit imatges d'episodis."
+msgstr "No s'hi han afegit imatges de l'episodi."
 
 #: no_favorite_movies-%3Ecurrent_user
 msgid "You haven't added any favorite movies."
