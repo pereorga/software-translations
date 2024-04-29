@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 08:12+0000\n"
+"POT-Creation-Date: 2024-04-29 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -409,6 +409,10 @@ msgstr ""
 #: AutofillService
 msgid "Auto-fill service"
 msgstr "Servei d'emplenament automàtic"
+
+#: SetBitwardenAsPasskeyManagerDescription
+msgid "Set Bitwarden as your passkey provider in device settings."
+msgstr "Set Bitwarden as your passkey provider in device settings."
 
 #: AvoidAmbiguousCharacters
 msgid "Avoid ambiguous characters"
@@ -1571,6 +1575,18 @@ msgstr "Comprova Face ID"
 msgid "Windows Hello"
 msgstr "Windows Hello"
 
+#: BitwardenCredentialProviderGoToSettings
+msgid ""
+"We were unable to automatically open the Android credential provider "
+"settings menu for you. You can navigate to the credential provider settings "
+"menu manually from Android Settings > System > Passwords & accounts > "
+"Passwords, passkeys and data services."
+msgstr ""
+"We were unable to automatically open the Android credential provider "
+"settings menu for you. You can navigate to the credential provider settings "
+"menu manually from Android Settings > System > Passwords & accounts > "
+"Passwords, passkeys and data services."
+
 #: BitwardenAutofillGoToSettings
 msgid ""
 "We were unable to automatically open the Android auto-fill settings menu for "
@@ -2547,6 +2563,10 @@ msgid ""
 msgstr ""
 "Bitwarden necessita atenció: activeu l'opció \"Dibuixa-sobre\" a \"Serveis "
 "d'emplenament automàtic\" a Configuració de Bitwarden"
+
+#: PasskeyManagement
+msgid "Passkey management"
+msgstr "Passkey management"
 
 #: AutofillServices
 msgid "Auto-fill Services\n"
@@ -4078,6 +4098,14 @@ msgstr "{0} hores i {1} minuts"
 msgid "{0} hours"
 msgstr "{0} hores"
 
+#: PasskeyManagementExplanationLong
+msgid ""
+"Use Bitwarden to save new passkeys and log in with passkeys stored in your "
+"vault."
+msgstr ""
+"Use Bitwarden to save new passkeys and log in with passkeys stored in your "
+"vault."
+
 #: AutofillServicesExplanationLong
 msgid ""
 "The Android Autofill Framework is used to assist in filling login "
@@ -4122,6 +4150,10 @@ msgstr "Voleu continuar amb la política de privadesa?"
 #: ContinueToAppStore
 msgid "Continue to app store?"
 msgstr "Voleu continuar cap a l'app store?"
+
+#: ContinueToDeviceSettings
+msgid "Continue to device Settings?"
+msgstr "Continue to device Settings?"
 
 #: TwoStepLoginDescriptionLong
 msgid ""
@@ -4214,6 +4246,38 @@ msgstr ""
 "Configura una opció de desbloqueig per canviar l'acció de temps d'espera de "
 "la caixa forta."
 
+#: ChooseALoginToSaveThisPasskeyTo
+msgid "Choose a login to save this passkey to"
+msgstr "Choose a login to save this passkey to"
+
+#: SavePasskeyAsNewLogin
+msgid "Save passkey as new login"
+msgstr "Save passkey as new login"
+
+#: SavePasskey
+msgid "Save passkey"
+msgstr "Save passkey"
+
+#: PasskeysForX
+msgid "Passkeys for {0}"
+msgstr "Passkeys for {0}"
+
+#: PasswordsForX
+msgid "Passwords for {0}"
+msgstr "Passwords for {0}"
+
+#: OverwritePasskey
+msgid "Overwrite passkey?"
+msgstr "Overwrite passkey?"
+
+#: ThisItemAlreadyContainsAPasskeyAreYouSureYouWantToOverwriteTheCurrentPasskey
+msgid ""
+"This item already contains a passkey. Are you sure you want to overwrite the "
+"current passkey?"
+msgstr ""
+"This item already contains a passkey. Are you sure you want to overwrite the "
+"current passkey?"
+
 #: DuoTwoStepLoginIsRequiredForYourAccount
 msgid "Duo two-step login is required for your account. "
 msgstr "Es requereix l'inici de sessió en dos passos de DUO al vostre compte. "
@@ -4225,3 +4289,113 @@ msgstr "Seguiu els passos de Duo per acabar d'iniciar la sessió."
 #: LaunchDuo
 msgid "Launch Duo"
 msgstr "Inicia DUO"
+
+#: VerificationRequiredByX
+msgid "Verification required by {0}"
+msgstr "Verification required by {0}"
+
+#: VerificationRequiredForThisActionSetUpAnUnlockMethodInBitwardenToContinue
+msgid ""
+"Verification required for this action. Set up an unlock method in Bitwarden "
+"to continue."
+msgstr ""
+"Verification required for this action. Set up an unlock method in Bitwarden "
+"to continue."
+
+#: ErrorCreatingPasskey
+msgid "Error creating passkey"
+msgstr "Error creating passkey"
+
+#: ErrorReadingPasskey
+msgid "Error reading passkey"
+msgstr "Error reading passkey"
+
+#. The parameter is the RpId
+#: ThereWasAProblemCreatingAPasskeyForXTryAgainLater
+msgid "There was a problem creating a passkey for {0}. Try again later."
+msgstr "There was a problem creating a passkey for {0}. Try again later."
+
+#. The parameter is the RpId
+#: ThereWasAProblemReadingAPasskeyForXTryAgainLater
+msgid "There was a problem reading your passkey for {0}. Try again later."
+msgstr "There was a problem reading your passkey for {0}. Try again later."
+
+#: VerifyingIdentityEllipsis
+msgid "Verifying identity..."
+msgstr "Verifying identity..."
+
+#: Passwords
+msgid "Passwords"
+msgstr "Passwords"
+
+#: UnknownAccount
+msgid "Unknown account"
+msgstr "Unknown account"
+
+#: SetUpAutofill
+msgid "Set up auto-fill"
+msgstr "Set up auto-fill"
+
+#: GetInstantAccessToYourPasswordsAndPasskeys
+msgid "Get instant access to your passwords and passkeys!"
+msgstr "Get instant access to your passwords and passkeys!"
+
+#: SetUpAutoFillDescriptionLong
+msgid ""
+"To set up password auto-fill and passkey management, set Bitwarden as your "
+"preferred provider in the iOS Settings."
+msgstr ""
+"To set up password auto-fill and passkey management, set Bitwarden as your "
+"preferred provider in the iOS Settings."
+
+#: FirstDotGoToYourDeviceSettingsPasswordsPasswordOptions
+msgid "1. Go to your device's Settings > Passwords > Password Options"
+msgstr "1. Go to your device's Settings > Passwords > Password Options"
+
+#: SecondDotTurnOnAutoFill
+msgid "2. Turn on AutoFill"
+msgstr "2. Turn on AutoFill"
+
+#: ThirdDotSelectBitwardenToUseForPasswordsAndPasskeys
+msgid "3. Select \"Bitwarden\" to use for passwords and passkeys"
+msgstr "3. Select \"Bitwarden\" to use for passwords and passkeys"
+
+#: YourPasskeyWillBeSavedToYourBitwardenVault
+msgid "Your passkey will be saved to your Bitwarden vault"
+msgstr "Your passkey will be saved to your Bitwarden vault"
+
+#: YourPasskeyWillBeSavedToYourBitwardenVaultForX
+msgid "Your passkey will be saved to your Bitwarden vault for {0}"
+msgstr "Your passkey will be saved to your Bitwarden vault for {0}"
+
+#: OrganizationUnassignedItemsMessageUSEUDescriptionLong
+msgid ""
+"Unassigned organization items are no longer visible in the All Vaults view "
+"and only accessible via the Admin Console. Assign these items to a "
+"collection from the Admin Console to make them visible."
+msgstr ""
+"Unassigned organization items are no longer visible in the All Vaults view "
+"and only accessible via the Admin Console. Assign these items to a "
+"collection from the Admin Console to make them visible."
+
+#: OrganizationUnassignedItemsMessageSelfHost041624DescriptionLong
+msgid ""
+"On May 16, 2024, unassigned organization items will no longer be visible in "
+"the All Vaults view and only accessible via the Admin Console. Assign these "
+"items to a collection from the Admin Console to make them visible."
+msgstr ""
+"On May 16, 2024, unassigned organization items will no longer be visible in "
+"the All Vaults view and only accessible via the Admin Console. Assign these "
+"items to a collection from the Admin Console to make them visible."
+
+#: RemindMeLater
+msgid "Remind me later"
+msgstr "Remind me later"
+
+#: Notice
+msgid "Notice"
+msgstr "Notice"
+
+#: PasskeysNotSupportedForThisApp
+msgid "Passkeys not supported for this app"
+msgstr "Passkeys not supported for this app"
