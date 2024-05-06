@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 08:03+0000\n"
+"POT-Creation-Date: 2024-05-06 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,6 +267,7 @@ msgstr "D'altres noms"
 
 #: Alternative+Names
 msgctxt "Alternative Names"
+"Alternative Names"
 msgid "Alternative Names"
 msgstr "Noms alternatius"
 
@@ -392,6 +393,7 @@ msgstr "Repartiment"
 
 #: Categories
 msgctxt "Categories"
+"Categories"
 msgid "Categories"
 msgstr "Categories"
 
@@ -492,7 +494,7 @@ msgstr "Líders de contribució per a la setmana de"
 
 #: Convert+to+Collection%3F
 msgid "Convert to Collection?"
-msgstr "Desitgeu transformar en una col·lecció?"
+msgstr "Desitgeu transformar-la en una col·lecció?"
 
 #: Convert+to+Movie%3F
 msgid "Convert to Movie?"
@@ -1144,7 +1146,7 @@ msgstr "Marca com a preferit"
 msgctxt "Media"
 "Media"
 msgid "Media"
-msgstr "Material"
+msgstr "Materials"
 
 #: Member+since
 msgid "Member since"
@@ -1775,6 +1777,10 @@ msgstr "Especials"
 msgid "Spoken Languages"
 msgstr "Llengües parlades"
 
+#: Stage+Name
+msgid "Stage Name"
+msgstr "Nom artístic"
+
 #: State
 msgid "State"
 msgstr "Estat"
@@ -1836,7 +1842,7 @@ msgstr "Envia"
 
 #: Success
 msgid "Success"
-msgstr "Correcte"
+msgstr "Fet"
 
 #: Summary
 msgid "Summary"
@@ -2068,7 +2074,7 @@ msgstr "Mostra totes les imatges de fons"
 
 #: View+All+Episode+Images
 msgid "View All Episode Images"
-msgstr "Mostra totes les imatges de l'episodi"
+msgstr "Mostra tots els fotogrames de l'episodi"
 
 #: View+All+Episodes
 msgid "View All Episodes"
@@ -3029,9 +3035,23 @@ msgstr "S'emet el %{date}"
 msgid "Aired %{date}"
 msgstr "Emès el %{date}"
 
+#: awards-%3Ealternative_names
+msgctxt "awards->alternative_names"
+msgid "Alternative Names"
+msgstr "Noms alternatius"
+
+#: awards-%3Ecategories-%3Etitle
+msgctxt "awards->categories->title"
+msgid "Categories"
+msgstr "Categories"
+
 #: awards-%3Ecategory_empty
 msgid "No nominations for this category."
 msgstr "Categoria deserta."
+
+#: awards-%3Eceremonies-%3Etitle
+msgid "Ceremonies"
+msgstr "Cerimònies"
 
 #: awards-%3Enominations-%3Eone
 msgid "1 Nomination"
@@ -5661,7 +5681,7 @@ msgstr "Anterior"
 
 #: character-%3Eprevious_nav_label
 msgid "Prev"
-msgstr "Ant."
+msgstr "Prev"
 
 #: character-%3Eprimary_character_name
 msgctxt "character->primary_character_name"
@@ -6050,25 +6070,29 @@ msgctxt "contact->get_in_touch"
 msgid "Get In Touch"
 msgstr "Poseu-vos en contacte"
 
+#: contact-%3Ewhere_located
+msgid "Where are you located?"
+msgstr "Quina és la vostra ubicació?"
+
 #: contribute-%3Econtribute
 msgid "Contribute"
-msgstr "Contribuïu"
+msgstr "Contribuïu-hi"
 
 #: contribute-%3Emissing_a_biography
 msgid "Missing A Biography"
-msgstr "En falta la biografia"
+msgstr "Hi falta la biografia"
 
 #: contribute-%3Emissing_a_profile_image
 msgid "Missing A Profile Image"
-msgstr "En falta la imatge de perfil"
+msgstr "Hi falta la imatge de perfil"
 
 #: contribute-%3Emovie_language_distribution
 msgid "Movie Language Distribution"
-msgstr "Falta la llengua de distribució de la pel·lícula"
+msgstr "Llengua de distribució de la pel·lícula"
 
 #: contribute-%3Emovies_missing_a_backdrop
 msgid "Movies Missing A Backdrop"
-msgstr "Falta la imatge de fons"
+msgstr "Pel·lícules sense imatge de fons"
 
 #: contribute-%3Emovies_missing_a_overview
 msgid "Movies Missing A Overview"
@@ -6084,7 +6108,7 @@ msgstr "Pel·lícules sense títol"
 
 #: contribute-%3Epage_title
 msgid "Contribute Missing Data"
-msgstr "Aporteu les dades faltants"
+msgstr "Aporteu-hi les dades que faltin"
 
 #: contribute-%3Eselected_language
 msgid "Selected Language"
@@ -7976,7 +8000,7 @@ msgstr "ha de ser menor o igual a %{count}"
 #: errors-%3Emessages-%3Eless_than_or_equal_to-%3Eother
 msgctxt "errors->messages->less_than_or_equal_to->other"
 msgid "must be less than or equal to %{count}"
-msgstr "ha de ser menor o igual a %{count}"
+msgstr "han de ser menors o iguals a %{count}"
 
 #: errors-%3Emessages-%3Emodel_invalid
 msgid "'Validation failed: %{errors}'"
@@ -8469,7 +8493,7 @@ msgstr "Les imatges de fons han de reunir els següents criteris:"
 
 #: images-%3Eupload_criteria-%3Eepisode_stills_must_meet
 msgid "Episode stills must meet the following criteria:"
-msgstr "Les imatges d'episodis han de reunir els següents criteris:"
+msgstr "Els fotogrames d'episodis han de reunir els següents criteris:"
 
 #: images-%3Eupload_criteria-%3Eheadshots_must_meet
 msgctxt "images->upload_criteria->headshots_must_meet"
@@ -13870,11 +13894,11 @@ msgstr "Visiteu-ne el TikTok"
 
 #: media-%3Eexternal_links-%3Evisit_twitter
 msgid "Visit Twitter"
-msgstr "Visiteu-ne el Twitter"
+msgstr "Visiteu-ne el compte de Twitter"
 
 #: media-%3Eexternal_links-%3Evisit_youtube
 msgid "Visit YouTube"
-msgstr "Visiteu-ne el canal de Twitter"
+msgstr "Visiteu-ne el canal de YouTube"
 
 #: media-%3Egenre-%3Emovie_page_title
 msgid "%{name} Movies"
@@ -13890,27 +13914,27 @@ msgstr "Format"
 
 #: media-%3Eimages-%3Eno_backdrop_stills
 msgid "There no backdrop stills added to this entry."
-msgstr "Aquesta entrada no té afegides imatges de fons."
+msgstr "No s'ha afegit cap fotograma a aquesta entrada."
 
 #: media-%3Eimages-%3Eno_backdrops
 msgid "There no backdrops added to this entry."
-msgstr "Aquesta entrada no té afegides imatges de fons."
+msgstr "No s'ha afegit cap imatge de fons a aquesta entrada."
 
 #: media-%3Eimages-%3Eno_headshots
 msgid "There are no headshots added to this entry."
-msgstr "No hi ha imatges de perfil afegides a aquesta entrada."
+msgstr "No s'ha afegit cap imatge de perfil a aquesta entrada."
 
 #: media-%3Eimages-%3Eno_logos
 msgid "There are no logos added to this entry."
-msgstr "Aquesta entrada no té afegits logotips."
+msgstr "No s'ha afegit cap logotip a aquesta entrada."
 
 #: media-%3Eimages-%3Eno_posters
 msgid "There no posters added to this entry."
-msgstr "Aquesta entrada no té afegits pòsters."
+msgstr "No s'ha afegit cap pòster a aquesta entrada."
 
 #: media-%3Eimages-%3Eno_profiles
 msgid "There no profiles added to this entry."
-msgstr "Aquesta entrada no té afegides imatges de perfil."
+msgstr "No s'ha afegit cap imatge de perfil a aquesta entrada."
 
 #: media-%3Eimages-%3Eprimary
 msgctxt "media->images->primary"
@@ -13919,7 +13943,7 @@ msgstr "Principal?"
 
 #: media-%3Eimages-%3Etypes-%3Ebackdrop_stills
 msgid "Backdrop Stills"
-msgstr "Imatges de fons"
+msgstr "Fotogrames"
 
 #: media-%3Ekeyword-%3Emovie_page_title
 msgid "\"%{name}\" Movies"
@@ -14222,13 +14246,11 @@ msgstr "Mou <strong> %{name} (%{language})</strong> a la llengua seleccionada."
 
 #: media-%3Eperson-%3Eedit-%3Etranslated_name_tooltip
 msgid ""
-"<strong> %{name} (%{language})</strong> should only be entered for a "
-"<strong>valid transformation of the person's name</strong>. If both names "
-"are identical, simply leave this field blank and lock it."
+"If the person's stage name in their native language is not easily readable "
+"in %{language}, consider adding a translated name."
 msgstr ""
-"<strong> %{name} (%{language})</strong> hauria de ser entrat per a una "
-"<strong>transformació vàlida del nom de l'artista</strong>. Si tots dos noms "
-"són idèntics, simplement deixeu aquest camp en blanc i bloqueu-lo."
+"Si el nom artístic en la llengua original no és fàcilment llegible en "
+"%{language}, considereu afegir-hi un nom traduït."
 
 #: media-%3Eperson-%3Egender-%3Efemale
 msgid "Female"
@@ -14433,7 +14455,8 @@ msgid ""
 "We don't have any reviews for %{title}. Would you like to <a href=\"%{url}\""
 ">write one</a>?"
 msgstr ""
-"No tenim ressenyes de %{title}. En voleu <a href=\"%{url}\">escriure una</a>?"
+"No tenim cap ressenya de %{title}. En voleu <a href=\"%{url}\">escriure "
+"una</a>?"
 
 #: media-%3Esocial_panel-%3Ereviews-%3Eno_review-%3Epublic
 msgid "We don't have any reviews for %{title}."
@@ -14652,7 +14675,7 @@ msgstr "No s'han afegit classificacions de contingut."
 
 #: media-%3Etv_show-%3Eedit-%3Ecreator-%3Eno_records
 msgid "No creators have been added."
-msgstr "No s'han afegit creadors."
+msgstr "No s'hi han afegit creadors."
 
 #: media-%3Etv_show-%3Eedit-%3Ecrew-%3Eno_season
 msgid "No seasons exist! A season is required to add crew members."
@@ -14781,11 +14804,11 @@ msgstr "No s'hi han afegit temporades."
 
 #: media-%3Etv_show-%3Eepisode_groups-%3Egroups-%3Ecount-%3Eone
 msgid "%{count} Group"
-msgstr "%{count} Grup"
+msgstr "%{count} grup"
 
 #: media-%3Etv_show-%3Eepisode_groups-%3Egroups-%3Ecount-%3Eother
 msgid "%{count} Groups"
-msgstr "%{count} Grups"
+msgstr "%{count} grups"
 
 #: media-%3Etv_show-%3Eepisode_groups-%3Eoriginal_air_date
 msgctxt "media->tv_show->episode_groups->original_air_date"
@@ -15223,7 +15246,7 @@ msgstr "No s'hi ha afegit cap director."
 
 #: no_episode_images
 msgid "No episode images have been added."
-msgstr "No s'hi han afegit imatges de l'episodi."
+msgstr "No s'hi ha afegit cap fotograma de l'episodi."
 
 #: no_favorite_movies-%3Ecurrent_user
 msgid "You haven't added any favorite movies."
@@ -15459,7 +15482,7 @@ msgstr "False"
 
 #: number-%3Ecurrency-%3Eformat-%3Eunit
 msgid "$"
-msgstr "$"
+msgstr "€"
 
 #: number-%3Eformat-%3Edelimiter
 msgctxt "number->format->delimiter"
@@ -15632,7 +15655,7 @@ msgstr "%{count} vots"
 
 #: ott-%3Eavailable_sentences-%3Eads
 msgid "watch with ads"
-msgstr "visió amb anuncis"
+msgstr "visionat amb anuncis"
 
 #: ott-%3Eavailable_sentences-%3Ebuy
 msgid "buy"
@@ -15706,7 +15729,7 @@ msgstr "SD"
 
 #: ott-%3Emonetization_types-%3Eads
 msgid "Ads"
-msgstr "Anuncis"
+msgstr "Amb publicitat"
 
 #: ott-%3Emonetization_types-%3Ebuy
 msgid "Buy"
@@ -15768,7 +15791,7 @@ msgstr "%{count} temporades"
 
 #: ott-%3Eview_offers
 msgid "View Offers"
-msgstr "Mostra fonts"
+msgstr "Mostra ofertes"
 
 #: ott-%3Ewatch_now
 msgid "Watch Now"
@@ -15872,7 +15895,7 @@ msgstr "com a %{character}"
 
 #: person-%3Ecredits-%3Eas_job
 msgid "— %{job}"
-msgstr ""
+msgstr "— %{job}"
 
 #: placeholder-%3Eprimary_character_name
 msgctxt "placeholder->primary_character_name"
@@ -16934,7 +16957,7 @@ msgstr "El missatge s'ha compartit amb èxit."
 
 #: support-%3Earray-%3Elast_word_connector
 msgid ", and "
-msgstr ", i "
+msgstr " i "
 
 #: support-%3Earray-%3Etwo_words_connector
 msgid " and "
@@ -16942,7 +16965,7 @@ msgstr " i "
 
 #: support-%3Earray-%3Ewords_connector
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: the
 msgid "the"
@@ -16995,12 +17018,12 @@ msgstr ""
 
 #: translation-%3Eone
 msgid "translation"
-msgstr "Traducció"
+msgstr "traducció"
 
 #: translation-%3Eother
 msgctxt "translation->other"
 msgid "translations"
-msgstr "Traduccions"
+msgstr "traduccions"
 
 #: upload_backdrop
 msgid "Upload a Backdrop"
