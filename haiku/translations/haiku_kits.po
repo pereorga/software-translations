@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-22 08:03+0000\n"
+"POT-Creation-Date: 2024-05-06 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,11 @@ msgctxt "PrintJob"
 msgid "OK"
 msgstr "D'acord"
 
+#: Dragger
+msgctxt "Dragger"
+msgid "OK"
+msgstr "D'acord"
+
 #: AboutWindow
 msgid "gamma"
 msgstr "gamma"
@@ -38,11 +43,6 @@ msgstr "gamma"
 #: AboutWindow
 msgid "development"
 msgstr "desenvolupament"
-
-#: Dragger
-msgctxt "Dragger"
-msgid "OK"
-msgstr "D'acord"
 
 #: PrintJob
 msgid "Print Server is not responding."
@@ -90,16 +90,16 @@ msgstr "Retalla"
 msgid "Default"
 msgstr "Per defecte"
 
-#: StringForSize
-msgid "%s KiB"
-msgstr "%s KiB"
-
 #: Dragger
 msgid ""
 "Can't delete this replicant from its original application. Life goes on."
 msgstr ""
 "No s'ha pogut suprimir aquest replicant de la seva aplicació original. La "
 "vida continua."
+
+#: StringForSize
+msgid "%s KiB"
+msgstr "%s KiB"
 
 #: ZombieReplicantView
 msgctxt "ZombieReplicantView"
@@ -119,13 +119,13 @@ msgstr "D'acord"
 msgid "%s MiB/s"
 msgstr "%s MiB/s"
 
-#: StringForSize
-msgid "%s TiB"
-msgstr "%s TiB"
-
 #: AboutWindow
 msgid "Special Thanks:"
 msgstr "Agraïments especials:"
+
+#: StringForSize
+msgid "%s TiB"
+msgstr "%s TiB"
 
 #: Default+decorator+about+box
 msgid "Default Haiku window decorator."
@@ -159,14 +159,6 @@ msgstr "Copia"
 msgid "Select all"
 msgstr "Selecciona-ho tot"
 
-#: StringForSize
-msgid "{0, plural, one{# byte} other{# bytes}}"
-msgstr "{0, plural, one{# byte} other{# bytes}}"
-
-#: StringForRate
-msgid "{0, plural, one{# byte/s} other{# bytes/s}}"
-msgstr "{0, plural, one{# byte/s} other{# bytes/s}}"
-
 #: AboutWindow
 msgid "alpha"
 msgstr "alfa"
@@ -180,14 +172,14 @@ msgstr "Error"
 msgid "%s TiB/s"
 msgstr "%s TiB/s"
 
+#: Dragger
+msgid "About %app…"
+msgstr "Quant a %app…"
+
 #: AboutWindow
 msgctxt "AboutWindow"
 msgid "About %app%"
 msgstr "Quant a %app%"
-
-#: Dragger
-msgid "About %app…"
-msgstr "Quant a %app…"
 
 #: StringForRate
 msgid "%s GiB/s"
