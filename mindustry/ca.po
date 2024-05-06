@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-29 08:03+0000\n"
+"POT-Creation-Date: 2024-05-06 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4577,6 +4577,10 @@ msgstr "Està volant."
 msgid "Ammo Use"
 msgstr "Ús de munició"
 
+#: stat.ammocapacity
+msgid "Ammo Capacity"
+msgstr "Ammo Capacity"
+
 #: stat.damagemultiplier
 msgid "Damage Multiplier"
 msgstr "Multiplicador de dany"
@@ -4970,7 +4974,7 @@ msgid "[stat]{0}[lightgray] direct repair"
 msgstr "[stat]{0}[lightgray] de reparació directa"
 
 #: bullet.multiplier
-msgid "[stat]{0}x[lightgray] ammo multiplier"
+msgid "[stat]{0}[lightgray] ammo/item"
 msgstr "[stat]{0}[lightgray]× de multiplicador de munició"
 
 #: bullet.reload
@@ -5064,6 +5068,10 @@ msgstr "M"
 #: unit.billions
 msgid "b"
 msgstr "kM"
+
+#: unit.shots
+msgid "shots"
+msgstr "shots"
 
 #: unit.pershot
 msgid "/shot"
