@@ -115,6 +115,10 @@
                 }
             },
             "title": "Storage corruption detected for `{storage_key}`"
+        },
+        "template_function_relative_time_deprecated": {
+            "description": "The {relative_time} template function is deprecated in Home Assistant. Please use the {time_since} or {time_until} template functions instead.",
+            "title": "The {relative_time} template function is deprecated"
         }
     },
     "services": {

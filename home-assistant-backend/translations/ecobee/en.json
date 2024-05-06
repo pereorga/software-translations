@@ -42,6 +42,19 @@
             }
         }
     },
+    "issues": {
+        "migrate_notify": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "The Ecobee `notify` service has been migrated. A new `notify` entity per Thermostat is available now.\n\nUpdate any automations to use the new `notify.send_message` exposed by these new entities. When this is done, fix this issue and restart Home Assistant.",
+                        "title": "Disable legacy Ecobee notify service"
+                    }
+                }
+            },
+            "title": "Migration of Ecobee notify service"
+        }
+    },
     "services": {
         "create_vacation": {
             "description": "Creates a vacation on the selected thermostat. Note: start/end date and time must all be specified together for these parameters to have an effect. If start/end date and time are not specified, the vacation will start immediately and last 14 days (unless deleted earlier).",

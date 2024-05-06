@@ -2,6 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
         "error": {
@@ -14,6 +15,7 @@
             "bad_will": "Invalid will topic",
             "bad_ws_headers": "Supply valid HTTP headers as a JSON object",
             "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
             "invalid_inclusion": "The client certificate and private key must be configurered together"
         },
         "step": {
@@ -66,6 +68,18 @@
                 },
                 "description": "Do you want to configure Home Assistant to connect to the MQTT broker provided by the add-on {addon}?",
                 "title": "MQTT Broker via Home Assistant add-on"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password to login to your MQTT broker.",
+                    "username": "The username to login to your MQTT broker."
+                },
+                "description": "The MQTT broker reported an authentication error. Please confirm the brokers correct usernname and password.",
+                "title": "Re-authentication required with the MQTT broker"
             }
         }
     },

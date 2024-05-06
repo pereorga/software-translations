@@ -6,7 +6,8 @@
             "ignore_ip6_link_local": "IPv6 link local address is not supported.",
             "no_devices_found": "No devices found on the network",
             "not_supported": "Connected to AVM FRITZ!Box but it's unable to control Smart Home devices.",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "invalid_auth": "Invalid authentication"
@@ -26,6 +27,15 @@
                     "username": "Username"
                 },
                 "description": "Update your login information for {name}."
+            },
+            "reconfigure_confirm": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your FRITZ!Box router."
+                },
+                "description": "Update your configuration information for {name}."
             },
             "user": {
                 "data": {

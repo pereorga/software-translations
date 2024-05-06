@@ -508,5 +508,40 @@
         "unknown": {
             "message": "An unknown issue occured changing {name}."
         }
+    },
+    "issues": {
+        "deprecated_speed_limit_entity": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\nHome Assistant detected that entity `{entity}` is being used in `{info}`\n\nYou should remove the speed limit lock entity from `{info}` then click submit to fix this issue.",
+                        "title": "Detected Tessie speed limit lock entity usage"
+                    }
+                }
+            },
+            "title": "Detected Tessie speed limit lock entity usage"
+        },
+        "deprecated_speed_limit_locked": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\n\nPlease remove this entity from any automation or script, disable the entity then click submit to fix this issue.",
+                        "title": "Detected Tessie speed limit lock entity locked"
+                    }
+                }
+            },
+            "title": "Detected Tessie speed limit lock entity locked"
+        },
+        "deprecated_speed_limit_unlocked": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\n\nPlease remove this entity from any automation or script, disable the entity then click submit to fix this issue.",
+                        "title": "Detected Tessie speed limit lock entity unlocked"
+                    }
+                }
+            },
+            "title": "Detected Tessie speed limit lock entity unlocked"
+        }
     }
 }

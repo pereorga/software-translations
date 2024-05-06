@@ -2,6 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "El servei ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
         },
         "error": {
@@ -14,6 +15,7 @@
             "bad_will": "T\u00f2pic del missatge d'\u00faltima voluntat ('will') inv\u00e0lid",
             "bad_ws_headers": "Proporciona cap\u00e7aleres HTTP v\u00e0lides en format d'objecte JSON",
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "invalid_inclusion": "El certificat de client i la clau privada s'han de configurar conjuntament"
         },
         "step": {
@@ -37,6 +39,10 @@
                     "ws_headers": "Cap\u00e7aleres del WebSocket en format JSON",
                     "ws_path": "Ruta del WebSocket"
                 },
+                "data_description": {
+                    "password": "Contrasenya per iniciar sessi\u00f3 al teu 'broker' MQTT.",
+                    "username": "Nom d'usuari per iniciar sessi\u00f3 al teu 'broker' MQTT."
+                },
                 "description": "Introdueix la informaci\u00f3 de connexi\u00f3 del teu broker MQTT."
             },
             "hassio_confirm": {
@@ -45,6 +51,16 @@
                 },
                 "description": "Vols configurar Home Assistant perqu\u00e8 es connecti amb el broker MQTT proporcionat pel complement {addon}?",
                 "title": "Broker MQTT via complement de Home Assistant"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "password": "Contrasenya per iniciar sessi\u00f3 al teu 'broker' MQTT.",
+                    "username": "Nom d'usuari per iniciar sessi\u00f3 al teu 'broker' MQTT."
+                }
             }
         }
     },
@@ -142,6 +158,10 @@
                     "username": "Nom d'usuari",
                     "ws_headers": "Cap\u00e7aleres del WebSocket en format JSON",
                     "ws_path": "Ruta del WebSocket"
+                },
+                "data_description": {
+                    "password": "Contrasenya per iniciar sessi\u00f3 al teu 'broker' MQTT.",
+                    "username": "Nom d'usuari per iniciar sessi\u00f3 al teu 'broker' MQTT."
                 },
                 "description": "Introdueix la informaci\u00f3 de connexi\u00f3 del teu broker MQTT.",
                 "title": "Opcions del broker"

@@ -18,6 +18,12 @@
         }
     },
     "exceptions": {
+        "notify_missing_argument_item": {
+            "message": "Failed to call service {service}. 'URGENT_MESSAGE' requires a value @ data['item']. Got None"
+        },
+        "notify_request_failed": {
+            "message": "Failed to send push notification for bring due to a connection error, try again later"
+        },
         "setup_authentication_exception": {
             "message": "Authentication failed for {email}, check your email and password"
         },
@@ -38,6 +44,36 @@
         },
         "todo_update_item_failed": {
             "message": "Failed to update item {name} to Bring! list"
+        }
+    },
+    "selector": {
+        "notification_type_selector": {
+            "options": {
+                "changed_list": "List changed - Check it out",
+                "going_shopping": "I'm going shopping! - Last chance for adjustments",
+                "shopping_done": "Shopping done - you can relax",
+                "urgent_message": "Breaking news - Please get `item`!"
+            }
+        }
+    },
+    "services": {
+        "send_message": {
+            "description": "Send a mobile push notification to members of a shared Bring! list.",
+            "fields": {
+                "entity_id": {
+                    "description": "Bring! list whose members (except sender) will be notified.",
+                    "name": "List"
+                },
+                "item": {
+                    "description": "Item name to include in a breaking news message e.g. `Breaking news - Please get cilantro!`",
+                    "name": "Item (Required if message type `Breaking news` selected)"
+                },
+                "message": {
+                    "description": "Type of push notification to send to list members.",
+                    "name": "Notification type"
+                }
+            },
+            "name": "Send a notification"
         }
     }
 }
