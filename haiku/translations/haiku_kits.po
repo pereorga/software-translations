@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-06 08:03+0000\n"
+"POT-Creation-Date: 2024-05-13 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,10 @@ msgstr "gamma"
 #: AboutWindow
 msgid "development"
 msgstr "desenvolupament"
+
+#: StringForRate
+msgid "{0, plural, one{%s byte/s} other{%s bytes/s}}"
+msgstr "{0, plural, one{%s byte/s} other{%s bytes/s}}"
 
 #: PrintJob
 msgid "Print Server is not responding."
@@ -135,6 +139,10 @@ msgstr "Decorador de finestres per defecte del Haiku"
 msgid "%s GiB"
 msgstr "%s GiB"
 
+#: StringForSize
+msgid "%s B"
+msgstr "%s B"
+
 #: Dragger
 msgid "Remove replicant"
 msgstr "Suprimeix el replicant"
@@ -180,6 +188,10 @@ msgstr "Quant a %app…"
 msgctxt "AboutWindow"
 msgid "About %app%"
 msgstr "Quant a %app%"
+
+#: StringForSize
+msgid "{0, plural, one{%s byte} other{%s bytes}}"
+msgstr "{0, plural, one{%s byte} other{%s bytes}}"
 
 #: StringForRate
 msgid "%s GiB/s"

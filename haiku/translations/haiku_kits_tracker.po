@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-06 08:03+0000\n"
+"POT-Creation-Date: 2024-05-13 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -539,10 +539,6 @@ msgstr "Habilita el filtratge d'anticipació de tecleig"
 #: FSUtils
 msgid "copy"
 msgstr "copia"
-
-#: FSUtils
-msgid "New folder%ld"
-msgstr "Carpeta nova %ld"
 
 #: OpenWithWindow
 msgctxt "OpenWithWindow"
@@ -1589,6 +1585,16 @@ msgstr "Cancel·la"
 msgid "yes"
 msgstr "sí"
 
+#: FSUtils
+msgid ""
+"Error copying file \\\"%name\\\":\\n"
+"\\t%error\\n"
+"\\n"
+msgstr ""
+"Error a l'hora de copiar el fitxer \\\"%name\\\":\\n"
+"\\t%error\\n"
+"\\n"
+
 #: ContainerWindow
 msgid "Make active printer"
 msgstr "Estableix com a impressora activa"
@@ -2211,10 +2217,6 @@ msgid "Permissions"
 msgstr "Permisos"
 
 #: FSUtils
-msgid "New folder %ld"
-msgstr "Carpeta nova %ld"
-
-#: FSUtils
 msgid ""
 "\\\"%name\\\" is a legacy executable. Please obtain an updated version or "
 "recompile the application."
@@ -2315,6 +2317,13 @@ msgstr "Duplica"
 #: AttributesView
 msgid "16-bit integer"
 msgstr "Enter de 16 bits"
+
+#: FSUtils
+msgid ""
+"Note: file names in the destination file system are not case-sensitive.\\n"
+msgstr ""
+"Nota: els noms de fitxers del sistema de fitxers de destinació no "
+"distingeixen entre majúscules i minúscules.\\n"
 
 #: PoseView
 msgid "Untitled clipping"
