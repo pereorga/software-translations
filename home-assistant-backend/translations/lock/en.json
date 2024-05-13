@@ -7,10 +7,12 @@
         },
         "condition_type": {
             "is_locked": "{entity_name} is locked",
+            "is_open": "{entity_name} is open",
             "is_unlocked": "{entity_name} is unlocked"
         },
         "trigger_type": {
             "locked": "{entity_name} locked",
+            "open": "{entity_name} opened",
             "unlocked": "{entity_name} unlocked"
         }
     },
@@ -21,6 +23,8 @@
                 "jammed": "Jammed",
                 "locked": "Locked",
                 "locking": "Locking",
+                "open": "Open",
+                "opening": "Opening",
                 "unlocked": "Unlocked",
                 "unlocking": "Unlocking"
             },

@@ -60,5 +60,49 @@
             }
         }
     },
+    "services": {
+        "get_travel_times": {
+            "description": "Get route alternatives and travel times between two locations.",
+            "fields": {
+                "avoid_ferries": {
+                    "description": "Whether to avoid ferries.",
+                    "name": "Avoid Ferries?"
+                },
+                "avoid_subscription_roads": {
+                    "description": "Whether to avoid subscription roads. ",
+                    "name": "Avoid Roads Needing a Vignette / Subscription?"
+                },
+                "avoid_toll_roads": {
+                    "description": "Whether to avoid toll roads.",
+                    "name": "Avoid Toll Roads?"
+                },
+                "destination": {
+                    "description": "The destination of the route.",
+                    "name": "Destination"
+                },
+                "origin": {
+                    "description": "The origin of the route.",
+                    "name": "Origin"
+                },
+                "realtime": {
+                    "description": "Use real-time or statistical data.",
+                    "name": "Realtime Travel Time?"
+                },
+                "region": {
+                    "description": "The region. Controls which waze server is used.",
+                    "name": "Region"
+                },
+                "units": {
+                    "description": "Which unit system to use.",
+                    "name": "Units"
+                },
+                "vehicle_type": {
+                    "description": "Which vehicle to use.",
+                    "name": "Vehicle Type"
+                }
+            },
+            "name": "Get Travel Times"
+        }
+    },
     "title": "Waze Travel Time"
 }

@@ -26,7 +26,16 @@
     },
     "entity": {
         "sensor": {
+            "active_stage": {
+                "name": "Active stage",
+                "state": {
+                    "first_stage": "First stage",
+                    "idle": "Idle",
+                    "second_stage": "Second stage"
+                }
+            },
             "schedule_part": {
+                "name": "Schedule Part",
                 "state": {
                     "day": "Day",
                     "evening": "Evening",

@@ -23,11 +23,23 @@
     },
     "entity": {
         "binary_sensor": {
+            "rain_sensor": {
+                "name": "Rain sensor"
+            },
             "watering": {
                 "name": "Watering"
             }
         },
         "sensor": {
+            "daily_active_water_use": {
+                "name": "Daily active water use"
+            },
+            "daily_inactive_water_use": {
+                "name": "Daily inactive water use"
+            },
+            "daily_total_water_use": {
+                "name": "Daily total water use"
+            },
             "next_cycle": {
                 "name": "Next cycle"
             },

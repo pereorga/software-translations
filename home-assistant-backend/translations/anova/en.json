@@ -32,10 +32,28 @@
                 "name": "Heater temperature"
             },
             "mode": {
-                "name": "Mode"
+                "name": "Mode",
+                "state": {
+                    "cook": "Cooking",
+                    "device_failure": "Device failure",
+                    "high_temp": "High temperature",
+                    "idle": "Idle",
+                    "low_water": "Low water",
+                    "ota": "Ota",
+                    "provisioning": "Provisioning",
+                    "startup": "Startup"
+                }
             },
             "state": {
-                "name": "State"
+                "name": "State",
+                "state": {
+                    "cooking": "Cooking",
+                    "maintaining": "Maintaining",
+                    "no_state": "No state",
+                    "preheating": "Preheating",
+                    "set_timer": "Set timer",
+                    "timer_expired": "Timer expired"
+                }
             },
             "target_temperature": {
                 "name": "Target temperature"

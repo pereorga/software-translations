@@ -78,6 +78,11 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_favorite": {
+            "message": "Could not find a Sonos favorite: {name}"
+        }
+    },
     "issues": {
         "subscriptions_failed": {
             "description": "Falling back to polling, functionality may be limited.\n\nSonos device at {device_ip} cannot reach Home Assistant at {listener_address}.\n\nSee our [documentation]({sub_fail_url}) for more information on how to solve this issue.",
