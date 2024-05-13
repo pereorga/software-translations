@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-06 08:04+0000\n"
+"POT-Creation-Date: 2024-05-13 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1288,6 +1288,10 @@ msgstr "Lloc web oficial"
 msgid "Offline Databases"
 msgstr "Base de dades fora de línia"
 
+#: Ok
+msgid "OK"
+msgstr "D'acord"
+
 #: Origin+Country
 msgid "Origin Country"
 msgstr "País d'origen"
@@ -2285,7 +2289,7 @@ msgstr "Artistes"
 #: accounts-%3Eactivity-%3Emedia_types-%3Etv
 msgctxt "accounts->activity->media_types->tv"
 msgid "TV"
-msgstr "Sèrie"
+msgstr "Sèries"
 
 #: accounts-%3Eactivity-%3Epage_title-%3Epage_owner
 msgid "My Recent Activity"
@@ -2654,11 +2658,11 @@ msgstr "No hi ha pròximes pel·lícules a la vostra llista de seguiment."
 
 #: accounts-%3Eoverview-%3Eempty_watched_genres-%3Elogged_in
 msgid "You haven't logged any movies or TV shows."
-msgstr "No heu enregistrat cap pel·lícula o sèrie."
+msgstr "No heu registrat cap pel·lícula o sèrie."
 
 #: accounts-%3Eoverview-%3Eempty_watched_genres-%3Epublic
 msgid "%{username} hasn't logged any movies or TV shows."
-msgstr "L'usuari %{username} no ha enregistrat cap pel·lícula o sèrie."
+msgstr "L'usuari %{username} no ha registrat cap pel·lícula o sèrie."
 
 #: accounts-%3Eoverview-%3Egoto_discussions
 msgid "Go to Discussions"
@@ -6172,7 +6176,7 @@ msgstr "Guia"
 
 #: contribution_bible-%3Ecollection-%3Etall_bible-%3Etop
 msgid "Collection"
-msgstr "Col·lecció"
+msgstr "Col·leccions"
 
 #: contribution_bible-%3Econtribution_bible
 msgid "Contribution Bible"
@@ -6217,7 +6221,7 @@ msgstr "Guia"
 #: contribution_bible-%3Emovie-%3Etall_bible-%3Etop
 msgctxt "contribution_bible->movie->tall_bible->top"
 msgid "Movie"
-msgstr "Pel·lícula"
+msgstr "Pel·lícules"
 
 #: contribution_bible-%3Enew_content-%3Enew_content
 msgid "New Content"
@@ -6926,11 +6930,11 @@ msgstr "Popularitat descendent"
 
 #: discover-%3Esort_options-%3Eprimary_release_date_asc
 msgid "Primary Release Date Ascending"
-msgstr "Data de llançament primària ascendent"
+msgstr "Data de llançament principal ascendent"
 
 #: discover-%3Esort_options-%3Eprimary_release_date_desc
 msgid "Primary Release Date Descending"
-msgstr "Data de llançament primària descendent"
+msgstr "Data de llançament principal descendent"
 
 #: discover-%3Esort_options-%3Erating_asc
 msgid "Rating Ascending"
@@ -14202,6 +14206,19 @@ msgctxt "media->person->edit->alternative_names->no_records"
 msgid "No alternative names have been added."
 msgstr "No s'hi han afegit noms alternatius."
 
+#: media-%3Eperson-%3Eedit-%3Eblank_translated_name
+msgid ""
+"Unable to set primary translation when <strong>%{name} (%{language})</"
+"strong> is blank."
+msgstr ""
+"No és possible fixar una traducció principal quan <strong>%{name} "
+"(%{language})</strong> està en blanc."
+
+#: media-%3Eperson-%3Eedit-%3Econfirm_primary_translation
+msgid "A primary translation (%{i18n_tag}) already exists for this person."
+msgstr ""
+"Ja existeix una traducció principal (%{i18n_tag}) per a aquesta persona."
+
 #: media-%3Eperson-%3Eedit-%3Eerrors-%3Einvalid_unicode
 msgctxt "media->person->edit->errors->invalid_unicode"
 msgid "Invalid character(s) detected."
@@ -14223,6 +14240,18 @@ msgstr "No s'ha pogut migrar el camp %{name} (%{language}) en blanc."
 msgid "Invalid numeric character(s) detected."
 msgstr "S'ha detectat algun caràcter numèric invàlid."
 
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Eprimary_name_migration
+msgid ""
+"Unable to migrate <strong>%{name} (%{language})</strong> from primary "
+"translation."
+msgstr ""
+"No es pot migrar a <strong>%{name} (%{language})</strong> com a traducció "
+"primària."
+
+#: media-%3Eperson-%3Eedit-%3Eerrors-%3Eprimary_translation
+msgid "translation already exists."
+msgstr "la traducció ja existeix."
+
 #: media-%3Eperson-%3Eedit-%3Eerrors-%3Especial_characters
 msgctxt "media->person->edit->errors->special_characters"
 msgid "Invalid character(s) detected."
@@ -14243,6 +14272,10 @@ msgstr "Mou el nom"
 #: media-%3Eperson-%3Eedit-%3Emove_name_tooltip
 msgid "Move <strong> %{name} (%{language})</strong> to the selected language."
 msgstr "Mou <strong> %{name} (%{language})</strong> a la llengua seleccionada."
+
+#: media-%3Eperson-%3Eedit-%3Eprimary_translation
+msgid "Primary translation"
+msgstr "Traducció principal"
 
 #: media-%3Eperson-%3Eedit-%3Etranslated_name_tooltip
 msgid ""
