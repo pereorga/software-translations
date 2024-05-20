@@ -2,8 +2,10 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
+            "another_device": "Re-configuration was unsuccessful, the IP address/hostname of another Shelly device was used.",
             "reauth_successful": "Re-authentication was successful",
             "reauth_unsuccessful": "Re-authentication was unsuccessful, please remove the integration and set it up again.",
+            "reconfigure_successful": "Re-configuration was successful",
             "unsupported_firmware": "The device is using an unsupported firmware version."
         },
         "error": {
@@ -29,6 +31,17 @@
                     "password": "Password",
                     "username": "Username"
                 }
+            },
+            "reconfigure_confirm": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the Shelly device to connect to.",
+                    "port": "The TCP port of the Shelly device to connect to (Gen2+)."
+                },
+                "description": "Update configuration for {device_name}.\n\nBefore setup, battery-powered devices must be woken up, you can now wake the device up using a button on it."
             },
             "user": {
                 "data": {

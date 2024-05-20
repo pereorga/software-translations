@@ -59,6 +59,9 @@
         "failed_arm_motion": {
             "message": "Blink failed to arm camera motion detection."
         },
+        "failed_clip": {
+            "message": "Blink failed to record a clip."
+        },
         "failed_disarm": {
             "message": "Blink failed to disarm camera."
         },
@@ -115,6 +118,10 @@
                 }
             },
             "name": "Update"
+        },
+        "record": {
+            "description": "Requests camera to record a clip.",
+            "name": "Record"
         },
         "save_recent_clips": {
             "description": "Saves all recent video clips to local directory with file pattern \"%Y%m%d_%H%M%S_{name}.mp4\".",

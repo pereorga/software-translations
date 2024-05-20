@@ -4,6 +4,7 @@
             "already_configured": "Account is already configured",
             "already_in_progress": "Configuration flow is already in progress",
             "authorize_url_timeout": "Timeout generating authorize URL.",
+            "missing_amc_scope": "The `Authentication API` and the `Automower Connect API` are not connected to your application in the Husqvarna Developer Portal.",
             "missing_configuration": "The component is not configured. Please follow the documentation.",
             "missing_credentials": "The integration requires application credentials.",
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
@@ -19,6 +20,10 @@
             "default": "Successfully authenticated"
         },
         "step": {
+            "missing_scope": {
+                "description": "For the best experience with this integration both the `Authentication API` and the `Automower Connect API` should be connected. Please make sure that both of them are connected to your account in the [Husqvarna Developer Portal]({application_url}).",
+                "title": "Your account is missing some API connections"
+            },
             "pick_implementation": {
                 "title": "Pick authentication method"
             },

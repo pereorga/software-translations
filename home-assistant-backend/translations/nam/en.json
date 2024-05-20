@@ -2,6 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
+            "another_device": "The IP address/hostname of another Nettigo Air Monitor was used.",
             "device_unsupported": "The device is unsupported.",
             "reauth_successful": "Re-authentication was successful",
             "reauth_unsuccessful": "Re-authentication was unsuccessful, please remove the integration and set it up again."
@@ -29,6 +30,15 @@
                     "username": "Username"
                 },
                 "description": "Please enter the correct username and password for host: {host}"
+            },
+            "reconfigure_confirm": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the Nettigo Air Monitor to control."
+                },
+                "description": "Update configuration for {device_name}."
             },
             "user": {
                 "data": {
