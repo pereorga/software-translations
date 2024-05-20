@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 08:03+0000\n"
+"POT-Creation-Date: 2024-05-20 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1869,6 +1869,7 @@ msgid "Use your Passkey for passwordless sign in."
 msgstr "Utilitzeu la vostra clau de seguretat per a entrar sense contrasenya."
 
 #: webauthn-login-title
+msgctxt "webauthn-login-title"
 msgid "Passkey login"
 msgstr "Entrada amb clau de seguretat"
 
@@ -1877,6 +1878,7 @@ msgid "Passkey Registration"
 msgstr "Registre d''una clau de seguretat"
 
 #: webauthn-available-authenticators
+msgctxt "webauthn-available-authenticators"
 msgid "Available Passkeys"
 msgstr "Claus de seguretat disponibles"
 
@@ -1889,10 +1891,12 @@ msgstr ""
 "o contacteu amb l''administrador."
 
 #: webauthn-doAuthenticate
+msgctxt "webauthn-doAuthenticate"
 msgid "Sign in with Passkey"
 msgstr "Entra amb una clau de seguretat"
 
 #: webauthn-createdAt-label
+msgctxt "webauthn-createdAt-label"
 msgid "Created"
 msgstr "Creada"
 
@@ -1936,6 +1940,38 @@ msgstr "El resultat del registre amb clau de seguretat no és vàlid.<br/>{0}"
 #: webauthn-error-user-not-found
 msgid "Unknown user authenticated by the Passkey."
 msgstr "L''usuari identificat per la clau de seguretat és desconegut."
+
+#.
+#. # Passkey
+#: passkey-login-title
+msgctxt "passkey-login-title"
+msgid "Passkey login"
+msgstr ""
+
+#: passkey-available-authenticators
+msgctxt "passkey-available-authenticators"
+msgid "Available Passkeys"
+msgstr ""
+
+#: passkey-unsupported-browser-text
+msgid ""
+"Passkey is not supported by this browser. Try another one or contact your "
+"administrator."
+msgstr ""
+
+#: passkey-doAuthenticate
+msgctxt "passkey-doAuthenticate"
+msgid "Sign in with Passkey"
+msgstr ""
+
+#: passkey-createdAt-label
+msgctxt "passkey-createdAt-label"
+msgid "Created"
+msgstr ""
+
+#: passkey-autofill-select
+msgid "Select your passkey"
+msgstr ""
 
 #.
 #. # Identity provider
