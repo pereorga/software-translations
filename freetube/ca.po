@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 08:02+0000\n"
+"POT-Creation-Date: 2024-05-27 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,6 +164,7 @@ msgstr ""
 #: Global-%3ELive
 msgctxt "Global->Live"
 "Global->Live"
+"Global->Live"
 msgid "Live"
 msgstr "En directe"
 
@@ -304,6 +305,52 @@ msgstr "Mitjans (4 - 20 minuts)"
 #: Search+Filters-%3EDuration-%3ELong+(%3E+20+minutes)
 msgid "Long (> 20 minutes)"
 msgstr "Llargs (> 20 minuts)"
+
+#: Search+Filters-%3EFeatures-%3EFeatures
+msgid "Features"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3EHD
+msgid "HD"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3ESubtitles
+msgid "Subtitles"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3ECreative+Commons
+msgid "Creative Commons"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3E3D
+msgid "3D"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3ELive
+msgctxt "Search Filters->Features->Live"
+msgid "Live"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3E4K
+msgid "4K"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3E360+Video
+msgid "360 Video"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3ELocation
+msgctxt "Search Filters->Features->Location"
+msgid "Location"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3EHDR
+msgid "HDR"
+msgstr ""
+
+#: Search+Filters-%3EFeatures-%3EVR180
+msgid "VR180"
+msgstr ""
 
 #: Search+Filters-%3ESearch+Results
 msgid "Search Results"
@@ -575,8 +622,8 @@ msgstr ""
 msgid "Enable Quick Bookmark With This Playlist"
 msgstr ""
 
-#: User+Playlists-%3EDisable+Quick+Bookmark
-msgid "Disable Quick Bookmark"
+#: User+Playlists-%3EQuick+Bookmark+Enabled
+msgid "Quick Bookmark Enabled"
 msgstr ""
 
 #: User+Playlists-%3EAre+you+sure+you+want+to+remove+all+watched+videos+from+this+playlist%3F+This+cannot+be+undone
@@ -587,6 +634,10 @@ msgstr ""
 
 #: User+Playlists-%3EDelete+Playlist
 msgid "Delete Playlist"
+msgstr ""
+
+#: User+Playlists-%3ECannot+delete+the+quick+bookmark+target+playlist.
+msgid "Cannot delete the quick bookmark target playlist."
 msgstr ""
 
 #: User+Playlists-%3EAre+you+sure+you+want+to+delete+this+playlist%3F+This+cannot+be+undone
@@ -650,12 +701,12 @@ msgstr ""
 msgid "There was a problem with removing this video"
 msgstr ""
 
-#: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EThis+playlist+is+now+used+for+quick+bookmark
-msgid "This playlist is now used for quick bookmark"
+#: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EThis+playlist+is+already+being+used+for+quick+bookmark.
+msgid "This playlist is already being used for quick bookmark."
 msgstr ""
 
-#: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EQuick+bookmark+disabled
-msgid "Quick bookmark disabled"
+#: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EThis+playlist+is+now+used+for+quick+bookmark
+msgid "This playlist is now used for quick bookmark"
 msgstr ""
 
 #: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EThis+playlist+is+now+used+for+quick+bookmark+instead+of+%7BoldPlaylistName%7D.+Click+here+to+undo
@@ -699,6 +750,10 @@ msgstr ""
 
 #: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EPlaylist+%7BplaylistName%7D+has+been+deleted.
 msgid "Playlist {playlistName} has been deleted."
+msgstr ""
+
+#: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EPlaylist+%7BplaylistName%7D+is+the+new+quick+bookmark+playlist.
+msgid "Playlist {playlistName} is the new quick bookmark playlist."
 msgstr ""
 
 #: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EThis+playlist+does+not+exist
@@ -2469,6 +2524,7 @@ msgid "Joined"
 msgstr ""
 
 #: Channel-%3EAbout-%3ELocation
+msgctxt "Channel->About->Location"
 msgid "Location"
 msgstr ""
 
