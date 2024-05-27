@@ -184,6 +184,9 @@
             "motion_sensitivity": {
                 "name": "Sensibilitat del moviment"
             },
+            "pir_sensitivity": {
+                "name": "Sensibilitat del PIR"
+            },
             "volume": {
                 "name": "Volum"
             },
@@ -238,6 +241,20 @@
             }
         },
         "sensor": {
+            "battery_percent": {
+                "name": "Percentatge de bateria"
+            },
+            "battery_state": {
+                "name": "Estat de la bateria",
+                "state": {
+                    "chargecomplete": "C\u00e0rrega completa",
+                    "charging": "Carregant",
+                    "discharging": "Descarregant"
+                }
+            },
+            "battery_temperature": {
+                "name": "Temperatura de bateria"
+            },
             "event_connection": {
                 "name": "Connexi\u00f3 d'esdeveniments",
                 "state": {
@@ -279,6 +296,12 @@
             },
             "hdr": {
                 "name": "HDR"
+            },
+            "pir_enabled": {
+                "name": "PIR activat"
+            },
+            "pir_reduce_alarm": {
+                "name": "Redueix falses alarmes PIR"
             },
             "push_notifications": {
                 "name": "Notificacions 'push'"

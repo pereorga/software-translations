@@ -8,7 +8,8 @@
         "step": {
             "user": {
                 "data": {
-                    "api_key": "Clau API"
+                    "api_key": "Clau API",
+                    "llm_hass_api": "Controla Home Assistant"
                 }
             }
         }
@@ -17,8 +18,9 @@
         "step": {
             "init": {
                 "data": {
+                    "chat_model": "Model",
+                    "llm_hass_api": "Controla Home Assistant",
                     "model": "Model",
-                    "prompt": "Plantilla de sol\u00b7licitud",
                     "temperature": "Temperatura",
                     "top_k": "K superior",
                     "top_p": "P superior"

@@ -8,7 +8,8 @@
         "step": {
             "user": {
                 "data": {
-                    "api_key": "API key"
+                    "api_key": "API key",
+                    "llm_hass_api": "Control Home Assistant"
                 }
             }
         }
@@ -17,12 +18,20 @@
         "step": {
             "init": {
                 "data": {
+                    "chat_model": "Model",
+                    "llm_hass_api": "Control Home Assistant",
                     "max_tokens": "Maximum tokens to return in response",
                     "model": "Model",
-                    "prompt": "Prompt Template",
+                    "prompt": "Prompt",
+                    "recommended": "Recommended settings",
                     "temperature": "Temperature",
+                    "tone_prompt": "Tone",
                     "top_k": "Top K",
                     "top_p": "Top P"
+                },
+                "data_description": {
+                    "prompt": "Extra data to provide to the LLM. This can be a template.",
+                    "tone_prompt": "Instructions for the LLM on the style of the generated text. This can be a template."
                 }
             }
         }

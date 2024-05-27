@@ -23,11 +23,16 @@
         "step": {
             "init": {
                 "data": {
+                    "chat_model": "Model",
+                    "llm_hass_api": "Control Home Assistant",
                     "max_tokens": "Maximum tokens to return in response",
                     "model": "Completion Model",
-                    "prompt": "Prompt Template",
+                    "prompt": "Instructions",
                     "temperature": "Temperature",
                     "top_p": "Top P"
+                },
+                "data_description": {
+                    "prompt": "Instruct how the LLM should respond. This can be a template."
                 }
             }
         }
