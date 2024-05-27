@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-13 08:03+0000\n"
+"POT-Creation-Date: 2024-05-27 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7858,6 +7858,10 @@ msgstr ""
 msgid "This post has been removed"
 msgstr "Aquesta publicació s'ha eliminat"
 
+#: errors-%3Eattributes-%3Edescriptors-%3Einvalid_for_country
+msgid "is not valid for country %{country_code}"
+msgstr ""
+
 #: errors-%3Eattributes-%3Eiso_3166_1-%3Einvalid
 msgid "is not a valid country"
 msgstr "no és un país vàlid"
@@ -7865,6 +7869,10 @@ msgstr "no és un país vàlid"
 #: errors-%3Eattributes-%3Eiso_639_1-%3Einvalid
 msgid "is not a valid language"
 msgstr "no és una llengua vàlida"
+
+#: errors-%3Eattributes-%3Erelease_date-%3Eanachronism
+msgid "predates release type %{min_date}"
+msgstr ""
 
 #: errors-%3Eattributes-%3Erelease_date-%3Einvalid
 msgid "is not a valid date"
