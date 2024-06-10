@@ -1,4 +1,40 @@
 {
+    "common": {
+        "field_brightness_description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
+        "field_brightness_name": "Brightness value",
+        "field_brightness_pct_description": "Number indicating the percentage of full brightness, where 0 turns the light off, 1 is the minimum brightness, and 100 is the maximum brightness.",
+        "field_brightness_pct_name": "Brightness",
+        "field_brightness_step_description": "Change brightness by an amount.",
+        "field_brightness_step_name": "Brightness step value",
+        "field_brightness_step_pct_description": "Change brightness by a percentage.",
+        "field_brightness_step_pct_name": "Brightness step",
+        "field_color_name_description": "A human-readable color name.",
+        "field_color_name_name": "Color name",
+        "field_color_temp_description": "Color temperature in mireds.",
+        "field_color_temp_name": "Color temperature",
+        "field_effect_description": "Light effect.",
+        "field_effect_name": "Effect",
+        "field_flash_description": "Tell light to flash, can be either value short or long.",
+        "field_flash_name": "Flash",
+        "field_hs_color_description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
+        "field_hs_color_name": "Hue/Sat color",
+        "field_kelvin_description": "Color temperature in Kelvin.",
+        "field_kelvin_name": "Color temperature",
+        "field_profile_description": "Name of a light profile to use.",
+        "field_profile_name": "Profile",
+        "field_rgb_color_description": "The color in RGB format. A list of three integers between 0 and 255 representing the values of red, green, and blue.",
+        "field_rgb_color_name": "Color",
+        "field_rgbw_color_description": "The color in RGBW format. A list of four integers between 0 and 255 representing the values of red, green, blue, and white.",
+        "field_rgbw_color_name": "RGBW-color",
+        "field_rgbww_color_description": "The color in RGBWW format. A list of five integers between 0 and 255 representing the values of red, green, blue, cold white, and warm white.",
+        "field_rgbww_color_name": "RGBWW-color",
+        "field_transition_description": "Duration it takes to get to next state.",
+        "field_transition_name": "Transition",
+        "field_white_description": "Set the light to white mode.",
+        "field_white_name": "White",
+        "field_xy_color_description": "Color in XY-format. A list of two decimal numbers between 0 and 1.",
+        "field_xy_color_name": "XY-color"
+    },
     "device_automation": {
         "action_type": {
             "brightness_decrease": "Decrease {entity_name} brightness",
@@ -289,6 +325,14 @@
                 "rgb_color": {
                     "description": "The color in RGB format. A list of three integers between 0 and 255 representing the values of red, green, and blue.",
                     "name": "Color"
+                },
+                "rgbw_color": {
+                    "description": "The color in RGBW format. A list of four integers between 0 and 255 representing the values of red, green, blue, and white.",
+                    "name": "RGBW-color"
+                },
+                "rgbww_color": {
+                    "description": "The color in RGBWW format. A list of five integers between 0 and 255 representing the values of red, green, blue, cold white, and warm white.",
+                    "name": "RGBWW-color"
                 },
                 "transition": {
                     "description": "Duration it takes to get to next state.",

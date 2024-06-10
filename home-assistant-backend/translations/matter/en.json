@@ -62,9 +62,43 @@
                 }
             }
         },
+        "fan": {
+            "fan": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "high": "High",
+                            "low": "Low",
+                            "medium": "Medium",
+                            "natural_wind": "Natural wind",
+                            "sleep_wind": "Sleep wind"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
+            "activated_carbon_filter_condition": {
+                "name": "Activated carbon filter condition"
+            },
+            "air_quality": {
+                "name": "Air quality",
+                "state": {
+                    "extremely_poor": "Extremely poor",
+                    "fair": "Fair",
+                    "good": "Good",
+                    "moderate": "Moderate",
+                    "poor": "Poor",
+                    "unknown": "Unknown",
+                    "very_poor": "Very poor"
+                }
+            },
             "flow": {
                 "name": "Flow"
+            },
+            "hepa_filter_condition": {
+                "name": "Hepa filter condition"
             }
         }
     },

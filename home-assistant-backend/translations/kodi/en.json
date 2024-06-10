@@ -50,6 +50,17 @@
             "turn_on": "{entity_name} turned on"
         }
     },
+    "entity": {
+        "media_player": {
+            "media_player": {
+                "state_attributes": {
+                    "dynamic_range": {
+                        "name": "Dynamic range"
+                    }
+                }
+            }
+        }
+    },
     "services": {
         "add_to_playlist": {
             "description": "Adds music to the default playlist (i.e. playlistid=0).",

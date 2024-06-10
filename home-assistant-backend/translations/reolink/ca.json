@@ -32,55 +32,147 @@
     "entity": {
         "binary_sensor": {
             "animal": {
-                "name": "Animal"
+                "name": "Animal",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "animal_lens_0": {
-                "name": "Lent d'animals 0"
+                "name": "Lent d'animals 0",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "animal_lens_1": {
-                "name": "Lent d'animals 1"
+                "name": "Lent d'animals 1",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "face": {
-                "name": "Cara"
+                "name": "Cara",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "face_lens_0": {
-                "name": "Lent de cares 0"
+                "name": "Lent de cares 0",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "face_lens_1": {
-                "name": "Lent de cares 1"
+                "name": "Lent de cares 1",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "motion_lens_0": {
-                "name": "Lent de moviment 0"
+                "name": "Lent de moviment 0",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "motion_lens_1": {
-                "name": "Lent de moviment 1"
+                "name": "Lent de moviment 1",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "package": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "package_lens_0": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "package_lens_1": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "person": {
-                "name": "Persona"
+                "name": "Persona",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "person_lens_0": {
-                "name": "Lent de persones 0"
+                "name": "Lent de persones 0",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "person_lens_1": {
-                "name": "Lent de persones 1"
+                "name": "Lent de persones 1",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "pet": {
-                "name": "Mascota"
+                "name": "Mascota",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "pet_lens_0": {
-                "name": "Lent de mascotes 0"
+                "name": "Lent de mascotes 0",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "pet_lens_1": {
-                "name": "Lent de mascotes 1"
+                "name": "Lent de mascotes 1",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "sleep": {
+                "state": {
+                    "off": "Despert",
+                    "on": "Dormint"
+                }
             },
             "vehicle": {
-                "name": "Vehicle"
+                "name": "Vehicle",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "vehicle_lens_0": {
-                "name": "Lent de vehicles 0"
+                "name": "Lent de vehicles 0",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "vehicle_lens_1": {
-                "name": "Lent de vehicles 1"
+                "name": "Lent de vehicles 1",
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
             },
             "visitor": {
                 "name": "Visitant"
@@ -215,6 +307,13 @@
                     "auto": "Autom\u00e0tic",
                     "blackwhite": "Blanc i negre",
                     "color": "Color"
+                }
+            },
+            "doorbell_led": {
+                "name": "LED del timbre",
+                "state": {
+                    "alwayson": "Sempre enc\u00e8s",
+                    "alwaysonatnight": "Autom\u00e0tic i sempre enc\u00e8s a la nit"
                 }
             },
             "floodlight_mode": {

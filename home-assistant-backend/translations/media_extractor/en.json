@@ -1,7 +1,14 @@
 {
+    "config": {
+        "step": {
+            "user": {
+                "description": "Do you want to start setup?"
+            }
+        }
+    },
     "services": {
         "extract_media_url": {
-            "description": "Extract media url from a service.",
+            "description": "Extract media URL from a service.",
             "fields": {
                 "format_query": {
                     "description": "Youtube-dl query to select the quality of the result.",

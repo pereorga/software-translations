@@ -1,0 +1,67 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "invalid_version": "This firmware version is unsupported. Please upgrade the firmware of the device to at least version 3.1.1."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{model}",
+        "step": {
+            "discovery_confirm": {
+                "description": "Do you want to setup {model}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the Airgradient device."
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "configuration_control": {
+                "name": "Configuration source",
+                "state": {
+                    "both": "Both",
+                    "cloud": "Cloud",
+                    "local": "Local"
+                }
+            },
+            "display_temperature_unit": {
+                "name": "Display temperature unit",
+                "state": {
+                    "c": "Celsius",
+                    "f": "Fahrenheit"
+                }
+            }
+        },
+        "sensor": {
+            "nitrogen_index": {
+                "name": "Nitrogen index"
+            },
+            "pm003_count": {
+                "name": "PM0.3"
+            },
+            "raw_nitrogen": {
+                "name": "Raw nitrogen"
+            },
+            "raw_total_volatile_organic_component": {
+                "name": "Raw total VOC"
+            },
+            "total_volatile_organic_component_index": {
+                "name": "Total VOC index"
+            }
+        }
+    },
+    "exceptions": {
+        "no_local_configuration": {
+            "message": "Device should be configured with local configuration to be able to change settings."
+        }
+    }
+}
