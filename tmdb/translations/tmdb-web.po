@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 08:04+0000\n"
+"POT-Creation-Date: 2024-06-10 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2573,7 +2573,7 @@ msgstr "Les llistes de l'usuari %{username}"
 #: accounts-%3Elists-%3Eno_lists-%3Elogged_in
 msgctxt "accounts->lists->no_lists->logged_in"
 msgid "You haven't created any lists."
-msgstr "No heu creat cap llista."
+msgstr "No teniu cap llista creada."
 
 #: accounts-%3Elists-%3Eno_lists-%3Epublic
 msgid "%{username} doesn't have any public lists to share."
@@ -7534,7 +7534,7 @@ msgstr "Aquest nom de personatge ja existeix, intenteu-ho amb un altre nom"
 
 #: edit_list-%3Eadd_edit_items
 msgid "Add/Edit Items"
-msgstr "Afegiu/Editeu elements"
+msgstr "Edició de títols"
 
 #: edit_list-%3Echoose_image
 msgid "Choose Image"
@@ -7542,11 +7542,11 @@ msgstr "Tria d'imatge"
 
 #: edit_list-%3Edelete_list
 msgid "Delete List"
-msgstr "Elimina la llista"
+msgstr "Esborrat de la llista"
 
 #: edit_list-%3Eedit_list
 msgid "Edit List"
-msgstr "Edita la llista"
+msgstr "Edició de la llista"
 
 #: edits
 msgid "edits"
@@ -13293,7 +13293,7 @@ msgstr "Seleccionada"
 
 #: list_info-%3Eitems_not_seen
 msgid "Items I Haven't Seen"
-msgstr "Elements que no he vist"
+msgstr "Títols que no he vist"
 
 #: list_info-%3Eitems_on_list-%3Emany
 msgctxt "list_info->items_on_list->many"
@@ -13302,16 +13302,16 @@ msgstr ""
 
 #: list_info-%3Eitems_on_list-%3Eone
 msgid "item on this list"
-msgstr "element en aquesta llista"
+msgstr "títol en aquesta llista"
 
 #: list_info-%3Eitems_on_list-%3Eother
 msgctxt "list_info->items_on_list->other"
 msgid "items on this list"
-msgstr "elements en aquesta llista"
+msgstr "títols en aquesta llista"
 
 #: list_info-%3Eitems_seen
 msgid "Items I Have Seen"
-msgstr "Elements que he vist"
+msgstr "Títols que he vist"
 
 #: list_info-%3Elist_by
 msgid "A list by"
@@ -13343,7 +13343,7 @@ msgstr "Selecciona aquesta imatge"
 
 #: list_info-%3Eshow_comments
 msgid "Show Comments"
-msgstr "Mostra els comentaris"
+msgstr "Ha de mostrar els comentaris?"
 
 #: list_info-%3Etotal_revenue
 msgid "Total Revenue"
@@ -13723,6 +13723,12 @@ msgstr "Bloca el repartiment"
 msgid "Lock Existing Crew"
 msgstr "Bloca l'equip"
 
+#: media-%3Eedit-%3Elogos
+msgctxt "media->edit->logos"
+"media->edit->logos"
+msgid "Logos"
+msgstr "Logotips"
+
 #: media-%3Eedit-%3Epage_title
 msgid "Edit %{name}"
 msgstr "Edita %{name}"
@@ -13879,6 +13885,11 @@ msgstr "La traducció al %{language} encara no s'ha creat."
 #: media-%3Eedit-%3Eunlock_all_appearances
 msgid "By clicking 'yes', you will be unlocking all of the existing records."
 msgstr "En clicar \"sí\" esteu desblocant tots els registres existents."
+
+#: media-%3Eedit-%3Eupload_logo
+msgctxt "media->edit->upload_logo"
+msgid "Upload a Logo"
+msgstr "Pugeu un logo"
 
 #: media-%3Eedit-%3Evideos-%3Elocked
 msgid "This video is locked."
@@ -14123,7 +14134,6 @@ msgstr "Noms alternatius"
 
 #: media-%3Enetwork-%3Eedit-%3Elogos
 msgctxt "media->network->edit->logos"
-"media->network->edit->logos"
 msgid "Logos"
 msgstr "Logotips"
 
@@ -14154,11 +14164,6 @@ msgctxt "media->network->edit->upload_logo"
 msgid "Upload a Logo"
 msgstr "Pugeu un logotip"
 
-#: media-%3Enetwork-%3Elogos
-msgctxt "media->network->logos"
-msgid "Logos"
-msgstr "Logotips"
-
 #: media-%3Enetwork-%3Ename
 msgctxt "media->network->name"
 msgid "Name"
@@ -14179,11 +14184,6 @@ msgstr "Resultats de la cadena"
 #: media-%3Enetwork-%3Etv_page_title
 msgid "TV Shows on %{name}"
 msgstr "Sèries a %{name}"
-
-#: media-%3Enetwork-%3Eupload_logo
-msgctxt "media->network->upload_logo"
-msgid "Upload a Logo"
-msgstr "Pugeu un logo"
 
 #: media-%3Eno_results_found-%3Emovie
 msgid "No movies found."
