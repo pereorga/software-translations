@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-27 08:03+0000\n"
+"POT-Creation-Date: 2024-06-17 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,7 +256,7 @@ msgstr "Esquemes"
 
 #: schematic.search
 msgid "Search schematics..."
-msgstr "Cerca esquemes..."
+msgstr "Cerca esquemes…"
 
 #: schematic.replace
 msgid "A schematic by that name already exists. Replace it?"
@@ -633,11 +633,11 @@ msgstr "[red]Incompatible"
 
 #: mod.blacklisted
 msgid "[red]Unsupported"
-msgstr "[red]Unsupported"
+msgstr "[red]No suportat"
 
 #: mod.unmetdependencies
 msgid "[red]Unmet Dependencies"
-msgstr "[red]Depèndencies sense resoldre"
+msgstr "[red]Dependències sense resoldre"
 
 #: mod.erroredcontent
 msgid "[red]Content Errors"
@@ -1592,7 +1592,7 @@ msgstr "Sobrevola"
 
 #: command.enterPayload
 msgid "Enter Payload Block"
-msgstr "Enter Payload Block"
+msgstr "Entra bloc"
 
 #: command.loadUnits
 msgid "Load Units"
@@ -1752,7 +1752,7 @@ msgstr ""
 
 #: commandmode.name
 msgid "[accent]Command Mode"
-msgstr "[accent]Command Mode"
+msgstr "[accent]Mode d’Ordres"
 
 #: commandmode.nounits
 msgid "[no units]"
@@ -2016,31 +2016,31 @@ msgstr "Objectius"
 
 #: editor.locales
 msgid "Locale Bundles"
-msgstr "Locale Bundles"
+msgstr "Paquet de traduccions"
 
 #: editor.worldprocessors
 msgid "World Processors"
-msgstr "World Processors"
+msgstr "Processadors integrats"
 
 #: editor.worldprocessors.editname
 msgid "Edit Name"
-msgstr "Edit Name"
+msgstr "Edita el nom"
 
 #: editor.worldprocessors.none
 msgid ""
 "[lightgray]No world processor blocks found!\n"
 "Add one in the map editor, or use the  Add button below."
 msgstr ""
-"[lightgray]No world processor blocks found!\n"
-"Add one in the map editor, or use the  Add button below."
+"[lightgray]No s’han trobat blocs de processadors integrats!\n"
+"Afegiu-ne un a l’editor de mapes o feu servir el botó  de sota."
 
 #: editor.worldprocessors.nospace
 msgid ""
 "No free space to place a world processor!\n"
 "Did you fill the map with structures? Why would you do this?"
 msgstr ""
-"No free space to place a world processor!\n"
-"Did you fill the map with structures? Why would you do this?"
+"No hi ha espai disponible per a posar un processador integrat!\n"
+"Potser el mapa està ple d’estructures."
 
 #: editor.worldprocessors.delete.confirm
 msgid ""
@@ -2048,9 +2048,9 @@ msgid ""
 "\n"
 "If it is surrounded by walls, it will be replaced by an environmental wall."
 msgstr ""
-"Are you sure you want to delete this world processor?\n"
+"Esteu segur que voleu esborrar aquest processador integrat?\n"
 "\n"
-"If it is surrounded by walls, it will be replaced by an environmental wall."
+"Si està envoltat de murs, es reemplaçarà per un mur mediambiental."
 
 #: editor.ingame
 msgid "Edit In-Game"
@@ -2233,7 +2233,7 @@ msgstr "Tipus"
 
 #: waves.search
 msgid "Search waves..."
-msgstr "Es busquen onades..."
+msgstr "Es busquen onades…"
 
 #: waves.filter
 msgid "Unit Filter"
@@ -2279,7 +2279,7 @@ msgstr "Variables"
 
 #: logic.clear.confirm
 msgid "Are you sure you want to clear all code from this processor?"
-msgstr "Are you sure you want to clear all code from this processor?"
+msgstr "Esteu segur que voleu esborrar tot el codi d’aquest processador?"
 
 #: logic.globals
 msgid "Built-in Variables"
@@ -2336,7 +2336,8 @@ msgstr ""
 
 #: editor.errorlocales
 msgid "Error reading invalid locale bundles."
-msgstr "Error reading invalid locale bundles."
+msgstr ""
+"S’ha produït un error mentre es llegia un paquet de traduccions no vàlid."
 
 #: editor.update
 msgid "Update"
@@ -2388,9 +2389,9 @@ msgid ""
 "\n"
 "[]Do you want to save them?"
 msgstr ""
-"[scarlet]You have unsaved changes!\n"
+"[scarlet]Teniu canvis sense desar!\n"
 "\n"
-"[]Do you want to save them?"
+"[]Voleu desar-los?"
 
 #: editor.saved
 msgid "Saved!"
@@ -2661,7 +2662,7 @@ msgstr "Terreny"
 
 #: filter.logic
 msgid "Logic"
-msgstr "Logic"
+msgstr "Lògica"
 
 #: filter.option.scale
 msgid "Scale"
@@ -2755,11 +2756,11 @@ msgstr "Percentil"
 
 #: filter.option.code
 msgid "Code"
-msgstr "Code"
+msgstr "Codi"
 
 #: filter.option.loop
 msgid "Loop"
-msgstr "Loop"
+msgstr "Bucle"
 
 #: locales.info
 msgid ""
@@ -2780,12 +2781,13 @@ msgid ""
 "format time\n"
 "[gray](where time is a separately calculated variable)"
 msgstr ""
-"Here, you can add locale bundles for specific languages to your map. In "
-"locale bundles, each property has a name and a value. These properties can "
-"be used by world processors and objectives using their names. They support "
-"text formatting (replacing placeholders with actual values).\n"
+"Aquí, podeu afegir paquets de traducció per a idiomes específics al vostre "
+"mapa. En els paquets de traducció, cada propietat té un nom i un valor. "
+"Aquestes propietats les poden fer servir els processadors integrats i els "
+"objectius, fent servir els seus noms. Suporten el format de text ("
+"reemplaçant els marcadors de posició amb els seus valors corresponents).\n"
 "\n"
-"[cyan]Example property:\n"
+"[cyan]Exemple de propietat:\n"
 "[]name: [accent]timer[]\n"
 "value: [accent]Example timer, time left: {0}[]\n"
 "\n"
@@ -2799,71 +2801,72 @@ msgstr ""
 
 #: locales.deletelocale
 msgid "Are you sure you want to delete this locale bundle?"
-msgstr "Are you sure you want to delete this locale bundle?"
+msgstr "Esteu segur que voleu esborrar aquesta traducció?"
 
 #: locales.applytoall
 msgid "Apply Changes To All Locales"
-msgstr "Apply Changes To All Locales"
+msgstr "Aplica els canvis a totes les traduccions"
 
 #: locales.addtoother
 msgid "Add To Other Locales"
-msgstr "Add To Other Locales"
+msgstr "Afegeix a les altres traduccions"
 
 #: locales.rollback
 msgid "Rollback to last applied"
-msgstr "Rollback to last applied"
+msgstr "Restableix a l’última aplicada"
 
 #: locales.filter
 msgid "Property filter"
-msgstr "Property filter"
+msgstr "Propietat per al filtre"
 
 #: locales.searchname
 msgid "Search name..."
-msgstr "Search name..."
+msgstr "Cerca el nom…"
 
 #: locales.searchvalue
 msgid "Search value..."
-msgstr "Search value..."
+msgstr "Cerca el valor…"
 
 #: locales.searchlocale
 msgid "Search locale..."
-msgstr "Search locale..."
+msgstr "Cerca la traducció…"
 
 #: locales.byname
 msgid "By name"
-msgstr "By name"
+msgstr "Per nom"
 
 #: locales.byvalue
 msgid "By value"
-msgstr "By value"
+msgstr "Per valor"
 
 #: locales.showcorrect
 msgid ""
 "Show properties that are present in all locales and have unique values "
 "everywhere"
 msgstr ""
-"Show properties that are present in all locales and have unique values "
-"everywhere"
+"Mostra les propietats que estan en totes les traduccions i tenen valors "
+"únics en totes"
 
 #: locales.showmissing
 msgid "Show properties that are missing in some locales"
-msgstr "Show properties that are missing in some locales"
+msgstr "Mostra les propietats que fan falta en algunes traduccions"
 
 #: locales.showsame
 msgid "Show properties that have same values in different locales"
-msgstr "Show properties that have same values in different locales"
+msgstr ""
+"Mostra les propietats que tenen els mateixos valors en traduccions diferents"
 
 #: locales.viewproperty
 msgid "View in all locales"
-msgstr "View in all locales"
+msgstr "Mostra en totes les traduccions"
 
 #: locales.viewing
 msgid "Viewing property \"{0}\""
-msgstr "Viewing property \"{0}\""
+msgstr "Es mostra la propietat «{0}»"
 
 #: locales.addicon
 msgid "Add Icon"
-msgstr "Add Icon"
+msgstr "Afegeix una icona"
 
 #: width
 msgid "Width:"
@@ -3093,7 +3096,7 @@ msgstr "Rectangle"
 
 #: marker.texture.name
 msgid "Texture"
-msgstr "Texture"
+msgstr "Textura"
 
 #: marker.background
 msgid "Background"
@@ -4087,7 +4090,7 @@ msgstr ""
 "bandes.\n"
 "Investigueu el [accent]cianogen[] per a poder crear unitats d’atac més "
 "fortes.\n"
-"Atenció: s’han detectat missils de llarg abast. Els missils es poden abatre "
+"Atenció: s’han detectat míssils de llarg abast. Els míssils es poden abatre "
 "abans que impactin contra el seu objectiu."
 
 #: sector.crossroads.description
@@ -4617,7 +4620,7 @@ msgstr "Ús de munició"
 
 #: stat.ammocapacity
 msgid "Ammo Capacity"
-msgstr "Ammo Capacity"
+msgstr "Capacitat de munició"
 
 #: stat.damagemultiplier
 msgid "Damage Multiplier"
@@ -4658,7 +4661,7 @@ msgstr "Camp de força"
 
 #: ability.forcefield.description
 msgid "Projects a force shield that absorbs bullets"
-msgstr "Projects a force shield that absorbs bullets"
+msgstr "Projecta un camp de força que absorbeix les bales."
 
 #: ability.repairfield
 msgid "Repair Field"
@@ -4666,7 +4669,7 @@ msgstr "Repara el camp de força"
 
 #: ability.repairfield.description
 msgid "Repairs nearby units"
-msgstr "Repairs nearby units"
+msgstr "Repara les unitats properes."
 
 #: ability.statusfield
 msgid "Status Field"
@@ -4674,7 +4677,7 @@ msgstr "Estat del camp"
 
 #: ability.statusfield.description
 msgid "Applies a status effect to nearby units"
-msgstr "Applies a status effect to nearby units"
+msgstr "Aplica un efecte d’estat a les unitats properes."
 
 #: ability.unitspawn
 msgid "Factory"
@@ -4682,7 +4685,7 @@ msgstr "Fàbrica"
 
 #: ability.unitspawn.description
 msgid "Constructs units"
-msgstr "Constructs units"
+msgstr "Construeix unitats."
 
 #: ability.shieldregenfield
 msgid "Shield Regen Field"
@@ -4690,7 +4693,7 @@ msgstr "Regenerador de camps de força"
 
 #: ability.shieldregenfield.description
 msgid "Regenerates shields of nearby units"
-msgstr "Regenerates shields of nearby units"
+msgstr "Regenera els escuts d’unitats properes."
 
 #: ability.movelightning
 msgid "Movement Lightning"
@@ -4698,15 +4701,15 @@ msgstr "Moviment llampec"
 
 #: ability.movelightning.description
 msgid "Releases lightning while moving"
-msgstr "Releases lightning while moving"
+msgstr "Solta un llamp mentre es mou."
 
 #: ability.armorplate
 msgid "Armor Plate"
-msgstr "Armor Plate"
+msgstr "Armadura de plaques"
 
 #: ability.armorplate.description
 msgid "Reduces damage taken while shooting"
-msgstr "Reduces damage taken while shooting"
+msgstr "Redueix el dany rebut mentre dispara."
 
 #: ability.shieldarc
 msgid "Shield Arc"
@@ -4714,15 +4717,15 @@ msgstr "Escut de descàrregues"
 
 #: ability.shieldarc.description
 msgid "Projects a force shield in an arc that absorbs bullets"
-msgstr "Projects a force shield in an arc that absorbs bullets"
+msgstr "Projecta un escut de força en un arc que absorbeix les bales."
 
 #: ability.suppressionfield
 msgid "Repair Suppression"
-msgstr "Regen Suppression Field"
+msgstr "Regenera el camp de supressió"
 
 #: ability.suppressionfield.description
 msgid "Stops nearby repair buildings"
-msgstr "Stops nearby repair buildings"
+msgstr "Para els edificis de reparació propers."
 
 #: ability.energyfield
 msgid "Energy Field"
@@ -4730,11 +4733,11 @@ msgstr "Camp de força"
 
 #: ability.energyfield.description
 msgid "Zaps nearby enemies"
-msgstr "Zaps nearby enemies"
+msgstr "Ataca els enemics propers."
 
 #: ability.energyfield.healdescription
 msgid "Zaps nearby enemies and heals allies"
-msgstr "Zaps nearby enemies and heals allies"
+msgstr "Ataca els enemics propers i cura els aliats."
 
 #: ability.regen
 msgid "Self Regeneration"
@@ -4742,79 +4745,79 @@ msgstr "Regeneració"
 
 #: ability.regen.description
 msgid "Regenerates own health over time"
-msgstr "Regenerates own health over time"
+msgstr "Regenera la seva salut amb el pas del temps."
 
 #: ability.liquidregen
 msgid "Liquid Absorption"
-msgstr "Liquid Absorption"
+msgstr "Absorció de líquids"
 
 #: ability.liquidregen.description
 msgid "Absorbs liquid to heal itself"
-msgstr "Absorbs liquid to heal itself"
+msgstr "Absorbeix líquids per a curar-se."
 
 #: ability.spawndeath
 msgid "Death Spawns"
-msgstr "Death Spawns"
+msgstr "Aparicions mortals"
 
 #: ability.spawndeath.description
 msgid "Releases units on death"
-msgstr "Releases units on death"
+msgstr "Allibera unitats quan mor."
 
 #: ability.liquidexplode
 msgid "Death Spillage"
-msgstr "Death Spillage"
+msgstr "Vessament mortal"
 
 #: ability.liquidexplode.description
 msgid "Spills liquid on death"
-msgstr "Spills liquid on death"
+msgstr "Vessa líquid quan mor."
 
 #: ability.stat.firingrate
 msgid "[stat]{0}/sec[lightgray] firing rate"
-msgstr "[stat]{0}/sec[lightgray] firing rate"
+msgstr "[stat]{0}/seg[lightgray] de cadència de tir"
 
 #: ability.stat.regen
 msgid "[stat]{0}[lightgray] health/sec"
-msgstr "[stat]{0}[lightgray] health/sec"
+msgstr "[stat]{0}[lightgray] de salut/seg"
 
 #: ability.stat.shield
 msgid "[stat]{0}[lightgray] shield"
-msgstr "[stat]{0}[lightgray] shield"
+msgstr "[stat]{0}[lightgray] d’escut"
 
 #: ability.stat.repairspeed
 msgid "[stat]{0}/sec[lightgray] repair speed"
-msgstr "[stat]{0}/sec[lightgray] repair speed"
+msgstr "[stat]{0}/seg[lightgray] de velocitat de reparació"
 
 #: ability.stat.slurpheal
 msgid "[stat]{0}[lightgray] health/liquid unit"
-msgstr "[stat]{0}[lightgray] health/liquid unit"
+msgstr "[stat]{0}[lightgray] de salut/unitat de líquid"
 
 #: ability.stat.cooldown
 msgid "[stat]{0} sec[lightgray] cooldown"
-msgstr "[stat]{0} sec[lightgray] cooldown"
+msgstr "[stat]{0} seg[lightgray] de temps de refredament"
 
 #: ability.stat.maxtargets
 msgid "[stat]{0}[lightgray] max targets"
-msgstr "[stat]{0}[lightgray] max targets"
+msgstr "[stat]{0}[lightgray] objectius com a màxim"
 
 #: ability.stat.sametypehealmultiplier
 msgid "[stat]{0}%[lightgray] same type repair amount"
-msgstr "[stat]{0}%[lightgray] same type repair amount"
+msgstr "[stat]{0} %[lightgray] a la quantitat de reparació del mateix tipus"
 
 #: ability.stat.damagereduction
 msgid "[stat]{0}%[lightgray] damage reduction"
-msgstr "[stat]{0}%[lightgray] damage reduction"
+msgstr "[stat]{0} %[lightgray] de reducció del dany"
 
 #: ability.stat.minspeed
 msgid "[stat]{0} tiles/sec[lightgray] min speed"
-msgstr "[stat]{0} tiles/sec[lightgray] min speed"
+msgstr "[stat]{0} caselles/seg[lightgray] de velocitat mín."
 
 #: ability.stat.duration
 msgid "[stat]{0} sec[lightgray] duration"
-msgstr "[stat]{0} sec[lightgray] duration"
+msgstr "[stat]{0} seg[lightgray] de duració"
 
 #: ability.stat.buildtime
 msgid "[stat]{0} sec[lightgray] build time"
-msgstr "[stat]{0} sec[lightgray] build time"
+msgstr "[stat]{0} seg[lightgray] de temps de construcció"
 
 #: bar.onlycoredeposit
 msgid "Only Core Depositing Allowed"
@@ -4965,7 +4968,7 @@ msgstr "[stat]perforador d’armadures"
 
 #: bullet.maxdamagefraction
 msgid "[stat]{0}%[lightgray] damage limit"
-msgstr "[stat]{0}%[lightgray] damage limit"
+msgstr "[stat]{0}%[lightgray] de dany límit"
 
 #: bullet.suppression
 msgid ""
@@ -5109,7 +5112,7 @@ msgstr "kM"
 
 #: unit.shots
 msgid "shots"
-msgstr "shots"
+msgstr "dispars"
 
 #: unit.pershot
 msgid "/shot"
@@ -5621,43 +5624,43 @@ msgstr "Comportament: Senzill"
 
 #: keybind.unit_command_move.name
 msgid "Unit Command: Move"
-msgstr "Unit Command: Move"
+msgstr "Ordre d’unitat: Mou"
 
 #: keybind.unit_command_repair.name
 msgid "Unit Command: Repair"
-msgstr "Unit Command: Repair"
+msgstr "Ordre d’unitat: Repara"
 
 #: keybind.unit_command_rebuild.name
 msgid "Unit Command: Rebuild"
-msgstr "Unit Command: Rebuild"
+msgstr "Ordre d’unitat: Reconstrueix"
 
 #: keybind.unit_command_assist.name
 msgid "Unit Command: Assist"
-msgstr "Unit Command: Assist"
+msgstr "Ordre d’unitat: Assisteix"
 
 #: keybind.unit_command_mine.name
 msgid "Unit Command: Mine"
-msgstr "Unit Command: Mine"
+msgstr "Ordre d’unitat: Extrau"
 
 #: keybind.unit_command_boost.name
 msgid "Unit Command: Boost"
-msgstr "Unit Command: Boost"
+msgstr "Ordre d’unitat: Sobrevola"
 
 #: keybind.unit_command_load_units.name
 msgid "Unit Command: Load Units"
-msgstr "Unit Command: Load Units"
+msgstr "Ordre d’unitat: Carrega unitats"
 
 #: keybind.unit_command_load_blocks.name
 msgid "Unit Command: Load Blocks"
-msgstr "Unit Command: Load Blocks"
+msgstr "Ordre d’unitat: Carrega blocs"
 
 #: keybind.unit_command_unload_payload.name
 msgid "Unit Command: Unload Payload"
-msgstr "Unit Command: Unload Payload"
+msgstr "Ordre d’unitat: Descarrega blocs"
 
 #: keybind.unit_command_enter_payload.name
 msgid "Unit Command: Enter Payload"
-msgstr "Unit Command: Enter Payload"
+msgstr "Ordre d’unitat: Entra blocs"
 
 #: keybind.rebuild_select.name
 msgid "Rebuild Region"
@@ -5947,7 +5950,7 @@ msgstr "Al nucli només es poden dipositar recursos"
 
 #: rules.derelictrepair
 msgid "Allow Derelict Block Repair"
-msgstr "Allow Derelict Block Repair"
+msgstr "Permet la reparació dels blocs en ruïnes"
 
 #: rules.reactorexplosions
 msgid "Reactor Explosions"
@@ -5977,6 +5980,10 @@ msgstr "Enviament d’onades"
 msgctxt "rules.waves"
 msgid "Waves"
 msgstr "Onades"
+
+#: rules.airUseSpawns
+msgid "Air units use spawn points"
+msgstr "Air units use spawn points"
 
 #: rules.attack
 msgid "Attack Mode"
@@ -6064,7 +6071,7 @@ msgstr "Els nuclis contribueixen al límit d’unitats"
 
 #: rules.unitpayloadsexplode
 msgid "Carried Payloads Explode With The Unit"
-msgstr "Carried Payloads Explode With The Unit"
+msgstr "Els blocs carregats exploten juntament amb la unitat"
 
 #: rules.unitcap
 msgid "Base Unit Cap"
@@ -6204,13 +6211,15 @@ msgid ""
 "place a turret, the range is increased, so the turret will not be able to "
 "reach the enemy."
 msgstr ""
-"Prevents players from placing anything near enemy buildings. When trying to "
-"place a turret, the range is increased, so the turret will not be able to "
-"reach the enemy."
+"No es permet que els jugadors puguin posar res a prop dels edificis enemics. "
+"Quan s’intenta posar una torreta, l’abast augmenta i la torreta no podrà "
+"arribar a l’enemic."
 
 #: rules.onlydepositcore.info
 msgid "Prevents units from depositing items into any buildings except cores."
-msgstr "Prevents units from depositing items into any buildings except cores."
+msgstr ""
+"No es permet que les unitats deixin elements a dins dels edificis excepte "
+"els nuclis."
 
 #: content.item.name
 msgctxt "content.item.name"
@@ -8143,7 +8152,7 @@ msgstr "Maligne"
 
 #: block.flux-reactor.name
 msgid "Flux Reactor"
-msgstr "Reactor de fluxe"
+msgstr "Reactor de flux"
 
 #: block.neoplasia-reactor.name
 msgid "Neoplasia Reactor"
@@ -8956,7 +8965,7 @@ msgstr ""
 "Les unitats s’han de transportar a l’altra banda del mur.\n"
 "Construïu dos [accent]transportadors de blocs a distància[], un a cada banda "
 "del mur.\n"
-"Per establir-hi un enllaç, seleccioneu-ne un i després seleecionant l’altre."
+"Per establir-hi un enllaç, seleccioneu-ne un i després seleccionant l’altre."
 
 #: split.container
 msgid ""
@@ -9088,7 +9097,7 @@ msgstr "S’empra en armes incendiàries i generadors a combustió."
 #. #Erekir
 #: item.beryllium.description
 msgid "Used in many types of construction and ammunition on Erekir."
-msgstr "S’empra en molts tipus de construccions i municó d’Erekir."
+msgstr "S’empra en molts tipus de construccions i munició d’Erekir."
 
 #: item.tungsten.description
 msgid ""
@@ -9106,7 +9115,7 @@ msgstr ""
 
 #: item.carbide.description
 msgid "Used in advanced structures, heavier units, and ammunition."
-msgstr "Es fa servir en estrutures avançades, unitats pesants i munició."
+msgstr "Es fa servir en estructures avançades, unitats pesants i munició."
 
 #: liquid.water.description
 msgid "Used for cooling machines and waste processing."
@@ -9171,7 +9180,7 @@ msgid ""
 "to any adjacent water-containing block it touches, damaging them in the "
 "process. Viscous."
 msgstr ""
-"Un subproducte biològic perillís del reactor de neoplàsia. S’estén de pressa "
+"Un subproducte biològic perillós del reactor de neoplàsia. S’estén de pressa "
 "a altres blocs adjacents que continguin aigua que toca, fent-los malbé. "
 "Viscós."
 
@@ -10975,7 +10984,7 @@ msgid ""
 "Fires long-range homing missiles at enemy targets. Can step over most "
 "terrain."
 msgstr ""
-"Dispara missils dirigits de llarg abast als objectius enemics. Pot travessar "
+"Dispara míssils dirigits de llarg abast als objectius enemics. Pot travessar "
 "la majoria de terrenys."
 
 #: unit.tecta.description
@@ -10983,7 +10992,7 @@ msgid ""
 "Fires homing plasma missiles at enemy targets. Protects itself with a "
 "directional shield. Can step over most terrain."
 msgstr ""
-"Dispara missils de plasma dirigits als objectius enemics. Es protegeix a si "
+"Dispara míssils de plasma dirigits als objectius enemics. Es protegeix a si "
 "mateix amb un escut direccional. Pot travessar la majoria de terrenys."
 
 #: unit.collaris.description
@@ -11016,7 +11025,7 @@ msgid ""
 "Fires long-range homing missiles at enemy targets. Suppresses enemy "
 "structure repair blocks. Only attacks ground targets."
 msgstr ""
-"Dispara missils de llarg abast dirigits als objectius enemics. Evita la "
+"Dispara míssils de llarg abast dirigits als objectius enemics. Evita la "
 "reparació de les estructures enemigues per part dels blocs de reparació."
 
 #: unit.disrupt.description
@@ -11024,7 +11033,7 @@ msgid ""
 "Fires long-range homing suppression missiles at enemy targets. Suppresses "
 "enemy structure repair blocks. Only attacks ground targets."
 msgstr ""
-"Dispara missils de llarg abast dirigits i supressors als objecius enemics. "
+"Dispara míssils de llarg abast dirigits i supressors als objectius enemics. "
 "Evita la reparació de les estructures enemigues per part dels blocs de "
 "reparació."
 
@@ -11077,10 +11086,10 @@ msgid ""
 "[accent]print \"test {0}\"\n"
 "format \"example\""
 msgstr ""
-"Replace next placeholder in text buffer with a value.\n"
-"Does not do anything if placeholder pattern is invalid.\n"
-"Placeholder pattern: \"{[accent]number 0-9[]}\"\n"
-"Example:\n"
+"Reemplaça el següent marcador de posició a la cua d’impressió amb un valor.\n"
+"No fa res si el patró del marcador no és vàlid.\n"
+"Patró del marcador: \"{[accent]número 0-9[]}\"\n"
+"Exemple:\n"
 "[accent]print \"test {0}\"\n"
 "format \"example\""
 
@@ -11196,11 +11205,11 @@ msgstr "Aplica o esborra un efecte d’estat d’una unitat."
 
 #: lst.weathersense
 msgid "Check if a type of weather is active."
-msgstr "Check if a type of weather is active."
+msgstr "Comprova si un tipus de temps meteorològics està actiu."
 
 #: lst.weatherset
 msgid "Set the current state of a type of weather."
-msgstr "Set the current state of a type of weather."
+msgstr "Estableix l’estat actual per a un tipus de temps meteorològic."
 
 #: lst.spawnwave
 msgid "Spawn a wave."
@@ -11263,7 +11272,7 @@ msgstr "Estableix una propietat d’una unitat o estructura."
 
 #: lst.effect
 msgid "Create a particle effect."
-msgstr "Crea un efecte de particula."
+msgstr "Crea un efecte de partícula."
 
 #: lst.sync
 msgid ""
@@ -11301,11 +11310,12 @@ msgid ""
 "If client is a mobile device, tries to print a property ending in \".mobile\""
 " first."
 msgstr ""
-"Add map locale property value to the text buffer.\n"
-"To set map locale bundles in map editor, check [accent]Map Info > Locale "
-"Bundles[].\n"
-"If client is a mobile device, tries to print a property ending in \".mobile\""
-" first."
+"Afegeix el valor d’una propietat de la traducció d’un mapa a la cua "
+"d’impressió.\n"
+"Per a establir paquets de traducció de mapes a l’editor de mapes, comproveu "
+"[accent]Informació del mapa > Paquets de traducció[].\n"
+"Si el client és un dispositiu mòbil, primer intenta imprimir una propietat "
+"que acabi en «.mobile»."
 
 #: lglobal.false
 msgid "0"
@@ -11321,55 +11331,57 @@ msgstr "null"
 
 #: lglobal.@pi
 msgid "The mathematical constant pi (3.141...)"
-msgstr "The mathematical constant pi (3.141...)"
+msgstr "La constant matemàtica pi (3.141…)"
 
 #: lglobal.@e
 msgid "The mathematical constant e (2.718...)"
-msgstr "The mathematical constant e (2.718...)"
+msgstr "La constant matemàtica e (2.718…)"
 
 #: lglobal.@degToRad
 msgid "Multiply by this number to convert degrees to radians"
-msgstr "Multiply by this number to convert degrees to radians"
+msgstr ""
+"Multiplica per aquest nombre per a convertir graus sexagesimals en radians."
 
 #: lglobal.@radToDeg
 msgid "Multiply by this number to convert radians to degrees"
-msgstr "Multiply by this number to convert radians to degrees"
+msgstr ""
+"Multiplica per aquest nombre per a convertir radians en graus sexagesimals."
 
 #: lglobal.@time
 msgid "Playtime of current save, in milliseconds"
-msgstr "Playtime of current save, in milliseconds"
+msgstr "Temps de joc de la partida actual, en mil·lisegons"
 
 #: lglobal.@tick
 msgid "Playtime of current save, in ticks (1 second = 60 ticks)"
-msgstr "Playtime of current save, in ticks (1 second = 60 ticks)"
+msgstr "Temps de joc de la partida actual, en tics (1 segon = 60 tics)"
 
 #: lglobal.@second
 msgid "Playtime of current save, in seconds"
-msgstr "Playtime of current save, in seconds"
+msgstr "Temps de joc de la partida actual, en segons"
 
 #: lglobal.@minute
 msgid "Playtime of current save, in minutes"
-msgstr "Playtime of current save, in minutes"
+msgstr "Temps de joc de la partida actual, en minuts"
 
 #: lglobal.@waveNumber
 msgid "Current wave number, if waves are enabled"
-msgstr "Current wave number, if waves are enabled"
+msgstr "Nombre de l’onada actual, si les onades estan activades"
 
 #: lglobal.@waveTime
 msgid "Countdown timer for waves, in seconds"
-msgstr "Countdown timer for waves, in seconds"
+msgstr "Comptador enrere de les onades, en segons"
 
 #: lglobal.@mapw
 msgid "Map width in tiles"
-msgstr "Map width in tiles"
+msgstr "Amplada del mapa en caselles"
 
 #: lglobal.@maph
 msgid "Map height in tiles"
-msgstr "Map height in tiles"
+msgstr "Alçària del mapa en caselles"
 
 #: lglobal.sectionMap
 msgid "Map"
-msgstr "Map"
+msgstr "Mapa"
 
 #: lglobal.sectionGeneral
 msgctxt "lglobal.sectionGeneral"
@@ -11378,11 +11390,11 @@ msgstr "General"
 
 #: lglobal.sectionNetwork
 msgid "Network/Clientside [World Processor Only]"
-msgstr "Network/Clientside [World Processor Only]"
+msgstr "Xarxa/Client [Només processador integrat]"
 
 #: lglobal.sectionProcessor
 msgid "Processor"
-msgstr "Processor"
+msgstr "Processador"
 
 #: lglobal.sectionLookup
 msgid "Lookup"
@@ -11390,89 +11402,91 @@ msgstr "Lookup"
 
 #: lglobal.@this
 msgid "The logic block executing the code"
-msgstr "The logic block executing the code"
+msgstr "El bloc lògic que executa el codi"
 
 #: lglobal.@thisx
 msgid "X coordinate of block executing the code"
-msgstr "X coordinate of block executing the code"
+msgstr "Coordenada X del bloc que executa el codi"
 
 #: lglobal.@thisy
 msgid "Y coordinate of block executing the code"
-msgstr "Y coordinate of block executing the code"
+msgstr "Coordenada Y del bloc que executa el codi"
 
 #: lglobal.@links
 msgid "Total number of blocks linked to this processors"
-msgstr "Total number of blocks linked to this processors"
+msgstr "Quantitat total de blocs enllaçats amb aquest processador"
 
 #: lglobal.@ipt
 msgid ""
 "Execution speed of the processor in instructions per tick (60 ticks = 1 "
 "second)"
 msgstr ""
-"Execution speed of the processor in instructions per tick (60 ticks = 1 "
-"second)"
+"Velocitat d’execució del processador en instruccions per tic (60 tics = 1 "
+"segon)"
 
 #: lglobal.@unitCount
 msgid ""
 "Total number of types of unit content in the game; used with the lookup "
 "instruction"
 msgstr ""
-"Total number of types of unit content in the game; used with the lookup "
-"instruction"
+"Nombre total de tipus de continguts d’unitat a la partida; es fa servir amb "
+"la instrucció lookup."
 
 #: lglobal.@blockCount
 msgid ""
 "Total number of types of block content in the game; used with the lookup "
 "instruction"
 msgstr ""
-"Total number of types of block content in the game; used with the lookup "
-"instruction"
+"Nombre total de tipus de continguts de bloc a la partida; es fa servir amb "
+"la instrucció lookup."
 
 #: lglobal.@itemCount
 msgid ""
 "Total number of types of item content in the game; used with the lookup "
 "instruction"
 msgstr ""
-"Total number of types of item content in the game; used with the lookup "
-"instruction"
+"Nombre total de tipus de continguts d’element a la partida; es fa servir amb "
+"la instrucció lookup."
 
 #: lglobal.@liquidCount
 msgid ""
 "Total number of types of liquid content in the game; used with the lookup "
 "instruction"
 msgstr ""
-"Total number of types of liquid content in the game; used with the lookup "
-"instruction"
+"Nombre total de tipus de continguts de líquid a la partida; es fa servir amb "
+"la instrucció lookup."
 
 #: lglobal.@server
 msgid ""
 "True if the code is running on a server or in singleplayer, false otherwise"
 msgstr ""
-"True if the code is running on a server or in singleplayer, false otherwise"
+"Cert si el codi s’executa en un servidor o en mode d’un sol jugador; fals "
+"altrament."
 
 #: lglobal.@client
 msgid "True if the code is running on a client connected to a server"
-msgstr "True if the code is running on a client connected to a server"
+msgstr "Cert si el codi s’executa en un client connectat a un servidor."
 
 #: lglobal.@clientLocale
 msgid "Locale of the client running the code. For example: en_US"
-msgstr "Locale of the client running the code. For example: en_US"
+msgstr "Traducció del client que executa el codi. Per exemple: en_US"
 
 #: lglobal.@clientUnit
 msgid "Unit of client running the code"
-msgstr "Unit of client running the code"
+msgstr "Unitat del client que executa el codi"
 
 #: lglobal.@clientName
 msgid "Player name of client running the code"
-msgstr "Player name of client running the code"
+msgstr "Nom del jugador del client que executa el codi"
 
 #: lglobal.@clientTeam
 msgid "Team ID of client running the code"
-msgstr "Team ID of client running the code"
+msgstr "Identificador de l’equip que executa el codi"
 
 #: lglobal.@clientMobile
 msgid "True if the client running the code is on mobile, false otherwise"
-msgstr "True is the client running the code is on mobile, false otherwise"
+msgstr ""
+"Cert si el client que executa el codi és un dispositiu mòbil; fals altrament."
 
 #: logic.nounitbuild
 msgid "[red]Unit building logic is not allowed here."
@@ -11555,8 +11569,8 @@ msgid ""
 "ID of a unit/block/item/liquid.\n"
 "This is the inverse of the lookup operation."
 msgstr ""
-"ID of a unit/block/item/liquid.\n"
-"This is the inverse of the lookup operation."
+"Identificador d’unitat/bloc/element/líquid.\n"
+"És l’invers de l’operació lookup."
 
 #: lcategory.unknown
 msgctxt "lcategory.unknown"
@@ -11678,8 +11692,8 @@ msgid ""
 "Only ASCII characters are allowed.\n"
 "Clears the print buffer."
 msgstr ""
-"Draws text from the print buffer.\n"
-"Clears the print buffer."
+"Dibuixa el text de la cua d’impressió.\n"
+"Esborra la cua d’impressió."
 
 #: lenum.always
 msgid "Always true."
@@ -12048,8 +12062,9 @@ msgid ""
 "Automatically pathfinds to the nearest enemy core or drop point.\n"
 "This is the same as standard wave enemy pathfinding."
 msgstr ""
-"Automatically pathfinds to the nearest enemy core or drop point.\n"
-"This is the same as standard wave enemy pathfinding."
+"Busca un camí automàticament fins al nucli enemic més proper o punt "
+"d’aterratge.\n"
+"És el mateix que el camí d'una onada enemiga estàndard."
 
 #: lenum.target
 msgid "Shoot a position."
@@ -12094,13 +12109,11 @@ msgstr "Construeix una estructura."
 
 #: lenum.getblock
 msgid ""
-"Fetch a building, floor and type at coordinates.\n"
-"Unit must be in range of position.\n"
-"Solid non-buildings will have the type [accent]@solid[]."
+"Fetch building, floor and block type at coordinates.\n"
+"Unit must be in range of the position, otherwise null is returned."
 msgstr ""
-"Obté un bloc i el seu tipus a les coordenades indicades.\n"
-"La posició escollida ha d’estar a l’abast de la unitat.\n"
-"Els blocs que no són construccions tindran el tipus [accent]@solid[]."
+"Fetch building, floor and block type at coordinates.\n"
+"Unit must be in range of the position, otherwise null is returned."
 
 #: lenum.within
 msgid "Check if unit is near a position."
