@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-10 08:02+0000\n"
+"POT-Creation-Date: 2024-06-17 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -630,6 +630,10 @@ msgstr ""
 msgid "Copy Playlist"
 msgstr ""
 
+#: User+Playlists-%3ERemove+Duplicate+Videos
+msgid "Remove Duplicate Videos"
+msgstr ""
+
 #: User+Playlists-%3ERemove+Watched+Videos
 msgid "Remove Watched Videos"
 msgstr ""
@@ -642,10 +646,18 @@ msgstr ""
 msgid "Quick Bookmark Enabled"
 msgstr ""
 
-#: User+Playlists-%3EAre+you+sure+you+want+to+remove+all+watched+videos+from+this+playlist%3F+This+cannot+be+undone
+#: User+Playlists-%3EAre+you+sure+you+want+to+remove+%7BplaylistItemCount%7D+duplicate+videos+from+this+playlist%3F+This+cannot+be+undone
 msgid ""
-"Are you sure you want to remove all watched videos from this playlist? This "
-"cannot be undone."
+"Are you sure you want to remove 1 duplicate video from this playlist? This "
+"cannot be undone. | Are you sure you want to remove {playlistItemCount} "
+"duplicate videos from this playlist? This cannot be undone."
+msgstr ""
+
+#: User+Playlists-%3EAre+you+sure+you+want+to+remove+%7BplaylistItemCount%7D+watched+videos+from+this+playlist%3F+This+cannot+be+undone
+msgid ""
+"Are you sure you want to remove 1 watched video from this playlist? This "
+"cannot be undone. | Are you sure you want to remove {playlistItemCount} "
+"watched videos from this playlist? This cannot be undone."
 msgstr ""
 
 #: User+Playlists-%3EDelete+Playlist
@@ -1594,6 +1606,10 @@ msgstr ""
 
 #: Settings-%3ESubscription+Settings-%3EOnly+Show+Latest+Video+for+Each+Channel
 msgid "Only Show Latest Video for Each Channel"
+msgstr ""
+
+#: Settings-%3ESubscription+Settings-%3EAvoid+Accidental+Unsubscription
+msgid "Avoid Accidental Unsubscription"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EDistraction+Free+Settings
