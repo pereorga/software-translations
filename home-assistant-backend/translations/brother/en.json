@@ -2,15 +2,26 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
+            "reconfigure_successful": "Re-configuration was successful",
             "unsupported_model": "This printer model is not supported."
         },
         "error": {
+            "another_device": "The IP address or hostname of another Brother printer was used.",
             "cannot_connect": "Failed to connect",
             "snmp_error": "SNMP server turned off or printer not supported.",
             "wrong_host": "Invalid hostname or IP address."
         },
         "flow_title": "{model} {serial_number}",
         "step": {
+            "reconfigure_confirm": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the Brother printer to control."
+                },
+                "description": "Update configuration for {printer_name}."
+            },
             "user": {
                 "data": {
                     "host": "Host",

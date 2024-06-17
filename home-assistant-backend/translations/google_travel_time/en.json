@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Location is already configured"
+            "already_configured": "Location is already configured",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -9,6 +10,14 @@
             "timeout_connect": "Timeout establishing connection"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key",
+                    "destination": "Destination",
+                    "origin": "Origin"
+                },
+                "description": "You can specify the origin and destination in the form of an address, latitude/longitude coordinates, or a Google place ID. When specifying the location using a Google place ID, the ID must be prefixed with `place_id:`."
+            },
             "user": {
                 "data": {
                     "api_key": "API key",

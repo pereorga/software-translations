@@ -34,12 +34,69 @@
     "entity": {
         "binary_sensor": {
             "fault": {
-                "name": "Fault"
+                "name": "Fault",
+                "state_attributes": {
+                    "fault_code": {
+                        "state": {
+                            "none": "None"
+                        }
+                    }
+                }
+            },
+            "is_burning": {
+                "name": "Burner"
+            },
+            "is_pumping": {
+                "name": "Pump"
+            },
+            "is_tapping": {
+                "name": "Hot water tap"
             }
         },
         "sensor": {
             "tap_temperature": {
                 "name": "Tap temperature"
+            }
+        },
+        "water_heater": {
+            "boiler": {
+                "state": {
+                    "boiler_ext": "Boiler external",
+                    "boiler_int": "Boiler internal",
+                    "buffer": "Buffer",
+                    "central_heating": "Central heating",
+                    "central_heating_rf": "Central heating rf",
+                    "cv_temperature_too_high_e1": "Temperature too high",
+                    "flame_detection_fault_e6": "Flame detection fault",
+                    "frost": "Frost protection",
+                    "gas_valve_relay_faulty_e29": "Gas valve relay faulty",
+                    "gas_valve_relay_faulty_e30": "Gas valve relay faulty",
+                    "incorrect_fan_speed_e8": "Incorrect fan speed",
+                    "no_flame_signal_e4": "No flame signal",
+                    "opentherm": "OpenTherm",
+                    "poor_flame_signal_e5": "Poor flame signal",
+                    "postrun_boyler": "Post run boiler",
+                    "postrun_ch": "Post run central heating",
+                    "s1_and_s2_interchanged_e2": "S1 and S2 interchanged",
+                    "sensor_fault_after_self_check_e0": "Sensor fault after self check",
+                    "sensor_fault_s1_e10": "Sensor fault S1",
+                    "sensor_fault_s1_e11": "Sensor fault S1",
+                    "sensor_fault_s1_e12": "Sensor fault S1",
+                    "sensor_fault_s1_e13": "Sensor fault S1",
+                    "sensor_fault_s1_e14": "Sensor fault S1",
+                    "sensor_fault_s2_e20": "Sensor fault S2",
+                    "sensor_fault_s2_e21": "Sensor fault S2",
+                    "sensor_fault_s2_e22": "Sensor fault S2",
+                    "sensor_fault_s2_e23": "Sensor fault S2",
+                    "sensor_fault_s2_e24": "Sensor fault S2",
+                    "sensor_test": "Sensor test",
+                    "service": "Service",
+                    "shortcut_outside_sensor_temperature_e27": "Shortcut outside sensor temperature",
+                    "standby": "Stand-by",
+                    "tapwater": "Tap water",
+                    "tapwater_int": "Tap water internal",
+                    "unknown": "Unknown"
+                }
             }
         }
     },

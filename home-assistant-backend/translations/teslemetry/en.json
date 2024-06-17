@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_access_token": "Invalid access token",
@@ -117,6 +120,9 @@
             }
         },
         "climate": {
+            "climate_state_cabin_overheat_protection": {
+                "name": "Cabin overheat protection"
+            },
             "driver_temp": {
                 "name": "Climate",
                 "state_attributes": {
@@ -465,6 +471,9 @@
         }
     },
     "exceptions": {
+        "invalid_cop_temp": {
+            "message": "Cabin overheat protection does not support that temperature"
+        },
         "no_cable": {
             "message": "Charge cable will lock automatically when connected"
         }

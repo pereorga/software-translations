@@ -106,5 +106,21 @@
         "send_message_timeout": {
             "message": "Timeout sending message with Tibber"
         }
+    },
+    "services": {
+        "get_prices": {
+            "description": "Get hourly energy prices from Tibber",
+            "fields": {
+                "end": {
+                    "description": "Specifies the date and time until which to retrieve prices. Defaults to the last hour of today if omitted.",
+                    "name": "End"
+                },
+                "start": {
+                    "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
+                    "name": "Start"
+                }
+            },
+            "name": "Get energy prices"
+        }
     }
 }

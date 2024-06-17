@@ -77,7 +77,11 @@
                 "name": "AC Charging Limit"
             },
             "charging_mode": {
-                "name": "Charging Mode"
+                "name": "Charging Mode",
+                "state": {
+                    "delayed_charging": "Delayed charging",
+                    "immediate_charging": "Immediate charging"
+                }
             }
         },
         "sensor": {
@@ -91,7 +95,21 @@
                 "name": "Charging start time"
             },
             "charging_status": {
-                "name": "Charging status"
+                "name": "Charging status",
+                "state": {
+                    "charging": "Charging",
+                    "complete": "Complete",
+                    "default": "Default",
+                    "error": "Error",
+                    "finished_fully_charged": "Finished, fully charged",
+                    "finished_not_full": "Finished, not full",
+                    "fully_charged": "Fully charged",
+                    "invalid": "Invalid",
+                    "not_charging": "Not charging",
+                    "plugged_in": "Plugged in",
+                    "target_reached": "Target reached",
+                    "waiting_for_charging": "Waiting for charging"
+                }
             },
             "charging_target": {
                 "name": "Charging target"

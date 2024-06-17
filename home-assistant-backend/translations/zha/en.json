@@ -185,11 +185,20 @@
             "hand_open": {
                 "name": "Opened by hand"
             },
+            "heat_required": {
+                "name": "Heat required"
+            },
             "ias_zone": {
                 "name": "IAS zone"
             },
             "linkage_alarm_state": {
                 "name": "Linkage alarm state"
+            },
+            "mounting_mode_active": {
+                "name": "Mounting mode active"
+            },
+            "preheat_status": {
+                "name": "Pre-heat status"
             },
             "replace_filter": {
                 "name": "Replace filter"
@@ -283,6 +292,12 @@
             "double_tap_up_level": {
                 "name": "Double tap up level"
             },
+            "exercise_trigger_time": {
+                "name": "Exercise start time"
+            },
+            "external_temperature_sensor": {
+                "name": "External temperature sensor"
+            },
             "filter_life_time": {
                 "name": "Filter life time"
             },
@@ -300,6 +315,9 @@
             },
             "load_level_indicator_timeout": {
                 "name": "Load level indicator timeout"
+            },
+            "load_room_mean": {
+                "name": "Load room mean"
             },
             "local_temperature_calibration": {
                 "name": "Local temperature offset"
@@ -352,6 +370,9 @@
             "ramp_rate_on_to_off_remote": {
                 "name": "Remote ramp rate on to off"
             },
+            "regulation_setpoint_offset": {
+                "name": "Regulation setpoint offset"
+            },
             "serving_size": {
                 "name": "Serving to dispense"
             },
@@ -369,6 +390,9 @@
             }
         },
         "select": {
+            "adaptation_run_command": {
+                "name": "Adaptation run command"
+            },
             "approach_distance": {
                 "name": "Approach distance"
             },
@@ -395,6 +419,9 @@
             },
             "detection_sensitivity": {
                 "name": "Detection Sensitivity"
+            },
+            "exercise_day_of_week": {
+                "name": "Exercise day of the week"
             },
             "feeding_mode": {
                 "name": "Mode"
@@ -423,6 +450,9 @@
             "preset": {
                 "name": "Preset"
             },
+            "setpoint_response_time": {
+                "name": "Setpoint response time"
+            },
             "smart_fan_led_display_levels": {
                 "name": "Smart fan led display levels"
             },
@@ -435,6 +465,12 @@
             "switch_type": {
                 "name": "Switch type"
             },
+            "valve_orientation": {
+                "name": "Valve orientation"
+            },
+            "viewing_direction": {
+                "name": "Viewing direction"
+            },
             "window_covering_mode": {
                 "name": "Curtain mode"
             }
@@ -442,6 +478,24 @@
         "sensor": {
             "ac_frequency": {
                 "name": "AC frequency"
+            },
+            "adaptation_run_status": {
+                "name": "Adaptation run status",
+                "state": {
+                    "nothing": "Idle",
+                    "something": "State"
+                },
+                "state_attributes": {
+                    "in_progress": {
+                        "name": "In progress"
+                    },
+                    "run_successful": {
+                        "name": "Run successful"
+                    },
+                    "valve_characteristic_lost": {
+                        "name": "Valve characteristic lost"
+                    }
+                }
             },
             "analog_input": {
                 "name": "Analog input"
@@ -479,8 +533,17 @@
             "leaf_wetness": {
                 "name": "Leaf wetness"
             },
+            "load_estimate": {
+                "name": "Load estimate"
+            },
             "lqi": {
                 "name": "LQI"
+            },
+            "motor_stepcount": {
+                "name": "Motor stepcount"
+            },
+            "open_window_detected": {
+                "name": "Open window detected"
             },
             "pi_heating_demand": {
                 "name": "Pi heating demand"
@@ -491,6 +554,9 @@
             "power_source": {
                 "name": "Power source"
             },
+            "preheat_time": {
+                "name": "Pre-heat time"
+            },
             "rssi": {
                 "name": "RSSI"
             },
@@ -499,6 +565,48 @@
             },
             "smoke_density": {
                 "name": "Smoke density"
+            },
+            "software_error": {
+                "name": "Software error",
+                "state": {
+                    "nothing": "Good",
+                    "something": "Error"
+                },
+                "state_attributes": {
+                    "critical_low_battery": {
+                        "name": "Critical low battery"
+                    },
+                    "encoder_jammed": {
+                        "name": "Encoder jammed"
+                    },
+                    "invalid_clock_information": {
+                        "name": "Invalid clock information"
+                    },
+                    "invalid_internal_communication": {
+                        "name": "Invalid internal communication"
+                    },
+                    "low_battery": {
+                        "name": "Low battery"
+                    },
+                    "motor_error": {
+                        "name": "Motor error"
+                    },
+                    "non_volatile_memory_error": {
+                        "name": "Non-volatile memory error"
+                    },
+                    "radio_communication_error": {
+                        "name": "Radio communication error"
+                    },
+                    "side_pcb_sensor_error": {
+                        "name": "Side PCB sensor error"
+                    },
+                    "top_pcb_sensor_error": {
+                        "name": "Top PCB sensor error"
+                    },
+                    "unknown_hw_error": {
+                        "name": "Unknown HW error"
+                    }
+                }
             },
             "soil_moisture": {
                 "name": "Soil moisture"
@@ -538,6 +646,9 @@
             }
         },
         "switch": {
+            "adaptation_run_enabled": {
+                "name": "Adaptation run enabled"
+            },
             "aux_switch_scenes": {
                 "name": "Aux switch scenes"
             },
@@ -565,11 +676,17 @@
             "double_tap_up_enabled": {
                 "name": "Double tap up enabled"
             },
+            "external_window_sensor": {
+                "name": "External window sensor"
+            },
             "firmware_progress_led": {
                 "name": "Firmware progress LED"
             },
             "heartbeat_indicator": {
                 "name": "Heartbeat indicator"
+            },
+            "heat_available": {
+                "name": "Heat available"
             },
             "hooks_locked": {
                 "name": "Hooks locked"
@@ -589,11 +706,17 @@
             "local_protection": {
                 "name": "Local protection"
             },
+            "mounting_mode": {
+                "name": "Mounting mode"
+            },
             "one_led_mode": {
                 "name": "Only 1 LED mode"
             },
             "power_outage_memory": {
                 "name": "Power outage memory"
+            },
+            "prioritize_external_temperature_sensor": {
+                "name": "Prioritize external temperature sensor"
             },
             "relay_click_in_on_off_mode": {
                 "name": "Disable relay click in on off mode"
@@ -609,6 +732,12 @@
             },
             "trigger_indicator": {
                 "name": "LED trigger indicator"
+            },
+            "use_internal_window_detection": {
+                "name": "Use internal window detection"
+            },
+            "use_load_balancing": {
+                "name": "Use load balancing"
             },
             "valve_detection": {
                 "name": "Valve detection"

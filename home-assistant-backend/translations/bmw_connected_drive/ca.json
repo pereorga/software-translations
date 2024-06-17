@@ -91,7 +91,21 @@
                 "name": "Hora d'inici de c\u00e0rrega"
             },
             "charging_status": {
-                "name": "Estat de la c\u00e0rrega"
+                "name": "Estat de la c\u00e0rrega",
+                "state": {
+                    "charging": "Carregant",
+                    "complete": "Completat",
+                    "default": "Predeterminat",
+                    "error": "Error",
+                    "finished_fully_charged": "Acabat, c\u00e0rrega completa",
+                    "finished_not_full": "Acabat, c\u00e0rrega parcial",
+                    "fully_charged": "Totalment carregat",
+                    "invalid": "Inv\u00e0lid",
+                    "not_charging": "No carregant",
+                    "plugged_in": "Endollat",
+                    "target_reached": "Objectiu assolit",
+                    "waiting_for_charging": "Esperant c\u00e0rrega"
+                }
             },
             "charging_target": {
                 "name": "Objectiu de c\u00e0rrega"

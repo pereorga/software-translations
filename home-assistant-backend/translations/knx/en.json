@@ -136,8 +136,24 @@
         }
     },
     "device_automation": {
+        "extra_fields": {
+            "destination": "Group addresses",
+            "group_value_read": "GroupValueRead",
+            "group_value_response": "GroupValueResponse",
+            "group_value_write": "GroupValueWrite",
+            "incoming": "Incoming",
+            "outgoing": "Outgoing"
+        },
+        "extra_fields_descriptions": {
+            "destination": "The trigger will listen to telegrams sent or received on these group addresses. If no address is selected, the trigger will fire for every group address.",
+            "group_value_read": "Listen on GroupValueRead telegrams.",
+            "group_value_response": "Listen on GroupValueResponse telegrams.",
+            "group_value_write": "Listen on GroupValueWrite telegrams.",
+            "incoming": "Listen on incoming telegrams.",
+            "outgoing": "Listen on outgoing telegrams."
+        },
         "trigger_type": {
-            "telegram": "Telegram sent or received"
+            "telegram": "Telegram"
         }
     },
     "entity": {
