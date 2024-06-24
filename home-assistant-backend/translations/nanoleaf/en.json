@@ -30,10 +30,27 @@
     },
     "device_automation": {
         "trigger_type": {
-            "swipe_down": "Swipe Down",
-            "swipe_left": "Swipe Left",
-            "swipe_right": "Swipe Right",
-            "swipe_up": "Swipe Up"
+            "swipe_down": "Swipe down",
+            "swipe_left": "Swipe left",
+            "swipe_right": "Swipe right",
+            "swipe_up": "Swipe up"
+        }
+    },
+    "entity": {
+        "event": {
+            "touch": {
+                "name": "Touch gesture",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "swipe_down": "Swipe down",
+                            "swipe_left": "Swipe left",
+                            "swipe_right": "Swipe right",
+                            "swipe_up": "Swipe up"
+                        }
+                    }
+                }
+            }
         }
     }
 }

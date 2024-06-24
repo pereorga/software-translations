@@ -45,7 +45,44 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "rain": {
+                "name": "Rain"
+            },
+            "water_freeze": {
+                "name": "Water freeze"
+            },
+            "water_leak": {
+                "name": "Water leak"
+            }
+        },
+        "climate": {
+            "thermostat": {
+                "name": "Thermostat"
+            }
+        },
+        "cover": {
+            "cover": {
+                "name": "Cover"
+            }
+        },
         "event": {
+            "button": {
+                "name": "Button",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "initial_press": "Initial press",
+                            "long_press": "Long press",
+                            "long_release": "Long release",
+                            "multi_press_complete": "Multi press complete",
+                            "multi_press_ongoing": "Multi press ongoing",
+                            "short_release": "Short release",
+                            "switch_latched": "Switch latched"
+                        }
+                    }
+                }
+            },
             "push": {
                 "state_attributes": {
                     "event_type": {
@@ -64,6 +101,7 @@
         },
         "fan": {
             "fan": {
+                "name": "Fan",
                 "state_attributes": {
                     "preset_mode": {
                         "state": {
@@ -76,6 +114,30 @@
                         }
                     }
                 }
+            }
+        },
+        "light": {
+            "light": {
+                "name": "Light"
+            }
+        },
+        "lock": {
+            "lock": {
+                "name": "Lock"
+            }
+        },
+        "number": {
+            "off_transition_time": {
+                "name": "Off transition time"
+            },
+            "on_level": {
+                "name": "On level"
+            },
+            "on_off_transition_time": {
+                "name": "On/Off transition time"
+            },
+            "on_transition_time": {
+                "name": "On transition time"
             }
         },
         "sensor": {
@@ -99,6 +161,14 @@
             },
             "hepa_filter_condition": {
                 "name": "Hepa filter condition"
+            }
+        },
+        "switch": {
+            "power": {
+                "name": "Power"
+            },
+            "switch": {
+                "name": "Switch"
             }
         }
     },

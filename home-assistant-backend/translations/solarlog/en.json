@@ -1,15 +1,24 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "already_configured": "Device is already configured",
-            "cannot_connect": "Failed to connect"
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "extended_data": "Get additional data from Solar-Log. Extended data is only accessible, if no password is set for the Solar-Log. Use at your own risk!"
+                },
+                "title": "Configure SolarLog"
+            },
             "user": {
                 "data": {
+                    "extended_data": "Get additional data from Solar-Log. Extended data is only accessible, if no password is set for the Solar-Log. Use at your own risk!",
                     "host": "Host",
                     "name": "The prefix to be used for your Solar-Log sensors"
                 },
@@ -60,6 +69,9 @@
             },
             "power_dc": {
                 "name": "Power DC"
+            },
+            "self_consumption_year": {
+                "name": "Self-consumption year"
             },
             "total_power": {
                 "name": "Installed peak power"

@@ -95,6 +95,9 @@
             "cloud_cover": {
                 "name": "Nuvolositat"
             },
+            "cloud_cover_day": {
+                "name": "Nuvolositat, dia {forecast_day}"
+            },
             "cloud_cover_day_0d": {
                 "name": "Nuvolositat, avui"
             },
@@ -109,6 +112,9 @@
             },
             "cloud_cover_day_4d": {
                 "name": "Nuvolositat, dia 4"
+            },
+            "cloud_cover_night": {
+                "name": "Nuvolositat, nit {forecast_day}"
             },
             "cloud_cover_night_0d": {
                 "name": "Nuvolositat, aquesta nit"
@@ -125,6 +131,9 @@
             "cloud_cover_night_4d": {
                 "name": "Nuvolositat, nit 4"
             },
+            "condition_day": {
+                "name": "Condici\u00f3, dia {forecast_day}"
+            },
             "condition_day_0d": {
                 "name": "Condici\u00f3, avui"
             },
@@ -139,6 +148,9 @@
             },
             "condition_day_4d": {
                 "name": "Condici\u00f3, dia 4"
+            },
+            "condition_night": {
+                "name": "Condici\u00f3, nit {forecast_day}"
             },
             "condition_night_0d": {
                 "name": "Condici\u00f3, aquesta nit"
@@ -159,6 +171,7 @@
                 "name": "Punt de rosada"
             },
             "grass_pollen": {
+                "name": "Pol\u00b7len (de gespa), dia {forecast_day}",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -253,6 +266,9 @@
                     }
                 }
             },
+            "hours_of_sun": {
+                "name": "Hores de sol, dia {forecast_day}"
+            },
             "hours_of_sun_0d": {
                 "name": "Hores de sol, avui"
             },
@@ -269,6 +285,7 @@
                 "name": "Hores de sol, dia 4"
             },
             "mold_pollen": {
+                "name": "Espores (fongs), dia {forecast_day}",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -375,6 +392,7 @@
                 }
             },
             "ragweed_pollen": {
+                "name": "Pol\u00b7len d'ambr\u00f2sia, dia {forecast_day}",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -472,6 +490,9 @@
             "realfeel_temperature": {
                 "name": "Temperatura RealFeel"
             },
+            "realfeel_temperature_max": {
+                "name": "Temperatura RealFeel m\u00e0xima, dia {forecast_day}"
+            },
             "realfeel_temperature_max_0d": {
                 "name": "Temperatura RealFeel m\u00e0xima, avui"
             },
@@ -486,6 +507,9 @@
             },
             "realfeel_temperature_max_4d": {
                 "name": "Temperatura RealFeel m\u00e0xima, dia 4"
+            },
+            "realfeel_temperature_min": {
+                "name": "Temperatura RealFeel m\u00ednima, dia {forecast_day}"
             },
             "realfeel_temperature_min_0d": {
                 "name": "Temperatura RealFeel m\u00ednima, avui"
@@ -505,6 +529,9 @@
             "realfeel_temperature_shade": {
                 "name": "Temperatura RealFeel a l'ombra"
             },
+            "realfeel_temperature_shade_max": {
+                "name": "Temperatura RealFeel a l'ombra m\u00e0xima, dia {forecast_day}"
+            },
             "realfeel_temperature_shade_max_0d": {
                 "name": "Temperatura RealFeel a l'ombra m\u00e0xima, avui"
             },
@@ -519,6 +546,9 @@
             },
             "realfeel_temperature_shade_max_4d": {
                 "name": "Temperatura RealFeel a l'ombra m\u00e0xima, dia 4"
+            },
+            "realfeel_temperature_shade_min": {
+                "name": "Temperatura RealFeel a l'ombra m\u00ednima, dia {forecast_day}"
             },
             "realfeel_temperature_shade_min_0d": {
                 "name": "Temperatura RealFeel a l'ombra m\u00ednima, avui"
@@ -535,6 +565,9 @@
             "realfeel_temperature_shade_min_4d": {
                 "name": "Temperatura RealFeel a l'ombra m\u00ednima, dia 4"
             },
+            "solar_irradiance_day": {
+                "name": "Irradi\u00e0ncia solar, dia {forecast_day}"
+            },
             "solar_irradiance_day_0d": {
                 "name": "Irradi\u00e0ncia solar, avui"
             },
@@ -549,6 +582,9 @@
             },
             "solar_irradiance_day_4d": {
                 "name": "Irradi\u00e0ncia solar, dia 4"
+            },
+            "solar_irradiance_night": {
+                "name": "Irradi\u00e0ncia solar, nit {forecast_day}"
             },
             "solar_irradiance_night_0d": {
                 "name": "Irradi\u00e0ncia solar, aquesta nit"
@@ -565,6 +601,9 @@
             "solar_irradiance_night_4d": {
                 "name": "Irradi\u00e0ncia solar, nit 4"
             },
+            "thunderstorm_probability_day": {
+                "name": "Probabilitat de tempesta, dia {forecast_day}"
+            },
             "thunderstorm_probability_day_0d": {
                 "name": "Probabilitat de tempesta, avui"
             },
@@ -579,6 +618,9 @@
             },
             "thunderstorm_probability_day_4d": {
                 "name": "Probabilitat de tempesta, dia 4"
+            },
+            "thunderstorm_probability_night": {
+                "name": "Probabilitat de tempesta, nit {forecast_day}"
             },
             "thunderstorm_probability_night_0d": {
                 "name": "Probabilitat de tempesta, aquesta nit"
@@ -596,6 +638,7 @@
                 "name": "Probabilitat de tempesta, nit 4"
             },
             "tree_pollen": {
+                "name": "Pol\u00b7len (d'arbres), dia {forecast_day}",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -787,6 +830,7 @@
                 }
             },
             "uv_index_forecast": {
+                "name": "\u00cdndex UV, dia {forecast_day}",
                 "state_attributes": {
                     "level": {
                         "name": "Nivell",
@@ -810,6 +854,9 @@
             "wind_gust_speed": {
                 "name": "Velocitat de les r\u00e0fegues de vent"
             },
+            "wind_gust_speed_day": {
+                "name": "Velocitat de r\u00e0fegues de vent, dia {forecast_day}"
+            },
             "wind_gust_speed_day_0d": {
                 "name": "Velocitat de r\u00e0fegues de vent, avui"
             },
@@ -824,6 +871,9 @@
             },
             "wind_gust_speed_day_4d": {
                 "name": "Velocitat de r\u00e0fegues de vent, dia 4"
+            },
+            "wind_gust_speed_night": {
+                "name": "Velocitat de r\u00e0fegues de vent, nit {forecast_day}"
             },
             "wind_gust_speed_night_0d": {
                 "name": "Velocitat de r\u00e0fegues de vent, aquesta nit"
@@ -843,6 +893,9 @@
             "wind_speed": {
                 "name": "Velocitat del vent"
             },
+            "wind_speed_day": {
+                "name": "Velocitat del vent, dia {forecast_day}"
+            },
             "wind_speed_day_0d": {
                 "name": "Velocitat del vent, avui"
             },
@@ -857,6 +910,9 @@
             },
             "wind_speed_day_4d": {
                 "name": "Velocitat del vent, dia 4"
+            },
+            "wind_speed_night": {
+                "name": "Velocitat del vent, nit {forecast_day}"
             },
             "wind_speed_night_0d": {
                 "name": "Velocitat del vent, aquesta nit"

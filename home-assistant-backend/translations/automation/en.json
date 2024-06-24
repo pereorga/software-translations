@@ -1,4 +1,7 @@
 {
+    "common": {
+        "validation_failed_title": "Automation {name} failed to set up"
+    },
     "entity_component": {
         "_": {
             "name": "Automation",
@@ -42,6 +45,26 @@
                 }
             },
             "title": "{name} uses an unknown service"
+        },
+        "validation_failed_actions": {
+            "description": "The automation \"{name}\" (`{entity_id}`) is not active because its actions could not be set up.\n\nError:`{error}`.\n\nTo fix this error, [edit the automation]({edit}) to correct it, then save and reload the automation configuration.",
+            "title": "Automation {name} failed to set up"
+        },
+        "validation_failed_blueprint": {
+            "description": "The blueprinted automation \"{name}\" (`{entity_id}`) failed to set up.\n\nError:`{error}`.\n\nTo fix this error, [edit the automation]({edit}) to correct it, then save and reload the automation configuration.",
+            "title": "Automation {name} failed to set up"
+        },
+        "validation_failed_conditions": {
+            "description": "The automation \"{name}\" (`{entity_id}`) is not active because its conditions could not be set up.\n\nError:`{error}`.\n\nTo fix this error, [edit the automation]({edit}) to correct it, then save and reload the automation configuration.",
+            "title": "Automation {name} failed to set up"
+        },
+        "validation_failed_schema": {
+            "description": "The automation \"{name}\" (`{entity_id}`) is not active because the configuration has errors.\n\nError:`{error}`.\n\nTo fix this error, [edit the automation]({edit}) to correct it, then save and reload the automation configuration.",
+            "title": "Automation {name} failed to set up"
+        },
+        "validation_failed_triggers": {
+            "description": "The automation \"{name}\" (`{entity_id}`) is not active because its triggers could not be set up.\n\nError:`{error}`.\n\nTo fix this error, [edit the automation]({edit}) to correct it, then save and reload the automation configuration.",
+            "title": "Automation {name} failed to set up"
         }
     },
     "services": {
