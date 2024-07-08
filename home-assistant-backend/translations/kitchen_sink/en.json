@@ -50,5 +50,22 @@
             "description": "This issue is never going to give up.",
             "title": "This is not a fixable problem"
         }
+    },
+    "options": {
+        "step": {
+            "options_1": {
+                "section": {
+                    "section_1": {
+                        "data": {
+                            "bool": "Optional boolean",
+                            "int": "Numeric input"
+                        },
+                        "description": "This section allows input of some extra data",
+                        "name": "Collapsible section"
+                    }
+                },
+                "submit": "Save!"
+            }
+        }
     }
 }

@@ -46,6 +46,17 @@
         }
     },
     "entity": {
+        "event": {
+            "doorbell": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "ring": "Ring"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "license_plate": {
                 "state": {

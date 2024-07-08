@@ -94,6 +94,26 @@
             }
         },
         "sensor": {
+            "a01_error": {
+                "name": "Error",
+                "state": {
+                    "battery_under_10": "Bateria per sota del 10%",
+                    "low_battery": "Bateria baixa",
+                    "none": "Cap"
+                }
+            },
+            "a01_status": {
+                "name": "Estat",
+                "state": {
+                    "charging": "Carregant",
+                    "drying": "Assecant",
+                    "ready": "A punt",
+                    "unknown": "Desconegut",
+                    "updating": "Actualitzant",
+                    "ventilating": "Ventilant",
+                    "washing": "Netejant"
+                }
+            },
             "clean_percent": {
                 "name": "Progr\u00e9s de neteja"
             },
@@ -157,6 +177,7 @@
                     "shutting_down": "Apagant",
                     "spot_cleaning": "Netejant punt",
                     "starting": "Iniciant",
+                    "unknown": "Desconegut",
                     "updating": "Actualitzant",
                     "washing_the_mop": "Rentant baieta",
                     "zoned_cleaning": "Neteja zonificada"
@@ -271,6 +292,27 @@
                 }
             },
             "title": "S'est\u00e0 eliminant el suport del servei vacuum.start_pause de Roborock"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Carregador",
+                    "cleaned_area": "Zona netejada",
+                    "goto_path": "Cam\u00ed a seguir",
+                    "ignored_obstacles": "Obstacles ignorats",
+                    "ignored_obstacles_with_photo": "Obstacles ignorats amb foto",
+                    "mop_path": "Cam\u00ed on fregar",
+                    "no_carpet_zones": "Zones sense catifes",
+                    "no_go_zones": "Zones prohibides",
+                    "no_mopping_zones": "Zones on no fregar",
+                    "obstacles": "Obstacles",
+                    "obstacles_with_photo": "Obstacles amb foto",
+                    "path": "Cam\u00ed",
+                    "predicted_path": "Cam\u00ed previst"
+                }
+            }
         }
     },
     "services": {

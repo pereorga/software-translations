@@ -92,9 +92,60 @@
                     "fast": "Fast",
                     "standard": "Standard"
                 }
+            },
+            "selected_map": {
+                "name": "Selected map"
             }
         },
         "sensor": {
+            "a01_error": {
+                "name": "Error",
+                "state": {
+                    "battery_temperature_protection": "Battery temperature protection",
+                    "battery_temperature_protection_2": "Battery temperature protection",
+                    "battery_temperature_protection_e0": "Temperature protection",
+                    "battery_under_10": "Battery under 10%",
+                    "clean_head_entangled": "Cleaning head entangled",
+                    "clean_head_too_hot": "Cleaning head too hot.",
+                    "clean_tank_empty": "Clean tank empty",
+                    "cleaning_head_blocked": "Cleaning head blocked",
+                    "dirty_charging_contacts": "Clean charging contacts",
+                    "dirty_tank_full": "Dirty tank full",
+                    "fan_protection_e4": "Fan protection",
+                    "fan_protection_e5": "Fan protection",
+                    "fan_protection_e9": "Fan protection",
+                    "low_battery": "Low battery",
+                    "none": "None",
+                    "power_adapter_error": "Power adapter error",
+                    "temperature_protection": "Temperature protection",
+                    "water_level_sensor_stuck": "Water level sensor stuck."
+                }
+            },
+            "a01_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Charging",
+                    "drying": "Drying",
+                    "dusting_mode": "Dusting mode",
+                    "fetch_failed": "Fetch failed",
+                    "fetching": "Fetching",
+                    "mop_washing": "Washing mop",
+                    "mop_washing_paused": "Mop washing paused",
+                    "ready": "Ready",
+                    "reserving": "Reserving",
+                    "self_clean_cleaning": "Self clean cleaning",
+                    "self_clean_deep_cleaning": "Self clean deep cleaning",
+                    "self_clean_dehydrating": "Self clean drying",
+                    "self_clean_rinsing": "Self clean rinsing",
+                    "unknown": "Unknown",
+                    "updating": "Updating",
+                    "ventilating": "Ventilating",
+                    "washing": "Washing"
+                }
+            },
+            "brush_remaining": {
+                "name": "Roller left"
+            },
             "clean_percent": {
                 "name": "Cleaning progress"
             },
@@ -312,6 +363,32 @@
                 }
             },
             "title": "Roborock vacuum support for vacuum.start_pause is being removed"
+        }
+    },
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Charger",
+                    "cleaned_area": "Cleaned area",
+                    "goto_path": "Go-to path",
+                    "ignored_obstacles": "Ignored obstacles",
+                    "ignored_obstacles_with_photo": "Ignored obstacles with photo",
+                    "mop_path": "Mop path",
+                    "no_carpet_zones": "No carpet zones",
+                    "no_go_zones": "No-go zones",
+                    "no_mopping_zones": "No mopping zones",
+                    "obstacles": "Obstacles",
+                    "obstacles_with_photo": "Obstacles with photo",
+                    "path": "Path",
+                    "predicted_path": "Predicted path",
+                    "room_names": "Room names",
+                    "vacuum_position": "Vacuum position",
+                    "virtual_walls": "Virtual walls",
+                    "zones": "Zones"
+                },
+                "description": "Specify which features to draw on the map."
+            }
         }
     },
     "services": {

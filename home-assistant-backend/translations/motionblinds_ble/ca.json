@@ -41,6 +41,35 @@
                     "3": "Alta"
                 }
             }
+        },
+        "sensor": {
+            "calibration": {
+                "name": "Estat de calibraci\u00f3",
+                "state": {
+                    "calibrated": "Calibrat",
+                    "calibrating": "Calibraci\u00f3 en curs",
+                    "uncalibrated": "No calibrat"
+                }
+            },
+            "connection": {
+                "name": "Estat de connexi\u00f3",
+                "state": {
+                    "connected": "Connectat",
+                    "connecting": "Connectant",
+                    "disconnected": "Desconnectat",
+                    "disconnecting": "Desconnectant"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "permanent_connection": "Connexi\u00f3 permanent"
+                },
+                "title": "Opcions de connexi\u00f3"
+            }
         }
     },
     "selector": {

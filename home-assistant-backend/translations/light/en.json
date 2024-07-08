@@ -33,7 +33,8 @@
         "field_white_description": "Set the light to white mode.",
         "field_white_name": "White",
         "field_xy_color_description": "Color in XY-format. A list of two decimal numbers between 0 and 1.",
-        "field_xy_color_name": "XY-color"
+        "field_xy_color_name": "XY-color",
+        "section_advanced_fields_name": "Advanced options"
     },
     "device_automation": {
         "action_type": {
@@ -351,7 +352,12 @@
                     "name": "XY-color"
                 }
             },
-            "name": "Toggle"
+            "name": "Toggle",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Advanced options"
+                }
+            }
         },
         "turn_off": {
             "description": "Turn off one or more lights.",
@@ -365,7 +371,12 @@
                     "name": "Transition"
                 }
             },
-            "name": "Turn off"
+            "name": "Turn off",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Advanced options"
+                }
+            }
         },
         "turn_on": {
             "description": "Turn on one or more lights and adjust properties of the light, even when they are turned on already.",
@@ -439,7 +450,12 @@
                     "name": "XY-color"
                 }
             },
-            "name": "Turn on"
+            "name": "Turn on",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Advanced options"
+                }
+            }
         }
     },
     "title": "Light"

@@ -55,15 +55,85 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "is_open": {
+                "name": "Porta",
+                "state": {
+                    "off": "Tancat/ada",
+                    "on": "Obert/a"
+                }
+            },
+            "update_available": {
+                "name": "Actualitzaci\u00f3",
+                "state": {
+                    "off": "Actualitzat/da",
+                    "on": "Actualitzaci\u00f3 disponible"
+                }
+            },
+            "water_alert": {
+                "name": "Humitat",
+                "state": {
+                    "off": "Sec",
+                    "on": "Humit"
+                }
+            }
+        },
+        "select": {
+            "alarm_sound": {
+                "name": "So de l'alarma"
+            },
+            "alarm_volume": {
+                "name": "Volum de l'alarma"
+            }
+        },
         "sensor": {
+            "auto_off_at": {
+                "name": "Apagat autom\u00e0tic a les"
+            },
+            "available_firmware_version": {
+                "name": "Versi\u00f3 de microprogramari disponible"
+            },
+            "battery_level": {
+                "name": "Nivell de bateria"
+            },
+            "consumption_this_month": {
+                "name": "Consum d'aquest mes"
+            },
+            "consumption_today": {
+                "name": "Consum d'avui"
+            },
+            "consumption_total": {
+                "name": "Consum total"
+            },
+            "current": {
+                "name": "Intensitat"
+            },
             "current_consumption": {
                 "name": "Consum actual"
+            },
+            "current_firmware_version": {
+                "name": "Versi\u00f3 del microprogramari actual"
+            },
+            "humidity": {
+                "name": "Humitat"
+            },
+            "rssi": {
+                "name": "Pot\u00e8ncia del senyal"
+            },
+            "ssid": {
+                "name": "SSID"
+            },
+            "temperature": {
+                "name": "Temperatura"
             },
             "today_consumption": {
                 "name": "Consum d'avui"
             },
             "total_consumption": {
                 "name": "Consum total"
+            },
+            "voltage": {
+                "name": "Voltatge"
             }
         },
         "switch": {

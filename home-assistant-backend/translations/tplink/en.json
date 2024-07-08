@@ -59,7 +59,102 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "battery_low": {
+                "name": "Battery low"
+            },
+            "cloud_connection": {
+                "name": "Cloud connection"
+            },
+            "humidity_warning": {
+                "name": "Humidity warning"
+            },
+            "is_open": {
+                "name": "Door",
+                "state": {
+                    "off": "Closed",
+                    "on": "Open"
+                }
+            },
+            "overheated": {
+                "name": "Overheated"
+            },
+            "temperature_warning": {
+                "name": "Temperature warning"
+            },
+            "update_available": {
+                "name": "Update",
+                "state": {
+                    "off": "Up-to-date",
+                    "on": "Update available"
+                }
+            },
+            "water_alert": {
+                "name": "Moisture",
+                "state": {
+                    "off": "Dry",
+                    "on": "Wet"
+                }
+            }
+        },
+        "button": {
+            "stop_alarm": {
+                "name": "Stop alarm"
+            },
+            "test_alarm": {
+                "name": "Test alarm"
+            }
+        },
+        "number": {
+            "auto_off_minutes": {
+                "name": "Turn off in"
+            },
+            "smooth_transition_off": {
+                "name": "Smooth off"
+            },
+            "smooth_transition_on": {
+                "name": "Smooth on"
+            },
+            "temperature_offset": {
+                "name": "Temperature offset"
+            }
+        },
+        "select": {
+            "alarm_sound": {
+                "name": "Alarm sound"
+            },
+            "alarm_volume": {
+                "name": "Alarm volume"
+            },
+            "light_preset": {
+                "name": "Light preset"
+            }
+        },
         "sensor": {
+            "alarm_source": {
+                "name": "Alarm source"
+            },
+            "auto_off_at": {
+                "name": "Auto off at"
+            },
+            "available_firmware_version": {
+                "name": "Available firmware version"
+            },
+            "battery_level": {
+                "name": "Battery level"
+            },
+            "consumption_this_month": {
+                "name": "This month's consumption"
+            },
+            "consumption_today": {
+                "name": "Today's consumption"
+            },
+            "consumption_total": {
+                "name": "Total consumption"
+            },
+            "current": {
+                "name": "Current"
+            },
             "current_child": {
                 "name": "{device_name} current"
             },
@@ -68,6 +163,33 @@
             },
             "current_consumption_child": {
                 "name": "{device_name} current consumption"
+            },
+            "current_firmware_version": {
+                "name": "Current firmware version"
+            },
+            "device_time": {
+                "name": "Device time"
+            },
+            "humidity": {
+                "name": "Humidity"
+            },
+            "on_since": {
+                "name": "On since"
+            },
+            "report_interval": {
+                "name": "Report interval"
+            },
+            "rssi": {
+                "name": "Signal strength"
+            },
+            "signal_level": {
+                "name": "Signal level"
+            },
+            "ssid": {
+                "name": "SSID"
+            },
+            "temperature": {
+                "name": "Temperature"
             },
             "today_consumption": {
                 "name": "Today's consumption"
@@ -81,13 +203,28 @@
             "total_consumption_child": {
                 "name": "{device_name} total consumption"
             },
+            "voltage": {
+                "name": "Voltage"
+            },
             "voltage_child": {
                 "name": "{device_name} voltage"
             }
         },
         "switch": {
+            "auto_off_enabled": {
+                "name": "Auto off enabled"
+            },
+            "auto_update_enabled": {
+                "name": "Auto update enabled"
+            },
+            "fan_sleep_mode": {
+                "name": "Fan sleep mode"
+            },
             "led": {
                 "name": "LED"
+            },
+            "smooth_transitions": {
+                "name": "Smooth transitions"
             }
         }
     },

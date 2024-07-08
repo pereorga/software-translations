@@ -4,20 +4,28 @@
             "binary_sensor": {
                 "data": {
                     "device_class": "Device class",
+                    "device_id": "Device",
                     "name": "Name",
                     "state": "State template",
                     "state_template": "State template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
                 },
                 "title": "Template binary sensor"
             },
             "sensor": {
                 "data": {
                     "device_class": "Device class",
+                    "device_id": "Device",
                     "name": "Name",
                     "state": "State template",
                     "state_class": "State class",
                     "state_template": "State template",
                     "unit_of_measurement": "Unit of measurement"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
                 },
                 "title": "Template sensor"
             },
@@ -41,18 +49,26 @@
             "binary_sensor": {
                 "data": {
                     "device_class": "Device class",
+                    "device_id": "Device",
                     "state": "State template",
                     "state_template": "State template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
                 },
                 "title": "Template binary sensor"
             },
             "sensor": {
                 "data": {
                     "device_class": "Device class",
+                    "device_id": "Device",
                     "state": "State template",
                     "state_class": "State class",
                     "state_template": "State template",
                     "unit_of_measurement": "Unit of measurement"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
                 },
                 "title": "Template sensor"
             }
@@ -100,6 +116,7 @@
                 "battery": "Battery",
                 "carbon_dioxide": "Carbon dioxide",
                 "carbon_monoxide": "Carbon monoxide",
+                "conductivity": "Conductivity",
                 "current": "Current",
                 "data_rate": "Data rate",
                 "data_size": "Data size",

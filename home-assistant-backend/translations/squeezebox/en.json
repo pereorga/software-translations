@@ -27,7 +27,7 @@
                     "host": "Host"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Logitech Media Server."
+                    "host": "The hostname or IP address of your Lyrion Music Server."
                 }
             }
         }
@@ -37,11 +37,11 @@
             "description": "Calls a custom Squeezebox JSONRPC API.",
             "fields": {
                 "command": {
-                    "description": "Command to pass to Logitech Media Server (p0 in the CLI documentation).",
+                    "description": "Command to pass to Lyrion Music Server (p0 in the CLI documentation).",
                     "name": "Command"
                 },
                 "parameters": {
-                    "description": "Array of additional parameters to pass to Logitech Media Server (p1, ..., pN in the CLI documentation).\n.",
+                    "description": "Array of additional parameters to pass to Lyrion Music Server (p1, ..., pN in the CLI documentation).\n.",
                     "name": "Parameters"
                 }
             },
@@ -51,11 +51,11 @@
             "description": "Calls a custom Squeezebox JSONRPC API. Result will be stored in 'query_result' attribute of the Squeezebox entity.\n.",
             "fields": {
                 "command": {
-                    "description": "Command to pass to Logitech Media Server (p0 in the CLI documentation).",
+                    "description": "Command to pass to Lyrion Music Server (p0 in the CLI documentation).",
                     "name": "Command"
                 },
                 "parameters": {
-                    "description": "Array of additional parameters to pass to Logitech Media Server (p1, ..., pN in the CLI documentation).\n.",
+                    "description": "Array of additional parameters to pass to Lyrion Music Server (p1, ..., pN in the CLI documentation).\n.",
                     "name": "Parameters"
                 }
             },

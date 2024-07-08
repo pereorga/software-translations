@@ -36,6 +36,21 @@
                 }
             }
         },
+        "send_transparent_command": {
+            "fields": {
+                "gateway_id": {
+                    "name": "ID de la passarel\u00b7la"
+                },
+                "transp_arg": {
+                    "name": "Par\u00e0metre"
+                },
+                "transp_cmd": {
+                    "description": "Comanda a enviar a la passarel\u00b7la d'OpenTherm.",
+                    "name": "Comanda"
+                }
+            },
+            "name": "Envia comanda transparent"
+        },
         "set_central_heating_ovrd": {
             "fields": {
                 "gateway_id": {

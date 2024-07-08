@@ -238,5 +238,28 @@
                 "name": "Actualitza"
             }
         }
+    },
+    "services": {
+        "set_scheduled_departure": {
+            "fields": {
+                "device_id": {
+                    "name": "Vehicle"
+                }
+            }
+        },
+        "valet_mode": {
+            "fields": {
+                "device_id": {
+                    "name": "Vehicle"
+                },
+                "enable": {
+                    "name": "Activa"
+                },
+                "pin": {
+                    "description": "PIN de 4 d\u00edgits.",
+                    "name": "PIN"
+                }
+            }
+        }
     }
 }

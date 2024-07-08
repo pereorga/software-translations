@@ -55,6 +55,21 @@
                 "name": "Bloqueig de botons al dispositiu"
             }
         },
+        "climate": {
+            "thermostat": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Preconfiguraci\u00f3",
+                        "state": {
+                            "comfort": "Confort",
+                            "eco": "Econ\u00f2mic",
+                            "holiday": "Vacances",
+                            "summer": "Estiu"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "battery": {
                 "name": "Bateria"

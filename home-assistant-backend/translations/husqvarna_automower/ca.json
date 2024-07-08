@@ -135,5 +135,23 @@
                 "name": "Temps total de cerca"
             }
         }
+    },
+    "selector": {
+        "override_modes": {
+            "options": {
+                "mow": "Sega",
+                "park": "Aparca"
+            }
+        }
+    },
+    "services": {
+        "override_schedule": {
+            "fields": {
+                "duration": {
+                    "description": "M\u00ednim: 1 minut, m\u00e0xim: 42 dies; s'ignoraran els segons.",
+                    "name": "Durada"
+                }
+            }
+        }
     }
 }

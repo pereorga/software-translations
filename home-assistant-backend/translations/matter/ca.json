@@ -45,7 +45,28 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "rain": {
+                "name": "Pluja"
+            },
+            "water_leak": {
+                "name": "Fuita d'aigua"
+            }
+        },
+        "climate": {
+            "thermostat": {
+                "name": "Term\u00f2stat"
+            }
+        },
+        "cover": {
+            "cover": {
+                "name": "Coberta"
+            }
+        },
         "event": {
+            "button": {
+                "name": "Bot\u00f3"
+            },
             "push": {
                 "state_attributes": {
                     "event_type": {
@@ -60,9 +81,37 @@
                 }
             }
         },
+        "fan": {
+            "fan": {
+                "name": "Ventilador"
+            }
+        },
+        "light": {
+            "light": {
+                "name": "Llum"
+            }
+        },
+        "lock": {
+            "lock": {
+                "name": "Pany"
+            }
+        },
+        "select": {
+            "mode": {
+                "name": "Mode"
+            }
+        },
         "sensor": {
             "flow": {
                 "name": "Flux"
+            }
+        },
+        "switch": {
+            "power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "switch": {
+                "name": "Interruptor"
             }
         }
     },

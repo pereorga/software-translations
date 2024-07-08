@@ -275,5 +275,15 @@
                 "name": "Grid enabled"
             }
         }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "diagnostics_include_fixtures": "Include test fixture data in diagnostic report. Use when requested to provide test data for troubleshooting or development activies. With this option enabled the diagnostic report may take more time to download. When report is created best disable this option again."
+                },
+                "title": "Envoy {serial} {host} options"
+            }
+        }
     }
 }

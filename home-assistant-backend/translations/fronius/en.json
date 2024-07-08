@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "invalid_host": "Invalid hostname or IP address"
+            "invalid_host": "Invalid hostname or IP address",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -12,6 +13,12 @@
         "step": {
             "confirm_discovery": {
                 "description": "Do you want to add {device} to Home Assistant?"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "description": "Update your configuration information for {device}."
             },
             "user": {
                 "data": {
@@ -139,6 +146,12 @@
             "power_battery": {
                 "name": "Power battery"
             },
+            "power_battery_charge": {
+                "name": "Power battery charge"
+            },
+            "power_battery_discharge": {
+                "name": "Power battery discharge"
+            },
             "power_factor": {
                 "name": "Power factor"
             },
@@ -154,8 +167,20 @@
             "power_grid": {
                 "name": "Power grid"
             },
+            "power_grid_export": {
+                "name": "Power grid export"
+            },
+            "power_grid_import": {
+                "name": "Power grid import"
+            },
             "power_load": {
                 "name": "Power load"
+            },
+            "power_load_consumed": {
+                "name": "Power load consumed"
+            },
+            "power_load_generated": {
+                "name": "Power load generated"
             },
             "power_photovoltaics": {
                 "name": "Power photovoltaics"

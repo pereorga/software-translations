@@ -46,6 +46,14 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_config_entry": {
+            "message": "Invalid config entry provided. Got {config_entry_id}"
+        },
+        "unloaded_config_entry": {
+            "message": "Invalid config entry provided. {config_entry_id} is not loaded."
+        }
+    },
     "issues": {
         "deprecated_yaml_import_issue_cannot_connect": {
             "description": "Configuring 17Track using YAML is being removed but there was a connection error importing your YAML configuration.\n\nThings you can try:\nMake sure your home assistant can reach the web.\n\nThen restart Home Assistant to try importing this integration again.\n\nAlternatively, you may remove the 17Track configuration from your YAML configuration entirely, restart Home Assistant, and add the 17Track integration manually.",

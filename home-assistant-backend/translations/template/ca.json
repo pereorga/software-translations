@@ -4,20 +4,28 @@
             "binary_sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
                     "name": "Nom",
                     "state": "Plantilla d'estat",
                     "state_template": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor binari de plantilla"
             },
             "sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
                     "name": "Nom",
                     "state": "Plantilla d'estat",
                     "state_class": "Classe d'estat",
                     "state_template": "Plantilla d'estat",
                     "unit_of_measurement": "Unitat de mesura"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor de plantilla"
             },
@@ -35,18 +43,26 @@
             "binary_sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
                     "state": "Plantilla d'estat",
                     "state_template": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor binari de plantilla"
             },
             "sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
                     "state": "Plantilla d'estat",
                     "state_class": "Classe d'estat",
                     "state_template": "Plantilla d'estat",
                     "unit_of_measurement": "Unitat de mesura"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor de plantilla"
             }
@@ -94,6 +110,7 @@
                 "battery": "Bateria",
                 "carbon_dioxide": "Di\u00f2xid de carboni",
                 "carbon_monoxide": "Mon\u00f2xid de carboni",
+                "conductivity": "Conductivitat",
                 "current": "Intensitat",
                 "data_rate": "Velocitat de dades",
                 "data_size": "Mida de dades",
@@ -134,6 +151,7 @@
                 "volatile_organic_compounds_parts": "COVs",
                 "voltage": "Voltatge",
                 "volume": "Volum",
+                "volume_flow_rate": "Cabal volum\u00e8tric",
                 "volume_storage": "Volum acumulat",
                 "water": "Aigua",
                 "weight": "Pes",
