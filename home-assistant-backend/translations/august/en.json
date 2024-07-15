@@ -55,6 +55,26 @@
                 "name": "Camera"
             }
         },
+        "event": {
+            "doorbell": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "ring": "Ring"
+                        }
+                    }
+                }
+            },
+            "motion": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "motion": "Motion"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "operator": {
                 "name": "Operator"

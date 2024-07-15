@@ -123,8 +123,32 @@
                     "standby": "Standby"
                 }
             },
+            "front_left_current_pressure": {
+                "name": "Front left tire pressure"
+            },
+            "front_left_target_pressure": {
+                "name": "Front left target pressure"
+            },
+            "front_right_current_pressure": {
+                "name": "Front right tire pressure"
+            },
+            "front_right_target_pressure": {
+                "name": "Front right target pressure"
+            },
             "mileage": {
                 "name": "Mileage"
+            },
+            "rear_left_current_pressure": {
+                "name": "Rear left tire pressure"
+            },
+            "rear_left_target_pressure": {
+                "name": "Rear left target pressure"
+            },
+            "rear_right_current_pressure": {
+                "name": "Rear right tire pressure"
+            },
+            "rear_right_target_pressure": {
+                "name": "Rear right target pressure"
             },
             "remaining_battery_percent": {
                 "name": "Remaining battery percent"
@@ -152,6 +176,11 @@
             "climate": {
                 "name": "Climate"
             }
+        }
+    },
+    "exceptions": {
+        "invalid_poi": {
+            "message": "Invalid data for point of interest: {poi_exception}"
         }
     },
     "options": {

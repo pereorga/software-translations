@@ -57,6 +57,18 @@
             "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 mitjan\u00e7ant fitxer YAML. \u00c9s possible que no notis cap problema evident amb la integraci\u00f3, per\u00f2 cap configuraci\u00f3 definida en YAML s'aplica realment.\n\nPer resoldre aix\u00f2: \n\n1. Si encara no ho has fet, [configura la integraci\u00f3]({add_integration}). \n\n2. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n3. Reinicia Home Assistant.",
             "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML"
         },
+        "integration_not_found": {
+            "fix_flow": {
+                "step": {
+                    "remove_entries": {
+                        "menu_options": {
+                            "confirm": "Elimina les configuracions anteriors",
+                            "ignore": "Ignora"
+                        }
+                    }
+                }
+            }
+        },
         "no_platform_setup": {
             "description": "No \u00e9s possible configurar {platform} {domain} afegint `{platform_key}` a la configuraci\u00f3 de {domain}. Consulta la documentaci\u00f3 per a m\u00e9s informaci\u00f3 sobre com configurar aquesta integraci\u00f3.\n\nPer resoldre aix\u00f2:\n1. Elimina `{platform_key}` de la configuraci\u00f3 de `{domain}`: al fitxer de configuraci\u00f3 YAML.\n2. Reinicia Home Assistant. \n\nExemple del que caldria eliminar:\n{yaml_example}\n",
             "title": "Configuraci\u00f3 YAML per a la integraci\u00f3 {platform} no utilitzada"

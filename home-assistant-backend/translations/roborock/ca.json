@@ -91,6 +91,9 @@
                     "fast": "R\u00e0pid",
                     "standard": "Est\u00e0ndard"
                 }
+            },
+            "selected_map": {
+                "name": "Mapa seleccionat"
             }
         },
         "sensor": {
@@ -122,6 +125,9 @@
             },
             "cleaning_time": {
                 "name": "Temps de neteja"
+            },
+            "countdown": {
+                "name": "Compte enrere"
             },
             "dock_error": {
                 "name": "Error de connexi\u00f3 a la base",
@@ -220,6 +226,47 @@
                     "wall_sensor_dirty": "Sensor de paret brut",
                     "wheels_jammed": "Rodes encallades",
                     "wheels_suspended": "Rodes suspeses"
+                }
+            },
+            "washing_left": {
+                "name": "Rentat restant"
+            },
+            "zeo_error": {
+                "name": "Error",
+                "state": {
+                    "communication_error": "Error de comunicaci\u00f3",
+                    "door_lock_error": "Error de bloqueig de porta",
+                    "drain_error": "Error de drenatge",
+                    "drying_error": "Error en l'assecament",
+                    "drying_error_e_12": "Error en l'assecament E12",
+                    "drying_error_e_13": "Error en l'assecament E13",
+                    "drying_error_e_14": "Error en l'assecament E14",
+                    "drying_error_e_15": "Error en l'assecament E15",
+                    "drying_error_e_16": "Error en l'assecament E163",
+                    "drying_error_restart": "Reinicia la rentadora",
+                    "drying_error_water_flow": "Comprova el cabal d'aigua",
+                    "heating_error": "Error d'escalfador",
+                    "inverter_error": "Error de l'inversor",
+                    "none": "Cap",
+                    "refill_error": "Error de c\u00e0rrega",
+                    "spin_error": "Reorganitza la roba",
+                    "temperature_error": "Error de temperatura",
+                    "water_level_error": "Error de nivell d'aigua"
+                }
+            },
+            "zeo_state": {
+                "name": "Estat",
+                "state": {
+                    "cooling": "Refredant",
+                    "done": "Acabat",
+                    "drying": "Assecant",
+                    "rinsing": "Esbandint",
+                    "soaking": "Remullant",
+                    "spinning": "Centrifugant",
+                    "standby": "En espera",
+                    "under_delay_start": "Inici retardat",
+                    "washing": "Rentant",
+                    "weighing": "Pesant"
                 }
             }
         },

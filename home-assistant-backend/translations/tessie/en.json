@@ -23,6 +23,9 @@
     },
     "entity": {
         "binary_sensor": {
+            "backup_capable": {
+                "name": "Backup capable"
+            },
             "charge_state_battery_heater_on": {
                 "name": "Battery heater"
             },
@@ -67,6 +70,12 @@
             },
             "climate_state_cabin_overheat_protection_actively_cooling": {
                 "name": "Cabin overheat protection actively cooling"
+            },
+            "components_grid_services_enabled": {
+                "name": "Grid services enabled"
+            },
+            "grid_services_active": {
+                "name": "Grid services active"
             },
             "state": {
                 "name": "Status"
@@ -202,11 +211,17 @@
             }
         },
         "number": {
+            "backup_reserve_percent": {
+                "name": "Backup reserve"
+            },
             "charge_state_charge_current_request": {
                 "name": "Charge current"
             },
             "charge_state_charge_limit_soc": {
                 "name": "Charge limit"
+            },
+            "off_grid_vehicle_charging_reserve_percent": {
+                "name": "Off grid reserve"
             },
             "vehicle_state_speed_limit_mode_current_limit_mph": {
                 "name": "Speed limit"
@@ -274,6 +289,22 @@
                     "low": "Low",
                     "medium": "Medium",
                     "off": "Off"
+                }
+            },
+            "components_customer_preferred_export_rule": {
+                "name": "Allow export",
+                "state": {
+                    "battery_ok": "Battery",
+                    "never": "Never",
+                    "pv_only": "Solar only"
+                }
+            },
+            "default_real_mode": {
+                "name": "Operation mode",
+                "state": {
+                    "autonomous": "Autonomous",
+                    "backup": "Backup",
+                    "self_consumption": "Self consumption"
                 }
             }
         },
@@ -527,6 +558,12 @@
             "climate_state_steering_wheel_heater": {
                 "name": "Steering wheel heater"
             },
+            "components_disallow_charge_from_grid_with_solar_installed": {
+                "name": "Allow charging from grid"
+            },
+            "user_settings_storm_mode_enabled": {
+                "name": "Storm watch"
+            },
             "vehicle_state_sentry_mode": {
                 "name": "Sentry mode"
             },
@@ -549,6 +586,9 @@
         },
         "cable_connected": {
             "message": "Charge cable is connected."
+        },
+        "command_failed": {
+            "message": "Command failed, {message}"
         },
         "incorrect_pin": {
             "message": "Incorrect pin for {name}."

@@ -1,4 +1,35 @@
 {
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "state": "Estat",
+                    "type": "Tipus"
+                },
+                "data_description": {
+                    "entity_id": "Entitat de la qual obtenir les estad\u00edstiques.",
+                    "name": "Nom de l'entitat creada.",
+                    "state": "Estats de l'entitat als quals fer el seguiment.",
+                    "type": "Tipus de sensor, 'temps', 'r\u00e0tio' o 'comptador'"
+                },
+                "description": "Afegeix un sensor d'estad\u00edstiques hist\u00f2riques"
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat"
+        }
+    },
+    "selector": {
+        "type": {
+            "options": {
+                "count": "Comptador",
+                "ratio": "R\u00e0tio",
+                "time": "Temps"
+            }
+        }
+    },
     "services": {
         "reload": {
             "description": "Recarrega els sensors d'estad\u00edstiques hist\u00f2riques des de la configuraci\u00f3 YAML",

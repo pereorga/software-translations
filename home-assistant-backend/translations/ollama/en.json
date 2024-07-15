@@ -24,8 +24,12 @@
         "step": {
             "init": {
                 "data": {
+                    "keep_alive": "Keep alive",
                     "max_history": "Max history messages",
                     "prompt": "Prompt template"
+                },
+                "data_description": {
+                    "keep_alive": "Duration in seconds for Ollama to keep model in memory. -1 = indefinite, 0 = never."
                 }
             }
         }

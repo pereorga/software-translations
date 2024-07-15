@@ -61,6 +61,14 @@
                 "name": "Reproductor multim\u00e8dia"
             }
         },
+        "number": {
+            "backup_reserve_percent": {
+                "name": "Reserva de suport"
+            },
+            "off_grid_vehicle_charging_reserve_percent": {
+                "name": "Reserva sense xarxa"
+            }
+        },
         "select": {
             "climate_state_seat_heater_left": {
                 "name": "Escalfador del seient de l'esquerra",
@@ -121,6 +129,22 @@
                     "low": "Baix",
                     "medium": "Mitj\u00e0",
                     "off": "OFF"
+                }
+            },
+            "components_customer_preferred_export_rule": {
+                "name": "Permet l'exportaci\u00f3",
+                "state": {
+                    "battery_ok": "Bateria",
+                    "never": "Mai",
+                    "pv_only": "Nom\u00e9s solar"
+                }
+            },
+            "default_real_mode": {
+                "name": "Mode de funcionament",
+                "state": {
+                    "autonomous": "Aut\u00f2nom",
+                    "backup": "Suport",
+                    "self_consumption": "Autoconsum"
                 }
             }
         },
@@ -252,10 +276,23 @@
                 }
             }
         },
+        "switch": {
+            "components_disallow_charge_from_grid_with_solar_installed": {
+                "name": "Permet la c\u00e0rrega de la xarxa"
+            },
+            "user_settings_storm_mode_enabled": {
+                "name": "Alerta de tempestes"
+            }
+        },
         "update": {
             "update": {
                 "name": "Actualitza"
             }
+        }
+    },
+    "exceptions": {
+        "command_failed": {
+            "message": "La comanda ha fallat, {message}"
         }
     }
 }

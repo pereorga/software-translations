@@ -12,7 +12,10 @@
             "user": {
                 "data": {
                     "api_token": "API token",
-                    "host": "Host"
+                    "host": "URL"
+                },
+                "data_description": {
+                    "host": "The URL of your Mealie instance."
                 }
             }
         }
@@ -31,6 +34,69 @@
             "side": {
                 "name": "Side"
             }
+        }
+    },
+    "exceptions": {
+        "add_item_error": {
+            "message": "An error occurred adding an item to {shopping_list_name}."
+        },
+        "connection_error": {
+            "message": "Error connecting to Mealie instance."
+        },
+        "delete_item_error": {
+            "message": "An error occurred deleting an item in {shopping_list_name}."
+        },
+        "end_date_before_start_date": {
+            "message": "End date must be after start date."
+        },
+        "integration_not_found": {
+            "message": "Integration \"{target}\" not found in registry."
+        },
+        "item_not_found_error": {
+            "message": "Item {shopping_list_item} not found."
+        },
+        "not_loaded": {
+            "message": "{target} is not loaded."
+        },
+        "recipe_not_found": {
+            "message": "Recipe with ID or slug `{recipe_id}` not found."
+        },
+        "update_item_error": {
+            "message": "An error occurred updating an item in {shopping_list_name}."
+        }
+    },
+    "services": {
+        "get_mealplan": {
+            "description": "Get meaplan from Mealie",
+            "fields": {
+                "config_entry_id": {
+                    "description": "Select the Mealie instance to get mealplan from",
+                    "name": "Mealie instance"
+                },
+                "end_date": {
+                    "description": "The enddate of the data to get (default: today).",
+                    "name": "End date"
+                },
+                "start_date": {
+                    "description": "The startdate of the data to get (default: today).",
+                    "name": "Start date"
+                }
+            },
+            "name": "Get mealplan"
+        },
+        "get_recipe": {
+            "description": "Get recipe from Mealie",
+            "fields": {
+                "config_entry_id": {
+                    "description": "Select the Mealie instance to get mealplan from",
+                    "name": "Mealie instance"
+                },
+                "recipe_id": {
+                    "description": "The recipe ID or the slug of the recipe to get.",
+                    "name": "Recipe ID or slug"
+                }
+            },
+            "name": "Get recipe"
         }
     }
 }
