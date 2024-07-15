@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-03 16:27+0000\n"
+"POT-Creation-Date: 2024-07-15 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -309,6 +309,16 @@ msgstr "Assist Pipelines"
 #: assist.watch.mic_button.title
 msgid "Tap to "
 msgstr "Tap to "
+
+#: assist.watch.not_reachable.title
+msgid ""
+"Assist requires iPhone connectivity. Your iPhone is currently unreachable."
+msgstr ""
+"Assist requires iPhone connectivity. Your iPhone is currently unreachable."
+
+#: assist.watch.volume.title
+msgid "Volume control"
+msgstr ""
 
 #: cancel_label
 msgctxt "cancel_label"
@@ -1477,6 +1487,7 @@ msgid "Delete Server"
 msgstr "Elimina el servidor"
 
 #: settings.connection_section.details
+msgctxt "settings.connection_section.details"
 msgid "Details"
 msgstr "Detalls"
 
@@ -1831,6 +1842,8 @@ msgstr "Restableix la memòria cau del frontend"
 
 #: settings.server_select.page_title
 msgctxt "settings.server_select.page_title"
+"settings.server_select.page_title"
+"settings.server_select.page_title"
 msgid "Server"
 msgstr "Servidor"
 
@@ -3098,6 +3111,7 @@ msgstr "Estil"
 
 #: watch.configurator.rows.gauge.title
 msgctxt "watch.configurator.rows.gauge.title"
+"watch.configurator.rows.gauge.title"
 msgid "Gauge"
 msgstr "Galga"
 
@@ -3913,6 +3927,12 @@ msgstr "Realitza accions del Home Assistant."
 msgid "No Actions Configured"
 msgstr "No hi ha accions configurades"
 
+#: widgets.actions.parameters.action
+msgctxt "widgets.actions.parameters.action"
+"widgets.actions.parameters.action"
+msgid "Action"
+msgstr "Action"
+
 #: widgets.actions.title
 msgctxt "widgets.actions.title"
 msgid "Actions"
@@ -3938,6 +3958,92 @@ msgstr "Configurar"
 msgctxt "widgets.button.reload_timeline"
 msgid "Reload all widgets"
 msgstr "Recarrega tots els ginys"
+
+#: widgets.details.description
+msgid "Display states using from Home Assistant in text"
+msgstr "Display states using from Home Assistant in text"
+
+#: widgets.details.parameters.action
+msgctxt "widgets.details.parameters.action"
+msgid "Action"
+msgstr "Action"
+
+#: widgets.details.parameters.details_template
+msgid "Details Text Template (only in rectangular family)"
+msgstr "Details Text Template (only in rectangular family)"
+
+#: widgets.details.parameters.lower_template
+msgid "Lower Text Template"
+msgstr "Lower Text Template"
+
+#: widgets.details.parameters.run_action
+msgid "Run Action (only in rectangular family)"
+msgstr "Run Action (only in rectangular family)"
+
+#: widgets.details.parameters.server
+msgctxt "widgets.details.parameters.server"
+msgid "Server"
+msgstr "Server"
+
+#: widgets.details.parameters.upper_template
+msgid "Upper Text Template"
+msgstr "Upper Text Template"
+
+#: widgets.details.title
+msgctxt "widgets.details.title"
+msgid "Details"
+msgstr "Details"
+
+#: widgets.gauge.description
+msgid "Display numeric states from Home Assistant in a gauge"
+msgstr "Display numeric states from Home Assistant in a gauge"
+
+#: widgets.gauge.parameters.action
+msgctxt "widgets.gauge.parameters.action"
+msgid "Action"
+msgstr "Action"
+
+#: widgets.gauge.parameters.gauge_type
+msgid "Gauge Type"
+msgstr "Gauge Type"
+
+#: widgets.gauge.parameters.gauge_type.capacity
+msgid "Capacity"
+msgstr "Capacity"
+
+#: widgets.gauge.parameters.gauge_type.normal
+msgid "Normal"
+msgstr "Normal"
+
+#: widgets.gauge.parameters.max_label_template
+msgid "Max Label Template"
+msgstr "Max Label Template"
+
+#: widgets.gauge.parameters.min_label_template
+msgid "Min Label Template"
+msgstr "Min Label Template"
+
+#: widgets.gauge.parameters.run_action
+msgid "Run Action"
+msgstr "Run Action"
+
+#: widgets.gauge.parameters.server
+msgctxt "widgets.gauge.parameters.server"
+msgid "Server"
+msgstr "Server"
+
+#: widgets.gauge.parameters.value_label_template
+msgid "Value Label Template"
+msgstr "Value Label Template"
+
+#: widgets.gauge.parameters.value_template
+msgid "Value Template (0-1)"
+msgstr "Value Template (0-1)"
+
+#: widgets.gauge.title
+msgctxt "widgets.gauge.title"
+msgid "Gauge"
+msgstr "Gauge"
 
 #: widgets.open_page.description
 msgid "Open a frontend page in Home Assistant."
