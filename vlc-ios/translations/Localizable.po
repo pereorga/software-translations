@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 08:03+0000\n"
+"POT-Creation-Date: 2024-07-22 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,6 +277,10 @@ msgstr "Elimina"
 #: BUTTON_OK
 msgid "OK"
 msgstr "D'acord"
+
+#: BUTTON_DISMISS
+msgid "Dismiss"
+msgstr ""
 
 #: BUTTON_CONTACT
 msgid "Contact us"
@@ -740,6 +744,14 @@ msgstr "Buida l'historial"
 msgid "No media yet."
 msgstr "Encara no hi ha elements multimèdia."
 
+#: EMPTY_MEDIA_LIST
+msgid "Empty Media List"
+msgstr ""
+
+#: EMPTY_MEDIA_LIST_DESCRIPTION
+msgid "The media list is empty therefore the playback could not start"
+msgstr ""
+
 #: PLAYBACK_SCRUB_HELP
 msgid "Slide your finger up to adjust the scrubbing rate."
 msgstr "Feu lliscar el dit amunt per ajustar la taxa de depuració."
@@ -1095,7 +1107,6 @@ msgid "Single"
 msgstr "Sol"
 
 #: REPEAT_FOLDER
-msgctxt "REPEAT_FOLDER"
 msgid "Folder"
 msgstr "Carpeta"
 
@@ -2311,19 +2322,3 @@ msgstr "Voleu suprimir \"%@\"?"
 #: DELETE_MULTIPLE_TITLE
 msgid "Delete \"%@\" and %d others?"
 msgstr "Voleu suprimir \"%@\" i %d altres?"
-
-#.
-#. // MARK: - UIDOCUMENT PICKER ALERT STRINGS FOR LOCAL FILES PLAYBACK
-#. /* New strings */
-#: PLAY_FILE
-msgid "Would you like to open files or an entire folder?"
-msgstr "Voleu obrir fitxers o una carpeta sencera?"
-
-#: PLAY_FOLDER
-msgctxt "PLAY_FOLDER"
-msgid "Folder"
-msgstr "Carpeta"
-
-#: PLAY_FILES
-msgid "Files"
-msgstr "Fitxers"
