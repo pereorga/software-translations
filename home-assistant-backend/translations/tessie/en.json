@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Service is already configured"
+        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_access_token": "Invalid access token",
@@ -174,6 +177,9 @@
             "vehicle_state_rt": {
                 "name": "Trunk"
             },
+            "vehicle_state_sun_roof_state": {
+                "name": "Sunroof"
+            },
             "windows": {
                 "name": "Vent windows"
             }
@@ -228,6 +234,24 @@
             }
         },
         "select": {
+            "climate_state_seat_fan_front_left": {
+                "name": "Seat cooler left",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "medium": "Medium",
+                    "off": "Off"
+                }
+            },
+            "climate_state_seat_fan_front_right": {
+                "name": "Seat cooler right",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "medium": "Medium",
+                    "off": "Off"
+                }
+            },
             "climate_state_seat_heater_left": {
                 "name": "Seat heater left",
                 "state": {

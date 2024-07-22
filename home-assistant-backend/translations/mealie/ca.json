@@ -1,7 +1,9 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El servei ja est\u00e0 configurat"
+            "already_configured": "El servei ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -9,10 +11,23 @@
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "Token d'API"
+                }
+            },
+            "reconfigure_confirm": {
+                "data": {
+                    "api_token": "Token d'API",
+                    "host": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
             "user": {
                 "data": {
                     "api_token": "Token d'API",
-                    "host": "URL"
+                    "host": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
                 }
             }
         }
@@ -46,6 +61,22 @@
                 }
             },
             "name": "Obt\u00e9 pla d'\u00e0pats"
+        },
+        "get_recipe": {
+            "fields": {
+                "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
+                    "name": "Inst\u00e0ncia de Mealie"
+                }
+            }
+        },
+        "import_recipe": {
+            "fields": {
+                "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
+                    "name": "Inst\u00e0ncia de Mealie"
+                }
+            }
         }
     }
 }

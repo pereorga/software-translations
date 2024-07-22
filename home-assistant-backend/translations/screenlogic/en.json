@@ -30,12 +30,12 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "Use of an Area, Device, or Entity as a target for ScreenLogic services is being deprecated. Instead, use `config_entry` with the entry_id of the desired ScreenLogic integration.\n\nPlease update your automations and scripts and select **submit** to fix this issue.",
-                        "title": "Deprecating target for ScreenLogic services"
+                        "description": "Use of an Area, Device, or Entity as a target for ScreenLogic actions is being deprecated. Instead, use `config_entry` with the entry_id of the desired ScreenLogic integration.\n\nPlease update your automations and scripts and select **submit** to fix this issue.",
+                        "title": "Deprecating target for ScreenLogic actions"
                     }
                 }
             },
-            "title": "Deprecating use of target for ScreenLogic services"
+            "title": "Deprecating use of target for ScreenLogic actions"
         }
     },
     "options": {
@@ -58,7 +58,7 @@
                     "name": "Color Mode"
                 },
                 "config_entry": {
-                    "description": "The config entry to use for this service.",
+                    "description": "The config entry to use for this action.",
                     "name": "Config Entry"
                 }
             },
@@ -68,7 +68,7 @@
             "description": "Begins super chlorination, running for the specified period or 24 hours if none is specified.",
             "fields": {
                 "config_entry": {
-                    "description": "The config entry to use for this service.",
+                    "description": "The config entry to use for this action.",
                     "name": "Config Entry"
                 },
                 "runtime": {
@@ -82,7 +82,7 @@
             "description": "Stops super chlorination.",
             "fields": {
                 "config_entry": {
-                    "description": "The config entry to use for this service.",
+                    "description": "The config entry to use for this action.",
                     "name": "Config Entry"
                 }
             },

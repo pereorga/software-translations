@@ -178,6 +178,14 @@
         "invalid_platform_config": {
             "description": "Home Assistant detected an invalid config for a manually configured item.\n\nPlatform domain: **{domain}**\nConfiguration file: **{config_file}**\nNear line: **{line}**\nConfiguration found:\n```yaml\n{config}\n```\nError: **{error}**.\n\nMake sure the configuration is valid and [reload](/developer-tools/yaml) the manually configured MQTT items or restart Home Assistant to fix this issue.",
             "title": "Invalid config found for mqtt {domain} item"
+        },
+        "payload_template_deprecation": {
+            "description": "Deprecated `payload_template` option used in MQTT publish action call to topic `{topic}` from payload template `{payload_template}`. Use the `payload` option instead. In automations templates are supported natively. Update the automation or script to use the `payload` option instead and restart Home Assistant to fix this issue.",
+            "title": "Deprecated option used in mqtt publish action call"
+        },
+        "topic_template_deprecation": {
+            "description": "Deprecated `topic_template` option used in MQTT publish action call to topic `{topic}` from topic template `{topic_template}`. Use the `topic` option instead. In automations templates are supported natively. Update the automation or script to use the `topic` option instead and restart Home Assistant to fix this issue.",
+            "title": "Deprecated option used in mqtt publish action call"
         }
     },
     "options": {

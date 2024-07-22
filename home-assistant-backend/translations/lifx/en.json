@@ -184,6 +184,36 @@
             },
             "name": "Pulse effect"
         },
+        "effect_sky": {
+            "description": "Starts the firmware-based Sky effect on LIFX Ceiling.",
+            "fields": {
+                "cloud_saturation_max": {
+                    "description": "Maximum cloud saturation.",
+                    "name": "Cloud Saturation maximum"
+                },
+                "cloud_saturation_min": {
+                    "description": "Minimum cloud saturation.",
+                    "name": "Cloud saturation Minimum"
+                },
+                "palette": {
+                    "description": "List of 1 to 6 colors as hue (0-360), saturation (0-100), brightness (0-100) and kelvin (1500-9000) values to use for this effect.",
+                    "name": "Palette"
+                },
+                "power_on": {
+                    "description": "Powered off lights will be turned on before starting the effect.",
+                    "name": "Power on"
+                },
+                "sky_type": {
+                    "description": "The style of sky that will be animated by the effect.",
+                    "name": "Sky type"
+                },
+                "speed": {
+                    "description": "How long the Sunrise and Sunset sky types will take to complete. For the Cloud sky type, it is the speed of the clouds across the device.",
+                    "name": "Speed"
+                }
+            },
+            "name": "Sky effect"
+        },
         "effect_stop": {
             "description": "Stops a running effect.",
             "name": "Stop effect"

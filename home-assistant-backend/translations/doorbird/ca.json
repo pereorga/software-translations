@@ -3,7 +3,8 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "link_local_address": "L'enlla\u00e7 amb adreces locals no est\u00e0 perm\u00e8s",
-            "not_doorbird_device": "Aquest dispositiu no \u00e9s DoorBird"
+            "not_doorbird_device": "Aquest dispositiu no \u00e9s DoorBird",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "[%key::common::config_flow::error::cannot_connect%]",
@@ -12,6 +13,12 @@
         },
         "flow_title": "{name} ({host})",
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -23,6 +30,11 @@
         }
     },
     "entity": {
+        "button": {
+            "ir": {
+                "name": "IR"
+            }
+        },
         "camera": {
             "last_motion": {
                 "name": "\u00daltima detecci\u00f3 de moviment"

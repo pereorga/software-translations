@@ -92,12 +92,12 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "Use `homeassistant.update_entity` instead which will update all ring entities.\n\nPlease replace calls to this service and adjust your automations and scripts and select **submit** to close this issue.",
-                        "title": "Detected use of deprecated service `ring.update`"
+                        "description": "Use `homeassistant.update_entity` instead which will update all ring entities.\n\nPlease replace uses of this action and adjust your automations and scripts and select **submit** to close this issue.",
+                        "title": "Detected use of deprecated action `ring.update`"
                     }
                 }
             },
-            "title": "Detected use of deprecated service `ring.update`"
+            "title": "Detected use of deprecated action `ring.update`"
         }
     },
     "services": {

@@ -172,7 +172,7 @@
     },
     "services": {
         "reboot": {
-            "description": "Reboots the NAS. This service is deprecated and will be removed in future release. Please use the corresponding button entity.",
+            "description": "Reboots the NAS. This action is deprecated and will be removed in future release. Please use the corresponding button entity.",
             "fields": {
                 "serial": {
                     "description": "Serial of the NAS to reboot; required when multiple NAS are configured.",
@@ -182,7 +182,7 @@
             "name": "Reboot"
         },
         "shutdown": {
-            "description": "Shutdowns the NAS. This service is deprecated and will be removed in future release. Please use the corresponding button entity.",
+            "description": "Shutdowns the NAS. This action is deprecated and will be removed in future release. Please use the corresponding button entity.",
             "fields": {
                 "serial": {
                     "description": "Serial of the NAS to shutdown; required when multiple NAS are configured.",

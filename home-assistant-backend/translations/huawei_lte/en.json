@@ -389,7 +389,7 @@
             "name": "Resume integration"
         },
         "suspend_integration": {
-            "description": "Suspends integration. Suspending logs the integration out from the router, and stops accessing it. Useful e.g. if accessing the router web interface from another source such as a web browser is temporarily required. Invoke the resume_integration service to resume.\n.",
+            "description": "Suspends integration. Suspending logs the integration out from the router, and stops accessing it. Useful e.g. if accessing the router web interface from another source such as a web browser is temporarily required. Invoke the resume_integration action to resume.\n.",
             "fields": {
                 "url": {
                     "description": "URL of router to suspend integration for; optional when only one is configured.",

@@ -15,6 +15,7 @@
             "options": {
                 "data": {
                     "add_holidays": "Add holidays",
+                    "category": "Additional category as holiday",
                     "days_offset": "Offset",
                     "excludes": "Excludes",
                     "language": "Language for named holidays",
@@ -24,6 +25,7 @@
                 },
                 "data_description": {
                     "add_holidays": "Add custom holidays as YYYY-MM-DD or as range using `,` as separator",
+                    "category": "Select additional categories to include as holidays",
                     "days_offset": "Days offset from current day",
                     "excludes": "List of workdays to exclude, notice the keyword `holiday` and read the documentation on how to use it correctly",
                     "language": "Language to use when configuring named holiday exclusions",
@@ -167,6 +169,7 @@
             "init": {
                 "data": {
                     "add_holidays": "Add holidays",
+                    "category": "Additional category as holiday",
                     "days_offset": "Offset",
                     "excludes": "Excludes",
                     "language": "Language for named holidays",
@@ -176,6 +179,7 @@
                 },
                 "data_description": {
                     "add_holidays": "Add custom holidays as YYYY-MM-DD or as range using `,` as separator",
+                    "category": "Select additional categories to include as holidays",
                     "days_offset": "Days offset from current day",
                     "excludes": "List of workdays to exclude, notice the keyword `holiday` and read the documentation on how to use it correctly",
                     "language": "Language to use when configuring named holiday exclusions",
@@ -188,6 +192,24 @@
         }
     },
     "selector": {
+        "category": {
+            "options": {
+                "armed_forces": "Armed forces",
+                "bank": "Bank",
+                "chinese": "Chinese",
+                "christian": "Christian",
+                "government": "Government",
+                "half_day": "Half day",
+                "hebrew": "Hebrew",
+                "hindu": "Hindu",
+                "islamic": "Islamic",
+                "optional": "Optional",
+                "public": "Public",
+                "school": "School",
+                "unofficial": "Unofficial",
+                "workday": "Workday"
+            }
+        },
         "country": {
             "options": {
                 "none": "No country"

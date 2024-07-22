@@ -14,6 +14,40 @@
                 },
                 "title": "Sensor binari de plantilla"
             },
+            "button": {
+                "data": {
+                    "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "press": "Accions en pr\u00e9mer"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Bot\u00f3 de plantilla"
+            },
+            "image": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'imatge"
+            },
+            "select": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                }
+            },
             "sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
@@ -29,10 +63,27 @@
                 },
                 "title": "Sensor de plantilla"
             },
+            "switch": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat",
+                    "turn_off": "Accions en desactivar",
+                    "turn_on": "Accions en activar",
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'interruptor"
+            },
             "user": {
                 "menu_options": {
                     "binary_sensor": "Plantilla d'un sensor binari",
-                    "sensor": "Plantilla d'un sensor"
+                    "button": "Plantilla d'un bot\u00f3",
+                    "image": "Plantilla d'una imatge",
+                    "sensor": "Plantilla d'un sensor",
+                    "switch": "Plantilla d'un interruptor"
                 },
                 "title": "Ajudant de plantilla"
             }
@@ -52,6 +103,37 @@
                 },
                 "title": "Sensor binari de plantilla"
             },
+            "button": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "press": "Accions en pr\u00e9mer"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Bot\u00f3 de plantilla"
+            },
+            "image": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'imatge"
+            },
+            "select": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                }
+            },
             "sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
@@ -65,6 +147,20 @@
                     "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor de plantilla"
+            },
+            "switch": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat",
+                    "turn_off": "Accions en desactivar",
+                    "turn_on": "Accions en activar",
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'interruptor"
             }
         }
     },
@@ -100,6 +196,13 @@
                 "update": "Actualitzaci\u00f3",
                 "vibration": "Vibraci\u00f3",
                 "window": "Finestra"
+            }
+        },
+        "button_device_class": {
+            "options": {
+                "identify": "Identifica",
+                "restart": "Reinicia",
+                "update": "Actualitza"
             }
         },
         "sensor_device_class": {

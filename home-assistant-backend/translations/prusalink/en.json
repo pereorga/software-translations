@@ -18,6 +18,11 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "mmu": {
+                "name": "MMU"
+            }
+        },
         "button": {
             "cancel_job": {
                 "name": "Cancel job"
@@ -52,6 +57,9 @@
             },
             "material": {
                 "name": "Material"
+            },
+            "nozzle_diameter": {
+                "name": "Nozzle Diameter"
             },
             "nozzle_target_temperature": {
                 "name": "Nozzle target temperature"

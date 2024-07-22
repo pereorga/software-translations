@@ -26,6 +26,31 @@
                 },
                 "title": "Template button"
             },
+            "image": {
+                "data": {
+                    "device_id": "Device",
+                    "name": "Name",
+                    "url": "URL",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
+                },
+                "title": "Template image"
+            },
+            "select": {
+                "data": {
+                    "device_id": "Device",
+                    "name": "Name",
+                    "options": "Available options",
+                    "select_option": "Actions on select",
+                    "state": "State template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
+                },
+                "title": "Template select"
+            },
             "sensor": {
                 "data": {
                     "device_class": "Device class",
@@ -41,12 +66,30 @@
                 },
                 "title": "Template sensor"
             },
+            "switch": {
+                "data": {
+                    "device_id": "Device",
+                    "name": "Name",
+                    "state": "State template",
+                    "turn_off": "Actions on turn off",
+                    "turn_on": "Actions on turn on",
+                    "value_template": "Value template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity.",
+                    "value_template": "Defines a template to set the state of the switch. If not defined, the switch will optimistically assume all commands are successful."
+                },
+                "title": "Template switch"
+            },
             "user": {
                 "description": "This helper allows you to create helper entities that define their state using a template.",
                 "menu_options": {
                     "binary_sensor": "Template a binary sensor",
                     "button": "Template a button",
-                    "sensor": "Template a sensor"
+                    "image": "Template a image",
+                    "select": "Template a select",
+                    "sensor": "Template a sensor",
+                    "switch": "Template a switch"
                 },
                 "title": "Template helper"
             }
@@ -81,6 +124,30 @@
                 },
                 "title": "Template button"
             },
+            "image": {
+                "data": {
+                    "device_id": "Device",
+                    "url": "URL",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
+                },
+                "title": "Template image"
+            },
+            "select": {
+                "data": {
+                    "device_id": "Device",
+                    "name": "Name",
+                    "options": "Available options",
+                    "select_option": "Actions on select",
+                    "state": "State template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
+                },
+                "title": "Template select"
+            },
             "sensor": {
                 "data": {
                     "device_class": "Device class",
@@ -94,6 +161,21 @@
                     "device_id": "Select a device to link to this entity."
                 },
                 "title": "Template sensor"
+            },
+            "switch": {
+                "data": {
+                    "device_id": "Device",
+                    "name": "Name",
+                    "state": "State template",
+                    "turn_off": "Actions on turn off",
+                    "turn_on": "Actions on turn on",
+                    "value_template": "Value template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity.",
+                    "value_template": "Defines a template to set the state of the switch. If not defined, the switch will optimistically assume all commands are successful."
+                },
+                "title": "Template switch"
             }
         }
     },

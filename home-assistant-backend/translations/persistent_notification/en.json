@@ -1,7 +1,7 @@
 {
     "services": {
         "create": {
-            "description": "Shows a notification on the **Notifications** panel.",
+            "description": "Shows a notification on the notifications panel.",
             "fields": {
                 "message": {
                     "description": "Message body of the notification.",
@@ -19,7 +19,7 @@
             "name": "Create"
         },
         "dismiss": {
-            "description": "Removes a notification from the **Notifications** panel.",
+            "description": "Removes a notification from the notifications panel.",
             "fields": {
                 "notification_id": {
                     "description": "ID of the notification to be removed.",
@@ -29,7 +29,7 @@
             "name": "Dismiss"
         },
         "dismiss_all": {
-            "description": "Removes all notifications from the **Notifications** panel.",
+            "description": "Removes all notifications from the notifications panel.",
             "name": "Dismiss all"
         }
     },

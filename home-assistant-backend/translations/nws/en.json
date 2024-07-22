@@ -19,5 +19,25 @@
                 "title": "Connect to the National Weather Service"
             }
         }
+    },
+    "selector": {
+        "nws_forecast_type": {
+            "options": {
+                "hourly": "Hourly",
+                "twice_daily": "Twice daily"
+            }
+        }
+    },
+    "services": {
+        "get_forecasts_extra": {
+            "description": "Get extra data for weather forecasts.",
+            "fields": {
+                "type": {
+                    "description": "Forecast type: hourly or twice_daily.",
+                    "name": "Forecast type"
+                }
+            },
+            "name": "Get extra forecasts data."
+        }
     }
 }

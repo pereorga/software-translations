@@ -40,12 +40,12 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "Use `calendar.get_events` instead which supports multiple entities.\n\nPlease replace this service and adjust your automations and scripts and select **submit** to close this issue.",
-                        "title": "Detected use of deprecated service `calendar.list_events`"
+                        "description": "Use `calendar.get_events` instead which supports multiple entities.\n\nPlease replace this action and adjust your automations and scripts and select **submit** to close this issue.",
+                        "title": "Detected use of deprecated action `calendar.list_events`"
                     }
                 }
             },
-            "title": "Detected use of deprecated service `calendar.list_events`"
+            "title": "Detected use of deprecated action `calendar.list_events`"
         },
         "platform_integration_no_support": {
             "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",

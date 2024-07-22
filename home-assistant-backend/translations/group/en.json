@@ -11,6 +11,14 @@
                 "description": "If \"all entities\" is enabled, the group's state is on only if all members are on. If \"all entities\" is disabled, the group's state is on if any member is on.",
                 "title": "Add Group"
             },
+            "button": {
+                "data": {
+                    "entities": "Members",
+                    "hide_members": "Hide members",
+                    "name": "Name"
+                },
+                "title": "Add Group"
+            },
             "cover": {
                 "data": {
                     "entities": "Members",
@@ -85,6 +93,7 @@
                 "description": "Groups allow you to create a new entity that represents multiple entities of the same type.",
                 "menu_options": {
                     "binary_sensor": "Binary sensor group",
+                    "button": "Button group",
                     "cover": "Cover group",
                     "event": "Event group",
                     "fan": "Fan group",
@@ -147,6 +156,12 @@
                     "hide_members": "Hide members"
                 },
                 "description": "If \"all entities\" is enabled, the group's state is on only if all members are on. If \"all entities\" is disabled, the group's state is on if any member is on."
+            },
+            "button": {
+                "data": {
+                    "entities": "Members",
+                    "hide_members": "Hide members"
+                }
             },
             "cover": {
                 "data": {

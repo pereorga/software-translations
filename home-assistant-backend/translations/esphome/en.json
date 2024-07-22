@@ -8,7 +8,7 @@
             "mqtt_missing_ip": "Missing IP address in MQTT properties.",
             "mqtt_missing_mac": "Missing MAC address in MQTT properties.",
             "reauth_successful": "Re-authentication was successful",
-            "service_received": "Service received"
+            "service_received": "Action received"
         },
         "error": {
             "connection_error": "Can't connect to ESP. Please make sure your YAML file contains an 'api:' line.",
@@ -96,15 +96,15 @@
             "title": "Update {name} with ESPHome {version} or later"
         },
         "service_calls_not_allowed": {
-            "description": "The ESPHome device attempted to make a Home Assistant service call, but this functionality is not enabled.\n\nIf you trust this device and want to allow it to make Home Assistant service calls, you can enable this functionality in the options flow.",
-            "title": "{name} is not permitted to call Home Assistant services"
+            "description": "The ESPHome device attempted to perform a Home Assistant action, but this functionality is not enabled.\n\nIf you trust this device and want to allow it to perfom Home Assistant action, you can enable this functionality in the options flow.",
+            "title": "{name} is not permitted to perform Home Assistant actions"
         }
     },
     "options": {
         "step": {
             "init": {
                 "data": {
-                    "allow_service_calls": "Allow the device to make Home Assistant service calls."
+                    "allow_service_calls": "Allow the device to perform Home Assistant actions."
                 }
             }
         }

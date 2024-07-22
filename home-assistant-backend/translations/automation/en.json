@@ -39,12 +39,12 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "The automation \"{name}\" (`{entity_id}`) has an action that calls an unknown service: `{service}`.\n\nThis error prevents the automation from running correctly. Maybe this service is no longer available, or perhaps a typo caused it.\n\nTo fix this error, [edit the automation]({edit}) and remove the action that calls this service.\n\nClick on SUBMIT below to confirm you have fixed this automation.",
-                        "title": "{name} uses an unknown service"
+                        "description": "The automation \"{name}\" (`{entity_id}`) has an unknown action: `{service}`.\n\nThis error prevents the automation from running correctly. Maybe this action is no longer available, or perhaps a typo caused it.\n\nTo fix this error, [edit the automation]({edit}) and remove this action.\n\nClick on SUBMIT below to confirm you have fixed this automation.",
+                        "title": "{name} uses an unknown action"
                     }
                 }
             },
-            "title": "{name} uses an unknown service"
+            "title": "{name} uses an unknown action"
         },
         "validation_failed_actions": {
             "description": "The automation \"{name}\" (`{entity_id}`) is not active because its actions could not be set up.\n\nError:`{error}`.\n\nTo fix this error, [edit the automation]({edit}) to correct it, then save and reload the automation configuration.",

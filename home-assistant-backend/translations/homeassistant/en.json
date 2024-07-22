@@ -42,22 +42,22 @@
             "message": "Unknown error when validating config for {domain} from integration {p_name} - {error}."
         },
         "service_does_not_support_response": {
-            "message": "A service which does not return responses can't be called with {return_response}."
+            "message": "An action which does not return responses can't be called with {return_response}."
         },
         "service_does_not_supports_reponse": {
             "message": "A service which does not return responses can't be called with {return_response}."
         },
         "service_lacks_response_request": {
-            "message": "The service call requires responses and must be called with {return_response}."
+            "message": "The action requires responses and must be called with {return_response}."
         },
         "service_not_found": {
-            "message": "Service {domain}.{service} not found."
+            "message": "Action {domain}.{service} not found."
         },
         "service_reponse_invalid": {
-            "message": "Failed to process the returned service response data, expected a dictionary, but got {response_data_type}."
+            "message": "Failed to process the returned action response data, expected a dictionary, but got {response_data_type}."
         },
         "service_should_be_blocking": {
-            "message": "A non blocking service call with argument {non_blocking_argument} can't be used together with argument {return_response}."
+            "message": "A non blocking action call with argument {non_blocking_argument} can't be used together with argument {return_response}."
         }
     },
     "issues": {
@@ -200,15 +200,15 @@
             "name": "Stop"
         },
         "toggle": {
-            "description": "Generic service to toggle devices on/off under any domain.",
+            "description": "Generic action to toggle devices on/off under any domain.",
             "name": "Generic toggle"
         },
         "turn_off": {
-            "description": "Generic service to turn devices off under any domain.",
+            "description": "Generic action to turn devices off under any domain.",
             "name": "Generic turn off"
         },
         "turn_on": {
-            "description": "Generic service to turn devices on under any domain.",
+            "description": "Generic action to turn devices on under any domain.",
             "name": "Generic turn on"
         },
         "update_entity": {

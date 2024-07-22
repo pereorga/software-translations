@@ -1,4 +1,7 @@
 {
+    "common": {
+        "validation_failed_title": "Script {name} failed to set up"
+    },
     "entity_component": {
         "_": {
             "name": "Script",
@@ -29,6 +32,20 @@
                     }
                 }
             }
+        }
+    },
+    "issues": {
+        "validation_failed_blueprint": {
+            "description": "The blueprinted script \"{name}\" (`{entity_id}`) failed to set up.\n\nError:`{error}`.\n\nTo fix this error, [edit the script]({edit}) to correct it, then save and reload the script configuration.",
+            "title": "Script {name} failed to set up"
+        },
+        "validation_failed_schema": {
+            "description": "The script \"{name}\" (`{entity_id}`) is not active because the configuration has errors.\n\nError:`{error}`.\n\nTo fix this error, [edit the script]({edit}) to correct it, then save and reload the script configuration.",
+            "title": "Script {name} failed to set up"
+        },
+        "validation_failed_sequence": {
+            "description": "The script \"{name}\" (`{entity_id}`) is not active because its sequence could not be set up.\n\nError:`{error}`.\n\nTo fix this error, [edit the script]({edit}) to correct it, then save and reload the script configuration.",
+            "title": "Script {name} failed to set up"
         }
     },
     "services": {
