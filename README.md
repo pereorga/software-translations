@@ -10,6 +10,7 @@ https://github.com/Softcatala/translation-memory-tools/.
 * dos2unix
 * gettext
 * Translate Toolkit
+* Node.js
 
 ## Installation
 
