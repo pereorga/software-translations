@@ -15,4 +15,7 @@ for file in "${files[@]}"; do
         -i "tmp/iOS/Sources/App/Resources/ca-ES.lproj/$file.strings" \
         -o "translations/$file.po" \
         --template="tmp/iOS/Sources/App/Resources/en.lproj/$file.strings"
+
+    # Try to remove English (untranslated) strings.
+    node ../removeIdenticalMsgidMsgstr.js "translations/$file.po"
 done

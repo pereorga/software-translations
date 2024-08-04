@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-22 08:03+0000\n"
+"POT-Creation-Date: 2024-08-04 18:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.0\n"
+"X-Generator: Translate Toolkit 3.8.4\n"
 
 #: credits.text
 msgid "Created by [royal]Anuken[] - [sky]anukendev@gmail.com[]"
@@ -153,15 +153,6 @@ msgstr "Contingut"
 #: load.system
 msgid "System"
 msgstr "Sistema"
-
-#: load.mod
-msgctxt "load.mod"
-msgid "Mods"
-msgstr "Mods"
-
-#: load.scripts
-msgid "Scripts"
-msgstr "Scripts"
 
 #: be.update
 msgid "A new Bleeding Edge build is available:"
@@ -558,11 +549,6 @@ msgstr ""
 "\n"
 "Per evitar un bucle de fallades, [red]s’han desactivat tots els mods.[]"
 
-#: mods
-msgctxt "mods"
-msgid "Mods"
-msgstr "Mods"
-
 #: mods.none
 msgid "[lightgray]No mods found!"
 msgstr "[lightgray]No s’ha trobat cap mod!"
@@ -595,10 +581,6 @@ msgstr "El programa es tancarà per a carregar els mods."
 msgid "[[Installed]"
 msgstr "[[Instal·lat]"
 
-#: mod.display
-msgid "[gray]Mod:[orange] {0}"
-msgstr "[gray]Mod:[orange] {0}"
-
 #: mod.enabled
 msgid "[lightgray]Enabled"
 msgstr "[lightgray]Activat"
@@ -626,10 +608,6 @@ msgstr "El mod no es pot esborrar. Potser el fitxer està en ús."
 #: mod.incompatiblegame
 msgid "[red]Outdated Game"
 msgstr "[red]Versió no compatible"
-
-#: mod.incompatiblemod
-msgid "[red]Incompatible"
-msgstr "[red]Incompatible"
 
 #: mod.blacklisted
 msgid "[red]Unsupported"
@@ -912,16 +890,6 @@ msgstr "Arbre tecnològic"
 msgid "Tech Tree Selection"
 msgstr "Selecció de l’arbre tecnològic"
 
-#: techtree.serpulo
-msgctxt "techtree.serpulo"
-msgid "Serpulo"
-msgstr "Serpulo"
-
-#: techtree.erekir
-msgctxt "techtree.erekir"
-msgid "Erekir"
-msgstr "Erekir"
-
 #: research.load
 msgctxt "research.load"
 msgid "Load"
@@ -1197,18 +1165,6 @@ msgstr "Rastreja un jugador"
 msgid "Player name: [accent]{0}"
 msgstr "Nom del jugador: [accent]{0}"
 
-#: trace.ip
-msgid "IP: [accent]{0}"
-msgstr "IP: [accent]{0}"
-
-#: trace.id
-msgid "ID: [accent]{0}"
-msgstr "ID: [accent]{0}"
-
-#: trace.language
-msgid "Language: [accent]{0}"
-msgstr "Language: [accent]{0}"
-
 #: trace.mobile
 msgid "Mobile Client: [accent]{0}"
 msgstr "Client de mòbil: [accent]{0}"
@@ -1293,10 +1249,6 @@ msgstr "[scarlet]Servidor desactualitzat![]"
 msgid "[scarlet]Outdated Client![]"
 msgstr "[scarlet]Client desactualitzat![]"
 
-#: server.version
-msgid "[gray]v{0} {1}"
-msgstr "[gray]v{0} {1}"
-
 #: server.custombuild
 msgid "[accent]Custom Build"
 msgstr "[accent]Versió personalitzada"
@@ -1378,10 +1330,6 @@ msgstr "[accent]Es torna a connectar…"
 #: connecting.data
 msgid "[accent]Loading world data..."
 msgstr "[accent]Es carreguen les dades del món…"
-
-#: server.port
-msgid "Port:"
-msgstr "Port:"
 
 #: server.addressinuse
 msgid "Address already in use!"
@@ -1754,10 +1702,6 @@ msgstr ""
 msgid "[accent]Command Mode"
 msgstr "[accent]Mode d’Ordres"
 
-#: commandmode.nounits
-msgid "[no units]"
-msgstr "[no units]"
-
 #: wave
 msgid "[accent]Wave {0}"
 msgstr "[accent]Onada {0}"
@@ -1946,10 +1890,6 @@ msgstr ""
 msgid "Planet:"
 msgstr "Planeta:"
 
-#: editor.sector
-msgid "Sector:"
-msgstr "Sector:"
-
 #: editor.seed
 msgid "Seed:"
 msgstr "Llavor:"
@@ -2108,10 +2048,6 @@ msgstr "Desplaça en l’eix X"
 msgid "Shift Y"
 msgstr "Desplaça en l’eix Y"
 
-#: workshop
-msgid "Workshop"
-msgstr "Workshop"
-
 #: waves.title
 msgctxt "waves.title"
 msgid "Waves"
@@ -2178,10 +2114,6 @@ msgstr "Previsualització"
 #: waves.edit
 msgid "Edit..."
 msgstr "Edita"
-
-#: waves.random
-msgid "Random"
-msgstr "Random"
 
 #: waves.copy
 msgctxt "waves.copy"
@@ -2253,10 +2185,6 @@ msgstr "Mostra-les totes"
 msgid "counts"
 msgstr "comptades"
 
-#: wavemode.totals
-msgid "totals"
-msgstr "totals"
-
 #: wavemode.health
 msgid "health"
 msgstr "salut"
@@ -2280,10 +2208,6 @@ msgstr "Variables"
 #: logic.clear.confirm
 msgid "Are you sure you want to clear all code from this processor?"
 msgstr "Esteu segur que voleu esborrar tot el codi d’aquest processador?"
-
-#: logic.globals
-msgid "Built-in Variables"
-msgstr "Built-in Variables"
 
 #: editor.name
 msgctxt "editor.name"
@@ -2684,17 +2608,9 @@ msgstr "Llindar"
 msgid "Circle Scale"
 msgstr "Escala del cercle"
 
-#: filter.option.octaves
-msgid "Octaves"
-msgstr "Octaves"
-
 #: filter.option.falloff
 msgid "Falloff"
 msgstr "Caiguda"
-
-#: filter.option.angle
-msgid "Angle"
-msgstr "Angle"
 
 #: filter.option.tilt
 msgid "Tilt"
@@ -2898,17 +2814,9 @@ msgstr "Carrega"
 msgid "Save"
 msgstr "Desa"
 
-#: fps
-msgid "FPS: {0}"
-msgstr "FPS: {0}"
-
 #: ping
 msgid "Ping: {0}ms"
 msgstr "Ping: {0} ms"
-
-#: tps
-msgid "TPS: {0}"
-msgstr "TPS: {0}"
 
 #: memory
 msgid "Mem: {0}mb"
@@ -2932,18 +2840,9 @@ msgstr "Reinicieu el joc perquè s’apliquin els canvis d’idioma."
 msgid "Settings"
 msgstr "Configuració"
 
-#: tutorial
-msgid "Tutorial"
-msgstr "Tutorial"
-
 #: tutorial.retake
 msgid "Re-Take Tutorial"
 msgstr "Continua el tutorial"
-
-#: editor
-msgctxt "editor"
-msgid "Editor"
-msgstr "Editor"
 
 #: mapeditor
 msgid "Map Editor"
@@ -3080,10 +2979,6 @@ msgstr "Punt"
 #: marker.shape.name
 msgid "Shape"
 msgstr "Forma"
-
-#: marker.text.name
-msgid "Text"
-msgstr "Text"
 
 #: marker.line.name
 msgid "Line"
@@ -3373,11 +3268,6 @@ msgstr ""
 "S’ha derrotat l’enemic de {0}.\n"
 "[lightgray]S’ha conquerit l’últim sector."
 
-#: sectorlist
-msgctxt "sectorlist"
-msgid "Sectors"
-msgstr "Sectors"
-
 #: sectorlist.attacked
 msgid "{0} under attack"
 msgstr "Ataquen {0}."
@@ -3442,10 +3332,6 @@ msgstr "Reanomena el sector"
 #: sectors.enemybase
 msgid "[scarlet]Enemy Base"
 msgstr "[scarlet]Base enemiga"
-
-#: sectors.vulnerable
-msgid "[scarlet]Vulnerable"
-msgstr "[scarlet]Vulnerable"
 
 #: sectors.underattack
 msgid "[scarlet]Under attack! [accent]{0}% damaged"
@@ -3549,16 +3435,6 @@ msgstr "Erradicació"
 #: planets
 msgid "Planets"
 msgstr "Planetes"
-
-#: planet.serpulo.name
-msgctxt "planet.serpulo.name"
-msgid "Serpulo"
-msgstr "Serpulo"
-
-#: planet.erekir.name
-msgctxt "planet.erekir.name"
-msgid "Erekir"
-msgstr "Erekir"
 
 #: planet.sun.name
 msgid "Sun"
@@ -4206,10 +4082,6 @@ msgstr "Canvia"
 msgid "Reset"
 msgstr "Restableix"
 
-#: settings.controls
-msgid "Controls"
-msgstr "Controls"
-
 #: settings.game
 msgid "Game"
 msgstr "Joc"
@@ -4292,10 +4164,6 @@ msgstr "[scarlet]Entorn no vàlid"
 msgid "Yes"
 msgstr "Sí"
 
-#: no
-msgid "No"
-msgstr "No"
-
 #: info.title
 msgid "Info"
 msgstr "Informació"
@@ -4319,10 +4187,6 @@ msgstr "[lightgray]Últim accés: {0}"
 #: lastcommanded
 msgid "[lightgray]Last Commanded: {0}"
 msgstr "[lightgray]Última ordre: {0}"
-
-#: block.unknown
-msgid "[lightgray]???"
-msgstr "[lightgray]???"
 
 #: stat.showinmap
 msgid "<load map to show>"
@@ -4887,10 +4751,6 @@ msgstr "Elements: {0}"
 msgid "Capacity: {0}"
 msgstr "Capacitat: {0}"
 
-#: bar.unitcap
-msgid "{0} {1}/{2}"
-msgstr "{0} {1}/{2}"
-
 #: bar.liquid
 msgid "Liquid"
 msgstr "Líquid"
@@ -5078,17 +4938,9 @@ msgstr "min"
 msgid "/sec"
 msgstr "/s"
 
-#: unit.perminute
-msgid "/min"
-msgstr "/min"
-
 #: unit.timesspeed
 msgid "x speed"
 msgstr "× velocitat"
-
-#: unit.percent
-msgid "%"
-msgstr "%"
 
 #: unit.shieldhealth
 msgid "shield health"
@@ -5097,10 +4949,6 @@ msgstr "salut d’escut"
 #: unit.items
 msgid "items"
 msgstr "elements"
-
-#: unit.thousands
-msgid "k"
-msgstr "k"
 
 #: unit.millions
 msgid "mil"
@@ -5122,12 +4970,6 @@ msgstr "/dispar"
 msgctxt "category.purpose"
 msgid "Purpose"
 msgstr "Funció"
-
-#: category.general
-msgctxt "category.general"
-"category.general"
-msgid "General"
-msgstr "General"
 
 #: category.power
 msgctxt "category.power"
@@ -5164,8 +5006,8 @@ msgid ""
 "When enabled, music will always play on loop in-game.\n"
 "When disabled, it only plays at random intervals."
 msgstr ""
-"Quan està activat, la música es reproduirà en bucle durant les partides.Quan "
-"està desactivat, només es reproduirà a intervals aleatoris."
+"Quan està activat, la música es reproduirà en bucle durant les partides.\n"
+"Quan està desactivat, només es reproduirà a intervals aleatoris."
 
 #: setting.skipcoreanimation.name
 msgid "Skip Core Launch/Land Animation"
@@ -5255,10 +5097,6 @@ msgstr "FPS màx."
 msgid "None"
 msgstr "Cap"
 
-#: setting.fpscap.text
-msgid "{0} FPS"
-msgstr "{0} FPS"
-
 #: setting.uiscale.name
 msgid "UI Scaling"
 msgstr "Escala de la interfície"
@@ -5278,10 +5116,6 @@ msgstr "Entrenament"
 #: setting.difficulty.easy
 msgid "Easy"
 msgstr "Fàcil"
-
-#: setting.difficulty.normal
-msgid "Normal"
-msgstr "Normal"
 
 #: setting.difficulty.hard
 msgid "Hard"
@@ -5513,11 +5347,6 @@ msgid ""
 msgstr ""
 "[scarlet]La majoria de dreceres no estan disponibles en les versions per a "
 "pantalles tàctils. Només està inclòs el moviment bàsic."
-
-#: category.general.name
-msgctxt "category.general.name"
-msgid "General"
-msgstr "General"
 
 #: category.view.name
 msgid "View"
@@ -5802,10 +5631,6 @@ msgstr "Deixa la càrrega"
 msgid "Shoot"
 msgstr "Dispara"
 
-#: keybind.zoom.name
-msgid "Zoom"
-msgstr "Zoom"
-
 #: keybind.menu.name
 msgctxt "keybind.menu.name"
 msgid "Menu"
@@ -5910,11 +5735,6 @@ msgstr "Mode lliure"
 #: mode.sandbox.description
 msgid "Infinite resources and no timer for waves."
 msgstr "Recursos infinits i sense temporitzador per a les onades."
-
-#: mode.editor.name
-msgctxt "mode.editor.name"
-msgid "Editor"
-msgstr "Editor"
 
 #: mode.pvp.name
 msgid "PvP"
@@ -6172,10 +5992,6 @@ msgctxt "rules.title.unit"
 msgid "Units"
 msgstr "Unitats"
 
-#: rules.title.experimental
-msgid "Experimental"
-msgstr "Experimental"
-
 #: rules.title.environment
 msgid "Environment"
 msgstr "Entorn"
@@ -6250,10 +6066,6 @@ msgctxt "content.item.name"
 msgid "Items"
 msgstr "Elements"
 
-#: content.liquid.name
-msgid "Fluids"
-msgstr "Fluids"
-
 #: content.unit.name
 msgctxt "content.unit.name"
 msgid "Units"
@@ -6266,11 +6078,6 @@ msgstr "Blocs"
 #: content.status.name
 msgid "Status Effects"
 msgstr "Efectes d’estat"
-
-#: content.sector.name
-msgctxt "content.sector.name"
-msgid "Sectors"
-msgstr "Sectors"
 
 #: content.team.name
 msgid "Factions"
@@ -6409,10 +6216,6 @@ msgstr "Ozó"
 msgid "Hydrogen"
 msgstr "Hidrogen"
 
-#: liquid.nitrogen.name
-msgid "Nitrogen"
-msgstr "Nitrogen"
-
 #: liquid.cyanogen.name
 msgid "Cyanogen"
 msgstr "Cianogen"
@@ -6425,14 +6228,6 @@ msgstr "Daga"
 msgid "Mace"
 msgstr "Maça"
 
-#: unit.fortress.name
-msgid "Fortress"
-msgstr "Fortress"
-
-#: unit.nova.name
-msgid "Nova"
-msgstr "Nova"
-
 #: unit.pulsar.name
 msgid "Pulsar"
 msgstr "Púlsar"
@@ -6441,17 +6236,9 @@ msgstr "Púlsar"
 msgid "Quasar"
 msgstr "Quàsar"
 
-#: unit.crawler.name
-msgid "Crawler"
-msgstr "Crawler"
-
 #: unit.atrax.name
 msgid "Atrax"
 msgstr "Àtrax"
-
-#: unit.spiroct.name
-msgid "Spiroct"
-msgstr "Spiroct"
 
 #: unit.arkyid.name
 msgid "Arkyid"
@@ -6461,10 +6248,6 @@ msgstr "Àrquid"
 msgid "Toxopid"
 msgstr "Toxòpid"
 
-#: unit.flare.name
-msgid "Flare"
-msgstr "Flare"
-
 #: unit.horizon.name
 msgid "Horizon"
 msgstr "Horitzó"
@@ -6473,190 +6256,33 @@ msgstr "Horitzó"
 msgid "Zenith"
 msgstr "Zenit"
 
-#: unit.antumbra.name
-msgid "Antumbra"
-msgstr "Antumbra"
-
 #: unit.eclipse.name
 msgid "Eclipse"
 msgstr "Eclipsi"
-
-#: unit.mono.name
-msgid "Mono"
-msgstr "Mono"
 
 #: unit.poly.name
 msgid "Poly"
 msgstr "Poli"
 
-#: unit.mega.name
-msgid "Mega"
-msgstr "Mega"
-
-#: unit.quad.name
-msgctxt "unit.quad.name"
-msgid "Quad"
-msgstr "Quad"
-
 #: unit.oct.name
 msgid "Oct"
 msgstr "Octo"
-
-#: unit.risso.name
-msgid "Risso"
-msgstr "Risso"
-
-#: unit.minke.name
-msgid "Minke"
-msgstr "Minke"
-
-#: unit.bryde.name
-msgid "Bryde"
-msgstr "Bryde"
-
-#: unit.sei.name
-msgid "Sei"
-msgstr "Sei"
-
-#: unit.omura.name
-msgid "Omura"
-msgstr "Omura"
-
-#: unit.retusa.name
-msgid "Retusa"
-msgstr "Retusa"
-
-#: unit.oxynoe.name
-msgid "Oxynoe"
-msgstr "Oxynoe"
-
-#: unit.cyerce.name
-msgid "Cyerce"
-msgstr "Cyerce"
-
-#: unit.aegires.name
-msgid "Aegires"
-msgstr "Aegires"
-
-#: unit.navanax.name
-msgid "Navanax"
-msgstr "Navanax"
 
 #: unit.alpha.name
 msgid "Alpha"
 msgstr "Alfa"
 
-#: unit.beta.name
-msgid "Beta"
-msgstr "Beta"
-
-#: unit.gamma.name
-msgid "Gamma"
-msgstr "Gamma"
-
-#: unit.scepter.name
-msgid "Scepter"
-msgstr "Scepter"
-
-#: unit.reign.name
-msgid "Reign"
-msgstr "Reign"
-
-#: unit.vela.name
-msgid "Vela"
-msgstr "Vela"
-
-#: unit.corvus.name
-msgid "Corvus"
-msgstr "Corvus"
-
-#: unit.stell.name
-msgid "Stell"
-msgstr "Stell"
-
-#: unit.locus.name
-msgid "Locus"
-msgstr "Locus"
-
 #: unit.precept.name
 msgid "Precept"
 msgstr "Norma"
-
-#: unit.vanquish.name
-msgid "Vanquish"
-msgstr "Vanquish"
-
-#: unit.conquer.name
-msgid "Conquer"
-msgstr "Conquer"
-
-#: unit.merui.name
-msgid "Merui"
-msgstr "Merui"
-
-#: unit.cleroi.name
-msgid "Cleroi"
-msgstr "Cleroi"
-
-#: unit.anthicus.name
-msgid "Anthicus"
-msgstr "Anthicus"
-
-#: unit.tecta.name
-msgid "Tecta"
-msgstr "Tecta"
-
-#: unit.collaris.name
-msgid "Collaris"
-msgstr "Collaris"
-
-#: unit.elude.name
-msgid "Elude"
-msgstr "Elude"
-
-#: unit.avert.name
-msgid "Avert"
-msgstr "Avert"
 
 #: unit.obviate.name
 msgid "Obviate"
 msgstr "Òbvia"
 
-#: unit.quell.name
-msgid "Quell"
-msgstr "Quell"
-
-#: unit.disrupt.name
-msgid "Disrupt"
-msgstr "Disrupt"
-
-#: unit.evoke.name
-msgid "Evoke"
-msgstr "Evoke"
-
-#: unit.incite.name
-msgid "Incite"
-msgstr "Incite"
-
-#: unit.emanate.name
-msgid "Emanate"
-msgstr "Emanate"
-
-#: unit.manifold.name
-msgid "Manifold"
-msgstr "Manifold"
-
 #: unit.assembly-drone.name
 msgid "Assembly Drone"
 msgstr "Dron de muntatge"
-
-#: unit.latum.name
-msgid "Latum"
-msgstr "Latum"
-
-#: unit.renale.name
-msgid "Renale"
-msgstr "Renale"
 
 #: block.parallax.name
 msgid "Parallax"
@@ -6987,10 +6613,6 @@ msgstr "Panell fosc 6"
 msgid "Dark Metal"
 msgstr "Metall fosc"
 
-#: block.basalt.name
-msgid "Basalt"
-msgstr "Basalt"
-
 #: block.hotrock.name
 msgid "Hot Rock"
 msgstr "Roca calenta"
@@ -7046,27 +6668,6 @@ msgstr "Porta"
 #: block.door-large.name
 msgid "Large Door"
 msgstr "Porta gran"
-
-#: block.duo.name
-msgid "Duo"
-msgstr "Duo"
-
-#: block.scorch.name
-msgid "Scorch"
-msgstr "Scorch"
-
-#: block.scatter.name
-msgctxt "block.scatter.name"
-msgid "Scatter"
-msgstr "Scatter"
-
-#: block.hail.name
-msgid "Hail"
-msgstr "Hail"
-
-#: block.lancer.name
-msgid "Lancer"
-msgstr "Lancer"
 
 #: block.conveyor.name
 msgid "Conveyor"
@@ -7268,26 +6869,6 @@ msgstr "Descarregador"
 msgid "Vault"
 msgstr "Contenidor gros"
 
-#: block.wave.name
-msgid "Wave"
-msgstr "Wave"
-
-#: block.tsunami.name
-msgid "Tsunami"
-msgstr "Tsunami"
-
-#: block.swarmer.name
-msgid "Swarmer"
-msgstr "Swarmer"
-
-#: block.salvo.name
-msgid "Salvo"
-msgstr "Salvo"
-
-#: block.ripple.name
-msgid "Ripple"
-msgstr "Ripple"
-
 #: block.phase-conveyor.name
 msgid "Phase Conveyor"
 msgstr "Cinta transportadora de fase"
@@ -7408,10 +6989,6 @@ msgstr "Mur d’aliatge electrificable gros"
 msgid "Cyclone"
 msgstr "Cicló"
 
-#: block.fuse.name
-msgid "Fuse"
-msgstr "Fuse"
-
 #: block.shock-mine.name
 msgid "Shock Mine"
 msgstr "Mina de xoc"
@@ -7424,25 +7001,9 @@ msgstr "Projector d’acceleració"
 msgid "Force Projector"
 msgstr "Projector de camps de força"
 
-#: block.arc.name
-msgid "Arc"
-msgstr "Arc"
-
 #: block.rtg-generator.name
 msgid "RTG Generator"
 msgstr "Generador RTG"
-
-#: block.spectre.name
-msgid "Spectre"
-msgstr "Spectre"
-
-#: block.meltdown.name
-msgid "Meltdown"
-msgstr "Meltdown"
-
-#: block.foreshadow.name
-msgid "Foreshadow"
-msgstr "Foreshadow"
 
 #: block.container.name
 msgid "Container"
@@ -7451,10 +7012,6 @@ msgstr "Contenidor"
 #: block.launch-pad.name
 msgid "Launch Pad"
 msgstr "Plataforma de llançament"
-
-#: block.segment.name
-msgid "Segment"
-msgstr "Segment"
 
 #: block.ground-factory.name
 msgid "Ground Factory"
@@ -7906,10 +7463,6 @@ msgstr "Mur d’aliatge electrificable reforçat gros"
 msgid "Shielded Wall"
 msgstr "Mur blindat"
 
-#: block.radar.name
-msgid "Radar"
-msgstr "Radar"
-
 #: block.build-tower.name
 msgid "Build Tower"
 msgstr "Torre de construcció"
@@ -8058,34 +7611,6 @@ msgstr "Contenidor reforçat"
 msgid "Reinforced Vault"
 msgstr "Contenidor reforçat gros"
 
-#: block.breach.name
-msgid "Breach"
-msgstr "Breach"
-
-#: block.sublimate.name
-msgid "Sublimate"
-msgstr "Sublimate"
-
-#: block.titan.name
-msgid "Titan"
-msgstr "Titan"
-
-#: block.disperse.name
-msgid "Disperse"
-msgstr "Disperse"
-
-#: block.afflict.name
-msgid "Afflict"
-msgstr "Afflict"
-
-#: block.lustre.name
-msgid "Lustre"
-msgstr "Lustre"
-
-#: block.scathe.name
-msgid "Scathe"
-msgstr "Scathe"
-
 #: block.tank-refabricator.name
 msgid "Tank Refabricator"
 msgstr "Milloradora de tancs"
@@ -8158,17 +7683,9 @@ msgstr "Milloradora Prime"
 msgid "Unit Repair Tower"
 msgstr "Torre de reparació d’unitats"
 
-#: block.diffuse.name
-msgid "Diffuse"
-msgstr "Diffuse"
-
 #: block.basic-assembler-module.name
 msgid "Basic Assembler Module"
 msgstr "Mòdul de muntatge bàsic"
-
-#: block.smite.name
-msgid "Smite"
-msgstr "Smite"
 
 #: block.malign.name
 msgid "Malign"
@@ -8213,14 +7730,6 @@ msgstr "Cel·la de memòria"
 #: block.memory-bank.name
 msgid "Memory Bank"
 msgstr "Banc de memòria"
-
-#: team.malis.name
-msgid "Malis"
-msgstr "Malis"
-
-#: team.crux.name
-msgid "Crux"
-msgstr "Crux"
 
 #: team.sharded.name
 msgid "Sharded"
@@ -11271,7 +10780,9 @@ msgstr "Estableix una regla de la partida."
 #: lst.flushmessage
 msgid ""
 "Display a message on the screen from the text buffer.\n"
-"Will wait until the previous message finishes."
+"If the success result variable is [accent]@wait[],\n"
+"will wait until the previous message finishes.\n"
+"Otherwise, outputs whether displaying the message succeeded."
 msgstr ""
 "Mostra un missatge a la pantalla a partir dels continguts de la cua de text."
 "\n"
@@ -11305,6 +10816,14 @@ msgid ""
 msgstr ""
 "Sincronitza una variable a través de la xarxa.\n"
 "S’invoca com a molt 10 vegades per segon."
+
+#: lst.playsound
+msgid ""
+"Plays a sound.\n"
+"Volume and pan can be a global value, or calculated based on position."
+msgstr ""
+"Plays a sound.\n"
+"Volume and pan can be a global value, or calculated based on position."
 
 #: lst.makemarker
 msgid ""
@@ -11340,18 +10859,6 @@ msgstr ""
 "[accent]Informació del mapa > Paquets de traducció[].\n"
 "Si el client és un dispositiu mòbil, primer intenta imprimir una propietat "
 "que acabi en «.mobile»."
-
-#: lglobal.false
-msgid "0"
-msgstr "0"
-
-#: lglobal.true
-msgid "1"
-msgstr "1"
-
-#: lglobal.null
-msgid "null"
-msgstr "null"
 
 #: lglobal.@pi
 msgid "The mathematical constant pi (3.141...)"
@@ -11407,11 +10914,6 @@ msgstr "Alçària del mapa en caselles"
 msgid "Map"
 msgstr "Mapa"
 
-#: lglobal.sectionGeneral
-msgctxt "lglobal.sectionGeneral"
-msgid "General"
-msgstr "General"
-
 #: lglobal.sectionNetwork
 msgid "Network/Clientside [World Processor Only]"
 msgstr "Xarxa/Client [Només processador integrat]"
@@ -11419,10 +10921,6 @@ msgstr "Xarxa/Client [Només processador integrat]"
 #: lglobal.sectionProcessor
 msgid "Processor"
 msgstr "Processador"
-
-#: lglobal.sectionLookup
-msgid "Lookup"
-msgstr "Lookup"
 
 #: lglobal.@this
 msgid "The logic block executing the code"

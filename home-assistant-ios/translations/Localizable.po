@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-29 08:03+0000\n"
+"POT-Creation-Date: 2024-08-04 18:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.0\n"
+"X-Generator: Translate Toolkit 3.8.4\n"
 
 #: about.acknowledgements.title
 msgid "Acknowledgements"
@@ -41,10 +41,6 @@ msgstr "M'has trobat!"
 msgid "Forums"
 msgstr "Fòrums"
 
-#: about.github.title
-msgid "GitHub"
-msgstr "GitHub"
-
 #: about.github_issue_tracker.title
 msgid "GitHub Issue Tracker"
 msgstr "Rastrejador de problemes de Github"
@@ -61,17 +57,9 @@ msgstr "Home Assistant a Facebook"
 msgid "Home Assistant on Twitter"
 msgstr "Home Assistant a Twitter"
 
-#: about.logo.app_title
-msgid "Home Assistant Companion"
-msgstr "Home Assistant Companion"
-
 #: about.logo.tagline
 msgid "Awaken Your Home"
 msgstr "Desperta la teva llar"
-
-#: about.logo.title
-msgid "Home Assistant"
-msgstr "Home Assistant"
 
 #: about.review.title
 msgid "Leave a review"
@@ -121,10 +109,6 @@ msgctxt "actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
 msgid "Name"
 msgstr "Nom"
-
-#: actions_configurator.rows.text.title
-msgid "Text"
-msgstr "Text"
 
 #: actions_configurator.rows.text_color.title
 msgid "Text Color"
@@ -220,10 +204,6 @@ msgstr ""
 msgid "Notification Categories are deprecated"
 msgstr "Les categories de notificació estan obsoletes"
 
-#: alerts.open_url_from_deep_link.message
-msgid "Open URL (%@) from deep link?"
-msgstr "Open URL (%@) from deep link?"
-
 #: alerts.open_url_from_notification.message
 msgid "Open URL (%@) found in notification?"
 msgstr "Obrir l'adreça (%@) trobada a la notificació?"
@@ -268,10 +248,6 @@ msgstr ""
 msgid "Important update"
 msgstr "Actualització important"
 
-#: app_intents.assist.preferred_pipeline.title
-msgid "Preferred"
-msgstr "Preferred"
-
 #: app_intents.perform_action.action_parameter_configuration
 msgid "Which action?"
 msgstr "Quina acció?"
@@ -304,23 +280,11 @@ msgid ""
 msgstr ""
 "Failed to obtain Assist pipelines, please check your pipelines configuration."
 
-#: assist.pipelines_picker.title
-msgid "Assist Pipelines"
-msgstr "Assist Pipelines"
-
-#: assist.watch.mic_button.title
-msgid "Tap to "
-msgstr "Tap to "
-
 #: assist.watch.not_reachable.title
 msgid ""
 "Assist requires iPhone connectivity. Your iPhone is currently unreachable."
 msgstr ""
 "Assist requires iPhone connectivity. Your iPhone is currently unreachable."
-
-#: assist.watch.volume.title
-msgid "Volume control"
-msgstr "Volume control"
 
 #: cancel_label
 msgctxt "cancel_label"
@@ -365,16 +329,6 @@ msgctxt "carPlay.lock.confirmation.title"
 msgid "Are you sure you want to perform lock action on %@?"
 msgstr "Esteu segur que voleu realitzar l'acció de bloqueig a %@ ?"
 
-#: carPlay.navigation.button.next
-msgctxt "carPlay.navigation.button.next"
-msgid "Next"
-msgstr "Next"
-
-#: carPlay.navigation.button.previous
-msgctxt "carPlay.navigation.button.previous"
-msgid "Previous"
-msgstr "Previous"
-
 #: carPlay.navigation.tab.actions
 msgctxt "carPlay.navigation.tab.actions"
 "carPlay.navigation.tab.actions"
@@ -386,10 +340,6 @@ msgstr "Accions"
 #: carPlay.navigation.tab.areas
 msgid "Areas"
 msgstr "Àrees"
-
-#: carPlay.navigation.tab.domains
-msgid "Control"
-msgstr "Control"
 
 #: carPlay.no_actions.title
 msgid "Open iOS Companion App to create actions for CarPlay."
@@ -436,11 +386,6 @@ msgctxt "carplay.labels.servers"
 msgid "Servers"
 msgstr "Servidors"
 
-#: carplay.lock.confirmation.title
-msgctxt "carplay.lock.confirmation.title"
-msgid "Are you sure you want to perform lock action on %@?"
-msgstr "Are you sure you want to perform lock action on %@?"
-
 #: carplay.navigation.button.next
 msgctxt "carplay.navigation.button.next"
 msgid "Next"
@@ -450,11 +395,6 @@ msgstr "Següent"
 msgctxt "carplay.navigation.button.previous"
 msgid "Previous"
 msgstr "Anterior"
-
-#: carplay.unlock.confirmation.title
-msgctxt "carplay.unlock.confirmation.title"
-msgid "Are you sure you want to perform unlock action on %@?"
-msgstr "Are you sure you want to perform unlock action on %@?"
 
 #: cl_error.description.deferred_accuracy_too_low
 msgid "Deferred mode is not supported for the requested accuracy."
@@ -630,10 +570,6 @@ msgctxt "done_label"
 msgid "Done"
 msgstr "Fet"
 
-#: error_label
-msgid "Error"
-msgstr "Error"
-
 #: extensions.map.location.new
 msgid "New Location"
 msgstr "Nova ubicació"
@@ -641,10 +577,6 @@ msgstr "Nova ubicació"
 #: extensions.map.location.original
 msgid "Original Location"
 msgstr "Ubicació original"
-
-#: extensions.map.payload_missing_homeassistant.message
-msgid "Payload didn't contain a homeassistant dictionary!"
-msgstr "Payload didn't contain a homeassistant dictionary!"
 
 #: extensions.map.value_missing_or_uncastable.latitude.message
 msgid "Latitude wasn't found or couldn't be casted to string!"
@@ -710,10 +642,6 @@ msgstr "L'API HA no està configurada"
 msgid "Unacceptable status code %1$li."
 msgstr "Codi d'estat inacceptable %1$li."
 
-#: ha_api.api_error.unexpected_type
-msgid "Received response with result of type %1$@ but expected type %2$@."
-msgstr "Received response with result of type %1$@ but expected type %2$@."
-
 #: ha_api.api_error.unknown
 msgid "An unknown error occurred."
 msgstr "S'ha produït un error desconegut."
@@ -725,91 +653,6 @@ msgstr "No s'ha pogut realitzar l'operació."
 #: help_label
 msgid "Help"
 msgstr "Ajuda"
-
-#: improv.button.continue
-msgctxt "improv.button.continue"
-msgid "Continue"
-msgstr "Continue"
-
-#: improv.connection_state.authorized
-msgid "Setting up Wi-Fi"
-msgstr "Setting up Wi-Fi"
-
-#: improv.connection_state.autorization_required
-msgid "Please authorize your device to continue"
-msgstr "Please authorize your device to continue"
-
-#: improv.connection_state.provisioning
-msgid "Connecting to Wi-Fi"
-msgstr "Connecting to Wi-Fi"
-
-#: improv.error_state.invalid_rpc_packet
-msgid "Invalid RPC Packet"
-msgstr "Invalid RPC Packet"
-
-#: improv.error_state.not_authorized
-msgid "Not authorized"
-msgstr "Not authorized"
-
-#: improv.error_state.unable_to_connect
-msgid "Unable to connect"
-msgstr "Unable to connect"
-
-#: improv.error_state.unknown
-msgid "Unknown error, please try again."
-msgstr "Unknown error, please try again."
-
-#: improv.error_state.unknown_command
-msgid "Unknown command"
-msgstr "Unknown command"
-
-#: improv.list.title
-msgid "Devices ready to set up"
-msgstr "Devices ready to set up"
-
-#: improv.state.connected
-msgctxt "improv.state.connected"
-msgid "Connected"
-msgstr "Connected"
-
-#: improv.state.connecting
-msgid "Connecting..."
-msgstr "Connecting..."
-
-#: improv.state.success
-msgid "Wi-Fi connected successfully"
-msgstr "Wi-Fi connected successfully"
-
-#: improv.toast.title
-msgid "There are devices available to setup."
-msgstr "There are devices available to setup."
-
-#: improv.wifi.alert.cancel_button
-msgctxt "improv.wifi.alert.cancel_button"
-msgid "Cancel"
-msgstr "Cancel"
-
-#: improv.wifi.alert.connect_button
-msgctxt "improv.wifi.alert.connect_button"
-msgid "Connect"
-msgstr "Connect"
-
-#: improv.wifi.alert.description
-msgid "Please enter your SSID and password."
-msgstr "Please enter your SSID and password."
-
-#: improv.wifi.alert.password_placeholder
-msgid "Password"
-msgstr "Password"
-
-#: improv.wifi.alert.ssid_placeholder
-msgctxt "improv.wifi.alert.ssid_placeholder"
-msgid "Network Name"
-msgstr "Network Name"
-
-#: improv.wifi.alert.title
-msgid "Connect to WiFi"
-msgstr "Connect to WiFi"
 
 #: intents.server_required_for_value
 msgid "Select a server before picking this value."
@@ -858,6 +701,10 @@ msgstr "%@ sortit"
 #: location_change_notification.signaled.body
 msgid "Location updated via update signal"
 msgstr "Ubicació actualitzada mitjançant senyal d’actualització"
+
+#: location_change_notification.watch_context.body
+msgid "Location updated via watch context sync"
+msgstr ""
 
 #: location_change_notification.significant_location_update.body
 msgid "Significant location change detected"
@@ -1028,10 +875,6 @@ msgstr "L’etiqueta NFC no té el format NDEF"
 msgid "NFC tag is read-only"
 msgstr "L’etiqueta NFC és de només lectura"
 
-#: nfc.write.identifier_choice.manual
-msgid "Manual"
-msgstr "Manual"
-
 #: nfc.write.identifier_choice.message
 msgid "The identifier helps differentiate various tags."
 msgstr "L’identificador ajuda a diferenciar diverses etiquetes."
@@ -1055,10 +898,6 @@ msgstr "Manteneu el vostre %@ prop d'una etiqueta NFC que es pugui escriure"
 #: nfc.write.success_message
 msgid "Tag Written!"
 msgstr "Etiqueta escrita!"
-
-#: no_label
-msgid "No"
-msgstr "No"
 
 #: notification_service.failed_to_load
 msgid "Failed to load attachment"
@@ -1583,10 +1422,6 @@ msgstr "Detalls"
 msgid "You cannot remove only available URL."
 msgstr "No podeu eliminar només l'URL disponible."
 
-#: settings.connection_section.external_base_url.placeholder
-msgid "https://homeassistant.myhouse.com"
-msgstr "https://homeassistant.myhouse.com"
-
 #: settings.connection_section.external_base_url.title
 msgid "External URL"
 msgstr "URL externa"
@@ -1594,10 +1429,6 @@ msgstr "URL externa"
 #: settings.connection_section.header
 msgid "Connection"
 msgstr "Connexió"
-
-#: settings.connection_section.home_assistant_cloud.title
-msgid "Home Assistant Cloud"
-msgstr "Home Assistant Cloud"
 
 #: settings.connection_section.internal_base_url.placeholder
 msgid "e.g. http://homeassistant.local:8123/"
@@ -1636,10 +1467,6 @@ msgid "Internal URL will be used when connected to listed SSIDs"
 msgstr ""
 "La URL interna s'utilitzarà quan estigui connectat a algun dels SSIDs de la "
 "llista"
-
-#: settings.connection_section.internal_url_ssids.header
-msgid "SSIDs"
-msgstr "SSIDs"
 
 #: settings.connection_section.internal_url_ssids.placeholder
 msgid "MyFunnyNetworkName"
@@ -1736,10 +1563,6 @@ msgstr "Connectat"
 msgid "Connecting"
 msgstr "Connectant"
 
-#: settings.connection_section.websocket.status.disconnected.error
-msgid "Error: %1$@"
-msgstr "Error: %1$@"
-
 #: settings.connection_section.websocket.status.disconnected.next_retry
 msgid "Next Retry: %1$@"
 msgstr "Pròxim intent: %1$@"
@@ -1751,10 +1574,6 @@ msgstr "Nombre d'intents: %1$li"
 #: settings.connection_section.websocket.status.disconnected.title
 msgid "Disconnected"
 msgstr "Desconnectat"
-
-#: settings.connection_section.websocket.title
-msgid "WebSocket"
-msgstr "WebSocket"
 
 #: settings.debugging.title
 msgid "Debugging"
@@ -1770,11 +1589,6 @@ msgctxt "settings.details_section.notification_settings_row.title"
 msgid "Notifications"
 msgstr "Notificacions"
 
-#: settings.details_section.watch_row.title
-msgctxt "settings.details_section.watch_row.title"
-msgid "Apple Watch"
-msgstr "Apple Watch"
-
 #: settings.developer.annoying_background_notifications.title
 msgid "Annoying Background Info"
 msgstr "Informació de fons molesta"
@@ -1782,10 +1596,6 @@ msgstr "Informació de fons molesta"
 #: settings.developer.camera_notification.notification.body
 msgid "Expand this to show the camera content extension"
 msgstr "Expandeix això per mostrar l'extensió del contingut de la càmera"
-
-#: settings.developer.camera_notification.title
-msgid "Show camera notification content extension"
-msgstr "Show camera notification content extension"
 
 #: settings.developer.copy_realm.alert.message
 msgid "Copied Realm from %@ to %@"
@@ -1856,10 +1666,6 @@ msgstr "Expandiu això per mostrar l'extensió del contingut del mapa"
 #: settings.developer.map_notification.title
 msgid "Show map notification content extension"
 msgstr "Mostra extensió de contingut de notificació de mapa"
-
-#: settings.developer.mock_thread_credentials_sharing.title
-msgid "Simulator Thread Credentials Sharing"
-msgstr "Simulator Thread Credentials Sharing"
 
 #: settings.developer.show_log_files.title
 msgid "Show log files in Finder"
@@ -1954,10 +1760,6 @@ msgctxt "settings.status_section.location_name_row.title"
 msgid "Name"
 msgstr "Nom"
 
-#: settings.status_section.version_row.placeholder
-msgid "0.92.0"
-msgstr "0.92.0"
-
 #: settings.status_section.version_row.title
 msgid "Version"
 msgstr "Versió"
@@ -1969,10 +1771,6 @@ msgstr "Editar plantilla"
 #: settings.whats_new.title
 msgid "What's new?"
 msgstr "Que hi ha de nou?"
-
-#: settings.widgets.title
-msgid "Widgets"
-msgstr "Widgets"
 
 #: settings_details.actions.actions_synced.empty
 msgid "No Synced Actions"
@@ -2034,10 +1832,6 @@ msgstr "Selecciona-ho tot"
 msgid "Scene Actions"
 msgstr "Accions d’escena"
 
-#: settings_details.actions.server_controlled.update.title
-msgid "Update server Actions"
-msgstr "Update server Actions"
-
 #: settings_details.actions.title
 msgctxt "settings_details.actions.title"
 msgid "Actions"
@@ -2046,10 +1840,6 @@ msgstr "Accions"
 #: settings_details.actions.watch.available.title
 msgid "Show in Watch"
 msgstr "Mostra a Watch"
-
-#: settings_details.general.app_icon.enum.beta
-msgid "Beta"
-msgstr "Beta"
 
 #: settings_details.general.app_icon.enum.black
 msgid "Black"
@@ -2070,14 +1860,6 @@ msgstr "Clàssic"
 #: settings_details.general.app_icon.enum.cornflower_blue
 msgid "Cornflower Blue"
 msgstr "Blau cornflower"
-
-#: settings_details.general.app_icon.enum.crimson
-msgid "Crimson"
-msgstr "Crimson"
-
-#: settings_details.general.app_icon.enum.dev
-msgid "Dev"
-msgstr "Dev"
 
 #: settings_details.general.app_icon.enum.electric_violet
 msgid "Electric Violet"
@@ -2175,29 +1957,9 @@ msgstr "Obre l'aplicació en iniciar sessió"
 msgid "Menu Bar Text"
 msgstr "Text de la barra de menús"
 
-#: settings_details.general.open_in_browser.chrome
-msgid "Google Chrome"
-msgstr "Google Chrome"
-
 #: settings_details.general.open_in_browser.default
 msgid "System Default"
 msgstr "Sistema per defecte"
-
-#: settings_details.general.open_in_browser.firefox
-msgid "Mozilla Firefox"
-msgstr "Mozilla Firefox"
-
-#: settings_details.general.open_in_browser.firefoxFocus
-msgid "Mozilla Firefox Focus"
-msgstr "Mozilla Firefox Focus"
-
-#: settings_details.general.open_in_browser.firefoxKlar
-msgid "Mozilla Firefox Klar"
-msgstr "Mozilla Firefox Klar"
-
-#: settings_details.general.open_in_browser.safari
-msgid "Apple Safari"
-msgstr "Apple Safari"
 
 #: settings_details.general.open_in_browser.safari_in_app
 msgid "Apple Safari (in app)"
@@ -2227,17 +1989,9 @@ msgstr "Pessigueu per fer zoom"
 msgid "Remember Last Page"
 msgstr "Recordar l'última pàgina"
 
-#: settings_details.general.title
-msgid "General"
-msgstr "General"
-
 #: settings_details.general.visibility.options.dock
 msgid "Dock"
 msgstr "Base"
-
-#: settings_details.general.visibility.options.dock_and_menu_bar
-msgid "Dock and Menu Bar"
-msgstr "Dock and Menu Bar"
 
 #: settings_details.general.visibility.options.menu_bar
 msgid "Menu Bar"
@@ -2348,10 +2102,6 @@ msgstr "Notificacions d'ubicació"
 msgid "Significant Location Change Notifications"
 msgstr "Notificacions de canvi d'ubicació significatiu"
 
-#: settings_details.location.notifications.push_notification.title
-msgid "Pushed Location Request Notifications"
-msgstr "Pushed Location Request Notifications"
-
 #: settings_details.location.notifications.url_scheme.title
 msgid "URL Scheme Location Notifications"
 msgstr "Notificacions d'ubicació d'esquemes d'URL"
@@ -2397,10 +2147,6 @@ msgstr "Zona entrada/sortida"
 msgid "Not set"
 msgstr "No configurat"
 
-#: settings_details.location.zones.beacon_major.title
-msgid "iBeacon Major"
-msgstr "iBeacon Major"
-
 #: settings_details.location.zones.beacon_minor.title
 msgid "iBeacon Minor"
 msgstr "iBeacon Menor"
@@ -2426,10 +2172,6 @@ msgctxt "settings_details.location.zones.location.title"
 msgid "Location"
 msgstr "Ubicació"
 
-#: settings_details.location.zones.radius.label
-msgid "%li m"
-msgstr "%li m"
-
 #: settings_details.location.zones.radius.title
 msgid "Radius"
 msgstr "Radi"
@@ -2453,10 +2195,6 @@ msgid ""
 msgstr ""
 "Les categories ja no són necessàries per a notificacions accionables i "
 "s'eliminaran en una futura versió."
-
-#: settings_details.notifications.categories.header
-msgid "Categories"
-msgstr "Categories"
 
 #: settings_details.notifications.categories_synced.empty
 msgid "No Synced Categories"
@@ -2532,10 +2270,6 @@ msgstr "Permís"
 msgid "Confirm before opening URL"
 msgstr "Confirmar abans d'obrir l'URL"
 
-#: settings_details.notifications.push_id_section.header
-msgid "Push ID"
-msgstr "Push ID"
-
 #: settings_details.notifications.push_id_section.not_registered
 msgid "Not registered for remote notifications"
 msgstr "No registrat per a notificacions remotes"
@@ -2547,10 +2281,6 @@ msgstr "Intents"
 #: settings_details.notifications.rate_limits.delivered
 msgid "Delivered"
 msgstr "Lliurat"
-
-#: settings_details.notifications.rate_limits.errors
-msgid "Errors"
-msgstr "Errors"
 
 #: settings_details.notifications.rate_limits.footer
 msgid ""
@@ -2575,10 +2305,6 @@ msgstr "Límits de taxa"
 #: settings_details.notifications.rate_limits.resets_in
 msgid "Resets In"
 msgstr "Restableix En"
-
-#: settings_details.notifications.rate_limits.total
-msgid "Total"
-msgstr "Total"
 
 #: settings_details.notifications.sounds.bundled
 msgid "Bundled"
@@ -2607,10 +2333,6 @@ msgstr "No s'ha pogut copiar el fitxer: %@"
 #: settings_details.notifications.sounds.error.delete_error
 msgid "Failed to delete file: %@"
 msgstr "No s'ha pogut suprimir el fitxer: %@"
-
-#: settings_details.notifications.sounds.footer
-msgid "Built-in, system, or custom sounds can be used with your notifications."
-msgstr "Built-in, system, or custom sounds can be used with your notifications."
 
 #: settings_details.notifications.sounds.import_custom
 msgid "Import custom sound"
@@ -2686,10 +2408,6 @@ msgstr ""
 "l'usuari, inclosos les URL i els tokens del Home Assistant. Heu de reiniciar "
 "l'aplicació perquè els canvis en aquesta configuració tinguin efecte."
 
-#: settings_details.privacy.analytics.generic_title
-msgid "Analytics"
-msgstr "Analytics"
-
 #: settings_details.privacy.crash_reporting.description
 msgid ""
 "Allows for deeper tracking of crashes and other errors in the app, leading "
@@ -2720,10 +2438,6 @@ msgstr ""
 "Firebase Cloud Messaging ha d'estar habilitat perquè funcionin les "
 "notificacions push."
 
-#: settings_details.privacy.messaging.title
-msgid "Firebase Cloud Messaging"
-msgstr "Firebase Cloud Messaging"
-
 #: settings_details.privacy.title
 msgid "Privacy"
 msgstr "Privacitat"
@@ -2740,11 +2454,6 @@ msgstr "Incloure Versions Beta"
 msgid "Automatically Check for Updates"
 msgstr "Comprovar automàticament si hi ha actualitzacions"
 
-#: settings_details.watch.title
-msgctxt "settings_details.watch.title"
-msgid "Apple Watch"
-msgstr "Apple Watch"
-
 #: settings_details.widgets.reload_all.description
 msgid ""
 "This will reload all widgets timelines, use this in case your widgets are "
@@ -2752,11 +2461,6 @@ msgid ""
 msgstr ""
 "This will reload all widgets timelines, use this in case your widgets are "
 "stuck in a blank state or not updating for some reason."
-
-#: settings_details.widgets.reload_all.title
-msgctxt "settings_details.widgets.reload_all.title"
-msgid "Reload all widgets"
-msgstr "Reload all widgets"
 
 #: settings_sensors.detail.attributes
 msgid "Attributes"
@@ -2832,10 +2536,6 @@ msgctxt "settings_sensors.settings.header"
 msgid "Settings"
 msgstr "Configuració"
 
-#: settings_sensors.title
-msgid "Sensors"
-msgstr "Sensors"
-
 #: share_extension.entered_placeholder
 msgid "'entered' in event"
 msgstr "'entrat' en l'esdeveniment"
@@ -2848,38 +2548,9 @@ msgstr "No s'ha pogut enviar"
 msgid "Success"
 msgstr "Èxit"
 
-#: thread.active_operational_data_set.title
-msgid "Active operational data set"
-msgstr "Active operational data set"
-
-#: thread.border_agent_id.title
-msgctxt "thread.border_agent_id.title"
-msgid "Border Agent ID"
-msgstr "Border Agent ID"
-
-#: thread.credentials.border_agent_id_title
-msgctxt "thread.credentials.border_agent_id_title"
-msgid "Border Agent ID"
-msgstr "Border Agent ID"
-
-#: thread.credentials.network_key_title
-msgctxt "thread.credentials.network_key_title"
-msgid "Network Key"
-msgstr "Network Key"
-
-#: thread.credentials.network_name_title
-msgctxt "thread.credentials.network_name_title"
-msgid "Network Name"
-msgstr "Network Name"
-
 #: thread.credentials.no_credential_available
 msgid "You don't have credentials available on your iCloud Keychain."
 msgstr "No tens credencials disponibles al clauer de l'iCloud."
-
-#: thread.credentials.screen_title
-msgctxt "thread.credentials.screen_title"
-msgid "Thread Credentials"
-msgstr "Thread Credentials"
 
 #: thread.credentials.share_credentials.no_credentials_message
 msgid ""
@@ -2896,20 +2567,6 @@ msgstr "No teniu credencials per compartir"
 #: thread.credentials.share_credentials_button_title
 msgid "Share credential with Home Assistant"
 msgstr "Comparteix la credencial amb Home Assistant"
-
-#: thread.extended_pan_id.title
-msgid "Extended PAN ID"
-msgstr "Extended PAN ID"
-
-#: thread.management.title
-msgctxt "thread.management.title"
-msgid "Thread Credentials"
-msgstr "Thread Credentials"
-
-#: thread.network_key.title
-msgctxt "thread.network_key.title"
-msgid "Network Key"
-msgstr "Network Key"
 
 #: thread.store_in_keychain.error.generic.body
 msgid ""
@@ -3141,13 +2798,6 @@ msgstr "S'esperava un número però s'ha obtingut %1$@: '%2$@'"
 msgid "Expected a number between 0.0 and 1.0 but got %1$f"
 msgstr "S'esperava un nombre entre 0.0 i 1.0, però s'ha obtingut %1$f"
 
-#: watch.configurator.rows.color.title
-msgctxt "watch.configurator.rows.color.title"
-"watch.configurator.rows.color.title"
-"watch.configurator.rows.color.title"
-msgid "Color"
-msgstr "Color"
-
 #: watch.configurator.rows.column_2_alignment.options.leading
 msgctxt "watch.configurator.rows.column_2_alignment.options.leading"
 msgid "Leading"
@@ -3165,11 +2815,6 @@ msgstr "Alineació de la columna 2"
 #: watch.configurator.rows.display_name.title
 msgid "Display Name"
 msgstr "Nom de visualització"
-
-#: watch.configurator.rows.gauge.color.title
-msgctxt "watch.configurator.rows.gauge.color.title"
-msgid "Color"
-msgstr "Color"
 
 #: watch.configurator.rows.gauge.gauge_type.options.closed
 msgctxt "watch.configurator.rows.gauge.gauge_type.options.closed"
@@ -3190,11 +2835,6 @@ msgstr "Tipus"
 msgid "Fill"
 msgstr "Omplir"
 
-#: watch.configurator.rows.gauge.style.options.ring
-msgctxt "watch.configurator.rows.gauge.style.options.ring"
-msgid "Ring"
-msgstr "Ring"
-
 #: watch.configurator.rows.gauge.style.title
 msgid "Style"
 msgstr "Estil"
@@ -3209,19 +2849,9 @@ msgstr "Galga"
 msgid "Choose an icon"
 msgstr "Tria una icona"
 
-#: watch.configurator.rows.icon.color.title
-msgctxt "watch.configurator.rows.icon.color.title"
-msgid "Color"
-msgstr "Color"
-
 #: watch.configurator.rows.is_public.title
 msgid "Show When Locked"
 msgstr "Mostrar quan està bloquejat"
-
-#: watch.configurator.rows.ring.color.title
-msgctxt "watch.configurator.rows.ring.color.title"
-msgid "Color"
-msgstr "Color"
 
 #: watch.configurator.rows.ring.ring_type.options.closed
 msgctxt "watch.configurator.rows.ring.ring_type.options.closed"
@@ -3272,11 +2902,6 @@ msgstr "Icona"
 msgid "The ring showing progress surrounding the text."
 msgstr "L'anell que mostra el progrés envoltant el text"
 
-#: watch.configurator.sections.ring.header
-msgctxt "watch.configurator.sections.ring.header"
-msgid "Ring"
-msgstr "Ring"
-
 #: watch.labels.complication_group.circular_small.description
 msgid ""
 "Use circular small complications to display content in the corners of the "
@@ -3324,10 +2949,6 @@ msgstr ""
 "Utilitzeu petites complicacions modulars per mostrar contingut a la cara del "
 "rellotge modular."
 
-#: watch.labels.complication_group.modular.name
-msgid "Modular"
-msgstr "Modular"
-
 #: watch.labels.complication_group.utilitarian.description
 msgid ""
 "Use the utilitarian complications to display content in the Utility, Motion, "
@@ -3340,10 +2961,6 @@ msgstr ""
 msgid "Utilitarian"
 msgstr "Utilitari"
 
-#: watch.labels.complication_group_member.circular_small.description
-msgid "A small circular area used in the Color clock face."
-msgstr "A small circular area used in the Color clock face."
-
 #: watch.labels.complication_group_member.circular_small.name
 msgctxt "watch.labels.complication_group_member.circular_small.name"
 msgid "Circular Small"
@@ -3353,10 +2970,6 @@ msgstr "Circular Petita"
 msgctxt "watch.labels.complication_group_member.circular_small.short_name"
 msgid "Circular Small"
 msgstr "Circular Petita"
-
-#: watch.labels.complication_group_member.extra_large.description
-msgid "A large square area used in the X-Large clock face."
-msgstr "A large square area used in the X-Large clock face."
 
 #: watch.labels.complication_group_member.extra_large.name
 msgctxt "watch.labels.complication_group_member.extra_large.name"
@@ -3368,10 +2981,6 @@ msgctxt "watch.labels.complication_group_member.extra_large.short_name"
 msgid "Extra Large"
 msgstr "Extra Gran"
 
-#: watch.labels.complication_group_member.graphic_bezel.description
-msgid "A small square area used in the Modular clock face."
-msgstr "A small square area used in the Modular clock face."
-
 #: watch.labels.complication_group_member.graphic_bezel.name
 msgid "Graphic Bezel"
 msgstr "Bisell gràfic"
@@ -3380,17 +2989,9 @@ msgstr "Bisell gràfic"
 msgid "Bezel"
 msgstr "Bisell"
 
-#: watch.labels.complication_group_member.graphic_circular.description
-msgid "A large rectangular area used in the Modular clock face."
-msgstr "A large rectangular area used in the Modular clock face."
-
 #: watch.labels.complication_group_member.graphic_circular.name
 msgid "Graphic Circular"
 msgstr "Circular Gràfic"
-
-#: watch.labels.complication_group_member.graphic_circular.short_name
-msgid "Circular"
-msgstr "Circular"
 
 #: watch.labels.complication_group_member.graphic_corner.description
 msgid ""
@@ -3419,10 +3020,6 @@ msgstr ""
 #: watch.labels.complication_group_member.graphic_rectangular.name
 msgid "Graphic Rectangular"
 msgstr "Gràfic Rectangular"
-
-#: watch.labels.complication_group_member.graphic_rectangular.short_name
-msgid "Rectangular"
-msgstr "Rectangular"
 
 #: watch.labels.complication_group_member.modular_large.description
 msgid ""
@@ -3487,18 +3084,6 @@ msgstr "Utilitari Petit"
 msgctxt "watch.labels.complication_group_member.utilitarian_small.short_name"
 msgid "Small"
 msgstr "Petit"
-
-#: watch.labels.complication_group_member.utilitarian_small_flat.description
-msgid "A large rectangular area used in the Infograph Modular clock face."
-msgstr "A large rectangular area used in the Infograph Modular clock face."
-
-#: watch.labels.complication_group_member.utilitarian_small_flat.name
-msgid "Utilitarian Small Flat"
-msgstr "Utilitarian Small Flat"
-
-#: watch.labels.complication_group_member.utilitarian_small_flat.short_name
-msgid "Small Flat"
-msgstr "Small Flat"
 
 #: watch.labels.complication_template.circular_small_ring_image.description
 msgid ""
@@ -3568,11 +3153,6 @@ msgid ""
 msgstr ""
 "Una plantilla per mostrar una sola imatge amb una línia curta de text a sota."
 
-#: watch.labels.complication_template.extra_large_stack_text.description
-msgctxt "watch.labels.complication_template.extra_large_stack_text.description"
-msgid "A template for displaying two strings stacked one on top of the other."
-msgstr "A template for displaying two strings stacked one on top of the other."
-
 #: watch.labels.complication_template.graphic_bezel_circular_text.description
 msgid ""
 "A template for displaying a circular complication with text along the bezel."
@@ -3586,10 +3166,6 @@ msgid ""
 msgstr ""
 "A template for displaying a full-color circular image and a closed circular "
 "gauge."
-
-#: watch.labels.complication_template.graphic_circular_closed_gauge_text.description
-msgid "A template for displaying text inside a closed circular gauge."
-msgstr "A template for displaying text inside a closed circular gauge."
 
 #: watch.labels.complication_template.graphic_circular_image.description
 msgid "A template for displaying a full-color circular image."
@@ -3730,14 +3306,6 @@ msgstr "Imatge circular"
 msgid "Circular Text"
 msgstr "Text circular"
 
-#: watch.labels.complication_template.style.closed_gauge_image
-msgid "Closed Gauge Image"
-msgstr "Closed Gauge Image"
-
-#: watch.labels.complication_template.style.closed_gauge_text
-msgid "Closed Gauge Text"
-msgstr "Closed Gauge Text"
-
 #: watch.labels.complication_template.style.columns
 msgid "Columns"
 msgstr "Columnes"
@@ -3750,29 +3318,9 @@ msgstr "Text de les columnes"
 msgid "Flat"
 msgstr "Plana"
 
-#: watch.labels.complication_template.style.gauge_image
-msgid "Gauge Image"
-msgstr "Gauge Image"
-
-#: watch.labels.complication_template.style.gauge_text
-msgid "Gauge Text"
-msgstr "Gauge Text"
-
 #: watch.labels.complication_template.style.large_image
 msgid "Large Image"
 msgstr "Imatge gran"
-
-#: watch.labels.complication_template.style.open_gauge_image
-msgid "Open Gauge Image"
-msgstr "Open Gauge Image"
-
-#: watch.labels.complication_template.style.open_gauge_range_text
-msgid "Open Gauge Range Text"
-msgstr "Open Gauge Range Text"
-
-#: watch.labels.complication_template.style.open_gauge_simple_text
-msgid "Open Gauge Simple Text"
-msgstr "Open Gauge Simple Text"
 
 #: watch.labels.complication_template.style.ring_image
 msgid "Ring Image"
@@ -4017,12 +3565,6 @@ msgstr "Realitza accions del Home Assistant."
 msgid "No Actions Configured"
 msgstr "No hi ha accions configurades"
 
-#: widgets.actions.parameters.action
-msgctxt "widgets.actions.parameters.action"
-"widgets.actions.parameters.action"
-msgid "Action"
-msgstr "Action"
-
 #: widgets.actions.title
 msgctxt "widgets.actions.title"
 msgid "Actions"
@@ -4036,10 +3578,6 @@ msgstr "Pregunta a l'assistent"
 msgid "Open Assist in the app"
 msgstr "Obre l'assistent a l'aplicació"
 
-#: widgets.assist.title
-msgid "Assist"
-msgstr "Assist"
-
 #: widgets.assist.unknown_configuration
 msgid "Configure"
 msgstr "Configurar"
@@ -4048,92 +3586,6 @@ msgstr "Configurar"
 msgctxt "widgets.button.reload_timeline"
 msgid "Reload all widgets"
 msgstr "Recarrega tots els ginys"
-
-#: widgets.details.description
-msgid "Display states using from Home Assistant in text"
-msgstr "Display states using from Home Assistant in text"
-
-#: widgets.details.parameters.action
-msgctxt "widgets.details.parameters.action"
-msgid "Action"
-msgstr "Action"
-
-#: widgets.details.parameters.details_template
-msgid "Details Text Template (only in rectangular family)"
-msgstr "Details Text Template (only in rectangular family)"
-
-#: widgets.details.parameters.lower_template
-msgid "Lower Text Template"
-msgstr "Lower Text Template"
-
-#: widgets.details.parameters.run_action
-msgid "Run Action (only in rectangular family)"
-msgstr "Run Action (only in rectangular family)"
-
-#: widgets.details.parameters.server
-msgctxt "widgets.details.parameters.server"
-msgid "Server"
-msgstr "Server"
-
-#: widgets.details.parameters.upper_template
-msgid "Upper Text Template"
-msgstr "Upper Text Template"
-
-#: widgets.details.title
-msgctxt "widgets.details.title"
-msgid "Details"
-msgstr "Details"
-
-#: widgets.gauge.description
-msgid "Display numeric states from Home Assistant in a gauge"
-msgstr "Display numeric states from Home Assistant in a gauge"
-
-#: widgets.gauge.parameters.action
-msgctxt "widgets.gauge.parameters.action"
-msgid "Action"
-msgstr "Action"
-
-#: widgets.gauge.parameters.gauge_type
-msgid "Gauge Type"
-msgstr "Gauge Type"
-
-#: widgets.gauge.parameters.gauge_type.capacity
-msgid "Capacity"
-msgstr "Capacity"
-
-#: widgets.gauge.parameters.gauge_type.normal
-msgid "Normal"
-msgstr "Normal"
-
-#: widgets.gauge.parameters.max_label_template
-msgid "Max Label Template"
-msgstr "Max Label Template"
-
-#: widgets.gauge.parameters.min_label_template
-msgid "Min Label Template"
-msgstr "Min Label Template"
-
-#: widgets.gauge.parameters.run_action
-msgid "Run Action"
-msgstr "Run Action"
-
-#: widgets.gauge.parameters.server
-msgctxt "widgets.gauge.parameters.server"
-msgid "Server"
-msgstr "Server"
-
-#: widgets.gauge.parameters.value_label_template
-msgid "Value Label Template"
-msgstr "Value Label Template"
-
-#: widgets.gauge.parameters.value_template
-msgid "Value Template (0-1)"
-msgstr "Value Template (0-1)"
-
-#: widgets.gauge.title
-msgctxt "widgets.gauge.title"
-msgid "Gauge"
-msgstr "Gauge"
 
 #: widgets.open_page.description
 msgid "Open a frontend page in Home Assistant."
@@ -4146,14 +3598,6 @@ msgstr "No hi ha pàgines disponibles"
 #: widgets.open_page.title
 msgid "Open Page"
 msgstr "Obre la pàgina"
-
-#: widgets.reload_widgets.app_intent.description
-msgid "Reload all widgets timelines."
-msgstr "Reload all widgets timelines."
-
-#: widgets.reload_widgets.app_intent.title
-msgid "Reload widgets"
-msgstr "Reload widgets"
 
 #: yes_label
 msgid "Yes"
