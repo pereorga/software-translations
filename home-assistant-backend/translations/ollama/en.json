@@ -25,11 +25,13 @@
             "init": {
                 "data": {
                     "keep_alive": "Keep alive",
+                    "llm_hass_api": "Control Home Assistant",
                     "max_history": "Max history messages",
-                    "prompt": "Prompt template"
+                    "prompt": "Instructions"
                 },
                 "data_description": {
-                    "keep_alive": "Duration in seconds for Ollama to keep model in memory. -1 = indefinite, 0 = never."
+                    "keep_alive": "Duration in seconds for Ollama to keep model in memory. -1 = indefinite, 0 = never.",
+                    "prompt": "Instruct how the LLM should respond. This can be a template."
                 }
             }
         }

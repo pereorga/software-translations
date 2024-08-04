@@ -65,7 +65,25 @@
         },
         "event": {
             "button": {
-                "name": "Bot\u00f3"
+                "name": "Bot\u00f3",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "initial_press": "Premut",
+                            "long_press": "Mantingut premut",
+                            "long_release": "Alliberat despr\u00e9s de mantenir-se premut",
+                            "multi_press_1": "Premut una vegada",
+                            "multi_press_2": "Premut dues vegades",
+                            "multi_press_3": "Premut 3 vegades",
+                            "multi_press_4": "Premut 4 vegades",
+                            "multi_press_5": "Premut 5 vegades",
+                            "multi_press_6": "Premut 6 vegades",
+                            "multi_press_7": "Premut 7 vegades",
+                            "multi_press_8": "Premut 8 vegades",
+                            "short_release": "Alliberat despr\u00e9s d'estar premut"
+                        }
+                    }
+                }
             },
             "push": {
                 "state_attributes": {
@@ -104,6 +122,9 @@
         "sensor": {
             "flow": {
                 "name": "Flux"
+            },
+            "switch_current_position": {
+                "name": "Posici\u00f3 actual de l'interruptor"
             }
         },
         "switch": {

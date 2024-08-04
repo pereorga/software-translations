@@ -52,6 +52,18 @@
         }
     },
     "entity": {
+        "fan": {
+            "generic_fan": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "nature": "Nature",
+                            "normal": "Normal"
+                        }
+                    }
+                }
+            }
+        },
         "select": {
             "airpurifier_mode": {
                 "state": {

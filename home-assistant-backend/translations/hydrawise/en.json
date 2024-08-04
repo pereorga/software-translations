@@ -64,5 +64,31 @@
             "description": "Configuring Hydrawise using YAML is being removed but there was an {error_type} error importing your YAML configuration.\n\nEnsure connection to Hydrawise works and restart Home Assistant to try again or remove the Hydrawise YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",
             "title": "The Hydrawise YAML configuration import failed"
         }
+    },
+    "services": {
+        "resume": {
+            "description": "Resumes an irrigation zone's automatic watering schedule.",
+            "name": "Resume automatic watering"
+        },
+        "start_watering": {
+            "description": "Starts a watering cycle in the selected irrigation zone.",
+            "fields": {
+                "duration": {
+                    "description": "Length of time to run the watering cycle. If not specified (or zero), the default watering duration set in the Hydrawise mobile or web app for the irrigation zone will be used.",
+                    "name": "Duration"
+                }
+            },
+            "name": "Start watering"
+        },
+        "suspend": {
+            "description": "Suspends an irrigation zone's automatic watering schedule until the given date and time.",
+            "fields": {
+                "until": {
+                    "description": "Date and time to resume the automated watering schedule.",
+                    "name": "Until"
+                }
+            },
+            "name": "Suspend automatic watering"
+        }
     }
 }

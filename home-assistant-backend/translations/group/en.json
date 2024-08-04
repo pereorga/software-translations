@@ -67,6 +67,14 @@
                 },
                 "title": "Add Group"
             },
+            "notify": {
+                "data": {
+                    "entities": "Members",
+                    "hide_members": "Hide members",
+                    "name": "Name"
+                },
+                "title": "Add Group"
+            },
             "sensor": {
                 "data": {
                     "device_class": "Device class",
@@ -100,6 +108,7 @@
                     "light": "Light group",
                     "lock": "Lock group",
                     "media_player": "Media player group",
+                    "notify": "Notify group",
                     "sensor": "Sensor group",
                     "switch": "Switch group"
                 },
@@ -190,6 +199,12 @@
                 }
             },
             "media_player": {
+                "data": {
+                    "entities": "Members",
+                    "hide_members": "Hide members"
+                }
+            },
+            "notify": {
                 "data": {
                     "entities": "Members",
                     "hide_members": "Hide members"

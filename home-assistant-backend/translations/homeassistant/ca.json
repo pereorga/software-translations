@@ -125,13 +125,24 @@
             "name": "Atura"
         },
         "toggle": {
+            "description": "Acci\u00f3 gen\u00e8rica per commutar (ON/OFF) dispositius de qualsevol domini.",
             "name": "Commutaci\u00f3 gen\u00e8rica"
         },
         "turn_off": {
+            "description": "Acci\u00f3 gen\u00e8rica per desactivar/apagar dispositius de qualsevol domini.",
             "name": "Desactivaci\u00f3 gen\u00e8rica"
         },
         "turn_on": {
+            "description": "Acci\u00f3 gen\u00e8rica per activar/engegar dispositius de qualsevol domini.",
             "name": "Activaci\u00f3 gen\u00e8rica"
+        },
+        "update_entity": {
+            "fields": {
+                "entity_id": {
+                    "description": "Llista d'entitats a for\u00e7ar l'actualitzaci\u00f3.",
+                    "name": "Entitats a actualitzar"
+                }
+            }
         }
     },
     "system_health": {

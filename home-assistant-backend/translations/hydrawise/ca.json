@@ -47,5 +47,31 @@
             "description": "La configuraci\u00f3 d'Hydrawise mitjan\u00e7ant YAML s'est\u00e0 eliminant per\u00f2 hi ha hagut un error {error_type} durant la importaci\u00f3 YAML.\n\nAssegura't que la connexi\u00f3 amb Hydrawise funciona i reinicia Home Assistant per tornar-ho a provar. Si no, elimina la configuraci\u00f3 YAML d'Hydrawise del fitxer configuration.yaml i continua amb la [configuraci\u00f3 de la integraci\u00f3]({url}) manual.",
             "title": "La importaci\u00f3 de la configuraci\u00f3 YAML d'Hydrawise ha fallat"
         }
+    },
+    "services": {
+        "resume": {
+            "description": "Repr\u00e8n la programaci\u00f3 de reg autom\u00e0tic d'una zona.",
+            "name": "Repr\u00e8n el reg autom\u00e0tic"
+        },
+        "start_watering": {
+            "description": "Inicia un cicle de reg a la zona seleccionada.",
+            "fields": {
+                "duration": {
+                    "description": "Temps a executar el cicle de reg. Si no s'especifica (o \u00e9s zero), s'utilitzar\u00e0 la durada predeterminada establerta a l'aplicaci\u00f3 m\u00f2bil o web d'Hydrawise per a la zona.",
+                    "name": "Durada"
+                }
+            },
+            "name": "Inicia el reg"
+        },
+        "suspend": {
+            "description": "Susp\u00e8n la programaci\u00f3 de reg autom\u00e0tic d'una zona fins al dia i l'hora indicades.",
+            "fields": {
+                "until": {
+                    "description": "Dia i hora a reprendre la programaci\u00f3 de reg automatitzat.",
+                    "name": "Fins a les"
+                }
+            },
+            "name": "Susp\u00e8n el reg autom\u00e0tic"
+        }
     }
 }

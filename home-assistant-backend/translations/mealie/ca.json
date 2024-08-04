@@ -32,6 +32,25 @@
             }
         }
     },
+    "entity": {
+        "sensor": {
+            "categories": {
+                "name": "Categories"
+            },
+            "recipes": {
+                "name": "Receptes"
+            },
+            "tags": {
+                "name": "Etiquetes"
+            },
+            "tools": {
+                "name": "Eines"
+            },
+            "users": {
+                "name": "Usuaris"
+            }
+        }
+    },
     "exceptions": {
         "end_date_before_start_date": {
             "message": "La data final ha de ser posterior a la data d'inici."
@@ -77,6 +96,50 @@
                     "name": "Inst\u00e0ncia de Mealie"
                 }
             }
+        },
+        "set_mealplan": {
+            "description": "Estableix un men\u00fa un dia espec\u00edfic",
+            "fields": {
+                "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
+                    "name": "Inst\u00e0ncia de Mealie"
+                },
+                "date": {
+                    "description": "Data a la qual afegir el men\u00fa.",
+                    "name": "Data"
+                },
+                "entry_type": {
+                    "description": "Tipus de plat de la recepta.",
+                    "name": "Tipus d'entrada"
+                },
+                "note_text": {
+                    "description": "Text de la nota del plat per a men\u00fas sense recepta.",
+                    "name": "Text de nota"
+                },
+                "note_title": {
+                    "description": "T\u00edtol de la nota del plat per a men\u00fas sense recepta.",
+                    "name": "T\u00edtol de la nota del plat"
+                }
+            },
+            "name": "Estableix un men\u00fa"
+        },
+        "set_random_mealplan": {
+            "description": "Estableix un men\u00fa aleatori un dia espec\u00edfic",
+            "fields": {
+                "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
+                    "name": "Inst\u00e0ncia de Mealie"
+                },
+                "date": {
+                    "description": "Data a la qual afegir el men\u00fa.",
+                    "name": "Data"
+                },
+                "entry_type": {
+                    "description": "Tipus de plat aleatori.",
+                    "name": "Tipus d'entrada"
+                }
+            },
+            "name": "Estableix un men\u00fa aleatori"
         }
     }
 }

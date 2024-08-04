@@ -631,6 +631,7 @@
             "name": "Estableix atribut de cl\u00faster zigbee"
         },
         "warning_device_squawk": {
+            "description": "Aquesta acci\u00f3 utilitza les capacitats de WD per emetre un pols r\u00e0pid audible/visible anomenat 'squawk'. La comanda 'squawk' no t\u00e9 cap efecte si WD est\u00e0 actiu (alerta en curs).",
             "fields": {
                 "ieee": {
                     "description": "Adre\u00e7a IEEE del dispositiu.",
@@ -652,6 +653,7 @@
             "name": "'Squawk' del dispositiu d'alerta"
         },
         "warning_device_warn": {
+            "description": "Aquesta acci\u00f3 activa el funcionament del dispositiu d'alerta. El dispositiu d'alerta avisa la zona circumdant mitjan\u00e7ant senyals audibles (sirena) i visuals (llum estrobosc\u00f2pic).",
             "fields": {
                 "duration": {
                     "description": "Durada sol\u00b7licitada de l'alerta, en segons (16 bits). Si tant el mode estrobosc\u00f2pic com el mode d'alerta s\u00f3n \"0\", aquest camp s'ignora.",

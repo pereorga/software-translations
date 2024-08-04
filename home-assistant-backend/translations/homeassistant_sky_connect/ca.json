@@ -7,36 +7,17 @@
             "addon_set_config_failed": "No s'ha pogut establir la configuraci\u00f3 de {addon_name} .",
             "addon_start_failed": "No s'ha pogut iniciar el complement {addon_name} .",
             "not_hassio": "Les opcions de maquinari nom\u00e9s es poden configurar a les instal\u00b7lacions HassOS.",
-            "otbr_addon_already_running": "El complement OpenThread Border Router ja s'est\u00e0 executant, no es pot tornar a instal\u00b7lar.",
             "zha_migration_failed": "La migraci\u00f3 ZHA no ha tingut \u00e8xit."
         },
         "flow_title": "{model}",
         "progress": {
             "install_addon": "Espera mentre finalitza la instal\u00b7laci\u00f3 del complement {addon_name}. Pot tardar uns minuts.",
             "start_addon": "Espera mentre finalitza la inicialitzaci\u00f3 del complement {addon_name}. Pot tardar uns segons.",
-            "start_otbr_addon": "Espera mentre finalitza la inicialitzaci\u00f3 del complement {addon_name}. Pot tardar uns segons.",
-            "uninstall_zigbee_flasher_addon": "El complement Silicon Labs Flasher est\u00e0 sent eliminat."
+            "start_otbr_addon": "Espera mentre finalitza la inicialitzaci\u00f3 del complement {addon_name}. Pot tardar uns segons."
         },
         "step": {
             "confirm": {
                 "title": "Configura {model}"
-            },
-            "confirm_zigbee": {
-                "title": "S'ha completat la configuraci\u00f3 de Zigbee"
-            },
-            "pick_firmware": {
-                "menu_options": {
-                    "pick_firmware_thread": "Thread",
-                    "pick_firmware_zigbee": "Zigbee"
-                },
-                "title": "Tria el microprogramari"
-            },
-            "run_zigbee_flasher_addon": {
-                "title": "Instal\u00b7lant microprogramari Zigbee"
-            },
-            "start_otbr_addon": {
-                "description": "El complement OpenThread Border Router (OTBR) s'est\u00e0 iniciant.",
-                "title": "Iniciant complement OpenThread Border Router"
             }
         }
     },
@@ -48,7 +29,6 @@
             "addon_set_config_failed": "No s'ha pogut establir la configuraci\u00f3 de {addon_name} .",
             "addon_start_failed": "No s'ha pogut iniciar el complement {addon_name} .",
             "not_hassio": "Les opcions de maquinari nom\u00e9s es poden configurar a les instal\u00b7lacions HassOS.",
-            "otbr_addon_already_running": "El complement OpenThread Border Router ja s'est\u00e0 executant, no es pot tornar a instal\u00b7lar.",
             "zha_migration_failed": "La migraci\u00f3 ZHA no ha tingut \u00e8xit."
         },
         "error": {
@@ -57,8 +37,7 @@
         "progress": {
             "install_addon": "Espera mentre finalitza la instal\u00b7laci\u00f3 del complement {addon_name}. Pot tardar uns minuts.",
             "start_addon": "Espera mentre finalitza la inicialitzaci\u00f3 del complement {addon_name}. Pot tardar uns segons.",
-            "start_otbr_addon": "Espera mentre finalitza la inicialitzaci\u00f3 del complement {addon_name}. Pot tardar uns segons.",
-            "uninstall_zigbee_flasher_addon": "El complement Silicon Labs Flasher est\u00e0 sent eliminat."
+            "start_otbr_addon": "Espera mentre finalitza la inicialitzaci\u00f3 del complement {addon_name}. Pot tardar uns segons."
         },
         "step": {
             "addon_installed_other_device": {
@@ -90,9 +69,6 @@
             "confirm": {
                 "title": "Configura {model}"
             },
-            "confirm_zigbee": {
-                "title": "S'ha completat la configuraci\u00f3 de Zigbee"
-            },
             "install_addon": {
                 "title": "Ha comen\u00e7at la instal\u00b7laci\u00f3 del complement Silicon Labs Multiprotocol"
             },
@@ -107,21 +83,11 @@
                 "description": "Home Assistant pot canviar autom\u00e0ticament els canals d'otbr i zha. Si has configurat una altra integraci\u00f3 que utilitza la r\u00e0dio, per exemple Zigbee2MQTT, haur\u00e0s de reconfigurar el canal en aquesta integraci\u00f3 despr\u00e9s de completar aquests passos.",
                 "title": "Pot ser que calgui una configuraci\u00f3 manual"
             },
-            "pick_firmware": {
-                "menu_options": {
-                    "pick_firmware_thread": "Thread",
-                    "pick_firmware_zigbee": "Zigbee"
-                },
-                "title": "Tria el microprogramari"
-            },
             "reconfigure_addon": {
                 "data": {
                     "channel": "Canal"
                 },
                 "title": "Torna a configurar el suport multiprotocol de la r\u00e0dio IEEE 802.15.4"
-            },
-            "run_zigbee_flasher_addon": {
-                "title": "Instal\u00b7lant microprogramari Zigbee"
             },
             "show_revert_guide": {
                 "description": "Si vols canviar a nom\u00e9s microprogramari Zigbee, completa els passos manuals seg\u00fcents: \n\n * Elimina el complement Silicon Labs Multiprotocol\n\n * Carrega el microprogramari (firmware) de Zigbee, segueix la guia a https://github.com/NabuCasa/silabs-firmware/wiki/Flash-Silicon-Labs-radio-firmware-manually. \n\n * Torna a configurar ZHA per migrar la configuraci\u00f3 al dispositiu r\u00e0dio actualitzat",
@@ -133,10 +99,6 @@
             "start_flasher_addon": {
                 "description": "S'est\u00e0 instal\u00b7lant el microprogramari Zigbee, trigar\u00e0 uns minuts.",
                 "title": "Instal\u00b7lant microprogramari"
-            },
-            "start_otbr_addon": {
-                "description": "El complement OpenThread Border Router (OTBR) s'est\u00e0 iniciant.",
-                "title": "Iniciant complement OpenThread Border Router"
             },
             "uninstall_addon": {
                 "data": {

@@ -9,6 +9,7 @@
             "cannot_connect": "No s'ha pogut connectar, comprova l'adre\u00e7a IP de la c\u00e0mera",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "not_admin": "L'usuari ha de ser administrador, l'usuari \"{username}\" t\u00e9 nivell d'autoritzaci\u00f3 \"{userlevel}\"",
+            "password_incompatible": "La contrasenya cont\u00e9 car\u00e0cters especials incompatibles, nom\u00e9s es permeten els seg\u00fcents car\u00e0cters: a-z, A-Z, 0-9 o {special_chars}",
             "unknown": "Error inesperat"
         },
         "flow_title": "{hostname} ({ip_address})",
@@ -327,6 +328,14 @@
                     "schedule": "Horari"
                 }
             },
+            "hdr": {
+                "name": "HDR",
+                "state": {
+                    "auto": "Autom\u00e0tic",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
             "ptz_preset": {
                 "name": "Preconfiguraci\u00f3 PTZ"
             },
@@ -424,6 +433,10 @@
         "firmware_update": {
             "description": "\"{name}\" amb model \"{model}\" i versi\u00f3 de maquinari \"{hw_version}\" est\u00e0 executant una versi\u00f3 de microprogramari antiga (\"{current_firmware}\") per\u00f2 \u00e9s necess\u00e0ria, almenys, la versi\u00f3 \"{required_firmware}\" per al correcte funcionament de la integraci\u00f3 Reolink. L'\u00faltim microprogramari (firmware) es pot descarregar des del [Centre de desc\u00e0rregues de Reolink]({download_link}).",
             "title": "Cal actualitzar el microprogramari de Reolink"
+        },
+        "hdr_switch_deprecated": {
+            "description": "L'entitat d'interruptor Reolink HDR est\u00e0 obsoleta i s'eliminar\u00e0 a HA 2025.2.0. S'ha substitu\u00eft per una entitat de selecci\u00f3 HDR que ofereix opcions `ON`, `OFF` i `autom\u00e0tic`. Per eliminar aquest problema, modifica les automatitzacions pertinents i desactiva l'entitat d'interruptor HDR.",
+            "title": "Interruptor Reolink HDR obsolet"
         },
         "https_webhook": {
             "description": "Els productes Reolink no poden enviar esdeveniments de moviment a una adre\u00e7a HTTPS (SSL); configura una adre\u00e7a HTTP (local) sota \"URL de Home Assistant\" a la [configuraci\u00f3 de xarxa]({network_link}). L'adre\u00e7a (local) actual \u00e9s: `{base_url}`, una adre\u00e7a v\u00e0lida podria ser, per exemple, `http://192.168.1.10:8123` on `192.168.1.10` \u00e9s la IP del dispositiu Home Assistant",

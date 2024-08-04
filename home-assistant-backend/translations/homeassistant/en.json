@@ -213,6 +213,12 @@
         },
         "update_entity": {
             "description": "Forces one or more entities to update its data.",
+            "fields": {
+                "entity_id": {
+                    "description": "List of entities to force update.",
+                    "name": "Entities to update"
+                }
+            },
             "name": "Update entity"
         }
     },
