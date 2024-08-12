@@ -52,6 +52,12 @@
         }
     },
     "exceptions": {
+        "connection_error": {
+            "message": "S'ha produ\u00eft un error en connectar-se a la inst\u00e0ncia de Mealie."
+        },
+        "could_not_import_recipe": {
+            "message": "Mealie no ha pogut importar la recepta des de l'URL."
+        },
         "end_date_before_start_date": {
             "message": "La data final ha de ser posterior a la data d'inici."
         },
@@ -90,12 +96,21 @@
             }
         },
         "import_recipe": {
+            "description": "Importa una recepta des d'un URL",
             "fields": {
                 "config_entry_id": {
                     "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
                     "name": "Inst\u00e0ncia de Mealie"
+                },
+                "include_tags": {
+                    "name": "Inclou etiquetes"
+                },
+                "url": {
+                    "description": "URL de la recepta a importar.",
+                    "name": "URL de la recepta"
                 }
-            }
+            },
+            "name": "Importa recepta"
         },
         "set_mealplan": {
             "description": "Estableix un men\u00fa un dia espec\u00edfic",

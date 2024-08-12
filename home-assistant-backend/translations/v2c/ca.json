@@ -30,6 +30,12 @@
         "number": {
             "intensity": {
                 "name": "Intensitat"
+            },
+            "max_intensity": {
+                "name": "Intensitat m\u00e0xima"
+            },
+            "min_intensity": {
+                "name": "Intensitat m\u00ednima"
             }
         },
         "sensor": {
@@ -48,6 +54,9 @@
             "house_power": {
                 "name": "Pot\u00e8ncia de la casa"
             },
+            "ip_address": {
+                "name": "Adre\u00e7a IP"
+            },
             "meter_error": {
                 "state": {
                     "communication": "Comunicaci\u00f3",
@@ -64,6 +73,15 @@
                     "wrong_ip": "IP incorrecta",
                     "wrong_slave": "Comptador incorrecte"
                 }
+            },
+            "signal_status": {
+                "name": "Estat del senyal"
+            },
+            "ssid": {
+                "name": "SSID"
+            },
+            "voltage_installation": {
+                "name": "Tensi\u00f3 de la instal\u00b7laci\u00f3"
             }
         },
         "switch": {

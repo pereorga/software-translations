@@ -7,6 +7,10 @@
         "maria_db_range_index_regression": {
             "description": "Older versions of MariaDB suffer from a significant performance regression when retrieving history data or purging the database. Update to MariaDB version {min_version} or later and restart Home Assistant. If you are using the MariaDB core add-on, make sure to update it to the latest version.",
             "title": "Update MariaDB to {min_version} or later resolve a significant performance issue"
+        },
+        "sqlite_too_old": {
+            "description": "Support for version {server_version} of SQLite is ending; the minimum supported version is {min_version}. Please upgrade your database software.",
+            "title": "Update SQLite to {min_version} or later to continue using the recorder"
         }
     },
     "services": {
@@ -61,11 +65,11 @@
     },
     "system_health": {
         "info": {
-            "current_recorder_run": "Current Run Start Time",
-            "database_engine": "Database Engine",
-            "database_version": "Database Version",
-            "estimated_db_size": "Estimated Database Size (MiB)",
-            "oldest_recorder_run": "Oldest Run Start Time"
+            "current_recorder_run": "Current run start time",
+            "database_engine": "Database engine",
+            "database_version": "Database version",
+            "estimated_db_size": "Estimated database size (MiB)",
+            "oldest_recorder_run": "Oldest run start time"
         }
     }
 }

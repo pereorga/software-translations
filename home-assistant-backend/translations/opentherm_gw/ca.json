@@ -30,11 +30,13 @@
     },
     "services": {
         "reset_gateway": {
+            "description": "Restableix l'OpenTherm Gateway.",
             "fields": {
                 "gateway_id": {
                     "name": "ID de la passarel\u00b7la"
                 }
-            }
+            },
+            "name": "Restableix el 'gateway'"
         },
         "send_transparent_command": {
             "fields": {

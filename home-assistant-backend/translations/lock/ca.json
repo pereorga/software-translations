@@ -50,8 +50,35 @@
         }
     },
     "services": {
+        "lock": {
+            "description": "Bloqueja un pany.",
+            "fields": {
+                "code": {
+                    "description": "Codi per bloquejar el pany.",
+                    "name": "Codi"
+                }
+            },
+            "name": "Pany"
+        },
         "open": {
+            "description": "Obre un pany.",
+            "fields": {
+                "code": {
+                    "description": "Codi per obrir el pany.",
+                    "name": "Codi"
+                }
+            },
             "name": "Obre"
+        },
+        "unlock": {
+            "description": "Desbloqueja un pany.",
+            "fields": {
+                "code": {
+                    "description": "Codi per desbloquejar el pany.",
+                    "name": "Codi"
+                }
+            },
+            "name": "Desbloqueja"
         }
     },
     "title": "Pany"

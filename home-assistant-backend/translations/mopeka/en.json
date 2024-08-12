@@ -9,13 +9,27 @@
         "flow_title": "{name}",
         "step": {
             "bluetooth_confirm": {
+                "data": {
+                    "medium_type": "Medium Type"
+                },
                 "description": "Do you want to set up {name}?"
             },
             "user": {
                 "data": {
-                    "address": "Device"
+                    "address": "Device",
+                    "medium_type": "Medium Type"
                 },
                 "description": "Choose a device to set up"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "medium_type": "Medium Type"
+                },
+                "title": "Configure Mopeka"
             }
         }
     }

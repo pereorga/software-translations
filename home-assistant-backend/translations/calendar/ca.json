@@ -36,6 +36,17 @@
         }
     },
     "issues": {
+        "deprecated_service_calendar_list_events": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Utilitza `calendar.get_events' (admet diverses entitats). \n\nSubstitueix aquesta acci\u00f3 i ajusta les teves automatitzacions i scripts. Despr\u00e9s selecciona **Envia** per resoldre aquest problema.",
+                        "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta `calendar.list_events`"
+                    }
+                }
+            },
+            "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta `calendar.list_events`"
+        },
         "platform_integration_no_support": {
             "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
             "title": "Suport de la plataforma no compatible"

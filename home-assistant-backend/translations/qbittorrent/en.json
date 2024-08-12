@@ -26,6 +26,15 @@
             "all_torrents": {
                 "name": "All torrents"
             },
+            "current_status": {
+                "name": "Status",
+                "state": {
+                    "downloading": "Downloading",
+                    "idle": "Idle",
+                    "seeding": "Seeding",
+                    "up_down": "Up/Down"
+                }
+            },
             "download_speed": {
                 "name": "Download speed"
             },
@@ -46,6 +55,11 @@
             },
             "upload_speed": {
                 "name": "Upload speed"
+            }
+        },
+        "switch": {
+            "alternative_speed": {
+                "name": "Alternative speed"
             }
         }
     },

@@ -205,9 +205,11 @@
             "description": "Atura totes les activitats de reg.",
             "fields": {
                 "device_id": {
+                    "description": "Controlador al qual aturar les activitats de reg.",
                     "name": "Controlador"
                 }
-            }
+            },
+            "name": "Atura tot el reg"
         },
         "stop_program": {
             "description": "Atura un programa.",
@@ -218,18 +220,24 @@
             "name": "Atura zona"
         },
         "unpause_watering": {
+            "description": "Repr\u00e8n totes les activitats de reg aturades.",
             "fields": {
                 "device_id": {
+                    "description": "Controlador al qual reprendre les activitats de reg.",
                     "name": "Controlador"
                 }
-            }
+            },
+            "name": "Repr\u00e8n tot el reg"
         },
         "unrestrict_watering": {
+            "description": "Deixa de restringir totes les activitats de reg",
             "fields": {
                 "device_id": {
+                    "description": "Controlador al qual deixar de restringir les activitats de reg.",
                     "name": "Controlador"
                 }
-            }
+            },
+            "name": "Deixa de restringir tot el reg"
         }
     }
 }

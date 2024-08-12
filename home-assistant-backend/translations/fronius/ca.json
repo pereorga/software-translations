@@ -115,6 +115,12 @@
             "meter_location": {
                 "name": "Ubicaci\u00f3 del comptador"
             },
+            "meter_location_description": {
+                "state": {
+                    "external_battery": "Bateria externa",
+                    "external_generator": "Generador extern"
+                }
+            },
             "meter_mode": {
                 "name": "Mode comptador"
             },
@@ -194,7 +200,15 @@
                 "name": "Codi d'estat"
             },
             "state_message": {
-                "name": "Missatge d'estat"
+                "name": "Missatge d'estat",
+                "state": {
+                    "boost_mode": "Mode incrementat",
+                    "critical_fault": "Error cr\u00edtic",
+                    "fault": "Error",
+                    "keep_minimum_temperature": "Mantenir temperatura m\u00ednima",
+                    "legionella_protection": "Protecci\u00f3 contra legionel\u00b7la",
+                    "up_and_running": "En funcionament"
+                }
             },
             "state_of_charge": {
                 "name": "Estat de c\u00e0rrega"
@@ -203,6 +217,7 @@
                 "name": "Codi d'estat"
             },
             "status_message": {
+                "name": "Missatge d'estat",
                 "state": {
                     "error": "Error",
                     "idle": "Inactiu",

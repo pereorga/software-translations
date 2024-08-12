@@ -17,11 +17,23 @@
         }
     },
     "entity": {
+        "number": {
+            "display_brightness": {
+                "name": "Brillantor de pantalla"
+            },
+            "led_bar_brightness": {
+                "name": "Brillantor de la barra LED"
+            }
+        },
         "select": {
             "co2_automatic_baseline_calibration": {
                 "state": {
                     "0": "OFF",
-                    "1": "1 dia"
+                    "1": "1 dia",
+                    "180": "180 dies",
+                    "30": "30 dies",
+                    "8": "8 dies",
+                    "90": "90 dies"
                 }
             },
             "nox_index_learning_time_offset": {
@@ -44,6 +56,12 @@
             }
         },
         "sensor": {
+            "display_brightness": {
+                "name": "Brillantor de pantalla"
+            },
+            "led_bar_brightness": {
+                "name": "Brillantor de la barra LED"
+            },
             "pm003_count": {
                 "name": "PM 0.3"
             }

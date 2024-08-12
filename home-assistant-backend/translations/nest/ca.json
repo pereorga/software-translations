@@ -147,8 +147,13 @@
         },
         "set_eta": {
             "fields": {
+                "eta": {
+                    "description": "Hora estimada d'arribada des d'ara.",
+                    "name": "HEA"
+                },
                 "eta_window": {
-                    "description": "Finestra de l'hora estimada d'arribada."
+                    "description": "Finestra de l'hora estimada d'arribada.",
+                    "name": "Finestra HEA"
                 },
                 "structure": {
                     "description": "Nom de l'estructura o estructures a canviar. Si no s'especifica, afecta a totes les estructures.",

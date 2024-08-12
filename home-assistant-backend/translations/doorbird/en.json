@@ -74,6 +74,19 @@
             }
         }
     },
+    "issues": {
+        "error_registering_events": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Configuring DoorBird {name} failed with error: `{error}`. Please enable the API Operator permission for the DoorBird user and continue to reload the integration.",
+                        "title": "DoorBird {name} configuration failure"
+                    }
+                }
+            },
+            "title": "DoorBird {name} configuration failure"
+        }
+    },
     "options": {
         "step": {
             "init": {

@@ -86,17 +86,29 @@
                 },
                 "hold_secs": {
                     "description": "Temps a mantenir premut abans d'enviar l'alliberament."
+                },
+                "num_repeats": {
+                    "name": "Repeticions"
                 }
             },
             "name": "Envia comanda"
         },
         "toggle": {
+            "description": "Activa/desactiva un interruptor.",
             "name": "Commuta"
         },
         "turn_off": {
+            "description": "Desactiva el dispositiu.",
             "name": "Apaga"
         },
         "turn_on": {
+            "description": "Envia la comanda d'activaci\u00f3.",
+            "fields": {
+                "activity": {
+                    "description": "ID d'activitat o nom de l'activitat a iniciar.",
+                    "name": "Activitat"
+                }
+            },
             "name": "Enc\u00e9n"
         }
     },

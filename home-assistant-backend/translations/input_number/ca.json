@@ -34,9 +34,27 @@
         }
     },
     "services": {
+        "decrement": {
+            "description": "Disminueix el valor en 1 pas.",
+            "name": "Disminueix"
+        },
+        "increment": {
+            "description": "Incrementa el valor en 1 pas.",
+            "name": "Incrementa"
+        },
         "reload": {
             "description": "Recarrega els ajudants des de la configuraci\u00f3 YAML.",
             "name": "Torna a carregar"
+        },
+        "set_value": {
+            "description": "Estableix el valor.",
+            "fields": {
+                "value": {
+                    "description": "Valor objectiu.",
+                    "name": "Valor"
+                }
+            },
+            "name": "Estableix"
         }
     },
     "title": "Entrada num\u00e8rica"

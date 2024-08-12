@@ -1,9 +1,34 @@
 {
     "firmware_picker": {
         "options": {
+            "abort": {
+                "not_hassio_thread": "El complement OpenThread Border Router nom\u00e9s es pot instal\u00b7lar amb el sistema operatiu Home Assistant. Si vols utilitzar {model} com a encaminador frontera Thread, carrega el microprogramari manualment mitjan\u00e7ant el [Flasher web]({docs_web_flasher_url}) i configura l'OpenThread Border Router perqu\u00e8 es comuniqui amb ell.",
+                "otbr_addon_already_running": "El complement OpenThread Border Router ja s'est\u00e0 executant, no es pot tornar a instal\u00b7lar."
+            },
+            "progress": {
+                "install_zigbee_flasher_addon": "El complement Silicon Labs Flasher est\u00e0 instal\u00b7lat, aix\u00f2 pot trigar uns quants minuts.",
+                "run_zigbee_flasher_addon": "Espera mentre el microprogramari Zigbee s'instal\u00b7la a {model}, aix\u00f2 trigar\u00e0 uns minuts. No facis cap canvi al teu maquinari o programari fins que acabi.",
+                "uninstall_zigbee_flasher_addon": "El complement Silicon Labs Flasher est\u00e0 sent eliminat."
+            },
             "step": {
+                "confirm_otbr": {
+                    "description": "{model} \u00e9s ara un OpenThread Border Router i es mostrar\u00e0 en la integraci\u00f3 de Thread un cop surtis.",
+                    "title": "S'ha completat la configuraci\u00f3 d'OpenThread Border Router"
+                },
                 "confirm_zigbee": {
+                    "description": "{model} \u00e9s ara un coordinador Zigbee i es mostrar\u00e0 com a descobert per la integraci\u00f3 de Zigbee Home Automation un cop surtis.",
                     "title": "S'ha completat la configuraci\u00f3 de Zigbee"
+                },
+                "install_otbr_addon": {
+                    "description": "El complement OpenThread Border Router (OTBR) s'est\u00e0 instal\u00b7lant.",
+                    "title": "Instal\u00b7lant el complement OpenThread Border Router"
+                },
+                "install_zigbee_flasher_addon": {
+                    "description": "Instal\u00b7lant el complement Silicon Labs Flasher",
+                    "title": "Instal\u00b7lant Flasher"
+                },
+                "otbr_failed": {
+                    "title": "No s'ha pogut configurar OpenThread Border Router"
                 },
                 "pick_firmware": {
                     "menu_options": {
@@ -13,7 +38,16 @@
                     "title": "Tria el microprogramari"
                 },
                 "run_zigbee_flasher_addon": {
+                    "description": "Instal\u00b7lant el microprogramari Zigbee, tardar\u00e0 uns minuts.",
                     "title": "Instal\u00b7lant microprogramari Zigbee"
+                },
+                "start_otbr_addon": {
+                    "description": "El complement OpenThread Border Router (OTBR) s'est\u00e0 iniciant.",
+                    "title": "Iniciant complement OpenThread Border Router"
+                },
+                "uninstall_zigbee_flasher_addon": {
+                    "description": "Eliminant el complement Silicon Labs Flasher.",
+                    "title": "Eliminant Flasher"
                 },
                 "zigbee_flasher_failed": {
                     "title": "La instal\u00b7laci\u00f3 de Zigbee ha fallat"

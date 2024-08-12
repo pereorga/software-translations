@@ -22,6 +22,19 @@
             }
         }
     },
+    "entity": {
+        "sensor": {
+            "followers": {
+                "name": "Followers"
+            },
+            "following": {
+                "name": "Following"
+            },
+            "posts": {
+                "name": "Posts"
+            }
+        }
+    },
     "issues": {
         "deprecated_yaml_import_issue_network_error": {
             "description": "Configuring {integration_title} using YAML is being removed but no instance was found while importing your existing configuration.\nPlease use the UI to configure Mastodon. Don't forget to delete the YAML configuration.",

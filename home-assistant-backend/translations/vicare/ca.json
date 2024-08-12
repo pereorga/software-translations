@@ -29,6 +29,25 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "frost_protection": {
+                "name": "Protecci\u00f3 contra gelades"
+            }
+        },
+        "fan": {
+            "ventilation": {
+                "name": "Ventilaci\u00f3",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "permanent": "permanent",
+                            "sensor_driven": "sensor",
+                            "ventilation": "programaci\u00f3"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "boiler_temperature": {
                 "name": "Temperatura de la caldera"
@@ -59,6 +78,12 @@
                     "standby": "En espera"
                 }
             },
+            "outside_temperature": {
+                "name": "Temperatura exterior"
+            },
+            "pcc_transfer_power_exchange": {
+                "name": "Intercanvi d'energia ambla  xarxa"
+            },
             "photovoltaic_energy_production_this_month": {
                 "name": "Producci\u00f3 d'energia solar, aquest mes"
             },
@@ -79,6 +104,53 @@
                     "production": "Produint",
                     "ready": "En espera"
                 }
+            },
+            "power_consumption_this_month": {
+                "name": "Consum d'energia, aquest mes"
+            },
+            "power_consumption_this_week": {
+                "name": "Consum d'energia, aquesta setmana"
+            },
+            "power_consumption_this_year": {
+                "name": "Consum d'energia, aquest any"
+            },
+            "power_consumption_today": {
+                "name": "Consum d'energia, avui"
+            },
+            "power_production_this_month": {
+                "name": "Producci\u00f3 d'energia, aquest mes"
+            },
+            "power_production_this_week": {
+                "name": "Producci\u00f3 d'energia, aquesta setmana"
+            },
+            "power_production_this_year": {
+                "name": "Producci\u00f3 d'energia, aquest any"
+            },
+            "power_production_today": {
+                "name": "Producci\u00f3 d'energia, avui"
+            },
+            "return_temperature": {
+                "name": "Temperatura de retorn"
+            },
+            "solar_power_production_this_month": {
+                "name": "Producci\u00f3 d'energia solar, aquest mes"
+            },
+            "solar_power_production_this_week": {
+                "name": "Producci\u00f3 d'energia solar, aquesta setmana"
+            },
+            "solar_power_production_this_year": {
+                "name": "Producci\u00f3 d'energia solar, aquest any"
+            },
+            "solar_power_production_today": {
+                "name": "Producci\u00f3 d'energia solar, avui"
+            },
+            "volumetric_flow": {
+                "name": "Cabal volum\u00e8tric"
+            }
+        },
+        "water_heater": {
+            "water": {
+                "name": "Aigua"
             }
         }
     },

@@ -325,16 +325,55 @@
         }
     },
     "services": {
+        "event_register": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a de grup"
+                },
+                "type": {
+                    "name": "Tipus de valor"
+                }
+            }
+        },
         "exposure_register": {
             "fields": {
+                "address": {
+                    "name": "Adre\u00e7a de grup"
+                },
+                "attribute": {
+                    "name": "Atribut d'entitat"
+                },
+                "default": {
+                    "name": "Valor predeterminat"
+                },
                 "entity_id": {
                     "name": "Entitat"
+                },
+                "type": {
+                    "name": "Tipus de valor"
+                }
+            }
+        },
+        "read": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a de grup"
                 }
             }
         },
         "reload": {
             "description": "Recarrega la integraci\u00f3 KNX.",
             "name": "Torna a carregar"
+        },
+        "send": {
+            "fields": {
+                "address": {
+                    "name": "Adre\u00e7a de grup"
+                },
+                "payload": {
+                    "name": "Dades ('payload')"
+                }
+            }
         }
     }
 }

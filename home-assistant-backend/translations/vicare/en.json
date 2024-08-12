@@ -65,6 +65,21 @@
                 "name": "Heating"
             }
         },
+        "fan": {
+            "ventilation": {
+                "name": "Ventilation",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "permanent": "permanent",
+                            "sensor_driven": "sensor",
+                            "sensor_override": "schedule with sensor-override",
+                            "ventilation": "schedule"
+                        }
+                    }
+                }
+            }
+        },
         "number": {
             "comfort_heating_temperature": {
                 "name": "Comfort temperature"
@@ -288,6 +303,9 @@
             },
             "pcc_energy_feed_in": {
                 "name": "Energy export to grid"
+            },
+            "pcc_transfer_power_exchange": {
+                "name": "Power exchange with grid"
             },
             "photovoltaic_energy_production_this_month": {
                 "name": "Solar energy production this month"

@@ -136,6 +136,16 @@
             }
         }
     },
+    "issues": {
+        "server_version_version_too_new": {
+            "description": "La versi\u00f3 del servidor Matter que est\u00e0s executant actualment \u00e9s massa nova per a aquesta versi\u00f3 de Home Assistant. Actualitza Home Assistant a l'\u00faltima versi\u00f3 o instal\u00b7la una versi\u00f3 de Matter m\u00e9s antiga per resoldre aquest problema.",
+            "title": "Es necessita una versi\u00f3 del servidor Matter m\u00e9s antiga"
+        },
+        "server_version_version_too_old": {
+            "description": "La versi\u00f3 del servidor Matter que est\u00e0s executant actualment \u00e9s massa antiga per a aquesta versi\u00f3 de Home Assistant. Actualitza a l'\u00faltima versi\u00f3 per resoldre aquest problema.",
+            "title": "Es necessita una versi\u00f3 del servidor Matter m\u00e9s nova"
+        }
+    },
     "services": {
         "open_commissioning_window": {
             "fields": {

@@ -21,6 +21,14 @@
             }
         }
     },
+    "exceptions": {
+        "project_invalid": {
+            "message": "El nom del projecte \"{project}\" \u00e9s inv\u00e0lid"
+        },
+        "section_invalid": {
+            "message": "El projecte \"{project}\" no t\u00e9 cap secci\u00f3 \"{section}\""
+        }
+    },
     "services": {
         "new_task": {
             "description": "Crea una nova tasca i l'afegeix a un projecte.",
@@ -55,6 +63,10 @@
                 "reminder_date_lang": {
                     "description": "Idioma de reminder_date_string.",
                     "name": "Idioma de les dades del recordatori"
+                },
+                "section": {
+                    "description": "Nom de la secci\u00f3 dins del projecte on afegir la tasca.",
+                    "name": "Secci\u00f3"
                 }
             },
             "name": "Nova tasca"

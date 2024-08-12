@@ -259,6 +259,7 @@
             }
         },
         "multicast_set_value": {
+            "description": "Canvia qualsevol valor que Z-Wave JS reconegui utilitzant multidifusi\u00f3 ('multicast') en diversos dispositius Z-Wave perqu\u00e8 tots els dispositius rebin el missatge simult\u00e0niament. Aquesta acci\u00f3 t\u00e9 una validaci\u00f3 m\u00ednima, per tant, utilitza aquesta acci\u00f3 si saps el que est\u00e0s fent.",
             "fields": {
                 "command_class": {
                     "description": "ID de la classe de comandes del valor.",
@@ -310,6 +311,13 @@
                 }
             },
             "name": "Actualitza valors"
+        },
+        "reset_meter": {
+            "fields": {
+                "value": {
+                    "name": "Valor objectiu"
+                }
+            }
         },
         "set_config_parameter": {
             "fields": {

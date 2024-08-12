@@ -26,6 +26,9 @@
             "vehicle_state_rt": {
                 "name": "Maleter"
             },
+            "vehicle_state_sun_roof_state": {
+                "name": "Teulada solar"
+            },
             "windows": {
                 "name": "Finestres"
             }
@@ -193,8 +196,17 @@
             "charge_state_usable_battery_level": {
                 "name": "Nivell de bateria utilitzable"
             },
+            "climate_state_driver_temp_setting": {
+                "name": "Configuraci\u00f3 de temperatura del conductor"
+            },
+            "climate_state_inside_temp": {
+                "name": "Temperatura interior"
+            },
             "climate_state_outside_temp": {
                 "name": "Temperatura exterior"
+            },
+            "climate_state_passenger_temp_setting": {
+                "name": "Configuraci\u00f3 de temperatura de passatger"
             },
             "drive_state_active_route_destination": {
                 "name": "Destinaci\u00f3"
@@ -214,6 +226,35 @@
             "drive_state_power": {
                 "name": "Pot\u00e8ncia"
             },
+            "drive_state_shift_state": {
+                "name": "Canvi de marxes",
+                "state": {
+                    "d": "Conducci\u00f3",
+                    "p": "Aparcament",
+                    "r": "Marxa enrere"
+                }
+            },
+            "drive_state_speed": {
+                "name": "Velocitat"
+            },
+            "energy_left": {
+                "name": "Energia restant"
+            },
+            "generator_power": {
+                "name": "Pot\u00e8ncia del generador"
+            },
+            "grid_power": {
+                "name": "Pot\u00e8ncia de xarxa"
+            },
+            "grid_services_power": {
+                "name": "Pot\u00e8ncia dels serveis de xarxa"
+            },
+            "load_power": {
+                "name": "Pot\u00e8ncia de c\u00e0rrega"
+            },
+            "percentage_charged": {
+                "name": "Percentatge carregat"
+            },
             "solar_power": {
                 "name": "Pot\u00e8ncia solar"
             },
@@ -223,8 +264,23 @@
             "vehicle_state_odometer": {
                 "name": "Comptaquil\u00f2metres"
             },
+            "vehicle_state_tpms_pressure_fl": {
+                "name": "Pressi\u00f3 del pneum\u00e0tic davanter esquerra"
+            },
+            "vehicle_state_tpms_pressure_fr": {
+                "name": "Pressi\u00f3 del pneum\u00e0tic davanter dret"
+            },
+            "vehicle_state_tpms_pressure_rl": {
+                "name": "Pressi\u00f3 del pneum\u00e0tic posterior esquerra"
+            },
+            "vehicle_state_tpms_pressure_rr": {
+                "name": "Pressi\u00f3 del pneum\u00e0tic posterior dret"
+            },
             "vin": {
                 "name": "Vehicle"
+            },
+            "wall_connector_fault_state": {
+                "name": "Codi d'error"
             },
             "wall_connector_power": {
                 "name": "Pot\u00e8ncia"
@@ -239,11 +295,58 @@
             }
         }
     },
+    "exceptions": {
+        "command_error": {
+            "message": "L'ordre ha retornat un error: {error}"
+        },
+        "invalid_device": {
+            "message": "ID de dispositiu inv\u00e0lid: {device_id}"
+        },
+        "no_config_entry_for_device": {
+            "message": "No s'ha trobat cap entrada de configuraci\u00f3 per l'ID de dispositiu: {device_id}"
+        },
+        "no_energy_site_data_for_device": {
+            "message": "No s'han trobat dades d'energia per l'ID de dispositiu: {device_id}"
+        },
+        "no_vehicle_data_for_device": {
+            "message": "No s'han trobat dades per l'ID de dispositiu: {device_id}"
+        },
+        "set_scheduled_charging_time": {
+            "message": "Temps necessari per completar l'operaci\u00f3"
+        }
+    },
     "services": {
+        "set_scheduled_charging": {
+            "fields": {
+                "device_id": {
+                    "name": "Vehicle"
+                },
+                "enable": {
+                    "name": "Activa"
+                }
+            }
+        },
         "set_scheduled_departure": {
             "fields": {
                 "device_id": {
                     "name": "Vehicle"
+                },
+                "enable": {
+                    "name": "Activa"
+                }
+            }
+        },
+        "speed_limit": {
+            "fields": {
+                "device_id": {
+                    "name": "Vehicle"
+                },
+                "enable": {
+                    "name": "Activa"
+                },
+                "pin": {
+                    "description": "PIN de 4 d\u00edgits.",
+                    "name": "PIN"
                 }
             }
         },

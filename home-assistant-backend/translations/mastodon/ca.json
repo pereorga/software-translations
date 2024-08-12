@@ -22,6 +22,19 @@
             }
         }
     },
+    "entity": {
+        "sensor": {
+            "followers": {
+                "name": "Seguidors"
+            },
+            "following": {
+                "name": "Seguint"
+            },
+            "posts": {
+                "name": "Publicacions"
+            }
+        }
+    },
     "issues": {
         "deprecated_yaml_import_issue_network_error": {
             "description": "La configuraci\u00f3 de {integration_title} mitjan\u00e7ant YAML s'est\u00e0 eliminant per\u00f2 no s'ha trobat cap inst\u00e0ncia per importar la configuraci\u00f3 existent actual.\nUtilitza la interf\u00edcie d'usuari per configurar Mastodon. No oblidis d'eliminar la configuraci\u00f3 YAML.",

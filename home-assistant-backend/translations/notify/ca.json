@@ -7,6 +7,10 @@
     "services": {
         "notify": {
             "fields": {
+                "message": {
+                    "description": "Missatge/cos de la notificaci\u00f3.",
+                    "name": "Missatge"
+                },
                 "title": {
                     "name": "T\u00edtol"
                 }
@@ -24,7 +28,8 @@
                 "title": {
                     "name": "T\u00edtol"
                 }
-            }
+            },
+            "name": "Envia una notificaci\u00f3 persistent"
         },
         "send_message": {
             "description": "Envia un missatge de notificaci\u00f3.",

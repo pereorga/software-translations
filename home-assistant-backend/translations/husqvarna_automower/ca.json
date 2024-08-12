@@ -136,6 +136,14 @@
             }
         }
     },
+    "exceptions": {
+        "work_area_not_existing": {
+            "message": "L'\u00e0rea de treball seleccionada no existeix."
+        },
+        "work_areas_not_supported": {
+            "message": "Aquest tallagespa no admet zones de treball."
+        }
+    },
     "selector": {
         "override_modes": {
             "options": {
@@ -152,6 +160,20 @@
                     "name": "Durada"
                 }
             }
+        },
+        "override_schedule_work_area": {
+            "description": "Sobreescriu la programaci\u00f3 del tallagespa durant un per\u00edode de temps a l'\u00e0rea de treball seleccionada.",
+            "fields": {
+                "duration": {
+                    "description": "M\u00ednim: 1 minut, m\u00e0xim: 42 dies; s'ignoraran els segons.",
+                    "name": "Durada"
+                },
+                "work_area_id": {
+                    "description": "Zona de treball en la qual segar.",
+                    "name": "ID d'\u00e0rea de treball"
+                }
+            },
+            "name": "Sobreescriu programaci\u00f3 d'una \u00e0rea de treball"
         }
     }
 }

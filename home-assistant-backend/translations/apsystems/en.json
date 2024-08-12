@@ -24,6 +24,20 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "dc_1_short_circuit_error_status": {
+                "name": "DC 1 short circuit error status"
+            },
+            "dc_2_short_circuit_error_status": {
+                "name": "DC 2 short circuit error status"
+            },
+            "off_grid_status": {
+                "name": "Off grid status"
+            },
+            "output_fault_status": {
+                "name": "Output fault status"
+            }
+        },
         "number": {
             "max_output": {
                 "name": "Max output"
@@ -56,6 +70,11 @@
             },
             "total_power_p2": {
                 "name": "Power of P2"
+            }
+        },
+        "switch": {
+            "inverter_status": {
+                "name": "Inverter status"
             }
         }
     }

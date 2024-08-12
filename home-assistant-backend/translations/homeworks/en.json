@@ -2,8 +2,11 @@
     "config": {
         "error": {
             "connection_error": "Could not connect to the controller.",
+            "credentials_needed": "The controller needs credentials.",
             "duplicated_controller_id": "The controller name is already in use.",
             "duplicated_host_port": "The specified host and port is already configured.",
+            "invalid_credentials": "The provided credentials are not valid.",
+            "need_username_with_password": "Credentials must be either a username and a password or only a username.",
             "unknown_error": "Unexpected error"
         },
         "step": {
@@ -22,7 +25,13 @@
             "reconfigure": {
                 "data": {
                     "host": "Host",
-                    "port": "Port"
+                    "password": "Password",
+                    "port": "Port",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Optional password, leave blank if your system does not need credentials or only needs a single credential",
+                    "username": "Optional username, leave blank if your system does not need login credentials"
                 },
                 "description": "Modify a Lutron Homeworks controller connection settings"
             },
@@ -30,10 +39,14 @@
                 "data": {
                     "host": "Host",
                     "name": "Controller name",
-                    "port": "Port"
+                    "password": "Password",
+                    "port": "Port",
+                    "username": "Username"
                 },
                 "data_description": {
-                    "name": "A unique name identifying the Lutron Homeworks controller"
+                    "name": "A unique name identifying the Lutron Homeworks controller",
+                    "password": "Optional password, leave blank if your system does not need credentials or only needs a single credential",
+                    "username": "Optional username, leave blank if your system does not need login credentials"
                 },
                 "description": "Add a Lutron Homeworks controller"
             }

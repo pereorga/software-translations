@@ -26,6 +26,15 @@
             "all_torrents": {
                 "name": "Tots els torrents"
             },
+            "current_status": {
+                "name": "Estat",
+                "state": {
+                    "downloading": "Baixant",
+                    "idle": "Inactiu",
+                    "seeding": "Sembrant",
+                    "up_down": "Pujada/Baixada"
+                }
+            },
             "download_speed": {
                 "name": "Velocitat de baixada"
             },
@@ -45,6 +54,11 @@
             },
             "upload_speed": {
                 "name": "Velocitat de pujada"
+            }
+        },
+        "switch": {
+            "alternative_speed": {
+                "name": "Velocitat alternativa"
             }
         }
     },
