@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-15 08:03+0000\n"
+"POT-Creation-Date: 2024-08-12 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +45,10 @@ msgid "MIME Description"
 msgstr "Descripció de MIME"
 
 #: FindPanel
+msgid "Query"
+msgstr "Consulta"
+
+#: FindPanel
 msgid "before"
 msgstr "abans"
 
@@ -60,6 +64,22 @@ msgstr "Icones dels volums"
 msgid "Ignore case"
 msgstr "Ignora les diferències de majúscules i minúscules"
 
+#: FindPanel
+msgid ""
+"Do you want to clear temporary queries or all queries? This action is "
+"irreversible!"
+msgstr ""
+"Voleu netejar les consultes temporals o totes les consultes? Aquesta acció "
+"és irreversible!"
+
+#: FindPanel
+msgid "Save query:"
+msgstr "Desa la consulta:"
+
+#: FindPanel
+msgid "Save as query template:"
+msgstr "Desa la consulta com a plantilla:"
+
 #: ContainerWindow
 msgid "Current folder"
 msgstr "Carpeta actual"
@@ -72,10 +92,6 @@ msgstr "Fi: %time - falten %finishtime"
 msgid "Mount all disks now"
 msgstr "Munta tots els discs ara"
 
-#: InfoWindow
-msgid "Location:"
-msgstr "Ubicació:"
-
 #: PoseView
 msgctxt "PoseView"
 "PoseView"
@@ -87,6 +103,10 @@ msgctxt "PoseView"
 "PoseView"
 msgid "Name"
 msgstr "Nom"
+
+#: InfoWindow
+msgid "Location:"
+msgstr "Ubicació:"
 
 #: InfoWindow
 msgid "Kind:"
@@ -256,6 +276,10 @@ msgstr "Mida"
 msgid "matches wildcard expression"
 msgstr "es correspon amb l'expressió regular"
 
+#: FindPanel
+msgid "Clear history?"
+msgstr "Voleu netejar-ne l'historial?"
+
 #: Bookmark+Query+Columns
 msgid "Title"
 msgstr "Títol"
@@ -376,6 +400,10 @@ msgstr "Inclou la paperera"
 msgctxt "ContainerWindow"
 msgid "Clean up"
 msgstr "Neteja"
+
+#: FindPanel
+msgid "Clear all"
+msgstr "Suprimeix-ho tot"
 
 #: FindPanel
 msgctxt "FindPanel"
@@ -500,13 +528,13 @@ msgstr "Companyia"
 msgid "Recent documents"
 msgstr "Documents recents"
 
-#: FindPanel
-msgid "Save as Query template:"
-msgstr "Desa-ho com una plantilla de consulta:"
-
 #: TemplatesMenu
 msgid "Edit templates…"
 msgstr "Edita les plantilles..."
+
+#: FindPanel
+msgid "Clear temporary queries only"
+msgstr "Suprimeix només les consultes temporals"
 
 #: FSUtils
 msgid "{0, plural, one{# byte} other{# bytes}}"
@@ -578,10 +606,6 @@ msgstr ""
 msgid "List view"
 msgstr "Vista de llista"
 
-#: FindPanel
-msgid "Temporary"
-msgstr "Temporal"
-
 #: QueryPoseView
 msgctxt "QueryPoseView"
 msgid "Modified"
@@ -603,6 +627,7 @@ msgctxt "FSClipBoard"
 "FSClipBoard"
 "FSClipBoard"
 "FSClipBoard"
+"FSClipBoard"
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -610,6 +635,10 @@ msgstr "Cancel·la"
 msgctxt "PoseView"
 msgid "Modified"
 msgstr "Modificat"
+
+#: FindPanel
+msgid "Save as template…"
+msgstr "Desa-la com a plantilla..."
 
 #: ContainerWindow
 msgctxt "ContainerWindow"
@@ -630,6 +659,10 @@ msgstr "Complements"
 #: libtracker
 msgid "Too many parenthesis."
 msgstr "Massa parèntesis."
+
+#: FindPanel
+msgid "Save query template:"
+msgstr "Desa la plantilla de consulta:"
 
 #: ContainerWindow
 msgctxt "ContainerWindow"
@@ -998,6 +1031,10 @@ msgstr "Desconegut"
 msgid "32-bit integer"
 msgstr "Enter de 32 bits"
 
+#: FindPanel
+msgid "Save as query…"
+msgstr "Desa-la com a plantilla..."
+
 #: FilePanelPriv
 msgid ""
 "The specified name is already used as the name of a folder. Please choose "
@@ -1331,6 +1368,10 @@ msgstr "Es prepara el buidatge de la paperera..."
 msgid "Deleting: "
 msgstr "Se suprimeix: "
 
+#: PoseView
+msgid "label too long"
+msgstr "l'etiqueta és massa llarga"
+
 #: FSUtils
 msgid "the MIME settings"
 msgstr "els paràmetres de MIME"
@@ -1338,10 +1379,6 @@ msgstr "els paràmetres de MIME"
 #: FSUtils
 msgid "You can't move or copy the trash."
 msgstr "No podeu moure o copiar la paperera."
-
-#: PoseView
-msgid "label too long"
-msgstr "l'etiqueta és massa llarga"
 
 #: FSUtils
 msgid "Error creating link to \\\"%name\\\"."
@@ -1364,6 +1401,11 @@ msgstr "Es restaura: "
 msgid "The Tracker must be running to set the default printer."
 msgstr ""
 "El Rastrejador ha d'executar-se per establir la impressora predeterminada."
+
+#: FindPanel
+msgctxt "FindPanel"
+msgid "Cancel"
+msgstr "Cancel·la"
 
 #: InfoWindow
 msgid "calculating…"
@@ -1508,6 +1550,10 @@ msgstr "Nou"
 msgid "Invert"
 msgstr "Inverteix"
 
+#: FindPanel
+msgid "Open…"
+msgstr "Obre..."
+
 #: FSUtils
 msgid "Would you like to find some other suitable application?"
 msgstr "Voleu trobar una altra aplicació adequada?"
@@ -1562,15 +1608,15 @@ msgstr ""
 msgid "Creating links: "
 msgstr "Es creen els enllaços: "
 
+#: PoseView
+msgid "Create %s clipping"
+msgstr "Crea un retall de %s"
+
 #: FSUtils
 msgid ""
 "Could not open \\\"%document\\\" with application \\\"%app\\\" (%error). "
 msgstr ""
 "No s'ha pogut obrir \\\"%document\\\" amb l'aplicació \\\"%app\\\" (%error). "
-
-#: PoseView
-msgid "Create %s clipping"
-msgstr "Crea un retall de %s"
 
 #: FSUtils
 msgid "Error moving \\\"%name\\\""
@@ -1780,6 +1826,10 @@ msgctxt "FilePanelPriv"
 msgid "Select all"
 msgstr "Selecciona-ho tot"
 
+#: FindPanel
+msgid "Clear history"
+msgstr "Neteja'n l'historial"
+
 #: FilePermissionsView
 msgid "Other"
 msgstr "Altres"
@@ -1812,10 +1862,6 @@ msgstr "Hora"
 msgctxt "DirMenu"
 msgid "Disks"
 msgstr "Discs"
-
-#: FindPanel
-msgid "Query name:"
-msgstr "Nom de la consulta:"
 
 #: ContainerWindow
 msgctxt "ContainerWindow"
@@ -2035,6 +2081,10 @@ msgstr ""
 "\\n"
 "Si tanmateix voleu fer-ho, mantingueu premuda la tecla Maj. i cliqueu a Mou."
 
+#: FindPanel
+msgid "Open query:"
+msgstr "Obre una consulta:"
+
 #: ContainerWindow
 msgid "Close all in workspace"
 msgstr "Tanca-ho tot de l'espai de treball"
@@ -2093,6 +2143,10 @@ msgstr "No gestiona fitxers"
 #: Person+Query+Columns
 msgid "E-mail"
 msgstr "Adreça electrònica"
+
+#: FindPanel
+msgid "Templates"
+msgstr "Plantilles"
 
 #: ContainerWindow
 msgid "Arrange by"
@@ -2326,16 +2380,16 @@ msgstr "Duplica"
 msgid "16-bit integer"
 msgstr "Enter de 16 bits"
 
+#: PoseView
+msgid "Untitled clipping"
+msgstr "Retall sense títol"
+
 #: FSUtils
 msgid ""
 "Note: file names in the destination file system are not case-sensitive.\\n"
 msgstr ""
 "Nota: els noms de fitxers del sistema de fitxers de destinació no "
 "distingeixen entre majúscules i minúscules.\\n"
-
-#: PoseView
-msgid "Untitled clipping"
-msgstr "Retall sense títol"
 
 #: FilePanelPriv
 msgid ""
@@ -2416,19 +2470,23 @@ msgctxt "FSUtils"
 msgid "Move to Trash"
 msgstr "Mou a la paperera"
 
+#: PoseView
+msgctxt "PoseView"
+msgid "Cancel"
+msgstr "Cancel·la"
+
 #: OpenWithWindow
 msgid "Handles %type"
 msgstr "Gestiona el tipus %type"
 
 #: PoseView
 msgctxt "PoseView"
-msgid "Cancel"
-msgstr "Cancel·la"
-
-#: PoseView
-msgctxt "PoseView"
 msgid "Delete"
 msgstr "Suprimeix"
+
+#: FindPanel
+msgid "Options"
+msgstr "Opcions"
 
 #: AttributesView
 msgid "Media parameter"
