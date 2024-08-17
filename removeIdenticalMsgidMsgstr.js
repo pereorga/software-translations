@@ -24,28 +24,31 @@ fs.readFile(inputFile, 'utf8', (err, data) => {
   }
 
   // Split the file content into entries
-  const entries = data.split(/\n\n/);
+  const entries = data.split('\n\n');
 
   // Function to extract multiline msgid or msgstr
   function extractMultilineValue(entry, key) {
-    const regex = new RegExp(`^${key}.*`, 'mg');
-    const matches = entry.match(regex);
-    if (!matches) return '';
+    const lines = entry.split('\n');
+    const keyIndex = lines.findIndex(line => line.startsWith(key));
+    if (keyIndex === -1) return '';
 
-    // Combine lines and remove quotes
-    const value = matches.map(line => line.replace(new RegExp(`^${key}`, 'm'), '').trim().replace(/^"(.*)"$/, '$1')).join('');
-    return value;
+    let value = '';
+    for (let i = keyIndex + 1; i < lines.length; i++) {
+      const line = lines[i].trim();
+      if (line.startsWith('"') && line.endsWith('"')) {
+        value += line.slice(1, -1);
+      } else {
+        break;
+      }
+    }
+    return value || lines[keyIndex].replace(`${key} `, '').replace(/^"(.*)"$/, '$1');
   }
 
   // Filter out entries where msgid and msgstr are identical
   const filteredEntries = entries.filter(entry => {
     const msgid = extractMultilineValue(entry, 'msgid');
     const msgstr = extractMultilineValue(entry, 'msgstr');
-
-    if (msgid && msgstr) {
-      return msgid !== msgstr;
-    }
-    return true;
+    return msgid !== msgstr;
   });
 
   // Join the filtered entries back into a single string
