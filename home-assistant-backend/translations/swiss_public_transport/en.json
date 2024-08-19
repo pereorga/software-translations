@@ -53,8 +53,17 @@
         }
     },
     "exceptions": {
+        "cannot_connect": {
+            "message": "Cannot connect to server.\n{error}"
+        },
+        "config_entry_not_found": {
+            "message": "Swiss public transport integration instance \"{target}\" not found."
+        },
         "invalid_data": {
             "message": "Setup failed for entry {config_title} with invalid data, check at the [stationboard]({stationboard_url}) if your station names are valid.\n{error}"
+        },
+        "not_loaded": {
+            "message": "{target} is not loaded."
         },
         "request_timeout": {
             "message": "Timeout while connecting for entry {config_title}.\n{error}"
@@ -72,6 +81,22 @@
         "deprecated_yaml_import_issue_unknown": {
             "description": "Configuring swiss public transport using YAML is being removed but there was an unknown error importing your YAML configuration.\n\nCheck your configuration or have a look at the documentation of the integration.",
             "title": "The swiss public transport YAML configuration import failed with unknown error raised by python-opendata-transport"
+        }
+    },
+    "services": {
+        "fetch_connections": {
+            "description": "Fetch a list of connections from the swiss public transport.",
+            "fields": {
+                "config_entry_id": {
+                    "description": "Swiss public transport instance to fetch connections for.",
+                    "name": "Instance"
+                },
+                "limit": {
+                    "description": "Number of connections to fetch from [1-15]",
+                    "name": "Limit"
+                }
+            },
+            "name": "Fetch Connections"
         }
     }
 }

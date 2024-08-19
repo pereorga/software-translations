@@ -53,5 +53,21 @@
         "write_access_failed": {
             "message": "Write access to {filename} failed: {exc}."
         }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "timestamp": "Timestamp",
+                    "unit_of_measurement": "Unit of measurement",
+                    "value_template": "Value template"
+                },
+                "data_description": {
+                    "timestamp": "Add a timestamp to the notification",
+                    "unit_of_measurement": "Unit of measurement for the sensor",
+                    "value_template": "A template to render the the sensors value based on the file content"
+                }
+            }
+        }
     }
 }

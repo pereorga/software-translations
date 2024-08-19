@@ -87,7 +87,18 @@
         },
         "integration_not_found": {
             "fix_flow": {
+                "abort": {
+                    "issue_ignored": "Not existing integration {domain} ignored."
+                },
                 "step": {
+                    "init": {
+                        "description": "The integration `{domain}` could not be found. This happens when a (custom) integration was removed from Home Assistant, but there are still configurations for this `integration`. Please use the buttons below to either remove the previous configurations for `{domain}` or ignore this.",
+                        "menu_options": {
+                            "confirm": "Remove previous configurations",
+                            "ignore": "Ignore"
+                        },
+                        "title": "Integration {domain} not found"
+                    },
                     "remove_entries": {
                         "description": "The integration `{domain}` could not be found. This happens when a (custom) integration was removed from Home Assistant, but there are still configurations for this `integration`. Please use the buttons below to either remove the previous configurations for `{domain}` or ignore this.",
                         "menu_options": {

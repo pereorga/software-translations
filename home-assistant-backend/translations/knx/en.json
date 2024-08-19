@@ -157,6 +157,22 @@
         }
     },
     "entity": {
+        "climate": {
+            "knx_climate": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Preset",
+                        "state": {
+                            "auto": "Auto",
+                            "building_protection": "Building protection",
+                            "comfort": "Comfort",
+                            "economy": "Eco",
+                            "standby": "Standby"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "connected_since": {
                 "name": "Connection established"

@@ -18,7 +18,20 @@
     },
     "entity": {
         "sensor": {
+            "climb": {
+                "name": "Climb"
+            },
+            "elevation": {
+                "name": "Elevation"
+            },
+            "latitude": {
+                "name": "Latitude"
+            },
+            "longitude": {
+                "name": "Longitude"
+            },
             "mode": {
+                "name": "Mode",
                 "state": {
                     "2d_fix": "2D Fix",
                     "3d_fix": "3D Fix"
@@ -46,6 +59,9 @@
                         "name": "Speed"
                     }
                 }
+            },
+            "time": {
+                "name": "Time"
             }
         }
     }
