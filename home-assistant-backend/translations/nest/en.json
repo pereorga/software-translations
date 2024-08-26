@@ -94,6 +94,30 @@
         }
     },
     "entity": {
+        "event": {
+            "chime": {
+                "name": "Chime",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "doorbell_chime": "Chime"
+                        }
+                    }
+                }
+            },
+            "motion": {
+                "name": "Motion",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "camera_motion": "Motion",
+                            "camera_person": "Person",
+                            "camera_sound": "Sound"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "humidity": {
                 "name": "Humidity"

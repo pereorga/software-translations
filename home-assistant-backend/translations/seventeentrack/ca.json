@@ -47,6 +47,15 @@
         }
     },
     "issues": {
+        "deprecate_sensor": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Els sensors dels paquets de 17Track estan obsolets i s'eliminaran.\nModifica les teves automatitzacions i/o scripts per obtenir les dades mitjan\u00e7ant l'acci\u00f3 `seventeentrack.get_packages`."
+                    }
+                }
+            }
+        },
         "deprecated_yaml_import_issue_invalid_auth": {
             "title": "La sol\u00b7licitud d'importaci\u00f3 de configuraci\u00f3 YAML de 17Track ha fallat a causa d'una autenticaci\u00f3 inv\u00e0lida"
         }

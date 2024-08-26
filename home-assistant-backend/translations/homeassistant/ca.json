@@ -28,6 +28,9 @@
         },
         "platform_schema_validator_err": {
             "message": "Error desconegut en validar la configuraci\u00f3 de {domain} de la integraci\u00f3 {p_name} - {error}."
+        },
+        "service_does_not_support_response": {
+            "message": "Una acci\u00f3 que no retorna respostes no es pot cridar amb {return_response}."
         }
     },
     "issues": {
@@ -57,14 +60,22 @@
         "integration_not_found": {
             "fix_flow": {
                 "step": {
+                    "init": {
+                        "menu_options": {
+                            "ignore": "Ignora"
+                        },
+                        "title": "No s'ha trobat la integraci\u00f3 {domain}"
+                    },
                     "remove_entries": {
                         "menu_options": {
                             "confirm": "Elimina les configuracions anteriors",
                             "ignore": "Ignora"
-                        }
+                        },
+                        "title": "No s'ha trobat la integraci\u00f3 {domain}"
                     }
                 }
-            }
+            },
+            "title": "No s'ha trobat la integraci\u00f3 {domain}"
         },
         "no_platform_setup": {
             "description": "No \u00e9s possible configurar {platform} {domain} afegint `{platform_key}` a la configuraci\u00f3 de {domain}. Consulta la documentaci\u00f3 per a m\u00e9s informaci\u00f3 sobre com configurar aquesta integraci\u00f3.\n\nPer resoldre aix\u00f2:\n1. Elimina `{platform_key}` de la configuraci\u00f3 de `{domain}`: al fitxer de configuraci\u00f3 YAML.\n2. Reinicia Home Assistant. \n\nExemple del que caldria eliminar:\n{yaml_example}\n",

@@ -1,12 +1,26 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
-            "cannot_connect": "Ha fallat la connexi\u00f3"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "set_up_new_device": "S'ha detectat un dispositiu nou. Configura'l com una entitat nova enlloc de tornar-lo a configurar."
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP del dispositiu madVR Envy.",
+                    "port": "Port on est\u00e0 escoltant el teu madVR Envy. En el 99% dels casos, deixa-ho de la manera predeterminada."
+                },
+                "description": "El dispositiu ha d'estar engegat per poder reconfigurar la integraci\u00f3.",
+                "title": "Reconfiguraci\u00f3 de madVR Envy"
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",

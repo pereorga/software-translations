@@ -1,6 +1,10 @@
 {
     "config": {
         "abort": {
+            "addon_connection_failed": "Failed to connect to the {addon} add-on. Check the add-on status and try again later.",
+            "addon_info_failed": "Failed get info for the {addon} add-on.",
+            "addon_install_failed": "Failed to install the {addon} add-on.",
+            "addon_start_failed": "Failed to start the {addon} add-on.",
             "already_configured": "Service is already configured",
             "reauth_successful": "Re-authentication was successful",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
@@ -69,6 +73,9 @@
                 "description": "Do you want to configure Home Assistant to connect to the MQTT broker provided by the add-on {addon}?",
                 "title": "MQTT Broker via Home Assistant add-on"
             },
+            "install_addon": {
+                "title": "Installing add-on"
+            },
             "reauth_confirm": {
                 "data": {
                     "password": "Password",
@@ -80,6 +87,16 @@
                 },
                 "description": "The MQTT broker reported an authentication error. Please confirm the brokers correct username and password.",
                 "title": "Re-authentication required with the MQTT broker"
+            },
+            "start_addon": {
+                "title": "Starting add-on"
+            },
+            "user": {
+                "description": "Please choose how you want to connect to the MQTT broker:",
+                "menu_options": {
+                    "addon": "Use the official {addon} add-on.",
+                    "broker": "Manually enter the MQTT broker connection details"
+                }
             }
         }
     },

@@ -1,6 +1,10 @@
 {
     "config": {
         "abort": {
+            "addon_connection_failed": "No s'ha pogut connectar al complement {addon}. Comprova el seu estat i torna-ho a provar m\u00e9s tard.",
+            "addon_info_failed": "No s'ha pogut obtenir la informaci\u00f3 del complement {addon}.",
+            "addon_install_failed": "No s'ha pogut instal\u00b7lar el complement {addon}.",
+            "addon_start_failed": "No s'ha pogut iniciar el complement {addon}.",
             "already_configured": "El servei ja est\u00e0 configurat",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
@@ -52,6 +56,9 @@
                 "description": "Vols configurar Home Assistant perqu\u00e8 es connecti amb el broker MQTT proporcionat pel complement {addon}?",
                 "title": "Broker MQTT via complement de Home Assistant"
             },
+            "install_addon": {
+                "title": "Instal\u00b7lant complement"
+            },
             "reauth_confirm": {
                 "data": {
                     "password": "Contrasenya",
@@ -60,6 +67,16 @@
                 "data_description": {
                     "password": "Contrasenya per iniciar sessi\u00f3 al teu 'broker' MQTT.",
                     "username": "Nom d'usuari per iniciar sessi\u00f3 al teu 'broker' MQTT."
+                }
+            },
+            "start_addon": {
+                "title": "Iniciant complement"
+            },
+            "user": {
+                "description": "Tria com connectar-se al 'broker' MQTT:",
+                "menu_options": {
+                    "addon": "Utilitza el complement oficial {addon}.",
+                    "broker": "Introducci\u00f3 manual de la configuraci\u00f3 de connexi\u00f3 del 'broker' MQTT"
                 }
             }
         }

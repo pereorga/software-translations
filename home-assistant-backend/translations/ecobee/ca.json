@@ -42,6 +42,19 @@
             }
         }
     },
+    "issues": {
+        "migrate_aux_heat": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "L'acci\u00f3 d'Ecobee `set_aux_heat` s'ha migrat. Hi ha disponible una nova entitat d'interruptor `aux_heat_only` per a cada term\u00f2stat que admeti la bomba de calor.\n\nModifica totes les automatitzacions i/o scripts perqu\u00e8 utilitzin la nova entitat d'interruptor `aux_heat_only`. Un cop fet aix\u00f2, pots marcar el problema com a resolt i reiniciar Home Assistant.",
+                        "title": "Desactiva l'acci\u00f3 heretada d'Ecobee set_aux_heat"
+                    }
+                }
+            },
+            "title": "Migraci\u00f3 de l'acci\u00f3 Ecobee set_aux_heat"
+        }
+    },
     "services": {
         "create_vacation": {
             "description": "Crea unes vacances al term\u00f2stat seleccionat. Nota: la data i hora d'inici/finalitzaci\u00f3 i finalitzaci\u00f3 s'han d'especificar conjuntament perqu\u00e8 aquests par\u00e0metres tinguin efecte. Si no s'especifiquen la data i hora d'inici/finalitzaci\u00f3, les vacances comen\u00e7aran immediatament i duraran 14 dies (tret que s'eliminin abans).",

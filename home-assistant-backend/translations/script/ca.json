@@ -1,4 +1,7 @@
 {
+    "common": {
+        "validation_failed_title": "No s'ha pogut configurar l'script {name}"
+    },
     "entity_component": {
         "_": {
             "name": "Programa (script)",
@@ -33,10 +36,15 @@
     },
     "issues": {
         "validation_failed_blueprint": {
-            "description": "L'script de blueprint \"{name}\" (`{entity_id}`) no s'ha pogut configurar. \n\nError: `{error}`. \n\nPer corregir l'error, [edita l'script]({edit}) i corregeix-lo, despr\u00e9s desa i torna a carregar la configuraci\u00f3 de l'script."
+            "description": "L'script de blueprint \"{name}\" (`{entity_id}`) no s'ha pogut configurar. \n\nError: `{error}`. \n\nPer corregir l'error, [edita l'script]({edit}) i corregeix-lo, despr\u00e9s desa i torna a carregar la configuraci\u00f3 de l'script.",
+            "title": "No s'ha pogut configurar l'script {name}"
         },
         "validation_failed_schema": {
-            "description": "L'script \"{name}\" (`{entity_id}`) no est\u00e0 actiu perqu\u00e8 t\u00e9 errors de configuraci\u00f3. \n\nError: `{error}`. \n\nPer corregir l'error, [edita l'script]({edit}) i corregeix-lo, despr\u00e9s desa i torna a carregar la configuraci\u00f3 de l'script."
+            "description": "L'script \"{name}\" (`{entity_id}`) no est\u00e0 actiu perqu\u00e8 t\u00e9 errors de configuraci\u00f3. \n\nError: `{error}`. \n\nPer corregir l'error, [edita l'script]({edit}) i corregeix-lo, despr\u00e9s desa i torna a carregar la configuraci\u00f3 de l'script.",
+            "title": "No s'ha pogut configurar l'script {name}"
+        },
+        "validation_failed_sequence": {
+            "title": "No s'ha pogut configurar l'script {name}"
         }
     },
     "services": {

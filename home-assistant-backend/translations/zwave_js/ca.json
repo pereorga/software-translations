@@ -229,8 +229,20 @@
     "services": {
         "bulk_set_partial_config_parameters": {
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "parameter": {
                     "description": "Nom (o ID) del par\u00e0metre de configuraci\u00f3 a configurar.",
@@ -243,11 +255,23 @@
         },
         "invoke_cc_api": {
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "command_class": {
                     "name": "Classe de comanda"
                 },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "method_name": {
                     "description": "Nom del m\u00e8tode de l'API a cridar. Consulta la documentaci\u00f3 les classes d'ordres de l'API de Z-Wave JS (https://zwave-js.github.io/node-zwave-js/#/api/CCs/index) per obtenir els m\u00e8todes disponibles.",
@@ -261,13 +285,25 @@
         "multicast_set_value": {
             "description": "Canvia qualsevol valor que Z-Wave JS reconegui utilitzant multidifusi\u00f3 ('multicast') en diversos dispositius Z-Wave perqu\u00e8 tots els dispositius rebin el missatge simult\u00e0niament. Aquesta acci\u00f3 t\u00e9 una validaci\u00f3 m\u00ednima, per tant, utilitza aquesta acci\u00f3 si saps el que est\u00e0s fent.",
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "command_class": {
                     "description": "ID de la classe de comandes del valor.",
                     "name": "Classe de comanda"
                 },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "description": "'Endpoint' del valor.",
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "options": {
                     "description": "Mapa d'opcions de valors. Consulta la documentaci\u00f3 de Z-Wave JS per a m\u00e9s informaci\u00f3 sobre quines opcions es poden configurar.",
@@ -288,11 +324,37 @@
             }
         },
         "ping": {
+            "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
+                }
+            },
             "name": "Fes 'ping' a un node"
         },
         "refresh_notifications": {
             "description": "Actualitza les notificacions a un node segons el tipus de notificaci\u00f3 i, opcionalment, l'esdeveniment de notificaci\u00f3.",
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
+                },
                 "notification_event": {
                     "description": "N\u00famero de l'esdeveniment de notificaci\u00f3 tal com es defineix a les especificacions de Z-Wave.",
                     "name": "Esdeveniment de notificaci\u00f3"
@@ -314,6 +376,18 @@
         },
         "reset_meter": {
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
+                },
                 "value": {
                     "name": "Valor objectiu"
                 }
@@ -321,12 +395,24 @@
         },
         "set_config_parameter": {
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "bitmask": {
                     "description": "Dirigir a una m\u00e0scara de bits espec\u00edfica (consulta la documentaci\u00f3 per a m\u00e9s informaci\u00f3). No es pot combinar amb value_size o value_format.",
                     "name": "M\u00e0scara de bits"
                 },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "parameter": {
                     "description": "Nom (o ID) del par\u00e0metre de configuraci\u00f3 a configurar.",
@@ -376,13 +462,25 @@
         },
         "set_value": {
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "command_class": {
                     "description": "ID de la classe de comandes del valor.",
                     "name": "Classe de comanda"
                 },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "description": "'Endpoint' del valor.",
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "options": {
                     "description": "Mapa d'opcions de valors. Consulta la documentaci\u00f3 de Z-Wave JS per a m\u00e9s informaci\u00f3 sobre quines opcions es poden configurar.",

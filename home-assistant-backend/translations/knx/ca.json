@@ -136,6 +136,21 @@
         }
     },
     "entity": {
+        "climate": {
+            "knx_climate": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "name": "Preconfiguraci\u00f3",
+                        "state": {
+                            "auto": "Autom\u00e0tic",
+                            "comfort": "Confort",
+                            "economy": "Econ\u00f2mic",
+                            "standby": "En espera"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "connected_since": {
                 "name": "Connexi\u00f3 establerta"

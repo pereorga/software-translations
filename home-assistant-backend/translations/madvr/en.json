@@ -1,13 +1,27 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "no_mac": "A MAC address was not found. It required to identify the device. Please ensure your device is connectable."
+            "no_mac": "A MAC address was not found. It required to identify the device. Please ensure your device is connectable.",
+            "set_up_new_device": "A new device was detected. Please set it up as a new entity instead of reconfiguring."
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your madVR Envy device.",
+                    "port": "The port your madVR Envy is listening on. In 99% of cases, leave this as the default."
+                },
+                "description": "Your device needs to be on in order to reconfigure the integation. ",
+                "title": "Reconfigure madVR Envy"
+            },
             "user": {
                 "data": {
                     "host": "Host",
@@ -17,7 +31,7 @@
                     "host": "The hostname or IP address of your madVR Envy device.",
                     "port": "The port your madVR Envy is listening on. In 99% of cases, leave this as the default."
                 },
-                "description": "Your device needs to be turned in order to add the integation. ",
+                "description": "Your device needs to be on in order to add the integation. ",
                 "title": "Setup madVR Envy"
             }
         }
