@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "not_intellifire_device": "Not an IntelliFire Device.",
+            "no_available_devices": "All available devices have already been configured.",
+            "not_intellifire_device": "Not an IntelliFire device.",
             "reauth_successful": "Re-authentication was successful"
         },
         "error": {
@@ -10,13 +11,24 @@
             "cannot_connect": "Failed to connect",
             "iftapi_connect": "Error conecting to iftapi.net"
         },
-        "flow_title": "{serial} ({host})",
+        "flow_title": "{serial}",
         "step": {
             "api_config": {
                 "data": {
                     "password": "Password",
                     "username": "Email"
                 }
+            },
+            "cloud_api": {
+                "data": {
+                    "password": "Password",
+                    "username": "Email"
+                },
+                "data_description": {
+                    "password": "Your IntelliFire app password",
+                    "username": "Your IntelliFire app username"
+                },
+                "description": "Authenticate against IntelliFire Cloud"
             },
             "dhcp_confirm": {
                 "description": "Do you want to set up {host}\nSerial: {serial}?"
@@ -26,6 +38,10 @@
                     "host": "Host (IP Address)"
                 },
                 "description": "Local Configuration"
+            },
+            "pick_cloud_device": {
+                "description": "Select fireplace by serial number:",
+                "title": "Configure fireplace"
             },
             "pick_device": {
                 "data": {

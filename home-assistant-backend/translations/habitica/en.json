@@ -4,10 +4,27 @@
             "already_configured": "Account is already configured"
         },
         "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
             "invalid_credentials": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
+            "advanced": {
+                "data": {
+                    "api_key": "API Token",
+                    "api_user": "User ID",
+                    "url": "URL",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "description": "You can retrieve your `User ID` and `API Token` from **Settings -> Site Data** on Habitica or the instance you want to connect to"
+            },
+            "login": {
+                "data": {
+                    "password": "Password",
+                    "username": "Email or username (case-sensitive)"
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "API key",
@@ -15,7 +32,11 @@
                     "name": "Override for Habitica\u2019s username. Will be used for actions",
                     "url": "URL"
                 },
-                "description": "Connect your Habitica profile to allow monitoring of your user's profile and tasks. Note that api_id and api_key must be gotten from https://habitica.com/user/settings/api"
+                "description": "Connect your Habitica profile to allow monitoring of your user's profile and tasks.",
+                "menu_options": {
+                    "advanced": "Login to other instances",
+                    "login": "Login to Habitica"
+                }
             }
         }
     },

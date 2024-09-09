@@ -10,12 +10,21 @@
         "step": {
             "user": {
                 "data": {
+                    "connection_type": "Connection type",
                     "host": "Host",
                     "name": "Name"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Epson projector."
+                    "host": "The hostname, IP address or serial port of your Epson projector."
                 }
+            }
+        }
+    },
+    "selector": {
+        "connection_type": {
+            "options": {
+                "http": "HTTP",
+                "serial": "Serial"
             }
         }
     },

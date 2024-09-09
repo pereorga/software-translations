@@ -64,7 +64,47 @@
                         "name": "Collapsible section"
                     }
                 },
+                "sections": {
+                    "section_1": {
+                        "data": {
+                            "bool": "Optional boolean",
+                            "int": "Numeric input"
+                        },
+                        "description": "This section allows input of some extra data",
+                        "name": "Collapsible section"
+                    }
+                },
                 "submit": "Save!"
+            }
+        }
+    },
+    "services": {
+        "test_service_1": {
+            "description": "Fake service for testing",
+            "fields": {
+                "field_1": {
+                    "description": "Number of seconds",
+                    "name": "Field 1"
+                },
+                "field_2": {
+                    "description": "Mode",
+                    "name": "Field 2"
+                },
+                "field_3": {
+                    "description": "Number of hours",
+                    "name": "Field 3"
+                },
+                "field_4": {
+                    "description": "Direction",
+                    "name": "Field 4"
+                }
+            },
+            "name": "Test service 1",
+            "sections": {
+                "advanced_fields": {
+                    "description": "Some very advanced things",
+                    "name": "Advanced options"
+                }
             }
         }
     }

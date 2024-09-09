@@ -1,4 +1,8 @@
 {
+    "common": {
+        "state_not_supported": "No compatible",
+        "state_supported": "Compatible"
+    },
     "config": {
         "error": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
@@ -13,6 +17,105 @@
                     "id": "ID",
                     "name": "Nom"
                 }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "flame": {
+                "name": "Flama"
+            },
+            "hot_water": {
+                "name": "Aigua calenta"
+            },
+            "supports_central_heating_setpoint_transfer": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_central_heating_setpoint_writing": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_ch_2": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_cooling": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_hot_water": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_hot_water_setpoint_transfer": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_hot_water_setpoint_writing": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_pump_control": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            },
+            "supports_remote_reset": {
+                "state": {
+                    "off": "No compatible",
+                    "on": "Compatible"
+                }
+            }
+        },
+        "sensor": {
+            "clock_speed": {
+                "name": "Velocitat del rellotge"
+            },
+            "manufacturer_id": {
+                "name": "ID de fabricant"
+            },
+            "max_capacity": {
+                "name": "Capacitat m\u00e0xima"
+            },
+            "min_mod_level": {
+                "name": "Nivell m\u00ednim de modulaci\u00f3"
+            },
+            "oem_diagnostic_code": {
+                "name": "Codi de diagn\u00f2stic espec\u00edfic del fabricant"
+            },
+            "oem_fault_code": {
+                "name": "Codi d'error espec\u00edfic del fabricant"
+            },
+            "opentherm_version": {
+                "name": "Versi\u00f3 del protocol OpenTherm"
+            },
+            "operating_mode": {
+                "name": "Mode de funcionament"
+            },
+            "outside_temperature": {
+                "name": "Temperatura exterior"
+            },
+            "product_type": {
+                "name": "Tipus de producte"
+            },
+            "product_version": {
+                "name": "Versi\u00f3 de producte"
             }
         }
     },

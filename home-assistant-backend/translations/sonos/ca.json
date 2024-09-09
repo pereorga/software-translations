@@ -73,6 +73,9 @@
         }
     },
     "exceptions": {
+        "announce_media_error": {
+            "message": "No s'ha pogut anunciar el clip {media_id} {response}"
+        },
         "invalid_sonos_playlist": {
             "message": "No s'ha trobat la llista de reproducci\u00f3 de Sonos: {name}"
         }
@@ -84,6 +87,10 @@
         }
     },
     "services": {
+        "get_queue": {
+            "description": "Retorna el contingut de la cua.",
+            "name": "Obt\u00e9 cua"
+        },
         "play_queue": {
             "description": "Reprodueix la cua des del primer element.",
             "fields": {

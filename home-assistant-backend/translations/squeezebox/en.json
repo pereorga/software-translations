@@ -32,6 +32,16 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "needsrestart": {
+                "name": "Needs restart"
+            },
+            "rescan": {
+                "name": "Library rescan"
+            }
+        }
+    },
     "services": {
         "call_method": {
             "description": "Calls a custom Squeezebox JSONRPC API.",

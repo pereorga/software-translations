@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "This NextDNS profile is already configured."
+            "already_configured": "This NextDNS profile is already configured.",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -12,6 +13,11 @@
             "profiles": {
                 "data": {
                     "profile": "Profile"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
                 }
             },
             "user": {

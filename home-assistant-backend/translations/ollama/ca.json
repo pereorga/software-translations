@@ -26,7 +26,11 @@
                 "data": {
                     "llm_hass_api": "Controla Home Assistant",
                     "max_history": "Nombre m\u00e0xim de missatges hist\u00f2rics",
+                    "num_ctx": "Mida de la finestra de context",
                     "prompt": "Instruccions"
+                },
+                "data_description": {
+                    "num_ctx": "Nombre m\u00e0xim de 'tokens' de text que el model pot processar. Baixa'l per reduir la mem\u00f2ria RAM d'Ollama, o augmenta'l per a un nombre d'entitats exposades m\u00e9s gran."
                 }
             }
         }

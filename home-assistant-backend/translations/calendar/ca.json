@@ -57,6 +57,7 @@
             "description": "Afegeix un nou esdeveniment al calendari.",
             "fields": {
                 "description": {
+                    "description": "Descripci\u00f3 de l'esdeveniment m\u00e9s completa que la proporcionada pel resum.",
                     "name": "Descripci\u00f3"
                 },
                 "end_date": {
@@ -84,6 +85,7 @@
                     "name": "Data i hora d'inici"
                 },
                 "summary": {
+                    "description": "Defineix el resum o tema de l'esdeveniment.",
                     "name": "Resum"
                 }
             },
@@ -93,28 +95,36 @@
             "description": "Obt\u00e9 els esdeveniments d'un calendari dins un interval de temps.",
             "fields": {
                 "duration": {
+                    "description": "Retorna els esdeveniments actius des de start_date_time fins a la durada especificada.",
                     "name": "Durada"
                 },
                 "end_date_time": {
+                    "description": "Retorna els esdeveniments actius anteriors a aquesta data i hora (exclusiva). No es pot utilitzar amb 'durada'.",
                     "name": "Data i hora final"
                 },
                 "start_date_time": {
+                    "description": "Retorna els esdeveniments actius posteriors a aquesta data i hora (exclusiva). Si no s'estableix, s'utilitzar\u00e0 ara mateix.",
                     "name": "Data i hora d'inici"
                 }
             }
         },
         "list_events": {
+            "description": "Llista els esdeveniments d'un calendari dins un interval de temps.",
             "fields": {
                 "duration": {
+                    "description": "Retorna els esdeveniments actius des de start_date_time fins a la durada especificada.",
                     "name": "Durada"
                 },
                 "end_date_time": {
+                    "description": "Retorna els esdeveniments actius anteriors a aquesta data i hora (exclusiva). No es pot utilitzar amb 'durada'.",
                     "name": "Data i hora final"
                 },
                 "start_date_time": {
+                    "description": "Retorna els esdeveniments actius posteriors a aquesta data i hora (exclusiva). Si no s'estableix, s'utilitzar\u00e0 ara mateix.",
                     "name": "Data i hora d'inici"
                 }
-            }
+            },
+            "name": "Llista els esdeveniments"
         }
     },
     "title": "Calendari"
