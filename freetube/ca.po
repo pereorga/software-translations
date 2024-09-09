@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 08:03+0000\n"
+"POT-Creation-Date: 2024-09-09 08:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1313,10 +1313,6 @@ msgstr "Tema de color secundari"
 msgid "Player Settings"
 msgstr "Configuració del reproductor"
 
-#: Settings-%3EPlayer+Settings-%3EForce+Local+Backend+for+Legacy+Formats
-msgid "Force Local Backend for Legacy Formats"
-msgstr "Força el motor local per als formats heretats"
-
 #: Settings-%3EPlayer+Settings-%3EPlay+Next+Video
 msgctxt "Settings->Player Settings->Play Next Video"
 msgid "Play Next Video"
@@ -1446,10 +1442,6 @@ msgstr "4k"
 #: Settings-%3EPlayer+Settings-%3EDefault+Quality-%3E8k
 msgid "8k"
 msgstr "8k"
-
-#: Settings-%3EPlayer+Settings-%3EAllow+DASH+AV1+formats
-msgid "Allow DASH AV1 formats"
-msgstr ""
 
 #: Settings-%3EPlayer+Settings-%3EScreenshot-%3EEnable
 msgid "Enable Screenshot"
@@ -2793,22 +2785,6 @@ msgstr "només vídeo"
 msgid "audio only"
 msgstr "només àudio"
 
-#: Video-%3EAudio-%3ELow
-msgid "Low"
-msgstr "Baixa"
-
-#: Video-%3EAudio-%3EMedium
-msgid "Medium"
-msgstr "Mitjana"
-
-#: Video-%3EAudio-%3EHigh
-msgid "High"
-msgstr "Alta"
-
-#: Video-%3EAudio-%3EBest
-msgid "Best"
-msgstr "Millor"
-
 #: Video-%3EPublished-%3EJan
 msgid "Jan"
 msgstr "Gen"
@@ -2938,17 +2914,9 @@ msgstr "Retransmès en directe el"
 msgid "Started streaming on"
 msgstr "Retransmissió iniciada el"
 
-#: Video-%3Etranslated+from+English
-msgid "translated from English"
-msgstr "traduït de l'anglès"
-
 #: Video-%3EPublicationtemplate
 msgid "{number} {unit} ago"
 msgstr "{number} {unit} fa"
-
-#: Video-%3ESkipped+segment
-msgid "Skipped segment"
-msgstr "Segment saltat"
 
 #: Video-%3ESponsor+Block+category-%3Esponsor
 msgid "Sponsor"
@@ -3031,44 +2999,104 @@ msgstr ""
 msgid "looping playlists"
 msgstr ""
 
-#: Video-%3EStats-%3EVideo+statistics+are+not+available+for+legacy+videos
-msgid "Video statistics are not available for legacy videos"
+#: Video-%3EPlayer-%3ETranslatedCaptionTemplate
+msgid "{language} (translated from \"{originalLanguage}\")"
 msgstr ""
 
-#: Video-%3EStats-%3EVideo+ID
-msgid "Video ID"
+#: Video-%3EPlayer-%3EAudio+Tracks
+msgid "Audio Tracks"
 msgstr ""
 
-#: Video-%3EStats-%3EResolution
-msgid "Resolution"
+#: Video-%3EPlayer-%3ETheatre+Mode
+msgid "Theater Mode"
 msgstr ""
 
-#: Video-%3EStats-%3EPlayer+Dimensions
-msgid "Player Dimensions"
+#: Video-%3EPlayer-%3EExit+Theatre+Mode
+msgid "Exit Theater Mode"
 msgstr ""
 
-#: Video-%3EStats-%3EBitrate
-msgid "Bitrate"
+#: Video-%3EPlayer-%3EFull+Window
+msgid "Full Window"
 msgstr ""
 
-#: Video-%3EStats-%3EVolume
-msgid "Volume"
+#: Video-%3EPlayer-%3EExit+Full+Window
+msgid "Exit Full Window"
 msgstr ""
 
-#: Video-%3EStats-%3EBandwidth
-msgid "Bandwidth"
+#: Video-%3EPlayer-%3ETake+Screenshot
+msgid "Take Screenshot"
 msgstr ""
 
-#: Video-%3EStats-%3EBuffered
-msgid "Buffered"
+#: Video-%3EPlayer-%3EShow+Stats
+msgid "Show Stats"
 msgstr ""
 
-#: Video-%3EStats-%3EDropped+/+Total+Frames
-msgid "Dropped / Total Frames"
+#: Video-%3EPlayer-%3EHide+Stats
+msgid "Hide Stats"
 msgstr ""
 
-#: Video-%3EStats-%3EMimetype
-msgid "Mimetype"
+#: Video-%3EPlayer-%3EStats-%3EStats
+msgid "Stats"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EVideo+ID
+msgid "Video ID: {videoId}"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EMedia+Formats
+msgid "Media Formats: {formats}"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EResolution
+msgid "Resolution: {width}x{height}@{frameRate}"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EPlayer+Dimensions
+msgid "Player Dimensions: {width}x{height}"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EBitrate
+msgid "Bitrate: {bitrate} kbps"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EVolume
+msgid "Volume: {volumePercentage}%"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EBandwidth
+msgid "Bandwidth: {bandwidth} kbps"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EBuffered
+msgid "Buffered: {bufferedPercentage}%"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3EDropped+Frames+/+Total+Frames
+msgid "Dropped Frames: {droppedFrames} / Total Frames: {totalFrames}"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3ECodecAudio
+msgid "Codec: {audioCodec} ({audioItag})"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3ECodecsVideoAudio
+msgid "Codecs: {videoCodec} ({videoItag}) / {audioCodec} ({audioItag})"
+msgstr ""
+
+#: Video-%3EPlayer-%3EStats-%3ECodecsVideoAudioNoItags
+msgid "Codecs: {videoCodec} / {audioCodec}"
+msgstr ""
+
+#: Video-%3EPlayer-%3EYou+appear+to+be+offline
+msgid "You appear to be offline."
+msgstr ""
+
+#: Video-%3EPlayer-%3EPlayback+will+resume+automatically+when+your+connection+comes+back
+msgid "Playback will resume automatically when your connection comes back."
+msgstr ""
+
+#: Video-%3EPlayer-%3ESkipped+segment
+msgid "Skipped {segmentCategory} segment"
 msgstr ""
 
 #: Videos-%3ESort+By-%3ENewest
@@ -3168,6 +3196,10 @@ msgstr "Els formats DASH no són disponibles per aquest vídeo"
 #: Change+Format-%3EAudio+formats+are+not+available+for+this+video
 msgid "Audio formats are not available for this video"
 msgstr "Els formats d'audio no són disponibles per aquest vídeo"
+
+#: Change+Format-%3ELegacy+formats+are+not+available+for+this+video
+msgid "Legacy formats are not available for this video"
+msgstr ""
 
 #: Share-%3EShare+Video
 msgid "Share Video"
@@ -3388,14 +3420,6 @@ msgid ""
 "By default FreeTube will open the clicked link in your default browser.\n"
 msgstr ""
 
-#: Tooltips-%3EPlayer+Settings-%3EForce+Local+Backend+for+Legacy+Formats
-msgid ""
-"Only works when the Invidious API is your default. When enabled, the Local "
-"API will run and use the legacy formats returned by that instead of the ones "
-"returned by Invidious. Helps when the videos returned by Invidious don't "
-"play due to country restrictions."
-msgstr ""
-
 #: Tooltips-%3EPlayer+Settings-%3EProxy+Videos+Through+Invidious
 msgid ""
 "Will connect to Invidious to serve videos instead of making a direct "
@@ -3407,13 +3431,6 @@ msgid ""
 "Set the formats used when a video plays. DASH formats can play higher "
 "qualities. Legacy formats are limited to a max of 720p but use less "
 "bandwidth. Audio formats are audio only streams."
-msgstr ""
-
-#: Tooltips-%3EPlayer+Settings-%3EAllow+DASH+AV1+formats
-msgid ""
-"DASH AV1 formats may look better than DASH H.264 formats. DASH AV1 formats "
-"require more power to playback! They are not available on all videos, in "
-"those cases the player will use the DASH H.264 formats instead."
 msgstr ""
 
 #: Tooltips-%3EPlayer+Settings-%3EScroll+Playback+Rate+Over+Video+Player
