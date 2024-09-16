@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-09 08:03+0000\n"
+"POT-Creation-Date: 2024-09-16 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -384,6 +384,38 @@ msgstr ""
 msgid ""
 "<p>Credential {0} was removed from your account on {1} from {2}. If this was "
 "not you, please contact an administrator.</p>"
+msgstr ""
+
+#: eventUserDisabledByTemporaryLockoutSubject
+msgid "User disabled by temporary lockout"
+msgstr ""
+
+#: eventUserDisabledByTemporaryLockoutBody
+msgid ""
+"Your user has been disabled temporarily because of multiple failed attemps "
+"on {0}. Please contact an administrator if needed."
+msgstr ""
+
+#: eventUserDisabledByTemporaryLockoutHtml
+msgid ""
+"<p>Your user has been disabled temporarily because of multiple failed "
+"attemps on {0}. Please contact an administrator if needed.</p>"
+msgstr ""
+
+#: eventUserDisabledByPermanentLockoutSubject
+msgid "User disabled by permament lockout"
+msgstr ""
+
+#: eventUserDisabledByPermanentLockoutBody
+msgid ""
+"Your user has been disabled permanently because of multiple failed attemps "
+"on {0}. Please contact an administrator."
+msgstr ""
+
+#: eventUserDisabledByPermanentLockoutHtml
+msgid ""
+"<p>Your user has been disabled permanently because of multiple failed "
+"attemps on {0}. Please contact an administrator.</p>"
 msgstr ""
 
 #: requiredAction.CONFIGURE_TOTP
