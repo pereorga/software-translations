@@ -17,6 +17,11 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_hvac_mode": {
+            "message": "Climate mode {hvac_mode} is not supported."
+        }
+    },
     "services": {
         "clear_cache": {
             "description": "Clears the velbuscache and then starts a new scan.",

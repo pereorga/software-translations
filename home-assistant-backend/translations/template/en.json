@@ -1,6 +1,26 @@
 {
     "config": {
         "step": {
+            "alarm_control_panel": {
+                "data": {
+                    "arm_away": "Arm away action",
+                    "arm_custom_bypass": "Arm custom bypass action",
+                    "arm_home": "Arm home action",
+                    "arm_night": "Arm night action",
+                    "arm_vacation": "Arm vacation action",
+                    "code_arm_required": "Code arm required",
+                    "code_format": "Code format",
+                    "device_id": "Device",
+                    "disarm": "Disarm action",
+                    "name": "Name",
+                    "trigger": "Trigger action",
+                    "value_template": "Value template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
+                },
+                "title": "Template alarm control panel"
+            },
             "binary_sensor": {
                 "data": {
                     "device_class": "Device class",
@@ -46,7 +66,8 @@
                     "name": "Name",
                     "set_value": "Actions on set value",
                     "state": "State template",
-                    "step": "Step value"
+                    "step": "Step value",
+                    "unit_of_measurement": "Unit of measurement"
                 },
                 "data_description": {
                     "device_id": "Select a device to link to this entity."
@@ -118,6 +139,25 @@
     },
     "options": {
         "step": {
+            "alarm_control_panel": {
+                "data": {
+                    "arm_away": "Arm away action",
+                    "arm_custom_bypass": "Arm custom bypass action",
+                    "arm_home": "Arm home action",
+                    "arm_night": "Arm night action",
+                    "arm_vacation": "Arm vacation action",
+                    "code_arm_required": "Code arm required",
+                    "code_format": "Code format",
+                    "device_id": "Device",
+                    "disarm": "Disarm action",
+                    "trigger": "Trigger action",
+                    "value_template": "Value template"
+                },
+                "data_description": {
+                    "device_id": "Select a device to link to this entity."
+                },
+                "title": "Template alarm control panel"
+            },
             "binary_sensor": {
                 "data": {
                     "device_class": "Device class",
@@ -211,6 +251,13 @@
         }
     },
     "selector": {
+        "alarm_control_panel_code_format": {
+            "options": {
+                "no_code": "No code format",
+                "number": "Number",
+                "text": "Text"
+            }
+        },
         "binary_sensor_device_class": {
             "options": {
                 "battery": "Battery",

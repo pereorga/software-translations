@@ -83,6 +83,26 @@
                 }
             }
         },
+        "select": {
+            "gpio_mode_n": {
+                "state": {
+                    "ds1820": "DS1820",
+                    "ground": "Massa",
+                    "input": "Entrada",
+                    "vcc": "Vcc (5V)"
+                }
+            },
+            "led_mode_n": {
+                "name": "Mode del LED {led_id}",
+                "state": {
+                    "central_heating_on": "Calefacci\u00f3 central activada",
+                    "comfort_mode_on": "Mode confort activat",
+                    "flame_on": "Flama de la caldera encesa",
+                    "hot_water_on": "Aigua calenta activada",
+                    "transmit_error_detected": "Error de transmissi\u00f3 detectat"
+                }
+            }
+        },
         "sensor": {
             "clock_speed": {
                 "name": "Velocitat del rellotge"
@@ -117,6 +137,11 @@
             "product_version": {
                 "name": "Versi\u00f3 de producte"
             }
+        }
+    },
+    "issues": {
+        "deprecated_import_from_configuration_yaml": {
+            "title": "Configuraci\u00f3 obsoleta"
         }
     },
     "options": {

@@ -1,6 +1,16 @@
 {
     "config": {
         "step": {
+            "alarm_control_panel": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                }
+            },
             "binary_sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
@@ -45,7 +55,8 @@
                     "min": "Valor m\u00ednim",
                     "name": "Nom",
                     "state": "Plantilla d'estat",
-                    "step": "Valor del pas"
+                    "step": "Valor del pas",
+                    "unit_of_measurement": "Unitat de mesura"
                 },
                 "data_description": {
                     "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
@@ -107,6 +118,14 @@
     },
     "options": {
         "step": {
+            "alarm_control_panel": {
+                "data": {
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                }
+            },
             "binary_sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
@@ -195,6 +214,12 @@
         }
     },
     "selector": {
+        "alarm_control_panel_code_format": {
+            "options": {
+                "number": "N\u00famero",
+                "text": "Text"
+            }
+        },
         "binary_sensor_device_class": {
             "options": {
                 "battery": "Bateria",

@@ -22,5 +22,17 @@
                 }
             }
         }
+    },
+    "services": {
+        "play_preset": {
+            "description": "Play the preset number on the device.",
+            "fields": {
+                "preset_number": {
+                    "description": "The preset number on the device to play.",
+                    "name": "Preset number"
+                }
+            },
+            "name": "Play preset"
+        }
     }
 }

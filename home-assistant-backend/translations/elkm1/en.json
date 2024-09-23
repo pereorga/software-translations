@@ -46,6 +46,19 @@
             }
         }
     },
+    "issues": {
+        "migrate_aux_heat": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "The Elk-M1 `set_aux_heat` action has been migrated. A new emergency heat switch entity is available for each thermostat.\n\nUpdate any automations to use the new emergency heat switch entity. When this is done, Press submit to fix this issue.",
+                        "title": "Migration of Elk-M1 set_aux_heat action"
+                    }
+                }
+            },
+            "title": "Migration of Elk-M1 set_aux_heat action"
+        }
+    },
     "services": {
         "alarm_arm_home_instant": {
             "description": "Arms the ElkM1 in home instant mode.",
