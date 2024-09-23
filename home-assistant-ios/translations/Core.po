@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-16 08:03+0000\n"
+"POT-Creation-Date: 2024-09-23 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -678,6 +678,63 @@ msgstr "OFF"
 msgctxt "component::humidifier::entity_component::_::state_attributes::mode::state::home"
 msgid "Home"
 msgstr "A casa"
+
+#: component::improv_ble::config::abort::already_configured
+msgid "Device is already configured"
+msgstr "El dispositiu ja està configurat"
+
+#: component::improv_ble::config::abort::cannot_connect
+msgid "Failed to connect"
+msgstr "Ha fallat la connexió"
+
+#: component::improv_ble::config::abort::no_devices_found
+msgid "No devices found on the network"
+msgstr "No s'han trobat dispositius a la xarxa"
+
+#: component::improv_ble::config::abort::provision_successful
+msgid "The device has successfully connected to the Wi-Fi network."
+msgstr "El dispositiu s'ha connectat correctament a la xarxa Wi-Fi."
+
+#: component::improv_ble::config::abort::provision_successful_url
+msgid ""
+"The device has successfully connected to the Wi-Fi network.\\Please visit "
+"{url} to finish setup."
+msgstr ""
+"El dispositiu s'ha connectat correctament a la xarxa Wi-Fi. \\Vés a {url} "
+"per acabar la configuració."
+
+#: component::improv_ble::config::abort::unknown
+msgid "Unexpected error"
+msgstr "Error inesperat"
+
+#: component::improv_ble::config::progress::provisioning
+msgid "The device is connecting to the Wi-Fi network."
+msgstr "El dispositiu s'està connectant a la xarxa Wi-Fi."
+
+#: component::improv_ble::config::step::bluetooth_confirm::description
+msgid "Do you want to set up {name}?"
+msgstr "Vols configurar {name}?"
+
+#: component::improv_ble::config::step::main_menu::menu_options::provision
+msgid "Connect device to a Wi-Fi network"
+msgstr "Connecta el dispositiu a una xarxa Wi-Fi"
+
+#: component::improv_ble::config::step::provision::data::password
+msgid "Password"
+msgstr "Contrasenya"
+
+#: component::improv_ble::config::step::provision::description
+msgid "Enter Wi-Fi credentials to connect the device to your network."
+msgstr ""
+"Introdueix les credencials Wi-Fi per connectar el dispositiu a la xarxa."
+
+#: component::improv_ble::config::step::user::data::address
+msgid "Device"
+msgstr "Dispositiu"
+
+#: component::improv_ble::config::step::user::description
+msgid "Choose a device to set up"
+msgstr "Tria un dispositiu a configurar"
 
 #: component::input_boolean::entity_component::_::state::off
 msgctxt "component::input_boolean::entity_component::_::state::off"
