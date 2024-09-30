@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-16 08:04+0000\n"
+"POT-Creation-Date: 2024-09-30 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,7 +182,7 @@ msgstr "Torneu a identificar-vos per a continuar"
 
 #: authenticateStrong
 msgid "Strong authentication required to continue"
-msgstr ""
+msgstr "Es requereix autenticació forta per a continuar"
 
 #: oauthGrantTitle
 msgid "Grant Access to {0}"
@@ -201,7 +201,7 @@ msgstr ""
 
 #: oauthGrantReview
 msgid "You could review the "
-msgstr "Podeu revisar les"
+msgstr "Podeu revisar les "
 
 #: oauthGrantTos
 msgid "terms of service."
@@ -209,7 +209,7 @@ msgstr "condicions del servei."
 
 #: oauthGrantPolicy
 msgid "privacy policy."
-msgstr "política de privacitat."
+msgstr "política de privadesa."
 
 #: errorTitle
 msgid "We are sorry..."
@@ -329,11 +329,11 @@ msgstr "Accepto els termes i condicions"
 
 #: deleteCredentialTitle
 msgid "Delete {0}"
-msgstr ""
+msgstr "Suprimeix {0}"
 
 #: deleteCredentialMessage
 msgid "Do you want to delete {0}?"
-msgstr ""
+msgstr "Voleu suprimir {0}?"
 
 #: recaptchaFailed
 msgid "Invalid Recaptcha"
@@ -403,11 +403,11 @@ msgstr "Confirma la contrasenya nova"
 
 #: hidePassword
 msgid "Hide password"
-msgstr ""
+msgstr "Amaga la contrasenya"
 
 #: showPassword
 msgid "Show password"
-msgstr ""
+msgstr "Mostra la contrasenya"
 
 #: rememberMe
 msgid "Remember me"
@@ -482,11 +482,11 @@ msgstr "Surt d''altres dispositius"
 
 #: profileScopeConsentText
 msgid "User profile"
-msgstr "Perfil d''usuari"
+msgstr "Perfil d'usuari"
 
 #: emailScopeConsentText
 msgid "Email address"
-msgstr "Correu electrònic"
+msgstr "Adreça de correu electrònic"
 
 #: addressScopeConsentText
 msgctxt "addressScopeConsentText"
@@ -508,11 +508,11 @@ msgstr "Els meus rols"
 
 #: rolesScopeConsentText
 msgid "User roles"
-msgstr "Rols d''usuari"
+msgstr "Rols d'usuari"
 
 #: organizationScopeConsentText
 msgid "Organization"
-msgstr ""
+msgstr "Organització"
 
 #: restartLoginTooltip
 msgid "Restart login"
@@ -932,11 +932,11 @@ msgstr "L''acció ha caducat. Si us plau, comenceu de nou."
 
 #: sessionLimitExceeded
 msgid "There are too many sessions"
-msgstr "Hi ha massa sessions."
+msgstr "Hi ha massa sessions"
 
 #: identityProviderLogoutFailure
 msgid "SAML IdP Logout Failure"
-msgstr ""
+msgstr "Error de sortida de l'IdP SAML"
 
 #: missingFirstNameMessage
 msgid "Please specify first name."
@@ -1115,7 +1115,7 @@ msgstr "El compte ja existeix"
 
 #: confirmOverrideIdpTitle
 msgid "Broker link already exists"
-msgstr ""
+msgstr "L'enllaç de l'agent ja existeix"
 
 #: federatedIdentityConfirmLinkMessage
 msgid "User with {0} {1} already exists. How do you want to continue?"
@@ -1127,6 +1127,9 @@ msgid ""
 "account is already linked with different {3} account {4}. Can you confirm if "
 "you want to replace the existing link with the new account?"
 msgstr ""
+"Esteu intentant enllaçar el vostre compte {0} amb el compte {2} de {1}, però "
+"el vostre compte ja està enllaçat amb el compte de {3} diferent {4}. Podeu "
+"confirmar que voleu reemplaçar l''enllaç existent amb el compte nou?"
 
 #: federatedIdentityConfirmReauthenticateMessage
 msgid "Authenticate to link your account with {0}"
@@ -1146,7 +1149,7 @@ msgstr "Afegeix al compte existent"
 
 #: confirmOverrideIdpContinue
 msgid "Yes, override link with current account"
-msgstr ""
+msgstr "Sí, sobreescriu l'enllaç amb el compte actual"
 
 #: configureTotpMessage
 msgid "You need to set up Mobile Authenticator to activate your account."
@@ -1264,7 +1267,7 @@ msgstr "La contrasenya no és vàlida: no pot ser igual al nom d''usuari."
 
 #: invalidPasswordNotContainsUsernameMessage
 msgid "Invalid password: Can not contain the username."
-msgstr ""
+msgstr "La contrasenya no és vàlida: no pot contenir el nom d'usuari."
 
 #: invalidPasswordNotEmailMessage
 msgid "Invalid password: must not be equal to the email."
@@ -1310,7 +1313,7 @@ msgstr "No esteu identificat"
 
 #: failedLogout
 msgid "Logout failed"
-msgstr "Ha fallat la desconnexió."
+msgstr "Ha fallat la desconnexió"
 
 #: unknownLoginRequesterMessage
 msgid "Unknown login requester"
@@ -1322,7 +1325,7 @@ msgstr "El sol·licitant d''inici de sessió està desactivat"
 
 #: bearerOnlyMessage
 msgid "Bearer-only applications are not allowed to initiate browser login"
-msgstr "Les aplicacions Bearer-only no poden iniciar sessió des del navegador."
+msgstr "Les aplicacions Bearer-only no poden iniciar sessió des del navegador"
 
 #: standardFlowDisabledMessage
 msgid ""
@@ -1386,7 +1389,8 @@ msgstr ""
 #: unexpectedErrorRetrievingTokenMessage
 msgid "Unexpected error when retrieving token from identity provider."
 msgstr ""
-"Error inesperat en obtenir el codi d''autorització del proveïdor d''identitat"
+"Error inesperat en obtenir el codi d''autorització del proveïdor "
+"d''identitat."
 
 #: unexpectedErrorHandlingResponseMessage
 msgid "Unexpected error when handling response from identity provider."
@@ -1395,7 +1399,7 @@ msgstr "Error inesperat processant la resposta del proveïdor d''identitat."
 #: identityProviderAuthenticationFailedMessage
 msgid "Authentication failed. Could not authenticate with identity provider."
 msgstr ""
-"Ha fallat l''autenticació. No ha estat possible autenticar-se en el "
+"Ha fallat l''autenticació. No ha estat possible autenticar-se amb el "
 "proveïdor d''identitat."
 
 #: couldNotSendAuthenticationRequestMessage
@@ -1415,7 +1419,7 @@ msgstr "Codi d''accés no vàlid."
 
 #: sessionNotActiveMessage
 msgid "Session not active."
-msgstr "La sessió no està activa"
+msgstr "La sessió no està activa."
 
 #: invalidCodeMessage
 msgid "An error occurred, please login again through your application."
@@ -1434,7 +1438,7 @@ msgstr "El nivell d''autenticació sol·licitat no s''ha satisfet."
 
 #: identityProviderUnexpectedErrorMessage
 msgid "Unexpected error when authenticating with identity provider"
-msgstr "Error no esperat intentant autenticar en el proveïdor d''identitat."
+msgstr "Error no esperat intentant autenticar amb el proveïdor d''identitat"
 
 #: identityProviderMissingStateMessage
 msgid "Missing state parameter in response from identity provider."
@@ -1443,6 +1447,7 @@ msgstr "Manca un paràmetre d''estat a la resposta del proveïdor d''identitat."
 #: identityProviderMissingCodeOrErrorMessage
 msgid "Missing code or error parameter in response from identity provider."
 msgstr ""
+"Manca el paràmetre o codi d'error a la resposta del proveïdor d'identitat."
 
 #: identityProviderInvalidResponseMessage
 msgid "Invalid response from identity provider."
@@ -1495,7 +1500,7 @@ msgstr "S''ha verificat el vostre correu electrònic."
 
 #: emailVerifiedAlreadyMessage
 msgid "Your email address has been verified already."
-msgstr ""
+msgstr "La vostra adreça de correu electrònic ja està verificada."
 
 #: staleEmailVerificationLink
 msgid ""
@@ -1603,7 +1608,7 @@ msgstr "Registre sense contrasenya WebAuthn"
 
 #: requiredAction.webauthn-register
 msgid "Webauthn Register"
-msgstr ""
+msgstr "Registre de WebAuthn"
 
 #: invalidTokenRequiredActions
 msgid "Required actions included in the link are not valid"
@@ -1611,11 +1616,11 @@ msgstr "Les accions requerides a l''enllaç no són vàlides"
 
 #: doX509Login
 msgid "You will be logged in as:"
-msgstr "Us identificareu com a\\:"
+msgstr "Us identificareu com a:"
 
 #: clientCertificate
 msgid "X509 client certificate:"
-msgstr "Certificat de client X509\\:"
+msgstr "Certificat de client X509:"
 
 #: noCertificate
 msgid "[No Certificate]"
@@ -1758,11 +1763,11 @@ msgstr "Entreu introduint el vostre nom d''usuari i contrasenya."
 
 #: auth-x509-client-username-form-display-name
 msgid "X509 Certificate"
-msgstr ""
+msgstr "Certificat X509"
 
 #: auth-x509-client-username-form-help-text
 msgid "Sign in with an X509 client certificate."
-msgstr ""
+msgstr "Entra amb un certificat de client X509."
 
 #.
 #. # Recovery Codes
@@ -1865,20 +1870,20 @@ msgstr "Codis de recuperació"
 #: webauthn-display-name
 msgctxt "webauthn-display-name"
 msgid "Passkey"
-msgstr "Clau de seguretat"
+msgstr "Passkey"
 
 #: webauthn-help-text
 msgid "Use your Passkey to sign in."
-msgstr "Utilitzeu la vostra clau de seguretat per a entrar."
+msgstr "Useu la vostra Passkey per a entrar."
 
 #: webauthn-passwordless-display-name
 msgctxt "webauthn-passwordless-display-name"
 msgid "Passkey"
-msgstr "Clau de seguretat"
+msgstr "Passkey"
 
 #: webauthn-passwordless-help-text
 msgid "Use your Passkey for passwordless sign in."
-msgstr "Utilitzeu la vostra clau de seguretat per a entrar sense contrasenya."
+msgstr "Utilitzeu la vostra Passkey per a entrar sense contrasenya."
 
 #: webauthn-login-title
 msgctxt "webauthn-login-title"
@@ -1914,11 +1919,11 @@ msgstr "Creada"
 
 #: webauthn-registration-init-label
 msgid "Passkey (Default Label)"
-msgstr ""
+msgstr "Passkey (Etiqueta per defecte)"
 
 #: webauthn-registration-init-label-prompt
 msgid "Please input your registered passkey''s label"
-msgstr ""
+msgstr "Inseriu l''etiqueta de la vostra passkey registrada"
 
 #.
 #.
@@ -1958,32 +1963,34 @@ msgstr "L''usuari identificat per la clau de seguretat és desconegut."
 #: passkey-login-title
 msgctxt "passkey-login-title"
 msgid "Passkey login"
-msgstr ""
+msgstr "Entrada amb Passkey"
 
 #: passkey-available-authenticators
 msgctxt "passkey-available-authenticators"
 msgid "Available Passkeys"
-msgstr ""
+msgstr "Passkeys disponibles"
 
 #: passkey-unsupported-browser-text
 msgid ""
 "Passkey is not supported by this browser. Try another one or contact your "
 "administrator."
 msgstr ""
+"Aquest navegador no implementa Passkey. Proveu-ho amb un altre, o contacteu "
+"amb l'administrador."
 
 #: passkey-doAuthenticate
 msgctxt "passkey-doAuthenticate"
 msgid "Sign in with Passkey"
-msgstr ""
+msgstr "Entra amb Passkey"
 
 #: passkey-createdAt-label
 msgctxt "passkey-createdAt-label"
 msgid "Created"
-msgstr ""
+msgstr "Creada"
 
 #: passkey-autofill-select
 msgid "Select your passkey"
-msgstr ""
+msgstr "Seleccioneu la vostra passkey"
 
 #.
 #. # Identity provider
@@ -2087,22 +2094,23 @@ msgstr ""
 
 #: error-invalid-multivalued-size
 msgid "Attribute {0} must have at least {1} and at most {2} value(s)."
-msgstr ""
+msgstr "L''atribut {0} ha de tenir almenys {1} i com a molt {2} valor(s)."
 
 #: organization.confirm-membership.title
 msgid "You are about to join organization ${kc.org.name}"
-msgstr ""
+msgstr "Esteu a punt d'unir-vos a l'organització ${kc.org.name}"
 
 #: organization.confirm-membership
 msgid ""
 "By clicking on the link below, you will become a member of the {0} "
 "organization:"
 msgstr ""
+"Si feu clic al següent enllaç, esdevindreu membre de l''organització {0}:"
 
 #: organization.member.register.title
 msgid "Create an account to join the ${kc.org.name} organization"
-msgstr ""
+msgstr "Creeu un compte per a unir-vos a l''organització ${kc.org.name}"
 
 #: organization.select
 msgid "Select an organization to proceed:"
-msgstr ""
+msgstr "Seleccioneu una organització per a continuar:"

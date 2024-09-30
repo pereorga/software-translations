@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-16 08:04+0000\n"
+"POT-Creation-Date: 2024-09-30 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: orgInviteSubject
 msgid "Invitation to join the {0} organization"
-msgstr ""
+msgstr "Invitació per a unir-vos a l''organització {0}"
 
 #: orgInviteBody
 msgid ""
@@ -67,6 +67,14 @@ msgid ""
 "\n"
 "If you don't want to join the organization, just ignore this message."
 msgstr ""
+"Heu estat convidat a unir-vos a l''organització «{3}». Feu clic a l''enllaç "
+"següent per a unir-vos-hi.\n"
+"\n"
+"{0}\n"
+"\n"
+"Aquest enllaç caducarà el {4}.\n"
+"\n"
+"Si no us voleu unir a l''organització, podeu ignorar aquest missatge."
 
 #: orgInviteBodyHtml
 msgid ""
@@ -75,6 +83,10 @@ msgid ""
 "link will expire within {4}.</p><p>If you don't want to join the "
 "organization, just ignore this message.</p>"
 msgstr ""
+"<p>Heu estat convidat a unir-vos a l'organització «{3}». Feu clic a l'enllaç "
+"següent per a unir-vos-hi.</p><p><a href=\"{0}\">Enllaç per a unir-se a "
+"l'organització</a></p><p>Aquest enllaç caducarà el {4}.</p><p>Si no us voleu "
+"unir a l'organització, podeu ignorar aquest missatge.</p>"
 
 #: orgInviteBodyPersonalized
 msgid ""
@@ -89,6 +101,16 @@ msgid ""
 "\n"
 "If you don't want to join the organization, just ignore this message."
 msgstr ""
+"Hola, {5} {6}.\n"
+"\n"
+"Heu estat convidat a unir-vos a l''organització «{3}». Feu clic a l''enllaç "
+"següent per a unir-vos-hi.\n"
+"\n"
+"{0}\n"
+"\n"
+"Aquest enllaç caducarà el {4}.\n"
+"\n"
+"Si no us voleu unir a l''organització, podeu ignorar aquest missatge."
 
 #: orgInviteBodyPersonalizedHtml
 msgid ""
@@ -97,6 +119,10 @@ msgid ""
 "organization</a></p><p>This link will expire within {4}.</p><p>If you don't "
 "want to join the organization, just ignore this message.</p>"
 msgstr ""
+"<p>Hola, {5} {6}</p><p>Heu estat convidat a unir-vos a l'organització «{3}». "
+"Feu clic a l'enllaç següent per a unir-vos-hi.</p><p><a href=\"{0}\">Enllaç "
+"per a unir-se a l'organització</a></p><p>Aquest enllaç caducarà el {4}.</"
+"p><p>Si no us voleu unir a l'organització, podeu ignorar aquest missatge.</p>"
 
 #: emailUpdateConfirmationSubject
 msgid "Verify new email"
@@ -356,7 +382,7 @@ msgstr ""
 
 #: eventUpdateCredentialSubject
 msgid "Update credential"
-msgstr ""
+msgstr "Actualitza la credencial"
 
 #: eventUpdateCredentialBody
 msgid ""
@@ -372,7 +398,7 @@ msgstr ""
 
 #: eventRemoveCredentialSubject
 msgid "Remove credential"
-msgstr ""
+msgstr "Suprimeix la credencial"
 
 #: eventRemoveCredentialBody
 msgid ""
@@ -388,13 +414,15 @@ msgstr ""
 
 #: eventUserDisabledByTemporaryLockoutSubject
 msgid "User disabled by temporary lockout"
-msgstr ""
+msgstr "L'usuari és inhabilitat per un bloqueig temporal"
 
 #: eventUserDisabledByTemporaryLockoutBody
 msgid ""
 "Your user has been disabled temporarily because of multiple failed attemps "
 "on {0}. Please contact an administrator if needed."
 msgstr ""
+"El vostre usuari ha estat inhabilitat temporalment per múltiples atempts "
+"fallits en {0}. Contacteu amb un administrador si ho necessiteu."
 
 #: eventUserDisabledByTemporaryLockoutHtml
 msgid ""
@@ -404,7 +432,7 @@ msgstr ""
 
 #: eventUserDisabledByPermanentLockoutSubject
 msgid "User disabled by permament lockout"
-msgstr ""
+msgstr "L'usuari és inhabilitat per un bloqueig permanent"
 
 #: eventUserDisabledByPermanentLockoutBody
 msgid ""
