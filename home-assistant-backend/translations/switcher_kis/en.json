@@ -2,11 +2,29 @@
     "config": {
         "abort": {
             "no_devices_found": "No devices found on the network",
+            "reauth_successful": "Re-authentication was successful",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
+        },
+        "error": {
+            "invalid_auth": "Invalid authentication"
         },
         "step": {
             "confirm": {
                 "description": "Do you want to start setup?"
+            },
+            "credentials": {
+                "data": {
+                    "token": "Access token",
+                    "username": "Username"
+                },
+                "description": "Found a Switcher device that requires a token\nEnter your username and token\nFor more information see https://www.home-assistant.io/integrations/switcher_kis/#prerequisites"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "token": "Access token",
+                    "username": "Username"
+                },
+                "description": "Found a Switcher device that requires a token\nEnter your username and token\nFor more information see https://www.home-assistant.io/integrations/switcher_kis/#prerequisites"
             }
         }
     },

@@ -352,6 +352,9 @@
             "ai_vehicle_sensitivity": {
                 "name": "AI vehicle sensitivity"
             },
+            "alarm_volume": {
+                "name": "Alarm volume"
+            },
             "auto_quick_reply_time": {
                 "name": "Auto quick reply time"
             },
@@ -393,6 +396,9 @@
             },
             "image_sharpness": {
                 "name": "Image sharpness"
+            },
+            "message_volume": {
+                "name": "Message volume"
             },
             "motion_sensitivity": {
                 "name": "Motion sensitivity"
@@ -456,6 +462,38 @@
                     "auto": "Auto",
                     "off": "Off",
                     "on": "On"
+                }
+            },
+            "hub_alarm_ringtone": {
+                "name": "Hub alarm ringtone",
+                "state": {
+                    "alarm": "Alarm",
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "hub_visitor_ringtone": {
+                "name": "Hub visitor ringtone",
+                "state": {
+                    "alarm": "Alarm",
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
                 }
             },
             "motion_tone": {
@@ -553,6 +591,9 @@
             "battery_temperature": {
                 "name": "Battery temperature"
             },
+            "cpu_usage": {
+                "name": "CPU usage"
+            },
             "event_connection": {
                 "name": "Event connection",
                 "state": {
@@ -606,6 +647,9 @@
             },
             "hdr": {
                 "name": "HDR"
+            },
+            "hub_ringtone_on_event": {
+                "name": "Hub ringtone on event"
             },
             "ir_lights": {
                 "name": "Infra red lights in night mode"

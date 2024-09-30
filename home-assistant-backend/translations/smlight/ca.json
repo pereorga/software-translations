@@ -40,6 +40,14 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "internet": {
+                "name": "Internet"
+            },
+            "vpn": {
+                "name": "VPN"
+            }
+        },
         "sensor": {
             "core_temperature": {
                 "name": "Temperatura del xip de nucli"
@@ -59,6 +67,11 @@
             },
             "zigbee_temperature": {
                 "name": "Temperatura del xip Zigbee"
+            }
+        },
+        "switch": {
+            "vpn_enabled": {
+                "name": "VPN activada"
             }
         }
     }

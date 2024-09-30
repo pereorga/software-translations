@@ -21,12 +21,22 @@
                 "data": {
                     "is_europe": "Use european servers",
                     "password": "Password",
+                    "region": "Region",
                     "username": "Username"
                 },
                 "data_description": {
                     "is_europe": "Allows the user to choose whether to use european servers or not since the API uses different endoint URLs for european vs non-european users"
                 },
                 "title": "Enter your FGLair credentials"
+            }
+        }
+    },
+    "selector": {
+        "region": {
+            "options": {
+                "cn": "China",
+                "default": "Other",
+                "eu": "Europe"
             }
         }
     }

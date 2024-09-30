@@ -168,7 +168,7 @@
     },
     "services": {
         "ac_cancel": {
-            "description": "Canceles A/C on vehicle.",
+            "description": "Cancels A/C on vehicle.",
             "fields": {
                 "vehicle": {
                     "description": "The vehicle to send the command to.",
@@ -176,6 +176,20 @@
                 }
             },
             "name": "Cancel A/C"
+        },
+        "ac_set_schedules": {
+            "description": "Updates A/C schedule on vehicle.",
+            "fields": {
+                "schedules": {
+                    "description": "Schedule details.",
+                    "name": "Schedules"
+                },
+                "vehicle": {
+                    "description": "The vehicle to send the command to.",
+                    "name": "Vehicle"
+                }
+            },
+            "name": "Update A/C schedule"
         },
         "ac_start": {
             "description": "Starts A/C on vehicle.",

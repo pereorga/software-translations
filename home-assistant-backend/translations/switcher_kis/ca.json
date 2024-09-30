@@ -2,11 +2,27 @@
     "config": {
         "abort": {
             "no_devices_found": "No s'han trobat dispositius a la xarxa",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
+        },
+        "error": {
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
         },
         "step": {
             "confirm": {
                 "description": "Vols comen\u00e7ar la configuraci\u00f3?"
+            },
+            "credentials": {
+                "data": {
+                    "token": "Token d'acc\u00e9s",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "token": "Token d'acc\u00e9s",
+                    "username": "Nom d'usuari"
+                }
             }
         }
     },
