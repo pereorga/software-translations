@@ -1,7 +1,4 @@
 {
-    "application_credentials": {
-        "description": "Segueix les [instruccions]({more_info_url}) per configurar la Cloud Console: \n\n1. V\u00e9s a la [pantalla de consentiment OAuth]({oauth_consent_url}) i configura\n2. V\u00e9s a [Credencials]({oauth_creds_url}) i fes clic a **Crear credencials**.\n3. A la llista desplegable, selecciona **ID de client OAuth**.\n4. Selecciona **Aplicaci\u00f3 web** al tipus d'aplicaci\u00f3.\n5. Afegeix `{redirect_url}` a *URI de redirecci\u00f3 autoritzat*."
-    },
     "config": {
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
@@ -41,7 +38,6 @@
                 "title": "Nest: introdueix l'identificador del projecte Cloud"
             },
             "create_cloud_project": {
-                "description": "La integraci\u00f3 Nest et permet integrar els termostats, c\u00e0meres i timbres de Nest mitjan\u00e7ant l'API de gesti\u00f3 de dispositius intel\u00b7ligents. L'API SDM **estableix una tarifa de configuraci\u00f3 de 5\u202f$** nom\u00e9s la primera vegada. Consulta la documentaci\u00f3 per a [m\u00e9s informaci\u00f3]({more_info_url}). \n\n1. V\u00e9s a [Google Cloud Console]({cloud_console_url}).\n2. Si aquest \u00e9s el teu primer projecte, fes clic a **Crea projecte** i despr\u00e9s a **Projecte nou**.\n3. D\u00f3na-li un nom al teu projecte Cloud i fes clic a **Crea**.\n4. Desa l'identificador del projecte Cloud, per exemple, *exemple-projecte-12345*, ja que el necessitar\u00e0s m\u00e9s endavant\n5. V\u00e9s a la Biblioteca API de [API de gesti\u00f3 de dispositius intel\u00b7ligents]({sdm_api_url}) i fes clic a **Activar** ('Enable').\n6. V\u00e9s a la Biblioteca API de [API Cloud Pub/Sub]({pubsub_api_url}) i fes clic a **Activar** ('Enable'). \n\nContinua quan el teu projecte Cloud estigui configurat.",
                 "title": "Nest: crea i configura el projecte Cloud"
             },
             "device_project": {

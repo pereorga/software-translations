@@ -27,6 +27,23 @@
                 "description": "Reconfigure connection to LCN host.",
                 "title": "Reconfigure LCN host"
             },
+            "reconfigure_confirm": {
+                "data": {
+                    "acknowledge": "Request acknowledgement from modules",
+                    "dim_mode": "Dimming mode",
+                    "ip_address": "IP address",
+                    "password": "Password",
+                    "port": "Port",
+                    "sk_num_tries": "Segment coupler scan attempts",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "acknowledge": "Retry sendig commands if no response is received (increases bus traffic).",
+                    "dim_mode": "The number of steps used for dimming outputs."
+                },
+                "description": "Reconfigure connection to LCN host.",
+                "title": "Reconfigure LCN host"
+            },
             "user": {
                 "data": {
                     "acknowledge": "Request acknowledgement from modules",

@@ -77,6 +77,16 @@
         }
     },
     "issues": {
+        "deprecated_service_weather_get_forecast": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta weather.get_forecast"
+                    }
+                }
+            },
+            "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta weather.get_forecast"
+        },
         "deprecated_weather_forecast": {
             "description": "La integraci\u00f3 `{platform}` utilitza un atribut de previsi\u00f3 meteorol\u00f2gica obsolet. \n\nSi us plau, {report_issue}.",
             "title": "La integraci\u00f3 {platform} utilitza una previsi\u00f3 meteorol\u00f2gica obsoleta"

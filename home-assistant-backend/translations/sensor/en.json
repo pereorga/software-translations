@@ -291,6 +291,15 @@
         "platform_integration_no_support": {
             "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
             "title": "Platform support not supported"
+        },
+        "state_class_removed": {
+            "title": "{statistic_id} no longer has a state class"
+        },
+        "units_changed": {
+            "title": "The unit of {statistic_id} has changed"
+        },
+        "unsupported_state_class": {
+            "title": "The state class of {statistic_id} is not supported"
         }
     },
     "title": "Sensor"

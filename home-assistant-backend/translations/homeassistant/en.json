@@ -113,7 +113,7 @@
         },
         "legacy_templates_false": {
             "description": "Nothing will change with your templates.\n\nRemove the `legacy_templates` key from the `homeassistant` configuration in your configuration.yaml file and restart Home Assistant to fix this issue.",
-            "title": "`legacy_templates` config key is being removed"
+            "title": "legacy_templates config key is being removed"
         },
         "legacy_templates_true": {
             "description": "Please do the following steps:\n- Adopt your configuration to support template rendering to native python types.\n- Remove the `legacy_templates` key from the `homeassistant` configuration in your configuration.yaml file.\n- Restart Home Assistant to fix this issue.",
@@ -135,12 +135,12 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "The `{storage_key}` storage could not be parsed and has been renamed to `{corrupt_path}` to allow Home Assistant to continue.\n\nA default `{storage_key}` may have been created automatically.\n\nIf you made manual edits to the storage file, fix any syntax errors in `{corrupt_path}`, restore the file to the original path `{original_path}`, and restart Home Assistant. Otherwise, restore the system from a backup.\n\nClick SUBMIT below to confirm you have repaired the file or restored from a backup.\n\nThe exact error was: {error}",
-                        "title": "Storage corruption detected for `{storage_key}`"
+                        "description": "The `{storage_key}` storage could not be parsed and has been renamed to `{corrupt_path}` to allow Home Assistant to continue.\n\nA default `{storage_key}` may have been created automatically.\n\nIf you made manual edits to the storage file, fix any syntax errors in `{corrupt_path}`, restore the file to the original path `{original_path}`, and restart Home Assistant. Otherwise, restore the system from a backup.\n\nSelect **Submit** below to confirm you have repaired the file or restored from a backup.\n\nThe exact error was: {error}",
+                        "title": "Storage corruption detected for {storage_key}"
                     }
                 }
             },
-            "title": "Storage corruption detected for `{storage_key}`"
+            "title": "Storage corruption detected for {storage_key}"
         },
         "template_function_relative_time_deprecated": {
             "description": "The {relative_time} template function is deprecated in Home Assistant. Please use the {time_since} or {time_until} template functions instead.",

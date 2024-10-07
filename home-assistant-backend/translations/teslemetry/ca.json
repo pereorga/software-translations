@@ -243,8 +243,20 @@
             "generator_power": {
                 "name": "Pot\u00e8ncia del generador"
             },
+            "grid_energy_exported_from_solar": {
+                "name": "Energia solar exportada a la xarxa"
+            },
+            "grid_energy_imported": {
+                "name": "Importat de la xarxa"
+            },
             "grid_power": {
                 "name": "Pot\u00e8ncia de xarxa"
+            },
+            "grid_services_energy_exported": {
+                "name": "Exportat a la xarxa (serveis)"
+            },
+            "grid_services_energy_imported": {
+                "name": "Importat de la xarxa (serveis)"
             },
             "grid_services_power": {
                 "name": "Pot\u00e8ncia dels serveis de xarxa"
@@ -255,11 +267,26 @@
             "percentage_charged": {
                 "name": "Percentatge carregat"
             },
+            "solar_energy_exported": {
+                "name": "Exportaci\u00f3 solar"
+            },
             "solar_power": {
                 "name": "Pot\u00e8ncia solar"
             },
+            "total_battery_discharge": {
+                "name": "Descarregat de bateria"
+            },
+            "total_grid_energy_exported": {
+                "name": "Exportat a la xarxa"
+            },
+            "total_home_usage": {
+                "name": "Utilitzat per casa"
+            },
             "total_pack_energy": {
                 "name": "Energia total de la bateria"
+            },
+            "total_solar_generation": {
+                "name": "Generat per energia solar"
             },
             "vehicle_state_odometer": {
                 "name": "Comptaquil\u00f2metres"
@@ -302,6 +329,12 @@
         "command_error": {
             "message": "L'ordre ha retornat un error: {error}"
         },
+        "command_no_result": {
+            "message": "La comanda no ha tingut resultat"
+        },
+        "command_reason": {
+            "message": "La comanda s'ha rebutjat: {reason}"
+        },
         "invalid_device": {
             "message": "ID de dispositiu inv\u00e0lid: {device_id}"
         },
@@ -316,6 +349,12 @@
         },
         "set_scheduled_charging_time": {
             "message": "Temps necessari per completar l'operaci\u00f3"
+        },
+        "wake_up_failed": {
+            "message": "No s'ha pogut despertar el vehicle: {message}"
+        },
+        "wake_up_timeout": {
+            "message": "S'ha esgotat el temps d'espera intentant despertar el vehicle"
         }
     },
     "services": {

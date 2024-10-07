@@ -68,6 +68,9 @@
             "flash_lights": {
                 "name": "Flaix de llums"
             },
+            "homelink": {
+                "name": "Homelink"
+            },
             "honk": {
                 "name": "Toca el cl\u00e0xon"
             }
@@ -98,8 +101,16 @@
             }
         },
         "lock": {
+            "charge_state_charge_port_latch": {
+                "name": "Bloqueig del cable de c\u00e0rrega"
+            },
             "vehicle_state_locked": {
                 "name": "Pany"
+            }
+        },
+        "media_player": {
+            "media": {
+                "name": "Reproductor multim\u00e8dia"
             }
         },
         "number": {
@@ -175,6 +186,7 @@
                 }
             },
             "components_customer_preferred_export_rule": {
+                "name": "Permet l'exportaci\u00f3",
                 "state": {
                     "battery_ok": "Bateria",
                     "pv_only": "Nom\u00e9s solar"
@@ -335,6 +347,11 @@
             "wall_connector_state": {
                 "name": "Codi d'estat"
             }
+        }
+    },
+    "exceptions": {
+        "no_cable": {
+            "message": "El cable de c\u00e0rrega es bloquejar\u00e0 autom\u00e0ticament quan es connecti"
         }
     }
 }

@@ -77,6 +77,9 @@
             },
             "title": "No s'ha trobat la integraci\u00f3 {domain}"
         },
+        "legacy_templates_false": {
+            "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 legacy_templates"
+        },
         "no_platform_setup": {
             "title": "Configuraci\u00f3 YAML per a la integraci\u00f3 {platform} no utilitzada"
         },
@@ -92,12 +95,11 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "L'emmagatzematge `{storage_key}` no s'ha pogut analitzar i s'ha canviat el nom a `{corrupt_path}` per permetre que Home Assistant continu\u00ef. \n\n\u00c9s possible que s'hagi creat autom\u00e0ticament un `{storage_key}` predeterminat. \n\nSi has fet modificacions manuals al fitxer d'emmagatzematge, corregeix els errors de sintaxi a `{corrupt_path}`, restaura el fitxer al cam\u00ed original `{original_path}` i reinicia Home Assistant. En cas contrari, restaura el sistema des d'una c\u00f2pia de seguretat. \n\nFes clic a ENVIAR a continuaci\u00f3 per confirmar que has reparat el fitxer o has restaurat a partir d'una c\u00f2pia de seguretat. \n\nL'error exacte ha sigut el seg\u00fcent: {error}",
-                        "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de `{storage_key}`"
+                        "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de {storage_key}"
                     }
                 }
             },
-            "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de `{storage_key}`"
+            "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de {storage_key}"
         }
     },
     "services": {

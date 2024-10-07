@@ -3,6 +3,12 @@
         "deprecated_close_comm_config": {
             "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 `{config_key}`"
         },
+        "deprecated_restart": {
+            "title": "modbus.restart s'est\u00e0 eliminant"
+        },
+        "deprecated_retries": {
+            "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 {config_key}"
+        },
         "deprecated_retry_on_empty": {
             "description": "Elimina la clau `{config_key}` de l'entrada {integration} del teu fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema. \n\nEl reintent si est\u00e0 buit s'aplica autom\u00e0ticament, consulta [la documentaci\u00f3]({url}) per a m\u00e9s par\u00e0metres de gesti\u00f3 d'errors.",
             "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 `{config_key}`"
@@ -16,7 +22,10 @@
         },
         "missing_modbus_name": {
             "description": "Afegeix la clau `{sub_1}` a l'entrada {integration} amb l'amfitri\u00f3 (host) `{sub_2}` al fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema \n\n. `{sub_1}: {sub_3}` s'han afegit.",
-            "title": "Falta el nom de l'entrada Modbus amb amfitri\u00f3 (host) `{sub_2}`"
+            "title": "Falta el nom de l'entrada Modbus amb amfitri\u00f3 (host) {sub_2}"
+        },
+        "removed_lazy_error_count": {
+            "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 {config_key}"
         }
     },
     "services": {

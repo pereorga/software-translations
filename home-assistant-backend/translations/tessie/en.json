@@ -83,6 +83,9 @@
             "state": {
                 "name": "Status"
             },
+            "storm_mode_active": {
+                "name": "Storm watch active"
+            },
             "vehicle_state_dashcam_state": {
                 "name": "Dashcam"
             },
@@ -632,7 +635,7 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\nHome Assistant detected that entity `{entity}` is being used in `{info}`\n\nYou should remove the speed limit lock entity from `{info}` then click submit to fix this issue.",
+                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\nHome Assistant detected that entity `{entity}` is being used in `{info}`\n\nYou should remove the speed limit lock entity from `{info}` then select **Submit** to fix this issue.",
                         "title": "Detected Tessie speed limit lock entity usage"
                     }
                 }
@@ -643,7 +646,7 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\n\nPlease remove this entity from any automation or script, disable the entity then click submit to fix this issue.",
+                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\n\nPlease remove this entity from any automation or script, disable the entity then select **Submit** to fix this issue.",
                         "title": "Detected Tessie speed limit lock entity locked"
                     }
                 }
@@ -654,7 +657,7 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\n\nPlease remove this entity from any automation or script, disable the entity then click submit to fix this issue.",
+                        "description": "The Tessie integration's speed limit lock entity has been deprecated and will be remove in 2024.11.0.\n\nPlease remove this entity from any automation or script, disable the entity then select **Submit** to fix this issue.",
                         "title": "Detected Tessie speed limit lock entity unlocked"
                     }
                 }

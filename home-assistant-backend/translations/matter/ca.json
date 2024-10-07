@@ -46,11 +46,46 @@
     },
     "entity": {
         "binary_sensor": {
+            "battery_alert": {
+                "name": "Alerta de bateria"
+            },
+            "end_of_service": {
+                "name": "Fi del servei"
+            },
+            "hardware_fault": {
+                "name": "Error de maquinari"
+            },
+            "interconnected_co_alarm": {
+                "name": "Alarma de CO interconnectada"
+            },
+            "interconnected_smoke_alarm": {
+                "name": "Alarma de fum interconnectada"
+            },
+            "muted": {
+                "name": "Silenciat"
+            },
             "rain": {
                 "name": "Pluja"
             },
+            "test_in_progress": {
+                "name": "Test en curs"
+            },
             "water_leak": {
                 "name": "Fuita d'aigua"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "Pausa"
+            },
+            "resume": {
+                "name": "Repr\u00e8n"
+            },
+            "start": {
+                "name": "Inicia"
+            },
+            "stop": {
+                "name": "Atura"
             }
         },
         "climate": {
@@ -117,14 +152,49 @@
         "select": {
             "mode": {
                 "name": "Mode"
+            },
+            "sensitivity_level": {
+                "name": "Sensibilitat",
+                "state": {
+                    "standard": "Est\u00e0ndard"
+                }
+            },
+            "startup_on_off": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON",
+                    "toggle": "Commuta"
+                }
             }
         },
         "sensor": {
+            "contamination_state": {
+                "name": "Estat de contaminaci\u00f3",
+                "state": {
+                    "critical": "Cr\u00edtica",
+                    "normal": "Normal",
+                    "warning": "Alerta"
+                }
+            },
+            "expiry_date": {
+                "name": "Data de caducitat"
+            },
             "flow": {
                 "name": "Flux"
             },
+            "operational_state": {
+                "state": {
+                    "error": "Error",
+                    "paused": "Pausat/ada",
+                    "running": "En funcionament",
+                    "stopped": "Aturat"
+                }
+            },
             "switch_current_position": {
                 "name": "Posici\u00f3 actual de l'interruptor"
+            },
+            "valve_position": {
+                "name": "Posici\u00f3 de la v\u00e0lvula"
             }
         },
         "switch": {
@@ -133,6 +203,11 @@
             },
             "switch": {
                 "name": "Interruptor"
+            }
+        },
+        "valve": {
+            "valve": {
+                "name": "V\u00e0lvula"
             }
         }
     },

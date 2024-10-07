@@ -50,6 +50,11 @@
         }
     },
     "entity": {
+        "assist_satellite": {
+            "assist_satellite": {
+                "name": "Assist satellite"
+            }
+        },
         "binary_sensor": {
             "assist_in_progress": {
                 "name": "Assist in progress"
@@ -71,7 +76,7 @@
         },
         "select": {
             "pipeline": {
-                "name": "Assist pipeline",
+                "name": "Assistant",
                 "state": {
                     "preferred": "Preferred"
                 }
@@ -95,11 +100,11 @@
             "fix_flow": {
                 "step": {
                     "confirm_disable_entity": {
-                        "description": "The {integration_name} assist in progress binary sensor `{entity_id}` is deprecated.\n\nMigrate your configuration to use the corresponding `{assist_satellite_domain}` entity and then click SUBMIT to disable the assist in progress binary sensor and fix this issue."
+                        "description": "The {integration_name} in progress binary sensor `{entity_id}` is deprecated.\n\nMigrate your configuration to use the corresponding `{assist_satellite_domain}` entity and then click SUBMIT to disable the in progress binary sensor and fix this issue."
                     }
                 }
             },
-            "title": "{integration_name} assist in progress binary sensors are deprecated"
+            "title": "{integration_name} in progress binary sensors are deprecated"
         },
         "ble_firmware_outdated": {
             "description": "To improve Bluetooth reliability and performance, we highly recommend updating {name} with ESPHome {version} or later. When updating the device from ESPHome earlier than 2022.12.0, it is recommended to use a serial cable instead of an over-the-air update to take advantage of the new partition scheme.",

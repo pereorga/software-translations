@@ -35,6 +35,19 @@
                 },
                 "description": "Modify a Lutron Homeworks controller connection settings"
             },
+            "reconfigure_confirm": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "port": "Port",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Optional password, leave blank if your system does not need credentials or only needs a single credential",
+                    "username": "Optional username, leave blank if your system does not need login credentials"
+                },
+                "description": "Modify a Lutron Homeworks controller connection settings"
+            },
             "user": {
                 "data": {
                     "host": "Host",
