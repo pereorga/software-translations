@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-30 08:03+0000\n"
+"POT-Creation-Date: 2024-10-07 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,6 +47,16 @@ msgstr "Inicia"
 #: MainWindow
 msgid "Could not change the parameters of the selected partition."
 msgstr "No s'han pogut canviar els paràmetres de la partició seleccionada."
+
+#: MainWindow
+msgid ""
+"Are you sure you want to write the changes back to disk now?\\n"
+"\\n"
+"All data on the partition \\\"%s\\\" will be irretrievably lost if you do so!"
+msgstr ""
+"Segur que voleu tornar a escriure els canvis al disc ara?\\n"
+"\\n"
+"Totes les dades de la partició \\%s\\ es perdran irremeiablement si ho feu!"
 
 #: Encryption+utils
 msgid "PGP encrypted"
@@ -122,6 +132,10 @@ msgstr "Gestor de discs"
 #: PartitionList
 msgid "Mounted at"
 msgstr "Muntada a"
+
+#: MainWindow
+msgid "Disk system %s not found!"
+msgstr "No s'ha trobat el disc de sistema %s!"
 
 #: MainWindow
 msgid "Create…"
@@ -472,6 +486,16 @@ msgstr "Arrencada"
 msgctxt "AbstractParametersPanel"
 msgid "OK"
 msgstr "D'acord"
+
+#: MainWindow
+msgid ""
+"Are you sure you want to write the changes back to disk now?\\n"
+"\\n"
+"All data on the disk \\\"%s\\\" will be irretrievably lost if you do so!"
+msgstr ""
+"Segur que voleu tornar a escriure els canvis al disc ara?\\n"
+"\\n"
+"Totes les dades de la partició \\%s\\ es perdran irremeiablement si ho feu!"
 
 #: PartitionList
 msgctxt "PartitionList"
