@@ -48,7 +48,16 @@
         }
     },
     "services": {
+        "get_command": {
+            "fields": {
+                "command": {
+                    "name": "Comanda"
+                }
+            },
+            "name": "Obt\u00e9 comanda"
+        },
         "set_dynamic_eq": {
+            "description": "Activa o desactiva DynamicEQ.",
             "fields": {
                 "dynamic_eq": {
                     "name": "Equalitzador din\u00e0mic"

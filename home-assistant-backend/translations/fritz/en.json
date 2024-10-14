@@ -12,6 +12,7 @@
             "already_in_progress": "Configuration flow is already in progress",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
+            "unknown_error": "Unexpected error",
             "upnp_not_configured": "Missing UPnP settings on device."
         },
         "flow_title": "{name}",
@@ -32,6 +33,19 @@
                 },
                 "description": "Update FRITZ!Box Tools credentials for: {host}.\n\nFRITZ!Box Tools is unable to log in to your FRITZ!Box.",
                 "title": "Updating FRITZ!Box Tools - credentials"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port",
+                    "ssl": "Uses an SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your FRITZ!Box router.",
+                    "port": "Leave it empty to use the default port."
+                },
+                "description": "Update FRITZ!Box Tools configuration for: {host}.",
+                "title": "Updating FRITZ!Box Tools - configuration"
             },
             "reconfigure_confirm": {
                 "data": {

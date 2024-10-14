@@ -12,7 +12,8 @@
         "step": {
             "2fa": {
                 "data": {
-                    "2fa": "Codi de dos factors"
+                    "2fa": "Codi de dos factors",
+                    "pin": "Codi de verificaci\u00f3 en dos passos"
                 },
                 "description": "Introdueix el PIN enviat per correu electr\u00f2nic o SMS",
                 "title": "Autenticaci\u00f3 de dos factors"
@@ -111,11 +112,14 @@
                     "name": "Directori de sortida"
                 },
                 "name": {
+                    "description": "Nom de la c\u00e0mera de la qual obtenir els clips recents.",
                     "name": "Nom"
                 }
-            }
+            },
+            "name": "Desa clips recents"
         },
         "save_video": {
+            "description": "Desa el darrer video gravat a un fitxer local.",
             "fields": {
                 "device_id": {
                     "description": "ID del dispositiu Blink.",
@@ -125,12 +129,14 @@
                     "name": "Nom del fitxer"
                 },
                 "name": {
+                    "description": "Nom de la c\u00e0mera de la qual obtenir els v\u00eddeos recents.",
                     "name": "Nom"
                 }
             },
             "name": "Desa el v\u00eddeo"
         },
         "send_pin": {
+            "description": "Envia un nou PIN a blink per realitzar 2FA.",
             "fields": {
                 "config_entry_id": {
                     "description": "ID de la integraci\u00f3 Blink.",

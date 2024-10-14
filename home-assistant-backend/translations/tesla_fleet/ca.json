@@ -7,7 +7,8 @@
             "oauth_error": "S'han rebut dades token inv\u00e0lides.",
             "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
             "oauth_timeout": "Temps m\u00e0xim d'espera de resoluci\u00f3 de 'token' OAuth esgotat.",
-            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s."
+            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "create_entry": {
             "default": "Autenticaci\u00f3 exitosa amb Tesla."
@@ -304,6 +305,13 @@
             },
             "grid_power": {
                 "name": "Pot\u00e8ncia de xarxa"
+            },
+            "island_status": {
+                "state": {
+                    "island_status_unknown": "Desconegut",
+                    "off_grid": "Desconnectat",
+                    "on_grid": "Connectat"
+                }
             },
             "load_power": {
                 "name": "Pot\u00e8ncia de c\u00e0rrega"

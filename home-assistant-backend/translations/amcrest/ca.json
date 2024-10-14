@@ -106,20 +106,24 @@
             "name": "Estableix el color"
         },
         "start_tour": {
+            "description": "Inicia la funci\u00f3 recorregut de la c\u00e0mera PTZ.",
             "fields": {
                 "entity_id": {
                     "description": "Nom(s) de les c\u00e0meres, o 'all' per a totes les c\u00e0meres.",
                     "name": "Entitat"
                 }
-            }
+            },
+            "name": "Inicia recorregut"
         },
         "stop_tour": {
+            "description": "Atura la funci\u00f3 recorregut de la c\u00e0mera PTZ.",
             "fields": {
                 "entity_id": {
                     "description": "Nom(s) de les c\u00e0meres, o 'all' per a totes les c\u00e0meres.",
                     "name": "Entitat"
                 }
-            }
+            },
+            "name": "Atura el recorregut"
         }
     }
 }

@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "single_instance_allowed": "Already configured. Only a single configuration possible."
+        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
@@ -11,6 +14,7 @@
                 "data": {
                     "host": "Host",
                     "password": "Password",
+                    "port": "Port",
                     "username": "Username"
                 },
                 "data_description": {

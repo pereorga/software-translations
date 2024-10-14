@@ -18,6 +18,29 @@
                 },
                 "description": "Result came back with multiple cameras"
             },
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key",
+                    "location": "Location"
+                },
+                "data_description": {
+                    "location": "Equal or part of name, description or camera id. Be as specific as possible to avoid getting multiple cameras as result"
+                }
+            },
+            "reconfigure_confirm": {
+                "data": {
+                    "api_key": "API key",
+                    "location": "Location"
+                },
+                "data_description": {
+                    "location": "Equal or part of name, description or camera id. Be as specific as possible to avoid getting multiple cameras as result"
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "API key",

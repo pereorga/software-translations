@@ -8,7 +8,9 @@
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
             "oauth_timeout": "Timeout resolving OAuth token.",
-            "oauth_unauthorized": "OAuth authorization error while obtaining access token."
+            "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
+            "reauth_account_mismatch": "The reauthentication account does not match the original account",
+            "reauth_successful": "Re-authentication was successful"
         },
         "create_entry": {
             "default": "Successfully authenticated with Tesla."
@@ -396,6 +398,16 @@
             },
             "grid_services_power": {
                 "name": "Grid services power"
+            },
+            "island_status": {
+                "name": "Grid Status",
+                "state": {
+                    "island_status_unknown": "Unknown",
+                    "off_grid": "Disconnected",
+                    "off_grid_intentional": "Disconnected intentionally",
+                    "off_grid_unintentional": "Disconnected unintentionally",
+                    "on_grid": "Connected"
+                }
             },
             "load_power": {
                 "name": "Load power"

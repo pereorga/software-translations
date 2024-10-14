@@ -230,6 +230,10 @@
         "unsupported_virtualization_image": {
             "description": "System is unsupported because the Home Assistant OS image in use is not intended for use in a virtualized environment. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Incorrect OS image for virtualization"
+        },
+        "update_service_deprecated": {
+            "description": "The update add-on action has been deprecated and will be removed in 2025.5. Please use the update entity and the respective action to update the add-on instead.",
+            "title": "Deprecated update add-on action"
         }
     },
     "services": {

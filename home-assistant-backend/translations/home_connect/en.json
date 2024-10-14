@@ -22,6 +22,59 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "battery_charging_state": {
+                "name": "Battery charging state"
+            },
+            "charging_connection": {
+                "name": "Charging connection"
+            },
+            "chiller_door": {
+                "name": "Chiller door"
+            },
+            "dust_box_inserted": {
+                "name": "Dust box",
+                "state": {
+                    "off": "Not inserted",
+                    "on": "Inserted"
+                }
+            },
+            "freezer_door": {
+                "name": "Freezer door"
+            },
+            "lifted": {
+                "name": "Lifted"
+            },
+            "local_control": {
+                "name": "Local control"
+            },
+            "lost": {
+                "name": "Lost"
+            },
+            "refrigerator_door": {
+                "name": "Refrigerator door"
+            },
+            "remote_control": {
+                "name": "Remote control"
+            },
+            "remote_start": {
+                "name": "Remote start"
+            }
+        },
+        "light": {
+            "ambient_light": {
+                "name": "Ambient light"
+            },
+            "cooking_lighting": {
+                "name": "Functional light"
+            },
+            "external_light": {
+                "name": "External light"
+            },
+            "internal_light": {
+                "name": "Internal light"
+            }
+        },
         "sensor": {
             "alarm_sensor_coffee_bean_container": {
                 "state": {
@@ -58,6 +111,166 @@
                     "confirmed": "Confirmed",
                     "present": "Present"
                 }
+            },
+            "battery_level": {
+                "name": "Battery level"
+            },
+            "bean_container_empty": {
+                "name": "Bean container empty",
+                "state": {
+                    "confirmed": "Confirmed",
+                    "off": "Off",
+                    "present": "Present"
+                }
+            },
+            "camera_state": {
+                "name": "Camera state",
+                "state": {
+                    "disabled": "Disabled",
+                    "error": "Error",
+                    "ready": "Ready",
+                    "sleeping": "Sleeping",
+                    "streamingcloud": "Streaming cloud",
+                    "streaminglocal": "Streaming local",
+                    "streaminglocal_and_cloud": "Streaming local and cloud"
+                }
+            },
+            "coffee_and_milk_counter": {
+                "name": "Coffee and milk cups"
+            },
+            "coffee_counter": {
+                "name": "Coffees"
+            },
+            "drip_tray_full": {
+                "name": "Drip tray full",
+                "state": {
+                    "confirmed": "Confirmed",
+                    "off": "Off",
+                    "present": "Present"
+                }
+            },
+            "freezer_door_alarm": {
+                "name": "Freezer door alarm",
+                "state": {
+                    "confirmed": "Confirmed",
+                    "present": "Present"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "name": "Freezer temperature alarm",
+                "state": {
+                    "confirmed": "Confirmed",
+                    "off": "Off",
+                    "present": "Present"
+                }
+            },
+            "frothy_milk_counter": {
+                "name": "Frothy milk cups"
+            },
+            "hot_milk_counter": {
+                "name": "Hot milk cups"
+            },
+            "hot_water_counter": {
+                "name": "Hot water"
+            },
+            "hot_water_cups_counter": {
+                "name": "Hot water cups"
+            },
+            "last_selected_map": {
+                "name": "Last selected map",
+                "state": {
+                    "map1": "Map 1",
+                    "map2": "Map 2",
+                    "map3": "Map 3",
+                    "tempmap": "Temporary map"
+                }
+            },
+            "milk_counter": {
+                "name": "Milk cups"
+            },
+            "operation_state": {
+                "name": "Operation state",
+                "state": {
+                    "aborting": "Aborting",
+                    "actionrequired": "Action required",
+                    "delayedstart": "Delayed start",
+                    "error": "Error",
+                    "finished": "Finished",
+                    "inactive": "Inactive",
+                    "pause": "Paused",
+                    "ready": "Ready",
+                    "run": "Run"
+                }
+            },
+            "powder_coffee_counter": {
+                "name": "Powder coffees"
+            },
+            "program_finish_time": {
+                "name": "Program finish time"
+            },
+            "program_progress": {
+                "name": "Program progress"
+            },
+            "refrigerator_door_alarm": {
+                "name": "Refrigerator door alarm",
+                "state": {
+                    "confirmed": "Confirmed",
+                    "off": "Off",
+                    "present": "Present"
+                }
+            },
+            "ristretto_espresso_counter": {
+                "name": "Ristretto espresso cups"
+            },
+            "water_tank_empty": {
+                "name": "Water tank empty",
+                "state": {
+                    "confirmed": "Confirmed",
+                    "off": "Off",
+                    "present": "Present"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Child lock"
+            },
+            "cup_warmer": {
+                "name": "Cup warmer"
+            },
+            "dispenser_enabled": {
+                "name": "Dispenser",
+                "state": {
+                    "off": "Disabled",
+                    "on": "Enabled"
+                }
+            },
+            "door_assistant_freezer": {
+                "name": "Freezer door assistant"
+            },
+            "door_assistant_fridge": {
+                "name": "Fridge door assistant"
+            },
+            "eco_mode": {
+                "name": "Eco mode"
+            },
+            "freezer_super_mode": {
+                "name": "Freezer super mode"
+            },
+            "fresh_mode": {
+                "name": "Fresh mode"
+            },
+            "power": {
+                "name": "Power"
+            },
+            "refrigerator_super_mode": {
+                "name": "Refrigerator super mode"
+            },
+            "sabbath_mode": {
+                "name": "Sabbath mode"
+            },
+            "vacation_mode": {
+                "name": "Vacation mode"
             }
         }
     },

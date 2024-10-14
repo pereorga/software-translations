@@ -75,6 +75,7 @@
         "dyn_text": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "row": {
@@ -92,6 +93,7 @@
             "description": "Configura l'estat del LED.",
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "led": {
@@ -109,6 +111,7 @@
             "description": "Bloqueja les claus.",
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "state": {
@@ -132,6 +135,7 @@
             "description": "Bloqueja un valor consigna d'un regulador.",
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "setpoint": {
@@ -145,44 +149,68 @@
         },
         "output_abs": {
             "fields": {
+                "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
+                    "name": "Adre\u00e7a"
+                },
                 "brightness": {
                     "description": "Lluminositat absoluta.",
                     "name": "Lluminositat"
+                },
+                "output": {
+                    "description": "Port de sortida.",
+                    "name": "Sortida"
                 },
                 "transition": {
                     "description": "Temps de transici\u00f3.",
                     "name": "Transici\u00f3"
                 }
-            }
+            },
+            "name": "Brillantor absoluta de sortida"
         },
         "output_rel": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "brightness": {
                     "description": "Lluminositat relativa.",
                     "name": "Lluminositat"
+                },
+                "output": {
+                    "description": "Port de sortida.",
+                    "name": "Sortida"
                 }
             }
         },
         "output_toggle": {
+            "description": "Commuta el port de sortida.",
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
+                },
+                "output": {
+                    "description": "Port de sortida.",
+                    "name": "Sortida"
                 },
                 "transition": {
                     "description": "Temps de transici\u00f3.",
                     "name": "Transici\u00f3"
                 }
-            }
+            },
+            "name": "Commuta sortida"
         },
         "pck": {
+            "description": "Envia una comanda PCK arbitr\u00e0ria.",
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "pck": {
+                    "description": "Comanda PCK (sense cap\u00e7alera d'adre\u00e7a).",
                     "name": "PCK"
                 }
             },
@@ -191,6 +219,7 @@
         "relays": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "state": {
@@ -201,6 +230,7 @@
         "send_keys": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "keys": {
@@ -210,9 +240,11 @@
                     "name": "Estat"
                 },
                 "time": {
+                    "description": "Envia retard.",
                     "name": "Temps"
                 },
                 "time_unit": {
+                    "description": "Unitat de temps dels retards.",
                     "name": "Unitat de temps"
                 }
             },
@@ -221,6 +253,7 @@
         "var_abs": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "unit_of_measurement": {
@@ -238,6 +271,7 @@
         "var_rel": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "unit_of_measurement": {
@@ -257,6 +291,7 @@
         "var_reset": {
             "fields": {
                 "address": {
+                    "description": "Adre\u00e7a del m\u00f2dul.",
                     "name": "Adre\u00e7a"
                 },
                 "variable": {
