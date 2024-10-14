@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-07 08:02+0000\n"
+"POT-Creation-Date: 2024-10-14 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.0\n"
+"X-Generator: Translate Toolkit 3.12.2\n"
 
 #: Locale+Name
 msgid "English (US)"
@@ -221,9 +221,31 @@ msgctxt "Search Listing->Label->4K"
 msgid "4K"
 msgstr ""
 
+#: Search+Listing-%3ELabel-%3E8K
+msgid "8K"
+msgstr ""
+
+#: Search+Listing-%3ELabel-%3EVR180
+msgctxt "Search Listing->Label->VR180"
+msgid "VR180"
+msgstr ""
+
+#: Search+Listing-%3ELabel-%3E360+Video
+msgid "360°"
+msgstr ""
+
 #: Search+Listing-%3ELabel-%3ESubtitles
 msgctxt "Search Listing->Label->Subtitles"
 msgid "Subtitles"
+msgstr ""
+
+#: Search+Listing-%3ELabel-%3ENew
+msgid "New"
+msgstr ""
+
+#: Search+Listing-%3ELabel-%3E3D
+msgctxt "Search Listing->Label->3D"
+msgid "3D"
 msgstr ""
 
 #: Search+Listing-%3ELabel-%3EClosed+Captions
@@ -346,6 +368,7 @@ msgid "Creative Commons"
 msgstr ""
 
 #: Search+Filters-%3EFeatures-%3E3D
+msgctxt "Search Filters->Features->3D"
 msgid "3D"
 msgstr ""
 
@@ -373,6 +396,7 @@ msgid "HDR"
 msgstr ""
 
 #: Search+Filters-%3EFeatures-%3EVR180
+msgctxt "Search Filters->Features->VR180"
 msgid "VR180"
 msgstr ""
 
@@ -797,6 +821,12 @@ msgstr ""
 msgid "This playlist does not exist"
 msgstr ""
 
+#: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EThis+playlist+has+a+video+with+a+duration+error
+msgid ""
+"This playlist contains at least one video that doesn't have a duration, it "
+"will be sorted as if their duration is zero."
+msgstr ""
+
 #: User+Playlists-%3EAddVideoPrompt-%3ESelect+a+playlist+to+add+your+N+videos+to
 msgid ""
 "Select a playlist to add your video to | Select a playlist to add your "
@@ -902,6 +932,10 @@ msgstr ""
 msgid "Sort Settings Sections (A-Z)"
 msgstr ""
 
+#: Settings-%3EReturn+to+Settings+Menu
+msgid "Return to Settings Menu"
+msgstr ""
+
 #: Settings-%3EThe+app+needs+to+restart+for+changes+to+take+effect.+Restart+and+apply+change%3F
 msgid ""
 "The app needs to restart for changes to take effect. Restart and apply "
@@ -911,7 +945,8 @@ msgstr ""
 "aplicar els canvis?"
 
 #: Settings-%3EGeneral+Settings-%3EGeneral+Settings
-msgid "General Settings"
+msgctxt "Settings->General Settings->General Settings"
+msgid "General"
 msgstr "Paràmetres generals"
 
 #: Settings-%3EGeneral+Settings-%3ECheck+for+Updates
@@ -1054,7 +1089,7 @@ msgid "No Action"
 msgstr "Sense acció"
 
 #: Settings-%3ETheme+Settings-%3ETheme+Settings
-msgid "Theme Settings"
+msgid "Theme"
 msgstr "Paràmetres del tema"
 
 #: Settings-%3ETheme+Settings-%3EMatch+Top+Bar+with+Main+Color
@@ -1319,7 +1354,7 @@ msgid "Secondary Color Theme"
 msgstr "Tema de color secundari"
 
 #: Settings-%3EPlayer+Settings-%3EPlayer+Settings
-msgid "Player Settings"
+msgid "Player"
 msgstr "Configuració del reproductor"
 
 #: Settings-%3EPlayer+Settings-%3EPlay+Next+Video
@@ -1497,10 +1532,12 @@ msgid "Empty File Name"
 msgstr ""
 
 #: Settings-%3EExternal+Player+Settings-%3EExternal+Player+Settings
-msgid "External Player Settings"
+msgctxt "Settings->External Player Settings->External Player Settings"
+msgid "External Player"
 msgstr "Configuració del reproductor extern"
 
 #: Settings-%3EExternal+Player+Settings-%3EExternal+Player
+msgctxt "Settings->External Player Settings->External Player"
 msgid "External Player"
 msgstr "Reproductor extern"
 
@@ -1525,7 +1562,7 @@ msgid "None"
 msgstr ""
 
 #: Settings-%3EPrivacy+Settings-%3EPrivacy+Settings
-msgid "Privacy Settings"
+msgid "Privacy"
 msgstr "Configuració de la Privacitat"
 
 #: Settings-%3EPrivacy+Settings-%3ERemember+History
@@ -1589,7 +1626,7 @@ msgid "Are you sure you want to remove all your playlists?"
 msgstr ""
 
 #: Settings-%3ESubscription+Settings-%3ESubscription+Settings
-msgid "Subscription Settings"
+msgid "Subscription"
 msgstr "Configuració de les subscripcions"
 
 #: Settings-%3ESubscription+Settings-%3EHide+Videos+on+Watch
@@ -1618,7 +1655,7 @@ msgid "Confirm Before Unsubscribing"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EDistraction+Free+Settings
-msgid "Distraction Free Settings"
+msgid "Distraction Free"
 msgstr "Configuració del mode sense distraccions"
 
 #: Settings-%3EDistraction+Free+Settings-%3ESections-%3ESide+Bar
@@ -1638,6 +1675,7 @@ msgid "Watch Page"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3ESections-%3EGeneral
+msgctxt "Settings->Distraction Free Settings->Sections->General"
 msgid "General"
 msgstr ""
 
@@ -1791,7 +1829,7 @@ msgid "Hide Subscriptions Community"
 msgstr ""
 
 #: Settings-%3EData+Settings-%3EData+Settings
-msgid "Data Settings"
+msgid "Data"
 msgstr "Configuració de les dades"
 
 #: Settings-%3EData+Settings-%3ESelect+Import+Type
@@ -1942,7 +1980,7 @@ msgid "Manage Subscriptions"
 msgstr "Gestiona les subscripcions"
 
 #: Settings-%3EProxy+Settings-%3EProxy+Settings
-msgid "Proxy Settings"
+msgid "Proxy"
 msgstr "Configuració del servidor intermediari"
 
 #: Settings-%3EProxy+Settings-%3EEnable+Tor+/+Proxy
@@ -1997,7 +2035,7 @@ msgstr ""
 "configurat?"
 
 #: Settings-%3ESponsorBlock+Settings-%3ESponsorBlock+Settings
-msgid "SponsorBlock Settings"
+msgid "SponsorBlock"
 msgstr "Configuració de l'SponsorBlock"
 
 #: Settings-%3ESponsorBlock+Settings-%3EEnable+SponsorBlock
@@ -2051,7 +2089,7 @@ msgid "Category Color"
 msgstr ""
 
 #: Settings-%3EParental+Control+Settings-%3EParental+Control+Settings
-msgid "Parental Control Settings"
+msgid "Parental Control"
 msgstr ""
 
 #: Settings-%3EParental+Control+Settings-%3EHide+Unsubscribe+Button
@@ -2067,7 +2105,7 @@ msgid "Hide Search Bar"
 msgstr ""
 
 #: Settings-%3EDownload+Settings-%3EDownload+Settings
-msgid "Download Settings"
+msgid "Download"
 msgstr "Configuració de les descàrregues"
 
 #: Settings-%3EDownload+Settings-%3EAsk+Download+Path
@@ -2091,7 +2129,7 @@ msgid "Open in web browser"
 msgstr ""
 
 #: Settings-%3EExperimental+Settings-%3EExperimental+Settings
-msgid "Experimental Settings"
+msgid "Experimental"
 msgstr ""
 
 #: Settings-%3EExperimental+Settings-%3EWarning
@@ -2105,6 +2143,7 @@ msgid "Replace HTTP Cache"
 msgstr ""
 
 #: Settings-%3EPassword+Dialog-%3EPassword
+msgctxt "Settings->Password Dialog->Password"
 msgid "Password"
 msgstr ""
 
@@ -2121,7 +2160,8 @@ msgid "Unlock"
 msgstr ""
 
 #: Settings-%3EPassword+Settings-%3EPassword+Settings
-msgid "Password Settings"
+msgctxt "Settings->Password Settings->Password Settings"
+msgid "Password"
 msgstr ""
 
 #: Settings-%3EPassword+Settings-%3ESet+Password+To+Prevent+Access
@@ -2242,7 +2282,7 @@ msgid "Donate"
 msgstr "Dona"
 
 #: Profile-%3EProfile+Settings
-msgid "Profile Settings"
+msgid "Profile"
 msgstr "Configuració del perfil"
 
 #: Profile-%3EToggle+Profile+List
@@ -3188,6 +3228,14 @@ msgstr ""
 
 #: Playlist-%3ESort+By-%3EVideoTitleDescending
 msgid "Title (Z-A)"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EVideoDurationAscending
+msgid "Duration (Shortest first)"
+msgstr ""
+
+#: Playlist-%3ESort+By-%3EVideoDurationDescending
+msgid "Duration (Longest first)"
 msgstr ""
 
 #: Playlist-%3ESort+By-%3ECustom
