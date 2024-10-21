@@ -21,6 +21,18 @@
                 "description": "Tedee needs an updated access key, because the existing one is invalid, or might have expired.",
                 "title": "Update of access key required"
             },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "local_access_token": "Local access token"
+                },
+                "data_description": {
+                    "host": "The IP address of the bridge you want to connect to.",
+                    "local_access_token": "You can find it in the tedee app under \"Bridge Settings\" -> \"Local API\"."
+                },
+                "description": "Update the settings of this integration.",
+                "title": "Reconfigure Tedee"
+            },
             "reconfigure_confirm": {
                 "data": {
                     "host": "Host",

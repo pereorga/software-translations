@@ -22,5 +22,17 @@
                 "description": "Set up your Cambridge Audio Streamer to integrate with Home Assistant."
             }
         }
+    },
+    "entity": {
+        "select": {
+            "display_brightness": {
+                "name": "Display brightness",
+                "state": {
+                    "bright": "Bright",
+                    "dim": "Dim",
+                    "off": "Off"
+                }
+            }
+        }
     }
 }

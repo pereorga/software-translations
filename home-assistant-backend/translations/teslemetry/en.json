@@ -1,7 +1,9 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured"
+            "already_configured": "Account is already configured",
+            "reauth_account_mismatch": "The reauthentication account does not match the original account",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -10,6 +12,13 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "access_token": "Access token"
+                },
+                "description": "The {name} integration needs to re-authenticate your account, please enter an access token from {url}",
+                "title": "Authentication expired for {name}"
+            },
             "user": {
                 "data": {
                     "access_token": "Access token"

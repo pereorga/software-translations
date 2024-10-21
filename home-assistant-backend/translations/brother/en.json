@@ -13,6 +13,15 @@
         },
         "flow_title": "{model} {serial_number}",
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the Brother printer to control."
+                },
+                "description": "Update configuration for {printer_name}."
+            },
             "reconfigure_confirm": {
                 "data": {
                     "host": "Host"

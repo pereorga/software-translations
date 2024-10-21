@@ -56,6 +56,27 @@
                 "name": "Port {port_name} Internet Link"
             }
         },
+        "sensor": {
+            "cpu_usage": {
+                "name": "CPU usage"
+            },
+            "device_status": {
+                "name": "Device status",
+                "state": {
+                    "adopt_failed": "Adopt failed",
+                    "connected": "Connected",
+                    "disconnected": "Disconnected",
+                    "error": "Error",
+                    "heartbeat_missed": "Heartbeat missed",
+                    "isolated": "Isolated",
+                    "managed_externally": "Managed externally",
+                    "pending": "Pending"
+                }
+            },
+            "mem_usage": {
+                "name": "Memory usage"
+            }
+        },
         "switch": {
             "poe_control": {
                 "name": "Port {port_name} PoE"

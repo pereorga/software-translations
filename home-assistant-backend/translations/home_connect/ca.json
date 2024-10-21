@@ -1,4 +1,7 @@
 {
+    "common": {
+        "confirmed": "Confirmat"
+    },
     "config": {
         "abort": {
             "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
@@ -14,6 +17,132 @@
         "step": {
             "pick_implementation": {
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "freezer_door": {
+                "name": "Porta del congelador"
+            },
+            "refrigerator_door": {
+                "name": "Porta de la nevera"
+            }
+        },
+        "light": {
+            "external_light": {
+                "name": "Llum exterior"
+            },
+            "internal_light": {
+                "name": "Llum interior"
+            }
+        },
+        "sensor": {
+            "alarm_sensor_coffee_bean_container": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "alarm_sensor_coffee_drip_tray": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "alarm_sensor_coffee_water_tank": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "alarm_sensor_freezer": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "alarm_sensor_fridge": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "alarm_sensor_temp": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "battery_level": {
+                "name": "Nivell de bateria"
+            },
+            "bean_container_empty": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "camera_state": {
+                "state": {
+                    "disabled": "Desactivada",
+                    "error": "Error"
+                }
+            },
+            "coffee_counter": {
+                "name": "Caf\u00e8s"
+            },
+            "drip_tray_full": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "freezer_door_alarm": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "operation_state": {
+                "state": {
+                    "aborting": "Avortant",
+                    "actionrequired": "Acci\u00f3 necess\u00e0ria",
+                    "delayedstart": "Inici retardat",
+                    "error": "Error",
+                    "finished": "Acabat",
+                    "inactive": "Inactiu",
+                    "pause": "Pausat/ada",
+                    "ready": "A punt"
+                }
+            },
+            "refrigerator_door_alarm": {
+                "name": "Alarma de la porta de la nevera",
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "water_tank_empty": {
+                "name": "Dip\u00f2sit d'aigua buit",
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Bloqueig infantil"
+            },
+            "dispenser_enabled": {
+                "name": "Dispensador",
+                "state": {
+                    "off": "Desactivada",
+                    "on": "Activada"
+                }
+            },
+            "vacation_mode": {
+                "name": "Mode vacances"
             }
         }
     },
