@@ -26,6 +26,13 @@
             }
         }
     },
+    "entity": {
+        "sensor": {
+            "song_tempo": {
+                "name": "Song tempo"
+            }
+        }
+    },
     "issues": {
         "removed_yaml": {
             "description": "Configuring Spotify using YAML has been removed.\n\nYour existing YAML configuration is not used by Home Assistant.\n\nRemove the YAML configuration from your configuration.yaml file and restart Home Assistant to fix this issue.",

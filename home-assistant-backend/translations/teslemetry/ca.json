@@ -1,11 +1,20 @@
 {
     "config": {
+        "abort": {
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_access_token": "Token d'acc\u00e9s inv\u00e0lid",
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "access_token": "Token d'acc\u00e9s"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
             "user": {
                 "data": {
                     "access_token": "Token d'acc\u00e9s"

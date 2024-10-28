@@ -35,6 +35,16 @@
         }
     },
     "issues": {
+        "deprecated_filename_template": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "title": "S'ha detectat l'\u00fas de la variable de plantilla obsoleta"
+                    }
+                }
+            },
+            "title": "S'ha detectat l'\u00fas de la variable de plantilla obsoleta"
+        },
         "platform_integration_no_support": {
             "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
             "title": "Suport de la plataforma no compatible"
@@ -71,7 +81,6 @@
                     "name": "Durada"
                 },
                 "filename": {
-                    "description": "Plantilla d'un nom de fitxer. La variable `entity_id` est\u00e0 disponible. Ha de ser un mp4.",
                     "name": "Nom del fitxer"
                 },
                 "lookback": {
@@ -85,7 +94,6 @@
             "description": "Fa una instant\u00e0nia des d'una c\u00e0mera.",
             "fields": {
                 "filename": {
-                    "description": "Plantilla d'un nom de fitxer. La variable `entity_id` est\u00e0 disponible.",
                     "name": "Nom del fitxer"
                 }
             },

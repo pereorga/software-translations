@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "invalid_auth": "Invalid authentication",
@@ -21,6 +22,13 @@
                 },
                 "description": "The Ring integration needs to re-authenticate your account {username}",
                 "title": "Authentication expired for {name}"
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password"
+                },
+                "description": "Will create a new Authorized Device for {username} at ring.com",
+                "title": "Reconfigure Ring Integration"
             },
             "user": {
                 "data": {

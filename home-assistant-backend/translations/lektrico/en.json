@@ -112,8 +112,10 @@
                     "charging": "Charging",
                     "connected": "Connected",
                     "error": "Error",
+                    "locked": "Locked",
                     "need_auth": "Waiting for authentication",
                     "paused": "Paused",
+                    "paused_by_scheduler": "Paused by scheduler",
                     "updating_firmware": "Updating firmware"
                 }
             },
@@ -125,6 +127,17 @@
             },
             "voltage_l3": {
                 "name": "Voltage L3"
+            }
+        },
+        "switch": {
+            "authentication": {
+                "name": "Authentication"
+            },
+            "force_single_phase": {
+                "name": "Force single phase"
+            },
+            "lock": {
+                "name": "Lock"
             }
         }
     }

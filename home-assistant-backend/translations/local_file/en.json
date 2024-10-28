@@ -1,7 +1,51 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "error": {
+            "not_readable_path": "The provided path to the file can not be read"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "file_path": "File path",
+                    "name": "Name"
+                },
+                "data_description": {
+                    "file_path": "The full path to the image file to be displayed. Be sure the path of the file is in the allowed paths, you can read more about this in the documentation.",
+                    "name": "Name for the created entity."
+                }
+            }
+        }
+    },
     "exceptions": {
         "file_path_not_accessible": {
             "message": "Path {file_path} is not accessible"
+        }
+    },
+    "issues": {
+        "no_access_path": {
+            "description": "While trying to import your configuration the provided file path {file_path} could not be read.\nPlease update your configuration to a correct file path and restart to fix this issue.",
+            "title": "Incorrect file path"
+        }
+    },
+    "options": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "error": {
+            "not_readable_path": "The provided path to the file can not be read"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "file_path": "File path"
+                },
+                "data_description": {
+                    "file_path": "The full path to the image file to be displayed. Be sure the path of the file is in the allowed paths, you can read more about this in the documentation."
+                }
+            }
         }
     },
     "services": {
@@ -13,7 +57,7 @@
                     "name": "Entity"
                 },
                 "file_path": {
-                    "description": "The full path to the new image file to be displayed.",
+                    "description": "The full path to the image file to be displayed. Be sure the path of the file is in the allowed paths, you can read more about this in the documentation.",
                     "name": "File path"
                 }
             },
