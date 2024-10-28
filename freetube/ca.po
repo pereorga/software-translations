@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-14 08:03+0000\n"
+"POT-Creation-Date: 2024-10-28 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.12.2\n"
+"X-Generator: Translate Toolkit 3.6.0\n"
 
 #: Locale+Name
 msgid "English (US)"
@@ -152,7 +152,6 @@ msgstr "Estàs segur/a que vols obrir aquest enllaç?"
 
 #: Global-%3EVideos
 msgctxt "Global->Videos"
-"Global->Videos"
 "Global->Videos"
 msgid "Videos"
 msgstr "Vídeos"
@@ -506,15 +505,6 @@ msgstr ""
 msgid "Your channel list is currently empty."
 msgstr ""
 
-#: Channels-%3EUnsubscribe
-msgctxt "Channels->Unsubscribe"
-msgid "Unsubscribe"
-msgstr ""
-
-#: Channels-%3EUnsubscribed
-msgid "{channelName} has been removed from your subscriptions"
-msgstr ""
-
 #: Channels-%3EUnsubscribe+Prompt
 msgid "Are you sure you want to unsubscribe from \"{channelName}\"?"
 msgstr ""
@@ -566,25 +556,6 @@ msgstr "Llistes de reproducció"
 #: User+Playlists-%3EYour+Playlists
 msgid "Your Playlists"
 msgstr "Les teves llistes de reproducció"
-
-#: User+Playlists-%3EPlaylist+Message
-msgid ""
-"This page is not reflective of fully working playlists. It only lists videos "
-"that you have saved or favorited. When the work has finished, all videos "
-"currently here will be migrated to a 'Favorites' playlist."
-msgstr ""
-"Aquesta pàgina no reflecteix les llistes de reproducció plenament actives. "
-"Només llista els vídeos que heu desat o preferit. Quan la tasca hagi acabat, "
-"tots els vídeos que hi ha actualment es migraran a una llista de reproducció "
-"de \"favorites\"."
-
-#: User+Playlists-%3EYour+saved+videos+are+empty.+Click+on+the+save+button+on+the+corner+of+a+video+to+have+it+listed+here
-msgid ""
-"Your saved videos are empty. Click on the save button on the corner of a "
-"video to have it listed here"
-msgstr ""
-"Els vostres vídeos desats són buits. Feu clic al botó de desar a la "
-"cantonada d'un vídeo per tenir-lo llistat aquí"
 
 #: User+Playlists-%3EYou+have+no+playlists.+Click+on+the+create+new+playlist+button+to+create+a+new+one.
 msgid ""
@@ -923,10 +894,6 @@ msgstr ""
 #: Settings-%3ESettings
 msgid "Settings"
 msgstr "Configuració"
-
-#: Settings-%3EExpand+All+Settings+Sections
-msgid "Expand All Settings Sections"
-msgstr ""
 
 #: Settings-%3ESort+Settings+Sections+(A-Z)
 msgid "Sort Settings Sections (A-Z)"
@@ -1637,11 +1604,6 @@ msgstr "Oculta els vídeos visualitzats"
 msgid "Fetch Feeds from RSS"
 msgstr "Recupera els canals de continguts des de l'RSS"
 
-#: Settings-%3ESubscription+Settings-%3EManage+Subscriptions
-msgctxt "Settings->Subscription Settings->Manage Subscriptions"
-msgid "Manage Subscriptions"
-msgstr "Gestiona les subscripcions"
-
 #: Settings-%3ESubscription+Settings-%3EFetch+Automatically
 msgid "Fetch Feed Automatically"
 msgstr ""
@@ -1856,10 +1818,6 @@ msgstr ""
 msgid "Playlist File"
 msgstr ""
 
-#: Settings-%3EData+Settings-%3ECheck+for+Legacy+Subscriptions
-msgid "Check for Legacy Subscriptions"
-msgstr "Comprova les subscripcions antigues"
-
 #: Settings-%3EData+Settings-%3EExport+Subscriptions
 msgid "Export Subscriptions"
 msgstr "Exporta subscripcions"
@@ -1975,7 +1933,6 @@ msgid "How do I import my subscriptions?"
 msgstr "Com puc importar les meves subscripcions?"
 
 #: Settings-%3EData+Settings-%3EManage+Subscriptions
-msgctxt "Settings->Data Settings->Manage Subscriptions"
 msgid "Manage Subscriptions"
 msgstr "Gestiona les subscripcions"
 
@@ -2455,7 +2412,6 @@ msgid "Subscribe"
 msgstr "Subscriu-te"
 
 #: Channel-%3EUnsubscribe
-msgctxt "Channel->Unsubscribe"
 msgid "Unsubscribe"
 msgstr "Cancel·la la subscripció"
 
@@ -2649,6 +2605,18 @@ msgid ""
 "switching to a different VPN or proxy."
 msgstr ""
 
+#: Video-%3EMembersOnly
+msgid ""
+"Members-only videos cannot be watched with FreeTube as they require Google "
+"login and paid membership to the uploader's channel."
+msgstr ""
+
+#: Video-%3EAgeRestricted
+msgid ""
+"Age-restricted videos cannot be watched with FreeTube as they require Google "
+"login and using an age-verified YouTube account."
+msgstr ""
+
 #: Video-%3EMore+Options
 msgid "More Options"
 msgstr ""
@@ -2730,7 +2698,6 @@ msgid "Show Channel"
 msgstr ""
 
 #: Video-%3EViews
-msgctxt "Video->Views"
 msgid "Views"
 msgstr "Visualitzacions"
 
@@ -2783,6 +2750,10 @@ msgstr ""
 
 #: Video-%3EUpcoming
 msgid "Upcoming"
+msgstr ""
+
+#: Video-%3EUnlisted
+msgid "Unlisted"
 msgstr ""
 
 #: Video-%3ELive
@@ -3182,21 +3153,6 @@ msgstr ""
 msgid "View Full Playlist"
 msgstr "Visualitza la llista de reproducció sencera"
 
-#: Playlist-%3EVideos
-msgctxt "Playlist->Videos"
-msgid "Videos"
-msgstr "Vídeos"
-
-#: Playlist-%3EView
-msgctxt "Playlist->View"
-msgid "View"
-msgstr "Visualitza"
-
-#: Playlist-%3EViews
-msgctxt "Playlist->Views"
-msgid "Views"
-msgstr "Visualitzacions"
-
 #: Playlist-%3ELast+Updated+On
 msgid "Last Updated On"
 msgstr "Última Actualització"
@@ -3241,10 +3197,6 @@ msgstr ""
 #: Playlist-%3ESort+By-%3ECustom
 msgid "Custom"
 msgstr ""
-
-#: Toggle+Theatre+Mode
-msgid "Toggle Theatre Mode"
-msgstr "Commuta el mode teatre"
 
 #: Change+Format-%3EChange+Media+Formats
 msgid "Change Media Formats"
@@ -3397,7 +3349,6 @@ msgid "View {replyCount} replies"
 msgstr ""
 
 #: Comments-%3EView
-msgctxt "Comments->View"
 msgid "View"
 msgstr ""
 
@@ -3630,16 +3581,8 @@ msgid ""
 "country unavailability."
 msgstr ""
 
-#: Subscriptions+have+not+yet+been+implemented
-msgid "Subscriptions have not yet been implemented"
-msgstr ""
-
 #: Unknown+YouTube+url+type,+cannot+be+opened+in+app
 msgid "Unknown YouTube url type, cannot be opened in app"
-msgstr ""
-
-#: Hashtags+have+not+yet+been+implemented,+try+again+later
-msgid "Hashtags have not yet been implemented, try again later"
 msgstr ""
 
 #: Loop+is+now+disabled
