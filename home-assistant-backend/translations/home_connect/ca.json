@@ -86,6 +86,14 @@
             "coffee_counter": {
                 "name": "Caf\u00e8s"
             },
+            "door": {
+                "name": "Porta",
+                "state": {
+                    "closed": "Tancat/ada",
+                    "locked": "Bloquejat",
+                    "open": "Obert/a"
+                }
+            },
             "drip_tray_full": {
                 "state": {
                     "confirmed": "Confirmat",
@@ -122,6 +130,18 @@
                     "off": "OFF"
                 }
             },
+            "rinse_aid_nearly_empty": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "salt_nearly_empty": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
             "water_tank_empty": {
                 "name": "Dip\u00f2sit d'aigua buit",
                 "state": {
@@ -143,6 +163,11 @@
             },
             "vacation_mode": {
                 "name": "Mode vacances"
+            }
+        },
+        "time": {
+            "alarm_clock": {
+                "name": "Despertador"
             }
         }
     },

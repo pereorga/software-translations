@@ -1,5 +1,8 @@
 {
     "config": {
+        "error": {
+            "api_error": "S'ha produ\u00eft un error a l'API de pyemoncms: {details}"
+        },
         "step": {
             "user": {
                 "data": {
@@ -10,6 +13,11 @@
                     "api_key": "Clau API de 32 bits"
                 }
             }
+        }
+    },
+    "options": {
+        "error": {
+            "api_error": "S'ha produ\u00eft un error a l'API de pyemoncms: {details}"
         }
     }
 }

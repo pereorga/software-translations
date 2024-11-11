@@ -8,7 +8,7 @@
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "machine_not_found": "The configured machine was not found in your account. Did you login to the correct account?",
+            "machine_not_found": "Discovered machine not found in given account",
             "no_machines": "No machines found in account",
             "unknown": "Unexpected error"
         },
@@ -118,6 +118,9 @@
             "preinfusion_off_key": {
                 "name": "Preinfusion time Key {key}"
             },
+            "smart_standby_time": {
+                "name": "Smart standby time"
+            },
             "steam_temp": {
                 "name": "Steam target temperature"
             },
@@ -132,6 +135,13 @@
                     "disabled": "Disabled",
                     "prebrew": "Prebrew",
                     "preinfusion": "Preinfusion"
+                }
+            },
+            "smart_standby_mode": {
+                "name": "Smart standby mode",
+                "state": {
+                    "last_brewing": "Last brewing",
+                    "power_on": "Power on"
                 }
             },
             "steam_temp_select": {
@@ -163,6 +173,9 @@
         "switch": {
             "auto_on_off": {
                 "name": "Auto on/off ({id})"
+            },
+            "smart_standby_enabled": {
+                "name": "Smart standby enabled"
             },
             "steam_boiler": {
                 "name": "Steam boiler"

@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The host name or the IP address of the Palazzetti CBox"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "palazzetti": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "high": "High",
+                            "silent": "Silent"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Could not connect to the device."
+        },
+        "invalid_fan_mode": {
+            "message": "Fan mode {value} is invalid."
+        },
+        "invalid_target_temperatures": {
+            "message": "Target temperature {value} is invalid."
+        },
+        "on_off_not_available": {
+            "message": "The appliance cannot be turned on or off."
+        }
+    }
+}

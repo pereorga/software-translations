@@ -23,6 +23,14 @@
             }
         }
     },
+    "exceptions": {
+        "command_error": {
+            "message": "Error executing {function_name} on entity {entity_id}"
+        },
+        "entry_cannot_connect": {
+            "message": "Error while connecting to {host}:{port}"
+        }
+    },
     "issues": {
         "deprecated_yaml_import_issue_cannot_connect": {
             "description": "Configuring {integration_title} using YAML is being removed but there was a connection error importing your YAML configuration.\n\nPlease make sure {integration_title} is turned on, and restart Home Assistant to try importing again. Otherwise, please remove the YAML from your configuration and add the integration manually.",

@@ -88,6 +88,14 @@
             "description": "Configuring LCN using YAML is being removed but there was an error importing your YAML configuration.\n\nEnsure the connection (IP and port) to the LCN bus coupler is correct.\n\nConsider removing the LCN YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",
             "title": "Unable to connect to PCHK."
         },
+        "deprecated_keylock_sensor": {
+            "description": "Your LCN key lock binary sensor entity `{entity}` is beeing used in automations or scripts. A key lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "title": "Deprecated LCN key lock binary sensor"
+        },
+        "deprecated_regulatorlock_sensor": {
+            "description": "Your LCN regulator lock binary sensor entity `{entity}` is beeing used in automations or scripts. A regulator lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "title": "Deprecated LCN regulator lock binary sensor"
+        },
         "license_error": {
             "description": "Configuring LCN using YAML is being removed but there was an error importing your YAML configuration.\n\nEnsure sufficient PCHK licenses are registered and restart Home Assistant.\n\nConsider removing the LCN YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",
             "title": "Maximum number of connections was reached."

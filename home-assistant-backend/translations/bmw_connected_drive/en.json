@@ -8,7 +8,8 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication"
+            "invalid_auth": "Invalid authentication",
+            "missing_captcha": "Captcha validation missing"
         },
         "step": {
             "user": {
@@ -185,6 +186,9 @@
     "exceptions": {
         "invalid_poi": {
             "message": "Invalid data for point of interest: {poi_exception}"
+        },
+        "missing_captcha": {
+            "message": "Login requires captcha validation"
         }
     },
     "options": {

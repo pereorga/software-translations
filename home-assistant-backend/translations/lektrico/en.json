@@ -22,6 +22,38 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "contactor_failure": {
+                "name": "Relay contacts welded"
+            },
+            "cp_diode_failure": {
+                "name": "Ev diode short"
+            },
+            "critical_temp": {
+                "name": "Overheating"
+            },
+            "meter_fault": {
+                "name": "Metering error"
+            },
+            "overcurrent": {
+                "name": "Overcurrent"
+            },
+            "overtemp": {
+                "name": "Thermal throttling"
+            },
+            "overvoltage": {
+                "name": "Overvoltage"
+            },
+            "rcd_error": {
+                "name": "Rcd error"
+            },
+            "state_e_activated": {
+                "name": "Ev error"
+            },
+            "undervoltage": {
+                "name": "Undervoltage"
+            }
+        },
         "button": {
             "charge_start": {
                 "name": "Charge start"

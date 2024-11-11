@@ -20,6 +20,44 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "alarm": {
+                "name": "Alarm"
+            },
+            "boost_state": {
+                "name": "Boost state"
+            },
+            "warning": {
+                "name": "Warning"
+            }
+        },
+        "sensor": {
+            "extract_air_temperature": {
+                "name": "Extract air temperature"
+            },
+            "extract_fan_speed": {
+                "name": "Extract fan speed"
+            },
+            "filter_days_left": {
+                "name": "Filter days left"
+            },
+            "outdoor_air_temperature": {
+                "name": "Outdoor air temperature"
+            },
+            "supply_air_temperature": {
+                "name": "Supply air temperature"
+            },
+            "supply_fan_speed": {
+                "name": "Supply fan speed"
+            }
+        },
+        "switch": {
+            "boost": {
+                "name": "Boost"
+            }
+        }
+    },
     "issues": {
         "deprecated_yaml_import_issue_auth_error": {
             "description": "Configuring {integration_title} using YAML is being removed but there was an authentication error while importing your existing configuration.\nSetup will not proceed.\n\nVerify that your {integration_title} is operating correctly and restart Home Assistant to attempt the import again.\n\nAlternatively, you may remove the `{domain}` configuration from your configuration.yaml entirely, restart Home Assistant, and add the {integration_title} integration manually.",

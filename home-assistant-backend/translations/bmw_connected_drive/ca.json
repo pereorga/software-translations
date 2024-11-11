@@ -7,7 +7,8 @@
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "missing_captcha": "Falta la validaci\u00f3 del captcha"
         },
         "step": {
             "user": {
@@ -150,6 +151,11 @@
             "climate": {
                 "name": "Climatitzaci\u00f3"
             }
+        }
+    },
+    "exceptions": {
+        "missing_captcha": {
+            "message": "L'inici de sessi\u00f3 necessita la validaci\u00f3 de captcha"
         }
     },
     "options": {

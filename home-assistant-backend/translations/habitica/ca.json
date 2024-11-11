@@ -35,6 +35,18 @@
         }
     },
     "entity": {
+        "calendar": {
+            "dailys": {
+                "state_attributes": {
+                    "yesterdaily": {
+                        "state": {
+                            "false": "No",
+                            "true": "S\u00ed"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "rewards": {
                 "name": "Recompenses"
@@ -44,9 +56,6 @@
     "exceptions": {
         "delete_todos_failed": {
             "message": "No s'ha pogut eliminar l'element de la llista de tasques pendents d'Habica, torna-ho a provar"
-        },
-        "setup_rate_limit_exception": {
-            "message": "Freq\u00fc\u00e8ncia limitada, torna-ho a provar m\u00e9s tard"
         }
     },
     "issues": {

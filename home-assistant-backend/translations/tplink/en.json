@@ -209,6 +209,9 @@
             },
             "voltage_child": {
                 "name": "{device_name} voltage"
+            },
+            "water_alert_timestamp": {
+                "name": "Last water leak alert"
             }
         },
         "switch": {
@@ -218,11 +221,17 @@
             "auto_update_enabled": {
                 "name": "Auto update enabled"
             },
+            "child_lock": {
+                "name": "Child lock"
+            },
             "fan_sleep_mode": {
                 "name": "Fan sleep mode"
             },
             "led": {
                 "name": "LED"
+            },
+            "pir_enabled": {
+                "name": "Motion sensor"
             },
             "smooth_transitions": {
                 "name": "Smooth transitions"

@@ -12,5 +12,13 @@
                 }
             }
         }
+    },
+    "exceptions": {
+        "command_error": {
+            "message": "Error en executar {function_name} a l'entitat {entity_id}"
+        },
+        "entry_cannot_connect": {
+            "message": "Error en connectar-se a {host}:{port}"
+        }
     }
 }

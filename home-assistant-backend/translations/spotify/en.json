@@ -28,8 +28,42 @@
     },
     "entity": {
         "sensor": {
+            "acousticness": {
+                "name": "Song acousticness"
+            },
+            "danceability": {
+                "name": "Song danceability"
+            },
+            "energy": {
+                "name": "Song energy"
+            },
+            "instrumentalness": {
+                "name": "Song instrumentalness"
+            },
+            "key": {
+                "name": "Song key"
+            },
+            "liveness": {
+                "name": "Song liveness"
+            },
+            "mode": {
+                "name": "Song mode",
+                "state": {
+                    "major": "Major",
+                    "minor": "Minor"
+                }
+            },
             "song_tempo": {
                 "name": "Song tempo"
+            },
+            "speechiness": {
+                "name": "Song speechiness"
+            },
+            "time_signature": {
+                "name": "Song time signature"
+            },
+            "valence": {
+                "name": "Song valence"
             }
         }
     },

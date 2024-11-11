@@ -2,9 +2,13 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "cannot_connect": "Ha fallat la connexi\u00f3"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
         },
-        "flow_title": "{name}",
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
         "step": {
             "user": {
                 "data": {
@@ -14,14 +18,9 @@
         }
     },
     "entity": {
-        "select": {
-            "audio_output": {
-                "name": "Sortida d'\u00e0udio"
-            },
-            "display_brightness": {
-                "state": {
-                    "off": "OFF"
-                }
+        "binary_sensor": {
+            "alarm": {
+                "name": "Alarma"
             }
         }
     }
