@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 08:04+0000\n"
+"POT-Creation-Date: 2024-11-11 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -882,6 +882,8 @@ msgid "Required fields"
 msgstr "Camps requerits"
 
 #: invalidUserMessage
+msgctxt "invalidUserMessage"
+"invalidUserMessage"
 msgid "Invalid username or password."
 msgstr "El nom d''usuari o contrasenya no són vàlids."
 
@@ -906,12 +908,28 @@ msgstr "L''adreça de correu electrònic no és vàlida."
 msgid "Account is disabled, contact your administrator."
 msgstr "El compte està inhabilitat, contacteu amb l''administrador."
 
+#. # These properties are deliberately the same as "invalidUsernameMessage", so by default, it is not possible to recognize the reason of failed authentication is temporarily disabled account
 #: accountTemporarilyDisabledMessage
-msgid ""
-"Account is temporarily disabled; contact your administrator or retry later."
-msgstr ""
-"El compte està temporalment inhabilitat, contacteu amb l''administrador o "
-"intenteu-ho de nou més tard."
+msgctxt "accountTemporarilyDisabledMessage"
+msgid "Invalid username or password."
+msgstr "El nom d''usuari o contrasenya no són vàlids."
+
+#: accountPermanentlyDisabledMessage
+msgctxt "accountPermanentlyDisabledMessage"
+msgid "Invalid username or password."
+msgstr "El nom d''usuari o contrasenya no són vàlids."
+
+#. # These properties are deliberately the same as "invalidTotpMessage", so by default, it is not possible to recognize the reason of failed authentication is temporarily disabled account
+#: accountTemporarilyDisabledMessageTotp
+msgctxt "accountTemporarilyDisabledMessageTotp"
+"accountTemporarilyDisabledMessageTotp"
+msgid "Invalid authenticator code."
+msgstr "El codi d''autenticació no és vàlid."
+
+#: accountPermanentlyDisabledMessageTotp
+msgctxt "accountPermanentlyDisabledMessageTotp"
+msgid "Invalid authenticator code."
+msgstr "El codi d''autenticació no és vàlid."
 
 #: expiredCodeMessage
 msgid "Login timeout. Please sign in again."
@@ -1074,6 +1092,7 @@ msgid "Password confirmation doesn''t match."
 msgstr "La confirmació de contrasenya no coincideix."
 
 #: invalidTotpMessage
+msgctxt "invalidTotpMessage"
 msgid "Invalid authenticator code."
 msgstr "El codi d''autenticació no és vàlid."
 
