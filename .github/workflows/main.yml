@@ -22,6 +22,7 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "Automated GitHub Action"
+          git config --global advice.addIgnoredFile false
 
       - name: Run generate.sh in each directory and commit changes
         run: |
@@ -30,7 +31,7 @@ jobs:
             if [ -f "${d}generate.sh" ]; then
               echo "Running generate.sh in $d"
               if "${d}generate.sh"; then
-                git add --ignore-errors "$d"/*
+                git add --ignore-errors "$d"
                 if git diff --cached --unified=0 "$d" | grep "^-\|^\+" | grep -v "^---" | grep -v "^+++" | grep -v "POT-Creation-Date: " | grep -v "X-Generator: "; then
                   git commit -m "$d: update via GitHub Actions"
                   git push origin HEAD
