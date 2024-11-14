@@ -30,12 +30,13 @@ jobs:
             if [ -f "${d}generate.sh" ]; then
               echo "Running generate.sh in $d"
               if "${d}generate.sh"; then
-                if git diff --unified=0 "$d" | grep "^-\|^\+" | grep -v "^---" | grep -v "^+++" | grep -v "POT-Creation-Date: " | grep -v "X-Generator: "; then
-                  git add "$d"
-                  git commit -m "Update files in $d via GitHub Actions"
+                git add "$d"/*
+                if git diff --cached --unified=0 "$d" | grep "^-\|^\+" | grep -v "^---" | grep -v "^+++" | grep -v "POT-Creation-Date: " | grep -v "X-Generator: "; then
+                  git commit -m "$d: update via GitHub Actions"
                   git push origin HEAD
                 else
                   echo "No significant changes in $d"
+                  git restore --staged "$d"
                 fi
               else
                 if [[ -f "${d}.allowed_to_fail" ]]; then
@@ -46,7 +47,7 @@ jobs:
                 fi
               fi
               git checkout "$d"
-              git clean -f
+              git clean -fd
             fi
           done
 
