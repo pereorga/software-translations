@@ -16,7 +16,10 @@
                     "name": "Nom",
                     "target_sensor": "Sensor de temperatura"
                 },
-                "title": "Afegeix un ajudant de term\u00f2stat gen\u00e8ric"
+                "data_description": {
+                    "min_cycle_duration": "Configura una quantitat m\u00ednima de temps que l'interruptor especificat ha d'estar en un estat concret abans d'activar-se o desactivar-se.",
+                    "target_sensor": "Sensor de temperatura que mostra la temperatura actual."
+                }
             }
         }
     },
@@ -25,6 +28,10 @@
             "init": {
                 "data": {
                     "target_sensor": "Sensor de temperatura"
+                },
+                "data_description": {
+                    "min_cycle_duration": "Configura una quantitat m\u00ednima de temps que l'interruptor especificat ha d'estar en un estat concret abans d'activar-se o desactivar-se.",
+                    "target_sensor": "Sensor de temperatura que mostra la temperatura actual."
                 }
             },
             "presets": {

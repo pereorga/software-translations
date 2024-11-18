@@ -48,8 +48,20 @@
             }
         },
         "sensor": {
+            "constitution": {
+                "name": "Constituci\u00f3"
+            },
+            "intelligence": {
+                "name": "Intel\u00b7lig\u00e8ncia"
+            },
+            "perception": {
+                "name": "Percepci\u00f3"
+            },
             "rewards": {
                 "name": "Recompenses"
+            },
+            "strength": {
+                "name": "For\u00e7a"
             }
         }
     },
@@ -77,6 +89,14 @@
                 }
             },
             "name": "Nom de l'API"
+        },
+        "score_reward": {
+            "fields": {
+                "task": {
+                    "description": "Nom (o identificador de tasca) de la recompensa personalitzada.",
+                    "name": "Nom de la recompensa"
+                }
+            }
         }
     }
 }

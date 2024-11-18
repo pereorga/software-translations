@@ -17,6 +17,20 @@
         }
     },
     "entity": {
+        "fan": {
+            "vesync": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "pet": "Pet",
+                            "sleep": "Sleep",
+                            "turbo": "Turbo"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "air_quality": {
                 "name": "Air quality"

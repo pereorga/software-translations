@@ -17,6 +17,20 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "meter_fault": {
+                "name": "Error de mesura"
+            },
+            "overcurrent": {
+                "name": "Sobreintensitat"
+            },
+            "overvoltage": {
+                "name": "Sobretensi\u00f3"
+            },
+            "undervoltage": {
+                "name": "Voltatge baix"
+            }
+        },
         "select": {
             "load_balancing_mode": {
                 "name": "Mode balanceig de c\u00e0rrega",

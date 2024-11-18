@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Aquest servidor ja est\u00e0 configurat"
+        },
         "error": {
             "api_error": "S'ha produ\u00eft un error a l'API de pyemoncms: {details}"
         },
@@ -13,6 +16,11 @@
                     "api_key": "Clau API de 32 bits"
                 }
             }
+        }
+    },
+    "issues": {
+        "migrate_database": {
+            "title": "Actualitza la teva versi\u00f3 d'Emoncms"
         }
     },
     "options": {
