@@ -95,11 +95,11 @@
             "description": "Get events on a calendar within a time range.",
             "fields": {
                 "duration": {
-                    "description": "Returns active events from start_date_time until the specified duration.",
+                    "description": "Returns active events from Start time for the specified duration.",
                     "name": "Duration"
                 },
                 "end_date_time": {
-                    "description": "Returns active events before this time (exclusive). Cannot be used with 'duration'.",
+                    "description": "Returns active events before this time (exclusive). Cannot be used with Duration.",
                     "name": "End time"
                 },
                 "start_date_time": {
@@ -113,11 +113,11 @@
             "description": "Lists events on a calendar within a time range.",
             "fields": {
                 "duration": {
-                    "description": "Returns active events from start_date_time until the specified duration.",
+                    "description": "Returns active events from Start time for the specified duration.",
                     "name": "Duration"
                 },
                 "end_date_time": {
-                    "description": "Returns active events before this time (exclusive). Cannot be used with 'duration'.",
+                    "description": "Returns active events before this time (exclusive). Cannot be used with Duration.",
                     "name": "End time"
                 },
                 "start_date_time": {

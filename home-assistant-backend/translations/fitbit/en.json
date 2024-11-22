@@ -31,13 +31,87 @@
             }
         }
     },
+    "device": {
+        "tracker": {
+            "name": "{display_name} tracker"
+        }
+    },
     "entity": {
         "sensor": {
+            "activity_calories": {
+                "name": "Activity calories"
+            },
+            "awakenings_count": {
+                "name": "Awakenings count"
+            },
             "battery": {
                 "name": "Battery"
             },
             "battery_level": {
                 "name": "Battery level"
+            },
+            "bmi": {
+                "name": "BMI"
+            },
+            "body_fat": {
+                "name": "Body fat"
+            },
+            "calories": {
+                "name": "Calories"
+            },
+            "calories_bmr": {
+                "name": "Calories BMR"
+            },
+            "calories_in": {
+                "name": "Calories in"
+            },
+            "elevation": {
+                "name": "Elevation"
+            },
+            "floors": {
+                "name": "Floors"
+            },
+            "minutes_after_wakeup": {
+                "name": "Minutes after wakeup"
+            },
+            "minutes_fairly_active": {
+                "name": "Minutes fairly active"
+            },
+            "minutes_lightly_active": {
+                "name": "Minutes lightly active"
+            },
+            "minutes_sedentary": {
+                "name": "Minutes sedentary"
+            },
+            "minutes_very_active": {
+                "name": "Minutes very active"
+            },
+            "resting_heart_rate": {
+                "name": "Resting heart rate"
+            },
+            "sleep_efficiency": {
+                "name": "Sleep efficiency"
+            },
+            "sleep_minutes_asleep": {
+                "name": "Sleep minutes asleep"
+            },
+            "sleep_minutes_awake": {
+                "name": "Sleep minutes awake"
+            },
+            "sleep_minutes_to_fall_asleep": {
+                "name": "Sleep minutes to fall asleep"
+            },
+            "sleep_start_time": {
+                "name": "Sleep start time"
+            },
+            "sleep_time_in_bed": {
+                "name": "Sleep time in bed"
+            },
+            "steps": {
+                "name": "Steps"
+            },
+            "water": {
+                "name": "Water"
             }
         }
     },

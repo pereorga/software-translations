@@ -1,6 +1,7 @@
 {
     "config": {
         "abort": {
+            "invalid_zeroconf_data": "The coordinator has invalid zeroconf service info and cannot be identified by ZHA",
             "not_zha_device": "This device is not a zha device",
             "single_instance_allowed": "Already configured. Only a single configuration possible.",
             "usb_probe_failed": "Failed to probe the usb device",
@@ -360,8 +361,14 @@
             "number": {
                 "name": "Number"
             },
+            "off_led_intensity": {
+                "name": "Off LED intensity"
+            },
             "off_transition_time": {
                 "name": "Off transition time"
+            },
+            "on_led_intensity": {
+                "name": "On LED intensity"
             },
             "on_level": {
                 "name": "On level"
@@ -478,6 +485,12 @@
             },
             "motion_sensitivity": {
                 "name": "Motion sensitivity"
+            },
+            "off_led_color": {
+                "name": "Off LED color"
+            },
+            "on_led_color": {
+                "name": "On LED color"
             },
             "output_mode": {
                 "name": "Output mode"
@@ -743,6 +756,9 @@
             },
             "double_tap_up_enabled": {
                 "name": "Double tap up enabled"
+            },
+            "double_up_full": {
+                "name": "Double tap on - full"
             },
             "external_window_sensor": {
                 "name": "External window sensor"
@@ -1073,7 +1089,7 @@
             "name": "Permit"
         },
         "reconfigure_device": {
-            "description": "Reconfigures a ZHA device (heal device). Use this if you are having issues with the device. If the device in question is a battery-powered device, ensure it is awake and accepting commands when you use this service.",
+            "description": "Reconfigures a ZHA device (heal device). Use this if you are having issues with the device. If the device in question is a battery-powered device, ensure it is awake and accepting commands when you use this action.",
             "fields": {
                 "ieee": {
                     "description": "IEEE address of the device to reconfigure.",

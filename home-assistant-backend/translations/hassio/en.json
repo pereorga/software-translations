@@ -258,7 +258,7 @@
             "description": "Restarts an add-on.",
             "fields": {
                 "addon": {
-                    "description": "The add-on slug.",
+                    "description": "The add-on to restart.",
                     "name": "Add-on"
                 }
             },
@@ -268,17 +268,17 @@
             "description": "Starts an add-on.",
             "fields": {
                 "addon": {
-                    "description": "The add-on slug.",
+                    "description": "The add-on to start.",
                     "name": "Add-on"
                 }
             },
             "name": "Start add-on"
         },
         "addon_stdin": {
-            "description": "Writes data to add-on stdin.",
+            "description": "Writes data to the add-on's standard input.",
             "fields": {
                 "addon": {
-                    "description": "The add-on slug.",
+                    "description": "The add-on to write to.",
                     "name": "Add-on"
                 }
             },
@@ -288,7 +288,7 @@
             "description": "Stops an add-on.",
             "fields": {
                 "addon": {
-                    "description": "The add-on slug.",
+                    "description": "The add-on to stop.",
                     "name": "Add-on"
                 }
             },
@@ -298,7 +298,7 @@
             "description": "Updates an add-on. This action should be used with caution since add-on updates can contain breaking changes. It is highly recommended that you review release notes/change logs before updating an add-on.",
             "fields": {
                 "addon": {
-                    "description": "The add-on slug.",
+                    "description": "The add-on to update.",
                     "name": "Add-on"
                 }
             },
