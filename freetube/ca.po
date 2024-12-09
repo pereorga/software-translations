@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-02 08:03+0000\n"
+"POT-Creation-Date: 2024-12-09 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,10 @@ msgstr "Enrere"
 #: Forward
 msgid "Forward"
 msgstr "Endavant"
+
+#: Right-click+or+hold+to+see+history
+msgid "Right-click or hold to see history"
+msgstr ""
 
 #: Open+New+Window
 msgid "Open New Window"
@@ -940,6 +944,10 @@ msgstr "Torna al motor per defecte en cas d'error"
 msgid "Enable Search Suggestions"
 msgstr "Habilitar els suggeriments de cerca"
 
+#: Settings-%3EGeneral+Settings-%3EOpen+Deep+Links+In+New+Window
+msgid "Open URLs Passed to FreeTube in a New Window"
+msgstr ""
+
 #: Settings-%3EGeneral+Settings-%3EAuto+Load+Next+Page-%3ELabel
 msgid "Auto Load Next Page"
 msgstr ""
@@ -1427,8 +1435,12 @@ msgid "Enter Fullscreen on Display Rotate"
 msgstr ""
 
 #: Settings-%3EPlayer+Settings-%3ENext+Video+Interval
-msgid "Next Video Interval"
+msgid "Autoplay Countdown Timer"
 msgstr "Interval de vídeo següent"
+
+#: Settings-%3EPlayer+Settings-%3EAutoplay+Interruption+Timer
+msgid "Autoplay Interruption Timer"
+msgstr ""
 
 #: Settings-%3EPlayer+Settings-%3EFast-Forward+/+Rewind+Interval
 msgid "Fast-Forward / Rewind Interval"
@@ -1664,8 +1676,12 @@ msgstr "Recupera els canals de continguts des de l'RSS"
 msgid "Fetch Feed Automatically"
 msgstr ""
 
-#: Settings-%3ESubscription+Settings-%3EOnly+Show+Latest+Video+for+Each+Channel
-msgid "Only Show Latest Video for Each Channel"
+#: Settings-%3ESubscription+Settings-%3ELimit+the+number+of+videos+displayed+for+each+channel
+msgid "Limit the number of videos displayed for each channel"
+msgstr ""
+
+#: Settings-%3ESubscription+Settings-%3ETo
+msgid "To"
 msgstr ""
 
 #: Settings-%3ESubscription+Settings-%3EConfirm+Before+Unsubscribing
@@ -1803,23 +1819,27 @@ msgid "Hide Featured Channels"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Playlists
-msgid "Hide Channel Playlists"
+msgid "Hide Channel \"Playlists\" Tab"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Community
-msgid "Hide Channel Community"
+msgid "Hide Channel \"Community\" Tab"
+msgstr ""
+
+#: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Home
+msgid "Hide Channel \"Home\" Tab"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Shorts
-msgid "Hide Channel Shorts"
+msgid "Hide Channel \"Shorts\" Tab"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Podcasts
-msgid "Hide Channel Podcasts"
+msgid "Hide Channel \"Podcasts\" Tab"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Releases
-msgid "Hide Channel Releases"
+msgid "Hide Channel \"Releases\" Tab"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Videos+and+Playlists+Containing+Text
@@ -2583,6 +2603,14 @@ msgctxt "Channel->Playlists->Sort Types->Oldest"
 msgid "Oldest"
 msgstr "Més Vell"
 
+#: Channel-%3EHome-%3EHome
+msgid "Home"
+msgstr ""
+
+#: Channel-%3EHome-%3EView+Playlist
+msgid "View Playlist"
+msgstr ""
+
 #: Channel-%3EPodcasts-%3EPodcasts
 msgid "Podcasts"
 msgstr ""
@@ -2899,6 +2927,14 @@ msgstr "Retransmès en directe el"
 #: Video-%3EStarted+streaming+on
 msgid "Started streaming on"
 msgstr "Retransmissió iniciada el"
+
+#: Video-%3EDeArrow-%3EShow+Original+Details
+msgid "Show Original Details"
+msgstr ""
+
+#: Video-%3EDeArrow-%3EShow+Modified+Details
+msgid "Show Modified Details"
+msgstr ""
 
 #: Video-%3ESponsor+Block+category-%3Esponsor
 msgid "Sponsor"
@@ -3362,6 +3398,14 @@ msgstr ""
 msgid "Up Next"
 msgstr ""
 
+#: Description-%3EExpand+Description
+msgid "...more"
+msgstr ""
+
+#: Description-%3ECollapse+Description
+msgid "Show less"
+msgstr ""
+
 #: Tooltips-%3EGeneral+Settings-%3EPreferred+API+Backend
 msgid ""
 "Choose the backend that FreeTube uses to obtain data. The local API is a "
@@ -3396,6 +3440,12 @@ msgid ""
 "Choose the default behavior when a link, which cannot be opened in FreeTube, "
 "is clicked.\n"
 "By default FreeTube will open the clicked link in your default browser.\n"
+msgstr ""
+
+#: Tooltips-%3EGeneral+Settings-%3EOpen+Deep+Links+In+New+Window
+msgid ""
+"URLs passed to FreeTube, such as by redirect browser extensions or command "
+"line arguments, are opened in a new window."
 msgstr ""
 
 #: Tooltips-%3EPlayer+Settings-%3EProxy+Videos+Through+Invidious
@@ -3453,8 +3503,8 @@ msgstr ""
 
 #: Tooltips-%3EExternal+Player+Settings-%3ECustom+External+Player+Arguments
 msgid ""
-"Any custom command line arguments, separated by semicolons (';'), you want "
-"to be passed to the external player."
+"Any custom command line arguments you want to be passed on to the external "
+"player."
 msgstr ""
 
 #: Tooltips-%3EExternal+Player+Settings-%3EDefaultCustomArgumentsTemplate
@@ -3582,6 +3632,12 @@ msgstr ""
 msgid "Canceled next video autoplay"
 msgstr ""
 
+#: Autoplay+Interruption+Timer
+msgid ""
+"Autoplay canceled due to {autoplayInterruptionIntervalHours} hours of "
+"inactivity"
+msgstr ""
+
 #: Default+Invidious+instance+has+been+set+to+%7Binstance%7D
 msgid "Default Invidious instance has been set to {instance}"
 msgstr ""
@@ -3695,4 +3751,36 @@ msgstr ""
 
 #: Display+Label
 msgid "{label}: {value}"
+msgstr ""
+
+#: KeyboardShortcutTemplate
+msgid "{label} ({shortcut})"
+msgstr ""
+
+#: shortcutJoinOperator
+msgid "+"
+msgstr ""
+
+#: Keys-%3Ealt
+msgid "Alt"
+msgstr ""
+
+#: Keys-%3Ectrl
+msgid "Ctrl"
+msgstr ""
+
+#: Keys-%3Earrowdown
+msgid "Down Arrow"
+msgstr ""
+
+#: Keys-%3Earrowleft
+msgid "Left Arrow"
+msgstr ""
+
+#: Keys-%3Earrowright
+msgid "Right Arrow"
+msgstr ""
+
+#: Keys-%3Earrowup
+msgid "Up Arrow"
 msgstr ""
