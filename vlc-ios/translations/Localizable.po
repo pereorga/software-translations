@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-21 08:04+0000\n"
+"POT-Creation-Date: 2024-12-16 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.6.0\n"
+"X-Generator: Translate Toolkit 3.12.2\n"
 
 #: STORE_DESCRIPTION
 msgid ""
@@ -165,10 +165,15 @@ msgstr "TV connectada"
 msgid "This video is playing on the TV"
 msgstr "Aquest vídeo s'està reproduint a la TV"
 
-#. "PLAYING_EXTERNALLY_ADDITION" = "\n Now playing on:"; /* \n should stay in every translation */
-#: VFILTER_HUE
-msgid "Hue"
-msgstr "To de color"
+#: PLAYING_EXTERNALLY_ADDITION
+msgid ""
+"\n"
+" Now playing on:\"; /* \n"
+" should stay in every translation */\"VFILTER_HUE\" = \"Hue"
+msgstr ""
+"\n"
+"Reproduint:\"; /* \n"
+" should stay in every translation */\"VFILTER_HUE\" = \"To de color"
 
 #: VFILTER_BRIGHTNESS
 msgid "Brightness"
@@ -651,7 +656,7 @@ msgstr ""
 "Cancel·lar per a introduir la clau d'accés"
 
 #.
-#. //PAPasscode Strings that we need to localize for them
+#. PAPasscode Strings that we need to localize for them
 #: Enter+Passcode
 msgid "Enter Passcode"
 msgstr "Introduïu la clau d'accés"
@@ -671,6 +676,22 @@ msgstr "Repeteix la clau d'accés"
 #: Set+Passcode
 msgid "Set Passcode"
 msgstr "Estableix la nova clau d'accés"
+
+#: PASSCODE_LENGTH
+msgid "Passcode Length"
+msgstr ""
+
+#: PASSCODE_LENGTH_LONG
+msgid "Select the preferred length of your new passcode"
+msgstr ""
+
+#: PASSCODE_4
+msgid "4 digits"
+msgstr ""
+
+#: PASSCODE_6
+msgid "6 digits"
+msgstr ""
 
 #: Settings
 msgid ""
@@ -1013,11 +1034,17 @@ msgctxt "DURATION"
 msgid "Duration"
 msgstr "Durada"
 
-#. "ROTATE_BUTTON" = "Rotate"; /* Accessibility label for rotate button on the player */
-#. "ROTATE_BUTTON_HINT" = "Toggles the video player between landscape and portrait mode."; /* Accessibility hint for rotate button on the player */
-#: AUDIO_INFO_VC_TITLE
-msgid "Audio Info"
-msgstr "Informació Àudio"
+#: ROTATE_BUTTON
+msgid ""
+"Rotate\"; /* Accessibility label for rotate button on the player */"
+"\"ROTATE_BUTTON_HINT\" = \"Toggles the video player between landscape and "
+"portrait mode.\"; /* Accessibility hint for rotate button on the player */"
+"\"AUDIO_INFO_VC_TITLE\" = \"Audio Info"
+msgstr ""
+"Gira\"; /* Accessibility label for rotate button on the player */"
+"\"ROTATE_BUTTON_HINT\" = \"Canvia el reproductor de vídeo entre els modes "
+"horitzontal i vertical.\"; /* Accessibility hint for rotate button on the "
+"player */\"AUDIO_INFO_VC_TITLE\" = \"Informació Àudio"
 
 #: ENTER_URL
 msgid "Enter URL to play"
@@ -1109,7 +1136,7 @@ msgstr ""
 "recentment."
 
 #.
-#. // MARK: - Local Network Service Names
+#. MARK: - Local Network Service Names
 #: UPNP_LONG
 msgid "Universal Plug'n'Play (UPnP)"
 msgstr "Plug'n'Play Universal (UPnP)"
@@ -1123,11 +1150,14 @@ msgid "The URL can't be opened"
 msgstr "No es pot obrir l'URL"
 
 #.
-#. // Insert %@ where play-pause-glyph should be placed
-#. "DELETE_ITEM_HINT" = "Press %@ to Delete"; /* Insert %@ where play-pause-glyph should be placed */
-#: DELETE_MESSAGE
-msgid "Confirm the deletion of the selection"
-msgstr "Confirmeu l'eliminació d'aquesta selecció"
+#. Insert %@ where play-pause-glyph should be placed
+#: DELETE_ITEM_HINT
+msgid ""
+"Press %@ to Delete\"; /* Insert %@ where play-pause-glyph should be placed */"
+"\"DELETE_MESSAGE\" = \"Confirm the deletion of the selection"
+msgstr ""
+"Prem %@ per Esborrar\"; /* Insert %@ where play-pause-glyph should be placed "
+"*/\"DELETE_MESSAGE\" = \"Confirmeu l'eliminació d'aquesta selecció"
 
 #: DELETE_MESSAGE_PLAYLIST
 msgid ""
@@ -1145,7 +1175,6 @@ msgstr ""
 "Esteu segur d'eliminar els arxius seleccionats de la llista de reproducció?\n"
 "No s'esborraran del disc."
 
-#.
 #. // MARK: - Drag and Drop
 #: PROTOCOL_NOT_SELECTED
 msgid "Protocol not selected"
@@ -1176,7 +1205,7 @@ msgid "Video"
 msgstr "Vídeo"
 
 #.
-#. // MARK: - MediaViewController Swipable Header
+#. MARK: - MediaViewController Swipable Header
 #: ALBUMS
 msgid "Albums"
 msgstr "Àlbums"
@@ -1225,7 +1254,7 @@ msgid "Name"
 msgstr "Nom"
 
 #.
-#. // MARK: - EDIT
+#. MARK: - EDIT
 #: BUTTON_MENU
 msgid "Menu"
 msgstr "Menú"
@@ -1348,7 +1377,7 @@ msgid "Additional options"
 msgstr "Opcions addicionals"
 
 #.
-#. // MARK: - Sort
+#. MARK: - Sort
 #: BUTTON_SORT
 msgctxt "BUTTON_SORT"
 msgid "Sort"
@@ -1396,7 +1425,7 @@ msgid "Hide track numbers"
 msgstr "Amaga els números de pista"
 
 #.
-#. // MARK: - VLCMediaLibraryKit - Sorting Criteria
+#. MARK: - VLCMediaLibraryKit - Sorting Criteria
 #: ALPHA
 msgid "Alphanumerically"
 msgstr "Alfanumèricament"
@@ -1458,13 +1487,13 @@ msgid "Track ID"
 msgstr "Identificador de la pista"
 
 #.
-#. // MARK: - VLCNetworkLoginTVViewController
+#. MARK: - VLCNetworkLoginTVViewController
 #: NO_SAVING_DATA
 msgid "Nothing found"
 msgstr "No s'ha trobat res"
 
 #.
-#. // MARK: - MediaCollectionViewCell
+#. MARK: - MediaCollectionViewCell
 #: UNKNOWN_ARTIST
 msgid "Unknown Artist"
 msgstr "Artista desconegut"
@@ -1486,7 +1515,7 @@ msgid "items selected"
 msgstr "elements seleccionats"
 
 #.
-#. // MARK: - VideoPlayerControls
+#. MARK: - VideoPlayerControls
 #: SUBTITLE_AND_TRACK_BUTTON
 msgid "Subtitles and audio tracks"
 msgstr "Pistes de subtítols i àudio"
@@ -1643,7 +1672,7 @@ msgid "Subtitles are not yet supported while casting."
 msgstr "Els subtítols encara no estan disponibles en directe. "
 
 #.
-#. // MARK: - MediaMoreOptionsActionSheet
+#. MARK: - MediaMoreOptionsActionSheet
 #: EQUALIZER_CELL_TITLE
 msgid "Equalizer"
 msgstr "Equalitzador"
@@ -1757,7 +1786,7 @@ msgid "Enable the option to lock the user interface"
 msgstr "Habilita l'opció per bloquejar la interfície de l'usuari"
 
 #.
-#. // MARK: - Settings
+#. MARK: - Settings
 #: FORCE_RESCAN_TITLE
 msgid "Force media library rescan"
 msgstr "Forçar el re-escaneig de, la Mediateca"
@@ -1833,7 +1862,7 @@ msgid "Documentation"
 msgstr "Documentació"
 
 #.
-#. // MARK: - Local Network
+#. MARK: - Local Network
 #: SMBV1_WARN_TITLE
 msgid "SMBv1 Connection Warning"
 msgstr "Avís de connexió SMBv1"
@@ -1857,13 +1886,13 @@ msgid "Try SMBv2/v3"
 msgstr "Prova amb SMBv2/v3"
 
 #.
-#. // MARK: - Preview labels
+#. MARK: - Preview labels
 #: ENCODING
 msgid "Encoding"
 msgstr "Codificant"
 
 #.
-#. // MARK: - Media groups
+#. MARK: - Media groups
 #: ADD_TO_MEDIA_GROUP
 msgid "Add to media group"
 msgstr "Afegir a un grup de vídeo"
@@ -1929,7 +1958,7 @@ msgstr ""
 "Trigarà una estona."
 
 #.
-#. // MARK: - Files.app persistence file
+#. MARK: - Files.app persistence file
 #: MEDIALIBRARY_FILES_PLACEHOLDER
 msgid "Place media here to add them"
 msgstr "Porta aquí els mitjans per afegir-los"
@@ -1939,7 +1968,7 @@ msgid "Adding..."
 msgstr "Afegint..."
 
 #.
-#. // MARK: - QueueViewController
+#. MARK: - QueueViewController
 #: PLAY_HINT
 msgctxt "PLAY_HINT"
 msgid "Play"
@@ -1979,7 +2008,7 @@ msgid "Display as"
 msgstr "Mostra com a"
 
 #.
-#. /* New strings */
+#. New strings
 #: BRIGHTNESS_HINT
 msgid "Vertical brightness control"
 msgstr "Control de la brillantor vertical"
@@ -1989,7 +2018,7 @@ msgid "Slide vertically to change the brightness level"
 msgstr "Llisca verticalment per modificar el nivell de brillantor"
 
 #.
-#. /* New strings */
+#. New strings
 #: VOLUME_HINT
 msgid "Vertical volume control"
 msgstr "Control del volum vertical"
@@ -1999,7 +2028,7 @@ msgid "Slide vertically to change the volume level"
 msgstr "Llisca verticalment per modificar el nivell de volum"
 
 #.
-#. // MARK: - AudioMiniPlayer playback controls menu
+#. MARK: - AudioMiniPlayer playback controls menu
 #: MENU_PLAYBACK_CONTROLS
 msgid "Playback controls"
 msgstr "Controls de la reproducció"
@@ -2017,7 +2046,7 @@ msgid "Repeat all"
 msgstr "Repeteix-ho tot"
 
 #.
-#. // MARK: - ActionSheet
+#. MARK: - ActionSheet
 #: ACTIONSHEET_BACKGROUND_LABEL
 msgid "Action sheet background"
 msgstr "Fons del full d'acció"
@@ -2027,7 +2056,7 @@ msgid "Tap to remove the action sheet."
 msgstr "Feu un toc per eliminar el full d'acció."
 
 #.
-#. // MARK: - Donation
+#. MARK: - Donation
 #: DONATION_CUSTOM_AMOUNT
 msgid "Enter Custom Amount"
 msgstr "Introduïu l'import personalitzat"
@@ -2229,7 +2258,7 @@ msgid "We currently cannot accept donations in your country. Enjoy VLC!"
 msgstr "Actualment no podem acceptar donacions al vostre país. Gaudiu del VLC!"
 
 #.
-#. // MARK: - Playback keyboard shortcuts
+#. MARK: - Playback keyboard shortcuts
 #: KEY_JUMP_BACKWARDS
 msgid "Jump backwards"
 msgstr "Salta cap enrere"
@@ -2252,7 +2281,7 @@ msgid "Reset playback speed"
 msgstr "Restaura la velocitat de reproducció"
 
 #.
-#. // MARK: - TitleSelection
+#. MARK: - TitleSelection
 #: TITLESELECTION_BACKGROUND_LABEL
 msgid "Title selection background"
 msgstr "Fons de selecció de títols"
@@ -2262,7 +2291,7 @@ msgid "Tap to remove the view."
 msgstr "Feu un toc per eliminar la vista."
 
 #.
-#. // MARK: - NEW DELETE STRINGS
+#. MARK: - NEW DELETE STRINGS
 #: DELETE_SINGLE_TITLE
 msgid "Delete \"%@\"?"
 msgstr "Voleu suprimir \"%@\"?"
