@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-30 08:05+0000\n"
+"POT-Creation-Date: 2025-01-06 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,6 +79,10 @@ msgstr "%url acabat"
 msgid "Auto-hide interface in full screen mode"
 msgstr "Amaga la interfície automàticament en mode de pantalla completa"
 
+#: Cookie+Manager
+msgid "Delete"
+msgstr "Suprimeix"
+
 #: WebPositive+Window
 msgid ""
 "There was an error retrieving the bookmark folder.\\n"
@@ -88,10 +92,6 @@ msgstr ""
 "Hi ha hagut un error en obtenir la carpeta d'adreces d'interès.\\n"
 "\\n"
 "Error: %error"
-
-#: Cookie+Manager
-msgid "Delete"
-msgstr "Suprimeix"
 
 #: Download+Window
 msgid "(Finish: %date - Over %duration left)"
@@ -257,13 +257,13 @@ msgstr "WebPositive"
 msgid "%s - Search term"
 msgstr "%s - terme de cerca"
 
-#: WebPositive+Window
-msgid "Reload"
-msgstr "Torna a carregar"
-
 #: Cookie+Manager
 msgid "Expiration"
 msgstr "Venciment"
+
+#: WebPositive+Window
+msgid "Reload"
+msgstr "Torna a carregar"
 
 #: WebPositive
 msgid ""
@@ -283,18 +283,18 @@ msgid "Cookie manager"
 msgstr "Gestor de galetes"
 
 #: Authentication+Panel
-msgctxt "Authentication Panel"
-"Authentication Panel"
-msgid "OK"
-msgstr "D'acord"
+msgid "Username:"
+msgstr "Nom d'usuari:"
 
 #: Authentication+Panel
 msgid "Hide password text"
 msgstr "Amaga el text de la contrasenya"
 
 #: Authentication+Panel
-msgid "Username:"
-msgstr "Nom d'usuari:"
+msgctxt "Authentication Panel"
+"Authentication Panel"
+msgid "OK"
+msgstr "D'acord"
 
 #: Cookie+Manager
 msgid "Name"
@@ -369,12 +369,12 @@ msgid "Open search page"
 msgstr "Obre la pàgina de cerca"
 
 #: WebPositive+Window
-msgid "Increase size"
-msgstr "Augmenta'n la mida"
-
-#: WebPositive+Window
 msgid "New tab"
 msgstr "Pestanya nova"
+
+#: WebPositive+Window
+msgid "Increase size"
+msgstr "Augmenta'n la mida"
 
 #: WebPositive+Window
 msgid "Today"
@@ -500,17 +500,21 @@ msgstr "Afegeix aquesta pàgina a les adreces d'interès"
 msgid "Show tabs if only one page is open"
 msgstr "Mostra les pestanyes si només s’obre una pàgina."
 
-#: WebPositive+Window
-msgid "Close tab"
-msgstr "Tanca la pestanya"
-
 #: Download+Window
 msgid "Remove"
 msgstr "Suprimeix"
 
 #: WebPositive+Window
+msgid "Close tab"
+msgstr "Tanca la pestanya"
+
+#: WebPositive+Window
 msgid "About"
 msgstr "Quant a"
+
+#: WebPositive
+msgid "Continue downloads"
+msgstr "Continua les baixades"
 
 #: WebPositive
 msgid ""
@@ -518,10 +522,6 @@ msgid ""
 "WebPositive now?"
 msgstr ""
 "Encara hi ha baixades en curs, realment voleu sortir del WebPositive ara?"
-
-#: WebPositive
-msgid "Continue downloads"
-msgstr "Continua les baixades"
 
 #: Settings+Window
 msgid "Proxy server requires authentication"
@@ -626,12 +626,12 @@ msgid "WebPositive"
 msgstr "WebPositive"
 
 #: WebPositive+Window
-msgid "Zoom text only"
-msgstr "Amplia només el text"
-
-#: WebPositive+Window
 msgid "Save page as…"
 msgstr "Desa la pàgina com a..."
+
+#: WebPositive+Window
+msgid "Zoom text only"
+msgstr "Amplia només el text"
 
 #: WebPositive+Window
 msgid "Page source error"
