@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-30 08:04+0000\n"
+"POT-Creation-Date: 2025-01-06 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,6 +178,10 @@ msgstr "En directe"
 msgid "Community"
 msgstr "Comunitat"
 
+#: Global-%3ESort+By
+msgid "Sort By"
+msgstr "Ordena Per"
+
 #: Global-%3ECounts-%3EVideo+Count
 msgid "1 video | {count} videos"
 msgstr ""
@@ -261,13 +265,6 @@ msgstr ""
 #: Search+Filters-%3ESearch+Filters
 msgid "Search Filters"
 msgstr "Filtres de cerca"
-
-#: Search+Filters-%3ESort+By-%3ESort+By
-msgctxt "Search Filters->Sort By->Sort By"
-"Search Filters->Sort By->Sort By"
-"Search Filters->Sort By->Sort By"
-msgid "Sort By"
-msgstr "Ordena per"
 
 #: Search+Filters-%3ESort+By-%3EMost+Relevant
 msgid "Most Relevant"
@@ -689,11 +686,6 @@ msgstr ""
 
 #: User+Playlists-%3EAre+you+sure+you+want+to+delete+this+playlist%3F+This+cannot+be+undone
 msgid "Are you sure you want to delete this playlist? This cannot be undone."
-msgstr ""
-
-#: User+Playlists-%3ESort+By-%3ESort+By
-msgctxt "User Playlists->Sort By->Sort By"
-msgid "Sort By"
 msgstr ""
 
 #: User+Playlists-%3ESort+By-%3ENameAscending
@@ -2586,11 +2578,6 @@ msgstr "Cerca Canal"
 msgid "Your search results have returned 0 results"
 msgstr "Els resultats de la teva cerca han retornat 0 resultats"
 
-#: Channel-%3ESort+By
-msgctxt "Channel->Sort By"
-msgid "Sort By"
-msgstr "Ordena Per"
-
 #: Channel-%3EThis+channel+does+not+exist
 msgid "This channel does not exist"
 msgstr ""
@@ -2774,6 +2761,13 @@ msgstr ""
 msgid ""
 "Age-restricted videos cannot be watched with FreeTube as they require Google "
 "login and using an age-verified YouTube account."
+msgstr ""
+
+#: Video-%3EDRMProtected
+msgid ""
+"DRM protected videos cannot be played in FreeTube, as they require "
+"proprietary, closed source components. If you want to watch this video "
+"please watch it on the official YouTube website in a DRM enabled web browser."
 msgstr ""
 
 #: Video-%3EMore+Options
@@ -3206,11 +3200,6 @@ msgstr "Visualitza la llista de reproducció sencera"
 msgid "Last Updated On"
 msgstr "Última Actualització"
 
-#: Playlist-%3ESort+By-%3ESort+By
-msgctxt "Playlist->Sort By->Sort By"
-msgid "Sort By"
-msgstr ""
-
 #: Playlist-%3ESort+By-%3EDateAddedNewest
 msgid "Latest added first"
 msgstr ""
@@ -3391,10 +3380,6 @@ msgstr ""
 #: Comments-%3EHide+Comments
 msgctxt "Comments->Hide Comments"
 msgid "Hide Comments"
-msgstr ""
-
-#: Comments-%3ESort+by
-msgid "Sort by"
 msgstr ""
 
 #: Comments-%3ETop+comments
