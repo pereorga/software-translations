@@ -1,7 +1,4 @@
 {
-    "application_credentials": {
-        "description": "Segueix les [instruccions]({more_info_url}) de [la pantalla de consentiment OAuth]({oauth_consent_url}) perqu\u00e8 Home Assistant tingui acc\u00e9s als teus fulls de c\u00e0lcul de Google. Tamb\u00e9 has de crear les credencials d'aplicaci\u00f3 enlla\u00e7ades al teu compte:\n 1. V\u00e9s a [Credencials]({oauth_creds_url}) i fes clic a **Crear credencials**.\n 2. A la llista desplegable, selecciona **ID de client OAuth**.\n 3. Selecciona **Aplicaci\u00f3 Web** al tipus d'aplicaci\u00f3.\n \n "
-    },
     "config": {
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
@@ -44,7 +41,7 @@
                     "name": "Full"
                 },
                 "data": {
-                    "description": "Dades a adjuntar al full de treball. Posa els valors en una nova fila sota la columna (clau) coincident. Qualsevol clau nova es col\u00b7loca a la part superior d'una nova columna.",
+                    "description": "Dades a adjuntar al full de treball. Posa els valors en noves files sota la columna (clau) coincident. Qualsevol clau nova es col\u00b7loca a la part superior d'una nova columna.",
                     "name": "Dades"
                 },
                 "worksheet": {

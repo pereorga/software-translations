@@ -17,6 +17,12 @@
             "is_position": "Current {entity_name} position is",
             "is_tilt_position": "Current {entity_name} tilt position is"
         },
+        "extra_fields": {
+            "above": "Above",
+            "below": "Below",
+            "for": "Duration",
+            "position": "Position"
+        },
         "trigger_type": {
             "closed": "{entity_name} closed",
             "closing": "{entity_name} closing",
@@ -74,12 +80,6 @@
         },
         "window": {
             "name": "Window"
-        }
-    },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
         }
     },
     "services": {

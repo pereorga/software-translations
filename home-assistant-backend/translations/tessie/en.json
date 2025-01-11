@@ -1,5 +1,9 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful"
+        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_access_token": "Invalid access token",
@@ -23,8 +27,8 @@
     },
     "entity": {
         "binary_sensor": {
-            "charge_state_battery_heater_on": {
-                "name": "Battery heater"
+            "backup_capable": {
+                "name": "Backup capable"
             },
             "charge_state_charge_enable_request": {
                 "name": "Charge enable request"
@@ -56,8 +60,8 @@
             "climate_state_auto_steering_wheel_heat": {
                 "name": "Auto steering wheel heater"
             },
-            "climate_state_auto_steering_wheel_heater": {
-                "name": "Auto steering wheel heater"
+            "climate_state_battery_heater": {
+                "name": "Battery heater"
             },
             "climate_state_cabin_overheat_protection": {
                 "name": "Cabin overheat protection"
@@ -65,8 +69,17 @@
             "climate_state_cabin_overheat_protection_actively_cooling": {
                 "name": "Cabin overheat protection actively cooling"
             },
+            "components_grid_services_enabled": {
+                "name": "Grid services enabled"
+            },
+            "grid_services_active": {
+                "name": "Grid services active"
+            },
             "state": {
                 "name": "Status"
+            },
+            "storm_mode_active": {
+                "name": "Storm watch active"
             },
             "vehicle_state_dashcam_state": {
                 "name": "Dashcam"
@@ -121,17 +134,11 @@
             "flash_lights": {
                 "name": "Flash lights"
             },
-            "frunk": {
-                "name": "Open frunk"
-            },
             "honk": {
                 "name": "Honk horn"
             },
             "trigger_homelink": {
                 "name": "Homelink"
-            },
-            "trunk": {
-                "name": "Open/Close trunk"
             },
             "wake": {
                 "name": "Wake"
@@ -162,6 +169,9 @@
             "vehicle_state_rt": {
                 "name": "Trunk"
             },
+            "vehicle_state_sun_roof_state": {
+                "name": "Sunroof"
+            },
             "windows": {
                 "name": "Vent windows"
             }
@@ -188,9 +198,6 @@
             },
             "vehicle_state_locked": {
                 "name": "Lock"
-            },
-            "vehicle_state_speed_limit_mode_active": {
-                "name": "Speed limit"
             }
         },
         "media_player": {
@@ -199,17 +206,41 @@
             }
         },
         "number": {
+            "backup_reserve_percent": {
+                "name": "Backup reserve"
+            },
             "charge_state_charge_current_request": {
                 "name": "Charge current"
             },
             "charge_state_charge_limit_soc": {
                 "name": "Charge limit"
             },
+            "off_grid_vehicle_charging_reserve_percent": {
+                "name": "Off grid reserve"
+            },
             "vehicle_state_speed_limit_mode_current_limit_mph": {
                 "name": "Speed limit"
             }
         },
         "select": {
+            "climate_state_seat_fan_front_left": {
+                "name": "Seat cooler left",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "medium": "Medium",
+                    "off": "Off"
+                }
+            },
+            "climate_state_seat_fan_front_right": {
+                "name": "Seat cooler right",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "medium": "Medium",
+                    "off": "Off"
+                }
+            },
             "climate_state_seat_heater_left": {
                 "name": "Seat heater left",
                 "state": {
@@ -272,41 +303,27 @@
                     "medium": "Medium",
                     "off": "Off"
                 }
+            },
+            "components_customer_preferred_export_rule": {
+                "name": "Allow export",
+                "state": {
+                    "battery_ok": "Battery",
+                    "never": "Never",
+                    "pv_only": "Solar only"
+                }
+            },
+            "default_real_mode": {
+                "name": "Operation mode",
+                "state": {
+                    "autonomous": "Autonomous",
+                    "backup": "Backup",
+                    "self_consumption": "Self consumption"
+                }
             }
         },
         "sensor": {
-            "active_route_energy_at_arrival": {
-                "name": "State of charge at arrival"
-            },
-            "active_route_miles_to_arrival": {
-                "name": "Distance to arrival"
-            },
-            "active_route_time_to_arrival": {
-                "name": "Time to arrival"
-            },
-            "active_route_traffic_minutes_delay": {
-                "name": "Traffic delay"
-            },
-            "charge_state-battery_range": {
-                "name": "Battery Range"
-            },
-            "charge_state-charge_energy_added": {
-                "name": "Charge Energy Added"
-            },
-            "charge_state-charge_rate": {
-                "name": "Charge Rate"
-            },
-            "charge_state-charger_actual_current": {
-                "name": "Charger Current"
-            },
-            "charge_state-charger_power": {
-                "name": "Charger Power"
-            },
-            "charge_state-charger_voltage": {
-                "name": "Charger Voltage"
-            },
-            "charge_state-usable_battery_level": {
-                "name": "Battery Level"
+            "battery_power": {
+                "name": "Battery power"
             },
             "charge_state_battery_range": {
                 "name": "Battery range"
@@ -349,18 +366,6 @@
             "charge_state_usable_battery_level": {
                 "name": "Battery level"
             },
-            "climate_state-driver_temp_setting": {
-                "name": "Driver Temperature Setting"
-            },
-            "climate_state-inside_temp": {
-                "name": "Inside Temperature"
-            },
-            "climate_state-outside_temp": {
-                "name": "Outside Temperature"
-            },
-            "climate_state-passenger_temp_setting": {
-                "name": "Passenger Temperature Setting"
-            },
             "climate_state_driver_temp_setting": {
                 "name": "Driver temperature setting"
             },
@@ -373,21 +378,6 @@
             "climate_state_passenger_temp_setting": {
                 "name": "Passenger temperature setting"
             },
-            "drive_state-power": {
-                "name": "Power"
-            },
-            "drive_state-shift_state": {
-                "name": "Shift State",
-                "state": {
-                    "d": "Drive",
-                    "n": "Neutral",
-                    "p": "Park",
-                    "r": "Reverse"
-                }
-            },
-            "drive_state-speed": {
-                "name": "Speed"
-            },
             "drive_state_active_route_destination": {
                 "name": "Destination"
             },
@@ -398,9 +388,6 @@
                 "name": "Distance to arrival"
             },
             "drive_state_active_route_minutes_to_arrival": {
-                "name": "Time to arrival"
-            },
-            "drive_state_active_route_time_to_arrival": {
                 "name": "Time to arrival"
             },
             "drive_state_active_route_traffic_minutes_delay": {
@@ -421,28 +408,29 @@
             "drive_state_speed": {
                 "name": "Speed"
             },
-            "state": {
-                "name": "Status",
-                "state": {
-                    "asleep": "Asleep",
-                    "offline": "Offline",
-                    "online": "Online"
-                }
+            "energy_left": {
+                "name": "Energy left"
             },
-            "vehicle_state-odometer": {
-                "name": "Odometer"
+            "generator_power": {
+                "name": "Generator power"
             },
-            "vehicle_state-tpms_pressure_fl": {
-                "name": "Tyre Pressure Front Left"
+            "grid_power": {
+                "name": "Grid power"
             },
-            "vehicle_state-tpms_pressure_fr": {
-                "name": "Tyre Pressure Front Right"
+            "grid_services_power": {
+                "name": "Grid services power"
             },
-            "vehicle_state-tpms_pressure_rl": {
-                "name": "Tyre Pressure Rear Left"
+            "load_power": {
+                "name": "Load power"
             },
-            "vehicle_state-tpms_pressure_rr": {
-                "name": "Tyre Pressure Rear Right"
+            "percentage_charged": {
+                "name": "Percentage charged"
+            },
+            "solar_power": {
+                "name": "Solar power"
+            },
+            "total_pack_energy": {
+                "name": "Total pack energy"
             },
             "vehicle_state_odometer": {
                 "name": "Odometer"
@@ -458,6 +446,33 @@
             },
             "vehicle_state_tpms_pressure_rr": {
                 "name": "Tire pressure rear right"
+            },
+            "vin": {
+                "name": "Vehicle"
+            },
+            "vpp_backup_reserve_percent": {
+                "name": "VPP backup reserve"
+            },
+            "wall_connector_fault_state": {
+                "name": "Fault state code"
+            },
+            "wall_connector_power": {
+                "name": "Power"
+            },
+            "wall_connector_state": {
+                "name": "State",
+                "state": {
+                    "booting": "Booting",
+                    "charging": "Charging",
+                    "charging_finished": "Charging finished",
+                    "charging_reduced": "Charging reduced",
+                    "connected": "Connected",
+                    "disconnected": "Disconnected",
+                    "error": "Error",
+                    "negotiating": "Negotiating",
+                    "scheduled": "Scheduled",
+                    "waiting_car": "Waiting car"
+                }
             }
         },
         "switch": {
@@ -469,6 +484,12 @@
             },
             "climate_state_steering_wheel_heater": {
                 "name": "Steering wheel heater"
+            },
+            "components_disallow_charge_from_grid_with_solar_installed": {
+                "name": "Allow charging from grid"
+            },
+            "user_settings_storm_mode_enabled": {
+                "name": "Storm watch"
             },
             "vehicle_state_sentry_mode": {
                 "name": "Sentry mode"
@@ -493,8 +514,11 @@
         "cable_connected": {
             "message": "Charge cable is connected."
         },
+        "command_failed": {
+            "message": "Command failed, {message}"
+        },
         "incorrect_pin": {
-            "message": "Incorrect pin for {name}."
+            "message": "Incorrect PIN for {name}."
         },
         "no_cable": {
             "message": "Insert cable to lock"

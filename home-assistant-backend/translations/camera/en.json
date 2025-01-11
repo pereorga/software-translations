@@ -35,9 +35,20 @@
         }
     },
     "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
+        "deprecated_filename_template": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "The pre-defined template variable `entity_id` was used when performing action `{service}` targeting camera entity `{entity_id}`. The pre-defined template variable `entity_id` is being removed from the `filename` parameter of `{service}`.\n\nPlease update your automations and scripts to use a manually defined variable instead and select **Submit** to close this issue.",
+                        "title": "Detected use of deprecated template variable"
+                    }
+                }
+            },
+            "title": "Detected use of deprecated template variable"
+        },
+        "legacy_webrtc_provider": {
+            "description": "The {legacy_integration} integration has registered a legacy WebRTC provider. Home Assistant prefers using the built-in modern WebRTC provider registered by the {builtin_integration} integration.\n\nBenefits of the built-in integration are:\n\n- The camera stream is started faster.\n- More camera devices are supported.\n\nTo fix this issue, you can either keep using the built-in modern WebRTC provider and remove the {legacy_integration} integration or remove the {builtin_integration} integration to use the legacy provider, and then restart Home Assistant.",
+            "title": "Detected use of legacy WebRTC provider registered by {legacy_integration}"
         }
     },
     "services": {
@@ -71,7 +82,7 @@
                     "name": "Duration"
                 },
                 "filename": {
-                    "description": "Template of a filename. Variable available is `entity_id`. Must be mp4.",
+                    "description": "Full path to filename. Must be mp4.",
                     "name": "Filename"
                 },
                 "lookback": {
@@ -85,7 +96,7 @@
             "description": "Takes a snapshot from a camera.",
             "fields": {
                 "filename": {
-                    "description": "Template of a filename. Variable available is `entity_id`.",
+                    "description": "Full path to filename.",
                     "name": "Filename"
                 }
             },

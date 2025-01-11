@@ -55,5 +55,22 @@
                 "name": "Estat de la zona"
             }
         }
+    },
+    "services": {
+        "set_humidify_setpoint": {
+            "fields": {
+                "humidity": {
+                    "description": "Consigna d'humidificaci\u00f3."
+                }
+            },
+            "name": "Configura la consigna d'humidificaci\u00f3"
+        },
+        "set_hvac_run_mode": {
+            "fields": {
+                "hvac_mode": {
+                    "name": "Mode HVAC"
+                }
+            }
+        }
     }
 }

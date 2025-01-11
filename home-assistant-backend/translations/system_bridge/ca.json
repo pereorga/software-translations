@@ -14,14 +14,11 @@
         "step": {
             "authenticate": {
                 "data": {
-                    "api_key": "Clau API",
                     "token": "Token d'API"
-                },
-                "description": "Introdueix la clau API que has posat a la configuraci\u00f3 de {name}."
+                }
             },
             "user": {
                 "data": {
-                    "api_key": "Clau API",
                     "host": "Amfitri\u00f3",
                     "port": "Port"
                 },
@@ -80,7 +77,36 @@
             }
         }
     },
+    "exceptions": {
+        "process_not_found": {
+            "message": "No s'ha pogut trobar cap proc\u00e9s amb ID {id}."
+        }
+    },
     "services": {
+        "get_process_by_id": {
+            "description": "Obt\u00e9 un proc\u00e9s mitjan\u00e7ant l'ID.",
+            "fields": {
+                "bridge": {
+                    "description": "Servidor amb qui parlar.",
+                    "name": "Bridge (enlla\u00e7)"
+                },
+                "id": {
+                    "description": "ID del proc\u00e9s a obtenir.",
+                    "name": "ID"
+                }
+            }
+        },
+        "get_processes_by_name": {
+            "fields": {
+                "bridge": {
+                    "description": "Servidor amb qui parlar.",
+                    "name": "Bridge (enlla\u00e7)"
+                },
+                "name": {
+                    "name": "Nom"
+                }
+            }
+        },
         "open_path": {
             "description": "Obre un fitxer al servidor mitjan\u00e7ant l'aplicaci\u00f3 predeterminada.",
             "fields": {

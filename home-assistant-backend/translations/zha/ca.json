@@ -63,7 +63,6 @@
                 "data": {
                     "overwrite_coordinator_ieee": "Sobreescriu permanentment l'adre\u00e7a IEEE r\u00e0dio"
                 },
-                "description": "La teva c\u00f2pia de seguretat t\u00e9 una adre\u00e7a IEEE diferent de la teva r\u00e0dio. Perqu\u00e8 la xarxa funcioni correctament, tamb\u00e9 s'ha de canviar l'adre\u00e7a IEEE de la teva r\u00e0dio. \n\nAquesta \u00e9s una operaci\u00f3 permanent.",
                 "title": "Sobreescriu l'adre\u00e7a IEEE r\u00e0dio"
             },
             "upload_manual_backup": {
@@ -87,7 +86,6 @@
             "title": "Opcions del panell de control d'alarma"
         },
         "zha_options": {
-            "always_prefer_xy_color_mode": "Utilitza preferentment el mode de color XY",
             "consider_unavailable_battery": "Considera els dispositius amb bateria com a no disponibles al cap de (segons)",
             "consider_unavailable_mains": "Considera els dispositius connectats a la xarxa el\u00e8ctrica com a no disponibles al cap de (segons)",
             "default_light_transition": "Temps de transici\u00f3 predeterminat (segons)",
@@ -104,6 +102,13 @@
             "issue_individual_led_effect": "Envia efecte a un LED individual",
             "squawk": "Squawk",
             "warn": "Av\u00eds"
+        },
+        "extra_fields": {
+            "color": "To de color (hue)",
+            "duration": "Durada en segons",
+            "effect_type": "Tipus d'efecte",
+            "led_number": "Nombre de LED",
+            "level": "Brillantor (%)"
         },
         "trigger_subtype": {
             "both_buttons": "Ambd\u00f3s botons",
@@ -308,6 +313,13 @@
             "smoke_density": {
                 "name": "Densitat de fum"
             },
+            "software_error": {
+                "name": "Error de programari",
+                "state": {
+                    "nothing": "B\u00e9",
+                    "something": "Error"
+                }
+            },
             "soil_moisture": {
                 "name": "Humitat del s\u00f2l"
             },
@@ -359,7 +371,6 @@
             "title": "La configuraci\u00f3 de la xarxa Zigbee ha canviat"
         },
         "wrong_silabs_firmware_installed_nabucasa": {
-            "description": "La teva r\u00e0dio Zigbee utilitzava multiprotocol anteriorment (Zigbee i Thread) i encara t\u00e9 instal\u00b7lat el microprogramari multiprotocol: ({firmware_type}).\n Opci\u00f3 1: per utilitzar la r\u00e0dio exclusivament amb ZHA, has d'instal\u00b7lar el microprogramari Zigbee:\n - Obre la documentaci\u00f3 seleccionant l'enlla\u00e7 a \"M\u00e9s informaci\u00f3\".\n - Segueix les instruccions descrites per carregar el microprogramari Zigbee.\n Opci\u00f3 2: per utilitzar la r\u00e0dio amb multiprotocol, segueix aquests passos:\n - V\u00e9s a Configuraci\u00f3 > Sistema > Maquinari, selecciona el dispositiu i selecciona Configura.\n - Selecciona l'opci\u00f3 Configura el suport de r\u00e0dio multiprotocol IEEE 802.15.4.\n - Marca la casella de selecci\u00f3 i selecciona Envia.\n - Un cop instal\u00b7lat, configura la integraci\u00f3 ZHA descoberta.",
             "title": "S'ha detectat una r\u00e0dio Zigbee amb un microprogramari multiprotocol"
         },
         "wrong_silabs_firmware_installed_other": {
@@ -406,15 +417,12 @@
                 "title": "Selecciona un port s\u00e8rie"
             },
             "init": {
-                "description": "ZHA s'aturar\u00e0. Vols continuar?",
                 "title": "Reconfiguraci\u00f3 de ZHA"
             },
             "instruct_unplug": {
-                "description": "La r\u00e0dio antiga s'ha reiniciat. Si el maquinari ja no \u00e9s necessari, pots desconnectar-lo.\n\nAra ja pots connectar la nova r\u00e0dio.",
                 "title": "Desconnecta la r\u00e0dio antiga"
             },
             "intent_migrate": {
-                "description": "Abans de connectar la r\u00e0dio nova, cal restablir de f\u00e0brica la r\u00e0dio antiga. Es realitzar\u00e0 una c\u00f2pia de seguretat autom\u00e0ticament. Si utilitzes un adaptador combinat de Z-Wave i Zigbee com el HUSBZB-1, nom\u00e9s es restablir\u00e0 la part de Zigbee.\n\n*Nota: si est\u00e0s migrant des d'un **ConBee/RaspBee**, assegura't que est\u00e0 executant el microprogramari `0x26720700` o un de m\u00e9s recent! Si no ho est\u00e0, \u00e9s possible que alguns dispositius no funcionin despr\u00e9s de la migraci\u00f3 tret que s'apaguin i s'engeguin de nou.*\n\nVols continuar?",
                 "title": "Migra a una nova r\u00e0dio"
             },
             "manual_pick_radio_type": {
@@ -556,7 +564,6 @@
             "name": "Perm\u00eds"
         },
         "reconfigure_device": {
-            "description": "Reconfigura un dispositiu ZHA (guareix dispositiu). Utilitza-ho si tens problemes amb un dispositiu. Si el dispositiu en q\u00fcesti\u00f3 est\u00e0 alimentat per bateria, assegura't que estigui despert i accepti ordres quan utilitzis aquest servei.",
             "fields": {
                 "ieee": {
                     "description": "Adre\u00e7a IEEE del dispositiu a reconfigurar.",
@@ -612,7 +619,6 @@
                     "name": "IEEE"
                 },
                 "manufacturer": {
-                    "description": "Codi de fabricant.",
                     "name": "Fabricant"
                 },
                 "value": {
@@ -623,7 +629,7 @@
             "name": "Estableix atribut de cl\u00faster zigbee"
         },
         "warning_device_squawk": {
-            "description": "Aquest servei utilitza les capacitats de WD per emetre un pols r\u00e0pid audible/visible anomenat 'squawk'. La comanda 'squawk' no t\u00e9 cap efecte si WD est\u00e0 actiu (alerta en curs).",
+            "description": "Aquesta acci\u00f3 utilitza les capacitats de WD per emetre un pols r\u00e0pid audible/visible anomenat 'squawk'. La comanda 'squawk' no t\u00e9 cap efecte si WD est\u00e0 actiu (alerta en curs).",
             "fields": {
                 "ieee": {
                     "description": "Adre\u00e7a IEEE del dispositiu.",
@@ -645,7 +651,7 @@
             "name": "'Squawk' del dispositiu d'alerta"
         },
         "warning_device_warn": {
-            "description": "Aquest servei activa el funcionament del dispositiu d'alerta. El dispositiu d'alerta avisa la zona circumdant mitjan\u00e7ant senyals audibles (sirena) i visuals (llum estrobosc\u00f2pic).",
+            "description": "Aquesta acci\u00f3 activa el funcionament del dispositiu d'alerta. El dispositiu d'alerta avisa la zona circumdant mitjan\u00e7ant senyals audibles (sirena) i visuals (llum estrobosc\u00f2pic).",
             "fields": {
                 "duration": {
                     "description": "Durada sol\u00b7licitada de l'alerta, en segons (16 bits). Si tant el mode estrobosc\u00f2pic com el mode d'alerta s\u00f3n \"0\", aquest camp s'ignora.",

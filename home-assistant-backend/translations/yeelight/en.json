@@ -77,7 +77,7 @@
     },
     "services": {
         "set_auto_delay_off_scene": {
-            "description": "Turns the light on to the specified brightness and sets a timer to turn it back off after the given number of minutes. If the light is off, Set a color scene, if light is off, it will be turned on.",
+            "description": "Turns the light on to the specified brightness and sets a timer to turn it back off after the given number of minutes. If the light is off, it will be turned on.",
             "fields": {
                 "brightness": {
                     "description": "The brightness value to set.",
@@ -151,7 +151,7 @@
             "name": "Set HSV scene"
         },
         "set_mode": {
-            "description": "Sets a operation mode.",
+            "description": "Sets an operation mode.",
             "fields": {
                 "mode": {
                     "description": "Operation mode.",
@@ -171,7 +171,7 @@
             "name": "Set music mode"
         },
         "start_flow": {
-            "description": "Start a custom flow, using transitions from https://yeelight.readthedocs.io/en/stable/yeelight.html#flow-objects.",
+            "description": "Starts a custom flow, using transitions from https://yeelight.readthedocs.io/en/stable/yeelight.html#flow-objects.",
             "fields": {
                 "action": {
                     "description": "The action to take after the flow stops.",

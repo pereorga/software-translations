@@ -11,6 +11,14 @@
                 "description": "Si \"totes les entitats\" est\u00e0 activat, l'estat del grup estar\u00e0 activat (ON) si tots els membres estan activats. Si \"totes les entitats\" est\u00e0 desactivat, l'estat del grup s'activar\u00e0 si hi ha activat qualsevol membre.",
                 "title": "Afegeix grup"
             },
+            "button": {
+                "data": {
+                    "entities": "Membres",
+                    "hide_members": "Amaga membres",
+                    "name": "Nom"
+                },
+                "title": "Afegeix grup"
+            },
             "cover": {
                 "data": {
                     "entities": "Membres",
@@ -59,6 +67,14 @@
                 },
                 "title": "Afegeix grup"
             },
+            "notify": {
+                "data": {
+                    "entities": "Membres",
+                    "hide_members": "Amaga membres",
+                    "name": "Nom"
+                },
+                "title": "Afegeix grup"
+            },
             "sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
@@ -85,6 +101,7 @@
                 "description": "Els grups et permeten crear una nova entitat que representa m\u00faltiples entitats del mateix tipus.",
                 "menu_options": {
                     "binary_sensor": "Grup de sensors binaris",
+                    "button": "Grup de botons",
                     "cover": "Grup de cobertes",
                     "fan": "Grup de ventiladors",
                     "light": "Grup de llums",
@@ -92,8 +109,7 @@
                     "media_player": "Grup de reproductors multim\u00e8dia",
                     "sensor": "Grup de sensors",
                     "switch": "Grup de commutadors"
-                },
-                "title": "Afegeix grup"
+                }
             }
         }
     },
@@ -129,6 +145,12 @@
                 },
                 "description": "Si \"totes les entitats\" est\u00e0 activat, l'estat del grup estar\u00e0 activat (ON) si tots els membres estan activats. Si \"totes les entitats\" est\u00e0 desactivat, l'estat del grup s'activar\u00e0 si hi ha activat qualsevol membre."
             },
+            "button": {
+                "data": {
+                    "entities": "Membres",
+                    "hide_members": "Amaga membres"
+                }
+            },
             "cover": {
                 "data": {
                     "entities": "Membres",
@@ -156,6 +178,12 @@
                 }
             },
             "media_player": {
+                "data": {
+                    "entities": "Membres",
+                    "hide_members": "Amaga membres"
+                }
+            },
+            "notify": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres"
@@ -214,7 +242,6 @@
             "name": "Elimina"
         },
         "set": {
-            "description": "Crea/actualitza un grup d'usuaris.",
             "fields": {
                 "add_entities": {
                     "description": "Llista de membres a afegir al grup. No es pot utilitzar en combinaci\u00f3 amb `Entitats` o `Elimina entitats`.",

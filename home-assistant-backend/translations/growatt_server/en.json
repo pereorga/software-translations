@@ -199,7 +199,10 @@
                 "name": "Charge today"
             },
             "storage_current_1": {
-                "name": "Solar current to storage"
+                "name": "PV1 current to storage"
+            },
+            "storage_current_2": {
+                "name": "PV2 current to storage"
             },
             "storage_current_pv": {
                 "name": "Solar charge current"
@@ -207,8 +210,14 @@
             "storage_grid_amperage_input": {
                 "name": "Grid charge current"
             },
+            "storage_grid_charged_lifetime": {
+                "name": "Lifetime grid charged"
+            },
             "storage_grid_charged_today": {
                 "name": "Grid charged today"
+            },
+            "storage_grid_discharge_lifetime": {
+                "name": "Lifetime grid discharged"
             },
             "storage_grid_discharge_today": {
                 "name": "Grid discharged today"
@@ -250,10 +259,22 @@
                 "name": "Storage charging/ discharging(-ve)"
             },
             "storage_pv_charging_voltage": {
-                "name": "PV charging voltage"
+                "name": "PV1 charging voltage"
+            },
+            "storage_pv_charging_voltage_2": {
+                "name": "PV2 charging voltage"
+            },
+            "storage_solar_output_lifetime": {
+                "name": "Lifetime solar output"
+            },
+            "storage_solar_output_today": {
+                "name": "Solar output today"
             },
             "storage_solar_production": {
-                "name": "Solar power production"
+                "name": "Solar power production (PV1)"
+            },
+            "storage_solar_production_2": {
+                "name": "Solar power production (PV2)"
             },
             "storage_storage_production_lifetime": {
                 "name": "Lifetime Storage production"

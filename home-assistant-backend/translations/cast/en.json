@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
-        },
         "error": {
             "invalid_known_hosts": "Known hosts must be a comma separated list of hosts."
         },
@@ -54,7 +51,7 @@
                     "name": "Entity"
                 },
                 "view_path": {
-                    "description": "The path of the dashboard view to show.",
+                    "description": "The URL path of the dashboard view to show.",
                     "name": "View path"
                 }
             },

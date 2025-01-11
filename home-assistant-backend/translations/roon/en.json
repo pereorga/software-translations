@@ -16,8 +16,8 @@
                 "description": "Could not discover Roon server, please enter your Hostname and Port."
             },
             "link": {
-                "description": "You must authorize Home Assistant in Roon. After you click submit, go to the Roon Core application, open Settings and enable HomeAssistant on the Extensions tab.",
-                "title": "Authorize HomeAssistant in Roon"
+                "description": "You must authorize Home Assistant in Roon. After you select **Submit**, go to the Roon Core application, open **Settings** and enable Home Assistant on the **Extensions** tab.",
+                "title": "Authorize Home Assistant in Roon"
             }
         }
     },
@@ -27,6 +27,7 @@
                 "state_attributes": {
                     "event_type": {
                         "state": {
+                            "mute_toggle": "Mute toggle",
                             "volume_down": "Volume down",
                             "volume_up": "Volume up"
                         }

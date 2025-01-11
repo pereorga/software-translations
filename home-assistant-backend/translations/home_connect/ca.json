@@ -1,4 +1,7 @@
 {
+    "common": {
+        "confirmed": "Confirmat"
+    },
     "config": {
         "abort": {
             "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
@@ -15,6 +18,138 @@
             "pick_implementation": {
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "freezer_door": {
+                "name": "Porta del congelador"
+            },
+            "refrigerator_door": {
+                "name": "Porta de la nevera"
+            }
+        },
+        "light": {
+            "external_light": {
+                "name": "Llum exterior"
+            },
+            "internal_light": {
+                "name": "Llum interior"
+            }
+        },
+        "sensor": {
+            "battery_level": {
+                "name": "Nivell de bateria"
+            },
+            "bean_container_empty": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "camera_state": {
+                "state": {
+                    "disabled": "Desactivada",
+                    "error": "Error"
+                }
+            },
+            "coffee_counter": {
+                "name": "Caf\u00e8s"
+            },
+            "door": {
+                "name": "Porta",
+                "state": {
+                    "closed": "Tancat/ada",
+                    "locked": "Bloquejat",
+                    "open": "Obert/a"
+                }
+            },
+            "drip_tray_full": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "freezer_door_alarm": {
+                "state": {
+                    "confirmed": "Confirmat"
+                }
+            },
+            "freezer_temperature_alarm": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "operation_state": {
+                "state": {
+                    "aborting": "Avortant",
+                    "actionrequired": "Acci\u00f3 necess\u00e0ria",
+                    "delayedstart": "Inici retardat",
+                    "error": "Error",
+                    "finished": "Acabat",
+                    "inactive": "Inactiu",
+                    "pause": "Pausat/ada",
+                    "ready": "A punt"
+                }
+            },
+            "refrigerator_door_alarm": {
+                "name": "Alarma de la porta de la nevera",
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "rinse_aid_nearly_empty": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "salt_nearly_empty": {
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            },
+            "water_tank_empty": {
+                "name": "Dip\u00f2sit d'aigua buit",
+                "state": {
+                    "confirmed": "Confirmat",
+                    "off": "OFF"
+                }
+            }
+        },
+        "switch": {
+            "child_lock": {
+                "name": "Bloqueig infantil"
+            },
+            "dispenser_enabled": {
+                "name": "Dispensador",
+                "state": {
+                    "off": "Desactivada",
+                    "on": "Activada"
+                }
+            },
+            "vacation_mode": {
+                "name": "Mode vacances"
+            }
+        },
+        "time": {
+            "alarm_clock": {
+                "name": "Despertador"
+            }
+        }
+    },
+    "exceptions": {
+        "stop_program": {
+            "message": "Error en aturar el programa: {description}"
+        },
+        "turn_off": {
+            "message": "Error en desactivar {entity_id} ({key}): {description}"
+        },
+        "turn_on": {
+            "message": "Error en activar {entity_id} ({key}): {description}"
         }
     },
     "services": {
@@ -52,6 +187,17 @@
             "fields": {
                 "device_id": {
                     "name": "ID del dispositiu"
+                },
+                "program": {
+                    "name": "Programa"
+                },
+                "unit": {
+                    "description": "Unitat de l'opci\u00f3.",
+                    "name": "Unitat d'opci\u00f3"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor d'opci\u00f3"
                 }
             }
         },
@@ -64,6 +210,7 @@
                     "name": "Clau"
                 },
                 "value": {
+                    "description": "Valor de l'opci\u00f3.",
                     "name": "Valor"
                 }
             }
@@ -77,7 +224,26 @@
                     "name": "Clau"
                 },
                 "value": {
+                    "description": "Valor de l'opci\u00f3.",
                     "name": "Valor"
+                }
+            }
+        },
+        "start_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID de dispositiu"
+                },
+                "program": {
+                    "name": "Programa"
+                },
+                "unit": {
+                    "description": "Unitat de l'opci\u00f3.",
+                    "name": "Unitat d'opci\u00f3"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor d'opci\u00f3"
                 }
             }
         }

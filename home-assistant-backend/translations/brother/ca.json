@@ -2,6 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
             "unsupported_model": "Aquest model d'impressora no \u00e9s compatible."
         },
         "error": {
@@ -11,6 +12,14 @@
         },
         "flow_title": "{model} {serial_number}",
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                },
+                "data_description": {
+                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP de la impressora Brother a controlar."
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -31,17 +40,13 @@
     },
     "entity": {
         "sensor": {
-            "belt_unit_remaining_life": {
-                "name": "Vida restant de la corretja"
-            },
             "black_drum_page_counter": {
-                "name": "Comptador de p\u00e0gines del tambor negre"
-            },
-            "black_drum_remaining_life": {
-                "name": "Vida restant del tambor negre"
+                "name": "Comptador de p\u00e0gines del tambor negre",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "black_drum_remaining_pages": {
-                "name": "P\u00e0gines restants del tambor negre"
+                "name": "P\u00e0gines restants del tambor negre",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "black_ink_remaining": {
                 "name": "Tinta negra restant"
@@ -50,19 +55,20 @@
                 "name": "T\u00f2ner negre restant"
             },
             "bw_pages": {
-                "name": "P\u00e0gines en B/N"
+                "name": "P\u00e0gines en B/N",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "color_pages": {
-                "name": "P\u00e0gines a color"
+                "name": "P\u00e0gines a color",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "cyan_drum_page_counter": {
-                "name": "Comptador de p\u00e0gines del tambor cian"
-            },
-            "cyan_drum_remaining_life": {
-                "name": "Vida restant del tambor cian"
+                "name": "Comptador de p\u00e0gines del tambor cian",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "cyan_drum_remaining_pages": {
-                "name": "P\u00e0gines restants del tambor cian"
+                "name": "P\u00e0gines restants del tambor cian",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "cyan_ink_remaining": {
                 "name": "Tinta cian restant"
@@ -71,34 +77,27 @@
                 "name": "T\u00f2ner cian restant"
             },
             "drum_page_counter": {
-                "name": "Comptador de p\u00e0gines de tambor"
-            },
-            "drum_remaining_life": {
-                "name": "Vida restant del tambor"
+                "name": "Comptador de p\u00e0gines de tambor",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "drum_remaining_pages": {
-                "name": "P\u00e0gines restants del tambor"
+                "name": "P\u00e0gines restants del tambor",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "duplex_unit_page_counter": {
-                "name": "Comptador de p\u00e0gines del d\u00faplex"
-            },
-            "fuser_remaining_life": {
-                "name": "Vida restant del fusor"
-            },
-            "laser_remaining_life": {
-                "name": "Vida restant del l\u00e0ser"
+                "name": "Comptador de p\u00e0gines del d\u00faplex",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "last_restart": {
                 "name": "\u00daltim reinici"
             },
             "magenta_drum_page_counter": {
-                "name": "Comptador de p\u00e0gines del tambor magenta"
-            },
-            "magenta_drum_remaining_life": {
-                "name": "Vida restant del tambor magenta"
+                "name": "Comptador de p\u00e0gines del tambor magenta",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "magenta_drum_remaining_pages": {
-                "name": "P\u00e0gines restants del tambor magenta"
+                "name": "P\u00e0gines restants del tambor magenta",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "magenta_ink_remaining": {
                 "name": "Tinta magenta restant"
@@ -107,25 +106,19 @@
                 "name": "T\u00f2ner magenta restant"
             },
             "page_counter": {
-                "name": "Comptador de p\u00e0gines"
-            },
-            "pf_kit_1_remaining_life": {
-                "name": "Vida restant del kit PF 1"
-            },
-            "pf_kit_mp_remaining_life": {
-                "name": "Vida restant del kit PF MP"
+                "name": "Comptador de p\u00e0gines",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "status": {
                 "name": "Estat"
             },
             "yellow_drum_page_counter": {
-                "name": "Comptador de p\u00e0gines del tambor groc"
-            },
-            "yellow_drum_remaining_life": {
-                "name": "Vida restant del tambor groc"
+                "name": "Comptador de p\u00e0gines del tambor groc",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "yellow_drum_remaining_pages": {
-                "name": "P\u00e0gines restants del tambor groc"
+                "name": "P\u00e0gines restants del tambor groc",
+                "unit_of_measurement": "p\u00e0gines"
             },
             "yellow_ink_remaining": {
                 "name": "Tinta groga restant"

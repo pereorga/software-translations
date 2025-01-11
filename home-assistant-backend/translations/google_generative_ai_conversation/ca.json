@@ -1,15 +1,21 @@
 {
     "config": {
+        "abort": {
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
         "step": {
-            "user": {
+            "api": {
                 "data": {
                     "api_key": "Clau API"
                 }
+            },
+            "reauth_confirm": {
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
         }
     },
@@ -17,8 +23,9 @@
         "step": {
             "init": {
                 "data": {
-                    "model": "Model",
-                    "prompt": "Plantilla de sol\u00b7licitud",
+                    "chat_model": "Model",
+                    "llm_hass_api": "Controla Home Assistant",
+                    "prompt": "Instruccions",
                     "temperature": "Temperatura",
                     "top_k": "K superior",
                     "top_p": "P superior"
@@ -36,7 +43,6 @@
                 },
                 "prompt": {
                     "description": "Instrucci\u00f3",
-                    "example": "Descriu el que veus a les imatges:",
                     "name": "Instrucci\u00f3"
                 }
             },

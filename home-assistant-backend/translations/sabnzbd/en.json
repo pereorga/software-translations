@@ -1,5 +1,9 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Service is already configured",
+            "reconfigure_successful": "Re-configuration was successful"
+        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_api_key": "Invalid API key"
@@ -8,13 +12,34 @@
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "name": "Name",
                     "url": "URL"
+                },
+                "data_description": {
+                    "api_key": "The API key of the SABnzbd server. This can be found in the SABnzbd web interface under Config cog (top right) > General > Security.",
+                    "url": "The full URL, including port, of the SABnzbd server. Example: `http://localhost:8080` or `http://a02368d7-sabnzbd:8080`, if you are using the add-on."
                 }
             }
         }
     },
     "entity": {
+        "binary_sensor": {
+            "warnings": {
+                "name": "Warnings"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "Pause"
+            },
+            "resume": {
+                "name": "Resume"
+            }
+        },
+        "number": {
+            "speedlimit": {
+                "name": "Speedlimit"
+            }
+        },
         "sensor": {
             "daily_total": {
                 "name": "Daily total"
@@ -49,6 +74,25 @@
             "weekly_total": {
                 "name": "Weekly total"
             }
+        }
+    },
+    "exceptions": {
+        "service_call_exception": {
+            "message": "Unable to send command to SABnzbd due to a connection error, try again later"
+        }
+    },
+    "issues": {
+        "pause_action_deprecated": {
+            "description": "The 'Pause' action is deprecated and will be removed in a future version. Please use the 'Pause' button instead. To remove this issue, please adjust automations accordingly and restart Home Assistant.",
+            "title": "SABnzbd pause action deprecated"
+        },
+        "resume_action_deprecated": {
+            "description": "The 'Resume' action is deprecated and will be removed in a future version. Please use the 'Resume' button instead. To remove this issue, please adjust automations accordingly and restart Home Assistant.",
+            "title": "SABnzbd resume action deprecated"
+        },
+        "set_speed_action_deprecated": {
+            "description": "The 'Set speed' action is deprecated and will be removed in a future version. Please use the 'Speedlimit' number entity instead. To remove this issue, please adjust automations accordingly and restart Home Assistant.",
+            "title": "SABnzbd set_speed action deprecated"
         }
     },
     "services": {

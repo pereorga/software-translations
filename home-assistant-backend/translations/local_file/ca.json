@@ -1,18 +1,41 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "file_path": "Ruta del fitxer",
+                    "name": "Nom"
+                }
+            }
+        }
+    },
+    "issues": {
+        "no_access_path": {
+            "title": "Ruta del fitxer incorrecta"
+        }
+    },
+    "options": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat"
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "file_path": "Ruta del fitxer"
+                }
+            }
+        }
+    },
     "services": {
         "update_file_path": {
-            "description": "Utilitza aquest servei per canviar el fitxer que mostra la c\u00e0mera.",
             "fields": {
-                "entity_id": {
-                    "description": "Nom de l'entity_id de la c\u00e0mera a actualitzar.",
-                    "name": "Entitat"
-                },
                 "file_path": {
-                    "description": "Ruta completa del nou fitxer d'imatge a mostrar.",
                     "name": "Ruta del fitxer"
                 }
-            },
-            "name": "Actualitza la ruta del fitxer"
+            }
         }
     }
 }

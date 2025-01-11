@@ -28,6 +28,9 @@
             "memory_percent_used": {
                 "name": "\u00das de mem\u00f2ria"
             },
+            "memory_size": {
+                "name": "Mida de la mem\u00f2ria"
+            },
             "memory_used": {
                 "name": "Mem\u00f2ria utilitzada"
             },
@@ -37,21 +40,21 @@
             "system_temp": {
                 "name": "Temperatura del sistema"
             },
+            "uptime": {
+                "name": "Temps en funcionament"
+            },
             "volume_percentage_used": {
                 "name": "Volum utilitzat ({monitor_device})"
             },
             "volume_size_free": {
                 "name": "Espai disponible ({monitor_device})"
             },
+            "volume_size_total": {
+                "name": "Mida del volum"
+            },
             "volume_size_used": {
                 "name": "Espai utilitzat ({monitor_device})"
             }
-        }
-    },
-    "issues": {
-        "deprecated_yaml": {
-            "description": "La configuraci\u00f3 de QNAP mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLa configuraci\u00f3 YAML existent s'ha importat autom\u00e0ticament a la interf\u00edcie d'usuari.\n\nElimina la configuraci\u00f3 YAML de QNAP del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La configuraci\u00f3 YAML de QNAP est\u00e0 sent eliminada"
         }
     }
 }

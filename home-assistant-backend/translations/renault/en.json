@@ -6,18 +6,27 @@
             "reauth_successful": "Re-authentication was successful"
         },
         "error": {
-            "invalid_credentials": "Invalid authentication"
+            "cannot_connect": "Failed to connect",
+            "invalid_credentials": "Invalid authentication",
+            "unknown": "Unexpected error"
         },
         "step": {
             "kamereon": {
                 "data": {
-                    "kamereon_account_id": "Kamereon account id"
+                    "kamereon_account_id": "Account ID"
                 },
-                "title": "Select Kamereon account id"
+                "data_description": {
+                    "kamereon_account_id": "The Kamereon account ID associated with your vehicle"
+                },
+                "description": "You have multiple Kamereon accounts associated to this email, please select one",
+                "title": "Kamereon Account ID"
             },
             "reauth_confirm": {
                 "data": {
                     "password": "Password"
+                },
+                "data_description": {
+                    "password": "Your MyRenault phone application password"
                 },
                 "description": "Please update your password for {username}",
                 "title": "Authentication expired for {name}"
@@ -28,15 +37,17 @@
                     "password": "Password",
                     "username": "Email"
                 },
+                "data_description": {
+                    "locale": "Your country code",
+                    "password": "Your MyRenault phone application password",
+                    "username": "Your MyRenault phone application email address"
+                },
                 "title": "Set Renault credentials"
             }
         }
     },
     "entity": {
         "binary_sensor": {
-            "charging": {
-                "name": "Charging"
-            },
             "driver_door_status": {
                 "name": "Driver door"
             },
@@ -46,14 +57,8 @@
             "hvac_status": {
                 "name": "HVAC"
             },
-            "lock_status": {
-                "name": "Lock"
-            },
             "passenger_door_status": {
                 "name": "Passenger door"
-            },
-            "plugged_in": {
-                "name": "Plug"
             },
             "rear_left_door_status": {
                 "name": "Rear left door"
@@ -82,9 +87,9 @@
             "charge_mode": {
                 "name": "Charge mode",
                 "state": {
-                    "always": "Instant",
-                    "always_charging": "Instant",
-                    "schedule_mode": "Planner",
+                    "always": "Always",
+                    "always_charging": "Always charging",
+                    "schedule_mode": "Schedule mode",
                     "scheduled": "Scheduled"
                 }
             }
@@ -101,9 +106,6 @@
             },
             "battery_last_activity": {
                 "name": "Last battery activity"
-            },
-            "battery_level": {
-                "name": "Battery level"
             },
             "battery_temperature": {
                 "name": "Battery temperature"
@@ -154,6 +156,7 @@
                     "plug_error": "Plug error",
                     "plug_unknown": "Plug unknown",
                     "plugged": "Plugged in",
+                    "plugged_waiting_for_charge": "Plugged in, waiting for charge",
                     "unplugged": "Unplugged"
                 }
             },
@@ -165,9 +168,17 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_device_id": {
+            "message": "No device with id {device_id} was found"
+        },
+        "no_config_entry_for_device": {
+            "message": "No loaded config entry was found for device with id {device_id}"
+        }
+    },
     "services": {
         "ac_cancel": {
-            "description": "Canceles A/C on vehicle.",
+            "description": "Cancels A/C on vehicle.",
             "fields": {
                 "vehicle": {
                     "description": "The vehicle to send the command to.",
@@ -175,6 +186,20 @@
                 }
             },
             "name": "Cancel A/C"
+        },
+        "ac_set_schedules": {
+            "description": "Updates A/C schedule on vehicle.",
+            "fields": {
+                "schedules": {
+                    "description": "Schedule details.",
+                    "name": "Schedules"
+                },
+                "vehicle": {
+                    "description": "The vehicle to send the command to.",
+                    "name": "Vehicle"
+                }
+            },
+            "name": "Update A/C schedule"
         },
         "ac_start": {
             "description": "Starts A/C on vehicle.",

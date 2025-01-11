@@ -5,6 +5,7 @@
             "already_in_progress": "Configuration flow is already in progress",
             "authorize_url_timeout": "Timeout generating authorize URL.",
             "missing_configuration": "The component is not configured. Please follow the documentation.",
+            "missing_credentials": "The integration requires application credentials.",
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
@@ -44,6 +45,12 @@
             }
         },
         "sensor": {
+            "current_power": {
+                "name": "Current power"
+            },
+            "power_consumption": {
+                "name": "Power consumption"
+            },
             "power_failure_alarm": {
                 "name": "Power failure alarm",
                 "state": {
@@ -73,6 +80,9 @@
                     "low": "Low",
                     "medium": "Medium"
                 }
+            },
+            "water_meter_reading": {
+                "name": "Water meter reading"
             }
         },
         "switch": {
@@ -90,6 +100,11 @@
             },
             "usb_ports": {
                 "name": "USB ports"
+            }
+        },
+        "valve": {
+            "meter_valve_state": {
+                "name": "Valve state"
             }
         }
     },

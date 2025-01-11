@@ -46,6 +46,92 @@
             "vehicle": "{entity_name} detected a vehicle"
         }
     },
+    "entity": {
+        "climate": {
+            "thermostat": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "frost_guard": "Frost guard",
+                            "manual": "Manual",
+                            "schedule": "Schedule"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "gust_angle": {
+                "name": "Gust angle"
+            },
+            "gust_direction": {
+                "name": "Gust direction",
+                "state": {
+                    "e": "East",
+                    "n": "North",
+                    "ne": "North-east",
+                    "nw": "North-west",
+                    "s": "South",
+                    "se": "South-east",
+                    "sw": "South-west",
+                    "w": "West"
+                }
+            },
+            "gust_strength": {
+                "name": "Gust strength"
+            },
+            "health_idx": {
+                "name": "Health index",
+                "state": {
+                    "fair": "Fair",
+                    "fine": "Fine",
+                    "healthy": "Healthy",
+                    "poor": "Poor",
+                    "unhealthy": "Unhealthy"
+                }
+            },
+            "noise": {
+                "name": "Noise"
+            },
+            "pressure_trend": {
+                "name": "Pressure trend"
+            },
+            "reachable": {
+                "name": "Reachability"
+            },
+            "rf_strength": {
+                "name": "Radio"
+            },
+            "sum_rain_1": {
+                "name": "Precipitation last hour"
+            },
+            "sum_rain_24": {
+                "name": "Precipitation today"
+            },
+            "temp_trend": {
+                "name": "Temperature trend"
+            },
+            "wifi_strength": {
+                "name": "Wi-Fi"
+            },
+            "wind_angle": {
+                "name": "Wind angle"
+            },
+            "wind_direction": {
+                "name": "Wind direction",
+                "state": {
+                    "e": "East",
+                    "n": "North",
+                    "ne": "North-east",
+                    "nw": "North-west",
+                    "s": "South",
+                    "se": "South-east",
+                    "sw": "South-west",
+                    "w": "West"
+                }
+            }
+        }
+    },
     "options": {
         "step": {
             "public_weather": {

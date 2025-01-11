@@ -260,12 +260,6 @@
             "groundtemperature": {
                 "name": "Temperatura del s\u00f2l"
             },
-            "humidity": {
-                "name": "Humitat"
-            },
-            "irradiance": {
-                "name": "Irradi\u00e0ncia"
-            },
             "maxrain_1d": {
                 "name": "Pluja m\u00e0xima, 1 dia"
             },
@@ -311,17 +305,11 @@
             "mintemp_5d": {
                 "name": "Temperatura m\u00ednima, 5 dies"
             },
-            "precipitation": {
-                "name": "Precipitaci\u00f3"
-            },
             "precipitation_forecast_average": {
                 "name": "Previsi\u00f3 de precipitaci\u00f3 mitjana"
             },
             "precipitation_forecast_total": {
                 "name": "Previsi\u00f3 de precipitaci\u00f3 total"
-            },
-            "pressure": {
-                "name": "Pressi\u00f3"
             },
             "rain_1d": {
                 "name": "Pluja, 1 dia"
@@ -394,9 +382,6 @@
             },
             "symbol_5d": {
                 "name": "S\u00edmbol, 5 dies"
-            },
-            "temperature": {
-                "name": "Temperatura"
             },
             "temperature_1d": {
                 "name": "Temperatura, 1 dia"
@@ -473,9 +458,6 @@
             "windgust": {
                 "name": "Ratxes de vent"
             },
-            "windspeed": {
-                "name": "Velocitat del vent"
-            },
             "windspeed_1d": {
                 "name": "Velocitat del vent, 1 dia"
             },
@@ -497,9 +479,9 @@
         "step": {
             "init": {
                 "data": {
-                    "country_code": "Codi de pa\u00eds a mostrar en les imatges.",
-                    "delta": "Interval de temps entre actualitzacions de la imatge, en segons",
-                    "timeframe": "Nombre de minuts d'antelaci\u00f3 per revisar la previsi\u00f3 de precipitacions"
+                    "country_code": "Pa\u00eds de les imatges de c\u00e0mera.",
+                    "delta": "Interval de temps entre actualitzacions de les imatge",
+                    "timeframe": "Temps d'antelaci\u00f3 per consultar la previsi\u00f3 de precipitacions"
                 }
             }
         }

@@ -11,8 +11,7 @@
         "step": {
             "user": {
                 "data": {
-                    "host": "Amfitri\u00f3",
-                    "port": "Port"
+                    "host": "Amfitri\u00f3"
                 },
                 "description": "Configura la integraci\u00f3 d'Elgato Light amb Home Assistant."
             },
@@ -23,18 +22,7 @@
         }
     },
     "entity": {
-        "button": {
-            "identify": {
-                "name": "Identifica"
-            },
-            "restart": {
-                "name": "Reinicia"
-            }
-        },
         "sensor": {
-            "battery": {
-                "name": "Bateria"
-            },
             "charge_power": {
                 "name": "Pot\u00e8ncia de c\u00e0rrega"
             },
@@ -55,6 +43,11 @@
             "energy_saving": {
                 "name": "Estalvi d'energia"
             }
+        }
+    },
+    "services": {
+        "identify": {
+            "name": "Identifica"
         }
     }
 }

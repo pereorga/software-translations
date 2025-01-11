@@ -8,6 +8,9 @@
             "is_paused": "{entity_name} est\u00e0 en pausa",
             "is_playing": "{entity_name} est\u00e0 reproduint"
         },
+        "extra_fields": {
+            "for": "Durada"
+        },
         "trigger_type": {
             "buffering": "{entity_name} comen\u00e7a a carregar-se en mem\u00f2ria",
             "changed_states": "{entity_name} s'engegui o s'apagui",
@@ -159,12 +162,6 @@
             "name": "TV"
         }
     },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "Suport de la plataforma no compatible"
-        }
-    },
     "selector": {
         "enqueue": {
             "options": {
@@ -184,7 +181,6 @@
     },
     "services": {
         "clear_playlist": {
-            "description": "Esborra la llista de reproducci\u00f3.",
             "name": "Esborra llista de reproducci\u00f3"
         },
         "media_pause": {

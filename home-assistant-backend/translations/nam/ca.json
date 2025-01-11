@@ -4,7 +4,8 @@
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "device_unsupported": "El dispositiu no \u00e9s compatible.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reauth_unsuccessful": "La re-autenticaci\u00f3 no ha tingut \u00e8xit, elimina la integraci\u00f3 i torna-la a configurar."
+            "reauth_unsuccessful": "La re-autenticaci\u00f3 no ha tingut \u00e8xit, elimina la integraci\u00f3 i torna-la a configurar.",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -30,6 +31,14 @@
                 },
                 "description": "Introdueix el nom d'usuari i contrasenya correctes de l'amfitri\u00f3: {host}"
             },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                },
+                "data_description": {
+                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP del sensor d'aire Nettigo a controlar."
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3"
@@ -42,11 +51,6 @@
         }
     },
     "entity": {
-        "button": {
-            "restart": {
-                "name": "Reinicia"
-            }
-        },
         "sensor": {
             "bme280_humidity": {
                 "name": "Humitat de BME280"
@@ -74,6 +78,9 @@
             },
             "dht22_temperature": {
                 "name": "Temperatura de DHT22"
+            },
+            "ds18b20_temperature": {
+                "name": "Temperatura DS18B20"
             },
             "heca_humidity": {
                 "name": "Humitat d'HECA"
@@ -133,9 +140,6 @@
             },
             "sht3x_temperature": {
                 "name": "Temperatura d'SHT3X"
-            },
-            "signal_strength": {
-                "name": "Pot\u00e8ncia del senyal"
             },
             "sps30_caqi": {
                 "name": "\u00cdndex com\u00fa de qualitat de l'aire d'SPS30"

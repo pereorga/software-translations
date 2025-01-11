@@ -6,7 +6,6 @@
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "invalid_location": "No s'ha trobat cap resultat per a aquesta ubicaci\u00f3",
             "unknown": "Error inesperat"
         },
         "step": {
@@ -23,17 +22,11 @@
     },
     "entity": {
         "sensor": {
-            "aqi": {
-                "name": "\u00cdndex de qualitat de l'aire"
-            },
             "o3": {
                 "name": "Oz\u00f3"
             },
-            "pm25": {
-                "name": "PM2.5"
-            },
             "station": {
-                "name": "Estaci\u00f3 de notificaci\u00f3 de PM2.5",
+                "name": "Estaci\u00f3 de notificaci\u00f3",
                 "state_attributes": {
                     "lat": {
                         "name": "Latitud"

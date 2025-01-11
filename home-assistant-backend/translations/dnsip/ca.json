@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
         "error": {
             "invalid_hostname": "Nom d'amfitri\u00f3 inv\u00e0lid"
         },
@@ -7,8 +10,21 @@
             "user": {
                 "data": {
                     "hostname": "El nom d'amfitri\u00f3 al qual realitzar la consulta DNS",
+                    "port": "Port per a la cerca IPV4",
+                    "port_ipv6": "Port per a la cerca IPV6",
                     "resolver": "Resolutor de cerca IPV4",
                     "resolver_ipv6": "Resolutor de cerca IPV6"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "dnsip": {
+                "state_attributes": {
+                    "ip_addresses": {
+                        "name": "Adreces IP"
+                    }
                 }
             }
         }
@@ -17,12 +33,11 @@
         "abort": {
             "already_configured": "El servei ja est\u00e0 configurat"
         },
-        "error": {
-            "invalid_resolver": "Adre\u00e7a IP del resolutor inv\u00e0lida"
-        },
         "step": {
             "init": {
                 "data": {
+                    "port": "Port per a la cerca IPV4",
+                    "port_ipv6": "Port per a la cerca IPV6",
                     "resolver": "Resolutor de cerca IPV4",
                     "resolver_ipv6": "Resolutor de cerca IPV6"
                 }

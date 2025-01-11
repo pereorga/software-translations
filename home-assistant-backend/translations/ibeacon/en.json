@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "bluetooth_not_available": "At least one Bluetooth adapter or remote must be configured to use iBeacon Tracker.",
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
+            "bluetooth_not_available": "At least one Bluetooth adapter or remote must be configured to use iBeacon Tracker."
         },
         "step": {
             "user": {
@@ -31,7 +30,6 @@
             "init": {
                 "data": {
                     "allow_nameless_uuids": "Currently allowed UUIDs. Uncheck to remove",
-                    "min_rssi": "Minimum RSSI",
                     "new_uuid": "Enter a new allowed UUID"
                 },
                 "description": "iBeacons with an empty device name are ignored by default, unless their UUID is explicitly allowed in the list below."

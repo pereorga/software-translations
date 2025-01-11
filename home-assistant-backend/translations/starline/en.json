@@ -1,7 +1,7 @@
 {
     "config": {
         "error": {
-            "error_auth_app": "Incorrect application id or secret",
+            "error_auth_app": "Incorrect application ID or secret",
             "error_auth_mfa": "Incorrect code",
             "error_auth_user": "Incorrect username or password"
         },
@@ -55,6 +55,9 @@
             "hood": {
                 "name": "Hood"
             },
+            "is_running": {
+                "name": "Running"
+            },
             "moving_ban": {
                 "name": "Moving ban"
             },
@@ -66,8 +69,14 @@
             }
         },
         "button": {
+            "flex": {
+                "name": "Flex logic {num}"
+            },
             "horn": {
                 "name": "Horn"
+            },
+            "panic": {
+                "name": "Panic mode"
             }
         },
         "device_tracker": {
@@ -116,9 +125,6 @@
             "engine": {
                 "name": "Engine"
             },
-            "horn": {
-                "name": "Horn"
-            },
             "service_mode": {
                 "name": "Service mode"
             },
@@ -127,15 +133,9 @@
             }
         }
     },
-    "issues": {
-        "deprecated_horn_switch": {
-            "description": "Using the Horn switch is now deprecated and will be removed in a future version of Home Assistant.\n\nPlease adjust any automations or scripts that use Horn switch entity to instead use the Horn button entity.",
-            "title": "The Starline Horn switch entity is being removed"
-        }
-    },
     "services": {
         "set_scan_interval": {
-            "description": "Sets update frequency.",
+            "description": "Sets the update frequency for entities.",
             "fields": {
                 "scan_interval": {
                     "description": "Update frequency.",
@@ -145,7 +145,7 @@
             "name": "Set scan interval"
         },
         "set_scan_obd_interval": {
-            "description": "Sets OBD info update frequency.",
+            "description": "Sets the update frequency for OBD information.",
             "fields": {
                 "scan_interval": {
                     "description": "Update frequency.",
@@ -155,7 +155,7 @@
             "name": "Set scan OBD interval"
         },
         "update_state": {
-            "description": "Fetches the last state of the devices from the StarLine server.\n.",
+            "description": "Fetches the last state of the devices from the StarLine server.",
             "name": "Update state"
         }
     }

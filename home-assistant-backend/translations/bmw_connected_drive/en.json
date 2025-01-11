@@ -2,19 +2,46 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication"
+            "invalid_auth": "Invalid authentication",
+            "missing_captcha": "Captcha validation missing"
         },
         "step": {
+            "captcha": {
+                "data": {
+                    "captcha_token": "Captcha token"
+                },
+                "data_description": {
+                    "captcha_token": "One-time token retrieved from the captcha challenge."
+                },
+                "description": "A captcha is required for BMW login. Visit the external website to complete the challenge and submit the form. Copy the resulting token into the field below.\n\n{captcha_url}\n\nNo data will be exposed outside of your Home Assistant instance.",
+                "title": "Are you a robot?"
+            },
+            "change_password": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "The password of your MyBMW/MINI Connected account."
+                },
+                "description": "Update your MyBMW/MINI Connected password for account `{username}` in region `{region}`."
+            },
             "user": {
                 "data": {
                     "password": "Password",
                     "region": "ConnectedDrive Region",
                     "username": "Username"
-                }
+                },
+                "data_description": {
+                    "password": "The password of your MyBMW/MINI Connected account.",
+                    "region": "The region of your MyBMW/MINI Connected account.",
+                    "username": "The email address of your MyBMW/MINI Connected account."
+                },
+                "description": "Connect to your MyBMW/MINI Connected account to retrieve vehicle data."
             }
         }
     },
@@ -49,14 +76,14 @@
             "activate_air_conditioning": {
                 "name": "Activate air conditioning"
             },
+            "deactivate_air_conditioning": {
+                "name": "Deactivate air conditioning"
+            },
             "find_vehicle": {
                 "name": "Find vehicle"
             },
             "light_flash": {
                 "name": "Flash lights"
-            },
-            "refresh": {
-                "name": "Refresh from cloud"
             },
             "sound_horn": {
                 "name": "Sound horn"
@@ -77,7 +104,12 @@
                 "name": "AC Charging Limit"
             },
             "charging_mode": {
-                "name": "Charging Mode"
+                "name": "Charging Mode",
+                "state": {
+                    "delayed_charging": "Delayed charging",
+                    "immediate_charging": "Immediate charging",
+                    "no_action": "No action"
+                }
             }
         },
         "sensor": {
@@ -91,13 +123,61 @@
                 "name": "Charging start time"
             },
             "charging_status": {
-                "name": "Charging status"
+                "name": "Charging status",
+                "state": {
+                    "charging": "Charging",
+                    "complete": "Complete",
+                    "default": "Default",
+                    "error": "Error",
+                    "finished_fully_charged": "Finished, fully charged",
+                    "finished_not_full": "Finished, not full",
+                    "fully_charged": "Fully charged",
+                    "invalid": "Invalid",
+                    "not_charging": "Not charging",
+                    "plugged_in": "Plugged in",
+                    "target_reached": "Target reached",
+                    "waiting_for_charging": "Waiting for charging"
+                }
             },
             "charging_target": {
                 "name": "Charging target"
             },
+            "climate_status": {
+                "name": "Climate status",
+                "state": {
+                    "cooling": "Cooling",
+                    "heating": "Heating",
+                    "inactive": "Inactive",
+                    "standby": "Standby",
+                    "ventilation": "Ventilation"
+                }
+            },
+            "front_left_current_pressure": {
+                "name": "Front left tire pressure"
+            },
+            "front_left_target_pressure": {
+                "name": "Front left target pressure"
+            },
+            "front_right_current_pressure": {
+                "name": "Front right tire pressure"
+            },
+            "front_right_target_pressure": {
+                "name": "Front right target pressure"
+            },
             "mileage": {
                 "name": "Mileage"
+            },
+            "rear_left_current_pressure": {
+                "name": "Rear left tire pressure"
+            },
+            "rear_left_target_pressure": {
+                "name": "Rear left target pressure"
+            },
+            "rear_right_current_pressure": {
+                "name": "Rear right tire pressure"
+            },
+            "rear_right_target_pressure": {
+                "name": "Rear right target pressure"
             },
             "remaining_battery_percent": {
                 "name": "Remaining battery percent"
@@ -127,12 +207,41 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_auth": {
+            "message": "Invalid authentication"
+        },
+        "invalid_poi": {
+            "message": "Invalid data for point of interest: {poi_exception}"
+        },
+        "missing_captcha": {
+            "message": "Login requires captcha validation"
+        },
+        "remote_service_error": {
+            "message": "Error executing remote service on vehicle. {exception}"
+        },
+        "update_failed": {
+            "message": "Error updating vehicle data. {exception}"
+        }
+    },
     "options": {
         "step": {
             "account_options": {
                 "data": {
-                    "read_only": "Read-only (only sensors and notify, no execution of services, no lock)"
+                    "read_only": "Read-only mode"
+                },
+                "data_description": {
+                    "read_only": "Only retrieve values and send POI data, but don't offer any services that can change the vehicle state."
                 }
+            }
+        }
+    },
+    "selector": {
+        "regions": {
+            "options": {
+                "china": "China",
+                "north_america": "North America",
+                "rest_of_world": "Rest of world"
             }
         }
     }

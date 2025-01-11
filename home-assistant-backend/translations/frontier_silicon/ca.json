@@ -20,7 +20,6 @@
                 "data": {
                     "pin": "Codi PIN"
                 },
-                "description": "Pots trobar el PIN anant a 'MEN\u00da > Men\u00fa principal > Configuraci\u00f3 del sistema > Xarxa > Configuraci\u00f3 de PIN de NetRemote'",
                 "title": "Configuraci\u00f3 del dispositiu"
             },
             "user": {
@@ -29,12 +28,6 @@
                     "port": "Port"
                 }
             }
-        }
-    },
-    "issues": {
-        "removed_yaml": {
-            "description": "La configuraci\u00f3 de Frontier Silicon mitjan\u00e7ant YAML s'ha eliminat de Home Assistant.\n\nHome Assistant ja no utilitza la configuraci\u00f3 YAML existent.\n\nElimina la configuraci\u00f3 YAML corresponent del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La configuraci\u00f3 YAML de Frontier Silicon s'ha eliminat"
         }
     }
 }

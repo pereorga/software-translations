@@ -11,6 +11,7 @@
         "step": {
             "user": {
                 "data": {
+                    "counter_id": "ID del comptador",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 }
@@ -19,6 +20,9 @@
     },
     "entity": {
         "sensor": {
+            "water_price": {
+                "name": "Preu de l'aigua"
+            },
             "water_usage_yesterday": {
                 "name": "Consum d'aigua, ahir"
             }

@@ -127,43 +127,10 @@
                 "name": "Sleep mode start time"
             }
         },
-        "update": {
-            "firmware": {
-                "name": "Firmware"
-            }
-        },
         "vacuum": {
             "litter_box": {
                 "name": "Litter box"
             }
-        }
-    },
-    "issues": {
-        "migrated_attributes": {
-            "description": "The vacuum entity attributes are now available as diagnostic sensors.\n\nPlease adjust any automations or scripts you may have that use these attributes.",
-            "title": "Litter-Robot attributes are now their own sensors"
-        },
-        "service_deprecation_turn_off": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Litter-Robot vaccum support for the {old_service} service is deprecated and will be removed in Home Assistant 2024.2; Please adjust any automation or script that uses the service to instead call {new_service} and select submit below to mark this issue as resolved.",
-                        "title": "Litter-Robot vaccum support for {old_service} is being removed"
-                    }
-                }
-            },
-            "title": "Litter-Robot vaccum support for {old_service} is being removed"
-        },
-        "service_deprecation_turn_on": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Litter-Robot vaccum support for the {old_service} service is deprecated and will be removed in Home Assistant 2024.2; Please adjust any automation or script that uses the service to instead call {new_service} and select submit below to mark this issue as resolved.",
-                        "title": "Litter-Robot vaccum support for {old_service} is being removed"
-                    }
-                }
-            },
-            "title": "Litter-Robot vaccum support for {old_service} is being removed"
         }
     },
     "services": {

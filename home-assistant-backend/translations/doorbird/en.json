@@ -3,7 +3,8 @@
         "abort": {
             "already_configured": "Device is already configured",
             "link_local_address": "Link local addresses are not supported",
-            "not_doorbird_device": "This device is not a DoorBird"
+            "not_doorbird_device": "This device is not a DoorBird",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -12,6 +13,13 @@
         },
         "flow_title": "{name} ({host})",
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "Re-authenticate DoorBird device {name} at {host}"
+            },
             "user": {
                 "data": {
                     "host": "Host",
@@ -26,6 +34,14 @@
         }
     },
     "entity": {
+        "button": {
+            "ir": {
+                "name": "IR"
+            },
+            "reset_favorites": {
+                "name": "Reset favorites"
+            }
+        },
         "camera": {
             "last_motion": {
                 "name": "Last motion"
@@ -36,6 +52,39 @@
             "live": {
                 "name": "live"
             }
+        },
+        "event": {
+            "doorbell": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "ring": "Ring"
+                        }
+                    }
+                }
+            },
+            "motion": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "motion": "Motion"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "error_registering_events": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Configuring DoorBird {name} failed with error: `{error}`. Please enable the API Operator permission for the DoorBird user and continue to reload the integration.",
+                        "title": "DoorBird {name} configuration failure"
+                    }
+                }
+            },
+            "title": "DoorBird {name} configuration failure"
         }
     },
     "options": {

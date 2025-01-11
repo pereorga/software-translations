@@ -1,13 +1,23 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "no_ups_found": "There are no UPS devices available on the NUT server.",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
-            "cannot_connect": "Failed to connect",
+            "cannot_connect": "Connection error: {error}",
+            "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "Re-authenticate NUT server at {host}:{port}"
+            },
             "ups": {
                 "data": {
                     "alias": "Alias"
@@ -24,8 +34,7 @@
                 "data_description": {
                     "host": "The hostname or IP address of your NUT server."
                 },
-                "description": "Connect to the NUT server",
-                "title": "Connect to the NUT server"
+                "description": "Connect to the NUT server"
             }
         }
     },
@@ -179,10 +188,10 @@
                 "name": "Input current"
             },
             "input_frequency": {
-                "name": "Input line frequency"
+                "name": "Input frequency"
             },
             "input_frequency_nominal": {
-                "name": "Nominal input line frequency"
+                "name": "Input nominal frequency"
             },
             "input_frequency_status": {
                 "name": "Input frequency status"

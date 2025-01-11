@@ -23,6 +23,11 @@
     "services": {
         "light_blink": {
             "description": "Parpelleja una llum.",
+            "fields": {
+                "rate": {
+                    "name": "Taxa"
+                }
+            },
             "name": "Parpelleja llum"
         },
         "light_fade_start": {
@@ -34,6 +39,9 @@
                 "brightness_pct": {
                     "description": "N\u00famero que indica el percentatge de lluminositat total, on 0 \u00e9s el llum apagat, 1 \u00e9s la lluminositat m\u00ednima i 100 \u00e9s la lluminositat m\u00e0xima.",
                     "name": "Percentatge de lluminositat"
+                },
+                "rate": {
+                    "name": "Taxa"
                 }
             }
         },
@@ -48,7 +56,8 @@
                     "name": "Percentatge de lluminositat"
                 },
                 "rate": {
-                    "description": "Quantitat de temps perqu\u00e8 l'escena passi a una nova lluminositat."
+                    "description": "Quantitat de temps perqu\u00e8 l'escena passi a una nova lluminositat.",
+                    "name": "Taxa"
                 }
             }
         },
@@ -64,7 +73,8 @@
                     "name": "Percentatge de lluminositat"
                 },
                 "rate": {
-                    "description": "Quantitat de temps perqu\u00e8 l'escena passi a una nova lluminositat."
+                    "description": "Quantitat de temps perqu\u00e8 l'escena passi a una nova lluminositat.",
+                    "name": "Taxa"
                 }
             }
         }

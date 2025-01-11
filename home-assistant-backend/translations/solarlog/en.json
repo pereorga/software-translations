@@ -1,19 +1,55 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "already_configured": "Device is already configured",
-            "cannot_connect": "Failed to connect"
+            "cannot_connect": "Failed to connect",
+            "password_error": "Invalid authentication",
+            "unknown": "Unexpected error"
         },
         "step": {
-            "user": {
+            "password": {
                 "data": {
-                    "host": "Host",
-                    "name": "The prefix to be used for your Solar-Log sensors"
+                    "password": "Password"
                 },
                 "data_description": {
+                    "password": "The password for the general user of your Solar-Log device."
+                },
+                "title": "Define your Solar-Log connection"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "has_password": "I have the password for the Solar-Log user account.",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "has_password": "The password is required, if the open JSON-API is deactivated or if you would like to access additional data provided by your Solar-Log device.",
+                    "password": "The password for the general user of your Solar-Log device."
+                },
+                "description": "Update your credentials for Solar-Log device"
+            },
+            "reconfigure": {
+                "data": {
+                    "has_password": "I have the password for the Solar-Log user account.",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "has_password": "The password is required, if the open JSON-API is deactivated or if you would like to access additional data provided by your Solar-Log device.",
+                    "password": "The password for the general user of your Solar-Log device."
+                },
+                "title": "Configure SolarLog"
+            },
+            "user": {
+                "data": {
+                    "has_password": "I have the password for the Solar-Log user account.",
+                    "host": "Host"
+                },
+                "data_description": {
+                    "has_password": "The password is required, if the open JSON-API is deactivated or if you would like to access additional data provided by your Solar-Log device.",
                     "host": "The hostname or IP address of your Solar-Log device."
                 },
                 "title": "Define your Solar-Log connection"
@@ -61,6 +97,9 @@
             "power_dc": {
                 "name": "Power DC"
             },
+            "self_consumption_year": {
+                "name": "Self-consumption year"
+            },
             "total_power": {
                 "name": "Installed peak power"
             },
@@ -88,6 +127,17 @@
             "yield_yesterday": {
                 "name": "Yield yesterday"
             }
+        }
+    },
+    "exceptions": {
+        "auth_failed": {
+            "message": "Error while logging in to the API."
+        },
+        "config_entry_not_ready": {
+            "message": "Error while loading the config entry."
+        },
+        "update_error": {
+            "message": "Error while updating data from the API."
         }
     }
 }

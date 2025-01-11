@@ -28,6 +28,39 @@
     },
     "entity": {
         "sensor": {
+            "disk_free": {
+                "name": "Disks free space"
+            },
+            "disk_fs_free": {
+                "name": "Disk free space {mountpoint}"
+            },
+            "disk_fs_ifree": {
+                "name": "Disk free inodes {mountpoint}"
+            },
+            "disk_fs_itotal": {
+                "name": "Disk total inodes {mountpoint}"
+            },
+            "disk_fs_iused": {
+                "name": "Disk used inodes {mountpoint}"
+            },
+            "disk_fs_iused_percent": {
+                "name": "Disk inode usage {mountpoint}"
+            },
+            "disk_fs_total": {
+                "name": "Disk total space {mountpoint}"
+            },
+            "disk_fs_used": {
+                "name": "Disk used space {mountpoint}"
+            },
+            "disk_fs_used_percent": {
+                "name": "Disk usage {mountpoint}"
+            },
+            "disk_total": {
+                "name": "Disks total space"
+            },
+            "disk_used": {
+                "name": "Disks used space"
+            },
             "load_15m": {
                 "name": "Load (15m)"
             },

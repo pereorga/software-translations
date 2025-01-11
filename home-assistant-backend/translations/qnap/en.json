@@ -43,11 +43,20 @@
             "memory_percent_used": {
                 "name": "Memory usage"
             },
+            "memory_size": {
+                "name": "Memory size"
+            },
             "memory_used": {
                 "name": "Memory used"
             },
+            "network_err": {
+                "name": "{monitor_device} packet errors"
+            },
             "network_link_status": {
                 "name": "{monitor_device} link"
+            },
+            "network_max_speed": {
+                "name": "{monitor_device} maximum speed"
             },
             "network_rx": {
                 "name": "{monitor_device} download"
@@ -61,21 +70,21 @@
             "system_temp": {
                 "name": "System temperature"
             },
+            "uptime": {
+                "name": "Uptime"
+            },
             "volume_percentage_used": {
                 "name": "Volume used ({monitor_device})"
             },
             "volume_size_free": {
                 "name": "Free space ({monitor_device})"
             },
+            "volume_size_total": {
+                "name": "Volume size"
+            },
             "volume_size_used": {
                 "name": "Used space ({monitor_device})"
             }
-        }
-    },
-    "issues": {
-        "deprecated_yaml": {
-            "description": "Configuring QNAP using YAML is being removed.\n\nYour existing YAML configuration has been imported into the UI automatically.\n\nRemove the QNAP YAML configuration from your configuration.yaml file and restart Home Assistant to fix this issue.",
-            "title": "The QNAP YAML configuration is being removed"
         }
     }
 }

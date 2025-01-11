@@ -6,15 +6,11 @@
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "invalid_credentials": "Autenticaci\u00f3 inv\u00e0lida"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_credentials": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
         },
         "step": {
-            "kamereon": {
-                "data": {
-                    "kamereon_account_id": "ID del compte Kamereon"
-                },
-                "title": "Seleccioneu l'ID del compte Kamereon"
-            },
             "reauth_confirm": {
                 "data": {
                     "password": "Contrasenya"
@@ -34,9 +30,6 @@
     },
     "entity": {
         "binary_sensor": {
-            "charging": {
-                "name": "Carregant"
-            },
             "driver_door_status": {
                 "name": "Porta del conductor"
             },
@@ -46,14 +39,8 @@
             "hvac_status": {
                 "name": "HVAC"
             },
-            "lock_status": {
-                "name": "Pany"
-            },
             "passenger_door_status": {
                 "name": "Porta del passatger"
-            },
-            "plugged_in": {
-                "name": "Endoll"
             },
             "rear_left_door_status": {
                 "name": "Porta posterior esquerra"
@@ -82,9 +69,7 @@
             "charge_mode": {
                 "name": "Mode de c\u00e0rrega",
                 "state": {
-                    "always": "Instantani",
-                    "always_charging": "Instantani",
-                    "schedule_mode": "Programat"
+                    "always_charging": "Sempre carregant"
                 }
             }
         },
@@ -100,9 +85,6 @@
             },
             "battery_last_activity": {
                 "name": "\u00daltima activitat de bateria"
-            },
-            "battery_level": {
-                "name": "Nivell de bateria"
             },
             "battery_temperature": {
                 "name": "Temperatura de bateria"
@@ -167,6 +149,17 @@
     "services": {
         "ac_cancel": {
             "fields": {
+                "vehicle": {
+                    "name": "Vehicle"
+                }
+            }
+        },
+        "ac_set_schedules": {
+            "fields": {
+                "schedules": {
+                    "description": "Detalls de programaci\u00f3.",
+                    "name": "Programacions"
+                },
                 "vehicle": {
                     "name": "Vehicle"
                 }

@@ -1,13 +1,9 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "api_ratelimit": "API Ratelimit exceeded",
-            "reauth_successful": "Re-authentication was successful",
-            "unknown": "Unexpected error"
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
-            "api_ratelimit": "API Ratelimit exceeded",
             "invalid_auth": "Invalid authentication",
             "no_data": "No data is available for the location you have selected.",
             "unknown": "Unexpected error"
@@ -24,7 +20,7 @@
                     "country_code": "Country code"
                 }
             },
-            "reauth": {
+            "reauth_confirm": {
                 "data": {
                     "api_key": "Access token"
                 }

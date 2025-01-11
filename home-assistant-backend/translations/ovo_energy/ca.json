@@ -1,18 +1,21 @@
 {
     "config": {
+        "abort": {
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+        },
         "error": {
             "already_configured": "El compte ja est\u00e0 configurat",
+            "authorization_error": "Autenticaci\u00f3 inv\u00e0lida",
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "connection_error": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
         },
         "flow_title": "{username}",
         "step": {
-            "reauth": {
+            "reauth_confirm": {
                 "data": {
                     "password": "Contrasenya"
-                },
-                "description": "L'autenticaci\u00f3 d'OVO Energy ha fallat. Introdueix les teves credencials actuals.",
-                "title": "Reautenticaci\u00f3"
+                }
             },
             "user": {
                 "data": {

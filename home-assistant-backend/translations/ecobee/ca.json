@@ -8,27 +8,43 @@
             "token_request_failed": "Error al sol\u00b7licitar els tokens d'autenticaci\u00f3 d'ecobee; torna-ho a provar."
         },
         "step": {
-            "authorize": {
-                "description": "Autoritza aquesta aplicaci\u00f3 a https://www.ecobee.com/consumerportal/index.html amb el codi PIN: \n\n {pin} \n \n A continuaci\u00f3, prem Envia.",
-                "title": "Autoritzaci\u00f3 de l'aplicaci\u00f3 a ecobee.com"
-            },
             "user": {
                 "data": {
                     "api_key": "Clau API"
                 },
-                "description": "Introdueix la clau API obteinguda a trav\u00e9s del lloc web ecobee.com.",
-                "title": "Clau API d'ecobee"
+                "description": "Introdueix la clau API obteinguda a trav\u00e9s del lloc web ecobee.com."
             }
         }
     },
     "entity": {
-        "number": {
-            "ventilator_min_type_away": {
-                "name": "Temps m\u00ednim a fora"
-            },
-            "ventilator_min_type_home": {
-                "name": "Temps m\u00ednim a casa"
+        "climate": {
+            "ecobee": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "away_indefinitely": "A fora indefinidament"
+                        }
+                    }
+                }
             }
+        },
+        "switch": {
+            "aux_heat_only": {
+                "name": "Nom\u00e9s calor auxiliar"
+            }
+        }
+    },
+    "issues": {
+        "migrate_aux_heat": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "L'acci\u00f3 d'Ecobee `set_aux_heat` s'ha migrat. Hi ha disponible una nova entitat d'interruptor `aux_heat_only` per a cada term\u00f2stat que admeti la bomba de calor.\n\nModifica totes les automatitzacions i/o scripts perqu\u00e8 utilitzin la nova entitat d'interruptor `aux_heat_only`. Un cop fet aix\u00f2, pots marcar el problema com a resolt i reiniciar Home Assistant.",
+                        "title": "Desactiva l'acci\u00f3 heretada d'Ecobee set_aux_heat"
+                    }
+                }
+            },
+            "title": "Migraci\u00f3 de l'acci\u00f3 Ecobee set_aux_heat"
         }
     },
     "services": {
@@ -40,7 +56,6 @@
                     "name": "Temperatura freda"
                 },
                 "end_date": {
-                    "description": "Data final de les vacances en el format AAAA-MM-DD (opcional). Si no es proporciona juntament amb start_time, end_date i end_time, ser\u00e0 d'aqu\u00ed a 14 dies.",
                     "name": "Data final"
                 },
                 "end_time": {
@@ -64,7 +79,6 @@
                     "name": "Temperatura de calefacci\u00f3"
                 },
                 "start_date": {
-                    "description": "Data d'inici de les vacances en el format AAAA-MM-DD (opcional). Si no es proporciona juntament amb start_time, end_date i end_time, ser\u00e0 el dia immediat.",
                     "name": "Data inici"
                 },
                 "start_time": {
@@ -153,6 +167,16 @@
                 }
             },
             "name": "Configura els modes d'ocupaci\u00f3"
+        },
+        "set_sensors_used_in_climate": {
+            "fields": {
+                "device_ids": {
+                    "name": "Sensors"
+                },
+                "entity_id": {
+                    "name": "Entitat"
+                }
+            }
         }
     }
 }

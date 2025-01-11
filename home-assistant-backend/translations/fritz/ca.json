@@ -4,13 +4,15 @@
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "ignore_ip6_link_local": "L'enlla\u00e7 amb adreces IPv6 locals no est\u00e0 perm\u00e8s",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown_error": "Error inesperat",
             "upnp_not_configured": "Falta la configuraci\u00f3 UPnP al dispositiu."
         },
         "flow_title": "{name}",
@@ -18,6 +20,7 @@
             "confirm": {
                 "data": {
                     "password": "Contrasenya",
+                    "ssl": "Utilitza un certificat SSL",
                     "username": "Nom d'usuari"
                 },
                 "description": "S'ha descobert FRITZ!Box: {name} \n\nConfigura FRITZ!Box Tools per controlar {name}",
@@ -31,12 +34,23 @@
                 "description": "Actualitza les credencials de FRITZ!Box Tools de: {host}.\n\nFRITZ!Box Tools no pot iniciar sessi\u00f3 a FRITZ!Box.",
                 "title": "Actualitzant les credencials de FRITZ!Box Tools"
             },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port",
+                    "ssl": "Utilitza un certificat SSL"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
                     "password": "Contrasenya",
                     "port": "Port",
+                    "ssl": "Utilitza un certificat SSL",
                     "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "port": "Deixa-ho buit per utilitzar el port predeterminat."
                 },
                 "description": "Configura FRITZ!Box Tools per poder controlar FRITZ!Box.\nEl m\u00ednim necessari \u00e9s: nom d'usuari i contrasenya.",
                 "title": "Configuraci\u00f3 de FRITZ!Box Tools"
@@ -58,9 +72,6 @@
             },
             "firmware_update": {
                 "name": "Actualitzaci\u00f3 de microprogramari"
-            },
-            "reboot": {
-                "name": "Reinicia"
             },
             "reconnect": {
                 "name": "Reconnecta"
@@ -117,6 +128,14 @@
             }
         }
     },
+    "exceptions": {
+        "service_not_supported": {
+            "message": "Acci\u00f3 no compatible"
+        },
+        "service_parameter_unknown": {
+            "message": "Acci\u00f3 o par\u00e0metre desconegut"
+        }
+    },
     "options": {
         "step": {
             "init": {
@@ -128,33 +147,6 @@
         }
     },
     "services": {
-        "cleanup": {
-            "fields": {
-                "device_id": {
-                    "name": "Dispositiu Fritz!Box"
-                }
-            }
-        },
-        "reboot": {
-            "description": "Reinicia el FRITZ!Box.",
-            "fields": {
-                "device_id": {
-                    "description": "Selecciona el Fritz!Box a reiniciar.",
-                    "name": "Dispositiu Fritz!Box"
-                }
-            },
-            "name": "Reinicia"
-        },
-        "reconnect": {
-            "description": "Reconnecta la connexi\u00f3 a Internet del FRITZ!Box.",
-            "fields": {
-                "device_id": {
-                    "description": "Selecciona el Fritz!Box a reconnectar.",
-                    "name": "Dispositiu Fritz!Box"
-                }
-            },
-            "name": "Reconnecta"
-        },
         "set_guest_wifi_password": {
             "description": "Configura una nova contrasenya per a la xarxa Wi-Fi de convidats. La contrasenya ha de tenir entre 8 i 63 car\u00e0cters. Si no s'estableix cap par\u00e0metre addicional, la contrasenya es generar\u00e0 autom\u00e0ticament amb una longitud de 12 car\u00e0cters.",
             "fields": {

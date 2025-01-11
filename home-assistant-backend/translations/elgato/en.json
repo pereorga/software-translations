@@ -11,8 +11,7 @@
         "step": {
             "user": {
                 "data": {
-                    "host": "Host",
-                    "port": "Port"
+                    "host": "Host"
                 },
                 "data_description": {
                     "host": "The hostname or IP address of your Elgato device."
@@ -26,18 +25,7 @@
         }
     },
     "entity": {
-        "button": {
-            "identify": {
-                "name": "Identify"
-            },
-            "restart": {
-                "name": "Restart"
-            }
-        },
         "sensor": {
-            "battery": {
-                "name": "Battery"
-            },
             "charge_power": {
                 "name": "Charging power"
             },

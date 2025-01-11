@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -10,11 +11,21 @@
             "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "unlock_failed": {
+            "message": "No s'ha pogut desbloquejar la porta. Pany {lock_id}"
         }
     }
 }

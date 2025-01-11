@@ -1,10 +1,8 @@
 {
-    "config": {
-        "abort": {
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
-        }
-    },
     "issues": {
+        "deprecated_gender": {
+            "title": "L'opci\u00f3 de text a veu {deprecated_option} est\u00e0 obsoleta"
+        },
         "legacy_subscription": {
             "fix_flow": {
                 "abort": {
@@ -17,6 +15,9 @@
                 }
             },
             "title": "S'ha detectat una subscripci\u00f3 heretada"
+        },
+        "reset_bad_custom_domain_configuration": {
+            "title": "Domini personalitzat ignorat"
         }
     },
     "system_health": {

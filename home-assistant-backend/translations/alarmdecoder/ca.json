@@ -7,7 +7,8 @@
             "default": "S'ha connectat correctament amb AlarmDecoder."
         },
         "error": {
-            "cannot_connect": "Ha fallat la connexi\u00f3"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
         },
         "step": {
             "protocol": {
@@ -16,6 +17,10 @@
                     "device_path": "Ruta del dispositiu",
                     "host": "Amfitri\u00f3",
                     "port": "Port"
+                },
+                "data_description": {
+                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP del dispositiu AlarmDecoder connectat al teu panell d'alarmes.",
+                    "port": "Port des d'on accedir a AlarmDecoder (per exemple, 10000)"
                 },
                 "title": "Configuraci\u00f3 dels par\u00e0metres de connexi\u00f3"
             },
@@ -45,7 +50,7 @@
             },
             "init": {
                 "data": {
-                    "edit_select": "Edita"
+                    "edit_selection": "Edita"
                 },
                 "description": "Qu\u00e8 voldries editar?",
                 "title": "Configuraci\u00f3 d'AlarmDecoder"
@@ -73,6 +78,7 @@
     },
     "services": {
         "alarm_keypress": {
+            "description": "Envia a l'alarma pulsacions de tecles personalitzades.",
             "fields": {
                 "keypress": {
                     "description": "Cadena de car\u00e0cters a enviar al panell d'alarma.",

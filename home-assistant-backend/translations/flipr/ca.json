@@ -1,22 +1,11 @@
 {
     "config": {
-        "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
-        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "no_flipr_id_found": "De moment, no hi ha cap identificador de Flipr associat al teu compte. Primer hauries de verificar que funciona amb l'aplicaci\u00f3 m\u00f2bil de Flipr.",
             "unknown": "Error inesperat"
         },
         "step": {
-            "flipr_id": {
-                "data": {
-                    "flipr_id": "ID Flipr"
-                },
-                "description": "Tria l'ID Flipr de la llista",
-                "title": "Tria el teu Flipr"
-            },
             "user": {
                 "data": {
                     "email": "Correu electr\u00f2nic",
@@ -36,15 +25,21 @@
                 "name": "Estat del pH"
             }
         },
+        "select": {
+            "hub_mode": {
+                "name": "Mode",
+                "state": {
+                    "auto": "Autom\u00e0tic",
+                    "manual": "Manual"
+                }
+            }
+        },
         "sensor": {
             "chlorine": {
                 "name": "Clor"
             },
             "last_measured": {
                 "name": "\u00daltima mesura"
-            },
-            "ph": {
-                "name": "pH"
             },
             "red_ox": {
                 "name": "Red OX"

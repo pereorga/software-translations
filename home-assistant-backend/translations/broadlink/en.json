@@ -10,6 +10,7 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
             "invalid_host": "Invalid hostname or IP address",
             "unknown": "Unexpected error"
         },
@@ -43,22 +44,26 @@
                 "data_description": {
                     "host": "The hostname or IP address of your Broadlink device."
                 },
-                "description": "Connect to the device",
-                "title": "Connect to the device"
+                "description": "Connect to the device"
             }
         }
     },
     "entity": {
+        "select": {
+            "day_of_week": {
+                "name": "Day of week",
+                "state": {
+                    "friday": "Friday",
+                    "monday": "Monday",
+                    "saturday": "Saturday",
+                    "sunday": "Sunday",
+                    "thursday": "Thursday",
+                    "tuesday": "Tuesday",
+                    "wednesday": "Wednesday"
+                }
+            }
+        },
         "sensor": {
-            "air_quality": {
-                "name": "Air quality index"
-            },
-            "current": {
-                "name": "Current"
-            },
-            "humidity": {
-                "name": "Humidity"
-            },
             "light": {
                 "name": "Illuminance"
             },
@@ -68,17 +73,8 @@
             "overload": {
                 "name": "Overload"
             },
-            "power": {
-                "name": "Power"
-            },
-            "temperature": {
-                "name": "Temperature"
-            },
             "total_consumption": {
                 "name": "Total consumption"
-            },
-            "voltage": {
-                "name": "Voltage"
             }
         }
     }

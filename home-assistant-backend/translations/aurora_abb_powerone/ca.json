@@ -21,11 +21,20 @@
     },
     "entity": {
         "sensor": {
-            "power_output": {
-                "name": "Pot\u00e8ncia de sortida"
+            "grid_current": {
+                "name": "Corrent de xarxa"
             },
-            "total_energy": {
-                "name": "Energia total"
+            "grid_voltage": {
+                "name": "Tensi\u00f3 de xarxa"
+            },
+            "i_leak_dcdc": {
+                "name": "Corrent de fuita DC-DC"
+            },
+            "i_leak_inverter": {
+                "name": "Corrent de fuita a l'inversor"
+            },
+            "r_iso": {
+                "name": "Resist\u00e8ncia d'a\u00efllament"
             }
         }
     }

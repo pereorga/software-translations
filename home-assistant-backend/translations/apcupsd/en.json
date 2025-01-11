@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "no_status": "No status is reported from host"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect"
@@ -219,12 +218,6 @@
             "wake_delay": {
                 "name": "Wake delay"
             }
-        }
-    },
-    "issues": {
-        "deprecated_yaml": {
-            "description": "Configuring APC UPS Daemon using YAML is being removed.\n\nYour existing YAML configuration has been imported into the UI automatically.\n\nRemove the APC UPS Daemon YAML configuration from your configuration.yaml file and restart Home Assistant to fix this issue.",
-            "title": "The APC UPS Daemon YAML configuration is being removed"
         }
     }
 }

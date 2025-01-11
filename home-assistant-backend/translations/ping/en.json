@@ -7,7 +7,6 @@
         "step": {
             "user": {
                 "data": {
-                    "count": "Ping count",
                     "host": "Host"
                 },
                 "data_description": {
@@ -49,12 +48,6 @@
                     "consider_home": "Seconds to wait till marking a device tracker as not home after not being seen."
                 }
             }
-        }
-    },
-    "services": {
-        "reload": {
-            "description": "Reloads ping sensors from the YAML-configuration.",
-            "name": "Reload"
         }
     }
 }

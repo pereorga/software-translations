@@ -25,12 +25,28 @@
             }
         }
     },
+    "entity": {
+        "sensor": {
+            "current_temperature": {
+                "name": "Current Temperature"
+            },
+            "outside_temperature": {
+                "name": "Outside Temperature"
+            }
+        }
+    },
     "exceptions": {
         "set_data_error": {
             "message": "An error occurred while sending the data to the BSBLAN device"
         },
+        "set_operation_mode_error": {
+            "message": "An error occurred while setting the operation mode"
+        },
         "set_preset_mode_error": {
             "message": "Can't set preset mode to {preset_mode} when HVAC mode is not set to auto"
+        },
+        "set_temperature_error": {
+            "message": "An error occurred while setting the temperature"
         }
     }
 }

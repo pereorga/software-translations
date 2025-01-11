@@ -2,8 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -23,6 +22,23 @@
                     "password": "Password",
                     "url": "URL",
                     "username": "Username"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "watching": {
+                "name": "Active clients",
+                "unit_of_measurement": "clients"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "audio_codec": "Audio codec"
                 }
             }
         }

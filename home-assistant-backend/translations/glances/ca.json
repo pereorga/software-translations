@@ -22,9 +22,18 @@
                     "port": "Port",
                     "ssl": "Utilitza un certificat SSL",
                     "username": "Nom d'usuari",
-                    "verify_ssl": "Verifica el certificat SSL",
-                    "version": "Versi\u00f3 de l'API de Glances (2 o 3)"
+                    "verify_ssl": "Verifica el certificat SSL"
                 }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "cpu_usage": {
+                "name": "\u00das de CPU"
+            },
+            "processor_load": {
+                "name": "C\u00e0rrega de la CPU"
             }
         }
     }

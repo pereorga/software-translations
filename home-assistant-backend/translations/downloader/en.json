@@ -4,7 +4,7 @@
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
         "error": {
-            "cannot_connect": "The directory could not be reached. Please check your settings."
+            "directory_does_not_exist": "The directory could not be reached. Please check your settings."
         },
         "step": {
             "user": {
@@ -12,30 +12,20 @@
             }
         }
     },
-    "issues": {
-        "deprecated_yaml": {
-            "description": "Configuring {integration_title} using YAML is being removed.\n\nYour configuration is already imported.\n\nRemove the `{domain}` configuration from your configuration.yaml file and restart Home Assistant to fix this issue.",
-            "title": "The {integration_title} YAML configuration is being removed"
-        },
-        "import_failed": {
-            "description": "The {integration_title} integration failed to import.\n\nPlease check the logs for more details.",
-            "title": "The {integration_title} failed to import"
-        }
-    },
     "services": {
         "download_file": {
             "description": "Downloads a file to the download location.",
             "fields": {
                 "filename": {
-                    "description": "Determine the filename.",
+                    "description": "Custom name for the downloaded file.",
                     "name": "Filename"
                 },
                 "overwrite": {
-                    "description": "Whether to overwrite the file or not.",
+                    "description": "Overwrite file if it exists.",
                     "name": "Overwrite"
                 },
                 "subdir": {
-                    "description": "Download into subdirectory.",
+                    "description": "Relative download path.",
                     "name": "Subdirectory"
                 },
                 "url": {

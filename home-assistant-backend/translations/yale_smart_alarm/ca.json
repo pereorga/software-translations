@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -11,8 +12,12 @@
         "step": {
             "reauth_confirm": {
                 "data": {
+                    "password": "Contrasenya"
+                }
+            },
+            "reconfigure": {
+                "data": {
                     "area_id": "ID d'\u00e0rea",
-                    "name": "Nom",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 }
@@ -46,16 +51,27 @@
             "panic": {
                 "name": "Bot\u00f3 de p\u00e0nic"
             }
+        },
+        "select": {
+            "volume": {
+                "name": "Volum",
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "off": "OFF"
+                }
+            }
+        },
+        "switch": {
+            "autolock": {
+                "name": "Bloqueig autom\u00e0tic"
+            }
         }
     },
     "options": {
-        "error": {
-            "code_format_mismatch": "El codi no cont\u00e9 el nombre de d\u00edgits adequat"
-        },
         "step": {
             "init": {
                 "data": {
-                    "code": "Codi predeterminat per als panys, en cas que no se'n configuri cap",
                     "lock_code_digits": "Nombre de d\u00edgits del codi PIN dels panys"
                 }
             }

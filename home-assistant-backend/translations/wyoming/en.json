@@ -39,9 +39,6 @@
             }
         },
         "select": {
-            "noise_suppression": {
-                "name": "Noise suppression"
-            },
             "noise_suppression_level": {
                 "name": "Noise suppression level",
                 "state": {
@@ -53,18 +50,23 @@
                 }
             },
             "pipeline": {
-                "name": "Assist pipeline",
+                "name": "Assistant",
                 "state": {
                     "preferred": "Preferred"
+                }
+            },
+            "vad_sensitivity": {
+                "name": "Finished speaking detection",
+                "state": {
+                    "aggressive": "Aggressive",
+                    "default": "Default",
+                    "relaxed": "Relaxed"
                 }
             }
         },
         "switch": {
             "mute": {
                 "name": "Mute"
-            },
-            "satellite_enabled": {
-                "name": "Satellite enabled"
             }
         }
     }

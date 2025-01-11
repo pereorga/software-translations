@@ -24,12 +24,6 @@
             }
         }
     },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
-        }
-    },
     "services": {
         "delete_command": {
             "description": "Deletes a command or a list of commands from the database.",
@@ -98,15 +92,15 @@
             "name": "Send command"
         },
         "toggle": {
-            "description": "Toggles a device on/off.",
+            "description": "Sends the toggle command.",
             "name": "Toggle"
         },
         "turn_off": {
-            "description": "Turns the device off.",
+            "description": "Sends the turn off command.",
             "name": "Turn off"
         },
         "turn_on": {
-            "description": "Sends the power on command.",
+            "description": "Sends the turn on command.",
             "fields": {
                 "activity": {
                     "description": "Activity ID or activity name to be started.",

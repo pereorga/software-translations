@@ -39,9 +39,6 @@
             "current_c_a": {
                 "name": "Phase C current"
             },
-            "evse_state": {
-                "name": "State"
-            },
             "grid_hz": {
                 "name": "Grid frequency"
             },
@@ -50,6 +47,12 @@
             },
             "handle_temp_c": {
                 "name": "Handle temperature"
+            },
+            "mcu_temp_c": {
+                "name": "MCU temperature"
+            },
+            "pcba_temp_c": {
+                "name": "PCB temperature"
             },
             "session_energy_wh": {
                 "name": "Session energy"
@@ -63,7 +66,7 @@
                     "charging_reduced": "Charging (reduced)",
                     "connected": "Vehicle connected",
                     "error": "Error",
-                    "negociating": "Negociating connection",
+                    "negotiating": "Negotiating connection",
                     "not_connected": "Vehicle not connected",
                     "ready": "Ready to charge",
                     "waiting_car": "Waiting for car"

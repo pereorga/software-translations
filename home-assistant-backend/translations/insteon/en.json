@@ -2,12 +2,10 @@
     "config": {
         "abort": {
             "cannot_connect": "Failed to connect",
-            "not_insteon_device": "Discovered device not an Insteon device",
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
+            "not_insteon_device": "Discovered device not an Insteon device"
         },
         "error": {
-            "cannot_connect": "Failed to connect",
-            "select_single": "Select one option."
+            "cannot_connect": "Failed to connect"
         },
         "flow_title": "{name}",
         "step": {
@@ -40,9 +38,6 @@
                 "title": "Insteon PLM"
             },
             "user": {
-                "data": {
-                    "modem_type": "Modem type."
-                },
                 "description": "Select the Insteon modem type.",
                 "menu_options": {
                     "hubv1": "Hub version 1 (pre 2014)",
@@ -55,8 +50,7 @@
     "options": {
         "error": {
             "cannot_connect": "Failed to connect",
-            "input_error": "Invalid entries, please check your values.",
-            "select_single": "Select one option."
+            "input_error": "Invalid entries, please check your values."
         },
         "step": {
             "add_override": {
@@ -92,14 +86,6 @@
                 "description": "Change the Insteon PLM connection information."
             },
             "init": {
-                "data": {
-                    "add_override": "Add a device override.",
-                    "add_x10": "Add an X10 device.",
-                    "change_hub_config": "Change the Hub configuration.",
-                    "change_plm_config": "Change the PLM configuration.",
-                    "remove_override": "Remove a device override.",
-                    "remove_x10": "Remove an X10 device."
-                },
                 "menu_options": {
                     "add_override": "Add a device override.",
                     "add_x10": "Add an X10 device.",
@@ -125,7 +111,7 @@
     },
     "services": {
         "add_all_link": {
-            "description": "Tells the Insteom Modem (IM) start All-Linking mode. Once the IM is in All-Linking mode, press the link button on the device to complete All-Linking.",
+            "description": "Tells the Insteon Modem (IM) start All-Linking mode. Once the IM is in All-Linking mode, press the link button on the device to complete All-Linking.",
             "fields": {
                 "group": {
                     "description": "All-Link group number.",
@@ -227,7 +213,7 @@
             "name": "X10 all lights on"
         },
         "x10_all_units_off": {
-            "description": "Tells the Insteom Modem (IM) start All-Linking mode. Once the IM is in All-Linking mode, press the link button on the device to complete All-Linking.",
+            "description": "Tells the Insteon Modem (IM) start All-Linking mode. Once the IM is in All-Linking mode, press the link button on the device to complete All-Linking.",
             "fields": {
                 "housecode": {
                     "description": "X10 house code.",

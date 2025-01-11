@@ -24,7 +24,6 @@
                 "data": {
                     "device_name": "Nom del dispositiu"
                 },
-                "description": "Introdueix la teva configuraci\u00f3 de Hive ",
                 "title": "Configuraci\u00f3 de Hive."
             },
             "reauth": {
@@ -46,6 +45,24 @@
             }
         }
     },
+    "entity": {
+        "sensor": {
+            "heating": {
+                "state": {
+                    "manual": "Manual",
+                    "off": "OFF",
+                    "schedule": "Programaci\u00f3"
+                }
+            },
+            "hot_water": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON",
+                    "schedule": "Programaci\u00f3"
+                }
+            }
+        }
+    },
     "options": {
         "step": {
             "user": {
@@ -58,10 +75,18 @@
         }
     },
     "services": {
+        "boost_heating_off": {
+            "fields": {
+                "entity_id": {
+                    "name": "ID d'entitat"
+                }
+            }
+        },
         "boost_heating_on": {
             "fields": {
                 "temperature": {
-                    "description": "Configura la temperatura objectiu del per\u00edode incrementat."
+                    "description": "Configura la temperatura objectiu del per\u00edode incrementat.",
+                    "name": "Temperatura"
                 }
             }
         },

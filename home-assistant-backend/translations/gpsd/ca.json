@@ -15,7 +15,17 @@
     },
     "entity": {
         "sensor": {
+            "elevation": {
+                "name": "Altitud"
+            },
+            "latitude": {
+                "name": "Latitud"
+            },
+            "longitude": {
+                "name": "Longitud"
+            },
             "mode": {
+                "name": "Mode",
                 "state_attributes": {
                     "elevation": {
                         "name": "Altitud"
@@ -36,6 +46,9 @@
                         "name": "Velocitat"
                     }
                 }
+            },
+            "time": {
+                "name": "Hora"
             }
         }
     }

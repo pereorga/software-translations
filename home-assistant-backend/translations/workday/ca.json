@@ -1,13 +1,11 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Dia laborable ja s'ha configurat amb la configuraci\u00f3 escollida",
-            "incorrect_province": "Importaci\u00f3 yaml de subdivisi\u00f3 de pa\u00eds incorrecta"
+            "already_configured": "Dia laborable ja s'ha configurat amb la configuraci\u00f3 escollida"
         },
         "error": {
             "add_holiday_error": "Format de data incorrecte (AAAA-MM-DD)",
             "add_holiday_range_error": "Format de data incorrecte en l'interval (AAAA-MM-DD, AAAA-MM-DD)",
-            "already_configured": "El servei ja est\u00e0 configurat",
             "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de vacances/festiu no trobat",
             "remove_holiday_range_error": "Format de data incorrecte en l'interval (AAAA-MM-DD, AAAA-MM-DD)"
         },
@@ -15,19 +13,10 @@
             "options": {
                 "data": {
                     "add_holidays": "Afegeix vacances/festius",
+                    "category": "Categoria addicional de vacances",
                     "days_offset": "Despla\u00e7ament (\u00f2fset)",
-                    "excludes": "Exclusions",
                     "province": "Subdivisi\u00f3 de pa\u00eds",
-                    "remove_holidays": "Elimina vacances/festius",
-                    "workdays": "Dies laborables"
-                },
-                "data_description": {
-                    "add_holidays": "Afegeix vacances/festius personalitzats en format AAAA-MM-DD",
-                    "days_offset": "Dies de despla\u00e7ament (\u00f2fset)",
-                    "excludes": "Llista de dies laborables a excloure",
-                    "province": "Estat, territori, prov\u00edncia, regi\u00f3 de pa\u00eds",
-                    "remove_holidays": "Elimina vacances/festius amb el format AAAA-MM-DD o amb una part del nom",
-                    "workdays": "Llista de dies laborables"
+                    "remove_holidays": "Elimina vacances/festius"
                 },
                 "description": "Estableix les opcions addicionals de dia laborable de {name} pel pa\u00eds {country}"
             },
@@ -111,14 +100,6 @@
                         "data_description": {
                             "remove_holidays": "Elimina vacances/festius amb el format AAAA-MM-DD o amb una part del nom"
                         }
-                    },
-                    "named_holiday": {
-                        "data": {
-                            "remove_holidays": "Elimina vacances/festius"
-                        },
-                        "data_description": {
-                            "remove_holidays": "Elimina vacances/festius amb el format AAAA-MM-DD o amb una part del nom"
-                        }
                     }
                 }
             }
@@ -139,10 +120,6 @@
                 }
             },
             "title": "La prov\u00edncia configurada del pa\u00eds {country} de {title} no existeix"
-        },
-        "deprecated_yaml": {
-            "description": "La configuraci\u00f3 de 'Dia laborable' mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLa configuraci\u00f3 YAML existent s'ha importat autom\u00e0ticament a la interf\u00edcie d'usuari.\n\nElimina la configuraci\u00f3 YAML de 'Dia laborable' del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La configuraci\u00f3 YAML de 'Dia laborable' est\u00e0 sent eliminada"
         }
     },
     "options": {
@@ -157,6 +134,7 @@
             "init": {
                 "data": {
                     "add_holidays": "Afegeix vacances/festius",
+                    "category": "Categoria addicional de vacances",
                     "days_offset": "Despla\u00e7ament (\u00f2fset)",
                     "excludes": "Exclusions",
                     "province": "Subdivisi\u00f3 de pa\u00eds",
@@ -176,9 +154,22 @@
         }
     },
     "selector": {
-        "country": {
+        "category": {
             "options": {
-                "none": "Sense pa\u00eds"
+                "armed_forces": "Forces armades",
+                "bank": "Banc",
+                "chinese": "Xin\u00e8s",
+                "christian": "Cristi\u00e0",
+                "government": "Govern",
+                "half_day": "Mig dia",
+                "hebrew": "Hebreu",
+                "hindu": "Hind\u00fa",
+                "islamic": "Isl\u00e0mic",
+                "optional": "Opcional",
+                "public": "P\u00fablic",
+                "school": "Escolar",
+                "unofficial": "No oficial",
+                "workday": "Dia laborable"
             }
         },
         "days": {

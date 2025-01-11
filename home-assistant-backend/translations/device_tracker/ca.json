@@ -4,6 +4,9 @@
             "is_home": "{entity_name} \u00e9s a casa",
             "is_not_home": "{entity_name} no \u00e9s a casa"
         },
+        "extra_fields": {
+            "zone": "Zona"
+        },
         "trigger_type": {
             "enters": "{entity_name} entri a una zona",
             "leaves": "{entity_name} surti d'una zona"
@@ -11,7 +14,7 @@
     },
     "entity_component": {
         "_": {
-            "name": "Seguiment de dispositius",
+            "name": "Seguiment de dispositiu",
             "state": {
                 "home": "A casa",
                 "not_home": "Fora"
@@ -39,12 +42,6 @@
                     }
                 }
             }
-        }
-    },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "Suport de la plataforma no compatible"
         }
     },
     "services": {
@@ -80,5 +77,5 @@
             }
         }
     },
-    "title": "Seguiment de dispositius"
+    "title": "Seguiment de dispositiu"
 }

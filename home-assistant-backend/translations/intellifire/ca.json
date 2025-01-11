@@ -1,38 +1,19 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
             "not_intellifire_device": "No \u00e9s un dispositiu IntelliFire.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "api_error": "Ha fallat l'inici de sessi\u00f3",
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "iftapi_connect": "S'ha produ\u00eft un error en connectar a iftapi.net"
+            "api_error": "Ha fallat l'inici de sessi\u00f3"
         },
-        "flow_title": "{serial} ({host})",
+        "flow_title": "{serial}",
         "step": {
-            "api_config": {
+            "cloud_api": {
                 "data": {
                     "password": "Contrasenya",
                     "username": "Correu electr\u00f2nic"
                 }
-            },
-            "dhcp_confirm": {
-                "description": "Vols configurar {host}\nS\u00e8rie: {serial}?"
-            },
-            "manual_device_entry": {
-                "data": {
-                    "host": "Amfitri\u00f3 (adre\u00e7a IP)"
-                },
-                "description": "Configuraci\u00f3 local"
-            },
-            "pick_device": {
-                "data": {
-                    "host": "Amfitri\u00f3"
-                },
-                "description": "S'han descobert els dispositius IntelliFire seg\u00fcents. Selecciona el que vulguis configurar.",
-                "title": "Selecci\u00f3 de dispositiu"
             }
         }
     },
@@ -40,6 +21,9 @@
         "binary_sensor": {
             "accessory_error": {
                 "name": "Error d'accessori"
+            },
+            "cloud_connectivity": {
+                "name": "Connectivitat al n\u00favol"
             },
             "disabled_error": {
                 "name": "Error de desactivaci\u00f3"
@@ -61,6 +45,9 @@
             },
             "lights_error": {
                 "name": "Error de llums"
+            },
+            "local_connectivity": {
+                "name": "Connectivitat local"
             },
             "maintenance_error": {
                 "name": "Error de manteniment"

@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
-        },
         "step": {
             "user": {
                 "description": "Do you want to start setup?"
@@ -19,6 +16,10 @@
                 }
             },
             "name": "Dump log objects"
+        },
+        "log_current_tasks": {
+            "description": "Logs all the current asyncio tasks.",
+            "name": "Log current asyncio tasks"
         },
         "log_event_loop_scheduled": {
             "description": "Logs what is scheduled in the event loop.",

@@ -1,5 +1,8 @@
 {
     "config": {
+        "error": {
+            "tariffs_not_unique": "Tariffs must be unique"
+        },
         "step": {
             "user": {
                 "data": {
@@ -22,7 +25,7 @@
                     "tariffs": "A list of supported tariffs, leave empty if only a single tariff is needed."
                 },
                 "description": "Create a sensor which tracks consumption of various utilities (e.g., energy, gas, water, heating) over a configured period of time, typically monthly. The utility meter sensor optionally supports splitting the consumption by tariffs, in that case one sensor for each tariff is created as well as a select entity to choose the current tariff.",
-                "title": "Add Utility Meter"
+                "title": "Create Utility Meter"
             }
         }
     },

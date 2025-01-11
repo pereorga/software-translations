@@ -1,4 +1,9 @@
 {
+    "common": {
+        "data_description_password": "The Remote Admin Password from the Fully Kiosk Browser app settings.",
+        "data_description_ssl": "Is the Fully Kiosk app configured to require SSL for the connection?",
+        "data_description_verify_ssl": "Should SSL certificartes be verified? This should be off for self-signed certificates."
+    },
     "config": {
         "abort": {
             "already_configured": "Account is already configured"
@@ -10,7 +15,14 @@
         "step": {
             "discovery_confirm": {
                 "data": {
-                    "password": "Password"
+                    "password": "Password",
+                    "ssl": "Uses an SSL certificate",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "password": "The Remote Admin Password from the Fully Kiosk Browser app settings.",
+                    "ssl": "Is the Fully Kiosk app configured to require SSL for the connection?",
+                    "verify_ssl": "Should SSL certificartes be verified? This should be off for self-signed certificates."
                 },
                 "description": "Do you want to set up {name} ({host})?"
             },
@@ -22,7 +34,10 @@
                     "verify_ssl": "Verify SSL certificate"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of the device running your Fully Kiosk Browser application."
+                    "host": "The hostname or IP address of the device running your Fully Kiosk Browser application.",
+                    "password": "The Remote Admin Password from the Fully Kiosk Browser app settings.",
+                    "ssl": "Is the Fully Kiosk app configured to require SSL for the connection?",
+                    "verify_ssl": "Should SSL certificartes be verified? This should be off for self-signed certificates."
                 }
             }
         }
@@ -54,6 +69,19 @@
             },
             "to_foreground": {
                 "name": "Bring to foreground"
+            }
+        },
+        "image": {
+            "screenshot": {
+                "name": "Screenshot"
+            }
+        },
+        "notify": {
+            "overlay_message": {
+                "name": "Overlay message"
+            },
+            "tts": {
+                "name": "Text to speech"
             }
         },
         "number": {

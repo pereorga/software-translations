@@ -11,12 +11,10 @@
         },
         "flow_title": "{project_url}",
         "step": {
-            "reauth": {
+            "reauth_confirm": {
                 "data": {
                     "personal_access_token": "Token d'Acc\u00e9s Personal (PAT)"
-                },
-                "description": "L'autenticaci\u00f3 de {project_url} ha fallat. Si us plau, introdueix les teves credencials actuals.",
-                "title": "Reautenticaci\u00f3"
+                }
             },
             "user": {
                 "data": {
@@ -26,6 +24,13 @@
                 },
                 "description": "Configura una inst\u00e0ncia d'Azure DevOps per accedir al teu projecte. El token d'acc\u00e9s personal nom\u00e9s \u00e9s necessari per a projectes privats.",
                 "title": "Afegeix un projecte Azure DevOps"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "latest_build": {
+                "name": "\u00daltima versi\u00f3 de {definition_name}"
             }
         }
     }

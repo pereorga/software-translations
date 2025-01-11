@@ -1,8 +1,11 @@
 {
     "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        },
         "step": {
             "reauth_confirm": {
-                "description": "Press SUBMIT to reauthenticate"
+                "description": "Select **Submit** to reauthenticate"
             }
         }
     },
@@ -16,7 +19,7 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "Press SUBMIT to confirm the power supply has been replaced",
+                        "description": "Select **Submit** to confirm the power supply has been replaced",
                         "title": "The power supply needs to be replaced"
                     }
                 }
@@ -35,7 +38,7 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "Press SUBMIT when blinker fluid has been refilled",
+                        "description": "Select **Submit** when blinker fluid has been refilled",
                         "title": "Blinker fluid needs to be refilled"
                     }
                 }
@@ -49,6 +52,56 @@
         "unfixable_problem": {
             "description": "This issue is never going to give up.",
             "title": "This is not a fixable problem"
+        }
+    },
+    "options": {
+        "step": {
+            "options_1": {
+                "sections": {
+                    "section_1": {
+                        "data": {
+                            "bool": "Optional boolean",
+                            "int": "Numeric input"
+                        },
+                        "data_description": {
+                            "int": "A longer description for the numeric input"
+                        },
+                        "description": "This section allows input of some extra data",
+                        "name": "Collapsible section"
+                    }
+                },
+                "submit": "Save!"
+            }
+        }
+    },
+    "services": {
+        "test_service_1": {
+            "description": "Fake action for testing",
+            "fields": {
+                "field_1": {
+                    "description": "Number of seconds",
+                    "name": "Field 1"
+                },
+                "field_2": {
+                    "description": "Mode",
+                    "name": "Field 2"
+                },
+                "field_3": {
+                    "description": "Number of hours",
+                    "name": "Field 3"
+                },
+                "field_4": {
+                    "description": "Direction",
+                    "name": "Field 4"
+                }
+            },
+            "name": "Test action 1",
+            "sections": {
+                "advanced_fields": {
+                    "description": "Some very advanced things",
+                    "name": "Advanced options"
+                }
+            }
         }
     }
 }

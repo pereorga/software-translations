@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "bluetooth_not_available": "Almenys un adaptador Bluetooth o controlador remot ha d'estar configurat per utilitzar iBeacon Tracker.",
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
+            "bluetooth_not_available": "Almenys un adaptador Bluetooth o controlador remot ha d'estar configurat per utilitzar iBeacon Tracker."
         },
         "step": {
             "user": {
@@ -31,10 +30,8 @@
             "init": {
                 "data": {
                     "allow_nameless_uuids": "UUID permesos actualment. Desmarca per eliminar-los",
-                    "min_rssi": "RSSI m\u00ednim",
                     "new_uuid": "Introdueix un nou UUID perm\u00e8s"
-                },
-                "description": "S'ignoraran els iBeacons amb un valor d'RSSI inferior al m\u00ednim. Si la integraci\u00f3 veu iBeacons propers, augmentar aquest valor pot ajudar."
+                }
             }
         }
     }

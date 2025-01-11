@@ -3,10 +3,13 @@
         "abort": {
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
+            "api_error": "Error while communicating with Mi API: {error_detail}",
             "no_devices_found": "No devices found on the network",
             "reauth_successful": "Re-authentication was successful"
         },
         "error": {
+            "api_device_not_found": "The device was not found in your Mi account.",
+            "auth_failed": "Authentication failed: {error_detail}",
             "decryption_failed": "The provided bindkey did not work, sensor data could not be decrypted. Please check it and try again.",
             "expected_24_characters": "Expected a 24 character hexadecimal bindkey.",
             "expected_32_characters": "Expected a 32 character hexadecimal bindkey."
@@ -16,6 +19,13 @@
             "bluetooth_confirm": {
                 "description": "Do you want to set up {name}?"
             },
+            "cloud_auth": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "Please provide your Mi app username and password. This data won't be saved and only used to retrieve the device encryption key. Usernames and passwords are case sensitive."
+            },
             "confirm_slow": {
                 "description": "There hasn't been a broadcast from this device in the last minute so we aren't sure if this device uses encryption or not. This may be because the device uses a slow broadcast interval. Confirm to add this device anyway, then the next time a broadcast is received you will be prompted to enter its bindkey if it's needed."
             },
@@ -24,6 +34,13 @@
                     "bindkey": "Bindkey"
                 },
                 "description": "The sensor data broadcast by the sensor is encrypted. In order to decrypt it we need a 32 character hexadecimal bindkey."
+            },
+            "get_encryption_key_4_5_choose_method": {
+                "description": "A Mi device can be set up in Home Assistant in two different ways.\n\nYou can enter the bindkey yourself, or Home Assistant can import them from your Mi account.",
+                "menu_options": {
+                    "cloud_auth": "Mi account (recommended)",
+                    "get_encryption_key_4_5": "Enter encryption key manually"
+                }
             },
             "get_encryption_key_legacy": {
                 "data": {
@@ -76,7 +93,7 @@
             "button_dry": "Button Dry \"{subtype}\"",
             "button_fan": "Button Fan \"{subtype}\"",
             "button_heat": "Button Heat \"{subtype}\"",
-            "button_increase_speed": "Button Inrease Speed \"{subtype}\"",
+            "button_increase_speed": "Button Increase Speed \"{subtype}\"",
             "button_increase_wind_speed": "Button Increase Wind Speed \"{subtype}\"",
             "button_left": "Button Left \"{subtype}\"",
             "button_light": "Button Light \"{subtype}\"",
@@ -98,8 +115,7 @@
             "dimmer": "{subtype}",
             "fingerprint": "{subtype}",
             "lock": "{subtype}",
-            "motion": "{subtype}",
-            "motion_detected": "Motion detected"
+            "motion": "{subtype}"
         }
     },
     "entity": {

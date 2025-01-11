@@ -32,9 +32,6 @@
             "clearance_height": {
                 "name": "Clearance height"
             },
-            "current_measurement": {
-                "name": "Water level"
-            },
             "oxygen_level": {
                 "name": "Oxygen level"
             },
@@ -50,6 +47,11 @@
             "water_temperature": {
                 "name": "Water temperature"
             }
+        }
+    },
+    "exceptions": {
+        "communication_error": {
+            "message": "Failed to communicate with API: {error}"
         }
     }
 }

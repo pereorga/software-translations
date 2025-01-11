@@ -1,13 +1,11 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Workday has already been setup with chosen configuration",
-            "incorrect_province": "Incorrect subdivision from yaml import"
+            "already_configured": "Workday has already been setup with chosen configuration"
         },
         "error": {
             "add_holiday_error": "Incorrect format on date (YYYY-MM-DD)",
             "add_holiday_range_error": "Incorrect format on date range (YYYY-MM-DD,YYYY-MM-DD)",
-            "already_configured": "Service is already configured",
             "remove_holiday_error": "Incorrect format on date (YYYY-MM-DD) or holiday name not found",
             "remove_holiday_range_error": "Incorrect format on date range (YYYY-MM-DD,YYYY-MM-DD)"
         },
@@ -15,21 +13,23 @@
             "options": {
                 "data": {
                     "add_holidays": "Add holidays",
+                    "category": "Additional category as holiday",
                     "days_offset": "Offset",
-                    "excludes": "Excludes",
+                    "excludes": "Days to exclude",
                     "language": "Language for named holidays",
                     "province": "Subdivision of country",
                     "remove_holidays": "Remove Holidays",
-                    "workdays": "Workdays"
+                    "workdays": "Days to include"
                 },
                 "data_description": {
                     "add_holidays": "Add custom holidays as YYYY-MM-DD or as range using `,` as separator",
+                    "category": "Select additional categories to include as holidays",
                     "days_offset": "Days offset from current day",
-                    "excludes": "List of workdays to exclude, notice the keyword `holiday` and read the documentation on how to use it correctly",
+                    "excludes": "Select which weekdays to exclude as workdays.\nThe key `holidays` adds those for the configured country, customizable by all the settings below. Read the documentation on how to use them correctly.",
                     "language": "Language to use when configuring named holiday exclusions",
                     "province": "State, territory, province or region of country",
                     "remove_holidays": "Remove holidays as YYYY-MM-DD, as range using `,` as separator or by using partial of name",
-                    "workdays": "List of working days"
+                    "workdays": "Select which weekdays to include as possible workdays."
                 },
                 "description": "Set additional options for {name} configured for country {country}"
             },
@@ -49,10 +49,10 @@
                         "name": "Offset"
                     },
                     "excludes": {
-                        "name": "Excludes"
+                        "name": "Days to exclude"
                     },
                     "workdays": {
-                        "name": "Workdays"
+                        "name": "Days to include"
                     }
                 }
             }
@@ -118,16 +118,6 @@
                         },
                         "description": "Remove named holiday `{remove_holidays}` as it can't be found in country {country}.",
                         "title": "Configured named holiday {remove_holidays} for {title} does not exist"
-                    },
-                    "named_holiday": {
-                        "data": {
-                            "remove_holidays": "Remove Holidays"
-                        },
-                        "data_description": {
-                            "remove_holidays": "Remove holidays as YYYY-MM-DD, as range using `,` as separator or by using partial of name"
-                        },
-                        "description": "Remove named holiday `{remove_holidays}` as it can't be found in country {country}.",
-                        "title": "Configured named holiday {remove_holidays} for {title} does not exist"
                     }
                 }
             },
@@ -149,10 +139,6 @@
                 }
             },
             "title": "Configured province in country {country} for {title} does not exist"
-        },
-        "deprecated_yaml": {
-            "description": "Configuring Workday using YAML is being removed.\n\nYour existing YAML configuration has been imported into the UI automatically.\n\nRemove the Workday YAML configuration from your configuration.yaml file and restart Home Assistant to fix this issue.",
-            "title": "The Workday YAML configuration is being removed"
         }
     },
     "options": {
@@ -167,30 +153,46 @@
             "init": {
                 "data": {
                     "add_holidays": "Add holidays",
+                    "category": "Additional category as holiday",
                     "days_offset": "Offset",
-                    "excludes": "Excludes",
+                    "excludes": "Days to exclude",
                     "language": "Language for named holidays",
                     "province": "Subdivision of country",
                     "remove_holidays": "Remove Holidays",
-                    "workdays": "Workdays"
+                    "workdays": "Days to include"
                 },
                 "data_description": {
                     "add_holidays": "Add custom holidays as YYYY-MM-DD or as range using `,` as separator",
+                    "category": "Select additional categories to include as holidays",
                     "days_offset": "Days offset from current day",
-                    "excludes": "List of workdays to exclude, notice the keyword `holiday` and read the documentation on how to use it correctly",
+                    "excludes": "Select which weekdays to exclude as workdays.\nThe key `holidays` adds those for the configured country, customizable by all the settings below. Read the documentation on how to use them correctly.",
                     "language": "Language to use when configuring named holiday exclusions",
                     "province": "State, territory, province or region of country",
                     "remove_holidays": "Remove holidays as YYYY-MM-DD, as range using `,` as separator or by using partial of name",
-                    "workdays": "List of working days"
+                    "workdays": "Select which weekdays to include as possible workdays."
                 },
                 "description": "Change additional options for {name} configured for country {country}"
             }
         }
     },
     "selector": {
-        "country": {
+        "category": {
             "options": {
-                "none": "No country"
+                "armed_forces": "Armed forces",
+                "bank": "Bank",
+                "catholic": "Catholic",
+                "chinese": "Chinese",
+                "christian": "Christian",
+                "government": "Government",
+                "half_day": "Half day",
+                "hebrew": "Hebrew",
+                "hindu": "Hindu",
+                "islamic": "Islamic",
+                "optional": "Optional",
+                "public": "Public",
+                "school": "School",
+                "unofficial": "Unofficial",
+                "workday": "Workday"
             }
         },
         "days": {

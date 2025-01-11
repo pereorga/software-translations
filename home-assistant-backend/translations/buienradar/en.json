@@ -260,12 +260,6 @@
             "groundtemperature": {
                 "name": "Ground temperature"
             },
-            "humidity": {
-                "name": "Humidity"
-            },
-            "irradiance": {
-                "name": "Irradiance"
-            },
             "maxrain_1d": {
                 "name": "Maximum rain 1d"
             },
@@ -311,17 +305,11 @@
             "mintemp_5d": {
                 "name": "Minimum temperature 5d"
             },
-            "precipitation": {
-                "name": "Precipitation"
-            },
             "precipitation_forecast_average": {
                 "name": "Precipitation forecast average"
             },
             "precipitation_forecast_total": {
                 "name": "Precipitation forecast total"
-            },
-            "pressure": {
-                "name": "Pressure"
             },
             "rain_1d": {
                 "name": "Rain 1d"
@@ -394,9 +382,6 @@
             },
             "symbol_5d": {
                 "name": "Symbol 5d"
-            },
-            "temperature": {
-                "name": "Temperature"
             },
             "temperature_1d": {
                 "name": "Temperature 1d"
@@ -473,9 +458,6 @@
             "windgust": {
                 "name": "Wind gust"
             },
-            "windspeed": {
-                "name": "Wind speed"
-            },
             "windspeed_1d": {
                 "name": "Wind speed 1d"
             },
@@ -497,9 +479,9 @@
         "step": {
             "init": {
                 "data": {
-                    "country_code": "Country code of the country to display camera images.",
-                    "delta": "Time interval in seconds between camera image updates",
-                    "timeframe": "Minutes to look ahead for precipitation forecast"
+                    "country_code": "Country to display camera images for.",
+                    "delta": "Interval between camera image updates",
+                    "timeframe": "Time to look ahead for precipitation forecast"
                 }
             }
         }

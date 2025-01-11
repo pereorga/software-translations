@@ -114,12 +114,6 @@
             }
         },
         "switch": {
-            "automation": {
-                "state": {
-                    "off": "Disabled",
-                    "on": "Enabled"
-                }
-            },
             "light_sensor_enabled": {
                 "name": "Light sensor enabled"
             },
@@ -164,18 +158,18 @@
             "name": "Activate Hue scene"
         },
         "hue_activate_scene": {
-            "description": "Activates a hue scene stored in the hue hub.",
+            "description": "Activates a Hue scene stored in the Hue hub.",
             "fields": {
                 "dynamic": {
                     "description": "Enable dynamic mode of the scene (V2 bridges and supported scenes only).",
                     "name": "Dynamic"
                 },
                 "group_name": {
-                    "description": "Name of hue group/room from the hue app.",
+                    "description": "Name of Hue group/room from the Hue app.",
                     "name": "Group"
                 },
                 "scene_name": {
-                    "description": "Name of hue scene from the hue app.",
+                    "description": "Name of Hue scene from the Hue app.",
                     "name": "Scene"
                 }
             },

@@ -1,4 +1,9 @@
 {
+    "common": {
+        "climate_preset_heater": "Escalfador",
+        "climate_preset_solar": "Solar",
+        "service_config_entry_name": "Entrada de configuraci\u00f3"
+    },
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat"
@@ -25,6 +30,36 @@
             }
         }
     },
+    "entity": {
+        "number": {
+            "cya": {
+                "name": "\u00c0cid cian\u00faric"
+            },
+            "salt_tds_ppm": {
+                "name": "Sal/TDS"
+            },
+            "total_alkalinity": {
+                "name": "Alcalinitat total"
+            }
+        },
+        "sensor": {
+            "air_temperature": {
+                "name": "Temperatura de l'aire"
+            },
+            "cya": {
+                "name": "\u00c0cid cian\u00faric"
+            },
+            "salt_tds_ppm": {
+                "name": "Sal/TDS"
+            },
+            "saturation": {
+                "name": "\u00cdndex de saturaci\u00f3"
+            },
+            "total_alkalinity": {
+                "name": "Alcalinitat total"
+            }
+        }
+    },
     "options": {
         "step": {
             "init": {
@@ -41,26 +76,6 @@
             "fields": {
                 "color_mode": {
                     "name": "Mode de color"
-                },
-                "config_entry": {
-                    "description": "Entrada de configuraci\u00f3 a utilitzar per a aquest servei.",
-                    "name": "Entrada de configuraci\u00f3"
-                }
-            }
-        },
-        "start_super_chlorination": {
-            "fields": {
-                "config_entry": {
-                    "description": "Entrada de configuraci\u00f3 a utilitzar per a aquest servei.",
-                    "name": "Entrada de configuraci\u00f3"
-                }
-            }
-        },
-        "stop_super_chlorination": {
-            "fields": {
-                "config_entry": {
-                    "description": "Entrada de configuraci\u00f3 a utilitzar per a aquest servei.",
-                    "name": "Entrada de configuraci\u00f3"
                 }
             }
         }

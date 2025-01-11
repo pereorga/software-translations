@@ -54,6 +54,9 @@
             "is_update": "{entity_name} has an update available",
             "is_vibration": "{entity_name} is detecting vibration"
         },
+        "extra_fields": {
+            "for": "Duration"
+        },
         "trigger_type": {
             "bat_low": "{entity_name} battery low",
             "charging": "{entity_name} charging",
@@ -108,20 +111,6 @@
             "update": "{entity_name} got an update available",
             "vibration": "{entity_name} started detecting vibration"
         }
-    },
-    "device_class": {
-        "co": "carbon monoxide",
-        "cold": "cold",
-        "gas": "gas",
-        "heat": "heat",
-        "moisture": "moisture",
-        "motion": "motion",
-        "occupancy": "occupancy",
-        "power": "power",
-        "problem": "problem",
-        "smoke": "smoke",
-        "sound": "sound",
-        "vibration": "vibration"
     },
     "entity_component": {
         "_": {
@@ -253,8 +242,8 @@
         "power": {
             "name": "Power",
             "state": {
-                "off": "Clear",
-                "on": "Detected"
+                "off": "Off",
+                "on": "On"
             }
         },
         "presence": {
@@ -326,12 +315,6 @@
                 "off": "Closed",
                 "on": "Open"
             }
-        }
-    },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
         }
     },
     "title": "Binary sensor"

@@ -57,12 +57,6 @@
             "message": "Preset mode {preset_mode} is not valid, valid preset modes are: {preset_modes}."
         }
     },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
-        }
-    },
     "selector": {
         "direction": {
             "options": {
@@ -73,47 +67,47 @@
     },
     "services": {
         "decrease_speed": {
-            "description": "Decreases the speed of the fan.",
+            "description": "Decreases the speed of a fan.",
             "fields": {
                 "percentage_step": {
-                    "description": "Decreases the speed by a percentage step.",
+                    "description": "Percentage step by which the speed should be decreased.",
                     "name": "Decrement"
                 }
             },
             "name": "Decrease speed"
         },
         "increase_speed": {
-            "description": "Increases the speed of the fan.",
+            "description": "Increases the speed of a fan.",
             "fields": {
                 "percentage_step": {
-                    "description": "Increases the speed by a percentage step.",
+                    "description": "Percentage step by which the speed should be increased.",
                     "name": "Increment"
                 }
             },
             "name": "Increase speed"
         },
         "oscillate": {
-            "description": "Controls oscillatation of the fan.",
+            "description": "Controls the oscillation of a fan.",
             "fields": {
                 "oscillating": {
-                    "description": "Turn on/off oscillation.",
+                    "description": "Turns oscillation on/off.",
                     "name": "Oscillating"
                 }
             },
             "name": "Oscillate"
         },
         "set_direction": {
-            "description": "Sets the fan rotation direction.",
+            "description": "Sets a fan's rotation direction.",
             "fields": {
                 "direction": {
-                    "description": "Direction to rotate.",
+                    "description": "Direction of the fan rotation.",
                     "name": "Direction"
                 }
             },
             "name": "Set direction"
         },
         "set_percentage": {
-            "description": "Sets the fan speed.",
+            "description": "Sets the speed of a fan.",
             "fields": {
                 "percentage": {
                     "description": "Speed of the fan.",
@@ -123,17 +117,17 @@
             "name": "Set speed"
         },
         "set_preset_mode": {
-            "description": "Sets preset mode.",
+            "description": "Sets preset fan mode.",
             "fields": {
                 "preset_mode": {
-                    "description": "Preset mode.",
+                    "description": "Preset fan mode.",
                     "name": "Preset mode"
                 }
             },
             "name": "Set preset mode"
         },
         "toggle": {
-            "description": "Toggles the fan on/off.",
+            "description": "Toggles a fan on/off.",
             "name": "Toggle"
         },
         "turn_off": {
@@ -148,7 +142,7 @@
                     "name": "Percentage"
                 },
                 "preset_mode": {
-                    "description": "Preset mode.",
+                    "description": "Preset fan mode.",
                     "name": "Preset mode"
                 }
             },

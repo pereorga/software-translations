@@ -5,6 +5,9 @@
             "already_in_progress": "Configuration flow is already in progress",
             "cannot_connect": "Failed to connect"
         },
+        "error": {
+            "cannot_connect": "Failed to connect"
+        },
         "step": {
             "discovery_confirm": {
                 "description": "Do you want to set up this Guardian device?"
@@ -61,19 +64,6 @@
             "valve_controller": {
                 "name": "Valve controller"
             }
-        }
-    },
-    "issues": {
-        "deprecated_service": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Update any automations or scripts that use this service to instead use the `{alternate_service}` service with a target entity ID of `{alternate_target}`.",
-                        "title": "The {deprecated_service} service will be removed"
-                    }
-                }
-            },
-            "title": "The {deprecated_service} service will be removed"
         }
     },
     "services": {

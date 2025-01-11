@@ -1,6 +1,7 @@
 {
     "config": {
         "abort": {
+            "account_mismatch": "The inexogy account authenticated with, does not match the account needed re-authentication.",
             "already_configured": "Account is already configured",
             "reauth_successful": "Re-authentication was successful"
         },
@@ -10,12 +11,6 @@
             "unknown": "Unexpected error"
         },
         "step": {
-            "reauth": {
-                "data": {
-                    "email": "Email",
-                    "password": "Password"
-                }
-            },
             "user": {
                 "data": {
                     "email": "Email",
@@ -61,18 +56,9 @@
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "time_between_update": "Minimum time between entity updates [s]"
-                }
-            }
-        }
-    },
     "system_health": {
         "info": {
-            "api_endpoint_reachable": "Discovergy API endpoint reachable"
+            "api_endpoint_reachable": "inexogy API endpoint reachable"
         }
     }
 }

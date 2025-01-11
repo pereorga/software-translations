@@ -20,17 +20,38 @@
             },
             "user": {
                 "data": {
-                    "continent": "Continent",
-                    "country": "Pa\u00eds",
-                    "mode": "Mode",
-                    "password": "Contrasenya",
-                    "username": "Nom d'usuari"
+                    "mode": "Mode"
                 }
             }
         }
     },
     "entity": {
+        "button": {
+            "reset_lifespan_side_brush": {
+                "name": "Restableix la vida \u00fatil del raspall lateral"
+            },
+            "station_action_empty_dustbin": {
+                "name": "Buida la paperera"
+            }
+        },
+        "event": {
+            "last_job": {
+                "name": "\u00daltima tasca",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "finished": "Acabat",
+                            "finished_with_warnings": "Acabat amb alertes",
+                            "manually_stopped": "Aturat manualment"
+                        }
+                    }
+                }
+            }
+        },
         "number": {
+            "cut_direction": {
+                "name": "Direcci\u00f3 de tall"
+            },
             "volume": {
                 "name": "Volum"
             }
@@ -41,6 +62,9 @@
             }
         },
         "sensor": {
+            "lifespan_side_brush": {
+                "name": "Vida \u00fatil del raspall lateral"
+            },
             "network_ip": {
                 "name": "Adre\u00e7a IP"
             },
@@ -49,6 +73,16 @@
             },
             "network_ssid": {
                 "name": "SSID Wi-Fi"
+            },
+            "station_state": {
+                "name": "Estat de l'estaci\u00f3",
+                "state": {
+                    "emptying_dustbin": "Buidant paperera",
+                    "idle": "Inactiu"
+                }
+            },
+            "stats_area": {
+                "name": "\u00c0rea netejada"
             },
             "total_stats_time": {
                 "name": "Durada total de la neteja"

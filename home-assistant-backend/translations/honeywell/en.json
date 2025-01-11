@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "reauth_successful": "Re-authentication was successful"
+        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication"
@@ -35,6 +38,14 @@
                 }
             }
         },
+        "humidifier": {
+            "dehumidifier": {
+                "name": "Dehumidifier"
+            },
+            "humidifier": {
+                "name": "Humidifier"
+            }
+        },
         "sensor": {
             "outdoor_humidity": {
                 "name": "Outdoor humidity"
@@ -42,6 +53,46 @@
             "outdoor_temperature": {
                 "name": "Outdoor temperature"
             }
+        },
+        "switch": {
+            "emergency_heat": {
+                "name": "Emergency heat"
+            }
+        }
+    },
+    "exceptions": {
+        "away_mode_failed": {
+            "message": "Honeywell set away mode failed"
+        },
+        "fan_mode_failed": {
+            "message": "Honeywell could not set fan mode"
+        },
+        "set_hold_failed": {
+            "message": "Honeywell could not set permanent hold"
+        },
+        "set_mode_failed": {
+            "message": "Honeywell invalid system mode returned {mode}"
+        },
+        "stop_hold_failed": {
+            "message": "Honeywell could not stop hold mode"
+        },
+        "switch_failed_off": {
+            "message": "Honeywell could turn off emergency heat mode."
+        },
+        "switch_failed_on": {
+            "message": "Honeywell could not set system mode to emergency heat mode."
+        },
+        "sys_mode_failed": {
+            "message": "Honeywell could not set system mode"
+        },
+        "temp_failed": {
+            "message": "Honeywell set temperature failed"
+        },
+        "temp_failed_range": {
+            "message": "Honeywell set temperature failed: temperature out of range. Mode: {mode}, Heat Temperuature: {heat}, Cool Temperature: {cool}"
+        },
+        "temp_failed_value": {
+            "message": "Honeywell set temperature failed: invalid temperature {temperature}"
         }
     },
     "options": {

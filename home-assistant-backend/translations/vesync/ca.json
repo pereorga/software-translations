@@ -17,6 +17,17 @@
         }
     },
     "entity": {
+        "fan": {
+            "vesync": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Autom\u00e0tic"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "air_quality": {
                 "name": "Qualitat de l'aire"
@@ -35,6 +46,9 @@
             },
             "energy_week": {
                 "name": "Consum d'energia setmanal"
+            },
+            "energy_year": {
+                "name": "Consum d'energia anual"
             },
             "filter_life": {
                 "name": "Vida \u00fatil del filtre"

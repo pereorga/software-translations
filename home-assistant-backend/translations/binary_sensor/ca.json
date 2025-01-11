@@ -54,6 +54,9 @@
             "is_update": "{entity_name} t\u00e9 una actualitzaci\u00f3 disponible",
             "is_vibration": "{entity_name} est\u00e0 detectant vibraci\u00f3"
         },
+        "extra_fields": {
+            "for": "Durada"
+        },
         "trigger_type": {
             "bat_low": "Bateria de {entity_name} baixa",
             "charging": "{entity_name} estigui carregant-se",
@@ -108,20 +111,6 @@
             "update": "{entity_name} obt\u00e9 una nova actualitzaci\u00f3 disponible",
             "vibration": "{entity_name} ha comen\u00e7at a detectar vibraci\u00f3"
         }
-    },
-    "device_class": {
-        "co": "mon\u00f2xid de carboni",
-        "cold": "fred",
-        "gas": "gas",
-        "heat": "calor",
-        "moisture": "humitat",
-        "motion": "moviment",
-        "occupancy": "ocupaci\u00f3",
-        "power": "pot\u00e8ncia",
-        "problem": "problema",
-        "smoke": "fum",
-        "sound": "so",
-        "vibration": "vibraci\u00f3"
     },
     "entity_component": {
         "_": {
@@ -253,8 +242,8 @@
         "power": {
             "name": "Pot\u00e8ncia",
             "state": {
-                "off": "Lliure",
-                "on": "Detectat"
+                "off": "OFF",
+                "on": "ON"
             }
         },
         "presence": {
@@ -326,12 +315,6 @@
                 "off": "Tancat/ada",
                 "on": "Obert/a"
             }
-        }
-    },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "Suport de la plataforma no compatible"
         }
     },
     "title": "Sensor binari"

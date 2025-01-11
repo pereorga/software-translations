@@ -5,10 +5,6 @@
             "incomplete_discovery": "Incomplete discovery",
             "no_devices_found": "No devices found on the network"
         },
-        "error": {
-            "one": "One",
-            "other": "Other"
-        },
         "flow_title": "{name}",
         "step": {
             "ssdp_confirm": {
@@ -52,6 +48,9 @@
             "packets_sent": {
                 "name": "Packets sent"
             },
+            "port_mapping_number_of_entries_ipv4": {
+                "name": "Number of port mapping entries (IPv4)"
+            },
             "upload_speed": {
                 "name": "Upload speed"
             },
@@ -67,6 +66,7 @@
         "step": {
             "init": {
                 "data": {
+                    "force_poll": "Force polling of all data",
                     "scan_interval": "Update interval (seconds, minimal 30)"
                 }
             }

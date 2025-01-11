@@ -8,16 +8,16 @@
             "reauth_unsuccessful": "Re-authentication was unsuccessful, please turn on your TV and try again."
         },
         "error": {
-            "cannot_connect": "Failed to connect, please turn on your TV or check ip address"
+            "cannot_connect": "Failed to connect, please turn on your TV or check the IP address"
         },
-        "flow_title": "LG webOS Smart TV",
+        "flow_title": "{name}",
         "step": {
             "pairing": {
-                "description": "Click submit and accept the pairing request on your TV.\n\n![Image](/static/images/config_webos.png)",
+                "description": "Select **Submit** and accept the pairing request on your TV.\n\n![Image](/static/images/config_webos.png)",
                 "title": "webOS TV Pairing"
             },
             "reauth_confirm": {
-                "description": "Click submit and accept the pairing request on your TV.\n\n![Image](/static/images/config_webos.png)",
+                "description": "Select **Submit** and accept the pairing request on your TV.\n\n![Image](/static/images/config_webos.png)",
                 "title": "webOS TV Pairing"
             },
             "user": {
@@ -28,8 +28,7 @@
                 "data_description": {
                     "host": "Hostname or IP address of your webOS TV."
                 },
-                "description": "Turn on TV, fill the following fields click submit",
-                "title": "Connect to webOS TV"
+                "description": "Turn on the TV, fill the host field and select **Submit**"
             }
         }
     },

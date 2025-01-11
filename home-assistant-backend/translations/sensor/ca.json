@@ -19,7 +19,6 @@
             "is_illuminance": "Il\u00b7luminaci\u00f3 actual de {entity_name}",
             "is_irradiance": "Irradi\u00e0ncia actual de {entity_name}",
             "is_moisture": "Humitat actual de {entity_name}",
-            "is_monetary": "Diners actuals de {entity_name}",
             "is_nitrogen_dioxide": "Concentraci\u00f3 actual de di\u00f2xid de nitrogen de {entity_name}",
             "is_nitrogen_monoxide": "Concentraci\u00f3 actual de mon\u00f2xid de nitrogen de {entity_name}",
             "is_nitrous_oxide": "Concentraci\u00f3 actual d'\u00f2xid nitr\u00f3s de {entity_name}",
@@ -48,6 +47,11 @@
             "is_weight": "Pes actual de {entity_name}",
             "is_wind_speed": "Velocitat del vent actual de {entity_name}"
         },
+        "extra_fields": {
+            "above": "Per sobre",
+            "below": "Per sota",
+            "for": "Durada"
+        },
         "trigger_type": {
             "apparent_power": "Canvia la pot\u00e8ncia aparent de {entity_name}",
             "aqi": "Canvia l'\u00edndex de qualitat de l'aire de {entity_name}",
@@ -67,7 +71,6 @@
             "illuminance": "Canvia la il\u00b7luminaci\u00f3 de {entity_name}",
             "irradiance": "Canvia la irradi\u00e0ncia de {entity_name}",
             "moisture": "Canvia la humitat de {entity_name}",
-            "monetary": "Canvien els diners de {entity_name}",
             "nitrogen_dioxide": "Canvia la concentraci\u00f3 de di\u00f2xid de nitrogen de {entity_name}",
             "nitrogen_monoxide": "Canvia la concentraci\u00f3 de mon\u00f2xid de nitrogen de {entity_name}",
             "nitrous_oxide": "Canvia la concentraci\u00f3 d'\u00f2xid nitr\u00f3s de {entity_name}",
@@ -127,6 +130,9 @@
         "aqi": {
             "name": "\u00cdndex de qualitat de l'aire"
         },
+        "area": {
+            "name": "\u00c0rea"
+        },
         "atmospheric_pressure": {
             "name": "Pressi\u00f3 atmosf\u00e8rica"
         },
@@ -138,6 +144,9 @@
         },
         "carbon_monoxide": {
             "name": "Mon\u00f2xid de carboni"
+        },
+        "conductivity": {
+            "name": "Conductivitat"
         },
         "current": {
             "name": "Intensitat"
@@ -185,7 +194,7 @@
             "name": "Humitat"
         },
         "monetary": {
-            "name": "Saldo"
+            "name": "Balan\u00e7"
         },
         "nitrogen_dioxide": {
             "name": "Di\u00f2xid de nitrogen"
@@ -259,6 +268,9 @@
         "volume": {
             "name": "Volum"
         },
+        "volume_flow_rate": {
+            "name": "Cabal volum\u00e8tric"
+        },
         "volume_storage": {
             "name": "Volum acumulat"
         },
@@ -273,9 +285,13 @@
         }
     },
     "issues": {
-        "platform_integration_no_support": {
-            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "Suport de la plataforma no compatible"
+        "state_class_removed": {
+            "description": "Buit",
+            "title": "{statistic_id} ja no t\u00e9 classe d'estat"
+        },
+        "units_changed": {
+            "description": "Buit",
+            "title": "La unitat de {statistic_id} ha canviat"
         }
     },
     "title": "Sensor"

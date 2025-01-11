@@ -46,6 +46,72 @@
             "vehicle": "{entity_name} ha detectat un vehicle"
         }
     },
+    "entity": {
+        "climate": {
+            "thermostat": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "manual": "Manual"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "gust_direction": {
+                "state": {
+                    "e": "Est",
+                    "n": "Nord",
+                    "ne": "Nord-est",
+                    "nw": "Nord-oest",
+                    "s": "Sud",
+                    "se": "Sud-est",
+                    "sw": "Sud-oest",
+                    "w": "Oest"
+                }
+            },
+            "health_idx": {
+                "state": {
+                    "fine": "B\u00e9",
+                    "healthy": "Saludable",
+                    "poor": "Pobre",
+                    "unhealthy": "No saludable"
+                }
+            },
+            "noise": {
+                "name": "Soroll"
+            },
+            "sum_rain_1": {
+                "name": "Precipitaci\u00f3 \u00faltima hora"
+            },
+            "sum_rain_24": {
+                "name": "Precipitaci\u00f3 avui"
+            },
+            "temp_trend": {
+                "name": "Tend\u00e8ncia de temperatura"
+            },
+            "wifi_strength": {
+                "name": "Wi-Fi"
+            },
+            "wind_angle": {
+                "name": "Angle del vent"
+            },
+            "wind_direction": {
+                "name": "Direcci\u00f3 del vent",
+                "state": {
+                    "e": "Est",
+                    "n": "Nord",
+                    "ne": "Nord-est",
+                    "nw": "Nord-oest",
+                    "s": "Sud",
+                    "se": "Sud-est",
+                    "sw": "Sud-oest",
+                    "w": "Oest"
+                }
+            }
+        }
+    },
     "options": {
         "step": {
             "public_weather": {
@@ -120,6 +186,16 @@
             "fields": {
                 "end_datetime": {
                     "name": "Data i hora final"
+                },
+                "target_temperature": {
+                    "name": "Temperatura objectiu"
+                }
+            }
+        },
+        "set_temperature_with_time_period": {
+            "fields": {
+                "target_temperature": {
+                    "name": "Temperatura objectiu"
                 }
             }
         }

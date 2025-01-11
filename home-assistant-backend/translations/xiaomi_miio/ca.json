@@ -52,6 +52,18 @@
         }
     },
     "entity": {
+        "fan": {
+            "generic_fan": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "nature": "Natura",
+                            "normal": "Normal"
+                        }
+                    }
+                }
+            }
+        },
         "select": {
             "airpurifier_mode": {
                 "state": {
@@ -80,6 +92,16 @@
                     "low": "Baix",
                     "medium": "Mitj\u00e0"
                 }
+            }
+        },
+        "sensor": {
+            "illuminance": {
+                "name": "Il\u00b7luminaci\u00f3"
+            }
+        },
+        "switch": {
+            "led": {
+                "name": "LED"
             }
         }
     },

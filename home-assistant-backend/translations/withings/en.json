@@ -8,7 +8,9 @@
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
             "oauth_timeout": "Timeout resolving OAuth token.",
-            "oauth_unauthorized": "OAuth authorization error while obtaining access token."
+            "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
+            "reauth_successful": "Re-authentication was successful",
+            "wrong_account": "Authenticated account does not match the account to be reauthenticated. Please log in with the correct account."
         },
         "create_entry": {
             "default": "Successfully authenticated with Withings."
@@ -19,13 +21,6 @@
         "step": {
             "pick_implementation": {
                 "title": "Pick authentication method"
-            },
-            "profile": {
-                "data": {
-                    "profile": "Profile Name"
-                },
-                "description": "Provide a unique profile name for this data. Typically this is the name of the profile you selected in the previous step.",
-                "title": "User Profile."
             },
             "reauth_confirm": {
                 "description": "The Withings integration needs to re-authenticate your account",
@@ -57,9 +52,6 @@
             "activity_elevation_today": {
                 "name": "Elevation change today"
             },
-            "activity_floors_climbed_today": {
-                "name": "Floors climbed today"
-            },
             "activity_intense_duration_today": {
                 "name": "Intense activity today"
             },
@@ -80,6 +72,14 @@
             },
             "average_respiratory_rate": {
                 "name": "Average respiratory rate"
+            },
+            "battery": {
+                "name": "Battery",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "medium": "Medium"
+                }
             },
             "body_temperature": {
                 "name": "Body temperature"
@@ -111,8 +111,38 @@
             "fat_free_mass": {
                 "name": "Fat free mass"
             },
+            "fat_free_mass_for_segments_left_arm": {
+                "name": "Fat free mass in left arm"
+            },
+            "fat_free_mass_for_segments_left_leg": {
+                "name": "Fat free mass in left leg"
+            },
+            "fat_free_mass_for_segments_right_arm": {
+                "name": "Fat free mass in right arm"
+            },
+            "fat_free_mass_for_segments_right_leg": {
+                "name": "Fat free mass in right leg"
+            },
+            "fat_free_mass_for_segments_torso": {
+                "name": "Fat free mass in torso"
+            },
             "fat_mass": {
                 "name": "Fat mass"
+            },
+            "fat_mass_for_segments_left_arm": {
+                "name": "Fat mass in left arm"
+            },
+            "fat_mass_for_segments_left_leg": {
+                "name": "Fat mass in left leg"
+            },
+            "fat_mass_for_segments_right_arm": {
+                "name": "Fat mass in right arm"
+            },
+            "fat_mass_for_segments_right_leg": {
+                "name": "Fat mass in right leg"
+            },
+            "fat_mass_for_segments_torso": {
+                "name": "Fat mass in torso"
             },
             "fat_ratio": {
                 "name": "Fat ratio"
@@ -146,6 +176,21 @@
             },
             "muscle_mass": {
                 "name": "Muscle mass"
+            },
+            "muscle_mass_for_segments_left_arm": {
+                "name": "Muscle mass in left arm"
+            },
+            "muscle_mass_for_segments_left_leg": {
+                "name": "Muscle mass in left leg"
+            },
+            "muscle_mass_for_segments_right_arm": {
+                "name": "Muscle mass in right arm"
+            },
+            "muscle_mass_for_segments_right_leg": {
+                "name": "Muscle mass in right leg"
+            },
+            "muscle_mass_for_segments_torso": {
+                "name": "Muscle mass in torso"
             },
             "pulse_wave_velocity": {
                 "name": "Pulse wave velocity"
@@ -213,9 +258,6 @@
             "workout_elevation": {
                 "name": "Elevation change last workout"
             },
-            "workout_floors_climbed": {
-                "name": "Floors climbed last workout"
-            },
             "workout_intensity": {
                 "name": "Last workout intensity"
             },
@@ -274,15 +316,6 @@
                     "wrestling": "Wrestling",
                     "yoga": "Yoga",
                     "zumba": "Zumba"
-                }
-            }
-        }
-    },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "use_webhook": "Use webhooks"
                 }
             }
         }

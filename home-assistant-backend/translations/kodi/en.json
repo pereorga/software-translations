@@ -4,7 +4,7 @@
             "already_configured": "Device is already configured",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "no_uuid": "Kodi instance does not have a unique id. This is most likely due to an old Kodi version (17.x or below). You can configure the integration manually or upgrade to a more recent Kodi version.",
+            "no_uuid": "Kodi instance does not have a unique ID. This is most likely due to an old Kodi version (17.x or below). You can configure the integration manually or upgrade to a more recent Kodi version.",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -50,6 +50,17 @@
             "turn_on": "{entity_name} turned on"
         }
     },
+    "entity": {
+        "media_player": {
+            "media_player": {
+                "state_attributes": {
+                    "dynamic_range": {
+                        "name": "Dynamic range"
+                    }
+                }
+            }
+        }
+    },
     "services": {
         "add_to_playlist": {
             "description": "Adds music to the default playlist (i.e. playlistid=0).",
@@ -59,15 +70,15 @@
                     "name": "Artist name"
                 },
                 "media_id": {
-                    "description": "Unique Id of the media entry to add (`songid` or albumid`). If not defined, `media_name` and `artist_name` are needed to search the Kodi music library.",
+                    "description": "Unique ID of the media entry to add (`songid` or albumid`). If not defined, Media name and Artist name are needed to search the Kodi music library.",
                     "name": "Media ID"
                 },
                 "media_name": {
-                    "description": "Optional media name for filtering media. Can be 'ALL' when `media_type` is 'ALBUM' and `artist_name` is specified, to add all songs from one artist.",
+                    "description": "Optional media name for filtering media. Can be 'ALL' when Media type is 'ALBUM' and Artist name is specified, to add all songs from one artist.",
                     "name": "Media name"
                 },
                 "media_type": {
-                    "description": "Media type identifier. It must be one of SONG or ALBUM.",
+                    "description": "Media type identifier. It must be one of 'SONG' or 'ALBUM'.",
                     "name": "Media type"
                 }
             },

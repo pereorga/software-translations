@@ -1,11 +1,13 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Service is already configured"
+            "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication"
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
         },
         "step": {
             "user": {
@@ -27,6 +29,12 @@
         "sensor": {
             "download_speed": {
                 "name": "Download speed"
+            },
+            "protocol_traffic_download_speed": {
+                "name": "Protocol traffic download speed"
+            },
+            "protocol_traffic_upload_speed": {
+                "name": "Protocol traffic upload speed"
             },
             "status": {
                 "name": "Status",

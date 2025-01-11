@@ -129,6 +129,9 @@
             "nextcloud_server_php_max_execution_time": {
                 "name": "Temps d'execuci\u00f3 m\u00e0xim PHP"
             },
+            "nextcloud_server_php_memory_limit": {
+                "name": "L\u00edmit de mem\u00f2ria PHP"
+            },
             "nextcloud_server_php_opcache_memory_usage_current_wasted_percentage": {
                 "name": "Percentatge d'Opcache malgastat"
             },
@@ -140,6 +143,15 @@
             },
             "nextcloud_server_php_opcache_memory_usage_wasted_memory": {
                 "name": "Mem\u00f2ria Opcache malgastada"
+            },
+            "nextcloud_server_php_upload_max_filesize": {
+                "name": "Mida de pujada m\u00e0xima de fitxer PHP"
+            },
+            "nextcloud_server_php_version": {
+                "name": "Versi\u00f3 PHP"
+            },
+            "nextcloud_server_webserver": {
+                "name": "Servidor web"
             },
             "nextcloud_sma_avail_mem": {
                 "name": "Mem\u00f2ria SMA disponible"
@@ -174,9 +186,6 @@
             "nextcloud_system_apps_num_updates_available": {
                 "name": "Actualitzacions disponibles"
             },
-            "nextcloud_system_cpuload": {
-                "name": "C\u00e0rrega de la CPU"
-            },
             "nextcloud_system_cpuload_1": {
                 "name": "C\u00e0rrega mitjana de la CPU, \u00faltim minut"
             },
@@ -207,12 +216,6 @@
             "nextcloud_system_version": {
                 "name": "Versi\u00f3 del sistema"
             }
-        }
-    },
-    "issues": {
-        "deprecated_yaml": {
-            "description": "La configuraci\u00f3 de Nextcloud mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLa configuraci\u00f3 YAML existent s'ha importat autom\u00e0ticament a la interf\u00edcie d'usuari.\n\nElimina la configuraci\u00f3 YAML de Nextcloud del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La configuraci\u00f3 mitjan\u00e7ant YAML de Nextcloud ha quedat obsoleta"
         }
     }
 }

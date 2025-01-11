@@ -159,9 +159,6 @@
             "plmn": {
                 "name": "PLMN"
             },
-            "preferred_mode": {
-                "name": "Mode preferit"
-            },
             "preferred_network_mode": {
                 "name": "Mode de xarxa preferit",
                 "state": {
@@ -311,23 +308,6 @@
         }
     },
     "services": {
-        "clear_traffic_statistics": {
-            "fields": {
-                "url": {
-                    "name": "URL"
-                }
-            }
-        },
-        "reboot": {
-            "description": "Reinicia l'encaminador o 'router'.",
-            "fields": {
-                "url": {
-                    "description": "URL de l'encaminador/'router' a reiniciar; opcional quan nom\u00e9s se n'ha configurat un.",
-                    "name": "URL"
-                }
-            },
-            "name": "Reinicia"
-        },
         "resume_integration": {
             "fields": {
                 "url": {

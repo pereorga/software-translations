@@ -13,7 +13,7 @@
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "You will need the API Key from https://app.rach.io/. Go to Settings, then click 'GET API KEY'.",
+                "description": "You will need the API Key from https://app.rach.io/. Go to Settings, then select 'GET API KEY'.",
                 "title": "Connect to your Rachio device"
             }
         }
@@ -22,6 +22,11 @@
         "binary_sensor": {
             "rain": {
                 "name": "Rain"
+            }
+        },
+        "calendar": {
+            "calendar": {
+                "name": "Rachio Base Station {base}"
             }
         },
         "switch": {
@@ -86,6 +91,16 @@
                 }
             },
             "name": "Start multiple zones"
+        },
+        "start_watering": {
+            "description": "Start a single zone, a schedule or any number of smart hose timers.",
+            "fields": {
+                "duration": {
+                    "description": "Number of minutes to run. For sprinkler zones the maximum duration is 3 hours, or 24 hours for smart hose timers. Leave empty for schedules.",
+                    "name": "Duration"
+                }
+            },
+            "name": "Start watering"
         },
         "stop_watering": {
             "description": "Stop any currently running zones or schedules.",

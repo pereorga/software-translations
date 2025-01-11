@@ -81,6 +81,18 @@
             "node_status": "Estat del node",
             "value": "Valor actual d'un valor Z-Wave"
         },
+        "extra_fields": {
+            "for": "Durada",
+            "label": "Etiqueta",
+            "property": "Propietat",
+            "property_key": "Clau de propietat",
+            "refresh_all_values": "Actualitza tots els valors",
+            "status": "Estat",
+            "to": "A",
+            "type.": "Tipus",
+            "usercode": "Codi d'usuari",
+            "value": "Valor"
+        },
         "trigger_type": {
             "event.notification.entry_control": "Ha enviat una notificaci\u00f3 de control d'entrada",
             "event.notification.notification": "Ha enviat una notificaci\u00f3",
@@ -132,9 +144,6 @@
         "device_config_file_changed": {
             "fix_flow": {
                 "step": {
-                    "confirm": {
-                        "title": "Ha canviat el fitxer de configuraci\u00f3 del dispositiu: {device_name}"
-                    },
                     "init": {
                         "menu_options": {
                             "confirm": "Torna a consultar dispositiu"
@@ -143,17 +152,6 @@
                 }
             },
             "title": "Ha canviat el fitxer de configuraci\u00f3 del dispositiu: {device_name}"
-        },
-        "dry_fan_presets_deprecation": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Est\u00e0s utilitzant els modes de preconfiguraci\u00f3 d'assecat o de ventilador a l'entitat `{entity_id}`. \n\nAquests modes de preconfiguraci\u00f3 estan obsolets i s'eliminaran. Actualitza les teves automatitzacions perqu\u00e8 utilitzin els modes **HVAC** corresponents. \n\nFes clic a ENVIA, a continuaci\u00f3, un cop hagis corregit manualment aquest problema.",
-                        "title": "S'eliminaran els modes preconfigurats d'assecat i de ventilador: {entity_id}"
-                    }
-                }
-            },
-            "title": "S'eliminaran els modes preconfigurats d'assecat i de ventilador: {entity_id}"
         },
         "invalid_server_version": {
             "description": "La versi\u00f3 del servidor Z-Wave JS que est\u00e0s executant actualment \u00e9s massa antiga per a aquesta versi\u00f3 de Home Assistant. Actualitza a l'\u00faltima versi\u00f3 per resoldre aquest problema.",
@@ -217,8 +215,20 @@
     "services": {
         "bulk_set_partial_config_parameters": {
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "parameter": {
                     "description": "Nom (o ID) del par\u00e0metre de configuraci\u00f3 a configurar.",
@@ -231,11 +241,20 @@
         },
         "invoke_cc_api": {
             "fields": {
+                "area_id": {
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "command_class": {
                     "name": "Classe de comanda"
                 },
+                "device_id": {
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "name": "ID(s) d'entitat"
                 },
                 "method_name": {
                     "description": "Nom del m\u00e8tode de l'API a cridar. Consulta la documentaci\u00f3 les classes d'ordres de l'API de Z-Wave JS (https://zwave-js.github.io/node-zwave-js/#/api/CCs/index) per obtenir els m\u00e8todes disponibles.",
@@ -247,14 +266,27 @@
             }
         },
         "multicast_set_value": {
+            "description": "Canvia qualsevol valor que Z-Wave JS reconegui utilitzant multidifusi\u00f3 ('multicast') en diversos dispositius Z-Wave perqu\u00e8 tots els dispositius rebin el missatge simult\u00e0niament. Aquesta acci\u00f3 t\u00e9 una validaci\u00f3 m\u00ednima, per tant, utilitza aquesta acci\u00f3 si saps el que est\u00e0s fent.",
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "command_class": {
                     "description": "ID de la classe de comandes del valor.",
                     "name": "Classe de comanda"
                 },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "description": "'Endpoint' del valor.",
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "options": {
                     "description": "Mapa d'opcions de valors. Consulta la documentaci\u00f3 de Z-Wave JS per a m\u00e9s informaci\u00f3 sobre quines opcions es poden configurar.",
@@ -275,11 +307,37 @@
             }
         },
         "ping": {
+            "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
+                }
+            },
             "name": "Fes 'ping' a un node"
         },
         "refresh_notifications": {
             "description": "Actualitza les notificacions a un node segons el tipus de notificaci\u00f3 i, opcionalment, l'esdeveniment de notificaci\u00f3.",
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
+                },
                 "notification_event": {
                     "description": "N\u00famero de l'esdeveniment de notificaci\u00f3 tal com es defineix a les especificacions de Z-Wave.",
                     "name": "Esdeveniment de notificaci\u00f3"
@@ -299,14 +357,45 @@
             },
             "name": "Actualitza valors"
         },
+        "reset_meter": {
+            "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
+                },
+                "value": {
+                    "name": "Valor objectiu"
+                }
+            }
+        },
         "set_config_parameter": {
             "fields": {
+                "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "bitmask": {
                     "description": "Dirigir a una m\u00e0scara de bits espec\u00edfica (consulta la documentaci\u00f3 per a m\u00e9s informaci\u00f3). No es pot combinar amb value_size o value_format.",
                     "name": "M\u00e0scara de bits"
                 },
+                "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
+                    "name": "ID(s) d'entitat"
                 },
                 "parameter": {
                     "description": "Nom (o ID) del par\u00e0metre de configuraci\u00f3 a configurar.",
@@ -355,15 +444,23 @@
             "name": "Estableix codi d'usuari a un pany"
         },
         "set_value": {
-            "description": "Canvia qualsevol valor que Z-Wave JS reconegui en un dispositiu Z-Wave. Aquest servei t\u00e9 una validaci\u00f3 m\u00ednima, aix\u00ed que nom\u00e9s utilitza aquest servei si saps el que est\u00e0s fent.",
             "fields": {
+                "area_id": {
+                    "name": "ID(s) d'\u00e0rea"
+                },
                 "command_class": {
                     "description": "ID de la classe de comandes del valor.",
                     "name": "Classe de comanda"
                 },
+                "device_id": {
+                    "name": "ID(s) de dispositiu"
+                },
                 "endpoint": {
                     "description": "'Endpoint' del valor.",
                     "name": "Endpoint"
+                },
+                "entity_id": {
+                    "name": "ID(s) d'entitat"
                 },
                 "options": {
                     "description": "Mapa d'opcions de valors. Consulta la documentaci\u00f3 de Z-Wave JS per a m\u00e9s informaci\u00f3 sobre quines opcions es poden configurar.",
@@ -382,7 +479,6 @@
                     "name": "Valor"
                 },
                 "wait_for_result": {
-                    "description": "Espera o no una resposta del node. Si no s'inclou al missatge ('payload'), la integraci\u00f3 decidir\u00e0 si espera o no. Si es configura a `true`, tingues en compte que la crida al servei pot trigar una estona si s'estableix un valor a un dispositiu amb bateria adormit.",
                     "name": "Espera el resultat?"
                 }
             },

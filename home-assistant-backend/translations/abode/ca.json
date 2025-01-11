@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -34,17 +33,14 @@
     },
     "services": {
         "capture_image": {
-            "description": "Sol\u00b7licita una nova captura d'imatge d'un dispositiu de c\u00e0mera.",
             "fields": {
                 "entity_id": {
-                    "description": "ID d'entitat de c\u00e0mera on sol\u00b7licitar la imatge.",
                     "name": "Entitat"
                 }
             },
             "name": "Captura imatge"
         },
         "change_setting": {
-            "description": "Canvia una configuraci\u00f3 del sistema Abode.",
             "fields": {
                 "setting": {
                     "description": "Configuraci\u00f3 a canviar.",
@@ -58,10 +54,8 @@
             "name": "Canvia la configuraci\u00f3"
         },
         "trigger_automation": {
-            "description": "Dispara una automatitzaci\u00f3 Abode.",
             "fields": {
                 "entity_id": {
-                    "description": "ID d'entitat de l'automatitzaci\u00f3 a disparar.",
                     "name": "Entitat"
                 }
             },

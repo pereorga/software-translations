@@ -20,7 +20,6 @@
                 "description": "Introdueix el codi de vinculaci\u00f3 que es mostra a l'Android TV ({name})."
             },
             "reauth_confirm": {
-                "description": "Has de tornar a vincular-te amb l'Android TV ({name}).",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
             "user": {
@@ -32,6 +31,15 @@
             "zeroconf_confirm": {
                 "description": "Vols afegir l'Android TV ({name}) a Home Assistant? S'engegar\u00e0 i s'hi mostrar\u00e0 un codi de vinculaci\u00f3 que haur\u00e0s d'introduir a la seg\u00fcent finestra.",
                 "title": "S'ha descobert Android TV"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "apps": {
+                "data": {
+                    "app_id": "ID d'aplicaci\u00f3"
+                }
             }
         }
     }

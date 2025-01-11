@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Aquest perfil NextDNS ja est\u00e0 configurat."
+            "already_configured": "Aquest perfil NextDNS ja est\u00e0 configurat.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -12,6 +13,11 @@
             "profiles": {
                 "data": {
                     "profile": "Perfil"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
                 }
             },
             "user": {
@@ -37,76 +43,91 @@
         },
         "sensor": {
             "all_queries": {
-                "name": "Consultes DNS"
+                "name": "Consultes DNS",
+                "unit_of_measurement": "consultes"
             },
             "blocked_queries": {
-                "name": "Consultes DNS bloquejades"
+                "name": "Consultes DNS bloquejades",
+                "unit_of_measurement": "consultes"
             },
             "blocked_queries_ratio": {
                 "name": "R\u00e0tio de consultes DNS bloquejades"
             },
             "doh3_queries": {
-                "name": "Consultes DNS sobre HTTPS/3"
+                "name": "Consultes DNS sobre HTTPS/3",
+                "unit_of_measurement": "consultes"
             },
             "doh3_queries_ratio": {
                 "name": "R\u00e0tio de consultes DNS sobre HTTPS/3"
             },
             "doh_queries": {
-                "name": "Consultes DNS sobre HTTPS"
+                "name": "Consultes DNS sobre HTTPS",
+                "unit_of_measurement": "consultes"
             },
             "doh_queries_ratio": {
                 "name": "R\u00e0tio de consultes DNS sobre HTTPS"
             },
             "doq_queries": {
-                "name": "Consultes DNS sobre QUIC"
+                "name": "Consultes DNS sobre QUIC",
+                "unit_of_measurement": "consultes"
             },
             "doq_queries_ratio": {
                 "name": "R\u00e0tio de consultes DNS sobre QUIC"
             },
             "dot_queries": {
-                "name": "Consultes DNS sobre TLS"
+                "name": "Consultes DNS sobre TLS",
+                "unit_of_measurement": "consultes"
             },
             "dot_queries_ratio": {
                 "name": "R\u00e0tio de consultes DNS sobre TLS"
             },
             "encrypted_queries": {
-                "name": "Consultes xifrades"
+                "name": "Consultes xifrades",
+                "unit_of_measurement": "consultes"
             },
             "encrypted_queries_ratio": {
                 "name": "R\u00e0tio de consultes xifrades"
             },
             "ipv4_queries": {
-                "name": "Consultes IPv4"
+                "name": "Consultes IPv4",
+                "unit_of_measurement": "consultes"
             },
             "ipv6_queries": {
-                "name": "Consultes IPv6"
+                "name": "Consultes IPv6",
+                "unit_of_measurement": "consultes"
             },
             "ipv6_queries_ratio": {
                 "name": "Relaci\u00f3 de consultes IPv6"
             },
             "not_validated_queries": {
-                "name": "Consultes no validades DNSSEC"
+                "name": "Consultes no validades DNSSEC",
+                "unit_of_measurement": "consultes"
             },
             "relayed_queries": {
-                "name": "Consultes DNS retransmeses"
+                "name": "Consultes DNS retransmeses",
+                "unit_of_measurement": "consultes"
             },
             "tcp_queries": {
-                "name": "Consultes TCP"
+                "name": "Consultes TCP",
+                "unit_of_measurement": "consultes"
             },
             "tcp_queries_ratio": {
                 "name": "R\u00e0tio de consultes TCP"
             },
             "udp_queries": {
-                "name": "Consultes UDP"
+                "name": "Consultes UDP",
+                "unit_of_measurement": "consultes"
             },
             "udp_queries_ratio": {
                 "name": "R\u00e0tio de consultes UDP"
             },
             "unencrypted_queries": {
-                "name": "Consultes sense xifrar"
+                "name": "Consultes sense xifrar",
+                "unit_of_measurement": "consultes"
             },
             "validated_queries": {
-                "name": "Consultes validades DNSSEC"
+                "name": "Consultes validades DNSSEC",
+                "unit_of_measurement": "consultes"
             },
             "validated_queries_ratio": {
                 "name": "R\u00e0tio de consultes validades DNSSEC"
@@ -268,9 +289,6 @@
             },
             "block_twitch": {
                 "name": "Bloqueig de Twitch"
-            },
-            "block_twitter": {
-                "name": "Bloqueig de Twitter"
             },
             "block_video_streaming": {
                 "name": "Bloqueig de transmissi\u00f3 de v\u00eddeo"

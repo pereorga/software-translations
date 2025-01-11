@@ -29,13 +29,28 @@
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "police": {
+                "name": "Emerg\u00e8ncia policial",
+                "state": {
+                    "off": "Cap emerg\u00e8ncia",
+                    "on": "Emerg\u00e8ncia policial"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_pin": {
+            "message": "S'ha introdu\u00eft un codi incorrecte"
+        }
+    },
     "options": {
         "step": {
             "init": {
                 "data": {
                     "auto_bypass_low_battery": "Bypass autom\u00e0tic de bateria baixa"
                 },
-                "description": "Bypass autom\u00e0tic de les zones que informin de bateria baixa.",
                 "title": "Opcions de TotalConnect"
             }
         }

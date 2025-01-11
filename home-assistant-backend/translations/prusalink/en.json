@@ -9,7 +9,6 @@
         "step": {
             "user": {
                 "data": {
-                    "api_key": "API key",
                     "host": "Host",
                     "password": "Password",
                     "username": "Username"
@@ -18,6 +17,11 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "mmu": {
+                "name": "MMU"
+            }
+        },
         "button": {
             "cancel_job": {
                 "name": "Cancel job"
@@ -53,6 +57,9 @@
             "material": {
                 "name": "Material"
             },
+            "nozzle_diameter": {
+                "name": "Nozzle Diameter"
+            },
             "nozzle_target_temperature": {
                 "name": "Nozzle target temperature"
             },
@@ -75,12 +82,10 @@
                 "state": {
                     "attention": "Attention",
                     "busy": "Busy",
-                    "cancelling": "Cancelling",
                     "error": "Error",
                     "finished": "Finished",
                     "idle": "Idle",
                     "paused": "Paused",
-                    "pausing": "Pausing",
                     "printing": "Printing",
                     "ready": "Ready",
                     "stopped": "Stopped"

@@ -3,7 +3,6 @@
         "abort": {
             "already_configured": "El servei ja est\u00e0 configurat",
             "cannot_connect": "No s'ha pogut connectar amb les credencials de configuration.yaml, elimina-les del yaml i utilitza la configuraci\u00f3.",
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3.",
             "unknown": "S'ha produ\u00eft un error desconegut i al connectar amb les credencials de configuration.yaml, elimina-les del yaml i utilitza la configuraci\u00f3."
         },
         "error": {
@@ -33,16 +32,6 @@
                     "use_connection_string": "Utilitza una cadena de connexi\u00f3"
                 },
                 "title": "Configuraci\u00f3 de la integraci\u00f3 Azure Event Hub"
-            }
-        }
-    },
-    "options": {
-        "step": {
-            "options": {
-                "data": {
-                    "send_interval": "Interval entre enviaments de lots al Hub."
-                },
-                "title": "Opcions d'Azure Event Hub."
             }
         }
     }

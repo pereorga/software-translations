@@ -1,17 +1,40 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "cannot_connect": "Ha fallat la connexi\u00f3"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "password_error": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
         },
         "step": {
+            "password": {
+                "data": {
+                    "password": "Contrasenya"
+                },
+                "title": "Configuraci\u00f3 de la connexi\u00f3 amb Solar-Log"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "has_password": "Tinc la contrasenya del compte de Solar-Log.",
+                    "password": "Contrasenya"
+                },
+                "description": "Actualitzeu les teves credencials del dispositiu Solar-Log"
+            },
+            "reconfigure": {
+                "data": {
+                    "has_password": "Tinc la contrasenya del compte de Solar-Log.",
+                    "password": "Contrasenya"
+                }
+            },
             "user": {
                 "data": {
-                    "host": "Amfitri\u00f3",
-                    "name": "Prefix utilitzat pels sensors de Solar-Log"
+                    "has_password": "Tinc la contrasenya del compte de Solar-Log.",
+                    "host": "Amfitri\u00f3"
                 },
                 "title": "Configuraci\u00f3 de la connexi\u00f3 amb Solar-Log"
             }
@@ -57,6 +80,9 @@
             },
             "power_dc": {
                 "name": "Pot\u00e8ncia CC"
+            },
+            "self_consumption_year": {
+                "name": "Autoconsum, any"
             },
             "total_power": {
                 "name": "Pot\u00e8ncia pic instal\u00b7lada"

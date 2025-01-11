@@ -1,31 +1,115 @@
 {
     "config": {
         "step": {
+            "alarm_control_panel": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla de panell de control d'alarma"
+            },
             "binary_sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
                     "name": "Nom",
-                    "state": "Plantilla d'estat",
-                    "state_template": "Plantilla d'estat"
+                    "state": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor binari de plantilla"
+            },
+            "button": {
+                "data": {
+                    "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "press": "Accions en pr\u00e9mer"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Bot\u00f3 de plantilla"
+            },
+            "image": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'imatge"
+            },
+            "number": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "max": "Valor m\u00e0xim",
+                    "min": "Valor m\u00ednim",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat",
+                    "step": "Valor del pas",
+                    "unit_of_measurement": "Unitat de mesura"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla de n\u00famero"
+            },
+            "select": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                }
             },
             "sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
                     "name": "Nom",
                     "state": "Plantilla d'estat",
                     "state_class": "Classe d'estat",
-                    "state_template": "Plantilla d'estat",
                     "unit_of_measurement": "Unitat de mesura"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor de plantilla"
             },
+            "switch": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "turn_off": "Accions en desactivar",
+                    "turn_on": "Accions en activar",
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'interruptor"
+            },
             "user": {
-                "description": "Aquest ajudant et permet crear entitats auxiliars que defineixen el seu estat mitjan\u00e7ant una plantilla.",
                 "menu_options": {
+                    "alarm_control_panel": "Plantilla d'un panell de control d'alarma",
                     "binary_sensor": "Plantilla d'un sensor binari",
-                    "sensor": "Plantilla d'un sensor"
+                    "button": "Plantilla d'un bot\u00f3",
+                    "image": "Plantilla d'una imatge",
+                    "number": "Plantilla d'un n\u00famero",
+                    "select": "Plantilla d'un selector",
+                    "sensor": "Plantilla d'un sensor",
+                    "switch": "Plantilla d'un interruptor"
                 },
                 "title": "Ajudant de plantilla"
             }
@@ -33,27 +117,106 @@
     },
     "options": {
         "step": {
+            "alarm_control_panel": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla de panell de control d'alarma"
+            },
             "binary_sensor": {
                 "data": {
-                    "device_class": "Classe de dispositiu",
-                    "state": "Plantilla d'estat",
-                    "state_template": "Plantilla d'estat"
+                    "device_id": "Dispositiu",
+                    "state": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
                 },
                 "title": "Sensor binari de plantilla"
+            },
+            "button": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "press": "Accions en pr\u00e9mer"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Bot\u00f3 de plantilla"
+            },
+            "image": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'imatge"
+            },
+            "number": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "max": "Valor m\u00e0xim",
+                    "min": "Valor m\u00ednim",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat",
+                    "step": "Valor del pas"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla de n\u00famero"
+            },
+            "select": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "state": "Plantilla d'estat"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                }
             },
             "sensor": {
                 "data": {
                     "device_class": "Classe de dispositiu",
+                    "device_id": "Dispositiu",
                     "state": "Plantilla d'estat",
                     "state_class": "Classe d'estat",
-                    "state_template": "Plantilla d'estat",
                     "unit_of_measurement": "Unitat de mesura"
                 },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
                 "title": "Sensor de plantilla"
+            },
+            "switch": {
+                "data": {
+                    "device_id": "Dispositiu",
+                    "name": "Nom",
+                    "turn_off": "Accions en desactivar",
+                    "turn_on": "Accions en activar",
+                    "value_template": "Plantilla de valor"
+                },
+                "data_description": {
+                    "device_id": "Selecciona un dispositiu a enlla\u00e7ar amb aquesta entitat."
+                },
+                "title": "Plantilla d'interruptor"
             }
         }
     },
     "selector": {
+        "alarm_control_panel_code_format": {
+            "options": {
+                "number": "N\u00famero",
+                "text": "Text"
+            }
+        },
         "binary_sensor_device_class": {
             "options": {
                 "battery": "Bateria",
@@ -70,7 +233,6 @@
                 "moisture": "Humitat",
                 "motion": "Moviment",
                 "moving": "En moviment",
-                "none": "Sense classe de dispositiu",
                 "occupancy": "Ocupaci\u00f3",
                 "opening": "Obrint",
                 "plug": "Endoll",
@@ -87,6 +249,13 @@
                 "window": "Finestra"
             }
         },
+        "button_device_class": {
+            "options": {
+                "identify": "Identifica",
+                "restart": "Reinicia",
+                "update": "Actualitza"
+            }
+        },
         "sensor_device_class": {
             "options": {
                 "apparent_power": "Pot\u00e8ncia aparent",
@@ -95,6 +264,7 @@
                 "battery": "Bateria",
                 "carbon_dioxide": "Di\u00f2xid de carboni",
                 "carbon_monoxide": "Mon\u00f2xid de carboni",
+                "conductivity": "Conductivitat",
                 "current": "Intensitat",
                 "data_rate": "Velocitat de dades",
                 "data_size": "Mida de dades",
@@ -109,11 +279,10 @@
                 "illuminance": "Il\u00b7luminaci\u00f3",
                 "irradiance": "Irradi\u00e0ncia",
                 "moisture": "Humitat",
-                "monetary": "Saldo",
+                "monetary": "Balan\u00e7",
                 "nitrogen_dioxide": "Di\u00f2xid de nitrogen",
                 "nitrogen_monoxide": "Mon\u00f2xid de nitrogen",
                 "nitrous_oxide": "\u00d2xid de nitrogen",
-                "none": "Sense classe de dispositiu",
                 "ozone": "Oz\u00f3",
                 "ph": "pH",
                 "pm1": "PM1",
@@ -135,6 +304,7 @@
                 "volatile_organic_compounds_parts": "COVs",
                 "voltage": "Voltatge",
                 "volume": "Volum",
+                "volume_flow_rate": "Cabal volum\u00e8tric",
                 "volume_storage": "Volum acumulat",
                 "water": "Aigua",
                 "weight": "Pes",
@@ -144,7 +314,6 @@
         "sensor_state_class": {
             "options": {
                 "measurement": "Mesura",
-                "none": "Sense classe d'estat",
                 "total": "Total",
                 "total_increasing": "Total creixent"
             }

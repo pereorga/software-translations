@@ -2,14 +2,15 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "incorrect_api_key": "Invalid API key for selected account",
+            "incorrect_api_key": "The provided API key does not match for this account",
             "invalid_auth": "Invalid authentication",
-            "no_devices": "No devices discovered",
-            "no_username": "Could not get username"
+            "no_devices": "No devices found, ensure your Sensibo devices are correctly set up and have a remote defined",
+            "no_username": "Could not retrieve username, ensure your Sensibo account has a proper username and try again"
         },
         "step": {
             "reauth_confirm": {
@@ -17,7 +18,15 @@
                     "api_key": "API key"
                 },
                 "data_description": {
-                    "api_key": "Follow the documentation to get your api key"
+                    "api_key": "Follow the [documentation]({url}) to get your api key"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "Follow the [documentation]({url}) to get your api key"
                 }
             },
             "user": {
@@ -25,7 +34,7 @@
                     "api_key": "API key"
                 },
                 "data_description": {
-                    "api_key": "Follow the documentation to get your api key"
+                    "api_key": "Follow the [documentation]({url}) to get your api key"
                 }
             }
         }
@@ -318,6 +327,14 @@
             "filter_last_reset": {
                 "name": "Filter last reset"
             },
+            "pm25_pure": {
+                "name": "Pure AQI",
+                "state": {
+                    "bad": "Bad",
+                    "good": "Good",
+                    "moderate": "Moderate"
+                }
+            },
             "rssi": {
                 "name": "RSSI"
             },
@@ -375,16 +392,11 @@
                     }
                 }
             }
-        },
-        "update": {
-            "fw_ver_available": {
-                "name": "Update available"
-            }
         }
     },
     "exceptions": {
         "climate_react_not_available": {
-            "message": "Use Sensibo Enable Climate React Service once to enable switch or the Sensibo app"
+            "message": "Use Sensibo Enable Climate React action once to enable switch or the Sensibo app"
         },
         "fan_mode_not_supported": {
             "message": "Climate fan mode {fan_mode} is not supported by the integration, please open an issue"
@@ -395,9 +407,6 @@
         "no_swing_in_features": {
             "message": "Current mode doesn't support setting swing"
         },
-        "no_target_temperature": {
-            "message": "No target temperature provided"
-        },
         "no_target_temperature_in_features": {
             "message": "Current mode doesn't support setting target temperature"
         },
@@ -405,10 +414,10 @@
             "message": "Current mode {hvac_mode} doesn't support setting {key}"
         },
         "service_raised": {
-            "message": "Could not execute service for {name} with error {error}"
+            "message": "Could not perform action for {name} with error {error}"
         },
         "service_result_not_true": {
-            "message": "Could not execute service for {name}"
+            "message": "Could not perform action for {name}"
         },
         "swing_not_supported": {
             "message": "Climate swing mode {swing_mode} is not supported by the integration, please open an issue"

@@ -9,8 +9,8 @@
             "discovery_error": "Failed to discover a Xiaomi Aqara Gateway, try using the IP of the device running HomeAssistant as interface",
             "invalid_host": "Invalid hostname or IP address, see https://www.home-assistant.io/integrations/xiaomi_aqara/#connection-problem",
             "invalid_interface": "Invalid network interface",
-            "invalid_key": "Invalid gateway key",
-            "invalid_mac": "Invalid Mac Address"
+            "invalid_key": "Invalid Gateway key",
+            "invalid_mac": "Invalid MAC address"
         },
         "flow_title": "{name}",
         "step": {
@@ -22,7 +22,7 @@
             },
             "settings": {
                 "data": {
-                    "key": "The key of your gateway",
+                    "key": "The key of your Gateway",
                     "name": "Name of the Gateway"
                 },
                 "description": "The key (password) can be retrieved using this tutorial: https://www.domoticz.com/wiki/Xiaomi_Gateway_(Aqara)#Adding_the_Xiaomi_Gateway_to_Domoticz. If the key is not provided only sensors will be accessible",
@@ -32,7 +32,7 @@
                 "data": {
                     "host": "IP address (optional)",
                     "interface": "The network interface to use",
-                    "mac": "Mac Address (optional)"
+                    "mac": "MAC address (optional)"
                 },
                 "description": "If the IP and MAC addresses are left empty, auto-discovery is used"
             }

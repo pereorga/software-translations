@@ -26,9 +26,6 @@
                 "message": {
                     "name": "Message"
                 },
-                "messages": {
-                    "name": "Message"
-                },
                 "start_time": {
                     "name": "Start time"
                 }
@@ -40,16 +37,12 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "Use `calendar.get_events` instead which supports multiple entities.\n\nPlease replace this service and adjust your automations and scripts and select **submit** to close this issue.",
-                        "title": "Detected use of deprecated service `calendar.list_events`"
+                        "description": "Use `calendar.get_events` instead which supports multiple entities.\n\nPlease replace this action and adjust your automations and scripts and select **Submit** to close this issue.",
+                        "title": "Detected use of deprecated action calendar.list_events"
                     }
                 }
             },
-            "title": "Detected use of deprecated service `calendar.list_events`"
-        },
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
+            "title": "Detected use of deprecated action calendar.list_events"
         }
     },
     "services": {
@@ -95,11 +88,11 @@
             "description": "Get events on a calendar within a time range.",
             "fields": {
                 "duration": {
-                    "description": "Returns active events from start_date_time until the specified duration.",
+                    "description": "Returns active events from Start time for the specified duration.",
                     "name": "Duration"
                 },
                 "end_date_time": {
-                    "description": "Returns active events before this time (exclusive). Cannot be used with 'duration'.",
+                    "description": "Returns active events before this time (exclusive). Cannot be used with Duration.",
                     "name": "End time"
                 },
                 "start_date_time": {
@@ -108,24 +101,6 @@
                 }
             },
             "name": "Get events"
-        },
-        "list_events": {
-            "description": "Lists events on a calendar within a time range.",
-            "fields": {
-                "duration": {
-                    "description": "Returns active events from start_date_time until the specified duration.",
-                    "name": "Duration"
-                },
-                "end_date_time": {
-                    "description": "Returns active events before this time (exclusive). Cannot be used with 'duration'.",
-                    "name": "End time"
-                },
-                "start_date_time": {
-                    "description": "Returns active events after this time (exclusive). When not set, defaults to now.",
-                    "name": "Start time"
-                }
-            },
-            "name": "List event"
         }
     },
     "title": "Calendar"

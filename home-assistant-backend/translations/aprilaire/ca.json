@@ -20,6 +20,78 @@
             "thermostat": {
                 "name": "Term\u00f2stat"
             }
+        },
+        "humidifier": {
+            "dehumidifier": {
+                "name": "Deshumidificador"
+            },
+            "humidifier": {
+                "name": "Humidificador"
+            }
+        },
+        "select": {
+            "air_cleaning_event": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "air_cleaning_mode": {
+                "state": {
+                    "automatic": "Autom\u00e0tic",
+                    "constant_clean": "Neteja constant",
+                    "off": "OFF"
+                }
+            },
+            "fresh_air_event": {
+                "state": {
+                    "3hour": "Esdeveniment de 3 hores",
+                    "off": "OFF"
+                }
+            },
+            "fresh_air_mode": {
+                "state": {
+                    "automatic": "Autom\u00e0tic",
+                    "off": "OFF"
+                }
+            }
+        },
+        "sensor": {
+            "air_cleaning_status": {
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "dehumidification_status": {
+                "name": "Estat de deshumidificaci\u00f3",
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "fan_status": {
+                "name": "Estat del ventilador",
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "humidification_status": {
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "ventilation_status": {
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            }
         }
     }
 }

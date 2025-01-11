@@ -16,14 +16,24 @@
             }
         }
     },
+    "selector": {
+        "connection_type": {
+            "options": {
+                "http": "HTTP",
+                "serial": "S\u00e8rie"
+            }
+        }
+    },
     "services": {
         "select_cmode": {
+            "description": "Selecciona el mode de color del projector Epson.",
             "fields": {
                 "cmode": {
                     "description": "Nom del Cmode.",
                     "name": "Mode de color"
                 }
-            }
+            },
+            "name": "Selecciona mode de color"
         }
     }
 }

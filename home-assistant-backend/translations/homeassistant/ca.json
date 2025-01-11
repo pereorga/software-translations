@@ -5,8 +5,32 @@
         }
     },
     "exceptions": {
-        "service_not_found": {
-            "message": "No s'ha trobat {domain}.{service}."
+        "component_import_err": {
+            "message": "No s'ha pogut importar {domain}: {error}"
+        },
+        "config_schema_unknown_err": {
+            "message": "Error desconegut en cridar {domain} CONFIG_SCHEMA - {error}."
+        },
+        "config_validation_err": {
+            "message": "Configuraci\u00f3 de la integraci\u00f3 {domain} inv\u00e0lida a {config_file}, l\u00ednia {line}: {error}."
+        },
+        "config_validator_unknown_err": {
+            "message": "Error desconegut en cridar {domain} validador de configuraci\u00f3 - {error}."
+        },
+        "multiple_integration_config_errors": {
+            "message": "No s'ha pogut processar la configuraci\u00f3 de la integraci\u00f3 {domain} a causa de diversos errors ({errors}). Consulta els registres per a m\u00e9s informaci\u00f3."
+        },
+        "platform_component_load_err": {
+            "message": "Error de plataforma: {domain} - {error}."
+        },
+        "platform_component_load_exc": {
+            "message": "Error de plataforma: {domain} - {error}."
+        },
+        "platform_schema_validator_err": {
+            "message": "Error desconegut en validar la configuraci\u00f3 de {domain} de la integraci\u00f3 {p_name} - {error}."
+        },
+        "service_does_not_support_response": {
+            "message": "Una acci\u00f3 que no retorna respostes no es pot cridar amb {return_response}."
         }
     },
     "issues": {
@@ -29,12 +53,26 @@
             "description": "El valor de moneda {currency} ja no s'utilitza, modifica la configuraci\u00f3 del valor de moneda.",
             "title": "El valor de moneda configurat ja no s'utilitza"
         },
-        "integration_key_no_support": {
-            "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 mitjan\u00e7ant fitxer YAML. \u00c9s possible que no notis cap problema evident amb la integraci\u00f3, per\u00f2 cap configuraci\u00f3 definida en YAML s'aplica realment.\n\nPer resoldre aix\u00f2: \n\n1. Si encara no ho has fet, [configura la integraci\u00f3]({add_integration}). \n\n2. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n3. Reinicia Home Assistant.",
-            "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML"
+        "imperial_unit_system": {
+            "title": "El sistema d'unitats imperials est\u00e0 obsolet"
+        },
+        "integration_not_found": {
+            "fix_flow": {
+                "step": {
+                    "init": {
+                        "menu_options": {
+                            "ignore": "Ignora"
+                        },
+                        "title": "No s'ha trobat la integraci\u00f3 {domain}"
+                    }
+                }
+            },
+            "title": "No s'ha trobat la integraci\u00f3 {domain}"
+        },
+        "legacy_templates_false": {
+            "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 legacy_templates"
         },
         "no_platform_setup": {
-            "description": "No \u00e9s possible configurar {platform} {domain} afegint `{platform_key}` a la configuraci\u00f3 de {domain}. Consulta la documentaci\u00f3 per a m\u00e9s informaci\u00f3 sobre com configurar aquesta integraci\u00f3.\n\nPer resoldre aix\u00f2:\n1. Elimina `{platform_key}` de la configuraci\u00f3 de `{domain}`: al fitxer de configuraci\u00f3 YAML.\n2. Reinicia Home Assistant. \n\nExemple del que caldria eliminar:\n{yaml_example}\n",
             "title": "Configuraci\u00f3 YAML per a la integraci\u00f3 {platform} no utilitzada"
         },
         "platform_only": {
@@ -49,12 +87,11 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "L'emmagatzematge `{storage_key}` no s'ha pogut analitzar i s'ha canviat el nom a `{corrupt_path}` per permetre que Home Assistant continu\u00ef. \n\n\u00c9s possible que s'hagi creat autom\u00e0ticament un `{storage_key}` predeterminat. \n\nSi has fet modificacions manuals al fitxer d'emmagatzematge, corregeix els errors de sintaxi a `{corrupt_path}`, restaura el fitxer al cam\u00ed original `{original_path}` i reinicia Home Assistant. En cas contrari, restaura el sistema des d'una c\u00f2pia de seguretat. \n\nFes clic a ENVIAR a continuaci\u00f3 per confirmar que has reparat el fitxer o has restaurat a partir d'una c\u00f2pia de seguretat. \n\nL'error exacte ha sigut el seg\u00fcent: {error}",
-                        "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de `{storage_key}`"
+                        "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de {storage_key}"
                     }
                 }
             },
-            "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de `{storage_key}`"
+            "title": "S'ha detectat una corrupci\u00f3 d'emmagatzematge de {storage_key}"
         }
     },
     "services": {
@@ -80,7 +117,6 @@
         "set_location": {
             "fields": {
                 "elevation": {
-                    "description": "Altitud de la seva ubicaci\u00f3.",
                     "name": "Altitud"
                 },
                 "latitude": {
@@ -95,16 +131,24 @@
             "name": "Atura"
         },
         "toggle": {
-            "description": "Servei gen\u00e8ric per commutar (ON/OFF) dispositius de qualsevol domini.",
+            "description": "Acci\u00f3 gen\u00e8rica per commutar (ON/OFF) dispositius de qualsevol domini.",
             "name": "Commutaci\u00f3 gen\u00e8rica"
         },
         "turn_off": {
-            "description": "Servei gen\u00e8ric per desactivar/apagar dispositius de qualsevol domini.",
+            "description": "Acci\u00f3 gen\u00e8rica per desactivar/apagar dispositius de qualsevol domini.",
             "name": "Desactivaci\u00f3 gen\u00e8rica"
         },
         "turn_on": {
-            "description": "Servei gen\u00e8ric per activar/engegar dispositius de qualsevol domini.",
+            "description": "Acci\u00f3 gen\u00e8rica per activar/engegar dispositius de qualsevol domini.",
             "name": "Activaci\u00f3 gen\u00e8rica"
+        },
+        "update_entity": {
+            "fields": {
+                "entity_id": {
+                    "description": "Llista d'entitats a for\u00e7ar l'actualitzaci\u00f3.",
+                    "name": "Entitats a actualitzar"
+                }
+            }
         }
     },
     "system_health": {

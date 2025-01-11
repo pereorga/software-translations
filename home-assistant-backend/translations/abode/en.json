@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "reauth_successful": "Re-authentication was successful",
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -34,17 +33,17 @@
     },
     "services": {
         "capture_image": {
-            "description": "Request a new image capture from a camera device.",
+            "description": "Requests a new image capture from a camera device.",
             "fields": {
                 "entity_id": {
-                    "description": "Entity id of the camera to request an image.",
+                    "description": "Entity ID of the camera to request an image from.",
                     "name": "Entity"
                 }
             },
             "name": "Capture image"
         },
         "change_setting": {
-            "description": "Change an Abode system setting.",
+            "description": "Changes an Abode system setting.",
             "fields": {
                 "setting": {
                     "description": "Setting to change.",
@@ -58,10 +57,10 @@
             "name": "Change setting"
         },
         "trigger_automation": {
-            "description": "Trigger an Abode automation.",
+            "description": "Triggers an Abode automation.",
             "fields": {
                 "entity_id": {
-                    "description": "Entity id of the automation to trigger.",
+                    "description": "Entity ID of the automation to trigger.",
                     "name": "Entity"
                 }
             },

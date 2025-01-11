@@ -36,9 +36,6 @@
             "current_c_a": {
                 "name": "Corrent de la fase C"
             },
-            "evse_state": {
-                "name": "Estat"
-            },
             "grid_hz": {
                 "name": "Freq\u00fc\u00e8ncia de la xarxa"
             },
@@ -48,8 +45,17 @@
             "handle_temp_c": {
                 "name": "Temperatura del m\u00e0nec"
             },
+            "mcu_temp_c": {
+                "name": "Temperatura del MCU"
+            },
+            "pcba_temp_c": {
+                "name": "Temperatura de la PCB"
+            },
             "status": {
-                "name": "Estat"
+                "name": "Estat",
+                "state": {
+                    "negotiating": "Negociant connexi\u00f3"
+                }
             },
             "voltage_a_v": {
                 "name": "Tensi\u00f3 de la fase A"

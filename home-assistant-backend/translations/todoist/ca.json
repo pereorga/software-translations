@@ -1,7 +1,6 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El compte ja est\u00e0 configurat",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
         },
         "create_entry": {
@@ -21,6 +20,14 @@
             }
         }
     },
+    "exceptions": {
+        "project_invalid": {
+            "message": "El nom del projecte \"{project}\" \u00e9s inv\u00e0lid"
+        },
+        "section_invalid": {
+            "message": "El projecte \"{project}\" no t\u00e9 cap secci\u00f3 \"{section}\""
+        }
+    },
     "services": {
         "new_task": {
             "description": "Crea una nova tasca i l'afegeix a un projecte.",
@@ -31,6 +38,10 @@
                 "content": {
                     "description": "Nom de la tasca.",
                     "name": "Contingut"
+                },
+                "description": {
+                    "description": "Descripci\u00f3 de la tasca.",
+                    "name": "Descripci\u00f3"
                 },
                 "due_date": {
                     "description": "Data de venciment de la tasca, en format AAAA-MM-DD o AAAA-MM-DDTHH:MM:SS, en zona hor\u00e0ria UTC.",
@@ -49,8 +60,11 @@
                     "name": "Data del recordatori"
                 },
                 "reminder_date_lang": {
-                    "description": "Idioma de reminder_date_string.",
-                    "name": "Idioma de les dades del recordatori"
+                    "description": "Idioma de reminder_date_string."
+                },
+                "section": {
+                    "description": "Nom de la secci\u00f3 dins del projecte on afegir la tasca.",
+                    "name": "Secci\u00f3"
                 }
             },
             "name": "Nova tasca"

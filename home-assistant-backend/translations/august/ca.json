@@ -8,8 +8,7 @@
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "invalid_verification_code": "Codi de verificaci\u00f3 inv\u00e0lid",
-            "unhandled": "Error no gestionat: {error}",
-            "unknown": "Error inesperat"
+            "unhandled": "Error no gestionat: {error}"
         },
         "step": {
             "reauth_validate": {
@@ -32,7 +31,7 @@
             },
             "validation": {
                 "data": {
-                    "code": "Codi de verificaci\u00f3"
+                    "verification_code": "Codi de verificaci\u00f3"
                 },
                 "description": "Comprova el teu {login_method} ({username}) i introdueix el codi de verificaci\u00f3 a continuaci\u00f3. Els codis poden trigar uns minuts a arribar.",
                 "title": "Verificaci\u00f3 en dos passos"
@@ -48,6 +47,17 @@
         "camera": {
             "camera": {
                 "name": "C\u00e0mera"
+            }
+        },
+        "event": {
+            "motion": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "motion": "Moviment"
+                        }
+                    }
+                }
             }
         },
         "sensor": {

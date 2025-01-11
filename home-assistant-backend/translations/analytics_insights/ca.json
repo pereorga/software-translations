@@ -1,22 +1,30 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El servei ja est\u00e0 configurat",
-            "cannot_connect": "Ha fallat la connexi\u00f3"
-        },
-        "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "unknown": "Error inesperat"
         },
         "step": {
             "user": {
                 "data": {
+                    "tracked_addons": "Complements",
                     "tracked_custom_integrations": "Integracions personalitzades"
                 },
                 "data_description": {
+                    "tracked_addons": "Selecciona els complements als quals fer seguiment",
                     "tracked_custom_integrations": "Selecciona les integracions personalitzades a monitorar",
                     "tracked_integrations": "Selecciona les integracions a monitorar"
                 }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "total_active_installations": {
+                "name": "Instal\u00b7lacions actives totals"
+            },
+            "total_reports_integrations": {
+                "name": "Integracions totals (notificades)"
             }
         }
     },
@@ -27,9 +35,11 @@
         "step": {
             "init": {
                 "data": {
+                    "tracked_addons": "Complements",
                     "tracked_custom_integrations": "Integracions personalitzades"
                 },
                 "data_description": {
+                    "tracked_addons": "Selecciona els complements als quals fer seguiment",
                     "tracked_custom_integrations": "Selecciona les integracions personalitzades a monitorar",
                     "tracked_integrations": "Selecciona les integracions a monitorar"
                 }

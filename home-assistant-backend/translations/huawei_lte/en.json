@@ -142,6 +142,45 @@
             "lte_uplink_frequency": {
                 "name": "LTE uplink frequency"
             },
+            "nrbler": {
+                "name": "5G block error rate"
+            },
+            "nrcqi0": {
+                "name": "5G CQI 0"
+            },
+            "nrcqi1": {
+                "name": "5G CQI 1"
+            },
+            "nrdlbandwidth": {
+                "name": "5G downlink bandwidth"
+            },
+            "nrdlmcs": {
+                "name": "5G downlink MCS"
+            },
+            "nrearfcn": {
+                "name": "5G EARFCN"
+            },
+            "nrrank": {
+                "name": "5G rank"
+            },
+            "nrrsrp": {
+                "name": "5G RSRP"
+            },
+            "nrrsrq": {
+                "name": "5G RSRQ"
+            },
+            "nrsinr": {
+                "name": "5G SINR"
+            },
+            "nrtxpower": {
+                "name": "5G transmit power"
+            },
+            "nrulbandwidth": {
+                "name": "5G uplink bandwidth"
+            },
+            "nrulmcs": {
+                "name": "5G uplink MCS"
+            },
             "operator_code": {
                 "name": "Operator code"
             },
@@ -160,9 +199,6 @@
             },
             "plmn": {
                 "name": "PLMN"
-            },
-            "preferred_mode": {
-                "name": "Preferred mode"
             },
             "preferred_network_mode": {
                 "name": "Preferred network mode",
@@ -300,12 +336,6 @@
             }
         }
     },
-    "issues": {
-        "service_changed_to_button": {
-            "description": "The {service} service is deprecated, use the corresponding {button} button instead.",
-            "title": "Service changed to a button"
-        }
-    },
     "options": {
         "step": {
             "init": {
@@ -319,26 +349,6 @@
         }
     },
     "services": {
-        "clear_traffic_statistics": {
-            "description": "Clears traffic statistics.",
-            "fields": {
-                "url": {
-                    "description": "URL of router to clear; optional when only one is configured.",
-                    "name": "URL"
-                }
-            },
-            "name": "Clear traffic statistics"
-        },
-        "reboot": {
-            "description": "Reboots router.",
-            "fields": {
-                "url": {
-                    "description": "URL of router to reboot; optional when only one is configured.",
-                    "name": "URL"
-                }
-            },
-            "name": "Reboot"
-        },
         "resume_integration": {
             "description": "Resumes suspended integration.",
             "fields": {
@@ -350,7 +360,7 @@
             "name": "Resume integration"
         },
         "suspend_integration": {
-            "description": "Suspends integration. Suspending logs the integration out from the router, and stops accessing it. Useful e.g. if accessing the router web interface from another source such as a web browser is temporarily required. Invoke the resume_integration service to resume.\n.",
+            "description": "Suspends integration. Suspending logs the integration out from the router, and stops accessing it. Useful e.g. if accessing the router web interface from another source such as a web browser is temporarily required. Invoke the 'Resume integration' action to resume.",
             "fields": {
                 "url": {
                     "description": "URL of router to suspend integration for; optional when only one is configured.",

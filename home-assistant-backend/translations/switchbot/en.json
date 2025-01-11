@@ -2,7 +2,7 @@
     "config": {
         "abort": {
             "already_configured_device": "Device is already configured",
-            "cannot_connect": "Failed to connect",
+            "api_error": "Error while communicating with SwitchBot API: {error_detail}",
             "no_devices_found": "No supported SwitchBot devices found in range; If the device is in range, ensure the scanner has active scanning enabled, as SwitchBot devices cannot be discovered with passive scans. Active scans can be disabled once the device is configured. If you need clarification on whether the device is in-range, download the diagnostics for the integration that provides your Bluetooth adapter or proxy and check if the MAC address of the SwitchBot device is present.",
             "switchbot_unsupported_type": "Unsupported Switchbot Type.",
             "unknown": "Unexpected error"
@@ -16,21 +16,21 @@
             "confirm": {
                 "description": "Do you want to set up {name}?"
             },
-            "lock_auth": {
+            "encrypted_auth": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
-                "description": "Please provide your SwitchBot app username and password. This data won't be saved and only used to retrieve your locks encryption key. Usernames and passwords are case sensitive."
+                "description": "Please provide your SwitchBot app username and password. This data won't be saved and only used to retrieve your device's encryption key. Usernames and passwords are case sensitive."
             },
-            "lock_choose_method": {
-                "description": "A SwitchBot lock can be set up in Home Assistant in two different ways.\n\nYou can enter the key id and encryption key yourself, or Home Assistant can import them from your SwitchBot account.",
+            "encrypted_choose_method": {
+                "description": "An encrypted SwitchBot device can be set up in Home Assistant in two different ways.\n\nYou can enter the key id and encryption key yourself, or Home Assistant can import them from your SwitchBot account.",
                 "menu_options": {
-                    "lock_auth": "SwitchBot account (recommended)",
-                    "lock_key": "Enter lock encryption key manually"
+                    "encrypted_auth": "SwitchBot account (recommended)",
+                    "encrypted_key": "Enter encryption key manually"
                 }
             },
-            "lock_key": {
+            "encrypted_key": {
                 "data": {
                     "encryption_key": "Encryption key",
                     "key_id": "Key ID"
@@ -58,9 +58,6 @@
             "door_auto_lock_paused": {
                 "name": "Auto-lock paused"
             },
-            "door_open": {
-                "name": "Door"
-            },
             "door_timeout": {
                 "name": "Timeout"
             },
@@ -69,12 +66,6 @@
             },
             "door_unlocked_alarm": {
                 "name": "Unlocked alarm"
-            },
-            "light": {
-                "name": "Light"
-            },
-            "motion": {
-                "name": "Motion"
             }
         },
         "cover": {
@@ -114,23 +105,11 @@
             }
         },
         "sensor": {
-            "battery": {
-                "name": "Battery"
-            },
             "bluetooth_signal": {
                 "name": "Bluetooth signal"
             },
-            "humidity": {
-                "name": "Humidity"
-            },
             "light_level": {
                 "name": "Light level"
-            },
-            "power": {
-                "name": "Power"
-            },
-            "temperature": {
-                "name": "Temperature"
             },
             "wifi_signal": {
                 "name": "Wi-Fi signal"
@@ -159,6 +138,7 @@
         "step": {
             "init": {
                 "data": {
+                    "lock_force_nightlatch": "Force Nightlatch operation mode",
                     "retry_count": "Retry count"
                 }
             }

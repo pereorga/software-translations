@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -35,6 +36,18 @@
         "binary_sensor": {
             "armed": {
                 "name": "Activada"
+            },
+            "low_battery_trouble": {
+                "name": "Problema de bateria baixa"
+            },
+            "monitoring_station_1_trouble": {
+                "name": "Problema de l'estaci\u00f3 de monitoratge 1"
+            },
+            "monitoring_station_2_trouble": {
+                "name": "Problema de l'estaci\u00f3 de monitoratge 2"
+            },
+            "monitoring_station_3_trouble": {
+                "name": "Problema de l'estaci\u00f3 de monitoratge 3"
             }
         }
     },
@@ -54,7 +67,8 @@
                 "data": {
                     "code_arm_required": "Demana el PIN per activar",
                     "code_disarm_required": "Demana el PIN per desactivar",
-                    "scan_interval": "Freq\u00fc\u00e8ncia de sondeig a Risco (en segons)"
+                    "concurrency": "Nombre m\u00e0xim de peticions concurrents a Risco local",
+                    "scan_interval": "Freq\u00fc\u00e8ncia de sondeig a Risco Cloud (en segons)"
                 },
                 "title": "Opcions de configuraci\u00f3"
             },

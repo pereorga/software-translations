@@ -30,40 +30,27 @@
             }
         }
     },
-    "issues": {
-        "deprecated_duration_in_start": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "The timer service `timer.start` optional duration parameter is being removed and use of it has been detected. To change the duration please create a new timer.\n\nPlease remove the use of the `duration` parameter in the `timer.start` service in your automations and scripts and select **submit** to close this issue.",
-                        "title": "The timer start service duration parameter is being removed"
-                    }
-                }
-            },
-            "title": "The timer start service duration parameter is being removed"
-        }
-    },
     "services": {
         "cancel": {
-            "description": "Cancels a timer.",
+            "description": "Resets a timer's duration to the last known initial value without firing the timer finished event.",
             "name": "Cancel"
         },
         "change": {
-            "description": "Changes a timer.",
+            "description": "Changes a timer by adding or subtracting a given duration.",
             "fields": {
                 "duration": {
-                    "description": "Duration to add or subtract to the running timer.",
+                    "description": "Duration to add to or subtract from the running timer.",
                     "name": "Duration"
                 }
             },
             "name": "Change"
         },
         "finish": {
-            "description": "Finishes a timer.",
+            "description": "Finishes a running timer earlier than scheduled.",
             "name": "Finish"
         },
         "pause": {
-            "description": "Pauses a timer.",
+            "description": "Pauses a running timer, retaining the remaining duration for later continuation.",
             "name": "Pause"
         },
         "reload": {
@@ -71,14 +58,15 @@
             "name": "Reload"
         },
         "start": {
-            "description": "Starts a timer.",
+            "description": "Starts a timer or restarts it with a provided duration.",
             "fields": {
                 "duration": {
-                    "description": "Duration the timer requires to finish. [optional].",
+                    "description": "Custom duration to restart the timer with.",
                     "name": "Duration"
                 }
             },
             "name": "Start"
         }
-    }
+    },
+    "title": "Timer"
 }

@@ -2,6 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3",
             "no_devices_found": "No s'han trobat dispositius a la xarxa"
         },
         "error": {
@@ -23,6 +24,9 @@
         "binary_sensor": {
             "sensor_connected_state": {
                 "name": "Connexi\u00f3 del sensor"
+            },
+            "valve_connected_state": {
+                "name": "Connexi\u00f3 de la v\u00e0lvula"
             }
         },
         "button": {
@@ -39,9 +43,6 @@
             },
             "remaining_open_time": {
                 "name": "Temps obert restant"
-            },
-            "season_pause": {
-                "name": "Pausa estacional"
             },
             "seasonal_adjust": {
                 "name": "Ajust estacional"

@@ -1,27 +1,39 @@
 {
     "config": {
         "abort": {
+            "already_in_progress": "Configuration flow is already in progress",
+            "reconfigure_successful": "Re-configuration was successful",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
         "error": {
             "cannot_connect": "Failed to connect"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "Host name or IP address of a HEOS-capable product (preferrably one connected via wire to the network)."
+                },
+                "description": "Change the host name or IP address of the HEOS-capable product used to access your HEOS System.",
+                "title": "Reconfigure HEOS"
+            },
             "user": {
                 "data": {
                     "host": "Host"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your HEOS device."
+                    "host": "Host name or IP address of a HEOS-capable product (preferrably one connected via wire to the network)."
                 },
-                "description": "Please enter the host name or IP address of a Heos device (preferably one connected via wire to the network).",
-                "title": "Connect to Heos"
+                "description": "Please enter the host name or IP address of a HEOS-capable product to access your HEOS System.",
+                "title": "Connect to HEOS"
             }
         }
     },
     "services": {
         "sign_in": {
-            "description": "Signs the controller in to a HEOS account.",
+            "description": "Signs in to a HEOS account.",
             "fields": {
                 "password": {
                     "description": "The password of the HEOS account.",
@@ -35,7 +47,7 @@
             "name": "Sign in"
         },
         "sign_out": {
-            "description": "Signs the controller out of the HEOS account.",
+            "description": "Signs out of the HEOS account.",
             "name": "Sign out"
         }
     }

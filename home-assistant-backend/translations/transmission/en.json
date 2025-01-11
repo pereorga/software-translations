@@ -6,8 +6,7 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication",
-            "name_exists": "Name already exists"
+            "invalid_auth": "Invalid authentication"
         },
         "step": {
             "reauth_confirm": {
@@ -20,7 +19,6 @@
             "user": {
                 "data": {
                     "host": "Host",
-                    "name": "Name",
                     "password": "Password",
                     "path": "Path",
                     "port": "Port",
@@ -37,22 +35,27 @@
     "entity": {
         "sensor": {
             "active_torrents": {
-                "name": "Active torrents"
+                "name": "Active torrents",
+                "unit_of_measurement": "torrents"
             },
             "completed_torrents": {
-                "name": "Completed torrents"
+                "name": "Completed torrents",
+                "unit_of_measurement": "torrents"
             },
             "download_speed": {
                 "name": "Download speed"
             },
             "paused_torrents": {
-                "name": "Paused torrents"
+                "name": "Paused torrents",
+                "unit_of_measurement": "torrents"
             },
             "started_torrents": {
-                "name": "Started torrents"
+                "name": "Started torrents",
+                "unit_of_measurement": "torrents"
             },
             "total_torrents": {
-                "name": "Total torrents"
+                "name": "Total torrents",
+                "unit_of_measurement": "torrents"
             },
             "transmission_status": {
                 "name": "Status",
@@ -81,10 +84,8 @@
             "init": {
                 "data": {
                     "limit": "Limit",
-                    "order": "Order",
-                    "scan_interval": "Update frequency"
-                },
-                "title": "Configure options for Transmission"
+                    "order": "Order"
+                }
             }
         }
     },
@@ -92,6 +93,10 @@
         "add_torrent": {
             "description": "Adds a new torrent to download (URL, magnet link or Base64 encoded).",
             "fields": {
+                "download_path": {
+                    "description": "Optional path to specify where the torrent should be downloaded. If not specified, the default download directory is used.",
+                    "name": "Download path"
+                },
                 "entry_id": {
                     "description": "Config entry id.",
                     "name": "Transmission entry"

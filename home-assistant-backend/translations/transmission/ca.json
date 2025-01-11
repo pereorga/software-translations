@@ -6,8 +6,7 @@
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "name_exists": "El nom ja existeix"
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
         },
         "step": {
             "reauth_confirm": {
@@ -20,7 +19,6 @@
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
-                    "name": "Nom",
                     "password": "Contrasenya",
                     "path": "Ruta",
                     "port": "Port",
@@ -34,22 +32,27 @@
     "entity": {
         "sensor": {
             "active_torrents": {
-                "name": "Torrents actius"
+                "name": "Torrents actius",
+                "unit_of_measurement": "torrents"
             },
             "completed_torrents": {
-                "name": "Torrents completats"
+                "name": "Torrents completats",
+                "unit_of_measurement": "torrents"
             },
             "download_speed": {
                 "name": "Velocitat de baixada"
             },
             "paused_torrents": {
-                "name": "Torrents en pausa"
+                "name": "Torrents en pausa",
+                "unit_of_measurement": "torrents"
             },
             "started_torrents": {
-                "name": "Torrents iniciats"
+                "name": "Torrents iniciats",
+                "unit_of_measurement": "torrents"
             },
             "total_torrents": {
-                "name": "Torrents totals"
+                "name": "Torrents totals",
+                "unit_of_measurement": "torrents"
             },
             "transmission_status": {
                 "name": "Estat",
@@ -78,10 +81,8 @@
             "init": {
                 "data": {
                     "limit": "L\u00edmit",
-                    "order": "Ordre",
-                    "scan_interval": "Freq\u00fc\u00e8ncia d'actualitzaci\u00f3"
-                },
-                "title": "Opcions de configuraci\u00f3 de Transmission"
+                    "order": "Ordre"
+                }
             }
         }
     },
@@ -93,7 +94,8 @@
                     "description": "URL, enlla\u00e7 magn\u00e8tic o fitxer codificat en Base64.",
                     "name": "Torrent"
                 }
-            }
+            },
+            "name": "Afegeix torrent"
         },
         "remove_torrent": {
             "description": "Elimina un torrent.",

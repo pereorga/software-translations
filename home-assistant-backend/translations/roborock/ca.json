@@ -1,13 +1,13 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "invalid_code": "El codi introdu\u00eft \u00e9s incorrecte, comprova'l i torna-ho a provar.",
             "invalid_email": "No hi ha cap compte associat amb correu introdu\u00eft, torna-ho a provar.",
             "invalid_email_format": "S'ha produ\u00eft un problema en la formataci\u00f3 del correu - torna-ho a provar.",
+            "too_frequent_code_requests": "Has provat de sol\u00b7licitar massa codis. Torna-ho a provar m\u00e9s tard.",
             "unknown": "Error inesperat",
             "unknown_roborock": "S'ha produ\u00eft una excepci\u00f3 desconeguda - comprova els registres.",
             "unknown_url": "S'ha produ\u00eft un problema en determinar l'URL correcte del teu compte de roborock - comprova els registres."
@@ -76,6 +76,7 @@
                     "high": "Alta",
                     "intense": "Intens",
                     "low": "Baixa",
+                    "max": "M\u00e0x.",
                     "medium": "Mitjana",
                     "mild": "Mitj\u00e0",
                     "moderate": "Moderat",
@@ -91,9 +92,32 @@
                     "fast": "R\u00e0pid",
                     "standard": "Est\u00e0ndard"
                 }
+            },
+            "selected_map": {
+                "name": "Mapa seleccionat"
             }
         },
         "sensor": {
+            "a01_error": {
+                "name": "Error",
+                "state": {
+                    "battery_under_10": "Bateria per sota del 10%",
+                    "low_battery": "Bateria baixa",
+                    "none": "Cap"
+                }
+            },
+            "a01_status": {
+                "name": "Estat",
+                "state": {
+                    "charging": "Carregant",
+                    "drying": "Assecant",
+                    "ready": "A punt",
+                    "unknown": "Desconegut",
+                    "updating": "Actualitzant",
+                    "ventilating": "Ventilant",
+                    "washing": "Netejant"
+                }
+            },
             "clean_percent": {
                 "name": "Progr\u00e9s de neteja"
             },
@@ -102,6 +126,9 @@
             },
             "cleaning_time": {
                 "name": "Temps de neteja"
+            },
+            "countdown": {
+                "name": "Compte enrere"
             },
             "dock_error": {
                 "name": "Error de connexi\u00f3 a la base",
@@ -157,6 +184,7 @@
                     "shutting_down": "Apagant",
                     "spot_cleaning": "Netejant punt",
                     "starting": "Iniciant",
+                    "unknown": "Desconegut",
                     "updating": "Actualitzant",
                     "washing_the_mop": "Rentant baieta",
                     "zoned_cleaning": "Neteja zonificada"
@@ -200,6 +228,47 @@
                     "wheels_jammed": "Rodes encallades",
                     "wheels_suspended": "Rodes suspeses"
                 }
+            },
+            "washing_left": {
+                "name": "Rentat restant"
+            },
+            "zeo_error": {
+                "name": "Error",
+                "state": {
+                    "communication_error": "Error de comunicaci\u00f3",
+                    "door_lock_error": "Error de bloqueig de porta",
+                    "drain_error": "Error de drenatge",
+                    "drying_error": "Error en l'assecament",
+                    "drying_error_e_12": "Error en l'assecament E12",
+                    "drying_error_e_13": "Error en l'assecament E13",
+                    "drying_error_e_14": "Error en l'assecament E14",
+                    "drying_error_e_15": "Error en l'assecament E15",
+                    "drying_error_e_16": "Error en l'assecament E163",
+                    "drying_error_restart": "Reinicia la rentadora",
+                    "drying_error_water_flow": "Comprova el cabal d'aigua",
+                    "heating_error": "Error d'escalfador",
+                    "inverter_error": "Error de l'inversor",
+                    "none": "Cap",
+                    "refill_error": "Error de c\u00e0rrega",
+                    "spin_error": "Reorganitza la roba",
+                    "temperature_error": "Error de temperatura",
+                    "water_level_error": "Error de nivell d'aigua"
+                }
+            },
+            "zeo_state": {
+                "name": "Estat",
+                "state": {
+                    "cooling": "Refredant",
+                    "done": "Acabat",
+                    "drying": "Assecant",
+                    "rinsing": "Esbandint",
+                    "soaking": "Remullant",
+                    "spinning": "Centrifugant",
+                    "standby": "En espera",
+                    "under_delay_start": "Inici retardat",
+                    "washing": "Rentant",
+                    "weighing": "Pesant"
+                }
             }
         },
         "switch": {
@@ -226,13 +295,7 @@
             "off_peak_end": {
                 "name": "Final per\u00edode vall"
             },
-            "off_peak_end_time": {
-                "name": "Final per\u00edode vall"
-            },
             "off_peak_start": {
-                "name": "Inici per\u00edode vall"
-            },
-            "off_peak_start_time": {
                 "name": "Inici per\u00edode vall"
             }
         },
@@ -245,7 +308,7 @@
                             "balanced": "Equilibrada",
                             "custom": "Personalitzat",
                             "gentle": "Lenta",
-                            "max": "M\u00e0xima",
+                            "max": "M\u00e0x.",
                             "max_plus": "M\u00e0xima+",
                             "medium": "Mitjana",
                             "off": "OFF",
@@ -259,18 +322,33 @@
             }
         }
     },
-    "issues": {
-        "service_deprecation_start_pause": {
-            "description": "El servei vacuum.start_pause est\u00e0 obsolet i s'eliminar\u00e0 de Home Assistant a partir de la versi\u00f3 2024.2. Modifica les automatitzacions i/o scripts que utilitzin el servei perqu\u00e8 utilitzin els serveis vacuum.pause i vacuum.start, a continuaci\u00f3, selecciona Envia per marcar aquest problema com a resolt.",
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "El servei vacuum.start_pause est\u00e0 obsolet i s'eliminar\u00e0 de Home Assistant a partir de la versi\u00f3 2024.2. Modifica les automatitzacions i/o scripts que utilitzin el servei perqu\u00e8 utilitzin els serveis vacuum.pause i vacuum.start, a continuaci\u00f3, selecciona Envia per marcar aquest problema com a resolt.",
-                        "title": "S'est\u00e0 eliminant el suport del servei vacuum.start_pause de Roborock"
-                    }
+    "options": {
+        "step": {
+            "drawables": {
+                "data": {
+                    "charger": "Carregador",
+                    "cleaned_area": "Zona netejada",
+                    "goto_path": "Cam\u00ed a seguir",
+                    "ignored_obstacles": "Obstacles ignorats",
+                    "ignored_obstacles_with_photo": "Obstacles ignorats amb foto",
+                    "mop_path": "Cam\u00ed on fregar",
+                    "no_carpet_zones": "Zones sense catifes",
+                    "no_go_zones": "Zones prohibides",
+                    "no_mopping_zones": "Zones on no fregar",
+                    "obstacles": "Obstacles",
+                    "obstacles_with_photo": "Obstacles amb foto",
+                    "path": "Cam\u00ed",
+                    "predicted_path": "Cam\u00ed previst",
+                    "vacuum_position": "Posici\u00f3 de l'aspirador",
+                    "virtual_walls": "Parets virtuals",
+                    "zones": "Zones"
                 }
-            },
-            "title": "S'est\u00e0 eliminant el suport del servei vacuum.start_pause de Roborock"
+            }
+        }
+    },
+    "services": {
+        "get_maps": {
+            "name": "Obt\u00e9 mapes"
         }
     }
 }

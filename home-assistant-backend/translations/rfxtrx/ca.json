@@ -51,6 +51,7 @@
                 "state_attributes": {
                     "event_type": {
                         "state": {
+                            "alarm": "Alarma",
                             "ir": "IR",
                             "level_1": "Nivell 1",
                             "level_2": "Nivell 2",
@@ -61,6 +62,11 @@
                             "level_7": "Nivell 7",
                             "level_8": "Nivell 8",
                             "level_9": "Nivell 9",
+                            "light_2_off": "Llum 2 apagat",
+                            "light_2_on": "Llum 2 enc\u00e8s",
+                            "light_detected": "Llum detectada",
+                            "motion": "Moviment",
+                            "no_motion": "Sense moviment",
                             "off": "OFF",
                             "on": "ON",
                             "program": "Programa",
@@ -147,9 +153,9 @@
         "error": {
             "already_configured_device": "El dispositiu ja est\u00e0 configurat",
             "invalid_event_code": "Codi d'esdeveniment inv\u00e0lid",
-            "invalid_input_2262_off": "Entrada no v\u00e0lida per a l'ordre off",
-            "invalid_input_2262_on": "Entrada no v\u00e0lida per a l'ordre ON",
-            "invalid_input_off_delay": "Entrada no v\u00e0lida per al retard off",
+            "invalid_input_2262_off": "Entrada inv\u00e0lida de la comanda OFF",
+            "invalid_input_2262_on": "Entrada inv\u00e0lida de la comanda ON",
+            "invalid_input_off_delay": "Entrada inv\u00e0lida de retard OFF",
             "unknown": "Error inesperat"
         },
         "step": {

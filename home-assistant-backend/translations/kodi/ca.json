@@ -4,7 +4,6 @@
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "no_uuid": "La inst\u00e0ncia de Kodi no t\u00e9 un identificador \u00fanic. Probablement, aix\u00f2 es deu a una versi\u00f3 antiga de Kodi (17.x o inferior). Pots configurar la integraci\u00f3 manualment o actualitzar Kodi a una versi\u00f3 m\u00e9s recent.",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -45,6 +44,17 @@
         "trigger_type": {
             "turn_off": "{entity_name} s'apagui",
             "turn_on": "{entity_name} s'engegui"
+        }
+    },
+    "entity": {
+        "media_player": {
+            "media_player": {
+                "state_attributes": {
+                    "dynamic_range": {
+                        "name": "Rang din\u00e0mic"
+                    }
+                }
+            }
         }
     },
     "services": {

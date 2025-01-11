@@ -21,9 +21,14 @@
                 "title": "Pick HomematicIP Access point"
             },
             "link": {
-                "description": "Press the blue button on the access point and the submit button to register HomematicIP with Home Assistant.\n\n![Location of button on bridge](/static/images/config_flows/config_homematicip_cloud.png)",
+                "description": "Press the blue button on the access point and the **Submit** button to register HomematicIP with Home Assistant.\n\n![Location of button on bridge](/static/images/config_flows/config_homematicip_cloud.png)",
                 "title": "Link Access point"
             }
+        }
+    },
+    "exceptions": {
+        "access_point_not_found": {
+            "message": "No matching access point found for access point id {id}"
         }
     },
     "services": {
@@ -134,6 +139,20 @@
                 }
             },
             "name": "Set active climate profile"
+        },
+        "set_home_cooling_mode": {
+            "description": "Set the heating/cooling mode for the entire home",
+            "fields": {
+                "accesspoint_id": {
+                    "description": "The ID of the Homematic IP Access Point.",
+                    "name": "Accesspoint ID"
+                },
+                "cooling": {
+                    "description": "Enable for cooling mode, disable for heating mode",
+                    "name": "Cooling"
+                }
+            },
+            "name": "Set home cooling mode"
         }
     }
 }

@@ -1,12 +1,12 @@
 {
     "config": {
         "abort": {
-            "no_devices_found": "No devices found on the network",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
         "error": {
             "address_in_use": "Unable to open local UDP port 50222.",
-            "cannot_connect": "UDP discovery error."
+            "cannot_connect": "UDP discovery error.",
+            "no_device_found": "No devices found on the network"
         },
         "step": {
             "user": {
@@ -16,8 +16,7 @@
                 "data_description": {
                     "host": "Hostname or IP address of your Tempest WeatherFlow device."
                 },
-                "description": "Unable to discover Tempest WeatherFlow devices. Click submit to try again.",
-                "title": "WeatherFlow discovery"
+                "description": "Unable to discover Tempest WeatherFlow devices. Select **Submit** to try again."
             }
         }
     },

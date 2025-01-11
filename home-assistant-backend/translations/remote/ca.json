@@ -24,12 +24,6 @@
             }
         }
     },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "Suport de la plataforma no compatible"
-        }
-    },
     "services": {
         "delete_command": {
             "description": "Elimina una ordre o una llista d'ordres de la base de dades.",
@@ -86,6 +80,9 @@
                 },
                 "hold_secs": {
                     "description": "Temps a mantenir premut abans d'enviar l'alliberament."
+                },
+                "num_repeats": {
+                    "name": "Repeticions"
                 }
             },
             "name": "Envia comanda"
@@ -97,6 +94,12 @@
             "name": "Apaga"
         },
         "turn_on": {
+            "fields": {
+                "activity": {
+                    "description": "ID d'activitat o nom de l'activitat a iniciar.",
+                    "name": "Activitat"
+                }
+            },
             "name": "Enc\u00e9n"
         }
     },

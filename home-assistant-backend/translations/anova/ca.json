@@ -1,11 +1,7 @@
 {
     "config": {
-        "abort": {
-            "no_devices_found": "No s'han trobat dispositius a la xarxa"
-        },
         "error": {
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "no_devices_found": "No s'ha trobat cap dispositiu. Assegura't que tens almenys un dispositiu Anova en l\u00ednia.",
             "unknown": "Error inesperat"
         },
         "step": {
@@ -32,7 +28,10 @@
                 "name": "Temperatura de l'escalfador"
             },
             "mode": {
-                "name": "Mode"
+                "name": "Mode",
+                "state": {
+                    "idle": "Inactiu"
+                }
             },
             "state": {
                 "name": "Estat"

@@ -12,6 +12,13 @@
             "is_off": "{entity_name} is off",
             "is_on": "{entity_name} is on"
         },
+        "extra_fields": {
+            "above": "Above",
+            "below": "Below",
+            "for": "Duration",
+            "humidity": "Humidity",
+            "mode": "Mode"
+        },
         "trigger_type": {
             "changed_states": "{entity_name} turned on or off",
             "target_humidity_changed": "{entity_name} target humidity changed",
@@ -74,10 +81,9 @@
             "name": "Humidifier"
         }
     },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
+    "exceptions": {
+        "humidity_out_of_range": {
+            "message": "Provided humidity {humidity} is not valid. Accepted range is {min_humidity} to {max_humidity}."
         }
     },
     "services": {

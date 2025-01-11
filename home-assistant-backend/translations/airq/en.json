@@ -36,9 +36,6 @@
             "bromine": {
                 "name": "Bromine"
             },
-            "carbon_dioxide": {
-                "name": "Carbon dioxide"
-            },
             "carbon_disulfide": {
                 "name": "Carbon disulfide"
             },
@@ -68,9 +65,6 @@
             },
             "health_index": {
                 "name": "Health Index"
-            },
-            "humidity": {
-                "name": "Humidity"
             },
             "hydrochloric_acid": {
                 "name": "Hydrochloric acid"
@@ -105,15 +99,6 @@
             "methanethiol": {
                 "name": "Methanethiol"
             },
-            "nitrogen_dioxide": {
-                "name": "Nitrogen dioxide"
-            },
-            "nitrogen_monoxide": {
-                "name": "Nitrogen monoxide"
-            },
-            "nitrous_oxide": {
-                "name": "Nitrous oxide"
-            },
             "noise": {
                 "name": "Noise"
             },
@@ -123,23 +108,8 @@
             "oxygen": {
                 "name": "Oxygen"
             },
-            "ozone": {
-                "name": "Ozone"
-            },
             "performance_index": {
                 "name": "Performance Index"
-            },
-            "pm1": {
-                "name": "PM1"
-            },
-            "pm10": {
-                "name": "PM10"
-            },
-            "pm25": {
-                "name": "PM2.5"
-            },
-            "pressure": {
-                "name": "Pressure"
             },
             "propane": {
                 "name": "Propane"
@@ -156,17 +126,23 @@
             "silicon_hydride": {
                 "name": "Silicon Hydride"
             },
-            "sulphur_dioxide": {
-                "name": "Sulphur dioxide"
-            },
-            "temperature": {
-                "name": "Temperature"
-            },
             "virus_index": {
                 "name": "Virus Index"
-            },
-            "volatile_organic_compounds": {
-                "name": "VOCs"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "clip_negatives": "Clip negative values",
+                    "return_average": "Show values averaged by the device"
+                },
+                "data_description": {
+                    "clip_negatives": "For baseline calibration purposes, certain sensor values may briefly become negative. The default behaviour is to clip such values to 0",
+                    "return_average": "air-Q allows to poll both the noisy sensor readings as well as the values averaged on the device (default)"
+                },
+                "title": "Configure air-Q integration"
             }
         }
     }

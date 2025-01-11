@@ -5,8 +5,7 @@
         },
         "error": {
             "invalid_auth": "Invalid authentication",
-            "login_error": "Login error ({code}): {msg}",
-            "reauth_successful": "Re-authentication was successful"
+            "login_error": "Login error ({code}): {msg}"
         },
         "step": {
             "reauth_user_code": {
@@ -20,12 +19,7 @@
             },
             "user": {
                 "data": {
-                    "access_id": "Tuya IoT Access ID",
-                    "access_secret": "Tuya IoT Access Secret",
-                    "country_code": "Country",
-                    "password": "Password",
-                    "user_code": "User code",
-                    "username": "Account"
+                    "user_code": "User code"
                 },
                 "description": "Enter your Smart Life or Tuya Smart user code.\n\nYou can find this code in the Smart Life app or Tuya Smart app in **Settings** > **Account and Security** screen, and enter the code shown on the **User Code** field. The user code is case sensitive, please be sure to enter it exactly as shown in the app."
             }
@@ -125,6 +119,9 @@
             }
         },
         "number": {
+            "alarm_duration": {
+                "name": "Alarm duration"
+            },
             "cloud_recipe": {
                 "name": "Cloud recipe"
             },
@@ -178,6 +175,9 @@
             },
             "sensitivity": {
                 "name": "Sensitivity"
+            },
+            "target_dis_closest": {
+                "name": "Clostest target distance"
             },
             "temperature": {
                 "name": "Temperature"
@@ -255,13 +255,6 @@
                 "state": {
                     "0": "Low sensitivity",
                     "1": "High sensitivity"
-                }
-            },
-            "fan_angle": {
-                "state": {
-                    "30": "30\u00b0",
-                    "60": "60\u00b0",
-                    "90": "90\u00b0"
                 }
             },
             "fingerbot_mode": {
@@ -349,7 +342,7 @@
                 "name": "Indicator light mode",
                 "state": {
                     "none": "Off",
-                    "pos": "Indicate switch location",
+                    "pos": "Indicate inverted switch state",
                     "relay": "Indicate switch on/off state"
                 }
             },
@@ -465,6 +458,17 @@
                     "great": "Great",
                     "mild": "Mild",
                     "severe": "Severe"
+                }
+            },
+            "air_quality_index": {
+                "name": "Air quality index",
+                "state": {
+                    "level_1": "Level 1",
+                    "level_2": "Level 2",
+                    "level_3": "Level 3",
+                    "level_4": "Level 4",
+                    "level_5": "Level 5",
+                    "level_6": "Level 6"
                 }
             },
             "battery": {
@@ -593,18 +597,7 @@
                 }
             },
             "status": {
-                "name": "Status",
-                "state": {
-                    "boiling_temp": "Boiling temperature",
-                    "cooling": "Cooling",
-                    "heating": "Heating",
-                    "heating_temp": "Heating temperature",
-                    "reserve_1": "Reserve 1",
-                    "reserve_2": "Reserve 2",
-                    "reserve_3": "Reserve 3",
-                    "standby": "Standby",
-                    "warm": "Heat preservation"
-                }
+                "name": "Status"
             },
             "temperature": {
                 "name": "Temperature"
@@ -626,6 +619,9 @@
             },
             "total_operating_time": {
                 "name": "Total operating time"
+            },
+            "total_production": {
+                "name": "Total production"
             },
             "total_volatile_organic_compound": {
                 "name": "Total volatile organic compound"
@@ -727,6 +723,9 @@
             },
             "privacy_mode": {
                 "name": "Privacy mode"
+            },
+            "pump": {
+                "name": "Pump"
             },
             "radio": {
                 "name": "Radio"
@@ -848,32 +847,6 @@
             "wide_dynamic_range": {
                 "name": "Wide dynamic range"
             }
-        }
-    },
-    "issues": {
-        "service_deprecation_turn_off": {
-            "description": "Tuya vacuum support for the vacuum.turn_off service is deprecated and will be removed in Home Assistant 2024.2; Please adjust any automation or script that uses the service to instead call vacuum.stop and select submit below to mark this issue as resolved.",
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Tuya vacuum support for the vacuum.turn_off service is deprecated and will be removed in Home Assistant 2024.2; Please adjust any automation or script that uses the service to instead call vacuum.stop and select submit below to mark this issue as resolved.",
-                        "title": "Tuya vacuum support for vacuum.turn_off is being removed"
-                    }
-                }
-            },
-            "title": "Tuya vacuum support for vacuum.turn_off is being removed"
-        },
-        "service_deprecation_turn_on": {
-            "description": "Tuya vacuum support for the vacuum.turn_on service is deprecated and will be removed in Home Assistant 2024.2; Please adjust any automation or script that uses the service to instead call vacuum.start and select submit below to mark this issue as resolved.",
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Tuya vacuum support for the vacuum.turn_on service is deprecated and will be removed in Home Assistant 2024.2; Please adjust any automation or script that uses the service to instead call vacuum.start and select submit below to mark this issue as resolved.",
-                        "title": "Tuya vacuum support for vacuum.turn_on is being removed"
-                    }
-                }
-            },
-            "title": "Tuya vacuum support for vacuum.turn_on is being removed"
         }
     }
 }

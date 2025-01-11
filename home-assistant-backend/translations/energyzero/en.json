@@ -20,9 +20,6 @@
             "highest_price_time": {
                 "name": "Time of highest price - today"
             },
-            "hours_priced_equal_or_higher": {
-                "name": "Hours priced equal or higher than current - today"
-            },
             "hours_priced_equal_or_lower": {
                 "name": "Hours priced equal or lower than current - today"
             },
@@ -59,7 +56,7 @@
             "description": "Request energy prices from EnergyZero.",
             "fields": {
                 "config_entry": {
-                    "description": "The config entry to use for this service.",
+                    "description": "The config entry to use for this action.",
                     "name": "Config Entry"
                 },
                 "end": {
@@ -81,7 +78,7 @@
             "description": "Request gas prices from EnergyZero.",
             "fields": {
                 "config_entry": {
-                    "description": "The config entry to use for this service.",
+                    "description": "The config entry to use for this action.",
                     "name": "Config Entry"
                 },
                 "end": {
@@ -98,28 +95,6 @@
                 }
             },
             "name": "Get gas prices"
-        },
-        "get_prices": {
-            "description": "Request energy or gas prices from EnergyZero.",
-            "fields": {
-                "end": {
-                    "description": "Until which moment to get the prices. Defaults to today if omitted.",
-                    "name": "End"
-                },
-                "incl_vat": {
-                    "description": "Include VAT in the prices. Defaults to true if omitted.",
-                    "name": "Including VAT"
-                },
-                "start": {
-                    "description": "From which moment to get the prices. Defaults to today if omitted.",
-                    "name": "Start"
-                },
-                "type": {
-                    "description": "Type of prices to get, energy or gas.",
-                    "name": "Type"
-                }
-            },
-            "name": "Get prices"
         }
     }
 }

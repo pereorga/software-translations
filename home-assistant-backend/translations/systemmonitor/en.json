@@ -5,7 +5,7 @@
         },
         "step": {
             "user": {
-                "description": "Press submit for initial setup. On the created config entry, press configure to add sensors for selected processes"
+                "description": "Select **Submit** for initial setup. On the created config entry, select configure to add sensors for selected processes"
             }
         }
     },
@@ -88,19 +88,6 @@
             "throughput_network_out": {
                 "name": "Network throughput out {interface}"
             }
-        }
-    },
-    "issues": {
-        "process_sensor": {
-            "fix_flow": {
-                "step": {
-                    "migrate_process_sensor": {
-                        "description": "Process sensors `{processes}` have been created as binary sensors and the sensors will be removed in 2024.9.0.\n\nPlease update all automations, scripts, dashboards or other things depending on these sensors to use the newly created binary sensors instead and press **Submit** to fix this issue.",
-                        "title": "Process sensors have been setup as binary sensors"
-                    }
-                }
-            },
-            "title": "Process sensors are deprecated and will be removed"
         }
     },
     "options": {

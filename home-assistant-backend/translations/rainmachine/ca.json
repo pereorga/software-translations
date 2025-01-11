@@ -80,11 +80,6 @@
             "hot_days_extra_watering": {
                 "name": "Aigua extra en dies calorosos"
             }
-        },
-        "update": {
-            "firmware": {
-                "name": "Microprogramari"
-            }
         }
     },
     "options": {
@@ -92,7 +87,6 @@
             "init": {
                 "data": {
                     "allow_inactive_zones_to_run": "Permet que les zones desactivades s'executin manualment",
-                    "use_app_run_times": "Utilitza els temps d'execuci\u00f3 de zona de l'aplicaci\u00f3 RainMachine",
                     "zone_run_time": "Temps d'execuci\u00f3 predeterminat de la zona (en segons)"
                 },
                 "title": "Configuraci\u00f3 de RainMachine"
@@ -206,9 +200,11 @@
             "description": "Atura totes les activitats de reg.",
             "fields": {
                 "device_id": {
+                    "description": "Controlador al qual aturar les activitats de reg.",
                     "name": "Controlador"
                 }
-            }
+            },
+            "name": "Atura tot el reg"
         },
         "stop_program": {
             "description": "Atura un programa.",
@@ -219,18 +215,24 @@
             "name": "Atura zona"
         },
         "unpause_watering": {
+            "description": "Repr\u00e8n totes les activitats de reg aturades.",
             "fields": {
                 "device_id": {
+                    "description": "Controlador al qual reprendre les activitats de reg.",
                     "name": "Controlador"
                 }
-            }
+            },
+            "name": "Repr\u00e8n tot el reg"
         },
         "unrestrict_watering": {
+            "description": "Deixa de restringir totes les activitats de reg",
             "fields": {
                 "device_id": {
+                    "description": "Controlador al qual deixar de restringir les activitats de reg.",
                     "name": "Controlador"
                 }
-            }
+            },
+            "name": "Deixa de restringir tot el reg"
         }
     }
 }

@@ -2,7 +2,10 @@
     "config": {
         "abort": {
             "already_configured": "La integraci\u00f3 MELCloud ja est\u00e0 configurada amb aquest correu electr\u00f2nic. El token d'acc\u00e9s s'ha actualitzat.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -17,6 +20,11 @@
                 },
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
             "user": {
                 "data": {
                     "password": "Contrasenya",
@@ -29,9 +37,6 @@
     },
     "entity": {
         "sensor": {
-            "daily_energy": {
-                "name": "Energia di\u00e0ria consumida"
-            },
             "flow_temperature": {
                 "name": "Temperatura del flux"
             },

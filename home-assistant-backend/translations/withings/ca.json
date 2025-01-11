@@ -8,7 +8,8 @@
             "oauth_error": "S'han rebut dades token inv\u00e0lides.",
             "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
             "oauth_timeout": "Temps m\u00e0xim d'espera de resoluci\u00f3 de 'token' OAuth esgotat.",
-            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s."
+            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "create_entry": {
             "default": "Autenticaci\u00f3 exitosa amb Withings."
@@ -19,13 +20,6 @@
         "step": {
             "pick_implementation": {
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
-            },
-            "profile": {
-                "data": {
-                    "profile": "Nom de perfil"
-                },
-                "description": "Ha de proporcionar un nom de perfil \u00fanic per a aquestes dades. Normalment \u00e9s el nom del perfil seleccionat en el pas anterior.",
-                "title": "Perfil d'usuari."
             },
             "reauth_confirm": {
                 "description": "La integraci\u00f3 Withings ha de tornar a autenticar el teu compte",
@@ -54,8 +48,8 @@
             "activity_distance_today": {
                 "name": "Dist\u00e0ncia recorreguda avui"
             },
-            "activity_floors_climbed_today": {
-                "name": "Pisos pujats avui"
+            "activity_elevation_today": {
+                "name": "Canvi d'altitud avui"
             },
             "activity_intense_duration_today": {
                 "name": "Activitat intensa avui"
@@ -77,6 +71,14 @@
             },
             "average_respiratory_rate": {
                 "name": "Freq\u00fc\u00e8ncia respirat\u00f2ria mitjana"
+            },
+            "battery": {
+                "name": "Bateria",
+                "state": {
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0"
+                }
             },
             "body_temperature": {
                 "name": "Temperatura corporal"
@@ -195,8 +197,8 @@
             "workout_duration": {
                 "name": "Durada de l'\u00faltim entrenament"
             },
-            "workout_floors_climbed": {
-                "name": "Pisos pujats de l'\u00faltim entrenament"
+            "workout_elevation": {
+                "name": "Canvi d'altitud del darrer entrenament"
             },
             "workout_intensity": {
                 "name": "Intensitat de l'\u00faltim entrenament"
@@ -251,15 +253,6 @@
                     "wrestling": "Lluita",
                     "yoga": "Ioga",
                     "zumba": "Zumba"
-                }
-            }
-        }
-    },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "use_webhook": "Utilitza 'webhooks'"
                 }
             }
         }

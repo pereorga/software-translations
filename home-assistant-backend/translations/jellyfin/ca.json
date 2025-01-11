@@ -2,8 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -24,6 +23,14 @@
                     "url": "URL",
                     "username": "Nom d'usuari"
                 }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "watching": {
+                "name": "Clients actius",
+                "unit_of_measurement": "clients"
             }
         }
     }

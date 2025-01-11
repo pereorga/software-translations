@@ -3,30 +3,21 @@
         "abort": {
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
-        "error": {
-            "invalid_ip_address": "Invalid IPv4 address."
-        },
         "step": {
             "user": {
-                "data": {
-                    "ip_address": "IP Address"
-                },
                 "description": "Receive Voice over IP calls to interact with Assist."
             }
         }
     },
     "entity": {
         "binary_sensor": {
-            "call_active": {
-                "name": "Call Active"
-            },
             "call_in_progress": {
                 "name": "Call in progress"
             }
         },
         "select": {
             "pipeline": {
-                "name": "Assist pipeline",
+                "name": "Assistant",
                 "state": {
                     "preferred": "Preferred"
                 }
@@ -44,6 +35,18 @@
             "allow_call": {
                 "name": "Allow calls"
             }
+        }
+    },
+    "issues": {
+        "assist_in_progress_deprecated": {
+            "fix_flow": {
+                "step": {
+                    "confirm_disable_entity": {
+                        "description": "The {integration_name} in progress binary sensor `{entity_id}` is deprecated.\n\nMigrate your configuration to use the corresponding `{assist_satellite_domain}` entity and then click SUBMIT to disable the in progress binary sensor and fix this issue."
+                    }
+                }
+            },
+            "title": "{integration_name} in progress binary sensors are deprecated"
         }
     },
     "options": {

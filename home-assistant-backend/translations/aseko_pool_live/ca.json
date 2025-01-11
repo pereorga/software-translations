@@ -25,17 +25,15 @@
         }
     },
     "entity": {
-        "binary_sensor": {
-            "alarm": {
-                "name": "Alarma"
-            },
-            "water_flow": {
-                "name": "Flux d'aigua"
-            }
-        },
         "sensor": {
             "air_temperature": {
                 "name": "Temperatura de l'aire"
+            },
+            "electrolyzer": {
+                "name": "Electrolitzador"
+            },
+            "salinity": {
+                "name": "Salinitat"
             },
             "water_temperature": {
                 "name": "Temperatura de l'aigua"

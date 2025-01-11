@@ -1,4 +1,41 @@
 {
+    "common": {
+        "field_brightness_description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
+        "field_brightness_name": "Valor de brillantor",
+        "field_brightness_pct_description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 100 \u00e9s la brillantor m\u00e0xima.",
+        "field_brightness_pct_name": "Brillantor",
+        "field_brightness_step_description": "Canvia la brillantor en una quantitat.",
+        "field_brightness_step_name": "Valor del pas de brillantor",
+        "field_brightness_step_pct_description": "Canvia la brillantor en percentatge.",
+        "field_brightness_step_pct_name": "Pas de brillantor",
+        "field_color_name_description": "Nom de color llegible.",
+        "field_color_name_name": "Nom del color",
+        "field_color_temp_description": "Temperatura de color en 'mireds'.",
+        "field_color_temp_name": "Temperatura de color",
+        "field_effect_description": "Efecte de llum.",
+        "field_effect_name": "Efecte",
+        "field_flash_description": "Fa que la llum parpellegi, pot ser de valor curt o llarg.",
+        "field_flash_name": "Flaix",
+        "field_hs_color_description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
+        "field_hs_color_name": "Color to/saturaci\u00f3",
+        "field_kelvin_description": "Temperatura de color en Kelvin.",
+        "field_kelvin_name": "Temperatura de color",
+        "field_profile_description": "Nom del perfil de llum a utilitzar.",
+        "field_profile_name": "Perfil",
+        "field_rgb_color_description": "Color en format RGB. Llista de tres nombres enters entre 0 i 255 que representen els valors de vermell, verd i blau.",
+        "field_rgb_color_name": "Color",
+        "field_rgbw_color_description": "Color en format RGBW. Llista de quatre nombres enters entre 0 i 255 que representen els valors de vermell, verd, blau i blanc.",
+        "field_rgbw_color_name": "Color RGBW",
+        "field_rgbww_color_description": "Color en format RGBWW. Llista de cinc nombres enters entre 0 i 255 que representen els valors de vermell, verd, blau, blanc fred i blanc c\u00e0lid.",
+        "field_rgbww_color_name": "Color RGBWW",
+        "field_transition_description": "Durada que triga en canviar d'estat.",
+        "field_transition_name": "Transici\u00f3",
+        "field_white_description": "Posa el llum en mode blanc.",
+        "field_white_name": "Blanc",
+        "field_xy_color_description": "Color en format XY. Llista de dos nombres decimals entre 0 i 1.",
+        "field_xy_color_name": "Color XY",
+        "section_advanced_fields_name": "Opcions avan\u00e7ades"
+    },
     "device_automation": {
         "action_type": {
             "brightness_decrease": "Redueix la lluminositat de {entity_name}",
@@ -11,6 +48,10 @@
         "condition_type": {
             "is_off": "{entity_name} est\u00e0 apagat/ada",
             "is_on": "{entity_name} est\u00e0 engegat/ada"
+        },
+        "extra_fields": {
+            "brightness_pct": "Brillantor",
+            "flash": "Flaix"
         },
         "trigger_type": {
             "changed_states": "{entity_name} s'engegui o s'apagui",
@@ -84,12 +125,6 @@
                     }
                 }
             }
-        }
-    },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "Suport de la plataforma no compatible"
         }
     },
     "selector": {
@@ -251,12 +286,12 @@
             "description": "Commuta un o m\u00e9s llums, d'enc\u00e8s a apagat o, d'apagat a enc\u00e8s, en funci\u00f3 del seu estat actual.",
             "fields": {
                 "brightness": {
-                    "description": "N\u00famero que indica el percentatge de lluminositat total, on 0 \u00e9s el llum apagat, 1 \u00e9s la lluminositat m\u00ednima i 255 \u00e9s la lluminositat m\u00e0xima.",
-                    "name": "Valor de lluminositat"
+                    "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
+                    "name": "Valor de brillantor"
                 },
                 "brightness_pct": {
-                    "description": "N\u00famero que indica el percentatge de lluminositat total, on 0 \u00e9s el llum apagat, 1 \u00e9s la lluminositat m\u00ednima i 100 \u00e9s la lluminositat m\u00e0xima.",
-                    "name": "Lluminositat"
+                    "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 100 \u00e9s la brillantor m\u00e0xima.",
+                    "name": "Brillantor"
                 },
                 "color_name": {
                     "description": "Nom de color llegible.",
@@ -271,87 +306,7 @@
                     "name": "Efecte"
                 },
                 "flash": {
-                    "description": "Si el llum hauria de parpellejar.",
-                    "name": "Flaix"
-                },
-                "hs_color": {
-                    "description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
-                    "name": "Color to/saturaci\u00f3"
-                },
-                "kelvin": {
-                    "description": "Temperatura de color en Kelvin.",
-                    "name": "Temperatura de color"
-                },
-                "profile": {
-                    "description": "Nom del perfil de llum a utilitzar.",
-                    "name": "Perfil"
-                },
-                "rgb_color": {
-                    "description": "Color en format RGB. Llista de tres nombres enters entre 0 i 255 que representen els valors de vermell, verd i blau.",
-                    "name": "Color"
-                },
-                "transition": {
-                    "description": "Durada que triga en canviar d'estat.",
-                    "name": "Transici\u00f3"
-                },
-                "white": {
-                    "description": "Posa el llum en mode blanc.",
-                    "name": "Blanc"
-                },
-                "xy_color": {
-                    "description": "Color en format XY. Llista de dos nombres decimals entre 0 i 1.",
-                    "name": "Color XY"
-                }
-            },
-            "name": "Commuta"
-        },
-        "turn_off": {
-            "description": "Apaga un o m\u00e9s llums.",
-            "fields": {
-                "flash": {
-                    "description": "Si el llum hauria de parpellejar.",
-                    "name": "Flaix"
-                },
-                "transition": {
-                    "description": "Durada que triga en canviar d'estat.",
-                    "name": "Transici\u00f3"
-                }
-            },
-            "name": "Apaga"
-        },
-        "turn_on": {
-            "description": "Enc\u00e9n un o m\u00e9s llums i ajusta'n les propietats, fins i tot quan ja estiguin encesos.",
-            "fields": {
-                "brightness": {
-                    "description": "N\u00famero que indica el percentatge de lluminositat total, on 0 \u00e9s el llum apagat, 1 \u00e9s la lluminositat m\u00ednima i 255 \u00e9s la lluminositat m\u00e0xima.",
-                    "name": "Valor de lluminositat"
-                },
-                "brightness_pct": {
-                    "description": "N\u00famero que indica el percentatge de lluminositat total, on 0 \u00e9s el llum apagat, 1 \u00e9s la lluminositat m\u00ednima i 100 \u00e9s la lluminositat m\u00e0xima.",
-                    "name": "Lluminositat"
-                },
-                "brightness_step": {
-                    "description": "Canvia la lluminositat en una quantitat.",
-                    "name": "Valor del pas de lluminositat"
-                },
-                "brightness_step_pct": {
-                    "description": "Canvia la lluminositat en un percentatge.",
-                    "name": "Pas de lluminositat"
-                },
-                "color_name": {
-                    "description": "Nom de color llegible.",
-                    "name": "Nom del color"
-                },
-                "color_temp": {
-                    "description": "Temperatura de color en 'mireds'.",
-                    "name": "Temperatura de color"
-                },
-                "effect": {
-                    "description": "Efecte de llum.",
-                    "name": "Efecte"
-                },
-                "flash": {
-                    "description": "Si el llum hauria de parpellejar.",
+                    "description": "Fa que la llum parpellegi, pot ser de valor curt o llarg.",
                     "name": "Flaix"
                 },
                 "hs_color": {
@@ -391,7 +346,109 @@
                     "name": "Color XY"
                 }
             },
-            "name": "Enc\u00e9n"
+            "name": "Commuta",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Opcions avan\u00e7ades"
+                }
+            }
+        },
+        "turn_off": {
+            "description": "Apaga un o m\u00e9s llums.",
+            "fields": {
+                "flash": {
+                    "description": "Fa que la llum parpellegi, pot ser de valor curt o llarg.",
+                    "name": "Flaix"
+                },
+                "transition": {
+                    "description": "Durada que triga en canviar d'estat.",
+                    "name": "Transici\u00f3"
+                }
+            },
+            "name": "Apaga",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Opcions avan\u00e7ades"
+                }
+            }
+        },
+        "turn_on": {
+            "description": "Enc\u00e9n un o m\u00e9s llums i ajusta'n les propietats, fins i tot quan ja estiguin encesos.",
+            "fields": {
+                "brightness": {
+                    "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
+                    "name": "Valor de brillantor"
+                },
+                "brightness_pct": {
+                    "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 100 \u00e9s la brillantor m\u00e0xima.",
+                    "name": "Brillantor"
+                },
+                "brightness_step": {
+                    "description": "Canvia la brillantor en una quantitat.",
+                    "name": "Valor del pas de brillantor"
+                },
+                "brightness_step_pct": {
+                    "description": "Canvia la brillantor en percentatge.",
+                    "name": "Pas de brillantor"
+                },
+                "color_name": {
+                    "description": "Nom de color llegible.",
+                    "name": "Nom del color"
+                },
+                "color_temp": {
+                    "description": "Temperatura de color en 'mireds'.",
+                    "name": "Temperatura de color"
+                },
+                "effect": {
+                    "description": "Efecte de llum.",
+                    "name": "Efecte"
+                },
+                "flash": {
+                    "description": "Fa que la llum parpellegi, pot ser de valor curt o llarg.",
+                    "name": "Flaix"
+                },
+                "hs_color": {
+                    "description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
+                    "name": "Color to/saturaci\u00f3"
+                },
+                "kelvin": {
+                    "description": "Temperatura de color en Kelvin.",
+                    "name": "Temperatura de color"
+                },
+                "profile": {
+                    "description": "Nom del perfil de llum a utilitzar.",
+                    "name": "Perfil"
+                },
+                "rgb_color": {
+                    "description": "Color en format RGB. Llista de tres nombres enters entre 0 i 255 que representen els valors de vermell, verd i blau.",
+                    "name": "Color"
+                },
+                "rgbw_color": {
+                    "name": "Color RGBW"
+                },
+                "rgbww_color": {
+                    "description": "Color en format RGBWW. Llista de cinc nombres enters entre 0 i 255 que representen els valors de vermell, verd, blau, blanc fred i blanc c\u00e0lid.",
+                    "name": "Color RGBWW"
+                },
+                "transition": {
+                    "description": "Durada que triga en canviar d'estat.",
+                    "name": "Transici\u00f3"
+                },
+                "white": {
+                    "description": "Posa el llum en mode blanc.",
+                    "name": "Blanc"
+                },
+                "xy_color": {
+                    "description": "Color en format XY. Llista de dos nombres decimals entre 0 i 1.",
+                    "name": "Color XY"
+                }
+            },
+            "name": "Enc\u00e9n",
+            "sections": {
+                "advanced_fields": {
+                    "name": "Opcions avan\u00e7ades"
+                }
+            }
         }
     },
     "title": "Llum"

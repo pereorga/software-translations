@@ -52,22 +52,16 @@
             "name": "Firmware"
         }
     },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
-        }
-    },
     "services": {
         "clear_skipped": {
             "description": "Removes the skipped version marker from an update.",
             "name": "Clear skipped update"
         },
         "install": {
-            "description": "Installs an update for this device or service.",
+            "description": "Installs an update for a device or service.",
             "fields": {
                 "backup": {
-                    "description": "If supported by the integration, this creates a backup before starting the update .",
+                    "description": "If supported by the integration, this creates a backup before starting the update.",
                     "name": "Backup"
                 },
                 "version": {

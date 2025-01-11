@@ -2,17 +2,23 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication"
+            "invalid_auth": "Invalid authentication",
+            "unique_id_exists": "Another config entry with this username already exist"
         },
         "step": {
             "reauth_confirm": {
                 "data": {
+                    "password": "Password"
+                }
+            },
+            "reconfigure": {
+                "data": {
                     "area_id": "Area ID",
-                    "name": "Name",
                     "password": "Password",
                     "username": "Username"
                 }
@@ -46,6 +52,21 @@
             "panic": {
                 "name": "Panic button"
             }
+        },
+        "select": {
+            "volume": {
+                "name": "Volume",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "off": "Off"
+                }
+            }
+        },
+        "switch": {
+            "autolock": {
+                "name": "Autolock"
+            }
         }
     },
     "exceptions": {
@@ -55,6 +76,9 @@
         "could_not_change_lock": {
             "message": "Could not set lock, check system ready for lock"
         },
+        "could_not_trigger_panic": {
+            "message": "Could not trigger panic button for entity ID {entity_id}: {error}"
+        },
         "set_alarm": {
             "message": "Could not set alarm for {name}: {error}"
         },
@@ -63,13 +87,9 @@
         }
     },
     "options": {
-        "error": {
-            "code_format_mismatch": "The code does not match the required number of digits"
-        },
         "step": {
             "init": {
                 "data": {
-                    "code": "Default code for locks, used if none is given",
                     "lock_code_digits": "Number of digits in PIN code for locks"
                 }
             }

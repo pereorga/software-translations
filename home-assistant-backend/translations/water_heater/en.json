@@ -24,6 +24,24 @@
                         "off": "Off",
                         "on": "On"
                     }
+                },
+                "current_operation": {
+                    "name": "Current operation"
+                },
+                "current_temperature": {
+                    "name": "Current temperature"
+                },
+                "max_temp": {
+                    "name": "Max target temperature"
+                },
+                "min_temp": {
+                    "name": "Min target temperature"
+                },
+                "target_temp_high": {
+                    "name": "Upper target temperature"
+                },
+                "target_temp_low": {
+                    "name": "Lower target temperature"
                 }
             }
         }
@@ -34,12 +52,6 @@
         },
         "operation_list_not_defined": {
             "message": "Operation mode {operation_mode} is not valid for {entity_id}. The operation list is not defined."
-        }
-    },
-    "issues": {
-        "platform_integration_no_support": {
-            "description": "The {platform} platform for the {domain} integration does not support platform setup.\n\nPlease remove it from your configuration and restart Home Assistant to fix this issue.",
-            "title": "Platform support not supported"
         }
     },
     "services": {
@@ -85,5 +97,6 @@
             "description": "Turns water heater on.",
             "name": "Turn on"
         }
-    }
+    },
+    "title": "Water heater"
 }

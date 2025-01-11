@@ -1,5 +1,9 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_api_key": "Clau API inv\u00e0lida"
@@ -8,13 +12,20 @@
             "user": {
                 "data": {
                     "api_key": "Clau API",
-                    "name": "Nom",
                     "url": "URL"
                 }
             }
         }
     },
     "entity": {
+        "button": {
+            "pause": {
+                "name": "Pausa"
+            },
+            "resume": {
+                "name": "Repr\u00e8n"
+            }
+        },
         "sensor": {
             "daily_total": {
                 "name": "Total diari"

@@ -3,6 +3,7 @@
         "abort": {
             "already_configured": "Device is already configured",
             "reauth_successful": "Re-authentication was successful",
+            "unique_id_mismatch": "The identifier does not match the previous identifier",
             "unknown": "Unexpected error",
             "unsupported_version": "Your version of System Bridge is not supported. Please upgrade to the latest version."
         },
@@ -15,14 +16,12 @@
         "step": {
             "authenticate": {
                 "data": {
-                    "api_key": "API key",
                     "token": "API token"
                 },
                 "description": "Please enter the token set in your configuration for {name}."
             },
             "user": {
                 "data": {
-                    "api_key": "API key",
                     "host": "Host",
                     "port": "Port",
                     "token": "Token"
@@ -97,8 +96,26 @@
         }
     },
     "exceptions": {
+        "authentication_failed": {
+            "message": "Authentication failed for {title} ({host})"
+        },
+        "connection_failed": {
+            "message": "A connection error occurred for {title} ({host})"
+        },
+        "device_not_found": {
+            "message": "Could not find device {device}"
+        },
+        "no_data_received": {
+            "message": "No data received from {host}"
+        },
         "process_not_found": {
             "message": "Could not find process with id {id}."
+        },
+        "timeout": {
+            "message": "A timeout occurred for {title} ({host})"
+        },
+        "unsupported_version": {
+            "message": "You are not running a supported version of System Bridge for {title} ({host}). Please upgrade to the latest version"
         }
     },
     "issues": {

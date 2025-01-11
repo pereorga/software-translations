@@ -4,12 +4,14 @@
             "authorize_url_timeout": "Timeout generating authorize URL.",
             "connection_error": "Could not fetch account information. Is the user registered in the Spotify Developer Dashboard?",
             "missing_configuration": "The Spotify integration is not configured. Please follow the documentation.",
+            "missing_credentials": "The integration requires application credentials.",
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
             "oauth_timeout": "Timeout resolving OAuth token.",
             "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
-            "reauth_account_mismatch": "The Spotify account authenticated with, does not match the account needed re-authentication."
+            "reauth_account_mismatch": "The Spotify account authenticated with, does not match the account needed re-authentication.",
+            "reauth_successful": "Re-authentication was successful"
         },
         "create_entry": {
             "default": "Successfully authenticated with Spotify."
@@ -22,12 +24,6 @@
                 "description": "The Spotify integration needs to re-authenticate with Spotify for account: {account}",
                 "title": "Authentication expired for {name}"
             }
-        }
-    },
-    "issues": {
-        "removed_yaml": {
-            "description": "Configuring Spotify using YAML has been removed.\n\nYour existing YAML configuration is not used by Home Assistant.\n\nRemove the YAML configuration from your configuration.yaml file and restart Home Assistant to fix this issue.",
-            "title": "The Spotify YAML configuration has been removed"
         }
     },
     "system_health": {

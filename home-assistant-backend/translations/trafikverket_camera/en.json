@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -16,6 +17,20 @@
                     "id": "Choose camera"
                 },
                 "description": "Result came back with multiple cameras"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key",
+                    "location": "Location"
+                },
+                "data_description": {
+                    "location": "Equal or part of name, description or camera id. Be as specific as possible to avoid getting multiple cameras as result"
+                }
             },
             "user": {
                 "data": {

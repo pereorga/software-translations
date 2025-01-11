@@ -3,7 +3,6 @@
         "abort": {
             "already_configured": "Service is already configured",
             "cannot_connect": "Connecting with the credentials from the configuration.yaml failed, please remove from yaml and use the config flow.",
-            "single_instance_allowed": "Already configured. Only a single configuration possible.",
             "unknown": "Connecting with the credentials from the configuration.yaml failed with an unknown error, please remove from yaml and use the config flow."
         },
         "error": {
@@ -38,7 +37,7 @@
     },
     "options": {
         "step": {
-            "options": {
+            "init": {
                 "data": {
                     "send_interval": "Interval between sending batches to the hub."
                 },

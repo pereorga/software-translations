@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
-        },
         "error": {
             "cannot_connect": "Failed to connect",
             "no_selection": "Please select at least one city/county",
@@ -17,7 +14,6 @@
                     "_m_to_q": "City/county (M-Q)",
                     "_r_to_u": "City/county (R-U)",
                     "_v_to_z": "City/county (V-Z)",
-                    "corona_filter": "Remove Corona Warnings",
                     "headline_filter": "Blacklist regex to filter warning headlines",
                     "slots": "Maximum warnings per city/county"
                 },
@@ -41,7 +37,6 @@
                     "_r_to_u": "City/county (R-U)",
                     "_v_to_z": "City/county (V-Z)",
                     "area_filter": "Whitelist regex to filter warnings based on affected areas",
-                    "corona_filter": "Remove Corona Warnings",
                     "headline_filter": "Blacklist regex to filter warning headlines",
                     "slots": "Maximum warnings per city/county"
                 },

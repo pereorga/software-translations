@@ -12,6 +12,11 @@
         },
         "flow_title": "{site} ({host})",
         "step": {
+            "site": {
+                "data": {
+                    "site": "Site ID"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Host",
@@ -25,6 +30,26 @@
                     "host": "Hostname or IP address of your UniFi Network."
                 },
                 "title": "Set up UniFi Network"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "device_state": {
+                "state": {
+                    "adopting": "Adopting",
+                    "adoption_failed": "Adoption failed",
+                    "connected": "Connected",
+                    "deleting": "Deleting",
+                    "disconnected": "Disconnected",
+                    "firmware_mismatch": "Firmware mismatch",
+                    "heartbeat_missed": "Heartbeat missed",
+                    "inform_error": "Inform error",
+                    "isolated": "Isolated",
+                    "pending": "Pending",
+                    "provisioning": "Provisioning",
+                    "upgrading": "Upgrading"
+                }
             }
         }
     },
@@ -84,7 +109,7 @@
             "description": "Tries to get wireless client to reconnect to UniFi Network.",
             "fields": {
                 "device_id": {
-                    "description": "Try reconnect client to wireless network.",
+                    "description": "The device that should be forced to reconnect to the wireless network.",
                     "name": "Device"
                 }
             },

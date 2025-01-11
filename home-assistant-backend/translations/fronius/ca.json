@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids"
+            "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -13,12 +14,16 @@
             "confirm_discovery": {
                 "description": "Vols afegir {device} a Home Assistant?"
             },
-            "user": {
+            "reconfigure": {
                 "data": {
                     "host": "Amfitri\u00f3"
                 },
-                "description": "Configura l'adre\u00e7a IP o el nom d'amfitri\u00f3 local del teu dispositiu Fronius.",
-                "title": "Fronius SolarNet"
+                "description": "Actualitza la informaci\u00f3 de configuraci\u00f3 de {device}."
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
             }
         }
     },
@@ -26,9 +31,6 @@
         "sensor": {
             "capacity_designed": {
                 "name": "Capacitat dissenyada"
-            },
-            "capacity_maximum": {
-                "name": "Capacitat m\u00e0xima"
             },
             "cash_factor": {
                 "name": "Tarifa d'exportaci\u00f3 de xarxa"
@@ -90,9 +92,6 @@
             "error_code": {
                 "name": "Codi d'error"
             },
-            "frequency_ac": {
-                "name": "Freq\u00fc\u00e8ncia"
-            },
             "frequency_phase_average": {
                 "name": "Fase mitjana de la freq\u00fc\u00e8ncia"
             },
@@ -108,14 +107,17 @@
             "meter_location": {
                 "name": "Ubicaci\u00f3 del comptador"
             },
+            "meter_location_description": {
+                "state": {
+                    "external_battery": "Bateria externa",
+                    "external_generator": "Generador extern"
+                }
+            },
             "meter_mode": {
                 "name": "Mode comptador"
             },
             "power_ac": {
                 "name": "Pot\u00e8ncia alterna (CA)"
-            },
-            "power_apparent": {
-                "name": "Pot\u00e8ncia aparent"
             },
             "power_apparent_phase_1": {
                 "name": "Pot\u00e8ncia aparent de la fase 1"
@@ -128,9 +130,6 @@
             },
             "power_battery": {
                 "name": "Pot\u00e8ncia bateria"
-            },
-            "power_factor": {
-                "name": "Factor de pot\u00e8ncia"
             },
             "power_factor_phase_1": {
                 "name": "Factor de pot\u00e8ncia de la fase 1"
@@ -165,9 +164,6 @@
             "power_real": {
                 "name": "Pot\u00e8ncia real"
             },
-            "power_real_ac": {
-                "name": "Pot\u00e8ncia"
-            },
             "power_real_phase_1": {
                 "name": "Pot\u00e8ncia real de fase 1"
             },
@@ -187,7 +183,15 @@
                 "name": "Codi d'estat"
             },
             "state_message": {
-                "name": "Missatge d'estat"
+                "name": "Missatge d'estat",
+                "state": {
+                    "boost_mode": "Mode incrementat",
+                    "critical_fault": "Error cr\u00edtic",
+                    "fault": "Error",
+                    "keep_minimum_temperature": "Mantenir temperatura m\u00ednima",
+                    "legionella_protection": "Protecci\u00f3 contra legionel\u00b7la",
+                    "up_and_running": "En funcionament"
+                }
             },
             "state_of_charge": {
                 "name": "Estat de c\u00e0rrega"
@@ -196,21 +200,17 @@
                 "name": "Codi d'estat"
             },
             "status_message": {
+                "name": "Missatge d'estat",
                 "state": {
                     "error": "Error",
                     "idle": "Inactiu",
-                    "invalid": "Inv\u00e0lid",
                     "ready": "A punt",
                     "running": "En funcionament",
                     "sleeping": "Dormint",
-                    "standby": "En espera",
-                    "unknown": "Desconegut"
+                    "standby": "En espera"
                 }
             },
             "temperature_cell": {
-                "name": "Temperatura"
-            },
-            "temperature_channel_1": {
                 "name": "Temperatura"
             },
             "voltage_ac": {

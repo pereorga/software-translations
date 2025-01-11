@@ -2,7 +2,10 @@
     "config": {
         "abort": {
             "already_configured": "MELCloud integration already configured for this email. Access token has been refreshed.",
-            "reauth_successful": "Re-authentication was successful"
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -18,6 +21,16 @@
                 "description": "The Melcloud integration needs to re-authenticate your connection details",
                 "title": "Authentication expired for {name}"
             },
+            "reconfigure": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "Enter the (new) password for MelCloud."
+                },
+                "description": "Reconfigure the entry to obtain a new token, for your account: `{username}`.",
+                "title": "Reconfigure your MelCloud"
+            },
             "user": {
                 "data": {
                     "password": "Password",
@@ -30,9 +43,6 @@
     },
     "entity": {
         "sensor": {
-            "daily_energy": {
-                "name": "Daily energy consumed"
-            },
             "flow_temperature": {
                 "name": "Flow temperature"
             },

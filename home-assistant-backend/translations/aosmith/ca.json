@@ -13,13 +13,15 @@
                 "data": {
                     "password": "Contrasenya"
                 },
+                "description": "Actualitza la contrasenya de {email}",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
             "user": {
                 "data": {
                     "email": "Correu electr\u00f2nic",
                     "password": "Contrasenya"
-                }
+                },
+                "description": "Introdueix les credencials d'A. O. Smith."
             }
         }
     },
@@ -27,6 +29,9 @@
         "sensor": {
             "energy_usage": {
                 "name": "\u00das d'energia"
+            },
+            "hot_water_availability": {
+                "name": "Disponibilitat d'aigua calenta"
             }
         }
     }

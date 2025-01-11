@@ -15,7 +15,6 @@
         "flow_title": "{name}",
         "step": {
             "link": {
-                "description": "Prem i mant\u00e9 el bot\u00f3 d'engegada del Nanoleaf durant 5 segons fins que els LEDs del bot\u00f3 comencin a parpellejar, despr\u00e9s clica a **ENVIA** abans de que passin 30 segons.",
                 "title": "Enlla\u00e7 Nanoleaf"
             },
             "user": {
@@ -28,9 +27,22 @@
     "device_automation": {
         "trigger_type": {
             "swipe_down": "Llisca cap avall",
-            "swipe_left": "Llisca cap a l'esquerra",
-            "swipe_right": "Llisca cap a la dreta",
             "swipe_up": "Llisca cap amunt"
+        }
+    },
+    "entity": {
+        "event": {
+            "touch": {
+                "name": "Gest t\u00e0ctil",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "swipe_down": "Llisca cap avall",
+                            "swipe_up": "Llisca cap amunt"
+                        }
+                    }
+                }
+            }
         }
     }
 }

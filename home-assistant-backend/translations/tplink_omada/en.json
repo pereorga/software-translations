@@ -36,8 +36,7 @@
                 "data_description": {
                     "host": "URL of the management interface of your TP-Link Omada controller."
                 },
-                "description": "Enter the connection details for the Omada controller. Cloud controllers aren't supported.",
-                "title": "TP-Link Omada Controller"
+                "description": "Enter the connection details for the Omada controller. Cloud controllers aren't supported."
             }
         }
     },
@@ -56,6 +55,27 @@
                 "name": "Port {port_name} Internet Link"
             }
         },
+        "sensor": {
+            "cpu_usage": {
+                "name": "CPU usage"
+            },
+            "device_status": {
+                "name": "Device status",
+                "state": {
+                    "adopt_failed": "Adopt failed",
+                    "connected": "Connected",
+                    "disconnected": "Disconnected",
+                    "error": "Error",
+                    "heartbeat_missed": "Heartbeat missed",
+                    "isolated": "Isolated",
+                    "managed_externally": "Managed externally",
+                    "pending": "Pending"
+                }
+            },
+            "mem_usage": {
+                "name": "Memory usage"
+            }
+        },
         "switch": {
             "poe_control": {
                 "name": "Port {port_name} PoE"
@@ -66,6 +86,18 @@
             "wan_connect_ipv6": {
                 "name": "Port {port_name} Internet Connected (IPv6)"
             }
+        }
+    },
+    "services": {
+        "reconnect_client": {
+            "description": "Tries to get wireless client to reconnect to Omada Network.",
+            "fields": {
+                "mac": {
+                    "description": "MAC address of the device.",
+                    "name": "MAC address"
+                }
+            },
+            "name": "Reconnect wireless client"
         }
     }
 }

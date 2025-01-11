@@ -4,8 +4,12 @@
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
             "mdns_missing_mac": "Missing MAC address in MDNS properties.",
+            "mqtt_missing_api": "Missing API port in MQTT properties.",
+            "mqtt_missing_ip": "Missing IP address in MQTT properties.",
+            "mqtt_missing_mac": "Missing MAC address in MQTT properties.",
+            "mqtt_missing_payload": "Missing MQTT Payload.",
             "reauth_successful": "Re-authentication was successful",
-            "service_received": "Service received"
+            "service_received": "Action received"
         },
         "error": {
             "connection_error": "Can't connect to ESP. Please make sure your YAML file contains an 'api:' line.",
@@ -47,12 +51,14 @@
         }
     },
     "entity": {
+        "assist_satellite": {
+            "assist_satellite": {
+                "name": "Assist satellite"
+            }
+        },
         "binary_sensor": {
             "assist_in_progress": {
                 "name": "Assist in progress"
-            },
-            "call_active": {
-                "name": "Call Active"
             }
         },
         "climate": {
@@ -68,7 +74,7 @@
         },
         "select": {
             "pipeline": {
-                "name": "Assist pipeline",
+                "name": "Assistant",
                 "state": {
                     "preferred": "Preferred"
                 }
@@ -80,6 +86,12 @@
                     "default": "Default",
                     "relaxed": "Relaxed"
                 }
+            },
+            "wake_word": {
+                "name": "Wake word",
+                "state": {
+                    "okay_nabu": "Okay Nabu"
+                }
             }
         }
     },
@@ -88,20 +100,30 @@
             "description": "The API password for ESPHome is deprecated and the use of an API encryption key is recommended instead.\n\nRemove the API password and add an encryption key to your ESPHome device to resolve this issue.",
             "title": "API Password deprecated on {name}"
         },
+        "assist_in_progress_deprecated": {
+            "fix_flow": {
+                "step": {
+                    "confirm_disable_entity": {
+                        "description": "The {integration_name} in progress binary sensor `{entity_id}` is deprecated.\n\nMigrate your configuration to use the corresponding `{assist_satellite_domain}` entity and then click SUBMIT to disable the in progress binary sensor and fix this issue."
+                    }
+                }
+            },
+            "title": "{integration_name} in progress binary sensors are deprecated"
+        },
         "ble_firmware_outdated": {
             "description": "To improve Bluetooth reliability and performance, we highly recommend updating {name} with ESPHome {version} or later. When updating the device from ESPHome earlier than 2022.12.0, it is recommended to use a serial cable instead of an over-the-air update to take advantage of the new partition scheme.",
             "title": "Update {name} with ESPHome {version} or later"
         },
         "service_calls_not_allowed": {
-            "description": "The ESPHome device attempted to make a Home Assistant service call, but this functionality is not enabled.\n\nIf you trust this device and want to allow it to make Home Assistant service calls, you can enable this functionality in the options flow.",
-            "title": "{name} is not permitted to call Home Assistant services"
+            "description": "The ESPHome device attempted to perform a Home Assistant action, but this functionality is not enabled.\n\nIf you trust this device and want to allow it to perform Home Assistant action, you can enable this functionality in the options flow.",
+            "title": "{name} is not permitted to perform Home Assistant actions"
         }
     },
     "options": {
         "step": {
             "init": {
                 "data": {
-                    "allow_service_calls": "Allow the device to make Home Assistant service calls."
+                    "allow_service_calls": "Allow the device to perform Home Assistant actions."
                 }
             }
         }

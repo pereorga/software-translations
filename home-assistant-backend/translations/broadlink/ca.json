@@ -10,6 +10,7 @@
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
             "unknown": "Error inesperat"
         },
@@ -39,22 +40,26 @@
                 "data": {
                     "host": "Amfitri\u00f3",
                     "timeout": "Temps m\u00e0xim d'espera"
-                },
-                "title": "Connexi\u00f3 amb el dispositiu"
+                }
             }
         }
     },
     "entity": {
+        "select": {
+            "day_of_week": {
+                "name": "Dia de la setmana",
+                "state": {
+                    "friday": "Divendres",
+                    "monday": "Dilluns",
+                    "saturday": "Dissabte",
+                    "sunday": "Diumenge",
+                    "thursday": "Dijous",
+                    "tuesday": "Dimarts",
+                    "wednesday": "Dimecres"
+                }
+            }
+        },
         "sensor": {
-            "air_quality": {
-                "name": "\u00cdndex de qualitat de l'aire"
-            },
-            "current": {
-                "name": "Intensitat"
-            },
-            "humidity": {
-                "name": "Humitat"
-            },
             "light": {
                 "name": "Il\u00b7luminaci\u00f3"
             },
@@ -64,17 +69,8 @@
             "overload": {
                 "name": "Sobrec\u00e0rrega"
             },
-            "power": {
-                "name": "Pot\u00e8ncia"
-            },
-            "temperature": {
-                "name": "Temperatura"
-            },
             "total_consumption": {
                 "name": "Consum total"
-            },
-            "voltage": {
-                "name": "Voltatge"
             }
         }
     }

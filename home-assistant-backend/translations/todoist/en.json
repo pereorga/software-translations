@@ -1,7 +1,6 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
         "create_entry": {
@@ -21,6 +20,14 @@
             }
         }
     },
+    "exceptions": {
+        "project_invalid": {
+            "message": "Invalid project name \"{project}\""
+        },
+        "section_invalid": {
+            "message": "Project \"{project}\" has no section \"{section}\""
+        }
+    },
     "services": {
         "new_task": {
             "description": "Creates a new task and add it to a project.",
@@ -32,6 +39,10 @@
                 "content": {
                     "description": "The name of the task.",
                     "name": "Content"
+                },
+                "description": {
+                    "description": "A description for the task.",
+                    "name": "Description"
                 },
                 "due_date": {
                     "description": "The time this task is due, in format YYYY-MM-DD or YYYY-MM-DDTHH:MM:SS, in UTC timezone.",
@@ -63,11 +74,15 @@
                 },
                 "reminder_date_lang": {
                     "description": "The language of reminder_date_string.",
-                    "name": "Reminder data language"
+                    "name": "Reminder date language"
                 },
                 "reminder_date_string": {
                     "description": "When should user be reminded of this task, in natural language.",
                     "name": "Reminder date string"
+                },
+                "section": {
+                    "description": "The name of a section within the project to add the task to.",
+                    "name": "Section"
                 }
             },
             "name": "New task"

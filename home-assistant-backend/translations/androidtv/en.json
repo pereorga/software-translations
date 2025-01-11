@@ -2,7 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "invalid_unique_id": "Impossible to determine a valid unique id for the device"
+            "invalid_unique_id": "Impossible to determine a valid unique ID for the device"
         },
         "error": {
             "adbkey_not_file": "ADB key file not found",
@@ -24,6 +24,11 @@
             }
         }
     },
+    "exceptions": {
+        "failed_send": {
+            "message": "Failed to send command {cmd}"
+        }
+    },
     "options": {
         "error": {
             "invalid_det_rules": "Invalid state detection rules"
@@ -33,17 +38,17 @@
                 "data": {
                     "app_delete": "Check to delete this application",
                     "app_id": "Application ID",
-                    "app_name": "Application Name"
+                    "app_name": "Application name"
                 },
-                "description": "Configure application id {app_id}",
-                "title": "Configure Android Apps"
+                "description": "Configure application ID {app_id}",
+                "title": "Configure Android apps"
             },
             "init": {
                 "data": {
                     "apps": "Configure applications list",
                     "exclude_unnamed_apps": "Exclude apps with unknown name from the sources list",
                     "get_sources": "Retrieve the running apps as the list of sources",
-                    "screencap": "Use screen capture for album art",
+                    "screencap_interval": "Interval in minutes between screen capture for album art (set 0 to disable)",
                     "state_detection_rules": "Configure state detection rules",
                     "turn_off_command": "ADB shell turn off command (leave empty for default)",
                     "turn_on_command": "ADB shell turn on command (leave empty for default)"
@@ -55,7 +60,7 @@
                     "rule_id": "Application ID",
                     "rule_values": "List of state detection rules (see documentation)"
                 },
-                "description": "Configure detection rule for application id {rule_id}",
+                "description": "Configure detection rule for application ID {rule_id}",
                 "title": "Configure Android state detection rules"
             }
         }
@@ -86,7 +91,7 @@
             "name": "Download"
         },
         "learn_sendevent": {
-            "description": "Translates a key press on a remote into ADB 'sendevent' commands. You must press one button on the remote within 8 seconds of calling this service.",
+            "description": "Translates a key press on a remote into ADB 'sendevent' commands. You must press one button on the remote within 8 seconds of performing this action.",
             "name": "Learn sendevent"
         },
         "upload": {

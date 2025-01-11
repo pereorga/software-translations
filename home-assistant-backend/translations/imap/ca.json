@@ -35,6 +35,20 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_auth": {
+            "message": "Autenticaci\u00f3 inv\u00e0lida"
+        },
+        "invalid_entry": {
+            "message": "No s'ha trobat cap entrada IMAP v\u00e0lida."
+        },
+        "invalid_folder": {
+            "message": "La carpeta seleccionada \u00e9s inv\u00e0lida"
+        },
+        "seen_failed": {
+            "message": "No s'ha pogut marcar el missatge com a vist, error \"{error}\"."
+        }
+    },
     "options": {
         "error": {
             "already_configured": "Ja existeix una entrada amb aquestes carpetes i opcions de cerca.",
@@ -42,8 +56,7 @@
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "invalid_charset": "El conjunt de car\u00e0cters especificat no \u00e9s compatible",
             "invalid_folder": "La carpeta seleccionada \u00e9s inv\u00e0lida",
-            "invalid_search": "La cerca seleccionada \u00e9s inv\u00e0lida",
-            "invalid_template": "Plantilla inv\u00e0lida"
+            "invalid_search": "La cerca seleccionada \u00e9s inv\u00e0lida"
         },
         "step": {
             "init": {
@@ -57,12 +70,80 @@
         }
     },
     "selector": {
+        "event_message_data": {
+            "options": {
+                "headers": "Cap\u00e7aleres del missatge"
+            }
+        },
         "ssl_cipher_list": {
             "options": {
                 "intermediate": "Xifradors intermedis",
                 "modern": "Xifradors moderns",
                 "python_default": "Configuraci\u00f3 per defecte"
             }
+        }
+    },
+    "services": {
+        "delete": {
+            "description": "Elimina un correu.",
+            "fields": {
+                "entry": {
+                    "description": "Entrada de configuraci\u00f3 IMAP.",
+                    "name": "Entrada"
+                },
+                "uid": {
+                    "description": "L'identificador de correu electr\u00f2nic (UID).",
+                    "name": "UID"
+                }
+            },
+            "name": "Elimina missatge"
+        },
+        "fetch": {
+            "fields": {
+                "entry": {
+                    "name": "Entrada"
+                },
+                "uid": {
+                    "description": "Identificador de correu electr\u00f2nic (UID).",
+                    "name": "UID"
+                }
+            }
+        },
+        "move": {
+            "description": "Mou un correu a una carpeta dest\u00ed.",
+            "fields": {
+                "entry": {
+                    "description": "Entrada de configuraci\u00f3 IMAP.",
+                    "name": "Entrada"
+                },
+                "seen": {
+                    "description": "Marca un correu com a vist.",
+                    "name": "Vist"
+                },
+                "target_folder": {
+                    "description": "Carpeta de destinaci\u00f3 a la qual de moure el correu electr\u00f2nic.",
+                    "name": "Carpeta dest\u00ed"
+                },
+                "uid": {
+                    "description": "L'identificador de correu electr\u00f2nic (UID).",
+                    "name": "UID"
+                }
+            },
+            "name": "Mou missatge"
+        },
+        "seen": {
+            "description": "Marca un correu com a vist.",
+            "fields": {
+                "entry": {
+                    "description": "Entrada de configuraci\u00f3 IMAP.",
+                    "name": "Entrada"
+                },
+                "uid": {
+                    "description": "L'identificador de correu electr\u00f2nic (UID).",
+                    "name": "UID"
+                }
+            },
+            "name": "Marca missatge com a vist"
         }
     }
 }

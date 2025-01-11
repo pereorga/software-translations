@@ -41,31 +41,39 @@
         },
         "sensor": {
             "ads_blocked_today": {
-                "name": "Ads blocked today"
+                "name": "Ads blocked today",
+                "unit_of_measurement": "ads"
             },
             "ads_percentage_today": {
                 "name": "Ads percentage blocked today"
             },
             "clients_ever_seen": {
-                "name": "Seen clients"
+                "name": "Seen clients",
+                "unit_of_measurement": "clients"
             },
             "dns_queries_today": {
-                "name": "DNS queries today"
+                "name": "DNS queries today",
+                "unit_of_measurement": "queries"
             },
             "domains_being_blocked": {
-                "name": "Domains blocked"
+                "name": "Domains blocked",
+                "unit_of_measurement": "domains"
             },
             "queries_cached": {
-                "name": "DNS queries cached"
+                "name": "DNS queries cached",
+                "unit_of_measurement": "queries"
             },
             "queries_forwarded": {
-                "name": "DNS queries forwarded"
+                "name": "DNS queries forwarded",
+                "unit_of_measurement": "queries"
             },
             "unique_clients": {
-                "name": "DNS unique clients"
+                "name": "DNS unique clients",
+                "unit_of_measurement": "clients"
             },
             "unique_domains": {
-                "name": "DNS unique domains"
+                "name": "DNS unique domains",
+                "unit_of_measurement": "domains"
             }
         },
         "update": {

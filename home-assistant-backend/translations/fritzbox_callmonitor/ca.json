@@ -3,9 +3,11 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "insufficient_permissions": "L'usuari no t\u00e9 permisos suficients per accedir a la configuraci\u00f3 d'AVM FRITZ!Box i les seves agendes.",
-            "no_devices_found": "No s'han trobat dispositius a la xarxa"
+            "no_devices_found": "No s'han trobat dispositius a la xarxa",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
+            "insufficient_permissions": "L'usuari no t\u00e9 permisos suficients per accedir a la configuraci\u00f3 d'AVM FRITZ!Box i les seves agendes.",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
         },
         "flow_title": "{name}",
@@ -13,6 +15,12 @@
             "phonebook": {
                 "data": {
                     "phonebook": "Agenda"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
                 }
             },
             "user": {
@@ -51,6 +59,9 @@
                             "incoming": "Entrant",
                             "outgoing": "Sortint"
                         }
+                    },
+                    "vip": {
+                        "name": "Important"
                     },
                     "with": {
                         "name": "Amb n\u00famero"

@@ -16,8 +16,7 @@
                 "snowy": "Neu",
                 "snowy-rainy": "Aiguaneu",
                 "sunny": "Assolellat",
-                "windy": "Vent\u00f3s",
-                "windy-variant": "Vent\u00f3s"
+                "windy": "Vent\u00f3s"
             },
             "state_attributes": {
                 "apparent_temperature": {
@@ -78,21 +77,15 @@
         }
     },
     "issues": {
-        "deprecated_weather_forecast": {
-            "description": "La integraci\u00f3 `{platform}` utilitza un atribut de previsi\u00f3 meteorol\u00f2gica obsolet. \n\nSi us plau, {report_issue}.",
-            "title": "La integraci\u00f3 {platform} utilitza una previsi\u00f3 meteorol\u00f2gica obsoleta"
-        },
-        "deprecated_weather_forecast_no_url": {
-            "description": "La integraci\u00f3 personalitzada `{platform}` implementa la propietat `forecast` o estableix `self._attr_forecast` en una subclasse de `WeatherEntity`.\n\nSi us plau, informa'n a l'autor de la integraci\u00f3 personalitzada {platform}.\n\nQuan estigui disponible una versi\u00f3 actualitzada de `{platform}`, instal\u00b7la-la i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La integraci\u00f3 personalitzada {platform} utilitza una previsi\u00f3 meteorol\u00f2gica obsoleta"
-        },
-        "deprecated_weather_forecast_url": {
-            "description": "La integraci\u00f3 personalitzada `{platform}` implementa la propietat `forecast` o estableix `self._attr_forecast` en una subclasse de `WeatherEntity`.\n\nSi us plau, crea un missatge informant de l'error a {issue_tracker}. \n\nQuan estigui disponible una versi\u00f3 actualitzada de `{platform}`, instal\u00b7la-la i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La integraci\u00f3 personalitzada {platform} utilitza una previsi\u00f3 meteorol\u00f2gica obsoleta"
-        },
-        "platform_integration_no_support": {
-            "description": "La plataforma {platform} de la integraci\u00f3 {domain} no \u00e9s compatible amb la configuraci\u00f3 de la plataforma.\n\nElimina-la de la teva configuraci\u00f3 i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "Suport de la plataforma no compatible"
+        "deprecated_service_weather_get_forecast": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta weather.get_forecast"
+                    }
+                }
+            },
+            "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta weather.get_forecast"
         }
     },
     "selector": {
@@ -107,7 +100,23 @@
     "services": {
         "get_forecast": {
             "description": "Obt\u00e9 la previsi\u00f3 del temps.",
+            "fields": {
+                "type": {
+                    "description": "Tipus de previsi\u00f3: di\u00e0ria, cada hora o dues vegades al dia.",
+                    "name": "Tipus de previsi\u00f3"
+                }
+            },
             "name": "Obt\u00e9 previsi\u00f3"
+        },
+        "get_forecasts": {
+            "description": "Obt\u00e9 les previsions meteorol\u00f2giques.",
+            "fields": {
+                "type": {
+                    "description": "Tipus de previsi\u00f3: di\u00e0ria, cada hora o dues vegades al dia.",
+                    "name": "Tipus de previsi\u00f3"
+                }
+            },
+            "name": "Obt\u00e9 previsions"
         }
     },
     "title": "Temps"

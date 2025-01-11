@@ -13,21 +13,25 @@
             }
         }
     },
-    "issues": {
-        "image_size_deprecated_format": {
-            "description": "OpenAI is now using Dall-E 3 to generate images when calling `openai_conversation.generate_image`, which supports different sizes. Valid values are now \"1024x1024\", \"1024x1792\", \"1792x1024\". The old values of \"256\", \"512\", \"1024\" are currently interpreted as \"1024x1024\".\nPlease update your scripts or automations with the new parameters.",
-            "title": "Deprecated size format for image generation service"
+    "exceptions": {
+        "invalid_config_entry": {
+            "message": "Invalid config entry provided. Got {config_entry}"
         }
     },
     "options": {
         "step": {
             "init": {
                 "data": {
+                    "chat_model": "Model",
+                    "llm_hass_api": "Control Home Assistant",
                     "max_tokens": "Maximum tokens to return in response",
-                    "model": "Completion Model",
-                    "prompt": "Prompt Template",
+                    "prompt": "Instructions",
+                    "recommended": "Recommended model settings",
                     "temperature": "Temperature",
                     "top_p": "Top P"
+                },
+                "data_description": {
+                    "prompt": "Instruct how the LLM should respond. This can be a template."
                 }
             }
         }
@@ -37,7 +41,7 @@
             "description": "Turn a prompt into an image",
             "fields": {
                 "config_entry": {
-                    "description": "The config entry to use for this service",
+                    "description": "The config entry to use for this action",
                     "name": "Config Entry"
                 },
                 "prompt": {

@@ -18,7 +18,6 @@
             "description": "Inicia la tasca de purga per netejar dades antigues de la base de dades.",
             "fields": {
                 "apply_filter": {
-                    "description": "Aplica els filtres `entity_id` i `event_type` a m\u00e9s de la purga basada en el temps.",
                     "name": "Aplica filtre"
                 },
                 "keep_days": {
@@ -43,6 +42,10 @@
                     "description": "Llista de patrons glob utilitzada per seleccionar les entitats a les quals eliminar-ne les dades de la base de dades.",
                     "name": "Globs d'entitat a eliminar"
                 },
+                "entity_id": {
+                    "description": "Llista d'entitats les dades de les quals cal eliminar de la base de dades.",
+                    "name": "Entitats a eliminar"
+                },
                 "keep_days": {
                     "description": "Nombre de dies a conservar les dades de les files que coincideixin amb el filtre. A partir d'avui, comptant enrere. Un valor de `7` significa que es purgar\u00e0 tot el que tingui m\u00e9s d'una setmana. El valor predeterminat 0 (dies) eliminar\u00e0 totes les files coincidents immediatament.",
                     "name": "Dies a conservar"
@@ -54,7 +57,7 @@
     "system_health": {
         "info": {
             "current_recorder_run": "Hora d'inici de l'execuci\u00f3 actual",
-            "database_engine": "Motor de bases de dades",
+            "database_engine": "Motor de la base de dades",
             "database_version": "Versi\u00f3 de la base de dades",
             "estimated_db_size": "Mida estimada de la base de dades (MiB)",
             "oldest_recorder_run": "Hora d'inici de l'execuci\u00f3 m\u00e9s antiga"

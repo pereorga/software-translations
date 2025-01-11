@@ -4,7 +4,7 @@
             "already_configured": "La ubicaci\u00f3 ja est\u00e0 configurada"
         },
         "error": {
-            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "cannot_connect": "No s'ha pogut connectar: {error}",
             "invalid_api_key": "Clau API inv\u00e0lida"
         },
         "step": {
@@ -18,6 +18,16 @@
                     "name": "Nom"
                 },
                 "description": "Per generar la clau API, v\u00e9s a https://openweathermap.org/appid"
+            }
+        }
+    },
+    "issues": {
+        "deprecated_v25": {
+            "fix_flow": {
+                "error": {
+                    "cannot_connect": "No s'ha pogut connectar: {error}",
+                    "invalid_api_key": "Clau API inv\u00e0lida"
+                }
             }
         }
     },

@@ -3,6 +3,7 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -38,12 +39,23 @@
                 "name": "Pot\u00e8ncia"
             }
         },
+        "select": {
+            "input": {
+                "name": "Entrada",
+                "state": {
+                    "hdmi1": "HDMI 1",
+                    "hdmi2": "HDMI 2"
+                }
+            }
+        },
         "sensor": {
             "jvc_power_status": {
                 "state": {
+                    "cooling": "Refredant",
                     "error": "Error",
                     "on": "ON",
-                    "standby": "En espera"
+                    "standby": "En espera",
+                    "warming": "Escalfant"
                 }
             }
         }

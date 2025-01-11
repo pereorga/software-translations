@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -14,6 +15,12 @@
             "reauth_confirm": {
                 "data": {
                     "api_key": "Clau API"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "Clau API",
+                    "station": "Estaci\u00f3"
                 }
             },
             "user": {
@@ -35,32 +42,11 @@
             "precipitation": {
                 "name": "Tipus de precipitaci\u00f3",
                 "state": {
-                    "drizzle": "Plugim",
                     "freezing_rain": "Pluja congelada",
-                    "hail": "Calamarsa",
                     "no": "Cap",
-                    "none": "Cap",
                     "rain": "Pluja",
-                    "rain_snow_mixed": "Aiguaneu",
-                    "snow": "Neu"
-                }
-            },
-            "precipitation_amountname": {
-                "name": "Nom de la precipitaci\u00f3",
-                "state": {
-                    "error": "Error",
-                    "heavy_rain": "Pluja intensa",
-                    "heavy_snow": "Neu intensa",
-                    "heavy_snow_rain": "Aiguaneu intensa",
-                    "mild_rain": "Pluja lleu",
-                    "mild_snow": "Neu lleu",
-                    "mild_snow_rain": "Aiguaneu lleu",
-                    "moderate_rain": "Pluja moderada",
-                    "moderate_snow": "Neu moderada",
-                    "moderate_snow_rain": "Aiguaneu moderada",
-                    "none": "Cap",
-                    "other": "Altre",
-                    "unknown": "Desconegut"
+                    "snow": "Neu",
+                    "yes": "S\u00ed (desconegut)"
                 }
             },
             "road_temperature": {
@@ -71,23 +57,6 @@
             },
             "wind_direction": {
                 "name": "Direcci\u00f3 del vent"
-            },
-            "wind_direction_text": {
-                "name": "Direcci\u00f3 del vent (text)",
-                "state": {
-                    "east": "Est",
-                    "east_south_east": "Est sud-est",
-                    "north": "Nord",
-                    "north_east": "Nord-est",
-                    "north_north_east": "Nord nord-est",
-                    "north_north_west": "Nord nord-oest",
-                    "north_west": "Nord-oest",
-                    "south": "Sud",
-                    "south_east": "Sud-est",
-                    "south_south_west": "Sud sud-oest",
-                    "south_west": "Sud-oest",
-                    "west": "Oest"
-                }
             },
             "wind_speed_max": {
                 "name": "M\u00e0xima velocitat del vent"

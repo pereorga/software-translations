@@ -9,7 +9,6 @@
         "step": {
             "user": {
                 "data": {
-                    "api_key": "Clau API",
                     "host": "Amfitri\u00f3",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
@@ -18,6 +17,11 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "mmu": {
+                "name": "MMU"
+            }
+        },
         "button": {
             "cancel_job": {
                 "name": "Cancel\u00b7la la tasca"
@@ -35,6 +39,9 @@
             }
         },
         "sensor": {
+            "fan_print": {
+                "name": "Ventilador d'impressi\u00f3"
+            },
             "filename": {
                 "name": "Nom del fitxer"
             },
@@ -46,6 +53,9 @@
             },
             "material": {
                 "name": "Material"
+            },
+            "nozzle_diameter": {
+                "name": "Di\u00e0metre del broquet"
             },
             "nozzle_target_temperature": {
                 "name": "Temperatura objectiu del broquet"
@@ -64,11 +74,10 @@
             },
             "printer_state": {
                 "state": {
-                    "cancelling": "S'est\u00e0 cancel\u00b7lant",
                     "error": "Error",
+                    "finished": "Acabat",
                     "idle": "Inactiu",
                     "paused": "Pausada",
-                    "pausing": "Aturant",
                     "printing": "Imprimint",
                     "ready": "A punt",
                     "stopped": "Aturada"

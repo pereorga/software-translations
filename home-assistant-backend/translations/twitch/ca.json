@@ -17,18 +17,43 @@
             }
         }
     },
-    "issues": {
-        "deprecated_yaml_already_imported": {
-            "description": "La configuraci\u00f3 de {integration_title} mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLes teves credencials d'aplicaci\u00f3 ja s'han importat.\n\nElimina la configuraci\u00f3 YAML de `{domain}` del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La configuraci\u00f3 YAML de {integration_title} est\u00e0 sent eliminada"
-        },
-        "deprecated_yaml_credentials_imported": {
-            "description": "La configuraci\u00f3 de {integration_title} mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLes teves credencials d'aplicaci\u00f3 s'han importat, per\u00f2 una entrada de configuraci\u00f3 no s'ha pogut importar perqu\u00e8 no hi ha cap 'token' d'acc\u00e9s.\n\nSi us plau, torna a afegir Twitch mitjan\u00e7ant la interf\u00edcie d'usuari (IU).\n\nElimina la configuraci\u00f3 YAML de `{domain}` del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La configuraci\u00f3 YAML de {integration_title} est\u00e0 sent eliminada"
-        },
-        "deprecated_yaml_invalid_token": {
-            "description": "La configuraci\u00f3 de {integration_title} mitjan\u00e7ant YAML s'eliminar\u00e0 de Home Assistant.\n\nLa teva configuraci\u00f3 NO s'ha pogut importar perqu\u00e8 el 'token' de configuration.yaml \u00e9s inv\u00e0lid.\n\nElimina la configuraci\u00f3 YAML de `{domain}` del fitxer configuration.yaml i reinicia Home Assistant per solucionar aquest problema.",
-            "title": "La configuraci\u00f3 YAML de {integration_title} est\u00e0 sent eliminada"
+    "entity": {
+        "sensor": {
+            "channel": {
+                "state": {
+                    "offline": "Fora de l\u00ednia",
+                    "streaming": "En directe"
+                },
+                "state_attributes": {
+                    "followers": {
+                        "name": "Seguidors"
+                    },
+                    "following": {
+                        "name": "Seguint"
+                    },
+                    "following_since": {
+                        "name": "Seguint des de"
+                    },
+                    "game": {
+                        "name": "Joc"
+                    },
+                    "subscribed": {
+                        "name": "Subscrit"
+                    },
+                    "subscription_is_gifted": {
+                        "name": "Subscripci\u00f3 regalada"
+                    },
+                    "subscription_tier": {
+                        "name": "Nivell de subscripci\u00f3"
+                    },
+                    "title": {
+                        "name": "T\u00edtol"
+                    },
+                    "viewers": {
+                        "name": "Espectadors"
+                    }
+                }
+            }
         }
     }
 }

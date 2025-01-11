@@ -2,20 +2,35 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "No es pot connectar: {reason}",
-            "invalid_auth": "Autenticaci\u00f3 no v\u00e0lida: {reason}",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida: {reason}",
             "unknown": "Error inesperat"
         },
         "flow_title": "{serial} ({host})",
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP de la passarel\u00b7la Enphase Envoy."
+                },
+                "description": "Per a la versi\u00f3 de microprogramari 7.0 i posteriors, introdueix les credencials del n\u00favol d'Enphase, per als models m\u00e9s antics, introdueix el nom d'usuari `installer` sense contrasenya."
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP de la passarel\u00b7la Enphase Envoy."
                 },
                 "description": "Per a la versi\u00f3 de microprogramari 7.0 i posteriors, introdueix les credencials del n\u00favol d'Enphase, per als models m\u00e9s antics, introdueix el nom d'usuari `installer` sense contrasenya."
             }
@@ -31,12 +46,6 @@
             },
             "grid_status": {
                 "name": "Estat de xarxa el\u00e8ctrica"
-            },
-            "operating": {
-                "name": "En funcionament"
-            },
-            "relay": {
-                "name": "Estat del rel\u00e9"
             }
         },
         "number": {
@@ -94,6 +103,11 @@
             }
         },
         "sensor": {
+            "acb_battery_state": {
+                "state": {
+                    "idle": "Inactiu"
+                }
+            },
             "available_energy": {
                 "name": "Energia disponible de la bateria"
             },
@@ -118,11 +132,29 @@
             "lifetime_consumption": {
                 "name": "Energia total consumida"
             },
+            "lifetime_net_consumption": {
+                "name": "Energia neta total consumida"
+            },
+            "lifetime_net_consumption_phase": {
+                "name": "Energia neta total consumida, {phase_name}"
+            },
+            "lifetime_net_production": {
+                "name": "Energia neta total produ\u00efda"
+            },
+            "lifetime_net_production_phase": {
+                "name": "Energia neta total produ\u00efda, {phase_name}"
+            },
             "lifetime_production": {
                 "name": "Energia total produ\u00efda"
             },
             "max_capacity": {
                 "name": "Capacitat de la bateria"
+            },
+            "net_consumption": {
+                "name": "Pot\u00e8ncia neta consumida actual"
+            },
+            "net_consumption_phase": {
+                "name": "Pot\u00e8ncia neta consumida actual, {phase_name}"
             },
             "reserve_energy": {
                 "name": "Energia de reserva de la bateria"

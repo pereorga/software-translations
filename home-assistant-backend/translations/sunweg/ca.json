@@ -1,10 +1,13 @@
 {
     "config": {
         "abort": {
-            "no_plants": "No s'ha trobat cap planta en aquest compte"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "no_plants": "No s'ha trobat cap planta en aquest compte",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "timeout_connect": "S'ha esgotat el temps m\u00e0xim d'espera per establir connexi\u00f3"
         },
         "step": {
             "plant": {
@@ -12,6 +15,13 @@
                     "plant_id": "Planta"
                 },
                 "title": "Selecciona la planta"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
             "user": {
                 "data": {

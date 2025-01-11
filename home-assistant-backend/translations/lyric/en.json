@@ -3,6 +3,7 @@
         "abort": {
             "authorize_url_timeout": "Timeout generating authorize URL.",
             "missing_configuration": "The component is not configured. Please follow the documentation.",
+            "missing_credentials": "The integration requires application credentials.",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
             "oauth_timeout": "Timeout resolving OAuth token.",
@@ -39,15 +40,15 @@
             "outdoor_temperature": {
                 "name": "Outdoor temperature"
             },
+            "room_humidity": {
+                "name": "Room humidity"
+            },
+            "room_temperature": {
+                "name": "Room temperature"
+            },
             "setpoint_status": {
                 "name": "Setpoint status"
             }
-        }
-    },
-    "issues": {
-        "removed_yaml": {
-            "description": "Configuring Honeywell Lyric using YAML has been removed.\n\nYour existing YAML configuration is not used by Home Assistant.\n\nRemove the YAML configuration from your configuration.yaml file and restart Home Assistant to fix this issue.",
-            "title": "The Honeywell Lyric YAML configuration has been removed"
         }
     },
     "services": {
