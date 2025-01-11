@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 08:03+0000\n"
+"POT-Creation-Date: 2025-01-11 22:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -210,10 +210,6 @@ msgstr ""
 msgid "1 watching | {count} watching"
 msgstr ""
 
-#: Global-%3EInput+Tags-%3ELength+Requirement
-msgid "Tag must be at least {number} characters long"
-msgstr ""
-
 #: Search+/+Go+to+URL
 msgid "Search / Go to URL"
 msgstr "Cerca / Ves a l'URL"
@@ -221,6 +217,10 @@ msgstr "Cerca / Ves a l'URL"
 #: Search+Bar-%3EClear+Input
 msgid "Clear Input"
 msgstr "Netejar"
+
+#: Search+Bar-%3ERemove
+msgid "Remove"
+msgstr ""
 
 #: Search+character+limit
 msgid "Search query is over the {searchCharacterLimit} character limit"
@@ -427,10 +427,6 @@ msgstr "Subscripcions"
 msgid "Channels with Errors"
 msgstr "Canals amb errors"
 
-#: Subscriptions-%3ELatest+Subscriptions
-msgid "Latest Subscriptions"
-msgstr "Últimes subscripcions"
-
 #: Subscriptions-%3EThis+profile+has+a+large+number+of+subscriptions.+Forcing+RSS+to+avoid+rate+limiting
 msgid ""
 "This profile has a large number of subscriptions.  Forcing RSS to avoid rate "
@@ -457,10 +453,6 @@ msgstr ""
 #: Subscriptions-%3EEmpty+Channels
 msgid "Your subscribed channels currently does not have any videos."
 msgstr ""
-
-#: Subscriptions-%3EGetting+Subscriptions.+Please+wait.
-msgid "Getting Subscriptions. Please wait."
-msgstr "Obtenint subscripcions. Si us plau, espera."
 
 #: Subscriptions-%3EEmpty+Posts
 msgid "Your subscribed channels currently do not have any posts."
@@ -789,10 +781,6 @@ msgstr ""
 
 #: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EPlaylist+%7BplaylistName%7D+has+been+deleted.
 msgid "Playlist {playlistName} has been deleted."
-msgstr ""
-
-#: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EPlaylist+%7BplaylistName%7D+is+the+new+quick+bookmark+playlist.
-msgid "Playlist {playlistName} is the new quick bookmark playlist."
 msgstr ""
 
 #: User+Playlists-%3ESinglePlaylistView-%3EToast-%3EThis+playlist+does+not+exist
@@ -1656,8 +1644,12 @@ msgid "Privacy"
 msgstr "Configuració de la Privacitat"
 
 #: Settings-%3EPrivacy+Settings-%3ERemember+History
-msgid "Remember History"
+msgid "Remember Watch History"
 msgstr "Recorda l'historial"
+
+#: Settings-%3EPrivacy+Settings-%3ERemember+Search+History
+msgid "Remember Search History"
+msgstr ""
 
 #: Settings-%3EPrivacy+Settings-%3ESave+Watched+Progress
 msgid "Save Watched Progress"
@@ -1667,17 +1659,17 @@ msgstr "Desa progrés reproduït"
 msgid "Save Watched Videos With Last Viewed Playlist"
 msgstr ""
 
-#: Settings-%3EPrivacy+Settings-%3EClear+Search+Cache
-msgid "Clear Search Cache"
-msgstr "Elimina la memòria cau de cerca"
+#: Settings-%3EPrivacy+Settings-%3EClear+Search+History+and+Cache
+msgid "Clear Search History and Cache"
+msgstr ""
 
-#: Settings-%3EPrivacy+Settings-%3EAre+you+sure+you+want+to+clear+out+your+search+cache%3F
-msgid "Are you sure you want to clear out your search cache?"
-msgstr "Estàs segur que vols eliminar la memòria cau de la cerca?"
+#: Settings-%3EPrivacy+Settings-%3EAre+you+sure+you+want+to+clear+out+your+search+history+and+cache%3F
+msgid "Are you sure you want to clear out your search history and cache?"
+msgstr ""
 
-#: Settings-%3EPrivacy+Settings-%3ESearch+cache+has+been+cleared
-msgid "Search cache has been cleared"
-msgstr "La memòria cau de la cerca s'ha eliminat"
+#: Settings-%3EPrivacy+Settings-%3ESearch+history+and+cache+have+been+cleared
+msgid "Search history and cache have been cleared"
+msgstr ""
 
 #: Settings-%3EPrivacy+Settings-%3ERemove+Watch+History
 msgid "Remove Watch History"
@@ -1928,10 +1920,6 @@ msgstr ""
 #: Settings-%3EData+Settings-%3EData+Settings
 msgid "Data"
 msgstr "Configuració de les dades"
-
-#: Settings-%3EData+Settings-%3ESelect+Import+Type
-msgid "Select Import Type"
-msgstr "Selecciona tipus d'importació"
 
 #: Settings-%3EData+Settings-%3ESelect+Export+Type
 msgid "Select Export Type"
@@ -2251,14 +2239,6 @@ msgstr ""
 msgid "Enter password to unlock settings"
 msgstr ""
 
-#: Settings-%3EPassword+Dialog-%3EPassword+Incorrect
-msgid "Password Incorrect"
-msgstr ""
-
-#: Settings-%3EPassword+Dialog-%3EUnlock
-msgid "Unlock"
-msgstr ""
-
 #: Settings-%3EPassword+Settings-%3EPassword+Settings
 msgctxt "Settings->Password Settings->Password Settings"
 msgid "Password"
@@ -2461,10 +2441,6 @@ msgstr "Estàs segur que vols suprimir aquest perfil?"
 msgid "All subscriptions will also be deleted."
 msgstr "També se suprimiran totes les subscripcions."
 
-#: Profile-%3EProfile+could+not+be+found
-msgid "Profile could not be found"
-msgstr "No s'ha pogut trobar el perfil"
-
 #: Profile-%3EYour+profile+name+cannot+be+empty
 msgid "Your profile name cannot be empty"
 msgstr "El nom del perfil no pot estar buit"
@@ -2606,13 +2582,11 @@ msgstr "Aquest canal no té actualment cap vídeo"
 
 #: Channel-%3EVideos-%3ESort+Types-%3ENewest
 msgctxt "Channel->Videos->Sort Types->Newest"
-"Channel->Videos->Sort Types->Newest"
 msgid "Newest"
 msgstr "Més Nou"
 
 #: Channel-%3EVideos-%3ESort+Types-%3EOldest
 msgctxt "Channel->Videos->Sort Types->Oldest"
-"Channel->Videos->Sort Types->Oldest"
 msgid "Oldest"
 msgstr "Més Vell"
 
@@ -2892,10 +2866,6 @@ msgid "Starting soon, please refresh the page to check again"
 msgstr ""
 "Començant prompte, si us plau recàrrega la pàgina per comprovar-ho de nou"
 
-#: Video-%3EPremieres+on
-msgid "Premieres on"
-msgstr "S'estrena el"
-
 #: Video-%3EPremieres
 msgid "Premieres"
 msgstr ""
@@ -2928,10 +2898,6 @@ msgstr "Activa el xat en directe"
 #: Video-%3ELive+Chat+is+currently+not+supported+in+this+build.
 msgid "Live Chat is currently not supported in this build."
 msgstr "No s’admet el xat en directe en aquesta construcció."
-
-#: Video-%3EChat+is+disabled+or+the+Live+Stream+has+ended.
-msgid "Chat is disabled or the Live Stream has ended."
-msgstr "El Xat està desactivat o la Reproducció En Directe ha finalitzat."
 
 #: Video-%3ELive+chat+is+enabled.+Chat+messages+will+appear+here+once+sent.
 msgid "Live chat is enabled.  Chat messages will appear here once sent."
@@ -3178,16 +3144,6 @@ msgstr ""
 msgid "Skipped {segmentCategory} segment"
 msgstr ""
 
-#: Videos-%3ESort+By-%3ENewest
-msgctxt "Videos->Sort By->Newest"
-msgid "Newest"
-msgstr "Més Nou"
-
-#: Videos-%3ESort+By-%3EOldest
-msgctxt "Videos->Sort By->Oldest"
-msgid "Oldest"
-msgstr "Més Vell"
-
 #: Playlist-%3EPlaylist
 msgid "Playlist"
 msgstr ""
@@ -3373,10 +3329,6 @@ msgstr ""
 msgid "There are no more comments for this video"
 msgstr ""
 
-#: Comments-%3EShow+Comments
-msgid "Show Comments"
-msgstr ""
-
 #: Comments-%3EHide+Comments
 msgctxt "Comments->Hide Comments"
 msgid "Hide Comments"
@@ -3432,10 +3384,6 @@ msgstr ""
 
 #: Comments-%3ELoad+More+Comments
 msgid "Load More Comments"
-msgstr ""
-
-#: Comments-%3ENo+more+comments+available
-msgid "No more comments available"
 msgstr ""
 
 #: Comments-%3EPinned+by
