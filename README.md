@@ -17,12 +17,12 @@ https://github.com/Softcatala/translation-memory-tools/.
 On Ubuntu/Debian:
 
 ```
-sudo apt-get install csvkit translate-toolkit dos2unix gettext nodejs npm
+sudo apt-get install csvkit translate-toolkit dos2unix gettext nodejs npm unzip
 ```
 
 On Mac:
 ```
-brew install bash csvkit translate-toolkit dos2unix gettext node
+brew install bash csvkit translate-toolkit dos2unix gettext node unzip
 ```
 
 ## Translation credits
