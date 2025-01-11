@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-06 08:03+0000\n"
+"POT-Creation-Date: 2025-01-11 22:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,12 @@ msgstr "(Acabament: %date)"
 
 #: WebPositive+Window
 msgid "Open bookmarks confirmation"
-msgstr "Confirmació de l'obertura d'adreces d'interès"
+msgstr "Confirmació de l'obertura de marcadors"
+
+#: BookmarkBar
+msgctxt "BookmarkBar"
+msgid "Delete"
+msgstr "Suprimeix"
 
 #: Settings+Window
 msgid "Download folder:"
@@ -41,6 +46,10 @@ msgstr "Carpeta de baixada:"
 #: WebPositive+Window
 msgid "Close window"
 msgstr "Tanca la finestra"
+
+#: BookmarkBar
+msgid "Rename"
+msgstr "Canvia'n el nom"
 
 #: WebPositive+Window
 msgid "Find:"
@@ -53,7 +62,7 @@ msgstr "Script de consola"
 
 #: WebPositive+Window
 msgid "There was an error setting up the bookmark."
-msgstr "Hi ha hagut un error en configurar l'adreça d'interès."
+msgstr "Hi ha hagut un error en configurar el marcador."
 
 #: Settings+Window
 msgid "Fonts"
@@ -65,7 +74,7 @@ msgstr "Camí"
 
 #: WebPositive+Window
 msgid "Bookmarks"
-msgstr "Adreces d'interès"
+msgstr "Marcadors"
 
 #: Settings+Window
 msgid "Use proxy server to connect to the internet"
@@ -80,6 +89,7 @@ msgid "Auto-hide interface in full screen mode"
 msgstr "Amaga la interfície automàticament en mode de pantalla completa"
 
 #: Cookie+Manager
+msgctxt "Cookie Manager"
 msgid "Delete"
 msgstr "Suprimeix"
 
@@ -89,7 +99,7 @@ msgid ""
 "\\n"
 "Error: %error"
 msgstr ""
-"Hi ha hagut un error en obtenir la carpeta d'adreces d'interès.\\n"
+"Hi ha hagut un error en obtenir la carpeta de marcadors.\\n"
 "\\n"
 "Error: %error"
 
@@ -119,7 +129,7 @@ msgstr "Copia l'URL al porta-retalls"
 
 #: WebPositive+Window
 msgid "Do you want to open %addedCount bookmarks all at once?"
-msgstr "Voleu obrir %addedCount adreces d'interès alhora?"
+msgstr "Voleu obrir %addedCount marcadors alhora?"
 
 #: Settings+Window
 msgid "Clone current page"
@@ -180,7 +190,7 @@ msgstr "Error en obrir la carpeta de baixades"
 
 #: WebPositive+Window
 msgid "Show bookmark bar"
-msgstr "Mostra la barra d'adreces d'interès"
+msgstr "Mostra la barra de marcadors"
 
 #: WebPositive+Window
 msgid "Find"
@@ -257,6 +267,10 @@ msgstr "WebPositive"
 msgid "%s - Search term"
 msgstr "%s - terme de cerca"
 
+#: BookmarkBar
+msgid "Old name: %s"
+msgstr "Nom antic: %s"
+
 #: Cookie+Manager
 msgid "Expiration"
 msgstr "Venciment"
@@ -292,6 +306,7 @@ msgstr "Amaga el text de la contrasenya"
 
 #: Authentication+Panel
 msgctxt "Authentication Panel"
+"Authentication Panel"
 "Authentication Panel"
 msgid "OK"
 msgstr "D'acord"
@@ -425,7 +440,7 @@ msgid ""
 "\\n"
 "Error: %error"
 msgstr ""
-"Hi ha hagut un error en crear el fitxer d'adreces d'interès.\\n"
+"Hi ha hagut un error en crear el fitxer de marcadors.\\n"
 "\\n"
 "Error: %error"
 
@@ -438,9 +453,13 @@ msgstr "D'acord"
 msgid "Proxy username:"
 msgstr "Nom d'usuari del servidor intermediari:"
 
+#: BookmarkBar
+msgid "Rename bookmark"
+msgstr "Canvia el nom del marcador"
+
 #: WebPositive+Window
 msgid "Manage bookmarks"
-msgstr "Gestioneu les adreces d'interès"
+msgstr "Gestioneu els marcadors"
 
 #: Download+Window
 msgid "/s)"
@@ -464,7 +483,7 @@ msgid ""
 "\\n"
 "Error: %error"
 msgstr ""
-"Hi ha hagut un error en intentar mostrar la carpeta d'adreces d'interès.\\n"
+"Hi ha hagut un error en intentar mostrar la carpeta de marcadors.\\n"
 "\\n"
 "Error: %error"
 
@@ -494,7 +513,7 @@ msgstr "Personalitzat"
 
 #: WebPositive+Window
 msgid "Bookmark this page"
-msgstr "Afegeix aquesta pàgina a les adreces d'interès"
+msgstr "Afegeix aquesta pàgina als marcadors"
 
 #: Settings+Window
 msgid "Show tabs if only one page is open"
@@ -609,7 +628,7 @@ msgstr "Següent"
 
 #: WebPositive+Window
 msgid "Bookmark error"
-msgstr "Error d'adreça d'interès"
+msgstr "Error de marcador"
 
 #: WebPositive+Window
 msgctxt "WebPositive Window"
@@ -681,6 +700,11 @@ msgstr ""
 "Jove xef, sol·licito que porti cafè descafeïnat i whisky amb quinze glaçons "
 "d'hidrogen!"
 
+#: BookmarkBar
+msgctxt "BookmarkBar"
+msgid "OK"
+msgstr "D'acord"
+
 #: Settings+Window
 msgid "Start up:"
 msgstr "Inicia:"
@@ -692,6 +716,10 @@ msgstr "Confirmació"
 #: Cookie+Manager
 msgid "Session cookie"
 msgstr "Galeta de la sessió"
+
+#: BookmarkBar
+msgid "New name:"
+msgstr "Nom nou:"
 
 #: WebPositive
 msgid "No SSE2 support"
