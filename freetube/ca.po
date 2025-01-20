@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-11 22:03+0000\n"
+"POT-Creation-Date: 2025-01-20 08:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1432,25 +1432,24 @@ msgid "Player"
 msgstr "Configuració del reproductor"
 
 #: Settings-%3EPlayer+Settings-%3EPlay+Next+Video
-msgctxt "Settings->Player Settings->Play Next Video"
-msgid "Play Next Video"
+msgid "Autoplay Recommended Videos"
 msgstr "Reprodueix el vídeo següent"
+
+#: Settings-%3EPlayer+Settings-%3EAutoplay+Playlists
+msgid "Autoplay Playlist Videos"
+msgstr "Reprodueix automàticament les llistes de reproducció"
+
+#: Settings-%3EPlayer+Settings-%3EAutoplay+Videos
+msgid "Start Videos Automatically"
+msgstr "Reprodueix automàticament els vídeos"
 
 #: Settings-%3EPlayer+Settings-%3ETurn+on+Subtitles+by+Default
 msgid "Turn on Subtitles by Default"
 msgstr "Activa els subtítols per defecte"
 
-#: Settings-%3EPlayer+Settings-%3EAutoplay+Videos
-msgid "Autoplay Videos"
-msgstr "Reprodueix automàticament els vídeos"
-
 #: Settings-%3EPlayer+Settings-%3EProxy+Videos+Through+Invidious
 msgid "Proxy Videos Through Invidious"
 msgstr "Fes servir Invidious com a intermediari per baixar els vídeos"
-
-#: Settings-%3EPlayer+Settings-%3EAutoplay+Playlists
-msgid "Autoplay Playlists"
-msgstr "Reprodueix automàticament les llistes de reproducció"
 
 #: Settings-%3EPlayer+Settings-%3EEnable+Theatre+Mode+by+Default
 msgid "Enable Theatre Mode by Default"
@@ -2841,17 +2840,12 @@ msgid "Reverse Playlist"
 msgstr "Llista de reproducció invertida"
 
 #: Video-%3EPlay+Next+Video
-msgctxt "Video->Play Next Video"
 msgid "Play Next Video"
 msgstr "Reprodueix el vídeo següent"
 
 #: Video-%3EPlay+Previous+Video
 msgid "Play Previous Video"
 msgstr "Reprodueix el vídeo anterior"
-
-#: Video-%3EPause+on+Current+Video
-msgid "Pause on Current Video"
-msgstr ""
 
 #: Video-%3EWatched
 msgid "Watched"
@@ -3050,6 +3044,14 @@ msgstr ""
 
 #: Video-%3EPlayer-%3EAudio+Tracks
 msgid "Audio Tracks"
+msgstr ""
+
+#: Video-%3EPlayer-%3EAutoplay+is+off
+msgid "Autoplay is off"
+msgstr ""
+
+#: Video-%3EPlayer-%3EAutoplay+is+on
+msgid "Autoplay is on"
 msgstr ""
 
 #: Video-%3EPlayer-%3ETheatre+Mode
@@ -3621,14 +3623,6 @@ msgstr ""
 msgid "Playing Previous Video"
 msgstr ""
 
-#: Playlist+will+not+pause+when+current+video+is+finished
-msgid "Playlist will not pause when current video is finished"
-msgstr ""
-
-#: Playlist+will+pause+when+current+video+is+finished
-msgid "Playlist will pause when current video is finished"
-msgstr ""
-
 #: Playing+Next+Video+Interval
 msgid ""
 "Playing next video in no time. Click to cancel. | Playing next video in "
@@ -3767,6 +3761,10 @@ msgstr ""
 
 #: shortcutJoinOperator
 msgid "+"
+msgstr ""
+
+#: shortcutLabelSeparator
+msgid "｜"
 msgstr ""
 
 #: Keys-%3Ealt
