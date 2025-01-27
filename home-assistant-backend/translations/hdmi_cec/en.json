@@ -1,14 +1,14 @@
 {
     "services": {
         "power_on": {
-            "description": "Power on all devices which supports it.",
+            "description": "Powers on all devices which support this function.",
             "name": "Power on"
         },
         "select_device": {
-            "description": "Select HDMI device.",
+            "description": "Selects an HDMI device.",
             "fields": {
                 "device": {
-                    "description": "Address of device to select. Can be entity_id, physical address or alias from configuration.",
+                    "description": "Address of device to select. Can be an entity ID, physical address or alias from configuration.",
                     "name": "Device"
                 }
             },
@@ -41,7 +41,7 @@
             "name": "Send command"
         },
         "standby": {
-            "description": "Standby all devices which supports it.",
+            "description": "Places in standby all devices which support this function.",
             "name": "Standby"
         },
         "update": {
@@ -49,18 +49,18 @@
             "name": "Update"
         },
         "volume": {
-            "description": "Increases or decreases volume of system.",
+            "description": "Increases or decreases the system volume.",
             "fields": {
                 "down": {
-                    "description": "Decreases volume x levels.",
+                    "description": "Decreases the volume x levels.",
                     "name": "Down"
                 },
                 "mute": {
-                    "description": "Mutes audio system.",
+                    "description": "Mutes the audio system.",
                     "name": "Mute"
                 },
                 "up": {
-                    "description": "Increases volume x levels.",
+                    "description": "Increases the volume x levels.",
                     "name": "Up"
                 }
             },

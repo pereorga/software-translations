@@ -14,7 +14,7 @@
             "description": "Responds to a callback query originated by clicking on an online keyboard button. The answer will be displayed to the user as a notification at the top of the chat screen or as an alert.",
             "fields": {
                 "callback_query_id": {
-                    "description": "Unique id of the callback response.",
+                    "description": "Unique ID of the callback response.",
                     "name": "Callback query ID"
                 },
                 "message": {
@@ -26,7 +26,7 @@
                     "name": "Show alert"
                 },
                 "timeout": {
-                    "description": "Read timeout for sending the answer.",
+                    "description": "Timeout for sending the answer in seconds.",
                     "name": "Read timeout"
                 }
             },
@@ -36,11 +36,11 @@
             "description": "Deletes a previously sent message.",
             "fields": {
                 "chat_id": {
-                    "description": "The chat_id where to delete the message.",
+                    "description": "ID of the chat where to delete the message.",
                     "name": "Chat ID"
                 },
                 "message_id": {
-                    "description": "Id of the message to delete.",
+                    "description": "ID of the message to delete.",
                     "name": "Message ID"
                 }
             },
@@ -54,7 +54,7 @@
                     "name": "Caption"
                 },
                 "chat_id": {
-                    "description": "The chat_id where to edit the caption.",
+                    "description": "ID of the chat where to edit the caption.",
                     "name": "Chat ID"
                 },
                 "inline_keyboard": {
@@ -62,7 +62,7 @@
                     "name": "Inline keyboard"
                 },
                 "message_id": {
-                    "description": "Id of the message to edit.",
+                    "description": "ID of the message to edit.",
                     "name": "Message ID"
                 }
             },
@@ -72,7 +72,7 @@
             "description": "Edits a previously sent message.",
             "fields": {
                 "chat_id": {
-                    "description": "The chat_id where to edit the message.",
+                    "description": "ID of the chat where to edit the message.",
                     "name": "Chat ID"
                 },
                 "disable_web_page_preview": {
@@ -88,7 +88,7 @@
                     "name": "Message"
                 },
                 "message_id": {
-                    "description": "Id of the message to edit.",
+                    "description": "ID of the message to edit.",
                     "name": "Message ID"
                 },
                 "parse_mode": {
@@ -103,10 +103,10 @@
             "name": "Edit message"
         },
         "edit_replymarkup": {
-            "description": "Edit the inline keyboard of a previously sent message.",
+            "description": "Edits the inline keyboard of a previously sent message.",
             "fields": {
                 "chat_id": {
-                    "description": "The chat_id where to edit the reply_markup.",
+                    "description": "ID of the chat where to edit the reply markup.",
                     "name": "Chat ID"
                 },
                 "inline_keyboard": {
@@ -114,7 +114,7 @@
                     "name": "Inline keyboard"
                 },
                 "message_id": {
-                    "description": "Id of the message to edit.",
+                    "description": "ID of the message to edit.",
                     "name": "Message ID"
                 }
             },
@@ -153,7 +153,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "parse_mode": {
                     "description": "Parser for the message text.",
@@ -165,14 +165,14 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send sticker.",
+                    "description": "Timeout for sending the sticker in seconds.",
                     "name": "Read timeout"
                 },
                 "url": {
@@ -223,7 +223,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "parse_mode": {
                     "description": "Parser for the message text.",
@@ -235,14 +235,14 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send document.",
+                    "description": "Timeout for sending the document in seconds.",
                     "name": "Read timeout"
                 },
                 "url": {
@@ -289,18 +289,18 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the location to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the location to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send photo.",
+                    "description": "Timeout for sending the photo in seconds.",
                     "name": "Read timeout"
                 }
             },
@@ -335,7 +335,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "parse_mode": {
                     "description": "Parser for the message text.",
@@ -343,14 +343,14 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the notification to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the notification to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send message. Will help with timeout errors (poor internet connection, etc)s.",
+                    "description": "Timeout for sending the message in seconds. Will help with timeout errors (poor Internet connection, etc).",
                     "name": "Read timeout"
                 },
                 "title": {
@@ -393,7 +393,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "parse_mode": {
                     "description": "Parser for the message text.",
@@ -405,14 +405,14 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send photo.",
+                    "description": "Timeout for sending the photo in seconds.",
                     "name": "Read timeout"
                 },
                 "url": {
@@ -451,7 +451,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "open_period": {
                     "description": "Amount of time in seconds the poll will be active after creation, 5-600.",
@@ -467,14 +467,14 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the location to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the location to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send poll.",
+                    "description": "Timeout for sending the poll in seconds.",
                     "name": "Read timeout"
                 }
             },
@@ -509,7 +509,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
@@ -517,18 +517,18 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "sticker_id": {
                     "description": "ID of a sticker that exists on telegram servers.",
                     "name": "Sticker ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send sticker.",
+                    "description": "Timeout for sending the sticker in seconds.",
                     "name": "Read timeout"
                 },
                 "url": {
@@ -579,7 +579,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "parse_mode": {
                     "description": "Parser for the message text.",
@@ -591,14 +591,14 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send video.",
+                    "description": "Timeout for sending the video in seconds.",
                     "name": "Read timeout"
                 },
                 "url": {
@@ -649,7 +649,7 @@
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
-                    "name": "Message thread id"
+                    "name": "Message thread ID"
                 },
                 "password": {
                     "description": "Password (or bearer token) for a URL which require HTTP authentication.",
@@ -657,14 +657,14 @@
                 },
                 "reply_to_message_id": {
                     "description": "Mark the message as a reply to a previous message.",
-                    "name": "Reply to message id"
+                    "name": "Reply to message ID"
                 },
                 "target": {
-                    "description": "An array of pre-authorized chat_ids to send the document to. If not present, first allowed chat_id is the default.",
+                    "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
                 "timeout": {
-                    "description": "Read timeout for send voice.",
+                    "description": "Timeout for sending the voice in seconds.",
                     "name": "Read timeout"
                 },
                 "url": {

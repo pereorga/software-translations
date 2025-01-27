@@ -7,7 +7,7 @@
         },
         "error": {
             "invalid_code": "Failed to sign into Hive. Your two-factor authentication code was incorrect.",
-            "invalid_password": "Failed to sign into Hive. Incorrect password please try again.",
+            "invalid_password": "Failed to sign into Hive. Incorrect password, please try again.",
             "invalid_username": "Failed to sign into Hive. Your email address is not recognised.",
             "no_internet_available": "An internet connection is required to connect to Hive.",
             "unknown": "Unexpected error"
@@ -68,7 +68,7 @@
         "step": {
             "user": {
                 "data": {
-                    "scan_interval": "Scan Interval (seconds)"
+                    "scan_interval": "Scan interval (seconds)"
                 },
                 "description": "Update the scan interval to poll for data more often.",
                 "title": "Options for Hive"
@@ -80,31 +80,31 @@
             "description": "Sets the boost mode OFF.",
             "fields": {
                 "entity_id": {
-                    "description": "Select entity_id to turn boost off.",
+                    "description": "The entity ID to turn boost off.",
                     "name": "Entity ID"
                 }
             },
             "name": "Boost heating off"
         },
         "boost_heating_on": {
-            "description": "Sets the boost mode ON defining the period of time and the desired target temperature for the boost.",
+            "description": "Sets the boost mode ON, defining the period of time and the desired target temperature for the boost.",
             "fields": {
                 "temperature": {
-                    "description": "Set the target temperature for the boost period.",
+                    "description": "The target temperature for the boost period.",
                     "name": "Temperature"
                 },
                 "time_period": {
-                    "description": "Set the time period for the boost.",
-                    "name": "Time Period"
+                    "description": "The time period for the boost.",
+                    "name": "Time period"
                 }
             },
             "name": "Boost heating on"
         },
         "boost_hot_water": {
-            "description": "Sets the boost mode ON or OFF defining the period of time for the boost.",
+            "description": "Sets the boost mode ON or OFF, defining the period of time for the boost.",
             "fields": {
                 "entity_id": {
-                    "description": "Select entity_id to boost.",
+                    "description": "The entity ID to boost.",
                     "name": "Entity ID"
                 },
                 "on_off": {
@@ -112,7 +112,7 @@
                     "name": "Mode"
                 },
                 "time_period": {
-                    "description": "Set the time period for the boost.",
+                    "description": "The time period for the boost.",
                     "name": "Time period"
                 }
             },

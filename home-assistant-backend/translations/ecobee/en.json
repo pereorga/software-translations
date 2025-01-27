@@ -81,7 +81,7 @@
                     "name": "Cool temperature"
                 },
                 "end_date": {
-                    "description": "Date the vacation ends in the YYYY-MM-DD format (optional, 14 days from now if not provided along with end_time).",
+                    "description": "Date the vacation ends in the YYYY-MM-DD format (optional, 14 days from now if not provided along with 'End time').",
                     "name": "End date"
                 },
                 "end_time": {
@@ -105,7 +105,7 @@
                     "name": "Heat temperature"
                 },
                 "start_date": {
-                    "description": "Date the vacation starts in the YYYY-MM-DD format (optional, immediately if not provided along with start_time).",
+                    "description": "Date the vacation starts in the YYYY-MM-DD format (optional, immediately if not provided along with 'Start time').",
                     "name": "Start date"
                 },
                 "start_time": {
@@ -172,10 +172,10 @@
             "name": "Set fan minimum on time"
         },
         "set_mic_mode": {
-            "description": "Enables/disables Alexa mic (only for Ecobee 4).",
+            "description": "Enables/disables Alexa microphone (only for Ecobee 4).",
             "fields": {
                 "mic_enabled": {
-                    "description": "Enable Alexa mic.",
+                    "description": "Enable Alexa microphone.",
                     "name": "Mic enabled"
                 }
             },

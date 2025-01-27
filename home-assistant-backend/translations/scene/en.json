@@ -4,7 +4,7 @@
             "message": "The scene {entity_id} is not created with action `scene.create`."
         },
         "entity_not_scene": {
-            "message": "{entity_id} is not a valid scene entity_id."
+            "message": "{entity_id} is not a valid entity ID of a scene."
         }
     },
     "services": {
@@ -26,16 +26,16 @@
             "description": "Creates a new scene.",
             "fields": {
                 "entities": {
-                    "description": "List of entities and their target state. If your entities are already in the target state right now, use `snapshot_entities` instead.",
-                    "name": "Entities state"
+                    "description": "List of entities and their target state. If your entities are already in the target state right now, use 'Entities snapshot' instead.",
+                    "name": "Entity states"
                 },
                 "scene_id": {
                     "description": "The entity ID of the new scene.",
                     "name": "Scene entity ID"
                 },
                 "snapshot_entities": {
-                    "description": "List of entities to be included in the snapshot. By taking a snapshot, you record the current state of those entities. If you do not want to use the current state of all your entities for this scene, you can combine the `snapshot_entities` with `entities`.",
-                    "name": "Snapshot entities"
+                    "description": "List of entities to be included in the snapshot. By taking a snapshot, you record the current state of those entities. If you do not want to use the current state of all your entities for this scene, you can combine 'Entities snapshot' with 'Entity states'.",
+                    "name": "Entities snapshot"
                 }
             },
             "name": "Create"

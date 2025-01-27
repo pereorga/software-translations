@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured_account": "El compte ja est\u00e0 configurat",
-            "ezviz_cloud_account_missing": "Falta el compte d'Ezviz Cloud. Torna'l a configurar",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
@@ -27,7 +26,6 @@
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 },
-                "description": "Introdueix les credencials per tornar a autenticar al compte d'Ezviz Cloud",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
             "user": {
@@ -168,29 +166,13 @@
         "step": {
             "init": {
                 "data": {
-                    "ffmpeg_arguments": "Par\u00e0metres passats a ffmpeg per a les c\u00e0meres",
-                    "timeout": "Temps d'espera de la sol\u00b7licitud (segons)"
+                    "ffmpeg_arguments": "Par\u00e0metres passats a ffmpeg per a les c\u00e0meres"
                 }
             }
         }
     },
     "services": {
-        "set_alarm_detection_sensibility": {
-            "description": "Configura el nivell de sensibilitat de detecci\u00f3.",
-            "fields": {
-                "level": {
-                    "description": "Nivell de sensibilitat 1 a 6 per al tipus 0 (c\u00e0mera normal) o, 1 a 100 per al tipus 3 (c\u00e0mera amb sensor PIR).",
-                    "name": "Nivell de sensibilitat"
-                },
-                "type_value": {
-                    "description": "Tipus de detecci\u00f3. Opcions: 0 - C\u00e0mera, 3 - Sensor PIR de la c\u00e0mera.",
-                    "name": "Tipus de detecci\u00f3"
-                }
-            },
-            "name": "Sensibilitat de detecci\u00f3"
-        },
         "wake_device": {
-            "description": "Es pot utilitzar per despertar la c\u00e0mera/dispositiu en hibernaci\u00f3.",
             "name": "Desperta c\u00e0mera"
         }
     }

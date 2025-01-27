@@ -12,15 +12,15 @@
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "Generate and enter a new 'Subscription Key' for your account at 'https://portal.osoenergy.no/'.",
-                "title": "OSO Energy Auth"
+                "description": "Enter a new 'Subscription key' for your account generated at 'https://portal.osoenergy.no/'.",
+                "title": "OSO Energy auth"
             },
             "user": {
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "Enter the generated 'Subscription Key' for your account at 'https://portal.osoenergy.no/'",
-                "title": "OSO Energy Auth"
+                "description": "Enter the 'Subscription key' for your account generated at 'https://portal.osoenergy.no/'",
+                "title": "OSO Energy auth"
             }
         }
     },
@@ -94,11 +94,11 @@
     },
     "services": {
         "get_profile": {
-            "description": "Get the temperature profile of water heater",
+            "description": "Gets the temperature profile for water heater",
             "name": "Get heater profile"
         },
         "set_profile": {
-            "description": "Set the temperature profile of water heater",
+            "description": "Sets the temperature profile for water heater",
             "fields": {
                 "hour_00": {
                     "description": "00:00 hour",
@@ -200,7 +200,7 @@
             "name": "Set heater profile"
         },
         "set_v40_min": {
-            "description": "Set the minimum quantity of water at 40\u00b0C for a heater",
+            "description": "Sets the minimum quantity of water at 40\u00b0C for a heater",
             "fields": {
                 "v40_min": {
                     "description": "Minimum quantity of water at 40\u00b0C (200-350 for SAGA S200, 300-550 for SAGA S300)",
@@ -210,7 +210,7 @@
             "name": "Set v40 min"
         },
         "turn_off": {
-            "description": "Turn off heating for one hour or until min temperature is reached",
+            "description": "Turns off heating for one hour or until min temperature is reached",
             "fields": {
                 "until_temp_limit": {
                     "description": "Choose if heating should be off until min temperature (True) is reached or for one hour (False)",
@@ -220,7 +220,7 @@
             "name": "Turn off heating"
         },
         "turn_on": {
-            "description": "Turn on heating for one hour or until max temperature is reached",
+            "description": "Turns on heating for one hour or until max temperature is reached",
             "fields": {
                 "until_temp_limit": {
                     "description": "Choose if heating should be on until max temperature (True) is reached or for one hour (False)",

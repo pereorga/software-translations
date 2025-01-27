@@ -321,7 +321,7 @@
     },
     "services": {
         "override_schedule": {
-            "description": "Override the schedule to either mow or park for a duration of time.",
+            "description": "Lets the mower either mow or park for a given duration, overriding all schedules.",
             "fields": {
                 "duration": {
                     "description": "Minimum: 1 minute, maximum: 42 days, seconds will be ignored.",
@@ -335,7 +335,7 @@
             "name": "Override schedule"
         },
         "override_schedule_work_area": {
-            "description": "Override the schedule of the mower for a duration of time in the selected work area.",
+            "description": "Lets the mower mow for a given duration in a specified work area, overriding all schedules.",
             "fields": {
                 "duration": {
                     "description": "Minimum: 1 minute, maximum: 42 days, seconds will be ignored.",

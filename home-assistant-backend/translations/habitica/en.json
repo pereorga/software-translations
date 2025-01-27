@@ -31,7 +31,7 @@
                     "url": "URL of the Habitica installation to connect to. Defaults to `{default_url}`"
                 },
                 "description": "You can retrieve your `User ID` and `API Token` from [**Settings -> Site Data**]({site_data}) on Habitica or the instance you want to connect to",
-                "title": "Login to other instances"
+                "title": "Log in to other instances"
             },
             "login": {
                 "data": {
@@ -43,13 +43,13 @@
                     "username": "Email or username (case-sensitive) to connect Home Assistant to your Habitica account"
                 },
                 "description": "Enter your login details to start using Habitica with Home Assistant\n\n[Forgot your password?]({forgot_password})",
-                "title": "Login to Habitica"
+                "title": "Log in to Habitica"
             },
             "user": {
                 "description": "![Habiticans]({habiticans}) Connect your Habitica account to keep track of your adventurer's stats, progress, and manage your to-dos and daily tasks.\n\n[Don't have a Habitica account? Sign up here.]({signup})",
                 "menu_options": {
-                    "advanced": "Login to other instances",
-                    "login": "Login to Habitica"
+                    "advanced": "Log in to other instances",
+                    "login": "Log in to Habitica"
                 },
                 "title": "Habitica - Gamify your life"
             }
@@ -343,13 +343,13 @@
             "message": "Unable to update the score for your Habitica to-do `{name}`, please try again"
         },
         "service_call_exception": {
-            "message": "Unable to connect to Habitica, try again later"
+            "message": "Unable to connect to Habitica: {reason}"
         },
         "service_call_unallowed": {
             "message": "Unable to complete action, the required conditions are not met"
         },
         "setup_rate_limit_exception": {
-            "message": "Rate limit exceeded, try again later"
+            "message": "Rate limit exceeded, try again in {retry_after} seconds"
         },
         "skill_not_found": {
             "message": "Unable to cast skill, your character does not have the skill or spell {skill}."

@@ -7,7 +7,7 @@
         "error": {
             "already_configured": "Device is already configured",
             "cannot_connect": "Failed to connect",
-            "id_exists": "Gateway id already exists",
+            "id_exists": "Gateway ID already exists",
             "timeout_connect": "Timeout establishing connection"
         },
         "step": {
@@ -377,7 +377,7 @@
             "description": "Resets the OpenTherm Gateway.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 }
             },
@@ -387,7 +387,7 @@
             "description": "Sends custom otgw commands (https://otgw.tclcode.com/firmware.html) through a transparent interface.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "transp_arg": {
@@ -409,7 +409,7 @@
                     "name": "Central heating override"
                 },
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 }
             },
@@ -423,7 +423,7 @@
                     "name": "Date"
                 },
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "time": {
@@ -437,7 +437,7 @@
             "description": "Sets the central heating control setpoint override on the gateway. You will only need this if you are writing your own software thermostat.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "temperature": {
@@ -451,7 +451,7 @@
             "description": "Changes the function of the GPIO pins of the gateway.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "id": {
@@ -473,7 +473,7 @@
                     "name": "Domestic hot water override"
                 },
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 }
             },
@@ -483,7 +483,7 @@
             "description": "Sets the domestic hot water setpoint on the gateway.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "temperature": {
@@ -497,7 +497,7 @@
             "description": "Changes the function of the LEDs of the gateway.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "id": {
@@ -515,7 +515,7 @@
             "description": "Overrides the maximum relative modulation level. You will only need this if you are writing your own software thermostat.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "level": {
@@ -529,7 +529,7 @@
             "description": "Provides an outside temperature to the thermostat. If your thermostat is unable to display an outside temperature and does not support OTC (Outside Temperature Correction), this has no effect.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "temperature": {
@@ -543,7 +543,7 @@
             "description": "Configures the setback temperature to be used with the GPIO away mode function.",
             "fields": {
                 "gateway_id": {
-                    "description": "The gateway_id of the OpenTherm Gateway.",
+                    "description": "The ID of the OpenTherm Gateway.",
                     "name": "Gateway ID"
                 },
                 "temperature": {

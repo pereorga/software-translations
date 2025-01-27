@@ -42,24 +42,20 @@
                     "sensor_string": "String de Sensor Node",
                     "variable_sensor_string": "String de Sensor Variable"
                 },
-                "description": "Configuraci\u00f3 de les opcions per a la integraci\u00f3 ISY: \n \u2022 String de Sensor Node: qualsevol dispositiu o carpeta que contingui 'String de Sensor Node' dins el nom ser\u00e0 tractat com a un sensor o sensor binari. \n \u2022 String Ignora: qualsevol dispositiu amb 'String Ignora' dins el nom ser\u00e0 ignorat. \n \u2022 String de Sensor Variable: qualsevol variable que contingui 'String de Sensor Variable' s'afegir\u00e0 com a un sensor.  \n \u2022 Restaura la lluminositat del llum: si est\u00e0 activat, en encendre un llum es restablir\u00e0 la lluminositat anterior en lloc del valor integrat dins el dispositiu.",
                 "title": "Opcions d'ISY"
             }
         }
     },
     "services": {
         "delete_zwave_lock_user_code": {
-            "description": "Elimina codi de bloqueig d'usuari Z-Wave a trav\u00e9s d'ISY.",
             "fields": {
                 "user_num": {
                     "description": "N\u00famero de la ranura d'usuari al pany.",
                     "name": "N\u00famero d'usuari"
                 }
-            },
-            "name": "Elimina codi de bloqueig d'usuari Z-Wave"
+            }
         },
         "get_zwave_parameter": {
-            "description": "Sol\u00b7licita un par\u00e0metre de dispositiu Z-Wave mitjan\u00e7ant l'ISY. El valor del par\u00e0metre es retornar\u00e0 com a atribut d'estat addicional de l'entitat amb el nom \"ZW_#\" on \"#\" \u00e9s el n\u00famero del par\u00e0metre.",
             "fields": {
                 "parameter": {
                     "description": "N\u00famero de par\u00e0metre a obtenir del dispositiu.",
@@ -69,17 +65,14 @@
             "name": "Obt\u00e9 par\u00e0metre Z-Wave"
         },
         "rename_node": {
-            "description": "Canvia el nom d'un node o grup (escena) de l'ISY. Nota: aix\u00f2 no canviar\u00e0 autom\u00e0ticament el nom o l'ID d'entitat de Home Assistant perqu\u00e8 coincideixi. El nom i l'ID d'entitat nom\u00e9s s'actualitzaran despr\u00e9s de tornar a carregar la integraci\u00f3 o de reiniciar Home Assistant, i NOM\u00c9S SI encara no has personalitzat el nom a Home Assistant.",
             "fields": {
                 "name": {
                     "description": "Nou nom a utilitzar de l'ISY.",
                     "name": "Nou nom"
                 }
-            },
-            "name": "Canvia el nom del node d'ISY"
+            }
         },
         "send_node_command": {
-            "description": "Envia una comanda a un dispositiu ISY mitjan\u00e7ant el seu ID d'entitat de Home Assistant. Les comandes v\u00e0lides s\u00f3n: beep, brighten, dim, disable, enable, fade_down, fade_stop, fade_up, fast_off, fast_on i query.",
             "fields": {
                 "command": {
                     "description": "Comanda a enviar al dispositiu.",
@@ -114,7 +107,6 @@
             "description": "Configuraci\u00f3 de les opcions per a la integraci\u00f3 ISY: \n \u2022 String de Sensor Node: qualsevol dispositiu o carpeta que contingui 'String de Sensor Node' dins el nom ser\u00e0 tractat com a un sensor o sensor binari. \n \u2022 String Ignora: qualsevol dispositiu amb 'String Ignora' dins el nom ser\u00e0 ignorat. \n \u2022 String de Sensor Variable: qualsevol variable que contingui 'String de Sensor Variable' s'afegir\u00e0 com a un sensor.  \n \u2022 Restaura la lluminositat del llum: si est\u00e0 activat, en encendre un llum es restablir\u00e0 la lluminositat anterior en lloc del valor integrat dins el dispositiu.",
             "fields": {
                 "command": {
-                    "description": "Comanda REST d'ISY a enviar al dispositiu.",
                     "name": "Comanda"
                 },
                 "parameters": {
@@ -122,7 +114,6 @@
                     "name": "Par\u00e0metres"
                 },
                 "unit_of_measurement": {
-                    "description": "Unitat de mesura (UOM) ISY a enviar amb la comanda, si cal.",
                     "name": "Unitat de mesura"
                 },
                 "value": {
@@ -133,7 +124,6 @@
             "name": "Envia comanda de node sense processar"
         },
         "set_zwave_lock_user_code": {
-            "description": "Configura un codi de bloqueig d'usuari Z-Wave a trav\u00e9s d'ISY.",
             "fields": {
                 "code": {
                     "description": "Codi a configurar per a l'usuari.",
@@ -143,11 +133,9 @@
                     "description": "N\u00famero de la ranura d'usuari al pany.",
                     "name": "N\u00famero d'usuari"
                 }
-            },
-            "name": "Configura codi de bloqueig d'usuari Z-Wave"
+            }
         },
         "set_zwave_parameter": {
-            "description": "Actualitza un par\u00e0metre de dispositiu Z-Wave mitjan\u00e7ant l'ISY. El valor del par\u00e0metre tamb\u00e9 es retornar\u00e0 com a atribut d'estat addicional de l'entitat amb el nom \"ZW_#\" on \"#\" \u00e9s el n\u00famero del par\u00e0metre.",
             "fields": {
                 "parameter": {
                     "description": "N\u00famero del par\u00e0metre del dispositiu final a establir.",
@@ -161,8 +149,7 @@
                     "description": "Valor del par\u00e0metre a establir. Pot ser un nombre enter o una cadena de bytes (per exemple, \"0xFFFF\").",
                     "name": "Valor"
                 }
-            },
-            "name": "Configura par\u00e0metre Z-Wave"
+            }
         }
     },
     "system_health": {

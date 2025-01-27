@@ -12,7 +12,6 @@
             "description": "Respon a una petici\u00f3 'callback' originada al clicar una tecla/bot\u00f3 de resposta del xat. La resposta es mostrar\u00e0 a l'usuari com una notificaci\u00f3 a la part superior de la pantalla del xat o com una alerta.",
             "fields": {
                 "callback_query_id": {
-                    "description": "Identificador \u00fanic de la resposta 'callback'.",
                     "name": "ID de petici\u00f3 del 'callback'"
                 },
                 "message": {
@@ -30,11 +29,9 @@
             "description": "Elimina un missatge enviat anteriorment.",
             "fields": {
                 "chat_id": {
-                    "description": "chat_id on eliminar el missatge.",
                     "name": "ID de xat"
                 },
                 "message_id": {
-                    "description": "ID del missatge a eliminar.",
                     "name": "ID del missatge"
                 }
             },
@@ -48,7 +45,6 @@
                     "name": "T\u00edtol"
                 },
                 "chat_id": {
-                    "description": "chat_id on editar el t\u00edtol.",
                     "name": "ID de xat"
                 },
                 "inline_keyboard": {
@@ -66,7 +62,6 @@
             "description": "Edita un missatge enviat anteriorment.",
             "fields": {
                 "chat_id": {
-                    "description": "chat_id on editar el missatge.",
                     "name": "ID de xat"
                 },
                 "disable_web_page_preview": {
@@ -82,7 +77,6 @@
                     "name": "Missatge"
                 },
                 "message_id": {
-                    "description": "ID del missatge a editar.",
                     "name": "ID del missatge"
                 },
                 "parse_mode": {
@@ -97,10 +91,8 @@
             "name": "Edita el missatge"
         },
         "edit_replymarkup": {
-            "description": "Edita les tecles de resposta d'un missatge enviat anteriorment.",
             "fields": {
                 "chat_id": {
-                    "description": "chat_id on editar reply_markup.",
                     "name": "ID de xat"
                 },
                 "inline_keyboard": {
@@ -261,7 +253,6 @@
                     "name": "Etiqueta del missatge"
                 },
                 "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar la ubicaci\u00f3. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
                 },
                 "timeout": {
@@ -302,7 +293,6 @@
                     "name": "Mode d'an\u00e0lisi"
                 },
                 "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar la notificaci\u00f3. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
                 },
                 "title": {
@@ -352,7 +342,6 @@
                     "name": "Contrasenya"
                 },
                 "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
                     "name": "Objectiu"
                 },
                 "url": {

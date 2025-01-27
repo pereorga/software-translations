@@ -27,14 +27,14 @@
             "name": "Put paramset"
         },
         "reconnect": {
-            "description": "Reconnects to all Homematic Hubs.",
+            "description": "Reconnects to all Homematic hubs.",
             "name": "Reconnect"
         },
         "set_device_value": {
             "description": "Sets a device property on RPC XML interface.",
             "fields": {
                 "address": {
-                    "description": "Address of homematic device or BidCoS-RF for virtual remote.",
+                    "description": "Address of Homematic device or BidCoS-RF for virtual remote.",
                     "name": "Address"
                 },
                 "channel": {
@@ -61,10 +61,10 @@
             "name": "Set device value"
         },
         "set_install_mode": {
-            "description": "Set a RPC XML interface into installation mode.",
+            "description": "Sets a RPC XML interface into installation mode.",
             "fields": {
                 "address": {
-                    "description": "Address of homematic device or BidCoS-RF to learn.",
+                    "description": "Address of Homematic device or BidCoS-RF to learn.",
                     "name": "Address"
                 },
                 "interface": {
@@ -86,7 +86,7 @@
             "description": "Sets the name of a node.",
             "fields": {
                 "entity_id": {
-                    "description": "Name(s) of homematic central to set value.",
+                    "description": "Name(s) of Homematic central to set value.",
                     "name": "Entity"
                 },
                 "name": {
@@ -104,7 +104,7 @@
             "description": "Presses a virtual key from CCU/Homegear or simulate keypress.",
             "fields": {
                 "address": {
-                    "description": "Address of homematic device or BidCoS-RF for virtual remote.",
+                    "description": "Address of Homematic device or BidCoS-RF for virtual remote.",
                     "name": "Address"
                 },
                 "channel": {

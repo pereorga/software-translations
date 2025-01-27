@@ -185,25 +185,25 @@
     },
     "services": {
         "set_breeze": {
-            "description": "Set the breeze function of the ventilation system",
+            "description": "Sets the Breeze function of the ventilation system",
             "fields": {
                 "activate": {
-                    "description": "Activate or disable the breeze feature",
+                    "description": "Activate or disable the Breeze feature",
                     "name": "Activate"
                 },
                 "breeze_level": {
-                    "description": "Ventilation level when breeze function is activated",
+                    "description": "Ventilation level when Breeze function is activated",
                     "name": "Level"
                 },
                 "temperature": {
-                    "description": "Temperature when the breeze function should be activated",
+                    "description": "Temperature when the Breeze function should be activated",
                     "name": "Temperature"
                 }
             },
-            "name": "Set breeze"
+            "name": "Set Breeze"
         },
         "set_pollution_settings": {
-            "description": "Set all the pollution settings of the ventilation system",
+            "description": "Sets all the pollution settings of the ventilation system",
             "fields": {
                 "airquality_control": {
                     "description": "Activate or disable the air quality control",
@@ -214,16 +214,16 @@
                     "name": "Enable CO2 control"
                 },
                 "co2_hysteresis": {
-                    "description": "Sets the CO2 pollution threshold hysteresis level in ppm",
+                    "description": "The CO2 pollution threshold hysteresis level in ppm",
                     "name": "CO2 hysteresis"
                 },
                 "co2_threshold": {
-                    "description": "Sets the CO2 pollution threshold level in ppm",
+                    "description": "The CO2 pollution threshold level in ppm",
                     "name": "CO2 threshold"
                 },
                 "day_pollution_level": {
                     "description": "Ventilation level when pollution is detected in the day",
-                    "name": "Day pollution Level"
+                    "name": "Day pollution level"
                 },
                 "humidity_control": {
                     "description": "Activate or disable the humidity control",
@@ -231,20 +231,20 @@
                 },
                 "night_pollution_level": {
                     "description": "Ventilation level when pollution is detected in the night",
-                    "name": "Night pollution Level"
+                    "name": "Night pollution level"
                 }
             },
             "name": "Set pollution settings"
         },
         "set_timer_level": {
-            "description": "Set the ventilation timer",
+            "description": "Sets the ventilation timer",
             "fields": {
                 "minutes": {
-                    "description": "Time of the timer (0 will disable the timer)",
+                    "description": "Duration of the timer (0 will disable the timer)",
                     "name": "Time"
                 },
                 "timer_level": {
-                    "description": "Level setting",
+                    "description": "Ventilation level",
                     "name": "Level"
                 }
             },

@@ -21,8 +21,8 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "acknowledge": "Retry sendig commands if no response is received (increases bus traffic).",
-                    "dim_mode": "The number of steps used for dimming outputs."
+                    "acknowledge": "Retry sendig commands if no expected response is received from modules (increases bus traffic).",
+                    "dim_mode": "The number of steps used for dimming outputs of all LCN modules."
                 },
                 "description": "Reconfigure connection to LCN host.",
                 "title": "Reconfigure LCN host"
@@ -39,11 +39,11 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "acknowledge": "Retry sendig commands if no response is received (increases bus traffic).",
-                    "dim_mode": "The number of steps used for dimming outputs."
+                    "acknowledge": "Retry sendig commands if no expected response is received from modules (increases bus traffic).",
+                    "dim_mode": "The number of steps used for dimming outputs of all LCN modules."
                 },
                 "description": "Set up new connection to LCN host.",
-                "title": "Setup LCN host"
+                "title": "Set up LCN host"
             }
         }
     },
@@ -75,15 +75,15 @@
     },
     "issues": {
         "deprecated_address_parameter": {
-            "description": "The 'address' parameter in the LCN action calls is deprecated. The 'device_id' parameter should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "description": "The 'address' parameter in the LCN action calls is deprecated. The 'device ID' parameter should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
             "title": "Deprecated 'address' parameter"
         },
         "deprecated_keylock_sensor": {
-            "description": "Your LCN key lock binary sensor entity `{entity}` is beeing used in automations or scripts. A key lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "description": "Your LCN key lock binary sensor entity `{entity}` is being used in automations or scripts. A key lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
             "title": "Deprecated LCN key lock binary sensor"
         },
         "deprecated_regulatorlock_sensor": {
-            "description": "Your LCN regulator lock binary sensor entity `{entity}` is beeing used in automations or scripts. A regulator lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "description": "Your LCN regulator lock binary sensor entity `{entity}` is being used in automations or scripts. A regulator lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
             "title": "Deprecated LCN regulator lock binary sensor"
         }
     },
@@ -118,7 +118,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "row": {
@@ -140,7 +140,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "led": {
@@ -162,7 +162,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "state": {
@@ -192,7 +192,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "setpoint": {
@@ -218,7 +218,7 @@
                     "name": "Brightness"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "output": {
@@ -244,7 +244,7 @@
                     "name": "Brightness"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "output": {
@@ -262,7 +262,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "output": {
@@ -284,7 +284,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "pck": {
@@ -302,7 +302,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "state": {
@@ -320,7 +320,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "keys": {
@@ -350,7 +350,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "unit_of_measurement": {
@@ -376,7 +376,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "unit_of_measurement": {
@@ -406,7 +406,7 @@
                     "name": "Address"
                 },
                 "device_id": {
-                    "description": "The device_id of the LCN module or group.",
+                    "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "variable": {

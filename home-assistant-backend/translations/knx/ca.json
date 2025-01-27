@@ -32,6 +32,7 @@
                 "data_description": {
                     "host": "Adre\u00e7a IP o nom d'amfitri\u00f3 del dispositiu de tunelitzaci\u00f3 KNX/IP.",
                     "local_ip": "IP local o nom de la interf\u00edcie utilitzada per a la connexi\u00f3 des de Home Assistant. Deixa-ho en blanc per utilitzar el descobriment autom\u00e0tic.",
+                    "port": "Port utilitzat pel dispositiu de tunelitzaci\u00f3 KNX/IP.",
                     "route_back": "Activa-ho si el teun servidor de tunelitzaci\u00f3 KNXnet/IP est\u00e0 darrere una NAT. Nom\u00e9s s'aplica a connexions UDP."
                 },
                 "description": "Introdueix la informaci\u00f3 de connexi\u00f3 del dispositiu de t\u00fanel.",
@@ -46,7 +47,8 @@
                 },
                 "data_description": {
                     "individual_address": "Adre\u00e7a KNX per utilitzar amb Home Assistant, p. ex. `0.0.4`",
-                    "local_ip": "IP local o nom de la interf\u00edcie utilitzada per a la connexi\u00f3 des de Home Assistant. Deixa-ho en blanc per utilitzar el descobriment autom\u00e0tic."
+                    "local_ip": "IP local o nom de la interf\u00edcie utilitzada per a la connexi\u00f3 des de Home Assistant. Deixa-ho en blanc per utilitzar el descobriment autom\u00e0tic.",
+                    "multicast_port": "Port de multidifusi\u00f3 utilitzat per la teva instal\u00b7laci\u00f3. Valor predeterminat: `3671`."
                 },
                 "description": "Configura les opcions d'encaminament.",
                 "title": "Encaminament"
@@ -159,7 +161,6 @@
                     "telegram_log_size": "L\u00edmit de l'historial de telegrames"
                 },
                 "data_description": {
-                    "state_updater": "Configuraci\u00f3 predeterminadament per llegir els estats del bus KNX. Si est\u00e0 desactivat, Home Assistant no obtindr\u00e0 activament els estats del bus KNX. Les opcions d'entitat `sync_state` poden substituir-ho.",
                     "telegram_log_size": "Nombre de telegrames a desar en mem\u00f2ria del monitor de grup de panells KNX. M\u00e0xim: {telegram_log_size_max}"
                 },
                 "title": "Configuraci\u00f3 de la comunicaci\u00f3"
@@ -195,7 +196,7 @@
                 "data_description": {
                     "host": "Adre\u00e7a IP o nom d'amfitri\u00f3 del dispositiu de tunelitzaci\u00f3 KNX/IP.",
                     "local_ip": "IP local o nom de la interf\u00edcie utilitzada per a la connexi\u00f3 des de Home Assistant. Deixa-ho en blanc per utilitzar el descobriment autom\u00e0tic.",
-                    "port": "Port del dispositiu de tunelitzaci\u00f3 KNX/IP.",
+                    "port": "Port utilitzat pel dispositiu de tunelitzaci\u00f3 KNX/IP.",
                     "route_back": "Activa-ho si el teun servidor de tunelitzaci\u00f3 KNXnet/IP est\u00e0 darrere una NAT. Nom\u00e9s s'aplica a connexions UDP."
                 },
                 "description": "Introdueix la informaci\u00f3 de connexi\u00f3 del dispositiu de t\u00fanel.",
@@ -211,7 +212,8 @@
                 },
                 "data_description": {
                     "individual_address": "Adre\u00e7a KNX per utilitzar amb Home Assistant, p. ex. `0.0.4`",
-                    "local_ip": "IP local o nom de la interf\u00edcie utilitzada per a la connexi\u00f3 des de Home Assistant. Deixa-ho en blanc per utilitzar el descobriment autom\u00e0tic."
+                    "local_ip": "IP local o nom de la interf\u00edcie utilitzada per a la connexi\u00f3 des de Home Assistant. Deixa-ho en blanc per utilitzar el descobriment autom\u00e0tic.",
+                    "multicast_port": "Port de multidifusi\u00f3 utilitzat per la teva instal\u00b7laci\u00f3. Valor predeterminat: `3671`."
                 },
                 "description": "Configura les opcions d'encaminament.",
                 "title": "Encaminament"

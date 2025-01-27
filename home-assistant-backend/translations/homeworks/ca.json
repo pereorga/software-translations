@@ -123,14 +123,11 @@
     },
     "services": {
         "send_command": {
-            "description": "Envia una comanda personalitzada a un controlador",
             "fields": {
                 "command": {
-                    "description": "Comanda a enviar al controlador. Pot ser una comanda \u00fanica o una llista de comandes.",
                     "name": "Comanda"
                 },
                 "controller_id": {
-                    "description": "Controlador al qual enviar la comanda.",
                     "name": "ID del controlador"
                 }
             },

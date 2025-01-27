@@ -28,7 +28,7 @@
                 "data_description": {
                     "path": "The RPC request target path. E.g. `/transmission/rpc`"
                 },
-                "title": "Set up Transmission Client"
+                "title": "Set up Transmission client"
             }
         }
     },
@@ -98,7 +98,7 @@
                     "name": "Download path"
                 },
                 "entry_id": {
-                    "description": "Config entry id.",
+                    "description": "ID of the config entry to use.",
                     "name": "Transmission entry"
                 },
                 "torrent": {
@@ -116,7 +116,7 @@
                     "name": "Delete data"
                 },
                 "entry_id": {
-                    "description": "Config entry id.",
+                    "description": "ID of the config entry to use.",
                     "name": "Transmission entry"
                 },
                 "id": {
@@ -130,7 +130,7 @@
             "description": "Starts a torrent.",
             "fields": {
                 "entry_id": {
-                    "description": "Config entry id.",
+                    "description": "ID of the config entry to use.",
                     "name": "Transmission entry"
                 },
                 "id": {
@@ -144,7 +144,7 @@
             "description": "Stops a torrent.",
             "fields": {
                 "entry_id": {
-                    "description": "Config entry id.",
+                    "description": "ID of the config entry to use.",
                     "name": "Transmission entry"
                 },
                 "id": {

@@ -15,7 +15,7 @@
                     "password": "Password"
                 },
                 "description": "The password for {username} is no longer valid.",
-                "title": "Reauthenticate your Flume Account"
+                "title": "Reauthenticate your Flume account"
             },
             "user": {
                 "data": {
@@ -25,7 +25,7 @@
                     "username": "Username"
                 },
                 "description": "In order to access the Flume Personal API, you will need to request a 'Client ID' and 'Client Secret' at https://portal.flumetech.com/settings#token",
-                "title": "Connect to your Flume Account"
+                "title": "Connect to your Flume account"
             }
         }
     },
@@ -64,10 +64,10 @@
     },
     "services": {
         "list_notifications": {
-            "description": "Return user notifications.",
+            "description": "Returns a list of fetched user notifications.",
             "fields": {
                 "config_entry": {
-                    "description": "The flume config entry for which to return notifications.",
+                    "description": "The Flume config entry for which to return notifications.",
                     "name": "Flume"
                 }
             },
