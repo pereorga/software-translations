@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 08:04+0000\n"
+"POT-Creation-Date: 2025-02-03 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,15 +12,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.12.2\n"
 
-#: TouchpadPrefView
-msgid "Scrolling"
-msgstr "Desplaçament"
-
 #: InputMouse
 msgctxt "InputMouse"
 "InputMouse"
 msgid "Defaults"
 msgstr "Valors predeterminats"
+
+#: TouchpadPrefView
+msgid "Scrolling"
+msgstr "Desplaçament"
 
 #: KeyboardView
 msgid "Long"
@@ -30,18 +30,10 @@ msgstr "Llarg"
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: SettingsView
-msgid "4-Button"
-msgstr "Botó 4"
-
 #: TouchpadPrefView
 msgctxt "TouchpadPrefView"
 msgid "Slow"
 msgstr "Lent"
-
-#: TouchpadPrefView
-msgid "Tapping sensitivity"
-msgstr "Sensibilitat del toc"
 
 #: InputWindow
 msgid "Device List"
@@ -59,20 +51,95 @@ msgstr "Botó 5"
 msgid "Typing test area"
 msgstr "Àrea de prova per al tecleig"
 
-#: SettingsView
-msgid "Mouse type:"
-msgstr "Tipus de ratolí:"
+#: KeyboardView
+msgctxt "KeyboardView"
+msgid "Fast"
+msgstr "Ràpid"
 
-#: InputKeyboard
-msgctxt "InputKeyboard"
-"InputKeyboard"
+#: TouchpadPrefView
+msgid "Please confirm"
+msgstr "Confirmeu-ho, si us plau"
+
+#: SettingsView
+msgid "Mouse speed"
+msgstr "Velocitat del ratolí"
+
+#: TouchpadPrefView
+msgid "Horizontal scrolling"
+msgstr "Desplaçament horitzontal"
+
+#: TouchpadPrefView
+msgid "Keyboard lock delay"
+msgstr "Retard del blocatge del teclat"
+
+#: System+name
+msgid "Input"
+msgstr "Entrada"
+
+#: TouchpadPrefView
+msgid "Quick"
+msgstr "Ràpid"
+
+#: KeyboardView
+msgid "Short"
+msgstr "Curt"
+
+#: InputMouse
+msgctxt "InputMouse"
+"InputMouse"
 msgid "Revert"
 msgstr "Reverteix"
 
 #: KeyboardView
 msgctxt "KeyboardView"
-msgid "Fast"
-msgstr "Ràpid"
+msgid "Slow"
+msgstr "Lent"
+
+#: SettingsView
+msgid "2-Button"
+msgstr "2 botons"
+
+#: SettingsView
+msgid "Click to focus and raise"
+msgstr "Clic per al focus i l'alçament"
+
+#: TouchpadPrefView
+msgid "Vertical"
+msgstr "Vertical"
+
+#: SettingsView
+msgid "Focus follows mouse"
+msgstr "El focus segueix el ratolí"
+
+#: SettingsView
+msgid "Double-click test area"
+msgstr "Àrea de prova per al clic doble"
+
+#: SettingsView
+msgid "Focus mode:"
+msgstr "Mode del focus:"
+
+#: TouchpadPrefView
+msgctxt "TouchpadPrefView"
+msgid "Revert"
+msgstr "Reverteix"
+
+#: SettingsView
+msgid "4-Button"
+msgstr "Botó 4"
+
+#: TouchpadPrefView
+msgid "Tapping sensitivity"
+msgstr "Sensibilitat del toc"
+
+#: InputKeyboard
+msgctxt "InputKeyboard"
+msgid "Revert"
+msgstr "Reverteix"
+
+#: SettingsView
+msgid "Mouse type:"
+msgstr "Tipus de ratolí:"
 
 #: TouchpadPrefView
 msgid "Off"
@@ -91,10 +158,6 @@ msgstr "Ràpid"
 msgid "6-Button"
 msgstr "Botó 6"
 
-#: TouchpadPrefView
-msgid "Please confirm"
-msgstr "Confirmeu-ho, si us plau"
-
 #: SettingsView
 msgid "Click to focus"
 msgstr "Clic per al focus"
@@ -104,10 +167,6 @@ msgid "Acceleration"
 msgstr "Acceleració"
 
 #: SettingsView
-msgid "Mouse speed"
-msgstr "Velocitat del ratolí"
-
-#: SettingsView
 msgid "Accept first click"
 msgstr "Accepta el primer clic"
 
@@ -115,29 +174,13 @@ msgstr "Accepta el primer clic"
 msgid "OK"
 msgstr "D'acord"
 
-#: TouchpadPrefView
-msgid "Horizontal scrolling"
-msgstr "Desplaçament horitzontal"
-
 #: KeyboardView
 msgid "Delay until key repeat"
 msgstr "Retard fins a la repetició de tecla"
 
 #: TouchpadPrefView
-msgid "Keyboard lock delay"
-msgstr "Retard del blocatge del teclat"
-
-#: TouchpadPrefView
 msgid "Two finger scrolling"
 msgstr "Desplaçament amb dos dits"
-
-#: System+name
-msgid "Input"
-msgstr "Entrada"
-
-#: SettingsView
-msgid "Mouse acceleration"
-msgstr "Acceleració del ratolí"
 
 #: TouchpadPrefView
 msgid ""
@@ -146,6 +189,10 @@ msgid ""
 msgstr ""
 "L'àrea de desplaçament nova és molt grossa i pot impedir el funcionament "
 "normal del ratolí. Realment voleu canviar-ho?"
+
+#: SettingsView
+msgid "Mouse acceleration"
+msgstr "Acceleració del ratolí"
 
 #: TouchpadPrefView
 msgid "High"
@@ -165,61 +212,14 @@ msgctxt "InputKeyboard"
 msgid "Defaults"
 msgstr "Valors predeterminats"
 
-#: TouchpadPrefView
-msgid "Quick"
-msgstr "Ràpid"
-
-#: KeyboardView
-msgid "Short"
-msgstr "Curt"
-
-#: KeyboardView
-msgctxt "KeyboardView"
-msgid "Slow"
-msgstr "Lent"
-
-#: InputMouse
-msgctxt "InputMouse"
-msgid "Revert"
-msgstr "Reverteix"
-
 #: KeyboardView
 msgid "Key repeat rate"
 msgstr "Freqüència de repetició de tecla"
-
-#: SettingsView
-msgid "2-Button"
-msgstr "2 botons"
-
-#: SettingsView
-msgid "Click to focus and raise"
-msgstr "Clic per al focus i l'alçament"
-
-#: TouchpadPrefView
-msgid "Vertical"
-msgstr "Vertical"
 
 #: TouchpadPrefView
 msgid "Horizontal"
 msgstr "Horitzontal"
 
 #: SettingsView
-msgid "Focus follows mouse"
-msgstr "El focus segueix el ratolí"
-
-#: SettingsView
-msgid "Focus mode:"
-msgstr "Mode del focus:"
-
-#: SettingsView
-msgid "Double-click test area"
-msgstr "Àrea de prova per al clic doble"
-
-#: SettingsView
 msgid "3-Button"
 msgstr "3 botons"
-
-#: TouchpadPrefView
-msgctxt "TouchpadPrefView"
-msgid "Revert"
-msgstr "Reverteix"
