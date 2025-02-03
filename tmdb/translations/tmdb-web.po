@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 08:04+0000\n"
+"POT-Creation-Date: 2025-02-03 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1221,6 +1221,7 @@ msgstr "Pel·lícules"
 
 #: Name
 msgctxt "Name"
+"Name"
 "Name"
 "Name"
 msgid "Name"
@@ -2891,6 +2892,38 @@ msgstr "Afegiu %{media_title} a una de les vostres llistes..."
 #: already_translated_in
 msgid "%{page_title} is already translated in the following languages..."
 msgstr "%{page_title} ja s'ha traduït a les llengües següents..."
+
+#: api_for_business-%3Eform-%3Ecompany_name-%3Elabel
+msgid "Company Name"
+msgstr ""
+
+#: api_for_business-%3Eform-%3Ecompany_url-%3Elabel
+msgid "Company URL"
+msgstr ""
+
+#: api_for_business-%3Eform-%3Edescription-%3Elabel
+msgid "Describe what you're looking to do with our API"
+msgstr ""
+
+#: api_for_business-%3Eform-%3Eemail-%3Eerror
+msgctxt "api_for_business->form->email->error"
+msgid "is not properly formatted"
+msgstr "no té un format adequat"
+
+#: api_for_business-%3Eform-%3Eemail-%3Elabel
+msgctxt "api_for_business->form->email->label"
+msgid "Your email address"
+msgstr "La vostra adreça de correu"
+
+#: api_for_business-%3Eform-%3Eerror
+msgctxt "api_for_business->form->error"
+msgid "cannot be blank"
+msgstr "no pot estar en blanc"
+
+#: api_for_business-%3Eform-%3Ename-%3Elabel
+msgctxt "api_for_business->form->name->label"
+msgid "Name"
+msgstr ""
 
 #: api_session-%3E3rd_party_request
 msgid "3rd Party Authentication Request"
@@ -7461,16 +7494,19 @@ msgid "Electronic signature"
 msgstr "Firma electrònica"
 
 #: dmca_takedown-%3Eform-%3Eemail-%3Eerror
+msgctxt "dmca_takedown->form->email->error"
 msgid "is not properly formatted"
 msgstr "no té un format adequat"
 
 #: dmca_takedown-%3Eform-%3Eemail-%3Elabel
+msgctxt "dmca_takedown->form->email->label"
 msgid "Your email address"
 msgstr "La vostra adreça de correu"
 
 #: dmca_takedown-%3Eform-%3Eerror
-msgid "Cannot be blank"
-msgstr "No pot estar en blanc"
+msgctxt "dmca_takedown->form->error"
+msgid "cannot be blank"
+msgstr "no pot estar en blanc"
 
 #: dmca_takedown-%3Eform-%3Eerror_checkbox
 msgid "Must be checked"
