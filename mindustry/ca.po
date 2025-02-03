@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 08:08+0000\n"
+"POT-Creation-Date: 2025-02-03 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4696,6 +4696,10 @@ msgstr "Només es permet depositar al nucli."
 msgid "Better Drill Required"
 msgstr "Cal una perforadora millor."
 
+#: bar.nobatterypower
+msgid "Insufficient Battery Power"
+msgstr "Insufficieny Battery Power"
+
 #: bar.noresources
 msgid "Missing Resources"
 msgstr "Falten recursos."
@@ -4727,6 +4731,10 @@ msgstr "Eficiència: {0} %"
 #: bar.boost
 msgid "Boost: +{0}%"
 msgstr "Potenciador: +{0} %"
+
+#: bar.powerbuffer
+msgid "Batteries: {0}/{1}"
+msgstr "Battery Power: {0}/{1}"
 
 #: bar.powerbalance
 msgid "Power: {0}/s"
@@ -7003,7 +7011,7 @@ msgid "Container"
 msgstr "Contenidor"
 
 #: block.launch-pad.name
-msgid "Launch Pad"
+msgid "Launch Pad [lightgray](Legacy)"
 msgstr "Plataforma de llançament"
 
 #: block.ground-factory.name
@@ -8986,7 +8994,7 @@ msgstr ""
 #: block.overdrive-projector.description
 msgid ""
 "Increases the speed of nearby buildings.\n"
-"Optionally uses phase fabric to boost range and efficiency."
+"Optionally uses phase fabric to boost range and efficiency. Does not stack."
 msgstr ""
 "Augmenta la velocitat de les estructures properes.\n"
 "També es pot usar teixit de fase per a millorar-ne l’abast i eficiència."
@@ -9398,14 +9406,6 @@ msgstr "Descarrega els elements seleccionats dels blocs adjacents."
 msgid "Launches batches of items to selected sectors."
 msgstr "Llança lots d’elements al sector seleccionat."
 
-#: block.launch-pad.details
-msgid ""
-"Sub-orbital system for point-to-point transportation of resources. Payload "
-"pods are fragile and incapable of surviving re-entry."
-msgstr ""
-"Sistema suborbital de transport de recursos punt a punt. Les càpsules de "
-"càrrega només sobreviuen una sola reentrada i no es poden reutilitzar."
-
 #: block.duo.description
 msgid "Fires alternating bullets at enemies."
 msgstr "Dispara munició als enemics."
@@ -9527,7 +9527,7 @@ msgstr ""
 #: block.overdrive-dome.description
 msgid ""
 "Increases the speed of nearby buildings. Requires phase fabric and silicon "
-"to operate."
+"to operate. Does not stack."
 msgstr ""
 "Augmenta la velocitat de funcionament d’estructures properes. Necessita "
 "teixit de fase i silici per a operar."
