@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-27 08:04+0000\n"
+"POT-Creation-Date: 2025-02-10 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -656,7 +656,11 @@ msgstr ""
 "Cancel·lar per a introduir la clau d'accés"
 
 #.
-#. PAPasscode Strings that we need to localize for them
+#. Passcode Strings that we need to localize for them
+#: Set+Passcode
+msgid "Set Passcode"
+msgstr "Estableix la nova clau d'accés"
+
 #: Enter+Passcode
 msgid "Enter Passcode"
 msgstr "Introduïu la clau d'accés"
@@ -664,6 +668,10 @@ msgstr "Introduïu la clau d'accés"
 #: Enter+a+passcode
 msgid "Enter a passcode"
 msgstr "Entra una clau d'accés"
+
+#: Enter+your+passcode
+msgid "Enter your passcode"
+msgstr ""
 
 #: Passcodes+did+not+match.+Try+again.
 msgid "Passcodes did not match. Try again."
@@ -673,33 +681,17 @@ msgstr "Les claus d'accés no coincideixen. Intenta-ho de nou."
 msgid "Re-enter your passcode"
 msgstr "Repeteix la clau d'accés"
 
-#: Set+Passcode
-msgid "Set Passcode"
-msgstr "Estableix la nova clau d'accés"
-
-#: PASSCODE_LENGTH
-msgid "Passcode Length"
+#: Passcode+Options
+msgid "Passcode Options"
 msgstr ""
 
-#: PASSCODE_LENGTH_LONG
-msgid "Select the preferred length of your new passcode"
-msgstr ""
-
-#: PASSCODE_4
-msgid "4 digits"
-msgstr ""
-
-#: PASSCODE_6
-msgid "6 digits"
-msgstr ""
-
-#: Settings
+#: 4-Digit+Numeric+Code
 msgid ""
-"Settings\"; // plain text key to keep compatibility with InAppSettingsKit's "
-"upstream\"ON\" = \"On"
-msgstr ""
-"Paràmetres\"; // plain text key to keep compatibility with "
+"4-Digit Numeric Code\"; /* Passcode 4 digit numeric code */\"6-Digit Numeric "
+"Code\" = \"6-Digit Numeric Code\"; /* Passcode 6 digit numeric code */"
+"\"Settings\" = \"Settings\"; // plain text key to keep compatibility with "
 "InAppSettingsKit's upstream\"ON\" = \"On"
+msgstr ""
 
 #: EMPTY_LIBRARY
 msgid "Empty Media Library"
@@ -2352,4 +2344,18 @@ msgstr ""
 
 #: APPINTENT_PLAY_MEDIA_PLAY_%24%7BmediaName%7D
 msgid "Play ${mediaName} in the background"
+msgstr ""
+
+#.
+#. MARK: - VerticalSliderControl Strings
+#: VERTICAL_SLIDER_CONTROL_ACCESSIBILITY_LABEL
+msgid "Vertical slider"
+msgstr ""
+
+#: VERTICAL_SLIDER_CONTROL_INCREMENT_ACTION
+msgid "Increment"
+msgstr ""
+
+#: VERTICAL_SLIDER_CONTROL_DECREMENT_ACTION
+msgid "Decrement"
 msgstr ""
