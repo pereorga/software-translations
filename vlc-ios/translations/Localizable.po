@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:05+0000\n"
+"POT-Creation-Date: 2025-02-17 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -769,6 +769,14 @@ msgstr "Depuració a velocitat 1/4"
 msgid "Fine Scrubbing"
 msgstr "Depuració fina"
 
+#: PLAYBACK_SCRUB_TOTAL_TIME_FORMAT
+msgid ""
+"%@ elapsed, total duration %@\"; /* 1: elapsed time, 2: total time */"
+"\"PLAYBACK_SCRUB_REMAINING_TIME_FORMAT\" = \"%@ elapsed, %@\"; /* 1: elapsed "
+"time, 2: remaining time */\"PLAYBACK_SCRUB_ACCESSIBILITY_TIME_DISPLAY\" = "
+"\"Time Display"
+msgstr ""
+
 #: PLAYBACK_POSITION
 msgid "Playback Position"
 msgstr "Posició de reproducció"
@@ -1522,7 +1530,7 @@ msgstr "Interfície DVD"
 
 #: ROTATION_LOCK_BUTTON
 msgid "Rotation lock"
-msgstr "Bloqueig de la rotació"
+msgstr "Bloqueig de gir"
 
 #: ROTATION_LOCK_HINT
 msgid "Lock video to current orientation"
@@ -1654,6 +1662,15 @@ msgstr "Més"
 #: MORE_OPTIONS_HINT
 msgid "View more option controls"
 msgstr "Veure més controls d'opcions"
+
+#: PLAYBACK_CONTROLS_BAR_TITLE
+msgctxt "PLAYBACK_CONTROLS_BAR_TITLE"
+msgid "Playback controls"
+msgstr ""
+
+#: PLAYBACK_CONTROLS_BAR_HINT
+msgid "Pause, seek, next chapter"
+msgstr ""
 
 #: PLAYER_WARNING_SUBTITLE_CAST_TITLE
 msgid "Subtitles unsupported"
@@ -2022,8 +2039,9 @@ msgstr "Llisca verticalment per modificar el nivell de volum"
 #.
 #. MARK: - AudioMiniPlayer playback controls menu
 #: MENU_PLAYBACK_CONTROLS
+msgctxt "MENU_PLAYBACK_CONTROLS"
 msgid "Playback controls"
-msgstr "Controls de la reproducció"
+msgstr "Controls de reproducció"
 
 #: MENU_REPEAT_DISABLED
 msgid "Do not repeat"
@@ -2272,44 +2290,8 @@ msgstr "Disminueix la velocitat de reproducció"
 msgid "Reset playback speed"
 msgstr "Restaura la velocitat de reproducció"
 
-#: KEY_SEEK_TO_10_PERCENT
-msgid "Seek to 10% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_20_PERCENT
-msgid "Seek to 20% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_30_PERCENT
-msgid "Seek to 30% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_40_PERCENT
-msgid "Seek to 40% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_50_PERCENT
-msgid "Seek to 50% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_60_PERCENT
-msgid "Seek to 60% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_70_PERCENT
-msgid "Seek to 70% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_80_PERCENT
-msgid "Seek to 80% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_90_PERCENT
-msgid "Seek to 90% of duration"
-msgstr ""
-
-#: KEY_SEEK_TO_START
-msgid "Seek to beginning of video"
+#: KEY_SEEK_TO_%5C(number+%2A+10)_PERCENT
+msgid "KEY_SEEK_TO_(number * 10)_PERCENT"
 msgstr ""
 
 #.
@@ -2336,26 +2318,42 @@ msgstr "Voleu suprimir \"%@\" i %d altres?"
 #. MARK: - AppIntent Strings
 #: APPINTENT_PLAY_MEDIA_TITLE
 msgid "Play in the background"
-msgstr ""
+msgstr "Reprodueix al fons"
 
 #: APPINTENT_PLAY_MEDIA_DESCRIPTION
 msgid "Play the selected playlist in the background without opening the app."
-msgstr ""
+msgstr "Reprodueix la llista seleccionada al fons sense obrir l'aplicació."
 
 #: APPINTENT_PLAY_MEDIA_PLAY_%24%7BmediaName%7D
 msgid "Play ${mediaName} in the background"
+msgstr "Reprodueix ${mediaName} al fons"
+
+#.
+#. MARK: - Download Completion Announcement
+#: DOWNLOAD_COMPLETED_ANNOUNCEMENT
+msgid "Downloading file \"%@\" completed"
 msgstr ""
 
 #.
-#. MARK: - VerticalSliderControl Strings
-#: VERTICAL_SLIDER_CONTROL_ACCESSIBILITY_LABEL
-msgid "Vertical slider"
+#. MARK: - Playlist Add Action Status
+#: ADD_TO_PLAYLIST_STATUS_MESSAGE
+msgid "Added %d media to %@"
 msgstr ""
 
-#: VERTICAL_SLIDER_CONTROL_INCREMENT_ACTION
-msgid "Increment"
+#: ADD_ALERT_TITLE
+msgid "Selection found in playlist"
 msgstr ""
 
-#: VERTICAL_SLIDER_CONTROL_DECREMENT_ACTION
-msgid "Decrement"
+#: ADD_ALERT_MESSAGE_SINGLE
+msgid "You are trying to add a media that is already part of %@"
+msgstr ""
+
+#: ADD_ALERT_MESSAGE_MULTIPLE
+msgid "You are trying to add %d media that are already part of %@"
+msgstr ""
+
+#.
+#. MARK: - Last played playlist indicator
+#: LAST_PLAYED_PLAYLIST_LABEL_TITLE
+msgid "Last Played"
 msgstr ""
