@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 08:05+0000\n"
+"POT-Creation-Date: 2025-02-17 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -574,7 +574,7 @@ msgid "Reload"
 msgstr "Torna a carregar"
 
 #: mods.reloadexit
-msgid "The game will now exit, to reload mods."
+msgid "To reload mods, the game will now exit."
 msgstr "El programa es tancarà per a carregar els mods."
 
 #: mod.installed
@@ -695,16 +695,6 @@ msgid ""
 msgstr ""
 "[scarlet]S’executen mods amb errors.[] Desactiveu els mods afectats o "
 "arregleu les errades abans de jugar."
-
-#: mod.nowdisabled
-msgid ""
-"[red]Mod '{0}' is missing dependencies:[accent] {1}\n"
-"[lightgray]These mods need to be downloaded first.\n"
-"This mod will be automatically disabled."
-msgstr ""
-"[scarlet]Falten dependències del mod «{0}»s:[accent] {1}\n"
-"[lightgray]S’han de carregar els mods que fan falta.\n"
-"Aquest mod es desactivarà automàticament."
 
 #: mod.enable
 msgid "Enable"
@@ -6007,7 +5997,6 @@ msgid "Planet"
 msgstr "Planeta"
 
 #: rules.lighting
-msgctxt "rules.lighting"
 msgid "Lighting"
 msgstr "Il·luminació"
 
@@ -9847,13 +9836,16 @@ msgstr ""
 #: block.impact-drill.description
 msgid ""
 "When placed on ore, outputs items in bursts indefinitely. Requires power and "
-"water."
+"water.\n"
+"Optionally uses ozone to boost efficiency."
 msgstr ""
 "Quan es posa a sobre de minerals, n’extrau indefinidament. Necessita energia "
 "i aigua."
 
 #: block.eruption-drill.description
-msgid "An improved impact drill. Capable of mining thorium. Requires hydrogen."
+msgid ""
+"An improved impact drill. Capable of mining thorium. Requires hydrogen.\n"
+"Optionally uses cyanogen to boost efficiency."
 msgstr ""
 "Una perforadora d’impacte millorada. Pot extraure tori. Necessita hidrogen."
 
