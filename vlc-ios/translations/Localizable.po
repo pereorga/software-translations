@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-17 08:04+0000\n"
+"POT-Creation-Date: 2025-02-24 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -671,7 +671,7 @@ msgstr "Entra una clau d'accés"
 
 #: Enter+your+passcode
 msgid "Enter your passcode"
-msgstr ""
+msgstr "Introduïu la clau d'accés"
 
 #: Passcodes+did+not+match.+Try+again.
 msgid "Passcodes did not match. Try again."
@@ -683,7 +683,7 @@ msgstr "Repeteix la clau d'accés"
 
 #: Passcode+Options
 msgid "Passcode Options"
-msgstr ""
+msgstr "Opcions de la clau d'accés"
 
 #: 4-Digit+Numeric+Code
 msgid ""
@@ -692,6 +692,10 @@ msgid ""
 "\"Settings\" = \"Settings\"; // plain text key to keep compatibility with "
 "InAppSettingsKit's upstream\"ON\" = \"On"
 msgstr ""
+"Codi numèric de 4 dígits\"; /* Passcode 4 digit numeric code */\"6-Digit "
+"Numeric Code\" = \"Codi numèric de 6 dígits\"; /* Passcode 6 digit numeric "
+"code */\"Settings\" = \"Paràmetres\"; // plain text key to keep "
+"compatibility with InAppSettingsKit's upstream\"ON\" = \"On"
 
 #: EMPTY_LIBRARY
 msgid "Empty Media Library"
@@ -776,6 +780,10 @@ msgid ""
 "time, 2: remaining time */\"PLAYBACK_SCRUB_ACCESSIBILITY_TIME_DISPLAY\" = "
 "\"Time Display"
 msgstr ""
+"%@ transcorregut, durada total %@\"; /* 1: elapsed time, 2: total time */"
+"\"PLAYBACK_SCRUB_REMAINING_TIME_FORMAT\" = \"%@ transcorregut, %@\"; /* 1: "
+"elapsed time, 2: remaining time */\"PLAYBACK_SCRUB_ACCESSIBILITY_TIME_DISPLAY"
+"\" = \"Visualització del temps"
 
 #: PLAYBACK_POSITION
 msgid "Playback Position"
@@ -1182,9 +1190,7 @@ msgstr "Protocol no seleccionat"
 
 #: Settings
 msgid "Settings"
-msgstr ""
-"Paràmetres\"; // plain text key to keep compatibility with "
-"InAppSettingsKit's upstream\"ON\" = \"On"
+msgstr "Paràmetres"
 
 #: SORT
 msgctxt "SORT"
@@ -1666,11 +1672,11 @@ msgstr "Veure més controls d'opcions"
 #: PLAYBACK_CONTROLS_BAR_TITLE
 msgctxt "PLAYBACK_CONTROLS_BAR_TITLE"
 msgid "Playback controls"
-msgstr ""
+msgstr "Controls de reproducció"
 
 #: PLAYBACK_CONTROLS_BAR_HINT
 msgid "Pause, seek, next chapter"
-msgstr ""
+msgstr "Pausa, cerca, capítol següent"
 
 #: PLAYER_WARNING_SUBTITLE_CAST_TITLE
 msgid "Subtitles unsupported"
@@ -2290,8 +2296,8 @@ msgstr "Disminueix la velocitat de reproducció"
 msgid "Reset playback speed"
 msgstr "Restaura la velocitat de reproducció"
 
-#: KEY_SEEK_TO_%5C(number+%2A+10)_PERCENT
-msgid "KEY_SEEK_TO_(number * 10)_PERCENT"
+#: KEY_SEEK_TO_PERCENT
+msgid "Seek to %i%% of duration"
 msgstr ""
 
 #.
@@ -2329,31 +2335,37 @@ msgid "Play ${mediaName} in the background"
 msgstr "Reprodueix ${mediaName} al fons"
 
 #.
+#. MARK: - VerticalSliderControl Strings
+#: VERTICAL_SLIDER_CONTROL_ACCESSIBILITY_LABEL
+msgid "Vertical slider"
+msgstr "Control lliscant vertical"
+
+#.
 #. MARK: - Download Completion Announcement
 #: DOWNLOAD_COMPLETED_ANNOUNCEMENT
 msgid "Downloading file \"%@\" completed"
-msgstr ""
+msgstr "S'ha completat la baixada del fitxer \"%@\""
 
 #.
 #. MARK: - Playlist Add Action Status
 #: ADD_TO_PLAYLIST_STATUS_MESSAGE
 msgid "Added %d media to %@"
-msgstr ""
+msgstr "S'ha afegit el multimèdia %d a %@"
 
 #: ADD_ALERT_TITLE
 msgid "Selection found in playlist"
-msgstr ""
+msgstr "S'ha trobat la selecció a la llista de reproducció"
 
 #: ADD_ALERT_MESSAGE_SINGLE
 msgid "You are trying to add a media that is already part of %@"
-msgstr ""
+msgstr "Esteu intentant afegir un multimèdia que ja forma part de %@"
 
 #: ADD_ALERT_MESSAGE_MULTIPLE
 msgid "You are trying to add %d media that are already part of %@"
-msgstr ""
+msgstr "Esteu intentant afegir el multimèdia %d que ja forma part de %@"
 
 #.
 #. MARK: - Last played playlist indicator
 #: LAST_PLAYED_PLAYLIST_LABEL_TITLE
 msgid "Last Played"
-msgstr ""
+msgstr "Última reproducció"
