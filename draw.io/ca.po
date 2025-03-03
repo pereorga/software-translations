@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-24 08:03+0000\n"
+"POT-Creation-Date: 2025-03-03 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5471,7 +5471,7 @@ msgid ""
 "the process."
 msgstr ""
 "Hi ha ({1}) error(s) 500. Un error intern del servidor a Confluence Cloud. "
-"Aquests errors es deuen a la sobrecàrrega del servidor i normalment es "
+"Aquests errors es deuen a la sobrecàrrega del servidor i normalment se "
 "solucionen tornant a intentar el procés."
 
 #: confAOtherErrFaq
@@ -5574,61 +5574,71 @@ msgstr ""
 
 #: remove
 msgid "Remove"
-msgstr ""
+msgstr "Elimina"
 
 #: selectPgLyr
 msgid "Select Page and Layers"
-msgstr ""
+msgstr "Selecciona la Pàgina i les Capes"
 
 #: errGenPreview
 msgid ""
 "There was an error generating a diagram preview. Please consult technical "
 "support."
 msgstr ""
+"S'ha produït un error en generar la vista prèvia del diagrama. Consulteu el "
+"servei tècnic."
 
 #: attAccessErr
 msgid "Diagram attachment access error: cannot display diagram"
 msgstr ""
+"Error d'accés al fitxer adjunt del diagrama: no es pot mostrar el diagrama"
 
 #: widthIntOrFixed
 msgid "Width must be a valid integer or of value 'fixed'"
-msgstr ""
+msgstr "L'amplada ha de ser un nombre enter vàlid, o el valor \"fixed\""
 
 #: dupDisabledPgLyrSlct
 msgid "Diagram duplication is disabled when page and layers are selected"
 msgstr ""
+"La duplicació de diagrames està desactivada quan la pàgina i les capes estan "
+"seleccionades"
 
 #: cantDupPickDiffName
 msgid "Could not duplicate diagram. Please choose a different name."
-msgstr ""
+msgstr "No s'ha pogut duplicar el diagrama. Si us plau, trieu un nom diferent."
 
 #: ownPgAccessDupErr
 msgid "Owning page access restriction: cannot duplicate diagram. "
-msgstr ""
+msgstr "Restricció d'accés a la pàgina: no es pot duplicar el diagrama."
 
 #: cantDupTryLater
 msgid "Could not duplicate diagram. Please try again later."
 msgstr ""
+"No s'ha pogut duplicar el diagrama. Si us plau, torna-ho a provar més tard."
 
 #: cantEditLnkd
 msgid "Cannot edit linked diagram"
-msgstr ""
+msgstr "No es pot editar el diagrama enllaçat"
 
 #: diagEditOwnPgOnlyOpen
 msgid ""
 "Diagram can only be edited from the page that owns it. Would you like to "
 "open the owning page for edit?"
 msgstr ""
+"El diagrama només es pot editar des de la pàgina propietària que el conté. "
+"Vols obrir la pàgina propietària per editar-la?"
 
 #: diagInTemps
 msgid "draw.io diagrams in templates"
-msgstr ""
+msgstr "diagrames draw.io en plantilles"
 
 #: diagInTempsCantEdit
 msgid ""
 "Diagrams in page templates cannot be edited. They can only be edited on "
 "pages and blog posts."
 msgstr ""
+"Els diagrames de les plantilles de pàgina no es poden editar. Només es poden "
+"editar en pàgines i publicacions de blogs."
 
 #: confDirectEditDraftLost
 msgid ""
@@ -5636,6 +5646,9 @@ msgid ""
 "view may cause data loss. Please edit the Confluence page first and then "
 "edit the diagram."
 msgstr ""
+"Aquesta pàgina de Confluence té canvis no publicats. Editar el diagrama des "
+"de la vista de pàgina pot provocar la pèrdua de dades. Editeu primer la "
+"pàgina Confluence i després editeu el diagrama."
 
 #: confConfigSpacePerm
 msgid ""
@@ -5646,6 +5659,13 @@ msgid ""
 "please check the file \"configuration.json\" in the \"Configuration\" page "
 "is downloadable."
 msgstr ""
+"Nota: si recentment heu migrat des de l'aplicació DC, comproveu els permisos "
+"de l'espai de Configuració de draw.io de manera que tots els usuaris puguin "
+"llegir i només els administradors puguin escriure. A més, elimineu les "
+"restriccions de pàgina a les pàgines \"Configuració\" i \"Biblioteques\". És "
+"possible que necessiteu claus d'administració per accedir-hi. A més, "
+"comproveu que el fitxer \"configuration.json\" a la pàgina \"Configuració\" "
+"es pot descarregar."
 
 
 msgid "Diagrams Online"
