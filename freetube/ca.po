@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-17 08:03+0000\n"
+"POT-Creation-Date: 2025-03-31 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -678,6 +678,10 @@ msgstr ""
 
 #: User+Playlists-%3EAre+you+sure+you+want+to+delete+this+playlist%3F+This+cannot+be+undone
 msgid "Are you sure you want to delete this playlist? This cannot be undone."
+msgstr ""
+
+#: User+Playlists-%3ETotalTimePlaylist
+msgid "Total time: {duration}"
 msgstr ""
 
 #: User+Playlists-%3ESort+By-%3ENameAscending
@@ -1625,6 +1629,7 @@ msgid "Default Quality"
 msgstr "Qualitat per defecte"
 
 #: Settings-%3EPlayer+Settings-%3EDefault+Quality-%3EAuto
+msgctxt "Settings->Player Settings->Default Quality->Auto"
 msgid "Auto"
 msgstr "Automàtic"
 
@@ -1751,8 +1756,30 @@ msgid "Remember Search History"
 msgstr ""
 
 #: Settings-%3EPrivacy+Settings-%3ESave+Watched+Progress
+msgctxt "Settings->Privacy Settings->Save Watched Progress"
 msgid "Save Watched Progress"
 msgstr "Desa progrés reproduït"
+
+#: Settings-%3EPrivacy+Settings-%3EWatched+Progress+Saving+Mode-%3EModes-%3EAuto
+msgctxt "Settings->Privacy Settings->Watched Progress Saving Mode->Modes->Auto"
+msgid "Auto"
+msgstr ""
+
+#: Settings-%3EPrivacy+Settings-%3EWatched+Progress+Saving+Mode-%3EModes-%3ESemi-auto
+msgid "Semi-auto"
+msgstr ""
+
+#: Settings-%3EPrivacy+Settings-%3EWatched+Progress+Saving+Mode-%3EModes-%3ENever
+msgid "Never"
+msgstr ""
+
+#: Settings-%3EPrivacy+Settings-%3EWatched+Progress+Saving+Mode-%3ETooltip
+msgid ""
+"Auto = Save on every video page exit, when video ended and error encountered "
+"(e.g. ratelimited and watch session expired). Semi-auto = Like Auto except "
+"on video page exit and can save progress manually via a button called Save "
+"Watched Progress, located beneath the video player."
+msgstr ""
 
 #: Settings-%3EPrivacy+Settings-%3ESave+Watched+Videos+With+Last+Viewed+Playlist
 msgid "Save Watched Videos With Last Viewed Playlist"
@@ -2874,6 +2901,15 @@ msgstr "El vídeo ha sigut marcat com a vist"
 #: Video-%3EVideo+has+been+removed+from+your+history
 msgid "Video has been removed from your history"
 msgstr "El vídeo ha sigut eliminat del teu historial"
+
+#: Video-%3ESave+Watched+Progress
+msgctxt "Video->Save Watched Progress"
+msgid "Save Watched Progress"
+msgstr ""
+
+#: Video-%3EWatched+Progress+Saved
+msgid "Watched Progress Saved"
+msgstr ""
 
 #: Video-%3ESave+Video
 msgid "Save Video"
