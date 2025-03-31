@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-24 08:04+0000\n"
+"POT-Creation-Date: 2025-03-31 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr "Rebutja"
 
 #: doForgotPassword
 msgid "Forgot Password?"
-msgstr "Heu oblidat la vostra contrasenya?"
+msgstr "Heu oblidat la contrasenya?"
 
 #: doClickHere
 msgid "Click here"
@@ -82,7 +82,7 @@ msgstr "Torna-ho a provar"
 
 #: doTryAnotherWay
 msgid "Try Another Way"
-msgstr "Prova d''una altra manera"
+msgstr "Prova d’una altra manera"
 
 #: doConfirmDelete
 msgid "Confirm deletion"
@@ -90,24 +90,24 @@ msgstr "Confirma la supressió"
 
 #: errorDeletingAccount
 msgid "Error happened while deleting account"
-msgstr "S''ha produït un error en eliminar el compte"
+msgstr "S’ha produït un error en eliminar el compte"
 
 #: deletingAccountForbidden
 msgid ""
 "You do not have enough permissions to delete your own account, contact admin."
 msgstr ""
-"No teniu permisos suficients per a eliminar el vostre compte, contacteu amb "
-"l''administrador."
+"No teniu prou permisos per a eliminar el vostre compte, contacteu amb "
+"l’administrador."
 
 #: kerberosNotConfigured
 msgctxt "kerberosNotConfigured"
 msgid "Kerberos Not Configured"
-msgstr "Kerberos no configurat"
+msgstr "Kerberos no està configurat"
 
 #: kerberosNotConfiguredTitle
 msgctxt "kerberosNotConfiguredTitle"
 msgid "Kerberos Not Configured"
-msgstr "Kerberos no configurat"
+msgstr "Kerberos no està configurat"
 
 #: bypassKerberosDetail
 msgid ""
@@ -173,7 +173,7 @@ msgstr "Actualització de la informació del compte"
 #: loginTimeout
 msgid "Your login attempt timed out. Login will start from the beginning."
 msgstr ""
-"S''ha excedit el temps per a realitzar una entrada. L''entrada començarà des "
+"S’ha excedit el temps per a realitzar una entrada. L’entrada començarà des "
 "del principi."
 
 #: reauthenticate
@@ -704,14 +704,16 @@ msgid ""
 "To verify your email address, we are about to send you email with "
 "instructions to the address {0}."
 msgstr ""
+"Per a verificar la vostra adreça de correu electrònic, us enviarem un correu "
+"amb instruccions a l’adreça {0}."
 
 #: emailVerifyResend
 msgid "Re-send verification email"
-msgstr ""
+msgstr "Torna a enviar el correu de verificació"
 
 #: emailVerifySend
 msgid "Send verification email"
-msgstr ""
+msgstr "Envia el correu de verificació"
 
 #: emailLinkIdpTitle
 msgid "Link {0}"
@@ -737,7 +739,7 @@ msgstr "per a tornar a enviar el correu electrònic."
 
 #: emailLinkIdp4
 msgid "If you already verified the email in a different browser"
-msgstr "si ja heu verificat el correu electrònic en un altre navegador"
+msgstr "Si ja heu verificat el correu electrònic en un altre navegador"
 
 #: emailLinkIdp5
 msgid "to continue."
@@ -1545,7 +1547,7 @@ msgid ""
 "The link you clicked is an old stale link and is no longer valid. Maybe you "
 "have already verified your email."
 msgstr ""
-"L''enllaç en què heu clicat és un enllaç antic que ja no és vàlid. Potser ja "
+"L’enllaç en què heu clicat és un enllaç antic que ja no és vàlid. Potser ja "
 "heu verificat el vostre correu electrònic."
 
 #: identityProviderAlreadyLinkedMessage
@@ -1701,7 +1703,7 @@ msgid ""
 "You need to verify your email address. We sent an email to {0} that contains "
 "a verification code. Please enter this code into the input below."
 msgstr ""
-"Heu de verificar l''adreça de correu electrònic. Hem enviat un correu "
+"Heu de verificar l’adreça de correu electrònic. Hem enviat un correu "
 "electrònic a {0} que conté un codi de verificació. Introduïu aquest codi al "
 "camp següent."
 
@@ -2134,7 +2136,9 @@ msgstr ""
 msgid ""
 "Attribute {0} must have at least {1} and at most {2} "
 "{2,choice,0#values|1#value|1<values}."
-msgstr "L''atribut {0} ha de tenir almenys {1} i com a molt {2} valor(s)."
+msgstr ""
+"L’atribut {0} ha de tenir almenys {1} i com a molt {2} "
+"{2,choice,0#valors|1#valor|1<valor}."
 
 #: organization.confirm-membership.title
 msgid "You are about to join organization ${kc.org.name}"
@@ -2161,4 +2165,4 @@ msgstr "L''usuari no és membre de l''organització {0}"
 
 #: notMemberOfAnyOrganization
 msgid "User is not a member of any organization"
-msgstr ""
+msgstr "L’usuari no és membre de cap organització"
