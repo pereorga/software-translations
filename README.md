@@ -1,7 +1,7 @@
 # software-translations
 
-Some Catalan translations of open-source projects, to be used later in
-https://github.com/Softcatala/translation-memory-tools/.
+A few Catalan translations of software projects, mostly open-source, to be used
+later in https://github.com/Softcatala/translation-memory-tools/.
 
 ## Requirements
 
@@ -38,6 +38,7 @@ brew install bash csvkit translate-toolkit dos2unix gettext node unzip
 * Mindustry: https://github.com/Anuken/Mindustry
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
 * RawTherapee: https://www.rawtherapee.com/
+* Skype: https://www.skype.com/en/legal/
 * Stooa: https://github.com/Stooa/Stooa/tree/main
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS
 * The Movie Database: https://app.localeapp.com/projects/8267/translations
