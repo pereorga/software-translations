@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-28 08:14+0000\n"
+"POT-Creation-Date: 2025-05-05 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,9 +166,9 @@ msgctxt "Global->Live"
 msgid "Live"
 msgstr "En directe"
 
-#: Global-%3ECommunity
-msgid "Community"
-msgstr "Comunitat"
+#: Global-%3EPosts
+msgid "Posts"
+msgstr "Publicacions"
 
 #: Global-%3ESort+By
 msgid "Sort By"
@@ -1987,8 +1987,8 @@ msgstr ""
 msgid "Hide Channel \"Playlists\" Tab"
 msgstr ""
 
-#: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Community
-msgid "Hide Channel \"Community\" Tab"
+#: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Posts
+msgid "Hide Channel \"Posts\" Tab"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Channel+Home
@@ -2031,8 +2031,8 @@ msgstr ""
 msgid "Hide Subscriptions Live"
 msgstr ""
 
-#: Settings-%3EDistraction+Free+Settings-%3EHide+Subscriptions+Community
-msgid "Hide Subscriptions Community"
+#: Settings-%3EDistraction+Free+Settings-%3EHide+Subscriptions+Posts
+msgid "Hide Subscriptions Posts"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EShow+Added+Items
@@ -2819,31 +2819,31 @@ msgstr ""
 msgid "Featured Channels"
 msgstr "Canals Destacats"
 
-#: Channel-%3ECommunity-%3EThis+channel+currently+does+not+have+any+posts
+#: Channel-%3EPosts-%3EThis+channel+currently+does+not+have+any+posts
 msgid "This channel currently does not have any posts"
 msgstr ""
 
-#: Channel-%3ECommunity-%3Evotes
+#: Channel-%3EPosts-%3Evotes
 msgid "{votes} votes"
 msgstr ""
 
-#: Channel-%3ECommunity-%3EView+Full+Post
+#: Channel-%3EPosts-%3EView+Full+Post
 msgid "View Full Post"
 msgstr ""
 
-#: Channel-%3ECommunity-%3EReveal+Answers
+#: Channel-%3EPosts-%3EReveal+Answers
 msgid "Reveal Answers"
 msgstr ""
 
-#: Channel-%3ECommunity-%3EHide+Answers
+#: Channel-%3EPosts-%3EHide+Answers
 msgid "Hide Answers"
 msgstr ""
 
-#: Channel-%3ECommunity-%3EVideo+hidden+by+FreeTube
+#: Channel-%3EPosts-%3EVideo+hidden+by+FreeTube
 msgid "Video hidden by FreeTube"
 msgstr ""
 
-#: Channel-%3ECommunity-%3EViewing+Posts+Only+Supported+By+Invidious
+#: Channel-%3EPosts-%3EViewing+Posts+Only+Supported+By+Invidious
 msgid ""
 "Viewing Posts is only supported by Invidious. Head to a channel's community "
 "tab to view content there without Invidious."
@@ -3572,7 +3572,7 @@ msgstr ""
 #: Tooltips-%3EGeneral+Settings-%3EThumbnail+Preference
 msgid ""
 "All thumbnails throughout FreeTube will be replaced with a frame of the "
-"video instead of the default thumbnail."
+"video, blurred or hidden instead of the default thumbnail."
 msgstr ""
 
 #: Tooltips-%3EGeneral+Settings-%3EInvidious+Instance
@@ -3607,7 +3607,7 @@ msgstr ""
 #: Tooltips-%3EPlayer+Settings-%3EDefault+Video+Format
 msgid ""
 "Set the formats used when a video plays. DASH formats can play higher "
-"qualities. Legacy formats are limited to a max of 720p but use less "
+"qualities. Legacy formats are limited to a max of 360p but use less "
 "bandwidth. Audio formats are audio only streams."
 msgstr ""
 
@@ -3685,14 +3685,13 @@ msgstr ""
 msgid ""
 "When enabled, FreeTube will use RSS instead of its default method for "
 "grabbing your subscription feed. RSS is faster and prevents IP blocking, but "
-"doesn't provide certain information like video duration, live status or "
-"community posts"
+"doesn't provide certain information like video duration, live status or posts"
 msgstr ""
 
 #: Tooltips-%3ESubscription+Settings-%3EFetch+Automatically
 msgid ""
-"When enabled, FreeTube will automatically fetch your subscription feed when "
-"a new window is opened and when switching profile."
+"When enabled, FreeTube will automatically fetch your subscription feed on "
+"startup and when a new window is opened."
 msgstr ""
 
 #: Tooltips-%3EExperimental+Settings-%3EReplace+HTTP+Cache
