@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-31 08:04+0000\n"
+"POT-Creation-Date: 2025-05-05 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,13 +232,13 @@ msgid ""
 msgstr ""
 "%FIRST_PROCESS_DESCRIPTION% +{0, plural, one{# procés} other{# processos}}"
 
-#: PackageManager
-msgid "Reboot required"
-msgstr "Cal reiniciar"
-
 #: PopulatePkgUserRatingsFromServerProcess
 msgid "Fetching user ratings for package"
 msgstr "S'obtenen les valoracions dels usuaris per al paquet."
+
+#: PackageManager
+msgid "Reboot required"
+msgstr "Cal reiniciar"
 
 #: PackageListView
 msgid "All packages"
@@ -326,13 +326,13 @@ msgstr "Condicions d'ús acordades"
 msgid "Size"
 msgstr "Mida"
 
-#: RatePackageWindow
-msgid "Your rating was updated."
-msgstr "S'ha actualitzat la puntuació."
-
 #: FilterView
 msgid "All categories"
 msgstr "Totes les categories"
+
+#: RatePackageWindow
+msgid "Your rating was updated."
+msgstr "S'ha actualitzat la puntuació."
 
 #: PackageProblem
 msgid "ignore problem for now"
@@ -665,10 +665,6 @@ msgstr "Sincronització de les icones"
 msgid "Show"
 msgstr "Mostra..."
 
-#: MainWindow
-msgid "Settings…"
-msgstr "Paràmetres..."
-
 #: App
 msgid ""
 "This application writes and reads some working files on your computer in "
@@ -684,6 +680,10 @@ msgstr ""
 "local o els permisos que pugui evitar que aquesta aplicació escrigui fitxers "
 "a la ubicació del directori. Podeu optar per reconèixer aquest problema i "
 "continuar, però és possible que alguna funcionalitat estigui inhabilitada."
+
+#: MainWindow
+msgid "Settings…"
+msgstr "Paràmetres..."
 
 #: PackageContentsView
 msgid "<Package contents not available for remote packages>"
