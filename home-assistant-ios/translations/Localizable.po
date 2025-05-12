@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-05 08:04+0000\n"
+"POT-Creation-Date: 2025-05-12 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,11 +152,6 @@ msgstr ""
 msgctxt "addButtonLabel"
 msgid "Add"
 msgstr "Afegir"
-
-#: unknownLabel
-msgctxt "unknownLabel"
-msgid "Unknown"
-msgstr ""
 
 #: alerts.action_automation_editor.unavailable.body
 msgid ""
@@ -603,40 +598,6 @@ msgstr "HLS Stream no disponible"
 #: extensions.notification_content.error.request.other
 msgid "Got non-200 status code (%li)"
 msgstr "S'ha rebut codi d'estat no-200 (%li)"
-
-#: gestures.reset.title
-msgctxt "gestures.reset.title"
-"gestures.reset.title"
-msgid "Reset"
-msgstr ""
-
-#: gestures.swipe.right.header
-msgid "Swipe right"
-msgstr ""
-
-#: gestures.swipe.left.header
-msgid "Swipe left"
-msgstr ""
-
-#: gestures.swipe.up.header
-msgid "Swipe up"
-msgstr ""
-
-#: gestures.swipe.down.header
-msgid "Swipe down"
-msgstr ""
-
-#: gestures.1_finger.title
-msgid "Using one finger"
-msgstr ""
-
-#: gestures.2_fingers.title
-msgid "Using two fingers"
-msgstr ""
-
-#: gestures.3_fingers.title
-msgid "Using three fingers"
-msgstr ""
 
 #: ha_api.api_error.cant_build_url
 msgid "Cant build API URL"
@@ -2065,14 +2026,8 @@ msgstr "Mentre estigui en ús"
 
 #: settings_details.location.motion_permission.denied
 msgctxt "settings_details.location.motion_permission.denied"
-"settings_details.location.motion_permission.denied"
 msgid "Denied"
 msgstr "Denegat"
-
-#: settings_details.location.motion_permission.restricted
-msgctxt "settings_details.location.motion_permission.restricted"
-msgid "Restricted"
-msgstr ""
 
 #: settings_details.location.motion_permission.enabled
 msgctxt "settings_details.location.motion_permission.enabled"
@@ -2083,26 +2038,6 @@ msgstr "Habilitat"
 msgctxt "settings_details.location.motion_permission.needs_request"
 msgid "Disabled"
 msgstr "Desactivat"
-
-#: settings_details.location.focus_permission.denied
-msgctxt "settings_details.location.focus_permission.denied"
-msgid "Denied"
-msgstr ""
-
-#: settings_details.location.focus_permission.restricted
-msgctxt "settings_details.location.focus_permission.restricted"
-msgid "Restricted"
-msgstr ""
-
-#: settings_details.location.focus_permission.enabled
-msgctxt "settings_details.location.focus_permission.enabled"
-msgid "Enabled"
-msgstr ""
-
-#: settings_details.location.focus_permission.needs_request
-msgctxt "settings_details.location.focus_permission.needs_request"
-msgid "Disabled"
-msgstr ""
 
 #: settings_details.location.motion_permission.title
 msgid "Motion Permission"
@@ -2477,10 +2412,6 @@ msgctxt "settings_details.privacy.title"
 msgid "Privacy"
 msgstr "Privacitat"
 
-#: settings_details.privacy.body
-msgid "You are in control of your data."
-msgstr ""
-
 #: settings_details.thread.title
 msgid "Thread"
 msgstr "Fil"
@@ -2524,9 +2455,9 @@ msgstr "Desactivat"
 msgid "Focus Permission"
 msgstr "Permí de l'estat de concentració"
 
-#: settings_sensors.last_updated.prefix
-msgid "Last Updated"
-msgstr ""
+#: settings_sensors.last_updated.footer
+msgid "Last Updated %@"
+msgstr "Darrera actualització %@"
 
 #: settings_sensors.loading_error.title
 msgid "Failed to load sensors"
@@ -2566,20 +2497,6 @@ msgstr "Els canvis s'aplicaran a la pròxima actualització."
 msgctxt "settings_sensors.settings.header"
 msgid "Settings"
 msgstr "Configuració"
-
-#: settings_sensors.body
-msgid ""
-"Decide which of your device sensors you want to share with Home Assistant."
-msgstr ""
-
-#: settings_sensors.permissions.header
-msgid "Permissions"
-msgstr ""
-
-#: settings_sensors.sensors.header
-msgctxt "settings_sensors.sensors.header"
-msgid "Sensors"
-msgstr ""
 
 #: share_extension.entered_placeholder
 msgid "'entered' in event"
