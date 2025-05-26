@@ -33,6 +33,7 @@ jobs:
               if "${d}generate.sh"; then
                 git add --ignore-errors "$d"
                 if git diff --cached --unified=0 "$d" | grep "^-\|^\+" | grep -v "^---" | grep -v "^+++" | grep -v "POT-Creation-Date: " | grep -v "X-Generator: "; then
+                  git pull origin master --rebase
                   git commit -m "$d: update via GitHub Actions"
                   git push origin HEAD
                 else
