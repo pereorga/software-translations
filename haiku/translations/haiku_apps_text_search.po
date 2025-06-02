@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-12 08:04+0000\n"
+"POT-Creation-Date: 2025-06-02 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,9 +61,17 @@ msgstr "Tanca"
 msgid "Look in sub-folders"
 msgstr "Cerca a les carpetes inferiors"
 
+#: GrepWindow
+msgid "File filter:"
+msgstr "Filtre de fitxers:"
+
 #: Grepper
 msgid "%s: Not enough room to escape the filename."
 msgstr "%s: no hi ha prou espai per completar el nom del fitxer."
+
+#: GrepWindow
+msgid "Text files only"
+msgstr "Només els fitxers de text"
 
 #: GrepWindow
 msgid "Follow symbolic links"
@@ -72,10 +80,6 @@ msgstr "Segueix els enllaços simbòlics"
 #: GrepWindow
 msgid "Regular expression"
 msgstr "Expressió regular"
-
-#: GrepWindow
-msgid "Text files only"
-msgstr "Només els fitxers de text"
 
 #: GrepWindow
 msgid "Quit"
@@ -88,6 +92,11 @@ msgstr "Mostra els fitxers al Rastrejador"
 #: GrepWindow
 msgid "Please select the files you wish to keep searching."
 msgstr "Si us plau, seleccioneu els fitxers que voleu continuar cercant."
+
+#: GrepWindow
+msgid "Only search files matching the given pattern, e.g. \\\"*.h\\\"."
+msgstr ""
+"Cerca només fitxers que coincideixin amb el patró donat, p. ex.: \\\"*.h\\\"."
 
 #: GrepWindow
 msgid "Trim to selection"
