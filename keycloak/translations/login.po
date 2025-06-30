@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-09 08:04+0000\n"
+"POT-Creation-Date: 2025-06-30 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1033,11 +1033,11 @@ msgstr "La llargària ha de ser d''entre {1} i {2}."
 
 #: error-invalid-length-too-short
 msgid "Minimal length is {1}."
-msgstr "La llargària és de, com a mínim, {1}."
+msgstr "La llargària mínima és {1}."
 
 #: error-invalid-length-too-long
 msgid "Maximal length is {2}."
-msgstr "La llargària és de, com a màxim, {2}."
+msgstr "La llargària màxima és, {2}."
 
 #: error-invalid-email
 msgctxt "error-invalid-email"
@@ -1569,6 +1569,16 @@ msgid ""
 msgstr ""
 "Confirmeu l''enllaçat del compte {0} del proveïdor d''identitat {1} amb el "
 "vostre compte."
+
+#: confirmAccountLinkingBody
+msgid ""
+"If you link the account, you will also be able to login using account {0} of "
+"the identity provider {1}. Do not proceed if you did not initiate this "
+"process or you do not want to link the account."
+msgstr ""
+"Si enllaceu el compte, també podreu entrar amb el compte {0} del proveïdor d’"
+"identitat {1}. No continueu si no heu iniciat aquest procés o si no voleu "
+"enllaçar el compte."
 
 #: confirmEmailAddressVerification
 msgid "Confirm validity of e-mail address {0}."
