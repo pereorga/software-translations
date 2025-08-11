@@ -2215,6 +2215,10 @@ Si rebeu aquest error, haureu de sol·licitar al comerciant que proporcioni un U
         <translation>Nombre de connexions</translation>
     </message>
     <message>
+        <source>Local Addresses</source>
+        <translation>Adreces locals</translation>
+    </message>
+    <message>
         <source>Block chain</source>
         <translation>Cadena de blocs</translation>
     </message>
