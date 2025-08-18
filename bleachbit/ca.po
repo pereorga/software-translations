@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
-"POT-Creation-Date: 2025-03-09 22:12-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-16 23:52-0600\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -186,6 +186,12 @@ msgstr "Intèrpret d'ordres"
 msgid "Delete the command history"
 msgstr "Suprimeix l'historial d'ordres"
 
+msgid "Temporary files"
+msgstr "Fitxers temporals"
+
+msgid "Delete the temporary files"
+msgstr "Suprimeix els fitxers temporals"
+
 msgid "Search tool"
 msgstr "Eina de cerca"
 
@@ -197,9 +203,6 @@ msgstr "Suprimeix les galetes, els URL visitats i l'historial de cerca"
 
 msgid "Word processor"
 msgstr "Processador de textos"
-
-msgid "Audio player"
-msgstr "Reproductor d'àudio"
 
 msgid "Delete the list of recently used documents"
 msgstr "Suprimeix la llista de documents usats recentment"
@@ -227,12 +230,6 @@ msgstr "Suprimeix els avatars i les emoticones"
 
 msgid "File transfer client"
 msgstr "Client de transferència de fitxers"
-
-msgid "Temporary files"
-msgstr "Fitxers temporals"
-
-msgid "Delete the temporary files"
-msgstr "Suprimeix els fitxers temporals"
 
 msgid "Places"
 msgstr "Llocs"
@@ -378,6 +375,12 @@ msgstr "Sistema de finestres"
 msgid "Graphics editor"
 msgstr "Editor de gràfics"
 
+msgid "Disabled"
+msgstr ""
+
+msgid "Remove disabled packages"
+msgstr ""
+
 msgid "Document viewer"
 msgstr "Visualitzador de documents"
 
@@ -488,9 +491,26 @@ msgstr "Netejador de fitxers innecessaris"
 msgid "Free space and maintain privacy"
 msgstr "Allibereu espai i mantingueu la privacitat"
 
-#. TRANSLATORS: Multi-value variables are explained in the online documentation.
-#. Basically, they are like an environment variable, but each multi-value variable
-#. can have multiple values. They're a way to make CleanerML files more concise.
+#. TRANSLATORS: Name of the developers
+msgid "Andrew Ziem and contributors"
+msgstr ""
+
+msgid ""
+"BleachBit frees disk space and maintains privacy by quickly removing "
+"unnecessary files such as cache, cookies, browser history, temporary files, "
+"and system logs. It can also shred files and clean free disk space to "
+"prevent data recovery."
+msgstr ""
+
+#. TRANSLATORS: Caption for screenshot
+msgid "Default dark mode, showing found junk files"
+msgstr ""
+
+#. TRANSLATORS: Multi-value variables are explained
+#. in the online documentation. Basically, they are like
+#. an environment variable, but each multi-value variable
+#. can have multiple values. They're a way to make CleanerML
+#. files more concise.
 msgid "Deep scan does not support multi-value variable."
 msgstr "L'anàlisi en profunditat no admet una variable amb múltiples valors."
 
@@ -526,6 +546,9 @@ msgstr "Neteja"
 msgid "Run external command: %s"
 msgstr "Executa l'ordre externa: %s"
 
+msgid "Refresh Windows shell"
+msgstr ""
+
 #, python-brace-format
 msgid ""
 "Error in handle_cleaner_option() for cleaner id = {cleaner_id}, option "
@@ -541,15 +564,6 @@ msgstr "S'ignora el netejador perquè per tothom hi té accés d'escriptura: %s"
 #, python-format
 msgid "Error reading cleaner: %s"
 msgstr "Error en llegir el netejador: %s"
-
-#. TRANSLATORS: An action is something like cleaning a specific file.
-#. "Not usable" means the whole cleaner will be ignored.
-#. The substituted variable is a pathname.
-#, python-format
-msgid "Cleaner is not usable on this OS because it has no actions: %s"
-msgstr ""
-"No es pot usar el netejador en aquest sistema operatiu perquè no té accions: "
-"%s"
 
 #. TRANSLATORS: desktop entries are .desktop files in Linux that
 #. make up the application menu (the menu that shows BleachBit,
@@ -804,10 +818,6 @@ msgid ""
 "overwriting."
 msgstr ""
 "Hi ha almenys un sistema de fitxers que no admet la sobreescriptura avançada."
-
-#, python-brace-format
-msgid "Wiping path {pathname} with file system type {fstype}"
-msgstr ""
 
 #, python-format
 msgid "Path to wipe must be an existing directory: %s"
@@ -1160,6 +1170,9 @@ msgstr ""
 msgid "Resetting the configuration file because it is corrupt: %s"
 msgstr "S'està restablint el fitxer de configuració perquè està danyat: %s"
 
+msgid "Quit"
+msgstr ""
+
 msgid "You must select an operation"
 msgstr "Heu de seleccionar una operació"
 
@@ -1226,6 +1239,9 @@ msgstr "Actualitza"
 
 msgid "Update BleachBit to the latest version"
 msgstr "Actualitzeu el BleachBit a la versió més recent"
+
+msgid "Press F11 to exit fullscreen mode."
+msgstr ""
 
 msgid "Error when checking for updates: "
 msgstr "Error en comprovar les actualitzacions: "
@@ -1403,6 +1419,9 @@ msgstr "Jocs"
 msgid "Imported from winapp2.ini"
 msgstr "Importats des del winapp2.ini"
 
+msgid "Administrator privileges are required to clean Windows Updates"
+msgstr ""
+
 msgid "BleachBit is starting...\n"
 msgstr "BleachBit s'està iniciant...\n"
 
@@ -1529,6 +1548,15 @@ msgstr "_Ajuda"
 
 msgid "_About BleachBit"
 msgstr "_Quant al BleachBit"
+
+#~ msgid "Audio player"
+#~ msgstr "Reproductor d'àudio"
+
+#, python-format
+#~ msgid "Cleaner is not usable on this OS because it has no actions: %s"
+#~ msgstr ""
+#~ "No es pot usar el netejador en aquest sistema operatiu perquè no té "
+#~ "accions: %s"
 
 #~ msgid "IRC client formerly known as XChat"
 #~ msgstr "Client d'IRC conegut anteriorment com XChat"
