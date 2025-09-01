@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 21:21+0000\n"
+"POT-Creation-Date: 2025-09-01 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1664,17 +1664,41 @@ msgstr "Actualitza el perfil"
 msgid "Verify Email"
 msgstr "Verifica el correu electrònic"
 
-#: requiredAction.CONFIGURE_RECOVERY_AUTHN_CODES
-msgid "Generate Recovery Codes"
-msgstr "Genera codis de recuperació"
+#: requiredAction.delete_account
+msgid "Delete Account"
+msgstr ""
+
+#: requiredAction.UPDATE_EMAIL
+msgid "Update Email"
+msgstr ""
+
+#: requiredAction.webauthn-register
+msgid "Webauthn Register"
+msgstr "Registre de WebAuthn"
 
 #: requiredAction.webauthn-register-passwordless
 msgid "Webauthn Register Passwordless"
 msgstr "Registre sense contrasenya WebAuthn"
 
-#: requiredAction.webauthn-register
-msgid "Webauthn Register"
-msgstr "Registre de WebAuthn"
+#: requiredAction.VERIFY_PROFILE
+msgid "Verify Profile"
+msgstr ""
+
+#: requiredAction.delete_credential
+msgid "Delete Credential"
+msgstr ""
+
+#: requiredAction.idp_link
+msgid "Linking Identity Provider"
+msgstr ""
+
+#: requiredAction.CONFIGURE_RECOVERY_AUTHN_CODES
+msgid "Generate Recovery Codes"
+msgstr "Genera codis de recuperació"
+
+#: requiredAction.update_user_locale
+msgid "Update User Locale"
+msgstr ""
 
 #: invalidTokenRequiredActions
 msgid "Required actions included in the link are not valid"
@@ -1837,11 +1861,11 @@ msgstr "Entra amb un certificat de client X509."
 
 #.
 #. Recovery Codes
-#: auth-recovery-authn-code-form-display-name
+#: recovery-authn-codes-display-name
 msgid "Recovery Authentication Code"
 msgstr "Codi d''autenticació de recuperació"
 
-#: auth-recovery-authn-code-form-help-text
+#: recovery-authn-codes-help-text
 msgid "Enter a recovery authentication code from a previously generated list."
 msgstr ""
 "Introduïu un codi d''autenticació de recuperació d''una llista prèviament "
