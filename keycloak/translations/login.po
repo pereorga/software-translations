@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-08 08:05+0000\n"
+"POT-Creation-Date: 2025-09-15 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,8 +256,14 @@ msgid "Update password"
 msgstr "Actualitza la contrasenya"
 
 #: codeSuccessTitle
+msgctxt "codeSuccessTitle"
 msgid "Success code"
 msgstr "Codi d''èxit"
+
+#: codeSuccess
+msgctxt "codeSuccess"
+msgid "Success code"
+msgstr ""
 
 #: codeErrorTitle
 msgid "Error code: {0}"
@@ -726,7 +732,7 @@ msgstr "Envia el correu de verificació"
 #: emailVerifySendCooldown
 msgid "You must wait {0} seconds before resending the verification email."
 msgstr ""
-"Heu d''esperar {0} segons abans de tornar a enviar el correu de verificació."
+"Heu d’esperar {0} segons abans de tornar a enviar el correu de verificació."
 
 #: emailLinkIdpTitle
 msgid "Link {0}"
@@ -1110,7 +1116,7 @@ msgstr "Seleccioneu una configuració d''OTP."
 
 #: error-non-ascii-local-part-email
 msgid "Local part of the address must contain only ASCII characters."
-msgstr "La part local de l''adreça ha de contenir només caràcters ASCII."
+msgstr "La part local de l’adreça ha de contenir només caràcters ASCII."
 
 #: invalidPasswordExistingMessage
 msgid "Invalid existing password."
@@ -1554,7 +1560,7 @@ msgstr ""
 #: emailVerifiedMessageHeader
 msgctxt "emailVerifiedMessageHeader"
 msgid "Email address verified"
-msgstr ""
+msgstr "Adreça de correu electrònic verificada"
 
 #: emailVerifiedMessage
 msgid "Your email address has been verified."
@@ -1563,7 +1569,7 @@ msgstr "S''ha verificat el vostre correu electrònic."
 #: emailVerifiedAlreadyMessageHeader
 msgctxt "emailVerifiedAlreadyMessageHeader"
 msgid "Email address verified"
-msgstr ""
+msgstr "Adreça de correu electrònic verificada"
 
 #: emailVerifiedAlreadyMessage
 msgid "Your email address has been verified already."
@@ -1601,7 +1607,7 @@ msgstr ""
 
 #: confirmEmailAddressVerificationHeader
 msgid "Email address validation"
-msgstr ""
+msgstr "Validació de l’adreça de correu electrònic"
 
 #: confirmEmailAddressVerification
 msgid "Confirm validity of e-mail address {0}."
@@ -1685,7 +1691,7 @@ msgstr "Suprimeix el compte"
 
 #: requiredAction.UPDATE_EMAIL
 msgid "Update Email"
-msgstr "Actualitza l''adreça electrònica"
+msgstr "Actualitza l’adreça de correu electrònic"
 
 #: requiredAction.webauthn-register
 msgid "Webauthn Register"
@@ -1705,7 +1711,7 @@ msgstr "Suprimeix la credencial"
 
 #: requiredAction.idp_link
 msgid "Linking Identity Provider"
-msgstr "Proveïdor d''enllaç d''identitats"
+msgstr "Proveïdor d’enllaç d’identitats"
 
 #: requiredAction.CONFIGURE_RECOVERY_AUTHN_CODES
 msgid "Generate Recovery Codes"
@@ -1713,7 +1719,7 @@ msgstr "Genera codis de recuperació"
 
 #: requiredAction.update_user_locale
 msgid "Update User Locale"
-msgstr "Actualitza la configuració regional de l''usuari"
+msgstr "Actualitza la configuració regional de l’usuari"
 
 #: invalidTokenRequiredActions
 msgid "Required actions included in the link are not valid"
@@ -1878,12 +1884,12 @@ msgstr "Entra amb un certificat de client X509."
 #. Recovery Codes
 #: recovery-authn-codes-display-name
 msgid "Recovery Authentication Code"
-msgstr "Codi d''autenticació de recuperació"
+msgstr "Codi d’autenticació de recuperació"
 
 #: recovery-authn-codes-help-text
 msgid "Enter a recovery authentication code from a previously generated list."
 msgstr ""
-"Introduïu un codi d''autenticació de recuperació d''una llista prèviament "
+"Introduïu un codi d’autenticació de recuperació d’una llista prèviament "
 "generada."
 
 #: auth-recovery-code-info-message
@@ -2123,6 +2129,24 @@ msgstr "Nom d''usuari i contrasenya"
 #: idp-username-password-form-help-text
 msgid "Link your account by logging in."
 msgstr "Enllaceu el vostre compte mitjançant una identificació."
+
+#.
+#. Code
+#: code-clipboard-label
+msgid "Show content"
+msgstr ""
+
+#: code-copy-label
+msgid "Copy to clipboard"
+msgstr ""
+
+#: code-copy-success
+msgid "Code copied to clipboard"
+msgstr ""
+
+#: code-copy-failure
+msgid "Failed to copy code to clipboard"
+msgstr ""
 
 #: finalDeletionConfirmation
 msgid ""
