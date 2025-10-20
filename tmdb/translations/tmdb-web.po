@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-13 08:06+0000\n"
+"POT-Creation-Date: 2025-10-20 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3110,6 +3110,10 @@ msgstr ""
 msgid "Add nomination"
 msgstr ""
 
+#: en-US-%3Eawards-%3Eadmin-%3Edelete
+msgid "Delete Award"
+msgstr ""
+
 #: en-US-%3Eawards-%3Eair_date-%3Efuture
 msgid "Airs %{date}"
 msgstr ""
@@ -3123,9 +3127,26 @@ msgctxt "en-US->awards->alternative_names"
 msgid "Alternative Names"
 msgstr ""
 
-#: en-US-%3Eawards-%3Ecategories-%3Etitle
-msgctxt "en-US->awards->categories->title"
-msgid "Categories"
+#: en-US-%3Eawards-%3Eaward
+msgid "Award"
+msgstr ""
+
+#: en-US-%3Eawards-%3Ebroadcast_episode
+msgid "Broadcast Episode"
+msgstr ""
+
+#: en-US-%3Eawards-%3Ebroadcast_episode_tooltip
+msgid "Linking to a TV episode will display production information."
+msgstr ""
+
+#: en-US-%3Eawards-%3Ebroadcast_series
+msgid "Broadcast Series"
+msgstr ""
+
+#: en-US-%3Eawards-%3Ebroadcast_series_tooltip
+msgid ""
+"Linking a TV series allows displaying production information for each "
+"ceremony."
 msgstr ""
 
 #: en-US-%3Eawards-%3Ecategories-%3Eadd_category
@@ -3176,26 +3197,13 @@ msgctxt "en-US->awards->categories->name"
 msgid "Name"
 msgstr ""
 
+#: en-US-%3Eawards-%3Ecategories-%3Etitle
+msgctxt "en-US->awards->categories->title"
+msgid "Categories"
+msgstr ""
+
 #: en-US-%3Eawards-%3Ecategory_empty
 msgid "No nominations for this category."
-msgstr ""
-
-#: en-US-%3Eawards-%3Eceremonies-%3Enumber
-msgctxt "en-US->awards->ceremonies->number"
-msgid "Number"
-msgstr ""
-
-#: en-US-%3Eawards-%3Eceremonies-%3Erelease_date_max
-msgid "Release Date Max"
-msgstr ""
-
-#: en-US-%3Eawards-%3Eceremonies-%3Erelease_date_min
-msgid "Release Date Min"
-msgstr ""
-
-#: en-US-%3Eawards-%3Eceremonies-%3Etitle
-msgctxt "en-US->awards->ceremonies->title"
-msgid "Ceremonies"
 msgstr ""
 
 #: en-US-%3Eawards-%3Eceremonies-%3Eadd_ceremony
@@ -3229,12 +3237,74 @@ msgstr ""
 msgid "Adding new ceremonies has been disabled and locked by a moderator."
 msgstr ""
 
-#: en-US-%3Eawards-%3Enominations-%3Eone
-msgid "1 Nomination"
+#: en-US-%3Eawards-%3Eceremonies-%3Enumber
+msgctxt "en-US->awards->ceremonies->number"
+msgid "Number"
 msgstr ""
 
-#: en-US-%3Eawards-%3Enominations-%3Eother
-msgid "%{count} Nominations"
+#: en-US-%3Eawards-%3Eceremonies-%3Erelease_date_max
+msgid "Release Date Max"
+msgstr ""
+
+#: en-US-%3Eawards-%3Eceremonies-%3Erelease_date_min
+msgid "Release Date Min"
+msgstr ""
+
+#: en-US-%3Eawards-%3Eceremonies-%3Etitle
+msgctxt "en-US->awards->ceremonies->title"
+msgid "Ceremonies"
+msgstr ""
+
+#: en-US-%3Eawards-%3Efield-%3Ehomepage
+msgctxt "en-US->awards->field->homepage"
+msgid "Homepage"
+msgstr ""
+
+#: en-US-%3Eawards-%3Efield-%3Ename
+msgctxt "en-US->awards->field->name"
+msgid "Name"
+msgstr ""
+
+#: en-US-%3Eawards-%3Efield-%3Eoverview
+msgctxt "en-US->awards->field->overview"
+msgid "Overview"
+msgstr ""
+
+#: en-US-%3Eawards-%3Enew_award-%3Eaward_details
+msgctxt "en-US->awards->new_award->award_details"
+msgid "Award Details"
+msgstr ""
+
+#: en-US-%3Eawards-%3Enew_award-%3Eclick_next
+msgid ""
+"This 3 step wizard will walk you through the creation process. To get "
+"started, click next."
+msgstr ""
+
+#: en-US-%3Eawards-%3Enew_award-%3Egetting_started
+msgctxt "en-US->awards->new_award->getting_started"
+msgid "Getting Started"
+msgstr ""
+
+#: en-US-%3Eawards-%3Enew_award-%3Eheader_1
+msgid "New Award"
+msgstr ""
+
+#: en-US-%3Eawards-%3Enew_award-%3Eheader_2
+msgid "Add a New Award"
+msgstr ""
+
+#: en-US-%3Eawards-%3Enew_award-%3Enote
+msgid ""
+"Adding a new award on TMDB is simple and easy. If you have any questions "
+"about how our editing system works make sure to read through our <a href=\""
+"%{bible_href}\">contribition bible</a> or stop by the <a href=\"%{talk_href}"
+"\">forums</a>."
+msgstr ""
+
+#: en-US-%3Eawards-%3Enew_award-%3Everify
+msgctxt "en-US->awards->new_award->verify"
+msgid "Verify and Save"
 msgstr ""
 
 #: en-US-%3Eawards-%3Enominations-%3Eadd_nomination
@@ -3255,6 +3325,14 @@ msgstr ""
 
 #: en-US-%3Eawards-%3Enominations-%3Enomination
 msgid "Nomination"
+msgstr ""
+
+#: en-US-%3Eawards-%3Enominations-%3Eone
+msgid "1 Nomination"
+msgstr ""
+
+#: en-US-%3Eawards-%3Enominations-%3Eother
+msgid "%{count} Nominations"
 msgstr ""
 
 #: en-US-%3Eawards-%3Enominations-%3Etitle
@@ -3317,87 +3395,17 @@ msgstr ""
 msgid "%{count} Wins"
 msgstr ""
 
-#: en-US-%3Eawards-%3Eaward
-msgid "Award"
-msgstr ""
-
-#: en-US-%3Eawards-%3Ebroadcast_episode
-msgid "Broadcast Episode"
-msgstr ""
-
-#: en-US-%3Eawards-%3Ebroadcast_episode_tooltip
-msgid "Linking to a TV episode will display production information."
-msgstr ""
-
-#: en-US-%3Eawards-%3Ebroadcast_series
-msgid "Broadcast Series"
-msgstr ""
-
-#: en-US-%3Eawards-%3Ebroadcast_series_tooltip
-msgid ""
-"Linking a TV series allows displaying production information for each "
-"ceremony."
-msgstr ""
-
-#: en-US-%3Eawards-%3Efield-%3Ehomepage
-msgctxt "en-US->awards->field->homepage"
-msgid "Homepage"
-msgstr ""
-
-#: en-US-%3Eawards-%3Efield-%3Ename
-msgctxt "en-US->awards->field->name"
-msgid "Name"
-msgstr ""
-
-#: en-US-%3Eawards-%3Efield-%3Eoverview
-msgctxt "en-US->awards->field->overview"
-msgid "Overview"
-msgstr ""
-
-#: en-US-%3Eawards-%3Enew_award-%3Eaward_details
-msgctxt "en-US->awards->new_award->award_details"
-msgid "Award Details"
-msgstr ""
-
-#: en-US-%3Eawards-%3Enew_award-%3Eclick_next
-msgid ""
-"This 3 step wizard will walk you through the creation process. To get "
-"started, click next."
-msgstr ""
-
-#: en-US-%3Eawards-%3Enew_award-%3Egetting_started
-msgctxt "en-US->awards->new_award->getting_started"
-msgid "Getting Started"
-msgstr ""
-
-#: en-US-%3Eawards-%3Enew_award-%3Eheader_1
-msgid "New Award"
-msgstr ""
-
-#: en-US-%3Eawards-%3Enew_award-%3Eheader_2
-msgid "Add a New Award"
-msgstr ""
-
-#: en-US-%3Eawards-%3Enew_award-%3Enote
-msgid ""
-"Adding a new award on TMDB is simple and easy. If you have any questions "
-"about how our editing system works make sure to read through our <a href=\""
-"%{bible_href}\">contribition bible</a> or stop by the <a href=\"%{talk_href}"
-"\">forums</a>."
-msgstr ""
-
-#: en-US-%3Eawards-%3Enew_award-%3Everify
-msgctxt "en-US->awards->new_award->verify"
-msgid "Verify and Save"
-msgstr ""
-
-#: en-US-%3Eawards-%3Eadmin-%3Edelete
-msgid "Delete Award"
+#: en-US-%3Eback_options-%3Eaward
+msgid "Back to award"
 msgstr ""
 
 #: en-US-%3Eback_options-%3Eback
 msgctxt "en-US->back_options->back"
 msgid "Back"
+msgstr ""
+
+#: en-US-%3Eback_options-%3Eceremony
+msgid "Back to ceremony"
 msgstr ""
 
 #: en-US-%3Eback_options-%3Eepisode
@@ -3439,14 +3447,6 @@ msgstr ""
 #: en-US-%3Eback_options-%3Etop
 msgctxt "en-US->back_options->top"
 msgid "Back to top"
-msgstr ""
-
-#: en-US-%3Eback_options-%3Eaward
-msgid "Back to award"
-msgstr ""
-
-#: en-US-%3Eback_options-%3Eceremony
-msgid "Back to ceremony"
 msgstr ""
 
 #: en-US-%3Ecertifications-%3Ecertification
@@ -7843,6 +7843,10 @@ msgstr ""
 msgid "This person is already added as a cast member."
 msgstr ""
 
+#: en-US-%3Eerrors-%3Enesting
+msgid "has invalid nesting"
+msgstr ""
+
 #: en-US-%3Eerrors-%3Etv-%3Ecreate_season_locked
 msgid "The creation of new seasons has been locked for this series."
 msgstr ""
@@ -7891,10 +7895,6 @@ msgstr ""
 
 #: en-US-%3Eerrors-%3Etv-%3Emissing_person
 msgid "The person you entered could not be found."
-msgstr ""
-
-#: en-US-%3Eerrors-%3Enesting
-msgid "has invalid nesting"
 msgstr ""
 
 #: en-US-%3Eerrors-%3Ewrong_count
@@ -13161,6 +13161,50 @@ msgctxt "en-US->media->adult"
 msgid "Adult"
 msgstr ""
 
+#: en-US-%3Emedia-%3Ealternative_names-%3Eadd_name
+msgid "Add Name"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ealternative_names-%3Ealternative_names
+msgctxt "en-US->media->alternative_names->alternative_names"
+msgid "Alternative Names"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ealternative_names-%3Ename
+msgctxt "en-US->media->alternative_names->name"
+msgid "Name"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ealternative_names-%3Eno_records
+msgctxt "en-US->media->alternative_names->no_records"
+"en-US->media->alternative_names->no_records"
+msgid "No alternative names have been added."
+msgstr ""
+
+#: en-US-%3Emedia-%3Eaward-%3Eedit-%3Eadult-%3Eadult_award
+msgid "Adult Award"
+msgstr ""
+
+#: en-US-%3Emedia-%3Eaward-%3Eedit-%3Etitle_logos
+msgid "Title Logos"
+msgstr ""
+
+#: en-US-%3Emedia-%3Eaward-%3Eheader-%3Elatest_ceremony
+msgid "Check out the latest ceremony"
+msgstr ""
+
+#: en-US-%3Emedia-%3Eaward-%3Eheader-%3Eupcoming_ceremony
+msgid "Check out the upcoming ceremony"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ecast_credits-%3Ecast_credits
+msgid "Cast Credits"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ecast_credits-%3Eselect
+msgid "Select cast credits..."
+msgstr ""
+
 #: en-US-%3Emedia-%3Echanges-%3Efilters-%3Eclear
 msgctxt "en-US->media->changes->filters->clear"
 msgid "Clear"
@@ -13206,6 +13250,15 @@ msgstr ""
 
 #: en-US-%3Emedia-%3Ecollection-%3Eparts
 msgid "Parts"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ecompanies-%3Ecompanies
+msgctxt "en-US->media->companies->companies"
+msgid "Companies"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ecompanies-%3Eselect
+msgid "Select companies..."
 msgstr ""
 
 #: en-US-%3Emedia-%3Ecompany-%3Eheadquarters
@@ -13366,6 +13419,14 @@ msgstr ""
 
 #: en-US-%3Emedia-%3Econtent_score-%3Escale-%3E9
 msgid "Almost there..."
+msgstr ""
+
+#: en-US-%3Emedia-%3Ecrew_credits-%3Ecrew_credits
+msgid "Crew Credits"
+msgstr ""
+
+#: en-US-%3Emedia-%3Ecrew_credits-%3Eselect
+msgid "Select crew credits..."
 msgstr ""
 
 #: en-US-%3Emedia-%3Eedit-%3Ealternative_title-%3Elock_existing
@@ -13879,7 +13940,6 @@ msgstr ""
 
 #: en-US-%3Emedia-%3Eperson-%3Eedit-%3Ealternative_names-%3Eno_records
 msgctxt "en-US->media->person->edit->alternative_names->no_records"
-"en-US->media->person->edit->alternative_names->no_records"
 msgid "No alternative names have been added."
 msgstr ""
 
@@ -14656,66 +14716,6 @@ msgstr ""
 
 #: en-US-%3Emedia-%3Evideo-%3Etags
 msgid "Tags"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ealternative_names-%3Eadd_name
-msgid "Add Name"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ealternative_names-%3Ealternative_names
-msgctxt "en-US->media->alternative_names->alternative_names"
-msgid "Alternative Names"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ealternative_names-%3Ename
-msgctxt "en-US->media->alternative_names->name"
-msgid "Name"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ealternative_names-%3Eno_records
-msgctxt "en-US->media->alternative_names->no_records"
-msgid "No alternative names have been added."
-msgstr ""
-
-#: en-US-%3Emedia-%3Eaward-%3Eedit-%3Eadult-%3Eadult_award
-msgid "Adult Award"
-msgstr ""
-
-#: en-US-%3Emedia-%3Eaward-%3Eedit-%3Etitle_logos
-msgid "Title Logos"
-msgstr ""
-
-#: en-US-%3Emedia-%3Eaward-%3Eheader-%3Elatest_ceremony
-msgid "Check out the latest ceremony"
-msgstr ""
-
-#: en-US-%3Emedia-%3Eaward-%3Eheader-%3Eupcoming_ceremony
-msgid "Check out the upcoming ceremony"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ecast_credits-%3Ecast_credits
-msgid "Cast Credits"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ecast_credits-%3Eselect
-msgid "Select cast credits..."
-msgstr ""
-
-#: en-US-%3Emedia-%3Ecompanies-%3Ecompanies
-msgctxt "en-US->media->companies->companies"
-msgid "Companies"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ecompanies-%3Eselect
-msgid "Select companies..."
-msgstr ""
-
-#: en-US-%3Emedia-%3Ecrew_credits-%3Ecrew_credits
-msgid "Crew Credits"
-msgstr ""
-
-#: en-US-%3Emedia-%3Ecrew_credits-%3Eselect
-msgid "Select crew credits..."
 msgstr ""
 
 #: en-US-%3Emedia-%3Ewizard-%3Eaward_details
