@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-03 08:03+0000\n"
+"POT-Creation-Date: 2025-11-10 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,14 +64,6 @@ msgstr "Borra"
 #: Select+all
 msgid "Select all"
 msgstr "Seleccionar-ho tot"
-
-#: Reload
-msgid "Reload"
-msgstr "Tornar a carregar"
-
-#: Force+Reload
-msgid "Force Reload"
-msgstr "Forçar la Recàrrega"
 
 #: Toggle+Developer+Tools
 msgid "Toggle Developer Tools"
@@ -1131,6 +1123,10 @@ msgstr "Dràcula"
 msgid "Catppuccin Frappe"
 msgstr ""
 
+#: Settings-%3ETheme+Settings-%3EBase+Theme-%3ECatppuccin+Latte
+msgid "Catppuccin Latte"
+msgstr ""
+
 #: Settings-%3ETheme+Settings-%3EBase+Theme-%3ECatppuccin+Mocha
 msgid "Catppuccin Mocha"
 msgstr ""
@@ -1337,6 +1333,14 @@ msgstr ""
 
 #: Settings-%3ETheme+Settings-%3EMain+Color+Theme-%3ECatppuccin+Frappe+Lavender
 msgid "Catppuccin Frappe Lavender"
+msgstr ""
+
+#: Settings-%3ETheme+Settings-%3EMain+Color+Theme-%3ECatppuccin+Latte+Mauve
+msgid "Catppuccin Latte Mauve"
+msgstr ""
+
+#: Settings-%3ETheme+Settings-%3EMain+Color+Theme-%3ECatppuccin+Latte+Red
+msgid "Catppuccin Latte Red"
 msgstr ""
 
 #: Settings-%3ETheme+Settings-%3EMain+Color+Theme-%3ECatppuccin+Mocha+Rosewater
@@ -2031,12 +2035,12 @@ msgstr ""
 msgid "Hide Channel \"Courses\" Tab"
 msgstr ""
 
-#: Settings-%3EDistraction+Free+Settings-%3EHide+Videos+and+Playlists+Containing+Text
-msgid "Hide Videos and Playlists Containing Text"
+#: Settings-%3EDistraction+Free+Settings-%3EHide+Videos,+Playlists+and+Channels+Containing+Text
+msgid "Hide Videos, Playlists and Channels Containing Text"
 msgstr ""
 
-#: Settings-%3EDistraction+Free+Settings-%3EHide+Videos+and+Playlists+Containing+Text+Placeholder
-msgid "Fragment, Word, or Phrase"
+#: Settings-%3EDistraction+Free+Settings-%3EHide+Videos,+Playlists+and+Channels+Containing+Text+Placeholder
+msgid "Word, Word Fragment, or Phrase"
 msgstr ""
 
 #: Settings-%3EDistraction+Free+Settings-%3EHide+Subscriptions+Videos
@@ -2083,6 +2087,10 @@ msgstr ""
 msgid "Playlist File"
 msgstr ""
 
+#: Settings-%3EData+Settings-%3ESearch+history+file
+msgid "Search history file"
+msgstr ""
+
 #: Settings-%3EData+Settings-%3EExport+Subscriptions
 msgid "Export Subscriptions"
 msgstr "Exporta subscripcions"
@@ -2114,6 +2122,18 @@ msgstr "Importa llistes de reproducció"
 #: Settings-%3EData+Settings-%3EExport+Playlists
 msgid "Export Playlists"
 msgstr "Exporta llistes de reproducció"
+
+#: Settings-%3EData+Settings-%3ESearch+history
+msgid "Search history"
+msgstr ""
+
+#: Settings-%3EData+Settings-%3EImport+search+history
+msgid "Import search history"
+msgstr ""
+
+#: Settings-%3EData+Settings-%3EExport+search+history
+msgid "Export search history"
+msgstr ""
 
 #: Settings-%3EData+Settings-%3EProfile+object+has+insufficient+data,+skipping+item
 msgid "Profile object has insufficient data, skipping item"
@@ -2164,6 +2184,14 @@ msgstr "Totes les llistes de reproducció s'han importat amb èxit"
 #: Settings-%3EData+Settings-%3EAll+playlists+has+been+successfully+exported
 msgid "All playlists has been successfully exported"
 msgstr "Totes les llistes de reproducció s'han exportat amb èxit"
+
+#: Settings-%3EData+Settings-%3EAll+search+history+has+been+successfully+imported
+msgid "All search history has been successfully imported"
+msgstr ""
+
+#: Settings-%3EData+Settings-%3EAll+search+history+has+been+successfully+exported
+msgid "All search history has been successfully exported"
+msgstr ""
 
 #: Settings-%3EData+Settings-%3EUnable+to+read+file
 msgid "Unable to read file"
@@ -3487,35 +3515,23 @@ msgid "Newest First"
 msgstr ""
 
 #: Comments-%3EView+%7BreplyCount%7D+replies
-msgid "View {replyCount} replies"
+msgid "View 1 reply | View {replyCount} replies"
 msgstr ""
 
-#: Comments-%3EView
-msgid "View"
+#: Comments-%3EHide+%7BreplyCount%7D+replies
+msgid "Hide 1 reply | Hide {replyCount} replies"
 msgstr ""
 
-#: Comments-%3EHide
-msgid "Hide"
+#: Comments-%3EView+1+reply+from+%7BchannelName%7D
+msgid "View 1 reply from {channelName}"
 msgstr ""
 
-#: Comments-%3EReplies
-msgid "Replies"
+#: Comments-%3EView+%7BreplyCount%7D+replies+from+%7BchannelName%7D+and+others
+msgid "View {replyCount} replies from {channelName} and others"
 msgstr ""
 
 #: Comments-%3EShow+More+Replies
 msgid "Show More Replies"
-msgstr ""
-
-#: Comments-%3EReply
-msgid "Reply"
-msgstr ""
-
-#: Comments-%3EFrom+%7BchannelName%7D
-msgid "from {channelName}"
-msgstr ""
-
-#: Comments-%3EAnd+others
-msgid "and others"
 msgstr ""
 
 #: Comments-%3EThere+are+no+comments+available+for+this+video
@@ -3676,11 +3692,12 @@ msgid ""
 "the \"{subsection}\" section of the \"{settingsSection}\""
 msgstr ""
 
-#: Tooltips-%3EDistraction+Free+Settings-%3EHide+Videos+and+Playlists+Containing+Text
+#: Tooltips-%3EDistraction+Free+Settings-%3EHide+Videos,+Playlists+and+Channels+Containing+Text
 msgid ""
-"Enter a fragment, word, or phrase (case insensitive) to hide all videos & "
-"playlists whose original titles contain it throughout all of FreeTube, "
-"excluding only History, Your Playlists, and videos inside of playlists."
+"Enter a word, word fragment, or phrase (case insensitive) to hide all "
+"videos, playlists and channels whose original titles contain it throughout "
+"all of FreeTube, excluding only History, Your Playlists, and videos inside "
+"of playlists."
 msgstr ""
 
 #: Tooltips-%3EDistraction+Free+Settings-%3EHide+Videos+on+Watch
@@ -4059,14 +4076,6 @@ msgstr ""
 
 #: KeyboardShortcutPrompt-%3EClose+Window
 msgid "Close window"
-msgstr ""
-
-#: KeyboardShortcutPrompt-%3ERestart+Window
-msgid "Restart window"
-msgstr ""
-
-#: KeyboardShortcutPrompt-%3EForce+Restart+Window
-msgid "Force restart window"
 msgstr ""
 
 #: KeyboardShortcutPrompt-%3EToggle+Developer+Tools
