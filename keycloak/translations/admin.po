@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-08 08:04+0000\n"
+"POT-Creation-Date: 2025-12-15 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,6 +228,33 @@ msgid ""
 msgstr ""
 "Els commutadors «Utilitza JWKS» i «Utilitza un URL JWKS» no poden estar "
 "habilitats al mateix temps."
+
+#.
+#. Shown to an admin when they enter a client specific SSO idle timeout that fails validation
+#: clientIdleExceedsRealmRememberMeIdle
+msgid ""
+"Client session idle timeout cannot exceed realm SSO session idle timeout and "
+"RememberMe idle timeout."
+msgstr ""
+
+#. Shown to an admin when they enter a client specific SSO idle timeout that fails validation
+#: clientSessionIdleTimeoutExceedsRealm
+msgid ""
+"Client session idle timeout cannot exceed realm SSO session idle timeout."
+msgstr ""
+
+#. Shown to an admin when they enter a client specific SSO max lifetime that fails validation
+#: clientSessionMaxLifespanExceedsRealm
+msgid ""
+"Client session max lifespan cannot exceed realm SSO session max lifespan."
+msgstr ""
+
+#. Shown to an admin when they enter a client specific SSO max lifetime that fails validation
+#: clientSessionMaxLifespanExceedsRealmRememberMeMaxSpan
+msgid ""
+"Client session max lifespan cannot exceed realm SSO session max lifespan and "
+"RememberMe Max span."
+msgstr ""
 
 #: error-invalid-value
 msgctxt "error-invalid-value"
