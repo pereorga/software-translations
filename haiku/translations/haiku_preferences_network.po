@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-08 08:04+0000\n"
+"POT-Creation-Date: 2025-12-15 08:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,6 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.12.2\n"
+
+#: IntefaceView
+msgctxt "IntefaceView"
+msgid "no link"
+msgstr "sense enllaç"
 
 #: InterfaceListItem
 msgid "Ethernet device"
@@ -37,6 +42,7 @@ msgid "New…"
 msgstr "Nou..."
 
 #: InterfaceListItem
+msgctxt "InterfaceListItem"
 msgid "no link"
 msgstr "sense enllaç"
 
@@ -55,6 +61,10 @@ msgstr "Passarel·la:"
 #: IntefaceAddressView
 msgid "The netmask defines your local network"
 msgstr "La màscara de xarxa defineix la xarxa local."
+
+#: IntefaceView
+msgid "unknown"
+msgstr "desconegut"
 
 #: IntefaceAddressView
 msgid "Your IP address"
@@ -128,6 +138,10 @@ msgstr "WPA2"
 msgid "Show network status in Deskbar"
 msgstr "Mostra l'estat de la xarxa a la barra d'escriptori"
 
+#: IntefaceView
+msgid "no stateful configuration"
+msgstr "sense configuració amb estat"
+
 #: IntefaceAddressView
 msgid "Mode:"
 msgstr "Mode:"
@@ -152,6 +166,10 @@ msgstr "error de llançament"
 #: IntefaceView
 msgid "Renegotiate"
 msgstr "Renegocia"
+
+#: IntefaceView
+msgid "configuring"
+msgstr "es configura"
 
 #: IntefaceView
 msgid "MAC address:"
