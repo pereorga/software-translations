@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-15 08:04+0000\n"
+"POT-Creation-Date: 2025-12-22 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -638,6 +638,16 @@ msgstr ""
 "Requereix la versió: [accent]{0}[]\n"
 "Cal actualitzar la vostra versió del joc. El mod necessita una versió nova ("
 "potser una distribució alfa o beta) per a funcionar."
+
+#: mod.incompatiblemod.details
+msgid ""
+"This mod is incompatible with the latest version of the game. The author "
+"must update it, and add [accent]minGameVersion: 154[] to its [accent]mod."
+"json[] file."
+msgstr ""
+"This mod is incompatible with the latest version of the game. The author "
+"must update it, and add [accent]minGameVersion: 147[] to its [accent]mod."
+"json[] file."
 
 #: mod.blacklisted.details
 msgid ""
@@ -11010,10 +11020,6 @@ msgstr "Identificador de l’equip que executa el codi"
 msgid "True if the client running the code is on mobile, false otherwise"
 msgstr ""
 "Cert si el client que executa el codi és un dispositiu mòbil; fals altrament."
-
-#: logic.nounitbuild
-msgid "[red]Unit building logic is not allowed here."
-msgstr "[red]Aquí no es permet construir blocs de tipus lògic."
 
 #: lenum.type
 msgid ""
