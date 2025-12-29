@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-08 08:04+0000\n"
+"POT-Creation-Date: 2025-12-29 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,10 +57,6 @@ msgstr "Home Assistant a Facebook"
 msgid "Home Assistant on Twitter"
 msgstr "Home Assistant a Twitter"
 
-#: about.logo.tagline
-msgid "Awaken Your Home"
-msgstr "Desperta la teva llar"
-
 #: about.review.title
 msgid "Leave a review"
 msgstr "Deixa una ressenya"
@@ -96,6 +92,7 @@ msgstr "Color de fons"
 
 #: actions_configurator.rows.icon.title
 msgctxt "actions_configurator.rows.icon.title"
+"actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
@@ -234,10 +231,6 @@ msgctxt "announcement.drop_support.button"
 msgid "Continue"
 msgstr "Continua"
 
-#: announcement.drop_support.button_read_more
-msgid "Read more"
-msgstr "Llegir Més"
-
 #: announcement.drop_support.subtitle
 msgid ""
 "After careful consideration, we will be discontinuing support for iOS 12, 13 "
@@ -269,12 +262,74 @@ msgstr "Ha fallat: %@"
 #: app_intents.perform_action.response_success
 msgctxt "app_intents.perform_action.response_success"
 "app_intents.perform_action.response_success"
+"app_intents.perform_action.response_success"
 msgid "Done"
 msgstr "Fet!"
 
 #: app_intents.widget_action.actions_parameter_configuration
 msgid "Which actions?"
 msgstr "Quines accions?"
+
+#: assist.button.finish_recording.title
+msgid "Tap to finish recording..."
+msgstr ""
+
+#: assist.modern_ui.header.title
+msgctxt "assist.modern_ui.header.title"
+"assist.modern_ui.header.title"
+"assist.modern_ui.header.title"
+"assist.modern_ui.header.title"
+msgid "Assist"
+msgstr ""
+
+#: assist.modern_ui.pipeline.label
+msgctxt "assist.modern_ui.pipeline.label"
+msgid "Pipeline"
+msgstr ""
+
+#: assist.modern_ui.text_field.placeholder
+msgid "Ask me anything..."
+msgstr ""
+
+#: assist.settings.title
+msgid "Assist Settings"
+msgstr ""
+
+#: assist.settings.labs.header
+msgctxt "assist.settings.labs.header"
+msgid "Labs"
+msgstr ""
+
+#: assist.settings.on_device_stt.toggle
+msgid "Enable on-device Speech-to-Text"
+msgstr ""
+
+#: assist.settings.on_device_stt.footer
+msgid ""
+"Use Apple's on-device speech recognition for improved privacy. Your voice "
+"will be processed locally and transcribed to text before being sent to your "
+"server. Not all languages are supported."
+msgstr ""
+
+#: assist.settings.modern_ui.toggle
+msgid "Experimental UI"
+msgstr ""
+
+#: assist.settings.modern_ui.theme.label
+msgid "Theme"
+msgstr ""
+
+#: assist.settings.modern_ui.header
+msgctxt "assist.settings.modern_ui.header"
+msgid "Labs"
+msgstr ""
+
+#: assist.settings.modern_ui.footer
+msgid ""
+"Enable the new modern interface design for Assist. This is a labs feature "
+"and may have limited functionality as well as it can be removed without "
+"previous notice."
+msgstr ""
 
 #: cancel_label
 msgctxt "cancel_label"
@@ -1064,19 +1119,10 @@ msgctxt "notifications_configurator.settings.header"
 msgid "Settings"
 msgstr "Configuració"
 
-#: off_label
-msgctxt "off_label"
-msgid "Off"
-msgstr "Desactivat"
-
 #: ok_label
 msgctxt "ok_label"
 msgid "OK"
 msgstr "D'acord"
-
-#: on_label
-msgid "On"
-msgstr "Activat"
 
 #: onboarding.connect.mac_safari_warning.message
 msgid "Try restarting Safari if the login form does not open."
@@ -1129,10 +1175,6 @@ msgstr "Codi d'error:"
 #: onboarding.device_name_check.error.prompt
 msgid "What device name should be used instead?"
 msgstr "Quin nom de dispositiu hauria d'utilitzar?"
-
-#: onboarding.device_name_check.error.rename_action
-msgid "Rename"
-msgstr "Reanomena"
 
 #: onboarding.device_name_check.error.title
 msgid "A device already exists with the name '%1$@'"
@@ -1303,10 +1345,6 @@ msgstr "S'ha descobert: %@"
 msgid "Enter Address Manually"
 msgstr "Introduïu l'adreça manualment"
 
-#: onboarding.scanning.manual_hint
-msgid "Not finding your server?"
-msgstr "No trobeu el vostre servidor?"
-
 #: onboarding.scanning.title
 msgid "Scanning for Servers"
 msgstr "S'està cercant servidors"
@@ -1356,14 +1394,6 @@ msgstr "Utilitza el nom de la zona"
 #: settings.connection_section.activate_server
 msgid "Activate"
 msgstr "Activa"
-
-#: settings.connection_section.activate_swipe_hint
-msgid ""
-"Quickly activate using a three-finger swipe left or right when viewing a "
-"server."
-msgstr ""
-"Activeu-lo ràpidament fent lliscar tres dits cap a l'esquerra o cap a la "
-"dreta quan visualitzeu un servidor."
 
 #: settings.connection_section.add_server
 msgid "Add Server"
@@ -1499,14 +1529,6 @@ msgstr "Sensors enviats"
 msgctxt "settings.connection_section.servers"
 msgid "Servers"
 msgstr "Servidors"
-
-#: settings.connection_section.ssid_permission_message
-msgid ""
-"Accessing SSIDs in the background requires 'Always' location permission. Tap "
-"here to change your settings."
-msgstr ""
-"L'accés a SSIDs en segon pla requereix el permís de localització establert "
-"com a \"Sempre\". Toca aquí per canviar la configuració."
 
 #: settings.connection_section.validate_error.edit_url
 msgid "Edit URL"
@@ -1687,10 +1709,6 @@ msgstr ""
 "registrat de les notificacions push així com també s'eliminarà de la "
 "configuració del vostre Home Assistant."
 
-#: settings.reset_section.reset_alert.progress_message
-msgid "Resetting…"
-msgstr "S'està restablint …"
-
 #: settings.reset_section.reset_alert.title
 msgctxt "settings.reset_section.reset_alert.title"
 msgid "Reset"
@@ -1705,16 +1723,10 @@ msgstr "Restablir"
 msgid "Reset frontend cache"
 msgstr "Restableix la memòria cau del frontend"
 
-#: settings.server_select.page_title
-msgctxt "settings.server_select.page_title"
-"settings.server_select.page_title"
-"settings.server_select.page_title"
-"settings.server_select.page_title"
-msgid "Server"
-msgstr "Servidor"
-
 #: settings.server_select.title
 msgctxt "settings.server_select.title"
+"settings.server_select.title"
+"settings.server_select.title"
 msgid "Server"
 msgstr "Servidor"
 
@@ -1844,10 +1856,6 @@ msgstr "Taronja de foc"
 msgid "Green"
 msgstr "Verd"
 
-#: settings_details.general.app_icon.enum.ha_blue
-msgid "Home Assistant Blue"
-msgstr "Blau Home Assistant"
-
 #: settings_details.general.app_icon.enum.old_beta
 msgid "Old Beta"
 msgstr "Beta antiga"
@@ -1883,10 +1891,6 @@ msgstr "Orgull: 8 colors"
 #: settings_details.general.app_icon.enum.pride_rainbow
 msgid "Pride: Rainbow"
 msgstr "Orgull: Arc de Sant Martí"
-
-#: settings_details.general.app_icon.enum.pride_rainbow_invert
-msgid "Pride: Rainbow (Inverted)"
-msgstr "Orgull: Arc de Sant Martí (Invertit)"
 
 #: settings_details.general.app_icon.enum.pride_trans
 msgid "Pride: Trans"
@@ -2394,12 +2398,6 @@ msgstr ""
 "dispositiu. Heu de reiniciar l'aplicació perquè els canvis en aquesta "
 "configuració tinguin efecte."
 
-#: settings_details.privacy.crash_reporting.sentry
-msgid "This feature currently uses Sentry as the report destination."
-msgstr ""
-"Actualment, aquesta característica utilitza Sentry com a destinació de "
-"l'informe."
-
 #: settings_details.privacy.crash_reporting.title
 msgid "Crash Reporting"
 msgstr "Informes d'Errors"
@@ -2485,7 +2483,6 @@ msgstr ""
 "automàticament amb més freqüència."
 
 #: settings_sensors.periodic_update.off
-msgctxt "settings_sensors.periodic_update.off"
 msgid "Off"
 msgstr "Desactivat"
 
@@ -2510,14 +2507,6 @@ msgstr "'entrat' en l'esdeveniment"
 msgid "Couldn't Send"
 msgstr "No s'ha pogut enviar"
 
-#: success_label
-msgid "Success"
-msgstr "Èxit"
-
-#: thread.credentials.no_credential_available
-msgid "You don't have credentials available on your iCloud Keychain."
-msgstr "No tens credencials disponibles al clauer de l'iCloud."
-
 #: thread.credentials.share_credentials.no_credentials_message
 msgid ""
 "Make sure your are logged in with your iCloud account which is owner of a "
@@ -2529,10 +2518,6 @@ msgstr ""
 #: thread.credentials.share_credentials.no_credentials_title
 msgid "You don't have credentials to share"
 msgstr "No teniu credencials per compartir"
-
-#: thread.credentials.share_credentials_button_title
-msgid "Share credential with Home Assistant"
-msgstr "Comparteix la credencial amb Home Assistant"
 
 #: thread.store_in_keychain.error.title
 msgid "Operation failed"
@@ -2669,10 +2654,6 @@ msgstr "El servei (ex. Homeassistant.turn_on) ha de ser definit"
 #: url_handler.x_callback_url.error.templateMissing
 msgid "A renderable template must be defined"
 msgstr "S'ha de definir una plantilla renderizable"
-
-#: username_label
-msgid "Username"
-msgstr "Nom d'usuari"
 
 #: watch.configurator.delete.button
 msgid "Delete Complication"
@@ -3489,6 +3470,23 @@ msgstr "No hi ha pàgines disponibles"
 msgctxt "widgets.open_page.title"
 msgid "Open Page"
 msgstr "Obre la pàgina"
+
+#: camera_list.no_area
+msgid "Not in a room"
+msgstr ""
+
+#: camera_list.reorder.section.title
+msgid "Reorder sections"
+msgstr ""
+
+#: camera_list.edit.on.title
+msgctxt "camera_list.edit.on.title"
+msgid "Done"
+msgstr ""
+
+#: camera_list.edit.off.title
+msgid "Edit"
+msgstr ""
 
 #: yes_label
 msgid "Yes"
