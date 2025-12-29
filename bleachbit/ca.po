@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-16 23:52-0600\n"
+"POT-Creation-Date: 2025-12-25 16:46-0700\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -97,6 +97,7 @@ msgstr "Informes de fallades inesperades"
 msgid "Delete the files"
 msgstr "Suprimeix els fitxers"
 
+#. DOM=Document Object Model
 #. DOM=Document Object Model
 #. DOM=Document Object Model
 #. DOM=Document Object Model
@@ -535,6 +536,11 @@ msgstr "path=\"%s\" no és un patró global"
 msgid "Clean file"
 msgstr "Neteja el fitxer"
 
+#, fuzzy
+#| msgid "Cookies"
+msgid "Clean cookies"
+msgstr "Galetes"
+
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the clean button on the main window.
 #. It makes permanent changes: usually deleting files, sometimes
@@ -635,6 +641,9 @@ msgstr ""
 "hi les correccions, els paquets de servei i les actualitzacions de "
 "l'Internet Explorer"
 
+msgid "This option may prevent uninstalling some updates."
+msgstr ""
+
 msgid "Clipboard"
 msgstr "Porta-retalls"
 
@@ -651,16 +660,24 @@ msgstr "Neteja personalitzada"
 msgid "Delete user-specified files and folders"
 msgstr "Suprimeix fitxers i carpetes especificats per l'usuari"
 
-#. TRANSLATORS: 'free' means 'unallocated'
-msgid "Free disk space"
-msgstr "Espai de disc lliure"
+#. TRANSLATORS: 'empty' means 'unallocated'
+msgid "Empty space"
+msgstr ""
 
-#. TRANSLATORS: 'free' means 'unallocated'
-msgid "Overwrite free disk space to hide deleted files"
+#. TRANSLATORS: 'empty' means 'unallocated'
+#, fuzzy
+#| msgid "Overwrite free disk space to hide deleted files"
+msgid "Wipe empty space to hide deleted files"
 msgstr "Sobreescriu l'espai de disc lliure per amagar els fitxers suprimits"
 
-msgid "This option is very slow."
-msgstr "Aquesta opció és molt lenta."
+msgid ""
+"Wiping empty space removes traces of files that were deleted without "
+"shredding, but it will not free additional disk space. The process can take "
+"a very long time and may temporarily slow your computer. It is not necessary "
+"if your drive is protected with full-disk encryption. The method works best "
+"on traditional hard drives. On solid-state drives, it is less reliable, and "
+"frequent use contributes to wear."
+msgstr ""
 
 msgid "The system in general"
 msgstr "El sistema en general"
@@ -668,17 +685,22 @@ msgstr "El sistema en general"
 msgid "System"
 msgstr "Sistema"
 
-#. TRANSLATORS: 'Free' means 'unallocated.'
+#. TRANSLATORS: 'Empty' means 'unallocated.'
 #. %s expands to a path such as C:\ or /tmp/
 #, python-format
-msgid "Overwrite free disk space %s"
-msgstr "Sobreescriu l'espai lliure a %s"
+msgid "Wipe empty space in %s"
+msgstr ""
 
 msgid "Loading native cleaners."
 msgstr "S'estan carregant els netejadors natius."
 
 msgid "Importing cleaners from Winapp2.ini."
 msgstr "S'estan important netejadors des de Winapp2.ini."
+
+#, fuzzy, python-format
+#| msgid "_Wipe Free Space"
+msgid "Wipe empty space %s"
+msgstr "_Neteja l'espai lliure"
 
 #, python-format
 msgid "not a valid cleaner: %s"
@@ -708,7 +730,9 @@ msgstr ""
 msgid "shred specific files or folders"
 msgstr "tritura fitxers o carpetes específiques"
 
-msgid "wipe free space in the given paths"
+#, fuzzy
+#| msgid "wipe free space in the given paths"
+msgid "wipe empty space in the given paths"
 msgstr "neteja l'espai lliure als camins donats"
 
 msgid "overwrite files to hide contents"
@@ -741,8 +765,12 @@ msgstr "no demanis privilegis d'administrador"
 msgid "update winapp2.ini, if a new version is available"
 msgstr "actualitza winapp2.ini si hi ha una versió nova disponible"
 
+#, fuzzy
+#| msgid ""
+#| "Specify only one of these commands: --list-cleaners, --wipe-free-space, --"
+#| "preview, --clean"
 msgid ""
-"Specify only one of these commands: --list-cleaners, --wipe-free-space, --"
+"Specify only one of these commands: --list-cleaners, --wipe-empty-space, --"
 "preview, --clean"
 msgstr ""
 "Especifiqueu només una d'aquestes ordres: --list-cleaners, --wipe-free-"
@@ -751,10 +779,14 @@ msgstr ""
 msgid "Checking online for updates to winapp2.ini"
 msgstr "S'estan comprovant les actualitzacions en línia per a winapp2.ini"
 
-msgid "No directories given for --wipe-free-space"
+#, fuzzy
+#| msgid "No directories given for --wipe-free-space"
+msgid "No directories given for --wipe-empty-space"
 msgstr "No s'han indicat carpetes per a --wipe-free-space"
 
-msgid "Wiping free space can take a long time."
+#, fuzzy
+#| msgid "Wiping free space can take a long time."
+msgid "Wiping empty space can take a long time."
 msgstr "La neteja de l'espai lliure pot tardar molt."
 
 msgid "No work to do. Specify options."
@@ -882,6 +914,9 @@ msgstr ""
 msgid "Are you sure you want to permanently delete these files?"
 msgstr "Segur que voleu suprimir permanentment aquests fitxers?"
 
+msgid "Confirm before delete"
+msgstr "Confirma abans de suprimir"
+
 #, python-format
 msgid ""
 "Because you are running as root, please manually open this link in a web "
@@ -948,6 +983,38 @@ msgstr ""
 msgid "Generating files"
 msgstr "S'estan generant els fitxers"
 
+msgid "Manage cookies to keep"
+msgstr ""
+
+msgid "Select the cookies to keep when cleaning cookies across browsers."
+msgstr ""
+
+#, fuzzy
+#| msgid "Search tool"
+msgid "Search:"
+msgstr "Eina de cerca"
+
+msgid "Filter cookies..."
+msgstr ""
+
+msgid "Show Selected"
+msgstr ""
+
+msgid "Only show cookies that are currently selected"
+msgstr ""
+
+msgid "Host"
+msgstr ""
+
+msgid "Select All"
+msgstr ""
+
+msgid "Deselect All"
+msgstr ""
+
+msgid "Keep Selected"
+msgstr ""
+
 msgid "Preferences"
 msgstr "Preferències"
 
@@ -960,8 +1027,8 @@ msgstr "Unitats"
 msgid "Languages"
 msgstr "Idiomes"
 
-msgid "Whitelist"
-msgstr "Llista blanca"
+msgid "Keep list"
+msgstr ""
 
 msgid "Check periodically for software updates via the Internet"
 msgstr "Comprova periòdicament si hi ha actualitzacions"
@@ -991,6 +1058,9 @@ msgstr "Preservació automàtica de l’idioma %s."
 msgid "Language:"
 msgstr "Llengua:"
 
+msgid "Restart BleachBit for full effect."
+msgstr ""
+
 msgid "Hide irrelevant cleaners"
 msgstr "Amaga els netejadors irrellevants"
 
@@ -1006,9 +1076,6 @@ msgstr ""
 
 msgid "Exit after cleaning"
 msgstr "Surt després de netejar"
-
-msgid "Confirm before delete"
-msgstr "Confirma abans de suprimir"
 
 msgid "Use IEC sizes (1 KiB = 1024 bytes) instead of SI (1 kB = 1000 bytes)"
 msgstr ""
@@ -1032,8 +1099,10 @@ msgstr "Tema de Windows 10"
 msgid "Choose a folder"
 msgstr "Trieu una carpeta"
 
-msgid ""
-"Choose a writable folder for each drive for which to overwrite free space."
+#, fuzzy
+#| msgid ""
+#| "Choose a writable folder for each drive for which to overwrite free space."
+msgid "Choose a writable folder for each drive for which to wipe empty space."
 msgstr ""
 "Trieu una carpeta amb permisos d'escriptura per a cada unitat per "
 "sobreescriure l'espai lliure."
@@ -1062,11 +1131,8 @@ msgstr "Codi"
 msgid "Name"
 msgstr "Nom"
 
-msgid "This path already exists in the whitelist."
+msgid "This path already exists in the keep list."
 msgstr ""
-
-msgid "Error"
-msgstr "Error"
 
 msgid "This path already exists in the custom list."
 msgstr ""
@@ -1076,6 +1142,21 @@ msgstr "Fitxer"
 
 msgid "Folder"
 msgstr "Carpeta"
+
+#. TRANSLATORS: %s is a file or folder path that was just added
+#, python-format
+msgid "Added: %s"
+msgstr ""
+
+#. TRANSLATORS: %s is a file or folder path that was just removed
+#, fuzzy, python-format
+#| msgctxt "button"
+#| msgid "Remove"
+msgid "Removed: %s"
+msgstr "Suprimeix"
+
+msgid "Manage cookies to keep..."
+msgstr ""
 
 msgid "These paths will not be deleted or modified."
 msgstr "Aquests camins no es modificaran ni se suprimiran."
@@ -1170,9 +1251,6 @@ msgstr ""
 msgid "Resetting the configuration file because it is corrupt: %s"
 msgstr "S'està restablint el fitxer de configuració perquè està danyat: %s"
 
-msgid "Quit"
-msgstr ""
-
 msgid "You must select an operation"
 msgstr "Heu de seleccionar una operació"
 
@@ -1206,6 +1284,12 @@ msgstr ""
 "de la sobreescriptura del contingut dels fitxers."
 
 msgid ""
+"You elevated privileges using a different account to clean shared parts of "
+"the system. User-specific paths will refer to the administrator account, so "
+"to clean your profile, run BleachBit again as a standard user."
+msgstr ""
+
+msgid ""
 "There is no official version of BleachBit on the Microsoft Store. Get the "
 "genuine version at https://www.bleachbit.org where it is always free of "
 "charge."
@@ -1218,6 +1302,12 @@ msgstr ""
 #. previews changes.
 msgid "Preview"
 msgstr "Previsualitza"
+
+#. TRANSLATORS: this is the context menu
+#, fuzzy
+#| msgid "Cookies"
+msgid "Manage Cookies"
+msgstr "Galetes"
 
 msgid "Preview files in the selected operations (without deleting any files)"
 msgstr ""
@@ -1241,6 +1331,13 @@ msgid "Update BleachBit to the latest version"
 msgstr "Actualitzeu el BleachBit a la versió més recent"
 
 msgid "Press F11 to exit fullscreen mode."
+msgstr ""
+
+#. TRANSLATORS: This message is shown when orphaned temporary files
+#. from an interrupted disk wipe operation are detected.
+msgid ""
+"BleachBit detected leftover files from an interrupted disk wipe operation. "
+"Would you like to preview them with an option to delete them?"
 msgstr ""
 
 msgid "Error when checking for updates: "
@@ -1457,16 +1554,20 @@ msgstr ""
 msgid "Error: {operation_option}: {command}"
 msgstr "Error: {operation_option}: {command}"
 
-#. TRANSLATORS: 'free' means 'unallocated'
-msgid "Please wait.  Wiping free disk space."
+#. TRANSLATORS: 'empty' means 'unallocated'
+#, fuzzy
+#| msgid "Please wait.  Wiping free disk space."
+msgid "Please wait. Wiping empty space."
 msgstr "Espereu. S'està netejant l'espai lliure del disc."
 
-msgid ""
-"Wiping free disk space erases remnants of files that were deleted without "
-"shredding. It does not free up space."
+msgid "To stop this process, press the abort button on the toolbar and wait."
 msgstr ""
-"La neteja de l'espai lliure al disc esborra les restes dels fitxers que "
-"s'han suprimit sense triturar-los. No allibera espai del disc."
+
+msgid ""
+"If the application is force closed before the process is complete, large "
+"files may remain on the disk, and they may use all available space. To "
+"remove them, start BleachBit again."
+msgstr ""
 
 #. TRANSLATORS: %s is replaced with Firefox, System, etc.
 #, python-format
@@ -1531,7 +1632,9 @@ msgstr "T_ritura carpetes"
 msgid "Shred Paths from Clipboard"
 msgstr "Tritura els camins del porta-retalls"
 
-msgid "_Wipe Free Space"
+#, fuzzy
+#| msgid "_Wipe Free Space"
+msgid "_Wipe Empty Space"
 msgstr "_Neteja l'espai lliure"
 
 msgid "_Make Chaff"
@@ -1548,6 +1651,29 @@ msgstr "_Ajuda"
 
 msgid "_About BleachBit"
 msgstr "_Quant al BleachBit"
+
+#~ msgid "Free disk space"
+#~ msgstr "Espai de disc lliure"
+
+#~ msgid "This option is very slow."
+#~ msgstr "Aquesta opció és molt lenta."
+
+#, python-format
+#~ msgid "Overwrite free disk space %s"
+#~ msgstr "Sobreescriu l'espai lliure a %s"
+
+#~ msgid "Whitelist"
+#~ msgstr "Llista blanca"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid ""
+#~ "Wiping free disk space erases remnants of files that were deleted without "
+#~ "shredding. It does not free up space."
+#~ msgstr ""
+#~ "La neteja de l'espai lliure al disc esborra les restes dels fitxers que "
+#~ "s'han suprimit sense triturar-los. No allibera espai del disc."
 
 #~ msgid "Audio player"
 #~ msgstr "Reproductor d'àudio"
