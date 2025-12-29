@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:04+0000\n"
+"POT-Creation-Date: 2025-12-29 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,10 @@ msgctxt "InstallProgress"
 msgid "Cancel"
 msgstr "Cancel·la"
 
+#: InstallProgress
+msgid "Failed to rename existing loader!"
+msgstr "Ha fallat canviar el nom del carregador existent!"
+
 #: InstallerWindow
 msgid "Are you sure you want to to stop the installation?"
 msgstr "Segur que voleu interrompre la instal·lació?"
@@ -86,13 +90,25 @@ msgstr "Segur que voleu interrompre la instal·lació?"
 msgid "Installer"
 msgstr "Instal·lador"
 
+#: InstallProgress
+msgid "EFI loader successfully installed!"
+msgstr "El carregador EFI s'ha instal·lat correctament!"
+
 #: InstallerWindow
 msgid "Press the 'Begin' button to install from '%1s' onto '%2s'."
 msgstr "Premeu el botó Comença per instal·lar des de %1s a %2s."
 
+#: InstallProgress
+msgid "Failed to read EFI loader file!"
+msgstr "Ha fallat llegir el fitxer del carregador EFI!"
+
 #: InstallerWindow
 msgid "Are you sure you want to stop the installation?"
 msgstr "Segur que voleu interrompre la instal·lació?"
+
+#: InstallProgress
+msgid "Failed to create EFI loader directory!"
+msgstr "Ha fallat crear el directori del carregador EFI!"
 
 #: InstallerApp
 msgid "README"
@@ -233,6 +249,10 @@ msgid "???"
 msgstr "???"
 
 #: InstallProgress
+msgid "Rename"
+msgstr "Canvia'n el nom"
+
+#: InstallProgress
 msgid "Install anyway"
 msgstr "Instal·la tanmateix"
 
@@ -257,6 +277,10 @@ msgstr ""
 "aquesta eina. Tot i que, al llarg dels anys, el Gestor de discs s’ha provat "
 "força a fons, es recomana tenir còpies de seguretat actualitzades de les "
 "altres particions del sistema, només per si de cas…"
+
+#: InstallProgress
+msgid "Unknown type"
+msgstr "Tipus desconegut"
 
 #: InstallerApp
 msgid ""
@@ -289,6 +313,10 @@ msgstr "Amaga els paquets opcionals"
 msgid "Have fun and thanks for trying out Haiku!"
 msgstr "Divertiu-vos i gràcies per provar el Haiku!"
 
+#: InstallProgress
+msgid "Failed to copy EFI loader to selected partition!"
+msgstr "Ha fallat copiar el carregador EFI a la partició seleccionada!"
+
 #: InstallerApp
 msgctxt "InstallerApp"
 msgid "Quit"
@@ -306,6 +334,10 @@ msgstr "Error en escriure el sector d'arrencada."
 msgctxt "InstallerWindow"
 msgid "OK"
 msgstr "D'acord"
+
+#: InstallProgress
+msgid "Failed to find EFI loader file!"
+msgstr "Ha fallat trobar el fitxer del carregador EFI!"
 
 #: InstallerApp
 msgid ""
@@ -346,7 +378,11 @@ msgstr "S'ha escrit correctament el sector d'arrencada."
 
 #: InstallerWindow
 msgid "Failed to launch BootManager"
-msgstr "No s'ha pogut iniciar el gestor d'arrencada."
+msgstr "Ha fallat iniciar el gestor d'arrencada."
+
+#: InstallerWindow
+msgid "Install EFI loader"
+msgstr "Instal·lació del carregador EFI"
 
 #: InstallProgress
 msgid "Writing bootsector."
@@ -365,6 +401,10 @@ msgstr ""
 #: InstallerWindow
 msgid "Restart"
 msgstr "Reinicia"
+
+#: InstallProgress
+msgid " (boot disk)"
+msgstr " (disc d'arrencada)"
 
 #: InstallProgress
 msgid "The disk can't be mounted. Please choose a different disk."
@@ -469,6 +509,14 @@ msgstr ""
 "No podeu instal·lar el contingut d'un disc en si mateix. Si us plau, trieu-"
 "ne un altre."
 
+#: InstallProgress
+msgid ""
+"An EFI loader is already installed on the selected partition! Would you like "
+"to rename it?"
+msgstr ""
+"Ja hi ha un carregador EFI instal·lat a la partició seleccionada! Voleu "
+"canviar-ne el nom?"
+
 #: InstallerWindow
 msgid ""
 "Please close the BootManager and DriveSetup windows before closing the "
@@ -481,6 +529,10 @@ msgstr ""
 msgid "Choose the source disk from the pop-up menu. Then click 'Begin'."
 msgstr ""
 "Trieu el disc d'origen al menú emergent. A continuació, cliqueu a Comença."
+
+#: InstallerWindow
+msgid "No valid EFI system data partitions found"
+msgstr "No s'ha trobat cap partició de dades del sistema EFI vàlida."
 
 #: InstallProgress
 msgctxt "InstallProgress"
@@ -510,6 +562,10 @@ msgstr "Eines"
 #: InstallerWindow
 msgid "scanning…"
 msgstr "s'escaneja..."
+
+#: InstallProgress
+msgid "Failed to access installation destination!"
+msgstr "Ha fallat accedir a la destinació d'instal·lació!"
 
 #: InstallerWindow
 msgid ""
