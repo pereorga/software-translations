@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 08:04+0000\n"
+"POT-Creation-Date: 2026-01-12 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2049,12 +2049,12 @@ msgid "Passkey Error"
 msgstr "Error de la clau de seguretat"
 
 #: webauthn-error-registration
-msgid "Failed to register your Passkey.<br /> {0}"
-msgstr "No s''ha pogut registrar la vostra clau de seguretat.<br /> {0}"
+msgid "Failed to register your Passkey. {0}"
+msgstr "No s''ha pogut registrar la vostra clau de seguretat. {0}"
 
 #: webauthn-error-api-get
-msgid "Failed to authenticate by the Passkey.<br /> {0}"
-msgstr "No s''ha pogut identificar amb la clau de seguretat.<br /> {0}"
+msgid "Failed to authenticate by the Passkey. {0}"
+msgstr "No s''ha pogut identificar amb la clau de seguretat. {0}"
 
 #: webauthn-error-different-user
 msgid "First authenticated user is not the one authenticated by the Passkey."
@@ -2062,13 +2062,12 @@ msgstr ""
 "L''usuari identificat primer no és l''autenticat per la clau de seguretat."
 
 #: webauthn-error-auth-verification
-msgid "Passkey authentication result is invalid.<br /> {0}"
-msgstr ""
-"El resultat de l''autenticació amb clau de seguretat no és vàlid.<br />{0}"
+msgid "Passkey authentication result is invalid. {0}"
+msgstr "El resultat de l''autenticació amb clau de seguretat no és vàlid.{0}"
 
 #: webauthn-error-register-verification
-msgid "Passkey registration result is invalid.<br /> {0}"
-msgstr "El resultat del registre amb clau de seguretat no és vàlid.<br />{0}"
+msgid "Passkey registration result is invalid. {0}"
+msgstr "El resultat del registre amb clau de seguretat no és vàlid.{0}"
 
 #: webauthn-error-user-not-found
 msgid "Unknown user authenticated by the Passkey."
