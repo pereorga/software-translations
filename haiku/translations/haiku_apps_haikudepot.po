@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-05 08:04+0000\n"
+"POT-Creation-Date: 2026-01-12 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,13 +30,13 @@ msgstr "No s'ha pogut crear l'usuari nou."
 msgid "An unexpected error has been sent from the server [%li]"
 msgstr "S'ha enviat un error inesperat des del servidor [%li]"
 
-#: UserLoginWindow
-msgid "Create account"
-msgstr "Creeu un compte"
-
 #: PopulatePkgChangelogFromServerProcess
 msgid "Fetching changelog for package"
 msgstr "S'obté el registre de canvis per al paquet"
+
+#: UserLoginWindow
+msgid "Create account"
+msgstr "Creeu un compte"
 
 #: ToLatestUserUsageConditionsWindow
 msgid "Agree"
@@ -263,6 +263,10 @@ msgstr "Inicia el dimoni de paquets"
 #: UserLoginWindow
 msgid "There are problems in the supplied data:"
 msgstr "Hi ha problemes en les dades subministrades:"
+
+#: MainWindow
+msgid "Desktop and non-desktop packages"
+msgstr "Paquets d'escriptori i no d'escriptori"
 
 #: UserUsageConditions
 msgid "The user '%Nickname%' has not agreed to any usage conditions."
@@ -726,13 +730,13 @@ msgstr ""
 "Dipòsit del Haiku des d’aquest ordinador? En podeu canviar les preferències "
 "a la finestra de \\Paràmetres\\ més endavant."
 
-#: RatePackageWindow
-msgid "User rating"
-msgstr "Puntuació de l'usuari"
-
 #: MainWindow
 msgid "Installed packages"
 msgstr "Paquets instal·lats"
+
+#: RatePackageWindow
+msgid "User rating"
+msgstr "Puntuació de l'usuari"
 
 #: PackageListView
 msgid "Date"
@@ -880,14 +884,14 @@ msgctxt "SettingsWindow"
 msgid "Cancel"
 msgstr "Cancel·la"
 
+#: PackageListView
+msgid "Inactive"
+msgstr "Inactiu"
+
 #: RatePackageWindow
 msgctxt "RatePackageWindow"
 msgid "Cancel"
 msgstr "Cancel·la"
-
-#: PackageListView
-msgid "Inactive"
-msgstr "Inactiu"
 
 #: UserLoginWindow
 msgid "Nickname:"
@@ -1007,6 +1011,10 @@ msgstr ""
 "La informació sobre com veure els registres està disponible a la secció del "
 "Dipòsit del Haiku de la Guia d'usuari del Haiku."
 
+#: ServerHelper
+msgid "Stop network use"
+msgstr "Atura l'ús de la xarxa"
+
 #: MainWindow
 msgid "View agreed usage conditions…"
 msgstr "Consulteu les condicions d’ús acordades..."
@@ -1035,6 +1043,10 @@ msgstr "Aplica-ho"
 #: UserLoginWindow
 msgid "View the password requirements"
 msgstr "Mostra els requisits de la contrasenya"
+
+#: MainWindow
+msgid "Desktop packages only"
+msgstr "Només paquets d'escriptori"
 
 #: ToLatestUserUsageConditionsWindow
 msgid ""
@@ -1081,6 +1093,10 @@ msgstr "D'acord"
 #: LocalPkgDataLoadProcess
 msgid "Reading repository data"
 msgstr "Es llegeixen les dades del repositori."
+
+#: MainWindow
+msgid "Native desktop packages only"
+msgstr "Només paquets d'escriptori nadius"
 
 #: InstallPackageProcess
 msgctxt "InstallPackageProcess"

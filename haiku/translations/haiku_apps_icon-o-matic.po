@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-05 08:04+0000\n"
+"POT-Creation-Date: 2026-01-12 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,6 +237,7 @@ msgstr "Opacitat"
 
 #: Icon-O-Matic-ColorPicker
 msgctxt "Icon-O-Matic-ColorPicker"
+"Icon-O-Matic-ColorPicker"
 msgid "OK"
 msgstr "D'acord"
 
@@ -251,6 +252,19 @@ msgstr "Error: "
 #: Icon-O-Matic-ResetTransformationCmd
 msgid "Reset {0, plural, one{transformation} other{transformations}}"
 msgstr "Restableix {0, plural, one{transformació} other{transformacions}}"
+
+#: Icon-O-Matic-SVGExport
+msgid ""
+"SVG does not support some gradient types (conic, diamond, xy, sqrt_xy).\\n"
+"\\n"
+"They will be exported as linear approximations and may look different in "
+"other viewers."
+msgstr ""
+"El format SVG no admet alguns tipus de gradient (cònic, diamant, xy, sqrt_xy)"
+"\\n"
+"\\n"
+"S'exportaran com a aproximacions lineals i és possible que es vegin "
+"diferentment en altres visualitzadors."
 
 #: Icon-O-Matic-AssignStyleCmd
 msgid "Assign style"
@@ -267,6 +281,10 @@ msgstr "Canvia a la graella"
 #: Icon-O-Matic-Main
 msgid "Opening the document failed!"
 msgstr "Ha fallat obrir el document!"
+
+#: Icon-O-Matic-SVGExport
+msgid "SVG export"
+msgstr "Exportació SVG"
 
 #: Icon-O-Matic-RemoveStylesCmd
 msgid "Remove {0, plural, one{style} other{styles}}"
@@ -344,6 +362,11 @@ msgstr "Duplica"
 #: Icon-O-Matic-PropertyNames
 msgid "Alpha"
 msgstr "Alfa"
+
+#: Icon-O-Matic-SVGExport
+msgctxt "Icon-O-Matic-SVGExport"
+msgid "OK"
+msgstr "D'acord"
 
 #: Transformation
 msgid "Contour"

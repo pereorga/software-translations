@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-05 08:04+0000\n"
+"POT-Creation-Date: 2026-01-12 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,12 +41,12 @@ msgid "Device"
 msgstr "Dispositiu"
 
 #: MainWindow
-msgid "Initialize"
-msgstr "Inicia"
-
-#: MainWindow
 msgid "Could not change the parameters of the selected partition."
 msgstr "No s'han pogut canviar els paràmetres de la partició seleccionada."
+
+#: MainWindow
+msgid "Initialize"
+msgstr "Inicia"
 
 #: MainWindow
 msgid ""
@@ -146,26 +146,26 @@ msgid "Write changes"
 msgstr "Escriu els canvis"
 
 #: MainWindow
+msgid "Validation of the given creation parameters failed."
+msgstr "Ha fallat validar els paràmetres de creació indicats."
+
+#: MainWindow
 msgid ""
 "Initialization of the partition %s failed. (Nothing has been written to "
 "disk.)"
 msgstr "Ha fallat iniciar la partició %s. (No s'han desat els canvis al disc.)"
 
 #: MainWindow
-msgid "Validation of the given creation parameters failed."
-msgstr "Ha fallat validar els paràmetres de creació indicats."
-
-#: MainWindow
 msgid "Eject"
 msgstr "Expulsa"
-
-#: MainWindow
-msgid "Surface test (not implemented)"
-msgstr "Prova de la superfície (no està implementat)"
 
 #: PartitionList
 msgid "Read only"
 msgstr "Només de lectura"
+
+#: MainWindow
+msgid "Surface test (not implemented)"
+msgstr "Prova de la superfície (no està implementat)"
 
 #: MainWindow
 msgid "The panel could not return successfully."
@@ -246,6 +246,14 @@ msgid "The currently selected partition is not empty."
 msgstr "La partició seleccionada no és buida."
 
 #: MainWindow
+msgid "The currently selected partition does not have a parent partition."
+msgstr "La partició seleccionada actualment no té una partició superior."
+
+#: MainWindow
+msgid "Wipe (not implemented)"
+msgstr "Esborra (no implementat)"
+
+#: MainWindow
 msgid ""
 "Are you sure you want to format a raw disk? (Most people initialize the disk "
 "with a partitioning system first) You will be asked again before changes are "
@@ -256,14 +264,6 @@ msgstr ""
 "abans d'escriure els canvis al disc."
 
 #: MainWindow
-msgid "Wipe (not implemented)"
-msgstr "Esborra (no implementat)"
-
-#: MainWindow
-msgid "The currently selected partition does not have a parent partition."
-msgstr "La partició seleccionada actualment no té una partició superior."
-
-#: MainWindow
 msgid "Validation of the given initialization parameters failed."
 msgstr "Ha fallat validar els paràmetres d'iniciació indicats."
 
@@ -272,12 +272,12 @@ msgid "Failed to create the partition. No changes have been written to disk."
 msgstr "Ha fallat crear la partició. No s'ha escrit cap canvi al disc."
 
 #: PartitionList
-msgid "Shared"
-msgstr "Compartida"
-
-#: PartitionList
 msgid "MIMEs"
 msgstr "MIMEs"
+
+#: PartitionList
+msgid "Shared"
+msgstr "Compartida"
 
 #: Encryption+utils
 msgid "BitLocker encrypted"
@@ -347,12 +347,12 @@ msgid "Empty space"
 msgstr "Espai buit"
 
 #: MainWindow
-msgid "Open with DiskProbe"
-msgstr "Obre amb DiskProbe"
-
-#: MainWindow
 msgid "Could not delete the selected partition."
 msgstr "No s'ha pogut suprimir la partició seleccionada."
+
+#: MainWindow
+msgid "Open with DiskProbe"
+msgstr "Obre amb DiskProbe"
 
 #: MainWindow
 msgid ""
@@ -400,20 +400,20 @@ msgid "Force unmount"
 msgstr "Força'n el desmuntatge"
 
 #: MainWindow
-msgid "Partition"
-msgstr "Partició"
-
-#: MainWindow
 msgid "Change parameters"
 msgstr "Canvia'n els paràmetres"
 
 #: MainWindow
-msgid "Rescan"
-msgstr "Torna a explorar"
+msgid "Partition"
+msgstr "Partició"
 
 #: MainWindow
 msgid "There was an error acquiring the partition row."
 msgstr "Hi ha hagut un error en obtenir la fila de particions."
+
+#: MainWindow
+msgid "Rescan"
+msgstr "Torna a explorar"
 
 #: MainWindow
 msgid "Failed to initialize the disk %s!\\n"
@@ -486,6 +486,11 @@ msgctxt "AbstractParametersPanel"
 msgid "OK"
 msgstr "D'acord"
 
+#: PartitionList
+msgctxt "PartitionList"
+msgid "Virtual"
+msgstr "Virtual"
+
 #: MainWindow
 msgid ""
 "Are you sure you want to write the changes back to disk now?\\n"
@@ -495,11 +500,6 @@ msgstr ""
 "Segur que voleu tornar a escriure els canvis al disc ara?\\n"
 "\\n"
 "Totes les dades de la partició \\%s\\ es perdran irremeiablement si ho feu!"
-
-#: PartitionList
-msgctxt "PartitionList"
-msgid "Virtual"
-msgstr "Virtual"
 
 #: DiskView
 msgctxt "DiskView"
