@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-12 08:05+0000\n"
+"POT-Creation-Date: 2026-01-19 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,6 +348,16 @@ msgstr "Activa la conversió de veu a text al dispositiu"
 msgid "Assist Settings"
 msgstr "Configuració d'assistència"
 
+#: assist.settings.tts_mute.footer
+msgid ""
+"When enabled, Assist will not play audio responses even if the pipeline has "
+"text-to-speech configured. You will still see text responses."
+msgstr ""
+
+#: assist.settings.tts_mute.toggle
+msgid "Mute voice responses"
+msgstr ""
+
 #: camera_list.edit.off.title
 msgid "Edit"
 msgstr "Edita"
@@ -446,6 +456,7 @@ msgid "Actions"
 msgstr "Accions"
 
 #: carPlay.navigation.tab.areas
+msgctxt "carPlay.navigation.tab.areas"
 msgid "Areas"
 msgstr "Àrees"
 
@@ -764,6 +775,69 @@ msgstr "No s'ha pogut realitzar l'operació."
 #: help_label
 msgid "Help"
 msgstr "Ajuda"
+
+#: home_view.areas.title
+msgctxt "home_view.areas.title"
+msgid "Areas"
+msgstr ""
+
+#: home_view.common_controls.title
+msgid "Welcome %@"
+msgstr ""
+
+#: home_view.customization.common_controls.title
+msgid "Controls prediction section"
+msgstr ""
+
+#: home_view.customization.areas_layout.title
+msgid "Areas layout"
+msgstr ""
+
+#: home_view.customization.areas_layout.list.title
+msgid "List"
+msgstr ""
+
+#: home_view.customization.areas_layout.grid.title
+msgid "Grid"
+msgstr ""
+
+#: home_view.customization.summaries.title
+msgctxt "home_view.customization.summaries.title"
+msgid "Summaries"
+msgstr ""
+
+#: home_view.summaries.title
+msgctxt "home_view.summaries.title"
+msgid "Summaries"
+msgstr ""
+
+#: home_view.summaries.lights.title
+msgid "Lights"
+msgstr ""
+
+#: home_view.summaries.covers.title
+msgid "Covers"
+msgstr ""
+
+#: home_view.summaries.lights.all_off
+msgid "All off"
+msgstr ""
+
+#: home_view.summaries.lights.count_on
+msgid "%d on"
+msgstr ""
+
+#: home_view.summaries.covers.all_closed
+msgid "All closed"
+msgstr ""
+
+#: home_view.summaries.covers.count_open
+msgid "%d open"
+msgstr ""
+
+#: home_view.summaries.count_active
+msgid "%d active"
+msgstr ""
 
 #: intents.server_required_for_value
 msgid "Select a server before picking this value."
@@ -3627,4 +3701,57 @@ msgstr ""
 
 #: camera_list.unavailable.message
 msgid "Camera streaming is not available on Mac."
+msgstr ""
+
+#: webrtc_player.known_issues.title
+msgid "Known Issues"
+msgstr ""
+
+#: camera_player.errors.unknown
+msgid "Unknown error"
+msgstr ""
+
+#: camera_player.errors.unable_to_connect_to_server
+msgid "Unable to connect to Home Assistant"
+msgstr ""
+
+#: camera_player.errors.no_stream_available
+msgid "No stream available"
+msgstr ""
+
+#: entity_picker.filter.domain.title
+msgctxt "entity_picker.filter.domain.title"
+msgid "Domain"
+msgstr ""
+
+#: entity_picker.filter.domain.all.title
+msgid "All domains"
+msgstr ""
+
+#: entity_picker.filter.area.title
+msgid "Area"
+msgstr ""
+
+#: entity_picker.filter.area.all.title
+msgid "All areas"
+msgstr ""
+
+#: entity_picker.filter.group_by.title
+msgid "Group by"
+msgstr ""
+
+#: entity_picker.list.area.no_area.title
+msgid "No area"
+msgstr ""
+
+#: database_updater.toast.title
+msgid "Updating %@"
+msgstr ""
+
+#: database_updater.toast.syncing
+msgid "Syncing server data..."
+msgstr ""
+
+#: database_updater.toast.syncing_with_progress
+msgid "Syncing server data... (%d/%d)"
 msgstr ""
