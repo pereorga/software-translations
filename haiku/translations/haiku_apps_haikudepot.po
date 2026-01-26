@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:04+0000\n"
+"POT-Creation-Date: 2026-01-26 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,6 @@ msgstr "Creeu un compte"
 #: ToLatestUserUsageConditionsWindow
 msgid "Agree"
 msgstr "D'acord"
-
-#: PackageManager
-msgid "Install %PackageTitle%"
-msgstr "Instal·la %PackageTitle%"
 
 #: ServerHelper
 msgid "The response to the captcha was incorrect."
@@ -112,17 +108,6 @@ msgstr ""
 "per comprovar que la contrasenya sigui correcta i també comproveu que hàgiu "
 "acceptat les darreres condicions d'ús."
 
-#: UserUsageConditions
-msgid ""
-"HaikuDepot communicates with a server component called HaikuDepotServer. "
-"These are the usage conditions that the user '%Nickname%' agreed to at "
-"%AgreedToTimestamp% in relation to the use of the HaikuDepotServer service."
-msgstr ""
-"El Dipòsit del Haiku es comunica amb un component del servidor anomenat "
-"Servidor del Dipòsit del Haiku. Aquestes són les condicions d'ús que "
-"l'usuari %Nickname% va acceptar (%AgreedToTimestamp%) en relació a l'ús del "
-"servei del HaikuDepotServer."
-
 #: PackageProblem
 msgid "don't activate package %source%"
 msgstr "No activis el paquet %source%"
@@ -134,10 +119,6 @@ msgstr "Puntueu %Package%"
 #: LocalPkgDataLoadProcess
 msgid "An error occurred while initializing the package manager: %message%"
 msgstr "Hi ha hagut un error en iniciar el gestor de paquets: %message%"
-
-#: App
-msgid "Quit HaikuDepot"
-msgstr "Surt del Dipòsit del Haiku"
 
 #: FilterView
 msgid "Category"
@@ -192,10 +173,6 @@ msgstr "Cancel·la"
 #: PackageListView
 msgid "Version"
 msgstr "Versió"
-
-#: App
-msgid "No, quit HaikuDepot"
-msgstr "No, surt del Dipòsit del Haiku"
 
 #: MainWindow
 msgid "Not logged in"
@@ -393,10 +370,6 @@ msgctxt "PackageResult"
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: PackageManager
-msgid "Uninstall %PackageTitle%"
-msgstr "Desinstal·la %PackageTitle%"
-
 #: PackageProblem
 msgid "Retry"
 msgstr "Torna-ho a provar"
@@ -525,10 +498,6 @@ msgctxt "UserUsageConditions"
 msgid "OK"
 msgstr "D'acord"
 
-#: PackageManager
-msgid "Open %DeskbarLink%"
-msgstr "Obre %DeskbarLink%"
-
 #: UserLoginWindow
 msgid "Input validation"
 msgstr "Validació de l'entrada"
@@ -565,10 +534,6 @@ msgstr "Error d'actualització del repositori"
 msgid "Network error"
 msgstr "Error de xarxa"
 
-#: MainWindow
-msgid "HaikuDepot - %PackageName% %PackageVersion%"
-msgstr "Dipòsit del Haiku - %PackageName% %PackageVersion%"
-
 #: LocalRepositoryUpdateProcess
 msgid "An error occurred while refreshing the repository: %error%"
 msgstr "Hi ha hagut un error en actualitzar el repositori: %error%"
@@ -598,16 +563,6 @@ msgstr "S'instal·la \\\"%PackageName%\\\""
 msgctxt "App"
 msgid "OK"
 msgstr "D'acord"
-
-#: UserUsageConditions
-msgid ""
-"HaikuDepot communicates with a server component called HaikuDepotServer. "
-"These are the latest usage conditions for use of the HaikuDepotServer "
-"service."
-msgstr ""
-"El Dipòsit del Haiku es comunica amb un component del servidor anomenat "
-"Servidor del Dipòsit del Haiku. Aquestes són les últimes condicions d'ús per "
-"usar el servei HaikuDepotServer."
 
 #: UninstallPackageAction
 msgctxt "UninstallPackageAction"
@@ -730,13 +685,13 @@ msgstr ""
 "Dipòsit del Haiku des d’aquest ordinador? En podeu canviar les preferències "
 "a la finestra de \\Paràmetres\\ més endavant."
 
-#: MainWindow
-msgid "Installed packages"
-msgstr "Paquets instal·lats"
-
 #: RatePackageWindow
 msgid "User rating"
 msgstr "Puntuació de l'usuari"
+
+#: MainWindow
+msgid "Installed packages"
+msgstr "Paquets instal·lats"
 
 #: PackageListView
 msgid "Date"
@@ -751,10 +706,6 @@ msgstr ""
 "La contrasenya ha de tenir un mínim de %MinPasswordLength% caràcters. Els "
 "caràcters %MinPasswordUppercaseChar% han de ser majúscules i els caràcters "
 "%MinPasswordDigitsChar% han de ser dígits."
-
-#: App
-msgid "Error"
-msgstr "Error"
 
 #: ToLatestUserUsageConditionsWindow
 msgctxt "ToLatestUserUsageConditionsWindow"
@@ -805,16 +756,6 @@ msgstr ""
 msgctxt "no package publish"
 msgid "-"
 msgstr "-"
-
-#: App
-msgid ""
-"HaikuDepot needs the package daemon to function, and it appears to be not "
-"running.\\n"
-"Would you like to start it now?"
-msgstr ""
-"El Dipòsit del Haiku necessita que el dimoni del paquet funcioni i sembla "
-"que no funciona.\\n"
-"Voleu iniciar-lo ara?"
 
 #: UserLoginWindow
 msgid ""
@@ -884,14 +825,14 @@ msgctxt "SettingsWindow"
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: PackageListView
-msgid "Inactive"
-msgstr "Inactiu"
-
 #: RatePackageWindow
 msgctxt "RatePackageWindow"
 msgid "Cancel"
 msgstr "Cancel·la"
+
+#: PackageListView
+msgid "Inactive"
+msgstr "Inactiu"
 
 #: UserLoginWindow
 msgid "Nickname:"
@@ -956,13 +897,6 @@ msgstr "Problema d’inici de sessió"
 #: RatePackageWindow
 msgid "Your rating:"
 msgstr "La vostra puntuació:"
-
-#: ShuttingDownWindow
-msgid ""
-"HaikuDepot is stopping or completing running operations before quitting."
-msgstr ""
-"El Dipòsit del Haiku s'està aturant o completant les operacions en execució "
-"abans de sortir."
 
 #: UserLoginWindow
 msgid ""

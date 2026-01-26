@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:04+0000\n"
+"POT-Creation-Date: 2026-01-26 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,6 +141,10 @@ msgstr ""
 msgid "DriveSetup"
 msgstr "Gestor de discs"
 
+#: MainWindow
+msgid "Error:"
+msgstr "Error:"
+
 #: PartitionList
 msgid "Mounted at"
 msgstr "Muntada a"
@@ -223,6 +227,10 @@ msgstr "No s'ha reconegut cap dispositiu de disc."
 #: PartitionList
 msgid "Attributes"
 msgstr "Atributs"
+
+#: MainWindow
+msgid "'%s' is not a regular file."
+msgstr "%s no és un fitxer regular."
 
 #: MainWindow
 msgid "Failed to delete the partition. No changes have been written to disk."
@@ -376,6 +384,10 @@ msgid "Cancel"
 msgstr "Cancel·la"
 
 #: MainWindow
+msgid "%appname%: Save disk image"
+msgstr "%appname%: desa la imatge del disc"
+
+#: MainWindow
 msgctxt "MainWindow"
 msgid "Format"
 msgstr "Formata"
@@ -409,6 +421,10 @@ msgstr "Espai buit"
 #: MainWindow
 msgid "Could not delete the selected partition."
 msgstr "No s'ha pogut suprimir la partició seleccionada."
+
+#: MainWindow
+msgid "Failed to get information about '%s'."
+msgstr "Ha fallat obtenir informació sobre %s."
 
 #: MainWindow
 msgid "Open with DiskProbe"
@@ -445,6 +461,12 @@ msgstr ""
 #: MainWindow
 msgid "Disk image has been removed."
 msgstr "S'ha suprimit la imatge de disc."
+
+#: MainWindow
+msgid "No file disk device found with the given ID, trying file '%s'."
+msgstr ""
+"No s'ha trobat cap dispositiu de disc de fitxers amb l'ID proporcionat. "
+"S'intenta el fitxer %s."
 
 #: MainWindow
 msgctxt "MainWindow"
@@ -532,8 +554,16 @@ msgstr ""
 "d'escriure els canvis al disc."
 
 #: MainWindow
+msgid "%appname% error"
+msgstr "Error de l'aplicació %appname%"
+
+#: MainWindow
 msgid "The selected disk is read-only."
 msgstr "El disc seleccionat és només de lectura."
+
+#: MainWindow
+msgid "Failed to unregister file disk device %s."
+msgstr "Ha fallat cancel·lar el registre del dispositiu de disc de fitxers %s."
 
 #: MainWindow
 msgid "The partition %s is already unmounted."

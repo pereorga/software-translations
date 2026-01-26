@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:04+0000\n"
+"POT-Creation-Date: 2026-01-26 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,6 @@ msgstr "Tanca altres pestanyes"
 #: Terminal+TermView
 msgid "Insert path"
 msgstr "Insereix un camí"
-
-#: Terminal+TermApp
-msgid "Terminal couldn't start the shell. Sorry."
-msgstr "El terminal no ha pogut obrir l'intèrpret d'ordres. Disculpeu."
 
 #: Terminal+TermWindow
 msgid "Text encoding"
@@ -203,11 +199,6 @@ msgctxt "Terminal PrefWindow"
 msgid "Revert"
 msgstr "Reverteix"
 
-#: Terminal+TermWindow
-msgctxt "Terminal TermWindow"
-msgid "Terminal"
-msgstr "Terminal"
-
 #: Terminal+FindWindow
 msgid "Use selection"
 msgstr "Usa la selecció"
@@ -266,7 +257,6 @@ msgstr ""
 "\\t%error"
 
 #: System+name
-msgctxt "System name"
 msgid "Terminal"
 msgstr "Terminal"
 
@@ -292,14 +282,6 @@ msgstr "D'acord"
 msgid "ANSI bright blue color"
 msgstr "Color blau brillant ANSI"
 
-#: Terminal+TermWindow
-msgid ""
-"The process \\\"%1\\\" is still running.\\n"
-"If you close the Terminal, the process will be killed."
-msgstr ""
-"El procés \\\"%1\\\" encara s'executa.\\n"
-"Tancar el Terminal matarà el procés."
-
 #: Terminal+arguments+parsing
 msgid "Unrecognized option \\\"%s\\\"\\n"
 msgstr "Opció no reconeguda \\\"%s\\\"\\n"
@@ -316,10 +298,6 @@ msgstr "No s'ha trobat el text."
 #: Terminal+FindWindow
 msgid "Match word"
 msgstr "Coincidència de paraules"
-
-#: Terminal+TermWindow
-msgid "New Terminal"
-msgstr "Obre un terminal"
 
 #: Terminal+TermWindow
 msgid "Find failed"
@@ -453,13 +431,13 @@ msgstr "Títol de la finestra:"
 msgid "ANSI white color"
 msgstr "Color blanc ANSI"
 
-#: Terminal+AppearancePrefView
-msgid "Window size:"
-msgstr "Mida de la finestra:"
-
 #: Terminal+TermWindow
 msgid "Switch Terminals"
 msgstr "Intercanvia els Terminals"
+
+#: Terminal+AppearancePrefView
+msgid "Window size:"
+msgstr "Mida de la finestra:"
 
 #: Terminal+TermWindow
 msgid "Decrease"
@@ -603,20 +581,6 @@ msgstr "Mou aquí"
 #: Terminal+Shell
 msgid "Abort"
 msgstr "Avorta"
-
-#: Terminal+TermWindow
-msgid ""
-"The following processes are still running:\\n"
-"\\n"
-"\\t%1\\n"
-"\\n"
-"If you close the Terminal, the processes will be killed."
-msgstr ""
-"Els processos següents encara s'executen:\\n"
-"\\n"
-"\\t%1\\n"
-"\\n"
-"Si tanqueu el Terminal, els processos es mataran."
 
 #: Terminal+TermWindow
 msgid "Set window title"

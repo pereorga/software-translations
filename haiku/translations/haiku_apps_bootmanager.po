@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:04+0000\n"
+"POT-Creation-Date: 2026-01-26 08:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,10 +24,6 @@ msgstr "Cal seleccionar almenys una partició!"
 msgid "No space available!"
 msgstr "No hi ha espai disponible!"
 
-#: BootManagerController
-msgid "Boot Manager is unable to read the partition table!"
-msgstr "El Gestor d'arrencada no ha pogut llegir la taula de particions!"
-
 #: DefaultPartitionPage
 msgid "Immediately"
 msgstr "Immediatament"
@@ -41,12 +37,12 @@ msgid "Unknown"
 msgstr "Desconegut"
 
 #: BootManagerController
-msgid "Installation of boot menu failed"
-msgstr "Ha fallat la instal·lació del menú d'arrencada"
-
-#: BootManagerController
 msgid "Backup Master Boot Record"
 msgstr "Còpia de seguretat del Registre d'arrencada mestre"
+
+#: BootManagerController
+msgid "Installation of boot menu failed"
+msgstr "Ha fallat la instal·lació del menú d'arrencada"
 
 #: DrivesPage
 msgid "Cannot access!"
@@ -108,17 +104,6 @@ msgid ""
 msgstr ""
 "Ara s'escriurà el menú d'arrencada següent al disc d'arrencada (%s). Si us "
 "plau, comproveu la informació següent abans de continuar."
-
-#: BootManagerController
-msgid ""
-"The first partition on the disk starts too early and does not leave enough "
-"space free for a boot menu.\\n"
-"Boot Manager needs 2 KiB available space before the first partition."
-msgstr ""
-"La primera partició del disc comença massa aviat i no deixa prou espai "
-"lliure per al menú d'arrencada.\\n"
-"El Gestor d’arrencada necessita 2 KiB d'espai disponible abans de la primera "
-"partició."
 
 #: DrivesPage
 msgid "Uninstall"
@@ -200,16 +185,6 @@ msgstr "Temps d'espera: %s"
 #: BootManagerController
 msgid "The Master Boot Record could not be restored!"
 msgstr "No s'ha pogut restaurar el Registre d'arrencada mestre!"
-
-#: BootManagerController
-msgid ""
-"The partition table of the first hard disk is not compatible with Boot "
-"Manager.\\n"
-"Boot Manager only works with IBM PC MBR partitions."
-msgstr ""
-"La taula de particions del primer disc dur no és compatible amb el Gestor "
-"d'arrencada.\\n"
-"El Gestor d’arrencada només funciona amb particions MBR d’IBM PC."
 
 #: DrivesPage
 msgid ""
@@ -307,13 +282,13 @@ msgstr ""
 "El Registre d'arrencada mestre del disc d'arrencada (%DISK) s'ha restaurat "
 "correctament des de %FILE."
 
-#: BootManagerController
-msgid "Done"
-msgstr "Fet"
-
 #: System+name
 msgid "BootManager"
 msgstr "Gestor d'arrencada"
+
+#: BootManagerController
+msgid "Done"
+msgstr "Fet"
 
 #: UninstallPage
 msgctxt "UninstallPage"
