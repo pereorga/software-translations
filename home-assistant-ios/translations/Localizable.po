@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:05+0000\n"
+"POT-Creation-Date: 2026-01-26 08:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3601,6 +3601,7 @@ msgid "Automation"
 msgstr "Automatització"
 
 #: widgets.controls.automations.placeholder_title
+msgctxt "widgets.controls.automations.placeholder_title"
 msgid "Choose automation"
 msgstr "Trieu l'automatització"
 
@@ -3661,6 +3662,85 @@ msgstr "Bloqueja"
 #: widgets.controls.open_lock.configuration.title
 msgid "Open Lock"
 msgstr "Obre el pany"
+
+#: widgets.controls.automations.pending_configuration
+msgctxt "widgets.controls.automations.pending_configuration"
+msgid "Choose automation"
+msgstr ""
+
+#: widgets.controls.button.pending_configuration
+msgctxt "widgets.controls.button.pending_configuration"
+msgid "Choose button"
+msgstr ""
+
+#: widgets.controls.cover.pending_configuration
+msgctxt "widgets.controls.cover.pending_configuration"
+msgid "Choose cover"
+msgstr ""
+
+#: widgets.controls.fan.pending_configuration
+msgctxt "widgets.controls.fan.pending_configuration"
+msgid "Choose fan"
+msgstr ""
+
+#: widgets.controls.light.pending_configuration
+msgctxt "widgets.controls.light.pending_configuration"
+msgid "Choose light"
+msgstr ""
+
+#: widgets.controls.open_camera.pending_configuration
+msgid "Choose camera"
+msgstr ""
+
+#: widgets.controls.open_cover_entity.pending_configuration
+msgctxt "widgets.controls.open_cover_entity.pending_configuration"
+msgid "Choose cover"
+msgstr ""
+
+#: widgets.controls.open_entity.pending_configuration
+msgid "Choose entity"
+msgstr ""
+
+#: widgets.controls.open_input_boolean.pending_configuration
+msgid "Choose input boolean"
+msgstr ""
+
+#: widgets.controls.open_light.pending_configuration
+msgctxt "widgets.controls.open_light.pending_configuration"
+msgid "Choose light"
+msgstr ""
+
+#: widgets.controls.open_lock.pending_configuration
+msgid "Choose lock"
+msgstr ""
+
+#: widgets.controls.open_page.pending_configuration
+msgid "Choose page"
+msgstr ""
+
+#: widgets.controls.open_sensor.pending_configuration
+msgid "Choose sensor"
+msgstr ""
+
+#: widgets.controls.open_switch.pending_configuration
+msgctxt "widgets.controls.open_switch.pending_configuration"
+msgid "Choose switch"
+msgstr ""
+
+#: widgets.controls.scenes.pending_configuration
+msgctxt "widgets.controls.scenes.pending_configuration"
+msgid "Choose scene"
+msgstr ""
+
+#: widgets.controls.scripts.pending_configuration
+msgctxt "widgets.controls.scripts.pending_configuration"
+msgid "Choose script"
+msgstr ""
+
+#: widgets.controls.switch.pending_configuration
+msgctxt "widgets.controls.switch.pending_configuration"
+msgid "Choose switch"
+msgstr ""
 
 #: widgets.open_page.description
 msgid "Open a frontend page in Home Assistant."
@@ -3754,4 +3834,60 @@ msgstr ""
 
 #: database_updater.toast.syncing_with_progress
 msgid "Syncing server data... (%d/%d)"
+msgstr ""
+
+#: connectivity.diagnostics.title
+msgid "Connectivity diagnostics"
+msgstr ""
+
+#: connectivity.diagnostics.run_checks
+msgid "Run checks"
+msgstr ""
+
+#: connectivity.diagnostics.start
+msgid "Start diagnostics"
+msgstr ""
+
+#: connectivity.check.dns
+msgid "DNS Resolution"
+msgstr ""
+
+#: connectivity.check.dns.description
+msgid "Resolving hostname to IP address"
+msgstr ""
+
+#: connectivity.check.port
+msgid "Port Reachability"
+msgstr ""
+
+#: connectivity.check.port.description
+msgid "Checking if port is reachable"
+msgstr ""
+
+#: connectivity.check.tls
+msgid "TLS Certificate"
+msgstr ""
+
+#: connectivity.check.tls.description
+msgid "Validating TLS certificate"
+msgstr ""
+
+#: connectivity.check.server
+msgid "Server Connection"
+msgstr ""
+
+#: connectivity.check.server.description
+msgid "Testing server connection"
+msgstr ""
+
+#: connectivity.check.running
+msgid "Checking..."
+msgstr ""
+
+#: connectivity.check.skipped
+msgid "Skipped due to previous failure"
+msgstr ""
+
+#: settings.connection_section.refresh_server
+msgid "Update server information"
 msgstr ""
