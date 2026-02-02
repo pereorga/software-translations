@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 08:04+0000\n"
+"POT-Creation-Date: 2026-02-02 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,10 @@ msgid ""
 msgstr ""
 "No s'ha pogut extreure la informació de CAPTCHA necessària de les dades "
 "retornades del servidor."
+
+#: PackageAction
+msgid "Install %PackageTitle%"
+msgstr "Instal·la %PackageTitle%"
 
 #: LocalPkgDataLoadProcess
 msgid "An error occurred while obtaining the package list: %message%"
@@ -152,6 +156,17 @@ msgstr "Requisits de la contrasenya"
 #: PackageResult
 msgid "The following additional package changes have to be made:"
 msgstr "S'han de fer els canvis addicionals de paquet següents:"
+
+#: UserUsageConditions
+msgid ""
+"%Appname% communicates with a server component called HaikuDepotServer. "
+"These are the usage conditions that the user '%Nickname%' agreed to at "
+"%AgreedToTimestamp% in relation to the use of the HaikuDepotServer service."
+msgstr ""
+"%Appname% es comunica amb un component de servidor anomenat "
+"HaikuDepotServer. Aquestes són les condicions d'ús que l'usuari %Nickname% "
+"va acceptar  (%AgreedToTimestamp%) en relació amb l'ús del servei del "
+"Servidor del dipòsit del Haiku."
 
 #: PackageInfoView
 msgid "No changelog available."
@@ -270,6 +285,16 @@ msgstr "No"
 msgid "Repository"
 msgstr "Repositori"
 
+#: App
+msgid ""
+"%appname% needs the package daemon to function, and it appears to be not "
+"running.\\n"
+"Would you like to start it now?"
+msgstr ""
+"%appname% necessita el dimoni del paquet per funcionar, i sembla que no "
+"s'executa.\\n"
+"Voleu iniciar-lo ara?"
+
 #: RatePackageWindow
 msgctxt "RatePackageWindow"
 "RatePackageWindow"
@@ -344,6 +369,10 @@ msgstr "Cancel·la"
 msgid "Refresh repositories"
 msgstr "Actualitza els repositoris"
 
+#: SimpleAlert
+msgid "Error"
+msgstr "Error"
+
 #: App
 msgid "Continue"
 msgstr "Continua"
@@ -356,6 +385,10 @@ msgstr "Cal una contrasenya."
 msgctxt "RatePackageWindow"
 msgid "Language"
 msgstr "Llengua"
+
+#: PackageAction
+msgid "Open %DeskbarLink%"
+msgstr "Obre %DeskbarLink%"
 
 #: PackageListView
 msgid "Status"
@@ -559,6 +592,10 @@ msgstr "Accepto les condicions d'ús."
 msgid "Installing \\\"%PackageName%\\\""
 msgstr "S'instal·la \\\"%PackageName%\\\""
 
+#: PackageAction
+msgid "Uninstall %PackageTitle%"
+msgstr "Desinstal·la %PackageTitle%"
+
 #: App
 msgctxt "App"
 msgid "OK"
@@ -628,6 +665,10 @@ msgstr "Puntuació"
 msgid "Synchronizing icons"
 msgstr "Sincronització de les icones"
 
+#: App
+msgid "No, quit"
+msgstr "No, tanca't"
+
 #: MainWindow
 msgid "Show"
 msgstr "Mostra..."
@@ -681,8 +722,8 @@ msgid ""
 "system from this computer? You can change your preference in the \\\"Settings"
 "\\\" window later."
 msgstr ""
-"Seria acceptable enviar dades d’ús anònimes al sistema del servidor del "
-"Dipòsit del Haiku des d’aquest ordinador? En podeu canviar les preferències "
+"Seria acceptable enviar dades d’ús anònimes al sistema del Servidor del "
+"dipòsit del Haiku des d’aquest ordinador? En podeu canviar les preferències "
 "a la finestra de \\Paràmetres\\ més endavant."
 
 #: RatePackageWindow
@@ -771,7 +812,7 @@ msgstr "Continguts"
 
 #: SettingsWindow
 msgid "Share anonymous usage data with HaikuDepotServer"
-msgstr "Comparteix dades d’ús anònimes amb el servidor del Dipòsit del Haiku."
+msgstr "Comparteix dades d’ús anònimes amb el Servidor del dipòsit del Haiku."
 
 #: PackageManager
 msgctxt "PackageManager"
@@ -904,8 +945,8 @@ msgid ""
 "system. You can administer your user details by using the web interface. You "
 "are now logged-in as this new user."
 msgstr ""
-"L'usuari %Nickname% s'ha creat correctament al sistema del servidor del "
-"Dipòsit del Haiku. Podeu administrar les dades de l'usuari mitjançant la "
+"L'usuari %Nickname% s'ha creat correctament al sistema del Servidor del "
+"dipòsit del Haiku. Podeu administrar les dades de l'usuari mitjançant la "
 "interfície web. Ara hi heu entrat com a usuari nou."
 
 #: MainWindow
@@ -1041,6 +1082,16 @@ msgstr "Error fatal"
 msgid "A validation error has occurred"
 msgstr "Hi ha hagut un error de validació."
 
+#: UserUsageConditions
+msgid ""
+"%Appname% communicates with a server component called HaikuDepotServer. "
+"These are the latest usage conditions for use of the HaikuDepotServer "
+"service."
+msgstr ""
+"%Appname% es comunica amb un component de servidor anomenat "
+"HaikuDepotServer. Aquestes són les condicions d'ús més recents per a l'ús "
+"del servei del Servidor del dipòsit del Haiku."
+
 #: UserLoginWindow
 msgid "The nickname is required."
 msgstr "Cal el sobrenom."
@@ -1129,6 +1180,11 @@ msgstr "Per poder valorar els paquets, heu d’iniciar sessió en un compte."
 #: ShuttingDownWindow
 msgid "Cleaning up…"
 msgstr "Es neteja..."
+
+#: ShuttingDownWindow
+msgid "%appname% is stopping or completing running operations before quitting."
+msgstr ""
+"%appname% s'atura o completa les operacions en execució abans de tancar-se."
 
 #: UserLoginWindow
 msgid "Repeat password:"

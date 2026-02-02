@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 08:04+0000\n"
+"POT-Creation-Date: 2026-02-02 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -198,6 +198,20 @@ msgstr "negre"
 msgctxt "Terminal PrefWindow"
 msgid "Revert"
 msgstr "Reverteix"
+
+#: Terminal+TermWindow
+msgid ""
+"The following processes are still running:\\n"
+"\\n"
+"\\t%1\\n"
+"\\n"
+"If you close %appname%, the processes will be killed."
+msgstr ""
+"Els processos següents encara s'executen:\\n"
+"\\n"
+"\\t%1\\n"
+"\\n"
+"Si tanqueu %appname%, els processos es tancaran."
 
 #: Terminal+FindWindow
 msgid "Use selection"
@@ -447,6 +461,14 @@ msgstr "Redueix"
 msgid "Settings…"
 msgstr "Paràmetres…"
 
+#: Terminal+TermWindow
+msgid ""
+"The process \\\"%1\\\" is still running.\\n"
+"If you close %appname%, the process will be killed."
+msgstr ""
+"El procés \\\"%1\\\" encara s'executa.\\n"
+"Si tanqueu %appname%, el procés es tancarà."
+
 #: Terminal+SetTitleWindow
 msgctxt "Terminal SetTitleWindow"
 msgid "Cancel"
@@ -538,6 +560,10 @@ msgstr "Copia-ho aquí"
 msgid "Use default shell"
 msgstr "Usa l'intèrpret d'ordres predeterminat"
 
+#: Terminal+TermApp
+msgid "%appname% couldn't start the shell. Sorry."
+msgstr "%appname% no ha pogut iniciar l'intèrpret d'ordres. Dispenseu."
+
 #: Terminal+ThemeView
 msgid "red"
 msgstr "vermell"
@@ -622,6 +648,10 @@ msgstr "Tanca la finestra"
 #: Terminal+ThemeView
 msgid "ANSI magenta color"
 msgstr "Color magenta ANSI"
+
+#: Terminal+TermWindow
+msgid "New %appname%"
+msgstr "%appname% nova"
 
 #: Terminal+TermApp
 msgid ""

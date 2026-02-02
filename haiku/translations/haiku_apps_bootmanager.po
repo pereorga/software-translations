@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 08:04+0000\n"
+"POT-Creation-Date: 2026-02-02 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,6 +164,10 @@ msgstr "Disc dur"
 msgid "Drives"
 msgstr "Unitats de disc"
 
+#: BootManagerController
+msgid "%appname% is unable to read the partition table!"
+msgstr "%appname% no pot llegir la taula de particions!"
+
 #: PartitionsPage
 msgid ""
 "The following partitions were detected. Please check the box next to the "
@@ -240,6 +244,14 @@ msgstr "Format no compatible!"
 #: BootManagerController
 msgid "Old Master Boot Record saved"
 msgstr "S'ha desat el Registre d'arrencada mestre antic."
+
+#: BootManagerController
+msgid ""
+"The partition table of the first hard disk is not compatible.\\n"
+"%appname% only works with IBM PC MBR partitions."
+msgstr ""
+"La taula de particions del primer disc dur no és compatible.\\n"
+"%appname% només funciona amb particions MBR d'IBM PC."
 
 #: DefaultPartitionPage
 msgid ""
@@ -321,6 +333,16 @@ msgstr ""
 #: DrivesPage
 msgid "Install"
 msgstr "Instal·la"
+
+#: BootManagerController
+msgid ""
+"The first partition on the disk starts too early and does not leave enough "
+"space free for a boot menu.\\n"
+"%appname% needs 2 KiB available space before the first partition."
+msgstr ""
+"La primera partició del disc s'inicia massa aviat i no deixa prou espai "
+"lliure per a un menú d'arrencada.\\n"
+"%appname% necessita 2 KiB d'espai disponible abans de la primera partició."
 
 #: FileSelectionPage
 msgid "File:"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 08:04+0000\n"
+"POT-Creation-Date: 2026-02-02 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,6 +52,14 @@ msgstr ""
 "Instal·lació completada. El sector d'arrencada s'ha escrit a %s. Premeu "
 "Reinicia per reiniciar l'ordinador o trieu un volum nou de destinació per "
 "fer-ne una altra instal·lació."
+
+#: InstallProgress
+msgid ""
+"Are you sure you want to install onto the current boot disk? The %appname% "
+"will have to reboot your machine if you proceed."
+msgstr ""
+"Segur que voleu instal·lar-ho al disc d'arrencada actual? %appname% haurà de "
+"reiniciar l'ordinador si continueu."
 
 #: InstallerWindow
 msgid ""
@@ -200,6 +208,16 @@ msgstr ""
 #: InstallerWindow
 msgid "Quit DriveSetup"
 msgstr "Surt del Gestor de discs"
+
+#: InstallerWindow
+msgid ""
+"Installation completed. Boot sector has been written to '%s'. Press 'Quit' "
+"to leave the %appname% or choose a new target volume to perform another "
+"installation."
+msgstr ""
+"Instal·lació completada. El sector d'arrencada s'ha escrit a %s. Premeu Surt "
+"per sortir de l'aplicació %appname% o trieu un volum de destinació nou per "
+"fer una altra instal·lació."
 
 #: InstallerWindow
 msgid "Write boot sector"
