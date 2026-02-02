@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-26 08:05+0000\n"
+"POT-Creation-Date: 2026-02-02 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -439,6 +439,7 @@ msgctxt "carPlay.labels.servers"
 "carPlay.labels.servers"
 "carPlay.labels.servers"
 "carPlay.labels.servers"
+"carPlay.labels.servers"
 msgid "Servers"
 msgstr "Servidors"
 
@@ -656,6 +657,14 @@ msgstr "Col·lapsa"
 msgid "Expand"
 msgstr "Expandeix"
 
+#: connection_security_level_block.tip
+msgid ""
+"Tip: Double check your device settings and app permissions. Make sure the "
+"app is allowed local network access and location access is set to 'Always' ("
+"so it also works in background) and 'Full' (so the app can identify which "
+"network you are using and detect your home network)."
+msgstr ""
+
 #: continue_label
 msgctxt "continue_label"
 msgid "Continue"
@@ -727,6 +736,24 @@ msgstr "HLS Stream no disponible"
 #: extensions.notification_content.error.request.other
 msgid "Got non-200 status code (%li)"
 msgstr "S'ha rebut codi d'estat no-200 (%li)"
+
+#: gestures.reset.confirmation.message
+msgid "This will reset all gestures to their default values."
+msgstr ""
+
+#: gestures.reset.confirmation.title
+msgid "Reset Gestures?"
+msgstr ""
+
+#: gestures.value.option.more_info.quick_search
+msgctxt "gestures.value.option.more_info.quick_search"
+msgid "Quick search"
+msgstr ""
+
+#: gestures.value.option.quick_search
+msgctxt "gestures.value.option.quick_search"
+msgid "Quick search"
+msgstr ""
 
 #: ha_api.api_error.cant_build_url
 msgid "Cant build API URL"
@@ -1915,10 +1942,6 @@ msgstr ""
 "Les accions s'utilitzen a l'aplicació Apple Watch, App Icon Actions, al giny "
 "Today i CarPlay."
 
-#: settings_details.actions.footer_mac
-msgid "Actions are used in the application menu and widgets."
-msgstr "Les accions s'utilitzen al menú de l'aplicació i als ginys."
-
 #: settings_details.actions.learn.button.title
 msgid "Introduction to iOS Actions"
 msgstr "Introducció a les accions iOS"
@@ -2056,6 +2079,10 @@ msgstr "Nom del dispositiu"
 #: settings_details.general.full_screen.title
 msgid "Full Screen"
 msgstr "Pantalla completa"
+
+#: settings_details.general.refresh_after_inactive.title
+msgid "Refresh After 5 Min Inactive"
+msgstr ""
 
 #: settings_details.general.launch_on_login.title
 msgid "Launch App on Login"
@@ -3890,4 +3917,53 @@ msgstr ""
 
 #: settings.connection_section.refresh_server
 msgid "Update server information"
+msgstr ""
+
+#: legacy_actions.disclaimer
+msgid ""
+"Legacy iOS Actions are not the recommended way to interact with Home "
+"Assistant anymore, please use Scripts, Scenes and Automations directly in "
+"your Widgets, Apple Watch and CarPlay."
+msgstr ""
+
+#: web_view.add_to.option.CarPlay.title
+msgid "CarPlay"
+msgstr ""
+
+#: web_view.add_to.option.Widget.title
+msgid "Widget"
+msgstr ""
+
+#: web_view.add_to.option.AppleWatch.title
+msgctxt "web_view.add_to.option.AppleWatch.title"
+msgid "Apple Watch"
+msgstr ""
+
+#: settings.widgets.select.title
+msgid "Add to Widget"
+msgstr ""
+
+#: settings.widgets.select.empty.title
+msgid "No Widgets Yet"
+msgstr ""
+
+#: settings.widgets.select.empty.subtitle
+msgid "Create your first widget to add this entity."
+msgstr ""
+
+#: settings.widgets.select.item_count.title
+msgid "%d items"
+msgstr ""
+
+#: settings.widgets.select.footer.title
+msgid "Select a widget to add this entity to."
+msgstr ""
+
+#: entity_picker.filter.server.title
+msgctxt "entity_picker.filter.server.title"
+msgid "Servers"
+msgstr ""
+
+#: entity_picker.search.placeholder
+msgid "Entity name, ID, area name, device name..."
 msgstr ""
