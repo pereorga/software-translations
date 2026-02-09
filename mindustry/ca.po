@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-19 08:05+0000\n"
+"POT-Creation-Date: 2026-02-09 08:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,7 +55,7 @@ msgstr "Tauler oficial del Trello amb canvis planificats"
 
 #: link.itch.io.description
 msgid "itch.io page with PC downloads"
-msgstr "Pàgina itch.io amb descàrregues per PC"
+msgstr "Pàgina itch.io amb descàrregues per a PC"
 
 #: link.google-play.description
 msgid "Google Play store listing"
@@ -348,7 +348,7 @@ msgstr "{0} d’etiquetades"
 
 #: schematic.tagdelconfirm
 msgid "Delete this tag completely?"
-msgstr "Voleu esborrar del tot aquesta etiqueta?"
+msgstr "Voleu esborrar aquesta etiqueta?"
 
 #: schematic.tagexists
 msgid "That tag already exists."
@@ -408,7 +408,7 @@ msgstr "Mode de joc:"
 
 #: coreattack
 msgid "< Core is under attack! >"
-msgstr "< Estan atacant el nucli! >"
+msgstr "< Ataquen el nucli! >"
 
 #: nearpoint
 msgid ""
@@ -547,7 +547,7 @@ msgstr ""
 "[red]⚠[] L’anterior instància del Mindustry no va poder iniciar-se, "
 "probablement per l’error d’algun mod.\n"
 "\n"
-"Per evitar un bucle de fallades, [red]s’han desactivat tots els mods.[]"
+"Per a evitar un bucle de fallades, [red]s’han desactivat tots els mods.[]"
 
 #: mods.none
 msgid "[lightgray]No mods found!"
@@ -597,6 +597,10 @@ msgstr "[gray]Compatible amb el mode multijugador"
 msgid "Disable"
 msgstr "Desactiva"
 
+#: mod.version
+msgid "Version:"
+msgstr "Versió:"
+
 #: mod.content
 msgid "Content:"
 msgstr "Contingut:"
@@ -638,6 +642,16 @@ msgstr ""
 "Requereix la versió: [accent]{0}[]\n"
 "Cal actualitzar la vostra versió del joc. El mod necessita una versió nova ("
 "potser una distribució alfa o beta) per a funcionar."
+
+#: mod.incompatiblemod.details
+msgid ""
+"This mod is incompatible with the latest version of the game. The author "
+"must update it, and add [accent]minGameVersion: 154[] to its [accent]mod."
+"json[] file."
+msgstr ""
+"Aquest mod és incompatible amb l’última versió del joc. L’autor l’ha d’"
+"actualitzar i afegir [accent]minGameVersion: 154[] al seu fitxer [accent]mod."
+"json[]."
 
 #: mod.blacklisted.details
 msgid ""
@@ -779,6 +793,42 @@ msgstr ""
 "El vostre dispositiu no admet mods amb scripts. Heu de desactivar aquests "
 "mods per a jugar."
 
+#: mod.dependencies.error
+msgid "[scarlet]Mods are missing dependencies"
+msgstr "[scarlet]Als mods els falten dependències."
+
+#: mod.dependencies.soft
+msgid "(optional)"
+msgstr "(opcional)"
+
+#: mod.dependencies.download
+msgid "Import"
+msgstr "Importa"
+
+#: mod.dependencies.downloadreq
+msgid "Import Required"
+msgstr "Cal importació"
+
+#: mod.dependencies.downloadall
+msgid "Import All"
+msgstr "Importa-ho tot"
+
+#: mod.dependencies.status
+msgid "Import Results"
+msgstr "Resultats de la importació"
+
+#: mod.dependencies.success
+msgid "Successfully downloaded:"
+msgstr "Descarregat amb èxit:"
+
+#: mod.dependencies.failure
+msgid "Failed to download:"
+msgstr "No s’ha pogut descarregar:"
+
+#: mod.dependencies.imported
+msgid "This mod requires dependencies. Download?"
+msgstr "Aquest mod té dependències. Les voleu descarregar?"
+
 #: about.button
 msgid "About"
 msgstr "Més informació"
@@ -853,10 +903,14 @@ msgid ""
 msgstr ""
 "[scarlet]No recomanat per a jugadors novells.[]\n"
 "\n"
-"Contingut antic; l’experiència clàssica. Campanya més oberta.\n"
+"Contingut antic: l’experiència clàssica. Campanya més oberta.\n"
 "\n"
 "Potser els mapes i mecàniques de la campanya no estan massa equilibrats. "
 "Contingut en general menys polit que el d’Erekir."
+
+#: campaign.difficulty
+msgid "Difficulty"
+msgstr "Dificultat"
 
 #: completed
 msgid "[accent]Researched"
@@ -895,7 +949,7 @@ msgstr "[lightgray]{0} d’investigades."
 
 #: research.progress
 msgid "{0}% complete"
-msgstr "{0} % completat"
+msgstr "S’ha completat un {0} %."
 
 #: players
 msgid "{0} players"
@@ -1145,6 +1199,10 @@ msgstr "Rastreja un jugador"
 msgid "Player name: [accent]{0}"
 msgstr "Nom del jugador: [accent]{0}"
 
+#: trace.language
+msgid "Language: [accent]{0}"
+msgstr "Idioma: [accent]{0}"
+
 #: trace.mobile
 msgid "Mobile Client: [accent]{0}"
 msgstr "Client de mòbil: [accent]{0}"
@@ -1295,6 +1353,14 @@ msgstr "S’ha esgotat el temps d’espera."
 msgid "Failed to load world data!"
 msgstr "No s’han pogut carregar les dades del món!"
 
+#: disconnect.snapshottimeout
+msgid ""
+"Timed out while receiving UDP snapshots.\n"
+"This may be caused by an unstable network or connection."
+msgstr ""
+"S’ha esgotat el temps d’espera mentre es rebien els UDP instantanis.\n"
+"Pot ser degut a una connexió o xarxa inestables."
+
 #: cantconnect
 msgid "Unable to join game ([accent]{0}[])."
 msgstr "No és possible unir-se a la partida ([accent]{0}[])."
@@ -1314,6 +1380,17 @@ msgstr "[accent]Es carreguen les dades del món…"
 #: server.invalidport
 msgid "Invalid port number!"
 msgstr "El número de port no és vàlid!"
+
+#: server.error.addressinuse
+msgid ""
+"[scarlet]Failed to open server on port 6567.[]\n"
+"\n"
+"Make sure no other Mindustry servers are running on your device or network!"
+msgstr ""
+"[scarlet]El port 6567 no s’ha pogut obrir.[]\n"
+"\n"
+"Assegureu-vos que no s’executen altres servidors del Mindustry a la xarxa o "
+"dispositiu!"
 
 #: server.error
 msgid "[scarlet]Error hosting server."
@@ -1444,6 +1521,36 @@ msgstr "Data de l’última desada: {0}"
 msgid "Playtime: {0}"
 msgstr "Temps de joc: {0}"
 
+#: dontshowagain
+msgid "Don't show again"
+msgstr "No ho mostris més"
+
+#: warn.32bit.title
+msgid "32-bit Deprecation Warning"
+msgstr "Avís d’obsolescència dels 32 bits"
+
+#: warn.32bit
+msgid ""
+"You are using a [red]32-bit[] version of Mindustry.\n"
+"As newer Java versions have dropped 32-bit Windows support, [red]32-bit "
+"support will be discontinued in the future[].\n"
+"\n"
+"Please upgrade to a 64-bit machine, and make sure you have the 64-bit "
+"version of Mindustry downloaded.\n"
+"\n"
+"If you are running Mindustry as a JAR file, make sure you are using 64-bit "
+"Java."
+msgstr ""
+"Feu servir una versió del Mindustry de [red]32 bits[].\n"
+"Com que les versions noves de Java ja no suporten les versions de Windows de "
+"32 bits, [red]no es donarà suport per a 32 bits[].\n"
+"\n"
+"Canvieu a una màquina de 64 bits i assegureu-vos que teniu la versió del "
+"Mindustry de 64 bits.\n"
+"\n"
+"Si executeu el Mindustry com a fitxer JAR, assegureu-vos que feu servir el "
+"Java de 64 bits."
+
 #: warning
 msgid "Warning."
 msgstr "Avís."
@@ -1530,6 +1637,10 @@ msgstr "Carrega blocs"
 msgid "Unload Payload"
 msgstr "Descarrega"
 
+#: command.loopPayload
+msgid "Loop Unit Transfer"
+msgstr "Transfereix les unitats en bucle"
+
 #: stance.stop
 msgctxt "stance.stop"
 msgid "Cancel Orders"
@@ -1558,6 +1669,14 @@ msgid ""
 msgstr ""
 "Comportament: Senzill\n"
 "[lightgray]Mou-te en línia recta, sense encaminador"
+
+#: stance.mineauto
+msgid "Automatic Mining"
+msgstr "Extracció automàtica"
+
+#: stance.mine
+msgid "Mine Item: {0}"
+msgstr "Extrau l’element: {0}"
 
 #: openlink
 msgid "Open Link"
@@ -1620,7 +1739,7 @@ msgid ""
 "\n"
 "Once the data is imported, your game will exit immediately."
 msgstr ""
-"Si s’importen dades externes es sobreescriuran[scarlet] totes[] les dades de "
+"Si s’importen dades externes se sobreescriuran[scarlet] totes[] les dades de "
 "la partida actual.\n"
 "[accent]Això no es podrà desfer![]\n"
 "\n"
@@ -1677,6 +1796,10 @@ msgstr ""
 #: commandmode.name
 msgid "[accent]Command Mode"
 msgstr "[accent]Mode d’Ordres"
+
+#: commandmode.nounits
+msgid "[no units]"
+msgstr "[sense unitats]"
 
 #: wave
 msgid "[accent]Wave {0}"
@@ -1862,6 +1985,18 @@ msgstr ""
 "No s’ha pogut inicialitzar els serveis de l’Steam.\n"
 "Error: {0}"
 
+#: editor.showblocks
+msgid "Show Blocks"
+msgstr "Mostra els blocs"
+
+#: editor.showterrain
+msgid "Show Terrain"
+msgstr "Mostra el terreny"
+
+#: editor.showfloor
+msgid "Show Floor"
+msgstr "Mostra el terra"
+
 #: editor.planet
 msgid "Planet:"
 msgstr "Planeta:"
@@ -1930,9 +2065,37 @@ msgstr "Objectius"
 msgid "Locale Bundles"
 msgstr "Paquet de traduccions"
 
+#: editor.patches.guide
+msgid "Patch Guide"
+msgstr "Guia de pedaços"
+
 #: editor.patches
 msgid "Data Patches"
-msgstr "Content Patches"
+msgstr "Pedaços de continguts"
+
+#: editor.patch
+msgid "Patchset: {0}"
+msgstr "Conjunt de pedaços: {0}"
+
+#: editor.patches.none
+msgid "[lightgray]No patchsets loaded."
+msgstr "[lightgray]No s’han carregat pedaços."
+
+#: editor.patches.errors
+msgid "Patchset Errors"
+msgstr "Errors del conjunt de pedaços"
+
+#: editor.patches.importerror
+msgid "Failed to import patchset"
+msgstr "No s’ha pogut importar el conjunt de pedaços."
+
+#: editor.patches.delete.confirm
+msgid "Are you sure you want to delete this patchset?"
+msgstr "Esteu segur que voleu esborrar aquest conjunt de pedaços?"
+
+#: editor.patch.fields
+msgid "{0} fields"
+msgstr "{0} camps"
 
 #: editor.worldprocessors
 msgid "World Processors"
@@ -2029,9 +2192,13 @@ msgctxt "waves.title"
 msgid "Waves"
 msgstr "Onades"
 
+#: waves.team
+msgid "Team"
+msgstr "Equip"
+
 #: waves.remove
 msgid "Remove"
-msgstr "Treu"
+msgstr "Trau"
 
 #: waves.every
 msgid "every"
@@ -2090,6 +2257,10 @@ msgstr "Previsualització"
 #: waves.edit
 msgid "Edit..."
 msgstr "Edita"
+
+#: waves.random
+msgid "Random"
+msgstr "Aleatori"
 
 #: waves.copy
 msgctxt "waves.copy"
@@ -2165,6 +2336,10 @@ msgstr "comptades"
 msgid "health"
 msgstr "salut"
 
+#: all
+msgid "All"
+msgstr "Tots"
+
 #: editor.default
 msgid "[lightgray]<Default>"
 msgstr "[lightgray]<Per defecte>"
@@ -2185,6 +2360,14 @@ msgstr "Variables"
 msgid "Are you sure you want to clear all code from this processor?"
 msgstr "Esteu segur que voleu esborrar tot el codi d’aquest processador?"
 
+#: logic.restart
+msgid "Restart"
+msgstr "Reinicia"
+
+#: logic.globals
+msgid "Built-in Variables"
+msgstr "Variables internes"
+
 #: editor.name
 msgctxt "editor.name"
 msgid "Name:"
@@ -2196,7 +2379,7 @@ msgstr "Genera una unitat"
 
 #: editor.removeunit
 msgid "Remove Unit"
-msgstr "Treu una unitat"
+msgstr "Trau una unitat"
 
 #: editor.teams
 msgctxt "editor.teams"
@@ -2395,7 +2578,7 @@ msgid ""
 "This overwrites an existing map."
 msgstr ""
 "[accent]Avís!\n"
-"Es sobreescriurà el mapa existent."
+"Se sobreescriurà el mapa existent."
 
 #: editor.overwrite.confirm
 msgid ""
@@ -2470,6 +2653,14 @@ msgstr "Esborra els del mateix tipus"
 #: toolmode.fillerase.description
 msgid "Erase blocks of the same type."
 msgstr "Esborra els blocs que siguin del mateix tipus."
+
+#: toolmode.fillcliffs
+msgid "Fill Cliffs"
+msgstr "Omple els espadats"
+
+#: toolmode.fillcliffs.description
+msgid "Turns walls into cliffs."
+msgstr "Converteix els murs en espadats."
 
 #: toolmode.drawteams
 msgid "Draw Teams"
@@ -3092,6 +3283,10 @@ msgstr "Màx."
 msgid "Banned Blocks"
 msgstr "Blocs no permesos"
 
+#: unbannedblocks
+msgid "Unbanned Blocks"
+msgstr "Blocs permesos"
+
 #: objectives
 msgctxt "objectives"
 msgid "Objectives"
@@ -3100,6 +3295,10 @@ msgstr "Objectius"
 #: bannedunits
 msgid "Banned Units"
 msgstr "Unitats no permeses"
+
+#: unbannedunits
+msgid "Unbanned Units"
+msgstr "Unitats permeses"
 
 #: bannedunits.whitelist
 msgid "Banned Units As Whitelist"
@@ -3124,6 +3323,14 @@ msgstr "Capacitat de càrrega per llançament: [accent]{0}"
 #: launch.destination
 msgid "Destination: {0}"
 msgstr "Destinació: {0}"
+
+#: landing.sources
+msgid "Source Sectors: [accent]{0}[]"
+msgstr "Sectors d’origen: [accent]{0}[]"
+
+#: landing.import
+msgid "Max Total Import: {0}[accent]{1}[lightgray]/min"
+msgstr "Importació total màxima: {0}[accent]{1}[lightgray]/min"
 
 #: configure.invalid
 msgid "Amount must be a number between 0 and {0}."
@@ -3211,10 +3418,10 @@ msgid ""
 "\n"
 "This will not be fixed. There is no known workaround for this issue."
 msgstr ""
-"Mindustry is unable to load this mod.\n"
-"Your device is blocking import of Java mods due to recent changes in Android."
-"\n"
-"There is no known workaround to this issue."
+"El Mindustry no pot carregar aquest mod.\n"
+"El dispositiu bloca la importació de mods Java per uns canvis recents "
+"d’Android.\n"
+"De moment, no es coneix cap solució a aquest problema."
 
 #: weather.rain.name
 msgid "Rain"
@@ -3261,6 +3468,10 @@ msgstr "Ataquen {0}."
 msgid "[lightgray]Unexplored"
 msgstr "[lightgray]Inexplorat"
 
+#: sectors.attempts
+msgid "Attempts:"
+msgstr "Intents:"
+
 #: sectors.resources
 msgid "Resources:"
 msgstr "Recursos:"
@@ -3302,17 +3513,29 @@ msgctxt "sectors.launch"
 msgid "Launch"
 msgstr "Llança"
 
+#: sectors.nolaunchcandidate
+msgid "No Launch Sector"
+msgstr "No hi ha sector de llançament"
+
 #: sectors.viewsubmission
 msgid " View Submission"
-msgstr " View Submissions"
+msgstr " Veure propostes"
 
 #: sectors.select
 msgid "Select"
 msgstr "Selecciona"
 
+#: sectors.launchselect
+msgid "Select Launch Destination"
+msgstr "Tria el destí del llançament"
+
 #: sectors.nonelaunch
 msgid "[lightgray]none (sun)"
 msgstr "[lightgray]cap (sol)"
+
+#: sectors.redirect
+msgid "Redirect Launch Pads"
+msgstr "Redirigeix les plataformes de llançament"
 
 #: sectors.rename
 msgid "Rename Sector"
@@ -3346,6 +3569,15 @@ msgstr ""
 #: sector.curcapture
 msgid "Sector Captured"
 msgstr "Sector capturat"
+
+#: sector.lockdown
+msgid ""
+"[red]:warning:[accent] Sector currently under attack\n"
+"[lightgray]production, research, export and import disabled"
+msgstr ""
+"[red]:avís:[accent] Ataquen el sector\n"
+"[lightgray]Es para la producció, investigació i les importacions/"
+"exportacions."
 
 #: sector.curlost
 msgid "Sector Lost"
@@ -3393,6 +3625,10 @@ msgstr ""
 msgid "View Sector"
 msgstr "Veure el sector"
 
+#: sector.foundationrequired
+msgid "[lightgray] Core: Foundation Required"
+msgstr "[lightgray] Nucli: Calen fonaments"
+
 #: threat.low
 msgid "Low"
 msgstr "Baixa"
@@ -3413,6 +3649,39 @@ msgstr "Extrema"
 msgctxt "threat.eradication"
 msgid "Eradication"
 msgstr "Erradicació"
+
+#: difficulty.casual
+msgid "Casual"
+msgstr "Molt fàcil"
+
+#: difficulty.easy
+msgid "Easy"
+msgstr "Fàcil"
+
+#: difficulty.hard
+msgid "Hard"
+msgstr "Difícil"
+
+#: difficulty.eradication
+msgctxt "difficulty.eradication"
+msgid "Eradication"
+msgstr "Erradicació"
+
+#: difficulty.enemyHealthMultiplier
+msgid "Enemy Health: {0}"
+msgstr "Salut de l’enemic: {0}"
+
+#: difficulty.enemySpawnMultiplier
+msgid "Enemy Amount: {0}"
+msgstr "Quantitat d’enemics: {0}"
+
+#: difficulty.waveTimeMultiplier
+msgid "Wave Timer: {0}"
+msgstr "Temps entre onades: {0}"
+
+#: difficulty.nomodifiers
+msgid "[lightgray](No modifiers)"
+msgstr "[lightgray](Sense modificadors)"
 
 #: planets
 msgid "Planets"
@@ -3452,7 +3721,7 @@ msgstr "L’escletxa desolada"
 
 #: sector.nuclearComplex.name
 msgid "Nuclear Production Complex"
-msgstr "Complex de producció nuclear"
+msgstr "La central de producció nuclear"
 
 #: sector.overgrowth.name
 msgid "Overgrowth"
@@ -3472,7 +3741,7 @@ msgstr "El port de muntanya dels fongs"
 
 #: sector.biomassFacility.name
 msgid "Biomass Synthesis Facility"
-msgstr "Centre de síntesi de biomassa"
+msgstr "La central de síntesi de biomassa"
 
 #: sector.windsweptIslands.name
 msgid "Windswept Islands"
@@ -3481,6 +3750,18 @@ msgstr "Les illes escombrades pel vent"
 #: sector.extractionOutpost.name
 msgid "Extraction Outpost"
 msgstr "Post avançat d’extracció"
+
+#: sector.facility32m.name
+msgid "Facility 32 M"
+msgstr "Central 32 M"
+
+#: sector.taintedWoods.name
+msgid "Tainted Woods"
+msgstr "Boscos infectats"
+
+#: sector.infestedCanyons.name
+msgid "Infested Canyons"
+msgstr "Les gorges infestades"
 
 #: sector.planetaryTerminal.name
 msgid "Planetary Launch Terminal"
@@ -3493,6 +3774,42 @@ msgstr "Línia de costa"
 #: sector.navalFortress.name
 msgid "Naval Fortress"
 msgstr "Fortalesa naval"
+
+#: sector.polarAerodrome.name
+msgid "Polar Aerodrome"
+msgstr "Aeròdrom polar"
+
+#: sector.atolls.name
+msgid "Atolls"
+msgstr "Els atol·lons"
+
+#: sector.testingGrounds.name
+msgid "Testing Grounds"
+msgstr "Camps de proves"
+
+#: sector.weatheredChannels.name
+msgid "Weathered Channels"
+msgstr "Els canals erosionats"
+
+#: sector.mycelialBastion.name
+msgid "Mycelial Bastion"
+msgstr "Bastió micelial"
+
+#: sector.frontier.name
+msgid "Frontier"
+msgstr "La frontera"
+
+#: sector.sunkenPier.name
+msgid "Sunken Pier"
+msgstr "Moll afonat"
+
+#: sector.cruxscape.name
+msgid "Cruxscape"
+msgstr "Cruxscapada"
+
+#: sector.geothermalStronghold.name
+msgid "Geothermal Stronghold"
+msgstr "Fortalesa geotèrmica"
 
 #: sector.groundZero.description
 msgid ""
@@ -4035,6 +4352,10 @@ msgstr "Commocionat"
 msgid "Blasted"
 msgstr "Explosionat"
 
+#: status.corroded.name
+msgid "Corroded"
+msgstr "Oxidat"
+
 #: status.unmoving.name
 msgid "Unmoving"
 msgstr "Immòbil"
@@ -4221,6 +4542,10 @@ msgstr "Energia/Tret"
 msgid "Damage"
 msgstr "Dany"
 
+#: stat.frequency
+msgid "Frequency"
+msgstr "Cadència de tir"
+
 #: stat.targetsair
 msgid "Targets Air"
 msgstr "Dispara objectius aeris"
@@ -4228,6 +4553,18 @@ msgstr "Dispara objectius aeris"
 #: stat.targetsground
 msgid "Targets Ground"
 msgstr "Dispara objectius terrestres"
+
+#: stat.crushdamage
+msgid "Crush Damage"
+msgstr "Dany per aixafament"
+
+#: stat.legsplashdamage
+msgid "Leg Splash Damage"
+msgstr "Dany per aixafament"
+
+#: stat.legsplashrange
+msgid "Leg Splash Range"
+msgstr "Abast de l’aixafament"
 
 #: stat.itemsmoved
 msgid "Move Speed"
@@ -4388,6 +4725,10 @@ msgstr "Salut de l’escut"
 msgid "Cooldown Time"
 msgstr "Temps de refredament"
 
+#: stat.regenerationrate
+msgid "Regeneration Rate"
+msgstr "Taxa de regeneració"
+
 #: stat.explosiveness
 msgid "Explosiveness"
 msgstr "Explosivitat"
@@ -4501,6 +4842,10 @@ msgstr "Immunitats"
 msgid "Healing"
 msgstr "Reparador"
 
+#: stat.efficiency
+msgid "[stat]{0}% Efficiency"
+msgstr "[stat]{0} % d’eficiència"
+
 #: ability.forcefield
 msgid "Force Field"
 msgstr "Camp de força"
@@ -4572,7 +4917,7 @@ msgid "Repair Suppression"
 msgstr "Regenera el camp de supressió"
 
 #: ability.suppressionfield.description
-msgid "Stops nearby repair buildings"
+msgid "Stops nearby repair buildings and build towers"
 msgstr "Para els edificis de reparació propers."
 
 #: ability.energyfield
@@ -4627,6 +4972,10 @@ msgstr "[stat]{0}/seg[lightgray] de cadència de tir"
 msgid "[stat]{0}[lightgray] health/sec"
 msgstr "[stat]{0}[lightgray] de salut/seg"
 
+#: ability.stat.pulseregen
+msgid "[stat]{0}[lightgray] health/pulse"
+msgstr "[stat]{0}[lightgray] de salut/impuls"
+
 #: ability.stat.shield
 msgid "[stat]{0}[lightgray] max shield"
 msgstr "[stat]{0}[lightgray] d’escut"
@@ -4634,6 +4983,10 @@ msgstr "[stat]{0}[lightgray] d’escut"
 #: ability.stat.repairspeed
 msgid "[stat]{0}/sec[lightgray] repair speed"
 msgstr "[stat]{0}/seg[lightgray] de velocitat de reparació"
+
+#: ability.stat.deflectchance
+msgid "[stat]{0}%[lightgray] deflect chance"
+msgstr "[stat]{0} %[lightgray] de possibilitat de desviació"
 
 #: ability.stat.slurpheal
 msgid "[stat]{0}[lightgray] health/liquid unit"
@@ -4667,6 +5020,14 @@ msgstr "[stat]{0} seg[lightgray] de duració"
 msgid "[stat]{0} sec[lightgray] build time"
 msgstr "[stat]{0} seg[lightgray] de temps de construcció"
 
+#: bar.displaytoolarge
+msgid ""
+"Dimensions too large\n"
+"(Max: {0}x{0})"
+msgstr ""
+"Dimensions massa grosses\n"
+"(Màx: {0}×{0})"
+
 #: bar.onlycoredeposit
 msgid "Only Core Depositing Allowed"
 msgstr "Només es permet depositar al nucli."
@@ -4677,7 +5038,7 @@ msgstr "Cal una perforadora millor."
 
 #: bar.nobatterypower
 msgid "Insufficient Battery Power"
-msgstr "Insufficieny Battery Power"
+msgstr "Energia a la bateria insuficient"
 
 #: bar.noresources
 msgid "Missing Resources"
@@ -4713,7 +5074,7 @@ msgstr "Potenciador: +{0} %"
 
 #: bar.powerbuffer
 msgid "Batteries: {0}/{1}"
-msgstr "Battery Power: {0}/{1}"
+msgstr "Energia de la bateria: {0}/{1}"
 
 #: bar.powerbalance
 msgid "Power: {0}/s"
@@ -4751,6 +5112,10 @@ msgstr "Líquid"
 #: bar.heat
 msgid "Heat"
 msgstr "Calor"
+
+#: bar.cooldown
+msgid "Cooldown"
+msgstr "Temps de refredament"
 
 #: bar.instability
 msgid "Instability"
@@ -4795,6 +5160,10 @@ msgstr "Sortida"
 #: bar.strength
 msgid "[stat]{0}[lightgray]x strength"
 msgstr "[stat]{0}[lightgray]× força"
+
+#: bar.regenerationrate
+msgid "[stat]{0}/sec[lightgray] regen rate"
+msgstr "[stat]{0}/sec[lightgray] de taxa de regen."
 
 #: units.processorcontrol
 msgid "[lightgray]Processor Controlled"
@@ -4846,7 +5215,11 @@ msgstr "[stat]{0}[lightgray]× llampec ~ [stat]{1}[lightgray] de dany"
 
 #: bullet.buildingdamage
 msgid "[stat]{0}%[lightgray] building damage"
-msgstr "[stat]{0}%[lightgray] de dany a les estructures"
+msgstr "[stat]{0} %[lightgray] de dany a les estructures"
+
+#: bullet.shielddamage
+msgid "[stat]{0}%[lightgray] shield damage"
+msgstr "[stat]{0} %[lightgray] de dany d’escut"
 
 #: bullet.knockback
 msgid "[stat]{0}[lightgray] knockback"
@@ -4882,11 +5255,11 @@ msgstr "[stat]abast de {0}[lightgray] caselles"
 
 #: bullet.notargetsmissiles
 msgid "[stat] ignores missiles"
-msgstr "[stat] ignores buildings"
+msgstr "[stat] ignora estructures"
 
 #: bullet.notargetsbuildings
 msgid "[stat] ignores buildings"
-msgstr "[stat] ignores missiles"
+msgstr "[stat] ignora míssils"
 
 #: unit.blocks
 msgid "blocks"
@@ -4968,6 +5341,10 @@ msgstr "dispars"
 msgid "/shot"
 msgstr "/dispar"
 
+#: unit.perleg
+msgid "per leg"
+msgstr "per pota"
+
 #: category.purpose
 msgctxt "category.purpose"
 msgid "Purpose"
@@ -5008,7 +5385,8 @@ msgid ""
 "When enabled, music will always play on loop in-game.\n"
 "When disabled, it only plays at random intervals."
 msgstr ""
-"Quan està activat, la música es reproduirà en bucle durant les partides.\n"
+"Mentre estigui activat, la música es reproduirà en bucle durant les partides."
+"\n"
 "Quan està desactivat, només es reproduirà a intervals aleatoris."
 
 #: setting.skipcoreanimation.name
@@ -5183,6 +5561,18 @@ msgstr "Activa la consola"
 msgid "Smooth Camera"
 msgstr "Moviment de càmera suau"
 
+#: setting.detach-camera.name
+msgid "Free Camera"
+msgstr "Càmera lliure"
+
+#: setting.detach-camera.description
+msgid ""
+"If enabled, the camera moves independently of the player unit.\n"
+"This setting can be assigned a hotkey."
+msgstr ""
+"Si s’activa, la càmera es mou independentment de la unitat del jugador.\n"
+"A aquesta opció se li pot assignar una tecla de drecera."
+
 #: setting.vsync.name
 msgid "VSync"
 msgstr "Sincronització vertical (VSync)"
@@ -5239,6 +5629,10 @@ msgstr "Silencia el so"
 msgid "Send Anonymous Crash Reports"
 msgstr "Envia informes d’error anònims"
 
+#: setting.communityservers.name
+msgid "Fetch Community Server List"
+msgstr "Cerca la llista de servidors de la comunitat"
+
 #: setting.savecreate.name
 msgid "Auto-Create Saves"
 msgstr "Desa automàticament la partida"
@@ -5259,13 +5653,17 @@ msgstr "Opacitat del xat"
 msgid "Power Laser Opacity"
 msgstr "Opacitat dels làsers d’energia"
 
+#: setting.unitlaseropacity.name
+msgid "Unit Mining Beam Opacity"
+msgstr "Opacitat dels raigs d’extraccions mineres"
+
 #: setting.bridgeopacity.name
 msgid "Bridge Opacity"
 msgstr "Opacitat de cintes i canonades subterrànies"
 
 #: setting.playerchat.name
 msgid "Display Player Bubble Chat"
-msgstr "Mostra el xat bombolla de jugadors"
+msgstr "Mostra el xat bombolla dels jugadors"
 
 #: setting.showweather.name
 msgid "Show Weather Graphics"
@@ -5295,6 +5693,18 @@ msgstr ""
 "Indica si només els amics de Steam podran unir-se a la vostra partida.\n"
 "Si no es selecciona aquesta opció, la vostra partida serà pública i s’hi "
 "podrà unir qualsevol jugador."
+
+#: setting.maxmagnificationmultiplierpercent.name
+msgid "Min Camera Distance"
+msgstr "Distància mín. de la càmera"
+
+#: setting.minmagnificationmultiplierpercent.name
+msgid "Max Camera Distance"
+msgstr "Distància màx. de la càmera"
+
+#: setting.minmagnificationmultiplierpercent.description
+msgid "High values may cause performance issues."
+msgstr "Els valors alts poden provocar problemes de rendiment."
 
 #: public.beta
 msgid "Note that beta versions of the game cannot make public lobbies."
@@ -5485,6 +5895,10 @@ msgstr "Ordre d’unitat: Descarrega blocs"
 msgid "Unit Command: Enter Payload"
 msgstr "Ordre d’unitat: Entra blocs"
 
+#: keybind.unit_command_loop_payload.name
+msgid "Unit Command: Loop Unit Transfer"
+msgstr "Ordre d’unitat: Transfereix unitats en bucle"
+
 #: keybind.rebuild_select.name
 msgid "Rebuild Region"
 msgstr "Reconstrueix la regió"
@@ -5597,6 +6011,14 @@ msgstr "Selecciona totes les unitats"
 msgid "Select All Unit Factories"
 msgstr "Selecciona totes les unitats fabricadores"
 
+#: keybind.select_all_unit_transport.name
+msgid "Select All Unit Transports"
+msgstr "Selecciona tots els transports d’unitats"
+
+#: keybind.select_across_screen.name
+msgid "Select Across Screen (Hold)"
+msgstr "Selecciona per la pantalla (Mantén)"
+
 #: keybind.deselect.name
 msgid "Deselect"
 msgstr "Cancel·la la selecció"
@@ -5621,6 +6043,10 @@ msgstr "Menú"
 #: keybind.pause.name
 msgid "Pause"
 msgstr "Posa en pausa"
+
+#: keybind.skip_wave.name
+msgid "Skip Wave"
+msgstr "Salta l’onada"
 
 #: keybind.pause_building.name
 msgid "Pause/Resume Building"
@@ -5694,6 +6120,14 @@ msgstr "Deixa anar la unitat"
 msgid "Zoom Minimap"
 msgstr "Apropa/Allunya la vista del minimapa"
 
+#: keybind.detach_camera.name
+msgid "Toggle Free Camera"
+msgstr "Commuta la càmera lliure"
+
+#: keybind.debug_hitboxes.name
+msgid "Toggle Debug Hitboxes"
+msgstr "Commuta les caixes de xoc de depuració"
+
 #: mode.help.title
 msgid "Description of modes"
 msgstr "Descripció dels modes"
@@ -5758,9 +6192,26 @@ msgstr "Amaga els blocs no permesos"
 msgid "Infinite Resources"
 msgstr "Recursos infinits"
 
+#: rules.fillitems
+msgid "Fill Core With Items"
+msgstr "Omple el nucli amb elements"
+
 #: rules.onlydepositcore
 msgid "Only Allow Core Depositing"
 msgstr "Al nucli només es poden dipositar recursos"
+
+#: rules.coreunloaders
+msgid "Allow Core Unloaders"
+msgstr "Permet descarregadors al nucli"
+
+#: rules.coreunloaders.info
+msgid ""
+"When enabled, Serpulo unloaders can take items from the core.\n"
+"Does not affect Erekir unloaders."
+msgstr ""
+"Si s’activa, els descarregadors de Serpulo podran traure elements dels "
+"nuclis.\n"
+"Aquesta opció no afecta als descarregadors d’Ereki."
 
 #: rules.derelictrepair
 msgid "Allow Derelict Block Repair"
@@ -5799,8 +6250,20 @@ msgid ""
 "When enabled, the player can edit rules in-game via the button in the bottom "
 "left corner of the Pause menu."
 msgstr ""
-"Quan està activat, el jugador pot editar les regles de la partida amb el "
-"botó que hi ha a la part inferior esquerra del menú de pausa."
+"Mentre estigui activat, el jugador pot editar les regles de la partida amb "
+"el botó que hi ha a la part inferior esquerra del menú de pausa."
+
+#: rules.alloweditworldprocessors
+msgid "Allow Editing World Processors"
+msgstr "Permet l’edició de processadors integrats"
+
+#: rules.alloweditworldprocessors.info
+msgid ""
+"When enabled, world logic blocks can be placed and edited even outside the "
+"editor."
+msgstr ""
+"Mentre estigui activat, els blocs lògics integrats es poden posar i editar "
+"també a fora de l’editor."
 
 #: rules.waves
 msgctxt "rules.waves"
@@ -5810,6 +6273,16 @@ msgstr "Onades"
 #: rules.airUseSpawns
 msgid "Air Units Use Spawn Points"
 msgstr "Les unitats aèries fan servir els punts d’aparició"
+
+#: rules.wavespawnatcores
+msgid "Waves Spawn At Cores"
+msgstr "Les onades apareixen als nuclis"
+
+#: rules.wavespawnatcores.info
+msgid "When enabled in attack mode, waves spawn near all enemy cores."
+msgstr ""
+"Mentre estigui activat en mode d’atac, les onades apareixeran als nuclis "
+"enemics."
 
 #: rules.attack
 msgid "Attack Mode"
@@ -5826,6 +6299,30 @@ msgstr "Nivell de construcció de la IA"
 #: rules.rtsai
 msgid "RTS AI"
 msgstr "IA avançada (RTS AI)"
+
+#: rules.rtsai.campaign
+msgid "RTS Attack AI"
+msgstr "IA d’atac en RTS"
+
+#: rules.rtsai.campaign.info
+msgid ""
+"In attack maps, makes units group up and attack player bases in a more "
+"intelligent manner."
+msgstr ""
+"En mapes d’atac, fa que les unitats s’agrupin i ataquin les bases dels "
+"jugadors de manera més intel·ligent."
+
+#: rules.clearsectoronloss
+msgid "Clear Sector On Loss"
+msgstr "Neteja el sector quan es perdi"
+
+#: rules.clearsectoronloss.info
+msgid ""
+"When the sector is lost, player buildings from the previous attempt will not "
+"carry over."
+msgstr ""
+"Quan es perd un sector, els edificis del jugador de l’intent anterior "
+"s’eliminen."
 
 #: rules.rtsminsquadsize
 msgid "Min Squad Size"
@@ -5854,6 +6351,30 @@ msgstr "Protecció poligonal del nucli"
 #: rules.placerangecheck
 msgid "Placement Range Check"
 msgstr "Comprova l’abast de construcció"
+
+#: rules.protectcores
+msgid "Protect Cores"
+msgstr "Protegeix els nuclis"
+
+#: rules.protectcores.info
+msgid ""
+"When disabled, the core no-build radius won't affect this team.\n"
+"Players won't be assigned to unprotected teams."
+msgstr ""
+"Mentre estigui desactivat, el radi de no construcció del nucli no afectarà a "
+"l’equip.\n"
+"Als jugadors no se’ls assignarà un equip sense protecció."
+
+#: rules.checkplacement
+msgid "Check Placement"
+msgstr "Comprova les situacions"
+
+#: rules.checkplacement.info
+msgid ""
+"When disabled, buildings of this team are ignored in placement range checks."
+msgstr ""
+"Mentre estigui desactivat, les estructures d’aquest equip no es tindran en "
+"compte quan s’avaluïn les condicions d’abast quan es construeixi."
 
 #: rules.enemyCheat
 msgid "Infinite Enemy Team Resources"
@@ -5887,6 +6408,18 @@ msgstr "Multiplicador del dany de les unitats"
 msgid "Unit Crash Damage Multiplier"
 msgstr "Multiplicador del dany de xoc de les unitats"
 
+#: rules.unitminespeedmultiplier
+msgid "Unit Mine Speed Multiplier"
+msgstr "Multiplicador de velocitat d’extracció de les unitats"
+
+#: rules.logicunitbuild
+msgid "Logic Unit Building"
+msgstr "Construcció d’unitats lògiques"
+
+#: rules.logicunitdeconstruct
+msgid "Logic Unit Deconstruction"
+msgstr "Desmantellament d’unitats lògiques"
+
 #: rules.solarmultiplier
 msgid "Solar Power Multiplier"
 msgstr "Multiplicador de l’energia solar"
@@ -5910,6 +6443,10 @@ msgstr "Limita l’àrea del mapa"
 #: rules.enemycorebuildradius
 msgid "Core No-Build Radius:[lightgray] (tiles)"
 msgstr "Radi de no construcció del nucli enemic:[lightgray] (caselles)"
+
+#: rules.extracorebuildradius
+msgid "Extra No-Build Radius:[lightgray] (tiles)"
+msgstr "Radi de no construcció addicional:[lightgray] (caselles)"
 
 #: rules.wavespacing
 msgid "Wave Spacing:[lightgray] (sec)"
@@ -5996,6 +6533,34 @@ msgstr "Il·luminació"
 msgid "Fog of War"
 msgstr "Amaga el terreny inexplorat"
 
+#: rules.invasions
+msgid "Enemy Sector Invasions"
+msgstr "Invasions de setors enemics"
+
+#: rules.legacylaunchpads
+msgid "Legacy Launch Pad Mechanics"
+msgstr "Mecàniques de plataformes de llançament antigues"
+
+#: rules.legacylaunchpads.info
+msgid "Allows using launch pads without landing pads, as in 7.0."
+msgstr ""
+"Permet fer servir plataformes de llançament sense plataformes d’aterratge, "
+"com a la versió 7.0."
+
+#: landingpad.legacy.disabled
+msgid "[scarlet] Disabled[lightgray] (Legacy Launch Pads enabled)"
+msgstr ""
+"[scarlet] Desactivat[lightgray] (plataformes de llançament antigues "
+"activades)"
+
+#: rules.showspawns
+msgid "Show Enemy Spawns"
+msgstr "Mostra l’aparició d’enemics"
+
+#: rules.randomwaveai
+msgid "Unpredictable Wave AI"
+msgstr "IA d’onades immprevisible"
+
 #: rules.fire
 msgid "Fire"
 msgstr "Foc"
@@ -6028,6 +6593,15 @@ msgstr "Sempre"
 msgid "Duration:"
 msgstr "Durada:"
 
+#: rules.randomwaveai.info
+msgid ""
+"Makes units spawned in waves target random structures instead of directly "
+"attacking the core or power generators."
+msgstr ""
+"Fa que les unitats que apareixen en onades tinguin com a objectiu "
+"estructures aleatòries en lloc d’atacar directament el nucli o les centrals "
+"elèctriques."
+
 #: rules.placerangecheck.info
 msgid ""
 "Prevents players from placing anything near enemy buildings. When trying to "
@@ -6043,6 +6617,75 @@ msgid "Prevents units from depositing items into any buildings except cores."
 msgstr ""
 "No es permet que les unitats deixin elements a dins dels edificis excepte "
 "els nuclis."
+
+#: database-category.item
+msgctxt "database-category.item"
+msgid "Items"
+msgstr "Elements"
+
+#: database-category.unit
+msgctxt "database-category.unit"
+msgid "Units"
+msgstr "Unitats"
+
+#: database-category.block
+msgid "Blocks"
+msgstr "Blocs"
+
+#: database-category.status
+msgid "Status Effects"
+msgstr "Efectes d’estat"
+
+#: database-category.team
+msgid "Factions"
+msgstr "Faccions"
+
+#: database-tag.turret
+msgid "Turret"
+msgstr "Torreta"
+
+#: database-tag.production
+msgid "Production"
+msgstr "Producció"
+
+#: database-tag.distribution
+msgid "Distribution"
+msgstr "Distribució"
+
+#: database-tag.liquid
+msgctxt "database-tag.liquid"
+msgid "Liquid"
+msgstr "Líquid"
+
+#: database-tag.power
+msgctxt "database-tag.power"
+msgid "Power"
+msgstr "Energia"
+
+#: database-tag.defense
+msgid "Defense"
+msgstr "Defensa"
+
+#: database-tag.crafting
+msgid "Crafting"
+msgstr "Elaboració"
+
+#: database-tag.units
+msgctxt "database-tag.units"
+msgid "Units"
+msgstr "Unitats"
+
+#: database-tag.effect
+msgid "Utility"
+msgstr "Utilitat"
+
+#: database-tag.unit-air
+msgid "Air"
+msgstr "Aire"
+
+#: database-tag.unit-ground
+msgid "Ground"
+msgstr "Terrestre"
 
 #: wallore
 msgid "(Wall)"
@@ -6189,6 +6832,10 @@ msgstr "Daga"
 msgid "Mace"
 msgstr "Maça"
 
+#: unit.fortress.name
+msgid "Fortress"
+msgstr "Fortalesa"
+
 #: unit.pulsar.name
 msgid "Pulsar"
 msgstr "Púlsar"
@@ -6197,9 +6844,17 @@ msgstr "Púlsar"
 msgid "Quasar"
 msgstr "Quàsar"
 
+#: unit.crawler.name
+msgid "Crawler"
+msgstr "Rastrejador"
+
 #: unit.atrax.name
 msgid "Atrax"
 msgstr "Àtrax"
+
+#: unit.spiroct.name
+msgid "Spiroct"
+msgstr "Espirocte"
 
 #: unit.arkyid.name
 msgid "Arkyid"
@@ -6377,11 +7032,19 @@ msgstr "Premsa múltiple"
 
 #: block.constructing
 msgid "{0} [lightgray](Constructing)"
-msgstr "{0} [lightgray](Construint)"
+msgstr "{0} [lightgray](En construcció)"
 
 #: block.spawn.name
 msgid "Enemy Spawn"
 msgstr "Punt d’aparició d’enemics"
+
+#: block.remove-wall.name
+msgid "Remove Wall"
+msgstr "Trau el mur"
+
+#: block.remove-ore.name
+msgid "Remove Ore"
+msgstr "Trau el mineral"
 
 #: block.core-shard.name
 msgid "Core: Shard"
@@ -6545,6 +7208,94 @@ msgstr "Terra metàl·lic 5"
 #: block.metal-floor-damaged.name
 msgid "Damaged Metal Floor"
 msgstr "Terra metàl·lic danyat"
+
+#: block.metal-tiles-1.name
+msgid "Metal Tiles 1"
+msgstr "Rajoles de metall 1"
+
+#: block.metal-tiles-2.name
+msgid "Metal Tiles 2"
+msgstr "Rajoles de metall 2"
+
+#: block.metal-tiles-3.name
+msgid "Metal Tiles 3"
+msgstr "Rajoles de metall 3"
+
+#: block.metal-tiles-4.name
+msgid "Metal Tiles 4"
+msgstr "Rajoles de metall 4"
+
+#: block.metal-tiles-5.name
+msgid "Metal Tiles 5"
+msgstr "Rajoles de metall 5"
+
+#: block.metal-tiles-6.name
+msgid "Metal Tiles 6"
+msgstr "Rajoles de metall 6"
+
+#: block.metal-tiles-7.name
+msgid "Metal Tiles 7"
+msgstr "Rajoles de metall 7"
+
+#: block.metal-tiles-8.name
+msgid "Metal Tiles 8"
+msgstr "Rajoles de metall 8"
+
+#: block.metal-tiles-9.name
+msgid "Metal Tiles 9"
+msgstr "Rajoles de metall 9"
+
+#: block.metal-tiles-10.name
+msgid "Metal Tiles 10"
+msgstr "Rajoles de metall 10"
+
+#: block.metal-tiles-11.name
+msgid "Metal Tiles 11"
+msgstr "Rajoles de metall 11"
+
+#: block.metal-tiles-12.name
+msgid "Metal Tiles 12"
+msgstr "Rajoles de metall 12"
+
+#: block.metal-tiles-13.name
+msgid "Metal Tiles 13"
+msgstr "Rajoles de metall 13"
+
+#: block.metal-wall-1.name
+msgid "Metal Wall 1"
+msgstr "Mur de metall 1"
+
+#: block.metal-wall-2.name
+msgid "Metal Wall 2"
+msgstr "Mur de metall 2"
+
+#: block.metal-wall-3.name
+msgid "Metal Wall 3"
+msgstr "Mur de metall 3"
+
+#: block.colored-floor.name
+msgid "Colored Floor"
+msgstr "Terra de colors"
+
+#: block.colored-wall.name
+msgid "Colored Wall"
+msgstr "Mur de colors"
+
+#: block.character-overlay.name
+msgid "Character Overlay"
+msgstr "Capa de personatge"
+
+#: block.character-overlay-white.name
+msgid "Character Overlay (White)"
+msgstr "Capa de personatge (blanca)"
+
+#: block.rune-overlay.name
+msgid "Rune Overlay"
+msgstr "Capa de runa"
+
+#: block.rune-overlay-crux.name
+msgid "Rune Overlay (Crux)"
+msgstr "Capa de runa (crux)"
 
 #: block.dark-panel-1.name
 msgid "Dark Panel 1"
@@ -6974,6 +7725,14 @@ msgstr "Contenidor"
 msgid "Launch Pad [lightgray](Legacy)"
 msgstr "Plataforma de llançament"
 
+#: block.advanced-launch-pad.name
+msgid "Launch Pad"
+msgstr "Plataforma de llançament"
+
+#: block.landing-pad.name
+msgid "Landing Pad"
+msgstr "Plataforma d’aterratge"
+
 #: block.ground-factory.name
 msgid "Ground Factory"
 msgstr "Fàbrica d’unitats terrestres"
@@ -7196,6 +7955,14 @@ msgstr "Fumarola de pedra vermella"
 msgid "Crystalline Vent"
 msgstr "Fumarola cristal·lina"
 
+#: block.stone-vent.name
+msgid "Stone Vent"
+msgstr "Fumarola de pedra"
+
+#: block.basalt-vent.name
+msgid "Basalt Vent"
+msgstr "Fumarola de basalt"
+
 #: block.redmat.name
 msgid "Redmat"
 msgstr "Mata vermella"
@@ -7351,6 +8118,10 @@ msgstr "Escalfador de fase"
 #: block.heat-redirector.name
 msgid "Heat Redirector"
 msgstr "Redirector tèrmic"
+
+#: block.small-heat-redirector.name
+msgid "Small Heat Redirector"
+msgstr "Redireccionador tèrmic petit"
 
 #: block.heat-router.name
 msgid "Heat Router"
@@ -7536,6 +8307,10 @@ msgstr "Respirador de condensació"
 msgid "Cliff Crusher"
 msgstr "Picadora d’espadats"
 
+#: block.large-cliff-crusher.name
+msgid "Advanced Cliff Crusher"
+msgstr "Picadora d’espadats avançada"
+
 #: block.plasma-bore.name
 msgid "Plasma Bore"
 msgstr "Perforadora de plasma"
@@ -7683,6 +8458,10 @@ msgstr "Monitor lògic"
 #: block.large-logic-display.name
 msgid "Large Logic Display"
 msgstr "Monitor lògic gran"
+
+#: block.tile-logic-display.name
+msgid "Tiled Logic Display"
+msgstr "Monitor lògic en mosaic"
 
 #: block.memory-cell.name
 msgid "Memory Cell"
@@ -7986,12 +8765,19 @@ msgstr ""
 "Situeu un nucli de tipus [accent]Fonament[] a sobre del nucli "
 "[accent]Estella[]. Assegureu-vos que no hi hagin obstruccions properes."
 
-#: hint.serpuloCoreZone
+#: hint.cannotUpgrade
 msgid ""
-"Additional :core-shard: [accent]Cores[] may be constructed on :core-zone: "
-"[accent]Core Zone[] tiles."
+"A [red]:tree:[] icon over a payload unit indicates that its upgraded version "
+"is not researched yet.\n"
+"\n"
+"Unit upgrades must be researched in the [accent]:tree: tech tree[] before "
+"they can be produced in reconstructors."
 msgstr ""
-"Additional cores may be constructed on :core-zone: [accent]Core Zone[] tiles."
+"Una icona [red]:tree:[] al damunt d’una unitat de bloc indica que la seva "
+"versió millorada encara no s’ha investigat.\n"
+"\n"
+"Les millores d’unitats s’han d’investigar a l’[accent]arbre de tecnologies "
+":tree:[] abans que es puguin produir als reconstructors."
 
 #: hint.presetLaunch
 msgid ""
@@ -8052,7 +8838,7 @@ msgid ""
 "Move near the :ore-copper: [accent]copper ore[] on the ground and click to "
 "begin mining."
 msgstr ""
-"Apropeu-vos al :ore-copper: [accent]mineral de coure[] del terra i feu-hi "
+"Apropeu-vos al [accent]mineral de coure[] :ore-copper: del terra i feu-hi "
 "clic per a començar a extreure’n coure."
 
 #: gz.mine.mobile
@@ -8060,7 +8846,7 @@ msgid ""
 "Move near the :ore-copper: [accent]copper ore[] on the ground and tap it to "
 "begin mining."
 msgstr ""
-"Apropeu-vos al :ore-copper: [accent]mineral de coure[] del terra i toqueu-lo "
+"Apropeu-vos al [accent]mineral de coure[] :ore-copper: del terra i toqueu-lo "
 "per a començar a extreure’n coure."
 
 #: gz.research
@@ -8070,7 +8856,7 @@ msgid ""
 "from the :production: menu in the bottom right.\n"
 "Click on a copper patch to place it."
 msgstr ""
-"Obriu l’:tree: arbre tecnològic.\n"
+"Obriu l’arbre tecnològic :tree:.\n"
 "Investigueu la :mechanical-drill: [accent]perforadora mecànica[] i després "
 "trieu-la des del menú de sota a la dreta.\n"
 "Feu clic en un dipòsit de coure per a construir-la."
@@ -8084,7 +8870,7 @@ msgid ""
 "\n"
 "Press the :ok: [accent]checkmark[] at the bottom right to confirm."
 msgstr ""
-"Obriu l’:tree: arbre tecnològic.\n"
+"Obriu l’arbre tecnològic :tree:.\n"
 "Investigueu la :mechanical-drill: [accent]perforadora mecànica[] i després "
 "trieu-la des del menú de sota a la dreta.\n"
 "Toqueu un dipòsit de coure per a construir-la.\n"
@@ -8100,7 +8886,7 @@ msgid ""
 "Click and drag to place multiple conveyors.\n"
 "[accent]Scroll[] to rotate."
 msgstr ""
-"Investigueu i construïu :conveyor: [accent]cintes transportadores[] per a "
+"Investigueu i construïu [accent]cintes transportadores[] :conveyor: per a "
 "moure els recursos extrets\n"
 "de les perforadores fins al nucli.\n"
 "\n"
@@ -8116,7 +8902,7 @@ msgid ""
 "\n"
 "Hold down your finger for a second and drag to place multiple conveyors."
 msgstr ""
-"Investigueu i construïu :conveyor: [accent]cintes transportadores[] per a "
+"Investigueu i construïu [accent]cintes transportadores[] :conveyor: per a "
 "moure els recursos extrets\n"
 "de les perforadores fins al nucli.\n"
 "\n"
@@ -8138,7 +8924,7 @@ msgid ""
 ":lead: [accent]Lead[] is another commonly used resource.\n"
 "Set up drills to mine lead."
 msgstr ""
-":lead: El [accent]plom[] és un altre recurs comú.\n"
+"El [accent]plom[] :lead: és un altre recurs comú.\n"
 "Situeu perforadores al damunt de dipòsits de plom per a extreure’n."
 
 #: gz.moveup
@@ -8150,7 +8936,7 @@ msgid ""
 "Research and place 2 :duo: [accent]Duo[] turrets to defend the core.\n"
 "Duo turrets require :copper: [accent]ammo[] from conveyors."
 msgstr ""
-"Investigueu i construïu 2 torretes :duo: [accent]duo[] per a defensar el "
+"Investigueu i construïu 2 torretes [accent]duo[] :duo: per a defensar el "
 "nucli.\n"
 "Les torretes duo necessiten rebre  [accent]munició[] amb cintes "
 "transportadores."
@@ -8167,7 +8953,7 @@ msgid ""
 msgstr ""
 "Els [accent]murs[] poden evitar que el dany arribi a les estructures "
 "importants.\n"
-"Construïu alguns :beryllium-wall: [accent]murs de coure[] al voltant de les "
+"Construïu alguns [accent]murs de coure[] :beryllium-wall: al voltant de les "
 "torretes."
 
 #: gz.defend
@@ -8183,7 +8969,7 @@ msgid ""
 msgstr ""
 "Les torretes estàndard no poden disparar fàcilment a les unitats aèries.\n"
 ":scatter: Les torretes [accent]scatter[] proporcionen una defensa antiaèria "
-"excel·lent, però necessiten munició de :lead: [accent]plom[]."
+"excel·lent, però necessiten munició de [accent]plom[] :lead:."
 
 #: gz.scatterammo
 msgid "Supply the Scatter turret with :lead: [accent]lead[], using conveyors."
@@ -8226,13 +9012,13 @@ msgid ""
 "\n"
 "Use [accent][[WASD] to move."
 msgstr ""
-"Feu clic als murs per a extraure :beryllium: [accent]beril·li[].\n"
+"Feu clic als murs per a extraure [accent]beril·li[] :beryllium:.\n"
 "\n"
 "Feu servir [accent][[WASD] per a moure-vos."
 
 #: onset.mine.mobile
 msgid "Tap to mine :beryllium: [accent]beryllium[] from walls."
-msgstr "Toqueu per a extraure :beryllium: [accent]beril·li[] dels murs."
+msgstr "Toqueu per a extraure [accent]beril·li[] :beryllium: dels murs."
 
 #: onset.research
 msgid ""
@@ -8241,7 +9027,7 @@ msgid ""
 "the vent.\n"
 "This will generate [accent]power[]."
 msgstr ""
-"Obriu :tree: l’arbre tecnològic.\n"
+"Obriu l’arbre tecnològic :tree:.\n"
 "Investigueu i després construïu una :turbine-condenser: [accent]turbina "
 "condensadora[] a la fumarola.\n"
 "Així aconseguireu generar [accent]energia[]."
@@ -8261,7 +9047,7 @@ msgid ""
 "Connect the turbine condenser to the plasma bore."
 msgstr ""
 "Per a subministrar [accent]energia[] a la perforadora de plasma, investigueu "
-"i situeu un :beam-node: [accent]node de transmissió d’energia per raigs[].\n"
+"i situeu un [accent]node de transmissió d’energia per raigs[] :beam-node:.\n"
 "Connecteu la turbina condensadora a la perforadora de plasma."
 
 #: onset.ducts
@@ -8271,7 +9057,7 @@ msgid ""
 "Click and drag to place multiple ducts.\n"
 "[accent]Scroll[] to rotate."
 msgstr ""
-"Investigueu i situeu :duct: [accent]conductes[] per a moure els recursos "
+"Investigueu i situeu [accent]conductes[] :duct: per a moure els recursos "
 "extrets amb perforadores de plasma al nucli.\n"
 "\n"
 "Feu clic i arrossegueu per a situar més d’un conducte fàcilment.\n"
@@ -8284,7 +9070,7 @@ msgid ""
 "\n"
 "Hold down your finger for a second and drag to place multiple ducts."
 msgstr ""
-"Investigueu i situeu :duct: [accent]conductes[] per a moure els recursos "
+"Investigueu i situeu [accent]conductes[] :duct: per a moure els recursos "
 "extrets amb perforadores de plasma al nucli.\n"
 "\n"
 "Mantingueu premut el dit durant un segon i arrossegueu per a situar més d’un "
@@ -8306,7 +9092,7 @@ msgid ""
 "More complex blocks require :graphite: [accent]graphite[].\n"
 "Set up plasma bores to mine graphite."
 msgstr ""
-"Els blocs més complexos necessiten :graphite: [accent]grafit[].\n"
+"Els blocs més complexos necessiten [accent]grafit[] :graphite:.\n"
 "Situeu perforadores de plasma per a extraure’n."
 
 #: onset.research2
@@ -8435,6 +9221,14 @@ msgstr ""
 "Premeu i [accent]arrossegueu[] per a seleccionar unitats.\n"
 "[accent]Toqueu[] per a ordenar a les unitats seleccionades que ataquin o que "
 "es moguin."
+
+#: aegis.tungsten
+msgid ""
+"Tungsten can be mined using an [accent]impact drill[].\n"
+"This structure requires [accent]water[] and [accent]power[]."
+msgstr ""
+"El tungstè es pot extraure amb una [accent]perforadora d’impacte[].\n"
+"Aquesta estructura necessita [accent]aigua[] i [accent]energia[]."
 
 #: split.pickup
 msgid ""
@@ -9368,7 +10162,7 @@ msgid ""
 "next to a core. Contents can be retrieved with an unloader."
 msgstr ""
 "Emmagatzema una quantitat gran d’elements de cada tipus. Millora la "
-"capacitat d’emmagatzemament al sector si es situa al costat d’un nucli. Es "
+"capacitat d’emmagatzemament al sector si se situa al costat d’un nucli. Es "
 "poden recuperar els continguts amb un descarregador."
 
 #: block.container.description
@@ -9377,7 +10171,7 @@ msgid ""
 "next to a core. Contents can be retrieved with an unloader."
 msgstr ""
 "Emmagatzema una quantitat petita d’elements de cada tipus. Millora la "
-"capacitat d’emmagatzemament al sector si es situa al costat d’un nucli. Es "
+"capacitat d’emmagatzemament al sector si se situa al costat d’un nucli. Es "
 "poden recuperar els continguts amb un descarregador."
 
 #: block.unloader.description
@@ -9387,6 +10181,26 @@ msgstr "Descarrega els elements seleccionats dels blocs adjacents."
 #: block.launch-pad.description
 msgid "Launches batches of items to selected sectors."
 msgstr "Llança lots d’elements al sector seleccionat."
+
+#: block.advanced-launch-pad.description
+msgid ""
+"Launches batches of items to selected sectors. Only accepts one item type at "
+"a time."
+msgstr ""
+"Llança paquets d’elements als sectors seleccionats. Només accepta un tipus d’"
+"element en cada llançament."
+
+#: block.advanced-launch-pad.details
+msgid "Sub-orbital system for point-to-point transportation of resources."
+msgstr "Sistema suborbital de transport de recursos punt a punt."
+
+#: block.landing-pad.description
+msgid ""
+"Receives items from launch pads in other sectors. Requires large amounts of "
+"water to protect against impacts of landings."
+msgstr ""
+"Rep elements de les plataformes de llançament d’altres sectors. Necessita "
+"grans quantitats d’aigua per a gestionar els impactes dels aterratges."
 
 #: block.duo.description
 msgid "Fires alternating bullets at enemies."
@@ -9619,6 +10433,14 @@ msgctxt "block.large-logic-display.description"
 msgid "Displays arbitrary graphics from a logic processor."
 msgstr "Mostra un gràfic des d’un processador lògic."
 
+#: block.tile-logic-display.description
+msgid ""
+"Displays arbitrary graphics from a logic processor.\n"
+"Seamlessly connects to nearby tiled display blocks."
+msgstr ""
+"Mostra gràfics arbitraris en un processador lògic.\n"
+"Es connecta sense problema amb altres blocs de pantalla en mosaic propers."
+
 #: block.interplanetary-accelerator.description
 msgid ""
 "A massive electromagnetic railgun tower. Accelerates cores to escape "
@@ -9739,6 +10561,11 @@ msgctxt "block.heat-redirector.description"
 msgid "Redirects accumulated heat to other blocks."
 msgstr "Redirigeix l’escalfor acumulada a altres blocs."
 
+#: block.small-heat-redirector.description
+msgctxt "block.small-heat-redirector.description"
+msgid "Redirects accumulated heat to other blocks."
+msgstr "Redirigeix l’escalfor acumulada a altres blocs."
+
 #: block.heat-router.description
 msgid "Spreads accumulated heat in three output directions."
 msgstr "Distribueix l’escalfor acumulada en tres direccions de sortida."
@@ -9816,9 +10643,9 @@ msgid ""
 "Efficiency varies based on type of wall. Optionally consumes graphite to "
 "increase efficiency."
 msgstr ""
-"Crushes walls, outputting sand indefinitely. Requires power and ozone. "
-"Efficiency varies based on type of wall. Optionally consumes tungsten to "
-"increase efficiency."
+"Trenca murs, extraient-ne sorra indefinidament. Necessita energia i ozó. La "
+"seva eficàcia depèn del tipus de mur. ozone. Opcionalment, pot consumir "
+"tungstè per a augmentar el rendiment."
 
 #: block.impact-drill.description
 msgid ""
@@ -10017,10 +10844,19 @@ msgstr ""
 "Transmet energia a altres blocs ortogonalment. Emmagatzema una gran "
 "quantitat d’energia. Té un abast gran."
 
+#: block.beam-link.description
+msgid ""
+"Transmits power over vast distances.\n"
+"Only capable of connecting to adjacent structures or other beam links."
+msgstr ""
+"Transmet energia a grans distàncies.\n"
+"Només es pot capaç de connectar-se a estructures adjacents o a altres "
+"enllaços de transmissió d’energia per raigs."
+
 #: block.turbine-condenser.description
 msgid "Generates power when placed on vents. Produces a small amount of water."
 msgstr ""
-"Genera energia quan es situa en conductes de ventilació. Produeix una petita "
+"Genera energia quan se situa en conductes de ventilació. Produeix una petita "
 "quantitat d’aigua."
 
 #: block.chemical-combustion-chamber.description
@@ -10161,7 +10997,7 @@ msgid ""
 "Increases assembler tier when placed next to a construction boundary. "
 "Requires power. Can be used as a payload input."
 msgstr ""
-"Augmenta el nivell de muntatge quan es situa al costat d’una vora de "
+"Augmenta el nivell de muntatge quan se situa al costat d’una vora de "
 "construcció. Necessita energia. Es pot fer servir com a punt d’entrada per "
 "al transport de blocs."
 
@@ -10468,22 +11304,21 @@ msgstr "Dispara munició alternant als objectius enemics."
 
 #: unit.precept.description
 msgid ""
-"Fires piercing cluster bullets at enemy targets. Less affected by harmful "
-"terrain."
+"Fires piercing cluster bullets at enemy targets. Less affected by liquid drag"
 msgstr "Dispara una ràfega de munició perforadora als objectius enemics."
 
 #: unit.vanquish.description
 msgid ""
 "Fires large piercing splitting bullets at enemy targets. Less affected by "
-"harmful terrain."
+"liquid drag."
 msgstr ""
 "Dispara munició de gran calibre perforadora i de dispersió als objectius "
 "enemics."
 
 #: unit.conquer.description
 msgid ""
-"Fires large piercing cascades of bullets at enemy targets. Less affected by "
-"harmful terrain."
+"Fires large piercing cascades of bullets at enemy targets. Significantly "
+"less affected by liquid drag."
 msgstr "Dispara ràfegues llargues de bales als objectius enemics."
 
 #: unit.merui.description
@@ -10567,15 +11402,15 @@ msgid ""
 "Builds structures to defend the Bastion core. Repairs structures with a "
 "beam. Capable of carrying 2x2 structures."
 msgstr ""
-"Construeix estructures per defensar el nucli Bastió. Repara les estructures "
-"amb un raig."
+"Construeix estructures per a defensar el nucli Bastió. Repara les "
+"estructures amb un raig."
 
 #: unit.incite.description
 msgid ""
 "Builds structures to defend the Citadel core. Repairs structures with a "
 "beam. Capable of carrying 2x2 structures."
 msgstr ""
-"Construeix estructures per defensar el nucli Ciutadella. Repara les "
+"Construeix estructures per a defensar el nucli Ciutadella. Repara les "
 "estructures amb un raig."
 
 #: unit.emanate.description
@@ -10583,7 +11418,7 @@ msgid ""
 "Builds structures to defend the Acropolis core. Repairs structures with "
 "beams. Capable of carrying 2x2 structures."
 msgstr ""
-"Construeix estructures per defensar el nucli Acròpolis. Repara les "
+"Construeix estructures per a defensar el nucli Acròpolis. Repara les "
 "estructures amb un raig."
 
 #: lst.read
@@ -10604,6 +11439,14 @@ msgid ""
 "Does not display anything until [accent]Print Flush[] is used."
 msgstr ""
 "Afegeix un text a la cua d’impressió.\n"
+"El text no es mostrarà fins que s’apliqui «[accent]Print Flush[]»."
+
+#: lst.printchar
+msgid ""
+"Add a UTF-16 character or content icon to the print buffer.\n"
+"Does not display anything until [accent]Print Flush[] is used."
+msgstr ""
+"Afegeix un caràcter UTF-16 o icona de contingut a la cua d’impressió.\n"
 "El text no es mostrarà fins que s’apliqui «[accent]Print Flush[]»."
 
 #: lst.format
@@ -10769,6 +11612,11 @@ msgstr ""
 "Empaqueta els components RGBA [0, 1] en un sol nombre per a dibuixar o "
 "establir regles."
 
+#: lst.unpackcolor
+msgid "Unpack RGBA components from a color that was packed using Pack Color."
+msgstr ""
+"Desempaqueta els components RGBA d’un color empaquetat amb «Pack Color»."
+
 #: lst.setrule
 msgid "Set a game rule."
 msgstr "Estableix una regla de la partida."
@@ -10812,6 +11660,15 @@ msgid ""
 msgstr ""
 "Sincronitza una variable a través de la xarxa.\n"
 "S’invoca com a molt 10 vegades per segon."
+
+#: lst.playsound
+msgid ""
+"Plays a sound.\n"
+"Volume and pan can be a global value, or calculated based on position."
+msgstr ""
+"Reprodueix un so.\n"
+"El volum i la panoramització (pan) poden ser un valor global o calculat "
+"segons la posició."
 
 #: lst.makemarker
 msgid ""
@@ -10909,6 +11766,10 @@ msgstr "Xarxa/Client [Només processador integrat]"
 #: lglobal.sectionProcessor
 msgid "Processor"
 msgstr "Processador"
+
+#: lglobal.sectionLookup
+msgid "Lookup"
+msgstr "Cerca"
 
 #: lglobal.@this
 msgid "The logic block executing the code"
@@ -11030,6 +11891,10 @@ msgstr "Retorna si el bloc està activat."
 msgid "Current ammo item/liquid of a turret."
 msgstr "Líquid o element de munició actual de la torreta."
 
+#: laccess.memorycapacity
+msgid "Number of cells in a memory block."
+msgstr "Nombre de cel·les en un bloc de memòria."
+
 #: laccess.color
 msgid "Illuminator color."
 msgstr "Color de l’il·luminador."
@@ -11055,7 +11920,7 @@ msgid ""
 "[accent]@ctrlCommand[] if unit controller is a player command\n"
 "Otherwise, 0."
 msgstr ""
-"Returna:\n"
+"Retorna:\n"
 "[accent]@ctrlProcessor[] si el controlador de la unitat és un processador;\n"
 "[accent]@ctrlPlayer[] si el controlador de la unitat és un jugador;\n"
 "[accent]@ctrlCommand[] si el controlador és un comandament del jugador;\n"
@@ -11074,6 +11939,10 @@ msgstr ""
 msgid "Top speed of a unit, in tiles/sec."
 msgstr "Velocitat màxima de la unitat, en caselles/s."
 
+#: laccess.size
+msgid "Size of a unit/building or the length of a string."
+msgstr "Mida de la unitat/estructura o llargada de la cadena."
+
 #: laccess.id
 msgid ""
 "ID of a unit/block/item/liquid.\n"
@@ -11082,11 +11951,27 @@ msgstr ""
 "Identificador d’unitat/bloc/element/líquid.\n"
 "És l’invers de l’operació lookup."
 
+#: laccess.displaywidth
+msgid "Width of a display block in pixels."
+msgstr "Amplada d’un bloc monitor en píxels."
+
+#: laccess.displayheight
+msgid "Height of a display block in pixels."
+msgstr "Alçària d’un bloc monitor en píxels."
+
 #: laccess.buffersize
 msgid ""
 "For messages: Length of the contents.\n"
 "For displays: Number of unprocessed graphics commands."
-msgstr "Number of unprocessed commands in the graphics buffer of a display."
+msgstr "Nombre d’ordres no processades a la cua de gràfics d’un monitor."
+
+#: laccess.operations
+msgid ""
+"Number of operations performed on the block.\n"
+"For displays, returns the number of drawflush operations."
+msgstr ""
+"Nombre d’operacions realitzades al bloc.\n"
+"Per als monitors, retorna el nombre d’operacions «[accent]Draw Flush[]»."
 
 #: lcategory.unknown
 msgctxt "lcategory.unknown"
@@ -11232,6 +12117,10 @@ msgstr ""
 msgid "Modulo."
 msgstr "Mòdul (residu de la divisió entera)."
 
+#: lenum.emod
+msgid "True modulo, result sign comes from the divisor."
+msgstr "Mòdul real. El signe del resultat prové del divisor."
+
 #: lenum.equal
 msgid ""
 "Equal. Coerces types.\n"
@@ -11260,6 +12149,10 @@ msgstr "Desplaça els bits a l’esquerra."
 #: lenum.shr
 msgid "Bit-shift right."
 msgstr "Desplaça els bits a la dreta."
+
+#: lenum.ushr
+msgid "Unsigned bit-shift right."
+msgstr "Desplaçament bit a bit a la dreta sense signe."
 
 #: lenum.or
 msgid "Bitwise OR."
@@ -11542,6 +12435,14 @@ msgstr "Coordenada Y de la sortida."
 msgid "Building group to look for."
 msgstr "Categoria de blocs a buscar."
 
+#: playsound.limit
+msgid ""
+"If true, prevents this sound from playing\n"
+"if it has already been played in the same frame."
+msgstr ""
+"Si és cert, evita que el so es reprodueixi\n"
+"si ja ha sonat durant aquest mateix fotograma."
+
 #: lenum.idle
 msgid ""
 "Don't move, but keep building/mining.\n"
@@ -11695,3 +12596,118 @@ msgid ""
 msgstr ""
 "Posició indexada que es fa servir per a marcadors de línies i rectangles on "
 "l’índex zero és el primer color."
+
+#: lenum.wavetimer
+msgid ""
+"Whether the waves come automatically on a timer. If not, waves come when the "
+"play button is pressed."
+msgstr ""
+"Indica si les onades comencen automàticament segons el cronòmetre. "
+"Altrament, les onades comencen quan es prem el botó de reproducció."
+
+#: lenum.wave
+msgid "Current wave number. Can be anything in non-wave modes."
+msgstr ""
+"Nombre d’onades actual. Pot prendre qualsevol valor en modes que no "
+"funcionin per onades."
+
+#: lenum.currentwavetime
+msgid "Wave countdown in ticks."
+msgstr "Compte enrere de l’onada en tics."
+
+#: lenum.waves
+msgid "Whether waves are spawnable at all."
+msgstr "Indica si el mapa funciona per onades o no."
+
+#: lenum.wavesending
+msgid "Whether the waves can be manually summoned with the play button."
+msgstr "Indica si les onades poden iniciar-se amb el botó de crida o no."
+
+#: lenum.attackmode
+msgid "Determines if gamemode is attack mode."
+msgstr "Determina si el mode de joc és d’atac o no."
+
+#: lenum.wavespacing
+msgid "Time between waves in ticks."
+msgstr "Temps entre onades en tics."
+
+#: lenum.enemycorebuildradius
+msgid "No-build zone around enemy core radius."
+msgstr "Radi de no construcció al voltant del nucli enemic."
+
+#: lenum.dropzoneradius
+msgid "Radius around enemy wave drop zones."
+msgstr "Radi al voltant de les zones d’aterratge de les onades enemigues."
+
+#: lenum.unitcap
+msgid "Base unit cap. Can still be increased by blocks."
+msgstr "Capacitat base de les unitats. Es pot augmentar amb blocs."
+
+#: lenum.lighting
+msgid "Whether ambient lighting is enabled."
+msgstr "Indica si la il·luminació ambiental està activada."
+
+#: lenum.buildspeed
+msgid "Multiplier for building speed."
+msgstr "Multiplicador de la velocitat de construcció."
+
+#: lenum.unithealth
+msgid "How much health units start with."
+msgstr "Unitats de salut amb les quals es comença."
+
+#: lenum.unitbuildspeed
+msgid "How fast unit factories build units."
+msgstr "Velocitat de construcció d’unitats a les fàbriques."
+
+#: lenum.unitcost
+msgid "Multiplier of resources that units take to build."
+msgstr "Multiplicador dels recursos necessaris per a construir les unitats."
+
+#: lenum.unitdamage
+msgid "How much damage units deal."
+msgstr "Dany que inflingeixen les unitats."
+
+#: lenum.blockhealth
+msgid "How much health blocks start with."
+msgstr "Blocs de salot amb els quals es comença."
+
+#: lenum.blockdamage
+msgid "How much damage blocks (turrets) deal."
+msgstr "Dany que inflingeixen els blocs de dany (torretes)."
+
+#: lenum.rtsminweight
+msgid ""
+"Minimum \"advantage\" needed for a squad to attack. Higher -> more cautious."
+msgstr ""
+"Avantatge mínim que necessiten els esquadrons per a atacar. Com més alt "
+"sigui, més precabuts actuaran els esquadrons."
+
+#: lenum.rtsminsquad
+msgid "Minimum size of attack squads."
+msgstr "Mida mínima dels esquadrons d’atac."
+
+#: lenum.maparea
+msgid "Playable map area. Anything outside the area will not be interactable."
+msgstr ""
+"Àrea jugable del mapa. No es podrà interactuar amb tot el que quedi a fora."
+
+#: lenum.ambientlight
+msgid "Ambient light color. Used when lighting is enabled."
+msgstr ""
+"Color de la llum ambiental. Es fa servir si la il·luminació està activada."
+
+#: lenum.solarmultiplier
+msgid "Multiplies power output of solar panels."
+msgstr "Multiplicador de l’energia produïda pels panells solars."
+
+#: lenum.dragmultiplier
+msgid "Environment drag multiplier."
+msgstr "Multiplicador d’arrossegament de l’entorn."
+
+#: lenum.ban
+msgid "Blocks or units that cannot be placed or built."
+msgstr "Prohibeix blocs o unitats. Aquestes no es podran situar ni construir."
+
+#: lenum.unban
+msgid "Unban a unit or block."
+msgstr "Permet una unitat o bloc."
