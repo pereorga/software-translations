@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-02 08:10+0000\n"
+"POT-Creation-Date: 2026-02-09 08:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,6 +202,18 @@ msgstr "D'acord"
 msgid "Notification Categories are deprecated"
 msgstr "Les categories de notificació estan obsoletes"
 
+#: alerts.navigation_error.message
+msgid ""
+"This page cannot be displayed because it's outside your Home Assistant "
+"server or the page was not found."
+msgstr ""
+"No es pot mostrar la pàgina perquè es troba fóra del vostre servidor de Home "
+"Assistant o bé, la pàgina no existeix."
+
+#: alerts.navigation_error.title
+msgid "Navigation Error"
+msgstr "Error de navegació"
+
 #: alerts.open_url_from_notification.message
 msgid "Open URL (%@) found in notification?"
 msgstr "Obrir l'adreça (%@) trobada a la notificació?"
@@ -243,6 +255,23 @@ msgstr ""
 msgid "Important update"
 msgstr "Actualització important"
 
+#: app_intents.automations.automation.title
+msgctxt "app_intents.automations.automation.title"
+"app_intents.automations.automation.title"
+msgid "Automation"
+msgstr "Automatització"
+
+#: app_intents.automations.failure_message.content
+msgid "Automation \"%@\" failed to execute, please check your logs."
+msgstr ""
+"Ha fallat l'execució de l'automatització \"%@\", comproveu el registre, si "
+"us plau."
+
+#: app_intents.automations.icon.title
+msgctxt "app_intents.automations.icon.title"
+msgid "Icon"
+msgstr "Icona"
+
 #: app_intents.automations.parameter.automation.title
 msgctxt "app_intents.automations.parameter.automation.title"
 msgid "Automation"
@@ -251,6 +280,34 @@ msgstr "Automatització"
 #: app_intents.automations.success_message.content
 msgid "Automation \"%@\" executed."
 msgstr "Automatització\"%@\"executada."
+
+#: app_intents.fan.off_state_icon.title
+msgctxt "app_intents.fan.off_state_icon.title"
+msgid "Icon for off state"
+msgstr "Icona per l'estat Apagat"
+
+#: app_intents.fan.on_state_icon.title
+msgctxt "app_intents.fan.on_state_icon.title"
+msgid "Icon for on state"
+msgstr "Icona per l'estat Encès"
+
+#: app_intents.fan.title
+msgctxt "app_intents.fan.title"
+msgid "Fan"
+msgstr "Ventilador"
+
+#: app_intents.intent.fan.title
+msgid "Control fan"
+msgstr "Controla el ventilador"
+
+#: app_intents.open_experimental_dashboard.description
+msgid "Opens the experimental dashboard"
+msgstr "Obre el panell de visualització experimental"
+
+#: app_intents.open_experimental_dashboard.title
+msgctxt "app_intents.open_experimental_dashboard.title"
+msgid "Open Experimental Dashboard"
+msgstr "Obrir panell de visualització experimental"
 
 #: app_intents.perform_action.action_parameter_configuration
 msgid "Which action?"
@@ -275,6 +332,15 @@ msgctxt "app_intents.perform_action.response_success"
 "app_intents.perform_action.response_success"
 msgid "Done"
 msgstr "Fet!"
+
+#: app_intents.server.title
+msgctxt "app_intents.server.title"
+"app_intents.server.title"
+"app_intents.server.title"
+"app_intents.server.title"
+"app_intents.server.title"
+msgid "Server"
+msgstr "Servidor"
 
 #: app_intents.widget_action.actions_parameter_configuration
 msgid "Which actions?"
@@ -348,15 +414,13 @@ msgstr "Activa la conversió de veu a text al dispositiu"
 msgid "Assist Settings"
 msgstr "Configuració d'assistència"
 
-#: assist.settings.tts_mute.footer
-msgid ""
-"When enabled, Assist will not play audio responses even if the pipeline has "
-"text-to-speech configured. You will still see text responses."
-msgstr ""
+#: camera.server_not_found
+msgid "Server not found"
+msgstr "No s'ha trobat el servidor"
 
-#: assist.settings.tts_mute.toggle
-msgid "Mute voice responses"
-msgstr ""
+#: camera.snapshot_failed
+msgid "Failed to load camera snapshot"
+msgstr "No s'ha pogut carregar la captura d'imatge de la càmera"
 
 #: camera_list.edit.off.title
 msgid "Edit"
@@ -400,6 +464,22 @@ msgstr "Càmeres de cerca"
 #: camera_list.title
 msgid "Cameras"
 msgstr "Càmeres"
+
+#: camera_list.unavailable.message
+msgid "Camera streaming is not available on Mac."
+msgstr "Stream de la càmera no disponible per a Mac."
+
+#: camera_list.unavailable.title
+msgid "Not Available on Mac"
+msgstr "No disponible per a Mac"
+
+#: cameras.drag_to_reorder
+msgid "Drag and drop to reorder"
+msgstr "Arrossega per reordenar"
+
+#: cameras.no_server_found
+msgid "No server found for camera: %@"
+msgstr "No s'ha trobat cap servidor per la càmera: %@"
 
 #: cancel_label
 msgctxt "cancel_label"
@@ -657,14 +737,6 @@ msgstr "Col·lapsa"
 msgid "Expand"
 msgstr "Expandeix"
 
-#: connection_security_level_block.tip
-msgid ""
-"Tip: Double check your device settings and app permissions. Make sure the "
-"app is allowed local network access and location access is set to 'Always' ("
-"so it also works in background) and 'Full' (so the app can identify which "
-"network you are using and detect your home network)."
-msgstr ""
-
 #: continue_label
 msgctxt "continue_label"
 msgid "Continue"
@@ -737,24 +809,6 @@ msgstr "HLS Stream no disponible"
 msgid "Got non-200 status code (%li)"
 msgstr "S'ha rebut codi d'estat no-200 (%li)"
 
-#: gestures.reset.confirmation.message
-msgid "This will reset all gestures to their default values."
-msgstr ""
-
-#: gestures.reset.confirmation.title
-msgid "Reset Gestures?"
-msgstr ""
-
-#: gestures.value.option.more_info.quick_search
-msgctxt "gestures.value.option.more_info.quick_search"
-msgid "Quick search"
-msgstr ""
-
-#: gestures.value.option.quick_search
-msgctxt "gestures.value.option.quick_search"
-msgid "Quick search"
-msgstr ""
-
 #: ha_api.api_error.cant_build_url
 msgid "Cant build API URL"
 msgstr "No es pot crear l'adreça URL de l'API"
@@ -803,68 +857,56 @@ msgstr "No s'ha pogut realitzar l'operació."
 msgid "Help"
 msgstr "Ajuda"
 
-#: home_view.areas.title
-msgctxt "home_view.areas.title"
-msgid "Areas"
-msgstr ""
+#: home_sections_reorder_view.done
+msgctxt "home_sections_reorder_view.done"
+msgid "Done"
+msgstr "Fet"
 
-#: home_view.common_controls.title
-msgid "Welcome %@"
-msgstr ""
+#: home_sections_reorder_view.title
+msgid "Reorder Rooms"
+msgstr "Reordena habitacions"
 
-#: home_view.customization.common_controls.title
-msgid "Controls prediction section"
-msgstr ""
+#: home_view.context_menu.hide
+msgid "Hide"
+msgstr "Amaga"
 
-#: home_view.customization.areas_layout.title
-msgid "Areas layout"
-msgstr ""
+#: home_view.empty_state.no_entities
+msgid "No entities found"
+msgstr "No s'ha trobat cap entitat"
 
-#: home_view.customization.areas_layout.list.title
-msgid "List"
-msgstr ""
+#: home_view.menu.allow_multiple_selection
+msgid "Allow multiple selection"
+msgstr "Permet selecció múltiple"
 
-#: home_view.customization.areas_layout.grid.title
-msgid "Grid"
-msgstr ""
+#: home_view.menu.customize
+msgctxt "home_view.menu.customize"
+msgid "Customize"
+msgstr "Personalitza"
 
-#: home_view.customization.summaries.title
-msgctxt "home_view.customization.summaries.title"
-msgid "Summaries"
-msgstr ""
+#: home_view.menu.no_sections_available
+msgid "No sections available"
+msgstr "Cap secció disponible"
 
-#: home_view.summaries.title
-msgctxt "home_view.summaries.title"
-msgid "Summaries"
-msgstr ""
+#: home_view.menu.open_web_ui
+msgid "Open web UI"
+msgstr "Obre la IU web"
 
-#: home_view.summaries.lights.title
-msgid "Lights"
-msgstr ""
+#: home_view.menu.reorder
+msgid "Reorder"
+msgstr "Reordena"
 
-#: home_view.summaries.covers.title
-msgid "Covers"
-msgstr ""
+#: home_view.menu.settings
+msgctxt "home_view.menu.settings"
+msgid "Settings"
+msgstr "Configuració"
 
-#: home_view.summaries.lights.all_off
-msgid "All off"
-msgstr ""
+#: home_view.menu.show_all
+msgid "Show All"
+msgstr "Mostra-ho tot"
 
-#: home_view.summaries.lights.count_on
-msgid "%d on"
-msgstr ""
-
-#: home_view.summaries.covers.all_closed
-msgid "All closed"
-msgstr ""
-
-#: home_view.summaries.covers.count_open
-msgid "%d open"
-msgstr ""
-
-#: home_view.summaries.count_active
-msgid "%d active"
-msgstr ""
+#: home_view.navigation.subtitle.experimental
+msgid "Experimental feature"
+msgstr "Funcionalitat experimental"
 
 #: intents.server_required_for_value
 msgid "Select a server before picking this value."
@@ -974,6 +1016,10 @@ msgstr "Sortir"
 #: menu.status_item.toggle
 msgid "Toggle %1$@"
 msgstr "Commuta %1$@"
+
+#: menu.view.find
+msgid "Find"
+msgstr "Buscar"
 
 #: menu.view.reload_page
 msgid "Reload Page"
@@ -1106,6 +1152,11 @@ msgstr "Manteneu el vostre %@ prop d'una etiqueta NFC que es pugui escriure"
 #: nfc.write.success_message
 msgid "Tag Written!"
 msgstr "Etiqueta escrita!"
+
+#: no_area
+msgctxt "no_area"
+msgid "Not in a room"
+msgstr "En cap habitació"
 
 #: notification_service.failed_to_load
 msgid "Failed to load attachment"
@@ -1341,6 +1392,39 @@ msgstr "Quin nom de dispositiu hauria d'utilitzar?"
 msgid "A device already exists with the name '%1$@'"
 msgstr "Ja existeix un dispositiu amb el nom \"%1$@\""
 
+#: onboarding.invitation.accept_button
+msgid "Accept"
+msgstr "Accepta"
+
+#: onboarding.invitation.title
+msgid "Home Assistant Invite"
+msgstr "Confida a Home Assistant"
+
+#: onboarding.local_access.less_secure_option.title
+msgid "Less secure: Do not allow this app to know when you're home"
+msgstr "Menys segur: No permet a l'app saber quan estàs a casa"
+
+#: onboarding.local_access.next_button
+msgctxt "onboarding.local_access.next_button"
+msgid "Next"
+msgstr "Següent"
+
+#: onboarding.local_access.secure_option.title
+msgid "Most secure: Allow this app to know when you're home"
+msgstr "Més segur: Permet a l'app saber quan estàs a casa"
+
+#: onboarding.local_access.title
+msgid "Let us help secure your remote connection"
+msgstr "Deixa'ns assegurar la teva connexió remota"
+
+#: onboarding.location_access.primary_action.title
+msgid "Share my location"
+msgstr "Comparteix la meva ubicació"
+
+#: onboarding.location_access.secondary_action.title
+msgid "Do not share my location"
+msgstr "No comparteixis la meva ubicació"
+
 #: onboarding.manual_setup.connect
 msgctxt "onboarding.manual_setup.connect"
 msgid "Connect"
@@ -1373,6 +1457,53 @@ msgstr "URL introduïda sense esquema"
 #: onboarding.manual_setup.title
 msgid "Enter URL"
 msgstr "Introduïu l'adreça URL"
+
+#: onboarding.network_input.input_field.placeholder
+msgid "Network name"
+msgstr "Nom de xarxa"
+
+#: onboarding.network_input.input_field.title
+msgid "Name of the Wi-Fi network at home"
+msgstr "Nom de la xarxa Wi-Fi a casa"
+
+#: onboarding.network_input.no_network.alert.body
+msgid "Please enter a network name to continue."
+msgstr "Si us plau, introdueix un nom de xarxa per a continuar."
+
+#: onboarding.network_input.no_network.alert.title
+msgid "Network name required"
+msgstr "Nom de xarxa obligatori"
+
+#: onboarding.network_input.no_network.skip.alert.primary_button.title
+msgctxt "onboarding.network_input.no_network.skip.alert.primary_button.title"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: onboarding.network_input.no_network.skip.alert.secondary_button.title
+msgctxt "onboarding.network_input.no_network.skip.alert.secondary_button.title"
+"onboarding.network_input.no_network.skip.alert.secondary_button.title"
+"onboarding.network_input.no_network.skip.alert.secondary_button.title"
+msgid "Skip"
+msgstr "Omet"
+
+#: onboarding.network_input.no_network.skip.alert.title
+msgctxt "onboarding.network_input.no_network.skip.alert.title"
+msgid "Are you sure?"
+msgstr "N'estàs segur?"
+
+#: onboarding.network_input.primary_button.title
+msgctxt "onboarding.network_input.primary_button.title"
+msgid "Next"
+msgstr "Següent"
+
+#: onboarding.network_input.secondary_button.title
+msgctxt "onboarding.network_input.secondary_button.title"
+msgid "Skip"
+msgstr "Omet"
+
+#: onboarding.network_input.title
+msgid "What is your home network?"
+msgstr "Quina és la vostra xarxa domèstica?"
 
 #: onboarding.permissions.allow
 msgid "Allow"
@@ -1521,6 +1652,14 @@ msgstr ""
 "d'automatització de la llar gratuït i de codi obert, centrat en el control "
 "local i la privadesa."
 
+#: onboarding.welcome.logo.accessibility_label
+msgid "Home Assistant logo"
+msgstr "Logo de Home Assistant"
+
+#: onboarding.welcome.primary_button
+msgid "Connect to my Home Assistant"
+msgstr "Connecta't al meu Home Assistant"
+
 #: onboarding.welcome.title
 msgid "Welcome to Home Assistant %@!"
 msgstr "Benvinguts a Home Assistant %@!"
@@ -1543,6 +1682,18 @@ msgstr "Requereix %@ o posterior"
 msgctxt "retry_label"
 msgid "Retry"
 msgstr "Reintentar"
+
+#: room_view.context_menu.unhide
+msgid "Unhide"
+msgstr "Mostra"
+
+#: room_view.empty_state.no_entities
+msgid "No entities in this room"
+msgstr "Cap entitat en aquesta habitació"
+
+#: room_view.section.hidden
+msgid "Hidden"
+msgstr "Ocult"
 
 #: sensors.active.setting.time_until_idle
 msgid "Time Until Idle"
@@ -1639,6 +1790,25 @@ msgstr ""
 msgid "MyFunnyNetworkName"
 msgstr "ElMeuNomDeXarxaDivertit"
 
+#: settings.connection_section.local_access_security_level.less_secure.title
+msgctxt "settings.connection_section.local_access_security_level.less_secure.title"
+msgid "Less secure"
+msgstr "Menys segur"
+
+#: settings.connection_section.local_access_security_level.most_secure.title
+msgctxt "settings.connection_section.local_access_security_level.most_secure.title"
+msgid "Most secure"
+msgstr "Més segur"
+
+#: settings.connection_section.local_access_security_level.title
+msgid "Local access security"
+msgstr "Seguretat de l'accés local"
+
+#: settings.connection_section.local_access_security_level.undefined.title
+msgctxt "settings.connection_section.local_access_security_level.undefined.title"
+msgid "Not configured"
+msgstr "No configurat"
+
 #: settings.connection_section.local_push_description
 msgid ""
 "Directly connect to the Home Assistant server for push notifications when on "
@@ -1727,6 +1897,26 @@ msgstr "Nombre d'intents: %1$li"
 #: settings.connection_section.websocket.status.disconnected.title
 msgid "Disconnected"
 msgstr "Desconnectat"
+
+#: settings.connection_section.websocket.status.rejected.title
+msgid "Rejected"
+msgstr "Rebutjat"
+
+#: settings.database_explorer.more_fields
+msgid "+%li more fields"
+msgstr "+%li més camps"
+
+#: settings.database_explorer.no_entries
+msgid "No entries found"
+msgstr "No s'ha trobat cap entrada"
+
+#: settings.database_explorer.row_detail
+msgid "Row Details"
+msgstr "Detalls de la fila"
+
+#: settings.database_explorer.title
+msgid "Database Explorer"
+msgstr "Explorador de base de dades"
 
 #: settings.debugging.title
 msgid "Debugging"
@@ -2080,10 +2270,6 @@ msgstr "Nom del dispositiu"
 msgid "Full Screen"
 msgstr "Pantalla completa"
 
-#: settings_details.general.refresh_after_inactive.title
-msgid "Refresh After 5 Min Inactive"
-msgstr ""
-
 #: settings_details.general.launch_on_login.title
 msgid "Launch App on Login"
 msgstr "Obre l'aplicació en iniciar sessió"
@@ -2135,6 +2321,10 @@ msgstr "Barra de menús"
 #: settings_details.general.visibility.title
 msgid "Show App In…"
 msgstr "Mostrar l'aplicació a..."
+
+#: settings_details.http.warning.title
+msgid "Security Warning"
+msgstr "Advertència de Seguretat"
 
 #: settings_details.location.background_refresh.disabled
 msgctxt "settings_details.location.background_refresh.disabled"
@@ -3580,6 +3770,19 @@ msgctxt "watch.placeholder_complication_name"
 msgid "Placeholder"
 msgstr "Contenidor"
 
+#: web_view.no_url_available.primary_button.title
+msgctxt "web_view.no_url_available.primary_button.title"
+msgid "Open App settings"
+msgstr "Obre la configuració"
+
+#: web_view.no_url_available.title
+msgid "We can't connect to Home Assistant"
+msgstr "No es pot connectar amb Home Assistant"
+
+#: widgets.action.name.moreInfoDialog
+msgid "More info"
+msgstr "Més informació"
+
 #: widgets.actions.description
 msgid "Perform Home Assistant actions."
 msgstr "Realitza accions del Home Assistant."
@@ -3632,6 +3835,33 @@ msgctxt "widgets.controls.automations.placeholder_title"
 msgid "Choose automation"
 msgstr "Trieu l'automatització"
 
+#: widgets.controls.button.placeholder_title
+msgctxt "widgets.controls.button.placeholder_title"
+msgid "Choose button"
+msgstr "Tria botó"
+
+#: widgets.controls.button.title
+msgid "Button"
+msgstr "Botó"
+
+#: widgets.controls.fan.description
+msgid "Turn on/off your fan"
+msgstr "Encén/Apaga el ventilador"
+
+#: widgets.controls.fan.placeholder_title
+msgctxt "widgets.controls.fan.placeholder_title"
+msgid "Choose fan"
+msgstr "Tria ventilador"
+
+#: widgets.controls.fan.title
+msgctxt "widgets.controls.fan.title"
+msgid "Fan"
+msgstr "Ventilador"
+
+#: widgets.controls.open_camera.configuration.parameter.entity
+msgid "Camera"
+msgstr "Càmera"
+
 #: widgets.controls.open_camera.configuration.title
 msgid "Open Camera"
 msgstr "Obre la càmera"
@@ -3656,6 +3886,25 @@ msgstr "Obre la coberta"
 #: widgets.controls.open_cover.description
 msgid "Opens the selected cover entity inside the app"
 msgstr "Obre l'entitat de portada seleccionada dins de l'aplicació"
+
+#: widgets.controls.open_entity.configuration.title
+msgctxt "widgets.controls.open_entity.configuration.title"
+msgid "Open Entity"
+msgstr "Entitat d'Obrir"
+
+#: widgets.controls.open_experimental_dashboard.configuration.parameter.server
+msgctxt "widgets.controls.open_experimental_dashboard.configuration.parameter.server"
+msgid "Server"
+msgstr "Servidor"
+
+#: widgets.controls.open_experimental_dashboard.configuration.title
+msgctxt "widgets.controls.open_experimental_dashboard.configuration.title"
+msgid "Open Experimental Dashboard"
+msgstr "Obrir panell de visualització experimental"
+
+#: widgets.controls.open_experimental_dashboard.description
+msgid "Opens the experimental dashboard for the selected server"
+msgstr "Obre el panell de visualització experimental pel servidor seleccionat"
 
 #: widgets.controls.open_input_boolean.configuration.parameter.entity
 msgid "Input Boolean"
@@ -3690,84 +3939,44 @@ msgstr "Bloqueja"
 msgid "Open Lock"
 msgstr "Obre el pany"
 
-#: widgets.controls.automations.pending_configuration
-msgctxt "widgets.controls.automations.pending_configuration"
-msgid "Choose automation"
-msgstr ""
+#: widgets.controls.open_lock.description
+msgid "Opens the selected lock entity inside the app"
+msgstr "Obre l'entitat de bloqueig seleccionada dins de l'app"
 
-#: widgets.controls.button.pending_configuration
-msgctxt "widgets.controls.button.pending_configuration"
-msgid "Choose button"
-msgstr ""
+#: widgets.controls.open_sensor.configuration.title
+msgid "Open Sensor"
+msgstr "Sensor d'Obrir"
 
-#: widgets.controls.cover.pending_configuration
-msgctxt "widgets.controls.cover.pending_configuration"
-msgid "Choose cover"
-msgstr ""
+#: widgets.controls.open_sensor.description
+msgid "Opens the selected sensor entity inside the app"
+msgstr "Obre l'entitat de sensor seleccionada dins de l'app"
 
-#: widgets.controls.fan.pending_configuration
-msgctxt "widgets.controls.fan.pending_configuration"
-msgid "Choose fan"
-msgstr ""
+#: widgets.controls.open_switch.configuration.parameter.entity
+msgctxt "widgets.controls.open_switch.configuration.parameter.entity"
+msgid "Switch"
+msgstr "Interruptor"
 
-#: widgets.controls.light.pending_configuration
-msgctxt "widgets.controls.light.pending_configuration"
-msgid "Choose light"
-msgstr ""
+#: widgets.controls.open_switch.configuration.title
+msgid "Open Switch"
+msgstr "Interruptor d'Obrir"
 
-#: widgets.controls.open_camera.pending_configuration
-msgid "Choose camera"
-msgstr ""
+#: widgets.controls.open_switch.description
+msgid "Opens the selected switch entity inside the app"
+msgstr "Obre l'entitat d'interruptor seleccionada dins de l'app"
 
-#: widgets.controls.open_cover_entity.pending_configuration
-msgctxt "widgets.controls.open_cover_entity.pending_configuration"
-msgid "Choose cover"
-msgstr ""
+#: widgets.details.parameters.run_script
+msgid "Run Script (only in rectangular family)"
+msgstr "Executa l'Script (només en família rectangular)"
 
-#: widgets.controls.open_entity.pending_configuration
-msgid "Choose entity"
-msgstr ""
+#: widgets.gauge.parameters.run_script
+msgctxt "widgets.gauge.parameters.run_script"
+msgid "Run Script"
+msgstr "Executa l'script"
 
-#: widgets.controls.open_input_boolean.pending_configuration
-msgid "Choose input boolean"
-msgstr ""
-
-#: widgets.controls.open_light.pending_configuration
-msgctxt "widgets.controls.open_light.pending_configuration"
-msgid "Choose light"
-msgstr ""
-
-#: widgets.controls.open_lock.pending_configuration
-msgid "Choose lock"
-msgstr ""
-
-#: widgets.controls.open_page.pending_configuration
-msgid "Choose page"
-msgstr ""
-
-#: widgets.controls.open_sensor.pending_configuration
-msgid "Choose sensor"
-msgstr ""
-
-#: widgets.controls.open_switch.pending_configuration
-msgctxt "widgets.controls.open_switch.pending_configuration"
-msgid "Choose switch"
-msgstr ""
-
-#: widgets.controls.scenes.pending_configuration
-msgctxt "widgets.controls.scenes.pending_configuration"
-msgid "Choose scene"
-msgstr ""
-
-#: widgets.controls.scripts.pending_configuration
-msgctxt "widgets.controls.scripts.pending_configuration"
-msgid "Choose script"
-msgstr ""
-
-#: widgets.controls.switch.pending_configuration
-msgctxt "widgets.controls.switch.pending_configuration"
-msgid "Choose switch"
-msgstr ""
+#: widgets.open_entity.title
+msgctxt "widgets.open_entity.title"
+msgid "Open Entity"
+msgstr "Entitat d'Obrir"
 
 #: widgets.open_page.description
 msgid "Open a frontend page in Home Assistant."
@@ -3785,185 +3994,3 @@ msgstr "Obre la pàgina"
 #: yes_label
 msgid "Yes"
 msgstr "Si"
-
-#: camera.server_not_found
-msgid "Server not found"
-msgstr ""
-
-#: camera.snapshot_failed
-msgid "Failed to load camera snapshot"
-msgstr ""
-
-#: cameras.drag_to_reorder
-msgid "Drag and drop to reorder"
-msgstr ""
-
-#: cameras.no_server_found
-msgid "No server found for camera: %@"
-msgstr ""
-
-#: camera_list.unavailable.title
-msgid "Not Available on Mac"
-msgstr ""
-
-#: camera_list.unavailable.message
-msgid "Camera streaming is not available on Mac."
-msgstr ""
-
-#: webrtc_player.known_issues.title
-msgid "Known Issues"
-msgstr ""
-
-#: camera_player.errors.unknown
-msgid "Unknown error"
-msgstr ""
-
-#: camera_player.errors.unable_to_connect_to_server
-msgid "Unable to connect to Home Assistant"
-msgstr ""
-
-#: camera_player.errors.no_stream_available
-msgid "No stream available"
-msgstr ""
-
-#: entity_picker.filter.domain.title
-msgctxt "entity_picker.filter.domain.title"
-msgid "Domain"
-msgstr ""
-
-#: entity_picker.filter.domain.all.title
-msgid "All domains"
-msgstr ""
-
-#: entity_picker.filter.area.title
-msgid "Area"
-msgstr ""
-
-#: entity_picker.filter.area.all.title
-msgid "All areas"
-msgstr ""
-
-#: entity_picker.filter.group_by.title
-msgid "Group by"
-msgstr ""
-
-#: entity_picker.list.area.no_area.title
-msgid "No area"
-msgstr ""
-
-#: database_updater.toast.title
-msgid "Updating %@"
-msgstr ""
-
-#: database_updater.toast.syncing
-msgid "Syncing server data..."
-msgstr ""
-
-#: database_updater.toast.syncing_with_progress
-msgid "Syncing server data... (%d/%d)"
-msgstr ""
-
-#: connectivity.diagnostics.title
-msgid "Connectivity diagnostics"
-msgstr ""
-
-#: connectivity.diagnostics.run_checks
-msgid "Run checks"
-msgstr ""
-
-#: connectivity.diagnostics.start
-msgid "Start diagnostics"
-msgstr ""
-
-#: connectivity.check.dns
-msgid "DNS Resolution"
-msgstr ""
-
-#: connectivity.check.dns.description
-msgid "Resolving hostname to IP address"
-msgstr ""
-
-#: connectivity.check.port
-msgid "Port Reachability"
-msgstr ""
-
-#: connectivity.check.port.description
-msgid "Checking if port is reachable"
-msgstr ""
-
-#: connectivity.check.tls
-msgid "TLS Certificate"
-msgstr ""
-
-#: connectivity.check.tls.description
-msgid "Validating TLS certificate"
-msgstr ""
-
-#: connectivity.check.server
-msgid "Server Connection"
-msgstr ""
-
-#: connectivity.check.server.description
-msgid "Testing server connection"
-msgstr ""
-
-#: connectivity.check.running
-msgid "Checking..."
-msgstr ""
-
-#: connectivity.check.skipped
-msgid "Skipped due to previous failure"
-msgstr ""
-
-#: settings.connection_section.refresh_server
-msgid "Update server information"
-msgstr ""
-
-#: legacy_actions.disclaimer
-msgid ""
-"Legacy iOS Actions are not the recommended way to interact with Home "
-"Assistant anymore, please use Scripts, Scenes and Automations directly in "
-"your Widgets, Apple Watch and CarPlay."
-msgstr ""
-
-#: web_view.add_to.option.CarPlay.title
-msgid "CarPlay"
-msgstr ""
-
-#: web_view.add_to.option.Widget.title
-msgid "Widget"
-msgstr ""
-
-#: web_view.add_to.option.AppleWatch.title
-msgctxt "web_view.add_to.option.AppleWatch.title"
-msgid "Apple Watch"
-msgstr ""
-
-#: settings.widgets.select.title
-msgid "Add to Widget"
-msgstr ""
-
-#: settings.widgets.select.empty.title
-msgid "No Widgets Yet"
-msgstr ""
-
-#: settings.widgets.select.empty.subtitle
-msgid "Create your first widget to add this entity."
-msgstr ""
-
-#: settings.widgets.select.item_count.title
-msgid "%d items"
-msgstr ""
-
-#: settings.widgets.select.footer.title
-msgid "Select a widget to add this entity to."
-msgstr ""
-
-#: entity_picker.filter.server.title
-msgctxt "entity_picker.filter.server.title"
-msgid "Servers"
-msgstr ""
-
-#: entity_picker.search.placeholder
-msgid "Entity name, ID, area name, device name..."
-msgstr ""
