@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-27 08:54-0700\n"
+"POT-Creation-Date: 2026-02-13 21:22-0700\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -324,7 +324,9 @@ msgstr "Suprimeix l'última sessió i l'anterior"
 msgid "Sync"
 msgstr "Sincronització"
 
-msgid "Delete the sync data and sign out of the browser"
+#, fuzzy
+#| msgid "Delete the sync data and sign out of the browser"
+msgid "Delete the sync data, including web apps, and sign out of the browser"
 msgstr "Suprimeix les dades de sincronització i tanca la sessió del navegador"
 
 msgid "File manager"
@@ -555,6 +557,8 @@ msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
 msgstr ""
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
@@ -565,6 +569,8 @@ msgctxt "nsis:MULTIUSER_ALL_USERS_UMUI"
 msgid "For anyone who uses this computer (all users)"
 msgstr ""
 
+#. TRANSLATORS: The character '&' positions the keyboard accelerator key.
+#. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
@@ -1148,49 +1154,60 @@ msgid ""
 "The environment variable TMP refers to a directory that does not exist: %s"
 msgstr "La variable d'entorn TMP es refereix a una carpeta que no existeix: %s"
 
+msgid "Choose files to shred"
+msgstr "Trieu els fitxers per triturar"
+
+msgid "Choose folder to shred"
+msgstr "Trieu la carpeta per triturar"
+
+msgid "_Delete"
+msgstr "_Suprimeix"
+
+msgid "No paths found in clipboard."
+msgstr "No s'han trobat camins al porta-retalls."
+
+msgid "Choose a folder"
+msgstr "Trieu una carpeta"
+
+msgid "_OK"
+msgstr "_D'acord"
+
+msgid "Program to clean unnecessary files"
+msgstr "Programa per netejar fitxers innecessaris"
+
 msgid ""
-"There was at least one file on a file system that does not support advanced "
-"overwriting."
+"GNU General Public License version 3 or later.\n"
+"See https://www.gnu.org/licenses/gpl-3.0.txt"
 msgstr ""
-"Hi ha almenys un sistema de fitxers que no admet la sobreescriptura avançada."
+"Licencia pública general de GNU versión 3 o posterior.\n"
+"Consulteu https://www.gnu.org/licenses/gpl-3.0.txt"
 
-#, python-format
-msgid "Path to wipe must be an existing directory: %s"
-msgstr "El camí per a la neteja ha de ser una carpeta existent: %s"
-
-msgid "Creating new, temporary file for wiping free space."
-msgstr "S'està creant un fitxer temporal nou per netejar l'espai lliure."
-
-#, python-format
-msgid "Error #%d when flushing the file buffer."
-msgstr "Error núm. %d en netejar la memòria intermèdia del fitxer."
-
-msgid ""
-"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
-"{rate:.2f} MB/s"
+#. TRANSLATORS: Maintain the names of translators here.
+#. Launchpad does this automatically for translations
+#. typed in Launchpad. This is a special string shown
+#. in the 'About' box.
+msgid "translator-credits"
 msgstr ""
-"S'han escrit {files:,} fitxers i {bytes:,} bytes en {seconds:,} segons a "
-"{rate:.2f} MB/s"
+"Launchpad Contributions:\n"
+"  Alfredo Hernández https://launchpad.net/~aldomann\n"
+"  BennyBeat https://launchpad.net/~bennybeat\n"
+"  David Planella https://launchpad.net/~dpm\n"
+"  Jaime Muñoz Martín https://launchpad.net/~kayron8\n"
+"  Joan Montané https://launchpad.net/~jmontane\n"
+"  Marc Coll Carrillo https://launchpad.net/~marc-coll-carrillo\n"
+"  Paulo Guzmán https://launchpad.net/~white-hat\n"
+"  Toni Estevez https://launchpad.net/~toni-estevez\n"
+"  VPablo https://launchpad.net/~villumar\n"
+"  oriolsbd https://launchpad.net/~oriolsbd"
 
-msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
-msgstr ""
-"{bytes:,} bytes i {inodes:,} nodes índex disponibles per als usuaris normals"
-
-msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
-msgstr ""
-"{bytes:,} bytes i {inodes:,} nodes índex disponibles per al superusuari"
-
-msgid "Handled unknown error #0 while truncating file."
-msgstr "S'ha gestionat l'error desconegut núm. 0 en truncar el fitxer."
+msgid "System information"
+msgstr "Informació del sistema"
 
 msgid "_Cancel"
 msgstr "_Cancel·la"
 
 msgid "_Open"
 msgstr "_Obre"
-
-msgid "_Delete"
-msgstr "_Suprimeix"
 
 msgid "Delete confirmation"
 msgstr "Confirmació de la supressió"
@@ -1329,6 +1346,11 @@ msgstr ""
 msgid "Keep Selected"
 msgstr ""
 
+msgid ""
+"Expert mode enables advanced features and relaxes guardrails. Use extra "
+"caution in expert mode."
+msgstr ""
+
 msgid "Preferences"
 msgstr "Preferències"
 
@@ -1342,6 +1364,14 @@ msgid "Languages"
 msgstr "Idiomes"
 
 msgid "Keep list"
+msgstr ""
+
+#, fuzzy
+#| msgid "Dark mode"
+msgid "Expert mode"
+msgstr "Mode fosc"
+
+msgid "Some GTK themes support do not support both light and dark modes."
 msgstr ""
 
 msgid "Warning confirmations reset."
@@ -1418,9 +1448,6 @@ msgstr "Mode fosc"
 msgid "Windows 10 theme"
 msgstr "Tema de Windows 10"
 
-msgid "Choose a folder"
-msgstr "Trieu una carpeta"
-
 #, fuzzy
 #| msgid ""
 #| "Choose a writable folder for each drive for which to overwrite free space."
@@ -1457,6 +1484,9 @@ msgid "This path already exists in the keep list."
 msgstr ""
 
 msgid "This path already exists in the custom list."
+msgstr ""
+
+msgid "This path is protected. To bypass protection, enable expert mode."
 msgstr ""
 
 msgid "Protected Path"
@@ -1510,49 +1540,6 @@ msgctxt "button"
 msgid "Add folder"
 msgstr "Afegeix una carpeta"
 
-msgid "Choose files to shred"
-msgstr "Trieu els fitxers per triturar"
-
-msgid "Choose folder to shred"
-msgstr "Trieu la carpeta per triturar"
-
-msgid "No paths found in clipboard."
-msgstr "No s'han trobat camins al porta-retalls."
-
-msgid "_OK"
-msgstr "_D'acord"
-
-msgid "Program to clean unnecessary files"
-msgstr "Programa per netejar fitxers innecessaris"
-
-msgid ""
-"GNU General Public License version 3 or later.\n"
-"See https://www.gnu.org/licenses/gpl-3.0.txt"
-msgstr ""
-"Licencia pública general de GNU versión 3 o posterior.\n"
-"Consulteu https://www.gnu.org/licenses/gpl-3.0.txt"
-
-#. TRANSLATORS: Maintain the names of translators here.
-#. Launchpad does this automatically for translations
-#. typed in Launchpad. This is a special string shown
-#. in the 'About' box.
-msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Alfredo Hernández https://launchpad.net/~aldomann\n"
-"  BennyBeat https://launchpad.net/~bennybeat\n"
-"  David Planella https://launchpad.net/~dpm\n"
-"  Jaime Muñoz Martín https://launchpad.net/~kayron8\n"
-"  Joan Montané https://launchpad.net/~jmontane\n"
-"  Marc Coll Carrillo https://launchpad.net/~marc-coll-carrillo\n"
-"  Paulo Guzmán https://launchpad.net/~white-hat\n"
-"  Toni Estevez https://launchpad.net/~toni-estevez\n"
-"  VPablo https://launchpad.net/~villumar\n"
-"  oriolsbd https://launchpad.net/~oriolsbd"
-
-msgid "System information"
-msgstr "Informació del sistema"
-
 msgid "Active"
 msgstr "Actiu"
 
@@ -1560,6 +1547,9 @@ msgstr "Actiu"
 #. much space an option would clean or did clean
 msgid "Size"
 msgstr "Mida"
+
+msgid "This option is protected. To bypass protection, enable expert mode."
+msgstr ""
 
 #. TRANSLATORS: %(cleaner) may be Firefox, System, etc.
 #. %(option) may be cache, logs, cookies, etc.
@@ -1577,6 +1567,11 @@ msgstr ""
 #, python-format
 msgid "Resetting the configuration file because it is corrupt: %s"
 msgstr "S'està restablint el fitxer de configuració perquè està danyat: %s"
+
+#, python-format
+msgid ""
+"%(cleaner)s - %(option)s cannot be cleaned because expert mode is disabled."
+msgstr ""
 
 msgid "You must select an operation"
 msgstr "Heu de seleccionar una operació"
@@ -1624,6 +1619,9 @@ msgstr ""
 "No hi ha una versió oficial de BleachBit a la Microsoft Store. Obteniu la "
 "versió original a https://www.bleachbit.org, on sempre és gratuïta."
 
+msgid "This option requires expert mode. Enable it in Preferences."
+msgstr ""
+
 #. TRANSLATORS: this is the context menu
 #. TRANSLATORS: This is the preview button on the main window.  It
 #. previews changes.
@@ -1635,6 +1633,10 @@ msgstr "Previsualitza"
 #| msgid "Cookies"
 msgid "Manage Cookies"
 msgstr "Galetes"
+
+#. TRANSLATORS: this is the context menu
+msgid "Manage custom paths"
+msgstr ""
 
 msgid "Preview files in the selected operations (without deleting any files)"
 msgstr ""
@@ -1867,6 +1869,41 @@ msgstr ""
 
 msgid "BleachBit is starting...\n"
 msgstr "BleachBit s'està iniciant...\n"
+
+msgid ""
+"There was at least one file on a file system that does not support advanced "
+"overwriting."
+msgstr ""
+"Hi ha almenys un sistema de fitxers que no admet la sobreescriptura avançada."
+
+#, python-format
+msgid "Path to wipe must be an existing directory: %s"
+msgstr "El camí per a la neteja ha de ser una carpeta existent: %s"
+
+msgid "Creating new, temporary file for wiping free space."
+msgstr "S'està creant un fitxer temporal nou per netejar l'espai lliure."
+
+#, python-format
+msgid "Error #%d when flushing the file buffer."
+msgstr "Error núm. %d en netejar la memòria intermèdia del fitxer."
+
+msgid ""
+"Wrote {files:,} files and {bytes:,} bytes in {seconds:,} seconds at "
+"{rate:.2f} MB/s"
+msgstr ""
+"S'han escrit {files:,} fitxers i {bytes:,} bytes en {seconds:,} segons a "
+"{rate:.2f} MB/s"
+
+msgid "{bytes:,} bytes and {inodes:,} inodes available to non-super-user"
+msgstr ""
+"{bytes:,} bytes i {inodes:,} nodes índex disponibles per als usuaris normals"
+
+msgid "{bytes:,} bytes and {inodes:,} inodes available to super-user"
+msgstr ""
+"{bytes:,} bytes i {inodes:,} nodes índex disponibles per al superusuari"
+
+msgid "Handled unknown error #0 while truncating file."
+msgstr "S'ha gestionat l'error desconegut núm. 0 en truncar el fitxer."
 
 #. TRANSLATORS: This indicates an error.  The special keyword
 #. %(operation)s will be replaced by 'firefox' or 'opera' or
