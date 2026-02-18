@@ -85,6 +85,10 @@
                 "spread": {
                     "description": "Maximum hue difference between participating lights, in degrees on a color wheel.",
                     "name": "Spread"
+                },
+                "transition": {
+                    "description": "Duration of the transition between colors.",
+                    "name": "Transition"
                 }
             },
             "name": "Color loop effect"
@@ -104,10 +108,10 @@
             "name": "Flame effect"
         },
         "effect_morph": {
-            "description": "Starts the firmware-based Morph effect on LIFX Tiles on Candle.",
+            "description": "Starts the firmware-based Morph effect on LIFX Tiles or Candle.",
             "fields": {
                 "palette": {
-                    "description": "List of at least 2 and at most 16 colors as hue (0-360), saturation (0-100), brightness (0-100) and kelvin (1500-9000) values to use for this effect. Overrides the theme attribute.",
+                    "description": "List of at least 2 and at most 16 colors as hue (0-360), saturation (0-100), brightness (0-100) and Kelvin (1500-9000) values to use for this effect. Overrides the 'Theme' attribute.",
                     "name": "Palette"
                 },
                 "power_on": {
@@ -119,7 +123,7 @@
                     "name": "Speed"
                 },
                 "theme": {
-                    "description": "Predefined color theme to use for the effect. Overridden by the palette attribute.",
+                    "description": "Predefined color theme to use for the effect. Overridden by the 'Palette' attribute.",
                     "name": "Theme"
                 }
             },
@@ -186,18 +190,18 @@
             "name": "Pulse effect"
         },
         "effect_sky": {
-            "description": "Starts the firmware-based Sky effect on LIFX Ceiling.",
+            "description": "Starts a firmware-based effect on LIFX Ceiling lights that animates a sky scene across the device.",
             "fields": {
                 "cloud_saturation_max": {
-                    "description": "Maximum cloud saturation.",
-                    "name": "Cloud Saturation maximum"
+                    "description": "The maximum cloud saturation for the Clouds sky type.",
+                    "name": "Cloud saturation maximum"
                 },
                 "cloud_saturation_min": {
-                    "description": "Minimum cloud saturation.",
-                    "name": "Cloud saturation Minimum"
+                    "description": "The minimum cloud saturation for the Clouds sky type.",
+                    "name": "Cloud saturation minimum"
                 },
                 "palette": {
-                    "description": "List of 1 to 6 colors as hue (0-360), saturation (0-100), brightness (0-100) and kelvin (1500-9000) values to use for this effect.",
+                    "description": "List of 1 to 6 colors as hue (0-360), saturation (0-100), brightness (0-100) and Kelvin (1500-9000) values to use for this effect.",
                     "name": "Palette"
                 },
                 "power_on": {
@@ -209,7 +213,7 @@
                     "name": "Sky type"
                 },
                 "speed": {
-                    "description": "How long the Sunrise and Sunset sky types will take to complete. For the Cloud sky type, it is the speed of the clouds across the device.",
+                    "description": "How long the Sunrise and Sunset sky types will take to complete. For the Clouds sky type, it is the speed of the clouds across the device.",
                     "name": "Speed"
                 }
             },
@@ -218,6 +222,28 @@
         "effect_stop": {
             "description": "Stops a running effect.",
             "name": "Stop effect"
+        },
+        "paint_theme": {
+            "description": "Paints either a provided theme or custom palette across one or more LIFX lights.",
+            "fields": {
+                "palette": {
+                    "description": "List of at least 2 and at most 16 colors as hue (0-360), saturation (0-100), brightness (0-100) and Kelvin (1500-9000) values to paint across the target lights. Overrides the 'Theme' attribute.",
+                    "name": "Palette"
+                },
+                "power_on": {
+                    "description": "Powered off lights will be turned on before painting the theme.",
+                    "name": "Power on"
+                },
+                "theme": {
+                    "description": "Predefined color theme to paint. Overridden by the 'Palette' attribute.",
+                    "name": "Theme"
+                },
+                "transition": {
+                    "description": "Duration in seconds to paint the theme.",
+                    "name": "Transition"
+                }
+            },
+            "name": "Paint theme"
         },
         "set_hev_cycle_state": {
             "description": "Controls the HEV LEDs on a LIFX Clean bulb.",
@@ -253,7 +279,7 @@
                     "name": "Zones"
                 }
             },
-            "name": "Set State"
+            "name": "Set state"
         }
     }
 }

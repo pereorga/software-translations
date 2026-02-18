@@ -9,6 +9,7 @@
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
+            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
             "oauth_timeout": "Timeout resolving OAuth token.",
             "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
             "reauth_successful": "Re-authentication was successful"
@@ -18,10 +19,16 @@
         },
         "step": {
             "pick_implementation": {
+                "data": {
+                    "implementation": "Application credentials"
+                },
+                "data_description": {
+                    "implementation": "The credentials you want to use to authenticate."
+                },
                 "title": "Pick authentication method"
             },
             "reauth_confirm": {
-                "description": "The yolink integration needs to re-authenticate your account",
+                "description": "The YoLink integration needs to re-authenticate your account",
                 "title": "Authentication expired for {name}"
             }
         }
@@ -39,14 +46,32 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "water_running": {
+                "name": "Water is flowing"
+            }
+        },
         "number": {
             "config_volume": {
                 "name": "Volume"
             }
         },
+        "select": {
+            "sprinkler_mode": {
+                "name": "Mode",
+                "state": {
+                    "auto": "Auto",
+                    "manual": "Manual",
+                    "off": "Off"
+                }
+            }
+        },
         "sensor": {
             "current_power": {
                 "name": "Current power"
+            },
+            "device_temperature": {
+                "name": "Device temperature"
             },
             "power_consumption": {
                 "name": "Power consumption"
@@ -81,6 +106,12 @@
                     "medium": "Medium"
                 }
             },
+            "water_meter_1_reading": {
+                "name": "Water meter 1 reading"
+            },
+            "water_meter_2_reading": {
+                "name": "Water meter 2 reading"
+            },
             "water_meter_reading": {
                 "name": "Water meter reading"
             }
@@ -103,14 +134,29 @@
             }
         },
         "valve": {
+            "meter_valve_1_state": {
+                "name": "Valve 1"
+            },
+            "meter_valve_2_state": {
+                "name": "Valve 2"
+            },
             "meter_valve_state": {
                 "name": "Valve state"
+            },
+            "sprinkler_valve": {
+                "name": "Valve"
             }
         }
     },
     "exceptions": {
         "invalid_config_entry": {
             "message": "Config entry not found or not loaded!"
+        },
+        "oauth2_implementation_unavailable": {
+            "message": "OAuth2 implementation unavailable, will retry"
+        },
+        "valve_inoperable_currently": {
+            "message": "The Valve cannot be operated currently."
         }
     },
     "selector": {
@@ -125,7 +171,7 @@
     },
     "services": {
         "play_on_speaker_hub": {
-            "description": "Convert text to audio play on YoLink SpeakerHub",
+            "description": "Converts text to speech for playback on a YoLink SpeakerHub",
             "fields": {
                 "message": {
                     "description": "Text message to be played.",
@@ -136,15 +182,15 @@
                     "name": "Repeat"
                 },
                 "target_device": {
-                    "description": "SpeakerHub Device",
-                    "name": "SpeakerHub Device"
+                    "description": "SpeakerHub device for audio playback.",
+                    "name": "SpeakerHub device"
                 },
                 "tone": {
                     "description": "Tone before playing audio.",
                     "name": "Tone"
                 },
                 "volume": {
-                    "description": "Override the speaker volume during playback of this message only.",
+                    "description": "Overrides the speaker volume during playback of this message only.",
                     "name": "Volume"
                 }
             },

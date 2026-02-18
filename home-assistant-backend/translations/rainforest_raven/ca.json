@@ -10,11 +10,6 @@
             "timeout_connect": "S'ha esgotat el temps m\u00e0xim d'espera per establir connexi\u00f3"
         },
         "step": {
-            "meters": {
-                "data": {
-                    "mac": "Adreces MAC del comptador"
-                }
-            },
             "user": {
                 "data": {
                     "device": "Dispositiu"
@@ -24,33 +19,12 @@
     },
     "entity": {
         "sensor": {
-            "meter_price": {
-                "name": "Preu del comptador",
-                "state_attributes": {
-                    "rate_label": {
-                        "name": "Taxa"
-                    },
-                    "tier": {
-                        "name": "Nivell"
-                    }
-                }
-            },
-            "power_demand": {
-                "name": "Pot\u00e8ncia de demanda del comptador"
-            },
             "signal_strength": {
-                "name": "Pot\u00e8ncia de senyal del comptador",
                 "state_attributes": {
                     "channel": {
                         "name": "Canal"
                     }
                 }
-            },
-            "total_energy_delivered": {
-                "name": "Energia total subministrada pel comptador"
-            },
-            "total_energy_received": {
-                "name": "Energia total rebuda pel comptador"
             }
         }
     }

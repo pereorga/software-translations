@@ -1,0 +1,46 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "reauth_successful": "Re-authentication was successful",
+            "unique_id_mismatch": "An incorrect user was provided by Cync for your email address, please consult your Cync app"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Your Cync account's email address",
+                    "password": "Your Cync account's password"
+                },
+                "description": "The Cync integration needs to re-authenticate for {email}",
+                "title": "Authentication expired for {name}"
+            },
+            "two_factor": {
+                "data": {
+                    "two_factor_code": "Two-factor code"
+                },
+                "data_description": {
+                    "two_factor_code": "The two-factor code sent to your Cync account's email"
+                }
+            },
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Your Cync account's email address",
+                    "password": "Your Cync account's password"
+                }
+            }
+        }
+    }
+}

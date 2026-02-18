@@ -20,6 +20,12 @@
         "binary_sensor": {
             "operation_mode": {
                 "name": "Pot\u00e8ncia"
+            },
+            "water_heater_operation_mode": {
+                "name": "Pot\u00e8ncia",
+                "state": {
+                    "off": "En espera"
+                }
             }
         },
         "climate": {
@@ -27,7 +33,31 @@
                 "state_attributes": {
                     "fan_mode": {
                         "state": {
-                            "auto": "Autom\u00e0tic"
+                            "auto": "Auto",
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na"
+                        }
+                    }
+                }
+            }
+        },
+        "event": {
+            "error": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "door_open_error": "Porta oberta",
+                            "inner_lid_open_error": "Error de tapa oberta"
+                        }
+                    }
+                }
+            },
+            "notification": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "door_is_open": "La porta \u00e9s oberta"
                         }
                     }
                 }
@@ -50,17 +80,25 @@
             },
             "current_job_mode": {
                 "state": {
-                    "auto": "Autom\u00e0tic"
+                    "auto": "Auto"
+                }
+            },
+            "current_job_mode_ventilator": {
+                "state": {
+                    "vent_auto": "Auto"
                 }
             },
             "display_light": {
                 "state": {
+                    "level_1": "Brillantor 1",
+                    "level_2": "Brillantor 2",
+                    "level_3": "Brillantor 3",
                     "off": "OFF"
                 }
             },
             "fresh_air_filter": {
                 "state": {
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
                     "off": "OFF",
                     "smart_off": "OFF"
                 }
@@ -96,11 +134,25 @@
             },
             "wind_strength": {
                 "state": {
-                    "auto": "Autom\u00e0tic"
+                    "auto": "Auto",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "mid": "Mitj\u00e0/na"
                 }
             }
         },
         "sensor": {
+            "battery_level": {
+                "state": {
+                    "high": "Ple/na",
+                    "low": "Baix/a",
+                    "mid": "Mitj\u00e0/na",
+                    "warning": "Buit"
+                }
+            },
+            "carbon_dioxide": {
+                "name": "Di\u00f2xid de carboni"
+            },
             "cock_state": {
                 "state": {
                     "normal": "En espera"
@@ -108,23 +160,28 @@
             },
             "current_dish_washing_course": {
                 "state": {
-                    "auto": "Autom\u00e0tic"
+                    "auto": "Auto",
+                    "normal": "Normal"
                 }
             },
             "current_job_mode": {
                 "state": {
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
+                    "normal": "Normal",
                     "off": "OFF"
                 }
             },
             "current_job_mode_stick_cleaner": {
                 "state": {
+                    "normal": "Normal",
                     "off": "OFF"
                 }
             },
             "current_state": {
                 "state": {
                     "cancel": "Cancel\u00b7la",
+                    "charging": "Carregant",
+                    "charging_complete": "La c\u00e0rrega ha finalitzat",
                     "initial": "En espera",
                     "initializing": "En espera",
                     "pause": "Pausat/ada",
@@ -137,6 +194,8 @@
             "current_state_for_location": {
                 "state": {
                     "cancel": "Cancel\u00b7la",
+                    "charging": "Carregant",
+                    "charging_complete": "La c\u00e0rrega ha finalitzat",
                     "initial": "En espera",
                     "initializing": "En espera",
                     "pause": "Pausat/ada",
@@ -148,23 +207,31 @@
             },
             "fresh_air_filter": {
                 "state": {
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
                     "off": "OFF",
                     "smart_off": "OFF"
                 }
             },
             "growth_mode": {
                 "state": {
-                    "standard": "Autom\u00e0tic"
+                    "standard": "Auto"
                 }
             },
             "growth_mode_for_location": {
                 "state": {
-                    "standard": "Autom\u00e0tic"
+                    "standard": "Auto"
                 }
             },
             "monitoring_enabled": {
                 "name": "Sensor de qualitat de l'aire"
+            },
+            "odor_level": {
+                "state": {
+                    "normal": "Normal"
+                }
+            },
+            "room_air_current_temperature": {
+                "name": "Temperatura interior"
             },
             "sterilizing_state": {
                 "state": {
@@ -186,7 +253,17 @@
                 }
             },
             "temperature_state": {
-                "name": "Temperatura"
+                "name": "Temperatura",
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a"
+                }
+            },
+            "temperature_state_for_location": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a"
+                }
             }
         }
     }

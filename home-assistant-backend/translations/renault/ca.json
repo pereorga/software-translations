@@ -3,7 +3,8 @@
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
             "kamereon_no_account": "No s'ha pogut trobar cap compte Kamereon",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -152,7 +153,8 @@
                 "vehicle": {
                     "name": "Vehicle"
                 }
-            }
+            },
+            "name": "Cancel\u00b7la A/C"
         },
         "ac_set_schedules": {
             "fields": {
@@ -168,12 +170,14 @@
         "ac_start": {
             "fields": {
                 "temperature": {
+                    "description": "Temperatura A/C objctiu en \u00b0C.",
                     "name": "Temperatura"
                 },
                 "vehicle": {
                     "name": "Vehicle"
                 }
-            }
+            },
+            "name": "Inicia A/C"
         },
         "charge_set_schedules": {
             "fields": {

@@ -20,22 +20,65 @@
                 "data_description": {
                     "host": "The hostname or IP address of the Brother printer to control."
                 },
-                "description": "Update configuration for {printer_name}."
+                "description": "Update configuration for {printer_name}.",
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "community": "SNMP Community",
+                            "port": "Port"
+                        },
+                        "data_description": {
+                            "community": "A simple password for devices to communicate to each other.",
+                            "port": "The SNMP port of the Brother printer."
+                        },
+                        "name": "Advanced settings"
+                    }
+                }
             },
             "user": {
                 "data": {
                     "host": "Host",
-                    "type": "Type of the printer"
+                    "type": "Printer type"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of the Brother printer to control."
+                    "host": "The hostname or IP address of the Brother printer to control.",
+                    "type": "The type of the Brother printer."
+                },
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "community": "SNMP Community",
+                            "port": "Port"
+                        },
+                        "data_description": {
+                            "community": "A simple password for devices to communicate to each other.",
+                            "port": "The SNMP port of the Brother printer."
+                        },
+                        "name": "Advanced settings"
+                    }
                 }
             },
             "zeroconf_confirm": {
                 "data": {
-                    "type": "Type of the printer"
+                    "type": "Printer type"
+                },
+                "data_description": {
+                    "type": "The type of the Brother printer."
                 },
                 "description": "Do you want to add the printer {model} with serial number `{serial_number}` to Home Assistant?",
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "community": "SNMP Community",
+                            "port": "Port"
+                        },
+                        "data_description": {
+                            "community": "A simple password for devices to communicate to each other.",
+                            "port": "The SNMP port of the Brother printer."
+                        },
+                        "name": "Advanced settings"
+                    }
+                },
                 "title": "Discovered Brother Printer"
             }
         }
@@ -157,6 +200,25 @@
             },
             "yellow_toner_remaining": {
                 "name": "Yellow toner remaining"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "An error occurred while connecting to the {device} printer: {error}"
+        },
+        "serial_mismatch": {
+            "message": "The serial number for {device} doesn't match the one in the configuration. It's possible that the two Brother printers have swapped IP addresses. Restore the previous IP address configuration or reconfigure the devices with Home Assistant."
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from the {device} printer: {error}"
+        }
+    },
+    "selector": {
+        "printer_type": {
+            "options": {
+                "ink": "ink",
+                "laser": "laser"
             }
         }
     }

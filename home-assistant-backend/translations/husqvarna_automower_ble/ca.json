@@ -3,7 +3,42 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "step": {
+            "bluetooth_confirm": {
+                "data": {
+                    "pin": "PIN del tallagespa"
+                },
+                "data_description": {
+                    "pin": "PIN utilitzat per assegurar el tallagespa"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "pin": "PIN del tallagespa"
+                },
+                "data_description": {
+                    "pin": "PIN utilitzat per assegurar el tallagespa"
+                }
+            },
+            "user": {
+                "data": {
+                    "pin": "PIN del tallagespa"
+                },
+                "data_description": {
+                    "pin": "PIN utilitzat per assegurar el tallagespa"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "pin_required": {
+            "message": "Cal un PIN per {domain_name}"
         }
     }
 }

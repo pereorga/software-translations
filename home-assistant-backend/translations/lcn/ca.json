@@ -4,7 +4,6 @@
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
-            "already_configured": "Ja hi ha una connexi\u00f3 PCHK configurada amb la mateixa IP/port.",
             "authentication_error": "Ha fallat l'autenticaci\u00f3. Usuari o contrasenya incorrectes.",
             "connection_refused": "No s'ha pogut connectar a PCHK, verifica la IP i el port.",
             "license_error": "S'ha assolit el nombre m\u00e0xim de connexions. Cal una clau de llic\u00e8ncia addicional."
@@ -12,10 +11,14 @@
         "step": {
             "reconfigure": {
                 "data": {
+                    "dim_mode": "Mode d'atenuaci\u00f3",
                     "ip_address": "Adre\u00e7a IP",
                     "password": "Contrasenya",
                     "port": "Port",
                     "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "port": "Port del servidor PCHK."
                 },
                 "description": "Reconfigura la connexi\u00f3 a l'amfitri\u00f3 d'LCN.",
                 "title": "Reconfiguraci\u00f3 de l'amfitri\u00f3 d'LCN"
@@ -28,6 +31,9 @@
                     "password": "Contrasenya",
                     "port": "Port",
                     "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "port": "Port del servidor PCHK."
                 }
             }
         }
@@ -48,19 +54,8 @@
         }
     },
     "services": {
-        "address_to_device_id": {
-            "fields": {
-                "segment_id": {
-                    "name": "ID del segment"
-                }
-            }
-        },
         "dyn_text": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
@@ -77,10 +72,6 @@
         },
         "led": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
@@ -94,16 +85,12 @@
             "name": "LED"
         },
         "lock_keys": {
-            "description": "Bloqueja les claus.",
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
                 "state": {
+                    "description": "Estats de blocatge de claus en forma de cadena (1=activat, 2=desactivat, T=canvia, -=no canvia).",
                     "name": "Estat"
                 },
                 "table": {
@@ -123,10 +110,6 @@
         "lock_regulator": {
             "description": "Bloqueja un valor consigna d'un regulador.",
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
@@ -141,10 +124,6 @@
         },
         "output_abs": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "brightness": {
                     "description": "Lluminositat absoluta.",
                     "name": "Lluminositat"
@@ -165,10 +144,6 @@
         },
         "output_rel": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "brightness": {
                     "description": "Lluminositat relativa.",
                     "name": "Lluminositat"
@@ -183,13 +158,10 @@
             }
         },
         "output_toggle": {
-            "description": "Commuta el port de sortida.",
+            "description": "Activa o desactiva el port de sortida.",
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
+                    "description": "L'ID del dispositiu del m\u00f2dul o grup LCN.",
                     "name": "Dispositiu"
                 },
                 "output": {
@@ -201,15 +173,11 @@
                     "name": "Transici\u00f3"
                 }
             },
-            "name": "Commuta sortida"
+            "name": "Activa o desactiva la sortida"
         },
         "pck": {
             "description": "Envia una comanda PCK arbitr\u00e0ria.",
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
@@ -222,28 +190,23 @@
         },
         "relays": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
                 "state": {
+                    "description": "Estats del rel\u00e9 com a cadena (1=activat, 2=desactivat, t=canvia, -=no canvia).",
                     "name": "Estat"
                 }
-            }
+            },
+            "name": "Rel\u00e9s"
         },
         "send_keys": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
                 "keys": {
+                    "description": "Tecles a enviar",
                     "name": "Claus"
                 },
                 "state": {
@@ -262,10 +225,6 @@
         },
         "var_abs": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
@@ -283,10 +242,6 @@
         },
         "var_rel": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },
@@ -294,6 +249,7 @@
                     "name": "Unitat de mesura"
                 },
                 "value": {
+                    "description": "Valor de despla\u00e7ament",
                     "name": "Valor"
                 },
                 "value_reference": {
@@ -306,10 +262,6 @@
         },
         "var_reset": {
             "fields": {
-                "address": {
-                    "description": "Adre\u00e7a del m\u00f2dul.",
-                    "name": "Adre\u00e7a"
-                },
                 "device_id": {
                     "name": "Dispositiu"
                 },

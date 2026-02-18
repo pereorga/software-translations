@@ -1,35 +1,170 @@
 {
     "config": {
         "abort": {
-            "invalid_webhook_url": "Home Assistant not est\u00e0 configurat correctament per a rebre actualitzacions de SmartThings.\nEl seg\u00fcent URL webhook no \u00e9s v\u00e0lid:\n> {webhook_url}\n\nActualitza la teva configuraci\u00f3 segons les [instruccions]({component_url}), reinicia Home Assistant i torna-ho a provar.",
-            "no_available_locations": "No hi ha ubicacions SmartThings a configurar a Home Assistant."
+            "already_configured": "El compte ja est\u00e0 configurat",
+            "authorize_url_timeout": "Temps d'espera esgotat durant la generaci\u00f3 de l'URL d'autoritzaci\u00f3.",
+            "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
+            "no_url_available": "No hi ha cap URL disponible. Per a m\u00e9s informaci\u00f3 sobre aquest error, [consulta la secci\u00f3 d'ajuda]({docs_url})",
+            "oauth_error": "S'han rebut dades token inv\u00e0lides.",
+            "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
+            "oauth_timeout": "Temps m\u00e0xim d'espera de resoluci\u00f3 de 'token' OAuth esgotat.",
+            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "token_forbidden": "El token d'autenticaci\u00f3 no t\u00e9 cont\u00e9 els apartats OAuth obligatoris.",
-            "token_invalid_format": "El token d'autenticaci\u00f3 ha d'estar en format UID/GUID",
-            "token_unauthorized": "El token d'autenticaci\u00f3 no \u00e9s v\u00e0lid o ja no est\u00e0 autoritzat.",
-            "webhook_error": "SmartThings no ha pogut validar l'URL webhook. Comprova que l'URL pot ser accedit des d'Internet i torna-ho a provar."
+            "already_configured": "El compte ja est\u00e0 configurat"
         },
         "step": {
-            "authorize": {
-                "title": "Autoritzaci\u00f3 de Home Assistant"
-            },
-            "pat": {
+            "pick_implementation": {
                 "data": {
-                    "access_token": "[%key::common::config_flow::data::access_token%]"
+                    "implementation": "Credencials d'aplicaci\u00f3"
                 },
-                "title": "Introdueix el token d'acc\u00e9s personal"
-            },
-            "select_location": {
-                "data": {
-                    "location_id": "Ubicaci\u00f3"
+                "data_description": {
+                    "implementation": "Les credencials que vols fer servir per autenticar."
                 },
-                "title": "Selecci\u00f3 d'ubicaci\u00f3"
+                "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             },
-            "user": {
-                "description": "SmartThings es configurar\u00e0 per a enviar actualitzacions push a Home Assistant a:\n> {webhook_url}\n\nSi no \u00e9s correcte, actualitza la teva configuraci\u00f3, reinicia Home Assistant i torna-ho a provar.",
-                "title": "Introdueix el token d'autenticaci\u00f3 personal"
+            "reauth_confirm": {
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "door": {
+                "name": "Porta"
+            },
+            "freezer_door": {
+                "name": "Porta del congelador"
+            }
+        },
+        "button": {
+            "stop": {
+                "name": "Atura"
+            }
+        },
+        "number": {
+            "hood_fan_speed": {
+                "name": "Velocitat del ventilador"
+            }
+        },
+        "select": {
+            "detergent_amount": {
+                "state": {
+                    "none": "OFF"
+                }
+            },
+            "flexible_detergent_amount": {
+                "state": {
+                    "none": "OFF"
+                }
+            },
+            "lamp": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "operating_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "stop": "Parat"
+                }
+            },
+            "soil_level": {
+                "state": {
+                    "normal": "Normal"
+                }
+            },
+            "spin_level": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "water_temperature": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            }
+        },
+        "sensor": {
+            "alarm": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "cooktop_operating_state": {
+                "state": {
+                    "paused": "Pausat/ada"
+                }
+            },
+            "dishwasher_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "stop": "Parat"
+                }
+            },
+            "dryer_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "stop": "Parat"
+                }
+            },
+            "heating_mode": {
+                "state": {
+                    "manual": "Manual",
+                    "off": "OFF"
+                }
+            },
+            "oven_machine_state": {
+                "state": {
+                    "paused": "Pausat/ada"
+                }
+            },
+            "robot_cleaner_cleaning_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "manual": "Manual",
+                    "stop": "Atura"
+                }
+            },
+            "robot_cleaner_movement": {
+                "state": {
+                    "charging": "Carregant",
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "pause": "Pausat/ada"
+                }
+            },
+            "robot_cleaner_turbo_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "washer_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "stop": "Parat"
+                }
+            },
+            "washer_sub_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "stop": "Parat"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "oauth2_implementation_unavailable": {
+            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
         }
     }
 }

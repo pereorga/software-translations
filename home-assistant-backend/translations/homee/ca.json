@@ -1,0 +1,116 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "zeroconf_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "load_alarm": {
+                "state": {
+                    "off": "Normal"
+                }
+            }
+        },
+        "climate": {
+            "homee": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "manual": "Manual"
+                        }
+                    }
+                }
+            }
+        },
+        "fan": {
+            "homee": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "manual": "Manual"
+                        }
+                    }
+                }
+            }
+        },
+        "number": {
+            "open_window_detection_sensibility": {
+                "name": "Sensibilitat de finestra oberta"
+            }
+        },
+        "select": {
+            "repeater_mode": {
+                "name": "Mode repetidor",
+                "state": {
+                    "level1": "Nivell 1",
+                    "level2": "Nivell 2",
+                    "off": "OFF"
+                }
+            }
+        },
+        "sensor": {
+            "indoor_humidity": {
+                "name": "Humitat interior"
+            },
+            "indoor_temperature": {
+                "name": "Temperatura interior"
+            },
+            "outdoor_humidity": {
+                "name": "Humitat exterior"
+            },
+            "outdoor_temperature": {
+                "name": "Temperatura exterior"
+            },
+            "up_down": {
+                "state": {
+                    "closed": "Tancat",
+                    "closing": "Tancant",
+                    "open": "Obert",
+                    "opening": "Obrint"
+                }
+            },
+            "window_position": {
+                "state": {
+                    "closed": "Tancat",
+                    "open": "Obert"
+                }
+            }
+        }
+    }
+}

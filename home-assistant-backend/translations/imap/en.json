@@ -84,6 +84,9 @@
         "invalid_folder": {
             "message": "The selected folder is invalid"
         },
+        "invalid_part_index": {
+            "message": "Invalid part index."
+        },
         "seen_failed": {
             "message": "Marking message as seen failed with \"{error}\"."
         }
@@ -135,7 +138,7 @@
     },
     "services": {
         "delete": {
-            "description": "Delete an email.",
+            "description": "Deletes an email.",
             "fields": {
                 "entry": {
                     "description": "The IMAP config entry.",
@@ -149,7 +152,7 @@
             "name": "Delete message"
         },
         "fetch": {
-            "description": "Fetch an email message from the server.",
+            "description": "Fetches an email message from the server.",
             "fields": {
                 "entry": {
                     "description": "The IMAP config entry.",
@@ -162,8 +165,26 @@
             },
             "name": "Fetch message"
         },
+        "fetch_part": {
+            "description": "Fetches a message part or attachment from an email message.",
+            "fields": {
+                "entry": {
+                    "description": "The IMAP config entry.",
+                    "name": "Entry"
+                },
+                "part": {
+                    "description": "The message part index.",
+                    "name": "Part"
+                },
+                "uid": {
+                    "description": "The email identifier (UID).",
+                    "name": "UID"
+                }
+            },
+            "name": "Fetch message part"
+        },
         "move": {
-            "description": "Move an email to a target folder.",
+            "description": "Moves an email to a target folder.",
             "fields": {
                 "entry": {
                     "description": "The IMAP config entry.",
@@ -185,7 +206,7 @@
             "name": "Move message"
         },
         "seen": {
-            "description": "Mark an email as seen.",
+            "description": "Marks an email as seen.",
             "fields": {
                 "entry": {
                     "description": "The IMAP config entry.",

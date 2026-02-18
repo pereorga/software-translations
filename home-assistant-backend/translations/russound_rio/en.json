@@ -13,6 +13,9 @@
             "cannot_connect": "Failed to connect to Russound device. Please make sure the device is powered up and connected to the network. Try power-cycling the device if it does not connect."
         },
         "step": {
+            "discovery_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
             "reconfigure": {
                 "data": {
                     "host": "Host",
@@ -37,26 +40,42 @@
             }
         }
     },
+    "entity": {
+        "number": {
+            "balance": {
+                "name": "Balance"
+            },
+            "bass": {
+                "name": "Bass"
+            },
+            "treble": {
+                "name": "Treble"
+            },
+            "turn_on_volume": {
+                "name": "Turn-on volume"
+            }
+        },
+        "switch": {
+            "loudness": {
+                "name": "Loudness"
+            }
+        }
+    },
     "exceptions": {
         "command_error": {
             "message": "Error executing {function_name} on entity {entity_id}"
         },
         "entry_cannot_connect": {
             "message": "Error while connecting to {host}:{port}"
-        }
-    },
-    "issues": {
-        "deprecated_yaml_import_issue_cannot_connect": {
-            "description": "Configuring {integration_title} using YAML is being removed but there was a connection error importing your YAML configuration.\n\nPlease make sure {integration_title} is turned on, and restart Home Assistant to try importing again. Otherwise, please remove the YAML from your configuration and add the integration manually.",
-            "title": "The {integration_title} YAML configuration import cannot connect to the Russound device"
         },
-        "deprecated_yaml_import_issue_no_primary_controller": {
-            "description": "Configuring {integration_title} using YAML is being removed but there was a connection error importing your YAML configuration.\n\nNo primary controller was detected for the Russound device. Please make sure that the target Russound device has it's controller ID set to 1 (using the selector on the back of the unit).",
-            "title": "The {integration_title} YAML configuration import cannot configure the Russound Device."
+        "missing_preset": {
+            "message": "The specified preset is not available for this source: {preset_id}"
         },
-        "deprecated_yaml_import_issue_unknown": {
-            "description": "Configuring {integration_title} using YAML is being removed but there was a connection error importing your YAML configuration.\n\nPlease make sure {integration_title} is turned on, and restart Home Assistant to try importing again. Otherwise, please remove the YAML from your configuration and add the integration manually.",
-            "title": "The {integration_title} YAML configuration import cannot connect to the Russound device"
+        "preset_non_integer": {
+            "message": "Preset must be an integer, got: {preset_id}"
+        },
+        "unsupported_media_type": {
+            "message": "Unsupported media type for Russound zone: {media_type}"
         }
     }
 }

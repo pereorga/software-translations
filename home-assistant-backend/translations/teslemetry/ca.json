@@ -1,7 +1,13 @@
 {
     "config": {
         "abort": {
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "already_configured": "El compte ja est\u00e0 configurat",
+            "oauth_error": "S'han rebut dades token inv\u00e0lides.",
+            "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
+            "oauth_timeout": "Temps m\u00e0xim d'espera de resoluci\u00f3 de 'token' OAuth esgotat.",
+            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -10,22 +16,73 @@
         },
         "step": {
             "reauth_confirm": {
-                "data": {
-                    "access_token": "Token d'acc\u00e9s"
-                },
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
-            },
-            "user": {
-                "data": {
-                    "access_token": "Token d'acc\u00e9s"
-                }
             }
         }
     },
     "entity": {
+        "binary_sensor": {
+            "brake_pedal": {
+                "name": "Pedal de fre"
+            },
+            "climate_state_is_preconditioning": {
+                "name": "Precondicionament"
+            },
+            "dc_dc_enable": {
+                "name": "Convertidor de CC a CC"
+            },
+            "driver_seat_belt": {
+                "name": "Cintur\u00f3 del conductor"
+            },
+            "driver_seat_occupied": {
+                "name": "Seient del conductor ocupat"
+            },
+            "europe_vehicle": {
+                "name": "Vehicle europeu"
+            },
+            "fast_charger_present": {
+                "name": "Carregador r\u00e0pid present"
+            },
+            "gps_state": {
+                "name": "Estat GPS"
+            },
+            "guest_mode_enabled": {
+                "name": "Mode de convidat activat"
+            },
+            "homelink_nearby": {
+                "name": "Homelink a prop"
+            },
+            "located_at_favorite": {
+                "name": "A lloc preferit"
+            },
+            "located_at_home": {
+                "name": "A casa"
+            },
+            "located_at_work": {
+                "name": "A la feina"
+            },
+            "offroad_lightbar_present": {
+                "name": "Barra de llums tot terreny"
+            },
+            "passenger_seat_belt": {
+                "name": "Cintur\u00f3 del passatger"
+            }
+        },
         "climate": {
             "driver_temp": {
-                "name": "Climatitzaci\u00f3"
+                "name": "Climatitzaci\u00f3",
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "off": "OFF"
+                        }
+                    },
+                    "preset_mode": {
+                        "state": {
+                            "off": "Normal"
+                        }
+                    }
+                }
             }
         },
         "cover": {
@@ -74,65 +131,65 @@
         "select": {
             "climate_state_seat_heater_left": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_center": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_left": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_right": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_right": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_third_row_left": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_third_row_right": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_steering_wheel_heat_level": {
                 "name": "Escalfador de volant",
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
                     "off": "OFF"
                 }
             },
@@ -146,14 +203,19 @@
             "default_real_mode": {
                 "name": "Mode de funcionament",
                 "state": {
-                    "autonomous": "Aut\u00f2nom",
-                    "self_consumption": "Autoconsum"
+                    "autonomous": "Aut\u00f2nom"
                 }
             }
         },
         "sensor": {
             "battery_power": {
                 "name": "Pot\u00e8ncia de bateria"
+            },
+            "bms_state": {
+                "state": {
+                    "fault": "Error",
+                    "standby": "En espera"
+                }
             },
             "charge_state_battery_level": {
                 "name": "Nivell de bateria"
@@ -184,7 +246,7 @@
                     "disconnected": "Desconnectat",
                     "no_power": "Sense electricitat",
                     "starting": "Iniciant",
-                    "stopped": "Aturat"
+                    "stopped": "Parat"
                 }
             },
             "charge_state_conn_charge_cable": {
@@ -216,6 +278,34 @@
             },
             "climate_state_passenger_temp_setting": {
                 "name": "Configuraci\u00f3 de temperatura de passatger"
+            },
+            "di_state_f": {
+                "state": {
+                    "enabled": "Activada",
+                    "fault": "Error",
+                    "standby": "En espera"
+                }
+            },
+            "di_state_r": {
+                "state": {
+                    "enabled": "Activada",
+                    "fault": "Error",
+                    "standby": "En espera"
+                }
+            },
+            "di_state_rel": {
+                "state": {
+                    "enabled": "Activada",
+                    "fault": "Error",
+                    "standby": "En espera"
+                }
+            },
+            "di_state_rer": {
+                "state": {
+                    "enabled": "Activada",
+                    "fault": "Error",
+                    "standby": "En espera"
+                }
             },
             "drive_state_active_route_destination": {
                 "name": "Destinaci\u00f3"
@@ -249,6 +339,11 @@
             "energy_left": {
                 "name": "Energia restant"
             },
+            "forward_collision_warning": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
             "generator_power": {
                 "name": "Pot\u00e8ncia del generador"
             },
@@ -270,11 +365,49 @@
             "grid_services_power": {
                 "name": "Pot\u00e8ncia dels serveis de xarxa"
             },
+            "hvac_power_state": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "lane_departure_avoidance": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "lights_turn_signal": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
             "load_power": {
                 "name": "Pot\u00e8ncia de c\u00e0rrega"
             },
             "percentage_charged": {
                 "name": "Percentatge carregat"
+            },
+            "powershare_status": {
+                "state": {
+                    "enabled": "Activada",
+                    "stopped": "Parat"
+                }
+            },
+            "powershare_stop_reason": {
+                "state": {
+                    "fault": "Error"
+                }
+            },
+            "scheduled_charging_mode": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "sentry_mode": {
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF"
+                }
             },
             "solar_energy_exported": {
                 "name": "Exportaci\u00f3 solar"
@@ -313,7 +446,6 @@
                 "name": "Pressi\u00f3 del pneum\u00e0tic posterior dret"
             },
             "vin": {
-                "name": "Vehicle",
                 "state": {
                     "disconnected": "Desconnectat"
                 }
@@ -326,6 +458,11 @@
             },
             "wall_connector_state": {
                 "name": "Codi d'estat"
+            }
+        },
+        "switch": {
+            "charge_state_charging_state": {
+                "name": "Carrega"
             }
         },
         "update": {
@@ -356,9 +493,6 @@
         "no_vehicle_data_for_device": {
             "message": "No s'han trobat dades per l'ID de dispositiu: {device_id}"
         },
-        "set_scheduled_charging_time": {
-            "message": "Temps necessari per completar l'operaci\u00f3"
-        },
         "wake_up_failed": {
             "message": "No s'ha pogut despertar el vehicle: {message}"
         },
@@ -366,12 +500,42 @@
             "message": "S'ha esgotat el temps d'espera intentant despertar el vehicle"
         }
     },
+    "selector": {
+        "days_of_week": {
+            "options": {
+                "friday": "Divendres",
+                "monday": "Dilluns",
+                "saturday": "Dissabte",
+                "sunday": "Diumenge",
+                "thursday": "Dijous",
+                "tuesday": "Dimarts",
+                "wednesday": "Dimecres"
+            }
+        }
+    },
     "services": {
+        "add_charge_schedule": {
+            "fields": {
+                "enable": {
+                    "name": "Activa"
+                },
+                "name": {
+                    "name": "Nom"
+                }
+            }
+        },
+        "add_precondition_schedule": {
+            "fields": {
+                "enable": {
+                    "name": "Activa"
+                },
+                "name": {
+                    "name": "Nom"
+                }
+            }
+        },
         "set_scheduled_charging": {
             "fields": {
-                "device_id": {
-                    "name": "Vehicle"
-                },
                 "enable": {
                     "name": "Activa"
                 }
@@ -379,9 +543,6 @@
         },
         "set_scheduled_departure": {
             "fields": {
-                "device_id": {
-                    "name": "Vehicle"
-                },
                 "enable": {
                     "name": "Activa"
                 }
@@ -389,29 +550,21 @@
         },
         "speed_limit": {
             "fields": {
-                "device_id": {
-                    "name": "Vehicle"
-                },
                 "enable": {
                     "name": "Activa"
                 },
                 "pin": {
-                    "description": "PIN de 4 d\u00edgits.",
-                    "name": "PIN"
+                    "name": "Codi PIN"
                 }
             }
         },
         "valet_mode": {
             "fields": {
-                "device_id": {
-                    "name": "Vehicle"
-                },
                 "enable": {
                     "name": "Activa"
                 },
                 "pin": {
-                    "description": "PIN de 4 d\u00edgits.",
-                    "name": "PIN"
+                    "name": "Codi PIN"
                 }
             }
         }

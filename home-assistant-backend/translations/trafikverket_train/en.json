@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -13,12 +14,7 @@
             "no_trains": "No train found"
         },
         "step": {
-            "reauth_confirm": {
-                "data": {
-                    "api_key": "API key"
-                }
-            },
-            "user": {
+            "initial": {
                 "data": {
                     "api_key": "API key",
                     "filter_product": "Filter by product description",
@@ -31,6 +27,18 @@
                     "filter_product": "To filter by product description add the phrase here to match",
                     "time": "Set time to search specifically at this time of day, must be exact time as scheduled train departure"
                 }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                }
+            },
+            "select_stations": {
+                "data": {
+                    "from": "From station",
+                    "to": "To station"
+                },
+                "description": "More than one station was found with the provided name, select the correct ones from the provided lists"
             }
         }
     },

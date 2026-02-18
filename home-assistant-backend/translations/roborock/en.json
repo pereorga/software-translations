@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured_account": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "wrong_account": "Wrong account: Please authenticate with the right account."
         },
         "error": {
             "invalid_code": "The code you entered was incorrect, please check it and try again.",
@@ -10,13 +11,16 @@
             "invalid_email_format": "There is an issue with the formatting of your email - please try again.",
             "too_frequent_code_requests": "You have attempted to request too many codes. Try again later.",
             "unknown": "Unexpected error",
-            "unknown_roborock": "There was an unknown roborock exception - please check your logs.",
-            "unknown_url": "There was an issue determining the correct url for your roborock account - please check your logs."
+            "unknown_roborock": "There was an unknown Roborock exception - please check your logs.",
+            "unknown_url": "There was an issue determining the correct URL for your Roborock account - please check your logs."
         },
         "step": {
             "code": {
                 "data": {
                     "code": "Verification code"
+                },
+                "data_description": {
+                    "code": "The verification code sent to your email."
                 },
                 "description": "Type the verification code sent to your email"
             },
@@ -28,12 +32,24 @@
                 "data": {
                     "username": "Email"
                 },
+                "data_description": {
+                    "username": "The email address used to sign in to the Roborock app."
+                },
                 "description": "Enter your Roborock email address."
             }
         }
     },
     "entity": {
         "binary_sensor": {
+            "clean_box_empty": {
+                "name": "Clean water box"
+            },
+            "clean_fluid_empty": {
+                "name": "Cleaning fluid"
+            },
+            "dirty_box_full": {
+                "name": "Dirty water box"
+            },
             "in_cleaning": {
                 "name": "Cleaning"
             },
@@ -70,11 +86,29 @@
             }
         },
         "select": {
+            "cleaning_mode": {
+                "name": "Cleaning mode",
+                "state": {
+                    "mop": "Mop only",
+                    "vac_and_mop": "Vacuum and mop",
+                    "vacuum": "Vacuum only"
+                }
+            },
+            "dust_collection_mode": {
+                "name": "Empty mode",
+                "state": {
+                    "balanced": "Balanced",
+                    "light": "Light",
+                    "max": "Max",
+                    "smart": "Smart"
+                }
+            },
             "mop_intensity": {
                 "name": "Mop intensity",
                 "state": {
                     "custom": "Custom",
                     "custom_water_flow": "Custom water flow",
+                    "extreme": "Extreme",
                     "high": "High",
                     "intense": "Intense",
                     "low": "Low",
@@ -83,7 +117,8 @@
                     "mild": "Mild",
                     "moderate": "Moderate",
                     "off": "Off",
-                    "smart_mode": "SmartPlan"
+                    "smart_mode": "SmartPlan",
+                    "vac_followed_by_mop": "Vacuum followed by mop"
                 }
             },
             "mop_mode": {
@@ -99,6 +134,14 @@
             },
             "selected_map": {
                 "name": "Selected map"
+            },
+            "water_flow": {
+                "name": "Water flow",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "medium": "Medium"
+                }
             }
         },
         "sensor": {
@@ -137,10 +180,10 @@
                     "mop_washing_paused": "Mop washing paused",
                     "ready": "Ready",
                     "reserving": "Reserving",
-                    "self_clean_cleaning": "Self clean cleaning",
-                    "self_clean_deep_cleaning": "Self clean deep cleaning",
-                    "self_clean_dehydrating": "Self clean drying",
-                    "self_clean_rinsing": "Self clean rinsing",
+                    "self_clean_cleaning": "Self-clean cleaning",
+                    "self_clean_deep_cleaning": "Self-clean deep cleaning",
+                    "self_clean_dehydrating": "Self-clean drying",
+                    "self_clean_rinsing": "Self-clean rinsing",
                     "unknown": "Unknown",
                     "updating": "Updating",
                     "ventilating": "Ventilating",
@@ -156,11 +199,17 @@
             "cleaning_area": {
                 "name": "Cleaning area"
             },
+            "cleaning_brush_time_left": {
+                "name": "Maintenance brush time left"
+            },
             "cleaning_time": {
                 "name": "Cleaning time"
             },
             "countdown": {
                 "name": "Countdown"
+            },
+            "current_room": {
+                "name": "Current room"
             },
             "dock_error": {
                 "name": "Dock error",
@@ -189,6 +238,25 @@
             "mop_drying_remaining_time": {
                 "name": "Mop drying remaining time"
             },
+            "mop_life_time_left": {
+                "name": "Mop life time left"
+            },
+            "q7_status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Charging",
+                    "docking": "Docking",
+                    "mop_airdrying": "Mop air drying",
+                    "mop_cleaning": "Mop cleaning",
+                    "moping": "Mopping",
+                    "paused": "Paused",
+                    "sleeping": "Sleeping",
+                    "sweep_moping": "Sweep mopping",
+                    "sweep_moping_2": "Sweep mopping",
+                    "updating": "Updating",
+                    "waiting_for_orders": "Waiting for orders"
+                }
+            },
             "sensor_time_left": {
                 "name": "Sensor time left"
             },
@@ -199,11 +267,13 @@
                 "name": "Status",
                 "state": {
                     "air_drying_stopping": "Air drying stopping",
+                    "attaching_the_mop": "Attaching the mop",
                     "charger_disconnected": "Charger disconnected",
                     "charging": "Charging",
                     "charging_complete": "Charging complete",
                     "charging_problem": "Charging problem",
                     "cleaning": "Cleaning",
+                    "detaching_the_mop": "Detaching the mop",
                     "device_offline": "Device offline",
                     "docking": "Docking",
                     "egg_attack": "Cupid mode",
@@ -228,8 +298,14 @@
                     "zoned_cleaning": "Zoned cleaning"
                 }
             },
+            "strainer_time_left": {
+                "name": "Strainer time left"
+            },
             "total_cleaning_area": {
                 "name": "Total cleaning area"
+            },
+            "total_cleaning_count": {
+                "name": "Total cleaning count"
             },
             "total_cleaning_time": {
                 "name": "Total cleaning time"
@@ -313,6 +389,7 @@
             "zeo_state": {
                 "name": "State",
                 "state": {
+                    "aftercare": "Aftercare",
                     "cooling": "Cooling",
                     "done": "Done",
                     "drying": "Drying",
@@ -321,6 +398,7 @@
                     "spinning": "Spinning",
                     "standby": "Standby",
                     "under_delay_start": "Delayed start",
+                    "waiting_for_aftercare": "Waiting for aftercare",
                     "washing": "Washing",
                     "weighing": "Weighing"
                 }
@@ -394,14 +472,29 @@
         "map_failure": {
             "message": "Something went wrong creating the map"
         },
+        "mqtt_unauthorized": {
+            "message": "Roborock MQTT servers rejected the connection due to rate limiting or invalid credentials. You may either attempt to reauthenticate or wait and reload the integration."
+        },
         "no_coordinators": {
             "message": "No devices were able to successfully setup"
         },
         "no_user_agreement": {
             "message": "You have not valid user agreement. Open your Roborock app and accept the agreement."
         },
+        "position_not_found": {
+            "message": "Robot position not found"
+        },
+        "update_data_fail": {
+            "message": "Failed to update data"
+        },
         "update_options_failed": {
             "message": "Failed to update Roborock options"
+        }
+    },
+    "issues": {
+        "cloud_api_used": {
+            "description": "The Roborock integration is unable to connect directly to {device_name} and falling back to the cloud API. This is not recommended as it can lead to rate limiting. Please make your vacuum accessible on the local network by your Home Assistant instance.",
+            "title": "Cloud API used"
         }
     },
     "options": {
@@ -422,9 +515,30 @@
                     "path": "Path",
                     "predicted_path": "Predicted path",
                     "room_names": "Room names",
+                    "show_background": "Show background",
                     "vacuum_position": "Vacuum position",
                     "virtual_walls": "Virtual walls",
                     "zones": "Zones"
+                },
+                "data_description": {
+                    "charger": "Show the charger on the map.",
+                    "cleaned_area": "Show the area cleaned on the map.",
+                    "goto_path": "Show the go-to path on the map.",
+                    "ignored_obstacles": "Show ignored obstacles on the map.",
+                    "ignored_obstacles_with_photo": "Show ignored obstacles with photos on the map.",
+                    "mop_path": "Show the mop path on the map.",
+                    "no_carpet_zones": "Show the no carpet zones on the map.",
+                    "no_go_zones": "Show the no-go zones on the map.",
+                    "no_mopping_zones": "Show the no-mop zones on the map.",
+                    "obstacles": "Show obstacles on the map.",
+                    "obstacles_with_photo": "Show obstacles with photos on the map.",
+                    "path": "Show the path on the map.",
+                    "predicted_path": "Show the predicted path on the map.",
+                    "room_names": "Show room names on the map.",
+                    "show_background": "Add a background to the map.",
+                    "vacuum_position": "Show the vacuum position on the map.",
+                    "virtual_walls": "Show virtual walls on the map.",
+                    "zones": "Show zones on the map."
                 },
                 "description": "Specify which features to draw on the map."
             }
@@ -432,8 +546,26 @@
     },
     "services": {
         "get_maps": {
-            "description": "Get the map and room information of your device.",
+            "description": "Retrieves the map and room information of your device.",
             "name": "Get maps"
+        },
+        "get_vacuum_current_position": {
+            "description": "Retrieves the current position of the vacuum.",
+            "name": "Get current position"
+        },
+        "set_vacuum_goto_position": {
+            "description": "Sends the vacuum to a specific position.",
+            "fields": {
+                "x": {
+                    "description": "Coordinates are relative to the dock. x=25500,y=25500 is the dock position.",
+                    "name": "X-coordinate"
+                },
+                "y": {
+                    "description": "Coordinates are relative to the dock. x=25500,y=25500 is the dock position.",
+                    "name": "Y-coordinate"
+                }
+            },
+            "name": "Go to position"
         }
     }
 }

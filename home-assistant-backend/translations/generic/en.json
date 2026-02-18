@@ -26,17 +26,24 @@
         "step": {
             "user": {
                 "data": {
-                    "authentication": "Authentication",
-                    "framerate": "Frame Rate (Hz)",
-                    "limit_refetch_to_url_change": "Limit refetch to url change",
                     "password": "Password",
-                    "rtsp_transport": "RTSP transport protocol",
-                    "still_image_url": "Still Image URL (e.g. http://...)",
-                    "stream_source": "Stream Source URL (e.g. rtsp://...)",
-                    "username": "Username",
-                    "verify_ssl": "Verify SSL certificate"
+                    "still_image_url": "Still image URL (e.g. http://...)",
+                    "stream_source": "Stream source URL (e.g. rtsp://...)",
+                    "username": "Username"
                 },
-                "description": "Enter the settings to connect to the camera."
+                "sections": {
+                    "advanced": {
+                        "data": {
+                            "authentication": "Authentication",
+                            "framerate": "Frame rate (Hz)",
+                            "limit_refetch_to_url_change": "Limit refetch to URL change",
+                            "rtsp_transport": "RTSP transport protocol",
+                            "verify_ssl": "Verify SSL certificate"
+                        },
+                        "description": "Advanced settings are only needed for special cases. Leave them unchanged unless you know what you are doing.",
+                        "name": "Advanced settings"
+                    }
+                }
             },
             "user_confirm": {
                 "data": {
@@ -70,19 +77,27 @@
         "step": {
             "init": {
                 "data": {
-                    "authentication": "Authentication",
-                    "framerate": "Frame Rate (Hz)",
-                    "limit_refetch_to_url_change": "Limit refetch to url change",
                     "password": "Password",
-                    "rtsp_transport": "RTSP transport protocol",
-                    "still_image_url": "Still Image URL (e.g. http://...)",
-                    "stream_source": "Stream Source URL (e.g. rtsp://...)",
-                    "use_wallclock_as_timestamps": "Use wallclock as timestamps",
-                    "username": "Username",
-                    "verify_ssl": "Verify SSL certificate"
+                    "still_image_url": "Still image URL (e.g. http://...)",
+                    "stream_source": "Stream source URL (e.g. rtsp://...)",
+                    "username": "Username"
                 },
-                "data_description": {
-                    "use_wallclock_as_timestamps": "This option may correct segmenting or crashing issues arising from buggy timestamp implementations on some cameras"
+                "sections": {
+                    "advanced": {
+                        "data": {
+                            "authentication": "Authentication",
+                            "framerate": "Frame rate (Hz)",
+                            "limit_refetch_to_url_change": "Limit refetch to URL change",
+                            "rtsp_transport": "RTSP transport protocol",
+                            "use_wallclock_as_timestamps": "Use wallclock as timestamps",
+                            "verify_ssl": "Verify SSL certificate"
+                        },
+                        "data_description": {
+                            "use_wallclock_as_timestamps": "This option may correct segmenting or crashing issues arising from buggy timestamp implementations on some cameras"
+                        },
+                        "description": "Advanced settings are only needed for special cases. Leave them unchanged unless you know what you are doing.",
+                        "name": "Advanced settings"
+                    }
                 }
             },
             "user_confirm": {

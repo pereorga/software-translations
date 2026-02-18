@@ -1,0 +1,32 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "missing_permission": "The provided user does not have the necessary permissions",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "ssl": "Uses an SSL certificate",
+                    "username": "Username",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the eGauge device",
+                    "password": "The password for the provided user.",
+                    "ssl": "Use SSL for a secure connection.",
+                    "username": "The username for the eGauge device. The user must have permission to read registers and settings.",
+                    "verify_ssl": "Verify SSL certificate. eGauge devices use a self-signed certificate by default, so leave this off unless a custom certificate has been installed on the device."
+                }
+            }
+        }
+    }
+}

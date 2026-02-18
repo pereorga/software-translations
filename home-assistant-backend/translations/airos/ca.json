@@ -1,0 +1,57 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya"
+                },
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "ssl": "Utilitza HTTPS",
+                            "verify_ssl": "Verifica el certificat SSL"
+                        }
+                    }
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "ssl": "Utilitza HTTPS",
+                            "verify_ssl": "Verifica el certificat SSL"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Ha fallat la connexi\u00f3"
+        },
+        "invalid_auth": {
+            "message": "Autenticaci\u00f3 inv\u00e0lida"
+        }
+    }
+}

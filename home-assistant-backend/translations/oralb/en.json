@@ -3,7 +3,7 @@
         "abort": {
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
-            "no_devices_found": "No devices found on the network",
+            "no_devices_found": "No devices found",
             "not_supported": "Device not supported"
         },
         "flow_title": "{name}",
@@ -22,19 +22,65 @@
     "entity": {
         "sensor": {
             "mode": {
-                "name": "Brushing mode"
+                "name": "Brushing mode",
+                "state": {
+                    "daily_clean": "Daily clean",
+                    "deep_clean": "Deep clean",
+                    "gum_care": "Gum care",
+                    "intense": "Intense",
+                    "massage": "Massage",
+                    "off": "Off",
+                    "sensitive": "Sensitive",
+                    "settings": "Settings",
+                    "super_sensitive": "Super sensitive",
+                    "tongue_cleaning": "Tongue clean",
+                    "turbo": "Turbo",
+                    "whiten": "Whiten",
+                    "whitening": "Whiten"
+                }
             },
             "number_of_sectors": {
                 "name": "Number of sectors"
             },
             "pressure": {
-                "name": "Pressure"
+                "name": "Pressure",
+                "state": {
+                    "button_pressed": "Button pressed",
+                    "high": "High",
+                    "low": "Low",
+                    "normal": "Normal",
+                    "power_button_pressed": "Power button pressed"
+                }
             },
             "sector": {
-                "name": "Sector"
+                "name": "Sector",
+                "state": {
+                    "no_sector": "No sector",
+                    "sector_1": "Sector 1",
+                    "sector_2": "Sector 2",
+                    "sector_3": "Sector 3",
+                    "sector_4": "Sector 4",
+                    "success": "Success"
+                }
             },
             "sector_timer": {
                 "name": "Sector timer"
+            },
+            "toothbrush_state": {
+                "state": {
+                    "charging": "Charging",
+                    "final_test": "Final test",
+                    "flight_menu": "Flight menu",
+                    "idle": "Idle",
+                    "initializing": "Initializing",
+                    "off": "Off",
+                    "pcb_test": "PCB test",
+                    "running": "Running",
+                    "selection_menu": "Selection menu",
+                    "setup": "Setup",
+                    "sleeping": "Sleeping",
+                    "transport": "Transport"
+                }
             }
         }
     }

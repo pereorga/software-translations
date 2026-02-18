@@ -1,12 +1,291 @@
 {
-    "issues": {
-        "proxy_params_auth_deprecation": {
-            "description": "Authentication details for the the proxy configured in the {telegram_bot} integration should be moved into the {proxy_url} instead. Please update your configuration and restart Home Assistant to fix this issue.\n\nThe {proxy_params} config key will be removed in a future release.",
-            "title": "{telegram_bot}: Proxy authentication should be moved to the URL"
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
         },
-        "proxy_params_deprecation": {
-            "description": "The {proxy_params} config key for the {telegram_bot} integration will be removed in a future release.\n\nAuthentication can now be provided through the {proxy_url} key.\n\nThe underlying library has changed to {httpx} which is incompatible with previous parameters. If you still need this functionality for other options, please leave a comment on the learn more link.\n\nPlease update your configuration to remove the {proxy_params} key and restart Home Assistant to fix this issue.",
-            "title": "{telegram_bot}: Proxy params option will be removed"
+        "error": {
+            "bot_logout_failed": "Failed to log out Telegram bot. Please try again later.",
+            "invalid_api_key": "Invalid API key",
+            "invalid_proxy_url": "{proxy_url_error}",
+            "invalid_trusted_networks": "Invalid trusted network: {error_message}",
+            "invalid_url": "URL must start with https",
+            "no_url_available": "URL is required since you have not configured an external URL in Home Assistant",
+            "telegram_error": "Error from Telegram: {error_message}"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API token of your bot."
+                },
+                "title": "Re-authenticate Telegram bot"
+            },
+            "reconfigure": {
+                "data": {
+                    "platform": "Platform"
+                },
+                "data_description": {
+                    "platform": "Telegram bot implementation"
+                },
+                "description": "Reconfigure Telegram bot",
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "api_endpoint": "API endpoint",
+                            "proxy_url": "Proxy URL"
+                        },
+                        "data_description": {
+                            "api_endpoint": "Telegram bot API server endpoint.\nThe bot will be **locked out for 10 minutes** if you switch back to the default.\nDefault: `{default_api_endpoint}`.",
+                            "proxy_url": "Proxy URL if working behind one, optionally including username and password.\n({socks_url})"
+                        },
+                        "name": "Advanced settings"
+                    }
+                },
+                "title": "Telegram bot setup"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API token",
+                    "platform": "Platform"
+                },
+                "data_description": {
+                    "api_key": "The API token of your bot.",
+                    "platform": "Telegram bot implementation"
+                },
+                "description": "To create a Telegram bot, follow these steps:\n\n1. Open Telegram and start a chat with [{botfather_username}]({botfather_url}).\n1. Send the command `/newbot`.\n1. Follow the instructions to create your bot and get your API token.",
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "api_endpoint": "API endpoint",
+                            "proxy_url": "Proxy URL"
+                        },
+                        "data_description": {
+                            "api_endpoint": "Telegram bot API server endpoint.\nThe bot will be **locked out for 10 minutes** if you switch back to the default.\nDefault: `{default_api_endpoint}`.",
+                            "proxy_url": "Proxy URL if working behind one, optionally including username and password.\n({socks_url})"
+                        },
+                        "name": "Advanced settings"
+                    }
+                }
+            },
+            "webhooks": {
+                "data": {
+                    "trusted_networks": "Trusted networks",
+                    "url": "URL"
+                },
+                "data_description": {
+                    "trusted_networks": "Telegram server access ACL as list.\nDefault: 149.154.160.0/20, 91.108.4.0/22",
+                    "url": "Allow to overwrite the external URL from the Home Assistant configuration for different setups."
+                },
+                "title": "Webhooks network configuration"
+            }
+        }
+    },
+    "config_subentries": {
+        "allowed_chat_ids": {
+            "abort": {
+                "already_configured": "Chat already configured"
+            },
+            "entry_type": "Allowed chat ID",
+            "error": {
+                "chat_not_found": "Chat not found"
+            },
+            "initiate_flow": {
+                "user": "Add allowed chat ID"
+            },
+            "step": {
+                "user": {
+                    "data": {
+                        "chat_id": "Chat ID"
+                    },
+                    "data_description": {
+                        "chat_id": "ID representing the user or group chat to which messages can be sent."
+                    },
+                    "description": "To get your chat ID, follow these steps:\n\n1. Open Telegram and start a chat with [{getidsbot_username}]({getidsbot_url}).\n1. Send any message to the bot.\n1. Your chat ID is in the `id` field of the bot's response.",
+                    "title": "Add chat"
+                }
+            }
+        }
+    },
+    "entity": {
+        "event": {
+            "update_event": {
+                "name": "Update event",
+                "state_attributes": {
+                    "args": {
+                        "name": "Received command arguments"
+                    },
+                    "chat_id": {
+                        "name": "Chat ID"
+                    },
+                    "command": {
+                        "name": "Received command"
+                    },
+                    "data": {
+                        "name": "Received callback query"
+                    },
+                    "date": {
+                        "name": "Received datetime"
+                    },
+                    "event_type": {
+                        "state": {
+                            "telegram_attachment": "Attachment received",
+                            "telegram_callback": "Callback query received",
+                            "telegram_command": "Command received",
+                            "telegram_sent": "Message sent",
+                            "telegram_text": "Text message received"
+                        }
+                    },
+                    "file_id": {
+                        "name": "Received file ID"
+                    },
+                    "file_mime_type": {
+                        "name": "Received file MIME type"
+                    },
+                    "file_name": {
+                        "name": "Received file name"
+                    },
+                    "file_size": {
+                        "name": "Received file size (bytes)"
+                    },
+                    "from_first": {
+                        "name": "Received From first name"
+                    },
+                    "from_last": {
+                        "name": "Received from last name"
+                    },
+                    "id": {
+                        "name": "ID"
+                    },
+                    "message_id": {
+                        "name": "Sent message ID"
+                    },
+                    "message_tag": {
+                        "name": "Sent message tag"
+                    },
+                    "message_thread_id": {
+                        "name": "Received message thread ID"
+                    },
+                    "text": {
+                        "name": "Received text/caption"
+                    },
+                    "user_id": {
+                        "name": "Received from user ID"
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "action_failed": {
+            "message": "Action failed. {error}"
+        },
+        "allowlist_external_dirs_error": {
+            "message": "File path has not been configured in allowlist_external_dirs."
+        },
+        "failed_chat_ids": {
+            "message": "Failed targets: {chat_ids}. Please verify that the chat IDs for {bot_name} have been configured."
+        },
+        "failed_to_load_file": {
+            "message": "Failed to load file: {error}"
+        },
+        "failed_to_load_url": {
+            "message": "Failed to load URL: {error}"
+        },
+        "invalid_chat_ids": {
+            "message": "Invalid chat IDs: {chat_ids}. Please configure the chat IDs for {bot_name}."
+        },
+        "invalid_inline_keyboard": {
+            "message": "Invalid value for inline keyboard. Only strings or lists are accepted."
+        },
+        "missing_allowed_chat_ids": {
+            "message": "No allowed chat IDs found. Please add allowed chat IDs for {bot_name}."
+        },
+        "missing_config_entry": {
+            "message": "No config entries found or setup failed. Please set up the Telegram Bot first."
+        },
+        "missing_input": {
+            "message": "{field} is required."
+        },
+        "multiple_config_entry": {
+            "message": "Multiple config entries found. Please specify the Telegram bot to use in the Config entry ID field."
+        }
+    },
+    "issues": {
+        "deprecated_timeout_parameter": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Update all affected automations and scripts to remove the `timeout` parameter and then click SUBMIT to fix this issue.\n\nThe deprecated parameter was last seen in the `{action}` action originating from `{action_origin}`.",
+                        "title": "The `timeout` parameter for {integration_title} is being removed"
+                    }
+                }
+            },
+            "title": "The `timeout` parameter for {integration_title} is being removed"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "parse_mode": "Parse mode"
+                },
+                "data_description": {
+                    "parse_mode": "Default parse mode for messages if not explicit in message data."
+                },
+                "title": "Configure Telegram bot"
+            }
+        }
+    },
+    "selector": {
+        "authentication": {
+            "options": {
+                "basic": "Basic",
+                "bearer_token": "Bearer token",
+                "digest": "Digest"
+            }
+        },
+        "chat_action": {
+            "options": {
+                "choose_sticker": "Choosing sticker",
+                "find_location": "Finding location",
+                "record_video": "Recording video",
+                "record_video_note": "Recording video note",
+                "record_voice": "Recording voice",
+                "typing": "Typing",
+                "upload_document": "Uploading document",
+                "upload_photo": "Uploading photo",
+                "upload_video": "Uploading video",
+                "upload_video_note": "Uploading video note",
+                "upload_voice": "Uploading voice"
+            }
+        },
+        "media_type": {
+            "options": {
+                "animation": "Animation",
+                "audio": "Audio",
+                "document": "Document",
+                "photo": "Photo",
+                "video": "Video"
+            }
+        },
+        "parse_mode": {
+            "options": {
+                "html": "HTML",
+                "markdown": "Markdown (Legacy)",
+                "markdownv2": "MarkdownV2",
+                "plain_text": "Plain text"
+            }
+        },
+        "platforms": {
+            "options": {
+                "broadcast": "Broadcast",
+                "polling": "Polling",
+                "webhooks": "Webhooks"
+            }
         }
     },
     "services": {
@@ -17,6 +296,10 @@
                     "description": "Unique ID of the callback response.",
                     "name": "Callback query ID"
                 },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to answer the callback query.",
+                    "name": "Config entry ID"
+                },
                 "message": {
                     "description": "Unformatted text message body of the notification.",
                     "name": "Message"
@@ -24,10 +307,6 @@
                 "show_alert": {
                     "description": "Show a permanent notification.",
                     "name": "Show alert"
-                },
-                "timeout": {
-                    "description": "Timeout for sending the answer in seconds.",
-                    "name": "Read timeout"
                 }
             },
             "name": "Answer callback query"
@@ -39,12 +318,39 @@
                     "description": "ID of the chat where to delete the message.",
                     "name": "Chat ID"
                 },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to delete the message.",
+                    "name": "Config entry ID"
+                },
                 "message_id": {
                     "description": "ID of the message to delete.",
                     "name": "Message ID"
                 }
             },
             "name": "Delete message"
+        },
+        "download_file": {
+            "description": "Download the file to a local path.",
+            "fields": {
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to get the file.",
+                    "name": "Config entry ID"
+                },
+                "directory_path": {
+                    "description": "Local directory path to save the file to. Defaults to the 'telegram_bot' directory within your Home Assistant configuration directory.",
+                    "example": "/config/telegram_bot",
+                    "name": "Directory path"
+                },
+                "file_id": {
+                    "description": "ID of the file to get.",
+                    "name": "File ID"
+                },
+                "file_name": {
+                    "description": "Name to save the file as. If not provided, the original file name will be used.",
+                    "name": "File name"
+                }
+            },
+            "name": "Download file"
         },
         "edit_caption": {
             "description": "Edits the caption of a previously sent message.",
@@ -56,6 +362,10 @@
                 "chat_id": {
                     "description": "ID of the chat where to edit the caption.",
                     "name": "Chat ID"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to edit the caption.",
+                    "name": "Config entry ID"
                 },
                 "inline_keyboard": {
                     "description": "List of rows of commands, comma-separated, to make a custom inline keyboard with buttons with associated callback data.",
@@ -75,6 +385,10 @@
                     "description": "ID of the chat where to edit the message.",
                     "name": "Chat ID"
                 },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to edit the message.",
+                    "name": "Config entry ID"
+                },
                 "disable_web_page_preview": {
                     "description": "Disables link previews for links in the message.",
                     "name": "Disable web page preview"
@@ -92,7 +406,7 @@
                     "name": "Message ID"
                 },
                 "parse_mode": {
-                    "description": "Parser for the message text.",
+                    "description": "Parser for the message text.\nSee [formatting options]({formatting_options_url}) for more details.",
                     "name": "Parse mode"
                 },
                 "title": {
@@ -102,12 +416,75 @@
             },
             "name": "Edit message"
         },
+        "edit_message_media": {
+            "description": "Edits the media content of a previously sent message.",
+            "fields": {
+                "authentication": {
+                    "description": "Define which authentication method to use. Set to 'Basic' for HTTP basic authentication, 'Digest' for HTTP digest authentication, or 'Bearer token' for OAuth 2.0 bearer token authentication.",
+                    "name": "Authentication method"
+                },
+                "caption": {
+                    "description": "The title of the media.\nCan't parse entities? Format your message according to the [formatting options]({formatting_options_url}).",
+                    "name": "Caption"
+                },
+                "chat_id": {
+                    "description": "ID of the chat where to edit the message.",
+                    "name": "Chat ID"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to edit the message media.",
+                    "name": "Config entry ID"
+                },
+                "file": {
+                    "description": "Local path to the media.",
+                    "name": "File"
+                },
+                "inline_keyboard": {
+                    "description": "List of rows of commands, comma-separated, to make a custom inline keyboard with buttons with associated callback data.",
+                    "name": "Inline keyboard"
+                },
+                "media_type": {
+                    "description": "Type for the new media.",
+                    "name": "Media type"
+                },
+                "message_id": {
+                    "description": "ID of the message to edit.",
+                    "name": "Message ID"
+                },
+                "password": {
+                    "description": "Password (or bearer token) for a URL that requires authentication.",
+                    "name": "Password"
+                },
+                "url": {
+                    "description": "Remote path to the media.",
+                    "name": "URL"
+                },
+                "username": {
+                    "description": "Username for a URL that requires 'Basic' or 'Digest' authentication.",
+                    "name": "Username"
+                },
+                "verify_ssl": {
+                    "description": "Enable or disable SSL certificate verification. Disable if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
+                    "name": "Verify SSL"
+                }
+            },
+            "name": "Edit message media",
+            "sections": {
+                "url_options": {
+                    "name": "URL options"
+                }
+            }
+        },
         "edit_replymarkup": {
             "description": "Edits the inline keyboard of a previously sent message.",
             "fields": {
                 "chat_id": {
                     "description": "ID of the chat where to edit the reply markup.",
                     "name": "Chat ID"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to edit the reply markup.",
+                    "name": "Config entry ID"
                 },
                 "inline_keyboard": {
                     "description": "List of rows of commands, comma-separated, to make a custom inline keyboard with buttons with associated callback data.",
@@ -120,16 +497,34 @@
             },
             "name": "Edit reply markup"
         },
+        "leave_chat": {
+            "description": "Removes the bot from the chat.",
+            "fields": {
+                "chat_id": {
+                    "description": "Chat ID of the group from which the bot should be removed.",
+                    "name": "Chat ID"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to leave the chat.",
+                    "name": "Config entry ID"
+                }
+            },
+            "name": "Leave chat"
+        },
         "send_animation": {
             "description": "Sends an animation.",
             "fields": {
                 "authentication": {
-                    "description": "Define which authentication method to use. Set to `digest` to use HTTP digest authentication, or `bearer_token` for OAuth 2.0 bearer token authentication. Defaults to `basic`.",
+                    "description": "Define which authentication method to use. Set to 'Basic' for HTTP basic authentication, 'Digest' for HTTP digest authentication, or 'Bearer token' for OAuth 2.0 bearer token authentication.",
                     "name": "Authentication method"
                 },
                 "caption": {
-                    "description": "The title of the animation.",
+                    "description": "The title of the media.\nCan't parse entities? Format your message according to the [formatting options]({formatting_options_url}).",
                     "name": "Caption"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the animation.",
+                    "name": "Config entry ID"
                 },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
@@ -156,11 +551,11 @@
                     "name": "Message thread ID"
                 },
                 "parse_mode": {
-                    "description": "Parser for the message text.",
+                    "description": "Parser for the message text.\nSee [formatting options]({formatting_options_url}) for more details.",
                     "name": "Parse Mode"
                 },
                 "password": {
-                    "description": "Password (or bearer token) for a URL which require HTTP authentication.",
+                    "description": "Password (or bearer token) for a URL that requires authentication.",
                     "name": "Password"
                 },
                 "reply_to_message_id": {
@@ -171,35 +566,62 @@
                     "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
-                "timeout": {
-                    "description": "Timeout for sending the sticker in seconds.",
-                    "name": "Read timeout"
-                },
                 "url": {
                     "description": "Remote path to a GIF or H.264/MPEG-4 AVC video without sound.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Username for a URL which require HTTP authentication.",
+                    "description": "Username for a URL that requires 'Basic' or 'Digest' authentication.",
                     "name": "Username"
                 },
                 "verify_ssl": {
-                    "description": "Enable or disable SSL certificate verification. Set to false if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
+                    "description": "Enable or disable SSL certificate verification. Disable if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
                     "name": "Verify SSL"
                 }
             },
-            "name": "Send animation"
+            "name": "Send animation",
+            "sections": {
+                "url_options": {
+                    "name": "URL options"
+                }
+            }
+        },
+        "send_chat_action": {
+            "description": "Sends a chat action.",
+            "fields": {
+                "chat_action": {
+                    "description": "Chat action to be sent.",
+                    "name": "Chat action"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the chat action.",
+                    "name": "Config entry ID"
+                },
+                "message_thread_id": {
+                    "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
+                    "name": "Message thread ID"
+                },
+                "target": {
+                    "description": "An array of pre-authorized chat IDs to send the chat action to. If not present, first allowed chat ID is the default.",
+                    "name": "Target"
+                }
+            },
+            "name": "Send chat action"
         },
         "send_document": {
             "description": "Sends a document.",
             "fields": {
                 "authentication": {
-                    "description": "Define which authentication method to use. Set to `digest` to use HTTP digest authentication, or `bearer_token` for OAuth 2.0 bearer token authentication. Defaults to `basic`.",
+                    "description": "Define which authentication method to use. Set to 'Basic' for HTTP basic authentication, 'Digest' for HTTP digest authentication, or 'Bearer token' for OAuth 2.0 bearer token authentication.",
                     "name": "Authentication method"
                 },
                 "caption": {
-                    "description": "The title of the document.",
+                    "description": "The title of the media.\nCan't parse entities? Format your message according to the [formatting options]({formatting_options_url}).",
                     "name": "Caption"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the document.",
+                    "name": "Config entry ID"
                 },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
@@ -226,11 +648,11 @@
                     "name": "Message thread ID"
                 },
                 "parse_mode": {
-                    "description": "Parser for the message text.",
+                    "description": "Parser for the message text.\nSee [formatting options]({formatting_options_url}) for more details.",
                     "name": "Parse mode"
                 },
                 "password": {
-                    "description": "Password (or bearer token) for a URL which require HTTP authentication.",
+                    "description": "Password (or bearer token) for a URL that requires authentication.",
                     "name": "Password"
                 },
                 "reply_to_message_id": {
@@ -241,28 +663,33 @@
                     "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
-                "timeout": {
-                    "description": "Timeout for sending the document in seconds.",
-                    "name": "Read timeout"
-                },
                 "url": {
                     "description": "Remote path to a document.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Username for a URL which require HTTP authentication.",
+                    "description": "Username for a URL that requires 'Basic' or 'Digest' authentication.",
                     "name": "Username"
                 },
                 "verify_ssl": {
-                    "description": "Enable or disable SSL certificate verification. Set to false if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
+                    "description": "Enable or disable SSL certificate verification. Disable if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
                     "name": "Verify SSL"
                 }
             },
-            "name": "Send document"
+            "name": "Send document",
+            "sections": {
+                "url_options": {
+                    "name": "URL options"
+                }
+            }
         },
         "send_location": {
             "description": "Sends a location.",
             "fields": {
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the location.",
+                    "name": "Config entry ID"
+                },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
                     "name": "Disable notification"
@@ -298,10 +725,6 @@
                 "target": {
                     "description": "An array of pre-authorized chat IDs to send the location to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
-                },
-                "timeout": {
-                    "description": "Timeout for sending the photo in seconds.",
-                    "name": "Read timeout"
                 }
             },
             "name": "Send location"
@@ -309,6 +732,10 @@
         "send_message": {
             "description": "Sends a notification.",
             "fields": {
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the message.",
+                    "name": "Config entry ID"
+                },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
                     "name": "Disable notification"
@@ -326,7 +753,7 @@
                     "name": "Keyboard"
                 },
                 "message": {
-                    "description": "Message body of the notification.",
+                    "description": "Message body of the notification.\nCan't parse entities? Format your message according to the [formatting options]({formatting_options_url}).",
                     "name": "Message"
                 },
                 "message_tag": {
@@ -338,7 +765,7 @@
                     "name": "Message thread ID"
                 },
                 "parse_mode": {
-                    "description": "Parser for the message text.",
+                    "description": "Parser for the message text.\nSee [formatting options]({formatting_options_url}) for more details.",
                     "name": "Parse mode"
                 },
                 "reply_to_message_id": {
@@ -348,10 +775,6 @@
                 "target": {
                     "description": "An array of pre-authorized chat IDs to send the notification to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
-                },
-                "timeout": {
-                    "description": "Timeout for sending the message in seconds. Will help with timeout errors (poor Internet connection, etc).",
-                    "name": "Read timeout"
                 },
                 "title": {
                     "description": "Optional title for your notification. Will be composed as '%title\n%message'.",
@@ -364,12 +787,16 @@
             "description": "Sends a photo.",
             "fields": {
                 "authentication": {
-                    "description": "Define which authentication method to use. Set to `digest` to use HTTP digest authentication, or `bearer_token` for OAuth 2.0 bearer token authentication. Defaults to `basic`.",
+                    "description": "Define which authentication method to use. Set to 'Basic' for HTTP basic authentication, 'Digest' for HTTP digest authentication, or 'Bearer token' for OAuth 2.0 bearer token authentication.",
                     "name": "Authentication method"
                 },
                 "caption": {
-                    "description": "The title of the image.",
+                    "description": "The title of the media.\nCan't parse entities? Format your message according to the [formatting options]({formatting_options_url}).",
                     "name": "Caption"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the photo.",
+                    "name": "Config entry ID"
                 },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
@@ -396,11 +823,11 @@
                     "name": "Message thread ID"
                 },
                 "parse_mode": {
-                    "description": "Parser for the message text.",
+                    "description": "Parser for the message text.\nSee [formatting options]({formatting_options_url}) for more details.",
                     "name": "Parse mode"
                 },
                 "password": {
-                    "description": "Password (or bearer token) for a URL which require HTTP authentication.",
+                    "description": "Password (or bearer token) for a URL that requires authentication.",
                     "name": "Password"
                 },
                 "reply_to_message_id": {
@@ -411,43 +838,44 @@
                     "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
-                "timeout": {
-                    "description": "Timeout for sending the photo in seconds.",
-                    "name": "Read timeout"
-                },
                 "url": {
                     "description": "Remote path to an image.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Username for a URL which require HTTP authentication.",
+                    "description": "Username for a URL that requires 'Basic' or 'Digest' authentication.",
                     "name": "Username"
                 },
                 "verify_ssl": {
-                    "description": "Enable or disable SSL certificate verification. Set to false if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
+                    "description": "Enable or disable SSL certificate verification. Disable if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
                     "name": "Verify SSL"
                 }
             },
-            "name": "Send photo"
+            "name": "Send photo",
+            "sections": {
+                "url_options": {
+                    "name": "URL options"
+                }
+            }
         },
         "send_poll": {
             "description": "Sends a poll.",
             "fields": {
                 "allows_multiple_answers": {
-                    "description": "If the poll allows multiple answers, defaults to False.",
+                    "description": "If the poll allows multiple answers.",
                     "name": "Allow multiple answers"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the poll.",
+                    "name": "Config entry ID"
                 },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
                     "name": "Disable notification"
                 },
                 "is_anonymous": {
-                    "description": "If the poll needs to be anonymous, defaults to True.",
+                    "description": "If the poll needs to be anonymous. This is the default.",
                     "name": "Is anonymous"
-                },
-                "message_tag": {
-                    "description": "Tag for sent message.",
-                    "name": "Message tag"
                 },
                 "message_thread_id": {
                     "description": "Unique identifier for the target message thread (topic) of the forum; for forum supergroups only.",
@@ -472,10 +900,6 @@
                 "target": {
                     "description": "An array of pre-authorized chat IDs to send the location to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
-                },
-                "timeout": {
-                    "description": "Timeout for sending the poll in seconds.",
-                    "name": "Read timeout"
                 }
             },
             "name": "Send poll"
@@ -484,8 +908,12 @@
             "description": "Sends a sticker.",
             "fields": {
                 "authentication": {
-                    "description": "Define which authentication method to use. Set to `digest` to use HTTP digest authentication, or `bearer_token` for OAuth 2.0 bearer token authentication. Defaults to `basic`.",
+                    "description": "Define which authentication method to use. Set to 'Basic' for HTTP basic authentication, 'Digest' for HTTP digest authentication, or 'Bearer token' for OAuth 2.0 bearer token authentication.",
                     "name": "Authentication method"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the sticker.",
+                    "name": "Config entry ID"
                 },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
@@ -512,7 +940,7 @@
                     "name": "Message thread ID"
                 },
                 "password": {
-                    "description": "Password (or bearer token) for a URL which require HTTP authentication.",
+                    "description": "Password (or bearer token) for a URL that requires authentication.",
                     "name": "Password"
                 },
                 "reply_to_message_id": {
@@ -527,35 +955,40 @@
                     "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
-                "timeout": {
-                    "description": "Timeout for sending the sticker in seconds.",
-                    "name": "Read timeout"
-                },
                 "url": {
                     "description": "Remote path to a static .webp or animated .tgs sticker.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Username for a URL which require HTTP authentication.",
+                    "description": "Username for a URL that requires 'Basic' or 'Digest' authentication.",
                     "name": "Username"
                 },
                 "verify_ssl": {
-                    "description": "Enable or disable SSL certificate verification. Set to false if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
+                    "description": "Enable or disable SSL certificate verification. Disable if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
                     "name": "Verify SSL"
                 }
             },
-            "name": "Send sticker"
+            "name": "Send sticker",
+            "sections": {
+                "url_options": {
+                    "name": "URL options"
+                }
+            }
         },
         "send_video": {
             "description": "Sends a video.",
             "fields": {
                 "authentication": {
-                    "description": "Define which authentication method to use. Set to `digest` to use HTTP digest authentication, or `bearer_token` for OAuth 2.0 bearer token authentication. Defaults to `basic`.",
+                    "description": "Define which authentication method to use. Set to 'Basic' for HTTP basic authentication, 'Digest' for HTTP digest authentication, or 'Bearer token' for OAuth 2.0 bearer token authentication.",
                     "name": "Authentication method"
                 },
                 "caption": {
-                    "description": "The title of the video.",
+                    "description": "The title of the media.\nCan't parse entities? Format your message according to the [formatting options]({formatting_options_url}).",
                     "name": "Caption"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the video.",
+                    "name": "Config entry ID"
                 },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
@@ -582,11 +1015,11 @@
                     "name": "Message thread ID"
                 },
                 "parse_mode": {
-                    "description": "Parser for the message text.",
+                    "description": "Parser for the message text.\nSee [formatting options]({formatting_options_url}) for more details.",
                     "name": "Parse mode"
                 },
                 "password": {
-                    "description": "Password (or bearer token) for a URL which require HTTP authentication.",
+                    "description": "Password (or bearer token) for a URL that requires authentication.",
                     "name": "Password"
                 },
                 "reply_to_message_id": {
@@ -597,35 +1030,40 @@
                     "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
-                "timeout": {
-                    "description": "Timeout for sending the video in seconds.",
-                    "name": "Read timeout"
-                },
                 "url": {
                     "description": "Remote path to a video.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Username for a URL which require HTTP authentication.",
+                    "description": "Username for a URL that requires 'Basic' or 'Digest' authentication.",
                     "name": "Username"
                 },
                 "verify_ssl": {
-                    "description": "Enable or disable SSL certificate verification. Set to false if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
+                    "description": "Enable or disable SSL certificate verification. Disable if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
                     "name": "Verify SSL"
                 }
             },
-            "name": "Send video"
+            "name": "Send video",
+            "sections": {
+                "url_options": {
+                    "name": "URL options"
+                }
+            }
         },
         "send_voice": {
             "description": "Sends a voice message.",
             "fields": {
                 "authentication": {
-                    "description": "Define which authentication method to use. Set to `digest` to use HTTP digest authentication, or `bearer_token` for OAuth 2.0 bearer token authentication. Defaults to `basic`.",
+                    "description": "Define which authentication method to use. Set to 'Basic' for HTTP basic authentication, 'Digest' for HTTP digest authentication, or 'Bearer token' for OAuth 2.0 bearer token authentication.",
                     "name": "Authentication method"
                 },
                 "caption": {
-                    "description": "The title of the voice message.",
+                    "description": "The title of the media.\nCan't parse entities? Format your message according to the [formatting options]({formatting_options_url}).",
                     "name": "Caption"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to send the voice message.",
+                    "name": "Config entry ID"
                 },
                 "disable_notification": {
                     "description": "Sends the message silently. iOS users and Web users will not receive a notification, Android users will receive a notification with no sound.",
@@ -652,7 +1090,7 @@
                     "name": "Message thread ID"
                 },
                 "password": {
-                    "description": "Password (or bearer token) for a URL which require HTTP authentication.",
+                    "description": "Password (or bearer token) for a URL that requires authentication.",
                     "name": "Password"
                 },
                 "reply_to_message_id": {
@@ -663,24 +1101,51 @@
                     "description": "An array of pre-authorized chat IDs to send the document to. If not present, first allowed chat ID is the default.",
                     "name": "Target"
                 },
-                "timeout": {
-                    "description": "Timeout for sending the voice in seconds.",
-                    "name": "Read timeout"
-                },
                 "url": {
                     "description": "Remote path to a voice message.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Username for a URL which require HTTP authentication.",
+                    "description": "Username for a URL that requires 'Basic' or 'Digest' authentication.",
                     "name": "Username"
                 },
                 "verify_ssl": {
-                    "description": "Enable or disable SSL certificate verification. Set to false if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
+                    "description": "Enable or disable SSL certificate verification. Disable if you're downloading the file from a URL and you don't want to validate the SSL certificate of the server.",
                     "name": "Verify SSL"
                 }
             },
-            "name": "Send voice"
+            "name": "Send voice",
+            "sections": {
+                "url_options": {
+                    "name": "URL options"
+                }
+            }
+        },
+        "set_message_reaction": {
+            "description": "Sets the bot's reaction for a given message.",
+            "fields": {
+                "chat_id": {
+                    "description": "ID of the chat containing the message.",
+                    "name": "Chat ID"
+                },
+                "config_entry_id": {
+                    "description": "The config entry representing the Telegram bot to set the message reaction.",
+                    "name": "Config entry ID"
+                },
+                "is_big": {
+                    "description": "Whether the reaction animation should be large.",
+                    "name": "Large animation"
+                },
+                "message_id": {
+                    "description": "ID of the message to react to.",
+                    "name": "Message ID"
+                },
+                "reaction": {
+                    "description": "Emoji reaction to use.",
+                    "name": "Reaction"
+                }
+            },
+            "name": "Set message reaction"
         }
     }
 }

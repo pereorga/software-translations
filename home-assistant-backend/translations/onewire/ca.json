@@ -1,12 +1,19 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -63,19 +70,13 @@
         },
         "step": {
             "configure_device": {
-                "data": {
-                    "precision": "Precisi\u00f3 del sensor"
-                },
-                "description": "Selecciona la precisi\u00f3 del sensor {sensor_id}",
-                "title": "Precisi\u00f3 del sensor OneWire"
+                "description": "Selecciona la precisi\u00f3 del sensor {sensor_id}"
             },
             "device_selection": {
                 "data": {
-                    "clear_device_options": "Esborra totes les configuracions de dispositiu",
-                    "device_selection": "Selecciona els dispositius a configurar"
+                    "device_selection": "Personalitza dispositius espec\u00edfics"
                 },
-                "description": "Seleccioneu els passos de configuraci\u00f3 a processar",
-                "title": "Opcions de dispositiu OneWire"
+                "description": "Seleccioneu els passos de configuraci\u00f3 a processar"
             }
         }
     }

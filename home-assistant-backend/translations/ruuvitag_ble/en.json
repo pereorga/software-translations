@@ -18,5 +18,33 @@
                 "description": "Choose a device to set up"
             }
         }
+    },
+    "entity": {
+        "sensor": {
+            "acceleration_total": {
+                "name": "Acceleration total"
+            },
+            "acceleration_x": {
+                "name": "Acceleration X"
+            },
+            "acceleration_y": {
+                "name": "Acceleration Y"
+            },
+            "acceleration_z": {
+                "name": "Acceleration Z"
+            },
+            "iaqs": {
+                "name": "Indoor air quality score"
+            },
+            "movement_counter": {
+                "name": "Movement counter"
+            },
+            "nox_index": {
+                "name": "NOx index"
+            },
+            "voc_index": {
+                "name": "VOC index"
+            }
+        }
     }
 }

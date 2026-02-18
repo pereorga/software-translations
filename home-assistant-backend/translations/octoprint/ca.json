@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "auth_failed": "No s'ha pogut obtenir la clau API de l'aplicaci\u00f3",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
@@ -11,7 +10,6 @@
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "unknown": "Error inesperat"
         },
-        "flow_title": "Impressora OctoPrint: {host}",
         "step": {
             "reauth_confirm": {
                 "data": {
@@ -21,11 +19,20 @@
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
-                    "path": "Ruta d'aplicaci\u00f3",
                     "port": "Port",
                     "ssl": "Utilitza un certificat SSL",
                     "username": "Nom d'usuari",
                     "verify_ssl": "Verifica el certificat SSL"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "status": {
+                "state": {
+                    "error": "Error",
+                    "paused": "Pausat/ada"
                 }
             }
         }

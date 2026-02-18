@@ -55,41 +55,5 @@
                 "name": "Total setmanal"
             }
         }
-    },
-    "services": {
-        "pause": {
-            "description": "Atura les baixades.",
-            "fields": {
-                "api_key": {
-                    "description": "Clau API de SABnzbd per aturar les baixades.",
-                    "name": "Clau API de SABnzbd"
-                }
-            },
-            "name": "Pausa"
-        },
-        "resume": {
-            "description": "Repr\u00e8n les baixades.",
-            "fields": {
-                "api_key": {
-                    "description": "Clau API de SABnzbd per reprendre les baixades.",
-                    "name": "Clau API de SABnzbd"
-                }
-            },
-            "name": "Repr\u00e8n"
-        },
-        "set_speed": {
-            "description": "Configura el l\u00edmit de velocitat de baixada.",
-            "fields": {
-                "api_key": {
-                    "description": "Clau API de SABnzbd per configurar el l\u00edmit de velocitat.",
-                    "name": "Clau API de SABnzbd"
-                },
-                "speed": {
-                    "description": "L\u00edmit de velocitat. Si configura un nombre sense unitats, s'interpretar\u00e0 com un percentatge. Si es proporcionen unitats (per exemple, 500K) s'interpretaran de manera absoluta.",
-                    "name": "Velocitat"
-                }
-            },
-            "name": "Configura la velocitat"
-        }
     }
 }

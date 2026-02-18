@@ -66,7 +66,7 @@
         },
         "mode": {
             "options": {
-                "color_flow": "Color Flow",
+                "color_flow": "Color flow",
                 "hsv": "HSV",
                 "last": "Last",
                 "moonlight": "Moonlight",
@@ -102,7 +102,7 @@
                     "name": "Count"
                 },
                 "transitions": {
-                    "description": "Array of transitions, for desired effect. Examples https://yeelight.readthedocs.io/en/stable/flow.html.",
+                    "description": "Array of transitions, for desired effect. Examples {examples_url}.",
                     "name": "Transitions"
                 }
             },
@@ -116,7 +116,7 @@
                     "name": "Brightness"
                 },
                 "rgb_color": {
-                    "description": "Color for the light in RGB-format.",
+                    "description": "Color for the light in RGB format.",
                     "name": "RGB color"
                 }
             },
@@ -161,17 +161,17 @@
             "name": "Set mode"
         },
         "set_music_mode": {
-            "description": "Enables or disables music_mode.",
+            "description": "Enables or disables music mode.",
             "fields": {
                 "music_mode": {
-                    "description": "Use true or false to enable / disable music_mode.",
+                    "description": "Whether to enable or disable music mode.",
                     "name": "Music mode"
                 }
             },
             "name": "Set music mode"
         },
         "start_flow": {
-            "description": "Starts a custom flow, using transitions from https://yeelight.readthedocs.io/en/stable/yeelight.html#flow-objects.",
+            "description": "Starts a custom flow, using transitions from {flow_objects_urls}.",
             "fields": {
                 "action": {
                     "description": "The action to take after the flow stops.",
@@ -182,7 +182,7 @@
                     "name": "Count"
                 },
                 "transitions": {
-                    "description": "Array of transitions, for desired effect. Examples https://yeelight.readthedocs.io/en/stable/flow.html.",
+                    "description": "Array of transitions, for desired effect. Examples {examples_url}.",
                     "name": "Transitions"
                 }
             },

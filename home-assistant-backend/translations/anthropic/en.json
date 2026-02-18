@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Service is already configured"
+        },
         "error": {
             "authentication_error": "Invalid authentication",
             "cannot_connect": "Failed to connect",
@@ -14,21 +17,113 @@
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "chat_model": "Model",
-                    "llm_hass_api": "Control Home Assistant",
-                    "max_tokens": "Maximum tokens to return in response",
-                    "prompt": "Instructions",
-                    "recommended": "Recommended model settings",
-                    "temperature": "Temperature"
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
+                "reconfigure_successful": "Re-configuration was successful"
+            },
+            "entry_type": "AI task",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure AI task",
+                "user": "Add AI task"
+            },
+            "step": {
+                "advanced": {
+                    "data": {
+                        "chat_model": "Model",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "temperature": "Temperature"
+                    },
+                    "title": "Advanced settings"
                 },
-                "data_description": {
-                    "prompt": "Instruct how the LLM should respond. This can be a template."
+                "init": {
+                    "data": {
+                        "name": "Name",
+                        "recommended": "Recommended model settings"
+                    },
+                    "title": "Basic settings"
+                },
+                "model": {
+                    "data": {
+                        "thinking_budget": "Thinking budget",
+                        "user_location": "Include home location",
+                        "web_search": "Enable web search",
+                        "web_search_max_uses": "Maximum web searches"
+                    },
+                    "data_description": {
+                        "thinking_budget": "The number of tokens the model can use to think about the response out of the total maximum number of tokens. Set to 1024 or greater to enable extended thinking.",
+                        "user_location": "Localize search results based on home location",
+                        "web_search": "The web search tool gives Claude direct access to real-time web content, allowing it to answer questions with up-to-date information beyond its knowledge cutoff",
+                        "web_search_max_uses": "Limit the number of searches performed per response"
+                    },
+                    "title": "Model-specific options"
                 }
             }
+        },
+        "conversation": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
+                "reconfigure_successful": "Re-configuration was successful"
+            },
+            "entry_type": "Conversation agent",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure conversation agent",
+                "user": "Add conversation agent"
+            },
+            "step": {
+                "advanced": {
+                    "data": {
+                        "chat_model": "Model",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "temperature": "Temperature"
+                    },
+                    "title": "Advanced settings"
+                },
+                "init": {
+                    "data": {
+                        "llm_hass_api": "Control Home Assistant",
+                        "name": "Name",
+                        "prompt": "Instructions",
+                        "recommended": "Recommended model settings"
+                    },
+                    "data_description": {
+                        "prompt": "Instruct how the LLM should respond. This can be a template."
+                    },
+                    "title": "Basic settings"
+                },
+                "model": {
+                    "data": {
+                        "thinking_budget": "Thinking budget",
+                        "user_location": "Include home location",
+                        "web_search": "Enable web search",
+                        "web_search_max_uses": "Maximum web searches"
+                    },
+                    "data_description": {
+                        "thinking_budget": "The number of tokens the model can use to think about the response out of the total maximum number of tokens. Set to 1024 or greater to enable extended thinking.",
+                        "user_location": "Localize search results based on home location",
+                        "web_search": "The web search tool gives Claude direct access to real-time web content, allowing it to answer questions with up-to-date information beyond its knowledge cutoff",
+                        "web_search_max_uses": "Limit the number of searches performed per response"
+                    },
+                    "title": "Model-specific options"
+                }
+            }
+        }
+    },
+    "issues": {
+        "model_deprecated": {
+            "fix_flow": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "chat_model": "Model"
+                        },
+                        "description": "You are updating {subentry_name} ({subentry_type}) in {entry_name}. The current model {model} is deprecated. Select a supported model to continue.",
+                        "title": "Update model"
+                    }
+                }
+            },
+            "title": "Model deprecated"
         }
     }
 }

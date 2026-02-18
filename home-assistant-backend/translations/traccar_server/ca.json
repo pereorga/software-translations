@@ -1,20 +1,26 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "Token d'API"
+                }
+            },
             "user": {
                 "data": {
+                    "api_token": "Token d'API",
                     "host": "Amfitri\u00f3",
-                    "password": "Contrasenya",
                     "port": "Port",
                     "ssl": "Utilitza un certificat SSL",
-                    "username": "Nom d'usuari",
                     "verify_ssl": "Verifica el certificat SSL"
                 }
             }
@@ -25,7 +31,7 @@
             "motion": {
                 "name": "Moviment",
                 "state": {
-                    "off": "Aturat",
+                    "off": "Parat",
                     "on": "En moviment"
                 }
             },

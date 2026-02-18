@@ -15,9 +15,9 @@
                     "api_key": "API key",
                     "latitude": "Latitude",
                     "longitude": "Longitude",
-                    "radius": "Station Radius (miles; optional)"
+                    "radius": "Station radius (miles; optional)"
                 },
-                "description": "To generate API key go to https://docs.airnowapi.org/account/request/"
+                "description": "To generate API key go to {api_key_url}"
             }
         }
     },
@@ -43,7 +43,7 @@
         "step": {
             "init": {
                 "data": {
-                    "radius": "Station Radius (miles)"
+                    "radius": "Station radius (miles)"
                 }
             }
         }

@@ -56,6 +56,14 @@
             }
         }
     },
+    "selector": {
+        "profile": {
+            "options": {
+                "away": "Fora",
+                "home": "A casa"
+            }
+        }
+    },
     "services": {
         "set_profile": {
             "description": "Activa un perfil i, opcionalment, defineix la durada.",
@@ -73,7 +81,6 @@
         "set_profile_fan_speed_away": {
             "fields": {
                 "fan_speed": {
-                    "description": "Velocitat del ventilador.",
                     "name": "Velocitat del ventilador"
                 }
             }
@@ -81,7 +88,6 @@
         "set_profile_fan_speed_boost": {
             "fields": {
                 "fan_speed": {
-                    "description": "Velocitat del ventilador.",
                     "name": "Velocitat del ventilador"
                 }
             }
@@ -89,7 +95,6 @@
         "set_profile_fan_speed_home": {
             "fields": {
                 "fan_speed": {
-                    "description": "Velocitat del ventilador.",
                     "name": "Velocitat del ventilador"
                 }
             }

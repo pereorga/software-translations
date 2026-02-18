@@ -9,7 +9,6 @@ later in https://github.com/Softcatala/translation-memory-tools/.
 * csvkit
 * dos2unix
 * gettext
-* Node.js
 * Translate Toolkit
 * unzip
 
@@ -18,12 +17,12 @@ later in https://github.com/Softcatala/translation-memory-tools/.
 On Ubuntu/Debian:
 
 ```
-sudo apt-get install csvkit dos2unix gettext nodejs npm translate-toolkit unzip
+sudo apt-get install csvkit dos2unix gettext translate-toolkit unzip
 ```
 
 On Mac:
 ```
-brew install bash csvkit dos2unix gettext node translate-toolkit unzip
+brew install bash csvkit dos2unix gettext translate-toolkit unzip
 ```
 
 ## Translation credits
@@ -33,12 +32,21 @@ brew install bash csvkit dos2unix gettext node translate-toolkit unzip
 * BleachBit: https://github.com/bleachbit/bleachbit
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
 * FreeTube: https://docs.freetubeapp.io/community/translations/
+* Greenshot: https://github.com/greenshot/greenshot
 * Haiku: https://i18n.haiku-os.org/
 * Home Assistant: https://developers.home-assistant.io/docs/translations/
 * Keycloak: https://github.com/keycloak/keycloak
+* Logseq: https://github.com/logseq/logseq
 * Mindustry: https://github.com/Anuken/Mindustry
+* Notepad++: https://github.com/notepad-plus-plus/notepad-plus-plus
 * OpenEmu: https://github.com/OpenEmu/OpenEmu/wiki/Developers:-Translation-Guide-(First-Draft)
+* OpenRCT2: https://github.com/OpenRCT2/OpenRCT2
+* OpenTTD: https://github.com/OpenTTD/OpenTTD
+* Organic Maps: https://github.com/organicmaps/organicmaps
 * RawTherapee: https://www.rawtherapee.com/
+* RetroArch: https://github.com/libretro/RetroArch
+* RustDesk: https://github.com/rustdesk/rustdesk
+* Signal (Desktop): https://github.com/signalapp/Signal-Desktop
 * Skype (Android): https://www.skype.com/en/legal/
 * Stooa: https://github.com/Stooa/Stooa/tree/main
 * Sumatra: https://github.com/sumatrapdfreader/sumatrapdf/blob/master/TRANSLATORS

@@ -1,0 +1,119 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "already_in_progress": "Configuration flow is already in progress",
+            "failed_to_read_config": "Failed to read config from device",
+            "no_devices_found": "No devices found on the network"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "bluetooth_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
+            "user": {
+                "data": {
+                    "address": "Device"
+                },
+                "data_description": {
+                    "address": "Select the device to add."
+                },
+                "description": "Choose a device to set up"
+            }
+        }
+    },
+    "device": {
+        "probe": {
+            "name": "Probe {probe_number}"
+        }
+    },
+    "entity": {
+        "event": {
+            "event": {
+                "name": "Event",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "ambient_cool_down": "Ambient temperature cooldown",
+                            "ambient_low_temp": "Ambient temperature too low",
+                            "ambient_over_heat": "Ambient temperature too high",
+                            "device_high_temp": "Device has too high temperature",
+                            "device_low_power": "Device has low battery",
+                            "ignition_failure": "Ignition failure",
+                            "probe_above_maximum": "Temperature too high",
+                            "probe_acknowledge": "Alarm acknowledged",
+                            "probe_alarm": "Alarm triggered",
+                            "probe_below_minimum": "Temperature too low",
+                            "probe_disconnected": "Probe disconnected",
+                            "probe_timer_alarm": "Timer alarm"
+                        }
+                    }
+                }
+            }
+        },
+        "number": {
+            "alarm_interval": {
+                "name": "Alarm interval"
+            },
+            "temperature_maximum": {
+                "name": "Maximum temperature"
+            },
+            "temperature_minimum": {
+                "name": "Minimum temperature"
+            },
+            "temperature_target": {
+                "name": "Target temperature"
+            }
+        },
+        "select": {
+            "grill_type": {
+                "name": "Grill type",
+                "state": {
+                    "bbq_smoke": "BBQ smoke",
+                    "beef": "Beef",
+                    "chicken": "Chicken",
+                    "cold_smoke": "Cold smoke",
+                    "fish": "Fish",
+                    "hamburger": "Hamburger",
+                    "hot_smoke": "Hot smoke",
+                    "lamb": "Lamb",
+                    "mark_a": "Mark A",
+                    "mark_b": "Mark B",
+                    "mark_c": "Mark C",
+                    "none": "Not set",
+                    "pork": "Pork",
+                    "sausage": "Sausage",
+                    "turkey": "Turkey",
+                    "veal": "Veal"
+                }
+            },
+            "taste": {
+                "name": "Taste",
+                "state": {
+                    "medium": "Medium",
+                    "medium_rare": "Medium rare",
+                    "medium_well": "Medium well",
+                    "none": "Not set",
+                    "rare": "Rare",
+                    "well_done": "Well done"
+                }
+            }
+        },
+        "sensor": {
+            "ambient_temperature": {
+                "name": "Ambient temperature"
+            }
+        }
+    },
+    "exceptions": {
+        "communication_failed": {
+            "message": "Communication failed with the device"
+        },
+        "disconnected": {
+            "message": "The device is disconnected"
+        },
+        "rejected": {
+            "message": "Data was rejected by device"
+        }
+    }
+}

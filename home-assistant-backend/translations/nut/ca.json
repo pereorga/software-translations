@@ -3,7 +3,8 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "no_ups_found": "No hi ha cap dispositiu SAI (UPS) disponible al servidor NUT.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Error de connexi\u00f3: {error}",
@@ -18,11 +19,13 @@
                 },
                 "description": "Torna a autenticar el servidor NUT a {host}:{port}"
             },
-            "ups": {
+            "reconfigure": {
                 "data": {
-                    "alias": "\u00c0lies"
-                },
-                "title": "Selecciona el SAI (UPS) a monitoritzar"
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "port": "Port",
+                    "username": "Nom d'usuari"
+                }
             },
             "user": {
                 "data": {
@@ -39,7 +42,7 @@
             "beeper_disable": "Desactiva el bip/brunzidor del SAI",
             "beeper_enable": "Activa el bip/brunzidor del SAI",
             "beeper_mute": "Silencia temporalment el bip/brunzidor del SAI",
-            "beeper_toggle": "Commuta el bip/brunzidor del SAI",
+            "beeper_toggle": "Activa o desactiva el bip/brunzidor del SAI",
             "bypass_start": "Posa el SAI en mode bypass",
             "bypass_stop": "Desactiva el mode bypass del SAI",
             "calibrate_start": "Inicia la calibraci\u00f3",
@@ -91,7 +94,13 @@
                 "name": "Punt consigna d'advert\u00e8ncia de bateria"
             },
             "battery_charger_status": {
-                "name": "Estat de c\u00e0rrega"
+                "name": "Estat de c\u00e0rrega",
+                "state": {
+                    "charging": "Carregant",
+                    "disabled": "Desactivada",
+                    "discharging": "Descarregant",
+                    "off": "OFF"
+                }
             },
             "battery_current": {
                 "name": "Corrent de la bateria"
@@ -283,7 +292,11 @@
                 "name": "Alarmes"
             },
             "ups_beeper_status": {
-                "name": "Estat del brunzidor"
+                "name": "Estat del brunzidor",
+                "state": {
+                    "disabled": "Desactivada",
+                    "enabled": "Activada"
+                }
             },
             "ups_contacts": {
                 "name": "Contactes externs"
@@ -320,9 +333,6 @@
             },
             "ups_shutdown": {
                 "name": "Capacitat d'apagada"
-            },
-            "ups_start_auto": {
-                "name": "Engegada en mode CA"
             },
             "ups_start_battery": {
                 "name": "Engegada en mode bateria"
@@ -362,18 +372,6 @@
             },
             "ups_watchdog_status": {
                 "name": "Estat del gos guardi\u00e0 (watchdog)"
-            },
-            "watts": {
-                "name": "Watts"
-            }
-        }
-    },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "scan_interval": "Interval d'escaneig (segons)"
-                }
             }
         }
     }

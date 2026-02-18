@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -13,22 +14,20 @@
             "no_trains": "No s'ha trobat cap tren"
         },
         "step": {
+            "initial": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
             "reauth_confirm": {
                 "data": {
                     "api_key": "Clau API"
                 }
             },
-            "user": {
+            "select_stations": {
                 "data": {
-                    "api_key": "Clau API",
-                    "filter_product": "Filtra per descripci\u00f3 de producte",
-                    "from": "Des de l'estaci\u00f3",
-                    "time": "Hora (opcional)",
-                    "to": "A l'estaci\u00f3",
-                    "weekday": "Dies"
-                },
-                "data_description": {
-                    "filter_product": "Per filtrar per descripci\u00f3 de producte, escriu aqu\u00ed una frase coincident"
+                    "from": "Des d'estaci\u00f3",
+                    "to": "A estaci\u00f3"
                 }
             }
         }

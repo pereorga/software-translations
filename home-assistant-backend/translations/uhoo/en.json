@@ -1,0 +1,43 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "Your uHoo API key. You can find this in your uHoo account settings."
+                },
+                "description": "Enter your uHoo API key to connect.",
+                "title": "Connect to uHoo"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "mold_index": {
+                "name": "Mold index"
+            },
+            "nitrogen_dioxide": {
+                "name": "Nitrogen dioxide"
+            },
+            "ozone": {
+                "name": "Ozone"
+            },
+            "virus_index": {
+                "name": "Virus index"
+            },
+            "volatile_organic_compounds": {
+                "name": "Volatile organic compounds"
+            }
+        }
+    }
+}

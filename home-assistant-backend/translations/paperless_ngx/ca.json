@@ -1,0 +1,80 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+        },
+        "error": {
+            "cannot_connect": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
+            "invalid_api_key": "Clau API inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "Clau API",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "Clau API",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "celery_status": {
+                "state": {
+                    "error": "Error"
+                }
+            },
+            "classifier_status": {
+                "state": {
+                    "error": "Error"
+                }
+            },
+            "database_status": {
+                "state": {
+                    "error": "Error"
+                }
+            },
+            "index_status": {
+                "state": {
+                    "error": "Error"
+                }
+            },
+            "redis_status": {
+                "state": {
+                    "error": "Error"
+                }
+            },
+            "sanity_check_status": {
+                "state": {
+                    "error": "Error"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids"
+        },
+        "invalid_api_key": {
+            "message": "Clau API inv\u00e0lida"
+        },
+        "unknown": {
+            "message": "Error inesperat"
+        }
+    }
+}

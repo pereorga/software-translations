@@ -1,14 +1,16 @@
 {
     "config": {
         "error": {
-            "invalid_known_hosts": "Known hosts must be a comma separated list of hosts."
+            "invalid_known_hosts": "Known hosts must be a comma-separated list of hosts."
         },
         "step": {
             "config": {
                 "data": {
-                    "known_hosts": "Known hosts"
+                    "known_hosts": "Add known host"
                 },
-                "description": "Known Hosts - A comma-separated list of hostnames or IP-addresses of cast devices, use if mDNS discovery is not working.",
+                "data_description": {
+                    "known_hosts": "Hostnames or IP addresses of cast devices, use if mDNS discovery is not working"
+                },
                 "title": "Google Cast configuration"
             },
             "confirm": {
@@ -18,7 +20,7 @@
     },
     "options": {
         "error": {
-            "invalid_known_hosts": "Known hosts must be a comma separated list of hosts."
+            "invalid_known_hosts": "Known hosts must be a comma-separated list of hosts."
         },
         "step": {
             "advanced_options": {
@@ -31,9 +33,11 @@
             },
             "basic_options": {
                 "data": {
-                    "known_hosts": "Known hosts"
+                    "known_hosts": "Add known host"
                 },
-                "description": "Known Hosts - A comma-separated list of hostnames or IP-addresses of cast devices, use if mDNS discovery is not working.",
+                "data_description": {
+                    "known_hosts": "Hostnames or IP addresses of cast devices, use if mDNS discovery is not working"
+                },
                 "title": "Google Cast configuration"
             }
         }
@@ -43,7 +47,7 @@
             "description": "Shows a dashboard view on a Chromecast device.",
             "fields": {
                 "dashboard_path": {
-                    "description": "The URL path of the dashboard to show.",
+                    "description": "The URL path of the dashboard to show, defaults to lovelace if not specified.",
                     "name": "Dashboard path"
                 },
                 "entity_id": {

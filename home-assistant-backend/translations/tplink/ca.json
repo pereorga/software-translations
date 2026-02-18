@@ -23,7 +23,6 @@
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 },
-                "description": "El dispositiu necessita autenticar-te. Introdueix les teves credencials a continuaci\u00f3.",
                 "title": "Autenticaci\u00f3"
             },
             "discovery_confirm": {
@@ -39,7 +38,6 @@
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 },
-                "description": "El dispositiu necessita autenticar-te. Introdueix les teves credencials a continuaci\u00f3.",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
             "reconfigure": {
@@ -64,22 +62,8 @@
     },
     "entity": {
         "binary_sensor": {
-            "is_open": {
-                "name": "Porta",
-                "state": {
-                    "off": "Tancat/ada",
-                    "on": "Obert/a"
-                }
-            },
             "overheated": {
                 "name": "Sobreescalfat"
-            },
-            "update_available": {
-                "name": "Actualitzaci\u00f3",
-                "state": {
-                    "off": "Actualitzat/da",
-                    "on": "Actualitzaci\u00f3 disponible"
-                }
             },
             "water_alert": {
                 "name": "Humitat",
@@ -111,15 +95,6 @@
             }
         },
         "sensor": {
-            "auto_off_at": {
-                "name": "Apagat autom\u00e0tic a les"
-            },
-            "available_firmware_version": {
-                "name": "Versi\u00f3 de microprogramari disponible"
-            },
-            "battery_level": {
-                "name": "Nivell de bateria"
-            },
             "consumption_this_month": {
                 "name": "Consum d'aquest mes"
             },
@@ -129,44 +104,20 @@
             "consumption_total": {
                 "name": "Consum total"
             },
-            "current": {
-                "name": "Intensitat"
-            },
             "current_consumption": {
                 "name": "Consum actual"
             },
-            "current_firmware_version": {
-                "name": "Versi\u00f3 del microprogramari actual"
-            },
-            "humidity": {
-                "name": "Humitat"
-            },
             "on_since": {
                 "name": "Enc\u00e8s des de"
-            },
-            "rssi": {
-                "name": "Pot\u00e8ncia del senyal"
             },
             "signal_level": {
                 "name": "Nivell de senyal"
             },
             "ssid": {
                 "name": "SSID"
-            },
-            "temperature": {
-                "name": "Temperatura"
-            },
-            "voltage": {
-                "name": "Voltatge"
             }
         },
         "switch": {
-            "auto_off_enabled": {
-                "name": "Apagat autom\u00e0tic activat"
-            },
-            "auto_update_enabled": {
-                "name": "Actualitzaci\u00f3 autom\u00e0tica activada"
-            },
             "led": {
                 "name": "LED"
             },
@@ -257,7 +208,6 @@
                     "name": "Repeticions"
                 },
                 "segments": {
-                    "description": "Llista de segments (0 per tot).",
                     "name": "Segments"
                 },
                 "sequence": {

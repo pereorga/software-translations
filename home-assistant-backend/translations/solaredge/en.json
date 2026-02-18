@@ -1,22 +1,82 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "already_configured": "Device is already configured",
-            "could_not_connect": "Could not connect to the solaredge API",
+            "auth_missing": "You must provide either an API key or a username and password.",
+            "cannot_connect": "Failed to connect",
             "invalid_api_key": "Invalid API key",
-            "site_not_active": "The site is not active"
+            "invalid_auth": "Invalid authentication",
+            "site_not_active": "The site is not active for the provided API key",
+            "unknown": "Unexpected error"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "api_key": "Optional, used for general site sensors",
+                    "password": "Required if username is provided",
+                    "username": "Optional, used for detailed module-level production statistics"
+                },
+                "description": "Update your API key or web account credentials for site {site_id}.",
+                "sections": {
+                    "api_auth": {
+                        "data": {
+                            "api_key": "API key"
+                        },
+                        "description": "Optionally provide your SolarEdge API key. Used for real-time detailed site sensors",
+                        "name": "API key authentication"
+                    },
+                    "web_auth": {
+                        "data": {
+                            "password": "Password",
+                            "username": "Username"
+                        },
+                        "description": "Optionally provide your SolarEdge web portal credentials. Used for non real-time module-level production statistics",
+                        "name": "Web account authentication"
+                    }
+                },
+                "title": "Reconfigure SolarEdge"
+            },
             "user": {
                 "data": {
                     "api_key": "API key",
                     "name": "The name of this installation",
-                    "site_id": "The SolarEdge site-id"
+                    "password": "Password",
+                    "site_id": "The SolarEdge site ID",
+                    "username": "Username"
                 },
-                "title": "Define the API parameters for this installation"
+                "data_description": {
+                    "api_key": "Optional, used for general site sensors",
+                    "password": "Required if username is provided",
+                    "username": "Optional, used for detailed module-level production statistics"
+                },
+                "description": "Provide your site ID and at least one method of authentication",
+                "sections": {
+                    "api_auth": {
+                        "data": {
+                            "api_key": "API key"
+                        },
+                        "description": "Optionally provide your SolarEdge API key. Used for real-time detailed site sensors",
+                        "name": "API key authentication"
+                    },
+                    "web_auth": {
+                        "data": {
+                            "password": "Password",
+                            "username": "Username"
+                        },
+                        "description": "Optionally provide your SolarEdge web portal credentials. Used for non real-time module-level production statistics",
+                        "name": "Web account authentication"
+                    }
+                },
+                "title": "Set up your SolarEdge integration"
             }
         }
     },
@@ -83,7 +143,7 @@
                 "name": "Storage level"
             },
             "storage_power": {
-                "name": "Stored power"
+                "name": "Storage power"
             }
         }
     }

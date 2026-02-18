@@ -23,9 +23,15 @@
     },
     "services": {
         "press": {
-            "description": "Press the button entity.",
+            "description": "Presses a button entity.",
             "name": "Press"
         }
     },
-    "title": "Button"
+    "title": "Button",
+    "triggers": {
+        "pressed": {
+            "description": "Triggers when a button was pressed",
+            "name": "Button pressed"
+        }
+    }
 }

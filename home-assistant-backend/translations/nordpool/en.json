@@ -14,7 +14,7 @@
                     "currency": "Currency"
                 },
                 "data_description": {
-                    "areas": "Areas to display prices for according to Nordpool market areas.",
+                    "areas": "Areas to display prices for according to Nord Pool market areas.",
                     "currency": "Select currency to display prices in, EUR is the base currency."
                 }
             },
@@ -24,7 +24,7 @@
                     "currency": "Currency"
                 },
                 "data_description": {
-                    "areas": "Areas to display prices for according to Nordpool market areas.",
+                    "areas": "Areas to display prices for according to Nord Pool market areas.",
                     "currency": "Select currency to display prices in, EUR is the base currency."
                 }
             }
@@ -99,8 +99,8 @@
         "connection_error": {
             "message": "There was a connection error connecting to the API. Try again later."
         },
-        "empty_response": {
-            "message": "Nord Pool has not posted market prices for the provided date."
+        "could_not_fetch_data": {
+            "message": "Data could not be retrieved: {error}"
         },
         "entry_not_found": {
             "message": "The Nord Pool integration is not configured in Home Assistant."
@@ -110,26 +110,55 @@
         },
         "initial_update_failed": {
             "message": "Initial update failed on startup with error {error}"
+        },
+        "no_day_data": {
+            "message": "Data for current day is missing"
         }
     },
     "services": {
-        "get_prices_for_date": {
-            "description": "Retrieve the prices for a specific date.",
+        "get_price_indices_for_date": {
+            "description": "Retrieves the price indices for a specific date.",
             "fields": {
                 "areas": {
                     "description": "One or multiple areas to get prices for. If left empty it will use the areas already configured.",
                     "name": "Areas"
                 },
                 "config_entry": {
-                    "description": "Choose the configuration entry.",
-                    "name": "Select Nord Pool configuration entry"
+                    "description": "The Nord Pool configuration entry for this action.",
+                    "name": "Config entry"
                 },
                 "currency": {
                     "description": "Currency to get prices in. If left empty it will use the currency already configured.",
                     "name": "Currency"
                 },
                 "date": {
-                    "description": "Only dates two months in the past and one day in the future is allowed.",
+                    "description": "Only dates in the range from two months in the past to one day in the future are allowed.",
+                    "name": "Date"
+                },
+                "resolution": {
+                    "description": "Resolution time for the prices, can be any of 15, 30 and 60 minutes.",
+                    "name": "Resolution"
+                }
+            },
+            "name": "Get price indices for date"
+        },
+        "get_prices_for_date": {
+            "description": "Retrieves the prices for a specific date.",
+            "fields": {
+                "areas": {
+                    "description": "One or multiple areas to get prices for. If left empty it will use the areas already configured.",
+                    "name": "Areas"
+                },
+                "config_entry": {
+                    "description": "The Nord Pool configuration entry for this action.",
+                    "name": "Config entry"
+                },
+                "currency": {
+                    "description": "Currency to get prices in. If left empty it will use the currency already configured.",
+                    "name": "Currency"
+                },
+                "date": {
+                    "description": "Only dates in the range from two months in the past to one day in the future are allowed.",
                     "name": "Date"
                 }
             },

@@ -1,11 +1,13 @@
 {
     "config": {
         "abort": {
-            "address_already_configured": "An ElkM1 with this address is already configured",
-            "already_configured": "An ElkM1 with this prefix is already configured",
+            "address_already_configured": "An Elk-M1 with this address is already configured",
+            "already_configured": "An Elk-M1 with this prefix is already configured",
             "already_in_progress": "Configuration flow is already in progress",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
+            "reconfigure_successful": "Successfully reconfigured Elk-M1 integration",
+            "unique_id_mismatch": "Reconfigure should be used for the same device not a new one",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -19,7 +21,7 @@
                 "data": {
                     "password": "Password",
                     "protocol": "Protocol",
-                    "temperature_unit": "The temperature unit ElkM1 uses.",
+                    "temperature_unit": "The temperature unit Elk-M1 uses.",
                     "username": "Username"
                 },
                 "description": "Connect to the discovered system: {mac_address} ({host})",
@@ -29,13 +31,23 @@
                 "data": {
                     "address": "The IP address or domain or serial port if connecting via serial.",
                     "password": "Password",
-                    "prefix": "A unique prefix (leave blank if you only have one ElkM1).",
+                    "prefix": "A unique prefix (leave blank if you only have one Elk-M1).",
                     "protocol": "Protocol",
-                    "temperature_unit": "The temperature unit ElkM1 uses.",
+                    "temperature_unit": "The temperature unit Elk-M1 uses.",
                     "username": "Username"
                 },
                 "description": "The address string must be in the form 'address[:port]' for 'secure' and 'non-secure'. Example: '192.168.1.1'. The port is optional and defaults to 2101 for 'non-secure' and 2601 for 'secure'. For the serial protocol, the address must be in the form 'tty[:baud]'. Example: '/dev/ttyS1'. The baud is optional and defaults to 115200.",
                 "title": "Connect to Elk-M1 Control"
+            },
+            "reconfigure": {
+                "data": {
+                    "address": "The IP address or domain or serial port if connecting via serial.",
+                    "password": "Password",
+                    "protocol": "Protocol",
+                    "username": "Username"
+                },
+                "description": "The address string must be in the form 'address[:port]' for 'secure' and 'non-secure'. Example: '192.168.1.1'. The port is optional and defaults to 2101 for 'non-secure' and 2601 for 'secure'. For the serial protocol, the address must be in the form 'tty[:baud]'. Example: '/dev/ttyS1'. The baud is optional and defaults to 115200.",
+                "title": "Reconfigure Elk-M1 Control"
             },
             "user": {
                 "data": {
@@ -46,45 +58,32 @@
             }
         }
     },
-    "issues": {
-        "migrate_aux_heat": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "The Elk-M1 `set_aux_heat` action has been migrated. A new emergency heat switch entity is available for each thermostat.\n\nUpdate any automations to use the new emergency heat switch entity. When this is done, select **Submit** to fix this issue.",
-                        "title": "Migration of Elk-M1 set_aux_heat action"
-                    }
-                }
-            },
-            "title": "Migration of Elk-M1 set_aux_heat action"
-        }
-    },
     "services": {
         "alarm_arm_home_instant": {
-            "description": "Arms the ElkM1 in home instant mode.",
+            "description": "Arms the Elk-M1 in home instant mode.",
             "fields": {
                 "code": {
-                    "description": "An code to arm the alarm control panel.",
+                    "description": "Alarm code to arm the alarm control panel.",
                     "name": "Code"
                 }
             },
             "name": "Alarm arm home instant"
         },
         "alarm_arm_night_instant": {
-            "description": "Arms the ElkM1 in night instant mode.",
+            "description": "Arms the Elk-M1 in night instant mode.",
             "fields": {
                 "code": {
-                    "description": "An code to arm the alarm control panel.",
+                    "description": "Alarm code to arm the alarm control panel.",
                     "name": "Code"
                 }
             },
             "name": "Alarm arm night instant"
         },
         "alarm_arm_vacation": {
-            "description": "Arms the ElkM1 in vacation mode.",
+            "description": "Arms the Elk-M1 in vacation mode.",
             "fields": {
                 "code": {
-                    "description": "An code to arm the alarm control panel.",
+                    "description": "Alarm code to arm the alarm control panel.",
                     "name": "Code"
                 }
             },
@@ -94,7 +93,7 @@
             "description": "Bypasses all zones for the area.",
             "fields": {
                 "code": {
-                    "description": "An code to authorize the bypass of the alarm control panel.",
+                    "description": "Alarm code to authorize the bypass of the alarm control panel.",
                     "name": "Code"
                 }
             },
@@ -104,14 +103,14 @@
             "description": "Removes bypass on all zones for the area.",
             "fields": {
                 "code": {
-                    "description": "An code to authorize the bypass clear of the alarm control panel.",
+                    "description": "Alarm code to authorize the bypass clear of the alarm control panel.",
                     "name": "Code"
                 }
             },
             "name": "Alarm clear bypass"
         },
         "alarm_display_message": {
-            "description": "Displays a message on all of the ElkM1 keypads for an area.",
+            "description": "Displays a message on all of the Elk-M1 keypads for an area.",
             "fields": {
                 "beep": {
                     "description": "0=no beep, 1=beep.",
@@ -154,7 +153,7 @@
             "description": "Bypasses zone.",
             "fields": {
                 "code": {
-                    "description": "An code to authorize the bypass of the zone.",
+                    "description": "Alarm code to authorize the bypass of the zone.",
                     "name": "Code"
                 }
             },
@@ -175,7 +174,7 @@
             "name": "Set time"
         },
         "speak_phrase": {
-            "description": "Speaks a phrase. See list of phrases in ElkM1 ASCII Protocol documentation.",
+            "description": "Speaks a phrase. See list of phrases in Elk-M1 ASCII Protocol documentation.",
             "fields": {
                 "number": {
                     "description": "Phrase number to speak.",
@@ -189,7 +188,7 @@
             "name": "Speak phrase"
         },
         "speak_word": {
-            "description": "Speaks a word. See list of words in ElkM1 ASCII Protocol documentation.",
+            "description": "Speaks a word. See list of words in Elk-M1 ASCII Protocol documentation.",
             "fields": {
                 "number": {
                     "description": "Word number to speak.",

@@ -16,5 +16,42 @@
                 }
             }
         }
+    },
+    "entity": {
+        "fan": {
+            "air_purifier": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "normal": "Normal",
+                            "pet": "Pet",
+                            "sleep": "Sleep"
+                        }
+                    }
+                }
+            }
+        },
+        "humidifier": {
+            "evaporative_humidifier": {
+                "state_attributes": {
+                    "mode": {
+                        "state": {
+                            "drying_filter": "Drying filter",
+                            "high": "High",
+                            "low": "Low",
+                            "medium": "Medium",
+                            "quiet": "Quiet",
+                            "target_humidity": "Target humidity"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "light_level": {
+                "name": "Light level"
+            }
+        }
     }
 }

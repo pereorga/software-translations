@@ -1,4 +1,32 @@
 {
+    "common": {
+        "condition_behavior_description": "How the state should match on the targeted switches.",
+        "condition_behavior_name": "Behavior",
+        "trigger_behavior_description": "The behavior of the targeted switches to trigger on.",
+        "trigger_behavior_name": "Behavior"
+    },
+    "conditions": {
+        "is_off": {
+            "description": "Tests if one or more switches are off.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted switches.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Switch is off"
+        },
+        "is_on": {
+            "description": "Tests if one or more switches are on.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted switches.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Switch is on"
+        }
+    },
     "device_automation": {
         "action_type": {
             "toggle": "Toggle {entity_name}",
@@ -8,6 +36,9 @@
         "condition_type": {
             "is_off": "{entity_name} is off",
             "is_on": "{entity_name} is on"
+        },
+        "extra_fields": {
+            "for": "Duration"
         },
         "trigger_type": {
             "changed_states": "{entity_name} turned on or off",
@@ -24,10 +55,33 @@
             }
         },
         "outlet": {
-            "name": "Outlet"
+            "name": "Outlet",
+            "state": {
+                "off": "Off",
+                "on": "On"
+            }
         },
         "switch": {
-            "name": "Switch"
+            "name": "Switch",
+            "state": {
+                "off": "Off",
+                "on": "On"
+            }
+        }
+    },
+    "selector": {
+        "condition_behavior": {
+            "options": {
+                "all": "All",
+                "any": "Any"
+            }
+        },
+        "trigger_behavior": {
+            "options": {
+                "any": "Any",
+                "first": "First",
+                "last": "Last"
+            }
         }
     },
     "services": {
@@ -44,5 +98,27 @@
             "name": "Turn on"
         }
     },
-    "title": "Switch"
+    "title": "Switch",
+    "triggers": {
+        "turned_off": {
+            "description": "Triggers after one or more switches turn off.",
+            "fields": {
+                "behavior": {
+                    "description": "The behavior of the targeted switches to trigger on.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Switch turned off"
+        },
+        "turned_on": {
+            "description": "Triggers after one or more switches turn on.",
+            "fields": {
+                "behavior": {
+                    "description": "The behavior of the targeted switches to trigger on.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Switch turned on"
+        }
+    }
 }

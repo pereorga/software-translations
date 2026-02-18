@@ -1,9 +1,42 @@
 {
+    "common": {
+        "abort": "Abort",
+        "days_of_week": "Days of week",
+        "days_of_week_description": "Select which days this schedule should be enabled on. You can select multiple days.",
+        "descr_pin": "4-digit code to enable or disable the setting",
+        "end_time": "End time",
+        "end_time_description": "The time this schedule ends, e.g. 01:05 for 1:05 AM.",
+        "location_description": "The approximate location the vehicle must be at to use this schedule. Defaults to Home Assistant's configured location.",
+        "one_time": "One-time",
+        "one_time_description": "If this is a one-time schedule.",
+        "precondition_time": "Precondition time",
+        "precondition_time_description": "The time the vehicle should complete preconditioning, e.g. 01:05 for 1:05 AM.",
+        "schedule_enable_description": "If this schedule should be considered for execution.",
+        "schedule_id": "Schedule ID",
+        "schedule_id_description": "The ID of the schedule, use an existing ID to modify.",
+        "schedule_id_remove_description": "The ID of the schedule to remove.",
+        "schedule_name_description": "The name of the schedule.",
+        "start_time": "Start time",
+        "start_time_description": "The time this schedule begins, e.g. 01:05 for 1:05 AM.",
+        "unavailable": "Unavailable",
+        "vehicle": "Vehicle",
+        "vehicle_to_remove_schedule": "Vehicle to remove schedule from.",
+        "vehicle_to_schedule": "Vehicle to schedule.",
+        "wake_up_failed": "Failed to wake up vehicle: {message}",
+        "wake_up_timeout": "Timed out trying to wake up vehicle"
+    },
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
+            "oauth_error": "Received invalid token data.",
+            "oauth_failed": "Error while obtaining access token.",
+            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
+            "oauth_timeout": "Timeout resolving OAuth token.",
+            "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
             "reauth_account_mismatch": "The reauthentication account does not match the original account",
-            "reauth_successful": "Re-authentication was successful"
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_account_mismatch": "The reconfiguration account does not match the original account",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -13,24 +46,39 @@
         },
         "step": {
             "reauth_confirm": {
-                "data": {
-                    "access_token": "Access token"
-                },
-                "description": "The {name} integration needs to re-authenticate your account, please enter an access token from {url}",
+                "description": "The {name} integration needs to re-authenticate your account",
                 "title": "Authentication expired for {name}"
-            },
-            "user": {
-                "data": {
-                    "access_token": "Access token"
-                },
-                "description": "Enter an access token from {url}."
             }
         }
     },
     "entity": {
         "binary_sensor": {
+            "automatic_blind_spot_camera": {
+                "name": "Automatic blind spot camera"
+            },
+            "automatic_emergency_braking_off": {
+                "name": "Automatic emergency braking off"
+            },
             "backup_capable": {
                 "name": "Backup capable"
+            },
+            "blind_spot_collision_warning_chime": {
+                "name": "Blind spot collision warning chime"
+            },
+            "bms_full_charge_complete": {
+                "name": "BMS full charge"
+            },
+            "brake_pedal": {
+                "name": "Brake pedal"
+            },
+            "cellular": {
+                "name": "Cellular"
+            },
+            "charge_enable_request": {
+                "name": "Charge enable request"
+            },
+            "charge_port_cold_weather_mode": {
+                "name": "Charge port cold weather mode"
             },
             "charge_state_battery_heater_on": {
                 "name": "Battery heater"
@@ -59,14 +107,101 @@
             "components_grid_services_enabled": {
                 "name": "Grid services enabled"
             },
+            "dc_dc_enable": {
+                "name": "DC to DC converter"
+            },
+            "defrost_for_preconditioning": {
+                "name": "Defrost for preconditioning"
+            },
+            "drive_rail": {
+                "name": "Drive rail"
+            },
+            "driver_seat_belt": {
+                "name": "Driver seat belt"
+            },
+            "driver_seat_occupied": {
+                "name": "Driver seat occupied"
+            },
+            "emergency_lane_departure_avoidance": {
+                "name": "Emergency lane departure avoidance"
+            },
+            "europe_vehicle": {
+                "name": "European vehicle"
+            },
+            "fast_charger_present": {
+                "name": "Fast charger present"
+            },
+            "gps_state": {
+                "name": "GPS state"
+            },
             "grid_services_active": {
                 "name": "Grid services active"
+            },
+            "grid_status": {
+                "name": "Grid status"
+            },
+            "guest_mode_enabled": {
+                "name": "Guest mode enabled"
+            },
+            "homelink_nearby": {
+                "name": "Homelink nearby"
+            },
+            "hvac_auto_mode": {
+                "name": "HVAC auto mode"
+            },
+            "hvil": {
+                "name": "High voltage interlock loop fault"
+            },
+            "lights_hazards_active": {
+                "name": "Hazard lights"
+            },
+            "lights_high_beams": {
+                "name": "High beams"
+            },
+            "located_at_favorite": {
+                "name": "Located at favorite"
+            },
+            "located_at_home": {
+                "name": "Located at home"
+            },
+            "located_at_work": {
+                "name": "Located at work"
+            },
+            "offroad_lightbar_present": {
+                "name": "Offroad lightbar"
+            },
+            "passenger_seat_belt": {
+                "name": "Passenger seat belt"
+            },
+            "pin_to_drive_enabled": {
+                "name": "PIN to Drive enabled"
+            },
+            "rear_display_hvac_enabled": {
+                "name": "Rear display HVAC"
+            },
+            "remote_start_enabled": {
+                "name": "Remote start"
+            },
+            "right_hand_drive": {
+                "name": "Right-hand drive"
+            },
+            "seat_vent_enabled": {
+                "name": "Seat vent enabled"
+            },
+            "service_mode": {
+                "name": "Service mode"
+            },
+            "speed_limit_mode": {
+                "name": "Speed limited"
             },
             "state": {
                 "name": "Status"
             },
             "storm_mode_active": {
                 "name": "Storm watch active"
+            },
+            "supercharger_session_trip_planner": {
+                "name": "Supercharger session trip planner"
             },
             "vehicle_state_dashcam_state": {
                 "name": "Dashcam"
@@ -109,6 +244,12 @@
             },
             "vehicle_state_tpms_soft_warning_rr": {
                 "name": "Tire pressure warning rear right"
+            },
+            "wifi": {
+                "name": "Wi-Fi"
+            },
+            "wiper_heat_enabled": {
+                "name": "Wiper heat"
             }
         },
         "button": {
@@ -138,6 +279,12 @@
             "driver_temp": {
                 "name": "Climate",
                 "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "bioweapon": "Bioweapon defense",
+                            "off": "Off"
+                        }
+                    },
                     "preset_mode": {
                         "state": {
                             "camp": "Camp mode",
@@ -170,6 +317,9 @@
             "location": {
                 "name": "Location"
             },
+            "origin": {
+                "name": "Origin"
+            },
             "route": {
                 "name": "Route"
             }
@@ -201,7 +351,7 @@
                 "name": "Charge limit"
             },
             "off_grid_vehicle_charging_reserve_percent": {
-                "name": "Off grid reserve"
+                "name": "Off-grid reserve"
             }
         },
         "select": {
@@ -289,7 +439,7 @@
                 "state": {
                     "autonomous": "Autonomous",
                     "backup": "Backup",
-                    "self_consumption": "Self consumption"
+                    "self_consumption": "Self-consumption"
                 }
             }
         },
@@ -308,6 +458,33 @@
             },
             "battery_power": {
                 "name": "Battery power"
+            },
+            "bms_state": {
+                "name": "BMS state",
+                "state": {
+                    "charge": "Charge",
+                    "clear_fault": "Clear fault",
+                    "drive": "Drive",
+                    "fault": "Fault",
+                    "full_electric_in_motion": "Full electric in motion",
+                    "standby": "Standby",
+                    "support": "Support",
+                    "system_not_available": "System not available",
+                    "test": "Test",
+                    "weld": "Weld"
+                }
+            },
+            "brake_pedal_position": {
+                "name": "Brake pedal position"
+            },
+            "brick_voltage_max": {
+                "name": "Brick voltage max"
+            },
+            "brick_voltage_min": {
+                "name": "Brick voltage min"
+            },
+            "charge_rate_mile_per_hour": {
+                "name": "Charge rate"
             },
             "charge_state_battery_level": {
                 "name": "Battery level"
@@ -383,6 +560,155 @@
             "consumer_energy_imported_from_solar": {
                 "name": "Consumer imported from solar"
             },
+            "credit_balance": {
+                "name": "Teslemetry credits",
+                "unit_of_measurement": "credits"
+            },
+            "cruise_follow_distance": {
+                "name": "Cruise follow distance"
+            },
+            "cruise_set_speed": {
+                "name": "Cruise set speed"
+            },
+            "current_limit_mph": {
+                "name": "Current speed limit"
+            },
+            "dc_charging_energy_in": {
+                "name": "DC charging energy in"
+            },
+            "dc_charging_power": {
+                "name": "DC charging power"
+            },
+            "di_axle_speed_f": {
+                "name": "Front drive inverter axle speed"
+            },
+            "di_axle_speed_r": {
+                "name": "Rear drive inverter axle speed"
+            },
+            "di_axle_speed_rel": {
+                "name": "Rear left drive inverter axle speed"
+            },
+            "di_axle_speed_rer": {
+                "name": "Rear right drive inverter axle speed"
+            },
+            "di_heatsink_tf": {
+                "name": "Front drive inverter heatsink temperature"
+            },
+            "di_heatsink_tr": {
+                "name": "Rear drive inverter heatsink temperature"
+            },
+            "di_heatsink_trel": {
+                "name": "Rear left drive inverter heatsink temperature"
+            },
+            "di_heatsink_trer": {
+                "name": "Rear right drive inverter heatsink temperature"
+            },
+            "di_inverter_tf": {
+                "name": "Front drive inverter temperature"
+            },
+            "di_inverter_tr": {
+                "name": "Rear drive inverter temperature"
+            },
+            "di_inverter_trel": {
+                "name": "Rear left drive inverter temperature"
+            },
+            "di_inverter_trer": {
+                "name": "Rear right drive inverter temperature"
+            },
+            "di_motor_current_f": {
+                "name": "Front drive inverter motor current"
+            },
+            "di_motor_current_r": {
+                "name": "Rear drive inverter motor current"
+            },
+            "di_motor_current_rel": {
+                "name": "Rear left drive inverter motor current"
+            },
+            "di_motor_current_rer": {
+                "name": "Rear right drive inverter motor current"
+            },
+            "di_slave_torque_cmd": {
+                "name": "Secondary drive unit torque"
+            },
+            "di_state_f": {
+                "name": "Front drive inverter",
+                "state": {
+                    "abort": "Abort",
+                    "enabled": "Enabled",
+                    "fault": "Fault",
+                    "standby": "Standby",
+                    "unavailable": "Unavailable"
+                }
+            },
+            "di_state_r": {
+                "name": "Rear drive inverter",
+                "state": {
+                    "abort": "Abort",
+                    "enabled": "Enabled",
+                    "fault": "Fault",
+                    "standby": "Standby",
+                    "unavailable": "Unavailable"
+                }
+            },
+            "di_state_rel": {
+                "name": "Rear left drive inverter",
+                "state": {
+                    "abort": "Abort",
+                    "enabled": "Enabled",
+                    "fault": "Fault",
+                    "standby": "Standby",
+                    "unavailable": "Unavailable"
+                }
+            },
+            "di_state_rer": {
+                "name": "Rear right drive inverter",
+                "state": {
+                    "abort": "Abort",
+                    "enabled": "Enabled",
+                    "fault": "Fault",
+                    "standby": "Standby",
+                    "unavailable": "Unavailable"
+                }
+            },
+            "di_stator_temp_f": {
+                "name": "Front drive unit stator temperature"
+            },
+            "di_stator_temp_r": {
+                "name": "Rear drive unit stator temperature"
+            },
+            "di_stator_temp_rel": {
+                "name": "Rear left drive unit stator temperature"
+            },
+            "di_stator_temp_rer": {
+                "name": "Rear right drive unit stator temperature"
+            },
+            "di_torque_actual_f": {
+                "name": "Front drive unit actual torque"
+            },
+            "di_torque_actual_r": {
+                "name": "Rear drive unit actual torque"
+            },
+            "di_torque_actual_rel": {
+                "name": "Rear left drive unit actual torque"
+            },
+            "di_torque_actual_rer": {
+                "name": "Rear right drive unit actual torque"
+            },
+            "di_torquemotor": {
+                "name": "Drive unit torque"
+            },
+            "di_vbat_f": {
+                "name": "Front drive inverter battery voltage"
+            },
+            "di_vbat_r": {
+                "name": "Rear drive inverter battery voltage"
+            },
+            "di_vbat_rel": {
+                "name": "Rear left drive inverter battery voltage"
+            },
+            "di_vbat_rer": {
+                "name": "Rear right drive inverter battery voltage"
+            },
             "drive_state_active_route_destination": {
                 "name": "Destination"
             },
@@ -416,11 +742,29 @@
             "energy_left": {
                 "name": "Energy left"
             },
+            "energy_remaining": {
+                "name": "Energy remaining"
+            },
+            "estimated_hours_to_charge_termination": {
+                "name": "Estimated hours to charge termination"
+            },
+            "forward_collision_warning": {
+                "name": "Forward collision warning",
+                "state": {
+                    "average": "Average",
+                    "early": "Early",
+                    "late": "Late",
+                    "off": "Off"
+                }
+            },
             "generator_energy_exported": {
                 "name": "Generator exported"
             },
             "generator_power": {
                 "name": "Generator power"
+            },
+            "gps_heading": {
+                "name": "GPS heading"
             },
             "grid_energy_exported_from_battery": {
                 "name": "Grid exported from battery"
@@ -446,27 +790,206 @@
             "grid_services_power": {
                 "name": "Grid services power"
             },
+            "guest_mode_mobile_access_state": {
+                "name": "Guest mode mobile access",
+                "state": {
+                    "aborted_bad_data_received": "Aborted bad data received",
+                    "aborted_drive_auth_time_exceeded": "Aborted drive auth time exceeded",
+                    "aborted_driving": "Aborted driving",
+                    "aborted_fetch_failed": "Aborted fetch failed",
+                    "aborted_guest_mode_off": "Aborted guest mode off",
+                    "aborted_no_data_received": "Aborted no data received",
+                    "aborted_using_ble_keys": "Aborted using BLE keys",
+                    "aborted_using_remote_start": "Aborted using remote start",
+                    "aborted_valet_mode": "Aborted valet mode",
+                    "authenticated": "Authenticated",
+                    "dismissed_qr_code_expired": "Dismissed QR code expired",
+                    "init": "Init",
+                    "not_authenticated": "Not authenticated",
+                    "requesting_from_auth_d": "Requesting from Authd",
+                    "requesting_from_mothership": "Requesting from mothership",
+                    "showing_qr_code": "Showing QR code",
+                    "succeeded_paired_new_ble_key": "Succeeded paired new BLE key",
+                    "swiped_away": "Swiped away"
+                }
+            },
+            "homelink_device_count": {
+                "name": "Homelink devices",
+                "unit_of_measurement": "devices"
+            },
+            "hvac_fan_speed": {
+                "name": "HVAC fan speed setting"
+            },
+            "hvac_fan_status": {
+                "name": "HVAC fan speed"
+            },
+            "hvac_left_temperature_request": {
+                "name": "Left temperature request"
+            },
+            "hvac_power_state": {
+                "name": "HVAC power state",
+                "state": {
+                    "off": "Off",
+                    "on": "On",
+                    "overheat_protection": "Overheat protection",
+                    "precondition": "Precondition"
+                }
+            },
+            "hvac_right_temperature_request": {
+                "name": "Right temperature request"
+            },
             "island_status": {
                 "name": "Island status",
                 "state": {
                     "island_status_unknown": "Unknown",
-                    "off_grid": "Off grid",
-                    "off_grid_intentional": "Off grid intentional",
-                    "off_grid_unintentional": "Off grid unintentional",
-                    "on_grid": "On grid"
+                    "off_grid": "Off-grid",
+                    "off_grid_intentional": "Off-grid intentional",
+                    "off_grid_unintentional": "Off-grid unintentional",
+                    "on_grid": "On-grid"
+                }
+            },
+            "isolation_resistance": {
+                "name": "Isolation resistance"
+            },
+            "lane_departure_avoidance": {
+                "name": "Lane departure avoidance",
+                "state": {
+                    "assist": "Assist",
+                    "off": "Off",
+                    "warning": "Warning"
+                }
+            },
+            "lateral_acceleration": {
+                "name": "Lateral acceleration"
+            },
+            "lifetime_energy_used": {
+                "name": "Lifetime energy used"
+            },
+            "lifetime_energy_used_drive": {
+                "name": "Lifetime energy used drive"
+            },
+            "lights_turn_signal": {
+                "name": "Turn signal",
+                "state": {
+                    "both": "Both",
+                    "left": "Left",
+                    "off": "Off",
+                    "right": "Right"
                 }
             },
             "load_power": {
                 "name": "Load power"
             },
+            "longitudinal_acceleration": {
+                "name": "Longitudinal acceleration"
+            },
+            "module_temp_max": {
+                "name": "Module temperature maximum"
+            },
+            "module_temp_min": {
+                "name": "Module temperature minimum"
+            },
+            "pack_current": {
+                "name": "Pack current"
+            },
+            "pack_voltage": {
+                "name": "Pack voltage"
+            },
+            "paired_phone_key_and_key_fob_qty": {
+                "name": "Paired phone key and key fob quantity"
+            },
+            "pedal_position": {
+                "name": "Pedal position"
+            },
             "percentage_charged": {
                 "name": "Percentage charged"
+            },
+            "powershare_hours_left": {
+                "name": "Powershare hours left"
+            },
+            "powershare_instantaneous_power_kw": {
+                "name": "Powershare instantaneous power"
+            },
+            "powershare_status": {
+                "name": "Powershare status",
+                "state": {
+                    "enabled": "Enabled",
+                    "handshaking": "Handshaking",
+                    "inactive": "Inactive",
+                    "init": "Initializing",
+                    "reconnecting": "Reconnecting",
+                    "stopped": "Stopped"
+                }
+            },
+            "powershare_stop_reason": {
+                "name": "Powershare stop reason",
+                "state": {
+                    "authentication": "Authentication",
+                    "fault": "Fault",
+                    "reconnecting": "Reconnecting",
+                    "retry": "Retry",
+                    "soc_too_low": "SOC too low",
+                    "user": "User"
+                }
+            },
+            "powershare_type": {
+                "name": "Powershare type",
+                "state": {
+                    "home": "Home",
+                    "load": "Load",
+                    "none": "None"
+                }
+            },
+            "rated_range": {
+                "name": "Rated range"
+            },
+            "route_last_updated": {
+                "name": "Route last updated"
+            },
+            "scheduled_charging_mode": {
+                "name": "Scheduled charging mode",
+                "state": {
+                    "departure": "Departure",
+                    "off": "Off",
+                    "start_at": "Start at"
+                }
+            },
+            "sentry_mode": {
+                "name": "Sentry mode",
+                "state": {
+                    "armed": "Armed",
+                    "aware": "Aware",
+                    "idle": "Idle",
+                    "off": "Off",
+                    "panic": "Panic",
+                    "quiet": "Quiet"
+                }
+            },
+            "software_update_expected_duration_minutes": {
+                "name": "Software update expected duration"
             },
             "solar_energy_exported": {
                 "name": "Solar exported"
             },
             "solar_power": {
                 "name": "Solar power"
+            },
+            "speed_limit_warning": {
+                "name": "Speed limit warning",
+                "state": {
+                    "chime": "Chime",
+                    "display": "Display",
+                    "none": "None"
+                }
+            },
+            "tonneau_tent_mode": {
+                "name": "Tonneau tent mode",
+                "state": {
+                    "active": "Active",
+                    "failed": "Failed",
+                    "inactive": "Inactive",
+                    "moving": "Moving"
+                }
             },
             "total_battery_charge": {
                 "name": "Battery charged"
@@ -486,6 +1009,14 @@
             "total_solar_generation": {
                 "name": "Solar generated"
             },
+            "tpms_hard_warnings": {
+                "name": "Tire pressure hard warnings",
+                "unit_of_measurement": "warnings"
+            },
+            "tpms_soft_warnings": {
+                "name": "Tire pressure soft warnings",
+                "unit_of_measurement": "warnings"
+            },
             "vehicle_state_odometer": {
                 "name": "Odometer"
             },
@@ -502,7 +1033,7 @@
                 "name": "Tire pressure rear right"
             },
             "version": {
-                "name": "version"
+                "name": "Version"
             },
             "vin": {
                 "name": "Vehicle",
@@ -524,7 +1055,7 @@
             }
         },
         "switch": {
-            "charge_state_user_charge_enable_request": {
+            "charge_state_charging_state": {
                 "name": "Charge"
             },
             "climate_state_auto_seat_climate_left": {
@@ -541,6 +1072,9 @@
             },
             "components_disallow_charge_from_grid_with_solar_installed": {
                 "name": "Allow charging from grid"
+            },
+            "guest_mode_enabled": {
+                "name": "Guest mode"
             },
             "user_settings_storm_mode_enabled": {
                 "name": "Storm watch"
@@ -564,6 +1098,9 @@
         },
         "command_exception": {
             "message": "Command returned exception: {message}"
+        },
+        "command_no_response": {
+            "message": "Command had no response"
         },
         "command_no_result": {
             "message": "Command had no result"
@@ -592,14 +1129,20 @@
         "no_vehicle_data_for_device": {
             "message": "No vehicle data for device ID: {device_id}"
         },
+        "oauth_implementation_not_available": {
+            "message": "OAuth implementation not available, try reauthenticating"
+        },
         "set_scheduled_charging_time": {
-            "message": "Time required to complete the operation"
+            "message": "Scheduled charging time is required when enabling"
         },
         "set_scheduled_departure_off_peak": {
-            "message": "To enable scheduled departure, end off peak time is required."
+            "message": "Off-peak charging end time is required when enabling"
         },
         "set_scheduled_departure_preconditioning": {
-            "message": "Departure time required to enable preconditioning"
+            "message": "Preconditioning departure time is required when enabling"
+        },
+        "token_data_malformed": {
+            "message": "Token data malformed, try reauthenticating"
         },
         "wake_up_failed": {
             "message": "Failed to wake up vehicle: {message}"
@@ -608,7 +1151,100 @@
             "message": "Timed out trying to wake up vehicle"
         }
     },
+    "selector": {
+        "days_of_week": {
+            "options": {
+                "friday": "Friday",
+                "monday": "Monday",
+                "saturday": "Saturday",
+                "sunday": "Sunday",
+                "thursday": "Thursday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday"
+            }
+        }
+    },
     "services": {
+        "add_charge_schedule": {
+            "description": "Adds or modifies a charging schedule for a vehicle.",
+            "fields": {
+                "days_of_week": {
+                    "description": "Select which days this schedule should be enabled on. You can select multiple days.",
+                    "name": "Days of week"
+                },
+                "device_id": {
+                    "description": "Vehicle to schedule.",
+                    "name": "Vehicle"
+                },
+                "enable": {
+                    "description": "If this schedule should be considered for execution.",
+                    "name": "Enable"
+                },
+                "end_time": {
+                    "description": "The time this schedule ends, e.g. 01:05 for 1:05 AM.",
+                    "name": "End time"
+                },
+                "id": {
+                    "description": "The ID of the schedule, use an existing ID to modify.",
+                    "name": "Schedule ID"
+                },
+                "location": {
+                    "description": "The approximate location the vehicle must be at to use this schedule. Defaults to Home Assistant's configured location.",
+                    "name": "Location"
+                },
+                "name": {
+                    "description": "The name of the schedule.",
+                    "name": "Name"
+                },
+                "one_time": {
+                    "description": "If this is a one-time schedule.",
+                    "name": "One-time"
+                },
+                "start_time": {
+                    "description": "The time this schedule begins, e.g. 01:05 for 1:05 AM.",
+                    "name": "Start time"
+                }
+            },
+            "name": "Add charge schedule"
+        },
+        "add_precondition_schedule": {
+            "description": "Adds or modifies a preconditioning schedule for a vehicle.",
+            "fields": {
+                "days_of_week": {
+                    "description": "Select which days this schedule should be enabled on. You can select multiple days.",
+                    "name": "Days of week"
+                },
+                "device_id": {
+                    "description": "Vehicle to schedule.",
+                    "name": "Vehicle"
+                },
+                "enable": {
+                    "description": "If this schedule should be considered for execution.",
+                    "name": "Enable"
+                },
+                "id": {
+                    "description": "The ID of the schedule, use an existing ID to modify.",
+                    "name": "Schedule ID"
+                },
+                "location": {
+                    "description": "The approximate location the vehicle must be at to use this schedule. Defaults to Home Assistant's configured location.",
+                    "name": "Location"
+                },
+                "name": {
+                    "description": "The name of the schedule.",
+                    "name": "Name"
+                },
+                "one_time": {
+                    "description": "If this is a one-time schedule.",
+                    "name": "One-time"
+                },
+                "precondition_time": {
+                    "description": "The time the vehicle should complete preconditioning, e.g. 01:05 for 1:05 AM.",
+                    "name": "Precondition time"
+                }
+            },
+            "name": "Add precondition schedule"
+        },
         "navigation_gps_request": {
             "description": "Sets vehicle navigation to the provided latitude/longitude coordinates.",
             "fields": {
@@ -627,8 +1263,36 @@
             },
             "name": "Navigate to coordinates"
         },
+        "remove_charge_schedule": {
+            "description": "Removes a charging schedule for a vehicle.",
+            "fields": {
+                "device_id": {
+                    "description": "Vehicle to remove schedule from.",
+                    "name": "Vehicle"
+                },
+                "id": {
+                    "description": "The ID of the schedule to remove.",
+                    "name": "Schedule ID"
+                }
+            },
+            "name": "Remove charge schedule"
+        },
+        "remove_precondition_schedule": {
+            "description": "Removes a preconditioning schedule for a vehicle.",
+            "fields": {
+                "device_id": {
+                    "description": "Vehicle to remove schedule from.",
+                    "name": "Vehicle"
+                },
+                "id": {
+                    "description": "The ID of the schedule to remove.",
+                    "name": "Schedule ID"
+                }
+            },
+            "name": "Remove precondition schedule"
+        },
         "set_scheduled_charging": {
-            "description": "Sets a time at which charging should be completed.",
+            "description": "Sets a time at which charging should be started.",
             "fields": {
                 "device_id": {
                     "description": "Vehicle to schedule.",
@@ -662,15 +1326,15 @@
                 },
                 "end_off_peak_time": {
                     "description": "Time to complete charging by.",
-                    "name": "End off peak time"
+                    "name": "End off-peak time"
                 },
                 "off_peak_charging_enabled": {
-                    "description": "Enable off peak charging.",
-                    "name": "Off peak charging enabled"
+                    "description": "Enable off-peak charging.",
+                    "name": "Off-peak charging enabled"
                 },
                 "off_peak_charging_weekdays_only": {
-                    "description": "Enable off peak charging on weekdays only.",
-                    "name": "Off peak charging weekdays only"
+                    "description": "Enable off-peak charging on weekdays only.",
+                    "name": "Off-peak charging weekdays only"
                 },
                 "preconditioning_enabled": {
                     "description": "Enable preconditioning.",
@@ -695,8 +1359,8 @@
                     "name": "Enable"
                 },
                 "pin": {
-                    "description": "4 digit PIN.",
-                    "name": "PIN"
+                    "description": "4-digit code to enable or disable the setting",
+                    "name": "PIN code"
                 }
             },
             "name": "Set speed limit"
@@ -709,7 +1373,7 @@
                     "name": "Energy Site"
                 },
                 "tou_settings": {
-                    "description": "See https://developer.tesla.com/docs/fleet-api#time_of_use_settings for details.",
+                    "description": "See {time_of_use_url} for details.",
                     "name": "Settings"
                 }
             },
@@ -727,8 +1391,8 @@
                     "name": "Enable"
                 },
                 "pin": {
-                    "description": "4 digit PIN.",
-                    "name": "PIN"
+                    "description": "4-digit code to enable or disable the setting",
+                    "name": "PIN code"
                 }
             },
             "name": "Set valet mode"

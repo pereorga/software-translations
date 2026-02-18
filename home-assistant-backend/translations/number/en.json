@@ -21,7 +21,7 @@
                     "name": "Mode",
                     "state": {
                         "auto": "Automatic",
-                        "box": "Box",
+                        "box": "Input field",
                         "slider": "Slider"
                     }
                 },
@@ -29,6 +29,9 @@
                     "name": "Step"
                 }
             }
+        },
+        "absolute_humidity": {
+            "name": "Absolute humidity"
         },
         "apparent_power": {
             "name": "Apparent power"
@@ -114,6 +117,9 @@
         "pm25": {
             "name": "PM2.5"
         },
+        "pm4": {
+            "name": "PM4"
+        },
         "power": {
             "name": "Power"
         },
@@ -128,6 +134,9 @@
         },
         "pressure": {
             "name": "Pressure"
+        },
+        "reactive_energy": {
+            "name": "Reactive energy"
         },
         "reactive_power": {
             "name": "Reactive power"
@@ -147,8 +156,11 @@
         "temperature": {
             "name": "Temperature"
         },
+        "temperature_delta": {
+            "name": "Temperature delta"
+        },
         "volatile_organic_compounds": {
-            "name": "VOCs"
+            "name": "Volatile organic compounds"
         },
         "voltage": {
             "name": "Voltage"
@@ -167,6 +179,9 @@
         },
         "weight": {
             "name": "Weight"
+        },
+        "wind_direction": {
+            "name": "Wind direction"
         },
         "wind_speed": {
             "name": "Wind speed"

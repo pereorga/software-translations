@@ -12,6 +12,13 @@
         },
         "flow_title": "{serial} ({host})",
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "description": "Per a la versi\u00f3 de microprogramari 7.0 i posteriors, introdueix les credencials del n\u00favol d'Enphase, per als models m\u00e9s antics, introdueix el nom d'usuari `installer` sense contrasenya."
+            },
             "reconfigure": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -97,14 +104,16 @@
             "storage_mode": {
                 "name": "Mode emmagatzematge",
                 "state": {
-                    "savings": "Mode estalvi",
-                    "self_consumption": "Autoconsum"
+                    "savings": "Mode estalvi"
                 }
             }
         },
         "sensor": {
             "acb_battery_state": {
                 "state": {
+                    "charging": "Carregant",
+                    "discharging": "Descarregant",
+                    "full": "Ple/na",
                     "idle": "Inactiu"
                 }
             },
@@ -126,11 +135,20 @@
             "daily_production": {
                 "name": "Producci\u00f3 d'energia avui"
             },
+            "energy_today": {
+                "name": "Producci\u00f3 d'energia avui"
+            },
+            "grid_status": {
+                "name": "Estat de xarxa el\u00e8ctrica"
+            },
             "last_reported": {
                 "name": "\u00daltima dada"
             },
             "lifetime_consumption": {
                 "name": "Energia total consumida"
+            },
+            "lifetime_energy": {
+                "name": "Energia total produ\u00efda"
             },
             "lifetime_net_consumption": {
                 "name": "Energia neta total consumida"
@@ -149,6 +167,12 @@
             },
             "max_capacity": {
                 "name": "Capacitat de la bateria"
+            },
+            "mid_state": {
+                "state": {
+                    "close": "Tancat",
+                    "open": "Obert"
+                }
             },
             "net_consumption": {
                 "name": "Pot\u00e8ncia neta consumida actual"

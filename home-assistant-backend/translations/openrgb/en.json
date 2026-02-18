@@ -1,0 +1,92 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reconfigure_successful": "Re-configuration was successful"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_host": "Invalid hostname or IP address",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of the computer running the OpenRGB SDK server.",
+                    "port": "The port number that the OpenRGB SDK server is running on."
+                },
+                "description": "Update the connection settings for your OpenRGB SDK server.",
+                "title": "Reconfigure OpenRGB SDK server"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "name": "Name",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of the computer running the OpenRGB SDK server.",
+                    "name": "A name for this integration entry, like the name of the computer running the OpenRGB SDK server.",
+                    "port": "The port number that the OpenRGB SDK server is running on."
+                },
+                "description": "Set up your OpenRGB SDK server to allow control from within Home Assistant.",
+                "title": "Set up OpenRGB SDK server"
+            }
+        }
+    },
+    "entity": {
+        "light": {
+            "openrgb_light": {
+                "state_attributes": {
+                    "effect": {
+                        "state": {
+                            "breathing": "Breathing",
+                            "chase": "Chase",
+                            "chase_fade": "Chase fade",
+                            "cram": "Cram",
+                            "flashing": "Flashing",
+                            "music": "Music",
+                            "neon": "Neon",
+                            "rainbow": "Rainbow",
+                            "random": "Random",
+                            "random_flicker": "Random flicker",
+                            "scan": "Scan",
+                            "spectrum_cycle": "Spectrum cycle",
+                            "spring": "Spring",
+                            "stack": "Stack",
+                            "strobe": "Strobe",
+                            "water": "Water",
+                            "wave": "Wave"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "profile": {
+                "name": "Profile"
+            }
+        }
+    },
+    "exceptions": {
+        "communication_error": {
+            "message": "Failed to communicate with OpenRGB SDK server {server_address}: {error}"
+        },
+        "effect_no_color_support": {
+            "message": "Effect `{effect}` does not support color control on {device_name}"
+        },
+        "openrgb_error": {
+            "message": "An OpenRGB error occurred: {error}"
+        },
+        "profile_not_found": {
+            "message": "Profile `{profile}` not found"
+        },
+        "unsupported_effect": {
+            "message": "Effect `{effect}` is not supported by {device_name}"
+        }
+    }
+}

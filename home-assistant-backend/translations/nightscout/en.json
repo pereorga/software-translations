@@ -14,7 +14,10 @@
                     "api_key": "API key",
                     "url": "URL"
                 },
-                "description": "- URL: the address of your nightscout instance. I.e.: https://myhomeassistant.duckdns.org:5423\n- API Key (optional): Only use if your instance is protected (auth_default_roles != readable).",
+                "data_description": {
+                    "api_key": "Optional; only use it if your instance is protected (auth_default_roles != readable).",
+                    "url": "The address of your Nightscout instance. For example: {example_url}."
+                },
                 "title": "Enter your Nightscout server information."
             }
         }

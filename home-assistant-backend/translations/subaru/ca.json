@@ -17,22 +17,18 @@
                 "data": {
                     "pin": "Codi PIN"
                 },
-                "description": "Introdueix el teu PIN de MySubaru\nNOTA: tots els vehicles associats a un compte han de tenir el mateix PIN",
-                "title": "Configuraci\u00f3 de Subaru Starlink"
+                "description": "Introdueix el teu PIN de MySubaru\nNOTA: tots els vehicles associats a un compte han de tenir el mateix PIN"
             },
             "two_factor": {
                 "data": {
                     "contact_method": "Selecciona un m\u00e8tode de contacte:"
-                },
-                "description": "Autenticaci\u00f3 de dos factors requerida",
-                "title": "Configuraci\u00f3 de Subaru Starlink"
+                }
             },
             "two_factor_validate": {
                 "data": {
                     "validation_code": "Codi de validaci\u00f3"
                 },
-                "description": "Introdueix el codi de validaci\u00f3 rebut",
-                "title": "Configuraci\u00f3 de Subaru Starlink"
+                "description": "Introdueix el codi de validaci\u00f3 rebut"
             },
             "user": {
                 "data": {
@@ -40,8 +36,7 @@
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 },
-                "description": "Introdueix les teves credencials de MySubaru\nNOTA: la primera configuraci\u00f3 pot tardar fins a 30 segons",
-                "title": "Configuraci\u00f3 de Subaru Starlink"
+                "description": "Introdueix les teves credencials de MySubaru\nNOTA: la primera configuraci\u00f3 pot tardar fins a 30 segons"
             }
         }
     },
@@ -64,17 +59,14 @@
                 "data": {
                     "update_enabled": "Activa el sondeig de vehicle"
                 },
-                "description": "Quan estigui activat, el sondeig del vehicle enviar\u00e0 una ordre al vehicle cada 2 hores per tal d'obtenir noves dades. Sense el sondeig del vehicle, les noves dades nom\u00e9s es rebran quan el vehicle envia autom\u00e0ticament les dades (normalment despr\u00e9s de l'aturada del motor).",
-                "title": "Opcions de Subaru Starlink"
+                "description": "Quan estigui activat, el sondeig del vehicle enviar\u00e0 una ordre al vehicle cada 2 hores per tal d'obtenir noves dades. Sense el sondeig del vehicle, les noves dades nom\u00e9s es rebran quan el vehicle envia autom\u00e0ticament les dades (normalment despr\u00e9s de l'aturada del motor)."
             }
         }
     },
     "services": {
         "unlock_specific_door": {
-            "description": "Desbloqueja una o m\u00e9s portes espec\u00edfiques.",
             "fields": {
                 "door": {
-                    "description": "Un dels seg\u00fcents: 'all', 'driver' o 'tailgate'.",
                     "name": "Porta"
                 }
             },

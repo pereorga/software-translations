@@ -22,7 +22,6 @@
         },
         "step": {
             "choice_enter_manual_or_fetch_cloud": {
-                "description": "Els dispositius LaMetric es poden configurar a Home Assistant de dues maneres diferents. \n\nPots introduir tota la informaci\u00f3 del dispositiu i els 'tokens' API, o b\u00e9, Home Assistant els pot importar des del teu compte de LaMetric.com.",
                 "menu_options": {
                     "manual_entry": "Introdueix manualment",
                     "pick_implementation": "Importa des de LaMetric.com (recomanat)"
@@ -39,11 +38,16 @@
                     "host": "Amfitri\u00f3"
                 },
                 "data_description": {
-                    "api_key": "Pots trobar aquesta clau API a la [p\u00e0gina de dispositius del teu compte de desenvolupador de LaMetric](https://developer.lametric.com/user/devices).",
                     "host": "Adre\u00e7a IP o nom d'amfitri\u00f3 de LaMetric TIME dins la teva xarxa."
                 }
             },
             "pick_implementation": {
+                "data": {
+                    "implementation": "Credencials d'aplicaci\u00f3"
+                },
+                "data_description": {
+                    "implementation": "Les credencials que vols fer servir per autenticar."
+                },
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             }
         }
@@ -75,7 +79,7 @@
             "brightness_mode": {
                 "name": "Mode de lluminositat",
                 "state": {
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
                     "manual": "Manual"
                 }
             }
@@ -195,9 +199,6 @@
                 "device_id": {
                     "description": "Dispositiu LaMetric on mostrar el missatge.",
                     "name": "Dispositiu"
-                },
-                "icon": {
-                    "description": "N\u00famero d'identificaci\u00f3 de la icona o animaci\u00f3 a mostrar. Pots trobar la llista de totes les icones i els IDs a: https://developer.lametric.com/icons."
                 },
                 "icon_type": {
                     "description": "Tipus d'icona a mostrar. Indica la naturalesa de la notificaci\u00f3.",

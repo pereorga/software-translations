@@ -19,6 +19,42 @@
         }
     },
     "entity": {
+        "event": {
+            "auto_shut_off_duration": {
+                "name": "Duration auto shut-off",
+                "state_attributes": {
+                    "duration": {
+                        "name": "Duration"
+                    },
+                    "event_type": {
+                        "state": {
+                            "duration_threshold": "Duration",
+                            "volume_threshold": "Volume"
+                        }
+                    },
+                    "volume": {
+                        "name": "Volume"
+                    }
+                }
+            },
+            "auto_shut_off_volume": {
+                "name": "Volume auto shut-off",
+                "state_attributes": {
+                    "duration": {
+                        "name": "Duration"
+                    },
+                    "event_type": {
+                        "state": {
+                            "duration_threshold": "Duration",
+                            "volume_threshold": "Volume"
+                        }
+                    },
+                    "volume": {
+                        "name": "Volume"
+                    }
+                }
+            }
+        },
         "sensor": {
             "mqtt_up_since": {
                 "name": "MQTT up since"

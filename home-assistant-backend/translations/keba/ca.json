@@ -1,10 +1,21 @@
 {
     "services": {
+        "authorize": {
+            "description": "Autoritza un proc\u00e9s de c\u00e0rrega amb l'etiqueta RFID predefinida en el fitxer de configuraci\u00f3."
+        },
+        "deauthorize": {
+            "description": "Desautoritza el proc\u00e9s de c\u00e0rrega actual amb l'etiqueta RFID predefinida en el fitxer de configuraci\u00f3."
+        },
         "disable": {
+            "description": "Atura el proc\u00e9s de c\u00e0rrega si l'estaci\u00f3 de c\u00e0rrega \u00e9s autoritzada.",
             "name": "Desactiva"
         },
         "enable": {
+            "description": "Inicia un proc\u00e9s de c\u00e0rrega si l'estaci\u00f3 de c\u00e0rrega \u00e9s autoritzada.",
             "name": "Activa"
+        },
+        "request_data": {
+            "description": "Sol\u00b7licita dades noves a l'estaci\u00f3 de c\u00e0rrega."
         },
         "set_energy": {
             "fields": {

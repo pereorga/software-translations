@@ -1,0 +1,217 @@
+{
+    "common": {
+        "code": "Access code",
+        "code_input_description": "Code to toggle switchable outputs"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "code": "Access code",
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "code": "Code to toggle switchable outputs",
+                    "host": "The IP address of the alarm panel",
+                    "port": "The port of the alarm panel"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "output": {
+            "entry_type": "Output",
+            "error": {
+                "already_configured": "Device is already configured"
+            },
+            "initiate_flow": {
+                "user": "Add output"
+            },
+            "step": {
+                "reconfigure": {
+                    "data": {
+                        "name": "Name",
+                        "type": "Output type"
+                    },
+                    "data_description": {
+                        "name": "The name to give to the sensor",
+                        "type": "Choose the device class you would like the sensor to show as"
+                    },
+                    "title": "Reconfigure output {output_number}"
+                },
+                "user": {
+                    "data": {
+                        "name": "Name",
+                        "output_number": "Output number",
+                        "type": "Output type"
+                    },
+                    "data_description": {
+                        "name": "The name to give to the sensor",
+                        "output_number": "Enter output number to configure",
+                        "type": "Choose the device class you would like the sensor to show as"
+                    },
+                    "title": "Configure output"
+                }
+            }
+        },
+        "partition": {
+            "entry_type": "Partition",
+            "error": {
+                "already_configured": "Device is already configured"
+            },
+            "initiate_flow": {
+                "user": "Add partition"
+            },
+            "step": {
+                "reconfigure": {
+                    "data": {
+                        "arm_home_mode": "Arm home mode",
+                        "name": "Name"
+                    },
+                    "data_description": {
+                        "arm_home_mode": "The mode in which the partition is armed when 'arm home' is used. For more information on what the differences are between them, please refer to Satel Integra manual."
+                    },
+                    "title": "Reconfigure partition {partition_number}"
+                },
+                "user": {
+                    "data": {
+                        "arm_home_mode": "Arm home mode",
+                        "name": "Name",
+                        "partition_number": "Partition number"
+                    },
+                    "data_description": {
+                        "arm_home_mode": "The mode in which the partition is armed when 'arm home' is used. For more information on what the differences are between them, please refer to Satel Integra manual.",
+                        "name": "The name to give to the alarm panel",
+                        "partition_number": "Enter partition number to configure"
+                    },
+                    "title": "Configure partition"
+                }
+            }
+        },
+        "switchable_output": {
+            "entry_type": "Switchable output",
+            "error": {
+                "already_configured": "Device is already configured"
+            },
+            "initiate_flow": {
+                "user": "Add switchable output"
+            },
+            "step": {
+                "reconfigure": {
+                    "data": {
+                        "name": "Name"
+                    },
+                    "data_description": {
+                        "name": "The name to give to the switch"
+                    },
+                    "title": "Reconfigure switchable output {switchable_output_number}"
+                },
+                "user": {
+                    "data": {
+                        "name": "Name",
+                        "switchable_output_number": "Switchable output number"
+                    },
+                    "data_description": {
+                        "name": "The name to give to the switch",
+                        "switchable_output_number": "Enter switchable output number to configure"
+                    },
+                    "title": "Configure switchable output"
+                }
+            }
+        },
+        "zone": {
+            "entry_type": "Zone",
+            "error": {
+                "already_configured": "Device is already configured"
+            },
+            "initiate_flow": {
+                "user": "Add zone"
+            },
+            "step": {
+                "reconfigure": {
+                    "data": {
+                        "name": "Name",
+                        "type": "Zone type"
+                    },
+                    "data_description": {
+                        "name": "The name to give to the sensor",
+                        "type": "Choose the device class you would like the sensor to show as"
+                    },
+                    "title": "Reconfigure zone {zone_number}"
+                },
+                "user": {
+                    "data": {
+                        "name": "Name",
+                        "type": "Zone type",
+                        "zone_number": "Zone number"
+                    },
+                    "data_description": {
+                        "name": "The name to give to the sensor",
+                        "type": "Choose the device class you would like the sensor to show as",
+                        "zone_number": "Enter zone number to configure"
+                    },
+                    "title": "Configure zone"
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_import_issue_cannot_connect": {
+            "description": "Configuring {integration_title} using YAML is being removed but there was an connection error importing your existing configuration.\n\nEnsure connection to {integration_title} works and restart Home Assistant to try again or remove the `{domain}` YAML configuration from your configuration.yaml file and add the {integration_title} integration manually.",
+            "title": "YAML import failed due to a connection error"
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "code": "Access code"
+                },
+                "data_description": {
+                    "code": "Code to toggle switchable outputs"
+                }
+            }
+        }
+    },
+    "selector": {
+        "binary_sensor_device_class": {
+            "options": {
+                "battery": "Battery",
+                "battery_charging": "Charging",
+                "carbon_monoxide": "Carbon monoxide",
+                "cold": "Cold",
+                "connectivity": "Connectivity",
+                "door": "Door",
+                "garage_door": "Garage door",
+                "gas": "Gas",
+                "heat": "Heat",
+                "light": "Light",
+                "lock": "Lock",
+                "moisture": "Moisture",
+                "motion": "Motion",
+                "moving": "Moving",
+                "occupancy": "Occupancy",
+                "opening": "Opening",
+                "plug": "Plug",
+                "power": "Power",
+                "presence": "Presence",
+                "problem": "Problem",
+                "running": "Running",
+                "safety": "Safety",
+                "smoke": "Smoke",
+                "sound": "Sound",
+                "tamper": "Tamper",
+                "update": "Update",
+                "vibration": "Vibration",
+                "window": "Window"
+            }
+        }
+    }
+}

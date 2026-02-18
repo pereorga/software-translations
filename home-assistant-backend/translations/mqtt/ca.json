@@ -1,10 +1,6 @@
 {
     "config": {
         "abort": {
-            "addon_connection_failed": "No s'ha pogut connectar al complement {addon}. Comprova el seu estat i torna-ho a provar m\u00e9s tard.",
-            "addon_info_failed": "No s'ha pogut obtenir la informaci\u00f3 del complement {addon}.",
-            "addon_install_failed": "No s'ha pogut instal\u00b7lar el complement {addon}.",
-            "addon_start_failed": "No s'ha pogut iniciar el complement {addon}.",
             "already_configured": "El servei ja est\u00e0 configurat",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
@@ -13,9 +9,7 @@
         "error": {
             "bad_birth": "T\u00f2pic del missatge de naixement ('birth') inv\u00e0lid",
             "bad_certificate": "El certificat CA \u00e9s inv\u00e0lid",
-            "bad_client_cert": "Certificat de client inv\u00e0lid, assegura't que la codificaci\u00f3 del fitxer sigui PEM",
             "bad_client_cert_key": "El certificat de client i la clau privada no formen una parella v\u00e0lida",
-            "bad_client_key": "Clau privada inv\u00e0lida, assegura't que la codificaci\u00f3 del fitxer sigui PEM i sense contrasenya",
             "bad_discovery_prefix": "Prefix de descobriment inv\u00e0lid",
             "bad_will": "T\u00f2pic del missatge d'\u00faltima voluntat ('will') inv\u00e0lid",
             "bad_ws_headers": "Proporciona cap\u00e7aleres HTTP v\u00e0lides en format d'objecte JSON",
@@ -31,6 +25,7 @@
                     "client_cert": "Puja fitxer de certificat client",
                     "client_id": "ID de client (deixa-ho buit per generar-lo aleat\u00f2riament)",
                     "client_key": "Puja fitxer de clau privada",
+                    "client_key_password": "Contrasenya",
                     "keepalive": "Temps entre enviaments de missatges de manteniment viu ('keep alive')",
                     "password": "Contrasenya",
                     "port": "Port",
@@ -43,37 +38,49 @@
                     "ws_headers": "Cap\u00e7aleres del WebSocket en format JSON",
                     "ws_path": "Ruta del WebSocket"
                 },
-                "data_description": {
-                    "password": "Contrasenya per iniciar sessi\u00f3 al teu 'broker' MQTT.",
-                    "username": "Nom d'usuari per iniciar sessi\u00f3 al teu 'broker' MQTT."
-                },
                 "description": "Introdueix la informaci\u00f3 de connexi\u00f3 del teu broker MQTT."
-            },
-            "hassio_confirm": {
-                "description": "Vols configurar Home Assistant perqu\u00e8 es connecti amb el broker MQTT proporcionat pel complement {addon}?",
-                "title": "Broker MQTT via complement de Home Assistant"
-            },
-            "install_addon": {
-                "title": "Instal\u00b7lant complement"
             },
             "reauth_confirm": {
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
-                },
-                "data_description": {
-                    "password": "Contrasenya per iniciar sessi\u00f3 al teu 'broker' MQTT.",
-                    "username": "Nom d'usuari per iniciar sessi\u00f3 al teu 'broker' MQTT."
                 }
-            },
-            "start_addon": {
-                "title": "Iniciant complement"
             },
             "user": {
                 "description": "Tria com connectar-se al 'broker' MQTT:",
                 "menu_options": {
-                    "addon": "Utilitza el complement oficial {addon}.",
                     "broker": "Introducci\u00f3 manual de la configuraci\u00f3 de connexi\u00f3 del 'broker' MQTT"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "device": {
+            "abort": {
+                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            },
+            "step": {
+                "device": {
+                    "data": {
+                        "name": "Nom"
+                    }
+                },
+                "mqtt_platform_config": {
+                    "data_description": {
+                        "position_closed": "N\u00famero que representa la posici\u00f3 tancada. La posici\u00f3 de la v\u00e0lvula s'escalar\u00e0 a l'interval (posici\u00f3 \u00abtancada\u00bb\u2026posici\u00f3 \u00aboberta\u00bb) quan es realitzi una acci\u00f3 i s'escalar\u00e0 de nou quan es rebi un valor.",
+                        "position_open": "N\u00famero que representa la posici\u00f3 oberta. La posici\u00f3 de la v\u00e0lvula s'escalar\u00e0 a l'interval (posici\u00f3 \u00abtancada\u00bb\u2026posici\u00f3 \u00aboberta\u00bb) quan es realitzi una acci\u00f3 i s'escalar\u00e0 de nou quan es rebi un valor."
+                    },
+                    "sections": {
+                        "cover_position_settings": {
+                            "data": {
+                                "position_open": "Valor de la posici\u00f3 \u00aboberta\u00bb"
+                            },
+                            "data_description": {
+                                "position_open": "N\u00famero que representa la posici\u00f3 \u00aboberta\u00bb.",
+                                "set_position_topic": "El tema MQTT on publicar les ordres de posici\u00f3. Cal utilitzar tamb\u00e9 el tema de posici\u00f3 establerta si voleu utilitzar el tema de posici\u00f3. Useu una plantilla si el tema de posici\u00f3 vol valors diferents dels de l'interval \u00abposici\u00f3 tancada\u00bb - \u00abposici\u00f3_oberta\u00bb. Si no es defineix cap plantilla i la posici\u00f3 \u00abtancada\u00bb != 100 i la posici\u00f3 \u00aboberta\u00bb != 0, aleshores el valor de posici\u00f3 adequat es calcula a partir de la posici\u00f3 percentual. [M\u00e9s informaci\u00f3.]({url}#set_position_topic)"
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -104,14 +111,11 @@
         "error": {
             "bad_birth": "T\u00f2pic del missatge de naixement ('birth') inv\u00e0lid",
             "bad_certificate": "El certificat CA \u00e9s inv\u00e0lid",
-            "bad_client_cert": "Certificat de client inv\u00e0lid, assegura't que la codificaci\u00f3 del fitxer sigui PEM",
             "bad_client_cert_key": "El certificat de client i la clau privada no formen una parella v\u00e0lida",
-            "bad_client_key": "Clau privada inv\u00e0lida, assegura't que la codificaci\u00f3 del fitxer sigui PEM i sense contrasenya",
             "bad_discovery_prefix": "Prefix de descobriment inv\u00e0lid",
             "bad_will": "T\u00f2pic del missatge d'\u00faltima voluntat ('will') inv\u00e0lid",
             "bad_ws_headers": "Proporciona cap\u00e7aleres HTTP v\u00e0lides en format d'objecte JSON",
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_inclusion": "El certificat de client i la clau privada s'han de configurar conjuntament"
+            "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
             "broker": {
@@ -133,10 +137,6 @@
                     "username": "Nom d'usuari",
                     "ws_headers": "Cap\u00e7aleres del WebSocket en format JSON",
                     "ws_path": "Ruta del WebSocket"
-                },
-                "data_description": {
-                    "password": "Contrasenya per iniciar sessi\u00f3 al teu 'broker' MQTT.",
-                    "username": "Nom d'usuari per iniciar sessi\u00f3 al teu 'broker' MQTT."
                 },
                 "description": "Introdueix la informaci\u00f3 de connexi\u00f3 del teu broker MQTT.",
                 "title": "Opcions del broker"
@@ -162,11 +162,214 @@
         }
     },
     "selector": {
-        "set_ca_cert": {
+        "alarm_control_panel_features": {
+            "options": {
+                "arm_away": "Activa, a fora",
+                "arm_custom_bypass": "Activa amb bypass personalitzat",
+                "arm_home": "Activa, a casa",
+                "arm_night": "Activa, mode nit",
+                "arm_vacation": "Activa, mode vacances",
+                "trigger": "Dispara"
+            }
+        },
+        "climate_modes": {
+            "options": {
+                "auto": "Auto",
+                "cool": "Refreda",
+                "dry": "Asseca",
+                "fan_only": "Nom\u00e9s ventilador",
+                "heat": "Escalfa",
+                "heat_cool": "Escalfa/Refreda",
+                "off": "OFF"
+            }
+        },
+        "device_class_binary_sensor": {
+            "options": {
+                "battery": "Bateria",
+                "battery_charging": "Carregant",
+                "carbon_monoxide": "Mon\u00f2xid de carboni",
+                "cold": "Fred",
+                "connectivity": "Connectivitat",
+                "door": "Porta",
+                "garage_door": "Porta de garatge",
+                "gas": "Gas",
+                "heat": "Calent",
+                "light": "Llum",
+                "lock": "Pany",
+                "moisture": "Humitat",
+                "motion": "Moviment",
+                "moving": "En moviment",
+                "occupancy": "Ocupaci\u00f3",
+                "opening": "Obrint",
+                "plug": "Endoll",
+                "power": "Pot\u00e8ncia",
+                "presence": "Pres\u00e8ncia",
+                "problem": "Problema",
+                "running": "En funcionament",
+                "safety": "Seguretat",
+                "smoke": "Fum",
+                "sound": "So",
+                "tamper": "Manipulaci\u00f3",
+                "update": "Actualitzaci\u00f3",
+                "vibration": "Vibraci\u00f3",
+                "window": "Finestra"
+            }
+        },
+        "device_class_button": {
+            "options": {
+                "identify": "Identifica",
+                "restart": "Reinicia",
+                "update": "Actualitza"
+            }
+        },
+        "device_class_cover": {
+            "options": {
+                "awning": "Tendal",
+                "blind": "Persiana",
+                "curtain": "Cortina",
+                "damper": "Amortidor",
+                "door": "Porta",
+                "garage": "Garatge",
+                "gate": "Tanca",
+                "shade": "Tendal",
+                "shutter": "Finestr\u00f3",
+                "window": "Finestra"
+            }
+        },
+        "device_class_sensor": {
+            "options": {
+                "apparent_power": "Pot\u00e8ncia aparent",
+                "aqi": "\u00cdndex de qualitat de l'aire",
+                "area": "\u00c0rea",
+                "atmospheric_pressure": "Pressi\u00f3 atmosf\u00e8rica",
+                "battery": "Bateria",
+                "carbon_dioxide": "Di\u00f2xid de carboni",
+                "carbon_monoxide": "Mon\u00f2xid de carboni",
+                "conductivity": "Conductivitat",
+                "current": "Intensitat",
+                "data_rate": "Velocitat de dades",
+                "data_size": "Mida de dades",
+                "date": "Data",
+                "distance": "Dist\u00e0ncia",
+                "duration": "Durada",
+                "energy": "Energia",
+                "energy_storage": "Energia emmagatzemada",
+                "frequency": "Freq\u00fc\u00e8ncia",
+                "gas": "Gas",
+                "humidity": "Humitat",
+                "illuminance": "Il\u00b7luminaci\u00f3",
+                "irradiance": "Irradi\u00e0ncia",
+                "moisture": "Humitat",
+                "nitrogen_dioxide": "Di\u00f2xid de nitrogen",
+                "nitrogen_monoxide": "Mon\u00f2xid de nitrogen",
+                "nitrous_oxide": "\u00d2xid de nitrogen",
+                "ozone": "Oz\u00f3",
+                "ph": "pH",
+                "pm1": "PM1",
+                "pm10": "PM10",
+                "pm25": "PM2.5",
+                "power": "Pot\u00e8ncia",
+                "power_factor": "Factor de pot\u00e8ncia",
+                "precipitation": "Precipitaci\u00f3",
+                "precipitation_intensity": "Intensitat de precipitaci\u00f3",
+                "pressure": "Pressi\u00f3",
+                "reactive_power": "Pot\u00e8ncia reactiva",
+                "signal_strength": "Pot\u00e8ncia del senyal",
+                "sound_pressure": "Pressi\u00f3 sonora",
+                "speed": "Velocitat",
+                "sulphur_dioxide": "Di\u00f2xid de sofre",
+                "temperature": "Temperatura",
+                "timestamp": "Marca de temps",
+                "voltage": "Voltatge",
+                "volume": "Volum",
+                "volume_flow_rate": "Cabal volum\u00e8tric",
+                "volume_storage": "Volum acumulat",
+                "water": "Aigua",
+                "weight": "Pes",
+                "wind_speed": "Velocitat del vent"
+            }
+        },
+        "device_class_switch": {
+            "options": {
+                "outlet": "Endoll",
+                "switch": "Interruptor"
+            }
+        },
+        "device_class_valve": {
+            "options": {
+                "gas": "Gas",
+                "water": "Aigua"
+            }
+        },
+        "number_mode": {
             "options": {
                 "auto": "Autom\u00e0tic",
+                "slider": "Barra lliscant"
+            }
+        },
+        "platform": {
+            "options": {
+                "alarm_control_panel": "Panell de control d'alarma",
+                "binary_sensor": "Sensor binari",
+                "button": "Bot\u00f3",
+                "climate": "Climatitzaci\u00f3",
+                "cover": "Coberta",
+                "fan": "Ventilador",
+                "image": "Imatge",
+                "light": "Llum",
+                "lock": "Pany",
+                "notify": "Notificacions",
+                "number": "N\u00famero",
+                "select": "Selector",
+                "sensor": "Sensor",
+                "siren": "Sirena",
+                "switch": "Interruptor",
+                "text": "Text",
+                "valve": "V\u00e0lvula",
+                "water_heater": "Escalfador d'aigua"
+            }
+        },
+        "set_ca_cert": {
+            "options": {
+                "auto": "Auto",
                 "custom": "Personalitzat",
                 "off": "OFF"
+            }
+        },
+        "state_class": {
+            "options": {
+                "measurement": "Mesura",
+                "total": "Total",
+                "total_increasing": "Total creixent"
+            }
+        },
+        "supported_color_modes": {
+            "options": {
+                "brightness": "Nom\u00e9s lluminositat",
+                "color_temp": "Temperatura de color",
+                "hs": "HS",
+                "onoff": "ON/OFF",
+                "rgb": "RGB",
+                "rgbw": "RGBW",
+                "rgbww": "RGBWW",
+                "white": "Blanc",
+                "xy": "XY"
+            }
+        },
+        "text_mode": {
+            "options": {
+                "password": "Contrasenya",
+                "text": "Text"
+            }
+        },
+        "water_heater_modes": {
+            "options": {
+                "auto": "Auto",
+                "eco": "Econ\u00f2mic",
+                "electric": "El\u00e8ctric",
+                "gas": "Gas",
+                "off": "OFF",
+                "performance": "Rendiment"
             }
         }
     },
@@ -189,12 +392,7 @@
             "description": "Publica un missatge a un topic MQTT.",
             "fields": {
                 "payload": {
-                    "description": "Dades ('payload') a publicar.",
                     "name": "Dades ('payload')"
-                },
-                "payload_template": {
-                    "description": "Plantilla a utilitzar per extreure les dades ('payload'). Si ja es proporcionen dades, la plantilla s'ignorar\u00e0.",
-                    "name": "Plantilla de dades"
                 },
                 "qos": {
                     "description": "Qualitat de servei a utilitzar. 0: com a m\u00e0xim una vegada. 1: almenys una vegada. 2: exactament una vegada.",

@@ -9,17 +9,10 @@
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
         },
         "step": {
-            "api_key": {
-                "data": {
-                    "api_key": "Clau API"
-                }
-            },
             "reauth_confirm": {
                 "data": {
                     "api_key": "Clau API"
-                },
-                "description": "Introdueix una nova clau API per a PI-Hole a {host}/{location}",
-                "title": "Re-autenticaci\u00f3 de PI-Hole"
+                }
             },
             "user": {
                 "data": {
@@ -40,6 +33,9 @@
             }
         },
         "sensor": {
+            "ads_blocked": {
+                "unit_of_measurement": "anuncis"
+            },
             "ads_blocked_today": {
                 "name": "Anuncis bloquejats avui",
                 "unit_of_measurement": "anuncis"
@@ -50,6 +46,9 @@
             "clients_ever_seen": {
                 "name": "Clients vistos",
                 "unit_of_measurement": "clients"
+            },
+            "dns_queries": {
+                "unit_of_measurement": "consultes"
             },
             "dns_queries_today": {
                 "name": "Consultes DNS d'avui",

@@ -12,20 +12,20 @@
         "step": {
             "modbus": {
                 "data": {
-                    "modbus_unit": "Modbus Unit Identifier",
+                    "modbus_unit": "Modbus unit identifier",
                     "modbus_url": "Modbus URL",
-                    "model": "Model of Heat Pump"
+                    "model": "Model of heat pump"
                 },
                 "data_description": {
-                    "modbus_unit": "Unit identification for your Heat Pump. Can usually be left at 0.",
-                    "modbus_url": "Modbus URL that describes the connection to your Heat Pump or MODBUS40 unit. It should be on the form:\n - `tcp://[HOST]:[PORT]` for Modbus TCP connection\n - `serial://[LOCAL DEVICE]` for a local Modbus RTU connection\n - `rfc2217://[HOST]:[PORT]` for a remote telnet based Modbus RTU connection."
+                    "modbus_unit": "Unit identification for your heat pump. Can usually be left at 0.",
+                    "modbus_url": "Modbus URL that describes the connection to your heat pump or MODBUS40 unit. It should be in the form:\n - `{tcp}` for Modbus TCP connection\n - `{serial}` for a local Modbus RTU connection\n - `{rfc2217}` for a remote Telnet-based Modbus RTU connection."
                 }
             },
             "nibegw": {
                 "data": {
                     "ip_address": "Remote address",
                     "listening_port": "Local listening port",
-                    "model": "Model of Heat Pump",
+                    "model": "Model of heat pump",
                     "remote_read_port": "Remote read port",
                     "remote_write_port": "Remote write port"
                 },
@@ -44,6 +44,14 @@
                     "nibegw": "NibeGW"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "write_failed": {
+            "message": "Writing of coil {address} with value `{value}` failed with error `{error}`"
+        },
+        "write_timeout": {
+            "message": "Timeout while writing coil {address}"
         }
     }
 }

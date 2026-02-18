@@ -26,7 +26,7 @@
         "_": {
             "name": "Term\u00f2stat",
             "state": {
-                "auto": "Autom\u00e0tic",
+                "auto": "Auto",
                 "cool": "Refreda",
                 "dry": "Asseca",
                 "fan_only": "Nom\u00e9s ventilador",
@@ -35,9 +35,6 @@
                 "off": "OFF"
             },
             "state_attributes": {
-                "aux_heat": {
-                    "name": "Escalfador auxiliar"
-                },
                 "current_humidity": {
                     "name": "Humitat actual"
                 },
@@ -47,13 +44,13 @@
                 "fan_mode": {
                     "name": "Mode ventilador",
                     "state": {
-                        "auto": "Autom\u00e0tic",
+                        "auto": "Auto",
                         "diffuse": "Dif\u00fas",
                         "focus": "Concentrat",
-                        "high": "Alt",
-                        "low": "Baix",
-                        "medium": "Mitj\u00e0",
-                        "middle": "Mig",
+                        "high": "Alt/a",
+                        "low": "Baix/a",
+                        "medium": "Mitj\u00e0/na",
+                        "middle": "Moderat",
                         "off": "OFF",
                         "on": "ON",
                         "top": "Superior"
@@ -97,7 +94,7 @@
                     "name": "Preconfiguraci\u00f3",
                     "state": {
                         "activity": "Activitat",
-                        "away": "A fora",
+                        "away": "Fora",
                         "boost": "Incrementat",
                         "comfort": "Confort",
                         "eco": "Econ\u00f2mic",
@@ -146,27 +143,17 @@
     "selector": {
         "hvac_mode": {
             "options": {
-                "auto": "Autom\u00e0tic",
+                "auto": "Auto",
                 "cool": "Refredar",
                 "dry": "Assecar",
                 "fan_only": "Nom\u00e9s el ventilador",
                 "heat": "Escalfar",
                 "heat_cool": "Escalfar/refredar",
-                "off": "Apagat"
+                "off": "OFF"
             }
         }
     },
     "services": {
-        "set_aux_heat": {
-            "description": "Activa o desactiva l'escalfador auxiliar.",
-            "fields": {
-                "aux_heat": {
-                    "description": "Nou valor per a l'escalfador auxiliar.",
-                    "name": "Escalfador auxiliar"
-                }
-            },
-            "name": "Activa/desactiva l'escalfador auxiliar"
-        },
         "set_fan_mode": {
             "description": "Estableix el mode de funcionament del ventilador.",
             "fields": {
@@ -226,6 +213,7 @@
             "name": "Configura temperatura objectiu"
         },
         "toggle": {
+            "description": "Activa o desactiva el dispositiu de climatitzaci\u00f3.",
             "name": "Commuta"
         },
         "turn_off": {

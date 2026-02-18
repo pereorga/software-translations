@@ -1,0 +1,70 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "An OpenRouter API key"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Failed to connect",
+                "entry_not_loaded": "The main integration entry is not loaded. Please ensure the integration is loaded before reconfiguring.",
+                "unknown": "Unexpected error"
+            },
+            "entry_type": "AI task",
+            "initiate_flow": {
+                "user": "Add AI task"
+            },
+            "step": {
+                "init": {
+                    "data": {
+                        "model": "Model"
+                    },
+                    "data_description": {
+                        "model": "The model to use for the AI task"
+                    },
+                    "description": "Configure the AI task"
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Failed to connect",
+                "entry_not_loaded": "The main integration entry is not loaded. Please ensure the integration is loaded before reconfiguring.",
+                "unknown": "Unexpected error"
+            },
+            "entry_type": "Conversation agent",
+            "initiate_flow": {
+                "user": "Add conversation agent"
+            },
+            "step": {
+                "init": {
+                    "data": {
+                        "llm_hass_api": "Control Home Assistant",
+                        "model": "Model",
+                        "prompt": "Instructions"
+                    },
+                    "data_description": {
+                        "model": "The model to use for the conversation agent",
+                        "prompt": "Instruct how the LLM should respond. This can be a template."
+                    },
+                    "description": "Configure the conversation agent"
+                }
+            }
+        }
+    }
+}

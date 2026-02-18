@@ -15,8 +15,7 @@
                     "api_key": "Clau API",
                     "location": "Ubicaci\u00f3",
                     "name": "Nom"
-                },
-                "description": "Per obtenir una clau API, registra't a [Tomorrow.io](https://app.tomorrow.io/signup)."
+                }
             }
         }
     },
@@ -28,7 +27,6 @@
                     "hazardous": "Perill\u00f3s",
                     "moderate": "Moderat",
                     "unhealthy": "No saludable",
-                    "unhealthy_for_sensitive_groups": "No saludable per a grups sensibles",
                     "very_unhealthy": "Gens saludable"
                 }
             },
@@ -53,12 +51,12 @@
             },
             "grass_pollen_index": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "none": "Cap",
                     "very_high": "Molt alt",
-                    "very_low": "Molt baix"
+                    "very_low": "Molt baix/a"
                 }
             },
             "health_concern": {
@@ -72,12 +70,12 @@
             },
             "pollen_index": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "none": "Cap",
                     "very_high": "Molt alt",
-                    "very_low": "Molt baix"
+                    "very_low": "Molt baix/a"
                 }
             },
             "precipitation_type": {
@@ -107,20 +105,20 @@
                 "name": "Risc per la salut de la radiaci\u00f3 UV",
                 "state": {
                     "extreme": "Extrem",
-                    "high": "Alt",
-                    "low": "Baixa",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
                     "moderate": "Moderat",
                     "very_high": "Molt alt"
                 }
             },
             "weed_pollen_index": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "none": "Cap",
                     "very_high": "Molt alt",
-                    "very_low": "Molt baix"
+                    "very_low": "Molt baix/a"
                 }
             }
         }
@@ -128,11 +126,7 @@
     "options": {
         "step": {
             "init": {
-                "data": {
-                    "timestep": "Min. entre previsions de NowCast"
-                },
-                "description": "Si decideixes activar l'entitat de previsi\u00f3 `nowcast`, podr\u00e0s configurar l'interval en minuts entre cada previsi\u00f3. El nombre de previsions proporcionades dep\u00e8n d'aquest interval de minuts.",
-                "title": "Actualitza les opcions de Tomorrow.io"
+                "description": "Si decideixes activar l'entitat de previsi\u00f3 `nowcast`, podr\u00e0s configurar l'interval en minuts entre cada previsi\u00f3. El nombre de previsions proporcionades dep\u00e8n d'aquest interval de minuts."
             }
         }
     }

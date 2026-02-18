@@ -32,6 +32,7 @@
     "device_automation": {
         "trigger_subtype": {
             "double_press": "Double Press",
+            "hold_press": "Hold Press",
             "long_double_press": "Long Double Press",
             "long_press": "Long Press",
             "long_triple_press": "Long Triple Press",
@@ -46,12 +47,18 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "generic": {
+                "name": "Generic"
+            }
+        },
         "event": {
             "button": {
                 "state_attributes": {
                     "event_type": {
                         "state": {
                             "double_press": "Double press",
+                            "hold_press": "Hold press",
                             "long_double_press": "Long double press",
                             "long_press": "Long press",
                             "long_triple_press": "Long triple press",
@@ -70,6 +77,44 @@
                         }
                     }
                 }
+            }
+        },
+        "sensor": {
+            "acceleration": {
+                "name": "Acceleration"
+            },
+            "channel": {
+                "name": "Channel"
+            },
+            "count": {
+                "name": "Count"
+            },
+            "dew_point": {
+                "name": "Dew point"
+            },
+            "direction": {
+                "name": "Direction"
+            },
+            "gyroscope": {
+                "name": "Gyroscope"
+            },
+            "packet_id": {
+                "name": "Packet ID"
+            },
+            "raw": {
+                "name": "Raw"
+            },
+            "rotation": {
+                "name": "Rotation"
+            },
+            "rotational_speed": {
+                "name": "Rotational speed"
+            },
+            "text": {
+                "name": "Text"
+            },
+            "uv_index": {
+                "name": "UV Index"
             }
         }
     }

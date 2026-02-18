@@ -1,0 +1,34 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "already_in_progress": "Configuration flow is already in progress",
+            "authorize_url_timeout": "Timeout generating authorize URL.",
+            "invalid_token": "The provided access token is invalid.",
+            "missing_configuration": "The component is not configured. Please follow the documentation.",
+            "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
+            "oauth_error": "Received invalid token data.",
+            "oauth_failed": "Error while obtaining access token.",
+            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
+            "oauth_timeout": "Timeout resolving OAuth token.",
+            "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
+            "user_rejected_authorize": "Account linking rejected: {error}"
+        },
+        "create_entry": {
+            "default": "Successfully authenticated"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Pick authentication method"
+            }
+        }
+    },
+    "exceptions": {
+        "set_hvac_mode_error": {
+            "message": "An error occurred while setting the HVAC mode."
+        },
+        "set_temperature_error": {
+            "message": "An error occurred while setting the temperature."
+        }
+    }
+}

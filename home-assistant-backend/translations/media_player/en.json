@@ -1,4 +1,62 @@
 {
+    "common": {
+        "condition_behavior_description": "How the state should match on the targeted media players.",
+        "condition_behavior_name": "Behavior",
+        "trigger_behavior_description": "The behavior of the targeted media players to trigger on.",
+        "trigger_behavior_name": "Behavior"
+    },
+    "conditions": {
+        "is_not_playing": {
+            "description": "Tests if one or more media players are not playing.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted media players.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Media player is not playing"
+        },
+        "is_off": {
+            "description": "Tests if one or more media players are off.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted media players.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Media player is off"
+        },
+        "is_on": {
+            "description": "Tests if one or more media players are on.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted media players.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Media player is on"
+        },
+        "is_paused": {
+            "description": "Tests if one or more media players are paused.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted media players.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Media player is paused"
+        },
+        "is_playing": {
+            "description": "Tests if one or more media players are playing.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted media players.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Media player is playing"
+        }
+    },
     "device_automation": {
         "condition_type": {
             "is_buffering": "{entity_name} is buffering",
@@ -163,6 +221,12 @@
         }
     },
     "selector": {
+        "condition_behavior": {
+            "options": {
+                "all": "All",
+                "any": "Any"
+            }
+        },
         "enqueue": {
             "options": {
                 "add": "Add to queue",
@@ -177,11 +241,32 @@
                 "off": "Off",
                 "one": "Repeat one"
             }
+        },
+        "trigger_behavior": {
+            "options": {
+                "any": "Any",
+                "first": "First",
+                "last": "Last"
+            }
         }
     },
     "services": {
+        "browse_media": {
+            "description": "Browses the available media.",
+            "fields": {
+                "media_content_id": {
+                    "description": "The ID of the content to browse. Integration dependent.",
+                    "name": "Content ID"
+                },
+                "media_content_type": {
+                    "description": "The type of the content to browse, such as image, music, TV show, video, episode, channel, or playlist.",
+                    "name": "Content type"
+                }
+            },
+            "name": "Browse media"
+        },
         "clear_playlist": {
-            "description": "Removes all items from the playlist.",
+            "description": "Removes all items from a media player's playlist.",
             "name": "Clear playlist"
         },
         "join": {
@@ -199,15 +284,15 @@
             "name": "Next"
         },
         "media_pause": {
-            "description": "Pauses.",
+            "description": "Pauses playback on a media player.",
             "name": "Pause"
         },
         "media_play": {
-            "description": "Starts playing.",
+            "description": "Starts playback on a media player.",
             "name": "Play"
         },
         "media_play_pause": {
-            "description": "Toggles play/pause.",
+            "description": "Toggles play/pause on a media player.",
             "name": "Play/Pause"
         },
         "media_previous_track": {
@@ -225,7 +310,7 @@
             "name": "Seek"
         },
         "media_stop": {
-            "description": "Stops playing.",
+            "description": "Stops playback on a media player.",
             "name": "Stop"
         },
         "play_media": {
@@ -239,26 +324,44 @@
                     "description": "If the content should be played now or be added to the queue.",
                     "name": "Enqueue"
                 },
-                "media_content_id": {
-                    "description": "The ID of the content to play. Platform dependent.",
-                    "name": "Content ID"
-                },
-                "media_content_type": {
-                    "description": "The type of the content to play. Such as image, music, tv show, video, episode, channel, or playlist.",
-                    "name": "Content type"
+                "media": {
+                    "description": "The media selected to play.",
+                    "name": "Media"
                 }
             },
             "name": "Play media"
         },
         "repeat_set": {
-            "description": "Playback mode that plays the media in a loop.",
+            "description": "Sets the repeat mode.",
             "fields": {
                 "repeat": {
-                    "description": "Repeat mode to set.",
+                    "description": "Whether the media (one or all) should be played in a loop or not.",
                     "name": "Repeat mode"
                 }
             },
-            "name": "Repeat"
+            "name": "Set repeat"
+        },
+        "search_media": {
+            "description": "Searches the available media.",
+            "fields": {
+                "media_content_id": {
+                    "description": "The ID of the content to browse. Integration dependent.",
+                    "name": "Content ID"
+                },
+                "media_content_type": {
+                    "description": "The type of the content to browse, such as image, music, TV show, video, episode, channel, or playlist.",
+                    "name": "Content type"
+                },
+                "media_filter_classes": {
+                    "description": "List of media classes to filter the search results by.",
+                    "name": "Media class filter"
+                },
+                "search_query": {
+                    "description": "The term to search for.",
+                    "name": "Search query"
+                }
+            },
+            "name": "Search media"
         },
         "select_sound_mode": {
             "description": "Selects a specific sound mode.",
@@ -271,7 +374,7 @@
             "name": "Select sound mode"
         },
         "select_source": {
-            "description": "Sends the media player the command to change input source.",
+            "description": "Sends a media player the command to change the input source.",
             "fields": {
                 "source": {
                     "description": "Name of the source to switch to. Platform dependent.",
@@ -281,37 +384,37 @@
             "name": "Select source"
         },
         "shuffle_set": {
-            "description": "Playback mode that selects the media in randomized order.",
+            "description": "Enables or disables the shuffle mode.",
             "fields": {
                 "shuffle": {
-                    "description": "Whether or not shuffle mode is enabled.",
-                    "name": "Shuffle"
+                    "description": "Whether the media should be played in randomized order or not.",
+                    "name": "Shuffle mode"
                 }
             },
-            "name": "Shuffle"
+            "name": "Set shuffle"
         },
         "toggle": {
             "description": "Toggles a media player on/off.",
             "name": "Toggle"
         },
         "turn_off": {
-            "description": "Turns off the power of the media player.",
+            "description": "Turns off the power of a media player.",
             "name": "Turn off"
         },
         "turn_on": {
-            "description": "Turns on the power of the media player.",
+            "description": "Turns on the power of a media player.",
             "name": "Turn on"
         },
         "unjoin": {
-            "description": "Removes the player from a group. Only works on platforms which support player groups.",
+            "description": "Removes a media player from a group. Only works on platforms which support player groups.",
             "name": "Unjoin"
         },
         "volume_down": {
-            "description": "Turns down the volume.",
+            "description": "Turns down the volume of a media player.",
             "name": "Turn down volume"
         },
         "volume_mute": {
-            "description": "Mutes or unmutes the media player.",
+            "description": "Mutes or unmutes a media player.",
             "fields": {
                 "is_volume_muted": {
                     "description": "Defines whether or not it is muted.",
@@ -321,7 +424,7 @@
             "name": "Mute/unmute volume"
         },
         "volume_set": {
-            "description": "Sets the volume level.",
+            "description": "Sets the volume level of a media player.",
             "fields": {
                 "volume_level": {
                     "description": "The volume. 0 is inaudible, 1 is the maximum volume.",
@@ -331,9 +434,21 @@
             "name": "Set volume"
         },
         "volume_up": {
-            "description": "Turns up the volume.",
+            "description": "Turns up the volume of a media player.",
             "name": "Turn up volume"
         }
     },
-    "title": "Media player"
+    "title": "Media player",
+    "triggers": {
+        "stopped_playing": {
+            "description": "Triggers after one or more media players stop playing media.",
+            "fields": {
+                "behavior": {
+                    "description": "The behavior of the targeted media players to trigger on.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Media player stopped playing"
+        }
+    }
 }

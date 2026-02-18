@@ -10,7 +10,7 @@
                 "data": {
                     "ignored_zones": "Zones to ignore",
                     "tolerance": "Tolerance distance",
-                    "tracked_entities": "Devices or Persons to track",
+                    "tracked_entities": "Devices or persons to track",
                     "zone": "Zone to track distance to"
                 }
             }
@@ -19,7 +19,7 @@
     "entity": {
         "sensor": {
             "dir_of_travel": {
-                "name": "{tracked_entity} Direction of travel",
+                "name": "{tracked_entity} direction of travel",
                 "state": {
                     "arrived": "Arrived",
                     "away_from": "Away from",
@@ -28,7 +28,7 @@
                 }
             },
             "dist_to_zone": {
-                "name": "{tracked_entity} Distance"
+                "name": "{tracked_entity} distance"
             },
             "nearest": {
                 "name": "Nearest device"
@@ -52,7 +52,7 @@
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "The entity `{entity_id}` has been removed from HA, but is used in proximity {name}. Please remove `{entity_id}` from the list of tracked entities. Related proximity sensor entites were set to unavailable and can be removed.",
+                        "description": "The entity `{entity_id}` has been removed from HA, but is used in proximity {name}. Please remove `{entity_id}` from the list of tracked entities. Related proximity sensor entities were set to unavailable and can be removed.",
                         "title": "Tracked entity has been removed"
                     }
                 }
@@ -66,7 +66,7 @@
                 "data": {
                     "ignored_zones": "Zones to ignore",
                     "tolerance": "Tolerance distance",
-                    "tracked_entities": "Devices or Persons to track",
+                    "tracked_entities": "Devices or persons to track",
                     "zone": "Zone to track distance to"
                 }
             }

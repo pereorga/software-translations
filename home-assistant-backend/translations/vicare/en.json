@@ -8,7 +8,7 @@
         "error": {
             "invalid_auth": "Invalid authentication"
         },
-        "flow_title": "{name} ({host})",
+        "flow_title": "{name}",
         "step": {
             "reauth_confirm": {
                 "data": {
@@ -16,8 +16,8 @@
                     "password": "Password"
                 },
                 "data_description": {
-                    "client_id": "The ID of the API client created in the Viessmann developer portal.",
-                    "password": "The password to login to your ViCare account."
+                    "client_id": "The ID of the API client created in the [Viessmann developer portal]({viessmann_developer_portal}).",
+                    "password": "The password to log in to your ViCare account."
                 },
                 "description": "Please verify credentials."
             },
@@ -29,12 +29,12 @@
                     "username": "Email"
                 },
                 "data_description": {
-                    "client_id": "The ID of the API client created in the Viessmann developer portal.",
+                    "client_id": "The ID of the API client created in the [Viessmann developer portal]({viessmann_developer_portal}).",
                     "heating_type": "Allows to overrule the device auto detection.",
-                    "password": "The password to login to your ViCare account.",
-                    "username": "The email address to login to your ViCare account."
+                    "password": "The password to log in to your ViCare account.",
+                    "username": "The email address to log in to your ViCare account."
                 },
-                "description": "Set up ViCare integration. To generate client ID go to https://app.developer.viessmann.com"
+                "description": "Set up ViCare integration."
             }
         }
     },
@@ -42,6 +42,9 @@
         "binary_sensor": {
             "burner": {
                 "name": "Burner"
+            },
+            "child_safety_lock_mode": {
+                "name": "Child safety lock"
             },
             "circulation_pump": {
                 "name": "Circulation pump"
@@ -61,13 +64,31 @@
             "frost_protection": {
                 "name": "Frost protection"
             },
+            "identification_mode": {
+                "name": "Identification mode"
+            },
+            "mounting_mode": {
+                "name": "Mounting mode"
+            },
+            "one_time_charge": {
+                "name": "One-time charge"
+            },
             "solar_pump": {
                 "name": "Solar pump"
+            },
+            "valve": {
+                "name": "Valve"
+            },
+            "ventilation_frost_protection": {
+                "name": "Ventilation frost protection"
             }
         },
         "button": {
             "activate_onetimecharge": {
                 "name": "Activate one-time charge"
+            },
+            "deactivate_onetimecharge": {
+                "name": "Deactivate one-time charge"
             }
         },
         "climate": {
@@ -81,10 +102,12 @@
                 "state_attributes": {
                     "preset_mode": {
                         "state": {
-                            "permanent": "permanent",
-                            "sensor_driven": "sensor",
-                            "sensor_override": "schedule with sensor-override",
-                            "ventilation": "schedule"
+                            "permanent": "Permanent",
+                            "sensor_driven": "Sensor-driven",
+                            "sensor_override": "Schedule with sensor-override",
+                            "standard": "Minimal",
+                            "standby": "Standby",
+                            "ventilation": "Schedule"
                         }
                     }
                 }
@@ -144,8 +167,20 @@
             "boiler_temperature": {
                 "name": "Boiler temperature"
             },
+            "buffer_bottom_temperature": {
+                "name": "Buffer bottom temperature"
+            },
             "buffer_main_temperature": {
                 "name": "Buffer main temperature"
+            },
+            "buffer_mid_bottom_temperature": {
+                "name": "Buffer mid bottom temperature"
+            },
+            "buffer_mid_top_temperature": {
+                "name": "Buffer mid top temperature"
+            },
+            "buffer_middle_temperature": {
+                "name": "Buffer middle temperature"
             },
             "buffer_top_temperature": {
                 "name": "Buffer top temperature"
@@ -180,14 +215,46 @@
             "compressor_hours_loadclass5": {
                 "name": "Compressor hours load class 5"
             },
+            "compressor_inlet_pressure": {
+                "name": "Compressor inlet pressure"
+            },
+            "compressor_inlet_temperature": {
+                "name": "Compressor inlet temperature"
+            },
+            "compressor_outlet_pressure": {
+                "name": "Compressor outlet pressure"
+            },
+            "compressor_outlet_temperature": {
+                "name": "Compressor outlet temperature"
+            },
             "compressor_phase": {
-                "name": "Compressor phase"
+                "name": "Compressor phase",
+                "state": {
+                    "cooling": "Cooling",
+                    "defrost": "Defrosting",
+                    "heating": "Heating",
+                    "off": "Off",
+                    "passive_defrost": "Passive defrosting",
+                    "pause": "Idle",
+                    "preparing": "Preparing",
+                    "preparing_defrost": "Preparing defrost",
+                    "ready": "Idle"
+                }
             },
             "compressor_starts": {
                 "name": "Compressor starts"
             },
+            "condenser_liquid_temperature": {
+                "name": "Condenser liquid temperature"
+            },
+            "condenser_subcooling_temperature": {
+                "name": "Condenser subcooling temperature"
+            },
             "dhw_storage_bottom_temperature": {
                 "name": "DHW storage bottom temperature"
+            },
+            "dhw_storage_middle_temperature": {
+                "name": "DHW storage middle temperature"
             },
             "dhw_storage_temperature": {
                 "name": "DHW storage temperature"
@@ -228,6 +295,9 @@
             "energy_summary_dhw_consumption_heating_lastsevendays": {
                 "name": "DHW electricity consumption last seven days"
             },
+            "ess_charge_total": {
+                "name": "Battery charge total"
+            },
             "ess_discharge_this_month": {
                 "name": "Battery discharge this month"
             },
@@ -253,6 +323,24 @@
                     "discharge": "Discharging",
                     "standby": "Standby"
                 }
+            },
+            "evaporator_liquid_temperature": {
+                "name": "Evaporator liquid temperature"
+            },
+            "evaporator_overheat_temperature": {
+                "name": "Evaporator overheat temperature"
+            },
+            "filter_hours": {
+                "name": "Filter hours"
+            },
+            "filter_overdue_hours": {
+                "name": "Filter overdue hours"
+            },
+            "filter_remaining_hours": {
+                "name": "Filter remaining hours"
+            },
+            "fuel_need": {
+                "name": "Fuel need"
             },
             "gas_consumption_fuelcell_this_month": {
                 "name": "Fuel cell gas consumption this month"
@@ -302,6 +390,12 @@
             "gas_summary_consumption_heating_lastsevendays": {
                 "name": "Heating gas consumption last seven days"
             },
+            "heating_rod_hours": {
+                "name": "Heating rod hours"
+            },
+            "heating_rod_starts": {
+                "name": "Heating rod starts"
+            },
             "hotwater_gas_consumption_heating_this_month": {
                 "name": "DHW gas consumption this month"
             },
@@ -335,6 +429,21 @@
             "hotwater_out_temperature": {
                 "name": "DHW out temperature"
             },
+            "hydraulic_separator_temperature": {
+                "name": "Hydraulic separator temperature"
+            },
+            "inverter_current": {
+                "name": "Inverter current"
+            },
+            "inverter_power": {
+                "name": "Inverter power"
+            },
+            "inverter_temperature": {
+                "name": "Inverter temperature"
+            },
+            "outside_humidity": {
+                "name": "Outside humidity"
+            },
             "outside_temperature": {
                 "name": "Outside temperature"
             },
@@ -348,25 +457,25 @@
                 "name": "Power exchange with grid"
             },
             "photovoltaic_energy_production_this_month": {
-                "name": "Solar energy production this month"
+                "name": "PV energy production this month"
             },
             "photovoltaic_energy_production_this_week": {
-                "name": "Solar energy production this week"
+                "name": "PV energy production this week"
             },
             "photovoltaic_energy_production_this_year": {
-                "name": "Solar energy production this year"
+                "name": "PV energy production this year"
             },
             "photovoltaic_energy_production_today": {
-                "name": "Solar energy production today"
+                "name": "PV energy production today"
             },
             "photovoltaic_energy_production_total": {
-                "name": "Solar energy production total"
+                "name": "PV energy production total"
             },
             "photovoltaic_power_production_current": {
-                "name": "Solar power"
+                "name": "PV power"
             },
             "photovoltaic_status": {
-                "name": "Solar state",
+                "name": "PV state",
                 "state": {
                     "production": "Producing",
                     "ready": "Standby"
@@ -429,11 +538,65 @@
             "solar_storage_temperature": {
                 "name": "Solar storage temperature"
             },
+            "spf_dhw": {
+                "name": "Seasonal performance factor - domestic hot water"
+            },
+            "spf_heating": {
+                "name": "Seasonal performance factor - heating"
+            },
+            "spf_total": {
+                "name": "Seasonal performance factor"
+            },
+            "supply_fan_hours": {
+                "name": "Supply fan hours"
+            },
+            "supply_fan_speed": {
+                "name": "Supply fan speed"
+            },
+            "supply_humidity": {
+                "name": "Supply humidity"
+            },
+            "supply_pressure": {
+                "name": "Supply pressure"
+            },
             "supply_temperature": {
                 "name": "Supply temperature"
             },
+            "valve_position": {
+                "name": "Valve position"
+            },
+            "ventilation_input_volumeflow": {
+                "name": "Ventilation input volume flow"
+            },
+            "ventilation_level": {
+                "name": "Ventilation level",
+                "state": {
+                    "levelfour": "4",
+                    "levelone": "1",
+                    "levelthree": "3",
+                    "leveltwo": "2",
+                    "standby": "Standby"
+                }
+            },
+            "ventilation_output_volumeflow": {
+                "name": "Ventilation output volume flow"
+            },
+            "ventilation_reason": {
+                "name": "Ventilation reason",
+                "state": {
+                    "forcedlevelfour": "Boost",
+                    "permanent": "Permanent",
+                    "schedule": "Schedule",
+                    "sensordriven": "Sensor-driven",
+                    "silent": "Silent",
+                    "standby": "Standby"
+                }
+            },
             "volumetric_flow": {
                 "name": "Volumetric flow"
+            },
+            "zigbee_signal_strength": {
+                "name": "Signal strength"
             }
         },
         "water_heater": {
@@ -455,10 +618,10 @@
     },
     "services": {
         "set_vicare_mode": {
-            "description": "Set a ViCare mode.",
+            "description": "Sets the mode of the climate device as defined by Viessmann.",
             "fields": {
                 "vicare_mode": {
-                    "description": "ViCare mode.",
+                    "description": "For supported values, see the `vicare_modes` attribute of the climate entity.",
                     "name": "ViCare mode"
                 }
             },

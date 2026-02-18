@@ -3,22 +3,18 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
-            "error_pairing": "Connectat per\u00f2 no vinculat a TV LG webOS",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reauth_unsuccessful": "La re-autenticaci\u00f3 no ha tingut \u00e8xit, engega el televisor i torna-ho a provar."
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "step": {
-            "pairing": {
-                "title": "Vinculaci\u00f3 de TV webOS"
-            },
-            "reauth_confirm": {
-                "description": "Fes clic a envia i accepta la sol\u00b7licitud de vinculaci\u00f3 del televisor.\n\n![Image](/static/images/config_webos.png)",
-                "title": "Vinculaci\u00f3 de TV webOS"
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
             },
             "user": {
                 "data": {
-                    "host": "Amfitri\u00f3",
-                    "name": "Nom"
+                    "host": "Amfitri\u00f3"
                 }
             }
         }
@@ -29,16 +25,12 @@
         }
     },
     "options": {
-        "error": {
-            "cannot_retrieve": "No es pot obtenir la llista de fonts. Assegura't que el dispositiu est\u00e0 enc\u00e8s"
-        },
         "step": {
             "init": {
                 "data": {
                     "sources": "Llista de fonts"
                 },
-                "description": "Selecci\u00f3 de fonts activades",
-                "title": "Opcions de Smart TV webOS"
+                "description": "Selecci\u00f3 de fonts activades"
             }
         }
     },
@@ -51,7 +43,6 @@
                     "name": "Bot\u00f3"
                 },
                 "entity_id": {
-                    "description": "Nom(s) de les entitats webostv on executar el m\u00e8tode API.",
                     "name": "Entitat"
                 }
             },
@@ -65,11 +56,9 @@
                     "name": "Comanda"
                 },
                 "entity_id": {
-                    "description": "Nom(s) de les entitats webostv on executar el m\u00e8tode API.",
                     "name": "Entitat"
                 },
                 "payload": {
-                    "description": "Dades opcionals per proporcionar a l'endpoint, en format de parell(s) de clau - valor.",
                     "name": "Dades ('payload')"
                 }
             },
@@ -79,7 +68,6 @@
             "description": "Envia al televisor la comanda per canviar la sortida de so.",
             "fields": {
                 "entity_id": {
-                    "description": "Nom(s) de les entitats webostv on canviar la sortida de so.",
                     "name": "Entitat"
                 },
                 "sound_output": {

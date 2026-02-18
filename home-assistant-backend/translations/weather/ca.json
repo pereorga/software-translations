@@ -76,18 +76,6 @@
             }
         }
     },
-    "issues": {
-        "deprecated_service_weather_get_forecast": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta weather.get_forecast"
-                    }
-                }
-            },
-            "title": "S'ha detectat l'\u00fas de l'acci\u00f3 obsoleta weather.get_forecast"
-        }
-    },
     "selector": {
         "forecast_type": {
             "options": {
@@ -99,20 +87,16 @@
     },
     "services": {
         "get_forecast": {
-            "description": "Obt\u00e9 la previsi\u00f3 del temps.",
             "fields": {
                 "type": {
-                    "description": "Tipus de previsi\u00f3: di\u00e0ria, cada hora o dues vegades al dia.",
                     "name": "Tipus de previsi\u00f3"
                 }
             },
             "name": "Obt\u00e9 previsi\u00f3"
         },
         "get_forecasts": {
-            "description": "Obt\u00e9 les previsions meteorol\u00f2giques.",
             "fields": {
                 "type": {
-                    "description": "Tipus de previsi\u00f3: di\u00e0ria, cada hora o dues vegades al dia.",
                     "name": "Tipus de previsi\u00f3"
                 }
             },

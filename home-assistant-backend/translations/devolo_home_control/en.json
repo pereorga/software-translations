@@ -9,6 +9,16 @@
             "reauth_failed": "Please use the same mydevolo user as before."
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Email / devolo ID"
+                },
+                "data_description": {
+                    "password": "Password of your mydevolo account.",
+                    "username": "Email address you used to register the central unit at mydevolo."
+                }
+            },
             "user": {
                 "data": {
                     "password": "Password",
@@ -44,6 +54,17 @@
             "brightness": {
                 "name": "Brightness"
             }
+        }
+    },
+    "exceptions": {
+        "connection_failed": {
+            "message": "Failed to connect to any devolo Home Control central unit."
+        },
+        "invalid_auth": {
+            "message": "Authentication failed. Please re-authenticate with your mydevolo account."
+        },
+        "maintenance": {
+            "message": "devolo Home Control is currently in maintenance mode."
         }
     }
 }

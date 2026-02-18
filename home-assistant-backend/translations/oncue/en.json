@@ -1,27 +1,8 @@
 {
-    "config": {
-        "abort": {
-            "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
-        },
-        "error": {
-            "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication",
-            "unknown": "Unexpected error"
-        },
-        "step": {
-            "reauth_confirm": {
-                "data": {
-                    "password": "Password"
-                },
-                "description": "Re-authenticate Oncue account {username}"
-            },
-            "user": {
-                "data": {
-                    "password": "Password",
-                    "username": "Username"
-                }
-            }
+    "issues": {
+        "integration_removed": {
+            "description": "The Oncue integration has been removed from Home Assistant.\n\nThe Oncue service has been discontinued and [Rehlko]({rehlko}) is the integration to keep using it.\n\nTo resolve this issue, please remove the (now defunct) integration entries from your Home Assistant setup. [Click here to see your existing Oncue integration entries]({entries}).",
+            "title": "The Oncue integration has been removed"
         }
     }
 }

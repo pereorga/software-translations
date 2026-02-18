@@ -1,0 +1,66 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_host": "L'URL proporcionat no \u00e9s un amfitri\u00f3 v\u00e0lid."
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                },
+                "data_description": {
+                    "api_key": "Clau API de la inst\u00e0ncia Overseerr."
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "Clau API",
+                    "url": "URL"
+                },
+                "data_description": {
+                    "api_key": "Clau API de la inst\u00e0ncia Overseerr.",
+                    "url": "URL de la inst\u00e0ncia Overseerr."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "available_requests": {
+                "name": "Sol\u00b7licituds disponibles"
+            },
+            "closed_issues": {
+                "name": "Problemes tancats",
+                "state": {
+                    "measurement": "Problemes"
+                }
+            },
+            "declined_requests": {
+                "name": "Sol\u00b7licituds rebutjades"
+            },
+            "movie_requests": {
+                "name": "Sol\u00b7licituds de pel\u00b7l\u00edcules"
+            },
+            "pending_requests": {
+                "name": "Sol\u00b7licituds pendents"
+            },
+            "total_requests": {
+                "name": "Sol\u00b7licituds totals"
+            },
+            "tv_requests": {
+                "name": "Sol\u00b7licituds de TV"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_error": {
+            "message": "Clau API inv\u00e0lida"
+        }
+    }
+}

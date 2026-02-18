@@ -13,14 +13,14 @@
         "step": {
             "link": {
                 "description": "Make sure that the iRobot app is not running on any device. Press and hold the Home button (or both Home and Spot buttons) on {name} until the device generates a sound (about two seconds), then submit within 30 seconds.",
-                "title": "Retrieve Password"
+                "title": "Retrieve password"
             },
             "link_manual": {
                 "data": {
                     "password": "Password"
                 },
                 "description": "The password could not be retrieved from the device automatically. Please make sure that the iRobot app is not open on any device while trying to retrieve the password. Please follow the steps outlined in the documentation at: {auth_help_url}",
-                "title": "Enter Password"
+                "title": "Enter password"
             },
             "manual": {
                 "data": {
@@ -60,6 +60,9 @@
             "canceled_missions": {
                 "name": "Canceled missions"
             },
+            "dock_tank_level": {
+                "name": "Dock tank level"
+            },
             "failed_missions": {
                 "name": "Failed missions"
             },
@@ -71,6 +74,9 @@
             },
             "successful_missions": {
                 "name": "Successful missions"
+            },
+            "tank_level": {
+                "name": "Tank level"
             },
             "total_cleaned_area": {
                 "name": "Total cleaned area"

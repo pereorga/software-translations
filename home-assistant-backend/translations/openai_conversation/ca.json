@@ -1,11 +1,20 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "Clau API"
@@ -13,27 +22,70 @@
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "chat_model": "Model",
-                    "llm_hass_api": "Controla Home Assistant",
-                    "max_tokens": "Nombre m\u00e0xim de 'tokens' a retornar en resposta",
-                    "prompt": "Instruccions",
-                    "temperature": "Temperatura",
-                    "top_p": "Top P"
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            },
+            "step": {
+                "advanced": {
+                    "data": {
+                        "chat_model": "Model"
+                    }
+                },
+                "init": {
+                    "data": {
+                        "name": "Nom"
+                    }
                 }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            },
+            "step": {
+                "advanced": {
+                    "data": {
+                        "chat_model": "Model"
+                    }
+                },
+                "init": {
+                    "data": {
+                        "llm_hass_api": "Controla Home Assistant",
+                        "name": "Nom",
+                        "prompt": "Instruccions"
+                    }
+                }
+            }
+        }
+    },
+    "selector": {
+        "reasoning_effort": {
+            "options": {
+                "high": "Alt/a",
+                "low": "Baix/a",
+                "medium": "Mitj\u00e0/na"
+            }
+        },
+        "search_context_size": {
+            "options": {
+                "high": "Alt/a",
+                "low": "Baix/a",
+                "medium": "Mitj\u00e0/na"
+            }
+        },
+        "verbosity": {
+            "options": {
+                "high": "Alt/a",
+                "low": "Baix/a",
+                "medium": "Mitj\u00e0/na"
             }
         }
     },
     "services": {
         "generate_image": {
-            "description": "Converteix un missatge en una imatge",
             "fields": {
-                "config_entry": {
-                    "name": "Entrada de configuraci\u00f3"
-                },
                 "prompt": {
                     "description": "Text a convertir en imatge",
                     "example": "Foto d'un gos"
@@ -48,8 +100,7 @@
                 "style": {
                     "name": "Estil"
                 }
-            },
-            "name": "Genera imatge"
+            }
         }
     }
 }

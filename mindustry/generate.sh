@@ -11,4 +11,4 @@ curl https://raw.githubusercontent.com/Anuken/Mindustry/master/core/assets/bundl
 prop2po --encoding=utf-8 -t tmp/en.properties tmp/ca.properties > ca.po
 
  # Try to remove English (untranslated) strings.
-node ../removeIdenticalMsgidMsgstr.js ca.po
+python3 ../removeIdenticalMsgidMsgstr.py ca.po

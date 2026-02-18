@@ -1,6 +1,7 @@
 {
     "config": {
         "abort": {
+            "already_configured": "Service is already configured",
             "reauth_successful": "Re-authentication was successful"
         },
         "error": {
@@ -21,37 +22,148 @@
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "chat_model": "Model",
-                    "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
-                    "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
-                    "hate_block_threshold": "Content that is rude, disrespectful, or profane",
-                    "llm_hass_api": "Control Home Assistant",
-                    "max_tokens": "Maximum tokens to return in response",
-                    "prompt": "Instructions",
-                    "recommended": "Recommended model settings",
-                    "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
-                    "temperature": "Temperature",
-                    "top_k": "Top K",
-                    "top_p": "Top P"
-                },
-                "data_description": {
-                    "prompt": "Instruct how the LLM should respond. This can be a template."
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
+                "reconfigure_successful": "Re-configuration was successful"
+            },
+            "entry_type": "AI task",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure AI task",
+                "user": "Add AI task"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
+                "reconfigure_successful": "Re-configuration was successful"
+            },
+            "entry_type": "Conversation agent",
+            "error": {
+                "invalid_google_search_option": "Google Search can only be enabled if nothing is selected in the \"Control Home Assistant\" setting."
+            },
+            "initiate_flow": {
+                "reconfigure": "Reconfigure conversation agent",
+                "user": "Add conversation agent"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "enable_google_search_tool": "Enable Google Search tool",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "llm_hass_api": "Control Home Assistant",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "prompt": "Instructions",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    },
+                    "data_description": {
+                        "enable_google_search_tool": "Only works if there is nothing selected in the \"Control Home Assistant\" setting. See docs for a workaround using it with \"Assist\".",
+                        "prompt": "Instruct how the LLM should respond. This can be a template."
+                    }
+                }
+            }
+        },
+        "stt": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
+                "reconfigure_successful": "Re-configuration was successful"
+            },
+            "entry_type": "Speech-to-text",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure speech-to-text service",
+                "user": "Add speech-to-text service"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "prompt": "Instructions",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    },
+                    "data_description": {
+                        "prompt": "Instruct how the LLM should transcribe the audio."
+                    }
+                }
+            }
+        },
+        "tts": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
+                "reconfigure_successful": "Re-configuration was successful"
+            },
+            "entry_type": "Text-to-speech",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure text-to-speech service",
+                "user": "Add text-to-speech service"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    }
                 }
             }
         }
     },
+    "issues": {
+        "deprecated_generate_content": {
+            "description": "Action 'google_generative_ai_conversation.generate_content' is deprecated and will be removed in the 2026.4.0 release. Please use the 'ai_task.generate_data' action instead",
+            "title": "Deprecated 'generate_content' action"
+        }
+    },
     "services": {
         "generate_content": {
-            "description": "Generate content from a prompt consisting of text and optionally images",
+            "description": "Generate content from a prompt consisting of text and optionally images (deprecated)",
             "fields": {
-                "image_filename": {
-                    "description": "Images",
-                    "example": "/config/www/image.jpg",
-                    "name": "Image filename"
+                "filenames": {
+                    "description": "Attachments to add to the prompt (images, PDFs, etc)",
+                    "example": "{example_image_path}",
+                    "name": "Attachment filenames"
                 },
                 "prompt": {
                     "description": "The prompt",
@@ -59,7 +171,7 @@
                     "name": "Prompt"
                 }
             },
-            "name": "Generate content"
+            "name": "Generate content (deprecated)"
         }
     }
 }

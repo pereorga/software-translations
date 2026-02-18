@@ -1,0 +1,31 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "api_version_error": "Your agent is using an outdated API version. The required 'network_id' parameter is missing. Please update to the latest API version."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "http_status_error": "HTTP request failed: {message}",
+            "invalid_api_key": "Invalid API key",
+            "timeout_connect": "Timeout establishing connection",
+            "unknown": "Unexpected error",
+            "url_error": "Invalid hostname or IP address"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_key": "API key",
+                    "ip_address": "IP address",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "api_key": "API key used to authenticate with the Fing API.",
+                    "ip_address": "IP address of the Fing agent.",
+                    "port": "Port number of the Fing API."
+                },
+                "title": "Set up Fing agent"
+            }
+        }
+    }
+}

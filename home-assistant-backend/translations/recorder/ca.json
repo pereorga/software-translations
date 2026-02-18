@@ -35,15 +35,12 @@
             "description": "Inicia una tasca de purga per eliminar les dades relacionades amb entitats espec\u00edfiques de la teva base de dades.",
             "fields": {
                 "domains": {
-                    "description": "Llista de dominis als quals eliminar-ne les dades de la base de dades.",
                     "name": "Dominis a eliminar"
                 },
                 "entity_globs": {
-                    "description": "Llista de patrons glob utilitzada per seleccionar les entitats a les quals eliminar-ne les dades de la base de dades.",
                     "name": "Globs d'entitat a eliminar"
                 },
                 "entity_id": {
-                    "description": "Llista d'entitats les dades de les quals cal eliminar de la base de dades.",
                     "name": "Entitats a eliminar"
                 },
                 "keep_days": {

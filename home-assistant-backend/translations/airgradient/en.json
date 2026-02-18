@@ -3,7 +3,9 @@
         "abort": {
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
-            "invalid_version": "This firmware version is unsupported. Please upgrade the firmware of the device to at least version 3.1.1."
+            "invalid_version": "This firmware version is unsupported. Please upgrade the firmware of the device to at least version 3.1.1.",
+            "reconfigure_successful": "Re-configuration was successful",
+            "unique_id_mismatch": "Please ensure you reconfigure against the same device."
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -12,7 +14,7 @@
         "flow_title": "{model}",
         "step": {
             "discovery_confirm": {
-                "description": "Do you want to setup {model}?"
+                "description": "Do you want to set up {model}?"
             },
             "user": {
                 "data": {
@@ -63,7 +65,7 @@
             "display_pm_standard": {
                 "name": "Display PM standard",
                 "state": {
-                    "ugm3": "\u00b5g/m\u00b3",
+                    "ugm3": "\u03bcg/m\u00b3",
                     "us_aqi": "US AQI"
                 }
             },
@@ -113,7 +115,7 @@
             "display_pm_standard": {
                 "name": "Display PM standard",
                 "state": {
-                    "ugm3": "\u00b5g/m\u00b3",
+                    "ugm3": "\u03bcg/m\u00b3",
                     "us_aqi": "US AQI"
                 }
             },
@@ -147,6 +149,9 @@
             "raw_nitrogen": {
                 "name": "Raw NOx"
             },
+            "raw_pm02": {
+                "name": "Raw PM2.5"
+            },
             "raw_total_volatile_organic_component": {
                 "name": "Raw VOC"
             },
@@ -161,6 +166,17 @@
             "post_data_to_airgradient": {
                 "name": "Post data to Airgradient"
             }
+        }
+    },
+    "exceptions": {
+        "communication_error": {
+            "message": "An error occurred while communicating with the Airgradient device: {error}"
+        },
+        "unknown_error": {
+            "message": "An unknown error occurred while communicating with the Airgradient device: {error}"
+        },
+        "update_error": {
+            "message": "An error occurred while communicating with the Airgradient device: {error}"
         }
     }
 }

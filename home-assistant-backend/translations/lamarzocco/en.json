@@ -23,14 +23,12 @@
             },
             "machine_selection": {
                 "data": {
-                    "host": "IP address",
                     "machine": "Machine"
                 },
                 "data_description": {
-                    "host": "Local IP address of the machine",
                     "machine": "Select the machine you want to integrate"
                 },
-                "description": "Select the machine you want to integrate. Set the \"IP\" to get access to shot time related sensors."
+                "description": "Select the machine you want to integrate."
             },
             "reauth_confirm": {
                 "data": {
@@ -73,6 +71,9 @@
             },
             "water_tank": {
                 "name": "Water tank empty"
+            },
+            "websocket_connected": {
+                "name": "WebSocket connected"
             }
         },
         "button": {
@@ -86,49 +87,35 @@
             }
         },
         "number": {
+            "bbw_dose": {
+                "name": "Brew by weight dose {dose}"
+            },
             "coffee_temp": {
                 "name": "Coffee target temperature"
             },
-            "dose_key": {
-                "name": "Dose Key {key}"
-            },
-            "prebrew_off": {
+            "prebrew_time_off": {
                 "name": "Prebrew off time"
             },
-            "prebrew_off_key": {
-                "name": "Prebrew off time Key {key}"
-            },
-            "prebrew_on": {
+            "prebrew_time_on": {
                 "name": "Prebrew on time"
             },
-            "prebrew_on_key": {
-                "name": "Prebrew on time Key {key}"
-            },
-            "preinfusion_off": {
+            "preinfusion_time": {
                 "name": "Preinfusion time"
-            },
-            "preinfusion_off_key": {
-                "name": "Preinfusion time Key {key}"
-            },
-            "scale_target_key": {
-                "name": "Brew by weight target {key}"
             },
             "smart_standby_time": {
                 "name": "Smart standby time"
             },
             "steam_temp": {
                 "name": "Steam target temperature"
-            },
-            "tea_water_duration": {
-                "name": "Tea water duration"
             }
         },
         "select": {
-            "active_bbw": {
-                "name": "Active brew by weight recipe",
+            "bbw_dose_mode": {
+                "name": "Brew by weight dose mode",
                 "state": {
-                    "a": "Recipe A",
-                    "b": "Recipe B"
+                    "continuous": "Continuous",
+                    "dose1": "Dose 1",
+                    "dose2": "Dose 2"
                 }
             },
             "prebrew_infusion_select": {
@@ -156,20 +143,25 @@
             }
         },
         "sensor": {
-            "current_temp_coffee": {
-                "name": "Current coffee temperature"
+            "brewing_start_time": {
+                "name": "Brewing start time"
             },
-            "current_temp_steam": {
-                "name": "Current steam temperature"
+            "coffee_boiler_ready_time": {
+                "name": "Coffee boiler ready time"
             },
-            "drink_stats_coffee": {
-                "name": "Total coffees made"
+            "last_cleaning_time": {
+                "name": "Last cleaning time"
             },
-            "drink_stats_flushing": {
-                "name": "Total flushes made"
+            "steam_boiler_ready_time": {
+                "name": "Steam boiler ready time"
             },
-            "shot_timer": {
-                "name": "Shot timer"
+            "total_coffees_made": {
+                "name": "Total coffees made",
+                "unit_of_measurement": "coffees"
+            },
+            "total_flushes_done": {
+                "name": "Total flushes done",
+                "unit_of_measurement": "flushes"
             }
         },
         "switch": {
@@ -202,14 +194,17 @@
         "auto_on_off_error": {
             "message": "Error while setting auto on/off to {state} for {id}"
         },
+        "bluetooth_connection_failed": {
+            "message": "Error while connecting to machine via Bluetooth"
+        },
+        "bluetooth_required_offline": {
+            "message": "Bluetooth is required when offline mode is enabled, but no Bluetooth device was found"
+        },
         "button_error": {
             "message": "Error while executing button {key}"
         },
         "number_exception": {
             "message": "Error while setting value {value} for number {key}"
-        },
-        "number_exception_key": {
-            "message": "Error while setting value {value} for number {key}, key {physical_key}"
         },
         "select_option_error": {
             "message": "Error while setting select option {option} for {key}"
@@ -231,12 +226,17 @@
         }
     },
     "options": {
+        "error": {
+            "bluetooth_required_offline": "Bluetooth is required when offline mode is enabled."
+        },
         "step": {
             "init": {
                 "data": {
+                    "offline_mode": "Offline Mode",
                     "use_bluetooth": "Use Bluetooth"
                 },
                 "data_description": {
+                    "offline_mode": "Enable offline mode to operate without internet connectivity through Bluetooth. Only local features will be available. Requires Bluetooth to be enabled.",
                     "use_bluetooth": "Should the integration try to use Bluetooth to control the machine?"
                 }
             }

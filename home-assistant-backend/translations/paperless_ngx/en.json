@@ -1,0 +1,157 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful"
+        },
+        "error": {
+            "cannot_connect": "Invalid hostname or IP address",
+            "forbidden": "The token does not have permission to access the API.",
+            "invalid_api_key": "Invalid API key",
+            "unknown": "Unexpected error",
+            "user_inactive_or_deleted": "Authentication failed. The user is inactive or has been deleted."
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "API key to connect to the Paperless-ngx API"
+                },
+                "title": "Re-auth Paperless-ngx instance"
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key",
+                    "url": "URL",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "api_key": "API key to connect to the Paperless-ngx API",
+                    "url": "URL to connect to the Paperless-ngx instance",
+                    "verify_ssl": "Verify the SSL certificate of the Paperless-ngx instance. Disable this option if you\u2019re using a self-signed certificate."
+                },
+                "title": "Reconfigure Paperless-ngx instance"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API key",
+                    "url": "URL",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "api_key": "API key to connect to the Paperless-ngx API",
+                    "url": "URL to connect to the Paperless-ngx instance",
+                    "verify_ssl": "Verify the SSL certificate of the Paperless-ngx instance. Disable this option if you\u2019re using a self-signed certificate."
+                },
+                "title": "Add Paperless-ngx instance"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "celery_status": {
+                "name": "Status Celery",
+                "state": {
+                    "error": "Error",
+                    "ok": "OK",
+                    "warning": "Warning"
+                }
+            },
+            "characters_count": {
+                "name": "Total characters",
+                "unit_of_measurement": "characters"
+            },
+            "classifier_status": {
+                "name": "Status classifier",
+                "state": {
+                    "error": "Error",
+                    "ok": "OK",
+                    "warning": "Warning"
+                }
+            },
+            "correspondent_count": {
+                "name": "Correspondents",
+                "unit_of_measurement": "correspondents"
+            },
+            "database_status": {
+                "name": "Status database",
+                "state": {
+                    "error": "Error",
+                    "ok": "OK",
+                    "warning": "Warning"
+                }
+            },
+            "document_type_count": {
+                "name": "Document types",
+                "unit_of_measurement": "document types"
+            },
+            "documents_inbox": {
+                "name": "Documents in inbox",
+                "unit_of_measurement": "documents"
+            },
+            "documents_total": {
+                "name": "Total documents",
+                "unit_of_measurement": "documents"
+            },
+            "index_status": {
+                "name": "Status index",
+                "state": {
+                    "error": "Error",
+                    "ok": "OK",
+                    "warning": "Warning"
+                }
+            },
+            "redis_status": {
+                "name": "Status Redis",
+                "state": {
+                    "error": "Error",
+                    "ok": "OK",
+                    "warning": "Warning"
+                }
+            },
+            "sanity_check_status": {
+                "name": "Status sanity",
+                "state": {
+                    "error": "Error",
+                    "ok": "OK",
+                    "warning": "Warning"
+                }
+            },
+            "storage_available": {
+                "name": "Available storage"
+            },
+            "storage_total": {
+                "name": "Total storage"
+            },
+            "tag_count": {
+                "name": "Tags",
+                "unit_of_measurement": "tags"
+            }
+        },
+        "update": {
+            "paperless_update": {
+                "name": "Software"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Invalid hostname or IP address"
+        },
+        "forbidden": {
+            "message": "The token does not have permission to access the API."
+        },
+        "invalid_api_key": {
+            "message": "Invalid API key"
+        },
+        "unknown": {
+            "message": "Unexpected error"
+        },
+        "user_inactive_or_deleted": {
+            "message": "Authentication failed. The user is inactive or has been deleted."
+        }
+    }
+}

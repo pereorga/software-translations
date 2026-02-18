@@ -1,0 +1,44 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Email address for your Hanna Cloud account",
+                    "password": "Password for your Hanna Cloud account"
+                },
+                "description": "Enter your Hanna Cloud credentials"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "air_temperature": {
+                "name": "Air temperature"
+            },
+            "chlorine_flow_rate": {
+                "name": "Chlorine flow rate"
+            },
+            "chlorine_orp_value": {
+                "name": "Chlorine ORP value"
+            },
+            "ph_acid_base_flow_rate": {
+                "name": "pH Acid/Base flow rate"
+            },
+            "water_temperature": {
+                "name": "Water temperature"
+            }
+        }
+    }
+}

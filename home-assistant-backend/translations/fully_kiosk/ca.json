@@ -124,6 +124,9 @@
         "load_url": {
             "description": "Carrega un URL a un Fully Kiosk Browser.",
             "fields": {
+                "device_id": {
+                    "name": "ID de dispositiu"
+                },
                 "url": {
                     "description": "URL a carregar.",
                     "name": "URL"
@@ -134,6 +137,9 @@
         "set_config": {
             "description": "Configura un par\u00e0metre de configuraci\u00f3 de Fully Kiosk Browser.",
             "fields": {
+                "device_id": {
+                    "name": "ID de dispositiu"
+                },
                 "key": {
                     "description": "Par\u00e0metre de configuraci\u00f3 a configurar.",
                     "name": "Clau"
@@ -142,7 +148,8 @@
                     "description": "Valor del par\u00e0metre de configuraci\u00f3.",
                     "name": "Valor"
                 }
-            }
+            },
+            "name": "Estableix la configuraci\u00f3"
         },
         "start_application": {
             "description": "Inicia una aplicaci\u00f3 a un dispositiu que executi Fully Kiosk Browser.",
@@ -150,9 +157,11 @@
                 "application": {
                     "description": "Nom de paquet de l'aplicaci\u00f3 a iniciar.",
                     "name": "Aplicaci\u00f3"
+                },
+                "device_id": {
+                    "name": "ID de dispositiu"
                 }
-            },
-            "name": "Inicia l'aplicaci\u00f3"
+            }
         }
     }
 }

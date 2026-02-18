@@ -1,7 +1,9 @@
 {
     "common": {
+        "climate_preset_dont_change": "No canvi\u00efs",
         "climate_preset_heater": "Escalfador",
         "climate_preset_solar": "Solar",
+        "climate_preset_solar_preferred": "Preferible solar",
         "service_config_entry_name": "Entrada de configuraci\u00f3"
     },
     "config": {
@@ -18,7 +20,6 @@
                     "ip_address": "Adre\u00e7a IP",
                     "port": "Port"
                 },
-                "description": "Introdueix la informaci\u00f3 de la passarel\u00b7la ScreenLogic.",
                 "title": "ScreenLogic"
             },
             "gateway_select": {
@@ -31,6 +32,32 @@
         }
     },
     "entity": {
+        "climate": {
+            "body_0": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "dont_change": "No canvi\u00efs",
+                            "heater": "Escalfador",
+                            "solar": "Solar",
+                            "solar_preferred": "Preferible solar"
+                        }
+                    }
+                }
+            },
+            "body_1": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "dont_change": "No canvi\u00efs",
+                            "heater": "Escalfador",
+                            "solar": "Solar",
+                            "solar_preferred": "Preferible solar"
+                        }
+                    }
+                }
+            }
+        },
         "number": {
             "cya": {
                 "name": "\u00c0cid cian\u00faric"
@@ -45,6 +72,19 @@
         "sensor": {
             "air_temperature": {
                 "name": "Temperatura de l'aire"
+            },
+            "chem_dose_state": {
+                "state": {
+                    "dosing": "Dosificant",
+                    "mixing": "Mesclant",
+                    "monitoring": "Monitorant"
+                }
+            },
+            "controller_state": {
+                "name": "Estat del controlador",
+                "state": {
+                    "service": "Servei"
+                }
             },
             "cya": {
                 "name": "\u00c0cid cian\u00faric"
@@ -74,8 +114,25 @@
     "services": {
         "set_color_mode": {
             "fields": {
-                "color_mode": {
-                    "name": "Mode de color"
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
+                }
+            }
+        },
+        "start_super_chlorination": {
+            "fields": {
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
+                },
+                "runtime": {
+                    "name": "Temps en execuci\u00f3"
+                }
+            }
+        },
+        "stop_super_chlorination": {
+            "fields": {
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
                 }
             }
         }

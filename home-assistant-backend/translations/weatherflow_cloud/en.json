@@ -11,13 +11,13 @@
         "step": {
             "reauth_confirm": {
                 "data": {
-                    "api_token": "Personal api token"
+                    "api_token": "Personal API token"
                 },
                 "description": "Reauthenticate with WeatherFlow"
             },
             "user": {
                 "data": {
-                    "api_token": "Personal api token"
+                    "api_token": "Personal API token"
                 },
                 "description": "Set up a WeatherFlow Forecast Station"
             }
@@ -55,6 +55,33 @@
             "lightning_strike_last_epoch": {
                 "name": "Lightning last strike"
             },
+            "precip_accum_last_1hr": {
+                "name": "Rain last hour"
+            },
+            "precip_accum_local_day": {
+                "name": "Precipitation today"
+            },
+            "precip_accum_local_day_final": {
+                "name": "Nearcast precipitation today"
+            },
+            "precip_accum_local_yesterday": {
+                "name": "Precipitation yesterday"
+            },
+            "precip_accum_local_yesterday_final": {
+                "name": "Nearcast precipitation yesterday"
+            },
+            "precip_analysis_type_yesterday": {
+                "name": "Precipitation type yesterday"
+            },
+            "precip_minutes_local_day": {
+                "name": "Precipitation duration today"
+            },
+            "precip_minutes_local_yesterday": {
+                "name": "Precipitation duration yesterday"
+            },
+            "precip_minutes_local_yesterday_final": {
+                "name": "Nearcast precipitation duration yesterday"
+            },
             "sea_level_pressure": {
                 "name": "Pressure sea level"
             },
@@ -64,20 +91,23 @@
             "wet_bulb_temperature": {
                 "name": "Wet bulb temperature"
             },
+            "wind_avg": {
+                "name": "Wind speed (avg)"
+            },
             "wind_chill": {
                 "name": "Wind chill"
             },
             "wind_direction": {
                 "name": "Wind direction"
             },
-            "wind_direction_cardinal": {
-                "name": "Wind direction (cardinal)"
-            },
             "wind_gust": {
                 "name": "Wind gust"
             },
             "wind_lull": {
                 "name": "Wind lull"
+            },
+            "wind_sample_interval": {
+                "name": "Wind sample interval"
             }
         }
     }

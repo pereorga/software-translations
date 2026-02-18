@@ -14,22 +14,16 @@
         },
         "step": {
             "choose_mode": {
-                "description": "Trieu el mode de connexi\u00f3 als panells Elmax.",
-                "menu_options": {
-                    "cloud": "Connecta't al panell Elmax mitjan\u00e7ant les APIs d'Elmax Cloud",
-                    "direct": "Connecta't al panell Elmax mitjan\u00e7ant IP local/directa"
-                }
+                "description": "Trieu el mode de connexi\u00f3 als panells Elmax."
             },
             "cloud": {
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
-                },
-                "description": "Inicia sessi\u00f3 a Elmax Cloud amb les teves credencials"
+                }
             },
             "direct": {
                 "data": {
-                    "panel_api_host": "Nom d'amfitri\u00f3 o IP de l'API del panell",
                     "panel_api_port": "Port de l'API del panell",
                     "panel_pin": "Codi PIN del panell",
                     "use_ssl": "Utilitza SSL"
@@ -38,7 +32,6 @@
             "panels": {
                 "data": {
                     "panel_id": "ID del panell",
-                    "panel_name": "Nom del panell",
                     "panel_pin": "Codi PIN"
                 },
                 "description": "Selecciona quin panell vols controlar amb aquesta integraci\u00f3. Tingues en compte que el panell ha d'estar ON per poder ser configurat."

@@ -1,4 +1,11 @@
 {
+    "common": {
+        "data_description_api_key": "The tankerkoenig API key to be used.",
+        "data_description_location": "Pick the location where to search for gas stations.",
+        "data_description_name": "The name of the particular region to be added.",
+        "data_description_radius": "The radius in kilometers to search for gas stations around the selected location.",
+        "data_description_stations": "Select the stations you want to add to Home Assistant."
+    },
     "config": {
         "abort": {
             "already_configured": "Location is already configured",
@@ -12,11 +19,17 @@
             "reauth_confirm": {
                 "data": {
                     "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The tankerkoenig API key to be used."
                 }
             },
             "select_station": {
                 "data": {
                     "stations": "Stations"
+                },
+                "data_description": {
+                    "stations": "Select the stations you want to add to Home Assistant."
                 },
                 "description": "Found {stations_count} stations in radius",
                 "title": "Select stations to add"
@@ -24,11 +37,15 @@
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "fuel_types": "Fuel types",
                     "location": "Location",
                     "name": "Region name",
-                    "radius": "Search radius",
-                    "stations": "Additional fuel stations"
+                    "radius": "Search radius"
+                },
+                "data_description": {
+                    "api_key": "The tankerkoenig API key to be used.",
+                    "location": "Pick the location where to search for gas stations.",
+                    "name": "The name of the particular region to be added.",
+                    "radius": "The radius in kilometers to search for gas stations around the selected location."
                 }
             }
         }
@@ -146,6 +163,17 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_api_key": {
+            "message": "The provided API key is invalid. Please check your API key."
+        },
+        "rate_limit_reached": {
+            "message": "You have reached the rate limit for the Tankerkoenig API. Please try to increase the poll interval and reduce the requests."
+        },
+        "station_update_failed": {
+            "message": "Failed to update station data for station(s) {station_ids}. Please check your network connection."
+        }
+    },
     "options": {
         "error": {
             "invalid_auth": "Invalid authentication"
@@ -155,6 +183,10 @@
                 "data": {
                     "show_on_map": "Show stations on map",
                     "stations": "Stations"
+                },
+                "data_description": {
+                    "show_on_map": "Whether to show the station sensors on the map or not.",
+                    "stations": "Select the stations you want to add to Home Assistant."
                 },
                 "title": "Tankerkoenig options"
             }

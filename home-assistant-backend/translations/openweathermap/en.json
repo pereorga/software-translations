@@ -12,13 +12,64 @@
                 "data": {
                     "api_key": "API key",
                     "language": "Language",
-                    "latitude": "Latitude",
-                    "longitude": "Longitude",
+                    "location": "Location",
                     "mode": "Mode",
                     "name": "Name"
                 },
-                "description": "To generate API key go to https://openweathermap.org/appid"
+                "data_description": {
+                    "api_key": "API key for the OpenWeatherMap integration",
+                    "language": "Language for the OpenWeatherMap content",
+                    "location": "Location to get the weather data for",
+                    "mode": "Mode for the OpenWeatherMap API",
+                    "name": "Name for this OpenWeatherMap location"
+                },
+                "description": "To generate an API key, please refer to the [integration documentation]({doc_url})"
             }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "clouds": {
+                "name": "Cloud coverage"
+            },
+            "condition": {
+                "name": "Condition"
+            },
+            "dew_point": {
+                "name": "Dew point temperature"
+            },
+            "feels_like_temperature": {
+                "name": "Apparent temperature"
+            },
+            "precipitation_kind": {
+                "name": "Precipitation kind"
+            },
+            "rain": {
+                "name": "Rain intensity"
+            },
+            "snow": {
+                "name": "Snow intensity"
+            },
+            "uv_index": {
+                "name": "UV index"
+            },
+            "visibility_distance": {
+                "name": "Visibility"
+            },
+            "weather": {
+                "name": "Weather"
+            },
+            "weather_code": {
+                "name": "Weather code"
+            },
+            "wind_gust": {
+                "name": "Wind gust speed"
+            }
+        }
+    },
+    "exceptions": {
+        "service_minute_forecast_mode": {
+            "message": "Minute forecast is available only when {name} mode is set to v3.0"
         }
     },
     "issues": {
@@ -44,8 +95,18 @@
                 "data": {
                     "language": "Language",
                     "mode": "Mode"
+                },
+                "data_description": {
+                    "language": "Language for the OpenWeatherMap content",
+                    "mode": "Mode for the OpenWeatherMap API"
                 }
             }
+        }
+    },
+    "services": {
+        "get_minute_forecast": {
+            "description": "Retrieves a minute-by-minute weather forecast for one hour.",
+            "name": "Get minute forecast"
         }
     }
 }

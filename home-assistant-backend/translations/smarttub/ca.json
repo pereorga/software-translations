@@ -9,6 +9,10 @@
         },
         "step": {
             "reauth_confirm": {
+                "data": {
+                    "email": "Correu electr\u00f2nic",
+                    "password": "Contrasenya"
+                },
                 "description": "La integraci\u00f3 SmartTub ha de tornar a autenticar el teu compte",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
@@ -17,7 +21,6 @@
                     "email": "Correu electr\u00f2nic",
                     "password": "Contrasenya"
                 },
-                "description": "Introdueix el correu electr\u00f2nic i la contrasenya de SmartTub per iniciar sessi\u00f3",
                 "title": "Inici de sessi\u00f3"
             }
         }
@@ -51,10 +54,8 @@
             }
         },
         "snooze_reminder": {
-            "description": "Retarda un recordatori perqu\u00e8 no es torni a activar durant un per\u00edode de temps.",
             "fields": {
                 "days": {
-                    "description": "Nombre de dies a posposar el recordatori.",
                     "name": "Dies"
                 }
             },

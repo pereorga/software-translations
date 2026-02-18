@@ -4,6 +4,7 @@
             "already_configured": "Account is already configured",
             "reauth_failed_existing": "Could not update the config entry, please remove the integration and set it up again.",
             "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -18,14 +19,26 @@
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "You need to supply a new 'main' API key from UptimeRobot",
+                "data_description": {
+                    "api_key": "The 'main' API key for your UptimeRobot account"
+                },
                 "title": "Authentication expired for {name}"
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The 'main' API key for your UptimeRobot account"
+                }
             },
             "user": {
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "You need to supply the 'main' API key from UptimeRobot"
+                "data_description": {
+                    "api_key": "The 'main' API key for your UptimeRobot account"
+                }
             }
         }
     },
@@ -40,6 +53,11 @@
                     "up": "Up"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "api_exception": {
+            "message": "Could not turn on/off monitoring: {error}"
         }
     }
 }

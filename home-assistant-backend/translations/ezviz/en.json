@@ -95,6 +95,16 @@
                     "silent": "Silent",
                     "soft": "Soft"
                 }
+            },
+            "battery_camera_work_mode": {
+                "name": "Battery work mode",
+                "state": {
+                    "custom": "Custom",
+                    "high_performance": "High performance",
+                    "plugged_in": "Plugged in",
+                    "power_save": "Power save",
+                    "super_power_save": "Super power saving"
+                }
             }
         },
         "sensor": {
@@ -177,7 +187,7 @@
         "step": {
             "init": {
                 "data": {
-                    "ffmpeg_arguments": "Arguments passed to ffmpeg for cameras",
+                    "ffmpeg_arguments": "Arguments passed to FFmpeg for cameras",
                     "timeout": "Request timeout (seconds)"
                 }
             }

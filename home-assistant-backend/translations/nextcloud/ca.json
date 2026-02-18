@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "connection_error_during_import": "S'ha produ\u00eft un error de connexi\u00f3 durant la importaci\u00f3 de la configuraci\u00f3 de YAML",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
@@ -69,9 +68,6 @@
             "nextcloud_cache_memory_type": {
                 "name": "Mem\u00f2ria cau"
             },
-            "nextcloud_cache_num_entries": {
-                "name": "Nombre d'entrades de la mem\u00f2ria cau"
-            },
             "nextcloud_cache_num_hits": {
                 "name": "Nombre d'encerts de la mem\u00f2ria cau"
             },
@@ -86,9 +82,6 @@
             },
             "nextcloud_cache_start_time": {
                 "name": "Inici de la mem\u00f2ria cau"
-            },
-            "nextcloud_cache_ttl": {
-                "name": "Tems de vida (TTL) de la mem\u00f2ria cau"
             },
             "nextcloud_database_size": {
                 "name": "Mida de la base de dades"
@@ -177,23 +170,11 @@
             "nextcloud_system_apps_app_updates_tasks": {
                 "name": "Actualitzacions de tasques"
             },
-            "nextcloud_system_apps_app_updates_twofactor_totp": {
-                "name": "Actualitzacions d'autenticaci\u00f3 de dos factors"
-            },
             "nextcloud_system_apps_num_installed": {
                 "name": "Aplicacions instal\u00b7lades"
             },
             "nextcloud_system_apps_num_updates_available": {
                 "name": "Actualitzacions disponibles"
-            },
-            "nextcloud_system_cpuload_1": {
-                "name": "C\u00e0rrega mitjana de la CPU, \u00faltim minut"
-            },
-            "nextcloud_system_cpuload_15": {
-                "name": "C\u00e0rrega mitjana de la CPU, \u00faltims 15 minuts"
-            },
-            "nextcloud_system_cpuload_5": {
-                "name": "C\u00e0rrega mitjana de la CPU, \u00faltims 5 minuts"
             },
             "nextcloud_system_freespace": {
                 "name": "Espai disponible"

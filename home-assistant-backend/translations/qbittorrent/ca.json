@@ -28,6 +28,12 @@
                 "name": "Tots els torrents",
                 "unit_of_measurement": "torrents"
             },
+            "connection_status": {
+                "state": {
+                    "connected": "Connectat",
+                    "disconnected": "Desconnectat"
+                }
+            },
             "current_status": {
                 "name": "Estat",
                 "state": {
@@ -39,6 +45,9 @@
             },
             "download_speed": {
                 "name": "Velocitat de baixada"
+            },
+            "errored_torrents": {
+                "unit_of_measurement": "torrents"
             },
             "inactive_torrents": {
                 "name": "Torrents inactius",

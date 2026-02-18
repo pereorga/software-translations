@@ -1,0 +1,31 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_host": "Invalid hostname or IP address"
+        },
+        "step": {
+            "confirm": {
+                "description": "Do you want to start setup?"
+            },
+            "user": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "The URL of the Tilt Pi instance."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "gravity": {
+                "name": "Gravity"
+            }
+        }
+    }
+}

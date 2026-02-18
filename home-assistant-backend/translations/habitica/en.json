@@ -1,21 +1,90 @@
 {
     "common": {
+        "add_checklist_item_description": "The items to add to a task's checklist.",
+        "add_checklist_item_name": "Add checklist items",
+        "alias_description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+        "alias_name": "Task alias",
+        "checklist_options_description": "Add, remove, or update status of an item on a task's checklist.",
+        "checklist_options_name": "Checklist",
+        "clear_reminder_description": "Remove all reminders from a Habitica task.",
+        "clear_reminder_name": "Clear all reminders",
+        "collapse_checklist_description": "Whether the checklist of a task is displayed as collapsed or expanded in Habitica.",
+        "collapse_checklist_name": "Collapse/expand checklist",
+        "config_entry_description": "Select the Habitica account to update a task.",
         "config_entry_name": "Select character",
+        "cost_name": "Cost",
         "dailies": "Dailies",
+        "date_description": "The to-do's due date.",
+        "date_name": "Due date",
+        "developer_options_description": "Additional features available in developer mode.",
+        "developer_options_name": "Advanced settings",
+        "every_x_description": "The number of intervals (days, weeks, months, or years) after which the daily repeats, based on the chosen repetition interval. A value of 0 makes the daily inactive ('Grey Daily').",
+        "every_x_name": "Repeat every X",
+        "frequency_daily_description": "The repetition interval of a daily.",
+        "frequency_daily_name": "Repeat interval",
+        "frequency_description": "The frequency at which the habit's counter resets: daily at the start of a new day, weekly after Sunday night, or monthly at the beginning of a new month.",
+        "frequency_name": "Counter reset",
+        "name_description": "The title for the Habitica task.",
+        "notes_description": "The notes for the Habitica task.",
+        "notes_name": "Notes",
+        "priority_description": "The difficulty of the task.",
+        "priority_name": "Difficulty",
+        "quest_name": "Quest",
+        "reminder_description": "Add reminders to a Habitica task.",
+        "reminder_name": "Add reminders",
+        "reminder_options_description": "Add, remove or clear reminders of a Habitica task.",
+        "reminder_options_name": "Reminders",
+        "remove_checklist_item_description": "Remove items from a task's checklist.",
+        "remove_checklist_item_name": "Delete items",
+        "remove_reminder_description": "Remove specific reminders from a Habitica task.",
+        "remove_reminder_name": "Remove reminders",
+        "remove_tag_description": "Remove tags from the Habitica task.",
+        "remove_tag_name": "Remove tags",
+        "rename_description": "The title for the Habitica task.",
+        "rename_name": "Rename",
+        "repeat_monthly_description": "Whether a monthly recurring task repeats on the same calendar day each month or on the same weekday and week of the month, based on the start date.",
+        "repeat_monthly_options_description": "Options related to monthly repetition, applicable when the repetition interval is set to monthly.",
+        "repeat_monthly_options_name": "Monthly repeat day",
+        "repeat_name": "Repeat on",
+        "repeat_weekly_description": "The days of the week the daily repeats.",
+        "repeat_weekly_options_description": "Options related to weekly repetition, applicable when the repetition interval is set to weekly.",
+        "repeat_weekly_options_name": "Weekly repeat days",
+        "score_checklist_item_description": "Mark items from a task's checklist as completed.",
+        "score_checklist_item_name": "Complete items",
+        "start_date_description": "Defines when the daily task becomes active and specifies the exact weekday or day of the month it repeats on.",
+        "start_date_name": "Start date",
+        "tag_description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+        "tag_name": "Add tags",
+        "tag_options_description": "Add or remove tags from a task.",
+        "tag_options_name": "Tags",
+        "task_description": "The name (or task ID) of the task you want to update.",
+        "task_name": "Task name",
         "todos": "To-Do's",
         "unit_experience_points": "XP",
         "unit_health_points": "HP",
+        "unit_items": "items",
         "unit_mana_points": "MP",
-        "unit_tasks": "tasks"
+        "unit_rage": "rage",
+        "unscore_checklist_item_description": "Undo completion of items of a task's checklist.",
+        "unscore_checklist_item_name": "Uncomplete items",
+        "up_down_description": "Whether the habit is good and rewarding (positive), bad and penalizing (negative), or both.",
+        "up_down_name": "Rewards or losses"
     },
     "config": {
         "abort": {
-            "already_configured": "Account is already configured"
+            "already_configured": "Account is already configured",
+            "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful",
+            "unique_id_mismatch": "Hmm, those login details are correct, but they're not for this adventurer. Got another account to try?"
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
+            "invalid_credentials": "Input is incomplete. You must provide either your login details or an API token",
             "unknown": "Unexpected error"
+        },
+        "initiate_flow": {
+            "user": "Add account"
         },
         "step": {
             "advanced": {
@@ -28,7 +97,8 @@
                 "data_description": {
                     "api_key": "API Token of the Habitica account",
                     "api_user": "User ID of your Habitica account",
-                    "url": "URL of the Habitica installation to connect to. Defaults to `{default_url}`"
+                    "url": "URL of the Habitica installation to connect to. Defaults to `{default_url}`",
+                    "verify_ssl": "Enable SSL certificate verification for secure connections. Disable only if connecting to a Habitica instance using a self-signed certificate"
                 },
                 "description": "You can retrieve your `User ID` and `API Token` from [**Settings -> Site Data**]({site_data}) on Habitica or the instance you want to connect to",
                 "title": "Log in to other instances"
@@ -45,6 +115,58 @@
                 "description": "Enter your login details to start using Habitica with Home Assistant\n\n[Forgot your password?]({forgot_password})",
                 "title": "Log in to Habitica"
             },
+            "reauth_confirm": {
+                "description": "![Habiticans]({habiticans}) It seems your API token for **{name}** has been reset. To re-authorize the integration, you can either log in with your username or email, and password, or directly provide your new API token.",
+                "sections": {
+                    "reauth_api_key": {
+                        "data": {
+                            "api_key": "API Token"
+                        },
+                        "data_description": {
+                            "api_key": "API Token of the Habitica account"
+                        },
+                        "description": "Enter your new API token below. You can find it in Habitica under 'Settings -> Site Data'",
+                        "name": "Re-authorize via API Token"
+                    },
+                    "reauth_login": {
+                        "data": {
+                            "password": "Password",
+                            "username": "Email or username (case-sensitive)"
+                        },
+                        "data_description": {
+                            "password": "Password for the account to connect Home Assistant to Habitica",
+                            "username": "Email or username (case-sensitive) to connect Home Assistant to your Habitica account"
+                        },
+                        "description": "Enter your login details below to re-authorize the Home Assistant integration with Habitica",
+                        "name": "Re-authorize via login"
+                    }
+                },
+                "title": "Re-authorize {name} with Habitica"
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API Token"
+                },
+                "data_description": {
+                    "api_key": "API Token of the Habitica account"
+                },
+                "description": "![Habiticans]({habiticans})\n\nEnter your new API token below. You can find it in Habitica under [**Settings -> Site Data**]({site_data})",
+                "sections": {
+                    "danger_zone": {
+                        "data": {
+                            "url": "URL",
+                            "verify_ssl": "Verify SSL certificate"
+                        },
+                        "data_description": {
+                            "url": "URL of the Habitica instance",
+                            "verify_ssl": "Enable SSL certificate verification for secure connections. Disable only if connecting to a Habitica instance using a self-signed certificate"
+                        },
+                        "description": "These settings impact core functionality. Modifications are unnecessary if connected to the official Habitica instance and may disrupt the integration. Proceed with caution.",
+                        "name": "Critical configuration options"
+                    }
+                },
+                "title": "Update Habitica configuration"
+            },
             "user": {
                 "description": "![Habiticans]({habiticans}) Connect your Habitica account to keep track of your adventurer's stats, progress, and manage your to-dos and daily tasks.\n\n[Don't have a Habitica account? Sign up here.]({signup})",
                 "menu_options": {
@@ -55,10 +177,39 @@
             }
         }
     },
+    "config_subentries": {
+        "party_member": {
+            "abort": {
+                "already_configured": "This adventurer is already configured as a party member in this or another account.",
+                "already_configured_as_entry": "Already configured as a user. This adventurer cannot be added as a party member.",
+                "config_entry_disabled": "Cannot add party members when the main account is disabled or not loaded.",
+                "not_in_a_party": "You are currently not in a party. You can only add party members when your character is in a party."
+            },
+            "entry_type": "Party member",
+            "initiate_flow": {
+                "user": "Add party member"
+            },
+            "step": {
+                "user": {
+                    "data": {
+                        "party_member": "Party member"
+                    },
+                    "data_description": {
+                        "party_member": "Select an adventurer from your party to track health and other stats."
+                    },
+                    "description": "Track the stats of the adventurers in your party.",
+                    "title": "Party members"
+                }
+            }
+        }
+    },
     "entity": {
         "binary_sensor": {
             "pending_quest": {
                 "name": "Pending quest invitation"
+            },
+            "quest_running": {
+                "name": "Quest status"
             }
         },
         "button": {
@@ -134,7 +285,50 @@
                 "name": "To-Do's"
             }
         },
+        "image": {
+            "avatar": {
+                "name": "Avatar"
+            },
+            "quest_image": {
+                "name": "Quest"
+            }
+        },
+        "notify": {
+            "party_chat": {
+                "name": "Party chat"
+            },
+            "private_message": {
+                "name": "Private message: {name}"
+            }
+        },
         "sensor": {
+            "boss": {
+                "name": "Quest boss"
+            },
+            "boss_hp": {
+                "name": "Boss health",
+                "unit_of_measurement": "HP"
+            },
+            "boss_hp_remaining": {
+                "name": "Boss health remaining",
+                "unit_of_measurement": "HP"
+            },
+            "boss_rage": {
+                "name": "Boss rage",
+                "unit_of_measurement": "rage"
+            },
+            "boss_rage_limit": {
+                "name": "Boss rage limit break",
+                "state_attributes": {
+                    "effect": {
+                        "name": "Effect"
+                    },
+                    "rage_skill": {
+                        "name": "Rage skill"
+                    }
+                },
+                "unit_of_measurement": "rage"
+            },
             "class": {
                 "name": "Class",
                 "state": {
@@ -143,6 +337,10 @@
                     "warrior": "Warrior",
                     "wizard": "Mage"
                 }
+            },
+            "collected_items": {
+                "name": "Collected quest items",
+                "unit_of_measurement": "items"
             },
             "constitution": {
                 "name": "Constitution",
@@ -164,12 +362,29 @@
                     }
                 }
             },
-            "dailys": {
-                "name": "Dailies",
-                "unit_of_measurement": "tasks"
-            },
             "display_name": {
-                "name": "Display name"
+                "name": "Display name",
+                "state_attributes": {
+                    "blurb": {
+                        "name": "About"
+                    },
+                    "joined": {
+                        "name": "Joined"
+                    },
+                    "last_login": {
+                        "name": "Last login"
+                    },
+                    "total_logins": {
+                        "name": "Total logins"
+                    },
+                    "username": {
+                        "name": "Username"
+                    }
+                }
+            },
+            "eggs_total": {
+                "name": "Eggs",
+                "unit_of_measurement": "eggs"
             },
             "experience": {
                 "name": "Experience",
@@ -179,6 +394,10 @@
                 "name": "Next level",
                 "unit_of_measurement": "XP"
             },
+            "food_total": {
+                "name": "Pet food",
+                "unit_of_measurement": "foods"
+            },
             "gems": {
                 "name": "Gems",
                 "unit_of_measurement": "gems"
@@ -187,16 +406,15 @@
                 "name": "Gold",
                 "unit_of_measurement": "GP"
             },
-            "habits": {
-                "name": "Habits",
-                "unit_of_measurement": "tasks"
+            "group_leader": {
+                "name": "Group leader"
+            },
+            "hatching_potions_total": {
+                "name": "Hatching potions",
+                "unit_of_measurement": "potions"
             },
             "health": {
                 "name": "Health",
-                "unit_of_measurement": "HP"
-            },
-            "health_max": {
-                "name": "Max. health",
                 "unit_of_measurement": "HP"
             },
             "intelligence": {
@@ -219,6 +437,9 @@
                     }
                 }
             },
+            "last_checkin": {
+                "name": "Last check-in"
+            },
             "level": {
                 "name": "Level"
             },
@@ -229,6 +450,18 @@
             "mana_max": {
                 "name": "Max. mana",
                 "unit_of_measurement": "MP"
+            },
+            "member_count": {
+                "name": "Member count",
+                "unit_of_measurement": "members"
+            },
+            "pending_damage": {
+                "name": "Pending damage",
+                "unit_of_measurement": "damage"
+            },
+            "pending_quest_items": {
+                "name": "Pending quest items",
+                "unit_of_measurement": "items"
             },
             "perception": {
                 "name": "Perception",
@@ -250,9 +483,21 @@
                     }
                 }
             },
-            "rewards": {
-                "name": "Rewards",
-                "unit_of_measurement": "tasks"
+            "quest": {
+                "name": "Quest",
+                "state_attributes": {
+                    "quest_details": {
+                        "name": "Quest details"
+                    }
+                }
+            },
+            "quest_scrolls": {
+                "name": "Quest scrolls",
+                "unit_of_measurement": "scrolls"
+            },
+            "saddle": {
+                "name": "Saddles",
+                "unit_of_measurement": "saddles"
             },
             "strength": {
                 "name": "Strength",
@@ -274,10 +519,6 @@
                     }
                 }
             },
-            "todos": {
-                "name": "To-Do's",
-                "unit_of_measurement": "tasks"
-            },
             "trinkets": {
                 "name": "Mystic hourglasses"
             }
@@ -297,6 +538,9 @@
         }
     },
     "exceptions": {
+        "authentication_failed": {
+            "message": "Authentication failed. It looks like your API token has been reset. Please re-authenticate using your new token"
+        },
         "create_todos_item_failed": {
             "message": "Unable to create new to-do `{name}` for Habitica, please try again"
         },
@@ -311,6 +555,12 @@
         },
         "entry_not_loaded": {
             "message": "The selected character is currently not loaded or disabled in Home Assistant."
+        },
+        "frequency_not_monthly": {
+            "message": "Unable to update task, monthly repeat settings apply only to monthly recurring dailies."
+        },
+        "frequency_not_weekly": {
+            "message": "Unable to update task, weekly repeat settings apply only to weekly recurring dailies."
         },
         "item_not_found": {
             "message": "Unable to use {item}, you don't own this item."
@@ -342,6 +592,12 @@
         "score_todos_item_failed": {
             "message": "Unable to update the score for your Habitica to-do `{name}`, please try again"
         },
+        "send_message_forbidden": {
+            "message": "You are not allowed to send messages to {name}. ({reason})"
+        },
+        "send_message_not_found": {
+            "message": "Unable to send message, {name} not found. ({reason})"
+        },
         "service_call_exception": {
             "message": "Unable to connect to Habitica: {reason}"
         },
@@ -367,17 +623,46 @@
             "message": "Unable to update the Habitica to-do `{name}`, please try again"
         }
     },
-    "issues": {
-        "deprecated_api_call": {
-            "description": "The Habitica action `habitica.api_call` is deprecated and will be removed in Home Assistant 2025.5.0.\n\nPlease update your automations and scripts to use other Habitica actions and entities.",
-            "title": "The Habitica action habitica.api_call is deprecated"
-        },
-        "deprecated_task_entity": {
-            "description": "The Habitica entity `{entity}` is deprecated and will be removed in a future release.\nPlease update your automations and scripts to replace the sensor entity with the newly added todo entity.\nWhen you are done migrating you can disable `{entity}`.",
-            "title": "The Habitica {task_name} sensor is deprecated"
-        }
-    },
     "selector": {
+        "collapse_checklist": {
+            "options": {
+                "collapsed": "Collapsed",
+                "expanded": "Expanded"
+            }
+        },
+        "frequency": {
+            "options": {
+                "daily": "Daily",
+                "monthly": "Monthly",
+                "weekly": "Weekly",
+                "yearly": "Yearly"
+            }
+        },
+        "priority": {
+            "options": {
+                "easy": "Easy",
+                "hard": "Hard",
+                "medium": "Medium",
+                "trivial": "Trivial"
+            }
+        },
+        "repeat": {
+            "options": {
+                "f": "Friday",
+                "m": "Monday",
+                "s": "Saturday",
+                "su": "Sunday",
+                "t": "Tuesday",
+                "th": "Thursday",
+                "w": "Wednesday"
+            }
+        },
+        "repeat_monthly": {
+            "options": {
+                "day_of_month": "Day of the month",
+                "day_of_week": "Day of the week"
+            }
+        },
         "skill_select": {
             "options": {
                 "backstab": "Rogue: Backstab",
@@ -392,6 +677,14 @@
                 "shiny_seed": "Shiny seed",
                 "snowball": "Snowball",
                 "spooky_sparkles": "Spooky sparkles"
+            }
+        },
+        "type": {
+            "options": {
+                "daily": "Daily",
+                "habit": "Habit",
+                "reward": "Reward",
+                "todo": "To-do"
             }
         }
     },
@@ -416,26 +709,8 @@
             },
             "name": "Accept a quest invitation"
         },
-        "api_call": {
-            "description": "Calls Habitica API.",
-            "fields": {
-                "args": {
-                    "description": "Any additional JSON or URL parameter arguments. See apidoc mentioned for path. Example uses same API endpoint.",
-                    "name": "Args"
-                },
-                "name": {
-                    "description": "Habitica's username to call for.",
-                    "name": "Name"
-                },
-                "path": {
-                    "description": "Items from API URL in form of an array with method attached at the end. Consult https://habitica.com/apidoc/. Example uses https://habitica.com/apidoc/#api-Task-CreateUserTasks.",
-                    "name": "Path"
-                }
-            },
-            "name": "API name"
-        },
         "cancel_quest": {
-            "description": "Cancels a quest that has not yet startet. All accepted and pending invitations will be canceled and the quest roll returned to the owner's inventory. Only quest leader or group leader can perform this action.",
+            "description": "Cancels a quest that has not yet started. All accepted and pending invitations will be canceled and the quest roll returned to the owner's inventory. Only quest leader or group leader can perform this action.",
             "fields": {
                 "config_entry": {
                     "description": "Choose the Habitica character for which to perform the action.",
@@ -461,6 +736,250 @@
                 }
             },
             "name": "Cast a skill"
+        },
+        "create_daily": {
+            "description": "Adds a new daily.",
+            "fields": {
+                "add_checklist_item": {
+                    "description": "The items to add to a task's checklist.",
+                    "name": "Checklist"
+                },
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "collapse_checklist": {
+                    "description": "Whether the checklist of a task is displayed as collapsed or expanded in Habitica.",
+                    "name": "Collapse/expand checklist"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to update a task.",
+                    "name": "Select character"
+                },
+                "every_x": {
+                    "description": "The number of intervals (days, weeks, months, or years) after which the daily repeats, based on the chosen repetition interval. A value of 0 makes the daily inactive ('Grey Daily').",
+                    "name": "Repeat every X"
+                },
+                "frequency": {
+                    "description": "The repetition interval of a daily.",
+                    "name": "Repeat interval"
+                },
+                "name": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Task name"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "priority": {
+                    "description": "The difficulty of the task.",
+                    "name": "Difficulty"
+                },
+                "reminder": {
+                    "description": "Add reminders to a Habitica task.",
+                    "name": "Reminders"
+                },
+                "repeat": {
+                    "description": "The days of the week the daily repeats.",
+                    "name": "Repeat on"
+                },
+                "repeat_monthly": {
+                    "description": "Whether a monthly recurring task repeats on the same calendar day each month or on the same weekday and week of the month, based on the start date.",
+                    "name": "Repeat on"
+                },
+                "start_date": {
+                    "description": "Defines when the daily task becomes active and specifies the exact weekday or day of the month it repeats on.",
+                    "name": "Start date"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Tags"
+                }
+            },
+            "name": "Create a daily",
+            "sections": {
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                },
+                "repeat_monthly_options": {
+                    "description": "Options related to monthly repetition, applicable when the repetition interval is set to monthly.",
+                    "name": "Monthly repeat day"
+                },
+                "repeat_weekly_options": {
+                    "description": "Options related to weekly repetition, applicable when the repetition interval is set to weekly.",
+                    "name": "Weekly repeat days"
+                }
+            }
+        },
+        "create_habit": {
+            "description": "Adds a new habit.",
+            "fields": {
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to create a habit.",
+                    "name": "Select character"
+                },
+                "frequency": {
+                    "description": "The frequency at which the habit's counter resets: daily at the start of a new day, weekly after Sunday night, or monthly at the beginning of a new month.",
+                    "name": "Counter reset"
+                },
+                "name": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Task name"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "priority": {
+                    "description": "The difficulty of the task.",
+                    "name": "Difficulty"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Tags"
+                },
+                "up_down": {
+                    "description": "Whether the habit is good and rewarding (positive), bad and penalizing (negative), or both.",
+                    "name": "Rewards or losses"
+                }
+            },
+            "name": "Create habit",
+            "sections": {
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                }
+            }
+        },
+        "create_reward": {
+            "description": "Adds a new custom reward.",
+            "fields": {
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to create a reward.",
+                    "name": "Select character"
+                },
+                "cost": {
+                    "description": "The cost of the reward.",
+                    "name": "Cost"
+                },
+                "name": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Task name"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Tags"
+                }
+            },
+            "name": "Create reward",
+            "sections": {
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                }
+            }
+        },
+        "create_todo": {
+            "description": "Adds a new to-do.",
+            "fields": {
+                "add_checklist_item": {
+                    "description": "The items to add to a task's checklist.",
+                    "name": "Checklist"
+                },
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "collapse_checklist": {
+                    "description": "Whether the checklist of a task is displayed as collapsed or expanded in Habitica.",
+                    "name": "Collapse/expand checklist"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to create a to-do.",
+                    "name": "Select character"
+                },
+                "date": {
+                    "description": "The to-do's due date.",
+                    "name": "Due date"
+                },
+                "name": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Task name"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "priority": {
+                    "description": "The difficulty of the task.",
+                    "name": "Difficulty"
+                },
+                "reminder": {
+                    "description": "Add reminders to a Habitica task.",
+                    "name": "Reminders"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Tags"
+                }
+            },
+            "name": "Create to-do",
+            "sections": {
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                }
+            }
+        },
+        "get_tasks": {
+            "description": "Retrieves tasks from your Habitica character.",
+            "fields": {
+                "config_entry": {
+                    "description": "Choose the Habitica character to retrieve tasks from.",
+                    "name": "Select character"
+                },
+                "keyword": {
+                    "description": "Filter tasks by keyword, searching across titles, notes, and checklists.",
+                    "name": "Keyword"
+                },
+                "priority": {
+                    "description": "Filter tasks by difficulty.",
+                    "name": "Difficulty"
+                },
+                "tag": {
+                    "description": "Filter tasks that have one or more of the selected tags.",
+                    "name": "Tag"
+                },
+                "task": {
+                    "description": "Select tasks by matching their name (or task ID).",
+                    "name": "Task name"
+                },
+                "type": {
+                    "description": "Filter tasks by type.",
+                    "name": "Task type"
+                }
+            },
+            "name": "Get tasks",
+            "sections": {
+                "filter": {
+                    "description": "Use the optional filters to narrow the returned tasks.",
+                    "name": "Filter options"
+                }
+            }
         },
         "leave_quest": {
             "description": "Leaves the current quest you are participating in.",
@@ -541,6 +1060,338 @@
                 }
             },
             "name": "Use a transformation item"
+        },
+        "update_daily": {
+            "description": "Updates a specific daily for a selected Habitica character",
+            "fields": {
+                "add_checklist_item": {
+                    "description": "The items to add to a task's checklist.",
+                    "name": "Add checklist items"
+                },
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "clear_reminder": {
+                    "description": "Remove all reminders from a Habitica task.",
+                    "name": "Clear all reminders"
+                },
+                "collapse_checklist": {
+                    "description": "Whether the checklist of a task is displayed as collapsed or expanded in Habitica.",
+                    "name": "Collapse/expand checklist"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to update a task.",
+                    "name": "Select character"
+                },
+                "every_x": {
+                    "description": "The number of intervals (days, weeks, months, or years) after which the daily repeats, based on the chosen repetition interval. A value of 0 makes the daily inactive ('Grey Daily').",
+                    "name": "Repeat every X"
+                },
+                "frequency": {
+                    "description": "The repetition interval of a daily.",
+                    "name": "Repeat interval"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "priority": {
+                    "description": "The difficulty of the task.",
+                    "name": "Difficulty"
+                },
+                "reminder": {
+                    "description": "Add reminders to a Habitica task.",
+                    "name": "Add reminders"
+                },
+                "remove_checklist_item": {
+                    "description": "Remove items from a task's checklist.",
+                    "name": "Delete items"
+                },
+                "remove_reminder": {
+                    "description": "Remove specific reminders from a Habitica task.",
+                    "name": "Remove reminders"
+                },
+                "remove_tag": {
+                    "description": "Remove tags from the Habitica task.",
+                    "name": "Remove tags"
+                },
+                "rename": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Rename"
+                },
+                "repeat": {
+                    "description": "The days of the week the daily repeats.",
+                    "name": "Repeat on"
+                },
+                "repeat_monthly": {
+                    "description": "Whether a monthly recurring task repeats on the same calendar day each month or on the same weekday and week of the month, based on the start date.",
+                    "name": "Repeat on"
+                },
+                "score_checklist_item": {
+                    "description": "Mark items from a task's checklist as completed.",
+                    "name": "Complete items"
+                },
+                "start_date": {
+                    "description": "Defines when the daily task becomes active and specifies the exact weekday or day of the month it repeats on.",
+                    "name": "Start date"
+                },
+                "streak": {
+                    "description": "Adjust or reset the streak counter of the daily.",
+                    "name": "Adjust streak"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Add tags"
+                },
+                "task": {
+                    "description": "The name (or task ID) of the daily you want to update.",
+                    "name": "Task name"
+                },
+                "unscore_checklist_item": {
+                    "description": "Undo completion of items of a task's checklist.",
+                    "name": "Uncomplete items"
+                }
+            },
+            "name": "Update a daily",
+            "sections": {
+                "checklist_options": {
+                    "description": "Add, remove, or update status of an item on a task's checklist.",
+                    "name": "Checklist"
+                },
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                },
+                "reminder_options": {
+                    "description": "Add, remove or clear reminders of a Habitica task.",
+                    "name": "Reminders"
+                },
+                "repeat_monthly_options": {
+                    "description": "Options related to monthly repetition, applicable when the repetition interval is set to monthly.",
+                    "name": "Monthly repeat day"
+                },
+                "repeat_weekly_options": {
+                    "description": "Options related to weekly repetition, applicable when the repetition interval is set to weekly.",
+                    "name": "Weekly repeat days"
+                },
+                "tag_options": {
+                    "description": "Add or remove tags from a task.",
+                    "name": "Tags"
+                }
+            }
+        },
+        "update_habit": {
+            "description": "Updates a specific habit for the selected Habitica character",
+            "fields": {
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to update a habit.",
+                    "name": "Select character"
+                },
+                "counter_down": {
+                    "description": "Update the down counter of a negative habit.",
+                    "name": "Adjust negative counter"
+                },
+                "counter_up": {
+                    "description": "Update the up counter of a positive habit.",
+                    "name": "Adjust positive counter"
+                },
+                "frequency": {
+                    "description": "The frequency at which the habit's counter resets: daily at the start of a new day, weekly after Sunday night, or monthly at the beginning of a new month.",
+                    "name": "Counter reset"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "priority": {
+                    "description": "The difficulty of the task.",
+                    "name": "Difficulty"
+                },
+                "remove_tag": {
+                    "description": "Remove tags from the Habitica task.",
+                    "name": "Remove tags"
+                },
+                "rename": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Rename"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Add tags"
+                },
+                "task": {
+                    "description": "The name (or task ID) of the task you want to update.",
+                    "name": "Task name"
+                },
+                "up_down": {
+                    "description": "Whether the habit is good and rewarding (positive), bad and penalizing (negative), or both.",
+                    "name": "Rewards or losses"
+                }
+            },
+            "name": "Update a habit",
+            "sections": {
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                },
+                "tag_options": {
+                    "description": "Add or remove tags from a task.",
+                    "name": "Tags"
+                }
+            }
+        },
+        "update_reward": {
+            "description": "Updates a specific reward for the selected Habitica character",
+            "fields": {
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to update a reward.",
+                    "name": "Select character"
+                },
+                "cost": {
+                    "description": "Update the cost of a reward.",
+                    "name": "Cost"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "remove_tag": {
+                    "description": "Remove tags from the Habitica task.",
+                    "name": "Remove tags"
+                },
+                "rename": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Rename"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Add tags"
+                },
+                "task": {
+                    "description": "The name (or task ID) of the task you want to update.",
+                    "name": "Task name"
+                }
+            },
+            "name": "Update a reward",
+            "sections": {
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                },
+                "tag_options": {
+                    "description": "Add or remove tags from a task.",
+                    "name": "Tags"
+                }
+            }
+        },
+        "update_todo": {
+            "description": "Updates a specific to-do for a selected Habitica character",
+            "fields": {
+                "add_checklist_item": {
+                    "description": "The items to add to a task's checklist.",
+                    "name": "Add checklist items"
+                },
+                "alias": {
+                    "description": "A task alias can be used instead of the name or task ID. Only dashes, underscores, and alphanumeric characters are supported. The task alias must be unique among all your tasks.",
+                    "name": "Task alias"
+                },
+                "clear_date": {
+                    "description": "Remove the due date from the to-do.",
+                    "name": "Clear due date"
+                },
+                "clear_reminder": {
+                    "description": "Remove all reminders from a Habitica task.",
+                    "name": "Clear all reminders"
+                },
+                "collapse_checklist": {
+                    "description": "Whether the checklist of a task is displayed as collapsed or expanded in Habitica.",
+                    "name": "Collapse/expand checklist"
+                },
+                "config_entry": {
+                    "description": "Select the Habitica account to update a task.",
+                    "name": "Select character"
+                },
+                "date": {
+                    "description": "The to-do's due date.",
+                    "name": "Due date"
+                },
+                "notes": {
+                    "description": "The notes for the Habitica task.",
+                    "name": "Notes"
+                },
+                "priority": {
+                    "description": "The difficulty of the task.",
+                    "name": "Difficulty"
+                },
+                "reminder": {
+                    "description": "Add reminders to a Habitica task.",
+                    "name": "Add reminders"
+                },
+                "remove_checklist_item": {
+                    "description": "Remove items from a task's checklist.",
+                    "name": "Delete items"
+                },
+                "remove_reminder": {
+                    "description": "Remove specific reminders from a Habitica task.",
+                    "name": "Remove reminders"
+                },
+                "remove_tag": {
+                    "description": "Remove tags from the Habitica task.",
+                    "name": "Remove tags"
+                },
+                "rename": {
+                    "description": "The title for the Habitica task.",
+                    "name": "Rename"
+                },
+                "score_checklist_item": {
+                    "description": "Mark items from a task's checklist as completed.",
+                    "name": "Complete items"
+                },
+                "tag": {
+                    "description": "Add tags to the Habitica task. If a tag does not already exist, a new one will be created.",
+                    "name": "Add tags"
+                },
+                "task": {
+                    "description": "The name (or task ID) of the to-do you want to update.",
+                    "name": "Task name"
+                },
+                "unscore_checklist_item": {
+                    "description": "Undo completion of items of a task's checklist.",
+                    "name": "Uncomplete items"
+                }
+            },
+            "name": "Update a to-do",
+            "sections": {
+                "checklist_options": {
+                    "description": "Add, remove, or update status of an item on a task's checklist.",
+                    "name": "Checklist"
+                },
+                "developer_options": {
+                    "description": "Additional features available in developer mode.",
+                    "name": "Advanced settings"
+                },
+                "duedate_options": {
+                    "description": "Set, update or remove due dates of a to-do.",
+                    "name": "Due date"
+                },
+                "reminder_options": {
+                    "description": "Add, remove or clear reminders of a Habitica task.",
+                    "name": "Reminders"
+                },
+                "tag_options": {
+                    "description": "Add or remove tags from a task.",
+                    "name": "Tags"
+                }
+            }
         }
     }
 }

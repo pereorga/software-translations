@@ -16,6 +16,12 @@
         },
         "step": {
             "pick_implementation": {
+                "data": {
+                    "implementation": "Credencials d'aplicaci\u00f3"
+                },
+                "data_description": {
+                    "implementation": "Les credencials que vols fer servir per autenticar."
+                },
                 "title": "[%key::common::config_flow::title::oauth2_pick_implementation%]"
             },
             "reauth_confirm": {
@@ -47,6 +53,11 @@
         }
     },
     "entity": {
+        "button": {
+            "preferred_position": {
+                "name": "Posici\u00f3 preferida"
+            }
+        },
         "climate": {
             "thermostat": {
                 "state_attributes": {
@@ -63,11 +74,7 @@
                 "state": {
                     "e": "Est",
                     "n": "Nord",
-                    "ne": "Nord-est",
-                    "nw": "Nord-oest",
                     "s": "Sud",
-                    "se": "Sud-est",
-                    "sw": "Sud-oest",
                     "w": "Oest"
                 }
             },
@@ -91,9 +98,6 @@
             "temp_trend": {
                 "name": "Tend\u00e8ncia de temperatura"
             },
-            "wifi_strength": {
-                "name": "Wi-Fi"
-            },
             "wind_angle": {
                 "name": "Angle del vent"
             },
@@ -102,14 +106,15 @@
                 "state": {
                     "e": "Est",
                     "n": "Nord",
-                    "ne": "Nord-est",
-                    "nw": "Nord-oest",
                     "s": "Sud",
-                    "se": "Sud-est",
-                    "sw": "Sud-oest",
                     "w": "Oest"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "oauth2_implementation_unavailable": {
+            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
         }
     },
     "options": {
@@ -117,10 +122,6 @@
             "public_weather": {
                 "data": {
                     "area_name": "Nom de l'\u00e0rea",
-                    "lat_ne": "Latitud cantonada nord-est",
-                    "lat_sw": "Latitud cantonada sud-oest",
-                    "lon_ne": "Longitud cantonada nord-est",
-                    "lon_sw": "Longitud cantonada sud-oest",
                     "mode": "C\u00e0lcul",
                     "show_on_map": "Mostra al mapa"
                 },

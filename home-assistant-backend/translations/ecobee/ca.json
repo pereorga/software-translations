@@ -17,34 +17,10 @@
         }
     },
     "entity": {
-        "climate": {
-            "ecobee": {
-                "state_attributes": {
-                    "preset_mode": {
-                        "state": {
-                            "away_indefinitely": "A fora indefinidament"
-                        }
-                    }
-                }
-            }
-        },
         "switch": {
             "aux_heat_only": {
                 "name": "Nom\u00e9s calor auxiliar"
             }
-        }
-    },
-    "issues": {
-        "migrate_aux_heat": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "L'acci\u00f3 d'Ecobee `set_aux_heat` s'ha migrat. Hi ha disponible una nova entitat d'interruptor `aux_heat_only` per a cada term\u00f2stat que admeti la bomba de calor.\n\nModifica totes les automatitzacions i/o scripts perqu\u00e8 utilitzin la nova entitat d'interruptor `aux_heat_only`. Un cop fet aix\u00f2, pots marcar el problema com a resolt i reiniciar Home Assistant.",
-                        "title": "Desactiva l'acci\u00f3 heretada d'Ecobee set_aux_heat"
-                    }
-                }
-            },
-            "title": "Migraci\u00f3 de l'acci\u00f3 Ecobee set_aux_heat"
         }
     },
     "services": {
@@ -63,11 +39,9 @@
                     "name": "Hora final"
                 },
                 "entity_id": {
-                    "description": "Term\u00f2stat Ecobee on crear les vacances.",
                     "name": "Entitat"
                 },
                 "fan_min_on_time": {
-                    "description": "Nombre m\u00ednim de minuts a activar el ventilador cada hora (de 0 a 60) durant les vacances.",
                     "name": "Temps m\u00ednim d'activaci\u00f3 del ventilador"
                 },
                 "fan_mode": {
@@ -96,7 +70,6 @@
             "description": "Elimina unes vacances del term\u00f2stat seleccionat.",
             "fields": {
                 "entity_id": {
-                    "description": "Term\u00f2stat Ecobee on eliminar les vacances.",
                     "name": "Entitat"
                 },
                 "vacation_name": {
@@ -127,18 +100,15 @@
                     "description": "Activa l'horari d'estiu autom\u00e0tic.",
                     "name": "Horari d'estiu activat"
                 }
-            },
-            "name": "Configura el mode d'horari d'estiu"
+            }
         },
         "set_fan_min_on_time": {
-            "description": "Configura el temps m\u00ednim d'activaci\u00f3 del ventilador.",
             "fields": {
                 "entity_id": {
                     "description": "Nom(s) de les entitats a canviar.",
                     "name": "Entitat"
                 },
                 "fan_min_on_time": {
-                    "description": "Nou valor de temps m\u00ednim d'activaci\u00f3 del ventilador.",
                     "name": "Temps m\u00ednim d'activaci\u00f3 del ventilador"
                 }
             },
@@ -170,9 +140,6 @@
             "fields": {
                 "device_ids": {
                     "name": "Sensors"
-                },
-                "entity_id": {
-                    "name": "Entitat"
                 }
             }
         }

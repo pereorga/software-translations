@@ -1,13 +1,23 @@
 {
     "config": {
         "abort": {
-            "no_devices_found": "No devices found on the network",
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
+            "no_devices_found": "No devices found on the network"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
         },
         "step": {
-            "confirm": {
-                "description": "Do you want to start setup?"
+            "user": {
+                "data": {
+                    "address": "Device"
+                }
             }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Failed to connect"
         }
     }
 }

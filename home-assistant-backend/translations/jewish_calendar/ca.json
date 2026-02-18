@@ -5,30 +5,27 @@
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "elevation": "Altitud",
+                    "language": "Idioma",
+                    "location": "Ubicaci\u00f3"
+                }
+            },
             "user": {
                 "data": {
-                    "diaspora": "Fora d'Israel?",
                     "elevation": "Altitud",
-                    "location": "Ubicaci\u00f3",
-                    "name": "Nom",
-                    "time_zone": "Zona hor\u00e0ria"
+                    "language": "Idioma",
+                    "location": "Ubicaci\u00f3"
                 }
             }
         }
     },
-    "entity": {
-        "sensor": {
-            "hebrew_date": {
-                "state_attributes": {
-                    "hebrew_day": {
-                        "name": "Dia hebreu"
-                    },
-                    "hebrew_month_name": {
-                        "name": "Nom del mes hebreu"
-                    },
-                    "hebrew_year": {
-                        "name": "Any hebreu"
-                    }
+    "services": {
+        "count_omer": {
+            "fields": {
+                "language": {
+                    "name": "Idioma"
                 }
             }
         }

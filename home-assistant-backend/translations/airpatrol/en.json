@@ -1,0 +1,38 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful",
+            "unique_id_mismatch": "Login credentials do not match the configured account"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Your AirPatrol email address",
+                    "password": "Your AirPatrol password"
+                },
+                "description": "Reauthenticate with AirPatrol"
+            },
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Your AirPatrol email address",
+                    "password": "Your AirPatrol password"
+                },
+                "description": "Connect to AirPatrol"
+            }
+        }
+    }
+}

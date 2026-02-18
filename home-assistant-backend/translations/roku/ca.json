@@ -33,9 +33,6 @@
             "supports_airplay": {
                 "name": "Admet AirPlay"
             },
-            "supports_ethernet": {
-                "name": "Admet Ethernet"
-            },
             "supports_find_remote": {
                 "name": "Admet la cerca de comandament remot"
             }
@@ -59,6 +56,11 @@
     },
     "services": {
         "search": {
+            "fields": {
+                "keyword": {
+                    "name": "Paraula clau"
+                }
+            },
             "name": "Cerca"
         }
     }

@@ -1,0 +1,40 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured"
+        },
+        "error": {
+            "access_denied": "The access to the backup path has been denied. Please check the permissions of the backup path.",
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "invalid_method": "The server does not support the required methods. Please check whether you have the correct URL. Check with your provider for the correct URL.",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "backup_path": "Backup path",
+                    "password": "Password",
+                    "url": "URL",
+                    "username": "Username",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "backup_path": "Define the path where the backups should be located (will be created automatically if it does not exist).",
+                    "password": "The password for the WebDAV server.",
+                    "url": "The URL of the WebDAV server. Check with your provider for the correct URL.",
+                    "username": "The username for the WebDAV server.",
+                    "verify_ssl": "Whether to verify the SSL certificate of the server. If you are using a self-signed certificate, do not select this option."
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Cannot connect to WebDAV server"
+        },
+        "invalid_username_password": {
+            "message": "Invalid username or password"
+        }
+    }
+}

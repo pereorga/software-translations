@@ -1,0 +1,53 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "connection_refused": "Connection refused",
+            "invalid_host": "Invalid hostname or IP address",
+            "timeout": "Timeout establishing connection",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "manual": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "Mandatory - ZCC IP address.",
+                    "port": "Mandatory - ZCC port number (default=5003)."
+                },
+                "description": "Enter details of your Zimi Cloud Connect device.",
+                "title": "Zimi - Configure device"
+            },
+            "selection": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port",
+                    "selected_host_and_port": "Selected ZCC"
+                },
+                "data_description": {
+                    "host": "Mandatory - ZCC IP address.",
+                    "port": "Mandatory - ZCC port number (default=5003).",
+                    "selected_host_and_port": "Selected ZCC IP address and port number"
+                },
+                "description": "Select Zimi Cloud Connect device to configure.",
+                "title": "Zimi - Select device"
+            },
+            "user": {
+                "description": "Discover and auto-configure Zimi Cloud Connect device.",
+                "title": "Zimi - Discover device(s)"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "door_temperature": {
+                "name": "Outside temperature"
+            }
+        }
+    }
+}

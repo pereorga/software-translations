@@ -12,20 +12,26 @@
         },
         "step": {
             "confirm": {
-                "description": "Model: {model}\nID: {id}\nHost: {host}\nPort: {port}\n\nYou can configure the IO and panel behavior in the Konnected Alarm Panel settings.",
-                "title": "Konnected Device Ready"
+                "description": "Model: {model}\nID: {id}\nHost: {host}\nPort: {port}\n\nYou can configure the IO and panel behavior in the Konnected alarm panel settings.",
+                "title": "Konnected device ready"
             },
             "import_confirm": {
-                "description": "A Konnected Alarm Panel with ID {id} has been discovered in configuration.yaml. This flow will allow you to import it into a config entry.",
-                "title": "Import Konnected Device"
+                "description": "A Konnected alarm panel with ID {id} has been discovered in configuration.yaml. This flow will allow you to import it into a config entry.",
+                "title": "Import Konnected device"
             },
             "user": {
                 "data": {
                     "host": "IP address",
                     "port": "Port"
                 },
-                "description": "Please enter the host information for your Konnected Panel."
+                "description": "Please enter the host information for your Konnected panel."
             }
+        }
+    },
+    "issues": {
+        "deprecated_firmware": {
+            "description": "Konnected's integration is deprecated and Konnected strongly recommends migrating to their ESPHome based firmware and integration by following the guide at {kb_page_url}. After this migration, make sure you don't have any Konnected YAML configuration left in your configuration.yaml file and remove this integration from Home Assistant.",
+            "title": "Konnected firmware is deprecated"
         }
     },
     "options": {
@@ -33,26 +39,26 @@
             "not_konn_panel": "Not a recognized Konnected.io device"
         },
         "error": {
-            "bad_host": "Invalid Override API host URL"
+            "bad_host": "Invalid custom API host URL"
         },
         "step": {
             "options_binary": {
                 "data": {
                     "inverse": "Invert the open/close state",
                     "name": "Name",
-                    "type": "Binary Sensor Type"
+                    "type": "Binary sensor type"
                 },
                 "description": "{zone} options",
-                "title": "Configure Binary Sensor"
+                "title": "Configure binary sensor"
             },
             "options_digital": {
                 "data": {
                     "name": "Name",
-                    "poll_interval": "Poll Interval (minutes)",
-                    "type": "Sensor Type"
+                    "poll_interval": "Poll interval (minutes)",
+                    "type": "Sensor type"
                 },
                 "description": "{zone} options",
-                "title": "Configure Digital Sensor"
+                "title": "Configure digital sensor"
             },
             "options_io": {
                 "data": {
@@ -79,18 +85,18 @@
                     "alarm2_out2": "OUT2/ALARM2",
                     "out1": "OUT1"
                 },
-                "description": "Select the configuration of the remaining I/O below.  You'll be able to configure detailed options in the next steps.",
-                "title": "Configure Extended I/O"
+                "description": "Select the configuration of the remaining I/O below. You'll be able to configure detailed options in the next steps.",
+                "title": "Configure extended I/O"
             },
             "options_misc": {
                 "data": {
-                    "api_host": "Override API host URL",
+                    "api_host": "Custom API host URL",
                     "blink": "Blink panel LED on when sending state change",
                     "discovery": "Respond to discovery requests on your network",
-                    "override_api_host": "Override default Home Assistant API host panel URL"
+                    "override_api_host": "Override default Home Assistant API host URL"
                 },
                 "description": "Please select the desired behavior for your panel",
-                "title": "Configure Misc"
+                "title": "Configure misc"
             },
             "options_switch": {
                 "data": {
@@ -102,7 +108,7 @@
                     "repeat": "Times to repeat (-1=infinite)"
                 },
                 "description": "{zone} options: state {state}",
-                "title": "Configure Switchable Output"
+                "title": "Configure switchable output"
             }
         }
     }

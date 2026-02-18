@@ -7,73 +7,64 @@
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "description": "Si \"totes les entitats\" est\u00e0 activat, l'estat del grup estar\u00e0 activat (ON) si tots els membres estan activats. Si \"totes les entitats\" est\u00e0 desactivat, l'estat del grup s'activar\u00e0 si hi ha activat qualsevol membre.",
-                "title": "Afegeix grup"
+                }
             },
             "button": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "cover": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "event": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "fan": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "light": {
                 "data": {
+                    "all": "Totes les entitats",
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "lock": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "media_player": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "notify": {
                 "data": {
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "sensor": {
                 "data": {
@@ -84,18 +75,16 @@
                     "name": "Nom",
                     "round_digits": "Arrodoneix el valor a un nombre de decimals",
                     "state_class": "Classe d'estat",
-                    "type": "Tipus",
-                    "unit_of_measurement": "Unitat de mesura"
-                },
-                "title": "Afegeix grup"
+                    "type": "Tipus"
+                }
             },
             "switch": {
                 "data": {
+                    "all": "Totes les entitats",
                     "entities": "Membres",
                     "hide_members": "Amaga membres",
                     "name": "Nom"
-                },
-                "title": "Afegeix grup"
+                }
             },
             "user": {
                 "description": "Els grups et permeten crear una nova entitat que representa m\u00faltiples entitats del mateix tipus.",
@@ -110,6 +99,14 @@
                     "sensor": "Grup de sensors",
                     "switch": "Grup de commutadors"
                 }
+            },
+            "valve": {
+                "data": {
+                    "all": "Totes les entitats",
+                    "entities": "Membres",
+                    "hide_members": "Amaga membres",
+                    "name": "Nom"
+                }
             }
         }
     },
@@ -117,14 +114,14 @@
         "_": {
             "name": "Grup",
             "state": {
-                "closed": "Tancat/ada",
+                "closed": "Tancat",
                 "home": "A casa",
                 "locked": "Bloquejat",
                 "not_home": "Fora",
                 "off": "OFF",
                 "ok": "D'acord",
                 "on": "ON",
-                "open": "Obert/a",
+                "open": "Obert",
                 "problem": "Problema",
                 "unlocked": "Desbloquejat"
             },
@@ -142,8 +139,7 @@
                     "all": "Totes les entitats",
                     "entities": "Membres",
                     "hide_members": "Amaga membres"
-                },
-                "description": "Si \"totes les entitats\" est\u00e0 activat, l'estat del grup estar\u00e0 activat (ON) si tots els membres estan activats. Si \"totes les entitats\" est\u00e0 desactivat, l'estat del grup s'activar\u00e0 si hi ha activat qualsevol membre."
+                }
             },
             "button": {
                 "data": {
@@ -168,8 +164,7 @@
                     "all": "Totes les entitats",
                     "entities": "Membres",
                     "hide_members": "Amaga membres"
-                },
-                "description": "Si \"totes les entitats\" est\u00e0 activat, l'estat del grup estar\u00e0 activat (ON) si tots els membres estan activats. Si \"totes les entitats\" est\u00e0 desactivat, l'estat del grup s'activar\u00e0 si hi ha activat qualsevol membre."
+                }
             },
             "lock": {
                 "data": {
@@ -199,16 +194,21 @@
                     "state_class": "Classe d'estat",
                     "type": "Tipus",
                     "unit_of_measurement": "Unitat de mesura"
-                },
-                "description": "Si s'activa \"ignora els no num\u00e8rics\", l'estat del grup es calcula si almenys un membre t\u00e9 un valor num\u00e8ric. Si \"ignora els no num\u00e8rics\" est\u00e0 desactivat, l'estat del grup nom\u00e9s es calcula si tots els membres del grup tenen valors num\u00e8rics."
+                }
             },
             "switch": {
                 "data": {
                     "all": "Totes les entitats",
                     "entities": "Membres",
                     "hide_members": "Amaga membres"
-                },
-                "description": "Si \"totes les entitats\" est\u00e0 activat, l'estat del grup estar\u00e0 activat (ON) si tots els membres estan activats. Si \"totes les entitats\" est\u00e0 desactivat, l'estat del grup s'activar\u00e0 si hi ha activat qualsevol membre."
+                }
+            },
+            "valve": {
+                "data": {
+                    "all": "Totes les entitats",
+                    "entities": "Membres",
+                    "hide_members": "Amaga membres"
+                }
             }
         }
     },

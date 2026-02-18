@@ -2,13 +2,30 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "cannot_connect": "Ha fallat la connexi\u00f3"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "cannot_connect": "Ha fallat la connexi\u00f3"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
         },
         "flow_title": "{name}",
         "step": {
+            "discovery_confirm": {
+                "data": {
+                    "passkey": "String Passkey",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "passkey": "String Passkey",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",

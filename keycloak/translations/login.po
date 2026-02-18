@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 08:12+0000\n"
+"POT-Creation-Date: 2026-02-18 17:27+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.12.2\n"
+"X-Generator: Translate Toolkit 3.19.1\n"
 
 #: doLogIn
 msgid "Sign In"
@@ -19,7 +19,6 @@ msgstr "Inicia la sessió"
 
 #: doRegister
 msgctxt "doRegister"
-"doRegister"
 msgid "Register"
 msgstr "Registreu-vos"
 
@@ -700,8 +699,8 @@ msgid ""
 "An email with instructions to verify your email address has been sent to "
 "your address {0}."
 msgstr ""
-"S''ha enviat un correu electrònic a la vostra adreça de correu electrònic {0}"
-" amb instruccions per a verificar-la."
+"S''ha enviat un correu electrònic a la vostra adreça de correu electrònic "
+"{0} amb instruccions per a verificar-la."
 
 #: emailVerifyInstruction2
 msgctxt "emailVerifyInstruction2"
@@ -918,7 +917,6 @@ msgstr "Camps requerits"
 
 #: invalidUserMessage
 msgctxt "invalidUserMessage"
-"invalidUserMessage"
 msgid "Invalid username or password."
 msgstr "El nom d''usuari o contrasenya no són vàlids."
 
@@ -957,7 +955,6 @@ msgstr "El nom d''usuari o contrasenya no són vàlids."
 #. These properties are deliberately the same as "invalidTotpMessage", so by default, it is not possible to recognize the reason of failed authentication is temporarily disabled account
 #: accountTemporarilyDisabledMessageTotp
 msgctxt "accountTemporarilyDisabledMessageTotp"
-"accountTemporarilyDisabledMessageTotp"
 msgid "Invalid authenticator code."
 msgstr "El codi d''autenticació no és vàlid."
 
@@ -1256,6 +1253,10 @@ msgstr "Aviat hauríeu de rebre un correu electrònic amb més instruccions."
 msgid "Failed to send email, please try again later."
 msgstr ""
 "Ha fallat l''enviament del correu electrònic, intenteu-ho de nou més tard."
+
+#: accountUpdatedTitle
+msgid "Account updated"
+msgstr ""
 
 #: accountUpdatedMessage
 msgid "Your account has been updated."
@@ -1610,8 +1611,8 @@ msgid ""
 "the identity provider {1}. Do not proceed if you did not initiate this "
 "process or you do not want to link the account."
 msgstr ""
-"Si enllaceu el compte, també podreu entrar amb el compte {0} del proveïdor d’"
-"identitat {1}. No continueu si no heu iniciat aquest procés o si no voleu "
+"Si enllaceu el compte, també podreu entrar amb el compte {0} del proveïdor "
+"d’identitat {1}. No continueu si no heu iniciat aquest procés o si no voleu "
 "enllaçar el compte."
 
 #: confirmEmailAddressVerificationHeader

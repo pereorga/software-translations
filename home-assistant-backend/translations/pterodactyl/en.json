@@ -1,0 +1,85 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The account API key for accessing your Pterodactyl server."
+                },
+                "description": "Please update your account API key.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API key",
+                    "url": "URL"
+                },
+                "data_description": {
+                    "api_key": "The account API key for accessing your Pterodactyl server.",
+                    "url": "The URL of your Pterodactyl server, including the protocol (http:// or https://) and optionally the port number."
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "status": {
+                "name": "Status"
+            }
+        },
+        "button": {
+            "force_stop_server": {
+                "name": "Force stop server"
+            },
+            "restart_server": {
+                "name": "Restart server"
+            },
+            "start_server": {
+                "name": "Start server"
+            },
+            "stop_server": {
+                "name": "Stop server"
+            }
+        },
+        "sensor": {
+            "cpu_limit": {
+                "name": "CPU limit"
+            },
+            "cpu_utilization": {
+                "name": "CPU utilization"
+            },
+            "disk_limit": {
+                "name": "Disk limit"
+            },
+            "disk_usage": {
+                "name": "Disk usage"
+            },
+            "memory_limit": {
+                "name": "Memory limit"
+            },
+            "memory_usage": {
+                "name": "Memory usage"
+            },
+            "network_inbound": {
+                "name": "Network inbound"
+            },
+            "network_outbound": {
+                "name": "Network outbound"
+            },
+            "uptime": {
+                "name": "Uptime"
+            }
+        }
+    }
+}

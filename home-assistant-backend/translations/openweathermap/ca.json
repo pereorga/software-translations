@@ -12,12 +12,35 @@
                 "data": {
                     "api_key": "Clau API",
                     "language": "Idioma",
-                    "latitude": "Latitud",
-                    "longitude": "Longitud",
+                    "location": "Ubicaci\u00f3",
                     "mode": "Mode",
                     "name": "Nom"
-                },
-                "description": "Per generar la clau API, v\u00e9s a https://openweathermap.org/appid"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "clouds": {
+                "name": "Cobertura dels n\u00favols"
+            },
+            "dew_point": {
+                "name": "Temperatura del punt de rosada"
+            },
+            "feels_like_temperature": {
+                "name": "Temperatura aparent"
+            },
+            "uv_index": {
+                "name": "\u00cdndex UV"
+            },
+            "visibility_distance": {
+                "name": "Visibilitat"
+            },
+            "weather": {
+                "name": "Temps"
+            },
+            "wind_gust": {
+                "name": "Velocitat de les r\u00e0fegues de vent"
             }
         }
     },

@@ -7,6 +7,7 @@
             "invalid_auth": "Invalid authentication",
             "model_not_supported": "The device model is currently unsupported.",
             "reauth_successful": "Re-authentication was successful",
+            "reconfigure_successful": "Re-configuration was successful",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -22,7 +23,21 @@
                 "data": {
                     "password": "Password"
                 },
-                "description": "Please enter the correct password for host: {host}"
+                "data_description": {
+                    "password": "The password for your Vodafone Station."
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Vodafone Station.",
+                    "password": "The password for your Vodafone Station.",
+                    "username": "The username for your Vodafone Station."
+                }
             },
             "user": {
                 "data": {
@@ -31,7 +46,9 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Vodafone Station."
+                    "host": "The hostname or IP address of your Vodafone Station.",
+                    "password": "The password for your Vodafone Station.",
+                    "username": "The username for your Vodafone Station."
                 }
             }
         }
@@ -46,6 +63,14 @@
             },
             "internet_key_reconnect": {
                 "name": "Internet key reconnect"
+            }
+        },
+        "image": {
+            "guest": {
+                "name": "Guest network"
+            },
+            "guest_5g": {
+                "name": "Guest 5GHz network"
             }
         },
         "sensor": {
@@ -94,6 +119,31 @@
             "up_stream": {
                 "name": "WAN upload rate"
             }
+        },
+        "switch": {
+            "guest": {
+                "name": "Guest network"
+            },
+            "guest_5g": {
+                "name": "Guest 5GHz network"
+            },
+            "main": {
+                "name": "Main network"
+            },
+            "main_5g": {
+                "name": "Main 5GHz network"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_authenticate": {
+            "message": "Error authenticating: {error}"
+        },
+        "cannot_execute_action": {
+            "message": "Cannot execute requested action: {error}"
+        },
+        "update_failed": {
+            "message": "Error fetching data: {error}"
         }
     },
     "options": {
@@ -101,6 +151,9 @@
             "init": {
                 "data": {
                     "consider_home": "Seconds to consider a device at 'home'"
+                },
+                "data_description": {
+                    "consider_home": "The number of seconds to wait until marking a device as not home after it disconnects from the network."
                 }
             }
         }

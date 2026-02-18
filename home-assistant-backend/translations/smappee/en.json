@@ -11,6 +11,7 @@
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
+            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
             "oauth_timeout": "Timeout resolving OAuth token.",
             "oauth_unauthorized": "OAuth authorization error while obtaining access token."
         },
@@ -29,10 +30,16 @@
                 "description": "Enter the host to initiate the Smappee local integration"
             },
             "pick_implementation": {
+                "data": {
+                    "implementation": "Application credentials"
+                },
+                "data_description": {
+                    "implementation": "The credentials you want to use to authenticate."
+                },
                 "title": "Pick authentication method"
             },
             "zeroconf_confirm": {
-                "description": "Do you want to add the Smappee device with serialnumber `{serialnumber}` to Home Assistant?",
+                "description": "Do you want to add the Smappee device with serial number `{serialnumber}` to Home Assistant?",
                 "title": "Discovered Smappee device"
             }
         }

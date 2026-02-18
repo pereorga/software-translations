@@ -32,9 +32,6 @@
         "new_task": {
             "description": "Crea una nova tasca i l'afegeix a un projecte.",
             "fields": {
-                "assignee": {
-                    "description": "Nom d'usuari del membre d'un projecte compartit al qual assignar la tasca."
-                },
                 "content": {
                     "description": "Nom de la tasca.",
                     "name": "Contingut"
@@ -56,11 +53,7 @@
                     "name": "Projecte"
                 },
                 "reminder_date": {
-                    "description": "Data pel recordatori a l'usuari de la tasca, en format AAAA-MM-DD o AAAA-MM-DDTHH:MM:SS, en zona hor\u00e0ria UTC.",
                     "name": "Data del recordatori"
-                },
-                "reminder_date_lang": {
-                    "description": "Idioma de reminder_date_string."
                 },
                 "section": {
                     "description": "Nom de la secci\u00f3 dins del projecte on afegir la tasca.",

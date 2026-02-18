@@ -11,39 +11,55 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "hassio_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password associated with the pyLoad account.",
+                    "username": "The username used to access the pyLoad instance."
+                },
+                "description": "Do you want to configure Home Assistant to connect to the pyLoad service provided by the app: {addon}?",
+                "title": "pyLoad via Home Assistant app"
+            },
             "reauth_confirm": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
+                "data_description": {
+                    "password": "The password associated with the pyLoad account.",
+                    "username": "The username used to access the pyLoad instance."
+                },
                 "title": "Authentication expired for {name}"
             },
             "reconfigure": {
                 "data": {
-                    "host": "Host",
                     "password": "Password",
-                    "port": "Port",
-                    "ssl": "Uses an SSL certificate",
+                    "url": "URL",
                     "username": "Username",
                     "verify_ssl": "Verify SSL certificate"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of the device running your pyLoad instance.",
-                    "port": "pyLoad uses port 8000 by default."
+                    "password": "The password associated with the pyLoad account.",
+                    "url": "Specify the full URL of your pyLoad web interface, including the protocol (HTTP or HTTPS), hostname or IP address, port (pyLoad uses 8000 by default), and any path prefix if applicable.\nExample: `{example_url}`",
+                    "username": "The username used to access the pyLoad instance.",
+                    "verify_ssl": "If checked, the SSL certificate will be validated to ensure a secure connection."
                 }
             },
             "user": {
                 "data": {
-                    "host": "Host",
                     "password": "Password",
-                    "port": "Port",
-                    "ssl": "Uses an SSL certificate",
+                    "url": "URL",
                     "username": "Username",
                     "verify_ssl": "Verify SSL certificate"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of the device running your pyLoad instance.",
-                    "port": "pyLoad uses port 8000 by default."
+                    "password": "The password associated with the pyLoad account.",
+                    "url": "Specify the full URL of your pyLoad web interface, including the protocol (HTTP or HTTPS), hostname or IP address, port (pyLoad uses 8000 by default), and any path prefix if applicable.\nExample: `{example_url}`",
+                    "username": "The username used to access the pyLoad instance.",
+                    "verify_ssl": "If checked, the SSL certificate will be validated to ensure a secure connection."
                 }
             }
         }
@@ -100,24 +116,10 @@
             "message": "Authentication failed for {username}, verify your login credentials"
         },
         "setup_parse_exception": {
-            "message": "Unable to parse data from pyLoad API, try again later"
+            "message": "Unable to parse data from pyLoad API"
         },
         "setup_request_exception": {
-            "message": "Unable to connect and retrieve data from pyLoad API, try again later"
-        }
-    },
-    "issues": {
-        "deprecated_yaml_import_issue_cannot_connect": {
-            "description": "Configuring pyLoad using YAML is being removed but there was a connection error when trying to import the YAML configuration.\n\nPlease verify that you have a stable internet connection and restart Home Assistant to try again or remove the pyLoad YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",
-            "title": "The pyLoad YAML configuration import failed"
-        },
-        "deprecated_yaml_import_issue_invalid_auth": {
-            "description": "Configuring pyLoad using YAML is being removed but there was an authentication error when trying to import the YAML configuration.\n\nCorrect the YAML configuration and restart Home Assistant to try again or remove the pyLoad YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",
-            "title": "The pyLoad YAML configuration import failed"
-        },
-        "deprecated_yaml_import_issue_unknown": {
-            "description": "Configuring pyLoad using YAML is being removed but there was an unknown error when trying to import the YAML configuration.\n\nEnsure the YAML configuration is correct and restart Home Assistant to try again or remove the pyLoad YAML configuration from your configuration.yaml file and continue to [set up the integration]({url}) manually.",
-            "title": "The pyLoad YAML configuration import failed"
+            "message": "Unable to connect and retrieve data from pyLoad API"
         }
     }
 }

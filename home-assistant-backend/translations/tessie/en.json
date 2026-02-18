@@ -14,12 +14,18 @@
                 "data": {
                     "access_token": "Access token"
                 },
+                "data_description": {
+                    "access_token": "Visit developer settings and select Generate Access Token."
+                },
                 "description": "Enter your access token from {url}.",
                 "title": "Authentication expired for {name}"
             },
             "user": {
                 "data": {
                     "access_token": "Access token"
+                },
+                "data_description": {
+                    "access_token": "Visit developer settings and select Generate Access Token."
                 },
                 "description": "Enter your access token from {url}."
             }
@@ -216,7 +222,7 @@
                 "name": "Charge limit"
             },
             "off_grid_vehicle_charging_reserve_percent": {
-                "name": "Off grid reserve"
+                "name": "Off-grid reserve"
             },
             "vehicle_state_speed_limit_mode_current_limit_mph": {
                 "name": "Speed limit"
@@ -317,7 +323,7 @@
                 "state": {
                     "autonomous": "Autonomous",
                     "backup": "Backup",
-                    "self_consumption": "Self consumption"
+                    "self_consumption": "Self-consumption"
                 }
             }
         },
@@ -476,7 +482,7 @@
             }
         },
         "switch": {
-            "charge_state_charge_enable_request": {
+            "charge_state_charging_state": {
                 "name": "Charge"
             },
             "climate_state_defrost_mode": {
@@ -517,6 +523,9 @@
         "command_failed": {
             "message": "Command failed, {message}"
         },
+        "cpd_enabled": {
+            "message": "Child presence detection has blocked the command, remove weight from seats."
+        },
         "incorrect_pin": {
             "message": "Incorrect PIN for {name}."
         },
@@ -527,7 +536,7 @@
             "message": "{name} is not supported."
         },
         "unknown": {
-            "message": "An unknown issue occured changing {name}."
+            "message": "An unknown issue occurred changing {name}."
         }
     }
 }

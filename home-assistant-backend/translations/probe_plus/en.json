@@ -1,0 +1,54 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_devices_found": "No devices found on the network"
+        },
+        "error": {
+            "device_not_found": "Device could not be found.",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "bluetooth_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
+            "user": {
+                "data": {
+                    "address": "Device"
+                },
+                "data_description": {
+                    "address": "Select BLE probe you want to set up"
+                },
+                "description": "Choose a device to set up"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "probe_battery": {
+                "name": "Probe battery"
+            },
+            "probe_rssi": {
+                "name": "Probe RSSI"
+            },
+            "probe_temperature": {
+                "name": "Probe temperature"
+            },
+            "probe_voltage": {
+                "name": "Probe voltage"
+            },
+            "relay_battery": {
+                "name": "Relay battery"
+            },
+            "relay_voltage": {
+                "name": "Relay voltage"
+            }
+        }
+    },
+    "exceptions": {
+        "no_bleak_scanner": {
+            "message": "No compatible Bluetooth scanner found."
+        }
+    }
+}

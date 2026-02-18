@@ -1,0 +1,51 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_devices_found": "No devices found on the network"
+        },
+        "error": {
+            "no_device_found": "Failed to connect"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "discovery_confirm": {
+                "description": "Do you want to start setup {model}?"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "Altruist IP address or hostname in the local network"
+                },
+                "description": "Fill in Altruist IP address or hostname in your local network"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "co2": {
+                "name": "{sensor_name} CO2"
+            },
+            "humidity": {
+                "name": "{sensor_name} humidity"
+            },
+            "noise_avg": {
+                "name": "Average noise"
+            },
+            "noise_max": {
+                "name": "Maximum noise"
+            },
+            "pressure": {
+                "name": "{sensor_name} pressure"
+            },
+            "radiation": {
+                "name": "Radiation level"
+            },
+            "temperature": {
+                "name": "{sensor_name} temperature"
+            }
+        }
+    }
+}

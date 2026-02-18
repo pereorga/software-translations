@@ -1,7 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Service is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -9,21 +9,49 @@
             "unknown": "Unexpected error"
         },
         "step": {
-            "map": {
-                "data": {
-                    "location": "Location"
-                },
-                "description": "Select a location to get the closest measuring station."
-            },
-            "station_number": {
-                "data": {
-                    "station_number": "Measuring station number"
-                }
-            },
             "user": {
                 "data": {
-                    "api_key": "API key",
-                    "method": "How do you want to select a measuring station?"
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "API key for the World Air Quality Index"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "station": {
+            "abort": {
+                "already_configured": "Service is already configured"
+            },
+            "entry_type": "Measuring station",
+            "initiate_flow": {
+                "user": "Add measuring station"
+            },
+            "step": {
+                "map": {
+                    "data": {
+                        "location": "Location"
+                    },
+                    "data_description": {
+                        "location": "The location to get the nearest measuring station from"
+                    }
+                },
+                "station_number": {
+                    "data": {
+                        "station_number": "Measuring station number"
+                    },
+                    "data_description": {
+                        "station_number": "The number of the measuring station"
+                    }
+                },
+                "user": {
+                    "description": "How do you want to select a measuring station?",
+                    "menu_options": {
+                        "map": "Location",
+                        "station_number": "Measuring station number"
+                    },
+                    "title": "Add measuring station"
                 }
             }
         }
@@ -46,7 +74,7 @@
                 }
             },
             "neph": {
-                "name": "Visbility using nephelometry"
+                "name": "Visibility using nephelometry"
             },
             "nitrogen_dioxide": {
                 "name": "Nitrogen dioxide"
@@ -62,14 +90,6 @@
             },
             "sulphur_dioxide": {
                 "name": "Sulphur dioxide"
-            }
-        }
-    },
-    "selector": {
-        "method": {
-            "options": {
-                "map": "Select nearest from point on the map",
-                "station_number": "Enter a station number"
             }
         }
     }

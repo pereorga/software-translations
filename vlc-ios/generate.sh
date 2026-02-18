@@ -23,5 +23,5 @@ for file in "${files[@]}"; do
     prop2po --encoding=utf-8 -i "tmp/$file.strings" -o "translations/$file.po" --template="tmp/$file.template"
 
     # Try to remove English (untranslated) strings.
-    node ../removeIdenticalMsgidMsgstr.js "translations/$file.po"
+    python3 ../removeIdenticalMsgidMsgstr.py "translations/$file.po"
 done

@@ -2,6 +2,7 @@
     "config": {
         "abort": {
             "no_devices_found": "No devices found on the network",
+            "not_ipv4_address": "No IPv4 address in SSDP discovery information",
             "not_sonos_device": "Discovered device is not a Sonos device",
             "single_instance_allowed": "Already configured. Only a single configuration possible."
         },
@@ -43,9 +44,29 @@
                 "name": "Treble"
             }
         },
+        "select": {
+            "speech_dialog_level": {
+                "name": "Speech enhancement",
+                "state": {
+                    "high": "High",
+                    "low": "Low",
+                    "max": "Max",
+                    "medium": "Medium",
+                    "off": "Off"
+                }
+            }
+        },
         "sensor": {
             "audio_input_format": {
                 "name": "Audio input format"
+            },
+            "power_source": {
+                "name": "Power source",
+                "state": {
+                    "battery": "Battery",
+                    "charging_base": "Charging base",
+                    "usb": "USB"
+                }
             }
         },
         "switch": {
@@ -82,6 +103,12 @@
         "announce_media_error": {
             "message": "Announcing clip {media_id} failed {response}"
         },
+        "entity_not_found": {
+            "message": "Entity {entity_id} not found."
+        },
+        "invalid_alarm_id": {
+            "message": "Alarm {alarm_id} does not exist and cannot be updated."
+        },
         "invalid_content_type": {
             "message": "Sonos does not support media content type: {media_type}"
         },
@@ -93,12 +120,25 @@
         },
         "invalid_sonos_playlist": {
             "message": "Could not find Sonos playlist: {name}"
+        },
+        "speaker_not_found": {
+            "message": "{entity_id} is not a known Sonos speaker."
+        },
+        "timeout_join": {
+            "message": "Timeout while waiting for Sonos player to join the group {group_description}"
+        },
+        "timeout_unjoin": {
+            "message": "Timeout while waiting for Sonos player to unjoin the group {group_description}"
         }
     },
     "issues": {
         "subscriptions_failed": {
             "description": "Falling back to polling, functionality may be limited.\n\nSonos device at {device_ip} cannot reach Home Assistant at {listener_address}.\n\nSee our [documentation]({sub_fail_url}) for more information on how to solve this issue.",
             "title": "Networking error: subscriptions failed"
+        },
+        "upnp_disabled": {
+            "description": "Unable to connect to Sonos speaker at {device_ip}.\n\nPlease ensure UPnP is enabled on your Sonos system.\n\nOpen the Sonos app on your phone or tablet. Go to Account > Privacy and Security > UPnP. Enable the UPnP setting. Once UPnP is enabled, return to Home Assistant and reload the Sonos integration. The connection should now succeed. See our [documentation]({documentation_url}) for steps to resolve this issue.",
+            "title": "Networking error: UPnP disabled"
         }
     },
     "services": {
@@ -111,7 +151,7 @@
             "name": "Get queue"
         },
         "play_queue": {
-            "description": "Start playing the queue from the first item.",
+            "description": "Starts playing the queue from the first item.",
             "fields": {
                 "queue_position": {
                     "description": "Position of the song in the queue to start playing from.",
@@ -131,14 +171,14 @@
             "name": "Remove from queue"
         },
         "restore": {
-            "description": "Restores a snapshot of the media player.",
+            "description": "Restores a snapshot of a media player.",
             "fields": {
                 "entity_id": {
                     "description": "Name of entity that will be restored.",
                     "name": "Entity"
                 },
                 "with_group": {
-                    "description": "True or False. Also restore the group layout.",
+                    "description": "Whether the group layout and the state of other speakers in the group should also be restored.",
                     "name": "With group"
                 }
             },
@@ -155,14 +195,14 @@
             "name": "Set timer"
         },
         "snapshot": {
-            "description": "Takes a snapshot of the media player.",
+            "description": "Takes a snapshot of a media player.",
             "fields": {
                 "entity_id": {
                     "description": "Name of entity that will be snapshot.",
                     "name": "Entity"
                 },
                 "with_group": {
-                    "description": "True or False. Also snapshot the group layout.",
+                    "description": "Whether the snapshot should include the group layout and the state of other speakers in the group.",
                     "name": "With group"
                 }
             },
@@ -172,23 +212,23 @@
             "description": "Updates an alarm with new time and volume settings.",
             "fields": {
                 "alarm_id": {
-                    "description": "ID for the alarm to be updated.",
+                    "description": "The ID of the alarm to be updated.",
                     "name": "Alarm ID"
                 },
                 "enabled": {
-                    "description": "Enable or disable the alarm.",
+                    "description": "Whether or not to enable the alarm.",
                     "name": "Alarm enabled"
                 },
                 "include_linked_zones": {
-                    "description": "Enable or disable including grouped rooms.",
+                    "description": "Whether the alarm also plays on grouped players.",
                     "name": "Include linked zones"
                 },
                 "time": {
-                    "description": "Set time for the alarm.",
+                    "description": "The time for the alarm.",
                     "name": "Time"
                 },
                 "volume": {
-                    "description": "Set alarm volume level.",
+                    "description": "The alarm volume level.",
                     "name": "Volume"
                 }
             },

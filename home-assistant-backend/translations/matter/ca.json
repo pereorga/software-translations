@@ -47,6 +47,9 @@
     },
     "entity": {
         "binary_sensor": {
+            "alarm_door": {
+                "name": "Alarma de la porta"
+            },
             "battery_alert": {
                 "name": "Alerta de bateria"
             },
@@ -124,7 +127,17 @@
         },
         "fan": {
             "fan": {
-                "name": "Ventilador"
+                "name": "Ventilador",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na"
+                        }
+                    }
+                }
             }
         },
         "light": {
@@ -137,13 +150,47 @@
                 "name": "Pany"
             }
         },
+        "number": {
+            "led_indicator_intensity_off": {
+                "name": "Intensitat de LED apagat"
+            },
+            "led_indicator_intensity_on": {
+                "name": "Intensitat de LED enc\u00e8s"
+            }
+        },
         "select": {
+            "door_lock_operating_mode": {
+                "state": {
+                    "normal": "Normal"
+                }
+            },
+            "door_lock_sound_volume": {
+                "name": "Volum del so",
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "laundry_washer_number_of_rinses": {
+                "state": {
+                    "normal": "Normal",
+                    "off": "OFF"
+                }
+            },
             "mode": {
                 "name": "Mode"
+            },
+            "pump_operation_mode": {
+                "state": {
+                    "normal": "Normal"
+                }
             },
             "sensitivity_level": {
                 "name": "Sensibilitat",
                 "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
                     "standard": "Est\u00e0ndard"
                 }
             },
@@ -156,13 +203,36 @@
             }
         },
         "sensor": {
+            "battery_charge_state": {
+                "state": {
+                    "charging": "Carregant"
+                }
+            },
             "contamination_state": {
                 "name": "Estat de contaminaci\u00f3",
                 "state": {
                     "critical": "Cr\u00edtica",
+                    "low": "Baix/a",
                     "normal": "Normal",
                     "warning": "Alerta"
                 }
+            },
+            "door_open_events": {
+                "name": "Esdeveniments de porta oberta"
+            },
+            "esa_opt_out_state": {
+                "state": {
+                    "no_opt_out": "OFF"
+                }
+            },
+            "esa_state": {
+                "state": {
+                    "fault": "Error",
+                    "paused": "Pausat/ada"
+                }
+            },
+            "evse_soc": {
+                "name": "Estat de c\u00e0rrega"
             },
             "expiry_date": {
                 "name": "Data de caducitat"
@@ -170,13 +240,25 @@
             "flow": {
                 "name": "Flux"
             },
+            "nitrogen_dioxide": {
+                "name": "Di\u00f2xid de nitrogen"
+            },
+            "operational_error": {
+                "state": {
+                    "water_tank_lid_open": "Tapa del dip\u00f2sit d'aigua oberta"
+                }
+            },
             "operational_state": {
                 "state": {
+                    "charging": "Carregant",
                     "error": "Error",
                     "paused": "Pausat/ada",
                     "running": "En funcionament",
-                    "stopped": "Aturat"
+                    "stopped": "Parat"
                 }
+            },
+            "outdoor_temperature": {
+                "name": "Temperatura exterior"
             },
             "switch_current_position": {
                 "name": "Posici\u00f3 actual de l'interruptor"
@@ -186,6 +268,9 @@
             }
         },
         "switch": {
+            "evse_charging_switch": {
+                "name": "Activa la c\u00e0rrega"
+            },
             "power": {
                 "name": "Pot\u00e8ncia"
             },
@@ -201,6 +286,11 @@
         "valve": {
             "valve": {
                 "name": "V\u00e0lvula"
+            }
+        },
+        "water_heater": {
+            "water_heater": {
+                "name": "Escalfador d'aigua"
             }
         }
     },

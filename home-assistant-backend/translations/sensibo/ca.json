@@ -13,17 +13,11 @@
             "reauth_confirm": {
                 "data": {
                     "api_key": "Clau API"
-                },
-                "data_description": {
-                    "api_key": "Consulta la documentaci\u00f3 per obtenir la teva clau API"
                 }
             },
             "reconfigure": {
                 "data": {
                     "api_key": "Clau API"
-                },
-                "data_description": {
-                    "api_key": "Consulta la documentaci\u00f3 per obtenir la teva clau API"
                 }
             },
             "user": {
@@ -67,14 +61,27 @@
                 "state_attributes": {
                     "fan_mode": {
                         "state": {
-                            "auto": "Autom\u00e0tic",
-                            "high": "Alt",
-                            "low": "Baix",
-                            "medium": "Mitj\u00e0",
+                            "auto": "Auto",
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na",
                             "medium_high": "Mitj\u00e0 alt",
                             "medium_low": "Mitj\u00e0 baix",
                             "quiet": "Suau",
                             "strong": "Fort"
+                        }
+                    },
+                    "swing_horizontal_mode": {
+                        "state": {
+                            "fixedcenter": "Fix al centre",
+                            "fixedcenterleft": "Fix al centre i a l'esquerra",
+                            "fixedcenterright": "Fix al centre i a la dreta",
+                            "fixedleft": "Fix a l'esquerra",
+                            "fixedleftright": "Fix a l'esquerra i a la dreta",
+                            "fixedright": "Fix a la dreta",
+                            "rangecenter": "Rang central",
+                            "rangefull": "Range full",
+                            "stopped": "OFF"
                         }
                     },
                     "swing_mode": {
@@ -86,7 +93,7 @@
                             "fixedmiddletop": "Fix al mig - a dalt",
                             "fixedtop": "Fix a dalt",
                             "horizontal": "Horitzontal",
-                            "rangefull": "Rang complet",
+                            "rangefull": "Range full",
                             "stopped": "OFF"
                         }
                     }
@@ -102,20 +109,6 @@
             }
         },
         "select": {
-            "horizontalswing": {
-                "name": "Oscil\u00b7laci\u00f3 horitzontal",
-                "state": {
-                    "fixedcenter": "Fix al centre",
-                    "fixedcenterleft": "Fix al centre i a l'esquerra",
-                    "fixedcenterright": "Fix al centre i a la dreta",
-                    "fixedleft": "Fix a l'esquerra",
-                    "fixedleftright": "Fix a l'esquerra i a la dreta",
-                    "fixedright": "Fix a la dreta",
-                    "rangecenter": "Rang central",
-                    "rangefull": "Rang complet",
-                    "stopped": "OFF"
-                }
-            },
             "light": {
                 "name": "Llum",
                 "state": {
@@ -141,10 +134,10 @@
                     "fanlevel": {
                         "name": "Mode ventilador",
                         "state": {
-                            "auto": "Autom\u00e0tic",
-                            "high": "Alt",
-                            "low": "Baix",
-                            "medium": "Mitj\u00e0",
+                            "auto": "Auto",
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na",
                             "medium_high": "Mitj\u00e0 alt",
                             "medium_low": "Mitj\u00e0 baix",
                             "quiet": "Suau",
@@ -161,7 +154,7 @@
                             "fixedleftright": "Fix a l'esquerra i a la dreta",
                             "fixedright": "Fix a la dreta",
                             "rangecenter": "Rang central",
-                            "rangefull": "Rang complet",
+                            "rangefull": "Range full",
                             "stopped": "OFF"
                         }
                     },
@@ -176,7 +169,7 @@
                     "mode": {
                         "name": "Mode",
                         "state": {
-                            "auto": "Autom\u00e0tic",
+                            "auto": "Auto",
                             "cool": "Refreda",
                             "dry": "Asseca",
                             "fan_only": "Nom\u00e9s ventilador",
@@ -223,10 +216,10 @@
                     "fanlevel": {
                         "name": "Mode ventilador",
                         "state": {
-                            "auto": "Autom\u00e0tic",
-                            "high": "Alt",
-                            "low": "Baix",
-                            "medium": "Mitj\u00e0",
+                            "auto": "Auto",
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na",
                             "medium_high": "Mitj\u00e0 alt",
                             "medium_low": "Mitj\u00e0 baix",
                             "quiet": "Suau",
@@ -243,7 +236,7 @@
                             "fixedleftright": "Fix a l'esquerra i a la dreta",
                             "fixedright": "Fix a la dreta",
                             "rangecenter": "Rang central",
-                            "rangefull": "Rang complet",
+                            "rangefull": "Range full",
                             "stopped": "OFF"
                         }
                     },
@@ -258,7 +251,7 @@
                     "mode": {
                         "name": "Mode",
                         "state": {
-                            "auto": "Autom\u00e0tic",
+                            "auto": "Auto",
                             "cool": "Refreda",
                             "dry": "Asseca",
                             "fan_only": "Nom\u00e9s ventilador",
@@ -360,9 +353,6 @@
             "timer_on_switch": {
                 "name": "Temporitzador",
                 "state_attributes": {
-                    "id": {
-                        "name": "ID"
-                    },
                     "turn_on": {
                         "name": "S'enc\u00e9n",
                         "state": {
@@ -380,6 +370,44 @@
         },
         "service_result_not_true": {
             "message": "No s'ha pogut realitzar l'acci\u00f3 de {name}"
+        }
+    },
+    "selector": {
+        "assume_state": {
+            "options": {
+                "off": "OFF",
+                "on": "ON"
+            }
+        },
+        "hvac_mode": {
+            "options": {
+                "auto": "Auto",
+                "cool": "Refreda",
+                "dry": "Asseca",
+                "fan": "Nom\u00e9s ventilador",
+                "heat": "Escalfa",
+                "off": "OFF"
+            }
+        },
+        "light_mode": {
+            "options": {
+                "dim": "Atenuat",
+                "off": "OFF",
+                "on": "ON"
+            }
+        },
+        "sensitivity": {
+            "options": {
+                "normal": "Normal",
+                "sensitive": "Sensible"
+            }
+        },
+        "smart_type": {
+            "options": {
+                "feelslike": "Sensaci\u00f3",
+                "humidity": "Humitat",
+                "temperature": "Temperatura"
+            }
         }
     },
     "services": {
@@ -434,6 +462,14 @@
                 "target_temperature": {
                     "description": "Configura la temperatura objectiu.",
                     "name": "Temperatura objectiu"
+                }
+            }
+        },
+        "get_device_capabilities": {
+            "fields": {
+                "hvac_mode": {
+                    "description": "Mode de funcionament HVAC.",
+                    "name": "Mode HVAC"
                 }
             }
         }

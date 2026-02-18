@@ -17,7 +17,6 @@
                     "host": "Amfitri\u00f3",
                     "password": "Contrasenya"
                 },
-                "description": "Introdueix l'adre\u00e7a IP del teu AC Daikin.\n\nTingues en compte que la clau API i la contrasenya s'utilitzen nom\u00e9s als dispositius BRP072Cxx i SKYFi respectivament.",
                 "title": "Configuraci\u00f3 de Daikin AC"
             }
         }
@@ -50,6 +49,11 @@
             },
             "target_humidity": {
                 "name": "Humitat objectiu"
+            }
+        },
+        "switch": {
+            "toggle": {
+                "name": "Energia"
             }
         }
     }

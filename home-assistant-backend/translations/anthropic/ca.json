@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
         "error": {
             "authentication_error": "Autenticaci\u00f3 inv\u00e0lida",
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -14,16 +17,53 @@
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "chat_model": "Model",
-                    "llm_hass_api": "Controla Home Assistant",
-                    "max_tokens": "Nombre m\u00e0xim de 'tokens' a retornar en la resposta",
-                    "prompt": "Instruccions",
-                    "recommended": "Configuraci\u00f3 del model recomanada",
-                    "temperature": "Temperatura"
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            },
+            "step": {
+                "advanced": {
+                    "data": {
+                        "chat_model": "Model"
+                    }
+                },
+                "init": {
+                    "data": {
+                        "name": "Nom"
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            },
+            "step": {
+                "advanced": {
+                    "data": {
+                        "chat_model": "Model"
+                    }
+                },
+                "init": {
+                    "data": {
+                        "llm_hass_api": "Controla Home Assistant",
+                        "name": "Nom",
+                        "prompt": "Instruccions"
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "model_deprecated": {
+            "fix_flow": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "chat_model": "Model"
+                        }
+                    }
                 }
             }
         }

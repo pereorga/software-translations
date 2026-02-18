@@ -7,29 +7,18 @@
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "complete_pairing_failed": "No s'ha pogut completar la vinculaci\u00f3. Verifica que el PIN proporcionat sigui el correcte i que el televisor segueix connectat a la xarxa abans de provar-ho de nou.",
-            "existing_config_entry_found": "Ja s'ha configurat una entrada de configuraci\u00f3 de dispositiu VIZIO SmartCast amb el mateix n\u00famero de s\u00e8rie. Per poder configurar-ho, has d'eliminar l'entrada existent."
+            "complete_pairing_failed": "No s'ha pogut completar la vinculaci\u00f3. Verifica que el PIN proporcionat sigui el correcte i que el televisor segueix connectat a la xarxa abans de provar-ho de nou."
         },
         "step": {
             "pair_tv": {
                 "data": {
                     "pin": "Codi PIN"
                 },
-                "description": "El televisor hauria d'estar mostrant un codi. Introdueix aquest codi al formulari i segueix amb els seg\u00fcents passos per completar la vinculaci\u00f3.",
-                "title": "Proc\u00e9s de vinculaci\u00f3 complet"
-            },
-            "pairing_complete": {
-                "description": "El dispositiu VIZIO SmartCast est\u00e0 connectat a Home Assistant.",
-                "title": "Vinculaci\u00f3 completada"
-            },
-            "pairing_complete_import": {
-                "description": "El dispositiu VIZIO SmartCast est\u00e0 connectat a Home Assistant.\n\nEl teu 'token' d'acc\u00e9s \u00e9s '**{access_token}**'.",
-                "title": "Vinculaci\u00f3 completada"
+                "description": "El televisor hauria d'estar mostrant un codi. Introdueix aquest codi al formulari i segueix amb els seg\u00fcents passos per completar la vinculaci\u00f3."
             },
             "user": {
                 "data": {
                     "access_token": "[%key::common::config_flow::data::access_token%]",
-                    "device_class": "Tipus de dispositiu",
                     "host": "Amfitri\u00f3",
                     "name": "Nom"
                 },
@@ -40,13 +29,7 @@
     "options": {
         "step": {
             "init": {
-                "data": {
-                    "apps_to_include_or_exclude": "Aplicacions a incloure o excloure",
-                    "include_or_exclude": "Incloure o excloure aplicacions?",
-                    "volume_step": "Mida del pas de volum"
-                },
-                "description": "Si tens una Smart TV, pots filtrar de manera opcional la teva llista de canals escollint quines aplicacions vols incloure o excloure de la llista.",
-                "title": "Actualitzaci\u00f3 de les opcions de dispositiu VIZIO SmartCast"
+                "description": "Si tens una Smart TV, pots filtrar de manera opcional la teva llista de canals escollint quines aplicacions vols incloure o excloure de la llista."
             }
         }
     },

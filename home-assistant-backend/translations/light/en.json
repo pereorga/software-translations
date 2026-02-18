@@ -1,5 +1,7 @@
 {
     "common": {
+        "condition_behavior_description": "How the state should match on the targeted lights.",
+        "condition_behavior_name": "Behavior",
         "field_brightness_description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
         "field_brightness_name": "Brightness value",
         "field_brightness_pct_description": "Number indicating the percentage of full brightness, where 0 turns the light off, 1 is the minimum brightness, and 100 is the maximum brightness.",
@@ -11,6 +13,8 @@
         "field_color_name_description": "A human-readable color name.",
         "field_color_name_name": "Color name",
         "field_color_temp_description": "Color temperature in mireds.",
+        "field_color_temp_kelvin_description": "Color temperature in Kelvin.",
+        "field_color_temp_kelvin_name": "Color temperature",
         "field_color_temp_name": "Color temperature",
         "field_effect_description": "Light effect.",
         "field_effect_name": "Effect",
@@ -18,8 +22,6 @@
         "field_flash_name": "Flash",
         "field_hs_color_description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
         "field_hs_color_name": "Hue/Sat color",
-        "field_kelvin_description": "Color temperature in Kelvin.",
-        "field_kelvin_name": "Color temperature",
         "field_profile_description": "Name of a light profile to use.",
         "field_profile_name": "Profile",
         "field_rgb_color_description": "The color in RGB format. A list of three integers between 0 and 255 representing the values of red, green, and blue.",
@@ -34,7 +36,31 @@
         "field_white_name": "White",
         "field_xy_color_description": "Color in XY-format. A list of two decimal numbers between 0 and 1.",
         "field_xy_color_name": "XY-color",
-        "section_advanced_fields_name": "Advanced options"
+        "section_advanced_fields_name": "Advanced options",
+        "trigger_behavior_description": "The behavior of the targeted lights to trigger on.",
+        "trigger_behavior_name": "Behavior"
+    },
+    "conditions": {
+        "is_off": {
+            "description": "Tests if one or more lights are off.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted lights.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Light is off"
+        },
+        "is_on": {
+            "description": "Tests if one or more lights are on.",
+            "fields": {
+                "behavior": {
+                    "description": "How the state should match on the targeted lights.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Light is on"
+        }
     },
     "device_automation": {
         "action_type": {
@@ -51,7 +77,8 @@
         },
         "extra_fields": {
             "brightness_pct": "Brightness",
-            "flash": "Flash"
+            "flash": "Flash",
+            "for": "Duration"
         },
         "trigger_type": {
             "changed_states": "{entity_name} turned on or off",
@@ -92,7 +119,10 @@
                     "name": "Color temperature (Kelvin)"
                 },
                 "effect": {
-                    "name": "Effect"
+                    "name": "Effect",
+                    "state": {
+                        "off": "Off"
+                    }
                 },
                 "effect_list": {
                     "name": "Available effects"
@@ -279,11 +309,50 @@
                 "yellow": "Yellow",
                 "yellowgreen": "Yellow green"
             }
+        },
+        "condition_behavior": {
+            "options": {
+                "all": "All",
+                "any": "Any"
+            }
+        },
+        "flash": {
+            "options": {
+                "long": "Long",
+                "short": "Short"
+            }
+        },
+        "number_or_entity": {
+            "choices": {
+                "entity": "Entity",
+                "number": "Number"
+            }
+        },
+        "state": {
+            "options": {
+                "off": "Off",
+                "on": "On"
+            }
+        },
+        "trigger_behavior": {
+            "options": {
+                "any": "Any",
+                "first": "First",
+                "last": "Last"
+            }
+        },
+        "trigger_threshold_type": {
+            "options": {
+                "above": "Above a value",
+                "below": "Below a value",
+                "between": "In a range",
+                "outside": "Outside a range"
+            }
         }
     },
     "services": {
         "toggle": {
-            "description": "Toggles one or more lights, from on to off, or, off to on, based on their current state.",
+            "description": "Toggles one or more lights, from on to off, or off to on, based on their current state.",
             "fields": {
                 "brightness": {
                     "description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
@@ -301,6 +370,10 @@
                     "description": "Color temperature in mireds.",
                     "name": "Color temperature"
                 },
+                "color_temp_kelvin": {
+                    "description": "Color temperature in Kelvin.",
+                    "name": "Color temperature"
+                },
                 "effect": {
                     "description": "Light effect.",
                     "name": "Effect"
@@ -312,10 +385,6 @@
                 "hs_color": {
                     "description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
                     "name": "Hue/Sat color"
-                },
-                "kelvin": {
-                    "description": "Color temperature in Kelvin.",
-                    "name": "Color temperature"
                 },
                 "profile": {
                     "description": "Name of a light profile to use.",
@@ -354,7 +423,7 @@
             }
         },
         "turn_off": {
-            "description": "Turn off one or more lights.",
+            "description": "Turns off one or more lights.",
             "fields": {
                 "flash": {
                     "description": "Tell light to flash, can be either value short or long.",
@@ -373,7 +442,7 @@
             }
         },
         "turn_on": {
-            "description": "Turn on one or more lights and adjust properties of the light, even when they are turned on already.",
+            "description": "Turns on one or more lights and adjusts their properties, even when they are turned on already.",
             "fields": {
                 "brightness": {
                     "description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
@@ -399,6 +468,10 @@
                     "description": "Color temperature in mireds.",
                     "name": "Color temperature"
                 },
+                "color_temp_kelvin": {
+                    "description": "Color temperature in Kelvin.",
+                    "name": "Color temperature"
+                },
                 "effect": {
                     "description": "Light effect.",
                     "name": "Effect"
@@ -410,10 +483,6 @@
                 "hs_color": {
                     "description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
                     "name": "Hue/Sat color"
-                },
-                "kelvin": {
-                    "description": "Color temperature in Kelvin.",
-                    "name": "Color temperature"
                 },
                 "profile": {
                     "description": "Name of a light profile to use.",
@@ -452,5 +521,63 @@
             }
         }
     },
-    "title": "Light"
+    "title": "Light",
+    "triggers": {
+        "brightness_changed": {
+            "description": "Triggers after the brightness of one or more lights changes.",
+            "fields": {
+                "above": {
+                    "description": "Trigger when the target brightness is above this value.",
+                    "name": "Above"
+                },
+                "below": {
+                    "description": "Trigger when the target brightness is below this value.",
+                    "name": "Below"
+                }
+            },
+            "name": "Light brightness changed"
+        },
+        "brightness_crossed_threshold": {
+            "description": "Triggers after the brightness of one or more lights crosses a threshold.",
+            "fields": {
+                "behavior": {
+                    "description": "The behavior of the targeted lights to trigger on.",
+                    "name": "Behavior"
+                },
+                "lower_limit": {
+                    "description": "Lower threshold limit.",
+                    "name": "Lower threshold"
+                },
+                "threshold_type": {
+                    "description": "Type of threshold crossing to trigger on.",
+                    "name": "Threshold type"
+                },
+                "upper_limit": {
+                    "description": "Upper threshold limit.",
+                    "name": "Upper threshold"
+                }
+            },
+            "name": "Light brightness crossed threshold"
+        },
+        "turned_off": {
+            "description": "Triggers after one or more lights turn off.",
+            "fields": {
+                "behavior": {
+                    "description": "The behavior of the targeted lights to trigger on.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Light turned off"
+        },
+        "turned_on": {
+            "description": "Triggers after one or more lights turn on.",
+            "fields": {
+                "behavior": {
+                    "description": "The behavior of the targeted lights to trigger on.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Light turned on"
+        }
+    }
 }

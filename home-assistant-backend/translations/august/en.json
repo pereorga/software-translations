@@ -2,39 +2,32 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_in_progress": "Configuration flow is already in progress",
+            "authorize_url_timeout": "Timeout generating authorize URL.",
+            "missing_configuration": "The component is not configured. Please follow the documentation.",
+            "missing_credentials": "The integration requires application credentials.",
+            "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
+            "oauth_error": "Received invalid token data.",
+            "oauth_failed": "Error while obtaining access token.",
+            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
+            "oauth_timeout": "Timeout resolving OAuth token.",
+            "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
+            "reauth_invalid_user": "Reauthenticate must use the same account.",
+            "reauth_successful": "Re-authentication was successful",
+            "user_rejected_authorize": "Account linking rejected: {error}"
         },
-        "error": {
-            "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication",
-            "invalid_verification_code": "Invalid verification code",
-            "unhandled": "Unhandled error: {error}"
+        "create_entry": {
+            "default": "Successfully authenticated"
         },
         "step": {
-            "reauth_validate": {
+            "pick_implementation": {
                 "data": {
-                    "brand": "Brand",
-                    "password": "Password"
+                    "implementation": "Application credentials"
                 },
-                "description": "Choose the correct brand for your device, and enter the password for {username}. If you choose the wrong brand, you may be able to authenticate initially; however, you will not be able to operate devices. If you are unsure of the brand, create the integration again and try another brand.",
-                "title": "Reauthenticate an August account"
-            },
-            "user_validate": {
-                "data": {
-                    "brand": "Brand",
-                    "login_method": "Login Method",
-                    "password": "Password",
-                    "username": "Username"
+                "data_description": {
+                    "implementation": "The credentials you want to use to authenticate."
                 },
-                "description": "It is recommended to use the 'email' login method as some brands may not work with the 'phone' method. If the Login Method is 'email', Username is the email address. If the Login Method is 'phone', Username is the phone number in the format '+NNNNNNNNN'. If you choose the wrong brand, you may be able to authenticate initially; however, you will not be able to operate devices. If you are unsure of the brand, create the integration again and try another brand.",
-                "title": "Set up an August account"
-            },
-            "validation": {
-                "data": {
-                    "verification_code": "Verification code"
-                },
-                "description": "Please check your {login_method} ({username}) and enter the verification code below. Codes may take a few minutes to arrive.",
-                "title": "Two factor authentication"
+                "title": "Pick authentication method"
             }
         }
     },

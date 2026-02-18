@@ -22,8 +22,19 @@
                 "title": "Selecciona acord"
             },
             "pick_implementation": {
+                "data": {
+                    "implementation": "Credencials d'aplicaci\u00f3"
+                },
+                "data_description": {
+                    "implementation": "Les credencials que vols fer servir per autenticar."
+                },
                 "title": "Tria amb quin vols autenticar-te"
             }
+        }
+    },
+    "exceptions": {
+        "oauth2_implementation_unavailable": {
+            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
         }
     },
     "services": {

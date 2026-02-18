@@ -5,7 +5,6 @@
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "ignore_ip6_link_local": "L'enlla\u00e7 amb adreces IPv6 locals no est\u00e0 perm\u00e8s",
             "no_devices_found": "No s'han trobat dispositius a la xarxa",
-            "not_supported": "Connectat a AVM FRITZ!Box per\u00f2 no es poden controlar dispositius Smart Home.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
@@ -39,8 +38,7 @@
                     "host": "Amfitri\u00f3",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
-                },
-                "description": "Introdueix la teva informaci\u00f3 de AVM FRITZ!Box."
+                }
             }
         }
     },
@@ -54,6 +52,9 @@
             },
             "lock": {
                 "name": "Bloqueig de botons al dispositiu"
+            },
+            "window_open": {
+                "name": "S'ha detectat una finestra oberta"
             }
         },
         "climate": {
@@ -90,6 +91,11 @@
             "scheduled_preset": {
                 "name": "Preconfiguraci\u00f3 programada actual"
             }
+        }
+    },
+    "exceptions": {
+        "manual_switching_disabled": {
+            "message": "No es pot commutar l'interruptor mentre la commutaci\u00f3 manual estigui inhabilitada per al dispositiu."
         }
     }
 }

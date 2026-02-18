@@ -1,5 +1,21 @@
 {
+    "entity": {
+        "ai_task": {
+            "cloud_ai": {
+                "name": "Home Assistant Cloud AI"
+            }
+        }
+    },
+    "exceptions": {
+        "backup_size_too_large": {
+            "message": "The backup size of {size}GB is too large to be uploaded to Home Assistant Cloud."
+        }
+    },
     "issues": {
+        "connection_error": {
+            "description": "You do not have a connection to Home Assistant Cloud. Check your network.",
+            "title": "No connection"
+        },
         "deprecated_gender": {
             "fix_flow": {
                 "step": {
@@ -39,9 +55,17 @@
             },
             "title": "Legacy subscription detected"
         },
+        "no_subscription": {
+            "description": "You do not have a Home Assistant Cloud subscription. Subscribe at {account_url}.",
+            "title": "No subscription detected"
+        },
         "reset_bad_custom_domain_configuration": {
             "description": "The DNS configuration for your custom domain ({custom_domains}) is not correct. This domain has now been ignored and will not be used for Home Assistant Cloud. If you want to use this domain, please fix the DNS configuration and restart Home Assistant. If you do not need this anymore, you can remove it from the account page.",
             "title": "Custom domain ignored"
+        },
+        "subscription_expired": {
+            "description": "Your Home Assistant Cloud subscription has expired. Resubscribe at {account_url}.",
+            "title": "Subscription has expired"
         },
         "warn_bad_custom_domain_configuration": {
             "description": "The DNS configuration for your custom domain ({custom_domains}) is not correct. Please check the DNS configuration of your domain and make sure it points to the correct CNAME.",

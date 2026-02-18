@@ -354,10 +354,12 @@
             }
         }
     },
-    "issues": {
-        "deprecated_import_from_configuration_yaml": {
-            "description": "Configuration of the OpenTherm Gateway integration through configuration.yaml is deprecated. Your configuration has been migrated to config entries. Please remove any OpenTherm Gateway configuration from your configuration.yaml.",
-            "title": "Deprecated configuration"
+    "exceptions": {
+        "change_hvac_mode_not_supported": {
+            "message": "Changing HVAC mode is not supported."
+        },
+        "invalid_gateway_id": {
+            "message": "Gateway {gw_id} not found or not loaded!"
         }
     },
     "options": {
@@ -384,7 +386,7 @@
             "name": "Reset gateway"
         },
         "send_transparent_command": {
-            "description": "Sends custom otgw commands (https://otgw.tclcode.com/firmware.html) through a transparent interface.",
+            "description": "Sends custom OTGW commands ({opentherm_gateway_firmware_url}) through a transparent interface.",
             "fields": {
                 "gateway_id": {
                     "description": "The ID of the OpenTherm Gateway.",
@@ -402,10 +404,10 @@
             "name": "Send transparent command"
         },
         "set_central_heating_ovrd": {
-            "description": "Sets the central heating override option on the gateway. When overriding the control setpoint (via a set_control_setpoint action with a value other than 0), the gateway automatically enables the central heating override to start heating. This action can then be used to control the central heating override status. To return control of the central heating to the thermostat, use the set_control_setpoint action with temperature value 0. You will only need this if you are writing your own software thermostat.",
+            "description": "Sets the central heating override option on the gateway. When overriding the control setpoint (via a 'Set control setpoint' action with a value other than 0), the gateway automatically enables the central heating override to start heating. This action can then be used to control the central heating override status. To return control of the central heating to the thermostat, use the 'Set control setpoint' action with temperature value 0. You will only need this if you are writing your own software thermostat.",
             "fields": {
                 "ch_override": {
-                    "description": "The desired boolean value for the central heating override.",
+                    "description": "Whether to enable or disable the override.",
                     "name": "Central heating override"
                 },
                 "gateway_id": {
@@ -445,7 +447,7 @@
                     "name": "Temperature"
                 }
             },
-            "name": "Set control set point"
+            "name": "Set control setpoint"
         },
         "set_gpio_mode": {
             "description": "Changes the function of the GPIO pins of the gateway.",
@@ -459,7 +461,7 @@
                     "name": "ID"
                 },
                 "mode": {
-                    "description": "Mode to set on the GPIO pin. Values 0 through 6 are accepted for both GPIOs, 7 is only accepted for GPIO \"B\". See https://www.home-assistant.io/integrations/opentherm_gw/#gpio-modes for an explanation of the values.",
+                    "description": "Mode to set on the GPIO pin. Values 0 through 6 are accepted for both GPIOs, 7 is only accepted for GPIO \"B\". See {gpio_modes_documentation_url} for an explanation of the values.",
                     "name": "Mode"
                 }
             },
@@ -491,7 +493,7 @@
                     "name": "Temperature"
                 }
             },
-            "name": "Set hot water set point"
+            "name": "Set hot water setpoint"
         },
         "set_led_mode": {
             "description": "Changes the function of the LEDs of the gateway.",
@@ -505,7 +507,7 @@
                     "name": "ID"
                 },
                 "mode": {
-                    "description": "The function to assign to the LED. See https://www.home-assistant.io/integrations/opentherm_gw/#led-modes for an explanation of the values.",
+                    "description": "The function to assign to the LED. See {led_modes_documentation_url} for an explanation of the values.",
                     "name": "Mode"
                 }
             },

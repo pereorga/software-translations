@@ -2,7 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "no_mac_address": "The MAC address is missing from the zeroconf record",
+            "no_mac_address": "The MAC address is missing from the Zeroconf record",
             "reauth_successful": "Re-authentication was successful",
             "reconfigure_successful": "Re-configuration was successful"
         },
@@ -10,7 +10,7 @@
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
             "missing_data": "Missing data: please retry later or an other configuration",
-            "otp_failed": "Two-step authentication failed, retry with a new pass code",
+            "otp_failed": "Two-step authentication failed, retry with a new passcode",
             "unknown": "Unexpected error"
         },
         "flow_title": "{name} ({host})",
@@ -20,6 +20,17 @@
                     "otp_code": "Code"
                 },
                 "title": "Synology DSM: two-step authentication"
+            },
+            "backup_share": {
+                "data": {
+                    "backup_path": "Path",
+                    "backup_share": "Shared folder"
+                },
+                "data_description": {
+                    "backup_path": "Define the path on the selected shared folder (will automatically be created, if not exist).",
+                    "backup_share": "Select the shared folder where the automatic Home Assistant backup should be stored."
+                },
+                "title": "Synology DSM: Backup location"
             },
             "link": {
                 "data": {
@@ -87,6 +98,12 @@
             "cpu_user_load": {
                 "name": "CPU utilization (user)"
             },
+            "device_size_total": {
+                "name": "Device size"
+            },
+            "device_status": {
+                "name": "Status"
+            },
             "disk_smart_status": {
                 "name": "Status (smart)"
             },
@@ -122,6 +139,15 @@
             },
             "network_up": {
                 "name": "Upload throughput"
+            },
+            "partition_percentage_used": {
+                "name": "Partition used"
+            },
+            "partition_size_total": {
+                "name": "Partition size"
+            },
+            "partition_size_used": {
+                "name": "Partition used space"
             },
             "temperature": {
                 "name": "Temperature"
@@ -159,13 +185,48 @@
             }
         }
     },
+    "issues": {
+        "missing_backup_setup": {
+            "fix_flow": {
+                "abort": {
+                    "ignored": "The backup location has not been configured.\nYou can still set it up later via the integration options.",
+                    "no_shares": "There are no shared folders available for the user.\nPlease check the documentation."
+                },
+                "step": {
+                    "confirm": {
+                        "data": {
+                            "backup_path": "Path",
+                            "backup_share": "Shared folder"
+                        },
+                        "data_description": {
+                            "backup_path": "Define the path on the selected shared folder (will automatically be created, if not exist).",
+                            "backup_share": "Select the shared folder where the automatic Home Assistant backup should be stored."
+                        },
+                        "title": "Synology DSM: Backup location"
+                    },
+                    "init": {
+                        "description": "The backup location for {title} is not configured. Do you want to set it up now? Details can be found in the integration documentation under [Backup Location]({docs_url})",
+                        "menu_options": {
+                            "confirm": "Set up the backup location now",
+                            "ignore": "Don't set it up now"
+                        }
+                    }
+                }
+            },
+            "title": "Backup location not configured for {title}"
+        }
+    },
     "options": {
         "step": {
             "init": {
                 "data": {
-                    "scan_interval": "Minutes between scans",
-                    "snap_profile_type": "Quality level of camera snapshots (0:high 1:medium 2:low)",
-                    "timeout": "Timeout (seconds)"
+                    "backup_path": "Path",
+                    "backup_share": "Shared folder",
+                    "snap_profile_type": "Quality level of camera snapshots (0:high 1:medium 2:low)"
+                },
+                "data_description": {
+                    "backup_path": "Define the path on the selected shared folder (will automatically be created, if not exist).",
+                    "backup_share": "Select the shared folder where the automatic Home Assistant backup should be stored."
                 }
             }
         }

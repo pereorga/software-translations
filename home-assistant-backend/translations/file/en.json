@@ -30,14 +30,14 @@
                     "unit_of_measurement": "Unit of measurement for the sensor",
                     "value_template": "A template to render the sensor's value based on the file content"
                 },
-                "description": "Set up a file based sensor",
+                "description": "Set up a file-based sensor",
                 "title": "File sensor"
             },
             "user": {
                 "description": "Make a choice",
                 "menu_options": {
                     "notify": "Set up a notification service",
-                    "sensor": "Set up a file based sensor"
+                    "sensor": "Set up a file-based sensor"
                 }
             }
         }
@@ -45,6 +45,21 @@
     "exceptions": {
         "dir_not_allowed": {
             "message": "Access to {filename} is not allowed."
+        },
+        "file_decoding": {
+            "message": "Cannot read file {filename} as {encoding}."
+        },
+        "file_not_found": {
+            "message": "File {filename} not found."
+        },
+        "file_read_error": {
+            "message": "Error reading {filename}."
+        },
+        "no_access_to_path": {
+            "message": "Cannot read {filename}, no access to path; `allowlist_external_dirs` may need to be adjusted in `configuration.yaml`"
+        },
+        "unsupported_file_encoding": {
+            "message": "Cannot read {filename}, unsupported file encoding {encoding}."
         },
         "write_access_failed": {
             "message": "Write access to {filename} failed: {exc}."
@@ -64,6 +79,22 @@
                     "value_template": "A template to render the sensor's value based on the file content"
                 }
             }
+        }
+    },
+    "services": {
+        "read_file": {
+            "description": "Reads a file and returns the contents.",
+            "fields": {
+                "file_encoding": {
+                    "description": "Encoding of the file (JSON, YAML.)",
+                    "name": "File encoding"
+                },
+                "file_name": {
+                    "description": "Name of the file to read.",
+                    "name": "File name"
+                }
+            },
+            "name": "Read file"
         }
     }
 }

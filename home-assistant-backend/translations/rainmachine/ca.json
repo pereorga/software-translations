@@ -10,7 +10,6 @@
         "step": {
             "user": {
                 "data": {
-                    "ip_address": "Nom de l'amfitri\u00f3 o adre\u00e7a IP",
                     "password": "Contrasenya",
                     "port": "Port"
                 },
@@ -126,7 +125,6 @@
                     "name": "Controlador"
                 },
                 "dewpoint": {
-                    "description": "Punt de rosada (\u00b0C).",
                     "name": "Punt de rosada"
                 },
                 "et": {
@@ -134,27 +132,12 @@
                     "name": "Evapotranspiraci\u00f3"
                 },
                 "maxrh": {
-                    "description": "Humitat relativa m\u00e0xima (%HR).",
                     "name": "Humitat relativa m\u00e0xima"
                 },
-                "maxtemp": {
-                    "description": "Temperatura m\u00e0xima (\u00b0C).",
-                    "name": "Temp. m\u00e0x."
-                },
                 "minrh": {
-                    "description": "Humitat relativa m\u00ednima (%HR).",
                     "name": "Humitat relativa m\u00ednima"
                 },
-                "mintemp": {
-                    "description": "Temperatura m\u00ednima (\u00b0C).",
-                    "name": "Temp. m\u00edn."
-                },
-                "pressure": {
-                    "description": "Pressi\u00f3 baram\u00e8trica (kPa).",
-                    "name": "Pressi\u00f3 baram\u00e8trica"
-                },
                 "solarrad": {
-                    "description": "Radiaci\u00f3 solar (MJ/m\u00b2/h).",
                     "name": "Radiaci\u00f3 solar"
                 },
                 "temperature": {
@@ -162,11 +145,9 @@
                     "name": "Temperatura"
                 },
                 "timestamp": {
-                    "description": "Marca de temps en format UNIX de les dades meteorol\u00f2giques. Si s'omet, s'utilitza l'hora local del dispositiu RainMachine en el moment de la crida.",
                     "name": "Marca de temps"
                 },
                 "wind": {
-                    "description": "Velocitat del vent (m/s).",
                     "name": "Velocitat del vent"
                 }
             }
@@ -215,7 +196,6 @@
             "name": "Atura zona"
         },
         "unpause_watering": {
-            "description": "Repr\u00e8n totes les activitats de reg aturades.",
             "fields": {
                 "device_id": {
                     "description": "Controlador al qual reprendre les activitats de reg.",
@@ -225,7 +205,6 @@
             "name": "Repr\u00e8n tot el reg"
         },
         "unrestrict_watering": {
-            "description": "Deixa de restringir totes les activitats de reg",
             "fields": {
                 "device_id": {
                     "description": "Controlador al qual deixar de restringir les activitats de reg.",

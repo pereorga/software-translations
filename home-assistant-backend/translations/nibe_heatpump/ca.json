@@ -12,20 +12,13 @@
         "step": {
             "modbus": {
                 "data": {
-                    "modbus_unit": "Identificador d'unitat Modbus",
-                    "modbus_url": "URL de Modbus",
-                    "model": "Model de bomba de calor"
-                },
-                "data_description": {
-                    "modbus_unit": "Identificaci\u00f3 de la teva bomba de calor. Normalment es pot deixar a 0.",
-                    "modbus_url": "URL de Modbus que descriu la connexi\u00f3 a la teva bomba de calor o unitat MODBUS40. Ha d'estar en el format:\n - `tcp://[HOST]:[PORT]` per a una connexi\u00f3 Modbus TCP\n - `serial://[DISPOSITIU LOCAL]` per a una connexi\u00f3 Modbus RTU local\n - `rfc2217://[HOST]:[PORT]` per a una connexi\u00f3 remota Modbus RTU basada en telnet."
+                    "modbus_url": "URL de Modbus"
                 }
             },
             "nibegw": {
                 "data": {
                     "ip_address": "Adre\u00e7a remota",
                     "listening_port": "Port local d'escolta",
-                    "model": "Model de bomba de calor",
                     "remote_read_port": "Port remot de lectura",
                     "remote_write_port": "Port remot d'escriptura"
                 },

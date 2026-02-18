@@ -4,7 +4,9 @@
             "already_configured": "Device is already configured"
         },
         "error": {
-            "cannot_connect": "Failed to connect",
+            "cannot_connect": "Failed to connect to the Control4 director at {host}",
+            "controller_not_found": "No Control4 controller found on this account",
+            "director_auth_failed": "The Control4 director rejected the authentication token",
             "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },

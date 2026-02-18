@@ -6,9 +6,18 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "no_devices_found": "No s'han trobat dispositius a la xarxa"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "no_devices_found": "No s'han trobat dispositius a la xarxa",
+            "unknown": "Error inesperat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
         },
         "step": {
+            "bluetooth_confirm": {
+                "description": "Vols configurar {name}?\n\n*Assegura't que el teu dispositiu estigui enc\u00e8s i a l'abast del Bluetooth abans de continuar*"
+            },
             "user": {
                 "data": {
                     "address": "Dispositiu"
@@ -39,6 +48,7 @@
                 "name": "Velocitat d'animaci\u00f3",
                 "state": {
                     "fast": "R\u00e0pid",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF",
                     "slow": "Lent"
                 }
@@ -64,11 +74,7 @@
                 "state": {
                     "loop": "Bucle",
                     "off": "OFF",
-                    "seconds_1": "1 segon",
-                    "seconds_2": "2 segons",
-                    "seconds_3": "3 segons",
-                    "seconds_4": "4 segons",
-                    "seconds_5": "5 segons"
+                    "seconds_1": "1 segon"
                 }
             },
             "min_dc_voltage_cells": {
@@ -78,6 +84,17 @@
                     "battery_4s": "4S (4 cel\u00b7les)",
                     "battery_5s": "5S (5 cel\u00b7les)",
                     "battery_6s": "6S (6 cel\u00b7les)"
+                }
+            },
+            "orientation_mode": {
+                "state": {
+                    "auto": "Auto"
+                }
+            },
+            "usb_pd_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
                 }
             }
         },
@@ -132,14 +149,17 @@
             "voltage": {
                 "name": "Tensi\u00f3 d'entrada CC"
             }
-        }
-    },
-    "exceptions": {
-        "setup_device_connection_error_exception": {
-            "message": "S'ha produ\u00eft un error en la connexi\u00f3 amb el dispositiu {name}, torna-ho a provar m\u00e9s tard"
         },
-        "setup_device_unavailable_exception": {
-            "message": "El dispositiu {name} no \u00e9s accessible"
+        "switch": {
+            "animation_loop": {
+                "name": "Bucle d'animaci\u00f3"
+            },
+            "display_invert": {
+                "name": "Inverteix la pantalla"
+            },
+            "invert_buttons": {
+                "name": "Canvia els botons +/-"
+            }
         }
     }
 }

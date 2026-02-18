@@ -10,7 +10,7 @@
         "step": {
             "user": {
                 "data": {
-                    "ip_address": "Hostname or IP Address",
+                    "ip_address": "Hostname or IP address",
                     "password": "Password",
                     "port": "Port"
                 },
@@ -110,7 +110,7 @@
             "name": "Pause all watering"
         },
         "push_flow_meter_data": {
-            "description": "Push flow meter data to the RainMachine device.",
+            "description": "Sends flow meter data from Home Assistant to the RainMachine device.",
             "fields": {
                 "device_id": {
                     "description": "The controller to send flow meter data to.",
@@ -128,7 +128,7 @@
             "name": "Push flow meter data"
         },
         "push_weather_data": {
-            "description": "Push weather data from Home Assistant to the RainMachine device.\nLocal Weather Push service should be enabled from Settings > Weather > Developer tab for RainMachine to consider the values being sent. Units must be sent in metric; no conversions are performed by the integraion.\nSee details of RainMachine API Here: https://rainmachine.docs.apiary.io/#reference/weather-services/parserdata/post.",
+            "description": "Sends weather data from Home Assistant to the RainMachine device.\nLocal Weather Push service should be enabled from Settings > Weather > Developer tab for RainMachine to consider the values being sent. Units must be sent in metric; no conversions are performed by the integration.\nSee details of RainMachine API here: {api_url}",
             "fields": {
                 "condition": {
                     "description": "Current weather condition code (WNUM).",
@@ -139,7 +139,7 @@
                     "name": "Controller"
                 },
                 "dewpoint": {
-                    "description": "Dew point (\u00b0C).",
+                    "description": "Current dew point (\u00b0C).",
                     "name": "Dew point"
                 },
                 "et": {
@@ -147,24 +147,24 @@
                     "name": "Evapotranspiration"
                 },
                 "maxrh": {
-                    "description": "Max relative humidity (%RH).",
+                    "description": "Maximum relative humidity in current period (%RH).",
                     "name": "Max relative humidity"
                 },
                 "maxtemp": {
-                    "description": "Maximum temperature (\u00b0C).",
-                    "name": "Max temp"
+                    "description": "Maximum temperature in current period (\u00b0C).",
+                    "name": "Max temperature"
                 },
                 "minrh": {
-                    "description": "Min relative humidity (%RH).",
+                    "description": "Minimum relative humidity in current period (%RH).",
                     "name": "Min relative humidity"
                 },
                 "mintemp": {
-                    "description": "Minimum temperature (\u00b0C).",
-                    "name": "Min temp"
+                    "description": "Minimum temperature in current period (\u00b0C).",
+                    "name": "Min temperature"
                 },
                 "pressure": {
-                    "description": "Barametric pressure (kPa).",
-                    "name": "Barametric pressure"
+                    "description": "Current barometric pressure (kPa).",
+                    "name": "Barometric pressure"
                 },
                 "qpf": {
                     "description": "Quantitative Precipitation Forecast (mm), or QPF. Note: QPF values shouldn't be send as cumulative values but the measured/forecasted values for each hour or day. The RainMachine Mixer will sum all QPF values in the current day to have the day total QPF.",
@@ -175,7 +175,7 @@
                     "name": "Measured rainfall"
                 },
                 "solarrad": {
-                    "description": "Solar radiation (MJ/m\u00b2/h).",
+                    "description": "Current solar radiation (MJ/m\u00b2/h).",
                     "name": "Solar radiation"
                 },
                 "temperature": {
@@ -183,11 +183,11 @@
                     "name": "Temperature"
                 },
                 "timestamp": {
-                    "description": "UNIX Timestamp for the weather data. If omitted, the RainMachine device's local time at the time of the call is used.",
+                    "description": "UNIX timestamp for the weather data. If omitted, the RainMachine device's local time at the time of the call is used.",
                     "name": "Timestamp"
                 },
                 "wind": {
-                    "description": "Wind speed (m/s).",
+                    "description": "Current wind speed (m/s).",
                     "name": "Wind speed"
                 }
             },
@@ -240,7 +240,7 @@
             "name": "Stop zone"
         },
         "unpause_watering": {
-            "description": "Unpauses all paused watering activities.",
+            "description": "Resumes all paused watering activities.",
             "fields": {
                 "device_id": {
                     "description": "The controller whose watering activities should be unpaused.",
@@ -250,7 +250,7 @@
             "name": "Unpause all watering"
         },
         "unrestrict_watering": {
-            "description": "Unrestrict all watering activities.",
+            "description": "Removes all watering restrictions.",
             "fields": {
                 "device_id": {
                     "description": "The controller whose watering activities should be unrestricted.",

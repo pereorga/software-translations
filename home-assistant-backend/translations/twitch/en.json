@@ -4,11 +4,15 @@
             "already_configured": "Account is already configured",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
+            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
             "oauth_timeout": "Timeout resolving OAuth token.",
             "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
             "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error",
             "wrong_account": "Wrong account: Please authenticate with {username}."
+        },
+        "initiate_flow": {
+            "user": "Add account"
         },
         "step": {
             "reauth_confirm": {
@@ -57,6 +61,11 @@
                     }
                 }
             }
+        }
+    },
+    "exceptions": {
+        "oauth2_implementation_unavailable": {
+            "message": "OAuth2 implementation unavailable, will retry"
         }
     }
 }

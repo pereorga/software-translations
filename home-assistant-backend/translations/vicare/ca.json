@@ -8,7 +8,6 @@
         "error": {
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
         },
-        "flow_title": "{name} ({host})",
         "step": {
             "reauth_confirm": {
                 "data": {
@@ -23,8 +22,7 @@
                     "heating_type": "Tipus d'escalfador",
                     "password": "Contrasenya",
                     "username": "Correu electr\u00f2nic"
-                },
-                "description": "Configura la integraci\u00f3 ViCare. Per generar la clau API, v\u00e9s a https://app.developer.viessmann.com"
+                }
             }
         }
     },
@@ -40,22 +38,39 @@
                 "state_attributes": {
                     "preset_mode": {
                         "state": {
-                            "permanent": "permanent",
-                            "sensor_driven": "sensor",
-                            "ventilation": "programaci\u00f3"
+                            "standby": "En espera"
                         }
                     }
                 }
             }
         },
         "number": {
+            "comfort_heating_temperature": {
+                "name": "Temperatura d'escalfament confort"
+            },
             "dhw_temperature": {
                 "name": "Temperatura del DHW"
+            },
+            "normal_heating_temperature": {
+                "name": "Temperatura d'escalfament normal"
+            },
+            "reduced_heating_temperature": {
+                "name": "Temperatura d'escalfament redu\u00efda"
             }
         },
         "sensor": {
             "boiler_temperature": {
                 "name": "Temperatura de la caldera"
+            },
+            "compressor_phase": {
+                "state": {
+                    "cooling": "Refredant",
+                    "defrost": "Descongelant",
+                    "heating": "Escalfant",
+                    "off": "OFF",
+                    "pause": "Inactiu",
+                    "ready": "Inactiu"
+                }
             },
             "ess_discharge_this_month": {
                 "name": "Descarregat de bateria aquest mes"
@@ -88,21 +103,6 @@
             },
             "pcc_transfer_power_exchange": {
                 "name": "Intercanvi d'energia ambla  xarxa"
-            },
-            "photovoltaic_energy_production_this_month": {
-                "name": "Producci\u00f3 d'energia solar, aquest mes"
-            },
-            "photovoltaic_energy_production_this_week": {
-                "name": "Producci\u00f3 d'energia solar, aquesta setmana"
-            },
-            "photovoltaic_energy_production_this_year": {
-                "name": "Producci\u00f3 d'energia solar, aquest any"
-            },
-            "photovoltaic_energy_production_total": {
-                "name": "Producci\u00f3 d'energia solar total"
-            },
-            "photovoltaic_power_production_current": {
-                "name": "Pot\u00e8ncia solar"
             },
             "photovoltaic_status": {
                 "state": {
@@ -137,8 +137,32 @@
             "solar_power_production_today": {
                 "name": "Producci\u00f3 d'energia solar, avui"
             },
+            "ventilation_level": {
+                "name": "Nivell de ventilaci\u00f3",
+                "state": {
+                    "levelfour": "4",
+                    "levelone": "1",
+                    "levelthree": "3",
+                    "leveltwo": "2",
+                    "standby": "En espera"
+                }
+            },
+            "ventilation_reason": {
+                "name": "Motiu de ventilaci\u00f3",
+                "state": {
+                    "forcedlevelfour": "Incrementat",
+                    "permanent": "Permanent",
+                    "schedule": "Programaci\u00f3",
+                    "sensordriven": "Senyal de sensor",
+                    "silent": "Silenci\u00f3s",
+                    "standby": "En espera"
+                }
+            },
             "volumetric_flow": {
                 "name": "Cabal volum\u00e8tric"
+            },
+            "zigbee_signal_strength": {
+                "name": "Pot\u00e8ncia del senyal"
             }
         }
     },

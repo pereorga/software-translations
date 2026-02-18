@@ -1,5 +1,12 @@
 {
+    "common": {
+        "trigger_behavior_description": "The behavior of the targeted updates to become available.",
+        "trigger_behavior_name": "Behavior"
+    },
     "device_automation": {
+        "extra_fields": {
+            "for": "Duration"
+        },
         "trigger_type": {
             "changed_states": "{entity_name} update availability changed",
             "turned_off": "{entity_name} became up-to-date",
@@ -52,6 +59,15 @@
             "name": "Firmware"
         }
     },
+    "selector": {
+        "trigger_behavior": {
+            "options": {
+                "any": "Any",
+                "first": "First",
+                "last": "Last"
+            }
+        }
+    },
     "services": {
         "clear_skipped": {
             "description": "Removes the skipped version marker from an update.",
@@ -76,5 +92,17 @@
             "name": "Skip update"
         }
     },
-    "title": "Update"
+    "title": "Update",
+    "triggers": {
+        "update_became_available": {
+            "description": "Triggers after one or more updates become available.",
+            "fields": {
+                "behavior": {
+                    "description": "The behavior of the targeted updates to become available.",
+                    "name": "Behavior"
+                }
+            },
+            "name": "Update became available"
+        }
+    }
 }

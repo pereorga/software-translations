@@ -85,7 +85,6 @@
     },
     "services": {
         "delete": {
-            "description": "Elimina un correu.",
             "fields": {
                 "entry": {
                     "description": "Entrada de configuraci\u00f3 IMAP.",
@@ -109,8 +108,21 @@
                 }
             }
         },
+        "fetch_part": {
+            "fields": {
+                "entry": {
+                    "name": "Entrada"
+                },
+                "part": {
+                    "name": "Part"
+                },
+                "uid": {
+                    "description": "Identificador de correu electr\u00f2nic (UID).",
+                    "name": "UID"
+                }
+            }
+        },
         "move": {
-            "description": "Mou un correu a una carpeta dest\u00ed.",
             "fields": {
                 "entry": {
                     "description": "Entrada de configuraci\u00f3 IMAP.",
@@ -132,7 +144,6 @@
             "name": "Mou missatge"
         },
         "seen": {
-            "description": "Marca un correu com a vist.",
             "fields": {
                 "entry": {
                     "description": "Entrada de configuraci\u00f3 IMAP.",

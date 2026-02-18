@@ -1,0 +1,37 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "no_devices": "No devices found on the network"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password for your Libre Hardware Monitor instance.",
+                    "username": "The username for your Libre Hardware Monitor instance."
+                },
+                "description": "Please provide your Libre Hardware Monitor credentials.",
+                "title": "Authenticate Libre Hardware Monitor"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of the system running Libre Hardware Monitor.",
+                    "port": "The port of your Libre Hardware Monitor web server. By default 8085."
+                }
+            }
+        }
+    }
+}

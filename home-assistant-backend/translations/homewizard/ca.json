@@ -3,7 +3,6 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "device_not_supported": "Aquest dispositiu no \u00e9s compatible",
-            "reauth_successful": "S'ha activat l'API correctament",
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
             "unknown_error": "Error inesperat"
         },
@@ -15,9 +14,6 @@
                 "description": "Vols configurar {product_type} ({serial}) a {ip_address}?",
                 "title": "Confirmaci\u00f3"
             },
-            "reauth_confirm": {
-                "description": "L'API local no est\u00e0 activada. Aneu a l'aplicaci\u00f3 HomeWizard Energy i activeu l'API a la configuraci\u00f3 de dispositiu."
-            },
             "reconfigure": {
                 "data": {
                     "ip_address": "Adre\u00e7a IP"
@@ -27,7 +23,6 @@
                 "data": {
                     "ip_address": "Adre\u00e7a IP"
                 },
-                "description": "Introdueix l'adre\u00e7a IP del dispositiu HomeWizard Energy per poder integrar-lo a Home Assistant.",
                 "title": "Configuraci\u00f3 de dispositiu"
             }
         }
