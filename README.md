@@ -31,6 +31,7 @@ brew install bash csvkit dos2unix gettext translate-toolkit unzip
 * Bitwarden (mobile): https://github.com/bitwarden/mobile
 * BleachBit: https://github.com/bleachbit/bleachbit
 * draw.io: https://about.draw.io/support-for-your-language-in-draw-io/
+* eMule: https://github.com/irwir/eMule
 * FreeTube: https://docs.freetubeapp.io/community/translations/
 * Greenshot: https://github.com/greenshot/greenshot
 * Haiku: https://i18n.haiku-os.org/
