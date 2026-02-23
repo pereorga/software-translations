@@ -36,14 +36,7 @@
         },
         "climate": {
             "primary": {
-                "name": "Climatitzaci\u00f3",
-                "state_attributes": {
-                    "preset_mode": {
-                        "state": {
-                            "off": "Normal"
-                        }
-                    }
-                }
+                "name": "Climatitzaci\u00f3"
             }
         },
         "cover": {
@@ -69,85 +62,88 @@
         "number": {
             "backup_reserve_percent": {
                 "name": "Reserva de suport"
+            },
+            "off_grid_vehicle_charging_reserve_percent": {
+                "name": "Reserva sense xarxa"
             }
         },
         "select": {
             "climate_state_seat_fan_front_left": {
                 "name": "Refrigerador del seient esquerre",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_fan_front_right": {
                 "name": "Refrigerador del seient dret",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_left": {
                 "name": "Escalfador del seient de l'esquerra",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_center": {
                 "name": "Escalfador del seient central de darrere",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_left": {
                 "name": "Escalfador del seient de l'esquerra de darrere",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_right": {
                 "name": "Escalfador del seient de la dreta de darrere",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_right": {
                 "name": "Escalfador del seient de la dreta",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_third_row_left": {
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_third_row_right": {
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
@@ -163,7 +159,8 @@
                 "name": "Mode de funcionament",
                 "state": {
                     "autonomous": "Aut\u00f2nom",
-                    "backup": "Suport"
+                    "backup": "Suport",
+                    "self_consumption": "Autoconsum"
                 }
             }
         },
@@ -172,14 +169,11 @@
                 "name": "Pot\u00e8ncia de bateria"
             },
             "charge_state_charging_state": {
-                "name": "Carregant",
                 "state": {
-                    "charging": "Carregant",
-                    "complete": "Finalitzada",
                     "disconnected": "Desconnectat",
                     "no_power": "Sense electricitat",
                     "starting": "Iniciant",
-                    "stopped": "Parat"
+                    "stopped": "Aturat"
                 }
             },
             "charge_state_est_battery_range": {
@@ -231,7 +225,6 @@
                 "name": "Estat",
                 "state": {
                     "booting": "Arrencant",
-                    "charging": "Carregant",
                     "charging_finished": "C\u00e0rrega finalitzada",
                     "charging_reduced": "C\u00e0rrega redu\u00efda",
                     "connected": "Connectat",

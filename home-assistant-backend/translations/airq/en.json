@@ -20,12 +20,10 @@
         }
     },
     "entity": {
-        "number": {
-            "airq_led_brightness": {
-                "name": "LED brightness"
-            }
-        },
         "sensor": {
+            "absolute_humidity": {
+                "name": "Absolute humidity"
+            },
             "acetaldehyde": {
                 "name": "Acetaldehyde"
             },
@@ -66,7 +64,7 @@
                 "name": "Formaldehyde"
             },
             "health_index": {
-                "name": "Health index"
+                "name": "Health Index"
             },
             "hydrochloric_acid": {
                 "name": "Hydrochloric acid"
@@ -84,25 +82,22 @@
                 "name": "Hydrogen peroxide"
             },
             "hydrogen_phosphide": {
-                "name": "Hydrogen phosphide"
+                "name": "Hydrogen Phosphide"
             },
             "hydrogen_sulfide": {
                 "name": "Hydrogen sulfide"
             },
             "industrial_volatile_organic_compounds": {
-                "name": "VOCs (industrial)"
+                "name": "VOCs (Industrial)"
             },
             "maximum_noise": {
-                "name": "Noise (maximum)"
+                "name": "Noise (Maximum)"
             },
             "methane": {
                 "name": "Methane"
             },
             "methanethiol": {
                 "name": "Methanethiol"
-            },
-            "mold": {
-                "name": "Mold index"
             },
             "noise": {
                 "name": "Noise"
@@ -114,31 +109,25 @@
                 "name": "Oxygen"
             },
             "performance_index": {
-                "name": "Performance index"
+                "name": "Performance Index"
             },
             "propane": {
                 "name": "Propane"
             },
-            "r32": {
-                "name": "Refrigerant R-32"
-            },
-            "r454b": {
-                "name": "Refrigerant R-454B"
-            },
-            "r454c": {
-                "name": "Refrigerant R-454C"
-            },
             "radon": {
                 "name": "Radon"
+            },
+            "refigerant": {
+                "name": "Refrigerant"
             },
             "relative_pressure": {
                 "name": "Relative pressure"
             },
             "silicon_hydride": {
-                "name": "Silicon hydride"
+                "name": "Silicon Hydride"
             },
             "virus_index": {
-                "name": "Virus index"
+                "name": "Virus Index"
             }
         }
     },
@@ -150,7 +139,7 @@
                     "return_average": "Show values averaged by the device"
                 },
                 "data_description": {
-                    "clip_negatives": "For baseline calibration purposes, certain sensor values may briefly become negative. The default behavior is to clip such values to 0",
+                    "clip_negatives": "For baseline calibration purposes, certain sensor values may briefly become negative. The default behaviour is to clip such values to 0",
                     "return_average": "air-Q allows to poll both the noisy sensor readings as well as the values averaged on the device (default)"
                 },
                 "title": "Configure air-Q integration"

@@ -57,12 +57,13 @@
         }
     },
     "services": {
-        "set_dehumidify_setpoint": {
+        "set_humidify_setpoint": {
             "fields": {
                 "humidity": {
-                    "name": "Humitat"
+                    "description": "Consigna d'humidificaci\u00f3."
                 }
-            }
+            },
+            "name": "Configura la consigna d'humidificaci\u00f3"
         },
         "set_hvac_run_mode": {
             "fields": {

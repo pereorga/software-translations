@@ -2,10 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "already_in_progress": "Configuration flow is already in progress",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful",
-            "unique_id_mismatch": "You selected a different SMA device than the one this config entry was configured with, this is not allowed."
+            "already_in_progress": "Configuration flow is already in progress"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -14,33 +11,6 @@
             "unknown": "Unexpected error"
         },
         "step": {
-            "discovery_confirm": {
-                "data": {
-                    "group": "Group",
-                    "password": "Password",
-                    "ssl": "Uses an SSL certificate",
-                    "verify_ssl": "Verify SSL certificate"
-                },
-                "description": "Do you want to set up the discovered SMA device ({host})?",
-                "title": "Set up SMA Solar"
-            },
-            "reauth_confirm": {
-                "data": {
-                    "password": "Password"
-                },
-                "description": "The SMA integration needs to re-authenticate your connection details",
-                "title": "Authentication expired for {name}"
-            },
-            "reconfigure": {
-                "data": {
-                    "group": "Group",
-                    "host": "Host",
-                    "ssl": "Uses an SSL certificate",
-                    "verify_ssl": "Verify SSL certificate"
-                },
-                "description": "Use the following form to reconfigure your SMA device.",
-                "title": "Reconfigure SMA Solar Integration"
-            },
             "user": {
                 "data": {
                     "group": "Group",
@@ -54,14 +24,6 @@
                 },
                 "description": "Enter your SMA device information.",
                 "title": "Set up SMA Solar"
-            }
-        }
-    },
-    "selector": {
-        "group": {
-            "options": {
-                "installer": "Installer",
-                "user": "User"
             }
         }
     }

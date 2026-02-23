@@ -22,9 +22,6 @@
         "binary_sensor": {
             "tracker_battery_charging": {
                 "name": "Tracker battery charging"
-            },
-            "tracker_power_saving": {
-                "name": "Tracker power saving"
             }
         },
         "device_tracker": {
@@ -33,8 +30,19 @@
             }
         },
         "sensor": {
+            "activity": {
+                "name": "Activity",
+                "state": {
+                    "good": "Good",
+                    "low": "Low",
+                    "ok": "OK"
+                }
+            },
             "activity_time": {
                 "name": "Activity time"
+            },
+            "calories": {
+                "name": "Calories burned"
             },
             "daily_goal": {
                 "name": "Daily goal"
@@ -47,6 +55,14 @@
             },
             "rest_time": {
                 "name": "Rest time"
+            },
+            "sleep": {
+                "name": "Sleep",
+                "state": {
+                    "good": "Good",
+                    "low": "Low",
+                    "ok": "OK"
+                }
             },
             "tracker_battery_level": {
                 "name": "Tracker battery"

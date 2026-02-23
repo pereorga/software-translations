@@ -1,16 +1,19 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El servei ja est\u00e0 configurat",
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
+        "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_access_token": "Token d'acc\u00e9s inv\u00e0lid",
-            "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
-            "missing_credentials": "La integraci\u00f3 necessita credencials d'aplicaci\u00f3.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "invalid_access_token": "[%key::common::config_flow::error::invalid_access_token%]",
+            "timeout": "S'ha esgotat el temps m\u00e0xim d'espera per establir connexi\u00f3"
         },
         "step": {
-            "reauth_confirm": {
-                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            "user": {
+                "data": {
+                    "access_token": "Token d'acc\u00e9s"
+                },
+                "description": "Introdueix el token d'acc\u00e9s de {url}"
             }
         }
     },
@@ -85,11 +88,6 @@
             "voltage_phase2": {
                 "name": "Tensi\u00f3 fase 2"
             }
-        }
-    },
-    "exceptions": {
-        "oauth2_implementation_unavailable": {
-            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
         }
     },
     "services": {

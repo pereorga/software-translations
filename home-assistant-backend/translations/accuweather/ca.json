@@ -1,31 +1,17 @@
 {
     "config": {
-        "abort": {
-            "already_configured": "La ubicaci\u00f3 ja est\u00e0 configurada",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
-        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_api_key": "Clau API inv\u00e0lida"
+            "invalid_api_key": "Clau API inv\u00e0lida",
+            "requests_exceeded": "S'ha superat el nombre m\u00e0xim de sol\u00b7licituds permeses a l'API d'AccuWeather. Has d'esperar-te o canviar la clau API."
         },
         "step": {
-            "reauth_confirm": {
-                "data": {
-                    "api_key": "Clau API"
-                },
-                "data_description": {
-                    "api_key": "Clau API generada en el portal d'APIs d'AccuWeather."
-                }
-            },
             "user": {
                 "data": {
                     "api_key": "Clau API",
                     "latitude": "Latitud",
                     "longitude": "Longitud",
                     "name": "Nom"
-                },
-                "data_description": {
-                    "api_key": "Clau API generada en el portal d'APIs d'AccuWeather."
                 }
             }
         }
@@ -33,24 +19,13 @@
     "entity": {
         "sensor": {
             "air_quality": {
-                "name": "Qualitat de l'aire dia {forecast_day}",
                 "state": {
                     "good": "Bo",
                     "hazardous": "Perillosa",
+                    "high": "Alt",
+                    "low": "Baix",
                     "moderate": "Moderada",
-                    "unhealthy": "No saludable",
-                    "very_unhealthy": "Gens saludable"
-                },
-                "state_attributes": {
-                    "options": {
-                        "state": {
-                            "good": "Bo",
-                            "hazardous": "Perillosa",
-                            "moderate": "Moderada",
-                            "unhealthy": "No saludable",
-                            "very_unhealthy": "Gens saludable"
-                        }
-                    }
+                    "unhealthy": "No saludable"
                 }
             },
             "apparent_temperature": {
@@ -83,11 +58,12 @@
                     "level": {
                         "name": "Nivell",
                         "state": {
-                            "extreme": "Extrem",
-                            "high": "Alt/a",
-                            "low": "Baix/a",
-                            "moderate": "Moderat",
-                            "very_high": "Molt alt"
+                            "good": "Bo",
+                            "hazardous": "Perillosa",
+                            "high": "Alt",
+                            "low": "Baix",
+                            "moderate": "Moderada",
+                            "unhealthy": "No saludable"
                         }
                     }
                 }
@@ -101,11 +77,12 @@
                     "level": {
                         "name": "Nivell",
                         "state": {
-                            "extreme": "Extrem",
-                            "high": "Alt/a",
-                            "low": "Baix/a",
-                            "moderate": "Moderat",
-                            "very_high": "Molt alt"
+                            "good": "Bo",
+                            "hazardous": "Perillosa",
+                            "high": "Alt",
+                            "low": "Baix",
+                            "moderate": "Moderada",
+                            "unhealthy": "No saludable"
                         }
                     }
                 }
@@ -119,15 +96,6 @@
                     "falling": "Disminuint",
                     "rising": "Augmentant",
                     "steady": "Estable"
-                },
-                "state_attributes": {
-                    "options": {
-                        "state": {
-                            "falling": "Disminuint",
-                            "rising": "Augmentant",
-                            "steady": "Estable"
-                        }
-                    }
                 }
             },
             "ragweed_pollen": {
@@ -136,11 +104,12 @@
                     "level": {
                         "name": "Nivell",
                         "state": {
-                            "extreme": "Extrem",
-                            "high": "Alt/a",
-                            "low": "Baix/a",
-                            "moderate": "Moderat",
-                            "very_high": "Molt alt"
+                            "good": "Bo",
+                            "hazardous": "Perillosa",
+                            "high": "Alt",
+                            "low": "Baix",
+                            "moderate": "Moderada",
+                            "unhealthy": "No saludable"
                         }
                     }
                 }
@@ -181,11 +150,12 @@
                     "level": {
                         "name": "Nivell",
                         "state": {
-                            "extreme": "Extrem",
-                            "high": "Alt/a",
-                            "low": "Baix/a",
-                            "moderate": "Moderat",
-                            "very_high": "Molt alt"
+                            "good": "Bo",
+                            "hazardous": "Perillosa",
+                            "high": "Alt",
+                            "low": "Baix",
+                            "moderate": "Moderada",
+                            "unhealthy": "No saludable"
                         }
                     }
                 }
@@ -196,11 +166,12 @@
                     "level": {
                         "name": "Nivell",
                         "state": {
-                            "extreme": "Extrem",
-                            "high": "Alt/a",
-                            "low": "Baix/a",
-                            "moderate": "Moderat",
-                            "very_high": "Molt alt"
+                            "good": "Bo",
+                            "hazardous": "Perillosa",
+                            "high": "Alt",
+                            "low": "Baix",
+                            "moderate": "Moderada",
+                            "unhealthy": "No saludable"
                         }
                     }
                 }
@@ -211,11 +182,12 @@
                     "level": {
                         "name": "Nivell",
                         "state": {
-                            "extreme": "Extrem",
-                            "high": "Alt/a",
-                            "low": "Baix/a",
-                            "moderate": "Moderat",
-                            "very_high": "Molt alt"
+                            "good": "Bo",
+                            "hazardous": "Perillosa",
+                            "high": "Alt",
+                            "low": "Baix",
+                            "moderate": "Moderada",
+                            "unhealthy": "No saludable"
                         }
                     }
                 }
@@ -244,17 +216,6 @@
             "wind_speed_night": {
                 "name": "Velocitat del vent, nit {forecast_day}"
             }
-        }
-    },
-    "exceptions": {
-        "auth_error": {
-            "message": "L'autenticaci\u00f3 ha fallat per a {entry}, per favor actualitza la clau d'API"
-        },
-        "current_conditions_update_error": {
-            "message": "Ha hagut un error a l'obtenir les dades de l'oratge actual de l'API d'AccuWeather: {error}"
-        },
-        "forecast_update_error": {
-            "message": "Ha hagut un error a l'obtenir les dades de la previsi\u00f3 d'oratge de l'API d'AccuWeather: {error}"
         }
     },
     "system_health": {

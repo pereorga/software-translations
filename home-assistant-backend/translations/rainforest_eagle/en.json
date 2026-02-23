@@ -13,7 +13,7 @@
                 "data": {
                     "cloud_id": "Cloud ID",
                     "host": "Host",
-                    "install_code": "Installation code"
+                    "install_code": "Installation Code"
                 },
                 "data_description": {
                     "host": "The hostname or IP address of your Rainforest gateway."
@@ -23,17 +23,17 @@
     },
     "entity": {
         "sensor": {
-            "energy_price": {
-                "name": "Energy price"
+            "meter_price": {
+                "name": "Meter price"
             },
             "power_demand": {
-                "name": "Power demand"
+                "name": "Meter power demand"
             },
             "total_energy_delivered": {
-                "name": "Total energy delivered"
+                "name": "Total meter energy delivered"
             },
             "total_energy_received": {
-                "name": "Total energy received"
+                "name": "Total meter energy received"
             }
         }
     }

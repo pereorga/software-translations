@@ -18,8 +18,8 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "password": "The password to log in to your FYTA account.",
-                    "username": "The email address to log in to your FYTA account."
+                    "password": "The password to login to your FYTA account.",
+                    "username": "The email address to login to your FYTA account."
                 },
                 "description": "Update your credentials for FYTA API"
             },
@@ -29,8 +29,8 @@
                     "username": "Email"
                 },
                 "data_description": {
-                    "password": "The password to log in to your FYTA account.",
-                    "username": "The email address to log in to your FYTA account."
+                    "password": "The password to login to your FYTA account.",
+                    "username": "The email address to login to your FYTA account."
                 },
                 "description": "Provide email and password to connect to the FYTA server",
                 "title": "Credentials for FYTA API"
@@ -38,57 +38,9 @@
         }
     },
     "entity": {
-        "binary_sensor": {
-            "notification_light": {
-                "name": "Light notification"
-            },
-            "notification_nutrition": {
-                "name": "Nutrition notification"
-            },
-            "notification_temperature": {
-                "name": "Temperature notification"
-            },
-            "notification_water": {
-                "name": "Water notification"
-            },
-            "productive_plant": {
-                "name": "Productive plant"
-            },
-            "repotted": {
-                "name": "Repotted"
-            },
-            "sensor_update_available": {
-                "name": "Sensor update available"
-            }
-        },
-        "image": {
-            "plant_image": {
-                "name": "Plant image"
-            },
-            "plant_image_user": {
-                "name": "User image"
-            }
-        },
         "sensor": {
-            "last_fertilised": {
-                "name": "Last fertilized"
-            },
             "light": {
-                "name": "Light",
-                "state_attributes": {
-                    "max_acceptable": {
-                        "name": "Maximum acceptable"
-                    },
-                    "max_good": {
-                        "name": "Maximum good"
-                    },
-                    "min_acceptable": {
-                        "name": "Minimum acceptable"
-                    },
-                    "min_good": {
-                        "name": "Minimum good"
-                    }
-                }
+                "name": "Light"
             },
             "light_status": {
                 "name": "Light state",
@@ -101,39 +53,8 @@
                     "too_low": "Too low"
                 }
             },
-            "moisture": {
-                "name": "Moisture",
-                "state_attributes": {
-                    "max_acceptable": {
-                        "name": "Maximum acceptable"
-                    },
-                    "max_good": {
-                        "name": "Maximum good"
-                    },
-                    "min_acceptable": {
-                        "name": "Minimum acceptable"
-                    },
-                    "min_good": {
-                        "name": "Minimum good"
-                    }
-                }
-            },
             "moisture_status": {
                 "name": "Moisture state",
-                "state": {
-                    "high": "High",
-                    "low": "Low",
-                    "no_data": "No data",
-                    "perfect": "Perfect",
-                    "too_high": "Too high",
-                    "too_low": "Too low"
-                }
-            },
-            "next_fertilisation": {
-                "name": "Next fertilization"
-            },
-            "nutrients_status": {
-                "name": "Nutrients state",
                 "state": {
                     "high": "High",
                     "low": "Low",
@@ -153,21 +74,7 @@
                 }
             },
             "salinity": {
-                "name": "Salinity",
-                "state_attributes": {
-                    "max_acceptable": {
-                        "name": "Maximum acceptable"
-                    },
-                    "max_good": {
-                        "name": "Maximum good"
-                    },
-                    "min_acceptable": {
-                        "name": "Minimum acceptable"
-                    },
-                    "min_good": {
-                        "name": "Minimum good"
-                    }
-                }
+                "name": "Salinity"
             },
             "salinity_status": {
                 "name": "Salinity state",
@@ -182,23 +89,6 @@
             },
             "scientific_name": {
                 "name": "Scientific name"
-            },
-            "temperature": {
-                "name": "Temperature",
-                "state_attributes": {
-                    "max_acceptable": {
-                        "name": "Maximum acceptable"
-                    },
-                    "max_good": {
-                        "name": "Maximum good"
-                    },
-                    "min_acceptable": {
-                        "name": "Minimum acceptable"
-                    },
-                    "min_good": {
-                        "name": "Minimum good"
-                    }
-                }
             },
             "temperature_status": {
                 "name": "Temperature state",

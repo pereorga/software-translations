@@ -1,9 +1,8 @@
 {
     "common": {
-        "climate_preset_dont_change": "Don't change",
         "climate_preset_heater": "Heater",
         "climate_preset_solar": "Solar",
-        "climate_preset_solar_preferred": "Solar preferred",
+        "climate_preset_solar_prefered": "Solar Prefered",
         "service_config_entry_description": "The config entry to use for this action.",
         "service_config_entry_name": "Config entry"
     },
@@ -21,7 +20,7 @@
                     "ip_address": "IP address",
                     "port": "Port"
                 },
-                "description": "Enter your ScreenLogic gateway information.",
+                "description": "Enter your ScreenLogic Gateway information.",
                 "title": "ScreenLogic"
             },
             "gateway_select": {
@@ -83,30 +82,10 @@
         },
         "climate": {
             "body_0": {
-                "name": "Pool heat",
-                "state_attributes": {
-                    "preset_mode": {
-                        "state": {
-                            "dont_change": "Don't change",
-                            "heater": "Heater",
-                            "solar": "Solar",
-                            "solar_preferred": "Solar preferred"
-                        }
-                    }
-                }
+                "name": "Pool heat"
             },
             "body_1": {
-                "name": "Spa heat",
-                "state_attributes": {
-                    "preset_mode": {
-                        "state": {
-                            "dont_change": "Don't change",
-                            "heater": "Heater",
-                            "solar": "Solar",
-                            "solar_preferred": "Solar preferred"
-                        }
-                    }
-                }
+                "name": "Spa heat"
             }
         },
         "number": {
@@ -137,12 +116,7 @@
                 "name": "Calcium hardness"
             },
             "chem_dose_state": {
-                "name": "{chem} dosing state",
-                "state": {
-                    "dosing": "Dosing",
-                    "mixing": "Mixing",
-                    "monitoring": "Monitoring"
-                }
+                "name": "{chem} dosing state"
             },
             "chem_last_dose_time": {
                 "name": "{chem} last dose time"
@@ -158,14 +132,6 @@
             },
             "chem_supply_level": {
                 "name": "{chem} supply level"
-            },
-            "controller_state": {
-                "name": "Controller state",
-                "state": {
-                    "ready": "Ready",
-                    "service": "Service",
-                    "sync": "Sync"
-                }
             },
             "cya": {
                 "name": "Cyanuric acid"
@@ -207,14 +173,14 @@
             "fields": {
                 "color_mode": {
                     "description": "The ScreenLogic color mode to set.",
-                    "name": "Color mode"
+                    "name": "Color Mode"
                 },
                 "config_entry": {
                     "description": "The config entry to use for this action.",
                     "name": "Config entry"
                 }
             },
-            "name": "Set color mode"
+            "name": "Set Color Mode"
         },
         "start_super_chlorination": {
             "description": "Begins super chlorination, running for the specified period or 24 hours if none is specified.",
@@ -225,10 +191,10 @@
                 },
                 "runtime": {
                     "description": "Number of hours for super chlorination to run.",
-                    "name": "Run time"
+                    "name": "Run Time"
                 }
             },
-            "name": "Start super chlorination"
+            "name": "Start Super Chlorination"
         },
         "stop_super_chlorination": {
             "description": "Stops super chlorination.",
@@ -238,7 +204,7 @@
                     "name": "Config entry"
                 }
             },
-            "name": "Stop super chlorination"
+            "name": "Stop Super Chlorination"
         }
     }
 }

@@ -17,8 +17,10 @@
         "step": {
             "api_method": {
                 "data": {
+                    "token": "Enganxa el token d'autenticaci\u00f3 aqu\u00ed",
                     "use_webhook": "Utilitza webhook"
                 },
+                "description": "Per poder consultar l'API, cal un `auth_token` que es pot obtenir seguint aquestes [instruccions](https://plaato.zendesk.com/hc/en-us/articles/360003234717-Auth-token)\n\n Dispositiu seleccionat: **{device_type}** \n\n Si prefereixes utilitzar el m\u00e8tode webhook integrat (nom\u00e9s per Airlock), marca la casella seg\u00fcent i deixa el token d'autenticaci\u00f3 en blanc",
                 "title": "Selecciona el m\u00e8tode API"
             },
             "user": {

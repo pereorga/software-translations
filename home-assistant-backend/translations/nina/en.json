@@ -1,11 +1,9 @@
 {
     "config": {
-        "abort": {
-            "no_fetch": "Cannot connect to NINA service to fetch city or counties. Please try again later.",
-            "unknown": "Unexpected error"
-        },
         "error": {
-            "no_selection": "Please select at least one city/county"
+            "cannot_connect": "Failed to connect",
+            "no_selection": "Please select at least one city/county",
+            "unknown": "Unexpected error"
         },
         "step": {
             "user": {
@@ -16,42 +14,18 @@
                     "_m_to_q": "City/county (M-Q)",
                     "_r_to_u": "City/county (R-U)",
                     "_v_to_z": "City/county (V-Z)",
-                    "slots": "Maximum warnings"
-                },
-                "data_description": {
-                    "_a_to_d": "City/county (A-D) to receive warnings for",
-                    "_e_to_h": "City/county (E-H) to receive warnings for",
-                    "_i_to_l": "City/county (I-L) to receive warnings for",
-                    "_m_to_q": "City/county (M-Q) to receive warnings for",
-                    "_r_to_u": "City/county (R-U) to receive warnings for",
-                    "_v_to_z": "City/county (V-Z) to receive warnings for",
+                    "headline_filter": "Blacklist regex to filter warning headlines",
                     "slots": "Maximum warnings per city/county"
-                },
-                "sections": {
-                    "filters": {
-                        "data": {
-                            "area_filter": "Affected area filter",
-                            "headline_filter": "Headline blocklist"
-                        },
-                        "data_description": {
-                            "area_filter": "Whitelist regex to filter warnings based on affected areas",
-                            "headline_filter": "Blacklist regex to filter warning based on headlines"
-                        },
-                        "description": "Filter warnings based on their attributes",
-                        "name": "Filters"
-                    }
                 },
                 "title": "Select city/county"
             }
         }
     },
     "options": {
-        "abort": {
-            "no_fetch": "Cannot connect to NINA service to fetch city or counties. Please try again later.",
-            "unknown": "Unexpected error"
-        },
         "error": {
-            "no_selection": "Please select at least one city/county"
+            "cannot_connect": "Failed to connect",
+            "no_selection": "Please select at least one city/county",
+            "unknown": "Unexpected error"
         },
         "step": {
             "init": {
@@ -62,30 +36,9 @@
                     "_m_to_q": "City/county (M-Q)",
                     "_r_to_u": "City/county (R-U)",
                     "_v_to_z": "City/county (V-Z)",
-                    "slots": "Maximum warnings"
-                },
-                "data_description": {
-                    "_a_to_d": "City/county (A-D) to receive warnings for",
-                    "_e_to_h": "City/county (E-H) to receive warnings for",
-                    "_i_to_l": "City/county (I-L) to receive warnings for",
-                    "_m_to_q": "City/county (M-Q) to receive warnings for",
-                    "_r_to_u": "City/county (R-U) to receive warnings for",
-                    "_v_to_z": "City/county (V-Z) to receive warnings for",
+                    "area_filter": "Whitelist regex to filter warnings based on affected areas",
+                    "headline_filter": "Blacklist regex to filter warning headlines",
                     "slots": "Maximum warnings per city/county"
-                },
-                "sections": {
-                    "filters": {
-                        "data": {
-                            "area_filter": "Affected area filter",
-                            "headline_filter": "Headline blocklist"
-                        },
-                        "data_description": {
-                            "area_filter": "Whitelist regex to filter warnings based on affected areas",
-                            "headline_filter": "Blacklist regex to filter warning based on headlines"
-                        },
-                        "description": "Filter warnings based on their attributes",
-                        "name": "Filters"
-                    }
                 },
                 "title": "Options"
             }

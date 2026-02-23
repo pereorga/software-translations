@@ -23,6 +23,7 @@
                     "name": "Mode",
                     "state": {
                         "auto": "Autom\u00e0tic",
+                        "box": "Casella",
                         "slider": "Barra lliscant"
                     }
                 },
@@ -34,6 +35,7 @@
     },
     "services": {
         "decrement": {
+            "description": "Disminueix el valor en 1 pas.",
             "name": "Disminueix"
         },
         "increment": {
@@ -44,6 +46,7 @@
             "name": "Torna a carregar"
         },
         "set_value": {
+            "description": "Estableix el valor.",
             "fields": {
                 "value": {
                     "description": "Valor objectiu.",

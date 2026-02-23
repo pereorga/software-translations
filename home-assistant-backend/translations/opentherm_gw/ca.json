@@ -85,10 +85,8 @@
         "select": {
             "gpio_mode_n": {
                 "state": {
-                    "away": "Fora",
                     "ds1820": "DS1820",
                     "ground": "Massa",
-                    "home": "A casa",
                     "input": "Entrada",
                     "vcc": "Vcc (5V)"
                 }
@@ -138,6 +136,11 @@
             "product_version": {
                 "name": "Versi\u00f3 de producte"
             }
+        }
+    },
+    "issues": {
+        "deprecated_import_from_configuration_yaml": {
+            "title": "Configuraci\u00f3 obsoleta"
         }
     },
     "options": {

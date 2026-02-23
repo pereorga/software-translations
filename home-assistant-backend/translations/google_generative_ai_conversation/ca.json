@@ -1,7 +1,6 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El servei ja est\u00e0 configurat",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
@@ -20,63 +19,16 @@
             }
         }
     },
-    "config_subentries": {
-        "ai_task_data": {
-            "abort": {
-                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
-            },
-            "step": {
-                "set_options": {
-                    "data": {
-                        "chat_model": "Model",
-                        "name": "Nom",
-                        "temperature": "Temperatura"
-                    }
-                }
-            }
-        },
-        "conversation": {
-            "abort": {
-                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
-            },
-            "step": {
-                "set_options": {
-                    "data": {
-                        "chat_model": "Model",
-                        "llm_hass_api": "Controla Home Assistant",
-                        "name": "Nom",
-                        "prompt": "Instruccions",
-                        "temperature": "Temperatura"
-                    }
-                }
-            }
-        },
-        "stt": {
-            "abort": {
-                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
-            },
-            "step": {
-                "set_options": {
-                    "data": {
-                        "chat_model": "Model",
-                        "name": "Nom",
-                        "prompt": "Instruccions",
-                        "temperature": "Temperatura"
-                    }
-                }
-            }
-        },
-        "tts": {
-            "abort": {
-                "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
-            },
-            "step": {
-                "set_options": {
-                    "data": {
-                        "chat_model": "Model",
-                        "name": "Nom",
-                        "temperature": "Temperatura"
-                    }
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "chat_model": "Model",
+                    "llm_hass_api": "Controla Home Assistant",
+                    "prompt": "Instruccions",
+                    "temperature": "Temperatura",
+                    "top_k": "K superior",
+                    "top_p": "P superior"
                 }
             }
         }
@@ -84,11 +36,17 @@
     "services": {
         "generate_content": {
             "fields": {
+                "image_filename": {
+                    "description": "Imatges",
+                    "example": "/config/www/imatge.jpg",
+                    "name": "Nom de la imatge"
+                },
                 "prompt": {
                     "description": "Instrucci\u00f3",
                     "name": "Instrucci\u00f3"
                 }
-            }
+            },
+            "name": "Genera contingut"
         }
     }
 }

@@ -19,21 +19,21 @@
                     "pin": "PIN code"
                 },
                 "description": "Please enter your MySubaru PIN\nNOTE: All vehicles in account must have the same PIN",
-                "title": "Subaru Starlink configuration"
+                "title": "Subaru Starlink Configuration"
             },
             "two_factor": {
                 "data": {
                     "contact_method": "Please select a contact method:"
                 },
-                "description": "Two-factor authentication required",
-                "title": "Subaru Starlink configuration"
+                "description": "Two factor authentication required",
+                "title": "Subaru Starlink Configuration"
             },
             "two_factor_validate": {
                 "data": {
                     "validation_code": "Validation code"
                 },
                 "description": "Please enter validation code received",
-                "title": "Subaru Starlink configuration"
+                "title": "Subaru Starlink Configuration"
             },
             "user": {
                 "data": {
@@ -42,7 +42,7 @@
                     "username": "Username"
                 },
                 "description": "Please enter your MySubaru credentials\nNOTE: Initial setup may take up to 30 seconds",
-                "title": "Subaru Starlink configuration"
+                "title": "Subaru Starlink Configuration"
             }
         }
     },
@@ -95,16 +95,16 @@
                     "update_enabled": "Enable vehicle polling"
                 },
                 "description": "When enabled, vehicle polling will send a remote command to your vehicle every 2 hours to obtain new sensor data. Without vehicle polling, new sensor data is only received when the vehicle automatically pushes data (normally after engine shutdown).",
-                "title": "Subaru Starlink options"
+                "title": "Subaru Starlink Options"
             }
         }
     },
     "services": {
         "unlock_specific_door": {
-            "description": "Unlocks the driver door, all doors, or the tailgate.",
+            "description": "Unlocks specific door(s).",
             "fields": {
                 "door": {
-                    "description": "The specific door(s) to unlock.",
+                    "description": "One of the following: 'all', 'driver', 'tailgate'.",
                     "name": "Door"
                 }
             },

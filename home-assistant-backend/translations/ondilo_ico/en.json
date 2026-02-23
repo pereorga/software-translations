@@ -5,7 +5,6 @@
             "missing_configuration": "The component is not configured. Please follow the documentation.",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
-            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
             "oauth_timeout": "Timeout resolving OAuth token.",
             "oauth_unauthorized": "OAuth authorization error while obtaining access token."
         },
@@ -14,12 +13,6 @@
         },
         "step": {
             "pick_implementation": {
-                "data": {
-                    "implementation": "Application credentials"
-                },
-                "data_description": {
-                    "implementation": "The credentials you want to use to authenticate."
-                },
                 "title": "Pick authentication method"
             }
         }
@@ -38,11 +31,6 @@
             "tds": {
                 "name": "TDS"
             }
-        }
-    },
-    "exceptions": {
-        "oauth2_implementation_unavailable": {
-            "message": "OAuth2 implementation unavailable, will retry"
         }
     }
 }

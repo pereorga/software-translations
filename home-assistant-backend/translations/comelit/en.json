@@ -4,87 +4,42 @@
             "already_configured": "Service is already configured",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "invalid_pin": "The provided PIN is invalid. It must be a 4-10 digit number.",
-            "invalid_vedo_auth": "The provided VEDO PIN is incorrect or VEDO alarm is not enabled on this device.",
-            "invalid_vedo_pin": "The provided VEDO PIN is invalid. It must be a 4-10 digit number.",
             "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful",
             "unknown": "Unexpected error"
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "invalid_pin": "The provided PIN is invalid. It must be a 4-10 digit number.",
-            "invalid_vedo_auth": "The provided VEDO PIN is incorrect or VEDO alarm is not enabled on this device.",
-            "invalid_vedo_pin": "The provided VEDO PIN is invalid. It must be a 4-10 digit number.",
             "unknown": "Unexpected error"
         },
         "flow_title": "{host}",
         "step": {
             "reauth_confirm": {
                 "data": {
-                    "pin": "PIN code",
-                    "vedo_pin": "VEDO alarm PIN (optional)"
+                    "pin": "PIN code"
                 },
-                "data_description": {
-                    "pin": "The PIN of your Comelit device.",
-                    "vedo_pin": "Optional PIN for VEDO alarm system on Serial Bridge devices. Leave empty if you don't have VEDO alarm enabled."
-                }
-            },
-            "reconfigure": {
-                "data": {
-                    "host": "Host",
-                    "pin": "PIN code",
-                    "port": "Port",
-                    "vedo_pin": "VEDO alarm PIN (optional)"
-                },
-                "data_description": {
-                    "host": "The hostname or IP address of your Comelit device.",
-                    "pin": "The PIN of your Comelit device.",
-                    "port": "The port of your Comelit device.",
-                    "vedo_pin": "Optional PIN for VEDO alarm system on Serial Bridge devices. Leave empty if you don't have VEDO alarm enabled."
-                }
+                "description": "Please enter the correct PIN for {host}"
             },
             "user": {
                 "data": {
                     "host": "Host",
                     "pin": "PIN code",
-                    "port": "Port",
-                    "type": "Device type",
-                    "vedo_pin": "VEDO alarm PIN (optional)"
+                    "port": "Port"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Comelit device.",
-                    "pin": "The PIN of your Comelit device.",
-                    "port": "The port of your Comelit device.",
-                    "type": "The type of your Comelit device.",
-                    "vedo_pin": "Optional PIN for VEDO alarm system on Serial Bridge devices. Leave empty if you don't have VEDO alarm enabled."
+                    "host": "The hostname or IP address of your Comelit device."
                 }
             }
         }
     },
     "entity": {
-        "climate": {
-            "thermostat": {
-                "state_attributes": {
-                    "preset_mode": {
-                        "state": {
-                            "automatic": "Auto",
-                            "manual": "Manual"
-                        }
-                    }
-                }
-            }
-        },
-        "humidifier": {
+        "sensor": {
             "dehumidifier": {
                 "name": "Dehumidifier"
             },
             "humidifier": {
                 "name": "Humidifier"
-            }
-        },
-        "sensor": {
+            },
             "zone_status": {
                 "state": {
                     "alarm": "Alarm",
@@ -101,23 +56,8 @@
         }
     },
     "exceptions": {
-        "cannot_authenticate": {
-            "message": "Error authenticating"
-        },
-        "cannot_connect": {
-            "message": "Error connecting: {error}"
-        },
-        "cannot_retrieve_data": {
-            "message": "Error retrieving data: {error}"
-        },
         "humidity_while_off": {
             "message": "Cannot change humidity while off"
-        },
-        "invalid_clima_data": {
-            "message": "Invalid 'clima' data"
-        },
-        "update_failed": {
-            "message": "Failed to update data: {error}"
         }
     }
 }

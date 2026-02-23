@@ -11,7 +11,7 @@
         "flow_title": "{name}",
         "step": {
             "discovery_confirm": {
-                "description": "Do you want to set up {name}?"
+                "description": "Do you want to setup {name}?"
             },
             "user": {
                 "data": {
@@ -28,30 +28,19 @@
             "timesync": {
                 "name": "Sync time"
             }
-        },
-        "select": {
-            "audio_output_hardware_mode": {
-                "name": "Audio output hardware mode",
-                "state": {
-                    "coaxial": "Coaxial",
-                    "headphones": "Headphones",
-                    "line_out": "Line out",
-                    "optical": "Optical"
-                }
-            }
         }
     },
     "exceptions": {
         "invalid_grouping_entity": {
-            "message": "Entity with ID {entity_id} can't be added to the LinkPlay multiroom. Is the entity a LinkPlay media player?"
+            "message": "Entity with id {entity_id} can't be added to the LinkPlay multiroom. Is the entity a LinkPlay mediaplayer?"
         }
     },
     "services": {
         "play_preset": {
-            "description": "Plays a preset on the device.",
+            "description": "Play the preset number on the device.",
             "fields": {
                 "preset_number": {
-                    "description": "The number of the preset to play.",
+                    "description": "The preset number on the device to play.",
                     "name": "Preset number"
                 }
             },

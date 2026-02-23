@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -18,17 +17,12 @@
                 "description": "Introdueix el PIN enviat per correu electr\u00f2nic o SMS",
                 "title": "Autenticaci\u00f3 de dos factors"
             },
-            "reauth_confirm": {
-                "data": {
-                    "password": "Contrasenya",
-                    "username": "Nom d'usuari"
-                }
-            },
             "user": {
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
-                }
+                },
+                "title": "Inici de sessi\u00f3 amb un compte de Blink"
             }
         }
     },
@@ -78,6 +72,9 @@
     "options": {
         "step": {
             "simple_options": {
+                "data": {
+                    "scan_interval": "Interval d'escaneig (segons)"
+                },
                 "description": "Configura la integraci\u00f3 Blink",
                 "title": "Opcions de Blink"
             }

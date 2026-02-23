@@ -14,9 +14,6 @@
                 "data": {
                     "password": "Password"
                 },
-                "data_description": {
-                    "password": "The password of your Whisker account."
-                },
                 "description": "Please update your password for {username}",
                 "title": "Authentication expired for {name}"
             },
@@ -24,19 +21,12 @@
                 "data": {
                     "password": "Password",
                     "username": "Username"
-                },
-                "data_description": {
-                    "password": "The password of your Whisker account.",
-                    "username": "The email address of your Whisker account."
                 }
             }
         }
     },
     "entity": {
         "binary_sensor": {
-            "hopper_connected": {
-                "name": "Hopper connected"
-            },
             "power_status": {
                 "name": "Power status"
             },
@@ -50,9 +40,6 @@
         "button": {
             "give_snack": {
                 "name": "Give snack"
-            },
-            "reset": {
-                "name": "Reset"
             },
             "reset_waste_drawer": {
                 "name": "Reset waste drawer"
@@ -70,56 +57,19 @@
             "cycle_delay": {
                 "name": "Clean cycle wait time minutes"
             },
-            "globe_brightness": {
-                "name": "Globe brightness",
-                "state": {
-                    "high": "High",
-                    "low": "Low",
-                    "medium": "Medium"
-                }
-            },
-            "globe_light": {
-                "name": "Globe light",
-                "state": {
-                    "auto": "Auto",
-                    "off": "Off",
-                    "on": "On"
-                }
-            },
             "meal_insert_size": {
                 "name": "Meal insert size"
             }
         },
         "sensor": {
-            "food_dispensed_today": {
-                "name": "Food dispensed today",
-                "unit_of_measurement": "cups"
-            },
             "food_level": {
                 "name": "Food level"
-            },
-            "hopper_status": {
-                "name": "Hopper status",
-                "state": {
-                    "disabled": "Disabled",
-                    "empty": "Empty",
-                    "enabled": "Enabled",
-                    "motor_disconnected": "Motor disconnected",
-                    "motor_fault_short": "Motor shorted",
-                    "motor_ot_amps": "Motor overtorqued"
-                }
-            },
-            "last_feeding": {
-                "name": "Last feeding"
             },
             "last_seen": {
                 "name": "Last seen"
             },
             "litter_level": {
                 "name": "Litter level"
-            },
-            "next_feeding": {
-                "name": "Next feeding"
             },
             "pet_weight": {
                 "name": "Pet weight"
@@ -133,49 +83,38 @@
             "status_code": {
                 "name": "Status code",
                 "state": {
-                    "br": "Bonnet removed",
-                    "ccc": "Clean cycle complete",
-                    "ccp": "Clean cycle in progress",
-                    "cd": "Cat detected",
-                    "csf": "Cat sensor fault",
-                    "csi": "Cat sensor interrupted",
-                    "cst": "Cat sensor timing",
-                    "df1": "Drawer almost full - 2 cycles left",
-                    "df2": "Drawer almost full - 1 cycle left",
-                    "dfs": "Drawer full",
-                    "dhf": "Dump + home position fault",
-                    "dpf": "Dump position fault",
-                    "ec": "Empty cycle",
-                    "hpf": "Home position fault",
+                    "br": "Bonnet Removed",
+                    "ccc": "Clean Cycle Complete",
+                    "ccp": "Clean Cycle In Progress",
+                    "cd": "Cat Detected",
+                    "csf": "Cat Sensor Fault",
+                    "csi": "Cat Sensor Interrupted",
+                    "cst": "Cat Sensor Timing",
+                    "df1": "Drawer Almost Full - 2 Cycles Left",
+                    "df2": "Drawer Almost Full - 1 Cycle Left",
+                    "dfs": "Drawer Full",
+                    "dhf": "Dump + Home Position Fault",
+                    "dpf": "Dump Position Fault",
+                    "ec": "Empty Cycle",
+                    "hpf": "Home Position Fault",
                     "off": "Off",
                     "offline": "Offline",
-                    "otf": "Overtorque fault",
+                    "otf": "Over Torque Fault",
                     "p": "Paused",
-                    "pd": "Pinch detect",
-                    "pwrd": "Powering down",
-                    "pwru": "Powering up",
+                    "pd": "Pinch Detect",
+                    "pwrd": "Powering Down",
+                    "pwru": "Powering Up",
                     "rdy": "Ready",
-                    "scf": "Cat sensor fault at startup",
-                    "sdf": "Drawer full at startup",
-                    "spf": "Pinch detect at startup"
+                    "scf": "Cat Sensor Fault At Startup",
+                    "sdf": "Drawer Full At Startup",
+                    "spf": "Pinch Detect At Startup"
                 }
-            },
-            "total_cycles": {
-                "name": "Total cycles",
-                "unit_of_measurement": "cycles"
-            },
-            "visits_today": {
-                "name": "Visits today",
-                "unit_of_measurement": "visits"
             },
             "waste_drawer": {
                 "name": "Waste drawer"
             }
         },
         "switch": {
-            "gravity_mode": {
-                "name": "Gravity mode"
-            },
             "night_light_mode": {
                 "name": "Night light mode"
             },
@@ -192,12 +131,6 @@
             "litter_box": {
                 "name": "Litter box"
             }
-        }
-    },
-    "issues": {
-        "deprecated_entity": {
-            "description": "The Litter-Robot entity `{entity}` is deprecated and will be removed in a future release.\nPlease update your dashboards, automations and scripts, disable `{entity}` and reload the integration/restart Home Assistant to fix this issue.",
-            "title": "{name} is deprecated"
         }
     },
     "services": {

@@ -16,7 +16,9 @@
                 "data": {
                     "host": "Adre\u00e7a IP",
                     "port": "Port"
-                }
+                },
+                "description": "Configura l'Insteon Hub versi\u00f3 1 (anterior a 2014).",
+                "title": "Insteon Hub versi\u00f3 1"
             },
             "hubv2": {
                 "data": {
@@ -24,7 +26,9 @@
                     "password": "Contrasenya",
                     "port": "Port",
                     "username": "Nom d'usuari"
-                }
+                },
+                "description": "Configura l'Insteon Hub versi\u00f3 2.",
+                "title": "Insteon Hub versi\u00f3 2"
             },
             "plm": {
                 "data": {
@@ -121,6 +125,7 @@
             }
         },
         "load_all_link_database": {
+            "description": "Carrega la base de dades All-Link d'un dispositiu. ALERTA: carregar una base de dades All-Link d'un dispositiu tarda molta estona i \u00e9s inconsistent. Pot trigar molt temps i pot ser que s'hagi de repetir per obtenir tots els registres.",
             "fields": {
                 "entity_id": {
                     "name": "Entitat"
@@ -136,9 +141,6 @@
                     "name": "Entitat"
                 }
             }
-        },
-        "x10_all_units_off": {
-            "description": "Envia la comanda X10 \"Desactiva totes les unitats\"."
         }
     }
 }

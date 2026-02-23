@@ -1,9 +1,6 @@
 {
     "entity": {
         "binary_sensor": {
-            "mount": {
-                "name": "Connected"
-            },
             "state": {
                 "name": "Running"
             }
@@ -13,7 +10,7 @@
                 "name": "OS Agent version"
             },
             "apparmor_version": {
-                "name": "AppArmor version"
+                "name": "Apparmor version"
             },
             "cpu_percent": {
                 "name": "CPU percent"
@@ -36,11 +33,6 @@
             "version_latest": {
                 "name": "Newest version"
             }
-        },
-        "update": {
-            "update": {
-                "name": "Update"
-            }
         }
     },
     "issues": {
@@ -51,7 +43,7 @@
                 },
                 "step": {
                     "fix_menu": {
-                        "description": "App {addon} is set to start at boot but failed to start. Usually this occurs when the configuration is incorrect or the same port is used in multiple apps. Check the configuration as well as logs for {addon} and Supervisor.\n\nUse Start to try again or Disable to turn off the start at boot option.",
+                        "description": "Add-on {addon} is set to start at boot but failed to start. Usually this occurs when the configuration is incorrect or the same port is used in multiple add-ons. Check the configuration as well as logs for {addon} and Supervisor.\n\nUse Start to try again or Disable to turn off the start at boot option.",
                         "menu_options": {
                             "addon_disable_boot": "Disable",
                             "addon_execute_start": "Start"
@@ -59,41 +51,24 @@
                     }
                 }
             },
-            "title": "App failed to start at boot"
-        },
-        "issue_addon_deprecated_addon": {
-            "fix_flow": {
-                "abort": {
-                    "apply_suggestion_fail": "Could not uninstall the app. Check the Supervisor logs for more details."
-                },
-                "step": {
-                    "addon_execute_remove": {
-                        "description": "App {addon} is marked deprecated by the developer. This means it is no longer being maintained and so may break or become a security issue over time.\n\nReview the [readme]({addon_info}) and [documentation]({addon_documentation}) of the app to see if the developer provided instructions.\n\nSelecting **Submit** will uninstall this deprecated app. Alternatively, you can check [Home Assistant help]({help_url}) and the [community forum]({community_url}) for alternatives to migrate to."
-                    }
-                }
-            },
-            "title": "Installed app is deprecated"
+            "title": "Add-on failed to start at boot"
         },
         "issue_addon_detached_addon_missing": {
-            "description": "Repository for app {addon} is missing. This means it will not get updates, and backups may not be restored correctly as the Home Assistant Supervisor may not be able to build/download the resources required.\n\nPlease check the [app's documentation]({addon_url}) for installation instructions and add the repository to the store.",
-            "title": "Missing repository for an installed app"
+            "description": "Repository for add-on {addon} is missing. This means it will not get updates, and backups may not be restored correctly as the supervisor may not be able to build/download the resources required.\n\nPlease check the [add-on's documentation]({addon_url}) for installation instructions and add the repository to the store.",
+            "title": "Missing repository for an installed add-on"
         },
         "issue_addon_detached_addon_removed": {
             "fix_flow": {
                 "abort": {
-                    "apply_suggestion_fail": "Could not uninstall the app. Check the Supervisor logs for more details."
+                    "apply_suggestion_fail": "Could not uninstall the add-on. Check the Supervisor logs for more details."
                 },
                 "step": {
                     "addon_execute_remove": {
-                        "description": "App {addon} has been removed from the repository it was installed from. This means it will not get updates, and backups may not be restored correctly as the Home Assistant Supervisor may not be able to build/download the resources required.\n\nSelecting **Submit** will uninstall this deprecated app. Alternatively, you can check [Home Assistant help]({help_url}) and the [community forum]({community_url}) for alternatives to migrate to."
+                        "description": "Add-on {addon} has been removed from the repository it was installed from. This means it will not get updates, and backups may not be restored correctly as the supervisor may not be able to build/download the resources required.\n\nSelecting **Submit** will uninstall this deprecated add-on. Alternatively, you can check [Home Assistant help]({help_url}) and the [community forum]({community_url}) for alternatives to migrate to."
                     }
                 }
             },
-            "title": "Installed app has been removed from repository"
-        },
-        "issue_addon_pwned": {
-            "description": "App {addon} uses secrets/passwords in its configuration which are detected as not secure. See [pwned passwords and secrets]({more_info_pwned}) for more information on this issue.",
-            "title": "Insecure secrets detected in app configuration"
+            "title": "Installed add-on has been removed from repository"
         },
         "issue_mount_mount_failed": {
             "fix_flow": {
@@ -112,10 +87,6 @@
             },
             "title": "Network storage device failed"
         },
-        "issue_system_disk_lifetime": {
-            "description": "The data disk has exceeded 90% of its expected lifespan. The disk may soon malfunction which can lead to data loss. You should replace it soon and migrate your data.",
-            "title": "Disk lifetime exceeding 90%"
-        },
         "issue_system_docker_config": {
             "fix_flow": {
                 "abort": {
@@ -123,15 +94,11 @@
                 },
                 "step": {
                     "system_execute_rebuild": {
-                        "description": "The default configuration for apps and Home Assistant has changed. To update the configuration with the new defaults, a restart is required for the following:\n\n- {components}"
+                        "description": "The default configuration for add-ons and Home Assistant has changed. To update the configuration with the new defaults, a restart is required for the following:\n\n- {components}"
                     }
                 }
             },
             "title": "Restart(s) required"
-        },
-        "issue_system_free_space": {
-            "description": "The data disk has only {free_space}GB free space left. This may cause issues with system stability and interfere with functionality such as backups and updates. Go to [storage]({storage_url}) to see what is taking up space or see [clear up storage]({more_info_free_space}) for tips on how to free up space.",
-            "title": "Data disk is running low on free space"
         },
         "issue_system_multiple_data_disks": {
             "fix_flow": {
@@ -160,50 +127,42 @@
                 },
                 "step": {
                     "system_execute_reboot": {
-                        "description": "Settings were changed which require a system reboot to take effect.\n\nThis fix will initiate a system reboot which will make Home Assistant and all the apps inaccessible for a brief period."
+                        "description": "Settings were changed which require a system reboot to take effect.\n\nThis fix will initiate a system reboot which will make Home Assistant and all the Add-ons inaccessible for a brief period."
                     }
                 }
             },
             "title": "Reboot required"
         },
         "unhealthy": {
-            "description": "System is currently unhealthy due to {reason}. For troubleshooting information, select Learn more.",
+            "description": "System is currently unhealthy due to {reason}. Use the link to learn more and how to fix this.",
             "title": "Unhealthy system - {reason}"
         },
         "unhealthy_docker": {
-            "description": "System is currently unhealthy because Docker is configured incorrectly. For troubleshooting information, select Learn more.",
+            "description": "System is currently unhealthy because Docker is configured incorrectly. Use the link to learn more and how to fix this.",
             "title": "Unhealthy system - Docker misconfigured"
         },
-        "unhealthy_duplicate_os_installation": {
-            "description": "System is currently unhealthy because it has detected multiple Home Assistant OS installations. For troubleshooting information, select Learn more.",
-            "title": "Unhealthy system - Duplicate Home Assistant OS installation"
-        },
-        "unhealthy_oserror_bad_message": {
-            "description": "System is currently unhealthy because the operating system has reported an OS error: Bad message. For troubleshooting information, select Learn more.",
-            "title": "Unhealthy system - Operating System error: Bad message"
-        },
         "unhealthy_privileged": {
-            "description": "System is currently unhealthy because it does not have privileged access to the docker runtime. For troubleshooting information, select Learn more.",
+            "description": "System is currently unhealthy because it does not have privileged access to the docker runtime. Use the link to learn more and how to fix this.",
             "title": "Unhealthy system - Not privileged"
         },
         "unhealthy_setup": {
-            "description": "System is currently unhealthy because setup failed to complete. There are a number of reasons this can occur, For troubleshooting information, select Learn more.",
+            "description": "System is currently unhealthy because setup failed to complete. There are a number of reasons this can occur, use the link to learn more and how to fix this.",
             "title": "Unhealthy system - Setup failed"
         },
         "unhealthy_supervisor": {
-            "description": "System is currently unhealthy because an attempt to update Supervisor to the latest version has failed. For troubleshooting information, select Learn more.",
+            "description": "System is currently unhealthy because an attempt to update Supervisor to the latest version has failed. Use the link to learn more and how to fix this.",
             "title": "Unhealthy system - Supervisor update failed"
         },
         "unhealthy_untrusted": {
-            "description": "System is currently unhealthy because it has detected untrusted code or images in use. For troubleshooting information, select Learn more.",
+            "description": "System is currently unhealthy because it has detected untrusted code or images in use. Use the link to learn more and how to fix this.",
             "title": "Unhealthy system - Untrusted code"
         },
         "unsupported": {
-            "description": "System is unsupported due to {reason}. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported due to {reason}. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - {reason}"
         },
         "unsupported_apparmor": {
-            "description": "System is unsupported because AppArmor is working incorrectly and apps are running in an unprotected and insecure way. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because AppArmor is working incorrectly and add-ons are running in an unprotected and insecure way. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - AppArmor issues"
         },
         "unsupported_cgroup_version": {
@@ -211,88 +170,84 @@
             "title": "Unsupported system - CGroup version"
         },
         "unsupported_connectivity_check": {
-            "description": "System is unsupported because Home Assistant cannot determine when an Internet connection is available. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because Home Assistant cannot determine when an internet connection is available. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Connectivity check disabled"
         },
         "unsupported_content_trust": {
-            "description": "System is unsupported because Home Assistant cannot verify content being run is trusted and not modified by attackers. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because Home Assistant cannot verify content being run is trusted and not modified by attackers. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Content-trust check disabled"
         },
         "unsupported_dbus": {
-            "description": "System is unsupported because D-Bus is working incorrectly. Many things fail without this as Supervisor cannot communicate with the host. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because D-Bus is working incorrectly. Many things fail without this as Supervisor cannot communicate with the host. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - D-Bus issues"
         },
         "unsupported_dns_server": {
-            "description": "System is unsupported because the provided DNS server does not work correctly and the fallback DNS option has been disabled. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because the provided DNS server does not work correctly and the fallback DNS option has been disabled. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - DNS server issues"
         },
         "unsupported_docker_configuration": {
-            "description": "System is unsupported because the Docker daemon is running in an unexpected way. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because the Docker daemon is running in an unexpected way. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Docker misconfigured"
         },
         "unsupported_docker_version": {
-            "description": "System is unsupported because the Docker version is out of date. For information about the required version and how to fix this, select Learn more.",
+            "description": "System is unsupported because the wrong version of Docker is in use. Use the link to learn the correct version and how to fix this.",
             "title": "Unsupported system - Docker version"
         },
-        "unsupported_home_assistant_core_version": {
-            "description": "System is unsupported because the Home Assistant Core version in use is not supported. For troubleshooting information, select Learn more.",
-            "title": "Unsupported system - Home Assistant Core version"
-        },
         "unsupported_job_conditions": {
-            "description": "System is unsupported because one or more job conditions have been disabled which protect from unexpected failures and breakages. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because one or more job conditions have been disabled which protect from unexpected failures and breakages. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Protections disabled"
         },
         "unsupported_lxc": {
-            "description": "System is unsupported because it is being run in an LXC virtual machine. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because it is being run in an LXC virtual machine. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - LXC detected"
         },
         "unsupported_network_manager": {
-            "description": "System is unsupported because Network Manager is missing, inactive or misconfigured. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because Network Manager is missing, inactive or misconfigured. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Network Manager issues"
         },
         "unsupported_os": {
-            "description": "System is unsupported because the operating system in use is not tested or maintained for use with Supervisor. For information about supported operating systems and how to fix this, select Learn more.",
+            "description": "System is unsupported because the operating system in use is not tested or maintained for use with Supervisor. Use the link to which operating systems are supported and how to fix this.",
             "title": "Unsupported system - Operating System"
         },
         "unsupported_os_agent": {
-            "description": "System is unsupported because OS-Agent is missing, inactive or misconfigured. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because OS-Agent is missing, inactive or misconfigured. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - OS-Agent issues"
         },
-        "unsupported_os_version": {
-            "description": "System is unsupported because the Home Assistant OS version in use is not supported. For troubleshooting information, select Learn more.",
-            "title": "Unsupported system - Home Assistant OS version"
-        },
         "unsupported_restart_policy": {
-            "description": "System is unsupported because a Docker container has a restart policy set which could cause issues on startup. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because a Docker container has a restart policy set which could cause issues on startup. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Container restart policy"
         },
         "unsupported_software": {
-            "description": "System is unsupported because additional software outside the Home Assistant ecosystem has been detected. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because additional software outside the Home Assistant ecosystem has been detected. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Unsupported software"
         },
         "unsupported_source_mods": {
-            "description": "System is unsupported because Supervisor source code has been modified. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because Supervisor source code has been modified. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Supervisor source modifications"
         },
         "unsupported_supervisor_version": {
-            "description": "System is unsupported because an out-of-date version of Supervisor is in use and auto-update has been disabled. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because an out-of-date version of Supervisor is in use and auto-update has been disabled. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Supervisor version"
         },
         "unsupported_systemd": {
-            "description": "System is unsupported because Systemd is missing, inactive or misconfigured. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because Systemd is missing, inactive or misconfigured. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Systemd issues"
         },
         "unsupported_systemd_journal": {
-            "description": "System is unsupported because Systemd Journal and/or the gateway service is missing, inactive or misconfigured. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because Systemd Journal and/or the gateway service is missing, inactive or misconfigured . Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Systemd Journal issues"
         },
         "unsupported_systemd_resolved": {
-            "description": "System is unsupported because Systemd Resolved is missing, inactive or misconfigured. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because Systemd Resolved is missing, inactive or misconfigured. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Systemd-Resolved issues"
         },
         "unsupported_virtualization_image": {
-            "description": "System is unsupported because the Home Assistant OS image in use is not intended for use in a virtualized environment. For troubleshooting information, select Learn more.",
+            "description": "System is unsupported because the Home Assistant OS image in use is not intended for use in a virtualized environment. Use the link to learn more and how to fix this.",
             "title": "Unsupported system - Incorrect OS image for virtualization"
+        },
+        "update_service_deprecated": {
+            "description": "The update add-on action has been deprecated and will be removed in 2025.5. Please use the update entity and the respective action to update the add-on instead.",
+            "title": "Deprecated update add-on action"
         }
     },
     "services": {
@@ -336,49 +291,15 @@
             },
             "name": "Stop add-on"
         },
-        "app_restart": {
-            "description": "Restarts a Home Assistant app.",
+        "addon_update": {
+            "description": "Updates an add-on. This action should be used with caution since add-on updates can contain breaking changes. It is highly recommended that you review release notes/change logs before updating an add-on.",
             "fields": {
-                "app": {
-                    "description": "The app to restart.",
-                    "name": "App"
+                "addon": {
+                    "description": "The add-on to update.",
+                    "name": "Add-on"
                 }
             },
-            "name": "Restart app"
-        },
-        "app_start": {
-            "description": "Starts a Home Assistant app.",
-            "fields": {
-                "app": {
-                    "description": "The app to start.",
-                    "name": "App"
-                }
-            },
-            "name": "Start app"
-        },
-        "app_stdin": {
-            "description": "Writes data to the standard input of a Home Assistant app.",
-            "fields": {
-                "app": {
-                    "description": "The app to write to.",
-                    "name": "App"
-                },
-                "input": {
-                    "description": "The data to write.",
-                    "name": "Input"
-                }
-            },
-            "name": "Write data to app stdin"
-        },
-        "app_stop": {
-            "description": "Stops a Home Assistant app.",
-            "fields": {
-                "app": {
-                    "description": "The app to stop.",
-                    "name": "App"
-                }
-            },
-            "name": "Stop app"
+            "name": "Update add-on"
         },
         "backup_full": {
             "description": "Creates a full backup.",
@@ -388,7 +309,7 @@
                     "name": "Compressed"
                 },
                 "homeassistant_exclude_database": {
-                    "description": "Exclude the Home Assistant database file from the backup.",
+                    "description": "Exclude the Home Assistant database file from backup",
                     "name": "Home Assistant exclude database"
                 },
                 "location": {
@@ -410,12 +331,8 @@
             "description": "Creates a partial backup.",
             "fields": {
                 "addons": {
-                    "description": "List of apps (formerly add-ons) to include in the backup. Use the slug of each app. Legacy option - use apps instead.",
-                    "name": "Add-ons (legacy)"
-                },
-                "apps": {
-                    "description": "List of apps to include in the backup. Use the slug of each app.",
-                    "name": "Apps"
+                    "description": "List of add-ons to include in the backup. Use the name slug of each add-on.",
+                    "name": "Add-ons"
                 },
                 "compressed": {
                     "description": "Compresses the backup files.",
@@ -430,7 +347,7 @@
                     "name": "Home Assistant settings"
                 },
                 "homeassistant_exclude_database": {
-                    "description": "Exclude the Home Assistant database file from the backup.",
+                    "description": "Exclude the Home Assistant database file from backup",
                     "name": "Home Assistant exclude database"
                 },
                 "location": {
@@ -474,12 +391,8 @@
             "description": "Restores from a partial backup.",
             "fields": {
                 "addons": {
-                    "description": "List of apps (formerly add-ons) to restore from the backup. Use the slug of each app. Legacy option - use apps instead.",
-                    "name": "Add-ons (legacy)"
-                },
-                "apps": {
-                    "description": "List of apps to restore from the backup. Use the slug of each app.",
-                    "name": "Apps"
+                    "description": "List of add-ons to restore from the backup. Use the name slug of each add-on.",
+                    "name": "Add-ons"
                 },
                 "folders": {
                     "description": "List of directories to restore from the backup.",
@@ -510,8 +423,7 @@
             "docker_version": "Docker version",
             "healthy": "Healthy",
             "host_os": "Host operating system",
-            "installed_addons": "Installed apps",
-            "nameservers": "Nameservers",
+            "installed_addons": "Installed add-ons",
             "supervisor_api": "Supervisor API",
             "supervisor_version": "Supervisor version",
             "supported": "Supported",

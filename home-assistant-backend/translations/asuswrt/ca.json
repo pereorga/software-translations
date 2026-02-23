@@ -26,6 +26,21 @@
     },
     "entity": {
         "sensor": {
+            "24ghz_temperature": {
+                "name": "Temperatura de 2.4 GHz"
+            },
+            "5ghz_2_temperature": {
+                "name": "Temperatura de 5 GHz"
+            },
+            "5ghz_temperature": {
+                "name": "Temperatura de 5 GHz"
+            },
+            "6ghz_temperature": {
+                "name": "Temperatura de 6 GHz"
+            },
+            "cpu_temperature": {
+                "name": "Temperatura de la CPU"
+            },
             "cpu_usage": {
                 "name": "\u00das de CPU"
             },
@@ -40,6 +55,15 @@
             },
             "last_boot": {
                 "name": "\u00daltima arrencada"
+            },
+            "load_avg_15m": {
+                "name": "C\u00e0rrega mitjana (15 min)"
+            },
+            "load_avg_1m": {
+                "name": "C\u00e0rrega mitjana (1 min)"
+            },
+            "load_avg_5m": {
+                "name": "C\u00e0rrega mitjana (5 min)"
             },
             "memory_free": {
                 "name": "Mem\u00f2ria disponible"

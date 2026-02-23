@@ -3,61 +3,37 @@
         "abort": {
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
-            "auth_error": "Authentication error, please try again",
-            "auth_failed": "Authentication failed, please try again",
             "cannot_connect": "Failed to connect",
-            "invalid_server_version": "The Music Assistant server is not the correct version",
-            "reauth_successful": "Re-authentication was successful",
-            "unknown": "Unexpected error"
+            "reconfiguration_successful": "Successfully reconfigured the Music Assistant integration.",
+            "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
-            "auth_failed": "Authentication failed, please try again",
             "cannot_connect": "Failed to connect",
             "invalid_server_version": "The Music Assistant server is not the correct version",
             "unknown": "Unexpected error"
         },
         "step": {
-            "auth_manual": {
-                "data": {
-                    "token": "Long-lived access token"
-                },
-                "data_description": {
-                    "token": "Create a long-lived access token in your Music Assistant server settings and paste it here"
-                },
-                "title": "Enter long-lived access token"
-            },
             "discovery_confirm": {
-                "description": "Do you want to add the Music Assistant server `{url}` to Home Assistant?",
-                "title": "Discovered Music Assistant server"
+                "description": "Do you want to add the Music Assistant Server `{url}` to Home Assistant?",
+                "title": "Discovered Music Assistant Server"
             },
-            "hassio_confirm": {
-                "description": "Do you want to add the Music Assistant server to Home Assistant?",
-                "title": "Discovered Music Assistant app"
-            },
-            "reauth_confirm": {
-                "description": "The authentication token for Music Assistant server `{url}` is no longer valid. Please re-authenticate to continue using the integration.",
-                "title": "Reauthentication required"
-            },
-            "user": {
+            "init": {
                 "data": {
-                    "url": "URL"
-                },
-                "data_description": {
                     "url": "URL of the Music Assistant server"
                 }
-            }
-        }
-    },
-    "entity": {
-        "button": {
-            "favorite_now_playing": {
-                "name": "Favorite current song"
+            },
+            "manual": {
+                "data": {
+                    "url": "URL of the Music Assistant server"
+                },
+                "description": "Enter the URL to your already running Music Assistant Server. If you do not have the Music Assistant Server running, you should install it first.",
+                "title": "Manually add Music Assistant Server"
             }
         }
     },
     "issues": {
         "invalid_server_version": {
-            "description": "Check if there are updates available for the Music Assistant server and/or integration.",
+            "description": "Check if there are updates available for the Music Assistant Server and/or integration.",
             "title": "The Music Assistant server is not the correct version"
         }
     },
@@ -84,10 +60,7 @@
             "options": {
                 "album": "Album",
                 "artist": "Artist",
-                "audiobook": "Audiobook",
-                "folder": "Folder",
                 "playlist": "Playlist",
-                "podcast": "Podcast",
                 "radio": "Radio",
                 "track": "Track"
             }
@@ -117,10 +90,10 @@
     },
     "services": {
         "get_library": {
-            "description": "Retrieves items from a Music Assistant library.",
+            "description": "Get items from a Music Assistant library.",
             "fields": {
                 "album_artists_only": {
-                    "description": "Only return album artists when listing the artists library items.",
+                    "description": "Only return Album Artists when listing the Artists library items.",
                     "name": "Enable album artists filter (only for artist library)"
                 },
                 "album_type": {
@@ -149,29 +122,25 @@
                 },
                 "order_by": {
                     "description": "Sort the list by this field.",
-                    "name": "Order by"
+                    "name": "Order By"
                 },
                 "search": {
                     "description": "Optional search string to search through this library.",
                     "name": "Search"
                 }
             },
-            "name": "Get library items"
+            "name": "Get Library items"
         },
         "get_queue": {
-            "description": "Retrieves the details of the currently active queue of a Music Assistant player.",
+            "description": "Get the details of the currently active queue of a Music Assistant player.",
             "name": "Get playerQueue details (advanced)"
         },
         "play_announcement": {
-            "description": "Plays an announcement on a Music Assistant player with more fine-grained control options.",
+            "description": "Play announcement on a Music Assistant player with more fine-grained control options.",
             "fields": {
                 "announce_volume": {
                     "description": "Use a forced volume level for the announcement. Omit to use player default.",
                     "name": "Announce volume"
-                },
-                "pre_announce_url": {
-                    "description": "URL to the pre-announcement sound.",
-                    "name": "Pre-announce URL"
                 },
                 "url": {
                     "description": "URL to the notification sound.",
@@ -185,7 +154,7 @@
             "name": "Play announcement"
         },
         "play_media": {
-            "description": "Plays media on a Music Assistant player with more fine-grained control options.",
+            "description": "Play media on a Music Assistant player with more fine-grained control options.",
             "fields": {
                 "album": {
                     "description": "When specifying a track by name in the Media ID field, you can optionally restrict results by this album name.",
@@ -215,7 +184,7 @@
             "name": "Play media"
         },
         "search": {
-            "description": "Performs a global search on the Music Assistant library and all providers.",
+            "description": "Perform a global search on the Music Assistant library and all providers.",
             "fields": {
                 "album": {
                     "description": "When specifying a track name in the name field, you can optionally restrict results by this album name.",
@@ -249,11 +218,11 @@
             "name": "Search Music Assistant"
         },
         "transfer_queue": {
-            "description": "Transfers a player's queue to another player.",
+            "description": "Transfer the player's queue to another player.",
             "fields": {
                 "auto_play": {
                     "description": "Start playing the queue on the target player. Omit to use the default behavior.",
-                    "name": "Autoplay"
+                    "name": "Auto play"
                 },
                 "source_player": {
                     "description": "The source media player which has the queue you want to transfer. When omitted, the first playing player will be used.",

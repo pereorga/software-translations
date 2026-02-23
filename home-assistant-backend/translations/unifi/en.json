@@ -34,11 +34,6 @@
         }
     },
     "entity": {
-        "light": {
-            "led_control": {
-                "name": "LED"
-            }
-        },
         "sensor": {
             "device_state": {
                 "state": {
@@ -55,9 +50,6 @@
                     "provisioning": "Provisioning",
                     "upgrading": "Upgrading"
                 }
-            },
-            "wired_client_link_speed": {
-                "name": "Link speed"
             }
         }
     },
@@ -124,7 +116,7 @@
             "name": "Reconnect wireless client"
         },
         "remove_clients": {
-            "description": "Cleans up clients that have only been associated with the controller for a short period of time.",
+            "description": "Cleans up clients that has only been associated with the controller for a short period of time.",
             "name": "Remove clients from the UniFi Network"
         }
     }

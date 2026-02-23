@@ -9,9 +9,6 @@
             "is_off": "{entity_name} est\u00e0 apagat/ada",
             "is_on": "{entity_name} est\u00e0 engegat/ada"
         },
-        "extra_fields": {
-            "for": "Durada"
-        },
         "trigger_type": {
             "changed_states": "{entity_name} s'engegui o s'apagui",
             "turned_off": "{entity_name} s'apagui",
@@ -46,7 +43,7 @@
             "description": "Apr\u00e8n una ordre o una llista d'ordres d'un dispositiu.",
             "fields": {
                 "alternative": {
-                    "description": "Si el codi s'ha d'emmagatzemar com a alternativa. Aix\u00f2 \u00e9s \u00fatil per a codis discrets. Els codis discrets s'usen per a interruptors que nom\u00e9s fan una funci\u00f3. Per exemple, un codi per a encendre nom\u00e9s un dispositiu; si ja est\u00e0 activat, l'enviament del codi no en canviar\u00e0 l'estat.",
+                    "description": "Tria si el codi s'ha d'emmagatzemar com a alternativa. Aix\u00f2 \u00e9s \u00fatil per a codis discrets. Els codis discrets s'utilitzen per a commutacions que nom\u00e9s realitzen una funci\u00f3. Per exemple, un codi per nom\u00e9s encendre un dispositiu; si ja est\u00e0 activat, l'enviament del codi no en canviar\u00e0 l'estat.",
                     "name": "Alternativa"
                 },
                 "command": {
@@ -91,7 +88,6 @@
             "name": "Envia comanda"
         },
         "toggle": {
-            "description": "Envia l'ordre de commutaci\u00f3",
             "name": "Commuta"
         },
         "turn_off": {

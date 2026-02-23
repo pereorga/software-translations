@@ -46,6 +46,13 @@
                 }
             }
         },
+        "remove_item": {
+            "fields": {
+                "item": {
+                    "name": "Nom de l'element"
+                }
+            }
+        },
         "update_item": {
             "fields": {
                 "description": {
@@ -59,6 +66,9 @@
                 "due_datetime": {
                     "description": "Data i l'hora en que s'espera que s'hagi completat l'element de tasca.",
                     "name": "Data i hora de venciment"
+                },
+                "item": {
+                    "name": "Nom de l'element"
                 },
                 "rename": {
                     "name": "Canvia nom de l'element"

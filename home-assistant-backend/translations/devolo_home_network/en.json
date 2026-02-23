@@ -7,7 +7,6 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "flow_title": "{product} ({name})",
@@ -22,24 +21,16 @@
             },
             "user": {
                 "data": {
-                    "ip_address": "IP address",
-                    "password": "Password"
+                    "ip_address": "IP address"
                 },
                 "data_description": {
-                    "ip_address": "IP address of your devolo Home Network device. This can be found in the devolo Home Network app on the device dashboard.",
-                    "password": "Password you protected the device with."
+                    "ip_address": "IP address of your devolo Home Network device. This can be found in the devolo Home Network App on the device dashboard."
                 },
                 "description": "Do you want to start setup?"
             },
             "zeroconf_confirm": {
-                "data": {
-                    "password": "Password"
-                },
-                "data_description": {
-                    "password": "Password you protected the device with."
-                },
-                "description": "Do you want to add the devolo Home Network device with the hostname `{host_name}` to Home Assistant?",
-                "title": "Discovered devolo Home Network device"
+                "description": "Do you want to add the devolo home network device with the hostname `{host_name}` to Home Assistant?",
+                "title": "Discovered devolo home network device"
             }
         }
     },
@@ -105,7 +96,7 @@
             "message": "Device {title} did not respond"
         },
         "password_protected": {
-            "message": "Device {title} requires re-authentication to set or change the password"
+            "message": "Device {title} requires re-authenticatication to set or change the password"
         },
         "password_wrong": {
             "message": "The used password is wrong"

@@ -11,10 +11,18 @@
         },
         "step": {
             "otp": {
-                "description": "Introdueix el codi rebut per SMS"
+                "data": {
+                    "otp": "Codi SMS"
+                },
+                "description": "Introdueix el codi rebut per SMS",
+                "title": "Verificaci\u00f3 per SMS"
             },
             "user": {
-                "description": "Introdueix el teu n\u00famero de tel\u00e8fon (el mateix que has utilitzat per registrar-te a l'aplicaci\u00f3 tami4)"
+                "data": {
+                    "phone": "N\u00famero de tel\u00e8fon"
+                },
+                "description": "Introdueix el teu n\u00famero de tel\u00e8fon (el mateix que has utilitzat per registrar-te a l'aplicaci\u00f3 tami4)",
+                "title": "Verificaci\u00f3 per SMS"
             }
         }
     },

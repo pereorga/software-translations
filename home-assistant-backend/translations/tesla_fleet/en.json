@@ -2,13 +2,11 @@
     "config": {
         "abort": {
             "already_configured": "Configuration updated for profile.",
-            "already_in_progress": "Configuration flow is already in progress",
             "authorize_url_timeout": "Timeout generating authorize URL.",
             "missing_configuration": "The component is not configured. Please follow the documentation.",
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
-            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
             "oauth_timeout": "Timeout resolving OAuth token.",
             "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
             "reauth_account_mismatch": "The reauthentication account does not match the original account",
@@ -18,50 +16,15 @@
             "default": "Successfully authenticated with Tesla."
         },
         "error": {
-            "invalid_domain": "Invalid domain format. Please enter a valid domain name.",
-            "invalid_response": "The registration was rejected by Tesla",
-            "precondition_failed": "The domain does not match the application's allowed origins.",
-            "public_key_mismatch": "The public key hosted at your domain does not match the expected key. Please ensure the correct public key is hosted at the specified location.",
-            "public_key_not_found": "Public key not found.",
-            "unknown_error": "An unknown error occurred: {error}"
+            "already_configured": "Account is already configured"
         },
         "step": {
-            "domain_input": {
-                "data": {
-                    "domain": "Domain"
-                },
-                "data_description": {
-                    "domain": "The domain that hosts your public key for Tesla Fleet API authentication."
-                },
-                "description": "Enter the domain that will host your public key. This is typically the domain of the origin you specified during registration at {dashboard}.",
-                "title": "Tesla Fleet domain registration"
-            },
-            "domain_registration": {
-                "description": "You must host the public key at:\n\n{public_key_url}\n\n```\n{pem}\n```",
-                "title": "Registering public key"
-            },
             "pick_implementation": {
-                "data": {
-                    "implementation": "Application credentials"
-                },
-                "data_description": {
-                    "implementation": "The credentials you want to use to authenticate."
-                },
                 "title": "Pick authentication method"
             },
             "reauth_confirm": {
                 "description": "The {name} integration needs to re-authenticate your account",
                 "title": "Authentication expired for {name}"
-            },
-            "registration_complete": {
-                "data": {
-                    "qr_code": "QR code"
-                },
-                "data_description": {
-                    "qr_code": "Scan this QR code with your phone to set up the virtual key."
-                },
-                "description": "To enable command signing, you must open the Tesla app, select your vehicle, and then visit the following URL to set up a virtual key. You must repeat this process for each vehicle.\n\n{virtual_key_url}",
-                "title": "Command signing"
             }
         }
     },
@@ -236,7 +199,7 @@
                 "name": "Charge limit"
             },
             "off_grid_vehicle_charging_reserve_percent": {
-                "name": "Off-grid reserve"
+                "name": "Off grid reserve"
             }
         },
         "select": {
@@ -324,23 +287,11 @@
                 "state": {
                     "autonomous": "Autonomous",
                     "backup": "Backup",
-                    "self_consumption": "Self-consumption"
+                    "self_consumption": "Self consumption"
                 }
             }
         },
         "sensor": {
-            "battery_energy_exported": {
-                "name": "Battery exported"
-            },
-            "battery_energy_imported_from_generator": {
-                "name": "Battery imported from generator"
-            },
-            "battery_energy_imported_from_grid": {
-                "name": "Battery imported from grid"
-            },
-            "battery_energy_imported_from_solar": {
-                "name": "Battery imported from solar"
-            },
             "battery_power": {
                 "name": "Battery power"
             },
@@ -406,18 +357,6 @@
             "climate_state_passenger_temp_setting": {
                 "name": "Passenger temperature setting"
             },
-            "consumer_energy_imported_from_battery": {
-                "name": "Consumer imported from battery"
-            },
-            "consumer_energy_imported_from_generator": {
-                "name": "Consumer imported from generator"
-            },
-            "consumer_energy_imported_from_grid": {
-                "name": "Consumer imported from grid"
-            },
-            "consumer_energy_imported_from_solar": {
-                "name": "Consumer imported from solar"
-            },
             "drive_state_active_route_destination": {
                 "name": "Destination"
             },
@@ -451,38 +390,17 @@
             "energy_left": {
                 "name": "Energy left"
             },
-            "generator_energy_exported": {
-                "name": "Generator exported"
-            },
             "generator_power": {
                 "name": "Generator power"
             },
-            "grid_energy_exported_from_battery": {
-                "name": "Grid exported from battery"
-            },
-            "grid_energy_exported_from_generator": {
-                "name": "Grid exported from generator"
-            },
-            "grid_energy_exported_from_solar": {
-                "name": "Grid exported from solar"
-            },
-            "grid_energy_imported": {
-                "name": "Grid imported"
-            },
             "grid_power": {
                 "name": "Grid power"
-            },
-            "grid_services_energy_exported": {
-                "name": "Grid services exported"
-            },
-            "grid_services_energy_imported": {
-                "name": "Grid services imported"
             },
             "grid_services_power": {
                 "name": "Grid services power"
             },
             "island_status": {
-                "name": "Grid status",
+                "name": "Grid Status",
                 "state": {
                     "island_status_unknown": "Unknown",
                     "off_grid": "Disconnected",
@@ -497,32 +415,11 @@
             "percentage_charged": {
                 "name": "Percentage charged"
             },
-            "solar_energy_exported": {
-                "name": "Solar exported"
-            },
             "solar_power": {
                 "name": "Solar power"
             },
-            "storm_mode_active": {
-                "name": "Storm watch active"
-            },
-            "total_battery_charge": {
-                "name": "Battery charged"
-            },
-            "total_battery_discharge": {
-                "name": "Battery discharged"
-            },
-            "total_grid_energy_exported": {
-                "name": "Grid exported"
-            },
-            "total_home_usage": {
-                "name": "Home usage"
-            },
             "total_pack_energy": {
                 "name": "Total pack energy"
-            },
-            "total_solar_generation": {
-                "name": "Solar generated"
             },
             "vehicle_state_odometer": {
                 "name": "Odometer"
@@ -540,7 +437,7 @@
                 "name": "Tire pressure rear right"
             },
             "version": {
-                "name": "Version"
+                "name": "version"
             },
             "vin": {
                 "name": "Vehicle"
@@ -559,7 +456,7 @@
             }
         },
         "switch": {
-            "charge_state_charging_state": {
+            "charge_state_user_charge_enable_request": {
                 "name": "Charge"
             },
             "climate_state_auto_seat_climate_left": {
@@ -586,11 +483,6 @@
             "vehicle_state_valet_mode": {
                 "name": "Valet mode"
             }
-        },
-        "update": {
-            "vehicle_state_software_update_status": {
-                "name": "Update"
-            }
         }
     },
     "exceptions": {
@@ -603,14 +495,14 @@
         "command_no_reason": {
             "message": "Command was unsuccessful but did not return a reason why."
         },
-        "command_no_response": {
-            "message": "Command had no response"
-        },
         "command_reason": {
             "message": "Command was unsuccessful: {reason}"
         },
         "invalid_cop_temp": {
             "message": "Cabin overheat protection does not support that temperature."
+        },
+        "invalid_hvac_mode": {
+            "message": "Climate mode {hvac_mode} is not supported."
         },
         "missing_scope_energy_cmds": {
             "message": "Missing energy commands scope."
@@ -627,17 +519,8 @@
         "no_cable": {
             "message": "Charge cable will lock automatically when connected"
         },
-        "oauth2_implementation_unavailable": {
-            "message": "OAuth2 implementation unavailable, will retry"
-        },
         "update_failed": {
             "message": "{endpoint} data request failed: {message}"
-        },
-        "wake_up_failed": {
-            "message": "Failed to wake up vehicle"
-        },
-        "wake_up_timeout": {
-            "message": "Could not wake up vehicle"
         }
     }
 }

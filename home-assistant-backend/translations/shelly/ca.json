@@ -5,17 +5,19 @@
             "ipv6_not_supported": "No \u00e9s compatible amb IPv6.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "reauth_unsuccessful": "La re-autenticaci\u00f3 no ha tingut \u00e8xit, elimina la integraci\u00f3 i torna-la a configurar.",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
-            "unknown": "Error inesperat"
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "firmware_not_fully_provisioned": "Dispositiu no totalment aprovisionat. Posa't en contacte amb l'assist\u00e8ncia de Shelly",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
             "unknown": "Error inesperat"
         },
         "flow_title": "{name}",
         "step": {
+            "confirm_discovery": {
+                "description": "Vols configurar el {model} a {host}? \n\nAbans de configurar-lo, els dispositius amb bateria protegits amb contrasenya s'han de despertar prement el bot\u00f3 del dispositiu.\nEls dispositius que no tinguin contrasenya s'afegiran tan bon punt es despertin. Ja pots despertar el dispositiu manualment mitjan\u00e7ant el bot\u00f3 o esperar a la seg\u00fcent transmissi\u00f3 de dades del dispositiu."
+            },
             "credentials": {
                 "data": {
                     "password": "Contrasenya",
@@ -34,16 +36,12 @@
                     "port": "Port"
                 }
             },
-            "user_manual": {
+            "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
                     "port": "Port"
-                }
-            },
-            "wifi_scan": {
-                "data": {
-                    "password": "Contrasenya"
-                }
+                },
+                "description": "Abans de configurar-ho, els dispositius amb bateria s'han de despertar, pots clicar el bot\u00f3 del dispositiu per a despertar-lo, ara."
             }
         }
     },
@@ -72,8 +70,18 @@
     },
     "entity": {
         "binary_sensor": {
-            "door": {
-                "name": "Porta"
+            "gas": {
+                "state_attributes": {
+                    "detected": {
+                        "state": {
+                            "heavy": "Alt",
+                            "mild": "Mitj\u00e0",
+                            "none": "Cap",
+                            "test": "Prova",
+                            "unknown": "Desconegut"
+                        }
+                    }
+                }
             }
         },
         "event": {
@@ -99,79 +107,41 @@
             }
         },
         "sensor": {
-            "charger_state": {
-                "state": {
-                    "charger_charging": "Carregant",
-                    "charger_free": "Desendollat",
-                    "charger_insert": "Endollat"
-                }
-            },
             "operation": {
                 "state": {
                     "fault": "Error",
                     "normal": "Normal",
+                    "unknown": "Desconegut",
                     "warmup": "Iniciant"
+                },
+                "state_attributes": {
+                    "self_test": {
+                        "state": {
+                            "completed": "Completat",
+                            "not_completed": "No completat",
+                            "pending": "Pendent",
+                            "running": "En funcionament"
+                        }
+                    }
                 }
             },
             "valve_status": {
                 "state": {
                     "checking": "Comprovant",
-                    "closed": "Tancada",
+                    "closed": "Tancat/ada",
                     "closing": "Tancant",
                     "failure": "Fallada",
                     "opened": "Oberta",
-                    "opening": "Obrint"
+                    "opening": "Obrint",
+                    "unknown": "Desconegut"
                 }
-            }
-        },
-        "switch": {
-            "thermostat_enabled": {
-                "name": "Term\u00f2stat activat"
-            },
-            "valve_opened": {
-                "name": "V\u00e0lvula oberta"
             }
         }
     },
     "issues": {
-        "ble_scanner_firmware_unsupported": {
-            "fix_flow": {
-                "abort": {
-                    "cannot_connect": "Ha fallat la connexi\u00f3"
-                }
-            }
-        },
-        "coiot_unconfigured": {
-            "fix_flow": {
-                "abort": {
-                    "cannot_connect": "Ha fallat la connexi\u00f3"
-                }
-            }
-        },
-        "deprecated_firmware": {
-            "fix_flow": {
-                "abort": {
-                    "cannot_connect": "Ha fallat la connexi\u00f3"
-                }
-            }
-        },
         "device_not_calibrated": {
             "description": "El dispositiu Shelly {device_name} amb adre\u00e7a IP {ip_address} necessita calibrar-se. Per calibrar el dispositiu, s'ha de reiniciar un cop enllestida la instal\u00b7laci\u00f3 a la v\u00e0lvula. Pots reiniciar el dispositiu al tauler web; v\u00e9s a 'Configuraci\u00f3' > 'Reinici del dispositiu'.",
             "title": "El dispositiu Shelly {device_name} no est\u00e0 calibrat"
-        },
-        "open_wifi_ap": {
-            "fix_flow": {
-                "abort": {
-                    "cannot_connect": "Ha fallat la connexi\u00f3"
-                }
-            }
-        },
-        "outbound_websocket_incorrectly_enabled": {
-            "fix_flow": {
-                "abort": {
-                    "cannot_connect": "Ha fallat la connexi\u00f3"
-                }
-            }
         },
         "push_update_failure": {
             "description": "Home Assistant no est\u00e0 rebent actualitzacions push del dispositiu Shelly {device_name} amb adre\u00e7a IP {ip_address}. Comprova la configuraci\u00f3 de CoIoT al tauler web del dispositiu i la configuraci\u00f3 de la teva xarxa.",
@@ -179,9 +149,6 @@
         }
     },
     "options": {
-        "abort": {
-            "cannot_connect": "Ha fallat la connexi\u00f3"
-        },
         "step": {
             "init": {
                 "data": {

@@ -30,7 +30,7 @@
                 "name": "Clean indicator light"
             },
             "eco_friendly_mode": {
-                "name": "Eco-friendly"
+                "name": "Eco friendly"
             },
             "machine_clean_reminder": {
                 "name": "Machine clean reminder"
@@ -58,12 +58,6 @@
             },
             "signal_level": {
                 "name": "Chime sound"
-            },
-            "water_heater_operation_mode": {
-                "name": "Power",
-                "state": {
-                    "off": "Standby"
-                }
             }
         },
         "climate": {
@@ -74,7 +68,7 @@
                             "auto": "Auto",
                             "high": "High",
                             "low": "Low",
-                            "medium": "Medium",
+                            "mid": "Medium",
                             "power": "Power",
                             "slow": "Slow"
                         }
@@ -102,7 +96,7 @@
                             "cliff_error": "Fall prevention sensor has an error",
                             "clutch_error": "Clutch error",
                             "compressor_error": "Compressor error",
-                            "dispensing_error": "Dispenser error",
+                            "dispensing_error": "Dispensor error",
                             "door_close_error": "Door closed error",
                             "door_lock_error": "Door lock error",
                             "door_open_error": "Door open",
@@ -131,7 +125,7 @@
                             "no_battery_error": "Robot cleaner's battery is low",
                             "no_dust_bin_error": "Dust bin is not installed",
                             "no_filter_error": "Filter error",
-                            "out_of_balance_error": "Out-of-balance load",
+                            "out_of_balance_error": "Out of balance load",
                             "overfill_error": "Overfill error",
                             "part_malfunction_error": "AIE error",
                             "power_code_connection_error": "Power cord connection error",
@@ -145,7 +139,7 @@
                             "timeout_error": "Timeout error",
                             "turbidity_sensor_error": "Turbidity sensor error",
                             "unable_to_lock_error": "Door lock error",
-                            "unbalanced_load_error": "Out-of-balance load",
+                            "unbalanced_load_error": "Out of balance load",
                             "unknown_error": "Product requires attention",
                             "vibration_sensor_error": "Vibration sensor error",
                             "water_drain_error": "Water drain error",
@@ -173,11 +167,10 @@
                             "error_during_cleaning": "Cleaning stopped due to an error",
                             "error_during_washing": "An error has occurred in the washing machine",
                             "error_has_occurred": "An error has occurred",
-                            "filter_reset_complete": "The filter lifetime has been reset",
-                            "frozen_is_complete": "Ice Plus is done",
-                            "homeguard_is_stopped": "Home Guard has stopped",
+                            "frozen_is_complete": "Ice plus is done",
+                            "homeguard_is_stopped": "Home guard has stopped",
                             "lack_of_water": "There is no water in the water tank",
-                            "motion_is_detected": "Photograph is sent as movement is detected during Home Guard",
+                            "motion_is_detected": "Photograph is sent as movement is detected during home guard",
                             "need_to_check_location": "Location check is required",
                             "pollution_is_high": "Air status is rapidly becoming bad",
                             "preheating_is_complete": "Preheating is done",
@@ -187,40 +180,12 @@
                             "styling_is_complete": "Styling is completed",
                             "time_to_change_filter": "It is time to replace the filter",
                             "time_to_change_water_filter": "You need to replace water filter",
-                            "time_to_clean": "Need for self-cleaning",
+                            "time_to_clean": "Need to selfcleaning",
                             "time_to_clean_filter": "It is time to clean the filter",
                             "timer_is_complete": "Timer has been completed",
                             "washing_is_complete": "Washing is completed",
-                            "water_filter_reset_complete": "The water filter lifetime has been reset",
                             "water_is_full": "Water is full",
                             "water_leak_has_occurred": "The dishwasher has detected a water leak"
-                        }
-                    }
-                }
-            }
-        },
-        "humidifier": {
-            "dehumidifier": {
-                "state_attributes": {
-                    "mode": {
-                        "state": {
-                            "air_clean": "Purify",
-                            "clothes_dry": "Laundry",
-                            "intensive_dry": "Spot",
-                            "quiet_humidity": "Silent",
-                            "rapid_humidity": "Jet",
-                            "smart_humidity": "Smart"
-                        }
-                    }
-                }
-            },
-            "humidifier": {
-                "state_attributes": {
-                    "mode": {
-                        "state": {
-                            "air_clean": "Purifying",
-                            "humidify": "Mist",
-                            "humidify_and_air_clean": "Mist & purifying"
                         }
                     }
                 }
@@ -243,10 +208,10 @@
                 "name": "{location} schedule turn-on"
             },
             "relative_hour_to_start_wm": {
-                "name": "Delayed start"
+                "name": "Delay starts in"
             },
             "relative_hour_to_start_wm_for_location": {
-                "name": "{location} delayed start"
+                "name": "{location} delay starts in"
             },
             "relative_hour_to_stop": {
                 "name": "Schedule turn-off"
@@ -255,10 +220,10 @@
                 "name": "{location} schedule turn-off"
             },
             "relative_hour_to_stop_wm": {
-                "name": "Delayed end"
+                "name": "Delay ends in"
             },
             "relative_hour_to_stop_wm_for_location": {
-                "name": "{location} delayed end"
+                "name": "{location} delay ends in"
             },
             "sleep_timer_relative_hour_to_stop": {
                 "name": "Sleep timer"
@@ -334,25 +299,6 @@
                     "vacation": "Vacation"
                 }
             },
-            "current_job_mode_dehumidifier": {
-                "name": "Operating mode",
-                "state": {
-                    "air_clean": "Purify",
-                    "clothes_dry": "Laundry",
-                    "intensive_dry": "Spot",
-                    "quiet_humidity": "Silent",
-                    "rapid_humidity": "Jet",
-                    "smart_humidity": "Smart"
-                }
-            },
-            "current_job_mode_ventilator": {
-                "name": "Operating mode",
-                "state": {
-                    "vent_auto": "Auto",
-                    "vent_heat_exchange": "Heat exchange",
-                    "vent_nature": "Bypass"
-                }
-            },
             "display_light": {
                 "name": "Display brightness",
                 "state": {
@@ -398,7 +344,6 @@
                 "state": {
                     "cancel": "Cancel",
                     "power_off": "Power off",
-                    "power_on": "Power on",
                     "preheating": "Preheating",
                     "start": "Start",
                     "stop": "Stop",
@@ -410,7 +355,6 @@
                 "state": {
                     "cancel": "Cancel",
                     "power_off": "Power off",
-                    "power_on": "Power on",
                     "preheating": "Preheating",
                     "start": "Start",
                     "stop": "Stop",
@@ -480,19 +424,6 @@
             },
             "brightness_for_location": {
                 "name": "{location} lighting intensity"
-            },
-            "carbon_dioxide": {
-                "name": "Carbon dioxide",
-                "state": {
-                    "bad": "Unhealthy",
-                    "good": "Good",
-                    "invalid": "Invalid",
-                    "moderate": "Moderate",
-                    "normal": "Moderate",
-                    "poor": "Poor",
-                    "unhealthy": "Unhealthy",
-                    "very_bad": "Poor"
-                }
             },
             "cock_state": {
                 "name": "UVnano",
@@ -601,9 +532,9 @@
                     "lock": "Control lock",
                     "macrosector": "Remote is in use",
                     "melting": "Wort dissolving",
-                    "monitoring_detecting": "Home Guard is active",
+                    "monitoring_detecting": "HomeGuard is active",
                     "monitoring_moving": "Going to the starting point",
-                    "monitoring_positioning": "Setting Home Guard start point",
+                    "monitoring_positioning": "Setting homeguard start point",
                     "night_dry": "Night dry",
                     "oven_setting": "Cooktop connected",
                     "pause": "Paused",
@@ -688,9 +619,9 @@
                     "lock": "Control lock",
                     "macrosector": "Remote is in use",
                     "melting": "Wort dissolving",
-                    "monitoring_detecting": "Home Guard is active",
+                    "monitoring_detecting": "HomeGuard is active",
                     "monitoring_moving": "Going to the starting point",
-                    "monitoring_positioning": "Setting Home Guard start point",
+                    "monitoring_positioning": "Setting homeguard start point",
                     "night_dry": "Night dry",
                     "oven_setting": "Cooktop connected",
                     "pause": "Paused",
@@ -734,12 +665,6 @@
             "current_temperature": {
                 "name": "Current temperature"
             },
-            "cycle_count": {
-                "name": "Cycles"
-            },
-            "cycle_count_for_location": {
-                "name": "{location} cycles"
-            },
             "day_target_temperature": {
                 "name": "Day growth temperature"
             },
@@ -758,33 +683,8 @@
             "elapsed_day_total": {
                 "name": "Brewing duration"
             },
-            "energy_usage_last_month": {
-                "name": "Energy last month"
-            },
-            "energy_usage_this_month": {
-                "name": "Energy this month"
-            },
-            "energy_usage_yesterday": {
-                "name": "Energy yesterday"
-            },
             "filter_lifetime": {
                 "name": "Filter remaining"
-            },
-            "flavor_capsule_1": {
-                "name": "First flavor",
-                "state": {
-                    "coriander": "Coriander",
-                    "coriander_seed": "Coriander",
-                    "orange": "Orange"
-                }
-            },
-            "flavor_capsule_2": {
-                "name": "Second flavor",
-                "state": {
-                    "coriander": "Coriander",
-                    "coriander_seed": "Coriander",
-                    "orange": "Orange"
-                }
             },
             "flavor_info": {
                 "name": "Flavor"
@@ -819,28 +719,6 @@
                     "ext_herb": "Herbs",
                     "ext_leaf": "Vegetables",
                     "standard": "Auto"
-                }
-            },
-            "hop_oil_capsule_1": {
-                "name": "First hop",
-                "state": {
-                    "cascade": "Cascade",
-                    "chinook": "Chinook",
-                    "citrussy": "Citrussy",
-                    "fuggles": "Fuggles",
-                    "goldings": "Goldings",
-                    "hallertau": "Hallertau"
-                }
-            },
-            "hop_oil_capsule_2": {
-                "name": "Second hop",
-                "state": {
-                    "cascade": "Cascade",
-                    "chinook": "Chinook",
-                    "citrussy": "Citrussy",
-                    "fuggles": "Fuggles",
-                    "goldings": "Goldings",
-                    "hallertau": "Hallertau"
                 }
             },
             "hop_oil_info": {
@@ -915,10 +793,10 @@
                 "name": "{location} schedule turn-on"
             },
             "relative_to_start_wm": {
-                "name": "Delayed start"
+                "name": "Delay starts in"
             },
             "relative_to_start_wm_for_location": {
-                "name": "{location} delayed start"
+                "name": "{location} delay starts in"
             },
             "relative_to_stop": {
                 "name": "Schedule turn-off"
@@ -927,10 +805,10 @@
                 "name": "{location} schedule turn-off"
             },
             "relative_to_stop_wm": {
-                "name": "Delayed end"
+                "name": "Delay ends in"
             },
             "relative_to_stop_wm_for_location": {
-                "name": "{location} delayed end"
+                "name": "{location} delay ends in"
             },
             "remain": {
                 "name": "Remaining time"
@@ -946,15 +824,6 @@
                     "rinselevel_3": "3",
                     "rinselevel_4": "4"
                 }
-            },
-            "room_air_current_temperature": {
-                "name": "Indoor temperature"
-            },
-            "room_in_water_current_temperature": {
-                "name": "Inlet temperature"
-            },
-            "room_out_water_current_temperature": {
-                "name": "Outlet temperature"
             },
             "running": {
                 "name": "Running time"
@@ -1038,9 +907,6 @@
                     "normal": "Good"
                 }
             },
-            "top_filter_remain_percent": {
-                "name": "Upper filter remaining"
-            },
             "total": {
                 "name": "Total time"
             },
@@ -1059,18 +925,6 @@
             },
             "used_time": {
                 "name": "Water filter used"
-            },
-            "water_filter_1_remain_percent": {
-                "name": "Water filter"
-            },
-            "water_filter_2_remain_percent": {
-                "name": "Water filter stage 2"
-            },
-            "water_filter_3_remain_percent": {
-                "name": "Water filter stage 3"
-            },
-            "water_filter_state": {
-                "name": "Water filter"
             },
             "water_type": {
                 "name": "Type"
@@ -1098,23 +952,14 @@
             }
         },
         "switch": {
-            "air_clean_operation_mode": {
-                "name": "Air purify"
-            },
             "auto_mode": {
                 "name": "Auto mode"
             },
-            "display_light": {
-                "name": "Lighting"
-            },
-            "express_fridge": {
-                "name": "Express cool"
-            },
             "express_mode": {
-                "name": "Express mode"
+                "name": "Ice plus"
             },
             "hot_water_mode": {
-                "name": "Heating water"
+                "name": "Hot water"
             },
             "humidity_warm_mode": {
                 "name": "Warm mist"
@@ -1146,11 +991,6 @@
             "warm_mode": {
                 "name": "Heating"
             }
-        }
-    },
-    "exceptions": {
-        "failed_to_connect_mqtt": {
-            "message": "Failed to connect MQTT: {error}"
         }
     }
 }

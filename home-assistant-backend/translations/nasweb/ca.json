@@ -18,19 +18,9 @@
             }
         }
     },
-    "entity": {
-        "climate": {
-            "thermostat": {
-                "name": "Term\u00f2stat"
-            }
-        },
-        "sensor": {
-            "sensor_input": {
-                "state": {
-                    "active": "Actiu",
-                    "normal": "Normal"
-                }
-            }
+    "exceptions": {
+        "config_entry_error_missing_internal_url": {
+            "message": "Assegura't que Home Assistant tingui un URL intern v\u00e0lid"
         }
     }
 }

@@ -24,7 +24,8 @@
                     "description": "S'ha enviat una contrasenya d'un sol \u00fas mitjan\u00e7ant **notify.{notify_service}**. Introdueix-la a continuaci\u00f3:",
                     "title": "Verificaci\u00f3 de la configuraci\u00f3"
                 }
-            }
+            },
+            "title": "Contrasenya d'un sol \u00fas del servei de notificacions"
         },
         "totp": {
             "error": {
@@ -32,6 +33,7 @@
             },
             "step": {
                 "init": {
+                    "description": "Per activar la verificaci\u00f3 en dos passos mitjan\u00e7ant contrasenyes d'un sol \u00fas basades en temps, escaneja el codi QR amb la teva aplicaci\u00f3 de verificaci\u00f3. Si no en tens cap, et recomanem [Google Authenticator](https://support.google.com/accounts/answer/1066447) o b\u00e9 [Authy](https://authy.com/). \n\n {qr_code} \n \nDespr\u00e9s d'escanejar el codi QR, introdueix el codi de sis d\u00edgits proporcionat per l'aplicaci\u00f3. Si tens problemes per escanejar el codi QR, fes una configuraci\u00f3 manual amb el codi **`{code}`**.",
                     "title": "Configura la verificaci\u00f3 en dos passos utilitzant TOTP"
                 }
             },

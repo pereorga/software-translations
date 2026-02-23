@@ -16,7 +16,7 @@
                     "longitude": "Longitude",
                     "name": "Name"
                 },
-                "description": "To generate API key go to {developer_registration_url}"
+                "description": "To generate API key go to https://developer.airly.eu/register"
             }
         }
     },
@@ -28,14 +28,6 @@
             "co": {
                 "name": "Carbon monoxide"
             }
-        }
-    },
-    "exceptions": {
-        "no_station": {
-            "message": "An error occurred while retrieving data from the Airly API for {entry}: no measuring stations in this area"
-        },
-        "update_error": {
-            "message": "An error occurred while retrieving data from the Airly API for {entry}: {error}"
         }
     },
     "system_health": {

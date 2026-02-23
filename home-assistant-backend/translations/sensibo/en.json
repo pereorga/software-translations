@@ -18,7 +18,7 @@
                     "api_key": "API key"
                 },
                 "data_description": {
-                    "api_key": "Follow the [documentation]({url}) to get your API key"
+                    "api_key": "Follow the [documentation]({url}) to get your api key"
                 }
             },
             "reconfigure": {
@@ -26,7 +26,7 @@
                     "api_key": "API key"
                 },
                 "data_description": {
-                    "api_key": "Follow the [documentation]({url}) to get your API key"
+                    "api_key": "Follow the [documentation]({url}) to get your api key"
                 }
             },
             "user": {
@@ -34,7 +34,7 @@
                     "api_key": "API key"
                 },
                 "data_description": {
-                    "api_key": "Follow the [documentation]({url}) to get your API key"
+                    "api_key": "Follow the [documentation]({url}) to get your api key"
                 }
             }
         }
@@ -83,21 +83,6 @@
                             "strong": "Strong"
                         }
                     },
-                    "swing_horizontal_mode": {
-                        "state": {
-                            "fixedcenter": "Fixed center",
-                            "fixedcenterleft": "Fixed center left",
-                            "fixedcenterright": "Fixed center right",
-                            "fixedleft": "Fixed left",
-                            "fixedleftright": "Fixed left right",
-                            "fixedright": "Fixed right",
-                            "rangecenter": "Range center",
-                            "rangefull": "Range full",
-                            "rangeleft": "Range left",
-                            "rangeright": "Range right",
-                            "stopped": "Off"
-                        }
-                    },
                     "swing_mode": {
                         "state": {
                             "both": "Both",
@@ -126,6 +111,22 @@
             }
         },
         "select": {
+            "horizontalswing": {
+                "name": "Horizontal swing",
+                "state": {
+                    "fixedcenter": "Fixed center",
+                    "fixedcenterleft": "Fixed center left",
+                    "fixedcenterright": "Fixed center right",
+                    "fixedleft": "Fixed left",
+                    "fixedleftright": "Fixed left right",
+                    "fixedright": "Fixed right",
+                    "rangecenter": "Range center",
+                    "rangefull": "Range full",
+                    "rangeleft": "Range left",
+                    "rangeright": "Range right",
+                    "stopped": "Off"
+                }
+            },
             "light": {
                 "name": "Light",
                 "state": {
@@ -258,8 +259,6 @@
                             "fixedright": "Fixed right",
                             "rangecenter": "Range center",
                             "rangefull": "Range full",
-                            "rangeleft": "Range left",
-                            "rangeright": "Range right",
                             "stopped": "Off"
                         }
                     },
@@ -382,7 +381,7 @@
                 "name": "Timer",
                 "state_attributes": {
                     "id": {
-                        "name": "ID"
+                        "name": "Id"
                     },
                     "turn_on": {
                         "name": "Turns on",
@@ -396,23 +395,23 @@
         }
     },
     "exceptions": {
-        "auth_error": {
-            "message": "Authentication failed, please update your API key"
-        },
         "climate_react_not_available": {
             "message": "Use the Sensibo 'Enable Climate React' action once to enable the switch, or use the Sensibo app"
         },
         "fan_mode_not_supported": {
             "message": "Climate fan mode {fan_mode} is not supported by the integration, please open an issue"
         },
-        "horizontal_swing_not_supported": {
-            "message": "Climate horizontal swing mode {horizontal_swing_mode} is not supported by the integration, please open an issue"
+        "no_fan_level_in_features": {
+            "message": "Current mode doesn't support setting fan level"
         },
-        "mode_not_exist": {
-            "message": "The entity does not support the chosen mode"
+        "no_swing_in_features": {
+            "message": "Current mode doesn't support setting swing"
         },
-        "no_data": {
-            "message": "No devices found, ensure your Sensibo devices are correctly set up and have a remote defined"
+        "no_target_temperature_in_features": {
+            "message": "Current mode doesn't support setting target temperature"
+        },
+        "select_option_not_available": {
+            "message": "Current mode {hvac_mode} doesn't support setting {key}"
         },
         "service_raised": {
             "message": "Could not perform action for {name} with error {error}"
@@ -422,47 +421,6 @@
         },
         "swing_not_supported": {
             "message": "Climate swing mode {swing_mode} is not supported by the integration, please open an issue"
-        },
-        "update_error": {
-            "message": "There was an error updating from the Sensibo API with the error: {error}"
-        }
-    },
-    "selector": {
-        "assume_state": {
-            "options": {
-                "off": "Off",
-                "on": "On"
-            }
-        },
-        "hvac_mode": {
-            "options": {
-                "auto": "Auto",
-                "cool": "Cool",
-                "dry": "Dry",
-                "fan": "Fan only",
-                "heat": "Heat",
-                "off": "Off"
-            }
-        },
-        "light_mode": {
-            "options": {
-                "dim": "Dim",
-                "off": "Off",
-                "on": "On"
-            }
-        },
-        "sensitivity": {
-            "options": {
-                "normal": "Normal",
-                "sensitive": "Sensitive"
-            }
-        },
-        "smart_type": {
-            "options": {
-                "feelslike": "Feels like",
-                "humidity": "Humidity",
-                "temperature": "Temperature"
-            }
         }
     },
     "services": {
@@ -506,11 +464,11 @@
             "description": "Enables and configures Pure Boost settings.",
             "fields": {
                 "ac_integration": {
-                    "description": "Integrate with air conditioner.",
+                    "description": "Integrate with Air Conditioner.",
                     "name": "AC integration"
                 },
                 "geo_integration": {
-                    "description": "Integrate with presence.",
+                    "description": "Integrate with Presence.",
                     "name": "Geo integration"
                 },
                 "indoor_integration": {
@@ -526,7 +484,7 @@
                     "name": "Sensitivity"
                 }
             },
-            "name": "Enable Pure Boost"
+            "name": "Enable pure boost"
         },
         "enable_timer": {
             "description": "Enables the timer with custom time.",
@@ -542,7 +500,7 @@
             "description": "Sets full state for Sensibo device.",
             "fields": {
                 "fan_mode": {
-                    "description": "Set fan mode.",
+                    "description": "set fan mode.",
                     "name": "Fan mode"
                 },
                 "horizontal_swing_mode": {
@@ -567,16 +525,6 @@
                 }
             },
             "name": "Set full state"
-        },
-        "get_device_capabilities": {
-            "description": "Retrieves the device capabilities for a specific device according to API requirements.",
-            "fields": {
-                "hvac_mode": {
-                    "description": "HVAC operation mode.",
-                    "name": "HVAC mode"
-                }
-            },
-            "name": "Get device mode capabilities"
         }
     }
 }

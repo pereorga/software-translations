@@ -1,35 +1,24 @@
 {
     "common": {
         "data_description_api_token": "The API token of your Mealie instance from your user profile within Mealie.",
-        "data_description_host": "The URL of your Mealie instance, for example, {example_url}.",
+        "data_description_host": "The URL of your Mealie instance, for example, http://192.168.1.123:1234",
         "data_description_verify_ssl": "Should SSL certificates be verified? This should be off for self-signed certificates."
     },
     "config": {
         "abort": {
             "already_configured": "Service is already configured",
-            "already_in_progress": "Configuration flow is already in progress",
             "reauth_successful": "Re-authentication was successful",
             "reconfigure_successful": "Re-configuration was successful",
             "wrong_account": "You have to use the same account that was used to configure the integration."
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "ingress_url": "Ingress URLs are only used for accessing the Mealie UI. Use your Home Assistant IP address and the network port within the configuration tab of the Mealie app.",
+            "ingress_url": "Ingress URLs are only used for accessing the Mealie UI. Use your Home Assistant IP address and the network port within the configuration tab of the Mealie add-on.",
             "invalid_auth": "Invalid authentication",
             "mealie_version": "Minimum required version is v1.0.0. Please upgrade Mealie and then retry.",
             "unknown": "Unexpected error"
         },
         "step": {
-            "hassio_confirm": {
-                "data": {
-                    "api_token": "API token"
-                },
-                "data_description": {
-                    "api_token": "The API token of your Mealie instance from your user profile within Mealie."
-                },
-                "description": "Do you want to configure Home Assistant to connect to the Mealie instance provided by the app: {addon}?",
-                "title": "Mealie via Home Assistant app"
-            },
             "reauth_confirm": {
                 "data": {
                     "api_token": "API token"
@@ -47,7 +36,7 @@
                 },
                 "data_description": {
                     "api_token": "The API token of your Mealie instance from your user profile within Mealie.",
-                    "host": "The URL of your Mealie instance, for example, {example_url}.",
+                    "host": "The URL of your Mealie instance, for example, http://192.168.1.123:1234",
                     "verify_ssl": "Should SSL certificates be verified? This should be off for self-signed certificates."
                 },
                 "description": "Please reconfigure with Mealie."
@@ -60,7 +49,7 @@
                 },
                 "data_description": {
                     "api_token": "The API token of your Mealie instance from your user profile within Mealie.",
-                    "host": "The URL of your Mealie instance, for example, {example_url}.",
+                    "host": "The URL of your Mealie instance, for example, http://192.168.1.123:1234",
                     "verify_ssl": "Should SSL certificates be verified? This should be off for self-signed certificates."
                 }
             }
@@ -71,23 +60,14 @@
             "breakfast": {
                 "name": "Breakfast"
             },
-            "dessert": {
-                "name": "Dessert"
-            },
             "dinner": {
                 "name": "Dinner"
-            },
-            "drink": {
-                "name": "Drink"
             },
             "lunch": {
                 "name": "Lunch"
             },
             "side": {
                 "name": "Side"
-            },
-            "snack": {
-                "name": "Snack"
             }
         },
         "sensor": {
@@ -135,14 +115,8 @@
         "integration_not_found": {
             "message": "Integration \"{target}\" not found in registry."
         },
-        "invalid_mealplan_entry_type": {
-            "message": "Entry type {mealplan_type} is not valid for this Mealie version."
-        },
         "item_not_found_error": {
             "message": "Item {shopping_list_item} not found."
-        },
-        "no_recipes_found": {
-            "message": "No recipes found matching your search."
         },
         "not_loaded": {
             "message": "{target} is not loaded."
@@ -173,21 +147,18 @@
         "mealplan_entry_type": {
             "options": {
                 "breakfast": "Breakfast",
-                "dessert": "Dessert",
                 "dinner": "Dinner",
-                "drink": "Drink",
                 "lunch": "Lunch",
-                "side": "Side",
-                "snack": "Snack"
+                "side": "Side"
             }
         }
     },
     "services": {
         "get_mealplan": {
-            "description": "Gets a mealplan from Mealie",
+            "description": "Get mealplan from Mealie",
             "fields": {
                 "config_entry_id": {
-                    "description": "The Mealie instance to use for this action.",
+                    "description": "Select the Mealie instance to get mealplan from",
                     "name": "Mealie instance"
                 },
                 "end_date": {
@@ -202,10 +173,10 @@
             "name": "Get mealplan"
         },
         "get_recipe": {
-            "description": "Gets a recipe from Mealie",
+            "description": "Get recipe from Mealie",
             "fields": {
                 "config_entry_id": {
-                    "description": "The Mealie instance to use for this action.",
+                    "description": "Select the Mealie instance to get mealplan from",
                     "name": "Mealie instance"
                 },
                 "recipe_id": {
@@ -215,29 +186,11 @@
             },
             "name": "Get recipe"
         },
-        "get_recipes": {
-            "description": "Searches for recipes with any matching properties in Mealie",
-            "fields": {
-                "config_entry_id": {
-                    "description": "The Mealie instance to use for this action.",
-                    "name": "Mealie instance"
-                },
-                "result_limit": {
-                    "description": "Maximum number of recipes to return (default: 10).",
-                    "name": "Result limit"
-                },
-                "search_terms": {
-                    "description": "Terms to search for in recipe properties.",
-                    "name": "Search terms"
-                }
-            },
-            "name": "Get recipes"
-        },
         "import_recipe": {
-            "description": "Imports a recipe from an URL",
+            "description": "Import recipe from an URL",
             "fields": {
                 "config_entry_id": {
-                    "description": "The Mealie instance to use for this action.",
+                    "description": "Select the Mealie instance to get mealplan from",
                     "name": "Mealie instance"
                 },
                 "include_tags": {
@@ -252,10 +205,10 @@
             "name": "Import recipe"
         },
         "set_mealplan": {
-            "description": "Sets a mealplan for a specific date",
+            "description": "Set a mealplan for a specific date",
             "fields": {
                 "config_entry_id": {
-                    "description": "The Mealie instance to use for this action.",
+                    "description": "Select the Mealie instance to get mealplan from",
                     "name": "Mealie instance"
                 },
                 "date": {
@@ -282,10 +235,10 @@
             "name": "Set a mealplan"
         },
         "set_random_mealplan": {
-            "description": "Sets a random mealplan for a specific date",
+            "description": "Set a random mealplan for a specific date",
             "fields": {
                 "config_entry_id": {
-                    "description": "The Mealie instance to use for this action.",
+                    "description": "Select the Mealie instance to get mealplan from",
                     "name": "Mealie instance"
                 },
                 "date": {

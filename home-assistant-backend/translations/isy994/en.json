@@ -7,7 +7,7 @@
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "invalid_host": "The host entry was not in full URL format, e.g., {sample_ip}",
+            "invalid_host": "The host entry was not in full URL format, e.g., http://192.168.10.100:80",
             "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error"
         },
@@ -28,7 +28,7 @@
                     "tls": "The TLS version of the ISY controller.",
                     "username": "Username"
                 },
-                "description": "The host entry must be in full URL format, e.g., {sample_ip}",
+                "description": "The host entry must be in full URL format, e.g., http://192.168.10.100:80",
                 "title": "Connect to your ISY"
             }
         }
@@ -43,7 +43,7 @@
                     "variable_sensor_string": "Variable Sensor String"
                 },
                 "description": "Set the options for the ISY integration: \n \u2022 Node Sensor String: Any device or folder that contains 'Node Sensor String' in the name will be treated as a sensor or binary sensor. \n \u2022 Ignore String: Any device with 'Ignore String' in the name will be ignored. \n \u2022 Variable Sensor String: Any variable that contains 'Variable Sensor String' will be added as a sensor. \n \u2022 Restore Light Brightness: If enabled, the previous brightness will be restored when turning on a light instead of the device's built-in On-Level.",
-                "title": "ISY options"
+                "title": "ISY Options"
             }
         }
     },
@@ -59,14 +59,14 @@
             "name": "Delete Z-Wave lock user code"
         },
         "get_zwave_parameter": {
-            "description": "Requests a Z-Wave device parameter via the ISY. The parameter value will be returned as an entity extra state attribute with the name \"ZW_#\" where \"#\" is the parameter number.",
+            "description": "Requests a Z-Wave device parameter via the ISY. The parameter value will be returned as a entity extra state attribute with the name \"ZW_#\" where \"#\" is the parameter number.",
             "fields": {
                 "parameter": {
                     "description": "The parameter number to retrieve from the device.",
                     "name": "Parameter"
                 }
             },
-            "name": "Get Z-Wave parameter"
+            "name": "Get Z-Wave Parameter"
         },
         "rename_node": {
             "description": "Renames a node or group (scene) on the ISY. Note: this will not automatically change the Home Assistant entity name or entity ID to match. The entity name and ID will only be updated after reloading the integration or restarting Home Assistant, and ONLY IF you have not already customized the name within Home Assistant.",
@@ -96,7 +96,7 @@
                     "name": "Address"
                 },
                 "command": {
-                    "description": "The ISY program command to be sent.",
+                    "description": "The ISY Program Command to be sent.",
                     "name": "Command"
                 },
                 "isy": {
@@ -111,7 +111,7 @@
             "name": "Send program command"
         },
         "send_raw_node_command": {
-            "description": "Sends a \u201craw\u201d (e.g., DON, DOF) ISY REST device command to a node using its Home Assistant entity ID. This is useful for devices that aren\u2019t fully supported in Home Assistant yet, such as controls for many NodeServer nodes.",
+            "description": "Set the options for the ISY integration: \n \u2022 Node Sensor String: Any device or folder that contains 'Node Sensor String' in the name will be treated as a sensor or binary sensor. \n \u2022 Ignore String: Any device with 'Ignore String' in the name will be ignored. \n \u2022 Variable Sensor String: Any variable that contains 'Variable Sensor String' will be added as a sensor. \n \u2022 Restore Light Brightness: If enabled, the previous brightness will be restored when turning on a light instead of the device's built-in On-Level.",
             "fields": {
                 "command": {
                     "description": "The ISY REST command to be sent to the device.",
@@ -147,7 +147,7 @@
             "name": "Set Z-Wave lock user code"
         },
         "set_zwave_parameter": {
-            "description": "Updates a Z-Wave device parameter via the ISY. The parameter value will also be returned as an entity extra state attribute with the name \"ZW_#\" where \"#\" is the parameter number.",
+            "description": "Updates a Z-Wave device parameter via the ISY. The parameter value will also be returned as a entity extra state attribute with the name \"ZW_#\" where \"#\" is the parameter number.",
             "fields": {
                 "parameter": {
                     "description": "The parameter number to set on the end device.",
@@ -167,10 +167,10 @@
     },
     "system_health": {
         "info": {
-            "device_connected": "ISY connected",
-            "host_reachable": "Host reachable",
-            "last_heartbeat": "Last heartbeat time",
-            "websocket_status": "Event socket status"
+            "device_connected": "ISY Connected",
+            "host_reachable": "Host Reachable",
+            "last_heartbeat": "Last Heartbeat Time",
+            "websocket_status": "Event Socket Status"
         }
     }
 }

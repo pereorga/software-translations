@@ -3,9 +3,16 @@
         "climate": {
             "ubercool": {
                 "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto_high": "Autom\u00e0tic (alt)",
+                            "auto_low": "Autom\u00e0tic (baix)",
+                            "on_high": "Engegat (alt)",
+                            "on_low": "Engegat (baix)"
+                        }
+                    },
                     "swing_horizontal_mode": {
                         "state": {
-                            "auto": "Auto",
                             "off": "OFF"
                         }
                     },
@@ -14,7 +21,7 @@
                             "1": "1",
                             "2": "2",
                             "3": "3",
-                            "auto": "Auto",
+                            "auto": "Autom\u00e0tic",
                             "off": "OFF"
                         }
                     }
@@ -37,12 +44,21 @@
                 "state_attributes": {
                     "preset_mode": {
                         "state": {
-                            "auto": "Auto",
+                            "auto": "Autom\u00e0tic",
                             "on": "ON",
                             "sleep": "Dormir",
                             "smart": "Intel\u00b7ligent"
                         }
                     }
+                }
+            }
+        },
+        "select": {
+            "speed": {
+                "state": {
+                    "light_speed": "Velocitat de la llum",
+                    "ludicrous_speed": "Velocitat insensata",
+                    "ridiculous_speed": "Velocitat rid\u00edcula"
                 }
             }
         },
@@ -54,6 +70,15 @@
                     "comfort": "Confort",
                     "eco": "Eco",
                     "sleep": "Dormint"
+                }
+            }
+        },
+        "vacuum": {
+            "model_s": {
+                "state_attributes": {
+                    "cleaned_area": {
+                        "name": "\u00c0rea netejada"
+                    }
                 }
             }
         }

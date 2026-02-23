@@ -1,7 +1,6 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El compte ja est\u00e0 configurat",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
@@ -32,7 +31,8 @@
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
-                }
+                },
+                "title": "Inici de sessi\u00f3 amb un compte de Ring"
             }
         }
     },
@@ -40,11 +40,9 @@
         "binary_sensor": {
             "ding": {
                 "name": "Ding"
-            }
-        },
-        "button": {
-            "open_door": {
-                "name": "Obre la porta"
+            },
+            "motion": {
+                "name": "Moviment"
             }
         },
         "light": {
@@ -90,6 +88,9 @@
             },
             "wifi_signal_category": {
                 "name": "Categoria del senyal Wi-Fi"
+            },
+            "wifi_signal_strength": {
+                "name": "Pot\u00e8ncia del senyal Wi-Fi"
             }
         },
         "siren": {
@@ -104,11 +105,6 @@
             "siren": {
                 "name": "Sirena"
             }
-        }
-    },
-    "exceptions": {
-        "no_subscription": {
-            "message": "Cal tenir la subscripci\u00f3 Ring Protect per a prendre imatges"
         }
     },
     "issues": {

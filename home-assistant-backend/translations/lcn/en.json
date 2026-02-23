@@ -1,10 +1,10 @@
 {
     "config": {
         "abort": {
-            "already_configured": "PCHK connection using the same IP address/port is already configured.",
             "reconfigure_successful": "Re-configuration was successful"
         },
         "error": {
+            "already_configured": "PCHK connection using the same ip address/port is already configured.",
             "authentication_error": "Authentication failed. Wrong username or password.",
             "connection_refused": "Unable to connect to PCHK. Check IP and port.",
             "license_error": "Maximum number of connections was reached. An additional licence key is required."
@@ -22,12 +22,7 @@
                 },
                 "data_description": {
                     "acknowledge": "Retry sendig commands if no expected response is received from modules (increases bus traffic).",
-                    "dim_mode": "The number of steps used for dimming outputs of all LCN modules.",
-                    "ip_address": "IP address or hostname of the PCHK server.",
-                    "password": "Password for authorization on the PCHK server.",
-                    "port": "Port used by the PCHK server.",
-                    "sk_num_tries": "If you have a segment coupler in your LCN installation, increase this number to at least 3, so all segment couplers are identified correctly.",
-                    "username": "Username for authorization on the PCHK server."
+                    "dim_mode": "The number of steps used for dimming outputs of all LCN modules."
                 },
                 "description": "Reconfigure connection to LCN host.",
                 "title": "Reconfigure LCN host"
@@ -45,13 +40,7 @@
                 },
                 "data_description": {
                     "acknowledge": "Retry sendig commands if no expected response is received from modules (increases bus traffic).",
-                    "dim_mode": "The number of steps used for dimming outputs of all LCN modules.",
-                    "host": "Name of the LCN integration entry.",
-                    "ip_address": "IP address or hostname of the PCHK server.",
-                    "password": "Password for authorization on the PCHK server.",
-                    "port": "Port used by the PCHK server.",
-                    "sk_num_tries": "If you have a segment coupler in your LCN installation, increase this number to at least 3, so all segment couplers are identified correctly.",
-                    "username": "Username for authorization on the PCHK server."
+                    "dim_mode": "The number of steps used for dimming outputs of all LCN modules."
                 },
                 "description": "Set up new connection to LCN host.",
                 "title": "Set up LCN host"
@@ -74,29 +63,60 @@
         }
     },
     "exceptions": {
-        "cannot_connect": {
-            "message": "Unable to connect to {config_entry_title}."
+        "invalid_address": {
+            "message": "LCN device for given address has not been configured."
         },
         "invalid_device_id": {
-            "message": "LCN device for given device ID {device_id} has not been configured."
+            "message": "LCN device for given device ID has not been configured."
         },
-        "invalid_domain": {
-            "message": "Invalid domain {domain}."
+        "no_device_identifier": {
+            "message": "No device identifier provided. Please provide the device ID."
+        }
+    },
+    "issues": {
+        "deprecated_address_parameter": {
+            "description": "The 'address' parameter in the LCN action calls is deprecated. The 'device ID' parameter should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "title": "Deprecated 'address' parameter"
         },
-        "invalid_length_of_states_string": {
-            "message": "Invalid length of states string. Expected 8 characters."
+        "deprecated_keylock_sensor": {
+            "description": "Your LCN key lock binary sensor entity `{entity}` is being used in automations or scripts. A key lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "title": "Deprecated LCN key lock binary sensor"
         },
-        "invalid_lock_keys_table": {
-            "message": "Invalid table for locking keys. Only table A allowed when locking for a specific time."
-        },
-        "invalid_send_keys_action": {
-            "message": "Invalid state for sending keys. Only 'hit' allowed for deferred sending."
+        "deprecated_regulatorlock_sensor": {
+            "description": "Your LCN regulator lock binary sensor entity `{entity}` is being used in automations or scripts. A regulator lock switch entity is available and should be used going forward.\n\nPlease adjust your automations or scripts to fix this issue.",
+            "title": "Deprecated LCN regulator lock binary sensor"
         }
     },
     "services": {
+        "address_to_device_id": {
+            "description": "Convert LCN address to device ID.",
+            "fields": {
+                "host": {
+                    "description": "Host name as given in the integration panel.",
+                    "name": "Host name"
+                },
+                "id": {
+                    "description": "Target module or group ID.",
+                    "name": "Module or group ID"
+                },
+                "segment_id": {
+                    "description": "Target segment ID.",
+                    "name": "Segment ID"
+                },
+                "type": {
+                    "description": "Target type.",
+                    "name": "Type"
+                }
+            },
+            "name": "Address to device ID"
+        },
         "dyn_text": {
             "description": "Sends dynamic text to LCN-GTxD displays.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -115,6 +135,10 @@
         "led": {
             "description": "Sets the LED state.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -131,8 +155,12 @@
             "name": "LED"
         },
         "lock_keys": {
-            "description": "Sets the key lock states.",
+            "description": "Locks keys.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -159,6 +187,10 @@
         "lock_regulator": {
             "description": "Locks a regulator setpoint.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -177,6 +209,10 @@
         "output_abs": {
             "description": "Sets absolute brightness of output port in percent.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "brightness": {
                     "description": "Absolute brightness.",
                     "name": "Brightness"
@@ -199,6 +235,10 @@
         "output_rel": {
             "description": "Sets relative brightness of output port in percent.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "brightness": {
                     "description": "Relative brightness.",
                     "name": "Brightness"
@@ -217,6 +257,10 @@
         "output_toggle": {
             "description": "Toggles output port.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -235,6 +279,10 @@
         "pck": {
             "description": "Sends arbitrary PCK command.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -247,14 +295,18 @@
             "name": "PCK"
         },
         "relays": {
-            "description": "Sets the relay states.",
+            "description": "Sets the relays status.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
                 },
                 "state": {
-                    "description": "Relay states as string (1=on, 2=off, t=toggle, -=no change).",
+                    "description": "Relays states as string (1=on, 2=off, t=toggle, -=no change).",
                     "name": "State"
                 }
             },
@@ -263,6 +315,10 @@
         "send_keys": {
             "description": "Sends keys (which executes bound commands).",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -289,6 +345,10 @@
         "var_abs": {
             "description": "Sets absolute value of a variable or setpoint.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -311,6 +371,10 @@
         "var_rel": {
             "description": "Shift value of a variable, setpoint or threshold.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"
@@ -337,6 +401,10 @@
         "var_reset": {
             "description": "Resets value of variable or setpoint.",
             "fields": {
+                "address": {
+                    "description": "Module address.",
+                    "name": "Address"
+                },
                 "device_id": {
                     "description": "The device ID of the LCN module or group.",
                     "name": "Device"

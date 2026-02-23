@@ -79,6 +79,10 @@
             "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 amb la seva pr\u00f2pia clau o entreada, s'ha de configurar a trav\u00e9s de les plataformes compatibles. \n\nPer resoldre aix\u00f2: \n\n1. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n2. Reinicia Home Assistant.",
             "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML amb la seva pr\u00f2pia clau o entrada"
         },
+        "python_version": {
+            "description": "La versi\u00f3 actual de Python {current_python_version} est\u00e0 obsoleta per funcionar amb Home Assistant i s'eliminar\u00e0 a Home Assistant {breaks_in_ha_version}. Si us plau, actualitza Python a la versi\u00f3 {required_python_version} per evitar que la teva inst\u00e0ncia de Home Assistant s'espatlli.",
+            "title": "S'est\u00e0 eliminant la compatibilitat amb Python {current_python_version}"
+        },
         "storage_corruption": {
             "fix_flow": {
                 "step": {
@@ -92,10 +96,14 @@
     },
     "services": {
         "reload_all": {
+            "description": "Torna a carregar tota la configuraci\u00f3 YAML que es pugui actualitzar sense reiniciar Home Assistant.",
             "name": "Torna a carregar-ho tot"
         },
         "reload_config_entry": {
             "description": "Recarrega l'entrada de configuraci\u00f3 especificada."
+        },
+        "reload_core_config": {
+            "description": "Recarrega la configuraci\u00f3 del nucli des de la configuraci\u00f3 YAML."
         },
         "restart": {
             "fields": {
@@ -123,7 +131,7 @@
             "name": "Atura"
         },
         "toggle": {
-            "description": "Acci\u00f3 gen\u00e8rica per activar o desactivar (ON/OFF) dispositius de qualsevol domini.",
+            "description": "Acci\u00f3 gen\u00e8rica per commutar (ON/OFF) dispositius de qualsevol domini.",
             "name": "Commutaci\u00f3 gen\u00e8rica"
         },
         "turn_off": {

@@ -3,6 +3,7 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
+            "no_devices_found": "No s'han trobat dispositius a la xarxa",
             "not_supported": "Dispositiu no compatible"
         },
         "flow_title": "{name}",
@@ -21,31 +22,16 @@
     "entity": {
         "sensor": {
             "mode": {
-                "name": "Mode de raspallat",
-                "state": {
-                    "off": "OFF"
-                }
+                "name": "Mode de raspallat"
             },
             "number_of_sectors": {
                 "name": "Nombre de sectors"
             },
             "pressure": {
-                "name": "Pressi\u00f3",
-                "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "normal": "Normal"
-                }
+                "name": "Pressi\u00f3"
             },
             "sector": {
                 "name": "Sector"
-            },
-            "toothbrush_state": {
-                "state": {
-                    "charging": "Carregant",
-                    "idle": "Inactiu",
-                    "off": "OFF"
-                }
             }
         }
     }

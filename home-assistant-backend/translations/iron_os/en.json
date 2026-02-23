@@ -6,13 +6,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "cannot_connect": "Failed to connect",
-            "no_devices_found": "No devices found on the network",
-            "unknown": "Unexpected error"
-        },
-        "error": {
-            "cannot_connect": "Failed to connect",
-            "unknown": "Unexpected error"
+            "no_devices_found": "No devices found on the network"
         },
         "step": {
             "bluetooth_confirm": {
@@ -35,14 +29,6 @@
                 "name": "Soldering tip"
             }
         },
-        "button": {
-            "settings_reset": {
-                "name": "Restore default settings"
-            },
-            "settings_save": {
-                "name": "Save settings"
-            }
-        },
         "number": {
             "accel_sensitivity": {
                 "name": "Motion sensitivity"
@@ -55,9 +41,6 @@
             },
             "display_brightness": {
                 "name": "Display brightness"
-            },
-            "hall_effect_sleep_time": {
-                "name": "Hall sensor sleep timeout"
             },
             "hall_sensitivity": {
                 "name": "Hall effect sensitivity"
@@ -145,10 +128,10 @@
                     "loop": "Loop",
                     "off": "Off",
                     "seconds_1": "1 second",
-                    "seconds_2": "2 seconds",
-                    "seconds_3": "3 seconds",
-                    "seconds_4": "4 seconds",
-                    "seconds_5": "5 seconds"
+                    "seconds_2": "2 second",
+                    "seconds_3": "3 second",
+                    "seconds_4": "4 second",
+                    "seconds_5": "5 second"
                 }
             },
             "min_dc_voltage_cells": {
@@ -175,22 +158,6 @@
                     "celsius": "Celsius (\u00b0C)",
                     "fahrenheit": "Fahrenheit (\u00b0F)"
                 }
-            },
-            "tip_type": {
-                "name": "Soldering tip type",
-                "state": {
-                    "auto": "Auto sense",
-                    "pine_short": "Pinecil short tip",
-                    "pts200": "PTS200 short tip",
-                    "ts100_long": "TS100 long/Hakko T12 tip"
-                }
-            },
-            "usb_pd_mode": {
-                "name": "Power Delivery 3.1 EPR",
-                "state": {
-                    "off": "Off",
-                    "on": "On"
-                }
             }
         },
         "sensor": {
@@ -216,20 +183,11 @@
                 "name": "Operating mode",
                 "state": {
                     "boost": "Boost",
-                    "cjc_calibration": "CJC calibration",
                     "debug": "Debug",
-                    "hibernating": "Hibernating",
                     "idle": "Idle",
-                    "initialisation_done": "Initialisation done",
                     "settings": "Settings",
                     "sleeping": "Sleeping",
-                    "soldering": "Soldering",
-                    "soldering_profile": "Soldering profile",
-                    "startup_logo": "Booting",
-                    "startup_warnings": "Startup warnings",
-                    "temperature_adjust": "Temperature adjust",
-                    "thermal_runaway": "Thermal runaway",
-                    "usb_pd_debug": "USB PD debug"
+                    "soldering": "Soldering"
                 }
             },
             "power_pwm_level": {
@@ -256,43 +214,17 @@
             "voltage": {
                 "name": "DC input voltage"
             }
-        },
-        "switch": {
-            "animation_loop": {
-                "name": "Animation loop"
-            },
-            "boost": {
-                "name": "Boost"
-            },
-            "calibrate_cjc": {
-                "name": "Calibrate CJC"
-            },
-            "cooling_temp_blink": {
-                "name": "Cool down screen flashing"
-            },
-            "display_invert": {
-                "name": "Invert screen"
-            },
-            "idle_screen_details": {
-                "name": "Detailed idle screen"
-            },
-            "invert_buttons": {
-                "name": "Swap +/- buttons"
-            },
-            "solder_screen_details": {
-                "name": "Detailed solder screen"
-            }
         }
     },
     "exceptions": {
-        "cannot_connect": {
-            "message": "Cannot connect to device {name}"
+        "setup_device_connection_error_exception": {
+            "message": "Connection to device {name} failed, try again later"
+        },
+        "setup_device_unavailable_exception": {
+            "message": "Device {name} is not reachable"
         },
         "submit_setting_failed": {
             "message": "Failed to submit setting to device, try again later"
-        },
-        "update_check_failed": {
-            "message": "Failed to check for latest IronOS update"
         }
     }
 }

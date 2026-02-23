@@ -13,17 +13,6 @@
         },
         "flow_title": "{serial} ({host})",
         "step": {
-            "reauth_confirm": {
-                "data": {
-                    "password": "Password",
-                    "username": "Username"
-                },
-                "data_description": {
-                    "password": "Blank or Enphase Cloud password",
-                    "username": "Installer or Enphase Cloud username"
-                },
-                "description": "For firmware version 7.0 and later, enter the Enphase cloud credentials, for older models, enter username `installer` without a password."
-            },
             "reconfigure": {
                 "data": {
                     "host": "Host",
@@ -31,9 +20,7 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Enphase Envoy gateway.",
-                    "password": "Blank or Enphase Cloud password",
-                    "username": "Installer or Enphase Cloud username"
+                    "host": "The hostname or IP address of your Enphase Envoy gateway."
                 },
                 "description": "For firmware version 7.0 and later, enter the Enphase cloud credentials, for older models, enter username `installer` without a password."
             },
@@ -44,9 +31,7 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Enphase Envoy gateway.",
-                    "password": "Blank or Enphase Cloud password",
-                    "username": "Installer or Enphase Cloud username"
+                    "host": "The hostname or IP address of your Enphase Envoy gateway."
                 },
                 "description": "For firmware version 7.0 and later, enter the Enphase cloud credentials, for older models, enter username `installer` without a password."
             }
@@ -115,17 +100,11 @@
                 "state": {
                     "backup": "Full backup",
                     "savings": "Savings mode",
-                    "self_consumption": "Self-consumption"
+                    "self_consumption": "Self consumption"
                 }
             }
         },
         "sensor": {
-            "ac_current": {
-                "name": "AC current"
-            },
-            "ac_voltage": {
-                "name": "AC voltage"
-            },
             "acb_available_energy": {
                 "name": "Available ACB battery energy"
             },
@@ -141,13 +120,6 @@
             "acb_max_capacity": {
                 "name": "ACB Battery capacity"
             },
-            "admin_state": {
-                "name": "Admin state",
-                "state": {
-                    "off_grid": "Off grid",
-                    "on_grid": "On grid"
-                }
-            },
             "aggregated_available_energy": {
                 "name": "Aggregated available battery energy"
             },
@@ -155,16 +127,16 @@
                 "name": "Aggregated Battery capacity"
             },
             "aggregated_soc": {
-                "name": "Aggregated battery SOC"
+                "name": "Aggregated battery soc"
             },
             "available_energy": {
                 "name": "Available battery energy"
             },
             "balanced_net_consumption": {
-                "name": "Balanced net power consumption"
+                "name": "balanced net power consumption"
             },
             "balanced_net_consumption_phase": {
-                "name": "Balanced net power consumption {phase_name}"
+                "name": "balanced net power consumption {phase_name}"
             },
             "battery_discharge": {
                 "name": "Current battery discharge"
@@ -199,29 +171,6 @@
             "daily_production_phase": {
                 "name": "Energy production today {phase_name}"
             },
-            "dc_current": {
-                "name": "DC current"
-            },
-            "dc_voltage": {
-                "name": "DC voltage"
-            },
-            "energy_produced": {
-                "name": "Energy production since previous report"
-            },
-            "energy_today": {
-                "name": "Energy production today"
-            },
-            "grid_status": {
-                "name": "Grid status",
-                "state": {
-                    "off_grid": "Off grid",
-                    "on_grid": "On grid",
-                    "synchronizing": "Synchronizing to grid"
-                }
-            },
-            "last_report_duration": {
-                "name": "Last report duration"
-            },
             "last_reported": {
                 "name": "Last reported"
             },
@@ -249,9 +198,6 @@
             "lifetime_consumption_phase": {
                 "name": "Lifetime energy consumption {phase_name}"
             },
-            "lifetime_energy": {
-                "name": "Lifetime energy production"
-            },
             "lifetime_net_consumption": {
                 "name": "Lifetime net energy consumption"
             },
@@ -272,16 +218,6 @@
             },
             "max_capacity": {
                 "name": "Battery capacity"
-            },
-            "max_reported": {
-                "name": "Lifetime maximum power"
-            },
-            "mid_state": {
-                "name": "MID state",
-                "state": {
-                    "close": "Closed",
-                    "open": "Open"
-                }
             },
             "net_consumption": {
                 "name": "Current net power consumption"
@@ -308,10 +244,10 @@
                 "name": "Metering status net consumption CT {phase_name}"
             },
             "net_ct_powerfactor": {
-                "name": "Power factor net consumption CT"
+                "name": "Powerfactor net consumption CT"
             },
             "net_ct_powerfactor_phase": {
-                "name": "Power factor net consumption CT {phase_name}"
+                "name": "Powerfactor net consumption CT {phase_name}"
             },
             "net_ct_status_flags": {
                 "name": "Meter status flags active net consumption CT"
@@ -344,10 +280,10 @@
                 "name": "Metering status production CT {phase_name}"
             },
             "production_ct_powerfactor": {
-                "name": "Power factor production CT"
+                "name": "powerfactor production CT"
             },
             "production_ct_powerfactor_phase": {
-                "name": "Power factor production CT {phase_name}"
+                "name": "Powerfactor production CT {phase_name}"
             },
             "production_ct_status_flags": {
                 "name": "Meter status flags active production CT"
@@ -398,10 +334,10 @@
                 "name": "Metering status storage CT {phase_name}"
             },
             "storage_ct_powerfactor": {
-                "name": "Power factor storage CT"
+                "name": "Powerfactor storage CT"
             },
             "storage_ct_powerfactor_phase": {
-                "name": "Power factor storage CT {phase_name}"
+                "name": "Powerfactor storage CT {phase_name}"
             },
             "storage_ct_status_flags": {
                 "name": "Meter status flags active storage CT"
@@ -426,9 +362,6 @@
         }
     },
     "exceptions": {
-        "action_error": {
-            "message": "Failed to execute {action} for {entity}, host: {host}: {args}"
-        },
         "authentication_error": {
             "message": "Envoy authentication failure on {host}: {args}"
         },
@@ -436,19 +369,15 @@
             "message": "Error communicating with Envoy API on {host}: {args}"
         },
         "unexpected_device": {
-            "message": "Unexpected Envoy serial number found at {host}; expected {expected_serial}, found {actual_serial}"
+            "message": "Unexpected Envoy serial-number found at {host}; expected {expected_serial}, found {actual_serial}"
         }
     },
     "options": {
         "step": {
             "init": {
                 "data": {
-                    "diagnostics_include_fixtures": "Include test fixture data in diagnostic report. Use when requested to provide test data for troubleshooting or development activities. With this option enabled the diagnostic report may take more time to download. When report is created best disable this option again.",
+                    "diagnostics_include_fixtures": "Include test fixture data in diagnostic report. Use when requested to provide test data for troubleshooting or development activies. With this option enabled the diagnostic report may take more time to download. When report is created best disable this option again.",
                     "disable_keep_alive": "Always use a new connection when requesting data from the Envoy. May resolve communication issues with some Envoy firmwares."
-                },
-                "data_description": {
-                    "diagnostics_include_fixtures": "Include fixtures in diagnostics report",
-                    "disable_keep_alive": "May resolve communication issues with some Envoy firmwares."
                 },
                 "title": "Envoy {serial} {host} options"
             }

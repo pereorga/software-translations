@@ -24,6 +24,12 @@
             "message": "Path {file_path} is not accessible"
         }
     },
+    "issues": {
+        "no_access_path": {
+            "description": "While trying to import your configuration the provided file path {file_path} could not be read.\nPlease update your configuration to a correct file path and restart to fix this issue.",
+            "title": "Incorrect file path"
+        }
+    },
     "options": {
         "abort": {
             "already_configured": "Account is already configured"

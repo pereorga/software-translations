@@ -1,144 +1,14 @@
 {
     "config": {
-        "abort": {
-            "already_configured": "Service is already configured",
-            "reauth_successful": "Re-authentication was successful"
-        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
-            "reauth_confirm": {
-                "data": {
-                    "api_key": "API key"
-                },
-                "data_description": {
-                    "api_key": "Your OpenAI API key."
-                },
-                "description": "Reauthentication required. Please enter your updated API key."
-            },
             "user": {
                 "data": {
                     "api_key": "API key"
-                },
-                "data_description": {
-                    "api_key": "Your OpenAI API key."
-                },
-                "description": "Set up OpenAI Conversation integration by providing your OpenAI API key. Instructions to obtain an API key can be found [here]({instructions_url})."
-            }
-        }
-    },
-    "config_subentries": {
-        "ai_task_data": {
-            "abort": {
-                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
-                "reconfigure_successful": "Re-configuration was successful"
-            },
-            "entry_type": "AI task",
-            "error": {
-                "model_not_supported": "This model is not supported, please select a different model",
-                "web_search_minimal_reasoning": "Web search is currently not supported with minimal reasoning effort"
-            },
-            "initiate_flow": {
-                "reconfigure": "Reconfigure AI task",
-                "user": "Add AI task"
-            },
-            "step": {
-                "advanced": {
-                    "data": {
-                        "chat_model": "Model",
-                        "max_tokens": "Maximum tokens to return in response",
-                        "temperature": "Temperature",
-                        "top_p": "Top P"
-                    },
-                    "title": "Advanced settings"
-                },
-                "init": {
-                    "data": {
-                        "name": "Name",
-                        "recommended": "Recommended model settings"
-                    }
-                },
-                "model": {
-                    "data": {
-                        "code_interpreter": "Enable code interpreter tool",
-                        "image_model": "Image generation model",
-                        "inline_citations": "Include links in web search results",
-                        "reasoning_effort": "Reasoning effort",
-                        "search_context_size": "Search context size",
-                        "user_location": "Include home location",
-                        "web_search": "Enable web search"
-                    },
-                    "data_description": {
-                        "code_interpreter": "This tool, also known as the python tool to the model, allows it to run code to answer questions",
-                        "image_model": "The model to use when generating images",
-                        "inline_citations": "If disabled, additional prompt is added to ask the model to not include source citations",
-                        "reasoning_effort": "How many reasoning tokens the model should generate before creating a response to the prompt",
-                        "search_context_size": "High level guidance for the amount of context window space to use for the search",
-                        "user_location": "Refine search results based on geography",
-                        "web_search": "Allow the model to search the web for the latest information before generating a response"
-                    },
-                    "title": "Model-specific options"
-                }
-            }
-        },
-        "conversation": {
-            "abort": {
-                "entry_not_loaded": "Cannot add things while the configuration is disabled.",
-                "reconfigure_successful": "Re-configuration was successful"
-            },
-            "entry_type": "Conversation agent",
-            "error": {
-                "model_not_supported": "This model is not supported, please select a different model",
-                "web_search_minimal_reasoning": "Web search is currently not supported with minimal reasoning effort"
-            },
-            "initiate_flow": {
-                "reconfigure": "Reconfigure conversation agent",
-                "user": "Add conversation agent"
-            },
-            "step": {
-                "advanced": {
-                    "data": {
-                        "chat_model": "Model",
-                        "max_tokens": "Maximum tokens to return in response",
-                        "temperature": "Temperature",
-                        "top_p": "Top P"
-                    },
-                    "title": "Advanced settings"
-                },
-                "init": {
-                    "data": {
-                        "llm_hass_api": "Control Home Assistant",
-                        "name": "Name",
-                        "prompt": "Instructions",
-                        "recommended": "Recommended model settings"
-                    },
-                    "data_description": {
-                        "prompt": "Instruct how the LLM should respond. This can be a template."
-                    }
-                },
-                "model": {
-                    "data": {
-                        "code_interpreter": "Enable code interpreter tool",
-                        "image_model": "Image generation model",
-                        "inline_citations": "Include links in web search results",
-                        "reasoning_effort": "Reasoning effort",
-                        "search_context_size": "Search context size",
-                        "user_location": "Include home location",
-                        "web_search": "Enable web search"
-                    },
-                    "data_description": {
-                        "code_interpreter": "This tool, also known as the python tool to the model, allows it to run code to answer questions",
-                        "image_model": "The model to use when generating images",
-                        "inline_citations": "If disabled, additional prompt is added to ask the model to not include source citations",
-                        "reasoning_effort": "How many reasoning tokens the model should generate before creating a response to the prompt",
-                        "search_context_size": "High level guidance for the amount of context window space to use for the search",
-                        "user_location": "Refine search results based on geography",
-                        "web_search": "Allow the model to search the web for the latest information before generating a response"
-                    },
-                    "title": "Model-specific options"
                 }
             }
         }
@@ -148,63 +18,31 @@
             "message": "Invalid config entry provided. Got {config_entry}"
         }
     },
-    "issues": {
-        "organization_verification_required": {
-            "description": "Your organization must be verified to use this model. Please go to {platform_settings} and select Verify Organization. If you just verified, it can take up to 15 minutes for access to propagate.",
-            "title": "Organization verification required"
-        }
-    },
-    "selector": {
-        "reasoning_effort": {
-            "options": {
-                "high": "High",
-                "low": "Low",
-                "medium": "Medium",
-                "minimal": "Minimal",
-                "none": "None",
-                "xhigh": "X-High"
-            }
-        },
-        "search_context_size": {
-            "options": {
-                "high": "High",
-                "low": "Low",
-                "medium": "Medium"
-            }
-        },
-        "verbosity": {
-            "options": {
-                "high": "High",
-                "low": "Low",
-                "medium": "Medium"
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "chat_model": "Model",
+                    "llm_hass_api": "Control Home Assistant",
+                    "max_tokens": "Maximum tokens to return in response",
+                    "prompt": "Instructions",
+                    "recommended": "Recommended model settings",
+                    "temperature": "Temperature",
+                    "top_p": "Top P"
+                },
+                "data_description": {
+                    "prompt": "Instruct how the LLM should respond. This can be a template."
+                }
             }
         }
     },
     "services": {
-        "generate_content": {
-            "description": "Sends a conversational query to ChatGPT including any attached image or PDF files (deprecated)",
-            "fields": {
-                "config_entry": {
-                    "description": "The config entry to use for this action",
-                    "name": "Config entry"
-                },
-                "filenames": {
-                    "description": "List of files to upload",
-                    "name": "Files"
-                },
-                "prompt": {
-                    "description": "The prompt to send",
-                    "name": "Prompt"
-                }
-            },
-            "name": "Generate content (deprecated)"
-        },
         "generate_image": {
-            "description": "Turns a prompt into an image (deprecated)",
+            "description": "Turn a prompt into an image",
             "fields": {
                 "config_entry": {
                     "description": "The config entry to use for this action",
-                    "name": "Config entry"
+                    "name": "Config Entry"
                 },
                 "prompt": {
                     "description": "The text to turn into an image",
@@ -224,7 +62,7 @@
                     "name": "Style"
                 }
             },
-            "name": "Generate image (deprecated)"
+            "name": "Generate image"
         }
     }
 }

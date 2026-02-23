@@ -4,44 +4,32 @@
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "not_zwave_device": "El dispositiu descobert no \u00e9s un dispositiu Z-Wave.",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "discovery_requires_supervisor": "El descobriment requereix el supervisor.",
+            "not_zwave_device": "El dispositiu descobert no \u00e9s un dispositiu Z-Wave."
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_ws_url": "URL del websocket inv\u00e0lid",
             "unknown": "Error inesperat"
         },
+        "flow_title": "{name}",
         "step": {
-            "choose_serial_port": {
+            "configure_addon": {
                 "data": {
+                    "s0_legacy_key": "Clau d'S0 (heretat)",
+                    "s2_access_control_key": "Clau de control d'acc\u00e9s d'S2",
+                    "s2_authenticated_key": "Clau d'S2 autenticat",
+                    "s2_unauthenticated_key": "Clau d'S2 no autenticat",
                     "usb_path": "Ruta del dispositiu USB"
-                }
-            },
-            "configure_addon_reconfigure": {
-                "data": {
-                    "usb_path": "Ruta del dispositiu USB"
-                }
-            },
-            "configure_addon_user": {
-                "data": {
-                    "usb_path": "Ruta del dispositiu USB"
-                }
+                },
+                "description": "El complement generar\u00e0 claus de seguretat si aquests camps es deixen buits."
             },
             "manual": {
                 "data": {
                     "url": "URL"
                 }
             },
-            "manual_reconfigure": {
-                "data": {
-                    "url": "URL"
-                }
-            },
             "on_supervisor": {
-                "title": "Selecciona el m\u00e8tode de connexi\u00f3"
-            },
-            "on_supervisor_reconfigure": {
                 "title": "Selecciona el m\u00e8tode de connexi\u00f3"
             }
         }
@@ -90,6 +78,9 @@
             }
         },
         "sensor": {
+            "average_background_rssi": {
+                "name": "RSSI de fons mitj\u00e0 (canal {channel})"
+            },
             "can": {
                 "name": "Col\u00b7lisions"
             },
@@ -110,6 +101,9 @@
                     "dead": "Mort",
                     "unknown": "Desconegut"
                 }
+            },
+            "rssi": {
+                "name": "RSSI"
             }
         }
     },
@@ -127,19 +121,76 @@
             "title": "Ha canviat el fitxer de configuraci\u00f3 del dispositiu: {device_name}"
         }
     },
+    "options": {
+        "abort": {
+            "addon_get_discovery_info_failed": "No s'ha pogut obtenir la informaci\u00f3 de descobriment del complement Z-Wave JS.",
+            "addon_info_failed": "No s'ha pogut obtenir la informaci\u00f3 del complement Z-Wave JS.",
+            "addon_install_failed": "No s'ha pogut instal\u00b7lar el complement Z-Wave JS.",
+            "addon_set_config_failed": "No s'ha pogut establir la configuraci\u00f3 de Z-Wave JS.",
+            "addon_start_failed": "No s'ha pogut iniciar el complement Z-Wave JS.",
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "different_device": "El dispositiu USB connectat per a aquesta entrada de configuraci\u00f3 no \u00e9s el mateix que el configurat anteriorment. Crea na entrada de configuraci\u00f3 nova per al dispositiu nou."
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_ws_url": "URL del websocket inv\u00e0lid",
+            "unknown": "Error inesperat"
+        },
+        "progress": {
+            "install_addon": "Espera mentre finalitza la instal\u00b7laci\u00f3 del complement Z-Wave JS. Pot tardar uns quants minuts.",
+            "start_addon": "Espera mentre es completa la inicialitzaci\u00f3 del complement Z-Wave JS. Pot tardar uns segons."
+        },
+        "step": {
+            "configure_addon": {
+                "data": {
+                    "emulate_hardware": "Emula maquinari",
+                    "log_level": "Nivell dels registres",
+                    "s0_legacy_key": "Clau d'S0 (heretat)",
+                    "s2_access_control_key": "Clau de control d'acc\u00e9s d'S2",
+                    "s2_authenticated_key": "Clau d'S2 autenticat",
+                    "s2_unauthenticated_key": "Clau d'S2 no autenticat",
+                    "usb_path": "Ruta del dispositiu USB"
+                },
+                "description": "El complement generar\u00e0 claus de seguretat si aquests camps es deixen buits.",
+                "title": "Introdueix la configuraci\u00f3 del complement Z-Wave JS"
+            },
+            "install_addon": {
+                "title": "Ha comen\u00e7at la instal\u00b7laci\u00f3 del complement Z-Wave JS"
+            },
+            "manual": {
+                "data": {
+                    "url": "URL"
+                }
+            },
+            "on_supervisor": {
+                "data": {
+                    "use_addon": "Utilitza el complement Z-Wave JS Supervisor"
+                },
+                "description": "Vols utilitzar el complement Supervisor de Z-Wave JS?",
+                "title": "Selecciona el m\u00e8tode de connexi\u00f3"
+            },
+            "start_addon": {
+                "title": "El complement Z-Wave JS s'est\u00e0 iniciant."
+            }
+        }
+    },
     "services": {
         "bulk_set_partial_config_parameters": {
             "fields": {
                 "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
                     "name": "ID(s) d'\u00e0rea"
                 },
                 "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
                     "name": "ID(s) de dispositiu"
                 },
                 "endpoint": {
                     "name": "Endpoint"
                 },
                 "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
                     "name": "ID(s) d'entitat"
                 },
                 "parameter": {
@@ -179,6 +230,7 @@
         "multicast_set_value": {
             "fields": {
                 "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
                     "name": "ID(s) d'\u00e0rea"
                 },
                 "command_class": {
@@ -186,6 +238,7 @@
                     "name": "Classe de comanda"
                 },
                 "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
                     "name": "ID(s) de dispositiu"
                 },
                 "endpoint": {
@@ -193,9 +246,11 @@
                     "name": "Endpoint"
                 },
                 "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
                     "name": "ID(s) d'entitat"
                 },
                 "options": {
+                    "description": "Mapa d'opcions de valors. Consulta la documentaci\u00f3 de Z-Wave JS per a m\u00e9s informaci\u00f3 sobre quines opcions es poden configurar.",
                     "name": "Opcions"
                 },
                 "property": {
@@ -215,12 +270,15 @@
         "ping": {
             "fields": {
                 "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
                     "name": "ID(s) d'\u00e0rea"
                 },
                 "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
                     "name": "ID(s) de dispositiu"
                 },
                 "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
                     "name": "ID(s) d'entitat"
                 }
             },
@@ -230,12 +288,15 @@
             "description": "Actualitza les notificacions a un node segons el tipus de notificaci\u00f3 i, opcionalment, l'esdeveniment de notificaci\u00f3.",
             "fields": {
                 "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
                     "name": "ID(s) d'\u00e0rea"
                 },
                 "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
                     "name": "ID(s) de dispositiu"
                 },
                 "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
                     "name": "ID(s) d'entitat"
                 },
                 "notification_event": {
@@ -260,12 +321,15 @@
         "reset_meter": {
             "fields": {
                 "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
                     "name": "ID(s) d'\u00e0rea"
                 },
                 "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
                     "name": "ID(s) de dispositiu"
                 },
                 "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
                     "name": "ID(s) d'entitat"
                 },
                 "value": {
@@ -276,18 +340,21 @@
         "set_config_parameter": {
             "fields": {
                 "area_id": {
+                    "description": "\u00c0rea (o \u00e0rees) objectiu d'aquest servei. Si s'especifica una \u00e0rea, tots els dispositius i entitats zwave_js d'aquesta \u00e0rea seran els objectius d'aquest servei.",
                     "name": "ID(s) d'\u00e0rea"
                 },
                 "bitmask": {
                     "name": "M\u00e0scara de bits"
                 },
                 "device_id": {
+                    "description": "Dispositiu(s) objectiu d'aquest servei.",
                     "name": "ID(s) de dispositiu"
                 },
                 "endpoint": {
                     "name": "Endpoint"
                 },
                 "entity_id": {
+                    "description": "ID(s) d'entitat objectiu d'aquest servei.",
                     "name": "ID(s) d'entitat"
                 },
                 "parameter": {
@@ -309,6 +376,16 @@
         },
         "set_lock_configuration": {
             "description": "Estableix la configuraci\u00f3 d'un pany.",
+            "fields": {
+                "auto_relock_time": {
+                    "description": "Durada en segons fins que el pany torna a l'estat segur. Nom\u00e9s s'aplica quan el tipus d'operaci\u00f3 \u00e9s `constant`.",
+                    "name": "Temps de bloqueig autom\u00e0tic"
+                },
+                "twist_assist": {
+                    "description": "Activa l'assist\u00e8ncia Twist",
+                    "name": "Assist\u00e8ncia Twist"
+                }
+            },
             "name": "Estableix la configuraci\u00f3 del pany"
         },
         "set_lock_usercode": {
@@ -357,6 +434,9 @@
                 "value": {
                     "description": "Nou valor a establir.",
                     "name": "Valor"
+                },
+                "wait_for_result": {
+                    "name": "Espera el resultat?"
                 }
             },
             "name": "Estableix un valor (avan\u00e7at)"

@@ -40,16 +40,6 @@
                 "name": "Aguts"
             }
         },
-        "select": {
-            "speech_dialog_level": {
-                "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
-                    "off": "OFF"
-                }
-            }
-        },
         "sensor": {
             "audio_input_format": {
                 "name": "Format d'entrada d'\u00e0udio"
@@ -102,6 +92,7 @@
             "name": "Obt\u00e9 cua"
         },
         "play_queue": {
+            "description": "Reprodueix la cua des del primer element.",
             "fields": {
                 "queue_position": {
                     "description": "Posici\u00f3 a la cua de la can\u00e7\u00f3 a reproduir.",
@@ -121,6 +112,7 @@
             "name": "Elimina de la cua"
         },
         "restore": {
+            "description": "Restaura una instant\u00e0nia del reproductor multim\u00e8dia.",
             "fields": {
                 "entity_id": {
                     "description": "Nom de l'entitat que es restaurar\u00e0.",
@@ -139,6 +131,7 @@
                     "name": "Entitat"
                 },
                 "with_group": {
+                    "description": "'True' o 'False', tamb\u00e9 fa una instant\u00e0nia de la disposici\u00f3 del grup.",
                     "name": "Amb grup"
                 }
             },
@@ -148,18 +141,23 @@
             "description": "Actualitza els par\u00e0metres d'hora i volum d'una alarma.",
             "fields": {
                 "alarm_id": {
+                    "description": "ID de l'alarma a actualitzar.",
                     "name": "ID d'alarma"
                 },
                 "enabled": {
+                    "description": "Activa o desactiva l'alarma.",
                     "name": "Alarma activada"
                 },
                 "include_linked_zones": {
+                    "description": "Activa o desactiva, la inclusi\u00f3 de sales agrupades.",
                     "name": "Inclou zones vinculades"
                 },
                 "time": {
+                    "description": "Configura l'hora de l'alarma.",
                     "name": "Hora"
                 },
                 "volume": {
+                    "description": "Configura el volum de l'alarma.",
                     "name": "Volum"
                 }
             },

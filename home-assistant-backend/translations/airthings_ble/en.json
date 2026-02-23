@@ -4,10 +4,8 @@
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
             "cannot_connect": "Failed to connect",
-            "firmware_upgrade_required": "Your device requires a firmware upgrade. Please use the Airthings app (Android/iOS) to upgrade it.",
             "no_devices_found": "No devices found on the network",
-            "unknown": "Unexpected error",
-            "unsupported_device": "Unsupported device"
+            "unknown": "Unexpected error"
         },
         "flow_title": "{name}",
         "step": {
@@ -18,26 +16,12 @@
                 "data": {
                     "address": "Device"
                 },
-                "data_description": {
-                    "address": "The Airthings devices discovered via Bluetooth."
-                },
                 "description": "Choose a device to set up"
             }
         }
     },
     "entity": {
         "sensor": {
-            "ambient_noise": {
-                "name": "Ambient noise"
-            },
-            "connectivity_mode": {
-                "name": "Connectivity mode",
-                "state": {
-                    "bluetooth": "Bluetooth",
-                    "not_configured": "Not configured",
-                    "smartlink": "SmartLink"
-                }
-            },
             "illuminance": {
                 "name": "Illuminance"
             },

@@ -1,5 +1,8 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Dia laborable ja s'ha configurat amb la configuraci\u00f3 escollida"
+        },
         "error": {
             "add_holiday_error": "Format de data incorrecte (AAAA-MM-DD)",
             "add_holiday_range_error": "Format de data incorrecte en l'interval (AAAA-MM-DD, AAAA-MM-DD)",
@@ -12,7 +15,8 @@
                     "add_holidays": "Afegeix vacances/festius",
                     "category": "Categoria addicional de vacances",
                     "days_offset": "Despla\u00e7ament (\u00f2fset)",
-                    "province": "Subdivisi\u00f3 de pa\u00eds"
+                    "province": "Subdivisi\u00f3 de pa\u00eds",
+                    "remove_holidays": "Elimina vacances/festius"
                 },
                 "description": "Estableix les opcions addicionals de dia laborable de {name} pel pa\u00eds {country}"
             },
@@ -30,13 +34,14 @@
                 "state_attributes": {
                     "days_offset": {
                         "name": "Despla\u00e7ament (\u00f2fset)"
+                    },
+                    "excludes": {
+                        "name": "Exclusions"
+                    },
+                    "workdays": {
+                        "name": "Dies laborables"
                     }
                 }
-            }
-        },
-        "calendar": {
-            "workday": {
-                "name": "Calendari"
             }
         }
     },
@@ -55,16 +60,30 @@
                         "data": {
                             "province": "Subdivisi\u00f3 de pa\u00eds"
                         },
+                        "data_description": {
+                            "province": "Estat, territori, prov\u00edncia, regi\u00f3 de pa\u00eds"
+                        },
                         "description": "Selecciona una prov\u00edncia del pa\u00eds {country} per utilitzar-la al sensor 'Dia laborable'.",
                         "title": "Selecciona la prov\u00edncia de {title}"
                     }
                 }
-            }
+            },
+            "title": "El pa\u00eds configurat de {title} no existeix"
         },
         "bad_date_holiday": {
             "fix_flow": {
                 "error": {
                     "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de vacances/festiu no trobat"
+                },
+                "step": {
+                    "fix_remove_holiday": {
+                        "data": {
+                            "remove_holidays": "Elimina vacances/festius"
+                        },
+                        "data_description": {
+                            "remove_holidays": "Elimina vacances/festius amb el format AAAA-MM-DD o amb una part del nom"
+                        }
+                    }
                 }
             }
         },
@@ -72,6 +91,16 @@
             "fix_flow": {
                 "error": {
                     "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de vacances/festiu no trobat"
+                },
+                "step": {
+                    "fix_remove_holiday": {
+                        "data": {
+                            "remove_holidays": "Elimina vacances/festius"
+                        },
+                        "data_description": {
+                            "remove_holidays": "Elimina vacances/festius amb el format AAAA-MM-DD o amb una part del nom"
+                        }
+                    }
                 }
             }
         },
@@ -81,6 +110,9 @@
                     "province": {
                         "data": {
                             "province": "Subdivisi\u00f3 de pa\u00eds"
+                        },
+                        "data_description": {
+                            "province": "Estat, territori, prov\u00edncia, regi\u00f3 de pa\u00eds"
                         },
                         "description": "Selecciona una prov\u00edncia del pa\u00eds {country} per utilitzar-la al sensor 'Dia laborable'.",
                         "title": "Selecciona la prov\u00edncia de {title}"
@@ -104,7 +136,18 @@
                     "add_holidays": "Afegeix vacances/festius",
                     "category": "Categoria addicional de vacances",
                     "days_offset": "Despla\u00e7ament (\u00f2fset)",
-                    "province": "Subdivisi\u00f3 de pa\u00eds"
+                    "excludes": "Exclusions",
+                    "province": "Subdivisi\u00f3 de pa\u00eds",
+                    "remove_holidays": "Elimina vacances/festius",
+                    "workdays": "Dies laborables"
+                },
+                "data_description": {
+                    "add_holidays": "Afegeix vacances/festius personalitzats en format AAAA-MM-DD",
+                    "days_offset": "Dies de despla\u00e7ament (\u00f2fset)",
+                    "excludes": "Llista de dies laborables a excloure",
+                    "province": "Estat, territori, prov\u00edncia, regi\u00f3 de pa\u00eds",
+                    "remove_holidays": "Elimina vacances/festius amb el format AAAA-MM-DD o amb una part del nom",
+                    "workdays": "Llista de dies laborables"
                 },
                 "description": "Canvia les opcions addicionals de {name} configurades pel pa\u00eds {country}"
             }
@@ -149,6 +192,7 @@
     },
     "services": {
         "check_date": {
+            "description": "Comprova si la data \u00e9s laborable.",
             "fields": {
                 "check_date": {
                     "description": "Data a comprovar si \u00e9s un dia laborable.",

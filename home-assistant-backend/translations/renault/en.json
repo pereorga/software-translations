@@ -3,17 +3,12 @@
         "abort": {
             "already_configured": "Account is already configured",
             "kamereon_no_account": "Unable to find Kamereon account",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful",
-            "unique_id_mismatch": "The selected Kamereon account ID does not match the previous account ID"
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_credentials": "Invalid authentication",
             "unknown": "Unexpected error"
-        },
-        "initiate_flow": {
-            "user": "Add account"
         },
         "step": {
             "kamereon": {
@@ -24,7 +19,7 @@
                     "kamereon_account_id": "The Kamereon account ID associated with your vehicle"
                 },
                 "description": "You have multiple Kamereon accounts associated to this email, please select one",
-                "title": "Kamereon account ID"
+                "title": "Kamereon Account ID"
             },
             "reauth_confirm": {
                 "data": {
@@ -134,12 +129,6 @@
             "charging_remaining_time": {
                 "name": "Charging remaining time"
             },
-            "front_left_pressure": {
-                "name": "Front left tyre pressure"
-            },
-            "front_right_pressure": {
-                "name": "Front right tyre pressure"
-            },
             "fuel_autonomy": {
                 "name": "Fuel autonomy"
             },
@@ -167,14 +156,9 @@
                     "plug_error": "Plug error",
                     "plug_unknown": "Plug unknown",
                     "plugged": "Plugged in",
+                    "plugged_waiting_for_charge": "Plugged in, waiting for charge",
                     "unplugged": "Unplugged"
                 }
-            },
-            "rear_left_pressure": {
-                "name": "Rear left tyre pressure"
-            },
-            "rear_right_pressure": {
-                "name": "Rear right tyre pressure"
             },
             "res_state": {
                 "name": "Remote engine start"
@@ -186,13 +170,10 @@
     },
     "exceptions": {
         "invalid_device_id": {
-            "message": "No device with ID {device_id} was found"
+            "message": "No device with id {device_id} was found"
         },
         "no_config_entry_for_device": {
-            "message": "No loaded config entry was found for device with ID {device_id}"
-        },
-        "unknown_error": {
-            "message": "An unknown error occurred while communicating with the Renault servers: {error}"
+            "message": "No loaded config entry was found for device with id {device_id}"
         }
     },
     "services": {

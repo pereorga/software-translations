@@ -1,25 +1,19 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
-            "network": {
+            "user": {
                 "data": {
-                    "host": "Amfitri\u00f3",
-                    "password": "Contrasenya",
-                    "port": "Port"
-                }
-            },
-            "usbselect": {
-                "data": {
-                    "port": "Port"
-                }
+                    "name": "Nom de la connexi\u00f3 Velbus",
+                    "port": "String de connexi\u00f3"
+                },
+                "title": "Tipus de connexi\u00f3 Velbus"
             }
         }
     },
@@ -29,15 +23,15 @@
                 "address": {
                     "name": "Adre\u00e7a"
                 },
-                "config_entry": {
-                    "name": "Entrada de configuraci\u00f3"
+                "interface": {
+                    "name": "Interf\u00edcie"
                 }
             }
         },
         "scan": {
             "fields": {
-                "config_entry": {
-                    "name": "Entrada de configuraci\u00f3"
+                "interface": {
+                    "name": "Interf\u00edcie"
                 }
             },
             "name": "Escaneja"
@@ -47,15 +41,15 @@
                 "address": {
                     "name": "Adre\u00e7a"
                 },
-                "config_entry": {
-                    "name": "Entrada de configuraci\u00f3"
+                "interface": {
+                    "name": "Interf\u00edcie"
                 }
             }
         },
         "sync_clock": {
             "fields": {
-                "config_entry": {
-                    "name": "Entrada de configuraci\u00f3"
+                "interface": {
+                    "name": "Interf\u00edcie"
                 }
             },
             "name": "Sincronitza l'hora"

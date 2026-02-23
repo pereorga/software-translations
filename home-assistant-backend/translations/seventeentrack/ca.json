@@ -38,8 +38,22 @@
             "ready_to_be_picked_up": {
                 "name": "A punt per ser recollit"
             },
+            "returned": {
+                "name": "Retornat"
+            },
             "undelivered": {
                 "name": "No entregat"
+            }
+        }
+    },
+    "issues": {
+        "deprecate_sensor": {
+            "fix_flow": {
+                "step": {
+                    "confirm": {
+                        "description": "Els sensors dels paquets de 17Track estan obsolets i s'eliminaran.\nModifica les teves automatitzacions i/o scripts per obtenir les dades mitjan\u00e7ant l'acci\u00f3 `seventeentrack.get_packages`."
+                    }
+                }
             }
         }
     },
@@ -51,6 +65,7 @@
                 "in_transit": "En tr\u00e0nsit",
                 "not_found": "No s'ha trobat",
                 "ready_to_be_picked_up": "A punt per ser recollit",
+                "returned": "Retornat",
                 "undelivered": "No entregat"
             }
         }

@@ -8,7 +8,6 @@
             "missing_credentials": "The integration requires application credentials.",
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
             "oauth_error": "Received invalid token data.",
-            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
             "user_rejected_authorize": "Account linking rejected: {error}"
         },
         "create_entry": {
@@ -16,12 +15,6 @@
         },
         "step": {
             "pick_implementation": {
-                "data": {
-                    "implementation": "Application credentials"
-                },
-                "data_description": {
-                    "implementation": "The credentials you want to use to authenticate."
-                },
                 "title": "Pick authentication method"
             }
         }

@@ -11,7 +11,6 @@
             "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
             "oauth_error": "Received invalid token data.",
             "oauth_failed": "Error while obtaining access token.",
-            "oauth_implementation_unavailable": "No OAuth2 implementations are currently available.",
             "oauth_timeout": "Timeout resolving OAuth token.",
             "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
             "reauth_successful": "Re-authentication was successful",
@@ -28,12 +27,6 @@
                 "title": "Your account is missing some API connections"
             },
             "pick_implementation": {
-                "data": {
-                    "implementation": "Application credentials"
-                },
-                "data_description": {
-                    "implementation": "The credentials you want to use to authenticate."
-                },
                 "title": "Pick authentication method"
             },
             "reauth_confirm": {
@@ -46,169 +39,17 @@
         "binary_sensor": {
             "leaving_dock": {
                 "name": "Leaving dock"
+            },
+            "returning_to_dock": {
+                "name": "Returning to dock"
             }
         },
         "button": {
             "confirm_error": {
                 "name": "Confirm error"
             },
-            "reset_cutting_blade_usage_time": {
-                "name": "Reset cutting blade usage time"
-            },
             "sync_clock": {
                 "name": "Sync clock"
-            }
-        },
-        "event": {
-            "message": {
-                "name": "Message",
-                "state_attributes": {
-                    "event_type": {
-                        "state": {
-                            "alarm_mower_in_motion": "Alarm! Mower in motion",
-                            "alarm_mower_lifted": "Alarm! Mower lifted",
-                            "alarm_mower_stopped": "Alarm! Mower stopped",
-                            "alarm_mower_switched_off": "Alarm! Mower switched off",
-                            "alarm_mower_tilted": "Alarm! Mower tilted",
-                            "alarm_outside_geofence": "Alarm! Outside geofence",
-                            "angular_sensor_problem": "Angular sensor problem",
-                            "battery_problem": "Battery problem",
-                            "battery_restriction_due_to_ambient_temperature": "Battery restriction due to ambient temperature",
-                            "can_error": "CAN error",
-                            "charging_current_too_high": "Charging current too high",
-                            "charging_station_blocked": "Charging station blocked",
-                            "charging_system_problem": "Charging system problem",
-                            "collision_sensor_defect": "Collision sensor defect",
-                            "collision_sensor_error": "Collision sensor error",
-                            "collision_sensor_problem_front": "Front collision sensor problem",
-                            "collision_sensor_problem_rear": "Rear collision sensor problem",
-                            "com_board_not_available": "Com board not available",
-                            "communication_circuit_board_sw_must_be_updated": "Communication circuit board software must be updated",
-                            "complex_working_area": "Complex working area",
-                            "connection_changed": "Connection changed",
-                            "connection_not_changed": "Connection NOT changed",
-                            "connectivity_problem": "Connectivity problem",
-                            "connectivity_settings_restored": "Connectivity settings restored",
-                            "cutting_drive_motor_1_defect": "Cutting drive motor 1 defect",
-                            "cutting_drive_motor_2_defect": "Cutting drive motor 2 defect",
-                            "cutting_drive_motor_3_defect": "Cutting drive motor 3 defect",
-                            "cutting_height_blocked": "Cutting height blocked",
-                            "cutting_height_problem": "Cutting height problem",
-                            "cutting_height_problem_curr": "Cutting height problem, curr",
-                            "cutting_height_problem_dir": "Cutting height problem, dir",
-                            "cutting_height_problem_drive": "Cutting height problem, drive",
-                            "cutting_motor_problem": "Cutting motor problem",
-                            "cutting_stopped_slope_too_steep": "Cutting stopped - slope too steep",
-                            "cutting_system_blocked": "Cutting system blocked",
-                            "cutting_system_imbalance_warning": "Cutting system imbalance",
-                            "cutting_system_major_imbalance": "Cutting system major imbalance",
-                            "destination_not_reachable": "Destination not reachable",
-                            "difficult_finding_home": "Difficult finding home",
-                            "docking_sensor_defect": "Docking sensor defect",
-                            "electronic_problem": "Electronic problem",
-                            "empty_battery": "Empty battery",
-                            "error": "Error",
-                            "error_at_power_up": "Error at power up",
-                            "fatal_error": "Fatal error",
-                            "folding_cutting_deck_sensor_defect": "Folding cutting deck sensor defect",
-                            "folding_sensor_activated": "Folding sensor activated",
-                            "geofence_problem": "Geofence problem",
-                            "gps_navigation_problem": "GPS navigation problem",
-                            "guide_1_not_found": "Guide 1 not found",
-                            "guide_2_not_found": "Guide 2 not found",
-                            "guide_3_not_found": "Guide 3 not found",
-                            "guide_calibration_accomplished": "Guide calibration accomplished",
-                            "guide_calibration_failed": "Guide calibration failed",
-                            "high_charging_power_loss": "High charging power loss",
-                            "high_internal_power_loss": "High internal power loss",
-                            "high_internal_temperature": "High internal temperature",
-                            "internal_voltage_error": "Internal voltage error",
-                            "invalid_battery_combination_invalid_combination_of_different_battery_types": "Invalid battery combination - Invalid combination of different battery types.",
-                            "invalid_sub_device_combination": "Invalid sub-device combination",
-                            "invalid_system_configuration": "Invalid system configuration",
-                            "left_brush_motor_overloaded": "Left brush motor overloaded",
-                            "lift_sensor_defect": "Lift Sensor defect",
-                            "lifted": "Lifted",
-                            "limited_cutting_height_range": "Limited cutting height range",
-                            "loop_sensor_defect": "Loop sensor defect",
-                            "loop_sensor_problem_front": "Front loop sensor problem",
-                            "loop_sensor_problem_left": "Left loop sensor problem",
-                            "loop_sensor_problem_rear": "Rear loop sensor problem",
-                            "loop_sensor_problem_right": "Right loop sensor problem",
-                            "low_battery": "Low battery",
-                            "memory_circuit_problem": "Memory circuit problem",
-                            "mower_lifted": "Mower lifted",
-                            "mower_tilted": "Mower tilted",
-                            "no_accurate_position_from_satellites": "No accurate position from satellites",
-                            "no_confirmed_position": "No confirmed position",
-                            "no_drive": "No drive",
-                            "no_error": "No error",
-                            "no_loop_signal": "No loop signal",
-                            "no_power_in_charging_station": "No power in charging station",
-                            "no_response_from_charger": "No response from charger",
-                            "off": "Off",
-                            "outside_working_area": "Outside working area",
-                            "poor_signal_quality": "Poor signal quality",
-                            "reference_station_communication_problem": "Reference station communication problem",
-                            "right_brush_motor_overloaded": "Right brush motor overloaded",
-                            "safety_function_faulty": "Safety function faulty",
-                            "settings_restored": "Settings restored",
-                            "sim_card_locked": "SIM card locked",
-                            "sim_card_not_found": "SIM card not found",
-                            "sim_card_requires_pin": "SIM card requires PIN",
-                            "slipped_mower_has_slipped_situation_not_solved_with_moving_pattern": "Slipped - Mower has Slipped. Situation not solved with moving pattern",
-                            "slope_too_steep": "Slope too steep",
-                            "sms_could_not_be_sent": "SMS could not be sent",
-                            "stop_button_problem": "STOP button problem",
-                            "stopped": "Stopped",
-                            "stuck_in_charging_station": "Stuck in charging station",
-                            "switch_cord_problem": "Switch cord problem",
-                            "temporary_battery_problem": "Temporary battery problem",
-                            "tilt_sensor_problem": "Tilt sensor problem",
-                            "too_high_discharge_current": "Discharge current too high",
-                            "too_high_internal_current": "Internal current too high",
-                            "trapped": "Trapped",
-                            "ultrasonic_problem": "Ultrasonic problem",
-                            "ultrasonic_sensor_1_defect": "Ultrasonic Sensor 1 defect",
-                            "ultrasonic_sensor_2_defect": "Ultrasonic Sensor 2 defect",
-                            "ultrasonic_sensor_3_defect": "Ultrasonic Sensor 3 defect",
-                            "ultrasonic_sensor_4_defect": "Ultrasonic Sensor 4 defect",
-                            "unexpected_cutting_height_adj": "Unexpected cutting height adjustment",
-                            "unexpected_error": "Unexpected error",
-                            "upside_down": "Upside down",
-                            "wait_power_up": "Wait power up",
-                            "wait_updating": "Wait updating",
-                            "weak_gps_signal": "Weak GPS signal",
-                            "wheel_drive_problem_left": "Left wheel drive problem",
-                            "wheel_drive_problem_rear_left": "Rear left wheel drive problem",
-                            "wheel_drive_problem_rear_right": "Rear right wheel drive problem",
-                            "wheel_drive_problem_right": "Right wheel drive problem",
-                            "wheel_motor_blocked_left": "Left wheel motor blocked",
-                            "wheel_motor_blocked_rear_left": "Rear left wheel motor blocked",
-                            "wheel_motor_blocked_rear_right": "Rear right wheel motor blocked",
-                            "wheel_motor_blocked_right": "Right wheel motor blocked",
-                            "wheel_motor_overloaded_left": "Left wheel motor overloaded",
-                            "wheel_motor_overloaded_rear_left": "Rear left wheel motor overloaded",
-                            "wheel_motor_overloaded_rear_right": "Rear right wheel motor overloaded",
-                            "wheel_motor_overloaded_right": "Right wheel motor overloaded",
-                            "work_area_not_valid": "Work area not valid",
-                            "wrong_loop_signal": "Wrong loop signal",
-                            "wrong_pin_code": "Wrong PIN code",
-                            "zone_generator_problem": "Zone generator problem"
-                        }
-                    },
-                    "severity": {
-                        "state": {
-                            "debug": "Debug",
-                            "error": "Error",
-                            "fatal": "Fatal",
-                            "info": "Info",
-                            "sw": "Software",
-                            "unknown": "Unknown",
-                            "warning": "Warning"
-                        }
-                    }
-                }
             }
         },
         "number": {
@@ -236,9 +77,6 @@
         "sensor": {
             "cutting_blade_usage_time": {
                 "name": "Cutting blade usage time"
-            },
-            "downtime": {
-                "name": "Downtime"
             },
             "error": {
                 "name": "Error",
@@ -324,7 +162,6 @@
                     "no_loop_signal": "No loop signal",
                     "no_power_in_charging_station": "No power in charging station",
                     "no_response_from_charger": "No response from charger",
-                    "off": "Off",
                     "outside_working_area": "Outside working area",
                     "poor_signal_quality": "Poor signal quality",
                     "reference_station_communication_problem": "Reference station communication problem",
@@ -338,7 +175,6 @@
                     "slope_too_steep": "Slope too steep",
                     "sms_could_not_be_sent": "SMS could not be sent",
                     "stop_button_problem": "STOP button problem",
-                    "stopped": "Stopped",
                     "stuck_in_charging_station": "Stuck in charging station",
                     "switch_cord_problem": "Switch cord problem",
                     "temporary_battery_problem": "Temporary battery problem",
@@ -354,8 +190,6 @@
                     "unexpected_cutting_height_adj": "Unexpected cutting height adjustment",
                     "unexpected_error": "Unexpected error",
                     "upside_down": "Upside down",
-                    "wait_power_up": "Wait power up",
-                    "wait_updating": "Wait updating",
                     "weak_gps_signal": "Weak GPS signal",
                     "wheel_drive_problem_left": "Left wheel drive problem",
                     "wheel_drive_problem_rear_left": "Rear left wheel drive problem",
@@ -375,21 +209,12 @@
                     "zone_generator_problem": "Zone generator problem"
                 }
             },
-            "inactive_reason": {
-                "name": "Inactive reason",
-                "state": {
-                    "none": "No inactivity",
-                    "planning": "Planning",
-                    "searching_for_satellites": "Searching for satellites"
-                }
-            },
             "mode": {
                 "name": "Mode",
                 "state": {
                     "demo": "Demo",
                     "home": "Home",
                     "main_area": "Main area",
-                    "poi": "Point of interest",
                     "secondary_area": "Secondary area"
                 }
             },
@@ -408,33 +233,18 @@
             "number_of_collisions": {
                 "name": "Number of collisions"
             },
-            "remaining_charging_time": {
-                "name": "Remaining charging time"
-            },
             "restricted_reason": {
                 "name": "Restricted reason",
                 "state": {
                     "all_work_areas_completed": "All work areas completed",
-                    "amazon_alexa": "Amazon Alexa",
                     "daily_limit": "Daily limit",
-                    "developer_portal": "Developer Portal",
                     "external": "External",
                     "fota": "Firmware Over-the-Air update running",
                     "frost": "Frost",
-                    "gardena_smart_system": "Gardena Smart System",
-                    "google_assistant": "Google Assistant",
-                    "home_assistant": "Home Assistant",
-                    "ifttt": "IFTTT",
-                    "ifttt_applets": "IFTTT applets",
-                    "ifttt_calendar_connection": "IFTTT calendar connection",
                     "none": "No restrictions",
                     "not_applicable": "Not applicable",
                     "park_override": "Park override",
                     "sensor": "Weather timer",
-                    "smart_routine": "Generic smart routine",
-                    "smart_routine_frost_guard": "Frost guard",
-                    "smart_routine_rain_guard": "Rain guard",
-                    "smart_routine_wildlife_protection": "Wildlife protection",
                     "week_schedule": "Week schedule"
                 }
             },
@@ -452,9 +262,6 @@
             },
             "total_searching_time": {
                 "name": "Total searching time"
-            },
-            "uptime": {
-                "name": "Uptime"
             },
             "work_area": {
                 "name": "Work area",
@@ -496,6 +303,12 @@
         },
         "work_areas_not_supported": {
             "message": "This mower does not support work areas."
+        }
+    },
+    "issues": {
+        "deprecated_entity": {
+            "description": "The Husqvarna Automower entity `{entity}` is deprecated and will be removed in a future release.\nYou can use the new returning state of the lawn mower entity instead.\nPlease update your automations and scripts to replace the sensor entity with the newly added lawn mower entity.\nWhen you are done migrating you can disable `{entity}`.",
+            "title": "The Husqvarna Automower {entity_name} sensor is deprecated"
         }
     },
     "selector": {

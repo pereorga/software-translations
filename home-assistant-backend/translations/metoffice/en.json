@@ -1,28 +1,20 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Service is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Service is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
-            "reauth_confirm": {
-                "data": {
-                    "api_key": "API key"
-                },
-                "description": "Please re-enter your DataHub API key. If you are still using an old Datapoint API key, you need to sign up for DataHub API now, see [documentation]({docs_url}) for details.",
-                "title": "Reauthenticate with DataHub API"
-            },
             "user": {
                 "data": {
                     "api_key": "API key",
                     "latitude": "Latitude",
                     "longitude": "Longitude"
                 },
+                "description": "The latitude and longitude will be used to find the closest weather station.",
                 "title": "Connect to the UK Met Office"
             }
         }

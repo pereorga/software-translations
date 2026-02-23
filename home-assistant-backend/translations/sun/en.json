@@ -7,15 +7,6 @@
         }
     },
     "entity": {
-        "binary_sensor": {
-            "solar_rising": {
-                "name": "Solar rising",
-                "state": {
-                    "off": "Setting",
-                    "on": "Rising"
-                }
-            }
-        },
         "sensor": {
             "next_dawn": {
                 "name": "Next dawn"
@@ -40,6 +31,9 @@
             },
             "solar_elevation": {
                 "name": "Solar elevation"
+            },
+            "solar_rising": {
+                "name": "Solar rising"
             }
         }
     },

@@ -1,7 +1,4 @@
 {
-    "common": {
-        "incorrect_pin": "PIN is not correct"
-    },
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
@@ -9,39 +6,14 @@
             "cannot_connect": "Failed to connect",
             "invalid_response": "Failed to connect due to an invalid response from the MotionMount.",
             "not_connected": "Failed to connect.",
-            "reauth_successful": "Re-authentication was successful",
-            "time_out": "Timeout establishing connection"
-        },
-        "error": {
-            "pin": "PIN is not correct"
+            "time_out": "Failed to connect due to a time out."
         },
         "flow_title": "{name}",
-        "progress": {
-            "progress_action": "Too many incorrect PIN attempts. Please wait {timeout} s..."
-        },
         "step": {
-            "auth": {
-                "data": {
-                    "pin": "PIN code"
-                },
-                "data_description": {
-                    "pin": "The user level PIN configured on the MotionMount."
-                },
-                "description": "Your MotionMount requires a PIN to operate.",
-                "title": "Authenticate to your MotionMount"
-            },
-            "backoff": {
-                "description": "Too many incorrect PIN attempts.",
-                "title": "Authenticate to your MotionMount"
-            },
             "user": {
                 "data": {
                     "host": "Host",
                     "port": "Port"
-                },
-                "data_description": {
-                    "host": "The hostname or IP address of the MotionMount.",
-                    "port": "The port of the MotionMount."
                 },
                 "description": "Set up your MotionMount to integrate with Home Assistant.",
                 "title": "Link your MotionMount"
@@ -70,20 +42,17 @@
             "motionmount_preset": {
                 "name": "Preset",
                 "state": {
-                    "0_wall": "Wall"
+                    "0_wall": "0: Wall"
                 }
             }
         },
         "sensor": {
             "motionmount_error_status": {
-                "name": "Error status",
+                "name": "Error Status",
                 "state": {
-                    "hdmi_cec": "HDMI CEC",
                     "internal": "Internal",
                     "motor": "Motor",
-                    "none": "None",
-                    "obstruction": "Obstruction",
-                    "tv_width_constraint": "TV width constraint"
+                    "none": "None"
                 }
             }
         }
@@ -91,12 +60,6 @@
     "exceptions": {
         "failed_communication": {
             "message": "Failed to communicate with MotionMount"
-        },
-        "incorrect_pin": {
-            "message": "PIN is not correct"
-        },
-        "no_pin_provided": {
-            "message": "No PIN provided"
         }
     }
 }

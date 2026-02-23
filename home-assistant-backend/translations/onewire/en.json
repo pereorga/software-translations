@@ -1,35 +1,19 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "reconfigure_successful": "Re-configuration was successful"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect"
         },
         "step": {
-            "discovery_confirm": {
-                "description": "Do you want to set up OWServer from {host}?"
-            },
-            "reconfigure": {
-                "data": {
-                    "host": "Host",
-                    "port": "Port"
-                },
-                "data_description": {
-                    "host": "The hostname or IP address of your OWServer instance.",
-                    "port": "The port of your OWServer instance (default is 4304)."
-                },
-                "description": "Update OWServer configuration for {name}"
-            },
             "user": {
                 "data": {
                     "host": "Host",
                     "port": "Port"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your OWServer instance.",
-                    "port": "The port of your OWServer instance (default is 4304)."
+                    "host": "The hostname or IP address of your OWServer instance."
                 },
                 "title": "Set OWServer instance details"
             }
@@ -40,22 +24,8 @@
             "hub_short_id": {
                 "name": "Hub short on branch {id}"
             },
-            "sensed": {
-                "name": "Sensed"
-            },
             "sensed_id": {
                 "name": "Sensed {id}"
-            }
-        },
-        "select": {
-            "tempres": {
-                "name": "Temperature resolution",
-                "state": {
-                    "10": "10 bits (0.25\u00b0C, up to 187.5ms)",
-                    "11": "11 bits (0.125\u00b0C, up to 375ms)",
-                    "12": "12 bits (0.0625\u00b0C, slowest, up to 750ms)",
-                    "9": "9 bits (0.5\u00b0C, fastest, up to 93.75ms)"
-                }
             }
         },
         "sensor": {
@@ -77,17 +47,11 @@
             "humidity_raw": {
                 "name": "Raw humidity"
             },
-            "latest_voltage_id": {
-                "name": "Latest voltage {id}"
-            },
             "moisture_id": {
                 "name": "Moisture {id}"
             },
             "thermocouple_temperature_k": {
                 "name": "Thermocouple K temperature"
-            },
-            "voltage_id": {
-                "name": "Voltage {id}"
             },
             "voltage_vad": {
                 "name": "VAD voltage"
@@ -139,25 +103,18 @@
         "step": {
             "configure_device": {
                 "data": {
-                    "precision": "Sensor precision"
-                },
-                "data_description": {
-                    "precision": "The lower the precision, the faster the sensor will respond, but with less accuracy."
+                    "precision": "Sensor Precision"
                 },
                 "description": "Select sensor precision for {sensor_id}",
-                "title": "1-Wire sensor precision"
+                "title": "OneWire Sensor Precision"
             },
             "device_selection": {
                 "data": {
-                    "clear_device_options": "Reset all device customizations",
-                    "device_selection": "Customize specific devices"
-                },
-                "data_description": {
-                    "clear_device_options": "Use this to reset all device-specific options to default values.",
-                    "device_selection": "Customize behavior of individual devices."
+                    "clear_device_options": "Clear all device configurations",
+                    "device_selection": "Select devices to configure"
                 },
                 "description": "Select what configuration steps to process",
-                "title": "1-Wire device options"
+                "title": "OneWire Device Options"
             }
         }
     }

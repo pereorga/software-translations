@@ -2,70 +2,39 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "cannot_connect": "Failed to connect",
             "no_plants": "No plants have been found on this account"
         },
         "error": {
-            "cannot_connect": "Cannot connect to Growatt servers. Please check your internet connection and try again.",
-            "invalid_auth": "Authentication failed. Please check your credentials and try again."
+            "invalid_auth": "Invalid authentication"
         },
         "step": {
-            "password_auth": {
-                "data": {
-                    "password": "Password",
-                    "url": "Server region",
-                    "username": "Username"
-                },
-                "title": "Enter your Growatt login credentials"
-            },
             "plant": {
                 "data": {
                     "plant_id": "Plant"
                 },
                 "title": "Select your plant"
             },
-            "token_auth": {
-                "data": {
-                    "token": "API Token",
-                    "url": "Server region"
-                },
-                "description": "Token authentication is only supported for MIN/TLX devices. For other device types, please use username/password authentication.",
-                "title": "Enter your API token"
-            },
             "user": {
-                "description": "Note: API Token authentication is currently only supported for MIN/TLX devices. For other device types, please use Username & Password authentication.",
-                "menu_options": {
-                    "password_auth": "Username & Password",
-                    "token_auth": "API Token (MIN/TLX only)"
+                "data": {
+                    "name": "Name",
+                    "password": "Password",
+                    "url": "URL",
+                    "username": "Username"
                 },
-                "title": "Choose authentication method"
+                "title": "Enter your Growatt information"
             }
         }
     },
     "entity": {
-        "number": {
-            "battery_charge_power_limit": {
-                "name": "Battery charge power limit"
-            },
-            "battery_charge_soc_limit": {
-                "name": "Battery charge SOC limit"
-            },
-            "battery_discharge_power_limit": {
-                "name": "Battery discharge power limit"
-            },
-            "battery_discharge_soc_limit": {
-                "name": "Battery discharge SOC limit"
-            }
-        },
         "sensor": {
             "inverter_amperage_input_1": {
-                "name": "Input 1 amperage"
+                "name": "Input 1 Amperage"
             },
             "inverter_amperage_input_2": {
-                "name": "Input 2 amperage"
+                "name": "Input 2 Amperage"
             },
             "inverter_amperage_input_3": {
-                "name": "Input 3 amperage"
+                "name": "Input 3 Amperage"
             },
             "inverter_current_reactive_wattage": {
                 "name": "Reactive wattage"
@@ -107,13 +76,13 @@
                 "name": "Input 3 voltage"
             },
             "inverter_wattage_input_1": {
-                "name": "Input 1 wattage"
+                "name": "Input 1 Wattage"
             },
             "inverter_wattage_input_2": {
-                "name": "Input 2 wattage"
+                "name": "Input 2 Wattage"
             },
             "inverter_wattage_input_3": {
-                "name": "Input 3 wattage"
+                "name": "Input 3 Wattage"
             },
             "mix_battery_charge": {
                 "name": "Battery charging"
@@ -161,7 +130,7 @@
                 "name": "Import from grid today (load + charging)"
             },
             "mix_last_update": {
-                "name": "Last data update"
+                "name": "Last Data Update"
             },
             "mix_load_consumption": {
                 "name": "Load consumption"
@@ -188,7 +157,7 @@
                 "name": "PV2 voltage"
             },
             "mix_self_consumption_today": {
-                "name": "Self-consumption today (solar + battery)"
+                "name": "Self consumption today (solar + battery)"
             },
             "mix_solar_generation_lifetime": {
                 "name": "Lifetime solar energy"
@@ -197,25 +166,25 @@
                 "name": "Solar energy today"
             },
             "mix_statement_of_charge": {
-                "name": "State of charge"
+                "name": "Statement of charge"
             },
             "mix_system_production_today": {
                 "name": "System production today (self-consumption + export)"
             },
             "mix_wattage_pv_1": {
-                "name": "PV1 wattage"
+                "name": "PV1 Wattage"
             },
             "mix_wattage_pv_2": {
-                "name": "PV2 wattage"
+                "name": "PV2 Wattage"
             },
             "mix_wattage_pv_all": {
-                "name": "All PV wattage"
+                "name": "All PV Wattage"
             },
             "storage_ac_input_frequency_out": {
                 "name": "AC input frequency"
             },
             "storage_ac_output_frequency": {
-                "name": "AC output frequency"
+                "name": "Ac output frequency"
             },
             "storage_battery_percentage": {
                 "name": "Battery percentage"
@@ -275,7 +244,7 @@
                 "name": "Lifetime load consumption"
             },
             "storage_load_consumption_solar_storage": {
-                "name": "Load consumption (solar + storage)"
+                "name": "Load consumption (Solar + Storage)"
             },
             "storage_load_consumption_today": {
                 "name": "Load consumption today"
@@ -308,7 +277,7 @@
                 "name": "Solar power production (PV2)"
             },
             "storage_storage_production_lifetime": {
-                "name": "Lifetime storage production"
+                "name": "Lifetime Storage production"
             },
             "storage_storage_production_today": {
                 "name": "Storage production today"
@@ -326,22 +295,16 @@
                 "name": "Lifetime total all batteries discharged"
             },
             "tlx_amperage_input_1": {
-                "name": "Input 1 amperage"
+                "name": "Input 1 Amperage"
             },
             "tlx_amperage_input_2": {
-                "name": "Input 2 amperage"
+                "name": "Input 2 Amperage"
             },
             "tlx_amperage_input_3": {
-                "name": "Input 3 amperage"
+                "name": "Input 3 Amperage"
             },
             "tlx_amperage_input_4": {
-                "name": "Input 4 amperage"
-            },
-            "tlx_batteries_charged_from_grid_today": {
-                "name": "Batteries charged from grid today"
-            },
-            "tlx_batteries_charged_from_grid_total": {
-                "name": "Lifetime batteries charged from grid"
+                "name": "Input 4 Amperage"
             },
             "tlx_battery_1_charge_total": {
                 "name": "Lifetime total battery 1 charged"
@@ -374,16 +337,16 @@
                 "name": "Energy today"
             },
             "tlx_energy_today_input_1": {
-                "name": "Energy today input 1"
+                "name": "Energy Today Input 1"
             },
             "tlx_energy_today_input_2": {
-                "name": "Energy today input 2"
+                "name": "Energy Today Input 2"
             },
             "tlx_energy_today_input_3": {
-                "name": "Energy today input 3"
+                "name": "Energy Today Input 3"
             },
             "tlx_energy_today_input_4": {
-                "name": "Energy today input 4"
+                "name": "Energy Today Input 4"
             },
             "tlx_energy_total": {
                 "name": "Lifetime energy output"
@@ -409,56 +372,20 @@
             "tlx_frequency": {
                 "name": "AC frequency"
             },
-            "tlx_import_from_grid_today": {
-                "name": "Import from grid today"
-            },
-            "tlx_import_from_grid_total": {
-                "name": "Lifetime import from grid"
-            },
             "tlx_internal_wattage": {
                 "name": "Internal wattage"
             },
             "tlx_load_consumption_today": {
                 "name": "Load consumption today"
             },
-            "tlx_p_self": {
-                "name": "Self power"
-            },
-            "tlx_p_system": {
-                "name": "System power"
-            },
-            "tlx_pac_to_grid_total": {
-                "name": "Export power"
-            },
-            "tlx_pac_to_local_load": {
-                "name": "Local load power"
-            },
-            "tlx_pac_to_user_total": {
-                "name": "Import power"
-            },
             "tlx_reactive_voltage": {
                 "name": "Reactive voltage"
-            },
-            "tlx_self_consumption_today": {
-                "name": "Self consumption today"
-            },
-            "tlx_self_consumption_total": {
-                "name": "Lifetime self consumption"
-            },
-            "tlx_solar_generation_today": {
-                "name": "Solar energy today"
             },
             "tlx_solar_generation_total": {
                 "name": "Lifetime total solar energy"
             },
             "tlx_statement_of_charge": {
-                "name": "State of charge (SoC)"
-            },
-            "tlx_system_production_today": {
-                "name": "System production today"
-            },
-            "tlx_system_production_total": {
-                "name": "Lifetime system production"
+                "name": "Statement of charge (SoC)"
             },
             "tlx_temperature_1": {
                 "name": "Temperature 1"
@@ -488,22 +415,22 @@
                 "name": "Input 4 voltage"
             },
             "tlx_wattage_input_1": {
-                "name": "Input 1 wattage"
+                "name": "Input 1 Wattage"
             },
             "tlx_wattage_input_2": {
-                "name": "Input 2 wattage"
+                "name": "Input 2 Wattage"
             },
             "tlx_wattage_input_3": {
-                "name": "Input 3 wattage"
+                "name": "Input 3 Wattage"
             },
             "tlx_wattage_input_4": {
-                "name": "Input 4 wattage"
+                "name": "Input 4 Wattage"
             },
             "total_energy_output": {
                 "name": "Lifetime energy output"
             },
             "total_energy_today": {
-                "name": "Energy today"
+                "name": "Energy Today"
             },
             "total_maximum_output": {
                 "name": "Maximum power"
@@ -515,74 +442,8 @@
                 "name": "Money lifetime"
             },
             "total_output_power": {
-                "name": "Output power"
+                "name": "Output Power"
             }
-        },
-        "switch": {
-            "ac_charge": {
-                "name": "Charge from grid"
-            }
-        }
-    },
-    "selector": {
-        "batt_mode": {
-            "options": {
-                "battery_first": "Battery first",
-                "grid_first": "Grid first",
-                "load_first": "Load first"
-            }
-        },
-        "region": {
-            "options": {
-                "australia_new_zealand": "Australia and New Zealand",
-                "china": "China",
-                "era_server": "Era server (Atess Power)",
-                "north_america": "North America",
-                "other_regions": "Other regions",
-                "smten_server": "SMTEN server"
-            }
-        }
-    },
-    "services": {
-        "read_time_segments": {
-            "description": "Read all time segments from a supported inverter.",
-            "fields": {
-                "device_id": {
-                    "description": "The Growatt device to perform the action on.",
-                    "name": "Device"
-                }
-            },
-            "name": "Read time segments"
-        },
-        "update_time_segment": {
-            "description": "Update a time segment for supported inverters.",
-            "fields": {
-                "batt_mode": {
-                    "description": "Battery operation mode for this time segment.",
-                    "name": "Battery mode"
-                },
-                "device_id": {
-                    "description": "The Growatt device to perform the action on.",
-                    "name": "Device"
-                },
-                "enabled": {
-                    "description": "Whether this time segment is active.",
-                    "name": "Enabled"
-                },
-                "end_time": {
-                    "description": "End time for the segment (HH:MM format).",
-                    "name": "End time"
-                },
-                "segment_id": {
-                    "description": "Time segment ID (1-9).",
-                    "name": "Segment ID"
-                },
-                "start_time": {
-                    "description": "Start time for the segment (HH:MM format).",
-                    "name": "Start time"
-                }
-            },
-            "name": "Update time segment"
         }
     },
     "title": "Growatt Server"

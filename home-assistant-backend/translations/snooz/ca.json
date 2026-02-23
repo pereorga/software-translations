@@ -23,19 +23,24 @@
     },
     "services": {
         "transition_off": {
+            "description": "Apaga el volum al llarg del temps.",
             "fields": {
                 "duration": {
+                    "description": "Temps que es triga a apagar-se.",
                     "name": "Durada de la transici\u00f3"
                 }
             },
             "name": "Transici\u00f3 desactivada"
         },
         "transition_on": {
+            "description": "Fa una transici\u00f3 a un nivell de volum objectiu al llarg del temps.",
             "fields": {
                 "duration": {
+                    "description": "Temps que es triga a arribar al nivell de volum objectiu.",
                     "name": "Durada de la transici\u00f3"
                 },
                 "volume": {
+                    "description": "Si no s'especifica, el volum s'obt\u00e9 del dispositiu.",
                     "name": "Volum objectiu"
                 }
             },

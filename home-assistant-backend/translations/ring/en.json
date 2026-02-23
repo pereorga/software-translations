@@ -14,17 +14,11 @@
                 "data": {
                     "2fa": "Two-factor code"
                 },
-                "data_description": {
-                    "2fa": "Account verification code via the method selected in your Ring account settings."
-                },
                 "title": "Two-factor authentication"
             },
             "reauth_confirm": {
                 "data": {
                     "password": "Password"
-                },
-                "data_description": {
-                    "password": "Your Ring account password."
                 },
                 "description": "The Ring integration needs to re-authenticate your account {username}",
                 "title": "Authentication expired for {name}"
@@ -33,22 +27,15 @@
                 "data": {
                     "password": "Password"
                 },
-                "data_description": {
-                    "password": "Your Ring account password."
-                },
                 "description": "Will create a new Authorized Device for {username} at ring.com",
-                "title": "Reconfigure Ring integration"
+                "title": "Reconfigure Ring Integration"
             },
             "user": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
-                "data_description": {
-                    "password": "Your Ring account password.",
-                    "username": "Your Ring account username."
-                },
-                "title": "Sign in with Ring account"
+                "title": "Sign-in with Ring account"
             }
         }
     },
@@ -56,6 +43,9 @@
         "binary_sensor": {
             "ding": {
                 "name": "Ding"
+            },
+            "motion": {
+                "name": "Motion"
             }
         },
         "button": {
@@ -122,6 +112,9 @@
             },
             "wifi_signal_category": {
                 "name": "Wi-Fi signal category"
+            },
+            "wifi_signal_strength": {
+                "name": "Wi-Fi signal strength"
             }
         },
         "siren": {
@@ -139,23 +132,6 @@
             "siren": {
                 "name": "Siren"
             }
-        }
-    },
-    "exceptions": {
-        "api_authentication": {
-            "message": "Authentication error communicating with Ring API"
-        },
-        "api_error": {
-            "message": "Error communicating with Ring API"
-        },
-        "api_timeout": {
-            "message": "Timeout communicating with Ring API"
-        },
-        "no_subscription": {
-            "message": "Ring Protect subscription required for snapshots"
-        },
-        "sdp_m_line_index_required": {
-            "message": "Error negotiating stream for {device}"
         }
     },
     "issues": {

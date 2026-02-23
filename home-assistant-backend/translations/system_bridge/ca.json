@@ -77,6 +77,11 @@
             }
         }
     },
+    "exceptions": {
+        "process_not_found": {
+            "message": "No s'ha pogut trobar cap proc\u00e9s amb ID {id}."
+        }
+    },
     "services": {
         "get_process_by_id": {
             "description": "Obt\u00e9 un proc\u00e9s mitjan\u00e7ant l'ID.",
@@ -150,6 +155,7 @@
                     "name": "Bridge (enlla\u00e7)"
                 },
                 "key": {
+                    "description": "Tecla a clicar. Llista disponible aqu\u00ed: http://robotjs.io/docs/syntax#keys.",
                     "name": "Clau"
                 }
             },

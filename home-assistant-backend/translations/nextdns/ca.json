@@ -2,8 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Aquest perfil NextDNS ja est\u00e0 configurat.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -11,12 +10,12 @@
             "unknown": "Error inesperat"
         },
         "step": {
-            "reauth_confirm": {
+            "profiles": {
                 "data": {
-                    "api_key": "Clau API"
+                    "profile": "Perfil"
                 }
             },
-            "reconfigure": {
+            "reauth_confirm": {
                 "data": {
                     "api_key": "Clau API"
                 }
@@ -302,6 +301,9 @@
             },
             "block_whatsapp": {
                 "name": "Bloqueig de Whatsapp"
+            },
+            "block_xboxlive": {
+                "name": "Bloqueig d'Xbox Live"
             },
             "block_youtube": {
                 "name": "Bloqueig de Youtube"

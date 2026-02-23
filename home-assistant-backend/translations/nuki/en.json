@@ -26,7 +26,7 @@
                     "token": "Access token"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Nuki bridge. For example: {sample_ip}."
+                    "host": "The hostname or IP address of your Nuki bridge. For example: 192.168.1.25."
                 }
             }
         }
@@ -52,20 +52,20 @@
     },
     "issues": {
         "https_webhook": {
-            "description": "The Nuki bridge cannot push events to an HTTPS address (SSL), please configure a (local) HTTP address under \"Home Assistant URL\" in the [network settings]({network_link}). The current (local) address is: `{base_url}`, a valid address could, for example, be `{sample_url}` where `{sample_ip}` is the IP of the Home Assistant device",
+            "description": "The Nuki bridge can not push events to an HTTPS address (SSL), please configure a (local) HTTP address under \"Home Assistant URL\" in the [network settings]({network_link}). The current (local) address is: `{base_url}`, a valid address could, for example, be `http://192.168.1.10:8123` where `192.168.1.10` is the IP of the Home Assistant device",
             "title": "Nuki webhook URL uses HTTPS (SSL)"
         }
     },
     "services": {
         "lock_n_go": {
-            "description": "Unlocks the door, waits a few seconds then re-locks. The wait period can be customized through the app.",
+            "description": "Nuki Lock 'n' Go.",
             "fields": {
                 "unlatch": {
-                    "description": "Whether to also unlatch the door when unlocking it.",
+                    "description": "Whether to unlatch the lock.",
                     "name": "Unlatch"
                 }
             },
-            "name": "Lock 'n' Go"
+            "name": "Lock 'n' go"
         },
         "set_continuous_mode": {
             "description": "Enables or disables continuous mode on Nuki Opener.",

@@ -35,7 +35,7 @@
     },
     "entity": {
         "binary_sensor": {
-            "power": {
+            "jvc_power": {
                 "name": "Power"
             }
         },
@@ -50,7 +50,7 @@
         },
         "sensor": {
             "jvc_power_status": {
-                "name": "Status",
+                "name": "Power status",
                 "state": {
                     "cooling": "Cooling",
                     "error": "Error",

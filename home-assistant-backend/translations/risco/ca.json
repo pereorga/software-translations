@@ -55,11 +55,12 @@
         "step": {
             "ha_to_risco": {
                 "data": {
-                    "armed_away": "Activada, mode fora",
-                    "armed_custom_bypass": "Activada, bypass personalitzat",
-                    "armed_home": "Activada, mode a casa",
-                    "armed_night": "Activada, mode nocturn"
+                    "armed_away": "Activat, mode fora",
+                    "armed_custom_bypass": "Activat, bypass personalitzat",
+                    "armed_home": "Activat, mode a casa",
+                    "armed_night": "Activat, mode nocturn"
                 },
+                "description": "Selecciona quin estat establir a l'alarma Risco quan s'activi l'alarma de Home Assistant",
                 "title": "Converteix els estats de Risco en estats a Home Assistant"
             },
             "init": {
@@ -80,6 +81,7 @@
                     "arm": "Activat (mode fora)",
                     "partial_arm": "Activat parcial (estada)"
                 },
+                "description": "Selecciona quin estat tindr\u00e0 l'alarma de Home Assistant per a cadascun dels estats que proporcioni Risco",
                 "title": "Converteix els estats de Risco en estats a Home Assistant"
             }
         }

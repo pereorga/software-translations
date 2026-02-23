@@ -17,7 +17,7 @@
         },
         "select": {
             "pipeline": {
-                "name": "Assistant{index}",
+                "name": "Assistant",
                 "state": {
                     "preferred": "Preferred"
                 }
@@ -37,11 +37,6 @@
             }
         }
     },
-    "exceptions": {
-        "non_tts_announcement": {
-            "message": "VoIP does not currently support non-TTS announcements"
-        }
-    },
     "issues": {
         "assist_in_progress_deprecated": {
             "fix_flow": {
@@ -58,8 +53,7 @@
         "step": {
             "init": {
                 "data": {
-                    "sip_port": "SIP port",
-                    "sip_user": "SIP user"
+                    "sip_port": "SIP port"
                 }
             }
         }

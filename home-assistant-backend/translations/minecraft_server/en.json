@@ -4,15 +4,13 @@
             "already_configured": "Service is already configured"
         },
         "error": {
-            "cannot_connect": "Failed to connect to server. Please check the address and try again. If a port was provided, it must be within a valid range. If you are running a Minecraft Java Edition server, ensure that it is at least version {minimum_minecraft_version}."
+            "cannot_connect": "Failed to connect to server. Please check the address and try again. If a port was provided, it must be within a valid range. If you are running a Minecraft Java Edition server, ensure that it is at least version 1.7."
         },
         "step": {
             "user": {
                 "data": {
-                    "address": "Server address"
-                },
-                "data_description": {
-                    "address": "The hostname, IP address or SRV record of your Minecraft server, optionally including the port."
+                    "address": "Server address",
+                    "name": "Name"
                 },
                 "description": "Set up your Minecraft Server instance to allow monitoring.",
                 "title": "Link your Minecraft Server"

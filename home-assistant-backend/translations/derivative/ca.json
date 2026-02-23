@@ -12,6 +12,7 @@
                 },
                 "data_description": {
                     "round": "Controla el nombre de d\u00edgits decimals a la sortida.",
+                    "time_window": "Si s'estableix, el valor del sensor \u00e9s una mitjana m\u00f2bil ponderada en el temps de les derivades dins d'aquesta finestra.",
                     "unit_prefix": "La sortida s'escalar\u00e0 segons el prefix m\u00e8tric i la unitat de temps de la derivada seleccionats."
                 },
                 "description": "Crea un sensor que estima la derivada d'un altre sensor."
@@ -31,17 +32,13 @@
                 },
                 "data_description": {
                     "round": "Controla el nombre de d\u00edgits decimals a la sortida.",
+                    "time_window": "Si s'estableix, el valor del sensor \u00e9s una mitjana m\u00f2bil ponderada en el temps de les derivades dins d'aquesta finestra.",
                     "unit_prefix": "La sortida s'escalar\u00e0 segons el prefix m\u00e8tric i la unitat de temps de la derivada seleccionats."
                 }
             }
         }
     },
     "selector": {
-        "round": {
-            "unit_of_measurement": {
-                "decimals": "decimals"
-            }
-        },
         "time_unit": {
             "options": {
                 "d": "Dies",
@@ -49,11 +46,6 @@
                 "min": "Minuts",
                 "s": "Segons"
             }
-        }
-    },
-    "services": {
-        "reload": {
-            "name": "Torna a carregar"
         }
     },
     "title": "Sensor derivatiu"

@@ -1,14 +1,10 @@
 {
-    "common": {
-        "account_locked_error": "The account is locked. Please follow the instructions in the manufacturer's app to unlock it"
-    },
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
             "reauth_successful": "Re-authentication was successful"
         },
         "error": {
-            "account_locked": "The account is locked. Please follow the instructions in the manufacturer's app to unlock it",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
             "no_appliances": "No supported appliances found",
@@ -22,10 +18,9 @@
                     "region": "Region"
                 },
                 "data_description": {
-                    "brand": "The brand of the mobile app you use, or the brand of the appliances in your account",
-                    "password": "The password you use to log in to the Whirlpool/Maytag app",
-                    "region": "The region where your appliances where purchased"
+                    "brand": "Please choose the brand of the mobile app you use, or the brand of the appliances in your account"
                 },
+                "description": "For 'brand', please choose the brand of the mobile app you use, or the brand of the appliances in your account",
                 "title": "Authentication expired for {name}"
             },
             "user": {
@@ -36,10 +31,7 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "brand": "The brand of the mobile app you use, or the brand of the appliances in your account",
-                    "password": "The password you use to log in to the Whirlpool/Maytag app",
-                    "region": "The region where your appliances where purchased",
-                    "username": "The username or email address you use to log in to the Whirlpool/Maytag app"
+                    "brand": "Please choose the brand of the mobile app you use, or the brand of the appliances in your account"
                 },
                 "title": "Configure your Whirlpool account"
             }
@@ -47,148 +39,38 @@
     },
     "entity": {
         "sensor": {
-            "dryer_state": {
-                "name": "State",
-                "state": {
-                    "complete": "Complete",
-                    "customer_focus_mode": "Customer focus mode",
-                    "cycle_filling": "Cycle filling",
-                    "cycle_rinsing": "Cycle rinsing",
-                    "cycle_sensing": "Cycle sensing",
-                    "cycle_soaking": "Cycle soaking",
-                    "cycle_spinning": "Cycle spinning",
-                    "cycle_washing": "Cycle washing",
-                    "delay_countdown": "Delay countdown",
-                    "delay_paused": "Delay paused",
-                    "demo_mode": "Demo mode",
-                    "exception": "Exception",
-                    "factory_diagnostic_mode": "Factory diagnostic mode",
-                    "hard_stop_or_error": "Hard stop or error",
-                    "life_test": "Life test",
-                    "pause": "Paused",
-                    "power_failure": "Power failure",
-                    "running_maincycle": "Running maincycle",
-                    "running_postcycle": "Running postcycle",
-                    "service_diagnostic_mode": "Service diagnostic mode",
-                    "setting": "Setting",
-                    "smart_delay": "Smart delay",
-                    "smart_grid_pause": "Smart delay",
-                    "standby": "Standby",
-                    "system_initialize": "System initialize"
-                }
-            },
             "end_time": {
                 "name": "End time"
             },
-            "oven_cook_mode": {
-                "name": "Cook mode",
-                "state": {
-                    "air_fry": "Air fry",
-                    "bake": "Bake",
-                    "broil": "Broil",
-                    "convection_bake": "Convection bake",
-                    "convection_broil": "Convection broil",
-                    "convection_roast": "Convection roast",
-                    "keep_warm": "Keep warm",
-                    "standby": "Standby"
-                }
-            },
-            "oven_cook_mode_lower": {
-                "name": "Lower oven cook mode",
-                "state": {
-                    "air_fry": "Air fry",
-                    "bake": "Bake",
-                    "broil": "Broil",
-                    "convection_bake": "Convection bake",
-                    "convection_broil": "Convection broil",
-                    "convection_roast": "Convection roast",
-                    "keep_warm": "Keep warm",
-                    "standby": "Standby"
-                }
-            },
-            "oven_cook_mode_upper": {
-                "name": "Upper oven cook mode",
-                "state": {
-                    "air_fry": "Air fry",
-                    "bake": "Bake",
-                    "broil": "Broil",
-                    "convection_bake": "Convection bake",
-                    "convection_broil": "Convection broil",
-                    "convection_roast": "Convection roast",
-                    "keep_warm": "Keep warm",
-                    "standby": "Standby"
-                }
-            },
-            "oven_current_temperature": {
-                "name": "Current temperature"
-            },
-            "oven_current_temperature_lower": {
-                "name": "Lower oven current temperature"
-            },
-            "oven_current_temperature_upper": {
-                "name": "Upper oven current temperature"
-            },
-            "oven_state": {
-                "name": "State",
-                "state": {
-                    "cooking": "Cooking",
-                    "preheating": "Preheating",
-                    "standby": "Standby"
-                }
-            },
-            "oven_state_lower": {
-                "name": "Lower oven state",
-                "state": {
-                    "cooking": "Cooking",
-                    "preheating": "Preheating",
-                    "standby": "Standby"
-                }
-            },
-            "oven_state_upper": {
-                "name": "Upper oven state",
-                "state": {
-                    "cooking": "Cooking",
-                    "preheating": "Preheating",
-                    "standby": "Standby"
-                }
-            },
-            "oven_target_temperature": {
-                "name": "Target temperature"
-            },
-            "oven_target_temperature_lower": {
-                "name": "Lower oven target temperature"
-            },
-            "oven_target_temperature_upper": {
-                "name": "Upper oven target temperature"
-            },
-            "washer_state": {
+            "whirlpool_machine": {
                 "name": "State",
                 "state": {
                     "complete": "Complete",
-                    "customer_focus_mode": "Customer focus mode",
-                    "cycle_filling": "Cycle filling",
-                    "cycle_rinsing": "Cycle rinsing",
-                    "cycle_sensing": "Cycle sensing",
-                    "cycle_soaking": "Cycle soaking",
-                    "cycle_spinning": "Cycle spinning",
-                    "cycle_washing": "Cycle washing",
-                    "delay_countdown": "Delay countdown",
-                    "delay_paused": "Delay paused",
-                    "demo_mode": "Demo mode",
+                    "customer_focus_mode": "Customer Focus Mode",
+                    "cycle_filling": "Cycle Filling",
+                    "cycle_rinsing": "Cycle Rinsing",
+                    "cycle_sensing": "Cycle Sensing",
+                    "cycle_soaking": "Cycle Soaking",
+                    "cycle_spinning": "Cycle Spinning",
+                    "cycle_washing": "Cycle Washing",
+                    "delay_countdown": "Delay Countdown",
+                    "delay_paused": "Delay Paused",
+                    "demo_mode": "Demo Mode",
+                    "door_open": "Door Open",
                     "exception": "Exception",
-                    "factory_diagnostic_mode": "Factory diagnostic mode",
-                    "hard_stop_or_error": "Hard stop or error",
-                    "life_test": "Life test",
+                    "factory_diagnostic_mode": "Factory Diagnostic Mode",
+                    "hard_stop_or_error": "Hard Stop or Error",
+                    "life_test": "Life Test",
                     "pause": "Paused",
-                    "power_failure": "Power failure",
-                    "running_maincycle": "Running maincycle",
-                    "running_postcycle": "Running postcycle",
-                    "service_diagnostic_mode": "Service diagnostic mode",
+                    "power_failure": "Power Failure",
+                    "running_maincycle": "Running Maincycle",
+                    "running_postcycle": "Running Postcycle",
+                    "service_diagnostic_mode": "Service Diagnostic Mode",
                     "setting": "Setting",
-                    "smart_delay": "Smart delay",
-                    "smart_grid_pause": "Smart delay",
+                    "smart_delay": "Smart Delay",
+                    "smart_grid_pause": "Smart Delay",
                     "standby": "Standby",
-                    "system_initialize": "System initialize"
+                    "system_initialize": "System Initialize"
                 }
             },
             "whirlpool_tank": {
@@ -202,17 +84,6 @@
                     "unknown": "Unknown"
                 }
             }
-        }
-    },
-    "exceptions": {
-        "account_locked": {
-            "message": "The account is locked. Please follow the instructions in the manufacturer's app to unlock it"
-        },
-        "appliances_fetch_failed": {
-            "message": "Failed to fetch appliances"
-        },
-        "request_failed": {
-            "message": "Request failed"
         }
     }
 }

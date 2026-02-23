@@ -1,13 +1,4 @@
 {
-    "common": {
-        "data_description_feature_device_tracking": "Enable or disable the network device tracking feature.",
-        "data_description_host": "The hostname or IP address of your FRITZ!Box router.",
-        "data_description_password": "Password for the FRITZ!Box.",
-        "data_description_port": "Leave empty to use the default port.",
-        "data_description_ssl": "Use SSL to connect to the FRITZ!Box.",
-        "data_description_username": "Username for the FRITZ!Box.",
-        "data_feature_device_tracking": "Enable network device tracking"
-    },
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
@@ -28,16 +19,9 @@
         "step": {
             "confirm": {
                 "data": {
-                    "feature_device_tracking": "Enable network device tracking",
                     "password": "Password",
                     "ssl": "Uses an SSL certificate",
                     "username": "Username"
-                },
-                "data_description": {
-                    "feature_device_tracking": "Enable or disable the network device tracking feature.",
-                    "password": "Password for the FRITZ!Box.",
-                    "ssl": "Use SSL to connect to the FRITZ!Box.",
-                    "username": "Username for the FRITZ!Box."
                 },
                 "description": "Discovered FRITZ!Box: {name}\n\nSet up FRITZ!Box Tools to control your {name}",
                 "title": "Set up FRITZ!Box Tools"
@@ -47,12 +31,8 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "data_description": {
-                    "password": "Password for the FRITZ!Box.",
-                    "username": "Username for the FRITZ!Box."
-                },
                 "description": "Update FRITZ!Box Tools credentials for: {host}.\n\nFRITZ!Box Tools is unable to log in to your FRITZ!Box.",
-                "title": "FRITZ!Box Tools - Update credentials"
+                "title": "Updating FRITZ!Box Tools - credentials"
             },
             "reconfigure": {
                 "data": {
@@ -62,15 +42,13 @@
                 },
                 "data_description": {
                     "host": "The hostname or IP address of your FRITZ!Box router.",
-                    "port": "Leave empty to use the default port.",
-                    "ssl": "Use SSL to connect to the FRITZ!Box."
+                    "port": "Leave it empty to use the default port."
                 },
                 "description": "Update FRITZ!Box Tools configuration for: {host}.",
-                "title": "FRITZ!Box Tools - Update configuration"
+                "title": "Updating FRITZ!Box Tools - configuration"
             },
             "user": {
                 "data": {
-                    "feature_device_tracking": "Enable network device tracking",
                     "host": "Host",
                     "password": "Password",
                     "port": "Port",
@@ -78,12 +56,8 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "feature_device_tracking": "Enable or disable the network device tracking feature.",
                     "host": "The hostname or IP address of your FRITZ!Box router.",
-                    "password": "Password for the FRITZ!Box.",
-                    "port": "Leave empty to use the default port.",
-                    "ssl": "Use SSL to connect to the FRITZ!Box.",
-                    "username": "Username for the FRITZ!Box."
+                    "port": "Leave it empty to use the default port."
                 },
                 "description": "Set up FRITZ!Box Tools to control your FRITZ!Box.\nMinimum needed: username, password.",
                 "title": "Set up FRITZ!Box Tools"
@@ -108,17 +82,11 @@
             },
             "reconnect": {
                 "name": "Reconnect"
-            },
-            "wake_on_lan": {
-                "name": "Wake on LAN"
             }
         },
         "sensor": {
             "connection_uptime": {
                 "name": "Connection uptime"
-            },
-            "cpu_temperature": {
-                "name": "CPU temperature"
             },
             "device_uptime": {
                 "name": "Last restart"
@@ -165,11 +133,6 @@
             "max_kb_s_sent": {
                 "name": "Max connection upload throughput"
             }
-        },
-        "switch": {
-            "internet_access": {
-                "name": "Internet access"
-            }
         }
     },
     "exceptions": {
@@ -178,9 +141,6 @@
         },
         "error_refresh_hosts_info": {
             "message": "Error refreshing hosts info"
-        },
-        "service_dial_failed": {
-            "message": "Failed to dial, check if the click to dial service of the FRITZ!Box is activated"
         },
         "service_not_supported": {
             "message": "Action not supported"
@@ -192,7 +152,7 @@
             "message": "Unable to establish a connection"
         },
         "update_failed": {
-            "message": "Error while updating the data: {error}"
+            "message": "Error while uptaing the data: {error}"
         }
     },
     "options": {
@@ -200,45 +160,21 @@
             "init": {
                 "data": {
                     "consider_home": "Seconds to consider a device at 'home'",
-                    "feature_device_tracking": "Enable network device tracking",
                     "old_discovery": "Enable old discovery method"
-                },
-                "data_description": {
-                    "consider_home": "Time in seconds to consider a device at home. Default is 180 seconds.",
-                    "feature_device_tracking": "Enable or disable the network device tracking feature.",
-                    "old_discovery": "Enable old discovery method. This is needed for some scenarios."
                 }
             }
         }
     },
     "services": {
-        "dial": {
-            "description": "Makes the FRITZ!Box dial a phone number.",
-            "fields": {
-                "device_id": {
-                    "description": "Select the FRITZ!Box to dial from.",
-                    "name": "FRITZ!Box device"
-                },
-                "max_ring_seconds": {
-                    "description": "The maximum number of seconds to ring after dialing.",
-                    "name": "Maximum ring duration"
-                },
-                "number": {
-                    "description": "The phone number to dial.",
-                    "name": "Phone number"
-                }
-            },
-            "name": "Dial a phone number"
-        },
         "set_guest_wifi_password": {
             "description": "Sets a new password for the guest Wi-Fi. The password must be between 8 and 63 characters long. If no additional parameter is set, the password will be auto-generated with a length of 12 characters.",
             "fields": {
                 "device_id": {
-                    "description": "Select the FRITZ!Box to configure.",
-                    "name": "FRITZ!Box device"
+                    "description": "Select the Fritz!Box to configure.",
+                    "name": "Fritz!Box Device"
                 },
                 "length": {
-                    "description": "Length of the new password. It will be auto-generated if no password is set.",
+                    "description": "Length of the new password. The password will be auto-generated, if no password is set.",
                     "name": "Password length"
                 },
                 "password": {

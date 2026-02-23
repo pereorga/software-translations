@@ -59,28 +59,28 @@
     "device_automation": {
         "trigger_subtype": {
             "abnormal": "Abnormal",
-            "double_press": "Double press",
+            "double_press": "Double Press",
             "insufficient_area": "Insufficient area",
             "lock_inside_the_door": "Lock inside the door",
             "lock_outside_the_door": "Lock outside the door",
             "locked": "Locked",
-            "long_press": "Long press",
+            "long_press": "Long Press",
             "low_quality_too_light_fuzzy": "Low quality (too light, fuzzy)",
             "match_failed": "Match failed",
             "match_successful": "Match successful",
-            "motion_detected": "Motion detected",
+            "motion_detected": "Motion Detected",
             "press": "Press",
             "release_the_antilock": "Release antilock",
-            "rotate_left": "Rotate left",
-            "rotate_left_pressed": "Rotate left (pressed)",
-            "rotate_right": "Rotate right",
-            "rotate_right_pressed": "Rotate right (pressed)",
+            "rotate_left": "Rotate Left",
+            "rotate_left_pressed": "Rotate Left (Pressed)",
+            "rotate_right": "Rotate Right",
+            "rotate_right_pressed": "Rotate Right (Pressed)",
             "skin_is_too_dry": "Skin is too dry",
             "skin_is_too_wet": "Skin is too wet",
             "turn_off_child_lock": "Turn off child lock",
             "turn_on_antilock": "Turn on antilock",
             "turn_on_child_lock": "Turn on child lock",
-            "unlock_inside_the_door": "Unlock inside the door",
+            "unlock_inside_the_door": "Unlock outside the door",
             "unlock_outside_the_door": "Unlock outside the door"
         },
         "trigger_type": {
@@ -98,8 +98,6 @@
             "button_left": "Button Left \"{subtype}\"",
             "button_light": "Button Light \"{subtype}\"",
             "button_m": "Button M \"{subtype}\"",
-            "button_mid_left": "Button Mid Left \"{subtype}\"",
-            "button_mid_right": "Button Mid Right \"{subtype}\"",
             "button_middle": "Button Middle \"{subtype}\"",
             "button_min": "Button Min \"{subtype}\"",
             "button_off": "Button Off \"{subtype}\"",
@@ -214,7 +212,7 @@
                             "turn_off_child_lock": "Turn off child lock",
                             "turn_on_antilock": "Turn on antilock",
                             "turn_on_child_lock": "Turn on child lock",
-                            "unlock_inside_the_door": "Unlock inside the door",
+                            "unlock_inside_the_door": "Unlock outside the door",
                             "unlock_outside_the_door": "Unlock outside the door"
                         }
                     }
@@ -224,18 +222,10 @@
                 "state_attributes": {
                     "event_type": {
                         "state": {
-                            "motion_detected": "Motion detected"
+                            "motion_detected": "Motion Detected"
                         }
                     }
                 }
-            }
-        },
-        "sensor": {
-            "impedance": {
-                "name": "Impedance"
-            },
-            "weight_non_stabilized": {
-                "name": "Weight non-stabilized"
             }
         }
     }

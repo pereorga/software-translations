@@ -2,25 +2,32 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "unknown": "Error inesperat"
+            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "unknown": "Error inesperat"
         },
         "step": {
-            "user": {
+            "discovery_confirm": {
+                "title": "S'ha descobert un servidor Music Assistant"
+            },
+            "init": {
                 "data": {
-                    "url": "URL"
+                    "url": "URL del servidor de Music Assistant"
                 }
+            },
+            "manual": {
+                "data": {
+                    "url": "URL del servidor de Music Assistant"
+                },
+                "title": "Afegeix manualment el servidor Music Assistant"
             }
         }
     },
     "issues": {
         "invalid_server_version": {
+            "description": "Comprova si hi ha actualitzacions disponibles per al servidor i/o la integraci\u00f3 Music Assistant.",
             "title": "La versi\u00f3 del servidor Music Assistant no \u00e9s correcta"
         }
     },
@@ -59,6 +66,7 @@
     },
     "services": {
         "get_library": {
+            "description": "Obt\u00e9 els elements d'una biblioteca de Music Assistant.",
             "fields": {
                 "favorite": {
                     "name": "Nom\u00e9s preferits"

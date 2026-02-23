@@ -20,37 +20,6 @@
             }
         }
     },
-    "entity": {
-        "binary_sensor": {
-            "freeze_prevent": {
-                "name": "Freeze prevent"
-            },
-            "standby": {
-                "name": "Standby"
-            },
-            "watering_running": {
-                "name": "Watering running"
-            },
-            "zone_enabled": {
-                "name": "Zone {zone} enabled"
-            }
-        },
-        "sensor": {
-            "active_zone_count": {
-                "name": "Active zones",
-                "unit_of_measurement": "zones"
-            },
-            "rain_delay": {
-                "name": "Rain delay"
-            },
-            "water_hammer_duration": {
-                "name": "Water hammer reduction"
-            },
-            "zone_delay": {
-                "name": "Zone delay"
-            }
-        }
-    },
     "services": {
         "start_irrigation": {
             "description": "Starts the irrigation.",

@@ -4,7 +4,7 @@
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
             "connection_error": "Failed to connect",
-            "not_motionblinds": "Discovered device is not a Motionblinds gateway"
+            "not_motionblinds": "Discovered device is not a Motion gateway"
         },
         "error": {
             "discovery_error": "Failed to discover a Motion Gateway"
@@ -15,20 +15,20 @@
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "You will need the 16 character API key, see {documentation_url} for instructions"
+                "description": "You will need the 16 character API Key, see https://www.home-assistant.io/integrations/motion_blinds/#retrieving-the-key for instructions"
             },
             "select": {
                 "data": {
                     "select_ip": "IP address"
                 },
-                "description": "Run the setup again if you want to connect additional Motionblinds gateways",
-                "title": "Select the Motionblinds gateway that you wish to connect"
+                "description": "Run the setup again if you want to connect additional Motion Gateways",
+                "title": "Select the Motion Gateway that you wish to connect"
             },
             "user": {
                 "data": {
                     "host": "IP address"
                 },
-                "description": "Connect to your Motionblinds gateway. If the IP address is not set, auto-discovery is used"
+                "description": "Connect to your Motion Gateway, if the IP address is not set, auto-discovery is used"
             }
         }
     },

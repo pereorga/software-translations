@@ -9,6 +9,7 @@
             "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
             "oauth_timeout": "Temps m\u00e0xim d'espera de resoluci\u00f3 de 'token' OAuth esgotat.",
             "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
+            "reauth_account_mismatch": "El compte Spotify autenticat, no coincideix amb el compte necessari per a la re-autenticaci\u00f3.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "create_entry": {
@@ -16,23 +17,12 @@
         },
         "step": {
             "pick_implementation": {
-                "data": {
-                    "implementation": "Credencials d'aplicaci\u00f3"
-                },
-                "data_description": {
-                    "implementation": "Les credencials que vols fer servir per autenticar."
-                },
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             },
             "reauth_confirm": {
                 "description": "La integraci\u00f3 de Spotify ha de tornar a autenticar-se amb el compte de Spotify: {account}",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
-        }
-    },
-    "exceptions": {
-        "oauth2_implementation_unavailable": {
-            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
         }
     },
     "system_health": {

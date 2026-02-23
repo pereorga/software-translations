@@ -12,21 +12,15 @@
                 "data": {
                     "station": "Station"
                 },
-                "data_description": {
-                    "station": "Select the water measuring station you want to add to Home Assistant."
-                },
                 "description": "Found {stations_count} stations in radius",
-                "title": "Select the station to add"
+                "title": "Select the measuring station to add"
             },
             "user": {
                 "data": {
                     "location": "Location",
-                    "radius": "Search radius"
+                    "radius": "Search radius (in km)"
                 },
-                "data_description": {
-                    "location": "Pick the location where to search for water measuring stations.",
-                    "radius": "The radius to search for water measuring stations around the selected location."
-                }
+                "description": "Select the area, where you want to search for water measuring stations"
             }
         }
     },

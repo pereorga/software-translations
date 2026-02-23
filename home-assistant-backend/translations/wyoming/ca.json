@@ -8,6 +8,9 @@
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
+            "hassio_confirm": {
+                "description": "Vols configurar Home Assistant perqu\u00e8 es connecti amb el servei Wyoming proporcionat pel complement: {addon}?"
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -34,14 +37,15 @@
             "noise_suppression_level": {
                 "name": "Nivell de supressi\u00f3 de soroll",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
+                    "high": "Alt",
+                    "low": "Baix",
                     "max": "M\u00e0x.",
-                    "medium": "Mitj\u00e0/na",
+                    "medium": "Mitj\u00e0",
                     "off": "OFF"
                 }
             },
             "pipeline": {
+                "name": "Xarxa d'Assist",
                 "state": {
                     "preferred": "Preferit"
                 }

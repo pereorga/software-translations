@@ -21,7 +21,7 @@
                 "data_description": {
                     "host": "The hostname or IP address of your Deluge device."
                 },
-                "description": "To be able to use this integration, you have to enable the following option in Deluge settings: Daemon > Allow remote controls"
+                "description": "To be able to use this integration, you have to enable the following option in deluge settings: Daemon > Allow remote controls"
             }
         }
     },
@@ -30,19 +30,11 @@
             "download_speed": {
                 "name": "Download speed"
             },
-            "downloading_count": {
-                "name": "Downloading count",
-                "unit_of_measurement": "torrents"
-            },
             "protocol_traffic_download_speed": {
                 "name": "Protocol traffic download speed"
             },
             "protocol_traffic_upload_speed": {
                 "name": "Protocol traffic upload speed"
-            },
-            "seeding_count": {
-                "name": "Seeding count",
-                "unit_of_measurement": "torrents"
             },
             "status": {
                 "name": "Status",

@@ -26,7 +26,7 @@
                 "title": "Pick Hue bridge"
             },
             "link": {
-                "description": "Press the button on the bridge to register Philips Hue with Home Assistant.",
+                "description": "Press the button on the bridge to register Philips Hue with Home Assistant.\n\n![Location of button on bridge](/static/images/config_philips_hue.jpg)",
                 "title": "Link Hub"
             },
             "manual": {
@@ -36,7 +36,7 @@
                 "data_description": {
                     "host": "The hostname or IP address of your Hue bridge."
                 },
-                "title": "Manually configure a Hue bridge"
+                "title": "Manual configure a Hue bridge"
             }
         }
     },
@@ -51,18 +51,17 @@
             "button_3": "Third button",
             "button_4": "Fourth button",
             "clock_wise": "Rotation clockwise",
-            "counter_clock_wise": "Rotation counterclockwise",
+            "counter_clock_wise": "Rotation counter-clockwise",
             "dim_down": "Dim down",
             "dim_up": "Dim up",
-            "double_buttons_1_3": "First and third button",
-            "double_buttons_2_4": "Second and fourth button",
+            "double_buttons_1_3": "First and Third buttons",
+            "double_buttons_2_4": "Second and Fourth buttons",
             "turn_off": "Turn off",
             "turn_on": "Turn on"
         },
         "trigger_type": {
             "double_short_release": "Both \"{subtype}\" released",
             "initial_press": "\"{subtype}\" pressed initially",
-            "long_press": "\"{subtype}\" long pressed",
             "long_release": "\"{subtype}\" released after long press",
             "remote_button_long_release": "\"{subtype}\" released after long press",
             "remote_button_short_press": "\"{subtype}\" pressed",
@@ -97,29 +96,7 @@
                     "event_type": {
                         "state": {
                             "clock_wise": "Clockwise",
-                            "counter_clock_wise": "Counterclockwise"
-                        }
-                    }
-                }
-            }
-        },
-        "light": {
-            "hue_light": {
-                "state_attributes": {
-                    "effect": {
-                        "state": {
-                            "candle": "Candle",
-                            "cosmos": "Cosmos",
-                            "enchant": "Enchant",
-                            "fire": "Fire",
-                            "glisten": "Glisten",
-                            "opal": "Opal",
-                            "prism": "Prism",
-                            "sparkle": "Sparkle",
-                            "sunbeam": "Sunbeam",
-                            "sunrise": "Sunrise",
-                            "sunset": "Sunset",
-                            "underwater": "Underwater"
+                            "counter_clock_wise": "Counter clockwise"
                         }
                     }
                 }
@@ -143,12 +120,6 @@
             "motion_sensor_enabled": {
                 "name": "Motion sensor enabled"
             }
-        }
-    },
-    "issues": {
-        "deprecated_effect_none": {
-            "description": "A light was turned on with the deprecated effect `None`. This has been replaced with `off`. Please update any automations, scenes, or scripts that use this effect.",
-            "title": "Light turned on with deprecated effect"
         }
     },
     "options": {

@@ -3,7 +3,6 @@
         "step": {
             "user": {
                 "data": {
-                    "max_sub_interval": "Max sub-interval",
                     "name": "Name",
                     "round": "Precision",
                     "source": "Input sensor",
@@ -12,9 +11,8 @@
                     "unit_time": "Time unit"
                 },
                 "data_description": {
-                    "max_sub_interval": "If defined, derivative automatically recalculates if the source has not updated for this duration.",
                     "round": "Controls the number of decimal digits in the output.",
-                    "time_window": "If set, the sensor's value is a time-weighted moving average of derivatives within this window.",
+                    "time_window": "If set, the sensor's value is a time weighted moving average of derivatives within this window.",
                     "unit_prefix": "The output will be scaled according to the selected metric prefix and time unit of the derivative."
                 },
                 "description": "Create a sensor that estimates the derivative of a sensor.",
@@ -26,7 +24,6 @@
         "step": {
             "init": {
                 "data": {
-                    "max_sub_interval": "Max sub-interval",
                     "name": "Name",
                     "round": "Precision",
                     "source": "Input sensor",
@@ -35,20 +32,14 @@
                     "unit_time": "Time unit"
                 },
                 "data_description": {
-                    "max_sub_interval": "If defined, derivative automatically recalculates if the source has not updated for this duration.",
                     "round": "Controls the number of decimal digits in the output.",
-                    "time_window": "If set, the sensor's value is a time-weighted moving average of derivatives within this window.",
+                    "time_window": "If set, the sensor's value is a time weighted moving average of derivatives within this window.",
                     "unit_prefix": "The output will be scaled according to the selected metric prefix and time unit of the derivative."
                 }
             }
         }
     },
     "selector": {
-        "round": {
-            "unit_of_measurement": {
-                "decimals": "decimals"
-            }
-        },
         "time_unit": {
             "options": {
                 "d": "Days",
@@ -56,12 +47,6 @@
                 "min": "Minutes",
                 "s": "Seconds"
             }
-        }
-    },
-    "services": {
-        "reload": {
-            "description": "Reloads derivative sensors from the YAML-configuration.",
-            "name": "Reload"
         }
     },
     "title": "Derivative sensor"

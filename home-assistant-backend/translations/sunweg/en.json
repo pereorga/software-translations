@@ -1,8 +1,35 @@
 {
-    "issues": {
-        "integration_removed": {
-            "description": "The SunWEG integration has been removed from Home Assistant.\n\nThe library that Home Assistant uses to connect with SunWEG services, [doesn't work as expected anymore, demanding daily token renew]({issue}).\n\nTo resolve this issue, please remove the (now defunct) integration entries from your Home Assistant setup. [Click here to see your existing SunWEG integration entries]({entries}).",
-            "title": "The SunWEG integration has been removed"
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_plants": "No plants have been found on this account",
+            "reauth_successful": "Re-authentication was successful"
+        },
+        "error": {
+            "invalid_auth": "Invalid authentication",
+            "timeout_connect": "Timeout establishing connection"
+        },
+        "step": {
+            "plant": {
+                "data": {
+                    "plant_id": "Plant"
+                },
+                "title": "Select your plant"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "title": "Enter your Sun WEG information"
+            }
         }
     }
 }

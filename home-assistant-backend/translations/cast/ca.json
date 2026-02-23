@@ -1,7 +1,14 @@
 {
     "config": {
+        "error": {
+            "invalid_known_hosts": "Els amfitrions coneguts han de ser una llista d'amfitrions separats per comes."
+        },
         "step": {
             "config": {
+                "data": {
+                    "known_hosts": "Amfitrions coneguts"
+                },
+                "description": "Amfitrions coneguts - Llista, separada per comes, dels noms d'amfitri\u00f3 o adreces IP dels dispositius Cast. Utilitza-ho si el descobriment mDNS no funciona.",
                 "title": "Configuraci\u00f3 de Google Cast"
             },
             "confirm": {
@@ -10,6 +17,9 @@
         }
     },
     "options": {
+        "error": {
+            "invalid_known_hosts": "Els amfitrions coneguts han de ser una llista d'amfitrions separats per comes."
+        },
         "step": {
             "advanced_options": {
                 "data": {
@@ -20,6 +30,10 @@
                 "title": "Configuraci\u00f3 avan\u00e7ada de Google Cast"
             },
             "basic_options": {
+                "data": {
+                    "known_hosts": "Amfitrions coneguts"
+                },
+                "description": "Amfitrions coneguts - Llista, separada per comes, dels noms d'amfitri\u00f3 o adreces IP dels dispositius Cast. Utilitza-ho si el descobriment mDNS no funciona.",
                 "title": "Configuraci\u00f3 de Google Cast"
             }
         }
@@ -29,6 +43,7 @@
             "description": "Mostra una vista d'un tauler a un dispositiu Chromecast.",
             "fields": {
                 "dashboard_path": {
+                    "description": "L'adre\u00e7a URL del tauler a mostrar.",
                     "name": "Adre\u00e7a del tauler"
                 },
                 "entity_id": {

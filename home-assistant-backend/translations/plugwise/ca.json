@@ -18,13 +18,17 @@
                 "data": {
                     "host": "Adre\u00e7a IP",
                     "port": "Port"
+                },
+                "data_description": {
+                    "host": "Deixa-ho en blanc si fas servir el descobriment autom\u00e0tic"
                 }
             },
             "user": {
                 "data": {
                     "host": "Adre\u00e7a IP",
                     "password": "ID de Smile",
-                    "port": "Port"
+                    "port": "Port",
+                    "username": "Usuari de Smile"
                 },
                 "description": "Introdueix",
                 "title": "Connexi\u00f3 amb Smile"
@@ -72,7 +76,7 @@
                     "preset_mode": {
                         "state": {
                             "asleep": "Nit",
-                            "away": "Fora",
+                            "away": "A fora",
                             "home": "A casa",
                             "no_frost": "Anti-gelades",
                             "vacation": "Vacances"
@@ -96,37 +100,27 @@
             }
         },
         "select": {
-            "select_dhw_mode": {
+            "dhw_mode": {
+                "name": "Mode del DHW",
                 "state": {
-                    "auto": "Auto",
+                    "auto": "Autom\u00e0tic",
                     "boost": "Incrementat",
                     "comfort": "Confort",
                     "off": "OFF"
                 }
             },
-            "select_gateway_mode": {
+            "regulation_mode": {
+                "name": "Mode de regulaci\u00f3",
                 "state": {
-                    "full": "Normal"
-                }
-            },
-            "select_regulation_mode": {
-                "state": {
+                    "bleeding_cold": "Molt fred",
+                    "bleeding_hot": "Molt calent",
                     "cooling": "Refredant",
                     "heating": "Escalfant",
                     "off": "OFF"
                 }
             },
             "select_schedule": {
-                "name": "Horari del term\u00f2stat",
-                "state": {
-                    "off": "OFF"
-                }
-            },
-            "select_zone_profile": {
-                "state": {
-                    "active": "Actiu",
-                    "off": "OFF"
-                }
+                "name": "Horari del term\u00f2stat"
             }
         },
         "sensor": {
@@ -144,6 +138,15 @@
             },
             "electricity_consumed_interval": {
                 "name": "Electricitat consumida per interval"
+            },
+            "electricity_consumed_off_peak_cumulative": {
+                "name": "Electricitat consumida en vall acumulada"
+            },
+            "electricity_consumed_off_peak_interval": {
+                "name": "Electricitat consumida en vall per interval"
+            },
+            "electricity_consumed_off_peak_point": {
+                "name": "Electricitat consumida en vall punt"
             },
             "electricity_consumed_peak_cumulative": {
                 "name": "Electricitat consumida en pic acumulada"
@@ -180,6 +183,15 @@
             },
             "electricity_produced_interval": {
                 "name": "Electricitat produ\u00efda per interval"
+            },
+            "electricity_produced_off_peak_cumulative": {
+                "name": "Electricitat produ\u00efda en vall acumulada"
+            },
+            "electricity_produced_off_peak_interval": {
+                "name": "Electricitat produ\u00efda en vall per interval"
+            },
+            "electricity_produced_off_peak_point": {
+                "name": "Electricitat produ\u00efda en vall punt"
             },
             "electricity_produced_peak_cumulative": {
                 "name": "Electricitat produ\u00efda en pic acumulada"
@@ -273,7 +285,7 @@
         "failed_to_connect": {
             "message": "Ha fallat la connexi\u00f3"
         },
-        "response_error": {
+        "invalid_xml_data": {
             "message": "Dades XML inv\u00e0lides o s'ha rebut una indicaci\u00f3 d'error"
         },
         "unsupported_firmware": {

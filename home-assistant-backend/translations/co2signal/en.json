@@ -5,7 +5,7 @@
         },
         "error": {
             "invalid_auth": "Invalid authentication",
-            "no_data": "No data is available for the location or zone you have selected.",
+            "no_data": "No data is available for the location you have selected.",
             "unknown": "Unexpected error"
         },
         "step": {
@@ -17,20 +17,20 @@
             },
             "country": {
                 "data": {
-                    "country_code": "Zone key"
+                    "country_code": "Country code"
                 }
             },
             "reauth_confirm": {
                 "data": {
-                    "api_key": "API key"
+                    "api_key": "Access token"
                 }
             },
             "user": {
                 "data": {
-                    "api_key": "API key",
+                    "api_key": "Access token",
                     "location": "Location"
                 },
-                "description": "Visit the [Electricity Maps app]({register_link}) to request an API key."
+                "description": "Visit https://electricitymaps.com/free-tier to request a token."
             }
         }
     },
@@ -40,7 +40,7 @@
                 "name": "CO2 intensity",
                 "state_attributes": {
                     "country_code": {
-                        "name": "Zone key"
+                        "name": "Country code"
                     }
                 }
             },
@@ -48,7 +48,7 @@
                 "name": "Grid fossil fuel percentage",
                 "state_attributes": {
                     "country_code": {
-                        "name": "Zone key"
+                        "name": "Country code"
                     }
                 }
             }
@@ -58,7 +58,7 @@
         "location": {
             "options": {
                 "specify_coordinates": "Specify coordinates",
-                "specify_country_code": "Specify zone key",
+                "specify_country_code": "Specify country code",
                 "use_home_location": "Use home location"
             }
         }

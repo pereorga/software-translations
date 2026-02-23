@@ -30,7 +30,32 @@
             }
         },
         "activate_eco_mode_with_period": {
-            "description": "Activa el mode eco fins a una hora determinada."
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
+        },
+        "activate_vacation": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
+        },
+        "deactivate_eco_mode": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
+        },
+        "deactivate_vacation": {
+            "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                }
+            }
         },
         "reset_energy_counter": {
             "fields": {
@@ -48,6 +73,9 @@
         },
         "set_home_cooling_mode": {
             "fields": {
+                "accesspoint_id": {
+                    "name": "ID del punt d'acc\u00e9s"
+                },
                 "cooling": {
                     "name": "Refredant"
                 }

@@ -8,10 +8,8 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                },
-                "title": "Create group"
+                "description": "If \"all entities\" is enabled, the group's state is on only if all members are on. If \"all entities\" is disabled, the group's state is on if any member is on.",
+                "title": "Create Group"
             },
             "button": {
                 "data": {
@@ -19,7 +17,7 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "cover": {
                 "data": {
@@ -27,7 +25,7 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "event": {
                 "data": {
@@ -35,7 +33,7 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "fan": {
                 "data": {
@@ -43,19 +41,15 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "light": {
                 "data": {
-                    "all": "All entities",
                     "entities": "Members",
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "lock": {
                 "data": {
@@ -63,7 +57,7 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "media_player": {
                 "data": {
@@ -71,7 +65,7 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "notify": {
                 "data": {
@@ -79,7 +73,7 @@
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "sensor": {
                 "data": {
@@ -91,24 +85,17 @@
                     "round_digits": "Round value to number of decimals",
                     "state_class": "State class",
                     "type": "Type",
-                    "unit_of_measurement": "Unit of measurement"
+                    "unit_of_measurement": "Unit of Measurement"
                 },
-                "data_description": {
-                    "ignore_non_numeric": "If enabled, the group's state is calculated if at least one member has a numerical value. If disabled, the group's state is calculated only if all group members have numerical values."
-                },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "switch": {
                 "data": {
-                    "all": "All entities",
                     "entities": "Members",
                     "hide_members": "Hide members",
                     "name": "Name"
                 },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                },
-                "title": "Create group"
+                "title": "Create Group"
             },
             "user": {
                 "description": "Groups allow you to create a new entity that represents multiple entities of the same type.",
@@ -123,22 +110,9 @@
                     "media_player": "Media player group",
                     "notify": "Notify group",
                     "sensor": "Sensor group",
-                    "switch": "Switch group",
-                    "valve": "Valve group"
+                    "switch": "Switch group"
                 },
-                "title": "Create group"
-            },
-            "valve": {
-                "data": {
-                    "all": "All entities",
-                    "entities": "Members",
-                    "hide_members": "Hide members",
-                    "name": "Name"
-                },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                },
-                "title": "Create group"
+                "title": "Create Group"
             }
         }
     },
@@ -190,9 +164,7 @@
                     "entities": "Members",
                     "hide_members": "Hide members"
                 },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                }
+                "description": "If \"all entities\" is enabled, the group's state is on only if all members are on. If \"all entities\" is disabled, the group's state is on if any member is on."
             },
             "button": {
                 "data": {
@@ -218,9 +190,7 @@
                     "entities": "Members",
                     "hide_members": "Hide members"
                 },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                }
+                "description": "If \"all entities\" is enabled, the group's state is on only if all members are on. If \"all entities\" is disabled, the group's state is on if any member is on."
             },
             "lock": {
                 "data": {
@@ -249,11 +219,9 @@
                     "round_digits": "Round value to number of decimals",
                     "state_class": "State class",
                     "type": "Type",
-                    "unit_of_measurement": "Unit of measurement"
+                    "unit_of_measurement": "Unit of Measurement"
                 },
-                "data_description": {
-                    "ignore_non_numeric": "If enabled, the group's state is calculated if at least one member has a numerical value. If disabled, the group's state is calculated only if all group members have numerical values."
-                }
+                "description": "If \"ignore non-numeric\" is enabled, the group's state is calculated if at least one member has a numerical value. If \"ignore non-numeric\" is disabled, the group's state is calculated only if all group members have numerical values."
             },
             "switch": {
                 "data": {
@@ -261,19 +229,7 @@
                     "entities": "Members",
                     "hide_members": "Hide members"
                 },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                }
-            },
-            "valve": {
-                "data": {
-                    "all": "All entities",
-                    "entities": "Members",
-                    "hide_members": "Hide members"
-                },
-                "data_description": {
-                    "all": "If enabled, the group's state is on only if all members are on. If disabled, the group's state is on if any member is on."
-                }
+                "description": "If \"all entities\" is enabled, the group's state is on only if all members are on. If \"all entities\" is disabled, the group's state is on if any member is on."
             }
         }
     },

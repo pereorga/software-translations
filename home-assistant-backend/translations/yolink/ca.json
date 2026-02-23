@@ -18,15 +18,10 @@
         },
         "step": {
             "pick_implementation": {
-                "data": {
-                    "implementation": "Credencials d'aplicaci\u00f3"
-                },
-                "data_description": {
-                    "implementation": "Les credencials que vols fer servir per autenticar."
-                },
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             },
             "reauth_confirm": {
+                "description": "La integraci\u00f3 yolink ha de tornar a autenticar-se amb el teu compte.",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
         }
@@ -44,15 +39,6 @@
         }
     },
     "entity": {
-        "select": {
-            "sprinkler_mode": {
-                "state": {
-                    "auto": "Auto",
-                    "manual": "Manual",
-                    "off": "OFF"
-                }
-            }
-        },
         "sensor": {
             "current_power": {
                 "name": "Pot\u00e8ncia actual"
@@ -83,9 +69,9 @@
             "power_failure_alarm_volume": {
                 "name": "Volum de l'alarma de fallada d'alimentaci\u00f3",
                 "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na"
+                    "high": "Alt",
+                    "low": "Baix",
+                    "medium": "Mitj\u00e0"
                 }
             },
             "water_meter_reading": {
@@ -112,18 +98,12 @@
         "valve": {
             "meter_valve_state": {
                 "name": "Estat de la v\u00e0lvula"
-            },
-            "sprinkler_valve": {
-                "name": "V\u00e0lvula"
             }
         }
     },
     "exceptions": {
         "invalid_config_entry": {
             "message": "L'entrada de configuraci\u00f3 no s'ha trobat o no s'ha carregat."
-        },
-        "oauth2_implementation_unavailable": {
-            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
         }
     }
 }

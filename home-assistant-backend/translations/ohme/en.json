@@ -2,8 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful"
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "invalid_auth": "Invalid authentication",
@@ -19,16 +18,6 @@
                 },
                 "description": "Please update your password for {email}",
                 "title": "Authentication expired for {name}"
-            },
-            "reconfigure": {
-                "data": {
-                    "password": "Password"
-                },
-                "data_description": {
-                    "password": "Enter the password for your Ohme account"
-                },
-                "description": "Update your password for {email}",
-                "title": "Reconfigure Ohme Account"
             },
             "user": {
                 "data": {
@@ -49,66 +38,18 @@
                 "name": "Approve charge"
             }
         },
-        "number": {
-            "preconditioning_duration": {
-                "name": "Preconditioning duration"
-            },
-            "target_percentage": {
-                "name": "Target percentage"
-            }
-        },
-        "select": {
-            "charge_mode": {
-                "name": "Charge mode",
-                "state": {
-                    "max_charge": "Max charge",
-                    "paused": "Paused",
-                    "smart_charge": "Smart charge"
-                }
-            },
-            "vehicle": {
-                "name": "Vehicle"
-            }
-        },
         "sensor": {
             "ct_current": {
                 "name": "CT current"
-            },
-            "slot_list": {
-                "name": "Charge slots"
             },
             "status": {
                 "name": "Status",
                 "state": {
                     "charging": "Charging",
-                    "finished": "Finished charging",
-                    "paused": "Paused",
                     "pending_approval": "Pending approval",
                     "plugged_in": "Plugged in",
                     "unplugged": "Unplugged"
                 }
-            },
-            "vehicle_battery": {
-                "name": "Vehicle battery"
-            }
-        },
-        "switch": {
-            "lock_buttons": {
-                "name": "Lock buttons"
-            },
-            "price_cap": {
-                "name": "Price cap"
-            },
-            "require_approval": {
-                "name": "Require approval"
-            },
-            "sleep_when_inactive": {
-                "name": "Sleep when inactive"
-            }
-        },
-        "time": {
-            "target_time": {
-                "name": "Target time"
             }
         }
     },
@@ -117,42 +58,10 @@
             "message": "Error communicating with Ohme API"
         },
         "auth_failed": {
-            "message": "Unable to log in to Ohme"
+            "message": "Unable to login to Ohme"
         },
         "device_info_failed": {
             "message": "Unable to get Ohme device information"
-        },
-        "invalid_config_entry": {
-            "message": "Invalid config entry provided. Got {config_entry}"
-        },
-        "unloaded_config_entry": {
-            "message": "Invalid config entry provided. {config_entry} is not loaded."
-        }
-    },
-    "services": {
-        "list_charge_slots": {
-            "description": "Return a list of charge slots.",
-            "fields": {
-                "config_entry": {
-                    "description": "The Ohme config entry for which to return charge slots.",
-                    "name": "Ohme account"
-                }
-            },
-            "name": "List charge slots"
-        },
-        "set_price_cap": {
-            "description": "Prevents charging when the electricity price exceeds a defined threshold.",
-            "fields": {
-                "config_entry": {
-                    "description": "The Ohme config entry for which to return charge slots.",
-                    "name": "Ohme account"
-                },
-                "price_cap": {
-                    "description": "Threshold in 1/100ths of your local currency.",
-                    "name": "Price cap"
-                }
-            },
-            "name": "Set price cap"
         }
     }
 }

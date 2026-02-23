@@ -22,11 +22,6 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "data_description": {
-                    "live_view": "Enabling live view will create the live view camera entity and requires your camera account credentials.",
-                    "password": "Your camera account password configured for the device in the Tapo app.",
-                    "username": "Your camera account username configured for the device in the Tapo app."
-                },
                 "description": "Input device camera account credentials.",
                 "title": "Set camera account credentials"
             },
@@ -34,10 +29,6 @@
                 "data": {
                     "password": "Password",
                     "username": "Username"
-                },
-                "data_description": {
-                    "password": "Your TP-Link cloud password which is case-sensitive.",
-                    "username": "Your TP-Link cloud username which is the full email and is case-sensitive."
                 },
                 "description": "The device requires authentication, please input your TP-Link credentials below. Note, that both e-mail and password are case-sensitive.",
                 "title": "Authenticate"
@@ -48,9 +39,6 @@
             "pick_device": {
                 "data": {
                     "device": "Device"
-                },
-                "data_description": {
-                    "device": "Pick the TP-Link device to add."
                 }
             },
             "reauth_confirm": {
@@ -58,19 +46,12 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "data_description": {
-                    "password": "Your TP-Link cloud password which is case-sensitive.",
-                    "username": "Your TP-Link cloud username which is the full email and is case-sensitive."
-                },
                 "description": "The device requires authentication, please input your TP-Link credentials below. Note, that both e-mail and password are case-sensitive.",
                 "title": "Authentication expired for {name}"
             },
             "reconfigure": {
                 "data": {
                     "host": "Host"
-                },
-                "data_description": {
-                    "host": "Hostname or IP address of your TP-Link device."
                 },
                 "description": "Update your configuration for device {mac}",
                 "title": "Reconfigure TPLink entry"
@@ -89,36 +70,41 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "data_description": {
-                    "password": "Your TP-Link cloud password which is case-sensitive.",
-                    "username": "Your TP-Link cloud username which is the full email and is case-sensitive."
-                },
                 "description": "The device requires authentication, please input your TP-Link credentials below. Note, that both e-mail and password are case-sensitive.",
                 "title": "Authenticate"
             }
         }
     },
-    "device": {
-        "unnamed_device": {
-            "name": "Unnamed {model}"
-        }
-    },
     "entity": {
         "binary_sensor": {
+            "battery_low": {
+                "name": "Battery low"
+            },
             "cloud_connection": {
                 "name": "Cloud connection"
             },
             "humidity_warning": {
                 "name": "Humidity warning"
             },
+            "is_open": {
+                "name": "Door",
+                "state": {
+                    "off": "Closed",
+                    "on": "Open"
+                }
+            },
             "overheated": {
                 "name": "Overheated"
             },
-            "overloaded": {
-                "name": "Overloaded"
-            },
             "temperature_warning": {
                 "name": "Temperature warning"
+            },
+            "update_available": {
+                "name": "Update",
+                "state": {
+                    "off": "Up-to-date",
+                    "on": "Update available"
+                }
             },
             "water_alert": {
                 "name": "Moisture",
@@ -129,29 +115,11 @@
             }
         },
         "button": {
-            "charging_contacts_reset": {
-                "name": "Reset charging contacts consumable"
-            },
-            "filter_reset": {
-                "name": "Reset filter consumable"
-            },
-            "main_brush_reset": {
-                "name": "Reset main brush consumable"
-            },
-            "pair": {
-                "name": "Pair new device"
-            },
             "pan_left": {
                 "name": "Pan left"
             },
             "pan_right": {
                 "name": "Pan right"
-            },
-            "sensor_reset": {
-                "name": "Reset sensor consumable"
-            },
-            "side_brush_reset": {
-                "name": "Reset side brush consumable"
             },
             "stop_alarm": {
                 "name": "Stop alarm"
@@ -164,9 +132,6 @@
             },
             "tilt_up": {
                 "name": "Tilt up"
-            },
-            "unpair": {
-                "name": "Unpair device"
             }
         },
         "camera": {
@@ -178,14 +143,8 @@
             "auto_off_minutes": {
                 "name": "Turn off in"
             },
-            "clean_count": {
-                "name": "Clean count"
-            },
             "pan_step": {
                 "name": "Pan degrees"
-            },
-            "power_protection_threshold": {
-                "name": "Power protection"
             },
             "smooth_transition_off": {
                 "name": "Smooth off"
@@ -216,22 +175,13 @@
                 "name": "Alarm source"
             },
             "auto_off_at": {
-                "name": "Auto-off at"
+                "name": "Auto off at"
             },
-            "charging_contacts_remaining": {
-                "name": "Charging contacts remaining"
+            "available_firmware_version": {
+                "name": "Available firmware version"
             },
-            "charging_contacts_used": {
-                "name": "Charging contacts used"
-            },
-            "clean_area": {
-                "name": "Cleaning area"
-            },
-            "clean_progress": {
-                "name": "Cleaning progress"
-            },
-            "clean_time": {
-                "name": "Cleaning time"
+            "battery_level": {
+                "name": "Battery level"
             },
             "consumption_this_month": {
                 "name": "This month's consumption"
@@ -242,32 +192,20 @@
             "consumption_total": {
                 "name": "Total consumption"
             },
+            "current": {
+                "name": "Current"
+            },
             "current_consumption": {
                 "name": "Current consumption"
+            },
+            "current_firmware_version": {
+                "name": "Current firmware version"
             },
             "device_time": {
                 "name": "Device time"
             },
-            "filter_remaining": {
-                "name": "Filter remaining"
-            },
-            "filter_used": {
-                "name": "Filter used"
-            },
-            "last_clean_area": {
-                "name": "Last cleaned area"
-            },
-            "last_clean_time": {
-                "name": "Last cleaned time"
-            },
-            "last_clean_timestamp": {
-                "name": "Last clean start"
-            },
-            "main_brush_remaining": {
-                "name": "Main brush remaining"
-            },
-            "main_brush_used": {
-                "name": "Main brush used"
+            "humidity": {
+                "name": "Humidity"
             },
             "on_since": {
                 "name": "On since"
@@ -275,17 +213,8 @@
             "report_interval": {
                 "name": "Report interval"
             },
-            "sensor_remaining": {
-                "name": "Sensor remaining"
-            },
-            "sensor_used": {
-                "name": "Sensor used"
-            },
-            "side_brush_remaining": {
-                "name": "Side brush remaining"
-            },
-            "side_brush_used": {
-                "name": "Side brush used"
+            "rssi": {
+                "name": "Signal strength"
             },
             "signal_level": {
                 "name": "Signal level"
@@ -293,31 +222,11 @@
             "ssid": {
                 "name": "SSID"
             },
-            "total_clean_area": {
-                "name": "Total cleaning area"
+            "temperature": {
+                "name": "Temperature"
             },
-            "total_clean_count": {
-                "name": "Total cleaning count"
-            },
-            "total_clean_time": {
-                "name": "Total cleaning time"
-            },
-            "vacuum_error": {
-                "name": "Error",
-                "state": {
-                    "batterylow": "Low on battery",
-                    "dustbinremoved": "Missing dust bin",
-                    "lidarblocked": "Lidar blocked",
-                    "mainbrushstuck": "Main brush stuck",
-                    "ok": "No error",
-                    "sidebrushstuck": "Side brush stuck",
-                    "trapped": "Unable to move",
-                    "trappedcliff": "Unable to move (cliff sensor)",
-                    "unabletofinddock": "Unable to find dock",
-                    "unabletomove": "Unable to move",
-                    "unknowninternal": "Unknown error, report to upstream",
-                    "wheelblocked": "Wheel blocked"
-                }
+            "voltage": {
+                "name": "Voltage"
             },
             "water_alert_timestamp": {
                 "name": "Last water leak alert"
@@ -325,16 +234,13 @@
         },
         "switch": {
             "auto_off_enabled": {
-                "name": "Auto-off enabled"
+                "name": "Auto off enabled"
             },
             "auto_update_enabled": {
-                "name": "Auto-update enabled"
+                "name": "Auto update enabled"
             },
             "baby_cry_detection": {
                 "name": "Baby cry detection"
-            },
-            "carpet_boost": {
-                "name": "Carpet boost"
             },
             "child_lock": {
                 "name": "Child lock"
@@ -360,21 +266,6 @@
             "tamper_detection": {
                 "name": "Tamper detection"
             }
-        },
-        "vacuum": {
-            "vacuum": {
-                "state_attributes": {
-                    "fan_speed": {
-                        "state": {
-                            "max": "Max",
-                            "quiet": "Quiet",
-                            "standard": "Standard",
-                            "turbo": "Turbo",
-                            "ultra": "Ultra"
-                        }
-                    }
-                }
-            }
         }
     },
     "exceptions": {
@@ -386,15 +277,6 @@
         },
         "device_timeout": {
             "message": "Timeout communicating with the device {func}: {exc}"
-        },
-        "invalid_alarm_duration": {
-            "message": "Invalid duration {duration} available: 1-{duration_max}s"
-        },
-        "set_custom_effect": {
-            "message": "Error trying to set custom effect {effect}: {exc}"
-        },
-        "unexpected_device": {
-            "message": "Unexpected device found at {host}; expected {expected}, found {found}"
         }
     },
     "issues": {
@@ -478,7 +360,7 @@
                     "name": "Repetitions"
                 },
                 "segments": {
-                    "description": "List of segments (0 for all).",
+                    "description": "List of Segments (0 for all).",
                     "name": "Segments"
                 },
                 "sequence": {

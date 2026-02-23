@@ -26,11 +26,14 @@
     },
     "services": {
         "calibrate": {
+            "description": "Calibraci\u00f3: estableix la profunditat, la durada de clicar i mantenir i el mode de funcionament. Alerta: envia una comanda 'push' al dispositiu.",
             "fields": {
                 "depth": {
+                    "description": "Profunditat en percentatge.",
                     "name": "Profunditat"
                 },
                 "duration": {
+                    "description": "Durada en segons.",
                     "name": "Durada"
                 },
                 "entity_id": {

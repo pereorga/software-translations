@@ -2,11 +2,9 @@
     "config": {
         "abort": {
             "already_configured": "El servei ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         },
         "error": {
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
@@ -19,12 +17,6 @@
                 },
                 "description": "La integraci\u00f3 Bring! ha de tornar a autenticar-se amb el teu compte",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
-            },
-            "reconfigure": {
-                "data": {
-                    "email": "Correu electr\u00f2nic",
-                    "password": "Contrasenya"
-                }
             },
             "user": {
                 "data": {
@@ -75,23 +67,14 @@
     "services": {
         "send_message": {
             "fields": {
+                "entity_id": {
+                    "name": "Llista"
+                },
                 "message": {
                     "name": "Tipus de notificaci\u00f3"
                 }
             },
             "name": "Envia una notificaci\u00f3"
-        },
-        "send_reaction": {
-            "fields": {
-                "entity_id": {
-                    "name": "Activitats"
-                },
-                "reaction": {
-                    "description": "Tipus de reacci\u00f3 a enviar a la resposta.",
-                    "name": "Reacci\u00f3"
-                }
-            },
-            "name": "Enviar reacci\u00f3"
         }
     }
 }

@@ -2,9 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful",
-            "unique_id_mismatch": "The login details correspond to a different account. Please re-authenticate to the previously configured account."
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -23,18 +21,6 @@
                 },
                 "description": "Re-enter your password for `{email}` to reconnect your ista EcoTrend account to Home Assistant.",
                 "title": "Authentication expired for {name}"
-            },
-            "reconfigure": {
-                "data": {
-                    "email": "Email",
-                    "password": "Password"
-                },
-                "data_description": {
-                    "email": "Enter the email address associated with your ista EcoTrend account",
-                    "password": "Enter the password for your ista EcoTrend account"
-                },
-                "description": "Update your credentials if you have changed your **ista EcoTrend** account email or password.",
-                "title": "Update ista EcoTrend configuration"
             },
             "user": {
                 "data": {

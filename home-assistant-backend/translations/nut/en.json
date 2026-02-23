@@ -3,9 +3,7 @@
         "abort": {
             "already_configured": "Device is already configured",
             "no_ups_found": "There are no UPS devices available on the NUT server.",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful",
-            "unique_id_mismatch": "The device's manufacturer, model and serial number identifier does not match the previous identifier."
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Connection error: {error}",
@@ -18,44 +16,13 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "data_description": {
-                    "password": "The password to sign in to your NUT server. The password is optional.",
-                    "username": "The username to sign in to your NUT server. The username is optional."
-                },
                 "description": "Re-authenticate NUT server at {host}:{port}"
-            },
-            "reconfigure": {
-                "data": {
-                    "host": "Host",
-                    "password": "Password",
-                    "port": "Port",
-                    "username": "Username"
-                },
-                "data_description": {
-                    "host": "The IP address or hostname of your NUT server.",
-                    "password": "The password to sign in to your NUT server. The password is optional.",
-                    "port": "The network port of your NUT server. The NUT server's default port is '3493'.",
-                    "username": "The username to sign in to your NUT server. The username is optional."
-                },
-                "description": "Connect to the NUT server"
-            },
-            "reconfigure_ups": {
-                "data": {
-                    "alias": "NUT server UPS name"
-                },
-                "data_description": {
-                    "alias": "The UPS name configured on the NUT server."
-                },
-                "title": "Choose the NUT server UPS to monitor"
             },
             "ups": {
                 "data": {
-                    "alias": "NUT server UPS name"
+                    "alias": "Alias"
                 },
-                "data_description": {
-                    "alias": "The UPS name configured on the NUT server."
-                },
-                "title": "Choose the NUT server UPS to monitor"
+                "title": "Choose the UPS to Monitor"
             },
             "user": {
                 "data": {
@@ -65,10 +32,7 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "host": "The IP address or hostname of your NUT server.",
-                    "password": "The password to sign in to your NUT server. The password is optional.",
-                    "port": "The network port of your NUT server. The NUT server's default port is '3493'.",
-                    "username": "The username to sign in to your NUT server. The username is optional."
+                    "host": "The hostname or IP address of your NUT server."
                 },
                 "description": "Connect to the NUT server"
             }
@@ -105,37 +69,12 @@
         }
     },
     "entity": {
-        "button": {
-            "outlet_number_load_cycle": {
-                "name": "Power cycle outlet {outlet_name}"
-            }
-        },
         "sensor": {
             "ambient_humidity": {
                 "name": "Ambient humidity"
             },
-            "ambient_humidity_status": {
-                "name": "Ambient humidity status",
-                "state": {
-                    "critical-high": "Critical high",
-                    "critical-low": "Critical low",
-                    "good": "Good",
-                    "warning-high": "Warning high",
-                    "warning-low": "Warning low"
-                }
-            },
             "ambient_temperature": {
                 "name": "Ambient temperature"
-            },
-            "ambient_temperature_status": {
-                "name": "Ambient temperature status",
-                "state": {
-                    "critical-high": "Critical high",
-                    "critical-low": "Critical low",
-                    "good": "Good",
-                    "warning-high": "Warning high",
-                    "warning-low": "Warning low"
-                }
             },
             "battery_alarm_threshold": {
                 "name": "Battery alarm threshold"
@@ -156,16 +95,7 @@
                 "name": "Warning battery setpoint"
             },
             "battery_charger_status": {
-                "name": "Charging status",
-                "state": {
-                    "charging": "Charging",
-                    "disabled": "Disabled",
-                    "discharging": "Discharging",
-                    "floating": "Floating",
-                    "off": "Off",
-                    "resting": "Resting",
-                    "unknown": "Unknown"
-                }
+                "name": "Charging status"
             },
             "battery_current": {
                 "name": "Battery current"
@@ -180,12 +110,10 @@
                 "name": "Battery manuf. date"
             },
             "battery_packs": {
-                "name": "Number of batteries",
-                "unit_of_measurement": "packs"
+                "name": "Number of batteries"
             },
             "battery_packs_bad": {
-                "name": "Number of bad batteries",
-                "unit_of_measurement": "packs"
+                "name": "Number of bad batteries"
             },
             "battery_runtime": {
                 "name": "Battery runtime"
@@ -248,8 +176,7 @@
                 "name": "Input bypass L3 real power"
             },
             "input_bypass_phases": {
-                "name": "Input bypass phases",
-                "unit_of_measurement": "phase"
+                "name": "Input bypass phases"
             },
             "input_bypass_realpower": {
                 "name": "Input bypass real power"
@@ -260,16 +187,6 @@
             "input_current": {
                 "name": "Input current"
             },
-            "input_current_status": {
-                "name": "Input current status",
-                "state": {
-                    "critical-high": "Critical high",
-                    "critical-low": "Critical low",
-                    "good": "Good",
-                    "warning-high": "Warning high",
-                    "warning-low": "Warning low"
-                }
-            },
             "input_frequency": {
                 "name": "Input frequency"
             },
@@ -277,11 +194,7 @@
                 "name": "Input nominal frequency"
             },
             "input_frequency_status": {
-                "name": "Input frequency status",
-                "state": {
-                    "good": "Good",
-                    "out-of-range": "Out of range"
-                }
+                "name": "Input frequency status"
             },
             "input_l1_current": {
                 "name": "Input L1 current"
@@ -319,15 +232,8 @@
             "input_l3_realpower": {
                 "name": "Input L3 real power"
             },
-            "input_load": {
-                "name": "Input load"
-            },
             "input_phases": {
-                "name": "Input phases",
-                "unit_of_measurement": "phase"
-            },
-            "input_power": {
-                "name": "Input power"
+                "name": "Input phases"
             },
             "input_realpower": {
                 "name": "Input real power"
@@ -349,36 +255,6 @@
             },
             "input_voltage_nominal": {
                 "name": "Nominal input voltage"
-            },
-            "input_voltage_status": {
-                "name": "Input voltage status"
-            },
-            "outlet_current": {
-                "name": "Outlet current"
-            },
-            "outlet_number_current": {
-                "name": "Outlet {outlet_name} current"
-            },
-            "outlet_number_current_status": {
-                "name": "Outlet {outlet_name} current status"
-            },
-            "outlet_number_desc": {
-                "name": "Outlet {outlet_name} description"
-            },
-            "outlet_number_power": {
-                "name": "Outlet {outlet_name} power"
-            },
-            "outlet_number_realpower": {
-                "name": "Outlet {outlet_name} real power"
-            },
-            "outlet_power": {
-                "name": "Outlet apparent power"
-            },
-            "outlet_realpower": {
-                "name": "Outlet real power"
-            },
-            "outlet_voltage": {
-                "name": "Outlet voltage"
             },
             "output_current": {
                 "name": "Output current"
@@ -429,8 +305,7 @@
                 "name": "Output L3 real power"
             },
             "output_phases": {
-                "name": "Output phases",
-                "unit_of_measurement": "phase"
+                "name": "Output phases"
             },
             "output_power": {
                 "name": "Output apparent power"
@@ -454,12 +329,7 @@
                 "name": "Alarms"
             },
             "ups_beeper_status": {
-                "name": "Beeper status",
-                "state": {
-                    "disabled": "Disabled",
-                    "enabled": "Enabled",
-                    "muted": "Muted"
-                }
+                "name": "Beeper status"
             },
             "ups_contacts": {
                 "name": "External contacts"
@@ -504,7 +374,7 @@
                 "name": "Shutdown ability"
             },
             "ups_start_auto": {
-                "name": "Start on AC"
+                "name": "Start on ac"
             },
             "ups_start_battery": {
                 "name": "Start on battery"
@@ -544,29 +414,19 @@
             },
             "ups_watchdog_status": {
                 "name": "Watchdog status"
-            }
-        },
-        "switch": {
-            "outlet_number_load_poweronoff": {
-                "name": "Power outlet {outlet_name}"
+            },
+            "watts": {
+                "name": "Watts"
             }
         }
     },
-    "exceptions": {
-        "config_invalid": {
-            "message": "Invalid configuration entries for NUT device with ID {device_id}"
-        },
-        "data_fetch_error": {
-            "message": "Error fetching UPS state: {err}"
-        },
-        "device_authentication": {
-            "message": "Device authentication error: {err}"
-        },
-        "device_not_found": {
-            "message": "Unable to find a NUT device with ID {device_id}"
-        },
-        "nut_command_error": {
-            "message": "Error running command {command_name}, {err}"
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "scan_interval": "Scan Interval (seconds)"
+                }
+            }
         }
     }
 }

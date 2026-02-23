@@ -18,23 +18,11 @@
                     "name": "Name (optional, used as name prefix for all devices)",
                     "pin": "PIN code"
                 },
-                "description": "If you are about to register a **Homematic IP HCU1**, please press the button on top of the device before you continue.\n\nThe registration process must be completed within 5 minutes.",
                 "title": "Pick Homematic IP access point"
             },
             "link": {
                 "description": "Press the blue button on the access point and the **Submit** button to register Homematic IP with Home Assistant.\n\n![Location of button on bridge](/static/images/config_flows/config_homematicip_cloud.png)",
                 "title": "Link access point"
-            }
-        }
-    },
-    "entity": {
-        "sensor": {
-            "tilt_state": {
-                "state": {
-                    "neutral": "Neutral",
-                    "non_neutral": "Non-neutral",
-                    "tilted": "Tilted"
-                }
             }
         }
     },
@@ -45,7 +33,7 @@
     },
     "services": {
         "activate_eco_mode_with_duration": {
-            "description": "Activates the eco mode for a specified duration.",
+            "description": "Activates eco mode with period.",
             "fields": {
                 "accesspoint_id": {
                     "description": "The ID of the Homematic IP access point.",
@@ -59,7 +47,7 @@
             "name": "Activate eco mode with duration"
         },
         "activate_eco_mode_with_period": {
-            "description": "Activates the eco mode until a given time.",
+            "description": "Activates eco mode with period.",
             "fields": {
                 "accesspoint_id": {
                     "description": "The ID of the Homematic IP access point.",
@@ -73,7 +61,7 @@
             "name": "Activate eco more with period"
         },
         "activate_vacation": {
-            "description": "Activates the vacation mode until a given time.",
+            "description": "Activates the vacation mode until the given time.",
             "fields": {
                 "accesspoint_id": {
                     "description": "The ID of the Homematic IP access point.",

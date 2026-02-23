@@ -54,12 +54,9 @@
             "electricity_active_tariff": {
                 "name": "Tarifa activa",
                 "state": {
-                    "low": "Baix/a",
+                    "low": "Baixa",
                     "normal": "Normal"
                 }
-            },
-            "electricity_combined": {
-                "name": "Energia combinada"
             },
             "electricity_delivered_tariff_1": {
                 "name": "Producci\u00f3 d'energia (tarifa 1)"
@@ -67,50 +64,17 @@
             "electricity_delivered_tariff_2": {
                 "name": "Producci\u00f3 d'energia (tarifa 2)"
             },
-            "electricity_delivered_tariff_3": {
-                "name": "Producci\u00f3 d'energia (tarifa 3)"
-            },
-            "electricity_delivered_tariff_4": {
-                "name": "Producci\u00f3 d'energia (tarifa 4)"
-            },
             "electricity_exported_total": {
                 "name": "Producci\u00f3 d'energia (total)"
             },
             "electricity_imported_total": {
                 "name": "Consum d'energia (total)"
             },
-            "electricity_reactive_exported_total": {
-                "name": "Electricitat reactiva exportada (total)"
-            },
-            "electricity_reactive_imported_total": {
-                "name": "Electricitat reactiva importada (total)"
-            },
-            "electricity_reactive_total_q1": {
-                "name": "Electricitat reactiva (Q1)"
-            },
-            "electricity_reactive_total_q2": {
-                "name": "Electricitat reactiva (Q2)"
-            },
-            "electricity_reactive_total_q3": {
-                "name": "Electricitat reactiva (Q3)"
-            },
-            "electricity_reactive_total_q4": {
-                "name": "Electricitat reactiva (Q4)"
-            },
             "electricity_used_tariff_1": {
                 "name": "Consum d'energia (tarifa 1)"
             },
             "electricity_used_tariff_2": {
                 "name": "Consum d'energia (tarifa 2)"
-            },
-            "electricity_used_tariff_3": {
-                "name": "Consum d'energia (tarifa 3)"
-            },
-            "electricity_used_tariff_4": {
-                "name": "Consum d'energia (tarifa 4)"
-            },
-            "frequency": {
-                "name": "Freq\u00fc\u00e8ncia"
             },
             "gas_meter_reading": {
                 "name": "Consum de gas"
@@ -142,18 +106,6 @@
             "instantaneous_current_l3": {
                 "name": "Corrent de fase L3"
             },
-            "instantaneous_power_factor_l1": {
-                "name": "Factor de pot\u00e8ncia instant\u00e0nia (L1)"
-            },
-            "instantaneous_power_factor_l2": {
-                "name": "Factor de pot\u00e8ncia instant\u00e0nia (L2)"
-            },
-            "instantaneous_power_factor_l3": {
-                "name": "Factor de pot\u00e8ncia instant\u00e0nia (L3)"
-            },
-            "instantaneous_power_factor_total": {
-                "name": "Factor de pot\u00e8ncia instant\u00e0nia (total)"
-            },
             "instantaneous_voltage_l1": {
                 "name": "Tensi\u00f3 de la fase L1"
             },
@@ -177,9 +129,6 @@
             },
             "short_power_failure_count": {
                 "name": "Comptador de fallades per curtcircuit"
-            },
-            "text_message": {
-                "name": "Missatge de text"
             },
             "voltage_sag_l1_count": {
                 "name": "Baixades de tensi\u00f3 a la fase L1"
@@ -209,7 +158,8 @@
             "init": {
                 "data": {
                     "time_between_update": "Temps m\u00ednim entre actualitzacions d'entitats [s]"
-                }
+                },
+                "title": "Opcions de DSMR"
             }
         }
     }

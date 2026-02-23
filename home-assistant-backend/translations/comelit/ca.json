@@ -5,7 +5,6 @@
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -20,13 +19,6 @@
                     "pin": "Codi PIN"
                 }
             },
-            "reconfigure": {
-                "data": {
-                    "host": "Amfitri\u00f3",
-                    "pin": "Codi PIN",
-                    "port": "Port"
-                }
-            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -37,32 +29,17 @@
         }
     },
     "entity": {
-        "climate": {
-            "thermostat": {
-                "state_attributes": {
-                    "preset_mode": {
-                        "state": {
-                            "automatic": "Auto",
-                            "manual": "Manual"
-                        }
-                    }
-                }
-            }
-        },
-        "humidifier": {
+        "sensor": {
             "dehumidifier": {
                 "name": "Deshumidificador"
             },
             "humidifier": {
                 "name": "Humidificador"
-            }
-        },
-        "sensor": {
+            },
             "zone_status": {
                 "state": {
                     "alarm": "Alarma",
-                    "armed": "Activada",
-                    "open": "Obert"
+                    "armed": "Activada"
                 }
             }
         }

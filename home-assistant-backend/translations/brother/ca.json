@@ -18,39 +18,22 @@
                 },
                 "data_description": {
                     "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP de la impressora Brother a controlar."
-                },
-                "sections": {
-                    "advanced_settings": {
-                        "data": {
-                            "port": "Port"
-                        }
-                    }
                 }
             },
             "user": {
                 "data": {
-                    "host": "Amfitri\u00f3"
+                    "host": "Amfitri\u00f3",
+                    "type": "Tipus d'impressora"
                 },
                 "data_description": {
                     "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP de la impressora Brother a controlar."
-                },
-                "sections": {
-                    "advanced_settings": {
-                        "data": {
-                            "port": "Port"
-                        }
-                    }
                 }
             },
             "zeroconf_confirm": {
-                "description": "Vols afegir la impressora {model} amb n\u00famero de s\u00e8rie `{serial_number}` a Home Assistant?",
-                "sections": {
-                    "advanced_settings": {
-                        "data": {
-                            "port": "Port"
-                        }
-                    }
+                "data": {
+                    "type": "Tipus d'impressora"
                 },
+                "description": "Vols afegir la impressora {model} amb n\u00famero de s\u00e8rie `{serial_number}` a Home Assistant?",
                 "title": "Impressora Brother descoberta"
             }
         }

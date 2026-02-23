@@ -11,7 +11,8 @@
             "server_in_maintenance": "El servidor est\u00e0 inoperatiu per manteniment",
             "too_many_attempts": "Massa intents amb un 'token' inv\u00e0lid, bloquejat temporalment",
             "too_many_requests": "Massa sol\u00b7licituds, torna-ho a provar m\u00e9s tard",
-            "unknown": "Error inesperat"
+            "unknown": "Error inesperat",
+            "unsupported_hardware": "{unsupported_device} no \u00e9s compatible amb aquesta integraci\u00f3."
         },
         "flow_title": "Passarel\u00b7la: {gateway_id}",
         "step": {
@@ -24,7 +25,8 @@
             "local": {
                 "data": {
                     "host": "Amfitri\u00f3",
-                    "token": "Token d'API",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari",
                     "verify_ssl": "Verifica el certificat SSL"
                 }
             }
@@ -44,7 +46,9 @@
                     },
                     "preset_mode": {
                         "state": {
-                            "auto": "Auto",
+                            "auto": "Autom\u00e0tic",
+                            "comfort-1": "Confort 1",
+                            "comfort-2": "Confort 2",
                             "drying": "Assecant",
                             "external": "Extern",
                             "freeze": "Congela",
@@ -66,43 +70,34 @@
             },
             "open_closed_partial": {
                 "state": {
-                    "closed": "Tancat",
-                    "open": "Obert",
+                    "closed": "Tancat/ada",
+                    "open": "Obert/a",
                     "partial": "Parcial"
                 }
             },
             "open_closed_pedestrian": {
                 "state": {
-                    "closed": "Tancada",
-                    "open": "Oberta",
+                    "closed": "Tancat/ada",
+                    "open": "Obert/a",
                     "pedestrian": "Vianant"
-                }
-            },
-            "operating_mode": {
-                "state": {
-                    "cooling": "Refredant",
-                    "heating": "Escalfant"
                 }
             }
         },
         "sensor": {
             "battery": {
                 "state": {
-                    "critical": "Cr\u00edtic",
-                    "full": "Ple/na",
-                    "good": "Bo",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na",
+                    "full": "Carregada",
+                    "low": "Baixa",
                     "normal": "Normal",
-                    "verylow": "Molt baix/a"
+                    "verylow": "Molt baixa"
                 }
             },
             "discrete_rssi_level": {
                 "state": {
                     "good": "Bo",
-                    "low": "Baix/a",
+                    "low": "Baix",
                     "normal": "Normal",
-                    "verylow": "Molt baix/a"
+                    "verylow": "Molt baix"
                 }
             },
             "priority_lock_originator": {
@@ -138,8 +133,8 @@
             },
             "three_way_handle_direction": {
                 "state": {
-                    "closed": "Tancat",
-                    "open": "Obert",
+                    "closed": "Tancat/ada",
+                    "open": "Obert/a",
                     "tilt": "Inclinada"
                 }
             }

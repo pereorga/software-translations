@@ -9,7 +9,9 @@
             "invalid_email": "No hi ha cap compte associat amb correu introdu\u00eft, torna-ho a provar.",
             "invalid_email_format": "S'ha produ\u00eft un problema en la formataci\u00f3 del correu - torna-ho a provar.",
             "too_frequent_code_requests": "Has provat de sol\u00b7licitar massa codis. Torna-ho a provar m\u00e9s tard.",
-            "unknown": "Error inesperat"
+            "unknown": "Error inesperat",
+            "unknown_roborock": "S'ha produ\u00eft una excepci\u00f3 desconeguda - comprova els registres.",
+            "unknown_url": "S'ha produ\u00eft un problema en determinar l'URL correcte del teu compte de roborock - comprova els registres."
         },
         "step": {
             "code": {
@@ -67,22 +69,16 @@
             }
         },
         "select": {
-            "dust_collection_mode": {
-                "state": {
-                    "balanced": "Equilibrada",
-                    "max": "M\u00e0x."
-                }
-            },
             "mop_intensity": {
                 "name": "Intensitat de la baieta",
                 "state": {
                     "custom": "Personalitzat",
                     "custom_water_flow": "Flux d'aigua personalitzat",
-                    "high": "Alt/a",
+                    "high": "Alta",
                     "intense": "Intens",
-                    "low": "Baix/a",
+                    "low": "Baixa",
                     "max": "M\u00e0x.",
-                    "medium": "Mitj\u00e0/na",
+                    "medium": "Mitjana",
                     "mild": "Mitj\u00e0",
                     "moderate": "Moderat",
                     "off": "OFF"
@@ -100,13 +96,6 @@
             },
             "selected_map": {
                 "name": "Mapa seleccionat"
-            },
-            "water_flow": {
-                "state": {
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na"
-                }
             }
         },
         "sensor": {
@@ -134,7 +123,7 @@
                 "name": "Progr\u00e9s de neteja"
             },
             "cleaning_area": {
-                "name": "\u00c0rea netejada"
+                "name": "Zona de neteja"
             },
             "cleaning_time": {
                 "name": "Temps de neteja"
@@ -166,14 +155,6 @@
             },
             "mop_drying_remaining_time": {
                 "name": "Temps restant d'assecat de la baieta"
-            },
-            "q7_status": {
-                "state": {
-                    "charging": "Carregant",
-                    "docking": "Aparcant",
-                    "paused": "Pausat/ada",
-                    "updating": "Actualitzant"
-                }
             },
             "sensor_time_left": {
                 "name": "Vida restant del sensor"
@@ -211,7 +192,7 @@
                 }
             },
             "total_cleaning_area": {
-                "name": "\u00c0rea total netejada"
+                "name": "Zona total de neteja"
             },
             "total_cleaning_time": {
                 "name": "Temps total de neteja"
@@ -324,13 +305,13 @@
                 "state_attributes": {
                     "fan_speed": {
                         "state": {
-                            "auto": "Auto",
+                            "auto": "Autom\u00e0tica",
                             "balanced": "Equilibrada",
                             "custom": "Personalitzat",
                             "gentle": "Lenta",
                             "max": "M\u00e0x.",
                             "max_plus": "M\u00e0xima+",
-                            "medium": "Mitj\u00e0/na",
+                            "medium": "Mitjana",
                             "off": "OFF",
                             "quiet": "Suau",
                             "silent": "Silenciosa",
@@ -369,20 +350,6 @@
     "services": {
         "get_maps": {
             "name": "Obt\u00e9 mapes"
-        },
-        "get_vacuum_current_position": {
-            "name": "Obt\u00e9 la posici\u00f3 actual"
-        },
-        "set_vacuum_goto_position": {
-            "fields": {
-                "x": {
-                    "name": "Coordenada X"
-                },
-                "y": {
-                    "name": "Coordenada Y"
-                }
-            },
-            "name": "V\u00e9s a la posici\u00f3"
         }
     }
 }

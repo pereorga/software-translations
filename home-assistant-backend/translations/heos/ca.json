@@ -2,30 +2,13 @@
     "config": {
         "abort": {
             "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
             "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
         },
         "error": {
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "password_missing": "Falta la contrasenya",
-            "unknown": "Error inesperat",
-            "username_missing": "Falta el nom d'usuari"
+            "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
-            "reauth_confirm": {
-                "data": {
-                    "password": "Contrasenya",
-                    "username": "Nom d'usuari"
-                },
-                "data_description": {
-                    "password": "Contrasenya del teu compte d'HEOS.",
-                    "username": "Nom d'usuari o correu electr\u00f2nic del teu compte d'HEOS."
-                },
-                "title": "Re-autenticaci\u00f3 d'HEOS"
-            },
             "reconfigure": {
                 "data": {
                     "host": "Amfitri\u00f3"
@@ -38,26 +21,6 @@
                 },
                 "description": "Introdueix el nom de l'amfitri\u00f3 o l'adre\u00e7a IP d'un dispositiu compatible amb HEOS per accedir al sistema HEOS.",
                 "title": "Connexi\u00f3 amb HEOS"
-            }
-        }
-    },
-    "options": {
-        "error": {
-            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "password_missing": "Falta la contrasenya",
-            "unknown": "Error inesperat",
-            "username_missing": "Falta el nom d'usuari"
-        },
-        "step": {
-            "init": {
-                "data": {
-                    "password": "Contrasenya",
-                    "username": "Nom d'usuari"
-                },
-                "data_description": {
-                    "password": "Contrasenya del teu compte d'HEOS.",
-                    "username": "Nom d'usuari o correu electr\u00f2nic del teu compte d'HEOS."
-                }
             }
         }
     },

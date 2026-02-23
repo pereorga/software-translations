@@ -54,9 +54,6 @@
     },
     "entity": {
         "sensor": {
-            "bh1750_illuminance": {
-                "name": "BH1750 illuminance"
-            },
             "bme280_humidity": {
                 "name": "BME280 humidity"
             },
@@ -110,17 +107,6 @@
                     "medium": "Medium",
                     "very_high": "Very high",
                     "very_low": "Very low"
-                },
-                "state_attributes": {
-                    "options": {
-                        "state": {
-                            "high": "High",
-                            "low": "Low",
-                            "medium": "Medium",
-                            "very_high": "Very high",
-                            "very_low": "Very low"
-                        }
-                    }
                 }
             },
             "pmsx003_pm1": {
@@ -143,17 +129,6 @@
                     "medium": "Medium",
                     "very_high": "Very high",
                     "very_low": "Very low"
-                },
-                "state_attributes": {
-                    "options": {
-                        "state": {
-                            "high": "High",
-                            "low": "Low",
-                            "medium": "Medium",
-                            "very_high": "Very high",
-                            "very_low": "Very low"
-                        }
-                    }
                 }
             },
             "sds011_pm10": {
@@ -179,17 +154,6 @@
                     "medium": "Medium",
                     "very_high": "Very high",
                     "very_low": "Very low"
-                },
-                "state_attributes": {
-                    "options": {
-                        "state": {
-                            "high": "High",
-                            "low": "Low",
-                            "medium": "Medium",
-                            "very_high": "Very high",
-                            "very_low": "Very low"
-                        }
-                    }
                 }
             },
             "sps30_pm1": {
@@ -204,20 +168,6 @@
             "sps30_pm4": {
                 "name": "SPS30 PM4"
             }
-        }
-    },
-    "exceptions": {
-        "auth_error": {
-            "message": "Authentication failed for {device}, please update your credentials"
-        },
-        "device_communication_action_error": {
-            "message": "An error occurred while calling action for {entity} for {device}"
-        },
-        "device_communication_error": {
-            "message": "An error occurred while communicating with {device}"
-        },
-        "update_error": {
-            "message": "An error occurred while retrieving data from {device}"
         }
     }
 }

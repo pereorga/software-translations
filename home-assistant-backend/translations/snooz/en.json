@@ -26,24 +26,24 @@
     },
     "services": {
         "transition_off": {
-            "description": "Transitions the volume level to the lowest setting over a specified duration, then powers off the device.",
+            "description": "Transitions volume off over time.",
             "fields": {
                 "duration": {
-                    "description": "Time to complete the transition.",
+                    "description": "Time it takes to turn off.",
                     "name": "Transition duration"
                 }
             },
             "name": "Transition off"
         },
         "transition_on": {
-            "description": "Transitions the volume level over a specified duration. If the device is powered off, the transition will start at the lowest volume level.",
+            "description": "Transitions to a target volume level over time.",
             "fields": {
                 "duration": {
-                    "description": "Time to transition to the target volume.",
+                    "description": "Time it takes to reach the target volume level.",
                     "name": "Transition duration"
                 },
                 "volume": {
-                    "description": "Relative volume level. If not specified, the setting on the device is used.",
+                    "description": "If not specified, the volume level is read from the device.",
                     "name": "Target volume"
                 }
             },

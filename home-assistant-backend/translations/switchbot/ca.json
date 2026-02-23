@@ -3,19 +3,15 @@
         "abort": {
             "already_configured_device": "El dispositiu ja est\u00e0 configurat",
             "no_devices_found": "No s'han trobat dispositius SwitchBot compatibles a l'abast; si el dispositiu est\u00e0 a l'abast, assegura't que l'esc\u00e0ner t\u00e9 l'escaneig actiu habilitat, ja que els dispositius SwitchBot no es poden descobrir amb exploracions passives. Les exploracions actives es poden deshabilitar un cop el dispositiu estigui configurat. Si necessites m\u00e9s informaci\u00f3 sobre si el dispositiu est\u00e0 dins de l'abast, baixa't els diagn\u00f2stics de la integraci\u00f3 que proporciona el teu adaptador o proxy Bluetooth i comprova si hi apareix l'adre\u00e7a MAC del dispositiu SwitchBot.",
+            "switchbot_unsupported_type": "Tipus de Switchbot no compatible.",
             "unknown": "Error inesperat"
         },
         "error": {
-            "auth_failed": "Ha fallat l'autenticaci\u00f3: {error_detail}"
+            "auth_failed": "Ha fallat l'autenticaci\u00f3: {error_detail}",
+            "encryption_key_invalid": "L'ID de clau o la clau de xifrat no s\u00f3n v\u00e0lids"
         },
         "flow_title": "{name} ({address})",
         "step": {
-            "cloud_login": {
-                "data": {
-                    "password": "Contrasenya",
-                    "username": "Nom d'usuari"
-                }
-            },
             "confirm": {
                 "description": "Vols configurar {name}?"
             },
@@ -57,18 +53,6 @@
                 "name": "Alarma desbloquejada"
             }
         },
-        "climate": {
-            "climate": {
-                "state_attributes": {
-                    "preset_mode": {
-                        "state": {
-                            "manual": "Manual",
-                            "off": "OFF"
-                        }
-                    }
-                }
-            }
-        },
         "cover": {
             "cover": {
                 "state_attributes": {
@@ -81,51 +65,7 @@
                 }
             }
         },
-        "fan": {
-            "air_purifier": {
-                "state_attributes": {
-                    "last_run_success": {
-                        "state": {
-                            "false": "Problema",
-                            "true": "D'acord"
-                        }
-                    },
-                    "preset_mode": {
-                        "state": {
-                            "auto": "Auto"
-                        }
-                    }
-                }
-            },
-            "fan": {
-                "state_attributes": {
-                    "last_run_success": {
-                        "state": {
-                            "false": "Problema",
-                            "true": "D'acord"
-                        }
-                    },
-                    "preset_mode": {
-                        "state": {
-                            "normal": "Normal"
-                        }
-                    }
-                }
-            }
-        },
         "humidifier": {
-            "evaporative_humidifier": {
-                "state_attributes": {
-                    "mode": {
-                        "state": {
-                            "auto": "Auto",
-                            "high": "Alt/a",
-                            "low": "Baix/a",
-                            "medium": "Mitj\u00e0/na"
-                        }
-                    }
-                }
-            },
             "humidifier": {
                 "state_attributes": {
                     "last_run_success": {
@@ -156,14 +96,6 @@
             "light_level": {
                 "name": "Nivell de llum"
             },
-            "water_level": {
-                "state": {
-                    "empty": "Buit",
-                    "high": "Alt/a",
-                    "low": "Baix/a",
-                    "medium": "Mitj\u00e0/na"
-                }
-            },
             "wifi_signal": {
                 "name": "Senyal Wi-Fi"
             }
@@ -181,18 +113,6 @@
                         "state": {
                             "false": "Momentani",
                             "true": "Estirar/retreure"
-                        }
-                    }
-                }
-            }
-        },
-        "vacuum": {
-            "vacuum": {
-                "state_attributes": {
-                    "last_run_success": {
-                        "state": {
-                            "false": "Problema",
-                            "true": "D'acord"
                         }
                     }
                 }

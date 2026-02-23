@@ -1,32 +1,4 @@
 {
-    "common": {
-        "condition_behavior_description": "How the state should match on the targeted fans.",
-        "condition_behavior_name": "Behavior",
-        "trigger_behavior_description": "The behavior of the targeted fans to trigger on.",
-        "trigger_behavior_name": "Behavior"
-    },
-    "conditions": {
-        "is_off": {
-            "description": "Tests if one or more fans are off.",
-            "fields": {
-                "behavior": {
-                    "description": "How the state should match on the targeted fans.",
-                    "name": "Behavior"
-                }
-            },
-            "name": "Fan is off"
-        },
-        "is_on": {
-            "description": "Tests if one or more fans are on.",
-            "fields": {
-                "behavior": {
-                    "description": "How the state should match on the targeted fans.",
-                    "name": "Behavior"
-                }
-            },
-            "name": "Fan is on"
-        }
-    },
     "device_automation": {
         "action_type": {
             "toggle": "Toggle {entity_name}",
@@ -36,9 +8,6 @@
         "condition_type": {
             "is_off": "{entity_name} is off",
             "is_on": "{entity_name} is on"
-        },
-        "extra_fields": {
-            "for": "Duration"
         },
         "trigger_type": {
             "changed_states": "{entity_name} turned on or off",
@@ -89,23 +58,10 @@
         }
     },
     "selector": {
-        "condition_behavior": {
-            "options": {
-                "all": "All",
-                "any": "Any"
-            }
-        },
         "direction": {
             "options": {
                 "forward": "Forward",
                 "reverse": "Reverse"
-            }
-        },
-        "trigger_behavior": {
-            "options": {
-                "any": "Any",
-                "first": "First",
-                "last": "Last"
             }
         }
     },
@@ -193,27 +149,5 @@
             "name": "Turn on"
         }
     },
-    "title": "Fan",
-    "triggers": {
-        "turned_off": {
-            "description": "Triggers after one or more fans turn off.",
-            "fields": {
-                "behavior": {
-                    "description": "The behavior of the targeted fans to trigger on.",
-                    "name": "Behavior"
-                }
-            },
-            "name": "Fan turned off"
-        },
-        "turned_on": {
-            "description": "Triggers after one or more fans turn on.",
-            "fields": {
-                "behavior": {
-                    "description": "The behavior of the targeted fans to trigger on.",
-                    "name": "Behavior"
-                }
-            },
-            "name": "Fan turned on"
-        }
-    }
+    "title": "Fan"
 }

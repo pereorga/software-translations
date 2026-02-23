@@ -6,19 +6,18 @@
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "invalid_auth_key": "Coinbase ha rebutjat les credencials API per culpa d'una clau API inv\u00e0lida.",
+            "invalid_auth_secret": "Coinbase ha rebutjat les credencials API per culpa d'un secret d'API inv\u00e0lid.",
             "unknown": "Error inesperat"
         },
         "step": {
-            "reauth_confirm": {
-                "data": {
-                    "api_key": "Clau API"
-                }
-            },
             "user": {
                 "data": {
-                    "api_key": "Clau API"
+                    "api_key": "Clau API",
+                    "api_token": "Secret API"
                 },
-                "description": "Introdueix els detalls de la teva clau API tal com els proporciona Coinbase."
+                "description": "Introdueix els detalls de la teva clau API tal com els proporciona Coinbase.",
+                "title": "Detalls de la clau API de Coinbase"
             }
         }
     },
@@ -33,8 +32,10 @@
                 "data": {
                     "account_balance_currencies": "Saldos de cartera a informar.",
                     "exchange_base": "Moneda base per als sensors de canvi de tipus.",
-                    "exchange_rate_currencies": "Tipus de canvi a informar."
-                }
+                    "exchange_rate_currencies": "Tipus de canvi a informar.",
+                    "exchnage_rate_precision": "Nombre de posicions decimals per als tipus de canvi."
+                },
+                "description": "Ajusta les opcions de Coinbase"
             }
         }
     }

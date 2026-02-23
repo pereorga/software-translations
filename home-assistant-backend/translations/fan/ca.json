@@ -9,9 +9,6 @@
             "is_off": "{entity_name} est\u00e0 apagat/ada",
             "is_on": "{entity_name} est\u00e0 engegat/ada"
         },
-        "extra_fields": {
-            "for": "Durada"
-        },
         "trigger_type": {
             "changed_states": "{entity_name} s'engegui o s'apagui",
             "turned_off": "{entity_name} s'apagui",
@@ -103,7 +100,6 @@
             "name": "Estableix mode preconfiguraci\u00f3"
         },
         "toggle": {
-            "description": "Activa o desactiva un ventilador.",
             "name": "Commuta"
         },
         "turn_off": {
@@ -118,6 +114,7 @@
                     "name": "Percentatge"
                 },
                 "preset_mode": {
+                    "description": "Mode preconfiguraci\u00f3.",
                     "name": "Mode preconfiguraci\u00f3"
                 }
             },

@@ -2,7 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "auth_failed": "Failed to retrieve API key",
+            "auth_failed": "Failed to retrieve application api key",
             "cannot_connect": "Failed to connect",
             "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error"
@@ -11,7 +11,7 @@
             "cannot_connect": "Failed to connect",
             "unknown": "Unexpected error"
         },
-        "flow_title": "OctoPrint printer: {host}",
+        "flow_title": "OctoPrint Printer: {host}",
         "progress": {
             "get_api_key": "Open the OctoPrint UI and select **Allow** on the Access Request for **Home Assistant**."
         },
@@ -24,7 +24,7 @@
             "user": {
                 "data": {
                     "host": "Host",
-                    "path": "Application path",
+                    "path": "Application Path",
                     "port": "Port",
                     "ssl": "Uses an SSL certificate",
                     "username": "Username",
@@ -36,59 +36,14 @@
             }
         }
     },
-    "entity": {
-        "number": {
-            "bed_temperature": {
-                "name": "Bed temperature"
-            },
-            "extruder_n_temperature": {
-                "name": "Extruder {n} temperature"
-            },
-            "extruder_temperature": {
-                "name": "Extruder temperature"
-            }
-        },
-        "sensor": {
-            "file_name": {
-                "name": "Current file"
-            },
-            "status": {
-                "name": "Current state",
-                "state": {
-                    "cancelling": "Cancelling",
-                    "connecting": "Connecting",
-                    "detect_serial": "Detecting serial connection",
-                    "error": "Error",
-                    "finishing": "Finishing",
-                    "offline": "Offline",
-                    "offline_after_error": "Offline after error",
-                    "open_serial": "Opening serial connection",
-                    "operational": "Operational",
-                    "paused": "Paused",
-                    "pausing": "Pausing",
-                    "printing": "Printing",
-                    "printing_sd": "Printing from SD",
-                    "printing_streaming": "Sending file to SD",
-                    "resuming": "Resuming",
-                    "starting": "Starting",
-                    "starting_sd": "Starting print from SD",
-                    "starting_streaming": "Starting to send file to SD",
-                    "transferring_file": "Transferring file to SD"
-                }
-            }
-        }
-    },
     "exceptions": {
-        "error_setting_temperature": {
-            "message": "Error setting target {tool} temperature"
-        },
         "missing_client": {
             "message": "No client for device ID: {device_id}"
         }
     },
     "services": {
         "printer_connect": {
-            "description": "Instructs the OctoPrint server to connect to a printer.",
+            "description": "Instructs the octoprint server to connect to a printer.",
             "fields": {
                 "baudrate": {
                     "description": "Baud rate.",

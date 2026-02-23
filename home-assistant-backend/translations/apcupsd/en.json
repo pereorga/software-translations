@@ -1,33 +1,16 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "reconfigure_successful": "Re-configuration was successful",
-            "wrong_apcupsd_daemon": "The reconfigured APC UPS Daemon is not the same as the one already configured."
+            "already_configured": "Device is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect"
         },
         "step": {
-            "reconfigure": {
-                "data": {
-                    "host": "Host",
-                    "port": "Port"
-                },
-                "data_description": {
-                    "host": "The hostname or IP address of the APC UPS Daemon",
-                    "port": "The port the APC UPS Daemon is listening on"
-                },
-                "description": "Enter the host and port on which the apcupsd NIS is being served."
-            },
             "user": {
                 "data": {
                     "host": "Host",
                     "port": "Port"
-                },
-                "data_description": {
-                    "host": "The hostname or IP address of the APC UPS Daemon",
-                    "port": "The port the APC UPS Daemon is listening on"
                 },
                 "description": "Enter the host and port on which the apcupsd NIS is being served."
             }
@@ -80,7 +63,7 @@
                 "name": "Date and time"
             },
             "dip_switch_settings": {
-                "name": "DIP switch settings"
+                "name": "Dip switch settings"
             },
             "driver": {
                 "name": "Driver"
@@ -107,7 +90,7 @@
                 "name": "Internal temperature"
             },
             "last_self_test": {
-                "name": "Last self-test"
+                "name": "Last self test"
             },
             "last_transfer": {
                 "name": "Last transfer"
@@ -179,10 +162,10 @@
                 "name": "Restore requirement"
             },
             "self_test_interval": {
-                "name": "Self-test interval"
+                "name": "Self test interval"
             },
             "self_test_result": {
-                "name": "Self-test result"
+                "name": "Self test result"
             },
             "sensitivity": {
                 "name": "Sensitivity"
@@ -235,25 +218,6 @@
             "wake_delay": {
                 "name": "Wake delay"
             }
-        }
-    },
-    "exceptions": {
-        "cannot_connect": {
-            "message": "Cannot connect to APC UPS Daemon."
-        }
-    },
-    "issues": {
-        "apc_deprecated": {
-            "description": "The {entity_name} sensor (`{entity_id}`) is deprecated because it exposes internal details of the APC UPS Daemon response.\n\nIt is still referenced in the following automations or scripts:\n{items}\n\nUpdate those automations or scripts to use supported APC UPS entities instead. Reload the APC UPS Daemon integration afterwards to resolve this issue.",
-            "title": "{entity_name} sensor is deprecated"
-        },
-        "available_via_device_info": {
-            "description": "The {entity_name} sensor (`{entity_id}`) is deprecated because the same value is available from the device registry via `device_attr(\"{device_id}\", \"{available_via_device_attr}\")`.\n\nIt is still referenced in the following automations or scripts:\n{items}\n\nUpdate those automations or scripts to use the `device_attr` helper instead of this sensor. Reload the APC UPS Daemon integration afterwards to resolve this issue.",
-            "title": "{entity_name} sensor is deprecated"
-        },
-        "date_deprecated": {
-            "description": "The {entity_name} sensor (`{entity_id}`) is deprecated because the timestamp is already available from other APC UPS sensors via their last updated time.\n\nIt is still referenced in the following automations or scripts:\n{items}\n\nUpdate those automations or scripts to reference any entity's `last_updated` attribute instead (for example, `states.binary_sensor.apcups_online_status.last_updated`). Reload the APC UPS Daemon integration afterwards to resolve this issue.",
-            "title": "{entity_name} sensor is deprecated"
         }
     }
 }

@@ -17,6 +17,7 @@
                 "data": {
                     "use_psk": "Utilitza autenticaci\u00f3 PSK"
                 },
+                "description": "Assegureu-vos que teniu habilitada l'opci\u00f3 \u00abControl Remot\u00bb al vostre aparell de TV; per fer-ho aneu a: Configuraci\u00f3 -> Xarxa -> Configuraci\u00f3 de dispositiu remot -> Control remot.\n\nHi ha dos m\u00e8todes d'autenticaci\u00f3: Codi PIN o PSK (Pre-Shared-Key). L'autorizaci\u00f3 via PSK \u00e9s la recomanada perqu\u00e8 \u00e9s m\u00e9s estable.",
                 "title": "Autoritzaci\u00f3 del televisor Sony Bravia"
             },
             "confirm": {
@@ -52,23 +53,6 @@
             "terminate_apps": {
                 "name": "Tanca les aplicacions"
             }
-        }
-    },
-    "exceptions": {
-        "command_error": {
-            "message": "Error a l'enviar el comandament a {device}: {error}"
-        },
-        "command_error_not_found": {
-            "message": "Error a l'enviar el comandament a {device}: el servei d'API Bravia s'est\u00e0 reiniciant"
-        },
-        "command_error_offline": {
-            "message": "Error a l'enviar el comandament a {device}: la TV est\u00e0 apagada"
-        },
-        "update_error": {
-            "message": "Error actualitzant dades per a {device}: {error}"
-        },
-        "update_error_not_found": {
-            "message": "Error a l'actualitzar les dades per a {device}: el servei d'API Bravia est\u00e0 bloquejat"
         }
     }
 }

@@ -4,7 +4,6 @@
             "already_configured": "El compte ja est\u00e0 configurat",
             "reauth_failed_existing": "No s'ha pogut actualitzar l'entrada de configuraci\u00f3, elimina la integraci\u00f3 i torna-la a instal\u00b7lar.",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -19,17 +18,14 @@
                 "data": {
                     "api_key": "Clau API"
                 },
+                "description": "Has de proporcionar una nova clau API 'principal' d'UptimeRobot",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
-            },
-            "reconfigure": {
-                "data": {
-                    "api_key": "Clau API"
-                }
             },
             "user": {
                 "data": {
                     "api_key": "Clau API"
-                }
+                },
+                "description": "Has de proporcionar la clau API 'principal' d'UptimeRobot"
             }
         }
     },

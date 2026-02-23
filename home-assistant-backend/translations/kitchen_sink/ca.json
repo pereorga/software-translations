@@ -4,24 +4,6 @@
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         }
     },
-    "config_subentries": {
-        "entity": {
-            "step": {
-                "add_sensor": {
-                    "data": {
-                        "name": "Nom",
-                        "state": "Estat inicial"
-                    }
-                },
-                "reconfigure_sensor": {
-                    "data": {
-                        "name": "Estat inicial",
-                        "state": "Estat inicial"
-                    }
-                }
-            }
-        }
-    },
     "issues": {
         "bad_psu": {
             "fix_flow": {
@@ -80,6 +62,10 @@
     "services": {
         "test_service_1": {
             "fields": {
+                "field_1": {
+                    "description": "Nombre de segons",
+                    "name": "Camp 1"
+                },
                 "field_2": {
                     "description": "Mode",
                     "name": "Camp 2"

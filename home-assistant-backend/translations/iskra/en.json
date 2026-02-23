@@ -15,7 +15,7 @@
                     "username": "Username"
                 },
                 "description": "Enter username and password",
-                "title": "Configure REST API credentials"
+                "title": "Configure Rest API Credentials"
             },
             "modbus_tcp": {
                 "data": {
@@ -36,24 +36,24 @@
                 "data_description": {
                     "host": "Hostname or IP address of your Iskra device."
                 },
-                "description": "Enter the IP address of your Iskra device and select protocol.",
-                "title": "Configure Iskra device"
+                "description": "Enter the IP address of your Iskra Device and select protocol.",
+                "title": "Configure Iskra Device"
             }
         }
     },
     "entity": {
         "sensor": {
             "non_resettable_counter_1": {
-                "name": "Non-resettable counter 1"
+                "name": "Non Resettable counter 1"
             },
             "non_resettable_counter_2": {
-                "name": "Non-resettable counter 2"
+                "name": "Non Resettable counter 2"
             },
             "non_resettable_counter_3": {
-                "name": "Non-resettable counter 3"
+                "name": "Non Resettable counter 3"
             },
             "non_resettable_counter_4": {
-                "name": "Non-resettable counter 4"
+                "name": "Non Resettable counter 4"
             },
             "phase1_current": {
                 "name": "Phase 1 current"
@@ -121,7 +121,7 @@
         "protocol": {
             "options": {
                 "modbus_tcp": "Modbus TCP",
-                "rest_api": "REST API"
+                "rest_api": "Rest API"
             }
         }
     }

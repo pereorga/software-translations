@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El servei ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
         },
@@ -12,11 +11,6 @@
             "unknown": "Error inesperat"
         },
         "step": {
-            "hassio_confirm": {
-                "data": {
-                    "api_token": "Token d'API"
-                }
-            },
             "reauth_confirm": {
                 "data": {
                     "api_token": "Token d'API"
@@ -78,6 +72,7 @@
         "get_mealplan": {
             "fields": {
                 "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
                     "name": "Inst\u00e0ncia de Mealie"
                 },
                 "end_date": {
@@ -94,20 +89,16 @@
         "get_recipe": {
             "fields": {
                 "config_entry_id": {
-                    "name": "Inst\u00e0ncia de Mealie"
-                }
-            }
-        },
-        "get_recipes": {
-            "fields": {
-                "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
                     "name": "Inst\u00e0ncia de Mealie"
                 }
             }
         },
         "import_recipe": {
+            "description": "Importa una recepta des d'un URL",
             "fields": {
                 "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
                     "name": "Inst\u00e0ncia de Mealie"
                 },
                 "include_tags": {
@@ -121,8 +112,10 @@
             "name": "Importa recepta"
         },
         "set_mealplan": {
+            "description": "Estableix un men\u00fa un dia espec\u00edfic",
             "fields": {
                 "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
                     "name": "Inst\u00e0ncia de Mealie"
                 },
                 "date": {
@@ -140,17 +133,15 @@
                 "note_title": {
                     "description": "T\u00edtol de la nota del plat per a men\u00fas sense recepta.",
                     "name": "T\u00edtol de la nota del plat"
-                },
-                "recipe_id": {
-                    "description": "ID de la recepta o 'slug' de la recepta a obtenir.",
-                    "name": "ID de la recepta"
                 }
             },
             "name": "Estableix un men\u00fa"
         },
         "set_random_mealplan": {
+            "description": "Estableix un men\u00fa aleatori un dia espec\u00edfic",
             "fields": {
                 "config_entry_id": {
+                    "description": "Selecciona la inst\u00e0ncia de Mealie per obtenir el pla d'\u00e0pats",
                     "name": "Inst\u00e0ncia de Mealie"
                 },
                 "date": {

@@ -7,7 +7,7 @@
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "reauth_invalid": "Re-authentication failed; serial number does not match original",
+            "reauth_invalid": "Re-authentication failed; Serial Number does not match original",
             "unknown": "Unexpected error"
         },
         "step": {
@@ -20,13 +20,8 @@
             "user": {
                 "data": {
                     "password": "Password",
-                    "station": "Station serial number",
+                    "station": "Station Serial Number",
                     "username": "Username"
-                },
-                "data_description": {
-                    "password": "Password for your Wallbox account.",
-                    "station": "Serial number of the charger. Can be found in the Wallbox app or in the Wallbox portal.",
-                    "username": "Username for your Wallbox account."
                 }
             }
         }
@@ -48,28 +43,12 @@
                 "name": "Maximum ICP current"
             }
         },
-        "select": {
-            "ecosmart": {
-                "name": "Solar charging",
-                "state": {
-                    "eco_mode": "Eco mode",
-                    "full_solar": "Full solar",
-                    "off": "Off"
-                }
-            }
-        },
         "sensor": {
             "added_discharged_energy": {
                 "name": "Discharged energy"
             },
             "added_energy": {
                 "name": "Added energy"
-            },
-            "added_green_energy": {
-                "name": "Added green energy"
-            },
-            "added_grid_energy": {
-                "name": "Added grid energy"
             },
             "added_range": {
                 "name": "Added range"
@@ -112,26 +91,6 @@
             "pause_resume": {
                 "name": "Pause/resume"
             }
-        }
-    },
-    "exceptions": {
-        "api_failed": {
-            "message": "Error communicating with Wallbox API"
-        },
-        "insufficient_rights": {
-            "message": "Insufficient rights for Wallbox user"
-        },
-        "invalid_auth": {
-            "message": "Invalid authentication"
-        },
-        "too_many_requests": {
-            "message": "Error communicating with Wallbox API, too many requests"
-        }
-    },
-    "issues": {
-        "insufficient_rights": {
-            "description": "The Wallbox account has insufficient rights to lock/unlock and change the charging power. Please assign the user admin rights in the Wallbox portal.",
-            "title": "The Wallbox account has insufficient rights."
         }
     }
 }

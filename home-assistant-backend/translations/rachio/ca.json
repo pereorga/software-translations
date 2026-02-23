@@ -45,6 +45,7 @@
     },
     "services": {
         "pause_watering": {
+            "description": "Posa en pausa qualsevol zona en execuci\u00f3 o programaci\u00f3.",
             "fields": {
                 "devices": {
                     "description": "Nom dels controladors a aturar. Per defecte, tots els controladors del compte si no se'n proporciona cap.",
@@ -58,6 +59,7 @@
             "name": "Pausa el reg"
         },
         "resume_watering": {
+            "description": "Repr\u00e8n qualsevol zona en execuci\u00f3 o programaci\u00f3 en pausa.",
             "fields": {
                 "devices": {
                     "description": "Nom dels controladors a reprendre. Per defecte, tots els controladors del compte si no se'n proporciona cap.",

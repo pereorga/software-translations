@@ -12,14 +12,14 @@
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "Enter a new 'Subscription key' for your account generated at {portal_url}",
+                "description": "Enter a new 'Subscription key' for your account generated at 'https://portal.osoenergy.no/'.",
                 "title": "OSO Energy auth"
             },
             "user": {
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "Enter the 'Subscription key' for your account generated at {portal_url}",
+                "description": "Enter the 'Subscription key' for your account generated at 'https://portal.osoenergy.no/'",
                 "title": "OSO Energy auth"
             }
         }
@@ -58,7 +58,6 @@
                 "state": {
                     "advanced": "Advanced",
                     "gridcompany": "Grid company",
-                    "nettleie": "Grid fee",
                     "off": "Off",
                     "oso": "OSO",
                     "smartcompany": "Smart company"
@@ -210,21 +209,11 @@
             },
             "name": "Set v40 min"
         },
-        "turn_away_mode_on": {
-            "description": "Turns on away mode for the water heater",
-            "fields": {
-                "duration_days": {
-                    "description": "Number of days to keep away mode active (1-365)",
-                    "name": "Duration in days"
-                }
-            },
-            "name": "Set away mode"
-        },
         "turn_off": {
             "description": "Turns off heating for one hour or until min temperature is reached",
             "fields": {
                 "until_temp_limit": {
-                    "description": "Whether heating should be off until the minimum temperature is reached instead of for one hour.",
+                    "description": "Choose if heating should be off until min temperature (True) is reached or for one hour (False)",
                     "name": "Until temperature limit"
                 }
             },
@@ -234,7 +223,7 @@
             "description": "Turns on heating for one hour or until max temperature is reached",
             "fields": {
                 "until_temp_limit": {
-                    "description": "Whether heating should be on until the maximum temperature is reached instead of for one hour.",
+                    "description": "Choose if heating should be on until max temperature (True) is reached or for one hour (False)",
                     "name": "Until temperature limit"
                 }
             },

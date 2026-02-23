@@ -17,17 +17,23 @@
                 "data": {
                     "account": "ID del compte",
                     "additional_account": "Comptes addicionals",
+                    "encryption_key": "Clau de xifrat",
+                    "ping_interval": "Interval de refresc (min)",
                     "zones": "Nombre de zones del compte"
-                }
+                },
+                "title": "Afegeix un altre compte al port actual."
             },
             "user": {
                 "data": {
                     "account": "ID del compte",
                     "additional_account": "Comptes addicionals",
+                    "encryption_key": "Clau de xifrat",
+                    "ping_interval": "Interval de refresc (min)",
                     "port": "Port",
                     "protocol": "Protocol",
                     "zones": "Nombre de zones del compte"
-                }
+                },
+                "title": "Crea una connexi\u00f3 per a sistemes d'alarma basats en SIA."
             }
         }
     },
@@ -38,7 +44,8 @@
                     "ignore_timestamps": "Ignora la comprovaci\u00f3 de marca de temps dels esdeveniments SIA",
                     "zones": "Nombre de zones del compte"
                 },
-                "description": "Configura les opcions del compte: {account}"
+                "description": "Configura les opcions del compte: {account}",
+                "title": "Opcions de configuraci\u00f3 de SIA."
             }
         }
     }

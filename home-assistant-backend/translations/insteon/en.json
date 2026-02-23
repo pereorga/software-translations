@@ -17,8 +17,8 @@
                     "host": "IP address",
                     "port": "Port"
                 },
-                "description": "Configure the Insteon Hub version 1 (pre-2014).",
-                "title": "Insteon Hub version 1"
+                "description": "Configure the Insteon Hub Version 1 (pre-2014).",
+                "title": "Insteon Hub Version 1"
             },
             "hubv2": {
                 "data": {
@@ -27,8 +27,8 @@
                     "port": "Port",
                     "username": "Username"
                 },
-                "description": "Configure the Insteon Hub version 2.",
-                "title": "Insteon Hub version 2"
+                "description": "Configure the Insteon Hub Version 2.",
+                "title": "Insteon Hub Version 2"
             },
             "plm": {
                 "data": {
@@ -118,11 +118,11 @@
                     "name": "Group"
                 },
                 "mode": {
-                    "description": "Linking mode of the Insteon Modem.",
+                    "description": "Linking mode   controller - IM is controller   responder - IM is responder.",
                     "name": "Mode"
                 }
             },
-            "name": "Add All-Link"
+            "name": "Add all link"
         },
         "add_default_links": {
             "description": "Adds the default links between the device and the Insteon Modem (IM).",
@@ -135,42 +135,42 @@
             "name": "Add default links"
         },
         "delete_all_link": {
-            "description": "Tells the Insteon Modem (IM) to remove an All-Link record from the All-Link database of the IM and a device. Once the IM is set to delete the link, press the link button on the corresponding device to complete the process.",
+            "description": "Tells the Insteon Modem (IM) to remove an All-Link record from the All-Link Database of the IM and a device. Once the IM is set to delete the link, press the link button on the corresponding device to complete the process.",
             "fields": {
                 "group": {
                     "description": "All-Link group number.",
                     "name": "Group"
                 }
             },
-            "name": "Delete All-Link"
+            "name": "Delete all link"
         },
         "load_all_link_database": {
-            "description": "Loads the All-Link database for a device. WARNING - Loading a device All-Link database is very time consuming and inconsistent. This may take a LONG time and may need to be repeated to obtain all records.",
+            "description": "Load the All-Link Database for a device. WARNING - Loading a device All-LInk database is very time consuming and inconsistent. This may take a LONG time and may need to be repeated to obtain all records.",
             "fields": {
                 "entity_id": {
                     "description": "Name of the device to load. Use \"all\" to load the database of all devices.",
                     "name": "Entity"
                 },
                 "reload": {
-                    "description": "If enabled, all current records are cleared from memory (does not affect the device) and reloaded. Otherwise the existing records are left in place and only missing records are added.",
+                    "description": "Reloads all records. If true the current records are cleared from memory (does not effect the device) and the records are reloaded. If false the existing records are left in place and only missing records are added. Default is false.",
                     "name": "Reload"
                 }
             },
-            "name": "Load All-Link database"
+            "name": "Load all link database"
         },
         "print_all_link_database": {
-            "description": "Prints the All-Link database for a device. Requires that the All-Link database is loaded into memory.",
+            "description": "Prints the All-Link Database for a device. Requires that the All-Link Database is loaded into memory.",
             "fields": {
                 "entity_id": {
                     "description": "Name of the device to print.",
                     "name": "Entity"
                 }
             },
-            "name": "Print All-Link database"
+            "name": "Print all link database"
         },
         "print_im_all_link_database": {
-            "description": "Prints the All-Link database for the INSTEON Modem (IM).",
-            "name": "Print IM All-Link database"
+            "description": "Prints the All-Link Database for the INSTEON Modem (IM).",
+            "name": "Print IM all link database"
         },
         "scene_off": {
             "description": "Triggers an INSTEON scene to turn OFF.",

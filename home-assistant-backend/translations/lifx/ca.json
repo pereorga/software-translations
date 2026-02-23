@@ -101,6 +101,7 @@
             "name": "Efecte de flama"
         },
         "effect_morph": {
+            "description": "Inicia l'efecte morfosi ('morph') basat en microprogramari a LIFX Tiles o Candle.",
             "fields": {
                 "palette": {
                     "name": "Paleta"
@@ -114,6 +115,7 @@
                     "name": "Velocitat"
                 },
                 "theme": {
+                    "description": "Tema de color predefinit per a l'efecte. Se substitueix per l'atribut de la paleta.",
                     "name": "Tema"
                 }
             },
@@ -201,13 +203,6 @@
             "description": "Atura un efecte en execuci\u00f3.",
             "name": "Atura efecte"
         },
-        "paint_theme": {
-            "fields": {
-                "theme": {
-                    "name": "Tema"
-                }
-            }
-        },
         "set_hev_cycle_state": {
             "description": "Controla els LED HEV d'una bombeta LIFX Clean.",
             "fields": {
@@ -241,7 +236,8 @@
                     "description": "Llista de n\u00fameros de zona a controlar (8 per cada LIFX Z, comen\u00e7a a 0).",
                     "name": "Zones"
                 }
-            }
+            },
+            "name": "Estableix estat"
         }
     }
 }

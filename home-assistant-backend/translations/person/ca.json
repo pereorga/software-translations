@@ -1,8 +1,4 @@
 {
-    "common": {
-        "trigger_behavior_description": "El comportament de la persona amb el qual disparar.",
-        "trigger_behavior_name": "Comportament"
-    },
     "entity_component": {
         "_": {
             "name": "Persona",
@@ -29,42 +25,11 @@
             }
         }
     },
-    "selector": {
-        "trigger_behavior": {
-            "options": {
-                "any": "Qualsevol",
-                "first": "Primer",
-                "last": "\u00daltim"
-            }
-        }
-    },
     "services": {
         "reload": {
             "description": "Recarrega les persones des de la configuraci\u00f3 YAML",
             "name": "Torna a carregar"
         }
     },
-    "title": "Persona",
-    "triggers": {
-        "entered_home": {
-            "description": "Es dispara quan una o m\u00e9s persones entren a casa.",
-            "fields": {
-                "behavior": {
-                    "description": "El comportament de la persona amb el qual disparar.",
-                    "name": "Comportament"
-                }
-            },
-            "name": "Ha entrat a casa"
-        },
-        "left_home": {
-            "description": "Es dispara quan una o m\u00e9s persones abandonen la casa.",
-            "fields": {
-                "behavior": {
-                    "description": "El comportament de la persona amb el qual disparar.",
-                    "name": "Comportament"
-                }
-            },
-            "name": "Ha sortit de casa"
-        }
-    }
+    "title": "Persona"
 }

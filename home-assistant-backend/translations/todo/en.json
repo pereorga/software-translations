@@ -58,17 +58,17 @@
             "name": "Remove completed items"
         },
         "remove_item": {
-            "description": "Removes an existing to-do list item by its name or UID.",
+            "description": "Removes an existing to-do list item by its name.",
             "fields": {
                 "item": {
-                    "description": "The name/summary of the to-do item. If you have items with duplicate names, you can reference specific ones using their UID instead.",
-                    "name": "Item name or UID"
+                    "description": "The name for the to-do list item.",
+                    "name": "Item name"
                 }
             },
             "name": "Remove item"
         },
         "update_item": {
-            "description": "Updates an existing to-do list item based on its name or UID.",
+            "description": "Updates an existing to-do list item based on its name.",
             "fields": {
                 "description": {
                     "description": "A more complete description of the to-do item than provided by the item name.",
@@ -83,8 +83,8 @@
                     "name": "Due date and time"
                 },
                 "item": {
-                    "description": "The name/summary of the to-do item. If you have items with duplicate names, you can reference specific ones using their UID instead.",
-                    "name": "Item name or UID"
+                    "description": "The current name of the to-do item.",
+                    "name": "Item name"
                 },
                 "rename": {
                     "description": "The new name for the to-do item",

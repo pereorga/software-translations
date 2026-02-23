@@ -18,6 +18,8 @@
         "field_flash_name": "Flaix",
         "field_hs_color_description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
         "field_hs_color_name": "Color to/saturaci\u00f3",
+        "field_kelvin_description": "Temperatura de color en Kelvin.",
+        "field_kelvin_name": "Temperatura de color",
         "field_profile_description": "Nom del perfil de llum a utilitzar.",
         "field_profile_name": "Perfil",
         "field_rgb_color_description": "Color en format RGB. Llista de tres nombres enters entre 0 i 255 que representen els valors de vermell, verd i blau.",
@@ -49,8 +51,7 @@
         },
         "extra_fields": {
             "brightness_pct": "Brillantor",
-            "flash": "Flaix",
-            "for": "Durada"
+            "flash": "Flaix"
         },
         "trigger_type": {
             "changed_states": "{entity_name} s'engegui o s'apagui",
@@ -91,10 +92,7 @@
                     "name": "Temperatura de color (Kelvin)"
                 },
                 "effect": {
-                    "name": "Efecte",
-                    "state": {
-                        "off": "OFF"
-                    }
+                    "name": "Efecte"
                 },
                 "effect_list": {
                     "name": "Efectes disponibles"
@@ -281,17 +279,11 @@
                 "yellow": "Groc",
                 "yellowgreen": "Verd groc"
             }
-        },
-        "state": {
-            "options": {
-                "off": "OFF",
-                "on": "ON"
-            }
         }
     },
     "services": {
         "toggle": {
-            "description": "Canvia l'estat un o m\u00e9s llums, d'enc\u00e8s a apagat o, d'apagat a enc\u00e8s, en funci\u00f3 del seu estat actual.",
+            "description": "Commuta un o m\u00e9s llums, d'enc\u00e8s a apagat o, d'apagat a enc\u00e8s, en funci\u00f3 del seu estat actual.",
             "fields": {
                 "brightness": {
                     "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
@@ -309,10 +301,6 @@
                     "description": "Temperatura de color en 'mireds'.",
                     "name": "Temperatura de color"
                 },
-                "color_temp_kelvin": {
-                    "description": "Temperatura de color en Kelvin.",
-                    "name": "Temperatura de color"
-                },
                 "effect": {
                     "description": "Efecte de llum.",
                     "name": "Efecte"
@@ -324,6 +312,10 @@
                 "hs_color": {
                     "description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
                     "name": "Color to/saturaci\u00f3"
+                },
+                "kelvin": {
+                    "description": "Temperatura de color en Kelvin.",
+                    "name": "Temperatura de color"
                 },
                 "profile": {
                     "description": "Nom del perfil de llum a utilitzar.",
@@ -362,6 +354,7 @@
             }
         },
         "turn_off": {
+            "description": "Apaga un o m\u00e9s llums.",
             "fields": {
                 "flash": {
                     "description": "Fa que la llum parpellegi, pot ser de valor curt o llarg.",
@@ -380,6 +373,7 @@
             }
         },
         "turn_on": {
+            "description": "Enc\u00e9n un o m\u00e9s llums i ajusta'n les propietats, fins i tot quan ja estiguin encesos.",
             "fields": {
                 "brightness": {
                     "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
@@ -416,6 +410,10 @@
                 "hs_color": {
                     "description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
                     "name": "Color to/saturaci\u00f3"
+                },
+                "kelvin": {
+                    "description": "Temperatura de color en Kelvin.",
+                    "name": "Temperatura de color"
                 },
                 "profile": {
                     "description": "Nom del perfil de llum a utilitzar.",

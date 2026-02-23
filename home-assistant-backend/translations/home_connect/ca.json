@@ -4,51 +4,29 @@
     },
     "config": {
         "abort": {
-            "already_configured": "El compte ja est\u00e0 configurat",
             "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
             "no_url_available": "No hi ha cap URL disponible. Per a m\u00e9s informaci\u00f3 sobre aquest error, [consulta la secci\u00f3 d'ajuda]({docs_url})",
             "oauth_error": "S'han rebut dades token inv\u00e0lides.",
             "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
             "oauth_timeout": "Temps m\u00e0xim d'espera de resoluci\u00f3 de 'token' OAuth esgotat.",
-            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s."
         },
         "create_entry": {
             "default": "Autenticaci\u00f3 exitosa"
         },
         "step": {
             "pick_implementation": {
-                "data": {
-                    "implementation": "Credencials d'aplicaci\u00f3"
-                },
-                "data_description": {
-                    "implementation": "Les credencials que vols fer servir per autenticar."
-                },
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
-            },
-            "reauth_confirm": {
-                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
         }
     },
     "entity": {
         "binary_sensor": {
-            "battery_charging_state": {
-                "name": "Estat de c\u00e0rrega de la bateria"
-            },
             "freezer_door": {
                 "name": "Porta del congelador"
             },
             "refrigerator_door": {
                 "name": "Porta de la nevera"
-            }
-        },
-        "button": {
-            "open_door": {
-                "name": "Obre la porta"
-            },
-            "partly_open_door": {
-                "name": "Porta parcialment oberta"
             }
         },
         "light": {
@@ -59,88 +37,11 @@
                 "name": "Llum interior"
             }
         },
-        "select": {
-            "active_program": {
-                "state": {
-                    "cooking_oven_program_heating_mode_hot_air_gentle": "Aire calent suau",
-                    "laundry_care_dryer_program_outdoor": "Exterior",
-                    "laundry_care_washer_program_outdoor": "Exterior",
-                    "laundry_care_washer_program_spin_spin_drain": "Centrifugat"
-                }
-            },
-            "auto_stain": {
-                "state": {
-                    "laundry_care_washer_enum_type_stains_off": "OFF"
-                }
-            },
-            "rinse_plus": {
-                "state": {
-                    "laundry_care_washer_enum_type_rinse_plus_off": "OFF"
-                }
-            },
-            "selected_program": {
-                "state": {
-                    "cooking_oven_program_heating_mode_hot_air_gentle": "Aire calent suau",
-                    "cooking_oven_program_steam_modes_steam": "Mode de vapor",
-                    "laundry_care_dryer_program_outdoor": "Exterior",
-                    "laundry_care_washer_program_outdoor": "Exterior",
-                    "laundry_care_washer_program_spin_spin_drain": "Centrifugat"
-                }
-            },
-            "spin_speed": {
-                "state": {
-                    "laundry_care_washer_enum_type_spin_speed_off": "OFF",
-                    "laundry_care_washer_enum_type_spin_speed_ul_high": "Alt/a",
-                    "laundry_care_washer_enum_type_spin_speed_ul_low": "Baix/a",
-                    "laundry_care_washer_enum_type_spin_speed_ul_medium": "Mitj\u00e0/na",
-                    "laundry_care_washer_enum_type_spin_speed_ul_off": "OFF"
-                }
-            },
-            "vario_perfect": {
-                "state": {
-                    "laundry_care_common_enum_type_vario_perfect_off": "OFF"
-                }
-            },
-            "warming_level": {
-                "state": {
-                    "cooking_oven_enum_type_warming_level_high": "Alt/a",
-                    "cooking_oven_enum_type_warming_level_low": "Baix/a",
-                    "cooking_oven_enum_type_warming_level_medium": "Mitj\u00e0/na"
-                }
-            }
-        },
         "sensor": {
-            "alarm_clock_elapsed": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
+            "battery_level": {
+                "name": "Nivell de bateria"
             },
             "bean_container_empty": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "calc_n_clean_in10cups": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "calc_n_clean_in15cups": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "calc_n_clean_in20cups": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "calc_n_clean_in5cups": {
                 "state": {
                     "confirmed": "Confirmat",
                     "off": "OFF"
@@ -155,90 +56,12 @@
             "coffee_counter": {
                 "name": "Caf\u00e8s"
             },
-            "descaling_in_10_cups": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "descaling_in_15_cups": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "descaling_in_20_cups": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "descaling_in_5_cups": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_calc_n_clean_blockage": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_calc_n_clean_overdue": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_cleaning_overdue": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_descaling_blockage": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_descaling_overdue": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_should_be_calc_n_cleaned": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_should_be_cleaned": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "device_should_be_descaled": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "docking_station_not_found": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
             "door": {
                 "name": "Porta",
                 "state": {
-                    "closed": "Tancada",
+                    "closed": "Tancat/ada",
                     "locked": "Bloquejat",
-                    "open": "Obert"
+                    "open": "Obert/a"
                 }
             },
             "drip_tray_full": {
@@ -247,44 +70,12 @@
                     "off": "OFF"
                 }
             },
-            "drying_process_finished": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "empty_dust_box_and_clean_filter": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
             "freezer_door_alarm": {
-                "name": "Alarma de la porta del congelador",
                 "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
+                    "confirmed": "Confirmat"
                 }
             },
             "freezer_temperature_alarm": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "grease_filter_max_saturation_nearly_reached": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "grease_filter_max_saturation_reached": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "keep_milk_tank_cool": {
                 "state": {
                     "confirmed": "Confirmat",
                     "off": "OFF"
@@ -302,36 +93,6 @@
                     "ready": "A punt"
                 }
             },
-            "poor_i_dos_1_fill_level": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "poor_i_dos_2_fill_level": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "preheat_finished": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "program_aborted": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "program_finished": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
             "refrigerator_door_alarm": {
                 "name": "Alarma de la porta de la nevera",
                 "state": {
@@ -339,19 +100,7 @@
                     "off": "OFF"
                 }
             },
-            "regular_preheat_finished": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
             "rinse_aid_nearly_empty": {
-                "state": {
-                    "confirmed": "Confirmat",
-                    "off": "OFF"
-                }
-            },
-            "robot_is_stuck": {
                 "state": {
                     "confirmed": "Confirmat",
                     "off": "OFF"
@@ -385,59 +134,31 @@
             "vacation_mode": {
                 "name": "Mode vacances"
             }
+        },
+        "time": {
+            "alarm_clock": {
+                "name": "Despertador"
+            }
         }
     },
     "exceptions": {
-        "oauth2_implementation_unavailable": {
-            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
-        }
-    },
-    "selector": {
-        "programs": {
-            "options": {
-                "cooking_oven_program_heating_mode_hot_air_gentle": "Aire calent suau",
-                "cooking_oven_program_steam_modes_steam": "Mode de vapor",
-                "laundry_care_dryer_program_outdoor": "Exterior",
-                "laundry_care_washer_program_outdoor": "Exterior",
-                "laundry_care_washer_program_spin_spin_drain": "Centrifugat"
-            }
+        "stop_program": {
+            "message": "Error en aturar el programa: {description}"
         },
-        "rinse_plus": {
-            "options": {
-                "laundry_care_washer_enum_type_rinse_plus_off": "OFF"
-            }
+        "turn_off": {
+            "message": "Error en desactivar {entity_id} ({key}): {description}"
         },
-        "spin_speed": {
-            "options": {
-                "laundry_care_washer_enum_type_spin_speed_off": "OFF",
-                "laundry_care_washer_enum_type_spin_speed_ul_high": "Alt/a",
-                "laundry_care_washer_enum_type_spin_speed_ul_low": "Baix/a",
-                "laundry_care_washer_enum_type_spin_speed_ul_medium": "Mitj\u00e0/na",
-                "laundry_care_washer_enum_type_spin_speed_ul_off": "OFF"
-            }
-        },
-        "stains": {
-            "options": {
-                "laundry_care_washer_enum_type_stains_off": "OFF"
-            }
-        },
-        "vario_perfect": {
-            "options": {
-                "laundry_care_common_enum_type_vario_perfect_off": "OFF"
-            }
-        },
-        "warming_level": {
-            "options": {
-                "cooking_oven_enum_type_warming_level_high": "Alt/a",
-                "cooking_oven_enum_type_warming_level_low": "Baix/a",
-                "cooking_oven_enum_type_warming_level_medium": "Mitj\u00e0/na"
-            }
+        "turn_on": {
+            "message": "Error en activar {entity_id} ({key}): {description}"
         }
     },
     "services": {
         "change_setting": {
             "description": "Canvia una configuraci\u00f3.",
             "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                },
                 "key": {
                     "description": "Clau de la configuraci\u00f3.",
                     "name": "Clau"
@@ -445,6 +166,84 @@
                 "value": {
                     "description": "Valor de la configuraci\u00f3.",
                     "name": "Valor"
+                }
+            }
+        },
+        "pause_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                }
+            }
+        },
+        "resume_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                }
+            }
+        },
+        "select_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                },
+                "program": {
+                    "name": "Programa"
+                },
+                "unit": {
+                    "description": "Unitat de l'opci\u00f3.",
+                    "name": "Unitat d'opci\u00f3"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor d'opci\u00f3"
+                }
+            }
+        },
+        "set_option_active": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                },
+                "key": {
+                    "name": "Clau"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor"
+                }
+            }
+        },
+        "set_option_selected": {
+            "fields": {
+                "device_id": {
+                    "name": "ID del dispositiu"
+                },
+                "key": {
+                    "name": "Clau"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor"
+                }
+            }
+        },
+        "start_program": {
+            "fields": {
+                "device_id": {
+                    "name": "ID de dispositiu"
+                },
+                "program": {
+                    "name": "Programa"
+                },
+                "unit": {
+                    "description": "Unitat de l'opci\u00f3.",
+                    "name": "Unitat d'opci\u00f3"
+                },
+                "value": {
+                    "description": "Valor de l'opci\u00f3.",
+                    "name": "Valor d'opci\u00f3"
                 }
             }
         }

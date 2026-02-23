@@ -4,8 +4,7 @@
             "already_configured": "Device is already configured",
             "cannot_connect": "Failed to connect",
             "reauth_failed": "Invalid authentication",
-            "reauth_successful": "Re-authentication was successful",
-            "unsupported_device": "This device is not yet supported by the SMLIGHT integration"
+            "reauth_successful": "Re-authentication was successful"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -18,10 +17,6 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "data_description": {
-                    "password": "Password for the device's web login.",
-                    "username": "Username for the device's web login."
-                },
                 "description": "Please enter the username and password"
             },
             "confirm_discovery": {
@@ -31,10 +26,6 @@
                 "data": {
                     "password": "Password",
                     "username": "Username"
-                },
-                "data_description": {
-                    "password": "Password for the device's web login.",
-                    "username": "Username for the device's web login."
                 },
                 "description": "Please enter the correct username and password",
                 "title": "Authentication expired for {name}"
@@ -46,7 +37,7 @@
                 "data_description": {
                     "host": "The hostname or IP address of the SMLIGHT SLZB-06x device"
                 },
-                "description": "Set up SMLIGHT Zigbee integration"
+                "description": "Set up SMLIGHT Zigbee Integration"
             }
         }
     },
@@ -70,7 +61,7 @@
                 "name": "Core restart"
             },
             "reconnect_zigbee_router": {
-                "name": "Reconnect Zigbee router"
+                "name": "Reconnect zigbee router"
             },
             "zigbee_flash_mode": {
                 "name": "Zigbee flash mode"
@@ -143,14 +134,6 @@
             "zigbee_update": {
                 "name": "Zigbee firmware"
             }
-        }
-    },
-    "exceptions": {
-        "cannot_connect_device": {
-            "message": "An error occurred while connecting to the SMLIGHT device: {error}."
-        },
-        "firmware_update_failed": {
-            "message": "Firmware update failed for {device_name}."
         }
     },
     "issues": {

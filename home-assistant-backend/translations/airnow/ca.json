@@ -13,8 +13,10 @@
                 "data": {
                     "api_key": "Clau API",
                     "latitude": "Latitud",
-                    "longitude": "Longitud"
-                }
+                    "longitude": "Longitud",
+                    "radius": "Radi de l'estaci\u00f3 (milles; opcional)"
+                },
+                "description": "Per generar la clau API, v\u00e9s a https://docs.airnowapi.org/account/request/"
             }
         }
     },
@@ -32,6 +34,15 @@
                     "long": {
                         "name": "Longitud"
                     }
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "radius": "Radi de l'estaci\u00f3 (milles)"
                 }
             }
         }
