@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-18 17:28+0200\n"
+"POT-Creation-Date: 2026-02-23 08:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.19.1\n"
+"X-Generator: Translate Toolkit 3.12.2\n"
 
 #: STORE_DESCRIPTION
 msgid ""
@@ -65,8 +65,8 @@ msgstr ""
 "\n"
 "El VLC és completament gratuït i  de codi obert.\n"
 "\n"
-"TMDb proporciona el treball artístic. TMDb és una base de dades de "
-"pel·lícules mantinguda comunitàriament."
+"TMDb proporciona el treball artístic. TMDb és una base de dades de pel·"
+"lícules mantinguda comunitàriament."
 
 #: UNKNOWN_TRACK_TYPE
 msgid "Unknown track type"
@@ -165,18 +165,15 @@ msgstr "TV connectada"
 msgid "This video is playing on the TV"
 msgstr "Aquest vídeo s'està reproduint a la TV"
 
-#. \n should stay in every translation
 #: PLAYING_EXTERNALLY_ADDITION
 msgid ""
 "\n"
-" Now playing on:"
+" Now playing on:\"; /* \n"
+" should stay in every translation */\"VFILTER_HUE\" = \"Hue"
 msgstr ""
 "\n"
-"Reproduint:"
-
-#: VFILTER_HUE
-msgid "Hue"
-msgstr "To de color"
+"Reproduint:\"; /* \n"
+" should stay in every translation */\"VFILTER_HUE\" = \"To de color"
 
 #: VFILTER_BRIGHTNESS
 msgid "Brightness"
@@ -680,23 +677,17 @@ msgstr "Repeteix la clau d'accés"
 msgid "Passcode Options"
 msgstr "Opcions de la clau d'accés"
 
-#. Passcode 4 digit numeric code
 #: 4-Digit+Numeric+Code
-msgid "4-Digit Numeric Code"
-msgstr "Codi numèric de 4 dígits"
-
-#. Passcode 6 digit numeric code
-#: 6-Digit+Numeric+Code
-msgid "6-Digit Numeric Code"
-msgstr "Codi numèric de 6 dígits"
-
-#: Settings
 msgid ""
-"Settings\"; // plain text key to keep compatibility with InAppSettingsKit's "
-"upstream\"ON\" = \"On"
-msgstr ""
-"Paràmetres\"; // plain text key to keep compatibility with "
+"4-Digit Numeric Code\"; /* Passcode 4 digit numeric code */\"6-Digit Numeric "
+"Code\" = \"6-Digit Numeric Code\"; /* Passcode 6 digit numeric code */"
+"\"Settings\" = \"Settings\"; // plain text key to keep compatibility with "
 "InAppSettingsKit's upstream\"ON\" = \"On"
+msgstr ""
+"Codi numèric de 4 dígits\"; /* Passcode 4 digit numeric code */\"6-Digit "
+"Numeric Code\" = \"Codi numèric de 6 dígits\"; /* Passcode 6 digit numeric "
+"code */\"Settings\" = \"Paràmetres\"; // plain text key to keep "
+"compatibility with InAppSettingsKit's upstream\"ON\" = \"On"
 
 #: EMPTY_LIBRARY
 msgid "Empty Media Library"
@@ -774,19 +765,17 @@ msgstr "Depuració a velocitat 1/4"
 msgid "Fine Scrubbing"
 msgstr "Depuració fina"
 
-#. 1: elapsed time, 2: total time
 #: PLAYBACK_SCRUB_TOTAL_TIME_FORMAT
-msgid "%@ elapsed, total duration %@"
-msgstr "%@ transcorregut, durada total %@"
-
-#. 1: elapsed time, 2: remaining time
-#: PLAYBACK_SCRUB_REMAINING_TIME_FORMAT
-msgid "%@ elapsed, %@"
-msgstr "%@ transcorregut, %@"
-
-#: PLAYBACK_SCRUB_ACCESSIBILITY_TIME_DISPLAY
-msgid "Time Display"
-msgstr "Visualització del temps"
+msgid ""
+"%@ elapsed, total duration %@\"; /* 1: elapsed time, 2: total time */"
+"\"PLAYBACK_SCRUB_REMAINING_TIME_FORMAT\" = \"%@ elapsed, %@\"; /* 1: elapsed "
+"time, 2: remaining time */\"PLAYBACK_SCRUB_ACCESSIBILITY_TIME_DISPLAY\" = "
+"\"Time Display"
+msgstr ""
+"%@ transcorregut, durada total %@\"; /* 1: elapsed time, 2: total time */"
+"\"PLAYBACK_SCRUB_REMAINING_TIME_FORMAT\" = \"%@ transcorregut, %@\"; /* 1: "
+"elapsed time, 2: remaining time */\"PLAYBACK_SCRUB_ACCESSIBILITY_TIME_DISPLAY"
+"\" = \"Visualització del temps"
 
 #: PLAYBACK_POSITION
 msgid "Playback Position"
@@ -816,6 +805,7 @@ msgstr "Salta cap endavant"
 
 #: PLAY_BUTTON
 msgctxt "PLAY_BUTTON"
+"PLAY_BUTTON"
 msgid "Play"
 msgstr "Reprodueix"
 
@@ -1048,19 +1038,17 @@ msgctxt "DURATION"
 msgid "Duration"
 msgstr "Durada"
 
-#. Accessibility label for rotate button on the player
 #: ROTATE_BUTTON
-msgid "Rotate"
-msgstr "Gira"
-
-#. Accessibility hint for rotate button on the player
-#: ROTATE_BUTTON_HINT
-msgid "Toggles the video player between landscape and portrait mode."
-msgstr "Canvia el reproductor de vídeo entre els modes horitzontal i vertical."
-
-#: AUDIO_INFO_VC_TITLE
-msgid "Audio Info"
-msgstr "Informació Àudio"
+msgid ""
+"Rotate\"; /* Accessibility label for rotate button on the player */"
+"\"ROTATE_BUTTON_HINT\" = \"Toggles the video player between landscape and "
+"portrait mode.\"; /* Accessibility hint for rotate button on the player */"
+"\"AUDIO_INFO_VC_TITLE\" = \"Audio Info"
+msgstr ""
+"Gira\"; /* Accessibility label for rotate button on the player */"
+"\"ROTATE_BUTTON_HINT\" = \"Canvia el reproductor de vídeo entre els modes "
+"horitzontal i vertical.\"; /* Accessibility hint for rotate button on the "
+"player */\"AUDIO_INFO_VC_TITLE\" = \"Informació Àudio"
 
 #: ENTER_URL
 msgid "Enter URL to play"
@@ -1163,14 +1151,13 @@ msgstr "No es pot obrir l'URL"
 
 #.
 #. Insert %@ where play-pause-glyph should be placed
-#. Insert %@ where play-pause-glyph should be placed
 #: DELETE_ITEM_HINT
-msgid "Press %@ to Delete"
-msgstr "Prem %@ per Esborrar"
-
-#: DELETE_MESSAGE
-msgid "Confirm the deletion of the selection"
-msgstr "Confirmeu l'eliminació d'aquesta selecció"
+msgid ""
+"Press %@ to Delete\"; /* Insert %@ where play-pause-glyph should be placed */"
+"\"DELETE_MESSAGE\" = \"Confirm the deletion of the selection"
+msgstr ""
+"Prem %@ per Esborrar\"; /* Insert %@ where play-pause-glyph should be placed "
+"*/\"DELETE_MESSAGE\" = \"Confirmeu l'eliminació d'aquesta selecció"
 
 #: DELETE_MESSAGE_PLAYLIST
 msgid ""
@@ -1195,9 +1182,7 @@ msgstr "Protocol no seleccionat"
 
 #: Settings
 msgid "Settings"
-msgstr ""
-"Paràmetres\"; // plain text key to keep compatibility with "
-"InAppSettingsKit's upstream\"ON\" = \"On"
+msgstr "Paràmetres"
 
 #: SORT
 msgctxt "SORT"
@@ -2213,8 +2198,8 @@ msgstr ""
 "estaran disponibles ja que tota la vostra informació personal es guarda "
 "només en aquest dispositiu.\n"
 "\n"
-"Si teniu alguna pregunta, poseu-vos en contacte amb nosaltres a "
-"donation@videolan.org i mencioneu aquest ID d'usuari anònim: %@"
+"Si teniu alguna pregunta, poseu-vos en contacte amb nosaltres a donation@"
+"videolan.org i mencioneu aquest ID d'usuari anònim: %@"
 
 #: DONATION_CANCEL_MONTHLY
 msgid "Cancel Regular Donation"
@@ -2321,11 +2306,17 @@ msgstr "Busca el %i%% de la durada"
 msgid "Jump to the next frame"
 msgstr "Salta al següent fotograma"
 
-#.
-#. MARK: - TitleSelection
-#: TITLESELECTION_BACKGROUND_LABEL
-msgid "Title selection background"
-msgstr "Fons de selecció de títols"
+#: SETTINGS_INVALID_SPEED_VALUE
+msgid ""
+"Please enter a valid number between 0.25 and 8.0\"; /* Please enter a valid "
+"number between 0.25 and 8.0 */// MARK: - "
+"TitleSelection\"TITLESELECTION_BACKGROUND_LABEL\" = \"Title selection "
+"background"
+msgstr ""
+"Please enter a valid number between 0.25 and 8.0\"; /* Please enter a valid "
+"number between 0.25 and 8.0 */// MARK: - "
+"TitleSelection\"TITLESELECTION_BACKGROUND_LABEL\" = \"Fons de selecció de "
+"títols"
 
 #: TITLESELECTION_BACKGROUND_HINT
 msgid "Tap to remove the view."
