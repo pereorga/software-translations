@@ -255,10 +255,6 @@ msgctxt "icu:viewMenuToggleDevTools"
 msgid "Toggle Developer Tools"
 msgstr "Activa o desactiva les eines de desenvolupament"
 
-msgctxt "icu:viewMenuOpenCallingDevTools"
-msgid "Open Calling Developer Tools"
-msgstr "Obrir Eines de desenvolupament de trucada"
-
 msgctxt "icu:menuSetupAsNewDevice"
 msgid "Set Up as New Device"
 msgstr "Configura'l com a dispositiu nou"
@@ -846,6 +842,14 @@ msgstr "No, gràcies."
 msgctxt "icu:KeyTransparencyErrorDialog__Submitting"
 msgid "Submitting..."
 msgstr "Enviant…"
+
+msgctxt "icu:KeyTransparencyOnboardingDialog__Title"
+msgid "Signal can now auto-verify encryption"
+msgstr "Ara, Signal pot verificar automàticament la codificació"
+
+msgctxt "icu:KeyTransparencyOnboardingDialog__Description"
+msgid "For contacts you’re connected to by phone number, Signal can automatically confirm whether the connection is secure using a process called key transparency. For added security, you can still verify connections manually using a QR code or by comparing safety numbers."
+msgstr "Pels contactes amb qui hagis connectat a través d'un número de telèfon, Signal pot confirmar automàticament si la connexió és segura mitjançant un procés anomenat transparència de claus. Per a més seguretat, pots continuar verificant manualment les teves connexions mitjançant un codi QR o comparant els números de seguretat."
 
 msgctxt "icu:KeyTransparencyOnboardingDialog__Continue"
 msgid "Continue"
@@ -6147,9 +6151,29 @@ msgctxt "icu:ConversationDetails--member-label--hello"
 msgid "Hello!"
 msgstr "Hola!"
 
+msgctxt "icu:ConversationDetails--member-label--list-header"
+msgid "Group members with labels"
+msgstr "Membres del grup amb categories"
+
+msgctxt "icu:ConversationDetails--member-label--no-members"
+msgid "No other members have labels"
+msgstr "Cap altre membre té categoria"
+
 msgctxt "icu:ConversationDetails--member-label--saving"
 msgid "Saving changes..."
 msgstr "Guardant canvis…"
+
+msgctxt "icu:ConversationDetails--member-label--error-title"
+msgid "Can’t save member label"
+msgstr "No es pot guardar la categoria de membre"
+
+msgctxt "icu:ConversationDetails--member-label--error-generic"
+msgid "Check your connection and try again."
+msgstr "Comprova la connexió i torna-ho a provar."
+
+msgctxt "icu:ConversationDetails--member-label--error-permissions"
+msgid "Only admins can set member labels in this group."
+msgstr "Només els admins poden definir categories de membres en aquest grup."
 
 msgctxt "icu:ConversationDetails--disappearing-messages-label"
 msgid "Disappearing messages"
@@ -6214,6 +6238,18 @@ msgstr "Qui pot enviar missatges"
 msgctxt "icu:ConversationDetails--announcement-info"
 msgid "Choose who can send messages to the group."
 msgstr "Qui pot enviar missatges al grup"
+
+msgctxt "icu:ConversationDetails--label-clear-warning--title"
+msgid "Member labels will be cleared"
+msgstr "S'eliminaran les categories de membres"
+
+msgctxt "icu:ConversationDetails--label-clear-warning--description"
+msgid "Changing this permission to “Only admins” will clear member labels set by non-admins in this group."
+msgstr "Si canvies aquest permís a \"Només admins\", s'eliminaran les categories de membres establertes pels no administradors d'aquest grup."
+
+msgctxt "icu:ConversationDetails--label-clear-warning--continue"
+msgid "Continue"
+msgstr "Continua"
 
 msgctxt "icu:ConversationDetails--requests-and-invites"
 msgid "Requests & Invites"
@@ -9763,6 +9799,26 @@ msgctxt "icu:PreferencesDonations__privacy-modal-content"
 msgid "<paragraph>Signal does not collect or store any of your personal information when you make a donation.</paragraph><paragraph>We use Stripe as our payment processor to receive your donations. We don't access, store, or save any of the information you provide to them.</paragraph><paragraph>Signal does not and cannot connect your donation to your Signal account.</paragraph><paragraph>Thank you for your support!</paragraph>"
 msgstr "<paragraph>Signal no recopila ni emmagatzema la teva informació personal quan fas una donació.</paragraph><paragraph>Utilitzem Stripe com a processador de pagaments per rebre les teves donacions. No accedim, emmagatzemem ni desem la informació que els proporciones.</paragraph><paragraph>Signal no connecta i no pot connectar la teva donació al teu compte de Signal.</paragraph><paragraph>Gràcies per comptar amb nosaltres!</paragraph>"
 
+msgctxt "icu:PreferencesDonations__privacy-modal-intro"
+msgid "As an independent nonprofit, Signal is committed to private messaging and calls. No ads, no trackers, no surveillance. Donate today to support Signal."
+msgstr "Com a organització independent sense ànim de lucre, Signal té un compromís amb la privacitat en missatges i trucades. Sense anuncis, ni rastrejadors, ni vigilància. Fes avui una donació per ajudar a Signal."
+
+msgctxt "icu:PreferencesDonations__privacy-modal-list-1"
+msgid "Get an optional badge on your profile when you donate"
+msgstr "Aconsegueix una insígnia opcional al teu perfil quan facis una donació"
+
+msgctxt "icu:PreferencesDonations__privacy-modal-list-2"
+msgid "Your privacy is our mission"
+msgstr "La teva privacitat és la nostra missió"
+
+msgctxt "icu:PreferencesDonations__privacy-modal-list-3"
+msgid "Signal is a 501c3 nonprofit. US donations are tax deductible."
+msgstr "Signal és una organització sense ànim de lucre."
+
+msgctxt "icu:PreferencesDonations__privacy-modal-icon-accessibility-label"
+msgid "Heart icon in the style of the Signal logo"
+msgstr "Icona de cor a l'estil del logo de Signal"
+
 msgctxt "icu:PreferencesDonations__privacy-modal-ok"
 msgid "OK"
 msgstr "D'acord"
@@ -9882,6 +9938,18 @@ msgstr "Sortir d'aquesta pàgina eliminarà la informació de la teva targeta de
 msgctxt "icu:DonateFlow__discard-dialog-remove-info"
 msgid "Remove info"
 msgstr "Eliminar informació"
+
+msgctxt "icu:DonateFlow__discard-paypal-dialog-body"
+msgid "Leaving will cancel your donation."
+msgstr "Si surts, es cancel·larà la teva donació."
+
+msgctxt "icu:DonateFlow__discard-paypal-dialog-discard"
+msgid "Leave"
+msgstr "Surt"
+
+msgctxt "icu:DonateFlow__discard-paypal-dialog-cancel"
+msgid "Stay on page"
+msgstr "Quedar-me a la pàgina"
 
 msgctxt "icu:DonateFlow__continue"
 msgid "Continue"
@@ -10279,10 +10347,6 @@ msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
 
-msgctxt "icu:WhatsNew__7.89--0"
-msgid "This update fixes a bug with text formatting while Caps Lock was enabled so it will be easier to make things bold (or italic) WHILE BEING BOLD. Thanks, <DGrothePhD></DGrothePhD>!"
-msgstr "Aquesta actualització corregeix un error en el format de text mentre les majúscules estaven activades. Gràcies, <DGrothePhD></DGrothePhD>!"
-
-msgctxt "icu:WhatsNew__7.89--1"
-msgid "Signal is a 501c3 nonprofit that wouldn't be possible without your support, and now you can donate via PayPal in Signal Desktop."
-msgstr "Signal és una organització sense ànim de lucre que no podria sostenir-se sense la teva ajuda. Ara, a Signal Desktop, pots fer donacions a través de PayPal."
+msgctxt "icu:WhatsNew__7.90--0"
+msgid "Make privacy stick with five new official sticker packs in the Signal Artist Series: \"Chug the Mouse\" by Amanda Cotan, \"Cozy Season\" by Miguel Ángel Camprubí, \"Croco's Feelings\" by Tiffany Beucher, \"My Daily Life 2\" by Plastic Thing, and \"Rocky Talk\" by Lexi Vay."
+msgstr "Cinc nous paquets d'adhesius d'artistes oficials."
