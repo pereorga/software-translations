@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-17 23:41-0700\n"
+"POT-Creation-Date: 2026-02-23 09:52-0700\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -55,6 +55,7 @@ msgstr "Reproductor multimèdia"
 msgid "Cache"
 msgstr "Memòria cau"
 
+#. TRANSLATORS: The description of what certain cleaning options do.
 msgid "Delete the cache"
 msgstr "Suprimeix la memòria cau"
 
@@ -176,6 +177,7 @@ msgstr ""
 "Suprimeix la base de dades, que conté informació com el recompte de "
 "reproduccions i l'última reproducció"
 
+#. TRANSLATORS: The description of a cleaner.
 msgid "Office suite"
 msgstr "Paquet ofimàtic"
 
@@ -846,26 +848,19 @@ msgstr "search=\"walk.all\" usat amb un fitxer regular path=\"%s\""
 msgid "path=\"%s\" is not a glob pattern"
 msgstr "path=\"%s\" no és un patró global"
 
-#. TRANSLATORS: Parts of this file will be deleted
-msgid "Clean file"
-msgstr "Neteja el fitxer"
-
+#. TRANSLATORS: This is the name of a cleaning action. 'Clean' is a verb.
+#. It shows in the log of actions performed.
 #, fuzzy
 #| msgid "Cookies"
 msgid "Clean cookies"
 msgstr "Galetes"
 
-#. TRANSLATORS: this is the context menu
-#. TRANSLATORS: This is the clean button on the main window.
-#. It makes permanent changes: usually deleting files, sometimes
-#. altering them.
-msgid "Clean"
-msgstr "Neteja"
-
+#. TRANSLATORS: %s is the command line to be executed
 #, python-format
 msgid "Run external command: %s"
 msgstr "Executa l'ordre externa: %s"
 
+#. TRANSLATORS: This is the name of an action. 'Refresh' is a verb.
 msgid "Refresh Windows shell"
 msgstr ""
 
@@ -877,10 +872,14 @@ msgstr ""
 "Error a handle_cleaner_option() per al netejador amb id = {cleaner_id}, "
 "opció XML={option_xml}"
 
+#. TRANSLATORS: Warning printed to the log.
+#. %s expands to the path of the XML cleaner file that was skipped
 #, python-format
 msgid "Ignoring cleaner because it is world writable: %s"
 msgstr "S'ignora el netejador perquè per tothom hi té accés d'escriptura: %s"
 
+#. TRANSLATORS: Error message printed to the log.
+#. %s expands to the path of the XML cleaner file
 #, python-format
 msgid "Error reading cleaner: %s"
 msgstr "Error en llegir el netejador: %s"
@@ -932,7 +931,7 @@ msgstr "Neteja la memòria lliure i l'espai d'intercanvi"
 msgid "This option is experimental and may cause system problems."
 msgstr "Aquesta opció és experimental i pot causar problemes al sistema."
 
-#. TRANSLATORS: Prefetch is Microsoft Windows jargon.
+#. TRANSLATORS: Name of cleaning option. 'Prefetch' is Microsoft Windows jargon.
 msgid "Prefetch"
 msgstr "Prefetch"
 
@@ -942,11 +941,12 @@ msgstr "Paperera"
 msgid "Empty the recycle bin"
 msgstr "Buida la paperera"
 
-#. TRANSLATORS: 'Update' is a noun, and 'Update uninstallers' is an option to delete
-#. the uninstallers for software updates.
+#. TRANSLATORS: Name for cleaning option. 'Update' is an adjective to
+#. describe the kind of uninstallers.
 msgid "Update uninstallers"
 msgstr "Desinstal·ladors d'actualitzacions"
 
+#. TRANSLATORS: Description of cleaning option.
 msgid ""
 "Delete uninstallers for Microsoft updates including hotfixes, service packs, "
 "and Internet Explorer updates"
@@ -955,6 +955,7 @@ msgstr ""
 "hi les correccions, els paquets de servei i les actualitzacions de "
 "l'Internet Explorer"
 
+#. TRANSLATORS: Warning shown when selecting an option.
 msgid "This option may prevent uninstalling some updates."
 msgstr ""
 
@@ -1001,6 +1002,7 @@ msgstr "Sistema"
 
 #. TRANSLATORS: 'Empty' means 'unallocated.'
 #. %s expands to a path such as C:\ or /tmp/
+#. TRANSLATORS: Shows activity in the CLI, and %s is the path to the directory.
 #, python-format
 msgid "Wipe empty space in %s"
 msgstr ""
@@ -1016,10 +1018,12 @@ msgstr "S'estan important netejadors des de Winapp2.ini."
 msgid "Wipe empty space %s"
 msgstr "_Neteja l'espai lliure"
 
+#. TRANSLATORS: Error shown on CLI, and %s is the name of a cleaning action
 #, python-format
 msgid "not a valid cleaner: %s"
 msgstr "no és un netejador vàlid: %s"
 
+#. TRANSLATORS: Error shown on CLI, and %s is the name of a cleaning action
 #, python-format
 msgid "Wildcard characters are not allowed in --except: %s"
 msgstr ""
@@ -1034,60 +1038,84 @@ msgstr ""
 msgid "usage: %prog [options] cleaner.option1 [cleaner.option2 ...]"
 msgstr "%prog [opcions] netejador.opció1 netejador.opció2"
 
+#. TRANSLATORS: Help for the --list-cleaners command on the CLI,
+#. and 'list' is a verb
 msgid "list cleaners"
 msgstr "enumera els netejadors"
 
+#. TRANSLATORS: Help for the --preview command on the CLI,
+#. and 'preview' is a verb
 msgid "preview files to be deleted and other changes"
 msgstr "previsualitza els fitxers que s'han de suprmir i els altres canvis"
 
-#. TRANSLATORS: predefined cleaners are for applications, such as Firefox and Flash.
-#. This is different than cleaning an arbitrary file, such as a
-#. spreadsheet on the desktop.
+#. TRANSLATORS: Help for the --clean command on the CLI
 msgid "run cleaners to delete files and make other permanent changes"
 msgstr ""
 "executa els netejadors per suprimir fitxers i fer altres canvis permanents"
 
+#. TRANSLATORS: Help for the --shred command on the CLI,
+#. and 'shred' is a verb
 msgid "shred specific files or folders"
 msgstr "tritura fitxers o carpetes específiques"
 
+#. TRANSLATORS: Help for the --wipe-empty-space
+#. command on the CLI, and 'wipe' is a verb
 #, fuzzy
 #| msgid "wipe free space in the given paths"
 msgid "wipe empty space in the given paths"
 msgstr "neteja l'espai lliure als camins donats"
 
+#. TRANSLATORS: Help for the --overwrite option on the CLI,
+#. and 'overwrite' is a verb
 msgid "overwrite files to hide contents"
 msgstr "sobreescriu els fitxers per amagar-ne el contingut"
 
+#. TRANSLATORS: Help for the --gui option on the CLI,
+#. and 'launch' is a verb
 msgid "launch the graphical interface"
 msgstr "llança la interfície gràfica"
 
+#. TRANSLATORS: Help for the --preset option on the CLI,
+#. and 'use' is a verb, referring to enabling options set earlier.
 msgid "use options set in the graphical interface"
 msgstr "usa les opcions configurades a la interfície gràfica"
 
+#. TRANSLATORS: Help for the --all-but-warning option on the CLI,
+#. and 'enable' is a verb.
 msgid "enable all options that do not have a warning"
 msgstr "activa totes les opcions que no tinguin una advertència"
 
+#. TRANSLATORS: Help for the --except option on the CLI,
+#. and 'exclude' is a verb.
 msgid "exclude cleaner options (can be repeated, comma-separated)"
 msgstr ""
 
+#. TRANSLATORS: Help for the --debug option on the CLI,
+#. and 'set' is a verb.
 msgid "set log level to verbose"
 msgstr "configura el nivell del registre a detallat"
 
+#. TRANSLATORS: Help for --debug-log option on the CLI.
 msgid "log debug messages to file"
 msgstr "enregistra els missatges de depuració al fitxer"
 
+#. TRANSLATORS: Help for --sysinfo option on the CLI.
 msgid "show system information"
 msgstr "mostra informació del sistema"
 
+#. TRANSLATORS: Help for --version option on the CLI.
 msgid "output version information and exit"
 msgstr "mostra la informació de la versió i surt"
 
+#. TRANSLATORS: Help for --no-uac option on the CLI.
 msgid "do not prompt for administrator privileges"
 msgstr "no demanis privilegis d'administrador"
 
+#. TRANSLATORS: Help for --update-winapp2 command on the CLI.
 msgid "update winapp2.ini, if a new version is available"
 msgstr "actualitza winapp2.ini si hi ha una versió nova disponible"
 
+#. TRANSLATORS: Error message shown on CLI.
 #, fuzzy
 #| msgid ""
 #| "Specify only one of these commands: --list-cleaners, --wipe-free-space, --"
@@ -1099,37 +1127,49 @@ msgstr ""
 "Especifiqueu només una d'aquestes ordres: --list-cleaners, --wipe-free-"
 "space, --preview, --clean"
 
+#. TRANSLATORS: Log message on the CLI.
 msgid "Checking online for updates to winapp2.ini"
 msgstr "S'estan comprovant les actualitzacions en línia per a winapp2.ini"
 
+#. TRANSLATORS: Error message on the CLI.
 #, fuzzy
 #| msgid "No directories given for --wipe-free-space"
 msgid "No directories given for --wipe-empty-space"
 msgstr "No s'han indicat carpetes per a --wipe-free-space"
 
+#. TRANSLATORS: Log message on the CLI.
 #, fuzzy
 #| msgid "Wiping free space can take a long time."
 msgid "Wiping empty space can take a long time."
 msgstr "La neteja de l'espai lliure pot tardar molt."
 
+#. TRANSLATORS: Error message on the CLI.
 #, fuzzy
 #| msgid "No work to do. Specify options."
 msgid "No operations selected. Specify cleaner options."
 msgstr "No cal fer res. Especifiqueu les opcions."
 
+#. TRANSLATORS: '--overwrite' and '--clean' are command line options
 msgid "--overwrite is intended only for use with --clean"
 msgstr "Se suposa que --overwrite només s'utilitza amb --clean"
 
-#. TRANSLATORS: This is the label in the log indicating was
-#. skipped because it matches the whitelist
+#. TRANSLATORS: This is the name of a cleaning action. 'Clean' is a verb.
+#. It shows in the log of actions that would be performed (preview mode) or
+#. in the log of actions that were performed (clean mode).
+msgid "Clean file"
+msgstr "Neteja el fitxer"
+
+#. TRANSLATORS: This is the label in the log indicating a path
+#. was skipped because it matches the whitelist
 msgid "Skip"
 msgstr "Omet"
 
-#. TRANSLATORS: This is the label in the log indicating will be
-#. deleted (for previews) or was actually deleted
+#. TRANSLATORS: Label in the log indicating a path will be deleted
+#. (for previews) or was actually deleted (clean mode).
 msgid "Delete"
 msgstr "Suprimeix"
 
+#. TRANSLATORS: Warning message shown in the progress log.
 msgid ""
 "At least one file was locked by another process, so its contents could not "
 "be overwritten. It will be marked for deletion upon system reboot."
@@ -1137,8 +1177,8 @@ msgstr ""
 "Hi ha almenys un fitxer que està bloquejat per un altre procés i, per tant, "
 "no es pot sobreescriure. Es marcarà per suprimir en reiniciar el sistema."
 
-#. TRANSLATORS: The file will be deleted when the
-#. system reboots
+#. TRANSLATORS: Label in the log when the file will be deleted
+#. when the system reboots. 'Mark' is a verb.
 msgid "Mark for deletion"
 msgstr "Marca per suprimir"
 
@@ -1146,51 +1186,68 @@ msgstr "Marca per suprimir"
 msgid "Truncate"
 msgstr "Trunca"
 
+#. TRANSLATORS: A label of a command to delete a Windows registry key
 msgid "Delete registry key"
 msgstr "Suprimeix la clau del registre"
 
+#. TRANSLATORS: Log message where %s is the pathname.
 #, python-format
 msgid "Directory is not empty: %s"
 msgstr "La carpeta no és buida: %s"
 
+#. TRANSLATORS: Log message where %s is the pathname.
 #, python-format
 msgid "Skipping mount point: %s"
 msgstr "S'omet el punt de muntatge: %s"
 
+#. TRANSLATORS: Log message where %s is the pathname.
 #, python-format
 msgid "Device or resource is busy: %s"
 msgstr "El dispositiu o recurs està ocupat: %s"
 
+#. TRANSLATORS: Log message where %s is the pathname.
 #, python-format
 msgid "Special file type cannot be deleted: %s"
 msgstr "No es pot suprimir el tipus de fitxer especial: %s"
 
+#. TRANSLATORS: This is a warning log message. %s is the directory path.
 #, python-format
 msgid ""
 "The environment variable TMP refers to a directory that does not exist: %s"
 msgstr "La variable d'entorn TMP es refereix a una carpeta que no existeix: %s"
 
+#. TRANSLATORS: Title of a file chooser dialog.
 msgid "Choose files to shred"
 msgstr "Trieu els fitxers per triturar"
 
+#. TRANSLATORS: Title of a folder chooser dialog.
 msgid "Choose folder to shred"
 msgstr "Trieu la carpeta per triturar"
 
+#. TRANSLATORS: Button label in a folder chooser dialog.
+#. TRANSLATORS: Label for the Delete button in the file choose dialog
+#. and delete confirmation dialog.
 msgid "_Delete"
 msgstr "_Suprimeix"
 
+#. TRANSLATORS: Warning log message when attempting to paste files/folders to shred.
 msgid "No paths found in clipboard."
 msgstr "No s'han trobat camins al porta-retalls."
 
+#. TRANSLATORS: Title of a folder chooser dialog.
 msgid "Choose a folder"
 msgstr "Trieu una carpeta"
 
+#. TRANSLATORS: Button label in a folder chooser dialog.
+#. Underscore is for accelerator key.
 msgid "_OK"
 msgstr "_D'acord"
 
+#. TRANSLATORS: Title of the 'About' dialog.
 msgid "Program to clean unnecessary files"
 msgstr "Programa per netejar fitxers innecessaris"
 
+#. TRANSLATORS: License text shown in the 'About' dialog.
 msgid ""
 "GNU General Public License version 3 or later.\n"
 "See https://www.gnu.org/licenses/gpl-3.0.txt"
@@ -1216,18 +1273,28 @@ msgstr ""
 "  VPablo https://launchpad.net/~villumar\n"
 "  oriolsbd https://launchpad.net/~oriolsbd"
 
+#. TRANSLATORS: Title of the system information dialog.
 msgid "System information"
 msgstr "Informació del sistema"
 
+#. TRANSLATORS: Label for the Cancel button in several dialog windows:
+#. file chooser, folder choose, delete confirmation, and warning dialogs.
+#. The underscore indicates the accelerator key.
+#. TRANSLATORS: Button label in the manage cookies dialog.
+#. The underscore indicates the accelerator key.
 msgid "_Cancel"
 msgstr "_Cancel·la"
 
+#. TRANSLATORS: This is a label for the Open button in a file chooser dialog.
 msgid "_Open"
 msgstr "_Obre"
 
+#. TRANSLATORS: Title of the delete confirmation dialog.
 msgid "Delete confirmation"
 msgstr "Confirmació de la supressió"
 
+#. TRANSLATORS: This message appears in a dialog window when the user
+#. chooses to shred settings and quit.
 msgid ""
 "This function deletes all BleachBit settings and then quits the application. "
 "Use this to hide your use of BleachBit or to reset its settings. The next "
@@ -1238,6 +1305,8 @@ msgstr ""
 "restablir la configuració. La pròxima vegada que s'iniciï BleachBit, "
 "s’inicialitzarà la configuració amb els valors per defecte."
 
+#. TRANSLATORS: This message appears in a dialog window when the user
+#. asks the user to confirm deleting files when a preview was run.
 msgid ""
 "Are you sure you want to permanently delete files according to the selected "
 "operations?  The actual files that will be deleted may have changed since "
@@ -1247,23 +1316,35 @@ msgstr ""
 "seleccionades? Els fitxers que s'eliminaran poden haver canviat des que es "
 "va executar la previsualització."
 
+#. TRANSLATORS: This message appears in a dialog window when the user
+#. asks the user to confirm deleting files when no preview was run.
 msgid "Are you sure you want to permanently delete these files?"
 msgstr "Segur que voleu suprimir permanentment aquests fitxers?"
 
+#. TRANSLATORS: Check button shown in the confirm delete dialog.
+#. If unchecked, then it will not confirm next time.
 msgid "Confirm before delete"
 msgstr "Confirma abans de suprimir"
 
+#. TRANSLATORS: Title of a warning dialog. %(option)s is the name
+#. of the option being enabled (e.g. "shred files").
 #, python-format
 msgid "Enable %(option)s"
 msgstr ""
 
+#. TRANSLATORS: Check button label. %(option)s is the name of
+#. the option being enabled (e.g. "shred files").
 #, python-format
 msgid "Remember my choice for %(option)s"
 msgstr ""
 
+#. TRANSLATORS: Button label in a warning dialog to confirm enabling an option.
+#. The underscore is the accelerator key.
 msgid "_Enable anyway"
 msgstr ""
 
+#. TRANSLATORS: This is an error message shown to root users.
+#. %s expands to a web URL.
 #, python-format
 msgid ""
 "Because you are running as root, please manually open this link in a web "
@@ -1274,11 +1355,13 @@ msgstr ""
 "manualment en un navegador web:\n"
 "%s"
 
-#. TRANSLATORS: %s expands to www.bleachbit.org or similar
+#. TRANSLATORS: The question appears in a confirmation dialog.
+#. %s expands to www.bleachbit.org or similar
 #, python-format
 msgid "Open web browser to %s?"
 msgstr "Voleu obrir %s al navegador web?"
 
+#. TRANSLATORS: Title of a confirmation dialog.
 msgid "Confirm"
 msgstr "Confirma"
 
@@ -1308,6 +1391,8 @@ msgstr "Correus electrònics de Hillary Clinton"
 msgid "Number of files"
 msgstr "Nombre de fitxers"
 
+#. TRANSLATORS: This is an error message shown in an infobar
+#. when the user has not selected a destination folder.
 msgid "Select destination folder"
 msgstr "Seleccioneu la carpeta de destinació"
 
@@ -1320,9 +1405,12 @@ msgstr "Suprimeix sense triturar"
 msgid "Do not delete"
 msgstr "No suprimeixis"
 
+#. TRANSLATORS: Button label in a dialog window to start making
+#. chaff files.
 msgid "Make files"
 msgstr "Crea els fitxers"
 
+#. TRANSLATORS: The question shows in a dialog.
 msgid "Download data needed for chaff generator?"
 msgstr ""
 "Voleu descarregar les dades que necessita el generador de fitxers de palla?"
@@ -1330,35 +1418,46 @@ msgstr ""
 msgid "Generating files"
 msgstr "S'estan generant els fitxers"
 
+#. TRANSLATORS: Title of the dialog to manage cookies to keep
 msgid "Manage cookies to keep"
 msgstr ""
 
+#. TRANSLATORS: Instruction label in the manage cookies dialog.
 msgid "Select the cookies to keep when cleaning cookies across browsers."
 msgstr ""
 
+#. TRANSLATORS: Label for the search entry in the manage cookies dialog.
 #, fuzzy
 #| msgid "Search tool"
 msgid "Search:"
 msgstr "Eina de cerca"
 
+#. TRANSLATORS: Placeholder text in the search entry in the manage cookies dialog.
 msgid "Filter cookies..."
 msgstr ""
 
+#. TRANSLATORS: Toggle button label in the manage cookies dialog.
 msgid "Show Selected"
 msgstr ""
 
+#. TRANSLATORS: Tooltip for the "Show Selected" toggle button.
 msgid "Only show cookies that are currently selected"
 msgstr ""
 
+#. TRANSLATORS: Column header in the manage cookies dialog.
 msgid "Host"
 msgstr ""
 
+#. TRANSLATORS: Button label in the manage cookies dialog.
 msgid "Select All"
 msgstr ""
 
+#. TRANSLATORS: Button label in the manage cookies dialog.
+#. The underscore indicates the accelerator key.
 msgid "Deselect All"
 msgstr ""
 
+#. TRANSLATORS: Button label in the manage cookies dialog.
 msgid "Keep Selected"
 msgstr ""
 
@@ -1638,13 +1737,19 @@ msgstr ""
 msgid "This option requires expert mode. Enable it in Preferences."
 msgstr ""
 
-#. TRANSLATORS: this is the context menu
+#. TRANSLATORS: Label in a context menu. 'Preview' is a verb.
 #. TRANSLATORS: This is the preview button on the main window.  It
 #. previews changes.
 msgid "Preview"
 msgstr "Previsualitza"
 
-#. TRANSLATORS: this is the context menu
+#. TRANSLATORS: Label in a context menu. 'Clean' is a verb.
+#. TRANSLATORS: Label for the clean button on header bar of the
+#. the main window. 'Clean' is a verb.
+msgid "Clean"
+msgstr "Neteja"
+
+#. TRANSLATORS: Label in a context menu.
 #, fuzzy
 #| msgid "Cookies"
 msgid "Manage Cookies"
@@ -1662,6 +1767,8 @@ msgstr ""
 msgid "Clean files in the selected operations"
 msgstr "Neteja els fitxers de les operacions seleccionades"
 
+#. TRANSLATORS: Label for the stop button on header bar of the
+#. the main window. 'Abort' is a verb.
 msgid "Abort"
 msgstr "Interromp"
 
