@@ -2279,13 +2279,13 @@ msgctxt "MENU_ENUM_SUBLABEL_VIDEO_CROP_OVERSCAN"
 msgid "Cut off a few pixels around the edges of the image customarily left blank by developers which sometimes also contain garbage pixels."
 msgstr "Retalla uns quants píxels sobre les vores de la imatge deixats en blanc normalment pels desenvolupadors i que de vegades també contenen píxels brossa."
 
-msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_ENABLE"
-msgid "Enable HDR"
-msgstr "Activa l'HDR"
-
 msgctxt "MENU_ENUM_SUBLABEL_VIDEO_HDR_ENABLE"
-msgid "Enable HDR if the display supports it."
-msgstr "Activa l'HDR si la pantalla ho suporta."
+msgid "Set HDR output mode if the display supports it. Note: scRGB may soften strict CRT shader masks because the OS compositor converts to HDR10 after the mask is applied."
+msgstr "Estableix el mode de sortida HDR si el teu monitor en té l'opció. Nota: el mode sRGB pot aclarir les màscares de shaders CRT perquè en compondre les imatges per part del sistema operatiu, es converteix la imatge a HDR10 després d'aplicar la màscara."
+
+msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_MODE_OFF"
+msgid "Off"
+msgstr "Apagat"
 
 msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_MAX_NITS"
 msgid "Peak Luminance"
@@ -2312,16 +2312,20 @@ msgid "Uses your display's full colour range to create a brighter, more saturate
 msgstr "Utilitza el rang complet de color del monitor per crear-ne un de més brillant i saturat. Per colors més fidels al joc original, selecciona PRECÍS."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_EXPAND_GAMUT_ACCURATE"
-msgid "ACCURATE"
-msgstr "PRECÍS"
+msgid "Accurate"
+msgstr "Precís"
 
 msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_EXPAND_GAMUT_EXPANDED"
-msgid "EXPANDED"
-msgstr "AMPLIAT"
+msgid "Expanded"
+msgstr "Ampliat"
 
 msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_EXPAND_GAMUT_WIDE"
-msgid "WIDE"
-msgstr "PANORÀMICA"
+msgid "Wide"
+msgstr "Ample"
+
+msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_EXPAND_GAMUT_SUPER"
+msgid "Super"
+msgstr "Súper"
 
 msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_HDR_SCANLINES"
 msgid "Scanlines"
@@ -3884,7 +3888,7 @@ msgid "The physical controller as recognized by RetroArch."
 msgstr "El controlador físic tal qual el reconeix RetroArch."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_INPUT_DEVICE_RESERVED_DEVICE_NAME"
-msgid "Reserved Device for This Player"
+msgid "Device Reserved for This Player"
 msgstr "Dispositiu reservat per aquest jugador"
 
 msgctxt "MENU_ENUM_SUBLABEL_INPUT_DEVICE_RESERVED_DEVICE_NAME"
