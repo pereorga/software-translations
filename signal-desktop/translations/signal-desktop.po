@@ -3175,6 +3175,10 @@ msgctxt "icu:Toast--download-failed"
 msgid "Download failed"
 msgstr "Descàrrega fallida"
 
+msgctxt "icu:ToastManager__CannotAddMemberLabel"
+msgid "Only admins can add member labels in this group."
+msgstr "Només els admins poden definir categories de membres en aquest grup."
+
 msgctxt "icu:ToastManager__CannotEditMessage_24"
 msgid "Edits can only be applied within 24 hours from the time you sent this message."
 msgstr "Els canvis només es poden realitzar fins 24 hores després d'enviar el missatge."
@@ -6071,6 +6075,10 @@ msgctxt "icu:ContactModal--rm-admin"
 msgid "Remove as admin"
 msgstr "Esborra com a administrador"
 
+msgctxt "icu:ContactModal--rm-admin--clear-label"
+msgid "This will also clear their member label."
+msgstr "Això també eliminarà la seva categoria de membre."
+
 msgctxt "icu:ContactModal--make-admin"
 msgid "Make admin"
 msgstr "Fes adminstrador"
@@ -6323,6 +6331,10 @@ msgctxt "icu:ConversationDetailsMembershipList--add-members"
 msgid "Add members"
 msgstr "Afegeix-hi membres"
 
+msgctxt "icu:ConversationDetailsMembershipList--add-member-label"
+msgid "Add member label"
+msgstr "Afegir categoria de membre"
+
 msgctxt "icu:ConversationDetailsMembershipList--show-all"
 msgid "See all"
 msgstr "Mostra-ho tot"
@@ -6554,6 +6566,26 @@ msgstr "Suprimeix"
 msgctxt "icu:DeleteMessagesModal__toast--TooManyMessagesToDeleteForEveryone"
 msgid "You can only select up to {count, plural, one {# message} other {# messages}} to delete for everyone"
 msgstr "{count, plural, one {Només pots seleccionar {count,number} missatge per eliminar per a tothom} other {Només pots seleccionar {count,number} missatges per eliminar per a tothom}}"
+
+msgctxt "icu:DeleteAttachmentModal__Title"
+msgid "Delete item?"
+msgstr "Eliminar element?"
+
+msgctxt "icu:DeleteAttachmentModal__Body"
+msgid "This will permanently delete the item. Any message text associated with this item will also be deleted."
+msgstr "Aquesta acció esborrarà permanentment aquest element. Qualsevol missatge de text que hi estigui associat també s'esborrarà."
+
+msgctxt "icu:DeleteAttachmentModal__Close"
+msgid "Close"
+msgstr "Tanca"
+
+msgctxt "icu:DeleteAttachmentModal__Delete"
+msgid "Delete"
+msgstr "Suprimeix"
+
+msgctxt "icu:DeleteAttachmentModal__Cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
 
 msgctxt "icu:SelectModeActions__toast--TooManyMessagesToForward"
 msgid "You can only forward up to 30 messages"
@@ -7039,6 +7071,30 @@ msgctxt "icu:MediaGallery__EmptyState__description--documents-2"
 msgid "Files that you send and receive will appear here"
 msgstr "Els arxius que enviïs i rebis apareixeran aquí"
 
+msgctxt "icu:MediaGallery__ContextMenu__ViewInChat"
+msgid "View in chat"
+msgstr "Veure al xat"
+
+msgctxt "icu:MediaGallery__ContextMenu__Forward"
+msgid "Forward"
+msgstr "Reenvia"
+
+msgctxt "icu:MediaGallery__ContextMenu__Save"
+msgid "Save"
+msgstr "Desa"
+
+msgctxt "icu:MediaGallery__ContextMenu__Send"
+msgid "Send message"
+msgstr "Envia el missatge"
+
+msgctxt "icu:MediaGallery__ContextMenu__Copy"
+msgid "Copy link"
+msgstr "Copiar l'enllaç"
+
+msgctxt "icu:MediaGallery__ContextMenu__Delete"
+msgid "Delete"
+msgstr "Suprimeix"
+
 msgctxt "icu:MediaQualitySelector--button"
 msgid "Select media quality"
 msgstr "Seleccioneu la qualitat dels mitjans"
@@ -7323,6 +7379,10 @@ msgctxt "icu:AnnouncementsOnlyGroupBanner--admins"
 msgid "admins"
 msgstr "administradors"
 
+msgctxt "icu:Avatar__View"
+msgid "View"
+msgstr "Mostra"
+
 msgctxt "icu:AvatarEditor--choose"
 msgid "Select an avatar"
 msgstr "Seleccioneu un avatar"
@@ -7418,18 +7478,6 @@ msgstr "Trieu una carpeta"
 msgctxt "icu:Preferences__button--set-up"
 msgid "Set up"
 msgstr "Configurar"
-
-msgctxt "icu:Preferences__internal__local-backups"
-msgid "Local backups"
-msgstr "Còpies de seguretat locals"
-
-msgctxt "icu:Preferences__internal__export-local-backup"
-msgid "Export…"
-msgstr "Exportar…"
-
-msgctxt "icu:Preferences__internal__export-local-backup--description"
-msgid "Export local encrypted backup to a folder and validate it"
-msgstr "Exportar còpia de seguretat local xifrada a una carpeta i validar-la"
 
 msgctxt "icu:Preferences__internal__validate-backup--description"
 msgid "Export encrypted backup to memory and run validation suite on it"
@@ -10267,10 +10315,6 @@ msgctxt "icu:CallQualitySurvey__ConfirmSubmission__PageTitle"
 msgid "Help us improve"
 msgstr "Ajuda'ns a millorar"
 
-msgctxt "icu:CallQualitySurvey__ConfirmSubmission__PageDescription"
-msgid "This helps us learn more about calls and what is working or not working. You can view your debug log before submitting."
-msgstr "Això ens ajuda a tenir més informació sobre què funciona (o no) durant les trucades. Pots veure el registre de depuració abans d'enviar-lo."
-
 msgctxt "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink"
 msgid "Submitting will share your feedback along with <diagnosticInfoLink>diagnostic information about your call</diagnosticInfoLink>. You can optionally share a debug log to help us improve call quality."
 msgstr "Si ho envies, compartiràs els teus comentaris juntament amb <diagnosticInfoLink>informació de diagnòstic sobre la teva trucada</diagnosticInfoLink>. Opcionalment, pots compartir un registre de depuració per ajudar-nos a millorar la qualitat de les trucades."
@@ -10282,10 +10326,6 @@ msgstr "Compartir registre de depuració"
 msgctxt "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton"
 msgid "View"
 msgstr "Mostra"
-
-msgctxt "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__HelpText"
-msgid "Debug logs contain low level app information and do not reveal any of your message contents."
-msgstr "Els registres de depuració contenen informació de baix nivell sobre l'aplicació i no revelen cap dels continguts dels teus missatges."
 
 msgctxt "icu:CallQualitySurvey__ConfirmSubmission__PrivacyNote"
 msgid "Information shared with us contains low level app information and does not include the contents of your calls."
@@ -10350,3 +10390,7 @@ msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. 
 msgctxt "icu:WhatsNew__7.90--0"
 msgid "Make privacy stick with five new official sticker packs in the Signal Artist Series: \"Chug the Mouse\" by Amanda Cotan, \"Cozy Season\" by Miguel Ángel Camprubí, \"Croco's Feelings\" by Tiffany Beucher, \"My Daily Life 2\" by Plastic Thing, and \"Rocky Talk\" by Lexi Vay."
 msgstr "Cinc nous paquets d'adhesius d'artistes oficials."
+
+msgctxt "icu:WhatsNew__8.0--0"
+msgid "Signal secure backups are here! Now you can choose to enable automatic end-to-end encrypted backups so you'll never lose a message when you get a new phone or reinstall Signal. You can back up all of your messages and the last 45 days of media for free, or you can pay a small monthly fee to get 100 GB of storage to back up every attachment. Tap on backups in your Signal settings to get started. Thanks to everyone who helped test this feature during the beta period!"
+msgstr "Ja són aquí les còpies de seguretat segures de Signal! Ara pots activar còpies de seguretat automàtiques amb xifratge d’extrem a extrem per no perdre cap missatge quan canviïs de telèfon o reinstal·lis l’aplicació. Pots fer còpies de seguretat gratuïtes de tots els teus missatges i dels darrers 45 dies de contingut multimèdia, o bé pagar una petita quota mensual per disposar de 100 GB d’emmagatzematge i desar tots els teus fitxers adjunts. Per començar, ves als ajustos de Signal i toca Còpies de seguretat. Gràcies a tothom que ha ajudat a provar aquesta funció durant el període beta!"
