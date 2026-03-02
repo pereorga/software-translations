@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 08:12+0000\n"
+"POT-Creation-Date: 2026-03-02 08:10+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3249,6 +3249,14 @@ msgctxt "awards->categories->title"
 msgid "Categories"
 msgstr "Categories"
 
+#: awards-%3Ecategories-%3Eended_on
+msgid "Ended on %{date}"
+msgstr ""
+
+#: awards-%3Ecategories-%3Estarted_on
+msgid "Started on %{date}"
+msgstr ""
+
 #: awards-%3Ecategory_empty
 msgid "No nominations for this category."
 msgstr "Categoria deserta."
@@ -3445,6 +3453,10 @@ msgstr "1 guardó"
 #: awards-%3Ewins-%3Eother
 msgid "%{count} Wins"
 msgstr "%{count} guardons"
+
+#: awards-%3Ewins-%3Ezero
+msgid "No wins"
+msgstr ""
 
 #: awards-%3Emost_awarded_films
 msgid "Most Awarded Films"
@@ -7264,6 +7276,18 @@ msgstr ""
 
 #: discover-%3Efilters-%3Elast_ceremony-%3Esearch_latest_ceremony
 msgid "Search by Latest Ceremony"
+msgstr ""
+
+#: discover-%3Efilters-%3Eadult_content
+msgid "Adult Content"
+msgstr ""
+
+#: discover-%3Efilters-%3Eexclude_adult
+msgid "Exclude Adult"
+msgstr ""
+
+#: discover-%3Efilters-%3Einclude_adult
+msgid "Include Adult"
 msgstr ""
 
 #: discover-%3Eno_items
@@ -16577,6 +16601,10 @@ msgstr "Cerqueu llistes de seguiment de pel·lícules..."
 #: search-%3Ewatchlist_tv
 msgid "Search TV show watchlist..."
 msgstr "Cerqueu llistes de seguiment de sèries..."
+
+#: search-%3Efor_media
+msgid "Search for a %{media_type}..."
+msgstr ""
 
 #: search_text_validation_error
 msgid "Please enter a valid text!"
