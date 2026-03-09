@@ -203,6 +203,14 @@ msgctxt "MENU_ENUM_SUBLABEL_QUIT_RETROARCH"
 msgid "Quit RetroArch application. Configuration save on exit is enabled."
 msgstr "Tanca el RetroArch. La configuració es desarà en sortir."
 
+msgctxt "MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE"
+msgid "Quit RetroArch application. Configuration save on exit is disabled."
+msgstr "Tanca el RetroArch. La configuració no es desarà en sortir."
+
+msgctxt "MENU_ENUM_LABEL_HELP_QUIT_RETROARCH"
+msgid "Quit RetroArch. Killing the program in any hard way (SIGKILL, etc.) will terminate RetroArch without saving the configuration in any case. On Unix-likes, SIGINT/SIGTERM allows a clean deinitialization which includes configuration save if enabled."
+msgstr "Tanca el RetroArch. Matar el programa de manera forçada (amb SIGKILL, etc.) finalitzarà el RetroArch sense desar la configuració. En sistemes Unix, SIGINT/SIGTERM permet un tancament net, el que inclou que es desi la configuració si està activat."
+
 msgctxt "MENU_ENUM_LABEL_VALUE_CLOUD_SYNC_SYNC_NOW"
 msgid "Sync Now"
 msgstr "Sincronitza ara"
@@ -226,14 +234,6 @@ msgstr "Resol el conflicte: Manté la versió online"
 msgctxt "MENU_ENUM_SUBLABEL_CLOUD_SYNC_RESOLVE_KEEP_SERVER"
 msgid "Resolve all conflicts by downloading server files, replacing local copies."
 msgstr "Resol tots els conflictes descarregant els fitxers del servidor i reemplaça els fitxers locals."
-
-msgctxt "MENU_ENUM_SUBLABEL_QUIT_RETROARCH_NOSAVE"
-msgid "Quit RetroArch application. Configuration save on exit is disabled."
-msgstr "Tanca el RetroArch. La configuració no es desarà en sortir."
-
-msgctxt "MENU_ENUM_LABEL_HELP_QUIT_RETROARCH"
-msgid "Quit RetroArch. Killing the program in any hard way (SIGKILL, etc.) will terminate RetroArch without saving the configuration in any case. On Unix-likes, SIGINT/SIGTERM allows a clean deinitialization which includes configuration save if enabled."
-msgstr "Tanca el RetroArch. Matar el programa de manera forçada (amb SIGKILL, etc.) finalitzarà el RetroArch sense desar la configuració. En sistemes Unix, SIGINT/SIGTERM permet un tancament net, el que inclou que es desi la configuració si està activat."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_DOWNLOAD_CORE"
 msgid "Download a Core"
@@ -3023,6 +3023,34 @@ msgctxt "MENU_ENUM_SUBLABEL_INPUT_SENSOR_ACCELEROMETER_SENSITIVITY"
 msgid "Adjust the sensitivity of the Accelerometer."
 msgstr "Ajusta la sensibilitat de l'acceleròmetre."
 
+msgctxt "MENU_ENUM_LABEL_VALUE_INPUT_SENSOR_ORIENTATION"
+msgid "Sensor Orientation"
+msgstr "Sensor d'orientació"
+
+msgctxt "MENU_ENUM_SUBLABEL_INPUT_SENSOR_ORIENTATION"
+msgid "Rotate accelerometer and gyroscope axes to match device orientation."
+msgstr "Gira els eixos de l'acceleròmetre i el giroscòpi per coincidir amb l'orientació del dispositiu."
+
+msgctxt "MENU_ENUM_LABEL_VALUE_SENSOR_ORIENTATION_AUTO"
+msgid "Auto"
+msgstr "Automàtic"
+
+msgctxt "MENU_ENUM_LABEL_VALUE_SENSOR_ORIENTATION_0"
+msgid "0°"
+msgstr "0º"
+
+msgctxt "MENU_ENUM_LABEL_VALUE_SENSOR_ORIENTATION_90"
+msgid "90°"
+msgstr "90º"
+
+msgctxt "MENU_ENUM_LABEL_VALUE_SENSOR_ORIENTATION_180"
+msgid "180°"
+msgstr "180º"
+
+msgctxt "MENU_ENUM_LABEL_VALUE_SENSOR_ORIENTATION_270"
+msgid "270°"
+msgstr "270º"
+
 msgctxt "MENU_ENUM_SUBLABEL_INPUT_SENSOR_GYROSCOPE_SENSITIVITY"
 msgid "Adjust the sensitivity of the Gyroscope."
 msgstr "Ajusta la sensibilitat del giroscopi."
@@ -3166,6 +3194,14 @@ msgstr "Vibració/Resposta Hàptica"
 msgctxt "MENU_ENUM_SUBLABEL_INPUT_HAPTIC_FEEDBACK_SETTINGS"
 msgid "Change haptic feedback and vibration settings."
 msgstr "Canvia les opcions de vibració i resposta hàptica."
+
+msgctxt "MENU_ENUM_LABEL_VALUE_INPUT_SENSOR_SETTINGS"
+msgid "Motion/Light Sensors"
+msgstr "Sensors de moviment i llum"
+
+msgctxt "MENU_ENUM_SUBLABEL_INPUT_SENSOR_SETTINGS"
+msgid "Change accelerometer, gyroscope and illuminance settings."
+msgstr "Canvia la configuració de l'acceleròmetre, giroscopi i il·luminació."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_INPUT_MENU_SETTINGS"
 msgid "Menu Controls"
@@ -4659,9 +4695,17 @@ msgctxt "MENU_ENUM_LABEL_VALUE_USE_BUILTIN_PLAYER"
 msgid "Use Built-In Media Player"
 msgstr "Fes servir el reproductor integrat"
 
+msgctxt "MENU_ENUM_SUBLABEL_USE_BUILTIN_PLAYER"
+msgid "Show Media Player supported files in File Browser."
+msgstr "Mostra els fitxers que son compatibles amb el reproductor."
+
 msgctxt "MENU_ENUM_LABEL_VALUE_USE_BUILTIN_IMAGE_VIEWER"
 msgid "Use Built-In Image Viewer"
 msgstr "Fes servir el visualitzador d’imatges integrat"
+
+msgctxt "MENU_ENUM_SUBLABEL_USE_BUILTIN_IMAGE_VIEWER"
+msgid "Show Image Viewer supported files in File Browser."
+msgstr "Mostra les imatges que son compatibles amb l'explorador de fitxers."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_REWIND_SETTINGS"
 msgid "Rewind"
@@ -6144,20 +6188,20 @@ msgid "Show the resume content option."
 msgstr "Mostra l’opció de reprendre el contingut."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_QUICK_MENU_SHOW_RESTART_CONTENT"
-msgid "Show 'Restart'"
-msgstr "Mostra “Reinicia”"
+msgid "Show 'Reset'"
+msgstr "Mostra 'Reiniciar'"
 
 msgctxt "MENU_ENUM_SUBLABEL_QUICK_MENU_SHOW_RESTART_CONTENT"
-msgid "Show the restart content option."
-msgstr "Mostra l’opció de reiniciar el contingut."
+msgid "Show the reset content option."
+msgstr "Mostra l'opció de reiniciar el contingut."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_QUICK_MENU_SHOW_CLOSE_CONTENT"
 msgid "Show 'Close Content'"
 msgstr "Mostra “Tanca el contingut”"
 
 msgctxt "MENU_ENUM_SUBLABEL_QUICK_MENU_SHOW_CLOSE_CONTENT"
-msgid "Show the 'Close Content' option."
-msgstr "Mostra l’opció “Tanca el contingut”."
+msgid "Show the close content option."
+msgstr "Mostra l'opció de tancar el contingut."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_QUICK_MENU_SHOW_SAVESTATE_SUBMENU"
 msgid "Show 'Save States' Submenu"
@@ -8544,12 +8588,12 @@ msgid "Resume the content and leave the Quick Menu."
 msgstr "Reprèn el contingut i abandona el Menú Ràpid."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_RESTART_CONTENT"
-msgid "Restart"
-msgstr "Reinicia"
+msgid "Reset"
+msgstr "Reiniciar"
 
 msgctxt "MENU_ENUM_SUBLABEL_RESTART_CONTENT"
-msgid "Restart the content from the beginning. RetroPad Start triggers hard reset."
-msgstr "Reinicia el contingut des de l'inici."
+msgid "Trigger soft reset. RetroPad Start triggers hard reset."
+msgstr "Activa el reinici per programari. Clica el botó Start en el RetroPad per activar el reinici complet."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_CLOSE_CONTENT"
 msgid "Close Content"
@@ -8911,10 +8955,6 @@ msgctxt "MENU_ENUM_LABEL_VALUE_CHEAT_START_OR_CONT"
 msgid "Start or Continue Cheat Search"
 msgstr "Comença o continua la cerca de trucs"
 
-msgctxt "MENU_ENUM_LABEL_HELP_CHEAT_START_OR_CONT"
-msgid "Scan memory to create new cheats."
-msgstr "Escaneja la memòria per trobar nous trucs."
-
 msgctxt "MENU_ENUM_LABEL_VALUE_CHEAT_FILE_LOAD"
 msgid "Load Cheat File (Replace)"
 msgstr "Carrega el fitxer de trucs (Reemplaça)"
@@ -9074,10 +9114,6 @@ msgstr "Clica esquerra o dreta per canviar el valor."
 msgctxt "MENU_ENUM_LABEL_CHEAT_SEARCH_EQMINUS_VAL"
 msgid "Equal to Before -%u (%X)"
 msgstr "Iguals a l'anterior -%u (%X)"
-
-msgctxt "MENU_ENUM_LABEL_VALUE_CHEAT_ADD_MATCHES"
-msgid "Add the %u Matches to Your List"
-msgstr "Afegeix %u coincidències a la llista"
 
 msgctxt "MENU_ENUM_LABEL_VALUE_CHEAT_DELETE_MATCH"
 msgid "Delete Match #"
