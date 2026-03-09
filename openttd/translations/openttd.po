@@ -6337,7 +6337,7 @@ msgstr "{WHITE}...el format de partida «{STRING}» no està disponible. Es reve
 
 msgctxt "STR_CONFIG_ERROR_INVALID_BASE_GRAPHICS_NOT_FOUND"
 msgid "ignoring Base Graphics set '{RAW_STRING}': not found"
-msgstr "{WHITE}...s'ignorarà el conjunt de gràfics base «{STRING}» perquè no s'ha trobat."
+msgstr "s'ignorarà el conjunt de gràfics base «{STRING}» perquè no s'ha trobat."
 
 msgctxt "STR_CONFIG_ERROR_INVALID_BASE_SOUNDS_NOT_FOUND"
 msgid "ignoring Base Sounds set '{RAW_STRING}': not found"
@@ -7147,14 +7147,6 @@ msgctxt "STR_NETWORK_CONNECTING_6"
 msgid "{BLACK}(6/6) Registering..."
 msgstr "{BLACK}(6/6) Registrant..."
 
-msgctxt "STR_NETWORK_CONNECTING_SPECIAL_1"
-msgid "{BLACK}Fetching game info..."
-msgstr "{BLACK}Obtenint informació de la partida..."
-
-msgctxt "STR_NETWORK_CONNECTING_SPECIAL_2"
-msgid "{BLACK}Fetching company info..."
-msgstr "{BLACK}Obtenint informació de la companyia..."
-
 msgctxt "STR_NETWORK_CONNECTION_DISCONNECT"
 msgid "{BLACK}Disconnect"
 msgstr "{BLACK}Desconnecta"
@@ -7322,6 +7314,14 @@ msgstr "Expulsa"
 msgctxt "STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_RESET"
 msgid "Delete"
 msgstr "Esborra"
+
+msgctxt "STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_ALLOW_ANY"
+msgid "Allow any client"
+msgstr "Permet qualsevol client"
+
+msgctxt "STR_NETWORK_CLIENT_LIST_ADMIN_COMPANY_ALLOW_LISTED"
+msgid "Allow only listed clients"
+msgstr "Permet només els clients de la llista"
 
 msgctxt "STR_NETWORK_CLIENT_LIST_ASK_CAPTION"
 msgid "{WHITE}Admin action"
@@ -7893,7 +7893,7 @@ msgstr "{SILVER}Etiquetes: {WHITE}{STRING}"
 
 msgctxt "STR_CONTENT_NO_ZLIB"
 msgid "OpenTTD is built without \"zlib\" support..."
-msgstr "{WHITE}L'OpenTTD s'ha compilat sense compatibilitat «zlib»..."
+msgstr "L'OpenTTD s'ha compilat sense compatibilitat «zlib»..."
 
 msgctxt "STR_CONTENT_NO_ZLIB_SUB"
 msgid "downloading content is not possible!"
@@ -11033,7 +11033,7 @@ msgstr "{WHITE}Un vehicle «{1:ENGINE}» ha canviat la seva capacitat mentre est
 
 msgctxt "STR_BROKEN_VEHICLE_LENGTH"
 msgid "Train '{VEHICLE}' belonging to '{COMPANY}' has invalid length. It is probably caused by problems with NewGRFs. Game may desync or crash"
-msgstr "{WHITE}El tren «{VEHICLE}» propietat de «{COMPANY}» té una llargada invàlida, probablement a causa de problemes amb els NewGRF. La partida podria dessincronitzar-se o fallar."
+msgstr "El tren «{VEHICLE}» propietat de «{COMPANY}» té una llargada incorrecta, probablement a causa de problemes amb els NewGRF. La partida podria dessincronitzar-se o fallar."
 
 msgctxt "STR_NEWGRF_BUGGY"
 msgid "NewGRF '{0:RAW_STRING}' provides incorrect information"
@@ -15265,7 +15265,7 @@ msgstr "{WHITE}La casa no es pot construir..."
 
 msgctxt "STR_ERROR_TOO_MANY_INDUSTRIES"
 msgid "too many industries"
-msgstr "{WHITE}... massa indústries"
+msgstr "massa indústries"
 
 msgctxt "STR_ERROR_CAN_T_GENERATE_INDUSTRIES"
 msgid "Can't generate industries..."
@@ -15377,7 +15377,7 @@ msgstr "{WHITE}Aquí no es pot construir un port..."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_AIRPORT_HERE"
 msgid "Can't build airport here..."
-msgstr "{WHITE}Aquí no es pot construir un aeroport..."
+msgstr "Aquí no es pot construir un aeroport..."
 
 msgctxt "STR_ERROR_ADJOINS_MORE_THAN_ONE_EXISTING"
 msgid "adjoins more than one existing station/loading area"
@@ -15397,15 +15397,15 @@ msgstr "{WHITE}... llargada no vàlida"
 
 msgctxt "STR_ERROR_TOO_MANY_STATIONS_LOADING"
 msgid "too many stations/loading areas"
-msgstr "{WHITE}Massa estacions/àrees de càrrega"
+msgstr "massa estacions/àrees de càrrega"
 
 msgctxt "STR_ERROR_TOO_MANY_STATION_SPECS"
 msgid "too many railway station parts"
-msgstr "{WHITE}Hi ha massa parts d'estacions de tren"
+msgstr "hi ha massa parts d'estacions de tren."
 
 msgctxt "STR_ERROR_TOO_MANY_BUS_STOPS"
 msgid "too many bus stops"
-msgstr "{WHITE}Massa parades d'autobús"
+msgstr "massa parades d'autobús"
 
 msgctxt "STR_ERROR_TOO_MANY_TRUCK_STOPS"
 msgid "too many lorry stations"
@@ -15453,7 +15453,7 @@ msgstr "{WHITE}...abans s'ha de treure l'estació de rail."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_BUS_STATION"
 msgid "Can't remove bus station..."
-msgstr "{WHITE}No es pot treure l'estació d'autobusos..."
+msgstr "L'estació d'autobusos no es pot traure..."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_TRUCK_STATION"
 msgid "Can't remove lorry station..."
@@ -15461,11 +15461,11 @@ msgstr "{WHITE}No es pot treure l'estació de camions..."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_PASSENGER_TRAM_STATION"
 msgid "Can't remove passenger tram station..."
-msgstr "{WHITE}No puc treure l'estació de tramvies de passatgers"
+msgstr "L'estació de tramvies de passatgers no es pot traure..."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_CARGO_TRAM_STATION"
 msgid "Can't remove freight tram station..."
-msgstr "{WHITE}No puc treure l'estació de tramvies de mercaderies"
+msgstr "L'estació de tramvies de mercaderies no es pot traure..."
 
 msgctxt "STR_ERROR_MUST_REMOVE_ROAD_STOP_FIRST"
 msgid "must remove road stop first"
@@ -15709,7 +15709,7 @@ msgstr "{WHITE}Aquí no es pot construir la via de tren..."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_RAILROAD_TRACK"
 msgid "Can't remove railway track from here..."
-msgstr "{WHITE}Aquí no es pot treure la via de tren..."
+msgstr "La via de tren no es pot traure..."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_SIGNALS_FROM"
 msgid "Can't remove signals from here..."
@@ -15817,7 +15817,7 @@ msgstr "{WHITE}...abans s'ha d'enderrocar el canal."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_AQUEDUCT_HERE"
 msgid "Can't build aqueduct here..."
-msgstr "{WHITE}Aquí no es pot construir un aqüeducte..."
+msgstr "Aquí no es pot construir un aqüeducte..."
 
 msgctxt "STR_ERROR_TREE_ALREADY_HERE"
 msgid "tree already here"
@@ -15841,7 +15841,7 @@ msgstr "{WHITE}...abans s'ha d'enderrocar el pont."
 
 msgctxt "STR_ERROR_CAN_T_START_AND_END_ON"
 msgid "can't start and end in the same spot"
-msgstr "{WHITE}No es pot començar i acabar a la mateixa posició"
+msgstr "no es pot començar i acabar a la mateixa posició."
 
 msgctxt "STR_ERROR_BRIDGEHEADS_NOT_SAME_HEIGHT"
 msgid "bridge heads not at the same level"
@@ -15929,7 +15929,7 @@ msgstr "{WHITE}... túnel massa llarg"
 
 msgctxt "STR_ERROR_TOO_MANY_OBJECTS"
 msgid "too many objects"
-msgstr "{WHITE}... massa objectes"
+msgstr "massa objectes"
 
 msgctxt "STR_ERROR_CAN_T_BUILD_OBJECT"
 msgid "Can't build object..."
@@ -16173,7 +16173,7 @@ msgstr "{WHITE}No es pot canviar l'interval de les revisions..."
 
 msgctxt "STR_ERROR_VEHICLE_IS_DESTROYED"
 msgid "vehicle is destroyed"
-msgstr "{WHITE}... vehicle està destruït"
+msgstr "vehicle destruït"
 
 msgctxt "STR_ERROR_CAN_T_CLONE_VEHICLE_LIST"
 msgid "not all vehicles are identical"
@@ -16237,7 +16237,7 @@ msgstr "{WHITE}...no hi ha més espai disponible per ordres."
 
 msgctxt "STR_ERROR_TOO_MANY_ORDERS"
 msgid "too many orders"
-msgstr "{WHITE}Massa ordres"
+msgstr "massa ordres"
 
 msgctxt "STR_ERROR_CAN_T_INSERT_NEW_ORDER"
 msgid "Can't insert new order..."
@@ -16245,7 +16245,7 @@ msgstr "{WHITE}No es pot afegir una nova ordre..."
 
 msgctxt "STR_ERROR_CAN_T_DELETE_THIS_ORDER"
 msgid "Can't delete this order..."
-msgstr "{WHITE}No es pot esborrar aquesta ordre..."
+msgstr "Aquesta ordre no es pot esborrar..."
 
 msgctxt "STR_ERROR_CAN_T_MODIFY_THIS_ORDER"
 msgid "Can't modify this order..."
@@ -16269,11 +16269,11 @@ msgstr "{WHITE}... el vehicle no pot anar a totes les estacions"
 
 msgctxt "STR_ERROR_CAN_T_ADD_ORDER"
 msgid "vehicle can't go to that station"
-msgstr "{WHITE}... el vehicle no pot anar a aquesta estació"
+msgstr "el vehicle no pot anar a aquesta estació."
 
 msgctxt "STR_ERROR_CAN_T_ADD_ORDER_SHARED"
 msgid "a vehicle sharing this order can't go to that station"
-msgstr "{WHITE}... un vehicle que comparteix aquesta ordre no pot anar a aquesta estació"
+msgstr "un vehicle que comparteix aquesta ordre no pot anar a aquesta estació."
 
 msgctxt "STR_ERROR_CAN_T_COPY_ORDER_VEHICLE_LIST"
 msgid "not all vehicles have the same orders"
@@ -16377,7 +16377,7 @@ msgstr "{WHITE}... l'horari encara no ha començat."
 
 msgctxt "STR_ERROR_TOO_MANY_SIGNS"
 msgid "too many signs"
-msgstr "{WHITE}... massa senyals"
+msgstr "massa senyals"
 
 msgctxt "STR_ERROR_CAN_T_PLACE_SIGN_HERE"
 msgid "Can't place sign here..."
@@ -16389,7 +16389,7 @@ msgstr "{WHITE}No es pot canviar el nom del senyal..."
 
 msgctxt "STR_ERROR_CAN_T_DELETE_SIGN"
 msgid "Can't delete sign..."
-msgstr "{WHITE}El senyal no es pot esborrar..."
+msgstr "El senyal no es pot esborrar..."
 
 msgctxt "STR_DESKTOP_SHORTCUT_COMMENT"
 msgid "A simulation game based on Transport Tycoon Deluxe"
@@ -17950,10 +17950,6 @@ msgstr "{STRING}"
 msgctxt "STR_JUST_BIG_RAW_STRING"
 msgid "{BIG_FONT}{RAW_STRING}"
 msgstr "{BIG_FONT}{STRING}"
-
-msgctxt "STR_TOOLBAR_RAILTYPE_VELOCITY"
-msgid "{STRING} {YELLOW}({VELOCITY})"
-msgstr "{STRING} ({VELOCITY})"
 
 msgctxt "STR_BADGE_NAME_LIST"
 msgid "{STRING}: {GOLD}{RAW_STRING}"
