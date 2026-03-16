@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 08:12+0000\n"
+"POT-Creation-Date: 2026-03-16 08:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,22 @@ msgstr ""
 
 #: .appearance
 msgid "Appearance"
+msgstr ""
+
+#: .asset/align
+msgid "Align"
+msgstr ""
+
+#: .asset/align-center
+msgid "Align center"
+msgstr ""
+
+#: .asset/align-left
+msgid "Align left"
+msgstr ""
+
+#: .asset/align-right
+msgid "Align right"
 msgstr ""
 
 #: .asset/confirm-delete
@@ -633,6 +649,7 @@ msgid "Toggle open blocks (collapse or expand all blocks)"
 msgstr ""
 
 #: .editor/undo
+msgctxt ".editor/undo"
 msgid "Undo"
 msgstr ""
 
@@ -881,7 +898,6 @@ msgstr "Temes populars"
 
 #: .handbook/search
 msgctxt ".handbook/search"
-".handbook/search"
 msgid "Search"
 msgstr "Cercar"
 
@@ -1086,51 +1102,128 @@ msgctxt ".keymap/all"
 msgid "All"
 msgstr "Tot"
 
-#: .keymap/conflicts-for-label
-msgid "Keymap conflicts for"
-msgstr "Conflicte per combinació de tecles per"
+#: .keymap/already-bound
+msgid "Already bound to this action"
+msgstr ""
+
+#: .keymap/also-used-for
+msgid "Also used for "
+msgstr ""
+
+#: .keymap/chord-separator
+msgid "then"
+msgstr ""
+
+#: .keymap/clear
+msgctxt ".keymap/clear"
+msgid "Clear"
+msgstr ""
 
 #: .keymap/custom
 msgid "Custom"
 msgstr "Personalitzat"
 
-#: .keymap/customize-for-label
-msgid "Customize shortcuts"
-msgstr "Personalitzar dreceres"
+#: .keymap/deactivates-chord
+msgid "Deactivates "
+msgstr ""
+
+#: .keymap/deactivates-chords
+msgid "Deactivates {1} chord shortcuts"
+msgstr ""
 
 #: .keymap/disabled
 msgctxt ".keymap/disabled"
 msgid "Disabled"
 msgstr "Deshabilitat"
 
+#: .keymap/esc-is-reserved
+msgid "Esc is reserved"
+msgstr ""
+
+#: .keymap/hint-cancel
+msgid "Cancel "
+msgstr ""
+
+#: .keymap/hint-close
+msgid "Close "
+msgstr ""
+
+#: .keymap/hint-reassign
+msgid "Reassign "
+msgstr ""
+
+#: .keymap/hint-remove
+msgid "Remove "
+msgstr ""
+
+#: .keymap/in-context
+msgid " in "
+msgstr ""
+
 #: .keymap/keystroke-filter
 msgid "Keystroke filter"
 msgstr "Filtre de pulsació de tecles"
 
-#: .keymap/keystroke-record-desc
-msgid "Press any sequence of keys to filter shortcuts"
-msgstr "Pressioni qualsevol seqüencia de tecles per filtrar dreceres"
+#: .keymap/no-matching-shortcuts
+msgid "No matching shortcuts"
+msgstr ""
 
-#: .keymap/keystroke-record-setup-label
-msgid "Press any sequence of keys to set a shortcut"
-msgstr "Pressioni qualsevol seqüencia de tecles per establir una drecera"
+#: .keymap/press-a-shortcut
+msgid "Press a shortcut…"
+msgstr ""
 
-#: .keymap/restore-to-default
-msgid "Restore to the default"
-msgstr "Restablir a valor predeterminat del sistema"
+#: .keymap/press-keys-to-filter
+msgid "Press keys to filter…"
+msgstr ""
 
-#: .keymap/search
-msgctxt ".keymap/search"
-msgid "Search"
-msgstr "Cercar"
+#: .keymap/reassign
+msgid "Reassign"
+msgstr ""
 
-#: .keymap/total
-msgid "Total shortcuts"
-msgstr "Dreceres de teclat totals"
+#: .keymap/reassign-tooltip
+msgid "Remove from the other action and assign here"
+msgstr ""
+
+#: .keymap/reassigned-from
+msgid "Reassigned from "
+msgstr ""
+
+#: .keymap/reset
+msgid "Reset"
+msgstr ""
+
+#: .keymap/reset-to-default
+msgid "Reset to default"
+msgstr ""
+
+#: .keymap/search-by-keys
+msgid "Search by keys"
+msgstr ""
+
+#: .keymap/search-placeholder
+msgid "Search shortcuts..."
+msgstr ""
+
+#: .keymap/shortcut-added
+msgid "Shortcut added"
+msgstr ""
+
+#: .keymap/shortcut-removed
+msgid "Shortcut removed"
+msgstr ""
+
+#: .keymap/undo
+msgctxt ".keymap/undo"
+msgid "Undo"
+msgstr ""
 
 #: .keymap/unset
 msgid "Unset"
 msgstr "Sense establir"
+
+#: .keymap/used-by
+msgid "Used by "
+msgstr ""
 
 #: .language
 msgid "Language"
@@ -1807,6 +1900,7 @@ msgid "Checking ..."
 msgstr "Cercant ..."
 
 #: .settings-page/clear
+msgctxt ".settings-page/clear"
 msgid "Clear"
 msgstr "Netejar"
 
