@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 08:12+0000\n"
+"POT-Creation-Date: 2026-03-16 08:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr ""
 
 #: invalidPasswordBlacklistedMessage
 msgid "Invalid password: password is not allowed."
-msgstr "La contrasenya no és vàlida: està en una llista negra."
+msgstr "La contrasenya no és vàlida: la contrasenya no és permesa."
 
 #: invalidPasswordGenericMessage
 msgid "Invalid password: new password does not match password policies."
@@ -236,18 +236,24 @@ msgid ""
 "Client session idle timeout cannot exceed realm SSO session idle timeout and "
 "RememberMe idle timeout."
 msgstr ""
+"El temps d’inactivitat de la sessió del client no pot excedir l’hora d’"
+"inactivitat de la sessió SSO i Recorda’m."
 
 #. Shown to an admin when they enter a client specific SSO idle timeout that fails validation
 #: clientSessionIdleTimeoutExceedsRealm
 msgid ""
 "Client session idle timeout cannot exceed realm SSO session idle timeout."
 msgstr ""
+"El temps d’inactivitat de la sessió del client no pot superar el temps d’"
+"inactivitat de la sessió SSO."
 
 #. Shown to an admin when they enter a client specific SSO max lifetime that fails validation
 #: clientSessionMaxLifespanExceedsRealm
 msgid ""
 "Client session max lifespan cannot exceed realm SSO session max lifespan."
 msgstr ""
+"La durada màxima de la sessió del client no pot superar la durada màxima de "
+"la sessió SSO."
 
 #. Shown to an admin when they enter a client specific SSO max lifetime that fails validation
 #: clientSessionMaxLifespanExceedsRealmRememberMeMaxSpan
@@ -255,6 +261,8 @@ msgid ""
 "Client session max lifespan cannot exceed realm SSO session max lifespan and "
 "RememberMe Max span."
 msgstr ""
+"La durada màxima de la sessió del client no pot superar la durada màxima de "
+"les sessions SSO i Recorda’m."
 
 #: error-invalid-value
 msgctxt "error-invalid-value"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 08:12+0000\n"
+"POT-Creation-Date: 2026-03-16 08:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -367,7 +367,7 @@ msgstr "Usuari nou?"
 
 #: did
 msgid "Identity (DID)"
-msgstr ""
+msgstr "Identitat (DID)"
 
 #: username
 msgctxt "username"
@@ -1128,7 +1128,7 @@ msgstr "La contrasenya actual no és vàlida."
 
 #: invalidPasswordBlacklistedMessage
 msgid "Invalid password: password is not allowed."
-msgstr "La contrasenya no és vàlida: està en una llista negra."
+msgstr "La contrasenya no és vàlida: la contrasenya no és permesa."
 
 #: invalidPasswordConfirmMessage
 msgid "Password confirmation doesn''t match."
@@ -1263,7 +1263,7 @@ msgstr ""
 
 #: accountUpdatedTitle
 msgid "Account updated"
-msgstr ""
+msgstr "S’ha actualitzat el compte"
 
 #: accountUpdatedMessage
 msgid "Your account has been updated."
@@ -1411,7 +1411,7 @@ msgstr ""
 
 #: invalidRedirectUriMessage
 msgid "Invalid redirect uri"
-msgstr "L''URI de redirecció no és vàlid"
+msgstr "L’URI de redirecció no és vàlid"
 
 #: unsupportedNameIdFormatMessage
 msgid "Unsupported NameIDFormat"
@@ -1547,7 +1547,7 @@ msgstr ""
 
 #: identityProviderAlreadyLinkedToCurrentUserMessage
 msgid "Your account is already linked to the identity provider {0}."
-msgstr ""
+msgstr "El vostre compte ja està enllaçat al proveïdor d’identitat {0}."
 
 #: staleCodeMessage
 msgid ""
@@ -2062,11 +2062,11 @@ msgstr "Error de la clau de seguretat"
 
 #: webauthn-error-registration
 msgid "Failed to register your Passkey. {0}"
-msgstr "No s''ha pogut registrar la vostra clau de seguretat. {0}"
+msgstr "No s’ha pogut registrar la vostra Passkey. {0}"
 
 #: webauthn-error-api-get
 msgid "Failed to authenticate by the Passkey. {0}"
-msgstr "No s''ha pogut identificar amb la clau de seguretat. {0}"
+msgstr "No s’ha pogut identificar amb la Passkey. {0}"
 
 #: webauthn-error-different-user
 msgid "First authenticated user is not the one authenticated by the Passkey."
@@ -2075,7 +2075,7 @@ msgstr ""
 
 #: webauthn-error-auth-verification
 msgid "Passkey authentication result is invalid. {0}"
-msgstr "El resultat de l''autenticació amb clau de seguretat no és vàlid.{0}"
+msgstr "El resultat de l’autenticació amb Passkey no és vàlid. {0}"
 
 #: webauthn-error-register-verification
 msgid "Passkey registration result is invalid. {0}"
