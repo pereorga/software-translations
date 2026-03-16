@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-09 08:10+0000\n"
+"POT-Creation-Date: 2026-03-16 08:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -739,6 +739,30 @@ msgstr "Col·lapsa"
 msgid "Expand"
 msgstr "Expandeix"
 
+#: connectivity.check.port
+msgid "Port Reachability"
+msgstr "Accessibilitat del port"
+
+#: connectivity.check.port.description
+msgid "Checking if port is reachable"
+msgstr "Comprovant si el port és accessible"
+
+#: connectivity.check.running
+msgid "Checking..."
+msgstr "Comprovant..."
+
+#: connectivity.check.server.description
+msgid "Testing server connection"
+msgstr "Comprovant la connexió amb el servidor"
+
+#: connectivity.check.tls
+msgid "TLS Certificate"
+msgstr "Certificat TLS"
+
+#: connectivity.check.tls.description
+msgid "Validating TLS certificate"
+msgstr "Validant el certificat TLS"
+
 #: continue_label
 msgctxt "continue_label"
 msgid "Continue"
@@ -774,6 +798,11 @@ msgstr "Suprimeix"
 msgctxt "done_label"
 msgid "Done"
 msgstr "Fet"
+
+#: entity_picker.filter.server.title
+msgctxt "entity_picker.filter.server.title"
+msgid "Servers"
+msgstr "Servidors"
 
 #: extensions.map.location.new
 msgid "New Location"
@@ -1171,6 +1200,7 @@ msgstr ""
 "notificarà a Home Assistant l'acció seleccionada."
 
 #: notifications_configurator.action.rows.authentication_required.title
+msgctxt "notifications_configurator.action.rows.authentication_required.title"
 msgid "Authentication Required"
 msgstr "Autenticació obligatòria"
 
@@ -1317,6 +1347,10 @@ msgstr "Configuració"
 msgctxt "ok_label"
 msgid "OK"
 msgstr "D'acord"
+
+#: onboarding.client_certificate.error.file_access
+msgid "Unable to access the selected file"
+msgstr "No s'ha pogut accedir al fitxer seleccionat"
 
 #: onboarding.connect.mac_safari_warning.message
 msgid "Try restarting Safari if the login form does not open."
@@ -1689,6 +1723,24 @@ msgstr "Afegir Servidor"
 msgid "All Servers"
 msgstr "Tots els servidors"
 
+#: settings.connection_section.client_certificate.import_error.title
+msgid "Import Failed"
+msgstr "Importació Fallida"
+
+#: settings.connection_section.client_certificate.password_prompt.import_button
+msgctxt "settings.connection_section.client_certificate.password_prompt.import_button"
+msgid "Import"
+msgstr "Importa"
+
+#: settings.connection_section.client_certificate.password_prompt.placeholder
+msgctxt "settings.connection_section.client_certificate.password_prompt.placeholder"
+msgid "Password"
+msgstr "Contrasenya"
+
+#: settings.connection_section.client_certificate.remove_confirmation.title
+msgid "Remove Certificate?"
+msgstr "Eliminar Certificat?"
+
 #: settings.connection_section.cloud_overrides_external
 msgid ""
 "When connecting via Cloud, the External URL will not be used. You do not "
@@ -1811,6 +1863,10 @@ msgstr "Ubicació enviada"
 #: settings.connection_section.logged_in_as
 msgid "Logged in as"
 msgstr "Sessió iniciada com"
+
+#: settings.connection_section.refresh_server
+msgid "Update server information"
+msgstr "Actualitza la informació del servidor"
 
 #: settings.connection_section.remote_ui_url.title
 msgid "Remote UI URL"
@@ -3258,6 +3314,7 @@ msgstr "Modular Gran"
 
 #: watch.labels.complication_group_member.modular_large.short_name
 msgctxt "watch.labels.complication_group_member.modular_large.short_name"
+"watch.labels.complication_group_member.modular_large.short_name"
 msgid "Large"
 msgstr "Gran"
 
@@ -3965,6 +4022,299 @@ msgctxt "widgets.open_page.title"
 msgid "Open Page"
 msgstr "Obre la pàgina"
 
+#: widgets.param.server.title
+msgctxt "widgets.param.server.title"
+msgid "Server"
+msgstr "Servidor"
+
+#: widgets.todo_list.all_done
+msgid "All done! 🎉"
+msgstr "Tot fet! 🎉"
+
+#: widgets.todo_list.due_date.now
+msgid "Now"
+msgstr "Ara"
+
+#: widgets.todo_list.due_date.today
+msgid "Today"
+msgstr "Avui"
+
+#: widgets.todo_list.parameter.list
+msgctxt "widgets.todo_list.parameter.list"
+msgid "List"
+msgstr "Llista"
+
+#: widgets.todo_list.parameter.list_id
+msgid "List ID"
+msgstr "ID de la llista"
+
+#: widgets.todo_list.parameter.server
+msgctxt "widgets.todo_list.parameter.server"
+msgid "Server"
+msgstr "Servidor"
+
+#: widgets.todo_list.parameter.server_id
+msgid "Server ID"
+msgstr "ID del Servidor"
+
 #: yes_label
 msgid "Yes"
 msgstr "Si"
+
+#: kiosk.title
+msgctxt "kiosk.title"
+msgid "Kiosk Mode"
+msgstr ""
+
+#: kiosk.active.title
+msgctxt "kiosk.active.title"
+msgid "Kiosk Mode Active"
+msgstr ""
+
+#: kiosk.screen_label
+msgid "Screen: %@"
+msgstr ""
+
+#: kiosk.screensaver_label
+msgid "Screensaver: %@"
+msgstr ""
+
+#: kiosk.exit_button
+msgid "Exit Kiosk Mode"
+msgstr ""
+
+#: kiosk.exit_hint
+msgid "Double-tap to exit kiosk mode. Authentication may be required."
+msgstr ""
+
+#: kiosk.enable_button
+msgid "Enable Kiosk Mode"
+msgstr ""
+
+#: kiosk.section.title
+msgctxt "kiosk.section.title"
+msgid "Kiosk Mode"
+msgstr ""
+
+#: kiosk.footer.description
+msgid ""
+"When enabled, the display will be locked to the dashboard. Use Face ID, "
+"Touch ID, or device passcode to exit."
+msgstr ""
+
+#: kiosk.auth_error.title
+msgid "Authentication Error"
+msgstr ""
+
+#: kiosk.auth_error.reason
+msgid "Authenticate to exit kiosk mode"
+msgstr ""
+
+#: kiosk.auth.required
+msgctxt "kiosk.auth.required"
+msgid "Authentication Required"
+msgstr ""
+
+#: kiosk.auth.try_again
+msgid "Try Again"
+msgstr ""
+
+#: kiosk.auth.gate_title
+msgctxt "kiosk.auth.gate_title"
+msgid "Kiosk Mode Active"
+msgstr ""
+
+#: kiosk.auth.gate_description
+msgid ""
+"Authentication is required to access kiosk settings. Verify your identity to "
+"continue."
+msgstr ""
+
+#: kiosk.auth.authenticate_button
+msgid "Authenticate"
+msgstr ""
+
+#: kiosk.auth.go_back_button
+msgid "Go Back"
+msgstr ""
+
+#: kiosk.security.section
+msgid "Security & Display"
+msgstr ""
+
+#: kiosk.security.device_auth
+msgid "Device Authentication"
+msgstr ""
+
+#: kiosk.security.hide_status_bar
+msgid "Hide Status Bar"
+msgstr ""
+
+#: kiosk.security.prevent_autolock
+msgid "Prevent Auto-Lock"
+msgstr ""
+
+#: kiosk.security.secret_gesture
+msgid "Secret Exit Gesture"
+msgstr ""
+
+#: kiosk.security.gesture_corner
+msgid "Exit Gesture Corner"
+msgstr ""
+
+#: kiosk.security.taps_required
+msgid "Taps Required: %d"
+msgstr ""
+
+#: kiosk.security.gesture_footer
+msgid "Tap the %@ corner %d times to access kiosk settings when locked."
+msgstr ""
+
+#: kiosk.brightness.section
+msgid "Brightness"
+msgstr ""
+
+#: kiosk.brightness.control
+msgid "Brightness Control"
+msgstr ""
+
+#: kiosk.brightness.manual
+msgid "Manual Brightness: %d%%"
+msgstr ""
+
+#: kiosk.screensaver.section
+msgctxt "kiosk.screensaver.section"
+msgid "Screensaver"
+msgstr ""
+
+#: kiosk.screensaver.toggle
+msgctxt "kiosk.screensaver.toggle"
+msgid "Screensaver"
+msgstr ""
+
+#: kiosk.screensaver.mode
+msgid "Mode"
+msgstr ""
+
+#: kiosk.screensaver.mode.clock
+msgid "Clock"
+msgstr ""
+
+#: kiosk.screensaver.mode.dim
+msgid "Dim"
+msgstr ""
+
+#: kiosk.screensaver.mode.blank
+msgid "Blank"
+msgstr ""
+
+#: kiosk.screensaver.timeout
+msgid "Timeout"
+msgstr ""
+
+#: kiosk.screensaver.timeout.30sec
+msgid "30 seconds"
+msgstr ""
+
+#: kiosk.screensaver.timeout.1min
+msgid "1 minute"
+msgstr ""
+
+#: kiosk.screensaver.timeout.2min
+msgid "2 minutes"
+msgstr ""
+
+#: kiosk.screensaver.timeout.5min
+msgid "5 minutes"
+msgstr ""
+
+#: kiosk.screensaver.timeout.10min
+msgid "10 minutes"
+msgstr ""
+
+#: kiosk.screensaver.timeout.15min
+msgid "15 minutes"
+msgstr ""
+
+#: kiosk.screensaver.timeout.30min
+msgid "30 minutes"
+msgstr ""
+
+#: kiosk.screensaver.dim_level
+msgid "Dim Level: %d%%"
+msgstr ""
+
+#: kiosk.screensaver.pixel_shift
+msgid "Pixel Shift (OLED)"
+msgstr ""
+
+#: kiosk.screensaver.pixel_shift_footer
+msgid ""
+"Pixel shift helps prevent burn-in on OLED displays by slightly moving "
+"content periodically."
+msgstr ""
+
+#: kiosk.clock.section
+msgid "Clock Display"
+msgstr ""
+
+#: kiosk.clock.style
+msgid "Clock Style"
+msgstr ""
+
+#: kiosk.clock.style.large
+msgctxt "kiosk.clock.style.large"
+msgid "Large"
+msgstr ""
+
+#: kiosk.clock.style.minimal
+msgid "Minimal"
+msgstr ""
+
+#: kiosk.clock.style.analog
+msgid "Analog"
+msgstr ""
+
+#: kiosk.clock.style.digital
+msgid "Digital"
+msgstr ""
+
+#: kiosk.clock.show_date
+msgid "Show Date"
+msgstr ""
+
+#: kiosk.clock.show_seconds
+msgid "Show Seconds"
+msgstr ""
+
+#: kiosk.clock.24hour
+msgid "24-Hour Format"
+msgstr ""
+
+#: kiosk.clock.accessibility.current_time
+msgid "Current time: %@"
+msgstr ""
+
+#: kiosk.clock.accessibility.analog_clock
+msgid "Analog clock showing %@"
+msgstr ""
+
+#: kiosk.clock.accessibility.date
+msgid "Date: %@"
+msgstr ""
+
+#: kiosk.corner.top_left
+msgid "Top Left"
+msgstr ""
+
+#: kiosk.corner.top_right
+msgid "Top Right"
+msgstr ""
+
+#: kiosk.corner.bottom_left
+msgid "Bottom Left"
+msgstr ""
+
+#: kiosk.corner.bottom_right
+msgid "Bottom Right"
+msgstr ""
