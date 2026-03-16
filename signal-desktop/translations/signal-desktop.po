@@ -739,10 +739,6 @@ msgctxt "icu:SafetyNumberViewer__clearVerification"
 msgid "Clear verification"
 msgstr "Neteja la verificació"
 
-msgctxt "icu:SafetyNumberViewer__hint"
-msgid "To verify end-to-end encryption with {name}, compare the numbers above with their device. They can also scan your code with their device."
-msgstr "Per verificar el xifrat amb {name}, compara les xifres de dalt amb les del dispositiu d'aquella persona. També poden escanejar el teu codi amb el seu dispositiu."
-
 msgctxt "icu:SafetyNumberViewer__hint-v2"
 msgid "To verify end-to-end encryption with {name}, compare the numbers above with their device. They can also scan your code on their device."
 msgstr "Per verificar el xifrat amb {name}, compara les xifres de dalt amb les del dispositiu d'aquella persona. També poden escanejar el teu codi al el seu dispositiu."
@@ -819,10 +815,6 @@ msgctxt "icu:KeyTransparencyErrorDialog__Description"
 msgid "Debug logs helps us diagnose and fix the issue, and do not contain identifying information."
 msgstr "Els registres de depuració ens ajuden a diagnosticar i solucionar el problema i no contenen informació que pugui identificar-te."
 
-msgctxt "icu:KeyTransparencyErrorDialog__CloseButton__AccessibilityLabel"
-msgid "Close"
-msgstr "Tanca"
-
 msgctxt "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label"
 msgid "Share debug log"
 msgstr "Compartir registre de depuració"
@@ -834,10 +826,6 @@ msgstr "Mostra"
 msgctxt "icu:KeyTransparencyErrorDialog__Submit"
 msgid "Submit"
 msgstr "Envia"
-
-msgctxt "icu:KeyTransparencyErrorDialog__Cancel"
-msgid "No thanks"
-msgstr "No, gràcies."
 
 msgctxt "icu:KeyTransparencyErrorDialog__Submitting"
 msgid "Submitting..."
@@ -2899,6 +2887,22 @@ msgctxt "icu:deleteFailed"
 msgid "Delete failed"
 msgstr "No s'ha pogut suprimir"
 
+msgctxt "icu:deleteFailedClickForDetails"
+msgid "Delete failed, click for details"
+msgstr "No s'ha pogut eliminar. Fes clic per saber-ne més."
+
+msgctxt "icu:retryDeleteForEveryone--title"
+msgid "Retry failed delete?"
+msgstr "Intentar eliminar de nou?"
+
+msgctxt "icu:retryDeleteForEveryone--body"
+msgid "Message failed to delete. Check your connection and try again."
+msgstr "No s'ha pogut eliminar el missatge. Comprova la connexió i torna-ho a provar."
+
+msgctxt "icu:retryDeleteForEveryone--tryAgain"
+msgid "Try again"
+msgstr "Torna a provar-ho"
+
 msgctxt "icu:editFailed"
 msgid "Edit failed, click for details"
 msgstr "No s'ha pogut modificar. Fes clic per saber-ne més."
@@ -2914,6 +2918,10 @@ msgstr "Enviat parcialment. Cliqueu per a més detalls."
 msgctxt "icu:partiallyDeleted"
 msgid "Partially deleted, click to retry"
 msgstr "Suprimit parcialment. Cliqueu per tornar-ho a provar."
+
+msgctxt "icu:partiallyDeleted--clickForDetails"
+msgid "Partially deleted, click for details"
+msgstr "Parcialment eliminat, fes clic per obtenir més informació"
 
 msgctxt "icu:expiredWarning"
 msgid "This version of Signal Desktop has expired. Please upgrade to the latest version to continue messaging."
@@ -3183,6 +3191,14 @@ msgctxt "icu:ToastManager__CannotAddMemberLabel"
 msgid "Only admins can add member labels in this group."
 msgstr "Només els admins poden definir categories de membres en aquest grup."
 
+msgctxt "icu:Toast--viewOnceEnabled"
+msgid "View once enabled"
+msgstr "Visualització única activada"
+
+msgctxt "icu:Toast--viewOnceDisabled"
+msgid "View once disabled"
+msgstr "Visualització única desactivada"
+
 msgctxt "icu:ToastManager__CannotEditMessage_24"
 msgid "Edits can only be applied within 24 hours from the time you sent this message."
 msgstr "Els canvis només es poden realitzar fins 24 hores després d'enviar el missatge."
@@ -3418,6 +3434,18 @@ msgstr "Vídeo d'una sola visualització"
 msgctxt "icu:message--deletedForEveryone"
 msgid "This message was deleted."
 msgstr "Aquest missatge s'ha suprimit."
+
+msgctxt "icu:message--deletedByAdmin"
+msgid "Admin {admin} deleted this message"
+msgstr "{admin} (admin) ha eliminat aquest missatge"
+
+msgctxt "icu:message--deletedForEveryone--incoming"
+msgid "{name} deleted this message"
+msgstr "{name} ha eliminat aquest missatge"
+
+msgctxt "icu:message--deletedForEveryone--outgoing"
+msgid "You deleted this message"
+msgstr "Has eliminat aquest missatge"
 
 msgctxt "icu:message--attachmentTooBig--one"
 msgid "Attachment too large to display."
@@ -5223,25 +5251,25 @@ msgctxt "icu:GroupV2--access-attributes--all--unknown"
 msgid "An admin changed who can edit group info to \"All members.\""
 msgstr "Un administrador ha canviat qui pot editar la informació del grup a Tots els membres."
 
-msgctxt "icu:GroupV2--access-members--admins--other"
-msgid "{adminName} changed who can edit group membership to \"Only admins.\""
-msgstr "{adminName} ha canviat qui pot editar els membres del grup a Només els administradors."
-
 msgctxt "icu:GroupV2--access-members--admins--you"
 msgid "You changed who can edit group membership to \"Only admins.\""
 msgstr "Heu canviat qui pot editar els membres del grup a Només els administradors."
+
+msgctxt "icu:GroupV2--access-members--admins--other"
+msgid "{adminName} changed who can edit group membership to \"Only admins.\""
+msgstr "{adminName} ha canviat qui pot editar els membres del grup a Només els administradors."
 
 msgctxt "icu:GroupV2--access-members--admins--unknown"
 msgid "An admin changed who can edit group membership to \"Only admins.\""
 msgstr "Un administrador ha canviat qui pot editar els membres del grup a Només els administradors."
 
-msgctxt "icu:GroupV2--access-members--all--other"
-msgid "{adminName} changed who can edit group membership to \"All members.\""
-msgstr "{adminName} ha canviat qui pot editar els membres del grup a Tots els membres."
-
 msgctxt "icu:GroupV2--access-members--all--you"
 msgid "You changed who can edit group membership to \"All members.\""
 msgstr "Heu canviat qui pot canviar els membres del grup a Tots els membres."
+
+msgctxt "icu:GroupV2--access-members--all--other"
+msgid "{adminName} changed who can edit group membership to \"All members.\""
+msgstr "{adminName} ha canviat qui pot editar els membres del grup a Tots els membres."
 
 msgctxt "icu:GroupV2--access-members--all--unknown"
 msgid "An admin changed who can edit group membership to \"All members.\""
@@ -6055,6 +6083,14 @@ msgctxt "icu:CompositionArea__ConfirmGifSelection__ReplaceButton"
 msgid "Replace"
 msgstr "Substituir"
 
+msgctxt "icu:CompositionArea--viewOnceToggle"
+msgid "View once"
+msgstr "Visualització única"
+
+msgctxt "icu:CompositionArea--viewOnceMediaPlaceholder"
+msgid "View once media"
+msgstr "Contingut d'una sola visualització"
+
 msgctxt "icu:CompositionInput__editing-message"
 msgid "Edit message"
 msgstr "Editar missatge"
@@ -6098,6 +6134,18 @@ msgstr "Esborra del grup"
 msgctxt "icu:ContactModal--voice"
 msgid "Voice"
 msgstr "Veu"
+
+msgctxt "icu:ContactModal--mute-audio"
+msgid "Mute audio"
+msgstr "Silenciar àudio"
+
+msgctxt "icu:ContactModal--confirm-mute-body"
+msgid "Are you sure you want to mute {contact}?"
+msgstr "Segur que vols silenciar a {contact}?"
+
+msgctxt "icu:ContactModal--confirm-mute-primary-button"
+msgid "Mute"
+msgstr "Silenciats"
 
 msgctxt "icu:GroupMemberLabelInfoModal--title"
 msgid "Member labels"
@@ -6218,10 +6266,6 @@ msgstr "Notificacions"
 msgctxt "icu:ConversationDetails--group-info-label"
 msgid "Who can edit group info"
 msgstr "Qui pot editar la informació del grup"
-
-msgctxt "icu:ConversationDetails--group-info-info"
-msgid "Choose who can edit group name, photo, description, and disappearing messages timer."
-msgstr "Trieu qui pot editar el nom del grup, la fotografia, la descripció i el temporitzador dels missatges efímers."
 
 msgctxt "icu:ConversationDetails--group-info-info-v2"
 msgid "Choose who can edit group name, photo, description, disappearing messages timer, and pinned messages."
@@ -6529,7 +6573,7 @@ msgstr "{count, plural, one {Vols eliminar {count,number} missatge?} other {Vols
 
 msgctxt "icu:DeleteMessagesModal--title-2"
 msgid "Delete selected {count, plural, one {message} other {# messages}}?"
-msgstr "{count, plural, one {Delete selected message?} other {Delete selected {count,number} messages?}}"
+msgstr "{count, plural, one {Vols eliminar el missatge seleccionat?} other {Vols eliminar els {count,number} missatges seleccionats?}}"
 
 msgctxt "icu:DeleteMessagesModal--description"
 msgid "Who would you like to delete {count, plural, one {this message} other {these messages}} for?"
@@ -6555,9 +6599,13 @@ msgctxt "icu:DeleteMessagesModal--deleteForEveryone"
 msgid "Delete for everyone"
 msgstr "Eliminar per a tothom"
 
+msgctxt "icu:DeleteMessagesModal--adminDeleteConfirmation--title"
+msgid "Delete for everyone?"
+msgstr "Eliminar per a tothom?"
+
 msgctxt "icu:DeleteMessagesModal--adminDeleteConfirmation--description"
 msgid "As an admin, group members will see that you deleted {count, plural, one {this message} other {these messages}}."
-msgstr "{count, plural, one {As an admin, group members will see that you deleted this message.} other {As an admin, group members will see that you deleted these messages.}}"
+msgstr "{count, plural, one {Com a admin, els membres del grup veuran que has eliminat aquest missatge.} other {Com a admin, els membres del grup veuran que has eliminat aquests missatges.}}"
 
 msgctxt "icu:DeleteMessagesModal--deleteFromAllDevices"
 msgid "Delete from all devices"
@@ -8043,17 +8091,9 @@ msgctxt "icu:Preferences__local-backups"
 msgid "Desktop backups"
 msgstr "Còpies de seguretat d'escriptori"
 
-msgctxt "icu:Preferences__local-backups-section__description"
-msgid "Backups are encrypted with a key and stored on your computer."
-msgstr "Les còpies de seguretat es xifren amb una clau i es guarden al teu ordinador."
-
 msgctxt "icu:Preferences--local-backups-off-description"
 msgid "Create an end-to-end encrypted backup that you can restore on your phone. "
 msgstr "Crea una còpia de seguretat xifrada d'extrem a extrem que podràs restaurar al teu telèfon. "
-
-msgctxt "icu:Preferences--local-backups-restore-info"
-msgid "To restore a backup, install a new copy of Signal. Open the app and tap Restore backup, then locate the backup folder. <learnMoreLink>Learn more.</learnMoreLink>"
-msgstr "Per restaurar una còpia de seguretat, torna a instal·lar Signal. Obre l'aplicació, toca &quot;Restaurar còpia de seguretat&quot; i selecciona la carpeta de còpies de seguretat. <learnMoreLink>Més informació.</learnMoreLink>"
 
 msgctxt "icu:Preferences--local-backups-setup-folder"
 msgid "Choose a folder"
@@ -10390,3 +10430,7 @@ msgstr "Cinc nous paquets d'adhesius d'artistes oficials."
 msgctxt "icu:WhatsNew__8.0--0"
 msgid "Signal secure backups are here! Now you can choose to enable automatic end-to-end encrypted backups so you'll never lose a message when you get a new phone or reinstall Signal. You can back up all of your messages and the last 45 days of media for free, or you can pay a small monthly fee to get 100 GB of storage to back up every attachment. Tap on backups in your Signal settings to get started. Thanks to everyone who helped test this feature during the beta period!"
 msgstr "Ja són aquí les còpies de seguretat segures de Signal! Ara pots activar còpies de seguretat automàtiques amb xifratge d’extrem a extrem per no perdre cap missatge quan canviïs de telèfon o reinstal·lis l’aplicació. Pots fer còpies de seguretat gratuïtes de tots els teus missatges i dels darrers 45 dies de contingut multimèdia, o bé pagar una petita quota mensual per disposar de 100 GB d’emmagatzematge i desar tots els teus fitxers adjunts. Per començar, ves als ajustos de Signal i toca Còpies de seguretat. Gràcies a tothom que ha ajudat a provar aquesta funció durant el període beta!"
+
+msgctxt "icu:WhatsNew__8.2--0"
+msgid "Now you can send view-once media messages from Signal Desktop too. Individual photos and videos that are sent as view-once messages will be automatically removed from a conversation thread after they have been viewed."
+msgstr "Ara també pots enviar missatges multimèdia d'una única visualització des de Signal Desktop. Les fotos i vídeos individuals que s'enviïn com a missatges de visualització única s'eliminaran automàticament de la conversa un cop s'hagin vist."
