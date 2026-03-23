@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:10+0000\n"
+"POT-Creation-Date: 2026-03-23 08:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1279,6 +1279,7 @@ msgid "No Language"
 msgstr "Cap llengua"
 
 #: None
+msgctxt "None"
 msgid "None"
 msgstr "Cap"
 
@@ -7288,6 +7289,14 @@ msgstr ""
 
 #: discover-%3Efilters-%3Einclude_adult
 msgid "Include Adult"
+msgstr ""
+
+#: discover-%3Efilters-%3Eadult_filters
+msgid "Adult Filters"
+msgstr ""
+
+#: discover-%3Efilters-%3Esoftcore_content
+msgid "Softcore Content"
 msgstr ""
 
 #: discover-%3Eno_items
@@ -14322,8 +14331,8 @@ msgstr "No s'ha pogut eliminar l'eslògan."
 
 #: media-%3Eedit-%3Etooltips-%3Eadult
 msgid ""
-"Generally speaking, this flag is to only be used for pornography. Please see "
-"<a href=\"/bible/movie#59f73b759251416e71000004\">the contribution bible</a> "
+"This option is to be used to identify hardcore pornography. Please see <a "
+"href=\"/bible/movie#59f73b759251416e71000004\">the contribution bible</a> "
 "for more information."
 msgstr ""
 "En termes generals, aquesta marca només s’utilitzarà per a la pornografia. "
@@ -14379,6 +14388,21 @@ msgid ""
 msgstr ""
 "Els enllaços socials són només per als comptes oficials verificats. No "
 "s'admeten pàgines de fans."
+
+#: media-%3Eedit-%3Etooltips-%3Esoftcore
+msgid ""
+"This option is used to identify content that is primarily erotic in nature "
+"but is not necessarily hardcore pornography. See more examples in <a href=\"/"
+"bible/movie#69b97071cfe788db108e926e\" target=\"_blank\">the contribution "
+"bible</a>."
+msgstr ""
+
+#: media-%3Eedit-%3Etooltips-%3Evideo
+msgid ""
+"This option typically applies to compilation videos, professional concerts, "
+"live theatre and PPV events. See more examples in <a href=\"/bible/movie#"
+"59f73b759251416e71000005\" target=\"_blank\">the contribution bible</a>."
+msgstr ""
 
 #: media-%3Eedit-%3Etranslation_already_exists
 msgid "The %{language} translation already exists."
@@ -14485,6 +14509,23 @@ msgstr "Sèries \"%{name}\""
 #: media-%3Emovie-%3Eedit-%3Eadult-%3Eadult_movie
 msgid "Adult Movie?"
 msgstr "Pel·lícula per a adults?"
+
+#: media-%3Emovie-%3Eedit-%3Eadult-%3Eadult_status
+msgid "Adult Status?"
+msgstr ""
+
+#: media-%3Emovie-%3Eedit-%3Eadult-%3Estatus-%3Enone
+msgctxt "media->movie->edit->adult->status->none"
+msgid "None"
+msgstr ""
+
+#: media-%3Emovie-%3Eedit-%3Eadult-%3Estatus-%3Ehardcore
+msgid "Hardcore"
+msgstr ""
+
+#: media-%3Emovie-%3Eedit-%3Eadult-%3Estatus-%3Esoftcore
+msgid "Softcore"
+msgstr ""
 
 #: media-%3Emovie-%3Eedit-%3Ealternative_titles-%3Eno_records
 msgid "No alternative titles have been added."
@@ -14605,6 +14646,10 @@ msgstr "No s'hi ha afegit cap data d'estrena."
 #: media-%3Emovie-%3Eedit-%3Evideos-%3Eno_records
 msgid "No videos have been added."
 msgstr "No s'hi han afegit vídeos."
+
+#: media-%3Emovie-%3Eedit-%3Esoftcore-%3Esoftcore_movie
+msgid "Softcore Movie?"
+msgstr ""
 
 #: media-%3Emovie-%3Estatuses-%3ECanceled
 msgctxt "media->movie->statuses->Canceled"
@@ -15365,6 +15410,10 @@ msgstr "Introduïu el valor en minuts"
 #: media-%3Etv_show-%3Eedit-%3Eseasons-%3Eno_records
 msgid "No seasons have been added."
 msgstr "No s'hi han afegit temporades."
+
+#: media-%3Etv_show-%3Eedit-%3Esoftcore-%3Esoftcore_show
+msgid "Softcore TV Show?"
+msgstr ""
 
 #: media-%3Etv_show-%3Eepisode_groups-%3Egroups-%3Ecount-%3Eone
 msgid "%{count} Group"
@@ -16661,6 +16710,31 @@ msgid ""
 msgstr ""
 "Introduïu el correu que vau fer servir per a enregistrar-vos a TMDB i us "
 "enviarem els passos necessaris per a reiniciar la contrasenya."
+
+#: settings-%3Eaccount-%3Eadult_content-%3Eshow_adult_content
+msgid "Display Adult Content?"
+msgstr ""
+
+#: settings-%3Eaccount-%3Eadult_content-%3Econfirm_popup-%3Etitle
+msgid "IMPORTANT — This is an adult setting"
+msgstr ""
+
+#: settings-%3Eaccount-%3Eadult_content-%3Econfirm_popup-%3Emessage
+msgid ""
+"By enabling this setting age-restricted materials including nudity and "
+"explicit depictions of sexual activity can be displayed while browsing TMDB. "
+"By agreeing to enable this setting, you affirm that you are at least 18 "
+"years of age or the age of majority in the jurisdiction you are accessing "
+"the website from and you consent to viewing sexually explicit content."
+msgstr ""
+
+#: settings-%3Eaccount-%3Eadult_content-%3Econfirm_popup-%3Econfirm_button
+msgid "Yes, I am 18 or older"
+msgstr ""
+
+#: settings-%3Eaccount-%3Eadult_content-%3Econfirm_popup-%3Ecancel_button
+msgid "Cancel, I am under 18"
+msgstr ""
 
 #: settings-%3Eapi-%3Eapi
 msgctxt "settings->api->api"
