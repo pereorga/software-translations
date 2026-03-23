@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 08:20+0000\n"
+"POT-Creation-Date: 2026-03-23 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,76 +13,32 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.12.2\n"
 
 #: DataSource
-msgid "Temp"
-msgstr "Temp."
-
-#: DataSource
-msgid "Temperature"
-msgstr "Temperatura"
-
-#: DataSource
 msgid "Teams"
 msgstr "Equips"
 
 #: DataSource
-msgid "Semaphores"
-msgstr "Semàfors"
-
-#: DataSource
-msgid "TX"
-msgstr "TX"
+msgid "Temp"
+msgstr "Temp."
 
 #: DataSource
 msgid "Block cache memory"
 msgstr "Bloca la memòria cau"
-
-#: SettingsWindow
-msgid "%lld ms"
-msgstr "%lld ms"
 
 #: DataSource
 msgid "Media nodes"
 msgstr "Nodes de mitjans"
 
 #: DataSource
-msgid "Text clipboard"
-msgstr "Porta-retalls per a text"
-
-#: DataSource
 msgid "Network send"
 msgstr "Envia amb la xarxa"
-
-#: DataSource
-msgid "Cache"
-msgstr "Memòria cau"
-
-#: DataSource
-msgid "Running applications"
-msgstr "Aplicacions en execució"
-
-#: DataSource
-msgid "CPU usage (combined)"
-msgstr "Ús de la CPU (combinat)"
 
 #: DataSource
 msgid "Threads"
 msgstr "Fils"
 
-#: DataSource
-msgid "Receiving"
-msgstr "Es rep"
-
 #: ActivityView
 msgid "Remove graph"
 msgstr "Suprimeix el gràfic"
-
-#: DataSource
-msgid "Swap space"
-msgstr "Espai d'intercanvi"
-
-#: DataSource
-msgid "CPU"
-msgstr "CPU"
 
 #: System+name
 msgid "ActivityMonitor"
@@ -95,10 +51,6 @@ msgstr "CPU %d"
 #: SettingsWindow
 msgid "Update time interval:"
 msgstr "Interval d'actualització:"
-
-#: DataSource
-msgid "RX"
-msgstr "RX"
 
 #: ActivityWindow
 msgid "Settings…"
@@ -117,16 +69,12 @@ msgid "No thermal sensor"
 msgstr "Sense sensor tèrmic"
 
 #: DataSource
-msgid "CPU usage"
-msgstr "Ús de la CPU"
-
-#: DataSource
 msgid "CPU speed"
 msgstr "Velocitat de la CPU"
 
-#: ActivityWindow
-msgid "Quit"
-msgstr "Surt"
+#: DataSource
+msgid "CPU usage"
+msgstr "Ús de la CPU"
 
 #: DataSource
 msgid "Raw clipboard"
@@ -140,45 +88,105 @@ msgstr "Paràmetres"
 msgid "Used memory"
 msgstr "Memòria usada"
 
-#: ActivityView
-msgid "Show legend"
-msgstr "Mostra la llegenda"
-
 #: DataSource
 msgid "Cached memory"
 msgstr "A la memòria cau"
-
-#: DataSource
-msgid "CPU %d usage"
-msgstr "Ús de la CPU %d"
-
-#: DataSource
-msgid "CPU %d speed"
-msgstr "Velocitat de la CPU %d"
-
-#: ActivityWindow
-msgid "File"
-msgstr "Fitxer"
 
 #: DataSource
 msgid "Ports"
 msgstr "Ports"
 
 #: DataSource
-msgid "Page faults"
-msgstr "Errors de pàgina"
-
-#: ActivityView
-msgid "Additional items"
-msgstr "Elements addicionals"
-
-#: DataSource
 msgid "Apps"
 msgstr "Aplicacions"
+
+#: DataSource
+msgid "Page faults"
+msgstr "Errors de pàgina"
 
 #: ActivityWindow
 msgid "Add graph"
 msgstr "Afegeix-hi un gràfic"
+
+#: DataSource
+msgid "Swap"
+msgstr "Memòria d'intercanvi"
+
+#: DataSource
+msgid "%s faults/s"
+msgstr "%s errors/s"
+
+#: DataSource
+msgid "Temperature"
+msgstr "Temperatura"
+
+#: DataSource
+msgid "Semaphores"
+msgstr "Semàfors"
+
+#: DataSource
+msgid "TX"
+msgstr "TX"
+
+#: SettingsWindow
+msgid "%lld ms"
+msgstr "%lld ms"
+
+#: DataSource
+msgid "Text clipboard"
+msgstr "Porta-retalls per a text"
+
+#: DataSource
+msgid "Running applications"
+msgstr "Aplicacions en execució"
+
+#: DataSource
+msgid "Cache"
+msgstr "Memòria cau"
+
+#: DataSource
+msgid "CPU usage (combined)"
+msgstr "Ús de la CPU (combinat)"
+
+#: DataSource
+msgid "Receiving"
+msgstr "Es rep"
+
+#: DataSource
+msgid "Swap space"
+msgstr "Espai d'intercanvi"
+
+#: DataSource
+msgid "CPU"
+msgstr "CPU"
+
+#: DataSource
+msgid "RX"
+msgstr "RX"
+
+#: ActivityWindow
+msgid "Quit"
+msgstr "Surt"
+
+#: ActivityView
+msgid "Show legend"
+msgstr "Mostra la llegenda"
+
+#: ActivityWindow
+msgid "File"
+msgstr "Fitxer"
+
+#: DataSource
+msgid "CPU %d speed"
+msgstr "Velocitat de la CPU %d"
+
+#: DataSource
+msgid "CPU %d usage"
+msgstr "Ús de la CPU %d"
+
+#: ActivityView
+msgid "Additional items"
+msgstr "Elements addicionals"
 
 #: DataSource
 msgid "Sending"
@@ -189,25 +197,17 @@ msgid "Always on top"
 msgstr "Sempre en primer pla"
 
 #: DataSource
-msgid "Swap"
-msgstr "Memòria d'intercanvi"
+msgid "Sems"
+msgstr "Sems"
+
+#: DataSource
+msgid "P-faults"
+msgstr "Errors de pàg."
 
 #: SettingsWindow
 msgid "%lld sec."
 msgstr "%lld seg."
 
 #: DataSource
-msgid "P-faults"
-msgstr "Errors de pàg."
-
-#: DataSource
-msgid "Sems"
-msgstr "Sems"
-
-#: DataSource
 msgid "Network receive"
 msgstr "Rep de la xarxa"
-
-#: DataSource
-msgid "%s faults/s"
-msgstr "%s errors/s"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 08:20+0000\n"
+"POT-Creation-Date: 2026-03-23 08:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,10 @@ msgstr "Desa"
 msgid "Untitled %d"
 msgstr "%d sense títol"
 
+#: RevertToSavedAlert
+msgid "Cannot revert, file not found: \\\"%filename%\\\"."
+msgstr "No es pot revertir. No s'ha trobat el fitxer \\\"%filename%\\\"."
+
 #: QuitAlert
 msgctxt "QuitAlert"
 "QuitAlert"
@@ -109,6 +113,14 @@ msgstr "???"
 msgid "Recover"
 msgstr "Recupera"
 
+#: QuitAlert
+msgid ""
+"Unable to unlock file\\n"
+"\\t%error%"
+msgstr ""
+"No s'ha pogut desblocar el fitxer\\n"
+"\\t%error%"
+
 #: RevertToSavedAlert
 msgctxt "RevertToSavedAlert"
 msgid "OK"
@@ -129,6 +141,14 @@ msgstr "No es pot refer"
 #: Menus
 msgid "Replace…"
 msgstr "Reemplaça..."
+
+#: SaveAlert
+msgid ""
+"This file is marked read-only. Save changes to the document \\\"%filename%\\"
+"\"? "
+msgstr ""
+"Aquest fitxer està marcat com a només de lectura. Voleu desar els canvis al "
+"document \\\"%filename%\\\"?"
 
 #: Menus
 msgid "File"
@@ -167,9 +187,29 @@ msgid "Replace in all windows"
 msgstr "Reemplaça-ho a totes les finestres"
 
 #: SaveAlert
+msgid ""
+"Error saving \\\"%filename%\\\":\\n"
+"%error%"
+msgstr ""
+"Hi ha hagut un error en desar \\\"%filename%\\\":\\n"
+"%error%"
+
+#: QuitAlert
+msgid "Save changes to the document \\\"%title%\\\"?"
+msgstr "Voleu desar els canvis al document \\\"%title%\\\"?"
+
+#: SaveAlert
 msgctxt "SaveAlert"
 msgid "Save"
 msgstr "Desa"
+
+#: RevertToSavedAlert
+msgid ""
+"\\\"%title%\\\" has unsaved changes.\\n"
+"Revert it to the last saved version?"
+msgstr ""
+"El fitxer \\\"%title%\\\" té canvis no desats.\\n"
+"Voleu revertir-lo a la darrera versió desada?"
 
 #: Open_and_SaveAsPanel
 msgctxt "Open_and_SaveAsPanel"
@@ -349,6 +389,14 @@ msgstr "Reemplaça"
 msgid "Characters:"
 msgstr "Caràcters:"
 
+#: LoadAlert
+msgid ""
+"Error loading \\\"%filename%\\\":\\n"
+"\\tUnsupported format"
+msgstr ""
+"Hi ha hagut un error en carregar \\\"%filename%\\\":\\n"
+"\\tFormat no compatible"
+
 #: QuitAlert
 msgctxt "QuitAlert"
 msgid "Don't save"
@@ -369,3 +417,11 @@ msgstr "Selecciona-ho tot"
 #: Menus
 msgid "Right"
 msgstr "Dreta"
+
+#: LoadAlert
+msgid ""
+"Error loading \\\"%filename%\\\":\\n"
+"\\t%error%"
+msgstr ""
+"Hi ha hagut un error en carregar \\\"%filename%\\\":\\n"
+"\\t%error%"
