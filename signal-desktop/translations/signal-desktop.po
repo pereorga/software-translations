@@ -5275,6 +5275,30 @@ msgctxt "icu:GroupV2--access-members--all--unknown"
 msgid "An admin changed who can edit group membership to \"All members.\""
 msgstr "Un administrador ha canviat qui pot canviar els membres del grup a Tots els membres."
 
+msgctxt "icu:GroupV2--access-member-label--admins--you"
+msgid "You changed who can add member labels to \"Only admins.\""
+msgstr "Has canviat qui pot afegir categories de membres a \"Només els administradors\"."
+
+msgctxt "icu:GroupV2--access-member-label--admins--other"
+msgid "{adminName} changed who can add member labels to \"Only admins.\""
+msgstr "{adminName} ha canviat qui pot afegir categories de membres a \"Només els administradors\"."
+
+msgctxt "icu:GroupV2--access-member-label--admins--unknown"
+msgid "An admin changed who can add member labels to \"Only admins.\""
+msgstr "Un admin ha canviat qui pot afegir categories de membres a \"Només els administradors\"."
+
+msgctxt "icu:GroupV2--access-member-label--all--you"
+msgid "You changed who can add member labels to \"All members.\""
+msgstr "Has canviat qui pot afegir categories de membres a \"Tots els membres\"."
+
+msgctxt "icu:GroupV2--access-member-label--all--other"
+msgid "{adminName} changed who can add member labels to \"All members.\""
+msgstr "{adminName} ha canviat qui pot afegir categories de membres a \"Tots els membres\"."
+
+msgctxt "icu:GroupV2--access-member-label--all--unknown"
+msgid "An admin changed who can add member labels to \"All members.\""
+msgstr "Un admin ha canviat qui pot afegir categories de membres a \"Tots els membres\"."
+
 msgctxt "icu:GroupV2--access-invite-link--disabled--you"
 msgid "You disabled admin approval for the group link."
 msgstr "Heu desactivat l'aprovació de l'administrador per a l'enllaç de grup."
@@ -6147,6 +6171,10 @@ msgctxt "icu:ContactModal--confirm-mute-primary-button"
 msgid "Mute"
 msgstr "Silenciats"
 
+msgctxt "icu:ContactModal--remove-from-call"
+msgid "Remove from call"
+msgstr "Expulsar de la trucada"
+
 msgctxt "icu:GroupMemberLabelInfoModal--title"
 msgid "Member labels"
 msgstr "Categories de membres"
@@ -6286,6 +6314,14 @@ msgstr "Qui pot enviar missatges"
 msgctxt "icu:ConversationDetails--announcement-info"
 msgid "Choose who can send messages to the group."
 msgstr "Qui pot enviar missatges al grup"
+
+msgctxt "icu:ConversationDetails--member-label--label"
+msgid "Who can add member labels"
+msgstr "Qui pot afegir categories de membre"
+
+msgctxt "icu:ConversationDetails--member-label--info"
+msgid "Choose who can add member labels in this group."
+msgstr "Tria qui pot afegir categories de membre a aquest grup."
 
 msgctxt "icu:ConversationDetails--label-clear-warning--title"
 msgid "Member labels will be cleared"
@@ -6607,6 +6643,10 @@ msgctxt "icu:DeleteMessagesModal--adminDeleteConfirmation--description"
 msgid "As an admin, group members will see that you deleted {count, plural, one {this message} other {these messages}}."
 msgstr "{count, plural, one {Com a admin, els membres del grup veuran que has eliminat aquest missatge.} other {Com a admin, els membres del grup veuran que has eliminat aquests missatges.}}"
 
+msgctxt "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout"
+msgid "Group members on the latest versions of Signal will see that you deleted {count, plural, one {this message} other {these messages}}."
+msgstr "{count, plural, one {Group members on the latest versions of Signal will see that you deleted this message.} other {Group members on the latest versions of Signal will see that you deleted these messages.}}"
+
 msgctxt "icu:DeleteMessagesModal--deleteFromAllDevices"
 msgid "Delete from all devices"
 msgstr "Eliminar de tots els dispositius"
@@ -6618,6 +6658,14 @@ msgstr "Suprimeix"
 msgctxt "icu:DeleteMessagesModal__toast--TooManyMessagesToDeleteForEveryone"
 msgid "You can only select up to {count, plural, one {# message} other {# messages}} to delete for everyone"
 msgstr "{count, plural, one {Només pots seleccionar {count,number} missatge per eliminar per a tothom} other {Només pots seleccionar {count,number} missatges per eliminar per a tothom}}"
+
+msgctxt "icu:DiscardDraftDialog__title"
+msgid "Discard draft?"
+msgstr "Descartar l'esborrany?"
+
+msgctxt "icu:DiscardDraftDialog__description"
+msgid "This action can't be undone."
+msgstr "Aquesta acció no es pot desfer."
 
 msgctxt "icu:DeleteAttachmentModal__Title"
 msgid "Delete item?"
@@ -8091,9 +8139,17 @@ msgctxt "icu:Preferences__local-backups"
 msgid "Desktop backups"
 msgstr "Còpies de seguretat d'escriptori"
 
+msgctxt "icu:Preferences__local-backups-section__description"
+msgid "Your backup is end-to-end encrypted and stored on your computer."
+msgstr "La teva còpia de seguretat es xifra d'extrem a extrem i es guarda al teu ordinador."
+
 msgctxt "icu:Preferences--local-backups-off-description"
 msgid "Create an end-to-end encrypted backup that you can restore on your phone. "
 msgstr "Crea una còpia de seguretat xifrada d'extrem a extrem que podràs restaurar al teu telèfon. "
+
+msgctxt "icu:Preferences--local-backups-restore-info"
+msgid "To restore a backup, install a new copy of Signal on your phone. Open the app and tap “Restore or transfer.” <learnMoreLink>Learn more.</learnMoreLink>"
+msgstr "Per restaurar una còpia de seguretat, torna a instal·lar Signal al teu telèfon. Obre l'app i toca “Restaurar o transferir”. <learnMoreLink>Més informació.</learnMoreLink>"
 
 msgctxt "icu:Preferences--local-backups-setup-folder"
 msgid "Choose a folder"
@@ -10434,3 +10490,7 @@ msgstr "Ja són aquí les còpies de seguretat segures de Signal! Ara pots activ
 msgctxt "icu:WhatsNew__8.2--0"
 msgid "Now you can send view-once media messages from Signal Desktop too. Individual photos and videos that are sent as view-once messages will be automatically removed from a conversation thread after they have been viewed."
 msgstr "Ara també pots enviar missatges multimèdia d'una única visualització des de Signal Desktop. Les fotos i vídeos individuals que s'enviïn com a missatges de visualització única s'eliminaran automàticament de la conversa un cop s'hagin vist."
+
+msgctxt "icu:WhatsNew__8.3--0"
+msgid "Now you can optionally add a member label to describe yourself or your role in a group chat. Set your group member label to \"Referee\" or \"Goalie\" in your local rec league soccer chat to help kick things off when new teammates join, then choose a different label with your job title in the company chat. Member labels appear next to your profile name in that group, and group admins can control whether or not they are enabled for everyone."
+msgstr "Ara tens l'opció d'afegir una categoria de membre per descriure't a tu mateix o el teu rol en un xat grupal. La categoria de membre apareix al costat del teu nom de perfil al grup i els admins decideixen si aquesta opció està activa (o no) per a tothom."
