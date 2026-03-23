@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-23 08:12+0000\n"
+"POT-Creation-Date: 2026-03-23 08:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1214,6 +1214,10 @@ msgstr ""
 "Utilitzeu aquesta opció per suavitzar la imatge. Desactiveu-ho si trobeu cap "
 "problema amb el renderitzat"
 
+#: .ubuntu-21-04-required
+msgid "Wayland requires Ubuntu 21.04 or higher version."
+msgstr "Wayland requereix Ubuntu 21.04 o superior"
+
 #: .update-failed-check-msi-tip
 msgid ""
 "Installation method check failed. Please click the \"Download\" button to "
@@ -1257,6 +1261,15 @@ msgstr ""
 msgid "Please wait for the remote user to accept the UAC dialog."
 msgstr ""
 "Espereu fins que l'usuari remot accepti la finestra de diàleg de l'«UAC»."
+
+#: .wayland-requires-higher-linux-version
+msgid ""
+"Wayland requires higher version of linux distro. Please try X11 desktop or "
+"change your OS."
+msgstr ""
+"Wayland requereix una versió superior de sistema Linux per a funcionar. "
+"Proveu iniciant un entorn d'escriptori amb x11 o actualitzeu el vostre "
+"sistema operatiu."
 
 #: .wayland_experiment_tip
 msgid ""
@@ -1304,6 +1317,13 @@ msgid ""
 msgstr ""
 "Codi 2FA no vàlid. Verifiqueu el que heu escrit i també que la configuració "
 "horària sigui correcta"
+
+#: .xdp-portal-unavailable
+msgid ""
+"Wayland screen capture failed. The XDG Desktop Portal may have crashed or is "
+"unavailable. Try restarting it with `systemctl --user restart xdg-desktop-"
+"portal`."
+msgstr ""
 
 #: .xorg_not_found_text_tip
 msgid "Please install Xorg"
