@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-02 08:10+0000\n"
+"POT-Creation-Date: 2026-03-23 08:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgstr "Trieu el títol"
 
 #: CHOOSE_CHAPTER
 msgid "Choose Chapter"
-msgstr "Trieu el càpitol"
+msgstr "Trieu el capítol"
 
 #: CHAPTER_SELECTION_TITLE
 msgid "Chapters"
@@ -193,7 +193,7 @@ msgstr "Preamplifica"
 
 #: SNAP_BANDS
 msgid "Snap bands"
-msgstr "Captura les bandes"
+msgstr "Bandes d’ajust"
 
 #: PLAYBACK_FAILED
 msgid "Playback failed"
@@ -281,7 +281,7 @@ msgstr "Omet"
 
 #: BUTTON_CONTACT
 msgid "Contact us"
-msgstr "Contacte"
+msgstr "Contacteu amb nosaltres"
 
 #: BUTTON_CONNECT
 msgid "Connect"
@@ -468,11 +468,11 @@ msgstr "Trieu un fitxer per obrir:"
 
 #: SHARING_ACTIVITY_OPEN_IN_TITLE
 msgid "Open In..."
-msgstr "Obrir en..."
+msgstr "Obre amb..."
 
 #: SHARING_ERROR_NO_FILES
 msgid "Could not find any files to share"
-msgstr "Cap arxiu per a compartir"
+msgstr "No s'ha trobat cap arxiu per a compartir"
 
 #: SHARING_ERROR_NO_APPLICATIONS
 msgid "Could not find any applications to open this type of file"
@@ -484,11 +484,11 @@ msgstr "L'arxiu s'ha guardat satisfactòriament en el Rodet"
 
 #: FAVORITEVC_DETAILTEXT
 msgid "See your favorite folders"
-msgstr "Visualitzar les carpetes preferides"
+msgstr "Visualitzar les vostres carpetes preferides"
 
 #: STREAMVC_DETAILTEXT
 msgid "Play streams directly without downloading"
-msgstr "Reproduir streams directament sense descarregar"
+msgstr "Reproduir estrímings directament sense descarregar"
 
 #: DOWNLOADVC_DETAILTEXT
 msgid "Download files directly to your device"
@@ -496,7 +496,7 @@ msgstr "Descarrega els arxius directament al teu dispositiu"
 
 #: CLOUDVC_DETAILTEXT
 msgid "Play or download media from online services"
-msgstr ""
+msgstr "Reproduir o descarregar contingut multimèdia des de serveis en línia"
 
 #: HEADER_TITLE_RENDERER
 msgid "Select a casting device"
@@ -573,7 +573,7 @@ msgstr "Inici de sessió"
 
 #: LOGGED_IN
 msgid "Logged in"
-msgstr "Va entrar en"
+msgstr "Sessió iniciada"
 
 #: DROPBOX_DOWNLOAD
 msgid "Download file?"
@@ -594,7 +594,7 @@ msgstr "Error de recuperació de fitxers"
 
 #: GDRIVE_DOWNLOAD_SUCCESSFUL
 msgid "Your file has been successfully downloaded"
-msgstr "El fitxer s'ha baixat satisfactòriament"
+msgstr "El fitxer s'ha baixat correctament"
 
 #: GDRIVE_DOWNLOAD_SUCCESSFUL_TITLE
 msgid "SUCCESS"
@@ -602,7 +602,7 @@ msgstr "ÈXIT"
 
 #: GDRIVE_ERROR_DOWNLOADING_FILE
 msgid "An error occured while downloading"
-msgstr "S'ha produït una errada mentre es baixava"
+msgstr "S'ha produït un error durant la descàrrega"
 
 #: ONEDRIVE_MEDIA_WITHOUT_URL
 msgid "The selected Media doesn't have a playable url"
@@ -659,7 +659,7 @@ msgstr "Introduïu la clau d'accés"
 
 #: Enter+a+passcode
 msgid "Enter a passcode"
-msgstr "Entra una clau d'accés"
+msgstr "Introduïu una clau d'accés"
 
 #: Enter+your+passcode
 msgid "Enter your passcode"
@@ -667,11 +667,11 @@ msgstr "Introduïu la clau d'accés"
 
 #: Passcodes+did+not+match.+Try+again.
 msgid "Passcodes did not match. Try again."
-msgstr "Les claus d'accés no coincideixen. Intenta-ho de nou."
+msgstr "Les claus d'accés no coincideixen. Torneu-ho a provar."
 
 #: Re-enter+your+passcode
 msgid "Re-enter your passcode"
-msgstr "Repeteix la clau d'accés"
+msgstr "Torneu a introduir la clau d'accés"
 
 #: Passcode+Options
 msgid "Passcode Options"
@@ -687,7 +687,11 @@ msgstr ""
 "Codi numèric de 4 dígits\"; /* Passcode 4 digit numeric code */\"6-Digit "
 "Numeric Code\" = \"Codi numèric de 6 dígits\"; /* Passcode 6 digit numeric "
 "code */\"Settings\" = \"Paràmetres\"; // plain text key to keep "
-"compatibility with InAppSettingsKit's upstream\"ON\" = \"On"
+"compatibility with InAppSettingsKit's upstream\"ON\" = \"Activat"
+
+#: OFF
+msgid "Off"
+msgstr "Desactivat"
 
 #: EMPTY_LIBRARY
 msgid "Empty Media Library"
@@ -727,7 +731,7 @@ msgstr "Llista de reproducció buida"
 
 #: EMPTY_PLAYLIST_DESCRIPTION
 msgid "Add media while editing in the respective categories."
-msgstr "Agregar arxius mentre s'editen en les respectives categories."
+msgstr "Afegeix arxius multimèdia mentre edites a les categories corresponents."
 
 #: EMPTY_HISTORY
 msgid "Empty History"
@@ -811,12 +815,12 @@ msgstr "Reprodueix"
 
 #: NEXT_BUTTON
 msgid "Next"
-msgstr "Endavant"
+msgstr "Següent"
 
 #: PREV_BUTTON
 msgctxt "PREV_BUTTON"
 msgid "Previous"
-msgstr "Enrere"
+msgstr "Anterior"
 
 #: PLAY_ALL_BUTTON
 msgid "Play all"
@@ -840,7 +844,7 @@ msgstr "Voleu restablir els paràmetres de l'equalitzador?"
 
 #: RESET_SLEEP_TIMER
 msgid "Do you want to reset the sleep timer?"
-msgstr "Voleu restablir el temporitzador?"
+msgstr "Voleu restablir el temporitzador de repòs?"
 
 #: CUSTOM_EQUALIZER_PROFILES
 msgid "Custom profiles"
@@ -860,7 +864,7 @@ msgstr "Voleu desar un perfil nou amb els valors seleccionats?"
 
 #: RENAME_CUSTOM_PROFILE_TITLE
 msgid "Rename the profile"
-msgstr "Canvia de nom el perfil"
+msgstr "Canvia el nom del perfil"
 
 #: DELETE_CUSTOM_PROFILE_TITLE
 msgid "Delete the profile"
@@ -896,7 +900,7 @@ msgstr "Sincronització de fitxers"
 
 #: FIRST_STEPS_ITUNES_TITLE
 msgid "Sync With Your Computer"
-msgstr "Sincronitzi amb el seu ordinador"
+msgstr "Sincronitza amb el vostre ordinador"
 
 #: FIRST_STEPS_ITUNES_DETAILS
 msgid ""
@@ -931,8 +935,8 @@ msgid ""
 "Upload your media to a cloud service like Google Drive or Dropbox to "
 "remotely download or stream them."
 msgstr ""
-"Puja els teus arxius a un núvol com Google Drive o Dropbox per a descarregar-"
-"los o fer streaming de forma remota."
+"Pugeu els vostres arxius a un núvol com Google Drive o Dropbox per a "
+"descarregar-los o fer estríming de forma remota."
 
 #: PLEX_CHECK_ACCOUNT
 msgid "Check your Plex account in settings"
@@ -952,7 +956,7 @@ msgstr "Servidor"
 
 #: ENTER_SERVER_ADDRESS
 msgid "Enter server address"
-msgstr ""
+msgstr "Informeu l'adreça del servidor"
 
 #: NO_SERVER_FOUND
 msgid "No server found"
@@ -960,7 +964,7 @@ msgstr "No s'ha trobat cap servidor"
 
 #: NO_RECENT_STREAMS
 msgid "No stream was played recently"
-msgstr "Recentment no s'ha reproduït cap stream"
+msgstr "Recentment no s'ha reproduït cap estríming"
 
 #: WEBINTF_TITLE
 msgid "Sharing via Wi-Fi"
@@ -1520,11 +1524,11 @@ msgstr "elements seleccionats"
 #. MARK: - VideoPlayerControls
 #: PRIMARY_SUBTITLES
 msgid "PRIMARY SUBTITLE"
-msgstr ""
+msgstr "SUBTÍTOL PRINCIPAL"
 
 #: SECONDARY_SUBTITLES
 msgid "SECONDARY SUBTITLE"
-msgstr ""
+msgstr "SUBTÍTOL SECUNDARI"
 
 #: SUBTITLE_AND_TRACK_BUTTON
 msgid "Subtitles and audio tracks"
@@ -1806,19 +1810,21 @@ msgstr "Habilita l'opció per bloquejar la interfície de l'usuari"
 
 #: SNAPSHOT_SAVED
 msgid "Snapshot Saved"
-msgstr ""
+msgstr "S'ha desat la captura"
 
 #: SNAPSHOT_SAVED_TO_CAMERA_ROLL
 msgid "Snapshot saved to Camera Roll"
-msgstr ""
+msgstr "La captura s'ha desat al Rodet"
 
 #: SNAPSHOT_FAILED
 msgid "Snapshot Failed"
-msgstr ""
+msgstr "S'ha produït un error a la captura"
 
 #: SNAPSHOT_FAILED_MESSAGE
 msgid "Unable to save snapshot. Please ensure photo library access is granted."
 msgstr ""
+"No es pot desar la captura. Assegureu-vos que està permès l'accés a la "
+"biblioteca de fotos."
 
 #.
 #. MARK: - Settings
@@ -2306,6 +2312,16 @@ msgstr "Busca el %i%% de la durada"
 msgid "Jump to the next frame"
 msgstr "Salta al següent fotograma"
 
+#.
+#. MARK: - Custom Playback Speed
+#: SETTINGS_CUSTOM_PLAYBACK_SPEED
+msgid "Custom Speed"
+msgstr "Velocitat personalitzada"
+
+#: SETTINGS_CUSTOM_PLAYBACK_SPEED_MESSAGE
+msgid "Enter a speed between 0.25 and 8.0"
+msgstr "Introduïu una velocitat entre 0.25 i 8.0"
+
 #: SETTINGS_INVALID_SPEED_VALUE
 msgid ""
 "Please enter a valid number between 0.25 and 8.0\"; /* Please enter a valid "
@@ -2313,8 +2329,8 @@ msgid ""
 "TitleSelection\"TITLESELECTION_BACKGROUND_LABEL\" = \"Title selection "
 "background"
 msgstr ""
-"Please enter a valid number between 0.25 and 8.0\"; /* Please enter a valid "
-"number between 0.25 and 8.0 */// MARK: - "
+"Introduïu un número vàlid entre 0.25 i 8.0\"; /* Please enter a valid number "
+"between 0.25 and 8.0 */// MARK: - "
 "TitleSelection\"TITLESELECTION_BACKGROUND_LABEL\" = \"Fons de selecció de "
 "títols"
 
@@ -2386,20 +2402,20 @@ msgstr "Última reproducció"
 #. MARK - something with folders
 #: BUTTON_FOLDER
 msgid "Folders"
-msgstr ""
+msgstr "Carpetes"
 
 #: BUTTON_FOLDER_HINT
 msgid "Browse your folders"
-msgstr ""
+msgstr "Exploreu les vostres carpetes"
 
 #: EMPTY_FOLDER
 msgid "Empty Folder"
-msgstr ""
+msgstr "Carpeta buida"
 
 #: EMPTY_FOLDER_DES
 msgid "Add audio or video media in this folder"
-msgstr ""
+msgstr "Afegir contingut multimèdia d'àudio o vídeo en aquesta carpeta"
 
 #: SUBFOLDERS_DESCRIPTION
 msgid "%d subfolders"
-msgstr ""
+msgstr "%d subcarpetes"
