@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 08:20+0000\n"
+"POT-Creation-Date: 2026-03-23 08:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -269,26 +269,10 @@ msgstr "Codi d’èxit"
 msgid "Error code: {0}"
 msgstr "Codi d''error\\: {0}"
 
+#. Used in Messages.DISPLAY_UNSUPPORTED
 #: displayUnsupported
 msgid "Requested display type unsupported"
 msgstr "El tipus de visualització demanat no és compatible"
-
-#: browserRequired
-msgid "Browser required to login"
-msgstr "Es requereix un navegador per a entrar"
-
-#: browserContinue
-msgid "Browser required to complete login"
-msgstr "Es requereix un navegador per a completar l''entrada"
-
-#: browserContinuePrompt
-msgid "Open browser and continue login? [y/n]:"
-msgstr "Voleu obrir el navegador i continuar l''entrada? [s/n]:"
-
-#: browserContinueAnswer
-msgctxt "browserContinueAnswer"
-msgid "y"
-msgstr "s"
 
 #.
 #. Transports
@@ -1804,7 +1788,6 @@ msgid "Accept Terms? [y/n]:"
 msgstr "Voleu acceptar els termes? [s/n]:"
 
 #: console-accept
-msgctxt "console-accept"
 msgid "y"
 msgstr "s"
 
@@ -2118,6 +2101,29 @@ msgstr "Creada"
 #: passkey-autofill-select
 msgid "Select your passkey"
 msgstr "Seleccioneu la vostra passkey"
+
+#.
+#. OID4VCI
+#: credentialOfferTitle
+msgid "Claim your {0}"
+msgstr ""
+
+#: credentialOfferStep1
+msgid ""
+"Claim your {0} by scanning the following QR code with your digital wallet in "
+"case it is on a different device. Alternatively, open the Offer URL directly "
+"if your digital wallet is available on this device."
+msgstr ""
+
+#: credentialOfferStep2
+msgid ""
+"Continue with login to the application once you successfully obtained {0} to "
+"your wallet."
+msgstr ""
+
+#: credentialOfferUri
+msgid "Offer URL"
+msgstr ""
 
 #.
 #. Identity provider
