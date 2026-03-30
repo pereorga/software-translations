@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 08:17+0000\n"
+"POT-Creation-Date: 2026-03-30 08:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -7526,6 +7526,30 @@ msgstr "%{date} a les %{time}"
 msgid "%{date} at %{time}<br>by %{username}"
 msgstr "%{date} a les %{time} h<br>per %{username}"
 
+#: discussions-%3Ecategory-%3Elast_reply_with_datetime_v2
+msgid "last reply on %{date} at %{time}"
+msgstr ""
+
+#: discussions-%3Ecategory-%3Elast_reply_with_datetime_and_username_v2
+msgid "last reply by %{username} on %{date} at %{time}"
+msgstr ""
+
+#: discussions-%3Ecategory-%3Eposted_by_with_datetime
+msgid "posted <time class=\"timeago\" datetime=\"%{time}\">%{time}</time>"
+msgstr ""
+
+#: discussions-%3Ecategory-%3Eposted_by_with_datetime_and_username
+msgid ""
+"%{username} posted <time class=\"timeago\" datetime=\"%{time}\""
+">%{time}</time>"
+msgstr ""
+
+#: discussions-%3Ecategory-%3Ereplied_by_with_datetime_and_username
+msgid ""
+"%{username} replied <time class=\"timeago\" datetime=\"%{time}\""
+">%{time}</time>"
+msgstr ""
+
 #: discussions-%3Ediscussion_activity
 msgid "Discussion Activity"
 msgstr "Activitat de debat"
@@ -14524,6 +14548,7 @@ msgid "Hardcore"
 msgstr ""
 
 #: media-%3Emovie-%3Eedit-%3Eadult-%3Estatus-%3Esoftcore
+msgctxt "media->movie->edit->adult->status->softcore"
 msgid "Softcore"
 msgstr ""
 
@@ -16653,6 +16678,11 @@ msgstr "Cerqueu llistes de seguiment de sèries..."
 
 #: search-%3Efor_media
 msgid "Search for a %{media_type}..."
+msgstr ""
+
+#: search-%3Esoftcore
+msgctxt "search->softcore"
+msgid "Softcore"
 msgstr ""
 
 #: search_text_validation_error
