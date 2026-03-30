@@ -6645,7 +6645,7 @@ msgstr "{count, plural, one {Com a admin, els membres del grup veuran que has el
 
 msgctxt "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout"
 msgid "Group members on the latest versions of Signal will see that you deleted {count, plural, one {this message} other {these messages}}."
-msgstr "{count, plural, one {Group members on the latest versions of Signal will see that you deleted this message.} other {Group members on the latest versions of Signal will see that you deleted these messages.}}"
+msgstr "{count, plural, one {Els membres del grup que tinguin la versió més recent de Signal podran veure que has eliminat aquest missatge.} other {Els membres del grup que tinguin la versió més recent de Signal podran veure que has eliminat aquests missatges.}}"
 
 msgctxt "icu:DeleteMessagesModal--deleteFromAllDevices"
 msgid "Delete from all devices"
@@ -8242,6 +8242,22 @@ msgstr "Carpeta de còpia de seguretat"
 msgctxt "icu:Preferences__local-backups-folder__change"
 msgid "Change"
 msgstr "Canviar"
+
+msgctxt "icu:Preferences__local-backups-turn-off"
+msgid "Turn off backups"
+msgstr "Desactivar les còpies de seguretat"
+
+msgctxt "icu:Preferences__local-backups-turn-off-action"
+msgid "Turn off"
+msgstr "Desactiva"
+
+msgctxt "icu:Preferences__local-backups-turn-off-confirmation"
+msgid "You will no longer be able to create backups on this computer without re-enabling."
+msgstr "Si no ho reactives, ja no podràs crear còpies de seguretat en aquest ordinador."
+
+msgctxt "icu:Preferences__local-backups-turn-off-delete"
+msgid "Delete my backup from this computer"
+msgstr "Eliminar la meva còpia de seguretat d'aquest ordinador"
 
 msgctxt "icu:Preferences__local-backups-copy-key"
 msgid "Copy to clipboard"
@@ -10478,18 +10494,6 @@ msgstr "Petits ajustos addicionals, correccions d'errors i un munt de plans pel 
 msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
-
-msgctxt "icu:WhatsNew__7.90--0"
-msgid "Make privacy stick with five new official sticker packs in the Signal Artist Series: \"Chug the Mouse\" by Amanda Cotan, \"Cozy Season\" by Miguel Ángel Camprubí, \"Croco's Feelings\" by Tiffany Beucher, \"My Daily Life 2\" by Plastic Thing, and \"Rocky Talk\" by Lexi Vay."
-msgstr "Cinc nous paquets d'adhesius d'artistes oficials."
-
-msgctxt "icu:WhatsNew__8.0--0"
-msgid "Signal secure backups are here! Now you can choose to enable automatic end-to-end encrypted backups so you'll never lose a message when you get a new phone or reinstall Signal. You can back up all of your messages and the last 45 days of media for free, or you can pay a small monthly fee to get 100 GB of storage to back up every attachment. Tap on backups in your Signal settings to get started. Thanks to everyone who helped test this feature during the beta period!"
-msgstr "Ja són aquí les còpies de seguretat segures de Signal! Ara pots activar còpies de seguretat automàtiques amb xifratge d’extrem a extrem per no perdre cap missatge quan canviïs de telèfon o reinstal·lis l’aplicació. Pots fer còpies de seguretat gratuïtes de tots els teus missatges i dels darrers 45 dies de contingut multimèdia, o bé pagar una petita quota mensual per disposar de 100 GB d’emmagatzematge i desar tots els teus fitxers adjunts. Per començar, ves als ajustos de Signal i toca Còpies de seguretat. Gràcies a tothom que ha ajudat a provar aquesta funció durant el període beta!"
-
-msgctxt "icu:WhatsNew__8.2--0"
-msgid "Now you can send view-once media messages from Signal Desktop too. Individual photos and videos that are sent as view-once messages will be automatically removed from a conversation thread after they have been viewed."
-msgstr "Ara també pots enviar missatges multimèdia d'una única visualització des de Signal Desktop. Les fotos i vídeos individuals que s'enviïn com a missatges de visualització única s'eliminaran automàticament de la conversa un cop s'hagin vist."
 
 msgctxt "icu:WhatsNew__8.3--0"
 msgid "Now you can optionally add a member label to describe yourself or your role in a group chat. Set your group member label to \"Referee\" or \"Goalie\" in your local rec league soccer chat to help kick things off when new teammates join, then choose a different label with your job title in the company chat. Member labels appear next to your profile name in that group, and group admins can control whether or not they are enabled for everyone."
