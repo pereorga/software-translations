@@ -1940,12 +1940,16 @@ msgid "{WHITE}{TOWN} - Cargo History"
 msgstr "{WHITE}{TOWN} - Historial de càrregues"
 
 msgctxt "STR_GRAPH_TOWN_RANGE_PRODUCED"
-msgid "Supply"
-msgstr "Subministrament"
+msgid "Produced"
+msgstr "Produït"
 
 msgctxt "STR_GRAPH_TOWN_RANGE_TRANSPORTED"
 msgid "Transported"
 msgstr "Transportades"
+
+msgctxt "STR_GRAPH_TOWN_RANGE_DELIVERED"
+msgid "Delivered"
+msgstr "Entregat"
 
 msgctxt "STR_GRAPH_PERFORMANCE_DETAIL_TOOLTIP"
 msgid "{BLACK}Show detailed performance ratings"
@@ -13544,11 +13548,11 @@ msgid "{BLACK}Name aircraft"
 msgstr "{BLACK}Anomena avió"
 
 msgctxt "STR_VEHICLE_INFO_AGE"
-msgid "{COMMA} year{P \"\" s} ({COMMA})"
+msgid "{COMMA} year{P \"\" s} (lifetime: {COMMA} year{P \"\" s})"
 msgstr "{COMMA} any{P \"\" s} ({COMMA})"
 
 msgctxt "STR_VEHICLE_INFO_AGE_RED"
-msgid "{RED}{COMMA} year{P \"\" s} ({COMMA})"
+msgid "{RED}{COMMA} year{P \"\" s} (lifetime: {COMMA} year{P \"\" s})"
 msgstr "{RED}{COMMA} any{P \"\" s} ({COMMA})"
 
 msgctxt "STR_VEHICLE_INFO_AGE_RUNNING_COST_YR"
@@ -13596,8 +13600,8 @@ msgid "{BLACK}Profit this period: {LTBLUE}{CURRENCY_LONG} (last period: {CURRENC
 msgstr "{BLACK}Benefici durant aquest període: {LTBLUE}{CURRENCY_LONG} (durant l'últim període: {CURRENCY_LONG}) {BLACK}Rendiment mínim: {LTBLUE}{POWER_TO_WEIGHT}"
 
 msgctxt "STR_VEHICLE_INFO_RELIABILITY_BREAKDOWNS"
-msgid "{BLACK}Reliability: {LTBLUE}{COMMA}%  {BLACK}Breakdowns since last service: {LTBLUE}{COMMA}"
-msgstr "{BLACK}Fiabilitat: {LTBLUE}{COMMA}{NBSP}%  {BLACK}Avaries des de la darrera revisió: {LTBLUE}{COMMA}"
+msgid "{BLACK}Reliability: {LTBLUE}{COMMA}% (max: {COMMA}%)  {BLACK}Breakdowns since last service: {LTBLUE}{COMMA}"
+msgstr "{BLACK}Fiabilitat: {LTBLUE}{COMMA}{NBSP}% (màx: {COMMA}{NBSP}%) {BLACK}Avaries des de la darrera revisió: {LTBLUE}{COMMA}"
 
 msgctxt "STR_VEHICLE_INFO_BUILT_VALUE"
 msgid "{LTBLUE}{ENGINE} {BLACK}Built: {LTBLUE}{NUM}{BLACK} Value: {LTBLUE}{CURRENCY_LONG}"
@@ -14082,6 +14086,10 @@ msgstr "{BLACK}Salta l'ordre actual, i comença la següent. Amb Ctrl+clic, es s
 msgctxt "STR_ORDERS_DELETE_BUTTON"
 msgid "{BLACK}Delete"
 msgstr "{BLACK}Esborra"
+
+msgctxt "STR_ORDERS_DELETE_ALL_BUTTON"
+msgid "{BLACK}Delete All"
+msgstr "{BLACK}Esborra-les totes"
 
 msgctxt "STR_ORDERS_DELETE_TOOLTIP"
 msgid "{BLACK}Delete the highlighted order"
@@ -15157,7 +15165,7 @@ msgstr "L'excavació pot malmetre el túnel."
 
 msgctxt "STR_ERROR_ALREADY_AT_SEA_LEVEL"
 msgid "already at sea level"
-msgstr "{WHITE}Ja sou a nivell de mar"
+msgstr "Ja és a nivell de mar."
 
 msgctxt "STR_ERROR_TOO_HIGH"
 msgid "too high"
@@ -15341,15 +15349,15 @@ msgstr "{WHITE}La fundació ha fallat la prospecció per mala sort. Proveu-ho de
 
 msgctxt "STR_ERROR_NO_SUITABLE_PLACES_FOR_PROSPECTING"
 msgid "there were no suitable places to prospect for this industry"
-msgstr "{WHITE}No hi havia llocs apropiats per a fer la prospecció per a aquesta indústria."
+msgstr "No hi havia llocs apropiats per a fer la prospecció d'aquesta indústria."
 
 msgctxt "STR_ERROR_NO_SUITABLE_PLACES_FOR_INDUSTRIES"
 msgid "There were no suitable places for '{STRING}' industries"
-msgstr "{WHITE}No hi havia llocs adequats per a indústries '{STRING}'"
+msgstr "No hi havia llocs adequats per a indústries «{STRING}»."
 
 msgctxt "STR_ERROR_NO_SUITABLE_PLACES_FOR_INDUSTRIES_EXPLANATION"
 msgid "Change the map generation parameters to get a better map"
-msgstr "{WHITE}Canvia els paràmetres de generació de mapa per a obtenir-ne un de millor"
+msgstr "Canvieu els paràmetres de generació de mapa per a obtenir-ne un de millor."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_RAILROAD_STATION"
 msgid "Can't build railway station here..."
@@ -15641,7 +15649,7 @@ msgstr "{WHITE}... no es poden fer servir ordres de càrrega completa quan el ve
 
 msgctxt "STR_ERROR_UNBUNCHING_NO_UNBUNCHING_FULL_LOAD"
 msgid "cannot unbunch a vehicle with a full load order"
-msgstr "{WHITE}... no es poden espaiar vehicles que tenen una ordre de càrrega completa."
+msgstr "no es poden espaiar vehicles que tenen una ordre de càrrega completa."
 
 msgctxt "STR_ERROR_UNBUNCHING_NO_CONDITIONAL"
 msgid "cannot use conditional orders when vehicle has an unbunching order"
@@ -15649,7 +15657,7 @@ msgstr "{WHITE}... no pot fer servir ordres condicionals quan un vehicle té una
 
 msgctxt "STR_ERROR_UNBUNCHING_NO_UNBUNCHING_CONDITIONAL"
 msgid "cannot unbunch a vehicle with a conditional order"
-msgstr "{WHITE}... els vehicles no es poden espaiar si tenen ordres condicionals."
+msgstr "els vehicles no es poden espaiar si tenen ordres condicionals."
 
 msgctxt "STR_ERROR_TRAIN_TOO_LONG_AFTER_REPLACEMENT"
 msgid "{VEHICLE} is too long after replacement"
@@ -16033,7 +16041,7 @@ msgstr "{WHITE}No es pot remodelar el vaixell..."
 
 msgctxt "STR_ERROR_CAN_T_REFIT_AIRCRAFT"
 msgid "Can't refit aircraft..."
-msgstr "{WHITE}No es pot remodelar l'avió..."
+msgstr "No es pot remodelar l'avió..."
 
 msgctxt "STR_ERROR_CAN_T_RENAME_TRAIN"
 msgid "Can't name train..."
