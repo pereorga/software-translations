@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-14 15:00-0600\n"
+"POT-Creation-Date: 2026-03-28 18:09-0600\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -104,17 +104,6 @@ msgstr "Informes de fallades inesperades"
 msgid "Delete the files"
 msgstr "Suprimeix els fitxers"
 
-#. DOM=Document Object Model
-#. DOM=Document Object Model
-#. DOM=Document Object Model
-#. DOM=Document Object Model
-#. DOM=Document Object Model
-msgid "DOM Storage"
-msgstr "Emmagatzemament DOM"
-
-msgid "Delete HTML5 cookies"
-msgstr "Suprimeix les galetes HTML5"
-
 msgid "Form history"
 msgstr "Historial dels formularis"
 
@@ -140,7 +129,15 @@ msgstr "Aquesta opció suprimirà les contrasenyes desades."
 msgid "Session restore"
 msgstr "Restaura la sessió"
 
-msgid "Restores the previous session when the browser next starts."
+msgid "Restores the previous session when the browser next starts"
+msgstr ""
+
+#. Label for cleaning option to delete site data such as LocalStorage and IndexedDB
+msgid "Site data"
+msgstr ""
+
+#. Description for cleaning option. LocalStorage and IndexedDB are proper nouns: do not translate
+msgid "Delete LocalStorage, IndexedDB, and other data stored by websites"
 msgstr ""
 
 msgid "Site preferences"
@@ -1216,6 +1213,11 @@ msgid ""
 "frequent use contributes to wear."
 msgstr ""
 
+#. TRANSLATORS: Error message shown in the infobar or notice shown in a tooltip.
+#. Expert mode is an option in the preferences to relax guardrails.
+msgid "This option requires expert mode. Enable it in Preferences."
+msgstr ""
+
 #. TRANSLATORS: Log message where %s is the pathname.
 #, python-format
 msgid "Directory is not empty: %s"
@@ -1539,6 +1541,16 @@ msgstr "S'estan generant els fitxers"
 
 #. TRANSLATORS: Instruction label in the manage cookies dialog.
 msgid "Select the cookies to keep when cleaning cookies across browsers."
+msgstr ""
+
+#. TRANSLATORS: This is a notice in the cookie manager about supported
+#. cookie types. The hyperlink points to the documentation website.
+#. Cookies refer to standard HTTP cookies.
+#. Site data includes LocalStorage, IndexedDB, and other website storage.
+#, python-brace-format
+msgid ""
+"Only cookies are preserved. Site data is always deleted. <a "
+"href='{url}'>Learn more</a>"
 msgstr ""
 
 #. TRANSLATORS: Label for the search entry in the manage cookies dialog.
@@ -2015,10 +2027,6 @@ msgstr "Heu de seleccionar una operació"
 msgid "Done."
 msgstr "Fet."
 
-#. TRANSLATORS: Error message shown in the infobar.
-msgid "This option requires expert mode. Enable it in Preferences."
-msgstr ""
-
 #. TRANSLATORS: Context menu item in the tree view that opens the preferences dialog.
 #. Preserve the ellipsis as literal Unicode (…) or as Unicode escape (\u2026).
 msgid "Manage custom paths…"
@@ -2471,6 +2479,12 @@ msgstr "_Ajuda"
 
 msgid "_About BleachBit"
 msgstr "_Quant al BleachBit"
+
+#~ msgid "DOM Storage"
+#~ msgstr "Emmagatzemament DOM"
+
+#~ msgid "Delete HTML5 cookies"
+#~ msgstr "Suprimeix les galetes HTML5"
 
 #~ msgid "All languages will be deleted except those checked."
 #~ msgstr "Se suprimiran tots els idiomes excepte els marcats."
