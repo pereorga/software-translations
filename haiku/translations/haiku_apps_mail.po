@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 08:16+0000\n"
+"POT-Creation-Date: 2026-03-30 08:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,6 +209,7 @@ msgid "Subject:"
 msgstr "Assumpte:"
 
 #: Mail
+msgctxt "Mail"
 msgid "OK"
 msgstr "D'acord"
 
@@ -305,6 +306,7 @@ msgid "Reply to all"
 msgstr "Respon a tothom"
 
 #: Mail
+msgctxt "Mail"
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -409,12 +411,20 @@ msgid "Attach attributes:"
 msgstr "Atributs del fitxer adjunt:"
 
 #: Mail
+msgid "Remove label"
+msgstr "Suprimeix l'etiqueta"
+
+#: Mail
 msgid "Find again"
 msgstr "Repeteix la cerca"
 
 #: Mail
 msgid "Size:"
 msgstr "Mida:"
+
+#: LabelWindow
+msgid "New label:"
+msgstr "Etiqueta nova:"
 
 #: Mail
 msgid "To:"
@@ -439,6 +449,10 @@ msgstr "<no s'ha trobat cap compte>"
 #: Mail
 msgid "helpful message"
 msgstr "missatge d'ajuda"
+
+#: Mail
+msgid "Label as…"
+msgstr "Etiqueta com a..."
 
 #: Mail
 msgid " Read "
@@ -467,6 +481,11 @@ msgstr "Comença ara"
 #: Mail
 msgid "(Name unavailable)"
 msgstr "(El nom no està disponible)"
+
+#: LabelWindow
+msgctxt "LabelWindow"
+msgid "Cancel"
+msgstr "Cancel·la"
 
 #: Mail
 msgid "Move to trash"
@@ -581,6 +600,10 @@ msgstr "No hi ha cap atribut del fitxer, només dades netes."
 msgid "Add"
 msgstr "Afegeix"
 
+#: Mail
+msgid "Same label"
+msgstr "La mateixa etiqueta"
+
 #: B_USER_DIRECTORY/mail/out
 msgid "out"
 msgstr "bústia de sortida"
@@ -670,6 +693,10 @@ msgid "An error occurred trying to save this signature."
 msgstr "Hi ha hagut un error en intentar desar aquesta signatura."
 
 #: Mail
+msgid "Set label"
+msgstr "Estableix-ne l'etiqueta"
+
+#: Mail
 msgid "Beginner"
 msgstr "Principiant"
 
@@ -692,12 +719,21 @@ msgstr ""
 "aquesta carpeta."
 
 #: Mail
+msgid "Manage labels…"
+msgstr "Gestioneu les etiquetes..."
+
+#: Mail
 msgid "Spam"
 msgstr "Brossa"
 
 #: Mail
 msgid "Couldn't open this signature. Sorry."
 msgstr "No s'ha pogut obrir aquesta signatura. Disculpeu."
+
+#: LabelWindow
+msgctxt "LabelWindow"
+msgid "OK"
+msgstr "D'acord"
 
 #: Mail
 msgid "Revert"
