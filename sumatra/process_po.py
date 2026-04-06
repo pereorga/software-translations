@@ -8,8 +8,8 @@ skip = False
 
 for idx, line in enumerate(lines):
     if line.startswith("msgid "):
-        # If the next line also starts with "msgid ", skip the current line
-        if idx + 1 < len(lines) and lines[idx + 1].startswith("msgid "):
+        # If the next line also starts with "msgid " (or there is no next line), skip the current line
+        if idx + 1 >= len(lines) or lines[idx + 1].startswith("msgid "):
             skip = True
             continue
         # Else, append the current line
