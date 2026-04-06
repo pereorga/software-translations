@@ -3339,6 +3339,30 @@ msgctxt "icu:youUpdatedTheGroup"
 msgid "You updated the group."
 msgstr "Heu actualitzat el grup."
 
+msgctxt "icu:collapsedGroupUpdates"
+msgid "{count, plural, one {# group update} other {# group updates}}"
+msgstr "{count, plural, one {{count,number} group update} other {{count,number} group updates}}"
+
+msgctxt "icu:multidayCollapse__dayCountSummary"
+msgid "{dayCount, plural, one {# day} other {# days}}"
+msgstr "{dayCount, plural, one {{dayCount,number} day} other {{dayCount,number} days}}"
+
+msgctxt "icu:collapsedChatUpdates"
+msgid "{count, plural, one {# chat update} other {# chat updates}}"
+msgstr "{count, plural, one {{count,number} chat update} other {{count,number} chat updates}}"
+
+msgctxt "icu:collapsedTimerChanges"
+msgid "{count, plural, one {# disappearing timer change} other {# disappearing message timer changes}} · {endingState}"
+msgstr "{count, plural, one {{count,number} disappearing timer change · {endingState}} other {{count,number} disappearing message timer changes · {endingState}}}"
+
+msgctxt "icu:collapsedTimerChanges--disabled"
+msgid "{count, plural, one {# disappearing timer change} other {# disappearing message timer changes}} · Disabled"
+msgstr "{count, plural, one {{count,number} disappearing timer change · Disabled} other {{count,number} disappearing message timer changes · Disabled}}"
+
+msgctxt "icu:collapsedCallEvents"
+msgid "{count, plural, one {# call event} other {# call events}}"
+msgstr "{count, plural, one {{count,number} call event} other {{count,number} call events}}"
+
 msgctxt "icu:updatedGroupAvatar"
 msgid "Group avatar was updated."
 msgstr "S'ha actualitzat l'avatar del grup."
@@ -6402,6 +6426,10 @@ msgstr "Arxius multimèdia, enllaços i arxius"
 msgctxt "icu:ConversationDetailsMembershipList--title"
 msgid "{number, plural, one {# member} other {# members}}"
 msgstr "{number, plural, one {{number,number} membre} other {{number,number} membres}}"
+
+msgctxt "icu:ConversationDetailsMembershipList--terminated-title"
+msgid "{number, plural, one {# former member} other {# former members}}"
+msgstr "{number, plural, one {{number,number} former member} other {{number,number} former members}}"
 
 msgctxt "icu:ConversationDetailsMembershipList--add-members"
 msgid "Add members"
