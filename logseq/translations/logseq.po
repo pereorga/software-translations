@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-06 08:30+0000\n"
+"POT-Creation-Date: 2026-04-13 08:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -355,6 +355,10 @@ msgstr "Alternar llista de nombres"
 #: .delete
 msgid "Delete"
 msgstr "Eliminar"
+
+#: .dev/export-client-ops-sqlite
+msgid "(Dev) Export client ops sqlite"
+msgstr ""
 
 #: .dev/gc-graph
 msgid "(Dev) Garbage collect graph (remove unused data in SQLite)"
@@ -1201,6 +1205,7 @@ msgid "Reset"
 msgstr ""
 
 #: .keymap/reset-to-default
+msgctxt ".keymap/reset-to-default"
 msgid "Reset to default"
 msgstr ""
 
@@ -2094,6 +2099,34 @@ msgstr "Mostrar totes les línies de una referència a bloc"
 #: .settings-page/spell-checker
 msgid "Spell checker"
 msgstr "Corrector ortogràfic"
+
+#: .settings-page/sync-server-url
+msgid "Sync server URL"
+msgstr ""
+
+#: .settings-page/sync-server-url-cleared
+msgid "Sync server URL cleared. Using official Logseq sync."
+msgstr ""
+
+#: .settings-page/sync-server-url-default
+msgid "Logseq sync (default)"
+msgstr ""
+
+#: .settings-page/sync-server-url-desc
+msgid ""
+"Set a custom HTTPS sync server URL for self-hosted sync. Your Logseq "
+"authentication tokens will be sent to this server, so only use a trusted "
+"URL. Leave empty to use the official Logseq sync."
+msgstr ""
+
+#: .settings-page/sync-server-url-reset
+msgctxt ".settings-page/sync-server-url-reset"
+msgid "Reset to default"
+msgstr ""
+
+#: .settings-page/sync-server-url-saved
+msgid "Sync server URL saved."
+msgstr ""
 
 #: .settings-page/tab-account
 msgid "Account"
