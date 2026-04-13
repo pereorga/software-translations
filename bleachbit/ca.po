@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-28 18:09-0600\n"
+"POT-Creation-Date: 2026-04-05 14:48-0600\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -33,8 +33,8 @@ msgstr "Galetes"
 #| "Delete cookies, which contain information such as web site preferences, "
 #| "authentication, and tracking identification"
 msgid ""
-"Delete cookies, which contain information such as website preferences, "
-"authentication, and tracking identification"
+"Delete cookies, which store login information, website preferences, and "
+"tracking identifiers"
 msgstr ""
 "Suprimeix les galetes, que contenen informació com les preferències dels "
 "llocs web, l’autenticació i la identificació de seguiment"
@@ -108,10 +108,9 @@ msgid "Form history"
 msgstr "Historial dels formularis"
 
 #, fuzzy
-#| msgid "A history of forms entered in web sites and in the Search bar"
-msgid "A history of forms entered in websites and in the Search bar"
-msgstr ""
-"Historial dels formularis emplenats als llocs web i a la barra de cerca"
+#| msgid "Delete the search history"
+msgid "Saved form entries and search bar history"
+msgstr "Suprimeix l'historial de cerca"
 
 msgid "Passwords"
 msgstr "Contrasenyes"
@@ -126,10 +125,10 @@ msgstr ""
 msgid "This option will delete your saved passwords."
 msgstr "Aquesta opció suprimirà les contrasenyes desades."
 
-msgid "Session restore"
-msgstr "Restaura la sessió"
+msgid "Session"
+msgstr "Sessió"
 
-msgid "Restores the previous session when the browser next starts"
+msgid "Previously open tabs and windows"
 msgstr ""
 
 #. Label for cleaning option to delete site data such as LocalStorage and IndexedDB
@@ -213,17 +212,36 @@ msgstr "Processador de textos"
 msgid "Delete the list of recently used documents"
 msgstr "Suprimeix la llista de documents usats recentment"
 
+msgid "Delete the web cache, which reduces time to display revisited pages"
+msgstr ""
+"Suprimeix la memòria cau, que redueix el temps que cal per mostrar les "
+"pàgines que ja s'han visitat"
+
+#, fuzzy
+#| msgid "A history of forms entered in web sites"
+msgid "A history of forms entered in websites"
+msgstr "Historial dels formularis emplenats als llocs web"
+
+msgid ""
+"Delete the history which includes visited sites, downloads, and thumbnails"
+msgstr ""
+"Suprimeix l'historial, que inclou els llocs visitats, les baixades i les "
+"miniatures"
+
+msgid "Sync"
+msgstr "Sincronització"
+
+#, fuzzy
+#| msgid "Delete the sync data and sign out of the browser"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
+msgstr "Suprimeix les dades de sincronització i tanca la sessió del navegador"
+
 msgid "Game"
 msgstr "Joc"
 
 #. This software edits metadata tags, such as title and artist, in audio files
 msgid "Audio files tagger"
 msgstr "Editor d'etiquetes de fitxers d'àudio"
-
-msgid "Delete the web cache, which reduces time to display revisited pages"
-msgstr ""
-"Suprimeix la memòria cau, que redueix el temps que cal per mostrar les "
-"pàgines que ja s'han visitat"
 
 msgid "System journals"
 msgstr "Registres del sistema"
@@ -301,17 +319,6 @@ msgstr "Sessió actual"
 msgid "Delete the current session"
 msgstr "Suprimeix la sessió actual"
 
-#, fuzzy
-#| msgid "A history of forms entered in web sites"
-msgid "A history of forms entered in websites"
-msgstr "Historial dels formularis emplenats als llocs web"
-
-msgid ""
-"Delete the history which includes visited sites, downloads, and thumbnails"
-msgstr ""
-"Suprimeix l'historial, que inclou els llocs visitats, les baixades i les "
-"miniatures"
-
 msgid "Search engines"
 msgstr "Motors de cerca"
 
@@ -325,20 +332,6 @@ msgid ""
 msgstr ""
 "Restableix l'historial d'ús dels motors de cerca i suprimeix els motors de "
 "cerca que no venen de fàbrica, alguns dels quals s'afegeixen automàticament"
-
-msgid "Session"
-msgstr "Sessió"
-
-msgid "Delete the current and last sessions"
-msgstr "Suprimeix l'última sessió i l'anterior"
-
-msgid "Sync"
-msgstr "Sincronització"
-
-#, fuzzy
-#| msgid "Delete the sync data and sign out of the browser"
-msgid "Delete the sync data (including web apps) and sign out of the browser"
-msgstr "Suprimeix les dades de sincronització i tanca la sessió del navegador"
 
 msgid "File manager"
 msgstr "Gestor de fitxers"
@@ -376,6 +369,12 @@ msgid ""
 msgstr ""
 "En suprimir l'índex es reiniciarà la configuració de les columnes de la "
 "llista de missatges."
+
+msgid "Session restore"
+msgstr "Restaura la sessió"
+
+msgid "Restores the previous session when the browser next starts"
+msgstr ""
 
 msgid "Delete obsolete files"
 msgstr "Suprimeix els fitxers obsolets"
@@ -522,6 +521,7 @@ msgstr ""
 msgid "Default dark mode, showing found junk files"
 msgstr ""
 
+#. TRANSLATORS: Dialog shown when an older version is detected. {prodname} is replaced with the product name. Do not translate placeholder.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:ALREADY_INSTALLED"
 msgid ""
@@ -560,16 +560,19 @@ msgid ""
 "group to continue."
 msgstr ""
 
+#. TRANSLATORS: Message shown on the installation mode page description when admin rights are needed.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ADMIN_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required."
 msgstr ""
 
+#. TRANSLATORS: Message shown on the installation mode page description when admin rights are needed to uninstall.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ADMIN_UNINSTALL_CREDENTIALS_REQUIRED"
 msgid "Administrator credentials required to uninstall."
 msgstr ""
 
+#. TRANSLATORS: Radio button label. The & sets the keyboard accelerator (hotkey). Place & before the letter that should be the shortcut key.
 #. TRANSLATORS: The character '&' positions the keyboard accelerator key.
 #. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
@@ -577,11 +580,13 @@ msgctxt "nsis:MULTIUSER_ALL_USERS"
 msgid "For &anyone who uses this computer (all users)"
 msgstr ""
 
+#. TRANSLATORS: Radio button label for Ultra Modern UI (NSIS). Same as MULTIUSER_ALL_USERS but without the & accelerator.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ALL_USERS_UMUI"
 msgid "For anyone who uses this computer (all users)"
 msgstr ""
 
+#. TRANSLATORS: Radio button label. The & sets the keyboard accelerator (hotkey). Place & before the letter that should be the shortcut key. {USER} is a placeholder that will be replaced with the Windows username.
 #. TRANSLATORS: The character '&' positions the keyboard accelerator key.
 #. TRANSLATORS: For example, '&anyone' sets 'a' as the accelerator key (Alt+a).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
@@ -589,31 +594,31 @@ msgctxt "nsis:MULTIUSER_CURRENT_USER"
 msgid "For &me ({USER})"
 msgstr ""
 
+#. TRANSLATORS: Radio button label for Ultra Modern UI (NSIS). Same as MULTIUSER_CURRENT_USER but without the & accelerator. {USER} is a placeholder that will be replaced with the Windows username.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_CURRENT_USER_UMUI"
 msgid "For me ({USER})"
 msgstr ""
 
+#. TRANSLATORS: Error message shown in dialog box during installation on Windows. {ERROR} is a placeholder that will be replaced with the error details.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ELEVATION_ERROR"
 msgid "Unable to elevate, error {ERROR}."
 msgstr ""
 
+#. TRANSLATORS: Error message shown in a dialog box when Windows does not support elevation.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_ELEVATION_NOT_SUPPORTED"
 msgid "The operating system doesn't support elevation."
 msgstr ""
 
-#: windows/NsisInclude/NsisMultiUserLang.nsh
-msgctxt "nsis:MULTIUSER_INSTALLATION_FOR_CURRENT_USER_NOT_SUPPORTED"
-msgid "The operating system doesn't support current user installations."
-msgstr ""
-
+#. TRANSLATORS: Radio button option for the method of installation. {VERSION} and {FOLDER} are placeholders replaced by the installer with the installed version and folder path.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALLED_ALL_USERS"
 msgid "Version {VERSION} is installed for all users in \"{FOLDER}\"."
 msgstr ""
 
+#. TRANSLATORS: Radio button option for the method of installation. {VERSION} and {FOLDER} are placeholders replaced by the installer with the installed version and folder path.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:MULTIUSER_INSTALLED_CURRENT_USER"
 msgid "Version {VERSION} is installed for the current user in \"{FOLDER}\"."
@@ -655,6 +660,7 @@ msgctxt "nsis:MULTIUSER_NOT_INSTALLED"
 msgid "There is no installation of $(^NameDA)."
 msgstr ""
 
+#. TRANSLATORS: Title of the installation mode page in the Windows installer. User selects whether to install for all users or the current user.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
 #| msgid "Choose a folder"
@@ -722,6 +728,7 @@ msgctxt "nsis:SECTION_DESKTOP_DESCRIPTION"
 msgid "Create a shortcut on the desktop."
 msgstr "Ginys per a l'escriptori"
 
+#. TRANSLATORS: Name of the desktop section in the Windows installer: user selects which desktop items to install.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
 #| msgid "Desktop widgets"
@@ -745,6 +752,7 @@ msgctxt "nsis:SECTION_QUICK_LAUNCH_DESCRIPTION"
 msgid "Create a shortcut on the Quick Launch bar."
 msgstr ""
 
+#. TRANSLATORS: Name of the quick launch section in the Windows installer: quick launch is a toolbar in the Windows taskbar that allows users to quickly access frequently used programs.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_QUICK_LAUNCH_NAME"
 msgid "Quick Launch"
@@ -755,6 +763,7 @@ msgctxt "nsis:SECTION_SHORTCUTS_DESCRIPTION"
 msgid "Create shortcuts to ${prodname}"
 msgstr ""
 
+#. TRANSLATORS: Name of the shortcuts section in the Windows installer: user selects which shortcuts to install.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_SHORTCUTS_NAME"
 msgid "Shortcuts"
@@ -765,6 +774,7 @@ msgctxt "nsis:SECTION_START_MENU_DESCRIPTION"
 msgid "Create a shortcut in the Start menu."
 msgstr ""
 
+#. TRANSLATORS: Name of the start menu section in the Windows installer: user selects which start menu items to install.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SECTION_START_MENU_NAME"
 msgid "Start menu"
@@ -776,6 +786,7 @@ msgid ""
 "Install language files to use ${prodname} in your preferred local language."
 msgstr ""
 
+#. TRANSLATORS: Name of the translations section in the Windows installer: user selects which translations to install.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 #, fuzzy
 #| msgid "Localizations"
@@ -788,23 +799,19 @@ msgctxt "nsis:SECTION_UNINSTALL_DESCRIPTION"
 msgid "Add an uninstall program."
 msgstr ""
 
-#: windows/NsisInclude/NsisMultiUserLang.nsh
-#, fuzzy
-#| msgid "Update uninstallers"
-msgctxt "nsis:SECTION_UNINSTALL_NAME"
-msgid "Uninstall"
-msgstr "Desinstal·ladors d'actualitzacions"
-
+#. TRANSLATORS: Shortcut name for a desktop shortcut that opens a debugging terminal.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHORTCUT_DEBUGGING_TERMINAL"
 msgid "${prodname} Debugging Terminal"
 msgstr ""
 
+#. TRANSLATORS: Shortcut name for a desktop shortcut that runs without UAC elevation (admin privileges).
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHORTCUT_NO_UAC"
 msgid "${prodname} (No UAC)."
 msgstr ""
 
+#. TRANSLATORS: Context menu item in Windows Explorer for securely shredding files.
 #: windows/NsisInclude/NsisMultiUserLang.nsh
 msgctxt "nsis:SHRED_SHELL_MENU"
 msgid "Shred with ${prodname}"
@@ -1252,12 +1259,15 @@ msgstr ""
 msgid "Text is okay"
 msgstr ""
 
-#. TRANSLATORS: Button label in the font check dialog
+#. TRANSLATORS: Button label in the font check dialog. This is one of
+#. three buttons the user can click to report how the text appears.
+#. The user clicks this if the text is readable but appears fuzzy.
 msgid "Text is blurry"
 msgstr ""
 
 #. TRANSLATORS: Button label in the font check dialog in case the font
-#. looks like an alien language.
+#. looks like an alien language. This is one of three buttons the user
+#. can click to report how the text appears.
 msgid "Text is unrecognizable"
 msgstr ""
 
@@ -1427,8 +1437,12 @@ msgstr "Confirma"
 msgid "Number of files"
 msgstr "Nombre de fitxers"
 
-#. TRANSLATORS: Option in combo box to choose to stop after a total
-#. size (in megabytes) has been generated.
+#. TRANSLATORS: Option in a combo box for choosing the stop condition
+#. when generating chaff (dummy) files. This option means "stop after
+#. the total size of generated files reaches a threshold in megabytes."
+#. "MB" is the megabyte unit abbreviation. Localize it if your language
+#. has an official abbreviation (e.g., "Mo" in French); otherwise keep
+#. "MB".
 #, fuzzy
 #| msgid "Size"
 msgid "Size (MB)"
@@ -1754,8 +1768,9 @@ msgid "Windows 10 theme"
 msgstr "Tema de Windows 10"
 
 #. TRANSLATORS: Checkbox label to use the Fontconfig text rendering backend
-#. instead of the default Windows renderer. May improve blurry text.
-msgid "Use fontconfig text rendering backend"
+#. instead of the default Windows renderer. The option may improve blurry text.
+#. Fontconfig, which is software, is a proper noun.
+msgid "Use Fontconfig text rendering backend"
 msgstr ""
 
 #. TRANSLATORS: Tooltip for the fontconfig text rendering checkbox in the preferences dialog.
@@ -1779,6 +1794,11 @@ msgstr "Afegiu el menú contextual per triurar al KDE Plasma"
 msgid "Show debug messages"
 msgstr "Mostra els missatges de depuració"
 
+#. TRANSLATORS: 'empty' means 'unallocated'.
+#. The user should decide which drives to wipe. Then, for each
+#. chosen drive, the user should specify one folder per drive.
+#. For example, to wipe C:\, the user may choose %TEMP% which
+#. is a folder anywhere on C:.
 #, fuzzy
 #| msgid ""
 #| "Choose a writable folder for each drive for which to overwrite free space."
@@ -2145,14 +2165,15 @@ msgid "Detected these swap devices: %s"
 msgstr "S'han detectat aquests dispositius d'intercanvi: %s"
 
 #. TRANSLATORS: This is a debugging message that the parent process
-#. is waiting for the child process.
+#. is waiting for the child process. %(parent_pid)d is the parent
+#. process ID; %(child_pid)d is the child process ID.
 #, fuzzy, python-format
 #| msgid ""
 #| "The function wipe_memory() with process ID {pid} is waiting for child "
 #| "process ID {cid}."
 msgid ""
-"The function wipe_memory() with process ID %d is waiting for child process "
-"ID %d."
+"The function wipe_memory() with process ID %(parent_pid)d is waiting for "
+"child process ID %(child_pid)d."
 msgstr ""
 "La funció wipe_memory() amb l'ID de procés {pid} està esperant al procés "
 "secundari amb l'ID {cid}."
@@ -2188,6 +2209,9 @@ msgstr "Error en configurar les unitats per defecte per triturar."
 
 #. TRANSLATORS: Warning shown when user tries to add a protected path.
 #. %(path)s is the path, %(files)d is number of files, %(size)s is human-readable size
+#. Do not translate the placeholders.
+#. Adapt quotation marks around the path placeholder to the typographic conventions of
+#. your language.
 #, python-format
 msgid ""
 "Warning: '%(path)s' may contain important files.\n"
@@ -2197,7 +2221,10 @@ msgid ""
 "Are you sure you want to add this path?"
 msgstr ""
 
-#. TRANSLATORS: Warning shown when user tries to add a protected path (no files found)
+#. TRANSLATORS: Warning shown when user tries to add a protected path (no files found).
+#. Do not translate the placeholder %(path)s.
+#. Adapt quotation marks around the path placeholder to the typographic conventions of
+#. your language.
 #, python-format
 msgid ""
 "Warning: '%(path)s' may contain important files.\n"
@@ -2293,9 +2320,9 @@ msgstr ""
 "Hi ha almenys un sistema de fitxers que no admet la sobreescriptura avançada."
 
 #. TRANSLATORS: Debug log message shown during file wiping. 'Wiping' is a
-#. present participle (ongoing action). %(pathname)s is the file/directory
-#. path; %(fstype)s is the file system type (e.g., ext3, ntfs).
-#. Do not translate variables.
+#. present participle (ongoing action) refering to secure overwrite.
+#. %(pathname)s is the file/directory path; %(fstype)s is the file system type
+#. (e.g., ext3, ntfs). Do not translate placeholders.
 #, python-format
 msgid "Wiping path %(pathname)s with file system type %(fstype)s"
 msgstr ""
@@ -2479,6 +2506,21 @@ msgstr "_Ajuda"
 
 msgid "_About BleachBit"
 msgstr "_Quant al BleachBit"
+
+#, fuzzy
+#~| msgid "A history of forms entered in web sites and in the Search bar"
+#~ msgid "A history of forms entered in websites and in the Search bar"
+#~ msgstr ""
+#~ "Historial dels formularis emplenats als llocs web i a la barra de cerca"
+
+#~ msgid "Delete the current and last sessions"
+#~ msgstr "Suprimeix l'última sessió i l'anterior"
+
+#, fuzzy
+#~| msgid "Update uninstallers"
+#~ msgctxt "nsis:SECTION_UNINSTALL_NAME"
+#~ msgid "Uninstall"
+#~ msgstr "Desinstal·ladors d'actualitzacions"
 
 #~ msgid "DOM Storage"
 #~ msgstr "Emmagatzemament DOM"
