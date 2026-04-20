@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-13 08:40+0000\n"
+"POT-Creation-Date: 2026-04-20 08:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2663,6 +2663,10 @@ msgstr "No teniu cap llista creada."
 msgid "%{username} doesn't have any public lists to share."
 msgstr "L'usuari %{username} no té cap llista pública per a compartir."
 
+#: accounts-%3Elists-%3Eno_lists-%3Esearch
+msgid "No lists found."
+msgstr ""
+
 #: accounts-%3Elists-%3Epage_title-%3Epage_owner
 msgctxt "accounts->lists->page_title->page_owner"
 msgid "My Lists"
@@ -2671,6 +2675,31 @@ msgstr "Les meves llistes"
 #: accounts-%3Elists-%3Epage_title-%3Epublic
 msgid "%{username}'s Lists"
 msgstr "Les llistes de l'usuari %{username}"
+
+#: accounts-%3Elists-%3Esearch
+msgid "Search for a list..."
+msgstr ""
+
+#: accounts-%3Elists-%3Eadd_to_lists
+msgid "Add <span class=\"bold\">%{media_name}</span> to lists"
+msgstr ""
+
+#: accounts-%3Elists-%3Econtributor
+msgid "Contributor"
+msgstr ""
+
+#: accounts-%3Elists-%3Ecreate_new_list
+msgid "Create a new list"
+msgstr ""
+
+#: accounts-%3Elists-%3Ecreated
+msgctxt "accounts->lists->created"
+msgid "List created"
+msgstr ""
+
+#: accounts-%3Elists-%3Emy_new_list
+msgid "My new list..."
+msgstr ""
 
 #: accounts-%3Emember_since
 msgid "Member since %{date}"
@@ -3476,6 +3505,12 @@ msgstr ""
 
 #: awards-%3Emost_awarded_people
 msgid "Most Awarded People"
+msgstr ""
+
+#: awards-%3Emedia_page_description
+msgid ""
+"Browse award nominations and wins for %{name} on TMDB. %{name} has received "
+"%{nominations} and %{wins}."
 msgstr ""
 
 #: awards-%3Emost_nominated_films
@@ -8044,6 +8079,18 @@ msgstr ""
 #: edit_list-%3Eno_contributors
 msgid ""
 "No contributors added, create an invite link and share it to get started."
+msgstr ""
+
+#: edit_list-%3Ecreated
+msgctxt "edit_list->created"
+msgid "List created"
+msgstr ""
+
+#: edit_list-%3Econfirm_delete
+msgid ""
+"<p>This item has a comment:</p>\n"
+"<p>\"%{media_comment}\"</p>\n"
+"<p>Are you sure you want to remove it?</p>"
 msgstr ""
 
 #: edits
@@ -13888,6 +13935,14 @@ msgstr "Empra la vista en llistat"
 #: list_info-%3Esearch
 msgctxt "list_info->search"
 msgid "Search"
+msgstr ""
+
+#: list_info-%3Eno_search_results
+msgid "No items matched your query."
+msgstr ""
+
+#: list_info-%3Esearch_within
+msgid "Search for items within your list..."
 msgstr ""
 
 #: list_messages-%3Ecomment_updated
