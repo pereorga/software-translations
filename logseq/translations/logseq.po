@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-20 08:43+0000\n"
+"POT-Creation-Date: 2026-04-27 08:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2108,6 +2108,25 @@ msgid "Write to the file {1} failed, {2}. A backup file was saved to {3}."
 msgstr ""
 "No s'ha pogut escriure al fitxer {1}, {2}. S'ha desat un fitxer de còpia de "
 "seguretat a {3}."
+
+#: .electron/wrong-release-open-nightly
+msgid "Open nightly release"
+msgstr ""
+
+#: .electron/wrong-release-open-stable
+msgid "Download regular release"
+msgstr ""
+
+#: .electron/wrong-release-warning-detail
+msgid ""
+"This release runs through Rosetta and can be very slow. Download the Apple "
+"Silicon (arm64) release first. If it is unavailable for your version, use "
+"the nightly release."
+msgstr ""
+
+#: .electron/wrong-release-warning-title
+msgid "You are using the Intel (x64) release on Apple Silicon."
+msgstr ""
 
 #: .encryption/current-password
 msgid "Current password"
