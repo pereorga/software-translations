@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 08:49+0000\n"
+"POT-Creation-Date: 2026-05-04 08:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -439,6 +439,10 @@ msgstr "Eliminar aquesta etiqueta"
 msgid "Block Render Error:"
 msgstr "Error de renderització del bloc:"
 
+#: .block/retry-plugin-renderer
+msgid "Retry plugin renderer"
+msgstr ""
+
 #: .block/set-query
 msgid "Set query"
 msgstr "Establir consulta"
@@ -454,6 +458,14 @@ msgstr "Ordre de classificació"
 #: .block/status-history
 msgid "Status history"
 msgstr "Historial d'estat"
+
+#: .block/switch-to-outline-view
+msgid "Switch to outline view"
+msgstr ""
+
+#: .block/switch-to-plugin-renderer
+msgid "Switch to plugin renderer"
+msgstr ""
 
 #: .block/untitled-query
 msgid "Untitled query"
@@ -2680,6 +2692,18 @@ msgstr "Graf de pàgina"
 msgid "Yes, add another graph"
 msgstr "Si, afegir un altre graf"
 
+#: .graph.switch/db-worker-unavailable-no-fallback-warning
+msgid ""
+"The database worker for graph \"{1}\" is unavailable, and no other graph is "
+"available."
+msgstr ""
+
+#: .graph.switch/db-worker-unavailable-switching-warning
+msgid ""
+"The database worker for graph \"{1}\" is unavailable. Switching to graph \""
+"{2}\"."
+msgstr ""
+
 #: .graph.switch/empty-desc
 msgid "No matched graphs. Do you want to add another one?"
 msgstr "No trobem un graf. Vol afegir-ne un?"
@@ -3542,6 +3566,7 @@ msgstr "També usat per {1} En context {2}"
 #: .keymap/clear
 msgctxt ".keymap/clear"
 ".keymap/clear"
+".keymap/clear"
 msgid "Clear"
 msgstr "Esborrar"
 
@@ -3644,6 +3669,7 @@ msgstr "Restablir"
 
 #: .keymap/reset-to-default
 msgctxt ".keymap/reset-to-default"
+".keymap/reset-to-default"
 msgid "Reset to default"
 msgstr "Restablir per defecte"
 
@@ -4731,6 +4757,36 @@ msgstr "Carregar extensió desempaquetada"
 msgid "LOADING"
 msgstr "CARREGANT"
 
+#: .plugin/logs-clear
+msgctxt ".plugin/logs-clear"
+msgid "Clear"
+msgstr ""
+
+#: .plugin/logs-copied
+msgid "Logs copied to clipboard."
+msgstr ""
+
+#: .plugin/logs-copy
+msgctxt ".plugin/logs-copy"
+msgid "Copy all"
+msgstr ""
+
+#: .plugin/logs-empty
+msgid "No logs yet."
+msgstr ""
+
+#: .plugin/logs-filter-placeholder
+msgid "Filter logs..."
+msgstr ""
+
+#: .plugin/logs-level-all
+msgid "All levels"
+msgstr ""
+
+#: .plugin/logs-title
+msgid "Plugin logs"
+msgstr ""
+
 #: .plugin/malformed-plugins-edn
 msgid ""
 "Malformed plugins.edn provided. Please check the file has correct edn syntax."
@@ -4751,6 +4807,10 @@ msgstr "No hi ha esquema de configuració!"
 #: .plugin/not-installed
 msgid "Not installed"
 msgstr "No instal·lat"
+
+#: .plugin/open-logs
+msgid "View logs"
+msgstr "Veure registres"
 
 #: .plugin/open-logseq-dir
 msgctxt ".plugin/open-logseq-dir"
@@ -5663,6 +5723,14 @@ msgstr "Endarrerit"
 msgid "This is a private built-in property that can't be used."
 msgstr "Propietat integrada privada no utilitzable"
 
+#: .property/remove-scope-for-tag
+msgid "Remove scope for #{1}"
+msgstr ""
+
+#: .property/scope-choice-to-tag
+msgid "Only for #{1}"
+msgstr ""
+
 #: .property/select-choice
 msgid "Select a choice"
 msgstr "Seleccionar opció"
@@ -5792,6 +5860,10 @@ msgstr "Treu la propietat"
 #: .property/update-success
 msgid "Property updated!"
 msgstr "Actualitzat"
+
+#: .property/use-choice-in-tag
+msgid "Use in #{1}"
+msgstr ""
 
 #: .publish/action
 msgid "Publish"
@@ -6122,6 +6194,35 @@ msgstr "Aturar"
 #: .server/title
 msgid "HTTP API server"
 msgstr "Servidor d'API HTTP"
+
+#: .settings-page/publish-server-url
+msgid "Publish Server URL"
+msgstr ""
+
+#: .settings-page/publish-server-url-cleared
+msgid "Publish server URL cleared. Using official Logseq Publish."
+msgstr ""
+
+#: .settings-page/publish-server-url-default
+msgid "Logseq Publish"
+msgstr ""
+
+#: .settings-page/publish-server-url-desc
+msgid ""
+"Set a custom HTTPS publish server URL for self-hosted single-page "
+"publishing. Your Logseq authentication tokens will be sent to this server, "
+"so only use a trusted URL. Leave empty to use the official Logseq Publish "
+"service."
+msgstr ""
+
+#: .settings-page/publish-server-url-reset
+msgctxt ".settings-page/publish-server-url-reset"
+msgid "Reset to default"
+msgstr ""
+
+#: .settings-page/publish-server-url-saved
+msgid "Publish server URL saved."
+msgstr ""
 
 #: .settings.account/storage-usage
 msgid "{1}GB of {2}GB total storage ({3})"
@@ -6641,6 +6742,16 @@ msgstr "Descàrrega de fitxers ({1})"
 msgid "Uploading assets ({1})"
 msgstr "Pujada de fitxers ({1})"
 
+#: .sync/conflicts-description
+msgid ""
+"These server versions conflicted with local edits. Copy the text you want "
+"and edit the block manually."
+msgstr ""
+
+#: .sync/conflicts-title
+msgid "Sync conflicts"
+msgstr ""
+
 #: .sync/creating-remote-graph
 msgid "Creating remote graph..."
 msgstr "S'està creant el gràfic remot..."
@@ -6665,6 +6776,10 @@ msgstr "Invitació enviada"
 msgid "Last synced time: {1}"
 msgstr "Darrera sincronització: {1}"
 
+#: .sync/mark-conflicts-resolved
+msgid "Mark resolved"
+msgstr ""
+
 #: .sync/more-debug-info
 msgid "More debug info"
 msgstr "Més informació de depuració"
@@ -6684,6 +6799,10 @@ msgstr "canvis locals pendents"
 #: .sync/pending-server-changes
 msgid "pending server changes"
 msgstr "canvis del servidor pendents"
+
+#: .sync/show-conflicts
+msgid "Show sync conflicts"
+msgstr ""
 
 #: .sync/something-wrong
 msgid "Something wrong, please try again."
@@ -6745,6 +6864,7 @@ msgid "Copy"
 msgstr "Copiar"
 
 #: .ui/copy-all
+msgctxt ".ui/copy-all"
 msgid "Copy all"
 msgstr "Copia-ho tot"
 
