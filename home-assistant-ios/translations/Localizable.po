@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-04 08:48+0000\n"
+"POT-Creation-Date: 2026-05-11 09:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -355,6 +355,7 @@ msgstr "Toca per acabar d'enregistrar.."
 
 #: assist.modern_ui.header.title
 msgctxt "assist.modern_ui.header.title"
+"assist.modern_ui.header.title"
 "assist.modern_ui.header.title"
 "assist.modern_ui.header.title"
 "assist.modern_ui.header.title"
@@ -1098,10 +1099,6 @@ msgstr "Més informació"
 msgid "Read Tag"
 msgstr "Llegir l’etiqueta"
 
-#: nfc.list.title
-msgid "NFC Tags"
-msgstr "Etiquetes NFC"
-
 #: nfc.list.write_tag
 msgid "Write Tag"
 msgstr "Escriure etiqueta"
@@ -1110,9 +1107,66 @@ msgstr "Escriure etiqueta"
 msgid "NFC is not available on this device"
 msgstr "L'NFC no està disponible en aquest dispositiu"
 
+#: nfc.tag_approval.allow_always
+msgid "Allow Always"
+msgstr ""
+
+#: nfc.tag_approval.allow_once
+msgid "Allow Once"
+msgstr ""
+
+#: nfc.tag_approval.copy_tag
+msgid "Copy tag"
+msgstr ""
+
+#: nfc.tag_approval.tag_id.title
+msgid "Tag identifier"
+msgstr ""
+
+#: nfc.tag_approval.description
+msgid ""
+"Send this tag to Home Assistant to perform the automation attached to it."
+msgstr ""
+
+#: nfc.tag_approval.title
+msgid "Allow Sending?"
+msgstr ""
+
 #: nfc.read.error.generic_failure
 msgid "Failed to read tag"
 msgstr "No s'ha pogut llegir l'etiqueta"
+
+#: tags.allowed.delete_all
+msgctxt "tags.allowed.delete_all"
+msgid "Delete all"
+msgstr ""
+
+#: tags.allowed.delete_all.confirm.button
+msgctxt "tags.allowed.delete_all.confirm.button"
+msgid "Delete all"
+msgstr ""
+
+#: tags.allowed.delete_all.confirm.title
+msgid "Delete all allowed tags?"
+msgstr ""
+
+#: tags.allowed.empty
+msgid "No allowed tags"
+msgstr ""
+
+#: tags.allowed.footer
+msgid ""
+"Allowed tags can be sent to Home Assistant without asking for approval each "
+"time. Swipe left on a tag to delete it."
+msgstr ""
+
+#: tags.allowed.title
+msgid "Allowed tags"
+msgstr ""
+
+#: tags.title
+msgid "Tags"
+msgstr ""
 
 #: nfc.read.error.not_home_assistant
 msgid "NFC tag is not a Home Assistant tag"
@@ -1969,6 +2023,14 @@ msgstr "Informació de fons molesta"
 msgid "Expand this to show the camera content extension"
 msgstr "Expandeix això per mostrar l'extensió del contingut de la càmera"
 
+#: settings.developer.clear_allowed_tags.complete.title
+msgid "Approved tags cleared"
+msgstr ""
+
+#: settings.developer.clear_allowed_tags.title
+msgid "Clear approved tags"
+msgstr ""
+
 #: settings.developer.copy_realm.alert.message
 msgid "Copied Realm from %@ to %@"
 msgstr "S'ha copiat el Regne de %@ a %@"
@@ -2133,42 +2195,6 @@ msgstr "Editar plantilla"
 #: settings.whats_new.title
 msgid "What's new?"
 msgstr "Que hi ha de nou?"
-
-#: settings.app_icon_shortcuts.add_item.title
-msgctxt "settings.app_icon_shortcuts.add_item.title"
-"settings.app_icon_shortcuts.add_item.title"
-msgid "Add item"
-msgstr ""
-
-#: settings.app_icon_shortcuts.duplicate_error
-msgid "This item is already in your shortcuts."
-msgstr ""
-
-#: settings.app_icon_shortcuts.footer.title
-msgid "iOS shows up to four shortcuts from the app icon quick actions menu."
-msgstr ""
-
-#: settings.app_icon_shortcuts.items.title
-msgctxt "settings.app_icon_shortcuts.items.title"
-"settings.app_icon_shortcuts.items.title"
-msgid "Items"
-msgstr ""
-
-#: settings.app_icon_shortcuts.reset.confirmation_title
-msgid "Reset App Icon Shortcuts?"
-msgstr ""
-
-#: settings.app_icon_shortcuts.reset.title
-msgid "Reset App Icon Shortcuts"
-msgstr ""
-
-#: settings.app_icon_shortcuts.subtitle
-msgid "Choose items to display when long pressing the app icon."
-msgstr ""
-
-#: settings.app_icon_shortcuts.title
-msgid "App Icon Shortcuts"
-msgstr ""
 
 #: settings_details.actions.actions_synced.empty
 msgid "No Synced Actions"
