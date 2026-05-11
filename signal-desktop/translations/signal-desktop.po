@@ -2327,6 +2327,14 @@ msgctxt "icu:Preferences__EditChatFolderPage__CancelButton"
 msgid "Cancel"
 msgstr "Cancel·la"
 
+msgctxt "icu:Preferences__PrivacyPage__ShowStatusIcon__Label"
+msgid "Show status icon"
+msgstr "Mostra la icona d'estat"
+
+msgctxt "icu:Preferences__PrivacyPage__ShowStatusIcon__Description"
+msgid "Show an icon in message details when they were delivered using sealed sender."
+msgstr "Mostra una icona als detalls del missatge quan es lliuri mitjançant un remitent segellat."
+
 msgctxt "icu:Preferences__PrivacyPage__KeyTransparency__Label"
 msgid "Automatic key verification"
 msgstr "Verificació automàtica de clau"
@@ -4571,10 +4579,6 @@ msgctxt "icu:ConversationHero--group-members-other-and-you"
 msgid "{member1}, {member2}, {member3}, and <clickable>{remainingCount, plural, one {# other} other {# others}}</clickable>"
 msgstr "{remainingCount, plural, one {{member1}, {member2}, {member3} i <clickable>{remainingCount,number} persona més</clickable>} other {{member1}, {member2}, {member3} i <clickable>{remainingCount,number} persones més</clickable>}}"
 
-msgctxt "icu:ConversationHero--review-carefully"
-msgid "Review carefully"
-msgstr "Revisa amb atenció"
-
 msgctxt "icu:ConversationHero--group-names"
 msgid "<clickable>Group names</clickable> are not verified"
 msgstr "<clickable>Els noms de grup</clickable> no es verifiquen"
@@ -4583,9 +4587,21 @@ msgctxt "icu:ConversationHero--profile-names"
 msgid "<clickable>Profile names</clickable> are not verified"
 msgstr "<clickable>Els noms de perfil</clickable> no es verifiquen"
 
+msgctxt "icu:ConversationHero--name-not-verified"
+msgid "Name not verified"
+msgstr "Nom no verificat"
+
 msgctxt "icu:ConversationHero--signal-official-chat"
 msgid "This is the official and only chat from Signal"
 msgstr "Aquest és l'únic xat oficial de Signal"
+
+msgctxt "icu:ConversationHero--signal-official-account"
+msgid "Official account"
+msgstr "Compte oficial"
+
+msgctxt "icu:ConversationHero--signal-official-account--description"
+msgid "The only official chat from Signal. Keep up to date with news and release notes."
+msgstr "L'únic xat oficial de Signal. Estigues al dia de les notícies i les notes de versió."
 
 msgctxt "icu:ConversationHero--release-notes"
 msgid "Keep up to date with news and release notes."
@@ -6931,8 +6947,8 @@ msgctxt "icu:ShareCallLinkViaSignal__DraftMessageText"
 msgid "Use this link to join a Signal call: {url}"
 msgstr "Utilitza aquest enllaç per unir-te a la trucada de Signal: {url}"
 
-msgctxt "icu:MessageRequestWarning__safety-tips"
-msgid "Safety Tips"
+msgctxt "icu:MessageRequestWarning__safety-tips-v2"
+msgid "Safety tips"
 msgstr "Consells de seguretat"
 
 msgctxt "icu:ContactSpoofing__same-name--link"
@@ -7719,9 +7735,17 @@ msgctxt "icu:Preferences__link-previews--title"
 msgid "Generate link previews"
 msgstr "Genera previsualitzacions d'enllaç"
 
-msgctxt "icu:Preferences__link-previews--description"
-msgid "To change this setting, open the Signal app on your mobile device and navigate to Settings > Chats"
-msgstr "Per a canviar aquests ajustos, obre l'app de Signal al teu dispositiu mòbil i ves a Ajustos > Xats."
+msgctxt "icu:Preferences__link-previews--new-description"
+msgid "Retrieve link previews directly from websites for messages you send."
+msgstr "Recupereu les previsualitzacions d’enllaços directament des de qualsevol lloc web per als missatges que envieu."
+
+msgctxt "icu:Preferences__address-book-photos--title"
+msgid "Use address book photos"
+msgstr "Usa les fotos de l'agenda de contactes"
+
+msgctxt "icu:Preferences__address-book-photos--description"
+msgid "Display contact photos from your address book if available."
+msgstr "Mostra les fotos dels contactes de l'agenda si estan disponibles."
 
 msgctxt "icu:Preferences__auto-convert-emoji--title"
 msgid "Convert typed emoticons to emoji"
@@ -8183,6 +8207,22 @@ msgctxt "icu:Preferences--blocked"
 msgid "Blocked"
 msgstr "Persones bloquejades"
 
+msgctxt "icu:Preferences--blocked-count"
+msgid "{num, plural, one {# contact} other {# contacts}}"
+msgstr "{num, plural, one {{num,number} contacte} other {{num,number} contactes}}"
+
+msgctxt "icu:Preferences--blocked-count-both-new"
+msgid "{num, plural, =0 { No users or groups } one {# user or group} other {# users or groups}}"
+msgstr "{num, plural, =0 { No users or groups } one {{num,number} user or group} other {{num,number} users or groups}}"
+
+msgctxt "icu:Preferences--blocked-count-contacts-new"
+msgid "{num, plural, =0 { No users } one {# user} other {# users}}"
+msgstr "{num, plural, =0 { No users } one {{num,number} user} other {{num,number} users}}"
+
+msgctxt "icu:Preferences--blocked-count-groups-new"
+msgid "{num, plural, =0 { No groups } one {# group} other {# groups}}"
+msgstr "{num, plural, =0 { No groups } one {{num,number} group} other {{num,number} groups}}"
+
 msgctxt "icu:Preferences--signal-backups"
 msgid "Signal Secure Backups"
 msgstr "Còpies de seguretat segures de Signal"
@@ -8427,14 +8467,6 @@ msgctxt "icu:Preferences__recovery-key-updated__view-key"
 msgid "View new key"
 msgstr "Veure nova clau"
 
-msgctxt "icu:Preferences--blocked-count"
-msgid "{num, plural, one {# contact} other {# contacts}}"
-msgstr "{num, plural, one {{num,number} contacte} other {{num,number} contactes}}"
-
-msgctxt "icu:Preferences__privacy--description"
-msgid "To change these settings, open the Signal app on your mobile device and navigate to Settings > Privacy"
-msgstr "Per a canviar aquesta configuració, obriu l'aplicació del Signal al dispositiu mòbil i aneu a Configuració > Privadesa."
-
 msgctxt "icu:Preferences__pnp__row--title"
 msgid "Phone Number"
 msgstr "Número de telèfon"
@@ -8511,9 +8543,17 @@ msgctxt "icu:Preferences--read-receipts"
 msgid "Read receipts"
 msgstr "Confirmació de lectura"
 
+msgctxt "icu:Preferences--read-receipts--description"
+msgid "If disabled, you won't see read receipts from others."
+msgstr "Si desactives aquesta opció, no podràs veure les confirmacions de lectura dels altres."
+
 msgctxt "icu:Preferences--typing-indicators"
 msgid "Typing indicators"
 msgstr "Indicadors de tecleig"
+
+msgctxt "icu:Preferences--typing-indicators--description"
+msgid "If disabled, you won't see typing indicators from others."
+msgstr "Si desactives aquesta opció, no podràs veure els indicadors de tecleig dels altres."
 
 msgctxt "icu:Preferences--updates"
 msgid "Updates"
@@ -9175,9 +9215,9 @@ msgctxt "icu:StoriesSettings__view-receipts--label"
 msgid "View Receipts"
 msgstr "Veure rebuts"
 
-msgctxt "icu:StoriesSettings__view-receipts--description"
-msgid "To change this setting, open the Signal app on your mobile device and navigate to Settings -> Stories"
-msgstr "Per a canviar aquesta configuració, obre l'aplicació de Signal al dispositiu mòbil i ves a Configuració > Històries."
+msgctxt "icu:StoriesSettings__view-receipts--new-description"
+msgid "See and share when stories are viewed. If disabled, you won't see when others view your story."
+msgstr "Veu i comparteix quan es visualitzen les teves històries. Si ho desactives, no veuràs quan altres persones vegin la teva història."
 
 msgctxt "icu:GroupStorySettingsModal__members_title"
 msgid "Who can view this story"
@@ -10011,15 +10051,19 @@ msgctxt "icu:ProfileNameWarningModal__description--direct"
 msgid "Profile names on Signal are chosen by their account holder:"
 msgstr "Els noms de perfil els tria el titular del compte:"
 
-msgctxt "icu:ProfileNameWarningModal__list--item1--direct"
-msgid "Profile names aren't verified"
-msgstr "Els noms de perfil no es verifiquen"
+msgctxt "icu:ProfileNameWarningModal__warning--signal-cant-verify"
+msgid "Signal can’t verify names and photos"
+msgstr "Signal no pot verificar els noms i les fotos"
 
-msgctxt "icu:ProfileNameWarningModal__list--item2--direct"
+msgctxt "icu:ProfileNameWarningModal__warning--signal-wont-contact"
+msgid "Signal will never contact you for your registration code, PIN, or recovery key"
+msgstr "Signal mai es posarà en contacte amb tu per demanar-te el teu codi de registre, PIN o clau de recuperació"
+
+msgctxt "icu:ProfileNameWarningModal__warning--be-cautious"
 msgid "Be cautious of accounts that impersonate others"
 msgstr "Ves amb compte amb els comptes que es fan passar per altres"
 
-msgctxt "icu:ProfileNameWarningModal__list--item3--direct"
+msgctxt "icu:ProfileNameWarningModal__warning--dont-share-info"
 msgid "Don't share personal information with people you don't know"
 msgstr "No comparteixis informació personal amb persones que no coneguis"
 
