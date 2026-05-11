@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-04 08:48+0000\n"
+"POT-Creation-Date: 2026-05-11 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -471,6 +471,10 @@ msgstr ""
 msgid "Untitled query"
 msgstr "Consulta sense títol"
 
+#: .breadcrumb/more-ancestors
+msgid "Show more ancestors"
+msgstr ""
+
 #: .bug-report.clipboard/action-desc
 msgid "Inspect and collect clipboard data"
 msgstr "Inspeccionar porta-retalls"
@@ -750,7 +754,6 @@ msgstr "Obrir a la barra lateral"
 msgctxt ".cmdk.action/search"
 ".cmdk.action/search"
 ".cmdk.action/search"
-".cmdk.action/search"
 msgid "Search"
 msgstr "Cercar"
 
@@ -860,10 +863,6 @@ msgstr "Crear la pàgina '{1}'"
 #: .cmdk.info/create-tag
 msgid "Create tag called '{1}'"
 msgstr "Crear l'etiqueta '{1}'"
-
-#: .cmdk.input/add-graph-filter-placeholder
-msgid "Add graph filter"
-msgstr "Afegir filtre de graf"
 
 #: .cmdk.input/default-placeholder
 msgid "What are you looking for?"
@@ -2680,10 +2679,6 @@ msgstr "S'ha exportat Client ops SQLite: {1}.sqlite"
 msgid "No graph found."
 msgstr "No s'ha trobat cap graf."
 
-#: .graph.page/show-journals
-msgid "Show Journals"
-msgstr "Mostrar Diaris"
-
 #: .graph.page/title
 msgid "Page graph"
 msgstr "Graf de pàgina"
@@ -2824,25 +2819,21 @@ msgstr "Tots els grafs"
 msgid "The graph '{1}' already exists. Please try again with another name."
 msgstr "El graf '{1}' ja existeix. Proveu amb un altre nom."
 
-#: .graph/as-png
-msgid "as PNG"
-msgstr "com a PNG"
+#: .graph/build-error
+msgid "Graph failed to load."
+msgstr ""
 
-#: .graph/built-in-pages
-msgid "Built-in pages"
-msgstr "Pàgines integrades"
+#: .graph/canvas-label
+msgid "Graph canvas"
+msgstr ""
 
-#: .graph/charge-range
-msgid "Charge Range"
-msgstr "Abast de càrrega"
-
-#: .graph/charge-strength
-msgid "Charge Strength"
-msgstr "Força de càrrega"
-
-#: .graph/click-to-search
-msgid "Click to search"
-msgstr "Feu clic per cercar"
+#: .graph/clear-tags
+msgctxt ".graph/clear-tags"
+".graph/clear-tags"
+".graph/clear-tags"
+".graph/clear-tags"
+msgid "Clear"
+msgstr ""
 
 #: .graph/create-db
 msgid "Create db graph"
@@ -2855,10 +2846,6 @@ msgstr "Error en crear el graf"
 #: .graph/create-new
 msgid "Create a new graph"
 msgstr "Crear un graf nou"
-
-#: .graph/created-before
-msgid "Created before"
-msgstr "Creat abans de"
 
 #: .graph/creating
 msgid "Creating graph"
@@ -2894,6 +2881,14 @@ msgstr ""
 "⚠️ Tingueu en compte que no podem recuperar aquest gràfic després de ser "
 "eliminat. Assegureu-vos que teniu còpies de seguretat abans de suprimir-lo."
 
+#: .graph/displayed-tags
+msgid "Displayed tags"
+msgstr ""
+
+#: .graph/displayed-tags-count
+msgid "{1} of {2}"
+msgstr ""
+
 #: .graph/downloading
 msgid "downloading"
 msgstr "descarregant"
@@ -2902,10 +2897,6 @@ msgstr "descarregant"
 msgid "Encrypt graph data"
 msgstr "Xifra les dades del graf"
 
-#: .graph/excluded-pages
-msgid "Excluded pages"
-msgstr "Pàgines excloses"
-
 #: .graph/gc-success
 msgid "Graph gc successfully!"
 msgstr "Neteja del graf realitzada correctament!"
@@ -2913,6 +2904,30 @@ msgstr "Neteja del graf realitzada correctament!"
 #: .graph/last-opened-at-label
 msgid "Last opened at: {1}"
 msgstr "Últim cop obert: {1}"
+
+#: .graph/layout
+msgid "Layout"
+msgstr ""
+
+#: .graph/layout-depth
+msgid "Depth"
+msgstr ""
+
+#: .graph/layout-force
+msgid "Force graph"
+msgstr ""
+
+#: .graph/layout-grid-layout
+msgid "Grid layout"
+msgstr ""
+
+#: .graph/layout-link-distance
+msgid "Link distance"
+msgstr ""
+
+#: .graph/layout-show-journals
+msgid "Show journals"
+msgstr ""
 
 #: .graph/leave-action
 msgid "Leave this graph"
@@ -2930,32 +2945,29 @@ msgstr "Error en sortir del graf"
 msgid "Left graph."
 msgstr "Graf abandonat"
 
-#: .graph/link-distance
-msgid "Link Distance"
-msgstr "Distància d'enllaç"
-
 #: .graph/local-graphs
 msgid "Local graphs:"
 msgstr "Grafs locals"
-
-#: .graph/n-hops-from-selected-nodes
-msgid "N hops from selected nodes"
-msgstr "N salts des dels nodes seleccionats"
 
 #: .graph/name-placeholder
 msgid "your graph name"
 msgstr "el nom del vostre graf"
 
-#: .graph/orphan-pages
-msgid "Orphan pages"
-msgstr "Pàgines òrfenes"
+#: .graph/no-selected-node
+msgid "No graph node selected."
+msgstr ""
 
-#: .graph/pause-simulation
-msgid "Pause simulation"
-msgstr "Pausar simulació"
+#: .graph/open-folder-action
+msgid "Open graph folder"
+msgstr ""
+
+#: .graph/open-selected-node
+msgctxt ".graph/open-selected-node"
+msgid "Open {1}"
+msgstr ""
 
 #: .graph/preparing
-msgid "preparing"
+msgid "Preparing"
 msgstr "preparant"
 
 #: .graph/refresh-remote-graphs
@@ -2978,22 +2990,47 @@ msgstr "S'ha eliminat el gràfic \"{1}\". S'està redirigint al gràfic \"{2}\""
 msgid "This graph has been removed from Logseq Sync."
 msgstr "Graf eliminat de la sincronització"
 
-#: .graph/reset
-msgid "Reset Graph"
-msgstr "Restablir graf"
+#: .graph/retry
+msgid "Retry"
+msgstr ""
 
-#: .graph/reset-forces
-msgid "Reset Forces"
-msgstr "Restablir forces"
+#: .graph/search-tags
+msgid "Search tags"
+msgstr ""
 
-#: .graph/search
-msgctxt ".graph/search"
-msgid "Search"
-msgstr "Cercar"
+#: .graph/select-all-tags
+msgctxt ".graph/select-all-tags"
+".graph/select-all-tags"
+msgid "Select all"
+msgstr ""
+
+#: .graph/selected-nodes-status
+msgid "{1} selected: {2}"
+msgstr ""
+
+#: .graph/settings
+msgid "Graph settings"
+msgstr ""
+
+#: .graph/settings-saved-per-graph
+msgid "Saved per graph"
+msgstr ""
 
 #: .graph/shared-graphs
 msgid "Shared by others:"
 msgstr "Grafs compartits"
+
+#: .graph/time-travel
+msgid "Time travel"
+msgstr ""
+
+#: .graph/time-travel-now
+msgid "Now"
+msgstr ""
+
+#: .graph/toggle-tag
+msgid "Toggle tag {1}"
+msgstr ""
 
 #: .graph/updated-switching
 msgid "Graph updated! Switching to graph ..."
@@ -3006,6 +3043,19 @@ msgstr "Utilitza Logseq Sync (beta)"
 #: .graph/use-sync-label
 msgid "Use Logseq Sync?"
 msgstr "Utilitza Logseq Sync?"
+
+#: .graph/view-mode
+msgid "View mode"
+msgstr ""
+
+#: .graph/view-mode-all-pages
+msgid "All pages"
+msgstr ""
+
+#: .graph/view-mode-tags
+msgctxt ".graph/view-mode-tags"
+msgid "Tags"
+msgstr ""
 
 #: .header/go-back
 msgctxt ".header/go-back"
@@ -3565,8 +3615,6 @@ msgstr "També usat per {1} En context {2}"
 
 #: .keymap/clear
 msgctxt ".keymap/clear"
-".keymap/clear"
-".keymap/clear"
 msgid "Clear"
 msgstr "Esborrar"
 
@@ -4621,6 +4669,47 @@ msgstr "Comprovar actualitzacions automàticament"
 msgid "Auto check for updates: {1}!"
 msgstr "Comprovació automàtica d'actualitzacions: {1}!"
 
+#: .plugin/bulk-remove-disabled
+msgid "Remove disabled plugins and themes"
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-clear-selection
+msgid "Clear selection"
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-confirm
+msgid "Remove selected ({1})"
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-delete-alert
+msgid ""
+"Are you sure you want to remove the selected disabled plugins and themes? "
+"({1})"
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-desc
+msgid ""
+"Items with an unknown or earlier disabled time are listed first. Select the "
+"disabled plugins and themes you want to remove."
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-empty
+msgid "No disabled plugins or themes found."
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-select-all
+msgctxt ".plugin/bulk-remove-disabled-select-all"
+msgid "Select all"
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-success
+msgid "Removed disabled plugins and themes: {1}"
+msgstr ""
+
+#: .plugin/bulk-remove-disabled-title
+msgid "Bulk remove disabled plugins and themes"
+msgstr ""
+
 #: .plugin/check-all-updates
 msgid "Check all updates"
 msgstr "Cercar actualitzacions"
@@ -4671,6 +4760,24 @@ msgstr "Desactivar ara"
 msgctxt ".plugin/disabled"
 msgid "Disabled"
 msgstr "Inactiu"
+
+#: .plugin/disabled-cleanup-warning-clean-now
+msgid "Clean up now"
+msgstr ""
+
+#: .plugin/disabled-cleanup-warning-desc
+msgid ""
+"Too many disabled plugins and themes can make plugin management harder. We "
+"recommend removing the ones you no longer need."
+msgstr ""
+
+#: .plugin/disabled-cleanup-warning-later
+msgid "Later"
+msgstr ""
+
+#: .plugin/disabled-cleanup-warning-title
+msgid "You have {1} disabled plugins and themes."
+msgstr ""
 
 #: .plugin/does-not-support-db
 msgid "Does not support DB graphs"
@@ -5315,6 +5422,7 @@ msgid "View sorting"
 msgstr "Ordenació de la vista"
 
 #: .property.built-in/tags
+msgctxt ".property.built-in/tags"
 msgid "Tags"
 msgstr "Etiquetes"
 
@@ -6378,6 +6486,28 @@ msgstr ""
 "Per accedir a noves característiques abans que ningú ha de ser patrocinador "
 "de Logseq en Open Collective y després iniciar sessió."
 
+#: .settings.features/markdown-mirror
+msgid "Markdown Mirror"
+msgstr ""
+
+#: .settings.features/markdown-mirror-desc
+msgid ""
+"Write a derived Markdown copy of edited pages to the graph's mirror/markdown "
+"folder. Desktop only."
+msgstr ""
+
+#: .settings.features/markdown-mirror-regenerate
+msgid "Regenerate full mirror"
+msgstr ""
+
+#: .settings.features/markdown-mirror-regenerate-error
+msgid "Failed to regenerate Markdown Mirror: {1}"
+msgstr ""
+
+#: .settings.features/markdown-mirror-regenerate-success
+msgid "Markdown Mirror regenerated"
+msgstr ""
+
 #: .settings.features/page-not-found
 msgid ""
 "The page \"{1}\" doesn't exist yet. Please create that page first, and then "
@@ -6734,9 +6864,17 @@ msgstr "Error d'importació de SQLiteDB: {1}"
 msgid "SQLiteDB save error: {1}"
 msgstr "Error de desar SQLiteDB: {1}"
 
+#: .sync/assets-downloading
+msgid "downloading assets"
+msgstr ""
+
 #: .sync/assets-downloading-count
 msgid "Downloading assets ({1})"
 msgstr "Descàrrega de fitxers ({1})"
+
+#: .sync/assets-uploading
+msgid "uploading assets"
+msgstr ""
 
 #: .sync/assets-uploading-count
 msgid "Uploading assets ({1})"
@@ -6791,6 +6929,10 @@ msgstr "Fora de línia"
 #: .sync/online
 msgid "Online"
 msgstr "En línia"
+
+#: .sync/pending-asset-uploads
+msgid "pending asset uploads"
+msgstr ""
 
 #: .sync/pending-local-changes
 msgid "pending local changes"
@@ -6969,6 +7111,7 @@ msgid "Open"
 msgstr "Obre"
 
 #: .ui/open-named
+msgctxt ".ui/open-named"
 msgid "Open {1}"
 msgstr "Obre {1}"
 
@@ -7259,6 +7402,7 @@ msgid "Row number"
 msgstr "Número de fila"
 
 #: .view.table/select-all
+msgctxt ".view.table/select-all"
 msgid "Select all"
 msgstr "Seleccionar tot"
 
