@@ -5487,6 +5487,14 @@ msgctxt "MENU_ENUM_SUBLABEL_MEMORY_UPDATE_INTERVAL"
 msgid "Memory usage display will be updated at the set interval in frames."
 msgstr "El comptador de memòria en pantalla s'actualitzarà a la velocitat assignada a fotogrames."
 
+msgctxt "MENU_ENUM_LABEL_VALUE_TIME_SHOW"
+msgid "Display Time"
+msgstr "Mostra l'hora"
+
+msgctxt "MENU_ENUM_SUBLABEL_TIME_SHOW"
+msgid "Display the current time in the preferred format."
+msgstr "Mostra el temps actual en el format preferit."
+
 msgctxt "MENU_ENUM_LABEL_VALUE_NETPLAY_PING_SHOW"
 msgid "Display Netplay Ping"
 msgstr "Mostra el ping del joc en línia"
@@ -6108,8 +6116,8 @@ msgid "Show 'Netplay'"
 msgstr "Mostra «Joc en línia»"
 
 msgctxt "MENU_ENUM_SUBLABEL_CONTENT_SHOW_NETPLAY"
-msgid "Show the 'Netplay' menu."
-msgstr "Mostra el menú «Joc en xarxa»."
+msgid "Show the 'Netplay' entry inside the Main Menu or Playlists."
+msgstr "Mostra l'entrada 'Joc en xarxa' dins del menú principal o de les llistes de reproducció."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_CONTENT_SHOW_HISTORY"
 msgid "Show 'History'"
@@ -6280,8 +6288,8 @@ msgid "Show 'Undo Save/Load State'"
 msgstr "Mostra “Desfés el desament/càrrega d’estat”"
 
 msgctxt "MENU_ENUM_SUBLABEL_QUICK_MENU_SHOW_UNDO_SAVE_LOAD_STATE"
-msgid "Show the options for undoing save/load state."
-msgstr "Mostra les opcions per desfer el desament o càrrega d’estat."
+msgid "Show the options for undoing save/load state. RetroPad Start triggers save/load undo when hidden."
+msgstr "Mostra les opcions per desfer el guardat/carregat d'estats. Si ocultes aquesta opció, podràs desfer els desats o carregats ràpids clicant a RetroPad Start."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_QUICK_MENU_SHOW_OPTIONS"
 msgid "Show 'Core Options'"
@@ -11051,6 +11059,10 @@ msgctxt "MENU_ENUM_LABEL_VALUE_MENU_XMB_VERTICAL_FADE_FACTOR"
 msgid "Vertical Fade Factor"
 msgstr "Factor d’esvaïment vertical"
 
+msgctxt "MENU_ENUM_LABEL_VALUE_MENU_XMB_SHOW_HORIZONTAL_LIST"
+msgid "Show Horizontal List"
+msgstr "Mostra la llista horitzontal"
+
 msgctxt "MENU_ENUM_LABEL_VALUE_MENU_XMB_SHOW_TITLE_HEADER"
 msgid "Show Title Header"
 msgstr "Mostra la capçalera del títol"
@@ -11286,6 +11298,14 @@ msgstr "Replega la barra lateral"
 msgctxt "MENU_ENUM_SUBLABEL_OZONE_COLLAPSE_SIDEBAR"
 msgid "Have the left sidebar always collapsed."
 msgstr "Manté la barra lateral sempre replegada."
+
+msgctxt "MENU_ENUM_LABEL_VALUE_OZONE_SHOW_SIDEBAR"
+msgid "Show the Sidebar"
+msgstr "Mostra la barra lateral"
+
+msgctxt "MENU_ENUM_SUBLABEL_OZONE_SHOW_SIDEBAR"
+msgid "Allow left sidebar navigation and playlists."
+msgstr "Permet la navegació per la barra lateral esquerra i les llistes de reproducció."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_OZONE_TRUNCATE_PLAYLIST_NAME"
 msgid "Truncate Playlist Names (Restart required)"
@@ -13748,8 +13768,8 @@ msgid "Undid load state."
 msgstr "S'ha desfet la càrrega del desat ràpid."
 
 msgctxt "MSG_UNDOING_SAVE_STATE"
-msgid "Undoing save state"
-msgstr "Desfer desat ràpid"
+msgid "Undoing save state..."
+msgstr "Desfer desat ràpid..."
 
 msgctxt "MSG_UNKNOWN"
 msgid "Unknown"
