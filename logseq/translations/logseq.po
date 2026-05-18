@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 09:05+0000\n"
+"POT-Creation-Date: 2026-05-18 09:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -266,6 +266,26 @@ msgstr "Obrir imatge al navegador"
 msgid "Remove the file too (notice it can't be restored)"
 msgstr "Eliminar també l'arxiu (aquesta acció no es pot desfer)"
 
+#: .asset/picker-empty
+msgid "No assets found"
+msgstr ""
+
+#: .asset/picker-empty-hint
+msgid "Add assets to select them here."
+msgstr ""
+
+#: .asset/picker-fallback-type
+msgid "file"
+msgstr ""
+
+#: .asset/picker-open
+msgid "Choose asset"
+msgstr ""
+
+#: .asset/picker-set-failed
+msgid "Failed to set asset property"
+msgstr ""
+
 #: .asset/ref-block
 msgid "Asset ref block"
 msgstr "Bloc de referència"
@@ -423,10 +443,6 @@ msgstr "Practicar"
 msgid "Practice cards"
 msgstr "Practicar targetes"
 
-#: .block/ref-nesting-too-deep
-msgid "Block ref nesting is too deep"
-msgstr "L'anidament de referències de bloc és massa profund"
-
 #: .block/remove-tag
 msgid "Remove tag"
 msgstr "Eliminar etiqueta"
@@ -583,6 +599,7 @@ msgstr "Informar d'un error"
 
 #: .class.built-in/asset
 msgctxt ".class.built-in/asset"
+".class.built-in/asset"
 msgid "Asset"
 msgstr "Recurs"
 
@@ -2029,6 +2046,16 @@ msgctxt ".electron/cancel"
 msgid "Cancel"
 msgstr "Cancel·lar"
 
+#: .electron/cli-install-failed
+msgid ""
+"Failed to install Logseq CLI.\n"
+"{1}"
+msgstr ""
+
+#: .electron/cli-installed
+msgid "Logseq CLI was installed to {1}"
+msgstr ""
+
 #: .electron/copy-image
 msgid "Copy Image"
 msgstr "Copiar imatge"
@@ -2439,6 +2466,10 @@ msgstr "Desar a fitxer"
 msgid "Export SQLite DB"
 msgstr "Exportar base de dades SQLite"
 
+#: .export/sqlite-db-exported
+msgid "SQLite DB exported to {1}."
+msgstr ""
+
 #: .export/title
 msgctxt ".export/title"
 msgid "Export"
@@ -2459,6 +2490,10 @@ msgstr "Exportar base de dades SQLite i recursos"
 #: .export/zip-error
 msgid "Export zip failed."
 msgstr "Error en l'exportació del ZIP."
+
+#: .export/zip-exported
+msgid "ZIP exported to {1}."
+msgstr ""
 
 #: .file.config/deprecation-title
 msgid "The file {1} has the following deprecations:"
@@ -2990,6 +3025,10 @@ msgstr "S'ha eliminat el gràfic \"{1}\". S'està redirigint al gràfic \"{2}\""
 msgid "This graph has been removed from Logseq Sync."
 msgstr "Graf eliminat de la sincronització"
 
+#: .graph/reset-view
+msgid "Reset graph view"
+msgstr ""
+
 #: .graph/retry
 msgid "Retry"
 msgstr ""
@@ -3261,6 +3300,10 @@ msgstr "Comunitat del fòrum"
 #: .help/handbook
 msgid "Handbook"
 msgstr "Manual"
+
+#: .help/inline-math-example-prefix
+msgid "inline"
+msgstr ""
 
 #: .help/learn-more
 msgid "Learn more"
@@ -5371,6 +5414,10 @@ msgstr "Freqüència de recurrència de repetició"
 msgid "Repeating recur unit"
 msgstr "Unitat de recurrència de repetició"
 
+#: .property.built-in/repeat-repeat-type
+msgid "Repeating type"
+msgstr ""
+
 #: .property.built-in/repeat-repeated
 msgid "Node Repeats?"
 msgstr "El node es repeteix?"
@@ -5563,6 +5610,18 @@ msgstr "Setmana"
 msgid "Year"
 msgstr "Any"
 
+#: .property.repeat-repeat-type/dotted-plus
+msgid "Advance from completion"
+msgstr ""
+
+#: .property.repeat-repeat-type/double-plus
+msgid "Advance from scheduled, skip to future"
+msgstr ""
+
+#: .property.repeat-repeat-type/plus
+msgid "Advance from scheduled"
+msgstr ""
+
 #: .property.repeat/date
 msgid "Repeat date"
 msgstr "Data de repetició"
@@ -5578,6 +5637,10 @@ msgstr "Cada"
 #: .property.repeat/is-label
 msgid "is:"
 msgstr "és:"
+
+#: .property.repeat/next-date
+msgid "Next date"
+msgstr ""
 
 #: .property.repeat/task
 msgid "Repeat task"
@@ -5911,6 +5974,11 @@ msgstr "Títol"
 msgctxt ".property/type"
 msgid "Property type"
 msgstr "Tipus"
+
+#: .property/type-asset
+msgctxt ".property/type-asset"
+msgid "Asset"
+msgstr ""
 
 #: .property/type-change-warning
 msgid "Changing the property type clears some property configurations."
