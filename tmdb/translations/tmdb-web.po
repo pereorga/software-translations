@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 08:49+0000\n"
+"POT-Creation-Date: 2026-05-18 09:07+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2318,6 +2318,12 @@ msgctxt "account_drop_down->watchlist"
 msgid "Watchlist"
 msgstr "Llista de seguiment"
 
+#: account_drop_down-%3Ereviews
+msgctxt "account_drop_down->reviews"
+"account_drop_down->reviews"
+msgid "Reviews"
+msgstr ""
+
 #: accounts-%3Eactivity-%3Eactivity
 msgid "Activity"
 msgstr "Activitat"
@@ -2831,10 +2837,12 @@ msgid "%{username}'s Ratings"
 msgstr "Les valoracions de l'usuari %{username}"
 
 #: accounts-%3Eratings_reviews-%3Emy_reviews-%3Elogged_in
+msgctxt "accounts->ratings_reviews->my_reviews->logged_in"
 msgid "My Reviews"
 msgstr "Les meves ressenyes"
 
 #: accounts-%3Eratings_reviews-%3Emy_reviews-%3Epublic
+msgctxt "accounts->ratings_reviews->my_reviews->public"
 msgid "%{username}'s Reviews"
 msgstr "Les ressenyes de l'usuari %{username}"
 
@@ -2978,6 +2986,16 @@ msgstr "Aquesta setmana"
 #: accounts-%3Ewatchlist-%3Eview_them
 msgid "View them."
 msgstr "Mostra'ls."
+
+#: accounts-%3Ereviews-%3Epage_title-%3Epage_owner
+msgctxt "accounts->reviews->page_title->page_owner"
+msgid "My Reviews"
+msgstr ""
+
+#: accounts-%3Ereviews-%3Epage_title-%3Epublic
+msgctxt "accounts->reviews->page_title->public"
+msgid "%{username}'s Reviews"
+msgstr ""
 
 #: add_to_list
 msgid "Add %{media_title} to one of your lists..."
@@ -15225,6 +15243,10 @@ msgstr "Escriviu una ressenya"
 #: media-%3Esocial_panel-%3Ereviews-%3Ewrite_review-%3Epublic
 msgid "Login to write a review."
 msgstr "Registreu-vos per a escriure una ressenya."
+
+#: media-%3Esocial_panel-%3Ereviews-%3Ewritten_on
+msgid "Written on %{date}"
+msgstr ""
 
 #: media-%3Etranslations-%3Eadd_biography
 msgid "Add biography"
