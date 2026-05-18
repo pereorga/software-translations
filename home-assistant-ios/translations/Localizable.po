@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-11 09:04+0000\n"
+"POT-Creation-Date: 2026-05-18 09:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -999,6 +999,40 @@ msgstr "Ubicació actualitzada mitjançant Visita"
 msgid "Location updated via X-Callback-URL"
 msgstr "Ubicació actualitzada mitjançant X-Callback-URL"
 
+#: magic_item.action.assist.unsupported.title
+msgid "Assist (iOS 26.4+)"
+msgstr ""
+
+#: magic_item.assist_prompt.navigation_title
+msgctxt "magic_item.assist_prompt.navigation_title"
+msgid "Assist prompt"
+msgstr ""
+
+#: magic_item.assist_prompt.prompt.footer
+msgid ""
+"When executed in CarPlay, this prompt will be sent to Assist and the "
+"response will be played as audio. Make sure the selected Assist pipeline has "
+"text-to-speech configured."
+msgstr ""
+
+#: magic_item.assist_prompt.prompt.title
+msgid "Prompt"
+msgstr ""
+
+#: magic_item.assist_prompt.title.title
+msgctxt "magic_item.assist_prompt.title.title"
+msgid "Title"
+msgstr ""
+
+#: magic_item.item_type.assist_prompt.title
+msgctxt "magic_item.item_type.assist_prompt.title"
+msgid "Assist prompt"
+msgstr ""
+
+#: magic_item.item_type.assist_prompt.unsupported.title
+msgid "Assist prompt (iOS 26.4+)"
+msgstr ""
+
 #: menu.actions.configure
 msgid "Configure…"
 msgstr "Configurar…"
@@ -1107,66 +1141,9 @@ msgstr "Escriure etiqueta"
 msgid "NFC is not available on this device"
 msgstr "L'NFC no està disponible en aquest dispositiu"
 
-#: nfc.tag_approval.allow_always
-msgid "Allow Always"
-msgstr ""
-
-#: nfc.tag_approval.allow_once
-msgid "Allow Once"
-msgstr ""
-
-#: nfc.tag_approval.copy_tag
-msgid "Copy tag"
-msgstr ""
-
-#: nfc.tag_approval.tag_id.title
-msgid "Tag identifier"
-msgstr ""
-
-#: nfc.tag_approval.description
-msgid ""
-"Send this tag to Home Assistant to perform the automation attached to it."
-msgstr ""
-
-#: nfc.tag_approval.title
-msgid "Allow Sending?"
-msgstr ""
-
 #: nfc.read.error.generic_failure
 msgid "Failed to read tag"
 msgstr "No s'ha pogut llegir l'etiqueta"
-
-#: tags.allowed.delete_all
-msgctxt "tags.allowed.delete_all"
-msgid "Delete all"
-msgstr ""
-
-#: tags.allowed.delete_all.confirm.button
-msgctxt "tags.allowed.delete_all.confirm.button"
-msgid "Delete all"
-msgstr ""
-
-#: tags.allowed.delete_all.confirm.title
-msgid "Delete all allowed tags?"
-msgstr ""
-
-#: tags.allowed.empty
-msgid "No allowed tags"
-msgstr ""
-
-#: tags.allowed.footer
-msgid ""
-"Allowed tags can be sent to Home Assistant without asking for approval each "
-"time. Swipe left on a tag to delete it."
-msgstr ""
-
-#: tags.allowed.title
-msgid "Allowed tags"
-msgstr ""
-
-#: tags.title
-msgid "Tags"
-msgstr ""
 
 #: nfc.read.error.not_home_assistant
 msgid "NFC tag is not a Home Assistant tag"
@@ -1295,6 +1272,7 @@ msgid "Placeholder"
 msgstr "Contenidor"
 
 #: notifications_configurator.action.rows.title.title
+msgctxt "notifications_configurator.action.rows.title.title"
 msgid "Title"
 msgstr "Títol"
 
@@ -2022,14 +2000,6 @@ msgstr "Informació de fons molesta"
 #: settings.developer.camera_notification.notification.body
 msgid "Expand this to show the camera content extension"
 msgstr "Expandeix això per mostrar l'extensió del contingut de la càmera"
-
-#: settings.developer.clear_allowed_tags.complete.title
-msgid "Approved tags cleared"
-msgstr ""
-
-#: settings.developer.clear_allowed_tags.title
-msgid "Clear approved tags"
-msgstr ""
 
 #: settings.developer.copy_realm.alert.message
 msgid "Copied Realm from %@ to %@"
@@ -4052,6 +4022,16 @@ msgstr "Interruptor d'Obrir"
 #: widgets.controls.open_switch.description
 msgid "Opens the selected switch entity inside the app"
 msgstr "Obre l'entitat d'interruptor seleccionada dins de l'app"
+
+#: widgets.custom.server_unreachable.body
+msgid ""
+"Home Assistant could not be reached, please check your app server settings "
+"and connection security level."
+msgstr ""
+
+#: widgets.custom.server_unreachable.title
+msgid "Home Assistant could not be reached"
+msgstr ""
 
 #: widgets.details.parameters.run_script
 msgid "Run Script (only in rectangular family)"
