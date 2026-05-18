@@ -563,18 +563,6 @@ msgctxt "icu:pinnedConversationsFull"
 msgid "You can only pin up to 4 chats"
 msgstr "Només pots fixar fins a 4 xats."
 
-msgctxt "icu:loadingMessages--other"
-msgid "Loading messages from {daysAgo, plural, one {# day} other {# days}} ago..."
-msgstr "{daysAgo, plural, one {Carregant missatges de fa 1 dia…} other {Carregant missatges de fa {daysAgo,number} dies…}}"
-
-msgctxt "icu:loadingMessages--yesterday"
-msgid "Loading messages from yesterday..."
-msgstr "Carregant missatges d'ahir…"
-
-msgctxt "icu:loadingMessages--today"
-msgid "Loading messages from today..."
-msgstr "Carregant missatges d'avui…"
-
 msgctxt "icu:view"
 msgid "View"
 msgstr "Mostra"
@@ -2547,6 +2535,34 @@ msgctxt "icu:CallingButton--more-options"
 msgid "More options"
 msgstr "Més opcions"
 
+msgctxt "icu:CallingParticipantMenu__MuteAudio"
+msgid "Mute audio"
+msgstr "Silenciar àudio"
+
+msgctxt "icu:CallingParticipantMenu__UnmuteAudio"
+msgid "Unmute audio"
+msgstr "Reactivar àudio"
+
+msgctxt "icu:CallingParticipantMenu__ViewProfile"
+msgid "View profile"
+msgstr "Veure perfil"
+
+msgctxt "icu:CallingParticipantMenu__GoToChat"
+msgid "Go to chat"
+msgstr "Ves al xat"
+
+msgctxt "icu:CallingParticipantMenu__RemoveFromCall"
+msgid "Remove from call"
+msgstr "Expulsar de la trucada"
+
+msgctxt "icu:CallingParticipantListItem__ContextMenuButton"
+msgid "More actions"
+msgstr "Més accions"
+
+msgctxt "icu:CallingParticipantListItem__Presenting"
+msgid "Presenting"
+msgstr "Presentant"
+
 msgctxt "icu:CallingPendingParticipants__ApproveUser"
 msgid "Approve join request"
 msgstr "Aprovar sol·licitud per unir-se"
@@ -2854,6 +2870,26 @@ msgstr "Vols eliminar totes les dades i missatges d'aquesta versió de Signal pe
 msgctxt "icu:deleteAllDataProgress"
 msgid "Disconnecting and deleting all data…"
 msgstr "Desconnexió i eliminació de totes les dades…"
+
+msgctxt "icu:deleteAccountHeader"
+msgid "Delete account"
+msgstr "Eliminar el compte"
+
+msgctxt "icu:deleteAccountExplanation"
+msgid "This will delete your account info, profile, and all of your messages. You will also be removed from all Signal groups."
+msgstr "Això eliminarà la informació del compte, el perfil i tots els missatges. També se t'eliminarà de tots els grups de Signal."
+
+msgctxt "icu:deleteAccountButton"
+msgid "Delete account"
+msgstr "Eliminar el compte"
+
+msgctxt "icu:deleteAccountDialogHeader"
+msgid "Delete Account?"
+msgstr "Eliminar el compte?"
+
+msgctxt "icu:deleteAccountDialogBody"
+msgid "This will delete your account info, profile, and all of your messages. You will also be removed from all Signal groups. The app will close after this process is complete."
+msgstr "Això eliminarà la informació del compte, el perfil i tots els missatges. També se t'eliminarà de tots els grups de Signal. L'app es tancarà un cop finalitzat aquest procés."
 
 msgctxt "icu:deleteOldIndexedDBData"
 msgid "You have obsolete data from a prior installation of Signal Desktop. If you choose to continue, it will be deleted and you will start from scratch."
@@ -3310,6 +3346,14 @@ msgstr "Feu clic per a tornar a enllaçar el Signal Desktop amb el dispositiu m�
 msgctxt "icu:unlinked"
 msgid "Unlinked"
 msgstr "No enllaçat"
+
+msgctxt "icu:unregisteredWarning"
+msgid "Click to re-register and continue messaging. Signal Desktop is unregistered likely because you registered your phone number with Signal on a different device."
+msgstr "Fes clic per tornar-te a registrar i continuar enviant missatges. Segurament vas registrar el número de telèfon a Signal des d'un altre dispositiu, i per això Signal Desktop ja no està registrat."
+
+msgctxt "icu:unregistered"
+msgid "No longer registered"
+msgstr "Ja no està registrat."
 
 msgctxt "icu:autoUpdateNewVersionTitle"
 msgid "Update Available"
@@ -4327,21 +4371,49 @@ msgctxt "icu:ReactionsViewer--all"
 msgid "All"
 msgstr "Tot"
 
-msgctxt "icu:SafetyTipsModal__Title"
-msgid "Safety Tips"
+msgctxt "icu:SafetyTipsModal__Title-v2"
+msgid "Safety tips"
 msgstr "Consells de seguretat"
 
-msgctxt "icu:SafetyTipsModal__Description"
-msgid "Be careful when accepting message requests from people you don’t know. Watch out for:"
-msgstr "Ves amb compte quan acceptis sol·licituds de missatges de persones que no coneixes. Vigila amb:"
+msgctxt "icu:SafetyTipsModal__TipTitle--SignalChat"
+msgid "Don’t respond to chats from Signal"
+msgstr "No responguis a xats que es facin passar per Signal"
 
-msgctxt "icu:SafetyTipsModal__TipTitle--Fake"
-msgid "Fake names and accounts"
-msgstr "Comptes i noms falsos"
+msgctxt "icu:SafetyTipsModal__TipDescription--SignalChat"
+msgid "Signal will never message you for your registration code, PIN, or recovery key. Never respond to a chat pretending to be Signal."
+msgstr "Signal mai t'enviarà un missatge per demanar-te el teu codi de registre, PIN o clau de recuperació. No responguis mai a missatges que es facin passar per Signal."
 
-msgctxt "icu:SafetyTipsModal__TipDescription--Fake"
-msgid "Signal will never contact you for your registration code or PIN. Be cautious of requests that impersonate others. Profile names are chosen by their account holder and aren't verified."
-msgstr "Signal mai es posarà en contacte amb tu per demanar-te el teu codi de registre o PIN. Ves amb compte quan rebis peticions de persones es fan passar per altres. Els noms de perfil els tria el titular del compte i no es verifiquen."
+msgctxt "icu:SafetyTipsModal__TipTitle--NamesAndPhotos"
+msgid "Review names and photos"
+msgstr "Revisa els noms i les fotos"
+
+msgctxt "icu:SafetyTipsModal__TipDescription--NamesAndPhotos"
+msgid "Look out for the “Name not verified” notice. Everyone sets their own profile name in Signal."
+msgstr "Para atenció a l'avís \"Nom no verificat\". A Signal, tothom tria el seu nom del perfil."
+
+msgctxt "icu:SafetyTipsModal__TipTitle--Scams"
+msgid "Look out for scams"
+msgstr "Para atenció a les possibles estafes"
+
+msgctxt "icu:SafetyTipsModal__TipDescription--Scams"
+msgid "Avoid vague messages that try to get you to reply. Be aware of financial tips and suspicious web links."
+msgstr "Ignora els missatges poc precisos que busquen cridar la teva atenció perquè els responguis. Desconfia dels consells financers i dels enllaços sospitosos."
+
+msgctxt "icu:SafetyTipsModal__TipTitle--DontRespond"
+msgid "Don’t respond to chats from Signal"
+msgstr "No responguis a xats que es facin passar per Signal"
+
+msgctxt "icu:SafetyTipsModal__TipDescription--DontRespond"
+msgid "Signal will never message you for your registration code, PIN, or recover key. Don't reply to chats pretending to be Signal or Signal Support. Bad actors set up fake names to try to take over your account."
+msgstr "Signal mai t'enviarà un missatge per demanar-te el teu codi de registre, PIN o clau de recuperació. No responguis mai a missatges que es facin passar per Signal o pel Servei de suport de Signal. Els agents maliciosos fan servir noms falsos per intentar accedir al teu compte."
+
+msgctxt "icu:SafetyTipsModal__TipTitle--ReviewNames"
+msgid "Review names and photos"
+msgstr "Revisa els noms i les fotos"
+
+msgctxt "icu:SafetyTipsModal__TipDescription--ReviewNames"
+msgid "Look out for the “Name not verified” notice. Everyone sets their own profile name and photo in Signal. If you’re unsure who a new request is from it’s safer to ignore it."
+msgstr "Para atenció a l'avís \"Nom no verificat\". A Signal, tothom tria el seu nom i foto del perfil. Si no saps segur de qui és una nova sol·licitud, el més segur és ignorar-la."
 
 msgctxt "icu:SafetyTipsModal__TipTitle--Crypto"
 msgid "Crypto or money scams"
@@ -4359,13 +4431,13 @@ msgctxt "icu:SafetyTipsModal__TipDescription--Vague"
 msgid "Spammers often start with a simple message like “Hi” to draw you in. If you respond they may engage you further."
 msgstr "Els spammers sovint comencen amb un missatge senzill, com \"Hola\", per captar la teva atenció. Si respons, et poden implicar més."
 
-msgctxt "icu:SafetyTipsModal__TipTitle--Links"
-msgid "Messages with links"
-msgstr "Missatges amb enllaços"
-
 msgctxt "icu:SafetyTipsModal__TipDescription--Links"
 msgid "Be careful of messages from people you don’t know that have links to websites. Never visit links from people you don’t trust."
 msgstr "Ves amb compte amb els missatges de persones que no coneixes que tinguin enllaços a llocs web. Mai visitis els enllaços de persones en qui no confiïs."
+
+msgctxt "icu:SafetyTipsModal__TipTitle--Links-v2"
+msgid "Messages with web links"
+msgstr "Missatges amb enllaços"
 
 msgctxt "icu:SafetyTipsModal__TipTitle--Business"
 msgid "Fake businesses and institutions"
@@ -4375,21 +4447,9 @@ msgctxt "icu:SafetyTipsModal__TipDescription--Business"
 msgid "Be careful of businesses or government agencies contacting you. Messages involving tax agencies, couriers, and more can be spam."
 msgstr "Ves amb compte amb les empreses o les agències governamentals que es posin en contacte amb tu. Els missatges que involucren agències fiscals i serveis de missatgeria, entre d'altres, poden ser spam."
 
-msgctxt "icu:SafetyTipsModal__DotLabel"
-msgid "Go to page {page, number}"
-msgstr "Anar a la pàgina {page,number}"
-
-msgctxt "icu:SafetyTipsModal__Button--Previous"
-msgid "Previous tip"
-msgstr "Consell anterior"
-
-msgctxt "icu:SafetyTipsModal__Button--Next"
-msgid "Next tip"
-msgstr "Següent consell"
-
-msgctxt "icu:SafetyTipsModal__Button--Done"
-msgid "Done"
-msgstr "Fet"
+msgctxt "icu:SafetyTipsModal__Button--ViewMore"
+msgid "View more"
+msgstr "Mostra'n més"
 
 msgctxt "icu:MessageRequests--message-direct"
 msgid "Let {name} message you and share your name and photo with them? They won’t know you’ve seen their messages until you accept."
@@ -4519,13 +4579,13 @@ msgctxt "icu:MessageRequests--accept"
 msgid "Accept"
 msgstr "Ho accepto"
 
-msgctxt "icu:MessageRequests--accept-confirm-title"
-msgid "Accept Request?"
+msgctxt "icu:MessageRequests--accept-confirm-title-v2"
+msgid "Accept request?"
 msgstr "Acceptar la sol·licitud?"
 
-msgctxt "icu:MessageRequests--accept-confirm-body"
-msgid "Review requests carefully. Profile names are chosen by their account owner and aren't verified."
-msgstr "Revisa les sol·licituds amb atenció. Els noms de perfil els tria el titular del compte i no es verifiquen."
+msgctxt "icu:MessageRequests--accept-confirm-body-v2"
+msgid "Only accept requests from people you trust. <bold>Signal will never</bold> message you for a registration code, PIN, or recovery key."
+msgstr "Accepta només les sol·licituds de persones de confiança. <bold>Signal mai </bold>t'enviarà un missatge per demanar-te el teu codi de registre, PIN o clau de recuperació."
 
 msgctxt "icu:MessageRequests--continue"
 msgid "Continue"
@@ -4595,13 +4655,17 @@ msgctxt "icu:ConversationHero--signal-official-chat"
 msgid "This is the official and only chat from Signal"
 msgstr "Aquest és l'únic xat oficial de Signal"
 
-msgctxt "icu:ConversationHero--signal-official-account"
-msgid "Official account"
-msgstr "Compte oficial"
+msgctxt "icu:ConversationHero--signal-official-chat-title"
+msgid "Official chat"
+msgstr "Xat oficial"
 
 msgctxt "icu:ConversationHero--signal-official-account--description"
 msgid "The only official chat from Signal. Keep up to date with news and release notes."
 msgstr "L'únic xat oficial de Signal. Estigues al dia de les notícies i les notes de versió."
+
+msgctxt "icu:Timeline--signal-official-chat--chip"
+msgid "The only official chat from Signal."
+msgstr "L'únic xat oficial de Signal."
 
 msgctxt "icu:ConversationHero--release-notes"
 msgid "Keep up to date with news and release notes."
@@ -4962,10 +5026,6 @@ msgstr "Pantalla {id}"
 msgctxt "icu:calling__SelectPresentingSourcesModal--window"
 msgid "A window"
 msgstr "Una finestra"
-
-msgctxt "icu:calling__ParticipantInfoButton"
-msgid "More info about this contact"
-msgstr "Més informació sobre aquest contacte"
 
 msgctxt "icu:CallingAdhocCallInfo__CopyLink"
 msgid "Copy call link"
@@ -5911,6 +5971,10 @@ msgctxt "icu:close"
 msgid "Close"
 msgstr "Tanca"
 
+msgctxt "icu:clear"
+msgid "Clear"
+msgstr "Neteja"
+
 msgctxt "icu:previous"
 msgid "previous"
 msgstr "anterior"
@@ -5923,29 +5987,25 @@ msgctxt "icu:ClearingData__description"
 msgid "This may take a few minutes"
 msgstr "Això pot trigar uns minuts"
 
+msgctxt "icu:DeletingAccount__LeavingGroups__Title"
+msgid "Leaving groups..."
+msgstr "Abandonant grup…"
+
+msgctxt "icu:DeletingAccount__LeavingGroups__Detail"
+msgid "Depending on the number of groups you’re in, this might take a few minutes"
+msgstr "Segons el nombre de grups en què estiguis, això pot trigar uns minuts."
+
+msgctxt "icu:DeletingAccount__DeletingData__Title"
+msgid "Deleting account and all data..."
+msgstr "Eliminant compte i totes les dades…"
+
+msgctxt "icu:DeletingAccount__DeletingData__Detail"
+msgid "Deleting user data and resetting the app"
+msgstr "Se suprimeixen les dades de l'usuari i es restableix l'aplicació"
+
 msgctxt "icu:BadgeDialog__become-a-sustainer-button"
 msgid "Donate to Signal"
 msgstr "Feu una donació a Signal"
-
-msgctxt "icu:BadgeSustainerInstructions__header"
-msgid "Donate to Signal"
-msgstr "Feu una donació a Signal"
-
-msgctxt "icu:BadgeSustainerInstructions__subheader"
-msgid "Signal is powered by people like you. Contribute and receive a badge."
-msgstr "El Signal és sostingut per persones com vós. Contribuïu-hi i rebeu una insígnia."
-
-msgctxt "icu:BadgeSustainerInstructions__instructions__1"
-msgid "Open Signal on your phone"
-msgstr "Obriu el Signal al telèfon."
-
-msgctxt "icu:BadgeSustainerInstructions__instructions__2"
-msgid "Tap on your profile photo in the top left to open Settings"
-msgstr "Toqueu la foto del perfil a la part superior esquerra per obrir-ne la Configuració."
-
-msgctxt "icu:BadgeSustainerInstructions__instructions__3"
-msgid "Tap on \"Donate to Signal\" and subscribe"
-msgstr "Toca sobre \"Fer donació a Signal\" per a subscriure't"
 
 msgctxt "icu:ProfileMovedModal__title"
 msgid "Your profile has moved"
@@ -6946,6 +7006,10 @@ msgstr "No es poden reenviar missatges buits o eliminats"
 msgctxt "icu:ShareCallLinkViaSignal__DraftMessageText"
 msgid "Use this link to join a Signal call: {url}"
 msgstr "Utilitza aquest enllaç per unir-te a la trucada de Signal: {url}"
+
+msgctxt "icu:MessageRequestWarning__review-carefully"
+msgid "Review requests carefully"
+msgstr "Reviseu les sol·licituds amb atenció."
 
 msgctxt "icu:MessageRequestWarning__safety-tips-v2"
 msgid "Safety tips"
@@ -8207,21 +8271,29 @@ msgctxt "icu:Preferences--blocked"
 msgid "Blocked"
 msgstr "Persones bloquejades"
 
-msgctxt "icu:Preferences--blocked-count"
-msgid "{num, plural, one {# contact} other {# contacts}}"
-msgstr "{num, plural, one {{num,number} contacte} other {{num,number} contactes}}"
-
 msgctxt "icu:Preferences--blocked-count-both-new"
 msgid "{num, plural, =0 { No users or groups } one {# user or group} other {# users or groups}}"
-msgstr "{num, plural, =0 { No users or groups } one {{num,number} user or group} other {{num,number} users or groups}}"
+msgstr "{num, plural, =0 { No hi ha persones ni grups } one {{num,number} persona o grup} other {{num,number} persones o grups}}"
 
 msgctxt "icu:Preferences--blocked-count-contacts-new"
 msgid "{num, plural, =0 { No users } one {# user} other {# users}}"
-msgstr "{num, plural, =0 { No users } one {{num,number} user} other {{num,number} users}}"
+msgstr "{num, plural, =0 { No hi ha persones } one {{num,number} persona} other {{num,number} persones}}"
 
 msgctxt "icu:Preferences--blocked-count-groups-new"
 msgid "{num, plural, =0 { No groups } one {# group} other {# groups}}"
-msgstr "{num, plural, =0 { No groups } one {{num,number} group} other {{num,number} groups}}"
+msgstr "{num, plural, =0 { No hi ha grups } one {{num,number} grup} other {{num,number} grups}}"
+
+msgctxt "icu:Preferences--blocked-users--description"
+msgid "Blocked users will not be able to call you or send you messages"
+msgstr "Les persones bloquejades no podran trucar-te ni enviar-te missatges"
+
+msgctxt "icu:Preferences--blocked-users"
+msgid "Blocked Users"
+msgstr "Usuaris bloquejats"
+
+msgctxt "icu:Preferences--blocked-groups"
+msgid "Blocked Groups"
+msgstr "Grups bloquejats"
 
 msgctxt "icu:Preferences--signal-backups"
 msgid "Signal Secure Backups"
@@ -8963,6 +9035,10 @@ msgctxt "icu:MessageRequestResponseNotification__Message--Accepted"
 msgid "You accepted the message request"
 msgstr "Has acceptat la sol·licitud de missatge"
 
+msgctxt "icu:MessageRequestResponseNotification__Message--Accepted-Contact-Title"
+msgid "You accepted {userProfileName}'s message request"
+msgstr "Has acceptat la sol·licitud de missatge de {userProfileName}"
+
 msgctxt "icu:MessageRequestResponseNotification__Message--Reported"
 msgid "Reported as spam"
 msgstr "Reportat com a spam"
@@ -8983,9 +9059,9 @@ msgctxt "icu:MessageRequestResponseNotification__Message--Unblocked--Group"
 msgid "You unblocked the group"
 msgstr "Has desbloquejat el grup"
 
-msgctxt "icu:MessageRequestResponseNotification__Button--Options"
-msgid "Options"
-msgstr "Opcions"
+msgctxt "icu:MessageRequestResponseNotification__Button--block-or-report"
+msgid "Block or Report..."
+msgstr "Bloquejar o Denunciar…"
 
 msgctxt "icu:MessageRequestResponseNotification__Button--LearnMore"
 msgid "Learn More"
@@ -10643,6 +10719,14 @@ msgctxt "icu:Megaphone__ExpandNarrowSidebar"
 msgid "Expand sidebar to interact with megaphone"
 msgstr "Expandeix la barra lateral per interactuar amb el megàfon"
 
+msgctxt "icu:Carousel--Role"
+msgid "Carousel"
+msgstr "Carrusel"
+
+msgctxt "icu:Carousel__Slide--Role"
+msgid "Slide"
+msgstr "Diapositiva"
+
 msgctxt "icu:WhatsNew__bugfixes"
 msgid "This version contains a number of small tweaks and bug fixes to keep Signal running smoothly."
 msgstr "Aquesta versió conté una sèrie de petites modificacions i correccions d'errors per tal que el Signal funcioni sense problemes."
@@ -10670,3 +10754,7 @@ msgstr "Petits ajustos addicionals, correccions d'errors i un munt de plans pel 
 msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
+
+msgctxt "icu:WhatsNew__8.10--0"
+msgid "The freshly spun emoji in Unicode 17.0 have now pirouetted into place in Signal. Send a message reaction with the new Ballet Dancer emoji to perform your own digital version of a pas de chat."
+msgstr "Compatibilitat amb el nou emoji d'Unicode 17.0."
