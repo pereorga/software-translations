@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-05 14:48-0600\n"
+"POT-Creation-Date: 2026-05-16 22:17-0600\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -382,6 +382,10 @@ msgstr "Suprimeix els fitxers obsolets"
 msgid "Package lists"
 msgstr "Llistes de paquets"
 
+#. Cleaner description for vim, VS Code, etc.
+msgid "Editor"
+msgstr "Editor"
+
 msgid "Windowing system"
 msgstr "Sistema de finestres"
 
@@ -400,6 +404,19 @@ msgstr "Visualitzador de documents"
 msgid "Custom folders will be reset."
 msgstr "Es reinicialitzaran les carpetes personalitzades."
 
+#. Label for Claude coding assistant
+msgid "AI assistant"
+msgstr ""
+
+#. Description for deleting Claude Code sessions
+#, fuzzy
+#| msgid "Delete the command history"
+msgid "Delete the conversation history"
+msgstr "Suprimeix l'historial d'ordres"
+
+msgid "You would lose resume, continue, and rewind for past sessions"
+msgstr ""
+
 msgid "Deep scan"
 msgstr "Anàlisi en profunditat"
 
@@ -414,9 +431,6 @@ msgstr "Fitxers d'intercanvi del VIM al perfil de l'usuari"
 
 msgid "VIM swap files across system"
 msgstr "Fitxers d'intercanvi del VIM al sistema"
-
-msgid "Editor"
-msgstr "Editor"
 
 msgid "Recordings"
 msgstr "Enregistraments"
@@ -444,6 +458,15 @@ msgstr "Llista de fitxers baixats"
 msgid "Delete the list of visited web pages"
 msgstr "Suprimeix la llista de pàgines web visitades"
 
+#. Cleaning option that deletes AI models in a web browser
+msgid "AI"
+msgstr ""
+
+#, fuzzy
+#| msgid "Delete the logs"
+msgid "Delete the AI models"
+msgstr "Suprimeix els registres"
+
 #. Torrent software can block a list of IP addresses, such as those that may belong to malware or anti-piracy organizations
 msgid "Blocklists"
 msgstr "Llistes de bloqueig"
@@ -467,6 +490,11 @@ msgstr "Suprimeix el fitxer"
 
 msgid "Delete the list of game servers"
 msgstr "Suprimeix la llista de servidors de joc"
+
+#, fuzzy
+#| msgid "Downloading URL failed: %s"
+msgid "Downloaded files"
+msgstr "Ha fallat la descàrrega de l'URL: %s"
 
 msgid "Remote control software"
 msgstr "Programari de control remot"
@@ -1463,6 +1491,12 @@ msgstr "Espai de disc lliure"
 msgid "Select destination folder"
 msgstr "Seleccioneu la carpeta de destinació"
 
+#. TRANSLATORS: Error message shown when chaff file generation fails.
+#. The placeholder is for the technical error details.
+#, python-brace-format
+msgid "Error generating chaff: {error}"
+msgstr ""
+
 #. TRANSLATORS: Progress message shown while deleting chaff files.
 #. 'Deleting files' is a present participle.
 #. To indicate an ongoing operation, include the ellipsis as literal
@@ -1471,6 +1505,12 @@ msgstr "Seleccioneu la carpeta de destinació"
 #| msgid "Deleting files"
 msgid "Deleting files…"
 msgstr "S'estan eliminant els fitxers"
+
+#. TRANSLATORS: Error message shown when deleting chaff files fails.
+#. The placeholder is for the technical error details.
+#, python-brace-format
+msgid "Error deleting chaff files: {error}"
+msgstr ""
 
 #. TRANSLATORS: Title for dialog window.
 #. Digital chaff is like physical chaff that airplanes use to protect themselves
@@ -1914,11 +1954,22 @@ msgctxt "button"
 msgid "Add folder"
 msgstr "Afegeix una carpeta"
 
-#. TRANSLATORS: Update notification for users upgrading from versions
-#. older than 5.1.0.
+#. TRANSLATORS: "Expert Mode" is the name of a feature/setting found in
+#. Preferences. Keep it consistent with the translation of "Expert Mode"
+#. in the preferences dialog. This message appears when cleaning options
+#. with warnings are selected but expert mode is disabled.
 msgid ""
-"Cleaning options with warnings now require expert mode. Enable it in "
-"preferences to clean them."
+"One or more selected cleaning options have warnings and require Expert Mode "
+"to clean. Enable it in preferences."
+msgstr ""
+
+#. TRANSLATORS: "Expert Mode" is the name of a feature/setting found in
+#. Preferences. Keep it consistent with the translation of "Expert Mode"
+#. in the preferences dialog. This message appears when the user tries to
+#. skip a delete confirmation without enabling Expert Mode.
+msgid ""
+"Delete confirmation is disabled but expert mode is not enabled. Enable "
+"Expert Mode in preferences to skip delete confirmations."
 msgstr ""
 
 #. TRANSLATORS: First-start hint for Linux users shown in
