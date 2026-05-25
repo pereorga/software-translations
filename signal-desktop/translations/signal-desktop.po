@@ -3,6 +3,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgctxt "icu:AxoAlertDialog.Cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:AxoButton.Pending"
+msgid "Pending"
+msgstr "Pendent"
+
+msgctxt "icu:AxoDialog.Back"
+msgid "Back"
+msgstr "Enrere"
+
+msgctxt "icu:AxoDialog.Close"
+msgid "Close"
+msgstr "Tanca"
+
+msgctxt "icu:AxoTextField.Clear"
+msgid "Clear"
+msgstr "Neteja"
+
 msgctxt "icu:AddUserToAnotherGroupModal__title"
 msgid "Add to a group"
 msgstr "Afegeix-lo a un grup"
@@ -451,10 +471,6 @@ msgctxt "icu:NavTabs__ItemLabel--Settings"
 msgid "Settings"
 msgstr "Configuració"
 
-msgctxt "icu:NavTabs__ItemLabel--Profile"
-msgid "Profile"
-msgstr "Perfil"
-
 msgctxt "icu:NavSidebar__BackButtonLabel"
 msgid "Back"
 msgstr "Enrere"
@@ -815,10 +831,6 @@ msgctxt "icu:KeyTransparencyErrorDialog__Submit"
 msgid "Submit"
 msgstr "Envia"
 
-msgctxt "icu:KeyTransparencyErrorDialog__Submitting"
-msgid "Submitting..."
-msgstr "Enviant…"
-
 msgctxt "icu:KeyTransparencyOnboardingDialog__Title"
 msgid "Signal can now auto-verify encryption"
 msgstr "Ara, Signal pot verificar automàticament la codificació"
@@ -834,10 +846,6 @@ msgstr "Continua"
 msgctxt "icu:KeyTransparencyOnboardingDialog__LearnMore"
 msgid "Learn more"
 msgstr "Més informació"
-
-msgctxt "icu:KeyTransparencyOnboardingDialog__CloseButton__AccessibilityLabel"
-msgid "Close"
-msgstr "Tanca"
 
 msgctxt "icu:verified"
 msgid "Verified"
@@ -1651,10 +1659,6 @@ msgctxt "icu:PinMessageDialog__Title"
 msgid "Pin message for..."
 msgstr "Fixar missatge durant…"
 
-msgctxt "icu:PinMessageDialog__Close"
-msgid "Close"
-msgstr "Tanca"
-
 msgctxt "icu:PinMessageDialog__Option--TIME_24_HOURS"
 msgid "24 hours"
 msgstr "24 hores"
@@ -1686,10 +1690,6 @@ msgstr "Substituir el missatge fixat més antic?"
 msgctxt "icu:PinMessageDialog--HasMaxPinnedMessages__Description"
 msgid "Pinning this message will replace the oldest one."
 msgstr "En fixar aquest missatge, aquest substituirà el més antic."
-
-msgctxt "icu:PinMessageDialog--HasMaxPinnedMessages__Cancel"
-msgid "Cancel"
-msgstr "Cancel·la"
 
 msgctxt "icu:PinMessageDialog--HasMaxPinnedMessages__Continue"
 msgid "Continue"
@@ -1798,10 +1798,6 @@ msgstr "Desenganxar tots els missatges?"
 msgctxt "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Description"
 msgid "Messages will be unpinned for members of this chat."
 msgstr "Els missatges es desenganxaran per a tots els membres d'aquest xat."
-
-msgctxt "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Cancel"
-msgid "Cancel"
-msgstr "Cancel·la"
 
 msgctxt "icu:PinnedMessagesPanel__UnpinAllMessages__ConfirmDialog__Unpin"
 msgid "Unpin"
@@ -2051,6 +2047,18 @@ msgctxt "icu:Install__support-link"
 msgid "Need help?"
 msgstr "Us cal ajuda?"
 
+msgctxt "icu:Install__confirm-data-deletion__title"
+msgid "Delete all data?"
+msgstr "Vols suprimir totes les dades?"
+
+msgctxt "icu:Install__confirm-data-deletion__body"
+msgid "You’re attempting to link a different Signal account to this desktop. If you continue, all data currently in Signal Desktop will be deleted."
+msgstr "Estàs intentant enllaçar aquest ordinador amb un compte de Signal diferent. Si continues endavant, s'eliminaran totes les dades actuals de Signal Desktop."
+
+msgctxt "icu:Install__confirm-data-deletion__continue"
+msgid "Continue"
+msgstr "Continua"
+
 msgctxt "icu:Preferences--header"
 msgid "Settings"
 msgstr "Configuració"
@@ -2118,10 +2126,6 @@ msgstr "Vols eliminar la carpeta \"{chatFolderTitle}\"?"
 msgctxt "icu:Preferences__ChatsPage__DeleteChatFolderDialog__DeleteButton"
 msgid "Delete"
 msgstr "Suprimeix"
-
-msgctxt "icu:Preferences__ChatsPage__DeleteChatFolderDialog__CancelButton"
-msgid "Cancel"
-msgstr "Cancel·la"
 
 msgctxt "icu:Preferences__ChatFoldersPage__Title"
 msgid "Chat folders"
@@ -2286,10 +2290,6 @@ msgstr "Aquesta carpeta serà eliminada de la teva llista de xats."
 msgctxt "icu:Preferences__EditChatFolderPage__DeleteChatFolderDialog__DeleteButton"
 msgid "Delete"
 msgstr "Suprimeix"
-
-msgctxt "icu:Preferences__EditChatFolderPage__DeleteChatFolderDialog__CancelButton"
-msgid "Cancel"
-msgstr "Cancel·la"
 
 msgctxt "icu:Preferences__EditChatFolderPage__SaveChangesFolderDialog__Title"
 msgid "Save changes?"
@@ -2994,10 +2994,6 @@ msgstr "Importa tots els grups i contactes del Signal des del dispositiu mòbil.
 msgctxt "icu:syncNow"
 msgid "Import now"
 msgstr "Importa-ho ara"
-
-msgctxt "icu:syncing"
-msgid "Importing..."
-msgstr "Important…"
 
 msgctxt "icu:syncFailed"
 msgid "Import failed. Make sure your computer and your phone are connected to the internet."
@@ -5063,10 +5059,6 @@ msgctxt "icu:CallingAdhocCallInfo__UnknownContactInfoDialogBody"
 msgid "Before joining a call you can only see the names of phone contacts, people you’re in a group with, or people you’ve chatted with 1:1. You’ll see all names and photos once you’ve joined the call."
 msgstr "Abans d'unir-te a una trucada, només podràs veure els noms d'aquelles persones que tinguis desades com a contactes al teu telèfon, amb les quals estàs en un grup o amb les quals ja has xatejat. Un cop t'hagis unit a la trucada, veuràs els noms i les fotos de tothom."
 
-msgctxt "icu:CallingAdhocCallInfo__UnknownContactInfoDialogOk"
-msgid "Got it"
-msgstr "Entesos"
-
 msgctxt "icu:callingDeviceSelection__label--video"
 msgid "Video"
 msgstr "Vídeo"
@@ -5971,10 +5963,6 @@ msgctxt "icu:close"
 msgid "Close"
 msgstr "Tanca"
 
-msgctxt "icu:clear"
-msgid "Clear"
-msgstr "Neteja"
-
 msgctxt "icu:previous"
 msgid "previous"
 msgstr "anterior"
@@ -6007,13 +5995,9 @@ msgctxt "icu:BadgeDialog__become-a-sustainer-button"
 msgid "Donate to Signal"
 msgstr "Feu una donació a Signal"
 
-msgctxt "icu:ProfileMovedModal__title"
-msgid "Your profile has moved"
-msgstr "El teu perfil s'ha mogut"
-
-msgctxt "icu:ProfileMovedModal__description"
-msgid "Open the Settings tab to view and edit your profile."
-msgstr "Obre la pestanya Ajustos per veure i editar el teu perfil."
+msgctxt "icu:BadgeDialog__name-supports-signal"
+msgid "{name} supports Signal"
+msgstr "{name} dona suport a Signal"
 
 msgctxt "icu:BackupImportScreen__title"
 msgid "Syncing messages"
@@ -6134,10 +6118,6 @@ msgstr "Cancel·lar la sincronització d'arxius?"
 msgctxt "icu:BackupMediaDownloadCancelConfirmation__description"
 msgid "Your media has not completed syncing. If you choose to cancel, you can sync again by re-linking this device. <learnMoreLink>Learn more</learnMoreLink>."
 msgstr "No s'ha completat la sincronització dels teus arxius multimèdia. Si decideixes cancel·lar, podràs tornar-los a sincronitzar vinculant de nou aquest dispositiu. <learnMoreLink>Més informació</learnMoreLink>."
-
-msgctxt "icu:BackupMediaDownloadCancelConfirmation__button-continue"
-msgid "Continue syncing"
-msgstr "Continuar sincronitzant"
 
 msgctxt "icu:BackupMediaDownloadCancelConfirmation__button-confirm-cancel"
 msgid "Cancel syncing"
@@ -6374,10 +6354,6 @@ msgstr "Membres del grup amb categories"
 msgctxt "icu:ConversationDetails--member-label--no-members"
 msgid "No other members have labels"
 msgstr "Cap altre membre té categoria"
-
-msgctxt "icu:ConversationDetails--member-label--saving"
-msgid "Saving changes..."
-msgstr "Guardant canvis…"
 
 msgctxt "icu:ConversationDetails--member-label--error-title"
 msgid "Can’t save member label"
@@ -6866,10 +6842,6 @@ msgstr "Eliminar element?"
 msgctxt "icu:DeleteAttachmentModal__Body"
 msgid "This will permanently delete the item. Any message text associated with this item will also be deleted."
 msgstr "Aquesta acció esborrarà permanentment aquest element. Qualsevol missatge de text que hi estigui associat també s'esborrarà."
-
-msgctxt "icu:DeleteAttachmentModal__Close"
-msgid "Close"
-msgstr "Tanca"
 
 msgctxt "icu:DeleteAttachmentModal__Delete"
 msgid "Delete"
@@ -7862,10 +7834,6 @@ msgstr "Incloure contingut multimèdia <secondary>(mida de fitxer més gran)</se
 msgctxt "icu:PlaintextExport--Confirmation--ContinueButton"
 msgid "Continue"
 msgstr "Continua"
-
-msgctxt "icu:PlaintextExport--Confirmation--WaitingLabel"
-msgid "Waiting for input"
-msgstr "Esperant informació"
 
 msgctxt "icu:PlaintextExport--OSPrompt--Mac"
 msgid "export your chat history"
@@ -10055,10 +10023,6 @@ msgctxt "icu:CallLinkDetails__DeleteLinkModal__Body"
 msgid "This link will no longer work for anyone who has it."
 msgstr "Aquest enllaç ja no funcionarà per a ningú."
 
-msgctxt "icu:CallLinkDetails__DeleteLinkModal__Cancel"
-msgid "Cancel"
-msgstr "Cancel·la"
-
 msgctxt "icu:CallLinkDetails__DeleteLinkModal__Delete"
 msgid "Delete"
 msgstr "Suprimeix"
@@ -10575,14 +10539,6 @@ msgctxt "icu:Donations__badge-modal--help-text"
 msgid "You can adjust this on your mobile device under Settings → Donate to Signal → Badges"
 msgstr "Pots configurar-ho al teu dispositiu mòbil a Ajustos → Fer donació a Signal → Insígnies"
 
-msgctxt "icu:CallQualitySurvey__CloseButton__AccessibilityLabel"
-msgid "Close"
-msgstr "Tanca"
-
-msgctxt "icu:CallQualitySurvey__BackButton__AccessibilityLabel"
-msgid "Back"
-msgstr "Enrere"
-
 msgctxt "icu:CallQualitySurvey__HowWasYourCall__PageTitle"
 msgid "How was your call?"
 msgstr "Com ha anat la teva trucada?"
@@ -10699,10 +10655,6 @@ msgctxt "icu:CallQualitySurvey__ConfirmSubmission__SubmitButton"
 msgid "Submit"
 msgstr "Envia"
 
-msgctxt "icu:CallQualitySurvey__ConfirmSubmission__Submitting"
-msgid "Submitting survey..."
-msgstr "Enviant l'enquesta…"
-
 msgctxt "icu:CallQualitySurvey__SubmissionFailed"
 msgid "Failed to submit survey"
 msgstr "No s'ha pogut enviar l'enquesta"
@@ -10726,6 +10678,46 @@ msgstr "Carrusel"
 msgctxt "icu:Carousel__Slide--Role"
 msgid "Slide"
 msgstr "Diapositiva"
+
+msgctxt "icu:MaybeTransferModal__title"
+msgid "Transfer your phone’s message history to this desktop?"
+msgstr "Transferir l'historial dels missatges del teu telèfon a aquest ordinador?"
+
+msgctxt "icu:MaybeTransferModal__description"
+msgid "When you re-link this desktop, you can transfer your phone’s message history to this device."
+msgstr "Quan tornis a enllaçar aquest ordinador, podràs transferir l'historial dels missatges del teu telèfon a aquest dispositiu."
+
+msgctxt "icu:MaybeTransferModal__learnMore"
+msgid "Learn more"
+msgstr "Més informació"
+
+msgctxt "icu:MaybeTransferModal__replaceHistory"
+msgid "This will <bold>replace</bold> the message history on this desktop."
+msgstr "Això <bold>reemplaçarà</bold> l'historial dels missatges d'aquest ordinador."
+
+msgctxt "icu:MaybeTransferModal__scanQrCode"
+msgid "You’ll need to relink by scanning a QR code."
+msgstr "Per tornar-lo a enllaçar, hauràs d'escanejar el codi QR."
+
+msgctxt "icu:MaybeTransferModal__media"
+msgid "If you have paid Signal Secure Backups, all of your media will be transferred. Otherwise, your last 45 days of media will be included."
+msgstr "Si tens un pla de pagament de Còpies de seguretat segures de Signal, es transferiran tots els teus arxius multimèdia. En cas contrari, només s'inclouran els arxius dels darrers 45 dies."
+
+msgctxt "icu:MaybeTransferModal__transfer"
+msgid "Transfer"
+msgstr "Transferència"
+
+msgctxt "icu:MaybeTransferModal__dontTransfer"
+msgid "Don't transfer"
+msgstr "No transferir"
+
+msgctxt "icu:DeleteDataAndRelinkConfirmationDialog__title"
+msgid "Delete all data?"
+msgstr "Vols suprimir totes les dades?"
+
+msgctxt "icu:DeleteDataAndRelinkConfirmationDialog__body"
+msgid "All current data in Signal Desktop will be deleted. You can then scan a QR code and transfer your message history from your phone."
+msgstr "S'eliminaran totes les dades actuals de Signal Desktop. Pots escanejar un codi QR i transferir l'historial dels missatges des del teu telèfon."
 
 msgctxt "icu:WhatsNew__bugfixes"
 msgid "This version contains a number of small tweaks and bug fixes to keep Signal running smoothly."
@@ -10755,6 +10747,14 @@ msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
 
-msgctxt "icu:WhatsNew__8.10--0"
-msgid "The freshly spun emoji in Unicode 17.0 have now pirouetted into place in Signal. Send a message reaction with the new Ballet Dancer emoji to perform your own digital version of a pas de chat."
-msgstr "Compatibilitat amb el nou emoji d'Unicode 17.0."
+msgctxt "icu:WhatsNew__8.11--0"
+msgid "We've introduced additional confirmations and educational messaging in the app to help protect Signal users from phishing and social engineering attacks. As a reminder, never reply to chats pretending to be Signal, and never send your verification code, PIN, or recovery key to anyone."
+msgstr "Hem afegit missatges informatius i confirmacions addicionals a l'app per ajudar els usuaris de Signal a protegir-se dels atacs de <em>phishing</em> i d'enginyeria social. Recorda: no responguis a missatges que es facin passar per Signal i no comparteixis amb ningú el teu PIN ni cap clau de verificació o recuperació."
+
+msgctxt "icu:WhatsNew__8.11--1"
+msgid "Raised hand indicators in group calls now display the current order of the queue, so you can easily see who got the upper hand first."
+msgstr "Ara, els indicadors de mà aixecada a les trucades grupals inclouen l'ordre de cua."
+
+msgctxt "icu:WhatsNew__8.11--2"
+msgid "We also added a real-time visualization while recording voice messages, so surfers (and oceanographers) can stare at multiple moving waveforms whenever they share updates from the beach."
+msgstr "Nova visualització a la gravació de missatges de veu."
