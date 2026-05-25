@@ -2431,6 +2431,14 @@ msgctxt "MENU_ENUM_LABEL_HELP_VIDEO_FRAME_DELAY_AUTO"
 msgid "Attempt to hold desired 'Frame Delay' target and minimize frame drops. Starting point is 3/4 frame time when 'Frame Delay' is 0 (Auto)."
 msgstr "Intentar mantenir el desfasament de fotogrames objectiu i minimitzar els fotogrames perduts. Si el desfasament de fotogrames està establert a 0 (automàtic), el punt de partida serà de 3/4 parts de la duració dels fotogrames."
 
+msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_FRAME_TIME_SAMPLE_GATED"
+msgid "Sample Frame Time Only In Stable State"
+msgstr "Temps de fotograma de mostra només en estat estable"
+
+msgctxt "MENU_ENUM_SUBLABEL_VIDEO_FRAME_TIME_SAMPLE_GATED"
+msgid "Restrict 'Estimated Screen Refresh Rate' sampling to frames where content is running cleanly (not menu, not paused, not fast-forwarding, frame time within a sanity envelope). The diagnostic readout becomes a real signal at the cost of slower convergence after content load."
+msgstr "Restringeix el mostreig de la \"Freqüència d'actualització de pantalla estimada\" als fotogrames on el contingut s'executa correctament (no és de menú, no està en pausa, no s'avança ràpidament, el temps del fotograma està dins d'un envoltant de sanitat). La lectura de diagnòstic esdevé un senyal real a costa d'una convergència més lenta després de la càrrega del contingut."
+
 msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_FRAME_DELAY_AUTOMATIC"
 msgid "Auto"
 msgstr "Automàtic"
@@ -4855,29 +4863,13 @@ msgctxt "MENU_ENUM_SUBLABEL_REWIND_BUFFER_SIZE_STEP"
 msgid "Each time the rewind buffer size value is increased or decreased, it will change by this amount."
 msgstr "Cada vegada que s'augmenta o disminueix el valor de la mida de la memòria del rebobinat, canviarà en funció d'aquesta quantitat."
 
-msgctxt "MENU_ENUM_LABEL_VALUE_FRAME_TIME_COUNTER_RESET_AFTER_FASTFORWARDING"
-msgid "Reset After Fast-Forward"
-msgstr "Reiniciar després d'utilitzar l'avançament ràpid"
+msgctxt "MENU_ENUM_LABEL_VALUE_FRAME_TIME_COUNTER_AUTO_RESET"
+msgid "Auto-Reset After Disruptive Events"
+msgstr "Fes un reinici automàtic després d'un event disruptiu"
 
-msgctxt "MENU_ENUM_SUBLABEL_FRAME_TIME_COUNTER_RESET_AFTER_FASTFORWARDING"
-msgid "Reset the frame time counter after fast-forwarding."
-msgstr "Reinicia el comptador de duració de fotogrames després d'un avançament ràpid."
-
-msgctxt "MENU_ENUM_LABEL_VALUE_FRAME_TIME_COUNTER_RESET_AFTER_LOAD_STATE"
-msgid "Reset After Load State"
-msgstr "Reiniciar després de carregar un desat ràpid"
-
-msgctxt "MENU_ENUM_SUBLABEL_FRAME_TIME_COUNTER_RESET_AFTER_LOAD_STATE"
-msgid "Reset the frame time counter after loading a state."
-msgstr "Reinicia el comptador de duració de fotogrames després de carregar un estat."
-
-msgctxt "MENU_ENUM_LABEL_VALUE_FRAME_TIME_COUNTER_RESET_AFTER_SAVE_STATE"
-msgid "Reset After Save State"
-msgstr "Reiniciar després de generar un desat ràpid"
-
-msgctxt "MENU_ENUM_SUBLABEL_FRAME_TIME_COUNTER_RESET_AFTER_SAVE_STATE"
-msgid "Reset the frame time counter after saving a state."
-msgstr "Reinicia el comptador de duració de fotogrames després de desar un estat."
+msgctxt "MENU_ENUM_SUBLABEL_FRAME_TIME_COUNTER_AUTO_RESET"
+msgid "Clear the 'Estimated Screen Refresh Rate' sample buffer after fast-forwarding, save state, or load state. These operations introduce timing samples that don't reflect normal frame cadence and would skew the deviation measurement. Best-effort cleanup; has no effect when 'Sample Frame Time Only In Stable State' is enabled (which prevents the contamination at the source)."
+msgstr "Esborra la memòria intermèdia de mostres de la \"Freqüència d'actualització de pantalla estimada\" després d'avançar ràpidament, desar o carregar. Aquestes operacions introdueixen mostres de temps que no reflecteixen la cadència normal dels fotogrames i distorsionarien la mesura de la desviació. Neteja optimitzada; no té cap efecte quan l'opció \"Només temps de fotogrames de mostra en estat estable\" està habilitada (cosa que evita la contaminació a l'origen)."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_VIDEO_RECORD_QUALITY"
 msgid "Recording Quality"
@@ -6250,6 +6242,14 @@ msgstr "Mostra subetiquetes al menú"
 msgctxt "MENU_ENUM_SUBLABEL_MENU_SHOW_SUBLABELS"
 msgid "Show additional information for menu items."
 msgstr "Mostra informació addicional pels elements del menú."
+
+msgctxt "MENU_ENUM_LABEL_VALUE_MENU_SHOW_CONFIRM"
+msgid "Show Confirmation Boxes"
+msgstr "Mostra missatge de confirmació"
+
+msgctxt "MENU_ENUM_SUBLABEL_MENU_SHOW_CONFIRM"
+msgid "Ask for confirmation before quitting, resetting or closing content. When disabled these actions happen immediately."
+msgstr "Pregunta per confirmació abans de sortir, reiniciar o tancar el contingut. Si està desactivat, aquestes accions seran immediates."
 
 msgctxt "MENU_ENUM_LABEL_VALUE_QUICK_MENU_SHOW_RESUME_CONTENT"
 msgid "Show 'Resume'"
@@ -7786,6 +7786,10 @@ msgstr "Clau de transmissió de Twitch"
 msgctxt "MENU_ENUM_LABEL_VALUE_FACEBOOK_STREAM_KEY"
 msgid "Facebook Gaming Stream Key"
 msgstr "Clau de retransmissió de Facebook Gaming"
+
+msgctxt "MENU_ENUM_LABEL_VALUE_KICK_STREAM_KEY"
+msgid "Kick Stream Key"
+msgstr "Clau de transmissió de Kick"
 
 msgctxt "MENU_ENUM_LABEL_VALUE_SYSTEM_DIRECTORY"
 msgid "System/BIOS"
