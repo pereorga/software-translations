@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 09:06+0000\n"
+"POT-Creation-Date: 2026-05-25 09:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -478,6 +478,10 @@ msgstr "%BytesPerSecond/s"
 msgid "Remove"
 msgstr "Suprimeix"
 
+#: FSUtils
+msgid "You cannot create a link to the %trash% directory."
+msgstr "No podeu crear un enllaç al directori %trash%."
+
 #: Person+Query+Columns
 msgid "Company"
 msgstr "Companyia"
@@ -519,6 +523,7 @@ msgid "Hide dotfiles"
 msgstr "Amaga els fitxers amb un punt inicial"
 
 #: Model
+msgctxt "Model"
 msgid "Trash"
 msgstr "Paperera"
 
@@ -1223,6 +1228,10 @@ msgid "Unmatched brackets."
 msgstr "Claudàtors no coincidents."
 
 #: FSUtils
+msgid "You cannot copy or move the 'printers' directory."
+msgstr "No podeu copiar ni moure el directori d'impressores."
+
+#: FSUtils
 msgid ""
 "You are trying to replace the item:\\n"
 "\\t%name%dest\\n"
@@ -1282,6 +1291,10 @@ msgstr "Desconegut"
 #: ContainerWindow
 msgid "Paste links"
 msgstr "Enganxa els enllaços"
+
+#: FSUtils
+msgid "You cannot copy or move the %trash% directory."
+msgstr "No podeu copiar ni moure el directori %trash%."
 
 #: StatusWindow
 msgid "Restoring: "
@@ -1606,6 +1619,11 @@ msgstr "Afegeix-hi una impressora..."
 msgctxt "ContainerWindow"
 msgid "Permissions"
 msgstr "Permisos"
+
+#: FSUtils
+msgctxt "FSUtils"
+msgid "Trash"
+msgstr "Paperera"
 
 #: InfoWindow
 msgid "Size:"
