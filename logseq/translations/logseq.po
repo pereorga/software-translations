@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-18 09:06+0000\n"
+"POT-Creation-Date: 2026-05-25 09:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -326,6 +326,36 @@ msgstr "{1} fitxers..."
 msgid "Uploading"
 msgstr "Envio en curs"
 
+#: .block.comments/add-comment
+msgctxt ".block.comments/add-comment"
+msgid "Add comment"
+msgstr ""
+
+#: .block.comments/add-comment-command-desc
+msgid "Add a comment to this block."
+msgstr ""
+
+#: .block.comments/date-at-time
+msgid "{1} at {2}"
+msgstr ""
+
+#: .block.comments/label
+msgctxt ".block.comments/label"
+msgid "Comments"
+msgstr ""
+
+#: .block.comments/on-those-blocks
+msgid "On those blocks"
+msgstr ""
+
+#: .block.comments/placeholder
+msgid "Reply..."
+msgstr ""
+
+#: .block.comments/yesterday-at
+msgid "Yesterday at {1}"
+msgstr ""
+
 #: .block.macro/embed-deprecated
 msgid "{{embed}} is deprecated. Use '/Node embed' command instead."
 msgstr "{{embed}} està deprecat. Utilitza la comanda '/Node embed' en seu lloc."
@@ -608,6 +638,7 @@ msgid "Card"
 msgstr "Targeta"
 
 #: .class.built-in/cards
+msgctxt ".class.built-in/cards"
 msgid "Cards"
 msgstr "Targetes"
 
@@ -616,6 +647,11 @@ msgctxt ".class.built-in/code-block"
 ".class.built-in/code-block"
 msgid "Code"
 msgstr "Codi"
+
+#: .class.built-in/comments
+msgctxt ".class.built-in/comments"
+msgid "Comments"
+msgstr ""
 
 #: .class.built-in/journal
 msgid "Journal"
@@ -1017,6 +1053,11 @@ msgstr "Auto-completar: Obrir element seleccionat al panell lateral"
 #: .command.command-palette/toggle
 msgid "Search commands"
 msgstr "Alternar paleta d'ordres"
+
+#: .command.editor/add-comment
+msgctxt ".command.editor/add-comment"
+msgid "Add comment"
+msgstr ""
 
 #: .command.editor/add-property
 msgctxt ".command.editor/add-property"
@@ -2996,6 +3037,10 @@ msgstr ""
 msgid "Open graph folder"
 msgstr ""
 
+#: .graph/open-in-another-tab-action
+msgid "Open in another tab"
+msgstr ""
+
 #: .graph/open-selected-node
 msgctxt ".graph/open-selected-node"
 msgid "Open {1}"
@@ -3074,6 +3119,10 @@ msgstr ""
 #: .graph/updated-switching
 msgid "Graph updated! Switching to graph ..."
 msgstr "Graf actualitzat. Canviant..."
+
+#: .graph/upload-local-confirm-desc
+msgid "Upload graph \"{1}\" to Logseq Server?"
+msgstr ""
 
 #: .graph/use-sync-beta
 msgid "Use Logseq Sync (Beta testing)"
@@ -3895,6 +3944,10 @@ msgstr "Informar d'un error"
 msgid "Revision"
 msgstr "Revisió"
 
+#: .mobile.settings/tabs
+msgid "Tabs"
+msgstr ""
+
 #: .mobile.settings/theme
 msgid "Theme"
 msgstr "Tema"
@@ -3931,6 +3984,11 @@ msgstr ""
 msgid "Capture"
 msgstr "Capturar"
 
+#: .mobile.tab/flashcards
+msgctxt ".mobile.tab/flashcards"
+msgid "Cards"
+msgstr ""
+
 #: .mobile.tab/go-to
 msgid "Go To"
 msgstr "Anar a"
@@ -3942,6 +4000,10 @@ msgstr "Grafs"
 #: .mobile.toolbar/audio
 msgid "Audio"
 msgstr "Àudio"
+
+#: .mobile.toolbar/comment
+msgid "Comment"
+msgstr ""
 
 #: .mobile.toolbar/copy-ref
 msgctxt ".mobile.toolbar/copy-ref"
@@ -4235,6 +4297,26 @@ msgid ""
 msgstr ""
 "S'ha suprimit el contingut d'aquestes pàgines, però no s'han pogut suprimir: "
 "{1}. Vegeu la consola javascript per a més detalls."
+
+#: .page.validation/alias-batch-multiple-owners
+msgid "Aliases can't be batch-set on multiple pages."
+msgstr ""
+
+#: .page.validation/alias-duplicate-owner
+msgid "This page is already an alias of another page."
+msgstr ""
+
+#: .page.validation/alias-owns-aliases
+msgid "A page that has aliases can't be used as an alias."
+msgstr ""
+
+#: .page.validation/alias-self
+msgid "Alias can't be the page itself."
+msgstr ""
+
+#: .page.validation/alias-source-is-alias
+msgid "A page that is an alias of another page can't have its own aliases."
+msgstr ""
 
 #: .page.validation/cant-set-built-in-tags
 msgid "New page can't set built-in tags: {1}"
@@ -5112,6 +5194,10 @@ msgstr "introduïu el nom de la funció aquí"
 msgid "Unregister"
 msgstr "Desregistrar"
 
+#: .property.built-in/agent-session-id
+msgid "Agent Session ID"
+msgstr ""
+
 #: .property.built-in/alias
 msgid "Alias"
 msgstr "Àlies"
@@ -5164,6 +5250,10 @@ msgstr "Tipus de fitxer"
 #: .property.built-in/asset-width
 msgid "Image width"
 msgstr "Amplada de la imatge"
+
+#: .property.built-in/assignee
+msgid "Assignee"
+msgstr ""
 
 #: .property.built-in/background-color
 msgid "Background color"
