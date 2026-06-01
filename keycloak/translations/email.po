@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 09:17+0000\n"
+"POT-Creation-Date: 2026-06-01 09:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -300,6 +300,34 @@ msgstr ""
 "compte</a></p><p>Aquest enllaç caducarà en {4}.</p><p>Si no esteu al corrent "
 "que l''administrador hagi sol·licitat això, simplement ignoreu aquest "
 "missatge i no es realitzarà cap canvi.</p>"
+
+#: verifiableCredentialOfferSubject
+msgid "Verifiable Credential Offer"
+msgstr ""
+
+#: verifiableCredentialOfferBody
+msgid ""
+"Your administrator has just informed you that in your {2} account you can "
+"claim verifiable credential \"{3}\" to your digital wallet. Click on the "
+"link below to start this process.\n"
+"\n"
+"{0}\n"
+"\n"
+"This link will expire within {4}.\n"
+"\n"
+"If the link is expired already, you might be still able to claim your {3} by "
+"some other means (For example by using {2} account console)."
+msgstr ""
+
+#: verifiableCredentialOfferBodyHtml
+msgid ""
+"<p>Your administrator has just informed you that in your {2} account you can "
+"claim verifiable credential <b>{3}</b> to your digital wallet. Click on the "
+"link below to start this process.</p><p><a href=\"{0}\">Link to claim "
+"{3}</a></p><p>This link will expire within {4}.</p><p>If the link is expired "
+"already, you might be still able to claim your {3} by some other means (For "
+"example by using {2} account console).</p>"
+msgstr ""
 
 #: eventLoginErrorSubject
 msgid "Login error"
