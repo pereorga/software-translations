@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 09:47+0000\n"
+"POT-Creation-Date: 2026-06-08 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -255,6 +255,10 @@ msgstr "Endarrere"
 msgid "Done"
 msgstr "Fet"
 
+#: BUTTON_OPEN
+msgid "Open"
+msgstr ""
+
 #: BUTTON_CANCEL
 msgid "Cancel"
 msgstr "Cancel·la"
@@ -274,6 +278,10 @@ msgstr "Elimina"
 #: BUTTON_RENAME
 msgid "Rename"
 msgstr "Canvia el nom"
+
+#: BUTTON_COPY
+msgid "Copy"
+msgstr ""
 
 #: BUTTON_OK
 msgid "OK"
@@ -319,10 +327,6 @@ msgstr "Re-escanaig"
 #: PRIVATE_PLAYBACK_TOGGLE
 msgid "Private Playback"
 msgstr "Reproducció privada"
-
-#: SCAN_SUBTITLE_TOGGLE
-msgid "Scan for Subtitles (http-only)"
-msgstr "Escanejar Subtítols (només http)"
 
 #: BUTTON_RENDERER
 msgid "Casting devices"
@@ -379,14 +383,6 @@ msgstr "Obre un flux de xarxa"
 msgid "Network Stream"
 msgstr "Flux de xarxa"
 
-#: OPEN_NETWORK_HELP
-msgid ""
-"Enter any HTTP, RTSP, RTMP, MMS, FTP or UDP/RTP address to open the stream "
-"directly."
-msgstr ""
-"Introduïu una adreça http, rtsp, rtmp, mms, ftp o udp/rtp per obrir "
-"directament el flux."
-
 #: RECENT_STREAMS
 msgid "Recent Streams"
 msgstr ""
@@ -430,6 +426,15 @@ msgstr "Baixada cancel·lada per l'usuari"
 #: DOWNLOAD_FROM_HTTP
 msgid "Downloads"
 msgstr "Baixades"
+
+#: DOWNLOADS_SECTION_COMPLETED
+msgid "Completed"
+msgstr ""
+
+#: DOWNLOAD_FILE_UNAVAILABLE
+msgid ""
+"This file is no longer available. It may have been moved, renamed or deleted."
+msgstr ""
 
 #: ERROR_NUMBER
 msgid "Error %i occured"
@@ -569,6 +574,22 @@ msgstr "Fitxers locals"
 #: FILES_APP_CELL_SUBTITLE
 msgid "Open a file without copying it to VLC"
 msgstr "Obre un fitxer sense copiar-lo al VLC"
+
+#: PHOTO_LIBRARY_CELL_TITLE
+msgid "Photo Library"
+msgstr ""
+
+#: PHOTO_LIBRARY_CELL_SUBTITLE
+msgid "Import videos from your photo library"
+msgstr ""
+
+#: PHOTO_LIBRARY_IMPORT_FAILED
+msgid "Import failed"
+msgstr ""
+
+#: PHOTO_LIBRARY_IMPORT_FAILED_MESSAGE
+msgid "VLC could not import %d of the selected videos from your photo library."
+msgstr ""
 
 #: CLOUD_SERVICES
 msgid "Cloud Services"
@@ -1170,6 +1191,12 @@ msgid ""
 msgstr ""
 "Estàs segur d'esborrar la llista de reproducció seleccionada?\n"
 "Els arxius associats no seran eliminats."
+
+#: DELETE_MESSAGE_PLAYLISTS
+msgid ""
+"Are you sure to delete the selected playlists?\n"
+"Associated media files won't be deleted."
+msgstr ""
 
 #: DELETE_MESSAGE_PLAYLIST_CONTENT
 msgid ""
