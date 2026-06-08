@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 09:18+0000\n"
+"POT-Creation-Date: 2026-06-08 09:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,10 +20,6 @@ msgstr "Codi 2FA"
 #: .API+Server
 msgid "API server"
 msgstr "Clau API del servidor"
-
-#: .About+RustDesk
-msgid "About RustDesk"
-msgstr "Quant al RustDesk"
 
 #: .Accept+and+Elevate
 msgid "Accept and elevate"
@@ -188,14 +184,6 @@ msgstr "Surt de la pantalla completa"
 #: .Follow+System
 msgid "Follow system"
 msgstr "Utilitza la configuració del sistema"
-
-#: .Follow+remote+cursor
-msgid "Follow remote cursor"
-msgstr "Segueix al cursor remot"
-
-#: .Follow+remote+window+focus
-msgid "Follow remote window focus"
-msgstr "Segueix el focus remot de la finestra activa"
 
 #: .Forget+Password
 msgid "Forget password"
@@ -543,6 +531,10 @@ msgid ""
 "With this option enabled, RustDesk will fall back to skipping the "
 "verification step and proceed in case of verification failure."
 msgstr ""
+"Per defecte, el RustDesk verifica el certificat del servidor per als "
+"protocols que utilitzen TLS.\n"
+"Amb aquesta opció habilitada, el RustDesk ometrà el pas de verificació i "
+"continuarà en cas que aquesta falli."
 
 #: .allow-only-conn-window-open-tip
 msgid "Only allow connection if RustDesk window is open"
@@ -550,7 +542,7 @@ msgstr "Permet la connexió només si la finestra del RustDesk està activa"
 
 #: .allow-remote-toolbar-docking-any-edge
 msgid "Allow docking remote toolbar to any window edge"
-msgstr ""
+msgstr "Permet ancorar la barra d'eines remota a qualsevol vora de la finestra"
 
 #: .android_input_permission_tip1
 msgid ""
@@ -637,7 +629,7 @@ msgstr "Altre usuari ha iniciat ja una sessió"
 
 #: .auto-print-tip
 msgid "Print automatically using the selected printer."
-msgstr ""
+msgstr "Imprimeix automàticament utilitzant la impressora seleccionada."
 
 #: .auto_disconnect_option_tip
 msgid "Automatically close incoming sessions on user inactivity"
@@ -707,6 +699,8 @@ msgid ""
 "When D3D rendering is enabled, the remote control screen may be black on "
 "some machines."
 msgstr ""
+"Quan la renderització D3D està habilitada, en alguns equips la pantalla del "
+"control remot pot quedar en negre."
 
 #: .default_proxy_tip
 msgid "Default protocol and port are Socks5 and 1080"
@@ -722,6 +716,9 @@ msgid ""
 "When this option enabled, RustDesk will not use UDP 21116 any more, TCP "
 "21116 will be used instead."
 msgstr ""
+"Controla si s'utilitza només TCP.\n"
+"Amb aquesta opció habilitada, el RustDesk ja no utilitzarà l'UDP 21116, sinó "
+"que utilitzarà el TCP 21116 en el seu lloc."
 
 #: .display_is_plugged_out_msg
 msgid "The display is plugged out, switch to the first display."
@@ -737,13 +734,16 @@ msgstr ""
 
 #: .dont-show-again-tip
 msgid "Don't show this again"
-msgstr ""
+msgstr "No tornis a mostrar això"
 
 #: .download-new-version-failed-tip
 msgid ""
 "Download failed. You can try again or click the \"Download\" button to "
 "download from the release page and upgrade manually."
 msgstr ""
+"Ha fallat la descàrrega. Podeu tornar a provar o fer clic al botó "
+"\"Descarrega\" per descarregar-la des de la pàgina de publicacions i "
+"actualitzar-la manualment."
 
 #: .elevated_foreground_window_tip
 msgid ""
@@ -763,6 +763,8 @@ msgstr ""
 #: .elevation_username_tip
 msgid "Input username or domain\\username"
 msgstr ""
+"Inseriu el nom d'usuari o domini\\n"
+"omusuari"
 
 #: .empty_address_book_tip
 msgid ""
@@ -919,11 +921,11 @@ msgstr "ha de començar amb http:// o https://"
 
 #: .keep-awake-during-incoming-sessions-label
 msgid "Keep screen awake during incoming sessions"
-msgstr ""
+msgstr "Mantén la pantalla activa durant les sessions entrants"
 
 #: .keep-awake-during-outgoing-sessions-label
 msgid "Keep screen awake during outgoing sessions"
-msgstr ""
+msgstr "Mantén la pantalla activa durant les sessions sortints"
 
 #: .login_linux_tip
 msgid "You need to login to remote Linux account to enable a X desktop session"
@@ -941,7 +943,7 @@ msgstr "Verifiqueu la vostra connexió a Internet i torneu a provar"
 
 #: .new-version-of-%7B%7D-tip
 msgid "There is a new version of {} available"
-msgstr ""
+msgstr "Hi ha disponible una versió nova de {}"
 
 #: .no+fingerprints
 msgid "No fingerprints"
@@ -973,7 +975,7 @@ msgstr "No disponible. Verifiqueu la connexió"
 
 #: .note-at-conn-end-tip
 msgid "Ask for note at end of connection"
-msgstr ""
+msgstr "Demana una nota en finalitzar la connexió"
 
 #: .os_account_desk_tip
 msgid ""
@@ -995,7 +997,7 @@ msgstr ""
 
 #: .password-hidden-tip
 msgid "Permanent password is set (hidden)."
-msgstr ""
+msgstr "La contrasenya permanent està definida (oculta)."
 
 #: .powered_by_me
 msgid "Powered by RustDesk"
@@ -1003,7 +1005,7 @@ msgstr "Amb la tecnologia de RustDesk"
 
 #: .preset-password-in-use-tip
 msgid "Preset password is currently in use."
-msgstr ""
+msgstr "Actualment s'està utilitzant una contrasenya preestablerta."
 
 #: .preset_password_warning
 msgid ""
@@ -1019,23 +1021,26 @@ msgstr ""
 msgid ""
 "You received a print job from remote. Do you want to execute it at your side?"
 msgstr ""
+"Heu rebut un treball d'impressió des de la part remota. Voleu executar-lo al "
+"vostre costat?"
 
 #: .printer-os-requirement-tip
 msgid "The printer outgoing function requires Windows 10 or higher."
-msgstr ""
+msgstr "La funció d'impressió sortint requereix Windows 10 o superior."
 
 #: .printer-requires-installed-%7B%7D-client-tip
 msgid ""
 "In order to use remote printing, {} needs to be installed on this device."
 msgstr ""
+"Per a utilitzar la impressió remota, cal instal·lar {} en aquest dispositiu."
 
 #: .printer-%7B%7D-not-installed-tip
 msgid "The {} Printer is not installed."
-msgstr ""
+msgstr "La impressora {} no està instal·lada."
 
 #: .printer-%7B%7D-ready-tip
 msgid "The {} Printer is installed and ready to use."
-msgstr ""
+msgstr "La impressora {} està instal·lada i a punt per a utilitzar-se."
 
 #: .pull_ab_failed_tip
 msgid "Failed to refresh address book"
@@ -1051,23 +1056,26 @@ msgstr "Ha fallat en actualitzar la llista amb el servidor"
 
 #: .rel-mouse-exit-%7B%7D-tip
 msgid "Press {} to exit."
-msgstr ""
+msgstr "Premeu {} per a sortir."
 
 #: .rel-mouse-lock-failed-tip
 msgid "Failed to lock cursor. Relative Mouse Mode has been disabled."
 msgstr ""
+"Ha fallat el bloqueig del cursor. S'ha inhabilitat el mode de ratolí relatiu."
 
 #: .rel-mouse-not-ready-tip
 msgid "Relative Mouse Mode is not ready yet. Please try again."
-msgstr ""
+msgstr "El mode de ratolí relatiu encara no està a punt. Torneu a provar."
 
 #: .rel-mouse-not-supported-peer-tip
 msgid "Relative Mouse Mode is not supported by the connected peer."
-msgstr ""
+msgstr "El client connectat no admet el mode de ratolí relatiu."
 
 #: .rel-mouse-permission-lost-tip
 msgid "Keyboard permission was revoked. Relative Mouse Mode has been disabled."
 msgstr ""
+"S'ha revocat el permís del teclat. S'ha inhabilitat el mode de ratolí "
+"relatiu."
 
 #: .relay_hint_tip
 msgid ""
@@ -1082,6 +1090,10 @@ msgstr ""
 "«Connecta sempre mitjançant un repetidor» si ja existeix una fitxa amb "
 "aquesta ID a la pestanya de connexions recents."
 
+#: .remember-wayland-keyboard-choice-tip
+msgid "Don't ask again for this remote computer"
+msgstr "No tornis a preguntar-ho per a aquest equip remot"
+
 #: .remember_account_tip
 msgid "Remember this account"
 msgstr "Recorda aquest compte"
@@ -1089,10 +1101,11 @@ msgstr "Recorda aquest compte"
 #: .remote-printing-disallowed-text-tip
 msgid "The permission settings of the controlled side deny Remote Printing."
 msgstr ""
+"La configuració de permisos de la part controlada denega la impressió remota."
 
 #: .remote-printing-disallowed-tile-tip
 msgid "Remote Printing disallowed"
-msgstr ""
+msgstr "Impressió remota no permesa"
 
 #: .remote_restarting_tip
 msgid ""
@@ -1120,7 +1133,7 @@ msgstr "Resolució original"
 
 #: .save-settings-tip
 msgid "Save settings"
-msgstr ""
+msgstr "Desa la configuració"
 
 #: .scam_text1
 msgid ""
@@ -1145,13 +1158,15 @@ msgstr "Podríeu ser víctima d'una ESTAFA!"
 
 #: .screenshot-action-tip
 msgid "Please select how to continue with the screenshot."
-msgstr ""
+msgstr "Seleccioneu com voleu continuar amb la captura de pantalla."
 
 #: .screenshot-merged-screen-not-supported-tip
 msgid ""
 "Merging screenshots of multiple displays is currently not supported. Please "
 "switch to a single display and try again."
 msgstr ""
+"Actualment no és possible combinar captures de pantalla de diverses "
+"pantalles. Canvieu a una sola pantalla i torneu a provar."
 
 #: .selinux_tip
 msgid ""
@@ -1163,11 +1178,17 @@ msgstr ""
 
 #: .server-oss-not-support-tip
 msgid "NOTE: RustDesk server OSS doesn't include this feature."
-msgstr ""
+msgstr "NOTA: El RustDesk Server OSS no inclou aquesta característica."
 
 #: .server_not_support
 msgid "Not yet supported by the server"
 msgstr "Encara no suportat pel servidor"
+
+#: .server_requires_deployment_tip
+msgid "The server requires this device to be deployed explicitly. Deploy now?"
+msgstr ""
+"El servidor requereix que aquest dispositiu es desplegui explícitament. "
+"Voleu desplegar-lo ara?"
 
 #: .setup_server_tip
 msgid "For faster connection, please set up your own server"
@@ -1217,6 +1238,8 @@ msgstr ""
 msgid ""
 "Please input the administrator username and password of the controlled side."
 msgstr ""
+"Inseriu el nom d'usuari i la contrasenya de l'administrador de la part "
+"controlada."
 
 #: .texture_render_tip
 msgid ""
@@ -1235,11 +1258,15 @@ msgid ""
 "Installation method check failed. Please click the \"Download\" button to "
 "download from the release page and upgrade manually."
 msgstr ""
+"Ha fallat la comprovació del mètode d'instal·lació. Feu clic al botó "
+"\"Descarrega\" per descarregar-la des de la pàgina de publicacions i "
+"actualitzar-la manualment."
 
 #: .upgrade_remote_rustdesk_client_to_%7B%7D_tip
 msgid ""
 "Please upgrade the RustDesk client to version {} or newer on the remote side!"
 msgstr ""
+"Actualitzeu el client RustDesk a la versió {} o superior a la part remota!"
 
 #: .upgrade_rustdesk_server_pro_to_%7B%7D_tip
 msgid "Please upgrade RustDesk Server Pro to version {} or newer!"
@@ -1247,11 +1274,11 @@ msgstr "Actualitzeu el RustDesk Server Pro a la versió {} o superior!"
 
 #: .use-the-default-printer-tip
 msgid "Use the default printer"
-msgstr ""
+msgstr "Utilitza la impressora per defecte"
 
 #: .use-the-selected-printer-tip
 msgid "Use the selected printer"
-msgstr ""
+msgstr "Utilitza la impressora seleccionada"
 
 #: .verification_tip
 msgid ""
@@ -1267,12 +1294,32 @@ msgstr "Verifica la contrasenya del RustDesk"
 
 #: .view_camera_unsupported_tip
 msgid "The remote device does not support viewing the camera."
-msgstr ""
+msgstr "El dispositiu remot no admet la visualització de la càmera."
 
 #: .wait_accept_uac_tip
 msgid "Please wait for the remote user to accept the UAC dialog."
 msgstr ""
 "Espereu fins que l'usuari remot accepti la finestra de diàleg de l'«UAC»."
+
+#: .wayland-keyboard-input-applies-to-tip
+msgid "This choice applies to:"
+msgstr "Aquesta opció s'aplica a:"
+
+#: .wayland-keyboard-input-consent-tip
+msgid ""
+"What you type on this remote computer (including passwords) could be read by "
+"other apps on it."
+msgstr ""
+"Allò que escriviu en aquest equip remot (incloses les contrasenyes) podria "
+"ser llegit per altres aplicacions que hi hagi."
+
+#: .wayland-keyboard-input-disabled-tip
+msgid "Allow keyboard input?"
+msgstr "Voleu permetre l'entrada de teclat?"
+
+#: .wayland-keyboard-input-reset-choice-tip
+msgid "Reset keyboard input choice"
+msgstr "Restableix l'opció d'entrada de teclat"
 
 #: .wayland-requires-higher-linux-version
 msgid ""
@@ -1282,6 +1329,10 @@ msgstr ""
 "Wayland requereix una versió superior de sistema Linux per a funcionar. "
 "Proveu iniciant un entorn d'escriptori amb x11 o actualitzeu el vostre "
 "sistema operatiu."
+
+#: .wayland-soft-keyboard-input-label
+msgid "Soft keyboard input"
+msgstr "Entrada de teclat virtual"
 
 #: .wayland_experiment_tip
 msgid ""
@@ -1313,7 +1364,7 @@ msgstr ""
 
 #: .websocket_tip
 msgid "When using WebSocket, only relay connections are supported."
-msgstr ""
+msgstr "En utilitzar WebSocket, només s'admeten connexions per repetidor."
 
 #: .whitelist_sep
 msgid "Separated by comma, semicolon, spaces or new line"
@@ -1336,6 +1387,9 @@ msgid ""
 "unavailable. Try restarting it with `systemctl --user restart xdg-desktop-"
 "portal`."
 msgstr ""
+"Ha fallat la captura de pantalla del Wayland. És possible que el XDG Desktop "
+"Portal hagi fallat o no estigui disponible. Proveu de reiniciar-lo amb `"
+"systemctl --user restart xdg-desktop-portal`."
 
 #: .xorg_not_found_text_tip
 msgid "Please install Xorg"
@@ -1347,4 +1401,4 @@ msgstr "No s'ha trobat l'entorn Xorg"
 
 #: .%7B%7D-to-update-tip
 msgid "{} will close now and install the new version."
-msgstr ""
+msgstr "{} es tancarà ara i instal·larà la versió nova."
