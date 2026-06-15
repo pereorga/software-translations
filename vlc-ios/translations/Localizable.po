@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 09:33+0000\n"
+"POT-Creation-Date: 2026-06-15 10:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,6 +120,22 @@ msgstr "Dimensions del vídeo"
 #: FORMAT_VIDEO_DIMENSIONS
 msgid "%ix%i pixel"
 msgstr "%ix%i píxel"
+
+#: RESOLUTION_CLASS_8K
+msgid "8K"
+msgstr ""
+
+#: RESOLUTION_CLASS_4K
+msgid "4K"
+msgstr ""
+
+#: RESOLUTION_CLASS_HD
+msgid "HD"
+msgstr ""
+
+#: RESOLUTION_CLASS_SD
+msgid "SD"
+msgstr ""
 
 #: FORMAT_AUDIO_TRACKS
 msgid "%i audio tracks"
@@ -424,8 +440,26 @@ msgid "Download canceled by user"
 msgstr "Baixada cancel·lada per l'usuari"
 
 #: DOWNLOAD_FROM_HTTP
-msgid "Downloads"
+msgctxt "DOWNLOAD_FROM_HTTP"
+msgid "Transfers"
 msgstr "Baixades"
+
+#: TRANSFERS
+msgctxt "TRANSFERS"
+msgid "Transfers"
+msgstr ""
+
+#: TRANSFERS_IN_PROGRESS
+msgid "In progress"
+msgstr ""
+
+#: TRANSFER_FAILED
+msgid "Transfer failed"
+msgstr ""
+
+#: TRANSFERS_COUNT_FORMAT
+msgid "%lu transfers"
+msgstr ""
 
 #: DOWNLOADS_SECTION_COMPLETED
 msgid "Completed"
@@ -504,7 +538,7 @@ msgid "Play streams directly without downloading"
 msgstr "Reproduir estrímings directament sense descarregar"
 
 #: DOWNLOADVC_DETAILTEXT
-msgid "Download files directly to your device"
+msgid "Load files directly to your device"
 msgstr "Descarrega els arxius directament al teu dispositiu"
 
 #: CLOUDVC_DETAILTEXT
