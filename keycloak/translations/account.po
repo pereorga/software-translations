@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 09:32+0000\n"
+"POT-Creation-Date: 2026-06-15 10:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -627,7 +627,8 @@ msgid "Offline Token"
 msgstr "Codi d''autorització fora de línia"
 
 #: revoke
-msgid "Revoke Grant"
+msgctxt "revoke"
+msgid "Revoke"
 msgstr "Revoca el permís"
 
 #: configureAuthenticators
@@ -989,6 +990,7 @@ msgid "Deny"
 msgstr "Rebutja"
 
 #: doRevoke
+msgctxt "doRevoke"
 msgid "Revoke"
 msgstr "Revoca"
 
@@ -1591,7 +1593,7 @@ msgid "Delete Credential"
 msgstr "Suprimeix la credencial"
 
 #: deleteCredentialConfirm
-msgid "Are you sure you want to delete the credential \"{{credentialName}}\"?"
+msgid "Are you sure you want to revoke the credential \"{{credentialName}}\"?"
 msgstr "Segur que voleu suprimir la credencial «{{credentialName}}»?"
 
 #: credentialScopeName
@@ -1618,6 +1620,10 @@ msgstr ""
 msgid "View attributes"
 msgstr ""
 
+#: viewIssuedCredentials
+msgid "View Issued Credentials"
+msgstr ""
+
 #: credentialUserAttributesFor
 msgid "User attributes for \"{{credentialScopeName}}\""
 msgstr ""
@@ -1628,4 +1634,44 @@ msgstr ""
 
 #: credentialAttributeValue
 msgid "Attribute value"
+msgstr ""
+
+#: revokeVerifiableCredentialTitle
+msgid "Revoke verifiable credential"
+msgstr ""
+
+#: revokeIssuedCredentialTitle
+msgid "Revoke Issued Credential"
+msgstr ""
+
+#: deleteIssuedCredentialConfirm
+msgid "Are you sure you want to revoke the issued credential?"
+msgstr ""
+
+#: issuedCredentialRevokeSuccess
+msgid "Revoke Issued Credential Success"
+msgstr ""
+
+#: issuedCredentialRevokeError
+msgid "Cannot Revoke Issued Credential"
+msgstr ""
+
+#: issuedCredentials
+msgid "Issued Credentials"
+msgstr ""
+
+#: issuedCredentialsIssuedAt
+msgid "Issued At"
+msgstr ""
+
+#: issuedCredentialsExpiresAt
+msgid "Expires At"
+msgstr ""
+
+#: issuedCredentialsWalletClient
+msgid "Wallet Client"
+msgstr ""
+
+#: noIssuedCredentials
+msgid "No Issued Credentials"
 msgstr ""
