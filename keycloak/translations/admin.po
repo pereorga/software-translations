@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 10:04+0000\n"
+"POT-Creation-Date: 2026-06-22 09:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,16 +150,20 @@ msgid ""
 "Connection URL must not contain commas. Use spaces to separate multiple LDAP "
 "URLs (e.g. \"ldap://host1:389 ldap://host2:389\")."
 msgstr ""
+"L’URL de connexió no ha de contenir comes. Utilitzeu espais per a separar "
+"diversos URL LDAP (per ex., \"ldap://host1:389 ldap://host2:389\")."
 
 #: ldapErrorInvalidConnectionUrl
 msgid "Connection URL contains an invalid LDAP URL."
-msgstr ""
+msgstr "L''URL de connexió conté una URL LDAP invàlida."
 
 #: ldapErrorInvalidConnectionUrlScheme
 msgid ""
 "Connection URL contains a URL with an unsupported scheme. Each URL must use "
 "the ldap:// or ldaps:// scheme."
 msgstr ""
+"L’URL de connexió conté un URL amb un esquema no implementat. Cada URL ha d’"
+"utilitzar l’esquema ldap:// o ldaps://."
 
 #: clientRedirectURIsFragmentError
 msgid "Redirect URIs must not contain an URI fragment"
