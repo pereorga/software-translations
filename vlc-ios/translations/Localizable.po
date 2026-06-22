@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 10:05+0000\n"
+"POT-Creation-Date: 2026-06-22 09:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,10 +93,6 @@ msgstr "Títol"
 msgid "Chapter"
 msgstr "Capítol"
 
-#: TRACK_SELECTION
-msgid "Track Selection"
-msgstr "Selecció de pista"
-
 #: AUDIO
 msgid "Audio"
 msgstr "Àudio"
@@ -121,21 +117,9 @@ msgstr "Dimensions del vídeo"
 msgid "%ix%i pixel"
 msgstr "%ix%i píxel"
 
-#: RESOLUTION_CLASS_8K
-msgid "8K"
-msgstr ""
-
-#: RESOLUTION_CLASS_4K
-msgid "4K"
-msgstr ""
-
-#: RESOLUTION_CLASS_HD
-msgid "HD"
-msgstr ""
-
-#: RESOLUTION_CLASS_SD
-msgid "SD"
-msgstr ""
+#: VIDEO_CODEC
+msgid "Video Codec"
+msgstr "Còdec de vídeo"
 
 #: FORMAT_AUDIO_TRACKS
 msgid "%i audio tracks"
@@ -273,7 +257,7 @@ msgstr "Fet"
 
 #: BUTTON_OPEN
 msgid "Open"
-msgstr ""
+msgstr "Obre"
 
 #: BUTTON_CANCEL
 msgid "Cancel"
@@ -297,7 +281,7 @@ msgstr "Canvia el nom"
 
 #: BUTTON_COPY
 msgid "Copy"
-msgstr ""
+msgstr "Copia"
 
 #: BUTTON_OK
 msgid "OK"
@@ -401,7 +385,7 @@ msgstr "Flux de xarxa"
 
 #: RECENT_STREAMS
 msgid "Recent Streams"
-msgstr ""
+msgstr "Estrímings recents"
 
 #: HTTP_UPLOAD_SERVER_OFF
 msgid "Inactive Server"
@@ -427,10 +411,6 @@ msgstr "VLC compartit per a la Biblioteca iOS"
 msgid "File Servers (SMB)"
 msgstr "Servidors de fitxers (SMB)"
 
-#: http://myserver.com/file.mkv
-msgid "http://myserver.com/file.mkv"
-msgstr ""
-
 #: MANAGED_SERVERS
 msgid "Managed"
 msgstr "Gestionat"
@@ -447,28 +427,30 @@ msgstr "Baixades"
 #: TRANSFERS
 msgctxt "TRANSFERS"
 msgid "Transfers"
-msgstr ""
+msgstr "Baixades"
 
 #: TRANSFERS_IN_PROGRESS
 msgid "In progress"
-msgstr ""
+msgstr "En curs"
 
 #: TRANSFER_FAILED
 msgid "Transfer failed"
-msgstr ""
+msgstr "La baixada ha fallat"
 
 #: TRANSFERS_COUNT_FORMAT
 msgid "%lu transfers"
-msgstr ""
+msgstr "%lu baixades"
 
 #: DOWNLOADS_SECTION_COMPLETED
 msgid "Completed"
-msgstr ""
+msgstr "Completat"
 
 #: DOWNLOAD_FILE_UNAVAILABLE
 msgid ""
 "This file is no longer available. It may have been moved, renamed or deleted."
 msgstr ""
+"Aquest fitxer ja no està disponible. Potser s'ha mogut, s'ha canviat de nom "
+"o s'ha suprimit."
 
 #: ERROR_NUMBER
 msgid "Error %i occured"
@@ -539,7 +521,7 @@ msgstr "Reproduir estrímings directament sense descarregar"
 
 #: DOWNLOADVC_DETAILTEXT
 msgid "Load files directly to your device"
-msgstr "Descarrega els arxius directament al teu dispositiu"
+msgstr "Carrega els fitxers directament al vostre dispositiu"
 
 #: CLOUDVC_DETAILTEXT
 msgid "Play or download media from online services"
@@ -611,19 +593,21 @@ msgstr "Obre un fitxer sense copiar-lo al VLC"
 
 #: PHOTO_LIBRARY_CELL_TITLE
 msgid "Photo Library"
-msgstr ""
+msgstr "Biblioteca de fotos"
 
 #: PHOTO_LIBRARY_CELL_SUBTITLE
 msgid "Import videos from your photo library"
-msgstr ""
+msgstr "Importa vídeos de la vostra biblioteca de fotos"
 
 #: PHOTO_LIBRARY_IMPORT_FAILED
 msgid "Import failed"
-msgstr ""
+msgstr "La importació ha fallat"
 
 #: PHOTO_LIBRARY_IMPORT_FAILED_MESSAGE
 msgid "VLC could not import %d of the selected videos from your photo library."
 msgstr ""
+"El VLC no ha pogut importar %d dels vídeos seleccionats de la vostra "
+"biblioteca de fotos. "
 
 #: CLOUD_SERVICES
 msgid "Cloud Services"
@@ -1102,16 +1086,12 @@ msgid ""
 "Rotate\"; /* Accessibility label for rotate button on the player */"
 "\"ROTATE_BUTTON_HINT\" = \"Toggles the video player between landscape and "
 "portrait mode.\"; /* Accessibility hint for rotate button on the player */"
-"\"AUDIO_INFO_VC_TITLE\" = \"Audio Info"
+"\"ENTER_URL\" = \"Enter URL to play"
 msgstr ""
 "Gira\"; /* Accessibility label for rotate button on the player */"
 "\"ROTATE_BUTTON_HINT\" = \"Canvia el reproductor de vídeo entre els modes "
 "horitzontal i vertical.\"; /* Accessibility hint for rotate button on the "
-"player */\"AUDIO_INFO_VC_TITLE\" = \"Informació Àudio"
-
-#: ENTER_URL
-msgid "Enter URL to play"
-msgstr "Introdueix la URL a reproduir"
+"player */\"ENTER_URL\" = \"Introdueix la URL a reproduir"
 
 #: HTTP_SERVER_ON
 msgid "Disable Remote Playback"
@@ -1156,25 +1136,9 @@ msgstr "Carrega àudio extern..."
 msgid "Load External Subtitles..."
 msgstr "Carrega subtítols externs..."
 
-#: PLAYBACK
-msgid "Playback"
-msgstr "Reproducció"
-
 #: REPEAT_MODE
 msgid "Repeat"
 msgstr "Repeteix"
-
-#: REPEAT_DISABLED
-msgid "Disabled"
-msgstr "Desactivat"
-
-#: REPEAT_SINGLE
-msgid "Single"
-msgstr "Sol"
-
-#: REPEAT_FOLDER
-msgid "Folder"
-msgstr "Carpeta"
 
 #: SHUFFLE
 msgid "Shuffle"
@@ -1231,6 +1195,8 @@ msgid ""
 "Are you sure to delete the selected playlists?\n"
 "Associated media files won't be deleted."
 msgstr ""
+"Esteu segur que voleu suprimir les llistes de reproducció seleccionades?\n"
+"Els fitxers multimèdia associats no s'eliminaran."
 
 #: DELETE_MESSAGE_PLAYLIST_CONTENT
 msgid ""
@@ -1262,6 +1228,8 @@ msgstr "Ordena per"
 #: SORT_NOTIFICATION
 msgid "Using the same option in a row reverses the sorting order"
 msgstr ""
+"Si feu servir la mateixa opció en una fila, s'inverteix l'ordre de "
+"classificació."
 
 #: SEARCH
 msgid "Search"
@@ -1391,6 +1359,22 @@ msgstr "Reprodueix com a àudio"
 msgid "Play the video file as an audio file."
 msgstr "Reprodueix el fitxer de vídeo com un fitxer d'àudio."
 
+#: MARK_AS_PLAYED
+msgid "Mark as Played"
+msgstr "Marca com a reproduït"
+
+#: MARK_AS_PLAYED_HINT
+msgid "Mark the media as played"
+msgstr "Marca el contingut multimèdia com a reproduït"
+
+#: MARK_AS_UNPLAYED
+msgid "Mark as Unplayed"
+msgstr "Marca com a no reproduït"
+
+#: MARK_AS_UNPLAYED_HINT
+msgid "Mark the media as unplayed"
+msgstr "Marca el contingut multimèdia com a no reproduït"
+
 #: PLAYLIST_PLACEHOLDER
 msgid "Playlist title"
 msgstr "Títol de la Llista de reproducció"
@@ -1507,7 +1491,7 @@ msgstr "Data de l'última modificació"
 
 #: RELEASE_DATE
 msgid "Release date"
-msgstr "Alliberar Data"
+msgstr "Data de llançament"
 
 #: FILE_SIZE
 msgid "File size"
@@ -1594,6 +1578,10 @@ msgstr "SUBTÍTOL PRINCIPAL"
 #: SECONDARY_SUBTITLES
 msgid "SECONDARY SUBTITLE"
 msgstr "SUBTÍTOL SECUNDARI"
+
+#: SECONDARY_SUBTITLE
+msgid "Secondary Subtitle..."
+msgstr "Subtítol secundari..."
 
 #: SUBTITLE_AND_TRACK_BUTTON
 msgid "Subtitles and audio tracks"
@@ -1861,14 +1849,6 @@ msgstr "Selecciona per obrir la vista de filtres de vídeo"
 msgid "Select to open the playback speed view"
 msgstr "Selecciona per obrir la vista de velocitat de reproducció"
 
-#: SUBTITLES_DELAY_HINT
-msgid "Select to open the subtitles delay view"
-msgstr "Selecciona per obrir la vista de retard de subtítols"
-
-#: AUDIO_DELAY_HINT
-msgid "Select to open the audio delay view"
-msgstr "Selecciona per obrir la vista de retard d'àudio"
-
 #: SLEEP_TIMER_HINT
 msgid "Select to open the sleep timer view"
 msgstr "Selecciona per obrir la vista de temporitzador"
@@ -1923,7 +1903,7 @@ msgstr ""
 
 #: FEEDBACK_EMAIL_TITLE
 msgid "Feedback about VLC on iOS and iPadOS"
-msgstr "Comentaris sobre el VLC a iOS i iPad"
+msgstr "Comentaris sobre el VLC a iOS i iPadOS"
 
 #: FEEDBACK_EMAIL_NOT_POSSIBLE_TITLE
 msgid "Mail account not configured"
