@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 10:04+0000\n"
+"POT-Creation-Date: 2026-06-22 09:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,10 +216,6 @@ msgstr ""
 msgid "Navigation Error"
 msgstr "Error de navegació"
 
-#: alerts.open_url_from_notification.message
-msgid "Open URL (%@) found in notification?"
-msgstr "Obrir l'adreça (%@) trobada a la notificació?"
-
 #: alerts.open_url_from_notification.title
 msgid "Open URL?"
 msgstr "Obrir adreça?"
@@ -302,6 +298,14 @@ msgstr "Ventilador"
 #: app_intents.intent.fan.title
 msgid "Control fan"
 msgstr "Controla el ventilador"
+
+#: app_intents.open_app_settings.description
+msgid "Opens the companion app directly in its settings"
+msgstr ""
+
+#: app_intents.open_app_settings.title
+msgid "Open app settings"
+msgstr ""
 
 #: app_intents.open_experimental_dashboard.description
 msgid "Opens the experimental dashboard"
@@ -522,6 +526,7 @@ msgstr "Escull un servidor"
 
 #: carPlay.labels.servers
 msgctxt "carPlay.labels.servers"
+"carPlay.labels.servers"
 "carPlay.labels.servers"
 "carPlay.labels.servers"
 "carPlay.labels.servers"
@@ -776,6 +781,7 @@ msgstr "Continua"
 
 #: copy_label
 msgctxt "copy_label"
+"copy_label"
 msgid "Copy"
 msgstr "Copiar"
 
@@ -924,6 +930,168 @@ msgstr "Configuració"
 #: intents.server_required_for_value
 msgid "Select a server before picking this value."
 msgstr "Seleccioneu un servidor abans d'escollir aquest valor."
+
+#: live_activity.sample.alarm.note
+msgid ""
+"Short 60-second countdown, no progress bar. Red communicates urgency — watch "
+"the timer count down in real time."
+msgstr ""
+
+#: live_activity.sample.alarm.title
+msgid "Alarm · 60 sec Countdown"
+msgstr ""
+
+#: live_activity.sample.all_fields.note
+msgid ""
+"Every content-state field active at once: icon, live countdown, and progress "
+"bar. Confirms no layout collisions."
+msgstr ""
+
+#: live_activity.sample.all_fields.title
+msgid "All Fields · Max Load"
+msgstr ""
+
+#: live_activity.sample.delivery.note
+msgid ""
+"message, criticalText, and icon all change on every update — no progress "
+"bar. The status category itself changes, not just a value."
+msgstr ""
+
+#: live_activity.sample.delivery.title
+msgid "Package Delivery · All Text Fields"
+msgstr ""
+
+#: live_activity.sample.dishwasher.note
+msgid ""
+"The only sample that tests start → update → end. After it ends, the final "
+"\"Done\" state lingers on the lock screen (up to 4 h)."
+msgstr ""
+
+#: live_activity.sample.dishwasher.title
+msgid "Dishwasher · Full Lifecycle, Ends Itself"
+msgstr ""
+
+#: live_activity.sample.ev.note
+msgid ""
+"Numeric percentage in criticalText updates alongside the progress bar; color "
+"shifts from green to yellow-green as the charge nears full."
+msgstr ""
+
+#: live_activity.sample.ev.title
+msgid "EV Charging · Numeric %"
+msgstr ""
+
+#: live_activity.sample.media.note
+msgid ""
+"Progress (playback position) and a live countdown (time left in track) "
+"update together. The track change resets both."
+msgstr ""
+
+#: live_activity.sample.media.title
+msgid "Media Player · Progress + Timer"
+msgstr ""
+
+#: live_activity.sample.no_icon.note
+msgid ""
+"No icon and no color, so the progress bar uses the default HA-blue tint. "
+"criticalText shows in the Dynamic Island compact trailing only."
+msgstr ""
+
+#: live_activity.sample.no_icon.title
+msgid "No Icon · Default Color"
+msgstr ""
+
+#: live_activity.sample.plain.note
+msgid ""
+"Minimum viable layout — only the message field is set. Verifies the bare "
+"layout renders without icon, progress, or timer."
+msgstr ""
+
+#: live_activity.sample.plain.title
+msgid "Plain Message"
+msgstr ""
+
+#: live_activity.sample.rate_limit.note
+msgid ""
+"Six updates 2 s apart. On iOS 18 the system renders ~one per 15 s — some are "
+"silently dropped and the counter skips. On the simulator and iOS 17 all six "
+"render."
+msgstr ""
+
+#: live_activity.sample.rate_limit.title
+msgid "Rate Limit · 6 Rapid Updates"
+msgstr ""
+
+#: live_activity.sample.security.note
+msgid ""
+"No progress bar — state is communicated entirely through color and icon. "
+"Escalates orange (motion) → red (person) → green (all clear)."
+msgstr ""
+
+#: live_activity.sample.security.title
+msgid "Security Escalation · Color + Icon"
+msgstr ""
+
+#: live_activity.sample.washing.note
+msgid ""
+"Progress advances through five named stages; criticalText tracks the current "
+"stage. The icon swaps to a check on completion."
+msgstr ""
+
+#: live_activity.sample.washing.title
+msgid "Washing Machine · Stage Labels"
+msgstr ""
+
+#: live_activity.samples.animated_footer
+msgid ""
+"Start drives the activity through several updates. Lock the screen to watch "
+"them live."
+msgstr ""
+
+#: live_activity.samples.animated_title
+msgid "Sample · Animated"
+msgstr ""
+
+#: live_activity.samples.copied
+msgid "Copied"
+msgstr ""
+
+#: live_activity.samples.copy
+msgctxt "live_activity.samples.copy"
+msgid "Copy"
+msgstr ""
+
+#: live_activity.samples.detail_footer
+msgid ""
+"Start runs this sample locally on-device. The YAML triggers the same Live "
+"Activity from an automation or script — point it at your device's notify "
+"action."
+msgstr ""
+
+#: live_activity.samples.start
+msgid "Start"
+msgstr ""
+
+#: live_activity.samples.started
+msgid "Started — lock the screen to watch"
+msgstr ""
+
+#: live_activity.samples.static_footer
+msgid ""
+"Fixed state — no updates after start. Good for checking layout at a glance."
+msgstr ""
+
+#: live_activity.samples.static_title
+msgid "Sample · Static"
+msgstr ""
+
+#: live_activity.samples.title
+msgid "Samples"
+msgstr ""
+
+#: live_activity.status.not_supported
+msgid "Not available on iPad"
+msgstr ""
 
 #: location_change_notification.app_shortcut.body
 msgid "Location updated via App Shortcut"
