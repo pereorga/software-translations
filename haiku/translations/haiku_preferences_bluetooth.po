@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-08 09:32+0000\n"
+"POT-Creation-Date: 2026-06-22 09:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,17 +12,94 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.12.2\n"
 
+#: Settings+view
+msgid "Laptop"
+msgstr "Portàtil"
+
+#: Settings+view
+msgid "Only from trusted devices"
+msgstr "Només els dispositius de confiança"
+
+#: Settings+view
+msgid "15 secs"
+msgstr "15 s"
+
+#: main
+msgid "Quit"
+msgstr "Surt"
+
+#: Device+View
+msgid "Manufacturer: "
+msgstr "Fabricant : "
+
+#: Settings+view
+msgid "Desktop"
+msgstr "Escriptori"
+
 #: Window
-msgid "Start bluetooth services…"
-msgstr "Inicia el servei del Bluetooth"
+msgctxt "Window"
+msgid "Server"
+msgstr "Servidor"
+
+#: Settings+view
+msgid "Identify host as:"
+msgstr "Identifica l'amfitrió com a:"
+
+#: Settings+view
+msgid "Local devices found on system:"
+msgstr "Dispositius locals trobats al sistema:"
+
+#: Device+View
+msgid "Service classes: "
+msgstr "Classes de serveis : "
+
+#: Window
+msgid "Remote devices"
+msgstr "Dispositius remots"
+
+#: Window
+msgid "Settings"
+msgstr "Paràmetres"
+
+#: Window
+msgid "Stop bluetooth services…"
+msgstr "Atura els serveis de Bluetooth…"
+
+#: Settings+view
+msgid "61 secs"
+msgstr "61 s"
+
+#: Remote+devices
+msgid "Add…"
+msgstr "Afegeix…"
+
+#: Inquiry+panel
+msgid "There isn't any Bluetooth LocalDevice registered on the system."
+msgstr "No hi ha cap dispositiu local registrat al sistema."
+
+#: Window
+msgid "Revert"
+msgstr "Reverteix"
+
+#: Window
+msgid "Refresh local devices…"
+msgstr "Actualitza els dispositius locals..."
+
+#: Remote+devices
+msgid "Disconnect"
+msgstr "Desconnecta"
+
+#: Window
+msgid "Defaults"
+msgstr "Valors predeterminats"
 
 #: Settings+view
 msgid "From all devices"
 msgstr "Tots els dispositius"
 
 #: Window
-msgid "Defaults"
-msgstr "Valors predeterminats"
+msgid "Start bluetooth services…"
+msgstr "Inicia el servei del Bluetooth"
 
 #: Inquiry+panel
 msgid ""
@@ -38,17 +115,9 @@ msgstr ""
 "segons per dispositiu. Després els podreu afegir a la llista principal, des "
 "de la qual hi podreu connectar."
 
-#: Settings+view
-msgid "Laptop"
-msgstr "Portàtil"
-
 #: Inquiry+panel
 msgid "Scanning progress"
 msgstr "Progrés de la cerca"
-
-#: Settings+view
-msgid "Only from trusted devices"
-msgstr "Només els dispositius de confiança"
 
 #: main
 msgid "Launch now"
@@ -69,18 +138,6 @@ msgstr "Trieu un dispositiu..."
 #: Settings+view
 msgid "Always ask"
 msgstr "Pregunta-ho sempre."
-
-#: main
-msgid "Quit"
-msgstr "Surt"
-
-#: Settings+view
-msgid "15 secs"
-msgstr "15 s"
-
-#: Window
-msgid "Help"
-msgstr "Ajuda"
 
 #: main
 msgid ""
@@ -150,135 +207,78 @@ msgstr ""
 "Qui em va proporcionar tot el coneixement:\\n"
 " - the yellowTAB team"
 
-#: Device+View
-msgid "Manufacturer: "
-msgstr "Fabricant : "
+#: Window
+msgid "Help"
+msgstr "Ajuda"
 
 #: Remote+devices
 msgid "Pair…"
 msgstr "Connecta-hi..."
 
-#: Settings+view
-msgid "Desktop"
-msgstr "Escriptori"
-
-#: Window
-msgctxt "Window"
-msgid "Server"
-msgstr "Servidor"
-
 #: Inquiry+panel
 msgid "Retrieving name of %1"
 msgstr "S'obté el nom de %1"
-
-#: Settings+view
-msgid "Identify host as:"
-msgstr "Identifica l'amfitrió com a:"
 
 #: Inquiry+panel
 msgid "Inquiry"
 msgstr "Consulta"
 
 #: Settings+view
-msgid "Local devices found on system:"
-msgstr "Dispositius locals trobats al sistema:"
-
-#: Device+View
-msgid "Service classes: "
-msgstr "Classes de serveis : "
-
-#: Settings+view
 msgid "Incoming connections policy:"
 msgstr "Política de connexions d'entrada:"
-
-#: Window
-msgid "Remote devices"
-msgstr "Dispositius remots"
 
 #: Inquiry+panel
 msgid "Retrieving names…"
 msgstr "S'obtenen els noms..."
 
-#: Inquiry+panel
-msgid "Add device to list"
-msgstr "Afegeix el dispositiu a la llista"
-
 #: Extended+local+device+view
 msgid "Show name"
 msgstr "Mostra el nom"
 
-#: Window
-msgid "Settings"
-msgstr "Paràmetres"
+#: Inquiry+panel
+msgid "Add device to list"
+msgstr "Afegeix el dispositiu a la llista"
 
 #: Inquiry+panel
 msgid "Remaining %1 seconds"
 msgstr "Queden %1 segons"
 
-#: Window
-msgid "Stop bluetooth services…"
-msgstr "Atura els serveis de Bluetooth…"
-
-#: Settings+view
-msgid "61 secs"
-msgstr "61 s"
-
-#: Extended+local+device+view
-msgid "Authenticate"
-msgstr "Autenticació"
+#: main
+msgid "The Bluetooth services are not currently running on this system."
+msgstr "Els serveis de Bluetooth ara no s'executen en aquest sistema."
 
 #: Extended+local+device+view
 msgid "Discoverable"
 msgstr "Visible"
 
-#: main
-msgid "The Bluetooth services are not currently running on this system."
-msgstr "Els serveis de Bluetooth ara no s'executen en aquest sistema."
-
-#: Remote+devices
-msgid "Add…"
-msgstr "Afegeix…"
-
-#: Inquiry+panel
-msgid "Scanning completed."
-msgstr "S'ha acabat la cerca."
+#: Extended+local+device+view
+msgid "Authenticate"
+msgstr "Autenticació"
 
 #: Settings+view
 msgid "Smart phone"
 msgstr "Telèfon intel·ligent"
 
 #: Inquiry+panel
-msgid "There isn't any Bluetooth LocalDevice registered on the system."
-msgstr "No hi ha cap dispositiu local registrat al sistema."
+msgid "Scanning completed."
+msgstr "S'ha acabat la cerca."
 
 #: Settings+view
 msgid "Default inquiry time:"
 msgstr "Temps de consulta per defecte:"
-
-#: Window
-msgid "Revert"
-msgstr "Reverteix"
-
-#: Window
-msgid "Refresh local devices…"
-msgstr "Actualitza els dispositius locals..."
 
 #: Settings+view
 msgctxt "Settings view"
 msgid "Server"
 msgstr "Servidor"
 
-#: Device+View
-msgid " packets: "
-msgstr " paquets: "
-
 #: Settings+view
 msgid "Handheld"
 msgstr "Dispositiu de butxaca"
 
-#: Remote+devices
-msgid "Disconnect"
-msgstr "Desconnecta"
+#: Device+View
+msgid " packets: "
+msgstr " paquets: "
 
 #: Window
 msgid "About Bluetooth…"
