@@ -579,6 +579,10 @@ msgctxt "icu:pinnedConversationsFull"
 msgid "You can only pin up to 4 chats"
 msgstr "Només pots fixar fins a 4 xats."
 
+msgctxt "icu:pinnedConversations--max"
+msgid "You can only pin up to {maxPinnedConversations, plural, one {# chat} other {# chats}}"
+msgstr "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+
 msgctxt "icu:view"
 msgid "View"
 msgstr "Mostra"
@@ -2959,10 +2963,6 @@ msgctxt "icu:partiallySent"
 msgid "Partially sent, click for details"
 msgstr "Enviat parcialment. Cliqueu per a més detalls."
 
-msgctxt "icu:partiallyDeleted"
-msgid "Partially deleted, click to retry"
-msgstr "Suprimit parcialment. Cliqueu per tornar-ho a provar."
-
 msgctxt "icu:partiallyDeleted--clickForDetails"
 msgid "Partially deleted, click for details"
 msgstr "Parcialment eliminat, fes clic per obtenir més informació"
@@ -3507,10 +3507,6 @@ msgctxt "icu:message--getDescription--disappearing-video"
 msgid "View-once Video"
 msgstr "Vídeo d'una sola visualització"
 
-msgctxt "icu:message--deletedForEveryone"
-msgid "This message was deleted."
-msgstr "Aquest missatge s'ha suprimit."
-
 msgctxt "icu:message--deletedByAdmin"
 msgid "Admin {admin} deleted this message"
 msgstr "{admin} (admin) ha eliminat aquest missatge"
@@ -3643,6 +3639,10 @@ msgctxt "icu:stickers--StickerManager--InstalledPacks--Empty"
 msgid "No stickers installed"
 msgstr "No hi ha adhesius instal·lats."
 
+msgctxt "icu:stickers--StickerManager--AddStickers"
+msgid "Add stickers"
+msgstr "Afegir stickers"
+
 msgctxt "icu:stickers--StickerManager--BlessedPacks"
 msgid "Signal Artist Series"
 msgstr "Sèries d'artistes de Signal"
@@ -3663,6 +3663,10 @@ msgctxt "icu:stickers--StickerManager--Install"
 msgid "Install"
 msgstr "Instal·la"
 
+msgctxt "icu:stickers--StickerManager--Installed"
+msgid "Installed"
+msgstr "Instal·lat"
+
 msgctxt "icu:stickers--StickerManager--Uninstall"
 msgid "Uninstall"
 msgstr "Desinstal·la"
@@ -3670,6 +3674,18 @@ msgstr "Desinstal·la"
 msgctxt "icu:stickers--StickerManager--UninstallWarning"
 msgid "You may not be able to re-install this sticker pack if you no longer have the source message."
 msgstr "Potser no podreu reinstal·lar aquest paquet d'adhesius si ja no teniu el missatge original."
+
+msgctxt "icu:stickers--StickerManagerHeader--All"
+msgid "All"
+msgstr "Tot"
+
+msgctxt "icu:stickers--StickerManagerPackContextMenu--Add"
+msgid "Add"
+msgstr "Afegeix"
+
+msgctxt "icu:stickers--StickerManagerPackContextMenu--Remove"
+msgid "Remove"
+msgstr "Eliminar"
 
 msgctxt "icu:stickers--StickerPreview--Title"
 msgid "Sticker Pack"
@@ -3702,6 +3718,14 @@ msgstr "{count, plural, one {{count,number} sticker} other {{count,number} stick
 msgctxt "icu:stickers--StickerPreview--StickerNoEmojiAriaLabel"
 msgid "Sticker without an emoji"
 msgstr "Sticker sense emoji"
+
+msgctxt "icu:stickers--StickerPackLinkPreviewDescription"
+msgid "Sticker Pack by {author}"
+msgstr "Paquet d'stickers de {author}"
+
+msgctxt "icu:stickers--ViewPack"
+msgid "View Pack"
+msgstr "Veure paquet"
 
 msgctxt "icu:FunPicker__Tab--Emojis"
 msgid "Emoji"
@@ -6191,10 +6215,6 @@ msgctxt "icu:CompositionArea--expand"
 msgid "Expand"
 msgstr "Expandeix"
 
-msgctxt "icu:CompositionArea--attach-file"
-msgid "Attach file"
-msgstr "Adjunta un fitxer"
-
 msgctxt "icu:CompositionArea__AttachMenu__PhotosAndVideos"
 msgid "Photos & videos"
 msgstr "Fotos i vídeos"
@@ -6795,10 +6815,6 @@ msgctxt "icu:SelectModeActions--forwardSelectedMessages"
 msgid "Forward selected messages"
 msgstr "Reenvia els missatges seleccionats"
 
-msgctxt "icu:DeleteMessagesModal--title"
-msgid "Delete {count, plural, one {message} other {# messages}}?"
-msgstr "{count, plural, one {Vols eliminar {count,number} missatge?} other {Vols eliminar {count,number} missatges?}}"
-
 msgctxt "icu:DeleteMessagesModal--title-2"
 msgid "Delete selected {count, plural, one {message} other {# messages}}?"
 msgstr "{count, plural, one {Vols eliminar el missatge seleccionat?} other {Vols eliminar els {count,number} missatges seleccionats?}}"
@@ -6807,10 +6823,6 @@ msgctxt "icu:DeleteMessagesModal--description"
 msgid "Who would you like to delete {count, plural, one {this message} other {these messages}} for?"
 msgstr "{count, plural, one {Per a qui vols eliminar aquest missatge?} other {Per a qui vols eliminar aquests missatges?}}"
 
-msgctxt "icu:DeleteMessagesModal--description--noteToSelf"
-msgid "What devices would you like to delete {count, plural, one {this message} other {these messages}} from?"
-msgstr "{count, plural, one {De quins dispositius t'agradaria eliminar aquest missatge?} other {De quins dispositius t'agradaria eliminar aquests missatges?}}"
-
 msgctxt "icu:DeleteMessagesModal--description--noteToSelf--deleteSync"
 msgid "{count, plural, one {This message} other {These messages}} will be deleted from all your devices."
 msgstr "{count, plural, one {Aquest missatge s'eliminarà de tots els teus dispositius.} other {Aquests missatges s'eliminaran de tots els teus dispositius.}}"
@@ -6818,10 +6830,6 @@ msgstr "{count, plural, one {Aquest missatge s'eliminarà de tots els teus dispo
 msgctxt "icu:DeleteMessagesModal--deleteForMe"
 msgid "Delete for me"
 msgstr "Eliminar per a mi"
-
-msgctxt "icu:DeleteMessagesModal--deleteFromThisDevice"
-msgid "Delete from this device"
-msgstr "Eliminar d'aquest dispositiu"
 
 msgctxt "icu:DeleteMessagesModal--deleteForEveryone"
 msgid "Delete for everyone"
@@ -6838,10 +6846,6 @@ msgstr "{count, plural, one {Com a admin, els membres del grup veuran que has el
 msgctxt "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout"
 msgid "Group members on the latest versions of Signal will see that you deleted {count, plural, one {this message} other {these messages}}."
 msgstr "{count, plural, one {Els membres del grup que tinguin la versió més recent de Signal podran veure que has eliminat aquest missatge.} other {Els membres del grup que tinguin la versió més recent de Signal podran veure que has eliminat aquests missatges.}}"
-
-msgctxt "icu:DeleteMessagesModal--deleteFromAllDevices"
-msgid "Delete from all devices"
-msgstr "Eliminar de tots els dispositius"
 
 msgctxt "icu:DeleteMessagesModal--noteToSelf--deleteSync"
 msgid "Delete"
@@ -8415,9 +8419,53 @@ msgctxt "icu:Preferences--local-backups-record-recovery-key"
 msgid "Record your recovery key"
 msgstr "Registra la teva clau de recuperació"
 
+msgctxt "icu:Preferences--local-backups-recovery-key--title"
+msgid "Your recovery key"
+msgstr "La teva clau de recuperació"
+
 msgctxt "icu:Preferences--local-backups-record-backup-key-description"
 msgid "This key is required to recover your account and data. Store this key somewhere safe. If you lose it, you won’t be able to recover your account. <learnMoreLink>Learn more.</learnMoreLink>"
 msgstr "Aquesta clau és necessària per recuperar el teu compte i les teves dades. Guarda-la en un lloc segur. Si la perds, no podràs recuperar el teu compte. <learnMoreLink>Més informació.</learnMoreLink>"
+
+msgctxt "icu:Preferences--local-backups-recovery-key--description"
+msgid "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
+msgstr "Aquesta clau és necessària per recuperar el teu compte i les teves dades. Guarda-la en un lloc segur i no la comparteixis mai amb ningú. Signal no t'enviarà mai un missatge per demanar-te la teva clau de recuperació. <learnMoreLink>Més informació.</learnMoreLink>"
+
+msgctxt "icu:Preferences__recovery-key__do-not-share-title"
+msgid "Do not share recovery key"
+msgstr "No comparteixis la clau de recuperació"
+
+msgctxt "icu:Preferences__recovery-key__do-not-share-description"
+msgid "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
+msgstr "<strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal. Guarda la clau de recuperació en un lloc segur i no la comparteixis mai amb ningú. <learnMoreLink>Més informació.</learnMoreLink>"
+
+msgctxt "icu:Preferences__recovery-key__do-not-share-confirm"
+msgid "Got it"
+msgstr "Entesos"
+
+msgctxt "icu:CompositionInput__recovery-key-paste__share-key"
+msgid "Share key"
+msgstr "Compartir la clau"
+
+msgctxt "icu:CompositionInput__recovery-key-paste__do-not-share-key"
+msgid "Do not share key"
+msgstr "No compartir la clau"
+
+msgctxt "icu:CompositionInput__recovery-key-paste__confirm-description"
+msgid "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
+msgstr "No comparteixis la teva clau de recuperació amb ningú. Això li permetria prendre el control del teu compte. <strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal."
+
+msgctxt "icu:CompositionInput__recovery-key-warning--description"
+msgid "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
+msgstr "No comparteixis la teva clau de recuperació amb ningú. Això li permetria prendre el control del teu compte. <strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal. <learnMoreLink>Més informació.</learnMoreLink>"
+
+msgctxt "icu:CompositionInput__recovery-key-paste__confirm-dont-share"
+msgid "Don't share"
+msgstr "No compartir"
+
+msgctxt "icu:CompositionInput__recovery-key-paste__confirm-paste"
+msgid "Paste key"
+msgstr "Enganxar clau"
 
 msgctxt "icu:Preferences--local-backups-confirm-recovery-key"
 msgid "Confirm your recovery key"
@@ -8502,6 +8550,10 @@ msgstr "És necessari que t'autentifiquis per habilitar les còpies de seguretat
 msgctxt "icu:Preferences__local-backups-auth-error--unauthorized"
 msgid "This action could not be completed because system authentication failed. Please try again or open the Signal app on your mobile device and go to Backup Settings to view your recovery key."
 msgstr "No s'ha pogut completar aquesta acció perquè el sistema d'autentificació ha fallat. Torna-ho a provar o obre l'app de Signal al teu dispositiu mòbil i ves als Ajustos de còpia de seguretat per veure la teva clau de recuperació."
+
+msgctxt "icu:Preferences__local-backups-auth-error--unknown-error"
+msgid "An error occurred while requesting system authentication for this action."
+msgstr "Hi ha hagut un error en sol·licitar l'autentificació del sistema per a aquesta acció."
 
 msgctxt "icu:Preferences__view-key"
 msgid "View key"
@@ -9082,18 +9134,6 @@ msgstr "tenir-les als contactes del sistema"
 msgctxt "icu:SignalConnectionsModal__footer"
 msgid "Your connections can see your name and photo, and can see posts to \"My Story\" unless you hide it from them"
 msgstr "Els teus contactes poden veure el teu nom i la teva foto, i poden veure el que pugis a \"La meva història\" tret que decideixis ocultar-los-hi."
-
-msgctxt "icu:LocalDeleteWarningModal__header"
-msgid "Deleting is synced across your devices"
-msgstr "L'eliminació de continguts es sincronitza a tots els teus dispositius"
-
-msgctxt "icu:LocalDeleteWarningModal__description"
-msgid "When you delete messages or chats, they will be deleted from all of your devices."
-msgstr "Quan elimines missatges o xats, s'eliminen de tots els teus dispositius connectats."
-
-msgctxt "icu:LocalDeleteWarningModal__confirm"
-msgid "Got it"
-msgstr "Entesos"
 
 msgctxt "icu:Stories__title"
 msgid "Stories"
@@ -10187,10 +10227,6 @@ msgctxt "icu:PreferencesDonations__privacy-modal-title"
 msgid "Your information is private"
 msgstr "La teva informació és privada"
 
-msgctxt "icu:PreferencesDonations__privacy-modal-content"
-msgid "<paragraph>Signal does not collect or store any of your personal information when you make a donation.</paragraph><paragraph>We use Stripe as our payment processor to receive your donations. We don't access, store, or save any of the information you provide to them.</paragraph><paragraph>Signal does not and cannot connect your donation to your Signal account.</paragraph><paragraph>Thank you for your support!</paragraph>"
-msgstr "<paragraph>Signal no recopila ni emmagatzema la teva informació personal quan fas una donació.</paragraph><paragraph>Utilitzem Stripe com a processador de pagaments per rebre les teves donacions. No accedim, emmagatzemem ni desem la informació que els proporciones.</paragraph><paragraph>Signal no connecta i no pot connectar la teva donació al teu compte de Signal.</paragraph><paragraph>Gràcies per comptar amb nosaltres!</paragraph>"
-
 msgctxt "icu:PreferencesDonations__privacy-modal-intro"
 msgid "As an independent nonprofit, Signal is committed to private messaging and calls. No ads, no trackers, no surveillance. Donate today to support Signal."
 msgstr "Com a organització independent sense ànim de lucre, Signal té un compromís amb la privacitat en missatges i trucades. Sense anuncis, ni rastrejadors, ni vigilància. Fes avui una donació per ajudar a Signal."
@@ -10766,3 +10802,11 @@ msgstr "Petits ajustos addicionals, correccions d'errors i un munt de plans pel 
 msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
+
+msgctxt "icu:WhatsNew__8.15--0"
+msgid "\"This extra E is vexing me,\" said the cries and pleas of the people displeased that their favorite file extension was four letters instead of three. We're happy to appease (the change was a breeze) and now you will see that the default filename when saving a JPEG will end as it should in dot jpg."
+msgstr "Hem actualitzat l'extensió d'arxiu per defecte de les imatges JPEG a .jpg."
+
+msgctxt "icu:WhatsNew__8.15--1"
+msgid "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
+msgstr "Compatibilitat amb macOS de les icones de mode fosc."
