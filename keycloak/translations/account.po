@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 09:58+0000\n"
+"POT-Creation-Date: 2026-06-29 09:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -331,6 +331,10 @@ msgstr "Rols d’usuari"
 msgid "Organization"
 msgstr "Organització"
 
+#: delegationScopeConsentText
+msgid "Delegate token to administrator {0}?"
+msgstr ""
+
 #: role_admin
 msgid "Admin"
 msgstr "Administrador"
@@ -629,7 +633,7 @@ msgstr "Codi d''autorització fora de línia"
 #: revoke
 msgctxt "revoke"
 msgid "Revoke"
-msgstr "Revoca el permís"
+msgstr "Revoca"
 
 #: configureAuthenticators
 msgid "Configured Authenticators"
@@ -814,6 +818,10 @@ msgstr "El nom d''usuari ja existeix."
 msgid "Email already exists."
 msgstr "El correu electrònic ja existeix."
 
+#: didExistsMessage
+msgid "DID already exists."
+msgstr ""
+
 #: readOnlyUserMessage
 msgid "You can''t update your account as it is read-only."
 msgstr "No podeu actualitzar el vostre compte perquè és de només lectura."
@@ -837,7 +845,7 @@ msgstr "S''ha eliminat l''aplicació d''autenticació mòbil."
 
 #: successGrantRevokedMessage
 msgid "Grant revoked successfully."
-msgstr "S''ha revocat el permís correctament."
+msgstr "S’ha revocat la concessió correctament."
 
 #: accountUpdatedMessage
 msgid "Your account has been updated."
@@ -1594,7 +1602,7 @@ msgstr "Suprimeix la credencial"
 
 #: deleteCredentialConfirm
 msgid "Are you sure you want to revoke the credential \"{{credentialName}}\"?"
-msgstr "Segur que voleu suprimir la credencial «{{credentialName}}»?"
+msgstr "Segur que voleu revocar la credencial «{{credentialName}}»?"
 
 #: credentialScopeName
 msgid "Credential Type"
@@ -1606,7 +1614,7 @@ msgstr "Creació"
 
 #: credentialUpdatedDate
 msgid "Updated at"
-msgstr ""
+msgstr "Actualitzat el"
 
 #: issueToWallet
 msgid "Issue to Wallet"
@@ -1626,11 +1634,11 @@ msgstr "Visualitza els atributs"
 
 #: viewIssuedCredentials
 msgid "View Issued Credentials"
-msgstr ""
+msgstr "Mostra les credencials emeses"
 
 #: credentialUserAttributesFor
 msgid "User attributes for \"{{credentialScopeName}}\""
-msgstr "Atributs d’usuari per a «{{credentialScopeName}}"
+msgstr "Atributs d’usuari per a «{{credentialScopeName}}»"
 
 #: credentialAttributeName
 msgid "Attribute name"
@@ -1642,40 +1650,40 @@ msgstr "Valor de l’atribut"
 
 #: revokeVerifiableCredentialTitle
 msgid "Revoke verifiable credential"
-msgstr ""
+msgstr "Revoca la credencial verificable"
 
 #: revokeIssuedCredentialTitle
 msgid "Revoke Issued Credential"
-msgstr ""
+msgstr "Revoca la credencial emesa"
 
 #: deleteIssuedCredentialConfirm
 msgid "Are you sure you want to revoke the issued credential?"
-msgstr ""
+msgstr "Segur que voleu revocar aquesta credencial emesa?"
 
 #: issuedCredentialRevokeSuccess
 msgid "Revoke Issued Credential Success"
-msgstr ""
+msgstr "S’ha revocat correctament la credencial emesa"
 
 #: issuedCredentialRevokeError
 msgid "Cannot Revoke Issued Credential"
-msgstr ""
+msgstr "No s’ha pogut revocar la credencial emesa"
 
 #: issuedCredentials
 msgid "Issued Credentials"
-msgstr ""
+msgstr "Credencials emeses"
 
 #: issuedCredentialsIssuedAt
 msgid "Issued At"
-msgstr ""
+msgstr "Emesa el"
 
 #: issuedCredentialsExpiresAt
 msgid "Expires At"
-msgstr ""
+msgstr "Caduca el"
 
 #: issuedCredentialsWalletClient
 msgid "Wallet Client"
-msgstr ""
+msgstr "Client de cartera"
 
 #: noIssuedCredentials
 msgid "No Issued Credentials"
-msgstr ""
+msgstr "No hi ha cap credencial emesa"
