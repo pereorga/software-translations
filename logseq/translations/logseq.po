@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 09:58+0000\n"
+"POT-Creation-Date: 2026-06-29 09:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,6 +12,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.12.2\n"
+
+#: .account/authentication
+msgid "Authentication"
+msgstr "Autenticació"
 
 #: .account/benefits-desc
 msgid ""
@@ -1111,6 +1115,7 @@ msgstr "Esborrar el contingut del bloc"
 
 #: .command.editor/collapse-block-children
 msgctxt ".command.editor/collapse-block-children"
+".command.editor/collapse-block-children"
 msgid "Collapse"
 msgstr "Col·lapsar"
 
@@ -1163,6 +1168,7 @@ msgstr "Sortir de edició"
 
 #: .command.editor/expand-block-children
 msgctxt ".command.editor/expand-block-children"
+".command.editor/expand-block-children"
 msgid "Expand"
 msgstr "Expandir"
 
@@ -3377,6 +3383,11 @@ msgstr "Referència de pàgina"
 msgid "Release notes"
 msgstr "Notes de la versió"
 
+#: .help/revision
+msgctxt ".help/revision"
+msgid "Revision: {1}"
+msgstr ""
+
 #: .help/roadmap
 msgid "Roadmap"
 msgstr "Full de ruta"
@@ -4287,6 +4298,10 @@ msgstr "Esteu segur que voleu suprimir permanentment aquesta pàgina?"
 #: .page.delete/success
 msgid "Page \"{1}\" was deleted successfully!"
 msgstr "La pàgina \"{1}\" s'ha suprimit correctament!"
+
+#: .page.delete/today-journal-truncate-success
+msgid "Today's journal page content was deleted."
+msgstr ""
 
 #: .page.delete/warning
 msgid ""
@@ -5867,6 +5882,15 @@ msgctxt ".property/clear-value"
 msgid "Clear"
 msgstr "Esborra"
 
+#: .property/collapse-bottom-pills
+msgctxt ".property/collapse-bottom-pills"
+msgid "Collapse"
+msgstr ""
+
+#: .property/collapse-hidden-properties
+msgid "Collapse hidden properties"
+msgstr ""
+
 #: .property/configure
 msgid "Configure property"
 msgstr "Configurar"
@@ -5913,13 +5937,14 @@ msgstr "Arrossegueu per reordenar"
 msgid "Existing values:"
 msgstr "Valors existents"
 
+#: .property/expand-bottom-pills
+msgctxt ".property/expand-bottom-pills"
+msgid "Expand"
+msgstr ""
+
 #: .property/go-to-this-property
 msgid "Go to this property"
 msgstr "Anar a la pàgina de la propietat"
-
-#: .property/hidden-properties
-msgid "Hidden properties"
-msgstr "Propietats ocultes"
 
 #: .property/hide-by-default
 msgid "Hide by default"
@@ -6049,6 +6074,10 @@ msgstr "Mostrar com a casella als nodes amb etiqueta"
 #: .property/show-hidden-choices
 msgid "Show hidden choices"
 msgstr "Mostrar opcions amagades"
+
+#: .property/show-hidden-properties
+msgid "Show hidden properties"
+msgstr ""
 
 #: .property/skip-choosing-tag
 msgid "Skip choosing tag"
@@ -6783,6 +6812,7 @@ msgid "release channel"
 msgstr "canal de llançament"
 
 #: .settings.general/revision
+msgctxt ".settings.general/revision"
 msgid "Revision: {1}"
 msgstr "Revisió: {1}"
 
