@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 09:58+0000\n"
+"POT-Creation-Date: 2026-06-29 09:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,10 +70,6 @@ msgstr "Quant a"
 msgid "Website"
 msgstr "Lloc web"
 
-#: actions_configurator.action.create_automation
-msgid "Create automation"
-msgstr "Crea automatització"
-
 #: actions_configurator.action.footer
 msgid ""
 "Define what will be executed when Action is performed, alternatively you can "
@@ -132,20 +128,9 @@ msgctxt "actions_configurator.trigger_example.title"
 msgid "Example Trigger"
 msgstr "Disparador d'exemple"
 
-#: actions_configurator.visual_section.scene_defined
-msgid "The appearance of this action is controlled by the scene configuration."
-msgstr ""
-"L'aparença d'aquesta acció està controlada per la configuració de l'escena."
-
 #: actions_configurator.visual_section.scene_hint_footer
 msgid "You can also change these by customizing the Scene attributes: %@"
 msgstr "També podeu canviar-les personalitzant els atributs Scene: %@"
-
-#: actions_configurator.visual_section.server_defined
-msgid ""
-"The appearance of this action is controlled by the server configuration."
-msgstr ""
-"L'aparença d'aquesta acció està controlada per la configuració del servidor."
 
 #: addButtonLabel
 msgctxt "addButtonLabel"
@@ -299,14 +284,6 @@ msgstr "Ventilador"
 msgid "Control fan"
 msgstr "Controla el ventilador"
 
-#: app_intents.open_app_settings.description
-msgid "Opens the companion app directly in its settings"
-msgstr ""
-
-#: app_intents.open_app_settings.title
-msgid "Open app settings"
-msgstr ""
-
 #: app_intents.open_experimental_dashboard.description
 msgid "Opens the experimental dashboard"
 msgstr "Obre el panell de visualització experimental"
@@ -348,12 +325,9 @@ msgctxt "app_intents.server.title"
 "app_intents.server.title"
 "app_intents.server.title"
 "app_intents.server.title"
+"app_intents.server.title"
 msgid "Server"
 msgstr "Servidor"
-
-#: app_intents.widget_action.actions_parameter_configuration
-msgid "Which actions?"
-msgstr "Quines accions?"
 
 #: assist.button.finish_recording.title
 msgid "Tap to finish recording..."
@@ -424,15 +398,9 @@ msgstr "Activa la conversió de veu a text al dispositiu"
 msgid "Assist Settings"
 msgstr "Configuració d'assistència"
 
-#: camera.server_not_found
-msgid "Server not found"
-msgstr "No s'ha trobat el servidor"
-
-#: camera.snapshot_failed
-msgid "Failed to load camera snapshot"
-msgstr "No s'ha pogut carregar la captura d'imatge de la càmera"
-
 #: camera_list.edit.off.title
+msgctxt "camera_list.edit.off.title"
+"camera_list.edit.off.title"
 msgid "Edit"
 msgstr "Edita"
 
@@ -450,11 +418,6 @@ msgstr ""
 msgid "No Cameras"
 msgstr "Sense càmeres"
 
-#: camera_list.no_area
-msgctxt "camera_list.no_area"
-msgid "Not in a room"
-msgstr "No en una habitació"
-
 #: camera_list.no_results.message
 msgid "No cameras match your search"
 msgstr "No hi ha càmeres que coincideixin amb la teva cerca"
@@ -467,10 +430,6 @@ msgstr "Sense resultats"
 msgid "Reorder sections"
 msgstr "Reordenar seccions"
 
-#: camera_list.search_placeholder
-msgid "Search cameras"
-msgstr "Càmeres de cerca"
-
 #: camera_list.title
 msgid "Cameras"
 msgstr "Càmeres"
@@ -482,10 +441,6 @@ msgstr "Stream de la càmera no disponible per a Mac."
 #: camera_list.unavailable.title
 msgid "Not Available on Mac"
 msgstr "No disponible per a Mac"
-
-#: cameras.drag_to_reorder
-msgid "Drag and drop to reorder"
-msgstr "Arrossega per reordenar"
 
 #: cameras.no_server_found
 msgid "No server found for camera: %@"
@@ -931,166 +886,12 @@ msgstr "Configuració"
 msgid "Select a server before picking this value."
 msgstr "Seleccioneu un servidor abans d'escollir aquest valor."
 
-#: live_activity.sample.alarm.note
-msgid ""
-"Short 60-second countdown, no progress bar. Red communicates urgency — watch "
-"the timer count down in real time."
+#: kiosk.push_command.set_brightness
+msgid "Setting brightness"
 msgstr ""
 
-#: live_activity.sample.alarm.title
-msgid "Alarm · 60 sec Countdown"
-msgstr ""
-
-#: live_activity.sample.all_fields.note
-msgid ""
-"Every content-state field active at once: icon, live countdown, and progress "
-"bar. Confirms no layout collisions."
-msgstr ""
-
-#: live_activity.sample.all_fields.title
-msgid "All Fields · Max Load"
-msgstr ""
-
-#: live_activity.sample.delivery.note
-msgid ""
-"message, criticalText, and icon all change on every update — no progress "
-"bar. The status category itself changes, not just a value."
-msgstr ""
-
-#: live_activity.sample.delivery.title
-msgid "Package Delivery · All Text Fields"
-msgstr ""
-
-#: live_activity.sample.dishwasher.note
-msgid ""
-"The only sample that tests start → update → end. After it ends, the final "
-"\"Done\" state lingers on the lock screen (up to 4 h)."
-msgstr ""
-
-#: live_activity.sample.dishwasher.title
-msgid "Dishwasher · Full Lifecycle, Ends Itself"
-msgstr ""
-
-#: live_activity.sample.ev.note
-msgid ""
-"Numeric percentage in criticalText updates alongside the progress bar; color "
-"shifts from green to yellow-green as the charge nears full."
-msgstr ""
-
-#: live_activity.sample.ev.title
-msgid "EV Charging · Numeric %"
-msgstr ""
-
-#: live_activity.sample.media.note
-msgid ""
-"Progress (playback position) and a live countdown (time left in track) "
-"update together. The track change resets both."
-msgstr ""
-
-#: live_activity.sample.media.title
-msgid "Media Player · Progress + Timer"
-msgstr ""
-
-#: live_activity.sample.no_icon.note
-msgid ""
-"No icon and no color, so the progress bar uses the default HA-blue tint. "
-"criticalText shows in the Dynamic Island compact trailing only."
-msgstr ""
-
-#: live_activity.sample.no_icon.title
-msgid "No Icon · Default Color"
-msgstr ""
-
-#: live_activity.sample.plain.note
-msgid ""
-"Minimum viable layout — only the message field is set. Verifies the bare "
-"layout renders without icon, progress, or timer."
-msgstr ""
-
-#: live_activity.sample.plain.title
-msgid "Plain Message"
-msgstr ""
-
-#: live_activity.sample.rate_limit.note
-msgid ""
-"Six updates 2 s apart. On iOS 18 the system renders ~one per 15 s — some are "
-"silently dropped and the counter skips. On the simulator and iOS 17 all six "
-"render."
-msgstr ""
-
-#: live_activity.sample.rate_limit.title
-msgid "Rate Limit · 6 Rapid Updates"
-msgstr ""
-
-#: live_activity.sample.security.note
-msgid ""
-"No progress bar — state is communicated entirely through color and icon. "
-"Escalates orange (motion) → red (person) → green (all clear)."
-msgstr ""
-
-#: live_activity.sample.security.title
-msgid "Security Escalation · Color + Icon"
-msgstr ""
-
-#: live_activity.sample.washing.note
-msgid ""
-"Progress advances through five named stages; criticalText tracks the current "
-"stage. The icon swaps to a check on completion."
-msgstr ""
-
-#: live_activity.sample.washing.title
-msgid "Washing Machine · Stage Labels"
-msgstr ""
-
-#: live_activity.samples.animated_footer
-msgid ""
-"Start drives the activity through several updates. Lock the screen to watch "
-"them live."
-msgstr ""
-
-#: live_activity.samples.animated_title
-msgid "Sample · Animated"
-msgstr ""
-
-#: live_activity.samples.copied
-msgid "Copied"
-msgstr ""
-
-#: live_activity.samples.copy
-msgctxt "live_activity.samples.copy"
-msgid "Copy"
-msgstr ""
-
-#: live_activity.samples.detail_footer
-msgid ""
-"Start runs this sample locally on-device. The YAML triggers the same Live "
-"Activity from an automation or script — point it at your device's notify "
-"action."
-msgstr ""
-
-#: live_activity.samples.start
-msgid "Start"
-msgstr ""
-
-#: live_activity.samples.started
-msgid "Started — lock the screen to watch"
-msgstr ""
-
-#: live_activity.samples.static_footer
-msgid ""
-"Fixed state — no updates after start. Good for checking layout at a glance."
-msgstr ""
-
-#: live_activity.samples.static_title
-msgid "Sample · Static"
-msgstr ""
-
-#: live_activity.samples.title
-msgid "Samples"
-msgstr ""
-
-#: live_activity.status.not_supported
-msgid "Not available on iPad"
+#: kiosk.push_command.set_volume
+msgid "Setting volume"
 msgstr ""
 
 #: location_change_notification.app_shortcut.body
@@ -1329,11 +1130,6 @@ msgstr "Manteneu el vostre %@ prop d'una etiqueta NFC que es pugui escriure"
 #: nfc.write.success_message
 msgid "Tag Written!"
 msgstr "Etiqueta escrita!"
-
-#: no_area
-msgctxt "no_area"
-msgid "Not in a room"
-msgstr "En cap habitació"
 
 #: notification_service.failed_to_load
 msgid "Failed to load attachment"
@@ -2304,10 +2100,6 @@ msgstr "No hi ha accions sincronitzades"
 msgid "Actions defined in .yaml are not editable on device."
 msgstr "Les accions definides a .yaml no es poden editar al dispositiu."
 
-#: settings_details.actions.actions_synced.footer_no_actions
-msgid "Actions may be also defined in the .yaml configuration."
-msgstr "Les accions també es poden definir a la configuració .yaml."
-
 #: settings_details.actions.actions_synced.header
 msgid "Synced Actions"
 msgstr "Accions sincronitzades"
@@ -2327,10 +2119,6 @@ msgstr ""
 #: settings_details.actions.learn.button.title
 msgid "Introduction to iOS Actions"
 msgstr "Introducció a les accions iOS"
-
-#: settings_details.actions.scenes.customize_action
-msgid "Customize"
-msgstr "Personalitzar"
 
 #: settings_details.actions.scenes.empty
 msgid "No Scenes"
@@ -3120,10 +2908,6 @@ msgstr "S'ha cridat correctament %@"
 #: url_handler.call_service.success.title
 msgid "Called service"
 msgstr "Servei cridat"
-
-#: url_handler.error.action_not_found
-msgid "Action Not Found"
-msgstr "Acció no trobada"
 
 #: url_handler.fire_event.confirm.message
 msgid "Do you want to fire the event %@?"
@@ -4019,16 +3803,6 @@ msgctxt "widgets.controls.automation.display_name"
 msgid "Automation"
 msgstr "Automatització"
 
-#: widgets.controls.automations.placeholder_title
-msgctxt "widgets.controls.automations.placeholder_title"
-msgid "Choose automation"
-msgstr "Trieu l'automatització"
-
-#: widgets.controls.button.placeholder_title
-msgctxt "widgets.controls.button.placeholder_title"
-msgid "Choose button"
-msgstr "Tria botó"
-
 #: widgets.controls.button.title
 msgid "Button"
 msgstr "Botó"
@@ -4036,11 +3810,6 @@ msgstr "Botó"
 #: widgets.controls.fan.description
 msgid "Turn on/off your fan"
 msgstr "Encén/Apaga el ventilador"
-
-#: widgets.controls.fan.placeholder_title
-msgctxt "widgets.controls.fan.placeholder_title"
-msgid "Choose fan"
-msgstr "Tria ventilador"
 
 #: widgets.controls.fan.title
 msgctxt "widgets.controls.fan.title"
