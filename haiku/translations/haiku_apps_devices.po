@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 09:58+0000\n"
+"POT-Creation-Date: 2026-06-29 09:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,6 @@ msgctxt "DevicesView"
 msgid "USB bus"
 msgstr "Bus USB"
 
-#: DeviceSCSI
-msgid "Graphics Peripheral"
-msgstr "Perifèric gràfic"
-
 #: Device
 msgctxt "Device"
 msgid "Processor"
@@ -43,11 +39,6 @@ msgstr "Processador"
 #: DevicesView
 msgid "Generate system information"
 msgstr "Genera la informació del sistema"
-
-#: DeviceACPI
-msgctxt "DeviceACPI"
-msgid "Unknown"
-msgstr "Desconegut"
 
 #: DevicePCI
 msgid "Class info"
@@ -79,9 +70,10 @@ msgstr "Connexió"
 msgid "Printer"
 msgstr "Impressora"
 
-#: DeviceACPI
-msgid "ACPI Processor Namespace '%2'"
-msgstr "Espai de noms de processador ACPI \"%2'\""
+#: DevicesView
+msgctxt "DevicesView"
+msgid "Driver used"
+msgstr "Controlador usat"
 
 #: Device
 msgctxt "Device"
@@ -100,21 +92,17 @@ msgstr "Controlador de la memòria"
 
 #: DevicesView
 msgctxt "DevicesView"
+msgid "Device paths"
+msgstr "Camins del dispositiu"
+
+#: DevicesView
+msgctxt "DevicesView"
 msgid "Unknown device"
 msgstr "El dispositiu és desconegut"
-
-#: DevicePCI
-msgctxt "DevicePCI"
-msgid "Unknown"
-msgstr "Desconegut"
 
 #: DeviceACPI
 msgid "ACPI node '%1'"
 msgstr "Node d'ACPI %1"
-
-#: DeviceSCSI
-msgid "Optical Drive"
-msgstr "Unitat òptica"
 
 #: PropertyList
 msgid "Name"
@@ -153,18 +141,6 @@ msgctxt "DevicesView"
 msgid "PCI bus"
 msgstr "Bus PCI"
 
-#: DeviceACPI
-msgid "ACPI System Indicator"
-msgstr "Indicador de Sistema ACPI"
-
-#: DeviceACPI
-msgid "ACPI System Bus"
-msgstr "Bus del sistema ACPI"
-
-#: DeviceSCSI
-msgid "Tape Drive"
-msgstr "Unitat de cinta"
-
 #: DeviceSCSI
 msgid "Changer"
 msgstr "Canviador"
@@ -186,6 +162,7 @@ msgid "RBC"
 msgstr "RBC"
 
 #: Device
+msgctxt "Device"
 msgid "Device paths"
 msgstr "Camins als dispositius"
 
@@ -216,17 +193,9 @@ msgctxt "DeviceACPI"
 msgid "Device name"
 msgstr "Nom del dispositiu"
 
-#: DeviceSCSI
-msgid "Card Reader"
-msgstr "Lector de targetes"
-
 #: Device
 msgid "Display controller"
 msgstr "Controlador de la pantalla"
-
-#: DeviceACPI
-msgid "ACPI Button '%1'"
-msgstr "Botó d'ACPI %1"
 
 #: DevicesView
 msgid "Bus"
@@ -240,10 +209,6 @@ msgstr "ACPI <desconegut>"
 msgctxt "DevicePCI"
 msgid "Device name"
 msgstr "Nom del dispositiu"
-
-#: DeviceSCSI
-msgid "Disk Drive"
-msgstr "Unitat de disc"
 
 #: DeviceSCSI
 msgid "Other"
@@ -271,10 +236,6 @@ msgstr "Annex"
 msgid "Order by:"
 msgstr "Ordena per:"
 
-#: DeviceACPI
-msgid "ACPI Thermal Zone"
-msgstr "Zona tèrmica ACPI"
-
 #: Device
 msgid "Intelligent controller"
 msgstr "Controlador intel·ligent"
@@ -297,6 +258,10 @@ msgctxt "DevicesView"
 msgid "ISA bus"
 msgstr "Bus ISA"
 
+#: PropertyList
+msgid "Basic information"
+msgstr "Informació bàsica"
+
 #: DeviceSCSI
 msgctxt "DeviceSCSI"
 msgid "Processor"
@@ -306,6 +271,10 @@ msgstr "Processador"
 msgctxt "Device"
 msgid "Bridge"
 msgstr "Pont"
+
+#: PropertyList
+msgid "Attributes"
+msgstr "Atributs"
 
 #: DeviceSCSI
 msgid "Worm"
@@ -360,6 +329,7 @@ msgid "Network controller"
 msgstr "Controlador de xarxa"
 
 #: Device
+msgctxt "Device"
 msgid "Driver used"
 msgstr "Controlador usat"
 

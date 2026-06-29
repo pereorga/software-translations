@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-22 09:58+0000\n"
+"POT-Creation-Date: 2026-06-29 09:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -248,6 +248,10 @@ msgstr "Cal reiniciar"
 msgid "All packages"
 msgstr "Tots els paquets"
 
+#: ServerRuntimeInformationVerifierProcess
+msgid "Checking server information"
+msgstr "Es comprova la informació del servidor."
+
 #: RatePackageWindow
 msgid "Send"
 msgstr "Envia"
@@ -401,6 +405,10 @@ msgstr "Llengua"
 #: PackageAction
 msgid "Open %DeskbarLink%"
 msgstr "Obre %DeskbarLink%"
+
+#: MainWindow
+msgid "Login disabled"
+msgstr "Entrada inhabilitada"
 
 #: PackageListView
 msgid "Status"
@@ -684,6 +692,10 @@ msgstr "No, tanca't"
 #: MainWindow
 msgid "Show"
 msgstr "Mostra..."
+
+#: ServerRuntimeInformationVerifierProcess
+msgid "Timestamp discrepancy"
+msgstr "Discrepància de marca de temps"
 
 #: PackageInfoView
 msgid "No contents available."
@@ -1132,6 +1144,18 @@ msgstr "Error de servidor"
 #: RatePackageWindow
 msgid "Rate package"
 msgstr "Puntueu el paquet"
+
+#: ServerRuntimeInformationVerifierProcess
+msgid ""
+"The server and this computer have a discrepancy in the current timestamp of "
+"around %DiscrepancySeconds% seconds. This may cause issues for HaikuDepot "
+"communicating with the server. Check your computer's clock settings and "
+"correct the current time if necessary."
+msgstr ""
+"El servidor i aquest ordinador tenen una discrepància de marca de temps "
+"actual d'uns %DiscrepancySeconds% segons. Això pot causar problemes per a la "
+"comunicació de del Dipòsit del Haiku amb el servidor. Comproveu la "
+"configuració del rellotge de l'ordinador i corregiu-ne l'hora actual si cal."
 
 #: IncrementViewCounterProcess
 msgid "Recording view of \\\"%PackageName%\\\""
