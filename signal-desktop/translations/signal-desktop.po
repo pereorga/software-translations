@@ -581,7 +581,7 @@ msgstr "Només pots fixar fins a 4 xats."
 
 msgctxt "icu:pinnedConversations--max"
 msgid "You can only pin up to {maxPinnedConversations, plural, one {# chat} other {# chats}}"
-msgstr "{maxPinnedConversations, plural, one {You can only pin up to {maxPinnedConversations,number} chat} other {You can only pin up to {maxPinnedConversations,number} chats}}"
+msgstr "{maxPinnedConversations, plural, one {Pots compartir un màxim d''{maxPinnedConversations,number} xat.} other {Pots compartir un màxim de {maxPinnedConversations,number} xats.}}"
 
 msgctxt "icu:view"
 msgid "View"
@@ -3639,6 +3639,10 @@ msgctxt "icu:stickers--StickerManager--InstalledPacks--Empty"
 msgid "No stickers installed"
 msgstr "No hi ha adhesius instal·lats."
 
+msgctxt "icu:stickers--StickerManager--MyStickers--None"
+msgid "No sticker packs, add stickers to send to your friends."
+msgstr "No tens paquets d'stickers, afegeix stickers per enviar als teus amics."
+
 msgctxt "icu:stickers--StickerManager--AddStickers"
 msgid "Add stickers"
 msgstr "Afegir stickers"
@@ -3654,6 +3658,14 @@ msgstr "No hi ha adhesius d'artistes de Signal disponibles."
 msgctxt "icu:stickers--StickerManager--ReceivedPacks"
 msgid "Stickers You Received"
 msgstr "Adhesius que heu rebut"
+
+msgctxt "icu:stickers--StickerManager--ReceivedPacks2"
+msgid "Shared With You"
+msgstr "Compartit amb tu"
+
+msgctxt "icu:stickers--StickerManager--ReceivedPacksDescription"
+msgid "When you receive a sticker from someone, the sticker pack will appear here."
+msgstr "Quan rebis un sticker d'algú, el paquet d'stickers apareixerà aquí."
 
 msgctxt "icu:stickers--StickerManager--ReceivedPacks--Empty"
 msgid "Stickers from incoming messages will appear here"
@@ -3678,6 +3690,10 @@ msgstr "Potser no podreu reinstal·lar aquest paquet d'adhesius si ja no teniu e
 msgctxt "icu:stickers--StickerManagerHeader--All"
 msgid "All"
 msgstr "Tot"
+
+msgctxt "icu:stickers--StickerManagerHeader--MyStickers"
+msgid "My Stickers"
+msgstr "Els meus stickers"
 
 msgctxt "icu:stickers--StickerManagerPackContextMenu--Add"
 msgid "Add"
@@ -10810,3 +10826,7 @@ msgstr "Hem actualitzat l'extensió d'arxiu per defecte de les imatges JPEG a .j
 msgctxt "icu:WhatsNew__8.15--1"
 msgid "If you want to embrace your inner goth, we also added support for the dark icon style in macOS."
 msgstr "Compatibilitat amb macOS de les icones de mode fosc."
+
+msgctxt "icu:WhatsNew__8.16--0"
+msgid "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
+msgstr "Hem solucionat un error al creador d'stickers que feia que la interfície es mostrés en l'idioma incorrecte."
