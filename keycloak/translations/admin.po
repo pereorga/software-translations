@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-29 09:32+0000\n"
+"POT-Creation-Date: 2026-07-06 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,8 +166,12 @@ msgstr ""
 "utilitzar l’esquema ldap:// o ldaps://."
 
 #: clientRedirectURIsFragmentError
-msgid "Redirect URIs must not contain an URI fragment"
+msgid "A redirect URI must not contain an URL fragment"
 msgstr "Els URI de redirecció no han de contenir un fragment d''URL"
+
+#: clientPostLogoutRedirectURIsFragmentError
+msgid "A post-logout redirect URI must not contain an URL fragment"
+msgstr ""
 
 #: clientRootURLFragmentError
 msgid "Root URL must not contain an URL fragment"
@@ -189,6 +193,10 @@ msgstr "L''URL de desconnexió del canal posterior utilitza un esquema il·legal
 msgid "A redirect URI uses an illegal scheme"
 msgstr "Un URI de redirecció utilitza un esquema il·legal"
 
+#: clientPostLogoutRedirectURIsIllegalSchemeError
+msgid "A post-logout redirect URI uses an illegal scheme"
+msgstr ""
+
 #: clientBaseURLInvalid
 msgid "Base URL is not a valid URL"
 msgstr "L''URL base no és un URL vàlid"
@@ -200,6 +208,10 @@ msgstr "L''URL arrel no és un URL vàlid"
 #: clientRedirectURIsInvalid
 msgid "A redirect URI is not a valid URI"
 msgstr "Un URI de redirecció no és un URI vàlid"
+
+#: clientPostLogoutRedirectURIsInvalid
+msgid "A post-logout redirect URI is not a valid URI"
+msgstr ""
 
 #: backchannelLogoutUrlIsInvalid
 msgid "Backchannel logout URL is not a valid URL"
