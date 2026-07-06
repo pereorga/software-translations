@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-29 09:32+0000\n"
+"POT-Creation-Date: 2026-07-06 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -306,6 +306,10 @@ msgctxt "component::airzone::entity::select::sleep_times::state::off"
 msgid "Off"
 msgstr "Apagat"
 
+#: component::alarm_control_panel::title
+msgid "Alarm control panel"
+msgstr "Panell de control d'alarma"
+
 #: component::alert::entity_component::_::state::idle
 msgctxt "component::alert::entity_component::_::state::idle"
 msgid "Idle"
@@ -316,6 +320,10 @@ msgctxt "component::alert::entity_component::_::state::on"
 msgid "Active"
 msgstr "Actiu"
 
+#: component::alert::title
+msgid "Alert"
+msgstr "Alerta"
+
 #: component::automation::entity_component::_::state::off
 msgctxt "component::automation::entity_component::_::state::off"
 msgid "Off"
@@ -325,6 +333,10 @@ msgstr "Apagat"
 msgctxt "component::automation::entity_component::_::state::on"
 msgid "On"
 msgstr "ON"
+
+#: component::automation::title
+msgid "Automation"
+msgstr "Automatització"
 
 #: component::binary_sensor::entity_component::_::state::off
 msgctxt "component::binary_sensor::entity_component::_::state::off"
@@ -406,6 +418,10 @@ msgctxt "component::binary_sensor::entity_component::window::state::on"
 msgid "Open"
 msgstr "Obert/a"
 
+#: component::binary_sensor::title
+msgid "Binary sensor"
+msgstr "Sensor binari"
+
 #: component::button::title
 msgid "Button"
 msgstr "Botó"
@@ -425,6 +441,10 @@ msgctxt "component::calendar::entity_component::_::state_attributes::all_day::st
 msgid "Yes"
 msgstr "Sí"
 
+#: component::calendar::title
+msgid "Calendar"
+msgstr "Calendari"
+
 #: component::camera::entity_component::_::state::idle
 msgctxt "component::camera::entity_component::_::state::idle"
 msgid "Idle"
@@ -439,6 +459,10 @@ msgstr "Desactivada"
 msgctxt "component::camera::entity_component::_::state_attributes::motion_detection::state::true"
 msgid "Enabled"
 msgstr "Activada"
+
+#: component::camera::title
+msgid "Camera"
+msgstr "Càmera"
 
 #: component::climate::entity_component::_::state::off
 msgctxt "component::climate::entity_component::_::state::off"
@@ -480,6 +504,18 @@ msgctxt "component::climate::entity_component::_::state_attributes::swing_mode::
 msgid "On"
 msgstr "ON"
 
+#: component::climate::title
+msgid "Climate"
+msgstr "Climatització"
+
+#: component::configurator::title
+msgid "Configurator"
+msgstr "Configurador"
+
+#: component::counter::entity_component::_::name
+msgid "Counter"
+msgstr "Comptador numèric"
+
 #: component::counter::entity_component::_::state_attributes::editable::state::true
 msgctxt "component::counter::entity_component::_::state_attributes::editable::state::true"
 msgid "Yes"
@@ -498,6 +534,14 @@ msgstr "Obert/a"
 #: component::cover::title
 msgid "Cover"
 msgstr "Coberta"
+
+#: component::date::title
+msgid "Date"
+msgstr "Data"
+
+#: component::datetime::title
+msgid "Date/Time"
+msgstr "Data/hora"
 
 #: component::deluge::entity::sensor::status::state::idle
 msgctxt "component::deluge::entity::sensor::status::state::idle"
@@ -524,6 +568,10 @@ msgctxt "component::device_tracker::entity_component::_::state::not_home"
 msgid "Away"
 msgstr "Fora"
 
+#: component::device_tracker::title
+msgid "Device tracker"
+msgstr "Seguiment de dispositiu"
+
 #: component::ecoforest::entity::sensor::status::state::off
 msgctxt "component::ecoforest::entity::sensor::status::state::off"
 msgid "Off"
@@ -538,6 +586,10 @@ msgstr "Encés"
 msgctxt "component::ecoforest::entity::sensor::status::state::stand_by"
 msgid "Standby"
 msgstr "En espera"
+
+#: component::event::title
+msgid "Event"
+msgstr "Esdeveniment"
 
 #: component::fan::entity_component::_::state::off
 msgctxt "component::fan::entity_component::_::state::off"
@@ -554,6 +606,10 @@ msgctxt "component::fan::entity_component::_::state_attributes::oscillating::sta
 msgid "Yes"
 msgstr "Sí"
 
+#: component::fan::title
+msgid "Fan"
+msgstr "Ventilador"
+
 #: component::fritzbox_callmonitor::entity::sensor::fritzbox_callmonitor::state::idle
 msgctxt "component::fritzbox_callmonitor::entity::sensor::fritzbox_callmonitor::state::idle"
 msgid "Idle"
@@ -563,6 +619,10 @@ msgstr "Inactiu"
 msgctxt "component::gardena_bluetooth::entity::switch::state::name"
 msgid "Open"
 msgstr "Obert/a"
+
+#: component::geo_location::title
+msgid "Geolocation"
+msgstr "Geolocalització"
 
 #: component::google_mail::services::set_vacation::fields::enabled::name
 msgctxt "component::google_mail::services::set_vacation::fields::enabled::name"
@@ -608,6 +668,10 @@ msgstr "Obert/a"
 msgctxt "component::group::entity_component::_::state::unlocked"
 msgid "Unlocked"
 msgstr "Desbloquejat"
+
+#: component::group::title
+msgid "Group"
+msgstr "Grup"
 
 #: component::hdmi_cec::services::standby::name
 msgctxt "component::hdmi_cec::services::standby::name"
@@ -663,6 +727,18 @@ msgstr "Apagat"
 msgctxt "component::humidifier::entity_component::_::state_attributes::mode::state::home"
 msgid "Home"
 msgstr "A casa"
+
+#: component::humidifier::title
+msgid "Humidifier"
+msgstr "Humidificador"
+
+#: component::image::title
+msgid "Image"
+msgstr "Imatge"
+
+#: component::image_processing::title
+msgid "Image processing"
+msgstr "Processament d'imatges"
 
 #: component::improv_ble::config::abort::already_configured
 msgid "Device is already configured"
@@ -754,20 +830,36 @@ msgctxt "component::input_datetime::entity_component::_::state_attributes::edita
 msgid "Yes"
 msgstr "Sí"
 
+#: component::input_datetime::title
+msgid "Input datetime"
+msgstr "Entrada de data i hora"
+
 #: component::input_number::entity_component::_::state_attributes::editable::state::true
 msgctxt "component::input_number::entity_component::_::state_attributes::editable::state::true"
 msgid "Yes"
 msgstr "Sí"
+
+#: component::input_number::title
+msgid "Input number"
+msgstr "Entrada numèrica"
 
 #: component::input_select::entity_component::_::state_attributes::editable::state::true
 msgctxt "component::input_select::entity_component::_::state_attributes::editable::state::true"
 msgid "Yes"
 msgstr "Sí"
 
+#: component::input_select::title
+msgid "Input select"
+msgstr "Entrada de selecció"
+
 #: component::input_text::entity_component::_::state_attributes::editable::state::true
 msgctxt "component::input_text::entity_component::_::state_attributes::editable::state::true"
 msgid "Yes"
 msgstr "Sí"
+
+#: component::input_text::title
+msgid "Input text"
+msgstr "Entrada de text"
 
 #: component::ipp::entity::sensor::printer::state::idle
 msgctxt "component::ipp::entity::sensor::printer::state::idle"
@@ -778,6 +870,10 @@ msgstr "Inactiu"
 msgctxt "component::lawn_mower::entity_component::_::state::paused"
 msgid "Paused"
 msgstr "Pausat/ada"
+
+#: component::lawn_mower::title
+msgid "Lawn mower"
+msgstr "Tallagespa"
 
 #: component::light::entity_component::_::state::off
 msgctxt "component::light::entity_component::_::state::off"
@@ -887,6 +983,10 @@ msgctxt "component::media_player::entity_component::_::state_attributes::shuffle
 msgid "On"
 msgstr "ON"
 
+#: component::media_player::title
+msgid "Media player"
+msgstr "Reproductor multimèdia"
+
 #: component::mqtt::selector::set_ca_cert::options::off
 msgctxt "component::mqtt::selector::set_ca_cert::options::off"
 msgid "Off"
@@ -896,6 +996,14 @@ msgstr "Apagat"
 msgctxt "component::netatmo::device_automation::trigger_subtype::away"
 msgid "Away"
 msgstr "Fora"
+
+#: component::notify::title
+msgid "Notifications"
+msgstr "Notificacions"
+
+#: component::number::title
+msgid "Number"
+msgstr "Número"
 
 #: component::overkiz::entity::climate::overkiz::state_attributes::fan_mode::state::away
 msgctxt "component::overkiz::entity::climate::overkiz::state_attributes::fan_mode::state::away"
@@ -942,6 +1050,14 @@ msgctxt "component::person::entity_component::_::state::not_home"
 msgid "Away"
 msgstr "Fora"
 
+#: component::person::title
+msgid "Person"
+msgstr "Persona"
+
+#: component::plant::title
+msgid "Plant Monitor"
+msgstr "Monitorització de planta"
+
 #: component::plugwise::entity::climate::plugwise::state_attributes::preset_mode::state::home
 msgctxt "component::plugwise::entity::climate::plugwise::state_attributes::preset_mode::state::home"
 msgid "Home"
@@ -976,6 +1092,10 @@ msgstr "Apagat"
 msgctxt "component::remote::entity_component::_::state::on"
 msgid "On"
 msgstr "ON"
+
+#: component::remote::title
+msgid "Remote"
+msgstr "Comandament"
 
 #: component::renson::entity::sensor::breeze_level::state::off
 msgctxt "component::renson::entity::sensor::breeze_level::state::off"
@@ -1046,6 +1166,10 @@ msgctxt "component::schedule::entity_component::_::state_attributes::editable::s
 msgid "Yes"
 msgstr "Sí"
 
+#: component::schedule::title
+msgid "Schedule"
+msgstr "Horari"
+
 #: component::script::entity_component::_::state::off
 msgctxt "component::script::entity_component::_::state::off"
 msgid "Off"
@@ -1059,6 +1183,10 @@ msgstr "ON"
 #: component::script::title
 msgid "Script"
 msgstr "Programa (script)"
+
+#: component::select::title
+msgid "Select"
+msgstr "Selector"
 
 #: component::sensibo::entity::climate::climate_device::state_attributes::swing_mode::state::stopped
 msgctxt "component::sensibo::entity::climate::climate_device::state_attributes::swing_mode::state::stopped"
@@ -1209,9 +1337,17 @@ msgctxt "component::siren::entity_component::_::state::on"
 msgid "On"
 msgstr "ON"
 
+#: component::siren::title
+msgid "Siren"
+msgstr "Sirena"
+
 #: component::starlink::entity::binary_sensor::power_save_idle::name
 msgid "Sleep"
 msgstr "Dormint"
+
+#: component::sun::title
+msgid "Sun"
+msgstr "Sol"
 
 #: component::switch::entity_component::_::state::off
 msgctxt "component::switch::entity_component::_::state::off"
@@ -1262,6 +1398,10 @@ msgctxt "component::tessie::entity::select::climate_state_seat_heater_third_row_
 msgid "Off"
 msgstr "Apagat"
 
+#: component::time::title
+msgid "Time"
+msgstr "Hora"
+
 #: component::timer::entity_component::_::state::active
 msgctxt "component::timer::entity_component::_::state::active"
 msgid "Active"
@@ -1281,6 +1421,14 @@ msgstr "Pausat/ada"
 msgctxt "component::timer::entity_component::_::state_attributes::editable::state::true"
 msgid "Yes"
 msgstr "Sí"
+
+#: component::timer::title
+msgid "Timer"
+msgstr "Temporitzador"
+
+#: component::todo::title
+msgid "To-do list"
+msgstr "Llista de tasques"
 
 #: component::transmission::entity::sensor::transmission_status::state::idle
 msgctxt "component::transmission::entity::sensor::transmission_status::state::idle"
@@ -1382,6 +1530,10 @@ msgctxt "component::update::entity_component::_::state_attributes::in_progress::
 msgid "Yes"
 msgstr "Sí"
 
+#: component::update::title
+msgid "Update"
+msgstr "Actualitza"
+
 #: component::vacuum::entity_component::_::state::idle
 msgctxt "component::vacuum::entity_component::_::state::idle"
 msgid "Idle"
@@ -1402,6 +1554,10 @@ msgctxt "component::vacuum::entity_component::_::state::paused"
 msgid "Paused"
 msgstr "Pausat/ada"
 
+#: component::vacuum::title
+msgid "Vacuum"
+msgstr "Aspirador"
+
 #: component::valve::entity_component::_::state::closed
 msgctxt "component::valve::entity_component::_::state::closed"
 msgid "Closed"
@@ -1411,6 +1567,10 @@ msgstr "Tancat/ada"
 msgctxt "component::valve::entity_component::_::state::open"
 msgid "Open"
 msgstr "Obert/a"
+
+#: component::valve::title
+msgid "Valve"
+msgstr "Vàlvula"
 
 #: component::water_heater::entity_component::_::state::off
 msgctxt "component::water_heater::entity_component::_::state::off"
@@ -1426,6 +1586,14 @@ msgstr "Apagat"
 msgctxt "component::water_heater::entity_component::_::state_attributes::away_mode::state::on"
 msgid "On"
 msgstr "ON"
+
+#: component::water_heater::title
+msgid "Water heater"
+msgstr "Escalfador d'aigua"
+
+#: component::weather::title
+msgid "Weather"
+msgstr "Temps"
 
 #: component::whirlpool::entity::sensor::whirlpool_machine::state::pause
 msgctxt "component::whirlpool::entity::sensor::whirlpool_machine::state::pause"

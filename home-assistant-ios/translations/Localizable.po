@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-29 09:32+0000\n"
+"POT-Creation-Date: 2026-07-06 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid "Chat"
 msgstr "Xat"
 
 #: about.documentation.title
+msgctxt "about.documentation.title"
+"about.documentation.title"
 msgid "Documentation"
 msgstr "Documentació"
 
@@ -93,6 +95,7 @@ msgctxt "actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
+"actions_configurator.rows.icon.title"
 msgid "Icon"
 msgstr "Icona"
 
@@ -102,6 +105,7 @@ msgstr "Color de la icona"
 
 #: actions_configurator.rows.name.title
 msgctxt "actions_configurator.rows.name.title"
+"actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
@@ -134,6 +138,8 @@ msgstr "També podeu canviar-les personalitzant els atributs Scene: %@"
 
 #: addButtonLabel
 msgctxt "addButtonLabel"
+"addButtonLabel"
+"addButtonLabel"
 msgid "Add"
 msgstr "Afegir"
 
@@ -339,6 +345,8 @@ msgctxt "assist.modern_ui.header.title"
 "assist.modern_ui.header.title"
 "assist.modern_ui.header.title"
 "assist.modern_ui.header.title"
+"assist.modern_ui.header.title"
+"assist.modern_ui.header.title"
 msgid "Assist"
 msgstr "Assistent"
 
@@ -400,6 +408,7 @@ msgstr "Configuració d'assistència"
 
 #: camera_list.edit.off.title
 msgctxt "camera_list.edit.off.title"
+"camera_list.edit.off.title"
 "camera_list.edit.off.title"
 msgid "Edit"
 msgstr "Edita"
@@ -505,6 +514,7 @@ msgstr "Accions"
 
 #: carPlay.navigation.tab.areas
 msgctxt "carPlay.navigation.tab.areas"
+"carPlay.navigation.tab.areas"
 msgid "Areas"
 msgstr "Àrees"
 
@@ -681,10 +691,12 @@ msgid "Unknown"
 msgstr "Desconegut"
 
 #: client_events.view.clear
+msgctxt "client_events.view.clear"
 msgid "Clear"
 msgstr "Esborrar"
 
 #: client_events.view.clear_confirm.message
+msgctxt "client_events.view.clear_confirm.message"
 msgid "This cannot be undone."
 msgstr "Això no es pot desfer."
 
@@ -759,6 +771,7 @@ msgstr "Depurar"
 
 #: delete
 msgctxt "delete"
+"delete"
 msgid "Delete"
 msgstr "Suprimeix"
 
@@ -885,14 +898,6 @@ msgstr "Configuració"
 #: intents.server_required_for_value
 msgid "Select a server before picking this value."
 msgstr "Seleccioneu un servidor abans d'escollir aquest valor."
-
-#: kiosk.push_command.set_brightness
-msgid "Setting brightness"
-msgstr ""
-
-#: kiosk.push_command.set_volume
-msgid "Setting volume"
-msgstr ""
 
 #: location_change_notification.app_shortcut.body
 msgid "Location updated via App Shortcut"
@@ -2491,14 +2496,6 @@ msgstr "Automàticament"
 msgid "Reset Badge"
 msgstr "Restablir la insígnia"
 
-#: settings_details.notifications.categories.deprecated_note
-msgid ""
-"Categories are no longer required for actionable notifications and will be "
-"removed in a future release."
-msgstr ""
-"Les categories ja no són necessàries per a notificacions accionables i "
-"s'eliminaran en una futura versió."
-
 #: settings_details.notifications.categories_synced.empty
 msgid "No Synced Categories"
 msgstr "No hi ha categories sincronitzades"
@@ -2976,6 +2973,161 @@ msgstr "El servei (ex. Homeassistant.turn_on) ha de ser definit"
 #: url_handler.x_callback_url.error.templateMissing
 msgid "A renderable template must be defined"
 msgstr "S'ha de definir una plantilla renderizable"
+
+#: watch.config.add.empty
+msgid ""
+"Nothing to add yet. Add scripts, scenes or automations on your iPhone first."
+msgstr ""
+
+#: watch.config.add.entity
+msgctxt "watch.config.add.entity"
+msgid "Entity"
+msgstr ""
+
+#: watch.config.add.error.fetch_failed
+msgid "Couldn't load items from your iPhone. Please try again."
+msgstr ""
+
+#: watch.config.add.filter.all
+msgctxt "watch.config.add.filter.all"
+msgid "All"
+msgstr ""
+
+#: watch.config.add.folder
+msgctxt "watch.config.add.folder"
+msgid "Folder"
+msgstr ""
+
+#: watch.config.add.search_placeholder
+msgid "Search"
+msgstr ""
+
+#: watch.config.add.title
+msgctxt "watch.config.add.title"
+msgid "Add"
+msgstr ""
+
+#: watch.config.assist.error.fetch_failed
+msgid "Couldn't load Assist pipelines from your iPhone."
+msgstr ""
+
+#: watch.config.assist.no_pipelines
+msgid "No Assist pipelines cached yet. Keep your iPhone nearby and tap Reload."
+msgstr ""
+
+#: watch.config.assist.pipeline
+msgctxt "watch.config.assist.pipeline"
+msgid "Pipeline"
+msgstr ""
+
+#: watch.config.assist.preferred
+msgctxt "watch.config.assist.preferred"
+msgid "Preferred"
+msgstr ""
+
+#: watch.config.assist.reload
+msgid "Reload"
+msgstr ""
+
+#: watch.config.assist.save
+msgctxt "watch.config.assist.save"
+msgid "Save"
+msgstr ""
+
+#: watch.config.assist.select_pipeline
+msgid "Select pipeline"
+msgstr ""
+
+#: watch.config.assist.show
+msgctxt "watch.config.assist.show"
+msgid "Show Assist"
+msgstr ""
+
+#: watch.config.assist.title
+msgctxt "watch.config.assist.title"
+msgid "Assist"
+msgstr ""
+
+#: watch.config.conflict.keep_watch
+msgid "Keep Watch Changes"
+msgstr ""
+
+#: watch.config.conflict.message
+msgid ""
+"This watch and your iPhone both changed the configuration since they last "
+"synced. Which do you want to keep?"
+msgstr ""
+
+#: watch.config.conflict.title
+msgid "Sync Conflict"
+msgstr ""
+
+#: watch.config.conflict.use_iphone
+msgid "Use iPhone"
+msgstr ""
+
+#: watch.config.edit.add_button
+msgctxt "watch.config.edit.add_button"
+msgid "Add"
+msgstr ""
+
+#: watch.config.edit.delete
+msgctxt "watch.config.edit.delete"
+msgid "Delete"
+msgstr ""
+
+#: watch.config.edit.error.not_reachable
+msgid "Keep your iPhone nearby to change what's shown on your watch."
+msgstr ""
+
+#: watch.config.edit.folder.add_title
+msgctxt "watch.config.edit.folder.add_title"
+msgid "New Folder"
+msgstr ""
+
+#: watch.config.edit.folder.edit_title
+msgid "Edit Folder"
+msgstr ""
+
+#: watch.config.edit.icon
+msgctxt "watch.config.edit.icon"
+msgid "Icon"
+msgstr ""
+
+#: watch.config.edit.icon_search.placeholder
+msgid "Search icons"
+msgstr ""
+
+#: watch.config.edit.icon_search.use_default
+msgid "Use default icon"
+msgstr ""
+
+#: watch.config.edit.item.add_title
+msgid "Add Item"
+msgstr ""
+
+#: watch.config.edit.item.edit_title
+msgid "Edit Item"
+msgstr ""
+
+#: watch.config.edit.name_placeholder
+msgctxt "watch.config.edit.name_placeholder"
+msgid "Name"
+msgstr ""
+
+#: watch.config.edit.preview
+msgctxt "watch.config.edit.preview"
+msgid "Preview"
+msgstr ""
+
+#: watch.config.edit.require_confirmation
+msgid "Ask before running"
+msgstr ""
+
+#: watch.config.edit.title
+msgctxt "watch.config.edit.title"
+msgid "Edit"
+msgstr ""
 
 #: watch.configurator.delete.button
 msgid "Delete Complication"
@@ -3738,10 +3890,40 @@ msgctxt "watch.labels.complication_text_areas.trailing.label"
 msgid "Trailing"
 msgstr "Arrossegant"
 
+#: watch.labels.no_config_add
+msgid ""
+"With your iPhone nearby, you can add compatible entities to your Apple Watch "
+"using the button below, or from your companion app settings on iPhone."
+msgstr ""
+
 #: watch.placeholder_complication_name
 msgctxt "watch.placeholder_complication_name"
 msgid "Placeholder"
 msgstr "Contenidor"
+
+#: watch.settings.restart_app.footer
+msgid "This closes the app immediately. You'll need to reopen it manually."
+msgstr ""
+
+#: watch.settings.restart_app.title
+msgctxt "watch.settings.restart_app.title"
+msgid "Restart App"
+msgstr ""
+
+#: watch.settings.troubleshooting.connection.message
+msgid ""
+"The connection between your iPhone and Apple Watch can sometimes get stuck. "
+"Restarting both devices usually fixes it."
+msgstr ""
+
+#: watch.settings.troubleshooting.connection.title
+msgid "Connection Issues"
+msgstr ""
+
+#: watch.settings.troubleshooting.title
+msgctxt "watch.settings.troubleshooting.title"
+msgid "Troubleshooting"
+msgstr ""
 
 #: web_view.no_url_available.primary_button.title
 msgctxt "web_view.no_url_available.primary_button.title"
@@ -3751,6 +3933,28 @@ msgstr "Obre la configuració"
 #: web_view.no_url_available.title
 msgid "We can't connect to Home Assistant"
 msgstr "No es pot connectar amb Home Assistant"
+
+#: whats_new.app_support_update.item_body
+msgid ""
+"This is the last update for iOS 15, watchOS 8, and macOS 11 and earlier. Tap "
+"to read more."
+msgstr ""
+
+#: whats_new.app_support_update.item_title
+msgid "Support for iOS 15, watch OS 8, and macOS 11 will end"
+msgstr ""
+
+#: whats_new.app_support_update.title
+msgid "App support update"
+msgstr ""
+
+#: whats_new.item.opens_article_hint
+msgid "Opens an article"
+msgstr ""
+
+#: whats_new.item.opens_link_hint
+msgid "Opens a link"
+msgstr ""
 
 #: widgets.action.name.moreInfoDialog
 msgid "More info"
