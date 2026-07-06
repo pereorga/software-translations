@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-29 09:33+0000\n"
+"POT-Creation-Date: 2026-07-06 09:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -263,6 +263,10 @@ msgstr "Obre"
 msgid "Cancel"
 msgstr "Cancel·la"
 
+#: BUTTON_CLOSE
+msgid "Close"
+msgstr ""
+
 #: BUTTON_SAVE
 msgid "Save"
 msgstr "Desa"
@@ -486,10 +490,6 @@ msgstr ""
 #: RENAME_MEDIA_TO
 msgid "Enter new name for %@"
 msgstr "Entreu un nou nom per a %@"
-
-#: FOLDER_EMPTY
-msgid "Empty folder"
-msgstr "Carpeta buida"
 
 #: SHARING_ACTION_SHEET_TITLE_CHOOSE_FILE
 msgid "Choose a file to open:"
@@ -737,6 +737,7 @@ msgstr ""
 "compatibility with InAppSettingsKit's upstream\"ON\" = \"Activat"
 
 #: OFF
+msgctxt "OFF"
 msgid "Off"
 msgstr "Desactivat"
 
@@ -773,7 +774,7 @@ msgstr ""
 "d'internet."
 
 #: EMPTY_PLAYLIST
-msgid "Empty playlist"
+msgid "Empty Playlist"
 msgstr "Llista de reproducció buida"
 
 #: EMPTY_PLAYLIST_DESCRIPTION
@@ -1132,13 +1133,9 @@ msgstr "Subtítols trobats"
 msgid "No subtitles were found for your media item \"%@\"."
 msgstr "No s'han trobat subtítols per al vostre element multimèdia \"%@\"."
 
-#: SELECT_AUDIO_FROM_FILES
-msgid "Load External Audio..."
-msgstr "Carrega àudio extern..."
-
-#: SELECT_SUBTITLE_FROM_FILES
-msgid "Load External Subtitles..."
-msgstr "Carrega subtítols externs..."
+#: LOAD_EXTERNAL
+msgid "Load External"
+msgstr ""
 
 #: REPEAT_MODE
 msgid "Repeat"
@@ -1273,6 +1270,10 @@ msgstr "Cançons"
 msgctxt "PLAYLISTS"
 msgid "Playlists"
 msgstr "Llistes de reproducció"
+
+#: PLAYLIST
+msgid "Playlist"
+msgstr ""
 
 #: VIDEO_GROUPS
 msgid "Video groups"
@@ -1575,14 +1576,6 @@ msgstr "elements seleccionats"
 
 #.
 #. MARK: - VideoPlayerControls
-#: PRIMARY_SUBTITLES
-msgid "PRIMARY SUBTITLE"
-msgstr "SUBTÍTOL PRINCIPAL"
-
-#: SECONDARY_SUBTITLES
-msgid "SECONDARY SUBTITLE"
-msgstr "SUBTÍTOL SECUNDARI"
-
 #: SECONDARY_SUBTITLE
 msgid "Secondary Subtitle..."
 msgstr "Subtítol secundari..."
@@ -2370,24 +2363,13 @@ msgstr "Introduïu una velocitat entre 0.25 i 8.0"
 #: SETTINGS_INVALID_SPEED_VALUE
 msgid ""
 "Please enter a valid number between 0.25 and 8.0\"; /* Please enter a valid "
-"number between 0.25 and 8.0 */// MARK: - "
-"TitleSelection\"TITLESELECTION_BACKGROUND_LABEL\" = \"Title selection "
-"background"
+"number between 0.25 and 8.0 */// MARK: - TitleSelection// MARK: - NEW DELETE "
+"STRINGS\"DELETE_SINGLE_TITLE\" = \"Delete \"%@\"?"
 msgstr ""
 "Introduïu un número vàlid entre 0.25 i 8.0\"; /* Please enter a valid number "
 "between 0.25 and 8.0 */// MARK: - "
 "TitleSelection\"TITLESELECTION_BACKGROUND_LABEL\" = \"Fons de selecció de "
 "títols"
-
-#: TITLESELECTION_BACKGROUND_HINT
-msgid "Tap to remove the view."
-msgstr "Feu un toc per eliminar la vista."
-
-#.
-#. MARK: - NEW DELETE STRINGS
-#: DELETE_SINGLE_TITLE
-msgid "Delete \"%@\"?"
-msgstr "Voleu suprimir \"%@\"?"
 
 #: DELETE_MULTIPLE_TITLE
 msgid "Delete \"%@\" and %d others?"
@@ -2464,3 +2446,52 @@ msgstr "Afegir contingut multimèdia d'àudio o vídeo en aquesta carpeta"
 #: SUBFOLDERS_DESCRIPTION
 msgid "%d subfolders"
 msgstr "%d subcarpetes"
+
+#: ACCESSIBILITY_SELECTED
+msgid "selected"
+msgstr ""
+
+#: TRACK_SELECTOR_OFF
+msgctxt "TRACK_SELECTOR_OFF"
+msgid "Off"
+msgstr ""
+
+#: TRACK_INDEX_FORMAT
+msgid "Track %d"
+msgstr ""
+
+#: AUDIO_CHANNELS_MONO
+msgid "Mono"
+msgstr ""
+
+#: AUDIO_CHANNELS_STEREO
+msgid "Stereo"
+msgstr ""
+
+#: AUDIO_CHANNELS_FORMAT
+msgid "%u channels"
+msgstr ""
+
+#: SECOND_SUBTITLE
+msgid "Second Subtitle"
+msgstr ""
+
+#: SYNC
+msgid "Sync"
+msgstr ""
+
+#: DELAY_FORMAT
+msgid "Delay %@ s"
+msgstr ""
+
+#: NO_DELAY
+msgid "No delay"
+msgstr ""
+
+#: SUBTITLE_ASSIGN_PRIMARY
+msgid "Assign primary subtitle"
+msgstr ""
+
+#: SUBTITLE_ASSIGN_SECONDARY
+msgid "Assign secondary subtitle"
+msgstr ""
