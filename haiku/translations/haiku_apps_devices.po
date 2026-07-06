@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-29 09:32+0000\n"
+"POT-Creation-Date: 2026-07-06 09:18+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +53,10 @@ msgstr "Bus USB"
 msgctxt "DevicesView"
 msgid "Computer"
 msgstr "Ordinador"
+
+#: DeviceACPI
+msgid "ACPI thermal zone"
+msgstr "Zona tèrmica ACPI"
 
 #: DeviceSCSI
 msgid "Communications"
@@ -113,12 +117,23 @@ msgctxt "DeviceSCSI"
 msgid "Manufacturer"
 msgstr "Fabricant"
 
+#: DeviceSCSI
+msgid "Graphics peripheral"
+msgstr "Perifèric de gràfics"
+
 #: Device
 msgctxt "Device"
 "Device"
 "Device"
 msgid "Device name"
 msgstr "Nom del dispositiu"
+
+#: DeviceACPI
+msgctxt "DeviceACPI"
+"DeviceACPI"
+"DeviceACPI"
+msgid "unknown"
+msgstr "desconegut"
 
 #: Device
 msgid "Satellite communications controller"
@@ -148,6 +163,11 @@ msgstr "Canviador"
 #: Device
 msgid "Serial bus controller"
 msgstr "Controlador del bus de sèrie"
+
+#: DevicesView
+msgctxt "DevicesView"
+msgid "unknown"
+msgstr "desconegut"
 
 #: DevicesView
 msgid "Refresh devices"
@@ -188,10 +208,23 @@ msgctxt "DevicesView"
 msgid "Devices"
 msgstr "Dispositius"
 
+#: DevicesView
+msgid "none"
+msgstr "cap"
+
 #: DeviceACPI
 msgctxt "DeviceACPI"
 msgid "Device name"
 msgstr "Nom del dispositiu"
+
+#: DevicePCI
+msgctxt "DevicePCI"
+msgid "unknown"
+msgstr "desconegut"
+
+#: DeviceSCSI
+msgid "Optical drive"
+msgstr "Unitat òptica"
 
 #: Device
 msgid "Display controller"
@@ -232,6 +265,10 @@ msgstr "Bus PCI"
 msgid "Enclosure"
 msgstr "Annex"
 
+#: DeviceSCSI
+msgid "Tape drive"
+msgstr "Unitat de cinta"
+
 #: DevicesView
 msgid "Order by:"
 msgstr "Ordena per:"
@@ -239,6 +276,10 @@ msgstr "Ordena per:"
 #: Device
 msgid "Intelligent controller"
 msgstr "Controlador intel·ligent"
+
+#: DeviceACPI
+msgid "ACPI processor namespace '%2'"
+msgstr "Espai de noms del processador ACPI %2"
 
 #: Device
 msgid "Multimedia controller"
@@ -267,14 +308,26 @@ msgctxt "DeviceSCSI"
 msgid "Processor"
 msgstr "Processador"
 
+#: DeviceSCSI
+msgid "Card reader"
+msgstr "Lector de targetes"
+
 #: Device
 msgctxt "Device"
 msgid "Bridge"
 msgstr "Pont"
 
+#: DeviceACPI
+msgid "ACPI button '%1'"
+msgstr "Botó ACPI %1"
+
 #: PropertyList
 msgid "Attributes"
 msgstr "Atributs"
+
+#: DeviceSCSI
+msgid "Disk drive"
+msgstr "Unitat de disc"
 
 #: DeviceSCSI
 msgid "Worm"
@@ -293,6 +346,14 @@ msgstr "Fabricant"
 msgctxt "DeviceSCSI"
 msgid "Bridge"
 msgstr "Pont"
+
+#: DeviceACPI
+msgid "ACPI system indicator"
+msgstr "Indicador del sistema ACPI"
+
+#: DeviceACPI
+msgid "ACPI system bus"
+msgstr "Bus del sistema ACPI"
 
 #: Device
 msgid "Signal processing controller"
@@ -343,5 +404,6 @@ msgid "ACPI bus"
 msgstr "Bus ACPI"
 
 #: Device
+msgctxt "Device"
 msgid "unknown"
 msgstr "desconegut"
