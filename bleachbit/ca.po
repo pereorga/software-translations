@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-07 11:17-0600\n"
+"POT-Creation-Date: 2026-07-12 15:23-0600\n"
 "PO-Revision-Date: 2025-03-16 06:50+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -165,6 +165,12 @@ msgstr ""
 "Desfragmenta la base de dades per reduir l'espai que ocupa i millorar la "
 "velocitat d'accés sense suprimir cap dada"
 
+msgid "Shell"
+msgstr "Intèrpret d'ordres"
+
+msgid "Delete the command history"
+msgstr "Suprimeix l'historial d'ordres"
+
 msgid "Office suite"
 msgstr "Paquet ofimàtic"
 
@@ -186,12 +192,6 @@ msgstr "Registres de depuració"
 
 msgid "Delete the debug logs"
 msgstr "Suprimeix els registres de depuració"
-
-msgid "Shell"
-msgstr "Intèrpret d'ordres"
-
-msgid "Delete the command history"
-msgstr "Suprimeix l'historial d'ordres"
 
 msgid "Temporary files"
 msgstr "Fitxers temporals"
@@ -440,6 +440,11 @@ msgstr "Esborra fitxers dispersos per tot el disc"
 
 msgid "Inspect the preview for any files you want to keep."
 msgstr "Inspeccioneu la previsualització per si voleu mantenir algun fitxer."
+
+msgid ""
+"This option is slow. Inspect the preview for files you want to keep, like "
+"those bundled with applications."
+msgstr ""
 
 msgid "VIM swap files under user profile"
 msgstr "Fitxers d'intercanvi del VIM al perfil de l'usuari"
@@ -2188,8 +2193,12 @@ msgstr ""
 msgid "Error when checking for updates: %s"
 msgstr "Error en comprovar les actualitzacions: "
 
+#, fuzzy
+#| msgid ""
+#| "The command 'swapoff -s' failed, so falling back to /proc/swaps for swap "
+#| "information."
 msgid ""
-"The command 'swapoff -s' failed, so falling back to /proc/swaps for swap "
+"The command 'swapon -s' failed, so falling back to /proc/swaps for swap "
 "information."
 msgstr ""
 "Ha fallat l'ordre «swapoff -s», per la qual cosa es fa servir /proc/swaps "
@@ -2224,6 +2233,20 @@ msgstr "S'estan assignant i netejant %s de memòria."
 msgid "Freeing %s of memory."
 msgstr "S'estan alliberant %s de memòria."
 
+#. TRANSLATORS: This is a debugging message that the parent process
+#. is waiting for the child process. %(parent_pid)d is the parent
+#. process ID; %(child_pid)d is the child process ID.
+#, fuzzy, python-format
+#| msgid ""
+#| "The function wipe_memory() with process ID {pid} is waiting for child "
+#| "process ID {cid}."
+msgid ""
+"The function wipe_memory() with process ID %(parent_pid)d is waiting for "
+"child process ID %(child_pid)d."
+msgstr ""
+"La funció wipe_memory() amb l'ID de procés {pid} està esperant al procés "
+"secundari amb l'ID {cid}."
+
 #. TRANSLATORS: Debug message. 'Found' is a past tense verb (short for
 #. "Found [that] the UUID for swap device ..."). %(device)s is the device
 #. path (e.g., /dev/sda5); %(uuid)s is a UUID string
@@ -2252,20 +2275,6 @@ msgstr "S'està reinicialitzant el dispositiu d'intercanvi %s."
 #, python-format
 msgid "Detected these swap devices: %s"
 msgstr "S'han detectat aquests dispositius d'intercanvi: %s"
-
-#. TRANSLATORS: This is a debugging message that the parent process
-#. is waiting for the child process. %(parent_pid)d is the parent
-#. process ID; %(child_pid)d is the child process ID.
-#, fuzzy, python-format
-#| msgid ""
-#| "The function wipe_memory() with process ID {pid} is waiting for child "
-#| "process ID {cid}."
-msgid ""
-"The function wipe_memory() with process ID %(parent_pid)d is waiting for "
-"child process ID %(child_pid)d."
-msgstr ""
-"La funció wipe_memory() amb l'ID de procés {pid} està esperant al procés "
-"secundari amb l'ID {cid}."
 
 #, python-format
 msgid "The child memory-wiping process returned code %d."
