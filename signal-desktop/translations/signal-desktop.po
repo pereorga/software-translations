@@ -107,6 +107,10 @@ msgctxt "icu:unknownContact"
 msgid "Unknown contact"
 msgstr "Contacte desconegut"
 
+msgctxt "icu:deletedAccount"
+msgid "Deleted Account"
+msgstr "Eliminar el compte"
+
 msgctxt "icu:unknownContactShort"
 msgid "Unknown"
 msgstr "Desconegut"
@@ -8791,6 +8795,10 @@ msgctxt "icu:DialogUpdate__downloaded"
 msgid "Update Downloaded"
 msgstr "Actualització descarregada"
 
+msgctxt "icu:DialogUpdate__upgrade-mas"
+msgid "Click to go to the App Store"
+msgstr "Fes clic per anar a l'App Store"
+
 msgctxt "icu:DialogExpiredBuild__upgrade-mas"
 msgid "Click to go to the App Store"
 msgstr "Fes clic per anar a l'App Store"
@@ -8846,6 +8854,18 @@ msgstr "Reinicia Signal per instal·lar l'actualització."
 msgctxt "icu:InstallScreenUpdateDialog--cannot-update__body"
 msgid "Signal Desktop failed to update, but there is a new version available. Go to {downloadUrl} and install the new version manually, then either contact support or file a bug about this problem."
 msgstr "Signal per a Escriptori no s'ha pogut actualitzar, però hi ha una versió nova disponible. Ves a {downloadUrl}, instal·la la versió nova manualment i després posat en contacte amb el servei d'assistència o envia un informe sobre aquest problema."
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--incorrect-pin--with-count"
+msgid "Incorrect PIN. {triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}."
+msgstr "{triesRemaining, plural, one {Incorrect PIN. {triesRemaining,number} attempt remaining.} other {Incorrect PIN. {triesRemaining,number} attempts remaining.}}"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--FewRemainingTries--description--no-reglock"
+msgid "You have {triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information. <learnMore>Learn more</learnMore>."
+msgstr "{triesRemaining, plural, one {You have {triesRemaining,number} attempt remaining. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information. <learnMore>Learn more</learnMore>.} other {You have {triesRemaining,number} attempts remaining. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information. <learnMore>Learn more</learnMore>.}}"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--FewRemainingTries--description--reglock"
+msgid "You have {triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}. If you run out of attempts, your account will be locked for 7 days. After 7 days of inactivity, you can re-register without your PIN. All content will be deleted. <learnMore>Learn more</learnMore>."
+msgstr "{triesRemaining, plural, one {You have {triesRemaining,number} attempt remaining. If you run out of attempts, your account will be locked for 7 days. After 7 days of inactivity, you can re-register without your PIN. All content will be deleted. <learnMore>Learn more</learnMore>.} other {You have {triesRemaining,number} attempts remaining. If you run out of attempts, your account will be locked for 7 days. After 7 days of inactivity, you can re-register without your PIN. All content will be deleted. <learnMore>Learn more</learnMore>.}}"
 
 msgctxt "icu:NSIS__retry-dialog--first-line"
 msgid "Signal cannot be closed."
@@ -10823,14 +10843,6 @@ msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
 
-msgctxt "icu:WhatsNew__8.16--0"
-msgid "We fixed a bug in the sticker creator that displayed the interface in the wrong language. Even though stickers are pictures (and therefore worth a thousand words) it's still important to get the words right too."
-msgstr "Hem solucionat un error al creador d'stickers que feia que la interfície es mostrés en l'idioma incorrecte."
-
-msgctxt "icu:WhatsNew__8.17--0"
-msgid "Group admins can now delete recently sent messages in a group chat. If someone accidentally posts a spoiler in your Book Club group and then walks away from their phone, a group admin can delete it to keep the plot twist intact. You can easily see when a message was deleted and who removed it, just like the existing \"Delete for Everyone\" feature."
-msgstr "Ara, els admins de grup poden eliminar missatges enviats recentment a un xat grupal. Igual que amb la funció actual \"Eliminar per a tothom\", podràs veure fàcilment quan s'ha eliminat (i qui ho ha fet)."
-
-msgctxt "icu:WhatsNew__8.17--1"
-msgid "We also increased the maximum number of pinned chats from 4 to 10, so you can show 6 more people how much you love what they have to say."
-msgstr "També hem augmentat el nombre màxim de xats fixats de 4 a 10."
+msgctxt "icu:WhatsNew__8.18--0"
+msgid "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
+msgstr "A partir d'ara, també podràs crear enquestes als xats individuals."
