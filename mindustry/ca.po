@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 09:19+0000\n"
+"POT-Creation-Date: 2026-07-13 10:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,7 @@ msgstr "Importa un fitxer"
 msgid "Copy to Clipboard"
 msgstr "Copia al porta-retalls"
 
-#: import.clipboard
+#: load.clipboard
 msgid "Load from Clipboard"
 msgstr "Importa del porta-retalls"
 
@@ -580,6 +580,10 @@ msgstr "El programa es tancarà per a carregar els mods."
 #: mod.installed
 msgid "[[Installed]"
 msgstr "[[Instal·lat]"
+
+#: mod.display
+msgid "[gray]Mod:[accent] {0}"
+msgstr "[gray]Mod:[orange] {0}"
 
 #: mod.enabled
 msgid "[lightgray]Enabled"
@@ -5337,6 +5341,7 @@ msgid "Optional Enhancements"
 msgstr "Millores opcionals"
 
 #: setting.alwaysmusic.name
+msgctxt "setting.alwaysmusic.name"
 msgid "Always Play Music"
 msgstr "Reprodueix música sempre"
 
