@@ -23,6 +23,10 @@ msgctxt "icu:AxoTextField.Clear"
 msgid "Clear"
 msgstr "Neteja"
 
+msgctxt "icu:AxoBadge.MaxOverflow"
+msgid "{max, number}+"
+msgstr "{max,number}+"
+
 msgctxt "icu:AddUserToAnotherGroupModal__title"
 msgid "Add to a group"
 msgstr "Afegeix-lo a un grup"
@@ -399,6 +403,10 @@ msgctxt "icu:LeftPaneChatFolders__ItemUnreadBadge__MaxCount"
 msgid "{maxCount, number}+"
 msgstr "{maxCount,number}+"
 
+msgctxt "icu:LeftPaneChatFolders__ItemUnreadBadge__AccessibleLabel"
+msgid "{count, plural, one {# Unread Message} other {# Unread Messages}}"
+msgstr "{count, plural, one {{count,number} Unread Message} other {{count,number} Unread Messages}}"
+
 msgctxt "icu:LeftPaneChatFolders__Item__ContextMenu__MarkAllRead"
 msgid "Mark all read"
 msgstr "Marca-ho tot com a llegit"
@@ -578,10 +586,6 @@ msgstr "Fixar xat"
 msgctxt "icu:unpinConversation"
 msgid "Unpin chat"
 msgstr "No fixar xat"
-
-msgctxt "icu:pinnedConversationsFull"
-msgid "You can only pin up to 4 chats"
-msgstr "Només pots fixar fins a 4 xats."
 
 msgctxt "icu:pinnedConversations--max"
 msgid "You can only pin up to {maxPinnedConversations, plural, one {# chat} other {# chats}}"
@@ -3631,18 +3635,6 @@ msgctxt "icu:stickers--toast--InstallFailed"
 msgid "Sticker pack could not be installed"
 msgstr "No s'ha pogut instal·lar el paquet d'adhesius."
 
-msgctxt "icu:stickers--StickerManager--Available"
-msgid "Available"
-msgstr "Disponible"
-
-msgctxt "icu:stickers--StickerManager--InstalledPacks"
-msgid "Installed"
-msgstr "Instal·lat"
-
-msgctxt "icu:stickers--StickerManager--InstalledPacks--Empty"
-msgid "No stickers installed"
-msgstr "No hi ha adhesius instal·lats."
-
 msgctxt "icu:stickers--StickerManager--MyStickers--None"
 msgid "No sticker packs, add stickers to send to your friends."
 msgstr "No tens paquets d'stickers, afegeix stickers per enviar als teus amics."
@@ -3659,10 +3651,6 @@ msgctxt "icu:stickers--StickerManager--BlessedPacks--Empty"
 msgid "No Signal Artist stickers available"
 msgstr "No hi ha adhesius d'artistes de Signal disponibles."
 
-msgctxt "icu:stickers--StickerManager--ReceivedPacks"
-msgid "Stickers You Received"
-msgstr "Adhesius que heu rebut"
-
 msgctxt "icu:stickers--StickerManager--ReceivedPacks2"
 msgid "Shared With You"
 msgstr "Compartit amb tu"
@@ -3670,10 +3658,6 @@ msgstr "Compartit amb tu"
 msgctxt "icu:stickers--StickerManager--ReceivedPacksDescription"
 msgid "When you receive a sticker from someone, the sticker pack will appear here."
 msgstr "Quan rebis un sticker d'algú, el paquet d'stickers apareixerà aquí."
-
-msgctxt "icu:stickers--StickerManager--ReceivedPacks--Empty"
-msgid "Stickers from incoming messages will appear here"
-msgstr "Els adhesius dels missatges d'entrada apareixeran aquí."
 
 msgctxt "icu:stickers--StickerManager--Install"
 msgid "Install"
@@ -8435,17 +8419,9 @@ msgctxt "icu:Preferences--local-backups-enter-backup-key"
 msgid "Enter key"
 msgstr "Introduir clau"
 
-msgctxt "icu:Preferences--local-backups-record-recovery-key"
-msgid "Record your recovery key"
-msgstr "Registra la teva clau de recuperació"
-
 msgctxt "icu:Preferences--local-backups-recovery-key--title"
 msgid "Your recovery key"
 msgstr "La teva clau de recuperació"
-
-msgctxt "icu:Preferences--local-backups-record-backup-key-description"
-msgid "This key is required to recover your account and data. Store this key somewhere safe. If you lose it, you won’t be able to recover your account. <learnMoreLink>Learn more.</learnMoreLink>"
-msgstr "Aquesta clau és necessària per recuperar el teu compte i les teves dades. Guarda-la en un lloc segur. Si la perds, no podràs recuperar el teu compte. <learnMoreLink>Més informació.</learnMoreLink>"
 
 msgctxt "icu:Preferences--local-backups-recovery-key--description"
 msgid "This key is required to recover your account and data. Store it somewhere safe and never share it with anyone. Signal will never message you for your recovery key. <learnMoreLink>Learn more.</learnMoreLink>"
@@ -8454,10 +8430,6 @@ msgstr "Aquesta clau és necessària per recuperar el teu compte i les teves dad
 msgctxt "icu:Preferences__recovery-key__do-not-share-title"
 msgid "Do not share recovery key"
 msgstr "No comparteixis la clau de recuperació"
-
-msgctxt "icu:Preferences__recovery-key__do-not-share-description"
-msgid "<strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. Store your recovery key somewhere safe and never share it with anyone. <learnMoreLink>Learn more.</learnMoreLink>"
-msgstr "<strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal. Guarda la clau de recuperació en un lloc segur i no la comparteixis mai amb ningú. <learnMoreLink>Més informació.</learnMoreLink>"
 
 msgctxt "icu:Preferences__recovery-key__do-not-share-confirm"
 msgid "Got it"
@@ -8471,21 +8443,9 @@ msgctxt "icu:CompositionInput__recovery-key-paste__do-not-share-key"
 msgid "Do not share key"
 msgstr "No compartir la clau"
 
-msgctxt "icu:CompositionInput__recovery-key-paste__confirm-description"
-msgid "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal."
-msgstr "No comparteixis la teva clau de recuperació amb ningú. Això li permetria prendre el control del teu compte. <strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal."
-
 msgctxt "icu:CompositionInput__recovery-key-warning--description"
 msgid "Do not share your recovery key with anyone. This will let them take over your account. <strong>Signal will never message you</strong> for your recovery key. Never respond to a chat pretending to be Signal. <learnMoreLink>Learn more.</learnMoreLink>"
 msgstr "No comparteixis la teva clau de recuperació amb ningú. Això li permetria prendre el control del teu compte. <strong>Signal no t'enviarà mai un missatge</strong> per demanar-te la teva clau de recuperació. No responguis mai a missatges que es facin passar per Signal. <learnMoreLink>Més informació.</learnMoreLink>"
-
-msgctxt "icu:CompositionInput__recovery-key-paste__confirm-dont-share"
-msgid "Don't share"
-msgstr "No compartir"
-
-msgctxt "icu:CompositionInput__recovery-key-paste__confirm-paste"
-msgid "Paste key"
-msgstr "Enganxar clau"
 
 msgctxt "icu:Preferences--local-backups-confirm-recovery-key"
 msgid "Confirm your recovery key"
@@ -8855,17 +8815,537 @@ msgctxt "icu:InstallScreenUpdateDialog--cannot-update__body"
 msgid "Signal Desktop failed to update, but there is a new version available. Go to {downloadUrl} and install the new version manually, then either contact support or file a bug about this problem."
 msgstr "Signal per a Escriptori no s'ha pogut actualitzar, però hi ha una versió nova disponible. Ves a {downloadUrl}, instal·la la versió nova manualment i després posat en contacte amb el servei d'assistència o envia un informe sobre aquest problema."
 
+msgctxt "icu:StandaloneRegistration--signal-logo"
+msgid "Signal Logo"
+msgstr "Logo de Signal"
+
+msgctxt "icu:StandaloneRegistration--back"
+msgid "Back"
+msgstr "Enrere"
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--header"
+msgid "Phone number"
+msgstr "Número de telèfon"
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--description--line-1"
+msgid "Enter your phone number to verify your account."
+msgstr "Introdueix el teu número de telèfon per verificar el teu compte."
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--description--line-2"
+msgid "Carrier rates may apply."
+msgstr "El teu operador pot aplicar tarifes."
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--waiting"
+msgid "Please try again in {duration}"
+msgstr "Si us plau, torna-ho a provar en {duration}"
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--placeholder"
+msgid "Phone number"
+msgstr "Número de telèfon"
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--button"
+msgid "Continue"
+msgstr "Continua"
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--Confirmation--description"
+msgid "Is your phone number above correct?"
+msgstr "És correcte aquest número de telèfon?"
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--Confirmation--cancel"
+msgid "Edit number"
+msgstr "Edita el número"
+
+msgctxt "icu:StandaloneRegistration--PhoneNumber--Confirmation--confirm"
+msgid "Yes"
+msgstr "Sí"
+
+msgctxt "icu:StandaloneRegistration--Captcha--header"
+msgid "Verify you’re a human to continue"
+msgstr "Verifica que ets humà per continuar"
+
+msgctxt "icu:StandaloneRegistration--Captcha--description"
+msgid "To help prevent spam on Signal, please complete verification. After verifying, you can continue with registration."
+msgstr "Per a ajudar a prevenir el correu brossa al Signal, completa la verificació. Després de verificar-te, pots continuar amb el procés de registre."
+
+msgctxt "icu:StandaloneRegistration--Captcha--retry-button"
+msgid "Retry verification"
+msgstr "Tornar a provar la verificació"
+
+msgctxt "icu:StandaloneRegistration--Captcha--button"
+msgid "Verify in browser"
+msgstr "Verificar al navegador"
+
+msgctxt "icu:StandaloneRegistration--Captcha--button--wait"
+msgid "Verify in {duration}"
+msgstr "Verificar en {duration}"
+
+msgctxt "icu:StandaloneRegistration--Captcha--NeedAnother--header"
+msgid "Further verification required"
+msgstr "Cal verificació addicional"
+
+msgctxt "icu:StandaloneRegistration--Captcha--NeedAnother--description"
+msgid "Please complete another captcha to continue registration."
+msgstr "Completa un altre captcha per continuar amb el registre."
+
+msgctxt "icu:StandaloneRegistration--Captcha--NeedAnother--cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:StandaloneRegistration--Captcha--NeedAnother--retry"
+msgid "Retry verification"
+msgstr "Tornar a provar la verificació"
+
+msgctxt "icu:StandaloneRegistration--Captcha--MustWait--aria-title"
+msgid "Try again later"
+msgstr "Torna-ho a provar més tard"
+
+msgctxt "icu:StandaloneRegistration--Captcha--MustWait--line-1"
+msgid "Can’t complete verification right now."
+msgstr "No es pot completar la verificació en aquest moment."
+
+msgctxt "icu:StandaloneRegistration--Captcha--MustWait--line-2"
+msgid "Try again in {duration}"
+msgstr "Torna-ho a provar en {duration}"
+
+msgctxt "icu:StandaloneRegistration--Captcha--MustWait--button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--Captcha--Error--header"
+msgid "Verification error"
+msgstr "Error de verificació"
+
+msgctxt "icu:StandaloneRegistration--Captcha--Error--description"
+msgid "Try verifying again to continue registration."
+msgstr "Intenta verificar-te de nou per continuar amb el registre."
+
+msgctxt "icu:StandaloneRegistration--Captcha--Error--try-again"
+msgid "Try again"
+msgstr "Torna a provar-ho"
+
+msgctxt "icu:StandaloneRegistration--Captcha--Error--cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--header"
+msgid "Verification code"
+msgstr "Codi de verificació"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--description"
+msgid "Enter the code we sent to {phoneNumber}"
+msgstr "Marqueu el codi que hem enviat a {phoneNumber}"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--button"
+msgid "Continue"
+msgstr "Continua"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--send-sms"
+msgid "Resend code"
+msgstr "Torna a enviar el codi."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--send-sms--duration"
+msgid "Resend code in {duration}"
+msgstr "Torna a enviar el codi d'aquí a {duration}"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--call-me"
+msgid "Call me"
+msgstr "Truca'm"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--call-me--duration"
+msgid "Call me in {duration}"
+msgstr "Truca'm d'aquí a {duration}"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--wrong-number"
+msgid "Wrong number?"
+msgstr "El número no és correcte?"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--having-trouble"
+msgid "Having trouble registering?"
+msgstr "Problemes per registrar-te?"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--IncorrectCode--aria-title"
+msgid "Incorrect code"
+msgstr "Codi incorrecte"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--IncorrectCode--description"
+msgid "The code you entered is incorrect. Please review the 6 digit code and try again."
+msgstr "El codi que has introduït no és correcte. Revisa el codi de 6 dígits i torna-ho a provar."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--IncorrectCode--button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CodeInvalid--aria-title"
+msgid "Invalid code"
+msgstr "Codi no vàlid"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CodeInvalid--description"
+msgid "The code you entered is not valid. Please resend the code and try again."
+msgstr "El codi que has introduït no és vàlid. Torna a enviar el codi i torna-ho a provar."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CodeInvalid--resend-button"
+msgid "Resend code"
+msgstr "Torna a enviar el codi."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CodeInvalid--edit-number-button"
+msgid "Edit number"
+msgstr "Edita el número"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--SMSFailed--aria-title"
+msgid "Unable to send SMS"
+msgstr "No s'ha pogut enviar un SMS"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--SMSFailed--description"
+msgid "We couldn't send you a verification code via SMS. Try receiving your code via voice call instead."
+msgstr "No t'hem pogut enviar un codi de verificació per SMS. Prova de rebre el teu codi mitjançant una trucada de veu."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--SMSFailed--confirm"
+msgid "Voice call"
+msgstr "Trucada de veu"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--SMSFailed--cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--MustWait--aria-title"
+msgid "Try again later"
+msgstr "Torna-ho a provar més tard"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--MustWait--description"
+msgid "You’ve made too many attempts to enter the code. Try again in {duration}."
+msgstr "Has fet massa intents per introduir el codi. Torna-ho a provar en {duration}."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--MustWait--button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--MaximumAttempts--aria-title"
+msgid "Too many attempts"
+msgstr "Massa intents"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--MaximumAttempts--description"
+msgid "You’ve made too many attempts to enter the code. Please resend the code and try again."
+msgstr "Has fet massa intents per introduir el codi. Torna a enviar el codi i torna-ho a provar."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--MaximumAttempts--resend-button"
+msgid "Resend code"
+msgstr "Torna a enviar el codi."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--MaximumAttempts--edit-number-button"
+msgid "Edit number"
+msgstr "Edita el número"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--FailedToCall--aria-title"
+msgid "Unable to call"
+msgstr "No s'ha pogut trucar"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--FailedToCall--description"
+msgid "We couldn't call the phone number you entered. Make sure the phone number is correct and try again."
+msgstr "No t'hem pogut trucar al número de telèfon que has introduït. Assegura't que el número és correcte i torna-ho a provar."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--FailedToCall--ok-button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CannotSendCodePermanent--aria-title"
+msgid "Cannot send code"
+msgstr "No es pot enviar el codi"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CannotSendCodePermanent--description"
+msgid "A verification code cannot be sent to the phone number you’ve entered. Make sure the number you’ve entered is correct, or try a different number."
+msgstr "No es pot enviar una clau de verificació al número que has introduït. Assegura't que el número que has introduït és correcte, o prova'n un de diferent."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CannotSendCodePermanent--ok-button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CannotSendCodeTemporary--aria-title"
+msgid "Try again later"
+msgstr "Torna-ho a provar més tard"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CannotSendCodeTemporary--description"
+msgid "An error occurred and the verification code could not be sent. Try again in {duration}."
+msgstr "S'ha produït un error i no s'ha pogut enviar la clau de verificació. Torna-ho a provar en {duration}."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--CannotSendCodeTemporary--ok-button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--header"
+msgid "Set up your profile"
+msgstr "Establiu el perfil"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--description"
+msgid "Profiles are visible to people you message, contacts, and groups."
+msgstr "Els perfils són visibles per la gent a la qual enviïs un missatge, els teus contactes i els teus grups."
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--learn-more"
+msgid "Learn more"
+msgstr "Més informació"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--add-photo"
+msgid "Add photo"
+msgstr "Afegiu-hi una fotografia"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--first-name"
+msgid "First name (required)"
+msgstr "Nom (cal)"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--last-name"
+msgid "Last name (optional)"
+msgstr "Cognoms (opcional)"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--discoverability"
+msgid "Who can find me by phone number"
+msgstr "Qui pot trobar-me a través del meu número de telèfon"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--discoverability--change-button"
+msgid "Change"
+msgstr "Canviar"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--discoverability--done-button"
+msgid "Done"
+msgstr "Fet"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--continue"
+msgid "Continue"
+msgstr "Continua"
+
+msgctxt "icu:StandaloneRegistration--ProfileEntry--AvatarModal--header"
+msgid "Your avatar"
+msgstr "El vostre avatar"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--header"
+msgid "Enter your PIN"
+msgstr "Marqueu el PIN"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--description"
+msgid "Enter the PIN you created for your account. This is different from your SMS verification code. <needHelp>Need help?</needHelp>"
+msgstr "Marca el PIN que has creat pel compte. Aquest és diferent del codi de verificació d'SMS. <needHelp>Necessites ajuda?</needHelp>"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--placeholder"
+msgid "Enter your PIN"
+msgstr "Marqueu el PIN"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--incorrect-pin"
+msgid "Incorrect PIN"
+msgstr "PIN incorrecte"
+
 msgctxt "icu:StandaloneRegistration--VerifyPIN--incorrect-pin--with-count"
 msgid "Incorrect PIN. {triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}."
-msgstr "{triesRemaining, plural, one {Incorrect PIN. {triesRemaining,number} attempt remaining.} other {Incorrect PIN. {triesRemaining,number} attempts remaining.}}"
+msgstr "{triesRemaining, plural, one {PIN incorrecte. Us resta {triesRemaining,number} intent.} other {PIN incorrecte. Us resten {triesRemaining,number} intents.}}"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NeedHelp--header"
+msgid "Need help?"
+msgstr "Us cal ajuda?"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NeedHelp--description--no-reglock"
+msgid "Your PIN is a 4+ digit code you created that can be numeric or alphanumeric. If you can’t remember your PIN, you can create a new one. You can register and use your account but you’ll lose some saved settings like your profile information. <learnMore>Learn more</learnMore>."
+msgstr "El teu PIN és un codi creat per tu d'almenys 4+ caràcters, i pot ser numèric o alfanumèric. Si no recordes el teu PIN, pots crear-ne un de nou. Pots registrar-te i utilitzar el teu compte, però perdràs alguns dels teus ajustos, com ara la informació del perfil. <learnMore>Més informació</learnMore>."
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NeedHelp--description--reglock"
+msgid "Your PIN is a 4+ digit code you created that can be numeric or alphanumeric. If you can’t remember your PIN, you’ll have to wait 7 days to re-register your account. <learnMore>Learn more</learnMore>."
+msgstr "El teu PIN és un codi creat per tu d'almenys 4+ caràcters, i pot ser numèric o alfanumèric. Si oblides el teu PIN, hauràs d’esperar 7 dies per tornar a registrar el teu compte. <learnMore>Més informació</learnMore>."
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NeedHelp--skip-button--no-reglock"
+msgid "Skip and create new PIN"
+msgstr "Omet i crea un PIN nou"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NeedHelp--contact-support-button"
+msgid "Contact Support"
+msgstr "Contacteu amb l'Assistència"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NeedHelp--cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--FewRemainingTries--header"
+msgid "Incorrect PIN"
+msgstr "PIN incorrecte"
 
 msgctxt "icu:StandaloneRegistration--VerifyPIN--FewRemainingTries--description--no-reglock"
 msgid "You have {triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information. <learnMore>Learn more</learnMore>."
-msgstr "{triesRemaining, plural, one {You have {triesRemaining,number} attempt remaining. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information. <learnMore>Learn more</learnMore>.} other {You have {triesRemaining,number} attempts remaining. If you run out of attempts, you can create a new PIN. You can register and use your account but you’ll lose some saved settings like your profile information. <learnMore>Learn more</learnMore>.}}"
+msgstr "{triesRemaining, plural, one {Et queda {triesRemaining,number} intent. Si esgotes els intents, pots crear un PIN nou. Pots registrar-te i utilitzar el teu compte, però perdràs algunes configuracions, com ara la informació del perfil. <learnMore>Més informació</learnMore>.} other {Et queden {triesRemaining,number} intents. Si esgotes els intents, podràs crear un PIN nou. Pots registrar-te i utilitzar el teu compte, però perdràs alguns dels teus ajustos, com ara la informació del perfil. <learnMore>Més informació</learnMore>.}}"
 
 msgctxt "icu:StandaloneRegistration--VerifyPIN--FewRemainingTries--description--reglock"
 msgid "You have {triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}. If you run out of attempts, your account will be locked for 7 days. After 7 days of inactivity, you can re-register without your PIN. All content will be deleted. <learnMore>Learn more</learnMore>."
-msgstr "{triesRemaining, plural, one {You have {triesRemaining,number} attempt remaining. If you run out of attempts, your account will be locked for 7 days. After 7 days of inactivity, you can re-register without your PIN. All content will be deleted. <learnMore>Learn more</learnMore>.} other {You have {triesRemaining,number} attempts remaining. If you run out of attempts, your account will be locked for 7 days. After 7 days of inactivity, you can re-register without your PIN. All content will be deleted. <learnMore>Learn more</learnMore>.}}"
+msgstr "{triesRemaining, plural, one {Et queda {triesRemaining,number} intent. Si esgotes els intents, el teu compte es bloquejarà durant 7 dies. Després de 7 dies d'inactivitat, pots tornar a registrar-te sense el teu PIN. Tot el contingut serà eliminat. <learnMore>Més informació</learnMore>.} other {Et queden {triesRemaining,number} intents. Si esgotes els intents, el teu compte es bloquejarà durant 7 dies. Després de 7 dies d'inactivitat, pots tornar a registrar-te sense el teu PIN. Tot el contingut serà eliminat. <learnMore>Més informació</learnMore>.}}"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--FewRemainingTries--button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--header"
+msgid "Incorrect PIN"
+msgstr "PIN incorrecte"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description"
+msgid "You’ve run out of PIN guesses, but you can still access your Signal account by creating a new PIN. For your privacy and security your account will be restored without any saved profile information or settings."
+msgstr "Se us han acabat els intents del PIN, però encara podeu accedir al compte del Signal creant un PIN nou. Per a la vostra privadesa i seguretat, el vostre compte es restaurarà sense cap tipus d'informació ni configuració de perfil."
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin"
+msgid "Create new PIN"
+msgstr "Crea un PIN nou"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--learn-more"
+msgid "Learn more about PINs"
+msgstr "Apreneu més coses sobre els PIN"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--menu--skip-pin"
+msgid "Skip PIN"
+msgstr "Ometre PIN"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--SkipPIN--header"
+msgid "Skip PIN entry?"
+msgstr "Voleu ometre l'entrada del PIN?"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--SkipPIN--description"
+msgid "If you can’t remember your PIN, you can create a new one. You can register and use your account but you’ll lose some saved settings like your profile information. Learn more."
+msgstr "Si no recordes el teu PIN, pots crear-ne un de nou. Pots registrar-te i utilitzar el teu compte, però perdràs alguns dels teus ajustos, com ara la informació del perfil. Més informació"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--SkipPIN--skip-button"
+msgid "Skip and create new PIN"
+msgstr "Omet i crea un PIN nou"
+
+msgctxt "icu:StandaloneRegistration--VerifyPIN--SkipPIN--cancel-button"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--header"
+msgid "Create your PIN"
+msgstr "Creeu el PIN"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--description"
+msgid "PINs can help you restore your account and keep your info encrypted with Signal. <learnMore>Learn More</learnMore>"
+msgstr "Els PINs et poden ajudar a restaurar el teu compte i mantenir la teva informació xifrada amb Signal. <learnMore>Més informació</learnMore>"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--placeholder"
+msgid "Create your PIN"
+msgstr "Creeu el PIN"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--helper-text"
+msgid "PIN must be at least 4 characters"
+msgstr "El PIN ha de tenir un mínim de 4 caràcters."
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--continue"
+msgid "Continue"
+msgstr "Continua"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--open-menu"
+msgid "Open menu"
+msgstr "Obrir menú"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--menu--more-about"
+msgid "More about PINs"
+msgstr "Més sobre els PINs"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--menu--disable"
+msgid "Disable PIN"
+msgstr "Desactiva el PIN"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--header"
+msgid "Warning"
+msgstr "Advertiment"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--description"
+msgid "If you disable the PIN, you will lose all data when you re-register Signal unless you transfer it from another iOS device. You can not turn on Registration Lock while the PIN is disabled."
+msgstr "Si desactiveu el PIN, perdreu totes les dades quan torneu a registrar-vos al Signal, si no és que les transferiu des d'un altre dispositiu iOS. No podeu activar el blocatge de registre mentre el PIN estigui desactivat."
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button"
+msgid "Disable PIN"
+msgstr "Desactiva el PIN"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--AboutPINs--header"
+msgid "About Signal PINs"
+msgstr "Sobre els PINs de Signal"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--AboutPINs--description"
+msgid "PINs keep your information stored with Signal encrypted so only you can access it. Your profile, settings and contacts will restore when you reinstall."
+msgstr "Els PINs mantenen xifrada la teva informació emmagatzemada a Signal de manera que no hi pugui accedir ningú més a part de tu. El teu perfil, ajustos i contactes es restauraran quan reinstal·lis."
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button"
+msgid "Learn more"
+msgstr "Més informació"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--AboutPINs--ok-button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--confirming--header"
+msgid "Confirm your PIN"
+msgstr "Confirma el teu PIN"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--confirming--description"
+msgid "Re-enter the PIN you just created."
+msgstr "Torna a introduir el PIN que acabes de crear."
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--confirming--placeholder"
+msgid "Enter your PIN"
+msgstr "Marqueu el PIN"
+
+msgctxt "icu:StandaloneRegistration--AccountLocked--header"
+msgid "Account locked"
+msgstr "Compte blocat"
+
+msgctxt "icu:StandaloneRegistration--AccountLocked--description"
+msgid "Your account has been locked to protect your privacy and security. After 7 days of inactivity in your account you’ll be able to reregister this phone number without needing your PIN. All content will be deleted."
+msgstr "S'ha bloquejat el teu compte per protegir la teva privacitat i seguretat. Després de 7 dies d’inactivitat, podràs tornar a registrar aquest número de telèfon sense necessitar el PIN. Tot el contingut serà eliminat."
+
+msgctxt "icu:StandaloneRegistration--AccountLocked--start-over-button"
+msgid "Use a different number"
+msgstr "Utilitzar un número diferent"
+
+msgctxt "icu:StandaloneRegistration--AccountLocked--help-button"
+msgid "Learn about locked accounts"
+msgstr "Informació sobre els comptes bloquejats"
+
+msgctxt "icu:StandaloneRegistration--UpdateRequired--header"
+msgid "Update required"
+msgstr "Actualització necessària"
+
+msgctxt "icu:StandaloneRegistration--UpdateRequired--description"
+msgid "To continue with registration, please update to the latest version of Signal."
+msgstr "Per continuar amb el registre, actualitza a la darrera versió de Signal."
+
+msgctxt "icu:StandaloneRegistration--UpdateRequired--update"
+msgid "Update"
+msgstr "Actualitza-la"
+
+msgctxt "icu:StandaloneRegistration--UpdateRequired--cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:StandaloneRegistration--ConnectionProblem--header"
+msgid "Check your connection"
+msgstr "Comprova la teva connexió"
+
+msgctxt "icu:StandaloneRegistration--ConnectionProblem--description"
+msgid "To continue, check your computer’s Internet connection and try again."
+msgstr "Per continuar, comprova la connexió a Internet de l'ordinador i torna-ho a provar."
+
+msgctxt "icu:StandaloneRegistration--ConnectionProblem--button"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--UnexpectedError--header"
+msgid "Can’t complete registration"
+msgstr "No es pot completar el registre"
+
+msgctxt "icu:StandaloneRegistration--UnexpectedError--description"
+msgid "An error occurred and registration cannot be completed. If this problem persists, please contact support."
+msgstr "S'ha produït un error i el procés de registre no s'ha pogut completar. Si el problema persisteix, posa't en contacte amb el servei d'assistència."
+
+msgctxt "icu:StandaloneRegistration--UnexpectedError--try-again-button"
+msgid "Try again"
+msgstr "Torna a provar-ho"
+
+msgctxt "icu:StandaloneRegistration--UnexpectedError--contact-support-button"
+msgid "Contact support"
+msgstr "Contacta amb el servei d'assistència"
 
 msgctxt "icu:NSIS__retry-dialog--first-line"
 msgid "Signal cannot be closed."
@@ -10846,3 +11326,7 @@ msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. 
 msgctxt "icu:WhatsNew__8.18--0"
 msgid "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
 msgstr "A partir d'ara, també podràs crear enquestes als xats individuals."
+
+msgctxt "icu:WhatsNew__8.19--0"
+msgid "Group admins can now bring chats to their natural conclusion with the new \"End Group\" option in group settings. Ending a group prevents group members from sending messages or starting calls, and also disables invites. Now you can make sure everyone stays on the right thread by ending last year's sewing meetup group before stitching a new one together."
+msgstr "Ara, els admins de grup poden finalitzar els xats amb la nova opció \"Tancar grup\" als ajustos del grup. Tancar un grup evita que els seus membres puguin enviar missatges o iniciar trucades. També desactiva les invitacions al grup."
