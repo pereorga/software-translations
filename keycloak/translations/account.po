@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:51+0000\n"
+"POT-Creation-Date: 2026-07-20 10:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -333,7 +333,7 @@ msgstr "Organització"
 
 #: delegationScopeConsentText
 msgid "Delegate token to administrator {0}?"
-msgstr ""
+msgstr "Voleu delegar el testimoni a l’administrador {0}?"
 
 #: role_admin
 msgid "Admin"
@@ -628,12 +628,12 @@ msgstr "Accés total"
 
 #: offlineToken
 msgid "Offline Token"
-msgstr "Codi d''autorització fora de línia"
+msgstr "Codi d’autorització fora de línia"
 
 #: revoke
 msgctxt "revoke"
 msgid "Revoke"
-msgstr "Revoca"
+msgstr "Revoca el permís"
 
 #: configureAuthenticators
 msgid "Configured Authenticators"
@@ -650,7 +650,7 @@ msgstr "Instal·leu una de les aplicacions següents al vostre mòbil:"
 #: totpStep2
 msgctxt "totpStep2"
 msgid "Open the application and scan the barcode:"
-msgstr "Obriu l''aplicació i escanegeu el codi de barres:"
+msgstr "Obriu l’aplicació i escanegeu el codi de barres:"
 
 #: totpStep3
 msgctxt "totpStep3"
@@ -658,8 +658,8 @@ msgid ""
 "Enter the one-time code provided by the application and click Save to finish "
 "the setup."
 msgstr ""
-"Introduïu el codi d''un sol ús proveït per l''aplicació i feu clic a Desa "
-"per a finalitzar la configuració."
+"Introduïu el codi d’un sol ús proveït per l’aplicació i feu clic a Desa per "
+"a finalitzar la configuració."
 
 #: totpStep3DeviceName
 msgid "Provide a Device Name to help you manage your OTP devices."
@@ -669,15 +669,15 @@ msgstr ""
 
 #: totpManualStep2
 msgid "Open the application and enter the key:"
-msgstr "Obriu l''aplicació i introduïu la clau:"
+msgstr "Obriu l’aplicació i introduïu la clau:"
 
 #: totpManualStep3
 msgid ""
 "Use the following configuration values if the application allows setting "
 "them:"
 msgstr ""
-"Utilitzeu els valors de configuració següents si l''aplicació permet "
-"establir-los:"
+"Utilitzeu els valors de configuració següents si l’aplicació permet establir-"
+"los:"
 
 #: totpUnableToScan
 msgid "Unable to scan?"
@@ -751,11 +751,11 @@ msgstr "Desconnectar-vos immediatament"
 msgid ""
 "Any subsequent use of the application will not be possible with this account"
 msgstr ""
-"Qualsevol ús posterior de l''aplicació no serà possible amb aquest compte"
+"Qualsevol ús posterior de l’aplicació no serà possible amb aquest compte"
 
 #: missingUsernameMessage
 msgid "Please specify username."
-msgstr "Indiqueu el vostre nom d''usuari."
+msgstr "Indiqueu el vostre nom d’usuari."
 
 #: missingFirstNameMessage
 msgid "Please specify first name."
@@ -764,7 +764,7 @@ msgstr "Indiqueu el vostre nom."
 #: invalidEmailMessage
 msgctxt "invalidEmailMessage"
 msgid "Invalid email address."
-msgstr "L''adreça de correu electrònic no és vàlida."
+msgstr "L’adreça de correu electrònic no és vàlida."
 
 #: missingLastNameMessage
 msgid "Please specify last name."
@@ -784,15 +784,15 @@ msgstr "Les contrasenyes no coincideixen."
 
 #: invalidUserMessage
 msgid "Invalid user"
-msgstr "L''usuari no és vàlid"
+msgstr "L’usuari no és vàlid"
 
 #: updateReadOnlyAttributesRejectedMessage
 msgid "Update of read-only attribute rejected"
-msgstr "S''ha rebutjat l''actualització d''un atribut de només lectura"
+msgstr "S’ha rebutjat l’actualització d’un atribut de només lectura"
 
 #: missingTotpMessage
 msgid "Please specify authenticator code."
-msgstr "Indiqueu el codi d''autenticació."
+msgstr "Indiqueu el codi d’autenticació."
 
 #: missingTotpDeviceNameMessage
 msgid "Please specify device name."
@@ -808,11 +808,11 @@ msgstr "La confirmació de contrasenya no coincideix."
 
 #: invalidTotpMessage
 msgid "Invalid authenticator code."
-msgstr "El codi d''autenticació no és vàlid."
+msgstr "El codi d’autenticació no és vàlid."
 
 #: usernameExistsMessage
 msgid "Username already exists."
-msgstr "El nom d''usuari ja existeix."
+msgstr "El nom d’usuari ja existeix."
 
 #: emailExistsMessage
 msgid "Email already exists."
@@ -820,7 +820,7 @@ msgstr "El correu electrònic ja existeix."
 
 #: didExistsMessage
 msgid "DID already exists."
-msgstr ""
+msgstr "El DID ja existeix."
 
 #: readOnlyUserMessage
 msgid "You can''t update your account as it is read-only."
@@ -828,8 +828,7 @@ msgstr "No podeu actualitzar el vostre compte perquè és de només lectura."
 
 #: readOnlyUsernameMessage
 msgid "You can''t update your username as it is read-only."
-msgstr ""
-"No podeu actualitzar el vostre nom d''usuari perquè és de només lectura."
+msgstr "No podeu actualitzar el vostre nom d’usuari perquè és de només lectura."
 
 #: readOnlyPasswordMessage
 msgid "You can''t update your password as your account is read-only."
@@ -837,27 +836,27 @@ msgstr "No podeu actualitzar la vostra contrasenya perquè és de només lectura
 
 #: successTotpMessage
 msgid "Mobile authenticator configured."
-msgstr "S''ha configurat l''aplicació d''autenticació mòbil."
+msgstr "S’ha configurat l’aplicació d’autenticació mòbil."
 
 #: successTotpRemovedMessage
 msgid "Mobile authenticator removed."
-msgstr "S''ha eliminat l''aplicació d''autenticació mòbil."
+msgstr "S’ha eliminat l’aplicació d’autenticació mòbil."
 
 #: successGrantRevokedMessage
 msgid "Grant revoked successfully."
-msgstr "S’ha revocat la concessió correctament."
+msgstr "S’ha revocat el permís correctament."
 
 #: accountUpdatedMessage
 msgid "Your account has been updated."
-msgstr "S''ha actualitzat el vostre compte."
+msgstr "S’ha actualitzat el vostre compte."
 
 #: accountPasswordUpdatedMessage
 msgid "Your password has been updated."
-msgstr "S''ha actualitzat la vostra contrasenya."
+msgstr "S’ha actualitzat la vostra contrasenya."
 
 #: missingIdentityProviderMessage
 msgid "Identity provider not specified."
-msgstr "No s''ha indicat el proveïdor d''identitat."
+msgstr "No s’ha indicat el proveïdor d’identitat."
 
 #: invalidFederatedIdentityActionMessage
 msgid "Invalid or missing action."
@@ -865,7 +864,7 @@ msgstr "Acció no vàlida o no indicada."
 
 #: identityProviderNotFoundMessage
 msgid "Specified identity provider not found."
-msgstr "No s''ha trobat un proveïdor d''identitat."
+msgstr "No s’ha trobat un proveïdor d’identitat."
 
 #: federatedIdentityLinkNotActiveMessage
 msgid "This identity is not active anymore."
@@ -887,11 +886,11 @@ msgstr ""
 
 #: identityProviderRedirectErrorMessage
 msgid "Failed to redirect to identity provider."
-msgstr "No s''ha pogut redirigir al proveïdor d''identitat."
+msgstr "No s’ha pogut redirigir al proveïdor d’identitat."
 
 #: identityProviderRemovedMessage
 msgid "Identity provider removed successfully."
-msgstr "S''ha eliminat el proveïdor d''identitat correctament."
+msgstr "S’ha eliminat el proveïdor d’identitat correctament."
 
 #: identityProviderAlreadyLinkedMessage
 msgid "Federated identity returned by {0} is already linked to another user."
@@ -908,18 +907,18 @@ msgstr "Consentiment rebutjat."
 
 #: access-denied-when-idp-auth
 msgid "Access denied when authenticating with {0}"
-msgstr "S''ha denegat l''accés mentre s''autenticava amb {0}"
+msgstr "S’ha denegat l’accés mentre s’autenticava amb {0}"
 
 #: accountDisabledMessage
 msgid "Account is disabled, contact your administrator."
-msgstr "El compte està inhabilitat, contacteu amb l''administrador."
+msgstr "El compte està inhabilitat, contacteu amb l’administrador."
 
 #: accountTemporarilyDisabledMessage
 msgid ""
 "Account is temporarily disabled, contact your administrator or try again "
 "later."
 msgstr ""
-"El compte està temporalment inhabilitat, contacteu amb l''administrador o "
+"El compte està temporalment inhabilitat, contacteu amb l’administrador o "
 "intenteu-ho de nou més tard."
 
 #: invalidPasswordMinLengthMessage
@@ -952,7 +951,7 @@ msgstr ""
 
 #: invalidPasswordNotUsernameMessage
 msgid "Invalid password: must not be equal to the username."
-msgstr "La contrasenya no és vàlida: no pot ser igual al nom d''usuari."
+msgstr "La contrasenya no és vàlida: no pot ser igual al nom d’usuari."
 
 #: invalidPasswordNotContainsUsernameMessage
 msgid "Invalid password: Can not contain the username."
@@ -965,7 +964,7 @@ msgstr "La contrasenya no és vàlida: no pot ser igual al correu electrònic."
 #: invalidPasswordRegexPatternMessage
 msgid "Invalid password: fails to match regex pattern(s)."
 msgstr ""
-"La contrasenya no és vàlida: no coincideix amb el patró de l''expressió "
+"La contrasenya no és vàlida: no coincideix amb el patró de l’expressió "
 "regular."
 
 #: invalidPasswordHistoryMessage
@@ -1098,7 +1097,7 @@ msgstr "comparticions"
 
 #: notBeingShared
 msgid "This resource is not being shared."
-msgstr "Aquest recurs no s''està compartint."
+msgstr "Aquest recurs no s’està compartint."
 
 #: notHaveAnyResource
 msgid "You don’t have any resources"
@@ -1110,7 +1109,7 @@ msgstr "No hi ha cap recurs compartit amb vosaltres"
 
 #: havePermissionRequestsWaitingForApproval
 msgid "You have {0} permission request(s) waiting for approval."
-msgstr "Teniu {0} peticions de permís esperant l''aprovació."
+msgstr "Teniu {0} peticions de permís esperant l’aprovació."
 
 #: clickHereForDetails
 msgid "Click here for details."
@@ -1118,7 +1117,7 @@ msgstr "Feu clic aquí per a obtenir més detalls."
 
 #: resourceIsNotBeingShared
 msgid "The resource is not being shared"
-msgstr "El recurs no s''està compartint"
+msgstr "El recurs no s’està compartint"
 
 #.
 #. Applications
@@ -1129,7 +1128,7 @@ msgstr "Nom"
 
 #: applicationType
 msgid "Application Type"
-msgstr "Tipus d''aplicació"
+msgstr "Tipus d’aplicació"
 
 #: applicationInUse
 msgid "In-use app only"
@@ -1165,7 +1164,7 @@ msgstr "Resultats"
 
 #: clientNotFoundMessage
 msgid "Client not found."
-msgstr "No s''ha trobat el client."
+msgstr "No s’ha trobat el client."
 
 #.
 #. Linked account
@@ -1179,12 +1178,12 @@ msgstr "Proveïdors autoritzats enllaçats amb el vostre compte"
 
 #: identityProvider
 msgid "Identity Provider"
-msgstr "Proveïdor d''identitat"
+msgstr "Proveïdor d’identitat"
 
 #: identityProviderMessage
 msgid "To link your account with identity providers you have configured"
 msgstr ""
-"Per a enllaçar el vostre compte amb els proveïdors d''identitat que heu "
+"Per a enllaçar el vostre compte amb els proveïdors d’identitat que heu "
 "configurat"
 
 #: socialLogin
@@ -1193,24 +1192,24 @@ msgstr "Identificació social"
 
 #: userDefined
 msgid "User Defined"
-msgstr "Definit per l''usuari"
+msgstr "Definit per l’usuari"
 
 #: removeAccess
 msgid "Remove Access"
-msgstr "Elimina l''accés"
+msgstr "Elimina l’accés"
 
 #: removeAccessMessage
 msgid ""
 "You will need to grant access again, if you want to use this app account."
 msgstr ""
-"Haureu de tornar a concedir l''accés de nou si voleu utilitzar el compte "
-"d''aquesta aplicació."
+"Haureu de tornar a concedir l’accés de nou si voleu utilitzar el compte d’"
+"aquesta aplicació."
 
 #.
 #. Authenticator
 #: authenticatorStatusMessage
 msgid "Two-factor authentication is currently"
-msgstr "L''autenticació de doble factor està"
+msgstr "L’autenticació de doble factor està"
 
 #: authenticatorFinishSetUpTitle
 msgid "Your Two-Factor Authentication"
@@ -1222,11 +1221,11 @@ msgid ""
 "a two-factor authentication code."
 msgstr ""
 "Cada vegada que entreu al vostre compte del Keycloak, se us demanarà que "
-"introduïu un codi d''autenticació de doble factor."
+"introduïu un codi d’autenticació de doble factor."
 
 #: authenticatorSubTitle
 msgid "Set Up Two-Factor Authentication"
-msgstr "Configura l''autenticació de doble factor"
+msgstr "Configura l’autenticació de doble factor"
 
 #: authenticatorSubMessage
 msgid ""
@@ -1234,7 +1233,7 @@ msgid ""
 "available two-factor authentication methods."
 msgstr ""
 "Per a millorar la seguretat del vostre compte, habiliteu almenys un dels "
-"mètodes d''autenticació de doble factor."
+"mètodes d’autenticació de doble factor."
 
 #: authenticatorMobileTitle
 msgid "Mobile Authenticator"
@@ -1250,7 +1249,7 @@ msgstr ""
 
 #: authenticatorMobileFinishSetUpMessage
 msgid "The authenticator has been bound to your phone."
-msgstr "S''ha associat l''autenticador al vostre telèfon."
+msgstr "S’ha associat l’autenticador al vostre telèfon."
 
 #: authenticatorActionSetup
 msgid "Set up"
@@ -1270,7 +1269,7 @@ msgstr ""
 
 #: authenticatorSMSFinishSetUpMessage
 msgid "Text messages are sent to"
-msgstr "Els missatges de text s''envien al"
+msgstr "Els missatges de text s’envien al"
 
 #: authenticatorDefaultStatus
 msgid "Default"
@@ -1284,7 +1283,7 @@ msgstr "Canvia el número de telèfon"
 #. Authenticator - Mobile Authenticator setup
 #: authenticatorMobileSetupTitle
 msgid "Mobile Authenticator Setup"
-msgstr "Configuració de l''autenticador mòbil"
+msgstr "Configuració de l’autenticador mòbil"
 
 #: smscodeIntroMessage
 msgid ""
@@ -1297,13 +1296,13 @@ msgid ""
 "Install an authenticator application on your phone. The applications listed "
 "here are supported."
 msgstr ""
-"Instal·leu una aplicació d''autenticació al telèfon. Les aplicacions "
+"Instal·leu una aplicació d’autenticació al telèfon. Les aplicacions "
 "llistades a sota són compatibles."
 
 #: mobileSetupStep2
 msgctxt "mobileSetupStep2"
 msgid "Open the application and scan the barcode:"
-msgstr "Obriu l''aplicació i escanegeu el codi de barres:"
+msgstr "Obriu l’aplicació i escanegeu el codi de barres:"
 
 #: mobileSetupStep3
 msgctxt "mobileSetupStep3"
@@ -1311,8 +1310,8 @@ msgid ""
 "Enter the one-time code provided by the application and click Save to finish "
 "the setup."
 msgstr ""
-"Introduïu el codi d''un sol ús proveït per l''aplicació i feu clic a Desa "
-"per a finalitzar la configuració."
+"Introduïu el codi d’un sol ús proveït per l’aplicació i feu clic a Desa per "
+"a finalitzar la configuració."
 
 #: scanBarCode
 msgid "Want to scan the barcode?"
@@ -1320,7 +1319,7 @@ msgstr "Voleu escanejar el codi de barres?"
 
 #: enterBarCode
 msgid "Enter the one-time code"
-msgstr "Introduïu el codi d''un sol ús"
+msgstr "Introduïu el codi d’un sol ús"
 
 #: doCopy
 msgid "Copy"
@@ -1356,7 +1355,7 @@ msgstr "Introduïu el codi de verificació"
 #. Authenticator - backup Code setup
 #: authenticatorBackupCodesSetupTitle
 msgid "Recovery Authentication Codes Setup"
-msgstr "Configuració dels codis d''autenticació de recuperació"
+msgstr "Configuració dels codis d’autenticació de recuperació"
 
 #: realmName
 msgid "Realm"
@@ -1372,11 +1371,11 @@ msgstr "Imprimeix"
 
 #: generateNewBackupCodes
 msgid "Generate New Recovery Authentication Codes"
-msgstr "Genera codis d''autenticació de recuperació nous"
+msgstr "Genera codis d’autenticació de recuperació nous"
 
 #: backtoAuthenticatorPage
 msgid "Back to Authenticator Page"
-msgstr "Torna a la pàgina de l''autenticador"
+msgstr "Torna a la pàgina de l’autenticador"
 
 #.
 #.
@@ -1399,7 +1398,7 @@ msgstr "Compartit amb"
 
 #: accessPermissions
 msgid "Access Permissions"
-msgstr "Permisos d''accés"
+msgstr "Permisos d’accés"
 
 #: permissionRequests
 msgid "Permission Requests"
@@ -1452,7 +1451,7 @@ msgstr "Els meus permisos"
 
 #: waitingforApproval
 msgid "Waiting for approval"
-msgstr "Esperant l''aprovació"
+msgstr "Esperant l’aprovació"
 
 #: anyPermission
 msgid "Any Permission"
@@ -1462,11 +1461,11 @@ msgstr "Qualsevol permís"
 #. Openshift messages
 #: openshift.scope.user_info
 msgid "User information"
-msgstr "Informació d''usuari"
+msgstr "Informació d’usuari"
 
 #: openshift.scope.user_check-access
 msgid "User access information"
-msgstr "Informació d''accessos d''usuari"
+msgstr "Informació d’accessos d’usuari"
 
 #: openshift.scope.user_full
 msgctxt "openshift.scope.user_full"
@@ -1507,7 +1506,7 @@ msgstr "L’atribut {0} ha de tenir una llargària de, com a màxim, {2}."
 #: error-invalid-email
 msgctxt "error-invalid-email"
 msgid "Invalid email address."
-msgstr "L''adreça de correu electrònic no és vàlida."
+msgstr "L’adreça de correu electrònic no és vàlida."
 
 #: error-invalid-number
 msgid "Invalid number."
@@ -1515,7 +1514,7 @@ msgstr "El nombre no és vàlid."
 
 #: error-number-out-of-range
 msgid "Attribute {0} must be a number between {1} and {2}."
-msgstr "L''atribut {0} ha de ser un número entre {1} i {2}."
+msgstr "L’atribut {0} ha de ser un número entre {1} i {2}."
 
 #: error-number-out-of-range-too-small
 msgid "Attribute {0} must have minimal value of {1}."
@@ -1532,19 +1531,19 @@ msgstr "El valor no és vàlid."
 
 #: error-invalid-uri
 msgid "Invalid URL."
-msgstr "L''URL no és vàlid."
+msgstr "L’URL no és vàlid."
 
 #: error-invalid-uri-scheme
 msgid "Invalid URL scheme."
-msgstr "L''esquema d''URL no és vàlid."
+msgstr "L’esquema d’URL no és vàlid."
 
 #: error-invalid-uri-fragment
 msgid "Invalid URL fragment."
-msgstr "El fragment d''URL no és vàlid."
+msgstr "El fragment d’URL no és vàlid."
 
 #: error-user-attribute-required
 msgid "Please specify attribute {0}."
-msgstr "Especifiqueu l''atribut {0}."
+msgstr "Especifiqueu l’atribut {0}."
 
 #: error-invalid-date
 msgid "Invalid date."
@@ -1556,7 +1555,7 @@ msgstr "El camp {0} és només de lectura."
 
 #: error-username-invalid-character
 msgid "Username contains invalid character."
-msgstr "El nom d''usuari conté un caràcter no vàlid."
+msgstr "El nom d’usuari conté un caràcter no vàlid."
 
 #: error-person-name-invalid-character
 msgid "Name contains invalid character."

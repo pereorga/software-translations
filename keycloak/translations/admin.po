@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:51+0000\n"
+"POT-Creation-Date: 2026-07-20 10:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,11 +43,11 @@ msgstr ""
 
 #: invalidPasswordNotUsernameMessage
 msgid "Invalid password: must not be equal to the username."
-msgstr "La contrasenya no és vàlida: no pot ser igual al nom d''usuari."
+msgstr "La contrasenya no és vàlida: no pot ser igual al nom d’usuari."
 
 #: invalidPasswordNotContainsUsernameMessage
 msgid "Invalid password: Can not contain the username."
-msgstr "La contrasenya no és vàlida: no pot contenir el nom d''usuari."
+msgstr "La contrasenya no és vàlida: no pot contenir el nom d’usuari."
 
 #: invalidPasswordNotEmailMessage
 msgid "Invalid password: must not be equal to the email."
@@ -56,7 +56,7 @@ msgstr "La contrasenya no és vàlida: no pot ser igual al correu electrònic."
 #: invalidPasswordRegexPatternMessage
 msgid "Invalid password: fails to match regex pattern(s)."
 msgstr ""
-"La contrasenya no és vàlida: no coincideix amb els patrons de l''expressió "
+"La contrasenya no és vàlida: no coincideix amb els patrons de l’expressió "
 "regular."
 
 #: invalidPasswordHistoryMessage
@@ -76,30 +76,30 @@ msgstr ""
 
 #: ldapErrorEditModeMandatory
 msgid "Edit Mode is mandatory"
-msgstr "El mode d''edició és requerit"
+msgstr "El mode d’edició és requerit"
 
 #: ldapErrorInvalidCustomFilter
 msgid ""
 "Custom configured LDAP filter does not start with \"(\" or does not end with "
 "\")\"."
 msgstr ""
-"El filtre d''LDAP personalitzat configurat no comença per «(» o no acaba amb "
+"El filtre d’LDAP personalitzat configurat no comença per «(» o no acaba amb "
 "«)»."
 
 #: ldapErrorConnectionTimeoutNotNumber
 msgid "Connection Timeout must be a number"
-msgstr "El temps d''espera de la connexió ha de ser un número"
+msgstr "El temps d’espera de la connexió ha de ser un número"
 
 #: ldapErrorReadTimeoutNotNumber
 msgid "Read Timeout must be a number"
-msgstr "El temps d''espera de la lectura ha de ser un número"
+msgstr "El temps d’espera de la lectura ha de ser un número"
 
 #: ldapErrorMissingClientId
 msgid ""
 "Client ID needs to be provided in config when Realm Roles Mapping is not "
 "used."
 msgstr ""
-"S''ha de proveir un ID de client a la configuració quan el mapatge de rols "
+"S’ha de proveir un ID de client a la configuració quan el mapatge de rols "
 "del domini no està en ús."
 
 #: ldapErrorCantPreserveGroupInheritanceWithUIDMembershipType
@@ -107,7 +107,7 @@ msgid ""
 "Not possible to preserve group inheritance and use UID membership type "
 "together."
 msgstr ""
-"No és possible preservar l''herència de grups i alhora utilitzar el tipus de "
+"No és possible preservar l’herència de grups i alhora utilitzar el tipus de "
 "pertinença UID."
 
 #: ldapErrorCantWriteOnlyForReadOnlyLdap
@@ -128,7 +128,7 @@ msgstr ""
 #: ldapErrorCantEnableUnsyncedAndImportOff
 msgid "Can not disable Importing users when LDAP provider mode is UNSYNCED"
 msgstr ""
-"No es pot inhabilitar la importació d''usuaris quan el mode del proveïdor "
+"No es pot inhabilitar la importació d’usuaris quan el mode del proveïdor "
 "LDAP és «UNSYNCED»"
 
 #: ldapErrorMissingGroupsPathGroup
@@ -142,8 +142,8 @@ msgstr ""
 #: ldapErrorValidatePasswordPolicyAvailableForWritableOnly
 msgid "Validate Password Policy is applicable only with WRITABLE edit mode"
 msgstr ""
-"La política de validació de contrasenyes només és aplicable amb el mode "
-"d''edició «WRITABLE»"
+"La política de validació de contrasenyes només és aplicable amb el mode d’"
+"edició «WRITABLE»"
 
 #: ldapErrorConnectionUrlContainsComma
 msgid ""
@@ -155,7 +155,7 @@ msgstr ""
 
 #: ldapErrorInvalidConnectionUrl
 msgid "Connection URL contains an invalid LDAP URL."
-msgstr "L''URL de connexió conté una URL LDAP invàlida."
+msgstr "L’URL de connexió conté una URL LDAP invàlida."
 
 #: ldapErrorInvalidConnectionUrlScheme
 msgid ""
@@ -167,27 +167,29 @@ msgstr ""
 
 #: clientRedirectURIsFragmentError
 msgid "A redirect URI must not contain an URL fragment"
-msgstr "Els URI de redirecció no han de contenir un fragment d''URL"
+msgstr "Un URI de redirecció no ha de contenir un fragment d’URL"
 
 #: clientPostLogoutRedirectURIsFragmentError
 msgid "A post-logout redirect URI must not contain an URL fragment"
 msgstr ""
+"Un URI de redirecció post-tancament de sessió no ha de contenir un fragment "
+"d’URL"
 
 #: clientRootURLFragmentError
 msgid "Root URL must not contain an URL fragment"
-msgstr "L''URL arrel no ha de contenir un fragment d''URL"
+msgstr "L’URL arrel no ha de contenir un fragment d’URL"
 
 #: clientRootURLIllegalSchemeError
 msgid "Root URL uses an illegal scheme"
-msgstr "L''URL arrel utilitza un esquema il·legal"
+msgstr "L’URL arrel utilitza un esquema il·legal"
 
 #: clientBaseURLIllegalSchemeError
 msgid "Base URL uses an illegal scheme"
-msgstr "L''URL base utilitza un esquema il·legal"
+msgstr "L’URL base utilitza un esquema il·legal"
 
 #: backchannelLogoutUrlIllegalSchemeError
 msgid "Backchannel logout URL uses an illegal scheme"
-msgstr "L''URL de desconnexió del canal posterior utilitza un esquema il·legal"
+msgstr "L’URL de desconnexió del canal posterior utilitza un esquema il·legal"
 
 #: clientRedirectURIsIllegalSchemeError
 msgid "A redirect URI uses an illegal scheme"
@@ -196,14 +198,15 @@ msgstr "Un URI de redirecció utilitza un esquema il·legal"
 #: clientPostLogoutRedirectURIsIllegalSchemeError
 msgid "A post-logout redirect URI uses an illegal scheme"
 msgstr ""
+"Un URI de redirecció post-tancament de sessió utilitza un esquema il·legal"
 
 #: clientBaseURLInvalid
 msgid "Base URL is not a valid URL"
-msgstr "L''URL base no és un URL vàlid"
+msgstr "L’URL base no és un URL vàlid"
 
 #: clientRootURLInvalid
 msgid "Root URL is not a valid URL"
-msgstr "L''URL arrel no és un URL vàlid"
+msgstr "L’URL arrel no és un URL vàlid"
 
 #: clientRedirectURIsInvalid
 msgid "A redirect URI is not a valid URI"
@@ -211,11 +214,11 @@ msgstr "Un URI de redirecció no és un URI vàlid"
 
 #: clientPostLogoutRedirectURIsInvalid
 msgid "A post-logout redirect URI is not a valid URI"
-msgstr ""
+msgstr "Un URI de redirecció post-tancament de sessió no és un URI vàlid"
 
 #: backchannelLogoutUrlIsInvalid
 msgid "Backchannel logout URL is not a valid URL"
-msgstr "L''URL de desconnexió del canal posterior no és un URL vàlid"
+msgstr "L’URL de desconnexió del canal posterior no és un URL vàlid"
 
 #: pairwiseMalformedClientRedirectURI
 msgid "Client contained an invalid redirect URI."
@@ -232,18 +235,18 @@ msgid ""
 "Without a configured Sector Identifier URI, client redirect URIs must not "
 "contain multiple host components."
 msgstr ""
-"Sense un URI d''identificador de sector, els URI de redirecció de client no "
+"Sense un URI d’identificador de sector, els URI de redirecció de client no "
 "poden contenir múltiples components de servidor."
 
 #: pairwiseMalformedSectorIdentifierURI
 msgid "Malformed Sector Identifier URI."
-msgstr "L''URI d''identificador de sector està mal formatat."
+msgstr "L’URI d’identificador de sector està mal formatat."
 
 #: pairwiseFailedToGetRedirectURIs
 msgid "Failed to get redirect URIs from the Sector Identifier URI."
 msgstr ""
-"No s''ha pogut obtenir cap URI de redirecció des de l''URI d''identificador "
-"de sector."
+"No s’ha pogut obtenir cap URI de redirecció des de l’URI d’identificador de "
+"sector."
 
 #: pairwiseRedirectURIsMismatch
 msgid ""
@@ -251,7 +254,7 @@ msgid ""
 "Identifier URI."
 msgstr ""
 "Els URI de redirecció de client no concorden amb els URI de redirecció "
-"obtinguts des de l''URI d''identificador de sector."
+"obtinguts des de l’URI d’identificador de sector."
 
 #: duplicatedJwksSettings
 msgid ""
@@ -313,19 +316,19 @@ msgstr "Especifiqueu un valor."
 
 #: error-invalid-length
 msgid "Attribute {0} must have a length between {1} and {2}."
-msgstr "L''atribut {0} ha de tenir una llargària d''entre {1} i {2}."
+msgstr "L’atribut {0} ha de tenir una llargària d’entre {1} i {2}."
 
 #: error-invalid-length-too-short
 msgid "Attribute {0} must have minimal length of {1}."
-msgstr "L''atribut {0} ha de tenir una llargària de, com a mínim, {1}."
+msgstr "L’atribut {0} ha de tenir una llargària de, com a mínim, {1}."
 
 #: error-invalid-length-too-long
 msgid "Attribute {0} must have maximal length of {2}."
-msgstr "L''atribut {0} ha de tenir una llargària de, com a màxim, {2}."
+msgstr "L’atribut {0} ha de tenir una llargària de, com a màxim, {2}."
 
 #: error-invalid-email
 msgid "Invalid email address."
-msgstr "L''adreça de correu electrònic no és vàlida."
+msgstr "L’adreça de correu electrònic no és vàlida."
 
 #: error-invalid-number
 msgid "Invalid number."
@@ -333,15 +336,15 @@ msgstr "El nombre no és vàlid."
 
 #: error-number-out-of-range
 msgid "Attribute {0} must be a number between {1} and {2}."
-msgstr "L''atribut {0} ha de ser un número entre {1} i {2}."
+msgstr "L’atribut {0} ha de ser un número entre {1} i {2}."
 
 #: error-number-out-of-range-too-small
 msgid "Attribute {0} must have minimal value of {1}."
-msgstr "L''atribut {0} ha de tenir un valor de, com a mínim, {1}."
+msgstr "L’atribut {0} ha de tenir un valor de, com a mínim, {1}."
 
 #: error-number-out-of-range-too-big
 msgid "Attribute {0} must have maximal value of {2}."
-msgstr "L''atribut {0} ha de tenir un valor de, com a màxim, {2}."
+msgstr "L’atribut {0} ha de tenir un valor de, com a màxim, {2}."
 
 #: error-pattern-no-match
 msgctxt "error-pattern-no-match"
@@ -350,27 +353,27 @@ msgstr "El valor no és vàlid."
 
 #: error-invalid-uri
 msgid "Invalid URL."
-msgstr "L''URL no és vàlid."
+msgstr "L’URL no és vàlid."
 
 #: error-invalid-uri-scheme
 msgid "Invalid URL scheme."
-msgstr "L''esquema d''URL no és vàlid."
+msgstr "L’esquema d’URL no és vàlid."
 
 #: error-invalid-uri-fragment
 msgid "Invalid URL fragment."
-msgstr "El fragment d''URL no és vàlid."
+msgstr "El fragment d’URL no és vàlid."
 
 #: error-user-attribute-required
 msgid "Please specify attribute {0}."
-msgstr "Especifiqueu l''atribut {0}."
+msgstr "Especifiqueu l’atribut {0}."
 
 #: error-invalid-date
 msgid "Attribute {0} is invalid date."
-msgstr "L''atribut {0} és una data invàlida."
+msgstr "L’atribut {0} és una data invàlida."
 
 #: error-user-attribute-read-only
 msgid "Attribute {0} is read only."
-msgstr "L''atribut {0} és només de lectura."
+msgstr "L’atribut {0} és només de lectura."
 
 #: error-username-invalid-character
 msgctxt "error-username-invalid-character"
@@ -393,6 +396,168 @@ msgstr ""
 #: error-non-ascii-local-part-email
 msgid "Local part of the address must contain only ASCII characters."
 msgstr "La part local de l’adreça ha de contenir només caràcters ASCII."
+
+#: workflowSingleRestartStepOnly
+msgid "Workflow can have only one restart step."
+msgstr ""
+
+#: workflowRestartStepMustBeLast
+msgid "Workflow restart step must be the last step."
+msgstr ""
+
+#: workflowRestartStepInvalidPosition
+msgid "Workflow restart step has invalid position: {0}."
+msgstr ""
+
+#: workflowNoScheduledStepAtPosition
+msgid "No scheduled step found if restarting at position {0}."
+msgstr ""
+
+#: workflowInvalidType
+msgid "Invalid workflow type: {0}."
+msgstr ""
+
+#: workflowConditionTypesIncompatible
+msgid ""
+"Provided condition types ({0}) are not compatible with workflow type ({1})."
+msgstr ""
+
+#: workflowStepUsesRequired
+msgid "Step ''uses'' cannot be null or empty."
+msgstr ""
+
+#: workflowStepAfterNegative
+msgid "Step ''after'' configuration cannot be negative."
+msgstr ""
+
+#: workflowStepAfterInvalid
+msgid "Step ''after'' configuration is not valid: {0}."
+msgstr ""
+
+#: workflowStepProviderNotFound
+msgid "Could not find step provider: {0}."
+msgstr ""
+
+#: workflowNameEmpty
+msgid "Workflow name cannot be null or empty."
+msgstr ""
+
+#: workflowNameDuplicate
+msgid ""
+"Workflow name must be unique. A workflow with name ''{0}'' already exists."
+msgstr ""
+
+#: workflowCannotUpdateOnWithScheduled
+msgid ""
+"Cannot update ''on'' configuration when there are scheduled resources for "
+"the workflow."
+msgstr ""
+
+#: workflowCannotUpdateSupports
+msgid "Cannot update ''supports'' configuration."
+msgstr ""
+
+#: workflowCannotChangeStepsWithScheduled
+msgid ""
+"Cannot change the number or order of steps when there are scheduled "
+"resources for the workflow."
+msgstr ""
+
+#: workflowMigrateDifferentTypes
+msgid ""
+"Cannot migrate scheduled resources between workflows that support different "
+"resource types."
+msgstr ""
+
+#: workflowMigrateConditionsNotMet
+msgid ""
+"Cannot migrate resource {0} to workflow {1} as it does not satisfy the "
+"workflow''s activation conditions."
+msgstr ""
+
+#: workflowResourceTypeNotSupported
+msgid ""
+"Resource type ''{0}'' is not supported for this workflow (supports {1})."
+msgstr ""
+
+#: workflowInvalidResource
+msgid "Not a valid workflow resource: {0}."
+msgstr ""
+
+#: workflowStepsIncompatible
+msgid "Steps provided are not compatible with each other."
+msgstr ""
+
+#: workflowStepsSingleTypeRequired
+msgid "Steps provided should support a single type, actual: {0}."
+msgstr ""
+
+#: workflowNotFoundById
+msgid "Workflow with id ''{0}'' not found."
+msgstr ""
+
+#: workflowResourceNotFound
+msgid "Resource with id {0} not found."
+msgstr ""
+
+#: workflowMigrateStepIdsRequired
+msgid "Both ''from'' and ''to'' step ids must be provided for migration."
+msgstr ""
+
+#: workflowProviderFactoryNotFound
+msgid "Could not find provider factory with id: {0}."
+msgstr ""
+
+#: workflowConditionRoleNotSet
+msgid "Expected role name not set."
+msgstr ""
+
+#: workflowConditionRoleNotFound
+msgid "Role with name {0} does not exist."
+msgstr ""
+
+#: workflowConditionGroupNotSet
+msgid "Expected group path not set."
+msgstr ""
+
+#: workflowConditionGroupNotFound
+msgid "Group with name {0} does not exist."
+msgstr ""
+
+#: workflowConditionIdpNotSet
+msgid "Expected identity provider alias is not set."
+msgstr ""
+
+#: workflowConditionIdpNotFound
+msgid "Identity provider {0} does not exist."
+msgstr ""
+
+#: workflowConditionAttributeNotSet
+msgid "Expected ''key:value'' pair is not set."
+msgstr ""
+
+#: workflowConditionAttributeInvalid
+msgid "Error reading key-value pair {0}. Expected format ''key:value''."
+msgstr ""
+
+#: workflowExpressionEmpty
+msgid "Expression cannot be null or empty."
+msgstr ""
+
+#: workflowExpressionMaxLength
+msgid "Expression exceeds maximum allowed length of {0} characters."
+msgstr ""
+
+#: workflowExpressionMaxDepth
+msgid "Expression exceeds maximum allowed nesting depth of {0}."
+msgstr ""
+
+#: workflowExpressionInvalid
+msgid ""
+"Invalid expression: {0}\n"
+"Error details:\n"
+"{1}"
+msgstr ""
 
 #: client_account
 msgid "Account"
