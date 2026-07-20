@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:51+0000\n"
+"POT-Creation-Date: 2026-07-20 10:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -265,7 +265,7 @@ msgstr "Cancel·la"
 
 #: BUTTON_CLOSE
 msgid "Close"
-msgstr ""
+msgstr "Tanca"
 
 #: BUTTON_SAVE
 msgid "Save"
@@ -535,9 +535,9 @@ msgstr "Selecciona un dispositiu de buidatge"
 msgid "Browse"
 msgstr "Navega"
 
-#: NETWORK
-msgid "Network"
-msgstr "Xarxa"
+#: STREAMS
+msgid "Streams"
+msgstr "Fluxos de dades"
 
 #: LOCAL_NETWORK
 msgid "Local Network"
@@ -835,7 +835,7 @@ msgstr "Posició de reproducció"
 
 #: PLAYBACK_LIVE_STREAM
 msgid "LIVE"
-msgstr ""
+msgstr "EN DIRECTE"
 
 #: VIDEO_FILTER
 msgid "Video Filters"
@@ -1135,7 +1135,7 @@ msgstr "No s'han trobat subtítols per al vostre element multimèdia \"%@\"."
 
 #: LOAD_EXTERNAL
 msgid "Load External"
-msgstr ""
+msgstr "Càrrega externa..."
 
 #: REPEAT_MODE
 msgid "Repeat"
@@ -1164,10 +1164,6 @@ msgstr ""
 #: UPNP_LONG
 msgid "Universal Plug'n'Play (UPnP)"
 msgstr "Plug'n'Play Universal (UPnP)"
-
-#: WEBDAV_SHORT
-msgid "WebDAV"
-msgstr ""
 
 #: DSM_WORKGROUP
 msgid "Workgroup"
@@ -1277,7 +1273,11 @@ msgstr "Llistes de reproducció"
 
 #: PLAYLIST
 msgid "Playlist"
-msgstr ""
+msgstr "LLista de reproducció"
+
+#: FOLDERS
+msgid "Folders"
+msgstr "Carpetes"
 
 #: VIDEO_GROUPS
 msgid "Video groups"
@@ -1287,6 +1287,10 @@ msgstr "Grups de vídeos"
 msgctxt "HISTORY"
 msgid "History"
 msgstr "Historial"
+
+#: MEDIA_LIBRARY_LABEL
+msgid "Library"
+msgstr "Biblioteca"
 
 #: MODIFIED_DATE
 msgid "Modified date"
@@ -1549,6 +1553,10 @@ msgstr "Identificador de la pista"
 #: CUSTOM
 msgid "Custom"
 msgstr "Personalitzat"
+
+#: TRACK_NB_RELEASE_YEAR
+msgid "Track Number, Albums by release date"
+msgstr "Número de pista, àlbums per data de llançament"
 
 #.
 #. MARK: - VLCNetworkLoginTVViewController
@@ -2371,9 +2379,8 @@ msgid ""
 "STRINGS\"DELETE_SINGLE_TITLE\" = \"Delete \"%@\"?"
 msgstr ""
 "Introduïu un número vàlid entre 0.25 i 8.0\"; /* Please enter a valid number "
-"between 0.25 and 8.0 */// MARK: - "
-"TitleSelection\"TITLESELECTION_BACKGROUND_LABEL\" = \"Fons de selecció de "
-"títols"
+"between 0.25 and 8.0 */// MARK: - TitleSelection// MARK: - NEW DELETE "
+"STRINGS\"DELETE_SINGLE_TITLE\" = \"Voleu suprimir \"%@\"?"
 
 #: DELETE_MULTIPLE_TITLE
 msgid "Delete \"%@\" and %d others?"
@@ -2431,10 +2438,6 @@ msgstr "Última reproducció"
 
 #.
 #. MARK - something with folders
-#: BUTTON_FOLDER
-msgid "Folders"
-msgstr "Carpetes"
-
 #: BUTTON_FOLDER_HINT
 msgid "Browse your folders"
 msgstr "Exploreu les vostres carpetes"
@@ -2447,11 +2450,15 @@ msgstr "Carpeta buida"
 msgid ""
 "We couldn't find any videos here. This folder may still contain audio files."
 msgstr ""
+"No hem trobat cap vídeo aquí. Aquesta carpeta encara pot contenir fitxers "
+"d'àudio."
 
 #: EMPTY_FOLDER_DES_AUDIO
 msgid ""
 "We couldn't find any audio files here. This folder may still contain videos."
 msgstr ""
+"No hem trobat cap fitxer d'àudio aquí. Aquesta carpeta encara pot contenir "
+"vídeos."
 
 #: SUBFOLDERS_DESCRIPTION
 msgid "%d subfolders"
@@ -2459,49 +2466,45 @@ msgstr "%d subcarpetes"
 
 #: ACCESSIBILITY_SELECTED
 msgid "selected"
-msgstr ""
+msgstr "seleccionat"
 
 #: TRACK_SELECTOR_OFF
 msgctxt "TRACK_SELECTOR_OFF"
 msgid "Off"
-msgstr ""
+msgstr "Desactivat"
 
 #: TRACK_INDEX_FORMAT
 msgid "Track %d"
-msgstr ""
-
-#: AUDIO_CHANNELS_MONO
-msgid "Mono"
-msgstr ""
+msgstr "Pista %d"
 
 #: AUDIO_CHANNELS_STEREO
 msgid "Stereo"
-msgstr ""
+msgstr "Estèreo"
 
 #: AUDIO_CHANNELS_FORMAT
 msgid "%u channels"
-msgstr ""
+msgstr "%u canals"
 
 #: SECOND_SUBTITLE
 msgid "Second Subtitle"
-msgstr ""
+msgstr "Subtítol segon"
 
 #: SYNC
 msgid "Sync"
-msgstr ""
+msgstr "Sincronitza"
 
 #: DELAY_FORMAT
 msgid "Delay %@ s"
-msgstr ""
+msgstr "Retard %@ s"
 
 #: NO_DELAY
 msgid "No delay"
-msgstr ""
+msgstr "Sense retard"
 
 #: SUBTITLE_ASSIGN_PRIMARY
 msgid "Assign primary subtitle"
-msgstr ""
+msgstr "Assigna el subtítol principal"
 
 #: SUBTITLE_ASSIGN_SECONDARY
 msgid "Assign secondary subtitle"
-msgstr ""
+msgstr "Assigna el subtítol secundari"
