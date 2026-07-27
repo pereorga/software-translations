@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-20 10:42+0000\n"
+"POT-Creation-Date: 2026-07-27 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,6 +90,7 @@ msgstr "Color de fons"
 
 #: actions_configurator.rows.icon.title
 msgctxt "actions_configurator.rows.icon.title"
+"actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
 "actions_configurator.rows.icon.title"
@@ -769,11 +770,6 @@ msgstr "Surt de l'aplicació"
 msgid "Database Error"
 msgstr "Error de base de dades"
 
-#: debug_section_label
-msgctxt "debug_section_label"
-msgid "Debug"
-msgstr "Depurar"
-
 #: delete
 msgctxt "delete"
 "delete"
@@ -900,33 +896,6 @@ msgstr "Reordena"
 msgctxt "home_view.menu.settings"
 msgid "Settings"
 msgstr "Configuració"
-
-#: kiosk.screensaver.wake_on_camera_motion
-msgid "Wake on camera motion"
-msgstr ""
-
-#: kiosk.screensaver.wake_on_camera_motion_footer
-msgid ""
-"Uses the front camera to detect motion: the screensaver won't start while "
-"motion is ongoing, and is dismissed when motion is detected. The camera "
-"stays active the whole time kiosk mode runs with this option on."
-msgstr ""
-
-#: live_activity.sample.progress_direction.note
-msgid ""
-"progress_bar_direction: decreasing flips the bar's fill: it shows what "
-"remains (progress_max − progress) and drains as progress rises. Percent text "
-"still shows the raw progress value. Also works on timer bars, e.g. "
-"increasing makes a countdown fill up instead of drain."
-msgstr ""
-
-#: live_activity.sample.progress_direction.summary
-msgid "A progress bar that drains instead of fills."
-msgstr ""
-
-#: live_activity.sample.progress_direction.title
-msgid "Battery · Decreasing Bar"
-msgstr ""
 
 #: location_change_notification.app_shortcut.body
 msgid "Location updated via App Shortcut"
@@ -1705,60 +1674,13 @@ msgstr "Ocult"
 msgid "Time Until Idle"
 msgstr "Temps fins que estigui inactiu"
 
-#: sensors.camera.frame_rate_warning
-msgid ""
-"Higher frame rates may impact performance and make the device run hotter."
-msgstr ""
-
-#: sensors.camera_motion.setting.changed_area_threshold
-msgid "Changed area threshold"
-msgstr ""
-
-#: sensors.camera_motion.setting.clear_delay
-msgid "Clear delay"
-msgstr ""
-
-#: sensors.camera_motion.setting.frame_rate
-msgctxt "sensors.camera_motion.setting.frame_rate"
-msgid "Frame rate"
-msgstr ""
-
-#: sensors.camera_stream.footer
+#: sensors.camera_stream.detail_footer
 msgid ""
 "To watch this camera in Home Assistant, add the “MJPEG IP Camera” "
 "integration and use the stream URL above. The stream is plain HTTP with no "
-"encryption; set a username and password below to require authentication, "
-"otherwise anyone on your local network can view it. It is only available "
-"while the app is open in the foreground."
-msgstr ""
-
-#: sensors.camera_stream.setting.credentials_footer
-msgid ""
-"Leave both blank to allow anyone on your network to view the stream. When "
-"set, configure the MJPEG integration in Home Assistant with the same "
-"username and password."
-msgstr ""
-
-#: sensors.camera_stream.setting.credentials_placeholder
-msgid "Optional"
-msgstr ""
-
-#: sensors.camera_stream.setting.frame_rate
-msgctxt "sensors.camera_stream.setting.frame_rate"
-msgid "Frame rate"
-msgstr ""
-
-#: sensors.camera_stream.setting.password
-msgctxt "sensors.camera_stream.setting.password"
-msgid "Password"
-msgstr ""
-
-#: sensors.camera_stream.setting.stream_port
-msgid "Stream port"
-msgstr ""
-
-#: sensors.camera_stream.setting.username
-msgid "Username"
+"encryption; set a username and password in the settings above to require "
+"authentication, otherwise anyone on your local network can view it. It is "
+"only available while the app is open in the foreground."
 msgstr ""
 
 #: sensors.geocoded_location.setting.use_zones
@@ -2840,6 +2762,7 @@ msgid "Automatically Check for Updates"
 msgstr "Comprovar automàticament si hi ha actualitzacions"
 
 #: settings_sensors.detail.attributes
+msgctxt "settings_sensors.detail.attributes"
 msgid "Attributes"
 msgstr "Atributs"
 
