@@ -405,7 +405,7 @@ msgstr "{maxCount,number}+"
 
 msgctxt "icu:LeftPaneChatFolders__ItemUnreadBadge__AccessibleLabel"
 msgid "{count, plural, one {# Unread Message} other {# Unread Messages}}"
-msgstr "{count, plural, one {{count,number} Unread Message} other {{count,number} Unread Messages}}"
+msgstr "{count, plural, one {{count,number} missatge sense llegir} other {{count,number} missatges sense llegir}}"
 
 msgctxt "icu:LeftPaneChatFolders__Item__ContextMenu__MarkAllRead"
 msgid "Mark all read"
@@ -3691,6 +3691,22 @@ msgctxt "icu:stickers--StickerManagerPackContextMenu--Remove"
 msgid "Remove"
 msgstr "Eliminar"
 
+msgctxt "icu:stickers--StickerManagerPackDragHandle--Label"
+msgid "Drag to reorder sticker pack"
+msgstr "Arrossega per reordenar el paquet d'stickers"
+
+msgctxt "icu:stickers--StickerManagerBlessedPacksList--Label"
+msgid "Signal Artist Series sticker packs"
+msgstr "Paquets d'stickers d'artistes de Signal"
+
+msgctxt "icu:stickers--StickerManagerReceivedPacksList--Label"
+msgid "Received sticker packs"
+msgstr "Paquets d'stickers rebuts"
+
+msgctxt "icu:stickers--StickerManagerInstalledPacksList--Label"
+msgid "Installed sticker packs"
+msgstr "Paquets d'stickers instal·lats"
+
 msgctxt "icu:stickers--StickerPreview--Title"
 msgid "Sticker Pack"
 msgstr "Paquet d'adhesius"
@@ -4010,6 +4026,22 @@ msgstr "Afegir un Emoji"
 msgctxt "icu:FunButton__Label--StickerPicker"
 msgid "Add a Sticker"
 msgstr "Afegiu-hi un adhesiu"
+
+msgctxt "icu:FunPicker__Label--StickerReply"
+msgid "Reply"
+msgstr "Respon"
+
+msgctxt "icu:FunPicker__Label--SendStickerReply"
+msgid "Send"
+msgstr "Envia"
+
+msgctxt "icu:FunPicker__Label--CancelStickerReply"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:FunPicker__Label--Sticker"
+msgid "Sticker"
+msgstr "Adhesiu"
 
 msgctxt "icu:confirmation-dialog--Cancel"
 msgid "Cancel"
@@ -9135,6 +9167,10 @@ msgctxt "icu:StandaloneRegistration--VerifyPIN--incorrect-pin--with-count"
 msgid "Incorrect PIN. {triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}."
 msgstr "{triesRemaining, plural, one {PIN incorrecte. Us resta {triesRemaining,number} intent.} other {PIN incorrecte. Us resten {triesRemaining,number} intents.}}"
 
+msgctxt "icu:StandaloneRegistration--VerifyPIN--just-count"
+msgid "{triesRemaining, plural, one {# attempt remaining} other {# attempts remaining}}."
+msgstr "{triesRemaining, plural, one {{triesRemaining,number} attempt remaining.} other {{triesRemaining,number} attempts remaining.}}"
+
 msgctxt "icu:StandaloneRegistration--VerifyPIN--NeedHelp--header"
 msgid "Need help?"
 msgstr "Us cal ajuda?"
@@ -9198,10 +9234,6 @@ msgstr "Ometre PIN"
 msgctxt "icu:StandaloneRegistration--VerifyPIN--SkipPIN--header"
 msgid "Skip PIN entry?"
 msgstr "Voleu ometre l'entrada del PIN?"
-
-msgctxt "icu:StandaloneRegistration--VerifyPIN--SkipPIN--description"
-msgid "If you can’t remember your PIN, you can create a new one. You can register and use your account but you’ll lose some saved settings like your profile information. Learn more."
-msgstr "Si no recordes el teu PIN, pots crear-ne un de nou. Pots registrar-te i utilitzar el teu compte, però perdràs alguns dels teus ajustos, com ara la informació del perfil. Més informació"
 
 msgctxt "icu:StandaloneRegistration--VerifyPIN--SkipPIN--skip-button"
 msgid "Skip and create new PIN"
@@ -11330,3 +11362,11 @@ msgstr "A partir d'ara, també podràs crear enquestes als xats individuals."
 msgctxt "icu:WhatsNew__8.19--0"
 msgid "Group admins can now bring chats to their natural conclusion with the new \"End Group\" option in group settings. Ending a group prevents group members from sending messages or starting calls, and also disables invites. Now you can make sure everyone stays on the right thread by ending last year's sewing meetup group before stitching a new one together."
 msgstr "Ara, els admins de grup poden finalitzar els xats amb la nova opció \"Tancar grup\" als ajustos del grup. Tancar un grup evita que els seus membres puguin enviar missatges o iniciar trucades. També desactiva les invitacions al grup."
+
+msgctxt "icu:WhatsNew__8.20--0"
+msgid "Introducing disappearing call events: Missed, outgoing, and received calls that occur after you install this update will now automatically disappear in any chat where disappearing messages are enabled."
+msgstr "Arriben les trucades a desaparèixer: totes les trucades que facis o rebis després d'instal·lar aquesta actualització desapareixeran de qualsevol xat en què estiguin habilitats els missatges a desaparèixer."
+
+msgctxt "icu:WhatsNew__8.20--1"
+msgid "Now you can reorder installed sticker packs so your new favorites don’t get stuck in the back of the line."
+msgstr "Ara pots ordenar els paquets d'stickers que tinguis instal·lats com vulguis i tenir sempre els teus stickers preferits a mà."
