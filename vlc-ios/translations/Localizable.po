@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-20 10:43+0000\n"
+"POT-Creation-Date: 2026-07-27 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -511,6 +511,36 @@ msgstr "Cap aplicació per a obrir aquest tipus d'arxiu"
 msgid "File was successfully saved to the Camera Roll"
 msgstr "L'arxiu s'ha guardat satisfactòriament en el Rodet"
 
+#: COUNTRIES
+msgid "Countries"
+msgstr ""
+
+#: ALL_COUNTRIES
+msgid "All Countries"
+msgstr ""
+
+#: SEE_ALL
+msgid "See All"
+msgstr ""
+
+#: STATION_COUNT
+msgid "%lu stations"
+msgstr ""
+
+#: RADIO_COUNTRIES_LOADING_FAILED
+msgid ""
+"Couldn't load the list of countries. Please check your connection and try "
+"again."
+msgstr ""
+
+#: RADIO_STATIONS_LOADING_FAILED
+msgid "Couldn't load the stations. Please check your connection and try again."
+msgstr ""
+
+#: BUTTON_RETRY
+msgid "Retry"
+msgstr ""
+
 #: FAVORITEVC_DETAILTEXT
 msgid "See your favorite folders"
 msgstr "Visualitzar les vostres carpetes preferides"
@@ -576,7 +606,7 @@ msgid "Last Updated on %@"
 msgstr "Darrera actualització de %@"
 
 #: LOCAL_SERVER_CONNECTION_FAILED_TITLE
-msgid "SERVER CONNECTION FAILED"
+msgid "Connection to server failed"
 msgstr "Ha fallat la connexió al servidor"
 
 #: LOCAL_SERVER_CONNECTION_FAILED_MESSAGE
@@ -1237,6 +1267,7 @@ msgid "Search"
 msgstr "Cerca"
 
 #: VIDEO
+msgctxt "VIDEO"
 msgid "Video"
 msgstr "Vídeo"
 
@@ -1357,6 +1388,7 @@ msgid "Confirm clearing history"
 msgstr "Confirmeu el buidatge de l'historial"
 
 #: ADD_TO_PLAYLIST
+msgctxt "ADD_TO_PLAYLIST"
 msgid "Add to Playlist"
 msgstr "Afegeix a la llista de reproducció"
 
@@ -1950,10 +1982,7 @@ msgstr ""
 "Activa per reproduir automàticament el següent contingut multimèdia d'una "
 "llista de reproducció"
 
-#: SETTINGS_DOCUMENTATION
-msgid "Documentation"
-msgstr "Documentació"
-
+#.
 #.
 #. MARK: - Local Network
 #: SMBV1_WARN_TITLE
@@ -2401,6 +2430,110 @@ msgid "Play ${mediaName} in the background"
 msgstr "Reprodueix ${mediaName} al fons"
 
 #.
+#. MARK: - Audio App Intent Strings
+#: APPINTENT_ERROR_NO_MEDIA
+msgid "No matching media was found in your library."
+msgstr ""
+
+#: APPINTENT_ERROR_PLAYLIST_UPDATE
+msgid "The playlist could not be updated."
+msgstr ""
+
+#: APPINTENT_AFFINITY_FAVORITE
+msgctxt "APPINTENT_AFFINITY_FAVORITE"
+msgid "Favorite"
+msgstr ""
+
+#: APPINTENT_AFFINITY_NOT_FAVORITE
+msgid "Not a Favorite"
+msgstr ""
+
+#: APPINTENT_AFFINITY_UNSET
+msgid "Unset"
+msgstr ""
+
+#.
+#. MARK: - Video App Intent Strings
+#: APPINTENT_PLAY_VIDEO_TITLE
+msgctxt "APPINTENT_PLAY_VIDEO_TITLE"
+msgid "Play Video"
+msgstr ""
+
+#: APPINTENT_PLAY_VIDEO_DESCRIPTION
+msgid "Play a video from your library."
+msgstr ""
+
+#: APPINTENT_PLAY_VIDEO_PARAM
+msgctxt "APPINTENT_PLAY_VIDEO_PARAM"
+msgid "Video"
+msgstr ""
+
+#: APPINTENT_PLAY_VIDEO_PLAY_%24%7Bvideo%7D
+msgid "Play ${video}"
+msgstr ""
+
+#.
+#. MARK: - AppShortcut Strings
+#: APPSHORTCUT_PLAY_MEDIA_SHORT_TITLE
+msgid "Play Media"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_MEDIA_PHRASE_PLAY_%24%7BapplicationName%7D
+msgid "Play media in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_MEDIA_PHRASE_PLAYLIST_%24%7BapplicationName%7D
+msgid "Play a playlist in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_MEDIA_PHRASE_START_%24%7BapplicationName%7D
+msgid "Start playback in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_AUDIO_SHORT_TITLE
+msgid "Play Audio"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_AUDIO_PHRASE_PLAY_%24%7BapplicationName%7D
+msgid "Play audio in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_AUDIO_PHRASE_SONG_%24%7BapplicationName%7D
+msgid "Play a song in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_VIDEO_SHORT_TITLE
+msgctxt "APPSHORTCUT_PLAY_VIDEO_SHORT_TITLE"
+msgid "Play Video"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_VIDEO_PHRASE_PLAY_%24%7BapplicationName%7D
+msgid "Play a video in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_PLAY_VIDEO_PHRASE_WATCH_%24%7BapplicationName%7D
+msgid "Watch a video in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_ADD_TO_PLAYLIST_SHORT_TITLE
+msgctxt "APPSHORTCUT_ADD_TO_PLAYLIST_SHORT_TITLE"
+msgid "Add to Playlist"
+msgstr ""
+
+#: APPSHORTCUT_ADD_TO_PLAYLIST_PHRASE_%24%7BapplicationName%7D
+msgid "Add a song to a playlist in ${applicationName}"
+msgstr ""
+
+#: APPSHORTCUT_UPDATE_AFFINITY_SHORT_TITLE
+msgctxt "APPSHORTCUT_UPDATE_AFFINITY_SHORT_TITLE"
+msgid "Favorite"
+msgstr ""
+
+#: APPSHORTCUT_UPDATE_AFFINITY_PHRASE_%24%7BapplicationName%7D
+msgid "Favorite audio in ${applicationName}"
+msgstr ""
+
+#.
 #. MARK: - VerticalSliderControl Strings
 #: VERTICAL_SLIDER_CONTROL_ACCESSIBILITY_LABEL
 msgid "Vertical slider"
@@ -2460,8 +2593,12 @@ msgstr ""
 "No hem trobat cap fitxer d'àudio aquí. Aquesta carpeta encara pot contenir "
 "vídeos."
 
+#: SUBFOLDER_DESCRIPTION
+msgid "1 folder"
+msgstr ""
+
 #: SUBFOLDERS_DESCRIPTION
-msgid "%d subfolders"
+msgid "%d folders"
 msgstr "%d subcarpetes"
 
 #: ACCESSIBILITY_SELECTED
