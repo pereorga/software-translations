@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-20 10:42+0000\n"
+"POT-Creation-Date: 2026-07-27 11:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2053,11 +2053,11 @@ msgid "Passkey Error"
 msgstr "Error de la clau de seguretat"
 
 #: webauthn-error-registration
-msgid "Failed to register your Passkey. {0}"
+msgid "Failed to register your Passkey."
 msgstr "No s’ha pogut registrar la vostra Passkey. {0}"
 
 #: webauthn-error-api-get
-msgid "Failed to authenticate by the Passkey. {0}"
+msgid "Failed to authenticate by the Passkey."
 msgstr "No s’ha pogut identificar amb la Passkey. {0}"
 
 #: webauthn-error-different-user
@@ -2066,16 +2066,55 @@ msgstr ""
 "L’usuari identificat primer no és l’autenticat per la clau de seguretat."
 
 #: webauthn-error-auth-verification
-msgid "Passkey authentication result is invalid. {0}"
+msgid "Passkey authentication result is invalid."
 msgstr "El resultat de l’autenticació amb Passkey no és vàlid. {0}"
 
 #: webauthn-error-register-verification
-msgid "Passkey registration result is invalid. {0}"
+msgid "Passkey registration result is invalid."
 msgstr "El resultat del registre amb clau de seguretat no és vàlid.{0}"
 
 #: webauthn-error-user-not-found
 msgid "Unknown user authenticated by the Passkey."
 msgstr "L’usuari identificat per la clau de seguretat és desconegut."
+
+#: webauthn-error-registration-not-allowed-aaguid
+msgid ""
+"This security key model is not allowed (AAGUID {0}). Please use a different "
+"security key."
+msgstr ""
+
+#: webauthn-error-registration-aaguid-attestation-required
+msgid ""
+"Your organization requires verified security keys. Attestation format "
+"''none'' is not accepted; please use a key that provides attestation."
+msgstr ""
+
+#: webauthn-error-registration-attachment-mismatch
+msgid ""
+"Your organization requires a different type of security key (invalid "
+"Authenticator Attachment ''{0}''). Please use the correct type."
+msgstr ""
+
+#: webauthn-error-api-not-allowed
+msgid ""
+"The Passkey operation was not allowed or timed out. You may have cancelled "
+"the request, taken too long to respond, or the operation may not be "
+"permitted in this context. Please try again."
+msgstr ""
+
+#: webauthn-error-api-invalid-state
+msgid "This Passkey is already registered."
+msgstr ""
+
+#: webauthn-error-api-security
+msgid ""
+"A security error occurred during the Passkey operation. Please ensure you "
+"are on the correct site and try again."
+msgstr ""
+
+#: webauthn-error-duplicated-device
+msgid "Device already exists with the same name."
+msgstr ""
 
 #.
 #. Passkey
@@ -2152,6 +2191,18 @@ msgstr "Connecta amb un altre proveïdor d’identitat"
 #: identity-provider-login-label
 msgid "Or sign in with"
 msgstr "O entra amb"
+
+#: identity-provider-login-label-divider
+msgid "or sign in with"
+msgstr ""
+
+#: identity-provider-login-label-short
+msgid "or"
+msgstr ""
+
+#: signInWithProvider
+msgid "Sign in with {0}"
+msgstr ""
 
 #: idp-email-verification-display-name
 msgid "Email Verification"
