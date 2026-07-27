@@ -3449,11 +3449,11 @@ msgstr "{STRING} {RED}(hi ha {NUM} fitxer{P \" que fa falta o està corromput\" 
 
 msgctxt "STR_ERROR_RESOLUTION_LIST_FAILED"
 msgid "Failed to retrieve a list of supported resolutions"
-msgstr "{WHITE}No s'ha pogut obtenir la llista de resolucions permeses"
+msgstr "La llista de resolucions permeses no s'ha pogut obtenir."
 
 msgctxt "STR_ERROR_FULLSCREEN_FAILED"
 msgid "Fullscreen mode failed"
-msgstr "{WHITE}Ha fallat el mode pantalla completa"
+msgstr "El mode pantalla completa ha fallat."
 
 msgctxt "STR_CURRENCY_WINDOW"
 msgid "{WHITE}Custom currency"
@@ -3647,11 +3647,11 @@ msgctxt "STR_RIVERS_LOT"
 msgid "Many"
 msgstr "Molts"
 
-msgctxt "STR_DISASTER_NONE"
+msgctxt "STR_BREAKDOWNS_NONE"
 msgid "None"
 msgstr "Cap"
 
-msgctxt "STR_DISASTER_REDUCED"
+msgctxt "STR_BREAKDOWNS_REDUCED"
 msgid "Reduced"
 msgstr "Reduït"
 
@@ -4433,7 +4433,7 @@ msgstr "Permet la construcció de passos a nivell en els carrers propietat d'alt
 
 msgctxt "STR_CONFIG_SETTING_DYNAMIC_ENGINES_EXISTING_VEHICLES"
 msgid "Changing this setting is not possible when there are vehicles"
-msgstr "{WHITE}No es pot canviar aquest ajustament quan hi ha vehicles"
+msgstr "Aquesta opció no es pot canviar si hi ha vehicles a la partida."
 
 msgctxt "STR_CONFIG_SETTING_INFRASTRUCTURE_MAINTENANCE"
 msgid "Infrastructure maintenance: {STRING2}"
@@ -4825,7 +4825,7 @@ msgstr "Costat per on condueixen els automòbils: {STRING}"
 
 msgctxt "STR_CONFIG_SETTING_ROAD_SIDE_HELPTEXT"
 msgid "Choose the road vehicle driving side.{}This can also affect signal side and semaphore graphics.{}It may require reloading the game for a change to take full effect"
-msgstr "Escollir el costat de conducció"
+msgstr "Escolliu el costat per on condueixen els vehicles de carretera.{}Això també afecta al costat on es posen els gràfics de semàfors i senyals.{}Potser caldrà tornar a carregar la partida per tal que el canvi s'apliqui del tot."
 
 msgctxt "STR_CONFIG_SETTING_ROAD_SIDE_LEFT"
 msgid "Left"
@@ -4857,11 +4857,11 @@ msgstr "Alçada que pren un escenari pla: {STRING}"
 
 msgctxt "STR_CONFIG_SETTING_EDGES_NOT_EMPTY"
 msgid "One or more tiles at the northern edge are not empty"
-msgstr "{WHITE}Una o més cel·les al vèrtex nord no està buit"
+msgstr "Almenys una cel·la al vèrtex nord no està buida."
 
 msgctxt "STR_CONFIG_SETTING_EDGES_NOT_WATER"
 msgid "One or more tiles at one of the edges is not water"
-msgstr "{WHITE}Una o més cel·les en una de les vores no és aigua"
+msgstr "Almenys una cel·la en una de les vores no és d'aigua."
 
 msgctxt "STR_CONFIG_SETTING_STATION_SPREAD"
 msgid "Maximum station spread: {STRING2}"
@@ -6417,15 +6417,15 @@ msgstr "S'ignorarà el conjunt de peces de música «{STRING}» perquè no s'ha 
 
 msgctxt "STR_VIDEO_DRIVER_ERROR"
 msgid "Error with video settings..."
-msgstr "{WHITE}S'ha produït un error en la configuració de vídeo..."
+msgstr "S'ha produït un error en la configuració de vídeo..."
 
 msgctxt "STR_VIDEO_DRIVER_ERROR_NO_HARDWARE_ACCELERATION"
 msgid "no compatible GPU found. Hardware acceleration disabled"
-msgstr "{WHITE}... no s'ha trobat cap GPU compatible. Es desactiva l'acceleració per programari."
+msgstr "No s'ha trobat cap GPU compatible. Es desactiva l'acceleració per programari."
 
 msgctxt "STR_VIDEO_DRIVER_ERROR_HARDWARE_ACCELERATION_CRASH"
 msgid "GPU driver crashed the game. Hardware acceleration disabled"
-msgstr "{WHITE}... el controlador de la GPU ha fallat durant la partida. Es desactiva l'acceleració per maquinari."
+msgstr "El controlador de la GPU ha fallat durant la partida. Es desactiva l'acceleració per maquinari."
 
 msgctxt "STR_INTRO_NEW_GAME"
 msgid "{BLACK}New Game"
@@ -7501,35 +7501,35 @@ msgstr "{BLACK}Posa el text pel xat de xarxa"
 
 msgctxt "STR_NETWORK_ERROR_NOTAVAILABLE"
 msgid "No network devices found"
-msgstr "{WHITE}No s'han trobat dispositius de xarxa."
+msgstr "No s'han trobat dispositius de xarxa."
 
 msgctxt "STR_NETWORK_ERROR_NOCONNECTION"
 msgid "Connection to the server timed out or was refused"
-msgstr "{WHITE}S'ha refusat o s'ha esgotat el temps de connexió amb el servidor."
+msgstr "S'ha refusat o s'ha esgotat el temps de connexió amb el servidor."
 
 msgctxt "STR_NETWORK_ERROR_NEWGRF_MISMATCH"
 msgid "Could not connect due to NewGRF mismatch"
-msgstr "{WHITE}No s'ha pogut connectar degut a una diferència de NewGRF"
+msgstr "No s'ha pogut connectar degut a una diferència de NewGRF."
 
 msgctxt "STR_NETWORK_ERROR_DESYNC"
 msgid "Network-Game synchronisation failed"
-msgstr "{WHITE}Ha fallat la sincronització de la partida en xarxa"
+msgstr "La sincronització de la partida en xarxa ha fallat."
 
 msgctxt "STR_NETWORK_ERROR_LOSTCONNECTION"
 msgid "Network-Game connection lost"
-msgstr "{WHITE}S'ha perdut la connexió a la partida en xarxa"
+msgstr "S'ha perdut la connexió a la partida en xarxa."
 
 msgctxt "STR_NETWORK_ERROR_SAVEGAMEERROR"
 msgid "Could not load savegame"
-msgstr "{WHITE}No s'ha pogut carregar la partida"
+msgstr "No s'ha pogut carregar la partida."
 
 msgctxt "STR_NETWORK_ERROR_SERVER_START"
 msgid "Could not start the server"
-msgstr "{WHITE}No s'ha pogut iniciar el servidor"
+msgstr "El servidor no s'ha pogut iniciar."
 
 msgctxt "STR_NETWORK_ERROR_SERVER_ERROR"
 msgid "A protocol error was detected and the connection was closed"
-msgstr "{WHITE}S'ha obtingut un error de protocol i s'ha tancat la connexió"
+msgstr "S'ha detectat un error de protocol i la connexió s'ha tancat."
 
 msgctxt "STR_NETWORK_ERROR_BAD_PLAYER_NAME"
 msgid "Your player name has not been set. The name can be set at the top of the Multiplayer window"
@@ -7541,59 +7541,59 @@ msgstr "No s'ha establit un nom per al vostre servidor. El nom s'estableix a la 
 
 msgctxt "STR_NETWORK_ERROR_WRONG_REVISION"
 msgid "The revision of this client does not match the server's revision"
-msgstr "{WHITE}La revisió d'aquest client no concorda amb la revisió del servidor"
+msgstr "La revisió d'aquest client no concorda amb la revisió del servidor."
 
 msgctxt "STR_NETWORK_ERROR_WRONG_PASSWORD"
 msgid "Wrong password"
-msgstr "{WHITE}Contrasenya incorrecta"
+msgstr "Contrasenya incorrecta"
 
 msgctxt "STR_NETWORK_ERROR_NOT_ON_ALLOW_LIST"
 msgid "You are not on the list of allowed clients"
-msgstr "{WHITE}No esteu en la llista de clients permesos"
+msgstr "No esteu a la llista de clients permesos."
 
 msgctxt "STR_NETWORK_ERROR_SERVER_FULL"
 msgid "The server is full"
-msgstr "{WHITE}El servidor està ple"
+msgstr "El servidor està ple."
 
 msgctxt "STR_NETWORK_ERROR_SERVER_BANNED"
 msgid "You are banned from this server"
-msgstr "{WHITE}Estàs exclòs d'aquest servidor"
+msgstr "Us han exclòs d'aquest servidor."
 
 msgctxt "STR_NETWORK_ERROR_KICKED"
 msgid "You were kicked out of the game"
-msgstr "{WHITE}T'han fet fora de la partida"
+msgstr "Us han fet fora de la partida."
 
 msgctxt "STR_NETWORK_ERROR_KICK_MESSAGE"
 msgid "Reason: {RAW_STRING}"
-msgstr "{WHITE}Motiu: {STRING}"
+msgstr "Motiu: {STRING}"
 
 msgctxt "STR_NETWORK_ERROR_CHEATER"
 msgid "Cheating is not allowed on this server"
-msgstr "{WHITE}No es permet fer trampes en aquest servidor"
+msgstr "En aquest servidor no es permet fer trampes."
 
 msgctxt "STR_NETWORK_ERROR_TOO_MANY_COMMANDS"
 msgid "You were sending too many commands to the server"
-msgstr "{WHITE}Estaves enviant massa ordres al servidor"
+msgstr "Estàveu enviant massa ordres al servidor."
 
 msgctxt "STR_NETWORK_ERROR_TIMEOUT_PASSWORD"
 msgid "You took too long to enter the password"
-msgstr "{WHITE}Has tardat massa a introduir la contrasenya"
+msgstr "Heu tardat massa a introduir la contrasenya."
 
 msgctxt "STR_NETWORK_ERROR_TIMEOUT_COMPUTER"
 msgid "Your computer is too slow to keep up with the server"
-msgstr "{WHITE}El teu ordinador és massa lent per mantenir-se connectat al servidor"
+msgstr "L'ordinador és massa lent per a mantenir-vos connectat al servidor."
 
 msgctxt "STR_NETWORK_ERROR_TIMEOUT_MAP"
 msgid "Your computer took too long to download the map"
-msgstr "{WHITE}El teu ordinador ha tardat massa a descarregar el mapa"
+msgstr "L'ordinador ha tardat massa a descarregar el mapa."
 
 msgctxt "STR_NETWORK_ERROR_TIMEOUT_JOIN"
 msgid "Your computer took too long to join the server"
-msgstr "{WHITE}El teu ordinador ha tardat massa a unir-se al servidor"
+msgstr "L'ordinador ha tardat massa a unir-se al servidor."
 
 msgctxt "STR_NETWORK_ERROR_INVALID_CLIENT_NAME"
 msgid "Your player name is not valid"
-msgstr "{WHITE}El vostre nom de jugador no és vàlid."
+msgstr "El nom de jugador no és vàlid."
 
 msgctxt "STR_NETWORK_ERROR_CLIENT_GUI_LOST_CONNECTION_CAPTION"
 msgid "Possible connection loss"
@@ -7781,11 +7781,11 @@ msgstr "*** {STRING} ha donat {CURRENCY_LONG} a {STRING}."
 
 msgctxt "STR_NETWORK_MESSAGE_SERVER_SHUTDOWN"
 msgid "The server closed the session"
-msgstr "{WHITE}El servidor ha tancat la sessió"
+msgstr "El servidor ha tancat la sessió."
 
 msgctxt "STR_NETWORK_MESSAGE_SERVER_REBOOT"
 msgid "The server is restarting...{}{}Please wait..."
-msgstr "{WHITE}El servidor es reinicia...{}{}Espereu un moment..."
+msgstr "El servidor es reinicia...{}{}Espereu un moment..."
 
 msgctxt "STR_NETWORK_MESSAGE_KICKED"
 msgid "*** {RAW_STRING} was kicked. Reason: ({RAW_STRING})"
@@ -7965,7 +7965,7 @@ msgstr "L'OpenTTD s'ha compilat sense compatibilitat «zlib»..."
 
 msgctxt "STR_CONTENT_NO_ZLIB_SUB"
 msgid "downloading content is not possible!"
-msgstr "{WHITE}... no és possible descarregar continguts!"
+msgstr "No es poden descarregar continguts!"
 
 msgctxt "STR_CONTENT_TYPE_BASE_GRAPHICS"
 msgid "Base graphics"
@@ -8037,7 +8037,7 @@ msgstr "No es pot escriure al fitxer."
 
 msgctxt "STR_CONTENT_ERROR_COULD_NOT_EXTRACT"
 msgid "Could not decompress the downloaded file"
-msgstr "{WHITE}No s'han pogut descomprimir els fitxers descarregats"
+msgstr "Els fitxers descarregats no s'han pogut descomprimir."
 
 msgctxt "STR_MISSING_GRAPHICS_SET_CAPTION"
 msgid "{WHITE}Missing graphics"
@@ -8241,7 +8241,7 @@ msgstr "{BLACK}Construeix unes cotxeres (per a construir i revisar trens). Amb M
 
 msgctxt "STR_RAIL_TOOLBAR_TOOLTIP_CONVERT_RAIL_TO_WAYPOINT"
 msgid "{BLACK}Build waypoint on railway. Ctrl+Click to select another waypoint to join. Also press Shift to show cost estimate only"
-msgstr "{BLACK}Construeix un punt de control en una via de ferrocarril. Amb Ctrl, es poden construir nous punts de control i ajuntar-los amb d'altres ja existents. Amb Maj, es mostrarà el cost estimat de construcció."
+msgstr "{BLACK}Construeix un punt de pas en una via de ferrocarril. Amb Ctrl, es poden construir nous punts de pas i ajuntar-los amb d'altres ja existents. Amb Maj, es mostrarà el cost estimat de construcció."
 
 msgctxt "STR_RAIL_TOOLBAR_TOOLTIP_BUILD_RAILROAD_STATION"
 msgid "{BLACK}Build railway station. Ctrl+Click to select another station to join. Also press Shift to show cost estimate only"
@@ -8409,7 +8409,7 @@ msgstr "{YELLOW}Esteu segur que voleu esborrar aquesta col·lecció? Hi ha eleme
 
 msgctxt "STR_PICKER_STATION_CLASS_TOOLTIP"
 msgid "Select a station class to display. Ctrl+Click to add or remove in saved items"
-msgstr "Trieu quina classe d'estació voleu veure."
+msgstr "Trieu quina classe d'estació voleu veure. Amb Ctrl+clic, s'afegeixen o es trauen als elements desats."
 
 msgctxt "STR_PICKER_STATION_TYPE_TOOLTIP"
 msgid "Select a station type to build. Ctrl+Click to add or remove in saved items"
@@ -8421,11 +8421,11 @@ msgstr "Seleccioneu quina col·lecció d'estacions voleu veure."
 
 msgctxt "STR_PICKER_WAYPOINT_CLASS_TOOLTIP"
 msgid "Select a waypoint class to display. Ctrl+Click to add or remove in saved items"
-msgstr "Trieu quina classe de punts de control voleu veure."
+msgstr "Trieu quina classe de punts de pas voleu veure. Amb Ctrl+clic, s'afegeixen o es trauen als elements desats."
 
 msgctxt "STR_PICKER_WAYPOINT_TYPE_TOOLTIP"
 msgid "Select a waypoint to build. Ctrl+Click to add or remove in saved items"
-msgstr "Trieu quin tipus de punt de control voleu construir. Amb Ctrl+clic, s'afegeix o es trau l'element de la llista de desats."
+msgstr "Trieu quin tipus de punt de pas voleu construir. Amb Ctrl+clic, s'afegeix o es trau l'element de la llista de desats."
 
 msgctxt "STR_PICKER_WAYPOINT_COLLECTION_TOOLTIP"
 msgid "Select a collection of waypoints to display"
@@ -8433,7 +8433,7 @@ msgstr "Seleccioneu quina col·lecció de punts de pas voleu veure."
 
 msgctxt "STR_PICKER_ROADSTOP_BUS_CLASS_TOOLTIP"
 msgid "Select a bus station class to display. Ctrl+Click to add or remove in saved items"
-msgstr "Trieu quina classe d'estacions d'autobús voleu veure."
+msgstr "Trieu quina classe d'estacions d'autobús voleu veure. Amb Ctrl+clic, s'afegeixen o es trauen als elements desats."
 
 msgctxt "STR_PICKER_ROADSTOP_BUS_TYPE_TOOLTIP"
 msgid "Select a bus station type to build. Ctrl+Click to add or remove in saved items"
@@ -8445,7 +8445,7 @@ msgstr "Seleccioneu quina col·lecció d'estacions d'autobús voleu veure."
 
 msgctxt "STR_PICKER_ROADSTOP_TRUCK_CLASS_TOOLTIP"
 msgid "Select a lorry station class to display. Ctrl+Click to add or remove in saved items"
-msgstr "Trieu quina classe d'estació de camions voleu veure."
+msgstr "Trieu quina classe d'estació de camions voleu veure. Amb Ctrl+clic, s'afegeixen o es trauen als elements desats."
 
 msgctxt "STR_PICKER_ROADSTOP_TRUCK_TYPE_TOOLTIP"
 msgid "Select a lorry station type to build. Ctrl+Click to add or remove in saved items"
@@ -8469,7 +8469,7 @@ msgstr "Seleccioneu quina col·lecció d'objectes voleu veure."
 
 msgctxt "STR_PICKER_HOUSE_CLASS_TOOLTIP"
 msgid "Select a town zone to display. Ctrl+Click to add or remove in saved items"
-msgstr "Trieu quina zona de població voleu veure."
+msgstr "Trieu quina zona de població voleu veure. Amb Ctrl+clic, s'afegeixen o es trauen als elements desats."
 
 msgctxt "STR_PICKER_HOUSE_TYPE_TOOLTIP"
 msgid "Select a house type to build. Ctrl+Click to add or remove in saved items"
@@ -8597,11 +8597,11 @@ msgstr "{BLACK}Senyal previ combinat (mecànic){}El senyal combinat actua alhora
 
 msgctxt "STR_BUILD_SIGNAL_SEMAPHORE_PBS_TOOLTIP"
 msgid "{BLACK}Path Signal (semaphore){}A path signal allows more than one train to enter a signal block at the same time, if the train can reserve a path to a safe stopping point. Standard path signals can be passed from the back side"
-msgstr "{BLACK}Senyal de ruta (mecànic){}Un senyal de ruta permet entrar més d'un tren dins de la mateixa secció de vies. Cal, però, que sigui capaç de reservar una ruta fins un punt de parada segur sense creuar-se amb cap altre tren. Es pot travessar en el sentit contrari al senyal."
+msgstr "{BLACK}Senyal de ruta (mecànic){}Un senyal de ruta permet entrar més d'un tren a dins de la mateixa secció de vies. Cal, però, que sigui capaç de reservar una ruta fins un punt de parada segur sense creuar-se amb cap altre tren. Es pot travessar en el sentit contrari al senyal."
 
 msgctxt "STR_BUILD_SIGNAL_SEMAPHORE_PBS_OWAY_TOOLTIP"
 msgid "{BLACK}One-way Path Signal (semaphore){}A path signal allows more than one train to enter a signal block at the same time, if the train can reserve a path to a safe stopping point. One-way path signals can't be passed from the back side"
-msgstr "{BLACK}Senyal de ruta d'un sentit (mecànic){}Un senyal de ruta permet entrar més d'un tren dins de la mateixa secció de vies. Cal, però, que sigui capaç de reservar una ruta fins un punt de parada segur sense creuar-se amb cap altre tren. No es pot travessar en el sentit contrari al senyal."
+msgstr "{BLACK}Senyal de ruta d'un sentit (mecànic){}Un senyal de ruta permet entrar més d'un tren a dins de la mateixa secció de vies. Cal, però, que sigui capaç de reservar una ruta fins un punt de parada segur sense creuar-se amb cap altre tren. No es pot travessar en el sentit contrari al senyal."
 
 msgctxt "STR_BUILD_SIGNAL_ELECTRIC_NORM_TOOLTIP"
 msgid "{BLACK}Block Signal (electric){}This is the most basic type of signal, allowing only one train to be in the same block at the same time"
@@ -8621,7 +8621,7 @@ msgstr "{BLACK}Senyal previ combinat (elèctric){}El senyal combinat actua alhor
 
 msgctxt "STR_BUILD_SIGNAL_ELECTRIC_PBS_TOOLTIP"
 msgid "{BLACK}Path Signal (electric){}A path signal allows more than one train to enter a signal block at the same time, if the train can reserve a path to a safe stopping point. Standard path signals can be passed from the back side"
-msgstr "{BLACK}Senyal de ruta (elèctric){}Un senyal de ruta permet entrar més d'un tren dins de la mateixa secció de vies. Cal, però, que sigui capaç de reservar una ruta fins un punt de parada segur sense creuar-se amb cap altre tren. Es pot travessar en el sentit contrari al senyal."
+msgstr "{BLACK}Senyal de ruta (elèctric){}Un senyal de ruta permet entrar més d'un tren a dins de la mateixa secció de vies. Cal, però, que sigui capaç de reservar una ruta fins un punt de parada segur sense creuar-se amb cap altre tren. Es pot travessar en el sentit contrari al senyal."
 
 msgctxt "STR_BUILD_SIGNAL_ELECTRIC_PBS_OWAY_TOOLTIP"
 msgid "{BLACK}One-way Path Signal (electric){}A path signal allows more than one train to enter a signal block at the same time, if the train can reserve a path to a safe stopping point. One-way path signals can't be passed from the back side"
@@ -8721,7 +8721,7 @@ msgstr "{BLACK}Construeix cotxeres de tramvies (per a comprar i revisar tramvies
 
 msgctxt "STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_ROAD_TO_WAYPOINT"
 msgid "{BLACK}Build waypoint on road. Ctrl+Click to select another waypoint to join. Also press Shift to show cost estimate only"
-msgstr "{BLACK}Construeix un punt de control de carretera. Amb Ctrl, es poden construir nous punts de control i ajuntar-los amb d'altres ja existents. Amb Maj, es mostrarà el cost estimat de construcció."
+msgstr "{BLACK}Construeix un punt de pas de carretera. Amb Ctrl+clic, es poden construir nous punts de pas i ajuntar-los amb d'altres ja existents. Amb Maj, es mostrarà el cost estimat de construcció."
 
 msgctxt "STR_ROAD_TOOLBAR_TOOLTIP_CONVERT_TRAM_TO_WAYPOINT"
 msgid "{BLACK}Build waypoint on tramway. Ctrl+Click to select another waypoint to join. Also press Shift to show cost estimate only"
@@ -9049,7 +9049,7 @@ msgstr "{WHITE}Generador de terreny"
 
 msgctxt "STR_TERRAFORM_TOOLTIP_PLACE_ROCKY_AREAS_ON_LANDSCAPE"
 msgid "{BLACK}Place rocky areas on landscape.{}Ctrl+Click to remove rocky areas"
-msgstr "{BLACK}Situa àrees de roques al paisatge"
+msgstr "{BLACK}Situa àrees de roques al paisatge.{}Amb Ctrl+clic, es trauen àrees senceres de roques."
 
 msgctxt "STR_TERRAFORM_TOOLTIP_DEFINE_DESERT_AREA"
 msgid "{BLACK}Define desert area.{}Ctrl+Click to remove desert area"
@@ -9665,7 +9665,7 @@ msgstr "Boia"
 
 msgctxt "STR_LAI_STATION_DESCRIPTION_WAYPOINT"
 msgid "Waypoint"
-msgstr "Punt de Control"
+msgstr "Punt de pas"
 
 msgctxt "STR_LAI_WATER_DESCRIPTION_WATER"
 msgid "Water"
@@ -10553,23 +10553,23 @@ msgstr "{BLACK}Preparant la partida"
 
 msgctxt "STR_TOWN_DATA_ERROR_LOAD_FAILED"
 msgid "Town data load failed"
-msgstr "{WHITE}Ha fallat la càrrega de dades de poblacions."
+msgstr "La càrrega de dades de poblacions ha fallat."
 
 msgctxt "STR_TOWN_DATA_ERROR_JSON_FORMATTED_INCORRECTLY"
 msgid "JSON file formatted incorrectly"
-msgstr "{WHITE}Format del fitxer JSON incorrecte"
+msgstr "Format del fitxer JSON incorrecte"
 
 msgctxt "STR_TOWN_DATA_ERROR_TOWN_FORMATTED_INCORRECTLY"
 msgid "{RAW_STRING} data formatted incorrectly"
-msgstr "{WHITE}Dades de {STRING} amb format incorrecte"
+msgstr "Dades de {STRING} amb format incorrecte"
 
 msgctxt "STR_TOWN_DATA_ERROR_BAD_COORDINATE"
 msgid "{RAW_STRING} coordinates formatted incorrectly, must be 0 to 1 as a proportion of the total heightmap dimension"
-msgstr "{WHITE}Les coordenades de {STRING} tenen un format incorrecte. Cal que siguin nombres entre 0 i 1 que expressin la proporció de la dimensió total del mapa d'alçades."
+msgstr "Les coordenades de {STRING} tenen un format incorrecte. Cal que siguin nombres entre 0 i 1 que expressin la proporció de la dimensió total del mapa d'altituds."
 
 msgctxt "STR_TOWN_DATA_ERROR_FAILED_TO_FOUND_TOWN"
 msgid "Could not find valid location to found {NUM} town{P \"\" s}. Created {P \"a \" \"\"}sign{P \"\" s} at the intended location{P \"\" s} instead"
-msgstr "{WHITE}No s'ha pogut trobar una ubicació vàlida per a {NUM} poblaci{P ó ons}. S'ha{P \"\" \"n\"} creat {P \"un \" \"\"}senyal{P \"\" s} a {P \"la posició indicada.\" \"les posicions indicades.\"}"
+msgstr "No s'ha pogut trobar una ubicació vàlida per a {NUM} poblaci{P ó ons}. S'ha{P \"\" \"n\"} creat {P \"un \" \"\"}senyal{P \"\" s} a {P \"la posició indicada.\" \"les posicions indicades.\"}"
 
 msgctxt "STR_NEWGRF_SETTINGS_CAPTION"
 msgid "{WHITE}NewGRF Settings"
@@ -10949,11 +10949,11 @@ msgstr "{RED}Fatal: {SILVER}{STRING}"
 
 msgctxt "STR_NEWGRF_ERROR_FATAL_POPUP"
 msgid "The NewGRF \"{RAW_STRING}\" has returned a fatal error: {}{STRING5}"
-msgstr "{WHITE}El NewGRF \"{STRING}\" ha retornat un error fatal:{}{STRING}"
+msgstr "El NewGRF «{STRING}» ha retornat un error fatal:{}{STRING}"
 
 msgctxt "STR_NEWGRF_ERROR_POPUP"
 msgid "The NewGRF \"{RAW_STRING}\" has returned an error: {}{STRING5}"
-msgstr "{WHITE}El NewGRF \"{STRING}\" ha retornat un error:{}{STRING}"
+msgstr "El NewGRF «{STRING}» ha retornat un error:{}{STRING}"
 
 msgctxt "STR_NEWGRF_ERROR_VERSION_NUMBER"
 msgid "{1:RAW_STRING} will not work with the TTDPatch version reported by OpenTTD"
@@ -11049,7 +11049,7 @@ msgstr "{YELLOW}Esteu a punt de fer canvis en una partida activa que poden fer q
 
 msgctxt "STR_NEWGRF_DUPLICATE_GRFID"
 msgid "Can't add file: duplicate NewGRF ID"
-msgstr "{WHITE}No es pot afegir el fitxer: ID de NewGRF duplicat"
+msgstr "El fitxer no es pot afegir: ID de NewGRF duplicat"
 
 msgctxt "STR_NEWGRF_COMPATIBLE_LOADED"
 msgid "{ORANGE}Matching file not found (compatible NewGRF loaded)"
@@ -11057,15 +11057,15 @@ msgstr "{ORANGE}El fitxer coincident no s'ha trobat (els NewGRF compatibles s'ha
 
 msgctxt "STR_NEWGRF_TOO_MANY_NEWGRFS"
 msgid "Can't add file: NewGRF file limit reached"
-msgstr "{WHITE}No es pot afegir el fitxer: Límit de fitxers NewGRF assolit"
+msgstr "El fitxer no es pot afegir: Límit de fitxers NewGRF assolit"
 
 msgctxt "STR_NEWGRF_COMPATIBLE_LOAD_WARNING"
 msgid "Compatible NewGRF(s) loaded for missing files"
-msgstr "{WHITE}S'han carregat els NewGRF compatibles per als fitxers que fan falta"
+msgstr "S'han carregat els NewGRF compatibles per als fitxers que fan falta."
 
 msgctxt "STR_NEWGRF_DISABLED_WARNING"
 msgid "Missing NewGRF file(s) have been disabled"
-msgstr "{WHITE}Els fitxers NewGRF que fan falta han estat desactivats"
+msgstr "Els fitxers NewGRF que fan falta s'han desactivat."
 
 msgctxt "STR_NEWGRF_UNPAUSE_WARNING_TITLE"
 msgid "{YELLOW}Missing NewGRF file(s)"
@@ -11117,7 +11117,7 @@ msgstr "El NewGRF «{0:STRING}» dóna informació incorrecta."
 
 msgctxt "STR_NEWGRF_BUGGY_ARTICULATED_CARGO"
 msgid "Cargo/refit information for '{1:ENGINE}' differs from purchase list after construction. This might cause autorenew/-replace to fail refitting correctly"
-msgstr "{WHITE}La informació de càrrega/remodelació de «{1:ENGINE}» no encaixa amb la llista de compres després de la construcció. Això podria causar un mal funcionament de la funció autorenova/substitueix."
+msgstr "La informació de càrrega/remodelació de «{1:ENGINE}» no encaixa amb la llista de compres després de la construcció. Això podria causar un mal funcionament de la funció autorenova/substitueix."
 
 msgctxt "STR_NEWGRF_BUGGY_ENDLESS_PRODUCTION_CALLBACK"
 msgid "'{1:STRING}' caused an endless loop in the production callback"
@@ -11125,11 +11125,11 @@ msgstr "«{1:STRING}» ha provocat un bucle infinit en la crida de producció."
 
 msgctxt "STR_NEWGRF_BUGGY_UNKNOWN_CALLBACK_RESULT"
 msgid "Callback {1:HEX} returned unknown/invalid result {2:HEX}"
-msgstr "{WHITE}'Callback' {1:HEX} ha retornat un resultat desconegut/invàlid {2:HEX}"
+msgstr "El «callback» {1:HEX} ha retornat un resultat desconegut/invàlid {2:HEX}."
 
 msgctxt "STR_NEWGRF_BUGGY_INVALID_CARGO_PRODUCTION_CALLBACK"
 msgid "'{1:STRING}' returned invalid cargo type in the production callback at {2:HEX}"
-msgstr "{WHITE}'{1:STRING}' ha retornat un tipus de càrrega no vàlid a {2:HEX}."
+msgstr "«{1:STRING}» ha retornat un tipus de càrrega no vàlid a {2:HEX}."
 
 msgctxt "STR_NEWGRF_INVALID_CARGO"
 msgid "<invalid cargo>"
@@ -12249,7 +12249,7 @@ msgstr "{ORANGE}{INDUSTRY} {BLACK}{STRING}"
 
 msgctxt "STR_INDUSTRY_DIRECTORY_ITEM_PROD2"
 msgid "{ORANGE}{INDUSTRY} {BLACK}{STRING4}, {STRING4}"
-msgstr "{ORANGE}{INDUSTRY} {BLACK}{STRING}, {STRING}"
+msgstr "{ORANGE}{INDUSTRY} {BLACK}{STRING} i {STRING}"
 
 msgctxt "STR_INDUSTRY_DIRECTORY_ITEM_PROD3"
 msgid "{ORANGE}{INDUSTRY} {BLACK}{STRING4}, {STRING4}, {STRING4}"
@@ -13621,11 +13621,11 @@ msgstr "{BLACK}Anomena avió"
 
 msgctxt "STR_VEHICLE_INFO_AGE"
 msgid "{COMMA} year{P \"\" s} (lifetime: {COMMA} year{P \"\" s})"
-msgstr "{COMMA} any{P \"\" s} ({COMMA})"
+msgstr "{COMMA} any{P \"\" s} (temps de vida: {COMMA} any{P \"\" s})"
 
 msgctxt "STR_VEHICLE_INFO_AGE_RED"
 msgid "{RED}{COMMA} year{P \"\" s} (lifetime: {COMMA} year{P \"\" s})"
-msgstr "{RED}{COMMA} any{P \"\" s} ({COMMA})"
+msgstr "{RED}{COMMA} any{P \"\" s} (temps de vida: {COMMA} any{P \"\" s})"
 
 msgctxt "STR_VEHICLE_INFO_AGE_RUNNING_COST_YR"
 msgid "{BLACK}Age: {LTBLUE}{STRING2}{BLACK}   Running Cost: {LTBLUE}{CURRENCY_LONG}/year"
@@ -13989,7 +13989,7 @@ msgstr "{BLACK}Canvia el comportament de càrrega de l'ordre remarcada"
 
 msgctxt "STR_ORDER_TOGGLE_UNLOAD"
 msgid "{BLACK}Force unload all"
-msgstr "{BLACK}Descarrega tot"
+msgstr "{BLACK}Força que es descarregui tot"
 
 msgctxt "STR_ORDER_DROP_UNLOAD_IF_ACCEPTED"
 msgid "Unload if accepted"
@@ -13997,7 +13997,7 @@ msgstr "Descarrega si s'accepta"
 
 msgctxt "STR_ORDER_DROP_UNLOAD"
 msgid "Force unload even if not accepted"
-msgstr "Descarrega tot"
+msgstr "Força la descàrrega fins i tot si no s'accepta"
 
 msgctxt "STR_ORDER_DROP_TRANSFER"
 msgid "Transfer"
@@ -14104,7 +14104,7 @@ msgid "Maximum reliability"
 msgstr "Fiabilitat màxima"
 
 msgctxt "STR_ORDER_CONDITIONAL_DRIVING_BACKWARDS"
-msgid "Driving backwards"
+msgid "Driving backwards at reduced speed"
 msgstr "Marxa enrere"
 
 msgctxt "STR_ORDER_CONDITIONAL_COMPARATOR_TOOLTIP"
@@ -14285,19 +14285,19 @@ msgstr "{SPACE}(No carregar)"
 
 msgctxt "STR_ORDER_UNLOAD"
 msgid "{SPACE}(Force unload and take cargo)"
-msgstr "{SPACE}(Descarrega i agafa la càrrega)"
+msgstr "{SPACE}(Força la descàrrega i agafa càrrega)"
 
 msgctxt "STR_ORDER_UNLOAD_FULL_LOAD"
 msgid "{SPACE}(Force unload and wait for full load)"
-msgstr "{SPACE}(Descarrega i espera carregar del tot)"
+msgstr "{SPACE}(Força la descàrrega i espera que es carregui del tot)"
 
 msgctxt "STR_ORDER_UNLOAD_FULL_LOAD_ANY"
 msgid "{SPACE}(Force unload and wait for any full load)"
-msgstr "{SPACE}(Descarrega i espera una càrrega completa qualsevol)"
+msgstr "{SPACE}(Força la descàrrega i espera una càrrega completa qualsevol)"
 
 msgctxt "STR_ORDER_UNLOAD_NO_LOAD"
 msgid "{SPACE}(Force unload and leave empty)"
-msgstr "{SPACE}(Descarrega i deixa buit)"
+msgstr "{SPACE}(Força la descàrrega i deixa'l buit)"
 
 msgctxt "STR_ORDER_TRANSFER"
 msgid "{SPACE}(Transfer and take cargo)"
@@ -14345,15 +14345,15 @@ msgstr "{SPACE}(Càrrega completa de qualsevol càrrega amb remodelació a {STRI
 
 msgctxt "STR_ORDER_UNLOAD_REFIT"
 msgid "{SPACE}(Force unload and take cargo with refit to {STRING})"
-msgstr "{SPACE}(Descarrega i pren la càrrega amb remodelació a {STRING})"
+msgstr "{SPACE}(Força la descàrrega i pren la càrrega amb remodelació a {STRING})"
 
 msgctxt "STR_ORDER_UNLOAD_FULL_LOAD_REFIT"
 msgid "{SPACE}(Force unload and wait for full load with refit to {STRING})"
-msgstr "{SPACE}(Descarrega i espera fins a càrrega completa amb remodelació a {STRING})"
+msgstr "{SPACE}(Força la descàrrega i espera fins a càrrega completa amb remodelació a {STRING})"
 
 msgctxt "STR_ORDER_UNLOAD_FULL_LOAD_ANY_REFIT"
 msgid "{SPACE}(Force unload and wait for any full load with refit to {STRING})"
-msgstr "{SPACE}(Descarrega i espera fins a càrrega completa qualsevol amb remodelació a {STRING})"
+msgstr "{SPACE}(Força la descàrrega i espera fins a càrrega completa qualsevol amb remodelació a {STRING})"
 
 msgctxt "STR_ORDER_TRANSFER_REFIT"
 msgid "{SPACE}(Transfer and take cargo with refit to {STRING})"
@@ -14709,7 +14709,7 @@ msgstr "No s'ha trobat una IA adequada per carregar.{}Aquesta IA és una IA que 
 
 msgctxt "STR_ERROR_AI_PLEASE_REPORT_CRASH"
 msgid "One of the running scripts crashed. Please report this to the script author with a screenshot of the AI/Game Script Debug Window"
-msgstr "{WHITE}Un dels scripts que s'executava ha fallat. Si us plau, informeu l'autor de l'script amb una captura de pantalla de la finestra de depuració de l'script d'IA/partida."
+msgstr "Un dels scripts que s'executava ha fallat. Informeu l'autor de l'script amb una captura de pantalla de la finestra de depuració de l'script d'IA/partida."
 
 msgctxt "STR_ERROR_AI_DEBUG_SERVER_ONLY"
 msgid "{YELLOW}AI/Game Script Debug window is only available for the server"
@@ -14997,7 +14997,7 @@ msgstr "{WHITE}Ingressos Estimats: {CURRENCY_LONG}"
 
 msgctxt "STR_ERROR_SAVE_STILL_IN_PROGRESS"
 msgid "Saving still in progress,{}please wait until it is finished!"
-msgstr "{WHITE}Es desa la partida.{}Espera que acabi l'operació!"
+msgstr "Es desa la partida.{}Espereu que acabi l'operació!"
 
 msgctxt "STR_ERROR_AUTOSAVE_FAILED"
 msgid "Autosave failed"
@@ -15013,7 +15013,7 @@ msgstr "La partida no s'ha pogut desar..."
 
 msgctxt "STR_ERROR_UNABLE_TO_DELETE_FILE"
 msgid "Unable to delete file"
-msgstr "{WHITE}Impossible esborrar el fitxer"
+msgstr "El fitxer no es pot esborrar."
 
 msgctxt "STR_ERROR_GAME_LOAD_FAILED"
 msgid "Game load failed..."
@@ -15057,27 +15057,27 @@ msgstr "{WHITE}La partida es va desar amb una versió sense suport de tramvies. 
 
 msgctxt "STR_ERROR_COULD_NOT_CREATE_TOWN"
 msgid "Map generation aborted...{}{}... no suitable town locations"
-msgstr "{WHITE}Generació del mapa avortada...{}{}... no hi ha llocs adequats per a les poblacions."
+msgstr "La generació del mapa s'ha cancel·lat...{}{}No hi ha llocs adequats per a les poblacions."
 
 msgctxt "STR_ERROR_NO_TOWN_IN_SCENARIO"
 msgid "there is no town in this scenario"
-msgstr "{WHITE}... no hi ha poblacions en aquest escenari"
+msgstr "En aquest escenari no hi ha poblacions."
 
 msgctxt "STR_ERROR_PNGMAP"
 msgid "Can't load landscape from PNG..."
-msgstr "{WHITE}Impossible carregar un terreny des del PNG..."
+msgstr "No es pot carregar el terreny des del PNG..."
 
 msgctxt "STR_ERROR_PNGMAP_FILE_NOT_FOUND"
 msgid "file not found"
-msgstr "{WHITE}... no s'ha trobar el fitxer"
+msgstr "El fitxer no s'ha trobat."
 
 msgctxt "STR_ERROR_PNGMAP_IMAGE_TYPE"
 msgid "could not convert image type. 8 or 24-bit PNG image needed"
-msgstr "{WHITE}... no s'ha pogut convertir el tipus d'imatge. Es necessita una imatge PNG de 8 o 24-bit"
+msgstr "El tipus d'imatge no s'ha pogut convertir. Es necessita una imatge PNG de 8 o 24 bits."
 
 msgctxt "STR_ERROR_PNGMAP_MISC"
 msgid "something just went wrong (probably corrupted file)"
-msgstr "{WHITE}... alguna cosa ha anat malament (probablement un fitxer corrupte)"
+msgstr "Alguna cosa ha anat malament, probablement un fitxer corrupte."
 
 msgctxt "STR_ERROR_BMPMAP"
 msgid "Can't load landscape from BMP..."
@@ -15085,7 +15085,7 @@ msgstr "Impossible carregar el terreny des del BMP..."
 
 msgctxt "STR_ERROR_BMPMAP_IMAGE_TYPE"
 msgid "could not convert image type"
-msgstr "{WHITE}... no s'ha pogut convertir el tipus d'imatge"
+msgstr "El tipus d'imatge no s'ha pogut canviar."
 
 msgctxt "STR_ERROR_HEIGHTMAP_TOO_LARGE"
 msgid "image is too large"
@@ -15117,11 +15117,11 @@ msgstr "{WHITE}Mapa d'altituds desat correctament amb el nom «{STRING}». El ci
 
 msgctxt "STR_MESSAGE_SCREENSHOT_SUCCESSFULLY"
 msgid "Screenshot successfully saved as '{RAW_STRING}'"
-msgstr "{WHITE}Captura de pantalla desada correctament com a '{STRING}'"
+msgstr "Captura de pantalla desada correctament amb el nom «{STRING}»."
 
 msgctxt "STR_ERROR_SCREENSHOT_FAILED"
 msgid "Screenshot failed!"
-msgstr "{WHITE}Error en la captura de pantalla!"
+msgstr "S'ha produït un error en la captura de pantalla!"
 
 msgctxt "STR_ERROR_MESSAGE_CAPTION"
 msgid "{YELLOW}Message"
@@ -15133,7 +15133,7 @@ msgstr "{YELLOW}Missatge de {COMPANY}"
 
 msgctxt "STR_ERROR_OFF_EDGE_OF_MAP"
 msgid "off edge of map"
-msgstr "{WHITE}Fora del marc del mapa"
+msgstr "Fora del mapa"
 
 msgctxt "STR_ERROR_TOO_CLOSE_TO_EDGE_OF_MAP"
 msgid "too close to edge of map"
@@ -15141,15 +15141,15 @@ msgstr "Massa a prop de la vora del mapa"
 
 msgctxt "STR_ERROR_NOT_ENOUGH_CASH_REQUIRES_CURRENCY"
 msgid "not enough cash - requires {CURRENCY_LONG}"
-msgstr "{WHITE}...no teniu prou diners - us fan falta {CURRENCY_LONG}."
+msgstr "No teniu prou diners. Us fan falta {CURRENCY_LONG}."
 
 msgctxt "STR_ERROR_FLAT_LAND_REQUIRED"
 msgid "flat land required"
-msgstr "{WHITE}Es necessita un terreny pla"
+msgstr "Es necessita terreny pla."
 
 msgctxt "STR_ERROR_LAND_SLOPED_IN_WRONG_DIRECTION"
 msgid "land sloped in wrong direction"
-msgstr "{WHITE}Terreny inclinat en direcció incorrecta"
+msgstr "Terreny inclinat en la direcció incorrecta"
 
 msgctxt "STR_ERROR_CAN_T_DO_THIS"
 msgid "Can't do this..."
@@ -15157,11 +15157,11 @@ msgstr "No es pot fer..."
 
 msgctxt "STR_ERROR_BUILDING_MUST_BE_DEMOLISHED"
 msgid "building must be demolished first"
-msgstr "{WHITE}L'edifici s'ha d'enderrocar primer"
+msgstr "Primer, s'ha d'enderrocar l'edifici."
 
 msgctxt "STR_ERROR_BUILDING_IS_PROTECTED"
 msgid "building is protected"
-msgstr "{WHITE}... l'edifici està protegit"
+msgstr "L'edifici està protegit."
 
 msgctxt "STR_ERROR_CAN_T_CLEAR_THIS_AREA"
 msgid "Can't clear this area..."
@@ -15169,11 +15169,11 @@ msgstr "Aquesta àrea no es pot netejar..."
 
 msgctxt "STR_ERROR_SITE_UNSUITABLE"
 msgid "site unsuitable"
-msgstr "{WHITE}... lloc inadequat"
+msgstr "Lloc inadequat"
 
 msgctxt "STR_ERROR_ALREADY_BUILT"
 msgid "already built"
-msgstr "{WHITE}... ja construït"
+msgstr "Ja està construït."
 
 msgctxt "STR_ERROR_OWNED_BY"
 msgid "owned by {STRING1}"
@@ -15185,23 +15185,23 @@ msgstr "L'àrea és propietat d'una altra companyia."
 
 msgctxt "STR_ERROR_TERRAFORM_LIMIT_REACHED"
 msgid "landscaping limit reached"
-msgstr "{WHITE}... s'ha arribat al límit de neteja de paisatge"
+msgstr "S'ha arribat al límit de modificació del terreny."
 
 msgctxt "STR_ERROR_CLEARING_LIMIT_REACHED"
 msgid "tile clearing limit reached"
-msgstr "{WHITE}... s'ha arribat al límit de neteja de cel·les"
+msgstr "S'ha arribat al límit de neteja de cel·les."
 
 msgctxt "STR_ERROR_TREE_PLANT_LIMIT_REACHED"
 msgid "tree planting limit reached"
-msgstr "{WHITE}... s'ha arribat al límit de plantat d'arbres"
+msgstr "S'ha arribat al límit de plantat d'arbres."
 
 msgctxt "STR_ERROR_NAME_MUST_BE_UNIQUE"
 msgid "name must be unique"
-msgstr "{WHITE}...el nom ha de ser únic."
+msgstr "El nom ha de ser únic."
 
 msgctxt "STR_ERROR_GENERIC_OBJECT_IN_THE_WAY"
 msgid "{STRING} in the way"
-msgstr "{WHITE}{STRING} pel mig"
+msgstr "{STRING} pel mig"
 
 msgctxt "STR_ERROR_NOT_ALLOWED_WHILE_PAUSED"
 msgid "not allowed while paused"
@@ -15221,19 +15221,19 @@ msgstr "Les autoritats locals de {TOWN} rebutgen donar el permís per a l'aeropo
 
 msgctxt "STR_ERROR_BRIBE_FAILED"
 msgid "Your attempted bribe has been discovered by a regional investigator"
-msgstr "{WHITE}El teu intent de suborn ha estat descobert per un investigador regional"
+msgstr "El vostre intent de suborn ha estat descobert per un investigador regional."
 
 msgctxt "STR_ERROR_CAN_T_RAISE_LAND_HERE"
 msgid "Can't raise land here..."
-msgstr "{WHITE}Aquí no es pot elevar el terreny..."
+msgstr "Aquí no es pot elevar el terreny..."
 
 msgctxt "STR_ERROR_CAN_T_LOWER_LAND_HERE"
 msgid "Can't lower land here..."
-msgstr "{WHITE}Aquí no es pot rebaixar el terreny..."
+msgstr "Aquest terreny no es pot rebaixar..."
 
 msgctxt "STR_ERROR_CAN_T_LEVEL_LAND_HERE"
 msgid "Can't level land here..."
-msgstr "{WHITE}Aquí no es pot anivellar..."
+msgstr "Aquí no es pot anivellar..."
 
 msgctxt "STR_ERROR_EXCAVATION_WOULD_DAMAGE"
 msgid "excavation would damage tunnel"
@@ -15245,19 +15245,19 @@ msgstr "Ja és a nivell de mar."
 
 msgctxt "STR_ERROR_TOO_HIGH"
 msgid "too high"
-msgstr "{WHITE}Massa alt"
+msgstr "Massa alt"
 
 msgctxt "STR_ERROR_ALREADY_LEVELLED"
 msgid "already flat"
-msgstr "{WHITE}... ja és pla"
+msgstr "Ja és pla."
 
 msgctxt "STR_ERROR_BRIDGE_TOO_HIGH_AFTER_LOWER_LAND"
 msgid "afterwards the bridge above it would be too high."
-msgstr "{WHITE}Després del canvi, el pont que el travessa seria massa alt."
+msgstr "Després del canvi, el pont que hi ha a sobre seria massa alt."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_RIVER_FIRST"
 msgid "must demolish river first"
-msgstr "{WHITE}Primer cal traure el riu"
+msgstr "Abans cal traure el riu."
 
 msgctxt "STR_ERROR_CAN_T_CHANGE_COMPANY_NAME"
 msgid "Can't change company name..."
@@ -15277,23 +15277,23 @@ msgstr "No es pot demanar més diners..."
 
 msgctxt "STR_ERROR_LOAN_ALREADY_REPAID"
 msgid "no loan to repay"
-msgstr "{WHITE}... No queda préstec per amortitzar"
+msgstr "No teniu cap préstec a amortitzar."
 
 msgctxt "STR_ERROR_CURRENCY_REQUIRED"
 msgid "{CURRENCY_LONG} required"
-msgstr "{WHITE}... {CURRENCY_LONG} necessaris"
+msgstr "En calen {CURRENCY_LONG}."
 
 msgctxt "STR_ERROR_CAN_T_REPAY_LOAN"
 msgid "Can't repay loan..."
-msgstr "{WHITE}No es pot amortitzar préstec..."
+msgstr "El préstec no es pot amortitzar..."
 
 msgctxt "STR_ERROR_INSUFFICIENT_FUNDS"
 msgid "Can't give away money that is loaned from the bank..."
-msgstr "{WHITE}No es poden regalar els diners deixats pel banc..."
+msgstr "Els diners deixats pel banc no es poden regalar..."
 
 msgctxt "STR_ERROR_CAN_T_GIVE_MONEY"
 msgid "Can't give away money to this company..."
-msgstr "{WHITE}No podeu donar diners a aquesta companyia..."
+msgstr "No podeu donar diners a aquesta companyia..."
 
 msgctxt "STR_ERROR_CAN_T_BUY_COMPANY"
 msgid "Can't buy company..."
@@ -15305,7 +15305,7 @@ msgstr "No es pot construir la seu de la companyia..."
 
 msgctxt "STR_ERROR_CAN_T_GENERATE_TOWN"
 msgid "Can't build any towns..."
-msgstr "{WHITE}Impossible construir poblacions..."
+msgstr "No es poden construir poblacions..."
 
 msgctxt "STR_ERROR_CAN_T_RENAME_TOWN"
 msgid "Can't rename town..."
@@ -15313,11 +15313,11 @@ msgstr "No es pot canviar el nom de la població..."
 
 msgctxt "STR_ERROR_CAN_T_FOUND_TOWN_HERE"
 msgid "Can't found town here..."
-msgstr "{WHITE}No es pot construir una població aquí..."
+msgstr "Aquí no es pot construir cap població..."
 
 msgctxt "STR_ERROR_CAN_T_EXPAND_TOWN"
 msgid "Can't expand town..."
-msgstr "{WHITE}No es pot expandir la població..."
+msgstr "La població no es pot expandir..."
 
 msgctxt "STR_ERROR_TOO_CLOSE_TO_ANOTHER_TOWN"
 msgid "too close to another town"
@@ -15329,11 +15329,11 @@ msgstr "Massa poblacions"
 
 msgctxt "STR_ERROR_NO_SPACE_FOR_TOWN"
 msgid "there is no more space on the map"
-msgstr "{WHITE}...no queda espai al mapa."
+msgstr "No queda més espai al mapa."
 
 msgctxt "STR_ERROR_ROAD_WORKS_IN_PROGRESS"
 msgid "road works in progress"
-msgstr "{WHITE}Obres en progrés"
+msgstr "Obres en curs"
 
 msgctxt "STR_ERROR_TOWN_CAN_T_DELETE"
 msgid "Can't delete this town...{}{}A station or depot is referring to the town or a town owned tile can't be removed"
@@ -15341,7 +15341,7 @@ msgstr "Aquesta població no es pot eliminar...{}{}Hi ha una estació, un dipòs
 
 msgctxt "STR_ERROR_STATUE_NO_SUITABLE_PLACE"
 msgid "there is no suitable place for a statue in the centre of this town"
-msgstr "{WHITE}... no hi ha un lloc adequat per situar l'estàtua al centre d'aquesta població"
+msgstr "No hi ha cap lloc adequat al centre d'aquesta població per a posar l'estàtua."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_HOUSE"
 msgid "Can't build house..."
@@ -15353,7 +15353,7 @@ msgstr "Massa indústries"
 
 msgctxt "STR_ERROR_CAN_T_GENERATE_INDUSTRIES"
 msgid "Can't generate industries..."
-msgstr "{WHITE}No es poden generar indústries..."
+msgstr "No es poden generar indústries..."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_HERE"
 msgid "Can't build {STRING} here..."
@@ -15361,11 +15361,11 @@ msgstr "Aquí no es pot construir {STRING}..."
 
 msgctxt "STR_ERROR_CAN_T_CONSTRUCT_THIS_INDUSTRY"
 msgid "Can't construct this industry type here..."
-msgstr "{WHITE}Aquí no es pot construir aquest tipus d'indústria..."
+msgstr "Aquest tipus d'indústria aquí no es pot construir..."
 
 msgctxt "STR_ERROR_CAN_T_PROSPECT_INDUSTRY"
 msgid "Can't prospect industry..."
-msgstr "{WHITE}No es pot fer la prospecció per a la indústria..."
+msgstr "La prospecció per a la indústria no es pot fer..."
 
 msgctxt "STR_ERROR_INDUSTRY_TOO_CLOSE"
 msgid "too close to another industry"
@@ -15373,11 +15373,11 @@ msgstr "Massa a prop d'altres indústries"
 
 msgctxt "STR_ERROR_MUST_FOUND_TOWN_FIRST"
 msgid "must found town first"
-msgstr "{WHITE}...abans s'ha de fundar una població."
+msgstr "Abans s'ha de fundar una població."
 
 msgctxt "STR_ERROR_ONLY_ONE_ALLOWED_PER_TOWN"
 msgid "only one allowed per town"
-msgstr "{WHITE}... només un permès per població"
+msgstr "Només se'n permet un per població."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_IN_TOWNS_WITH_POPULATION_OF_1200"
 msgid "can only be built in towns with a population of at least 1200"
@@ -15385,43 +15385,43 @@ msgstr "Només es pot construir en poblacions de més de 1200 habitants."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_IN_RAINFOREST"
 msgid "can only be built in rainforest areas"
-msgstr "{WHITE}... només es pot construir en àrees de selva tropical"
+msgstr "Només es pot construir en àrees de selva tropical."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_IN_DESERT"
 msgid "can only be built in desert areas"
-msgstr "{WHITE}... només es pot construir en àrees de desert"
+msgstr "Només es pot construir en àrees de desert."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_IN_TOWNS"
 msgid "can only be built in towns (replacing houses)"
-msgstr "{WHITE}... només es pot construir en poblacions (substituint cases)"
+msgstr "Només es pot construir en poblacions (substituint cases)."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_NEAR_TOWN_CENTER"
 msgid "can only be built near the center of towns"
-msgstr "{WHITE}... només es pot construir prop del centre de les poblacions"
+msgstr "Només es pot construir a prop del centre de les poblacions."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_IN_LOW_AREAS"
 msgid "can only be built in low areas"
-msgstr "{WHITE}... només pot ser construït en zones baixes"
+msgstr "Només es pot construir en zones baixes."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_POSITIONED"
 msgid "can only be positioned near edges of map"
-msgstr "{WHITE}... només es pot situar prop dels límits del mapa"
+msgstr "Només es pot situar a prop dels límits del mapa."
 
 msgctxt "STR_ERROR_FOREST_CAN_ONLY_BE_PLANTED"
 msgid "forest can only be planted above snow-line"
-msgstr "{WHITE}... el bosc només es pot plantar en estatges amb neu"
+msgstr "El bosc només es pot plantar en estatges amb neu."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_ABOVE_SNOW_LINE"
 msgid "can only be built above the snow-line"
-msgstr "{WHITE}... només es pot construir en estatges amb neu"
+msgstr "Només es pot construir en estatges amb neu."
 
 msgctxt "STR_ERROR_CAN_ONLY_BE_BUILT_BELOW_SNOW_LINE"
 msgid "can only be built below the snow-line"
-msgstr "{WHITE}... només es pot construir en estatges sense neu"
+msgstr "Només es pot construir en estatges sense neu."
 
 msgctxt "STR_ERROR_PROSPECTING_WAS_UNLUCKY"
 msgid "the funding failed to prospect due to bad luck; try again"
-msgstr "{WHITE}La fundació ha fallat la prospecció per mala sort. Proveu-ho de nou."
+msgstr "La fundació ha fallat la prospecció per mala sort. Proveu-ho de nou."
 
 msgctxt "STR_ERROR_NO_SUITABLE_PLACES_FOR_PROSPECTING"
 msgid "there were no suitable places to prospect for this industry"
@@ -15469,15 +15469,15 @@ msgstr "Fusiona més d'una estació/àrea de càrrega existent."
 
 msgctxt "STR_ERROR_STATION_TOO_SPREAD_OUT"
 msgid "station too spread out"
-msgstr "{WHITE}... estació massa extensa"
+msgstr "Estació massa estesa"
 
 msgctxt "STR_ERROR_STATION_DISALLOWED_NUMBER_TRACKS"
 msgid "unsupported number of tracks"
-msgstr "{WHITE}... nombre de vies no vàlid"
+msgstr "Nombre de vies no vàlid"
 
 msgctxt "STR_ERROR_STATION_DISALLOWED_LENGTH"
 msgid "unsupported length"
-msgstr "{WHITE}... llargada no vàlida"
+msgstr "Llargada no vàlida"
 
 msgctxt "STR_ERROR_TOO_MANY_STATIONS_LOADING"
 msgid "too many stations/loading areas"
@@ -15513,19 +15513,19 @@ msgstr "El senyal de l'estació no es pot moure..."
 
 msgctxt "STR_ERROR_DRIVE_THROUGH_ON_TOWN_ROAD"
 msgid "road owned by a town"
-msgstr "{WHITE}... aquesta carretera és propietat d'una població."
+msgstr "La carretera és propietat d'una població."
 
 msgctxt "STR_ERROR_DRIVE_THROUGH_DIRECTION"
 msgid "road facing in the wrong direction"
-msgstr "{WHITE}... sentit de la carretera en la direcció incorrecta"
+msgstr "La carretera té una direcció incorrecta."
 
 msgctxt "STR_ERROR_DRIVE_THROUGH_CORNER"
 msgid "drive through stops can't have corners"
-msgstr "{WHITE}... les estacions d'autobús de pas no poden tenir cantonades"
+msgstr "Les estacions d'autobús de pas no poden tenir cantonades."
 
 msgctxt "STR_ERROR_DRIVE_THROUGH_JUNCTION"
 msgid "drive through stops can't have junctions"
-msgstr "{WHITE}... les estacions d'autobús de pas no poden tenir interseccions"
+msgstr "Les estacions d'autobús de pas no poden tenir interseccions."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_PART_OF_STATION"
 msgid "Can't remove part of station..."
@@ -15533,7 +15533,7 @@ msgstr "No es pot traure part de la estació..."
 
 msgctxt "STR_ERROR_MUST_REMOVE_RAILWAY_STATION_FIRST"
 msgid "must remove railway station first"
-msgstr "{WHITE}...abans s'ha de treure l'estació de rail."
+msgstr "Abans s'ha de treure l'estació de rail."
 
 msgctxt "STR_ERROR_CAN_T_REMOVE_BUS_STATION"
 msgid "Can't remove bus station..."
@@ -15553,7 +15553,7 @@ msgstr "L'estació de tramvies de mercaderies no es pot traure..."
 
 msgctxt "STR_ERROR_MUST_REMOVE_ROAD_STOP_FIRST"
 msgid "must remove road stop first"
-msgstr "{WHITE}...abans s'ha de treure la parada."
+msgstr "Abans s'ha de treure la parada."
 
 msgctxt "STR_ERROR_THERE_IS_NO_STATION"
 msgid "there is no station here"
@@ -15561,35 +15561,35 @@ msgstr "Aquí no hi ha cap estació."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_RAILROAD"
 msgid "must demolish railway station first"
-msgstr "{WHITE}...primer s'ha d'enderrocar l'estació de tren."
+msgstr "Abans s'ha d'enderrocar l'estació de tren."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_BUS_STATION_FIRST"
 msgid "must demolish bus station first"
-msgstr "{WHITE}...abans s'ha d'enderrocar la parada d'autobús."
+msgstr "Abans s'ha d'enderrocar la parada d'autobús."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_TRUCK_STATION_FIRST"
 msgid "must demolish lorry station first"
-msgstr "{WHITE}...abans s'ha d'enderrocar l'estació de mercaderies."
+msgstr "Abans s'ha d'enderrocar l'estació de mercaderies."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_PASSENGER_TRAM_STATION_FIRST"
 msgid "must demolish passenger tram station first"
-msgstr "{WHITE}...abans s'ha d'enderrocar l'estació de tramvia de passatgers."
+msgstr "Abans s'ha d'enderrocar l'estació de tramvia de passatgers."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_CARGO_TRAM_STATION_FIRST"
 msgid "must demolish freight tram station first"
-msgstr "{WHITE}...abans s'ha d'enderrocar l'estació de tramvia de mercaderies."
+msgstr "Abans s'ha d'enderrocar l'estació de tramvia de mercaderies."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_DOCK_FIRST"
 msgid "must demolish dock first"
-msgstr "{WHITE}...abans s'ha d'enderrocar el moll."
+msgstr "Abans s'ha d'enderrocar el moll."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_AIRPORT_FIRST"
 msgid "must demolish airport first"
-msgstr "{WHITE}...abans s'ha d'enderrocar l'aeroport."
+msgstr "Abans s'ha d'enderrocar l'aeroport."
 
 msgctxt "STR_ERROR_WAYPOINT_ADJOINS_MORE_THAN_ONE_EXISTING"
 msgid "adjoins more than one existing waypoint"
-msgstr "{WHITE}Més d'un punt de pas existent adjunt"
+msgstr "Toca més d'un punt de pas ja existent."
 
 msgctxt "STR_ERROR_TOO_CLOSE_TO_ANOTHER_WAYPOINT"
 msgid "too close to another waypoint"
@@ -15605,7 +15605,7 @@ msgstr "Aquí no es pot construir un punt de pas de carretera..."
 
 msgctxt "STR_ERROR_CAN_T_POSITION_BUOY_HERE"
 msgid "Can't place buoy here..."
-msgstr "{WHITE}Aquí no es pot situar una boia..."
+msgstr "Aquí no es poden posar boies..."
 
 msgctxt "STR_ERROR_CAN_T_CHANGE_WAYPOINT_NAME"
 msgid "Can't change waypoint name..."
@@ -15625,11 +15625,11 @@ msgstr "Aquí no es pot traure cap punt de pas de carretera..."
 
 msgctxt "STR_ERROR_MUST_REMOVE_RAILWAYPOINT_FIRST"
 msgid "must remove rail waypoint first"
-msgstr "{WHITE}...abans s'ha de treure el punt de pas."
+msgstr "Abans s'ha de treure el punt de pas."
 
 msgctxt "STR_ERROR_MUST_REMOVE_ROADWAYPOINT_FIRST"
 msgid "must remove road waypoint first"
-msgstr "{WHITE}...abans s'ha de traure el punt de pas de carretera."
+msgstr "Abans s'ha de traure el punt de pas de carretera."
 
 msgctxt "STR_ERROR_BUOY_IN_THE_WAY"
 msgid "buoy in the way"
@@ -15637,7 +15637,7 @@ msgstr "Boia pel mig"
 
 msgctxt "STR_ERROR_BUOY_IS_IN_USE"
 msgid "buoy is in use by another company!"
-msgstr "{WHITE}... boia en ús per una altra companyia!"
+msgstr "La boia la fa servir una altra companyia!"
 
 msgctxt "STR_ERROR_CAN_T_BUILD_TRAIN_DEPOT"
 msgid "Can't build train depot here..."
@@ -15661,15 +15661,15 @@ msgstr "No es pot canviar el nom de la cotxera..."
 
 msgctxt "STR_ERROR_TRAIN_MUST_BE_STOPPED_INSIDE_DEPOT"
 msgid "must be stopped inside a depot"
-msgstr "{WHITE}... ha d'estar parat a dins la cotxera"
+msgstr "Ha d'estar parat a dins la cotxera."
 
 msgctxt "STR_ERROR_ROAD_VEHICLE_MUST_BE_STOPPED_INSIDE_DEPOT"
 msgid "must be stopped inside a depot"
-msgstr "{WHITE}... ha d'estar parat a dins la cotxera"
+msgstr "Ha d'estar parat a dins la cotxera."
 
 msgctxt "STR_ERROR_SHIP_MUST_BE_STOPPED_INSIDE_DEPOT"
 msgid "must be stopped inside a depot"
-msgstr "{WHITE}... ha d'estar parat a dins la drassana"
+msgstr "Ha d'estar parat a dins la drassana."
 
 msgctxt "STR_ERROR_AIRCRAFT_MUST_BE_STOPPED_INSIDE_HANGAR"
 msgid "must be stopped inside a hangar"
@@ -15677,23 +15677,23 @@ msgstr "L'aeronau ha d'estar parada a dins de l'hangar."
 
 msgctxt "STR_ERROR_TRAINS_CAN_ONLY_BE_ALTERED_INSIDE_A_DEPOT"
 msgid "trains can only be altered when stopped inside a depot"
-msgstr "{WHITE}Els trens només es poden modificar quan estan parats dins d'una cotxera"
+msgstr "Els trens només es poden modificar quan estan parats a dins d'una cotxera"
 
 msgctxt "STR_ERROR_TRAIN_TOO_LONG"
 msgid "train is too long"
-msgstr "{WHITE}Tren massa llarg"
+msgstr "Tren massa llarg"
 
 msgctxt "STR_ERROR_CAN_T_REVERSE_DIRECTION_RAIL_VEHICLE"
 msgid "Can't reverse direction of vehicle..."
-msgstr "{WHITE}No s'ha pogut invertir el sentit del vehicle..."
+msgstr "No s'ha pogut invertir el sentit de circulació del vehicle..."
 
 msgctxt "STR_ERROR_CAN_T_REVERSE_DIRECTION_RAIL_VEHICLE_MULTIPLE_UNITS"
 msgid "consists of multiple units"
-msgstr "{WHITE}... està format per múltiples unitats"
+msgstr "Està format per múltiples unitats."
 
 msgctxt "STR_ERROR_INCOMPATIBLE_RAIL_TYPES"
 msgid "incompatible rail types"
-msgstr "Tipus de rail incompatible"
+msgstr "Tipus de rail incompatibles"
 
 msgctxt "STR_ERROR_CAN_T_MOVE_VEHICLE"
 msgid "Can't move vehicle..."
@@ -15701,7 +15701,7 @@ msgstr "El vehicle no es pot moure..."
 
 msgctxt "STR_ERROR_REAR_ENGINE_FOLLOW_FRONT"
 msgid "the rear engine will always follow its front counterpart"
-msgstr "{WHITE}La màquina posterior sempre ha de seguir la seva parella davantera"
+msgstr "La màquina posterior sempre ha de seguir la seva parella davantera."
 
 msgctxt "STR_ERROR_UNABLE_TO_FIND_ROUTE_TO"
 msgid "unable to find route to local depot"
@@ -15721,7 +15721,7 @@ msgstr "Tipus de cotxera incorrecta"
 
 msgctxt "STR_ERROR_UNBUNCHING_ONLY_ONE_ALLOWED"
 msgid "can only have one unbunching order"
-msgstr "{WHITE}... cada llista d'ordres només pot tenir una ordre d'espaiar."
+msgstr "Cada llista d'ordres només pot tenir una ordre d'espaiar."
 
 msgctxt "STR_ERROR_UNBUNCHING_NO_FULL_LOAD"
 msgid "cannot use full load orders when vehicle has an unbunching order"
@@ -15741,11 +15741,11 @@ msgstr "Els vehicles no es poden espaiar si tenen ordres condicionals."
 
 msgctxt "STR_ERROR_TRAIN_TOO_LONG_AFTER_REPLACEMENT"
 msgid "{VEHICLE} is too long after replacement"
-msgstr "{WHITE}{VEHICLE} és massa llarg després de la substitució"
+msgstr "{VEHICLE} és massa llarg després de la substitució."
 
 msgctxt "STR_ERROR_AUTOREPLACE_NOTHING_TO_DO"
 msgid "No autoreplace/renew rules applied"
-msgstr "{WHITE}No s'han aplicat normes d'autosubstitució/renovació"
+msgstr "No s'han aplicat normes d'autosubstitució/renovació."
 
 msgctxt "STR_ERROR_AUTOREPLACE_MONEY_LIMIT"
 msgid "(money limit)"
@@ -15753,39 +15753,39 @@ msgstr "(límit de diners)"
 
 msgctxt "STR_ERROR_AUTOREPLACE_INCOMPATIBLE_CARGO"
 msgid "New vehicle can't carry {STRING}"
-msgstr "{WHITE}El vehicle nou no pot portar {STRING}."
+msgstr "El vehicle nou no pot portar {STRING}."
 
 msgctxt "STR_ERROR_AUTOREPLACE_INCOMPATIBLE_REFIT"
 msgid "New vehicle can't do refit in order {NUM}"
-msgstr "{WHITE}El vehicle nou no pot complir el remodelat de l'ordre {NUM}."
+msgstr "El vehicle nou no pot complir el remodelat de l'ordre {NUM}."
 
 msgctxt "STR_ERROR_IMPOSSIBLE_TRACK_COMBINATION"
 msgid "impossible track combination"
-msgstr "{WHITE}Combinació de vies impossible"
+msgstr "Combinació de vies impossible"
 
 msgctxt "STR_ERROR_MUST_REMOVE_SIGNALS_FIRST"
 msgid "must remove signals first"
-msgstr "{WHITE}...abans s'han de treure els senyals."
+msgstr "Abans s'han de treure els senyals."
 
 msgctxt "STR_ERROR_NO_SUITABLE_RAILROAD_TRACK"
 msgid "no suitable railway track"
-msgstr "{WHITE}Via de tren no apropiada"
+msgstr "No hi ha vies de tren apropiades."
 
 msgctxt "STR_ERROR_MUST_REMOVE_RAILROAD_TRACK"
 msgid "must remove railway track first"
-msgstr "{WHITE}...abans s'ha de treure la via."
+msgstr "Abans s'ha de treure la via."
 
 msgctxt "STR_ERROR_CROSSING_ON_ONEWAY_ROAD"
 msgid "road is one way or blocked"
-msgstr "{WHITE}La carretera és un d'un sol sentit o està bloquejada"
+msgstr "La carretera és un d'un sol sentit o està blocada."
 
 msgctxt "STR_ERROR_CROSSING_DISALLOWED_RAIL"
 msgid "level crossings not allowed for this rail type"
-msgstr "{WHITE}Els passos a nivell no estan permesos en aquest tipus de via"
+msgstr "Els passos a nivell no estan permesos en aquest tipus de via."
 
 msgctxt "STR_ERROR_CROSSING_DISALLOWED_ROAD"
 msgid "level crossings not allowed for this road type"
-msgstr "{WHITE}No s'admeten passos a nivell en aquest tipus de carretera."
+msgstr "No s'admeten passos a nivell en aquest tipus de carretera."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_SIGNALS_HERE"
 msgid "Can't build signals here..."
@@ -15813,19 +15813,19 @@ msgstr "No hi ha via de tren."
 
 msgctxt "STR_ERROR_THERE_ARE_NO_SIGNALS"
 msgid "there are no signals"
-msgstr "{WHITE}... no hi ha senyals"
+msgstr "No hi ha senyals."
 
 msgctxt "STR_ERROR_CAN_T_CONVERT_RAIL"
 msgid "Can't convert rail type here..."
-msgstr "{WHITE}Aquí no es pot convertir el tipus de via..."
+msgstr "El tipus de via no es pot convertir..."
 
 msgctxt "STR_ERROR_MUST_REMOVE_ROAD_FIRST"
 msgid "must remove road first"
-msgstr "{WHITE}...abans s'ha de treure la carretera."
+msgstr "Abans s'ha de traure la carretera."
 
 msgctxt "STR_ERROR_ONEWAY_ROADS_CAN_T_HAVE_JUNCTION"
 msgid "one way roads can't have junctions"
-msgstr "{WHITE}... les carreteres de sentit únic no poden tenir encreuaments"
+msgstr "Les carreteres de sentit únic no poden tenir encreuaments."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_ROAD_HERE"
 msgid "Can't build road here..."
@@ -15853,19 +15853,19 @@ msgstr "Aquí no hi ha cap via de tramvia."
 
 msgctxt "STR_ERROR_CAN_T_CONVERT_ROAD"
 msgid "Can't convert road type here..."
-msgstr "{WHITE}Aquí no es pot convertir el tipus de carretera..."
+msgstr "El tipus de carretera no es pot convertir..."
 
 msgctxt "STR_ERROR_CAN_T_CONVERT_TRAMWAY"
 msgid "Can't convert tram type here..."
-msgstr "{WHITE}Aquí no es pot convertir el tipus de tramvia..."
+msgstr "El tipus de tramvia no es pot convertir..."
 
 msgctxt "STR_ERROR_NO_SUITABLE_ROAD"
 msgid "no suitable road"
-msgstr "{WHITE}No hi ha una carretera adequada."
+msgstr "La carretera no és adequada."
 
 msgctxt "STR_ERROR_NO_SUITABLE_TRAMWAY"
 msgid "no suitable tramway"
-msgstr "{WHITE}No hi ha vies de tramvia adequades."
+msgstr "No hi ha vies de tramvia adequades."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_CANALS"
 msgid "Can't build canals here..."
@@ -15881,7 +15881,7 @@ msgstr "Aquí no s'hi pot posar rius..."
 
 msgctxt "STR_ERROR_MUST_BE_BUILT_ON_WATER"
 msgid "must be built on water"
-msgstr "{WHITE}...s'ha de construir sobre l'aigua."
+msgstr "S'ha de construir a sobre de l'aigua."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_ON_WATER"
 msgid "can't build on water"
@@ -15901,7 +15901,7 @@ msgstr "No es pot construir sobre el riu."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_CANAL_FIRST"
 msgid "must demolish canal first"
-msgstr "{WHITE}...abans s'ha d'enderrocar el canal."
+msgstr "Abans s'ha d'enderrocar el canal."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_AQUEDUCT_HERE"
 msgid "Can't build aqueduct here..."
@@ -15909,7 +15909,7 @@ msgstr "Aquí no es pot construir un aqüeducte..."
 
 msgctxt "STR_ERROR_TREE_ALREADY_HERE"
 msgid "tree already here"
-msgstr "{WHITE}... aquí ja hi ha arbres"
+msgstr "Aquí ja hi ha arbres."
 
 msgctxt "STR_ERROR_TREE_WRONG_TERRAIN_FOR_TREE_TYPE"
 msgid "wrong terrain for tree type"
@@ -15917,7 +15917,7 @@ msgstr "El terreny no és vàlid per a aquest tipus d'arbre."
 
 msgctxt "STR_ERROR_CAN_T_PLANT_TREE_HERE"
 msgid "Can't plant tree here..."
-msgstr "{WHITE}Aquí no es poden plantar arbres..."
+msgstr "Aquí no es poden plantar arbres..."
 
 msgctxt "STR_ERROR_CAN_T_BUILD_BRIDGE_HERE"
 msgid "Can't build bridge here..."
@@ -15925,7 +15925,7 @@ msgstr "Aquí no es pot construir el pont..."
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_BRIDGE_FIRST"
 msgid "must demolish bridge first"
-msgstr "{WHITE}...abans s'ha d'enderrocar el pont."
+msgstr "Abans s'ha d'enderrocar el pont."
 
 msgctxt "STR_ERROR_CAN_T_START_AND_END_ON"
 msgid "can't start and end in the same spot"
@@ -15933,7 +15933,7 @@ msgstr "No es pot començar i acabar a la mateixa posició."
 
 msgctxt "STR_ERROR_BRIDGEHEADS_NOT_SAME_HEIGHT"
 msgid "bridge heads not at the same level"
-msgstr "{WHITE}Les capçaleres del pont no són al mateix nivell"
+msgstr "Les capçaleres del pont no estan al mateix nivell."
 
 msgctxt "STR_ERROR_BRIDGE_TOO_LOW_FOR_TERRAIN"
 msgid "bridge is too low for the terrain"
@@ -15941,23 +15941,23 @@ msgstr "El pont és massa baix per al terreny."
 
 msgctxt "STR_ERROR_BRIDGE_TOO_HIGH_FOR_TERRAIN"
 msgid "bridge is too high for this terrain."
-msgstr "{WHITE}El pont és massa alt per a aquest terreny."
+msgstr "El pont és massa alt per a aquest terreny."
 
 msgctxt "STR_ERROR_START_AND_END_MUST_BE_IN"
 msgid "start and end must be in line"
-msgstr "{WHITE}Inici i final han d'estar en línia recta"
+msgstr "Inici i final han d'estar en línia recta."
 
 msgctxt "STR_ERROR_ENDS_OF_BRIDGE_MUST_BOTH"
 msgid "ends of bridge must both be on land"
-msgstr "{WHITE}... els extrems del pont han d'estar tots dos a terra"
+msgstr "Els extrems del pont han d'estar ambdós a terra."
 
 msgctxt "STR_ERROR_BRIDGE_TOO_LONG"
 msgid "bridge too long"
-msgstr "{WHITE}... el pont és massa llarg"
+msgstr "El pont és massa llarg."
 
 msgctxt "STR_ERROR_BRIDGE_THROUGH_MAP_BORDER"
 msgid "bridge would end out of the map"
-msgstr "{WHITE}El pont acabaria fora del mapa"
+msgstr "El pont acabaria fora del mapa."
 
 msgctxt "STR_ERROR_BRIDGE_TOO_LOW_FOR_STATION"
 msgid "bridge is {HEIGHT} too low for station"
@@ -16009,11 +16009,11 @@ msgstr "El tunel no es pot construir..."
 
 msgctxt "STR_ERROR_SITE_UNSUITABLE_FOR_TUNNEL"
 msgid "site unsuitable for tunnel entrance"
-msgstr "{WHITE}Lloc inadequat per l'entrada del túnel"
+msgstr "Lloc inadequat per a l'entrada del túnel"
 
 msgctxt "STR_ERROR_MUST_DEMOLISH_TUNNEL_FIRST"
 msgid "must demolish tunnel first"
-msgstr "{WHITE}...abans s'ha d'enderrocar el túnel."
+msgstr "Abans s'ha d'enderrocar el túnel."
 
 msgctxt "STR_ERROR_ANOTHER_TUNNEL_IN_THE_WAY"
 msgid "another tunnel in the way"
@@ -16021,15 +16021,15 @@ msgstr "Hi ha un altre túnel pel mig."
 
 msgctxt "STR_ERROR_TUNNEL_THROUGH_MAP_BORDER"
 msgid "tunnel would end out of the map"
-msgstr "{WHITE}El túnel acabarà fora del mapa"
+msgstr "El túnel acabaria fora del mapa."
 
 msgctxt "STR_ERROR_UNABLE_TO_EXCAVATE_LAND"
 msgid "unable to excavate land for other end of tunnel"
-msgstr "{WHITE}Impossible excavar la terra a l'altre extrem del túnel"
+msgstr "No es pot excavar la terra a l'altre extrem del túnel."
 
 msgctxt "STR_ERROR_TUNNEL_TOO_LONG"
 msgid "tunnel too long"
-msgstr "{WHITE}... túnel massa llarg"
+msgstr "Túnel massa llarg"
 
 msgctxt "STR_ERROR_TOO_MANY_OBJECTS"
 msgid "too many objects"
@@ -16045,7 +16045,7 @@ msgstr "Objecte pel mig"
 
 msgctxt "STR_ERROR_COMPANY_HEADQUARTERS_IN"
 msgid "company headquarters in the way"
-msgstr "{WHITE}... seu de la companyia en el camí"
+msgstr "Hi ha la seu d'una companyia pel mig."
 
 msgctxt "STR_ERROR_CAN_T_PURCHASE_THIS_LAND"
 msgid "Can't purchase this land area..."
@@ -16053,19 +16053,19 @@ msgstr "Aquesta àrea de terreny no es pot comprar..."
 
 msgctxt "STR_ERROR_YOU_ALREADY_OWN_IT"
 msgid "you already own it!"
-msgstr "{WHITE}... ja és propietat teva!"
+msgstr "Ja és propietat vostra!"
 
 msgctxt "STR_ERROR_BUILD_OBJECT_LIMIT_REACHED"
 msgid "object construction limit reached"
-msgstr "{WHITE}... s'ha assolit el límit de construcció d'objectes."
+msgstr "S'ha assolit el límit de construcció d'objectes."
 
 msgctxt "STR_ERROR_GROUP_CAN_T_CREATE"
 msgid "Can't create group..."
-msgstr "{WHITE}No es pot crear el grup..."
+msgstr "El grup no es pot crear..."
 
 msgctxt "STR_ERROR_GROUP_CAN_T_DELETE"
 msgid "Can't delete this group..."
-msgstr "{WHITE}No puc eliminar aquest grup..."
+msgstr "Aquest grup no es pot eliminar..."
 
 msgctxt "STR_ERROR_GROUP_CAN_T_RENAME"
 msgid "Can't rename group..."
@@ -16085,11 +16085,11 @@ msgstr "{WHITE}No es pot eliminar tots els vehicles d'aquest grup..."
 
 msgctxt "STR_ERROR_GROUP_CAN_T_ADD_VEHICLE"
 msgid "Can't add the vehicle to this group..."
-msgstr "{WHITE}No puc afegir el vehicle a aquest grup..."
+msgstr "El vehicle no es pot afegir a aquest grup..."
 
 msgctxt "STR_ERROR_GROUP_CAN_T_ADD_SHARED_VEHICLE"
 msgid "Can't add shared vehicles to group..."
-msgstr "{WHITE}No puc afegir vehicles compartits al grup..."
+msgstr "No es poden afegir vehicles compartits al grup..."
 
 msgctxt "STR_ERROR_TRAIN_IN_THE_WAY"
 msgid "train in the way"
@@ -16117,7 +16117,7 @@ msgstr "El vehicle no està disponible."
 
 msgctxt "STR_ERROR_SHIP_NOT_AVAILABLE"
 msgid "ship is not available"
-msgstr "{WHITE}El vaixell no està disponible"
+msgstr "El vaixell no està disponible."
 
 msgctxt "STR_ERROR_AIRCRAFT_NOT_AVAILABLE"
 msgid "aircraft is not available"
@@ -16125,15 +16125,15 @@ msgstr "L'avió no està disponible."
 
 msgctxt "STR_ERROR_CAN_T_REFIT_TRAIN"
 msgid "Can't refit train..."
-msgstr "{WHITE}No es pot remodelar el tren..."
+msgstr "El tren no es pot remodelar..."
 
 msgctxt "STR_ERROR_CAN_T_REFIT_ROAD_VEHICLE"
 msgid "Can't refit road vehicle..."
-msgstr "{WHITE}No es pot remodelar l'automòbil..."
+msgstr "L'automòbil no es pot remodelar..."
 
 msgctxt "STR_ERROR_CAN_T_REFIT_SHIP"
 msgid "Can't refit ship..."
-msgstr "{WHITE}No es pot remodelar el vaixell..."
+msgstr "El vaixell no es pot remodelar..."
 
 msgctxt "STR_ERROR_CAN_T_REFIT_AIRCRAFT"
 msgid "Can't refit aircraft..."
@@ -16157,15 +16157,15 @@ msgstr "No es pot posar aquest nom a l'aeronau..."
 
 msgctxt "STR_ERROR_CAN_T_STOP_START_TRAIN"
 msgid "Can't stop/start train..."
-msgstr "{WHITE}No es pot parar/engegar el tren..."
+msgstr "El tren no es pot parar/engegar..."
 
 msgctxt "STR_ERROR_CAN_T_STOP_START_ROAD_VEHICLE"
 msgid "Can't stop/start road vehicle..."
-msgstr "{WHITE}No es pot parar/engegar l'automòbil..."
+msgstr "L'automòbil no es pot parar/engegar..."
 
 msgctxt "STR_ERROR_CAN_T_STOP_START_SHIP"
 msgid "Can't stop/start ship..."
-msgstr "{WHITE}No es pot parar/engegar el vaixell..."
+msgstr "El vaixell no es pot parar/engegar..."
 
 msgctxt "STR_ERROR_CAN_T_STOP_START_AIRCRAFT"
 msgid "Can't stop/start aircraft..."
@@ -16173,19 +16173,19 @@ msgstr "No es pot parar/engegar l'aeronau..."
 
 msgctxt "STR_ERROR_CAN_T_SEND_TRAIN_TO_DEPOT"
 msgid "Can't send train to depot..."
-msgstr "{WHITE}No pots enviar el tren a cotxeres..."
+msgstr "No es pot enviar el tren a cotxeres..."
 
 msgctxt "STR_ERROR_CAN_T_SEND_ROAD_VEHICLE_TO_DEPOT"
 msgid "Can't send road vehicle to depot..."
-msgstr "{WHITE}No es pot enviar el vehicle a cotxera..."
+msgstr "El vehicle no es pot enviar a la cotxera..."
 
 msgctxt "STR_ERROR_CAN_T_SEND_SHIP_TO_DEPOT"
 msgid "Can't send ship to depot..."
-msgstr "{WHITE}No es pot enviar vaixell a la drassana..."
+msgstr "El vaixell no es pot enviar a la drassana..."
 
 msgctxt "STR_ERROR_CAN_T_SEND_AIRCRAFT_TO_HANGAR"
 msgid "Can't send aircraft to hangar..."
-msgstr "{WHITE}No es pot enviar l'avió a l'hangar..."
+msgstr "L'avió no es pot enviar a l'hangar..."
 
 msgctxt "STR_ERROR_CAN_T_BUY_TRAIN"
 msgid "Can't buy railway vehicle..."
@@ -16205,7 +16205,7 @@ msgstr "No es pot comprar l'aeronau..."
 
 msgctxt "STR_ERROR_CAN_T_RENAME_TRAIN_TYPE"
 msgid "Can't rename train vehicle type..."
-msgstr "{WHITE}No es pot canviar el nom del tipus de vehicle ferroviari..."
+msgstr "El nom del tipus de vehicle ferroviari no es pot canviar..."
 
 msgctxt "STR_ERROR_CAN_T_RENAME_ROAD_VEHICLE_TYPE"
 msgid "Can't rename road vehicle type..."
@@ -16221,19 +16221,19 @@ msgstr "No es pot canviar el nom del tipus d'aeronau..."
 
 msgctxt "STR_ERROR_CAN_T_SELL_TRAIN"
 msgid "Can't sell railway vehicle..."
-msgstr "{WHITE}No es pot vendre el vehicle..."
+msgstr "El vehicle no es pot vendre..."
 
 msgctxt "STR_ERROR_CAN_T_SELL_ROAD_VEHICLE"
 msgid "Can't sell road vehicle..."
-msgstr "{WHITE}No pots vendre l'automòbil..."
+msgstr "L'automòbil no es pot vendre..."
 
 msgctxt "STR_ERROR_CAN_T_SELL_SHIP"
 msgid "Can't sell ship..."
-msgstr "{WHITE}No es pot vendre el vaixell..."
+msgstr "El vaixell no es pot vendre..."
 
 msgctxt "STR_ERROR_CAN_T_SELL_AIRCRAFT"
 msgid "Can't sell aircraft..."
-msgstr "{WHITE}No es pot vendre l'avió..."
+msgstr "L'aeronau no es pot vendre..."
 
 msgctxt "STR_ERROR_CAN_T_SELL_ALL_TRAIN"
 msgid "Can't sell all railway vehicles..."
@@ -16281,7 +16281,7 @@ msgstr "Vehicle destruït"
 
 msgctxt "STR_ERROR_CAN_T_CLONE_VEHICLE_LIST"
 msgid "not all vehicles are identical"
-msgstr "{WHITE}... no tots els vehicles són idèntics."
+msgstr "No tots els vehicles són idèntics."
 
 msgctxt "STR_ERROR_NO_VEHICLES_AVAILABLE_AT_ALL"
 msgid "No vehicles will be available at all"
@@ -16297,7 +16297,7 @@ msgstr "Encara no hi ha vehicles disponibles."
 
 msgctxt "STR_ERROR_NO_VEHICLES_AVAILABLE_YET_EXPLANATION"
 msgid "Start a new game after {DATE_SHORT} or use a NewGRF that provides early vehicles"
-msgstr "{WHITE}Inicieu una partida nova després de {DATE_SHORT} o useu un NewGRF que proporcioni vehicles primerencs."
+msgstr "Inicieu una partida nova després de {DATE_SHORT} o feu servir un NewGRF que proporcioni vehicles primerencs."
 
 msgctxt "STR_ERROR_NO_TOWN_ROADTYPES_AVAILABLE_AT_ALL"
 msgid "No town-buildable road types are available"
@@ -16321,15 +16321,15 @@ msgstr "No es pot fer que un tren passi quan hi ha un senyal de perill..."
 
 msgctxt "STR_ERROR_CAN_T_REVERSE_DIRECTION_TRAIN"
 msgid "Can't reverse direction of train..."
-msgstr "{WHITE}No es pot invertir la direcció del tren..."
+msgstr "No es pot invertir el sentit de circulació del tren..."
 
 msgctxt "STR_ERROR_TRAIN_START_NO_POWER"
 msgid "train has no power"
-msgstr "El tren no té corrent"
+msgstr "El tren no té potència."
 
 msgctxt "STR_ERROR_CAN_T_MAKE_ROAD_VEHICLE_TURN"
 msgid "Can't make road vehicle turn around..."
-msgstr "{WHITE}No s'ha pogut fer girar el vehicle..."
+msgstr "El vehicle no s'ha pogut girar..."
 
 msgctxt "STR_ERROR_AIRCRAFT_IS_IN_FLIGHT"
 msgid "aircraft is in flight"
@@ -16337,7 +16337,7 @@ msgstr "L'avió està volant."
 
 msgctxt "STR_ERROR_NO_MORE_SPACE_FOR_ORDERS"
 msgid "no more space for orders"
-msgstr "{WHITE}...no hi ha més espai disponible per ordres."
+msgstr "No hi ha més espai disponible per a més ordres."
 
 msgctxt "STR_ERROR_TOO_MANY_ORDERS"
 msgid "too many orders"
@@ -16353,7 +16353,7 @@ msgstr "Aquesta ordre no es pot esborrar..."
 
 msgctxt "STR_ERROR_CAN_T_MODIFY_THIS_ORDER"
 msgid "Can't modify this order..."
-msgstr "{WHITE}No es pot modificar aquesta ordre..."
+msgstr "Aquesta ordre no es pot modificar..."
 
 msgctxt "STR_ERROR_CAN_T_MOVE_THIS_ORDER"
 msgid "Can't move this order..."
@@ -16361,11 +16361,11 @@ msgstr "Aquesta ordre no es pot moure..."
 
 msgctxt "STR_ERROR_CAN_T_SKIP_ORDER"
 msgid "Can't skip current order..."
-msgstr "{WHITE}Impossible saltar l'ordre actual..."
+msgstr "L'ordre actual no es pot saltar..."
 
 msgctxt "STR_ERROR_CAN_T_SKIP_TO_ORDER"
 msgid "Can't skip to selected order..."
-msgstr "{WHITE}Impossible saltar l'ordre seleccionada..."
+msgstr "L'ordre seleccionada no es pot saltar..."
 
 msgctxt "STR_ERROR_CAN_T_COPY_SHARE_ORDER"
 msgid "vehicle can't go to all stations"
@@ -16389,11 +16389,11 @@ msgstr "{WHITE}... no tots els vehicles comparteixen ordres."
 
 msgctxt "STR_ERROR_CAN_T_SHARE_ORDER_LIST"
 msgid "Can't share order list..."
-msgstr "{WHITE}No es pot compartir la llista d'ordres..."
+msgstr "La llista d'ordres no es pot compartir..."
 
 msgctxt "STR_ERROR_CAN_T_STOP_SHARING_ORDER_LIST"
 msgid "Can't stop sharing order list..."
-msgstr "{WHITE}No es pot deixar de compartir la llista d'ordres..."
+msgstr "La llista d'ordres no es pot deixar de compartir..."
 
 msgctxt "STR_ERROR_CAN_T_COPY_ORDER_LIST"
 msgid "Can't copy order list..."
@@ -16413,19 +16413,19 @@ msgstr "No hi ha cap estació de tren."
 
 msgctxt "STR_ERROR_NO_BUS_STATION"
 msgid "There is no bus station"
-msgstr "{WHITE}No hi ha cap estació d'autobusos"
+msgstr "No hi ha cap estació d'autobusos."
 
 msgctxt "STR_ERROR_NO_TRUCK_STATION"
 msgid "There is no lorry station"
-msgstr "{WHITE}No hi ha cap estació de camions"
+msgstr "No hi ha cap estació de camions."
 
 msgctxt "STR_ERROR_NO_DOCK"
 msgid "There is no dock"
-msgstr "{WHITE}No hi ha cap port"
+msgstr "No hi ha cap moll."
 
 msgctxt "STR_ERROR_NO_AIRPORT"
 msgid "There is no airport/heliport"
-msgstr "{WHITE}No hi ha cap aeroport/heliport"
+msgstr "No hi ha cap aeroport/heliport."
 
 msgctxt "STR_ERROR_NO_STOP_COMPATIBLE_ROAD_TYPE"
 msgid "There are no stops with a compatible road type"
@@ -16437,7 +16437,7 @@ msgstr "No hi ha parades amb un tipus de tramvia compatible."
 
 msgctxt "STR_ERROR_NO_STOP_ARTICULATED_VEHICLE"
 msgid "There are no stops which are suitable for articulated road vehicles.{}Articulated road vehicles require a drive-through stop, not a bay stop"
-msgstr "{WHITE}No hi ha parades que siguin adequades per a vehicles de carretera articulats.{}Aquest tipus de vehicles necessiten una estació de pas, no pas una estació final"
+msgstr "No hi ha parades adequades per a vehicles de carretera articulats.{}Aquest tipus de vehicles necessiten una estació de pas, no pas una estació final."
 
 msgctxt "STR_ERROR_AIRPORT_NO_PLANES"
 msgid "This plane cannot land at this heliport"
@@ -16453,31 +16453,31 @@ msgstr "No hi ha cap punt de pas."
 
 msgctxt "STR_ERROR_NO_ROAD_WAYPOINT"
 msgid "There is no road waypoint"
-msgstr "{WHITE}No hi ha cap punt de control de carretera."
+msgstr "No hi ha cap punt de control de carretera."
 
 msgctxt "STR_ERROR_NO_BUOY"
 msgid "There is no buoy"
-msgstr "{WHITE}No hi ha cap boia"
+msgstr "No hi ha cap boia."
 
 msgctxt "STR_ERROR_CAN_T_TIMETABLE_VEHICLE"
 msgid "Can't timetable vehicle..."
-msgstr "{WHITE}Impossible establir l'horari del vehicle..."
+msgstr "L'horari del vehicle no es pot establir..."
 
 msgctxt "STR_ERROR_TIMETABLE_ONLY_WAIT_AT_STATIONS"
 msgid "vehicles can only wait at stations"
-msgstr "{WHITE}Els vehicles només poden esperar a les estacions"
+msgstr "Els vehicles només poden esperar a les estacions."
 
 msgctxt "STR_ERROR_TIMETABLE_NOT_STOPPING_HERE"
 msgid "this vehicle is not stopping at this station"
-msgstr "{WHITE}Aquest vehicle no para en aquesta estació"
+msgstr "Aquest vehicle no para en aquesta estació."
 
 msgctxt "STR_ERROR_TIMETABLE_INCOMPLETE"
 msgid "timetable is incomplete"
-msgstr "{WHITE}... l'horari està incomplet."
+msgstr "L'horari està incomplet."
 
 msgctxt "STR_ERROR_TIMETABLE_NOT_STARTED"
 msgid "timetable has not started yet"
-msgstr "{WHITE}... l'horari encara no ha començat."
+msgstr "L'horari encara no ha començat."
 
 msgctxt "STR_ERROR_TOO_MANY_SIGNS"
 msgid "too many signs"
