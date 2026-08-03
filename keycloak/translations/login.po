@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-27 11:11+0000\n"
+"POT-Creation-Date: 2026-08-03 11:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1139,10 +1139,6 @@ msgstr "El nom d’usuari ja existeix."
 msgid "Email already exists."
 msgstr "El correu electrònic ja existeix."
 
-#: didExistsMessage
-msgid "DID already exists."
-msgstr "El DID ja existeix."
-
 #: federatedIdentityExistsMessage
 msgid ""
 "User with {0} {1} already exists. Please login to account management to link "
@@ -1164,8 +1160,8 @@ msgid ""
 "The ID token issued by the identity provider does not match the configured "
 "essential claim. Please contact your administrator."
 msgstr ""
-"El codi d’autorització de l’ID emès pel proveïdor d’identitat no concorda "
-"amb la declaració essencial configurada. Contacteu amb l’administrador."
+"El testimoni de l’ID emès pel proveïdor d’identitat no concorda amb la "
+"reclamació essencial configurada. Contacteu amb l’administrador."
 
 #: confirmLinkIdpTitle
 msgid "Account already exists"
@@ -2388,3 +2384,15 @@ msgstr "Inicieu sessió amb la vostra cartera"
 #: oid4vpOpenWalletApp
 msgid "Open wallet app"
 msgstr "Obre l’aplicació de cartera"
+
+#: oid4vpScanQrCode
+msgid "Or scan the QR code with the wallet on another device"
+msgstr ""
+
+#: oid4vpQrCodeAlt
+msgid "QR code to sign in with a wallet on another device"
+msgstr ""
+
+#: oid4vpQrExpired
+msgid "The QR code is no longer valid. To restart the login process"
+msgstr ""
