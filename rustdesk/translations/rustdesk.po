@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-06 09:19+0000\n"
+"POT-Creation-Date: 2026-08-03 11:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -511,6 +511,10 @@ msgstr "Credencials errònies"
 msgid "Your device"
 msgstr "Aquest dispositiu"
 
+#: .Your+ip+is+blocked+by+the+peer
+msgid "Your IP is blocked by the peer"
+msgstr "La vostra IP està bloquejada per l'altre extrem"
+
 #: .ab_web_console_tip
 msgid "More on web console"
 msgstr "Més a la consola web"
@@ -892,6 +896,26 @@ msgid ""
 "If you want to force the use of a relay connection on the first connection, "
 "add \"/r\" at the end of the ID, for example, \"9123456234/r\"."
 msgstr "Evita que l'usuari pugui interactuar p. ex. amb el teclat o ratolí"
+
+#: .id_whitelist_caveat_tip
+msgid ""
+"The ID is reported by the connecting client. This whitelist reduces exposure "
+"and does not replace the password or 2FA."
+msgstr ""
+"L'ID és informat pel client que es connecta. Aquesta llista blanca redueix "
+"l'exposició i no substitueix la contrasenya ni la 2FA"
+
+#: .id_whitelist_tip
+msgid "Only whitelisted IDs can access me"
+msgstr "Només els ID admesos es podran connectar"
+
+#: .id_whitelist_wildcard_tip
+msgid ""
+"Wildcards are supported: '*' matches any number of characters, '?' matches "
+"exactly one character"
+msgstr ""
+"S'admeten comodins: '*' coincideix amb qualsevol nombre de caràcters, '?' "
+"amb un sol caràcter"
 
 #: .idd_not_support_under_win10_2004_tip
 msgid ""
@@ -1378,6 +1402,10 @@ msgstr ""
 #: .websocket_tip
 msgid "When using WebSocket, only relay connections are supported."
 msgstr "En utilitzar WebSocket, només s'admeten connexions per repetidor."
+
+#: .whitelist_cidr_tip
+msgid "CIDR notation is supported, e.g. 192.168.1.0/24"
+msgstr "S'admet la notació CIDR, per exemple 192.168.1.0/24"
 
 #: .whitelist_sep
 msgid "Separated by comma, semicolon, spaces or new line"
