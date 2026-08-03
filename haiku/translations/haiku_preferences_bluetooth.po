@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:50+0000\n"
+"POT-Creation-Date: 2026-08-03 11:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,6 +11,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.12.2\n"
+
+#: Remote+devices
+msgctxt "Remote devices"
+msgid "Cancel"
+msgstr "Cancel·la"
 
 #: Settings+view
 msgid "Laptop"
@@ -28,9 +33,21 @@ msgstr "15 s"
 msgid "Quit"
 msgstr "Surt"
 
+#: Inquiry+panel
+msgid "Scan finished"
+msgstr "Escaneig acabat"
+
 #: Device+View
 msgid "Manufacturer: "
 msgstr "Fabricant : "
+
+#: Inquiry+panel
+msgid "Scan"
+msgstr "Escaneig"
+
+#: Inquiry+panel
+msgid "%secs% remaining"
+msgstr "%secs% restants"
 
 #: Settings+view
 msgid "Desktop"
@@ -56,6 +73,10 @@ msgstr "Classes de serveis : "
 #: Window
 msgid "Remote devices"
 msgstr "Dispositius remots"
+
+#: Inquiry+panel
+msgid "This computer doesn't seem to have Bluetooth support."
+msgstr "Sembla que aquest ordinador no té compatibilitat amb Bluetooth."
 
 #: Window
 msgid "Settings"
@@ -85,6 +106,14 @@ msgstr "Actualitza els dispositius locals..."
 msgid "Disconnect"
 msgstr "Desconnecta"
 
+#: Inquiry+panel
+msgid ""
+"Make sure Bluetooth capabilities of the remote device are activated before "
+"starting the scan."
+msgstr ""
+"Assegureu-vos que les funcionalitats del Bluetooth del dispositiu remot "
+"estiguin activades abans d'iniciar l'escaneig."
+
 #: Window
 msgid "Defaults"
 msgstr "Valors predeterminats"
@@ -98,6 +127,7 @@ msgid "Start bluetooth services…"
 msgstr "Inicia el servei del Bluetooth"
 
 #: Inquiry+panel
+msgctxt "Inquiry panel"
 msgid "Cancel"
 msgstr "Cancel·la"
 
@@ -108,6 +138,10 @@ msgstr "Llança ara"
 #: System+name
 msgid "Bluetooth"
 msgstr "Bluetooth"
+
+#: Inquiry+panel
+msgid "Retrieving name of '%1'"
+msgstr "Es recupera el nom de «%1»"
 
 #: Remote+devices
 msgid "Remove"
@@ -205,6 +239,10 @@ msgstr "Política de connexions d'entrada:"
 msgid "Retrieving names…"
 msgstr "S'obtenen els noms..."
 
+#: Inquiry+panel
+msgid "Canceling scan…"
+msgstr "Es cancel·la l'escaneig…"
+
 #: Extended+local+device+view
 msgid "Show name"
 msgstr "Mostra el nom"
@@ -212,6 +250,10 @@ msgstr "Mostra el nom"
 #: Inquiry+panel
 msgid "Add device to list"
 msgstr "Afegeix el dispositiu a la llista"
+
+#: Inquiry+panel
+msgid "Scanning progress:"
+msgstr "Progrés de l'escaneig:"
 
 #: main
 msgid "The Bluetooth services are not currently running on this system."
@@ -232,6 +274,10 @@ msgstr "Telèfon intel·ligent"
 #: Settings+view
 msgid "Default inquiry time:"
 msgstr "Temps de consulta per defecte:"
+
+#: Settings+view
+msgid "Friendly name:"
+msgstr "Nom descriptiu:"
 
 #: Settings+view
 msgctxt "Settings view"
