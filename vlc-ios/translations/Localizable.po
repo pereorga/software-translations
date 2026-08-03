@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-27 11:11+0000\n"
+"POT-Creation-Date: 2026-08-03 11:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -313,6 +313,7 @@ msgstr "Tancar la sessió"
 
 #: BUTTON_CONTINUE
 msgctxt "BUTTON_CONTINUE"
+"BUTTON_CONTINUE"
 msgid "Continue"
 msgstr "Continua"
 
@@ -560,6 +561,75 @@ msgstr "Reproduir o descarregar contingut multimèdia des de serveis en línia"
 #: HEADER_TITLE_RENDERER
 msgid "Select a casting device"
 msgstr "Selecciona un dispositiu de buidatge"
+
+#: ONAIR
+msgid "On Air"
+msgstr ""
+
+#: ONAIR_ZERO_TITLE
+msgid "Everything you follow, in one place"
+msgstr ""
+
+#: ONAIR_ZERO_SUBTITLE
+msgid "Start with any of the three. Your favorites stay on this device."
+msgstr ""
+
+#: ONAIR_CONTINUE
+msgctxt "ONAIR_CONTINUE"
+msgid "Continue"
+msgstr ""
+
+#: ONAIR_CONTINUE_PAUSED
+msgid "Paused %@"
+msgstr ""
+
+#: ONAIR_ADD
+msgid "Add"
+msgstr ""
+
+#: ONAIR_FIND_STATION
+msgid "Find a station"
+msgstr ""
+
+#: ONAIR_PODCASTS
+msgid "Podcasts"
+msgstr ""
+
+#: ONAIR_PODCASTS_EMPTY_TITLE
+msgid "No subscriptions yet"
+msgstr ""
+
+#: ONAIR_PODCASTS_EMPTY_BODY
+msgid "Paste an RSS feed to subscribe."
+msgstr ""
+
+#: ONAIR_PODCASTS_ZERO_BODY
+msgid "Bring your own feed to get started."
+msgstr ""
+
+#: ONAIR_PASTE_RSS
+msgid "Paste RSS"
+msgstr ""
+
+#: ONAIR_TV
+msgid "TV"
+msgstr ""
+
+#: ONAIR_TV_EMPTY_TITLE
+msgid "No channels yet"
+msgstr ""
+
+#: ONAIR_TV_EMPTY_BODY
+msgid "Public channels, or your own M3U."
+msgstr ""
+
+#: ONAIR_OPEN_DIRECTORY
+msgid "Open directory"
+msgstr ""
+
+#: ONAIR_ADD_M3U
+msgid "Add M3U"
+msgstr ""
 
 #: BROWSE
 msgid "Browse"
@@ -1076,6 +1146,14 @@ msgstr "Arxius baixats"
 msgid "Just click the file you want to download from your %@."
 msgstr "Has de fer clic en l'arxiu que vols descarregar del teu %@."
 
+#: WEBINTF_DOWNLOAD_ALL
+msgid "Download All"
+msgstr ""
+
+#: WEBINTF_DOWNLOAD_SELECTED
+msgid "Download Selected (%@)"
+msgstr ""
+
 #: WEBINTF_ADDRESS_COPIED
 msgid "Address copied to clipboard"
 msgstr "L'adreça s'ha copiat al porta-retalls"
@@ -1309,6 +1387,113 @@ msgstr "LLista de reproducció"
 #: FOLDERS
 msgid "Folders"
 msgstr "Carpetes"
+
+#.
+#. MARK: - Podcasts
+#: PODCAST_CONTENT_TITLE
+msgid "Content"
+msgstr ""
+
+#: PODCAST_CONTINUE_LISTENING
+msgid "Continue Listening"
+msgstr ""
+
+#: PODCAST_LATEST_EPISODES
+msgid "Latest Episodes"
+msgstr ""
+
+#: PODCAST_SHOWS
+msgid "Shows"
+msgstr ""
+
+#: PODCAST_SORT_EPISODES_HINT
+msgid "Sort the episodes in this show"
+msgstr ""
+
+#: PODCAST_EPISODE_COUNT
+msgid "%d episodes"
+msgstr ""
+
+#: PODCAST_EPISODE_DOWNLOAD
+msgid "Download episode"
+msgstr ""
+
+#: PODCAST_EPISODE_DOWNLOADED
+msgid "Episode downloaded"
+msgstr ""
+
+#: PODCAST_EPISODE_DOWNLOADING
+msgid "Downloading episode"
+msgstr ""
+
+#: PODCAST_DELETE_DOWNLOAD_TITLE
+msgid "Remove Download"
+msgstr ""
+
+#: PODCAST_DELETE_DOWNLOAD_MESSAGE
+msgid ""
+"This will delete the downloaded copy of this episode. You can download it "
+"again later."
+msgstr ""
+
+#: PODCAST_SUBSCRIBE
+msgid "Subscribe"
+msgstr ""
+
+#: PODCAST_SUBSCRIBED
+msgid "Subscribed"
+msgstr ""
+
+#: PODCAST_EMPTY_TITLE
+msgid "No Podcasts Yet"
+msgstr ""
+
+#: PODCAST_EMPTY_DESCRIPTION
+msgid "Add a show via its RSS feed URL to start listening."
+msgstr ""
+
+#: PODCAST_ADD_VIA_RSS
+msgid "Add via RSS URL"
+msgstr ""
+
+#: PODCAST_ADD_BUTTON
+msgid "Add Podcast"
+msgstr ""
+
+#: PODCAST_ADD_RSS_PLACEHOLDER
+msgid "https://example.com/feed.xml"
+msgstr ""
+
+#: PODCAST_ADD_RSS_ERROR
+msgid "Couldn't add this podcast. Check the URL and try again."
+msgstr ""
+
+#: PODCAST_ADD_RSS_ERROR_EMPTY
+msgid "Enter a podcast feed URL."
+msgstr ""
+
+#: PODCAST_ADD_RSS_ERROR_INVALID_URL
+msgid "That doesn't look like a valid URL."
+msgstr ""
+
+#: PODCAST_ADD_RSS_ERROR_SCHEME
+msgid "Only http:// and https:// feed URLs are supported."
+msgstr ""
+
+#: PODCAST_ADD_RSS_ERROR_NETWORK
+msgid ""
+"Couldn't reach that address. Check your internet connection and the URL."
+msgstr ""
+
+#: PODCAST_ADD_RSS_ERROR_HTTP
+msgid "That address returned an error (%d). Double-check the feed URL."
+msgstr ""
+
+#: PODCAST_ADD_RSS_ERROR_NOT_A_FEED
+msgid ""
+"That URL doesn't look like a podcast feed. Make sure it points directly to "
+"the RSS/XML feed, not the podcast's webpage."
+msgstr ""
 
 #: VIDEO_GROUPS
 msgid "Video groups"
@@ -2645,3 +2830,7 @@ msgstr "Assigna el subtítol principal"
 #: SUBTITLE_ASSIGN_SECONDARY
 msgid "Assign secondary subtitle"
 msgstr "Assigna el subtítol secundari"
+
+#: LAST_PLAYED_MEDIALIST
+msgid "Last played medialist"
+msgstr ""
