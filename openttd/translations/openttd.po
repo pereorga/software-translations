@@ -1563,6 +1563,10 @@ msgctxt "STR_ABOUT_MENU_HELP"
 msgid "Help & manuals"
 msgstr "Ajuda i manuals"
 
+msgctxt "STR_ABOUT_MENU_ENTER_SCREENSAVER_MODE"
+msgid "Toggle screensaver mode"
+msgstr "Commuta el mode protector de pantalla"
+
 msgctxt "STR_ABOUT_MENU_TOGGLE_CONSOLE"
 msgid "Toggle console"
 msgstr "Commuta la consola"
@@ -9051,6 +9055,10 @@ msgctxt "STR_TERRAFORM_TOOLTIP_PLACE_ROCKY_AREAS_ON_LANDSCAPE"
 msgid "{BLACK}Place rocky areas on landscape.{}Ctrl+Click to remove rocky areas"
 msgstr "{BLACK}Situa àrees de roques al paisatge.{}Amb Ctrl+clic, es trauen àrees senceres de roques."
 
+msgctxt "STR_TERRAFORM_TOOLTIP_PLACE_ROUGH_AREAS_ON_LANDSCAPE"
+msgid "{BLACK}Place rough areas on landscape.{}Ctrl+Click to remove rough areas"
+msgstr "{BLACK}Definiu terreny irregular al mapa.{}Amb Ctrl+clic, es trauran les àrees irregulars."
+
 msgctxt "STR_TERRAFORM_TOOLTIP_DEFINE_DESERT_AREA"
 msgid "{BLACK}Define desert area.{}Ctrl+Click to remove desert area"
 msgstr "{BLACK}Defineix àrea de desert.{}Amb Ctrl+clic, es treu l'àrea de desert."
@@ -10062,6 +10070,18 @@ msgstr "{BLACK}Carrega el mapa d'alçades seleccionat"
 msgctxt "STR_SAVELOAD_LOAD_TOWN_DATA_TOOLTIP"
 msgid "{BLACK}Load the selected town data"
 msgstr "{BLACK}Carrega les dades de les poblacions triades"
+
+msgctxt "STR_SAVELOAD_NEW_DIRECTORY_BUTTON"
+msgid "{BLACK}New Folder"
+msgstr "{BLACK}Carpeta nova"
+
+msgctxt "STR_SAVELOAD_NEW_DIRECTORY_TOOLTIP"
+msgid "{BLACK}Create a new folder in the current location"
+msgstr "{BLACK}Crea una carpeta nova a la ubicació actual."
+
+msgctxt "STR_SAVELOAD_NEW_DIRECTORY_QUERY_CAPTION"
+msgid "{WHITE}Enter a name for the new folder"
+msgstr "{WHITE}Escriu un nom per a la carpeta"
 
 msgctxt "STR_SAVELOAD_DETAIL_CAPTION"
 msgid "{BLACK}Game Details"
@@ -15014,6 +15034,26 @@ msgstr "La partida no s'ha pogut desar..."
 msgctxt "STR_ERROR_UNABLE_TO_DELETE_FILE"
 msgid "Unable to delete file"
 msgstr "El fitxer no es pot esborrar."
+
+msgctxt "STR_ERROR_CANNOT_CREATE_DIRECTORY"
+msgid "Cannot create folder..."
+msgstr "La carpeta no es pot crear..."
+
+msgctxt "STR_ERROR_DIRECTORY_NAME_IN_USE"
+msgid "A file or folder with that name already exists"
+msgstr "Ja existeix un fitxer o carpeta amb aquest nom."
+
+msgctxt "STR_ERROR_DIRECTORY_ILLEGAL_NAME"
+msgid "Folder name cannot contain special characters"
+msgstr "El nom de la carpeta no pot contenir caràcters especials."
+
+msgctxt "STR_ERROR_DIRECTORY_LEADING_DOT"
+msgid "Folder name cannot start with a dot"
+msgstr "El nom de la carpeta no pot començar amb un punt."
+
+msgctxt "STR_ERROR_DIRECTORY_PERMISSION_DENIED"
+msgid "You do not have permission to create a folder here"
+msgstr "No teniu permís per a crear una carpeta aquí."
 
 msgctxt "STR_ERROR_GAME_LOAD_FAILED"
 msgid "Game load failed..."
