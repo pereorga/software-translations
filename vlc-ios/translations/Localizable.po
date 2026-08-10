@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 11:14+0000\n"
+"POT-Creation-Date: 2026-08-10 09:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -243,10 +243,6 @@ msgstr "Voleu continuar la reproducció?"
 msgid "Would you like to continue playback of \"%@\" where you left off?"
 msgstr "Vols continuar reproduint \"%@\" on ho vas deixar?"
 
-#: BUTTON_ABOUT
-msgid "About"
-msgstr "Quant a"
-
 #: BUTTON_BACK
 msgid "Back"
 msgstr "Endarrere"
@@ -328,6 +324,11 @@ msgstr "Inicialitza"
 #: BUTTON_RESCAN
 msgid "Rescan"
 msgstr "Re-escanaig"
+
+#: BUTTON_SYNC
+msgctxt "BUTTON_SYNC"
+msgid "Sync"
+msgstr ""
 
 #: PRIVATE_PLAYBACK_TOGGLE
 msgid "Private Playback"
@@ -424,13 +425,7 @@ msgstr "Gestionat"
 msgid "Download canceled by user"
 msgstr "Baixada cancel·lada per l'usuari"
 
-#: DOWNLOAD_FROM_HTTP
-msgctxt "DOWNLOAD_FROM_HTTP"
-msgid "Transfers"
-msgstr "Baixades"
-
 #: TRANSFERS
-msgctxt "TRANSFERS"
 msgid "Transfers"
 msgstr "Baixades"
 
@@ -512,124 +507,33 @@ msgstr "Cap aplicació per a obrir aquest tipus d'arxiu"
 msgid "File was successfully saved to the Camera Roll"
 msgstr "L'arxiu s'ha guardat satisfactòriament en el Rodet"
 
+#: RADIO
+msgid "Radio"
+msgstr "Ràdio"
+
+#: RADIOVC_DETAILTEXT
+msgid "Listen to radio stations from around the world"
+msgstr "Escolteu emissores de ràdio d'arreu del món"
+
 #: COUNTRIES
 msgid "Countries"
-msgstr ""
+msgstr "Països"
 
 #: ALL_COUNTRIES
 msgid "All Countries"
-msgstr ""
+msgstr "Tots els països"
 
 #: SEE_ALL
 msgid "See All"
-msgstr ""
+msgstr "Veure-ho tot"
 
 #: STATION_COUNT
 msgid "%lu stations"
-msgstr ""
-
-#: RADIO_COUNTRIES_LOADING_FAILED
-msgid ""
-"Couldn't load the list of countries. Please check your connection and try "
-"again."
-msgstr ""
-
-#: RADIO_STATIONS_LOADING_FAILED
-msgid "Couldn't load the stations. Please check your connection and try again."
-msgstr ""
-
-#: BUTTON_RETRY
-msgid "Retry"
-msgstr ""
-
-#: FAVORITEVC_DETAILTEXT
-msgid "See your favorite folders"
-msgstr "Visualitzar les vostres carpetes preferides"
-
-#: STREAMVC_DETAILTEXT
-msgid "Play streams directly without downloading"
-msgstr "Reproduir estrímings directament sense descarregar"
-
-#: DOWNLOADVC_DETAILTEXT
-msgid "Load files directly to your device"
-msgstr "Carrega els fitxers directament al vostre dispositiu"
-
-#: CLOUDVC_DETAILTEXT
-msgid "Play or download media from online services"
-msgstr "Reproduir o descarregar contingut multimèdia des de serveis en línia"
+msgstr "%lu emissores"
 
 #: HEADER_TITLE_RENDERER
 msgid "Select a casting device"
 msgstr "Selecciona un dispositiu de buidatge"
-
-#: ONAIR
-msgid "On Air"
-msgstr ""
-
-#: ONAIR_ZERO_TITLE
-msgid "Everything you follow, in one place"
-msgstr ""
-
-#: ONAIR_ZERO_SUBTITLE
-msgid "Start with any of the three. Your favorites stay on this device."
-msgstr ""
-
-#: ONAIR_CONTINUE
-msgctxt "ONAIR_CONTINUE"
-msgid "Continue"
-msgstr ""
-
-#: ONAIR_CONTINUE_PAUSED
-msgid "Paused %@"
-msgstr ""
-
-#: ONAIR_ADD
-msgid "Add"
-msgstr ""
-
-#: ONAIR_FIND_STATION
-msgid "Find a station"
-msgstr ""
-
-#: ONAIR_PODCASTS
-msgid "Podcasts"
-msgstr ""
-
-#: ONAIR_PODCASTS_EMPTY_TITLE
-msgid "No subscriptions yet"
-msgstr ""
-
-#: ONAIR_PODCASTS_EMPTY_BODY
-msgid "Paste an RSS feed to subscribe."
-msgstr ""
-
-#: ONAIR_PODCASTS_ZERO_BODY
-msgid "Bring your own feed to get started."
-msgstr ""
-
-#: ONAIR_PASTE_RSS
-msgid "Paste RSS"
-msgstr ""
-
-#: ONAIR_TV
-msgid "TV"
-msgstr ""
-
-#: ONAIR_TV_EMPTY_TITLE
-msgid "No channels yet"
-msgstr ""
-
-#: ONAIR_TV_EMPTY_BODY
-msgid "Public channels, or your own M3U."
-msgstr ""
-
-#: ONAIR_OPEN_DIRECTORY
-msgid "Open directory"
-msgstr ""
-
-#: ONAIR_ADD_M3U
-msgid "Add M3U"
-msgstr ""
 
 #: BROWSE
 msgid "Browse"
@@ -646,10 +550,6 @@ msgstr "Xarxa local"
 #: CONNECT_TO_SERVER
 msgid "Connect to Server"
 msgstr "Connecta amb el servidor"
-
-#: FILE_SERVER
-msgid "File Servers"
-msgstr "Servidors de fitxers"
 
 #: USER_LABEL
 msgid "User"
@@ -675,10 +575,6 @@ msgstr "Actualitza"
 msgid "Last Updated on %@"
 msgstr "Darrera actualització de %@"
 
-#: LOCAL_SERVER_CONNECTION_FAILED_TITLE
-msgid "Connection to server failed"
-msgstr "Ha fallat la connexió al servidor"
-
 #: LOCAL_SERVER_CONNECTION_FAILED_MESSAGE
 msgid "Please check your server address and credentials"
 msgstr "Comprova la teua adreça i contrasenya del servidor"
@@ -686,18 +582,6 @@ msgstr "Comprova la teua adreça i contrasenya del servidor"
 #: FILES_APP_CELL_TITLE
 msgid "Local files"
 msgstr "Fitxers locals"
-
-#: FILES_APP_CELL_SUBTITLE
-msgid "Open a file without copying it to VLC"
-msgstr "Obre un fitxer sense copiar-lo al VLC"
-
-#: PHOTO_LIBRARY_CELL_TITLE
-msgid "Photo Library"
-msgstr "Biblioteca de fotos"
-
-#: PHOTO_LIBRARY_CELL_SUBTITLE
-msgid "Import videos from your photo library"
-msgstr "Importa vídeos de la vostra biblioteca de fotos"
 
 #: PHOTO_LIBRARY_IMPORT_FAILED
 msgid "Import failed"
@@ -848,8 +732,8 @@ msgstr "Biblioteca multimèdia buida"
 #: EMPTY_LIBRARY_LONG
 msgid ""
 "For playback, you can stream media from a server on your local network, from "
-"the cloud or synchronize media to your device using iTunes, Wi-Fi Upload or "
-"Cloud services."
+"the cloud or synchronize media to your device using the \"Files\" tab in "
+"Finder or iTunes, Wi-Fi Upload or cloud services."
 msgstr ""
 "Per a la reproducció, podeu transmetre contingut multimèdia des d’un "
 "servidor de la vostra xarxa local, des del núvol o sincronitzar contingut "
@@ -1056,8 +940,8 @@ msgstr "Sincronitza amb el vostre ordinador"
 
 #: FIRST_STEPS_ITUNES_DETAILS
 msgid ""
-"Connect your %@ to use the Finder or iTunes for \"File Sharing\". Select VLC "
-"to transfer files."
+"Connect your %@ to use the Finder or iTunes. In the Finder, select the "
+"\"Files\" tab and choose VLC to transfer files."
 msgstr ""
 "Connecteu el vostre %@ per utilitzar el Finder o l'iTunes per a \"Compartir "
 "fitxers\". Seleccioneu VLC per transferir fitxers."
@@ -1079,6 +963,7 @@ msgid "Clouds"
 msgstr "Núvols"
 
 #: FIRST_STEPS_CLOUD_TITLE
+msgctxt "FIRST_STEPS_CLOUD_TITLE"
 msgid "Cloud"
 msgstr "Núvol"
 
@@ -1145,14 +1030,6 @@ msgstr "Arxius baixats"
 #: WEBINTF_DOWNLOADFILES_LONG
 msgid "Just click the file you want to download from your %@."
 msgstr "Has de fer clic en l'arxiu que vols descarregar del teu %@."
-
-#: WEBINTF_DOWNLOAD_ALL
-msgid "Download All"
-msgstr ""
-
-#: WEBINTF_DOWNLOAD_SELECTED
-msgid "Download Selected (%@)"
-msgstr ""
 
 #: WEBINTF_ADDRESS_COPIED
 msgid "Address copied to clipboard"
@@ -1387,113 +1264,6 @@ msgstr "LLista de reproducció"
 #: FOLDERS
 msgid "Folders"
 msgstr "Carpetes"
-
-#.
-#. MARK: - Podcasts
-#: PODCAST_CONTENT_TITLE
-msgid "Content"
-msgstr ""
-
-#: PODCAST_CONTINUE_LISTENING
-msgid "Continue Listening"
-msgstr ""
-
-#: PODCAST_LATEST_EPISODES
-msgid "Latest Episodes"
-msgstr ""
-
-#: PODCAST_SHOWS
-msgid "Shows"
-msgstr ""
-
-#: PODCAST_SORT_EPISODES_HINT
-msgid "Sort the episodes in this show"
-msgstr ""
-
-#: PODCAST_EPISODE_COUNT
-msgid "%d episodes"
-msgstr ""
-
-#: PODCAST_EPISODE_DOWNLOAD
-msgid "Download episode"
-msgstr ""
-
-#: PODCAST_EPISODE_DOWNLOADED
-msgid "Episode downloaded"
-msgstr ""
-
-#: PODCAST_EPISODE_DOWNLOADING
-msgid "Downloading episode"
-msgstr ""
-
-#: PODCAST_DELETE_DOWNLOAD_TITLE
-msgid "Remove Download"
-msgstr ""
-
-#: PODCAST_DELETE_DOWNLOAD_MESSAGE
-msgid ""
-"This will delete the downloaded copy of this episode. You can download it "
-"again later."
-msgstr ""
-
-#: PODCAST_SUBSCRIBE
-msgid "Subscribe"
-msgstr ""
-
-#: PODCAST_SUBSCRIBED
-msgid "Subscribed"
-msgstr ""
-
-#: PODCAST_EMPTY_TITLE
-msgid "No Podcasts Yet"
-msgstr ""
-
-#: PODCAST_EMPTY_DESCRIPTION
-msgid "Add a show via its RSS feed URL to start listening."
-msgstr ""
-
-#: PODCAST_ADD_VIA_RSS
-msgid "Add via RSS URL"
-msgstr ""
-
-#: PODCAST_ADD_BUTTON
-msgid "Add Podcast"
-msgstr ""
-
-#: PODCAST_ADD_RSS_PLACEHOLDER
-msgid "https://example.com/feed.xml"
-msgstr ""
-
-#: PODCAST_ADD_RSS_ERROR
-msgid "Couldn't add this podcast. Check the URL and try again."
-msgstr ""
-
-#: PODCAST_ADD_RSS_ERROR_EMPTY
-msgid "Enter a podcast feed URL."
-msgstr ""
-
-#: PODCAST_ADD_RSS_ERROR_INVALID_URL
-msgid "That doesn't look like a valid URL."
-msgstr ""
-
-#: PODCAST_ADD_RSS_ERROR_SCHEME
-msgid "Only http:// and https:// feed URLs are supported."
-msgstr ""
-
-#: PODCAST_ADD_RSS_ERROR_NETWORK
-msgid ""
-"Couldn't reach that address. Check your internet connection and the URL."
-msgstr ""
-
-#: PODCAST_ADD_RSS_ERROR_HTTP
-msgid "That address returned an error (%d). Double-check the feed URL."
-msgstr ""
-
-#: PODCAST_ADD_RSS_ERROR_NOT_A_FEED
-msgid ""
-"That URL doesn't look like a podcast feed. Make sure it points directly to "
-"the RSS/XML feed, not the podcast's webpage."
-msgstr ""
 
 #: VIDEO_GROUPS
 msgid "Video groups"
@@ -2167,7 +1937,17 @@ msgstr ""
 "Activa per reproduir automàticament el següent contingut multimèdia d'una "
 "llista de reproducció"
 
-#.
+#: SETTINGS_SYNC_MEDIA_LIBRARY_TITLE
+msgid "Sync media library to Apple Watch"
+msgstr ""
+
+#: SETTINGS_SYNC_MEDIA_LIBRARY_MESSAGE
+msgid ""
+"This sends a snapshot of the iPhone's current media library (%@) to the "
+"Apple Watch for display. It does not download the individual audio files "
+"themselves."
+msgstr ""
+
 #.
 #. MARK: - Local Network
 #: SMBV1_WARN_TITLE
@@ -2614,109 +2394,48 @@ msgstr "Reprodueix la llista seleccionada al fons sense obrir l'aplicació."
 msgid "Play ${mediaName} in the background"
 msgstr "Reprodueix ${mediaName} al fons"
 
-#.
-#. MARK: - Audio App Intent Strings
-#: APPINTENT_ERROR_NO_MEDIA
-msgid "No matching media was found in your library."
-msgstr ""
-
-#: APPINTENT_ERROR_PLAYLIST_UPDATE
-msgid "The playlist could not be updated."
-msgstr ""
-
-#: APPINTENT_AFFINITY_FAVORITE
-msgctxt "APPINTENT_AFFINITY_FAVORITE"
-msgid "Favorite"
-msgstr ""
-
-#: APPINTENT_AFFINITY_NOT_FAVORITE
-msgid "Not a Favorite"
-msgstr ""
-
-#: APPINTENT_AFFINITY_UNSET
-msgid "Unset"
-msgstr ""
-
-#.
-#. MARK: - Video App Intent Strings
-#: APPINTENT_PLAY_VIDEO_TITLE
-msgctxt "APPINTENT_PLAY_VIDEO_TITLE"
-msgid "Play Video"
-msgstr ""
-
-#: APPINTENT_PLAY_VIDEO_DESCRIPTION
-msgid "Play a video from your library."
-msgstr ""
-
-#: APPINTENT_PLAY_VIDEO_PARAM
-msgctxt "APPINTENT_PLAY_VIDEO_PARAM"
-msgid "Video"
-msgstr ""
-
-#: APPINTENT_PLAY_VIDEO_PLAY_%24%7Bvideo%7D
-msgid "Play ${video}"
-msgstr ""
-
-#.
-#. MARK: - AppShortcut Strings
-#: APPSHORTCUT_PLAY_MEDIA_SHORT_TITLE
-msgid "Play Media"
-msgstr ""
-
-#: APPSHORTCUT_PLAY_MEDIA_PHRASE_PLAY_%24%7BapplicationName%7D
-msgid "Play media in ${applicationName}"
-msgstr ""
-
-#: APPSHORTCUT_PLAY_MEDIA_PHRASE_PLAYLIST_%24%7BapplicationName%7D
-msgid "Play a playlist in ${applicationName}"
-msgstr ""
-
-#: APPSHORTCUT_PLAY_MEDIA_PHRASE_START_%24%7BapplicationName%7D
-msgid "Start playback in ${applicationName}"
-msgstr ""
-
 #: APPSHORTCUT_PLAY_AUDIO_SHORT_TITLE
 msgid "Play Audio"
-msgstr ""
+msgstr "Reprodueix àudio"
 
 #: APPSHORTCUT_PLAY_AUDIO_PHRASE_PLAY_%24%7BapplicationName%7D
 msgid "Play audio in ${applicationName}"
-msgstr ""
+msgstr "Reprodueix àudio a ${applicationName}"
 
 #: APPSHORTCUT_PLAY_AUDIO_PHRASE_SONG_%24%7BapplicationName%7D
 msgid "Play a song in ${applicationName}"
-msgstr ""
+msgstr "Reprodueix una cançó a ${applicationName}"
 
 #: APPSHORTCUT_PLAY_VIDEO_SHORT_TITLE
 msgctxt "APPSHORTCUT_PLAY_VIDEO_SHORT_TITLE"
 msgid "Play Video"
-msgstr ""
+msgstr "Reprodueix vídeo"
 
 #: APPSHORTCUT_PLAY_VIDEO_PHRASE_PLAY_%24%7BapplicationName%7D
 msgid "Play a video in ${applicationName}"
-msgstr ""
+msgstr "Reprodueix un vídeo a ${applicationName}"
 
 #: APPSHORTCUT_PLAY_VIDEO_PHRASE_WATCH_%24%7BapplicationName%7D
 msgid "Watch a video in ${applicationName}"
-msgstr ""
+msgstr "Mira un vídeo a ${applicationName}"
 
 #: APPSHORTCUT_ADD_TO_PLAYLIST_SHORT_TITLE
 msgctxt "APPSHORTCUT_ADD_TO_PLAYLIST_SHORT_TITLE"
 msgid "Add to Playlist"
-msgstr ""
+msgstr "Afegeix a la llista de reproducció"
 
 #: APPSHORTCUT_ADD_TO_PLAYLIST_PHRASE_%24%7BapplicationName%7D
 msgid "Add a song to a playlist in ${applicationName}"
-msgstr ""
+msgstr "Afegeix una cançó a una llista de reproducció a ${applicationName}"
 
 #: APPSHORTCUT_UPDATE_AFFINITY_SHORT_TITLE
 msgctxt "APPSHORTCUT_UPDATE_AFFINITY_SHORT_TITLE"
 msgid "Favorite"
-msgstr ""
+msgstr "Preferit"
 
 #: APPSHORTCUT_UPDATE_AFFINITY_PHRASE_%24%7BapplicationName%7D
 msgid "Favorite audio in ${applicationName}"
-msgstr ""
+msgstr "Àudio preferit a ${applicationName}"
 
 #.
 #. MARK: - VerticalSliderControl Strings
@@ -2780,11 +2499,11 @@ msgstr ""
 
 #: SUBFOLDER_DESCRIPTION
 msgid "1 folder"
-msgstr ""
+msgstr "1 carpeta"
 
 #: SUBFOLDERS_DESCRIPTION
 msgid "%d folders"
-msgstr "%d subcarpetes"
+msgstr "%d carpetes"
 
 #: ACCESSIBILITY_SELECTED
 msgid "selected"
@@ -2812,6 +2531,7 @@ msgid "Second Subtitle"
 msgstr "Subtítol segon"
 
 #: SYNC
+msgctxt "SYNC"
 msgid "Sync"
 msgstr "Sincronitza"
 
@@ -2830,7 +2550,3 @@ msgstr "Assigna el subtítol principal"
 #: SUBTITLE_ASSIGN_SECONDARY
 msgid "Assign secondary subtitle"
 msgstr "Assigna el subtítol secundari"
-
-#: LAST_PLAYED_MEDIALIST
-msgid "Last played medialist"
-msgstr ""
