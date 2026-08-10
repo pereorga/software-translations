@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 11:13+0000\n"
+"POT-Creation-Date: 2026-08-10 09:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -700,7 +700,6 @@ msgstr ""
 "amb instruccions per a verificar-la."
 
 #: emailVerifyInstruction2
-msgctxt "emailVerifyInstruction2"
 msgid "Haven''t received a verification code in your email?"
 msgstr "No heu rebut un codi de verificació al vostre correu electrònic?"
 
@@ -743,8 +742,7 @@ msgstr ""
 "{0} {1} amb el vostre compte {2}."
 
 #: emailLinkIdp2
-msgctxt "emailLinkIdp2"
-msgid "Haven''t received a verification code in your email?"
+msgid "Haven''t received the email?"
 msgstr "No heu rebut un codi de verificació al vostre correu electrònic?"
 
 #: emailLinkIdp3
@@ -753,7 +751,7 @@ msgid "to re-send the email."
 msgstr "per a tornar a enviar el correu electrònic."
 
 #: emailLinkIdp4
-msgid "If you already verified the email in a different browser"
+msgid "If you already confirmed linking the account in a different browser"
 msgstr "Si ja heu verificat el correu electrònic en un altre navegador"
 
 #: emailLinkIdp5
@@ -1524,11 +1522,24 @@ msgstr "No s’ha trobat cap proveïdor d’identitat."
 
 #: identityProviderLinkSuccess
 msgid ""
-"You successfully verified your email. Please go back to your original "
-"browser and continue there with the login."
+"You successfully confirmed linking your account with {0} account {1}. Please "
+"go back to your original browser and continue there with the login."
 msgstr ""
 "Heu verificat el vostre correu electrònic correctament. Torneu al vostre "
 "navegador original i continueu amb l’entrada allà."
+
+#: identityProviderLinkSuccessHeader
+msgid "Account linking confirmed"
+msgstr ""
+
+#: identityProviderLinkConfirmedAlreadyMessage
+msgid ""
+"Linking of your account with {0} account {1} has been confirmed already."
+msgstr ""
+
+#: identityProviderLinkConfirmedAlreadyMessageHeader
+msgid "Account linking already confirmed"
+msgstr ""
 
 #: identityProviderAlreadyLinkedMessage
 msgid "Federated identity returned by {0} is already linked to another user."
@@ -2192,7 +2203,7 @@ msgstr "O entra amb"
 msgid "or sign in with"
 msgstr ""
 
-#: identity-provider-login-label-short
+#: orLabel
 msgid "or"
 msgstr ""
 
@@ -2385,8 +2396,12 @@ msgstr "Inicieu sessió amb la vostra cartera"
 msgid "Open wallet app"
 msgstr "Obre l’aplicació de cartera"
 
+#: oid4vpScanQrCodeTitle
+msgid "Scan QR code"
+msgstr ""
+
 #: oid4vpScanQrCode
-msgid "Or scan the QR code with the wallet on another device"
+msgid "Use your wallet app on another device to scan this code"
 msgstr ""
 
 #: oid4vpQrCodeAlt
