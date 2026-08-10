@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 11:13+0000\n"
+"POT-Creation-Date: 2026-08-10 09:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -405,6 +405,35 @@ msgstr ""
 #: assist.settings.on_device_stt.toggle
 msgid "Enable on-device Speech-to-Text"
 msgstr "Activa la conversió de veu a text al dispositiu"
+
+#: assist.settings.start_mode.auto
+msgctxt "assist.settings.start_mode.auto"
+"assist.settings.start_mode.auto"
+"assist.settings.start_mode.auto"
+msgid "Auto"
+msgstr ""
+
+#: assist.settings.start_mode.footer
+msgid ""
+"Controls how Assist starts when you trigger it from a Home Assistant "
+"dashboard. \"Auto\" follows what the dashboard asks for, while \"Voice\" and "
+"\"Text\" always override it. This does not apply to widgets, shortcuts or "
+"other app features."
+msgstr ""
+
+#: assist.settings.start_mode.text
+msgctxt "assist.settings.start_mode.text"
+msgid "Text"
+msgstr ""
+
+#: assist.settings.start_mode.title
+msgid "Assist start mode"
+msgstr ""
+
+#: assist.settings.start_mode.voice
+msgctxt "assist.settings.start_mode.voice"
+msgid "Voice"
+msgstr ""
 
 #: assist.settings.title
 msgid "Assist Settings"
@@ -970,16 +999,6 @@ msgstr "Ubicació actualitzada mitjançant Visita"
 #: location_change_notification.x_callback_url.body
 msgid "Location updated via X-Callback-URL"
 msgstr "Ubicació actualitzada mitjançant X-Callback-URL"
-
-#: magic_item.item_type.area.list.empty
-msgctxt "magic_item.item_type.area.list.empty"
-msgid "No areas with entities your Apple Watch can show yet."
-msgstr ""
-
-#: magic_item.item_type.area.list.title
-msgctxt "magic_item.item_type.area.list.title"
-msgid "Area"
-msgstr ""
 
 #: menu.actions.configure
 msgid "Configure…"
@@ -1882,6 +1901,36 @@ msgstr "Error al desar l’URL"
 #: settings.connection_section.validate_error.use_anyway
 msgid "Use Anyway"
 msgstr "Utilitza de totes maneres"
+
+#: settings.connection_section.webhook.active.title
+msgid "Currently used"
+msgstr ""
+
+#: settings.connection_section.webhook.active.unavailable
+msgid "No URL available"
+msgstr ""
+
+#: settings.connection_section.webhook.endpoints.footer
+msgid ""
+"Treat these URLs as sensitive. Anyone with them can send requests to this "
+"mobile app webhook."
+msgstr ""
+
+#: settings.connection_section.webhook.footer
+msgid ""
+"The app sends sensor, location and other updates to this webhook. Home "
+"Assistant Cloud provides a cloudhook, which is used whenever you are away "
+"from home. Without it, the app builds the webhook URL from the internal, "
+"remote or external URL of this server instead."
+msgstr ""
+
+#: settings.connection_section.webhook.in_use
+msgid "In use"
+msgstr ""
+
+#: settings.connection_section.webhook.title
+msgid "Webhook"
+msgstr ""
 
 #: settings.connection_section.websocket.status.authenticating
 msgid "Authenticating"
@@ -2999,78 +3048,6 @@ msgstr "El servei (ex. Homeassistant.turn_on) ha de ser definit"
 msgid "A renderable template must be defined"
 msgstr "S'ha de definir una plantilla renderizable"
 
-#: vacuum.control.battery_%25@
-msgid "Battery: %@"
-msgstr ""
-
-#: vacuum.control.clean_areas.empty
-msgid ""
-"No areas mapped. Map your vacuum's segments to areas in Home Assistant to "
-"clean by area."
-msgstr ""
-
-#: vacuum.control.clean_areas.needs_phone
-msgid "Your iPhone is out of reach, so the areas can't be loaded."
-msgstr ""
-
-#: vacuum.control.clean_areas.order_%25@
-msgid "Cleaning order: %@"
-msgstr ""
-
-#: vacuum.control.clean_areas.start_%25@
-msgid "Start cleaning (%@)"
-msgstr ""
-
-#: vacuum.control.clean_areas.title
-msgid "Clean areas"
-msgstr ""
-
-#: vacuum.control.fan_speed.title
-msgid "Fan speed"
-msgstr ""
-
-#: vacuum.control.locate
-msgid "Locate"
-msgstr ""
-
-#: vacuum.control.pause
-msgid "Pause"
-msgstr ""
-
-#: vacuum.control.return_to_base
-msgid "Return to dock"
-msgstr ""
-
-#: vacuum.control.start
-msgctxt "vacuum.control.start"
-msgid "Start"
-msgstr ""
-
-#: vacuum.control.stop
-msgctxt "vacuum.control.stop"
-msgid "Stop"
-msgstr ""
-
-#: watch.config.add.area
-msgctxt "watch.config.add.area"
-msgid "Area"
-msgstr ""
-
-#: watch.config.add.no_areas
-msgctxt "watch.config.add.no_areas"
-msgid "No areas with entities your Apple Watch can show yet."
-msgstr ""
-
-#: watch.configuration.hide_areas.footer
-msgid ""
-"Areas let you browse and control compatible entities on your Apple Watch "
-"without adding them as items."
-msgstr ""
-
-#: watch.configuration.hide_areas.title
-msgid "Hide areas in home"
-msgstr ""
-
 #: watch.configurator.delete.button
 msgid "Delete Complication"
 msgstr "Suprimir la complicació"
@@ -3250,24 +3227,6 @@ msgstr "Icona"
 #: watch.configurator.sections.ring.footer
 msgid "The ring showing progress surrounding the text."
 msgstr "L'anell que mostra el progrés envoltant el text"
-
-#: watch.home.areas.empty
-msgid "There are no compatible entities in this area."
-msgstr ""
-
-#: watch.home.areas.section.controls.title
-msgid "Controls"
-msgstr ""
-
-#: watch.home.areas.section.sensors.title
-msgctxt "watch.home.areas.section.sensors.title"
-msgid "Sensors"
-msgstr ""
-
-#: watch.home.areas.title
-msgctxt "watch.home.areas.title"
-msgid "Areas"
-msgstr ""
 
 #: watch.labels.complication_group.circular_small.description
 msgid ""
@@ -3852,10 +3811,6 @@ msgctxt "watch.labels.complication_text_areas.trailing.label"
 msgid "Trailing"
 msgstr "Arrossegant"
 
-#: watch.lock_controls.open_confirmation.title
-msgid "Are you sure you want to open \"%@\"?"
-msgstr ""
-
 #: watch.placeholder_complication_name
 msgctxt "watch.placeholder_complication_name"
 msgid "Placeholder"
@@ -4083,6 +4038,7 @@ msgid "Now"
 msgstr "Ara"
 
 #: widgets.todo_list.due_date.today
+msgctxt "widgets.todo_list.due_date.today"
 msgid "Today"
 msgstr "Avui"
 
