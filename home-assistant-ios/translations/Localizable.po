@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-10 09:08+0000\n"
+"POT-Creation-Date: 2026-08-17 08:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -405,35 +405,6 @@ msgstr ""
 #: assist.settings.on_device_stt.toggle
 msgid "Enable on-device Speech-to-Text"
 msgstr "Activa la conversió de veu a text al dispositiu"
-
-#: assist.settings.start_mode.auto
-msgctxt "assist.settings.start_mode.auto"
-"assist.settings.start_mode.auto"
-"assist.settings.start_mode.auto"
-msgid "Auto"
-msgstr ""
-
-#: assist.settings.start_mode.footer
-msgid ""
-"Controls how Assist starts when you trigger it from a Home Assistant "
-"dashboard. \"Auto\" follows what the dashboard asks for, while \"Voice\" and "
-"\"Text\" always override it. This does not apply to widgets, shortcuts or "
-"other app features."
-msgstr ""
-
-#: assist.settings.start_mode.text
-msgctxt "assist.settings.start_mode.text"
-msgid "Text"
-msgstr ""
-
-#: assist.settings.start_mode.title
-msgid "Assist start mode"
-msgstr ""
-
-#: assist.settings.start_mode.voice
-msgctxt "assist.settings.start_mode.voice"
-msgid "Voice"
-msgstr ""
 
 #: assist.settings.title
 msgid "Assist Settings"
@@ -1901,36 +1872,6 @@ msgstr "Error al desar l’URL"
 #: settings.connection_section.validate_error.use_anyway
 msgid "Use Anyway"
 msgstr "Utilitza de totes maneres"
-
-#: settings.connection_section.webhook.active.title
-msgid "Currently used"
-msgstr ""
-
-#: settings.connection_section.webhook.active.unavailable
-msgid "No URL available"
-msgstr ""
-
-#: settings.connection_section.webhook.endpoints.footer
-msgid ""
-"Treat these URLs as sensitive. Anyone with them can send requests to this "
-"mobile app webhook."
-msgstr ""
-
-#: settings.connection_section.webhook.footer
-msgid ""
-"The app sends sensor, location and other updates to this webhook. Home "
-"Assistant Cloud provides a cloudhook, which is used whenever you are away "
-"from home. Without it, the app builds the webhook URL from the internal, "
-"remote or external URL of this server instead."
-msgstr ""
-
-#: settings.connection_section.webhook.in_use
-msgid "In use"
-msgstr ""
-
-#: settings.connection_section.webhook.title
-msgid "Webhook"
-msgstr ""
 
 #: settings.connection_section.websocket.status.authenticating
 msgid "Authenticating"
