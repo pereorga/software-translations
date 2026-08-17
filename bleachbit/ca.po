@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
-"POT-Creation-Date: 2026-07-12 15:23-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-16 16:46-0600\n"
 "PO-Revision-Date: 2026-07-19 11:01+0000\n"
 "Last-Translator: Jaime Muñoz Martín <jmmartin_5@outlook.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -20,8 +20,105 @@ msgstr ""
 "X-Generator: Weblate 2026.8.dev0\n"
 "X-Launchpad-Export-Date: 2022-01-23 20:20+0000\n"
 
+msgid "Document viewer"
+msgstr "Visualitzador de documents"
+
+msgid "Cache"
+msgstr "Memòria cau"
+
+#. TRANSLATORS: The description of what certain cleaning options do.
+msgid "Delete the cache"
+msgstr "Suprimeix la memòria cau"
+
+msgid "Most recently used"
+msgstr "Usats recentment"
+
+msgid "Delete the list of recently used documents"
+msgstr "Suprimeix la llista de documents usats recentment"
+
+msgid "Temporary files"
+msgstr "Fitxers temporals"
+
+msgid "Delete the temporary files"
+msgstr "Suprimeix els fitxers temporals"
+
+msgid "Chat client"
+msgstr "Client de xat"
+
+msgid "Chat logs"
+msgstr "Registres de xat"
+
+msgid "Delete the chat logs"
+msgstr "Suprimeix els registres de xat"
+
+msgid "File transfer client"
+msgstr "Client de transferència de fitxers"
+
+msgid "Logs"
+msgstr "Registres"
+
+msgid "Delete the logs"
+msgstr "Suprimeix els registres"
+
+msgid "Known files history"
+msgstr "Historial de fitxers coneguts"
+
+msgid "Delete the usage history"
+msgstr "Suprimeix l'historial d'ús"
+
+#. http://wiki.amule.org/wiki/Friend
+msgid "Known clients and friends"
+msgstr "Clients i amics coneguts"
+
+msgid "Backup files"
+msgstr "Fitxers de còpia de seguretat"
+
+msgid "Delete the backup files"
+msgstr "Suprimeix les còpies de seguretat"
+
+msgid "Package manager"
+msgstr "Gestor de paquets"
+
+msgid "Delete obsolete files"
+msgstr "Suprimeix els fitxers obsolets"
+
+msgid "Package lists"
+msgstr "Llistes de paquets"
+
 msgid "Media player"
 msgstr "Reproductor multimèdia"
+
+msgid "Shell"
+msgstr "Intèrpret d'ordres"
+
+msgid "History"
+msgstr "Historial"
+
+msgid "Delete the command history"
+msgstr "Suprimeix l'historial d'ordres"
+
+msgid "Search tool"
+msgstr "Eina de cerca"
+
+msgid "Index"
+msgstr "Índex"
+
+msgid "Delete the files"
+msgstr "Suprimeix els fitxers"
+
+msgid "Debug logs"
+msgstr "Registres de depuració"
+
+msgid "Delete the debug logs"
+msgstr "Suprimeix els registres de depuració"
+
+msgid "Web browser"
+msgstr "Navegador web"
+
+msgid "Delete the web cache, which reduces time to display revisited pages"
+msgstr ""
+"Suprimeix la memòria cau, que redueix el temps que cal per mostrar les "
+"pàgines que ja s'han visitat"
 
 #. TRANSLATORS: Sidebar label for the page managing browser cookies in
 #. the Preferences dialog.
@@ -35,89 +132,34 @@ msgstr ""
 "Suprimeix les galetes, que emmagatzemen informació d'inici de sessió, "
 "preferències del lloc web i identificadors de seguiment"
 
-msgid "History"
-msgstr "Historial"
-
-msgid "Delete the usage history"
-msgstr "Suprimeix l'historial d'ús"
-
-msgid "Logs"
-msgstr "Registres"
-
-msgid "Delete the logs"
-msgstr "Suprimeix els registres"
-
-msgid "Multimedia viewer"
-msgstr "Reproductor multimèdia"
-
-msgid "Cache"
-msgstr "Memòria cau"
-
-#. TRANSLATORS: The description of what certain cleaning options do.
-msgid "Delete the cache"
-msgstr "Suprimeix la memòria cau"
-
-msgid "Most recently used"
-msgstr "Usats recentment"
-
-msgid "Delete the most recently used list"
-msgstr "Suprimeix la llista de fitxers usats recentment"
-
-msgid "Package manager"
-msgstr "Gestor de paquets"
-
-msgid "Remove packages that were formerly dependencies"
-msgstr "Suprimeix els paquets que abans eren dependències"
-
-msgid ""
-"Carefully review the list of packages that will be removed by running \"dnf "
-"list autoremove\"."
-msgstr ""
-"Comproveu amb cura la llista de paquets que se suprimiran executant «dnf "
-"list autoremove»."
-
-msgid "Chat client"
-msgstr "Client de xat"
-
-msgid "Chat logs"
-msgstr "Registres de xat"
-
-msgid "Delete the chat logs"
-msgstr "Suprimeix els registres de xat"
-
-msgid "Web browser"
-msgstr "Navegador web"
-
-msgid "Backup files"
-msgstr "Fitxers de còpia de seguretat"
-
-msgid "Delete the backup files"
-msgstr "Suprimeix les còpies de seguretat"
-
 msgid "Crash reports"
 msgstr "Informes de fallades inesperades"
-
-msgid "Delete the files"
-msgstr "Suprimeix els fitxers"
 
 msgid "Form history"
 msgstr "Historial dels formularis"
 
-msgid "Saved form entries and search bar history"
-msgstr "Historial d'entrades de formulari desades i de la barra de cerca"
-
-msgid "Passwords"
-msgstr "Contrasenyes"
+msgid "A history of forms entered in websites"
+msgstr "Historial de formularis introduïts a llocs web"
 
 msgid ""
-"A database of usernames and passwords as well as a list of sites that should "
-"not store passwords"
+"Delete the history which includes visited sites, downloads, and thumbnails"
 msgstr ""
-"Base de dades de noms d'usuari i contrasenyes, així com dels llocs per als "
-"quals no han d’emmagatzemar contrasenyes"
+"Suprimeix l'historial, que inclou els llocs visitats, les baixades i les "
+"miniatures"
 
-msgid "This option will delete your saved passwords."
-msgstr "Aquesta opció suprimirà les contrasenyes desades."
+msgid "Search engines"
+msgstr "Motors de cerca"
+
+#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
+#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
+#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
+#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
+msgid ""
+"Reset the search engine usage history and delete non-factory search engines, "
+"some of which are added automatically"
+msgstr ""
+"Restableix l'historial d'ús dels motors de cerca i suprimeix els motors de "
+"cerca que no venen de fàbrica, alguns dels quals s'afegeixen automàticament"
 
 msgid "Session"
 msgstr "Sessió"
@@ -135,17 +177,26 @@ msgstr ""
 "Suprimeix LocalStorage, IndexedDB i altres dades emmagatzemades pels llocs "
 "web"
 
-msgid "Site preferences"
-msgstr "Preferències del lloc"
+msgid "Sync"
+msgstr "Sincronització"
 
-msgid "Settings for individual sites"
-msgstr "Opcions per a llocs individuals"
+msgid "Delete the sync data (including web apps) and sign out of the browser"
+msgstr ""
+"Suprimeix les dades de sincronització (incloses les aplicacions web) i tanca "
+"la sessió del navegador"
 
-msgid "URL history"
-msgstr "Historial d'URL"
+msgid "Passwords"
+msgstr "Contrasenyes"
 
-msgid "List of visited web pages"
-msgstr "Llista de pàgines visitades"
+msgid ""
+"A database of usernames and passwords as well as a list of sites that should "
+"not store passwords"
+msgstr ""
+"Base de dades de noms d'usuari i contrasenyes, així com dels llocs per als "
+"quals no han d’emmagatzemar contrasenyes"
+
+msgid "This option will delete your saved passwords."
+msgstr "Aquesta opció suprimirà les contrasenyes desades."
 
 #. TRANSLATORS: Vacuum is a verb.  The term is jargon
 #. from the SQLite database.  Microsoft Access uses
@@ -161,237 +212,11 @@ msgstr ""
 "Desfragmenta la base de dades per reduir l'espai que ocupa i millorar la "
 "velocitat d'accés sense suprimir cap dada"
 
-msgid "Shell"
-msgstr "Intèrpret d'ordres"
-
-msgid "Delete the command history"
-msgstr "Suprimeix l'historial d'ordres"
-
-msgid "Office suite"
-msgstr "Paquet ofimàtic"
-
-msgid "Delete the list of recently used documents"
-msgstr "Suprimeix la llista de documents usats recentment"
-
-msgid "Database"
-msgstr "Base de dades"
-
-msgid ""
-"Delete the database, which contains information such as play count and last "
-"played"
-msgstr ""
-"Suprimeix la base de dades, que conté informació com el recompte de "
-"reproduccions i l'última reproducció"
-
-msgid "Debug logs"
-msgstr "Registres de depuració"
-
-msgid "Delete the debug logs"
-msgstr "Suprimeix els registres de depuració"
-
-msgid "Temporary files"
-msgstr "Fitxers temporals"
-
-msgid "Delete the temporary files"
-msgstr "Suprimeix els fitxers temporals"
-
-msgid "Search tool"
-msgstr "Eina de cerca"
-
-msgid "Index"
-msgstr "Índex"
-
-msgid "Delete the cookies, visited URLs, and search history"
-msgstr "Suprimeix les galetes, els URL visitats i l'historial de cerca"
-
-msgid "Word processor"
-msgstr "Processador de textos"
-
-msgid "Delete the web cache, which reduces time to display revisited pages"
-msgstr ""
-"Suprimeix la memòria cau, que redueix el temps que cal per mostrar les "
-"pàgines que ja s'han visitat"
-
-msgid "A history of forms entered in websites"
-msgstr "Historial de formularis introduïts a llocs web"
-
-msgid ""
-"Delete the history which includes visited sites, downloads, and thumbnails"
-msgstr ""
-"Suprimeix l'historial, que inclou els llocs visitats, les baixades i les "
-"miniatures"
-
-msgid "Sync"
-msgstr "Sincronització"
-
-msgid "Delete the sync data (including web apps) and sign out of the browser"
-msgstr ""
-"Suprimeix les dades de sincronització (incloses les aplicacions web) i tanca "
-"la sessió del navegador"
-
-msgid "Game"
-msgstr "Joc"
-
-#. This software edits metadata tags, such as title and artist, in audio files
-msgid "Audio files tagger"
-msgstr "Editor d'etiquetes de fitxers d'àudio"
-
-msgid "System journals"
-msgstr "Registres del sistema"
-
-msgid "Clean old system journals"
-msgstr "Esborra els registres antics del sistema"
-
-msgid "Delete the avatars and emoticons cache"
-msgstr "Suprimeix els avatars i les emoticones"
-
-msgid "File transfer client"
-msgstr "Client de transferència de fitxers"
-
-msgid "Places"
-msgstr "Llocs"
-
-msgid ""
-"A database of URLs including bookmarks, favicons, and a history of visited "
-"websites"
-msgstr ""
-"Base de dades d'URL que inclou marcadors, icones de preferits i l'historial "
-"de llocs web visitats"
-
-msgid "This option deletes all bookmarks."
-msgstr "Aquesta opció suprimeix totes les adreces d'interès."
-
-msgid "Downloaded podcasts"
-msgstr "Podcast descarregats"
-
-msgid "Delete downloaded podcasts"
-msgstr "Suprimeix els podcasts baixats"
-
-msgid "Email client"
-msgstr "Client de correu"
-
-msgid "Attachments"
-msgstr "Fitxers adjunts"
-
-msgid "Sync conflict"
-msgstr "Conflicte de sincronització"
-
-msgid "This option is slow."
-msgstr "Aquesta opció és lenta."
-
-msgid "Compatibility layer for Windows software"
-msgstr "Capa de compatibilitat per al programari de Windows"
-
-msgid "Thumbnails"
-msgstr "Miniatures"
-
-msgid "Icons for files on the system"
-msgstr "Icones dels fitxers del sistema"
-
-msgid "Desktop environment"
-msgstr "Entorn d'escriptori"
-
-#. In GNOME 'Run' is the dialog shown when typing ALT+F2'
-#. In Windows 'Run' is the dialog in the Start menu
-msgid "Run"
-msgstr "Executa"
-
-msgid "Search history"
-msgstr "Historial de cerca"
-
-msgid "Delete the search history"
-msgstr "Suprimeix l'historial de cerca"
-
-msgid "Current session"
-msgstr "Sessió actual"
-
-msgid "Delete the current session"
-msgstr "Suprimeix la sessió actual"
-
-msgid "Search engines"
-msgstr "Motors de cerca"
-
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-msgid ""
-"Reset the search engine usage history and delete non-factory search engines, "
-"some of which are added automatically"
-msgstr ""
-"Restableix l'historial d'ús dels motors de cerca i suprimeix els motors de "
-"cerca que no venen de fàbrica, alguns dels quals s'afegeixen automàticament"
-
-msgid "File manager"
-msgstr "Gestor de fitxers"
-
-msgid "Recent documents list"
-msgstr "Llista de documents recents"
-
-msgid ""
-"This option will reset pinned locations in Quick Access to their defaults."
-msgstr "Aquesta opció restablirà les ubicacions per defecte de l'accés ràpid"
-
-msgid "Shellbags"
-msgstr "Shellbags"
-
-msgid "Delete the usage date, window position, and other data for folders"
-msgstr ""
-"Suprimeix la data d'ús, la posició de la finestra i altres dades de les "
-"carpetes"
-
-msgid "This will reset the position of desktop icons."
-msgstr "Aquesta opció restablirà la posició de les icones a l'escriptori."
-
-msgid "This will restart Windows Explorer."
-msgstr "Aquesta acció reiniciarà l'explorador del Windows."
-
-msgid "Anti-virus"
-msgstr "Antivirus"
-
-msgid "Quarantine"
-msgstr "Quarantena"
-
-msgid ""
-"Deleting the index will reset the configuration of columns in the message "
-"list."
-msgstr ""
-"En suprimir l'índex es reiniciarà la configuració de les columnes de la "
-"llista de missatges."
-
-msgid "Session restore"
-msgstr "Restaura la sessió"
-
-msgid "Restores the previous session when the browser next starts"
-msgstr "Restaura la sessió anterior quan el navegador es torna a iniciar"
-
-msgid "Delete obsolete files"
-msgstr "Suprimeix els fitxers obsolets"
-
-msgid "Package lists"
-msgstr "Llistes de paquets"
-
-#. Cleaner description for vim, VS Code, etc.
-msgid "Editor"
-msgstr "Editor"
-
-msgid "Windowing system"
-msgstr "Sistema de finestres"
-
-msgid "Graphics editor"
-msgstr "Editor de gràfics"
-
-msgid "Disabled"
-msgstr "Desactivat"
-
-msgid "Remove disabled packages"
-msgstr "Elimina els paquets desactivats"
-
-msgid "Document viewer"
-msgstr "Visualitzador de documents"
-
-msgid "Custom folders will be reset."
-msgstr "Es reinicialitzaran les carpetes personalitzades."
+msgid "Site preferences"
+msgstr "Preferències del lloc"
+
+msgid "Settings for individual sites"
+msgstr "Opcions per a llocs individuals"
 
 #. Label for Claude coding assistant
 msgid "AI assistant"
@@ -423,6 +248,9 @@ msgstr "Anàlisi en profunditat"
 msgid "Clean files widely scattered across the disk"
 msgstr "Esborra fitxers dispersos per tot el disc"
 
+msgid "This option is slow."
+msgstr "Aquesta opció és lenta."
+
 msgid "Inspect the preview for any files you want to keep."
 msgstr "Inspeccioneu la previsualització per si voleu mantenir algun fitxer."
 
@@ -439,31 +267,99 @@ msgstr "Fitxers d'intercanvi del VIM al perfil de l'usuari"
 msgid "VIM swap files across system"
 msgstr "Fitxers d'intercanvi del VIM al sistema"
 
-msgid "Recordings"
-msgstr "Enregistraments"
-
-msgid "Delete the audio and video recordings"
-msgstr "Suprimeix els enregistraments d'àudio i vídeo"
-
-msgid "Delete the search index, a database of words and the files they contain"
+msgid ""
+"Delete the web cache, which reduces time to display revisited pages. This "
+"also clears favorited GIFs."
 msgstr ""
-"Suprimeix l'índex de cerca, una base de dades de paraules i els fitxers que "
-"les contenen"
+"Suprimeix la memòria cau, que redueix el temps per mostrar les pàgines que "
+"s'han visitat. També esborra les imatges GIF de les adreces d'interès."
 
-msgid "Installers"
-msgstr "Instal·ladors"
+msgid "Remove packages that were formerly dependencies"
+msgstr "Suprimeix els paquets que abans eren dependències"
 
-msgid "Delete cached patches and installers"
-msgstr "Suprimeix els pedaços i els instal·ladors de la memòria cau"
+msgid ""
+"Carefully review the list of packages that will be removed by running \"dnf "
+"list autoremove\"."
+msgstr ""
+"Comproveu amb cura la llista de paquets que se suprimiran executant «dnf "
+"list autoremove»."
 
-msgid "Download history"
-msgstr "Historial de baixades"
+#. This software edits metadata tags, such as title and artist, in audio files
+msgid "Audio files tagger"
+msgstr "Editor d'etiquetes de fitxers d'àudio"
 
-msgid "List of files downloaded"
-msgstr "Llista de fitxers baixats"
+msgid "Delete the cookies, visited URLs, and search history"
+msgstr "Suprimeix les galetes, els URL visitats i l'historial de cerca"
 
-msgid "Delete the list of visited web pages"
-msgstr "Suprimeix la llista de pàgines web visitades"
+msgid "Delete the avatars and emoticons cache"
+msgstr "Suprimeix els avatars i les emoticones"
+
+msgid "Places"
+msgstr "Llocs"
+
+msgid ""
+"A database of URLs including bookmarks, favicons, and a history of visited "
+"websites"
+msgstr ""
+"Base de dades d'URL que inclou marcadors, icones de preferits i l'historial "
+"de llocs web visitats"
+
+msgid "This option deletes all bookmarks."
+msgstr "Aquesta opció suprimeix totes les adreces d'interès."
+
+msgid "Email client"
+msgstr "Client de correu"
+
+msgid "Downloaded podcasts"
+msgstr "Podcast descarregats"
+
+msgid "Delete downloaded podcasts"
+msgstr "Suprimeix els podcasts baixats"
+
+msgid "Saved form entries and search bar history"
+msgstr "Historial d'entrades de formulari desades i de la barra de cerca"
+
+msgid "URL history"
+msgstr "Historial d'URL"
+
+msgid "List of visited web pages"
+msgstr "Llista de pàgines visitades"
+
+msgid "Multimedia viewer"
+msgstr "Reproductor multimèdia"
+
+msgid "Attachments"
+msgstr "Fitxers adjunts"
+
+msgid "Sync conflict"
+msgstr "Conflicte de sincronització"
+
+#. Cleaner description for vim, VS Code, etc.
+msgid "Editor"
+msgstr "Editor"
+
+msgid "Recent documents list"
+msgstr "Llista de documents recents"
+
+msgid "Graphics editor"
+msgstr "Editor de gràfics"
+
+msgid "Game"
+msgstr "Joc"
+
+msgid "Desktop environment"
+msgstr "Entorn d'escriptori"
+
+#. In GNOME 'Run' is the dialog shown when typing ALT+F2'
+#. In Windows 'Run' is the dialog in the Start menu
+msgid "Run"
+msgstr "Executa"
+
+msgid "Search history"
+msgstr "Historial de cerca"
+
+msgid "Delete the search history"
+msgstr "Suprimeix l'historial de cerca"
 
 #. Cleaning option that deletes AI models in a web browser
 msgid "AI"
@@ -471,6 +367,94 @@ msgstr "Opció de neteja que elimina els models d'IA en un navegador web"
 
 msgid "Delete the AI models"
 msgstr "Suprimeix els models d'IA"
+
+msgid "Download history"
+msgstr "Historial de baixades"
+
+msgid "System journals"
+msgstr "Registres del sistema"
+
+msgid "Clean old system journals"
+msgstr "Esborra els registres antics del sistema"
+
+msgid "Current session"
+msgstr "Sessió actual"
+
+msgid "Delete the current session"
+msgstr "Suprimeix la sessió actual"
+
+msgid "Office suite"
+msgstr "Paquet ofimàtic"
+
+msgid "File manager"
+msgstr "Gestor de fitxers"
+
+msgid "Delete the most recently used list"
+msgstr "Suprimeix la llista de fitxers usats recentment"
+
+msgid "Custom folders will be reset."
+msgstr "Es reinicialitzaran les carpetes personalitzades."
+
+msgid "Downloaded files"
+msgstr "Fitxers baixats"
+
+msgid "Delete the search index, a database of words and the files they contain"
+msgstr ""
+"Suprimeix l'índex de cerca, una base de dades de paraules i els fitxers que "
+"les contenen"
+
+msgid "Database"
+msgstr "Base de dades"
+
+msgid ""
+"Delete the database, which contains information such as play count and last "
+"played"
+msgstr ""
+"Suprimeix la base de dades, que conté informació com el recompte de "
+"reproduccions i l'última reproducció"
+
+msgid "Desktop widgets"
+msgstr "Ginys d'escriptori"
+
+msgid "List of files downloaded"
+msgstr "Llista de fitxers baixats"
+
+msgid "Delete the list of visited web pages"
+msgstr "Suprimeix la llista de pàgines web visitades"
+
+msgid "Installers"
+msgstr "Instal·ladors"
+
+msgid "Delete cached patches and installers"
+msgstr "Suprimeix els pedaços i els instal·ladors de la memòria cau"
+
+msgid "Disabled"
+msgstr "Desactivat"
+
+msgid "Remove disabled packages"
+msgstr "Elimina els paquets desactivats"
+
+msgid "Remote control software"
+msgstr "Programari de control remot"
+
+msgid "Thumbnails"
+msgstr "Miniatures"
+
+msgid "Icons for files on the system"
+msgstr "Icones dels fitxers del sistema"
+
+msgid ""
+"Deleting the index will reset the configuration of columns in the message "
+"list."
+msgstr ""
+"En suprimir l'índex es reiniciarà la configuració de les columnes de la "
+"llista de missatges."
+
+msgid "Session restore"
+msgstr "Restaura la sessió"
+
+msgid "Restores the previous session when the browser next starts"
+msgstr "Restaura la sessió anterior quan el navegador es torna a iniciar"
 
 #. Torrent software can block a list of IP addresses, such as those that may belong to malware or anti-piracy organizations
 msgid "Blocklists"
@@ -494,40 +478,56 @@ msgstr "Suprimeix el fitxer"
 msgid "Delete the list of game servers"
 msgstr "Suprimeix la llista de servidors de joc"
 
-msgid "Downloaded files"
-msgstr "Fitxers baixats"
-
-msgid "Remote control software"
-msgstr "Programari de control remot"
-
-msgid "Memory dump"
-msgstr "Abocament de memòria"
-
-msgid "Desktop widgets"
-msgstr "Ginys d'escriptori"
-
-msgid "File archiver"
-msgstr "Empaquetador de fitxers"
-
-msgid "Known files history"
-msgstr "Historial de fitxers coneguts"
-
-#. http://wiki.amule.org/wiki/Friend
-msgid "Known clients and friends"
-msgstr "Clients i amics coneguts"
-
 msgid ""
 "Delete ~/.viminfo which includes file history, command history, and buffers"
 msgstr ""
 "Suprimeix el ~/.viminfo, que inclou l'historial de fitxers, l'historial "
 "d'ordres i la memòria intermèdia"
 
+msgid "Memory dump"
+msgstr "Abocament de memòria"
+
+msgid "Anti-virus"
+msgstr "Antivirus"
+
+msgid "Quarantine"
+msgstr "Quarantena"
+
 msgid ""
-"Delete the web cache, which reduces time to display revisited pages. This "
-"also clears favorited GIFs."
+"This option will reset pinned locations in Quick Access to their defaults."
+msgstr "Aquesta opció restablirà les ubicacions per defecte de l'accés ràpid"
+
+msgid "Shellbags"
+msgstr "Shellbags"
+
+msgid "Delete the usage date, window position, and other data for folders"
 msgstr ""
-"Suprimeix la memòria cau, que redueix el temps per mostrar les pàgines que "
-"s'han visitat. També esborra les imatges GIF de les adreces d'interès."
+"Suprimeix la data d'ús, la posició de la finestra i altres dades de les "
+"carpetes"
+
+msgid "This will reset the position of desktop icons."
+msgstr "Aquesta opció restablirà la posició de les icones a l'escriptori."
+
+msgid "This will restart Windows Explorer."
+msgstr "Aquesta acció reiniciarà l'explorador del Windows."
+
+msgid "Compatibility layer for Windows software"
+msgstr "Capa de compatibilitat per al programari de Windows"
+
+msgid "File archiver"
+msgstr "Empaquetador de fitxers"
+
+msgid "Word processor"
+msgstr "Processador de textos"
+
+msgid "Windowing system"
+msgstr "Sistema de finestres"
+
+msgid "Recordings"
+msgstr "Enregistraments"
+
+msgid "Delete the audio and video recordings"
+msgstr "Suprimeix els enregistraments d'àudio i vídeo"
 
 msgid "Unnecessary file cleaner"
 msgstr "Netejador de fitxers innecessaris"
@@ -967,6 +967,12 @@ msgstr "S'ignora el netejador perquè per tothom hi té accés d'escriptura: %s"
 msgid "Error reading cleaner: %s"
 msgstr "Error en llegir el netejador: %s"
 
+msgid "System"
+msgstr "Sistema"
+
+msgid "The system in general"
+msgstr "El sistema en general"
+
 #. TRANSLATORS: desktop entries are .desktop files in Linux that
 #. make up the application menu (the menu that shows BleachBit,
 #. Firefox, and others.  The .desktop files also associate file
@@ -1044,7 +1050,8 @@ msgstr ""
 
 #. TRANSLATORS: Warning shown when selecting an option.
 msgid "This option may prevent uninstalling some updates."
-msgstr "Aquesta opció pot impedir la desinstal·lació d'algunes actualitzacions."
+msgstr ""
+"Aquesta opció pot impedir la desinstal·lació d'algunes actualitzacions."
 
 msgid "Clipboard"
 msgstr "Porta-retalls"
@@ -1071,12 +1078,6 @@ msgstr "Espai buit"
 #. TRANSLATORS: 'empty' means 'unallocated'
 msgid "Wipe empty space to hide deleted files"
 msgstr "Esborra l'espai buit per ocultar els fitxers suprimits"
-
-msgid "The system in general"
-msgstr "El sistema en general"
-
-msgid "System"
-msgstr "Sistema"
 
 #. TRANSLATORS: 'Empty' means 'unallocated.'
 #. %s expands to a path such as C:\ or /tmp/
@@ -2411,8 +2412,8 @@ msgstr ""
 #, python-format
 msgid "Wiping path %(pathname)s with file system type %(fstype)s"
 msgstr ""
-"S'està esborrant la ruta %(pathname)s amb el tipus de sistema de fitxers %"
-"(fstype)s"
+"S'està esborrant la ruta %(pathname)s amb el tipus de sistema de fitxers "
+"%(fstype)s"
 
 #, python-format
 msgid "Path to wipe must be an existing directory: %s"
@@ -2435,8 +2436,8 @@ msgid ""
 "Wrote %(file_count)d files and %(total_bytes)d bytes in %(elapsed_sec)d "
 "seconds at %(rate_mbs).2f MB/s"
 msgstr ""
-"S'han escrit %(file_count)d fitxers i %(total_bytes)d bytes en %(elapsed_sec)"
-"d segons a %(rate_mbs).2f MB/s"
+"S'han escrit %(file_count)d fitxers i %(total_bytes)d bytes en "
+"%(elapsed_sec)d segons a %(rate_mbs).2f MB/s"
 
 #. TRANSLATORS: Debug message showing disk space available to regular (non-root) users.
 #. %(bytes)d is an integer count of bytes free; %(inodes)d is an integer count of inodes free.
@@ -2482,6 +2483,10 @@ msgstr "Accés denegat en suprimir la clau del registre: %s"
 #, python-format
 msgid "Access denied: %s"
 msgstr "Accés denegat: %s"
+
+#, python-format
+msgid "Database is locked: %s"
+msgstr ""
 
 #, python-brace-format
 msgid "Error: {operation_option}: {command}"
