@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-13 10:51+0000\n"
+"POT-Creation-Date: 2026-08-17 08:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,9 +13,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.12.2\n"
 
+#: .account/already-logged-in-as
+msgid "You are already logged in as {1}"
+msgstr ""
+
+#: .account/auth-error-already-authenticated
+msgid "You are already signed in."
+msgstr ""
+
+#: .account/auth-error-code-delivery-failed
+msgid "Failed to send the verification code. Please try again later."
+msgstr ""
+
+#: .account/auth-error-code-expired
+msgid "The verification code has expired. Please request a new code."
+msgstr ""
+
+#: .account/auth-error-code-mismatch
+msgid "The verification code is incorrect."
+msgstr ""
+
+#: .account/auth-error-generic
+msgid "Authentication failed. Please try again."
+msgstr ""
+
+#: .account/auth-error-invalid-credentials
+msgid "The email or password is incorrect."
+msgstr ""
+
+#: .account/auth-error-invalid-parameter
+msgid "Invalid input. Please check and try again."
+msgstr ""
+
+#: .account/auth-error-too-many-attempts
+msgid "Too many failed attempts. Please try again later."
+msgstr ""
+
+#: .account/auth-error-too-many-requests
+msgid "Too many requests. Please try again later."
+msgstr ""
+
+#: .account/auth-error-user-not-confirmed
+msgid ""
+"This account has not been verified. Please complete verification with the "
+"code we sent."
+msgstr ""
+
+#: .account/auth-error-user-not-found
+msgid "No account was found for this email address."
+msgstr ""
+
+#: .account/auth-error-username-exists
+msgid "This username is already taken."
+msgstr ""
+
 #: .account/authentication
 msgid "Authentication"
 msgstr "Autenticació"
+
+#: .account/back-to-login
+msgid "Back to login"
+msgstr ""
 
 #: .account/benefits-desc
 msgid ""
@@ -41,9 +99,32 @@ msgstr "El pla Pro caduca el: {1}"
 msgid "Next billing date: {1}"
 msgstr "Propera data de facturació: {1}"
 
+#: .account/code-on-the-way-tip
+msgid ""
+"Your code is on the way. To log in, enter the code we sent you. It may take "
+"a minute to arrive."
+msgstr ""
+
+#: .account/code-sent-to-email
+msgid "We have sent a numeric verification code to your email address at {1}."
+msgstr ""
+
+#: .account/confirm
+msgctxt ".account/confirm"
+msgid "Confirm"
+msgstr ""
+
+#: .account/confirm-password
+msgid "Confirm Password"
+msgstr ""
+
 #: .account/core-features
 msgid "Access to core Logseq features"
 msgstr "Accés a les funcions principals de Logseq"
+
+#: .account/create-account
+msgid "Create Account"
+msgstr ""
 
 #: .account/current-plan
 msgid "Current plan"
@@ -57,9 +138,25 @@ msgstr "Suprimeix el compte"
 msgid "Discover the power of {1}"
 msgstr "Descobriu el poder de {1}"
 
+#: .account/dont-have-account-question
+msgid "Don't have an account?"
+msgstr ""
+
 #: .account/early-access-alpha-beta
 msgid "Early access to alpha/beta features"
 msgstr "Accés anticipat a funcions alfa/beta"
+
+#: .account/email
+msgid "Email"
+msgstr ""
+
+#: .account/enter-code
+msgid "Enter the code sent to your email"
+msgstr ""
+
+#: .account/enter-email
+msgid "Enter your email"
+msgstr ""
 
 #: .account/first-name
 msgid "First name"
@@ -93,6 +190,27 @@ msgstr "Sense sincronització de recursos"
 msgid "Open invoices"
 msgstr "Obrir factures"
 
+#: .account/or
+msgctxt ".account/or"
+msgid "or"
+msgstr ""
+
+#: .account/password
+msgid "Password"
+msgstr ""
+
+#: .account/password-policy-tip
+msgid ""
+"1. at least 8 characters.\n"
+"2. must have lowercase characters.\n"
+"3. must have uppercase characters.\n"
+"4. must have symbol characters."
+msgstr ""
+
+#: .account/passwords-do-not-match
+msgid "Passwords do not match."
+msgstr ""
+
 #: .account/plan-free
 msgid "Free"
 msgstr "Gratuït"
@@ -122,8 +240,20 @@ msgctxt ".account/reset-password"
 msgid "Reset password"
 msgstr "Restablir la contrasenya"
 
+#: .account/send-code
+msgid "Send Code"
+msgstr ""
+
 #: .account/show-email-address
 msgid "Show email address"
+msgstr ""
+
+#: .account/sign-in
+msgid "Sign In"
+msgstr ""
+
+#: .account/sign-out
+msgid "Sign Out"
 msgstr ""
 
 #: .account/sign-up
@@ -834,10 +964,6 @@ msgstr "Cercar"
 msgid "Trigger"
 msgstr "Executar"
 
-#: .cmdk.create/configure-tag
-msgid "Configure tag"
-msgstr "Configurar etiqueta"
-
 #: .cmdk.create/page
 msgid "Create page"
 msgstr "Crear pàgina"
@@ -924,10 +1050,6 @@ msgstr "Actualitzats recentment"
 msgctxt ".cmdk.group/themes"
 msgid "Themes"
 msgstr "Temes"
-
-#: .cmdk.info/configure-tag
-msgid "Configure #{1}"
-msgstr "Configurar #{1}"
 
 #: .cmdk.info/create-page
 msgid "Create page called '{1}'"
@@ -4187,10 +4309,6 @@ msgstr "Els elements integrats no es poden eliminar."
 msgid "New node"
 msgstr "Nou node"
 
-#: .notification/clear-all
-msgid "Clear all"
-msgstr "Netejar tot"
-
 #: .notification/copied
 msgid "Copied!"
 msgstr "Copiat"
@@ -7211,6 +7329,7 @@ msgid "Configure"
 msgstr "Configura"
 
 #: .ui/confirm
+msgctxt ".ui/confirm"
 msgid "Confirm"
 msgstr "Confirma"
 
@@ -7294,10 +7413,6 @@ msgstr "Etiqueta"
 #: .ui/link
 msgid "Link"
 msgstr "Enllaç"
-
-#: .ui/load-more
-msgid "Load more"
-msgstr "Carrega'n més"
 
 #: .ui/loading
 msgid "Loading..."
@@ -7507,6 +7622,7 @@ msgid "text not contains"
 msgstr "El text no conté"
 
 #: .view.filter/or
+msgctxt ".view.filter/or"
 msgid "or"
 msgstr "O"
 
