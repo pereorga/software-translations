@@ -981,11 +981,11 @@ msgstr "Vaja, el vídeo seleccionat excedeix les restriccions de mida dels missa
 
 msgctxt "icu:fileTooLargeWarning"
 msgid "Can’t send this file because it’s too large. You can send files up to {limit, number}{units}."
-msgstr "Can’t send this file because it’s too large. You can send files up to {limit,number}{units}."
+msgstr "No es pot enviar aquest arxiu perquè és massa gran. Pots enviar arxius de fins a {limit,number}{units}."
 
 msgctxt "icu:videoFileTooLargeWarning"
 msgid "Can’t send this video file because it’s too large. You can send video files up to {limit, number}{units}."
-msgstr "Can’t send this video file because it’s too large. You can send video files up to {limit,number}{units}."
+msgstr "No es pot enviar aquest arxiu de vídeo perquè és massa gran. Pots enviar arxius de vídeo de fins a {limit,number}{units}."
 
 msgctxt "icu:unableToLoadAttachment"
 msgid "Unable to load selected attachment."
@@ -5102,6 +5102,22 @@ msgstr "Vista de l'orador"
 msgctxt "icu:calling__view_mode--updated"
 msgid "View updated"
 msgstr "Vista actualitzada"
+
+msgctxt "icu:calling__change-layout"
+msgid "Change layout"
+msgstr "Canviar vista"
+
+msgctxt "icu:calling__layout--paginated"
+msgid "Grid"
+msgstr "Quadrícula"
+
+msgctxt "icu:calling__layout--overflow"
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+msgctxt "icu:calling__layout--speaker"
+msgid "Speaker"
+msgstr "Altaveu"
 
 msgctxt "icu:calling__SelectPresentingSourcesModal--title"
 msgid "Share your screen"
@@ -9303,10 +9319,6 @@ msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--header"
 msgid "Warning"
 msgstr "Advertiment"
 
-msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--description"
-msgid "If you disable the PIN, you will lose all data when you re-register Signal unless you transfer it from another iOS device. You can not turn on Registration Lock while the PIN is disabled."
-msgstr "Si desactiveu el PIN, perdreu totes les dades quan torneu a registrar-vos al Signal, si no és que les transferiu des d'un altre dispositiu iOS. No podeu activar el blocatge de registre mentre el PIN estigui desactivat."
-
 msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button"
 msgid "Disable PIN"
 msgstr "Desactiva el PIN"
@@ -11382,10 +11394,6 @@ msgstr "Petits ajustos addicionals, correccions d'errors i un munt de plans pel 
 msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
-
-msgctxt "icu:WhatsNew__8.18--0"
-msgid "Polls can now be created in individual chats too. Present a curated list of choices to your indecisive friend, or recapture the magic of passing a note to your crush by creating a “Do you like me? Y/N/Maybe” poll."
-msgstr "A partir d'ara, també podràs crear enquestes als xats individuals."
 
 msgctxt "icu:WhatsNew__8.19--0"
 msgid "Group admins can now bring chats to their natural conclusion with the new \"End Group\" option in group settings. Ending a group prevents group members from sending messages or starting calls, and also disables invites. Now you can make sure everyone stays on the right thread by ending last year's sewing meetup group before stitching a new one together."
