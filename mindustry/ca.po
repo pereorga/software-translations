@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-10 09:08+0000\n"
+"POT-Creation-Date: 2026-08-17 08:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,10 +12,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Translate Toolkit 3.12.2\n"
-
-#: credits.text
-msgid "Created by [royal]Anuken[] - [sky]anukendev@gmail.com[]"
-msgstr "Creat per [royal]Anuken[] - [sky]anukendev@gmail.com[]"
 
 #: credits
 msgid "Credits"
@@ -87,6 +83,18 @@ msgstr ""
 "\n"
 "[sky]{0}"
 
+#: clipboardcopy
+msgid ""
+"This server wants to copy text to your clipboard. Are you sure you want to "
+"continue?\n"
+"\n"
+"[sky]{0}"
+msgstr ""
+"Aquest servidor vol copiar text al vostre porta-retalls. Esteu segur que "
+"voleu continuar?\n"
+"\n"
+"[sky]{0}"
+
 #: linkfail
 msgid ""
 "Failed to open link!\n"
@@ -104,6 +112,14 @@ msgid "Map too large, potentially not enough memory for screenshot."
 msgstr ""
 "El mapa és massa gran. No hi ha prou memòria per a fer la captura de "
 "pantalla."
+
+#: screenshot.error
+msgid ""
+"Failed to take screenshot. Your device likely does not support screenshots "
+"this large."
+msgstr ""
+"No s’ha pogut fer la captura de pantalla. El vostre dispositiu probablement "
+"no suporta captures tan grans."
 
 #: gameover
 msgid "Game Over"
@@ -132,6 +148,14 @@ msgstr "S’ha copiat."
 #: indev.notready
 msgid "This part of the game isn't ready yet"
 msgstr "Aquesta part del joc encara no està preparada."
+
+#: bundle.external
+msgid ""
+"Note: You have successfully loaded an external translation bundle.\n"
+"[accent]{0}"
+msgstr ""
+"Avís: S’ha carregat correctament un paquet de traduccions externes.\n"
+"[accent]{0}"
 
 #: load.sound
 msgctxt "load.sound"
@@ -221,6 +245,10 @@ msgstr "[lightgray][La versió més recent]"
 msgid "Releases"
 msgstr "Versions"
 
+#: mods.browser.fetching
+msgid "Fetching Releases..."
+msgstr "Es descarreguen les versions publicades..."
+
 #: mods.github.open
 msgid "Repo"
 msgstr "Dipòsit de GitHub"
@@ -256,6 +284,10 @@ msgstr "Copia al porta-retalls"
 #: load.clipboard
 msgid "Load from Clipboard"
 msgstr "Importa del porta-retalls"
+
+#: workshop.browse
+msgid "Browse Workshop"
+msgstr "Cerca al Workshop"
 
 #: workshop.share
 msgid "Share on Workshop"
@@ -426,6 +458,14 @@ msgstr "Base de dades del nucli"
 msgid "Database"
 msgstr "Base de dades"
 
+#: database.patched
+msgid "Modified by data patches."
+msgstr "Modificat pels pedaços de dades."
+
+#: viewfields
+msgid "View Content Fields"
+msgstr "Mostra els camps de contingut"
+
 #: savegame
 msgid "Save Game"
 msgstr "Desa la partida"
@@ -521,6 +561,10 @@ msgstr "Es prepara el contingut…"
 msgid "Uploading Content"
 msgstr "Es puja el contingut…"
 
+#: content.createdby
+msgid "Created by: {0}"
+msgstr "Autoria: {0}"
+
 #: uploadingpreviewfile
 msgid "Uploading Preview File"
 msgstr "Es puja el fitxer de previsualització…"
@@ -576,6 +620,42 @@ msgstr "Torna a carregar"
 #: mods.reloadexit
 msgid "To reload mods, the game will now exit."
 msgstr "El programa es tancarà per a carregar els mods."
+
+#: mods.update.available
+msgid "[lightgray]Update Available: {0}"
+msgstr "[lightgray]Actualització disponible: {0}"
+
+#: mods.update.all
+msgid "Update All Mods"
+msgstr "Actualitza tots els mods"
+
+#: mods.downloading
+msgid "[accent]Downloading Mod: {0}"
+msgstr "[accent]Es descarrega el mod {0}"
+
+#: mod.warning
+msgid ""
+"⚠ Mods can execute arbitrary code.\n"
+"\n"
+"Never download mods from sources you don't trust - they could steal data or "
+"compromise your computer."
+msgstr ""
+"⚠ Els mods poden executar codi arbitrari.\n"
+"\n"
+"No descarregueu mai mods d’orígens amb els quals no hi confieu. Podrien "
+"robar-vos dades o comprometre el vostre ordinador."
+
+#: mod.warning.read
+msgid "I actually read this"
+msgstr "Ho he llegit"
+
+#: mod.warning.accept
+msgid "I accept the responsibility"
+msgstr "N’accepto la responsabilitat"
+
+#: mod.warning.deny
+msgid "Disable my mods"
+msgstr "Desactiva tots els mods"
 
 #: mod.installed
 msgid "[[Installed]"
@@ -696,6 +776,16 @@ msgstr "Cal la versió [red]{0}[] del joc."
 msgid "Errors have occurred loading content."
 msgstr "S’han produït errors quan es carregava el contingut."
 
+#: mod.errors.map
+msgid ""
+"[scarlet]Errors have occurred loading map content. All custom content has "
+"been disabled.[]\n"
+"This map will likely not function correctly."
+msgstr ""
+"[scarlet]S’han produït errors mentre es carregaven els continguts del mapa. "
+"Tot el contingut personalitzat s’ha desactivat.[]\n"
+"Probablement aquest mapa no funcionarà correctament."
+
 #: mod.noerrorplay
 msgid ""
 "[red]You have mods with errors.[] Either disable the affected mods or fix "
@@ -751,7 +841,7 @@ msgstr "Aquest mod s’esborrarà."
 
 #: mod.author
 msgid "[lightgray]Author:[] {0}"
-msgstr "[lightgray]Autor:[] {0}"
+msgstr "[lightgray]Autoria:[] {0}"
 
 #: mod.missing
 msgid ""
@@ -919,6 +1009,10 @@ msgstr ""
 msgid "Difficulty"
 msgstr "Dificultat"
 
+#: campaign.rework.title
+msgid "Campaign Changes Notice"
+msgstr "Avís de canvis de campanya"
+
 #: campaign.rework.serpulo
 msgid ""
 "️️️️️️️= [accent]⚠ The Serpulo campaign has been reworked.[]\n"
@@ -929,13 +1023,13 @@ msgid ""
 "For a cleaner experience, consider resetting your campaign saves in the "
 "settings."
 msgstr ""
-"[accent]⚠ The Serpulo campaign has been reworked.[]\n"
+"[accent]⚠ La campanya de Serpulo s’ha reestructurat.[]\n"
 "\n"
-"Sector positions and difficulty have changed. You may encounter issues "
-"relating to leftover campaign saves from the old layout.\n"
+"Les posicions dels sectors i la dificultat s’han modificat. Potser tindreu "
+"problemes amb les desades antigues de la campanya amb la disposició antiga.\n"
 "\n"
-"For a cleaner experience, consider resetting your campaign saves in the "
-"settings."
+"Per a una experiència sense tants problemes, considereu reiniciar la "
+"campanya des de la configuració del joc."
 
 #: completed
 msgid "[accent]Researched"
@@ -1024,6 +1118,11 @@ msgstr ""
 #: server.kicked.banned
 msgid "You are banned on this server."
 msgstr "Se us ha bandejat d’aquest servidor."
+
+#: server.kicked.steamBanned
+msgid ""
+"You have been banned from Steam lobbies for disruptive and shameful behavior."
+msgstr "Se us ha bandejat de les sales de l’Steam per comportament inadequat."
 
 #: server.kicked.typeMismatch
 msgid "This server is not compatible with your build type."
@@ -1200,6 +1299,20 @@ msgstr ""
 "Els servidors poden tenir continguts generats per usuaris que no són "
 "adequats per a totes les edats."
 
+#: servers.connect.confirm
+msgid ""
+"Join the following server?\n"
+"\n"
+"[accent]{0}[]\n"
+"\n"
+"Only connect to servers you trust!"
+msgstr ""
+"Voleu unir-vos al servidor següent?\n"
+"\n"
+"[accent]{0}[]\n"
+"\n"
+"Connecteu-vos només a servidors de confiança!"
+
 #: servers.showhidden
 msgid "Show Hidden Servers"
 msgstr "Mostra els servidors ocults"
@@ -1211,6 +1324,14 @@ msgstr "Mostra"
 #: server.hidden
 msgid "Hidden"
 msgstr "Amaga"
+
+#: servers.sortping
+msgid "Sorting By: Ping"
+msgstr "Ordena per: Ping"
+
+#: servers.sortplayers
+msgid "Sorting By: Player Count"
+msgstr "Ordena per: Nombre de jugadors"
 
 #: viewplayer
 msgid "Viewing Player: [accent]{0}"
@@ -1305,12 +1426,12 @@ msgid "Edit Server"
 msgstr "Edita el servidor"
 
 #: server.outdated
-msgid "[scarlet]Outdated Server![]"
-msgstr "[scarlet]Servidor desactualitzat![]"
+msgid "[red]⚠ Outdated Server![]"
+msgstr "[red]⚠ Servidor desactualitzat![]"
 
 #: server.outdated.client
-msgid "[scarlet]Outdated Client![]"
-msgstr "[scarlet]Client desactualitzat![]"
+msgid "[red]⚠ Outdated Client![]"
+msgstr "[red]⚠ Client desactualitzat![]"
 
 #: server.custombuild
 msgid "[accent]Custom Build"
@@ -1390,6 +1511,10 @@ msgstr ""
 msgid "Unable to join game ([accent]{0}[])."
 msgstr "No és possible unir-se a la partida ([accent]{0}[])."
 
+#: disconnect.reason
+msgid "Disconnected: {0}"
+msgstr "Desconnectat: {0}"
+
 #: connecting
 msgid "[accent]Connecting..."
 msgstr "[accent]Es connecta…"
@@ -1398,9 +1523,21 @@ msgstr "[accent]Es connecta…"
 msgid "[accent]Reconnecting..."
 msgstr "[accent]Es torna a connectar…"
 
+#: connecting.establish
+msgid "[accent]Establishing connection..."
+msgstr "[accent]S’estableix la connexió…"
+
+#: receiving.world
+msgid "[accent]Receiving world data ({0})..."
+msgstr "[accent]Es reben les dades del món ({0})…"
+
+#: receiving.assets
+msgid "[accent]Receiving assets ({0})..."
+msgstr "[accent]Es reben recursos ({0})…"
+
 #: receiving.assets.fail
 msgid "I/O error occurred while receiving assets."
-msgstr "Error occurred while receiving assets."
+msgstr "S’han produït errors mentre es rebien recursos."
 
 #: server.invalidport
 msgid "Invalid port number!"
@@ -1473,6 +1610,41 @@ msgstr "[scarlet]La desada no s’ha pogut importar: [accent]{0}"
 #: save.export.fail
 msgid "[scarlet]Failed to export save: [accent]{0}"
 msgstr "[scarlet]La desada no s’ha pogut exportar: [accent]{0}"
+
+#: save.export.needsload
+msgid ""
+"[scarlet]⚠ This save contains embedded assets.[]\n"
+"Load into this save before exporting it."
+msgstr ""
+"[scarlet]⚠ Aquesta desada conté recursos incrustats.[]\n"
+"Carregueu la desada abans d’exportar-la."
+
+#: save.assets.missing
+msgid "Missing Assets"
+msgstr "Recursos que falten"
+
+#: save.assets.missing.list
+msgid "Asset List..."
+msgstr "Llista de recursos…"
+
+#: save.assets.missing.info
+msgid ""
+"[scarlet]⚠ This save contains missing assets![]\n"
+"\n"
+"[lightgray]This is likely because the save file was not properly exported.\n"
+"[lightgray]When sharing saves, only export through the in-game UI. Do not "
+"copy save files directly.\n"
+"[lightgray]If transferring files is necessary, make sure the "
+"[accent]assetCache[] folder is copied as well."
+msgstr ""
+"[scarlet]⚠ Aquesta desada fa servir recursos que fan falta![]\n"
+"\n"
+"[lightgray]Probablement, la desada no es va exportar adequadament.\n"
+"[lightgray]Quan es comparteixen partides desades, exporteu-les només a "
+"través de la interfície del joc. No copieu els fitxers de desades "
+"directament.\n"
+"[lightgray]Si cal transferir fitxers, assegureu-vos que la carpeta "
+"[accent]assetCache[] també es copia."
 
 #: save.import
 msgid "Import Save"
@@ -1571,6 +1743,10 @@ msgstr "Mostra-ho al Workshop"
 msgid "Edit Workshop Listing"
 msgstr "Edita el llistat del Workshop"
 
+#: hide
+msgid "Hide"
+msgstr "Amaga"
+
 #: ok
 msgid "OK"
 msgstr "D’acord"
@@ -1656,6 +1832,10 @@ msgstr "Comportament: Persegueix l’objectiu"
 msgid "Stance: Patrol Path"
 msgstr "Comportament: Patrulla el camí"
 
+#: stance.holdposition
+msgid "Stance: Hold Position"
+msgstr "Comportament: Manté la posició"
+
 #: stance.ram
 msgid ""
 "Stance: Ram\n"
@@ -1663,6 +1843,11 @@ msgid ""
 msgstr ""
 "Comportament: Senzill\n"
 "[lightgray]Mou-te en línia recta, sense encaminador"
+
+#: stance.boost
+msgctxt "stance.boost"
+msgid "Boost"
+msgstr "Sobrevola"
 
 #: stance.mineauto
 msgid "Automatic Mining"
@@ -1864,6 +2049,10 @@ msgstr "Personalitzat"
 msgid "Built-In"
 msgstr "*Integrat*"
 
+#: modded
+msgid "Modded"
+msgstr "Amb mods"
+
 #: map.delete.confirm
 msgid "Are you sure you want to delete this map? This action cannot be undone!"
 msgstr ""
@@ -2021,7 +2210,7 @@ msgstr "Informació del mapa"
 
 #: editor.author
 msgid "Author:"
-msgstr "Autor:"
+msgstr "Autoria:"
 
 #: editor.description
 msgid "Description:"
@@ -2141,6 +2330,22 @@ msgstr "Autor"
 msgid "Description"
 msgstr "Descripció"
 
+#: editor.filters.modname
+msgid "Mod Name"
+msgstr "Nom del mod"
+
+#: editor.filters.prioritizemod
+msgid "Mod Priority"
+msgstr "Prioritat del mod"
+
+#: editor.filters.prioritizecustom
+msgid "Custom Priority"
+msgstr "Prioritat personalitzada"
+
+#: editor.filters.planetselect
+msgid "Planet Selection"
+msgstr "Selecció de planeta"
+
 #: editor.shiftx
 msgid "Shift X"
 msgstr "Desplaça en l’eix X"
@@ -2151,21 +2356,68 @@ msgstr "Desplaça en l’eix Y"
 
 #: asset.patch
 msgid "Patches"
-msgstr "Patch"
+msgstr "Pedaç"
+
+#: asset.content
+msgctxt "asset.content"
+msgid "Content"
+msgstr "Contingut"
 
 #: asset.bundle
 msgid "Translation Bundles"
-msgstr "Translation Bundle"
+msgstr "Paquet de traduccions"
 
 #: asset.image
 msgctxt "asset.image"
 msgid "Images"
-msgstr "Image"
+msgstr "Imatge"
 
 #: asset.sound
 msgctxt "asset.sound"
 msgid "Sounds"
-msgstr "Sound"
+msgstr "So"
+
+#: asset.music
+msgctxt "asset.music"
+msgid "Music"
+msgstr "Música"
+
+#: content.unit
+msgid "Unit"
+msgstr "Unitat"
+
+#: content.item
+msgid "Item"
+msgstr "Element"
+
+#: content.liquid
+msgctxt "content.liquid"
+"content.liquid"
+msgid "Liquid"
+msgstr "Líquid"
+
+#: content.block
+msgctxt "content.block"
+msgid "Block"
+msgstr "Bloc"
+
+#: content.planet
+msgctxt "content.planet"
+msgid "Planet"
+msgstr "Planeta"
+
+#: content.weather
+msgctxt "content.weather"
+msgid "Weather"
+msgstr "Clima"
+
+#: content.status
+msgid "Status Effect"
+msgstr "Efecte d’estat"
+
+#: patch.set
+msgid "Patchset: {0}"
+msgstr "Conjunt de pedaços: {0}"
 
 #: patch.none
 msgid "[lightgray]No patchsets found."
@@ -2183,17 +2435,224 @@ msgstr "No s’ha pogut importar el conjunt de pedaços."
 msgid "Are you sure you want to delete this patchset?"
 msgstr "Esteu segur que voleu esborrar aquest conjunt de pedaços?"
 
+#: patch.path
+msgid "Path:"
+msgstr "Camí:"
+
 #: patch.fields
 msgid "{0} fields"
 msgstr "{0} camps"
 
+#: images
+msgctxt "images"
+msgid "Images"
+msgstr "Imatges"
+
+#: asset.title
+msgid "Data Patches & Assets"
+msgstr "Recursos i pedaços de dades"
+
+#: asset.guide
+msgid "Usage Guide"
+msgstr "Guia d’ús"
+
+#: asset.bundle.exists
+msgid "A bundle with path '{0}' already exists."
+msgstr "Al camí «{0}» ja hi ha un paquet."
+
+#: asset.importzip
+msgid "Import Asset Zip"
+msgstr "Importa Zip de recursos"
+
+#: asset.exportzip
+msgid "Export Asset Zip"
+msgstr "Exporta Zip de recursos"
+
 #: asset.image.importzip
 msgid "Import Image Zip"
-msgstr "Import Zip"
+msgstr "Importa Zip"
 
 #: asset.image.exportzip
 msgid "Export Image Zip"
-msgstr "Export Zip"
+msgstr "Exporta Zip"
+
+#: asset.clearall
+msgid "Clear All"
+msgstr "Esborra’ls tots"
+
+#: asset.clearall.confirm
+msgid ""
+"Are you sure that you want to clear [red]all[] assets from this map?\n"
+"This includes images, audio, content, etc."
+msgstr ""
+"Esteu segur que voleu esborrar [red]tots[] els recursos del mapa?\n"
+"Això inclou imatges, so, contingut, etc."
+
+#: asset.path.invalid
+msgid "Path is invalid!"
+msgstr "El camí no és vàlid!"
+
+#: asset.imports
+msgctxt "asset.imports"
+msgid "Import Results"
+msgstr "Importa resultats"
+
+#: asset.imported
+msgid "[accent]{0} assets imported."
+msgstr "[accent]{0} recursos importats."
+
+#: asset.import.none
+msgid "No valid asset files found in zip archive."
+msgstr "No hi ha fitxers de recursos al fitxer zip."
+
+#: asset.content.errors
+msgid "Content Errors"
+msgstr "Errors de contingut"
+
+#: asset.content.add
+msgid "Add Content"
+msgstr "Afegeix contingut"
+
+#: asset.content.type
+msgid "Type:"
+msgstr "Tipus:"
+
+#: asset.content.exists
+msgid "[red]Content with that name already exists!"
+msgstr "[red]Ja existeix contingut amb aquest nom!"
+
+#: asset.content.badname
+msgid "[red]Invalid name! Most symbols are not allowed."
+msgstr "[red]Nom no vàlid. No es permet fer servir la majoria dels símbols."
+
+#: asset.content.import.file
+msgctxt "asset.content.import.file"
+msgid "Import File"
+msgstr "Importa fitxer"
+
+#: asset.content.import.clipboard
+msgid "Import From Clipboard"
+msgstr "Importa del porta-retalls"
+
+#: asset.exists
+msgid ""
+"An asset of that type with the same path/name already exists:\n"
+"[lightgray]{0}"
+msgstr ""
+"Ja existeix un recurs del mateix tipus amb el mateix camí/nom:\n"
+"[lightgray]{0}"
+
+#: asset.exists.audio
+msgid ""
+"A sound/music asset with that name is already loaded:\n"
+"[lightgray]{0}"
+msgstr ""
+"Ja s’ha carregat un recurs de so/música amb aquest nom:\n"
+"[lightgray]{0}"
+
+#: asset.broken
+msgid ""
+"This asset file could not be located.\n"
+"This can be caused by improper import of data, or an incorrectly exported "
+"save."
+msgstr ""
+"Aquest fitxer de recurs no s’ha pogut localitzar.\n"
+"Pot ser a causa d’una importació inadequada de dades o d’una desada "
+"exportada de manera incorrecta."
+
+#: asset.audio.invalid
+msgid ""
+"Audio file could not be loaded.\n"
+"Ensure that it is a valid OGG or MP3 file."
+msgstr ""
+"El fitxer de so no s’ha pogut carregar.\n"
+"Assegureu-vos que és un fitxer OGG o MP3 vàlid."
+
+#: asset.delete.confirm
+msgid "Are you sure you want to delete this asset?"
+msgstr "Esteu segur que voleu esborrar aquest recurs?"
+
+#: asset.images
+msgid "Data Patch Images"
+msgstr "Imatges del pedaç de dades"
+
+#: asset.image.imports
+msgctxt "asset.image.imports"
+msgid "Import Results"
+msgstr "Importa els resultats"
+
+#: asset.image.imported
+msgid "[accent]{0} images imported."
+msgstr "[accent]{0} imatges importades."
+
+#: asset.image.none
+msgid "No valid PNG files found in zip archive."
+msgstr "No s’han trobat fitxers PNG vàlids al fitxer zip."
+
+#: asset.image.error
+msgid "[red]The following errors were encountered:[]"
+msgstr "[red]S’han produït els següents errors:[]"
+
+#: asset.image.clearall.confirm
+msgid "Are you certain that you wish to clear all images?"
+msgstr "Esteu segur que voleu esborrar totes les imatges?"
+
+#: asset.image.info
+msgid "Image Info"
+msgstr "Informació de la imatge"
+
+#: asset.image.toolarge
+msgid "Image ([lightgray]{0}x{1}[]) is too large. Maximum size is {2}x{3}."
+msgstr ""
+"La imatge ([lightgray]{0}×{1}[]) és massa gran. La mida màxima és {2}×{3}."
+
+#: asset.image.exists
+msgid ""
+"An image with that path/name already exists:\n"
+"[lightgray]{0}"
+msgstr ""
+"Ja existeix una imatge amb aquest camí/nom:\n"
+"[lightgray]{0}"
+
+#: asset.image.delete.confirm
+msgid "Are you certain that you wish to delete this image?"
+msgstr "Esteu segur que voleu esborrar aquesta imatge?"
+
+#: asset.image.name
+msgid "[accent]File Name: [lightgray]{0}"
+msgstr "[accent]Nom del fitxer: [lightgray]{0}"
+
+#: asset.image.region.name
+msgid "[accent]Region Name: [lightgray]{0}"
+msgstr "[accent]Nom de la regió: [lightgray]{0}"
+
+#: asset.image.path
+msgid "[accent]Path: [lightgray]{0}"
+msgstr "[accent]Camí: [lightgray]{0}"
+
+#: asset.image.env
+msgid "[accent]Uses Environment Atlas: [lightgray]{0}"
+msgstr "[accent]Fa servir l’atles d’entorn: [lightgray]{0}"
+
+#: asset.image.size
+msgid "[accent]Size: [lightgray]{0}x{1}"
+msgstr "[accent]Mida: [lightgray]{0}×{1}"
+
+#: asset.image.filesize
+msgid "[accent]File Size: [lightgray]{0}"
+msgstr "[accent]Mida del fitxer: [lightgray]{0}"
+
+#: asset.image.packfailed
+msgid "[red]⚠ Failed to pack sprite![]"
+msgstr "[red]⚠ La imatge no s’ha pogut empaquetar![]"
+
+#: asset.image.packfailed.env
+msgid ""
+"This is likely caused by a lack of space in the environment atlas.\n"
+"Note that environment sprites are limited to a 512x512 total area."
+msgstr ""
+"Normalment està provocat per una falta d’espai a l’atles d’entorn.\n"
+"Tingueu en compte que les imatges es limiten a una àrea total de 512×512."
 
 #: waves.title
 msgctxt "waves.title"
@@ -2247,6 +2706,10 @@ msgstr "Selecciona la zona d’aparició"
 #: waves.spawn.none
 msgid "[scarlet]no spawns found in map"
 msgstr "[scarlet]No s’han trobat zones d’aparició al mapa."
+
+#: waves.spawn.first
+msgid "[lightgray](first {0})"
+msgstr "[lightgray](primer {0})"
 
 #: waves.max
 msgid "max units"
@@ -2311,7 +2774,7 @@ msgstr "Es busquen onades…"
 
 #: waves.filter
 msgid "Unit Filter"
-msgstr "Filtre d'unitats"
+msgstr "Filtre d’unitats"
 
 #: waves.units.hide
 msgid "Hide All"
@@ -2320,6 +2783,10 @@ msgstr "Amaga-les totes"
 #: waves.units.show
 msgid "Show All"
 msgstr "Mostra-les totes"
+
+#: pause.disabled
+msgid "[scarlet]Pause is disabled"
+msgstr "[scarlet]La pausa està desactivada."
 
 #.
 #. these are intentionally in lower case
@@ -2347,9 +2814,21 @@ msgstr "Detalls"
 msgid "Edit"
 msgstr "Edita"
 
+#: edit.menu
+msgid "Edit..."
+msgstr "Edita…"
+
 #: variables
 msgid "Vars"
 msgstr "Variables"
+
+#: logic.error.toolong
+msgid ""
+"Processor code too long (Limit: {0} compressed bytes, actual length: {1} "
+"bytes)"
+msgstr ""
+"El codi del processador és massa llarg (Límit: {0} bytes comprimits, "
+"llargada actual: {1} bytes)"
 
 #: logic.clear.confirm
 msgid "Are you sure you want to clear all code from this processor?"
@@ -2674,6 +3153,14 @@ msgstr "Sota els líquids"
 msgid "Draw floors under liquid tiles."
 msgstr "Dibuixa el terra a sota de les caselles de líquids."
 
+#: toolmode.fillunderliquid
+msgid "Fill Under Liquids"
+msgstr "Omple sota els líquids"
+
+#: toolmode.fillunderliquid.description
+msgid "Fill floors under liquid tiles."
+msgstr "Omple el terra a sota de les caselles de líquids."
+
 #: filters.empty
 msgid "[lightgray]No filters! Add one with the button below."
 msgstr "[lightgray]Sense filtres! Afegiu-ne un amb el botó de sota."
@@ -2869,15 +3356,15 @@ msgstr ""
 "\n"
 "[cyan]Exemple de propietat:\n"
 "[]name: [accent]timer[]\n"
-"value: [accent]Example timer, time left: {0}[]\n"
+"value: [accent]Exemple de cronòmetre i temps restant: {0}[]\n"
 "\n"
-"[cyan]Usage:\n"
-"[]Set it as objective's text: [accent]@timer\n"
+"[cyan]Ús:\n"
+"[]Establiu-ho com a text d’objectiu: [accent]@timer\n"
 "\n"
-"[]Print it in a world processor:\n"
+"[]Imprimeix-ho en un processador mundial:\n"
 "[accent]localeprint \"timer\"\n"
 "format time\n"
-"[gray](where time is a separately calculated variable)"
+"[gray](on time és una variable calculada per separat)"
 
 #: locales.deletelocale
 msgid "Are you sure you want to delete this locale bundle?"
@@ -2947,6 +3434,10 @@ msgstr "Es mostra la propietat «{0}»"
 #: locales.addicon
 msgid "Add Icon"
 msgstr "Afegeix una icona"
+
+#: locales.property.name
+msgid "name"
+msgstr "nom"
 
 #: width
 msgid "Width:"
@@ -3243,6 +3734,11 @@ msgstr "[accent]La producció enemiga augmentarà d’aquí [lightgray]{0}[]"
 msgid "[accent]Enemy air unit production begins in [lightgray]{0}[]"
 msgstr ""
 "[accent]L’enemic començarà a produir unitats aèries d’aquí [lightgray]{0}[]"
+
+#: objective.enemyunitproduction
+msgid "[accent]Enemy unit production begins in [lightgray]{0}[]"
+msgstr ""
+"[accent]La producció d’unitats enemigues començarà d’aquí [lightgray]{0}[]"
 
 #: objective.destroycore
 msgid "[accent]Destroy Enemy Core"
@@ -3625,6 +4121,10 @@ msgstr "Veure el sector"
 msgid "[lightgray] Core: Foundation Required Nearby"
 msgstr "[lightgray] Nucli: Calen fonaments"
 
+#: sector.shielded
+msgid "[lightgray] Shielded"
+msgstr "[lightgray] Protegit amb escut"
+
 #: threat.low
 msgid "Low"
 msgstr "Baixa"
@@ -3645,6 +4145,22 @@ msgstr "Extrema"
 msgctxt "threat.eradication"
 msgid "Eradication"
 msgstr "Erradicació"
+
+#: difficulty.guide.title
+msgid "Notice"
+msgstr "Avís"
+
+#: difficulty.guide
+msgid ""
+"If a sector poses too much of a challenge, campaign difficulty can be "
+"adjusted for an easier experience."
+msgstr ""
+"Si un sector és massa difícil, la dificultat de la campanya es pot ajustar "
+"per a gaudir d’una experiència més fàcil."
+
+#: difficulty.guide.confirm
+msgid "Adjust Difficulty"
+msgstr "Ajusta la dificultat"
 
 #: difficulty.casual
 msgid "Casual"
@@ -3695,6 +4211,10 @@ msgstr "Impacte 0078"
 msgid "Ground Zero"
 msgstr "Zona zero"
 
+#: sector.crateredBattleground.name
+msgid "Cratered Battleground"
+msgstr "Camp de batalla amb cràters"
+
 #: sector.frozenForest.name
 msgid "Frozen Forest"
 msgstr "El bosc gelat"
@@ -3725,7 +4245,7 @@ msgstr "Els camps de quitrà"
 
 #: sector.saltFlats.name
 msgid "Salt Flats"
-msgstr "Les Salines"
+msgstr "Les salines"
 
 #: sector.fungalPass.name
 msgid "Fungal Pass"
@@ -3775,9 +4295,17 @@ msgstr "Els atol·lons"
 msgid "Testing Grounds"
 msgstr "Camps de proves"
 
+#: sector.perilousHarbor.name
+msgid "Perilous Harbor"
+msgstr "Port perillós"
+
 #: sector.weatheredChannels.name
 msgid "Weathered Channels"
 msgstr "Els canals erosionats"
+
+#: sector.fallenVessel.name
+msgid "Fallen Vessel"
+msgstr "La nau caiguda"
 
 #: sector.mycelialBastion.name
 msgid "Mycelial Bastion"
@@ -3790,6 +4318,10 @@ msgstr "La frontera"
 #: sector.sunkenPier.name
 msgid "Sunken Pier"
 msgstr "Moll afonat"
+
+#: sector.littoralShipyard.name
+msgid "Littoral Shipyard"
+msgstr "Drassana litoral"
 
 #: sector.geothermalStronghold.name
 msgid "Geothermal Stronghold"
@@ -3833,6 +4365,15 @@ msgstr ""
 "\n"
 "L’enemic hi ha aixecat un complex d’emmagatzematge de recursos. Elimineu el "
 "seu nucli i no en deixeu cap rastre."
+
+#: sector.crateredBattleground.description
+msgid ""
+"Water has accumulated in this crater, relic of the old wars. Reclaim the "
+"area. Collect sand. Smelt metaglass. Pump water to cool turrets and drills."
+msgstr ""
+"En aquest cràter, relíquia d’una guerra de fa molt temps, s’hi ha acumulat "
+"aigua. Reclameu l’àrea. Recolliu sorra. Foneu metavidre. Bombegeu aigua per "
+"a refredar les torretes i les perforadores."
 
 #: sector.ruinousShores.description
 msgid ""
@@ -4027,6 +4568,162 @@ msgstr ""
 "L’enemic ha establert una base en una illa distant amb defenses geològiques "
 "naturals. Destruïu el post avançat i aconseguiu i investigueu les seves "
 "tecnologies navals avançades."
+
+#: sector.facility32m.description
+msgid ""
+"This sector contains the moldering remnants of an explosives production "
+"facility.\n"
+"\n"
+"Capture this area. Research the Blast Mixer. Produce Blast Compound for use "
+"as turret ammunition."
+msgstr ""
+"Aquest sector conté les restes d’unes instal·lacions de producció "
+"d’explosius.\n"
+"\n"
+"Captureu l’àrea, estudieu el barrejador d’explosius i produïu compost "
+"explosiu per a fer servir de munició per a les torretes."
+
+#: sector.taintedWoods.description
+msgid ""
+"[gray][optional objective][]\n"
+"Rich in oil reserves, this sector contains large masses of fungal growth, "
+"making it difficult to traverse.\n"
+"\n"
+"Utilize its resources to produce Plastanium. Fend off the enemy."
+msgstr ""
+"[gray][Objectiu opcional][]\n"
+"Aquest sector és ric en reserves petrolíferes i grans masses de creixement "
+"fúngic i és difícil de travessar.\n"
+"\n"
+"Feu-ne servir els recursos per a produir plastani. Defenseu-vos dels enemics."
+
+#: sector.sunkenPier.description
+msgid ""
+"[gray][optional objective][]\n"
+"Once an offshore oil platform, this facility has long-since fallen into "
+"disrepair.\n"
+"\n"
+"High amounts of enemy naval units detected. Be prepared for attacks from "
+"multiple directions."
+msgstr ""
+"[gray][Objectiu addicional][]\n"
+"Aquestes instal·lacions ancestrals, una plataforma petrolífera a la costa, "
+"han caigut en l’oblit.\n"
+"\n"
+"S’hi han detectat grans quantitats d’enemics navals. Prepareu-vos per als "
+"atacs des de múltiples direccions."
+
+#: sector.atolls.description
+msgid ""
+"[gray][optional objective][]\n"
+"Multiple enemy naval bases have been detected at this location.\n"
+"\n"
+"Utilize Mega payload units to transport ground forces into attack positions. "
+"Build naval units to destroy the peripheral outposts."
+msgstr ""
+"[gray][Objectiu addicional][]\n"
+"En aquest lloc s’hi han trobat diverses bases navals.\n"
+"\n"
+"Feu servir transportadors grossos de blocs a distància per a transportar les "
+"unitats terrestres fins a les posicions d’atac. Construïu unitats navals per "
+"a destruir els posts avançats perifèrics."
+
+#: sector.frontier.description
+msgid ""
+"A small enemy outpost has been detected here.\n"
+"\n"
+"Build Mono units in order to harvest resources more effectively. Utilize the "
+"Additive Reconstructor to construct stronger units."
+msgstr ""
+"S’ha detectat un petit post avançat enemic.\n"
+"\n"
+"Construïu unitats mono per tal de recollir recursos més efectivament. Feu "
+"servir reconstructors additius per a construir unitats més fortes."
+
+#: sector.infestedCanyons.description
+msgid ""
+"Beyond the mountains lies a winding river valley, now covered in layers of "
+"spore moss.\n"
+"\n"
+"Hold your ground against the enemy onslaught. Construct naval units. "
+"Eliminate all enemy cores."
+msgstr ""
+"Sota les muntanyes hi ha una vall amb un riu, coberta per capes de molsa "
+"d’espores.\n"
+"\n"
+"Mantingueu la vostra posició contra l’assalt enemic. Construïu unitats "
+"navals. Elimineu els nuclis enemics."
+
+#: sector.testingGrounds.description
+msgid ""
+"[gray][optional objective][]\n"
+"A crater-riddled desert valley, formerly used as a testing ground for "
+"military projects.\n"
+"\n"
+"Due to lack of water, establishing a presence in this location may pose a "
+"challenge. Be prepared for attacks from multiple directions."
+msgstr ""
+"[gray][Objectiu addicional][]\n"
+"Una vall desèrtica amb cràters que abans es feia servir com a lloc de proves "
+"militars.\n"
+"\n"
+"Degut a la falta d’aigua, establir-hi una presència estable pot ser un "
+"repte. Prepareu-vos per a atacs des de múltiples direccions."
+
+#: sector.perilousHarbor.description
+msgid ""
+"Multiple enemy bases have been established across this treacherous coastal "
+"region.\n"
+"\n"
+"Construct naval units, and crush their fortifications."
+msgstr ""
+"En aquesta regió costera, s’hi han instal·lat diverses bases enemigues.\n"
+"\n"
+"Construïu unitats navals i destrosseu les seves fortificacions."
+
+#: sector.weatheredChannels.description
+msgid ""
+"[gray][optional objective][]\n"
+"This channel system harbors abundant resources. Land your core. Fend off the "
+"enemy waves to claim them.\n"
+"\n"
+"The enemy will take multiple routes to assault your infrastructure. Look for "
+"signs of a possible ambush and defend accordingly."
+msgstr ""
+"[gray][optional objective][]\n"
+"Aquest sistema de canals té recursos abundants. Instsal·leu-hi un nucli i "
+"defenseu-vos de les onades enemigues per a reclamar-lo.\n"
+"\n"
+"L’enemic farà servir diferents rutes per a assaltar les vostres "
+"infraestructures. Busqueu senyals d’una possible emboscada i defenseu-vos bé."
+
+#: sector.mycelialBastion.description
+msgid ""
+"This fortified complex lies deep within the fungal regions, threatening "
+"neighboring sectors with advanced insectoid units.\n"
+"\n"
+"Assault the complex. Obtain the technology within. Utilize units capable of "
+"traversing walls."
+msgstr ""
+"Aquest complex fortificat està ben endins de les regions fúngiques i amenaça "
+"els sectors veïns amb unitats insectoides avançats.\n"
+"\n"
+"Assalteu el complex i obteniu les tecnologies que hi hagi. Feu servir "
+"unitats capaces de travessar murs."
+
+#: sector.littoralShipyard.description
+msgid ""
+"Located upon the far reaches of the central sea, this naval production "
+"facility contains technology for building advanced units.\n"
+"\n"
+"Destroy this facility, and use its technology to further assist in the "
+"completion of the final objective."
+msgstr ""
+"Ubicat als llocs més llunyans d’un mar central, aquestes instal·lacions de "
+"producció naval té tecnologies per a construir unitats.\n"
+"\n"
+"Destruïu les instal·lacions i feu servir les seves tecnologies per a "
+"assistir en l’assoliment de l’objectiu final."
 
 #: sector.onset.name
 msgid "The Onset"
@@ -4346,6 +5043,22 @@ msgctxt "status.boss.name"
 msgid "Guardian"
 msgstr "Guardià"
 
+#: status.slow.name
+msgid "Slow"
+msgstr "Lent"
+
+#: status.fast.name
+msgid "Fast"
+msgstr "Ràpid"
+
+#: status.shielded.name
+msgid "Shielded"
+msgstr "Amb escut"
+
+#: status.disarmed.name
+msgid "Disarmed"
+msgstr "Sense armes"
+
 #: settings.language
 msgid "Language"
 msgstr "Idioma"
@@ -4373,6 +5086,10 @@ msgstr "Joc"
 #: settings.sound
 msgid "Sound"
 msgstr "So"
+
+#: settings.dev
+msgid "Developer Options"
+msgstr "Opcions de desenvolupament"
 
 #: settings.graphics
 msgid "Graphics"
@@ -4427,6 +5144,30 @@ msgstr "Esborra les desades de la campanya"
 msgid "Are you sure you want to clear all of your campaign saves?"
 msgstr "Esteu segur que voleu esborrar totes les desades de la campanya?"
 
+#: settings.clearplanetdata
+msgid "Clear Planet Data"
+msgstr "Esborra les dades del planeta"
+
+#: settings.planetselect
+msgid "Planet: {0}"
+msgstr "Planeta: {0}"
+
+#: settings.clearplanetresearch
+msgid "Clear Planet Research"
+msgstr "Esborra la recerca del planeta"
+
+#: settings.clearplanetresearch.confirm
+msgid "Are you sure you want to clear {0}'s research?"
+msgstr "Esteu segur que voleu esborrar la recerca de {0}?"
+
+#: settings.clearplanetcampaignsaves
+msgid "Clear Planet Campaign Saves"
+msgstr "Esborra les desades de la campanya del planeta"
+
+#: settings.clearplanetcampaignsaves.confirm
+msgid "Are you sure you want to clear {0}'s campaign saves?"
+msgstr "Esteu segur que voleu esborrar les desades de la campanya de {0}?"
+
 #: paused
 msgid "[accent]< Paused >"
 msgstr "[accent]< En pausa >"
@@ -4439,6 +5180,10 @@ msgstr "Esborra"
 #: banned
 msgid "[scarlet]Banned"
 msgstr "[scarlet]Expulsat"
+
+#: block.limit
+msgid "[scarlet]Limit: {0} Buildings"
+msgstr "[scarlet]Límit: {0} estructures"
 
 #: unsupported.environment
 msgid "[scarlet]Unsupported Environment"
@@ -4547,6 +5292,10 @@ msgstr "Dany per aixafament"
 msgid "Move Speed"
 msgstr "Velocitat de moviment"
 
+#: stat.itemsmoved.info
+msgid "Throughput is often not linear and tied to FPS/TPS."
+msgstr "El rendiment sovint no és lineal i va lligat als FPS/TPS."
+
 #: stat.launchtime
 msgid "Time Between Launches"
 msgstr "Temps entre llançaments"
@@ -4604,9 +5353,17 @@ msgstr "Capacitat de memòria"
 msgid "Base Power Generation"
 msgstr "Generació base d’energia"
 
+#: stat.meltdowntime
+msgid "Meltdown Time"
+msgstr "Temps de fusió"
+
 #: stat.productiontime
 msgid "Production Time"
 msgstr "Temps de producció"
+
+#: stat.warmuptime
+msgid "Warmup Time"
+msgstr "Temps de preescalfament"
 
 #: stat.repairtime
 msgid "Block Full Repair Time"
@@ -4631,6 +5388,18 @@ msgstr "Nivell del mòdul"
 #: stat.unittype
 msgid "Unit Type"
 msgstr "Tipus d’unitat"
+
+#: stat.receiverate
+msgid "Receiving Rate"
+msgstr "Rati de recepció"
+
+#: stat.receiverate.info
+msgid ""
+"Affected by overdrive. Throughput can be increased by placing additional "
+"unloaders."
+msgstr ""
+"Afectat per l’acceleració. El rendiment es pot millorar posant-hi "
+"descarregadors addicionals."
 
 #: stat.speedincrease
 msgid "Speed Increase"
@@ -4665,6 +5434,14 @@ msgstr "Salut"
 #: stat.armor
 msgid "Armor"
 msgstr "Armadura"
+
+#: stat.armor.info
+msgid ""
+"Applied damage = incoming damage - armor.\n"
+"Up to 90% maximum damage reduction."
+msgstr ""
+"Dany aplicat = dany rebut - escut.\n"
+"Fins a una reducció màxima del 90 %."
 
 #: stat.buildtime
 msgid "Build Time"
@@ -4773,6 +5550,10 @@ msgstr "Habilitats"
 #: stat.canboost
 msgid "Can Boost"
 msgstr "Pot sobrevolar."
+
+#: stat.boostingspeed
+msgid "Boosting Speed"
+msgstr "Velocitat de sobrevolar"
 
 #: stat.flying
 msgid "Flying"
@@ -5098,6 +5879,14 @@ msgstr "Temps de refredament"
 msgid "Instability"
 msgstr "Inestabilitat"
 
+#: bar.whenfull
+msgid "when full"
+msgstr "quan està ple"
+
+#: bar.nevermelts
+msgid "never melts"
+msgstr "mai es fon"
+
 #: bar.heatamount
 msgid "Heat: {0}"
 msgstr "Calor: {0}"
@@ -5142,9 +5931,21 @@ msgstr "[stat]{0}[lightgray]× força"
 msgid "[stat]{0}/sec[lightgray] regen rate"
 msgstr "[stat]{0}/sec[lightgray] de taxa de regen."
 
+#: bar.activationtimer
+msgid "Activates in {0}"
+msgstr "S’activa d’aquí a {0}"
+
+#: bar.activated
+msgid "Activated"
+msgstr "Activat"
+
 #: units.processorcontrol
 msgid "[lightgray]Processor Controlled"
 msgstr "[lightgray]Controlat pel processador"
+
+#: weapon.pointdefense
+msgid "[stat]Point Defense"
+msgstr "[stat]Punt de defensa"
 
 #: bullet.damage
 msgid "[stat]{0}[lightgray] damage"
@@ -5166,13 +5967,33 @@ msgstr "[stat]munició guiada"
 msgid "[stat]armor piercing"
 msgstr "[stat]perforador d’armadures"
 
+#: bullet.armorweakness
+msgid "[red]{0}x[lightgray] armor weakness"
+msgstr "[red]{0}×[lightgray] de debilitat d’armadura"
+
 #: bullet.partialarmorpierce
 msgid "[stat]{0}%[lightgray] armor pierce"
-msgstr "[stat]{0}%[lightgray] armor piercing"
+msgstr "[stat]{0} %[lightgray] de perforació d’armadura"
+
+#: bullet.antiarmor
+msgid "[stat]{0}x[lightgray] anti-armor"
+msgstr "[stat]{0}×[lightgray] d’antiarmadura"
+
+#: bullet.blockarmorweakness
+msgid "[red]{0}x[lightgray] building armor weakness"
+msgstr "[red]{0}×[lightgray] de debilitat d’armadura de l’estructura"
+
+#: bullet.blockpartialarmorpierce
+msgid "[stat]{0}%[lightgray] building armor pierce"
+msgstr "[stat]{0} %[lightgray] de performació d’armadura de l’estructura"
+
+#: bullet.blockantiarmor
+msgid "[stat]{0}x[lightgray] building anti-armor"
+msgstr "[stat]{0}×[lightgray] d’antiarmadura de l’estructura"
 
 #: bullet.maxdamagefraction
 msgid "[stat]{0}%[lightgray] damage limit"
-msgstr "[stat]{0}%[lightgray] de dany límit"
+msgstr "[stat]{0} %[lightgray] de dany límit"
 
 #: bullet.suppression
 msgid ""
@@ -5181,6 +6002,28 @@ msgid ""
 msgstr ""
 "[stat]Supressió de reparacions cada {0} s[lightgray] ~ [stat]{1}[lightgray] "
 "caselles"
+
+#: bullet.empradius
+msgid "[stat]{0}[lightgray] tiles EMP radius"
+msgstr "[stat]{0}[lightgray] caselles de radi PEM"
+
+#: bullet.empboost
+msgid "[stat]{0}%[lightgray] overdrive ~ [stat]{1}[lightgray]"
+msgstr "[stat]{0} %[lightgray] d’acceleració ~ [stat]{1}[lightgray]"
+
+#: bullet.empdamage
+msgid "[stat]{0}%[lightgray] power damage"
+msgstr "[stat]{0} %[lightgray] de potència de dany"
+
+#: bullet.empslowdown
+msgid "[stat]{0}%[lightgray] enemy power overdrive ~ [stat]{1}[lightgray]"
+msgstr ""
+"[stat]{0} %[lightgray] d’acceleració de potència enemiga ~ "
+"[stat]{1}[lightgray]"
+
+#: bullet.empunitdamage
+msgid "[stat]{0}%[lightgray] unit damage"
+msgstr "[stat]{0} %[lightgray] de dany d’unitats"
 
 #: bullet.interval
 msgid "[stat]{0}/sec[lightgray] interval bullets:"
@@ -5194,9 +6037,19 @@ msgstr "[stat]{0}[lightgray]× de bales de fragmentació:"
 msgid "[stat]{0}x[lightgray] lightning ~ [stat]{1}[lightgray] damage"
 msgstr "[stat]{0}[lightgray]× llampec ~ [stat]{1}[lightgray] de dany"
 
+#: bullet.lightninginterval
+msgid "[stat]{0}[lightgray] tiles interval ~ [stat]{1}[lightgray] tiles length"
+msgstr ""
+"[stat]{0}[lightgray] d’interval de caselles ~ [stat]{1}[lightgray] de "
+"llargada de caselles"
+
 #: bullet.buildingdamage
 msgid "[stat]{0}%[lightgray] building damage"
 msgstr "[stat]{0} %[lightgray] de dany a les estructures"
+
+#: bullet.spawnBullets
+msgid "[stat]{0}x[lightgray] spawned bullets:"
+msgstr "[stat]{0}×[lightgray] bales creades:"
 
 #: bullet.shielddamage
 msgid "[stat]{0}%[lightgray] shield damage"
@@ -5274,6 +6127,10 @@ msgstr "unitats de líquid"
 msgid "power units"
 msgstr "unitats d’energia"
 
+#: unit.powerequilibrium
+msgid "power equilibrium"
+msgstr "potència d’equilibri"
+
 #: unit.heatunits
 msgid "heat units"
 msgstr "unitats de calor"
@@ -5298,6 +6155,10 @@ msgstr "/s"
 msgid "x speed"
 msgstr "× velocitat"
 
+#: unit.multiplier
+msgid "x"
+msgstr "×"
+
 #: unit.shieldhealth
 msgid "shield health"
 msgstr "salut d’escut"
@@ -5316,15 +6177,19 @@ msgstr "kM"
 
 #: unit.shots
 msgid "shots"
-msgstr "dispars"
+msgstr "trets"
 
 #: unit.pershot
 msgid "/shot"
-msgstr "/dispar"
+msgstr "/tret"
 
 #: unit.perleg
 msgid "per leg"
 msgstr "per pota"
+
+#: unit.perside
+msgid "per side"
+msgstr "per banda"
 
 #: category.purpose
 msgctxt "category.purpose"
@@ -5431,6 +6296,14 @@ msgstr "Animacions dels escuts"
 msgid "Player Indicators"
 msgstr "Indicadors de jugadors"
 
+#: setting.showpings.name
+msgid "Show Pings"
+msgstr "Mostra els pings"
+
+#: setting.showotherbuildplans.name
+msgid "Show Other Player's Build Plans"
+msgstr "Mostra els plans de construcció dels altres jugadors"
+
 #: setting.indicators.name
 msgid "Enemy Indicators"
 msgstr "Indicadors d’enemics"
@@ -5462,6 +6335,18 @@ msgstr "Escala de la interfície"
 #: setting.uiscale.description
 msgid "Restart required to apply changes."
 msgstr "Cal reiniciar perquè s’apliquin els canvis."
+
+#: setting.uiEdgePadding.name
+msgid "UI Edge Padding"
+msgstr "Farciment de les vores de la interfície"
+
+#: setting.uiEdgePadding.description
+msgid ""
+"Adds padding to the edges of the UI. Useful for displays with rounded "
+"corners or notches."
+msgstr ""
+"Afegeix farciment a les vores de la interfície. Útil per a pantalles amb "
+"vores arrodonides o formes estranyes."
 
 #: setting.swapdiagonal.name
 msgid "Always Diagonal Placement"
@@ -5522,6 +6407,30 @@ msgstr "Mostra els FPS i el ping"
 #: setting.console.name
 msgid "Enable Console"
 msgstr "Activa la consola"
+
+#: setting.drawhitboxes.name
+msgid "Display Hitboxes"
+msgstr "Mostra quadres d’impacte"
+
+#: setting.showperformance.name
+msgid "Display Performance Metrics"
+msgstr "Mostra mesures de rendiment"
+
+#: setting.buildingtimestep.name
+msgid "Fixed Building Timestep"
+msgstr "Pas de temps de les estructures fix"
+
+#: setting.buildingtimestep.description
+msgid ""
+"Runs buildings on a fixed timestep with constant delta,\n"
+"as opposed to every frame with variable delta.\n"
+"If buildings cannot be updated fast enough, the game will slow down.\n"
+"If you don't know what that means, don't touch this option."
+msgstr ""
+"Les estructures s’executen a passos de temps fixos amb una delta constant,\n"
+"a diferència de fer-ho amb deltes diferents.\n"
+"Si les estructures no es poden actualitzar prou ràpid, el joc s’alentirà.\n"
+"Si no enteneu què significa aquesta opció, no la toqueu."
 
 #: setting.smoothcamera.name
 msgid "Smooth Camera"
@@ -5726,6 +6635,10 @@ msgstr ""
 "\n"
 "[lightgray]Tecles: [{0},"
 
+#: keybind.ping.name
+msgid "Ping Location"
+msgstr "Ubicació del ping"
+
 #: keybind.respawn.name
 msgid "Respawn"
 msgstr "Reapareix"
@@ -5816,6 +6729,14 @@ msgstr "Comportament: Patrulla"
 #: keybind.unit_stance_ram.name
 msgid "Unit Stance: Ram"
 msgstr "Comportament: Senzill"
+
+#: keybind.unit_stance_boost.name
+msgid "Unit Stance: Boost"
+msgstr "Comportament: Sobrevola"
+
+#: keybind.unit_stance_hold_position.name
+msgid "Unit Stance: Hold Position"
+msgstr "Comportament: Manté la posició"
 
 #: keybind.unit_command_move.name
 msgid "Unit Command: Move"
@@ -6082,9 +7003,17 @@ msgstr "Apropa/Allunya la vista del minimapa"
 msgid "Toggle Free Camera"
 msgstr "Commuta la càmera lliure"
 
+#: keybind.teleport_cursor.name
+msgid "Teleport To Cursor (Sandbox)"
+msgstr "Teleporta al cursor (en mode lliure)"
+
 #: keybind.debug_hitboxes.name
 msgid "Toggle Debug Hitboxes"
 msgstr "Commuta les caixes de xoc de depuració"
+
+#: keybind.performance_metrics.name
+msgid "Toggle Performance Metrics"
+msgstr "Commuta les mesures de rendiment"
 
 #: mode.help.title
 msgid "Description of modes"
@@ -6346,6 +7275,14 @@ msgstr "Multiplicador de la salut dels blocs"
 msgid "Block Damage Multiplier"
 msgstr "Multiplicador del dany dels blocs"
 
+#: rules.unitfactoryactivation
+msgid "Unit Factory Activation Delay"
+msgstr "Retard de l’activació de la fàbrica d’unitats"
+
+#: rules.unitfactoryactivation.objective
+msgid "Unit Factories Activating: {0}"
+msgstr "S’activen les fàbriques d’unitats: {0}"
+
 #: rules.unitbuildspeedmultiplier
 msgid "Unit Production Speed Multiplier"
 msgstr "Multiplicador de la velocitat de producció d’unitats"
@@ -6369,6 +7306,10 @@ msgstr "Multiplicador del dany de xoc de les unitats"
 #: rules.unitminespeedmultiplier
 msgid "Unit Mine Speed Multiplier"
 msgstr "Multiplicador de velocitat d’extracció de les unitats"
+
+#: rules.logicunitcontrol
+msgid "Logic Unit Control"
+msgstr "Control d’unitats lògiques"
 
 #: rules.logicunitbuild
 msgid "Logic Unit Building"
@@ -6484,6 +7425,54 @@ msgctxt "rules.title.planet"
 msgid "Planet"
 msgstr "Planeta"
 
+#: rules.alwaysplaymusic
+msgctxt "rules.alwaysplaymusic"
+msgid "Always Play Music"
+msgstr "Reprodueix música sempre"
+
+#: rules.alwaysplaymusic.info
+msgid "Overrides the 'always play music' audio setting."
+msgstr "Sobreescriu l’opció de so de «Reprodueix música sempre»."
+
+#: rules.ambientmusic
+msgid "Ambient Music"
+msgstr "Música ambiental"
+
+#: rules.ambientmusic.info
+msgid ""
+"Comma-separated music tracks that randomly play under normal circumstances.\n"
+"If empty, default music will be used."
+msgstr ""
+"Peces de música separades amb comes que es reproduiran aleatòriament en "
+"situacions normals.\n"
+"Si es deixa buit, es farà servir la música per defecte."
+
+#: rules.darkmusic
+msgid "Conflict Music"
+msgstr "Música de conflicte"
+
+#: rules.darkmusic.info
+msgid ""
+"Comma-separated music tracks that are more likely to play during battle.\n"
+"If empty, default music will be used."
+msgstr ""
+"Peces de música separades amb comes que es reproduiran aleatòriament durant "
+"les batalles.\n"
+"Si es deixa buit, es farà servir la música per defecte."
+
+#: rules.nomusic
+msgid "Disable Automatic Music"
+msgstr "Desactiva la música automàtica"
+
+#: rules.nomusic.info
+msgid ""
+"Turns off all automatic music playback.\n"
+"Useful for maps that have custom music played using processors."
+msgstr ""
+"Apaga la reproducció de la música automàtica.\n"
+"Útil en mapes que ja tenen la seva música personalitzada mitjançant l’ús de "
+"processadors."
+
 #: rules.lighting
 msgid "Lighting"
 msgstr "Il·luminació"
@@ -6494,7 +7483,7 @@ msgstr "Amaga el terreny inexplorat"
 
 #: rules.invasions
 msgid "Enemy Sector Invasions"
-msgstr "Invasions de setors enemics"
+msgstr "Invasions de sectors enemics"
 
 #: rules.legacylaunchpads
 msgid "Legacy Launch Pad Mechanics"
@@ -6512,9 +7501,17 @@ msgstr ""
 "[scarlet] Desactivat[lightgray] (plataformes de llançament antigues "
 "activades)"
 
+#: rules.hidespawns
+msgid "Hide Enemy Spawns"
+msgstr "Amaga les reaparicions d’enemics"
+
 #: rules.randomwaveai
 msgid "Unpredictable Wave AI"
 msgstr "IA d’onades immprevisible"
+
+#: rules.pauseDisabled
+msgid "Disable Pausing"
+msgstr "Desactiva les pauses"
 
 #: rules.fire
 msgid "Fire"
@@ -8303,6 +9300,30 @@ msgstr "Contenidor reforçat"
 msgid "Reinforced Vault"
 msgstr "Contenidor reforçat gros"
 
+#: block.scathe.carbide.info
+msgid ""
+"Travels significantly faster.\n"
+"Moderate damage at any range."
+msgstr ""
+"Viatja significativament més de pressa.\n"
+"Dany moderat a qualsevol abast."
+
+#: block.scathe.surge-alloy.info
+msgid ""
+"Splits into micro missiles.\n"
+"Heavy damage at close distance."
+msgstr ""
+"Se separa en micromíssils.\n"
+"Dany elevat a distàncies curtes."
+
+#: block.scathe.phase-fabric.info
+msgid ""
+"Equipped with a force field.\n"
+"Low damage, largest radius."
+msgstr ""
+"Equipat amb un camp de força.\n"
+"Poc dany, però abast llarg."
+
 #: block.tank-refabricator.name
 msgid "Tank Refabricator"
 msgstr "Milloradora de tancs"
@@ -8707,6 +9728,14 @@ msgstr ""
 "Situeu un nucli de tipus [accent]Fonament[] a sobre del nucli "
 "[accent]Estella[]. Assegureu-vos que no hi hagin obstruccions properes."
 
+#: hint.serpuloCoreZone
+msgid ""
+"Additional :core-shard: [accent]Cores[] may be constructed on :core-zone: "
+"[accent]Core Zone[] tiles."
+msgstr ""
+"Es poden construir [accent]nuclis[] :core-shard: addicionals en caselles de "
+"[accent]zona de nucli[] tiles :core-zone: ."
+
 #: hint.cannotUpgrade
 msgid ""
 "A [red]:tree:[] icon over a payload unit indicates that its upgraded version "
@@ -8948,6 +9977,102 @@ msgstr ""
 "Construïu més torretes, extraieu més recursos \n"
 "i defense-vos contra totes les onades per a [accent]capturar el sector[]."
 
+#: ff.coal
+msgid ""
+"Use :mechanical-drill: [accent]Mechanical Drills[] to mine :ore-coal: "
+"[accent]coal[]."
+msgstr ""
+"Feu servir [accent]perforadores mecàniques[] :mechanical-drill: per a "
+"extraure :ore-coal: [accent]carbó[]."
+
+#: ff.graphitepress
+msgid ":tree: Research and place a :graphite-press: [accent]Graphite Press[]."
+msgstr ""
+":tree: Investigueu i instal·leu una [accent]premsa de grafit[] :graphite-"
+"press: ."
+
+#: ff.craft
+msgid ""
+"Move :coal: coal into the :graphite-press: [accent]Graphite Press[].\n"
+"It will output :graphite: graphite to all nearby conveyors.\n"
+"Move the output :graphite: graphite from the :graphite-press: [accent]"
+"Graphite Press[] into the core."
+msgstr ""
+"Transporteu carbó :coal: fins a la [accent]premsa de grafit[] :graphite-"
+"press: .\n"
+"Produirà grafit :graphite:, que sortirà per totes les cintes transportadores "
+"adjacents.\n"
+"Transporteu el grafit :graphite: de la [accent]premsa de grafit[] :graphite-"
+"press: al nucli."
+
+#: ff.generator
+msgid ""
+":coal: Coal can also be used as fuel in :combustion-generator: [accent]"
+"Combustion Generators[].\n"
+"Research and place a :combustion-generator: [accent]Combustion Generator[]."
+msgstr ""
+"El carbó :coal: també es pot fer servir com a combustible als [accent]"
+"generadors a combustió[] :combustion-generator: .\n"
+"Investigueu i instal·leu un [accent]generador a combustió[] :combustion-"
+"generator: ."
+
+#: ff.coalpower
+msgid ""
+"Input :coal: coal into the generator to produce [accent]:power: power[]."
+msgstr ""
+"Poseu-hi carbó :coal: a dins del generador per a produir [accent]power "
+":power: []."
+
+#: ff.coalpower.objective
+msgid ":combustion-generator: Produce Power"
+msgstr ":combustion-generator: Produeix energia."
+
+#: ff.node
+msgid ""
+":power-node: [accent]Power Nodes[] transmit power to nearby blocks in range."
+"\n"
+"Research and place a :power-node: [accent]Power Node[] close to the "
+"generator."
+msgstr ""
+"Els [accent]nodes d’energia[] :power-node: transmeten energia als blocs que "
+"tinguin a l’abast.\n"
+"Investigueu i instal·leu un [accent]node d’energia[] :power-node: a prop del "
+"generador."
+
+#: ff.battery
+msgid ""
+":battery: [accent]Batteries[] store power.\n"
+"Research and place a :battery: [accent]Battery[] close to the node."
+msgstr ""
+"Les [accent]bateries[] :battery: emmagatzemen energia.\n"
+"Investigueu i instal·leu una [accent][bateria] a prop del node."
+
+#: ff.arc
+msgid ""
+":arc: [accent]Arc[] turrets require power to function. Research and place an "
+":arc: [accent]Arc[] turret near a power node."
+msgstr ""
+"Les [accent]torretes[] :arc: necessiten energia per a funcionar. Investigueu "
+"i instal·leu una [accent]torreta[] :arc: a prop d’un node d’energia."
+
+#: fungalpass.tutorial1
+msgid ""
+"Use [accent]units[] to defend buildings and attack the enemy.\n"
+"Research and place a :ground-factory: [accent]ground factory[]."
+msgstr ""
+"Feu servir [accent]unitats[] per a defensar les estructures i atacar "
+"l’enemic.\n"
+"Investigueu i instal·leu una :ground-factory: [accent]fàbrica d’unitats "
+"terrestres[]."
+
+#: fungalpass.tutorial2
+msgid ""
+"Select :dagger: [accent]Dagger[] units in the factory.\n"
+"Produce 3 units."
+msgstr ""
+"Seleccioneu unitats [accent]daga[] :dagger: a la fàbrica.\n"
+"Produïu-ne 3."
+
 #: frontier.tutorial1
 msgid ""
 "The :additive-reconstructor: [accent]Additive Reconstructor[]\n"
@@ -8957,12 +10082,142 @@ msgid ""
 "[accent]Reconstruct a []:dagger:[accent] dagger\n"
 "to a []:mace:[accent] mace."
 msgstr ""
-"The :additive-reconstructor: [accent]Additive Reconstructor[]\n"
-"upgrades tier 1 units to tier 2\n"
-"using :silicon: silicon and :graphite: graphite.\n"
+"El [accent]reconstructor additiu[] :additive-reconstructor: \n"
+"millora el nivell 1 de les unitats al nivell 2\n"
+"amb silici :silicon: i grafit :graphite: .\n"
 "\n"
-"[accent]Research and reconstruct\n"
-"a []:dagger:[accent] dagger to a []:mace:[accent] mace."
+"[accent]Investigueu i reconstruïu\n"
+"una [accent]daga[] :dagger: a [accent]maça[] :mace: ."
+
+#: frontier.tutorial2
+msgid ""
+"Enemy waves send [accent]infinitely[] until all enemy cores are "
+"[unlaunched]destroyed."
+msgstr ""
+"Les onades d’enemics s’envien [accent]indefinidament[] fins que tots els "
+"nuclis enemic s’han [unlaunched]destruït."
+
+#: frontier.tutorial3
+msgid ""
+"[accent]Attack the enemy base fast to prevent waves from getting too high[]."
+msgstr ""
+"[accent]Ataqueu la base enemiga de pressa per a evitar que les onades "
+"creixin massa[]."
+
+#: atolls.destroy1
+msgid ""
+"Destroy the 2 enemy [accent]foundation cores[] first.\n"
+"[accent]Gain access to thorium[]."
+msgstr ""
+"Abans, destruïu els 2 [accent]nuclis fonament[] .\n"
+"[accent]Heu d’obtenir accés al tori[]."
+
+#: atolls.mega1
+msgid "Enter [accent]command mode[] and select the :mega:[accent]Mega[] units."
+msgstr ""
+"Entreu al [accent]mode d’ordres[] i trieu les [accent]megaunitats[] :mega: ."
+
+#: atolls.mega2
+msgid ""
+"Select the  [accent]Load Units[] command to have Mega units to pick up "
+"ground units."
+msgstr ""
+"Seleccioneu l’ordre  [accent]Carrega unitats[] per tal que les megaunitats "
+"recullin les unitats terrestres."
+
+#: atolls.mega3
+msgid "Move the Mega units [accent]above[] ground units to load them in."
+msgstr ""
+"Moveu les megaunitats [accent]al damunt[] de les unitats terrestres per a "
+"carregar-les."
+
+#: atolls.mega4
+msgid "[accent]Drop ground units here to attack."
+msgstr "[accent]Deixeu les unitats terrestres aquí per a atacar."
+
+#: atolls.mega5
+msgid ""
+"Select the  [accent]Unload Payload[] command to have Mega units drop their "
+"carried units."
+msgstr ""
+"Seleccioneu l’ordre  [accent]Descarrega[] per tal que les megaunitats "
+"deixin al terra les unitats que transporten."
+
+#: atolls.mega6
+msgid ""
+"Units will be [accent]automatically dropped[] while the  Unload Payload "
+"command is selected."
+msgstr ""
+"Les unitats [accent]es deixaran automàticament[] si l’ordre  Descarrega "
+"està activada."
+
+#: atolls.mega7
+msgid ""
+"Mega units [accent]will not[] drop ground units while they are above walls "
+"or deep water."
+msgstr ""
+"Les megaunitats [accent]no deixen[] les unitats terrestres al terra si estan "
+"al damunt de murs o d’aigües profundes."
+
+#: atolls.mega8
+msgid "[accent]Drop naval units here to attack.[]"
+msgstr "[accent]Deixeu les unitats navals aquí per a atacar.[]"
+
+#: atolls.attack1
+msgid "1: Drop ground units here to attack from this location."
+msgstr "1: Deixeu les unitats terrestres aquí per a atacar des d’aquest lloc."
+
+#: atolls.attack2
+msgid "2: Alternatively, drop naval units here to launch a surprise attack."
+msgstr "2: També podeu deixar les unitats navals aquí i fer un atac sorpresa."
+
+#: atolls.carry1
+msgid "Carrying ground units requires :mega:[accent]Mega[] units."
+msgstr ""
+"Per a transportar unitats terrestre calen [accent]mega unitats[] :mega: ."
+
+#: atolls.carry2
+msgid "1: Command Mega units to [accent]move over[] the ground units."
+msgstr "1: Ordeneu a les megaunitats a [accent]moure[] les unitats terrestres."
+
+#: atolls.carry3
+msgid ""
+"2: Select the  [accent]Load Units[] command in order to pick up the ground "
+"units with the Mega units."
+msgstr ""
+"2: Seleccioneu l’ordre  [accent]Carrega unitats[] per tal de recollir les "
+"unitats terrestres a les megaunitats."
+
+#: atolls.carry4
+msgid "3: Command and move the Mega carriers [accent]loaded with units[]."
+msgstr "3: Dirigiu i moveu els mega transports [accent]carregats d’unitats[]."
+
+#: atolls.carry5
+msgid ""
+"4: Select the  [accent]'Unload Payload'[] command in order for the Mega "
+"units to drop the ground units."
+msgstr ""
+"4: Seleccioneu l’ordre  [accent]Descarrega[] per tal que les megaunitats "
+"deixin al terra les unitats terrestres."
+
+#: atolls.carry6
+msgid "These steps can be reviewed [accent]here[]."
+msgstr "Aquests passos es poden repassar [accent]aquí[]."
+
+#: atolls.carry7
+msgid "Follow these instructions to airdrop more units near the enemy base."
+msgstr ""
+"Seguiu aquestes instruccions per a llançar més unitats paracaigudistes a "
+"prop de la base enemiga."
+
+#: atolls.noairunit
+msgid "This base is too well-fortified to destroy with air units."
+msgstr ""
+"Aquesta base està massa fortificada per a destruir-la amb unitats aèries."
+
+#: atolls.2strategies
+msgid "There are two strategies to destroy this base."
+msgstr "Hi ha dues estratègies per a destruir aquesta base."
 
 #: onset.mine
 msgid ""
@@ -9105,7 +10360,7 @@ msgid ""
 msgstr ""
 "Les unitats són efectives, però les [accent]torretes[] proporcionen una "
 "capacitat defensiva millor si es fan servir adequadament.\n"
-"Construïu Place una torreta :breach: [accent]breach[].\n"
+"Construïu una torreta :breach: [accent]breach[].\n"
 "Les torretes necessiten :beryllium: [accent]munició[]."
 
 #: onset.turretammo
@@ -9492,6 +10747,41 @@ msgstr ""
 msgid "A message block for use in mapmaking. Cannot be destroyed."
 msgstr ""
 "Un bloc de missatge que es far servir per a fer mapes. No es pot destruir."
+
+#: block.world-processor.description
+msgid ""
+"A processor for use in mapmaking. Cannot be destroyed. Capable of using "
+"privileged instructions, such as those that spawn units or change tiles."
+msgstr ""
+"Un processador que es fa servir per a cartografiar zones. No es pot "
+"destruir. Pot fer servir instruccions amb privilegis, com ara les que fan "
+"aparèixer unitats o canviar caselles."
+
+#: block.world-cell.description
+msgid "A memory cell for use in mapmaking. Cannot be destroyed."
+msgstr ""
+"Un component de memòria que es fa servir per a cartografiar zones. No es pot "
+"destruir."
+
+#: block.world-switch.description
+msgid ""
+"A switch block for use in mapmaking. Cannot be destroyed. Can only be "
+"interacted by players on the same team."
+msgstr ""
+"Un bloc interruptor que es fa servir per a cartografiar zones. No es pot "
+"destruir. Només hi poden interactuar els jugadors del mateix equip."
+
+#: block.shield-projector.description
+msgctxt "block.shield-projector.description"
+msgid "An unbreakable shield projector for use in mapmaking."
+msgstr ""
+"Un projector d’escuts impenetrable que es fa servir per a cartografiar zones."
+
+#: block.large-shield-projector.description
+msgctxt "block.large-shield-projector.description"
+msgid "An unbreakable shield projector for use in mapmaking."
+msgstr ""
+"Un projector d’escuts impenetrable que es fa servir per a cartografiar zones."
 
 #: block.graphite-press.description
 msgid "Compresses coal into graphite."
@@ -11017,6 +12307,11 @@ msgctxt "block.canvas.description"
 msgid "Displays a simple image with a pre-defined palette. Editable."
 msgstr "Mostra una imatge senzilla amb una paleta predefinida. Es pot editar."
 
+#: block.large-canvas.description
+msgctxt "block.large-canvas.description"
+msgid "Displays a simple image with a pre-defined palette. Editable."
+msgstr "Mostra una imatge simple amb una paleta predefinida. Editable."
+
 #: unit.dagger.description
 msgctxt "unit.dagger.description"
 msgid "Fires standard bullets at enemy targets."
@@ -11464,6 +12759,10 @@ msgstr "Estableix una variable."
 msgid "Perform an operation on 1-2 variables."
 msgstr "Executa una operació amb 1 o 2 variables."
 
+#: lst.select
+msgid "Conditionally set a variable to one of two values."
+msgstr "Estableix una variable a un de dos valors segons una condició."
+
 #: lst.end
 msgid "Jump to the top of the instruction stack."
 msgstr "Salta al principi de la llista d’instruccions."
@@ -11527,6 +12826,10 @@ msgstr "Estableix les dades d’un bloc en qualsevol posició."
 #: lst.spawnunit
 msgid "Spawn unit at a location."
 msgstr "Fes aparèixer una unitat en una posició."
+
+#: lst.spawnbullet
+msgid "Spawns a bullet at a location."
+msgstr "Fa aparèixer una bala en un lloc determinat."
 
 #: lst.applystatus
 msgid "Apply or clear a status effect from a unit."
@@ -11629,6 +12932,23 @@ msgstr ""
 "El volum i la panoramització (pan) poden ser un valor global o calculat "
 "segons la posició."
 
+#: lst.playmusic
+msgid ""
+"Plays a music track by name, e.g. [accent]\"game1\"[].\n"
+"If [accent]interrupt[] is true, the previously playing music will be stopped."
+"\n"
+"Playing with null music and interrupt set to true will stop the current "
+"track.\n"
+"Note that music from data patches must be prefixed with [accent]dp-[]."
+msgstr ""
+"Reprodueix una peça musical per nom, com ara [accent]«game1»[].\n"
+"Si [accent]interrupt[] és cert, es pararà la peça anterior que s’estigui "
+"reproduint.\n"
+"Si la nova peça és null i s’executa l’ordre amb interrupt establert a cert, "
+"es pararà la peça actual.\n"
+"Tingueu en compte que les dels pedaços de dades han d’anar precedides amb el "
+"prefix [accent]dp-[]."
+
 #: lst.makemarker
 msgid ""
 "Create a new logic marker in the world.\n"
@@ -11663,6 +12983,22 @@ msgstr ""
 "[accent]Informació del mapa > Paquets de traducció[].\n"
 "Si el client és un dispositiu mòbil, primer intenta imprimir una propietat "
 "que acabi en «.mobile»."
+
+#: lst.query
+msgid ""
+"Queries units/buildings in a specified area.\n"
+"Results are outputted into [accent]@queries[].\n"
+"Results can be read from [accent]@queries[] using the [accent]Read[] "
+"instruction and an index.\n"
+"Length of [accent]@queries[] can be sensed using [accent]@size[] as a "
+"parameter."
+msgstr ""
+"Cerca unitats/estrucutres en una àrea específica.\n"
+"Els resultats es desen a [accent]@queries[].\n"
+"Els resultats es poden llegir amb [accent]@queries[] i la instrucció i índex "
+"[accent]Read[].\n"
+"La llargada de [accent]@queries[] es pot trobar amb [accent]@size[] com a "
+"paràmetre."
 
 #: lglobal.@pi
 msgid "The mathematical constant pi (3.141...)"
@@ -11817,6 +13153,14 @@ msgstr "Identificador de l’equip que executa el codi"
 msgid "True if the client running the code is on mobile, false otherwise"
 msgstr ""
 "Cert si el client que executa el codi és un dispositiu mòbil; fals altrament."
+
+#: lglobal.@clientMusicPlaying
+msgid "True if any music is currently playing"
+msgstr "Cert si es reprodueix alguna peça musical."
+
+#: lglobal.@clientCurrentMusic
+msgid "Name of the current track being played, or null"
+msgstr "Nom de la pista que es reprodueix actualment; o null altrament."
 
 #: lenum.type
 msgid ""
@@ -12441,7 +13785,7 @@ msgid ""
 msgstr ""
 "Busca un camí automàticament fins al nucli enemic més proper o punt "
 "d’aterratge.\n"
-"És el mateix que el camí d'una onada enemiga estàndard."
+"És el mateix que el camí d’una onada enemiga estàndard."
 
 #: lenum.target
 msgid "Shoot a position."
@@ -12527,8 +13871,8 @@ msgid ""
 "Size of texture in tiles. Zero value scales marker width to original "
 "texture's size."
 msgstr ""
-"Mida de la textura a les caselles. Un valor de zero indica que s’ha "
-"d'escalar l’amplada del marcador a la mida original de la textura."
+"Mida de la textura a les caselles. Un valor de zero indica que s’ha d’"
+"escalar l’amplada del marcador a la mida original de la textura."
 
 #: lenum.autoscale
 msgid "Whether to scale marker corresponding to player's zoom level."
@@ -12624,15 +13968,15 @@ msgstr "Multiplicador dels recursos necessaris per a construir les unitats."
 
 #: lenum.unitdamage
 msgid "How much damage units deal."
-msgstr "Dany que inflingeixen les unitats."
+msgstr "Dany que infligeixen les unitats."
 
 #: lenum.blockhealth
 msgid "How much health blocks start with."
-msgstr "Blocs de salot amb els quals es comença."
+msgstr "Blocs de salut amb els quals es comença."
 
 #: lenum.blockdamage
 msgid "How much damage blocks (turrets) deal."
-msgstr "Dany que inflingeixen els blocs de dany (torretes)."
+msgstr "Dany que infligeixen els blocs de dany (torretes)."
 
 #: lenum.rtsminweight
 msgid ""
@@ -12670,3 +14014,11 @@ msgstr "Prohibeix blocs o unitats. Aquestes no es podran situar ni construir."
 #: lenum.unban
 msgid "Unban a unit or block."
 msgstr "Permet una unitat o bloc."
+
+#: lenum.musicvolume
+msgid ""
+"Global music volume multiplier.\n"
+"Clamped to [0, 1]."
+msgstr ""
+"Multiplicador global del volum de música.\n"
+"Limitat a l’interval [0, 1]."
