@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-17 08:32+0000\n"
+"POT-Creation-Date: 2026-08-24 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,6 +107,7 @@ msgstr "Color de la icona"
 
 #: actions_configurator.rows.name.title
 msgctxt "actions_configurator.rows.name.title"
+"actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
@@ -489,6 +490,7 @@ msgid "No servers available. Add a server in the app."
 msgstr "No hi ha servidors disponibles. Afegiu un servidor a l'aplicació."
 
 #: carPlay.labels.select_server
+msgctxt "carPlay.labels.select_server"
 msgid "Select server"
 msgstr "Escull un servidor"
 
@@ -774,8 +776,6 @@ msgstr "Error de base de dades"
 
 #: delete
 msgctxt "delete"
-"delete"
-"delete"
 msgid "Delete"
 msgstr "Suprimeix"
 
@@ -2989,6 +2989,18 @@ msgstr "El servei (ex. Homeassistant.turn_on) ha de ser definit"
 msgid "A renderable template must be defined"
 msgstr "S'ha de definir una plantilla renderizable"
 
+#: watch.complications.builder.move_token_left
+msgid "Move left"
+msgstr ""
+
+#: watch.complications.builder.move_token_right
+msgid "Move right"
+msgstr ""
+
+#: watch.complications.builder.reorder_tokens_hint
+msgid "Drag a token onto another one to reorder them."
+msgstr ""
+
 #: watch.configurator.delete.button
 msgid "Delete Complication"
 msgstr "Suprimir la complicació"
@@ -3168,6 +3180,10 @@ msgstr "Icona"
 #: watch.configurator.sections.ring.footer
 msgid "The ring showing progress surrounding the text."
 msgstr "L'anell que mostra el progrés envoltant el text"
+
+#: watch.home.device.empty
+msgid "There are no compatible entities for this device."
+msgstr ""
 
 #: watch.labels.complication_group.circular_small.description
 msgid ""
@@ -3792,6 +3808,7 @@ msgid "Open Assist in the app"
 msgstr "Obre l'assistent a l'aplicació"
 
 #: widgets.assist.unknown_configuration
+msgctxt "widgets.assist.unknown_configuration"
 msgid "Configure"
 msgstr "Configurar"
 
