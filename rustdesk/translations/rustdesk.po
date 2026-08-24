@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-03 11:14+0000\n"
+"POT-Creation-Date: 2026-08-24 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -300,10 +300,6 @@ msgstr "Selecció múltiple"
 #: .New+Connection
 msgid "New connection"
 msgstr "Connexió nova"
-
-#: .OS+Account
-msgid "OS account"
-msgstr "Compte d'usuari"
 
 #: .OS+Password
 msgid "OS password"
@@ -622,14 +618,6 @@ msgid ""
 msgstr ""
 "Aquesta versió d'Android no suporta la captura d'àudio. Actualitzeu a "
 "Android 10 o superior."
-
-#: .another_user_login_text_tip
-msgid "Disconnect"
-msgstr "Desconnecta"
-
-#: .another_user_login_title_tip
-msgid "Another user already logged in"
-msgstr "Altre usuari ha iniciat ja una sessió"
 
 #: .auto-print-tip
 msgid "Print automatically using the selected printer."
@@ -964,12 +952,6 @@ msgstr "Mantén la pantalla activa durant les sessions entrants"
 msgid "Keep screen awake during outgoing sessions"
 msgstr "Mantén la pantalla activa durant les sessions sortints"
 
-#: .login_linux_tip
-msgid "You need to login to remote Linux account to enable a X desktop session"
-msgstr ""
-"És necessari que inicieu prèviament sessió amb un entorn d'escriptori x11 "
-"habilitat"
-
 #: .logout_tip
 msgid "Are you sure you want to log out?"
 msgstr "Segur que voleu desconnectar?"
@@ -990,14 +972,6 @@ msgstr "Cap empremta"
 msgid "No audio input device found."
 msgstr "No s'ha trobat cap dispositiu d'àudio."
 
-#: .no_desktop_text_tip
-msgid "Please install GNOME desktop"
-msgstr "Instal·leu l'entorn d'escriptori GNOME"
-
-#: .no_desktop_title_tip
-msgid "No desktop environment is available"
-msgstr "Cap escriptori disponible"
-
 #: .no_need_privacy_mode_no_physical_displays_tip
 msgid "No physical displays, no need to use the privacy mode."
 msgstr "Cap monitor físic. No cal l'ús del Mode privat"
@@ -1013,14 +987,6 @@ msgstr "No disponible. Verifiqueu la connexió"
 #: .note-at-conn-end-tip
 msgid "Ask for note at end of connection"
 msgstr "Demana una nota en finalitzar la connexió"
-
-#: .os_account_desk_tip
-msgid ""
-"This account is used to login the remote OS and enable the desktop session "
-"in headless"
-msgstr ""
-"S'utilitza aquest compte per iniciar la sessió al sistema remot i habilitar "
-"el mode sense cap pantalla connectada"
 
 #: .outgoing_only_desk_tip
 msgid ""
@@ -1130,10 +1096,6 @@ msgstr ""
 #: .remember-wayland-keyboard-choice-tip
 msgid "Don't ask again for this remote computer"
 msgstr "No tornis a preguntar-ho per a aquest equip remot"
-
-#: .remember_account_tip
-msgid "Remember this account"
-msgstr "Recorda aquest compte"
 
 #: .remote-printing-disallowed-text-tip
 msgid "The permission settings of the controlled side deny Remote Printing."
@@ -1431,14 +1393,6 @@ msgstr ""
 "Ha fallat la captura de pantalla del Wayland. És possible que el XDG Desktop "
 "Portal hagi fallat o no estigui disponible. Proveu de reiniciar-lo amb `"
 "systemctl --user restart xdg-desktop-portal`."
-
-#: .xorg_not_found_text_tip
-msgid "Please install Xorg"
-msgstr "Instal·leu el Xorg"
-
-#: .xorg_not_found_title_tip
-msgid "Xorg not found"
-msgstr "No s'ha trobat l'entorn Xorg"
 
 #: .%7B%7D-to-update-tip
 msgid "{} will close now and install the new version."
