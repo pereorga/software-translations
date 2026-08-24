@@ -403,10 +403,6 @@ msgctxt "icu:LeftPaneChatFolders__ItemLabel--All"
 msgid "All chats"
 msgstr "Tots els xats"
 
-msgctxt "icu:LeftPaneChatFolders__ItemUnreadBadge__MaxCount"
-msgid "{maxCount, number}+"
-msgstr "{maxCount,number}+"
-
 msgctxt "icu:LeftPaneChatFolders__ItemUnreadBadge__AccessibleLabel"
 msgid "{count, plural, one {# Unread Message} other {# Unread Messages}}"
 msgstr "{count, plural, one {{count,number} missatge sense llegir} other {{count,number} missatges sense llegir}}"
@@ -1014,6 +1010,10 @@ msgstr "Fora de línia"
 msgctxt "icu:checkNetworkConnection"
 msgid "Check your network connection."
 msgstr "Comproveu la connexió a xarxa."
+
+msgctxt "icu:clockSkewDetected"
+msgid "Your device date is inaccurate. Adjust your clock and try again. Your device date and time is:"
+msgstr "La data del dispositiu no és la correcta. Ajusta el teu rellotge i torna-ho a provar. La data i l'hora del teu dispositiu:"
 
 msgctxt "icu:submitDebugLog"
 msgid "Debug log"
@@ -6695,6 +6695,10 @@ msgctxt "icu:ConversationDetailsMembershipList--show-all"
 msgid "See all"
 msgstr "Mostra-ho tot"
 
+msgctxt "icu:ConversationDetailsMembershipList__Search__AccessibilityLabel"
+msgid "Search"
+msgstr "Cerca"
+
 msgctxt "icu:ConversationDetailsGroups--title"
 msgid "{count, plural, one {# group} other {# groups}} in common"
 msgstr "{count, plural, one {{count,number} grup en comú} other {{count,number} grups en comú}}"
@@ -6786,6 +6790,62 @@ msgstr "Requereix que un administrador aprovi els membres nous que s’afegeixin
 msgctxt "icu:GroupLinkManagement__CopyGroupLinkButtonLabel"
 msgid "Copy signal.group link to clipboard"
 msgstr "Copiar l'enllaç signal.group al porta-retalls"
+
+msgctxt "icu:GroupMembersSearchDialog__DialogTitle"
+msgid "Search members"
+msgstr "Buscar membres"
+
+msgctxt "icu:GroupMembersSearchDialog__SearchField__Placeholder"
+msgid "Search"
+msgstr "Cerca"
+
+msgctxt "icu:GroupMembersSearchDialog__SearchField__Placeholder--FilteringByAdmins"
+msgid "Search admins"
+msgstr "Buscar admins"
+
+msgctxt "icu:GroupMembersSearchDialog__SearchField__Placeholder--FilteringBySystemContacts"
+msgid "Search contacts"
+msgstr "Buscar contactes"
+
+msgctxt "icu:GroupMembersSearchDialog__FilterMenu__Label"
+msgid "Filter"
+msgstr "Filtrar"
+
+msgctxt "icu:GroupMembersSearchDialog__FilterMenu__AllMembers"
+msgid "All members"
+msgstr "Tots els membres"
+
+msgctxt "icu:GroupMembersSearchDialog__FilterMenu__Admins"
+msgid "Admins"
+msgstr "Administradors"
+
+msgctxt "icu:GroupMembersSearchDialog__FilterMenu__SystemContacts"
+msgid "Contacts"
+msgstr "Contactes"
+
+msgctxt "icu:GroupMembersSearchDialog__EmptyState__NoResults--WithoutSearchQuery"
+msgid "No results"
+msgstr "No hi ha cap resultat."
+
+msgctxt "icu:GroupMembersSearchDialog__EmptyState__NoResults--WithSearchQuery"
+msgid "No results for “{searchQuery}”"
+msgstr "No s'ha trobat cap resultat per a «{searchQuery}»"
+
+msgctxt "icu:GroupMembersSearchDialog__MemberItem__Admin"
+msgid "Admin"
+msgstr "Administrador"
+
+msgctxt "icu:GroupMembersSearchDialog__SearchResults__Title"
+msgid "Search Results"
+msgstr "Resultats de la cerca"
+
+msgctxt "icu:GroupMembersSearchDialog__BottomActions__AddMember"
+msgid "Add member"
+msgstr "Afegeix membre"
+
+msgctxt "icu:GroupMembersSearchDialog__BottomActions__InviteViaGroupLink"
+msgid "Invite via group link"
+msgstr "Convidar mitjançant enllaç de grup"
 
 msgctxt "icu:PendingInvites--tab-requests"
 msgid "Requests ({count, number})"
@@ -8359,6 +8419,10 @@ msgctxt "icu:Preferences--blocked-groups"
 msgid "Blocked Groups"
 msgstr "Grups bloquejats"
 
+msgctxt "icu:Preferences--blocked--blocked-on"
+msgid "Blocked on {blockedAt}"
+msgstr "Bloquejat el {blockedAt}"
+
 msgctxt "icu:Preferences--signal-backups"
 msgid "Signal Secure Backups"
 msgstr "Còpies de seguretat segures de Signal"
@@ -9318,6 +9382,10 @@ msgstr "Desactiva el PIN"
 msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--header"
 msgid "Warning"
 msgstr "Advertiment"
+
+msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--description"
+msgid "If you disable the PIN, you will lose all data when you re-register Signal. You can not turn on Registration Lock while the PIN is disabled."
+msgstr "Si desactives el PIN, perdràs totes les dades quan et tornis a registrar a Signal. No podràs activar el bloqueig de registre mentre el PIN estigui desactivat."
 
 msgctxt "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button"
 msgid "Disable PIN"
@@ -11395,10 +11463,6 @@ msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
 
-msgctxt "icu:WhatsNew__8.19--0"
-msgid "Group admins can now bring chats to their natural conclusion with the new \"End Group\" option in group settings. Ending a group prevents group members from sending messages or starting calls, and also disables invites. Now you can make sure everyone stays on the right thread by ending last year's sewing meetup group before stitching a new one together."
-msgstr "Ara, els admins de grup poden finalitzar els xats amb la nova opció \"Tancar grup\" als ajustos del grup. Tancar un grup evita que els seus membres puguin enviar missatges o iniciar trucades. També desactiva les invitacions al grup."
-
 msgctxt "icu:WhatsNew__8.20--0"
 msgid "Introducing disappearing call events: Missed, outgoing, and received calls that occur after you install this update will now automatically disappear in any chat where disappearing messages are enabled."
 msgstr "Arriben les trucades a desaparèixer: totes les trucades que facis o rebis després d'instal·lar aquesta actualització desapareixeran de qualsevol xat en què estiguin habilitats els missatges a desaparèixer."
@@ -11406,3 +11470,7 @@ msgstr "Arriben les trucades a desaparèixer: totes les trucades que facis o reb
 msgctxt "icu:WhatsNew__8.20--1"
 msgid "Now you can reorder installed sticker packs so your new favorites don’t get stuck in the back of the line."
 msgstr "Ara pots ordenar els paquets d'stickers que tinguis instal·lats com vulguis i tenir sempre els teus stickers preferits a mà."
+
+msgctxt "icu:WhatsNew__8.24--1"
+msgid "We made it easier to search for group members on the group settings page, so you can quickly figure out if your Mom already added your second cousin to the third-annual extended family reunion BBQ group."
+msgstr "Hem fet que sigui més fàcil buscar membres del grup a la pàgina d'ajustos."
