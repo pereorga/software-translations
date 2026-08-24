@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-17 08:32+0000\n"
+"POT-Creation-Date: 2026-08-24 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,30 +54,25 @@ msgctxt "DevicesView"
 msgid "Computer"
 msgstr "Ordinador"
 
-#: DeviceACPI
-msgid "ACPI thermal zone"
-msgstr "Zona tèrmica ACPI"
-
 #: DeviceSCSI
 msgid "Communications"
 msgstr "Comunicacions"
 
+#: DeviceACPI
+msgid "ACPI thermal zone"
+msgstr "Zona tèrmica ACPI"
+
 #: Device
 msgid "Mass storage controller"
 msgstr "Controlador d'emmagatzematge massiu"
-
-#: DevicesView
-msgid "Connection"
-msgstr "Connexió"
 
 #: DeviceSCSI
 msgid "Printer"
 msgstr "Impressora"
 
 #: DevicesView
-msgctxt "DevicesView"
-msgid "Driver used"
-msgstr "Controlador usat"
+msgid "Connection"
+msgstr "Connexió"
 
 #: Device
 msgctxt "Device"
@@ -93,11 +88,6 @@ msgstr "Escànner"
 #: Device
 msgid "Memory controller"
 msgstr "Controlador de la memòria"
-
-#: DevicesView
-msgctxt "DevicesView"
-msgid "Device paths"
-msgstr "Camins del dispositiu"
 
 #: DevicesView
 msgctxt "DevicesView"
@@ -130,7 +120,6 @@ msgstr "Nom del dispositiu"
 
 #: DeviceACPI
 msgctxt "DeviceACPI"
-"DeviceACPI"
 "DeviceACPI"
 msgid "unknown"
 msgstr "desconegut"
@@ -165,11 +154,6 @@ msgid "Serial bus controller"
 msgstr "Controlador del bus de sèrie"
 
 #: DevicesView
-msgctxt "DevicesView"
-msgid "unknown"
-msgstr "desconegut"
-
-#: DevicesView
 msgid "Refresh devices"
 msgstr "Actualitza la llista de dispositius"
 
@@ -183,13 +167,12 @@ msgstr "RBC"
 
 #: Device
 msgctxt "Device"
-msgid "Device paths"
-msgstr "Camins als dispositius"
-
-#: Device
-msgctxt "Device"
 msgid "Unknown device"
 msgstr "El dispositiu és desconegut"
+
+#: Device
+msgid "Device paths"
+msgstr "Camins als dispositius"
 
 #: Device
 msgid "Wireless controller"
@@ -208,23 +191,19 @@ msgctxt "DevicesView"
 msgid "Devices"
 msgstr "Dispositius"
 
-#: DevicesView
-msgid "none"
-msgstr "cap"
-
 #: DeviceACPI
 msgctxt "DeviceACPI"
 msgid "Device name"
 msgstr "Nom del dispositiu"
 
+#: DeviceSCSI
+msgid "Optical drive"
+msgstr "Unitat òptica"
+
 #: DevicePCI
 msgctxt "DevicePCI"
 msgid "unknown"
 msgstr "desconegut"
-
-#: DeviceSCSI
-msgid "Optical drive"
-msgstr "Unitat òptica"
 
 #: Device
 msgid "Display controller"
@@ -326,12 +305,12 @@ msgid "Attributes"
 msgstr "Atributs"
 
 #: DeviceSCSI
-msgid "Disk drive"
-msgstr "Unitat de disc"
-
-#: DeviceSCSI
 msgid "Worm"
 msgstr "Cuc"
+
+#: DeviceSCSI
+msgid "Disk drive"
+msgstr "Unitat de disc"
 
 #: DeviceSCSI
 msgid "CD-ROM"
@@ -390,7 +369,6 @@ msgid "Network controller"
 msgstr "Controlador de xarxa"
 
 #: Device
-msgctxt "Device"
 msgid "Driver used"
 msgstr "Controlador usat"
 
