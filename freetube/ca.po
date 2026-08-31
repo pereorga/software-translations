@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-27 11:09+0000\n"
+"POT-Creation-Date: 2026-08-31 15:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,6 +195,10 @@ msgstr ""
 
 #: Global-%3ECounts-%3EWatching+Count
 msgid "1 watching | {count} watching"
+msgstr ""
+
+#: Global-%3ECounts-%3EReplies+Remaining
+msgid "{' '}(1 remaining) | {' '}({count} remaining)"
 msgstr ""
 
 #: Search+/+Go+to+URL
@@ -456,6 +460,13 @@ msgstr ""
 msgid ""
 "All subscription tabs are hidden. To see content here, please unhide some "
 "tabs in the \"{subsection}\" section in \"{settingsSection}\"."
+msgstr ""
+
+#: Subscriptions-%3EPosts-%3ERSS+Message
+msgid ""
+"YouTube does not provide RSS feeds for posts. Disable the \"{rssSetting}\" "
+"setting to view posts or enable the \"{hideSetting}\" setting to hide this "
+"tab."
 msgstr ""
 
 #: More
@@ -3047,6 +3058,14 @@ msgstr "Llista de reproducció en aleatori"
 msgid "Reverse Playlist"
 msgstr "Llista de reproducció invertida"
 
+#: Video-%3ECollapse+Playlist
+msgid "Collapse Playlist"
+msgstr ""
+
+#: Video-%3EExpand+Playlist
+msgid "Expand Playlist"
+msgstr ""
+
 #: Video-%3EPrevious
 msgid "Previous"
 msgstr "Anterior"
@@ -3548,8 +3567,8 @@ msgstr ""
 msgid "View 1 reply | View {replyCount} replies"
 msgstr ""
 
-#: Comments-%3EHide+%7BreplyCount%7D+replies
-msgid "Hide 1 reply | Hide {replyCount} replies"
+#: Comments-%3EHide+Replies
+msgid "Hide reply | Hide replies"
 msgstr ""
 
 #: Comments-%3ELoading+replies
@@ -3565,7 +3584,7 @@ msgid "View {replyCount} replies from {channelName} and others"
 msgstr ""
 
 #: Comments-%3EShow+More+Replies
-msgid "Show More Replies"
+msgid "Show more replies"
 msgstr ""
 
 #: Comments-%3EThere+are+no+comments+available+for+this+video
@@ -3628,7 +3647,10 @@ msgid ""
 msgstr ""
 
 #: Tooltips-%3EGeneral+Settings-%3EInvidious+Instance
-msgid "The Invidious instance that FreeTube will connect to for API calls."
+msgid ""
+"The Invidious instance that FreeTube will connect to for API calls. Changes "
+"to this setting apply only to the current window unless you set this "
+"instance as the default."
 msgstr ""
 
 #: Tooltips-%3EGeneral+Settings-%3ERegion+for+Trending
