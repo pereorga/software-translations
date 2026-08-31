@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-24 08:36+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,14 @@ msgstr "Processador"
 msgid "Generate system information"
 msgstr "Genera la informació del sistema"
 
+#: DevicesView
+msgid "Disable driver"
+msgstr "Inhabilita el controlador"
+
+#: DevicesView
+msgid "Reboot needed"
+msgstr "Cal reiniciar"
+
 #: DevicePCI
 msgid "Class info"
 msgstr "Informació de la classe"
@@ -74,6 +82,14 @@ msgstr "Impressora"
 msgid "Connection"
 msgstr "Connexió"
 
+#: DevicesView
+msgid "Failed to write to the settings file."
+msgstr "Ha fallat escriure al fitxer de configuració."
+
+#: DevicesView
+msgid "Enable driver"
+msgstr "Habilita el controlador"
+
 #: Device
 msgctxt "Device"
 "Device"
@@ -93,6 +109,10 @@ msgstr "Controlador de la memòria"
 msgctxt "DevicesView"
 msgid "Unknown device"
 msgstr "El dispositiu és desconegut"
+
+#: DevicesView
+msgid "ShutDown failed with error: "
+msgstr "L'aturada ha fallat amb l'error següent: "
 
 #: DeviceACPI
 msgid "ACPI node '%1'"
@@ -141,6 +161,10 @@ msgid "Input device controller"
 msgstr "Controlador de dispositiu d'entrada"
 
 #: DevicesView
+msgid "OK"
+msgstr "D'acord"
+
+#: DevicesView
 msgctxt "DevicesView"
 msgid "PCI bus"
 msgstr "Bus PCI"
@@ -152,6 +176,10 @@ msgstr "Canviador"
 #: Device
 msgid "Serial bus controller"
 msgstr "Controlador del bus de sèrie"
+
+#: DevicesView
+msgid "Restart computer"
+msgstr "Reinicia l'ordinador"
 
 #: DevicesView
 msgid "Refresh devices"
@@ -265,8 +293,28 @@ msgid "Multimedia controller"
 msgstr "Controlador multimèdia"
 
 #: DevicesView
+msgid "The driver path is not in a package volume: "
+msgstr "El camí del controlador no és en un volum de paquet:"
+
+#: Device
+msgid "none"
+msgstr "cap"
+
+#: DevicesView
+msgid "Blocked entry:\\n"
+msgstr "Entrada blocada:\\n"
+
+#: DevicesView
 msgid "Quit"
 msgstr "Surt"
+
+#: DevicesView
+msgid "Disabling critical system drivers is not allowed."
+msgstr "No està permès inhabilitar els controladors crítics del sistema."
+
+#: DevicesView
+msgid "Driver disabled"
+msgstr "Controlador inhabilitat"
 
 #: Device
 msgctxt "Device"
@@ -291,6 +339,10 @@ msgstr "Processador"
 msgid "Card reader"
 msgstr "Lector de targetes"
 
+#: DevicesView
+msgid "Disabling non-packaged drivers is not supported."
+msgstr "No s'admet la inhabilitació de controladors no empaquetats."
+
 #: Device
 msgctxt "Device"
 msgid "Bridge"
@@ -311,6 +363,30 @@ msgstr "Cuc"
 #: DeviceSCSI
 msgid "Disk drive"
 msgstr "Unitat de disc"
+
+#: DevicesView
+msgid ""
+"The driver has been disabled. A reboot is required for the change to take "
+"effect.\\n"
+"\\n"
+"After rebooting, this device may no longer appear in the device list as the "
+"system will not be able to identify it without its driver.\\n"
+"\\n"
+"To re-enable the driver, find the device in the Devices application and "
+"click \\\"Enable driver\\\". If the device is no longer visible, remove the "
+"corresponding blocked entry from the packages settings file:\\n"
+msgstr ""
+"El controlador s'ha inhabilitat. Cal reiniciar el sistema perquè el canvi "
+"tingui efecte.\\n"
+"\\n"
+"Després de reiniciar, és possible que aquest dispositiu ja no aparegui a la "
+"llista de dispositius, ja que el sistema no el podrà identificar sense el "
+"seu controlador.\\n"
+"\\n"
+"Per tornar a activar el controlador, cerqueu el dispositiu a l'aplicació "
+"Dispositius i feu clic a \\\"Habilita el controlador\\\". Si el dispositiu "
+"ja no és visible, elimineu l'entrada blocada corresponent del fitxer de "
+"configuració dels paquets:\\n"
 
 #: DeviceSCSI
 msgid "CD-ROM"
@@ -359,6 +435,10 @@ msgstr "Dispositiu sense classificar"
 msgctxt "DeviceACPI"
 msgid "Manufacturer"
 msgstr "Fabricant"
+
+#: DevicesView
+msgid "Error"
+msgstr "Error"
 
 #: Device
 msgid "ACPI controller"
