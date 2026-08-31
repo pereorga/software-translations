@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-17 08:32+0000\n"
+"POT-Creation-Date: 2026-08-31 15:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5193,6 +5193,11 @@ msgstr "[scarlet]Entorn no vàlid"
 msgid "Yes"
 msgstr "Sí"
 
+#: none
+msgctxt "none"
+msgid "None"
+msgstr "<cap>"
+
 #: info.title
 msgid "Info"
 msgstr "Informació"
@@ -6244,10 +6249,6 @@ msgstr "Omet l’animació del llançament i aterratge del nucli"
 msgid "Lock Landscape"
 msgstr "Bloca el paisatge"
 
-#: setting.shadows.name
-msgid "Shadows"
-msgstr "Ombres"
-
 #: setting.blockreplace.name
 msgid "Automatic Block Suggestions"
 msgstr "Suggeriments de bloc automàtics"
@@ -6288,9 +6289,10 @@ msgstr "Desactiva els mods quan no es pugui iniciar el joc"
 msgid "Animated Surfaces"
 msgstr "Animacions del terreny"
 
-#: setting.animatedshields.name
-msgid "Animated Shields"
-msgstr "Animacions dels escuts"
+#: setting.animatedwater.description
+msgid ""
+"Whether to display animations for surfaces like water, slag and shields."
+msgstr "Enables or disables animations for liquid surfaces like water and slag."
 
 #: setting.playerindicators.name
 msgid "Player Indicators"
@@ -6308,6 +6310,10 @@ msgstr "Mostra els plans de construcció dels altres jugadors"
 msgid "Enemy Indicators"
 msgstr "Indicadors d’enemics"
 
+#: setting.indicators.description
+msgid "Shows markers pointing in the direction of enemy units."
+msgstr "Shows markers pointing in the direction of "
+
 #: setting.autotarget.name
 msgid "Auto-Target"
 msgstr "Apunta automàticament"
@@ -6316,15 +6322,12 @@ msgstr "Apunta automàticament"
 msgid "Mouse+Keyboard Controls (Experimental)"
 msgstr "Controls amb ratolí i teclat"
 
-#: setting.touchscreen.name
-msgid "Touchscreen Controls"
-msgstr "Controls tàctils"
-
 #: setting.fpscap.name
 msgid "Max FPS"
 msgstr "FPS màx."
 
 #: setting.fpscap.none
+msgctxt "setting.fpscap.none"
 msgid "None"
 msgstr "Cap"
 
@@ -6333,7 +6336,9 @@ msgid "UI Scaling"
 msgstr "Escala de la interfície"
 
 #: setting.uiscale.description
-msgid "Restart required to apply changes."
+msgid ""
+"Modifies the size of the user interface.\n"
+"Restart required to apply changes."
 msgstr "Cal reiniciar perquè s’apliquin els canvis."
 
 #: setting.uiEdgePadding.name
@@ -6367,6 +6372,10 @@ msgstr "Desenfocament «bloom»"
 #: setting.effects.name
 msgid "Display Effects"
 msgstr "Mostra els efectes"
+
+#: setting.effects.description
+msgid "Whether to display various visual effects like smoke and particles."
+msgstr "Enables or disables various visual effects like smoke and particles."
 
 #: setting.destroyedblocks.name
 msgid "Display Destroyed Blocks"
@@ -6488,17 +6497,9 @@ msgstr "Dibuixa la foscor/llum"
 msgid "Ambient Volume"
 msgstr "Volum del so ambiental"
 
-#: setting.mutemusic.name
-msgid "Mute Music"
-msgstr "Silencia la música"
-
 #: setting.sfxvol.name
 msgid "SFX Volume"
 msgstr "Volums dels efectes de so"
-
-#: setting.mutesound.name
-msgid "Mute Sound"
-msgstr "Silencia el so"
 
 #: setting.communityservers.name
 msgid "Fetch Community Server List"
@@ -6549,7 +6550,9 @@ msgid "Adapt interface to display notch"
 msgstr "Adapta la interfície per a mostrar el notch"
 
 #: setting.macnotch.description
-msgid "Restart required to apply changes"
+msgid ""
+"On MacOS devices with a notch, lowers the UI to avoid it.\n"
+"Restart required to apply changes."
 msgstr "Cal reiniciar perquè s’apliquin els canvis"
 
 #: steam.friendsonly
@@ -7474,6 +7477,7 @@ msgstr ""
 "processadors."
 
 #: rules.lighting
+msgctxt "rules.lighting"
 msgid "Lighting"
 msgstr "Il·luminació"
 
@@ -11096,7 +11100,7 @@ msgstr ""
 "endavant."
 
 #: block.router.description
-msgid "Distributes input items to 3 output directions equally."
+msgid "Distributes input items to all 4 output directions equally."
 msgstr ""
 "Distribueix els elements d’entrada en les tres direccions de sortida "
 "equitativament."
@@ -11110,7 +11114,7 @@ msgstr ""
 "producció, ja que en pot embussar l’entrada de recursos."
 
 #: block.distributor.description
-msgid "Distributes input items to 7 output directions equally."
+msgid "Distributes input items to all 8 output directions equally."
 msgstr ""
 "Distribueix els elements d’entrada en les 7 caselles de sortida "
 "equitativament."
@@ -11424,7 +11428,9 @@ msgstr ""
 "poden recuperar els continguts amb un descarregador."
 
 #: block.unloader.description
-msgid "Unloads the selected item from nearby blocks."
+msgid ""
+"Unloads items from nearby blocks in any direction.\n"
+"Output can be filtered to unload only specific items."
 msgstr "Descarrega els elements seleccionats dels blocs adjacents."
 
 #: block.launch-pad.description
