@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-09-07 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -526,7 +526,7 @@ msgstr "Voleu delegar el testimoni a l’administrador {0}?"
 
 #: clientDelegationScopeConsentText
 msgid "Allow {0} to act on your behalf?"
-msgstr ""
+msgstr "Voleu permetre que {0} actuï en el vostre nom?"
 
 #: restartLoginTooltip
 msgid "Restart login"
@@ -747,7 +747,7 @@ msgstr ""
 
 #: emailLinkIdp2
 msgid "Haven''t received the email?"
-msgstr "No heu rebut un codi de verificació al vostre correu electrònic?"
+msgstr "No heu rebut el correu electrònic?"
 
 #: emailLinkIdp3
 msgctxt "emailLinkIdp3"
@@ -756,7 +756,7 @@ msgstr "per a tornar a enviar el correu electrònic."
 
 #: emailLinkIdp4
 msgid "If you already confirmed linking the account in a different browser"
-msgstr "Si ja heu verificat el correu electrònic en un altre navegador"
+msgstr "Si ja heu confirmat l’enllaç del compte en un altre navegador"
 
 #: emailLinkIdp5
 msgid "to continue."
@@ -1139,7 +1139,7 @@ msgstr "El nom d’usuari ja existeix."
 
 #: emailExistsMessage
 msgid "This email is already associated with an existing account."
-msgstr "El correu electrònic ja existeix."
+msgstr "Aquesta adreça electrònica ja està associada amb un compte existent."
 
 #: federatedIdentityExistsMessage
 msgid ""
@@ -1529,21 +1529,21 @@ msgid ""
 "You successfully confirmed linking your account with {0} account {1}. Please "
 "go back to your original browser and continue there with the login."
 msgstr ""
-"Heu verificat el vostre correu electrònic correctament. Torneu al vostre "
-"navegador original i continueu amb l’entrada allà."
+"Heu confirmat correctament l’enllaç del compte amb {0} compte {1}. Torneu al "
+"vostre navegador original i continueu amb l’entrada allà."
 
 #: identityProviderLinkSuccessHeader
 msgid "Account linking confirmed"
-msgstr ""
+msgstr "Enllaç del compte confirmat"
 
 #: identityProviderLinkConfirmedAlreadyMessage
 msgid ""
 "Linking of your account with {0} account {1} has been confirmed already."
-msgstr ""
+msgstr "L''enllaç del vostre compte amb {0} {1} ja s''ha confirmat."
 
 #: identityProviderLinkConfirmedAlreadyMessageHeader
 msgid "Account linking already confirmed"
-msgstr ""
+msgstr "L’enllaç del compte ja s’ha confirmat"
 
 #: identityProviderAlreadyLinkedMessage
 msgid "Federated identity returned by {0} is already linked to another user."
@@ -2065,11 +2065,11 @@ msgstr "Error de la clau de seguretat"
 
 #: webauthn-error-registration
 msgid "Failed to register your Passkey."
-msgstr "No s’ha pogut registrar la vostra Passkey. {0}"
+msgstr "No s’ha pogut registrar la vostra Passkey."
 
 #: webauthn-error-api-get
 msgid "Failed to authenticate by the Passkey."
-msgstr "No s’ha pogut identificar amb la Passkey. {0}"
+msgstr "No s’ha pogut identificar amb la Passkey."
 
 #: webauthn-error-different-user
 msgid "First authenticated user is not the one authenticated by the Passkey."
@@ -2078,11 +2078,11 @@ msgstr ""
 
 #: webauthn-error-auth-verification
 msgid "Passkey authentication result is invalid."
-msgstr "El resultat de l’autenticació amb Passkey no és vàlid. {0}"
+msgstr "El resultat de l’autenticació amb Passkey no és vàlid."
 
 #: webauthn-error-register-verification
 msgid "Passkey registration result is invalid."
-msgstr "El resultat del registre amb clau de seguretat no és vàlid.{0}"
+msgstr "El resultat del registre amb clau de seguretat no és vàlid."
 
 #: webauthn-error-user-not-found
 msgid "Unknown user authenticated by the Passkey."
@@ -2093,18 +2093,25 @@ msgid ""
 "This security key model is not allowed (AAGUID {0}). Please use a different "
 "security key."
 msgstr ""
+"No es permet aquest model de clau de seguretat (AAGUID {0}). Utilitzeu una "
+"altra clau de seguretat."
 
 #: webauthn-error-registration-aaguid-attestation-required
 msgid ""
 "Your organization requires verified security keys. Attestation format "
 "''none'' is not accepted; please use a key that provides attestation."
 msgstr ""
+"La vostra organització requereix claus de seguretat verificades. No s’"
+"accepta el format d’atestació «none»; utilitzeu una clau que proporcioni "
+"atestació."
 
 #: webauthn-error-registration-attachment-mismatch
 msgid ""
 "Your organization requires a different type of security key (invalid "
 "Authenticator Attachment ''{0}''). Please use the correct type."
 msgstr ""
+"La vostra organització requereix un altre tipus de clau de seguretat ("
+"adjunció de l’autenticador «{0}» no vàlida). Utilitzeu el tipus correcte."
 
 #: webauthn-error-api-not-allowed
 msgid ""
@@ -2112,44 +2119,50 @@ msgid ""
 "the request, taken too long to respond, or the operation may not be "
 "permitted in this context. Please try again."
 msgstr ""
+"L’operació amb la Passkey no s’ha permès o ha excedit el temps d’espera. És "
+"possible que hàgiu cancel·lat la sol·licitud, que hàgiu trigat massa a "
+"respondre, o que l’operació no estigui permesa en aquest context. Torneu-ho "
+"a provar."
 
 #: webauthn-error-api-invalid-state
 msgid "This Passkey is already registered."
-msgstr ""
+msgstr "Aquesta Passkey ja està registrada."
 
 #: webauthn-error-api-security
 msgid ""
 "A security error occurred during the Passkey operation. Please ensure you "
 "are on the correct site and try again."
 msgstr ""
+"S’ha produït un error de seguretat durant l’operació amb la Passkey. "
+"Assegureu-vos que sou al lloc correcte i torneu-ho a provar."
 
 #: webauthn-error-duplicated-device
 msgid "Device already exists with the same name."
-msgstr ""
+msgstr "Ja existeix un dispositiu amb el mateix nom."
 
 #: webauthn-error-user-not-present
 msgid "User presence is required."
-msgstr ""
+msgstr "Cal la presència de l’usuari."
 
 #: webauthn-error-user-not-verified
 msgid "User verification is required."
-msgstr ""
+msgstr "Cal la verificació de l’usuari."
 
 #: webauthn-error-bad-origin
 msgid "Passkey origin mismatch."
-msgstr ""
+msgstr "L’origen de la Passkey no coincideix."
 
 #: webauthn-error-bad-rpid
 msgid "Passkey RP ID mismatch."
-msgstr ""
+msgstr "L’identificador de la part de confiança de la Passkey no coincideix."
 
 #: webauthn-error-bad-challenge
 msgid "Passkey challenge mismatch or expired."
-msgstr ""
+msgstr "El codi de verificació de la Passkey no coincideix o ha caducat."
 
 #: webauthn-error-bad-signature
 msgid "Passkey signature verification failed."
-msgstr ""
+msgstr "Ha fallat la verificació de la signatura de la Passkey."
 
 #.
 #. Passkey
@@ -2229,15 +2242,15 @@ msgstr "O entra amb"
 
 #: identity-provider-login-label-divider
 msgid "or sign in with"
-msgstr ""
+msgstr "o inicieu la sessió amb"
 
 #: orLabel
 msgid "or"
-msgstr ""
+msgstr "o"
 
 #: signInWithProvider
 msgid "Sign in with {0}"
-msgstr ""
+msgstr "Inicia la sessió amb {0}"
 
 #: idp-email-verification-display-name
 msgid "Email Verification"
@@ -2426,16 +2439,19 @@ msgstr "Obre l’aplicació de cartera"
 
 #: oid4vpScanQrCodeTitle
 msgid "Scan QR code"
-msgstr ""
+msgstr "Escanegeu el codi QR"
 
 #: oid4vpScanQrCode
 msgid "Use your wallet app on another device to scan this code"
 msgstr ""
+"Utilitzeu l’aplicació de cartera o un altre dispositiu per a escanejar "
+"aquest codi"
 
 #: oid4vpQrCodeAlt
 msgid "QR code to sign in with a wallet on another device"
 msgstr ""
+"Codi QR per a iniciar la sessió amb una cartera o amb un altre dispositiu"
 
 #: oid4vpQrExpired
 msgid "The QR code is no longer valid. To restart the login process"
-msgstr ""
+msgstr "El codi QR ja no és vàlid. Per a reiniciar el procés d’inici de sessió"
