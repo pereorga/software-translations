@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-09-07 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,6 +107,8 @@ msgstr "Color de la icona"
 
 #: actions_configurator.rows.name.title
 msgctxt "actions_configurator.rows.name.title"
+"actions_configurator.rows.name.title"
+"actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
 "actions_configurator.rows.name.title"
@@ -324,21 +326,47 @@ msgctxt "app_intents.perform_action.response_success"
 "app_intents.perform_action.response_success"
 "app_intents.perform_action.response_success"
 "app_intents.perform_action.response_success"
+"app_intents.perform_action.response_success"
 msgid "Done"
 msgstr "Fet!"
 
+#: app_intents.readable_entity.entity.name
+msgctxt "app_intents.readable_entity.entity.name"
+msgid "Entity"
+msgstr ""
+
 #: app_intents.server.title
 msgctxt "app_intents.server.title"
-"app_intents.server.title"
-"app_intents.server.title"
-"app_intents.server.title"
-"app_intents.server.title"
-"app_intents.server.title"
-"app_intents.server.title"
-"app_intents.server.title"
-"app_intents.server.title"
 msgid "Server"
 msgstr "Servidor"
+
+#: app_intents.turn_on_off.action.name
+msgctxt "app_intents.turn_on_off.action.name"
+msgid "Action"
+msgstr ""
+
+#: app_intents.turn_on_off.action.off
+msgctxt "app_intents.turn_on_off.action.off"
+msgid "Turn off"
+msgstr ""
+
+#: app_intents.turn_on_off.action.on
+msgctxt "app_intents.turn_on_off.action.on"
+msgid "Turn on"
+msgstr ""
+
+#: app_intents.turn_on_off.action.toggle
+msgctxt "app_intents.turn_on_off.action.toggle"
+msgid "Toggle"
+msgstr ""
+
+#: app_intents.turn_on_off.description
+msgid "Turns a light, switch or fan on or off, or opens and closes a cover"
+msgstr ""
+
+#: app_intents.turn_on_off.title
+msgid "Turn on or off"
+msgstr ""
 
 #: assist.button.finish_recording.title
 msgid "Tap to finish recording..."
@@ -714,7 +742,6 @@ msgstr "Esteu segur que voleu esborrar tots els esdeveniments?"
 
 #: close_label
 msgctxt "close_label"
-"close_label"
 msgid "Close"
 msgstr "Tanca"
 
@@ -882,6 +909,7 @@ msgid "Reorder Rooms"
 msgstr "Reordena habitacions"
 
 #: home_view.context_menu.hide
+msgctxt "home_view.context_menu.hide"
 msgid "Hide"
 msgstr "Amaga"
 
@@ -1608,8 +1636,6 @@ msgstr ""
 
 #: onboarding.permissions.notification.title
 msgctxt "onboarding.permissions.notification.title"
-"onboarding.permissions.notification.title"
-"onboarding.permissions.notification.title"
 msgid "Notifications"
 msgstr "Notificacions"
 
@@ -1650,10 +1676,6 @@ msgstr "Benvinguts a Home Assistant %@!"
 
 #: open_label
 msgctxt "open_label"
-"open_label"
-"open_label"
-"open_label"
-"open_label"
 msgid "Open"
 msgstr "Obrir"
 
@@ -1671,6 +1693,7 @@ msgid "Retry"
 msgstr "Reintentar"
 
 #: room_view.section.hidden
+msgctxt "room_view.section.hidden"
 msgid "Hidden"
 msgstr "Ocult"
 
@@ -1683,6 +1706,7 @@ msgid "Use Zone Name"
 msgstr "Utilitza el nom de la zona"
 
 #: settings.connection_section.activate_server
+msgctxt "settings.connection_section.activate_server"
 msgid "Activate"
 msgstr "Activa"
 
@@ -3782,6 +3806,7 @@ msgid "Actions"
 msgstr "Accions"
 
 #: widgets.assist.action_title
+msgctxt "widgets.assist.action_title"
 msgid "Ask Assist"
 msgstr "Pregunta a l'assistent"
 
@@ -3806,6 +3831,14 @@ msgstr "Executar automatització"
 msgctxt "widgets.button.reload_timeline"
 msgid "Reload all widgets"
 msgstr "Recarrega tots els ginys"
+
+#: widgets.commonly_used_entities.exclude_domains.param.title
+msgid "Exclude domains"
+msgstr "Exclou dominis"
+
+#: widgets.commonly_used_entities.include_domains.param.title
+msgid "Include domains"
+msgstr "Inclou dominis"
 
 #: widgets.controls.automation.description
 msgid "Run automation"
@@ -3937,6 +3970,10 @@ msgstr "Interruptor d'Obrir"
 msgid "Opens the selected switch entity inside the app"
 msgstr "Obre l'entitat d'interruptor seleccionada dins de l'app"
 
+#: widgets.custom.show_states.param.title_no_beta
+msgid "Show states"
+msgstr "Mostra estats"
+
 #: widgets.details.parameters.run_script
 msgid "Run Script (only in rectangular family)"
 msgstr "Executa l'Script (només en família rectangular)"
@@ -3944,27 +3981,69 @@ msgstr "Executa l'Script (només en família rectangular)"
 #: widgets.energy.battery
 msgctxt "widgets.energy.battery"
 msgid "Battery"
-msgstr ""
+msgstr "Bateria"
 
 #: widgets.energy.electricity
 msgctxt "widgets.energy.electricity"
 msgid "Grid"
-msgstr ""
+msgstr "Xarxa"
 
-#: widgets.energy.gas
-msgctxt "widgets.energy.gas"
-msgid "Gas"
-msgstr ""
+#: widgets.energy.grid
+msgctxt "widgets.energy.grid"
+msgid "Grid"
+msgstr "Xarxa"
+
+#: widgets.energy.no_data
+msgid "No energy data"
+msgstr "Sense dades d'energia"
+
+#: widgets.energy.not_configured
+msgid "No energy dashboard configured"
+msgstr "Cap panell d'energia configurat"
+
+#: widgets.energy.period.this_month
+msgid "This month"
+msgstr "Aquest mes"
+
+#: widgets.energy.period.this_week
+msgid "This week"
+msgstr "Aquesta setmana"
+
+#: widgets.energy.period.title
+msgid "Period"
+msgstr "Període"
+
+#: widgets.energy.period.today
+msgctxt "widgets.energy.period.today"
+msgid "Today"
+msgstr "Avui"
+
+#: widgets.energy.period.yesterday
+msgid "Yesterday"
+msgstr "Ahir"
+
+#: widgets.energy.source.auto
+msgctxt "widgets.energy.source.auto"
+msgid "Auto"
+msgstr "Automàtic"
 
 #: widgets.energy.source.battery
 msgctxt "widgets.energy.source.battery"
 msgid "Battery"
-msgstr ""
+msgstr "Bateria"
 
-#: widgets.energy.source.gas
-msgctxt "widgets.energy.source.gas"
-msgid "Gas"
-msgstr ""
+#: widgets.energy.source.consumption
+msgid "Consumption"
+msgstr "Consum"
+
+#: widgets.energy.source.title
+msgctxt "widgets.energy.source.title"
+msgid "Source"
+msgstr "Font"
+
+#: widgets.energy.title
+msgid "Energy"
+msgstr "Energia"
 
 #: widgets.gauge.parameters.run_script
 msgctxt "widgets.gauge.parameters.run_script"
@@ -3993,6 +4072,11 @@ msgstr "Obre la pàgina"
 msgctxt "widgets.param.server.title"
 msgid "Server"
 msgstr "Servidor"
+
+#: widgets.parameters.domain
+msgctxt "widgets.parameters.domain"
+msgid "Domain"
+msgstr "Domini"
 
 #: widgets.todo_list.all_done
 msgid "All done! 🎉"
