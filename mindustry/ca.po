@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-31 15:41+0000\n"
+"POT-Creation-Date: 2026-09-07 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -542,6 +542,7 @@ msgid "[lightgray]No maps found!"
 msgstr "[lightgray]No s’ha trobat cap mapa!"
 
 #: invalid
+msgctxt "invalid"
 msgid "Invalid"
 msgstr "No vàlid"
 
@@ -1015,7 +1016,7 @@ msgstr "Avís de canvis de campanya"
 
 #: campaign.rework.serpulo
 msgid ""
-"️️️️️️️= [accent]⚠ The Serpulo campaign has been reworked.[]\n"
+"[accent]⚠ The Serpulo campaign has been reworked.[]\n"
 "\n"
 "Sector positions and difficulty have changed. You may encounter issues "
 "relating to leftover campaign saves from the old layout.\n"
@@ -2334,14 +2335,6 @@ msgstr "Descripció"
 msgid "Mod Name"
 msgstr "Nom del mod"
 
-#: editor.filters.prioritizemod
-msgid "Mod Priority"
-msgstr "Prioritat del mod"
-
-#: editor.filters.prioritizecustom
-msgid "Custom Priority"
-msgstr "Prioritat personalitzada"
-
 #: editor.filters.planetselect
 msgid "Planet Selection"
 msgstr "Selecció de planeta"
@@ -2398,6 +2391,7 @@ msgstr "Líquid"
 
 #: content.block
 msgctxt "content.block"
+"content.block"
 msgid "Block"
 msgstr "Bloc"
 
@@ -2412,6 +2406,7 @@ msgid "Weather"
 msgstr "Clima"
 
 #: content.status
+msgctxt "content.status"
 msgid "Status Effect"
 msgstr "Efecte d’estat"
 
@@ -2688,6 +2683,7 @@ msgid "shields/wave"
 msgstr "escuts/onada"
 
 #: waves.to
+msgctxt "waves.to"
 msgid "to"
 msgstr "fins a"
 
@@ -2712,6 +2708,7 @@ msgid "[lightgray](first {0})"
 msgstr "[lightgray](primer {0})"
 
 #: waves.max
+msgctxt "waves.max"
 msgid "max units"
 msgstr "nombre màxim d’unitats"
 
@@ -2795,10 +2792,13 @@ msgid "counts"
 msgstr "comptades"
 
 #: wavemode.health
+msgctxt "wavemode.health"
+"wavemode.health"
 msgid "health"
 msgstr "salut"
 
 #: all
+msgctxt "all"
 msgid "All"
 msgstr "Tots"
 
@@ -2848,6 +2848,7 @@ msgid "Name:"
 msgstr "Nom:"
 
 #: editor.spawn
+msgctxt "editor.spawn"
 msgid "Spawn Unit"
 msgstr "Genera una unitat"
 
@@ -3436,6 +3437,8 @@ msgid "Add Icon"
 msgstr "Afegeix una icona"
 
 #: locales.property.name
+msgctxt "locales.property.name"
+"locales.property.name"
 msgid "name"
 msgstr "nom"
 
@@ -4014,6 +4017,7 @@ msgid " View Submission"
 msgstr " Veure propostes"
 
 #: sectors.select
+msgctxt "sectors.select"
 msgid "Select"
 msgstr "Selecciona"
 
@@ -5193,11 +5197,6 @@ msgstr "[scarlet]Entorn no vàlid"
 msgid "Yes"
 msgstr "Sí"
 
-#: none
-msgctxt "none"
-msgid "None"
-msgstr "<cap>"
-
 #: info.title
 msgid "Info"
 msgstr "Informació"
@@ -5513,6 +5512,7 @@ msgid "Radioactivity"
 msgstr "Radioactivitat"
 
 #: stat.charge
+msgctxt "stat.charge"
 msgid "Charge"
 msgstr "Càrrega elèctrica"
 
@@ -5907,7 +5907,7 @@ msgid "Power"
 msgstr "Potència"
 
 #: bar.progress
-msgid "Build Progress"
+msgid "Progress: {0}%"
 msgstr "Progrés de la construcció"
 
 #: bar.loadprogress
@@ -6141,6 +6141,7 @@ msgid "heat units"
 msgstr "unitats de calor"
 
 #: unit.degrees
+msgctxt "unit.degrees"
 msgid "degrees"
 msgstr "°"
 
@@ -6161,6 +6162,7 @@ msgid "x speed"
 msgstr "× velocitat"
 
 #: unit.multiplier
+msgctxt "unit.multiplier"
 msgid "x"
 msgstr "×"
 
@@ -6327,7 +6329,6 @@ msgid "Max FPS"
 msgstr "FPS màx."
 
 #: setting.fpscap.none
-msgctxt "setting.fpscap.none"
 msgid "None"
 msgstr "Cap"
 
@@ -6914,6 +6915,7 @@ msgid "Drop Cargo"
 msgstr "Deixa la càrrega"
 
 #: keybind.shoot.name
+msgctxt "keybind.shoot.name"
 msgid "Shoot"
 msgstr "Dispara"
 
@@ -7415,6 +7417,7 @@ msgid "Units"
 msgstr "Unitats"
 
 #: rules.title.environment
+msgctxt "rules.title.environment"
 msgid "Environment"
 msgstr "Entorn"
 
@@ -8787,7 +8790,9 @@ msgid "Large Deconstructor"
 msgstr "Desconstructor de blocs"
 
 #: block.deconstructor.description
-msgid "Deconstructs structures and units. Returns 100% of build cost."
+msgid ""
+"Deconstructs inputted structures and units. Returns 100% of build cost. "
+"Holds items into seperate item capacities."
 msgstr ""
 "Desmunta estructures i unitats. Retorna el 100 % del cost de construcció."
 
@@ -12256,7 +12261,8 @@ msgstr ""
 
 #: block.small-deconstructor.description
 msgid ""
-"Deconstructs inputted structures and units. Returns 100% of the build cost."
+"Deconstructs inputted structures and units. Returns 100% of the build cost. "
+"Holds items into seperate item capacities."
 msgstr ""
 "Desmunta les unitats i estructures d’entrada. Recupera el 100 % del cost de "
 "construcció."
@@ -13069,6 +13075,7 @@ msgid "Processor"
 msgstr "Processador"
 
 #: lglobal.sectionLookup
+msgctxt "lglobal.sectionLookup"
 msgid "Lookup"
 msgstr "Cerca"
 
@@ -13326,6 +13333,7 @@ msgid "Manage execution order."
 msgstr "Controla l’execució d’ordres."
 
 #: lcategory.unit
+msgctxt "lcategory.unit"
 msgid "Unit Control"
 msgstr "Control d’unitats"
 
