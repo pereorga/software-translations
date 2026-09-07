@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-24 08:37+0000\n"
+"POT-Creation-Date: 2026-09-07 13:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -114,7 +114,7 @@ msgid "Video dimensions"
 msgstr "Dimensions del vídeo"
 
 #: FORMAT_VIDEO_DIMENSIONS
-msgid "%ix%i pixel"
+msgid "%ix%i pixels"
 msgstr "%ix%i píxel"
 
 #: VIDEO_CODEC
@@ -218,6 +218,10 @@ msgstr "Escapça per ajustar a la pantalla"
 #: PLAYBACK_SPEED
 msgid "Playback speed"
 msgstr "Velocitat de reproducció"
+
+#: PLAYBACK_SPEED_FORMAT
+msgid "%@×"
+msgstr ""
 
 #: SPU_DELAY
 msgid "Subtitles delay"
@@ -393,6 +397,10 @@ msgstr "Flux de xarxa"
 msgid "Recent Streams"
 msgstr "Estrímings recents"
 
+#: REMOVE_FROM_RECENT_STREAMS
+msgid "Remove from Recent Streams"
+msgstr ""
+
 #: HTTP_UPLOAD_SERVER_OFF
 msgid "Inactive Server"
 msgstr "Servidor inactiu"
@@ -424,6 +432,22 @@ msgstr "Gestionat"
 #: HTTP_DOWNLOAD_CANCELLED
 msgid "Download canceled by user"
 msgstr "Baixada cancel·lada per l'usuari"
+
+#: NETWORK_AUTH_TITLE
+msgid "Authentication Required"
+msgstr ""
+
+#: NETWORK_AUTH_MESSAGE
+msgid "%@ requires a user name and a password."
+msgstr ""
+
+#: NETWORK_AUTH_MESSAGE_REALM
+msgid "%@ requires a user name and a password for “%@”."
+msgstr ""
+
+#: NETWORK_AUTH_WRONG_CREDENTIALS
+msgid "The user name or the password was incorrect."
+msgstr ""
 
 #: TRANSFERS
 msgid "Transfers"
@@ -486,6 +510,10 @@ msgstr ""
 #: RENAME_MEDIA_TO
 msgid "Enter new name for %@"
 msgstr "Entreu un nou nom per a %@"
+
+#: MEDIA_PLACEHOLDER
+msgid "Media title"
+msgstr ""
 
 #: SHARING_ACTION_SHEET_TITLE_CHOOSE_FILE
 msgid "Choose a file to open:"
@@ -898,6 +926,10 @@ msgstr "Desa el perfil nou"
 msgid "Do you want to save a new profile with the selected values?"
 msgstr "Voleu desar un perfil nou amb els valors seleccionats?"
 
+#: CUSTOM_EQUALIZER_PROFILE_PLACEHOLDER
+msgid "Profile title"
+msgstr ""
+
 #: RENAME_CUSTOM_PROFILE_TITLE
 msgid "Rename the profile"
 msgstr "Canvia el nom del perfil"
@@ -1134,6 +1166,14 @@ msgstr "Aleatori"
 msgid "Shuffle off"
 msgstr "Apaga el mode aleatori"
 
+#: NETWORK_STREAM_PLACEHOLDER
+msgid "Stream title"
+msgstr ""
+
+#: NETWORK_STREAM_URL_PLACEHOLDER
+msgid "Stream address"
+msgstr ""
+
 #: RESET_NETWORK_STREAM_LIST_TITLE
 msgid "Reset list"
 msgstr "Restableix la llista"
@@ -1192,6 +1232,13 @@ msgstr ""
 "Esteu segur d'eliminar els arxius seleccionats de la llista de reproducció?\n"
 "No s'esborraran del disc."
 
+#: DELETE_MESSAGE_HISTORY
+msgid ""
+"Are you sure to remove the selected media from the history?\n"
+"They won't be deleted from the disk, but their playback progress will be "
+"lost."
+msgstr ""
+
 #. // MARK: - Drag and Drop
 #: PROTOCOL_NOT_SELECTED
 msgid "Protocol not selected"
@@ -1200,6 +1247,23 @@ msgstr "Protocol no seleccionat"
 #: Settings
 msgid "Settings"
 msgstr "Paràmetres"
+
+#: SETTINGS_ABOUT
+msgid "About VLC"
+msgstr ""
+
+#: SETTINGS_DOCUMENTATION
+msgid "Documentation"
+msgstr ""
+
+#: SETTINGS_DONATE
+msgid "Donate to VideoLAN"
+msgstr ""
+
+#: SETTINGS_DONATE_LONG
+msgctxt "SETTINGS_DONATE_LONG"
+msgid "Support free and open source multimedia"
+msgstr ""
 
 #: SORT
 msgctxt "SORT"
@@ -1217,6 +1281,7 @@ msgstr ""
 "Si feu servir la mateixa opció en una fila, s'inverteix l'ordre de "
 "classificació."
 
+#. Noun, not verb: the label of a search field or search button (French: "Recherche", not "Rechercher")
 #: SEARCH
 msgid "Search"
 msgstr "Cerca"
@@ -1264,6 +1329,36 @@ msgstr "LLista de reproducció"
 #: FOLDERS
 msgid "Folders"
 msgstr "Carpetes"
+
+#: PODCAST_MARK_ALL_AS_PLAYED
+msgid "Mark All as Played"
+msgstr ""
+
+#: PODCAST_TIME_LEFT
+msgid "%@ left"
+msgstr ""
+
+#: PODCAST_EXPORT_MEDIA_FILE
+msgid "Export Media File"
+msgstr ""
+
+#: PODCAST_OPEN_LINK
+msgid "Open Link…"
+msgstr ""
+
+#: PODCAST_UNSUBSCRIBE
+msgid "Unsubscribe"
+msgstr ""
+
+#: PODCAST_UNSUBSCRIBE_MESSAGE
+msgid ""
+"This will remove this show, its episodes and any downloaded copies from your "
+"library."
+msgstr ""
+
+#: PODCAST_OPEN_WEBSITE
+msgid "Open Website…"
+msgstr ""
 
 #: VIDEO_GROUPS
 msgid "Video groups"
@@ -1785,6 +1880,10 @@ msgstr "Afegir preferits"
 msgid "Bookmark at"
 msgstr "Preferit a"
 
+#: BOOKMARK_PLACEHOLDER
+msgid "Bookmark title"
+msgstr ""
+
 #: BOOKMARK_RENAME_TITLE
 msgid "Rename bookmark"
 msgstr "Canvia el nom del preferit"
@@ -2220,6 +2319,7 @@ msgid "Donate today"
 msgstr "Doneu avui"
 
 #: DONATION_NAGSCREEN_SUBTITLE
+msgctxt "DONATION_NAGSCREEN_SUBTITLE"
 msgid "Support free and open source multimedia"
 msgstr "Suporta el multimèdia lliure i de codi obert"
 
@@ -2362,19 +2462,24 @@ msgstr "Salta al següent fotograma"
 msgid "Custom Speed"
 msgstr "Velocitat personalitzada"
 
-#: SETTINGS_CUSTOM_PLAYBACK_SPEED_MESSAGE
-msgid "Enter a speed between 0.25 and 8.0"
-msgstr "Introduïu una velocitat entre 0.25 i 8.0"
-
-#: SETTINGS_INVALID_SPEED_VALUE
-msgid ""
-"Please enter a valid number between 0.25 and 8.0\"; /* Please enter a valid "
-"number between 0.25 and 8.0 */// MARK: - TitleSelection// MARK: - NEW DELETE "
-"STRINGS\"DELETE_SINGLE_TITLE\" = \"Delete \"%@\"?"
+#.
+#. MARK: - Custom Setting Value
+#: SETTINGS_CUSTOM_VALUE_MESSAGE
+msgid "Enter a value between %@ and %@"
 msgstr ""
-"Introduïu un número vàlid entre 0.25 i 8.0\"; /* Please enter a valid number "
-"between 0.25 and 8.0 */// MARK: - TitleSelection// MARK: - NEW DELETE "
-"STRINGS\"DELETE_SINGLE_TITLE\" = \"Voleu suprimir \"%@\"?"
+
+#: SETTINGS_CUSTOM_VALUE_ERROR
+msgid "Please enter a valid value between %@ and %@"
+msgstr ""
+
+#.
+#. MARK: - TitleSelection
+#.
+#.
+#. MARK: - NEW DELETE STRINGS
+#: DELETE_SINGLE_TITLE
+msgid "Delete \"%@\"?"
+msgstr ""
 
 #: DELETE_MULTIPLE_TITLE
 msgid "Delete \"%@\" and %d others?"
@@ -2393,6 +2498,10 @@ msgstr "Reprodueix la llista seleccionada al fons sense obrir l'aplicació."
 #: APPINTENT_PLAY_MEDIA_PLAY_%24%7BmediaName%7D
 msgid "Play ${mediaName} in the background"
 msgstr "Reprodueix ${mediaName} al fons"
+
+#: APPINTENT_ERROR_PLAYBACK_START
+msgid "Playback could not be started."
+msgstr ""
 
 #: APPSHORTCUT_PLAY_AUDIO_SHORT_TITLE
 msgid "Play Audio"
