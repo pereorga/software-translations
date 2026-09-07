@@ -843,6 +843,10 @@ msgctxt "icu:KeyTransparencyErrorDialog__Submit"
 msgid "Submit"
 msgstr "Envia"
 
+msgctxt "icu:KeyTransparencyErrorDialog__Cancel"
+msgid "No thanks"
+msgstr "No, gràcies."
+
 msgctxt "icu:KeyTransparencyOnboardingDialog__Title"
 msgid "Signal can now auto-verify encryption"
 msgstr "Ara, Signal pot verificar automàticament la codificació"
@@ -5223,6 +5227,62 @@ msgctxt "icu:unmute"
 msgid "Unmute"
 msgstr "No silenciats"
 
+msgctxt "icu:MuteMenu__label"
+msgid "Mute this chat for…"
+msgstr "Silencia aquest xat durant…"
+
+msgctxt "icu:MuteMenu__labelChatFolder"
+msgid "Mute these chats for…"
+msgstr "Silencia aquests xats durant…"
+
+msgctxt "icu:MuteMenu__hour"
+msgid "1 hour"
+msgstr "1 hora"
+
+msgctxt "icu:MuteMenu__eightHours"
+msgid "8 hours"
+msgstr "8 hores"
+
+msgctxt "icu:MuteMenu__day"
+msgid "1 day"
+msgstr "1 dia"
+
+msgctxt "icu:MuteMenu__week"
+msgid "1 week"
+msgstr "1 setmana"
+
+msgctxt "icu:MuteMenu__until"
+msgid "Until…"
+msgstr "Fins…"
+
+msgctxt "icu:MuteMenu__always"
+msgid "Always"
+msgstr "Sempre"
+
+msgctxt "icu:DatePicker__popupTitle"
+msgid "Choose a date"
+msgstr "Selecciona una data"
+
+msgctxt "icu:TimePicker__popupTitle"
+msgid "Choose a time"
+msgstr "Selecciona una hora"
+
+msgctxt "icu:MuteUntilDialog__title"
+msgid "Mute this chat until…"
+msgstr "Silencia aquest xat fins…"
+
+msgctxt "icu:MuteUntilDialog__dateLabel"
+msgid "Date"
+msgstr "Data"
+
+msgctxt "icu:MuteUntilDialog__timeLabel"
+msgid "Time"
+msgstr "Hora"
+
+msgctxt "icu:MuteUntilDialog__timeZoneNote"
+msgid "All times in {timeZone}"
+msgstr "Cada hora es mostra en {timeZone}"
+
 msgctxt "icu:muteExpirationLabelAlways"
 msgid "Muted always"
 msgstr "Silenciat sempre"
@@ -7835,6 +7895,14 @@ msgctxt "icu:Preferences__message-audio-description"
 msgid "Hear a notification sound for sent and received messages while in the chat."
 msgstr "Escolta un so de notificació dels missatges enviats i rebuts mentre estiguis al xat."
 
+msgctxt "icu:Preferences__reaction-notifications-title"
+msgid "Reaction notifications"
+msgstr "Notificacions de reacció"
+
+msgctxt "icu:Preferences__reaction-notifications-description"
+msgid "Notify when someone reacts to your message"
+msgstr "Notificar quan algú reaccioni als teus missatges"
+
 msgctxt "icu:Preferences__button--donate"
 msgid "Donate to Signal"
 msgstr "Feu una donació a Signal"
@@ -7959,9 +8027,37 @@ msgctxt "icu:Preferences--advanced"
 msgid "Advanced"
 msgstr "Avançada"
 
+msgctxt "icu:Preferences--signal-pin"
+msgid "Signal PIN"
+msgstr "PIN del Signal"
+
+msgctxt "icu:Preferences--pin-reminders--header"
+msgid "PIN reminders"
+msgstr "Recordatoris del PIN"
+
+msgctxt "icu:Preferences--pin-reminders--description"
+msgid "You'll be asked less frequently over time"
+msgstr "Amb el temps se us demanarà amb menys freqüència"
+
 msgctxt "icu:Preferences--notification-content"
 msgid "Notification content"
 msgstr "Contingut de les notificacions"
+
+msgctxt "icu:Preferences__Chats__TextInputSection__Title"
+msgid "Text input"
+msgstr "Entrada de text"
+
+msgctxt "icu:Preferences__Chats__ChatFoldersSection__Title"
+msgid "Chat folders"
+msgstr "Carpetes de xats"
+
+msgctxt "icu:Preferences__Notifications__SoundsSection__Title"
+msgid "Sounds"
+msgstr "Sons"
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__Title"
+msgid "App badge"
+msgstr "Insígnia de l'app"
 
 msgctxt "icu:PlaintextExport--PreferencesRow--Header"
 msgid "Export chat history"
@@ -8779,6 +8875,10 @@ msgctxt "icu:Preferences--typing-indicators--description"
 msgid "If disabled, you won't see typing indicators from others."
 msgstr "Si desactives aquesta opció, no podràs veure els indicadors de tecleig dels altres."
 
+msgctxt "icu:Preferences--messaging-help"
+msgid "See and share when message are being read and typed. If disabled, you won’t see read receipts or typing indicators from others."
+msgstr "Veure i compartir quan s'escriuen i es llegeixen els missatges. Si ho desactives, no veuràs confirmacions de lectura ni indicacions d'escriptura d'altres persones."
+
 msgctxt "icu:Preferences--updates"
 msgid "Updates"
 msgstr "Actualitzacions"
@@ -8916,7 +9016,7 @@ msgid "Update Required"
 msgstr "Actualització necessària"
 
 msgctxt "icu:InstallScreenUpdateDialog--update-required__body"
-msgid "To complete syncing your messages, update Signal desktop now."
+msgid "To continue, update Signal Desktop."
 msgstr "Per completar la sincronització dels missatges, actualitza ara Signal Desktop."
 
 msgctxt "icu:InstallScreenUpdateDialog--update-required__action-update"
@@ -10487,16 +10587,56 @@ msgctxt "icu:UsernameMegaphone__dismiss"
 msgid "Dismiss"
 msgstr "Descarta"
 
+msgctxt "icu:PinReminderMegaphone__title"
+msgid "Verify your Signal PIN"
+msgstr "Verifiqueu el PIN del Signal"
+
+msgctxt "icu:PinReminderMegaphone__body"
+msgid "We’ll occasionally ask you to verify your PIN so that you remember it."
+msgstr "De tant en tant us demanarem de verificar el PIN perquè el recordeu."
+
+msgctxt "icu:PinReminderMegaphone__verify"
+msgid "Verify"
+msgstr "Verificació"
+
+msgctxt "icu:PinReminderMegaphone__not-now"
+msgid "Not now"
+msgstr "Ara no"
+
+msgctxt "icu:PinReminderModal__title"
+msgid "Enter your Signal PIN"
+msgstr "Marqueu el PIN del Signal"
+
+msgctxt "icu:PinReminderModal__body"
+msgid "To help you memorize your PIN, we’ll ask you to enter it periodically. We’ll ask less over time."
+msgstr "Per ajudar-vos a recordar el PIN, us el demanarem periòdicament. Amb el temps, ho farem menys."
+
+msgctxt "icu:PinReminderModal__pin-input-placeholder"
+msgid "Enter your PIN"
+msgstr "Marqueu el PIN"
+
+msgctxt "icu:PinReminderModal__pin-input-error"
+msgid "Incorrect PIN. Try again"
+msgstr "PIN incorrecte. Torna a provar-ho"
+
+msgctxt "icu:PinReminderModal__confirm"
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgctxt "icu:PinReminderCompletedToast"
+msgid "PIN correct. We’ll remind you again later."
+msgstr "PIN correcte. T'ho recordarem més tard."
+
 msgctxt "icu:UnsupportedOSWarningDialog__body"
-msgid "Signal desktop will no longer support your computer’s version of {OS} soon. To keep using Signal, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>"
+msgid "Signal Desktop will no longer support your computer’s version of {OS} soon. To keep using Signal, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>"
 msgstr "Signal per a Escriptori aviat deixarà de ser compatible amb la versió de {OS} del teu ordinador. Per continuar utilitzant Signal, actualitza el sistema operatiu de l'ordinador abans de {expirationDate}. <learnMoreLink>Més informació</learnMoreLink>"
 
 msgctxt "icu:UnsupportedOSErrorDialog__body"
-msgid "Signal desktop no longer works on this computer. To use Signal desktop again, update your computer’s version of {OS}. <learnMoreLink>Learn more</learnMoreLink>"
+msgid "Signal Desktop no longer works on this computer. To use Signal Desktop again, update your computer’s version of {OS}. <learnMoreLink>Learn more</learnMoreLink>"
 msgstr "Signal per a Escriptori ja no funciona en aquest ordinador. Per tornar a utilitzar Signal per a Escriptori, actualitza la versió de l'ordinador de {OS}. <learnMoreLink>Més informació</learnMoreLink>"
 
 msgctxt "icu:UnsupportedOSErrorToast"
-msgid "Signal desktop no longer works on this computer. To use Signal desktop again, update your computer’s version of {OS}."
+msgid "Signal Desktop no longer works on this computer. To use Signal Desktop again, update your computer’s version of {OS}."
 msgstr "Signal per a Escriptori ja no funciona en aquest ordinador. Per tornar a utilitzar Signal per a Escriptori, actualitza la versió de l'ordinador de {OS}."
 
 msgctxt "icu:MessageMetadata__edited"
@@ -11466,3 +11606,7 @@ msgstr "Hem fet que sigui més fàcil buscar membres del grup a la pàgina d'aju
 msgctxt "icu:WhatsNew__8.25--0"
 msgid "We added two new zoom levels in the appearance settings, so even with very little effort you can still give your messages 110% (or 90%)."
 msgstr "Hem afegit dos nous nivells de zoom als ajustos d'aparença (110% i 90%)."
+
+msgctxt "icu:WhatsNew__8.26--0"
+msgid "Finding yourself can be a lifelong process, but now you'll appear as “You” in the group member search to make it a little easier."
+msgstr "Millores a la cerca de membres del grup."
