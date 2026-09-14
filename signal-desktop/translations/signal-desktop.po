@@ -91,6 +91,22 @@ msgctxt "icu:Preferences__DonateTitle"
 msgid "Donate to Signal"
 msgstr "Feu una donació a Signal"
 
+msgctxt "icu:LinkedDevicesOnboardingDialog__description"
+msgid "<bold>Linked Devices</bold> let you access your Signal account and messages securely on any of your additional devices."
+msgstr "<bold>Dispositius connectats</bold> et permet accedir de forma segura al teu compte i als teus missatges de Signal des de qualsevol dels teus dispositius addicionals."
+
+msgctxt "icu:LinkedDevicesOnboardingDialog__bullet--1"
+msgid "You can link a desktop, tablet or additional phone."
+msgstr "Pots vincular un ordinador, una tablet o un altre telèfon."
+
+msgctxt "icu:LinkedDevicesOnboardingDialog__bullet--2"
+msgid "Your primary device manages what’s linked, you can link up to 5 devices."
+msgstr "El teu dispositiu principal gestiona què està vinculat, i pots connectar fins a 5 dispositius."
+
+msgctxt "icu:LinkedDevicesOnboardingDialog__bullet--3"
+msgid "Account settings are managed on your primary device only, including account settings and backups."
+msgstr "Els ajustos del compte només es poden editar des del teu dispositiu principal, com els ajustos del compte i les còpies de seguretat."
+
 msgctxt "icu:sentMediaQualityStandard"
 msgid "Standard"
 msgstr "Estàndard"
@@ -827,13 +843,25 @@ msgctxt "icu:KeyTransparencyErrorDialog__Title"
 msgid "Automatic Key Verification is currently unavailable for your device. Submit debug log?"
 msgstr "Actualment, la verificació automàtica de claus no està disponible al teu dispositiu. Vols enviar un registre de depuració?"
 
+msgctxt "icu:KeyTransparencyErrorDialog__Title-v2"
+msgid "Automatic Key Verification is currently unavailable for your device. Submit a report to help us improve?"
+msgstr "Actualment, la verificació automàtica de claus no està disponible al teu dispositiu. Vols enviar-nos un informe per ajudar-nos a millorar?"
+
 msgctxt "icu:KeyTransparencyErrorDialog__Description"
 msgid "Debug logs helps us diagnose and fix the issue, and do not contain identifying information."
 msgstr "Els registres de depuració ens ajuden a diagnosticar i solucionar el problema i no contenen informació que pugui identificar-te."
 
+msgctxt "icu:KeyTransparencyErrorDialog__Description-v2"
+msgid "Including your debug logs help us diagnose and fix the issue, and do not contain identifying information. Sharing is optional."
+msgstr "Incloure els teus registres de depuració ens ajuda a diagnosticar i solucionar el problema i no contenen informació que pugui identificar-te. Compartir-los és opcional."
+
 msgctxt "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label"
 msgid "Share debug log"
 msgstr "Compartir registre de depuració"
+
+msgctxt "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label-v2"
+msgid "Include debug log"
+msgstr "Inclou-hi el registre de depuració."
 
 msgctxt "icu:KeyTransparencyErrorDialog__ShareDebugLog__ViewButton"
 msgid "View"
@@ -970,14 +998,6 @@ msgstr "Només pots seleccionar un fitxer a la vegada."
 msgctxt "icu:maximumAttachments"
 msgid "You cannot add any more attachments to this message."
 msgstr "No podeu afegir cap altre adjunt a aquest missatge."
-
-msgctxt "icu:fileSizeWarning"
-msgid "Sorry, the selected file exceeds message size restrictions. {limit, number}{units}"
-msgstr "Perdoneu, el fitxer seleccionat excedeix les restriccions de mida dels missatges. {limit,number} {units}"
-
-msgctxt "icu:videoFileSizeWarning"
-msgid "Sorry, the selected video file exceeds message size restrictions. {limit, number}{units}"
-msgstr "Vaja, el vídeo seleccionat excedeix les restriccions de mida dels missatges. {limit,number}{units}"
 
 msgctxt "icu:fileTooLargeWarning"
 msgid "Can’t send this file because it’s too large. You can send files up to {limit, number}{units}."
@@ -5083,22 +5103,6 @@ msgctxt "icu:calling__preview--minimize"
 msgid "Minimize preview"
 msgstr "Minimitzar vista prèvia"
 
-msgctxt "icu:calling__change-view"
-msgid "Change view"
-msgstr "Canviar la vista"
-
-msgctxt "icu:calling__view_mode--paginated"
-msgid "Grid view"
-msgstr "Vista de graella"
-
-msgctxt "icu:calling__view_mode--overflow"
-msgid "Sidebar view"
-msgstr "Vista de la barra lateral"
-
-msgctxt "icu:calling__view_mode--speaker"
-msgid "Speaker view"
-msgstr "Vista de l'orador"
-
 msgctxt "icu:calling__view_mode--updated"
 msgid "View updated"
 msgstr "Vista actualitzada"
@@ -5117,7 +5121,7 @@ msgstr "Barra lateral"
 
 msgctxt "icu:calling__layout--speaker"
 msgid "Speaker"
-msgstr "Altaveu"
+msgstr "Orador"
 
 msgctxt "icu:calling__SelectPresentingSourcesModal--title"
 msgid "Share your screen"
@@ -6803,6 +6807,86 @@ msgctxt "icu:EditNicknameAndNoteModal__Note__Placeholder"
 msgid "Note"
 msgstr "Nota"
 
+msgctxt "icu:WhileMuted__title"
+msgid "While muted"
+msgstr "Mentre està silenciat"
+
+msgctxt "icu:WhileMuted__description"
+msgid "Choose notifications to show while this chat is muted."
+msgstr "Selecciona quines notificacions vols veure mentre aquest xat estigui silenciat."
+
+msgctxt "icu:WhileMuted__calls__title"
+msgid "Calls"
+msgstr "Trucades"
+
+msgctxt "icu:WhileMuted__calls__description"
+msgid "Ring or notify when a call is started while this chat is muted."
+msgstr "Sonar o notificar quan s'iniciï una trucada mentre aquest xat estigui silenciat."
+
+msgctxt "icu:WhileMuted__mentions__title"
+msgid "Mentions"
+msgstr "Mencions"
+
+msgctxt "icu:WhileMuted__mentions__description"
+msgid "Notify when you are @mentioned while this chat is muted."
+msgstr "Notificar quan se't @mencioni mentre aquest xat estigui silenciat."
+
+msgctxt "icu:WhileMuted__replies__title"
+msgid "Replies"
+msgstr "Respostes"
+
+msgctxt "icu:WhileMuted__replies__description"
+msgid "Notify when someone replies to your message while this chat is muted."
+msgstr "Notificar quan algú respongui als teus missatges mentre aquest xat estigui silenciat."
+
+msgctxt "icu:WhileMuted__value--none"
+msgid "None"
+msgstr "Cap"
+
+msgctxt "icu:WhileMuted__value--calls"
+msgid "Calls"
+msgstr "Trucades"
+
+msgctxt "icu:WhileMuted__value--mentions"
+msgid "Mentions"
+msgstr "Mencions"
+
+msgctxt "icu:WhileMuted__value--replies"
+msgid "Replies"
+msgstr "Respostes"
+
+msgctxt "icu:WhileMuted__value--calls-mentions"
+msgid "Calls, mentions"
+msgstr "Trucades, mencions"
+
+msgctxt "icu:WhileMuted__value--calls-replies"
+msgid "Calls, replies"
+msgstr "Trucades, respostes"
+
+msgctxt "icu:WhileMuted__value--mentions-replies"
+msgid "Mentions, replies"
+msgstr "Mencions, respostes"
+
+msgctxt "icu:WhileMuted__value--calls-mentions-replies"
+msgid "Calls, mentions, replies"
+msgstr "Trucades, mencions, respostes"
+
+msgctxt "icu:Preferences__WhileMuted__description"
+msgid "Choose notifications to show for muted chats."
+msgstr "Selecciona quines notificacions vols veure pels xats silenciats."
+
+msgctxt "icu:Preferences__WhileMuted__calls__description"
+msgid "Ring or notify when a call is started in muted chats."
+msgstr "Sonar o notificar quan s'iniciï una trucada en xats silenciats."
+
+msgctxt "icu:Preferences__WhileMuted__mentions__description"
+msgid "Notify when you are mentioned in muted chats."
+msgstr "Notificar quan se't mencioni en xats silenciats."
+
+msgctxt "icu:Preferences__WhileMuted__replies__description"
+msgid "Notify when someone replies to your message in muted chats."
+msgstr "Notificar quan algú respongui als teus missatges en xats silenciats."
+
 msgctxt "icu:ConversationNotificationsSettings__mentions__label"
 msgid "Mentions"
 msgstr "Mencions"
@@ -7278,6 +7362,10 @@ msgstr "Per a ajudar a prevenir el correu brossa al Signal, completeu la verific
 msgctxt "icu:CaptchaDialog__second-paragraph"
 msgid "After verifying, you can continue messaging. Any paused messages will automatically be sent."
 msgstr "Després de verificar-ho, podeu continuar enviant missatges. Qualsevol missatge interromput s'enviarà automàticament."
+
+msgctxt "icu:CaptchaDialog__continue"
+msgid "Continue"
+msgstr "Continua"
 
 msgctxt "icu:CaptchaDialog--can-close__title"
 msgid "Continue without verifying?"
@@ -7903,6 +7991,10 @@ msgctxt "icu:Preferences__reaction-notifications-description"
 msgid "Notify when someone reacts to your message"
 msgstr "Notificar quan algú reaccioni als teus missatges"
 
+msgctxt "icu:Preferences__button--account"
+msgid "Account"
+msgstr "Compte"
+
 msgctxt "icu:Preferences__button--donate"
 msgid "Donate to Signal"
 msgstr "Feu una donació a Signal"
@@ -7987,6 +8079,50 @@ msgctxt "icu:Preferences--system"
 msgid "System"
 msgstr "Sistema"
 
+msgctxt "icu:Preferences--signal-login-description"
+msgid "Your Signal Login is used to recover and restore your account. Keep these keys stored safely in a password manager you trust. <learnMoreLink>Learn more</learnMoreLink>."
+msgstr "El teu Signal Login serveix per recuperar i restaurar el teu compte. Guarda aquestes claus de forma segura en un gestor de contrasenyes de confiança. <learnMoreLink>Més informació</learnMoreLink>."
+
+msgctxt "icu:Preferences--signal-login-description--learn-more"
+msgid "Learn more"
+msgstr "Més informació"
+
+msgctxt "icu:Preferences__SignalAccount__label"
+msgid "Account & Recovery"
+msgstr "Compte i recuperació"
+
+msgctxt "icu:Preferences__SignalAccount__description"
+msgid "2 keys"
+msgstr "2 claus"
+
+msgctxt "icu:Preferences__SignalAccountKeys__Title"
+msgid "Your Signal Login"
+msgstr "El teu Signal Login"
+
+msgctxt "icu:Preferences__SignalAccountKeys__AccountKey"
+msgid "Account key"
+msgstr "Clau del compte"
+
+msgctxt "icu:Preferences__SignalAccountKeys__AccountID"
+msgid "Account ID"
+msgstr "ID del compte"
+
+msgctxt "icu:Preferences__SignalAccountKeys__RecoveryKey"
+msgid "Recovery key"
+msgstr "Clau de recuperació"
+
+msgctxt "icu:Preferences__SignalAccountKeys__Save"
+msgid "Save"
+msgstr "Desa"
+
+msgctxt "icu:Preferences__Account__LinkedDevice__label"
+msgid "This is a linked device"
+msgstr "Aquest és un dispositiu vinculat"
+
+msgctxt "icu:Preferences__Account__LinkedDevice__description"
+msgid "To manage your account settings, open Signal on your primary device."
+msgstr "Per gestionar els ajustos del teu compte, obre Signal al teu dispositiu principal."
+
 msgctxt "icu:Preferences--zoom"
 msgid "Zoom level"
 msgstr "Nivell de l'ampliació"
@@ -8027,6 +8163,14 @@ msgctxt "icu:Preferences--advanced"
 msgid "Advanced"
 msgstr "Avançada"
 
+msgctxt "icu:Preferences--change-signal-pin"
+msgid "Change your PIN"
+msgstr "Canvieu el PIN"
+
+msgctxt "icu:Preferences--change-signal-pin-button"
+msgid "Change"
+msgstr "Canviar"
+
 msgctxt "icu:Preferences--signal-pin"
 msgid "Signal PIN"
 msgstr "PIN del Signal"
@@ -8051,6 +8195,10 @@ msgctxt "icu:Preferences__Chats__ChatFoldersSection__Title"
 msgid "Chat folders"
 msgstr "Carpetes de xats"
 
+msgctxt "icu:Preferences__Notifications__Show__Label"
+msgid "Show"
+msgstr "Mostra"
+
 msgctxt "icu:Preferences__Notifications__SoundsSection__Title"
 msgid "Sounds"
 msgstr "Sons"
@@ -8058,6 +8206,38 @@ msgstr "Sons"
 msgctxt "icu:Preferences__Notifications__AppBadgeSection__Title"
 msgid "App badge"
 msgstr "Insígnia de l'app"
+
+msgctxt "icu:Preferences__Notifications__Reset__title"
+msgid "Reset notification settings to default, including custom settings for your chats."
+msgstr "Restablir els ajustos de notificacions a la seva configuració per defecte, inclosos els ajustos personalitzats dels teus xats."
+
+msgctxt "icu:Preferences__Notifications__Reset__button"
+msgid "Reset"
+msgstr "Restableix"
+
+msgctxt "icu:Preferences__Notifications__Reset__modal--body"
+msgid "Reset all notification settings to default for all chats?"
+msgstr "Restablir tots els ajustos de notificacions a la seva configuració per defecte per a tots els xats?"
+
+msgctxt "icu:Preferences__Notifications__Reset__modal--confirm"
+msgid "Reset"
+msgstr "Restableix"
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__BadgeCount__Label"
+msgid "Badge count"
+msgstr "Recompte d'insígnies"
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__BadgeCount__Description"
+msgid "Select if the badge count displays the number of unread messages or the number of unread chats"
+msgstr "Selecciona si el comptador mostra el nombre de missatges per llegir o el nombre de xats sense llegir."
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__BadgeCount__UnreadMessages"
+msgid "Unread messages"
+msgstr "Missatges per llegir"
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__BadgeCount__UnreadChats"
+msgid "Unread chats"
+msgstr "Xats sense llegir"
 
 msgctxt "icu:PlaintextExport--PreferencesRow--Header"
 msgid "Export chat history"
@@ -9015,9 +9195,9 @@ msgctxt "icu:InstallScreenUpdateDialog--update-required__title"
 msgid "Update Required"
 msgstr "Actualització necessària"
 
-msgctxt "icu:InstallScreenUpdateDialog--update-required__body"
-msgid "To continue, update Signal Desktop."
-msgstr "Per completar la sincronització dels missatges, actualitza ara Signal Desktop."
+msgctxt "icu:InstallScreenUpdateDialog--download-progress"
+msgid "Downloading {currentBytes} of {totalBytes} ({percentage, number, percent})..."
+msgstr "Descarregant {currentBytes} de {totalBytes} ({percentage,number,percent})…"
 
 msgctxt "icu:InstallScreenUpdateDialog--update-required__action-update"
 msgid "Update"
@@ -10627,6 +10807,34 @@ msgctxt "icu:PinReminderCompletedToast"
 msgid "PIN correct. We’ll remind you again later."
 msgstr "PIN correcte. T'ho recordarem més tard."
 
+msgctxt "icu:PinChangeModal__body--create"
+msgid "You can change your PIN as long as this device is registered. <learnMoreLink>Learn more</learnMoreLink>"
+msgstr "Podeu canviar el PIN sempre que aquest dispositiu estigui registrat. <learnMoreLink>Més informació</learnMoreLink>"
+
+msgctxt "icu:PinChangeModal__title--confirm"
+msgid "Confirm your Signal PIN"
+msgstr "Confirmeu el PIN del Signal"
+
+msgctxt "icu:PinChangeModal__body--confirm"
+msgid "Enter the PIN you just created."
+msgstr "Marqueu el PIN que heu creat."
+
+msgctxt "icu:PinChangeModal__pin-input-placeholder--confirm"
+msgid "Confirm PIN"
+msgstr "Confirmeu-lo"
+
+msgctxt "icu:PinChangeModal__cancel"
+msgid "Cancel"
+msgstr "Cancel·la"
+
+msgctxt "icu:PinChangeModal__continue"
+msgid "Continue"
+msgstr "Continua"
+
+msgctxt "icu:PinChangeModal__confirm"
+msgid "Confirm"
+msgstr "Confirmar"
+
 msgctxt "icu:UnsupportedOSWarningDialog__body"
 msgid "Signal Desktop will no longer support your computer’s version of {OS} soon. To keep using Signal, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>"
 msgstr "Signal per a Escriptori aviat deixarà de ser compatible amb la versió de {OS} del teu ordinador. Per continuar utilitzant Signal, actualitza el sistema operatiu de l'ordinador abans de {expirationDate}. <learnMoreLink>Més informació</learnMoreLink>"
@@ -11610,3 +11818,7 @@ msgstr "Hem afegit dos nous nivells de zoom als ajustos d'aparença (110% i 90%)
 msgctxt "icu:WhatsNew__8.26--0"
 msgid "Finding yourself can be a lifelong process, but now you'll appear as “You” in the group member search to make it a little easier."
 msgstr "Millores a la cerca de membres del grup."
+
+msgctxt "icu:WhatsNew__8.27--0"
+msgid "This update introduces more granular settings to give you significantly more control over your Signal notifications. Now you can choose what appears on the app badge, adjust notification preferences for muted threads, and more! We also added a convenient button to restore the default notification settings if you ever make so many changes that you don't even know how to get ahold of yourself anymore."
+msgstr "Millores als ajustos de les notificacions, amb més opcions per com i quan vols veure notificacions."
