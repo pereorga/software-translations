@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-17 08:32+0000\n"
+"POT-Creation-Date: 2026-09-14 14:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3612,16 +3612,14 @@ msgstr "{1} recursos importats."
 msgid "Skipped {1} assets. See console for details."
 msgstr "{1} recursos omesos. Detalls a la consola."
 
-#: .import/block-icons-cannot-be-imported
-msgid "Block icons can't be imported. Manually import it at the block: {1}"
-msgstr ""
-"Les icones de blocs no es poden importar. Importeu-les manualment al bloc "
-"{1}."
-
 #: .import/cannot-import-block-into-non-block-entity
 msgid ""
 "Can't import block into a non-block entity. Please import block elsewhere."
 msgstr "No es pot importar un bloc en una entitat que no és bloc."
+
+#: .import/copying-assets
+msgid "Copying assets"
+msgstr ""
 
 #: .import/db-edn-desc
 msgid "Import a DB graph's EDN export into a new DB graph"
@@ -3662,6 +3660,10 @@ msgstr "Importar una carpeta de graf Logseq basat en fitxers a un graf DB nou"
 #: .import/file-to-db-title
 msgid "File to DB graph"
 msgstr "Fitxer a graf DB"
+
+#: .import/finishing
+msgid "Finishing graph import"
+msgstr ""
 
 #: .import/graph-name-conflict
 msgid ""
@@ -3720,12 +3722,6 @@ msgstr ""
 "{1} fitxers Org importats com a Markdown. El suport a fitxers Org s'afegirà "
 "més endavant."
 
-#: .import/page-icons-cannot-be-imported
-msgid "Page icons can't be imported. Go to the page {1} to manually import it."
-msgstr ""
-"Les icones de pàgines no es poden importar. Importeu-les manualment a la "
-"pàgina {1}."
-
 #: .import/properties-case-insensitive-commas
 msgid "Properties are case insensitive and separated by commas"
 msgstr "Noms de propietats (sense distinció de majúscules, separats per comes)"
@@ -3734,17 +3730,9 @@ msgstr "Noms de propietats (sense distinció de majúscules, separats per comes)
 msgid "e.g. type"
 msgstr "ex. type"
 
-#: .import/property-import-manually
-msgid "Property should be imported manually"
-msgstr "Aquesta propietat s'ha d'importar manualment"
-
 #: .import/property-parent-classes-placeholder
 msgid "e.g. parent"
 msgstr "ex. parent"
-
-#: .import/property-type-mismatch
-msgid "Property value has type {1} instead of type {2}"
-msgstr "El valor de la propietat és de tipus {1}, no {2}"
 
 #: .import/property-value-tag-parents
 msgid "Import tag parents from property values"
@@ -3798,6 +3786,10 @@ msgstr "Importar"
 #: .import/unexpected-error
 msgid "Unexpected error: {1}"
 msgstr "Error inesperat: {1}"
+
+#: .import/validating-graph
+msgid "Validating graph"
+msgstr ""
 
 #: .import/zip-import-error
 msgid "Zip import failed: {1}"
