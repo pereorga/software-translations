@@ -6,9 +6,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: \n"
+"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
 "POT-Creation-Date: 2026-09-01 10:05-0600\n"
-"PO-Revision-Date: 2026-07-19 11:01+0000\n"
+"PO-Revision-Date: 2026-09-12 20:51+0000\n"
 "Last-Translator: Jaime Muñoz Martín <jmmartin_5@outlook.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
 "ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2026.8.dev0\n"
+"X-Generator: Weblate 2026.10.dev0\n"
 "X-Launchpad-Export-Date: 2022-01-23 20:20+0000\n"
 
 msgid "Media player"
@@ -378,26 +378,20 @@ msgstr "Suprimeix els fitxers obsolets"
 msgid "Package lists"
 msgstr "Llistes de paquets"
 
-#, fuzzy
-#| msgid "Desktop environment"
 msgid "Development environment"
-msgstr "Entorn d'escriptori"
+msgstr "Entorn de desenvolupament"
 
 msgid "Gradle cache"
-msgstr ""
+msgstr "Memòria cau del Gradle"
 
-#, fuzzy
-#| msgid "Delete downloaded podcasts"
 msgid "Delete downloaded dependencies and build artifacts"
-msgstr "Suprimeix els podcasts baixats"
+msgstr "Suprimeix les dependències i els artefactes de compilació baixats"
 
 msgid "Dependencies will need to be downloaded on the next build."
-msgstr ""
+msgstr "Les dependències s'hauran de baixar en la següent compilació."
 
-#, fuzzy
-#| msgid "DNS cache"
 msgid "IDE cache"
-msgstr "Memòria cau DNS"
+msgstr "Memòria cau de l'IDE"
 
 #. Cleaner description for vim, VS Code, etc.
 msgid "Editor"
@@ -994,10 +988,10 @@ msgstr "S'ignora el netejador perquè per tothom hi té accés d'escriptura: %s"
 #. TRANSLATORS: Warning printed to the log. %s expands to the
 #. path of the XML cleaner file whose directory is world
 #. writable.
-#, fuzzy, python-format
-#| msgid "Ignoring cleaner because it is world writable: %s"
+#, python-format
 msgid "Ignoring cleaner because its directory is world writable: %s"
-msgstr "S'ignora el netejador perquè per tothom hi té accés d'escriptura: %s"
+msgstr ""
+"S'ignora el netejador perquè el seu directori és d'escriptura universal: %s"
 
 #. TRANSLATORS: Error message printed to the log.
 #. %s expands to the path of the XML cleaner file
@@ -2494,10 +2488,8 @@ msgid "Path to wipe must be an existing directory: %s"
 msgstr "El camí per a la neteja ha de ser una carpeta existent: %s"
 
 #. TRANSLATORS: Status message while wiping a drive's empty space.
-#, fuzzy
-#| msgid "Creating new, temporary file for wiping free space."
 msgid "Creating new, temporary file for wiping empty space."
-msgstr "S'està creant un fitxer temporal nou per netejar l'espai lliure."
+msgstr "S'està creant un fitxer temporal nou per netejar l'espai buit."
 
 #, python-format
 msgid "Error #%d when flushing the file buffer."
@@ -2563,7 +2555,7 @@ msgstr "Accés denegat: %s"
 
 #, python-format
 msgid "Database is locked: %s"
-msgstr ""
+msgstr "La base de dades està bloquejada: %s"
 
 #, python-brace-format
 msgid "Error: {operation_option}: {command}"
