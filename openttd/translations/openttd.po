@@ -13707,17 +13707,9 @@ msgctxt "STR_VEHICLE_INFO_BUILT_VALUE"
 msgid "{LTBLUE}{ENGINE} {BLACK}Built: {LTBLUE}{NUM}{BLACK} Value: {LTBLUE}{CURRENCY_LONG}"
 msgstr "{LTBLUE}{ENGINE} {BLACK}Fabricat: {LTBLUE}{NUM}{BLACK} Valor: {LTBLUE}{CURRENCY_LONG}"
 
-msgctxt "STR_VEHICLE_INFO_NO_CAPACITY"
-msgid "{BLACK}Capacity: {LTBLUE}None{STRING}"
-msgstr "{BLACK}Capacitat: {LTBLUE}Cap{STRING}"
-
 msgctxt "STR_VEHICLE_INFO_CAPACITY"
 msgid "{BLACK}Capacity: {LTBLUE}{CARGO_LONG}{STRING}"
 msgstr "{BLACK}Capacitat: {LTBLUE}{CARGO_LONG}{STRING}"
-
-msgctxt "STR_VEHICLE_INFO_CAPACITY_MULT"
-msgid "{BLACK}Capacity: {LTBLUE}{CARGO_LONG}{STRING} (x{NUM})"
-msgstr "{BLACK}Capacitat: {LTBLUE}{CARGO_LONG}{STRING} (x{NUM})"
 
 msgctxt "STR_VEHICLE_INFO_CAPACITY_CAPACITY"
 msgid "{BLACK}Capacity: {LTBLUE}{CARGO_LONG}, {CARGO_LONG}{STRING}"
@@ -13815,9 +13807,21 @@ msgctxt "STR_VEHICLE_DETAILS_TRAIN_WAGON_VALUE"
 msgid "{LTBLUE}{ENGINE}{BLACK}   Value: {LTBLUE}{CURRENCY_LONG}"
 msgstr "{LTBLUE}{ENGINE}{BLACK}   Valor: {LTBLUE}{CURRENCY_LONG}"
 
+msgctxt "STR_VEHICLE_DETAILS_TRAIN_LENGTH"
+msgid "{BLACK}Train length: {LTBLUE}{DECIMAL} tile{P \"\" s}"
+msgstr "{BLACK}Llargada del tren: {LTBLUE}{DECIMAL} casell{P a es}"
+
 msgctxt "STR_VEHICLE_DETAILS_TRAIN_TOTAL_CAPACITY_TEXT"
-msgid "{BLACK}Total cargo capacity of this train:"
-msgstr "{BLACK}Càrrega total (capacitat) d'aquest tren:"
+msgid "{BLACK}Total cargo of this train:"
+msgstr "{BLACK}Càrrega total d'aquest tren:"
+
+msgctxt "STR_VEHICLE_DETAILS_TRAIN_CARGO_EMPTY"
+msgid "{LTBLUE}Empty ({CARGO_LONG}){STRING}"
+msgstr "{LTBLUE}Buit ({CARGO_LONG}){STRING}"
+
+msgctxt "STR_VEHICLE_DETAILS_TRAIN_CARGO_FROM"
+msgid "{LTBLUE}{CARGO_LONG} ({CARGO_SHORT}) from {STATION}{STRING}"
+msgstr "{LTBLUE}{CARGO_LONG} ({CARGO_SHORT}) des de {STATION}{STRING}"
 
 msgctxt "STR_VEHICLE_DETAILS_CARGO_EMPTY"
 msgid "{LTBLUE}Empty"
@@ -13826,10 +13830,6 @@ msgstr "{LTBLUE}Buit"
 msgctxt "STR_VEHICLE_DETAILS_CARGO_FROM"
 msgid "{LTBLUE}{CARGO_LONG} from {STATION}"
 msgstr "{LTBLUE}{CARGO_LONG} procedent{P \"\" s} de {STATION}"
-
-msgctxt "STR_VEHICLE_DETAILS_CARGO_FROM_MULT"
-msgid "{LTBLUE}{CARGO_LONG} from {STATION} (x{NUM})"
-msgstr "{LTBLUE}{CARGO_LONG} des de {STATION} (x{NUM})"
 
 msgctxt "STR_VEHICLE_DETAIL_TAB_CARGO"
 msgid "{BLACK}Cargo"
@@ -13847,21 +13847,9 @@ msgctxt "STR_VEHICLE_DETAILS_TRAIN_INFORMATION_TOOLTIP"
 msgid "{BLACK}Show details of train vehicles"
 msgstr "{BLACK}Mostra els detalls dels vehicles ferroviaris"
 
-msgctxt "STR_VEHICLE_DETAIL_TAB_CAPACITIES"
-msgid "{BLACK}Capacities"
-msgstr "{BLACK}Capacitats"
-
-msgctxt "STR_VEHICLE_DETAILS_TRAIN_CAPACITIES_TOOLTIP"
-msgid "{BLACK}Show capacities of each vehicle"
-msgstr "{BLACK}Mostra les capacitats de cada vehicle"
-
-msgctxt "STR_VEHICLE_DETAIL_TAB_TOTAL_CARGO"
-msgid "{BLACK}Total Cargo"
-msgstr "{BLACK}Càrrega Total"
-
-msgctxt "STR_VEHICLE_DETAILS_TRAIN_TOTAL_CARGO_TOOLTIP"
-msgid "{BLACK}Show total capacity of train, split by cargo type"
-msgstr "{BLACK}Mostra la capacitat total del tren, separada per tipus de càrrega"
+msgctxt "STR_VEHICLE_DETAILS_TRAIN_TOTALS_TOOLTIP"
+msgid "{BLACK}Show total cargo, capacity, and length of train"
+msgstr "{BLACK}Mostra la càrrega total, capacitat i llargada del tren."
 
 msgctxt "STR_VEHICLE_DETAILS_TRAIN_ARTICULATED_RV_CAPACITY"
 msgid "{BLACK}Capacity: {LTBLUE}{RAW_STRING}"
