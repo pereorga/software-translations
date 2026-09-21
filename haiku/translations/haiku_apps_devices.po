@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 14:34+0000\n"
+"POT-Creation-Date: 2026-09-21 14:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,6 +184,10 @@ msgstr "Entrada blocada:\\n"
 msgid "Quit"
 msgstr "Surt"
 
+#: DevicesView
+msgid "Filter:"
+msgstr "Filtre:"
+
 #: DeviceSCSI
 msgctxt "DeviceSCSI"
 msgid "Processor"
@@ -209,6 +213,30 @@ msgstr "Botó ACPI %1"
 #: PropertyList
 msgid "Attributes"
 msgstr "Atributs"
+
+#: DevicesView
+msgid ""
+"The driver has been disabled. A reboot is required for the change to take "
+"effect.\\n"
+"\\n"
+"After rebooting, this device may no longer appear in the device list as the "
+"system will not be able to identify it without its driver.\\n"
+"\\n"
+"To re-enable the driver, find the device in the %devices% application and "
+"click \\\"Enable driver\\\". If the device is no longer visible, remove the "
+"corresponding blocked entry from the packages settings file:\\n"
+msgstr ""
+"El controlador s'ha desactivat. Cal reiniciar el sistema perquè el canvi "
+"tingui efecte.\\n"
+"\\n"
+"Després de reiniciar, és possible que aquest dispositiu ja no aparegui a la "
+"llista de dispositius, ja que el sistema no el podrà identificar sense el "
+"seu controlador.\\n"
+"\\n"
+"Per tornar a activar el controlador, cerqueu el dispositiu a l'aplicació "
+"%devices% i feu clic a \\\"Activa el controlador\\\". Si el dispositiu ja no "
+"és visible, elimineu l'entrada blocada corresponent del fitxer de "
+"configuració dels paquets:\\n"
 
 #: DeviceSCSI
 msgid "Worm"
@@ -298,6 +326,10 @@ msgstr "Escànner"
 msgid "ACPI node '%1'"
 msgstr "Node d'ACPI %1"
 
+#: DevicesView
+msgid "Clear"
+msgstr "Neteja"
+
 #: Device
 msgctxt "Device"
 msgid "Device name"
@@ -331,6 +363,10 @@ msgstr "Controlador de xarxa sense fil"
 msgctxt "DeviceACPI"
 msgid "Device name"
 msgstr "Nom del dispositiu"
+
+#: DevicesView
+msgid "Shutdown failed with error: "
+msgstr "L'aturada ha fallat amb l'error següent:"
 
 #: DevicePCI
 msgctxt "DevicePCI"
