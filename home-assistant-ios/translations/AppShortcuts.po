@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 14:35+0000\n"
+"POT-Creation-Date: 2026-09-21 14:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,10 +25,6 @@ msgstr "${applicationName} atenua ${light}"
 msgid "${applicationName} is ${entity} on"
 msgstr "${applicationName} està encès ${entity}"
 
-#: %24%7BapplicationName%7D+lock+%24%7Bentity%7D
-msgid "${applicationName} lock ${entity}"
-msgstr "${applicationName} bloqueja ${entity}"
-
 #: %24%7BapplicationName%7D+open+%24%7Bentity%7D
 msgid "${applicationName} open ${entity}"
 msgstr "${applicationName} obre ${entity}"
@@ -36,6 +32,10 @@ msgstr "${applicationName} obre ${entity}"
 #: %24%7BapplicationName%7D+set+a+temperature
 msgid "${applicationName} set a temperature"
 msgstr "${applicationName} estableix una temperatura"
+
+#: %24%7BapplicationName%7D+show+%24%7Btarget%7D
+msgid "${applicationName} show ${target}"
+msgstr "${applicationName} mostra ${target}"
 
 #: %24%7BapplicationName%7D+turn+off+%24%7Bentity%7D
 msgid "${applicationName} turn off ${entity}"
@@ -49,6 +49,10 @@ msgstr "${applicationName} encén ${entity}"
 msgid "Check an entity in ${applicationName}"
 msgstr "Comprova una entitat a ${applicationName}"
 
+#: Close+%24%7Bentity%7D
+msgid "Close ${entity}"
+msgstr "Tanca ${entity}"
+
 #: Close+%24%7Bentity%7D+in+%24%7BapplicationName%7D
 msgid "Close ${entity} in ${applicationName}"
 msgstr "Tanca ${entity} a ${applicationName}"
@@ -56,6 +60,10 @@ msgstr "Tanca ${entity} a ${applicationName}"
 #: Close+something+in+%24%7BapplicationName%7D
 msgid "Close something in ${applicationName}"
 msgstr "Tanca alguna cosa a ${applicationName}"
+
+#: Dim+%24%7Blight%7D
+msgid "Dim ${light}"
+msgstr "Atenua ${light}"
 
 #: Dim+%24%7Blight%7D+in+%24%7BapplicationName%7D
 msgid "Dim ${light} in ${applicationName}"
@@ -65,25 +73,37 @@ msgstr "Atenua ${light} a ${applicationName}"
 msgid "Get an entity state from ${applicationName}"
 msgstr "Obtén l’estat d’una entitat de ${applicationName}"
 
+#: Is+%24%7Bentity%7D+on
+msgid "Is ${entity} on"
+msgstr "Està encès ${entity}"
+
 #: Is+%24%7Bentity%7D+on+in+%24%7BapplicationName%7D
 msgid "Is ${entity} on in ${applicationName}"
 msgstr "Està encès ${entity} a ${applicationName}"
 
-#: Lock+%24%7Bentity%7D+in+%24%7BapplicationName%7D
-msgid "Lock ${entity} in ${applicationName}"
-msgstr "Bloqueja ${entity} a ${applicationName}"
-
-#: Lock+something+in+%24%7BapplicationName%7D
-msgid "Lock something in ${applicationName}"
-msgstr "Bloqueja alguna cosa a ${applicationName}"
+#: Open+%24%7Bentity%7D
+msgid "Open ${entity}"
+msgstr "Obre ${entity}"
 
 #: Open+%24%7Bentity%7D+in+%24%7BapplicationName%7D
 msgid "Open ${entity} in ${applicationName}"
 msgstr "Obre ${entity} a ${applicationName}"
 
+#: Open+%24%7Btarget%7D+details
+msgid "Open ${target} details"
+msgstr "Obre els detalls de ${target}"
+
+#: Open+%24%7Btarget%7D+details+in+%24%7BapplicationName%7D
+msgid "Open ${target} details in ${applicationName}"
+msgstr "Obre els detalls de ${target} a ${applicationName}"
+
 #: Open+something+in+%24%7BapplicationName%7D
 msgid "Open something in ${applicationName}"
 msgstr "Obre alguna cosa a ${applicationName}"
+
+#: Set+%24%7Bentity%7D+temperature
+msgid "Set ${entity} temperature"
+msgstr "Estableix la temperatura de ${entity}"
 
 #: Set+%24%7Bentity%7D+temperature+in+%24%7BapplicationName%7D
 msgid "Set ${entity} temperature in ${applicationName}"
@@ -97,9 +117,25 @@ msgstr "Estableix una lluminositat a ${applicationName}"
 msgid "Set a temperature in ${applicationName}"
 msgstr "Estableix una temperatura a ${applicationName}"
 
+#: Show+%24%7Btarget%7D+in+%24%7BapplicationName%7D
+msgid "Show ${target} in ${applicationName}"
+msgstr "Mostra ${target} a ${applicationName}"
+
+#: Show+something+in+%24%7BapplicationName%7D
+msgid "Show something in ${applicationName}"
+msgstr "Mostra alguna cosa a ${applicationName}"
+
+#: Turn+off+%24%7Bentity%7D
+msgid "Turn off ${entity}"
+msgstr "Apaga ${entity}"
+
 #: Turn+off+%24%7Bentity%7D+in+%24%7BapplicationName%7D
 msgid "Turn off ${entity} in ${applicationName}"
 msgstr "Apaga ${entity} a ${applicationName}"
+
+#: Turn+on+%24%7Bentity%7D
+msgid "Turn on ${entity}"
+msgstr "Encén ${entity}"
 
 #: Turn+on+%24%7Bentity%7D+in+%24%7BapplicationName%7D
 msgid "Turn on ${entity} in ${applicationName}"
