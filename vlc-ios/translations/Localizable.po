@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-21 14:43+0000\n"
+"POT-Creation-Date: 2026-09-28 16:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,13 +232,58 @@ msgstr "Retard dels subtítols"
 msgid "Audio delay"
 msgstr "Retard de l'àudio"
 
+#: PLAYBACK_SPEED_THIS_VIDEO
+msgid "This video"
+msgstr ""
+
+#: PLAYBACK_SPEED_ALL_VIDEOS
+msgctxt "PLAYBACK_SPEED_ALL_VIDEOS"
+msgid "All videos"
+msgstr ""
+
+#: PLAYBACK_SPEED_THIS_TRACK
+msgid "This track"
+msgstr ""
+
+#: PLAYBACK_SPEED_ALL_TRACKS
+msgid "All tracks"
+msgstr ""
+
+#: DELAY_MS_FORMAT
+msgid "%@ ms"
+msgstr ""
+
+#: SYNC_VOICE_HEARD
+msgid "Voice heard"
+msgstr ""
+
+#: SYNC_TEXT_SEEN
+msgid "Text seen"
+msgstr ""
+
+#: SYNC_SOUND_HEARD
+msgid "Sound heard"
+msgstr ""
+
+#: SYNC_SCENE_SEEN
+msgid "Scene seen"
+msgstr ""
+
+#: SYNC_MARK_HINT
+msgid "Double-tap at the moment it happens"
+msgstr ""
+
 #: BUTTON_SLEEP_TIMER
 msgid "Sleep Timer"
 msgstr "Temporitzador"
 
-#: SLEEP_TIMER_UPDATED
-msgid "Sleep Timer Updated"
-msgstr "Actualitzat el Temporitzador"
+#: SLEEP_TIMER_STOP_AFTER_THIS_VIDEO
+msgid "Stop After This Video"
+msgstr ""
+
+#: SLEEP_TIMER_STOP_AFTER_THIS_TRACK
+msgid "Stop After This Track"
+msgstr ""
 
 #: CONTINUE_PLAYBACK
 msgid "Continue playback?"
@@ -325,10 +370,6 @@ msgctxt "BUTTON_CONTINUE"
 "BUTTON_CONTINUE"
 msgid "Continue"
 msgstr "Continua"
-
-#: BUTTON_SET
-msgid "Set"
-msgstr "Configura"
 
 #: BUTTON_RESET
 msgid "Reset"
@@ -1141,9 +1182,11 @@ msgstr "Desactivar la Reproducció remota"
 msgid "Enable Remote Playback"
 msgstr "Activar la Reproducció remota"
 
-#: CACHED_MEDIA
-msgid "Cached Media"
-msgstr "Arxius multimèdia amb cau"
+#: HTTP_UPLOAD_QR_CODE
+msgid ""
+"QR code for the server address\"; /* Accessibility label for the QR code on "
+"the Apple TV remote playback screen */\"CACHED_MEDIA\" = \"Cached Media"
+msgstr ""
 
 #: CACHED_MEDIA_LONG
 msgid ""
@@ -1284,12 +1327,10 @@ msgid "Support free and open source multimedia"
 msgstr ""
 
 #: SORT
-msgctxt "SORT"
 msgid "Sort"
 msgstr "Ordena"
 
 #: SORT_BY
-msgctxt "SORT_BY"
 msgid "Sort by"
 msgstr "Ordena per"
 
@@ -1328,6 +1369,7 @@ msgid "Genres"
 msgstr "Gèneres"
 
 #: ALL_VIDEOS
+msgctxt "ALL_VIDEOS"
 msgid "All videos"
 msgstr "Tots els vídeos"
 
@@ -1552,10 +1594,6 @@ msgstr "Selecciona i reordena els fitxers multimèdia d'aquesta vista"
 msgid "Edit"
 msgstr "Edita"
 
-#: BUTTON_EDIT_HINT
-msgid "Edit mode"
-msgstr "Mode edició"
-
 #: BUTTON_SELECT
 msgid "Select"
 msgstr "Selecciona"
@@ -1680,39 +1718,9 @@ msgstr "Opcions addicionals"
 
 #.
 #. MARK: - Sort
-#: BUTTON_SORT
-msgctxt "BUTTON_SORT"
-msgid "Sort"
-msgstr "Ordena"
-
-#: BUTTON_SORT_HINT
-msgid "Display sort action sheet"
-msgstr "Mostrar fulla d'ordenació"
-
-#: HEADER_TITLE_SORT
-msgctxt "HEADER_TITLE_SORT"
-msgid "Sort by"
-msgstr "Ordena per"
-
-#: DESCENDING_LABEL
-msgid "Descending Order"
-msgstr "Ordre descendent"
-
-#: DESCENDING_SWITCH_LABEL
-msgid "Ascending or descending order"
-msgstr "Ordre ascendent o descendent"
-
-#: DESCENDING_SWITCH_HINT
-msgid "Sort context in ascending or descending order"
-msgstr "Ordenar el context en ordre ascendent o descendent"
-
 #: GRID_LAYOUT
 msgid "Grid"
 msgstr "Graella"
-
-#: GRID_LAYOUT_HINT
-msgid "Display the items as a grid"
-msgstr "Mostra els elements com una graella"
 
 #: LIST_LAYOUT
 msgid "List"
@@ -2056,41 +2064,9 @@ msgstr "Confirmeu l'eliminació del preferit"
 msgid "Increase button"
 msgstr "Botó d'augment"
 
-#: INCREASE_PLAYBACK_SPEED
-msgid "Increase the playback speed"
-msgstr "Augmenta la velocitat de reproducció"
-
-#: INCREASE_AUDIO_DELAY
-msgid "Increase the audio delay"
-msgstr "Augmenta el retard de l'àudio"
-
-#: INCREASE_SUBTITLES_DELAY
-msgid "Increase the subtitles delay"
-msgstr "Augmenta el retard dels subtítols"
-
 #: DECREASE_BUTTON
 msgid "Decrease button"
 msgstr "Botó de disminució"
-
-#: DECREASE_PLAYBACK_SPEED
-msgid "Decrease the playback speed"
-msgstr "Disminueix la velocitat de reproducció"
-
-#: DECREASE_AUDIO_DELAY
-msgid "Decrease the audio delay"
-msgstr "Disminueix el retard de l'àudio"
-
-#: DECREASE_SUBTITLES_DELAY
-msgid "Decrease the subtitles delay"
-msgstr "Disminueix el retard dels subtítols"
-
-#: DISPLAY_PLAYBACK_SPEED_SHORTCUT
-msgid "Show playback speed shortcut"
-msgstr "Mostra la drecera de velocitat de reproducció"
-
-#: DISPLAY_PLAYBACK_SPEED_SHORTCUT_HINT
-msgid "Enable to display the playback speed shortcut"
-msgstr "Habilita per mostrar la drecera de velocitat de reproducció"
 
 #: VIDEO_FILTERS_HINT
 msgid "Select to open the video filters view"
@@ -2519,10 +2495,6 @@ msgstr "Mensual"
 msgid "%@/month"
 msgstr "%@/mes"
 
-#: DONATION_MONTHLY_VIDEOLAN
-msgid "Monthly Donation to VideoLAN"
-msgstr "Donació mensual a VideoLAN"
-
 #: DONATION_ONCE
 msgid "One-Time"
 msgstr "Una sola vegada"
@@ -2603,6 +2575,22 @@ msgstr "Disminueix la velocitat de reproducció"
 #: KEY_RESET_PLAYBACK_SPEED
 msgid "Reset playback speed"
 msgstr "Restaura la velocitat de reproducció"
+
+#: KEY_DECREASE_SUBTITLE_DELAY
+msgid "Decrease subtitle delay"
+msgstr ""
+
+#: KEY_INCREASE_SUBTITLE_DELAY
+msgid "Increase subtitle delay"
+msgstr ""
+
+#: KEY_DECREASE_AUDIO_DELAY
+msgid "Decrease audio delay"
+msgstr ""
+
+#: KEY_INCREASE_AUDIO_DELAY
+msgid "Increase audio delay"
+msgstr ""
 
 #: KEY_SEEK_TO_PERCENT
 msgid "Seek to %i%% of duration"
@@ -2797,10 +2785,6 @@ msgctxt "SYNC"
 msgid "Sync"
 msgstr "Sincronitza"
 
-#: DELAY_FORMAT
-msgid "Delay %@ s"
-msgstr "Retard %@ s"
-
 #: NO_DELAY
 msgid "No delay"
 msgstr "Sense retard"
@@ -2843,4 +2827,30 @@ msgstr ""
 
 #: RECENTS
 msgid "Recents"
+msgstr ""
+
+#.
+#.
+#. MARK: - Media library corruption
+#: MEDIALIBRARY_CORRUPTION_TITLE
+msgid "Media Library damaged"
+msgstr ""
+
+#: MEDIALIBRARY_CORRUPTION_MESSAGE
+msgid ""
+"VLC needs to rebuild its media library due to corruption. Playlists and "
+"playback positions may be lost. Send us the damaged database, which includes "
+"the names of your media and playlists, so we can find out why?"
+msgstr ""
+
+#: MEDIALIBRARY_CORRUPTION_SEND
+msgid "Send Report"
+msgstr ""
+
+#: MEDIALIBRARY_CORRUPTION_DISMISS
+msgid "Don't Send"
+msgstr ""
+
+#: MEDIALIBRARY_CORRUPTION_EMAIL_TITLE
+msgid "Damaged media library database"
 msgstr ""
