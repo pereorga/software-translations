@@ -107,6 +107,10 @@ msgctxt "icu:LinkedDevicesOnboardingDialog__bullet--3"
 msgid "Account settings are managed on your primary device only, including account settings and backups."
 msgstr "Els ajustos del compte només es poden editar des del teu dispositiu principal, com els ajustos del compte i les còpies de seguretat."
 
+msgctxt "icu:LinkedDevicesOnboardingDialog__bullet--3--1"
+msgid "Account settings and backups can only be managed on your primary device."
+msgstr "Els ajustos del compte i les còpies de seguretat només es poden administrar des del teu dispositiu principal."
+
 msgctxt "icu:sentMediaQualityStandard"
 msgid "Standard"
 msgstr "Estàndard"
@@ -1326,6 +1330,10 @@ msgstr "No es pot actualitzar."
 msgctxt "icu:mute"
 msgid "Mute"
 msgstr "Silenciats"
+
+msgctxt "icu:muted"
+msgid "Muted"
+msgstr "Silenciat"
 
 msgctxt "icu:cannotUpdateDetail-v2"
 msgid "Signal couldn't update. <retryUpdateButton>Retry update</retryUpdateButton> or visit {url} to install it manually. Then, <contactSupportLink>contact support</contactSupportLink> about this problem"
@@ -6887,6 +6895,54 @@ msgctxt "icu:Preferences__WhileMuted__replies__description"
 msgid "Notify when someone replies to your message in muted chats."
 msgstr "Notificar quan algú respongui als teus missatges en xats silenciats."
 
+msgctxt "icu:UnreadReminders__notification--messages--1"
+msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}} from {person1}."
+msgstr "{messageCount, plural, one {You have {messageCount,number} unread message from {person1}.} other {You have {messageCount,number} unread messages from {person1}.}}"
+
+msgctxt "icu:UnreadReminders__notification--messages--2"
+msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}} from {person1} and {person2}."
+msgstr "{messageCount, plural, one {You have {messageCount,number} unread message from {person1} and {person2}.} other {You have {messageCount,number} unread messages from {person1} and {person2}.}}"
+
+msgctxt "icu:UnreadReminders__notification--messages--many"
+msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}} from {person1}, {person2}, and others."
+msgstr "{messageCount, plural, one {You have {messageCount,number} unread message from {person1}, {person2}, and others.} other {You have {messageCount,number} unread messages from {person1}, {person2}, and others.}}"
+
+msgctxt "icu:UnreadReminders__notification--messages-including-mentions"
+msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}}, including {mentionSummary}."
+msgstr "{messageCount, plural, one {You have {messageCount,number} unread message, including {mentionSummary}.} other {You have {messageCount,number} unread messages, including {mentionSummary}.}}"
+
+msgctxt "icu:UnreadReminders__notification--messages-including-replies"
+msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}}, including {replySummary}."
+msgstr "{messageCount, plural, one {You have {messageCount,number} unread message, including {replySummary}.} other {You have {messageCount,number} unread messages, including {replySummary}.}}"
+
+msgctxt "icu:UnreadReminders__notification--counts--messages"
+msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}}."
+msgstr "{messageCount, plural, one {You have {messageCount,number} unread message.} other {You have {messageCount,number} unread messages.}}"
+
+msgctxt "icu:UnreadReminders__notification__mentionSummary--1"
+msgid "{mentionCount, plural, one {a mention} other {# mentions}} of you by {person1}"
+msgstr "{mentionCount, plural, one {a mention of you by {person1}} other {{mentionCount,number} mentions of you by {person1}}}"
+
+msgctxt "icu:UnreadReminders__notification__mentionSummary--2"
+msgid "{mentionCount, plural, one {# mention} other {# mentions}} of you by {person1} and {person2}"
+msgstr "{mentionCount, plural, one {{mentionCount,number} mention of you by {person1} and {person2}} other {{mentionCount,number} mentions of you by {person1} and {person2}}}"
+
+msgctxt "icu:UnreadReminders__notification__mentionSummary--many"
+msgid "{mentionCount, plural, one {# mention} other {# mentions}} of you by {person1} and others"
+msgstr "{mentionCount, plural, one {{mentionCount,number} mention of you by {person1} and others} other {{mentionCount,number} mentions of you by {person1} and others}}"
+
+msgctxt "icu:UnreadReminders__notification__replySummary--1"
+msgid "{replyCount, plural, one {a reply} other {# replies}} from {person1}"
+msgstr "{replyCount, plural, one {a reply from {person1}} other {{replyCount,number} replies from {person1}}}"
+
+msgctxt "icu:UnreadReminders__notification__replySummary--2"
+msgid "{replyCount, plural, one {# reply} other {# replies}} from {person1} and {person2}"
+msgstr "{replyCount, plural, one {{replyCount,number} reply from {person1} and {person2}} other {{replyCount,number} replies from {person1} and {person2}}}"
+
+msgctxt "icu:UnreadReminders__notification__replySummary--many"
+msgid "{replyCount, plural, one {# reply} other {# replies}} from {person1} and others"
+msgstr "{replyCount, plural, one {{replyCount,number} reply from {person1} and others} other {{replyCount,number} replies from {person1} and others}}"
+
 msgctxt "icu:ConversationNotificationsSettings__mentions__label"
 msgid "Mentions"
 msgstr "Mencions"
@@ -6978,10 +7034,6 @@ msgstr "Administrador"
 msgctxt "icu:GroupMembersSearchDialog__SearchResults__Title"
 msgid "Search Results"
 msgstr "Resultats de la cerca"
-
-msgctxt "icu:GroupMembersSearchDialog__BottomActions__AddMember"
-msgid "Add member"
-msgstr "Afegeix membre"
 
 msgctxt "icu:GroupMembersSearchDialog__BottomActions__AddMembers"
 msgid "Add members"
@@ -8099,6 +8151,10 @@ msgctxt "icu:Preferences__SignalAccountKeys__Title"
 msgid "Your Signal Login"
 msgstr "El teu Signal Login"
 
+msgctxt "icu:Preferences__SignalAccountKeys__Description"
+msgid "Store this in a safe place, your login info is required to recover your account and data. Never share it with anyone."
+msgstr "Guarda-ho en un lloc segur, la teva informació d'inici de sessió és necessària per recuperar el teu compte i les teves dades. No ho comparteixis amb ningú."
+
 msgctxt "icu:Preferences__SignalAccountKeys__AccountKey"
 msgid "Account key"
 msgstr "Clau del compte"
@@ -9195,13 +9251,29 @@ msgctxt "icu:InstallScreenUpdateDialog--update-required__title"
 msgid "Update Required"
 msgstr "Actualització necessària"
 
+msgctxt "icu:InstallScreenUpdateDialog--checking-for-updates"
+msgid "Checking for updates"
+msgstr "Buscant actualitzacions"
+
+msgctxt "icu:InstallScreenUpdateDialog--updating-signal"
+msgid "Updating Signal"
+msgstr "Actualitzant Signal"
+
 msgctxt "icu:InstallScreenUpdateDialog--download-progress"
 msgid "Downloading {currentBytes} of {totalBytes} ({percentage, number, percent})..."
 msgstr "Descarregant {currentBytes} de {totalBytes} ({percentage,number,percent})…"
 
+msgctxt "icu:InstallScreenUpdateDialog--update-required__body"
+msgid "To continue, update Signal Desktop."
+msgstr "Per continuar, actualitza Signal Desktop."
+
 msgctxt "icu:InstallScreenUpdateDialog--update-required__action-update"
 msgid "Update"
 msgstr "Actualitza-la"
+
+msgctxt "icu:InstallScreenUpdateDialog--update-required__action-update__mas"
+msgid "Go to the App Store"
+msgstr "Anar a l'App Store"
 
 msgctxt "icu:InstallScreenUpdateDialog--unsupported-os__title"
 msgid "Update Required"
@@ -10799,6 +10871,10 @@ msgctxt "icu:PinReminderModal__pin-input-error"
 msgid "Incorrect PIN. Try again"
 msgstr "PIN incorrecte. Torna a provar-ho"
 
+msgctxt "icu:PinReminderModal__forgot"
+msgid "Forgot PIN"
+msgstr "He oblidat el PIN"
+
 msgctxt "icu:PinReminderModal__confirm"
 msgid "Confirm"
 msgstr "Confirmar"
@@ -10806,6 +10882,10 @@ msgstr "Confirmar"
 msgctxt "icu:PinReminderCompletedToast"
 msgid "PIN correct. We’ll remind you again later."
 msgstr "PIN correcte. T'ho recordarem més tard."
+
+msgctxt "icu:PinChangeModal__title--create"
+msgid "Change your Signal PIN"
+msgstr "Canviar el teu PIN de Signal"
 
 msgctxt "icu:PinChangeModal__body--create"
 msgid "You can change your PIN as long as this device is registered. <learnMoreLink>Learn more</learnMoreLink>"
@@ -10818,6 +10898,10 @@ msgstr "Confirmeu el PIN del Signal"
 msgctxt "icu:PinChangeModal__body--confirm"
 msgid "Enter the PIN you just created."
 msgstr "Marqueu el PIN que heu creat."
+
+msgctxt "icu:PinChangeModal__pin-input-placeholder--create"
+msgid "Enter a new PIN"
+msgstr "Introdueix un PIN nou"
 
 msgctxt "icu:PinChangeModal__pin-input-placeholder--confirm"
 msgid "Confirm PIN"
@@ -10834,6 +10918,10 @@ msgstr "Continua"
 msgctxt "icu:PinChangeModal__confirm"
 msgid "Confirm"
 msgstr "Confirmar"
+
+msgctxt "icu:PinChangeCompletedToast"
+msgid "New PIN created."
+msgstr "S'ha creat un nou PIN."
 
 msgctxt "icu:UnsupportedOSWarningDialog__body"
 msgid "Signal Desktop will no longer support your computer’s version of {OS} soon. To keep using Signal, update your computer’s operating system by {expirationDate}. <learnMoreLink>Learn more</learnMoreLink>"
@@ -11806,10 +11894,6 @@ msgstr "Petits ajustos addicionals, correccions d'errors i un munt de plans pel 
 msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
-
-msgctxt "icu:WhatsNew__8.24--1"
-msgid "We made it easier to search for group members on the group settings page, so you can quickly figure out if your Mom already added your second cousin to the third-annual extended family reunion BBQ group."
-msgstr "Hem fet que sigui més fàcil buscar membres del grup a la pàgina d'ajustos."
 
 msgctxt "icu:WhatsNew__8.25--0"
 msgid "We added two new zoom levels in the appearance settings, so even with very little effort you can still give your messages 110% (or 90%)."
