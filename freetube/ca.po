@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-14 14:34+0000\n"
+"POT-Creation-Date: 2026-09-28 16:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2415,6 +2415,23 @@ msgstr ""
 msgid "Category Color"
 msgstr ""
 
+#: Settings-%3ESponsorBlock+Settings-%3EExcluded+Channels-%3EDisabled+Message
+msgid ""
+"Some channels were excluded using ID and weren't processed. Feature is "
+"blocked while those IDs are updating"
+msgstr ""
+
+#: Settings-%3ESponsorBlock+Settings-%3EExcluded+Channels-%3EExcluded+Channels
+msgid "Excluded Channels"
+msgstr ""
+
+#: Settings-%3ESponsorBlock+Settings-%3EExcluded+Channels-%3ETooltip
+msgid ""
+"Enter a channel ID to have SponsorBlock disabled. Sponsor segments in videos "
+"from this channel won't be skipped. The channel ID entered must be a "
+"complete match and is case sensitive."
+msgstr ""
+
 #: Settings-%3EParental+Control+Settings-%3EParental+Control+Settings
 msgid "Parental Control"
 msgstr ""
@@ -3066,6 +3083,14 @@ msgstr ""
 
 #: Video-%3EUnhide+Channel
 msgid "Show Channel"
+msgstr ""
+
+#: Video-%3EEnable+SponsorBlock+on+Channel
+msgid "Enable SponsorBlock on Channel"
+msgstr ""
+
+#: Video-%3EDisable+SponsorBlock+on+Channel
+msgid "Disable SponsorBlock on Channel"
 msgstr ""
 
 #: Video-%3EViews
@@ -3959,6 +3984,14 @@ msgstr ""
 
 #: Channel+Unhidden
 msgid "{channel} removed from channel filter"
+msgstr ""
+
+#: SponsorBlock+Disabled+on+Channel
+msgid "SponsorBlock disabled on {channel}"
+msgstr ""
+
+#: SponsorBlock+Enabled+on+Channel
+msgid "SponsorBlock enabled on {channel}"
 msgstr ""
 
 #: Trimmed+input+must+be+at+least+N+characters+long
