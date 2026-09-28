@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
-"POT-Creation-Date: 2026-09-01 10:05-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-23 20:05-0600\n"
 "PO-Revision-Date: 2026-09-12 20:51+0000\n"
 "Last-Translator: Jaime Muñoz Martín <jmmartin_5@outlook.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -494,6 +494,14 @@ msgstr "Opció de neteja que elimina els models d'IA en un navegador web"
 msgid "Delete the AI models"
 msgstr "Suprimeix els models d'IA"
 
+#, fuzzy
+#| msgid "Update to version %s"
+msgid "Old versions"
+msgstr "Actualitza a la versió %s"
+
+msgid "Delete program files from previous versions left behind by updates"
+msgstr ""
+
 #. Torrent software can block a list of IP addresses, such as those that may belong to malware or anti-piracy organizations
 msgid "Blocklists"
 msgstr "Llistes de bloqueig"
@@ -536,7 +544,7 @@ msgstr "Empaquetador de fitxers"
 msgid "Known files history"
 msgstr "Historial de fitxers coneguts"
 
-#. http://wiki.amule.org/wiki/Friend
+#. https://wiki.amule.org/wiki/Friend
 msgid "Known clients and friends"
 msgstr "Clients i amics coneguts"
 
@@ -1009,11 +1017,11 @@ msgstr "El sistema en general"
 
 #. TRANSLATORS: desktop entries are .desktop files in Linux that
 #. make up the application menu (the menu that shows BleachBit,
-#. Firefox, and others.  The .desktop files also associate file
+#. Firefox, and others).  The .desktop files also associate file
 #. types, so clicking on an .html file in Nautilus brings up
 #. Firefox.
 #. More information:
-#. http://standards.freedesktop.org/menu-spec/latest/index.html#introduction
+#. https://specifications.freedesktop.org/menu/latest/index.html#introduction
 msgid "Broken desktop files"
 msgstr "Fitxers .desktop trencats"
 
@@ -2108,6 +2116,18 @@ msgstr ""
 "No hi ha una versió oficial de BleachBit a la Microsoft Store. Obteniu la "
 "versió original a https://www.bleachbit.org, on sempre és gratuïta."
 
+#. TRANSLATORS: Startup warning on macOS when the application
+#. lacks Full Disk Access. "Full Disk Access", "System
+#. Settings", and "Privacy & Security" are names of macOS
+#. features and settings: match Apple's localization.
+msgid ""
+"BleachBit may not have Full Disk Access. Without it, macOS blocks access to "
+"some files, and some cleaners will not work.\n"
+"\n"
+"To fix this, open System Settings > Privacy & Security > Full Disk Access, "
+"turn on BleachBit, and then restart BleachBit."
+msgstr ""
+
 #. TRANSLATORS: Column header indicating whether the cleaner is active/enabled.
 #. Used in the tree view on the main screen.
 msgid "Active"
@@ -2487,6 +2507,15 @@ msgstr ""
 msgid "Path to wipe must be an existing directory: %s"
 msgstr "El camí per a la neteja ha de ser una carpeta existent: %s"
 
+#. TRANSLATORS: Warning in the log. BleachBit wipes free space by
+#. creating temporary files in the chosen folder. This folder can be
+#. changed by any user on the computer, so another user could tamper
+#. with those files. %s is the folder path.
+#, python-format
+msgid ""
+"Wiping free space here is unsafe because any user can change this folder: %s"
+msgstr ""
+
 #. TRANSLATORS: Status message while wiping a drive's empty space.
 msgid "Creating new, temporary file for wiping empty space."
 msgstr "S'està creant un fitxer temporal nou per netejar l'espai buit."
@@ -2585,7 +2614,7 @@ msgid "Please wait.  Cleaning %s."
 msgstr "Espereu.  S'està netejant el %s."
 
 #. TRANSLATORS: %d is the estimated number of minutes remaining.
-#, python-format
+#, no-python-format
 msgid "About %d minute remaining."
 msgid_plural "About %d minutes remaining."
 msgstr[0] "Queda %d minut aproximadament."
