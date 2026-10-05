@@ -111,6 +111,10 @@ msgctxt "icu:LinkedDevicesOnboardingDialog__bullet--3--1"
 msgid "Account settings and backups can only be managed on your primary device."
 msgstr "Els ajustos del compte i les còpies de seguretat només es poden administrar des del teu dispositiu principal."
 
+msgctxt "icu:LinkedDevicesOnboardingDialog__bullet--3--2"
+msgid "Account settings and Signal Secure Backups can only be managed on your primary device."
+msgstr "Els ajustos del compte i les Còpies de seguretat segures de Signal només es poden administrar des del teu dispositiu principal."
+
 msgctxt "icu:sentMediaQualityStandard"
 msgid "Standard"
 msgstr "Estàndard"
@@ -2139,10 +2143,6 @@ msgctxt "icu:Preferences__EmojiSkinToneDefaultSetting__Label"
 msgid "Emoji skin tone"
 msgstr "To de pell de l'emoji"
 
-msgctxt "icu:Preferences__ChatsPage__ChatFoldersSection__Title"
-msgid "Chat folders"
-msgstr "Carpetes de xats"
-
 msgctxt "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Title"
 msgid "Add a chat folder"
 msgstr "Afegir una carpeta de xats"
@@ -2158,14 +2158,6 @@ msgstr "Organitza els teus xats en carpetes i passa ràpidament d'una a l'altra 
 msgctxt "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Description--WithChatFolders"
 msgid "{chatFoldersCount, plural, one {# folder} other {# folders}}"
 msgstr "{chatFoldersCount, plural, one {{chatFoldersCount,number} carpeta} other {{chatFoldersCount,number} carpetes}}"
-
-msgctxt "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button"
-msgid "Set up"
-msgstr "Configurar"
-
-msgctxt "icu:Preferences__ChatsPage__ChatFoldersSection__AddChatFolderItem__Button--WithChatFolders"
-msgid "Manage"
-msgstr "Administrar"
 
 msgctxt "icu:Preferences__ChatsPage__ChatFoldersSection__ChatFolderItem__ContextMenu__EditFolder"
 msgid "Edit folder"
@@ -5215,26 +5207,6 @@ msgctxt "icu:notMuted"
 msgid "Not muted"
 msgstr "No silenciat"
 
-msgctxt "icu:muteHour"
-msgid "Mute for one hour"
-msgstr "Silencia durant una hora"
-
-msgctxt "icu:muteEightHours"
-msgid "Mute for eight hours"
-msgstr "Silencia durant 8 hores"
-
-msgctxt "icu:muteDay"
-msgid "Mute for one day"
-msgstr "Silencia durant un dia"
-
-msgctxt "icu:muteWeek"
-msgid "Mute for one week"
-msgstr "Silencia durant una setmana"
-
-msgctxt "icu:muteAlways"
-msgid "Mute always"
-msgstr "Silencia sempre"
-
 msgctxt "icu:unmute"
 msgid "Unmute"
 msgstr "No silenciats"
@@ -5242,10 +5214,6 @@ msgstr "No silenciats"
 msgctxt "icu:MuteMenu__label"
 msgid "Mute this chat for…"
 msgstr "Silencia aquest xat durant…"
-
-msgctxt "icu:MuteMenu__labelChatFolder"
-msgid "Mute these chats for…"
-msgstr "Silencia aquests xats durant…"
 
 msgctxt "icu:MuteMenu__hour"
 msgid "1 hour"
@@ -6499,10 +6467,6 @@ msgctxt "icu:showConversationDetails--direct"
 msgid "Chat settings"
 msgstr "Ajustos del xat"
 
-msgctxt "icu:ConversationDetails__unmute--title"
-msgid "Unmute this chat?"
-msgstr "Vols silenciar aquest xat?"
-
 msgctxt "icu:ConversationDetails--group-link"
 msgid "Group link"
 msgstr "Enllaç del grup"
@@ -6895,53 +6859,65 @@ msgctxt "icu:Preferences__WhileMuted__replies__description"
 msgid "Notify when someone replies to your message in muted chats."
 msgstr "Notificar quan algú respongui als teus missatges en xats silenciats."
 
+msgctxt "icu:UnreadReminders__title"
+msgid "Unread reminders"
+msgstr "Recordatoris de missatges no llegits"
+
+msgctxt "icu:UnreadReminders__description"
+msgid "Occasionally notify when there are unread messages while this chat is muted."
+msgstr "Notificar de forma ocasional quan hi hagi missatges no llegits mentre aquest xat estigui silenciat."
+
+msgctxt "icu:Preferences__UnreadReminders__description"
+msgid "Occasionally notify when there are unread messages in muted chats."
+msgstr "Notificar de forma ocasional quan hi hagi missatges no llegits als xats silenciats."
+
 msgctxt "icu:UnreadReminders__notification--messages--1"
 msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}} from {person1}."
-msgstr "{messageCount, plural, one {You have {messageCount,number} unread message from {person1}.} other {You have {messageCount,number} unread messages from {person1}.}}"
+msgstr "{messageCount, plural, one {Tens {messageCount,number} missatge sense llegir de part de {person1}.} other {Tens {messageCount,number} missatges sense llegir de part de {person1}.}}"
 
 msgctxt "icu:UnreadReminders__notification--messages--2"
 msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}} from {person1} and {person2}."
-msgstr "{messageCount, plural, one {You have {messageCount,number} unread message from {person1} and {person2}.} other {You have {messageCount,number} unread messages from {person1} and {person2}.}}"
+msgstr "{messageCount, plural, one {Tens {messageCount,number} missatge sense llegir de part de {person1} i {person2}.} other {Tens {messageCount,number} missatges sense llegir de part de {person1} i {person2}.}}"
 
 msgctxt "icu:UnreadReminders__notification--messages--many"
 msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}} from {person1}, {person2}, and others."
-msgstr "{messageCount, plural, one {You have {messageCount,number} unread message from {person1}, {person2}, and others.} other {You have {messageCount,number} unread messages from {person1}, {person2}, and others.}}"
+msgstr "{messageCount, plural, one {Tens {messageCount,number} missatge sense llegir de part de {person1}, {person2} i altres persones.} other {Tens {messageCount,number} missatges sense llegir de part de {person1}, {person2} i altres persones.}}"
 
 msgctxt "icu:UnreadReminders__notification--messages-including-mentions"
 msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}}, including {mentionSummary}."
-msgstr "{messageCount, plural, one {You have {messageCount,number} unread message, including {mentionSummary}.} other {You have {messageCount,number} unread messages, including {mentionSummary}.}}"
+msgstr "{messageCount, plural, one {Tens {messageCount,number} missatge sense llegir, incloent-hi {mentionSummary}.} other {Tens {messageCount,number} missatges sense llegir, incloent-hi {mentionSummary}.}}"
 
 msgctxt "icu:UnreadReminders__notification--messages-including-replies"
 msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}}, including {replySummary}."
-msgstr "{messageCount, plural, one {You have {messageCount,number} unread message, including {replySummary}.} other {You have {messageCount,number} unread messages, including {replySummary}.}}"
+msgstr "{messageCount, plural, one {Tens {messageCount,number} missatge sense llegir, incloent-hi {replySummary}.} other {Tens {messageCount,number} missatges sense llegir, incloent-hi {replySummary}.}}"
 
 msgctxt "icu:UnreadReminders__notification--counts--messages"
 msgid "You have {messageCount, plural, one {# unread message} other {# unread messages}}."
-msgstr "{messageCount, plural, one {You have {messageCount,number} unread message.} other {You have {messageCount,number} unread messages.}}"
+msgstr "{messageCount, plural, one {Tens {messageCount,number} missatge sense llegir.} other {Tens {messageCount,number} missatges sense llegir.}}"
 
 msgctxt "icu:UnreadReminders__notification__mentionSummary--1"
 msgid "{mentionCount, plural, one {a mention} other {# mentions}} of you by {person1}"
-msgstr "{mentionCount, plural, one {a mention of you by {person1}} other {{mentionCount,number} mentions of you by {person1}}}"
+msgstr "{mentionCount, plural, one {una menció de part de {person1}} other {{mentionCount,number} mencions de part de {person1}}}"
 
 msgctxt "icu:UnreadReminders__notification__mentionSummary--2"
 msgid "{mentionCount, plural, one {# mention} other {# mentions}} of you by {person1} and {person2}"
-msgstr "{mentionCount, plural, one {{mentionCount,number} mention of you by {person1} and {person2}} other {{mentionCount,number} mentions of you by {person1} and {person2}}}"
+msgstr "{mentionCount, plural, one {{mentionCount,number} mencions de part de {person1} i {person2}} other {{mentionCount,number} mencions de part de {person1} i {person2}}}"
 
 msgctxt "icu:UnreadReminders__notification__mentionSummary--many"
 msgid "{mentionCount, plural, one {# mention} other {# mentions}} of you by {person1} and others"
-msgstr "{mentionCount, plural, one {{mentionCount,number} mention of you by {person1} and others} other {{mentionCount,number} mentions of you by {person1} and others}}"
+msgstr "{mentionCount, plural, one {{mentionCount,number} menció de part de {person1} i altres} other {{mentionCount,number} mencions de part de {person1} i altres}}"
 
 msgctxt "icu:UnreadReminders__notification__replySummary--1"
 msgid "{replyCount, plural, one {a reply} other {# replies}} from {person1}"
-msgstr "{replyCount, plural, one {a reply from {person1}} other {{replyCount,number} replies from {person1}}}"
+msgstr "{replyCount, plural, one {una resposta de {person1}} other {{replyCount,number} respostes de {person1}}}"
 
 msgctxt "icu:UnreadReminders__notification__replySummary--2"
 msgid "{replyCount, plural, one {# reply} other {# replies}} from {person1} and {person2}"
-msgstr "{replyCount, plural, one {{replyCount,number} reply from {person1} and {person2}} other {{replyCount,number} replies from {person1} and {person2}}}"
+msgstr "{replyCount, plural, one {{replyCount,number} resposta de {person1} i {person2}} other {{replyCount,number} respostes de {person1} i {person2}}}"
 
 msgctxt "icu:UnreadReminders__notification__replySummary--many"
 msgid "{replyCount, plural, one {# reply} other {# replies}} from {person1} and others"
-msgstr "{replyCount, plural, one {{replyCount,number} reply from {person1} and others} other {{replyCount,number} replies from {person1} and others}}"
+msgstr "{replyCount, plural, one {{replyCount,number} resposta de {person1} i altres} other {{replyCount,number} respostes de {person1} i altres}}"
 
 msgctxt "icu:ConversationNotificationsSettings__mentions__label"
 msgid "Mentions"
@@ -8227,9 +8203,53 @@ msgctxt "icu:Preferences--change-signal-pin-button"
 msgid "Change"
 msgstr "Canviar"
 
+msgctxt "icu:Preferences--create-signal-pin"
+msgid "Create a PIN"
+msgstr "Crea un PIN"
+
+msgctxt "icu:Preferences--create-signal-pin-button"
+msgid "Create"
+msgstr "Crea"
+
 msgctxt "icu:Preferences--signal-pin"
 msgid "Signal PIN"
 msgstr "PIN del Signal"
+
+msgctxt "icu:Preferences--signal-pin-advanced-settings"
+msgid "Advanced PIN settings"
+msgstr "Configuració avançada del PIN"
+
+msgctxt "icu:Preferences--disable-signal-pin"
+msgid "Disable PIN"
+msgstr "Desactiva el PIN"
+
+msgctxt "icu:Preferences--disable-signal-pin--button"
+msgid "Disable"
+msgstr "Desactiva"
+
+msgctxt "icu:Preferences--disable-signal-pin--footer"
+msgid "If you disable the PIN, you will lose all data when you re-register Signal unless you manually back up and restore. You can not turn on Registration Lock while the PIN is disabled."
+msgstr "Si desactiveu el PIN, perdreu totes les dades quan torneu a registrar-vos al Signal, si no és que en feu una còpia de seguretat i una restauració manualment. No podeu activar el bloqueig de registre mentre el PIN estigui desactivat."
+
+msgctxt "icu:DisableSignalPinErrorDialog--reg-lock--body"
+msgid "You must disable Registration Lock before disabling your PIN."
+msgstr "Has de desactivar el bloqueig de registre abans de desactivar el PIN."
+
+msgctxt "icu:DisableSignalPinErrorDialog--reg-lock--ok"
+msgid "OK"
+msgstr "D'acord"
+
+msgctxt "icu:DisableSignalPinErrorDialog--backups--body"
+msgid "You must disable backups before disabling your PIN."
+msgstr "Has de desactivar les còpies de seguretat abans de desactivar el PIN."
+
+msgctxt "icu:Preferences--enable-signal-pin"
+msgid "Enable PIN"
+msgstr "Activa el PIN"
+
+msgctxt "icu:Preferences--enable-signal-pin--button"
+msgid "Enable"
+msgstr "Activar"
 
 msgctxt "icu:Preferences--pin-reminders--header"
 msgid "PIN reminders"
@@ -8238,6 +8258,14 @@ msgstr "Recordatoris del PIN"
 msgctxt "icu:Preferences--pin-reminders--description"
 msgid "You'll be asked less frequently over time"
 msgstr "Amb el temps se us demanarà amb menys freqüència"
+
+msgctxt "icu:Preferences--registration-lock__label"
+msgid "Registration Lock"
+msgstr "Bloqueig del registre"
+
+msgctxt "icu:Preferences--registration-lock__footer"
+msgid "Require your Signal PIN to register your phone number again with Signal."
+msgstr "Demana el PIN del Signal per tornar-hi a registrar el número de telèfon."
 
 msgctxt "icu:Preferences--notification-content"
 msgid "Notification content"
@@ -8262,6 +8290,10 @@ msgstr "Sons"
 msgctxt "icu:Preferences__Notifications__AppBadgeSection__Title"
 msgid "App badge"
 msgstr "Insígnia de l'app"
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__Title-v2"
+msgid "Unread badges"
+msgstr "Recompte de xats sense llegir"
 
 msgctxt "icu:Preferences__Notifications__Reset__title"
 msgid "Reset notification settings to default, including custom settings for your chats."
@@ -8294,6 +8326,14 @@ msgstr "Missatges per llegir"
 msgctxt "icu:Preferences__Notifications__AppBadgeSection__BadgeCount__UnreadChats"
 msgid "Unread chats"
 msgstr "Xats sense llegir"
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__BadgeCount__MutedChats"
+msgid "Include muted chats in app badge"
+msgstr "Inclou els xats silenciats al recompte de notificacions"
+
+msgctxt "icu:Preferences__Notifications__AppBadgeSection__BadgeCount__MutedChats__description"
+msgid "Chat folder badges will always include muted chats"
+msgstr "Els recomptes de notificacions de les carpetes de xats sempre inclouran els xats silenciats"
 
 msgctxt "icu:PlaintextExport--PreferencesRow--Header"
 msgid "Export chat history"
@@ -8483,10 +8523,6 @@ msgctxt "icu:NotificationProfiles--setting"
 msgid "Notification profiles"
 msgstr "Perfils de notificacions"
 
-msgctxt "icu:NotificationProfiles--setup"
-msgid "Set up"
-msgstr "Configurar"
-
 msgctxt "icu:NotificationProfiles--title"
 msgid "Notification Profiles"
 msgstr "Perfils de notificacions"
@@ -8502,10 +8538,6 @@ msgstr "Continua"
 msgctxt "icu:NotificationProfiles--manage-description"
 msgid "Add or edit notification profiles"
 msgstr "Afegir o editar perfils de notificacions"
-
-msgctxt "icu:NotificationProfiles--manage-profiles"
-msgid "{profileCount, plural, one {One profile} other {# profiles}}"
-msgstr "{profileCount, plural, one {Un perfil} other {{profileCount,number} perfils}}"
 
 msgctxt "icu:NotificationProfiles--create"
 msgid "Create profile"
@@ -9031,10 +9063,6 @@ msgctxt "icu:Preferences__pnp__row--body"
 msgid "Choose who can see your phone number and who can contact you on Signal with it."
 msgstr "Tria qui pot veure el teu número de telèfon i qui pot contactar-te a Signal a través d'ell."
 
-msgctxt "icu:Preferences__pnp__row--button"
-msgid "Change…"
-msgstr "Canviar…"
-
 msgctxt "icu:Preferences__pnp__sharing--title"
 msgid "Who can see my number"
 msgstr "Qui pot veure el meu número"
@@ -9099,17 +9127,9 @@ msgctxt "icu:Preferences--read-receipts"
 msgid "Read receipts"
 msgstr "Confirmació de lectura"
 
-msgctxt "icu:Preferences--read-receipts--description"
-msgid "If disabled, you won't see read receipts from others."
-msgstr "Si desactives aquesta opció, no podràs veure les confirmacions de lectura dels altres."
-
 msgctxt "icu:Preferences--typing-indicators"
 msgid "Typing indicators"
 msgstr "Indicadors de tecleig"
-
-msgctxt "icu:Preferences--typing-indicators--description"
-msgid "If disabled, you won't see typing indicators from others."
-msgstr "Si desactives aquesta opció, no podràs veure els indicadors de tecleig dels altres."
 
 msgctxt "icu:Preferences--messaging-help"
 msgid "See and share when message are being read and typed. If disabled, you won’t see read receipts or typing indicators from others."
@@ -10707,6 +10727,10 @@ msgctxt "icu:ContextMenu--button"
 msgid "Context menu"
 msgstr "Menú de context"
 
+msgctxt "icu:EditUsernameModalBody__username-label"
+msgid "Username"
+msgstr "Àlies"
+
 msgctxt "icu:EditUsernameModalBody__username-placeholder"
 msgid "Username"
 msgstr "Àlies"
@@ -11894,10 +11918,6 @@ msgstr "Petits ajustos addicionals, correccions d'errors i un munt de plans pel 
 msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
-
-msgctxt "icu:WhatsNew__8.25--0"
-msgid "We added two new zoom levels in the appearance settings, so even with very little effort you can still give your messages 110% (or 90%)."
-msgstr "Hem afegit dos nous nivells de zoom als ajustos d'aparença (110% i 90%)."
 
 msgctxt "icu:WhatsNew__8.26--0"
 msgid "Finding yourself can be a lifelong process, but now you'll appear as “You” in the group member search to make it a little easier."
