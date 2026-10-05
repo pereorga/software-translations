@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-28 16:17+0000\n"
+"POT-Creation-Date: 2026-10-05 16:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -542,6 +542,10 @@ msgstr "Copiar referència de bloc"
 msgid "Copy block URL"
 msgstr "Copiar URL del bloc"
 
+#: .block/copy-url-unavailable-warning
+msgid "No block URL is available to copy."
+msgstr ""
+
 #: .block/created-label
 msgid "Created: {1}"
 msgstr "Creat: {1}"
@@ -622,6 +626,10 @@ msgstr "Practicar"
 #: .block/practice-cards
 msgid "Practice cards"
 msgstr "Practicar targetes"
+
+#: .block/ref-not-exist
+msgid "This block doesn't exist."
+msgstr "Aquest bloc no existeix."
 
 #: .block/remove-tag
 msgid "Remove tag"
@@ -4373,6 +4381,10 @@ msgstr ""
 "La pàgina \"{1}\" no es pot convertir en un bloc, primer moveu-la a una "
 "altra pàgina."
 
+#: .page.convert/page-to-property-namespaced
+msgid "Namespaced pages can't be properties"
+msgstr ""
+
 #: .page.convert/page-to-tag-action
 msgid "Convert \"{1}\" to tag"
 msgstr "Converteix \"{1}\" en etiqueta"
@@ -4480,6 +4492,10 @@ msgid "Another page named \"{1}\" already exists for tags: {2}."
 msgstr ""
 "Ja existeix una altra pàgina anomenada \"{1}\" per a les etiquetes: {2}."
 
+#: .page.validation/duplicate-name
+msgid "Another page named \"{1}\" already exists."
+msgstr ""
+
 #: .page.validation/name-blank
 msgid "Page name can't be blank."
 msgstr "El nom de la pàgina no pot estar buit."
@@ -4529,6 +4545,10 @@ msgstr "Convertir en etiqueta"
 #: .page/copy-url
 msgid "Copy page URL"
 msgstr "Copiar URL de la pàgina"
+
+#: .page/copy-url-unavailable-warning
+msgid "No page URL is available to copy."
+msgstr ""
 
 #: .page/create
 msgid "Create a new page"
@@ -5342,6 +5362,14 @@ msgstr "Descarregant actualitzacions"
 #: .plugin/updating
 msgid "Updating"
 msgstr "Actualitzant"
+
+#: .profiler/fn-not-found-error
+msgid "Function not found: {1}"
+msgstr ""
+
+#: .profiler/fn-unqualified-error
+msgid "Use a qualified function name, such as cljs.core/map."
+msgstr ""
 
 #: .profiler/input-fn-placeholder
 msgid "input fn name here"
