@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-28 16:17+0000\n"
+"POT-Creation-Date: 2026-10-05 16:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,7 @@ msgstr "Dimensions del vídeo"
 
 #: FORMAT_VIDEO_DIMENSIONS
 msgid "%ix%i pixels"
-msgstr "%ix%i píxel"
+msgstr "%ix%i píxels"
 
 #: VIDEO_CODEC
 msgid "Video Codec"
@@ -184,10 +184,6 @@ msgstr "Brillantor"
 msgid "Saturation"
 msgstr "Saturació"
 
-#: PRESET_PREAMP_SETTING
-msgid "Preset / preamp settings"
-msgstr "Paràmetres predefinició / preamplificació"
-
 #: PREAMP
 msgid "Preamp"
 msgstr "Preamplifica"
@@ -220,10 +216,6 @@ msgstr "Escapça per ajustar a la pantalla"
 msgid "Playback speed"
 msgstr "Velocitat de reproducció"
 
-#: PLAYBACK_SPEED_FORMAT
-msgid "%@×"
-msgstr ""
-
 #: SPU_DELAY
 msgid "Subtitles delay"
 msgstr "Retard dels subtítols"
@@ -234,44 +226,40 @@ msgstr "Retard de l'àudio"
 
 #: PLAYBACK_SPEED_THIS_VIDEO
 msgid "This video"
-msgstr ""
+msgstr "Aquest vídeo"
 
 #: PLAYBACK_SPEED_ALL_VIDEOS
 msgctxt "PLAYBACK_SPEED_ALL_VIDEOS"
 msgid "All videos"
-msgstr ""
+msgstr "Tots els vídeos"
 
 #: PLAYBACK_SPEED_THIS_TRACK
 msgid "This track"
-msgstr ""
+msgstr "Aquesta pista"
 
 #: PLAYBACK_SPEED_ALL_TRACKS
 msgid "All tracks"
-msgstr ""
-
-#: DELAY_MS_FORMAT
-msgid "%@ ms"
-msgstr ""
+msgstr "Totes les pistes"
 
 #: SYNC_VOICE_HEARD
 msgid "Voice heard"
-msgstr ""
+msgstr "S'ha sentit la veu"
 
 #: SYNC_TEXT_SEEN
 msgid "Text seen"
-msgstr ""
+msgstr "S'ha vist el text"
 
 #: SYNC_SOUND_HEARD
 msgid "Sound heard"
-msgstr ""
+msgstr "S'ha sentit el so"
 
 #: SYNC_SCENE_SEEN
 msgid "Scene seen"
-msgstr ""
+msgstr "S'ha vist l'escena"
 
 #: SYNC_MARK_HINT
 msgid "Double-tap at the moment it happens"
-msgstr ""
+msgstr "Feu doble toc en el moment en què passi"
 
 #: BUTTON_SLEEP_TIMER
 msgid "Sleep Timer"
@@ -279,11 +267,11 @@ msgstr "Temporitzador"
 
 #: SLEEP_TIMER_STOP_AFTER_THIS_VIDEO
 msgid "Stop After This Video"
-msgstr ""
+msgstr "Atura't després d'aquest vídeo"
 
 #: SLEEP_TIMER_STOP_AFTER_THIS_TRACK
 msgid "Stop After This Track"
-msgstr ""
+msgstr "Atura't després d'aquesta pista"
 
 #: CONTINUE_PLAYBACK
 msgid "Continue playback?"
@@ -307,11 +295,11 @@ msgstr "Obre"
 
 #: BUTTON_PASTE_AND_OPEN
 msgid "Paste and Open"
-msgstr ""
+msgstr "Enganxa i obre"
 
 #: BUTTON_PASTE_AND_LOAD
 msgid "Paste and Load"
-msgstr ""
+msgstr "Enganxa i carrega"
 
 #: BUTTON_CANCEL
 msgid "Cancel"
@@ -382,7 +370,7 @@ msgstr "Re-escanaig"
 #: BUTTON_SYNC
 msgctxt "BUTTON_SYNC"
 msgid "Sync"
-msgstr ""
+msgstr "Sincronitza"
 
 #: PRIVATE_PLAYBACK_TOGGLE
 msgid "Private Playback"
@@ -449,7 +437,7 @@ msgstr "Estrímings recents"
 
 #: REMOVE_FROM_RECENT_STREAMS
 msgid "Remove from Recent Streams"
-msgstr ""
+msgstr "Elimina dels estrímings recents"
 
 #: HTTP_UPLOAD_SERVER_OFF
 msgid "Inactive Server"
@@ -485,19 +473,19 @@ msgstr "Baixada cancel·lada per l'usuari"
 
 #: NETWORK_AUTH_TITLE
 msgid "Authentication Required"
-msgstr ""
+msgstr "Cal autenticació"
 
 #: NETWORK_AUTH_MESSAGE
 msgid "%@ requires a user name and a password."
-msgstr ""
+msgstr "%@ necessita un nom d'usuari i una contrasenya."
 
 #: NETWORK_AUTH_MESSAGE_REALM
 msgid "%@ requires a user name and a password for “%@”."
-msgstr ""
+msgstr "%@ necessita un nom d'usuari i una contrasenya per a “%@”."
 
 #: NETWORK_AUTH_WRONG_CREDENTIALS
 msgid "The user name or the password was incorrect."
-msgstr ""
+msgstr "El nom d'usuari o la contrasenya eren incorrectes."
 
 #: TRANSFERS
 msgid "Transfers"
@@ -563,7 +551,7 @@ msgstr "Entreu un nou nom per a %@"
 
 #: MEDIA_PLACEHOLDER
 msgid "Media title"
-msgstr ""
+msgstr "Títol multimèdia"
 
 #: SHARING_ACTION_SHEET_TITLE_CHOOSE_FILE
 msgid "Choose a file to open:"
@@ -609,22 +597,139 @@ msgstr "Veure-ho tot"
 msgid "%lu stations"
 msgstr "%lu emissores"
 
+#: RADIO_COUNTRIES_LOADING_FAILED
+msgid ""
+"Couldn't load the list of countries. Please check your connection and try "
+"again."
+msgstr ""
+"No s'ha pogut carregar la llista de països. Si us plau, comproveu la "
+"connexió i torneu-ho a provar."
+
+#: RADIO_STATIONS_LOADING_FAILED
+msgid "Couldn't load the stations. Please check your connection and try again."
+msgstr ""
+"No s'ha pogut carregar les emissores de ràdio. Si us plau, comproveu la "
+"connexió i torneu-ho a provar."
+
+#: RADIO_ALARM_SET
+msgid "Set Alarm…"
+msgstr "Configura l'alarma…"
+
+#: RADIO_ALARM_EDIT
+msgid "Edit Alarm…"
+msgstr "Edita l'alarma…"
+
+#: RADIO_ALARM_REMOVE
+msgid "Remove Alarm"
+msgstr "Elimina l'alarma…"
+
+#: RADIO_ALARM_LISTEN
+msgid "Listen"
+msgstr "Escolta"
+
+#: RADIO_ALARM_DENIED
+msgid ""
+"VLC is not allowed to set alarms. You can grant access in the Settings app."
+msgstr ""
+"VLC no té permís per establir alarmes. Podeu concedir accés a l'aplicació "
+"Configuració."
+
+#: RADIO_ALARM_FAILED
+msgid "The alarm could not be set. Please try again."
+msgstr "No s'ha pogut configurar l'alarma. Torneu-ho a intentar."
+
+#: BUTTON_RETRY
+msgid "Retry"
+msgstr "Tornar a provar"
+
 #: HEADER_TITLE_RENDERER
 msgid "Select a casting device"
 msgstr "Selecciona un dispositiu de buidatge"
 
+#: ONAIR
+msgid "On Air"
+msgstr "En directe"
+
+#: ONAIR_ZERO_TITLE
+msgid "Everything you follow, in one place"
+msgstr "Tot el que seguiu, en un sol lloc"
+
+#: ONAIR_ZERO_SUBTITLE
+msgid "Start with any of the three. Your favorites stay on this device."
+msgstr ""
+"Comenceu amb qualsevol dels tres. Els vostres preferits romanen en aquest "
+"dispositiu."
+
+#: ONAIR_CONTINUE
+msgctxt "ONAIR_CONTINUE"
+msgid "Continue"
+msgstr "Continua"
+
+#: ONAIR_CONTINUE_PAUSED
+msgid "Paused %@"
+msgstr "En pausa %@"
+
+#: ONAIR_ADD
+msgid "Add"
+msgstr "Afegeix"
+
+#: ONAIR_FIND_STATION
+msgid "Find a station"
+msgstr "Troba una emissora"
+
 #: ONAIR_PODCASTS_EMPTY_BODY
 msgid "Paste an RSS feed, or browse the directory."
-msgstr "Paste an RSS feed to subscribe."
+msgstr "Enganxeu un canal RSS, o exploreu el directori."
 
 #: ONAIR_PODCASTS_ZERO_BODY
 msgid "Browse the directory, or bring your own feed."
-msgstr "Bring your own feed to get started."
+msgstr "Exploreu el directori, o porteu el vostre propi canal."
+
+#: ONAIR_PASTE_RSS
+msgid "Paste RSS"
+msgstr "Enganxa RSS"
+
+#: ONAIR_TV_EMPTY_BODY
+msgid "Public channels, or your own M3U."
+msgstr "Canals públics o el vostre propi M3U."
+
+#: ONAIR_OPEN_DIRECTORY
+msgid "Open directory"
+msgstr "Obre el directori"
+
+#: ONAIR_ADD_M3U
+msgid "Add M3U"
+msgstr "Afegir M3U"
 
 #: BROWSE
 msgctxt "BROWSE"
 msgid "Browse"
 msgstr "Navega"
+
+#: BROWSE_SECTION_OPEN
+msgid "Open…"
+msgstr "Obre..."
+
+#: BROWSE_PHOTOS
+msgid "Photos"
+msgstr "Fotos"
+
+#: BROWSE_CLOUD
+msgctxt "BROWSE_CLOUD"
+msgid "Cloud"
+msgstr "Núvol"
+
+#: BROWSE_NETWORK_STREAM
+msgid "Network stream"
+msgstr "Flux de xarxa"
+
+#: BROWSE_WIFI_SHARING
+msgid "Wi-Fi sharing"
+msgstr "Compartir Wi-Fi"
+
+#: BROWSE_ADD_SERVER
+msgid "Add server"
+msgstr "Afegir el servidor"
 
 #: STREAMS
 msgid "Streams"
@@ -661,6 +766,10 @@ msgstr "Actualitza"
 #: LOCAL_SERVER_LAST_UPDATE
 msgid "Last Updated on %@"
 msgstr "Darrera actualització de %@"
+
+#: LOCAL_SERVER_CONNECTION_FAILED_TITLE
+msgid "Connection to server failed"
+msgstr "La connexió al servidor ha fallat"
 
 #: LOCAL_SERVER_CONNECTION_FAILED_MESSAGE
 msgid "Please check your server address and credentials"
@@ -721,6 +830,14 @@ msgstr "ÈXIT"
 #: GDRIVE_ERROR_DOWNLOADING_FILE
 msgid "An error occured while downloading"
 msgstr "S'ha produït un error durant la descàrrega"
+
+#: GDRIVE_MY_DRIVE
+msgid "My Drive"
+msgstr "La meva unitat"
+
+#: GDRIVE_SHARED_WITH_ME
+msgid "Shared with me"
+msgstr "Compartit amb mi"
 
 #: ONEDRIVE_MEDIA_WITHOUT_URL
 msgid "The selected Media doesn't have a playable url"
@@ -822,10 +939,10 @@ msgid ""
 "the cloud or synchronize media to your device using the \"Files\" tab in "
 "Finder or iTunes, Wi-Fi Upload or cloud services."
 msgstr ""
-"Per a la reproducció, podeu transmetre contingut multimèdia des d’un "
-"servidor de la vostra xarxa local, des del núvol o sincronitzar contingut "
-"multimèdia amb el vostre dispositiu mitjançant iTunes, pujades des de-de la "
-"xarxa sense fils o serveis en el núvol."
+"Per reproduir-lo, podeu reproduir contingut multimèdia des d'un servidor de "
+"la vostra xarxa local, des del núvol o sincronitzar contingut multimèdia amb "
+"el vostre dispositiu mitjançant la pestanya \"Fitxers\" del Finder o iTunes, "
+"Wi-Fi Upload o serveis al núvol."
 
 #: EMPTY_NO_PLAYLISTS
 msgctxt "EMPTY_NO_PLAYLISTS"
@@ -987,7 +1104,7 @@ msgstr "Voleu desar un perfil nou amb els valors seleccionats?"
 
 #: CUSTOM_EQUALIZER_PROFILE_PLACEHOLDER
 msgid "Profile title"
-msgstr ""
+msgstr "Títol del perfil"
 
 #: RENAME_CUSTOM_PROFILE_TITLE
 msgid "Rename the profile"
@@ -1034,8 +1151,8 @@ msgid ""
 "Connect your %@ to use the Finder or iTunes. In the Finder, select the "
 "\"Files\" tab and choose VLC to transfer files."
 msgstr ""
-"Connecteu el vostre %@ per utilitzar el Finder o l'iTunes per a \"Compartir "
-"fitxers\". Seleccioneu VLC per transferir fitxers."
+"Connecteu el vostre %@ per utilitzar el Finder o l'iTunes. En el Finder, "
+"seleccioneu la pestanya \"Fitxers\" i trieu VLC per transferir fitxers."
 
 #: FIRST_STEPS_WIFI_TITLE
 msgid "Share via Wi-Fi"
@@ -1122,6 +1239,14 @@ msgstr "Arxius baixats"
 msgid "Just click the file you want to download from your %@."
 msgstr "Has de fer clic en l'arxiu que vols descarregar del teu %@."
 
+#: WEBINTF_DOWNLOAD_ALL
+msgid "Download All"
+msgstr "Baixa-ho tot"
+
+#: WEBINTF_DOWNLOAD_SELECTED
+msgid "Download Selected (%@)"
+msgstr "Baixa la selecció (%@)"
+
 #: WEBINTF_ADDRESS_COPIED
 msgid "Address copied to clipboard"
 msgstr "L'adreça s'ha copiat al porta-retalls"
@@ -1183,9 +1308,14 @@ msgid "Enable Remote Playback"
 msgstr "Activar la Reproducció remota"
 
 #: HTTP_UPLOAD_QR_CODE
-msgid ""
-"QR code for the server address\"; /* Accessibility label for the QR code on "
-"the Apple TV remote playback screen */\"CACHED_MEDIA\" = \"Cached Media"
+msgid "QR code for the server address"
+msgstr ""
+"Codi QR per a l'adreça del servidor\"; /* Accessibility label for the QR "
+"code on the Apple TV remote playback screen */\"CACHED_MEDIA\" = \"Arxius "
+"multimèdia amb cau"
+
+#: CACHED_MEDIA
+msgid "Cached Media"
 msgstr ""
 
 #: CACHED_MEDIA_LONG
@@ -1229,11 +1359,11 @@ msgstr "Apaga el mode aleatori"
 
 #: NETWORK_STREAM_PLACEHOLDER
 msgid "Stream title"
-msgstr ""
+msgstr "Títol de l'estríming"
 
 #: NETWORK_STREAM_URL_PLACEHOLDER
 msgid "Stream address"
-msgstr ""
+msgstr "Direcció de l'estríming"
 
 #: RESET_NETWORK_STREAM_LIST_TITLE
 msgid "Reset list"
@@ -1293,12 +1423,25 @@ msgstr ""
 "Esteu segur d'eliminar els arxius seleccionats de la llista de reproducció?\n"
 "No s'esborraran del disc."
 
+#: DELETE_MESSAGE_FOLDER
+msgid ""
+"Are you sure to delete the selection?\n"
+"Every media file inside the selected folders will be deleted from the disk, "
+"too."
+msgstr ""
+"Esteu segur que voleu eliminar la selecció?\n"
+"Tots els fitxers multimèdia que hi hagi dins de les carpetes seleccionades "
+"també s'eliminaran del disc."
+
 #: DELETE_MESSAGE_HISTORY
 msgid ""
 "Are you sure to remove the selected media from the history?\n"
 "They won't be deleted from the disk, but their playback progress will be "
 "lost."
 msgstr ""
+"Esteu segur que voleu eliminar els fitxers multimèdia seleccionats de "
+"l'historial?\n"
+"No s'eliminaran del disc, però es perdrà el progrés de la seva reproducció."
 
 #. // MARK: - Drag and Drop
 #: PROTOCOL_NOT_SELECTED
@@ -1311,20 +1454,20 @@ msgstr "Paràmetres"
 
 #: SETTINGS_ABOUT
 msgid "About VLC"
-msgstr ""
+msgstr "Quant al VLC"
 
 #: SETTINGS_DOCUMENTATION
 msgid "Documentation"
-msgstr ""
+msgstr "Documentació"
 
 #: SETTINGS_DONATE
 msgid "Donate to VideoLAN"
-msgstr ""
+msgstr "Feu una donació a VideoLAN"
 
 #: SETTINGS_DONATE_LONG
 msgctxt "SETTINGS_DONATE_LONG"
 msgid "Support free and open source multimedia"
-msgstr ""
+msgstr "Suporta el multimèdia lliure i de codi obert"
 
 #: SORT
 msgid "Sort"
@@ -1390,173 +1533,149 @@ msgstr "LLista de reproducció"
 msgid "Folders"
 msgstr "Carpetes"
 
+#.
+#. MARK: - Podcasts
+#: PODCAST_CONTINUE_LISTENING
+msgid "Continue Listening"
+msgstr "Continueu escoltant"
+
+#: PODCAST_LATEST_EPISODES
+msgid "Latest Episodes"
+msgstr "Últims episodis"
+
+#: PODCAST_SHOWS
+msgid "Shows"
+msgstr "Programes"
+
+#: PODCAST_SORT_EPISODES_HINT
+msgid "Sort the episodes in this show"
+msgstr "Ordena els episodis d'aquest programa"
+
 #: PODCAST_MARK_ALL_AS_PLAYED
 msgid "Mark All as Played"
-msgstr ""
+msgstr "Marca-ho tot com a reproduït"
 
 #: PODCAST_TIME_LEFT
 msgid "%@ left"
-msgstr ""
+msgstr "%@ esquerra"
 
 #: PODCAST_EXPORT_MEDIA_FILE
 msgid "Export Media File"
-msgstr ""
+msgstr "Exporta el fitxer multimèdia"
+
+#: PODCAST_EPISODE_COUNT
+msgid "%d episodes"
+msgstr "%d episodis"
+
+#: PODCAST_EPISODE_DOWNLOAD
+msgid "Download episode"
+msgstr "Baixa l'episodi"
+
+#: PODCAST_EPISODE_DOWNLOADED
+msgid "Episode downloaded"
+msgstr "Episodi baixat"
 
 #: PODCAST_EPISODE_CANCEL_DOWNLOAD
 msgid "Cancel download"
+msgstr "Cancel·la la baixada"
+
+#: PODCAST_DELETE_DOWNLOAD_TITLE
+msgid "Remove Download"
+msgstr "Elimina la baixada"
+
+#: PODCAST_DELETE_DOWNLOAD_MESSAGE
+msgid ""
+"This will delete the downloaded copy of this episode. You can download it "
+"again later."
 msgstr ""
+"Això suprimirà la còpia baixada d'aquest episodi. El podreu tornar a baixar "
+"més tard."
 
 #: PODCAST_UNSUBSCRIBE
 msgid "Unsubscribe"
-msgstr ""
+msgstr "Elimina la subscripció"
 
 #: PODCAST_UNSUBSCRIBE_MESSAGE
 msgid ""
 "This will remove this show, its episodes and any downloaded copies from your "
 "library."
 msgstr ""
+"Això eliminarà aquest programa, els seus episodis i qualsevol còpia baixada "
+"de la vostra biblioteca."
 
 #: PODCAST_OPEN_WEBSITE
 msgid "Open Website…"
-msgstr ""
+msgstr "Obre el lloc web…"
 
-#: PODCAST_EMPTY_DESCRIPTION
+#: PODCAST_EMPTY_TITLE
+msgid "No Podcasts Yet"
+msgstr "Encara no hi ha podcasts"
+
+#: PODCAST_ADD_VIA_RSS
+msgid "Add via RSS URL"
+msgstr "Afegiu a través de l'URL del RSS"
+
+#: PODCAST_SUBSCRIBE
+msgid "Subscribe"
+msgstr "Subscriu"
+
+#: PODCAST_ADD_RSS_ERROR
+msgid "Couldn't add this podcast. Check the URL and try again."
+msgstr ""
+"No s'ha pogut afegir aquest podcast. Comproveu l'URL i torneu-ho a provar."
+
+#: PODCAST_ADD_RSS_ERROR_EMPTY
+msgid "Enter a podcast feed URL."
+msgstr "Introduïu l'URL d'un feed de podcast."
+
+#: PODCAST_ADD_RSS_ERROR_INVALID_URL
+msgid "That doesn't look like a valid URL."
+msgstr "Això no sembla una URL vàlida."
+
+#: PODCAST_ADD_RSS_ERROR_SCHEME
+msgid "Only http:// and https:// feed URLs are supported."
+msgstr "Només s'admeten les URL de canals http:// i https://."
+
+#: PODCAST_ADD_RSS_ERROR_NETWORK
 msgid ""
-"Browse the directory or add a show via its RSS feed URL to start listening."
-msgstr "Add a show via its RSS feed URL to start listening."
+"Couldn't reach that address. Check your internet connection and the URL."
+msgstr ""
+"No s'ha pogut accedir a aquesta adreça. Comproveu la connexió a Internet i "
+"l'URL."
+
+#: PODCAST_ADD_RSS_ERROR_HTTP
+msgid "That address returned an error (%d). Double-check the feed URL."
+msgstr "Aquesta direcció ha retornat un error (%d). Comproveu l'URL del feed."
+
+#: PODCAST_ADD_RSS_ERROR_NOT_A_FEED
+msgid ""
+"That URL doesn't look like a podcast feed. Make sure it points directly to "
+"the RSS/XML feed, not the podcast's webpage."
+msgstr ""
+"Aquest URL no sembla un canal de podcast. Assegureu-vos que apunta "
+"directament al canal RSS/XML, no a la pàgina web del podcast."
 
 #: PODCAST_SUBSCRIBE_FEEDS_MESSAGE
 msgid "This file contains %d podcast feeds."
-msgstr ""
+msgstr "Aquest fitxer conté %d canals de podcasts."
 
 #: PODCAST_SUBSCRIBE_PARTIAL
 msgid "%d of %d feeds could not be added."
-msgstr ""
+msgstr "No s'han pogut afegir %d de %d canals."
 
 #: PODCAST_DIRECTORY_TITLE
 msgctxt "PODCAST_DIRECTORY_TITLE"
 msgid "Browse"
-msgstr ""
+msgstr "Navega"
 
 #: PODCAST_DIRECTORY_BROWSE
 msgid "Browse the directory"
-msgstr ""
-
-#: PODCAST_DIRECTORY_TOP_CHARTS
-msgid "Top Charts"
-msgstr ""
-
-#: PODCAST_DIRECTORY_NEW
-msgid "New & Noteworthy"
-msgstr ""
+msgstr "Navega pel directori"
 
 #: PODCAST_DIRECTORY_LANGUAGE
 msgctxt "PODCAST_DIRECTORY_LANGUAGE"
 msgid "Language"
-msgstr ""
-
-#: PODCAST_DIRECTORY_SEARCH_PLACEHOLDER
-msgid "Search podcasts"
-msgstr ""
-
-#: PODCAST_DIRECTORY_NO_RESULTS
-msgid "No podcasts found."
-msgstr ""
-
-#: PODCAST_DIRECTORY_SUBSCRIBED
-msgid "Subscribed"
-msgstr ""
-
-#: PODCAST_DIRECTORY_UPDATED
-msgid "Updated %@"
-msgstr ""
-
-#: PODCAST_DIRECTORY_EXPLICIT
-msgid "Explicit"
-msgstr ""
-
-#: PODCAST_DIRECTORY_ERROR
-msgid ""
-"Couldn't reach the podcast directory. Check your connection and try again."
-msgstr ""
-
-#: PODCAST_CATEGORY_ARTS
-msgid "Arts"
-msgstr ""
-
-#: PODCAST_CATEGORY_BUSINESS
-msgid "Business"
-msgstr ""
-
-#: PODCAST_CATEGORY_COMEDY
-msgid "Comedy"
-msgstr ""
-
-#: PODCAST_CATEGORY_EDUCATION
-msgid "Education"
-msgstr ""
-
-#: PODCAST_CATEGORY_FICTION
-msgid "Fiction"
-msgstr ""
-
-#: PODCAST_CATEGORY_GOVERNMENT
-msgid "Government"
-msgstr ""
-
-#: PODCAST_CATEGORY_HEALTH_FITNESS
-msgid "Health & Fitness"
-msgstr ""
-
-#: PODCAST_CATEGORY_HISTORY
-msgctxt "PODCAST_CATEGORY_HISTORY"
-"PODCAST_CATEGORY_HISTORY"
-msgid "History"
-msgstr ""
-
-#: PODCAST_CATEGORY_KIDS_FAMILY
-msgid "Kids & Family"
-msgstr ""
-
-#: PODCAST_CATEGORY_LEISURE
-msgid "Leisure"
-msgstr ""
-
-#: PODCAST_CATEGORY_MUSIC
-msgid "Music"
-msgstr ""
-
-#: PODCAST_CATEGORY_NEWS
-msgid "News"
-msgstr ""
-
-#: PODCAST_CATEGORY_RELIGION_SPIRITUALITY
-msgid "Religion & Spirituality"
-msgstr ""
-
-#: PODCAST_CATEGORY_SCIENCE
-msgid "Science"
-msgstr ""
-
-#: PODCAST_CATEGORY_SOCIETY_CULTURE
-msgid "Society & Culture"
-msgstr ""
-
-#: PODCAST_CATEGORY_SPORTS
-msgid "Sports"
-msgstr ""
-
-#: PODCAST_CATEGORY_TECHNOLOGY
-msgid "Technology"
-msgstr ""
-
-#: PODCAST_CATEGORY_TRUE_CRIME
-msgid "True Crime"
-msgstr ""
-
-#: PODCAST_CATEGORY_TV_FILM
-msgid "TV & Film"
-msgstr ""
+msgstr "Idioma"
 
 #: VIDEO_GROUPS
 msgid "Video groups"
@@ -2046,7 +2165,7 @@ msgstr "Preferit a"
 
 #: BOOKMARK_PLACEHOLDER
 msgid "Bookmark title"
-msgstr ""
+msgstr "Títol dels preferits"
 
 #: BOOKMARK_RENAME_TITLE
 msgid "Rename bookmark"
@@ -2170,7 +2289,7 @@ msgstr ""
 
 #: SETTINGS_SYNC_MEDIA_LIBRARY_TITLE
 msgid "Sync media library to Apple Watch"
-msgstr ""
+msgstr "Sincronitza la biblioteca multimèdia amb l'Apple Watch"
 
 #: SETTINGS_SYNC_MEDIA_LIBRARY_MESSAGE
 msgid ""
@@ -2178,6 +2297,9 @@ msgid ""
 "Apple Watch for display. It does not download the individual audio files "
 "themselves."
 msgstr ""
+"Això envia una instantània de la biblioteca multimèdia actual de l'iPhone "
+"(%@) a l'Apple Watch per mostrar-la. No baixa els fitxers d'àudio "
+"individuals."
 
 #.
 #. MARK: - Local Network
@@ -2315,6 +2437,10 @@ msgstr "Afegeix a la cua"
 #: APPEND_TO_QUEUE_LABEL
 msgctxt "APPEND_TO_QUEUE_LABEL"
 msgid "Append to queue"
+msgstr "Afegeix a la cua"
+
+#: ENQUEUE_LABEL
+msgid "Enqueue"
 msgstr "Afegeix a la cua"
 
 #: QUEUE_LABEL
@@ -2576,22 +2702,6 @@ msgstr "Disminueix la velocitat de reproducció"
 msgid "Reset playback speed"
 msgstr "Restaura la velocitat de reproducció"
 
-#: KEY_DECREASE_SUBTITLE_DELAY
-msgid "Decrease subtitle delay"
-msgstr ""
-
-#: KEY_INCREASE_SUBTITLE_DELAY
-msgid "Increase subtitle delay"
-msgstr ""
-
-#: KEY_DECREASE_AUDIO_DELAY
-msgid "Decrease audio delay"
-msgstr ""
-
-#: KEY_INCREASE_AUDIO_DELAY
-msgid "Increase audio delay"
-msgstr ""
-
 #: KEY_SEEK_TO_PERCENT
 msgid "Seek to %i%% of duration"
 msgstr "Busca el %i%% de la durada"
@@ -2607,11 +2717,11 @@ msgstr "Salta al següent fotograma"
 #. MARK: - Custom Setting Value
 #: SETTINGS_CUSTOM_VALUE_MESSAGE
 msgid "Enter a value between %@ and %@"
-msgstr ""
+msgstr "Introduïu un valor entre %@ i %@"
 
 #: SETTINGS_CUSTOM_VALUE_ERROR
 msgid "Please enter a valid value between %@ and %@"
-msgstr ""
+msgstr "Si us plau introduïu un valor vàlid entre %@ i %@"
 
 #.
 #. MARK: - TitleSelection
@@ -2620,7 +2730,7 @@ msgstr ""
 #. MARK: - NEW DELETE STRINGS
 #: DELETE_SINGLE_TITLE
 msgid "Delete \"%@\"?"
-msgstr ""
+msgstr "Voleu suprimir \"%@\"?"
 
 #: DELETE_MULTIPLE_TITLE
 msgid "Delete \"%@\" and %d others?"
@@ -2640,9 +2750,88 @@ msgstr "Reprodueix la llista seleccionada al fons sense obrir l'aplicació."
 msgid "Play ${mediaName} in the background"
 msgstr "Reprodueix ${mediaName} al fons"
 
+#.
+#. MARK: - Audio App Intent Strings
+#: APPINTENT_ERROR_NO_MEDIA
+msgid "No matching media was found in your library."
+msgstr "No s'ha trobat cap fitxer multimèdia coincident a la vostra biblioteca."
+
+#: APPINTENT_ERROR_PLAYLIST_UPDATE
+msgid "The playlist could not be updated."
+msgstr "No s'ha pogut actualitzar la llista de reproducció."
+
 #: APPINTENT_ERROR_PLAYBACK_START
 msgid "Playback could not be started."
-msgstr ""
+msgstr "No s'ha pogut inciar la reproducció."
+
+#: APPINTENT_AFFINITY_FAVORITE
+msgctxt "APPINTENT_AFFINITY_FAVORITE"
+msgid "Favorite"
+msgstr "Preferit"
+
+#: APPINTENT_AFFINITY_NOT_FAVORITE
+msgid "Not a Favorite"
+msgstr "No és preferit"
+
+#: APPINTENT_AFFINITY_UNSET
+msgid "Unset"
+msgstr "Desconfigura"
+
+#.
+#. MARK: - Video App Intent Strings
+#: APPINTENT_PLAY_VIDEO_TITLE
+msgctxt "APPINTENT_PLAY_VIDEO_TITLE"
+msgid "Play Video"
+msgstr "Reprodueix el vídeo"
+
+#: APPINTENT_PLAY_VIDEO_DESCRIPTION
+msgid "Play a video from your library."
+msgstr "Reprodueix un vídeo de la vosta biblioteca."
+
+#: APPINTENT_PLAY_VIDEO_PARAM
+msgctxt "APPINTENT_PLAY_VIDEO_PARAM"
+msgid "Video"
+msgstr "Vídeo"
+
+#: APPINTENT_PLAY_VIDEO_PLAY_%24%7Bvideo%7D
+msgid "Play ${video}"
+msgstr "Reprodueix ${video}"
+
+#.
+#. MARK: - Radio App Intent Strings
+#: APPINTENT_PLAY_RADIO_TITLE
+msgid "Play Radio Station"
+msgstr "Reprodueix una emissora de ràdio"
+
+#: APPINTENT_PLAY_RADIO_DESCRIPTION
+msgid "Play a radio station in VLC."
+msgstr "Reprodueix una emissora de ràdio al VLC."
+
+#: APPINTENT_PLAY_RADIO_PLAY_%24%7Bstation%7D
+msgid "Play ${station}"
+msgstr "Reprodueix ${station}"
+
+#: APPINTENT_PLAY_RADIO_PROMPT
+msgid "Which radio station would you like to play?"
+msgstr "Quina emissora de ràdio voldríeu reproduir?"
+
+#.
+#. MARK: - AppShortcut Strings
+#: APPSHORTCUT_PLAY_MEDIA_SHORT_TITLE
+msgid "Play Media"
+msgstr "Obre un element multimèdia"
+
+#: APPSHORTCUT_PLAY_MEDIA_PHRASE_PLAY_%24%7BapplicationName%7D
+msgid "Play media in ${applicationName}"
+msgstr "Reprodueix elements multimèdia a ${applicationName}"
+
+#: APPSHORTCUT_PLAY_MEDIA_PHRASE_PLAYLIST_%24%7BapplicationName%7D
+msgid "Play a playlist in ${applicationName}"
+msgstr "Reprodueix la llista a ${applicationName}"
+
+#: APPSHORTCUT_PLAY_MEDIA_PHRASE_START_%24%7BapplicationName%7D
+msgid "Start playback in ${applicationName}"
+msgstr "Inicia la reproducció a ${applicationName}"
 
 #: APPSHORTCUT_PLAY_AUDIO_SHORT_TITLE
 msgid "Play Audio"
@@ -2686,6 +2875,18 @@ msgstr "Preferit"
 #: APPSHORTCUT_UPDATE_AFFINITY_PHRASE_%24%7BapplicationName%7D
 msgid "Favorite audio in ${applicationName}"
 msgstr "Àudio preferit a ${applicationName}"
+
+#: APPSHORTCUT_PLAY_RADIO_SHORT_TITLE
+msgid "Play Radio"
+msgstr "Reprodueix la ràdio"
+
+#: APPSHORTCUT_PLAY_RADIO_PHRASE_PLAY_%24%7BapplicationName%7D
+msgid "Play radio in ${applicationName}"
+msgstr "Reprodueix la ràdio a ${applicationName}"
+
+#: APPSHORTCUT_PLAY_RADIO_PHRASE_LISTEN_%24%7BapplicationName%7D
+msgid "Listen to radio in ${applicationName}"
+msgstr "Escolteu la ràdio a ${applicationName}"
 
 #.
 #. MARK: - VerticalSliderControl Strings
@@ -2797,60 +2998,50 @@ msgstr "Assigna el subtítol principal"
 msgid "Assign secondary subtitle"
 msgstr "Assigna el subtítol secundari"
 
-#: LAST_PLAYED
-msgid "Last played"
-msgstr ""
+#: LAST_PLAYED_MEDIALIST
+msgid "Last played medialist"
+msgstr "Llista multimèdia reproduïda per última vegada"
+
+#: SHARE_EXTENSION_IMPORTING
+msgid "Adding to VLC…"
+msgstr "Afegint al VLC..."
+
+#: SHARE_EXTENSION_IMPORTED
+msgid "Added to VLC"
+msgstr "Afegit al VLC"
+
+#: SHARE_EXTENSION_FAILED
+msgid "Could not add to VLC"
+msgstr "No s'ha pogut afegir al VLC"
 
 #.
 #. MARK: - Player WatchOS
 #: TRACKS_WO_COUNTER
 msgid "Tracks"
-msgstr ""
+msgstr "Pistes"
 
 #.
 #. MARK: - Radio Stations WatchOS
 #: STATION_LOAD_ERROR
 msgid "There's been an error loading the station. Please try again."
-msgstr ""
+msgstr "S'ha produït un error en carregar l'emissora. Torneu-ho a provar."
 
 #: RADIO_GENERIC_ERROR
 msgid "Something went wrong"
-msgstr ""
+msgstr "Alguna cosa ha anat malament"
 
 #: RADIO_DATA_LOAD_ERROR
 msgid "There's been an error loading the data"
-msgstr ""
+msgstr "Hi ha hagut un error en carregar les dades"
 
 #: DISCOVER_LABEL
 msgid "Discover"
-msgstr ""
-
-#: RECENTS
-msgid "Recents"
-msgstr ""
-
-#.
-#.
-#. MARK: - Media library corruption
-#: MEDIALIBRARY_CORRUPTION_TITLE
-msgid "Media Library damaged"
-msgstr ""
-
-#: MEDIALIBRARY_CORRUPTION_MESSAGE
-msgid ""
-"VLC needs to rebuild its media library due to corruption. Playlists and "
-"playback positions may be lost. Send us the damaged database, which includes "
-"the names of your media and playlists, so we can find out why?"
-msgstr ""
+msgstr "Descobriu"
 
 #: MEDIALIBRARY_CORRUPTION_SEND
 msgid "Send Report"
-msgstr ""
+msgstr "Envia un informe"
 
 #: MEDIALIBRARY_CORRUPTION_DISMISS
 msgid "Don't Send"
-msgstr ""
-
-#: MEDIALIBRARY_CORRUPTION_EMAIL_TITLE
-msgid "Damaged media library database"
-msgstr ""
+msgstr "No enviïs"
