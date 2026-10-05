@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-28 16:16+0000\n"
+"POT-Creation-Date: 2026-10-05 16:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,6 +82,10 @@ msgstr "Hi ha hagut un error en obtenir la llista de paquets: %message%"
 msgid "Update usage conditions"
 msgstr "Actualització de les condicions d'ús"
 
+#: PackageKitUtils
+msgid "Details: %Details%"
+msgstr "Detalls: %Details%"
+
 #: UserUsageConditions
 msgid "No usage conditions"
 msgstr "Sense condicions d'ús"
@@ -157,6 +161,10 @@ msgstr "Tanca la sessió"
 msgid "Password requirements"
 msgstr "Requisits de la contrasenya"
 
+#: PackageKitUtils
+msgid "Transaction Result: %TxnResultFullErrorMessage%"
+msgstr "Resultat de la transacció: %TxnResultFullErrorMessage%"
+
 #: PackageResult
 msgid "The following additional package changes have to be made:"
 msgstr "S'han de fer els canvis addicionals de paquet següents:"
@@ -217,6 +225,10 @@ msgstr "Cancel·la"
 #: MainWindow
 msgid "Rating not possible"
 msgstr "La puntuació no és possible."
+
+#: InstallPackageProcess
+msgid "Install failure"
+msgstr "Error d'instal·lació"
 
 #: MainWindow
 msgid "Package update error"
@@ -371,6 +383,10 @@ msgstr "Ignora el problema per ara."
 #: PackageInfoView
 msgid "n/a"
 msgstr "n/d"
+
+#: PackageKitUtils
+msgid "Error: %Errstr% (%Errno%)"
+msgstr "Error: %Errstr% (%Errno%)"
 
 #: UserDetailVerifierProcess
 msgid "Checking user details"
@@ -648,6 +664,10 @@ msgctxt "UserUsageConditions"
 msgid "Usage conditions download problem"
 msgstr "Problema de baixada de les condicions d'ús"
 
+#: CacheScreenshotProcess
+msgid "Fetching screenshot"
+msgstr "S'obté la captura"
+
 #: UserLoginWindow
 msgid ""
 "An error has arisen downloading the password requirements required to create "
@@ -660,10 +680,6 @@ msgstr ""
 "torneu-ho a provar.\\n"
 "La informació sobre com veure els registres està disponible a la secció del "
 "Dipòsit del Haiku de la Guia d'usuari de Haiku."
-
-#: CacheScreenshotProcess
-msgid "Fetching screenshot"
-msgstr "S'obté la captura"
 
 #: ServerHelper
 msgid ""
@@ -999,6 +1015,10 @@ msgstr ""
 #: RatePackageWindow
 msgid "This rating is visible to other users"
 msgstr "Aquesta puntuació és visible per a altres usuaris."
+
+#: UninstallPackageAction
+msgid "Uninstall failure"
+msgstr "Error de desinstal·lació"
 
 #: UserUsageConditions
 msgctxt "UserUsageConditions"
