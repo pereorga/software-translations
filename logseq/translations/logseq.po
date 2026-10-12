@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-05 16:38+0000\n"
+"POT-Creation-Date: 2026-10-12 17:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1590,6 +1590,7 @@ msgstr "Eliminar un graf"
 
 #: .command.misc/copy
 msgctxt ".command.misc/copy"
+".command.misc/copy"
 msgid "Copy"
 msgstr "Copiar"
 
@@ -2359,6 +2360,11 @@ msgstr ""
 msgid "You are using the Intel (x64) release on Apple Silicon."
 msgstr ""
 
+#: .encryption/copy-key
+msgctxt ".encryption/copy-key"
+msgid "Copy"
+msgstr ""
+
 #: .encryption/current-password
 msgid "Current password"
 msgstr "Contrasenya actual"
@@ -2424,6 +2430,10 @@ msgstr "Inicialitzar parell de claus"
 msgid "Init key-pair err: {1}"
 msgstr "Error de parell de claus d'inici: {1}"
 
+#: .encryption/key-unavailable
+msgid "Key unavailable"
+msgstr ""
+
 #: .encryption/password-not-matched
 msgid "Password not matched"
 msgstr "Les contrasenyes no coincideixen"
@@ -2431,6 +2441,14 @@ msgstr "Les contrasenyes no coincideixen"
 #: .encryption/password-updated-successfully
 msgid "Password updated successfully!"
 msgstr "Contrasenya actualitzada"
+
+#: .encryption/private-key
+msgid "Private key (base64)"
+msgstr ""
+
+#: .encryption/public-key
+msgid "Public key (base64)"
+msgstr ""
 
 #: .encryption/reset-password
 msgctxt ".encryption/reset-password"
@@ -2444,6 +2462,10 @@ msgstr "Definir nova contrasenya"
 #: .encryption/set-password-title
 msgid "Set password for remote graphs"
 msgstr "Definir contrasenya"
+
+#: .encryption/show-private-key
+msgid "Show private key"
+msgstr ""
 
 #: .encryption/updating-password
 msgid "Updating password ..."
@@ -4264,6 +4286,7 @@ msgid "Cannot go to an internal page."
 msgstr "No es pot navegar a la pàgina interna"
 
 #: .nav/graph
+msgctxt ".nav/graph"
 msgid "Graph"
 msgstr "Graf"
 
@@ -7063,6 +7086,10 @@ msgstr "Característiques"
 msgid "Keymap"
 msgstr "Dreceres"
 
+#: .settings/personal-access-tokens
+msgid "Personal access tokens"
+msgstr ""
+
 #: .settings/plugins
 msgctxt ".settings/plugins"
 msgid "Plugins"
@@ -7229,6 +7256,91 @@ msgstr "Error d'importació de SQLiteDB: {1}"
 #: .storage/sqlitedb-save-error
 msgid "SQLiteDB save error: {1}"
 msgstr "Error de desar SQLiteDB: {1}"
+
+#: .sync.personal-access-token.permission/both
+msgid "Read and write"
+msgstr ""
+
+#: .sync.personal-access-token.permission/read
+msgid "Read"
+msgstr ""
+
+#: .sync.personal-access-token.permission/write
+msgid "Write"
+msgstr ""
+
+#: .sync.personal-access-token/api-docs
+msgid "API documentation"
+msgstr ""
+
+#: .sync.personal-access-token/copied
+msgid "Personal access token copied."
+msgstr ""
+
+#: .sync.personal-access-token/create
+msgid "Create token"
+msgstr ""
+
+#: .sync.personal-access-token/create-title
+msgid "Create a personal access token"
+msgstr ""
+
+#: .sync.personal-access-token/created-title
+msgid "Your new personal access token"
+msgstr ""
+
+#: .sync.personal-access-token/created-warning
+msgid "Copy this token now. It cannot be shown again."
+msgstr ""
+
+#: .sync.personal-access-token/date-summary
+msgid "Created {1}; expires {2}"
+msgstr ""
+
+#: .sync.personal-access-token/deleted-graph
+msgid "Deleted graph"
+msgstr ""
+
+#: .sync.personal-access-token/description
+msgid "Create graph-specific credentials for the Logseq REST API."
+msgstr ""
+
+#: .sync.personal-access-token/empty
+msgid "No personal access tokens."
+msgstr ""
+
+#: .sync.personal-access-token/existing-title
+msgid "Existing tokens"
+msgstr ""
+
+#: .sync.personal-access-token/expiration
+msgid "Expiration"
+msgstr ""
+
+#: .sync.personal-access-token/graph
+msgctxt ".sync.personal-access-token/graph"
+msgid "Graph"
+msgstr ""
+
+#: .sync.personal-access-token/no-graphs
+msgid "No synced graphs are available."
+msgstr ""
+
+#: .sync.personal-access-token/permission
+msgid "Permission"
+msgstr ""
+
+#: .sync.personal-access-token/request-error
+msgid "The personal access token request failed. Please try again."
+msgstr ""
+
+#: .sync.personal-access-token/revoke
+msgid "Revoke"
+msgstr ""
+
+#: .sync.personal-access-token/revoke-confirm
+msgid "Revoke this personal access token? This cannot be undone."
+msgstr ""
 
 #: .sync/assets-downloading
 msgid "downloading assets"
