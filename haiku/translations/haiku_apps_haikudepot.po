@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-05 16:37+0000\n"
+"POT-Creation-Date: 2026-10-12 17:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -241,6 +241,10 @@ msgstr "Cliqueu aquí"
 #: PackageInfoView
 msgid "No screenshot available."
 msgstr "No hi ha cap captura de pantalla disponible."
+
+#: MainWindow
+msgid "Try installing anyway"
+msgstr "Intenta la instal·lació tanmateix"
 
 #: ProcessCoordinator
 msgid ""
@@ -1107,6 +1111,16 @@ msgctxt "ToLatestUserUsageConditionsWindow"
 msgid "View the usage conditions"
 msgstr "Consulteu les condicions d'ús"
 
+#: MainWindow
+msgid ""
+"To install package %PackageName% requires %PackageBytesDescription% of free "
+"disk space, but only %FreeBytesDescription% is available. The installation "
+"may fail."
+msgstr ""
+"La instal·lació del paquet %PackageName% requereix %PackageBytesDescription% "
+"d'espai lliure al disc, però només hi ha %FreeBytesDescription% disponibles. "
+"És possible que la instal·lació falli."
+
 #: ServerHelper
 msgctxt "ServerHelper"
 msgid "OK"
@@ -1234,6 +1248,10 @@ msgstr "Per poder valorar els paquets, heu d’iniciar sessió en un compte."
 #: ShuttingDownWindow
 msgid "Cleaning up…"
 msgstr "Es neteja..."
+
+#: MainWindow
+msgid "Insufficient storage capacity"
+msgstr "Capacitat d'emmagatzematge insuficient"
 
 #: ShuttingDownWindow
 msgid "%appname% is stopping or completing running operations before quitting."
