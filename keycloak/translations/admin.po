@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 17:09+0000\n"
+"POT-Creation-Date: 2026-10-19 15:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -441,6 +441,18 @@ msgstr "El pas «després» de la configuració no pot ser negatiu."
 #: workflowStepAfterInvalid
 msgid "Step ''after'' configuration is not valid: {0}."
 msgstr "El pas «després» de la configuració no és vàlid: {0}."
+
+#: workflowScheduleAfterInvalid
+msgid "Schedule ''after'' configuration is not valid: {0}."
+msgstr ""
+
+#: workflowScheduleAfterTooShort
+msgid "Schedule ''after'' configuration must be at least 1 second."
+msgstr ""
+
+#: workflowScheduleBatchSizeNotPositive
+msgid "Schedule ''batch-size'' configuration must be greater than 0."
+msgstr ""
 
 #: workflowStepProviderNotFound
 msgid "Could not find step provider: {0}."
