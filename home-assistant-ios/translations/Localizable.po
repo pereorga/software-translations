@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-12 17:09+0000\n"
+"POT-Creation-Date: 2026-10-19 15:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -712,16 +712,6 @@ msgctxt "close_label"
 msgid "Close"
 msgstr "Tanca"
 
-#: component.circular_slider.decrease
-msgctxt "component.circular_slider.decrease"
-msgid "Decrease"
-msgstr ""
-
-#: component.circular_slider.increase
-msgctxt "component.circular_slider.increase"
-msgid "Increase"
-msgstr ""
-
 #: component.collapsible_view.collapse
 msgid "Collapse"
 msgstr "Col·lapsa"
@@ -729,190 +719,6 @@ msgstr "Col·lapsa"
 #: component.collapsible_view.expand
 msgid "Expand"
 msgstr "Expandeix"
-
-#: component.cover.buttons_mode
-msgid "Buttons"
-msgstr ""
-
-#: component.cover.position_mode
-msgctxt "component.cover.position_mode"
-msgid "Position"
-msgstr ""
-
-#: component.light.brightness
-msgctxt "component.light.brightness"
-msgid "Brightness"
-msgstr ""
-
-#: component.light.color
-msgctxt "component.light.color"
-"component.light.color"
-"component.light.color"
-"component.light.color"
-"component.light.color"
-"component.light.color"
-msgid "Color"
-msgstr ""
-
-#: component.light.color_temperature
-msgid "Color temperature"
-msgstr ""
-
-#: component.light.set_white
-msgid "Set white"
-msgstr ""
-
-#: component.lock.lock
-msgctxt "component.lock.lock"
-msgid "Lock"
-msgstr ""
-
-#: component.lock.open_door
-msgid "Open door"
-msgstr ""
-
-#: component.lock.open_door_confirm
-msgid "Really open?"
-msgstr ""
-
-#: component.lock.open_door_done
-msgid "Door open"
-msgstr ""
-
-#: component.lock.unlock
-msgctxt "component.lock.unlock"
-"component.lock.unlock"
-"component.lock.unlock"
-msgid "Unlock"
-msgstr ""
-
-#: component.media_control.mute
-msgctxt "component.media_control.mute"
-msgid "Mute"
-msgstr ""
-
-#: component.media_control.repeat_all
-msgctxt "component.media_control.repeat_all"
-msgid "All"
-msgstr ""
-
-#: component.media_control.repeat_mode
-msgctxt "component.media_control.repeat_mode"
-msgid "Repeat"
-msgstr ""
-
-#: component.media_control.repeat_off
-msgctxt "component.media_control.repeat_off"
-msgid "Off"
-msgstr ""
-
-#: component.media_control.repeat_one
-msgid "One"
-msgstr ""
-
-#: component.media_control.shuffle
-msgid "Shuffle"
-msgstr ""
-
-#: component.media_control.stop
-msgctxt "component.media_control.stop"
-"component.media_control.stop"
-msgid "Stop"
-msgstr ""
-
-#: component.media_control.track_position
-msgid "Track position"
-msgstr ""
-
-#: component.media_control.unmute
-msgctxt "component.media_control.unmute"
-msgid "Unmute"
-msgstr ""
-
-#: component.media_control.volume
-msgid "Volume"
-msgstr ""
-
-#: component.media_control.volume_down
-msgid "Volume down"
-msgstr ""
-
-#: component.media_control.volume_up
-msgid "Volume up"
-msgstr ""
-
-#: component.scene.activate
-msgctxt "component.scene.activate"
-"component.scene.activate"
-msgid "Activate"
-msgstr ""
-
-#: component.state_toggle.toggle
-msgctxt "component.state_toggle.toggle"
-msgid "Toggle"
-msgstr ""
-
-#: component.state_toggle.turn_off
-msgctxt "component.state_toggle.turn_off"
-msgid "Turn off"
-msgstr ""
-
-#: component.state_toggle.turn_on
-msgctxt "component.state_toggle.turn_on"
-msgid "Turn on"
-msgstr ""
-
-#: component.timer.cancel
-msgctxt "component.timer.cancel"
-msgid "Cancel"
-msgstr ""
-
-#: component.timer.finish
-msgid "Finish"
-msgstr ""
-
-#: component.timer.pause
-msgctxt "component.timer.pause"
-msgid "Pause"
-msgstr ""
-
-#: component.timer.set_duration
-msgid "Set"
-msgstr ""
-
-#: component.timer.start
-msgctxt "component.timer.start"
-"component.timer.start"
-msgid "Start"
-msgstr ""
-
-#: component.update.clear_skipped
-msgid "Clear skipped"
-msgstr ""
-
-#: component.update.install
-msgid "Update"
-msgstr ""
-
-#: component.update.release_announcement
-msgid "Read release announcement"
-msgstr ""
-
-#: component.update.skip
-msgctxt "component.update.skip"
-"component.update.skip"
-"component.update.skip"
-"component.update.skip"
-msgid "Skip"
-msgstr ""
-
-#: component.vacuum.by_area
-msgid "By area"
-msgstr ""
-
-#: component.vacuum.cleaning
-msgid "Cleaning"
-msgstr ""
 
 #: connectivity.check.port
 msgid "Port Reachability"
@@ -1087,6 +893,22 @@ msgstr "Reordena"
 msgctxt "home_view.menu.settings"
 msgid "Settings"
 msgstr "Configuració"
+
+#: local_push.state_notification.connected.body
+msgid "Connected to %@"
+msgstr ""
+
+#: local_push.state_notification.connected.title
+msgid "Local push connected"
+msgstr ""
+
+#: local_push.state_notification.disconnected.body
+msgid "Lost %1$@: %2$@"
+msgstr ""
+
+#: local_push.state_notification.disconnected.title
+msgid "Local push disconnected"
+msgstr ""
 
 #: location_change_notification.app_shortcut.body
 msgid "Location updated via App Shortcut"
@@ -1679,6 +1501,7 @@ msgid "What is your home network?"
 msgstr "Quina és la vostra xarxa domèstica?"
 
 #: onboarding.permissions.allow
+msgctxt "onboarding.permissions.allow"
 msgid "Allow"
 msgstr "Permetre"
 
@@ -1879,6 +1702,15 @@ msgstr "Afegir Servidor"
 msgid "Import Failed"
 msgstr "Importació Fallida"
 
+#: settings.connection_section.client_certificate.not_configured
+msgctxt "settings.connection_section.client_certificate.not_configured"
+"settings.connection_section.client_certificate.not_configured"
+"settings.connection_section.client_certificate.not_configured"
+"settings.connection_section.client_certificate.not_configured"
+"settings.connection_section.client_certificate.not_configured"
+msgid "Not configured"
+msgstr ""
+
 #: settings.connection_section.client_certificate.password_prompt.import_button
 msgctxt "settings.connection_section.client_certificate.password_prompt.import_button"
 msgid "Import"
@@ -1905,6 +1737,10 @@ msgstr ""
 msgid "Connected via"
 msgstr "Connectat a través de"
 
+#: settings.connection_section.connection_access_security_level.footer
+msgid "Protects your internal URL when you are not at home."
+msgstr ""
+
 #: settings.connection_section.delete_server.message
 msgid "Are you sure you wish to delete this server?"
 msgstr "Segur que voleu eliminar aquest servidor?"
@@ -1927,6 +1763,10 @@ msgstr "Detalls"
 msgid "You cannot remove only available URL."
 msgstr "No podeu eliminar només l'URL disponible."
 
+#: settings.connection_section.external_base_url.header_subtitle
+msgid "Used when this device is away from home."
+msgstr ""
+
 #: settings.connection_section.external_base_url.title
 msgid "External URL"
 msgstr "URL externa"
@@ -1934,6 +1774,14 @@ msgstr "URL externa"
 #: settings.connection_section.header
 msgid "Connection"
 msgstr "Connexió"
+
+#: settings.connection_section.home_network.header
+msgid "Home network"
+msgstr ""
+
+#: settings.connection_section.internal_base_url.header_subtitle
+msgid "Used only while this device is on your home network."
+msgstr ""
 
 #: settings.connection_section.internal_base_url.placeholder
 msgid "e.g. http://homeassistant.local:8123/"
@@ -1954,6 +1802,10 @@ msgstr "Adreces de maquinari"
 #: settings.connection_section.internal_url_hardware_addresses.invalid
 msgid "Hardware addresses must look like aa:bb:cc:dd:ee:ff"
 msgstr "Les adreces de maquinari han d'assemblar-se a aa:bb:cc:dd:ee:ff"
+
+#: settings.connection_section.internal_url_hardware_addresses.title
+msgid "Network interface addresses"
+msgstr ""
 
 #: settings.connection_section.internal_url_ssids.add_new_ssid
 msgid "Add new SSID"
@@ -2017,6 +1869,20 @@ msgstr "Ubicació enviada"
 msgid "Logged in as"
 msgstr "Sessió iniciada com"
 
+#: settings.connection_section.network_detection_permission.allow
+msgctxt "settings.connection_section.network_detection_permission.allow"
+msgid "Allow"
+msgstr ""
+
+#: settings.connection_section.network_detection_permission.title
+msgid "Location access needed"
+msgstr ""
+
+#: settings.connection_section.open_server
+msgctxt "settings.connection_section.open_server"
+msgid "Open"
+msgstr ""
+
 #: settings.connection_section.refresh_server
 msgid "Update server information"
 msgstr "Actualitza la informació del servidor"
@@ -2039,10 +1905,31 @@ msgstr "Cap"
 msgid "Sensors Sent"
 msgstr "Sensors enviats"
 
+#: settings.connection_section.server_details_title
+msgid "Server Details"
+msgstr ""
+
+#: settings.connection_section.server_version_footer
+msgid "Home Assistant %@"
+msgstr ""
+
 #: settings.connection_section.servers
 msgctxt "settings.connection_section.servers"
 msgid "Servers"
 msgstr "Servidors"
+
+#: settings.connection_section.sync_server
+msgid "Sync"
+msgstr ""
+
+#: settings.connection_section.troubleshooting
+msgctxt "settings.connection_section.troubleshooting"
+msgid "Troubleshooting"
+msgstr ""
+
+#: settings.connection_section.url_address.header
+msgid "Address"
+msgstr ""
 
 #: settings.connection_section.validate_error.edit_url
 msgid "Edit URL"
@@ -2100,6 +1987,28 @@ msgstr "Detalls de la fila"
 #: settings.database_explorer.title
 msgid "Database Explorer"
 msgstr "Explorador de base de dades"
+
+#: settings.debugging.manage_storage.item.legacy_realm_store.explanation
+msgid ""
+"Leftover data from an older version of the app. Nothing uses it anymore."
+msgstr ""
+"The old store zones, notification categories and complications are imported "
+"from. It is only kept until that import has run."
+
+#: settings.debugging.manage_storage.summary.footer
+msgid ""
+"Protected rows are the ones the app cannot rebuild: the database holding "
+"your servers and setups, and files you added yourself. Everything else is a "
+"copy the app makes again when it needs it."
+msgstr ""
+"Protected rows are the ones the app cannot rebuild: the database holding "
+"your servers and setups, files you added yourself, and anything still "
+"waiting to be imported. Everything else is a copy the app makes again when "
+"it needs it."
+
+#: settings.debugging.notify_local_push_state_changes.title
+msgid "Notify when local push connects or disconnects"
+msgstr ""
 
 #: settings.debugging.title
 msgid "Debugging"
@@ -2262,6 +2171,11 @@ msgstr "Restableix la memòria cau del frontend"
 msgctxt "settings.server_select.title"
 msgid "Server"
 msgstr "Servidor"
+
+#: settings.server_switching.automatic_switching.title
+msgctxt "settings.server_switching.automatic_switching.title"
+msgid "Automatic switching"
+msgstr ""
 
 #: settings.status_section.header
 msgctxt "settings.status_section.header"
@@ -3173,6 +3087,21 @@ msgstr "El servei (ex. Homeassistant.turn_on) ha de ser definit"
 msgid "A renderable template must be defined"
 msgstr "S'ha de definir una plantilla renderizable"
 
+#: watch.complications.corner_gauge_display.gauge
+msgctxt "watch.complications.corner_gauge_display.gauge"
+"watch.complications.corner_gauge_display.gauge"
+"watch.complications.corner_gauge_display.gauge"
+msgid "Gauge"
+msgstr ""
+
+#: watch.complications.corner_gauge_display.progress
+msgid "Progress bar"
+msgstr ""
+
+#: watch.complications.corner_gauge_display.title
+msgid "Corner indicator"
+msgstr ""
+
 #: watch.configurator.delete.button
 msgid "Delete Complication"
 msgstr "Suprimir la complicació"
@@ -3291,7 +3220,6 @@ msgstr "Estil"
 
 #: watch.configurator.rows.gauge.title
 msgctxt "watch.configurator.rows.gauge.title"
-"watch.configurator.rows.gauge.title"
 msgid "Gauge"
 msgstr "Galga"
 
