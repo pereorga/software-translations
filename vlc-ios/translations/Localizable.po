@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-05 16:38+0000\n"
+"POT-Creation-Date: 2026-10-19 15:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -593,6 +593,10 @@ msgstr "Tots els països"
 msgid "See All"
 msgstr "Veure-ho tot"
 
+#: LOAD_MORE
+msgid "Load More"
+msgstr ""
+
 #: STATION_COUNT
 msgid "%lu stations"
 msgstr "%lu emissores"
@@ -730,10 +734,6 @@ msgstr "Compartir Wi-Fi"
 #: BROWSE_ADD_SERVER
 msgid "Add server"
 msgstr "Afegir el servidor"
-
-#: STREAMS
-msgid "Streams"
-msgstr "Fluxos de dades"
 
 #: LOCAL_NETWORK
 msgid "Local Network"
@@ -1433,6 +1433,13 @@ msgstr ""
 "Tots els fitxers multimèdia que hi hagi dins de les carpetes seleccionades "
 "també s'eliminaran del disc."
 
+#: DELETE_MESSAGE_EXTERNAL_FOLDER
+msgid ""
+"Are you sure to delete the selection?\n"
+"The selected folders and everything inside them will be deleted from the "
+"disk. Drives are only removed from the library."
+msgstr ""
+
 #: DELETE_MESSAGE_HISTORY
 msgid ""
 "Are you sure to remove the selected media from the history?\n"
@@ -1606,6 +1613,14 @@ msgstr ""
 #: PODCAST_OPEN_WEBSITE
 msgid "Open Website…"
 msgstr "Obre el lloc web…"
+
+#: PODCAST_DOWNLOAD_NEW_EPISODES
+msgid "Download New Episodes"
+msgstr ""
+
+#: PODCAST_DOWNLOADS_DISABLED
+msgid "Disabled"
+msgstr ""
 
 #: PODCAST_EMPTY_TITLE
 msgid "No Podcasts Yet"
@@ -2955,6 +2970,38 @@ msgstr "1 carpeta"
 #: SUBFOLDERS_DESCRIPTION
 msgid "%d folders"
 msgstr "%d carpetes"
+
+#: FOLDER_LOCATION_DEVICE
+msgid "On This Device"
+msgstr ""
+
+#: FOLDER_LOCATION_EXTERNAL_DRIVE
+msgid "External Drive"
+msgstr ""
+
+#: FOLDER_LOCATION_ICLOUD_DRIVE
+msgid "iCloud Drive"
+msgstr ""
+
+#: ADD_EXTERNAL_FOLDER
+msgid "Add External Folder…"
+msgstr ""
+
+#: EXTERNAL_FOLDER_NOT_ADDED
+msgid "Folder Not Added"
+msgstr ""
+
+#: EXTERNAL_FOLDER_OVERLAPPING
+msgid "This folder is already part of your library."
+msgstr ""
+
+#: EXTERNAL_FOLDER_FAILED
+msgid "VLC can't access this folder."
+msgstr ""
+
+#: REMOVE_FROM_LIBRARY
+msgid "Remove from Library"
+msgstr ""
 
 #: ACCESSIBILITY_SELECTED
 msgid "selected"
