@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: bleachbit\n"
-"Report-Msgid-Bugs-To: andrew@bleachbit.org\n"
-"POT-Creation-Date: 2026-09-29 10:27-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-17 17:59-0600\n"
 "PO-Revision-Date: 2026-10-11 11:51+0000\n"
 "Last-Translator: Jaime Muñoz Martín <jmmartin_5@outlook.com>\n"
 "Language-Team: Catalan <https://hosted.weblate.org/projects/bleachbit/main/"
@@ -20,6 +20,7 @@ msgstr ""
 "X-Generator: Weblate 2026.10.1.dev0\n"
 "X-Launchpad-Export-Date: 2022-01-23 20:20+0000\n"
 
+#. Cleaner description: the category of application.
 msgid "Media player"
 msgstr "Reproductor multimèdia"
 
@@ -28,6 +29,7 @@ msgstr "Reproductor multimèdia"
 msgid "Cookies"
 msgstr "Galetes"
 
+#. Description of the Cookies cleaning option.
 msgid ""
 "Delete cookies, which store login information, website preferences, and "
 "tracking identifiers"
@@ -35,9 +37,11 @@ msgstr ""
 "Suprimeix les galetes, que emmagatzemen informació d'inici de sessió, "
 "preferències del lloc web i identificadors de seguiment"
 
+#. Name of a cleaning option for usage history.
 msgid "History"
 msgstr "Historial"
 
+#. Description of the History cleaning option.
 msgid "Delete the usage history"
 msgstr "Suprimeix l'historial d'ús"
 
@@ -60,9 +64,11 @@ msgstr "Memòria cau"
 msgid "Delete the cache"
 msgstr "Suprimeix la memòria cau"
 
+#. Name of a cleaning option: the list of most recently used items, often the last opened files.
 msgid "Most recently used"
 msgstr "Usats recentment"
 
+#. Description of the Most recently used cleaning option.
 msgid "Delete the most recently used list"
 msgstr "Suprimeix la llista de fitxers usats recentment"
 
@@ -88,6 +94,7 @@ msgstr "Registres de xat"
 msgid "Delete the chat logs"
 msgstr "Suprimeix els registres de xat"
 
+#. Cleaner description: the category of application.
 msgid "Web browser"
 msgstr "Navegador web"
 
@@ -100,6 +107,7 @@ msgstr "Suprimeix les còpies de seguretat"
 msgid "Crash reports"
 msgstr "Informes de fallades inesperades"
 
+#. Description of a cleaning option that deletes files on disk.
 msgid "Delete the files"
 msgstr "Suprimeix els fitxers"
 
@@ -119,20 +127,23 @@ msgstr ""
 "Base de dades de noms d'usuari i contrasenyes, així com dels llocs per als "
 "quals no han d’emmagatzemar contrasenyes"
 
+#. Warning shown when the user selects the Passwords cleaning option.
 msgid "This option will delete your saved passwords."
 msgstr "Aquesta opció suprimirà les contrasenyes desades."
 
+#. Label for cleaning option that deletes saved session data.
 msgid "Session"
 msgstr "Sessió"
 
+#. Description for the Session cleaning option.
 msgid "Previously open tabs and windows"
 msgstr "Pestanyes i finestres obertes anteriorment"
 
-#. Label for cleaning option to delete site data such as LocalStorage and IndexedDB
+#. Label for cleaning option to delete site data such as LocalStorage and IndexedDB.
 msgid "Site data"
 msgstr "Dades del lloc"
 
-#. Description for cleaning option. LocalStorage and IndexedDB are proper nouns: do not translate
+#. Description for cleaning option. LocalStorage and IndexedDB are proper nouns: do not translate.
 msgid "Delete LocalStorage, IndexedDB, and other data stored by websites"
 msgstr ""
 "Suprimeix LocalStorage, IndexedDB i altres dades emmagatzemades pels llocs "
@@ -235,6 +246,17 @@ msgstr ""
 "Suprimeix les dades de sincronització (incloses les aplicacions web) i tanca "
 "la sessió del navegador"
 
+msgid "Search engines"
+msgstr "Motors de cerca"
+
+#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
+msgid ""
+"Reset the search engine usage history and delete non-factory search engines, "
+"some of which are added automatically"
+msgstr ""
+"Restableix l'historial d'ús dels motors de cerca i suprimeix els motors de "
+"cerca que no venen de fàbrica, alguns dels quals s'afegeixen automàticament"
+
 msgid "Game"
 msgstr "Joc"
 
@@ -314,20 +336,6 @@ msgstr "Sessió actual"
 msgid "Delete the current session"
 msgstr "Suprimeix la sessió actual"
 
-msgid "Search engines"
-msgstr "Motors de cerca"
-
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-#. 'Factory' means a search engine that is installed by default 'from the factory,' but this is different than a 'default search engine' https://lists.launchpad.net/launchpad-translators/msg00283.html
-msgid ""
-"Reset the search engine usage history and delete non-factory search engines, "
-"some of which are added automatically"
-msgstr ""
-"Restableix l'historial d'ús dels motors de cerca i suprimeix els motors de "
-"cerca que no venen de fàbrica, alguns dels quals s'afegeixen automàticament"
-
 msgid "File manager"
 msgstr "Gestor de fitxers"
 
@@ -378,6 +386,7 @@ msgstr "Suprimeix els fitxers obsolets"
 msgid "Package lists"
 msgstr "Llistes de paquets"
 
+#. Cleaner description: the category of application. 'Container' means a software container that packages and runs applications in isolation, not a physical shipping container.
 msgid "Container platform"
 msgstr "Plataforma de contenidors"
 
@@ -490,7 +499,7 @@ msgstr "Llista de fitxers baixats"
 msgid "Delete the list of visited web pages"
 msgstr "Suprimeix la llista de pàgines web visitades"
 
-#. Cleaning option that deletes AI models in a web browser
+#. Cleaning option that deletes AI models in a web browser.
 msgid "AI"
 msgstr "Opció de neteja que elimina els models d'IA en un navegador web"
 
@@ -1561,6 +1570,7 @@ msgstr "Voleu obrir %s al navegador web?"
 
 #. TRANSLATORS: Title of a confirmation dialog.
 #. TRANSLATORS: Title of confirmation dialog for deleting orphaned wipe files.
+#. TRANSLATORS: Title of confirmation dialog for repairing folder permissions.
 msgid "Confirm"
 msgstr "Confirma"
 
@@ -2135,9 +2145,9 @@ msgstr ""
 "És possible que el BleachBit no tingui accés complet al disc. Sense ell, el "
 "macOS bloqueja l'accés a alguns fitxers i alguns netejadors no funcionaran.\n"
 "\n"
-"Per solucionar-ho, obriu la Configuració del sistema > Privadesa i "
-"seguretat > Accés complet al disc, activeu BleachBit i, a continuació, "
-"reinicieu el BleachBit."
+"Per solucionar-ho, obriu la Configuració del sistema > Privadesa i seguretat "
+"> Accés complet al disc, activeu BleachBit i, a continuació, reinicieu el "
+"BleachBit."
 
 #. TRANSLATORS: Column header indicating whether the cleaner is active/enabled.
 #. Used in the tree view on the main screen.
@@ -2253,6 +2263,28 @@ msgid ""
 msgstr ""
 "El BleachBit ha detectat fitxers residuals d'una operació d'esborrat de disc "
 "interrompuda. Voleu previsualitzar-los amb la opció per suprimir-los?"
+
+#. TRANSLATORS: This message is shown on Windows when the configuration
+#. folder (%APPDATA%\BleachBit) has broken file permissions that prevent
+#. non-administrator processes from accessing it. %s is the folder path.
+#, python-format
+msgid ""
+"BleachBit detected a permissions issue with its configuration folder (%s). "
+"Would you like to repair it?"
+msgstr ""
+
+#. TRANSLATORS: Message shown in the log after repairing
+#. folder permissions. %s is the folder path.
+#, python-format
+msgid "Repaired permissions for %s."
+msgstr ""
+
+#. TRANSLATORS: Message shown in the log when repairing
+#. folder permissions did not fully succeed. %s is the
+#. folder path.
+#, python-format
+msgid "Could not fully repair permissions for %s."
+msgstr ""
 
 #. TRANSLATORS: Error message shown when checking for updates fails.
 #. %s is the error details.
@@ -2599,6 +2631,10 @@ msgstr "Accés denegat: %s"
 msgid "Database is locked: %s"
 msgstr "La base de dades està bloquejada: %s"
 
+#. TRANSLATORS: The special keyword {operation_option} will be
+#. replaced by a cleaner and option such as 'firefox.cache'.
+#. The special keyword {command} will be replaced by the
+#. cleaning action that failed. Do not translate the placeholders.
 #, python-brace-format
 msgid "Error: {operation_option}: {command}"
 msgstr "Error: {operation_option}: {command}"
@@ -2612,6 +2648,8 @@ msgid "To stop this process, press the abort button on the toolbar and wait."
 msgstr ""
 "Per aturar aquest procés, premeu el botó Avorta a la barra d'eines i espereu."
 
+#. TRANSLATORS: Warning shown while wiping a drive's
+#. empty space.
 msgid ""
 "If the application is force closed before the process is complete, large "
 "files may remain on the disk, and they may use all available space. To "
@@ -2665,6 +2703,8 @@ msgstr "Fitxers que se suprimiran: %d"
 msgid "Special operations: %d"
 msgstr "Operacions especials: %d"
 
+#. TRANSLATORS: %d is the count of errors that occurred
+#. during the cleaning or preview operation.
 #, python-format
 msgid "Errors: %d"
 msgstr "Errors: %d"
