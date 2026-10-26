@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-19 15:08+0000\n"
+"POT-Creation-Date: 2026-10-26 14:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -894,22 +894,6 @@ msgctxt "home_view.menu.settings"
 msgid "Settings"
 msgstr "Configuració"
 
-#: local_push.state_notification.connected.body
-msgid "Connected to %@"
-msgstr ""
-
-#: local_push.state_notification.connected.title
-msgid "Local push connected"
-msgstr ""
-
-#: local_push.state_notification.disconnected.body
-msgid "Lost %1$@: %2$@"
-msgstr ""
-
-#: local_push.state_notification.disconnected.title
-msgid "Local push disconnected"
-msgstr ""
-
 #: location_change_notification.app_shortcut.body
 msgid "Location updated via App Shortcut"
 msgstr "Ubicació actualitzada mitjançant drecera d’aplicació"
@@ -1702,15 +1686,6 @@ msgstr "Afegir Servidor"
 msgid "Import Failed"
 msgstr "Importació Fallida"
 
-#: settings.connection_section.client_certificate.not_configured
-msgctxt "settings.connection_section.client_certificate.not_configured"
-"settings.connection_section.client_certificate.not_configured"
-"settings.connection_section.client_certificate.not_configured"
-"settings.connection_section.client_certificate.not_configured"
-"settings.connection_section.client_certificate.not_configured"
-msgid "Not configured"
-msgstr ""
-
 #: settings.connection_section.client_certificate.password_prompt.import_button
 msgctxt "settings.connection_section.client_certificate.password_prompt.import_button"
 msgid "Import"
@@ -1732,14 +1707,6 @@ msgid ""
 msgstr ""
 "Quan es connecti mitjançant el núvol, no s’utilitzarà la URL externa. No cal "
 "configurar-ne una tret que vulgueu desactivar el núvol."
-
-#: settings.connection_section.connecting_via
-msgid "Connected via"
-msgstr "Connectat a través de"
-
-#: settings.connection_section.connection_access_security_level.footer
-msgid "Protects your internal URL when you are not at home."
-msgstr ""
 
 #: settings.connection_section.delete_server.message
 msgid "Are you sure you wish to delete this server?"
@@ -1763,10 +1730,6 @@ msgstr "Detalls"
 msgid "You cannot remove only available URL."
 msgstr "No podeu eliminar només l'URL disponible."
 
-#: settings.connection_section.external_base_url.header_subtitle
-msgid "Used when this device is away from home."
-msgstr ""
-
 #: settings.connection_section.external_base_url.title
 msgid "External URL"
 msgstr "URL externa"
@@ -1774,14 +1737,6 @@ msgstr "URL externa"
 #: settings.connection_section.header
 msgid "Connection"
 msgstr "Connexió"
-
-#: settings.connection_section.home_network.header
-msgid "Home network"
-msgstr ""
-
-#: settings.connection_section.internal_base_url.header_subtitle
-msgid "Used only while this device is on your home network."
-msgstr ""
 
 #: settings.connection_section.internal_base_url.placeholder
 msgid "e.g. http://homeassistant.local:8123/"
@@ -1802,10 +1757,6 @@ msgstr "Adreces de maquinari"
 #: settings.connection_section.internal_url_hardware_addresses.invalid
 msgid "Hardware addresses must look like aa:bb:cc:dd:ee:ff"
 msgstr "Les adreces de maquinari han d'assemblar-se a aa:bb:cc:dd:ee:ff"
-
-#: settings.connection_section.internal_url_hardware_addresses.title
-msgid "Network interface addresses"
-msgstr ""
 
 #: settings.connection_section.internal_url_ssids.add_new_ssid
 msgid "Add new SSID"
@@ -1865,24 +1816,6 @@ msgstr "Només el nom de la zona"
 msgid "Location Sent"
 msgstr "Ubicació enviada"
 
-#: settings.connection_section.logged_in_as
-msgid "Logged in as"
-msgstr "Sessió iniciada com"
-
-#: settings.connection_section.network_detection_permission.allow
-msgctxt "settings.connection_section.network_detection_permission.allow"
-msgid "Allow"
-msgstr ""
-
-#: settings.connection_section.network_detection_permission.title
-msgid "Location access needed"
-msgstr ""
-
-#: settings.connection_section.open_server
-msgctxt "settings.connection_section.open_server"
-msgid "Open"
-msgstr ""
-
 #: settings.connection_section.refresh_server
 msgid "Update server information"
 msgstr "Actualitza la informació del servidor"
@@ -1905,31 +1838,10 @@ msgstr "Cap"
 msgid "Sensors Sent"
 msgstr "Sensors enviats"
 
-#: settings.connection_section.server_details_title
-msgid "Server Details"
-msgstr ""
-
-#: settings.connection_section.server_version_footer
-msgid "Home Assistant %@"
-msgstr ""
-
 #: settings.connection_section.servers
 msgctxt "settings.connection_section.servers"
 msgid "Servers"
 msgstr "Servidors"
-
-#: settings.connection_section.sync_server
-msgid "Sync"
-msgstr ""
-
-#: settings.connection_section.troubleshooting
-msgctxt "settings.connection_section.troubleshooting"
-msgid "Troubleshooting"
-msgstr ""
-
-#: settings.connection_section.url_address.header
-msgid "Address"
-msgstr ""
 
 #: settings.connection_section.validate_error.edit_url
 msgid "Edit URL"
@@ -1987,28 +1899,6 @@ msgstr "Detalls de la fila"
 #: settings.database_explorer.title
 msgid "Database Explorer"
 msgstr "Explorador de base de dades"
-
-#: settings.debugging.manage_storage.item.legacy_realm_store.explanation
-msgid ""
-"Leftover data from an older version of the app. Nothing uses it anymore."
-msgstr ""
-"The old store zones, notification categories and complications are imported "
-"from. It is only kept until that import has run."
-
-#: settings.debugging.manage_storage.summary.footer
-msgid ""
-"Protected rows are the ones the app cannot rebuild: the database holding "
-"your servers and setups, and files you added yourself. Everything else is a "
-"copy the app makes again when it needs it."
-msgstr ""
-"Protected rows are the ones the app cannot rebuild: the database holding "
-"your servers and setups, files you added yourself, and anything still "
-"waiting to be imported. Everything else is a copy the app makes again when "
-"it needs it."
-
-#: settings.debugging.notify_local_push_state_changes.title
-msgid "Notify when local push connects or disconnects"
-msgstr ""
 
 #: settings.debugging.title
 msgid "Debugging"
@@ -2171,11 +2061,6 @@ msgstr "Restableix la memòria cau del frontend"
 msgctxt "settings.server_select.title"
 msgid "Server"
 msgstr "Servidor"
-
-#: settings.server_switching.automatic_switching.title
-msgctxt "settings.server_switching.automatic_switching.title"
-msgid "Automatic switching"
-msgstr ""
 
 #: settings.status_section.header
 msgctxt "settings.status_section.header"
@@ -3086,21 +2971,6 @@ msgstr "El servei (ex. Homeassistant.turn_on) ha de ser definit"
 #: url_handler.x_callback_url.error.templateMissing
 msgid "A renderable template must be defined"
 msgstr "S'ha de definir una plantilla renderizable"
-
-#: watch.complications.corner_gauge_display.gauge
-msgctxt "watch.complications.corner_gauge_display.gauge"
-"watch.complications.corner_gauge_display.gauge"
-"watch.complications.corner_gauge_display.gauge"
-msgid "Gauge"
-msgstr ""
-
-#: watch.complications.corner_gauge_display.progress
-msgid "Progress bar"
-msgstr ""
-
-#: watch.complications.corner_gauge_display.title
-msgid "Corner indicator"
-msgstr ""
 
 #: watch.configurator.delete.button
 msgid "Delete Complication"
