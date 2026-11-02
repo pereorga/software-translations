@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 14:42+0000\n"
+"POT-Creation-Date: 2026-11-02 17:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5732,7 +5732,7 @@ msgid "Done Editing?"
 msgstr "Heu acabat d'editar?"
 
 #: character-%3Edrag_title
-msgid "Drag Title For A New Group"
+msgid "Drag Title for a New Group"
 msgstr "Arrossegueu el títol per a un grup nou"
 
 #: character-%3Eedit_groups
@@ -6501,7 +6501,6 @@ msgid "General Support"
 msgstr "Assistència general"
 
 #: contact-%3Eget_in_touch
-msgctxt "contact->get_in_touch"
 msgid "Get In Touch"
 msgstr "Poseu-vos en contacte"
 
@@ -6514,11 +6513,11 @@ msgid "Contribute"
 msgstr "Contribuïu-hi"
 
 #: contribute-%3Emissing_a_biography
-msgid "Missing A Biography"
+msgid "Missing a Biography"
 msgstr "Hi falta la biografia"
 
 #: contribute-%3Emissing_a_profile_image
-msgid "Missing A Profile Image"
+msgid "Missing a Profile Image"
 msgstr "Hi falta la imatge de perfil"
 
 #: contribute-%3Emovie_language_distribution
@@ -6526,19 +6525,19 @@ msgid "Movie Language Distribution"
 msgstr "Llengua de distribució de la pel·lícula"
 
 #: contribute-%3Emovies_missing_a_backdrop
-msgid "Movies Missing A Backdrop"
+msgid "Movies Missing a Backdrop"
 msgstr "Pel·lícules sense imatge de fons"
 
 #: contribute-%3Emovies_missing_a_overview
-msgid "Movies Missing An Overview"
+msgid "Movies Missing an Overview"
 msgstr "Pel·lícules sense sinopsi"
 
 #: contribute-%3Emovies_missing_a_poster
-msgid "Movies Missing A Poster"
+msgid "Movies Missing a Poster"
 msgstr "Pel·lícules sense pòster"
 
 #: contribute-%3Emovies_missing_a_title
-msgid "Movies Missing A Title"
+msgid "Movies Missing a Title"
 msgstr "Pel·lícules sense títol"
 
 #: contribute-%3Epage_title
@@ -6550,11 +6549,11 @@ msgid "Selected Language"
 msgstr "Llengua seleccionada"
 
 #: contribute-%3Etv_missing_a_backdrop
-msgid "TV Missing A Backdrop"
+msgid "TV Missing a Backdrop"
 msgstr "Sèries sense imatges de fons"
 
 #: contribute-%3Etv_missing_a_poster
-msgid "TV Missing A Poster"
+msgid "TV Missing a Poster"
 msgstr "Sèries sense un pòster"
 
 #: contribute-%3Etv_show_language_distribution
@@ -6562,11 +6561,11 @@ msgid "TV Show Language Distribution"
 msgstr "Llengua de distribució de la sèrie"
 
 #: contribute-%3Etv_shows_missing_a_name
-msgid "TV Shows Missing A Name"
+msgid "TV Shows Missing a Name"
 msgstr "Sèries sense nom"
 
 #: contribute-%3Etv_shows_missing_a_overview
-msgid "TV Shows Missing An Overview"
+msgid "TV Shows Missing an Overview"
 msgstr "Sèries sense sinopsi"
 
 #: contribution_bible-%3Eabbreviations-%3Ecollection
@@ -6978,14 +6977,14 @@ msgid "It's a duplicate"
 msgstr "És un duplicat"
 
 #: deleted_content-%3Ereasons-%3E2-%3Emessage
-msgctxt "deleted_content->reasons->2->message"
-"deleted_content->reasons->2->message"
 msgid ""
 "Hi there,\n"
 "\n"
 "This is just a friendly note from the content moderators at TMDB. The entry "
-"you created titled \"%{title}\" was deleted. This title did not meet our ["
-"new content guidelines](https://www.themoviedb.org/bible/new_content).\n"
+"you created titled \"%{title}\" was deleted. This title isn't eligible to be "
+"added to TMDB, for example because it's an amateur production. You can read "
+"about what can be added in our [new content guidelines](https://www."
+"themoviedb.org/bible/new_content).\n"
 "\n"
 "If you have any questions about this deletion, feel free to reply to this "
 "message."
@@ -6993,9 +6992,10 @@ msgstr ""
 "Ei, hola,\n"
 "\n"
 "Aquesta és una nota amistosa dels moderadors de contingut de TMDB. L'entrada "
-"que heu creat anomenada %{title} ha estat eliminada. Aquest títol no "
-"coincidia amb la nostra [guia de contingut nou](https://www.themoviedb.org/"
-"bible/new_content).\n"
+"que heu creat anomenada %{title} ha estat eliminada. Aquest títol no es pot "
+"afegir a TMDB, per exemple perquè és una producció d'aficionats. Podeu "
+"llegir què s'hi pot afegir a la nostra [guia de contingut nou](https://www."
+"themoviedb.org/bible/new_content).\n"
 "\n"
 "Si teniu cap pregunta sobre aquesta eliminació no dubteu a respondre aquest "
 "missatge."
@@ -7033,13 +7033,14 @@ msgid "It's a TV show"
 msgstr "És una sèrie"
 
 #: deleted_content-%3Ereasons-%3E4-%3Emessage
-msgctxt "deleted_content->reasons->4->message"
 msgid ""
 "Hi there,\n"
 "\n"
 "This is just a friendly note from the content moderators at TMDB. The entry "
-"you created titled \"%{title}\" was deleted. This title did not meet our ["
-"new content guidelines](https://www.themoviedb.org/bible/new_content).\n"
+"you created titled \"%{title}\" was deleted. We couldn't find anything to "
+"show that this title exists, so it was considered a fake entry. Please only "
+"add titles that can be verified. You can read more in our [new content "
+"guidelines](https://www.themoviedb.org/bible/new_content).\n"
 "\n"
 "If you have any questions about this deletion, feel free to reply to this "
 "message."
@@ -7047,8 +7048,10 @@ msgstr ""
 "Ei, hola,\n"
 "\n"
 "Aquesta és una nota amistosa dels moderadors de contingut de TMDB. L'entrada "
-"que heu creat anomenada %{title} ha estat eliminada. Aquest títol no complia "
-"amb la nostra [guia de contingut nou](https://www.themoviedb.org/bible/"
+"que heu creat anomenada %{title} ha estat eliminada. No hem trobat res que "
+"demostri que aquest títol existeix, per la qual cosa s'ha considerat una "
+"entrada falsa. Afegiu només títols que es puguin verificar. Podeu llegir-ne "
+"més a la nostra [guia de contingut nou](https://www.themoviedb.org/bible/"
 "new_content).\n"
 "\n"
 "Si teniu cap pregunta sobre aquesta eliminació no dubteu a respondre aquest "
@@ -7059,13 +7062,14 @@ msgid "It's a fake entry"
 msgstr "És una entrada falsa"
 
 #: deleted_content-%3Ereasons-%3E5-%3Emessage
-msgctxt "deleted_content->reasons->5->message"
 msgid ""
 "Hi there,\n"
 "\n"
 "This is just a friendly note from the content moderators at TMDB. The entry "
-"you created titled \"%{title}\" was deleted. This title did not meet our ["
-"new content guidelines](https://www.themoviedb.org/bible/new_content).\n"
+"you created titled \"%{title}\" was deleted. This entry was considered spam. "
+"Entries that advertise or promote products, services or websites aren't "
+"allowed. You can read more in our [new content guidelines](https://www."
+"themoviedb.org/bible/new_content).\n"
 "\n"
 "If you have any questions about this deletion, feel free to reply to this "
 "message."
@@ -7073,9 +7077,10 @@ msgstr ""
 "Ei, hola,\n"
 "\n"
 "Aquesta és una nota amistosa dels moderadors de contingut de TMDB. L'entrada "
-"que heu creat anomenada %{title} ha estat eliminada. Aquest títol no complia "
-"amb la nostra [guia de contingut nou](https://www.themoviedb.org/bible/"
-"new_content).\n"
+"que heu creat anomenada %{title} ha estat eliminada. Aquesta entrada s'ha "
+"considerat brossa. No es permeten les entrades que anunciïn o promocionin "
+"productes, serveis o llocs web. Podeu llegir-ne més a la nostra [guia de "
+"contingut nou](https://www.themoviedb.org/bible/new_content).\n"
 "\n"
 "Si teniu cap pregunta sobre aquesta eliminació no dubteu a respondre aquest "
 "missatge."
@@ -7083,6 +7088,64 @@ msgstr ""
 #: deleted_content-%3Ereasons-%3E5-%3Esubject
 msgid "It's spam"
 msgstr "És brossa"
+
+#: deleted_content-%3Ereasons-%3E6-%3Esubject
+msgid "It was created by mistake, or the creator asked for it to be deleted"
+msgstr "S'ha creat per error o el creador n'ha demanat l'eliminació"
+
+#: deleted_content-%3Ereasons-%3E7-%3Esubject
+msgid "It's a movie"
+msgstr "És una pel·lícula"
+
+#: deleted_content-%3Ereasons-%3E7-%3Emessage
+msgid ""
+"Hi there,\n"
+"\n"
+"This is just a friendly note from the content moderators at TMDB. The entry "
+"you created titled \"%{title}\" was deleted. This title is a movie, not a TV "
+"show, so it should be added as a movie. You can read more in our [new "
+"content guidelines](https://www.themoviedb.org/bible/new_content).\n"
+"\n"
+"If you have any questions about this deletion, feel free to reply to this "
+"message."
+msgstr ""
+"Ei, hola,\n"
+"\n"
+"Aquesta és una nota amistosa dels moderadors de contingut de TMDB. L'entrada "
+"que heu creat anomenada %{title} ha estat eliminada. Aquest títol és una pel·"
+"lícula, no una sèrie de televisió, així que s'ha d'afegir com a pel·lícula. "
+"Podeu llegir-ne més a la nostra [guia de contingut nou](https://www."
+"themoviedb.org/bible/new_content).\n"
+"\n"
+"Si teniu cap pregunta sobre aquesta eliminació no dubteu a respondre aquest "
+"missatge."
+
+#: deleted_content-%3Ereasons-%3E8-%3Esubject
+msgid "It's offensive or inappropriate"
+msgstr "És ofensiu o inadequat"
+
+#: deleted_content-%3Ereasons-%3E8-%3Emessage
+msgid ""
+"Hi there,\n"
+"\n"
+"This is just a friendly note from the content moderators at TMDB. The entry "
+"you created titled \"%{title}\" was deleted. This entry contained offensive "
+"or inappropriate content, which isn't allowed. You can read more in our [new "
+"content guidelines](https://www.themoviedb.org/bible/new_content).\n"
+"\n"
+"If you have any questions about this deletion, feel free to reply to this "
+"message."
+msgstr ""
+"Ei, hola,\n"
+"\n"
+"Aquesta és una nota amistosa dels moderadors de contingut de TMDB. L'entrada "
+"que heu creat anomenada %{title} ha estat eliminada. Aquesta entrada tenia "
+"contingut ofensiu o inadequat, cosa que no està permesa. Podeu llegir-ne més "
+"a la nostra [guia de contingut nou](https://www.themoviedb.org/bible/"
+"new_content).\n"
+"\n"
+"Si teniu cap pregunta sobre aquesta eliminació no dubteu a respondre aquest "
+"missatge."
 
 #: deleted_content-%3Ewhy_deleting
 msgid "Why are you deleting this entry?"
@@ -8783,8 +8846,7 @@ msgid "General"
 msgstr "General"
 
 #: faq-%3Esidebar-%3Eget_in_touch
-msgctxt "faq->sidebar->get_in_touch"
-msgid "Get In Touch"
+msgid "Get in Touch"
 msgstr "Poseu-vos en contacte"
 
 #: faq-%3Esidebar-%3Elogos_and_attribution
