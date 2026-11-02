@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 14:41+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -235,6 +235,7 @@ msgstr "Sempre obert"
 
 #: announcement.drop_support.button
 msgctxt "announcement.drop_support.button"
+"announcement.drop_support.button"
 "announcement.drop_support.button"
 "announcement.drop_support.button"
 "announcement.drop_support.button"
@@ -719,6 +720,22 @@ msgstr "Col·lapsa"
 #: component.collapsible_view.expand
 msgid "Expand"
 msgstr "Expandeix"
+
+#: connection.active_url_type.toast.remote_ui_link
+msgid "Using %@ Remote UI URL."
+msgstr ""
+
+#: connection.error.failed_connect.cloud_inactive_link.title
+msgid ""
+"You have disabled %@ use in the app, if you need it for remote access please "
+"open companion app settings and enable it."
+msgstr ""
+
+#: connection.error.failed_connect.cloud_link.title
+msgid ""
+"Make sure your %@ subscription is active and connected to your server, you "
+"can verify that at [Nabu Casa](https://account.nabucasa.com)"
+msgstr ""
 
 #: connectivity.check.port
 msgid "Port Reachability"
@@ -1700,13 +1717,11 @@ msgstr "Contrasenya"
 msgid "Remove Certificate?"
 msgstr "Eliminar Certificat?"
 
-#: settings.connection_section.cloud_overrides_external
+#: settings.connection_section.cloud_link_overrides_external
 msgid ""
-"When connecting via Cloud, the External URL will not be used. You do not "
-"need to configure one unless you want to disable Cloud."
+"When connecting via %@, the External URL will not be used. You do not need "
+"to configure one unless you want to disable it."
 msgstr ""
-"Quan es connecti mitjançant el núvol, no s’utilitzarà la URL externa. No cal "
-"configurar-ne una tret que vulgueu desactivar el núvol."
 
 #: settings.connection_section.delete_server.message
 msgid "Are you sure you wish to delete this server?"
@@ -1843,6 +1858,12 @@ msgctxt "settings.connection_section.servers"
 msgid "Servers"
 msgstr "Servidors"
 
+#: settings.connection_section.urls_how_it_works.away.body_link
+msgid ""
+"When no listed network matches, the %@ URL is used if it is turned on, and "
+"the external URL otherwise."
+msgstr ""
+
 #: settings.connection_section.validate_error.edit_url
 msgid "Edit URL"
 msgstr "Edita l'adreça URL"
@@ -1854,6 +1875,14 @@ msgstr "Error al desar l’URL"
 #: settings.connection_section.validate_error.use_anyway
 msgid "Use Anyway"
 msgstr "Utilitza de totes maneres"
+
+#: settings.connection_section.webhook.footer_link
+msgid ""
+"The app sends sensor, location and other updates to this webhook. %@ "
+"provides a cloudhook, which is used whenever you are away from home. Without "
+"it, the app builds the webhook URL from the internal, remote or external URL "
+"of this server instead."
+msgstr ""
 
 #: settings.connection_section.websocket.status.authenticating
 msgid "Authenticating"
@@ -3738,6 +3767,16 @@ msgstr "Arrossegant"
 msgctxt "watch.placeholder_complication_name"
 msgid "Placeholder"
 msgstr "Contenidor"
+
+#: watch.settings.complications.footer_link
+msgid ""
+"Fetches each complication's current value directly from Home Assistant. This "
+"needs a reachable server URL (local network or a remote/%@ URL)."
+msgstr ""
+
+#: web_view.add_to.option.WatchComplication.title
+msgid "Watch Complication"
+msgstr ""
 
 #: web_view.no_url_available.primary_button.title
 msgctxt "web_view.no_url_available.primary_button.title"
