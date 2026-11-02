@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 14:42+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,8 +186,8 @@ msgid "Follow system"
 msgstr "Utilitza la configuració del sistema"
 
 #: .Forget+Password
-msgid "Forget password"
-msgstr "Contrasenya oblidada"
+msgid "Clear saved password"
+msgstr "Esborra la contrasenya desada"
 
 #: .Full+Access
 msgid "Full access"
@@ -544,6 +544,10 @@ msgstr "Permet la connexió només si la finestra del RustDesk està activa"
 msgid "Allow docking remote toolbar to any window edge"
 msgstr "Permet ancorar la barra d'eines remota a qualsevol vora de la finestra"
 
+#: .android-logs-folder-tip
+msgid "Choose Android → media to store log files."
+msgstr "Trieu Android → media per desar els fitxers de registre."
+
 #: .android_input_permission_tip1
 msgid ""
 "In order for a remote device to control your Android device via mouse or "
@@ -624,12 +628,16 @@ msgid ""
 "Your custom server uses unencrypted HTTP. Contact your administrator to "
 "enable HTTPS."
 msgstr ""
+"El vostre servidor personalitzat utilitza HTTP sense xifrar. Contacteu amb "
+"l'administrador per habilitar HTTPS."
 
 #: .api_server_empty_tip
 msgid ""
 "With API Server empty, your custom server defaults to HTTP. Contact your "
 "administrator to enable HTTPS."
 msgstr ""
+"Si el camp «Clau API del servidor» és buit, el vostre servidor personalitzat "
+"utilitza HTTP per defecte. Contacteu amb l'administrador per habilitar HTTPS."
 
 #: .auto-print-tip
 msgid "Print automatically using the selected printer."
@@ -937,6 +945,14 @@ msgstr "Font d'entrada 1"
 msgid "Input source 2"
 msgstr "Font d'entrada 2"
 
+#: .install-directory-not-empty-tip
+msgid ""
+"The selected folder is not empty. Installation may delete existing data. "
+"Consider choosing a different folder."
+msgstr ""
+"La carpeta seleccionada no és buida. La instal·lació pot suprimir les dades "
+"existents. Considereu triar una altra carpeta."
+
 #: .install_daemon_tip
 msgid "For starting on boot, you need to install system service."
 msgstr ""
@@ -1234,44 +1250,53 @@ msgstr "Els camps a continuació estan compartits i són visibles a d'altres."
 
 #: .shortcut-already-bound-to
 msgid "Already bound to"
-msgstr ""
+msgstr "Ja assignada a"
 
 #: .shortcut-key-not-supported
 msgid "\"{}\" can't be used as a shortcut."
-msgstr ""
+msgstr "«{}» no es pot utilitzar com a drecera."
 
 #: .shortcut-mobile-physical-keyboard-tip
 msgid ""
 "Recording requires a physical keyboard. Soft keyboards are not supported."
 msgstr ""
+"Per gravar una drecera cal un teclat físic. Els teclats virtuals no són "
+"compatibles."
 
 #: .shortcut-must-include-modifiers
 msgid "Must include at least one modifier: {}"
-msgstr ""
+msgstr "Ha d'incloure almenys una tecla modificadora: {}"
 
 #: .shortcut-page-description
 msgid ""
 "Bind a key combination to each session action below. Each binding must "
 "include at least one modifier."
 msgstr ""
+"Assigneu una combinació de tecles a cadascuna de les accions de sessió "
+"següents. Cada assignació ha d'incloure almenys una tecla modificadora."
 
 #: .shortcut-passthrough-tip
 msgid ""
 "When on, every bound combination is forwarded to the remote. Useful when a "
 "binding collides with something you need on the remote."
 msgstr ""
+"Quan està activat, totes les combinacions assignades s'envien al dispositiu "
+"remot. És útil quan una assignació entra en conflicte amb alguna cosa que "
+"necessiteu al dispositiu remot."
 
 #: .shortcut-recording-instruction
 msgid "Press the key combination you want to use."
-msgstr ""
+msgstr "Premeu la combinació de tecles que voleu utilitzar."
 
 #: .shortcut-recording-press-keys-tip
 msgid "Press a key combination..."
-msgstr ""
+msgstr "Premeu una combinació de tecles..."
 
 #: .shortcut-reset-confirm-tip
 msgid "This will replace all current bindings with the default set. Continue?"
 msgstr ""
+"Això substituirà totes les assignacions actuals per les predeterminades. "
+"Voleu continuar?"
 
 #: .show_monitors_tip
 msgid "Show monitors in toolbar"
@@ -1330,6 +1355,10 @@ msgid ""
 "granted, this permission applies to terminal apps in all connections until "
 "you turn it off in Settings. Manual copy and paste are unaffected."
 msgstr ""
+"Una aplicació del terminal vol copiar text al porta-retalls d'aquest "
+"dispositiu. Si ho permeteu, aquest permís s'aplica a les aplicacions de "
+"terminal en totes les connexions fins que el desactiveu a Configuració. "
+"Copiar i enganxar manualment no es veu afectat."
 
 #: .texture_render_tip
 msgid ""
