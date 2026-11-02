@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-26 14:41+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3636,9 +3636,47 @@ msgstr "Tot"
 msgid "Icons"
 msgstr "Icones"
 
+#: .import.reason/alias-conflict
+msgid "Alias conflicts with another alias"
+msgstr ""
+
+#: .import.reason/asset-links-not-updated
+msgid "Some asset links were not updated to block references"
+msgstr ""
+
+#: .import.reason/export-failed
+msgid "Failed to convert file"
+msgstr ""
+
+#: .import.reason/hidden
+msgid "Excluded by :hidden in config.edn"
+msgstr ""
+
+#: .import.reason/missing-asset-data
+msgid "No asset data found for this asset path"
+msgstr ""
+
+#: .import.reason/skipped-by-file-picker
+msgid "Skipped by the file picker (unsupported type or internal file)"
+msgstr ""
+
+#: .import.reason/unsupported-file-format
+msgid "Unsupported file format"
+msgstr ""
+
+#: .import.reason/whiteboard-not-supported
+msgid "Whiteboard files are not supported yet"
+msgstr ""
+
 #: .import/all-tags
 msgid "Import all tags"
 msgstr "Importar totes les etiquetes"
+
+#: .import/all-tags-desc
+msgid ""
+"Converts every inline #tag into a tag in the new graph. Leave off to keep "
+"tags as plain page references."
+msgstr ""
 
 #: .import/asset-too-large-warning
 msgid "Skipped copying asset {1} because it exceeds the 100 MB limit."
@@ -3693,12 +3731,18 @@ msgstr "El nom del graf no pot estar buit."
 msgid "Extract inline code snippets as child blocks"
 msgstr "Extreure fragments de codi inline com a sub-blocs"
 
+#: .import/extract-inline-code-snippets-desc
+msgid "Moves inline `code` spans into separate child code blocks."
+msgstr ""
+
 #: .import/file-finished
 msgid "Import finished!"
 msgstr "Importació completada!"
 
 #: .import/file-to-db-desc
-msgid "Import a file-based Logseq graph folder into a new DB graph"
+msgid ""
+"Import a file-based Logseq graph or a plain Markdown folder into a new DB "
+"graph"
 msgstr "Importar una carpeta de graf Logseq basat en fitxers a un graf DB nou"
 
 #: .import/file-to-db-title
@@ -3718,22 +3762,6 @@ msgstr "Ja existeix un graf amb aquest nom. Trieu un altre nom!"
 msgid "Graph name"
 msgstr "Nom del graf"
 
-#: .import/ignored-properties-fix
-msgid ""
-"To fix a property type, change the property value to the correct type and "
-"reimport the graph"
-msgstr ""
-"Per corregir el tipus de propietat, canvieu el valor al tipus correcte i "
-"reimporteu el graf"
-
-#: .import/invalid-blocks-detected
-msgid ""
-"Import detected {1} invalid block(s). These blocks may be buggy when you "
-"interact with them. See the javascript console for more."
-msgstr ""
-"{1} blocs no vàlids detectats durant la importació. La interacció pot "
-"fallar. Detalls a la consola JavaScript."
-
 #: .import/invalid-edn-file
 msgid "The given EDN file is not valid EDN. Please fix and try again."
 msgstr ""
@@ -3742,12 +3770,6 @@ msgstr ""
 #: .import/loading
 msgid "Importing"
 msgstr "Important"
-
-#: .import/logseq-config-missing
-msgid ""
-"Import failed as the file 'logseq/config.edn' was not found for a Logseq "
-"graph."
-msgstr "Error d'importació: el graf Logseq no té el fitxer 'logseq/config.edn'."
 
 #: .import/new-graph-name
 msgid "New graph name"
@@ -3765,6 +3787,12 @@ msgid ""
 msgstr ""
 "{1} fitxers Org importats com a Markdown. El suport a fitxers Org s'afegirà "
 "més endavant."
+
+#: .import/plain-markdown-notice
+msgid ""
+"No logseq/config.edn found — importing this folder as plain Markdown with "
+"the default Logseq config."
+msgstr ""
 
 #: .import/properties-case-insensitive-commas
 msgid "Properties are case insensitive and separated by commas"
@@ -3789,6 +3817,46 @@ msgstr "Importar etiquetes addicionals dels valors de propietats"
 #: .import/remove-inline-tags
 msgid "Remove inline tags"
 msgstr "Eliminar etiquetes inline"
+
+#: .import/report-download
+msgid "Download report"
+msgstr ""
+
+#: .import/report-errors
+msgid "Errors"
+msgstr ""
+
+#: .import/report-ignored-assets
+msgid "Ignored assets"
+msgstr ""
+
+#: .import/report-ignored-files
+msgid "Ignored files"
+msgstr ""
+
+#: .import/report-ignored-properties
+msgid "Ignored properties"
+msgstr ""
+
+#: .import/report-title
+msgid "Import report"
+msgstr ""
+
+#: .import/report-validation-errors
+msgid "Invalid blocks"
+msgstr ""
+
+#: .import/scan-empty
+msgid "Nothing needs attention — the folder looks fully importable."
+msgstr ""
+
+#: .import/scan-title
+msgid "Import preview"
+msgstr ""
+
+#: .import/scanning
+msgid "Analyzing folder"
+msgstr ""
 
 #: .import/select-edn-or-json
 msgid "Please choose an EDN or a JSON file."
