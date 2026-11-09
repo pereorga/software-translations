@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 17:35+0000\n"
+"POT-Creation-Date: 2026-11-09 17:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2902,6 +2902,29 @@ msgctxt ".format/strikethrough"
 msgid "Strikethrough"
 msgstr "Ratllat"
 
+#: .graph.add-existing/action
+msgid "Add existing graph"
+msgstr ""
+
+#: .graph.add-existing/file-action
+msgid "Open db.sqlite or ZIP"
+msgstr ""
+
+#: .graph.add-existing/folder-action
+msgctxt ".graph.add-existing/folder-action"
+msgid "Open graph folder"
+msgstr ""
+
+#: .graph.add-existing/missing-db-error
+msgid ""
+"This folder is missing db.sqlite. Choose a Logseq DB graph folder, a "
+"db.sqlite file, or a SQLite+assets ZIP."
+msgstr ""
+
+#: .graph.add-existing/unsupported-error
+msgid "Choose a graph folder, a db.sqlite file, or a SQLite+assets ZIP."
+msgstr ""
+
 #: .graph.diagnostics/checksum-failed-error
 msgid "Failed to compute graph checksum diagnostics."
 msgstr ""
@@ -3212,6 +3235,7 @@ msgid "No graph node selected."
 msgstr ""
 
 #: .graph/open-folder-action
+msgctxt ".graph/open-folder-action"
 msgid "Open graph folder"
 msgstr ""
 
@@ -3727,12 +3751,72 @@ msgstr "Comportament per defecte del graf de base de dades"
 msgid "Empty graph name."
 msgstr "El nom del graf no pot estar buit."
 
+#: .import/error-block-location
+msgid "{1} (block: {2})"
+msgstr ""
+
+#: .import/error-file-unreadable
+msgid ""
+"This file could not be read. Check that it still exists and can be opened, "
+"then try the import again."
+msgstr ""
+
+#: .import/error-invalid-properties
+msgid ""
+"The properties on this block are invalid. Check for property names that "
+"conflict with page names and values of the wrong type."
+msgstr ""
+
+#: .import/error-invalid-property-value
+msgid ""
+"A property value could not be imported. Check that this file uses the same "
+"value types as other files, such as true or false for boolean properties."
+msgstr ""
+
+#: .import/error-malformed-query
+msgid ""
+"This query could not be read. Check that its brackets and parentheses are "
+"balanced."
+msgstr ""
+
+#: .import/error-missing-reference
+msgid ""
+"A reference could not be resolved. Check that the linked page exists and "
+"that this file is under pages/ or journals/."
+msgstr ""
+
+#: .import/error-page-name
+msgid ""
+"The page name could not be matched. Check the file name for leading spaces "
+"and Markdown formatting."
+msgstr ""
+
+#: .import/error-unknown-property
+msgid ""
+"The importer could not find the property “{1}”. Check the property name. If "
+"the query sorts by this property, remove it from the sort settings."
+msgstr ""
+
+#: .import/error-unsupported-property
+msgid ""
+"A property on this page is unsupported. Check for legacy properties such as "
+"a page-level template."
+msgstr ""
+
 #: .import/extract-inline-code-snippets
 msgid "Extract inline code snippets as child blocks"
 msgstr "Extreure fragments de codi inline com a sub-blocs"
 
 #: .import/extract-inline-code-snippets-desc
 msgid "Moves inline `code` spans into separate child code blocks."
+msgstr ""
+
+#: .import/failed
+msgid "Import failed"
+msgstr ""
+
+#: .import/file-error
+msgid "{1}: {2}"
 msgstr ""
 
 #: .import/file-finished
@@ -3848,6 +3932,10 @@ msgstr ""
 
 #: .import/scan-empty
 msgid "Nothing needs attention — the folder looks fully importable."
+msgstr ""
+
+#: .import/scan-failed
+msgid "Scanning the folder failed"
 msgstr ""
 
 #: .import/scan-title
