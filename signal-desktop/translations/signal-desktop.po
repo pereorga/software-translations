@@ -15,6 +15,18 @@ msgctxt "icu:AxoButton.Pending"
 msgid "Pending"
 msgstr "Pendent"
 
+msgctxt "icu:AxoColorSlider.Hue"
+msgid "Hue"
+msgstr "Tonalitat"
+
+msgctxt "icu:AxoColorSlider.Saturation"
+msgid "Saturation"
+msgstr "Saturació"
+
+msgctxt "icu:AxoColorSlider.Lightness"
+msgid "Lightness"
+msgstr "Claror"
+
 msgctxt "icu:AxoDialog.Back"
 msgid "Back"
 msgstr "Enrere"
@@ -346,6 +358,10 @@ msgstr "Optimitzant l'aplicació…"
 msgctxt "icu:archivedConversations"
 msgid "Archived Chats"
 msgstr "Xats arxivats"
+
+msgctxt "icu:LeftPane__MoreActionsLabel"
+msgid "More actions"
+msgstr "Més accions"
 
 msgctxt "icu:LeftPane__MoreActionsMenu__AddChatFolder"
 msgid "Add chat folder"
@@ -2931,6 +2947,30 @@ msgctxt "icu:deleteAccountDialogBody"
 msgid "This will delete your account info, profile, and all of your messages. You will also be removed from all Signal groups. The app will close after this process is complete."
 msgstr "Això eliminarà la informació del compte, el perfil i tots els missatges. També se t'eliminarà de tots els grups de Signal. L'app es tancarà un cop finalitzat aquest procés."
 
+msgctxt "icu:DeleteAccountConfirmDialog--Title"
+msgid "Delete account"
+msgstr "Eliminar el compte"
+
+msgctxt "icu:DeleteAccountConfirmDialog--Description"
+msgid "This will delete your account info, profile, and all of your messages. You will also be removed from all Signal groups."
+msgstr "Això eliminarà la informació del compte, el perfil i tots els missatges. També se t'eliminarà de tots els grups de Signal."
+
+msgctxt "icu:DeleteAccountConfirmDialog--ConfirmNumber"
+msgid "Confirm your phone number"
+msgstr "Confirma el teu número de telèfon"
+
+msgctxt "icu:DeleteAccountConfirmDialog--CountryCodePlaceholder"
+msgid "Country code"
+msgstr "Codi de país"
+
+msgctxt "icu:DeleteAccountConfirmDialog--NumberPlaceholder"
+msgid "Phone number"
+msgstr "Número de telèfon"
+
+msgctxt "icu:DeleteAccountConfirmDialog--DeleteButton"
+msgid "Delete"
+msgstr "Suprimeix"
+
 msgctxt "icu:deleteOldIndexedDBData"
 msgid "You have obsolete data from a prior installation of Signal Desktop. If you choose to continue, it will be deleted and you will start from scratch."
 msgstr "Tens dades obsoletes d'una instal·lació anterior del Signal Desktop. Si tries continuar, se suprimiran i començareu de zero."
@@ -3907,6 +3947,10 @@ msgctxt "icu:FunPanelSticker__SubNavLabel"
 msgid "Sticker Packs"
 msgstr "Paquet d'stickers"
 
+msgctxt "icu:FunPanelStickers__SubNavCategoryLabel--Favorites"
+msgid "Favorites"
+msgstr "Favorits"
+
 msgctxt "icu:FunPanelStickers__SubNavCategoryLabel--Recents"
 msgid "Recently Used"
 msgstr "Usat recentment"
@@ -3922,6 +3966,10 @@ msgstr "Resultats de la cerca"
 msgctxt "icu:FunPanelStickers__SectionTitle--Recents"
 msgid "Recently Used"
 msgstr "Usat recentment"
+
+msgctxt "icu:FunPanelStickers__SectionTitle--Favorites"
+msgid "Favorites"
+msgstr "Favorits"
 
 msgctxt "icu:FunPanelStickers__SectionTitle--Featured"
 msgid "Featured"
@@ -4006,10 +4054,6 @@ msgstr "Vista prèvia del GIF"
 msgctxt "icu:FunPanelGifs__GiphyAttribution__AccessibilityLabel"
 msgid "Powered by GIPHY"
 msgstr "Amb la tecnologia de GIPHY"
-
-msgctxt "icu:FunSearch__ClearButtonLabel"
-msgid "Clear Search"
-msgstr "Neteja la cerca"
 
 msgctxt "icu:FunSkinTones__List"
 msgid "Skin tone"
@@ -5055,6 +5099,10 @@ msgctxt "icu:callingDeviceSelection__settings"
 msgid "Settings"
 msgstr "Configuració"
 
+msgctxt "icu:callingDeviceSelection__settings-v2"
+msgid "Call Settings"
+msgstr "Configuració de les trucades"
+
 msgctxt "icu:calling__participants--pluralized"
 msgid "{people, plural, one {#} other {#}} in call"
 msgstr "{people, plural, one {{people,number} a la trucada} other {{people,number} a la trucada}}"
@@ -5194,6 +5242,18 @@ msgstr "No hi ha dispositius disponibles."
 msgctxt "icu:callingDeviceSelection__select--default"
 msgid "Default"
 msgstr "Per defecte"
+
+msgctxt "icu:callingDeviceSelection__select--default-nonwin"
+msgid "Default: {deviceName}"
+msgstr "Per defecte: {deviceName}"
+
+msgctxt "icu:callingDeviceSelection__select--default_console"
+msgid "Default: {deviceName}"
+msgstr "Per defecte: {deviceName}"
+
+msgctxt "icu:callingDeviceSelection__select--default_communications"
+msgid "Default Communications: {deviceName}"
+msgstr "Comunicacions per defecte: {deviceName}"
 
 msgctxt "icu:muteNotificationsTitle"
 msgid "Mute notifications"
@@ -6326,6 +6386,86 @@ msgstr "Fitxer"
 msgctxt "icu:CompositionArea__AttachMenu__Poll"
 msgid "Poll"
 msgstr "Enquesta"
+
+msgctxt "icu:CompositionArea__AttachMenu__Contact"
+msgid "Contact"
+msgstr "Contacte"
+
+msgctxt "icu:ShareContactDialog__SelectContact__Title"
+msgid "Select contact"
+msgstr "Selecció de contacte"
+
+msgctxt "icu:ShareContactDialog__SelectContact__SearchPlaceholder"
+msgid "Search"
+msgstr "Cerca"
+
+msgctxt "icu:ShareContactDialog__SelectContact__EmptyState"
+msgid "No contacts"
+msgstr "Sense contactes"
+
+msgctxt "icu:ShareContactDialog__SelectContact__NoResults"
+msgid "No results for “{searchQuery}”"
+msgstr "No s'ha trobat cap resultat per a «{searchQuery}»"
+
+msgctxt "icu:ShareContactDialog__ShareContact__Title"
+msgid "Share contact"
+msgstr "Enviament del contacte"
+
+msgctxt "icu:ShareContactDialog__ShareContact__Description"
+msgid "Anyone you share this profile with will be able to message {name}."
+msgstr "Qualsevol persona amb qui comparteixis aquest perfil podrà enviar-li un missatge a {name}."
+
+msgctxt "icu:ShareContactDialog__ShareContact__Send"
+msgid "Send contact"
+msgstr "Enviar contacte"
+
+msgctxt "icu:ShareContactDialog__ShareContact__EditName"
+msgid "Edit name"
+msgstr "Editar nom"
+
+msgctxt "icu:ShareContactDialog__EditName__Title"
+msgid "Edit name"
+msgstr "Editar nom"
+
+msgctxt "icu:ShareContactDialog__EditName__GivenName"
+msgid "First name"
+msgstr "Nom"
+
+msgctxt "icu:ShareContactDialog__EditName__MiddleName"
+msgid "Middle name"
+msgstr "Segon nom de pila"
+
+msgctxt "icu:ShareContactDialog__EditName__FamilyName"
+msgid "Last name"
+msgstr "Cognom(s)"
+
+msgctxt "icu:ShareContactDialog__EditName__Suffix"
+msgid "Suffix"
+msgstr "Sufix"
+
+msgctxt "icu:ShareContactDialog__EditName__Organization"
+msgid "Organization"
+msgstr "Organització"
+
+msgctxt "icu:ShareContactDialog__ShareContact__EditPhoto"
+msgid "Edit photo"
+msgstr "Edita la fotografia"
+
+msgctxt "icu:ShareContactDialog__SelectPhoto__Title"
+msgid "Select a photo"
+msgstr "Selecciona una foto"
+
+msgctxt "icu:ShareContactDialog__SelectPhoto__ContactPhoto"
+msgid "Contact photo"
+msgstr "Foto del contacte"
+
+msgctxt "icu:ShareContactDialog__SelectPhoto__ProfilePhoto"
+msgid "Profile photo"
+msgstr "Foto de perfil"
+
+msgctxt "icu:ShareContactDialog__SelectPhoto__DefaultAvatar"
+msgid "Default avatar"
+msgstr "Avatar predeterminat"
 
 msgctxt "icu:CompositionArea--attach-plus"
 msgid "Add attachment or poll"
@@ -8239,10 +8379,6 @@ msgctxt "icu:Preferences--pin-reminders--header"
 msgid "PIN reminders"
 msgstr "Recordatoris del PIN"
 
-msgctxt "icu:Preferences--pin-reminders--description"
-msgid "You'll be asked less frequently over time"
-msgstr "Amb el temps se us demanarà amb menys freqüència"
-
 msgctxt "icu:Preferences--registration-lock__label"
 msgid "Registration Lock"
 msgstr "Bloqueig del registre"
@@ -9303,6 +9439,46 @@ msgctxt "icu:InstallScreenUpdateDialog--cannot-update__body"
 msgid "Signal Desktop failed to update, but there is a new version available. Go to {downloadUrl} and install the new version manually, then either contact support or file a bug about this problem."
 msgstr "Signal per a Escriptori no s'ha pogut actualitzar, però hi ha una versió nova disponible. Ves a {downloadUrl}, instal·la la versió nova manualment i després posat en contacte amb el servei d'assistència o envia un informe sobre aquest problema."
 
+msgctxt "icu:EntryPoint--signal-logo"
+msgid "Signal Logo"
+msgstr "Logo de Signal"
+
+msgctxt "icu:EntryPoint--Title--Line1"
+msgid "Take privacy with you."
+msgstr "Porta la privacitat amb tu."
+
+msgctxt "icu:EntryPoint--Title--Line2"
+msgid "Be yourself in every message."
+msgstr "Sigues tu en cada missatge."
+
+msgctxt "icu:EntryPoint--link-button"
+msgid "Link your account"
+msgstr "Enllaça el teu compte"
+
+msgctxt "icu:EntryPoint--more-options-button"
+msgid "More options"
+msgstr "Més opcions"
+
+msgctxt "icu:EntryPoint--nonprofit"
+msgid "Signal is a 501c3 nonprofit"
+msgstr "Signal és una organització sense ànim de lucre"
+
+msgctxt "icu:EntryPoint--terms"
+msgid "Terms & privacy policy"
+msgstr "Condicions de servei i política de privadesa"
+
+msgctxt "icu:EntryPoint--MoreOptions--Title"
+msgid "More options"
+msgstr "Més opcions"
+
+msgctxt "icu:EntryPoint--MoreOptions--RegistrationButton--Title"
+msgid "Create a new account"
+msgstr "Crear un nou compte"
+
+msgctxt "icu:EntryPoint--MoreOptions--RegistrationButton--Description"
+msgid "Create a new Signal account using your phone number."
+msgstr "Crea un nou compte de Signal amb el teu número de telèfon"
+
 msgctxt "icu:StandaloneRegistration--signal-logo"
 msgid "Signal Logo"
 msgstr "Logo de Signal"
@@ -9562,6 +9738,26 @@ msgstr "S'ha produït un error i no s'ha pogut enviar la clau de verificació. T
 msgctxt "icu:StandaloneRegistration--VerificationCode--CannotSendCodeTemporary--ok-button"
 msgid "OK"
 msgstr "D'acord"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--HavingTrouble--Title"
+msgid "Having trouble registering?"
+msgstr "Problemes per registrar-te?"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--HavingTrouble--Bullet1"
+msgid "Make sure your phone has a cellular signal to receive your SMS or call"
+msgstr "Assegura't que el telèfon té cobertura per a rebre missatges SMS o trucades."
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--HavingTrouble--Bullet2"
+msgid "Confirm you can receive a phone call to the number"
+msgstr "Confirma que pots rebre trucades a aquest número"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--HavingTrouble--Bullet3"
+msgid "Check that you have entered your phone number correctly"
+msgstr "Comprova que has introduït el teu número de telèfon correctament"
+
+msgctxt "icu:StandaloneRegistration--VerificationCode--HavingTrouble--Footer"
+msgid "If you still can’t register, follow these <troubleshootingLink>troubleshooting steps</troubleshootingLink> or <contactSupportLink>Contact Support</contactSupportLink>."
+msgstr "Si segueixes sense poder registrar-te, segueix aquests <troubleshootingLink>passos de resolució de problemes</troubleshootingLink> o <contactSupportLink>posa't en contacte amb el servei d'assistència</contactSupportLink>."
 
 msgctxt "icu:StandaloneRegistration--ProfileEntry--header"
 msgid "Set up your profile"
@@ -11990,3 +12186,11 @@ msgstr "Millores en la càrrega d'arxius amb mala connexió a la xarxa. Gràcies
 msgctxt "icu:WhatsNew__8.32--2"
 msgid "The \"(N)\" shortcut correctly points to the thumbs down emoji. Thumbs up to <lnicola></lnicola> for the bugfix."
 msgstr "La drecera &quot;(N)&quot; correspon a l'emoji del polze cap avall. Moltes gràcies a <lnicola></lnicola> per solucionar l'error!"
+
+msgctxt "icu:WhatsNew__8.34--0"
+msgid "Signal Desktop now supports contact sharing too, so you can maintain eye contact with your computer screen without having to make physical contact with your smartphone."
+msgstr "Compatibilitat amb la funció de compartir contactes."
+
+msgctxt "icu:WhatsNew__8.34--1"
+msgid "Improved handling and performance for connected audio devices."
+msgstr "Millores en la gestió i funcionament dels dispositius d'àudio connectats."
