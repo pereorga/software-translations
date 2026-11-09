@@ -3276,7 +3276,7 @@ msgid "Interface size"
 msgstr "Mida de la interfície"
 
 msgctxt "STR_GAME_OPTIONS_GUI_SCALE_TOOLTIP"
-msgid "Drag slider to set interface size. Ctrl+Drag for continuous adjustment"
+msgid "Drag slider to set interface size. Range is limited by window size. Ctrl+Drag for continuous adjustment"
 msgstr "Arrossegueu el botó lliscant per a triar la mida de la interfície. Amb Ctrl+arrossega, s'aplica un ajust continu."
 
 msgctxt "STR_GAME_OPTIONS_GUI_SCALE_AUTO"
@@ -8632,7 +8632,7 @@ msgid "{BLACK}One-way Path Signal (electric){}A path signal allows more than one
 msgstr "{BLACK}Senyal de ruta d'un sentit (elèctric){}Un senyal de ruta permet entrar més d'un tren dins de la mateixa secció de vies. Cal, però, que sigui capaç de reservar una ruta fins un punt de parada segur sense creuar-se amb cap altre tren. No es pot travessar en el sentit contrari al senyal."
 
 msgctxt "STR_BUILD_SIGNAL_CONVERT_TOOLTIP"
-msgid "{BLACK}Signal Convert{}Click an existing signal to convert it to the selected signal type and variant. Ctrl+Click to toggle the existing variant. Shift+Click shows estimated conversion cost"
+msgid "{BLACK}Signal Convert{}Click an existing signal to convert it to the selected signal type and variant. Ctrl+Click to toggle the existing variant. Also press Shift to show cost estimate only"
 msgstr "{BLACK}Conversió de senyals{}Quan aquest botó està premut i si es clica un senyal existent, el converteix al tipus de senyal seleccionat. Amb Ctrl+clic, es commuta la variant existent. Amb Maj+clic, es mostra el cost estimat de conversió."
 
 msgctxt "STR_BUILD_SIGNAL_DRAG_SIGNALS_DENSITY_TOOLTIP"
@@ -9301,47 +9301,59 @@ msgstr "{YELLOW}Esteu segur que voleu treure totes les indústries?"
 
 msgctxt "STR_INDUSTRY_CARGOES_INDUSTRY_CAPTION"
 msgid "Industry Chain - {STRING}"
-msgstr "{WHITE}Cadena industrial - {STRING}"
+msgstr "Cadena industrial - {STRING}"
 
 msgctxt "STR_INDUSTRY_CARGOES_CARGO_CAPTION"
 msgid "Cargo Chain - {STRING}"
-msgstr "{WHITE}Cadena de càrrega - {STRING}"
+msgstr "Cadena de càrrega - {STRING}"
+
+msgctxt "STR_INDUSTRY_CARGOES_SOURCES"
+msgid "Sources"
+msgstr "Orígens"
+
+msgctxt "STR_INDUSTRY_CARGOES_DESTINATIONS"
+msgid "Destinations"
+msgstr "Destinacions"
 
 msgctxt "STR_INDUSTRY_CARGOES_HOUSES"
 msgid "Houses"
-msgstr "{WHITE}Cases"
+msgstr "Cases"
+
+msgctxt "STR_INDUSTRY_CARGOES_ACCEPTS_PRODUCES_TOOLTIP"
+msgid "{STRING}{}Accepts: {CARGO_LIST}{}Produces: {CARGO_LIST}"
+msgstr "{STRING}{}Accepta: {CARGO_LIST}{}Produeix: {CARGO_LIST}"
 
 msgctxt "STR_INDUSTRY_DISPLAY_CHAIN"
 msgid "Industry Chain"
-msgstr "{BLACK}Cadena d'indústries"
+msgstr "Cadena d'indústries"
 
 msgctxt "STR_INDUSTRY_DISPLAY_CHAIN_TOOLTIP"
 msgid "Display cargo supplying and accepting industries"
-msgstr "{BLACK}Mostra les càrregues proveïdes i les indústries acceptades"
+msgstr "Mostra les càrregues proveïdes i les indústries acceptades."
 
 msgctxt "STR_INDUSTRY_CARGOES_NOTIFY_SMALLMAP"
 msgid "Link to smallmap"
-msgstr "{BLACK}Mostra el minimapa"
+msgstr "Mostra el minimapa"
 
 msgctxt "STR_INDUSTRY_CARGOES_NOTIFY_SMALLMAP_TOOLTIP"
 msgid "Select the displayed industries at the smallmap as well"
-msgstr "{BLACK}Selecciona les indústries mostrades també al minimapa."
+msgstr "Selecciona les indústries mostrades també al minimapa."
 
 msgctxt "STR_INDUSTRY_CARGOES_SELECT_CARGO"
 msgid "Select cargo"
-msgstr "{BLACK}Selecciona la càrrega"
+msgstr "Selecciona la càrrega"
 
 msgctxt "STR_INDUSTRY_CARGOES_SELECT_CARGO_TOOLTIP"
 msgid "Select the cargo you want to display"
-msgstr "{BLACK}Selecciona la càrrega que vols mostrar"
+msgstr "Seleccioneu les càrregues que voleu mostrar."
 
 msgctxt "STR_INDUSTRY_CARGOES_SELECT_INDUSTRY"
 msgid "Select industry"
-msgstr "{BLACK}Selecciona indústria"
+msgstr "Selecciona indústria"
 
 msgctxt "STR_INDUSTRY_CARGOES_SELECT_INDUSTRY_TOOLTIP"
 msgid "Select the industry you want to display"
-msgstr "{BLACK}Selecciona la indústria que vols mostrar"
+msgstr "Seleccioneu les indústries que voleu mostrar."
 
 msgctxt "STR_LAND_AREA_INFORMATION_CAPTION"
 msgid "{WHITE}Land Area Information"
@@ -12940,19 +12952,19 @@ msgid "{BLACK}{NUM} vehicle{P \"\" s}{RAW_STRING}"
 msgstr "{BLACK}{NUM} vehicle{P \"\" s}{STRING}"
 
 msgctxt "STR_DEPOT_TRAIN_LIST_TOOLTIP"
-msgid "{BLACK}Trains - drag vehicle with left-click to add/remove from train, right-click for information. Ctrl+Click to apply either function to the following chain"
+msgid "{BLACK}Trains - drag vehicle with left-click to add/remove from train, right-click for information. Ctrl+Click to apply either function to the following chain. Hold Ctrl+Shift to overlay cargo type"
 msgstr "{BLACK}Trens - arrossegueu el vehicle per a afegir-lo/traure'l del tren. Feu clic amb el botó dret al tren per a obtenir-ne informació. Amb Ctrl, s'apliquen les dues funcions a tota la cadena posterior."
 
 msgctxt "STR_DEPOT_ROAD_VEHICLE_LIST_TOOLTIP"
-msgid "{BLACK}Vehicles - right-click on vehicle for information"
+msgid "{BLACK}Vehicles - right-click on vehicle for information. Hold Ctrl+Shift to overlay cargo type"
 msgstr "{BLACK}Vehicles - clica amb el botó dret en un vehicle per més informació"
 
 msgctxt "STR_DEPOT_SHIP_LIST_TOOLTIP"
-msgid "{BLACK}Ships - right-click on ship for information"
+msgid "{BLACK}Ships - right-click on ship for information. Hold Ctrl+Shift to overlay cargo type"
 msgstr "{BLACK}Vaixells - clica amb el botó dret en un vaixell per més informació"
 
 msgctxt "STR_DEPOT_AIRCRAFT_LIST_TOOLTIP"
-msgid "{BLACK}Aircraft - right-click on aircraft for information"
+msgid "{BLACK}Aircraft - right-click on aircraft for information. Hold Ctrl+Shift to overlay cargo type"
 msgstr "{BLACK}Avió - clica amb el botó dret sobre l'avió per més informació"
 
 msgctxt "STR_DEPOT_TRAIN_SELL_TOOLTIP"
