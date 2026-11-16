@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 17:35+0000\n"
+"POT-Creation-Date: 2026-11-16 17:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.12.2\n"
+"X-Generator: Translate Toolkit 3.18.1\n"
 
 #: invalidPasswordMinLengthMessage
 msgid "Invalid password: minimum length {0}."
@@ -142,8 +142,8 @@ msgstr ""
 #: ldapErrorValidatePasswordPolicyAvailableForWritableOnly
 msgid "Validate Password Policy is applicable only with WRITABLE edit mode"
 msgstr ""
-"La política de validació de contrasenyes només és aplicable amb el mode d’"
-"edició «WRITABLE»"
+"La política de validació de contrasenyes només és aplicable amb el mode "
+"d’edició «WRITABLE»"
 
 #: ldapErrorConnectionUrlContainsComma
 msgid ""
@@ -162,8 +162,8 @@ msgid ""
 "Connection URL contains a URL with an unsupported scheme. Each URL must use "
 "the ldap:// or ldaps:// scheme."
 msgstr ""
-"L’URL de connexió conté un URL amb un esquema no implementat. Cada URL ha d’"
-"utilitzar l’esquema ldap:// o ldaps://."
+"L’URL de connexió conté un URL amb un esquema no implementat. Cada URL ha "
+"d’utilitzar l’esquema ldap:// o ldaps://."
 
 #: ldapErrorCredentialReentryRequiredOnUrlChange
 msgid ""
@@ -293,16 +293,16 @@ msgid ""
 "Client session idle timeout cannot exceed realm SSO session idle timeout and "
 "RememberMe idle timeout."
 msgstr ""
-"El temps d’inactivitat de la sessió del client no pot excedir l’hora d’"
-"inactivitat de la sessió SSO i Recorda’m."
+"El temps d’inactivitat de la sessió del client no pot excedir l’hora "
+"d’inactivitat de la sessió SSO i Recorda’m."
 
 #. Shown to an admin when they enter a client specific SSO idle timeout that fails validation
 #: clientSessionIdleTimeoutExceedsRealm
 msgid ""
 "Client session idle timeout cannot exceed realm SSO session idle timeout."
 msgstr ""
-"El temps d’inactivitat de la sessió del client no pot superar el temps d’"
-"inactivitat de la sessió SSO."
+"El temps d’inactivitat de la sessió del client no pot superar el temps "
+"d’inactivitat de la sessió SSO."
 
 #. Shown to an admin when they enter a client specific SSO max lifetime that fails validation
 #: clientSessionMaxLifespanExceedsRealm
@@ -482,8 +482,8 @@ msgstr "El nom del flux de treball no pot ser «null» o buit."
 msgid ""
 "Workflow name must be unique. A workflow with name ''{0}'' already exists."
 msgstr ""
-"El nom del flux de treball ha de ser únic. Ja existeix un flux amb el nom "
-"«{0}»."
+"El nom del flux de treball ha de ser únic. Ja existeix un flux amb el nom «"
+"{0}»."
 
 #: workflowCannotUpdateOnWithScheduled
 msgid ""
@@ -539,8 +539,8 @@ msgstr "Els passos proporcionats no són compatibles entre ells."
 #: workflowStepsSingleTypeRequired
 msgid "Steps provided should support a single type, actual: {0}."
 msgstr ""
-"Els passos proporcionats haurien de ser compatibles amb un sol tipus, actual:"
-" {0}."
+"Els passos proporcionats haurien de ser compatibles amb un sol tipus, "
+"actual: {0}."
 
 #: workflowNotFoundById
 msgid "Workflow with id ''{0}'' not found."
@@ -590,8 +590,8 @@ msgstr "El parell «clau:valor» que s’esperava no està definit."
 #: workflowConditionAttributeInvalid
 msgid "Error reading key-value pair {0}. Expected format ''key:value''."
 msgstr ""
-"Error en llegir el parell «clau-valor» {0}. El format esperat és "
-"«clau:valor»."
+"Error en llegir el parell «clau-valor» {0}. El format esperat és «clau:valor"
+"»."
 
 #: workflowExpressionEmpty
 msgid "Expression cannot be null or empty."

@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-02 17:35+0000\n"
+"POT-Creation-Date: 2026-11-16 17:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.12.2\n"
+"X-Generator: Translate Toolkit 3.18.1\n"
 
 #: doLogIn
 msgid "Sign In"
@@ -19,7 +19,6 @@ msgstr "Inicia la sessió"
 
 #: doRegister
 msgctxt "doRegister"
-"doRegister"
 msgid "Register"
 msgstr "Registreu-vos"
 
@@ -584,6 +583,18 @@ msgstr "Voleu escanejar el codi de barres?"
 msgid "Credential"
 msgstr "Credencial"
 
+#: loginOtpTitle
+msgid "Sign in with a one-time code"
+msgstr ""
+
+#: loginOtpSelectAuthenticator
+msgid "Choose an authenticator"
+msgstr ""
+
+#: defaultOtpAuth
+msgid "Default"
+msgstr ""
+
 #: loginOtpOneTime
 msgctxt "loginOtpOneTime"
 msgid "One-time code"
@@ -916,7 +927,6 @@ msgstr "Camps requerits"
 
 #: invalidUserMessage
 msgctxt "invalidUserMessage"
-"invalidUserMessage"
 msgid "Invalid username or password."
 msgstr "El nom d’usuari o contrasenya no són vàlids."
 
@@ -955,7 +965,6 @@ msgstr "El nom d’usuari o contrasenya no són vàlids."
 #. These properties are deliberately the same as "invalidTotpMessage", so by default, it is not possible to recognize the reason of failed authentication is temporarily disabled account
 #: accountTemporarilyDisabledMessageTotp
 msgctxt "accountTemporarilyDisabledMessageTotp"
-"accountTemporarilyDisabledMessageTotp"
 msgid "Invalid authenticator code."
 msgstr "El codi d’autenticació no és vàlid."
 
@@ -1622,8 +1631,8 @@ msgid ""
 "the identity provider {1}. Do not proceed if you did not initiate this "
 "process or you do not want to link the account."
 msgstr ""
-"Si enllaceu el compte, també podreu entrar amb el compte {0} del proveïdor d’"
-"identitat {1}. No continueu si no heu iniciat aquest procés o si no voleu "
+"Si enllaceu el compte, també podreu entrar amb el compte {0} del proveïdor "
+"d’identitat {1}. No continueu si no heu iniciat aquest procés o si no voleu "
 "enllaçar el compte."
 
 #: confirmEmailAddressVerificationHeader
@@ -2101,8 +2110,8 @@ msgid ""
 "Your organization requires verified security keys. Attestation format "
 "''none'' is not accepted; please use a key that provides attestation."
 msgstr ""
-"La vostra organització requereix claus de seguretat verificades. No s’"
-"accepta el format d’atestació «none»; utilitzeu una clau que proporcioni "
+"La vostra organització requereix claus de seguretat verificades. No "
+"s’accepta el format d’atestació «none»; utilitzeu una clau que proporcioni "
 "atestació."
 
 #: webauthn-error-registration-attachment-mismatch
@@ -2110,8 +2119,8 @@ msgid ""
 "Your organization requires a different type of security key (invalid "
 "Authenticator Attachment ''{0}''). Please use the correct type."
 msgstr ""
-"La vostra organització requereix un altre tipus de clau de seguretat ("
-"adjunció de l’autenticador «{0}» no vàlida). Utilitzeu el tipus correcte."
+"La vostra organització requereix un altre tipus de clau de seguretat "
+"(adjunció de l’autenticador «{0}» no vàlida). Utilitzeu el tipus correcte."
 
 #: webauthn-error-api-not-allowed
 msgid ""
