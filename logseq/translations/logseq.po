@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-09 17:59+0000\n"
+"POT-Creation-Date: 2026-11-16 17:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.12.2\n"
+"X-Generator: Translate Toolkit 3.18.1\n"
 
 #: .account/already-logged-in-as
 msgid "You are already logged in as {1}"
@@ -787,7 +787,6 @@ msgstr "Informar d'un error"
 
 #: .class.built-in/asset
 msgctxt ".class.built-in/asset"
-".class.built-in/asset"
 msgid "Asset"
 msgstr "Recurs"
 
@@ -802,7 +801,6 @@ msgstr "Targetes"
 
 #: .class.built-in/code-block
 msgctxt ".class.built-in/code-block"
-".class.built-in/code-block"
 msgid "Code"
 msgstr "Codi"
 
@@ -821,7 +819,6 @@ msgstr "Matemàtiques"
 
 #: .class.built-in/page
 msgctxt ".class.built-in/page"
-".class.built-in/page"
 msgid "Page"
 msgstr "Pàgina"
 
@@ -917,8 +914,8 @@ msgstr "Afegeix una propietat d'etiqueta"
 
 #: .class/tag-properties-desc
 msgid ""
-"Tag properties are inherited by all nodes using the tag. For example, each #"
-"Task node inherits 'Status' and 'Priority'."
+"Tag properties are inherited by all nodes using the tag. For example, each "
+"#Task node inherits 'Status' and 'Priority'."
 msgstr ""
 "Les propietats de l'etiqueta s'hereten a tots els nodes que la fan servir. "
 "Per exemple, cada node #Task hereta 'Status' i 'Priority'."
@@ -933,26 +930,21 @@ msgstr "Aplica el tema"
 
 #: .cmdk.action/copy-ref
 msgctxt ".cmdk.action/copy-ref"
-".cmdk.action/copy-ref"
 msgid "Copy ref"
 msgstr "Copiar referència"
 
 #: .cmdk.action/create
 msgctxt ".cmdk.action/create"
-".cmdk.action/create"
 msgid "Create"
 msgstr "Crear"
 
 #: .cmdk.action/filter
 msgctxt ".cmdk.action/filter"
-".cmdk.action/filter"
-".cmdk.action/filter"
 msgid "Filter"
 msgstr "Filtrar"
 
 #: .cmdk.action/open
 msgctxt ".cmdk.action/open"
-".cmdk.action/open"
 msgid "Open"
 msgstr "Obrir"
 
@@ -963,8 +955,6 @@ msgstr "Obrir a la barra lateral"
 
 #: .cmdk.action/search
 msgctxt ".cmdk.action/search"
-".cmdk.action/search"
-".cmdk.action/search"
 msgid "Search"
 msgstr "Cercar"
 
@@ -1261,7 +1251,6 @@ msgstr "Esborrar el contingut del bloc"
 
 #: .command.editor/collapse-block-children
 msgctxt ".command.editor/collapse-block-children"
-".command.editor/collapse-block-children"
 msgid "Collapse"
 msgstr "Col·lapsar"
 
@@ -1314,7 +1303,6 @@ msgstr "Sortir de edició"
 
 #: .command.editor/expand-block-children
 msgctxt ".command.editor/expand-block-children"
-".command.editor/expand-block-children"
 msgid "Expand"
 msgstr "Expandir"
 
@@ -1476,7 +1464,6 @@ msgstr "Alternar blocs oberts, (col·lapsar o expandir tots)"
 
 #: .command.editor/undo
 msgctxt ".command.editor/undo"
-".command.editor/undo"
 msgid "Undo"
 msgstr "Desfer"
 
@@ -1590,7 +1577,6 @@ msgstr "Eliminar un graf"
 
 #: .command.misc/copy
 msgctxt ".command.misc/copy"
-".command.misc/copy"
 msgid "Copy"
 msgstr "Copiar"
 
@@ -1877,6 +1863,10 @@ msgstr "Ahir"
 #: .date/invalid-date-warning
 msgid "{1} is not a valid date. Please try again"
 msgstr "{1} no és una data vàlida. Si us plau, torna-ho a provar"
+
+#: .deeplink/invalid-link-error
+msgid "Failed to open link. The URL or graph identifier is invalid."
+msgstr ""
 
 #: .deeplink/open-block-error
 msgctxt ".deeplink/open-block-error"
@@ -2236,7 +2226,6 @@ msgstr ""
 
 #: .electron/cancel
 msgctxt ".electron/cancel"
-".electron/cancel"
 msgid "Cancel"
 msgstr "Cancel·lar"
 
@@ -2724,8 +2713,8 @@ msgstr "El fitxer {1} no és vàlid."
 
 #: .file.config/read-failed-desc
 msgid ""
-"Make sure your config is wrapped in {}. Also make sure that the characters '("
-" { [' have their corresponding closing character ') } ]'."
+"Make sure your config is wrapped in {}. Also make sure that the characters '"
+"( { [' have their corresponding closing character ') } ]'."
 msgstr ""
 "Assegureu-vos que la vostra configuració està envoltada en {}. Assegureu-vos "
 "també que els caràcters '( { [' tenen els seus caràcters de tancament "
@@ -2774,8 +2763,8 @@ msgstr "Fitxer {1}"
 
 #: .flashcard.empty/desc
 msgid ""
-"You can add \"{1}\" to any block to turn it into a card or trigger \"/cloze\""
-" to add some clozes."
+"You can add \"{1}\" to any block to turn it into a card or trigger \"/"
+"cloze\" to add some clozes."
 msgstr ""
 "Pots afegir \"{1}\" a qualsevol bloc per convertir-lo en una targeta o "
 "activar \"/cloze\" per afegir-hi alguns clozes."
@@ -2935,9 +2924,9 @@ msgid ""
 "Checksum recomputed. Recomputed: {1}, local: {2}, remote: {3}. Downloaded {4}"
 ".edn with {5} blocks and checksum attributes {6}."
 msgstr ""
-"S'ha recalculat la suma de comprovació. Recalculada: {1}, local: {2}, remota:"
-" {3}. S'ha baixat {4}.edn amb {5} blocs i atributs de suma de comprovació "
-"{6}."
+"S'ha recalculat la suma de comprovació. Recalculada: {1}, local: {2}, "
+"remota: {3}. S'ha baixat {4}.edn amb {5} blocs i atributs de suma de "
+"comprovació {6}."
 
 #: .graph.diagnostics/checksum-unavailable-warning
 msgid "Unable to compute checksum diagnostics for the current graph."
@@ -3100,9 +3089,6 @@ msgstr ""
 
 #: .graph/clear-tags
 msgctxt ".graph/clear-tags"
-".graph/clear-tags"
-".graph/clear-tags"
-".graph/clear-tags"
 msgid "Clear"
 msgstr ""
 
@@ -3286,7 +3272,6 @@ msgstr ""
 
 #: .graph/select-all-tags
 msgctxt ".graph/select-all-tags"
-".graph/select-all-tags"
 msgid "Select all"
 msgstr ""
 
@@ -3650,9 +3635,6 @@ msgstr "Cerca icones"
 
 #: .icon/tab-all
 msgctxt ".icon/tab-all"
-".icon/tab-all"
-".icon/tab-all"
-".icon/tab-all"
 msgid "All"
 msgstr "Tot"
 
@@ -4078,8 +4060,6 @@ msgstr "Cancel·lar"
 
 #: .keymap/hint-close
 msgctxt ".keymap/hint-close"
-".keymap/hint-close"
-".keymap/hint-close"
 msgid "Close"
 msgstr "Tancar"
 
@@ -4135,13 +4115,11 @@ msgstr "Eliminar filtre"
 
 #: .keymap/reset
 msgctxt ".keymap/reset"
-".keymap/reset"
 msgid "Reset"
 msgstr "Restablir"
 
 #: .keymap/reset-to-default
 msgctxt ".keymap/reset-to-default"
-".keymap/reset-to-default"
 msgid "Reset to default"
 msgstr "Restablir per defecte"
 
@@ -4408,7 +4386,6 @@ msgstr "L'accés al micròfon està denegat. Habilita-lo a Configuració > Logse
 
 #: .nav.all-pages/label
 msgctxt ".nav.all-pages/label"
-".nav.all-pages/label"
 msgid "Pages"
 msgstr "Totes les pàgines"
 
@@ -4466,9 +4443,6 @@ msgstr "Diaris"
 
 #: .nav/plugins
 msgctxt ".nav/plugins"
-".nav/plugins"
-".nav/plugins"
-".nav/plugins"
 msgid "Plugins"
 msgstr "Connectors"
 
@@ -5160,8 +5134,8 @@ msgstr ""
 
 #: .plugin/bulk-remove-disabled-delete-alert
 msgid ""
-"Are you sure you want to remove the selected disabled plugins and themes? "
-"({1})"
+"Are you sure you want to remove the selected disabled plugins and themes? ("
+"{1})"
 msgstr ""
 
 #: .plugin/bulk-remove-disabled-desc
