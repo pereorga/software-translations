@@ -8,12 +8,17 @@
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
-            "user": {
+            "network": {
                 "data": {
-                    "name": "Nom de la connexi\u00f3 Velbus",
-                    "port": "String de connexi\u00f3"
-                },
-                "title": "Tipus de connexi\u00f3 Velbus"
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "port": "Port"
+                }
+            },
+            "usbselect": {
+                "data": {
+                    "port": "Port"
+                }
             }
         }
     },
@@ -23,15 +28,15 @@
                 "address": {
                     "name": "Adre\u00e7a"
                 },
-                "interface": {
-                    "name": "Interf\u00edcie"
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
                 }
             }
         },
         "scan": {
             "fields": {
-                "interface": {
-                    "name": "Interf\u00edcie"
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
                 }
             },
             "name": "Escaneja"
@@ -41,15 +46,15 @@
                 "address": {
                     "name": "Adre\u00e7a"
                 },
-                "interface": {
-                    "name": "Interf\u00edcie"
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
                 }
             }
         },
         "sync_clock": {
             "fields": {
-                "interface": {
-                    "name": "Interf\u00edcie"
+                "config_entry": {
+                    "name": "Entrada de configuraci\u00f3"
                 }
             },
             "name": "Sincronitza l'hora"

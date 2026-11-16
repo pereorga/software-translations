@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Account is already configured"
         },
         "error": {
             "invalid_auth": "Invalid authentication",
@@ -26,6 +25,17 @@
         }
     },
     "entity": {
+        "select": {
+            "hot_water_plus_level": {
+                "name": "Hot Water+ level",
+                "state": {
+                    "level1": "Level 1",
+                    "level2": "Level 2",
+                    "level3": "Level 3",
+                    "off": "Off"
+                }
+            }
+        },
         "sensor": {
             "energy_usage": {
                 "name": "Energy usage"

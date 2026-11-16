@@ -1,0 +1,80 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "alarm_antilegionella_timeout": {
+                "name": "Alarma de l\u00edmit de temps d'antilegionel\u00b7la"
+            },
+            "alarm_central_heating": {
+                "name": "Alarma de calefacci\u00f3 central"
+            },
+            "alarm_dewpoint": {
+                "name": "Alarma de punt de rosada"
+            },
+            "alarm_dhw_timeout": {
+                "name": "Alarma de l\u00edmit de temps d'ACS"
+            },
+            "day_mode": {
+                "name": "Mode diari"
+            },
+            "dewpoint": {
+                "name": "Punt de rosada"
+            },
+            "dhw_controller_enabled": {
+                "name": "Controlador d'ACS habilitat"
+            },
+            "external_demand": {
+                "name": "Demanda externa"
+            },
+            "four_way_valve": {
+                "name": "V\u00e0lvula de quatre vies"
+            },
+            "keypad": {
+                "name": "Teclat num\u00e8ric"
+            },
+            "summer_mode": {
+                "name": "Mode d'estiu"
+            },
+            "three_way_valve": {
+                "name": "V\u00e0lvula de tres vies"
+            },
+            "user_pump": {
+                "name": "Bomba d'usuari"
+            }
+        },
+        "select": {
+            "sg_ready_mode": {
+                "state": {
+                    "off": "OFF"
+                }
+            }
+        },
+        "sensor": {
+            "status_heatpump": {
+                "state": {
+                    "cooling": "Refredant",
+                    "heating": "Escalfant",
+                    "heating_dhw": "Escalfant ACS",
+                    "standby": "En espera"
+                }
+            },
+            "temp_dhw": {
+                "name": "Temperatura de l'ACS"
+            }
+        }
+    }
+}

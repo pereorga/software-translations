@@ -2,7 +2,8 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "cannot_connect": "Failed to connect"
+            "cannot_connect": "Failed to connect",
+            "unique_id_mismatch": "MAC address does not match the configured device. Expected to connect to device with MAC: `{expected_mac}`, but connected to device with MAC: `{actual_mac}`. \n\nPlease ensure you reconfigure against the same device."
         },
         "error": {
             "cannot_connect": "Failed to connect"
@@ -60,11 +61,15 @@
             "status": {
                 "name": "Status",
                 "state": {
-                    "high_charge_period": "High charge period",
+                    "evse_fault": "EVSE fault",
+                    "ground_fault": "Ground fault",
+                    "high_tariff_period": "High tariff period",
                     "out_of_activation_period": "Out of activation period",
+                    "pilot_fault": "Pilot fault",
                     "plugged_charging": "Plugged, charging",
                     "plugged_waiting": "Plugged, waiting",
-                    "unplugged": "Unplugged"
+                    "unplugged": "Unplugged",
+                    "ventilation_required": "Ventilation required"
                 }
             },
             "voltage_in": {
@@ -76,25 +81,25 @@
         },
         "switch": {
             "auto_charge": {
-                "name": "Auto charge"
+                "name": "Auto-charge"
             },
             "session_active": {
-                "name": "Charging Enabled"
+                "name": "Charging enabled"
             }
         }
     },
     "exceptions": {
+        "communication_error": {
+            "message": "Error communicating with TechnoVE API."
+        },
+        "invalid_response": {
+            "message": "Invalid response from TechnoVE API."
+        },
         "max_current_in_sharing_mode": {
             "message": "Cannot set the max current when power sharing mode is enabled."
         },
         "set_charging_enabled_on_auto_charge": {
             "message": "Cannot enable or disable charging when auto-charge is enabled. Try disabling auto-charge first."
-        }
-    },
-    "issues": {
-        "deprecated_entity_is_session_active": {
-            "description": "`{entity}` is deprecated.\nPlease update your automations and scripts to replace the binary sensor entity with the newly added switch entity.\nWhen you are done migrating you can disable `{entity}`.",
-            "title": "The TechnoVE {sensor_name} binary sensor is deprecated"
         }
     }
 }

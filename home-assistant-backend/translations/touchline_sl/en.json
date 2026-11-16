@@ -1,22 +1,30 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "unique_id_mismatch": "The credentials provided belong to a different Roth Touchline SL account than the one originally configured."
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
-        "flow_title": "Touchline SL Setup Flow",
+        "flow_title": "Touchline SL setup flow",
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "description": "The password for {username} is no longer valid. Please enter the current password for your Roth Touchline SL account.",
+                "title": "Authentication expired for {name}"
+            },
             "user": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
                 "description": "Your credentials for the Roth Touchline SL mobile app/web service",
-                "title": "Login to Touchline SL"
+                "title": "Log in to Touchline SL"
             }
         }
     },

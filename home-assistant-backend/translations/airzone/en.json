@@ -52,6 +52,14 @@
                     "90deg": "90\u00b0"
                 }
             },
+            "heat_stages": {
+                "name": "Heat stage",
+                "state": {
+                    "air": "Air",
+                    "combined": "Combined",
+                    "radiant": "Radiant"
+                }
+            },
             "modes": {
                 "name": "Mode",
                 "state": {
@@ -61,6 +69,16 @@
                     "heat": "Heat",
                     "heat_cool": "Heat/Cool",
                     "stop": "Stop"
+                }
+            },
+            "q_adapt": {
+                "name": "Q-Adapt",
+                "state": {
+                    "maximum": "Maximum",
+                    "minimum": "Minimum",
+                    "power": "Power",
+                    "silence": "Silence",
+                    "standard": "Standard"
                 }
             },
             "sleep_times": {
@@ -76,6 +94,9 @@
         "sensor": {
             "rssi": {
                 "name": "RSSI"
+            },
+            "thermostat_signal": {
+                "name": "Signal strength"
             }
         }
     }

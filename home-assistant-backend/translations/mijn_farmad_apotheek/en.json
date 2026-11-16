@@ -1,0 +1,114 @@
+{
+    "config": {
+        "abort": {
+            "wrong_account": "The credentials belong to a different account. Sign in again with the account this integration was set up with."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error",
+            "wrong_code": "The one-time code is wrong. Check your authenticator app and try again."
+        },
+        "step": {
+            "mfa": {
+                "data": {
+                    "code": "One-time code"
+                },
+                "data_description": {
+                    "code": "The current six-digit code from your authenticator app."
+                },
+                "description": "Your account requires two-factor authentication. Enter the one-time code from your authenticator app.",
+                "title": "Two-factor authentication"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "The password of your Mijn Farmad Apotheek account."
+                },
+                "description": "The Farmad session expired. Sign in again as {account} to reconnect your Mijn Farmad Apotheek account.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "The email address of your Mijn Farmad Apotheek account.",
+                    "password": "The password of your Mijn Farmad Apotheek account."
+                },
+                "description": "Enter the credentials of your Mijn Farmad Apotheek account.",
+                "title": "Connect to Mijn Farmad Apotheek"
+            }
+        }
+    },
+    "exceptions": {
+        "authentication_failed": {
+            "message": "The Farmad session expired. Sign in again to continue."
+        },
+        "draft_not_empty": {
+            "message": "Your draft basket at pharmacy {apb} still has products or a comment. Submit or clear the draft in the Mijn Farmad Apotheek app and try again."
+        },
+        "invalid_product": {
+            "message": "{product} is not a CNK code of seven digits. Use the 'Search medication' action to find the CNK code of a product."
+        },
+        "no_search_results": {
+            "message": "No product at pharmacy {apb} matches {query}."
+        },
+        "not_authorized": {
+            "message": "Your account has no access to pharmacy {apb}. Link the pharmacy in the Mijn Farmad Apotheek app first."
+        },
+        "order_failed": {
+            "message": "Ordering at pharmacy {apb} failed."
+        },
+        "order_unconfirmed": {
+            "message": "The order at pharmacy {apb} could not be confirmed. Check the Mijn Farmad Apotheek app before retrying to avoid a duplicate order."
+        },
+        "search_failed": {
+            "message": "Searching at pharmacy {apb} failed."
+        },
+        "setup_failed": {
+            "message": "Unable to connect to Farmad."
+        }
+    },
+    "services": {
+        "order_medication": {
+            "description": "Places an order for one product at a Farmad pharmacy. The product is paid at pickup.",
+            "fields": {
+                "apb": {
+                    "description": "The APB number of the pharmacy to order from.",
+                    "name": "Pharmacy"
+                },
+                "comment": {
+                    "description": "An optional comment for the pharmacist.",
+                    "name": "Comment"
+                },
+                "product": {
+                    "description": "The CNK code of the product to order. Use the 'Search medication' action to find the CNK code of a product.",
+                    "name": "Product"
+                },
+                "quantity": {
+                    "description": "The number of packages to order.",
+                    "name": "Quantity"
+                }
+            },
+            "name": "Order medication"
+        },
+        "search_medication": {
+            "description": "Searches the catalog of a Farmad pharmacy by product name or CNK and returns up to 25 matching products.",
+            "fields": {
+                "apb": {
+                    "description": "The APB number of the pharmacy to search in.",
+                    "name": "Pharmacy"
+                },
+                "query": {
+                    "description": "The product name or CNK to search for.",
+                    "name": "Search term"
+                }
+            },
+            "name": "Search medication"
+        }
+    }
+}

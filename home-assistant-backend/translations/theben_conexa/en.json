@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "unique_id_mismatch": "The credentials belong to a different smartmeter gateway than the one configured."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "The password provided by your power grid operator"
+                },
+                "description": "The password for user {username} on the smartmeter gateway at {host} is no longer valid. Please enter the current password.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "host": "The IP of your smartmeter gateway provided by your power grid operator",
+                    "password": "The password provided by your power grid operator",
+                    "username": "The username provided by your power grid operator"
+                },
+                "description": "As a prerequisite you must be able to log in to your smartmeter gateway from a web browser via `https://[IP of your gateway]`."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "energy_consumed": {
+                "name": "Energy consumed"
+            },
+            "energy_supplied": {
+                "name": "Energy supplied"
+            }
+        }
+    }
+}

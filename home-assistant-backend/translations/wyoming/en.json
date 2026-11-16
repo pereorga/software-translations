@@ -10,7 +10,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Do you want to configure Home Assistant to connect to the Wyoming service provided by the add-on: {addon}?"
+                "description": "Do you want to configure Home Assistant to connect to the Wyoming service provided by the app: {addon}?"
             },
             "user": {
                 "data": {
@@ -55,6 +55,12 @@
                     "preferred": "Preferred"
                 }
             },
+            "pipeline_n": {
+                "name": "Assistant {index}",
+                "state": {
+                    "preferred": "Preferred"
+                }
+            },
             "vad_sensitivity": {
                 "name": "Finished speaking detection",
                 "state": {
@@ -68,6 +74,17 @@
             "mute": {
                 "name": "Mute"
             }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Unable to connect to {host}:{port}"
+        },
+        "service_error": {
+            "message": "Error from Wyoming service: {error}"
+        },
+        "update_error": {
+            "message": "Unable to get info from {host}:{port}"
         }
     }
 }

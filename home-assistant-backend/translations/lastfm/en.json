@@ -1,6 +1,7 @@
 {
     "config": {
         "error": {
+            "hidden_recent_tracks": "User has hidden their recent listening information. Disable \"Hide recent listening information\" at {privacy_settings_url}",
             "invalid_account": "Invalid username",
             "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
@@ -21,8 +22,14 @@
             }
         }
     },
+    "exceptions": {
+        "update_failed": {
+            "message": "Could not retrieve data from Last.fm for any of the configured users"
+        }
+    },
     "options": {
         "error": {
+            "hidden_recent_tracks": "User has hidden their recent listening information. Disable \"Hide recent listening information\" at {privacy_settings_url}",
             "invalid_account": "Invalid username",
             "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"

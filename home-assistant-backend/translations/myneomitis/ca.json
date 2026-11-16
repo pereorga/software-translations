@@ -1,0 +1,41 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "email": "Correu electr\u00f2nic",
+                    "password": "Contrasenya"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "myneomitis": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "standby": "En espera"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "pilote": {
+                "state": {
+                    "auto": "Auto",
+                    "standby": "En espera"
+                }
+            },
+            "relais": {
+                "state": {
+                    "auto": "Auto",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            }
+        }
+    }
+}

@@ -6,13 +6,16 @@
         "abort": {
             "already_configured": "Device is already configured",
             "cannot_connect": "Failed to connect to Russound device. Please make sure the device is powered up and connected to the network. Try power-cycling the device if it does not connect.",
-            "reconfigure_successful": "Re-configuration was successful",
+            "reconfigure_successful": "Reconfiguration was successful",
             "wrong_device": "This Russound controller does not match the existing device ID. Please make sure you entered the correct IP address."
         },
         "error": {
             "cannot_connect": "Failed to connect to Russound device. Please make sure the device is powered up and connected to the network. Try power-cycling the device if it does not connect."
         },
         "step": {
+            "discovery_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
             "reconfigure": {
                 "data": {
                     "host": "Host",
@@ -24,7 +27,17 @@
                 },
                 "description": "Reconfigure your Russound controller."
             },
-            "user": {
+            "serial": {
+                "data": {
+                    "baudrate": "Baud rate",
+                    "device": "Device"
+                },
+                "data_description": {
+                    "baudrate": "The communication speed of the serial connection.",
+                    "device": "Choose the serial port connected to your device."
+                }
+            },
+            "tcp": {
                 "data": {
                     "host": "Host",
                     "name": "Name",
@@ -34,6 +47,46 @@
                     "host": "The IP address of the Russound controller.",
                     "port": "The port of the Russound controller."
                 }
+            },
+            "user": {
+                "data": {
+                    "type": "Connection type"
+                },
+                "data_description": {
+                    "type": "Select how your Russound controller is connected."
+                },
+                "description": "Choose how your controller is connected. All Russound RIO devices support connection over TCP/IP. Some older controllers can connected using USB-to-serial controllers for stability if the serial port has been configured for Russound RIO."
+            }
+        }
+    },
+    "entity": {
+        "number": {
+            "balance": {
+                "name": "Balance"
+            },
+            "bass": {
+                "name": "Bass"
+            },
+            "treble": {
+                "name": "Treble"
+            },
+            "turn_on_volume": {
+                "name": "Turn-on volume"
+            }
+        },
+        "select": {
+            "party_mode": {
+                "name": "Party mode",
+                "state": {
+                    "master": "Leader",
+                    "off": "Off",
+                    "on": "On"
+                }
+            }
+        },
+        "switch": {
+            "loudness": {
+                "name": "Loudness"
             }
         }
     },
@@ -43,20 +96,35 @@
         },
         "entry_cannot_connect": {
             "message": "Error while connecting to {host}:{port}"
+        },
+        "missing_preset": {
+            "message": "The specified preset is not available for this source: {preset_id}"
+        },
+        "preset_non_integer": {
+            "message": "Preset must be an integer, got: {preset_id}"
+        },
+        "unsupported_media_type": {
+            "message": "Unsupported media type for Russound zone: {media_type}"
         }
     },
-    "issues": {
-        "deprecated_yaml_import_issue_cannot_connect": {
-            "description": "Configuring {integration_title} using YAML is being removed but there was a connection error importing your YAML configuration.\n\nPlease make sure {integration_title} is turned on, and restart Home Assistant to try importing again. Otherwise, please remove the YAML from your configuration and add the integration manually.",
-            "title": "The {integration_title} YAML configuration import cannot connect to the Russound device"
-        },
-        "deprecated_yaml_import_issue_no_primary_controller": {
-            "description": "Configuring {integration_title} using YAML is being removed but there was a connection error importing your YAML configuration.\n\nNo primary controller was detected for the Russound device. Please make sure that the target Russound device has it's controller ID set to 1 (using the selector on the back of the unit).",
-            "title": "The {integration_title} YAML configuration import cannot configure the Russound Device."
-        },
-        "deprecated_yaml_import_issue_unknown": {
-            "description": "Configuring {integration_title} using YAML is being removed but there was a connection error importing your YAML configuration.\n\nPlease make sure {integration_title} is turned on, and restart Home Assistant to try importing again. Otherwise, please remove the YAML from your configuration and add the integration manually.",
-            "title": "The {integration_title} YAML configuration import cannot connect to the Russound device"
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "zone_source_exclusion": "Zone source exclusion"
+                },
+                "data_description": {
+                    "zone_source_exclusion": "When enabled, Home Assistant hides sources that are disabled for a zone from the source list for that zone."
+                }
+            }
+        }
+    },
+    "selector": {
+        "connection_type": {
+            "options": {
+                "serial": "Serial/USB",
+                "tcp": "TCP/IP"
+            }
         }
     }
 }

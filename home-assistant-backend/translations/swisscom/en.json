@@ -1,0 +1,43 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "unique_id_mismatch": "The Internet-Box at this address is not the one this entry was set up with."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "The administrator password printed on the bottom of the box."
+                },
+                "description": "The password for user {username} on the Internet-Box at {host} is no longer valid. Enter the current password.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Swisscom Internet-Box.",
+                    "password": "The administrator password printed on the bottom of the box.",
+                    "username": "The administrator username, normally \"admin\"."
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_import_issue_credentials_required": {
+            "description": "Configuring the {integration_title} integration through YAML is deprecated. The integration now requires a username and password to authenticate to your Internet-Box, which cannot be safely carried over from YAML.\n\nSet up the integration through the UI to provide your credentials (your existing host `{host}` will need to be re-entered), then remove the `{domain}` entry from your `configuration.yaml` file and restart Home Assistant.",
+            "title": "The {integration_title} YAML configuration is being removed"
+        }
+    }
+}

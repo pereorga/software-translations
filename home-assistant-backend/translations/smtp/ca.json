@@ -1,8 +1,55 @@
 {
-    "services": {
-        "reload": {
-            "description": "Recarrega tots els serveis de notificaci\u00f3 de SMTP.",
-            "name": "Torna a carregar"
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya",
+                    "port": "Port",
+                    "server": "Amfitri\u00f3",
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "user": {
+                "data": {
+                    "password": "Contrasenya",
+                    "port": "Port",
+                    "server": "Amfitri\u00f3",
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "recipient": {
+            "step": {
+                "reconfigure": {
+                    "data": {
+                        "recipient": "Correu electr\u00f2nic"
+                    }
+                },
+                "user": {
+                    "data": {
+                        "name": "Nom",
+                        "recipient": "Correu electr\u00f2nic"
+                    }
+                }
+            }
         }
     }
 }

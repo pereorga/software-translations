@@ -27,7 +27,7 @@
                 "name": "Relay contacts welded"
             },
             "cp_diode_failure": {
-                "name": "Ev diode short"
+                "name": "EV diode short"
             },
             "critical_temp": {
                 "name": "Overheating"
@@ -45,10 +45,10 @@
                 "name": "Overvoltage"
             },
             "rcd_error": {
-                "name": "Rcd error"
+                "name": "RCD error"
             },
             "state_e_activated": {
-                "name": "Ev error"
+                "name": "EV error"
             },
             "undervoltage": {
                 "name": "Undervoltage"
@@ -60,6 +60,9 @@
             },
             "charge_stop": {
                 "name": "Charge stop"
+            },
+            "charging_schedule_override": {
+                "name": "Charging schedule override"
             }
         },
         "number": {
@@ -67,7 +70,7 @@
                 "name": "Dynamic limit"
             },
             "led_max_brightness": {
-                "name": "Led brightness"
+                "name": "LED brightness"
             }
         },
         "select": {
@@ -106,7 +109,7 @@
             "limit_reason": {
                 "name": "Limit reason",
                 "state": {
-                    "1p_charging_disabled": "1p charging disabled",
+                    "1p_charging_disabled": "1P charging disabled",
                     "dynamic_limit": "Dynamic limit",
                     "em": "EM",
                     "em_offline": "EM offline",

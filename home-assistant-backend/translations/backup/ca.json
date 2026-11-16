@@ -1,4 +1,24 @@
 {
+    "entity": {
+        "event": {
+            "automatic_backup_event": {
+                "state_attributes": {
+                    "failed_reason": {
+                        "state": {
+                            "upload_failed": "No s'ha pogut pujar"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "backup_manager_state": {
+                "state": {
+                    "idle": "Inactiu"
+                }
+            }
+        }
+    },
     "services": {
         "create": {
             "description": "Crea una nova c\u00f2pia de seguretat.",

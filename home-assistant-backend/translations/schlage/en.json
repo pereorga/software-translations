@@ -1,8 +1,11 @@
 {
+    "common": {
+        "data_description_password": "The password of your Schlage account.",
+        "data_description_username": "The email address of your Schlage account."
+    },
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful",
             "wrong_account": "The user credentials provided do not match this Schlage account."
         },
         "error": {
@@ -14,6 +17,9 @@
                 "data": {
                     "password": "Password"
                 },
+                "data_description": {
+                    "password": "The password of your Schlage account."
+                },
                 "description": "The Schlage integration needs to re-authenticate your account",
                 "title": "Authentication expired for {name}"
             },
@@ -21,6 +27,10 @@
                 "data": {
                     "password": "Password",
                     "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password of your Schlage account.",
+                    "username": "The email address of your Schlage account."
                 }
             }
         }
@@ -33,7 +43,7 @@
         },
         "select": {
             "auto_lock_time": {
-                "name": "Auto-Lock time",
+                "name": "Auto-lock time",
                 "state": {
                     "0": "Disabled",
                     "120": "2 minutes",
@@ -41,7 +51,10 @@
                     "240": "4 minutes",
                     "30": "30 seconds",
                     "300": "5 minutes",
-                    "60": "1 minute"
+                    "360": "6 minutes",
+                    "5": "5 seconds",
+                    "60": "1 minute",
+                    "600": "10 minutes"
                 }
             }
         },
@@ -55,8 +68,68 @@
         }
     },
     "exceptions": {
+        "schlage_add_code_failed": {
+            "message": "Failed to add PIN code to the lock."
+        },
+        "schlage_code_exists": {
+            "message": "A PIN code with this value already exists on the lock."
+        },
+        "schlage_delete_code_failed": {
+            "message": "Failed to delete PIN code from the lock."
+        },
+        "schlage_name_exists": {
+            "message": "A PIN code with the name \"{name}\" already exists on the lock."
+        },
         "schlage_refresh_failed": {
-            "message": "Failed to refresh Schlage data"
+            "message": "Failed to refresh Schlage data."
+        },
+        "schlage_start_after_end": {
+            "message": "Start datetime must be before end datetime."
+        },
+        "schlage_temporary_dates_required": {
+            "message": "Both start and end datetimes must be provided for a temporary PIN."
+        }
+    },
+    "services": {
+        "add_code": {
+            "description": "Adds a PIN code to a lock.",
+            "fields": {
+                "code": {
+                    "description": "The PIN code to add. Must be unique to the lock and be between 4 and 8 digits long.",
+                    "name": "PIN code"
+                },
+                "end_datetime": {
+                    "description": "When the PIN code should stop working. Providing an end time makes the PIN temporary; both a start and an end time are required. Leave both fields empty for a permanent PIN.",
+                    "name": "End time"
+                },
+                "name": {
+                    "description": "Name for PIN code. Must be case insensitively unique to the lock.",
+                    "name": "PIN name"
+                },
+                "notify_on_use": {
+                    "description": "Whether the native Schlage notification should be sent when this PIN is used.",
+                    "name": "Notify when PIN is used"
+                },
+                "start_datetime": {
+                    "description": "When the PIN code should become active. Providing a start time makes the PIN temporary; both a start and an end time are required. Leave both fields empty for a permanent PIN.",
+                    "name": "Start time"
+                }
+            },
+            "name": "Add PIN code"
+        },
+        "delete_code": {
+            "description": "Deletes a PIN code from a lock.",
+            "fields": {
+                "name": {
+                    "description": "Name of PIN code to delete.",
+                    "name": "PIN name"
+                }
+            },
+            "name": "Delete PIN code"
+        },
+        "get_codes": {
+            "description": "Retrieves all PIN codes from a lock.",
+            "name": "Get PIN codes"
         }
     }
 }

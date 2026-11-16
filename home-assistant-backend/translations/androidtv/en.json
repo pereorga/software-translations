@@ -14,12 +14,19 @@
         "step": {
             "user": {
                 "data": {
-                    "adb_server_ip": "IP address of the ADB server (leave empty to not use)",
-                    "adb_server_port": "Port of the ADB server",
-                    "adbkey": "Path to your ADB key file (leave empty to auto generate)",
                     "device_class": "The type of device",
                     "host": "Host",
                     "port": "Port"
+                },
+                "sections": {
+                    "more_options": {
+                        "data": {
+                            "adb_server_ip": "IP address of the ADB server (leave empty to not use)",
+                            "adb_server_port": "Port of the ADB server",
+                            "adbkey": "Path to your ADB key file (leave empty to auto generate)"
+                        },
+                        "name": "More options"
+                    }
                 }
             }
         }
@@ -62,6 +69,13 @@
                 },
                 "description": "Configure detection rule for application ID {rule_id}",
                 "title": "Configure Android state detection rules"
+            }
+        }
+    },
+    "selector": {
+        "device_class": {
+            "options": {
+                "auto": "Auto-detect device type"
             }
         }
     },

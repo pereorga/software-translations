@@ -1,0 +1,35 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat",
+            "invalid_access_token": "Token d'acc\u00e9s inv\u00e0lid"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_access_token": "Token d'acc\u00e9s inv\u00e0lid",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_token": "Token d'API"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery_voltage": {
+                "name": "Tensi\u00f3 de la bateria"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "No s'ha pogut connectar: {error}"
+        },
+        "invalid_access_token": {
+            "message": "Token d'acc\u00e9s inv\u00e0lid: {error}"
+        }
+    }
+}

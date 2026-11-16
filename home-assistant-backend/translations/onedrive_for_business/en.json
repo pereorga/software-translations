@@ -1,0 +1,114 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "connection_error": "Failed to connect to OneDrive.",
+            "missing_configuration": "The component is not configured. Please follow the documentation.",
+            "unknown": "Unexpected error",
+            "wrong_drive": "New account does not contain previously configured OneDrive."
+        },
+        "create_entry": {
+            "default": "Successfully authenticated"
+        },
+        "error": {
+            "folder_creation_error": "Failed to create folder"
+        },
+        "step": {
+            "pick_implementation": {
+                "data": {
+                    "implementation": "Application credentials"
+                },
+                "data_description": {
+                    "implementation": "The credentials you want to use to authenticate."
+                },
+                "title": "Pick authentication method"
+            },
+            "pick_tenant": {
+                "data": {
+                    "tenant_id": "Tenant ID"
+                },
+                "data_description": {
+                    "tenant_id": "The directory (tenant) ID from the Microsoft Entra admin center."
+                },
+                "description": "To set up OneDrive for Business, you need to create an app registration in the [Microsoft Entra admin center]({entra_url}) and set the redirect URI to `{redirect_url}`. In this step, enter the ID of the tenant where you created the app registration. In the next step, you will be asked to provide the client ID and client secret of the app registration.",
+                "title": "Select tenant"
+            },
+            "reauth_confirm": {
+                "description": "The OneDrive for Business integration needs to re-authenticate your account",
+                "title": "Authentication expired for {name}"
+            },
+            "reconfigure_folder": {
+                "data": {
+                    "folder_path": "Folder path"
+                },
+                "data_description": {
+                    "folder_path": "Path to the backup folder"
+                },
+                "description": "Path of folder which will be used to create a folder to store backups. If the folder does not exist, it will be created inside your OneDrive root directory.",
+                "title": "Define backup location"
+            },
+            "select_folder": {
+                "data": {
+                    "folder_path": "Folder path"
+                },
+                "data_description": {
+                    "folder_path": "Path to the backup folder"
+                },
+                "description": "Path of folder which will be used to create a folder to store backups. If the folder does not exist, it will be created inside your OneDrive root directory.",
+                "title": "Define backup location"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "drive_state": {
+                "name": "Drive state",
+                "state": {
+                    "critical": "Critical",
+                    "exceeded": "Exceeded",
+                    "nearing": "Nearing limit",
+                    "normal": "Normal"
+                }
+            },
+            "remaining_size": {
+                "name": "Remaining storage"
+            },
+            "total_size": {
+                "name": "Total available storage"
+            },
+            "used_size": {
+                "name": "Used storage"
+            }
+        }
+    },
+    "exceptions": {
+        "authentication_failed": {
+            "message": "Authentication failed"
+        },
+        "connection_error": {
+            "message": "Failed to connect to OneDrive."
+        },
+        "duplicate_drive": {
+            "message": "This drive is already set up as {title}. Remove one of the two entries."
+        },
+        "failed_to_get_folder": {
+            "message": "Failed to get {folder} folder"
+        },
+        "hash_mismatch": {
+            "message": "Hash validation failed, backup file might be corrupt"
+        },
+        "update_failed": {
+            "message": "Failed to update drive state"
+        }
+    },
+    "issues": {
+        "drive_almost_full": {
+            "description": "\"{name}\" is near your quota limit. If you go over this limit your drive will be temporarily frozen and your backups will start failing. Please free up some space or upgrade your OneDrive plan. Currently using {used} GiB of {total} GiB.",
+            "title": "OneDrive near data cap"
+        },
+        "drive_full": {
+            "description": "\"{name}\" has exceeded your quota limit. This means your next backup will fail. Please free up some space or upgrade your OneDrive plan. Currently using {used} GiB of {total} GiB.",
+            "title": "OneDrive data cap exceeded"
+        }
+    }
+}

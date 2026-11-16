@@ -1,16 +1,25 @@
 {
+    "common": {
+        "time_zone": "Zona hor\u00e0ria"
+    },
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "elevation": "Altitud",
+                    "language": "Idioma",
+                    "location": "Ubicaci\u00f3",
+                    "time_zone": "Zona hor\u00e0ria"
+                }
+            },
             "user": {
                 "data": {
-                    "diaspora": "Fora d'Israel?",
                     "elevation": "Altitud",
+                    "language": "Idioma",
                     "location": "Ubicaci\u00f3",
-                    "name": "Nom",
                     "time_zone": "Zona hor\u00e0ria"
                 }
             }
@@ -18,17 +27,21 @@
     },
     "entity": {
         "sensor": {
-            "hebrew_date": {
-                "state_attributes": {
-                    "hebrew_day": {
-                        "name": "Dia hebreu"
-                    },
-                    "hebrew_month_name": {
-                        "name": "Nom del mes hebreu"
-                    },
-                    "hebrew_year": {
-                        "name": "Any hebreu"
-                    }
+            "shkia": {
+                "name": "Posta de sol (Shkia)"
+            }
+        }
+    },
+    "exceptions": {
+        "sunset_event": {
+            "message": "No s'ha pogut calcular la posta de sol per a la data i la ubicaci\u00f3 proporcionades."
+        }
+    },
+    "services": {
+        "count_omer": {
+            "fields": {
+                "language": {
+                    "name": "Idioma"
                 }
             }
         }

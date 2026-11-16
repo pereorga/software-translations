@@ -1,14 +1,8 @@
 {
     "config": {
         "abort": {
-            "addon_get_discovery_info_failed": "No s'ha pogut obtenir la informaci\u00f3 de descobriment del complement Servidor Matter.",
-            "addon_info_failed": "No s'ha pogut obtenir la informaci\u00f3 del complement Servidor Matter.",
-            "addon_install_failed": "No s'ha pogut instal\u00b7lar el complement Servidor Matter.",
-            "addon_start_failed": "No s'ha pogut iniciar el complement Servidor Matter.",
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "not_matter_addon": "El complement descobert no \u00e9s el Servidor Matter oficial.",
             "reconfiguration_successful": "Integraci\u00f3 Matter reconfigurada correctament."
         },
         "error": {
@@ -17,36 +11,22 @@
             "unknown": "Error inesperat"
         },
         "flow_title": "{name}",
-        "progress": {
-            "install_addon": "Espera mentre finalitza la instal\u00b7laci\u00f3 del complement Servidor Matter. Pot tardar uns minuts.",
-            "start_addon": "Espera mentre es completa la inicialitzaci\u00f3 del complement Servidor Matter. Aquest complement \u00e9s el que permet utilitzar Matter dins Home Assistant. Espera uns segons."
-        },
         "step": {
-            "hassio_confirm": {
-                "title": "Configuraci\u00f3 de la integraci\u00f3 Matter amb el complement Servidor Matter"
-            },
-            "install_addon": {
-                "title": "Ha comen\u00e7at la instal\u00b7laci\u00f3 del complement"
-            },
             "manual": {
                 "data": {
                     "url": "URL"
                 }
             },
             "on_supervisor": {
-                "data": {
-                    "use_addon": "Utilitza el complement oficial del Supervisor, Servidor Matter"
-                },
-                "description": "Vols utilitzar el complement oficial Servidor Matter Supervisor? \n\nSi ja est\u00e0s executant el Servidor Matter en un altre complement, contenidor personalitzat, o de manera nativa, etc. NO seleccionis aquesta opci\u00f3.",
                 "title": "Selecci\u00f3 del m\u00e8tode de connexi\u00f3"
-            },
-            "start_addon": {
-                "title": "Iniciant complement."
             }
         }
     },
     "entity": {
         "binary_sensor": {
+            "alarm_door": {
+                "name": "Alarma de la porta"
+            },
             "battery_alert": {
                 "name": "Alerta de bateria"
             },
@@ -91,7 +71,14 @@
         },
         "climate": {
             "thermostat": {
-                "name": "Term\u00f2stat"
+                "name": "Term\u00f2stat",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "vacation": "Vacances"
+                        }
+                    }
+                }
             }
         },
         "cover": {
@@ -101,7 +88,6 @@
         },
         "event": {
             "button": {
-                "name": "Bot\u00f3",
                 "state_attributes": {
                     "event_type": {
                         "state": {
@@ -124,7 +110,17 @@
         },
         "fan": {
             "fan": {
-                "name": "Ventilador"
+                "name": "Ventilador",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na"
+                        }
+                    }
+                }
             }
         },
         "light": {
@@ -137,13 +133,47 @@
                 "name": "Pany"
             }
         },
+        "number": {
+            "led_indicator_intensity_off": {
+                "name": "Intensitat de LED apagat"
+            },
+            "led_indicator_intensity_on": {
+                "name": "Intensitat de LED enc\u00e8s"
+            }
+        },
         "select": {
+            "door_lock_operating_mode": {
+                "state": {
+                    "normal": "Normal"
+                }
+            },
+            "door_lock_sound_volume": {
+                "name": "Volum del so",
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "laundry_washer_number_of_rinses": {
+                "state": {
+                    "normal": "Normal",
+                    "off": "OFF"
+                }
+            },
             "mode": {
                 "name": "Mode"
+            },
+            "pump_operation_mode": {
+                "state": {
+                    "normal": "Normal"
+                }
             },
             "sensitivity_level": {
                 "name": "Sensibilitat",
                 "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
                     "standard": "Est\u00e0ndard"
                 }
             },
@@ -156,13 +186,39 @@
             }
         },
         "sensor": {
+            "battery_charge_state": {
+                "state": {
+                    "charging": "Carregant"
+                }
+            },
+            "battery_voltage": {
+                "name": "Tensi\u00f3 de la bateria"
+            },
             "contamination_state": {
                 "name": "Estat de contaminaci\u00f3",
                 "state": {
                     "critical": "Cr\u00edtica",
+                    "low": "Baix/a",
                     "normal": "Normal",
                     "warning": "Alerta"
                 }
+            },
+            "door_open_events": {
+                "name": "Esdeveniments de porta oberta"
+            },
+            "esa_opt_out_state": {
+                "state": {
+                    "no_opt_out": "OFF"
+                }
+            },
+            "esa_state": {
+                "state": {
+                    "fault": "Error",
+                    "paused": "Pausat/ada"
+                }
+            },
+            "evse_soc": {
+                "name": "Estat de c\u00e0rrega"
             },
             "expiry_date": {
                 "name": "Data de caducitat"
@@ -170,22 +226,67 @@
             "flow": {
                 "name": "Flux"
             },
+            "nitrogen_dioxide": {
+                "name": "Di\u00f2xid de nitrogen"
+            },
+            "operational_error": {
+                "state": {
+                    "water_tank_lid_open": "Tapa del dip\u00f2sit d'aigua oberta"
+                }
+            },
             "operational_state": {
                 "state": {
+                    "charging": "Carregant",
                     "error": "Error",
                     "paused": "Pausat/ada",
                     "running": "En funcionament",
-                    "stopped": "Aturat"
+                    "stopped": "Parat"
                 }
+            },
+            "outdoor_temperature": {
+                "name": "Temperatura exterior"
             },
             "switch_current_position": {
                 "name": "Posici\u00f3 actual de l'interruptor"
             },
+            "thread_channel": {
+                "name": "Canal Thread"
+            },
+            "thread_routing_role": {
+                "state": {
+                    "end_device": "Dispositiu final",
+                    "leader": "L\u00edder",
+                    "reed": "Dispositiu final apte com a encaminador (router)",
+                    "router": "Encaminador (router)",
+                    "sleepy_end_device": "Dispositiu final adormit",
+                    "unassigned": "Sense assignar",
+                    "unknown": "Desconegut",
+                    "unspecified": "No especificat"
+                }
+            },
+            "tvoc_level": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
             "valve_position": {
                 "name": "Posici\u00f3 de la v\u00e0lvula"
+            },
+            "wifi_rssi": {
+                "name": "RSSI Wi-Fi"
+            }
+        },
+        "siren": {
+            "siren": {
+                "name": "Sirena"
             }
         },
         "switch": {
+            "evse_charging_switch": {
+                "name": "Activa la c\u00e0rrega"
+            },
             "power": {
                 "name": "Pot\u00e8ncia"
             },
@@ -202,9 +303,17 @@
             "valve": {
                 "name": "V\u00e0lvula"
             }
+        },
+        "water_heater": {
+            "water_heater": {
+                "name": "Escalfador d'aigua"
+            }
         }
     },
     "issues": {
+        "ipv6_disabled": {
+            "title": "IPv6 est\u00e0 desactivada per\u00f2 \u00e9s obligat\u00f2ria per a Matter."
+        },
         "server_version_version_too_new": {
             "description": "La versi\u00f3 del servidor Matter que est\u00e0s executant actualment \u00e9s massa nova per a aquesta versi\u00f3 de Home Assistant. Actualitza Home Assistant a l'\u00faltima versi\u00f3 o instal\u00b7la una versi\u00f3 de Matter m\u00e9s antiga per resoldre aquest problema.",
             "title": "Es necessita una versi\u00f3 del servidor Matter m\u00e9s antiga"

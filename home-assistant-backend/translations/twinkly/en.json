@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect"
         },
         "error": {
             "cannot_connect": "Failed to connect"
@@ -19,6 +20,27 @@
                     "host": "Hostname or IP address of your Twinkly device."
                 }
             }
+        }
+    },
+    "entity": {
+        "select": {
+            "mode": {
+                "name": "Mode",
+                "state": {
+                    "color": "Color",
+                    "demo": "Demo",
+                    "effect": "Effect",
+                    "movie": "Uploaded effect",
+                    "off": "Off",
+                    "playlist": "Playlist",
+                    "rt": "Real time"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Unable to connect to the Twinkly device at {host}"
         }
     }
 }

@@ -1,0 +1,75 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "api_unauthorized": "Could not verify your A Better Routeplanner account.",
+            "cannot_connect": "Failed to connect to A Better Routeplanner.",
+            "cloud_not_enabled": "Please make sure you run Home Assistant with `{default_config}` enabled in your configuration.yaml.",
+            "missing_configuration": "The component is not configured. Please follow the documentation.",
+            "no_vehicles": "No vehicles were found on this A Better Routeplanner account."
+        },
+        "create_entry": {
+            "default": "Successfully authenticated"
+        },
+        "step": {
+            "pick_implementation": {
+                "data": {
+                    "implementation": "Application credentials"
+                },
+                "data_description": {
+                    "implementation": "The credentials you want to use to authenticate."
+                },
+                "title": "Pick authentication method"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery_capacity": {
+                "name": "Battery capacity"
+            },
+            "battery_temperature": {
+                "name": "Battery temperature"
+            },
+            "calibrated_ref_cons": {
+                "name": "Calibrated ref cons"
+            },
+            "charging_state": {
+                "name": "Charging state",
+                "state": {
+                    "charging_ac": "Charging (AC)",
+                    "charging_dc": "Charging (DC)",
+                    "charging_unknown": "Charging",
+                    "not_charging": "Not charging",
+                    "plugged_in": "Plugged in"
+                }
+            },
+            "odometer": {
+                "name": "Odometer"
+            },
+            "range": {
+                "name": "Range"
+            },
+            "soc": {
+                "name": "SoC"
+            },
+            "soe": {
+                "name": "SoE"
+            },
+            "soh": {
+                "name": "State of health"
+            }
+        }
+    },
+    "exceptions": {
+        "abrp_session_invalid": {
+            "message": "A Better Routeplanner rejected the authentication session; please re-authenticate."
+        },
+        "abrp_update_failed": {
+            "message": "Failed to fetch vehicle data from A Better Routeplanner."
+        },
+        "oauth2_token_refresh_failed": {
+            "message": "Failed to refresh the OAuth2 access token."
+        }
+    }
+}

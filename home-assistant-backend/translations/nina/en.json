@@ -1,9 +1,11 @@
 {
     "config": {
-        "error": {
-            "cannot_connect": "Failed to connect",
-            "no_selection": "Please select at least one city/county",
+        "abort": {
+            "no_fetch": "Cannot connect to NINA service to fetch city or counties. Please try again later.",
             "unknown": "Unexpected error"
+        },
+        "error": {
+            "no_selection": "Please select at least one city/county"
         },
         "step": {
             "user": {
@@ -14,18 +16,81 @@
                     "_m_to_q": "City/county (M-Q)",
                     "_r_to_u": "City/county (R-U)",
                     "_v_to_z": "City/county (V-Z)",
-                    "headline_filter": "Blacklist regex to filter warning headlines",
+                    "slots": "Maximum warnings"
+                },
+                "data_description": {
+                    "_a_to_d": "City/county (A-D) to receive warnings for",
+                    "_e_to_h": "City/county (E-H) to receive warnings for",
+                    "_i_to_l": "City/county (I-L) to receive warnings for",
+                    "_m_to_q": "City/county (M-Q) to receive warnings for",
+                    "_r_to_u": "City/county (R-U) to receive warnings for",
+                    "_v_to_z": "City/county (V-Z) to receive warnings for",
                     "slots": "Maximum warnings per city/county"
+                },
+                "sections": {
+                    "filters": {
+                        "data": {
+                            "area_filter": "Affected area filter",
+                            "headline_filter": "Headline blocklist"
+                        },
+                        "data_description": {
+                            "area_filter": "Whitelist regex to filter warnings based on affected areas",
+                            "headline_filter": "Blacklist regex to filter warning based on headlines"
+                        },
+                        "description": "Filter warnings based on their attributes",
+                        "name": "Filters"
+                    }
                 },
                 "title": "Select city/county"
             }
         }
     },
+    "entity": {
+        "binary_sensor": {
+            "warning": {
+                "name": "Warning {slot_id}"
+            }
+        },
+        "sensor": {
+            "affected_areas": {
+                "name": "Affected areas {slot_id}"
+            },
+            "expires": {
+                "name": "Expires {slot_id}"
+            },
+            "headline": {
+                "name": "Headline {slot_id}"
+            },
+            "more_info_url": {
+                "name": "More information URL {slot_id}"
+            },
+            "sender": {
+                "name": "Sender {slot_id}"
+            },
+            "sent": {
+                "name": "Sent {slot_id}"
+            },
+            "severity": {
+                "name": "Severity {slot_id}",
+                "state": {
+                    "extreme": "Extreme",
+                    "minor": "Minor",
+                    "moderate": "Moderate",
+                    "severe": "Severe"
+                }
+            },
+            "start": {
+                "name": "Start {slot_id}"
+            }
+        }
+    },
     "options": {
-        "error": {
-            "cannot_connect": "Failed to connect",
-            "no_selection": "Please select at least one city/county",
+        "abort": {
+            "no_fetch": "Cannot connect to NINA service to fetch city or counties. Please try again later.",
             "unknown": "Unexpected error"
+        },
+        "error": {
+            "no_selection": "Please select at least one city/county"
         },
         "step": {
             "init": {
@@ -36,12 +101,39 @@
                     "_m_to_q": "City/county (M-Q)",
                     "_r_to_u": "City/county (R-U)",
                     "_v_to_z": "City/county (V-Z)",
-                    "area_filter": "Whitelist regex to filter warnings based on affected areas",
-                    "headline_filter": "Blacklist regex to filter warning headlines",
+                    "slots": "Maximum warnings"
+                },
+                "data_description": {
+                    "_a_to_d": "City/county (A-D) to receive warnings for",
+                    "_e_to_h": "City/county (E-H) to receive warnings for",
+                    "_i_to_l": "City/county (I-L) to receive warnings for",
+                    "_m_to_q": "City/county (M-Q) to receive warnings for",
+                    "_r_to_u": "City/county (R-U) to receive warnings for",
+                    "_v_to_z": "City/county (V-Z) to receive warnings for",
                     "slots": "Maximum warnings per city/county"
+                },
+                "sections": {
+                    "filters": {
+                        "data": {
+                            "area_filter": "Affected area filter",
+                            "headline_filter": "Headline blocklist"
+                        },
+                        "data_description": {
+                            "area_filter": "Whitelist regex to filter warnings based on affected areas",
+                            "headline_filter": "Blacklist regex to filter warning based on headlines"
+                        },
+                        "description": "Filter warnings based on their attributes",
+                        "name": "Filters"
+                    }
                 },
                 "title": "Options"
             }
+        }
+    },
+    "services": {
+        "get_details": {
+            "description": "Retrieves the details of a warning.",
+            "name": "Get warning details"
         }
     }
 }

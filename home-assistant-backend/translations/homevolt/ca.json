@@ -1,0 +1,55 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "credentials": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            },
+            "zeroconf_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "rssi": {
+                "name": "RSSI"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_failed": {
+            "message": "Autenticaci\u00f3 inv\u00e0lida"
+        },
+        "communication_error": {
+            "message": "Error de comunicaci\u00f3 amb la bateria Homevolt: {error}"
+        },
+        "unknown_error": {
+            "message": "Error desconegut de la bateria Homevolt: {error}"
+        }
+    }
+}

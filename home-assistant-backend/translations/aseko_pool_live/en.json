@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful",
             "unique_id_mismatch": "The user identifier does not match the previous identifier"
         },
         "error": {
@@ -50,6 +49,11 @@
             "water_temperature": {
                 "name": "Water temperature"
             }
+        }
+    },
+    "exceptions": {
+        "migration_unknown_version": {
+            "message": "Cannot migrate configuration entry from unknown version {version}"
         }
     }
 }

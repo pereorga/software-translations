@@ -32,6 +32,25 @@
                     }
                 }
             }
+        },
+        "select": {
+            "led_state": {
+                "state": {
+                    "fast_flash": "Fast flash",
+                    "off": "Off",
+                    "on": "On",
+                    "slow_flash": "Slow flash"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "default_dimmer_level": "Default light level when first turning on a light from Home Assistant"
+                }
+            }
         }
     }
 }

@@ -1,24 +1,96 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "infer_arming_state": "Infer arming state",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of your Ness alarm panel.",
+                    "infer_arming_state": "Attempt to infer the arming state from zone activity.",
+                    "port": "The port on which the Ness alarm panel is accessible."
+                },
+                "description": "Configure connection to your Ness D8X/D16X alarm panel.",
+                "title": "Set up Ness Alarm"
+            }
+        }
+    },
+    "config_subentries": {
+        "zone": {
+            "entry_type": "Zone",
+            "error": {
+                "already_configured": "Zone with this number is already configured"
+            },
+            "initiate_flow": {
+                "user": "Add zone"
+            },
+            "step": {
+                "reconfigure": {
+                    "data": {
+                        "type": "Zone type"
+                    },
+                    "data_description": {
+                        "type": "Choose the device class you would like the sensor to show as"
+                    },
+                    "title": "Reconfigure zone {zone_number}"
+                },
+                "user": {
+                    "data": {
+                        "type": "Zone type",
+                        "zone_number": "Zone number"
+                    },
+                    "data_description": {
+                        "type": "Choose the device class you would like the sensor to show as",
+                        "zone_number": "Enter zone number to configure (1-32)"
+                    },
+                    "title": "Configure zone"
+                }
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "data": {
+                    "show_home_mode": "Show arm home mode"
+                },
+                "data_description": {
+                    "show_home_mode": "Enable this to show the arm home option on the alarm panel."
+                }
+            }
+        }
+    },
     "services": {
         "aux": {
-            "description": "Trigger an aux output.",
+            "description": "Changes the state of an aux output.",
             "fields": {
                 "output_id": {
                     "description": "The aux output you wish to change.",
                     "name": "Output ID"
                 },
                 "state": {
-                    "description": "The On/Off State. If P14xE 8E is enabled then a value of true will pulse output x for the time specified in P14(x+4)E.",
+                    "description": "The on/off state of the output. If P14xE 8E is enabled then turning on will pulse the output for the time specified in P14(x+4)E.",
                     "name": "State"
                 }
             },
             "name": "Aux"
         },
         "panic": {
-            "description": "Triggers a panic.",
+            "description": "Triggers a panic alarm.",
             "fields": {
                 "code": {
-                    "description": "The user code to use to trigger the panic.",
+                    "description": "The user code to use to trigger the panic alarm.",
                     "name": "Code"
                 }
             },

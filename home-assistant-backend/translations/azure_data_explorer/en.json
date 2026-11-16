@@ -20,12 +20,18 @@
                     "use_queued_ingestion": "Use queued ingestion"
                 },
                 "data_description": {
+                    "authority_id": "In Azure portal this is also known as Directory (tenant) ID",
                     "cluster_ingest_uri": "Ingestion URI of the cluster",
                     "use_queued_ingestion": "Must be enabled when using ADX free cluster"
                 },
                 "description": "Enter connection details",
                 "title": "Set up Azure Data Explorer"
             }
+        }
+    },
+    "exceptions": {
+        "authentication_failed": {
+            "message": "Could not authenticate to Azure Data Explorer"
         }
     }
 }

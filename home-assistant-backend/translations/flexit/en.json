@@ -1,0 +1,92 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "baudrate": "Baud rate",
+                    "device": "Serial port",
+                    "host": "Host",
+                    "port": "Port",
+                    "unit": "Unit ID"
+                },
+                "data_description": {
+                    "baudrate": "Match the baud rate configured on the device.",
+                    "device": "Select a local serial port or a port shared over the network by a serial proxy.",
+                    "host": "The hostname or IP address of your Flexit CI66 Modbus bridge.",
+                    "port": "The Modbus TCP port to connect to.",
+                    "unit": "The Modbus unit ID of your Flexit AC unit."
+                }
+            },
+            "serial": {
+                "data": {
+                    "baudrate": "Baud rate",
+                    "device": "Serial port",
+                    "unit": "Unit ID"
+                },
+                "data_description": {
+                    "baudrate": "Match the baud rate configured on the device.",
+                    "device": "Select a local serial port or a port shared over the network by a serial proxy.",
+                    "unit": "The Modbus unit ID of your Flexit AC unit."
+                }
+            },
+            "tcp": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port",
+                    "unit": "Unit ID"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Flexit CI66 Modbus bridge.",
+                    "port": "The Modbus TCP port to connect to.",
+                    "unit": "The Modbus unit ID of your Flexit AC unit."
+                }
+            },
+            "user": {
+                "menu_options": {
+                    "serial": "Serial port (Modbus RTU)",
+                    "tcp": "Modbus TCP"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "electric_heater_enabled": {
+                "name": "Electric heater enabled"
+            },
+            "filter_alarm": {
+                "name": "Filter alarm"
+            }
+        },
+        "sensor": {
+            "air_filter_operating_time": {
+                "name": "Air filter operating time"
+            },
+            "cooling_regulation": {
+                "name": "Cooling regulation"
+            },
+            "electric_heater_regulation": {
+                "name": "Electric heater regulation"
+            },
+            "heat_exchanger_regulation": {
+                "name": "Heat exchanger regulation"
+            },
+            "outdoor_air_temperature": {
+                "name": "Outdoor air temperature"
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_no_import": {
+            "description": "Configuring Flexit using YAML is being removed.\n\nYour existing YAML configuration could not be automatically imported because the Modbus connection details are configured separately, in a `modbus:` hub, which is not accessible from the `climate` platform configuration.\n\nRemove the `flexit` configuration from your configuration.yaml file, then add the integration again from the Home Assistant UI, providing the Modbus connection details and unit ID of your Flexit unit.",
+            "title": "The Flexit YAML configuration is being removed"
+        }
+    }
+}

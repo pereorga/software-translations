@@ -1,20 +1,19 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "already_in_progress": "Configuration flow is already in progress"
+            "already_configured": "Device is already configured"
         },
         "error": {
-            "cannot_authenticate": "Cannot authenticate, is Gateway paired with another server like e.g. Homekit?",
+            "cannot_authenticate": "Cannot authenticate, is your gateway paired with another server like e.g. HomeKit?",
             "cannot_connect": "Failed to connect",
-            "invalid_security_code": "Failed to register with provided key. If this keeps happening, try restarting the gateway.",
+            "invalid_security_code": "Failed to register with provided code. If this keeps happening, try restarting the gateway.",
             "timeout": "Timeout validating the code."
         },
         "step": {
             "auth": {
                 "data": {
                     "host": "Host",
-                    "security_code": "Security Code"
+                    "security_code": "Security code"
                 },
                 "data_description": {
                     "host": "Hostname or IP address of your Tr\u00e5dfri gateway."

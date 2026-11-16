@@ -1,14 +1,24 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "unique_id_mismatch": "The authenticated Monarch Money account does not match the configured account."
         },
         "error": {
             "bad_mfa": "Your code was invalid, please try again or use a recovery token.",
+            "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
             "mfa_required": "Multi-factor authentication required."
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "email": "Email",
+                    "mfa_code": "Enter your MFA code",
+                    "password": "Password"
+                },
+                "description": "Your Monarch Money credentials have expired. Enter your email and password to reconnect your existing account. If required, you will also be prompted for your MFA code."
+            },
             "user": {
                 "data": {
                     "email": "Email",
@@ -27,6 +37,18 @@
             },
             "balance": {
                 "name": "Balance"
+            },
+            "budget_actual": {
+                "name": "Budget actual"
+            },
+            "budget_planned": {
+                "name": "Budget planned"
+            },
+            "budget_remaining": {
+                "name": "Budget remaining"
+            },
+            "owner": {
+                "name": "Owner"
             },
             "savings": {
                 "name": "Savings year to date"

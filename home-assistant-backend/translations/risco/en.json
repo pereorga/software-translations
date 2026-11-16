@@ -27,7 +27,7 @@
             "user": {
                 "menu_options": {
                     "cloud": "Risco Cloud (recommended)",
-                    "local": "Local Risco Panel (advanced)"
+                    "local": "Local Risco Panel"
                 }
             }
         }
@@ -71,24 +71,38 @@
             }
         }
     },
+    "exceptions": {
+        "local_unauthorized": {
+            "message": "Failed to authenticate with the local Risco panel"
+        },
+        "not_local_entry": {
+            "message": "This service only works with local Risco connections."
+        }
+    },
     "options": {
         "step": {
             "ha_to_risco": {
                 "data": {
-                    "armed_away": "Armed Away",
-                    "armed_custom_bypass": "Armed Custom Bypass",
-                    "armed_home": "Armed Home",
-                    "armed_night": "Armed Night"
+                    "armed_away": "Armed away",
+                    "armed_custom_bypass": "Armed custom bypass",
+                    "armed_home": "Armed home",
+                    "armed_night": "Armed night"
                 },
-                "description": "Select what state to set your Risco alarm to when arming the Home Assistant alarm",
+                "description": "Select what state to set your Risco alarm to when arming the Home Assistant alarm control panel",
                 "title": "Map Home Assistant states to Risco states"
             },
             "init": {
                 "data": {
                     "code_arm_required": "Require PIN to arm",
-                    "code_disarm_required": "Require PIN to disarm",
-                    "concurrency": "Maximum concurrent requests in Risco local",
-                    "scan_interval": "How often to poll Risco Cloud (in seconds)"
+                    "code_disarm_required": "Require PIN to disarm"
+                },
+                "sections": {
+                    "more_options": {
+                        "data": {
+                            "concurrency": "Maximum concurrent requests in Risco local"
+                        },
+                        "name": "More options"
+                    }
                 },
                 "title": "Configure options"
             },
@@ -101,9 +115,25 @@
                     "arm": "Armed (AWAY)",
                     "partial_arm": "Partially Armed (STAY)"
                 },
-                "description": "Select what state your Home Assistant alarm will report for every state reported by Risco",
+                "description": "Select what state your Home Assistant alarm control panel will report for every state reported by Risco",
                 "title": "Map Risco states to Home Assistant states"
             }
+        }
+    },
+    "services": {
+        "set_time": {
+            "description": "Sets the time of an alarm panel.",
+            "fields": {
+                "config_entry_id": {
+                    "description": "The Risco alarm panel to set the time for.",
+                    "name": "Config entry"
+                },
+                "time": {
+                    "description": "The time to send to the alarm panel. Leave it empty to use the Home Assistant system time.",
+                    "name": "Time"
+                }
+            },
+            "name": "Set the alarm panel time"
         }
     }
 }

@@ -1,0 +1,65 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_devices_found": "No devices found on the network",
+            "not_supported": "This device is not a supported SteamVR Base Station 2.0."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "bluetooth_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
+            "user": {
+                "data": {
+                    "address": "Device"
+                },
+                "data_description": {
+                    "address": "The base station to set up. Its name (LHB-\u2026) is printed on its back."
+                },
+                "description": "Choose a device to set up"
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "channel": {
+                "name": "Channel"
+            },
+            "power_mode": {
+                "name": "Power mode",
+                "state": {
+                    "on": "On",
+                    "sleep": "Sleep",
+                    "standby": "Standby"
+                }
+            }
+        },
+        "sensor": {
+            "power_state": {
+                "name": "Power state",
+                "state": {
+                    "booting": "Booting",
+                    "on": "On",
+                    "sleep": "Sleeping",
+                    "standby": "Standby"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Could not reach {name}. Make sure a Bluetooth adapter or proxy is in range."
+        },
+        "device_not_found": {
+            "message": "{name} is not reachable yet: {reason}"
+        },
+        "not_supported": {
+            "message": "{name} does not support this command."
+        }
+    }
+}

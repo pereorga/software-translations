@@ -1,0 +1,56 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "no_devices": "No supported IntelliClima devices were found in your account",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Password",
+                    "username": "Email"
+                },
+                "data_description": {
+                    "password": "Your IntelliClima app password",
+                    "username": "Your IntelliClima app username"
+                },
+                "description": "Authenticate against IntelliClima cloud"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "advanced": {
+                "name": "Advanced control"
+            },
+            "boost": {
+                "name": "Boost"
+            },
+            "filter_cleaning": {
+                "name": "Filter cleaning required"
+            },
+            "night": {
+                "name": "Night mode"
+            },
+            "profiled": {
+                "name": "Automatic speed control"
+            }
+        },
+        "select": {
+            "fan_mode": {
+                "name": "Fan direction mode",
+                "state": {
+                    "alternate": "Alternating",
+                    "forward": "Forward",
+                    "reverse": "Reverse",
+                    "sensor": "Sensor"
+                }
+            }
+        }
+    }
+}

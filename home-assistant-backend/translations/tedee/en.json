@@ -2,8 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful",
             "unique_id_mismatch": "You selected a different bridge than the one this config entry was configured with, this is not allowed."
         },
         "error": {
@@ -72,8 +70,14 @@
         "authentication_failed": {
             "message": "Authentication failed. Local access token is invalid"
         },
+        "authentication_failed_transient": {
+            "message": "The bridge rejected the local access token, retrying"
+        },
         "lock_failed": {
             "message": "Failed to lock the door. Lock {lock_id}"
+        },
+        "no_locks": {
+            "message": "The bridge does not report any paired locks"
         },
         "open_failed": {
             "message": "Failed to unlatch the door. Lock {lock_id}"

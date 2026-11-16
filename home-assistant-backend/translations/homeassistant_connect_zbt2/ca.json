@@ -1,0 +1,88 @@
+{
+    "config": {
+        "abort": {
+            "addon_set_config_failed": "No s'ha pogut establir la configuraci\u00f3 de {addon_name} .",
+            "zha_migration_failed": "La migraci\u00f3 ZHA no ha tingut \u00e8xit."
+        },
+        "progress": {
+            "install_otbr_addon": "Instal\u00b7lant aplicaci\u00f3"
+        },
+        "step": {
+            "confirm_otbr": {
+                "title": "S'ha completat la configuraci\u00f3 d'OpenThread Border Router"
+            },
+            "confirm_zigbee": {
+                "title": "S'ha completat la configuraci\u00f3 de Zigbee"
+            },
+            "pick_firmware": {
+                "menu_option_descriptions": {
+                    "pick_firmware_zigbee": "Protocol m\u00e9s com\u00fa."
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "addon_set_config_failed": "No s'ha pogut establir la configuraci\u00f3 de {addon_name} .",
+            "zha_migration_failed": "La migraci\u00f3 ZHA no ha tingut \u00e8xit."
+        },
+        "error": {
+            "unknown": "Error inesperat"
+        },
+        "progress": {
+            "install_otbr_addon": "Instal\u00b7lant aplicaci\u00f3"
+        },
+        "step": {
+            "addon_installed_other_device": {
+                "title": "El suport multiprotocol ja est\u00e0 activat per a un altre dispositiu"
+            },
+            "addon_menu": {
+                "menu_options": {
+                    "reconfigure_addon": "Torna a configurar el suport multiprotocol de la r\u00e0dio IEEE 802.15.4",
+                    "uninstall_addon": "Elimina el suport multiprotocol de la r\u00e0dio IEEE 802.15.4."
+                }
+            },
+            "addon_not_installed": {
+                "data": {
+                    "enable_multi_pan": "Activa el suport multiprotocol"
+                },
+                "description": "Quan el suport multiprotocol est\u00e0 activat, la r\u00e0dio IEEE 802.15.4 de {hardware_name} es pot utilitzar tant per a Zigbee com per a Thread alhora (utilitzat per Matter). Si la r\u00e0dio ja utilitza la integraci\u00f3 ZHA Zigbee, ZHA es reconfigurar\u00e0 per utilitzar el microprogramari multiprotocol. \n\nNota: aquesta \u00e9s una caracter\u00edstica experimental.",
+                "title": "Activa el suport multiprotocol per l'est\u00e0ndard de r\u00e0dio IEEE 802.15.4"
+            },
+            "change_channel": {
+                "data": {
+                    "channel": "Canal"
+                },
+                "title": "Torna a configurar el suport multiprotocol de la r\u00e0dio IEEE 802.15.4"
+            },
+            "confirm_otbr": {
+                "title": "S'ha completat la configuraci\u00f3 d'OpenThread Border Router"
+            },
+            "confirm_zigbee": {
+                "title": "S'ha completat la configuraci\u00f3 de Zigbee"
+            },
+            "notify_channel_change": {
+                "description": "S'ha iniciat un canvi de canal de Zigbee i Thread. Finalitzar\u00e0 d'aqu\u00ed a {delay_minutes} minuts.",
+                "title": "Canvi de canal iniciat"
+            },
+            "notify_unknown_multipan_user": {
+                "title": "Pot ser que calgui una configuraci\u00f3 manual"
+            },
+            "pick_firmware": {
+                "menu_option_descriptions": {
+                    "pick_firmware_zigbee": "Protocol m\u00e9s com\u00fa."
+                }
+            },
+            "reconfigure_addon": {
+                "title": "Torna a configurar el suport multiprotocol de la r\u00e0dio IEEE 802.15.4"
+            },
+            "uninstall_addon": {
+                "data": {
+                    "disable_multi_pan": "Desactiva el suport multiprotocol"
+                },
+                "description": "Si desactives el suport multiprotocol, la r\u00e0dio del teu {hardware_name} tornar\u00e0 a programar-se amb el microprogramari nom\u00e9s de Zigbee i es desactivar\u00e0 el suport de Thread proporcionat per {hardware_name}. Els teus dispositius Thread continuaran funcionant nom\u00e9s si tens un altre encaminador frontera Thread a prop. \n\nLa instal\u00b7laci\u00f3 del microprogramari Zigbee i la posterior restauraci\u00f3 d'una c\u00f2pia de seguretat trigaran uns minuts.",
+                "title": "Elimina el suport multiprotocol de la r\u00e0dio IEEE 802.15.4."
+            }
+        }
+    }
+}

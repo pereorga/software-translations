@@ -1,0 +1,56 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "invalid_discovery_info": "Invalid discovery information received",
+            "missing_capabilities": "The MCP server does not support a required capability (Tools)",
+            "reauth_account_mismatch": "The authenticated user does not match the MCP Server user that needed re-authentication.",
+            "timeout_connect": "Timeout while establishing a connection",
+            "unknown": "Unexpected error"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_url": "Must be a valid MCP server URL",
+            "timeout_connect": "Timeout while establishing a connection",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "credentials_choice": {
+                "description": "You can either use existing credentials from another integration or set up new credentials.",
+                "menu_option_descriptions": {
+                    "new_credentials": "You will be guided through setting up a new OAuth Client ID and secret.",
+                    "pick_implementation": "You may use previously entered OAuth credentials."
+                },
+                "menu_options": {
+                    "new_credentials": "Set up new credentials",
+                    "pick_implementation": "Use existing credentials"
+                },
+                "title": "Choose how to authenticate with the MCP server"
+            },
+            "hassio_confirm": {
+                "description": "Do you want to configure Home Assistant to connect to the Model Context Protocol server provided by the app {addon}?",
+                "title": "Model Context Protocol server via Home Assistant app"
+            },
+            "pick_implementation": {
+                "data": {
+                    "implementation": "Application credentials"
+                },
+                "data_description": {
+                    "implementation": "The credentials you want to use to authenticate."
+                },
+                "title": "Pick authentication method"
+            },
+            "user": {
+                "data": {
+                    "url": "URL"
+                },
+                "data_description": {
+                    "url": "The remote MCP server URL for the SSE endpoint, for example {example_url}"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password of your myLeviton account.",
+                    "username": "The email address of your myLeviton account."
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "turn_off_failed": {
+            "message": "Failed to turn off the myLeviton switch."
+        },
+        "turn_on_failed": {
+            "message": "Failed to turn on the myLeviton switch."
+        }
+    }
+}

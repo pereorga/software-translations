@@ -4,7 +4,6 @@
             "already_configured": "Device is already configured",
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -32,6 +31,21 @@
                     "host": "The hostname or IP address of your Frontier Silicon device."
                 }
             }
+        }
+    },
+    "entity": {
+        "switch": {
+            "dst": {
+                "name": "Daylight Saving Time"
+            }
+        }
+    },
+    "exceptions": {
+        "api_error": {
+            "message": "Failed to execute {command}: {message}"
+        },
+        "connection_error": {
+            "message": "Failed to execute {command}: could not connect to device"
         }
     }
 }

@@ -1,9 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -42,8 +40,26 @@
             }
         },
         "select": {
-            "smart_charging": {
+            "buzzer_volume": {
                 "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
+                    "off": "OFF"
+                }
+            },
+            "led_brightness": {
+                "state": {
+                    "automatic": "Auto",
+                    "medium": "Mitj\u00e0/na",
+                    "off": "OFF"
+                }
+            },
+            "smart_charging": {
+                "name": "C\u00e0rrega intel\u00b7ligent",
+                "state": {
+                    "default": "Per defecte",
+                    "pure_solar": "Nom\u00e9s solar",
                     "scheduled": "Programat",
                     "smart_solar": "Solar intel\u00b7ligent"
                 }
@@ -63,6 +79,7 @@
                 "state": {
                     "charging": "Carregant",
                     "error": "Error",
+                    "fault": "Error",
                     "invalid": "Inv\u00e0lid",
                     "suspended": "Susp\u00e8s"
                 }

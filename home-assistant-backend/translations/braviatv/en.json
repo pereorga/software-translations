@@ -3,8 +3,7 @@
         "abort": {
             "already_configured": "Device is already configured",
             "no_ip_control": "IP Control is disabled on your TV or the TV is not supported.",
-            "not_bravia_device": "The device is not a Bravia TV.",
-            "reauth_successful": "Re-authentication was successful"
+            "not_bravia_device": "The device is not a Bravia TV."
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -15,9 +14,14 @@
         "step": {
             "authorize": {
                 "data": {
-                    "use_psk": "Use PSK authentication"
+                    "use_psk": "Use PSK authentication",
+                    "use_ssl": "Use SSL connection"
                 },
-                "description": "Make sure that \u00abControl remotely\u00bb is enabled on your TV, go to: \nSettings -> Network -> Remote device settings -> Control remotely. \n\nThere are two authorization methods: PIN code or PSK (Pre-Shared Key). \nAuthorization via PSK is recommended as more stable.",
+                "data_description": {
+                    "use_psk": "Authenticate with a Pre-Shared Key (PSK) instead of a PIN code. PSK authentication is recommended as it is more stable.",
+                    "use_ssl": "Connect to the TV over an encrypted SSL connection. Use only if your TV supports this connection type."
+                },
+                "description": "Make sure that \u00abControl remotely\u00bb is enabled on your TV. Go to: \nSettings -> Network -> Remote device settings -> Control remotely. \n\nThere are two authorization methods: PIN code or PSK (Pre-Shared Key). \nAuthorization via PSK is recommended, as it is more stable. \n\nUse an SSL connection only if your TV supports this connection type.",
                 "title": "Authorize Sony Bravia TV"
             },
             "confirm": {
@@ -27,12 +31,18 @@
                 "data": {
                     "pin": "PIN code"
                 },
+                "data_description": {
+                    "pin": "The PIN code shown on the TV screen."
+                },
                 "description": "Enter the PIN code shown on the Sony Bravia TV. \n\nIf the PIN code is not shown, you have to unregister Home Assistant on your TV, go to: Settings -> Network -> Remote device settings -> Deregister remote device.",
                 "title": "Authorize Sony Bravia TV"
             },
             "psk": {
                 "data": {
                     "pin": "PSK"
+                },
+                "data_description": {
+                    "pin": "The Pre-Shared Key configured in the IP Control settings of the TV."
                 },
                 "description": "To set up PSK on your TV, go to: Settings -> Network -> Home Network Setup -> IP Control. Set \u00abAuthentication\u00bb to \u00abNormal and Pre-Shared Key\u00bb or \u00abPre-Shared Key\u00bb and define your Pre-Shared-Key string (e.g. sony). \n\nThen enter your PSK here.",
                 "title": "Authorize Sony Bravia TV"
@@ -53,6 +63,32 @@
             "terminate_apps": {
                 "name": "Terminate apps"
             }
+        }
+    },
+    "exceptions": {
+        "command_error": {
+            "message": "Error sending command to {device}: {error}"
+        },
+        "command_error_not_found": {
+            "message": "Error sending command to {device}: the Bravia API service is reloading"
+        },
+        "command_error_offline": {
+            "message": "Error sending command to {device}: the TV is turned off"
+        },
+        "invalid_media_type": {
+            "message": "Invalid media type {media_type} for {device}. Only app and channel are supported"
+        },
+        "source_not_found": {
+            "message": "The {source_type} \"{query}\" was not found on {device}"
+        },
+        "unsupported_command": {
+            "message": "Unsupported command {command} for {device}"
+        },
+        "update_error": {
+            "message": "Error updating data for {device}: {error}"
+        },
+        "update_error_not_found": {
+            "message": "Error updating data for {device}: the Bravia API service is stuck"
         }
     }
 }

@@ -3,7 +3,6 @@
         "abort": {
             "already_configured": "Device is already configured",
             "cannot_connect": "Failed to connect",
-            "reconfigure_successful": "Re-configuration was successful",
             "wrong_device": "This Cambridge Audio device does not match the existing device ID. Please make sure you entered the correct IP address."
         },
         "error": {
@@ -35,9 +34,25 @@
         }
     },
     "entity": {
+        "number": {
+            "room_correction_intensity": {
+                "name": "Room correction intensity"
+            },
+            "volume_limit": {
+                "name": "Volume limit"
+            }
+        },
         "select": {
             "audio_output": {
                 "name": "Audio output"
+            },
+            "control_bus_mode": {
+                "name": "Control Bus mode",
+                "state": {
+                    "amplifier": "Amplifier",
+                    "off": "Off",
+                    "receiver": "Receiver"
+                }
             },
             "display_brightness": {
                 "name": "Display brightness",
@@ -52,8 +67,14 @@
             "early_update": {
                 "name": "Early update"
             },
+            "equalizer": {
+                "name": "Equalizer"
+            },
             "pre_amp": {
                 "name": "Pre-Amp"
+            },
+            "room_correction": {
+                "name": "Room correction"
             }
         }
     },

@@ -9,28 +9,15 @@
             "user": {
                 "data": {
                     "ignored_zones": "Zones a ignorar",
-                    "tolerance": "Dist\u00e0ncia de toler\u00e0ncia",
-                    "tracked_entities": "Dispositius o persones a les quals fer seguiment"
+                    "tolerance": "Dist\u00e0ncia de toler\u00e0ncia"
                 }
             }
         }
     },
     "entity": {
         "sensor": {
-            "dir_of_travel": {
-                "name": "Direcci\u00f3 del moviment de {tracked_entity}"
-            },
-            "dist_to_zone": {
-                "name": "Dist\u00e0ncia de {tracked_entity}"
-            },
             "nearest_dir_of_travel": {
-                "name": "Direcci\u00f3 del moviment m\u00e9s propera",
-                "state": {
-                    "arrived": "Arribat",
-                    "away_from": "Lluny",
-                    "stationary": "Estacionari",
-                    "towards": "Apropant-se"
-                }
+                "name": "Direcci\u00f3 del moviment m\u00e9s propera"
             }
         }
     },
@@ -51,8 +38,7 @@
             "init": {
                 "data": {
                     "ignored_zones": "Zones a ignorar",
-                    "tolerance": "Dist\u00e0ncia de toler\u00e0ncia",
-                    "tracked_entities": "Dispositius o persones a les quals fer seguiment"
+                    "tolerance": "Dist\u00e0ncia de toler\u00e0ncia"
                 }
             }
         }

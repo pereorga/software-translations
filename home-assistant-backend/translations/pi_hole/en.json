@@ -1,31 +1,25 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Service is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Service is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication"
         },
         "step": {
-            "api_key": {
-                "data": {
-                    "api_key": "API key"
-                }
-            },
             "reauth_confirm": {
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "Please enter a new api key for PI-Hole at {host}/{location}",
-                "title": "Reauthenticate PI-Hole"
+                "description": "Please enter a new API key for Pi-hole at {host}/{location}",
+                "title": "Reauthenticate Pi-hole"
             },
             "user": {
                 "data": {
+                    "api_key": "App password or API key",
                     "host": "Host",
                     "location": "Location",
-                    "name": "Name",
                     "port": "Port",
                     "ssl": "Uses an SSL certificate",
                     "verify_ssl": "Verify SSL certificate"
@@ -40,6 +34,10 @@
             }
         },
         "sensor": {
+            "ads_blocked": {
+                "name": "Ads blocked",
+                "unit_of_measurement": "ads"
+            },
             "ads_blocked_today": {
                 "name": "Ads blocked today",
                 "unit_of_measurement": "ads"
@@ -51,6 +49,10 @@
                 "name": "Seen clients",
                 "unit_of_measurement": "clients"
             },
+            "dns_queries": {
+                "name": "DNS queries",
+                "unit_of_measurement": "queries"
+            },
             "dns_queries_today": {
                 "name": "DNS queries today",
                 "unit_of_measurement": "queries"
@@ -58,6 +60,9 @@
             "domains_being_blocked": {
                 "name": "Domains blocked",
                 "unit_of_measurement": "domains"
+            },
+            "percent_ads_blocked": {
+                "name": "Ads percentage blocked"
             },
             "queries_cached": {
                 "name": "DNS queries cached",
@@ -86,6 +91,20 @@
             "web_update_available": {
                 "name": "Web update available"
             }
+        }
+    },
+    "exceptions": {
+        "disable_failed": {
+            "message": "Failed to disable Pi-hole: {error}"
+        },
+        "enable_failed": {
+            "message": "Failed to enable Pi-hole: {error}"
+        }
+    },
+    "issues": {
+        "v5_to_v6_migration": {
+            "description": "You've likely updated your Pi-hole to API v6 from v5. Some sensors changed in the new API, the daily sensors were removed, and your old API token is invalid. Provide your new app password by re-authenticating in repairs or in **Settings -> Devices & services -> Pi-hole**.",
+            "title": "Recent migration from Pi-hole API v5 to v6"
         }
     },
     "services": {

@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "already_in_progress": "Configuration flow is already in progress",
             "no_devices_found": "No devices found on the network",
             "not_supported": "Device not supported"
         },
@@ -14,6 +13,9 @@
             "user": {
                 "data": {
                     "address": "Device"
+                },
+                "data_description": {
+                    "address": "Select the Qingping device you want to set up"
                 },
                 "description": "Choose a device to set up"
             }

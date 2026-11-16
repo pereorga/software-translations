@@ -1,0 +1,107 @@
+{
+    "common": {
+        "sequence_id": "ID de seq\u00fc\u00e8ncia"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "token": "Token d'acc\u00e9s"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya",
+                    "token": "Token d'acc\u00e9s",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reconfigure_user": {
+                "data": {
+                    "password": "Contrasenya",
+                    "token": "Token d'acc\u00e9s"
+                }
+            },
+            "user": {
+                "data": {
+                    "verify_ssl": "Verifica el certificat SSL"
+                },
+                "sections": {
+                    "auth": {
+                        "data": {
+                            "password": "Contrasenya",
+                            "username": "Nom d'usuari"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "topic": {
+            "error": {
+                "cannot_connect": "Ha fallat la connexi\u00f3",
+                "unknown": "Error inesperat"
+            }
+        }
+    },
+    "entity": {
+        "event": {
+            "subscribe": {
+                "state_attributes": {
+                    "sequence_id": {
+                        "name": "ID de seq\u00fc\u00e8ncia"
+                    }
+                }
+            }
+        }
+    },
+    "selector": {
+        "priority": {
+            "options": {
+                "2": "Baix/a",
+                "4": "Alt/a"
+            }
+        }
+    },
+    "services": {
+        "clear": {
+            "fields": {
+                "sequence_id": {
+                    "name": "ID de seq\u00fc\u00e8ncia"
+                }
+            }
+        },
+        "delete": {
+            "fields": {
+                "sequence_id": {
+                    "name": "ID de seq\u00fc\u00e8ncia"
+                }
+            }
+        },
+        "publish": {
+            "fields": {
+                "message": {
+                    "description": "El missatge de notificaci\u00f3.",
+                    "name": "Missatge"
+                },
+                "sequence_id": {
+                    "name": "ID de seq\u00fc\u00e8ncia"
+                },
+                "title": {
+                    "description": "T\u00edtol del missatge de notificaci\u00f3.",
+                    "name": "T\u00edtol"
+                }
+            }
+        }
+    }
+}

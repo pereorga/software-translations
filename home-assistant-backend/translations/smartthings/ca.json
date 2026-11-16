@@ -1,35 +1,252 @@
 {
     "config": {
         "abort": {
-            "invalid_webhook_url": "Home Assistant not est\u00e0 configurat correctament per a rebre actualitzacions de SmartThings.\nEl seg\u00fcent URL webhook no \u00e9s v\u00e0lid:\n> {webhook_url}\n\nActualitza la teva configuraci\u00f3 segons les [instruccions]({component_url}), reinicia Home Assistant i torna-ho a provar.",
-            "no_available_locations": "No hi ha ubicacions SmartThings a configurar a Home Assistant."
+            "already_configured": "El compte ja est\u00e0 configurat",
+            "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3."
         },
         "error": {
-            "token_forbidden": "El token d'autenticaci\u00f3 no t\u00e9 cont\u00e9 els apartats OAuth obligatoris.",
-            "token_invalid_format": "El token d'autenticaci\u00f3 ha d'estar en format UID/GUID",
-            "token_unauthorized": "El token d'autenticaci\u00f3 no \u00e9s v\u00e0lid o ja no est\u00e0 autoritzat.",
-            "webhook_error": "SmartThings no ha pogut validar l'URL webhook. Comprova que l'URL pot ser accedit des d'Internet i torna-ho a provar."
+            "already_configured": "El compte ja est\u00e0 configurat"
+        },
+        "initiate_flow": {
+            "user": "Afegeix compte"
         },
         "step": {
-            "authorize": {
-                "title": "Autoritzaci\u00f3 de Home Assistant"
-            },
-            "pat": {
+            "pick_implementation": {
                 "data": {
-                    "access_token": "[%key::common::config_flow::data::access_token%]"
+                    "implementation": "Credencials d'aplicaci\u00f3"
                 },
-                "title": "Introdueix el token d'acc\u00e9s personal"
-            },
-            "select_location": {
-                "data": {
-                    "location_id": "Ubicaci\u00f3"
+                "data_description": {
+                    "implementation": "Les credencials que vols fer servir per autenticar."
                 },
-                "title": "Selecci\u00f3 d'ubicaci\u00f3"
+                "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             },
-            "user": {
-                "description": "SmartThings es configurar\u00e0 per a enviar actualitzacions push a Home Assistant a:\n> {webhook_url}\n\nSi no \u00e9s correcte, actualitza la teva configuraci\u00f3, reinicia Home Assistant i torna-ho a provar.",
-                "title": "Introdueix el token d'autenticaci\u00f3 personal"
+            "reauth_confirm": {
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "door": {
+                "name": "Porta"
+            },
+            "freezer_door": {
+                "name": "Porta del congelador"
+            }
+        },
+        "button": {
+            "pause": {
+                "name": "Pausa"
+            },
+            "start": {
+                "name": "Inicia"
+            },
+            "stop": {
+                "name": "Atura"
+            }
+        },
+        "light": {
+            "light": {
+                "name": "Llum"
+            }
+        },
+        "number": {
+            "hood_fan_speed": {
+                "name": "Velocitat del ventilador"
+            }
+        },
+        "select": {
+            "detergent_amount": {
+                "state": {
+                    "none": "OFF"
+                }
+            },
+            "flexible_detergent_amount": {
+                "state": {
+                    "none": "OFF"
+                }
+            },
+            "lamp": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "operating_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "run": "En funcionament",
+                    "stop": "Parat"
+                }
+            },
+            "robot_cleaner_cleaning_type": {
+                "state": {
+                    "vacuum": "Aspirador/a"
+                }
+            },
+            "robot_cleaner_water_spray_level": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "soil_level": {
+                "state": {
+                    "normal": "Normal"
+                }
+            },
+            "sound_detection_sensitivity": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "spin_level": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "water_temperature": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            }
+        },
+        "sensor": {
+            "alarm": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "cooktop_operating_state": {
+                "state": {
+                    "paused": "Pausat/ada",
+                    "run": "En funcionament"
+                }
+            },
+            "dishwasher_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "run": "En funcionament",
+                    "stop": "Parat"
+                }
+            },
+            "dryer_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "run": "En funcionament",
+                    "stop": "Parat"
+                }
+            },
+            "heating_mode": {
+                "state": {
+                    "manual": "Manual",
+                    "off": "OFF"
+                }
+            },
+            "microfiber_filter_operating_state": {
+                "state": {
+                    "paused": "Pausat/ada",
+                    "running": "En funcionament"
+                }
+            },
+            "oven_job_state": {
+                "state": {
+                    "rinsing": "Esbandint"
+                }
+            },
+            "oven_job_state_cavity_01": {
+                "state": {
+                    "rinsing": "Esbandint"
+                }
+            },
+            "oven_machine_state": {
+                "state": {
+                    "paused": "Pausat/ada",
+                    "running": "En funcionament"
+                }
+            },
+            "oven_machine_state_cavity_01": {
+                "state": {
+                    "paused": "Pausat/ada",
+                    "running": "En funcionament"
+                }
+            },
+            "robot_cleaner_cleaning_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "manual": "Manual",
+                    "stop": "Atura"
+                }
+            },
+            "robot_cleaner_movement": {
+                "state": {
+                    "charging": "Carregant",
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "pause": "Pausat/ada"
+                }
+            },
+            "robot_cleaner_turbo_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "washer_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "run": "En funcionament",
+                    "stop": "Parat"
+                }
+            },
+            "washer_sub_machine_state": {
+                "state": {
+                    "pause": "Pausat/ada",
+                    "run": "En funcionament",
+                    "stop": "Parat"
+                }
+            }
+        },
+        "vacuum": {
+            "vacuum": {
+                "state_attributes": {
+                    "fan_speed": {
+                        "state": {
+                            "maximum": "M\u00e0xima",
+                            "normal": "Normal",
+                            "quiet": "Silenci\u00f3s",
+                            "smart": "Intel\u00b7ligent"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_dhw": {
+            "description": "El sensor {entity_name} ({entity_id}) est\u00e0 obsolet perqu\u00e8 s'ha substitu\u00eft per una entitat d'escalfador d'aigua.\n\nActualitza els teus taulers i plantilles perqu\u00e8 utilitzin la nova entitat d'escalfador d'aigua i desactiva el sensor per resoldre aquest problema.",
+            "title": "Sensors de l'escalfador d'aigua obsolets"
+        },
+        "deprecated_dhw_scripts": {
+            "description": "El sensor {entity_name} ({entity_id}) est\u00e0 obsolet perqu\u00e8 s'ha substitu\u00eft per una entitat d'escalfador d'aigua.\n\nEl sensor s'utilitzava a les automatitzacions o scripts seg\u00fcents:{items}\n\nActualitza les automatitzacions o scripts anteriors perqu\u00e8 utilitzin la nova entitat d'escalfador d'aigua i desactiva el sensor per resoldre aquest problema.",
+            "title": "Sensors de l'escalfador d'aigua obsolets"
+        },
+        "deprecated_switch_dhw": {
+            "description": "L'interruptor {entity_id} est\u00e0 obsolet i s'ha afegit una entitat d'escalfador d'aigua per substituir-lo.\n\nActualitza els teus taulers i plantilles en conseq\u00fc\u00e8ncia i desactiva l'interruptor per resoldre aquest problema.",
+            "title": "Interruptor de la bomba de calor obsolet"
+        },
+        "deprecated_switch_dhw_scripts": {
+            "description": "L'interruptor {entity_id} est\u00e0 obsolet i s'ha afegit una entitat d'escalfador d'aigua per substituir-lo.\n\nL'interruptor s'utilitzava a les automatitzacions o scripts seg\u00fcents:{items}\n\nUtilitza la nova entitat d'escalfador d'aigua a les automatitzacions o scripts anteriors i desactiva l'interruptor per resoldre aquest problema.",
+            "title": "Interruptor de la bomba de calor obsolet"
         }
     }
 }

@@ -1,4 +1,32 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_closed": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_open": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "entity_component": {
         "_": {
             "name": "V\u00e0lvula",
@@ -7,7 +35,7 @@
                 "closing": "Tancant",
                 "open": "Obert/a",
                 "opening": "Obrint",
-                "stopped": "Aturada"
+                "stopped": "Parat"
             },
             "state_attributes": {
                 "current_position": {
@@ -25,11 +53,11 @@
     "services": {
         "close_valve": {
             "description": "Tanca una v\u00e0lvula.",
-            "name": "Tanca"
+            "name": "Tanca v\u00e0lvula"
         },
         "open_valve": {
             "description": "Obre una v\u00e0lvula.",
-            "name": "Obre"
+            "name": "Obre v\u00e0lvula"
         },
         "set_valve_position": {
             "description": "Mou una v\u00e0lvula a una posici\u00f3 espec\u00edfica.",
@@ -38,17 +66,37 @@
                     "description": "Posici\u00f3 objectiu.",
                     "name": "Posici\u00f3"
                 }
-            },
-            "name": "Configura posici\u00f3"
+            }
         },
         "stop_valve": {
-            "description": "Atura el moviment de la v\u00e0lvula.",
-            "name": "Atura"
+            "name": "Atura v\u00e0lvula"
         },
         "toggle": {
-            "description": "Commuta una v\u00e0lvula, obre/tanca.",
-            "name": "Commuta"
+            "description": "Canvia l'estat d'obertura d'una v\u00e0lvula.",
+            "name": "Commuta v\u00e0lvula"
         }
     },
-    "title": "V\u00e0lvula"
+    "title": "V\u00e0lvula",
+    "triggers": {
+        "closed": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "opened": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

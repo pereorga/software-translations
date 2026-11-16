@@ -4,7 +4,6 @@
             "already_configured": "Service is already configured",
             "cannot_connect": "Failed to connect",
             "invalid_host": "Invalid hostname or IP address",
-            "reconfigure_successful": "Re-configuration was successful",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -34,7 +33,7 @@
     "entity": {
         "binary_sensor": {
             "post_heater": {
-                "name": "Post heater"
+                "name": "Post-heater"
             }
         },
         "date": {
@@ -103,9 +102,21 @@
             }
         }
     },
+    "exceptions": {
+        "failed_to_set_fan_speed_for_profile": {
+            "message": "Failed to set fan speed to {fan_speed}% for profile {profile}"
+        },
+        "failed_to_set_profile": {
+            "message": "Failed to set profile to {profile}"
+        },
+        "failed_to_set_profile_for_duration": {
+            "message": "Failed to set profile to {profile} for {duration} minutes"
+        }
+    },
     "selector": {
         "profile": {
             "options": {
+                "auto": "Auto",
                 "away": "Away",
                 "boost": "Boost",
                 "extra": "Extra",
@@ -133,7 +144,7 @@
             "description": "Sets the fan speed of the Away profile.",
             "fields": {
                 "fan_speed": {
-                    "description": "Fan speed.",
+                    "description": "Relative speed of the built-in fans.",
                     "name": "Fan speed"
                 }
             },
@@ -143,7 +154,7 @@
             "description": "Sets the fan speed of the Boost profile.",
             "fields": {
                 "fan_speed": {
-                    "description": "Fan speed.",
+                    "description": "Relative speed of the built-in fans.",
                     "name": "Fan speed"
                 }
             },
@@ -153,7 +164,7 @@
             "description": "Sets the fan speed of the Home profile.",
             "fields": {
                 "fan_speed": {
-                    "description": "Fan speed.",
+                    "description": "Relative speed of the built-in fans.",
                     "name": "Fan speed"
                 }
             },

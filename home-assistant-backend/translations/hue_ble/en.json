@@ -1,0 +1,36 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "discovery_unsupported": "Discovery flow is not supported by the Hue BLE integration.",
+            "no_devices_found": "No devices found on the network"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication. Ensure the light is [made discoverable to voice assistants]({url_pairing_mode}).",
+            "no_scanners": "No Bluetooth scanners are available to search for the light.",
+            "not_found": "The light was not found.",
+            "not_supported": "The light is not a supported model.",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "confirm": {
+                "description": "Do you want to set up {name} ({mac})?\nMake sure the light is [made discoverable to voice assistants]({url_pairing_mode}) or has been [factory reset]({url_factory_reset})."
+            },
+            "user": {
+                "data": {
+                    "mac": "Device"
+                },
+                "data_description": {
+                    "mac": "Select the Hue device you want to set up"
+                },
+                "description": "Choose a device to set up"
+            }
+        }
+    },
+    "exceptions": {
+        "device_not_found": {
+            "message": "The light {name} ({mac}) was not found: {reason}"
+        }
+    }
+}

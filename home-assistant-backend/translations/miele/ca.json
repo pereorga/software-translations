@@ -1,0 +1,90 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat",
+            "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3."
+        },
+        "create_entry": {
+            "default": "Autenticaci\u00f3 exitosa"
+        },
+        "step": {
+            "confirm": {
+                "description": "Vols comen\u00e7ar la configuraci\u00f3?"
+            },
+            "pick_implementation": {
+                "data": {
+                    "implementation": "Credencials d'aplicaci\u00f3"
+                },
+                "data_description": {
+                    "implementation": "Les credencials que vols fer servir per autenticar."
+                },
+                "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
+            },
+            "reauth_confirm": {
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "pause": {
+                "name": "Pausa"
+            },
+            "start": {
+                "name": "Inicia"
+            },
+            "stop": {
+                "name": "Atura"
+            }
+        },
+        "fan": {
+            "fan": {
+                "name": "Ventilador"
+            }
+        },
+        "light": {
+            "light": {
+                "name": "Llum"
+            }
+        },
+        "sensor": {
+            "program_id": {
+                "state": {
+                    "auto": "Auto",
+                    "normal": "Normal"
+                }
+            },
+            "program_phase": {
+                "state": {
+                    "door_open": "Porta oberta"
+                }
+            },
+            "status": {
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "on": "ON",
+                    "program_ended": "El programa ha finalitzat",
+                    "program_interrupted": "S'ha interromput el programa",
+                    "programmed": "Programat",
+                    "supercooling": "Superrefredament",
+                    "superfreezing": "Supercongelaci\u00f3",
+                    "superheating": "sobreescalfament",
+                    "waiting_to_start": "Esperant per comen\u00e7ar"
+                }
+            }
+        }
+    },
+    "services": {
+        "set_program_oven": {
+            "fields": {
+                "duration": {
+                    "name": "Durada"
+                },
+                "temperature": {
+                    "name": "Temperatura"
+                }
+            }
+        }
+    }
+}

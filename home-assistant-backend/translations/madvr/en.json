@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "reconfigure_successful": "Re-configuration was successful",
             "set_up_new_device": "A new device was detected. Please set it up as a new entity instead of reconfiguring."
         },
         "error": {
@@ -19,7 +18,7 @@
                     "host": "The hostname or IP address of your madVR Envy device.",
                     "port": "The port your madVR Envy is listening on. In 99% of cases, leave this as the default."
                 },
-                "description": "Your device needs to be on in order to reconfigure the integation.",
+                "description": "Your device needs to be on in order to reconfigure the integration.",
                 "title": "Reconfigure madVR Envy"
             },
             "user": {
@@ -31,7 +30,7 @@
                     "host": "The hostname or IP address of your madVR Envy device.",
                     "port": "The port your madVR Envy is listening on. In 99% of cases, leave this as the default."
                 },
-                "description": "Your device needs to be on in order to add the integation.",
+                "description": "Your device needs to be on in order to add the integration.",
                 "title": "Set up madVR Envy"
             }
         }
@@ -130,6 +129,17 @@
             "temp_mainboard": {
                 "name": "Mainboard temperature"
             }
+        }
+    },
+    "exceptions": {
+        "power_off_failed": {
+            "message": "Failed to turn off the device"
+        },
+        "power_on_failed": {
+            "message": "Failed to turn on the device"
+        },
+        "send_command_failed": {
+            "message": "Failed to send the command {command}"
         }
     }
 }

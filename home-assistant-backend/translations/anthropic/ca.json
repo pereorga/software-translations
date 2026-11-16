@@ -1,12 +1,19 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
         "error": {
             "authentication_error": "Autenticaci\u00f3 inv\u00e0lida",
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "timeout_connect": "S'ha esgotat el temps m\u00e0xim d'espera per establir connexi\u00f3",
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "Clau API"
@@ -14,16 +21,46 @@
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "chat_model": "Model",
-                    "llm_hass_api": "Controla Home Assistant",
-                    "max_tokens": "Nombre m\u00e0xim de 'tokens' a retornar en la resposta",
-                    "prompt": "Instruccions",
-                    "recommended": "Configuraci\u00f3 del model recomanada",
-                    "temperature": "Temperatura"
+    "config_subentries": {
+        "ai_task_data": {
+            "step": {
+                "init": {
+                    "data": {
+                        "name": "Nom"
+                    }
+                },
+                "model": {
+                    "data": {
+                        "max_tokens": "Nombre m\u00e0xim de 'tokens' que es retornaran a la resposta"
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "step": {
+                "init": {
+                    "data": {
+                        "name": "Nom",
+                        "prompt": "Instruccions"
+                    }
+                },
+                "model": {
+                    "data": {
+                        "max_tokens": "Nombre m\u00e0xim de 'tokens' que es retornaran a la resposta"
+                    }
+                }
+            }
+        }
+    },
+    "issues": {
+        "model_deprecated": {
+            "fix_flow": {
+                "step": {
+                    "init": {
+                        "data": {
+                            "chat_model": "Model"
+                        }
+                    }
                 }
             }
         }

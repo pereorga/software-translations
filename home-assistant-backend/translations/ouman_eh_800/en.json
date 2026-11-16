@@ -1,0 +1,211 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "invalid_url": "Invalid URL",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Password for the Ouman EH-800 web interface",
+                    "username": "Username for the Ouman EH-800 web interface"
+                },
+                "description": "Re-enter the credentials for the Ouman EH-800 web interface."
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "url": "URL",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Password for the Ouman EH-800 web interface",
+                    "url": "The URL of the Ouman EH-800 web interface",
+                    "username": "Username for the Ouman EH-800 web interface"
+                }
+            },
+            "user": {
+                "data": {
+                    "password": "Password",
+                    "url": "URL",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Password for the Ouman EH-800 web interface",
+                    "url": "The URL of the Ouman EH-800 web interface",
+                    "username": "Username for the Ouman EH-800 web interface"
+                }
+            }
+        }
+    },
+    "device": {
+        "heating_circuit": {
+            "name": "Heating circuit {circuit_number}"
+        },
+        "heating_circuit_with_name": {
+            "name": "Heating circuit {circuit_number} {circuit_name}"
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "summer_function": {
+                "name": "Summer function"
+            }
+        },
+        "climate": {
+            "heating_circuit": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "automatic": "Auto",
+                            "big_temperature_drop": "Big temperature drop",
+                            "temperature_drop": "Temperature drop"
+                        }
+                    }
+                }
+            }
+        },
+        "number": {
+            "autumn_drying_outdoor_temperature_limit": {
+                "name": "Autumn drying outdoor temperature limit"
+            },
+            "autumn_drying_setpoint": {
+                "name": "Autumn drying setpoint"
+            },
+            "big_temperature_drop": {
+                "name": "Big temperature drop"
+            },
+            "constant_temp_setpoint": {
+                "name": "Constant temperature setpoint"
+            },
+            "curve_0_temperature": {
+                "name": "Curve 0\u00b0C temperature"
+            },
+            "curve_10_temperature": {
+                "name": "Curve 10\u00b0C temperature"
+            },
+            "curve_20_temperature": {
+                "name": "Curve 20\u00b0C temperature"
+            },
+            "curve_minus_10_temperature": {
+                "name": "Curve -10\u00b0C temperature"
+            },
+            "curve_minus_20_temperature": {
+                "name": "Curve -20\u00b0C temperature"
+            },
+            "room_temperature_fine_tuning": {
+                "name": "Room temperature fine tuning"
+            },
+            "temperature_drop": {
+                "name": "Temperature drop"
+            },
+            "trend_sampling_interval": {
+                "name": "Trend sampling interval"
+            },
+            "water_out_maximum_temperature": {
+                "name": "Water out maximum temperature"
+            },
+            "water_out_minimum_temperature": {
+                "name": "Water out minimum temperature"
+            }
+        },
+        "select": {
+            "home_away_mode": {
+                "name": "Home/Away mode",
+                "state": {
+                    "away": "Away",
+                    "home": "Home",
+                    "off": "Off"
+                }
+            },
+            "operation_mode": {
+                "name": "Operation mode",
+                "state": {
+                    "automatic": "Auto",
+                    "big_temperature_drop": "Big temperature drop",
+                    "manual_valve_control": "Manual valve control",
+                    "normal_temperature": "Nominal temperature",
+                    "shutdown": "Standby",
+                    "temperature_drop": "Temperature drop"
+                }
+            },
+            "relay_control": {
+                "name": "Relay control",
+                "state": {
+                    "auto": "Auto",
+                    "off": "Off",
+                    "on": "On"
+                }
+            },
+            "relay_pump_summer_stop_control": {
+                "name": "Pump summer stop",
+                "state": {
+                    "auto": "Auto",
+                    "run": "Run",
+                    "stop": "Stop"
+                }
+            }
+        },
+        "sensor": {
+            "accumulator_temperature": {
+                "name": "Accumulator temperature"
+            },
+            "autumn_drying_effect": {
+                "name": "Autumn drying effect"
+            },
+            "boiler_temperature": {
+                "name": "Boiler temperature"
+            },
+            "curve_supply_water_temperature": {
+                "name": "Curve supply water temperature"
+            },
+            "delayed_outdoor_temperature_effect": {
+                "name": "Delayed outdoor temperature effect"
+            },
+            "delayed_room_temperature": {
+                "name": "Delayed room temperature"
+            },
+            "fine_adjustment_effect": {
+                "name": "Fine adjustment effect"
+            },
+            "outside_temperature": {
+                "name": "Outside temperature"
+            },
+            "return_water_temperature": {
+                "name": "Return water temperature"
+            },
+            "room_sensor_potentiometer": {
+                "name": "Room sensor potentiometer"
+            },
+            "room_temperature": {
+                "name": "Room temperature"
+            },
+            "room_temperature_setpoint": {
+                "name": "Room temperature setpoint"
+            },
+            "supply_water_temperature": {
+                "name": "Supply water temperature"
+            },
+            "supply_water_temperature_setpoint": {
+                "name": "Supply water temperature setpoint"
+            },
+            "valve_position": {
+                "name": "Valve position"
+            }
+        },
+        "valve": {
+            "valve_position_setpoint": {
+                "name": "Valve position setpoint"
+            }
+        }
+    }
+}

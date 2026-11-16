@@ -1,0 +1,27 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "current_l1": {
+                "name": "Corrent de la fase L1"
+            },
+            "current_l2": {
+                "name": "Corrent de la fase L2"
+            },
+            "current_l3": {
+                "name": "Corrent de la fase L3"
+            },
+            "status": {
+                "state": {
+                    "charging": "Carregant",
+                    "connected": "Connectat",
+                    "idle": "Inactiu"
+                }
+            }
+        }
+    }
+}

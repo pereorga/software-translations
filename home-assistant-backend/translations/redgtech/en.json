@@ -1,0 +1,40 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Enter the email address associated with your {integration_name} account.",
+                    "password": "Enter the password for your {integration_name} account."
+                },
+                "description": "Please enter your credentials to connect to the {integration_name} API.",
+                "title": "Set up {integration_name}"
+            }
+        }
+    },
+    "exceptions": {
+        "api_error": {
+            "message": "Error while communicating with the {integration_name} API"
+        },
+        "authentication_failed": {
+            "message": "Authentication failed. Please check your credentials."
+        },
+        "connection_error": {
+            "message": "Connection error with {integration_name} API"
+        },
+        "switch_auth_error": {
+            "message": "Authentication failed when controlling {integration_name} switch"
+        }
+    }
+}

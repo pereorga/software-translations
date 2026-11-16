@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El servei ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -18,8 +17,14 @@
             "user": {
                 "data": {
                     "api_key": "Clau API",
-                    "url": "URL",
-                    "verify_ssl": "Verifica el certificat SSL"
+                    "url": "URL"
+                },
+                "sections": {
+                    "more_options": {
+                        "data": {
+                            "verify_ssl": "Verifica el certificat SSL"
+                        }
+                    }
                 }
             }
         }

@@ -1,4 +1,52 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_jammed": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_locked": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_open": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_unlocked": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "device_automation": {
         "action_type": {
             "lock": "Bloqueja {entity_name}",
@@ -7,6 +55,7 @@
         },
         "condition_type": {
             "is_locked": "{entity_name} est\u00e0 bloquejat/ada",
+            "is_open": "{entity_name} estigui obert",
             "is_unlocked": "{entity_name} est\u00e0 desbloquejat/ada"
         },
         "extra_fields": {
@@ -14,6 +63,7 @@
         },
         "trigger_type": {
             "locked": "{entity_name} s'ha bloquejat",
+            "open": "{entity_name} s'obri",
             "unlocked": "{entity_name} s'ha desbloquejat"
         }
     },
@@ -25,6 +75,7 @@
                 "locked": "Bloquejat",
                 "locking": "Bloquejant",
                 "open": "Obert/a",
+                "opening": "Obrint",
                 "unlocked": "Desbloquejat",
                 "unlocking": "Desbloquejant"
             },
@@ -51,8 +102,7 @@
                     "description": "Codi per bloquejar el pany.",
                     "name": "Codi"
                 }
-            },
-            "name": "Pany"
+            }
         },
         "open": {
             "description": "Obre un pany.",
@@ -62,7 +112,7 @@
                     "name": "Codi"
                 }
             },
-            "name": "Obre"
+            "name": "Obre pany"
         },
         "unlock": {
             "description": "Desbloqueja un pany.",
@@ -71,9 +121,50 @@
                     "description": "Codi per desbloquejar el pany.",
                     "name": "Codi"
                 }
-            },
-            "name": "Desbloqueja"
+            }
         }
     },
-    "title": "Pany"
+    "title": "Pany",
+    "triggers": {
+        "jammed": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "locked": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "opened": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "unlocked": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

@@ -1,20 +1,32 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Location is already configured"
+        },
         "create_entry": {
             "default": "Some sensors are not enabled by default. You can enable them in the entity registry after the integration configuration."
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_api_key": "Invalid API key",
-            "requests_exceeded": "The allowed number of requests to Accuweather API has been exceeded. You have to wait or change API Key."
+            "requests_exceeded": "The allowed number of requests to the AccuWeather API has been exceeded. You have to wait or change the API key."
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "API key generated in the AccuWeather APIs portal."
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "latitude": "Latitude",
-                    "longitude": "Longitude",
-                    "name": "Name"
+                    "location": "Location"
+                },
+                "data_description": {
+                    "api_key": "API key generated in the AccuWeather APIs portal."
                 }
             }
         }
@@ -26,10 +38,20 @@
                 "state": {
                     "good": "Good",
                     "hazardous": "Hazardous",
-                    "high": "High",
-                    "low": "Low",
                     "moderate": "Moderate",
-                    "unhealthy": "Unhealthy"
+                    "unhealthy": "Unhealthy",
+                    "very_unhealthy": "Very unhealthy"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "good": "Good",
+                            "hazardous": "Hazardous",
+                            "moderate": "Moderate",
+                            "unhealthy": "Unhealthy",
+                            "very_unhealthy": "Very unhealthy"
+                        }
+                    }
                 }
             },
             "apparent_temperature": {
@@ -62,12 +84,11 @@
                     "level": {
                         "name": "Level",
                         "state": {
-                            "good": "Good",
-                            "hazardous": "Hazardous",
+                            "extreme": "Extreme",
                             "high": "High",
                             "low": "Low",
                             "moderate": "Moderate",
-                            "unhealthy": "Unhealthy"
+                            "very_high": "Very high"
                         }
                     }
                 }
@@ -81,12 +102,11 @@
                     "level": {
                         "name": "Level",
                         "state": {
-                            "good": "Good",
-                            "hazardous": "Hazardous",
+                            "extreme": "Extreme",
                             "high": "High",
                             "low": "Low",
                             "moderate": "Moderate",
-                            "unhealthy": "Unhealthy"
+                            "very_high": "Very high"
                         }
                     }
                 }
@@ -100,6 +120,15 @@
                     "falling": "Falling",
                     "rising": "Rising",
                     "steady": "Steady"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "falling": "Falling",
+                            "rising": "Rising",
+                            "steady": "Steady"
+                        }
+                    }
                 }
             },
             "ragweed_pollen": {
@@ -108,12 +137,11 @@
                     "level": {
                         "name": "Level",
                         "state": {
-                            "good": "Good",
-                            "hazardous": "Hazardous",
+                            "extreme": "Extreme",
                             "high": "High",
                             "low": "Low",
                             "moderate": "Moderate",
-                            "unhealthy": "Unhealthy"
+                            "very_high": "Very high"
                         }
                     }
                 }
@@ -154,12 +182,11 @@
                     "level": {
                         "name": "Level",
                         "state": {
-                            "good": "Good",
-                            "hazardous": "Hazardous",
+                            "extreme": "Extreme",
                             "high": "High",
                             "low": "Low",
                             "moderate": "Moderate",
-                            "unhealthy": "Unhealthy"
+                            "very_high": "Very high"
                         }
                     }
                 }
@@ -170,12 +197,11 @@
                     "level": {
                         "name": "Level",
                         "state": {
-                            "good": "Good",
-                            "hazardous": "Hazardous",
+                            "extreme": "Extreme",
                             "high": "High",
                             "low": "Low",
                             "moderate": "Moderate",
-                            "unhealthy": "Unhealthy"
+                            "very_high": "Very high"
                         }
                     }
                 }
@@ -186,12 +212,11 @@
                     "level": {
                         "name": "Level",
                         "state": {
-                            "good": "Good",
-                            "hazardous": "Hazardous",
+                            "extreme": "Extreme",
                             "high": "High",
                             "low": "Low",
                             "moderate": "Moderate",
-                            "unhealthy": "Unhealthy"
+                            "very_high": "Very high"
                         }
                     }
                 }
@@ -211,15 +236,23 @@
             "wind_gust_speed_night": {
                 "name": "Wind gust speed night {forecast_day}"
             },
-            "wind_speed": {
-                "name": "Wind speed"
-            },
             "wind_speed_day": {
                 "name": "Wind speed day {forecast_day}"
             },
             "wind_speed_night": {
                 "name": "Wind speed night {forecast_day}"
             }
+        }
+    },
+    "exceptions": {
+        "auth_error": {
+            "message": "Authentication failed for {entry}, please update your API key"
+        },
+        "current_conditions_update_error": {
+            "message": "An error occurred while retrieving weather current conditions data from the AccuWeather API: {error}"
+        },
+        "forecast_update_error": {
+            "message": "An error occurred while retrieving weather forecast data from the AccuWeather API: {error}"
         }
     },
     "system_health": {

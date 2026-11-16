@@ -3,7 +3,6 @@
         "abort": {
             "already_configured": "Device is already configured",
             "invalid_host": "Invalid hostname or IP address",
-            "reconfigure_successful": "Re-configuration was successful",
             "unique_id_mismatch": "The identifier does not match the previous identifier"
         },
         "error": {
@@ -17,25 +16,60 @@
             },
             "reconfigure": {
                 "data": {
-                    "host": "Host"
+                    "auto_revert_power_limit": "Revert the power and battery limits if Home Assistant stops",
+                    "host": "Host",
+                    "modbus_port": "Modbus port"
                 },
                 "data_description": {
-                    "host": "The IP address or hostname of your Fronius device."
+                    "auto_revert_power_limit": "The inverter drops the AC power limit and the battery charge and discharge limits an hour after it last received them, and returns to its own settings. Home Assistant sends active limits again every 15 minutes, so this only takes effect once it stops sending - because Home Assistant is down, or because the integration was removed. The battery minimum reserve and grid charging are not affected.",
+                    "host": "The IP address or hostname of your Fronius device.",
+                    "modbus_port": "Port of the device's Modbus TCP interface. Only used when Modbus is enabled on the device's web interface."
                 },
                 "description": "Update your configuration information for {device}."
             },
             "user": {
                 "data": {
-                    "host": "Host"
+                    "auto_revert_power_limit": "Revert the power and battery limits if Home Assistant stops",
+                    "host": "Host",
+                    "modbus_port": "Modbus port"
                 },
                 "data_description": {
-                    "host": "The IP address or hostname of your Fronius device."
+                    "auto_revert_power_limit": "The inverter drops the AC power limit and the battery charge and discharge limits an hour after it last received them, and returns to its own settings. Home Assistant sends active limits again every 15 minutes, so this only takes effect once it stops sending - because Home Assistant is down, or because the integration was removed. The battery minimum reserve and grid charging are not affected.",
+                    "host": "The IP address or hostname of your Fronius device.",
+                    "modbus_port": "Port of the device's Modbus TCP interface. Only used when Modbus is enabled on the device's web interface."
                 },
                 "description": "Configure your Fronius SolarAPI device."
             }
         }
     },
+    "device": {
+        "mppt": {
+            "name": "MPPT {mppt_no}"
+        }
+    },
     "entity": {
+        "binary_sensor": {
+            "backup_mode": {
+                "name": "Backup mode"
+            },
+            "battery_standby": {
+                "name": "Battery standby"
+            }
+        },
+        "number": {
+            "ac_power_limit": {
+                "name": "AC power limit"
+            },
+            "battery_charge_power_limit": {
+                "name": "Battery charge power limit"
+            },
+            "battery_discharge_power_limit": {
+                "name": "Battery discharge power limit"
+            },
+            "battery_minimum_reserve": {
+                "name": "Battery minimum reserve"
+            }
+        },
         "sensor": {
             "capacity_designed": {
                 "name": "Designed capacity"
@@ -63,9 +97,6 @@
             },
             "current_dc": {
                 "name": "DC current"
-            },
-            "current_dc_2": {
-                "name": "DC current 2"
             },
             "delivery_factor": {
                 "name": "Grid import tariff"
@@ -97,6 +128,9 @@
             "energy_total": {
                 "name": "Total energy"
             },
+            "energy_total_pv": {
+                "name": "PV energy total"
+            },
             "energy_year": {
                 "name": "Energy year"
             },
@@ -110,7 +144,7 @@
                     "ac_frequency_too_high": "AC frequency too high",
                     "ac_frequency_too_low": "AC frequency too low",
                     "ac_grid_outside_permissible_limits": "AC grid outside the permissible limits",
-                    "ac_module_over_temperature": "AC module over temperature",
+                    "ac_module_over_temperature": "AC module overtemperature",
                     "ac_module_temperature_sensor_faulty_l1": "AC module temperature sensor faulty (L1)",
                     "ac_module_temperature_sensor_faulty_l2": "AC module temperature sensor faulty (L2)",
                     "ac_module_temperature_sensor_faulty_l3": "AC module temperature sensor faulty (L3)",
@@ -128,11 +162,11 @@
                     "dc_input_voltage_mppt_2_too_high": "DC input voltage MPPT 2 too high",
                     "dc_low_string_1": "DC low string 1",
                     "dc_low_string_2": "DC low string 2",
-                    "dc_module_over_temperature": "DC module over temperature",
+                    "dc_module_over_temperature": "DC module overtemperature",
                     "dc_module_temperature_sensor_faulty": "DC module temperature sensor faulty",
-                    "derating_caused_by_over_frequency": "Derating caused by over-frequency",
+                    "derating_caused_by_over_frequency": "Derating caused by overfrequency",
                     "different_power_limitation_in_hardware_modules": "Different power limitation in the hardware modules",
-                    "eeprom_reinitialised": "EEPROM has been re-initialised",
+                    "eeprom_reinitialised": "EEPROM has been re-initialized",
                     "emergency_power_derating_activated": "Emergency power derating activated",
                     "error_during_logging_data_recording": "Error during recording of logging data",
                     "error_during_update_process": "Error occurred during update process",
@@ -142,13 +176,13 @@
                     "fixed_voltage_mode_out_of_range": "Fixed voltage mode has been selected instead of MPP voltage mode and the fixed voltage has been set to too low or too high a value",
                     "functional_incompatibility_between_pc_boards": "Functional incompatibility (one or more PC boards in the inverter are not compatible with each other, e.g. after a PC board has been replaced)",
                     "grid_frequency_exceeded_limit_reconnecting": "The grid frequency has exceeded a limit value when reconnecting",
-                    "grid_voltage_dependent_power_reduction_active": "Grid Voltage Dependent Power Reduction is active",
+                    "grid_voltage_dependent_power_reduction_active": "Grid voltage-dependent power reduction (GVDPR) is active",
                     "guard_cannot_be_found": "Guard cannot be found",
                     "hardware_id_problem": "Hardware ID problem",
                     "hid_range_error": "HID range error",
-                    "initialisation_error_file_system_error_on_usb": "Initialisation error in file system on USB flash drive",
-                    "initialisation_error_usb_flash_drive_not_supported": "Initialisation error \u2013 USB flash drive is not supported",
-                    "initialisation_error_usb_stick_over_current": "Initialisation error \u2013 Over current on USB stick",
+                    "initialisation_error_file_system_error_on_usb": "Initialization error in file system on USB flash drive",
+                    "initialisation_error_usb_flash_drive_not_supported": "Initialization error \u2013 USB flash drive is not supported",
+                    "initialisation_error_usb_stick_over_current": "Initialization error \u2013 Overcurrent on USB stick",
                     "insulation_error_on_solar_panels": "Insulation error on the solar panels",
                     "insulation_fault": "Insulation fault",
                     "insulation_measurement_triggered": "Insulation measurement triggered",
@@ -161,7 +195,7 @@
                     "invalid_device_type": "Invalid device type",
                     "inverter_required_setup_values_not_received": "Inverter required setup values could not be received",
                     "inverter_settings_changed_restart_required": "Inverter settings have been changed, inverter restart required",
-                    "log_file_cannot_be_saved": "Log file cannot be saved (e.g. USB flash drive is write protected or full)",
+                    "log_file_cannot_be_saved": "Log file cannot be saved (e.g. USB flash drive is write-protected or full)",
                     "low_pv_voltage_dc_input_voltage_too_low": "Low PV voltage - DC input voltage too low for feeding energy into the grid",
                     "mains_voltage_dependent_power_reduction": "Mains voltage-dependent power reduction",
                     "memory_error_detected": "Memory error detected",
@@ -189,18 +223,18 @@
                     "real_time_clock_communication_error": "Real Time Clock module communication error",
                     "real_time_clock_hardware_error": "Hardware error in the Real Time Clock module",
                     "real_time_clock_in_emergency_mode": "Internal error: Real Time Clock module is in emergency mode",
-                    "safety_cut_out_triggered": "Safety cut out via option card or RECERBO has triggered",
+                    "safety_cut_out_triggered": "Safety cut-out via option card or RECERBO has triggered",
                     "software_problem": "Software problem",
                     "software_update_invalid_country_setup": "Software update group 0 (invalid country setup)",
-                    "stand_alone_operation_detected": "Stand alone operation detected",
+                    "stand_alone_operation_detected": "Stand-alone operation detected",
                     "storage_unit_not_available": "Storage unit not available",
                     "time_lost": "Time lost",
                     "too_little_dc_power_for_feed_in_operation": "Too little DC power for feed-in operation",
                     "unique_id_conflict": "Unique ID conflict",
                     "update_file_corrupt": "Update file corrupt",
                     "update_file_does_not_match_device": "Update file does not match the device, update file too old",
-                    "update_file_not_recognised_or_missing": "Update file not recognised or not present",
-                    "wired_shut_down_triggered": "Wired shut down triggered",
+                    "update_file_not_recognised_or_missing": "Update file not recognized or not present",
+                    "wired_shut_down_triggered": "Wired shutdown triggered",
                     "write_or_read_error_occurred": "Write or read error occurred"
                 }
             },
@@ -231,6 +265,15 @@
             },
             "meter_mode": {
                 "name": "Meter mode"
+            },
+            "modbus_mppt_current_dc": {
+                "name": "DC current (Modbus)"
+            },
+            "modbus_mppt_power_dc": {
+                "name": "DC power"
+            },
+            "modbus_mppt_voltage_dc": {
+                "name": "DC voltage (Modbus)"
             },
             "power_ac": {
                 "name": "AC power"
@@ -311,7 +354,7 @@
                 "name": "Relative autonomy"
             },
             "relative_self_consumption": {
-                "name": "Relative self consumption"
+                "name": "Relative self-consumption"
             },
             "state_code": {
                 "name": "State code"
@@ -346,6 +389,12 @@
                     "startup": "Startup"
                 }
             },
+            "storage_energy_charged_total": {
+                "name": "Battery charging energy total"
+            },
+            "storage_energy_discharged_total": {
+                "name": "Battery discharging energy total"
+            },
             "temperature_cell": {
                 "name": "Temperature"
             },
@@ -373,20 +422,40 @@
             "voltage_dc": {
                 "name": "DC voltage"
             },
-            "voltage_dc_2": {
-                "name": "DC voltage 2"
-            },
             "voltage_dc_maximum_cell": {
                 "name": "Maximum cell voltage"
             },
             "voltage_dc_minimum_cell": {
                 "name": "Minimum cell voltage"
             }
+        },
+        "switch": {
+            "ac_power_limit_enabled": {
+                "name": "AC power limiting"
+            },
+            "battery_charge_power_limit_enabled": {
+                "name": "Battery charge power limiting"
+            },
+            "battery_discharge_power_limit_enabled": {
+                "name": "Battery discharge power limiting"
+            },
+            "battery_grid_charging": {
+                "name": "Battery grid charging"
+            }
         }
     },
     "exceptions": {
+        "battery_limits_conflict": {
+            "message": "The inverter refuses a charge limit of {charge_limit}% together with a discharge limit of {discharge_limit}% while both limits are enabled. A negative limit forces the opposite direction and must not exceed the other limit, so the two have to add up to at least 0%. Change one of them or turn its limiting off first."
+        },
         "entry_cannot_connect": {
             "message": "Failed to connect to Fronius device at {host}: {fronius_error}"
+        },
+        "modbus_model_unavailable": {
+            "message": "The inverter no longer exposes the model this setting lives in"
+        },
+        "modbus_write_failed": {
+            "message": "Could not write the setting to the inverter: {error}"
         },
         "update_failed": {
             "message": "An error occurred while attempting to fetch data: {fronius_error}"

@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "already_in_progress": "Configuration flow is already in progress",
             "no_devices_found": "No devices found on the network",
             "not_supported": "Device not supported"
         },
@@ -96,6 +95,11 @@
             "static_target_energy": {
                 "name": "Static target energy"
             }
+        }
+    },
+    "exceptions": {
+        "device_not_found": {
+            "message": "Could not find LD2410B device with address {address}: {reason}"
         }
     }
 }

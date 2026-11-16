@@ -9,11 +9,28 @@
         "step": {
             "user": {
                 "data": {
-                    "hostname": "The hostname for which to perform the DNS query",
-                    "port": "Port for IPV4 lookup",
-                    "port_ipv6": "Port for IPV6 lookup",
-                    "resolver": "Resolver for IPV4 lookup",
-                    "resolver_ipv6": "Resolver for IPV6 lookup"
+                    "hostname": "Hostname"
+                },
+                "data_description": {
+                    "hostname": "The hostname for which to perform the DNS query."
+                },
+                "sections": {
+                    "additional_options": {
+                        "data": {
+                            "port": "IPv4 port",
+                            "port_ipv6": "IPv6 port",
+                            "resolver": "IPv4 resolver",
+                            "resolver_ipv6": "IPv6 resolver"
+                        },
+                        "data_description": {
+                            "port": "Port used for the IPv4 lookup.",
+                            "port_ipv6": "Port used for the IPv6 lookup.",
+                            "resolver": "Resolver used for the IPv4 lookup.",
+                            "resolver_ipv6": "Resolver used for the IPv6 lookup."
+                        },
+                        "description": "Optionally change resolvers and ports.",
+                        "name": "Additional options"
+                    }
                 }
             }
         }
@@ -37,7 +54,8 @@
     },
     "options": {
         "abort": {
-            "already_configured": "Service is already configured"
+            "already_configured": "Service is already configured",
+            "no_options": "The myip hostname requires the default resolvers and therefore cannot be configured."
         },
         "error": {
             "invalid_resolver": "Invalid IP address or port for resolver"
@@ -45,11 +63,18 @@
         "step": {
             "init": {
                 "data": {
-                    "port": "Port for IPV4 lookup",
-                    "port_ipv6": "Port for IPV6 lookup",
-                    "resolver": "Resolver for IPV4 lookup",
-                    "resolver_ipv6": "Resolver for IPV6 lookup"
-                }
+                    "port": "IPv4 port",
+                    "port_ipv6": "IPv6 port",
+                    "resolver": "IPv4 resolver",
+                    "resolver_ipv6": "IPv6 resolver"
+                },
+                "data_description": {
+                    "port": "Port used for the IPv4 lookup.",
+                    "port_ipv6": "Port used for the IPv6 lookup.",
+                    "resolver": "Resolver used for the IPv4 lookup.",
+                    "resolver_ipv6": "Resolver used for the IPv6 lookup."
+                },
+                "description": "Optionally change resolvers and ports."
             }
         }
     }

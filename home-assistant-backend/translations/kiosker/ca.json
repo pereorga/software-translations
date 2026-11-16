@@ -1,0 +1,38 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "Token d'API"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_token": "Token d'API",
+                    "host": "Amfitri\u00f3",
+                    "ssl": "Utilitza un certificat SSL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "zeroconf_confirm": {
+                "data": {
+                    "api_token": "Token d'API",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "ping": {
+                "name": "Ping"
+            }
+        }
+    }
+}

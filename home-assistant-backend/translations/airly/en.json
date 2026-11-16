@@ -5,18 +5,37 @@
             "wrong_location": "No Airly measuring stations in this area."
         },
         "error": {
+            "cannot_connect": "Failed to connect",
             "invalid_api_key": "Invalid API key",
+            "unknown": "Unexpected error",
             "wrong_location": "No Airly measuring stations in this area."
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "To generate API key go to {developer_registration_url}."
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "To generate API key go to {developer_registration_url}."
+                }
+            },
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "latitude": "Latitude",
-                    "longitude": "Longitude",
-                    "name": "Name"
+                    "location": "Location"
                 },
-                "description": "To generate API key go to https://developer.airly.eu/register"
+                "data_description": {
+                    "api_key": "To generate API key go to {developer_registration_url}.",
+                    "location": "The location to get air quality data for."
+                }
             }
         }
     },
@@ -24,10 +43,18 @@
         "sensor": {
             "caqi": {
                 "name": "Common air quality index"
-            },
-            "co": {
-                "name": "Carbon monoxide"
             }
+        }
+    },
+    "exceptions": {
+        "auth_error": {
+            "message": "Authentication failed for {entry}, please update your API key"
+        },
+        "no_station": {
+            "message": "An error occurred while retrieving data from the Airly API for {entry}: no measuring stations in this area"
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from the Airly API for {entry}: {error}"
         }
     },
     "system_health": {

@@ -1,5 +1,9 @@
 {
     "issues": {
+        "entity_gas_price_unit_mismatch": {
+            "description": "Use a price per energy unit (such as kWh) for a gas sensor that measures energy, or a price per volume unit (such as m\u00b3) for a gas sensor that measures volume. Until then, the gas cost is not calculated. The following price entities do not match the unit of their gas sensor:",
+            "title": "Gas price unit does not match the gas sensor"
+        },
         "entity_negative_state": {
             "description": "The following entities have a negative state while a positive state is expected:",
             "title": "Entity has a negative state"
@@ -44,6 +48,10 @@
             "description": "The following entities do not have an expected unit of measurement {price_units}:",
             "title": "Unexpected unit of measurement"
         },
+        "entity_unexpected_unit_volume_flow_rate": {
+            "description": "The following entities do not have an expected unit of measurement (either of {flow_rate_units}):",
+            "title": "Unexpected unit of measurement"
+        },
         "entity_unexpected_unit_water": {
             "description": "The following entities do not have the expected unit of measurement (either of {water_units}):",
             "title": "Unexpected unit of measurement"
@@ -53,7 +61,7 @@
             "title": "Unexpected unit of measurement"
         },
         "recorder_untracked": {
-            "description": "The recorder has been configured to exclude these configured entities:",
+            "description": "Home Assistant Recorder has been configured to exclude these configured entities:",
             "title": "Entity not tracked"
         },
         "statistics_not_defined": {

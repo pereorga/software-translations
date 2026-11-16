@@ -4,7 +4,6 @@
             "already_configured": "El servei ja est\u00e0 configurat",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -56,6 +55,15 @@
             }
         }
     },
+    "selector": {
+        "profile": {
+            "options": {
+                "auto": "Auto",
+                "away": "Fora",
+                "home": "A casa"
+            }
+        }
+    },
     "services": {
         "set_profile": {
             "description": "Activa un perfil i, opcionalment, defineix la durada.",
@@ -73,7 +81,6 @@
         "set_profile_fan_speed_away": {
             "fields": {
                 "fan_speed": {
-                    "description": "Velocitat del ventilador.",
                     "name": "Velocitat del ventilador"
                 }
             }
@@ -81,7 +88,6 @@
         "set_profile_fan_speed_boost": {
             "fields": {
                 "fan_speed": {
-                    "description": "Velocitat del ventilador.",
                     "name": "Velocitat del ventilador"
                 }
             }
@@ -89,7 +95,6 @@
         "set_profile_fan_speed_home": {
             "fields": {
                 "fan_speed": {
-                    "description": "Velocitat del ventilador.",
                     "name": "Velocitat del ventilador"
                 }
             }

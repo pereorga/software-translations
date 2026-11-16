@@ -21,7 +21,6 @@
                     "name": "Mode",
                     "state": {
                         "auto": "Autom\u00e0tic",
-                        "box": "Casella",
                         "slider": "Barra lliscant"
                     }
                 },
@@ -60,8 +59,14 @@
         "data_rate": {
             "name": "Velocitat de dades"
         },
+        "data_size": {
+            "name": "Mida de dades"
+        },
         "distance": {
             "name": "Dist\u00e0ncia"
+        },
+        "duration": {
+            "name": "Durada"
         },
         "energy": {
             "name": "Energia"
@@ -144,11 +149,8 @@
         "temperature": {
             "name": "Temperatura"
         },
-        "volatile_organic_compounds": {
-            "name": "COVs"
-        },
         "voltage": {
-            "name": "Voltatge"
+            "name": "Tensi\u00f3"
         },
         "volume": {
             "name": "Volum"
@@ -177,8 +179,7 @@
                     "description": "Valor objectiu a establir.",
                     "name": "Valor"
                 }
-            },
-            "name": "Estableix"
+            }
         }
     },
     "title": "N\u00famero"

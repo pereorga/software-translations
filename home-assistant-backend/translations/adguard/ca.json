@@ -8,10 +8,6 @@
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
-            "hassio_confirm": {
-                "description": "Vols configurar Home Assistant perqu\u00e8 es connecti amb l'AdGuard Home proporcionat pel complement: {addon}?",
-                "title": "AdGuard Home via complement de Home Assistant"
-            },
             "user": {
                 "data": {
                     "host": "[%key::common::config_flow::data::host%]",
@@ -78,7 +74,6 @@
     },
     "services": {
         "add_url": {
-            "description": "Afegeix una subscripci\u00f3 de filtre a AdGuard Home.",
             "fields": {
                 "name": {
                     "description": "Nom de la subscripci\u00f3 al filtre.",
@@ -112,10 +107,8 @@
             "name": "Activa l'URL"
         },
         "refresh": {
-            "description": "Actualitza totes les subscripcions de filtre d'AdGuard Home.",
             "fields": {
                 "force": {
-                    "description": "For\u00e7a l'actualitzaci\u00f3 (obvia l'acceleraci\u00f3 d'AdGuard Home). \"true\" per for\u00e7ar o \"fals\" per ometre i actualitzar regularment.",
                     "name": "For\u00e7a"
                 }
             },

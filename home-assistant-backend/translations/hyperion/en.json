@@ -2,13 +2,11 @@
     "config": {
         "abort": {
             "already_configured": "Service is already configured",
-            "already_in_progress": "Configuration flow is already in progress",
             "auth_new_token_not_granted_error": "Newly created token was not approved on Hyperion UI",
             "auth_new_token_not_work_error": "Failed to authenticate using newly created token",
             "auth_required_error": "Failed to determine if authorization is required",
             "cannot_connect": "Failed to connect",
-            "no_id": "The Hyperion Ambilight instance did not report its ID",
-            "reauth_successful": "Re-authentication was successful"
+            "no_id": "The Hyperion Ambilight instance did not report its ID"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -53,6 +51,9 @@
         "switch": {
             "all": {
                 "name": "Component all"
+            },
+            "audio_capture": {
+                "name": "Component Audio capture"
             },
             "blackbar_detection": {
                 "name": "Component blackbar detection"

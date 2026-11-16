@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "no_server_found": "No s'ha trobat cap servidor LMS."
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -19,11 +18,20 @@
                     "port": "Port",
                     "username": "Nom d'usuari"
                 },
-                "title": "Edita la informaci\u00f3 de connexi\u00f3"
+                "data_description": {
+                    "host": "Adre\u00e7a IP o nom d'amfitri\u00f3 de l'LMS."
+                }
             },
-            "user": {
+            "edit_discovered": {
                 "data": {
-                    "host": "Amfitri\u00f3"
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "edit_integration_discovered": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
                 }
             }
         }
@@ -57,6 +65,11 @@
             "lastscan": {
                 "name": "\u00daltim escaneig"
             }
+        }
+    },
+    "exceptions": {
+        "play_pause_failed": {
+            "message": "No s'ha pogut alternar entre reproducci\u00f3 i pausa."
         }
     },
     "services": {

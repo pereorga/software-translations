@@ -1,4 +1,62 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_cleaning": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_docked": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_encountering_an_error": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_paused": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_returning": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "device_automation": {
         "action_type": {
             "clean": "Fes que {entity_name} netegi",
@@ -21,7 +79,7 @@
             "name": "Aspirador",
             "state": {
                 "cleaning": "Netejant",
-                "docked": "Aparcada",
+                "docked": "Aparcat/ada",
                 "error": "Error",
                 "idle": "Inactiu",
                 "off": "OFF",
@@ -32,11 +90,16 @@
         }
     },
     "services": {
-        "pause": {
-            "name": "Pausa"
+        "clean_area": {
+            "fields": {
+                "cleaning_area_id": {
+                    "description": "\u00c0rees a netejar.",
+                    "name": "\u00c0rees"
+                }
+            }
         },
-        "return_to_base": {
-            "name": "Retorn a la base"
+        "pause": {
+            "name": "Pausa aspirador/a"
         },
         "send_command": {
             "fields": {
@@ -47,42 +110,74 @@
                     "description": "Par\u00e0metres per a la comanda. Els par\u00e0metres s\u00f3n espec\u00edfics de la integraci\u00f3.",
                     "name": "Par\u00e0metres"
                 }
-            },
-            "name": "Envia comanda"
+            }
         },
         "set_fan_speed": {
-            "description": "Configura la velocitat del ventilador de l'aspirador.",
             "fields": {
                 "fan_speed": {
                     "description": "Velocitat del ventilador. El valor dep\u00e8n de la integraci\u00f3. Algunes integracions tenen passos de velocitat, com ara 'mitj\u00e0'. Alguns utilitzen un percentatge, entre 0 i 100.",
                     "name": "Velocitat del ventilador"
                 }
-            },
-            "name": "Configura la velocitat del ventilador"
+            }
         },
         "start": {
-            "description": "Inicia o repr\u00e8n la tasca de neteja.",
-            "name": "Inicia"
-        },
-        "start_pause": {
-            "description": "Inicia, atura o repr\u00e8n la tasca de neteja.",
-            "name": "Inicia/pausa"
+            "name": "Inicia aspirador/a"
         },
         "stop": {
-            "description": "Atura la tasca de neteja actual.",
-            "name": "Atura"
-        },
-        "toggle": {
-            "name": "Commuta"
-        },
-        "turn_off": {
-            "description": "Atura la tasca de neteja actual i torna a la base.",
-            "name": "Apaga"
-        },
-        "turn_on": {
-            "description": "Inicia una nova tasca de neteja.",
-            "name": "Enc\u00e9n"
+            "name": "Atura aspirador/a"
         }
     },
-    "title": "Aspirador"
+    "title": "Aspirador",
+    "triggers": {
+        "errored": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "paused_cleaning": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "returned_to_dock": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "started_cleaning": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "started_returning": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

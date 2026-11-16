@@ -23,7 +23,6 @@
                     "name": "Mode",
                     "state": {
                         "auto": "Autom\u00e0tic",
-                        "box": "Casella",
                         "slider": "Barra lliscant"
                     }
                 },
@@ -34,26 +33,17 @@
         }
     },
     "services": {
-        "decrement": {
-            "description": "Disminueix el valor en 1 pas.",
-            "name": "Disminueix"
-        },
-        "increment": {
-            "name": "Incrementa"
-        },
         "reload": {
             "description": "Recarrega els ajudants des de la configuraci\u00f3 YAML.",
-            "name": "Torna a carregar"
+            "name": "Torna a carregar entrades num\u00e8riques"
         },
         "set_value": {
-            "description": "Estableix el valor.",
             "fields": {
                 "value": {
                     "description": "Valor objectiu.",
                     "name": "Valor"
                 }
-            },
-            "name": "Estableix"
+            }
         }
     },
     "title": "Entrada num\u00e8rica"

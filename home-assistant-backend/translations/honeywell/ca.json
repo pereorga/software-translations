@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
-        },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
@@ -10,7 +7,8 @@
         "step": {
             "reauth_confirm": {
                 "data": {
-                    "password": "Contrasenya"
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
                 },
                 "description": "La integraci\u00f3 Honeywell ha de tornar a autenticar-se amb el teu compte",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
@@ -19,8 +17,7 @@
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
-                },
-                "description": "Introdueix les credencials utilitzades per iniciar sessi\u00f3 a mytotalconnectcomfort.com."
+                }
             }
         }
     },
@@ -30,7 +27,7 @@
                 "state_attributes": {
                     "preset_mode": {
                         "state": {
-                            "away": "A fora",
+                            "away": "Fora",
                             "none": "Cap"
                         }
                     }
@@ -74,9 +71,6 @@
         },
         "stop_hold_failed": {
             "message": "Honeywell no ha pogut aturar el mode de retenci\u00f3"
-        },
-        "switch_failed_off": {
-            "message": "Honeywell no ha pogut desactivar el mode d'escalfador d'emerg\u00e8ncia."
         },
         "switch_failed_on": {
             "message": "Honeywell no ha pogut establir el mode del sistema al mode d'escalfador d'emerg\u00e8ncia."

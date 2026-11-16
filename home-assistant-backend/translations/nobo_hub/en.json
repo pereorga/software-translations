@@ -1,10 +1,12 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "cannot_discover": "Could not detect a Nob\u00f8 Ecohub at the discovered IP address."
         },
         "error": {
             "cannot_connect": "Failed to connect - check serial number",
+            "cannot_connect_ip": "Failed to connect - check IP address",
             "invalid_ip": "Invalid IP address",
             "invalid_serial": "Invalid serial number",
             "unknown": "Unexpected error"
@@ -15,17 +17,36 @@
                     "ip_address": "IP address",
                     "serial": "Serial number (12 digits)"
                 },
+                "data_description": {
+                    "ip_address": "The IP address of your Nob\u00f8 Ecohub.",
+                    "serial": "The full 12-digit serial number printed on the back of your Nob\u00f8 Ecohub."
+                },
                 "description": "Configure a Nob\u00f8 Ecohub not discovered on your local network. If your hub is on another network, you can still connect to it by entering the complete serial number (12 digits) and its IP address."
+            },
+            "reconfigure": {
+                "data": {
+                    "ip_address": "IP address"
+                },
+                "data_description": {
+                    "ip_address": "The IP address of your Nob\u00f8 Ecohub."
+                },
+                "description": "Update the IP address for Nob\u00f8 Ecohub with serial number {serial}."
             },
             "selected": {
                 "data": {
                     "serial_suffix": "Serial number suffix (3 digits)"
+                },
+                "data_description": {
+                    "serial_suffix": "The last 3 digits of the serial number printed on the back of your Nob\u00f8 Ecohub."
                 },
                 "description": "Configuring {hub}.\r\rTo connect to the hub, you need to enter the last 3 digits of the hub's serial number."
             },
             "user": {
                 "data": {
                     "device": "Discovered hubs"
+                },
+                "data_description": {
+                    "device": "Select the Nob\u00f8 Ecohub discovered on your local network, or choose manual entry."
                 },
                 "description": "Select Nob\u00f8 Ecohub to configure."
             }
@@ -34,7 +55,7 @@
     "entity": {
         "select": {
             "global_override": {
-                "name": "global override",
+                "name": "Global override",
                 "state": {
                     "away": "Away",
                     "comfort": "Comfort",
@@ -43,8 +64,36 @@
                 }
             },
             "week_profile": {
-                "name": "week profile"
+                "name": "Week profile"
             }
+        },
+        "switch": {
+            "disable_global_override": {
+                "name": "Disable global overrides"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Unable to connect to Nob\u00f8 Ecohub with serial {serial} at {ip}; will retry. If the hub is on a different network from Home Assistant and has changed IP address, reconfigure the integration with the new IP address."
+        },
+        "set_disable_global_override_failed": {
+            "message": "Failed to change whether global overrides are disabled for the zone."
+        },
+        "set_global_override_failed": {
+            "message": "Failed to set global override."
+        },
+        "set_hvac_mode_failed": {
+            "message": "Failed to set HVAC mode."
+        },
+        "set_preset_mode_failed": {
+            "message": "Failed to set preset mode."
+        },
+        "set_temperature_failed": {
+            "message": "Failed to set target temperature."
+        },
+        "set_week_profile_failed": {
+            "message": "Failed to set week profile."
         }
     },
     "options": {
@@ -53,7 +102,18 @@
                 "data": {
                     "override_type": "Override type"
                 },
-                "description": "Select override type \"Now\" to end override on next week profile change."
+                "data_description": {
+                    "override_type": "Select \"Now\" to end the override on the next week profile change, or \"Constant\" to keep it until manually cleared."
+                },
+                "description": "Configure how overrides are ended."
+            }
+        }
+    },
+    "selector": {
+        "override_type": {
+            "options": {
+                "constant": "Constant",
+                "now": "Now"
             }
         }
     }

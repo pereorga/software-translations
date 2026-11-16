@@ -1,4 +1,30 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "all_completed": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "incomplete": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "entity_component": {
         "_": {
             "name": "Llista de tasques"
@@ -46,13 +72,6 @@
                 }
             }
         },
-        "remove_item": {
-            "fields": {
-                "item": {
-                    "name": "Nom de l'element"
-                }
-            }
-        },
         "update_item": {
             "fields": {
                 "description": {
@@ -67,14 +86,10 @@
                     "description": "Data i l'hora en que s'espera que s'hagi completat l'element de tasca.",
                     "name": "Data i hora de venciment"
                 },
-                "item": {
-                    "name": "Nom de l'element"
-                },
                 "rename": {
                     "name": "Canvia nom de l'element"
                 },
                 "status": {
-                    "description": "Estat o confirmaci\u00f3 de l'element.",
                     "name": "Estat"
                 }
             }

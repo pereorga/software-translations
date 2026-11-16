@@ -1,0 +1,127 @@
+{
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "condition_threshold_name": "Tipus de llindar",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys",
+        "trigger_threshold_name": "Tipus de llindar"
+    },
+    "conditions": {
+        "is_charging": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_level": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_low": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_not_charging": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_not_low": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
+    "triggers": {
+        "became_low": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "level_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "level_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "no_longer_low": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "started_charging": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "stopped_charging": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
+}

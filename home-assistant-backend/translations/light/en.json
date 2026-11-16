@@ -1,5 +1,8 @@
 {
     "common": {
+        "condition_behavior_name": "Condition passes if",
+        "condition_for_name": "For at least",
+        "condition_threshold_name": "Threshold type",
         "field_brightness_description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
         "field_brightness_name": "Brightness value",
         "field_brightness_pct_description": "Number indicating the percentage of full brightness, where 0 turns the light off, 1 is the minimum brightness, and 100 is the maximum brightness.",
@@ -10,16 +13,14 @@
         "field_brightness_step_pct_name": "Brightness step",
         "field_color_name_description": "A human-readable color name.",
         "field_color_name_name": "Color name",
-        "field_color_temp_description": "Color temperature in mireds.",
-        "field_color_temp_name": "Color temperature",
+        "field_color_temp_kelvin_description": "Color temperature in Kelvin.",
+        "field_color_temp_kelvin_name": "Color temperature",
         "field_effect_description": "Light effect.",
         "field_effect_name": "Effect",
         "field_flash_description": "Tell light to flash, can be either value short or long.",
         "field_flash_name": "Flash",
         "field_hs_color_description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
         "field_hs_color_name": "Hue/Sat color",
-        "field_kelvin_description": "Color temperature in Kelvin.",
-        "field_kelvin_name": "Color temperature",
         "field_profile_description": "Name of a light profile to use.",
         "field_profile_name": "Profile",
         "field_rgb_color_description": "The color in RGB format. A list of three integers between 0 and 255 representing the values of red, green, and blue.",
@@ -34,7 +35,51 @@
         "field_white_name": "White",
         "field_xy_color_description": "Color in XY-format. A list of two decimal numbers between 0 and 1.",
         "field_xy_color_name": "XY-color",
-        "section_advanced_fields_name": "Advanced options"
+        "section_additional_fields_name": "Additional options",
+        "trigger_behavior_name": "Trigger when",
+        "trigger_for_name": "For at least",
+        "trigger_threshold_name": "Threshold type"
+    },
+    "conditions": {
+        "is_brightness": {
+            "description": "Tests the brightness of one or more lights.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                },
+                "threshold": {
+                    "name": "Threshold type"
+                }
+            },
+            "name": "Light brightness"
+        },
+        "is_off": {
+            "description": "Tests if one or more lights are off.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Light is off"
+        },
+        "is_on": {
+            "description": "Tests if one or more lights are on.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Light is on"
+        }
     },
     "device_automation": {
         "action_type": {
@@ -51,7 +96,8 @@
         },
         "extra_fields": {
             "brightness_pct": "Brightness",
-            "flash": "Flash"
+            "flash": "Flash",
+            "for": "Duration"
         },
         "trigger_type": {
             "changed_states": "{entity_name} turned on or off",
@@ -85,14 +131,14 @@
                         "xy": "XY"
                     }
                 },
-                "color_temp": {
-                    "name": "Color temperature (mireds)"
-                },
                 "color_temp_kelvin": {
                     "name": "Color temperature (Kelvin)"
                 },
                 "effect": {
-                    "name": "Effect"
+                    "name": "Effect",
+                    "state": {
+                        "off": "Off"
+                    }
                 },
                 "effect_list": {
                     "name": "Available effects"
@@ -100,14 +146,8 @@
                 "max_color_temp_kelvin": {
                     "name": "Maximum color temperature (Kelvin)"
                 },
-                "max_mireds": {
-                    "name": "Maximum color temperature (mireds)"
-                },
                 "min_color_temp_kelvin": {
                     "name": "Minimum color temperature (Kelvin)"
-                },
-                "min_mireds": {
-                    "name": "Minimum color temperature (mireds)"
                 },
                 "supported_color_modes": {
                     "name": "Available color modes",
@@ -279,11 +319,23 @@
                 "yellow": "Yellow",
                 "yellowgreen": "Yellow green"
             }
+        },
+        "flash": {
+            "options": {
+                "long": "Long",
+                "short": "Short"
+            }
+        },
+        "state": {
+            "options": {
+                "off": "Off",
+                "on": "On"
+            }
         }
     },
     "services": {
         "toggle": {
-            "description": "Toggles one or more lights, from on to off, or, off to on, based on their current state.",
+            "description": "Toggles one or more lights, from on to off, or off to on, based on their current state.",
             "fields": {
                 "brightness": {
                     "description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
@@ -297,8 +349,8 @@
                     "description": "A human-readable color name.",
                     "name": "Color name"
                 },
-                "color_temp": {
-                    "description": "Color temperature in mireds.",
+                "color_temp_kelvin": {
+                    "description": "Color temperature in Kelvin.",
                     "name": "Color temperature"
                 },
                 "effect": {
@@ -312,10 +364,6 @@
                 "hs_color": {
                     "description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
                     "name": "Hue/Sat color"
-                },
-                "kelvin": {
-                    "description": "Color temperature in Kelvin.",
-                    "name": "Color temperature"
                 },
                 "profile": {
                     "description": "Name of a light profile to use.",
@@ -346,15 +394,15 @@
                     "name": "XY-color"
                 }
             },
-            "name": "Toggle",
+            "name": "Toggle light",
             "sections": {
-                "advanced_fields": {
-                    "name": "Advanced options"
+                "additional_fields": {
+                    "name": "Additional options"
                 }
             }
         },
         "turn_off": {
-            "description": "Turn off one or more lights.",
+            "description": "Turns off one or more lights.",
             "fields": {
                 "flash": {
                     "description": "Tell light to flash, can be either value short or long.",
@@ -365,15 +413,15 @@
                     "name": "Transition"
                 }
             },
-            "name": "Turn off",
+            "name": "Turn off light",
             "sections": {
-                "advanced_fields": {
-                    "name": "Advanced options"
+                "additional_fields": {
+                    "name": "Additional options"
                 }
             }
         },
         "turn_on": {
-            "description": "Turn on one or more lights and adjust properties of the light, even when they are turned on already.",
+            "description": "Turns on one or more lights and adjusts their properties, even when they are turned on already.",
             "fields": {
                 "brightness": {
                     "description": "Number indicating brightness, where 0 turns the light off, 1 is the minimum brightness, and 255 is the maximum brightness.",
@@ -395,8 +443,8 @@
                     "description": "A human-readable color name.",
                     "name": "Color name"
                 },
-                "color_temp": {
-                    "description": "Color temperature in mireds.",
+                "color_temp_kelvin": {
+                    "description": "Color temperature in Kelvin.",
                     "name": "Color temperature"
                 },
                 "effect": {
@@ -410,10 +458,6 @@
                 "hs_color": {
                     "description": "Color in hue/sat format. A list of two integers. Hue is 0-360 and Sat is 0-100.",
                     "name": "Hue/Sat color"
-                },
-                "kelvin": {
-                    "description": "Color temperature in Kelvin.",
-                    "name": "Color temperature"
                 },
                 "profile": {
                     "description": "Name of a light profile to use.",
@@ -444,13 +488,63 @@
                     "name": "XY-color"
                 }
             },
-            "name": "Turn on",
+            "name": "Turn on light",
             "sections": {
-                "advanced_fields": {
-                    "name": "Advanced options"
+                "additional_fields": {
+                    "name": "Additional options"
                 }
             }
         }
     },
-    "title": "Light"
+    "title": "Light",
+    "triggers": {
+        "brightness_changed": {
+            "description": "Triggers when the brightness of one or more lights changes.",
+            "fields": {
+                "threshold": {
+                    "name": "Threshold type"
+                }
+            },
+            "name": "Light brightness changed"
+        },
+        "brightness_crossed_threshold": {
+            "description": "Triggers when the brightness of one or more lights crosses a threshold.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                },
+                "threshold": {
+                    "name": "Threshold type"
+                }
+            },
+            "name": "Light brightness crossed threshold"
+        },
+        "turned_off": {
+            "description": "Triggers when one or more lights turn off.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Light turned off"
+        },
+        "turned_on": {
+            "description": "Triggers when one or more lights turn on.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Light turned on"
+        }
+    }
 }

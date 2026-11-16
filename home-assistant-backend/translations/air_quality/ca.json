@@ -1,0 +1,563 @@
+{
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "condition_threshold_name": "Tipus de llindar",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys",
+        "trigger_threshold_name": "Tipus de llindar"
+    },
+    "conditions": {
+        "is_co2_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_co_cleared": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_co_detected": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_co_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_gas_cleared": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_gas_detected": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_n2o_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_no2_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_no_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_ozone_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_pm10_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_pm1_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_pm25_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_pm4_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_smoke_cleared": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_smoke_detected": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_so2_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_voc_ratio_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_voc_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        }
+    },
+    "triggers": {
+        "co2_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "co2_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "co_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "co_cleared": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "co_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "co_detected": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "gas_cleared": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "gas_detected": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "n2o_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "n2o_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "no2_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "no2_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "no_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "no_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "ozone_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "ozone_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm10_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm10_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm1_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm1_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm25_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm25_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm4_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "pm4_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "smoke_cleared": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "smoke_detected": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "so2_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "so2_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "voc_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "voc_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "voc_ratio_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "voc_ratio_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,45 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "zone": {
+            "entry_type": "Zona",
+            "initiate_flow": {
+                "user": "Afegeix zona"
+            },
+            "step": {
+                "reconfigure": {
+                    "data": {
+                        "type": "Tipus de zona"
+                    }
+                },
+                "user": {
+                    "data": {
+                        "type": "Tipus de zona"
+                    }
+                }
+            }
+        }
+    },
     "services": {
         "aux": {
-            "description": "Dispara una sortida auxiliar.",
             "fields": {
                 "output_id": {
                     "description": "Sortida auxiliar a canviar.",
@@ -14,6 +52,7 @@
             "name": "Auxiliar"
         },
         "panic": {
+            "description": "Activa una alarma de p\u00e0nic.",
             "fields": {
                 "code": {
                     "name": "Codi"

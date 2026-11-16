@@ -5,16 +5,29 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "Met Office DataHub API key for the Site Specific Global Spot API."
+                },
+                "description": "Please re-enter your DataHub API key. If you are still using an old Datapoint API key, you need to sign up for DataHub API now, see [documentation]({docs_url}) for details.",
+                "title": "Reauthenticate with DataHub API"
+            },
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "latitude": "Latitude",
-                    "longitude": "Longitude"
+                    "location": "Location"
                 },
-                "description": "The latitude and longitude will be used to find the closest weather station.",
+                "data_description": {
+                    "api_key": "Met Office DataHub API key for the Site Specific Global Spot API.",
+                    "location": "The location for which to request a weather forecast."
+                },
                 "title": "Connect to the UK Met Office"
             }
         }

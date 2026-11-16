@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Service is already configured"
+            "already_configured": "Service is already configured",
+            "wrong_account": "The API key belongs to a different Slack workspace than the one configured."
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -9,17 +10,27 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The Slack API token to use for sending Slack messages."
+                },
+                "description": "The API key for Slack is no longer valid. Please enter a new API key.",
+                "title": "Authentication expired for {name}"
+            },
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "default_channel": "Default Channel",
+                    "default_channel": "Default channel",
                     "icon": "Icon",
                     "username": "Username"
                 },
                 "data_description": {
                     "api_key": "The Slack API token to use for sending Slack messages.",
                     "default_channel": "The channel to post to if no channel is specified when sending a message.",
-                    "icon": "Use one of the Slack emojis as an Icon for the supplied username.",
+                    "icon": "Use one of the Slack emojis as an icon for the supplied username.",
                     "username": "Home Assistant will post to Slack using the username specified."
                 },
                 "description": "Refer to the documentation on getting your Slack API key."
@@ -31,6 +42,14 @@
             "do_not_disturb_until": {
                 "name": "Do not disturb until"
             }
+        }
+    },
+    "exceptions": {
+        "invalid_api_key": {
+            "message": "Invalid API key"
+        },
+        "invalid_message_data": {
+            "message": "Invalid message data: {error}"
         }
     }
 }

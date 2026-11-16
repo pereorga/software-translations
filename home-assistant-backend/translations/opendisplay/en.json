@@ -1,0 +1,159 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect",
+            "no_devices_found": "No devices found on the network",
+            "not_supported": "Device not supported",
+            "unknown": "Unexpected error"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "invalid_key_format": "The encryption key must be exactly 32 hexadecimal characters (0-9, a-f).",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "bluetooth_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
+            "encryption_key": {
+                "data": {
+                    "encryption_key": "Encryption key"
+                },
+                "data_description": {
+                    "encryption_key": "Enter the 32-character hexadecimal AES-128 encryption key for this device."
+                },
+                "description": "{name} requires an encryption key to connect.",
+                "title": "Encryption required"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "encryption_key": "Encryption key"
+                },
+                "data_description": {
+                    "encryption_key": "Enter the 32-character hexadecimal AES-128 encryption key for this device."
+                },
+                "description": "Authentication failed for {name}. Enter the correct encryption key, or leave blank if encryption has been disabled on the device.",
+                "title": "Re-authentication required"
+            },
+            "user": {
+                "data": {
+                    "address": "Device"
+                },
+                "data_description": {
+                    "address": "Select the Bluetooth device to set up."
+                },
+                "description": "Choose a device to set up"
+            }
+        }
+    },
+    "entity": {
+        "event": {
+            "button": {
+                "name": "Button {number}",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "button_down": "Button down",
+                            "button_up": "Button up"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "battery_voltage": {
+                "name": "Battery voltage"
+            }
+        }
+    },
+    "exceptions": {
+        "authentication_error": {
+            "message": "Authentication failed. Please update the encryption key."
+        },
+        "device_not_found": {
+            "message": "Could not find Bluetooth device with address `{address}`. Reason: {reason}"
+        },
+        "media_download_error": {
+            "message": "Failed to download media: {error}"
+        },
+        "setup_connection_error": {
+            "message": "Failed to connect to OpenDisplay device."
+        },
+        "upload_error": {
+            "message": "Failed to upload image to the display."
+        }
+    },
+    "selector": {
+        "dither_mode": {
+            "options": {
+                "atkinson": "Atkinson",
+                "burkes": "Burkes",
+                "floyd_steinberg": "Floyd-Steinberg",
+                "jarvis_judice_ninke": "Jarvis, Judice & Ninke",
+                "none": "None",
+                "ordered": "Ordered",
+                "sierra": "Sierra",
+                "sierra_lite": "Sierra Lite",
+                "stucki": "Stucki"
+            }
+        },
+        "fit_mode": {
+            "options": {
+                "contain": "Contain",
+                "cover": "Cover",
+                "crop": "Crop",
+                "stretch": "Stretch"
+            }
+        },
+        "refresh_mode": {
+            "options": {
+                "fast": "Fast",
+                "full": "Full"
+            }
+        }
+    },
+    "services": {
+        "upload_image": {
+            "description": "Uploads an image to an OpenDisplay device.",
+            "fields": {
+                "device_id": {
+                    "description": "The OpenDisplay device to upload the image to.",
+                    "name": "Device"
+                },
+                "dither_mode": {
+                    "description": "The dithering algorithm to use for converting the image to the display's color palette.",
+                    "name": "Dither mode"
+                },
+                "fit_mode": {
+                    "description": "How the image is fitted to the display dimensions.",
+                    "name": "Fit mode"
+                },
+                "image": {
+                    "description": "The image to upload to the display.",
+                    "name": "Image"
+                },
+                "refresh_mode": {
+                    "description": "The display refresh mode. Full refresh clears ghosting but is slower. Fast refresh is not supported on all displays.",
+                    "name": "Refresh mode"
+                },
+                "rotation": {
+                    "description": "The rotation angle in degrees, applied clockwise.",
+                    "name": "Rotation"
+                },
+                "tone_compression": {
+                    "description": "Dynamic range compression strength. Leave empty for automatic.",
+                    "name": "Tone compression"
+                }
+            },
+            "name": "Upload image",
+            "sections": {
+                "additional_fields": {
+                    "name": "Additional options"
+                }
+            }
+        }
+    }
+}

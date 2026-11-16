@@ -1,38 +1,59 @@
 {
     "config": {
         "abort": {
-            "download_failed": "Ha fallat la baixada del model"
+            "already_configured": "El servei ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "invalid_url": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
             "unknown": "Error inesperat"
         },
-        "progress": {
-            "download": "Espera mentre es baixa el model, aix\u00f2 pot trigar molt temps. Consulta els registres del teu servidor Ollama per a m\u00e9s detalls."
-        },
         "step": {
-            "download": {
-                "title": "Baixant model"
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
             "user": {
                 "data": {
-                    "model": "Model",
+                    "api_key": "Clau API",
                     "url": "URL"
                 }
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "llm_hass_api": "Controla Home Assistant",
-                    "max_history": "Nombre m\u00e0xim de missatges hist\u00f2rics",
-                    "num_ctx": "Mida de la finestra de context",
-                    "prompt": "Instruccions"
-                },
-                "data_description": {
-                    "num_ctx": "Nombre m\u00e0xim de 'tokens' de text que el model pot processar. Baixa'l per reduir la mem\u00f2ria RAM d'Ollama, o augmenta'l per a un nombre d'entitats exposades m\u00e9s gran."
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "cannot_connect": "Ha fallat la connexi\u00f3"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "name": "Nom",
+                        "prompt": "Instruccions"
+                    },
+                    "data_description": {
+                        "num_ctx": "Nombre m\u00e0xim de 'tokens' de text que el model pot processar. Redueix-lo per rebaixar la mem\u00f2ria RAM d'Ollama o augmenta'lo si el nombre d'entitats exposades \u00e9s m\u00e9s gran"
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Ha fallat la connexi\u00f3"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "name": "Nom",
+                        "prompt": "Instruccions"
+                    },
+                    "data_description": {
+                        "num_ctx": "Nombre m\u00e0xim de 'tokens' de text que el model pot processar. Redueix-lo per rebaixar la mem\u00f2ria RAM d'Ollama o augmenta'lo si el nombre d'entitats exposades \u00e9s m\u00e9s gran"
+                    }
                 }
             }
         }

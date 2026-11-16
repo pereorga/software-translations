@@ -1,0 +1,135 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "email": "Correu electr\u00f2nic",
+                    "password": "Contrasenya"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
+            "reconfigure": {
+                "data": {
+                    "email": "Correu electr\u00f2nic",
+                    "password": "Contrasenya"
+                }
+            },
+            "user": {
+                "data": {
+                    "email": "Correu electr\u00f2nic",
+                    "password": "Contrasenya"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "error": {
+                "name": "Error"
+            },
+            "forced_hot_water": {
+                "name": "Aigua calenta for\u00e7ada"
+            },
+            "frost_protection": {
+                "name": "Protecci\u00f3 contra gelades"
+            },
+            "holiday_mode": {
+                "name": "Mode vacances"
+            },
+            "overheat_protection": {
+                "name": "Protecci\u00f3 contra sobreescalfament"
+            },
+            "standby": {
+                "name": "En espera"
+            }
+        },
+        "climate": {
+            "ata_unit": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "speed_1": "Velocitat 1",
+                            "speed_2": "Velocitat 2",
+                            "speed_3": "Velocitat 3",
+                            "speed_4": "Velocitat 4",
+                            "speed_5": "Velocitat 5"
+                        }
+                    },
+                    "swing_horizontal_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "centre": "Centre",
+                            "left": "Esquerra",
+                            "left_centre": "Centre esquerra",
+                            "right": "Dreta",
+                            "right_centre": "Centre dreta",
+                            "swing": "Oscil\u00b7laci\u00f3"
+                        }
+                    },
+                    "swing_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "position_1": "Posici\u00f3 1",
+                            "position_2": "Posici\u00f3 2",
+                            "position_3": "Posici\u00f3 3",
+                            "position_4": "Posici\u00f3 4",
+                            "position_5": "Posici\u00f3 5",
+                            "swing": "Oscil\u00b7laci\u00f3"
+                        }
+                    }
+                }
+            }
+        },
+        "number": {
+            "frost_protection_max_temp": {
+                "name": "Temperatura m\u00e0xima de protecci\u00f3 contra gelades"
+            },
+            "frost_protection_min_temp": {
+                "name": "Temperatura m\u00ednima de protecci\u00f3 contra gelades"
+            },
+            "overheat_protection_max_temp": {
+                "name": "Temperatura m\u00e0xima de protecci\u00f3 contra sobreescalfament"
+            },
+            "overheat_protection_min_temp": {
+                "name": "Temperatura m\u00ednim de protecci\u00f3 contra sobreescalfament"
+            }
+        },
+        "sensor": {
+            "energy_consumed": {
+                "name": "Energia consumida (mes)"
+            },
+            "outdoor_temperature": {
+                "name": "Temperatura exterior"
+            },
+            "room_temperature": {
+                "name": "Temperatura sala"
+            },
+            "room_temperature_zone_1": {
+                "name": "Temperatura sala, zona 1"
+            },
+            "room_temperature_zone_2": {
+                "name": "Temperatura sala, zona 2"
+            },
+            "tank_water_temperature": {
+                "name": "Temperatura de l'aigua del tanc"
+            }
+        },
+        "switch": {
+            "frost_protection": {
+                "name": "Protecci\u00f3 contra gelades"
+            },
+            "overheat_protection": {
+                "name": "Protecci\u00f3 contra sobreescalfament"
+            }
+        }
+    }
+}

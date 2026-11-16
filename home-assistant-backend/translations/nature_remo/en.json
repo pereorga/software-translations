@@ -1,0 +1,50 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "api_token": "Access token"
+                },
+                "data_description": {
+                    "api_token": "Personal access token for the Nature account."
+                },
+                "description": "Enter a personal access token issued at {token_url}."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "cumulative_energy_normal": {
+                "name": "Imported energy"
+            },
+            "cumulative_energy_reverse": {
+                "name": "Exported energy"
+            },
+            "illuminance": {
+                "name": "Illuminance"
+            },
+            "last_motion": {
+                "name": "Last motion"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_failed": {
+            "message": "Access token is invalid or was revoked"
+        },
+        "update_failed": {
+            "message": "Error communicating with the Nature API: {error}"
+        },
+        "update_rate_limited": {
+            "message": "Nature API rate limit exceeded; requests are accepted again at {reset}"
+        }
+    }
+}

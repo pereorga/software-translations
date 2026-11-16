@@ -1,0 +1,24 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_compatible_transmitters": "No radio frequency transmitter supports {frequency} {modulation} transmissions. Please add a compatible transmitter first.",
+            "no_transmitters": "No radio frequency transmitters are available. Please set up a device first."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "transmitter": "Radio frequency transmitter"
+                },
+                "data_description": {
+                    "transmitter": "The radio frequency transmitter to use for sending commands."
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "transmitter_not_found": {
+            "message": "Cannot migrate the configuration because the radio frequency transmitter no longer exists"
+        }
+    }
+}

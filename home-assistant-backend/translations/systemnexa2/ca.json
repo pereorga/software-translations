@@ -1,0 +1,39 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
+            "unknown": "Error inesperat"
+        },
+        "flow_title": "{name}-({model})",
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "IP/nom d'amfitri\u00f3"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "IP/nom d'amfitri\u00f3"
+                }
+            }
+        }
+    },
+    "entity": {
+        "switch": {
+            "433mhz": {
+                "name": "433 MHz"
+            },
+            "led": {
+                "name": "LED"
+            },
+            "physical_button": {
+                "name": "Bot\u00f3 f\u00edsic"
+            }
+        }
+    }
+}

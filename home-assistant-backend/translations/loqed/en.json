@@ -1,18 +1,41 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication"
+            "invalid_auth": "Invalid authentication",
+            "lock_not_found": "The discovered lock was not found in your LOQED account.",
+            "no_locks": "No locks found in your LOQED account."
         },
         "flow_title": "LOQED Touch Smartlock setup",
         "step": {
+            "pick_lock": {
+                "data": {
+                    "lock_id": "Select your lock"
+                },
+                "data_description": {
+                    "lock_id": "Unique ID of the lock to use."
+                },
+                "description": "Multiple locks found. Please select the lock you want to configure."
+            },
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API token"
+                },
+                "data_description": {
+                    "api_token": "LOQED personal access token."
+                },
+                "description": "The LOQED credentials for {name} were rejected. Log in at LOQED's [personal access tokens portal]({config_url}), create a new access token and enter it here."
+            },
             "user": {
                 "data": {
-                    "api_token": "API token",
-                    "name": "Name of your lock in the LOQED app."
+                    "api_token": "API token"
+                },
+                "data_description": {
+                    "api_token": "LOQED personal access token."
                 },
                 "description": "Log in at LOQED's [personal access tokens portal]({config_url}) and: \n* Create an API key by clicking 'Create' \n* Copy the created access token."
             }

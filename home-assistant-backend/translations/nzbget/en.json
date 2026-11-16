@@ -11,12 +11,18 @@
             "user": {
                 "data": {
                     "host": "Host",
-                    "name": "Name",
                     "password": "Password",
                     "port": "Port",
                     "ssl": "Uses an SSL certificate",
-                    "username": "Username",
-                    "verify_ssl": "Verify SSL certificate"
+                    "username": "Username"
+                },
+                "sections": {
+                    "more_options": {
+                        "data": {
+                            "verify_ssl": "Verify SSL certificate"
+                        },
+                        "name": "More options"
+                    }
                 },
                 "title": "Connect to NZBGet"
             }
@@ -37,10 +43,10 @@
                 "name": "Download paused"
             },
             "post_processing_jobs": {
-                "name": "Post processing jobs"
+                "name": "Post-processing jobs"
             },
             "post_processing_paused": {
-                "name": "Post processing paused"
+                "name": "Post-processing paused"
             },
             "queue_size": {
                 "name": "Queue size"
@@ -62,6 +68,11 @@
             "download": {
                 "name": "Download"
             }
+        }
+    },
+    "exceptions": {
+        "invalid_config_entry": {
+            "message": "Config entry not found or not loaded!"
         }
     },
     "services": {

@@ -1,9 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful"
+            "already_configured": "Account is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -15,18 +13,29 @@
             "reauth_confirm": {
                 "data": {
                     "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API key from your Trafikverket open data account"
                 }
             },
             "reconfigure": {
                 "data": {
                     "api_key": "API key",
                     "station": "Station"
+                },
+                "data_description": {
+                    "api_key": "The API key from your Trafikverket open data account",
+                    "station": "The name of the weather station, as shown on the Trafikverket traffic information map"
                 }
             },
             "user": {
                 "data": {
                     "api_key": "API key",
                     "station": "Station"
+                },
+                "data_description": {
+                    "api_key": "The API key from your Trafikverket open data account",
+                    "station": "The name of the weather station, as shown on the Trafikverket traffic information map"
                 }
             }
         }
@@ -73,9 +82,6 @@
             },
             "visible_distance": {
                 "name": "Visible distance"
-            },
-            "wind_direction": {
-                "name": "Wind direction"
             },
             "wind_height": {
                 "name": "Wind measurement height"

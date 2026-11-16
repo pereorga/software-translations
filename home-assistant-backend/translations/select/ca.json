@@ -1,4 +1,16 @@
 {
+    "conditions": {
+        "is_option_selected": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "device_automation": {
         "action_type": {
             "select_first": "Canvia {entity_name} a la primera opci\u00f3",
@@ -32,43 +44,29 @@
         }
     },
     "services": {
-        "select_first": {
-            "description": "Selecciona la primera opci\u00f3.",
-            "name": "Primera"
-        },
-        "select_last": {
-            "description": "Selecciona l'\u00faltima opci\u00f3.",
-            "name": "\u00daltima"
-        },
         "select_next": {
-            "description": "Selecciona la seg\u00fcent opci\u00f3.",
             "fields": {
                 "cycle": {
                     "description": "L'opci\u00f3 circula de l'\u00faltima a la primera.",
                     "name": "Cicle"
                 }
-            },
-            "name": "Seg\u00fcent"
+            }
         },
         "select_option": {
-            "description": "Selecciona una opci\u00f3.",
             "fields": {
                 "option": {
                     "description": "Opci\u00f3 a seleccionar.",
                     "name": "Opci\u00f3"
                 }
-            },
-            "name": "Selecciona"
+            }
         },
         "select_previous": {
-            "description": "Selecciona l'opci\u00f3 anterior.",
             "fields": {
                 "cycle": {
                     "description": "L'opci\u00f3 circula de la primera a l'\u00faltima.",
                     "name": "Cicle"
                 }
-            },
-            "name": "Anterior"
+            }
         }
     },
     "title": "Selector"

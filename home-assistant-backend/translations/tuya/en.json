@@ -1,37 +1,58 @@
 {
     "config": {
-        "abort": {
-            "reauth_successful": "Re-authentication was successful"
-        },
         "error": {
             "invalid_auth": "Invalid authentication",
             "login_error": "Login error ({code}): {msg}"
         },
         "step": {
+            "reauth_confirm": {
+                "description": "Your Smart Life or Tuya Smart account needs to be reauthenticated.\n\nSelect **Submit** to get a QR code to scan with the app.",
+                "title": "Authentication expired for {name}"
+            },
             "reauth_user_code": {
                 "data": {
                     "user_code": "User code"
                 },
-                "description": "The Tuya integration now uses an improved login method. To reauthenticate with your Smart Life or Tuya Smart account, you need to enter your user code.\n\nYou can find this code in the Smart Life app or Tuya Smart app in **Settings** > **Account and Security** screen, and enter the code shown on the **User Code** field. The user code is case sensitive, please be sure to enter it exactly as shown in the app."
+                "description": "The Tuya integration now uses an improved login method. To reauthenticate with your Smart Life or Tuya Smart account, you need to enter your user code.\n\nYou can find this code in the Smart Life app or Tuya Smart app in **Settings** > **Account and Security** screen, and enter the code shown on the **User Code** field. The user code is case-sensitive, please be sure to enter it exactly as shown in the app."
             },
             "scan": {
-                "description": "Use Smart Life app or Tuya Smart app to scan the following QR-code to complete the login.\n\nContinue to the next step once you have completed this step in the app."
+                "data": {
+                    "QR": "QR code"
+                },
+                "description": "Use the Smart Life app or Tuya Smart app to scan the following QR code to complete the login.\n\nContinue to the next step once you have completed this step in the app."
             },
             "user": {
                 "data": {
                     "user_code": "User code"
                 },
-                "description": "Enter your Smart Life or Tuya Smart user code.\n\nYou can find this code in the Smart Life app or Tuya Smart app in **Settings** > **Account and Security** screen, and enter the code shown on the **User Code** field. The user code is case sensitive, please be sure to enter it exactly as shown in the app."
+                "description": "Enter your Smart Life or Tuya Smart user code.\n\nYou can find this code in the Smart Life app or Tuya Smart app in **Settings** > **Account and Security** screen, and enter the code shown on the **User Code** field. The user code is case-sensitive, please be sure to enter it exactly as shown in the app."
             }
+        }
+    },
+    "device": {
+        "channel": {
+            "name": "Channel {index}"
         }
     },
     "entity": {
         "binary_sensor": {
+            "bag_full": {
+                "name": "Bag full"
+            },
             "carbon_dioxide": {
                 "name": "Carbon dioxide"
             },
             "carbon_monoxide": {
                 "name": "Carbon monoxide"
+            },
+            "coil_freeze": {
+                "name": "Coil freeze/defrost"
+            },
+            "cover_off": {
+                "name": "Cover off"
+            },
+            "defrost": {
+                "name": "Defrost"
             },
             "drop": {
                 "name": "Drop"
@@ -39,11 +60,26 @@
             "feeding": {
                 "name": "Feeding"
             },
+            "filter_cleaning": {
+                "name": "Filter cleaning"
+            },
             "formaldehyde": {
                 "name": "Formaldehyde"
             },
+            "high_temp": {
+                "name": "High temperature"
+            },
+            "low_humidity": {
+                "name": "Low humidity"
+            },
+            "low_temp": {
+                "name": "Low temperature"
+            },
             "methane": {
                 "name": "Methane"
+            },
+            "motor_fault": {
+                "name": "Motor fault"
             },
             "pm25": {
                 "name": "PM2.5"
@@ -51,14 +87,32 @@
             "pressure": {
                 "name": "Pressure"
             },
+            "tankfull": {
+                "name": "Tank full"
+            },
+            "temp_error": {
+                "name": "Temperature error"
+            },
             "tilt": {
                 "name": "Tilt"
             },
+            "valve": {
+                "name": "Valve"
+            },
             "voc": {
                 "name": "VOCs"
+            },
+            "wet": {
+                "name": "Wet"
             }
         },
         "button": {
+            "factory_reset": {
+                "name": "Factory reset"
+            },
+            "manual_clean": {
+                "name": "Manual clean"
+            },
             "reset_duster_cloth": {
                 "name": "Reset duster cloth"
             },
@@ -85,51 +139,80 @@
             "curtain": {
                 "name": "Curtain"
             },
-            "curtain_2": {
-                "name": "Curtain 2"
+            "indexed_curtain": {
+                "name": "Curtain {index}"
             },
-            "curtain_3": {
-                "name": "Curtain 3"
+            "indexed_door": {
+                "name": "Door {index}"
+            }
+        },
+        "event": {
+            "doorbell_message": {
+                "name": "Doorbell message"
             },
-            "door": {
-                "name": "Door"
+            "doorbell_picture": {
+                "name": "Doorbell picture"
             },
-            "door_2": {
-                "name": "Door 2"
-            },
-            "door_3": {
-                "name": "Door 3"
+            "numbered_button": {
+                "name": "Button {button_number}",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "click": "Clicked",
+                            "double_click": "Double-clicked",
+                            "press": "Long-pressed"
+                        }
+                    }
+                }
             }
         },
         "light": {
             "backlight": {
                 "name": "Backlight"
             },
+            "indexed_light": {
+                "name": "Light {index}"
+            },
             "light": {
                 "name": "Light"
-            },
-            "light_2": {
-                "name": "Light 2"
-            },
-            "light_3": {
-                "name": "Light 3"
             },
             "night_light": {
                 "name": "Night light"
             }
         },
         "number": {
+            "alarm_delay": {
+                "name": "Alarm delay"
+            },
             "alarm_duration": {
                 "name": "Alarm duration"
+            },
+            "alarm_maximum": {
+                "name": "Alarm maximum"
+            },
+            "alarm_minimum": {
+                "name": "Alarm minimum"
+            },
+            "arm_delay": {
+                "name": "Arm delay"
+            },
+            "battery_backup_reserve": {
+                "name": "Battery backup reserve"
+            },
+            "charging_current": {
+                "name": "Charging current"
             },
             "cloud_recipe": {
                 "name": "Cloud recipe"
             },
             "cook_temperature": {
-                "name": "Cook temperature"
+                "name": "Cooking temperature"
             },
             "cook_time": {
-                "name": "Cook time"
+                "name": "Cooking time"
+            },
+            "delay_clean_time": {
+                "name": "Delay clean time"
             },
             "down_delay": {
                 "name": "Down delay"
@@ -143,23 +226,35 @@
             "heat_preservation_time": {
                 "name": "Heat preservation time"
             },
+            "indexed_cook_temperature": {
+                "name": "Cooking temperature {index}"
+            },
+            "indexed_maximum_brightness": {
+                "name": "Maximum brightness {index}"
+            },
+            "indexed_minimum_brightness": {
+                "name": "Minimum brightness {index}"
+            },
+            "indexed_temperature": {
+                "name": "Temperature {index}"
+            },
+            "installation_height": {
+                "name": "Installation height"
+            },
+            "inverter_output_power_limit": {
+                "name": "Inverter output power limit"
+            },
+            "irrigation_duration": {
+                "name": "Irrigation duration"
+            },
             "maximum_brightness": {
                 "name": "Maximum brightness"
             },
-            "maximum_brightness_2": {
-                "name": "Maximum brightness 2"
-            },
-            "maximum_brightness_3": {
-                "name": "Maximum brightness 3"
+            "maximum_liquid_depth": {
+                "name": "Maximum liquid depth"
             },
             "minimum_brightness": {
                 "name": "Minimum brightness"
-            },
-            "minimum_brightness_2": {
-                "name": "Minimum brightness 2"
-            },
-            "minimum_brightness_3": {
-                "name": "Minimum brightness 3"
             },
             "move_down": {
                 "name": "Move down"
@@ -173,11 +268,23 @@
             "powder": {
                 "name": "Powder"
             },
+            "power_warning_threshold": {
+                "name": "Power warning threshold"
+            },
             "sensitivity": {
                 "name": "Sensitivity"
             },
+            "siren_duration": {
+                "name": "Siren duration"
+            },
+            "speed": {
+                "name": "Speed"
+            },
             "target_dis_closest": {
-                "name": "Clostest target distance"
+                "name": "Closest target distance"
+            },
+            "temp_correction": {
+                "name": "Temperature correction"
             },
             "temperature": {
                 "name": "Temperature"
@@ -187,6 +294,15 @@
             },
             "time": {
                 "name": "Time"
+            },
+            "video_brightness": {
+                "name": "Video brightness"
+            },
+            "video_contrast": {
+                "name": "Video contrast"
+            },
+            "video_sharpness": {
+                "name": "Video sharpness"
             },
             "voice_times": {
                 "name": "Voice times"
@@ -215,8 +331,32 @@
                     "2": "On"
                 }
             },
+            "blanket_level": {
+                "name": "Level",
+                "state": {
+                    "level_1": "Low",
+                    "level_10": "High",
+                    "level_2": "Level 2",
+                    "level_3": "Level 3",
+                    "level_4": "Level 4",
+                    "level_5": "Level 5",
+                    "level_6": "Level 6",
+                    "level_7": "Level 7",
+                    "level_8": "Level 8",
+                    "level_9": "Level 9"
+                }
+            },
             "brightness": {
                 "name": "Brightness"
+            },
+            "charger_work_mode": {
+                "name": "Charging mode",
+                "state": {
+                    "charge_energy": "Charge by energy",
+                    "charge_now": "Charge now",
+                    "charge_pct": "Charge to percentage",
+                    "charge_schedule": "Scheduled"
+                }
             },
             "concentration": {
                 "name": "Concentration"
@@ -255,6 +395,23 @@
                 "state": {
                     "0": "Low sensitivity",
                     "1": "High sensitivity"
+                }
+            },
+            "desk_level": {
+                "name": "Level",
+                "state": {
+                    "level_1": "Level 1",
+                    "level_2": "Level 2",
+                    "level_3": "Level 3",
+                    "level_4": "Level 4"
+                }
+            },
+            "desk_up_down": {
+                "name": "Up/Down",
+                "state": {
+                    "down": "Down",
+                    "stop": "Stop",
+                    "up": "Up"
                 }
             },
             "fingerbot_mode": {
@@ -307,11 +464,51 @@
                     "work": "Work"
                 }
             },
+            "indexed_blanket_level": {
+                "name": "Level {index}",
+                "state": {
+                    "level_1": "Low",
+                    "level_10": "High",
+                    "level_2": "Level 2",
+                    "level_3": "Level 3",
+                    "level_4": "Level 4",
+                    "level_5": "Level 5",
+                    "level_6": "Level 6",
+                    "level_7": "Level 7",
+                    "level_8": "Level 8",
+                    "level_9": "Level 9"
+                }
+            },
+            "indexed_led_type": {
+                "name": "Light {index} source type",
+                "state": {
+                    "halogen": "Halogen",
+                    "incandescent": "Incandescent",
+                    "led": "LED"
+                }
+            },
+            "inverter_work_mode": {
+                "name": "Inverter work mode",
+                "state": {
+                    "manual": "Manual mode",
+                    "self_powered": "Self-powered",
+                    "time_of_use": "Time of use"
+                }
+            },
             "ipc_work_mode": {
                 "name": "IPC mode",
                 "state": {
                     "0": "Low power mode",
                     "1": "Continuous working mode"
+                }
+            },
+            "kettle_work_mode": {
+                "name": "Work mode",
+                "state": {
+                    "boiling_quick": "Quick boil",
+                    "setting_quick": "Quick heat",
+                    "temp_boiling": "Boil and keep warm",
+                    "temp_setting": "Heat and keep warm"
                 }
             },
             "led_type": {
@@ -322,26 +519,11 @@
                     "led": "LED"
                 }
             },
-            "led_type_2": {
-                "name": "Light 2 source type",
-                "state": {
-                    "halogen": "Halogen",
-                    "incandescent": "Incandescent",
-                    "led": "LED"
-                }
-            },
-            "led_type_3": {
-                "name": "Light 3 source type",
-                "state": {
-                    "halogen": "Halogen",
-                    "incandescent": "Incandescent",
-                    "led": "LED"
-                }
-            },
             "light_mode": {
                 "name": "Indicator light mode",
                 "state": {
                     "none": "Off",
+                    "on": "On",
                     "pos": "Indicate inverted switch state",
                     "relay": "Indicate switch on/off state"
                 }
@@ -355,9 +537,29 @@
             "motion_sensitivity": {
                 "name": "Motion detection sensitivity",
                 "state": {
-                    "0": "Low sensitivity",
-                    "1": "Medium sensitivity",
-                    "2": "High sensitivity"
+                    "0": "Low",
+                    "1": "Medium",
+                    "2": "High"
+                }
+            },
+            "odor_elimination_mode": {
+                "name": "Odor elimination mode",
+                "state": {
+                    "interim": "Interim",
+                    "smart": "Smart"
+                }
+            },
+            "pump_mode": {
+                "name": "Mode"
+            },
+            "quick_heat_temperature": {
+                "name": "Quick heat temperature",
+                "state": {
+                    "100": "100 \u00b0C",
+                    "80": "80 \u00b0C",
+                    "85": "85 \u00b0C",
+                    "90": "90 \u00b0C",
+                    "95": "95 \u00b0C"
                 }
             },
             "record_mode": {
@@ -368,14 +570,23 @@
                 }
             },
             "relay_status": {
-                "name": "Power on behavior",
+                "name": "Power-on behavior",
                 "state": {
-                    "last": "Remember last state",
-                    "memory": "Remember last state",
+                    "last": "Previous state",
+                    "memory": "Previous state",
                     "off": "Off",
                     "on": "On",
                     "power_off": "Off",
                     "power_on": "On"
+                }
+            },
+            "siren_mode": {
+                "name": "Siren mode",
+                "state": {
+                    "alarm_light": "Light",
+                    "alarm_sound": "Sound",
+                    "alarm_sound_light": "Sound & light",
+                    "normal": "Normal"
                 }
             },
             "target_humidity": {
@@ -451,6 +662,9 @@
             }
         },
         "sensor": {
+            "air_pressure": {
+                "name": "Air pressure"
+            },
             "air_quality": {
                 "name": "Air quality",
                 "state": {
@@ -474,6 +688,12 @@
             "battery": {
                 "name": "Battery"
             },
+            "battery_power": {
+                "name": "Battery power"
+            },
+            "battery_soc": {
+                "name": "Battery SOC"
+            },
             "battery_state": {
                 "name": "Battery state"
             },
@@ -483,14 +703,50 @@
             "carbon_monoxide": {
                 "name": "Carbon monoxide"
             },
+            "cat_litter_box_status": {
+                "name": "Status",
+                "state": {
+                    "clean": "Cleaning",
+                    "empty": "Emptying",
+                    "level": "Leveling",
+                    "sleep": "Sleeping",
+                    "standby": "Standby",
+                    "uv": "Sanitizing"
+                }
+            },
+            "cat_weight": {
+                "name": "Cat weight"
+            },
+            "charger_status": {
+                "name": "Status",
+                "state": {
+                    "charger_charging": "Charging",
+                    "charger_end": "Finished",
+                    "charger_fault": "Fault",
+                    "charger_free": "Idle",
+                    "charger_free_fault": "Fault while idle",
+                    "charger_insert": "Plugged in",
+                    "charger_pause": "Paused",
+                    "charger_wait": "Waiting"
+                }
+            },
             "cleaning_area": {
                 "name": "Cleaning area"
             },
             "cleaning_time": {
                 "name": "Cleaning time"
             },
+            "coil_temperature": {
+                "name": "Coil temperature"
+            },
+            "compressor_strength": {
+                "name": "Compressor strength"
+            },
             "concentration_carbon_dioxide": {
                 "name": "Concentration of carbon dioxide"
+            },
+            "countdown_end": {
+                "name": "Countdown end"
             },
             "current": {
                 "name": "Current"
@@ -498,8 +754,29 @@
             "current_temperature": {
                 "name": "Current temperature"
             },
+            "depth": {
+                "name": "Depth"
+            },
+            "dew_point_temperature": {
+                "name": "Dew point"
+            },
             "duster_cloth_life": {
                 "name": "Duster cloth lifetime"
+            },
+            "energy_today": {
+                "name": "Energy today"
+            },
+            "excretion_time_day": {
+                "name": "Excretion duration"
+            },
+            "excretion_times_day": {
+                "name": "Excretion times (day)"
+            },
+            "feels_like_temperature": {
+                "name": "Feels like"
+            },
+            "filter_duration": {
+                "name": "Filter duration"
             },
             "filter_life": {
                 "name": "Filter lifetime"
@@ -507,17 +784,46 @@
             "filter_utilization": {
                 "name": "Filter utilization"
             },
+            "flow_temperature": {
+                "name": "Flow temperature"
+            },
             "formaldehyde": {
                 "name": "Formaldehyde"
             },
             "gas": {
                 "name": "Gas"
             },
+            "heat_exchanger_temperature": {
+                "name": "Heat exchanger temperature"
+            },
+            "heat_index_temperature": {
+                "name": "Heat index"
+            },
             "humidity": {
                 "name": "Humidity"
             },
+            "humidity_outdoor": {
+                "name": "Outdoor humidity"
+            },
             "illuminance": {
                 "name": "Illuminance"
+            },
+            "indexed_humidity_outdoor": {
+                "name": "Outdoor humidity channel {index}"
+            },
+            "indexed_temperature_external": {
+                "name": "Probe temperature channel {index}"
+            },
+            "inverter_output_power": {
+                "name": "Inverter output power"
+            },
+            "irrigation_status": {
+                "name": "Status",
+                "state": {
+                    "auto": "Auto",
+                    "idle": "Idle",
+                    "manual": "Manual"
+                }
             },
             "last_amount": {
                 "name": "Last amount"
@@ -525,11 +831,71 @@
             "last_operation_duration": {
                 "name": "Last operation duration"
             },
+            "last_watering_time": {
+                "name": "Last watering time"
+            },
+            "lifetime_battery_charge_energy": {
+                "name": "Lifetime battery charge energy"
+            },
+            "lifetime_battery_discharge_energy": {
+                "name": "Lifetime battery discharge energy"
+            },
+            "lifetime_inverter_output_energy": {
+                "name": "Lifetime inverter output energy"
+            },
+            "lifetime_offgrid_port_energy": {
+                "name": "Lifetime off-grid port energy"
+            },
+            "lifetime_pv_energy": {
+                "name": "Lifetime PV energy"
+            },
+            "liquid_depth": {
+                "name": "Liquid depth"
+            },
+            "liquid_level": {
+                "name": "Liquid level"
+            },
+            "liquid_state": {
+                "name": "Liquid state",
+                "state": {
+                    "lower_alarm": "Low",
+                    "normal": "Normal",
+                    "upper_alarm": "High"
+                }
+            },
             "luminosity": {
                 "name": "Luminosity"
             },
+            "meter_status": {
+                "name": "Status",
+                "state": {
+                    "close": "Closed",
+                    "idle": "Idle",
+                    "monitor": "Monitoring",
+                    "warning": "Warning",
+                    "working": "Working"
+                }
+            },
             "methane": {
                 "name": "Methane"
+            },
+            "odor_elimination_status": {
+                "name": "Status",
+                "state": {
+                    "charge_done": "Charge done",
+                    "charging": "Charging",
+                    "standby": "Standby",
+                    "work": "Working"
+                }
+            },
+            "outside_temperature": {
+                "name": "Outside temperature"
+            },
+            "oxydo_reduction_potential": {
+                "name": "Oxydo reduction potential"
+            },
+            "phase_a_apparent_power": {
+                "name": "Phase A apparent power"
             },
             "phase_a_current": {
                 "name": "Phase A current"
@@ -537,8 +903,17 @@
             "phase_a_power": {
                 "name": "Phase A power"
             },
+            "phase_a_power_factor": {
+                "name": "Phase A power factor"
+            },
+            "phase_a_reactive_power": {
+                "name": "Phase A reactive power"
+            },
             "phase_a_voltage": {
                 "name": "Phase A voltage"
+            },
+            "phase_b_apparent_power": {
+                "name": "Phase B apparent power"
             },
             "phase_b_current": {
                 "name": "Phase B current"
@@ -546,14 +921,29 @@
             "phase_b_power": {
                 "name": "Phase B power"
             },
+            "phase_b_power_factor": {
+                "name": "Phase B power factor"
+            },
+            "phase_b_reactive_power": {
+                "name": "Phase B reactive power"
+            },
             "phase_b_voltage": {
                 "name": "Phase B voltage"
+            },
+            "phase_c_apparent_power": {
+                "name": "Phase C apparent power"
             },
             "phase_c_current": {
                 "name": "Phase C current"
             },
             "phase_c_power": {
                 "name": "Phase C power"
+            },
+            "phase_c_power_factor": {
+                "name": "Phase C power factor"
+            },
+            "phase_c_reactive_power": {
+                "name": "Phase C reactive power"
             },
             "phase_c_voltage": {
                 "name": "Phase C voltage"
@@ -570,11 +960,29 @@
             "power": {
                 "name": "Power"
             },
+            "precipitation_intensity": {
+                "name": "Precipitation intensity"
+            },
+            "precipitation_today": {
+                "name": "Total precipitation today"
+            },
+            "pump_speed": {
+                "name": "Speed"
+            },
+            "pump_time": {
+                "name": "Water pump duration"
+            },
+            "pv_channel_power": {
+                "name": "PV channel {index} power"
+            },
             "remaining_time": {
                 "name": "Remaining time"
             },
             "rolling_brush_life": {
                 "name": "Rolling brush lifetime"
+            },
+            "session_energy": {
+                "name": "Session energy"
             },
             "side_brush_life": {
                 "name": "Side brush lifetime"
@@ -599,8 +1007,14 @@
             "status": {
                 "name": "Status"
             },
+            "supply_frequency": {
+                "name": "Supply frequency"
+            },
             "temperature": {
                 "name": "Temperature"
+            },
+            "temperature_external": {
+                "name": "Probe temperature"
             },
             "total_absorption_particles": {
                 "name": "Total absorption of particles"
@@ -614,14 +1028,23 @@
             "total_cleaning_times": {
                 "name": "Total cleaning times"
             },
+            "total_dissolved_solids": {
+                "name": "Total dissolved solids"
+            },
             "total_energy": {
                 "name": "Total energy"
             },
             "total_operating_time": {
                 "name": "Total operating time"
             },
+            "total_power": {
+                "name": "Total power"
+            },
             "total_production": {
                 "name": "Total production"
+            },
+            "total_pv_power": {
+                "name": "Total PV power"
             },
             "total_volatile_organic_compound": {
                 "name": "Total volatile organic compound"
@@ -629,31 +1052,65 @@
             "total_watering_time": {
                 "name": "Total watering time"
             },
+            "uv_index": {
+                "name": "UV index"
+            },
+            "uv_runtime": {
+                "name": "UV runtime"
+            },
             "voc": {
-                "name": "VOCs"
+                "name": "Volatile organic compounds"
             },
             "voltage": {
                 "name": "Voltage"
             },
             "water_level": {
                 "name": "Water level"
+            },
+            "water_level_state": {
+                "name": "Water level",
+                "state": {
+                    "level_1": "Low",
+                    "level_2": "Medium",
+                    "level_3": "Full"
+                }
+            },
+            "water_once": {
+                "name": "Session water usage"
+            },
+            "water_time": {
+                "name": "Water usage duration"
+            },
+            "water_total": {
+                "name": "Total water usage"
+            },
+            "wind_chill_index_temperature": {
+                "name": "Wind chill index"
+            },
+            "wind_direction": {
+                "name": "Wind direction"
+            }
+        },
+        "siren": {
+            "siren": {
+                "name": "Siren"
             }
         },
         "switch": {
-            "alarm_1": {
-                "name": "Alarm 1"
-            },
-            "alarm_2": {
-                "name": "Alarm 2"
-            },
-            "alarm_3": {
-                "name": "Alarm 3"
-            },
-            "alarm_4": {
-                "name": "Alarm 4"
+            "alarm_push_notifications": {
+                "name": "Alarm push notifications"
             },
             "anion": {
                 "name": "Anion"
+            },
+            "arm_beep": {
+                "name": "Arm beep"
+            },
+            "auto_clean": {
+                "name": "Auto clean"
+            },
+            "auto_siren": {
+                "name": "Auto-trigger siren"
             },
             "battery_lock": {
                 "name": "Battery lock"
@@ -682,23 +1139,44 @@
             "flip": {
                 "name": "Flip"
             },
+            "frost_protection": {
+                "name": "Frost protection"
+            },
             "heat_preservation": {
                 "name": "Heat preservation"
             },
             "humidification": {
                 "name": "Humidification"
             },
+            "indexed_alarm": {
+                "name": "Alarm {index}"
+            },
+            "indexed_switch": {
+                "name": "Switch {index}"
+            },
+            "indexed_usb": {
+                "name": "USB {index}"
+            },
             "ionizer": {
                 "name": "Ionizer"
             },
+            "keypad_sound": {
+                "name": "Keypad sound"
+            },
             "motion_alarm": {
                 "name": "Motion alarm"
+            },
+            "motion_detection_zone": {
+                "name": "Use motion detection zone"
             },
             "motion_recording": {
                 "name": "Motion recording"
             },
             "motion_tracking": {
                 "name": "Motion tracking"
+            },
+            "music": {
+                "name": "Music"
             },
             "mute": {
                 "name": "Mute"
@@ -711,6 +1189,9 @@
             },
             "open_window_detection": {
                 "name": "Open window detection"
+            },
+            "output_power_limit": {
+                "name": "Output power limit"
             },
             "oxygen_bar": {
                 "name": "Oxygen bar"
@@ -736,6 +1217,9 @@
             "reverse": {
                 "name": "Reverse"
             },
+            "siren": {
+                "name": "Siren"
+            },
             "sleep": {
                 "name": "Sleep"
             },
@@ -745,26 +1229,11 @@
             "slow_feed": {
                 "name": "Slow feed"
             },
+            "snooze": {
+                "name": "Snooze"
+            },
             "socket": {
                 "name": "Socket"
-            },
-            "socket_1": {
-                "name": "Socket 1"
-            },
-            "socket_2": {
-                "name": "Socket 2"
-            },
-            "socket_3": {
-                "name": "Socket 3"
-            },
-            "socket_4": {
-                "name": "Socket 4"
-            },
-            "socket_5": {
-                "name": "Socket 5"
-            },
-            "socket_6": {
-                "name": "Socket 6"
             },
             "sound": {
                 "name": "Sound"
@@ -784,50 +1253,8 @@
             "switch": {
                 "name": "Switch"
             },
-            "switch_1": {
-                "name": "Switch 1"
-            },
-            "switch_2": {
-                "name": "Switch 2"
-            },
-            "switch_3": {
-                "name": "Switch 3"
-            },
-            "switch_4": {
-                "name": "Switch 4"
-            },
-            "switch_5": {
-                "name": "Switch 5"
-            },
-            "switch_6": {
-                "name": "Switch 6"
-            },
-            "switch_7": {
-                "name": "Switch 7"
-            },
-            "switch_8": {
-                "name": "Switch 8"
-            },
             "time_watermark": {
                 "name": "Time watermark"
-            },
-            "usb_1": {
-                "name": "USB 1"
-            },
-            "usb_2": {
-                "name": "USB 2"
-            },
-            "usb_3": {
-                "name": "USB 3"
-            },
-            "usb_4": {
-                "name": "USB 4"
-            },
-            "usb_5": {
-                "name": "USB 5"
-            },
-            "usb_6": {
-                "name": "USB 6"
             },
             "uv_sterilization": {
                 "name": "UV sterilization"
@@ -847,6 +1274,102 @@
             "wide_dynamic_range": {
                 "name": "Wide dynamic range"
             }
+        },
+        "valve": {
+            "valve": {
+                "name": "Valve"
+            }
+        }
+    },
+    "exceptions": {
+        "action_dpcode_not_found": {
+            "message": "Unable to process action as the device does not provide a corresponding function code (expected one of {expected} in {available})."
+        },
+        "command_rejected": {
+            "message": "The Tuya cloud rejected the command."
+        },
+        "device_not_found": {
+            "message": "Feeder with ID {device_id} could not be found."
+        },
+        "device_not_support_meal_plan_function": {
+            "message": "Feeder with ID {device_id} does not support meal plan functionality."
+        },
+        "device_not_support_meal_plan_status": {
+            "message": "Feeder with ID {device_id} does not support meal plan status."
+        },
+        "device_not_tuya_device": {
+            "message": "Device with ID {device_id} is not a Tuya feeder."
+        },
+        "invalid_meal_plan_data": {
+            "message": "Unable to parse meal plan data."
+        },
+        "send_command_failed": {
+            "message": "Failed to send the command to the Tuya cloud."
+        }
+    },
+    "issues": {
+        "deprecated_entity_new_valve": {
+            "description": "The Tuya entity `{entity}` is deprecated, replaced by a new valve entity.\nPlease update your dashboards, automations and scripts, disable `{entity}` and reload the integration/restart Home Assistant to fix this issue.",
+            "title": "{name} is deprecated"
+        }
+    },
+    "selector": {
+        "days_of_week": {
+            "options": {
+                "friday": "Friday",
+                "monday": "Monday",
+                "saturday": "Saturday",
+                "sunday": "Sunday",
+                "thursday": "Thursday",
+                "tuesday": "Tuesday",
+                "wednesday": "Wednesday"
+            }
+        },
+        "set_feeder_meal_plan": {
+            "fields": {
+                "days": {
+                    "description": "Days of the week for the meal plan.",
+                    "name": "Days"
+                },
+                "enabled": {
+                    "description": "Whether the meal plan is enabled.",
+                    "name": "Enabled"
+                },
+                "portion": {
+                    "description": "Amount in grams",
+                    "name": "Portion"
+                },
+                "time": {
+                    "description": "Time of the meal.",
+                    "name": "Time"
+                }
+            }
+        }
+    },
+    "services": {
+        "get_feeder_meal_plan": {
+            "description": "Retrieves a meal plan from a Tuya feeder.",
+            "fields": {
+                "device_id": {
+                    "description": "The Tuya feeder.",
+                    "name": "Device"
+                }
+            },
+            "name": "Get feeder meal plan data"
+        },
+        "set_feeder_meal_plan": {
+            "description": "Sets a meal plan on a Tuya feeder.",
+            "fields": {
+                "device_id": {
+                    "description": "The Tuya feeder.",
+                    "name": "Device"
+                },
+                "meal_plan": {
+                    "description": "The meal plan data to set.",
+                    "name": "Meal plan"
+                }
+            },
+            "name": "Set feeder meal plan data"
         }
     }
 }

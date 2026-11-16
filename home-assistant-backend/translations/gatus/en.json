@@ -1,0 +1,95 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "token": "API key",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Optional password for HTTP Basic Authentication.",
+                    "token": "Optional API token / Bearer token for authentication.",
+                    "username": "Optional username for HTTP Basic Authentication."
+                },
+                "description": "Please re-enter your credentials for Gatus."
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "token": "API key",
+                    "url": "URL",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Optional password for HTTP Basic Authentication.",
+                    "token": "Optional API token / Bearer token for authentication.",
+                    "url": "The full base URL of your Gatus status page instance including protocol and port.",
+                    "username": "Optional username for HTTP Basic Authentication."
+                },
+                "description": "Enter the network details for your Gatus status page instance. Make sure to include the protocol (e.g., `http://` or `https://`) and the port number if you are not using a standard port."
+            },
+            "user": {
+                "data": {
+                    "password": "Password",
+                    "token": "API key",
+                    "url": "URL",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Optional password for HTTP Basic Authentication.",
+                    "token": "Optional API token / Bearer token for authentication.",
+                    "url": "The full base URL of your Gatus status page instance including protocol and port.",
+                    "username": "Optional username for HTTP Basic Authentication."
+                },
+                "description": "Enter the network details for your Gatus status page instance. Make sure to include the protocol (e.g., `http://` or `https://`) and the port number if you are not using a standard port."
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "certificate_expiration": {
+                "name": "Certificate expiration"
+            },
+            "dns_rcode": {
+                "name": "DNS response code",
+                "state": {
+                    "format_error": "Format error",
+                    "no_error": "No error",
+                    "non_existent_domain": "Non-existent domain",
+                    "not_implemented": "Not implemented",
+                    "refused": "Refused",
+                    "server_failure": "Server failure"
+                }
+            },
+            "last_event": {
+                "name": "Last event",
+                "state": {
+                    "healthy": "Healthy",
+                    "resolved": "Resolved",
+                    "start": "Started",
+                    "unhealthy": "Unhealthy"
+                }
+            },
+            "response_time": {
+                "name": "Response time"
+            },
+            "status_code": {
+                "name": "Status code"
+            }
+        }
+    },
+    "exceptions": {
+        "update_failed": {
+            "message": "Error communicating with Gatus API"
+        }
+    }
+}

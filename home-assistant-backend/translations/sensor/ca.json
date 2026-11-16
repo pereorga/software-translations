@@ -41,7 +41,7 @@
             "is_value": "Valor actual de {entity_name}",
             "is_volatile_organic_compounds": "Concentraci\u00f3 actual de compostos org\u00e0nics vol\u00e0tils de {entity_name}",
             "is_volatile_organic_compounds_parts": "Concentraci\u00f3 actual de compostos org\u00e0nics vol\u00e0tils de {entity_name}",
-            "is_voltage": "Voltatge actual de {entity_name}",
+            "is_voltage": "Tensi\u00f3 actual de {entity_name}",
             "is_volume": "Volum actual de {entity_name}",
             "is_water": "Aigua actual de {entity_name}",
             "is_weight": "Pes actual de {entity_name}",
@@ -93,7 +93,7 @@
             "value": "Canvia el valor de {entity_name}",
             "volatile_organic_compounds": "Canvia la concentraci\u00f3 de compostos org\u00e0nics vol\u00e0tils de {entity_name}",
             "volatile_organic_compounds_parts": "Canvia la concentraci\u00f3 de compostos org\u00e0nics vol\u00e0tils de {entity_name}",
-            "voltage": "Canvia el voltatge de {entity_name}",
+            "voltage": "La tensi\u00f3 de {entity_name} canvia",
             "volume": "Canvia el volum de {entity_name}",
             "water": "Canvia l'aigua de {entity_name}",
             "weight": "Canvia el pes de {entity_name}",
@@ -193,9 +193,6 @@
         "moisture": {
             "name": "Humitat"
         },
-        "monetary": {
-            "name": "Balan\u00e7"
-        },
         "nitrogen_dioxide": {
             "name": "Di\u00f2xid de nitrogen"
         },
@@ -256,14 +253,8 @@
         "timestamp": {
             "name": "Marca de temps"
         },
-        "volatile_organic_compounds": {
-            "name": "COVs"
-        },
-        "volatile_organic_compounds_parts": {
-            "name": "COVs"
-        },
         "voltage": {
-            "name": "Voltatge"
+            "name": "Tensi\u00f3"
         },
         "volume": {
             "name": "Volum"
@@ -286,11 +277,9 @@
     },
     "issues": {
         "state_class_removed": {
-            "description": "Buit",
             "title": "{statistic_id} ja no t\u00e9 classe d'estat"
         },
         "units_changed": {
-            "description": "Buit",
             "title": "La unitat de {statistic_id} ha canviat"
         }
     },

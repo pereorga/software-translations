@@ -1,0 +1,50 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "filt_mode": {
+                "state": {
+                    "manual": "Manual"
+                }
+            },
+            "filtration_speed": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "off": "OFF"
+                }
+            },
+            "hidro_polarity": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "ion_polarity": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "ph_pump_status": {
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF"
+                }
+            }
+        }
+    }
+}

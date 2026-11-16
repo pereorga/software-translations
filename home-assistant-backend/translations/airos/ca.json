@@ -1,0 +1,80 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "no_devices_found": "No s'han trobat dispositius a la xarxa",
+            "unique_id_mismatch": "S'ha d'utilitzar la reautenticaci\u00f3 per al mateix dispositiu, no per a un de nou"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "configure_device": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "sections": {
+                    "additional_settings": {
+                        "data": {
+                            "verify_ssl": "Verifica el certificat SSL"
+                        }
+                    }
+                }
+            },
+            "manual": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "sections": {
+                    "additional_settings": {
+                        "data": {
+                            "verify_ssl": "Verifica el certificat SSL"
+                        }
+                    }
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya"
+                },
+                "sections": {
+                    "additional_settings": {
+                        "data": {
+                            "verify_ssl": "Verifica el certificat SSL"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "host_netrole": {
+                "state": {
+                    "router": "Encaminador"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Ha fallat la connexi\u00f3"
+        },
+        "invalid_auth": {
+            "message": "Autenticaci\u00f3 inv\u00e0lida"
+        },
+        "unknown": {
+            "message": "Error inesperat"
+        }
+    }
+}

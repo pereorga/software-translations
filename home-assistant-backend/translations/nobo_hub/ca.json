@@ -17,6 +17,11 @@
                 },
                 "description": "Configura un Nob\u00f8 Ecohub que no ha estat descobert a la teva xarxa local. Si el teu concentrador es troba en una altra xarxa, pots connectar-lo introduint el n\u00famero de s\u00e8rie complet (12 d\u00edgits) i la seva adre\u00e7a IP."
             },
+            "reconfigure": {
+                "data": {
+                    "ip_address": "Adre\u00e7a IP"
+                }
+            },
             "selected": {
                 "data": {
                     "serial_suffix": "Sufix del n\u00famero de s\u00e8rie (3 d\u00edgits)"
@@ -35,7 +40,7 @@
         "select": {
             "global_override": {
                 "state": {
-                    "away": "A fora",
+                    "away": "Fora",
                     "comfort": "Confort",
                     "eco": "Econ\u00f2mic",
                     "none": "Cap"
@@ -48,8 +53,7 @@
             "init": {
                 "data": {
                     "override_type": "Tipus de substituci\u00f3"
-                },
-                "description": "Selecciona substitueix el tipus \"Ara\" (\"Now\") per finalitzar la substituci\u00f3 del canvi de perfil de la setmana vinent."
+                }
             }
         }
     }

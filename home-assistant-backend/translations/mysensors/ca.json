@@ -42,7 +42,6 @@
         "step": {
             "gw_mqtt": {
                 "data": {
-                    "persistence_file": "Fitxer de persist\u00e8ncia (deixa-ho buit per generar-lo autom\u00e0ticament)",
                     "retain": "Retenci\u00f3 MQTT",
                     "topic_in_prefix": "Prefix per als t\u00f2pics d'entrada (topic_in_prefix)",
                     "topic_out_prefix": "Prefix per als t\u00f2pics de sortida (topic_out_prefix)",
@@ -52,9 +51,7 @@
             },
             "gw_serial": {
                 "data": {
-                    "baud_rate": "Velocitat, en baudis",
                     "device": "Port s\u00e8rie",
-                    "persistence_file": "Fitxer de persist\u00e8ncia (deixa-ho buit per generar-lo autom\u00e0ticament)",
                     "version": "Versi\u00f3 de MySensors"
                 },
                 "description": "Configuraci\u00f3 de passarel\u00b7la s\u00e8rie"
@@ -62,7 +59,6 @@
             "gw_tcp": {
                 "data": {
                     "device": "Adre\u00e7a IP de la passarel\u00b7la",
-                    "persistence_file": "fitxer de persist\u00e8ncia (deixa-ho buit per generar-lo autom\u00e0ticament)",
                     "tcp_port": "Port",
                     "version": "Versi\u00f3 de MySensors"
                 },

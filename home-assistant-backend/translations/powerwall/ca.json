@@ -2,8 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "error": {
             "cannot_connect": "S'ha produ\u00eft un error en intentar connectar el Powerwall: {error}",
@@ -21,7 +20,6 @@
                 "data": {
                     "password": "Contrasenya"
                 },
-                "description": "La contrasenya per defecte est\u00e0 impresa dins la passarel\u00b7la (backup gateway) als models nous. Pels models m\u00e9s vells, la contrasenya normalment s\u00f3n els darrers cinc car\u00e0cters del n\u00famero de s\u00e8rie de la passarel\u00b7la (backup gateway) i es pot trobar a l'aplicaci\u00f3 de Tesla.",
                 "title": "Re-autenticaci\u00f3 del Powerwall"
             },
             "user": {
@@ -71,7 +69,7 @@
                 "name": "Pot\u00e8ncia de bateria"
             },
             "battery_instant_voltage": {
-                "name": "Tensi\u00f3 de bateria"
+                "name": "Tensi\u00f3 de la bateria"
             },
             "battery_remaining": {
                 "name": "Bateria restant"
@@ -135,6 +133,9 @@
             },
             "load_instant_voltage": {
                 "name": "Tensi\u00f3 de c\u00e0rrega"
+            },
+            "operation_mode": {
+                "name": "Mode d'operaci\u00f3"
             },
             "site_export": {
                 "name": "Exportaci\u00f3 del lloc"

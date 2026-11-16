@@ -1,0 +1,44 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "unique_id_mismatch": "The API key belongs to a different organization than the one configured."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "no_devices": "Authentication succeeded, but no controllers are available for this API key",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API key that gives access to the controllers of your organization."
+                },
+                "description": "The HortOS API rejected the API key. Enter a new API key for the same organization.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API key that gives access to the controllers of your organization."
+                },
+                "description": "Enter the API key for the Ridder HortOS Automation API. You can request one from your Ridder account manager.",
+                "title": "Connect to Ridder HortOS"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Error talking to the HortOS API: {error}"
+        },
+        "invalid_auth": {
+            "message": "The HortOS API rejected the API key"
+        }
+    }
+}

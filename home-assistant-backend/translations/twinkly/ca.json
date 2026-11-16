@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3"
@@ -16,6 +17,15 @@
                 },
                 "data_description": {
                     "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP del dispositiu Twinkly."
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "mode": {
+                "state": {
+                    "off": "OFF"
                 }
             }
         }

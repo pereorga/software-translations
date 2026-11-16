@@ -1,0 +1,38 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "port": "Port",
+                    "ssl": "Uses an SSL certificate",
+                    "username": "Username",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Netio device.",
+                    "password": "The password of the device account.",
+                    "port": "The port of the JSON API web server on the device.",
+                    "ssl": "Connect to the device using HTTPS.",
+                    "username": "The username of a device account with read-write access to the JSON API.",
+                    "verify_ssl": "Verify the SSL certificate of the device when using HTTPS."
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml": {
+            "description": "Configuring the Netio switch platform using YAML is being removed. The integration now connects to your device using the JSON API, which requires a new setup.\n\nTo set up your device:\n\n1. Open the web interface of your Netio device and enable the **JSON API** protocol (**Settings** > **M2M API Protocols** > **JSON API**), creating an account with read-write access.\n2. [Add the Netio integration]({url}) and enter the connection details, using the JSON API account credentials.\n3. Remove the `netio` switch platform configuration from your `configuration.yaml` file and restart Home Assistant.\n\nAfterwards, your device outputs are available as switch entities again.",
+            "title": "The Netio YAML configuration is being removed"
+        }
+    }
+}

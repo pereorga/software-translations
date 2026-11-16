@@ -5,16 +5,21 @@
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "Token d'API"
+                }
+            },
             "user": {
                 "data": {
+                    "api_token": "Token d'API",
                     "host": "Amfitri\u00f3",
-                    "password": "Contrasenya",
                     "port": "Port",
                     "ssl": "Utilitza un certificat SSL",
-                    "username": "Nom d'usuari",
                     "verify_ssl": "Verifica el certificat SSL"
                 }
             }
@@ -23,9 +28,8 @@
     "entity": {
         "binary_sensor": {
             "motion": {
-                "name": "Moviment",
                 "state": {
-                    "off": "Aturat",
+                    "off": "Parat",
                     "on": "En moviment"
                 }
             },
@@ -43,6 +47,9 @@
             },
             "altitude": {
                 "name": "Altitud"
+            },
+            "battery": {
+                "name": "Tensi\u00f3 de la bateria"
             }
         }
     }

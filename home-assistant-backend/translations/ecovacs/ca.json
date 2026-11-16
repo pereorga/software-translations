@@ -18,6 +18,11 @@
                     "username": "Nom d'usuari"
                 }
             },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
             "user": {
                 "data": {
                     "mode": "Mode"
@@ -58,7 +63,11 @@
         },
         "select": {
             "water_amount": {
-                "name": "Nivell del cabal d'aigua"
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
             }
         },
         "sensor": {

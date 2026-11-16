@@ -1,0 +1,37 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API key found in the profile page of the Fluss+ app."
+                },
+                "description": "The Fluss+ API key is no longer valid. Get your API key from the profile page of the Fluss+ app, or generate a new one, and enter it below."
+            },
+            "user": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API key found in the profile page of the Fluss+ app."
+                },
+                "description": "Your Fluss API key, available in the profile page of the Fluss+ app"
+            }
+        }
+    },
+    "exceptions": {
+        "command_failed": {
+            "message": "Failed to send command to Fluss+ device"
+        }
+    }
+}

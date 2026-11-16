@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Account is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -26,6 +25,17 @@
     },
     "entity": {
         "select": {
+            "core_temps": {
+                "state": {
+                    "cooling_high": "Cooling high",
+                    "cooling_low": "Cooling low",
+                    "cooling_medium": "Cooling medium",
+                    "heating_high": "Heating high",
+                    "heating_low": "Heating low",
+                    "heating_medium": "Heating medium",
+                    "off": "Off"
+                }
+            },
             "foot_warmer_temp": {
                 "state": {
                     "high": "High",

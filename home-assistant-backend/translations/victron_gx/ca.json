@@ -1,0 +1,780 @@
+{
+    "common": {
+        "battery_voltage_too_high": "Tensi\u00f3 de bateria massa alta",
+        "consumption": "Consum",
+        "dc_output_current": "Intensitat de sortida CC",
+        "dc_output_power": "Pot\u00e8ncia de sortida CC",
+        "dc_output_voltage": "Tensi\u00f3 de sortida CC",
+        "dc_temperature": "Temperatura CC",
+        "equalize": "Equalitzaci\u00f3",
+        "error_code": "Codi d'error",
+        "ess_mode": "Mode ESS",
+        "external_control": "Control extern",
+        "frequency": "Freq\u00fc\u00e8ncia",
+        "generator": "Generador",
+        "grid": "Xarxa",
+        "input_current": "Intensitat d'entrada",
+        "input_power": "Pot\u00e8ncia d'entrada",
+        "input_shutdown_battery_voltage_too_high": "Aturada d'entrada (tensi\u00f3 de bateria massa alta)",
+        "input_voltage": "Tensi\u00f3 d'entrada",
+        "max_power_yesterday": "Pot\u00e8ncia m\u00e0xima ahir",
+        "mppt_active": "MPPT actiu",
+        "network_misconfigured": "Xarxa mal configurada",
+        "no_alarm": "Cap alarma",
+        "no_error": "Cap error",
+        "not_available": "No disponible",
+        "not_connected": "No connectat",
+        "ok": "Ok",
+        "output_apparent_power_phase": "Pot\u00e8ncia aparent de sortida a {phase}",
+        "output_current_phase": "Intensitat de sortida a {phase}",
+        "output_power_phase": "Pot\u00e8ncia de sortida a {phase}",
+        "output_voltage_phase": "Tensi\u00f3 de sortida a {phase}",
+        "overload_alarm": "Alarma de sobrec\u00e0rrega",
+        "power": "Pot\u00e8ncia",
+        "power_assist": "Power Assist",
+        "pv_current": "Intensitat fotovoltaica",
+        "sensor_battery_voltage": "Tensi\u00f3 del sensor de bateria",
+        "voltage": "Tensi\u00f3"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "ssl": "Utilitza un certificat SSL",
+                    "username": "Nom d'usuari"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "port": "Port",
+                    "ssl": "Utilitza un certificat SSL",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "ssdp_auth": {
+                "data": {
+                    "password": "Contrasenya GX",
+                    "ssl": "Utilitza un certificat SSL"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "port": "Port",
+                    "ssl": "Utilitza un certificat SSL",
+                    "username": "Nom d'usuari"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "evcharger_connected": {
+                "name": "Connectat"
+            },
+            "gps_connected": {
+                "name": "Connectat"
+            },
+            "inverter_alarm_overload": {
+                "name": "Alarma de sobrec\u00e0rrega"
+            },
+            "vebus_inverter_connected": {
+                "name": "Connectat"
+            }
+        },
+        "device_tracker": {
+            "ev_gps_location": {
+                "name": "Ubicaci\u00f3"
+            },
+            "gps_location": {
+                "name": "Ubicaci\u00f3"
+            }
+        },
+        "select": {
+            "acsystem_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "battery_bms_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON",
+                    "standby": "En espera"
+                }
+            },
+            "evcharger_mode": {
+                "name": "Mode",
+                "state": {
+                    "auto": "Auto",
+                    "manual": "Manual"
+                }
+            },
+            "inverter_mode": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "system_ac_input_1_type": {
+                "state": {
+                    "generator": "Generador",
+                    "grid": "Xarxa"
+                }
+            },
+            "system_ac_input_2_type": {
+                "state": {
+                    "generator": "Generador",
+                    "grid": "Xarxa"
+                }
+            },
+            "system_ess_batterylife_state": {
+                "name": "Mode ESS",
+                "state": {
+                    "external_control": "Control extern"
+                }
+            },
+            "system_ess_mode": {
+                "state": {
+                    "external_control": "Control extern"
+                }
+            },
+            "system_ess_schedule_charge_slot_days": {
+                "state": {
+                    "friday": "Divendres",
+                    "monday": "Dilluns",
+                    "saturday": "Dissabte",
+                    "sunday": "Diumenge",
+                    "thursday": "Dijous",
+                    "tuesday": "Dimarts",
+                    "wednesday": "Dimecres"
+                }
+            },
+            "system_settings_dess_mode": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "system_vrm_portal_mode": {
+                "state": {
+                    "full": "Ple/na",
+                    "off": "OFF"
+                }
+            },
+            "vebus_inverter_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            }
+        },
+        "sensor": {
+            "acload_energy_forward": {
+                "name": "Consum"
+            },
+            "acload_frequency": {
+                "name": "Freq\u00fc\u00e8ncia"
+            },
+            "acload_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "acload_voltage": {
+                "name": "Tensi\u00f3"
+            },
+            "alternator_dc_current": {
+                "name": "Intensitat de sortida CC"
+            },
+            "alternator_dc_power": {
+                "name": "Pot\u00e8ncia de sortida CC"
+            },
+            "alternator_dc_voltage": {
+                "name": "Tensi\u00f3 de sortida CC"
+            },
+            "alternator_input_current": {
+                "name": "Intensitat d'entrada"
+            },
+            "alternator_input_power": {
+                "name": "Pot\u00e8ncia d'entrada"
+            },
+            "alternator_input_voltage": {
+                "name": "Tensi\u00f3 d'entrada"
+            },
+            "alternator_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            },
+            "auxiliary_battery_voltage": {
+                "name": "Tensi\u00f3 de bateria auxiliar"
+            },
+            "battery_bms_cable": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_cell_imbalance": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_fuse_blown": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_high_cell_voltage": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_high_charge_current": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_high_charge_temperature": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_high_discharge_current": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_high_internal_temperature": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_high_temperature": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_high_voltage": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_internal_failure": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_low_cell_voltage": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_low_charge_temperature": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_low_soc": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_low_temperature": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_low_voltage": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "battery_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "battery_state_of_health_alarm": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "charger_dc_current_output": {
+                "name": "Intensitat de sortida CC {output}"
+            },
+            "charger_dc_voltage_output": {
+                "name": "Tensi\u00f3 de sortida CC {output}"
+            },
+            "charger_error_code": {
+                "name": "Codi d'error",
+                "state": {
+                    "battery_voltage_too_high": "Tensi\u00f3 de bateria massa alta",
+                    "input_shutdown_battery_voltage_too_high": "Aturada d'entrada (tensi\u00f3 de bateria massa alta)",
+                    "network_misconfigured": "Xarxa mal configurada",
+                    "no_error": "Cap error"
+                }
+            },
+            "charger_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            },
+            "dcdc_dc_current": {
+                "name": "Intensitat de sortida CC"
+            },
+            "dcdc_dc_power": {
+                "name": "Pot\u00e8ncia de sortida CC"
+            },
+            "dcdc_dc_voltage": {
+                "name": "Tensi\u00f3 de sortida CC"
+            },
+            "dcdc_input_current": {
+                "name": "Intensitat d'entrada"
+            },
+            "dcdc_input_power": {
+                "name": "Pot\u00e8ncia d'entrada"
+            },
+            "dcdc_input_voltage": {
+                "name": "Tensi\u00f3 d'entrada"
+            },
+            "dcdc_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            },
+            "dcload_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "dcload_voltage": {
+                "name": "Tensi\u00f3"
+            },
+            "dcsource_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "dcsource_voltage": {
+                "name": "Tensi\u00f3"
+            },
+            "dcsystem_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "dcsystem_voltage": {
+                "name": "Tensi\u00f3"
+            },
+            "digitalinput_alarm": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "digitalinput_state": {
+                "state": {
+                    "closed": "Tancat/ada",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "no": "No",
+                    "off": "OFF",
+                    "ok": "Ok",
+                    "on": "ON",
+                    "open": "Obert/a",
+                    "stopped": "Parat",
+                    "yes": "S\u00ed"
+                }
+            },
+            "digitalinput_type": {
+                "state": {
+                    "disabled": "Desactivada",
+                    "generator": "Generador"
+                }
+            },
+            "ev_alarm_starter_battery_low": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "ev_charging_state": {
+                "state": {
+                    "charging": "Carregant",
+                    "discharging": "Descarregant",
+                    "wake_up": "Desperta"
+                }
+            },
+            "evcharger_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "evcharger_status": {
+                "state": {
+                    "charging": "Carregant",
+                    "connected": "Connectat",
+                    "disconnected": "Desconnectat"
+                }
+            },
+            "generator_run_state": {
+                "state": {
+                    "manual": "Manual",
+                    "stopped": "Parat"
+                }
+            },
+            "grid_energy_forward": {
+                "name": "Consum"
+            },
+            "grid_frequency": {
+                "name": "Freq\u00fc\u00e8ncia"
+            },
+            "grid_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "grid_voltage": {
+                "name": "Tensi\u00f3"
+            },
+            "heatpump_energy_forward": {
+                "name": "Consum"
+            },
+            "heatpump_frequency": {
+                "name": "Freq\u00fc\u00e8ncia"
+            },
+            "heatpump_power": {
+                "name": "Pot\u00e8ncia"
+            },
+            "heatpump_voltage": {
+                "name": "Tensi\u00f3"
+            },
+            "inverter_output_apparent_power_phase": {
+                "name": "Pot\u00e8ncia aparent de sortida a {phase}"
+            },
+            "inverter_output_current_phase": {
+                "name": "Intensitat de sortida a {phase}"
+            },
+            "inverter_output_power_phase": {
+                "name": "Pot\u00e8ncia de sortida a {phase}"
+            },
+            "inverter_output_voltage_phase": {
+                "name": "Tensi\u00f3 de sortida a {phase}"
+            },
+            "inverter_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            },
+            "meteo_alarm_low_battery": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "meteo_battery_voltage": {
+                "name": "Tensi\u00f3 de la bateria"
+            },
+            "meteo_cell_temperature": {
+                "name": "Temperatura de cel\u00b7la"
+            },
+            "meteo_installation_power": {
+                "name": "Pot\u00e8ncia de la instal\u00b7laci\u00f3"
+            },
+            "meteo_irradiance": {
+                "name": "Irradi\u00e0ncia"
+            },
+            "meteo_todays_yield": {
+                "name": "Rendiment d'avui"
+            },
+            "multi_acin_current_phase": {
+                "name": "Intensitat d'entrada a {phase}"
+            },
+            "multi_acin_power_phase": {
+                "name": "Pot\u00e8ncia d'entrada a {phase}"
+            },
+            "multi_acin_voltage_phase": {
+                "name": "Tensi\u00f3 d'entrada a {phase}"
+            },
+            "multi_acout_current_phase": {
+                "name": "Intensitat de sortida a {phase}"
+            },
+            "multi_acout_power_phase": {
+                "name": "Pot\u00e8ncia de sortida a {phase}"
+            },
+            "multi_acout_voltage_phase": {
+                "name": "Tensi\u00f3 de sortida a {phase}"
+            },
+            "multi_active_input": {
+                "state": {
+                    "disconnected": "Desconnectat"
+                }
+            },
+            "multi_dc_temperature": {
+                "name": "Temperatura CC"
+            },
+            "multi_ess_mode": {
+                "name": "Mode ESS",
+                "state": {
+                    "external_control": "Control extern"
+                }
+            },
+            "multi_max_power_yesterday": {
+                "name": "Pot\u00e8ncia m\u00e0xima ahir"
+            },
+            "multi_mppt_mpptnumber_current": {
+                "name": "Intensitat d'MPPT {mpptnumber}"
+            },
+            "multi_mppt_mpptnumber_state": {
+                "state": {
+                    "mppt_active": "MPPT actiu",
+                    "not_available": "No disponible",
+                    "off": "OFF"
+                }
+            },
+            "multi_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            },
+            "platform_venus_firmware_state": {
+                "state": {
+                    "idle": "Inactiu"
+                }
+            },
+            "pvinverter_current_phase": {
+                "name": "Intensitat {phase}"
+            },
+            "solarcharger_error_code": {
+                "name": "Codi d'error",
+                "state": {
+                    "battery_voltage_too_high": "Tensi\u00f3 de bateria massa alta",
+                    "input_shutdown_battery_voltage_too_high": "Aturada d'entrada (tensi\u00f3 de bateria massa alta)",
+                    "network_misconfigured": "Xarxa mal configurada",
+                    "no_error": "Cap error"
+                }
+            },
+            "solarcharger_max_battery_voltage_today": {
+                "name": "Tensi\u00f3 m\u00e0xima de bateria d'avui"
+            },
+            "solarcharger_max_power_yesterday": {
+                "name": "Pot\u00e8ncia m\u00e0xima ahir"
+            },
+            "solarcharger_min_battery_voltage_today": {
+                "name": "Tensi\u00f3 m\u00ednima de bateria d'avui"
+            },
+            "solarcharger_mppt_operation_mode": {
+                "state": {
+                    "mppt_active": "MPPT actiu",
+                    "not_available": "No disponible",
+                    "off": "OFF"
+                }
+            },
+            "solarcharger_pv_current": {
+                "name": "Intensitat fotovoltaica"
+            },
+            "solarcharger_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            },
+            "solarcharger_tracker_tracker_current": {
+                "name": "Intensitat del seguidor fotovoltaic {tracker}"
+            },
+            "solarcharger_tracker_tracker_operation_mode": {
+                "state": {
+                    "mppt_active": "MPPT actiu",
+                    "not_available": "No disponible",
+                    "off": "OFF"
+                }
+            },
+            "system_ac_active_input_source": {
+                "state": {
+                    "generator": "Generador",
+                    "grid": "Xarxa",
+                    "not_connected": "No connectat"
+                }
+            },
+            "system_dc_battery_state": {
+                "state": {
+                    "charging": "Carregant",
+                    "discharging": "Descarregant",
+                    "idle": "Inactiu"
+                }
+            },
+            "system_dc_battery_voltage": {
+                "name": "Tensi\u00f3 de bateria de CC"
+            },
+            "system_dc_pv_current": {
+                "name": "Intensitat fotovoltaica"
+            },
+            "system_dvcc_state": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "system_dynamicess_error": {
+                "state": {
+                    "ess_mode": "Mode ESS",
+                    "no_error": "Cap error"
+                }
+            },
+            "system_dynamicess_strategy": {
+                "state": {
+                    "targetsoc": "SoC objectiu"
+                }
+            },
+            "system_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            },
+            "tank_battery_voltage": {
+                "name": "Tensi\u00f3 del sensor de bateria"
+            },
+            "temperature_battery_voltage": {
+                "name": "Tensi\u00f3 del sensor de bateria"
+            },
+            "temperature_status": {
+                "state": {
+                    "disconnected": "Desconnectat",
+                    "ok": "Ok"
+                }
+            },
+            "vebus_inverter_active_input": {
+                "state": {
+                    "generator": "Generador",
+                    "grid": "Xarxa",
+                    "not_connected": "No connectat"
+                }
+            },
+            "vebus_inverter_alarm_grid_lost": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_high_dc_current": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_high_dc_voltage": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_high_temperature": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_low_battery": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_overload": {
+                "name": "Alarma de sobrec\u00e0rrega",
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_phase_rotation": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_ripple": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_temperature_sensor": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_alarm_voltage_sensor": {
+                "state": {
+                    "no_alarm": "Cap alarma"
+                }
+            },
+            "vebus_inverter_dc_temperature": {
+                "name": "Temperatura CC"
+            },
+            "vebus_inverter_ignoreacin1_state": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "vebus_inverter_output_apparent_power_phase": {
+                "name": "Pot\u00e8ncia aparent de sortida a {phase}"
+            },
+            "vebus_inverter_output_current_phase": {
+                "name": "Intensitat de sortida a {phase}"
+            },
+            "vebus_inverter_output_power_phase": {
+                "name": "Pot\u00e8ncia de sortida a {phase}"
+            },
+            "vebus_inverter_output_voltage_phase": {
+                "name": "Tensi\u00f3 de sortida a {phase}"
+            },
+            "vebus_inverter_state": {
+                "state": {
+                    "discharging": "Descarregant",
+                    "equalize": "Equalitzaci\u00f3",
+                    "external_control": "Control extern",
+                    "fault": "Error",
+                    "off": "OFF",
+                    "power_assist": "Power Assist"
+                }
+            }
+        },
+        "switch": {
+            "hub4_force_charge": {
+                "name": "For\u00e7a la c\u00e0rrega"
+            },
+            "system_settings_overvoltage_feedin": {
+                "name": "Fotovoltaica acoblada en CC - abocament d'excedents"
+            },
+            "vebus_inverter_prefer_renewable_energy": {
+                "name": "Prefereix energia renovable"
+            }
+        }
+    }
+}

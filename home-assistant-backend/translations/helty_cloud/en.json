@@ -1,0 +1,88 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "unique_id_mismatch": "The credentials belong to a different Helty Home account. Sign in with the account this entry was set up with."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "The email address of your Helty Home account.",
+                    "password": "The password of your Helty Home account."
+                },
+                "description": "The Helty cloud no longer accepts the credentials of this account. Enter them again; if you changed the email address of your Helty Home account, enter the new one.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "The email address of your Helty Home account.",
+                    "password": "The password of your Helty Home account."
+                },
+                "title": "Connect to your Helty Home account"
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "filter": {
+                "name": "Filter"
+            }
+        },
+        "fan": {
+            "ventilation": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "boost": "Boost",
+                            "free_cooling": "Free cooling",
+                            "night": "Night"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "filter_volume": {
+                "name": "Air treated by filter"
+            },
+            "indoor_humidity": {
+                "name": "Indoor humidity"
+            },
+            "indoor_temperature": {
+                "name": "Indoor temperature"
+            },
+            "outdoor_temperature": {
+                "name": "Outdoor temperature"
+            },
+            "total_volume": {
+                "name": "Total air treated"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Error talking to the Helty cloud: {error}"
+        },
+        "invalid_auth": {
+            "message": "The Helty cloud rejected the credentials of this account."
+        },
+        "set_fan_mode_failed": {
+            "message": "Failed to set the ventilation mode."
+        },
+        "update_failed": {
+            "message": "Error reading the state from the Helty cloud: {error}"
+        }
+    }
+}

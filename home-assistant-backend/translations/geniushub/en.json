@@ -33,6 +33,17 @@
             }
         }
     },
+    "exceptions": {
+        "invalid_entity_id": {
+            "message": "Unknown Genius Hub entity: {entity_id}"
+        },
+        "invalid_zone": {
+            "message": "Unknown Genius Hub zone: {entity_id}"
+        },
+        "setup_failed": {
+            "message": "Setup failed, check your configuration"
+        }
+    },
     "services": {
         "set_switch_override": {
             "description": "Overrides switch for a given duration.",
@@ -52,7 +63,7 @@
                     "name": "Entity"
                 },
                 "mode": {
-                    "description": "One of: off, timer or footprint.",
+                    "description": "The zone's operating mode.",
                     "name": "Mode"
                 }
             },

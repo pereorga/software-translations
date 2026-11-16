@@ -2,17 +2,17 @@
     "config": {
         "abort": {
             "already_configured": "Service is already configured",
-            "authorize_url_timeout": "Timeout generating authorize URL.",
+            "authorize_url_timeout": "Timeout while generating an authorization URL.",
             "unknown": "Unexpected error",
-            "unknown_authorize_url_generation": "Unknown error generating an authorize URL."
+            "unknown_authorize_url_generation": "An unknown error occurred while generating an authorization URL."
         },
         "error": {
             "invalid_auth": "Invalid authentication"
         },
         "step": {
             "auth": {
-                "description": "To link your TelldusLive account:\n1. Open the link below\n2. Log in to Telldus Live\n3. Authorize **{app_name}** (select **Yes**).\n4. Come back here and select **Submit**.\n\n [Link TelldusLive account]({auth_url})",
-                "title": "Authenticate with TelldusLive"
+                "description": "To link your Telldus Live account:\n1. Open the link below\n2. Log in to Telldus Live\n3. Authorize **{app_name}** (select **Yes**).\n4. Come back here and select **Submit**.\n\n[Link Telldus Live account]({auth_url})",
+                "title": "Authenticate with Telldus Live"
             },
             "user": {
                 "data": {
@@ -41,6 +41,11 @@
             "wind_gust": {
                 "name": "Wind gust"
             }
+        }
+    },
+    "exceptions": {
+        "authentication_error": {
+            "message": "Authentication with Telldus Live failed"
         }
     }
 }

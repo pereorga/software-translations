@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "invalid_auth": "Invalid authentication",
@@ -10,6 +9,11 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "location": {
+                "data": {
+                    "location": "Location"
+                }
+            },
             "user": {
                 "data": {
                     "password": "Password",
@@ -41,6 +45,11 @@
             "wind_heading": {
                 "name": "Wind heading"
             }
+        }
+    },
+    "exceptions": {
+        "update_error": {
+            "message": "Error updating data"
         }
     }
 }

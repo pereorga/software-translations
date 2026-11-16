@@ -1,10 +1,34 @@
 {
-    "issues": {
-        "proxy_params_auth_deprecation": {
-            "title": "{telegram_bot}: l'autenticaci\u00f3 del servidor intermediari (o proxy) s'ha de moure a l'URL"
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
         },
-        "proxy_params_deprecation": {
-            "title": "{telegram_bot}: s'eliminar\u00e0 l'opci\u00f3 de par\u00e0metres del servidor intermediari (o proxy)"
+        "error": {
+            "invalid_api_key": "Clau API inv\u00e0lida"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "Token d'API"
+                }
+            },
+            "webhooks": {
+                "data": {
+                    "url": "URL"
+                }
+            }
+        }
+    },
+    "selector": {
+        "media": {
+            "fields": {
+                "password": "Contrasenya"
+            }
         }
     },
     "services": {
@@ -52,7 +76,6 @@
                     "name": "Teclat en l\u00ednia"
                 },
                 "message_id": {
-                    "description": "ID del missatge a editar.",
                     "name": "ID del missatge"
                 }
             },
@@ -80,7 +103,6 @@
                     "name": "ID del missatge"
                 },
                 "parse_mode": {
-                    "description": "Analitzador del text del missatge.",
                     "name": "Mode d'an\u00e0lisi"
                 },
                 "title": {
@@ -89,6 +111,41 @@
                 }
             },
             "name": "Edita el missatge"
+        },
+        "edit_message_media": {
+            "fields": {
+                "authentication": {
+                    "name": "M\u00e8tode d'autenticaci\u00f3"
+                },
+                "caption": {
+                    "name": "T\u00edtol"
+                },
+                "chat_id": {
+                    "name": "ID de xat"
+                },
+                "file": {
+                    "name": "Fitxer"
+                },
+                "inline_keyboard": {
+                    "description": "Llista de files de comandes, separades per comes, per crear tecles personalitzades amb botons associats a dades pels 'callbacks'.",
+                    "name": "Teclat en l\u00ednia"
+                },
+                "message_id": {
+                    "name": "ID del missatge"
+                },
+                "password": {
+                    "name": "Contrasenya"
+                },
+                "url": {
+                    "name": "URL"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                },
+                "verify_ssl": {
+                    "name": "Verifica l'SSL"
+                }
+            }
         },
         "edit_replymarkup": {
             "fields": {
@@ -100,21 +157,25 @@
                     "name": "Teclat en l\u00ednia"
                 },
                 "message_id": {
-                    "description": "ID del missatge a editar.",
                     "name": "ID del missatge"
                 }
             },
             "name": "Edita les tecles de resposta"
         },
+        "leave_chat": {
+            "fields": {
+                "chat_id": {
+                    "name": "ID de xat"
+                }
+            }
+        },
         "send_animation": {
             "description": "Envia una animaci\u00f3.",
             "fields": {
                 "authentication": {
-                    "description": "Defineix quin m\u00e8tode d'autenticaci\u00f3 utilitzar. Configura `digest` per utilitzar l'autenticaci\u00f3 HTTP digest, o `bearer_token` per utilitzar l'autenticaci\u00f3 de testimoni 'bearer' d'OAuth 2.0. El valor per defecte \u00e9s `basic`.",
                     "name": "M\u00e8tode d'autenticaci\u00f3"
                 },
                 "caption": {
-                    "description": "T\u00edtol de l'animaci\u00f3.",
                     "name": "T\u00edtol"
                 },
                 "disable_notification": {
@@ -138,30 +199,19 @@
                     "name": "Etiqueta del missatge"
                 },
                 "parse_mode": {
-                    "description": "Analitzador del text del missatge.",
                     "name": "Mode d'an\u00e0lisi"
                 },
                 "password": {
-                    "description": "Contrasenya (o 'bearer token') de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Contrasenya"
-                },
-                "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
-                    "name": "Objectiu"
-                },
-                "timeout": {
-                    "description": "Temps d'espera per enviar l'adhesiu. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.)."
                 },
                 "url": {
                     "description": "Ruta remota a un v\u00eddeo GIF o H.264/MPEG-4 AVC sense so.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Nom d'usuari de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Nom d'usuari"
                 },
                 "verify_ssl": {
-                    "description": "Activa o desactiva la verificaci\u00f3 del certificat SSL. Configura-ho a 'false' si est\u00e0s baixant el fitxer des d'un URL i no vols validar el certificat SSL del servidor.",
                     "name": "Verifica l'SSL"
                 }
             },
@@ -171,11 +221,9 @@
             "description": "Envia un document.",
             "fields": {
                 "authentication": {
-                    "description": "Defineix quin m\u00e8tode d'autenticaci\u00f3 utilitzar. Configura `digest` per utilitzar l'autenticaci\u00f3 HTTP digest, o `bearer_token` per utilitzar l'autenticaci\u00f3 de testimoni 'bearer' d'OAuth 2.0. El valor per defecte \u00e9s `basic`.",
                     "name": "M\u00e8tode d'autenticaci\u00f3"
                 },
                 "caption": {
-                    "description": "T\u00edtol del document.",
                     "name": "T\u00edtol"
                 },
                 "disable_notification": {
@@ -199,27 +247,19 @@
                     "name": "Etiqueta del missatge"
                 },
                 "parse_mode": {
-                    "description": "Analitzador del text del missatge.",
                     "name": "Mode d'an\u00e0lisi"
                 },
                 "password": {
-                    "description": "Contrasenya (o 'bearer token') de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Contrasenya"
-                },
-                "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
-                    "name": "Objectiu"
                 },
                 "url": {
                     "description": "Ruta remota del document.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Nom d'usuari de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Nom d'usuari"
                 },
                 "verify_ssl": {
-                    "description": "Activa o desactiva la verificaci\u00f3 del certificat SSL. Configura-ho a 'false' si est\u00e0s baixant el fitxer des d'un URL i no vols validar el certificat SSL del servidor.",
                     "name": "Verifica l'SSL"
                 }
             },
@@ -251,15 +291,20 @@
                 "message_tag": {
                     "description": "Etiqueta del missatge enviat.",
                     "name": "Etiqueta del missatge"
-                },
-                "target": {
-                    "name": "Objectiu"
-                },
-                "timeout": {
-                    "description": "Temps d'espera per enviar la imatge. Ajudar\u00e0 amb errors de temps d'espera (connexi\u00f3 a Internet deficient, etc.)."
                 }
             },
             "name": "Envia ubicaci\u00f3"
+        },
+        "send_media_group": {
+            "fields": {
+                "disable_notification": {
+                    "description": "Envia el missatge en mode silenci\u00f3s. Els usuaris d'iOS i els usuaris web no rebran cap notificaci\u00f3, els usuaris d'Android rebran una notificaci\u00f3 sense so.",
+                    "name": "Desactiva la notificaci\u00f3"
+                },
+                "parse_mode": {
+                    "name": "Mode d'an\u00e0lisi"
+                }
+            }
         },
         "send_message": {
             "description": "Envia una notificaci\u00f3.",
@@ -281,7 +326,6 @@
                     "name": "Teclat"
                 },
                 "message": {
-                    "description": "Missatge/cos de la notificaci\u00f3.",
                     "name": "Missatge"
                 },
                 "message_tag": {
@@ -289,11 +333,7 @@
                     "name": "Etiqueta del missatge"
                 },
                 "parse_mode": {
-                    "description": "Analitzador del text del missatge.",
                     "name": "Mode d'an\u00e0lisi"
-                },
-                "target": {
-                    "name": "Objectiu"
                 },
                 "title": {
                     "description": "T\u00edtol opcional de la notificaci\u00f3. Es compondr\u00e0 com a '%title %missatge'.",
@@ -302,15 +342,26 @@
             },
             "name": "Envia missatge"
         },
+        "send_message_draft": {
+            "fields": {
+                "chat_id": {
+                    "name": "ID de xat"
+                },
+                "message": {
+                    "name": "Missatge"
+                },
+                "parse_mode": {
+                    "name": "Mode d'an\u00e0lisi"
+                }
+            }
+        },
         "send_photo": {
             "description": "Envia una foto.",
             "fields": {
                 "authentication": {
-                    "description": "Defineix quin m\u00e8tode d'autenticaci\u00f3 utilitzar. Configura `digest` per utilitzar l'autenticaci\u00f3 HTTP digest, o `bearer_token` per utilitzar l'autenticaci\u00f3 de testimoni 'bearer' d'OAuth 2.0. El valor per defecte \u00e9s `basic`.",
                     "name": "M\u00e8tode d'autenticaci\u00f3"
                 },
                 "caption": {
-                    "description": "T\u00edtol de la imatge.",
                     "name": "T\u00edtol"
                 },
                 "disable_notification": {
@@ -334,26 +385,19 @@
                     "name": "Etiqueta del missatge"
                 },
                 "parse_mode": {
-                    "description": "Analitzador del text del missatge.",
                     "name": "Mode d'an\u00e0lisi"
                 },
                 "password": {
-                    "description": "Contrasenya (o 'bearer token') de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Contrasenya"
-                },
-                "target": {
-                    "name": "Objectiu"
                 },
                 "url": {
                     "description": "Ruta remota de la imatge.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Nom d'usuari de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Nom d'usuari"
                 },
                 "verify_ssl": {
-                    "description": "Activa o desactiva la verificaci\u00f3 del certificat SSL. Configura-ho a 'false' si est\u00e0s baixant el fitxer des d'un URL i no vols validar el certificat SSL del servidor.",
                     "name": "Verifica l'SSL"
                 }
             },
@@ -363,7 +407,6 @@
             "description": "Envia una votaci\u00f3.",
             "fields": {
                 "allows_multiple_answers": {
-                    "description": "La votaci\u00f3 permet m\u00faltiples respostes o no. El valor predeterminat \u00e9s False (resposta \u00fanica).",
                     "name": "Permet m\u00faltiples respostes"
                 },
                 "disable_notification": {
@@ -371,12 +414,7 @@
                     "name": "Desactiva la notificaci\u00f3"
                 },
                 "is_anonymous": {
-                    "description": "Votaci\u00f3 an\u00f2nima o no. El valor predeterminat \u00e9s True (an\u00f2nima).",
                     "name": "\u00c9s an\u00f2nim"
-                },
-                "message_tag": {
-                    "description": "Etiqueta del missatge enviat.",
-                    "name": "Etiqueta del missatge"
                 },
                 "open_period": {
                     "description": "Temps en segons durant els quals la votaci\u00f3 estar\u00e0 activa despr\u00e9s de la creaci\u00f3, 5 a 600 s.",
@@ -389,10 +427,6 @@
                 "question": {
                     "description": "Pregunta de la votaci\u00f3, 1 a 300 car\u00e0cters.",
                     "name": "Pregunta"
-                },
-                "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar la ubicaci\u00f3. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
-                    "name": "Objectiu"
                 }
             },
             "name": "Envia votaci\u00f3"
@@ -401,7 +435,6 @@
             "description": "Envia un adhesiu.",
             "fields": {
                 "authentication": {
-                    "description": "Defineix quin m\u00e8tode d'autenticaci\u00f3 utilitzar. Configura `digest` per utilitzar l'autenticaci\u00f3 HTTP digest, o `bearer_token` per utilitzar l'autenticaci\u00f3 de testimoni 'bearer' d'OAuth 2.0. El valor per defecte \u00e9s `basic`.",
                     "name": "M\u00e8tode d'autenticaci\u00f3"
                 },
                 "disable_notification": {
@@ -425,27 +458,20 @@
                     "name": "Etiqueta del missatge"
                 },
                 "password": {
-                    "description": "Contrasenya (o 'bearer token') de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Contrasenya"
                 },
                 "sticker_id": {
                     "description": "ID de l'adhesiu existent als servidors de Telegram.",
                     "name": "ID de l'adhesiu"
                 },
-                "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
-                    "name": "Objectiu"
-                },
                 "url": {
                     "description": "Ruta remota de l'adhesiu est\u00e0tic .webp o animat .tgs.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Nom d'usuari de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Nom d'usuari"
                 },
                 "verify_ssl": {
-                    "description": "Activa o desactiva la verificaci\u00f3 del certificat SSL. Configura-ho a 'false' si est\u00e0s baixant el fitxer des d'un URL i no vols validar el certificat SSL del servidor.",
                     "name": "Verifica l'SSL"
                 }
             },
@@ -455,11 +481,9 @@
             "description": "Envia un v\u00eddeo.",
             "fields": {
                 "authentication": {
-                    "description": "Defineix quin m\u00e8tode d'autenticaci\u00f3 utilitzar. Configura `digest` per utilitzar l'autenticaci\u00f3 HTTP digest, o `bearer_token` per utilitzar l'autenticaci\u00f3 de testimoni 'bearer' d'OAuth 2.0. El valor per defecte \u00e9s `basic`.",
                     "name": "M\u00e8tode d'autenticaci\u00f3"
                 },
                 "caption": {
-                    "description": "T\u00edtol del v\u00eddeo.",
                     "name": "T\u00edtol"
                 },
                 "disable_notification": {
@@ -483,27 +507,19 @@
                     "name": "Etiqueta del missatge"
                 },
                 "parse_mode": {
-                    "description": "Analitzador del text del missatge.",
                     "name": "Mode d'an\u00e0lisi"
                 },
                 "password": {
-                    "description": "Contrasenya (o 'bearer token') de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Contrasenya"
-                },
-                "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
-                    "name": "Objectiu"
                 },
                 "url": {
                     "description": "Ruta remota del v\u00eddeo.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Nom d'usuari de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Nom d'usuari"
                 },
                 "verify_ssl": {
-                    "description": "Activa o desactiva la verificaci\u00f3 del certificat SSL. Configura-ho a 'false' si est\u00e0s baixant el fitxer des d'un URL i no vols validar el certificat SSL del servidor.",
                     "name": "Verifica l'SSL"
                 }
             },
@@ -513,11 +529,9 @@
             "description": "Envia un missatge de veu.",
             "fields": {
                 "authentication": {
-                    "description": "Defineix quin m\u00e8tode d'autenticaci\u00f3 utilitzar. Configura `digest` per utilitzar l'autenticaci\u00f3 HTTP digest, o `bearer_token` per utilitzar l'autenticaci\u00f3 de testimoni 'bearer' d'OAuth 2.0. El valor per defecte \u00e9s `basic`.",
                     "name": "M\u00e8tode d'autenticaci\u00f3"
                 },
                 "caption": {
-                    "description": "T\u00edtol del missatge de veu.",
                     "name": "T\u00edtol"
                 },
                 "disable_notification": {
@@ -541,27 +555,30 @@
                     "name": "Etiqueta del missatge"
                 },
                 "password": {
-                    "description": "Contrasenya (o 'bearer token') de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Contrasenya"
-                },
-                "target": {
-                    "description": "Llista de chat_ids pre-autoritzats on enviar el document. Si no hi son, el primer chat_id perm\u00e8s ser\u00e0 el predeterminat.",
-                    "name": "Objectiu"
                 },
                 "url": {
                     "description": "Ruta remota del missatge de veu.",
                     "name": "URL"
                 },
                 "username": {
-                    "description": "Nom d'usuari de l'URL que requereix autenticaci\u00f3 HTTP.",
                     "name": "Nom d'usuari"
                 },
                 "verify_ssl": {
-                    "description": "Activa o desactiva la verificaci\u00f3 del certificat SSL. Configura-ho a 'false' si est\u00e0s baixant el fitxer des d'un URL i no vols validar el certificat SSL del servidor.",
                     "name": "Verifica l'SSL"
                 }
             },
             "name": "Envia missatge de veu"
+        },
+        "set_message_reaction": {
+            "fields": {
+                "chat_id": {
+                    "name": "ID de xat"
+                },
+                "message_id": {
+                    "name": "ID del missatge"
+                }
+            }
         }
     }
 }

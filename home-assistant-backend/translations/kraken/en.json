@@ -1,7 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Already configured. Only a single configuration possible."
+            "already_configured": "Already configured. Only a single configuration is possible."
         },
         "step": {
             "user": {
@@ -54,10 +54,10 @@
                 "name": "Volume today"
             },
             "volume_weighted_average_last_24h": {
-                "name": "Volume weighted average last 24h"
+                "name": "Volume-weighted average last 24h"
             },
             "volume_weighted_average_today": {
-                "name": "Volume weighted average today"
+                "name": "Volume-weighted average today"
             }
         }
     },
@@ -65,8 +65,7 @@
         "step": {
             "init": {
                 "data": {
-                    "scan_interval": "Update interval",
-                    "tracked_asset_pairs": "Tracked Asset Pairs"
+                    "tracked_asset_pairs": "Tracked asset pairs"
                 }
             }
         }

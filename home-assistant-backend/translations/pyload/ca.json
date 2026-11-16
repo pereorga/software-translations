@@ -1,9 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -11,8 +9,16 @@
             "unknown": "Error inesperat"
         },
         "step": {
+            "hassio_confirm": {
+                "data": {
+                    "api_key": "Clau API",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
             "reauth_confirm": {
                 "data": {
+                    "api_key": "Clau API",
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 },
@@ -20,20 +26,18 @@
             },
             "reconfigure": {
                 "data": {
-                    "host": "Amfitri\u00f3",
+                    "api_key": "Clau API",
                     "password": "Contrasenya",
-                    "port": "Port",
-                    "ssl": "Utilitza un certificat SSL",
+                    "url": "URL",
                     "username": "Nom d'usuari",
                     "verify_ssl": "Verifica el certificat SSL"
                 }
             },
             "user": {
                 "data": {
-                    "host": "Amfitri\u00f3",
+                    "api_key": "Clau API",
                     "password": "Contrasenya",
-                    "port": "Port",
-                    "ssl": "Utilitza un certificat SSL",
+                    "url": "URL",
                     "username": "Nom d'usuari",
                     "verify_ssl": "Verifica el certificat SSL"
                 }

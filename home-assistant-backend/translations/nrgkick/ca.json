@@ -1,0 +1,65 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            },
+            "reconfigure_auth": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            },
+            "user_auth": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            }
+        }
+    },
+    "entity": {
+        "number": {
+            "current_set": {
+                "name": "Corrent de c\u00e0rrega"
+            },
+            "energy_limit": {
+                "name": "L\u00edmit d'energia"
+            }
+        },
+        "sensor": {
+            "network_ssid": {
+                "name": "SSID"
+            },
+            "status": {
+                "state": {
+                    "charging": "Carregant",
+                    "connected": "Connectat",
+                    "error": "Error",
+                    "standby": "En espera"
+                }
+            }
+        }
+    }
+}

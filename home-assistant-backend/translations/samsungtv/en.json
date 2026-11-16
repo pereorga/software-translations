@@ -2,34 +2,53 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "already_in_progress": "Configuration flow is already in progress",
             "auth_missing": "Home Assistant is not authorized to connect to this Samsung TV. Check your TV's External Device Manager settings to authorize Home Assistant.",
             "cannot_connect": "Failed to connect",
-            "id_missing": "This Samsung device doesn't have a SerialNumber.",
-            "not_supported": "This Samsung device is currently not supported.",
-            "reauth_successful": "Re-authentication was successful",
-            "unknown": "Unexpected error"
+            "id_missing": "This Samsung device doesn't have a serial number to identify it.",
+            "not_supported": "This Samsung device is currently not supported."
         },
         "error": {
             "auth_missing": "Home Assistant is not authorized to connect to this Samsung TV. Check your TV's External Device Manager settings to authorize Home Assistant.",
-            "invalid_pin": "PIN is invalid, please try again."
+            "invalid_host": "Invalid hostname or IP address",
+            "invalid_pin": "The PIN is invalid. Please try again."
         },
         "flow_title": "{device}",
         "step": {
             "confirm": {
-                "description": "Do you want to set up {device}? If you never connected Home Assistant before you should see a popup on your TV asking for authorization."
+                "description": "Do you want to set up {device}? If you have never connected Home Assistant before, you should see a popup on your TV asking for authorization."
             },
             "encrypted_pairing": {
+                "data": {
+                    "pin": "PIN code"
+                },
+                "data_description": {
+                    "pin": "The PIN displayed on your TV."
+                },
                 "description": "Please enter the PIN displayed on {device}."
             },
             "pairing": {
-                "description": "Do you want to set up {device}? If you never connected Home Assistant before you should see a popup on your TV asking for authorization."
+                "description": "Do you want to set up {device}? If you have never connected Home Assistant before, you should see a popup on your TV asking for authorization."
             },
             "reauth_confirm": {
                 "description": "After submitting, accept the popup on {device} requesting authorization within 30 seconds or input PIN."
             },
             "reauth_confirm_encrypted": {
+                "data": {
+                    "pin": "PIN code"
+                },
+                "data_description": {
+                    "pin": "The PIN displayed on your TV."
+                },
                 "description": "Please enter the PIN displayed on {device}."
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your TV."
+                },
+                "description": "Update the hostname or IP address of your Samsung TV."
             },
             "user": {
                 "data": {
@@ -37,15 +56,42 @@
                     "name": "Name"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your TV."
+                    "host": "The hostname or IP address of your TV.",
+                    "name": "The name of your TV. This will be used to identify the device in Home Assistant."
                 },
-                "description": "Enter your Samsung TV information. If you never connected Home Assistant before you should see a popup on your TV asking for authorization."
+                "description": "Enter your Samsung TV information. If you have never connected Home Assistant before, you should see a popup on your TV asking for authorization."
             }
         }
     },
     "device_automation": {
         "trigger_type": {
             "samsungtv.turn_on": "Device is requested to turn on"
+        }
+    },
+    "exceptions": {
+        "encrypted_mode_auth_failed": {
+            "message": "Token and session ID are required in encrypted mode."
+        },
+        "error_sending_command": {
+            "message": "Unable to send command to {host}: {error}"
+        },
+        "error_set_volume": {
+            "message": "Unable to set volume level on {host}: {error}"
+        },
+        "invalid_device": {
+            "message": "Device with ID {device_id} is invalid or not found."
+        },
+        "media_id_invalid": {
+            "message": "Media ID must be a positive integer."
+        },
+        "service_unsupported": {
+            "message": "Unable to turn on {entity}, as it does not have an automation configured."
+        },
+        "source_unsupported": {
+            "message": "Entity {entity} does not support source {source}."
+        },
+        "unhandled_trigger_type": {
+            "message": "Unhandled trigger type {trigger_type}."
         }
     }
 }

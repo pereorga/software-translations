@@ -1,8 +1,34 @@
 {
+    "common": {
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_zone_name": "Zona"
+    },
     "services": {
         "reload": {
             "description": "Recarrega les zones des de la configuraci\u00f3 YAML",
-            "name": "Torna a carregar"
+            "name": "Torna a carregar zones"
+        }
+    },
+    "triggers": {
+        "entered": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "zone": {
+                    "name": "Zona"
+                }
+            }
+        },
+        "left": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "zone": {
+                    "name": "Zona"
+                }
+            }
         }
     }
 }

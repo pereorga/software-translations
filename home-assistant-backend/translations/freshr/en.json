@@ -1,0 +1,66 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "Your Fresh-r account password."
+                },
+                "description": "Re-enter the password for your Fresh-r account `{username}`."
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "Your Fresh-r account password."
+                },
+                "description": "Update the password for your Fresh-r account `{username}`."
+            },
+            "user": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Your Fresh-r account password.",
+                    "username": "Your Fresh-r account username (email address)."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "dew_point": {
+                "name": "Dew point"
+            },
+            "flow": {
+                "name": "Air flow rate"
+            },
+            "inside_temperature": {
+                "name": "Inside temperature"
+            },
+            "outside_temperature": {
+                "name": "Outside temperature"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_failed": {
+            "message": "Authentication failed. Check your Fresh-r username and password."
+        },
+        "cannot_connect": {
+            "message": "Could not connect to the Fresh-r service."
+        }
+    }
+}

@@ -2,13 +2,15 @@
     "config": {
         "abort": {
             "already_configured": "El compte ja est\u00e0 configurat",
-            "kamereon_no_account": "No s'ha pogut trobar cap compte Kamereon",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "kamereon_no_account": "No s'ha pogut trobar cap compte Kamereon"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_credentials": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
+        },
+        "initiate_flow": {
+            "user": "Afegeix compte"
         },
         "step": {
             "reauth_confirm": {
@@ -108,6 +110,11 @@
             "charging_remaining_time": {
                 "name": "Temps restant de c\u00e0rrega"
             },
+            "charging_settings_mode": {
+                "state": {
+                    "delegated": "Delegat"
+                }
+            },
             "fuel_autonomy": {
                 "name": "Autonomia del combustible"
             },
@@ -152,7 +159,8 @@
                 "vehicle": {
                     "name": "Vehicle"
                 }
-            }
+            },
+            "name": "Cancel\u00b7la A/C"
         },
         "ac_set_schedules": {
             "fields": {
@@ -168,12 +176,14 @@
         "ac_start": {
             "fields": {
                 "temperature": {
+                    "description": "Temperatura A/C objctiu en \u00b0C.",
                     "name": "Temperatura"
                 },
                 "vehicle": {
                     "name": "Vehicle"
                 }
-            }
+            },
+            "name": "Inicia A/C"
         },
         "charge_set_schedules": {
             "fields": {
@@ -186,6 +196,16 @@
                 }
             },
             "name": "Actualitza la programaci\u00f3 de c\u00e0rrega"
+        },
+        "charge_start": {
+            "fields": {
+                "vehicle": {
+                    "name": "Vehicle"
+                },
+                "when": {
+                    "name": "Quan"
+                }
+            }
         }
     }
 }

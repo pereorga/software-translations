@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Location is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Location is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -18,7 +17,7 @@
                     "longitude": "Longitude"
                 },
                 "description": "Use the AirVisual cloud API to monitor a latitude/longitude.",
-                "title": "Configure a Geography"
+                "title": "Configure a geography"
             },
             "geography_by_name": {
                 "data": {
@@ -28,7 +27,7 @@
                     "state": "State"
                 },
                 "description": "Use the AirVisual cloud API to monitor a city/state/country.",
-                "title": "Configure a Geography"
+                "title": "Configure a geography"
             },
             "reauth_confirm": {
                 "data": {
@@ -37,6 +36,9 @@
                 "title": "Re-authenticate AirVisual"
             },
             "user": {
+                "data": {
+                    "type": "Integration type"
+                },
                 "description": "Pick what type of AirVisual data you want to monitor.",
                 "title": "Configure AirVisual"
             }
@@ -46,12 +48,12 @@
         "sensor": {
             "pollutant_label": {
                 "state": {
-                    "co": "Carbon Monoxide",
-                    "n2": "Nitrogen Dioxide",
+                    "co": "Carbon monoxide",
+                    "n2": "Nitrogen dioxide",
                     "o3": "Ozone",
                     "p1": "PM10",
                     "p2": "PM2.5",
-                    "s2": "Sulfur Dioxide"
+                    "s2": "Sulphur dioxide"
                 }
             },
             "pollutant_level": {
@@ -64,6 +66,11 @@
                     "very_unhealthy": "Very unhealthy"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "migrated_to_airvisual_pro": {
+            "message": "This entry has been migrated to the AirVisual Pro integration"
         }
     },
     "issues": {

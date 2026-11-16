@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "unique_id_mismatch": "The credentials belong to a different Xthings Cloud account than the one originally configured."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "device_not_found": "Device not found.",
+            "device_offline": "Device is offline.",
+            "email_empty": "Email cannot be empty.",
+            "email_invalid": "Invalid email format.",
+            "email_not_found": "Email does not exist.",
+            "password_empty": "Password cannot be empty.",
+            "password_wrong": "Incorrect password.",
+            "token_expired": "Token expired, please log in again.",
+            "token_invalid": "Invalid token, please log in again.",
+            "unknown": "Unexpected error",
+            "user_disabled": "This account has been disabled.",
+            "user_not_activated": "This account has not been activated.",
+            "user_not_logged_in": "Session expired, please log in again."
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "Your Xthings Cloud account password."
+                },
+                "description": "The password for {email} is no longer valid. Please enter your Xthings Cloud account password to reauthenticate.",
+                "title": "Authentication expired for {name}"
+            },
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "The email address used to register your Xthings Cloud account.",
+                    "password": "Your Xthings Cloud account password."
+                },
+                "description": "Please enter your Xthings Cloud account credentials.",
+                "title": "Xthings Cloud Login"
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "unique_id_mismatch": "The Jellyfin credentials do not match the configured account"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -16,6 +16,13 @@
                 },
                 "description": "The Jellyfin integration needs to re-authenticate your account",
                 "title": "Authentication expired for {name}"
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "url": "URL",
+                    "username": "Username"
+                }
             },
             "user": {
                 "data": {
@@ -41,6 +48,18 @@
                     "audio_codec": "Audio codec"
                 }
             }
+        }
+    },
+    "services": {
+        "play_media_shuffle": {
+            "description": "Starts playing specified media shuffled. Overwrites current play queue.",
+            "fields": {
+                "media": {
+                    "description": "The media selected to play.",
+                    "name": "Media"
+                }
+            },
+            "name": "Play media shuffled"
         }
     }
 }

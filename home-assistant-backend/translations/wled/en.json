@@ -1,11 +1,19 @@
 {
+    "common": {
+        "unsupported_version": "The WLED device's firmware version is not supported."
+    },
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "cannot_connect": "Failed to connect"
+            "cannot_connect": "Failed to connect",
+            "invalid_response": "The device didn't respond like a WLED device.",
+            "unique_id_mismatch": "MAC address does not match the configured device. Expected to connect to device with MAC: `{expected_mac}`, but connected to device with MAC: `{actual_mac}`. \n\nPlease ensure you reconfigure against the same device.",
+            "unsupported_version": "The WLED device's firmware version is not supported."
         },
         "error": {
-            "cannot_connect": "Failed to connect"
+            "cannot_connect": "Failed to connect",
+            "invalid_response": "The device didn't respond like a WLED device.",
+            "unsupported_version": "The WLED device's firmware version is not supported."
         },
         "flow_title": "{name}",
         "step": {
@@ -28,6 +36,11 @@
         "binary_sensor": {
             "firmware": {
                 "name": "Firmware"
+            }
+        },
+        "button": {
+            "next_playlist_entry": {
+                "name": "Next playlist entry"
             }
         },
         "light": {
@@ -82,16 +95,17 @@
                 "name": "Free memory"
             },
             "info_leds_count": {
-                "name": "LED count"
+                "name": "LED count",
+                "unit_of_measurement": "LEDs"
             },
             "info_leds_max_power": {
                 "name": "Max current"
             },
+            "internal_temperature": {
+                "name": "Internal temperature"
+            },
             "ip": {
                 "name": "IP"
-            },
-            "uptime": {
-                "name": "Uptime"
             },
             "wifi_bssid": {
                 "name": "Wi-Fi BSSID"
@@ -107,11 +121,20 @@
             }
         },
         "switch": {
+            "audio_reactive": {
+                "name": "Audio reactive"
+            },
+            "freeze": {
+                "name": "Freeze"
+            },
             "nightlight": {
                 "name": "Nightlight"
             },
             "reverse": {
                 "name": "Reverse"
+            },
+            "segment_freeze": {
+                "name": "Segment {segment} freeze"
             },
             "segment_reverse": {
                 "name": "Segment {segment} reverse"
@@ -124,11 +147,40 @@
             }
         }
     },
+    "exceptions": {
+        "connection_error": {
+            "message": "Error communicating with WLED API: {error}"
+        },
+        "duplicate_mac_address": {
+            "message": "Multiple WLED configuration entries exist for MAC address {mac_address}, remove the duplicates to migrate."
+        },
+        "firmware_upgrade_failed": {
+            "message": "Updating the WLED firmware failed: {error}"
+        },
+        "invalid_response_github_error": {
+            "message": "Invalid response from GitHub API: {error}"
+        },
+        "invalid_response_wled_error": {
+            "message": "Invalid response from WLED API: {error}"
+        },
+        "mac_address_mismatch": {
+            "message": "MAC address does not match the configured device. Expected to connect to device with MAC: {expected_mac}, but connected to device with MAC: {actual_mac}."
+        },
+        "no_playlist_running": {
+            "message": "No playlist is running on the WLED device."
+        },
+        "unsupported_version": {
+            "message": "The WLED device's firmware version is not supported: {error}"
+        }
+    },
     "options": {
         "step": {
             "init": {
                 "data": {
-                    "keep_master_light": "Keep main light, even with 1 LED segment."
+                    "keep_master_light": "Add 'Main' control even with single LED segment"
+                },
+                "data_description": {
+                    "keep_master_light": "Ensures the main light control is always available when you are dynamically adding and removing segments through automation."
                 }
             }
         }

@@ -1,16 +1,12 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "api_error": "S'ha produ\u00eft un error a l'API",
             "cannot_connect": "No s'ha pogut connectar, comprova l'adre\u00e7a IP de la c\u00e0mera",
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
-            "not_admin": "L'usuari ha de ser administrador, l'usuari \"{username}\" t\u00e9 nivell d'autoritzaci\u00f3 \"{userlevel}\"",
-            "password_incompatible": "La contrasenya cont\u00e9 car\u00e0cters especials incompatibles, nom\u00e9s es permeten els seg\u00fcents car\u00e0cters: a-z, A-Z, 0-9 o {special_chars}",
             "unknown": "Error inesperat"
         },
         "flow_title": "{hostname} ({ip_address})",
@@ -36,15 +32,26 @@
                     "on": "Detectat"
                 }
             },
-            "animal_lens_0": {
-                "name": "Lent d'animals 0",
+            "crossline_dog_cat": {
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
                 }
             },
-            "animal_lens_1": {
-                "name": "Lent d'animals 1",
+            "crossline_person": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "crossline_vehicle": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "cry": {
+                "name": "Nad\u00f3 plorant",
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
@@ -57,47 +64,61 @@
                     "on": "Detectat"
                 }
             },
-            "face_lens_0": {
-                "name": "Lent de cares 0",
+            "forgotten_item": {
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
                 }
             },
-            "face_lens_1": {
-                "name": "Lent de cares 1",
+            "intrusion_dog_cat": {
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
                 }
             },
-            "motion_lens_0": {
-                "name": "Lent de moviment 0",
+            "intrusion_person": {
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
                 }
             },
-            "motion_lens_1": {
-                "name": "Lent de moviment 1",
+            "intrusion_vehicle": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "io_input": {
+                "state": {
+                    "off": "Desconnectat",
+                    "on": "Connectat"
+                }
+            },
+            "linger_dog_cat": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "linger_person": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "linger_vehicle": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
+            "non-motor_vehicle": {
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
                 }
             },
             "package": {
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
-            "package_lens_0": {
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
-            "package_lens_1": {
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
@@ -110,36 +131,8 @@
                     "on": "Detectat"
                 }
             },
-            "person_lens_0": {
-                "name": "Lent de persones 0",
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
-            "person_lens_1": {
-                "name": "Lent de persones 1",
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
             "pet": {
                 "name": "Mascota",
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
-            "pet_lens_0": {
-                "name": "Lent de mascotes 0",
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
-            "pet_lens_1": {
-                "name": "Lent de mascotes 1",
                 "state": {
                     "off": "Lliure",
                     "on": "Detectat"
@@ -151,6 +144,12 @@
                     "on": "Dormint"
                 }
             },
+            "taken_item": {
+                "state": {
+                    "off": "Lliure",
+                    "on": "Detectat"
+                }
+            },
             "vehicle": {
                 "name": "Vehicle",
                 "state": {
@@ -158,28 +157,8 @@
                     "on": "Detectat"
                 }
             },
-            "vehicle_lens_0": {
-                "name": "Lent de vehicles 0",
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
-            "vehicle_lens_1": {
-                "name": "Lent de vehicles 1",
-                "state": {
-                    "off": "Lliure",
-                    "on": "Detectat"
-                }
-            },
             "visitor": {
                 "name": "Visitant"
-            },
-            "visitor_lens_0": {
-                "name": "Lent de visitant 0"
-            },
-            "visitor_lens_1": {
-                "name": "Lent de visitant 1"
             }
         },
         "button": {
@@ -273,6 +252,11 @@
             }
         },
         "select": {
+            "anti_flicker": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
             "auto_quick_reply_message": {
                 "name": "Missatge de resposta r\u00e0pida autom\u00e0tic",
                 "state": {
@@ -289,7 +273,7 @@
             },
             "binning_mode": {
                 "state": {
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
                     "off": "OFF",
                     "on": "ON"
                 }
@@ -297,7 +281,7 @@
             "day_night_mode": {
                 "name": "Mode dia/nit",
                 "state": {
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
                     "blackwhite": "Blanc i negre",
                     "color": "Color"
                 }
@@ -308,14 +292,26 @@
                     "always": "Sempre enc\u00e8s",
                     "alwayson": "Sempre enc\u00e8s",
                     "alwaysonatnight": "Autom\u00e0tic i sempre enc\u00e8s a la nit",
-                    "auto": "Autom\u00e0tic"
+                    "auto": "Auto",
+                    "stayoff": "Sempre apagat"
+                }
+            },
+            "exposure": {
+                "state": {
+                    "auto": "Auto"
+                }
+            },
+            "floodlight_event_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
                 }
             },
             "floodlight_mode": {
                 "name": "Mode focus",
                 "state": {
                     "adaptive": "Adaptatiu",
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
                     "autoadaptive": "Adaptatiu autom\u00e0tic",
                     "off": "OFF",
                     "onatnight": "Enc\u00e9n a la nit",
@@ -325,7 +321,7 @@
             "hdr": {
                 "name": "HDR",
                 "state": {
-                    "auto": "Autom\u00e0tic",
+                    "auto": "Auto",
                     "off": "OFF",
                     "on": "ON"
                 }
@@ -388,8 +384,26 @@
                     "pianokey": "Tecla de piano"
                 }
             },
+            "pet_tone": {
+                "state": {
+                    "attraction": "Atracci\u00f3",
+                    "citybird": "Ocell a la ciutat",
+                    "goodday": "Bon dia",
+                    "hophop": "Hop-hop",
+                    "off": "OFF",
+                    "originaltune": "Melodia original",
+                    "pianokey": "Tecla de piano"
+                }
+            },
             "ptz_preset": {
                 "name": "Preconfiguraci\u00f3 PTZ"
+            },
+            "scene_mode": {
+                "state": {
+                    "away": "Fora",
+                    "home": "A casa",
+                    "off": "OFF"
+                }
             },
             "vehicle_tone": {
                 "name": "To de vehicle",
@@ -496,20 +510,13 @@
         "firmware_update": {
             "title": "Cal actualitzar el microprogramari de Reolink"
         },
-        "hdr_switch_deprecated": {
-            "description": "L'entitat d'interruptor Reolink HDR est\u00e0 obsoleta i s'eliminar\u00e0 a HA 2025.2.0. S'ha substitu\u00eft per una entitat de selecci\u00f3 HDR que ofereix opcions `ON`, `OFF` i `autom\u00e0tic`. Per eliminar aquest problema, modifica les automatitzacions pertinents i desactiva l'entitat d'interruptor HDR.",
-            "title": "Interruptor Reolink HDR obsolet"
-        },
         "https_webhook": {
-            "description": "Els productes Reolink no poden enviar esdeveniments de moviment a una adre\u00e7a HTTPS (SSL); configura una adre\u00e7a HTTP (local) sota \"URL de Home Assistant\" a la [configuraci\u00f3 de xarxa]({network_link}). L'adre\u00e7a (local) actual \u00e9s: `{base_url}`, una adre\u00e7a v\u00e0lida podria ser, per exemple, `http://192.168.1.10:8123` on `192.168.1.10` \u00e9s la IP del dispositiu Home Assistant",
             "title": "L'URL del webhook de Reolink utilitza HTTPS (SSL)"
         },
         "ssl": {
-            "description": "Hi ha un certificat SSL global configurat a [configuration.yaml a http]({ssl_link}) mentre que una adre\u00e7a HTTP local `{base_url}` est\u00e0 configurada a \"Home Assistant URL\" a [configuraci\u00f3 de xarxa]({network_link}). Aix\u00f2 fa que el dispositiu Reolink no pugui accedir a Home Assistant per enviar els seus esdeveniments de moviment/IA. Assegura't que l'adre\u00e7a HTTP local no estigui coberta pel certificat SSL. Pots utilitzar, per exemple, el [complement NGINX]({nginx_link}) en lloc d'un certificat SSL aplicat globalment.",
             "title": "Reolink no \u00e9s compatible amb certificats SSL globals"
         },
         "webhook_url": {
-            "description": "No s'ha rebut l'estat inicial de l'ONVIF de {name}. \u00c9s probable que la c\u00e0mera Reolink no pugui accedir a l'URL (local) de Home Assistant `{base_url}`, configura una adre\u00e7a HTTP (local) a \"URL de Home Assistant\" a la [configuraci\u00f3 de xarxa]({network_link}) que apunti a Home Assistant. Per exemple, `http://192.168.1.10:8123` on `192.168.1.10` \u00e9s la IP del dispositiu Home Assistant. A m\u00e9s, assegura't que la c\u00e0mera Reolink pugui accedir a aquest URL. S'utilitza sondeig d'estat 'motion/AI' fins que es rep el primer missatge d'ONVIF.",
             "title": "URL del webhook de Reolink inaccessible"
         }
     },

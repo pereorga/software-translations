@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "reconfigure_successful": "Re-configuration was successful",
             "unsupported_model": "This printer model is not supported."
         },
         "error": {
@@ -20,47 +19,137 @@
                 "data_description": {
                     "host": "The hostname or IP address of the Brother printer to control."
                 },
-                "description": "Update configuration for {printer_name}."
+                "description": "Update configuration for {printer_name}.",
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "community": "SNMP Community",
+                            "port": "Port"
+                        },
+                        "data_description": {
+                            "community": "A simple password for devices to communicate to each other.",
+                            "port": "The SNMP port of the Brother printer."
+                        },
+                        "name": "Additional settings"
+                    }
+                }
             },
             "user": {
                 "data": {
                     "host": "Host",
-                    "type": "Type of the printer"
+                    "type": "Printer type"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of the Brother printer to control."
+                    "host": "The hostname or IP address of the Brother printer to control.",
+                    "type": "The type of the Brother printer."
+                },
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "community": "SNMP Community",
+                            "port": "Port"
+                        },
+                        "data_description": {
+                            "community": "A simple password for devices to communicate to each other.",
+                            "port": "The SNMP port of the Brother printer."
+                        },
+                        "name": "Additional settings"
+                    }
                 }
             },
             "zeroconf_confirm": {
                 "data": {
-                    "type": "Type of the printer"
+                    "type": "Printer type"
+                },
+                "data_description": {
+                    "type": "The type of the Brother printer."
                 },
                 "description": "Do you want to add the printer {model} with serial number `{serial_number}` to Home Assistant?",
+                "sections": {
+                    "advanced_settings": {
+                        "data": {
+                            "community": "SNMP Community",
+                            "port": "Port"
+                        },
+                        "data_description": {
+                            "community": "A simple password for devices to communicate to each other.",
+                            "port": "The SNMP port of the Brother printer."
+                        },
+                        "name": "Additional settings"
+                    }
+                },
                 "title": "Discovered Brother Printer"
             }
         }
     },
     "entity": {
+        "binary_sensor": {
+            "door_open": {
+                "name": "Door open"
+            },
+            "input_tray_empty": {
+                "name": "Input tray empty"
+            },
+            "input_tray_missing": {
+                "name": "Input tray missing"
+            },
+            "jammed": {
+                "name": "Paper jam"
+            },
+            "low_ink": {
+                "name": "Low ink"
+            },
+            "low_paper": {
+                "name": "Low paper"
+            },
+            "low_toner": {
+                "name": "Low toner"
+            },
+            "no_ink": {
+                "name": "No ink"
+            },
+            "no_paper": {
+                "name": "No paper"
+            },
+            "no_toner": {
+                "name": "No toner"
+            },
+            "output_full": {
+                "name": "Output tray full"
+            },
+            "output_near_full": {
+                "name": "Output tray almost full"
+            },
+            "output_tray_missing": {
+                "name": "Output tray missing"
+            },
+            "overdue_prevent_maint": {
+                "name": "Preventive maintenance overdue"
+            },
+            "service_requested": {
+                "name": "Service requested"
+            }
+        },
         "sensor": {
             "belt_unit_remaining_life": {
-                "name": "Belt unit remaining lifetime"
+                "name": "Belt unit life"
             },
             "black_drum_page_counter": {
-                "name": "Black drum page counter",
+                "name": "Black drum pages",
                 "unit_of_measurement": "pages"
             },
             "black_drum_remaining_life": {
-                "name": "Black drum remaining lifetime"
+                "name": "Black drum life"
             },
             "black_drum_remaining_pages": {
-                "name": "Black drum remaining pages",
+                "name": "Black drum pages left",
                 "unit_of_measurement": "pages"
             },
             "black_ink_remaining": {
-                "name": "Black ink remaining"
+                "name": "Black ink"
             },
             "black_toner_remaining": {
-                "name": "Black toner remaining"
+                "name": "Black toner"
             },
             "bw_pages": {
                 "name": "B/W pages",
@@ -71,92 +160,128 @@
                 "unit_of_measurement": "pages"
             },
             "cyan_drum_page_counter": {
-                "name": "Cyan drum page counter",
+                "name": "Cyan drum pages",
                 "unit_of_measurement": "pages"
             },
             "cyan_drum_remaining_life": {
-                "name": "Cyan drum remaining lifetime"
+                "name": "Cyan drum life"
             },
             "cyan_drum_remaining_pages": {
-                "name": "Cyan drum remaining pages",
+                "name": "Cyan drum pages left",
                 "unit_of_measurement": "pages"
             },
             "cyan_ink_remaining": {
-                "name": "Cyan ink remaining"
+                "name": "Cyan ink"
             },
             "cyan_toner_remaining": {
-                "name": "Cyan toner remaining"
+                "name": "Cyan toner"
+            },
+            "device_status": {
+                "name": "Health",
+                "state": {
+                    "down": "Down",
+                    "running": "Running",
+                    "testing": "Testing",
+                    "warning": "Warning"
+                }
             },
             "drum_page_counter": {
-                "name": "Drum page counter",
+                "name": "Drum pages",
                 "unit_of_measurement": "pages"
             },
             "drum_remaining_life": {
-                "name": "Drum remaining lifetime"
+                "name": "Drum life"
             },
             "drum_remaining_pages": {
-                "name": "Drum remaining pages",
+                "name": "Drum pages left",
                 "unit_of_measurement": "pages"
             },
             "duplex_unit_page_counter": {
-                "name": "Duplex unit page counter",
+                "name": "Duplex pages",
                 "unit_of_measurement": "pages"
             },
             "fuser_remaining_life": {
-                "name": "Fuser remaining lifetime"
+                "name": "Fuser life"
+            },
+            "ink_capture_box_remaining_life": {
+                "name": "Ink capture box life"
             },
             "laser_remaining_life": {
-                "name": "Laser remaining lifetime"
-            },
-            "last_restart": {
-                "name": "Last restart"
+                "name": "Laser life"
             },
             "magenta_drum_page_counter": {
-                "name": "Magenta drum page counter",
+                "name": "Magenta drum pages",
                 "unit_of_measurement": "pages"
             },
             "magenta_drum_remaining_life": {
-                "name": "Magenta drum remaining lifetime"
+                "name": "Magenta drum life"
             },
             "magenta_drum_remaining_pages": {
-                "name": "Magenta drum remaining pages",
+                "name": "Magenta drum pages left",
                 "unit_of_measurement": "pages"
             },
             "magenta_ink_remaining": {
-                "name": "Magenta ink remaining"
+                "name": "Magenta ink"
             },
             "magenta_toner_remaining": {
-                "name": "Magenta toner remaining"
+                "name": "Magenta toner"
             },
             "page_counter": {
-                "name": "Page counter",
+                "name": "Total pages",
                 "unit_of_measurement": "pages"
             },
             "pf_kit_1_remaining_life": {
-                "name": "PF Kit 1 remaining lifetime"
+                "name": "PF Kit 1 life"
             },
             "pf_kit_mp_remaining_life": {
-                "name": "PF Kit MP remaining lifetime"
+                "name": "PF Kit MP life"
+            },
+            "printer_status": {
+                "state": {
+                    "idle": "Idle",
+                    "other": "Other",
+                    "printing": "Printing",
+                    "warmup": "Warming up"
+                }
             },
             "status": {
-                "name": "Status"
+                "name": "Message"
             },
             "yellow_drum_page_counter": {
-                "name": "Yellow drum page counter",
+                "name": "Yellow drum pages",
                 "unit_of_measurement": "pages"
             },
             "yellow_drum_remaining_life": {
-                "name": "Yellow drum remaining lifetime"
+                "name": "Yellow drum life"
             },
             "yellow_drum_remaining_pages": {
-                "name": "Yellow drum remaining pages",
+                "name": "Yellow drum pages left",
                 "unit_of_measurement": "pages"
             },
             "yellow_ink_remaining": {
-                "name": "Yellow ink remaining"
+                "name": "Yellow ink"
             },
             "yellow_toner_remaining": {
-                "name": "Yellow toner remaining"
+                "name": "Yellow toner"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "An error occurred while connecting to the {device} printer: {error}"
+        },
+        "serial_mismatch": {
+            "message": "The serial number for {device} doesn't match the one in the configuration. It's possible that the two Brother printers have swapped IP addresses. Restore the previous IP address configuration or reconfigure the devices with Home Assistant."
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from the {device} printer: {error}"
+        }
+    },
+    "selector": {
+        "printer_type": {
+            "options": {
+                "ink": "Ink",
+                "laser": "Laser"
             }
         }
     }

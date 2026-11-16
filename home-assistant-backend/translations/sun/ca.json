@@ -1,4 +1,38 @@
 {
+    "common": {
+        "condition_threshold_name": "Tipus de llindar"
+    },
+    "conditions": {
+        "elevation": {
+            "description": "Comprova l'elevaci\u00f3 del sol respecte a un llindar definit.",
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            },
+            "name": "Angle d'elevaci\u00f3 solar"
+        },
+        "is_ascending": {
+            "description": "Comprova si el sol est\u00e0 ascendint.",
+            "name": "El sol est\u00e0 pujant"
+        },
+        "is_descending": {
+            "description": "Comprova si el sol est\u00e0 descendint.",
+            "name": "El sol est\u00e0 baixant"
+        },
+        "is_night": {
+            "description": "Comprova si \u00e9s de nit.",
+            "name": "\u00c9s de nit"
+        },
+        "is_set": {
+            "description": "Comprova si el sol s'ha post.",
+            "name": "El sol s'ha post"
+        },
+        "is_up": {
+            "description": "Comprova si el sol ha sortit.",
+            "name": "El sol ha sortit"
+        }
+    },
     "config": {
         "step": {
             "user": {
@@ -7,6 +41,13 @@
         }
     },
     "entity": {
+        "binary_sensor": {
+            "solar_rising": {
+                "state": {
+                    "off": "Ponent-se"
+                }
+            }
+        },
         "sensor": {
             "next_dawn": {
                 "name": "Pr\u00f2xima alba"
@@ -31,9 +72,6 @@
             },
             "solar_elevation": {
                 "name": "Elevaci\u00f3 del sol"
-            },
-            "solar_rising": {
-                "name": "Sortida del sol"
             }
         }
     },
@@ -46,5 +84,33 @@
             }
         }
     },
-    "title": "Sol"
+    "selector": {
+        "twilight_type": {
+            "options": {
+                "any": "Qualsevol",
+                "astronomical": "Astron\u00f2mic",
+                "civil": "Civil",
+                "nautical": "N\u00e0utic"
+            }
+        }
+    },
+    "title": "Sol",
+    "triggers": {
+        "solar_midnight": {
+            "description": "Es dispara quan el sol arriba al seu punt m\u00e9s baix.",
+            "name": "Mitjanit solar"
+        },
+        "solar_noon": {
+            "description": "Es dispara quan el sol arriba al seu punt m\u00e9s alt.",
+            "name": "Migdia/tr\u00e0nsit solar"
+        },
+        "sunrise": {
+            "description": "Es dispara quan surt el sol.",
+            "name": "Sortida del sol"
+        },
+        "sunset": {
+            "description": "Es dispara quan es pon el sol.",
+            "name": "Posta de sol"
+        }
+    }
 }

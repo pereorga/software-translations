@@ -1,13 +1,27 @@
 {
     "config": {
-        "abort": {
-            "no_devices_found": "No s'han trobat dispositius a la xarxa",
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
-        },
         "step": {
             "confirm": {
                 "description": "Vols comen\u00e7ar la configuraci\u00f3?"
             }
+        }
+    },
+    "entity": {
+        "light": {
+            "govee_light": {
+                "state_attributes": {
+                    "effect": {
+                        "state": {
+                            "sunset": "Posta de sol"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "no_devices_found": {
+            "message": "No s'han trobat dispositius a la xarxa"
         }
     }
 }

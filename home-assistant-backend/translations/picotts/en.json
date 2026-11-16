@@ -1,0 +1,32 @@
+{
+    "common": {
+        "binary_not_found": "pico2wave binary could not be found"
+    },
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured",
+            "binary_not_found": "pico2wave binary could not be found"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "language": "Language"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "binary_not_found": {
+            "message": "pico2wave binary could not be found"
+        },
+        "file_read_error": {
+            "message": "Error trying to read {filename}"
+        },
+        "returncode_error": {
+            "message": "Error running pico2wave, return code: {returncode}"
+        },
+        "timeout_error": {
+            "message": "Timeout running pico2wave"
+        }
+    }
+}

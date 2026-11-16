@@ -6,15 +6,13 @@
     "config": {
         "error": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "cannot_connect": "Ha fallat la connexi\u00f3",
-            "timeout_connect": "S'ha esgotat el temps m\u00e0xim d'espera per establir connexi\u00f3"
+            "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
             "init": {
                 "data": {
                     "device": "Ruta o URL",
-                    "id": "ID",
-                    "name": "Nom"
+                    "id": "ID"
                 }
             }
         }
@@ -83,10 +81,18 @@
             }
         },
         "select": {
+            "dhw_ovrd_mode": {
+                "state": {
+                    "override_disabled": "Desactivada"
+                }
+            },
             "gpio_mode_n": {
                 "state": {
+                    "away": "Fora",
+                    "dhw_block": "Bloqueja l'aigua calenta",
                     "ds1820": "DS1820",
                     "ground": "Massa",
+                    "home": "A casa",
                     "input": "Entrada",
                     "vcc": "Vcc (5V)"
                 }
@@ -136,11 +142,6 @@
             "product_version": {
                 "name": "Versi\u00f3 de producte"
             }
-        }
-    },
-    "issues": {
-        "deprecated_import_from_configuration_yaml": {
-            "title": "Configuraci\u00f3 obsoleta"
         }
     },
     "options": {
@@ -227,6 +228,10 @@
         },
         "set_hot_water_ovrd": {
             "fields": {
+                "dhw_override": {
+                    "description": "Controla l'opci\u00f3 d'activaci\u00f3 de l'aigua calenta sanit\u00e0ria. Si la caldera s'ha configurat per permetre que la unitat d'habitaci\u00f3 controli quan mantenir una petita quantitat d'aigua preescalfada, aquesta ordre hi pot influir. El valor ha de ser 0 o 1 per activar la sobreescriptura en estat apagat o enc\u00e8s, o \"A\" per desactivar la sobreescriptura.",
+                    "name": "Sobreescriptura de l'aigua calenta sanit\u00e0ria"
+                },
                 "gateway_id": {
                     "name": "ID de la passarel\u00b7la"
                 }
@@ -238,6 +243,7 @@
                     "name": "ID de la passarel\u00b7la"
                 },
                 "temperature": {
+                    "description": "El punt de consigna de l'aigua calenta sanit\u00e0ria que s'establir\u00e0 a la passarel\u00b7la. No totes les calderes admeten aquesta funci\u00f3. S'accepten valors entre 0 i 90, per\u00f2 no totes les calderes admeten aquest interval. Comprova els valors dels sensors slave_dhw_min_setp i slave_dhw_max_setp per veure l'interval adm\u00e8s a la teva caldera.",
                     "name": "Temperatura"
                 }
             }

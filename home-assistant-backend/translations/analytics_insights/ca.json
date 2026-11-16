@@ -6,13 +6,7 @@
         },
         "step": {
             "user": {
-                "data": {
-                    "tracked_addons": "Complements",
-                    "tracked_custom_integrations": "Integracions personalitzades"
-                },
                 "data_description": {
-                    "tracked_addons": "Selecciona els complements als quals fer seguiment",
-                    "tracked_custom_integrations": "Selecciona les integracions personalitzades a monitorar",
                     "tracked_integrations": "Selecciona les integracions a monitorar"
                 }
             }
@@ -20,11 +14,22 @@
     },
     "entity": {
         "sensor": {
+            "apps": {
+                "unit_of_measurement": "instal\u00b7lacions actives"
+            },
+            "core_integrations": {
+                "unit_of_measurement": "instal\u00b7lacions actives"
+            },
+            "custom_integrations": {
+                "unit_of_measurement": "instal\u00b7lacions actives"
+            },
             "total_active_installations": {
-                "name": "Instal\u00b7lacions actives totals"
+                "name": "Instal\u00b7lacions actives totals",
+                "unit_of_measurement": "instal\u00b7lacions actives"
             },
             "total_reports_integrations": {
-                "name": "Integracions totals (notificades)"
+                "name": "Integracions totals (notificades)",
+                "unit_of_measurement": "instal\u00b7lacions actives"
             }
         }
     },
@@ -34,13 +39,7 @@
         },
         "step": {
             "init": {
-                "data": {
-                    "tracked_addons": "Complements",
-                    "tracked_custom_integrations": "Integracions personalitzades"
-                },
                 "data_description": {
-                    "tracked_addons": "Selecciona els complements als quals fer seguiment",
-                    "tracked_custom_integrations": "Selecciona les integracions personalitzades a monitorar",
                     "tracked_integrations": "Selecciona les integracions a monitorar"
                 }
             }

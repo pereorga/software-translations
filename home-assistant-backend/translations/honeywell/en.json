@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "reauth_successful": "Re-authentication was successful"
-        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication"
@@ -10,7 +7,8 @@
         "step": {
             "reauth_confirm": {
                 "data": {
-                    "password": "Password"
+                    "password": "Password",
+                    "username": "Username"
                 },
                 "description": "The Honeywell integration needs to re-authenticate your account",
                 "title": "Authentication expired for {name}"
@@ -20,7 +18,7 @@
                     "password": "Password",
                     "username": "Username"
                 },
-                "description": "Please enter the credentials used to log into mytotalconnectcomfort.com."
+                "description": "Please enter the credentials used to log in to mytotalconnectcomfort.com."
             }
         }
     },
@@ -67,6 +65,9 @@
         "fan_mode_failed": {
             "message": "Honeywell could not set fan mode"
         },
+        "no_devices_found": {
+            "message": "No Honeywell devices found"
+        },
         "set_hold_failed": {
             "message": "Honeywell could not set permanent hold"
         },
@@ -77,7 +78,7 @@
             "message": "Honeywell could not stop hold mode"
         },
         "switch_failed_off": {
-            "message": "Honeywell could turn off emergency heat mode."
+            "message": "Honeywell could not turn off emergency heat mode."
         },
         "switch_failed_on": {
             "message": "Honeywell could not set system mode to emergency heat mode."
@@ -89,7 +90,7 @@
             "message": "Honeywell set temperature failed"
         },
         "temp_failed_range": {
-            "message": "Honeywell set temperature failed: temperature out of range. Mode: {mode}, Heat Temperuature: {heat}, Cool Temperature: {cool}"
+            "message": "Honeywell set temperature failed: temperature out of range. Mode: {mode}, Heat temperature: {heat}, Cool temperature: {cool}"
         },
         "temp_failed_value": {
             "message": "Honeywell set temperature failed: invalid temperature {temperature}"

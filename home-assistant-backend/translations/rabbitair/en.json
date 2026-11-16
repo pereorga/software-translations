@@ -7,7 +7,7 @@
             "cannot_connect": "Failed to connect",
             "invalid_access_token": "Invalid access token",
             "invalid_host": "Invalid hostname or IP address",
-            "timeout_connect": "Timeout establishing connection",
+            "timeout_connect": "Timeout while establishing a connection",
             "unknown": "Unexpected error"
         },
         "step": {
@@ -15,6 +15,33 @@
                 "data": {
                     "access_token": "Access token",
                     "host": "Host"
+                }
+            }
+        }
+    },
+    "entity": {
+        "fan": {
+            "rabbitair": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "manual": "Manual",
+                            "pollen": "Pollen"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "air_quality": {
+                "name": "Air quality",
+                "state": {
+                    "high": "High",
+                    "highest": "Highest",
+                    "low": "Low",
+                    "lowest": "Lowest",
+                    "medium": "Medium"
                 }
             }
         }

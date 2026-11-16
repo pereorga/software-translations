@@ -2,8 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -34,28 +32,61 @@
         }
     },
     "entity": {
-        "binary_sensor": {
-            "jvc_power": {
-                "name": "Pot\u00e8ncia"
-            }
-        },
         "select": {
+            "anamorphic": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "clear_motion_drive": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "off": "OFF"
+                }
+            },
+            "dynamic_control": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "off": "OFF"
+                }
+            },
             "input": {
                 "name": "Entrada",
                 "state": {
                     "hdmi1": "HDMI 1",
                     "hdmi2": "HDMI 2"
                 }
+            },
+            "light_power": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "mid": "Mitj\u00e0/na",
+                    "normal": "Normal"
+                }
+            },
+            "motion_enhance": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "off": "OFF"
+                }
             }
         },
         "sensor": {
-            "jvc_power_status": {
+            "hdr": {
+                "name": "HDR",
                 "state": {
-                    "cooling": "Refredant",
+                    "hdr": "HDR"
+                }
+            },
+            "power": {
+                "state": {
                     "error": "Error",
                     "on": "ON",
-                    "standby": "En espera",
-                    "warming": "Escalfant"
+                    "standby": "En espera"
                 }
             }
         }

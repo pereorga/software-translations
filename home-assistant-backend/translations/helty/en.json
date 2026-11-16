@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of the Helty Flow unit on your network."
+                },
+                "title": "Connect to your Helty Flow"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "reset_filter": {
+                "name": "Reset filter"
+            }
+        },
+        "sensor": {
+            "indoor_humidity": {
+                "name": "Indoor humidity"
+            },
+            "indoor_temperature": {
+                "name": "Indoor temperature"
+            },
+            "outdoor_temperature": {
+                "name": "Outdoor temperature"
+            }
+        }
+    },
+    "exceptions": {
+        "reset_filter_failed": {
+            "message": "Failed to reset the filter."
+        },
+        "set_fan_mode_failed": {
+            "message": "Failed to set the ventilation mode."
+        }
+    }
+}

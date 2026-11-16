@@ -1,19 +1,14 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El servei ja est\u00e0 configurat"
-        },
-        "error": {
+            "already_configured": "El servei ja est\u00e0 configurat",
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "invalid_access_token": "[%key::common::config_flow::error::invalid_access_token%]",
-            "timeout": "S'ha esgotat el temps m\u00e0xim d'espera per establir connexi\u00f3"
+            "invalid_access_token": "Token d'acc\u00e9s inv\u00e0lid",
+            "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3."
         },
         "step": {
-            "user": {
-                "data": {
-                    "access_token": "Token d'acc\u00e9s"
-                },
-                "description": "Introdueix el token d'acc\u00e9s de {url}"
+            "reauth_confirm": {
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
         }
     },
@@ -70,17 +65,8 @@
             "peak_hour_time": {
                 "name": "Hora de consum m\u00e0xim"
             },
-            "power": {
-                "name": "Pot\u00e8ncia"
-            },
-            "power_factor": {
-                "name": "Factor de pot\u00e8ncia"
-            },
             "power_production": {
                 "name": "Pot\u00e8ncia produ\u00efda"
-            },
-            "signal_strength": {
-                "name": "Pot\u00e8ncia del senyal"
             },
             "voltage_phase1": {
                 "name": "Tensi\u00f3 fase 1"

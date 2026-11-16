@@ -10,11 +10,10 @@
             "user": {
                 "data": {
                     "api_key": "API key",
-                    "latitude": "Latitude",
-                    "longitude": "Longitude",
+                    "location": "Location",
                     "name": "Name of the integration"
                 },
-                "description": "To generate API key go to https://opendata.aemet.es/centrodedescargas/altaUsuario"
+                "description": "To generate API key go to {api_key_url}"
             }
         }
     },
@@ -23,6 +22,11 @@
             "weather_radar": {
                 "name": "Weather radar"
             }
+        }
+    },
+    "exceptions": {
+        "town_not_found": {
+            "message": "No AEMET town found for coordinates {latitude}, {longitude}"
         }
     },
     "options": {

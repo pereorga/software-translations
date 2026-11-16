@@ -6,15 +6,20 @@
         "step": {
             "user": {
                 "description": "Do you want to configure the shopping list?",
-                "title": "Shopping List"
+                "title": "Shopping list"
             }
         }
     },
     "entity": {
         "todo": {
             "shopping_list": {
-                "name": "Shopping List"
+                "name": "Shopping list"
             }
+        }
+    },
+    "exceptions": {
+        "item_not_found": {
+            "message": "No item named {name} found in the shopping list."
         }
     },
     "services": {
@@ -26,29 +31,29 @@
                     "name": "Name"
                 }
             },
-            "name": "Add item"
+            "name": "Add shopping list item"
         },
         "clear_completed_items": {
             "description": "Removes completed items from the shopping list.",
-            "name": "Clear completed items"
+            "name": "Clear completed shopping list items"
         },
         "complete_all": {
             "description": "Marks all items as completed in the shopping list (without removing them from the list).",
-            "name": "Complete all"
+            "name": "Complete all shopping list items"
         },
         "complete_item": {
-            "description": "Marks the first item with matching name as completed in the shopping list.",
+            "description": "Marks all items with matching name as completed in the shopping list. Skips items that are already complete.",
             "fields": {
                 "name": {
                     "description": "The name of the item to mark as completed (without removing).",
                     "name": "Name"
                 }
             },
-            "name": "Complete item"
+            "name": "Complete shopping list item"
         },
         "incomplete_all": {
             "description": "Marks all items as incomplete in the shopping list.",
-            "name": "Incomplete all"
+            "name": "Incomplete all shopping list items"
         },
         "incomplete_item": {
             "description": "Marks the first item with matching name as incomplete in the shopping list.",
@@ -58,7 +63,7 @@
                     "name": "Name"
                 }
             },
-            "name": "Incomplete item"
+            "name": "Incomplete shopping list item"
         },
         "remove_item": {
             "description": "Removes the first item with matching name from the shopping list.",
@@ -68,7 +73,7 @@
                     "name": "Name"
                 }
             },
-            "name": "Remove item"
+            "name": "Remove shopping list item"
         },
         "sort": {
             "description": "Sorts all items by name in the shopping list.",
@@ -78,8 +83,8 @@
                     "name": "Sort reverse"
                 }
             },
-            "name": "Sort all items"
+            "name": "Sort shopping list"
         }
     },
-    "title": "Shopping List"
+    "title": "Shopping list"
 }

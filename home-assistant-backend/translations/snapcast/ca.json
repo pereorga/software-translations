@@ -19,19 +19,6 @@
         }
     },
     "services": {
-        "join": {
-            "fields": {
-                "entity_id": {
-                    "description": "Reproductors a unir-se al \"mestre\".",
-                    "name": "Entitat"
-                },
-                "master": {
-                    "description": "ID d'entitat de reproductor amb el qual sincronitzar.",
-                    "name": "Mestre"
-                }
-            },
-            "name": "Uneix"
-        },
         "restore": {
             "name": "Restaura"
         },
@@ -45,9 +32,6 @@
         },
         "snapshot": {
             "name": "Instant\u00e0nia"
-        },
-        "unjoin": {
-            "name": "Desuneix"
         }
     }
 }

@@ -1,0 +1,65 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_infrared_emitters": "No infrared emitter entities found. Please set up an infrared device first."
+        },
+        "error": {
+            "no_hvac_modes": "Select at least one supported mode."
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "hvac_modes": "Supported modes",
+                    "infrared_emitter_entity_id": "Infrared emitter",
+                    "infrared_receiver_entity_id": "Infrared receiver"
+                },
+                "data_description": {
+                    "hvac_modes": "Select the operating modes your AC unit supports. Heat is not available on all models.",
+                    "infrared_emitter_entity_id": "The infrared emitter entity to use for sending commands.",
+                    "infrared_receiver_entity_id": "Optional \u2014 allows the integration to update state when the physical remote is used."
+                },
+                "description": "Change the infrared entities and the supported modes of your Gree AC.",
+                "title": "Reconfigure Gree AC"
+            },
+            "user": {
+                "data": {
+                    "hvac_modes": "Supported modes",
+                    "infrared_emitter_entity_id": "Infrared emitter",
+                    "infrared_receiver_entity_id": "Infrared receiver"
+                },
+                "data_description": {
+                    "hvac_modes": "Select the operating modes your AC unit supports. Heat is not available on all models.",
+                    "infrared_emitter_entity_id": "The infrared emitter entity to use for sending commands.",
+                    "infrared_receiver_entity_id": "Optional \u2014 allows the integration to update state when the physical remote is used."
+                },
+                "description": "Select an infrared emitter and the modes your Gree AC supports.",
+                "title": "Set up Gree AC"
+            }
+        }
+    },
+    "entity": {
+        "switch": {
+            "light": {
+                "name": "Panel light"
+            },
+            "turbo": {
+                "name": "Turbo"
+            },
+            "xfan": {
+                "name": "Xtra fan"
+            }
+        }
+    },
+    "selector": {
+        "hvac_modes": {
+            "options": {
+                "auto": "Auto",
+                "cool": "Cool",
+                "dry": "Dry",
+                "fan_only": "Fan only",
+                "heat": "Heat"
+            }
+        }
+    }
+}

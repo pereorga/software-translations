@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -26,6 +25,11 @@
             }
         },
         "select": {
+            "back_led_brightness": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
             "co2_automatic_baseline_calibration": {
                 "state": {
                     "0": "OFF",
@@ -36,6 +40,22 @@
                     "90": "90 dies"
                 }
             },
+            "front_led_brightness": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "gps_mode": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "led_bar_mode": {
+                "state": {
+                    "co2": "Di\u00f2xid de carboni",
+                    "off": "OFF"
+                }
+            },
             "nox_index_learning_time_offset": {
                 "state": {
                     "12": "12 hores",
@@ -43,6 +63,11 @@
                     "360": "360 hores",
                     "60": "60 hores",
                     "720": "720 hores"
+                }
+            },
+            "touch_led_intensity": {
+                "state": {
+                    "off": "OFF"
                 }
             },
             "voc_index_learning_time_offset": {
@@ -61,6 +86,12 @@
             },
             "led_bar_brightness": {
                 "name": "Brillantor de la barra LED"
+            },
+            "led_bar_mode": {
+                "state": {
+                    "co2": "Di\u00f2xid de carboni",
+                    "off": "OFF"
+                }
             },
             "pm003_count": {
                 "name": "PM 0.3"

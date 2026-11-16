@@ -15,8 +15,7 @@
             },
             "user": {
                 "data": {
-                    "host": "Host",
-                    "name": "Hub Name"
+                    "host": "Host"
                 },
                 "data_description": {
                     "host": "The hostname or IP address of your Logitech Harmony Hub."
@@ -35,20 +34,34 @@
             }
         }
     },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "{name}: Unable to connect to hub at {address}:8088"
+        },
+        "connection_error": {
+            "message": "{name}: An error occurred while connecting to hub at {address}:8088"
+        },
+        "connection_timeout": {
+            "message": "{name}: Connection timed out to hub at {address}:8088"
+        }
+    },
     "options": {
+        "abort": {
+            "entry_not_loaded": "The options can be changed once the hub has been set up."
+        },
         "step": {
             "init": {
                 "data": {
                     "activity": "The default activity to execute when none is specified.",
                     "delay_secs": "The delay between sending commands."
                 },
-                "description": "Adjust Harmony Hub Options"
+                "description": "Adjust Harmony Hub options"
             }
         }
     },
     "services": {
         "change_channel": {
-            "description": "Sends change channel command to the Harmony HUB.",
+            "description": "Sends a change channel command to the Harmony Hub.",
             "fields": {
                 "channel": {
                     "description": "Channel number to change to.",

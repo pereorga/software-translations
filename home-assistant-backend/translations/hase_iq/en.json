@@ -1,0 +1,41 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The IP address or hostname of your stove."
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "heat_up": {
+                "name": "Heat-up"
+            },
+            "performance": {
+                "name": "Performance"
+            },
+            "phase": {
+                "name": "Phase",
+                "state": {
+                    "burning_out": "Burning out",
+                    "heating_up": "Heating up",
+                    "idle": "Idle",
+                    "needs_wood": "Needs wood",
+                    "nominal": "Nominal"
+                }
+            }
+        }
+    }
+}

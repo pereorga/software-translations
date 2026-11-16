@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
-        },
         "step": {
             "confirm": {
                 "description": "Make sure to configure the 'split topic' data sources in DSMR Reader."
@@ -262,7 +259,7 @@
     },
     "issues": {
         "cannot_subscribe_mqtt_topic": {
-            "description": "The DSMR Reader integration cannot subscribe to the MQTT topic: `{topic}`. Please check the configuration of the MQTT broker and the topic.\nDSMR Reader needs to be running, before starting this integration.",
+            "description": "The DSMR Reader integration cannot subscribe to the MQTT topic: `{topic}`. Please check the configuration of the MQTT broker and the topic.\nDSMR Reader needs to be running before starting this integration.",
             "title": "Cannot subscribe to MQTT topic {topic_title}"
         }
     }

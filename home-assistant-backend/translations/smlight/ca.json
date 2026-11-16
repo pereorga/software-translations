@@ -3,8 +3,7 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "cannot_connect": "Ha fallat la connexi\u00f3",
-            "reauth_failed": "Autenticaci\u00f3 inv\u00e0lida",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "reauth_failed": "Autenticaci\u00f3 inv\u00e0lida"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -29,12 +28,14 @@
                 },
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3"
-                },
-                "data_description": {
-                    "host": "Nom d'amfitri\u00f3 o adre\u00e7a IP del dispositiu SMLIGHT SLZB-06x"
                 }
             }
         }
@@ -46,6 +47,11 @@
             },
             "vpn": {
                 "name": "VPN"
+            }
+        },
+        "light": {
+            "ambilight": {
+                "name": "Ambilight"
             }
         },
         "sensor": {
@@ -72,6 +78,24 @@
         "switch": {
             "vpn_enabled": {
                 "name": "VPN activada"
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_auth": {
+            "message": "Autenticaci\u00f3 inv\u00e0lida"
+        }
+    },
+    "options": {
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
+        }
+    },
+    "selector": {
+        "ble_scanner_mode": {
+            "options": {
+                "disabled": "Desactivada"
             }
         }
     }

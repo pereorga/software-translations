@@ -1,14 +1,35 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured"
+            "already_configured": "Account is already configured",
+            "unique_id_mismatch": "The provided token belongs to a different account than the configured one."
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
+        "initiate_flow": {
+            "user": "Add account"
+        },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "token": "Token"
+                },
+                "data_description": {
+                    "token": "The NYT Games NYT-S cookie value."
+                },
+                "description": "The token for your NYT Games account has expired or is invalid. Please enter a new token."
+            },
+            "reconfigure": {
+                "data": {
+                    "token": "Token"
+                },
+                "data_description": {
+                    "token": "The NYT Games NYT-S cookie value."
+                }
+            },
             "user": {
                 "data": {
                     "token": "Token"
@@ -48,6 +69,14 @@
             "wordles_played": {
                 "name": "Played"
             }
+        }
+    },
+    "exceptions": {
+        "authentication_error": {
+            "message": "Authentication with NYT Games failed. Please reauthenticate."
+        },
+        "update_error": {
+            "message": "An error occurred while fetching data from NYT Games: {error}"
         }
     }
 }

@@ -1,0 +1,73 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "ha_control_disabled": "Failed to add. Please enable Home Assistant control in the device web interface",
+            "invalid_auth": "Invalid authentication",
+            "missing_data": "Missing required data",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Password",
+                    "port": "Port",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "password": "Device administrator password",
+                    "port": "Port number for device communication",
+                    "verify_ssl": "Enable SSL certificate verification (recommended for devices with valid certificates)"
+                },
+                "description": "Please enter authentication information for {model} ({host})",
+                "title": "Device authentication"
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "IP address or hostname of the device"
+                },
+                "description": "Please enter your device information",
+                "title": "Add Grandstream device"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "device_status": {
+                "name": "Device status",
+                "state": {
+                    "available": "Available",
+                    "busy": "Busy",
+                    "no_available_account": "No available account",
+                    "offline": "Offline",
+                    "preview": "Preview",
+                    "ringing": "Ringing"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "api_setup_failed": {
+            "message": "API setup failed: {error}"
+        },
+        "communication_error": {
+            "message": "Error communicating with device: {error}"
+        },
+        "ha_control_disabled": {
+            "message": "Home Assistant control is disabled on the device. Please enable it in the device web interface"
+        },
+        "invalid_auth": {
+            "message": "Authentication failed - invalid credentials"
+        },
+        "no_status": {
+            "message": "Failed to fetch device status"
+        }
+    }
+}

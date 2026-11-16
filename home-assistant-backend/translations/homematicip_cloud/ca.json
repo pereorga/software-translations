@@ -18,6 +18,32 @@
                     "name": "Nom (opcional, s'utilitza com a prefix de nom per a tots els dispositius)",
                     "pin": "Codi PIN"
                 }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "pin": "Codi PIN"
+                }
+            }
+        }
+    },
+    "entity": {
+        "light": {
+            "optical_signal_light": {
+                "state_attributes": {
+                    "effect": {
+                        "state": {
+                            "on": "ON"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "window_state": {
+                "state": {
+                    "closed": "Tancat/ada",
+                    "open": "Obert/a"
+                }
             }
         }
     },
@@ -30,32 +56,7 @@
             }
         },
         "activate_eco_mode_with_period": {
-            "fields": {
-                "accesspoint_id": {
-                    "name": "ID del punt d'acc\u00e9s"
-                }
-            }
-        },
-        "activate_vacation": {
-            "fields": {
-                "accesspoint_id": {
-                    "name": "ID del punt d'acc\u00e9s"
-                }
-            }
-        },
-        "deactivate_eco_mode": {
-            "fields": {
-                "accesspoint_id": {
-                    "name": "ID del punt d'acc\u00e9s"
-                }
-            }
-        },
-        "deactivate_vacation": {
-            "fields": {
-                "accesspoint_id": {
-                    "name": "ID del punt d'acc\u00e9s"
-                }
-            }
+            "description": "Activa el mode eco fins a una hora determinada."
         },
         "reset_energy_counter": {
             "fields": {
@@ -73,9 +74,6 @@
         },
         "set_home_cooling_mode": {
             "fields": {
-                "accesspoint_id": {
-                    "name": "ID del punt d'acc\u00e9s"
-                },
                 "cooling": {
                     "name": "Refredant"
                 }

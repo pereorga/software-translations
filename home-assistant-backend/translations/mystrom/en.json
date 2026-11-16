@@ -1,12 +1,16 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect"
         },
         "error": {
             "cannot_connect": "Failed to connect"
         },
         "step": {
+            "discovery_confirm": {
+                "description": "Do you want to set up the myStrom device at {host}?"
+            },
             "user": {
                 "data": {
                     "host": "Host",
@@ -22,7 +26,30 @@
         "sensor": {
             "avg_consumption": {
                 "name": "Average consumption"
+            },
+            "energy_since_boot": {
+                "name": "Energy since boot"
+            },
+            "time_since_boot": {
+                "name": "Last restart"
             }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "No route to myStrom device: {host}"
+        },
+        "light_action_failed": {
+            "message": "Failed to perform the action on the myStrom bulb."
+        },
+        "switch_action_failed": {
+            "message": "Failed to perform the action on the myStrom plug."
+        },
+        "unsupported_bulb": {
+            "message": "Device {host} ({mac}) is not a myStrom bulb nor myStrom LED Strip"
+        },
+        "unsupported_device_type": {
+            "message": "Unsupported myStrom device type: {device_type}"
         }
     }
 }

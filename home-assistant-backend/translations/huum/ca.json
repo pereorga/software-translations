@@ -9,11 +9,30 @@
             "unknown": "Error inesperat"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                },
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
             "user": {
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
                 }
+            }
+        }
+    },
+    "entity": {
+        "light": {
+            "light": {
+                "name": "Llum"
             }
         }
     }

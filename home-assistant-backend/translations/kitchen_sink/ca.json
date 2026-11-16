@@ -4,6 +4,35 @@
             "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
         }
     },
+    "config_subentries": {
+        "entity": {
+            "step": {
+                "add_sensor": {
+                    "data": {
+                        "name": "Nom",
+                        "state": "Estat inicial"
+                    }
+                },
+                "reconfigure_sensor": {
+                    "data": {
+                        "name": "Estat inicial",
+                        "state": "Estat inicial"
+                    }
+                }
+            }
+        },
+        "infrared_fan": {
+            "step": {
+                "user": {
+                    "data": {
+                        "infrared_entity_id": "Emissor d'infrarojos",
+                        "infrared_receiver_entity_id": "Receptor d'infrarojos",
+                        "name": "Nom"
+                    }
+                }
+            }
+        }
+    },
     "issues": {
         "bad_psu": {
             "fix_flow": {
@@ -16,11 +45,6 @@
             "title": "L'alimentaci\u00f3 no \u00e9s estable"
         },
         "cold_tea": {
-            "fix_flow": {
-                "abort": {
-                    "not_tea_time": "Ara mateix no es pot tornar a escalfar el te"
-                }
-            },
             "title": "El te \u00e9s fred"
         },
         "out_of_blinker_fluid": {
@@ -62,10 +86,6 @@
     "services": {
         "test_service_1": {
             "fields": {
-                "field_1": {
-                    "description": "Nombre de segons",
-                    "name": "Camp 1"
-                },
                 "field_2": {
                     "description": "Mode",
                     "name": "Camp 2"
@@ -77,12 +97,6 @@
                 "field_4": {
                     "description": "Direcci\u00f3",
                     "name": "Camp 4"
-                }
-            },
-            "sections": {
-                "advanced_fields": {
-                    "description": "Unes coses molt avan\u00e7ades",
-                    "name": "Opcions avan\u00e7ades"
                 }
             }
         }

@@ -1,27 +1,25 @@
 {
     "config": {
         "abort": {
-            "authorize_url_timeout": "Temps d'espera esgotat durant la generaci\u00f3 de l'URL d'autoritzaci\u00f3.",
-            "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3.",
-            "no_url_available": "No hi ha cap URL disponible. Per a m\u00e9s informaci\u00f3 sobre aquest error, [consulta la secci\u00f3 d'ajuda]({docs_url})",
-            "oauth_error": "S'han rebut dades token inv\u00e0lides.",
-            "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
-            "oauth_timeout": "Temps m\u00e0xim d'espera de resoluci\u00f3 de 'token' OAuth esgotat.",
-            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "missing_configuration": "El component no est\u00e0 configurat. Mira'n la documentaci\u00f3."
         },
         "create_entry": {
             "default": "Autenticaci\u00f3 exitosa amb Tesla."
         },
         "error": {
-            "already_configured": "El compte ja est\u00e0 configurat"
+            "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
             "pick_implementation": {
+                "data": {
+                    "implementation": "Credencials d'aplicaci\u00f3"
+                },
+                "data_description": {
+                    "implementation": "Les credencials que vols fer servir per autenticar."
+                },
                 "title": "Selecciona el m\u00e8tode d'autenticaci\u00f3"
             },
             "reauth_confirm": {
-                "description": "La integraci\u00f3 {name} ha de tornar a autenticar-se amb el teu compte",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             }
         }
@@ -39,6 +37,9 @@
             },
             "charge_state_preconditioning_enabled": {
                 "name": "Precondicionament activat"
+            },
+            "charge_state_scheduled_charging_pending": {
+                "name": "C\u00e0rrega programada pendent"
             },
             "state": {
                 "name": "Estat"
@@ -78,7 +79,14 @@
         },
         "climate": {
             "driver_temp": {
-                "name": "Climatitzaci\u00f3"
+                "name": "Climatitzaci\u00f3",
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "off": "Normal"
+                        }
+                    }
+                }
             }
         },
         "cover": {
@@ -130,64 +138,64 @@
         "select": {
             "climate_state_seat_heater_left": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_center": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_left": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_rear_right": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_right": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_third_row_left": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_seat_heater_third_row_right": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "off": "OFF"
                 }
             },
             "climate_state_steering_wheel_heat_level": {
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
                     "off": "OFF"
                 }
             },
@@ -201,8 +209,7 @@
             "default_real_mode": {
                 "name": "Mode de funcionament",
                 "state": {
-                    "autonomous": "Aut\u00f2nom",
-                    "self_consumption": "Autoconsum"
+                    "autonomous": "Aut\u00f2nom"
                 }
             }
         },
@@ -345,9 +352,6 @@
             "vehicle_state_tpms_pressure_rr": {
                 "name": "Pressi\u00f3 del pneum\u00e0tic posterior dret"
             },
-            "version": {
-                "name": "versi\u00f3"
-            },
             "vin": {
                 "name": "Vehicle"
             },
@@ -359,6 +363,19 @@
             },
             "wall_connector_state": {
                 "name": "Codi d'estat"
+            }
+        },
+        "switch": {
+            "charge_state_charging_state": {
+                "name": "Carrega"
+            },
+            "components_disallow_charge_from_grid_with_solar_installed": {
+                "name": "Permet recarregar des de la xarxa"
+            }
+        },
+        "update": {
+            "vehicle_state_software_update_status": {
+                "name": "Actualitza"
             }
         }
     },

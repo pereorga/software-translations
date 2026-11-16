@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El compte ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "already_configured": "El compte ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -16,6 +15,13 @@
                 },
                 "description": "La integraci\u00f3 Jellyfin ha de tornar a autenticar-se amb el teu compte.",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya",
+                    "url": "URL",
+                    "username": "Nom d'usuari"
+                }
             },
             "user": {
                 "data": {

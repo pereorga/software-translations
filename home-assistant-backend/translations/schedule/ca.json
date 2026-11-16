@@ -1,4 +1,32 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "entity_component": {
         "_": {
             "name": "Horari",
@@ -23,8 +51,30 @@
     "services": {
         "reload": {
             "description": "Recarrega els horaris des de la configuraci\u00f3 YAML",
-            "name": "Torna a carregar"
+            "name": "Torna a carregar horaris"
         }
     },
-    "title": "Horari"
+    "title": "Horari",
+    "triggers": {
+        "block_ended": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "block_started": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -24,6 +23,13 @@
                     "username": "Username"
                 },
                 "title": "Enter your FGLair credentials"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "fglair_outside_temp": {
+                "name": "Outside temperature"
             }
         }
     },

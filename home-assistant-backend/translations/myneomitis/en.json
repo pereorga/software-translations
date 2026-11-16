@@ -1,0 +1,85 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "This integration is already configured.",
+            "unique_id_mismatch": "The credentials belong to a different MyNeomitis account than the one originally configured."
+        },
+        "error": {
+            "cannot_connect": "Could not connect to the MyNeomitis service. Please try again later.",
+            "invalid_auth": "Authentication failed. Please check your email address and password.",
+            "unknown": "An unexpected error occurred. Please try again."
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "Your MyNeomitis account password"
+                },
+                "description": "The password for {email} is no longer valid. Please enter your current MyNeomitis password."
+            },
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Your email address used for your MyNeomitis account",
+                    "password": "Your MyNeomitis account password"
+                },
+                "description": "Enter your MyNeomitis account credentials.",
+                "title": "Connect to MyNeomitis"
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "myneomitis": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "antifrost": "Frost protection",
+                            "auto": "Auto",
+                            "boost": "Boost",
+                            "comfort": "Comfort",
+                            "comfort_plus": "Comfort +",
+                            "eco": "Eco",
+                            "setpoint": "Setpoint",
+                            "standby": "Standby"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "pilote": {
+                "state": {
+                    "antifrost": "Frost protection",
+                    "auto": "Auto",
+                    "boost": "Boost",
+                    "comfort": "Comfort",
+                    "comfort_plus": "Comfort +",
+                    "eco": "Eco",
+                    "eco_1": "Eco -1",
+                    "eco_2": "Eco -2",
+                    "setpoint": "Setpoint",
+                    "standby": "Standby"
+                }
+            },
+            "relais": {
+                "state": {
+                    "auto": "Auto",
+                    "off": "Off",
+                    "on": "On"
+                }
+            },
+            "ufh": {
+                "state": {
+                    "cooling": "Cooling",
+                    "heating": "Heating"
+                }
+            }
+        }
+    }
+}

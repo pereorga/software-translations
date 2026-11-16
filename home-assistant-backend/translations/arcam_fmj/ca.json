@@ -2,13 +2,23 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids"
         },
         "flow_title": "{host}",
         "step": {
             "confirm": {
                 "description": "Vols afegir l'Arcam FMJ `{host}` a Home Assistant?"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                },
+                "description": "Introdueix el nom de l'amfitri\u00f3 o l'adre\u00e7a IP del dispositiu."
             },
             "user": {
                 "data": {

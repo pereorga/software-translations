@@ -17,12 +17,26 @@
                 "description": "Enter the PIN sent via email or SMS",
                 "title": "Two-factor authentication"
             },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "description": "The credentials for {username} need to be updated",
+                "title": "Re-authenticate Blink"
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                }
+            },
             "user": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
-                "title": "Sign-in with Blink account"
+                "title": "Sign in with Blink account"
             }
         }
     },
@@ -45,7 +59,7 @@
     },
     "exceptions": {
         "cant_write": {
-            "message": "Can't write to file."
+            "message": "Can't write to file, check logs for details."
         },
         "failed_arm": {
             "message": "Blink failed to arm camera."
@@ -67,6 +81,9 @@
         },
         "integration_not_found": {
             "message": "Integration \"{target}\" not found in registry."
+        },
+        "migration_reauth_required": {
+            "message": "Cannot migrate configuration entry from version {version}, re-authentication is required"
         },
         "no_path": {
             "message": "Can't write to directory {target}, no access to path!"
@@ -92,7 +109,7 @@
         "step": {
             "simple_options": {
                 "data": {
-                    "scan_interval": "Scan Interval (seconds)"
+                    "scan_interval": "Scan interval (seconds)"
                 },
                 "description": "Configure Blink integration",
                 "title": "Blink options"
@@ -123,20 +140,6 @@
                 }
             },
             "name": "Save video"
-        },
-        "send_pin": {
-            "description": "Sends a new PIN to Blink for 2FA.",
-            "fields": {
-                "config_entry_id": {
-                    "description": "The Blink Integration ID.",
-                    "name": "Integration ID"
-                },
-                "pin": {
-                    "description": "PIN received from Blink. Leave empty if you only received a verification email.",
-                    "name": "PIN"
-                }
-            },
-            "name": "Send PIN"
         },
         "trigger_camera": {
             "description": "Requests camera to take new image.",

@@ -1,0 +1,56 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Cannot connect to endpoint",
+            "invalid_credentials": "The provided access key ID and secret access key are invalid or do not have the required permissions.",
+            "invalid_endpoint_url": "Invalid endpoint URL. Please make sure it's a valid IDrive e2 endpoint URL."
+        },
+        "error": {
+            "bucket_not_found": "Bucket \"{bucket}\" does not exist. Please recreate this bucket in IDrive e2 before continuing.",
+            "cannot_connect": "Cannot connect to endpoint",
+            "invalid_credentials": "The provided access key ID and secret access key are invalid or do not have the required permissions.",
+            "invalid_endpoint_url": "Invalid endpoint URL. Please make sure it's a valid IDrive e2 endpoint URL.",
+            "no_buckets": "No buckets were found for the provided credentials. Create a bucket in IDrive e2 first, then try again."
+        },
+        "step": {
+            "bucket": {
+                "data": {
+                    "bucket": "Bucket name"
+                },
+                "data_description": {
+                    "bucket": "The name of the bucket to store the Home Assistant backups in."
+                },
+                "title": "Select IDrive e2 bucket"
+            },
+            "user": {
+                "data": {
+                    "access_key_id": "Access key ID",
+                    "secret_access_key": "Secret access key"
+                },
+                "data_description": {
+                    "access_key_id": "Access key ID to connect to IDrive e2 API",
+                    "secret_access_key": "Secret access key to connect to IDrive e2 API"
+                },
+                "title": "Add IDrive e2"
+            }
+        }
+    },
+    "exceptions": {
+        "bucket_not_found": {
+            "message": "Bucket \"{bucket}\" does not exist. Please recreate this bucket in IDrive e2 before continuing."
+        },
+        "cannot_connect": {
+            "message": "Cannot connect to endpoint"
+        },
+        "invalid_credentials": {
+            "message": "The provided access key ID and secret access key are invalid or do not have the required permissions."
+        },
+        "invalid_endpoint_url": {
+            "message": "Invalid endpoint URL. Please make sure it's a valid IDrive e2 endpoint URL."
+        },
+        "no_buckets": {
+            "message": "No buckets were found for the provided credentials. Create a bucket in IDrive e2 first, then try again."
+        }
+    }
+}

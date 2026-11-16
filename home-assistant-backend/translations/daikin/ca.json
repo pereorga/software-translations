@@ -17,30 +17,17 @@
                     "host": "Amfitri\u00f3",
                     "password": "Contrasenya"
                 },
-                "description": "Introdueix l'adre\u00e7a IP del teu AC Daikin.\n\nTingues en compte que la clau API i la contrasenya s'utilitzen nom\u00e9s als dispositius BRP072Cxx i SKYFi respectivament.",
                 "title": "Configuraci\u00f3 de Daikin AC"
             }
         }
     },
     "entity": {
         "sensor": {
-            "compressor_energy_consumption": {
-                "name": "Consum d'energia del compressor"
-            },
             "compressor_estimated_power_consumption": {
                 "name": "Consum de pot\u00e8ncia estimat del compressor"
             },
             "compressor_frequency": {
                 "name": "Freq\u00fc\u00e8ncia del compressor"
-            },
-            "cool_energy_consumption": {
-                "name": "Consum d'energia per fred"
-            },
-            "energy_consumption": {
-                "name": "Consum d'energia"
-            },
-            "heat_energy_consumption": {
-                "name": "Consum d'energia t\u00e8rmica"
             },
             "inside_temperature": {
                 "name": "Temperatura interior"
@@ -50,6 +37,11 @@
             },
             "target_humidity": {
                 "name": "Humitat objectiu"
+            }
+        },
+        "switch": {
+            "toggle": {
+                "name": "Energia"
             }
         }
     }

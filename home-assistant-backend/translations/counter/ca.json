@@ -1,4 +1,21 @@
 {
+    "common": {
+        "condition_for_name": "Durant almenys",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "entity_component": {
         "_": {
             "name": "Comptador num\u00e8ric",
@@ -26,24 +43,46 @@
         }
     },
     "services": {
-        "decrement": {
-            "name": "Disminueix"
-        },
-        "increment": {
-            "name": "Incrementa"
-        },
-        "reset": {
-            "name": "Reinicialitzar"
-        },
         "set_value": {
             "fields": {
                 "value": {
                     "description": "El nou valor num\u00e8ric el qual s'ha d'establir a l'entitat.",
                     "name": "Valor"
                 }
-            },
-            "name": "Establir"
+            }
         }
     },
-    "title": "Comptador num\u00e8ric"
+    "title": "Comptador num\u00e8ric",
+    "triggers": {
+        "maximum_reached": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "minimum_reached": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "reset": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

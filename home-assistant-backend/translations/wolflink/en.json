@@ -1,7 +1,8 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured"
+            "already_configured": "Account is already configured",
+            "no_devices": "No devices were found on this account."
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -9,16 +10,14 @@
             "unknown": "Unexpected error"
         },
         "step": {
-            "device": {
-                "data": {
-                    "device_name": "Device"
-                },
-                "title": "Select WOLF device"
-            },
             "user": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password for your Wolf SmartSet account.",
+                    "username": "The username for your Wolf SmartSet account."
                 },
                 "title": "WOLF SmartSet connection"
             }
@@ -33,10 +32,10 @@
                     "absenkbetrieb": "Setback mode",
                     "absenkstop": "Setback stop",
                     "aktiviert": "Activated",
-                    "antilegionellenfunktion": "Anti-legionella Function",
+                    "antilegionellenfunktion": "Anti-legionella function",
                     "at_abschaltung": "OT shutdown",
                     "at_frostschutz": "OT frost protection",
-                    "aus": "Disabled",
+                    "aus": "Off",
                     "auto": "Auto",
                     "auto_off_cool": "AutoOffCool",
                     "auto_on_cool": "AutoOnCool",
@@ -45,10 +44,10 @@
                     "bereit_keine_ladung": "Ready, not loading",
                     "betrieb_ohne_brenner": "Working without burner",
                     "cooling": "Cooling",
-                    "deaktiviert": "Inactive",
+                    "deaktiviert": "Disabled",
                     "dhw_prior": "DHWPrior",
                     "eco": "Eco",
-                    "ein": "Enabled",
+                    "ein": "On",
                     "estrichtrocknung": "Screed drying",
                     "externe_deaktivierung": "External deactivation",
                     "fernschalter_ein": "Remote control enabled",

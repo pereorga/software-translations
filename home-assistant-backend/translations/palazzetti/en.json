@@ -21,6 +21,11 @@
         }
     },
     "entity": {
+        "button": {
+            "silent": {
+                "name": "Silent"
+            }
+        },
         "climate": {
             "palazzetti": {
                 "state_attributes": {
@@ -37,6 +42,12 @@
         "number": {
             "combustion_power": {
                 "name": "Combustion power"
+            },
+            "fan_left_speed": {
+                "name": "Left fan speed"
+            },
+            "fan_right_speed": {
+                "name": "Right fan speed"
             }
         },
         "sensor": {
@@ -64,7 +75,7 @@
                     "clean_fire": "Burn pot cleaning",
                     "cleaning_warning": "Cleaning warning",
                     "cleanup": "Final cleaning",
-                    "cool_fluid": "Stand-by",
+                    "cool_fluid": "Standby",
                     "cooling": "Cooling in progress",
                     "door_open": "Door open",
                     "ecomode": "Ecomode",
@@ -114,6 +125,9 @@
         },
         "invalid_fan_mode": {
             "message": "Fan mode {value} is invalid."
+        },
+        "invalid_fan_speed": {
+            "message": "Fan {name} speed {value} is invalid."
         },
         "invalid_target_temperature": {
             "message": "Target temperature {value} is invalid."

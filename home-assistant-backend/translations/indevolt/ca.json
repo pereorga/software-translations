@@ -1,0 +1,53 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery_charge_discharge_state": {
+                "state": {
+                    "charging": "Carregant",
+                    "discharging": "Descarregant"
+                }
+            },
+            "realtime_command": {
+                "state": {
+                    "charging": "Carregant",
+                    "discharging": "Descarregant",
+                    "standby": "En espera"
+                }
+            }
+        },
+        "switch": {
+            "light": {
+                "name": "Indicador LED"
+            }
+        }
+    },
+    "exceptions": {
+        "multi_device_errors": {
+            "message": "Un o m\u00e9s dispositius han informat d'errors: {errors}"
+        },
+        "no_matching_target_entries": {
+            "message": "No s'han trobat dispositius Indevolt coincidents als objectius seleccionats."
+        }
+    }
+}

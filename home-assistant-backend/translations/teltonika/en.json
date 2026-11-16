@@ -1,0 +1,80 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "wrong_account": "The device does not match the existing configuration."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "dhcp_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password to authenticate with the device.",
+                    "username": "The username to authenticate with the device."
+                },
+                "description": "A Teltonika device ({name}) was discovered at {host}. Enter the credentials to add it to Home Assistant.",
+                "title": "Discovered Teltonika device"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password to authenticate with the device.",
+                    "username": "The username to authenticate with the device."
+                },
+                "description": "Update the credentials for {name}. The current host is {host}.",
+                "title": "Authentication failed for {name}"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Username",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Teltonika device.",
+                    "password": "The password to authenticate with the device.",
+                    "username": "The username to authenticate with the device.",
+                    "verify_ssl": "Whether to validate the SSL certificate when using HTTPS. Most Teltonika devices use self-signed certificates, so you will need to disable this option unless you have installed a valid certificate on your device."
+                },
+                "description": "Enter the connection details for your Teltonika device.",
+                "title": "Set up Teltonika device"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "band": {
+                "name": "{modem_name} Band"
+            },
+            "connection_type": {
+                "name": "{modem_name} Connection type"
+            },
+            "operator": {
+                "name": "{modem_name} Operator"
+            },
+            "rsrp": {
+                "name": "{modem_name} RSRP"
+            },
+            "rsrq": {
+                "name": "{modem_name} RSRQ"
+            },
+            "rssi": {
+                "name": "{modem_name} RSSI"
+            },
+            "sinr": {
+                "name": "{modem_name} SINR"
+            }
+        }
+    }
+}

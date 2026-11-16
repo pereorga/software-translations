@@ -1,0 +1,48 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "Token d'API"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_token": "Token d'API",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_token": "Token d'API",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "container_state": {
+                "name": "Estat",
+                "state": {
+                    "created": "Creat",
+                    "dead": "Mort",
+                    "exited": "Ha eixit",
+                    "paused": "Pausat",
+                    "restarting": "Reiniciant",
+                    "running": "En funcionament"
+                }
+            }
+        }
+    }
+}

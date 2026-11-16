@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "error": {
             "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
@@ -29,12 +28,28 @@
                 "name": "Teclat desactivat"
             }
         },
+        "select": {
+            "auto_lock_time": {
+                "state": {
+                    "0": "Desactivada"
+                }
+            }
+        },
         "switch": {
             "beeper": {
                 "name": "So en pr\u00e9mer"
             },
             "lock_and_leave": {
                 "name": "Bloqueig amb un toc"
+            }
+        }
+    },
+    "services": {
+        "add_code": {
+            "fields": {
+                "code": {
+                    "name": "Codi PIN"
+                }
             }
         }
     }

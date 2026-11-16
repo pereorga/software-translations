@@ -1,11 +1,30 @@
 {
     "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "unique_id_mismatch": "The device serial number does not match the original device. Please make sure you are connecting to the same QNAP NAS."
+        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "port": "Port",
+                    "ssl": "Uses an SSL certificate",
+                    "username": "Username",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your QNAP device."
+                },
+                "description": "Update the connection settings for your QNAP NAS.",
+                "title": "Reconfigure QNAP connection"
+            },
             "user": {
                 "data": {
                     "host": "Host",
@@ -18,7 +37,7 @@
                 "data_description": {
                     "host": "The hostname or IP address of your QNAP device."
                 },
-                "description": "This qnap sensor allows getting various statistics from your QNAP NAS.",
+                "description": "This sensor allows getting various statistics from your QNAP NAS.",
                 "title": "Connect to the QNAP device"
             }
         }

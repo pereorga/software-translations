@@ -1,11 +1,12 @@
 {
     "config": {
         "abort": {
+            "accessory_disconnected_error": "A connectivity error occurred while attempting to pair with this device.\n\n{error}",
             "accessory_not_found_error": "Cannot add pairing as device can no longer be found.",
             "already_configured": "Accessory is already configured with this controller.",
-            "already_in_progress": "Configuration flow is already in progress",
+            "already_in_progress": "This is already being configured. Finish the existing configuration before starting again.",
             "already_paired": "This accessory is already paired to another device. Please reset the accessory and try again.",
-            "ignored_model": "HomeKit support for this model is blocked as a more feature complete native integration is available.",
+            "ignored_model": "HomeKit support for this model is blocked as a more feature-complete native integration is available.",
             "invalid_config_entry": "This device is showing as ready to pair but there is already a conflicting configuration entry for it in Home Assistant that must first be removed.",
             "invalid_properties": "Invalid properties announced by device.",
             "no_devices": "No unpaired devices could be found"
@@ -21,23 +22,23 @@
         "flow_title": "{name} ({category})",
         "step": {
             "busy_error": {
-                "description": "Abort pairing on all controllers, or try restarting the device, then continue to resume pairing.",
+                "description": "Abort pairing on all controllers, or try restarting the device, then try pairing again.",
                 "title": "The device is already pairing with another controller"
             },
             "max_tries_error": {
-                "description": "The device has received more than 100 unsuccessful authentication attempts. Try restarting the device, then continue to resume pairing.",
+                "description": "The device has received more than 100 unsuccessful authentication attempts. Try restarting the device, then try pairing again.",
                 "title": "Maximum authentication attempts exceeded"
             },
             "pair": {
                 "data": {
                     "allow_insecure_setup_codes": "Allow pairing with insecure setup codes.",
-                    "pairing_code": "Pairing Code"
+                    "pairing_code": "Pairing code"
                 },
-                "description": "HomeKit Device communicates with {name} ({category}) over the local area network using a secure encrypted connection without a separate HomeKit Controller or iCloud. Enter your eight digit HomeKit pairing code (in the format XXX-XX-XXX) to use this accessory. This code is usually found on the device itself or in the packaging, often close to a HomeKit bar code, next to the image of a small house.",
+                "description": "HomeKit Device communicates with {name} ({category}) over the local area network using a secure encrypted connection without a separate HomeKit Controller or iCloud. Enter your eight-digit HomeKit pairing code (in the format XXX-XX-XXX) to use this accessory. This code is usually found on the device itself or in the packaging, often close to a HomeKit bar code, next to the image of a small house.",
                 "title": "Pair with a device via HomeKit Accessory Protocol"
             },
             "protocol_error": {
-                "description": "The device may not be in pairing mode and may require a physical or virtual button press. Ensure the device is in pairing mode or try restarting the device, then continue to resume pairing.",
+                "description": "The device may not be in pairing mode and may require a physical or virtual button press. Ensure the device is in pairing mode or try restarting the device, then try pairing again.",
                 "title": "Error communicating with the accessory"
             },
             "user": {
@@ -70,6 +71,17 @@
         }
     },
     "entity": {
+        "button": {
+            "clear_hold": {
+                "name": "Clear hold"
+            },
+            "provision_preferred_thread_credentials": {
+                "name": "Provision preferred Thread credentials"
+            },
+            "setup": {
+                "name": "Setup"
+            }
+        },
         "event": {
             "button": {
                 "state_attributes": {
@@ -94,14 +106,30 @@
                 }
             }
         },
+        "number": {
+            "elevation": {
+                "name": "Elevation"
+            },
+            "sensitivity": {
+                "name": "Sensitivity"
+            },
+            "spray_quantity": {
+                "name": "Spray quantity"
+            },
+            "volume": {
+                "name": "Volume"
+            }
+        },
         "select": {
             "air_purifier_state_target": {
+                "name": "Air purifier mode",
                 "state": {
                     "automatic": "Automatic",
                     "manual": "Manual"
                 }
             },
             "ecobee_mode": {
+                "name": "Current mode",
                 "state": {
                     "away": "Away",
                     "home": "Home",
@@ -109,6 +137,7 @@
                 }
             },
             "temperature_display_units": {
+                "name": "Temperature display units",
                 "state": {
                     "celsius": "Celsius",
                     "fahrenheit": "Fahrenheit"
@@ -117,6 +146,7 @@
         },
         "sensor": {
             "air_purifier_state_current": {
+                "name": "Air purifier status",
                 "state": {
                     "idle": "Idle",
                     "inactive": "Inactive",
@@ -124,6 +154,7 @@
                 }
             },
             "thread_node_capabilities": {
+                "name": "Thread capabilities",
                 "state": {
                     "border_router_capable": "Border Router Capable",
                     "full": "Full End Device",
@@ -134,6 +165,7 @@
                 }
             },
             "thread_status": {
+                "name": "Thread status",
                 "state": {
                     "border_router": "Border Router",
                     "child": "Child",
@@ -143,6 +175,29 @@
                     "leader": "Leader",
                     "router": "Router"
                 }
+            },
+            "valve_position": {
+                "name": "Valve position"
+            },
+            "water_level": {
+                "name": "Water level"
+            }
+        },
+        "switch": {
+            "airplay_enable": {
+                "name": "AirPlay enable"
+            },
+            "lock_physical_controls": {
+                "name": "Lock physical controls"
+            },
+            "mute": {
+                "name": "Mute"
+            },
+            "pairing_mode": {
+                "name": "Pairing mode"
+            },
+            "sleep_mode": {
+                "name": "Sleep mode"
             }
         }
     },

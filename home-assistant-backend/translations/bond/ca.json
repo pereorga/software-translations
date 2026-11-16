@@ -33,17 +33,12 @@
             "fields": {
                 "entity_id": {
                     "name": "Entitat"
-                },
-                "speed": {
-                    "description": "Velocitat del ventilador en %.",
-                    "name": "Velocitat del ventilador"
                 }
             }
         },
         "set_light_brightness_tracked_state": {
             "fields": {
                 "brightness": {
-                    "description": "Lluminositat.",
                     "name": "Lluminositat"
                 },
                 "entity_id": {
@@ -66,11 +61,9 @@
             }
         },
         "start_decreasing_brightness": {
-            "description": "Inicia la disminuci\u00f3 de la lluminositat del llum (obsolet).",
             "name": "Inicia la disminuci\u00f3 de la lluminositat"
         },
         "start_increasing_brightness": {
-            "description": "Inicia l'augment de la lluminositat del llum (obsolet).",
             "name": "Inicia l'augment de la lluminositat"
         },
         "stop": {

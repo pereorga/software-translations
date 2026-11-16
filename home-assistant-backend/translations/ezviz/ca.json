@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured_account": "El compte ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -99,9 +98,6 @@
             "alarm_sound_mod": {
                 "name": "Volum de l'alarma"
             },
-            "last_alarm_pic": {
-                "name": "URL de la imatge de l'\u00faltima alarma"
-            },
             "last_alarm_time": {
                 "name": "Hora de l'\u00faltima alarma"
             },
@@ -116,6 +112,9 @@
             },
             "pir_status": {
                 "name": "Estat del PIR"
+            },
+            "seconds_last_trigger": {
+                "name": "Segons des de l'\u00faltim activador"
             },
             "supported_channels": {
                 "name": "Canals compatibles"
@@ -159,15 +158,6 @@
             },
             "tamper_alarm": {
                 "name": "Alarma de manipulaci\u00f3"
-            }
-        }
-    },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "ffmpeg_arguments": "Par\u00e0metres passats a ffmpeg per a les c\u00e0meres"
-                }
             }
         }
     },

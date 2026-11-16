@@ -1,16 +1,17 @@
 {
     "common": {
-        "data_description_password": "The Remote Admin Password from the Fully Kiosk Browser app settings.",
+        "data_description_password": "The Remote Admin password from the Fully Kiosk Browser app settings.",
         "data_description_ssl": "Is the Fully Kiosk app configured to require SSL for the connection?",
-        "data_description_verify_ssl": "Should SSL certificartes be verified? This should be off for self-signed certificates."
+        "data_description_verify_ssl": "Should SSL certificates be verified? This should be off for self-signed certificates."
     },
     "config": {
         "abort": {
-            "already_configured": "Account is already configured"
+            "already_configured": "Account is already configured",
+            "unique_id_mismatch": "Please ensure you reconfigure the same device."
         },
         "error": {
-            "cannot_connect": "Cannot connect. Details: {error_detail}",
-            "unknown": "Unknown. Details: {error_detail}"
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
         },
         "step": {
             "discovery_confirm": {
@@ -20,11 +21,25 @@
                     "verify_ssl": "Verify SSL certificate"
                 },
                 "data_description": {
-                    "password": "The Remote Admin Password from the Fully Kiosk Browser app settings.",
+                    "password": "The Remote Admin password from the Fully Kiosk Browser app settings.",
                     "ssl": "Is the Fully Kiosk app configured to require SSL for the connection?",
-                    "verify_ssl": "Should SSL certificartes be verified? This should be off for self-signed certificates."
+                    "verify_ssl": "Should SSL certificates be verified? This should be off for self-signed certificates."
                 },
                 "description": "Do you want to set up {name} ({host})?"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "ssl": "Uses an SSL certificate",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of the device running your Fully Kiosk Browser application.",
+                    "password": "The Remote Admin password from the Fully Kiosk Browser app settings.",
+                    "ssl": "Is the Fully Kiosk app configured to require SSL for the connection?",
+                    "verify_ssl": "Should SSL certificates be verified? This should be off for self-signed certificates."
+                }
             },
             "user": {
                 "data": {
@@ -35,9 +50,9 @@
                 },
                 "data_description": {
                     "host": "The hostname or IP address of the device running your Fully Kiosk Browser application.",
-                    "password": "The Remote Admin Password from the Fully Kiosk Browser app settings.",
+                    "password": "The Remote Admin password from the Fully Kiosk Browser app settings.",
                     "ssl": "Is the Fully Kiosk app configured to require SSL for the connection?",
-                    "verify_ssl": "Should SSL certificartes be verified? This should be off for self-signed certificates."
+                    "verify_ssl": "Should SSL certificates be verified? This should be off for self-signed certificates."
                 }
             }
         }
@@ -55,6 +70,9 @@
             }
         },
         "button": {
+            "clear_cache": {
+                "name": "Clear browser cache"
+            },
             "load_start_url": {
                 "name": "Load start URL"
             },
@@ -69,6 +87,9 @@
             },
             "to_foreground": {
                 "name": "Bring to foreground"
+            },
+            "trigger_motion": {
+                "name": "Trigger motion activity"
             }
         },
         "image": {
@@ -99,6 +120,9 @@
             }
         },
         "sensor": {
+            "battery_temperature": {
+                "name": "Battery temperature"
+            },
             "current_page": {
                 "name": "Current page"
             },
@@ -143,6 +167,10 @@
         "load_url": {
             "description": "Loads a URL on Fully Kiosk Browser.",
             "fields": {
+                "device_id": {
+                    "description": "The target device for this action.",
+                    "name": "Device ID"
+                },
                 "url": {
                     "description": "URL to load.",
                     "name": "URL"
@@ -153,6 +181,10 @@
         "set_config": {
             "description": "Sets a configuration parameter on Fully Kiosk Browser.",
             "fields": {
+                "device_id": {
+                    "description": "The target device for this action.",
+                    "name": "Device ID"
+                },
                 "key": {
                     "description": "Configuration parameter to set.",
                     "name": "Key"
@@ -162,7 +194,7 @@
                     "name": "Value"
                 }
             },
-            "name": "Set Configuration"
+            "name": "Set configuration"
         },
         "start_application": {
             "description": "Starts an application on the device running Fully Kiosk Browser.",
@@ -170,9 +202,13 @@
                 "application": {
                     "description": "Package name of the application to start.",
                     "name": "Application"
+                },
+                "device_id": {
+                    "description": "The target device for this action.",
+                    "name": "Device ID"
                 }
             },
-            "name": "Start Application"
+            "name": "Start application"
         }
     }
 }

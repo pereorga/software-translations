@@ -1,5 +1,8 @@
 {
     "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "condition_threshold_name": "Tipus de llindar",
         "field_brightness_description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
         "field_brightness_name": "Valor de brillantor",
         "field_brightness_pct_description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 100 \u00e9s la brillantor m\u00e0xima.",
@@ -10,16 +13,12 @@
         "field_brightness_step_pct_name": "Pas de brillantor",
         "field_color_name_description": "Nom de color llegible.",
         "field_color_name_name": "Nom del color",
-        "field_color_temp_description": "Temperatura de color en 'mireds'.",
-        "field_color_temp_name": "Temperatura de color",
         "field_effect_description": "Efecte de llum.",
         "field_effect_name": "Efecte",
         "field_flash_description": "Fa que la llum parpellegi, pot ser de valor curt o llarg.",
         "field_flash_name": "Flaix",
         "field_hs_color_description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
         "field_hs_color_name": "Color to/saturaci\u00f3",
-        "field_kelvin_description": "Temperatura de color en Kelvin.",
-        "field_kelvin_name": "Temperatura de color",
         "field_profile_description": "Nom del perfil de llum a utilitzar.",
         "field_profile_name": "Perfil",
         "field_rgb_color_description": "Color en format RGB. Llista de tres nombres enters entre 0 i 255 que representen els valors de vermell, verd i blau.",
@@ -34,7 +33,45 @@
         "field_white_name": "Blanc",
         "field_xy_color_description": "Color en format XY. Llista de dos nombres decimals entre 0 i 1.",
         "field_xy_color_name": "Color XY",
-        "section_advanced_fields_name": "Opcions avan\u00e7ades"
+        "section_additional_fields_name": "Opcions addicionals",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys",
+        "trigger_threshold_name": "Tipus de llindar"
+    },
+    "conditions": {
+        "is_brightness": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "is_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
     },
     "device_automation": {
         "action_type": {
@@ -51,7 +88,8 @@
         },
         "extra_fields": {
             "brightness_pct": "Brillantor",
-            "flash": "Flaix"
+            "flash": "Flaix",
+            "for": "Durada"
         },
         "trigger_type": {
             "changed_states": "{entity_name} s'engegui o s'apagui",
@@ -85,14 +123,14 @@
                         "xy": "XY"
                     }
                 },
-                "color_temp": {
-                    "name": "Temperatura de color (mireds)"
-                },
                 "color_temp_kelvin": {
                     "name": "Temperatura de color (Kelvin)"
                 },
                 "effect": {
-                    "name": "Efecte"
+                    "name": "Efecte",
+                    "state": {
+                        "off": "OFF"
+                    }
                 },
                 "effect_list": {
                     "name": "Efectes disponibles"
@@ -100,14 +138,8 @@
                 "max_color_temp_kelvin": {
                     "name": "Temperatura de color m\u00e0xima (Kelvin)"
                 },
-                "max_mireds": {
-                    "name": "Temperatura de color m\u00e0xima (mireds)"
-                },
                 "min_color_temp_kelvin": {
                     "name": "Temperatura de color m\u00ednima (Kelvin)"
-                },
-                "min_mireds": {
-                    "name": "Temperatura de color m\u00ednima (mireds)"
                 },
                 "supported_color_modes": {
                     "name": "Modes de color disponibles",
@@ -141,13 +173,13 @@
                 "blue": "Blau",
                 "blueviolet": "Blau violeta",
                 "brown": "Marr\u00f3",
-                "burlywood": "Fusta nuada",
-                "cadetblue": "Blau cadet",
-                "chartreuse": "Licor Chartreuse",
+                "burlywood": "Marr\u00f3 fusta clara",
+                "cadetblue": "Blau verd\u00f3s gris\u00f3s",
+                "chartreuse": "Groc verd\u00f3s",
                 "chocolate": "Xocolata",
                 "coral": "Corall",
-                "cornflowerblue": "Flor blava del blat de moro",
-                "cornsilk": "Seda de blat de moro",
+                "cornflowerblue": "Blau de blauet",
+                "cornsilk": "Beix grog\u00f3s",
                 "crimson": "Carmes\u00ed",
                 "cyan": "Cian",
                 "darkblue": "Blau fosc",
@@ -170,10 +202,10 @@
                 "darkturquoise": "Turquesa fosc",
                 "darkviolet": "Violeta fosc",
                 "deeppink": "Rosa intens",
-                "deepskyblue": "Blau cel profund",
+                "deepskyblue": "Blau cel fosc",
                 "dimgray": "Gris fosc",
                 "dimgrey": "Gris fosc",
-                "dodgerblue": "Blau escorred\u00eds",
+                "dodgerblue": "Blau latzurita",
                 "firebrick": "Ma\u00f3",
                 "floralwhite": "Blanc floral",
                 "forestgreen": "Verd bosc",
@@ -228,14 +260,14 @@
                 "mediumvioletred": "Vermell violeta mitj\u00e0",
                 "midnightblue": "Blau mitjanit",
                 "mintcream": "Crema de menta",
-                "mistyrose": "Boira rosa",
-                "moccasin": "Mocass\u00ed",
-                "navajowhite": "Blanc navajo",
+                "mistyrose": "Rosa humida",
+                "moccasin": "Beix taronj\u00f3s",
+                "navajowhite": "Beix clar",
                 "navy": "Mar\u00ed",
                 "navyblue": "Blau mar\u00ed",
-                "oldlace": "Lla\u00e7 vell",
+                "oldlace": "Beix antic",
                 "olive": "Oliva",
-                "olivedrab": "Oliva apagada",
+                "olivedrab": "Verd oliva",
                 "orange": "Taronja",
                 "orangered": "Vermell ataronjat",
                 "orchid": "Orqu\u00eddia",
@@ -245,7 +277,7 @@
                 "palevioletred": "Vermell violeta p\u00e0l\u00b7lid",
                 "papayawhip": "Taronja pastel clar",
                 "peachpuff": "Pell de pr\u00e9ssec",
-                "peru": "Per\u00fa",
+                "peru": "Marr\u00f3 taronj\u00f3s",
                 "pink": "Rosa",
                 "plum": "Pruna",
                 "powderblue": "Blauet",
@@ -253,7 +285,7 @@
                 "red": "Vermell",
                 "rosybrown": "Marr\u00f3 rosat",
                 "royalblue": "Blau reial",
-                "saddlebrown": "Cuir",
+                "saddlebrown": "Marr\u00f3 cuir",
                 "salmon": "Salm\u00f3",
                 "sandybrown": "Marr\u00f3 sorrenc",
                 "seagreen": "Verd mar\u00ed",
@@ -279,11 +311,17 @@
                 "yellow": "Groc",
                 "yellowgreen": "Verd groc"
             }
+        },
+        "state": {
+            "options": {
+                "off": "OFF",
+                "on": "ON"
+            }
         }
     },
     "services": {
         "toggle": {
-            "description": "Commuta un o m\u00e9s llums, d'enc\u00e8s a apagat o, d'apagat a enc\u00e8s, en funci\u00f3 del seu estat actual.",
+            "description": "Canvia l'estat un o m\u00e9s llums, d'enc\u00e8s a apagat o, d'apagat a enc\u00e8s, en funci\u00f3 del seu estat actual.",
             "fields": {
                 "brightness": {
                     "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
@@ -297,8 +335,8 @@
                     "description": "Nom de color llegible.",
                     "name": "Nom del color"
                 },
-                "color_temp": {
-                    "description": "Temperatura de color en 'mireds'.",
+                "color_temp_kelvin": {
+                    "description": "Temperatura de color en Kelvin.",
                     "name": "Temperatura de color"
                 },
                 "effect": {
@@ -312,10 +350,6 @@
                 "hs_color": {
                     "description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
                     "name": "Color to/saturaci\u00f3"
-                },
-                "kelvin": {
-                    "description": "Temperatura de color en Kelvin.",
-                    "name": "Temperatura de color"
                 },
                 "profile": {
                     "description": "Nom del perfil de llum a utilitzar.",
@@ -346,15 +380,14 @@
                     "name": "Color XY"
                 }
             },
-            "name": "Commuta",
+            "name": "Commuta llum",
             "sections": {
-                "advanced_fields": {
-                    "name": "Opcions avan\u00e7ades"
+                "additional_fields": {
+                    "name": "Opcions addicionals"
                 }
             }
         },
         "turn_off": {
-            "description": "Apaga un o m\u00e9s llums.",
             "fields": {
                 "flash": {
                     "description": "Fa que la llum parpellegi, pot ser de valor curt o llarg.",
@@ -365,15 +398,14 @@
                     "name": "Transici\u00f3"
                 }
             },
-            "name": "Apaga",
+            "name": "Apaga llum",
             "sections": {
-                "advanced_fields": {
-                    "name": "Opcions avan\u00e7ades"
+                "additional_fields": {
+                    "name": "Opcions addicionals"
                 }
             }
         },
         "turn_on": {
-            "description": "Enc\u00e9n un o m\u00e9s llums i ajusta'n les propietats, fins i tot quan ja estiguin encesos.",
             "fields": {
                 "brightness": {
                     "description": "N\u00famero que indica el percentatge de brillantor total, on 0 \u00e9s el llum apagat, 1 \u00e9s la brillantor m\u00ednima i 255 \u00e9s la brillantor m\u00e0xima.",
@@ -395,10 +427,6 @@
                     "description": "Nom de color llegible.",
                     "name": "Nom del color"
                 },
-                "color_temp": {
-                    "description": "Temperatura de color en 'mireds'.",
-                    "name": "Temperatura de color"
-                },
                 "effect": {
                     "description": "Efecte de llum.",
                     "name": "Efecte"
@@ -410,10 +438,6 @@
                 "hs_color": {
                     "description": "Color en format to/saturaci\u00f3. Una llista de dos nombres enters. El to va entre 0 i 360 i la saturaci\u00f3 entre 0 i 100.",
                     "name": "Color to/saturaci\u00f3"
-                },
-                "kelvin": {
-                    "description": "Temperatura de color en Kelvin.",
-                    "name": "Temperatura de color"
                 },
                 "profile": {
                     "description": "Nom del perfil de llum a utilitzar.",
@@ -443,13 +467,55 @@
                     "name": "Color XY"
                 }
             },
-            "name": "Enc\u00e9n",
+            "name": "Enc\u00e9n llum",
             "sections": {
-                "advanced_fields": {
-                    "name": "Opcions avan\u00e7ades"
+                "additional_fields": {
+                    "name": "Opcions addicionals"
                 }
             }
         }
     },
-    "title": "Llum"
+    "title": "Llum",
+    "triggers": {
+        "brightness_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "brightness_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "turned_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "turned_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

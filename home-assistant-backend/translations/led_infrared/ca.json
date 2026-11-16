@@ -1,0 +1,111 @@
+{
+    "config": {
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "infrared_entity_id": "Emissor d'infrarojos",
+                    "infrared_receiver_entity_id": "Receptor d'infrarojos"
+                }
+            },
+            "user": {
+                "data": {
+                    "device_type": "Tipus de dispositiu",
+                    "infrared_entity_id": "Emissor d'infrarojos",
+                    "infrared_receiver_entity_id": "Receptor d'infrarojos"
+                }
+            }
+        }
+    },
+    "entity": {
+        "event": {
+            "received_command": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "aqua": "Color: aigua",
+                            "auto": "Auto",
+                            "blue": "Color: blau",
+                            "cyan": "Color: cian",
+                            "dark_cyan": "Color: cian fosc",
+                            "deep_blue": "Color: blau intens",
+                            "floral_white": "Color: blanc floral",
+                            "ghost_white": "Color: blanc fantasma",
+                            "green": "Color: verd",
+                            "lavender_blush": "Color: lavanda p\u00e0l\u00b7lid",
+                            "light_cyan": "Color: cian clar",
+                            "light_green": "Color: verd clar",
+                            "magenta": "Color: magenta",
+                            "mode_1": "Mode 1",
+                            "mode_2": "Mode 2",
+                            "mode_3": "Mode 3",
+                            "mode_4": "Mode 4",
+                            "mode_5": "Mode 5",
+                            "mode_6": "Mode 6",
+                            "mode_7": "Mode 7",
+                            "mode_8": "Mode 8",
+                            "off": "Desactiva",
+                            "on": "Activa",
+                            "orange": "Color: taronja",
+                            "orange_red": "Color: vermell ataronjat",
+                            "pink": "Color: rosa",
+                            "plum": "Color: pruna",
+                            "purple": "Color: lila",
+                            "rebecca_purple": "Color: lila fosc",
+                            "red": "Color: vermell",
+                            "sky_blue": "Color: blau cel",
+                            "tomato": "Color: tom\u00e0quet",
+                            "turquoise": "Color: turquesa",
+                            "white": "Color: blanc",
+                            "yellow": "Color: groc",
+                            "yellowish": "Color: groguenc"
+                        }
+                    }
+                }
+            }
+        },
+        "light": {
+            "light": {
+                "state_attributes": {
+                    "effect": {
+                        "state": {
+                            "aqua": "Color: aigua",
+                            "auto": "Auto",
+                            "blue": "Color: blau",
+                            "cyan": "Color: cian",
+                            "dark_cyan": "Color: cian fosc",
+                            "deep_blue": "Color: blau intens",
+                            "floral_white": "Color: blanc floral",
+                            "ghost_white": "Color: blanc fantasma",
+                            "green": "Color: verd",
+                            "lavender_blush": "Color: lavanda p\u00e0l\u00b7lid",
+                            "light_cyan": "Color: cian clar",
+                            "light_green": "Color: verd clar",
+                            "magenta": "Color: magenta",
+                            "mode_1": "Mode 1",
+                            "mode_2": "Mode 2",
+                            "mode_3": "Mode 3",
+                            "mode_4": "Mode 4",
+                            "mode_5": "Mode 5",
+                            "mode_6": "Mode 6",
+                            "mode_7": "Mode 7",
+                            "mode_8": "Mode 8",
+                            "orange": "Color: taronja",
+                            "orange_red": "Color: vermell ataronjat",
+                            "pink": "Color: rosa",
+                            "plum": "Color: pruna",
+                            "purple": "Color: lila",
+                            "rebecca_purple": "Color: lila fosc",
+                            "red": "Color: vermell",
+                            "sky_blue": "Color: blau cel",
+                            "tomato": "Color: tom\u00e0quet",
+                            "turquoise": "Color: turquesa",
+                            "white": "Color: blanc",
+                            "yellow": "Color: groc",
+                            "yellowish": "Color: groguenc"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

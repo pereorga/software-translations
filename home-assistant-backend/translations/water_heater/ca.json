@@ -1,4 +1,60 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "condition_threshold_name": "Tipus de llindar",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys",
+        "trigger_threshold_name": "Tipus de llindar"
+    },
+    "conditions": {
+        "is_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_operation_mode": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "operation_mode": {
+                    "name": "Mode de funcionament"
+                }
+            }
+        },
+        "is_target_temperature": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        }
+    },
     "device_automation": {
         "action_type": {
             "turn_off": "Apaga {entity_name}",
@@ -7,12 +63,11 @@
     },
     "entity_component": {
         "_": {
+            "name": "Escalfador d'aigua",
             "state": {
                 "eco": "Econ\u00f2mic",
                 "electric": "El\u00e8ctric",
                 "gas": "Gas",
-                "heat_pump": "Bomba de calor",
-                "high_demand": "Alta demanda",
                 "off": "OFF",
                 "performance": "Rendiment"
             },
@@ -33,6 +88,16 @@
                 "min_temp": {
                     "name": "Temperatura objectiu m\u00edn."
                 },
+                "operation_mode": {
+                    "name": "Mode de funcionament",
+                    "state": {
+                        "eco": "Econ\u00f2mic",
+                        "electric": "El\u00e8ctric",
+                        "gas": "Gas",
+                        "off": "OFF",
+                        "performance": "Rendiment"
+                    }
+                },
                 "target_temp_high": {
                     "name": "Temperatura objectiu superior"
                 },
@@ -50,14 +115,81 @@
                 }
             }
         },
+        "set_operation_mode": {
+            "fields": {
+                "operation_mode": {
+                    "name": "Mode de funcionament"
+                }
+            }
+        },
+        "set_temperature": {
+            "fields": {
+                "operation_mode": {
+                    "name": "Mode de funcionament"
+                }
+            }
+        },
         "turn_off": {
-            "description": "Apaga l'escalfador d'aigua.",
-            "name": "Apaga"
+            "name": "Apaga escalfador d'aigua"
         },
         "turn_on": {
-            "description": "Enc\u00e9n l'escalfador d'aigua.",
-            "name": "Enc\u00e9n"
+            "name": "Engega escalfador d'aigua"
         }
     },
-    "title": "Escalfador d'aigua"
+    "title": "Escalfador d'aigua",
+    "triggers": {
+        "operation_mode_changed": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "operation_mode": {
+                    "name": "Mode de funcionament"
+                }
+            }
+        },
+        "target_temperature_changed": {
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "target_temperature_crossed_threshold": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        },
+        "turned_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "turned_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

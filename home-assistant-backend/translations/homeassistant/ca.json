@@ -1,7 +1,15 @@
 {
     "config": {
         "abort": {
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
+            "cloud_not_connected": "No connectat a Home Assistant Cloud.",
+            "missing_credentials": "La integraci\u00f3 necessita credencials d'aplicaci\u00f3.",
+            "no_devices_found": "No s'han trobat dispositius a la xarxa",
+            "no_url_available": "No hi ha cap URL disponible. Per a m\u00e9s informaci\u00f3 sobre aquest error, [consulta la secci\u00f3 d'ajuda]({docs_url})",
+            "oauth_error": "S'han rebut dades token inv\u00e0lides.",
+            "oauth_failed": "S'ha produ\u00eft un error en obtenir el 'token' d'acc\u00e9s.",
+            "oauth_unauthorized": "Error d'autoritzaci\u00f3 OAuth durant l'obtenci\u00f3 del 'token' d'acc\u00e9s.",
+            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
+            "user_rejected_authorize": "S'ha rebutjat la vinculaci\u00f3 del compte: {error}"
         }
     },
     "exceptions": {
@@ -19,6 +27,9 @@
         },
         "multiple_integration_config_errors": {
             "message": "No s'ha pogut processar la configuraci\u00f3 de la integraci\u00f3 {domain} a causa de diversos errors ({errors}). Consulta els registres per a m\u00e9s informaci\u00f3."
+        },
+        "oauth2_implementation_unavailable": {
+            "message": "Implementaci\u00f3 OAuth no disponible, es tornar\u00e0 a provar"
         },
         "platform_component_load_err": {
             "message": "Error de plataforma: {domain} - {error}."
@@ -42,7 +53,6 @@
             "title": "L'autenticaci\u00f3 de {name} ha caducat"
         },
         "country_not_configured": {
-            "description": "No s'ha configurat cap pa\u00eds, si us plau, actualitza la configuraci\u00f3 fent clic al bot\u00f3 \"m\u00e9s informaci\u00f3\" a continuaci\u00f3.",
             "title": "El pa\u00eds no s'ha configurat"
         },
         "deprecated_yaml": {
@@ -72,16 +82,9 @@
         "legacy_templates_false": {
             "title": "S'est\u00e0 eliminant la clau de configuraci\u00f3 legacy_templates"
         },
-        "no_platform_setup": {
-            "title": "Configuraci\u00f3 YAML per a la integraci\u00f3 {platform} no utilitzada"
-        },
         "platform_only": {
             "description": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 amb la seva pr\u00f2pia clau o entreada, s'ha de configurar a trav\u00e9s de les plataformes compatibles. \n\nPer resoldre aix\u00f2: \n\n1. Elimina `{domain}:` del teu fitxer de configuraci\u00f3 YAML. \n\n2. Reinicia Home Assistant.",
             "title": "La integraci\u00f3 {domain} no admet la configuraci\u00f3 via YAML amb la seva pr\u00f2pia clau o entrada"
-        },
-        "python_version": {
-            "description": "La versi\u00f3 actual de Python {current_python_version} est\u00e0 obsoleta per funcionar amb Home Assistant i s'eliminar\u00e0 a Home Assistant {breaks_in_ha_version}. Si us plau, actualitza Python a la versi\u00f3 {required_python_version} per evitar que la teva inst\u00e0ncia de Home Assistant s'espatlli.",
-            "title": "S'est\u00e0 eliminant la compatibilitat amb Python {current_python_version}"
         },
         "storage_corruption": {
             "fix_flow": {
@@ -95,24 +98,13 @@
         }
     },
     "services": {
-        "reload_all": {
-            "description": "Torna a carregar tota la configuraci\u00f3 YAML que es pugui actualitzar sense reiniciar Home Assistant.",
-            "name": "Torna a carregar-ho tot"
-        },
-        "reload_config_entry": {
-            "description": "Recarrega l'entrada de configuraci\u00f3 especificada."
-        },
-        "reload_core_config": {
-            "description": "Recarrega la configuraci\u00f3 del nucli des de la configuraci\u00f3 YAML."
-        },
         "restart": {
             "fields": {
                 "safe_mode": {
-                    "description": "Desactiva integracions i targetes personalitzades.",
                     "name": "Mode segur"
                 }
             },
-            "name": "Reinicia"
+            "name": "Reinicia Home Assistant"
         },
         "set_location": {
             "fields": {
@@ -128,10 +120,10 @@
             }
         },
         "stop": {
-            "name": "Atura"
+            "name": "Atura Home Assistant"
         },
         "toggle": {
-            "description": "Acci\u00f3 gen\u00e8rica per commutar (ON/OFF) dispositius de qualsevol domini.",
+            "description": "Acci\u00f3 gen\u00e8rica per activar o desactivar (ON/OFF) dispositius de qualsevol domini.",
             "name": "Commutaci\u00f3 gen\u00e8rica"
         },
         "turn_off": {

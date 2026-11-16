@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
         },
         "step": {
             "reconfigure": {
@@ -11,11 +10,21 @@
                     "port": "Port"
                 }
             },
-            "user": {
+            "tcp": {
                 "data": {
                     "host": "Amfitri\u00f3",
                     "name": "Nom",
                     "port": "Port"
+                }
+            }
+        }
+    },
+    "entity": {
+        "select": {
+            "party_mode": {
+                "state": {
+                    "off": "OFF",
+                    "on": "ON"
                 }
             }
         }

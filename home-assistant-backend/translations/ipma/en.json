@@ -9,10 +9,7 @@
         "step": {
             "user": {
                 "data": {
-                    "latitude": "Latitude",
-                    "longitude": "Longitude",
-                    "mode": "Mode",
-                    "name": "Name"
+                    "location": "Location"
                 },
                 "description": "Instituto Portugu\u00eas do Mar e Atmosfera",
                 "title": "Location"
@@ -26,6 +23,15 @@
             },
             "uv_index": {
                 "name": "UV index"
+            },
+            "weather_alert": {
+                "name": "Weather Alert",
+                "state": {
+                    "green": "Green",
+                    "orange": "Orange",
+                    "red": "Red",
+                    "yellow": "Yellow"
+                }
             }
         }
     },

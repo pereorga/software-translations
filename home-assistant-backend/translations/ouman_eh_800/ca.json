@@ -1,0 +1,76 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya",
+                    "url": "URL",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "user": {
+                "data": {
+                    "password": "Contrasenya",
+                    "url": "URL",
+                    "username": "Nom d'usuari"
+                }
+            }
+        }
+    },
+    "entity": {
+        "climate": {
+            "heating_circuit": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "automatic": "Auto"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "home_away_mode": {
+                "state": {
+                    "away": "Fora",
+                    "home": "A casa",
+                    "off": "OFF"
+                }
+            },
+            "operation_mode": {
+                "name": "Mode de funcionament",
+                "state": {
+                    "automatic": "Auto",
+                    "shutdown": "En espera"
+                }
+            },
+            "relay_control": {
+                "state": {
+                    "auto": "Auto",
+                    "off": "OFF",
+                    "on": "ON"
+                }
+            },
+            "relay_pump_summer_stop_control": {
+                "state": {
+                    "auto": "Auto",
+                    "stop": "Atura"
+                }
+            }
+        }
+    }
+}

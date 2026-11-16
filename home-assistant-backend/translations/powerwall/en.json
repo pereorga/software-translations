@@ -2,8 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "cannot_connect": "Failed to connect",
-            "reauth_successful": "Re-authentication was successful"
+            "cannot_connect": "Failed to connect"
         },
         "error": {
             "cannot_connect": "A connection error occurred while connecting to the Powerwall: {error}",
@@ -142,6 +141,20 @@
             "load_instant_voltage": {
                 "name": "Load voltage"
             },
+            "max_charge_power": {
+                "name": "Max charge power"
+            },
+            "max_discharge_power": {
+                "name": "Max discharge power"
+            },
+            "operation_mode": {
+                "name": "Operation mode",
+                "state": {
+                    "autonomous": "Autonomous",
+                    "backup": "Backup",
+                    "self_consumption": "Self-consumption"
+                }
+            },
             "site_export": {
                 "name": "Site export"
             },
@@ -183,6 +196,11 @@
             "off_grid_operation": {
                 "name": "Off-grid operation"
             }
+        }
+    },
+    "exceptions": {
+        "api_changed": {
+            "message": "The Powerwall API has changed"
         }
     }
 }

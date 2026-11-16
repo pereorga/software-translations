@@ -1,0 +1,56 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "title": "L'autenticaci\u00f3 de {name} ha caducat"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "ptz_down": {
+                "name": "PTZ avall"
+            },
+            "ptz_left": {
+                "name": "PTZ esquerra"
+            },
+            "ptz_right": {
+                "name": "PTZ dreta"
+            },
+            "ptz_up": {
+                "name": "PTZ amunt"
+            }
+        },
+        "select": {
+            "device_volume": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "night_vision_mode": {
+                "state": {
+                    "off": "OFF"
+                }
+            }
+        },
+        "sensor": {
+            "status": {
+                "state": {
+                    "offline": "Desconnectat",
+                    "online": "Connectat",
+                    "sleep": "En espera"
+                }
+            }
+        }
+    }
+}

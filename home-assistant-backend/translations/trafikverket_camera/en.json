@@ -1,9 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful"
+            "already_configured": "Account is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -16,11 +14,17 @@
                 "data": {
                     "id": "Choose camera"
                 },
+                "data_description": {
+                    "id": "The camera to use"
+                },
                 "description": "Result came back with multiple cameras"
             },
             "reauth_confirm": {
                 "data": {
                     "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API key from your Trafikverket open data account"
                 }
             },
             "reconfigure": {
@@ -29,7 +33,8 @@
                     "location": "Location"
                 },
                 "data_description": {
-                    "location": "Equal or part of name, description or camera id. Be as specific as possible to avoid getting multiple cameras as result"
+                    "api_key": "The API key from your Trafikverket open data account",
+                    "location": "Equal or part of name, description or camera ID. Be as specific as possible to avoid getting multiple cameras as result"
                 }
             },
             "user": {
@@ -38,7 +43,8 @@
                     "location": "Location"
                 },
                 "data_description": {
-                    "location": "Equal or part of name, description or camera id. Be as specific as possible to avoid getting multiple cameras as result"
+                    "api_key": "The API key from your Trafikverket open data account",
+                    "location": "Equal or part of name, description or camera ID. Be as specific as possible to avoid getting multiple cameras as result"
                 }
             }
         }
@@ -65,7 +71,7 @@
                         "name": "Location"
                     },
                     "photo_url": {
-                        "name": "Photo url"
+                        "name": "Photo URL"
                     },
                     "status": {
                         "name": "Status"
@@ -90,11 +96,19 @@
                 "name": "Photo time"
             },
             "photo_url": {
-                "name": "Photo url"
+                "name": "Photo URL"
             },
             "status": {
                 "name": "Status"
             }
+        }
+    },
+    "exceptions": {
+        "migration_cannot_connect": {
+            "message": "Could not connect to the API to migrate the camera at {location}"
+        },
+        "migration_no_camera_id": {
+            "message": "Could not migrate the camera at {location} because it has no ID"
         }
     }
 }

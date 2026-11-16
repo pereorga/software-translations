@@ -26,8 +26,7 @@
             },
             "user": {
                 "menu_options": {
-                    "cloud": "Risco Cloud (recomanat)",
-                    "local": "Panell Risco local (avan\u00e7at)"
+                    "cloud": "Risco Cloud (recomanat)"
                 }
             }
         }
@@ -55,20 +54,24 @@
         "step": {
             "ha_to_risco": {
                 "data": {
-                    "armed_away": "Activat, mode fora",
-                    "armed_custom_bypass": "Activat, bypass personalitzat",
-                    "armed_home": "Activat, mode a casa",
-                    "armed_night": "Activat, mode nocturn"
+                    "armed_away": "Activada, mode fora",
+                    "armed_custom_bypass": "Activada, bypass personalitzat",
+                    "armed_home": "Activada, mode a casa",
+                    "armed_night": "Activada, mode nocturn"
                 },
-                "description": "Selecciona quin estat establir a l'alarma Risco quan s'activi l'alarma de Home Assistant",
                 "title": "Converteix els estats de Risco en estats a Home Assistant"
             },
             "init": {
                 "data": {
                     "code_arm_required": "Demana el PIN per activar",
-                    "code_disarm_required": "Demana el PIN per desactivar",
-                    "concurrency": "Nombre m\u00e0xim de peticions concurrents a Risco local",
-                    "scan_interval": "Freq\u00fc\u00e8ncia de sondeig a Risco Cloud (en segons)"
+                    "code_disarm_required": "Demana el PIN per desactivar"
+                },
+                "sections": {
+                    "more_options": {
+                        "data": {
+                            "concurrency": "Nombre m\u00e0xim de peticions concurrents a Risco local"
+                        }
+                    }
                 },
                 "title": "Opcions de configuraci\u00f3"
             },
@@ -81,7 +84,6 @@
                     "arm": "Activat (mode fora)",
                     "partial_arm": "Activat parcial (estada)"
                 },
-                "description": "Selecciona quin estat tindr\u00e0 l'alarma de Home Assistant per a cadascun dels estats que proporcioni Risco",
                 "title": "Converteix els estats de Risco en estats a Home Assistant"
             }
         }

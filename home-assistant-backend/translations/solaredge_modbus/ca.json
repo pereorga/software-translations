@@ -1,0 +1,67 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3"
+        },
+        "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                }
+            },
+            "tcp": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "on_grid": {
+                "state": {
+                    "off": "No",
+                    "on": "S\u00ed"
+                }
+            }
+        },
+        "select": {
+            "export_control_mode": {
+                "state": {
+                    "disabled": "Desactivada"
+                }
+            },
+            "storage_ac_charge_policy": {
+                "state": {
+                    "disabled": "Desactivada"
+                }
+            },
+            "storage_control_mode": {
+                "state": {
+                    "disabled": "Desactivada"
+                }
+            }
+        },
+        "sensor": {
+            "battery_status": {
+                "state": {
+                    "idle": "Inactiu",
+                    "off": "OFF",
+                    "standby": "En espera"
+                }
+            },
+            "inverter_status": {
+                "state": {
+                    "off": "OFF",
+                    "standby": "En espera"
+                }
+            }
+        }
+    }
+}

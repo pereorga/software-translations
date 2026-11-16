@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "no_devices_found": "No s'han trobat dispositius a la xarxa"
         },
         "error": {
@@ -12,6 +11,11 @@
         "step": {
             "discovery_confirm": {
                 "description": "Vols configurar {model} {id} ({ipaddr})?"
+            },
+            "pick_device": {
+                "data": {
+                    "device": "Dispositiu"
+                }
             },
             "user": {
                 "data": {
@@ -142,7 +146,6 @@
                     "name": "Efecte"
                 },
                 "speed_pct": {
-                    "description": "Velocitat d'efecte de l'efecte personalitzat (0-100).",
                     "name": "Velocitat"
                 }
             }

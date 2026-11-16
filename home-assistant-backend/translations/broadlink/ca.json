@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
             "not_supported": "Dispositiu no compatible",
@@ -18,12 +17,6 @@
         "step": {
             "auth": {
                 "title": "Autentica't al dispositiu"
-            },
-            "finish": {
-                "data": {
-                    "name": "Nom"
-                },
-                "title": "Tria un nom per al dispositiu"
             },
             "reset": {
                 "title": "Desbloqueig de dispositiu"
@@ -44,6 +37,11 @@
         }
     },
     "entity": {
+        "radio_frequency": {
+            "rf_transmitter": {
+                "name": "Transmissor RF"
+            }
+        },
         "select": {
             "day_of_week": {
                 "name": "Dia de la setmana",

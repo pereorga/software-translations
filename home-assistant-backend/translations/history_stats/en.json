@@ -11,14 +11,43 @@
                 "data": {
                     "duration": "Duration",
                     "end": "End",
-                    "start": "Start"
+                    "entity_id": "Entity",
+                    "start": "Start",
+                    "state": "State",
+                    "state_class": "State class",
+                    "type": "Type"
                 },
                 "data_description": {
                     "duration": "Duration of the measure.",
-                    "end": "When to stop the measure (timestamp or datetime). Can be a template",
-                    "start": "When to start the measure (timestamp or datetime). Can be a template."
+                    "end": "When to stop the measure (timestamp or datetime). Can be a template.",
+                    "entity_id": "Entity to get statistics from.",
+                    "start": "When to start the measure (timestamp or datetime). Can be a template.",
+                    "state": "The states you want to track from the entity.",
+                    "state_class": "The state class for statistics calculation.",
+                    "type": "The type of sensor, one of 'time', 'ratio' or 'count'"
                 },
-                "description": "Read the documention for further details on how to configure the history stats sensor using these options."
+                "description": "Read the documentation for further details on how to configure the history stats sensor using these options.",
+                "sections": {
+                    "additional_settings": {
+                        "data": {
+                            "min_state_duration": "Minimum state duration"
+                        },
+                        "data_description": {
+                            "min_state_duration": "The minimum state duration to account for the statistics. Default is 0 seconds."
+                        },
+                        "name": "Additional settings"
+                    }
+                }
+            },
+            "state": {
+                "data": {
+                    "entity_id": "Entity",
+                    "state": "State"
+                },
+                "data_description": {
+                    "entity_id": "Entity to get statistics from.",
+                    "state": "The states you want to track from the entity."
+                }
             },
             "user": {
                 "data": {
@@ -49,14 +78,33 @@
                 "data": {
                     "duration": "Duration",
                     "end": "End",
-                    "start": "Start"
+                    "entity_id": "Entity",
+                    "start": "Start",
+                    "state": "State",
+                    "state_class": "State class",
+                    "type": "Type"
                 },
                 "data_description": {
                     "duration": "Duration of the measure.",
-                    "end": "When to stop the measure (timestamp or datetime). Can be a template",
-                    "start": "When to start the measure (timestamp or datetime). Can be a template."
+                    "end": "When to stop the measure (timestamp or datetime). Can be a template.",
+                    "entity_id": "Entity to get statistics from.",
+                    "start": "When to start the measure (timestamp or datetime). Can be a template.",
+                    "state": "The states you want to track from the entity.",
+                    "state_class": "The state class for statistics calculation. Changing the state class will require statistics to be reset.",
+                    "type": "The type of sensor, one of 'time', 'ratio' or 'count'"
                 },
-                "description": "Read the documention for further details on how to configure the history stats sensor using these options."
+                "description": "Read the documentation for further details on how to configure the history stats sensor using these options.",
+                "sections": {
+                    "additional_settings": {
+                        "data": {
+                            "min_state_duration": "Minimum state duration"
+                        },
+                        "data_description": {
+                            "min_state_duration": "The minimum state duration to account for the statistics. Default is 0 seconds."
+                        },
+                        "name": "Additional settings"
+                    }
+                }
             }
         }
     },
@@ -72,7 +120,7 @@
     "services": {
         "reload": {
             "description": "Reloads history stats sensors from the YAML-configuration.",
-            "name": "Reload"
+            "name": "Reload history stats sensors"
         }
     },
     "title": "History Stats"

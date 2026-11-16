@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "already_in_progress": "Configuration flow is already in progress"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "connection_error": "Failed to connect"
@@ -24,6 +23,9 @@
             }
         },
         "number": {
+            "battery_charge_current": {
+                "name": "Battery charge current limit"
+            },
             "battery_discharge_depth": {
                 "name": "Depth of discharge (on-grid)"
             },
@@ -40,7 +42,7 @@
                     "eco_charge": "Eco charge mode",
                     "eco_discharge": "Eco discharge mode",
                     "general": "General mode",
-                    "off_grid": "Off grid mode",
+                    "off_grid": "Off-grid mode",
                     "peak_shaving": "Peak shaving mode"
                 }
             }

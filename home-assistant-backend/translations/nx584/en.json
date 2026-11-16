@@ -1,4 +1,37 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "host": "Hostname or IP address of the machine running the NX584 server.",
+                    "port": "TCP port of the NX584 server."
+                }
+            }
+        }
+    },
+    "issues": {
+        "deprecated_yaml_import_issue_cannot_connect": {
+            "description": "Configuring {integration_title} using YAML is being removed, but the NX584 server could not be reached while importing your YAML configuration. Make sure the server is running and restart Home Assistant to try the import again, or remove the `{domain}` entries from your `alarm_control_panel` and `binary_sensor` configuration and set up the integration from the UI.",
+            "title": "The {integration_title} YAML configuration import failed"
+        },
+        "deprecated_yaml_import_issue_unknown": {
+            "description": "Configuring {integration_title} using YAML is being removed, but an unknown error occurred while importing your YAML configuration. Restart Home Assistant to try the import again, or remove the `{domain}` entries from your `alarm_control_panel` and `binary_sensor` configuration and set up the integration from the UI.",
+            "title": "The {integration_title} YAML configuration import failed"
+        }
+    },
     "services": {
         "bypass_zone": {
             "description": "Bypasses a zone.",

@@ -3,9 +3,7 @@
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
             "device_unsupported": "El dispositiu no \u00e9s compatible.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
-            "reauth_unsuccessful": "La re-autenticaci\u00f3 no ha tingut \u00e8xit, elimina la integraci\u00f3 i torna-la a configurar.",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "reauth_unsuccessful": "La re-autenticaci\u00f3 no ha tingut \u00e8xit, elimina la integraci\u00f3 i torna-la a configurar."
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -88,9 +86,6 @@
             "heca_temperature": {
                 "name": "Temperatura d'HECA"
             },
-            "last_restart": {
-                "name": "\u00daltim reinici"
-            },
             "mhz14a_carbon_dioxide": {
                 "name": "Di\u00f2xid de carboni d'MH-Z14A"
             },
@@ -100,11 +95,22 @@
             "pmsx003_caqi_level": {
                 "name": "Nivell d'\u00edndex com\u00fa de qualitat de l'aire de PMSx003",
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "very_high": "Molt alt",
-                    "very_low": "Molt baix"
+                    "very_low": "Molt baix/a"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na",
+                            "very_high": "Molt alt",
+                            "very_low": "Molt baix/a"
+                        }
+                    }
                 }
             },
             "pmsx003_pm1": {
@@ -122,11 +128,22 @@
             "sds011_caqi_level": {
                 "name": "Nivell d'\u00edndex com\u00fa de qualitat de l'aire d'SDS011",
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "very_high": "Molt alt",
-                    "very_low": "Molt baix"
+                    "very_low": "Molt baix/a"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na",
+                            "very_high": "Molt alt",
+                            "very_low": "Molt baix/a"
+                        }
+                    }
                 }
             },
             "sds011_pm10": {
@@ -147,11 +164,22 @@
             "sps30_caqi_level": {
                 "name": "Nivell d'\u00edndex com\u00fa de qualitat de l'aire d'SPS30",
                 "state": {
-                    "high": "Alt",
-                    "low": "Baix",
-                    "medium": "Mitj\u00e0",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na",
                     "very_high": "Molt alt",
-                    "very_low": "Molt baix"
+                    "very_low": "Molt baix/a"
+                },
+                "state_attributes": {
+                    "options": {
+                        "state": {
+                            "high": "Alt/a",
+                            "low": "Baix/a",
+                            "medium": "Mitj\u00e0/na",
+                            "very_high": "Molt alt",
+                            "very_low": "Molt baix/a"
+                        }
+                    }
                 }
             },
             "sps30_pm1": {

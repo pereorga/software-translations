@@ -4,19 +4,28 @@
             "already_configured": "Device is already configured",
             "cannot_connect": "Failed to connect",
             "invalid_token": "Invalid access token",
-            "reauth_successful": "Re-authentication was successful",
+            "unique_id_mismatch": "The device at this address is a different Nanoleaf device than the one configured.",
             "unknown": "Unexpected error"
         },
         "error": {
             "cannot_connect": "Failed to connect",
+            "invalid_token": "Invalid access token",
             "not_allowing_new_tokens": "Nanoleaf is not allowing new tokens, follow the instructions above.",
             "unknown": "Unexpected error"
         },
         "flow_title": "{name}",
         "step": {
             "link": {
-                "description": "Press and hold the power button on your Nanoleaf for 5 seconds until the button LEDs start flashing, then select **Submit** within 30 seconds.",
+                "description": "Press and hold the power button on your Nanoleaf for 5 seconds until the button LEDs start flashing. For devices without a power button, such as the Skylight, select **Connect to API** in the device settings of the Nanoleaf app instead. Then select **Submit** within 30 seconds.",
                 "title": "Link Nanoleaf"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Nanoleaf device."
+                }
             },
             "user": {
                 "data": {
@@ -28,14 +37,6 @@
             }
         }
     },
-    "device_automation": {
-        "trigger_type": {
-            "swipe_down": "Swipe down",
-            "swipe_left": "Swipe left",
-            "swipe_right": "Swipe right",
-            "swipe_up": "Swipe up"
-        }
-    },
     "entity": {
         "event": {
             "touch": {
@@ -43,6 +44,8 @@
                 "state_attributes": {
                     "event_type": {
                         "state": {
+                            "double_tap": "Double tap",
+                            "single_tap": "Single tap",
                             "swipe_down": "Swipe down",
                             "swipe_left": "Swipe left",
                             "swipe_right": "Swipe right",
@@ -53,10 +56,18 @@
             }
         }
     },
-    "issues": {
-        "deprecated_device_trigger": {
-            "description": "The Nanoleaf device trigger is deprecated and will be removed in a future release. You can now use the gesture event entity to build automations.",
-            "title": "Nanoleaf device trigger is deprecated"
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Unable to connect to the Nanoleaf device."
+        },
+        "effect_not_supported": {
+            "message": "The requested effect is not available on this Nanoleaf device."
+        },
+        "invalid_effect": {
+            "message": "The effect \"{effect}\" is not available on this Nanoleaf device."
+        },
+        "invalid_token": {
+            "message": "The access token for the Nanoleaf device is invalid. Please reauthenticate."
         }
     }
 }

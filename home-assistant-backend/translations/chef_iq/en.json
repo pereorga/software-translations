@@ -1,0 +1,49 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_devices_found": "No devices found on the network",
+            "not_supported": "Device not supported"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "bluetooth_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
+            "user": {
+                "data": {
+                    "address": "Device"
+                },
+                "data_description": {
+                    "address": "Select the Chef iQ probe you want to set up"
+                },
+                "description": "Choose a device to set up"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "ambient_temperature": {
+                "name": "Ambient temperature"
+            },
+            "food_temperature": {
+                "name": "Food temperature"
+            },
+            "probe_tip_1_temperature": {
+                "name": "Probe tip 1 temperature"
+            },
+            "probe_tip_2_temperature": {
+                "name": "Probe tip 2 temperature"
+            },
+            "probe_tip_3_temperature": {
+                "name": "Probe tip 3 temperature"
+            },
+            "probe_tip_4_temperature": {
+                "name": "Probe tip 4 temperature"
+            },
+            "soc_temperature": {
+                "name": "SoC temperature"
+            }
+        }
+    }
+}

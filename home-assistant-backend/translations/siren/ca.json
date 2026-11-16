@@ -1,4 +1,32 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "entity_component": {
         "_": {
             "name": "Sirena",
@@ -15,10 +43,10 @@
     },
     "services": {
         "toggle": {
-            "name": "Commuta"
+            "name": "Commuta sirena"
         },
         "turn_off": {
-            "name": "Apaga"
+            "name": "Apaga sirena"
         },
         "turn_on": {
             "fields": {
@@ -33,8 +61,30 @@
                     "name": "Volum"
                 }
             },
-            "name": "Enc\u00e9n"
+            "name": "Engega sirena"
         }
     },
-    "title": "Sirena"
+    "title": "Sirena",
+    "triggers": {
+        "turned_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "turned_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

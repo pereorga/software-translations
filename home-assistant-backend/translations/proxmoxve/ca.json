@@ -1,0 +1,50 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port",
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "reconfigure_auth": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port",
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "user_auth": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "status": {
+                "name": "Estat"
+            }
+        }
+    }
+}

@@ -1,4 +1,60 @@
 {
+    "common": {
+        "condition_behavior_name": "Condition passes if",
+        "condition_for_name": "For at least",
+        "trigger_behavior_name": "Trigger when",
+        "trigger_for_name": "For at least"
+    },
+    "conditions": {
+        "is_jammed": {
+            "description": "Tests if one or more locks are jammed.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock is jammed"
+        },
+        "is_locked": {
+            "description": "Tests if one or more locks are locked.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock is locked"
+        },
+        "is_open": {
+            "description": "Tests if one or more locks are open.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock is open"
+        },
+        "is_unlocked": {
+            "description": "Tests if one or more locks are unlocked.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock is unlocked"
+        }
+    },
     "device_automation": {
         "action_type": {
             "lock": "Lock {entity_name}",
@@ -6,9 +62,13 @@
             "unlock": "Unlock {entity_name}"
         },
         "condition_type": {
+            "is_jammed": "{entity_name} is jammed",
             "is_locked": "{entity_name} is locked",
+            "is_locking": "{entity_name} is locking",
             "is_open": "{entity_name} is open",
-            "is_unlocked": "{entity_name} is unlocked"
+            "is_opening": "{entity_name} is opening",
+            "is_unlocked": "{entity_name} is unlocked",
+            "is_unlocking": "{entity_name} is unlocking"
         },
         "extra_fields": {
             "for": "Duration"
@@ -55,7 +115,7 @@
                     "name": "Code"
                 }
             },
-            "name": "Lock"
+            "name": "Lock lock"
         },
         "open": {
             "description": "Opens a lock.",
@@ -65,7 +125,7 @@
                     "name": "Code"
                 }
             },
-            "name": "Open"
+            "name": "Open lock"
         },
         "unlock": {
             "description": "Unlocks a lock.",
@@ -75,8 +135,58 @@
                     "name": "Code"
                 }
             },
-            "name": "Unlock"
+            "name": "Unlock lock"
         }
     },
-    "title": "Lock"
+    "title": "Lock",
+    "triggers": {
+        "jammed": {
+            "description": "Triggers when one or more locks jam.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock jammed"
+        },
+        "locked": {
+            "description": "Triggers when one or more locks lock.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock locked"
+        },
+        "opened": {
+            "description": "Triggers when one or more locks open.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock opened"
+        },
+        "unlocked": {
+            "description": "Triggers when one or more locks unlock.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                }
+            },
+            "name": "Lock unlocked"
+        }
+    }
 }

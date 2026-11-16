@@ -11,12 +11,17 @@
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
-                    "name": "Nom",
                     "password": "Contrasenya",
                     "port": "Port",
                     "ssl": "Utilitza un certificat SSL",
-                    "username": "Nom d'usuari",
-                    "verify_ssl": "Verifica el certificat SSL"
+                    "username": "Nom d'usuari"
+                },
+                "sections": {
+                    "more_options": {
+                        "data": {
+                            "verify_ssl": "Verifica el certificat SSL"
+                        }
+                    }
                 },
                 "title": "Connexi\u00f3 amb NZBGet"
             }
@@ -32,12 +37,6 @@
             },
             "download_paused": {
                 "name": "Baixada en pausa"
-            },
-            "post_processing_jobs": {
-                "name": "Programes ('jobs') de postprocessament"
-            },
-            "post_processing_paused": {
-                "name": "Postprocessament pausat"
             },
             "queue_size": {
                 "name": "Mida de la cua"
@@ -77,7 +76,8 @@
                     "description": "L\u00edmit de velocitat. 0 = il\u00b7limitada.",
                     "name": "Velocitat"
                 }
-            }
+            },
+            "name": "Estableix la velocitat"
         }
     }
 }

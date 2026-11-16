@@ -1,0 +1,74 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "token": "HTTP Event Collector token"
+                },
+                "data_description": {
+                    "token": "The HEC token configured in your Splunk instance"
+                },
+                "description": "The Splunk token is no longer valid. Please enter a new HTTP Event Collector token.",
+                "title": "Reauthenticate Splunk"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "name": "Name",
+                    "port": "Port",
+                    "ssl": "Uses an SSL certificate",
+                    "token": "HTTP Event Collector token",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Splunk server",
+                    "name": "A name to identify this Home Assistant instance in Splunk events",
+                    "port": "The port number for the HTTP Event Collector (usually 8088)",
+                    "ssl": "Enable if your Splunk server uses HTTPS",
+                    "token": "The HEC token configured in your Splunk instance",
+                    "verify_ssl": "Verify the SSL certificate when connecting (recommended)"
+                },
+                "description": "Update your Splunk HTTP Event Collector connection settings."
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "name": "Name",
+                    "port": "Port",
+                    "ssl": "Uses an SSL certificate",
+                    "token": "HTTP Event Collector token",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "host": "The hostname or IP address of your Splunk server",
+                    "name": "A name to identify this Home Assistant instance in Splunk events",
+                    "port": "The port number for the HTTP Event Collector (usually 8088)",
+                    "ssl": "Enable if your Splunk server uses HTTPS",
+                    "token": "The HEC token configured in your Splunk instance",
+                    "verify_ssl": "Verify the SSL certificate when connecting (recommended)"
+                },
+                "description": "Enter your Splunk HTTP Event Collector (HEC) connection details. You can find the token in your Splunk server under Settings > Data Inputs > HTTP Event Collector.\n\nEntity filtering can be configured in YAML using the `filter` option.",
+                "title": "Set up Splunk HTTP Event Collector"
+            }
+        }
+    },
+    "exceptions": {
+        "cannot_connect": {
+            "message": "Unable to connect to Splunk at {host}:{port}."
+        },
+        "invalid_auth": {
+            "message": "Invalid authentication"
+        },
+        "timeout_connect": {
+            "message": "Connection to Splunk at {host}:{port} timed out."
+        },
+        "unexpected_connect_error": {
+            "message": "Unexpected error while connecting to Splunk."
+        }
+    }
+}

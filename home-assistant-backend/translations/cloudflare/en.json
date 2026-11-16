@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "reauth_successful": "Re-authentication was successful"
-        },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
@@ -20,26 +17,26 @@
                 "data": {
                     "records": "Records"
                 },
-                "title": "Choose the Records to Update"
+                "title": "Choose the records to update"
             },
             "user": {
                 "data": {
                     "api_token": "API token"
                 },
-                "description": "This integration requires an API Token created with Zone:Zone:Read and Zone:DNS:Edit permissions for all zones in your account.",
+                "description": "This integration requires an API token created with Zone:Zone:Read and Zone:DNS:Edit permissions for all zones in your account.",
                 "title": "Connect to Cloudflare"
             },
             "zone": {
                 "data": {
                     "zone": "Zone"
                 },
-                "title": "Choose the Zone to Update"
+                "title": "Choose the zone to update"
             }
         }
     },
     "services": {
         "update_records": {
-            "description": "Manually trigger update to Cloudflare records.",
+            "description": "Manually triggers an update of Cloudflare records.",
             "name": "Update records"
         }
     }

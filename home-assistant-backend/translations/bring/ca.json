@@ -1,8 +1,10 @@
 {
+    "common": {
+        "shopping_list_items": "articles"
+    },
     "config": {
         "abort": {
-            "already_configured": "El servei ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "already_configured": "El servei ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -18,6 +20,12 @@
                 "description": "La integraci\u00f3 Bring! ha de tornar a autenticar-se amb el teu compte",
                 "title": "L'autenticaci\u00f3 de {name} ha caducat"
             },
+            "reconfigure": {
+                "data": {
+                    "email": "Correu electr\u00f2nic",
+                    "password": "Contrasenya"
+                }
+            },
             "user": {
                 "data": {
                     "email": "Correu electr\u00f2nic",
@@ -28,8 +36,12 @@
     },
     "entity": {
         "sensor": {
+            "convenient": {
+                "unit_of_measurement": "articles"
+            },
             "discounted": {
-                "name": "Nom\u00e9s descompte"
+                "name": "Nom\u00e9s descompte",
+                "unit_of_measurement": "articles"
             },
             "list_access": {
                 "state": {
@@ -60,21 +72,31 @@
                 }
             },
             "urgent": {
-                "name": "Urgent"
+                "name": "Urgent",
+                "unit_of_measurement": "articles"
             }
         }
     },
     "services": {
         "send_message": {
             "fields": {
-                "entity_id": {
-                    "name": "Llista"
-                },
                 "message": {
                     "name": "Tipus de notificaci\u00f3"
                 }
             },
             "name": "Envia una notificaci\u00f3"
+        },
+        "send_reaction": {
+            "fields": {
+                "entity_id": {
+                    "name": "Activitats"
+                },
+                "reaction": {
+                    "description": "Tipus de reacci\u00f3 a enviar a la resposta.",
+                    "name": "Reacci\u00f3"
+                }
+            },
+            "name": "Enviar reacci\u00f3"
         }
     }
 }

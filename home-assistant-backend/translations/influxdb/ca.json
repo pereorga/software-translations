@@ -1,0 +1,51 @@
+{
+    "common": {
+        "ssl_ca_cert": "Certificat SSL CA (opcional)"
+    },
+    "config": {
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "ssl_error": "Error del certificat SSL",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "configure_v1": {
+                "data": {
+                    "database": "Base de dades",
+                    "password": "Contrasenya",
+                    "ssl_ca_cert": "Certificat SSL CA (opcional)",
+                    "url": "URL",
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "configure_v2": {
+                "data": {
+                    "ssl_ca_cert": "Certificat SSL CA (opcional)",
+                    "token": "Token d'API",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "reconfigure_v1": {
+                "data": {
+                    "database": "Base de dades",
+                    "password": "Contrasenya",
+                    "ssl_ca_cert": "Certificat SSL CA (opcional)",
+                    "url": "URL",
+                    "username": "Nom d'usuari",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            },
+            "reconfigure_v2": {
+                "data": {
+                    "ssl_ca_cert": "Certificat SSL CA (opcional)",
+                    "token": "Token d'API",
+                    "url": "URL",
+                    "verify_ssl": "Verifica el certificat SSL"
+                }
+            }
+        }
+    }
+}

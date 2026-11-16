@@ -1,0 +1,225 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Your password on data.grandlyon.com.",
+                    "username": "Your username on data.grandlyon.com."
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Your password on data.grandlyon.com.",
+                    "username": "Your username on data.grandlyon.com."
+                }
+            },
+            "user": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "Your password on data.grandlyon.com.",
+                    "username": "Your username on data.grandlyon.com."
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "park_and_ride": {
+            "abort": {
+                "already_configured": "Service is already configured",
+                "cannot_connect": "Failed to connect",
+                "invalid_auth": "Invalid authentication",
+                "unknown": "Unexpected error"
+            },
+            "entry_type": "Park & ride",
+            "initiate_flow": {
+                "user": "Add park & ride"
+            },
+            "step": {
+                "user": {
+                    "data": {
+                        "park_id": "Park & ride"
+                    },
+                    "data_description": {
+                        "park_id": "Search by name, or enter a park & ride ID directly."
+                    }
+                }
+            }
+        },
+        "stop": {
+            "abort": {
+                "already_configured": "Service is already configured",
+                "cannot_connect": "Failed to connect",
+                "invalid_auth": "Invalid authentication",
+                "unknown": "Unexpected error"
+            },
+            "entry_type": "Transit stop",
+            "error": {
+                "invalid_stop_id": "Stop ID must be a number."
+            },
+            "initiate_flow": {
+                "user": "Add transit stop"
+            },
+            "step": {
+                "pick_line": {
+                    "data": {
+                        "line": "Line"
+                    }
+                },
+                "user": {
+                    "data": {
+                        "stop_id": "Stop"
+                    },
+                    "data_description": {
+                        "stop_id": "Search by stop name, address or city, or enter a stop ID directly."
+                    }
+                }
+            }
+        },
+        "velov_station": {
+            "abort": {
+                "already_configured": "Service is already configured",
+                "cannot_connect": "Failed to connect",
+                "invalid_auth": "Invalid authentication",
+                "unknown": "Unexpected error"
+            },
+            "entry_type": "V\u00e9lo'v station",
+            "error": {
+                "invalid_station_id": "Station ID must be a number."
+            },
+            "initiate_flow": {
+                "user": "Add V\u00e9lo'v station"
+            },
+            "step": {
+                "user": {
+                    "data": {
+                        "station_id": "Station"
+                    },
+                    "data_description": {
+                        "station_id": "Search by station name, address or city, or enter a station ID directly."
+                    }
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "station_open": {
+                "name": "Station open"
+            }
+        },
+        "sensor": {
+            "accessible_spaces": {
+                "name": "Accessible parking spaces",
+                "unit_of_measurement": "spaces"
+            },
+            "available_bikes": {
+                "name": "Available bikes",
+                "unit_of_measurement": "bikes"
+            },
+            "available_electrical_bikes": {
+                "name": "Available electrical bikes",
+                "unit_of_measurement": "bikes"
+            },
+            "available_mechanical_bikes": {
+                "name": "Available mechanical bikes",
+                "unit_of_measurement": "bikes"
+            },
+            "available_spaces": {
+                "name": "Available parking spaces",
+                "unit_of_measurement": "spaces"
+            },
+            "available_stands": {
+                "name": "Available stands",
+                "unit_of_measurement": "stands"
+            },
+            "capacity": {
+                "name": "Capacity",
+                "unit_of_measurement": "stands"
+            },
+            "electrical_internal_battery_bikes": {
+                "name": "Electrical internal battery bikes",
+                "unit_of_measurement": "bikes"
+            },
+            "electrical_removable_battery_bikes": {
+                "name": "Electrical removable battery bikes",
+                "unit_of_measurement": "bikes"
+            },
+            "next_departure_1": {
+                "name": "Next departure 1"
+            },
+            "next_departure_1_direction": {
+                "name": "Next departure 1 direction"
+            },
+            "next_departure_1_type": {
+                "name": "Next departure 1 type",
+                "state": {
+                    "estimated": "Estimated",
+                    "theoretical": "Theoretical"
+                }
+            },
+            "next_departure_2": {
+                "name": "Next departure 2"
+            },
+            "next_departure_2_direction": {
+                "name": "Next departure 2 direction"
+            },
+            "next_departure_2_type": {
+                "name": "Next departure 2 type",
+                "state": {
+                    "estimated": "Estimated",
+                    "theoretical": "Theoretical"
+                }
+            },
+            "next_departure_3": {
+                "name": "Next departure 3"
+            },
+            "next_departure_3_direction": {
+                "name": "Next departure 3 direction"
+            },
+            "next_departure_3_type": {
+                "name": "Next departure 3 type",
+                "state": {
+                    "estimated": "Estimated",
+                    "theoretical": "Theoretical"
+                }
+            },
+            "park_and_ride_capacity": {
+                "name": "Capacity",
+                "unit_of_measurement": "spaces"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_failed": {
+            "message": "Authentication failed for Data Grand Lyon."
+        },
+        "update_failed_park_and_ride": {
+            "message": "Error fetching park & ride availability from Data Grand Lyon."
+        },
+        "update_failed_tcl": {
+            "message": "Error fetching TCL departures from Data Grand Lyon."
+        },
+        "update_failed_velov": {
+            "message": "Error fetching V\u00e9lo'v stations from Data Grand Lyon."
+        }
+    }
+}

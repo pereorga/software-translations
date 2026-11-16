@@ -3,7 +3,6 @@
         "abort": {
             "already_configured_account": "Account is already configured",
             "ezviz_cloud_account_missing": "EZVIZ cloud account missing. Please reconfigure EZVIZ cloud account",
-            "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error"
         },
         "error": {
@@ -95,14 +94,21 @@
                     "silent": "Silent",
                     "soft": "Soft"
                 }
+            },
+            "battery_camera_work_mode": {
+                "name": "Battery work mode",
+                "state": {
+                    "custom": "Custom",
+                    "high_performance": "High performance",
+                    "plugged_in": "Plugged in",
+                    "power_save": "Power save",
+                    "super_power_save": "Super power saving"
+                }
             }
         },
         "sensor": {
             "alarm_sound_mod": {
                 "name": "Alarm sound level"
-            },
-            "last_alarm_pic": {
-                "name": "Last alarm picture URL"
             },
             "last_alarm_time": {
                 "name": "Last alarm time"
@@ -177,8 +183,12 @@
         "step": {
             "init": {
                 "data": {
-                    "ffmpeg_arguments": "Arguments passed to ffmpeg for cameras",
+                    "encryption_password": "Image encryption password",
+                    "ffmpeg_arguments": "Arguments passed to FFmpeg for cameras",
                     "timeout": "Request timeout (seconds)"
+                },
+                "data_description": {
+                    "encryption_password": "Password used to decrypt motion pictures when it differs from the camera verification code. Leave empty to use the verification code."
                 }
             }
         }

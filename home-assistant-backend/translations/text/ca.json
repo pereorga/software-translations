@@ -1,4 +1,20 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_equal_to": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "device_automation": {
         "action_type": {
             "set_value": "Estableix el valor de {entity_name}"
@@ -32,14 +48,12 @@
     },
     "services": {
         "set_value": {
-            "description": "Estableix el valor.",
             "fields": {
                 "value": {
                     "description": "Introdu\u00efu un text.",
                     "name": "Valor"
                 }
-            },
-            "name": "Estableix valor"
+            }
         }
     },
     "title": "Text"

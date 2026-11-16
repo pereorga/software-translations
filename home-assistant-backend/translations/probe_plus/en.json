@@ -1,0 +1,57 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured",
+            "no_devices_found": "No devices found on the network"
+        },
+        "error": {
+            "device_not_found": "Device could not be found.",
+            "unknown": "Unexpected error"
+        },
+        "flow_title": "{name}",
+        "step": {
+            "bluetooth_confirm": {
+                "description": "Do you want to set up {name}?"
+            },
+            "user": {
+                "data": {
+                    "address": "Device"
+                },
+                "data_description": {
+                    "address": "Select BLE probe you want to set up"
+                },
+                "description": "Choose a device to set up"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "probe_battery": {
+                "name": "Probe {slot} battery"
+            },
+            "probe_rssi": {
+                "name": "Probe {slot} RSSI"
+            },
+            "probe_temperature": {
+                "name": "Probe {slot} temperature"
+            },
+            "probe_voltage": {
+                "name": "Probe {slot} voltage"
+            },
+            "relay_battery": {
+                "name": "Relay battery"
+            },
+            "relay_voltage": {
+                "name": "Relay voltage"
+            }
+        }
+    },
+    "exceptions": {
+        "migration_no_unique_id": {
+            "message": "Could not migrate the config entry because it has no unique ID"
+        },
+        "no_bleak_scanner": {
+            "message": "No compatible Bluetooth scanner found."
+        }
+    }
+}

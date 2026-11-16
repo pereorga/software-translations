@@ -1,9 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful"
+            "already_configured": "Account is already configured"
         },
         "error": {
             "invalid_auth": "Invalid authentication",
@@ -14,11 +12,17 @@
                 "data": {
                     "2fa": "Two-factor code"
                 },
+                "data_description": {
+                    "2fa": "Account verification code via the method selected in your Ring account settings."
+                },
                 "title": "Two-factor authentication"
             },
             "reauth_confirm": {
                 "data": {
                     "password": "Password"
+                },
+                "data_description": {
+                    "password": "Your Ring account password."
                 },
                 "description": "The Ring integration needs to re-authenticate your account {username}",
                 "title": "Authentication expired for {name}"
@@ -27,27 +31,26 @@
                 "data": {
                     "password": "Password"
                 },
+                "data_description": {
+                    "password": "Your Ring account password."
+                },
                 "description": "Will create a new Authorized Device for {username} at ring.com",
-                "title": "Reconfigure Ring Integration"
+                "title": "Reconfigure Ring integration"
             },
             "user": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
-                "title": "Sign-in with Ring account"
+                "data_description": {
+                    "password": "Your Ring account password.",
+                    "username": "Your Ring account username."
+                },
+                "title": "Sign in with Ring account"
             }
         }
     },
     "entity": {
-        "binary_sensor": {
-            "ding": {
-                "name": "Ding"
-            },
-            "motion": {
-                "name": "Motion"
-            }
-        },
         "button": {
             "open_door": {
                 "name": "Open door"
@@ -63,7 +66,14 @@
         },
         "event": {
             "ding": {
-                "name": "Ding"
+                "name": "Ding",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "ring": "Ring"
+                        }
+                    }
+                }
             },
             "intercom_unlock": {
                 "name": "Intercom unlock"
@@ -89,32 +99,14 @@
             }
         },
         "sensor": {
-            "doorbell_volume": {
-                "name": "Doorbell volume"
-            },
             "last_activity": {
                 "name": "Last activity"
             },
-            "last_ding": {
-                "name": "Last ding"
-            },
-            "last_motion": {
-                "name": "Last motion"
-            },
-            "mic_volume": {
-                "name": "Mic volume"
-            },
-            "voice_volume": {
-                "name": "Voice volume"
-            },
-            "volume": {
-                "name": "Volume"
+            "last_recording": {
+                "name": "Last recording"
             },
             "wifi_signal_category": {
                 "name": "Wi-Fi signal category"
-            },
-            "wifi_signal_strength": {
-                "name": "Wi-Fi signal strength"
             }
         },
         "siren": {
@@ -128,16 +120,27 @@
             },
             "motion_detection": {
                 "name": "Motion detection"
-            },
-            "siren": {
-                "name": "Siren"
             }
         }
     },
-    "issues": {
-        "deprecated_entity": {
-            "description": "We detected that entity `{entity}` is being used in `{info}`\n\nWe have created a new `{new_platform}` entity and you should migrate `{info}` to use this new entity.\n\nWhen you are done migrating `{info}` and are ready to have the deprecated `{entity}` entity removed, disable the entity and restart Home Assistant.",
-            "title": "Detected deprecated {platform} entity usage"
+    "exceptions": {
+        "api_authentication": {
+            "message": "Authentication error communicating with Ring API"
+        },
+        "api_error": {
+            "message": "Error communicating with Ring API"
+        },
+        "api_timeout": {
+            "message": "Timeout communicating with Ring API"
+        },
+        "chime_type_unknown": {
+            "message": "The in-home chime type changed and is no longer supported. Reload the Ring integration."
+        },
+        "no_subscription": {
+            "message": "Ring Protect subscription required for snapshots"
+        },
+        "sdp_m_line_index_required": {
+            "message": "Error negotiating stream for {device}"
         }
     }
 }

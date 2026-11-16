@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Location is already configured",
-            "reconfigure_successful": "Re-configuration was successful"
+            "already_configured": "Location is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect"
@@ -19,6 +18,17 @@
             }
         }
     },
+    "exceptions": {
+        "connection_error": {
+            "message": "An error occurred while connecting to Waze"
+        },
+        "unknown_origin_or_destination": {
+            "message": "Unable to determine origin or destination"
+        },
+        "update_error": {
+            "message": "An error occurred while retrieving data from Waze"
+        }
+    },
     "options": {
         "step": {
             "init": {
@@ -26,11 +36,16 @@
                     "avoid_ferries": "Avoid ferries?",
                     "avoid_subscription_roads": "Avoid roads needing a vignette / subscription?",
                     "avoid_toll_roads": "Avoid toll roads?",
-                    "excl_filter": "Exact streetname which must NOT be part of the selected route",
-                    "incl_filter": "Exact streetname which must be part of the selected route",
+                    "base_coordinates": "Base coordinates",
+                    "excl_filter": "Exact street name which must NOT be part of the selected route",
+                    "incl_filter": "Exact street name which must be part of the selected route",
                     "realtime": "Realtime travel time?",
+                    "time_delta": "Time delta",
                     "units": "Units",
                     "vehicle_type": "Vehicle type"
+                },
+                "data_description": {
+                    "base_coordinates": "When Waze finds multiple matching locations for an address, it selects the one closest to these coordinates."
                 },
                 "description": "Some options will allow you to force the integration to use a particular route or avoid a particular route in its time travel calculation."
             }
@@ -76,17 +91,21 @@
                     "description": "Whether to avoid toll roads.",
                     "name": "Avoid toll roads?"
                 },
+                "base_coordinates": {
+                    "description": "When Waze finds multiple matching locations for an address, it selects the one closest to these coordinates.",
+                    "name": "Base coordinates"
+                },
                 "destination": {
                     "description": "The destination of the route.",
                     "name": "Destination"
                 },
                 "excl_filter": {
-                    "description": "Exact streetname which must NOT be part of the selected route.",
-                    "name": "Exact streetname which must NOT be part of the selected route"
+                    "description": "Exact street name which must NOT be part of the selected route",
+                    "name": "Streets to exclude"
                 },
                 "incl_filter": {
-                    "description": "Exact streetname which must be part of the selected route.",
-                    "name": "Exact streetname which must be part of the selected route"
+                    "description": "Exact street name which must be part of the selected route",
+                    "name": "Streets to include"
                 },
                 "origin": {
                     "description": "The origin of the route.",
@@ -99,6 +118,10 @@
                 "region": {
                     "description": "The region. Controls which Waze server is used.",
                     "name": "Region"
+                },
+                "time_delta": {
+                    "description": "Time offset from now to calculate the route for. Positive values are in the future, negative values are in the past.",
+                    "name": "Time delta"
                 },
                 "units": {
                     "description": "Which unit system to use.",

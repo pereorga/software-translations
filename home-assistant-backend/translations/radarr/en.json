@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Service is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Service is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -34,10 +33,12 @@
         },
         "sensor": {
             "movies": {
-                "name": "Movies"
+                "name": "Movies",
+                "unit_of_measurement": "movies"
             },
             "queue": {
-                "name": "Queue"
+                "name": "Queue",
+                "unit_of_measurement": "movies"
             },
             "start_time": {
                 "name": "Start time"
@@ -51,6 +52,32 @@
                     "upcoming_days": "Number of upcoming days to display"
                 }
             }
+        }
+    },
+    "services": {
+        "get_movies": {
+            "description": "Gets all movies in Radarr with their details and status.",
+            "fields": {
+                "entry_id": {
+                    "description": "ID of the config entry to use.",
+                    "name": "Radarr entry"
+                }
+            },
+            "name": "Get movies"
+        },
+        "get_queue": {
+            "description": "Gets all movies currently in the download queue with their progress and details.",
+            "fields": {
+                "entry_id": {
+                    "description": "ID of the config entry to use.",
+                    "name": "Radarr entry"
+                },
+                "max_items": {
+                    "description": "Maximum number of queue items to return (0 = no limit).",
+                    "name": "Max items"
+                }
+            },
+            "name": "Get queue"
         }
     }
 }

@@ -1,0 +1,156 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "This device has already been configured with this transmitter.",
+            "no_emitters": "No infrared transmitter entities found. Please set up an infrared device first."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "device_type": "Device type",
+                    "infrared_emitter_entity_id": "Infrared transmitter"
+                },
+                "data_description": {
+                    "device_type": "The type of device to control.",
+                    "infrared_emitter_entity_id": "The infrared transmitter entity to use for sending commands."
+                },
+                "description": "Select the device type and the infrared transmitter entity to use for controlling your device.",
+                "title": "Set up Infrared Remote"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "ad_subtitle": {
+                "name": "AD/Subtitle"
+            },
+            "blue": {
+                "name": "Blue"
+            },
+            "browser": {
+                "name": "Browser"
+            },
+            "down": {
+                "name": "Down"
+            },
+            "e_manual": {
+                "name": "E-Manual"
+            },
+            "exit": {
+                "name": "Exit"
+            },
+            "fast_forward": {
+                "name": "Fast forward"
+            },
+            "green": {
+                "name": "Green"
+            },
+            "home": {
+                "name": "Home"
+            },
+            "info": {
+                "name": "Info"
+            },
+            "left": {
+                "name": "Left"
+            },
+            "num_0": {
+                "name": "Number 0"
+            },
+            "num_1": {
+                "name": "Number 1"
+            },
+            "num_2": {
+                "name": "Number 2"
+            },
+            "num_3": {
+                "name": "Number 3"
+            },
+            "num_4": {
+                "name": "Number 4"
+            },
+            "num_5": {
+                "name": "Number 5"
+            },
+            "num_6": {
+                "name": "Number 6"
+            },
+            "num_7": {
+                "name": "Number 7"
+            },
+            "num_8": {
+                "name": "Number 8"
+            },
+            "num_9": {
+                "name": "Number 9"
+            },
+            "ok": {
+                "name": "OK"
+            },
+            "power": {
+                "name": "Power"
+            },
+            "previous_channel": {
+                "name": "Previous channel"
+            },
+            "record": {
+                "name": "Record"
+            },
+            "red": {
+                "name": "Red"
+            },
+            "return": {
+                "name": "Return"
+            },
+            "rewind": {
+                "name": "Rewind"
+            },
+            "right": {
+                "name": "Right"
+            },
+            "settings": {
+                "name": "Settings"
+            },
+            "source": {
+                "name": "Source"
+            },
+            "tools": {
+                "name": "Tools"
+            },
+            "up": {
+                "name": "Up"
+            },
+            "yellow": {
+                "name": "Yellow"
+            }
+        },
+        "media_player": {
+            "samsung_ir_tv": {
+                "state_attributes": {
+                    "source": {
+                        "state": {
+                            "hdmi_1": "HDMI 1",
+                            "hdmi_2": "HDMI 2",
+                            "hdmi_3": "HDMI 3",
+                            "hdmi_4": "HDMI 4",
+                            "tv": "TV"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_source": {
+            "message": "Cannot select input source {invalid_source} for media player. Valid sources: {valid_sources}."
+        }
+    },
+    "selector": {
+        "device_type": {
+            "options": {
+                "ac": "Air Conditioner",
+                "tv": "TV"
+            }
+        }
+    }
+}

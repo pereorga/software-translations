@@ -1,0 +1,45 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "no_devices_found": "No s'han trobat dispositius a la xarxa"
+        },
+        "error": {
+            "no_devices_found": "No s'han trobat dispositius a la xarxa"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "ac_apparent_power": {
+                "name": "Pot\u00e8ncia aparent CA"
+            },
+            "ac_voltage": {
+                "name": "Tensi\u00f3 CA"
+            },
+            "battery_voltage": {
+                "name": "Tensi\u00f3 de la bateria"
+            },
+            "charge_state": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "charger_error": {
+                "state": {
+                    "remote_battery": "Fallada de detecci\u00f3 de tensi\u00f3 de bateria remota"
+                }
+            },
+            "device_state": {
+                "state": {
+                    "off": "OFF"
+                }
+            },
+            "input_current": {
+                "name": "Intensitat d'entrada"
+            },
+            "output_current": {
+                "name": "Intensitat de sortida"
+            }
+        }
+    }
+}

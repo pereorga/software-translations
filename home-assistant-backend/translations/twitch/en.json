@@ -2,13 +2,11 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "oauth_error": "Received invalid token data.",
-            "oauth_failed": "Error while obtaining access token.",
-            "oauth_timeout": "Timeout resolving OAuth token.",
-            "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
-            "reauth_successful": "Re-authentication was successful",
             "unknown": "Unexpected error",
             "wrong_account": "Wrong account: Please authenticate with {username}."
+        },
+        "initiate_flow": {
+            "user": "Add account"
         },
         "step": {
             "reauth_confirm": {
@@ -57,6 +55,11 @@
                     }
                 }
             }
+        }
+    },
+    "exceptions": {
+        "user_not_found": {
+            "message": "The logged-in Twitch user could not be found"
         }
     }
 }

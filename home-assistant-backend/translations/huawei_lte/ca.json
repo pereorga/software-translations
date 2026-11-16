@@ -2,8 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament",
             "unsupported_device": "Dispositiu no compatible"
         },
         "error": {
@@ -40,12 +38,6 @@
     },
     "entity": {
         "binary_sensor": {
-            "24ghz_wifi_status": {
-                "name": "Estat del Wi-Fi de 2.4 GHz"
-            },
-            "5ghz_wifi_status": {
-                "name": "Estat del Wi-Fi de 5 GHz"
-            },
             "mobile_connection": {
                 "name": "Connexi\u00f3 m\u00f2bil"
             },
@@ -149,7 +141,7 @@
             "operator_search_mode": {
                 "name": "Mode cerca d'operadors",
                 "state": {
-                    "0": "Autom\u00e0tic",
+                    "0": "Auto",
                     "1": "Manual"
                 }
             },

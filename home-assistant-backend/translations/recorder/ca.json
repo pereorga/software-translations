@@ -1,18 +1,33 @@
 {
     "issues": {
         "maria_db_range_index_regression": {
-            "description": "Les versions anteriors de MariaDB pateixen una regressi\u00f3 significativa del rendiment en l'obtenci\u00f3 dades hist\u00f2riques i en la purga de la base de dades. Actualitza MariaDB a la versi\u00f3 {min_version} o posterior i reinicia Home Assistant. Si utilitzes el complement principal MariaDB, assegura't d'actualitzar-lo a la darrera versi\u00f3.",
+            "description": "Les versions anteriors de MariaDB pateixen una regressi\u00f3 significativa del rendiment en l'obtenci\u00f3 dades hist\u00f2riques i en la purga de la base de dades. Actualitza MariaDB a la versi\u00f3 {min_version} o posterior i reinicia Home Assistant. Si utilitzes l'aplicaci\u00f3 MariaDB integrada, assegura't d'actualitzar-la a la darrera versi\u00f3.",
             "title": "Actualitza MariaDB a la versi\u00f3 {min_version} o posterior per resoldre un problema de rendiment important"
         }
     },
     "services": {
         "disable": {
             "description": "Atura la gravaci\u00f3 d'esdeveniments i canvis d'estat.",
-            "name": "Desactiva"
+            "name": "Desactiva l'Enregistrador"
         },
         "enable": {
             "description": "Inicia la gravaci\u00f3 d'esdeveniments i canvis d'estat.",
-            "name": "Activa"
+            "name": "Activa l'Enregistrador"
+        },
+        "get_statistics": {
+            "fields": {
+                "period": {
+                    "name": "Per\u00edode"
+                },
+                "types": {
+                    "name": "Tipus"
+                },
+                "units": {
+                    "description": "Conversi\u00f3 d'unitats opcional.",
+                    "name": "Unitats"
+                }
+            },
+            "name": "Obt\u00e9 estad\u00edstiques de l'Enregistrador"
         },
         "purge": {
             "description": "Inicia la tasca de purga per netejar dades antigues de la base de dades.",
@@ -29,21 +44,21 @@
                     "name": "Torna a empaquetar"
                 }
             },
-            "name": "Purga"
+            "name": "Purga la base de dades de l'Enregistrador"
         },
         "purge_entities": {
             "description": "Inicia una tasca de purga per eliminar les dades relacionades amb entitats espec\u00edfiques de la teva base de dades.",
             "fields": {
                 "domains": {
-                    "description": "Llista de dominis als quals eliminar-ne les dades de la base de dades.",
+                    "description": "Llista de dominis als quals eliminar-ne les dades de la base de dades de l'Enregistrador.",
                     "name": "Dominis a eliminar"
                 },
                 "entity_globs": {
-                    "description": "Llista de patrons glob utilitzada per seleccionar les entitats a les quals eliminar-ne les dades de la base de dades.",
-                    "name": "Globs d'entitat a eliminar"
+                    "description": "Llista de patrons 'glob' utilitzada per seleccionar les entitats de les quals eliminar-ne les dades de la base de dades de l'Enregistrador.",
+                    "name": "'Globs' d'entitat a eliminar"
                 },
                 "entity_id": {
-                    "description": "Llista d'entitats les dades de les quals cal eliminar de la base de dades.",
+                    "description": "Llista d'entitats les dades de les quals cal eliminar de la base de dades de l'Enregistrador.",
                     "name": "Entitats a eliminar"
                 },
                 "keep_days": {
@@ -51,7 +66,7 @@
                     "name": "Dies a conservar"
                 }
             },
-            "name": "Purga entitats"
+            "name": "Purga entitats de l'Enregistrador"
         }
     },
     "system_health": {

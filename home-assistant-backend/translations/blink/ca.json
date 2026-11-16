@@ -17,12 +17,23 @@
                 "description": "Introdueix el PIN enviat per correu electr\u00f2nic o SMS",
                 "title": "Autenticaci\u00f3 de dos factors"
             },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
             "user": {
                 "data": {
                     "password": "Contrasenya",
                     "username": "Nom d'usuari"
-                },
-                "title": "Inici de sessi\u00f3 amb un compte de Blink"
+                }
             }
         }
     },
@@ -44,9 +55,6 @@
         }
     },
     "exceptions": {
-        "cant_write": {
-            "message": "No s'ha pogut escriure al fitxer."
-        },
         "integration_not_found": {
             "message": "La integraci\u00f3 \"{target}\" no s'ha trobat al registre."
         },
@@ -72,9 +80,6 @@
     "options": {
         "step": {
             "simple_options": {
-                "data": {
-                    "scan_interval": "Interval d'escaneig (segons)"
-                },
                 "description": "Configura la integraci\u00f3 Blink",
                 "title": "Opcions de Blink"
             }
@@ -98,13 +103,6 @@
                 }
             },
             "name": "Desa el v\u00eddeo"
-        },
-        "send_pin": {
-            "fields": {
-                "config_entry_id": {
-                    "name": "ID d'integraci\u00f3"
-                }
-            }
         },
         "trigger_camera": {
             "description": "Demana a la c\u00e0mera que faci una foto.",

@@ -1,0 +1,103 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "This device has already been configured with this infrared entity.",
+            "no_infrared_entities": "No infrared entities found. Please set up an infrared device first."
+        },
+        "error": {
+            "missing_infrared_entity": "Select an infrared emitter."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "device_type": "Device type",
+                    "infrared_entity_id": "Infrared emitter"
+                },
+                "data_description": {
+                    "device_type": "The type of device to control.",
+                    "infrared_entity_id": "The infrared emitter entity to use for sending commands."
+                },
+                "description": "Select the device type and an infrared emitter.",
+                "title": "Set up SilverCrest infrared device"
+            }
+        }
+    },
+    "device": {
+        "sml330a1": {
+            "name": "Portable air cooler SML 330 A1"
+        },
+        "ssvf45a1": {
+            "name": "Pedestal fan SSVF 45 A1"
+        },
+        "ssvf45b1": {
+            "name": "Pedestal fan SSVF 45 B1"
+        },
+        "ssvf45c1": {
+            "name": "Pedestal fan SSVF 45 C1"
+        },
+        "ssvs85a1": {
+            "name": "Misting pedestal fan SSVS 85 A1"
+        },
+        "ssvs85b2": {
+            "name": "Misting pedestal fan SSVS 85 B2"
+        },
+        "stvd45a1": {
+            "name": "Tower fan STVD 45 A1"
+        },
+        "stvl50a1": {
+            "name": "Tower fan STVL 50 A1"
+        },
+        "stvl50b1": {
+            "name": "Tower fan STVL 50 B1"
+        },
+        "stvl50c1": {
+            "name": "Tower fan STVL 50 C1"
+        },
+        "sv60a1": {
+            "name": "Pedestal fan SV 60 A1"
+        },
+        "sv60a2": {
+            "name": "Pedestal fan SV 60 A2"
+        }
+    },
+    "entity": {
+        "button": {
+            "mist": {
+                "name": "Mist"
+            },
+            "mode": {
+                "name": "Mode"
+            },
+            "osc": {
+                "name": "Oscillation"
+            },
+            "power": {
+                "name": "Power"
+            },
+            "speed": {
+                "name": "Speed"
+            },
+            "timer": {
+                "name": "Timer"
+            }
+        }
+    },
+    "selector": {
+        "device_type": {
+            "options": {
+                "sml330a1": "Portable air cooler SML 330 A1",
+                "ssvf45a1": "Pedestal fan SSVF 45 A1",
+                "ssvf45b1": "Pedestal fan SSVF 45 B1",
+                "ssvf45c1": "Pedestal fan SSVF 45 C1",
+                "ssvs85a1": "Misting pedestal fan SSVS 85 A1",
+                "ssvs85b2": "Misting pedestal fan SSVS 85 B2",
+                "stvd45a1": "Tower fan STVD 45 A1",
+                "stvl50a1": "Tower fan STVL 50 A1",
+                "stvl50b1": "Tower fan STVL 50 B1",
+                "stvl50c1": "Tower fan STVL 50 C1",
+                "sv60a1": "Pedestal fan SV 60 A1",
+                "sv60a2": "Pedestal fan SV 60 A2"
+            }
+        }
+    }
+}

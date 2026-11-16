@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "reconfigure_successful": "Re-configuration was successful"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -24,7 +23,7 @@
     },
     "exceptions": {
         "failed_to_parse_hvac_action": {
-            "message": "Could not determine HVAC action: {mode_and_active}, {self.current_temperature}, {self.target_temperature_low}"
+            "message": "Could not determine HVAC action: {mode_and_active}, {current_temperature}, {target_temperature_low}"
         },
         "failed_to_parse_hvac_mode": {
             "message": "Cannot parse response to HVACMode: {mode}"

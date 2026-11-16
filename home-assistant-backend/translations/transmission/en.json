@@ -1,17 +1,20 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "invalid_auth": "Invalid authentication"
+            "invalid_auth": "Invalid authentication",
+            "transmission_version": "Minimum required version is 4.0.0. Please upgrade Transmission and then retry."
         },
         "step": {
             "reauth_confirm": {
                 "data": {
                     "password": "Password"
+                },
+                "data_description": {
+                    "password": "The password to authenticate with the Transmission instance, if set."
                 },
                 "description": "The password for {username} is invalid.",
                 "title": "Authentication expired for {name}"
@@ -26,13 +29,32 @@
                     "username": "Username"
                 },
                 "data_description": {
-                    "path": "The RPC request target path. E.g. `/transmission/rpc`"
+                    "host": "The hostname or IP address of the Transmission instance.",
+                    "password": "The password to authenticate with the Transmission instance, if set.",
+                    "path": "The RPC request target path, for example, `/transmission/rpc`.",
+                    "port": "The port number of the Transmission instance.",
+                    "ssl": "Connect to the Transmission RPC interface using HTTPS.",
+                    "username": "The username to authenticate with the Transmission instance, if set."
                 },
                 "title": "Set up Transmission client"
             }
         }
     },
     "entity": {
+        "event": {
+            "torrent": {
+                "name": "Torrent",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "downloaded": "Downloaded",
+                            "removed": "Removed",
+                            "started": "Started"
+                        }
+                    }
+                }
+            }
+        },
         "sensor": {
             "active_torrents": {
                 "name": "Active torrents",
@@ -42,6 +64,9 @@
                 "name": "Completed torrents",
                 "unit_of_measurement": "torrents"
             },
+            "download_dir_free_space": {
+                "name": "Available disk space"
+            },
             "download_speed": {
                 "name": "Download speed"
             },
@@ -49,13 +74,31 @@
                 "name": "Paused torrents",
                 "unit_of_measurement": "torrents"
             },
+            "session_download": {
+                "name": "Session download"
+            },
+            "session_ratio": {
+                "name": "Session ratio"
+            },
+            "session_upload": {
+                "name": "Session upload"
+            },
             "started_torrents": {
                 "name": "Started torrents",
                 "unit_of_measurement": "torrents"
             },
+            "total_download": {
+                "name": "Total download"
+            },
+            "total_ratio": {
+                "name": "Total ratio"
+            },
             "total_torrents": {
                 "name": "Total torrents",
                 "unit_of_measurement": "torrents"
+            },
+            "total_upload": {
+                "name": "Total upload"
             },
             "transmission_status": {
                 "name": "Status",
@@ -79,13 +122,44 @@
             }
         }
     },
+    "exceptions": {
+        "could_not_add_torrent": {
+            "message": "Could not add torrent: unsupported type or no permission."
+        },
+        "version_error": {
+            "message": "You are running {transmission_version} of Transmission. Minimum required version is {min_version}. Please upgrade Transmission and then restart Home Assistant."
+        }
+    },
     "options": {
         "step": {
             "init": {
                 "data": {
                     "limit": "Limit",
                     "order": "Order"
+                },
+                "data_description": {
+                    "limit": "Maximum number of torrents to show in the torrent info attributes.",
+                    "order": "Order in which torrents are listed in the torrent info attributes."
                 }
+            }
+        }
+    },
+    "selector": {
+        "order": {
+            "options": {
+                "best_ratio_first": "Best ratio first",
+                "newest_first": "Newest first",
+                "oldest_first": "Oldest first",
+                "worst_ratio_first": "Worst ratio first"
+            }
+        },
+        "torrent_filter": {
+            "options": {
+                "active": "Active",
+                "all": "All",
+                "completed": "Completed",
+                "paused": "Paused",
+                "started": "Started"
             }
         }
     },
@@ -101,12 +175,30 @@
                     "description": "ID of the config entry to use.",
                     "name": "Transmission entry"
                 },
+                "labels": {
+                    "description": "Optional comma-separated list of labels to assign to the torrent.",
+                    "name": "Labels"
+                },
                 "torrent": {
                     "description": "URL, magnet link or Base64 encoded file.",
                     "name": "Torrent"
                 }
             },
             "name": "Add torrent"
+        },
+        "get_torrents": {
+            "description": "Get a list of current torrents",
+            "fields": {
+                "entry_id": {
+                    "description": "ID of the config entry to use.",
+                    "name": "Transmission entry"
+                },
+                "torrent_filter": {
+                    "description": "What kind of torrents you want to return, such as All or Active.",
+                    "name": "Torrent filter"
+                }
+            },
+            "name": "Get torrents"
         },
         "remove_torrent": {
             "description": "Removes a torrent.",

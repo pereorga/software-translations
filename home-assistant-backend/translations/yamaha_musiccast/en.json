@@ -26,6 +26,69 @@
         }
     },
     "entity": {
+        "media_player": {
+            "zone": {
+                "state_attributes": {
+                    "sound_mode": {
+                        "state": {
+                            "11ch_stereo": "11ch stereo",
+                            "2ch_stereo": "2ch stereo",
+                            "5ch_stereo": "5ch stereo",
+                            "7ch_stereo": "7ch stereo",
+                            "9ch_stereo": "9ch stereo",
+                            "action_game": "Action game",
+                            "adventure": "Adventure",
+                            "all_ch_stereo": "All ch stereo",
+                            "amsterdam": "Hall in Amsterdam",
+                            "arena": "Arena",
+                            "bottom_line": "The Bottom Line",
+                            "cellar_club": "Cellar club",
+                            "chamber": "Chamber",
+                            "concert": "Live concert",
+                            "disco": "Disco",
+                            "drama": "Drama",
+                            "enhanced": "Enhanced",
+                            "frankfurt": "Hall in Frankfurt",
+                            "freiburg": "Church in Freiburg",
+                            "game": "Game",
+                            "jazz_club": "Jazz club",
+                            "mono_movie": "Mono movie",
+                            "movie": "Movie",
+                            "munich": "Hall in Munich",
+                            "munich_a": "Hall in Munich A",
+                            "munich_b": "Hall in Munich B",
+                            "music": "Music",
+                            "music_video": "Music video",
+                            "my_surround": "My surround",
+                            "off": "Off",
+                            "pavilion": "Pavilion",
+                            "recital_opera": "Recital/opera",
+                            "roleplaying_game": "Roleplaying game",
+                            "roxy_theatre": "The Roxy Theatre",
+                            "royaumont": "Church in Royaumont",
+                            "sci-fi": "Sci-fi",
+                            "spectacle": "Spectacle",
+                            "sports": "Sports",
+                            "standard": "Standard",
+                            "stereo": "Stereo",
+                            "straight": "Straight",
+                            "stuttgart": "Hall in Stuttgart",
+                            "surr_decoder": "Surround decoder",
+                            "talk_show": "Talk show",
+                            "target": "Target",
+                            "tokyo": "Church in Tokyo",
+                            "tv_program": "TV program",
+                            "usa_a": "Hall in USA A",
+                            "usa_b": "Hall in USA B",
+                            "vienna": "Hall in Vienna",
+                            "village_gate": "Village Gate",
+                            "village_vanguard": "Village Vanguard",
+                            "warehouse_loft": "Warehouse loft"
+                        }
+                    }
+                }
+            }
+        },
         "select": {
             "dimmer": {
                 "state": {
@@ -41,11 +104,11 @@
             },
             "zone_link_audio_delay": {
                 "state": {
-                    "audio_sync": "Audio Synchronization",
-                    "audio_sync_off": "Audio Synchronization Off",
-                    "audio_sync_on": "Audio Synchronization On",
+                    "audio_sync": "Audio synchronization",
+                    "audio_sync_off": "Audio synchronization off",
+                    "audio_sync_on": "Audio synchronization on",
                     "balanced": "Balanced",
-                    "lip_sync": "Lip Synchronization"
+                    "lip_sync": "Lip synchronization"
                 }
             },
             "zone_link_audio_quality": {
@@ -63,10 +126,10 @@
             },
             "zone_sleep": {
                 "state": {
-                    "120_min": "120 Minutes",
-                    "30_min": "30 Minutes",
-                    "60_min": "60 Minutes",
-                    "90_min": "90 Minutes",
+                    "120_min": "120 minutes",
+                    "30_min": "30 minutes",
+                    "60_min": "60 minutes",
+                    "90_min": "90 minutes",
                     "off": "Off"
                 }
             },

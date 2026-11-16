@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Device is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -13,12 +12,28 @@
                 "data": {
                     "api_key": "API key"
                 },
+                "data_description": {
+                    "api_key": "The API key of your PVOutput account."
+                },
                 "description": "To re-authenticate with PVOutput you'll need to get the API key at {account_url}."
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The API key of your PVOutput account."
+                },
+                "description": "Reconfigure your PVOutput integration. You can update your API key at {account_url}."
             },
             "user": {
                 "data": {
                     "api_key": "API key",
                     "system_id": "System ID"
+                },
+                "data_description": {
+                    "api_key": "The API key of your PVOutput account.",
+                    "system_id": "The ID of the PVOutput system you want to monitor."
                 },
                 "description": "To authenticate with PVOutput you'll need to get the API key at {account_url}.\n\nThe system IDs of registered systems are listed on that same page."
             }
@@ -30,17 +45,34 @@
                 "name": "Efficiency"
             },
             "energy_consumption": {
-                "name": "Energy consumed"
+                "name": "Energy consumption"
             },
             "energy_generation": {
-                "name": "Energy generated"
+                "name": "Energy generation"
+            },
+            "last_reported": {
+                "name": "Last reported"
             },
             "power_consumption": {
-                "name": "Power consumed"
+                "name": "Power consumption"
             },
             "power_generation": {
-                "name": "Power generated"
+                "name": "Power generation"
             }
+        }
+    },
+    "exceptions": {
+        "authentication_failed": {
+            "message": "Authentication with the PVOutput service failed. Please reauthenticate with a valid API key."
+        },
+        "communication_error": {
+            "message": "An error occurred while communicating with the PVOutput service."
+        },
+        "no_data_available": {
+            "message": "The PVOutput service has no data available for this system."
+        },
+        "unknown_error": {
+            "message": "An unknown error occurred while communicating with the PVOutput service."
         }
     }
 }

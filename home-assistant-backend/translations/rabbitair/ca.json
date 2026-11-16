@@ -7,7 +7,6 @@
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "invalid_access_token": "Token d'acc\u00e9s inv\u00e0lid",
             "invalid_host": "Nom de l'amfitri\u00f3 o adre\u00e7a IP inv\u00e0lids",
-            "timeout_connect": "S'ha esgotat el temps m\u00e0xim d'espera per establir connexi\u00f3",
             "unknown": "Error inesperat"
         },
         "step": {
@@ -15,6 +14,29 @@
                 "data": {
                     "access_token": "Token d'acc\u00e9s",
                     "host": "Amfitri\u00f3"
+                }
+            }
+        }
+    },
+    "entity": {
+        "fan": {
+            "rabbitair": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "manual": "Manual"
+                        }
+                    }
+                }
+            }
+        },
+        "sensor": {
+            "air_quality": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
                 }
             }
         }

@@ -1,14 +1,27 @@
 {
     "config": {
         "abort": {
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
-        },
-        "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "password_missing": "Falta la contrasenya",
+            "unknown": "Error inesperat",
+            "username_missing": "Falta el nom d'usuari"
+        },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "password": "Contrasenya del teu compte d'HEOS.",
+                    "username": "Nom d'usuari o correu electr\u00f2nic del teu compte d'HEOS."
+                },
+                "title": "Re-autenticaci\u00f3 d'HEOS"
+            },
             "reconfigure": {
                 "data": {
                     "host": "Amfitri\u00f3"
@@ -24,24 +37,24 @@
             }
         }
     },
-    "services": {
-        "sign_in": {
-            "description": "Inicia la sessi\u00f3 a un compte d'HEOS.",
-            "fields": {
-                "password": {
-                    "description": "Contrasenya del compte d'HEOS.",
-                    "name": "Contrasenya"
-                },
-                "username": {
-                    "description": "Nom d'usuari o correu electr\u00f2nic del compte d'HEOS.",
-                    "name": "Nom d'usuari"
-                }
-            },
-            "name": "Inicia sessi\u00f3"
+    "options": {
+        "error": {
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "password_missing": "Falta la contrasenya",
+            "unknown": "Error inesperat",
+            "username_missing": "Falta el nom d'usuari"
         },
-        "sign_out": {
-            "description": "Tanca la sessi\u00f3 del compte d'HEOS.",
-            "name": "Tanca sessi\u00f3"
+        "step": {
+            "init": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                },
+                "data_description": {
+                    "password": "Contrasenya del teu compte d'HEOS.",
+                    "username": "Nom d'usuari o correu electr\u00f2nic del teu compte d'HEOS."
+                }
+            }
         }
     }
 }

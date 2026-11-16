@@ -1,4 +1,76 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "condition_threshold_name": "Tipus de llindar",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_drying": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_humidifying": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_mode": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_target_humidity": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        }
+    },
     "device_automation": {
         "action_type": {
             "set_humidity": "Estableix la humitat de {entity_name}",
@@ -61,8 +133,8 @@
                 "mode": {
                     "name": "Mode",
                     "state": {
-                        "auto": "Autom\u00e0tic",
-                        "away": "A fora",
+                        "auto": "Auto",
+                        "away": "Fora",
                         "baby": "Nad\u00f3",
                         "boost": "Incrementat",
                         "comfort": "Confort",
@@ -83,37 +155,81 @@
     },
     "services": {
         "set_humidity": {
-            "description": "Configura la humitat objectiu.",
             "fields": {
                 "humidity": {
                     "description": "Humitat objectiu.",
                     "name": "Humitat"
                 }
-            },
-            "name": "Configura humitat"
+            }
         },
         "set_mode": {
-            "description": "Configura el mode de funcionament de l'humidificador.",
             "fields": {
                 "mode": {
-                    "description": "Mode de funcionament. Per exemple: _normal_, _eco_ o _away_. Per obtenir la llista de possibles valors, consulta la documentaci\u00f3 de la integraci\u00f3.",
                     "name": "Mode"
                 }
-            },
-            "name": "Configura mode"
+            }
         },
         "toggle": {
-            "description": "Activa/desactiva l'humidificador.",
-            "name": "Commuta"
+            "name": "Commuta humidificador"
         },
         "turn_off": {
-            "description": "Apaga l'humidificador.",
-            "name": "Apaga"
+            "name": "Apaga humidificador"
         },
         "turn_on": {
-            "description": "Enc\u00e9n l'humidificador.",
-            "name": "Enc\u00e9n"
+            "name": "Engega humidificador"
         }
     },
-    "title": "Humidificador"
+    "title": "Humidificador",
+    "triggers": {
+        "mode_changed": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "started_drying": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "started_humidifying": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "turned_off": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "turned_on": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

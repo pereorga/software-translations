@@ -1,4 +1,20 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_event_active": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "entity_component": {
         "_": {
             "name": "Calendari",
@@ -62,7 +78,7 @@
                 },
                 "in": {
                     "description": "Dies o setmanes que falten per l'esdeveniment.",
-                    "name": "D'aqu\u00ed a"
+                    "name": "D'aqu\u00ed"
                 },
                 "location": {
                     "description": "Ubicaci\u00f3 de l'esdeveniment.",
@@ -80,11 +96,9 @@
                     "description": "Defineix el resum o tema de l'esdeveniment.",
                     "name": "Resum"
                 }
-            },
-            "name": "Crea esdeveniment"
+            }
         },
         "get_events": {
-            "description": "Obt\u00e9 els esdeveniments d'un calendari dins un interval de temps.",
             "fields": {
                 "duration": {
                     "name": "Durada"

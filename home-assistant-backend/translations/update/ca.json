@@ -1,5 +1,36 @@
 {
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys"
+    },
+    "conditions": {
+        "is_available": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        },
+        "is_not_available": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    },
     "device_automation": {
+        "extra_fields": {
+            "for": "Durada"
+        },
         "trigger_type": {
             "changed_states": "La disponibilitat de l'actualitzaci\u00f3 de {entity_name} canvi\u00ef",
             "turned_off": "{entity_name} s'actualitzi",
@@ -63,9 +94,20 @@
             "name": "Instal\u00b7la actualitzaci\u00f3"
         },
         "skip": {
-            "description": "Marca l'actualitzaci\u00f3 disponible actual com a omesa.",
             "name": "Omet l'actualitzaci\u00f3"
         }
     },
-    "title": "Actualitza"
+    "title": "Actualitza",
+    "triggers": {
+        "became_available": {
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                }
+            }
+        }
+    }
 }

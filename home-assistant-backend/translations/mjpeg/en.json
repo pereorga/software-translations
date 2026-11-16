@@ -13,11 +13,19 @@
                     "mjpeg_url": "MJPEG URL",
                     "name": "Name",
                     "password": "Password",
-                    "still_image_url": "Still Image URL",
+                    "still_image_url": "Still image URL",
                     "username": "Username",
                     "verify_ssl": "Verify SSL certificate"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "error_getting_image": {
+            "message": "Error getting a new image from {name}."
+        },
+        "timeout_getting_image": {
+            "message": "Timeout getting an image from {name}."
         }
     },
     "options": {
@@ -32,7 +40,7 @@
                     "mjpeg_url": "MJPEG URL",
                     "name": "Name",
                     "password": "Password",
-                    "still_image_url": "Still Image URL",
+                    "still_image_url": "Still image URL",
                     "username": "Username",
                     "verify_ssl": "Verify SSL certificate"
                 }

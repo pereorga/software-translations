@@ -1,0 +1,132 @@
+{
+    "config": {
+        "step": {
+            "ac": {
+                "data": {
+                    "infrared_entity_id": "Emissor d'infrarojos",
+                    "infrared_receiver_entity_id": "Receptor d'infrarojos"
+                }
+            },
+            "tv": {
+                "data": {
+                    "infrared_entity_id": "Emissor d'infrarojos",
+                    "infrared_receiver_entity_id": "Receptor d'infrarojos"
+                }
+            },
+            "user": {
+                "menu_options": {
+                    "tv": "TV"
+                }
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "back": {
+                "name": "Enrere"
+            },
+            "down": {
+                "name": "Avall"
+            },
+            "exit": {
+                "name": "Surt"
+            },
+            "guide": {
+                "name": "Guia"
+            },
+            "hdmi_1": {
+                "name": "HDMI 1"
+            },
+            "hdmi_2": {
+                "name": "HDMI 2"
+            },
+            "hdmi_3": {
+                "name": "HDMI 3"
+            },
+            "hdmi_4": {
+                "name": "HDMI 4"
+            },
+            "num_0": {
+                "name": "N\u00famero 0"
+            },
+            "num_1": {
+                "name": "N\u00famero 1"
+            },
+            "num_2": {
+                "name": "N\u00famero 2"
+            },
+            "num_3": {
+                "name": "N\u00famero 3"
+            },
+            "num_4": {
+                "name": "N\u00famero 4"
+            },
+            "num_5": {
+                "name": "N\u00famero 5"
+            },
+            "num_6": {
+                "name": "N\u00famero 6"
+            },
+            "num_7": {
+                "name": "N\u00famero 7"
+            },
+            "num_8": {
+                "name": "N\u00famero 8"
+            },
+            "num_9": {
+                "name": "N\u00famero 9"
+            },
+            "ok": {
+                "name": "OK"
+            },
+            "power_off": {
+                "name": "Desactiva"
+            },
+            "power_on": {
+                "name": "Activa"
+            },
+            "right": {
+                "name": "Dreta"
+            }
+        },
+        "event": {
+            "received_command": {
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "back": "Enrere",
+                            "down": "Avall",
+                            "exit": "Surt",
+                            "guide": "Guia",
+                            "hdmi_1": "HDMI 1",
+                            "hdmi_2": "HDMI 2",
+                            "hdmi_3": "HDMI 3",
+                            "hdmi_4": "HDMI 4",
+                            "num_0": "N\u00famero 0",
+                            "num_1": "N\u00famero 1",
+                            "num_2": "N\u00famero 2",
+                            "num_3": "N\u00famero 3",
+                            "num_4": "N\u00famero 4",
+                            "num_5": "N\u00famero 5",
+                            "num_6": "N\u00famero 6",
+                            "num_7": "N\u00famero 7",
+                            "num_8": "N\u00famero 8",
+                            "num_9": "N\u00famero 9",
+                            "ok": "OK",
+                            "power_off": "Desactiva",
+                            "power_on": "Activa",
+                            "right": "Dreta"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "energy_limit": {
+                "state": {
+                    "off": "OFF"
+                }
+            }
+        }
+    }
+}

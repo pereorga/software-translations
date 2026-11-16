@@ -17,6 +17,14 @@
             }
         }
     },
+    "exceptions": {
+        "accessory_not_found": {
+            "message": "No HomeKit accessory found for device ID: {device_id}"
+        },
+        "device_not_found": {
+            "message": "No device found for device ID: {device_id}"
+        }
+    },
     "options": {
         "step": {
             "accessory": {
@@ -25,20 +33,24 @@
                 },
                 "title": "Select the entity for the accessory"
             },
-            "advanced": {
+            "bridged_device_triggers": {
                 "data": {
                     "devices": "Devices (Triggers)"
                 },
                 "description": "Programmable switches are created for each selected device. When a device trigger fires, HomeKit can be configured to run an automation or scene.",
-                "title": "Advanced Configuration"
+                "title": "Bridged device triggers"
             },
             "cameras": {
                 "data": {
                     "camera_audio": "Cameras that support audio",
                     "camera_copy": "Cameras that support native H.264 streams"
                 },
-                "description": "Check all cameras that support native H.264 streams. If the camera does not output a H.264 stream, the system will transcode the video to H.264 for HomeKit. Transcoding requires a performant CPU and is unlikely to work on single board computers.",
-                "title": "Camera Configuration"
+                "description": "Check all cameras that support native H.264 streams. If the camera does not output a H.264 stream, the system will transcode the video to H.264 for HomeKit. Transcoding requires a performant CPU and is unlikely to work on single-board computers.",
+                "title": "Camera configuration"
+            },
+            "climate": {
+                "description": "Choose which accessory each climate entity uses in HomeKit. Heater Cooler puts the mode, temperature, and the supported fan speed and swing controls on one air conditioner style tile; Thermostat is the classic temperature dial with a separate fan. Automatic keeps the accessory the entity already uses and picks the best fit when it is bridged for the first time. Changing the accessory type keeps the room and name, but HomeKit scenes or automations that used the old controls may need to be recreated.",
+                "title": "Climate accessory configuration"
             },
             "exclude": {
                 "data": {
@@ -57,29 +69,50 @@
             "init": {
                 "data": {
                     "domains": "Domains to include",
-                    "include_exclude_mode": "Inclusion Mode",
-                    "mode": "HomeKit Mode"
+                    "include_exclude_mode": "Inclusion mode",
+                    "mode": "HomeKit mode"
                 },
-                "description": "HomeKit can be configured expose a bridge or a single accessory. In accessory mode, only a single entity can be used. Accessory mode is required for media players with the TV or RECEIVER device class to function properly. Entities in the \u201cDomains to include\u201d will be included to HomeKit. You will be able to select which entities to include or exclude from this list on the next screen.",
+                "description": "HomeKit can be configured to expose a bridge or a single accessory. In accessory mode, only a single entity can be used. Accessory mode is required for media players with the TV or RECEIVER device class to function properly. Entities in the \u201cDomains to include\u201d will be included to HomeKit. You will be able to select which entities to include or exclude from this list on the next screen.",
                 "title": "Select mode and domains."
             },
             "yaml": {
                 "description": "This entry is controlled via YAML",
-                "title": "Adjust HomeKit Options"
+                "title": "Adjust HomeKit options"
+            }
+        }
+    },
+    "selector": {
+        "climate_accessory_type": {
+            "options": {
+                "automatic": "Automatic",
+                "heater_cooler": "Heater Cooler",
+                "thermostat": "Thermostat"
             }
         }
     },
     "services": {
         "reload": {
-            "description": "Reloads homekit and re-process YAML-configuration.",
+            "description": "Reloads HomeKit and re-processes the YAML-configuration.",
             "name": "Reload"
         },
         "reset_accessory": {
             "description": "Resets a HomeKit accessory.",
+            "fields": {
+                "entity_id": {
+                    "description": "Entity to reset.",
+                    "name": "Entity"
+                }
+            },
             "name": "Reset accessory"
         },
         "unpair": {
-            "description": "Forcefully removes all pairings from an accessory to allow re-pairing. Use this action if the accessory is no longer responsive, and you want to avoid deleting and re-adding the entry. Room locations, and accessory preferences will be lost.",
+            "description": "Forcefully removes all pairings from an accessory to allow re-pairing. Use this action if the accessory is no longer responsive and you want to avoid deleting and re-adding the entry. Room locations and accessory preferences will be lost.",
+            "fields": {
+                "device_id": {
+                    "description": "Device to unpair.",
+                    "name": "Device"
+                }
+            },
             "name": "Unpair an accessory or bridge"
         }
     }

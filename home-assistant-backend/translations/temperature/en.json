@@ -1,0 +1,54 @@
+{
+    "common": {
+        "condition_behavior_name": "Condition passes if",
+        "condition_for_name": "For at least",
+        "condition_threshold_name": "Threshold type",
+        "trigger_behavior_name": "Trigger when",
+        "trigger_for_name": "For at least",
+        "trigger_threshold_name": "Threshold type"
+    },
+    "conditions": {
+        "is_value": {
+            "description": "Tests the temperature of one or more entities.",
+            "fields": {
+                "behavior": {
+                    "name": "Condition passes if"
+                },
+                "for": {
+                    "name": "For at least"
+                },
+                "threshold": {
+                    "name": "Threshold type"
+                }
+            },
+            "name": "Temperature value"
+        }
+    },
+    "title": "Temperature",
+    "triggers": {
+        "changed": {
+            "description": "Triggers when one or more temperatures change.",
+            "fields": {
+                "threshold": {
+                    "name": "Threshold type"
+                }
+            },
+            "name": "Temperature changed"
+        },
+        "crossed_threshold": {
+            "description": "Triggers when one or more temperatures cross a threshold.",
+            "fields": {
+                "behavior": {
+                    "name": "Trigger when"
+                },
+                "for": {
+                    "name": "For at least"
+                },
+                "threshold": {
+                    "name": "Threshold type"
+                }
+            },
+            "name": "Temperature crossed threshold"
+        }
+    }
+}

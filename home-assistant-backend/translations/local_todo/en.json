@@ -8,9 +8,18 @@
                 "data": {
                     "todo_list_name": "To-do list name"
                 },
-                "description": "Please choose a name for your new To-do list"
+                "description": "Please choose a name for your new To-do list",
+                "submit": "Create"
             }
         }
     },
-    "title": "Local To-do"
+    "exceptions": {
+        "item_not_found": {
+            "message": "Item \"{uid}\" not found in to-do list {entity_id}"
+        },
+        "load_file_error": {
+            "message": "Failed to load file {path}"
+        }
+    },
+    "title": "Local to-do"
 }

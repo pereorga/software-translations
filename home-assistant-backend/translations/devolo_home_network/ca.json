@@ -2,11 +2,11 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "home_control": "La unitat central de control dom\u00e8stic de devolo no funciona amb aquesta integraci\u00f3.",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "home_control": "La unitat central de control dom\u00e8stic de devolo no funciona amb aquesta integraci\u00f3."
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat"
         },
         "flow_title": "{product} ({name})",
@@ -18,13 +18,15 @@
             },
             "user": {
                 "data": {
-                    "ip_address": "Adre\u00e7a IP"
+                    "ip_address": "Adre\u00e7a IP",
+                    "password": "Contrasenya"
                 },
                 "description": "Vols comen\u00e7ar la configuraci\u00f3?"
             },
             "zeroconf_confirm": {
-                "description": "Vols afegir a Home Assistant el dispositiu de xarxa dom\u00e8stica devolo amb nom d'amfitri\u00f3 `{host_name}`?",
-                "title": "Dispositiu de xarxa dom\u00e8stica devolo descobert"
+                "data": {
+                    "password": "Contrasenya"
+                }
             }
         }
     },
@@ -51,9 +53,6 @@
         "sensor": {
             "connected_plc_devices": {
                 "name": "Dispositius PLC connectats"
-            },
-            "last_restart": {
-                "name": "\u00daltim reinici del dispositiu"
             }
         },
         "switch": {

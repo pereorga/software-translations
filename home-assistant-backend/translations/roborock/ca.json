@@ -1,17 +1,14 @@
 {
     "config": {
         "abort": {
-            "already_configured_account": "El compte ja est\u00e0 configurat",
-            "reauth_successful": "Re-autenticaci\u00f3 realitzada correctament"
+            "already_configured_account": "El compte ja est\u00e0 configurat"
         },
         "error": {
             "invalid_code": "El codi introdu\u00eft \u00e9s incorrecte, comprova'l i torna-ho a provar.",
             "invalid_email": "No hi ha cap compte associat amb correu introdu\u00eft, torna-ho a provar.",
             "invalid_email_format": "S'ha produ\u00eft un problema en la formataci\u00f3 del correu - torna-ho a provar.",
             "too_frequent_code_requests": "Has provat de sol\u00b7licitar massa codis. Torna-ho a provar m\u00e9s tard.",
-            "unknown": "Error inesperat",
-            "unknown_roborock": "S'ha produ\u00eft una excepci\u00f3 desconeguda - comprova els registres.",
-            "unknown_url": "S'ha produ\u00eft un problema en determinar l'URL correcte del teu compte de roborock - comprova els registres."
+            "unknown": "Error inesperat"
         },
         "step": {
             "code": {
@@ -33,6 +30,11 @@
     },
     "entity": {
         "binary_sensor": {
+            "detergent_empty": {
+                "state": {
+                    "on": "Buit"
+                }
+            },
             "in_cleaning": {
                 "name": "Netejant"
             },
@@ -41,6 +43,11 @@
             },
             "mop_drying_status": {
                 "name": "Baieta assecant-se"
+            },
+            "softener_empty": {
+                "state": {
+                    "on": "Buit"
+                }
             },
             "water_box_attached": {
                 "name": "Caixa d'aigua col\u00b7locada"
@@ -69,19 +76,46 @@
             }
         },
         "select": {
+            "cleaning_mode": {
+                "state": {
+                    "mop": "Nom\u00e9s fregar"
+                }
+            },
+            "cleaning_route": {
+                "state": {
+                    "balanced": "Equilibrada",
+                    "deep": "Profund"
+                }
+            },
+            "detergent_type": {
+                "state": {
+                    "empty": "Buit",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "dust_collection_mode": {
+                "state": {
+                    "balanced": "Equilibrada",
+                    "max": "M\u00e0xima"
+                }
+            },
             "mop_intensity": {
                 "name": "Intensitat de la baieta",
                 "state": {
                     "custom": "Personalitzat",
                     "custom_water_flow": "Flux d'aigua personalitzat",
-                    "high": "Alta",
+                    "high": "Alt/a",
                     "intense": "Intens",
-                    "low": "Baixa",
-                    "max": "M\u00e0x.",
-                    "medium": "Mitjana",
+                    "low": "Baix/a",
+                    "max": "M\u00e0xima",
+                    "medium": "Mitj\u00e0/na",
                     "mild": "Mitj\u00e0",
+                    "min": "M\u00edn.",
                     "moderate": "Moderat",
-                    "off": "OFF"
+                    "off": "OFF",
+                    "standard": "Est\u00e0ndard"
                 }
             },
             "mop_mode": {
@@ -94,8 +128,34 @@
                     "standard": "Est\u00e0ndard"
                 }
             },
+            "program": {
+                "state": {
+                    "soaking": "Remullant"
+                }
+            },
             "selected_map": {
                 "name": "Mapa seleccionat"
+            },
+            "softener_type": {
+                "state": {
+                    "empty": "Buit",
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
+            },
+            "temperature": {
+                "state": {
+                    "auto": "Auto",
+                    "null": "Desconegut"
+                }
+            },
+            "water_flow": {
+                "state": {
+                    "high": "Alt/a",
+                    "low": "Baix/a",
+                    "medium": "Mitj\u00e0/na"
+                }
             }
         },
         "sensor": {
@@ -123,7 +183,7 @@
                 "name": "Progr\u00e9s de neteja"
             },
             "cleaning_area": {
-                "name": "Zona de neteja"
+                "name": "\u00c0rea netejada"
             },
             "cleaning_time": {
                 "name": "Temps de neteja"
@@ -156,6 +216,15 @@
             "mop_drying_remaining_time": {
                 "name": "Temps restant d'assecat de la baieta"
             },
+            "q7_status": {
+                "state": {
+                    "charging": "Carregant",
+                    "docking": "Aparcant",
+                    "paused": "Pausat/ada",
+                    "unknown": "Desconegut",
+                    "updating": "Actualitzant"
+                }
+            },
             "sensor_time_left": {
                 "name": "Vida restant del sensor"
             },
@@ -165,11 +234,13 @@
             "status": {
                 "name": "Estat",
                 "state": {
+                    "attaching_the_mop": "Muntant baieta",
                     "charger_disconnected": "Carregador desconnectat",
                     "charging": "Carregant",
                     "charging_complete": "C\u00e0rrega completada",
                     "charging_problem": "Problema en la c\u00e0rrega",
                     "cleaning": "Netejant",
+                    "detaching_the_mop": "Desmuntant baieta",
                     "device_offline": "Dispositiu desconnectat",
                     "docking": "Aparcant",
                     "emptying_the_bin": "Buidant dip\u00f2sit",
@@ -177,22 +248,31 @@
                     "going_to_target": "Anant a l'objectiu",
                     "going_to_wash_the_mop": "Anant a rentar baieta",
                     "idle": "Inactiu",
+                    "locked": "Bloquejat/ada",
                     "manual_mode": "Mode manual",
+                    "mapping": "Fregant",
+                    "mopping": "Fregant",
                     "paused": "Pausat/ada",
+                    "relocating": "Reubicant",
                     "remote_control_active": "Control remot actiu",
                     "returning_home": "Retornant a la base",
+                    "saving_map": "Desant mapa",
                     "segment_cleaning": "Netejant segment",
                     "shutting_down": "Apagant",
+                    "sleeping": "Dormint",
                     "spot_cleaning": "Netejant punt",
                     "starting": "Iniciant",
+                    "sweeping": "Escombrant",
+                    "transitioning": "En transici\u00f3",
                     "unknown": "Desconegut",
                     "updating": "Actualitzant",
+                    "waiting_to_charge": "Esperant a carregar",
                     "washing_the_mop": "Rentant baieta",
                     "zoned_cleaning": "Neteja zonificada"
                 }
             },
             "total_cleaning_area": {
-                "name": "Zona total de neteja"
+                "name": "\u00c0rea total netejada"
             },
             "total_cleaning_time": {
                 "name": "Temps total de neteja"
@@ -239,14 +319,7 @@
                     "communication_error": "Error de comunicaci\u00f3",
                     "door_lock_error": "Error de bloqueig de porta",
                     "drain_error": "Error de drenatge",
-                    "drying_error": "Error en l'assecament",
-                    "drying_error_e_12": "Error en l'assecament E12",
                     "drying_error_e_13": "Error en l'assecament E13",
-                    "drying_error_e_14": "Error en l'assecament E14",
-                    "drying_error_e_15": "Error en l'assecament E15",
-                    "drying_error_e_16": "Error en l'assecament E163",
-                    "drying_error_restart": "Reinicia la rentadora",
-                    "drying_error_water_flow": "Comprova el cabal d'aigua",
                     "heating_error": "Error d'escalfador",
                     "inverter_error": "Error de l'inversor",
                     "none": "Cap",
@@ -262,11 +335,13 @@
                     "cooling": "Refredant",
                     "done": "Acabat",
                     "drying": "Assecant",
+                    "null": "Desconegut",
                     "rinsing": "Esbandint",
                     "soaking": "Remullant",
                     "spinning": "Centrifugant",
                     "standby": "En espera",
                     "under_delay_start": "Inici retardat",
+                    "updating": "Actualitzant",
                     "washing": "Rentant",
                     "weighing": "Pesant"
                 }
@@ -305,13 +380,13 @@
                 "state_attributes": {
                     "fan_speed": {
                         "state": {
-                            "auto": "Autom\u00e0tica",
+                            "auto": "Auto",
                             "balanced": "Equilibrada",
                             "custom": "Personalitzat",
                             "gentle": "Lenta",
-                            "max": "M\u00e0x.",
+                            "max": "M\u00e0xima",
                             "max_plus": "M\u00e0xima+",
-                            "medium": "Mitjana",
+                            "medium": "Mitj\u00e0/na",
                             "off": "OFF",
                             "quiet": "Suau",
                             "silent": "Silenciosa",
@@ -350,6 +425,20 @@
     "services": {
         "get_maps": {
             "name": "Obt\u00e9 mapes"
+        },
+        "get_vacuum_current_position": {
+            "name": "Obt\u00e9 la posici\u00f3 actual"
+        },
+        "set_vacuum_goto_position": {
+            "fields": {
+                "x": {
+                    "name": "Coordenada X"
+                },
+                "y": {
+                    "name": "Coordenada Y"
+                }
+            },
+            "name": "V\u00e9s a la posici\u00f3"
         }
     }
 }

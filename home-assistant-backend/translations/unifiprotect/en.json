@@ -3,35 +3,73 @@
         "abort": {
             "already_configured": "Device is already configured",
             "discovery_started": "Discovery started",
-            "reauth_successful": "Re-authentication was successful"
+            "wrong_nvr": "Connected to a different NVR than expected. If you replaced your hardware, please remove the old integration and add it again."
         },
         "error": {
             "cannot_connect": "Failed to connect",
-            "cloud_user": "Ubiquiti Cloud users are not Supported. Please use a Local only user.",
+            "cloud_user": "Ubiquiti Cloud users are not supported. Please use a local user instead.",
             "invalid_auth": "Invalid authentication",
-            "protect_version": "Minimum required version is v1.20.0. Please upgrade UniFi Protect and then retry."
+            "protect_version": "Minimum required version is v7.2.105. Please upgrade UniFi Protect and then retry."
         },
         "flow_title": "{name} ({ip_address})",
         "step": {
-            "discovery_confirm": {
+            "api_key": {
                 "data": {
-                    "password": "Password",
-                    "username": "Username"
+                    "api_key": "API key",
+                    "host": "Host",
+                    "port": "Port",
+                    "verify_ssl": "Verify SSL certificate"
                 },
-                "description": "Do you want to set up {name} ({ip_address})? You will need a local user created in your UniFi OS Console to log in with. Ubiquiti Cloud Users will not work. For more information: {local_user_documentation_url}",
-                "title": "UniFi Protect Discovered"
+                "data_description": {
+                    "api_key": "API key from your UniFi OS Console. Only the public Integration API is used; some entities that require a local user are unavailable in this mode.",
+                    "host": "Hostname or IP address of your UniFi Protect device.",
+                    "port": "Port of your UniFi Protect device.",
+                    "verify_ssl": "Verify SSL certificate of the UniFi Protect device."
+                },
+                "description": "Connect using only an API key, without a local user. Features the public Integration API does not offer yet are unavailable. For more information: {api_key_documentation_url}",
+                "title": "UniFi Protect setup (API key)"
             },
-            "reauth_confirm": {
+            "discovery_api_key": {
                 "data": {
-                    "host": "IP/Host of UniFi Protect Server",
+                    "api_key": "API key",
+                    "port": "Port"
+                },
+                "data_description": {
+                    "api_key": "API key from your UniFi OS Console. Only the public Integration API is used; some entities that require a local user are unavailable in this mode.",
+                    "port": "Port of your UniFi Protect device."
+                },
+                "description": "Connect to {name} ({ip_address}) using only an API key. Features the public Integration API does not offer yet are unavailable. For more information: {api_key_documentation_url}",
+                "title": "UniFi Protect discovered (API key)"
+            },
+            "discovery_confirm": {
+                "description": "How do you want to connect to {name} ({ip_address})? An API key uses the public Integration API. A local user adds the features the public API does not offer yet.",
+                "menu_options": {
+                    "discovery_api_key": "API key only",
+                    "discovery_full": "API key and local user"
+                },
+                "title": "UniFi Protect discovered"
+            },
+            "discovery_full": {
+                "data": {
+                    "api_key": "API key",
                     "password": "Password",
                     "port": "Port",
-                    "username": "Username"
+                    "username": "Username",
+                    "verify_ssl": "Verify SSL certificate"
                 },
-                "title": "UniFi Protect Reauth"
+                "data_description": {
+                    "api_key": "API key for your local user account.",
+                    "password": "Password for your local user account.",
+                    "port": "Port of your UniFi Protect device.",
+                    "username": "Username for your local (not cloud) user account.",
+                    "verify_ssl": "Verify SSL certificate of the UniFi Protect device."
+                },
+                "description": "Do you want to set up {name} ({ip_address})? You will need a local user created in your UniFi OS Console to log in with. Ubiquiti Cloud users will not work. For more information: {local_user_documentation_url}",
+                "title": "UniFi Protect discovered (local user)"
             },
-            "user": {
+            "full": {
                 "data": {
+                    "api_key": "API key",
                     "host": "Host",
                     "password": "Password",
                     "port": "Port",
@@ -39,17 +77,256 @@
                     "verify_ssl": "Verify SSL certificate"
                 },
                 "data_description": {
-                    "host": "Hostname or IP address of your UniFi Protect device."
+                    "api_key": "API key for your local user account.",
+                    "host": "Hostname or IP address of your UniFi Protect device.",
+                    "password": "Password for your local user account.",
+                    "port": "Port of your UniFi Protect device.",
+                    "username": "Username for your local (not cloud) user account.",
+                    "verify_ssl": "Verify SSL certificate of the UniFi Protect device."
                 },
-                "description": "You will need a local user created in your UniFi OS Console to log in with. Ubiquiti Cloud Users will not work. For more information: {local_user_documentation_url}",
-                "title": "UniFi Protect Setup"
+                "description": "You will need a local user created in your UniFi OS Console to log in with. Ubiquiti Cloud users will not work. For more information: {local_user_documentation_url}",
+                "title": "UniFi Protect setup (local user)"
+            },
+            "reauth_api_key": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "API key from your UniFi OS Console. Only the public Integration API is used; some entities that require a local user are unavailable in this mode."
+                },
+                "description": "Your API key seems to be missing or invalid. Enter a new API key from your UniFi OS Console. For more information: {api_key_documentation_url}",
+                "title": "Reauth UniFi Protect (API key)"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "api_key": "API key for your local user account. Leave empty to keep your existing API key.",
+                    "password": "Password for your local user account. Leave empty to keep your existing password.",
+                    "username": "Username for your local (not cloud) user account."
+                },
+                "description": "Your credentials or API key seem to be missing or invalid. Leave password and API key empty to keep your existing credentials. For more information: {local_user_documentation_url}",
+                "title": "Reauth UniFi Protect"
+            },
+            "reconfigure": {
+                "description": "Choose how to connect to your UniFi Protect console. An API key uses the public Integration API. A local user adds the features the public API does not offer yet.",
+                "menu_options": {
+                    "reconfigure_api_key": "API key only",
+                    "reconfigure_full": "API key and local user"
+                },
+                "title": "Reconfigure UniFi Protect"
+            },
+            "reconfigure_api_key": {
+                "data": {
+                    "api_key": "API key",
+                    "host": "Host",
+                    "port": "Port",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "api_key": "API key from your UniFi OS Console. Only the public Integration API is used; some entities that require a local user are unavailable in this mode.",
+                    "host": "Hostname or IP address of your UniFi Protect device.",
+                    "port": "Port of your UniFi Protect device.",
+                    "verify_ssl": "Verify SSL certificate of the UniFi Protect device."
+                },
+                "description": "Switch to (or update) API-key-only mode. Stored local user credentials are kept, so you can switch back at any time. Features the public Integration API does not offer yet are unavailable. For more information: {api_key_documentation_url}",
+                "title": "Reconfigure UniFi Protect (API key)"
+            },
+            "reconfigure_full": {
+                "data": {
+                    "api_key": "API key",
+                    "host": "Host",
+                    "password": "Password",
+                    "port": "Port",
+                    "username": "Username",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "api_key": "API key for your local user account. Leave empty to keep your existing API key.",
+                    "host": "Hostname or IP address of your UniFi Protect device.",
+                    "password": "Password for your local user account. Leave empty to keep your existing password.",
+                    "port": "Port of your UniFi Protect device.",
+                    "username": "Username for your local (not cloud) user account.",
+                    "verify_ssl": "Verify SSL certificate of the UniFi Protect device."
+                },
+                "description": "Update the configuration for your UniFi Protect device. Leave password and API key empty to keep your existing credentials. For more information: {local_user_documentation_url}",
+                "title": "Reconfigure UniFi Protect (local user)"
+            },
+            "user": {
+                "description": "Choose how to connect to your UniFi Protect console. An API key uses the public Integration API. A local user adds the features the public API does not offer yet.",
+                "menu_options": {
+                    "api_key": "API key only",
+                    "full": "API key and local user"
+                },
+                "title": "UniFi Protect setup"
             }
         }
     },
     "entity": {
+        "alarm_control_panel": {
+            "nvr_alarm": {
+                "name": "Alarm Manager"
+            }
+        },
+        "binary_sensor": {
+            "alarm_hub_zone": {
+                "name": "Zone {zone}"
+            },
+            "animal_detected": {
+                "name": "Animal detected"
+            },
+            "audio_object_detected": {
+                "name": "Audio object detected"
+            },
+            "baby_cry_detected": {
+                "name": "Baby cry detected"
+            },
+            "barking_detected": {
+                "name": "Barking detected"
+            },
+            "car_alarm_detected": {
+                "name": "Car alarm detected"
+            },
+            "car_horn_detected": {
+                "name": "Car horn detected"
+            },
+            "co_alarm_detected": {
+                "name": "CO alarm detected"
+            },
+            "contact": {
+                "name": "Contact"
+            },
+            "detections_animal": {
+                "name": "Animal detection"
+            },
+            "detections_baby_cry": {
+                "name": "Baby cry detection"
+            },
+            "detections_barking": {
+                "name": "Barking detection"
+            },
+            "detections_car_alarm": {
+                "name": "Car alarm detection"
+            },
+            "detections_car_horn": {
+                "name": "Car horn detection"
+            },
+            "detections_co_alarm": {
+                "name": "CO alarm detection"
+            },
+            "detections_glass_break": {
+                "name": "Glass break detection"
+            },
+            "detections_license_plate": {
+                "name": "License plate detection"
+            },
+            "detections_motion": {
+                "name": "Motion detection"
+            },
+            "detections_package": {
+                "name": "Package detection"
+            },
+            "detections_person": {
+                "name": "Person detection"
+            },
+            "detections_siren": {
+                "name": "Siren detection"
+            },
+            "detections_smoke": {
+                "name": "Smoke detection"
+            },
+            "detections_speaking": {
+                "name": "Speaking detection"
+            },
+            "detections_vehicle": {
+                "name": "Vehicle detection"
+            },
+            "doorbell": {
+                "name": "Doorbell"
+            },
+            "flood_light": {
+                "name": "Flood light"
+            },
+            "glass_break_detected": {
+                "name": "Glass break detected"
+            },
+            "hdr_mode": {
+                "name": "HDR mode"
+            },
+            "high_fps": {
+                "name": "High FPS"
+            },
+            "is_dark": {
+                "name": "Is dark"
+            },
+            "object_detected": {
+                "name": "Object detected"
+            },
+            "overlay_show_date": {
+                "name": "Overlay: show date"
+            },
+            "overlay_show_logo": {
+                "name": "Overlay: show logo"
+            },
+            "overlay_show_name": {
+                "name": "Overlay: show name"
+            },
+            "overlay_show_nerd_mode": {
+                "name": "Overlay: show nerd mode"
+            },
+            "person_detected": {
+                "name": "Person detected"
+            },
+            "relay_input": {
+                "name": "Input {input_name}"
+            },
+            "siren_detected": {
+                "name": "Siren detected"
+            },
+            "smoke_alarm_detected": {
+                "name": "Smoke alarm detected"
+            },
+            "speaking_detected": {
+                "name": "Speaking detected"
+            },
+            "ssh_enabled": {
+                "name": "SSH enabled"
+            },
+            "status_light": {
+                "name": "Status light"
+            },
+            "system_sounds": {
+                "name": "System sounds"
+            },
+            "tracking_person": {
+                "name": "Tracking: person"
+            },
+            "vehicle_detected": {
+                "name": "Vehicle detected"
+            }
+        },
+        "button": {
+            "adopt_device": {
+                "name": "Adopt device"
+            },
+            "clear_tamper": {
+                "name": "Clear tamper"
+            },
+            "play_buzzer": {
+                "name": "Play buzzer"
+            },
+            "play_chime": {
+                "name": "Play chime"
+            },
+            "unadopt_device": {
+                "name": "Unadopt device"
+            }
+        },
         "event": {
             "doorbell": {
-                "name": "Doorbell",
                 "state_attributes": {
                     "event_type": {
                         "state": {
@@ -69,6 +346,36 @@
                     }
                 }
             },
+            "keyfob": {
+                "name": "Button",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "alarm_hub_button": "Alarm hub button",
+                            "arm": "Arm",
+                            "disarm": "Disarm",
+                            "function": "Function",
+                            "input1": "Input 1",
+                            "input2": "Input 2",
+                            "left": "Left",
+                            "main": "Main",
+                            "night": "Night",
+                            "panic": "Panic",
+                            "right": "Right"
+                        }
+                    }
+                }
+            },
+            "motion_detection": {
+                "name": "Motion detection",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "motion": "Motion"
+                        }
+                    }
+                }
+            },
             "nfc": {
                 "name": "NFC",
                 "state_attributes": {
@@ -78,14 +385,517 @@
                         }
                     }
                 }
+            },
+            "package": {
+                "name": "Package",
+                "state_attributes": {
+                    "event_source": {
+                        "name": "Event source"
+                    },
+                    "event_type": {
+                        "state": {
+                            "detected": "Detected"
+                        }
+                    }
+                }
+            },
+            "smart_detection": {
+                "name": "Smart detection",
+                "state_attributes": {
+                    "event_source": {
+                        "name": "Event source"
+                    },
+                    "event_type": {
+                        "state": {
+                            "animal": "Animal",
+                            "car": "Car",
+                            "face": "Face",
+                            "license_plate": "License plate",
+                            "package": "Package",
+                            "person": "Person",
+                            "pet": "Pet",
+                            "vehicle": "Vehicle"
+                        }
+                    }
+                }
+            },
+            "sound_detection": {
+                "name": "Sound detection",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "baby_cry": "Baby cry",
+                            "bark": "Barking",
+                            "car_alarm": "Car alarm",
+                            "car_horn": "Car horn",
+                            "co": "CO alarm",
+                            "glass_break": "Glass break",
+                            "siren": "Siren",
+                            "smoke": "Smoke alarm",
+                            "speaking": "Speaking"
+                        }
+                    }
+                }
+            },
+            "vehicle": {
+                "name": "Vehicle",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "detected": "Detected"
+                        }
+                    }
+                }
+            }
+        },
+        "media_player": {
+            "speaker": {
+                "name": "Speaker"
+            }
+        },
+        "number": {
+            "auto_shutoff_duration": {
+                "name": "Auto-shutoff duration"
+            },
+            "chime_duration": {
+                "name": "Chime duration"
+            },
+            "chime_ring_volume": {
+                "name": "Ring volume ({camera_name})"
+            },
+            "doorbell_ring_volume": {
+                "name": "Doorbell ring volume"
+            },
+            "infrared_custom_lux_trigger": {
+                "name": "Infrared custom lux trigger"
+            },
+            "microphone_level": {
+                "name": "Microphone level"
+            },
+            "motion_sensitivity": {
+                "name": "Motion sensitivity"
+            },
+            "system_sounds_volume": {
+                "name": "System sounds volume"
+            },
+            "volume": {
+                "name": "Volume"
+            },
+            "wide_dynamic_range": {
+                "name": "Wide dynamic range"
+            },
+            "zoom_level": {
+                "name": "Zoom level"
+            }
+        },
+        "select": {
+            "chime_type": {
+                "name": "Chime type",
+                "state": {
+                    "digital": "Digital",
+                    "mechanical": "Mechanical",
+                    "none": "Off"
+                }
+            },
+            "doorbell_text": {
+                "name": "Doorbell text"
+            },
+            "hdr_mode": {
+                "name": "HDR mode",
+                "state": {
+                    "always": "Always on",
+                    "auto": "Auto",
+                    "off": "Always off"
+                }
+            },
+            "infrared_mode": {
+                "name": "Infrared mode",
+                "state": {
+                    "auto": "Auto",
+                    "auto_filter_only": "Auto (filter only, no LEDs)",
+                    "custom": "Custom (IR filter + LEDs)",
+                    "custom_filter_only": "Custom (IR filter only)",
+                    "manual": "Manual",
+                    "off": "Always disable",
+                    "on": "Always enable"
+                }
+            },
+            "light_mode": {
+                "name": "Light mode",
+                "state": {
+                    "manual": "Manual",
+                    "motion": "On motion - always",
+                    "motion_dark": "On motion - when dark",
+                    "when_dark": "When dark"
+                }
+            },
+            "liveview": {
+                "name": "Liveview"
+            },
+            "mount_type": {
+                "name": "Mount type",
+                "state": {
+                    "door": "Door",
+                    "garage": "Garage",
+                    "leak": "Leak",
+                    "none": "Off",
+                    "window": "Window"
+                }
+            },
+            "nvr_arm_profile": {
+                "name": "Alarm profile"
+            },
+            "paired_camera": {
+                "name": "Paired camera"
+            },
+            "ptz_patrol": {
+                "name": "PTZ patrol",
+                "state": {
+                    "stop": "Stopped"
+                }
+            },
+            "recording_mode": {
+                "name": "Recording mode",
+                "state": {
+                    "adaptive": "Adaptive",
+                    "always": "Always",
+                    "detections": "Detections",
+                    "never": "Never",
+                    "schedule": "Schedule"
+                }
             }
         },
         "sensor": {
-            "license_plate": {
+            "alarm_hub_battery_voltage": {
+                "name": "Battery voltage"
+            },
+            "alarm_hub_last_event": {
+                "name": "Last event"
+            },
+            "alarm_sound_detected": {
+                "name": "Alarm sound detected"
+            },
+            "chime_type": {
+                "name": "Chime type"
+            },
+            "cpu_temperature": {
+                "name": "CPU temperature"
+            },
+            "cpu_utilization": {
+                "name": "CPU utilization"
+            },
+            "disk_write_rate": {
+                "name": "Disk write rate"
+            },
+            "doorbell_text": {
+                "name": "Doorbell text"
+            },
+            "fob_status": {
+                "name": "Status",
+                "state": {
+                    "device_lost": "Device lost",
+                    "no_recent_heartbeat": "No recent heartbeat",
+                    "online": "Online",
+                    "recently_seen": "Recently seen"
+                }
+            },
+            "infrared_mode": {
+                "name": "Infrared mode"
+            },
+            "last_doorbell_ring": {
+                "name": "Last doorbell ring"
+            },
+            "last_motion_detected": {
+                "name": "Last motion detected"
+            },
+            "last_open": {
+                "name": "Last open"
+            },
+            "last_ring": {
+                "name": "Last ring"
+            },
+            "last_tampering_detected": {
+                "name": "Last tampering detected"
+            },
+            "lens_type": {
+                "name": "Lens type"
+            },
+            "license_plate_detected": {
+                "name": "License plate detected",
                 "state": {
                     "none": "Clear"
                 }
+            },
+            "light_mode": {
+                "name": "Light mode"
+            },
+            "link_speed": {
+                "name": "Link speed"
+            },
+            "liveview": {
+                "name": "Liveview"
+            },
+            "memory_utilization": {
+                "name": "Memory utilization"
+            },
+            "microphone_level": {
+                "name": "Microphone level"
+            },
+            "motion_sensitivity": {
+                "name": "Motion sensitivity"
+            },
+            "mount_type": {
+                "name": "Mount type"
+            },
+            "oldest_recording": {
+                "name": "Oldest recording"
+            },
+            "paired_camera": {
+                "name": "Paired camera"
+            },
+            "received_data": {
+                "name": "Received data"
+            },
+            "recording_capacity": {
+                "name": "Recording capacity"
+            },
+            "recording_mode": {
+                "name": "Recording mode"
+            },
+            "resolution_4k_video": {
+                "name": "Resolution: 4K video"
+            },
+            "resolution_free_space": {
+                "name": "Resolution: free space"
+            },
+            "resolution_hd_video": {
+                "name": "Resolution: HD video"
+            },
+            "signal_quality": {
+                "name": "Signal quality"
+            },
+            "storage_used": {
+                "name": "Storage used"
+            },
+            "storage_utilization": {
+                "name": "Storage utilization"
+            },
+            "temperature": {
+                "name": "Temperature"
+            },
+            "transferred_data": {
+                "name": "Transferred data"
+            },
+            "type_continuous_video": {
+                "name": "Type: continuous video"
+            },
+            "type_detections_video": {
+                "name": "Type: detections video"
+            },
+            "type_timelapse_video": {
+                "name": "Type: timelapse video"
+            },
+            "uptime": {
+                "name": "Uptime"
+            },
+            "volume": {
+                "name": "Volume"
+            },
+            "wifi_signal_strength": {
+                "name": "Wi-Fi signal strength"
             }
+        },
+        "switch": {
+            "alarm_sound_detection": {
+                "name": "Alarm sound detection"
+            },
+            "analytics_enabled": {
+                "name": "Analytics enabled"
+            },
+            "color_night_vision": {
+                "name": "Color night vision"
+            },
+            "detections_animal": {
+                "name": "Animal detection"
+            },
+            "detections_baby_cry": {
+                "name": "Baby cry detection"
+            },
+            "detections_bark": {
+                "name": "Barking detection"
+            },
+            "detections_car_alarm": {
+                "name": "Car alarm detection"
+            },
+            "detections_car_horn": {
+                "name": "Car horn detection"
+            },
+            "detections_co_alarm": {
+                "name": "CO alarm detection"
+            },
+            "detections_glass_break": {
+                "name": "Glass break detection"
+            },
+            "detections_license_plate": {
+                "name": "License plate detection"
+            },
+            "detections_motion": {
+                "name": "Motion detection"
+            },
+            "detections_package": {
+                "name": "Package detection"
+            },
+            "detections_person": {
+                "name": "Person detection"
+            },
+            "detections_siren": {
+                "name": "Siren detection"
+            },
+            "detections_smoke": {
+                "name": "Smoke detection"
+            },
+            "detections_speak": {
+                "name": "Speaking detection"
+            },
+            "detections_vehicle": {
+                "name": "Vehicle detection"
+            },
+            "high_fps": {
+                "name": "High FPS"
+            },
+            "humidity_sensor": {
+                "name": "Humidity sensor"
+            },
+            "insights_enabled": {
+                "name": "Insights enabled"
+            },
+            "light_sensor": {
+                "name": "Light sensor"
+            },
+            "motion": {
+                "name": "Motion"
+            },
+            "overlay_show_date": {
+                "name": "Overlay: show date"
+            },
+            "overlay_show_logo": {
+                "name": "Overlay: show logo"
+            },
+            "overlay_show_name": {
+                "name": "Overlay: show name"
+            },
+            "overlay_show_nerd_mode": {
+                "name": "Overlay: show nerd mode"
+            },
+            "privacy_mode": {
+                "name": "Privacy mode"
+            },
+            "relay_output": {
+                "name": "Output {output_name}"
+            },
+            "ssh_enabled": {
+                "name": "SSH enabled"
+            },
+            "status_light": {
+                "name": "Status light"
+            },
+            "system_sounds": {
+                "name": "System sounds"
+            },
+            "temperature_sensor": {
+                "name": "Temperature sensor"
+            },
+            "tracking_person": {
+                "name": "Tracking: person"
+            }
+        },
+        "text": {
+            "doorbell": {
+                "name": "Doorbell"
+            }
+        }
+    },
+    "exceptions": {
+        "api_key_required": {
+            "message": "API key is required. Please reauthenticate this integration to provide an API key."
+        },
+        "cannot_connect": {
+            "message": "Could not connect to the UniFi Protect console"
+        },
+        "chime_ringtone_not_set": {
+            "message": "No ringtone is selected for {camera_name} on this chime, so its ring volumes cannot be changed. Select one in the UniFi Protect app."
+        },
+        "command_error": {
+            "message": "Error communicating with UniFi Protect while sending command: {error}"
+        },
+        "device_not_available": {
+            "message": "{device_name} is no longer available"
+        },
+        "entry_auth_failed": {
+            "message": "Authentication failed, please reauthenticate"
+        },
+        "event_ongoing": {
+            "message": "Event is still ongoing"
+        },
+        "global_alarm_manager": {
+            "message": "The alarm manager on this UniFi Protect NVR is set to Global mode and cannot be controlled locally."
+        },
+        "light_not_available": {
+            "message": "Light {light_name} is no longer available"
+        },
+        "motion_detection_public_only": {
+            "message": "Motion detection cannot be changed over the public API; configure it in the UniFi Protect app"
+        },
+        "no_users_found": {
+            "message": "No users found, please check Protect permissions"
+        },
+        "not_a_chime": {
+            "message": "{device_name} is not a UniFi Protect chime"
+        },
+        "not_authorized": {
+            "message": "Not authorized to perform this action on the UniFi Protect controller"
+        },
+        "not_ptz_camera": {
+            "message": "Camera {camera_name} does not support PTZ"
+        },
+        "only_music_supported": {
+            "message": "Only music media type is supported"
+        },
+        "privacy_zone_not_found": {
+            "message": "Could not find privacy zone with name {zone_name} on camera {camera_name}"
+        },
+        "protect_version": {
+            "message": "Your UniFi Protect version ({current_version}) is too old. Minimum required: {min_version}"
+        },
+        "ptz_preset_not_found": {
+            "message": "Could not find PTZ preset with name {preset_name} on camera {camera_name}"
+        },
+        "public_bootstrap_failed": {
+            "message": "Could not load the public API bootstrap for camera streams"
+        },
+        "public_only_no_actions": {
+            "message": "This action requires a local user; the entry is set up with an API key only."
+        },
+        "relay_not_available": {
+            "message": "Relay is no longer available"
+        },
+        "service_error": {
+            "message": "Error calling UniFi Protect service, check the logs for more details"
+        },
+        "siren_invalid_duration": {
+            "message": "Invalid siren duration {duration}s. Valid values are: {valid} seconds"
+        },
+        "siren_not_available": {
+            "message": "Siren is no longer available"
+        },
+        "stream_error": {
+            "message": "Error playing audio, check the logs for more details"
+        },
+        "unexpected_identifier": {
+            "message": "Unexpected identifier: {identifier}"
+        },
+        "unknown_camera_id": {
+            "message": "Unknown camera ID: {camera_id}"
         }
     },
     "issues": {
@@ -100,58 +910,72 @@
             },
             "title": "Ubiquiti Cloud Users are not Supported"
         },
-        "deprecate_hdr_switch": {
-            "description": "UniFi Protect v3 added a new state for HDR (auto). As a result, the HDR Mode Switch has been replaced with an HDR Mode Select, and it is deprecated.\n\nBelow are the detected automations or scripts that use one or more of the deprecated entities:\n{items}\nThe above list may be incomplete and it does not include any template usages inside of dashboards. Please update any templates, automations or scripts accordingly.",
-            "title": "HDR Mode Switch Deprecated"
+        "doorbell_sensor_deprecated": {
+            "description": "The binary sensor `{entity_id}` is deprecated and will be removed in a future release. Use the event entity `{replacement}` with the **Event received** trigger instead.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Entity deprecated"
         },
-        "ea_channel_warning": {
+        "hdr_switch_removed": {
+            "description": "The HDR mode switch `{entity_id}` has been removed. It could not represent the auto HDR mode and was replaced by the HDR mode select.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "HDR mode switch removed"
+        },
+        "insecure_camera_removed": {
+            "description": "The camera entity `{entity_id}` used plain RTSP, which is no longer available now that streams come from the UniFi Protect public API (RTSPS only). It has been removed; use `{replacement}` instead.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Insecure camera entity removed"
+        },
+        "last_event_sensor_deprecated": {
+            "description": "The entity `{entity_id}` is deprecated and will be removed in a future release. Use the event entity `{replacement}` with the **Event received** trigger instead. The event entity's state is the time of the last event Home Assistant received.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Entity deprecated"
+        },
+        "package_binary_sensor_removed": {
+            "description": "The binary sensor `{entity_id}` for package detection has been removed. Package detection is a momentary smart-detect event, so it is now provided by the package event entity instead.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Package binary sensor removed"
+        },
+        "private_only_entity_deprecated": {
+            "description": "The entity `{entity_id}` is deprecated and will be removed in a future release. It depends on a private API that the integration is phasing out.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Entity deprecated"
+        },
+        "rtsp_disabled": {
             "fix_flow": {
                 "step": {
                     "confirm": {
-                        "description": "Are you sure you want to run unsupported versions of UniFi Protect? This may cause your Home Assistant integration to break.",
-                        "title": "UniFi Protect Early Access enabled"
+                        "description": "Home Assistant could not enable an RTSPS stream for {camera}. You may need to enable a stream manually on the camera, or disable the camera entity if you only need snapshots.",
+                        "title": "No stream is available for camera {camera}"
                     },
                     "start": {
-                        "description": "You are either running an Early Access version of UniFi Protect (v{version}) or opt-ed into a release channel that is not the Official Release Channel.\n\nAs these Early Access releases may not be tested yet, using it may cause the UniFi Protect integration to behave unexpectedly. [Read more about Early Access and Home Assistant]({learn_more}).\n\nSubmit to dismiss this message.",
-                        "title": "UniFi Protect Early Access enabled"
+                        "description": "No RTSPS stream is available for the camera {camera}, so it cannot live stream within Home Assistant. Until a stream is enabled, live views fall back to rapidly pulling snapshots (effectively a slideshow), which can put significant load on your UniFi Protect console. Confirm this repair and Home Assistant will create the highest quality RTSPS stream for you through the UniFi Protect public API.",
+                        "title": "No stream is available for camera {camera}"
                     }
                 }
             },
-            "title": "UniFi Protect Early Access enabled"
+            "title": "No stream is available for camera {camera}"
         },
-        "ea_setup_failed": {
-            "description": "You are using v{version} of UniFi Protect which is an Early Access version. An unrecoverable error occurred while trying to load the integration. Please restore a backup of a stable release of UniFi Protect to continue using the integration.\n\nError: {error}",
-            "title": "Setup error using Early Access version"
+        "sense_setting_mirror_removed": {
+            "description": "The read-only entity `{entity_id}` has been removed; use `{replacement}` instead, which holds the same state and can also change it.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Read-only sensor setting entity removed"
         },
-        "rtsp_disabled_readonly": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Are you sure you want to leave RTSPS disabled for {camera}?",
-                        "title": "RTSPS is disabled on camera {camera}"
-                    },
-                    "start": {
-                        "description": "RTSPS is disabled on the camera {camera}. RTSPS is required to be able to live stream your camera within Home Assistant. If you do not enable RTSPS, it may create an additional load on your UniFi Protect NVR, as any live video players will default to rapidly pulling snapshots from the camera.\n\nPlease [enable RTSPS]({learn_more}) on the camera and then come back and confirm this repair.",
-                        "title": "RTSPS is disabled on camera {camera}"
-                    }
-                }
-            },
-            "title": "RTSPS is disabled on camera {camera}"
+        "sense_setting_mirror_removed_no_replacement": {
+            "description": "The read-only entity `{entity_id}` has been removed. The sensor does not support this setting, so there is no replacement.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Read-only sensor setting entity removed"
         },
-        "rtsp_disabled_writable": {
-            "fix_flow": {
-                "step": {
-                    "confirm": {
-                        "description": "Are you sure you want to leave RTSPS disabled for {camera}?",
-                        "title": "RTSPS is disabled on camera {camera}"
-                    },
-                    "start": {
-                        "description": "RTSPS is disabled on the camera {camera}. RTSPS is required to live stream your camera within Home Assistant. If you do not enable RTSPS, it may create an additional load on your UniFi Protect NVR as any live video players will default to rapidly pulling snapshots from the camera.\n\nYou may manually [enable RTSPS]({learn_more}) on your selected camera quality channel or Home Assistant can automatically enable the highest quality channel for you. Confirm this repair once you have enabled the RTSPS channel or if you want Home Assistant to enable the highest quality automatically.",
-                        "title": "RTSPS is disabled on camera {camera}"
-                    }
-                }
-            },
-            "title": "RTSPS is disabled on camera {camera}"
+        "setting_mirror_deprecated": {
+            "description": "The read-only entity `{entity_id}` is deprecated and will be removed in a future release; use `{replacement}` instead, which holds the same state and can also change it.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Read-only setting entity deprecated"
+        },
+        "setting_mirror_deprecated_doorbell_text": {
+            "description": "The read-only entity `{entity_id}` is deprecated and will be removed in a future release; use `{replacement}` instead, which holds the same message and can also change it. Where this entity is unknown because no message is set, it shows the default message instead.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Read-only setting entity deprecated"
+        },
+        "setting_mirror_deprecated_hdr_mode": {
+            "description": "The read-only entity `{entity_id}` is deprecated and will be removed in a future release; use `{replacement}` instead, which holds the same setting and can also change it. Its states differ: `on` is `auto` or `always`, and `off` is `off`, so update any conditions that compare them.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Read-only setting entity deprecated"
+        },
+        "setting_mirror_deprecated_light_mode": {
+            "description": "The read-only entity `{entity_id}` is deprecated and will be removed in a future release; use `{replacement}` instead, which holds the same setting and can also change it. Its states are named differently: `always` is `when_dark` and `off` is `manual`, so update any conditions that compare them.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Read-only setting entity deprecated"
+        },
+        "setting_mirror_deprecated_mic_level": {
+            "description": "The read-only entity `{entity_id}` is deprecated and will be removed in a future release; use `{replacement}` instead, which holds the same level and can also change it. While the microphone is disabled, `{replacement}` is unavailable, so update any automations and scripts that read the level then.\n\nUpdate the following automations and scripts:\n{items}",
+            "title": "Read-only setting entity deprecated"
         }
     },
     "options": {
@@ -159,13 +983,18 @@
             "init": {
                 "data": {
                     "all_updates": "Realtime metrics (WARNING: Greatly increases CPU usage)",
-                    "allow_ea_channel": "Allow Early Access versions of Protect (WARNING: Will mark your integration as unsupported)",
                     "disable_rtsp": "Disable the RTSP stream",
                     "max_media": "Max number of event to load for Media Browser (increases RAM usage)",
-                    "override_connection_host": "Override Connection Host"
+                    "override_connection_host": "Override connection host"
+                },
+                "data_description": {
+                    "all_updates": "Enable realtime metrics updates. Only use if you have enabled diagnostic sensors and want them updated in realtime.",
+                    "disable_rtsp": "Disable the RTSP stream for all cameras. Use this if you don't need live video feeds.",
+                    "max_media": "Maximum number of events to load in the Media Browser. Higher values use more RAM.",
+                    "override_connection_host": "Override the connection host for the UniFi Protect device."
                 },
                 "description": "Realtime metrics option should only be enabled if you have enabled the diagnostics sensors and want them updated in realtime. If not enabled, they will only update once every 15 minutes.",
-                "title": "UniFi Protect Options"
+                "title": "UniFi Protect options"
             }
         }
     },
@@ -174,56 +1003,70 @@
             "description": "Adds a new custom message for doorbells.",
             "fields": {
                 "device_id": {
-                    "description": "Any device from the UniFi Protect instance you want to change. In case you have multiple Protect Instances.",
+                    "description": "Any device from the UniFi Protect instance you want to change. In case you have multiple Protect instances.",
                     "name": "UniFi Protect NVR"
                 },
                 "message": {
-                    "description": "New custom message to add for doorbells. Must be less than 30 characters.",
+                    "description": "New custom message to add. Must be less than 30 characters.",
                     "name": "Custom message"
                 }
             },
-            "name": "Add custom doorbell text"
+            "name": "Add doorbell text"
         },
         "get_user_keyring_info": {
-            "description": "Fetch a detailed list of users with NFC and fingerprint associations for automations.",
+            "description": "Fetches a detailed list of users with NFC and fingerprint associations for automations.",
             "fields": {
                 "device_id": {
                     "description": "Any device from the UniFi Protect instance you want to retrieve keyring details. This is useful for systems with multiple Protect instances.",
                     "name": "UniFi Protect NVR"
                 }
             },
-            "name": "Retrieve Keyring Details for Users"
+            "name": "Get user keyring info"
         },
-        "remove_doorbell_text": {
-            "description": "Removes an existing message for doorbells.",
+        "ptz_goto_preset": {
+            "description": "Moves a PTZ camera to a saved preset position.",
             "fields": {
                 "device_id": {
-                    "description": "Any device from the UniFi Protect instance you want to change. In case you have multiple Protect Instances.",
+                    "description": "The PTZ camera to move.",
+                    "name": "Camera"
+                },
+                "preset": {
+                    "description": "The name of the preset position to move to. Use 'Home' for the home position.",
+                    "name": "Preset"
+                }
+            },
+            "name": "PTZ go to preset"
+        },
+        "remove_doorbell_text": {
+            "description": "Removes an existing custom message for doorbells.",
+            "fields": {
+                "device_id": {
+                    "description": "Any device from the UniFi Protect instance you want to change. In case you have multiple Protect instances.",
                     "name": "UniFi Protect NVR"
                 },
                 "message": {
-                    "description": "Existing custom message to remove for doorbells.",
+                    "description": "Existing custom message to remove.",
                     "name": "Custom message"
                 }
             },
-            "name": "Remove custom doorbell text"
+            "name": "Remove doorbell text"
         },
         "remove_privacy_zone": {
-            "description": "Use to remove a privacy zone from a camera.",
+            "description": "Removes a privacy zone from a camera.",
             "fields": {
                 "device_id": {
-                    "description": "Camera you want to remove privacy zone from.",
+                    "description": "Camera you want to remove the privacy zone from.",
                     "name": "Camera"
                 },
                 "name": {
                     "description": "The name of the zone to remove.",
-                    "name": "Privacy Zone Name"
+                    "name": "Privacy zone"
                 }
             },
-            "name": "Remove camera privacy zone"
+            "name": "Remove privacy zone"
         },
         "set_chime_paired_doorbells": {
-            "description": "Use to set the paired doorbell(s) with a smart chime.",
+            "description": "Pairs doorbell(s) with a smart chime.",
             "fields": {
                 "device_id": {
                     "description": "The chimes to link to the doorbells.",
@@ -235,6 +1078,20 @@
                 }
             },
             "name": "Set chime paired doorbells"
+        },
+        "trigger_alarm_webhook": {
+            "description": "Fires an Alarm Manager webhook trigger, running the alarms that use it.",
+            "fields": {
+                "config_entry_id": {
+                    "description": "The UniFi Protect NVR to send the webhook to.",
+                    "name": "NVR"
+                },
+                "trigger_id": {
+                    "description": "The ID of the webhook trigger, as shown in the UniFi Protect Alarm Manager.",
+                    "name": "Trigger ID"
+                }
+            },
+            "name": "Trigger alarm webhook"
         }
     }
 }

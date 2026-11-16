@@ -12,6 +12,10 @@
                 "data": {
                     "device_id": "Device",
                     "ip_address": "IP address"
+                },
+                "data_description": {
+                    "device_id": "The device ID of the Flexit Nordic device",
+                    "ip_address": "The IP address of the Flexit Nordic device"
                 }
             }
         }
@@ -20,6 +24,18 @@
         "binary_sensor": {
             "air_filter_polluted": {
                 "name": "Air filter polluted"
+            }
+        },
+        "climate": {
+            "flexit_bacnet": {
+                "state_attributes": {
+                    "preset_mode": {
+                        "state": {
+                            "fireplace": "Fireplace",
+                            "high": "High"
+                        }
+                    }
+                }
             }
         },
         "number": {
@@ -37,6 +53,9 @@
             },
             "fireplace_extract_fan_setpoint": {
                 "name": "Fireplace extract fan setpoint"
+            },
+            "fireplace_mode_runtime": {
+                "name": "Fireplace mode runtime"
             },
             "fireplace_supply_fan_setpoint": {
                 "name": "Fireplace supply fan setpoint"
@@ -70,6 +89,9 @@
             "exhaust_air_temperature": {
                 "name": "Exhaust air temperature"
             },
+            "extract_air_humidity": {
+                "name": "Extract air humidity"
+            },
             "extract_air_temperature": {
                 "name": "Extract air temperature"
             },
@@ -102,9 +124,32 @@
             }
         },
         "switch": {
+            "cooker_hood_mode": {
+                "name": "Cooker hood mode"
+            },
             "electric_heater": {
                 "name": "Electric heater"
             }
+        }
+    },
+    "exceptions": {
+        "not_ready": {
+            "message": "Timeout while connecting to {ip}."
+        },
+        "set_hvac_mode": {
+            "message": "Failed to set HVAC mode {mode}."
+        },
+        "set_preset_mode": {
+            "message": "Failed to set preset mode {preset}."
+        },
+        "set_temperature": {
+            "message": "Failed to set temperature {temperature}."
+        },
+        "set_value_error": {
+            "message": "Failed setting the value {value}."
+        },
+        "switch_turn": {
+            "message": "Failed to turn the switch {state}."
         }
     }
 }

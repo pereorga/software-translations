@@ -1,11 +1,26 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El servei ja est\u00e0 configurat",
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
+        "error": {
             "auth_error": "Credencials inv\u00e0lides.",
-            "no_heaters": "No s'ha trobat cap escalfador."
+            "no_heaters": "No s'ha trobat cap escalfador.",
+            "not_found": "No s'ha trobat cap passarel\u00b7la.",
+            "unknown": "Error desconegut en connectar a la passarel\u00b7la."
         },
         "step": {
+            "dhcp_auth": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -21,9 +36,15 @@
                 "name": "Error"
             }
         },
+        "sensor": {
+            "rf_message_rssi": {
+                "name": "RSSI"
+            }
+        },
         "water_heater": {
             "boiler": {
                 "state": {
+                    "off": "OFF",
                     "opentherm": "OpenTherm",
                     "sensor_fault_s1_e10": "Error del sensor S1",
                     "sensor_fault_s1_e11": "Error del sensor S1",
@@ -35,9 +56,24 @@
                     "sensor_fault_s2_e22": "Error del sensor S2",
                     "sensor_fault_s2_e23": "Error del sensor S2",
                     "sensor_fault_s2_e24": "Error del sensor S2",
-                    "service": "Servei"
+                    "service": "Servei",
+                    "standby": "En espera"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "invalid_auth": {
+            "message": "Credencials inv\u00e0lides."
+        },
+        "no_heaters": {
+            "message": "No s'ha trobat cap escalfador."
+        },
+        "not_found": {
+            "message": "No s'ha trobat cap passarel\u00b7la."
+        },
+        "unknown": {
+            "message": "Error desconegut en connectar a la passarel\u00b7la."
         }
     }
 }

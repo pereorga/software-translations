@@ -1,0 +1,311 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "This LG device has already been configured with this infrared entity.",
+            "no_infrared_emitters": "No infrared emitter entities found. Please set up an infrared device first.",
+            "no_infrared_entities": "No infrared entities found. Please set up an infrared device first."
+        },
+        "error": {
+            "missing_infrared_entity": "Select an infrared emitter or receiver.",
+            "no_hvac_modes": "Select at least one supported mode."
+        },
+        "step": {
+            "ac": {
+                "data": {
+                    "hvac_modes": "Supported modes",
+                    "infrared_entity_id": "Infrared emitter",
+                    "infrared_receiver_entity_id": "Infrared receiver"
+                },
+                "data_description": {
+                    "hvac_modes": "Select the operating modes your AC unit supports. Heat is not available on all models.",
+                    "infrared_entity_id": "The infrared emitter entity to use for sending commands.",
+                    "infrared_receiver_entity_id": "Optional \u2014 allows the integration to update state when the physical remote is used."
+                },
+                "description": "Select an infrared emitter and the modes your LG AC supports.",
+                "title": "Set up LG AC"
+            },
+            "reconfigure": {
+                "data": {
+                    "hvac_modes": "Supported modes",
+                    "infrared_entity_id": "Infrared emitter",
+                    "infrared_receiver_entity_id": "Infrared receiver"
+                },
+                "data_description": {
+                    "hvac_modes": "Select the operating modes your AC unit supports. Heat is not available on all models.",
+                    "infrared_entity_id": "The infrared emitter entity to use for sending commands.",
+                    "infrared_receiver_entity_id": "The infrared receiver entity to use for receiving signals."
+                },
+                "description": "Change the infrared entities used by your LG device. For an air conditioner, you can also change its supported modes.",
+                "title": "Reconfigure LG device"
+            },
+            "tv": {
+                "data": {
+                    "infrared_entity_id": "Infrared emitter",
+                    "infrared_receiver_entity_id": "Infrared receiver"
+                },
+                "data_description": {
+                    "infrared_entity_id": "The infrared emitter entity to use for sending commands.",
+                    "infrared_receiver_entity_id": "The infrared receiver entity to use for receiving signals."
+                },
+                "description": "Select at least one infrared emitter or receiver to use with your LG TV.",
+                "title": "Set up LG TV"
+            },
+            "user": {
+                "description": "Select the type of LG device to set up.",
+                "menu_options": {
+                    "ac": "Air conditioner",
+                    "tv": "TV"
+                },
+                "title": "Set up LG IR Remote"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "ai_convertible": {
+                "name": "AI mode"
+            },
+            "audio": {
+                "name": "Toggle beep"
+            },
+            "back": {
+                "name": "Back"
+            },
+            "diagnose": {
+                "name": "Diagnose"
+            },
+            "down": {
+                "name": "Down"
+            },
+            "eco": {
+                "name": "Eco mode"
+            },
+            "exit": {
+                "name": "Exit"
+            },
+            "guide": {
+                "name": "Guide"
+            },
+            "hdmi_1": {
+                "name": "HDMI 1"
+            },
+            "hdmi_2": {
+                "name": "HDMI 2"
+            },
+            "hdmi_3": {
+                "name": "HDMI 3"
+            },
+            "hdmi_4": {
+                "name": "HDMI 4"
+            },
+            "home": {
+                "name": "Home"
+            },
+            "info": {
+                "name": "Info"
+            },
+            "input": {
+                "name": "Input"
+            },
+            "jet": {
+                "name": "Jet mode"
+            },
+            "left": {
+                "name": "Left"
+            },
+            "light": {
+                "name": "Toggle light"
+            },
+            "menu": {
+                "name": "Menu"
+            },
+            "num_0": {
+                "name": "Number 0"
+            },
+            "num_1": {
+                "name": "Number 1"
+            },
+            "num_2": {
+                "name": "Number 2"
+            },
+            "num_3": {
+                "name": "Number 3"
+            },
+            "num_4": {
+                "name": "Number 4"
+            },
+            "num_5": {
+                "name": "Number 5"
+            },
+            "num_6": {
+                "name": "Number 6"
+            },
+            "num_7": {
+                "name": "Number 7"
+            },
+            "num_8": {
+                "name": "Number 8"
+            },
+            "num_9": {
+                "name": "Number 9"
+            },
+            "ok": {
+                "name": "OK"
+            },
+            "power": {
+                "name": "Power"
+            },
+            "power_off": {
+                "name": "Power off"
+            },
+            "power_on": {
+                "name": "Power on"
+            },
+            "right": {
+                "name": "Right"
+            },
+            "swing_v_toggle": {
+                "name": "Toggle vertical swing"
+            },
+            "up": {
+                "name": "Up"
+            },
+            "viraat": {
+                "name": "Viraat mode"
+            },
+            "wifi": {
+                "name": "Start Wi-Fi pairing"
+            }
+        },
+        "climate": {
+            "lg_ac": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "medium_high": "Medium high",
+                            "medium_low": "Medium low",
+                            "quiet": "Quiet"
+                        }
+                    },
+                    "swing_horizontal_mode": {
+                        "state": {
+                            "left": "Left",
+                            "left_half": "Left half",
+                            "middle": "Middle",
+                            "middle_left": "Middle left",
+                            "middle_right": "Middle right",
+                            "off": "Off",
+                            "right": "Right",
+                            "right_half": "Right half",
+                            "swing": "Swing"
+                        }
+                    },
+                    "swing_mode": {
+                        "state": {
+                            "high": "High",
+                            "highest": "Highest",
+                            "low": "Low",
+                            "lowest": "Lowest",
+                            "middle_high": "Middle high",
+                            "middle_low": "Middle low",
+                            "off": "Off",
+                            "swing": "Swing"
+                        }
+                    }
+                }
+            }
+        },
+        "event": {
+            "received_command": {
+                "name": "Received command",
+                "state_attributes": {
+                    "event_type": {
+                        "state": {
+                            "aspect": "Aspect",
+                            "back": "Back",
+                            "blue": "Blue",
+                            "channel_down": "Channel down",
+                            "channel_up": "Channel up",
+                            "down": "Down",
+                            "exit": "Exit",
+                            "ez_adjust": "EZ adjust",
+                            "fast_forward": "Fast forward",
+                            "green": "Green",
+                            "guide": "Guide",
+                            "hdmi_1": "HDMI 1",
+                            "hdmi_2": "HDMI 2",
+                            "hdmi_3": "HDMI 3",
+                            "hdmi_4": "HDMI 4",
+                            "home": "Home",
+                            "in_start": "In start",
+                            "info": "Info",
+                            "input": "Input",
+                            "left": "Left",
+                            "list": "List",
+                            "menu": "Menu",
+                            "mute": "Mute",
+                            "num_0": "Number 0",
+                            "num_1": "Number 1",
+                            "num_2": "Number 2",
+                            "num_3": "Number 3",
+                            "num_4": "Number 4",
+                            "num_5": "Number 5",
+                            "num_6": "Number 6",
+                            "num_7": "Number 7",
+                            "num_8": "Number 8",
+                            "num_9": "Number 9",
+                            "ok": "OK",
+                            "pause": "Pause",
+                            "play": "Play",
+                            "power": "Power",
+                            "power_off": "Power off",
+                            "power_on": "Power on",
+                            "red": "Red",
+                            "rewind": "Rewind",
+                            "right": "Right",
+                            "sap": "SAP",
+                            "settings": "Settings",
+                            "stop": "Stop",
+                            "subtitle": "Subtitle",
+                            "text": "Text",
+                            "unknown": "Unknown",
+                            "up": "Up",
+                            "volume_down": "Volume down",
+                            "volume_up": "Volume up",
+                            "yellow": "Yellow"
+                        }
+                    }
+                }
+            }
+        },
+        "select": {
+            "energy_limit": {
+                "name": "Energy limit",
+                "state": {
+                    "40": "40%",
+                    "60": "60%",
+                    "80": "80%",
+                    "off": "Off"
+                }
+            }
+        },
+        "switch": {
+            "auto_clean": {
+                "name": "Auto clean"
+            },
+            "ion_generator": {
+                "name": "Ion generator"
+            }
+        }
+    },
+    "selector": {
+        "hvac_modes": {
+            "options": {
+                "cool": "Cool",
+                "dry": "Dry",
+                "fan_only": "Fan only",
+                "heat": "Heat"
+            }
+        }
+    }
+}

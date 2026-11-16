@@ -3,8 +3,19 @@
         "refresh_system": {
             "name": "Actualitza sistema"
         },
-        "reset_system": {
-            "name": "Reinicia el sistema"
+        "set_dhw_override": {
+            "description": "Sobreescriu l'estat de l'ACS, ja sigui indefinidament o durant una durada especificada, despr\u00e9s de la qual tornar\u00e0 a seguir la seva programaci\u00f3.",
+            "fields": {
+                "duration": {
+                    "description": "L'ACS tornar\u00e0 a la seva programaci\u00f3 despr\u00e9s d'aquest temps. Si \u00e9s 0, el canvi es mant\u00e9 fins al seg\u00fcent punt de consigna programat.",
+                    "name": "Durada"
+                },
+                "state": {
+                    "description": "L'estat de l'ACS: Cert (enc\u00e8s: escalfa l'aigua fins al punt de consigna) o Fals (apagat).",
+                    "name": "Estat"
+                }
+            },
+            "name": "Estableix la sobreescriptura de l'ACS"
         },
         "set_system_mode": {
             "fields": {
@@ -25,9 +36,6 @@
             "fields": {
                 "duration": {
                     "name": "Durada"
-                },
-                "entity_id": {
-                    "name": "Entitat"
                 },
                 "setpoint": {
                     "name": "Consigna"

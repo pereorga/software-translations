@@ -9,14 +9,53 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "The password used in the Huum mobile app."
+                },
+                "description": "The authentication for {username} is no longer valid. Please enter the current password.",
+                "title": "Authentication expired for {name}"
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password used in the Huum mobile app.",
+                    "username": "The username (email) used in the Huum mobile app."
+                }
+            },
             "user": {
                 "data": {
                     "password": "Password",
                     "username": "Username"
                 },
+                "data_description": {
+                    "password": "The password used in the Huum mobile app.",
+                    "username": "The username (email) used in the Huum mobile app."
+                },
                 "description": "Log in with the same username and password that is used in the Huum mobile app.",
                 "title": "Connect to the Huum"
             }
+        }
+    },
+    "entity": {
+        "light": {
+            "light": {
+                "name": "Light"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_failed": {
+            "message": "Could not log in to Huum with the given credentials."
+        },
+        "unable_to_turn_on": {
+            "message": "Unable to turn on the sauna."
         }
     }
 }

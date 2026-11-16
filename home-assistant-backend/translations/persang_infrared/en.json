@@ -1,0 +1,66 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "This Persang speaker has already been configured with this transmitter.",
+            "no_emitters": "No infrared transmitter entities found. Please set up an infrared device first."
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "infrared_emitter_entity_id": "Infrared transmitter"
+                },
+                "data_description": {
+                    "infrared_emitter_entity_id": "The infrared transmitter entity to use for sending commands."
+                },
+                "description": "Select the infrared transmitter entity to use for controlling your Persang speaker.",
+                "title": "Set up Persang IR speaker"
+            }
+        }
+    },
+    "entity": {
+        "button": {
+            "eq": {
+                "name": "Equalizer"
+            },
+            "mode": {
+                "name": "Mode"
+            },
+            "num_0": {
+                "name": "Number 0"
+            },
+            "num_1": {
+                "name": "Number 1"
+            },
+            "num_2": {
+                "name": "Number 2"
+            },
+            "num_3": {
+                "name": "Number 3"
+            },
+            "num_4": {
+                "name": "Number 4"
+            },
+            "num_5": {
+                "name": "Number 5"
+            },
+            "num_6": {
+                "name": "Number 6"
+            },
+            "num_7": {
+                "name": "Number 7"
+            },
+            "num_8": {
+                "name": "Number 8"
+            },
+            "num_9": {
+                "name": "Number 9"
+            },
+            "repeat": {
+                "name": "Repeat"
+            },
+            "scan": {
+                "name": "Scan"
+            }
+        }
+    }
+}

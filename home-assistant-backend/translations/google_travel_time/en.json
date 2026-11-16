@@ -1,13 +1,13 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Location is already configured",
-            "reconfigure_successful": "Re-configuration was successful"
+            "already_configured": "Location is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
             "invalid_auth": "Invalid authentication",
-            "timeout_connect": "Timeout establishing connection"
+            "permission_denied": "The Routes API is not enabled for this API key. Please see the setup instructions for detailed information.",
+            "timeout_connect": "Timeout while establishing a connection"
         },
         "step": {
             "reconfigure": {
@@ -16,17 +16,33 @@
                     "destination": "Destination",
                     "origin": "Origin"
                 },
-                "description": "You can specify the origin and destination in the form of an address, latitude/longitude coordinates, or a Google place ID. When specifying the location using a Google place ID, the ID must be prefixed with `place_id:`."
+                "description": "You can specify the origin and destination in the form of an address, latitude/longitude coordinates or an entity ID that provides this information in its state, an entity ID with latitude and longitude attributes, or a zone's friendly name (case-sensitive)"
             },
             "user": {
                 "data": {
                     "api_key": "API key",
                     "destination": "Destination",
-                    "name": "Name",
                     "origin": "Origin"
                 },
-                "description": "You can specify the origin and destination in the form of an address, latitude/longitude coordinates, or a Google place ID. When specifying the location using a Google place ID, the ID must be prefixed with `place_id:`."
+                "description": "You can specify the origin and destination in the form of an address, latitude/longitude coordinates or an entity ID that provides this information in its state, an entity ID with latitude and longitude attributes, or a zone's friendly name (case-sensitive)"
             }
+        }
+    },
+    "exceptions": {
+        "api_error": {
+            "message": "Google API error: {error}"
+        },
+        "permission_denied": {
+            "message": "The Routes API is not enabled for this API key. Please see the setup instructions for detailed information."
+        },
+        "timeout": {
+            "message": "Timed out getting travel times from the Google Routes API"
+        }
+    },
+    "issues": {
+        "routes_api_disabled": {
+            "description": "Your Google Travel Time integration `{entry_title}` uses an API key which does not have the Routes API enabled.\n\nPlease follow the instructions to [enable the API for your project]({enable_api_url}) and make sure your [API key restrictions]({api_key_restrictions_url}) allow access to the Routes API.\n\nAfter enabling the API this issue will be resolved automatically.",
+            "title": "The Routes API must be enabled"
         }
     },
     "options": {
@@ -35,15 +51,15 @@
                 "data": {
                     "avoid": "Avoid",
                     "language": "Language",
-                    "mode": "Travel Mode",
+                    "mode": "Travel mode",
                     "time": "Time",
-                    "time_type": "Time Type",
-                    "traffic_model": "Traffic Model",
-                    "transit_mode": "Transit Mode",
-                    "transit_routing_preference": "Transit Routing Preference",
+                    "time_type": "Time type",
+                    "traffic_model": "Traffic model",
+                    "transit_mode": "Transit mode",
+                    "transit_routing_preference": "Transit routing preference",
                     "units": "Units"
                 },
-                "description": "You can optionally specify either a Departure Time or Arrival Time. If specifying a departure time, you can enter `now`, a Unix timestamp, or a 24 hour time string like `08:00:00`. If specifying an arrival time, you can use a Unix timestamp or a 24 hour time string like `08:00:00`"
+                "description": "You can optionally specify either a departure time or arrival time in the form of a 24 hour time string like `08:00:00`"
             }
         }
     },
@@ -67,13 +83,13 @@
         },
         "time_type": {
             "options": {
-                "arrival_time": "Arrival Time",
-                "departure_time": "Departure Time"
+                "arrival_time": "Arrival time",
+                "departure_time": "Departure time"
             }
         },
         "traffic_model": {
             "options": {
-                "best_guess": "Best Guess",
+                "best_guess": "Best guess",
                 "optimistic": "Optimistic",
                 "pessimistic": "Pessimistic"
             }
@@ -89,15 +105,101 @@
         },
         "transit_routing_preference": {
             "options": {
-                "fewer_transfers": "Fewer Transfers",
-                "less_walking": "Less Walking"
+                "fewer_transfers": "Fewer transfers",
+                "less_walking": "Less walking"
             }
         },
         "units": {
             "options": {
-                "imperial": "Imperial System",
-                "metric": "Metric System"
+                "imperial": "Imperial system",
+                "metric": "Metric system"
             }
+        }
+    },
+    "services": {
+        "get_transit_times": {
+            "description": "Retrieves route alternatives and travel times between two locations using public transit.",
+            "fields": {
+                "arrival_time": {
+                    "description": "The desired arrival time.",
+                    "name": "Arrival time"
+                },
+                "config_entry_id": {
+                    "description": "The config entry to use for this action.",
+                    "name": "Config entry"
+                },
+                "departure_time": {
+                    "description": "The desired departure time.",
+                    "name": "Departure time"
+                },
+                "destination": {
+                    "description": "The destination of the route.",
+                    "name": "Destination"
+                },
+                "language": {
+                    "description": "The language to use for the response.",
+                    "name": "Language"
+                },
+                "origin": {
+                    "description": "The origin of the route.",
+                    "name": "Origin"
+                },
+                "transit_mode": {
+                    "description": "The preferred transit mode.",
+                    "name": "Transit mode"
+                },
+                "transit_routing_preference": {
+                    "description": "The transit routing preference.",
+                    "name": "Transit routing preference"
+                },
+                "units": {
+                    "description": "Which unit system to use.",
+                    "name": "Units"
+                }
+            },
+            "name": "Get transit times"
+        },
+        "get_travel_times": {
+            "description": "Retrieves route alternatives and travel times between two locations.",
+            "fields": {
+                "avoid": {
+                    "description": "Features to avoid when calculating the route.",
+                    "name": "Avoid"
+                },
+                "config_entry_id": {
+                    "description": "The config entry to use for this action.",
+                    "name": "Config entry"
+                },
+                "departure_time": {
+                    "description": "The desired departure time.",
+                    "name": "Departure time"
+                },
+                "destination": {
+                    "description": "The destination of the route.",
+                    "name": "Destination"
+                },
+                "language": {
+                    "description": "The language to use for the response.",
+                    "name": "Language"
+                },
+                "mode": {
+                    "description": "The mode of transportation.",
+                    "name": "Travel mode"
+                },
+                "origin": {
+                    "description": "The origin of the route.",
+                    "name": "Origin"
+                },
+                "traffic_model": {
+                    "description": "The traffic model to use when calculating driving routes.",
+                    "name": "Traffic model"
+                },
+                "units": {
+                    "description": "Which unit system to use.",
+                    "name": "Units"
+                }
+            },
+            "name": "Get travel times"
         }
     },
     "title": "Google Maps Travel Time"

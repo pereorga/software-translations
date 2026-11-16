@@ -1,8 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "Account is already configured",
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Account is already configured"
         },
         "create_entry": {
             "default": "Successfully authenticated"
@@ -20,6 +19,19 @@
                 "description": "The password for {username} is invalid.",
                 "title": "Authentication expired for {name}"
             },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "url": "URL",
+                    "verify_ssl": "Verify SSL certificate"
+                },
+                "data_description": {
+                    "password": "Enter the password for {username} again. Leave it empty only if the server needs no password.",
+                    "url": "The address of the CalDAV server.",
+                    "verify_ssl": "Whether to verify the SSL certificate of the server. Disable this if the server uses a self-signed or otherwise invalid certificate."
+                },
+                "description": "Update the CalDAV server connection for {username}."
+            },
             "user": {
                 "data": {
                     "password": "Password",
@@ -29,6 +41,11 @@
                 },
                 "description": "Please enter your CalDAV server credentials"
             }
+        }
+    },
+    "exceptions": {
+        "unexpected_response": {
+            "message": "Unexpected response from the CalDAV server"
         }
     }
 }

@@ -1,0 +1,51 @@
+{
+    "common": {
+        "condition_behavior_name": "Es continua si",
+        "condition_for_name": "Durant almenys",
+        "condition_threshold_name": "Tipus de llindar",
+        "trigger_behavior_name": "Dispara quan",
+        "trigger_for_name": "Durant almenys",
+        "trigger_threshold_name": "Tipus de llindar"
+    },
+    "conditions": {
+        "is_value": {
+            "fields": {
+                "behavior": {
+                    "name": "Es continua si"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            }
+        }
+    },
+    "triggers": {
+        "changed": {
+            "description": "Es dispara quan una o m\u00e9s temperatures canvien.",
+            "fields": {
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            },
+            "name": "Temperatura canvia"
+        },
+        "crossed_threshold": {
+            "description": "Es dispara quan una o m\u00e9s temperatures superen un llindar.",
+            "fields": {
+                "behavior": {
+                    "name": "Dispara quan"
+                },
+                "for": {
+                    "name": "Durant almenys"
+                },
+                "threshold": {
+                    "name": "Tipus de llindar"
+                }
+            },
+            "name": "Temperatura supera un llindar"
+        }
+    }
+}

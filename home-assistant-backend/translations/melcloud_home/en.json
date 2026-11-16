@@ -1,0 +1,199 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "unique_id_mismatch": "The login details correspond to a different account. Please re-authenticate to the previously configured account."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "timeout_connect": "Timeout while communicating with MELCloud Home API",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Email address for your MELCloud Home account.",
+                    "password": "Password for your MELCloud Home account."
+                },
+                "description": "The credentials for your MELCloud Home account are no longer valid. Enter your current credentials to reauthenticate.",
+                "title": "Authentication expired for {name}"
+            },
+            "reconfigure": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Email address for your MELCloud Home account.",
+                    "password": "Password for your MELCloud Home account."
+                },
+                "description": "Re-enter your credentials to reconfigure your MELCloud Home account."
+            },
+            "user": {
+                "data": {
+                    "email": "Email",
+                    "password": "Password"
+                },
+                "data_description": {
+                    "email": "Email address for your MELCloud Home account.",
+                    "password": "Password for your MELCloud Home account."
+                },
+                "description": "Log in to MELCloud Home with the email address and password associated with your account."
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "error": {
+                "name": "Error"
+            },
+            "forced_hot_water": {
+                "name": "Forced hot water"
+            },
+            "frost_protection": {
+                "name": "Frost protection"
+            },
+            "frost_protection_active": {
+                "name": "Frost protection active"
+            },
+            "holiday_mode": {
+                "name": "Holiday mode"
+            },
+            "overheat_protection": {
+                "name": "Overheat protection"
+            },
+            "overheat_protection_active": {
+                "name": "Overheat protection active"
+            },
+            "standby": {
+                "name": "Standby"
+            }
+        },
+        "climate": {
+            "ata_unit": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "speed_1": "Speed 1",
+                            "speed_2": "Speed 2",
+                            "speed_3": "Speed 3",
+                            "speed_4": "Speed 4",
+                            "speed_5": "Speed 5"
+                        }
+                    },
+                    "swing_horizontal_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "centre": "Centre",
+                            "left": "Left",
+                            "left_centre": "Left centre",
+                            "right": "Right",
+                            "right_centre": "Right centre",
+                            "swing": "Swing"
+                        }
+                    },
+                    "swing_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "position_1": "Position 1",
+                            "position_2": "Position 2",
+                            "position_3": "Position 3",
+                            "position_4": "Position 4",
+                            "position_5": "Position 5",
+                            "swing": "Swing"
+                        }
+                    }
+                }
+            },
+            "atw_zone": {
+                "name": "Zone {zone_number}"
+            }
+        },
+        "number": {
+            "frost_protection_max_temp": {
+                "name": "Frost protection maximum temperature"
+            },
+            "frost_protection_min_temp": {
+                "name": "Frost protection minimum temperature"
+            },
+            "overheat_protection_max_temp": {
+                "name": "Overheat protection maximum temperature"
+            },
+            "overheat_protection_min_temp": {
+                "name": "Overheat protection minimum temperature"
+            }
+        },
+        "sensor": {
+            "energy_consumed": {
+                "name": "Energy consumed (monthly)"
+            },
+            "operation_status": {
+                "name": "Operation status",
+                "state": {
+                    "cooling": "Cooling",
+                    "frost_protection": "Frost protection",
+                    "heating_water": "Heating water",
+                    "heating_zones": "Heating zones",
+                    "idle": "Idle"
+                }
+            },
+            "outdoor_temperature": {
+                "name": "Outdoor temperature"
+            },
+            "room_temperature": {
+                "name": "Room temperature"
+            },
+            "room_temperature_zone_1": {
+                "name": "Zone 1 room temperature"
+            },
+            "room_temperature_zone_2": {
+                "name": "Zone 2 room temperature"
+            },
+            "tank_water_temperature": {
+                "name": "Tank water temperature"
+            }
+        },
+        "switch": {
+            "frost_protection": {
+                "name": "Frost protection"
+            },
+            "overheat_protection": {
+                "name": "Overheat protection"
+            },
+            "standby": {
+                "name": "Standby"
+            }
+        },
+        "water_heater": {
+            "hot_water": {
+                "name": "Hot water"
+            }
+        }
+    },
+    "exceptions": {
+        "api_error": {
+            "message": "Unexpected error from the MELCloud Home API"
+        },
+        "cannot_connect": {
+            "message": "Error communicating with MELCloud Home API"
+        },
+        "invalid_auth": {
+            "message": "An error occurred while trying to authenticate"
+        },
+        "temperature_max_below_min": {
+            "message": "The maximum temperature must be higher than the minimum temperature."
+        },
+        "temperature_min_exceeds_max": {
+            "message": "The minimum temperature must be lower than the maximum temperature."
+        },
+        "timeout_connect": {
+            "message": "Timeout while communicating with MELCloud Home API"
+        }
+    }
+}

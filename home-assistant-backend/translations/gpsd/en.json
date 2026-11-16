@@ -35,33 +35,18 @@
                 "state": {
                     "2d_fix": "2D Fix",
                     "3d_fix": "3D Fix"
-                },
-                "state_attributes": {
-                    "climb": {
-                        "name": "Climb"
-                    },
-                    "elevation": {
-                        "name": "Elevation"
-                    },
-                    "gps_time": {
-                        "name": "Time"
-                    },
-                    "latitude": {
-                        "name": "Latitude"
-                    },
-                    "longitude": {
-                        "name": "Longitude"
-                    },
-                    "mode": {
-                        "name": "Mode"
-                    },
-                    "speed": {
-                        "name": "Speed"
-                    }
                 }
             },
             "time": {
                 "name": "Time"
+            },
+            "total_satellites": {
+                "name": "Total satellites",
+                "unit_of_measurement": "satellites"
+            },
+            "used_satellites": {
+                "name": "Used satellites",
+                "unit_of_measurement": "satellites"
             }
         }
     }

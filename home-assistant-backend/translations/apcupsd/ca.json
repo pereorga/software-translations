@@ -7,6 +7,13 @@
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
         "step": {
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "port": "Port"
+                },
+                "description": "Introdueix l'amfitri\u00f3 i el port en qu\u00e8 s'est\u00e0 servint apcupsd NIS."
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -51,7 +58,7 @@
                 "name": "Estat de la bateria"
             },
             "battery_voltage": {
-                "name": "Tensi\u00f3 de bateria"
+                "name": "Tensi\u00f3 de la bateria"
             },
             "cable_type": {
                 "name": "Tipus de cable"
@@ -82,9 +89,6 @@
             },
             "internal_temperature": {
                 "name": "Temperatura interna"
-            },
-            "last_self_test": {
-                "name": "\u00daltim autotest"
             },
             "last_transfer": {
                 "name": "\u00daltima transfer\u00e8ncia"

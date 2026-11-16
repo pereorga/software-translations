@@ -2,39 +2,117 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect",
             "no_plants": "No plants have been found on this account"
         },
         "error": {
-            "invalid_auth": "Invalid authentication"
+            "cannot_connect": "Cannot connect to Growatt servers. Please check your internet connection and try again.",
+            "invalid_auth": "Authentication failed. Please check your credentials and try again."
         },
         "step": {
+            "password_auth": {
+                "data": {
+                    "password": "Password",
+                    "region": "Server region",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password for your Growatt account.",
+                    "region": "The server region that matches your Growatt account location.",
+                    "username": "The email address or username for your Growatt account."
+                },
+                "title": "Enter your Growatt login credentials"
+            },
             "plant": {
                 "data": {
                     "plant_id": "Plant"
                 },
+                "data_description": {
+                    "plant_id": "The Growatt plant (solar installation) to integrate."
+                },
                 "title": "Select your plant"
             },
-            "user": {
+            "reauth_confirm": {
                 "data": {
-                    "name": "Name",
                     "password": "Password",
-                    "url": "URL",
+                    "region": "Server region",
+                    "token": "API token",
                     "username": "Username"
                 },
-                "title": "Enter your Growatt information"
+                "data_description": {
+                    "password": "The password for your Growatt account.",
+                    "region": "The server region that matches your Growatt account location.",
+                    "token": "The API token for your Growatt account. You can generate one via the Growatt web portal or ShinePhone app.",
+                    "username": "The email address or username for your Growatt account."
+                },
+                "description": "Re-enter your credentials to continue using this integration.",
+                "title": "Re-authenticate with Growatt"
+            },
+            "reconfigure": {
+                "data": {
+                    "password": "Password",
+                    "region": "Server region",
+                    "token": "API token",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "password": "The password for your Growatt account.",
+                    "region": "The server region that matches your Growatt account location.",
+                    "token": "The API token for your Growatt account. You can generate one via the Growatt web portal or ShinePhone app.",
+                    "username": "The email address or username for your Growatt account."
+                },
+                "description": "Update your credentials to continue using this integration.",
+                "title": "Reconfigure Growatt"
+            },
+            "token_auth": {
+                "data": {
+                    "region": "Server region",
+                    "token": "API token"
+                },
+                "data_description": {
+                    "region": "The server region that matches your Growatt account location.",
+                    "token": "The API token for your Growatt account. You can generate one via the Growatt web portal or ShinePhone app."
+                },
+                "description": "Token authentication is only supported for MIN/SPH devices. For other device types, please use username/password authentication.",
+                "title": "Enter your API token"
+            },
+            "user": {
+                "description": "Note: Token authentication is currently only supported for MIN/SPH devices. For other device types, please use username/password authentication.",
+                "menu_options": {
+                    "password_auth": "Username/password",
+                    "token_auth": "API token (MIN/SPH only)"
+                },
+                "title": "Choose authentication method"
             }
         }
     },
     "entity": {
+        "number": {
+            "battery_charge_power_limit": {
+                "name": "Battery charge power limit"
+            },
+            "battery_charge_soc_limit": {
+                "name": "Battery charge SOC limit"
+            },
+            "battery_discharge_power_limit": {
+                "name": "Battery discharge power limit"
+            },
+            "battery_discharge_soc_limit_off_grid": {
+                "name": "Battery discharge SOC limit (off-grid)"
+            },
+            "battery_discharge_soc_limit_on_grid": {
+                "name": "Battery discharge SOC limit (on-grid)"
+            }
+        },
         "sensor": {
             "inverter_amperage_input_1": {
-                "name": "Input 1 Amperage"
+                "name": "Input 1 amperage"
             },
             "inverter_amperage_input_2": {
-                "name": "Input 2 Amperage"
+                "name": "Input 2 amperage"
             },
             "inverter_amperage_input_3": {
-                "name": "Input 3 Amperage"
+                "name": "Input 3 amperage"
             },
             "inverter_current_reactive_wattage": {
                 "name": "Reactive wattage"
@@ -76,13 +154,13 @@
                 "name": "Input 3 voltage"
             },
             "inverter_wattage_input_1": {
-                "name": "Input 1 Wattage"
+                "name": "Input 1 wattage"
             },
             "inverter_wattage_input_2": {
-                "name": "Input 2 Wattage"
+                "name": "Input 2 wattage"
             },
             "inverter_wattage_input_3": {
-                "name": "Input 3 Wattage"
+                "name": "Input 3 wattage"
             },
             "mix_battery_charge": {
                 "name": "Battery charging"
@@ -130,7 +208,7 @@
                 "name": "Import from grid today (load + charging)"
             },
             "mix_last_update": {
-                "name": "Last Data Update"
+                "name": "Last data update"
             },
             "mix_load_consumption": {
                 "name": "Load consumption"
@@ -157,7 +235,7 @@
                 "name": "PV2 voltage"
             },
             "mix_self_consumption_today": {
-                "name": "Self consumption today (solar + battery)"
+                "name": "Self-consumption today (solar + battery)"
             },
             "mix_solar_generation_lifetime": {
                 "name": "Lifetime solar energy"
@@ -166,25 +244,43 @@
                 "name": "Solar energy today"
             },
             "mix_statement_of_charge": {
-                "name": "Statement of charge"
+                "name": "State of charge"
             },
             "mix_system_production_today": {
                 "name": "System production today (self-consumption + export)"
             },
             "mix_wattage_pv_1": {
-                "name": "PV1 Wattage"
+                "name": "PV1 wattage"
             },
             "mix_wattage_pv_2": {
-                "name": "PV2 Wattage"
+                "name": "PV2 wattage"
             },
             "mix_wattage_pv_all": {
-                "name": "All PV Wattage"
+                "name": "All PV wattage"
+            },
+            "sph_grid_frequency": {
+                "name": "AC frequency"
+            },
+            "sph_temperature_1": {
+                "name": "Temperature 1"
+            },
+            "sph_temperature_2": {
+                "name": "Temperature 2"
+            },
+            "sph_temperature_3": {
+                "name": "Temperature 3"
+            },
+            "sph_temperature_4": {
+                "name": "Temperature 4"
+            },
+            "sph_temperature_5": {
+                "name": "Temperature 5"
             },
             "storage_ac_input_frequency_out": {
                 "name": "AC input frequency"
             },
             "storage_ac_output_frequency": {
-                "name": "Ac output frequency"
+                "name": "AC output frequency"
             },
             "storage_battery_percentage": {
                 "name": "Battery percentage"
@@ -244,7 +340,7 @@
                 "name": "Lifetime load consumption"
             },
             "storage_load_consumption_solar_storage": {
-                "name": "Load consumption (Solar + Storage)"
+                "name": "Load consumption (solar + storage)"
             },
             "storage_load_consumption_today": {
                 "name": "Load consumption today"
@@ -277,7 +373,7 @@
                 "name": "Solar power production (PV2)"
             },
             "storage_storage_production_lifetime": {
-                "name": "Lifetime Storage production"
+                "name": "Lifetime storage production"
             },
             "storage_storage_production_today": {
                 "name": "Storage production today"
@@ -295,16 +391,22 @@
                 "name": "Lifetime total all batteries discharged"
             },
             "tlx_amperage_input_1": {
-                "name": "Input 1 Amperage"
+                "name": "Input 1 amperage"
             },
             "tlx_amperage_input_2": {
-                "name": "Input 2 Amperage"
+                "name": "Input 2 amperage"
             },
             "tlx_amperage_input_3": {
-                "name": "Input 3 Amperage"
+                "name": "Input 3 amperage"
             },
             "tlx_amperage_input_4": {
-                "name": "Input 4 Amperage"
+                "name": "Input 4 amperage"
+            },
+            "tlx_batteries_charged_from_grid_today": {
+                "name": "Batteries charged from grid today"
+            },
+            "tlx_batteries_charged_from_grid_total": {
+                "name": "Lifetime batteries charged from grid"
             },
             "tlx_battery_1_charge_total": {
                 "name": "Lifetime total battery 1 charged"
@@ -337,16 +439,16 @@
                 "name": "Energy today"
             },
             "tlx_energy_today_input_1": {
-                "name": "Energy Today Input 1"
+                "name": "Energy today input 1"
             },
             "tlx_energy_today_input_2": {
-                "name": "Energy Today Input 2"
+                "name": "Energy today input 2"
             },
             "tlx_energy_today_input_3": {
-                "name": "Energy Today Input 3"
+                "name": "Energy today input 3"
             },
             "tlx_energy_today_input_4": {
-                "name": "Energy Today Input 4"
+                "name": "Energy today input 4"
             },
             "tlx_energy_total": {
                 "name": "Lifetime energy output"
@@ -372,20 +474,56 @@
             "tlx_frequency": {
                 "name": "AC frequency"
             },
+            "tlx_import_from_grid_today": {
+                "name": "Import from grid today"
+            },
+            "tlx_import_from_grid_total": {
+                "name": "Lifetime import from grid"
+            },
             "tlx_internal_wattage": {
                 "name": "Internal wattage"
             },
             "tlx_load_consumption_today": {
                 "name": "Load consumption today"
             },
+            "tlx_p_self": {
+                "name": "Self power"
+            },
+            "tlx_p_system": {
+                "name": "System power"
+            },
+            "tlx_pac_to_grid_total": {
+                "name": "Export power"
+            },
+            "tlx_pac_to_local_load": {
+                "name": "Local load power"
+            },
+            "tlx_pac_to_user_total": {
+                "name": "Import power"
+            },
             "tlx_reactive_voltage": {
                 "name": "Reactive voltage"
+            },
+            "tlx_self_consumption_today": {
+                "name": "Self consumption today"
+            },
+            "tlx_self_consumption_total": {
+                "name": "Lifetime self consumption"
+            },
+            "tlx_solar_generation_today": {
+                "name": "Solar energy today"
             },
             "tlx_solar_generation_total": {
                 "name": "Lifetime total solar energy"
             },
             "tlx_statement_of_charge": {
-                "name": "Statement of charge (SoC)"
+                "name": "State of charge (SoC)"
+            },
+            "tlx_system_production_today": {
+                "name": "System production today"
+            },
+            "tlx_system_production_total": {
+                "name": "Lifetime system production"
             },
             "tlx_temperature_1": {
                 "name": "Temperature 1"
@@ -415,22 +553,22 @@
                 "name": "Input 4 voltage"
             },
             "tlx_wattage_input_1": {
-                "name": "Input 1 Wattage"
+                "name": "Input 1 wattage"
             },
             "tlx_wattage_input_2": {
-                "name": "Input 2 Wattage"
+                "name": "Input 2 wattage"
             },
             "tlx_wattage_input_3": {
-                "name": "Input 3 Wattage"
+                "name": "Input 3 wattage"
             },
             "tlx_wattage_input_4": {
-                "name": "Input 4 Wattage"
+                "name": "Input 4 wattage"
             },
             "total_energy_output": {
                 "name": "Lifetime energy output"
             },
             "total_energy_today": {
-                "name": "Energy Today"
+                "name": "Energy today"
             },
             "total_maximum_output": {
                 "name": "Maximum power"
@@ -442,8 +580,292 @@
                 "name": "Money lifetime"
             },
             "total_output_power": {
-                "name": "Output Power"
+                "name": "Output power"
             }
+        },
+        "switch": {
+            "ac_charge": {
+                "name": "Charge from grid"
+            }
+        }
+    },
+    "exceptions": {
+        "api_error": {
+            "message": "Growatt API error: {error}"
+        },
+        "api_error_with_code": {
+            "message": "API error: {error} (Code: {code})"
+        },
+        "auth_failed": {
+            "message": "Authentication failed for Growatt API: {error}"
+        },
+        "communication_error": {
+            "message": "Error communicating with Growatt API: {error}"
+        },
+        "device_not_configured": {
+            "message": "{device_type} device {serial_number} is not configured for actions."
+        },
+        "device_not_found": {
+            "message": "Device {device_id} not found in the device registry."
+        },
+        "device_not_growatt": {
+            "message": "Device {device_id} is not a Growatt device."
+        },
+        "fetch_data_failed": {
+            "message": "Error fetching data from Growatt API: {error}"
+        },
+        "invalid_batt_mode": {
+            "message": "{batt_mode} is not a valid battery mode. Allowed values: {allowed_modes}."
+        },
+        "invalid_charge_power": {
+            "message": "'Charge power' must be between 0 and 100, got {value}."
+        },
+        "invalid_charge_stop_soc": {
+            "message": "'Charge stop SOC' must be between 0 and 100, got {value}."
+        },
+        "invalid_credentials": {
+            "message": "Username, password, or URL may be incorrect"
+        },
+        "invalid_discharge_power": {
+            "message": "'Discharge power' must be between 0 and 100, got {value}."
+        },
+        "invalid_discharge_stop_soc": {
+            "message": "'Discharge stop SOC' must be between 0 and 100, got {value}."
+        },
+        "invalid_segment_id": {
+            "message": "'Segment ID' must be between 1 and 9, got {segment_id}."
+        },
+        "invalid_time_format_end_time": {
+            "message": "'End time' must be in HH:MM or HH:MM:SS format."
+        },
+        "invalid_time_format_period_end": {
+            "message": "'Period {period} end' must be in HH:MM or HH:MM:SS format."
+        },
+        "invalid_time_format_period_start": {
+            "message": "'Period {period} start' must be in HH:MM or HH:MM:SS format."
+        },
+        "invalid_time_format_start_time": {
+            "message": "'Start time' must be in HH:MM or HH:MM:SS format."
+        },
+        "login_failed": {
+            "message": "Growatt login failed: {message}"
+        },
+        "migration_invalid_plant_id": {
+            "message": "The configuration contains an invalid plant ID, reconfigure the integration"
+        },
+        "migration_missing_credentials": {
+            "message": "The configuration is missing the username or password, reconfigure the integration"
+        },
+        "migration_no_plants": {
+            "message": "No plants found for Growatt account {username}"
+        },
+        "migration_plant_id_failed": {
+            "message": "Failed to resolve the plant ID from the Growatt API"
+        },
+        "no_devices_configured": {
+            "message": "No {device_type} devices with token authentication are configured. Actions require {device_type} devices with V1 API access."
+        },
+        "rate_limited": {
+            "message": "Growatt API rate limited, will retry: {error}"
+        },
+        "token_auth_required": {
+            "message": "This action requires token authentication (V1 API)."
+        },
+        "unknown_auth_type": {
+            "message": "Unknown authentication type in config entry"
+        }
+    },
+    "selector": {
+        "batt_mode": {
+            "options": {
+                "battery_first": "Battery first",
+                "grid_first": "Grid first",
+                "load_first": "Load first"
+            }
+        },
+        "region": {
+            "options": {
+                "australia_new_zealand": "Australia and New Zealand",
+                "china": "China",
+                "era_server": "Era server (Atess Power)",
+                "north_america": "North America",
+                "other_regions": "Other regions",
+                "smten_server": "SMTEN server"
+            }
+        }
+    },
+    "services": {
+        "read_ac_charge_times": {
+            "description": "Reads AC charge time periods from an SPH device.",
+            "fields": {
+                "device_id": {
+                    "description": "The Growatt device to perform the action on.",
+                    "name": "Device"
+                }
+            },
+            "name": "Read AC charge times"
+        },
+        "read_ac_discharge_times": {
+            "description": "Reads AC discharge time periods from an SPH device.",
+            "fields": {
+                "device_id": {
+                    "description": "The Growatt device to perform the action on.",
+                    "name": "Device"
+                }
+            },
+            "name": "Read AC discharge times"
+        },
+        "read_time_segments": {
+            "description": "Reads all time segments from a supported inverter.",
+            "fields": {
+                "device_id": {
+                    "description": "The Growatt device to perform the action on.",
+                    "name": "Device"
+                }
+            },
+            "name": "Read time segments"
+        },
+        "update_time_segment": {
+            "description": "Updates a time segment for supported inverters.",
+            "fields": {
+                "batt_mode": {
+                    "description": "Battery operation mode for this time segment.",
+                    "name": "Battery mode"
+                },
+                "device_id": {
+                    "description": "The Growatt device to perform the action on.",
+                    "name": "Device"
+                },
+                "enabled": {
+                    "description": "Whether this time segment is active.",
+                    "name": "Enabled"
+                },
+                "end_time": {
+                    "description": "End time for the segment (HH:MM format).",
+                    "name": "End time"
+                },
+                "segment_id": {
+                    "description": "Time segment ID (1-9).",
+                    "name": "Segment ID"
+                },
+                "start_time": {
+                    "description": "Start time for the segment (HH:MM format).",
+                    "name": "Start time"
+                }
+            },
+            "name": "Update time segment"
+        },
+        "write_ac_charge_times": {
+            "description": "Writes AC charge time periods to an SPH device.",
+            "fields": {
+                "charge_power": {
+                    "description": "Charge power limit (%).",
+                    "name": "Charge power"
+                },
+                "charge_stop_soc": {
+                    "description": "Stop charging at this state of charge (%).",
+                    "name": "Charge stop SOC"
+                },
+                "device_id": {
+                    "description": "The Growatt device to perform the action on.",
+                    "name": "Device"
+                },
+                "mains_enabled": {
+                    "description": "Enable AC (mains) charging.",
+                    "name": "Mains charging enabled"
+                },
+                "period_1_enabled": {
+                    "description": "Enable time period 1.",
+                    "name": "Period 1 enabled"
+                },
+                "period_1_end": {
+                    "description": "End time for period 1 (HH:MM or HH:MM:SS).",
+                    "name": "Period 1 end"
+                },
+                "period_1_start": {
+                    "description": "Start time for period 1 (HH:MM or HH:MM:SS).",
+                    "name": "Period 1 start"
+                },
+                "period_2_enabled": {
+                    "description": "Enable time period 2.",
+                    "name": "Period 2 enabled"
+                },
+                "period_2_end": {
+                    "description": "End time for period 2 (HH:MM or HH:MM:SS).",
+                    "name": "Period 2 end"
+                },
+                "period_2_start": {
+                    "description": "Start time for period 2 (HH:MM or HH:MM:SS).",
+                    "name": "Period 2 start"
+                },
+                "period_3_enabled": {
+                    "description": "Enable time period 3.",
+                    "name": "Period 3 enabled"
+                },
+                "period_3_end": {
+                    "description": "End time for period 3 (HH:MM or HH:MM:SS).",
+                    "name": "Period 3 end"
+                },
+                "period_3_start": {
+                    "description": "Start time for period 3 (HH:MM or HH:MM:SS).",
+                    "name": "Period 3 start"
+                }
+            },
+            "name": "Write AC charge times"
+        },
+        "write_ac_discharge_times": {
+            "description": "Writes AC discharge time periods to an SPH device.",
+            "fields": {
+                "device_id": {
+                    "description": "The Growatt device to perform the action on.",
+                    "name": "Device"
+                },
+                "discharge_power": {
+                    "description": "Discharge power limit (%).",
+                    "name": "Discharge power"
+                },
+                "discharge_stop_soc": {
+                    "description": "Stop discharging at this state of charge (%).",
+                    "name": "Discharge stop SOC"
+                },
+                "period_1_enabled": {
+                    "description": "Enable time period 1.",
+                    "name": "Period 1 enabled"
+                },
+                "period_1_end": {
+                    "description": "End time for period 1 (HH:MM or HH:MM:SS).",
+                    "name": "Period 1 end"
+                },
+                "period_1_start": {
+                    "description": "Start time for period 1 (HH:MM or HH:MM:SS).",
+                    "name": "Period 1 start"
+                },
+                "period_2_enabled": {
+                    "description": "Enable time period 2.",
+                    "name": "Period 2 enabled"
+                },
+                "period_2_end": {
+                    "description": "End time for period 2 (HH:MM or HH:MM:SS).",
+                    "name": "Period 2 end"
+                },
+                "period_2_start": {
+                    "description": "Start time for period 2 (HH:MM or HH:MM:SS).",
+                    "name": "Period 2 start"
+                },
+                "period_3_enabled": {
+                    "description": "Enable time period 3.",
+                    "name": "Period 3 enabled"
+                },
+                "period_3_end": {
+                    "description": "End time for period 3 (HH:MM or HH:MM:SS).",
+                    "name": "Period 3 end"
+                },
+                "period_3_start": {
+                    "description": "Start time for period 3 (HH:MM or HH:MM:SS).",
+                    "name": "Period 3 start"
+                }
+            },
+            "name": "Write AC discharge times"
         }
     },
     "title": "Growatt Server"

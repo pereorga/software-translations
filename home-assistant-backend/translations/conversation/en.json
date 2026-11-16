@@ -4,9 +4,17 @@
             "done": "Done"
         }
     },
+    "exceptions": {
+        "no_response": {
+            "message": "Unable to get response."
+        },
+        "process_failed": {
+            "message": "Error processing {text}: {error}"
+        }
+    },
     "services": {
         "process": {
-            "description": "Launches a conversation from a transcribed text.",
+            "description": "Sends text to a conversation agent for processing.",
             "fields": {
                 "agent_id": {
                     "description": "Conversation agent to process your request. The conversation agent is the brains of your assistant. It processes the incoming text commands.",
@@ -25,10 +33,10 @@
                     "name": "Text"
                 }
             },
-            "name": "Process"
+            "name": "Process conversation"
         },
         "reload": {
-            "description": "Reloads the intent configuration.",
+            "description": "Reloads the intent configuration of conversation agents.",
             "fields": {
                 "agent_id": {
                     "description": "Conversation agent to reload.",
@@ -39,7 +47,7 @@
                     "name": "Language"
                 }
             },
-            "name": "Reload"
+            "name": "Reload conversation agents"
         }
     },
     "title": "Conversation"

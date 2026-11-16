@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "single_instance_allowed": "Ja configurat. Nom\u00e9s \u00e9s possible una sola configuraci\u00f3."
-        },
         "step": {
             "user": {
                 "description": "Rep trucades de veu sobre IP per interactuar amb Assist."
@@ -10,14 +7,13 @@
         }
     },
     "entity": {
-        "binary_sensor": {
-            "call_in_progress": {
-                "name": "Trucada en curs"
-            }
-        },
         "select": {
             "pipeline": {
-                "name": "Xarxa d'Assist",
+                "state": {
+                    "preferred": "Preferit"
+                }
+            },
+            "pipeline_n": {
                 "state": {
                     "preferred": "Preferit"
                 }

@@ -5,21 +5,27 @@
         },
         "error": {
             "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_token": "API token"
+                },
+                "description": "The authentication credentials for {host}:{port} need to be updated."
+            },
             "user": {
                 "data": {
+                    "api_token": "API token",
                     "host": "Host",
-                    "password": "Password",
                     "port": "Port",
                     "ssl": "Uses an SSL certificate",
-                    "username": "Username",
                     "verify_ssl": "Verify SSL certificate"
                 },
                 "data_description": {
-                    "host": "The hostname or IP address of your Traccar Server",
-                    "username": "The username (email) you use to login to your Traccar Server"
+                    "api_token": "The API token generated from your account on your Traccar Server",
+                    "host": "The hostname or IP address of your Traccar Server"
                 }
             }
         }
@@ -27,7 +33,6 @@
     "entity": {
         "binary_sensor": {
             "motion": {
-                "name": "Motion",
                 "state": {
                     "off": "Stopped",
                     "on": "Moving"
@@ -48,9 +53,20 @@
             "altitude": {
                 "name": "Altitude"
             },
+            "battery": {
+                "name": "Battery voltage"
+            },
             "geofence": {
                 "name": "Geofence"
+            },
+            "power": {
+                "name": "Supply voltage"
             }
+        }
+    },
+    "exceptions": {
+        "migrate_to_api_token": {
+            "message": "To continue using Traccar Server, you need to migrate to API token based authentication."
         }
     },
     "options": {

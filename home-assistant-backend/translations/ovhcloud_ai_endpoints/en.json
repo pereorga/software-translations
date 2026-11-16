@@ -1,0 +1,79 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Service is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "An OVHcloud AI Endpoints API key"
+                },
+                "description": "The OVHcloud AI Endpoints API key is no longer valid. Please enter a new one."
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "An OVHcloud AI Endpoints API key"
+                },
+                "description": "Update the API key used to authenticate with OVHcloud AI Endpoints."
+            },
+            "user": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "An OVHcloud AI Endpoints API key"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Failed to connect",
+                "entry_not_loaded": "The main integration entry is not loaded. Please ensure the integration is loaded before configuring.",
+                "unknown": "Unexpected error"
+            },
+            "entry_type": "Conversation agent",
+            "initiate_flow": {
+                "user": "Add conversation agent"
+            },
+            "step": {
+                "init": {
+                    "data": {
+                        "llm_hass_api": "AI tools",
+                        "model": "Model",
+                        "prompt": "Instructions"
+                    },
+                    "data_description": {
+                        "llm_hass_api": "**Device control** only accesses the entities you expose to voice assistants. **Home Assistant** accesses everything and only works for administrators, not voice assistant devices.",
+                        "model": "The model to use for the conversation agent",
+                        "prompt": "Instruct how the LLM should respond. This can be a template."
+                    },
+                    "description": "Configure the conversation agent"
+                },
+                "reconfigure": {
+                    "data": {
+                        "llm_hass_api": "AI tools",
+                        "prompt": "Instructions"
+                    },
+                    "data_description": {
+                        "llm_hass_api": "**Device control** only accesses the entities you expose to voice assistants. **Home Assistant** accesses everything and only works for administrators, not voice assistant devices.",
+                        "prompt": "Instruct how the LLM should respond. This can be a template."
+                    },
+                    "description": "Update the instructions and the tools for this conversation agent. Create a new conversation agent to use a different model."
+                }
+            }
+        }
+    }
+}

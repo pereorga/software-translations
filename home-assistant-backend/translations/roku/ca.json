@@ -2,8 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament",
             "unknown": "Error inesperat"
         },
         "error": {
@@ -33,9 +31,6 @@
             "supports_airplay": {
                 "name": "Admet AirPlay"
             },
-            "supports_ethernet": {
-                "name": "Admet Ethernet"
-            },
             "supports_find_remote": {
                 "name": "Admet la cerca de comandament remot"
             }
@@ -59,6 +54,11 @@
     },
     "services": {
         "search": {
+            "fields": {
+                "keyword": {
+                    "name": "Paraula clau"
+                }
+            },
             "name": "Cerca"
         }
     }

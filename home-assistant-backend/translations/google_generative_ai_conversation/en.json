@@ -1,7 +1,7 @@
 {
     "config": {
         "abort": {
-            "reauth_successful": "Re-authentication was successful"
+            "already_configured": "Service is already configured"
         },
         "error": {
             "cannot_connect": "Failed to connect",
@@ -21,45 +21,166 @@
             }
         }
     },
-    "options": {
-        "step": {
-            "init": {
-                "data": {
-                    "chat_model": "Model",
-                    "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
-                    "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
-                    "hate_block_threshold": "Content that is rude, disrespectful, or profane",
-                    "llm_hass_api": "Control Home Assistant",
-                    "max_tokens": "Maximum tokens to return in response",
-                    "prompt": "Instructions",
-                    "recommended": "Recommended model settings",
-                    "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
-                    "temperature": "Temperature",
-                    "top_k": "Top K",
-                    "top_p": "Top P"
-                },
-                "data_description": {
-                    "prompt": "Instruct how the LLM should respond. This can be a template."
+    "config_subentries": {
+        "ai_task_data": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled."
+            },
+            "entry_type": "AI task",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure AI task",
+                "user": "Add AI task"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "thinking_budget": "Thinking budget",
+                        "thinking_level": "Thinking level",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    },
+                    "data_description": {
+                        "temperature": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept.",
+                        "thinking_budget": "Token budget for model reasoning (Gemini 2.5 only). Use -1 for automatic or 0 to disable (not available for Gemini 2.5 Pro).",
+                        "thinking_level": "Thinking level for Gemini 3 and later text models, including the latest aliases. Unsupported levels use the model default; the saved choice is kept. Gemini 2.5 uses the thinking budget instead. \"Minimal\" does not guarantee that thinking is off.",
+                        "top_k": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept.",
+                        "top_p": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept."
+                    }
+                }
+            }
+        },
+        "conversation": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled."
+            },
+            "entry_type": "Conversation agent",
+            "error": {
+                "invalid_google_search_option": "Google Search can only be enabled if nothing is selected in the \"AI tools\" setting."
+            },
+            "initiate_flow": {
+                "reconfigure": "Reconfigure conversation agent",
+                "user": "Add conversation agent"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "enable_google_search_tool": "Enable Google Search tool",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "llm_hass_api": "AI tools",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "prompt": "Instructions",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "thinking_budget": "Thinking budget",
+                        "thinking_level": "Thinking level",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    },
+                    "data_description": {
+                        "enable_google_search_tool": "Only works if nothing is selected in the \"AI tools\" setting. See the documentation for a workaround to use it with \"Device control\".",
+                        "llm_hass_api": "**Device control** only accesses the entities you expose to voice assistants. **Home Assistant** accesses everything and only works for administrators, not voice assistant devices.",
+                        "prompt": "Instruct how the LLM should respond. This can be a template.",
+                        "temperature": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept.",
+                        "thinking_budget": "Token budget for model reasoning (Gemini 2.5 only). Use -1 for automatic or 0 to disable (not available for Gemini 2.5 Pro).",
+                        "thinking_level": "Thinking level for Gemini 3 and later text models, including the latest aliases. Unsupported levels use the model default; the saved choice is kept. Gemini 2.5 uses the thinking budget instead. \"Minimal\" does not guarantee that thinking is off.",
+                        "top_k": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept.",
+                        "top_p": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept."
+                    }
+                }
+            }
+        },
+        "stt": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled."
+            },
+            "entry_type": "Speech-to-text",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure speech-to-text service",
+                "user": "Add speech-to-text service"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "prompt": "Instructions",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "thinking_budget": "Thinking budget",
+                        "thinking_level": "Thinking level",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    },
+                    "data_description": {
+                        "prompt": "Instruct how the LLM should transcribe the audio.",
+                        "temperature": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept.",
+                        "thinking_budget": "Token budget for model reasoning (Gemini 2.5 only). Use -1 for automatic or 0 to disable (not available for Gemini 2.5 Pro).",
+                        "thinking_level": "Thinking level for Gemini 3 and later text models, including the latest aliases. Unsupported levels use the model default; the saved choice is kept. Gemini 2.5 uses the thinking budget instead. \"Minimal\" does not guarantee that thinking is off.",
+                        "top_k": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept.",
+                        "top_p": "Only sent for older Gemini models and non-Gemini models. Newer Gemini models and the latest text aliases use model defaults; your saved setting is kept."
+                    }
+                }
+            }
+        },
+        "tts": {
+            "abort": {
+                "entry_not_loaded": "Cannot add things while the configuration is disabled."
+            },
+            "entry_type": "Text-to-speech",
+            "initiate_flow": {
+                "reconfigure": "Reconfigure text-to-speech service",
+                "user": "Add text-to-speech service"
+            },
+            "step": {
+                "set_options": {
+                    "data": {
+                        "chat_model": "Model",
+                        "dangerous_block_threshold": "Promotes, facilitates, or encourages harmful acts",
+                        "harassment_block_threshold": "Negative or harmful comments targeting identity and/or protected attributes",
+                        "hate_block_threshold": "Content that is rude, disrespectful, or profane",
+                        "max_tokens": "Maximum tokens to return in response",
+                        "name": "Name",
+                        "recommended": "Recommended model settings",
+                        "sexual_block_threshold": "Contains references to sexual acts or other lewd content",
+                        "temperature": "Temperature",
+                        "top_k": "Top K",
+                        "top_p": "Top P"
+                    },
+                    "data_description": {
+                        "temperature": "Only sent for older Gemini text-to-speech models. Newer models use the model default; your saved setting is kept."
+                    }
                 }
             }
         }
     },
-    "services": {
-        "generate_content": {
-            "description": "Generate content from a prompt consisting of text and optionally images",
-            "fields": {
-                "image_filename": {
-                    "description": "Images",
-                    "example": "/config/www/image.jpg",
-                    "name": "Image filename"
-                },
-                "prompt": {
-                    "description": "The prompt",
-                    "example": "Describe what you see in these images",
-                    "name": "Prompt"
-                }
-            },
-            "name": "Generate content"
+    "selector": {
+        "thinking_level": {
+            "options": {
+                "auto": "Auto",
+                "high": "High",
+                "low": "Low",
+                "medium": "Medium",
+                "minimal": "Minimal"
+            }
         }
     }
 }

@@ -2,24 +2,29 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "reauth_successful": "Re-authentication was successful",
-            "reconfigure_successful": "Re-configuration was successful",
             "unique_id_mismatch": "The MAC address of the device does not match the previous MAC address"
         },
         "error": {
+            "account_device": "The Reolink device is set up as an 'account device', which blocks local login. Reset the device and set it up again as a 'local device' following the Reolink instructions: {reolink_account_device_link}",
             "api_error": "API error occurred",
             "cannot_connect": "Failed to connect, check the IP address of the camera",
             "invalid_auth": "Invalid authentication",
-            "not_admin": "User needs to be admin, user \"{username}\" has authorisation level \"{userlevel}\"",
-            "password_incompatible": "Password contains incompatible special character, only these characters are allowed: a-z, A-Z, 0-9 or {special_chars}",
+            "no_mac_address": "Could not get the MAC address of the device",
+            "not_admin": "User needs to be admin, user \"{username}\" has authorization level \"{userlevel}\"",
+            "password_incompatible": "Password contains incompatible special character or is too long, maximum 31 characters and only these characters are allowed: a-z, A-Z, 0-9 or {special_chars}. The streaming protocols necessitate these additional password restrictions.",
             "unknown": "Unexpected error",
-            "update_needed": "Failed to login because of outdated firmware, please update the firmware to version {needed_firmware} using the Reolink Download Center: {download_center_url}, currently version {current_firmware} is installed",
+            "update_needed": "Failed to log in because of outdated firmware, please update the firmware to version {needed_firmware} using the Reolink Download Center: {download_center_url}, currently version {current_firmware} is installed",
             "webhook_exception": "Home Assistant URL is not available, go to Settings > System > Network > Home Assistant URL and correct the URLs, see {more_info}"
         },
         "flow_title": "{hostname} ({ip_address})",
         "step": {
+            "privacy": {
+                "description": "Privacy mode is enabled on Reolink device {host}. By pressing SUBMIT, the privacy mode will be disabled to retrieve the necessary information from the Reolink device. You can abort the setup by pressing X and repeat the setup at a time in which privacy mode can be disabled. After this configuration, you are free to enable the privacy mode again using the privacy mode switch entity. During normal startup the privacy mode will not be disabled. Note however that all entities will be marked unavailable as long as the privacy mode is active.",
+                "title": "Permission to disable Reolink privacy mode"
+            },
             "user": {
                 "data": {
+                    "baichuan_port": "Basic service port",
                     "host": "Host",
                     "password": "Password",
                     "port": "Port",
@@ -27,14 +32,20 @@
                     "username": "Username"
                 },
                 "data_description": {
+                    "baichuan_port": "The 'Basic Service Port' to connect to the Reolink device over TCP. Normally '9000' unless manually changed in the Reolink desktop client.",
                     "host": "The hostname or IP address of your Reolink device. For example: '192.168.1.25'.",
-                    "password": "Password to login to the Reolink device itself. Not the Reolink cloud account.",
-                    "port": "The port to connect to the Reolink device. For HTTP normally: '80', for HTTPS normally '443'.",
-                    "use_https": "Use a HTTPS (SSL) connection to the Reolink device.",
-                    "username": "Username to login to the Reolink device itself. Not the Reolink cloud account."
+                    "password": "Password to log in to the Reolink device itself. Not the Reolink cloud account.",
+                    "port": "The HTTP(s) port to connect to the Reolink device API. For HTTP normally: '80', for HTTPS normally '443'.",
+                    "use_https": "Use an HTTPS (SSL) connection to the Reolink device.",
+                    "username": "Username to log in to the Reolink device itself. Not the Reolink cloud account."
                 },
                 "description": "See the [troubleshooting steps]({troubleshooting_link}) if you encounter problems. {error}"
             }
+        }
+    },
+    "device": {
+        "lens": {
+            "name": "Lens {lens}"
         }
     },
     "entity": {
@@ -46,15 +57,29 @@
                     "on": "Detected"
                 }
             },
-            "animal_lens_0": {
-                "name": "Animal lens 0",
+            "crossline_dog_cat": {
+                "name": "Crossline {zone_name} animal",
                 "state": {
                     "off": "Clear",
                     "on": "Detected"
                 }
             },
-            "animal_lens_1": {
-                "name": "Animal lens 1",
+            "crossline_person": {
+                "name": "Crossline {zone_name} person",
+                "state": {
+                    "off": "Clear",
+                    "on": "Detected"
+                }
+            },
+            "crossline_vehicle": {
+                "name": "Crossline {zone_name} vehicle",
+                "state": {
+                    "off": "Clear",
+                    "on": "Detected"
+                }
+            },
+            "cry": {
+                "name": "Baby crying",
                 "state": {
                     "off": "Clear",
                     "on": "Detected"
@@ -67,29 +92,64 @@
                     "on": "Detected"
                 }
             },
-            "face_lens_0": {
-                "name": "Face lens 0",
+            "forgotten_item": {
+                "name": "Item forgotten {zone_name}",
                 "state": {
                     "off": "Clear",
                     "on": "Detected"
                 }
             },
-            "face_lens_1": {
-                "name": "Face lens 1",
+            "intrusion_dog_cat": {
+                "name": "Intrusion {zone_name} animal",
                 "state": {
                     "off": "Clear",
                     "on": "Detected"
                 }
             },
-            "motion_lens_0": {
-                "name": "Motion lens 0",
+            "intrusion_person": {
+                "name": "Intrusion {zone_name} person",
                 "state": {
                     "off": "Clear",
                     "on": "Detected"
                 }
             },
-            "motion_lens_1": {
-                "name": "Motion lens 1",
+            "intrusion_vehicle": {
+                "name": "Intrusion {zone_name} vehicle",
+                "state": {
+                    "off": "Clear",
+                    "on": "Detected"
+                }
+            },
+            "io_input": {
+                "name": "IO input {index}",
+                "state": {
+                    "off": "Disconnected",
+                    "on": "Connected"
+                }
+            },
+            "linger_dog_cat": {
+                "name": "Linger {zone_name} animal",
+                "state": {
+                    "off": "Clear",
+                    "on": "Detected"
+                }
+            },
+            "linger_person": {
+                "name": "Linger {zone_name} person",
+                "state": {
+                    "off": "Clear",
+                    "on": "Detected"
+                }
+            },
+            "linger_vehicle": {
+                "name": "Linger {zone_name} vehicle",
+                "state": {
+                    "off": "Clear",
+                    "on": "Detected"
+                }
+            },
+            "non-motor_vehicle": {
+                "name": "Bicycle",
                 "state": {
                     "off": "Clear",
                     "on": "Detected"
@@ -102,36 +162,8 @@
                     "on": "Detected"
                 }
             },
-            "package_lens_0": {
-                "name": "Package lens 0",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
-            "package_lens_1": {
-                "name": "Package lens 1",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
             "person": {
                 "name": "Person",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
-            "person_lens_0": {
-                "name": "Person lens 0",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
-            "person_lens_1": {
-                "name": "Person lens 1",
                 "state": {
                     "off": "Clear",
                     "on": "Detected"
@@ -144,25 +176,18 @@
                     "on": "Detected"
                 }
             },
-            "pet_lens_0": {
-                "name": "Pet lens 0",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
-            "pet_lens_1": {
-                "name": "Pet lens 1",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
             "sleep": {
                 "name": "Sleep status",
                 "state": {
                     "off": "Awake",
                     "on": "Sleeping"
+                }
+            },
+            "taken_item": {
+                "name": "Item taken {zone_name}",
+                "state": {
+                    "off": "Clear",
+                    "on": "Detected"
                 }
             },
             "vehicle": {
@@ -172,28 +197,8 @@
                     "on": "Detected"
                 }
             },
-            "vehicle_lens_0": {
-                "name": "Vehicle lens 0",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
-            "vehicle_lens_1": {
-                "name": "Vehicle lens 1",
-                "state": {
-                    "off": "Clear",
-                    "on": "Detected"
-                }
-            },
             "visitor": {
                 "name": "Visitor"
-            },
-            "visitor_lens_0": {
-                "name": "Visitor lens 0"
-            },
-            "visitor_lens_1": {
-                "name": "Visitor lens 1"
             }
         },
         "button": {
@@ -202,6 +207,12 @@
             },
             "guard_set": {
                 "name": "Guard set current position"
+            },
+            "pre_siren": {
+                "name": "Pre-siren"
+            },
+            "ptz_auto": {
+                "name": "PTZ continuous rotation"
             },
             "ptz_calibrate": {
                 "name": "PTZ calibrate"
@@ -212,8 +223,20 @@
             "ptz_left": {
                 "name": "PTZ left"
             },
+            "ptz_left_down": {
+                "name": "PTZ left down"
+            },
+            "ptz_left_up": {
+                "name": "PTZ left up"
+            },
             "ptz_right": {
                 "name": "PTZ right"
+            },
+            "ptz_right_down": {
+                "name": "PTZ right down"
+            },
+            "ptz_right_up": {
+                "name": "PTZ right up"
             },
             "ptz_stop": {
                 "name": "PTZ stop"
@@ -226,18 +249,12 @@
             },
             "ptz_zoom_out": {
                 "name": "PTZ zoom out"
+            },
+            "sync_time": {
+                "name": "Synchronize time"
             }
         },
         "camera": {
-            "autotrack_snapshots_main": {
-                "name": "Autotrack snapshots clear"
-            },
-            "autotrack_snapshots_sub": {
-                "name": "Autotrack snapshots fluent"
-            },
-            "autotrack_sub": {
-                "name": "Autotrack fluent"
-            },
             "ext": {
                 "name": "Balanced"
             },
@@ -282,6 +299,18 @@
             },
             "sub_lens_1": {
                 "name": "Fluent lens 1"
+            },
+            "telephoto_main": {
+                "name": "Telephoto clear"
+            },
+            "telephoto_snapshots_main": {
+                "name": "Telephoto snapshots clear"
+            },
+            "telephoto_snapshots_sub": {
+                "name": "Telephoto snapshots fluent"
+            },
+            "telephoto_sub": {
+                "name": "Telephoto fluent"
             }
         },
         "light": {
@@ -304,6 +333,12 @@
             },
             "ai_face_sensitivity": {
                 "name": "AI face sensitivity"
+            },
+            "ai_non_motor_vehicle_delay": {
+                "name": "AI bicycle delay"
+            },
+            "ai_non_motor_vehicle_sensitivity": {
+                "name": "AI bicycle sensitivity"
             },
             "ai_package_delay": {
                 "name": "AI package delay"
@@ -332,6 +367,9 @@
             "alarm_volume": {
                 "name": "Alarm volume"
             },
+            "audio_noise_reduction": {
+                "name": "Audio noise reduction"
+            },
             "auto_quick_reply_time": {
                 "name": "Auto quick reply time"
             },
@@ -347,14 +385,35 @@
             "auto_track_stop_time": {
                 "name": "Auto track stop time"
             },
+            "crossline_sensitivity": {
+                "name": "AI crossline {zone_name} sensitivity"
+            },
+            "cry_sensitivity": {
+                "name": "Baby cry sensitivity"
+            },
             "day_night_switch_threshold": {
                 "name": "Day night switch threshold"
             },
             "floodlight_brightness": {
                 "name": "Floodlight turn on brightness"
             },
+            "floodlight_event_brightness": {
+                "name": "Floodlight event brightness"
+            },
+            "floodlight_event_flash_time": {
+                "name": "Floodlight event flash time"
+            },
+            "floodlight_event_on_time": {
+                "name": "Floodlight event on time"
+            },
             "focus": {
                 "name": "Focus"
+            },
+            "forgotten_item_delay": {
+                "name": "AI item forgotten {zone_name} delay"
+            },
+            "forgotten_item_sensitivity": {
+                "name": "AI item forgotten {zone_name} sensitivity"
             },
             "guard_return_time": {
                 "name": "Guard return time"
@@ -374,23 +433,71 @@
             "image_sharpness": {
                 "name": "Image sharpness"
             },
+            "intrusion_delay": {
+                "name": "AI intrusion {zone_name} delay"
+            },
+            "intrusion_sensitivity": {
+                "name": "AI intrusion {zone_name} sensitivity"
+            },
+            "ir_brightness": {
+                "name": "Infrared light brightness"
+            },
+            "linger_delay": {
+                "name": "AI linger {zone_name} delay"
+            },
+            "linger_sensitivity": {
+                "name": "AI linger {zone_name} sensitivity"
+            },
             "message_volume": {
                 "name": "Message volume"
             },
             "motion_sensitivity": {
                 "name": "Motion sensitivity"
             },
+            "pir_interval": {
+                "name": "PIR interval"
+            },
             "pir_sensitivity": {
                 "name": "PIR sensitivity"
             },
+            "pre_record_battery_stop": {
+                "name": "Pre-recording stop battery level"
+            },
+            "pre_record_time": {
+                "name": "Pre-recording time"
+            },
+            "silent_time": {
+                "name": "Silent time"
+            },
+            "taken_item_delay": {
+                "name": "AI item taken {zone_name} delay"
+            },
+            "taken_item_sensitivity": {
+                "name": "AI item taken {zone_name} sensitivity"
+            },
             "volume": {
                 "name": "Volume"
+            },
+            "volume_doorbell": {
+                "name": "Doorbell volume"
+            },
+            "volume_speak": {
+                "name": "Speak volume"
             },
             "zoom": {
                 "name": "Zoom"
             }
         },
         "select": {
+            "anti_flicker": {
+                "name": "Anti-flicker",
+                "state": {
+                    "f50": "50 Hz",
+                    "f60": "60 Hz",
+                    "off": "Off",
+                    "other": "Other"
+                }
+            },
             "auto_quick_reply_message": {
                 "name": "Auto quick reply message",
                 "state": {
@@ -431,15 +538,34 @@
                     "stayoff": "Stay off"
                 }
             },
+            "exposure": {
+                "name": "Image exposure mode",
+                "state": {
+                    "antismearing": "Anti-smearing",
+                    "auto": "Auto",
+                    "lownoise": "Low noise",
+                    "manual": "Manual"
+                }
+            },
+            "floodlight_event_mode": {
+                "name": "Floodlight event mode",
+                "state": {
+                    "flash": "Flash",
+                    "off": "Off",
+                    "on": "On"
+                }
+            },
             "floodlight_mode": {
                 "name": "Floodlight mode",
                 "state": {
                     "adaptive": "Adaptive",
                     "auto": "Auto",
+                    "auto_pir": "Auto PIR",
                     "autoadaptive": "Auto adaptive",
                     "off": "Off",
                     "onatnight": "On at night",
-                    "schedule": "Schedule"
+                    "schedule": "Schedule",
+                    "scheduleplus": "Schedule plus"
                 }
             },
             "hdr": {
@@ -485,6 +611,9 @@
             "main_bit_rate": {
                 "name": "Clear bit rate"
             },
+            "main_encoding": {
+                "name": "Clear encoding"
+            },
             "main_frame_rate": {
                 "name": "Clear frame rate"
             },
@@ -520,8 +649,27 @@
                     "waybackhome": "Way back home"
                 }
             },
+            "packing_time": {
+                "name": "Recording packing time"
+            },
             "people_tone": {
                 "name": "Person ringtone",
+                "state": {
+                    "attraction": "Attraction",
+                    "citybird": "City bird",
+                    "goodday": "Good day",
+                    "hophop": "Hop hop",
+                    "loop": "Loop",
+                    "moonlight": "Moonlight",
+                    "off": "Off",
+                    "operetta": "Operetta",
+                    "originaltune": "Original tune",
+                    "pianokey": "Piano key",
+                    "waybackhome": "Way back home"
+                }
+            },
+            "pet_tone": {
+                "name": "Pet ringtone",
                 "state": {
                     "attraction": "Attraction",
                     "citybird": "City bird",
@@ -539,11 +687,29 @@
             "play_quick_reply_message": {
                 "name": "Play quick reply message"
             },
+            "post_rec_time": {
+                "name": "Post-recording time"
+            },
+            "pre_record_fps": {
+                "name": "Pre-recording frame rate"
+            },
             "ptz_preset": {
                 "name": "PTZ preset"
             },
+            "scene_mode": {
+                "name": "Scene mode",
+                "state": {
+                    "away": "Away",
+                    "disarm": "Disarmed",
+                    "home": "Home",
+                    "off": "Off"
+                }
+            },
             "sub_bit_rate": {
                 "name": "Fluent bit rate"
+            },
+            "sub_encoding": {
+                "name": "Fluent encoding"
             },
             "sub_frame_rate": {
                 "name": "Fluent frame rate"
@@ -579,9 +745,42 @@
                     "pianokey": "Piano key",
                     "waybackhome": "Way back home"
                 }
+            },
+            "work_mode_battery": {
+                "name": "Work mode battery",
+                "state": {
+                    "always_on_custom": "Always on custom",
+                    "continuous_recording": "Always on continuous recording",
+                    "custom": "Custom",
+                    "detection_priority": "Detection priority",
+                    "extended_recording": "AI extended recording",
+                    "optimal_surveillance": "Optimal surveillance",
+                    "power_saving": "Power saving",
+                    "pre_recording": "Always on pre-recording",
+                    "smart": "Smart power"
+                }
+            },
+            "work_mode_powered": {
+                "name": "Work mode powered",
+                "state": {
+                    "alarm_based": "Alarm recording",
+                    "continuous": "Continuous recording",
+                    "custom": "Custom"
+                }
             }
         },
         "sensor": {
+            "animal_type": {
+                "name": "Animal type",
+                "state": {
+                    "bear": "Bear",
+                    "cat": "Cat",
+                    "cow": "Cow",
+                    "dog": "Dog",
+                    "fox": "Fox",
+                    "squirrel": "Squirrel"
+                }
+            },
             "battery_state": {
                 "name": "Battery state",
                 "state": {
@@ -596,8 +795,24 @@
             "cpu_usage": {
                 "name": "CPU usage"
             },
+            "day_night_state": {
+                "name": "Day night state",
+                "state": {
+                    "day": "Color",
+                    "led_day": "Color with floodlight",
+                    "night": "Black & white"
+                }
+            },
             "hdd_storage": {
                 "name": "HDD {hdd_index} storage"
+            },
+            "person_type": {
+                "name": "Person type",
+                "state": {
+                    "child": "Child",
+                    "man": "Man",
+                    "woman": "Woman"
+                }
             },
             "ptz_pan_position": {
                 "name": "PTZ pan position"
@@ -607,6 +822,18 @@
             },
             "sd_storage": {
                 "name": "SD {hdd_index} storage"
+            },
+            "vehicle_type": {
+                "name": "Vehicle type",
+                "state": {
+                    "bus": "Bus",
+                    "motorcycle": "Motorcycle",
+                    "pickup_truck": "Pickup truck",
+                    "sedan": "Sedan",
+                    "suv": "SUV",
+                    "truck": "Truck",
+                    "van": "Van"
+                }
             },
             "wifi_signal": {
                 "name": "Wi-Fi signal"
@@ -636,6 +863,9 @@
             "guard_return": {
                 "name": "Guard return"
             },
+            "hardwired_chime_enabled": {
+                "name": "Hardwired chime enabled"
+            },
             "hdr": {
                 "name": "HDR"
             },
@@ -643,7 +873,7 @@
                 "name": "Hub ringtone on event"
             },
             "ir_lights": {
-                "name": "Infra red lights in night mode"
+                "name": "Infrared lights in night mode"
             },
             "led": {
                 "name": "LED"
@@ -657,6 +887,21 @@
             "pir_reduce_alarm": {
                 "name": "PIR reduce false alarm"
             },
+            "pre_record": {
+                "name": "Pre-recording"
+            },
+            "pre_siren_on_event": {
+                "name": "Pre-siren on event"
+            },
+            "privacy_mask": {
+                "name": "Privacy mask"
+            },
+            "privacy_mask_lens": {
+                "name": "Privacy mask lens {channel}"
+            },
+            "privacy_mode": {
+                "name": "Privacy mode"
+            },
             "ptz_patrol": {
                 "name": "PTZ patrol"
             },
@@ -669,23 +914,52 @@
             "record_audio": {
                 "name": "Record audio"
             },
+            "rule": {
+                "name": "Surveillance rule {name}"
+            },
             "siren_on_event": {
                 "name": "Siren on event"
+            },
+            "tamper_enabled": {
+                "name": "Tamper alarm"
+            }
+        },
+        "time": {
+            "floodlight_schedule_end": {
+                "name": "Floodlight schedule end"
+            },
+            "floodlight_schedule_start": {
+                "name": "Floodlight schedule start"
             }
         }
     },
     "exceptions": {
+        "account_device": {
+            "message": "Reolink device {host} is set up as an 'account device', which blocks local login. Reset the device and set it up again as a 'local device' following the Reolink instructions: {reolink_account_device_link}, also see the troubleshooting steps: {account_device_link}"
+        },
         "api_error": {
-            "message": "The device responded with a error: {err}"
+            "message": "The device responded with an error: {err}"
+        },
+        "authentication_failed": {
+            "message": "Authentication failed for {host}"
+        },
+        "config_entry_not_found": {
+            "message": "Could not find Reolink config entry ID \"{config_entry_id}\""
         },
         "config_entry_not_ready": {
-            "message": "Error while trying to setup {host}: {err}"
+            "message": "Error while trying to set up {host}: {err}"
         },
         "connection_error": {
             "message": "Could not connect to the device: {err}"
         },
+        "firmware_check_failed": {
+            "message": "Error checking Reolink firmware update from {name}, if the camera is blocked from accessing the internet, disable the update entity"
+        },
         "firmware_install_error": {
             "message": "Error trying to update Reolink firmware: {err}"
+        },
+        "firmware_rate_limit": {
+            "message": "Reolink firmware update server reached hourly rate limit: updating can be tried again in 1 hour"
         },
         "invalid_content_type": {
             "message": "Received a different content type than expected: {err}"
@@ -699,14 +973,20 @@
         "login_error": {
             "message": "Error during login attempt: {err}"
         },
+        "no_access_to_path": {
+            "message": "Cannot write `{filename}`, no access to path; `allowlist_external_dirs` may need to be adjusted in `configuration.yaml`"
+        },
         "no_data": {
             "message": "Device returned no data: {err}"
+        },
+        "no_mac_address": {
+            "message": "Could not get the MAC address of the device"
         },
         "not_supported": {
             "message": "Function not supported by this device: {err}"
         },
-        "service_entry_ex": {
-            "message": "Reolink {service_name} error: config entry not found or not loaded"
+        "password_incompatible": {
+            "message": "Reolink password contains an incompatible special character or is too long; please change the password to only contain characters a-z, A-Z, 0-9, or {special_chars} and not be longer than 31 characters"
         },
         "service_not_chime": {
             "message": "Reolink play_chime error: {device_name} is not a Chime"
@@ -717,8 +997,38 @@
         "timeout": {
             "message": "Timeout waiting on a response: {err}"
         },
+        "uid_mismatch": {
+            "message": "UID {uid} of Reolink camera \"{name}\" did not match the stored configuration UID {conf_uid}, please check the connection details"
+        },
+        "unexpected": {
+            "message": "Unexpected Reolink error: {err}"
+        },
         "unexpected_data": {
             "message": "Device returned unexpected data: {err}"
+        },
+        "unknown_media_item": {
+            "message": "Unknown media item \"{identifier}\""
+        },
+        "update_already_running": {
+            "message": "Reolink firmware update already running, wait on completion before starting another"
+        },
+        "update_api_error": {
+            "message": "The device {host} responded with an error while updating its state"
+        },
+        "update_connection_error": {
+            "message": "Could not connect to {host} while updating its state"
+        },
+        "update_failed": {
+            "message": "Error updating the state of {host}"
+        },
+        "update_timeout": {
+            "message": "Timeout while updating the state of {host}"
+        },
+        "user_not_admin": {
+            "message": "User \"{username}\" has authorization level \"{userlevel}\", only admin users can change camera settings"
+        },
+        "webhook_no_url": {
+            "message": "Error registering URL for webhook {event_id}: Home Assistant URL is not available"
         }
     },
     "issues": {
@@ -727,27 +1037,23 @@
             "title": "Reolink port not enabled"
         },
         "firmware_update": {
-            "description": "\"{name}\" with model \"{model}\" and hardware version \"{hw_version}\" is running a old firmware version \"{current_firmware}\", while at least firmware version \"{required_firmware}\" is required for proper operation of the Reolink integration. The firmware can be updated by pressing \"install\" in the more info dialog of the update entity of \"{name}\" from within Home Assistant. Alternatively, the latest firmware can be downloaded from the [Reolink download center]({download_link}).",
+            "description": "\"{name}\" with model \"{model}\" and hardware version \"{hw_version}\" is running an old firmware version \"{current_firmware}\", while at least firmware version \"{required_firmware}\" is required for proper operation of the Reolink integration. The firmware can be updated by pressing \"install\" in the more info dialog of the update entity of \"{name}\" from within Home Assistant. Alternatively, the latest firmware can be downloaded from the [Reolink download center]({download_link}).",
             "title": "Reolink firmware update required"
         },
-        "hdr_switch_deprecated": {
-            "description": "The Reolink HDR switch entity is deprecated and will be removed in HA 2025.2.0. It has been replaced by a HDR select entity offering options `on`, `off` and `auto`. To remove this issue, please adjust automations accordingly and disable the HDR switch entity.",
-            "title": "Reolink HDR switch deprecated"
-        },
         "https_webhook": {
-            "description": "Reolink products can not push motion events to an HTTPS address (SSL), please configure a (local) HTTP address under \"Home Assistant URL\" in the [network settings]({network_link}). The current (local) address is: `{base_url}`, a valid address could, for example, be `http://192.168.1.10:8123` where `192.168.1.10` is the IP of the Home Assistant device",
+            "description": "Reolink products, such as {name}, cannot push motion events to an HTTPS address (SSL), please configure a (local) HTTP address under \"Home Assistant URL\" in the [network settings]({network_link}). The current (local) address is: `{base_url}`, a valid address could, for example, be `{example_url}` where `{example_ip}` is the IP of the Home Assistant device",
             "title": "Reolink webhook URL uses HTTPS (SSL)"
         },
-        "hub_switch_deprecated": {
-            "description": "The redundant 'Record', 'Email on event', 'FTP upload', 'Push notifications', and 'Buzzer on event' switches on the Reolink Home Hub are depricated since the new firmware no longer supports these. Please use the equally named switches under each of the camera devices connected to the Home Hub instead. To remove this issue, please adjust automations accordingly and disable the switch entities mentioned.",
-            "title": "Reolink Home Hub switches deprecated"
+        "password_too_long": {
+            "description": "The password for \"{name}\" is more than 31 characters long, this is no longer compatible with the Reolink API. Please change the password using the Reolink app/client to a password with is shorter than 32 characters. After changing the password, fill in the new password in the Reolink Re-authentication flow to continue using this integration. The latest version of the Reolink app/client also has a password limit of 31 characters.",
+            "title": "Reolink password too long"
         },
         "ssl": {
-            "description": "Global SSL certificate configured in the [configuration.yaml under http]({ssl_link}) while a local HTTP address `{base_url}` is configured under \"Home Assistant URL\" in the [network settings]({network_link}). Therefore, the Reolink device can not reach Home Assistant to push its motion/AI events. Please make sure the local HTTP address is not covered by the SSL certificate, by for instance using [NGINX add-on]({nginx_link}) instead of a globally enforced SSL certificate.",
+            "description": "Global SSL certificate configured in the [configuration.yaml under http]({ssl_link}) while a local HTTP address `{base_url}` is configured under \"Home Assistant URL\" in the [network settings]({network_link}). Therefore, the Reolink device {name} cannot reach Home Assistant to push its motion/AI events. Please make sure the local HTTP address is not covered by the SSL certificate by, for instance, using the [NGINX app for Home Assistant]({nginx_link}) instead of a globally enforced SSL certificate.",
             "title": "Reolink incompatible with global SSL certificate"
         },
         "webhook_url": {
-            "description": "Did not receive initial ONVIF state from {name}. Most likely, the Reolink camera can not reach the current (local) Home Assistant URL `{base_url}`, please configure a (local) HTTP address under \"Home Assistant URL\" in the [network settings]({network_link}) that points to Home Assistant. For example `http://192.168.1.10:8123` where `192.168.1.10` is the IP of the Home Assistant device. Also, make sure the Reolink camera can reach that URL. Using fast motion/AI state polling until the first ONVIF push is received.",
+            "description": "Did not receive initial ONVIF state from {name}. Most likely, the Reolink camera cannot reach the current (local) Home Assistant URL `{base_url}`, please configure a (local) HTTP address under \"Home Assistant URL\" in the [network settings]({network_link}) that points to Home Assistant. For example `{example_url}` where `{example_ip}` is the IP of the Home Assistant device. Also, make sure the Reolink camera can reach that URL. Using fast motion/AI state polling until the first ONVIF push is received.",
             "title": "Reolink webhook URL unreachable"
         }
     },
@@ -758,7 +1064,7 @@
                     "protocol": "Protocol"
                 },
                 "data_description": {
-                    "protocol": "Streaming protocol to use for the camera entities. RTSP supports 4K streams (h265 encoding) while RTMP and FLV do not. FLV is the least demanding on the camera."
+                    "protocol": "Streaming protocol to use for the camera entities. RTSP supports 4K streams (H.265 encoding) and two-way audio while RTMP and FLV do not. FLV is the least demanding on the camera."
                 }
             }
         }
@@ -803,6 +1109,20 @@
                 }
             },
             "name": "PTZ move"
+        },
+        "snapshot_past": {
+            "description": "Takes a snapshot from a past moment in time out of the recordings of a camera and stores it in a file.",
+            "fields": {
+                "filename": {
+                    "description": "Full path to filename.",
+                    "name": "Filename"
+                },
+                "timestamp": {
+                    "description": "Moment in time to take the snapshot from, in the local time of Home Assistant.",
+                    "name": "Timestamp"
+                }
+            },
+            "name": "Take camera snapshot from past"
         }
     }
 }

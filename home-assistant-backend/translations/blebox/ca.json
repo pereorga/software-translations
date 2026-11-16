@@ -2,15 +2,32 @@
     "config": {
         "abort": {
             "address_already_configured": "Ja hi ha un dispositiu BleBox configurat a {address}.",
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unsupported_device_version": "El dispositiu BleBox t\u00e9 un firmware obsolet. Primer actualitza'l."
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
             "unknown": "Error inesperat",
             "unsupported_version": "El dispositiu BleBox t\u00e9 un firmware obsolet. Primer actualitza'l."
         },
         "flow_title": "{name} ({host})",
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Adre\u00e7a IP",
+                    "password": "Contrasenya",
+                    "port": "Port",
+                    "username": "Nom d'usuari"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Adre\u00e7a IP",
@@ -20,6 +37,16 @@
                 },
                 "description": "Configura la integraci\u00f3 d'un dispositiu BleBox amb Home Assistant.",
                 "title": "Configuraci\u00f3 del dispositiu BleBox"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "open_status": {
+                "state": {
+                    "closed": "Tancat/ada",
+                    "open": "Obert/a"
+                }
             }
         }
     }

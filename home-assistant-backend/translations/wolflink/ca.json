@@ -1,7 +1,7 @@
 {
     "config": {
         "abort": {
-            "already_configured": "El dispositiu ja est\u00e0 configurat"
+            "already_configured": "El compte ja est\u00e0 configurat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
@@ -9,12 +9,6 @@
             "unknown": "Error inesperat"
         },
         "step": {
-            "device": {
-                "data": {
-                    "device_name": "Dispositiu"
-                },
-                "title": "Selecci\u00f3 de dispositiu WOLF"
-            },
             "user": {
                 "data": {
                     "password": "Contrasenya",
@@ -28,16 +22,15 @@
         "sensor": {
             "state": {
                 "state": {
-                    "1_x_warmwasser": "1 x DHW",
+                    "1_x_warmwasser": "1 x ACS",
                     "abgasklappe": "Amortidor de gasos",
                     "absenkbetrieb": "Mode de retroc\u00e9s",
                     "absenkstop": "Retroc\u00e9s aturat",
                     "aktiviert": "Activat",
-                    "antilegionellenfunktion": "Funci\u00f3 anti-legionel\u00b7la",
                     "at_abschaltung": "Aturada OT",
                     "at_frostschutz": "Protecci\u00f3 contra gelades OT",
-                    "aus": "Desactivada",
-                    "auto": "Autom\u00e0tic",
+                    "aus": "OFF",
+                    "auto": "Auto",
                     "auto_off_cool": "AutoOffCool",
                     "auto_on_cool": "AutoOnCool",
                     "automatik_aus": "Apagada autom\u00e0tica",
@@ -45,15 +38,15 @@
                     "bereit_keine_ladung": "Llest, no carregant-se",
                     "betrieb_ohne_brenner": "Funcionant sense cremador",
                     "cooling": "Refredant",
-                    "deaktiviert": "Inactiu",
+                    "deaktiviert": "Desactivada",
                     "dhw_prior": "DHWPrior",
                     "eco": "Eco",
-                    "ein": "Activada",
+                    "ein": "ON",
                     "estrichtrocknung": "Assecant superf\u00edcie",
                     "externe_deaktivierung": "Desactivaci\u00f3 externa",
                     "fernschalter_ein": "Control remot activat",
                     "frost_heizkreis": "Congelaci\u00f3 del circuit escalfador",
-                    "frost_warmwasser": "Congelaci\u00f3 DHW",
+                    "frost_warmwasser": "Congelaci\u00f3 de l'ACS",
                     "frostschutz": "Protecci\u00f3 contra gelades",
                     "gasdruck": "Pressi\u00f3 del gas",
                     "glt_betrieb": "Mode BMS",
@@ -65,7 +58,7 @@
                     "kalibration": "Calibraci\u00f3",
                     "kalibration_heizbetrieb": "Calibraci\u00f3 de mode calefacci\u00f3",
                     "kalibration_kombibetrieb": "Calibraci\u00f3 de mode combi",
-                    "kalibration_warmwasserbetrieb": "Calibraci\u00f3 DHW",
+                    "kalibration_warmwasserbetrieb": "Calibratge de l'ACS",
                     "kaskadenbetrieb": "Funcionament en cascada",
                     "kombibetrieb": "Mode combi",
                     "kombigerat": "Caldera combi",
@@ -103,11 +96,11 @@
                     "urlaubsmodus": "Mode vacances",
                     "ventilprufung": "Test de v\u00e0lvula",
                     "vorspulen": "Esbandint entrada",
-                    "warmwasser": "DHW",
-                    "warmwasser_schnellstart": "Inici r\u00e0pid del DHW",
-                    "warmwasserbetrieb": "Mode del DHW",
-                    "warmwassernachlauf": "DHW en marxa",
-                    "warmwasservorrang": "Prioritat del DHW",
+                    "warmwasser": "ACS",
+                    "warmwasser_schnellstart": "Inici r\u00e0pid de l'ACS",
+                    "warmwasserbetrieb": "Mode de l'ACS",
+                    "warmwassernachlauf": "ACS en marxa",
+                    "warmwasservorrang": "Prioritat de l'ACS",
                     "zunden": "Ignici\u00f3"
                 }
             }

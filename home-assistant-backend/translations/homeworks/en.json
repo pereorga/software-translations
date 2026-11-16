@@ -1,8 +1,5 @@
 {
     "config": {
-        "abort": {
-            "reconfigure_successful": "Re-configuration was successful"
-        },
         "error": {
             "connection_error": "Could not connect to the controller.",
             "credentials_needed": "The controller needs credentials.",
@@ -23,7 +20,7 @@
                 "description": "Lutron Homeworks is no longer configured through configuration.yaml.\n\nPlease fill in the form to import the existing configuration to the UI."
             },
             "import_finish": {
-                "description": "The existing YAML configuration has succesfully been imported.\n\nYou can now remove the `homeworks` configuration from your configuration.yaml file."
+                "description": "The existing YAML configuration has successfully been imported.\n\nYou can now remove the `homeworks` configuration from your configuration.yaml file."
             },
             "reconfigure": {
                 "data": {
@@ -57,7 +54,7 @@
     },
     "exceptions": {
         "invalid_controller_id": {
-            "message": "Invalid controller_id \"{controller_id}\", expected one of \"{controller_ids}\""
+            "message": "Invalid controller ID \"{controller_id}\", expected one of \"{controller_ids}\""
         }
     },
     "options": {
@@ -98,7 +95,7 @@
                     "rate": "Fade rate"
                 },
                 "data_description": {
-                    "addr": "Keypad address, must be formatted as `[##:##:##:##]`",
+                    "addr": "Dimmer or switch address, like `[01:01:03:02:04]`, with two digits per part",
                     "rate": "Time in seconds for the light to transition to a new brightness level"
                 },
                 "title": "Add light"

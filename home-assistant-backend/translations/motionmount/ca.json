@@ -2,10 +2,15 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "already_in_progress": "El flux de configuraci\u00f3 ja est\u00e0 en curs",
             "cannot_connect": "Ha fallat la connexi\u00f3"
         },
+        "flow_title": "{name}",
         "step": {
+            "auth": {
+                "data": {
+                    "pin": "Codi PIN"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Amfitri\u00f3",
@@ -15,11 +20,6 @@
         }
     },
     "entity": {
-        "binary_sensor": {
-            "motionmount_is_moving": {
-                "name": "En moviment"
-            }
-        },
         "select": {
             "motionmount_preset": {
                 "name": "Preconfiguraci\u00f3"

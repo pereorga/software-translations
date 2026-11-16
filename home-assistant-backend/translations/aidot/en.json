@@ -1,0 +1,40 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "unique_id_mismatch": "The credentials belong to a different AiDot account. Please log in with the account that was originally set up."
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "Password for logging in through AiDot app"
+                },
+                "description": "The AiDot login for {username} is no longer valid. Please enter your password to log in again."
+            },
+            "user": {
+                "data": {
+                    "country_code": "Country",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "data_description": {
+                    "country_code": "The country selected by AiDot app when logging in",
+                    "password": "Password for logging in through AiDot app",
+                    "username": "Account logged in through AiDot app"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "invalid_auth": {
+            "message": "Invalid authentication"
+        }
+    }
+}

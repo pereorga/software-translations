@@ -9,12 +9,36 @@
             "unknown": "Unexpected error"
         },
         "step": {
+            "reauth_confirm": {
+                "data": {
+                    "password": "Password",
+                    "service_code": "Service code"
+                },
+                "description": "The credentials for the inverter at {host} are no longer valid. Please enter the new credentials.",
+                "title": "Authentication expired for {name}"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "service_code": "Service code"
+                }
+            },
             "user": {
                 "data": {
                     "host": "Host",
-                    "password": "Password"
+                    "password": "Password",
+                    "service_code": "Service code"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "authentication_failed": {
+            "message": "Authentication failed connecting to {host}"
+        },
+        "cannot_connect": {
+            "message": "Error connecting to {host}"
         }
     }
 }

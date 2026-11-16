@@ -1,0 +1,46 @@
+{
+    "config": {
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Clau de pas",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Amfitri\u00f3",
+                    "password": "Contrasenya",
+                    "username": "Nom d'usuari"
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "using_ethernet": {
+                "name": "Ethernet connectat"
+            }
+        }
+    },
+    "exceptions": {
+        "authentication_error": {
+            "message": "Ha fallat l'autenticaci\u00f3"
+        }
+    }
+}

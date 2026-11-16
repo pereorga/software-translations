@@ -3,6 +3,9 @@
         "abort": {
             "already_configured": "Device is already configured"
         },
+        "error": {
+            "cannot_connect": "Failed to connect"
+        },
         "step": {
             "user": {
                 "description": "Do you want to start setup?"
@@ -21,10 +24,10 @@
                 "name": "Time of highest price - today"
             },
             "hours_priced_equal_or_higher": {
-                "name": "Hours priced equal or higher than current - today"
+                "name": "Periods priced equal or higher than current - today"
             },
             "hours_priced_equal_or_lower": {
-                "name": "Hours priced equal or lower than current - today"
+                "name": "Periods priced equal or lower than current - today"
             },
             "lowest_price_time": {
                 "name": "Time of lowest price - today"
@@ -44,14 +47,28 @@
         }
     },
     "exceptions": {
-        "invalid_config_entry": {
-            "message": "Invalid config entry provided. Got {config_entry}"
+        "connection_error": {
+            "message": "Error communicating with the easyEnergy API."
+        },
+        "fetch_prices_error": {
+            "message": "Error fetching prices from the easyEnergy API."
         },
         "invalid_date": {
             "message": "Invalid date provided. Got {date}"
+        }
+    },
+    "selector": {
+        "granularity_selector": {
+            "options": {
+                "hour": "Hour",
+                "quarter": "Quarter"
+            }
         },
-        "unloaded_config_entry": {
-            "message": "Invalid config entry provided. {config_entry} is not loaded."
+        "price_type_selector": {
+            "options": {
+                "invoice": "All-in price",
+                "market": "Market price"
+            }
         }
     },
     "services": {
@@ -60,11 +77,15 @@
             "fields": {
                 "config_entry": {
                     "description": "The configuration entry to use for this action.",
-                    "name": "Config Entry"
+                    "name": "Config entry"
                 },
                 "end": {
                     "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
                     "name": "End"
+                },
+                "granularity": {
+                    "description": "The interval size for the electricity prices.",
+                    "name": "Granularity"
                 },
                 "start": {
                     "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
@@ -78,15 +99,23 @@
             "fields": {
                 "config_entry": {
                     "description": "The configuration entry to use for this action.",
-                    "name": "Config Entry"
+                    "name": "Config entry"
                 },
                 "end": {
                     "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
                     "name": "End"
                 },
+                "granularity": {
+                    "description": "The interval size for the electricity prices.",
+                    "name": "Granularity"
+                },
                 "incl_vat": {
-                    "description": "Include or exclude VAT in the prices, default is true.",
-                    "name": "VAT Included"
+                    "description": "Whether the prices should include VAT.",
+                    "name": "VAT included"
+                },
+                "price_type": {
+                    "description": "The type of prices to retrieve.",
+                    "name": "Price type"
                 },
                 "start": {
                     "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",
@@ -100,15 +129,19 @@
             "fields": {
                 "config_entry": {
                     "description": "The configuration entry to use for this action.",
-                    "name": "Config Entry"
+                    "name": "Config entry"
                 },
                 "end": {
                     "description": "Specifies the date and time until which to retrieve prices. Defaults to today if omitted.",
                     "name": "End"
                 },
                 "incl_vat": {
-                    "description": "Include or exclude VAT in the prices, default is true.",
-                    "name": "VAT Included"
+                    "description": "Whether the prices should include VAT.",
+                    "name": "VAT included"
+                },
+                "price_type": {
+                    "description": "The type of prices to retrieve.",
+                    "name": "Price type"
                 },
                 "start": {
                     "description": "Specifies the date and time from which to retrieve prices. Defaults to today if omitted.",

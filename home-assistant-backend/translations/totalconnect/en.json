@@ -2,7 +2,7 @@
     "config": {
         "abort": {
             "already_configured": "Account is already configured",
-            "no_locations": "No locations are available for this user, check TotalConnect settings",
+            "no_locations": "No locations are available for this user, check Total Connect settings",
             "reauth_successful": "Re-authentication was successful"
         },
         "error": {
@@ -12,12 +12,21 @@
         "step": {
             "locations": {
                 "data": {
-                    "usercode": "Usercode"
+                    "usercodes": "Usercode"
+                },
+                "data_description": {
+                    "usercodes": "The usercode is usually a 4-digit number"
                 },
                 "description": "Enter the usercode for this user at location {location_id}",
-                "title": "Location Usercodes"
+                "title": "Location usercodes"
             },
             "reauth_confirm": {
+                "data": {
+                    "password": "Password"
+                },
+                "data_description": {
+                    "password": "The Total Connect password"
+                },
                 "description": "Total Connect needs to re-authenticate your account",
                 "title": "Authentication expired for {name}"
             },
@@ -25,7 +34,13 @@
                 "data": {
                     "password": "Password",
                     "username": "Username"
-                }
+                },
+                "data_description": {
+                    "password": "The Total Connect password",
+                    "username": "The Total Connect username"
+                },
+                "description": "It is highly recommended to use a 'standard' Total Connect user account with Home Assistant. The account should not have full administrative privileges.",
+                "title": "Total Connect 2.0 account credentials"
             }
         }
     },
@@ -104,17 +119,21 @@
                     "auto_bypass_low_battery": "Auto bypass low battery",
                     "code_required": "Require user to enter code for alarm actions"
                 },
-                "title": "TotalConnect Options"
+                "data_description": {
+                    "auto_bypass_low_battery": "If enabled, Total Connect zones will immediately be bypassed when they report low battery. This option helps because zones tend to report low battery in the middle of the night. The downside of this option is that when the alarm system is armed, the bypassed zone will not be monitored.",
+                    "code_required": "If enabled, you must enter the user code to arm or disarm the alarm"
+                },
+                "title": "Total Connect options"
             }
         }
     },
     "services": {
         "arm_away_instant": {
-            "description": "Arms Away with zero entry delay.",
+            "description": "Arms away with zero entry delay.",
             "name": "Arm away instant"
         },
         "arm_home_instant": {
-            "description": "Arms Home with zero entry delay.",
+            "description": "Arms home with zero entry delay.",
             "name": "Arm home instant"
         }
     }

@@ -1,0 +1,37 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Amfitri\u00f3"
+                }
+            }
+        }
+    },
+    "device": {
+        "thermostat": {
+            "name": "Term\u00f2stat ({host})"
+        }
+    },
+    "entity": {
+        "climate": {
+            "zone": {
+                "state_attributes": {
+                    "fan_mode": {
+                        "state": {
+                            "auto": "Auto",
+                            "on": "ON"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

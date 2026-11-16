@@ -10,13 +10,19 @@
             "user": {
                 "data": {
                     "elevation": "Elevation",
-                    "latitude": "Latitude",
-                    "longitude": "Longitude",
-                    "name": "Name"
+                    "location": "Location"
                 },
                 "description": "Meteorologisk institutt",
                 "title": "Location"
             }
+        }
+    },
+    "exceptions": {
+        "no_home_location": {
+            "message": "No home location has been set"
+        },
+        "update_failed": {
+            "message": "Update of data from the web site failed: {error}"
         }
     },
     "options": {
@@ -24,9 +30,7 @@
             "init": {
                 "data": {
                     "elevation": "Elevation",
-                    "latitude": "Latitude",
-                    "longitude": "Longitude",
-                    "name": "Name"
+                    "location": "Location"
                 },
                 "title": "Location"
             }

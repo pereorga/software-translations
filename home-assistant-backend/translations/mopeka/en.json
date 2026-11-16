@@ -2,7 +2,6 @@
     "config": {
         "abort": {
             "already_configured": "Device is already configured",
-            "already_in_progress": "Configuration flow is already in progress",
             "no_devices_found": "No devices found on the network",
             "not_supported": "Device not supported"
         },
@@ -10,14 +9,14 @@
         "step": {
             "bluetooth_confirm": {
                 "data": {
-                    "medium_type": "Medium Type"
+                    "medium_type": "Medium type"
                 },
                 "description": "Do you want to set up {name}?"
             },
             "user": {
                 "data": {
                     "address": "Device",
-                    "medium_type": "Medium Type"
+                    "medium_type": "Medium type"
                 },
                 "description": "Choose a device to set up"
             }
@@ -27,7 +26,7 @@
         "step": {
             "init": {
                 "data": {
-                    "medium_type": "Medium Type"
+                    "medium_type": "Medium type"
                 },
                 "title": "Configure Mopeka"
             }

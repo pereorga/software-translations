@@ -1,0 +1,50 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El servei ja est\u00e0 configurat"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "reauth_confirm": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            },
+            "user": {
+                "data": {
+                    "api_key": "Clau API"
+                }
+            }
+        }
+    },
+    "config_subentries": {
+        "conversation": {
+            "abort": {
+                "cannot_connect": "Ha fallat la connexi\u00f3",
+                "unknown": "Error inesperat"
+            },
+            "step": {
+                "init": {
+                    "data": {
+                        "model": "Model",
+                        "prompt": "Instruccions"
+                    }
+                },
+                "reconfigure": {
+                    "data": {
+                        "prompt": "Instruccions"
+                    }
+                }
+            }
+        }
+    }
+}

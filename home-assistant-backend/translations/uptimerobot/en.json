@@ -18,14 +18,26 @@
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "You need to supply a new 'main' API key from UptimeRobot",
+                "data_description": {
+                    "api_key": "The 'main' API key for your UptimeRobot account"
+                },
                 "title": "Authentication expired for {name}"
+            },
+            "reconfigure": {
+                "data": {
+                    "api_key": "API key"
+                },
+                "data_description": {
+                    "api_key": "The 'main' API key for your UptimeRobot account"
+                }
             },
             "user": {
                 "data": {
                     "api_key": "API key"
                 },
-                "description": "You need to supply the 'main' API key from UptimeRobot"
+                "data_description": {
+                    "api_key": "The 'main' API key for your UptimeRobot account"
+                }
             }
         }
     },
@@ -37,9 +49,24 @@
                     "not_checked_yet": "Not checked yet",
                     "pause": "Pause",
                     "seems_down": "Seems down",
+                    "started": "Started",
                     "up": "Up"
                 }
             }
+        }
+    },
+    "exceptions": {
+        "api_authentication_exception": {
+            "message": "API authentication failed, please check your API key"
+        },
+        "api_generic_exception": {
+            "message": "API error: {error}"
+        },
+        "api_key_wrong_type": {
+            "message": "Wrong API key type detected, use the 'main' API key"
+        },
+        "api_switch_exception": {
+            "message": "Could not turn on/off monitoring: {error}"
         }
     }
 }

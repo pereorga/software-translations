@@ -1,0 +1,57 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "El dispositiu ja est\u00e0 configurat",
+            "no_devices_found": "No s'han trobat dispositius a la xarxa"
+        },
+        "error": {
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "invalid_auth": "Autenticaci\u00f3 inv\u00e0lida",
+            "unknown": "Error inesperat"
+        },
+        "step": {
+            "bluetooth_confirm": {
+                "data": {
+                    "pin": "Codi PIN"
+                }
+            },
+            "user": {
+                "data": {
+                    "address": "Dispositiu",
+                    "pin": "Codi PIN"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "charging_message": {
+                "state": {
+                    "charging": "Carregant"
+                }
+            },
+            "charging_status": {
+                "state": {
+                    "fault": "Error"
+                }
+            },
+            "current_state": {
+                "state": {
+                    "charging": "Carregant",
+                    "fault": "Error"
+                }
+            },
+            "output_state": {
+                "state": {
+                    "charging": "Carregant",
+                    "idle": "Inactiu"
+                }
+            },
+            "plug_state": {
+                "state": {
+                    "disconnected": "Desconnectat"
+                }
+            }
+        }
+    }
+}

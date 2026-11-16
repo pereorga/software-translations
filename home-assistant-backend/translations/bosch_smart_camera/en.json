@@ -1,0 +1,30 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "already_in_progress": "This is already being configured. Finish the existing configuration before starting again.",
+            "cannot_connect": "Failed to connect",
+            "invalid_auth": "Invalid authentication",
+            "missing_configuration": "The component is not configured. Please follow the documentation."
+        },
+        "create_entry": {
+            "default": "Successfully authenticated"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Pick authentication method"
+            }
+        }
+    },
+    "exceptions": {
+        "auth_failed": {
+            "message": "Authentication with Bosch failed, please sign in again."
+        },
+        "cannot_connect": {
+            "message": "Unable to fetch the cameras from Bosch."
+        },
+        "snapshot_failed": {
+            "message": "Unable to fetch the camera image from Bosch."
+        }
+    }
+}

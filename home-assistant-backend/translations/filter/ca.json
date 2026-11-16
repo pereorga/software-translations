@@ -1,8 +1,25 @@
 {
+    "config": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "name": "Nom"
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "already_configured": "El compte ja est\u00e0 configurat"
+        }
+    },
     "services": {
         "reload": {
             "description": "Recarrega els filtres des de la configuraci\u00f3 YAML",
-            "name": "Torna a carregar"
+            "name": "Torna a carregar filtres"
         }
     },
     "title": "Filtre"

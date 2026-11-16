@@ -1,18 +1,108 @@
 {
     "config": {
         "abort": {
+            "already_configured": "Device is already configured",
+            "continue_setup": "Continue setting up the discovered iZone controller.",
+            "discovery_failed": "Failed to start iZone discovery. Make sure your network is properly configured.",
+            "discovery_started": "iZone discovery has started. Your controllers will appear as discovered devices under Settings > Devices & services.",
             "no_devices_found": "No devices found on the network",
-            "single_instance_allowed": "Already configured. Only a single configuration possible."
+            "unpaired_bridge": "This iZone bridge is not paired with an air conditioner."
+        },
+        "error": {
+            "already_configured": "Device is already configured",
+            "cannot_connect": "Failed to connect",
+            "no_devices_found": "No devices found on the network",
+            "required": "Please enter a host.",
+            "unpaired_bridge": "This iZone bridge is not paired with an air conditioner."
+        },
+        "flow_title": "{name}",
+        "progress": {
+            "discover": "Searching for iZone controllers on your network"
         },
         "step": {
             "confirm": {
-                "description": "Do you want to set up iZone?"
+                "description": "Do you want to set up iZone?\n\nController UID: {controller_uid}\nController IP: {host}"
+            },
+            "manual_host": {
+                "data": {
+                    "host": "Host"
+                },
+                "description": "Enter the IP address or hostname of your iZone controller."
+            },
+            "select_controller": {
+                "data": {
+                    "selected_controller_uid": "Controller"
+                },
+                "description": "Multiple unconfigured iZone controllers were found:\n{controllers}\n\nChoose the controller you want to set up now. Any controller you do not select will remain available as a discovered device you can set up later under **Settings** > **Devices & services**."
+            },
+            "user": {
+                "menu_options": {
+                    "discover": "Search for devices",
+                    "manual_host": "Enter host"
+                }
             }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "return_temperature": {
+                "name": "Return temperature"
+            },
+            "supply_temperature": {
+                "name": "Supply temperature"
+            }
+        }
+    },
+    "exceptions": {
+        "bridge_unpaired": {
+            "message": "iZone bridge is not paired with an air conditioner"
+        },
+        "cannot_connect": {
+            "message": "Unable to connect to iZone controller at {host}"
+        },
+        "command_rejected": {
+            "message": "Controller {uid} rejected command: {error}"
+        },
+        "controller_not_found": {
+            "message": "No iZone controller found for unique_id {uid}"
+        },
+        "discovery_failed_host": {
+            "message": "iZone discovery failed while resolving config entry host"
+        },
+        "discovery_failed_legacy": {
+            "message": "iZone discovery failed while resolving legacy config entry"
+        },
+        "discovery_start_failed": {
+            "message": "iZone discovery service failed to start"
+        },
+        "missing_host": {
+            "message": "iZone config entry is missing host"
+        },
+        "missing_unique_id": {
+            "message": "iZone config entry is missing unique_id"
+        },
+        "multiple_eligible_controllers": {
+            "message": "Multiple eligible iZone controllers found for a legacy config entry; delete this entry and re-add each controller individually"
+        },
+        "no_eligible_controller": {
+            "message": "No eligible iZone controller found to bind to legacy config entry"
+        },
+        "refresh_rejected": {
+            "message": "iZone controller rejected refresh: {error}"
+        },
+        "setup_rejected": {
+            "message": "iZone controller at {host} rejected setup"
+        },
+        "unable_to_connect": {
+            "message": "Unable to connect to controller {uid}"
+        },
+        "update_failed": {
+            "message": "Error communicating with iZone controller: {error}"
         }
     },
     "services": {
         "airflow_max": {
-            "description": "Sets the airflow maximum percent for a zone.",
+            "description": "Sets the airflow maximum percent for a zone. Deprecated, use the zone's Damper maximum number entity instead.",
             "fields": {
                 "airflow": {
                     "description": "Airflow percent.",
@@ -22,7 +112,7 @@
             "name": "Set maximum airflow"
         },
         "airflow_min": {
-            "description": "Sets the airflow minimum percent for a zone.",
+            "description": "Sets the airflow minimum percent for a zone. Deprecated, use the zone's Damper minimum number entity instead.",
             "fields": {
                 "airflow": {
                     "description": "Airflow percent.",

@@ -2,32 +2,67 @@
     "config": {
         "abort": {
             "already_configured": "El dispositiu ja est\u00e0 configurat",
-            "reconfigure_successful": "Reconfiguraci\u00f3 realitzada correctament"
+            "cannot_connect": "Ha fallat la connexi\u00f3",
+            "unknown": "Error inesperat"
         },
         "error": {
             "cannot_connect": "Ha fallat la connexi\u00f3",
             "unknown": "Error inesperat"
+        }
+    },
+    "entity": {
+        "media_player": {
+            "media_player": {
+                "state_attributes": {
+                    "sound_mode": {
+                        "state": {
+                            "off": "OFF"
+                        }
+                    }
+                }
+            }
         },
-        "step": {
-            "discovery_confirm": {
-                "title": "S'ha descobert un servidor Music Assistant"
-            },
-            "init": {
-                "data": {
-                    "url": "URL del servidor de Music Assistant"
+        "select": {
+            "dimmer": {
+                "state": {
+                    "auto": "Auto"
                 }
             },
-            "manual": {
-                "data": {
-                    "url": "URL del servidor de Music Assistant"
-                },
-                "title": "Afegeix manualment el servidor Music Assistant"
+            "equalizer_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "manual": "Manual"
+                }
+            },
+            "sleep": {
+                "state": {
+                    "0": "OFF"
+                }
+            },
+            "surround_decoder_type": {
+                "state": {
+                    "auto": "Auto",
+                    "dolby_pl": "Dolby ProLogic",
+                    "dolby_pl2x_game": "Dolby ProLogic 2x Joc",
+                    "dolby_pl2x_movie": "Dolby ProLogic 2x Movie",
+                    "dolby_pl2x_music": "Dolby ProLogic 2x Music",
+                    "dolby_surround": "Dolby Surround",
+                    "dts_neo6_cinema": "DTS Neo:6 Cinema",
+                    "dts_neo6_music": "DTS Neo:6 Music",
+                    "dts_neural_x": "DTS Neural:X",
+                    "toggle": "Commuta"
+                }
+            },
+            "tone_control_mode": {
+                "state": {
+                    "auto": "Auto",
+                    "manual": "Manual"
+                }
             }
         }
     },
     "issues": {
         "invalid_server_version": {
-            "description": "Comprova si hi ha actualitzacions disponibles per al servidor i/o la integraci\u00f3 Music Assistant.",
             "title": "La versi\u00f3 del servidor Music Assistant no \u00e9s correcta"
         }
     },
@@ -45,6 +80,11 @@
                 "play": "Reprodueix",
                 "replace": "Reprodueix ara i esborra la cua",
                 "replace_next": "Reprodueix a continuaci\u00f3 i esborra la cua"
+            }
+        },
+        "media_type": {
+            "options": {
+                "podcast": "Podcast"
             }
         },
         "order_by": {
@@ -66,17 +106,23 @@
     },
     "services": {
         "get_library": {
-            "description": "Obt\u00e9 els elements d'una biblioteca de Music Assistant.",
             "fields": {
-                "favorite": {
-                    "name": "Nom\u00e9s preferits"
-                },
                 "limit": {
                     "description": "Nombre m\u00e0xim d'elements a retornar.",
                     "name": "L\u00edmit"
                 },
                 "search": {
                     "name": "Cerca"
+                },
+                "username": {
+                    "name": "Nom d'usuari"
+                }
+            }
+        },
+        "play_media": {
+            "fields": {
+                "username": {
+                    "name": "Nom d'usuari"
                 }
             }
         },
