@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 17:42+0000\n"
+"POT-Creation-Date: 2026-11-23 19:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -261,8 +261,8 @@ msgid "Sign up"
 msgstr "Registrar-se"
 
 #: .account/sync-assets-limit
-msgid "Sync assets up to 100MB per file"
-msgstr "Sincronitzar recursos fins a 100 MB per fitxer"
+msgid "Sync assets up to 200MB per file"
+msgstr "Sincronitzar recursos fins a 200 MB per fitxer"
 
 #: .account/synced-status
 msgid "Synced"
@@ -453,7 +453,7 @@ msgid "Show file in folder"
 msgstr "Mostrar el fitxer a la carpeta"
 
 #: .asset/size-too-large
-msgid "Asset size shouldn't be larger than 100M"
+msgid "Asset size shouldn't be larger than 200M"
 msgstr "El recurs és massa gran"
 
 #: .asset/syncing
@@ -1472,12 +1472,12 @@ msgid "Move cursor up / Select up"
 msgstr "Moure cursor amunt / Seleccionar amunt"
 
 #: .command.editor/zoom-in
-msgid "Zoom in editing block / Forwards otherwise"
-msgstr "Apropar / Endavant"
+msgid "Zoom in editing block"
+msgstr "Apropar la vista al bloc que s’està editant"
 
 #: .command.editor/zoom-out
-msgid "Zoom out editing block / Backwards otherwise"
-msgstr "Allunyar / Enrere"
+msgid "Zoom out editing block"
+msgstr "Allunyar la vista del bloc que s’està editant"
 
 #: .command.go/all-graphs
 msgid "Go to all graphs"
@@ -3685,8 +3685,8 @@ msgid ""
 msgstr ""
 
 #: .import/asset-too-large-warning
-msgid "Skipped copying asset {1} because it exceeds the 100 MB limit."
-msgstr "S'ha omès copiar el recurs {1} perquè supera el límit de 100 MB."
+msgid "Skipped copying asset {1} because it exceeds the 200 MB limit."
+msgstr "S'ha omès copiar el recurs {1} perquè supera el límit de 200 MB."
 
 #: .import/assets-import-partial
 msgid "Imported {1} of {2} assets. See console for details."
@@ -7498,6 +7498,10 @@ msgstr ""
 msgid "Creating remote graph..."
 msgstr "S'està creant el gràfic remot..."
 
+#: .sync/download-error
+msgid "Couldn't download the graph. Check the logs for details."
+msgstr ""
+
 #: .sync/downloading
 msgid "Downloading..."
 msgstr "Descarregant..."
@@ -7505,6 +7509,11 @@ msgstr "Descarregant..."
 #: .sync/downloading-graph
 msgid "Downloading {1} ..."
 msgstr "Descarregant {1} ..."
+
+#: .sync/failed-local-changes-warning
+msgid ""
+"Some local changes could not sync. Recovery data is saved on this device."
+msgstr ""
 
 #: .sync/graph-count-exceed-limit
 msgid "Sync graph count exceed limit"
