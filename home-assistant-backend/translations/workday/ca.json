@@ -3,16 +3,25 @@
         "error": {
             "add_holiday_error": "Format de data incorrecte (AAAA-MM-DD)",
             "add_holiday_range_error": "Format de data incorrecte en l'interval (AAAA-MM-DD, AAAA-MM-DD)",
-            "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de vacances/festiu no trobat",
+            "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de festiu no trobat",
             "remove_holiday_range_error": "Format de data incorrecte en l'interval (AAAA-MM-DD, AAAA-MM-DD)"
         },
         "step": {
             "options": {
                 "data": {
-                    "add_holidays": "Afegeix vacances/festius",
-                    "category": "Categoria addicional de vacances",
+                    "add_holidays": "Afegeix festius",
+                    "category": "Categoria addicional com a festiu",
                     "days_offset": "Despla\u00e7ament (\u00f2fset)",
-                    "province": "Subdivisi\u00f3 de pa\u00eds"
+                    "language": "Llengua dels festius amb nom",
+                    "province": "Subdivisi\u00f3 de pa\u00eds",
+                    "remove_holidays": "Elimina festius"
+                },
+                "data_description": {
+                    "add_holidays": "Afegeix festius personalitzats en format AAAA-MM-DD",
+                    "category": "Selecciona categories addicionals per a incloure com a dies festius.",
+                    "excludes": "Selecciona els dies entre setmana a excloure com a dia feiner.\nLa clau `holidays` els afegeix al pa\u00eds configurat, personalitzable per tots els par\u00e0metres de sota. Llegeix la documentaci\u00f3 sobre com usar-los correctament.",
+                    "language": "Llengua a usar en configurar les exclusions de festius amb nom",
+                    "workdays": "Selecciona els dies entre setmana a incloure com a possibles dies laborables."
                 }
             },
             "user": {
@@ -47,14 +56,14 @@
                         "data": {
                             "country": "Pa\u00eds"
                         },
-                        "description": "Selecciona un pa\u00eds per utilitzar-lo al sensor 'Dia laborable'.",
+                        "description": "Selecciona un pa\u00eds per a utilitzar-lo al sensor 'Dia laborable'.",
                         "title": "Selecciona el pa\u00eds de {title}"
                     },
                     "province": {
                         "data": {
                             "province": "Subdivisi\u00f3 de pa\u00eds"
                         },
-                        "description": "Selecciona una prov\u00edncia del pa\u00eds {country} per utilitzar-la al sensor 'Dia laborable'.",
+                        "description": "Selecciona una prov\u00edncia del pa\u00eds {country} per a utilitzar-la al sensor 'Dia laborable'.",
                         "title": "Selecciona la prov\u00edncia de {title}"
                     }
                 }
@@ -63,16 +72,36 @@
         "bad_date_holiday": {
             "fix_flow": {
                 "error": {
-                    "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de vacances/festiu no trobat"
+                    "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de festiu no trobat"
+                },
+                "step": {
+                    "fix_remove_holiday": {
+                        "data": {
+                            "remove_holidays": "Elimina festius"
+                        },
+                        "description": "Elimina la data festiva `{remove_holidays}` perqu\u00e8 no es pot trobar al pa\u00eds {country}.",
+                        "title": "La data festiva configurada {remove_holidays} per a {title} no existeix"
+                    }
                 }
-            }
+            },
+            "title": "La data festiva configurada {remove_holidays} per a {title} no existeix"
         },
         "bad_named_holiday": {
             "fix_flow": {
                 "error": {
-                    "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de vacances/festiu no trobat"
+                    "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de festiu no trobat"
+                },
+                "step": {
+                    "fix_remove_holiday": {
+                        "data": {
+                            "remove_holidays": "Elimina festius"
+                        },
+                        "description": "Elimina el festiu amb nom {remove_holidays}` ja que no es pot trobar al pa\u00eds  {country}.",
+                        "title": "El dia festiu amb nom  {remove_holidays} configurat per {title} no existeix"
+                    }
                 }
-            }
+            },
+            "title": "El dia festiu amb nom  {remove_holidays} configurat per {title} no existeix"
         },
         "bad_province": {
             "fix_flow": {
@@ -81,7 +110,7 @@
                         "data": {
                             "province": "Subdivisi\u00f3 de pa\u00eds"
                         },
-                        "description": "Selecciona una prov\u00edncia del pa\u00eds {country} per utilitzar-la al sensor 'Dia laborable'.",
+                        "description": "Selecciona una prov\u00edncia del pa\u00eds {country} per a utilitzar-la al sensor 'Dia laborable'.",
                         "title": "Selecciona la prov\u00edncia de {title}"
                     }
                 }
@@ -94,16 +123,25 @@
             "add_holiday_error": "Format de data incorrecte (AAAA-MM-DD)",
             "add_holiday_range_error": "Format de data incorrecte en l'interval (AAAA-MM-DD, AAAA-MM-DD)",
             "already_configured": "Ja existeix un servei amb aquesta configuraci\u00f3",
-            "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de vacances/festiu no trobat",
+            "remove_holiday_error": "Format de data incorrecte (AAAA-MM-DD) o nom de festiu no trobat",
             "remove_holiday_range_error": "Format de data incorrecte en l'interval (AAAA-MM-DD, AAAA-MM-DD)"
         },
         "step": {
             "init": {
                 "data": {
-                    "add_holidays": "Afegeix vacances/festius",
-                    "category": "Categoria addicional de vacances",
+                    "add_holidays": "Afegeix festius",
+                    "category": "Categoria addicional com a festiu",
                     "days_offset": "Despla\u00e7ament (\u00f2fset)",
-                    "province": "Subdivisi\u00f3 de pa\u00eds"
+                    "language": "Llengua dels festius amb nom",
+                    "province": "Subdivisi\u00f3 de pa\u00eds",
+                    "remove_holidays": "Elimina festius"
+                },
+                "data_description": {
+                    "add_holidays": "Afegeix festius personalitzats en format AAAA-MM-DD",
+                    "category": "Selecciona categories addicionals per a incloure com a dies festius.",
+                    "excludes": "Selecciona els dies entre setmana a excloure com a dia feiner.\nLa clau `holidays` els afegeix al pa\u00eds configurat, personalitzable per tots els par\u00e0metres de sota. Llegeix la documentaci\u00f3 sobre com usar-los correctament.",
+                    "language": "Llengua a usar en configurar les exclusions de festius amb nom",
+                    "workdays": "Selecciona els dies entre setmana a incloure com a possibles dies laborables."
                 },
                 "description": "Canvia les opcions addicionals de {name} configurades pel pa\u00eds {country}"
             }
@@ -112,20 +150,32 @@
     "selector": {
         "category": {
             "options": {
+                "albanian": "Alban\u00e8s",
                 "armed_forces": "Forces armades",
+                "armenian": "Armeni",
                 "bank": "Banc",
+                "bosnian": "Bosni",
                 "chinese": "Xin\u00e8s",
                 "christian": "Cristi\u00e0",
+                "de_facto": "De facto",
                 "government": "Govern",
                 "half_day": "Mig dia",
                 "hebrew": "Hebreu",
                 "hindu": "Hind\u00fa",
                 "islamic": "Isl\u00e0mic",
                 "optional": "Opcional",
+                "orthodox": "Ortodox",
+                "protestant": "Protestant",
                 "public": "P\u00fablic",
+                "roma": "Rom\u00e0",
+                "sabian": "Sabian",
                 "school": "Escolar",
+                "serbian": "Serbi",
+                "turkish": "Turc",
                 "unofficial": "No oficial",
-                "workday": "Dia laborable"
+                "vlach": "Valac",
+                "workday": "Dia laborable",
+                "yazidi": "Yazidita"
             }
         },
         "days": {

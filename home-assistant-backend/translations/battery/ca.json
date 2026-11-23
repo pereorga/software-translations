@@ -74,6 +74,7 @@
             }
         },
         "level_changed": {
+            "description": "Es dispara quan el nivell d'una o m\u00e9s bateries canvia.",
             "fields": {
                 "threshold": {
                     "name": "Tipus de llindar"
@@ -81,6 +82,7 @@
             }
         },
         "level_crossed_threshold": {
+            "description": "Es dispara quan el nivell d'una o m\u00e9s bateries creua un llindar.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -104,6 +106,7 @@
             }
         },
         "started_charging": {
+            "description": "Es dispara quan una o m\u00e9s bateries comecen a carregar.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -114,6 +117,7 @@
             }
         },
         "stopped_charging": {
+            "description": "Es dispara quan una o m\u00e9s bateries deixen de carregar.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"

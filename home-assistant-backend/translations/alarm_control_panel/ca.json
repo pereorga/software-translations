@@ -205,6 +205,7 @@
     "title": "Panell de control d'alarma",
     "triggers": {
         "armed": {
+            "description": "Es dispara quan una o m\u00e9s alarmes s'activen, independentment del mode.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -215,6 +216,7 @@
             }
         },
         "armed_away": {
+            "description": "Es dispara quan una o m\u00e9s alarmes s'activen en el mode a fora.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -225,6 +227,7 @@
             }
         },
         "armed_home": {
+            "description": "Es dispara quan una o m\u00e9s alarmes s'activen en el mode casa.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -235,6 +238,7 @@
             }
         },
         "armed_night": {
+            "description": "Es dispara quan una o m\u00e9s alarmes s'activen en el mode nit.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -245,6 +249,7 @@
             }
         },
         "armed_vacation": {
+            "description": "Es dispara quan una o m\u00e9s alarmes s'activen en el mode vacances.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -255,6 +260,7 @@
             }
         },
         "disarmed": {
+            "description": "Es dispara quan una o m\u00e9s alarmes es desactiven.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -265,6 +271,7 @@
             }
         },
         "triggered": {
+            "description": "Es dispara quan una o m\u00e9s alarma es disparen.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"

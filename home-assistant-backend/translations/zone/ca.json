@@ -1,6 +1,7 @@
 {
     "common": {
         "trigger_behavior_name": "Dispara quan",
+        "trigger_zone_description": "La zona on es dispara.",
         "trigger_zone_name": "Zona"
     },
     "services": {
@@ -11,24 +12,33 @@
     },
     "triggers": {
         "entered": {
+            "description": "Es dispara quan una o m\u00e9s persones o seguiment de dispositiu entra en una zona.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
                 },
                 "zone": {
+                    "description": "La zona on es dispara.",
                     "name": "Zona"
                 }
-            }
+            },
+            "name": "Ha entrat a la zona"
         },
         "left": {
+            "description": "Es dispara quan una o m\u00e9s persones o seguiment de dispositiu surt d'una zona.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
                 },
                 "zone": {
+                    "description": "La zona on es dispara.",
                     "name": "Zona"
                 }
-            }
+            },
+            "name": "Ha sortit de la zona"
+        },
+        "occupancy_detected": {
+            "description": "Es dispara quan una o m\u00e9s zones s'ocupen."
         }
     }
 }

@@ -289,6 +289,7 @@
     "title": "Climatitzaci\u00f3",
     "triggers": {
         "hvac_mode_changed": {
+            "description": "Es dispara quan el mode d'un o m\u00e9s term\u00f2stats canvia.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -319,6 +320,7 @@
             }
         },
         "started_heating": {
+            "description": "Es dispara quan un o m\u00e9s term\u00f2stats comencen a escalfar.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -369,6 +371,7 @@
             }
         },
         "turned_off": {
+            "description": "Es dispara quan un o m\u00e9s term\u00f2stats es desactiven.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"
@@ -379,6 +382,7 @@
             }
         },
         "turned_on": {
+            "description": "Es dispara quan un o m\u00e9s term\u00f2stats s'activen, independentment del mode.",
             "fields": {
                 "behavior": {
                     "name": "Dispara quan"

@@ -25,6 +25,11 @@
                 "name": "Ventilador"
             }
         },
+        "number": {
+            "target_temperature_holiday": {
+                "name": "Temperatura de vacances objectiu"
+            }
+        },
         "select": {
             "aero_by_pass": {
                 "state": {
@@ -54,7 +59,8 @@
             },
             "mixer_mode_zone": {
                 "state": {
-                    "disabled": "Desactivada"
+                    "disabled": "Desactivada",
+                    "without_thermostat": "Sense term\u00f2stat"
                 }
             },
             "operating_mode": {

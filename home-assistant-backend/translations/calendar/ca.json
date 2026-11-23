@@ -113,5 +113,13 @@
             }
         }
     },
-    "title": "Calendari"
+    "title": "Calendari",
+    "triggers": {
+        "event_ended": {
+            "description": "Es dispara quan un o m\u00e9s esdeveniments de calendari finalitzen."
+        },
+        "event_started": {
+            "description": "Es dispara quan un o m\u00e9s esdeveniments de calendari comencen."
+        }
+    }
 }
