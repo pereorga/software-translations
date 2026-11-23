@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 17:42+0000\n"
+"POT-Creation-Date: 2026-11-23 19:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -770,6 +770,20 @@ msgstr ""
 "\"Descarrega\" per descarregar-la des de la pàgina de publicacions i "
 "actualitzar-la manualment."
 
+#: .drm-capture-tip
+msgid ""
+"Captures the screen directly from the graphics card through the RustDesk "
+"service, without the Wayland screen sharing prompt, including at the login "
+"screen. It may not work on every device; if connections still ask to share "
+"the screen, turn this off or use X11. Changing this disconnects current "
+"sessions."
+msgstr ""
+"Captura la pantalla directament de la targeta gràfica a través del servei de "
+"RustDesk, sense la sol·licitud de compartir pantalla de Wayland, també a la "
+"pantalla d'inici de sessió. Pot no funcionar en tots els dispositius; si les "
+"connexions encara demanen compartir la pantalla, desactiveu-ho o useu X11. "
+"Canviar-ho desconnecta les sessions actuals."
+
 #: .elevated_foreground_window_tip
 msgid ""
 "The current window of the remote desktop requires higher privilege to "
@@ -978,6 +992,14 @@ msgstr "Mantén la pantalla activa durant les sessions entrants"
 #: .keep-awake-during-outgoing-sessions-label
 msgid "Keep screen awake during outgoing sessions"
 msgstr "Mantén la pantalla activa durant les sessions sortints"
+
+#: .login-wayland-drm-tip
+msgid ""
+"To access the Wayland login screen, try DRM screen capture or switch it to "
+"X11."
+msgstr ""
+"Per accedir a la pantalla d'inici de sessió de Wayland, proveu la captura "
+"DRM o canvieu-la a X11."
 
 #: .logout_tip
 msgid "Are you sure you want to log out?"
@@ -1217,14 +1239,6 @@ msgstr ""
 "Actualment no és possible combinar captures de pantalla de diverses "
 "pantalles. Canvieu a una sola pantalla i torneu a provar."
 
-#: .selinux_tip
-msgid ""
-"SELinux is enabled on your device, which may prevent RustDesk from running "
-"properly as controlled side."
-msgstr ""
-"SELinux està activat al vostre dispositiu, la qual cosa evita que el "
-"RustDesk funcioni correctament com a equip controlable."
-
 #: .server-oss-not-support-tip
 msgid "NOTE: RustDesk server OSS doesn't include this feature."
 msgstr "NOTA: El RustDesk Server OSS no inclou aquesta característica."
@@ -1398,6 +1412,14 @@ msgstr "Utilitza la impressora per defecte"
 msgid "Use the selected printer"
 msgstr "Utilitza la impressora seleccionada"
 
+#: .username-login-disabled-oidc-unavailable
+msgid ""
+"Username and password login is disabled, and no OIDC login methods are "
+"available."
+msgstr ""
+"L'inici de sessió amb nom d'usuari i contrasenya està desactivat i no hi ha "
+"cap mètode d'inici de sessió OIDC disponible."
+
 #: .verification_tip
 msgid ""
 "A verification code has been sent to the registered email address, enter the "
@@ -1418,6 +1440,14 @@ msgstr "El dispositiu remot no admet la visualització de la càmera."
 msgid "Please wait for the remote user to accept the UAC dialog."
 msgstr ""
 "Espereu fins que l'usuari remot accepti la finestra de diàleg de l'«UAC»."
+
+#: .wayland-drm-tip
+msgid ""
+"For unattended access on Wayland, try DRM screen capture, or use X11 if it "
+"does not work."
+msgstr ""
+"Per a l'accés desatès a Wayland, proveu la captura de pantalla DRM, o useu "
+"X11 si no funciona."
 
 #: .wayland-keyboard-input-applies-to-tip
 msgid "This choice applies to:"
