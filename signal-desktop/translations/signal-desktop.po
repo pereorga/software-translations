@@ -899,10 +899,6 @@ msgctxt "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body"
 msgid "Signal can only automatically verify the encryption in chats where you’re connected to someone via a phone number. If the chat was started with a username or a group in common, verify end-to-end encryption by comparing the numbers on the previous screen or scanning the code on their device."
 msgstr "Signal només pot verificar automàticament la codificació en xats on hagis connectat a través del número de telèfon. Si has iniciat el xat a través d'un àlies o un grup en comú, verifica la codificació d'extrem a extrem comparant els números de la pantalla anterior o escanejant el codi al dispositiu de l'altra persona."
 
-msgctxt "icu:SafetyNumberViewer__KeyTransparency__popup__okay"
-msgid "Okay"
-msgstr "D'acord"
-
 msgctxt "icu:SafetyNumberNotReady__body"
 msgid "A safety number will be created with this person after you exchange messages with them."
 msgstr "Es crearà un número de seguretat amb aquesta persona després d'intercanviar missatges amb ella."
@@ -938,10 +934,6 @@ msgstr "No, gràcies."
 msgctxt "icu:KeyTransparencyOnboardingDialog__Title"
 msgid "Signal can now auto-verify encryption"
 msgstr "Ara, Signal pot verificar automàticament la codificació"
-
-msgctxt "icu:KeyTransparencyOnboardingDialog__Description"
-msgid "For contacts you’re connected to by phone number, Signal can automatically confirm whether the connection is secure using a process called key transparency. For added security, you can still verify connections manually using a QR code or by comparing safety numbers."
-msgstr "Pels contactes amb qui hagis connectat a través d'un número de telèfon, Signal pot confirmar automàticament si la connexió és segura mitjançant un procés anomenat transparència de claus. Per a més seguretat, pots continuar verificant manualment les teves connexions mitjançant un codi QR o comparant els números de seguretat."
 
 msgctxt "icu:KeyTransparencyOnboardingDialog__Description-v2"
 msgid "<paragraph>For contacts you’re connected to by phone number, Signal can automatically confirm whether the connection is secure using a process called key transparency.</paragraph><paragraph>For added security, you can still verify connections manually using a QR code or by comparing safety numbers.</paragraph>"
@@ -1270,30 +1262,6 @@ msgstr "Avatar per al contacte {name}"
 msgctxt "icu:sendMessageToContact"
 msgid "Send Message"
 msgstr "Envia un missatge"
-
-msgctxt "icu:home"
-msgid "home"
-msgstr "casa"
-
-msgctxt "icu:work"
-msgid "work"
-msgstr "feina"
-
-msgctxt "icu:mobile"
-msgid "mobile"
-msgstr "mòbil"
-
-msgctxt "icu:email"
-msgid "email"
-msgstr "a/e"
-
-msgctxt "icu:phone"
-msgid "phone"
-msgstr "telèfon"
-
-msgctxt "icu:address"
-msgid "address"
-msgstr "adreça"
 
 msgctxt "icu:poBox"
 msgid "PO Box"
@@ -1826,10 +1794,6 @@ msgstr "Fixar missatges a desaparèixer"
 msgctxt "icu:PinMessageDisappearingMessagesWarningDialog__Description"
 msgid "Disappearing messages will be unpinned when their timer expires and the message is removed from the chat."
 msgstr "Els missatges a desaparèixer es desenganxaran quan s'acabi el temps i el missatge s'elimini del xat."
-
-msgctxt "icu:PinMessageDisappearingMessagesWarningDialog__Okay"
-msgid "Okay"
-msgstr "D'acord"
 
 msgctxt "icu:PinnedMessagesBar__AccessibilityLabel"
 msgid "{pinsCount, plural, one {Pinned message} other {Pinned messages}}"
@@ -3875,13 +3839,37 @@ msgctxt "icu:stickers--StickerPreview--StickerNoEmojiAriaLabel"
 msgid "Sticker without an emoji"
 msgstr "Sticker sense emoji"
 
+msgctxt "icu:stickers--StickerPreview--SeeStickerDetails"
+msgid "See sticker details"
+msgstr "Veure detalls del sticker"
+
+msgctxt "icu:stickers--StickerPreview--StickerDetailsTitle"
+msgid "Sticker details"
+msgstr "Detalls del sticker"
+
+msgctxt "icu:stickers--StickerPreview--AddFavorite"
+msgid "Add to Favorites"
+msgstr "Afegir a Favorits"
+
+msgctxt "icu:stickers--StickerPreview--RemoveFavorite"
+msgid "Remove from Favorites"
+msgstr "Eliminar de Favorits"
+
 msgctxt "icu:stickers--StickerPackLinkPreviewDescription"
 msgid "Sticker Pack by {author}"
 msgstr "Paquet d'stickers de {author}"
 
+msgctxt "icu:stickers--Toast--StickerFavoriteAdded"
+msgid "Sticker added to Favorites"
+msgstr "Sticker afegit a Favorits"
+
+msgctxt "icu:stickers--Toast--StickerFavoriteRemoved"
+msgid "Sticker removed from Favorites"
+msgstr "Sticker eliminat de Favorits"
+
 msgctxt "icu:stickers--Toast--StickerFavoritesTooMany"
 msgid "You can only add {count, plural, one {# sticker} other {# stickers}} to Favorites"
-msgstr "{count, plural, one {You can only add {count,number} sticker to Favorites} other {You can only add {count,number} stickers to Favorites}}"
+msgstr "{count, plural, one {Només pots afegir {count,number} sticker a Favorits} other {Només pots afegir {count,number} stickers a Favorits}}"
 
 msgctxt "icu:stickers--ViewPack"
 msgid "View Pack"
@@ -5430,10 +5418,6 @@ msgstr "Envia un registre de depuració"
 msgctxt "icu:DebugLogErrorModal__SubmitDebugLog__Cancel"
 msgid "No thanks"
 msgstr "No, gràcies."
-
-msgctxt "icu:Confirmation--confirm"
-msgid "Okay"
-msgstr "D'acord"
 
 msgctxt "icu:MessageMaxEditsModal__Title"
 msgid "Can't edit message"
@@ -7375,10 +7359,6 @@ msgctxt "icu:DeleteAttachmentModal__Delete"
 msgid "Delete"
 msgstr "Suprimeix"
 
-msgctxt "icu:DeleteAttachmentModal__Cancel"
-msgid "Cancel"
-msgstr "Cancel·la"
-
 msgctxt "icu:SelectModeActions__toast--TooManyMessagesToForward"
 msgid "You can only forward up to 30 messages"
 msgstr "Només pots reenviar fins a 30 missatges"
@@ -8306,6 +8286,10 @@ msgstr "Darrera importació: {date} {time}"
 msgctxt "icu:Preferences--system"
 msgid "System"
 msgstr "Sistema"
+
+msgctxt "icu:Preferences--LinkedDevices--TransferringMessagesDialog--progress"
+msgid "{percentage, number, percent} complete"
+msgstr "{percentage,number,percent} complete"
 
 msgctxt "icu:Preferences--signal-login-description"
 msgid "Your Signal Login is used to recover and restore your account. Keep these keys stored safely in a password manager you trust. <learnMoreLink>Learn more</learnMoreLink>."
@@ -12251,18 +12235,6 @@ msgctxt "icu:WhatsNew__bugfixes--6"
 msgid "Small tweaks, bug fixes, and performance enhancements. Thanks for using Signal!"
 msgstr "Petits ajustos, correccions d'errors i tasques de millora de rendiment. Gràcies per utilitzar Signal!"
 
-msgctxt "icu:WhatsNew__8.32--0"
-msgid "The unread filter is now also supported in message folders and the search interface, so you can easily see what you've been missing."
-msgstr "Ara també pots filtrar els teus missatges per llegir a les carpetes de missatges i la interfície de cerca."
-
-msgctxt "icu:WhatsNew__8.32--1"
-msgid "Improved upload reliability under poor network conditions. Thanks, <GH3mmmbulus></GH3mmmbulus>!"
-msgstr "Millores en la càrrega d'arxius amb mala connexió a la xarxa. Gràcies, <GH3mmmbulus></GH3mmmbulus>!"
-
-msgctxt "icu:WhatsNew__8.32--2"
-msgid "The \"(N)\" shortcut correctly points to the thumbs down emoji. Thumbs up to <lnicola></lnicola> for the bugfix."
-msgstr "La drecera &quot;(N)&quot; correspon a l'emoji del polze cap avall. Moltes gràcies a <lnicola></lnicola> per solucionar l'error!"
-
 msgctxt "icu:WhatsNew__8.34--0"
 msgid "Signal Desktop now supports contact sharing too, so you can maintain eye contact with your computer screen without having to make physical contact with your smartphone."
 msgstr "Compatibilitat amb la funció de compartir contactes."
@@ -12270,3 +12242,7 @@ msgstr "Compatibilitat amb la funció de compartir contactes."
 msgctxt "icu:WhatsNew__8.34--1"
 msgid "Improved handling and performance for connected audio devices."
 msgstr "Millores en la gestió i funcionament dels dispositius d'àudio connectats."
+
+msgctxt "icu:WhatsNew__8.36--0--fix"
+msgid "Your top stickers now have a place to remain stuck. Add any sticker to your list of favorites so it's easy to stick with the ones you love."
+msgstr "Ara pots afegir qualsevol sticker a la teva llista de favorits per trobar-lo més fàcilment."
