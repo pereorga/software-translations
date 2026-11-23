@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-11-16 17:42+0000\n"
+"POT-Creation-Date: 2026-11-23 19:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -170,6 +170,8 @@ msgid ""
 "Bind credentials must be re-entered when the Connection URL or Bind DN is "
 "changed."
 msgstr ""
+"Les credencials de vinculació s’han de reintroduir quan es canviï l’URL de "
+"connexió o el DN de vinculació."
 
 #: clientRedirectURIsFragmentError
 msgid "A redirect URI must not contain an URL fragment"
@@ -228,19 +230,19 @@ msgstr "L’URL de desconnexió del canal posterior no és un URL vàlid"
 
 #: webOriginsInvalid
 msgid "A web origin is not a valid URI"
-msgstr ""
+msgstr "Un origen web no és un URI vàlid"
 
 #: webOriginsIllegalSchemeError
 msgid "A web origin uses an illegal scheme"
-msgstr ""
+msgstr "L’origen web utilitza un esquema il·legal"
 
 #: sectorIdentifierUriInvalid
 msgid "Sector identifier URI is not a valid URL"
-msgstr ""
+msgstr "Un URI d’identificació de sector no és un URL vàlid"
 
 #: sectorIdentifierUriIllegalSchemeError
 msgid "Sector identifier URI uses an illegal scheme"
-msgstr ""
+msgstr "L’URI d’identificació de sector utilitza un esquema il·legal"
 
 #: pairwiseMalformedClientRedirectURI
 msgid "Client contained an invalid redirect URI."
@@ -460,15 +462,16 @@ msgstr "El pas «després» de la configuració no és vàlid: {0}."
 
 #: workflowScheduleAfterInvalid
 msgid "Schedule ''after'' configuration is not valid: {0}."
-msgstr ""
+msgstr "La programació «després» de la configuració no és vàlida: {0}."
 
 #: workflowScheduleAfterTooShort
 msgid "Schedule ''after'' configuration must be at least 1 second."
 msgstr ""
+"La programació «després» de la configuració ha de ser d’almenys 1 segon."
 
 #: workflowScheduleBatchSizeNotPositive
 msgid "Schedule ''batch-size'' configuration must be greater than 0."
-msgstr ""
+msgstr "La programació «batch-size» de la configuració ha de ser major que 0."
 
 #: workflowStepProviderNotFound
 msgid "Could not find step provider: {0}."
